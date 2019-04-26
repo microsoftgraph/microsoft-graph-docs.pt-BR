@@ -4,24 +4,24 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5ecf28f8389fa9ccd61be675f32f7ae7f4bf7907
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 64947a1d151cab3dca14f4f232671242e1a985cc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551383"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342727"
 ---
 # <a name="yammergroupsactivitygroupcounts-resource-type"></a>tipo de recurso yammerGroupsActivityGroupCounts
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade          | Tipo   |
-| :---------------- | :----- |
-| reportRefreshDate | Data   |
-| total             | Int64  |
-| active            | Int64  |
-| reportDate        | Data   |
-| reportPeriod      | String |
+| Propriedade          | Tipo   | Descrição |
+| :---------------- | :----- | :---------- |
+| reportRefreshDate | Data   |             |
+| total             | Int64  |             |
+| active            | Int64  |             |
+| reportDate        | Data   |             |
+| reportPeriod      | String |             |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -34,10 +34,10 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
+  "reportRefreshDate": "String", 
   "total": 1024, 
   "active": 1024, 
-  "reportDate": "Date", 
+  "reportDate": "String", 
   "reportPeriod": "String"
 }
 ```

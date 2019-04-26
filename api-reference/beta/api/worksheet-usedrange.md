@@ -4,12 +4,12 @@ description: O intervalo usado é o menor intervalo que abrange todas as célula
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b5aa23496abbad6f78768acf20a7cfd3411654d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cc761262e063b44ad6a2785388618139c36d82de
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535729"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339493"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -35,7 +35,7 @@ Na URL da solicitação, forneça um parâmetro de consulta opcional.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|valuesOnly|Booliano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
+|valuesOnly|Boolean|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Veja a seguir um exemplo que mostra como chamar essa API.
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,14 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-ms.openlocfilehash: c90dd8889d07f903a7d3c79d9e4e5db3b9f2a30b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf35a3cbeee8003db8ed121e5bafbc88df098d9a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535402"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341235"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso ContentType
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **contentType** representa um _tipo de conteúdo_ no SharePoint.
 Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar presentes em cada [**listItem**][listItem] em uma [**lista**][list].
@@ -22,10 +24,7 @@ Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar pr
 ## <a name="json-representation"></a>Representação JSON
 
 Aqui está uma representação JSON de um recurso **contentType**.
-<!-- {
-  "blockType": "resource",
- "baseType": "microsoft.graph.entity",
- "@odata.type": "microsoft.graph.contentType" } -->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
 
 ```json
 {
@@ -72,10 +71,13 @@ Consulte [Introdução a tipos de conteúdo e publicação de tipo de conteúdo]
 [itemReference]: itemreference.md
 [contentTypeOrder]: contenttypeorder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentType"
-} -->
+  "tocPath": "Resources/ContentType",
+  "suppressions": []
+}
+-->

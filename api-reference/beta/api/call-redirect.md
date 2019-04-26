@@ -4,12 +4,12 @@ description: Redirecione as chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9dcb8b6fd83f431bf5048bcc42b0de5d1ff55110
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461267"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328012"
 ---
 # <a name="call-redirect"></a>Call: Redirect
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)         |
 | :-------------- | :-------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Não Suportado                |
+| Delegado (conta corporativa ou de estudante)     | Não suportado                |
 | Delegado (conta pessoal da Microsoft) | Não suportado                |
 | Aplicativo     | Calls.Initiate.All                                  |
 
@@ -46,8 +46,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |targets|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento.|
 |targetDisposition|String|O valor possível é:`default`|
 |timeout|Int32|O tempo limite em segundos para a operação de redirecionamento.|
-|maskCallee|Booliano|Indica se o receptor deve ser mascarado.|
-|maskCaller|Booliano|Indica se o chamador deve ser mascarado.|
+|maskCallee|Boolean|Indica se o receptor deve ser mascarado.|
+|maskCaller|Boolean|Indica se o chamador deve ser mascarado.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` o código de resposta
@@ -267,8 +267,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/call-redirect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

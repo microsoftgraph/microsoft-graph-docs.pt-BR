@@ -2,12 +2,12 @@
 title: tipo de recurso synchronizationStatus
 description: Representa o status atual do synchronizationJob.
 localization_priority: Normal
-ms.openlocfilehash: 404fe4f7f58b8189b3059c212aa1ce858350bb01
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 042dd05eb5633573a15eeb663b032ed531636aab
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453867"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339836"
 ---
 # <a name="synchronizationstatus-resource-type"></a>tipo de recurso synchronizationStatus
 
@@ -81,8 +81,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

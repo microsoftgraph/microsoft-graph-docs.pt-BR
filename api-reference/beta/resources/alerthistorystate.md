@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 1a7975d870389be5163a8f230f6a6cc4cd1425c3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461037"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339147"
 ---
 # <a name="alerthistorystate-resource-type"></a>tipo de recurso alertHistoryState
 
@@ -22,7 +22,7 @@ Armazena as alterações feitas nos alertas.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |appId|String| A ID de aplicativo do aplicativo de chamada que enviou uma atualização (PATCH) para o alerta. A appId deve ser extraída do token de autenticação e não inserida manualmente pelo aplicativo de chamada. |
-|assignedTo|Cadeia de caracteres| UPN de usuário ao qual o alerta foi atribuído (Observação: Alert. assignedTo só armazena o último valor/UPN). |
+|assignedTo|String| UPN de usuário ao qual o alerta foi atribuído (Observação: Alert. assignedTo só armazena o último valor/UPN). |
 |comentários|String collection|Comentário inserido pelo usuário conectado.|
 |comentários|String| Comentários de analista sobre o alerta nesta atualização. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|String| Valor do status do alerta (se atualizado). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`, `dismissed`.|

@@ -2,12 +2,12 @@
 title: tipo de recurso anonymousIpRiskEvent
 description: Um evento de risco detectado pela proteção de identidade do Azure Active Directory em que uma entrada de conta é tentada a partir de um endereço IP que parece ser anônimo. As informações completas sobre eventos de risco podem ser encontradas na documentação de proteção de identidade do Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: 5f428a99466e67dfbbe4ef9b4ebe0006b56f99e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fa1210a8899af11e295e6503dfcae51dba43776
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461023"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339164"
 ---
 # <a name="anonymousipriskevent-resource-type"></a>tipo de recurso anonymousIpRiskEvent
 
@@ -41,7 +41,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[usuário](user.md)| Somente leitura. Anulável.|
+|impactedUser|[user](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+   "baseType":"microsoft.graph.locatedRiskEvent",
   "@odata.type": "microsoft.graph.anonymousIpRiskEvent"
 }-->
 
@@ -68,7 +69,8 @@ Veja a seguir uma representação JSON do recurso.
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -82,8 +84,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/anonymousipriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,16 +1,16 @@
 ---
 title: Valores de enumeração
 description: Valores de enumeração do Microsoft Graph
-ms.openlocfilehash: 2f8bd0065136077cda2228cbec1c2d34d546c7d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7394ee9dbfa70e7cda1269c8f61d3b77d92e8094
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542801"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340158"
 ---
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |primário|,0|O pai do usuário.|
 |relativo|1 | O relativo do usuário.|
@@ -20,6 +20,54 @@ ms.locfileid: "32542801"
 |pensão|5 | O filho do usuário.|
 |outro|6 | Uma relação não especificada com o usuário.|
 |unknownFutureValue|7 | Valor de marcador para compatibilidade futura.|
+
+
+### <a name="scheduleentitytheme-values"></a>valores de scheduleEntityTheme
+
+| Valor
+|:-------------------------
+| branco
+| azuis
+| natureza
+| roxa
+| Rosa
+| amarelo
+| acinzentada
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
+| unknownFutureValue
+
+
+### <a name="timeoffreasonicontype-values"></a>valores de timeOffReasonIconType
+
+|Membro|
+|:---|
+|none|
+|automóvel|
+|calendar|
+|com|
+|plano|
+|firstAid|
+|Doutor|
+|Não trabalho|
+|medição|
+|juryDuty|
+|Globe|
+|copo|
+|phone|
+|clima|
+|abrangência|
+|piggyBank|
+|cachorro|
+|torta|
+|trafficCone|
+|pessoal|
+|ensolarado|
+|unknownFutureValue|
+
 
 ### <a name="timezonestandard-values"></a>valores de timeZoneStandard
 
@@ -31,7 +79,7 @@ ms.locfileid: "32542801"
 
 ### <a name="freebusystatus-values"></a>valores de freeBusyStatus
 
-| Member            |Valor
+| Membro            |Valor
 |:------------------|:-------
 | macro              | ,0
 | provisória         | 1 
@@ -64,7 +112,7 @@ ms.locfileid: "32542801"
 
 | Valor
 |:-------------------------
-| Nenhuma
+| none
 | contactsOnly
 | todos os
 
@@ -80,7 +128,7 @@ ms.locfileid: "32542801"
 
 ### <a name="calendarcolor-values"></a>valores de calendarColor
 
-| Member     | Valor
+| Membro     | Valor
 |:-----------|:----------
 | Automático       | -1
 | lightBlue  | ,0
@@ -97,7 +145,7 @@ ms.locfileid: "32542801"
 
 ### <a name="educationsynchronizationprofilestate-values"></a>valores de educationSynchronizationProfileState
 
-| Member     | Valor
+| Membro     | Valor
 |:-----------|:----------
 | deleta          | 2 
 | deletionFailed    | 3 
@@ -109,7 +157,7 @@ ms.locfileid: "32542801"
 
 ### <a name="educationsynchronizationstatus-values"></a>valores de educationSynchronizationStatus
 
-| Member     | Valor
+| Membro     | Valor
 |:-----------|:----------
 | pausado          | ,0
 | inProgress    | 1 
@@ -172,7 +220,7 @@ ms.locfileid: "32542801"
 |:---------------------
 | student
 | teacher
-| Nenhuma
+| none
 | unknownFutureValue
 
 
@@ -180,7 +228,7 @@ ms.locfileid: "32542801"
 
 | Valor
 |:-----------------
-| Nenhuma
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -212,7 +260,7 @@ ms.locfileid: "32542801"
 | deviceDefault
 | Bandeira
 | JanelaRestrita
-| Nenhuma
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
@@ -283,7 +331,7 @@ ms.locfileid: "32542801"
 
 ### <a name="onenoteuserrole-values"></a>valores de onenoteUserRole
 
-| Member      | Valor
+| Membro      | Valor
 |:------------|:------------
 | Owner       | ,0
 | Colaborador | 1 
@@ -414,7 +462,7 @@ ms.locfileid: "32542801"
 
 | Valor
 |:-------------------------
-| Nenhuma
+| none
 | organizer
 | tentativelyAccepted
 | aceito
@@ -445,9 +493,9 @@ ms.locfileid: "32542801"
 
 ### <a name="categorycolor-values"></a>valores de categoryColor
 
-| Member   |Valor    
+| Membro   |Valor    
 |:---------|:--------
-| Nenhuma     | -1      
+| none     | -1      
 | preset0  | ,0       
 | preset1  | 1        
 | preset2  | 2        
@@ -460,7 +508,7 @@ ms.locfileid: "32542801"
 | preset9  | 9        
 | preset10 | 10       
 | preset11 | 11       
-| preset12 | 12       
+| preset12 | 12      
 | preset13 | 13       
 | preset14 | 14       
 | preset15 | 15       
@@ -478,7 +526,7 @@ ms.locfileid: "32542801"
 
 Possíveis valores de comentários no alerta fornecido por um analista.
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
 |truePositive|1 |O alerta é verdadeiro e positivo.|
@@ -487,7 +535,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 ### <a name="filehashtype-values"></a>valores de fileHashtype
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo desconhecido.|
 |SHA1|1 |Tipo de hash SHA1.|
@@ -501,7 +549,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 ### <a name="connectiondirection-values"></a>valores de connectionDirection
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Conexão desconhecida.|
 |entrada|1 |Conexão de entrada.|
@@ -509,7 +557,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 ### <a name="connectionstatus-values"></a>valores de connectionStatus
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status de conexão desconhecido.|
 |tentou|1 |Tentativa de conexão.|
@@ -519,7 +567,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 ### <a name="processintegritylevel-values"></a>valores de processIntegrityLevel
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
 |não confiáveis|10 |O nível de integridade é não confiável.|
@@ -532,7 +580,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 Enumeração para hives do registro, conforme [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)definido por.
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Hive desconhecido.|
 |currentConfig|1 |Hive HKEY_CURRENT_CONFIG.|
@@ -546,7 +594,7 @@ Enumeração para hives do registro, conforme [https://docs.microsoft.com/en-us/
 
 Operação que alterou o nome da chave do registro e/ou o valor.
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo de valor de registro desconhecido.|
 |create|1 |Criar registro.|
@@ -557,7 +605,7 @@ Operação que alterou o nome da chave do registro e/ou o valor.
 
 Enumeração para tipos de valor do registro conforme [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)definido por.
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo de valor de registro desconhecido.|
 |binário|1 |Tipo de valor de registro REG_BINARY.|
@@ -567,7 +615,7 @@ Enumeração para tipos de valor do registro conforme [https://docs.microsoft.co
 |expandSz|5 | Tipo de valor do registro REG_EXPAND_SZ.|
 |vínculo|6 | Tipo de valor do registro REG_LINK.|
 |multiSz|7 | Tipo de valor de registro REG_MULTI_SZ.|
-|Nenhuma|8 | Tipo de valor do registro REG_NONE.|
+|none|8 | Tipo de valor do registro REG_NONE.|
 |QWORD|9 | Tipo de valor do registro REG_QWORD.|
 |qwordlittleEndian|10 | Tipo de valor do registro REG_QWORD_LITTLE_ENDIAN.|
 |v|11 | Tipo de valor do registro REG_SZ.|
@@ -576,7 +624,7 @@ Enumeração para tipos de valor do registro conforme [https://docs.microsoft.co
 
 Enumeração para gravidade de alertas.
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|A severidade é desconhecida.|
 |informativa|1 |A severidade só é para informações.|
@@ -588,7 +636,7 @@ Enumeração para gravidade de alertas.
 
 Valores possíveis de um status de ciclo de vida de alerta (estágio).
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status desconhecido.|
 |newAlert|10 | O alerta é novo.|
@@ -599,7 +647,7 @@ Valores possíveis de um status de ciclo de vida de alerta (estágio).
 
 Valores possíveis para funções de email.
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Função desconhecida.|
 |sender|1 |Remetente do email.|
@@ -609,7 +657,7 @@ Valores possíveis para funções de email.
 
 Valores possíveis para o método de User Sign.
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|-1|Unknown.|
 |interativa|,0|O logon é interativo.|
@@ -622,9 +670,141 @@ Valores possíveis para o método de User Sign.
 
 Valores possíveis para tipos de contas de usuário (Associação de grupo), por definição do Windows.
 
-|Member|Valor|Descrição|
+|Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|-1|Unknown.|
 |caracteres|,0|Membro do grupo de usuários padrão.|
 |força|1 | Membro do grupo de usuários avançados.|
 |administrador|2 | Membro do grupo Administradores.|
+
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>valores de scopeOperatorMultiValuedComparisonType
+
+|Membro|
+|:---|
+|todos os|
+|qualquer|
+
+### <a name="risklevel-values"></a>valores de riskLevel
+
+|Membro|
+|:---|
+|low|
+|medium|
+|high|
+|hidden|
+|none|
+|unknownFutureValue|
+
+### <a name="riskstate-values"></a>valores de risco
+
+|Membro|
+|:---|
+|none|
+|confirmedSafe|
+|corrigidos|
+|Descartado pelo|
+|atRisk|
+|confirmedCompromised|
+|unknownFutureValue|
+
+### <a name="riskdetail-values"></a>valores de riskDetail
+
+|Membro|
+|:---|
+|none|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|hidden|
+|unknownFutureValue|
+
+### <a name="referenceattachmentpermission-values"></a>valores de referenceAttachmentPermission
+
+|Membro|
+|:---|
+|outro|
+|modo de exibição|
+|edit|
+|anonymousView|
+|anonymousEdit|
+|organizationView|
+|organizationEdit|
+
+### <a name="referenceattachmentprovider-values"></a>valores de referenceAttachmentProvider
+
+|Membro|
+|:---|
+|outro|
+|oneDriveBusiness|
+|oneDriveConsumer|
+|Dropbox|
+
+### <a name="riskeventtype-values"></a>valores de riskEventType
+
+|Membro|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|genérico|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
+### <a name="networktype-values"></a>valores de NetworkType
+
+|Membro|
+|:---|
+|Internet|
+|extranet|
+|namedNetwork|
+|confiáveis|
+|unknownFutureValue|
+
+### <a name="exchangeidformat-values"></a>valores de exchangeIdFormat
+
+|Membro|
+|:---|
+|entryId|
+|ewsId|
+|immutableEntryId|
+|restid|
+|restImmutableEntryId|
+
+### <a name="attributeflowbehavior-values"></a>valores de attributeFlowBehavior
+
+|Membro|
+|:---|
+|flowWhenChanged|
+|flowAlways|
+
+### <a name="attributeflowtype-values"></a>valores de attributeFlowType
+
+|Membro|
+|:---|
+|permanente|
+|objectAddOnamente|
+|multiValueAddOnly|
+|restid|
+
+### <a name="objectflowtypes-values"></a>valores de objectFlowTypes
+
+|Membro| Valor|
+|:---|:-------|
+|Nenhuma| ,0      |
+|Adicionar| 1        |
+|Atualizar|2      |
+|Delete|4      |

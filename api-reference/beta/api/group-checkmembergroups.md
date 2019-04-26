@@ -1,15 +1,15 @@
 ---
 title: 'group: checkMemberGroups'
-description: Verifique se há associação na lista de grupos especificada. Retorna da lista os grupos dos quais
+description: Verifique se há associação na lista de grupos especificada. Retorna da lista aqueles grupos dos quais
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 838ea805f6732965029690a05e8d3294fdd62c26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1815f187a25eaddbd3b1757fde5e7e4e9c74f650
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503104"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329614"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
-| Aplicativo                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
+| Application                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Observação:** Essa API atualmente requer a `Directory.Read.All` permissão ou mais. O uso `Group.Read.All` da permissão retornará um erro. Este é um bug conhecido.
+> **Observação:** esta API atualmente exige o `Directory.Read.All` permissão ou posterior. Usando a permissão `Group.Read.All` retornarão um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo   | Descrição           |
 | :-------- | :----- | :-------------------- |
-| groupIds  | Cadeia de caracteres | Uma matriz de IDs de grupo |
+| groupIds  | Coleção de cadeias de caracteres | Uma matriz de IDs de grupo |
 
 ## <a name="response"></a>Resposta
 
@@ -115,8 +115,6 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-checkmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

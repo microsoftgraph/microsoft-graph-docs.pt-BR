@@ -4,14 +4,16 @@ description: Representa um registro SRV adicionado ao arquivo de zona DNS de um 
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bdbc2246340d5cd15529dd05101567bc04d1e607
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a80bfd1caa755a7b4f27f29e1c34ec4295a52f33
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535022"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340677"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>tipo de recurso domainDnsSrvRecord
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .
 
@@ -22,7 +24,7 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura.|
-|isOptional|Booliano| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
+|isOptional|Boolean| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
 |rótulo|String| O valor usado ao configurar a propriedade *Name* do registro SRV no host DNS. |
 |nameTarget|String| O valor a ser usado ao configurar a propriedade *target* do registro SRV no host DNS. |
 |propor|Int32| O valor a ser usado ao configurar a propriedade *Port* do registro SRV no host DNS. |
@@ -43,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -52,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -70,10 +72,13 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsSrvRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

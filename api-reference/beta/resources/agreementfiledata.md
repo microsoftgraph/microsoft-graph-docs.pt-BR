@@ -2,12 +2,12 @@
 title: tipo de recurso agreementFileData
 description: Representa o blob de um arquivo de contrato de uso do Azure Active Directory (Azure AD).
 localization_priority: Normal
-ms.openlocfilehash: bc0e7395875f64a3ee52e43b26da1a2df6276c9c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6f4b6708493c0063928a81c95eeb60b7e7603b0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544100"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339136"
 ---
 # <a name="agreementfiledata-resource-type"></a>tipo de recurso agreementFileData
 
@@ -18,7 +18,7 @@ Representa o blob de um arquivo de contrato de uso do Azure Active Directory (Az
 ## <a name="properties"></a>Propriedades
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-|data|Binário|Dados que representam o documento PDF termos de uso. Somente leitura.|
+|data|Binária|Dados que representam o documento PDF termos de uso. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -48,8 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/agreementfiledata.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

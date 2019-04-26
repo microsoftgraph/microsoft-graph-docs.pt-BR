@@ -4,11 +4,11 @@ description: Os tutoriais do Microsoft Graph são exercícios de treinamento pas
 author: jasonjoh
 localization_priority: Priority
 ms.openlocfilehash: 3751e9ccb1328dd06b3ddfbd85706b94b52fc79e
-ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479899"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581062"
 ---
 # <a name="microsoft-graph-tutorials"></a>Tutoriais do Microsoft Graph
 

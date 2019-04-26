@@ -2,12 +2,12 @@
 title: tipo de recurso de contrato
 description: Representa o contrato de termos de uso personalizável de um locatário que é criado e gerenciado com o Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o recurso termos de uso do Azure Active Directory de acordo com seu cenário.
 localization_priority: Normal
-ms.openlocfilehash: b253877f1bf82e4fbc61cebaef3c1bce208d9cca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d91cc8f8180ffb706639fb42a8c68d711991602c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535743"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339171"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
@@ -34,7 +34,7 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 |:-------------|:------------|:------------|
 |displayName|String|Nome para exibição do contrato.|
 |id|String| Somente leitura.|
-|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
+|isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
@@ -47,6 +47,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -71,8 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/agreement.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

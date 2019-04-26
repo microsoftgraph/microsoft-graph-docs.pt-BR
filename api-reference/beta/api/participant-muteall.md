@@ -4,12 +4,12 @@ description: Ative o mudo para todos os participantes em uma chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2a74a224141b77f0a09718bbafee3cf1dab0e8e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7ae154e0a9e211620d9761c9051e73d5b35ec020
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539369"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332737"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participantes|Coleção de cadeias de caracteres|Os participantes a serem mudo.|
+|participantes|Coleção String|Os participantes a serem mudo.|
 |clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
@@ -103,8 +103,6 @@ Content-Length: 259
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/participant-muteall.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

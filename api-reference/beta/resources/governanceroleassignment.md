@@ -2,12 +2,12 @@
 title: tipo de recurso governanceRoleAssignment
 description: Representa a atribuição de um usuário ou grupo a uma função.
 localization_priority: Normal
-ms.openlocfilehash: 77a5238aa337dd8d273d3156d285e081c4bc8875
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3b70d356886a14b17fda7ed37292797ba99d51e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547432"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340230"
 ---
 # <a name="governanceroleassignment-resource-type"></a>tipo de recurso governanceRoleAssignment
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -59,6 +59,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -90,8 +91,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

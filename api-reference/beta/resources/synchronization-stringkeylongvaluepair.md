@@ -2,12 +2,12 @@
 title: tipo de recurso stringKeyLongValuePair
 description: Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é Int64.
 localization_priority: Normal
-ms.openlocfilehash: 97ca9f4f7b4079311a1ce6996fde0472c527e7f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 48ca44c70e02be153aaeb5ee1171cd8c60e0fa2d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524537"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342745"
 ---
 # <a name="stringkeylongvaluepair-resource-type"></a>tipo de recurso stringKeyLongValuePair
 
@@ -50,8 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-stringkeylongvaluepair.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

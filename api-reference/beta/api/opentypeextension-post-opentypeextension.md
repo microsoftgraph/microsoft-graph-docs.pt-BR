@@ -3,12 +3,12 @@ title: Criar extensão aberta
 description: Criar uma extensão aberta (objeto openTypeExtension) e adicionar propriedades personalizadas
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24745ecfa5e59bd8bc455018690e813f82c33662
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539950"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338153"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -94,7 +94,7 @@ Forneça um corpo JSON de um [openTypeExtension](../resources/opentypeextension.
 
 | Name       | Valor |
 |:---------------|:----------|
-| @odata.type | Microsoft. Graph. OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension**, fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.
@@ -125,7 +125,7 @@ O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo d
 - As propriedades **subject**, **body** e **toRecipients** típicas de uma nova mensagem.
 - E para a extensão:
 
-  - O tipo `Microsoft.Graph.OpenTypeExtension`.
+  - O tipo `microsoft.graph.openTypeExtension`.
   - O nome da extensão "Com.Contoso.Referral".
   - Dados adicionais a serem armazenados como três propriedades personalizadas no conteúdo JSON: `companyName`, `expirationDate` e `dealValue`.
 
@@ -135,6 +135,7 @@ O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo d
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages
+Content-Type: application/json
 
 {
   "subject": "Annual review",
@@ -151,7 +152,7 @@ POST https://graph.microsoft.com/beta/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -165,7 +166,7 @@ POST https://graph.microsoft.com/beta/me/messages
 
 Veja a seguir a resposta para o primeiro exemplo. O corpo da resposta inclui propriedades da nova mensagem e o seguinte para a nova extensão:
 
-- A propriedade **id** com o nome totalmente qualificado de `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
+- A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - A propriedade padrão **extensionName** especificada na solicitação.
 - Os dados personalizados especificados na solicitação, armazenados como 3 propriedades personalizadas.
 
@@ -228,10 +229,10 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
-('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-      "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+('AAMkAGEbs88AAB84uLuAAA=')/extensions('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
+      "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -247,7 +248,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 O segundo exemplo cria uma extensão na mensagem especificada. O corpo da solicitação inclui o seguinte para essa extensão:
 
-- O tipo `Microsoft.Graph.OpenTypeExtension`.
+- O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.Referral".
 - Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.
 
@@ -256,10 +257,11 @@ O segundo exemplo cria uma extensão na mensagem especificada. O corpo da solici
   "name": "post_opentypeextension_2"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+POST https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
+Content-Type: application/json
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Referral",
   "companyName" : "Wingtip Toys",
   "dealValue" : 500050,
@@ -272,13 +274,13 @@ POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 Veja a seguir a resposta para o segundo exemplo. O corpo da solicitação inclui o seguinte para a nova extensão:
 
 - A propriedade padrão **extensionName**.
-- A propriedade **id** com o nome totalmente qualificado de `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
+- A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - Os dados personalizados a serem armazenados.
 
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -286,11 +288,11 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
     "companyName": "Wingtip Toys",
     "dealValue": 500050,
     "expirationDate": "2015-12-03T10:00:00.000Z"
@@ -303,7 +305,7 @@ Content-type: application/json
 
 O terceiro exemplo cria uma extensão no evento de grupo especificado. O corpo da solicitação inclui o seguinte para essa extensão:
 
-- O tipo `Microsoft.Graph.OpenTypeExtension`.
+- O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.Deal".
 - Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.
 
@@ -312,10 +314,11 @@ O terceiro exemplo cria uma extensão no evento de grupo especificado. O corpo d
   "name": "post_opentypeextension_3"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions
+POST https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
+Content-type: application/json
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -330,7 +333,7 @@ Veja a seguir a resposta da terceira solicitação de exemplo.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -338,8 +341,8 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
     "dealValue": 1010100,
@@ -353,7 +356,7 @@ Content-type: application/json
 
 O quarto exemplo cria uma extensão em uma nova postagem de grupo, usando a mesma chamada de ação **reply** para uma postagem de grupo existente. A ação **reply** cria uma nova postagem e uma nova extensão inserida nessa postagem. O corpo da solicitação inclui uma propriedade **post** que, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a nova extensão:
 
-- O tipo `Microsoft.Graph.OpenTypeExtension`.
+- O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.HR".
 - Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e a matriz de cadeias de caracteres `topPicks`.
 
@@ -362,7 +365,8 @@ O quarto exemplo cria uma extensão em uma nova postagem de grupo, usando a mesm
   "name": "post_opentypeextension_4"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/reply
+POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
+Content-type: application/json
 
 {
   "post": {
@@ -372,7 +376,7 @@ POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364ae
     },
   "extensions": [
     {
-      "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.HR",
       "companyName": "Contoso",
       "expirationDate": "2015-07-03T13:04:00.000Z",
@@ -407,7 +411,7 @@ Content-Length: 0
 
 O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma operação POST para criar uma conversa. A operação POST cria uma nova conversa, thread ou postagem e uma nova extensão inserida na postagem. O corpo da solicitação inclui as propriedades **Topic** e **Threads** e o objeto filho **post** para a nova conversa. O objeto **post**, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a extensão:
 
-- O tipo `Microsoft.Graph.OpenTypeExtension`.
+- O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.HR".
 - Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e a matriz de cadeias de caracteres `topPicks`.
 
@@ -416,7 +420,8 @@ O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma
   "name": "post_opentypeextension_5"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
+POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
+Content-type: application/json
 
 {
   "Topic": "Does anyone have a second?",
@@ -430,7 +435,7 @@ POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364ae
           },
           "Extensions": [
             {
-              "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+              "@odata.type": "microsoft.graph.openTypeExtension",
               "extensionName": "Com.Contoso.Benefits",
               "companyName": "Contoso",
               "expirationDate": "2016-08-03T11:00:00.000Z",
@@ -488,8 +493,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/opentypeextension-post-opentypeextension.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

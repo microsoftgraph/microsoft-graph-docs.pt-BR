@@ -1,17 +1,19 @@
 ---
 title: Listar gerente
 description: Obtenha o gerente do usuário. Retorna o usuário ou contato atribuído como gerente do usuário.
-localization_priority: Priority
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ae243f0fa4c8212cecebedc39ebfc2d5713d5689
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980563"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571314"
 ---
 # <a name="list-manager"></a>Listar gerente
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha o gerente do usuário. Retorna o usuário ou contato atribuído como gerente do usuário.
 ## <a name="permissions"></a>Permissões
@@ -45,21 +47,13 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "get_manager"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
+GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": false
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -86,10 +80,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

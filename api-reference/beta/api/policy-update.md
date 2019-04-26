@@ -2,12 +2,12 @@
 title: Política de atualização
 description: Atualize as propriedades em uma política preexistente.
 localization_priority: Normal
-ms.openlocfilehash: d99aa42c4a67f6b874cbc1e266da76287388c05e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 53b7af8966c932598328e8b78e76022ca6db9c8a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538730"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337381"
 ---
 # <a name="update-policy"></a>Política de atualização
 
@@ -42,7 +42,7 @@ No corpo da solicitação, forneça um objeto JSON com os parâmetros que precis
 |:---------------|:--------|:----------|
 |definir|String|A versão do em formato do objeto [Policy](../resources/policy.md) .|
 |displayName|String|Um nome personalizado para a política.|
-|isOrganizationDefault|Booliano|Especifica se essa política é aplicada por padrão.|
+|isOrganizationDefault|Boolean|Especifica se essa política é aplicada por padrão.|
 |type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Resposta
@@ -70,11 +70,3 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 204 No Content
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/policy-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

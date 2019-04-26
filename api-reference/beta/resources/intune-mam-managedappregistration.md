@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso managedAppRegistration
-description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
+description: 'O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização. '
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3be91dd094258f0bf998521c058f1c62659fbcc8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4d6862af09e4bbe1b22d183b8d10c56ff2782f51
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581027"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341726"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
@@ -43,7 +43,7 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |deviceModel|String|O modelo de dispositivo para o registro de aplicativo atual |
 |deviceManufacturer|String|O fabricante do dispositivo para o registro de aplicativo atual |
 |flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
-|userId|String|A ID de usuário à qual este registro de aplicativo pertence.|
+|userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|
 |id|String|Chave da entidade.|
 |versão|String|Versão da entidade.|
@@ -60,12 +60,11 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.managedAppRegistration"
-}
--->
+  "@odata.type": "microsoft.graph.managedAppRegistration",
+  "abstract": true
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.managedAppRegistration",
   "createdDateTime": "String (timestamp)",
   "lastSyncDateTime": "String (timestamp)",
   "applicationVersion": "String",
@@ -89,8 +88,3 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
-
-
-
-

@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: Entidadeitemactivitystat
 localization_priority: Normal
-ms.openlocfilehash: 1362116c0dbe997eda941cb790e00e9ddb078ae4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 08bbfd414a32e8eb8a0144d879ede55c71c19b89
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561891"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339868"
 ---
 # <a name="itemactivitystat-resource-type"></a>tipo de recurso Entidadeitemactivitystat
 
@@ -46,7 +46,7 @@ O recurso **entidadeitemactivitystat** fornece informações sobre as atividades
 | Propriedade         | Tipo                    | Descrição
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | Indica que as estatísticas neste intervalo são baseadas em dados incompletos. Somente leitura.
-| isTendência       | Booliano                 | Indica se o item é "Trending". Somente leitura.
+| isTendência       | Boolean                 | Indica se o item é "Trending". Somente leitura.
 | startDateTime    | DateTimeOffset          | Quando o intervalo é iniciado. Somente leitura.
 | endDateTime      | DateTimeOffset          | Quando o intervalo termina. Somente leitura.
 | create           | [itemActionStat][]      | Estatísticas sobre as ações de **criação** neste intervalo. Somente leitura.
@@ -75,8 +75,6 @@ O recurso **entidadeitemactivitystat** fornece informações sobre as atividades
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
   "tocPath": "Resources/ItemActivityStat",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemactivitystat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: tipo de recurso fileAttachment
 description: Um arquivo (como um arquivo de texto ou documento do Word) anexado a um evento
 localization_priority: Normal
-ms.openlocfilehash: 7d9f92565e38aaf418691480b7f8f3187c57647c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d4c33619c7521d980c1c6c51fd7158390aec47b1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506360"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340217"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
@@ -27,7 +27,7 @@ Derivado de [attachment](attachment.md).
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Leia as propriedades e os relacionamentos do objeto fileAttachment.|
-|[Excluir](../api/attachment-delete.md) | Nenhum |Exclua um objeto fileAttachment. |
+|[Delete](../api/attachment-delete.md) | Nenhuma |Exclua um objeto fileAttachment. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -39,11 +39,11 @@ Derivado de [attachment](attachment.md).
 |id|String|A ID do anexo.|
 |isInline|Booliano|Defina como true se este for um anexo embutido.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez.|
-|nome|String|O nome que representa o texto que é exibido abaixo do ícone que representa o anexo inserido. Não precisa ser o nome de arquivo real.|
+|name|String|O nome que representa o texto que é exibido abaixo do ícone que representa o anexo inserido. Não precisa ser o nome de arquivo real.|
 |size|Int32|O tamanho do anexo em bytes.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -82,8 +82,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/fileattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

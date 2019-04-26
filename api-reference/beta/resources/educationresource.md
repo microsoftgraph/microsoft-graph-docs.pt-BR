@@ -4,12 +4,12 @@ description: Uma superclasse para todos os objetos de recurso no sistema. Um rec
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 87b19f849e24f1780a1d13c7aa1b3eb83543fdec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0713b6cb00e0b5e0b1e33181b43691b1d5b6530d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542859"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340505"
 ---
 # <a name="educationresource-resource-type"></a>tipo de recurso educationResource
 
@@ -61,8 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

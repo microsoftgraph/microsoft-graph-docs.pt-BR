@@ -4,12 +4,12 @@ description: O status de determinadas operações de longa duração.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b7914bd9692b4d9a94294f9a09659467e10550a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 34e6ff32c250308e71e05cb5d5c4d04d5671535d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460594"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341355"
 ---
 # <a name="commsoperation-resource-type"></a>tipo de recurso commsOperation
 
@@ -26,13 +26,13 @@ Nenhum
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | clientContext      | String                      | O contexto do cliente.                                                             |
 | createdDateTime    | DateTimeOffset              | A hora de início da operação.                                                |
-| id                 | String                      | A ID da operação. Somente leitura. Servidor gerado.                                  |
+| id                 | Cadeia de caracteres                      | A ID da operação. Somente leitura. Servidor gerado.                                  |
 | lastActionDateTime | DateTimeOffset              | A hora da última ação da operação.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura. Servidor gerado.                            |
 | status             | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -51,7 +51,7 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "resultInfo": { "@odata.type": "#microsoft.graph.resultInfo" },
+  "resultInfo": { "@odata.type": "microsoft.graph.resultInfo" },
   "status": "notStarted | running | completed | failed"
 }
 ```
@@ -69,7 +69,7 @@ Veja a seguir uma representação JSON do recurso.
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
   "resultInfo": {
-    "@odata.type": "#microsoft.graph.resultInfo",
+    "@odata.type": "microsoft.graph.resultInfo",
     "code": "200"
   },
   "status": "completed"
@@ -85,8 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/commsoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1091021235a50d3dfa237467e319da9b131b7a72
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33301843"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339710"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -30,7 +30,7 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
+| id| String| O identificador exclusivo do chat. Somente leitura.|
 | topic| String|  Opcion Assunto ou tópico do chat. Disponível apenas para bate-papos de grupo.|
 | createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi atualizado. Somente leitura.|

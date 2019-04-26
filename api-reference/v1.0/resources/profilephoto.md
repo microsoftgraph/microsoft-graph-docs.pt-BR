@@ -3,11 +3,11 @@ title: Tipo de recurso de profilePhoto
 description: Uma foto de perfil de um usuário, grupo ou contato do Outlook acessada do Exchange Online. Seus dados binários não são codificados em base 64.
 localization_priority: Priority
 ms.openlocfilehash: b1901928a97356b2a9808a446d34981fd74bf456
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876563"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579864"
 ---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso de profilePhoto
 Uma foto de perfil de um usuário, grupo ou contato do Outlook acessada do Exchange Online. Seus dados binários não são codificados em base 64.
@@ -24,7 +24,7 @@ Os tamanhos de fotos em HD compatíveis com o Exchange Online são os seguintes:
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|string|Somente leitura.|
+|id|cadeia de caracteres|Somente leitura.|
 |height|int32|A altura da foto. Somente leitura.|
 |width|int32|A largura da foto. Somente leitura.|
 

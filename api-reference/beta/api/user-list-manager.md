@@ -1,17 +1,19 @@
 ---
 title: Listar gerente
 description: Obtenha o gerente do usuário. Retorna o usuário ou contato atribuído como gerente do usuário.
-localization_priority: Priority
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87f57712bbef74864b6100527391d9f3c56f8455
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ec0e150cbd6f91a50e0a0d4fb28b54c02b67c6c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547841"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329862"
 ---
 # <a name="list-manager"></a>Listar gerente
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha o gerente do usuário. Retorna o usuário ou contato atribuído como gerente do usuário.
 ## <a name="permissions"></a>Permissões
@@ -45,21 +47,13 @@ Se bem sucedido, este método retorna um código de resposta `200 OK` e um objet
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "get_manager"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
+GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": false
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -86,10 +80,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

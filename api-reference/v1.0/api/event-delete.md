@@ -2,16 +2,18 @@
 title: Excluir evento
 description: Exclua um evento.
 author: angelgolfer-ms
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: ae39e73a9aa81d1b86701017ef2805f33f7d4c17
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918378"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550074"
 ---
 # <a name="delete-event"></a>Excluir evento
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclua um evento.
 ## <a name="permissions"></a>Permissões
@@ -63,7 +65,7 @@ Este é um exemplo da solicitação.
   "name": "delete_event"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/events/{id}
+DELETE https://graph.microsoft.com/beta/me/events/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
@@ -77,10 +79,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

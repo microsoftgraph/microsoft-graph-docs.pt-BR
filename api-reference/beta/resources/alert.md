@@ -4,12 +4,12 @@ description: Representa possíveis problemas de segurança no locatário de um c
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 8fa945cc69b3bc7779ae9ce23e2ee672c48eb1f8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f4bd1acfd140a4c0c4412441c92463061ecf7c86
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535783"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339096"
 ---
 # <a name="alert-resource-type"></a>tipo de alerta do recurso
 
@@ -33,23 +33,23 @@ Os alertas podem ser recuperados de diferentes provedores de segurança listados
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |activityGroupName|String|Nome ou alias do grupo de atividades (invasor) a que este alerta é atribuído.|
-|assignedTo|Cadeia de caracteres|Nome do analista ao qual o alerta está atribuído para triagem, investigação ou remediação (suporta [atualização](../api/alert-update.md)).|
+|assignedTo|String|Nome do analista ao qual o alerta está atribuído para triagem, investigação ou remediação (suporta [atualização](../api/alert-update.md)).|
 |azureSubscriptionId|String|ID da assinatura do Azure, presente se o alerta estiver relacionado a um recurso do Azure.|
 |azureTenantId |String|Locatário do Azure Active Directory. Obrigatório. |
 |category|String|Categoria de alerta (por exemplo, credentialTheft ransomware, etc.).|
 |closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` (suporta[atualização](../api/alert-update.md)).|
 |cloudAppStates|conjunto [cloudAppSecurityState](cloudappsecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os aplicativos de nuvem relacionados a esse alerta.|
-|comentários|Coleção de cadeias de caracteres|Comentários fornecidos pelo cliente no alerta (gerenciamento de alerta de cliente) (suporta [atualização](../api/alert-update.md)).|
+|comentários|Coleção String|Comentários fornecidos pelo cliente no alerta (gerenciamento de alerta de cliente) (suporta [atualização](../api/alert-update.md)).|
 |confidence|Int32|Confiança da lógica de detecção (porcentagem entre 1 e 100).|
 |createdDateTime |DateTimeOffset|Hora em que o alerta foi criado pelo provedor de alerta. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Obrigatório.|
 |description|String|Descrição de alerta.|
-|detectionIds|Coleção de cadeias de caracteres|Conjunto de alertas relacionados a essa entidade de alerta (cada alerta é enviado ao SIEM como um registro separado).|
+|detectionIds|Coleção String|Conjunto de alertas relacionados a essa entidade de alerta (cada alerta é enviado ao SIEM como um registro separado).|
 |eventDateTime |DateTimeOffset|Tempo no qual o(s) evento(s) que serviu (serviram) como acionador(es) para gerar o alerta ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Obrigatório.|
 |comentários|alertFeedback|Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. (suporta [atualização](../api/alert-update.md))|
 |fileStates|[fileSecurityState](filesecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os arquivos relacionados a esse alerta.|
 |historyStates|coleção [alertHistoryState](alerthistorystate.md)| Uma coleção de **alertHistoryStates** que consiste em um log de auditoria de todas as atualizações feitas em um alerta. |
 |hostStates|Conjunto [hostSecurityState](hostsecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre o(s) host(s) relacionados a esse alerta.|
-|id |Cadeia de caracteres|Identificador GUID/exclusivo gerado pelo provedor. Somente leitura. Obrigatório.|
+|id |String|Identificador GUID/exclusivo gerado pelo provedor. Somente leitura. Obrigatório.|
 |lastModifiedDateTime|DateTimeOffset|Hora na qual entidade alerta foi modificada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |malwareStates|conjunto [malwareState](malwarestate.md)|Inteligência contra ameaças referentes ao malware relacionado a esse alerta.|
 |networkConnections|conjunto [networkConnection](networkconnection.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre as conexões de rede relacionadas a esse alerta.|
@@ -57,7 +57,7 @@ Os alertas podem ser recuperados de diferentes provedores de segurança listados
 |recommendedActions|String collection|Ações recomendadas pelo provedor/fornecedor a serem tomadas como resultado do alerta (por exemplo, isolar máquina, enforce2FA, host de imagem de imagem).|
 |registryKeyStates|conjunto [registryKeyState](registrykeystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre as chaves de registro relacionadas a esse alerta.|
 |severity |alertSeverity|Gravidade de alerta, definida pelo provedor/fornecedor. Os valores possíveis são: `unknown`, `informational`, `low`, `medium`, `high`. Obrigatório.|
-|sourceMaterials|Coleção de cadeias de caracteres|Hiperlinks (URIs) para o material de origem relacionado ao alerta, por exemplo, a interface do usuário do provedor para alertas ou pesquisa de log, etc.|
+|sourceMaterials|String collection|Hiperlinks (URIs) para o material de origem relacionado ao alerta, por exemplo, a interface do usuário do provedor para alertas ou pesquisa de log, etc.|
 |status |alertStatus|Status de alerta de ciclo de vida (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`. (suporta [atualização](../api/alert-update.md)). Obrigatório.|
 |marcações|String collection|Etiquetas definidas pelo usuário que podem ser aplicadas a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SAW", etc.) (suporta [atualização](../api/alert-update.md)).|
 |title |String|Título do alerta. Obrigatório.|
@@ -130,8 +130,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/alert.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

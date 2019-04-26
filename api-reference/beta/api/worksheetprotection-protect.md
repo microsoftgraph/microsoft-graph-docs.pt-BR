@@ -1,17 +1,17 @@
 ---
-title: 'WorksheetProtection: protect'
+title: 'workbookWorksheetProtection: proteger'
 description: Protege uma planilha. Gera uma exceção se a planilha estiver protegida.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 52c7b9a6d3437417e6b8d527d4625e64a9d91cc8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b10fa4454b5937c2548e023adfd34900a16c8c95
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544030"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339367"
 ---
-# <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
+# <a name="workbookworksheetprotection-protect"></a>workbookWorksheetProtection: proteger
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|opções|WorksheetProtectionOptions|Opcional. Opções de proteção da planilha.|
+|options|[workbookWorksheetProtectionOptions](../resources/workbookworksheetprotectionoptions.md)|Opcional. Opções de proteção da planilha.|
 
 ## <a name="response"></a>Resposta
 
@@ -54,7 +54,7 @@ Eis um exemplo de como chamar esta API.
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "name": "worksheetprotection_protect"
+  "name": "workbookworksheetprotection_protect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
@@ -94,12 +94,10 @@ HTTP/1.1 200 OK
 <!--
 {
   "type": "#page.annotation",
-  "description": "WorksheetProtection: protect",
+  "description": "workbookWorksheetProtection: protect",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheetprotection-protect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

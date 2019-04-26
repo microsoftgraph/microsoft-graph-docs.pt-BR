@@ -1,17 +1,19 @@
 ---
 title: Criar convite
 description: Use esta API para criar um novo convite. O convite adiciona um usuário externo à organização.
-localization_priority: Priority
+localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 92bf3929fa4f736be3c6956f20aff6965291a876
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fe9a08281f6867a82dd998b19ce8e89b433df9aa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541322"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338766"
 ---
 # <a name="create-invitation"></a>Criar convite
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use essa API para criar um novo [convite](../resources/invitation.md). O convite adiciona um usuário externo à organização.
 
@@ -63,7 +65,7 @@ Este é um exemplo da solicitação.
   "name": "create_user_from_users"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/invitations
+POST https://graph.microsoft.com/beta/invitations
 Content-type: application/json
 Content-length: 551
 
@@ -105,14 +107,6 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
+  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: create_user_from_users/invitedUser:
-      Property 'invitedUser' is of type Custom but has no custom members."
-  ]
-}-->

@@ -4,12 +4,12 @@ description: Representa o nome e o endereço SMTP de uma instância de entidade,
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bc1f00ab09ac71f4f3cd9eb1aff8163a537ce257
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e8b49e0ff502f6e36e6ca3291d675c839e9ff5e2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506724"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340298"
 ---
 # <a name="emailaddress-resource-type"></a>Tipo de recurso emailAddress
 
@@ -21,7 +21,7 @@ Representa o nome e o endereço SMTP de uma instância de entidade, por exemplo,
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|Cadeia de caracteres|O endereço de email de uma instância de entidade.|
-|nome|String|O nome de exibição de uma instância de entidade.|
+|name|String|O nome de exibição de uma instância de entidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -52,8 +52,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/emailaddress.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

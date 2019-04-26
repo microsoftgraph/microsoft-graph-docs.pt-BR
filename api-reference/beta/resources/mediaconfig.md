@@ -4,12 +4,12 @@ description: A configuração de mídia usada para se conectar a uma chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa8ec08ce5f4092a8f3d8c89af4a405d3a5c347d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562549"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342657"
 ---
 # <a name="mediaconfig-resource-type"></a>tipo de recurso mediaConfig
 
@@ -21,7 +21,7 @@ A configuração de mídia usada para se conectar a uma chamada.
 
 | Propriedade       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Booliano |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## <a name="json-representation"></a>Representação JSON
 

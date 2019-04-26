@@ -4,12 +4,12 @@ description: As APIs de educação no Microsoft Graph aprimoram os recursos e da
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 9e106da7eb717a091941e16f4a70af8a012802f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b5dd443b9ccda48c586bc44f6f4e35523a5e000f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534868"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340662"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
@@ -64,7 +64,7 @@ As APIs de escalação dão suporte aos seguintes cenários:
 - [Listar todas as escolas](../api/educationroot-list-schools.md) 
 - [Listar escolas nas quais uma aula é ministrada](../api/educationclass-list-schools.md)
 - [Listar escolas para um usuário](../api/educationuser-list-schools.md)
-- [Obter todas as aulas](../api/educationroot_list_classes.md )
+- [Obter todas as aulas](../api/educationroot-list-classes.md )
 - [Obter aulas em um escola](../api/educationschool-list-classes.md)
 - [Listar aulas para um usuário](../api/educationuser-list-classes.md)
 - [Adicionar aulas a uma escola](../api/educationschool-post-classes.md)
@@ -129,11 +129,3 @@ Use as APIs de educação do Microsoft Graph para criar soluções de educação
 - Explore os recursos e os métodos mais úteis para seu cenário.
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/education-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

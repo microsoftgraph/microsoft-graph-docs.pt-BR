@@ -4,12 +4,12 @@ description: 'No recurso de revisões do Azure AD Access, `accessReview` o repre
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d65d41c23b97c5883be4c062598f438640cd7c1f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544096"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339371"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
 
@@ -24,26 +24,17 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , `accessRev
 |:---------------|:--------|:----------|
 |[Obter accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Obtenha uma revisão do Access com uma ID específica. |
 |[Criar accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Criar um novo accessReview. |
-|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum.   | Excluir um accessReview. |
+|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum   | Excluir um accessReview. |
 |[Atualizar accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Atualizar um accessReview. |
 |[Listar revisores do accessReview](../api/accessreview-listreviewers.md) |      [](useridentity.md) coleção UserIdentity| Obter os revisores de um accessReview. |
-|[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum.   |   Adicionar um revisor a um accessReview. |
-|[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum.  |   Remover um revisor de um accessReview. |
+|[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum   |   Adicionar um revisor a um accessReview. |
+|[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum  |   Remover um revisor de um accessReview. |
 |[Listar decisões accessReview](../api/accessreview-listdecisions.md) |      coleção [accessReviewDecision](accessreviewdecision.md)| Obtenha as decisões de um accessReview.|
 |[Listar minhas decisões do accessReview](../api/accessreview-listmydecisions.md) |     coleção [accessReviewDecision](accessreviewdecision.md)| Como revisor, obtenha as minhas decisões de um accessReview.|
-|[Enviar lembrete accessReview](../api/accessreview-sendreminder.md) |        Nenhum.   |   Envie um lembrete para os revisores de um accessReview. |
-|[Parar accessReview](../api/accessreview-stop.md) |     Nenhum.   |   Parar um accessReview. |
-|[Redefinir decisões do accessReview](../api/accessreview-reset.md) |     Nenhum.   |   ReDefina as decisões em um accessReview em andamento.|
-|[Aplicar decisões accessReview](../api/accessreview-apply.md) |     Nenhum.   |   Aplique as decisões de um accessReview concluído.|
-
-## <a name="permissions"></a>Permissões
-
-|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
-
+|[Enviar lembrete accessReview](../api/accessreview-sendreminder.md) |        Nenhum   |   Envie um lembrete para os revisores de um accessReview. |
+|[Parar accessReview](../api/accessreview-stop.md) |     Nenhum   |   Parar um accessReview. |
+|[Redefinir decisões do accessReview](../api/accessreview-reset.md) |     Nenhum   |   ReDefina as decisões em um accessReview em andamento.|
+|[Aplicar decisões accessReview](../api/accessreview-apply.md) |     Nenhum   |   Aplique as decisões de um accessReview concluído.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -57,7 +48,7 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , `accessRev
 | `businessFlowTemplateId`  |`String`                                                        | O identificador do modelo de fluxo de negócios. Obrigatório ao criar. |
 | `reviewerType`            |`String`                                                        | O tipo de relação de revisor para o objeto de destino, um `self` `delegated` ou `entityOwners`. Obrigatório ao criar. | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | O usuário que criou essa revisão. |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | O objeto para o qual as revisões de acesso está examinando as atribuições de direitos de acesso. Isso pode ser o grupo para a revisão de associações de usuários em um grupo ou o aplicativo para uma revisão das atribuições de usuários a um aplicativo. Obrigatório ao criar. | 
+| `reviewedEntity`          |[identity](identity.md)                                      | O objeto para o qual as revisões de acesso está examinando as atribuições de direitos de acesso. Isso pode ser o grupo para a revisão de associações de usuários em um grupo ou o aplicativo para uma revisão das atribuições de usuários a um aplicativo. Obrigatório ao criar. | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | As configurações de um accessReview, confira definição de tipo abaixo. |
 
 
@@ -88,6 +79,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -128,8 +120,6 @@ O `accessReviewSettings` fornece configurações adicionais ao criar uma revisã
 | `autoApplyReviewResultsEnabled`|`Boolean` | Sinalizador para indicar se a capacidade de aplicação automática, para alterar automaticamente o recurso de acesso ao objeto de destino, está habilitada.  Se não habilitado, um usuário deve, após a conclusão da revisão, aplicar a revisão do Access. |
 | `accessRecommendationsEnabled`|`Boolean` | Sinalizador para indicar se a exibição de recomendações para revisores está habilitada. |
 
-
-
 ## <a name="the-autoreviewsettings-type"></a>O tipo autoReviewSettings
 
 O `autoReviewSettings` é inserido nas configurações de análise do Access e especifica o comportamento do recurso quando uma revisão do Access é concluída.  O tipo tem uma propriedade, `notReviewedResult`.
@@ -151,7 +141,6 @@ O `accessReviewRecurrenceSettings` está incorporado nas configurações de revi
 | `recurrenceCount`|`Int32`    | A contagem de recorrências, se o valor `recurrenceEndType` for `occurrences`ou 0 caso contrário.                                                        |
 
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -159,8 +148,6 @@ O `accessReviewRecurrenceSettings` está incorporado nas configurações de revi
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/accessreview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

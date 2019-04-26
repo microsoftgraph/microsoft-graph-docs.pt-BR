@@ -3,12 +3,12 @@ title: Usar a API REST de feed de atividades
 description: 'Você pode usar a API do feed de atividades no Microsoft Graph para retomar a atividade de um usuário entre dispositivos e plataformas. As solicitações da API de feed de atividades são realizadas em nome de um usuário via permissões delegadas e a permissão de atividade do usuário, que pode ser usada com contas pessoais ou corporativas e de estudante. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: a522d4caa29aa5227f5030ed2663972e8b8d1660
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 12f4160a551895c4042a0e8577e28e73692b4265
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535782"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339081"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Usar a API REST de feed de atividades
 
@@ -72,11 +72,3 @@ As atividades do usuário que você criar irão variar com base no padrão de in
 
 - Veja [como as experiências da Microsoft estão usando atividades](https://channel9.msdn.com/events/Build/2017/B8108).
 - Saiba mais sobre [a API de feed de atividades e escolha onde eu parou](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/activity-feed-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

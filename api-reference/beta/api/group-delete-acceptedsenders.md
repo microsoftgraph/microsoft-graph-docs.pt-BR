@@ -1,21 +1,21 @@
 ---
 title: Remover acceptedSender
-description: 'Remova um usuário ou grupo da lista acceptedSenders. '
+description: 'Remover um usuário ou grupo da lista de remetentes aceitos. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a3406c028990b7b5989036f4173cf86f257b4f03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 22e81f8bbbb497b8209e6faa744a54b24029391c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503081"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329733"
 ---
 # <a name="remove-acceptedsender"></a>Remover acceptedSender
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova um usuário ou grupo da lista acceptedSenders. 
+Remover um usuário ou grupo da lista de remetentes aceitos do grupo especificado. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id={id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -43,18 +43,16 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
+### <a name="example-1-remove-a-user-from-the-accepted-senders-list-for-the-group"></a>Exemplo 1: remover um usuário da lista de remetentes aceitos do grupo.
 #### <a name="request"></a>Solicitação
-Estes são alguns exemplos de solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "remove_user_from_acceptedsenderslist_of_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
-
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
+DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{user-id}
 ```
 
 #### <a name="response"></a>Resposta
@@ -62,6 +60,30 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
+  "name": "remove_user_from_acceptedsenderslist_of_group",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-remove-a-group-from-the-accepted-senders-list-for-the-group"></a>Exemplo 2: remover um grupo da lista de remetentes aceitos do grupo.
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "remove_group_from_acceptedsenderslist_of_group"
+}-->
+```http
+DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{other-group-id}
+```
+
+#### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+<!-- {
+  "blockType": "response",
+  "name": "remove_group_from_acceptedsenderslist_of_group",
   "truncated": true
 } -->
 ```http
@@ -73,12 +95,10 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create acceptedSender",
+  "description": "Remove acceptedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-delete-acceptedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

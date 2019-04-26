@@ -4,14 +4,17 @@ description: Representa uma parceria existente que o locatário do parceiro tem 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6309dfc370d414ccb66065fe4048d7cece51f018
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d8da7c20705796cdb612ad1a24c4d03ce160447
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535424"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341209"
 ---
 # <a name="contract-resource-type"></a>Tipo de recurso Contract
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa uma parceria existente que o locatário do parceiro tem com um locatário do cliente.
 
 > **Importante:** Existe somente nos locatários do parceiro. Os locatários de parceiros são locatários do Azure AD que pertencem a parceiros da Microsoft que fazem parte do [provedor de soluções de nuvem da Microsoft](https://partnercenter.microsoft.com/en-us/partner/programs), da distribuição do Office 365 ou dos programas de parceria do Microsoft Advisor.
@@ -39,13 +42,12 @@ Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.directoryObject",
-  "@odata.type": "microsoft.graph.contract"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.Contract"
 }-->
 
 ```json
@@ -61,10 +63,13 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Contract resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

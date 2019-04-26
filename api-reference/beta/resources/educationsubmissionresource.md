@@ -4,12 +4,12 @@ description: 'Um wrapper em torno de um recurso para uso em um envio. O wrapper 
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ef231de49d3871ec877c279b4e77585343e1a85e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b96607a0d37a3ec8af0f6ff0bad61215d6e9008c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507074"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340568"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>tipo de recurso educationSubmissionResource
 
@@ -23,7 +23,7 @@ Um wrapper em torno de um recurso para uso em um envio. O wrapper adiciona um po
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Ler propriedades e relações de um objeto **educationSubmissionResource** .|
-|[Excluir](../api/educationsubmissionresource-delete.md) | Nenhum |Excluir um objeto **educationSubmissionResource** . |
+|[Delete](../api/educationsubmissionresource-delete.md) | Nenhuma |Excluir um objeto **educationSubmissionResource** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -33,7 +33,7 @@ Um wrapper em torno de um recurso para uso em um envio. O wrapper adiciona um po
 |recurso|[educationResource](educationresource.md)|Objeto Resource.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -65,8 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsubmissionresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

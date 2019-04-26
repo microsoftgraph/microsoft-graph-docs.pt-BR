@@ -3,14 +3,16 @@ title: Obter atividades recentes do usuário
 description: " API. O serviço consultará o historyItems mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão userActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar."
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 5ac5522472404e70f07b5b658e404cd4e77bbf88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 464d57e5257b1e9c85796e72e4b8cbda732d4946
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538445"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337185"
 ---
 # <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter atividades recentes para um determinado usuário. Essa função OData tem alguns comportamentos padrão incluídos para que funcionem como uma API "mais recentemente usada". O serviço consultará o [historyItems](../resources/projectrome-historyitem.md)mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão userActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
 
@@ -71,12 +73,12 @@ Se bem-sucedido, este método retorna o `200 OK` código de resposta com as ativ
 Este é um exemplo de solicitação.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_recent_activities"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/activities/recent
+GET https://graph.microsoft.com/beta/me/activities/recent
 ```
 
 ##### <a name="response"></a>Resposta
@@ -84,9 +86,9 @@ GET https://graph.microsoft.com/v1.0/me/activities/recent
 Este é um exemplo de resposta.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.userActivity)"
+  "@odata.type": "Collection(microsoft.graph.activity)"
 } -->
 
 ```http
@@ -94,10 +96,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(userActivity)",
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "#microsoft.graph.userActivity",
+        "@odata.type": "#microsoft.graph.activity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
@@ -107,7 +109,7 @@ Content-Type: application/json
             "attribution": {
               "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
-              "addImageQuery": false,
+              "addImageQuery": "false",
               },
             "displayText": "Contoso How-To: How to Tie a Reef Knot",
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
@@ -141,24 +143,13 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get recent activities",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Error: get_recent_activities/container/contentInfo:
-      Property 'contentInfo' is of type Custom but has no custom members.",
-
-    "Warning: get_recent_activities/container/visualElements/content/$schema:
-      Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
-
-    "Warning: get_recent_activities/container/visualElements/content/body:
-      Undocumented property 'body' [Collection(Object)] was not expected on resource microsoft.graph.Json.",
-
-    "Warning: get_recent_activities/container/visualElements/content/type:
-      Undocumented property 'type' [String] was not expected on resource microsoft.graph.Json."
-
-  ],
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

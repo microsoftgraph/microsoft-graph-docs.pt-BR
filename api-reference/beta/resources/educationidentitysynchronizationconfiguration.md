@@ -14,11 +14,19 @@ Classe abstrata de base para todas as configurações de sincronização de iden
 |:-|:-|
 | [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | Use este tipo para fazer a correspondência de contas de usuário existentes no Azure Active Directory (Azure AD). |
 | [**educationIdentityCreationConfiguration**](educationidentitycreationconfiguration.md) | Use este tipo para criar novas contas de usuário no Azure AD. |
-<!--
+
+## <a name="json-representation"></a>Representação JSON
+<!-- {
+  "blockType": "resource",
+   "isAbstract":true,
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration"
+}-->
+
+```json
 {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationidentitysynchronizationconfiguration.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
 }
--->
+```
+

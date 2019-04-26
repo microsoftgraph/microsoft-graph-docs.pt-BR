@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso compartilhado
+title: tipo de recurso sharedInsight
 description: 'Uma percepção representando arquivos compartilhados com ou por um usuário específico. Há suporte para os seguintes arquivos compartilhados:'
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 128a85bb9aa2e9f51d2393029cce3c27f8c4e6f8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549486"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339973"
 ---
-# <a name="shared-resource-type"></a>tipo de recurso compartilhado
+# <a name="sharedinsight-resource-type"></a>tipo de recurso sharedInsight
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,11 +41,15 @@ Uma percepção representando arquivos compartilhados com ou por um usuário esp
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| recurso      | Entidade        | Usado para navegar até o item compartilhado. Para anexos de arquivo, o tipo ** é fileattachment. Para anexos vinculados, o tipo é *driveItem*. |
+| recurso      | coleção Entity | Usado para navegar até o item compartilhado. Para anexos de arquivo, o tipo ** é fileattachment. Para anexos vinculados, o tipo é *driveItem*. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
-
+<!--{
+  "blockType":"resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.sharedInsight"
+}-->
 ```json
 {
   "id": "string",
@@ -56,11 +60,3 @@ Veja a seguir uma representação JSON do recurso
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

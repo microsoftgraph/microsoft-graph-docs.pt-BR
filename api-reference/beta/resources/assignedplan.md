@@ -2,14 +2,16 @@
 title: Tipo de recurso assignedPlan
 description: A propriedade **assignedPlans** das entidades user e organization é uma coleção de **assignedPlan**.
 localization_priority: Normal
-ms.openlocfilehash: 3e06894fa71f81993b94d174d6cde8a54126fd62
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0f44e96e5591d46d6a22b0cdd951b4dfb1e05e75
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535645"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339042"
 ---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A propriedade **assignedPlans** das entidades [user](user.md) e [organization](organization.md) é uma coleção de **assignedPlan**.
 
@@ -46,10 +48,13 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "assignedPlan resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -2,16 +2,18 @@
 title: Listar blocos de anotações
 description: Recupere uma lista de objetos notebook.
 author: jewan-microsoft
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 49274d1ed7ab74ee5a4322bf9e13d849052f1c35
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56efaec7d72e588c7c66b383a494d938254d40b3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540188"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333031"
 ---
 # <a name="list-notebooks"></a>Listar blocos de anotações
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos [Notebook](../resources/notebook.md) .
 ## <a name="permissions"></a>Permissões
@@ -58,7 +60,7 @@ Este é um exemplo da solicitação.
   "name": "get_notebooks"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
+GET https://graph.microsoft.com/beta/me/onenote/notebooks
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -82,6 +84,7 @@ Content-length: 369
       "isShared": true,
       "sectionsUrl": "sectionsUrl-value",
       "sectionGroupsUrl": "sectionGroupsUrl-value",
+      "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
       "links": {
         "oneNoteClientUrl": {
           "href": "href-value"
@@ -97,10 +100,13 @@ Content-length: 369
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List notebooks",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

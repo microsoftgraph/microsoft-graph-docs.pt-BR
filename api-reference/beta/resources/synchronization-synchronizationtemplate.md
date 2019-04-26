@@ -2,12 +2,12 @@
 title: tipo de recurso synchronizationtemplate
 description: " qualquer pessoa pode recuperar o modelo para ver as configurações padrão, incluindo o esquema de sincronização."
 localization_priority: Normal
-ms.openlocfilehash: 75df13d55cfb58aafe8a751279e103424aa29367
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fda63ede321de1a87604e7bca7fe7d7536d42689
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561198"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339851"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>tipo de recurso synchronizationtemplate
 
@@ -34,7 +34,7 @@ Você pode fornecer vários modelos para um aplicativo e designar um modelo padr
 |:--------------|:--------------------------|:-----------------------------|
 |id             |Cadeia de caracteres                     |Identificador de modelo exclusivo.|
 |ApplicationId  |Cadeia de caracteres                     |Identificador do aplicativo ao qual este modelo pertence.|
-|Padrão.        |Booliano                    |`true`Se este modelo é recomendado para ser o padrão para o aplicativo.|
+|Padrão.        |Boolean                    |`true`Se este modelo é recomendado para ser o padrão para o aplicativo.|
 |description    |String                     |Descrição do modelo.|
 |detectáveis   |String                     |`true`Se esse modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
 |factoryTag     |String                     |Uma das marcas de fábrica conhecidas suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização que implementação usar ao processar trabalhos com base nesse modelo.|

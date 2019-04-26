@@ -4,16 +4,18 @@ description: Recupere as propriedades e os relacionamentos de um objeto Page.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 57a2c75bbe671086c89818a84f7f8266b90713c6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b4138c46a4717db4590d0e929518e1f8df2893ed
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539379"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337814"
 ---
 # <a name="get-page"></a>Obter página
 
-Recupere as propriedades e os relacionamentos de um objeto [Page](../resources/page.md) .
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Recupere as propriedades e os relacionamentos de um objeto [Page](../resources/onenotepage.md) .
 
 **Obtendo informações da página**
 
@@ -67,13 +69,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [Page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [onenotePage](../resources/onenotepage.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
  <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
+GET https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto Response mostrado aqui é truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -86,6 +88,7 @@ Content-length: 312
 {
   "title": "title-value",
   "createdByAppId": "createdByAppId-value",
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "links": {
     "oneNoteClientUrl": {
       "href": "href-value"
@@ -102,10 +105,13 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ description: Uma pasta de email na caixa de correio de um usuário, como Caixa d
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 294f2a9a6b4775ad30165352dec5520fb0efa804
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547127"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342749"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -57,10 +57,10 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 |[Obter mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Leia as propriedades e os relacionamentos do objeto mailFolder.|
 |[Criar MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Crie uma nova mailFolder na atual postando na coleção childFolders.|
 |[Listar childFolders](../api/mailfolder-list-childfolders.md) |Coleção [mailFolder](mailfolder.md)| Obtenha a coleção de pastas sob a pasta especificada. Você pode usar o atalho `.../me/MailFolders` para obter a coleção de pastas de nível superior e navegar até outra pasta.|
-|[Criar Mensagem](../api/mailfolder-post-messages.md) |[mensagem](message.md)| Crie uma nova mensagem na mailFolder atual postando na coleção de mensagens.|
+|[Criar Mensagem](../api/mailfolder-post-messages.md) |[message](message.md)| Crie uma nova mensagem na mailFolder atual postando na coleção de mensagens.|
 |[Listar mensagens](../api/mailfolder-list-messages.md) |Coleção [message](message.md)| Obtenha todas as mensagens na caixa de correio do usuário conectado, ou em uma pasta especificada na caixa de correio.|
 |[Update](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Atualize o objeto mailFolder especificado. |
-|[Excluir](../api/mailfolder-delete.md) | Nenhum |Exclua o objeto mailFolder especificado. |
+|[Delete](../api/mailfolder-delete.md) | Nenhum |Exclua o objeto mailFolder especificado. |
 |[copy](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md)|Copie uma mailFolder e seu conteúdo para outra mailFolder.|
 |[delta](../api/mailfolder-delta.md)|Coleção [mailFolder](mailfolder.md)|Obtenha um conjunto de pastas de email que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
 |[move](../api/mailfolder-move.md)|[mailFolder](mailfolder.md)|Mova uma mailFolder e seu conteúdo para outra mailFolder.|
@@ -76,7 +76,7 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 |:---------|:-----|:------------|
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
 |displayName|String|O nome de exibição da mailFolder.|
-|id|Cadeia de caracteres|Identificador exclusivo de mailFolder.|
+|id|String|Identificador exclusivo de mailFolder.|
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|
 |unreadItemCount|Int32|O número de itens na mailFolder marcados como não lidos.|
@@ -151,8 +151,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mailfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

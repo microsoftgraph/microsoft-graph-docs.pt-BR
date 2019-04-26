@@ -4,14 +4,16 @@ description: Representa um registro CNAME adicionado ao arquivo de zona DNS de u
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f270075556843625d1ec408f06be8ed4a065c831
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fb730cafd1689ab95563fa1e4dd6ea23962af903
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543186"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340678"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>tipo de recurso domainDnsCnameRecord
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .
 
@@ -24,7 +26,7 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 |:---------------|:--------|:----------|
 |canônicaname|String| O nome canônico do registro CNAME. Usado para configurar o registro CNAME no host DNS. |
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura|
-|isOptional|Booliano| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável |
+|isOptional|Boolean| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável |
 |rótulo|String| O valor usado ao configurar o *alias/host/nome* do registro CNAME no host DNS. |
 |recordType|String| Tipo de registro DNS. O valor é sempre *CNAME*. Chave|
 |supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro CNAME.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune*|
@@ -39,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -61,10 +62,13 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsCnameRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

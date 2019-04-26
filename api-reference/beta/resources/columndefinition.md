@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: ddd6b3c6d3048bf7a6d3ab2dbc8ff7259651ee2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5cce4c3db7b66ff46a6bab0bbfaacd0ecc9a6cc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460616"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341383"
 ---
 # <a name="columndefinition-resource-type"></a>tipo de recurso columnDefinition
 
@@ -118,8 +118,6 @@ Para vê-los ao exibir valores **field** em [listItems][listItem], inclua as col
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/ColumnDefinition",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/columndefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

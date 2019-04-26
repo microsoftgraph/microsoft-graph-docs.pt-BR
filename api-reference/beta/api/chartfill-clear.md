@@ -4,12 +4,12 @@ description: Limpe a cor de preenchimento de um elemento do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8edef56f24d09877265b510ae067b59f1eae923
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c60b932171bba61341070988c92e13897d73986
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456525"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327895"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,7 +54,7 @@ Este é um exemplo da solicitação.
   "name": "chartfill_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
 ```
 
 ##### <a name="response"></a>Resposta
@@ -77,8 +77,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartfill-clear.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

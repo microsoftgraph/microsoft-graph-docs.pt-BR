@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7ac95379d8e5eeae07e520f40ae9403c47e98f58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a7a921bafda04497ff97c7c28bdb9f21d4b3d15f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507578"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340674"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -47,7 +47,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
        "keyProperty": "id", "openType": true } -->
 
 ```json
-{
+{  
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
@@ -250,8 +250,6 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
   "tocBookmarks": {
     "Resources/Item": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/driveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
