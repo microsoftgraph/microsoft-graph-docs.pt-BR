@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 6feb967d406bfe4fb8991c3cf3b877473fbb0971
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963287"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581727"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -17,15 +17,15 @@ Recupere as propriedades e os relacionamentos de um objeto [message](../resource
 
 No momento, essa operação retorna corpos de mensagens somente no formato HTML.
 
-Há dois cenários onde um aplicativo pode obter uma mensagem na pasta de email de outro usuário:
+Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -143,7 +143,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O próximo exemplo utiliza uma `$select` parâmetro para obter os cabeçalhos de mensagem de Internet de uma mensagem de consulta. 
+O próximo exemplo usa um parâmetro de `$select` consulta para obter os cabeçalhos das mensagens de Internet de uma mensagem. 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
@@ -153,7 +153,7 @@ O próximo exemplo utiliza uma `$select` parâmetro para obter os cabeçalhos de
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>Resposta 2
-Veja a seguir um exemplo da resposta. Observação: O conjunto de cabeçalhos de mensagem no objeto response será truncado para fins de concisão. Serão retornados todos dos cabeçalhos de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: O conjunto de cabeçalhos das mensagens no objeto de resposta é truncado para brevidade. Todas os cabeçalhos serão retornados de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

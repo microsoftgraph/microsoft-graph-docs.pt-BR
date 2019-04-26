@@ -4,14 +4,16 @@ description: Copie uma mailFolder e seu conteúdo para outra mailFolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e1c4c567c56e869ed1e18ff0c887393c8345929d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b1fb9b0b3d3891f33020458ffb5b140f9bf42c6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540896"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333383"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copie uma mailFolder e seu conteúdo para outra mailFolder.
 
@@ -35,6 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Cabeçalho | Valor |
 |:-------|:------|
 | Autorização | `Bearer {token}`. Obrigatório. |
@@ -57,6 +60,7 @@ Se bem-sucedido, este método retorna `200 OK` um código de resposta e um recur
 Eis um exemplo de como chamar esta API.
 
 ##### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
@@ -64,7 +68,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -78,6 +82,7 @@ Content-length: 44
 Veja a seguir um exemplo da resposta.
 
 > **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,10 +106,13 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

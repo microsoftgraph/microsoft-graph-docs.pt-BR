@@ -2,12 +2,12 @@
 title: tipo de recurso Entidadegovernanceresource
 description: Representa os recursos que podem ser gerenciados pelo gerenciamento de identidade privilegiado (PIM). Para recursos do Azure, pode ser uma assinatura, um grupo de recursos e um recurso como uma máquina virtual, um banco de dados SQL, etc.
 localization_priority: Normal
-ms.openlocfilehash: 92a738350a47cc9eaf436382d020330fac89db1f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7453397b0ea3edccd44a4eebdbbd89624bab2cc5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547421"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333698"
 ---
 # <a name="governanceresource-resource-type"></a>tipo de recurso Entidadegovernanceresource
 
@@ -29,9 +29,9 @@ Não `POST`, `PUT`, `PATCH`, `DELETE` há suporte no `roleDefinitions` conjunto 
 ## <a name="properties"></a>Propriedades
 | Propriedade          |Tipo         |Descrição|
 |:------------------|:----------|:----------|
-|id                 |Cadeia de caracteres     |A ID do recurso. Está no formato GUID.|
+|id                 |String     |A ID do recurso. Está no formato GUID.|
 |externalId           |String   |A ID externa do recurso, que representa sua ID original no sistema externo. Por exemplo, a ID externa de um recurso de assinatura pode ser "/subscriptions/c14ae696-5e0c-4E5D-88cc-bef6637737ac". |
-|type               |String     |Obrigatório. Tipo de recurso. Por exemplo, para recursos do Azure, o tipo poderia ser "Subscription", "resourcer", "Microsoft. SQL/Server", etc.|
+|tipo               |String     |Obrigatório. Tipo de recurso. Por exemplo, para recursos do Azure, o tipo poderia ser "Subscription", "resourcer", "Microsoft. SQL/Server", etc.|
 |displayName        |String     |O nome de exibição do recurso.|
 |status             |String     |O status de um determinado recurso. Por exemplo, ele pode representar se o recurso está bloqueado ou não (valores: `Active` / `Locked`). Observação: essa propriedade pode ser estendida no futuro para dar suporte a mais cenários.|
 |registeredDateTime|DateTimeOffset      |Representa a data e hora em que o recurso é registrado no PIM.|
@@ -55,6 +55,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -68,7 +69,12 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "status": "String",
   "registeredDateTime": "String (timestamp)",
-  "registeredRoot": "String"
+  "registeredRoot": "String",
+  "roleAssignmentCount": 12356,
+  "roleDefinitionCount": 12356,
+  "permissions": {
+    "@odata.type": "microsoft.graph.governancePermission"
+  }
 }
 
 ```
@@ -81,8 +87,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

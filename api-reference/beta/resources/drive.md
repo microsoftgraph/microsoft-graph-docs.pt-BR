@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Unidade
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 82a14f6462604b732119b90d037b2fab711df5af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a01a2a8a8ad827145ee98a3ef0687546581d3096
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507837"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340655"
 ---
 # <a name="drive-resource-type"></a>tipo de recurso de unidade
 
@@ -51,21 +51,22 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 {
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "id": "string",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
-  "following": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "following": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "items": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-  "quota": { "@odata.type": "microsoft.graph.quota" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "system": { "@odata.type": "microsoft.graph.systemFacet" },
-  "webUrl": "url"
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "quota": {"@odata.type": "microsoft.graph.quota"},
+  "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "special": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "system": {"@odata.type": "microsoft.graph.systemFacet"},
+  "webUrl": "string",
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"}
 }
 ```
 
@@ -96,10 +97,10 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | Relação | Tipo                                 | Descrição
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | Conjunto [itemActivity][]          | A lista de atividades recentes que ocorreram nesta unidade.
-| items        | Coleção [driveitem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.
-| root         | [driveitem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.
-| special      | Coleção [driveitem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.
-| seguindo    | Coleção [DriveItem](driveitem.md) | A lista de itens que o usuário está seguindo. Somente no OneDrive for Business.
+| items        | Coleção [driveItem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.
+| root         | [driveItem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.
+| special      | Coleção [driveItem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.
+| following    | Coleção [driveItem](driveitem.md) | A lista de itens que o usuário está seguindo. Somente no OneDrive for Business.
 
 ## <a name="methods"></a>Métodos
 
@@ -142,8 +143,6 @@ Na tabela anterior, os exemplos usam `/drive`, mas outros caminhos também são 
   "tocBookmarks": {
     "Resources/Drive": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

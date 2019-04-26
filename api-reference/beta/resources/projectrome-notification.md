@@ -3,12 +3,12 @@ title: tipo de recurso de notificação
 description: 'Representa uma notificação publicada por um servidor de aplicativos que se destina a um usuário especificado. A notificação é armazenada no Microsoft Graph e é distribuída para diferentes pontos de extremidade do dispositivo de Propriedade do usuário. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: af130c9806511b0afbdaedb602790c7c40d3ca2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56a05ced6d722b3c1c347fc43735dec461aa0f69
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563309"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344080"
 ---
 # <a name="notification-resource-type"></a>tipo de recurso de notificação
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -35,7 +35,7 @@ Quando um usuário atua em uma notificação Visual, o cliente do aplicativo pod
 | Payload. Visual | EDM. complexType, objeto JSON | O conteúdo visual de uma notificação de usuário visual, que será consumida pela plataforma de notificação em cada plataforma móvel e renderizada para os usuários. Pelo menos um dos conteúdos e VisualContent precisa ser válido para uma solicitação de notificação POST. |
 | Payload. Visual. title | String | O título de uma notificação de usuário visual. Deve ter título ou corpo. |
 | Payload. Visual. Body | String | O corpo de uma notificação de usuário visual. Deve ter título ou corpo. |
-| displayTimeToLive | Limite | Define por quanto tempo (em segundos) esse conteúdo de notificação permanecerá no Visualizador de notificação de cada plataforma. Por exemplo, quando a notificação é entregue a um dispositivo do Windows, o valor dessa propriedade é passado para ToastNotification. ExpirationTime, que determina por quanto tempo a notificação de notificação de falha permanecerá na central de ações do Windows do usuário. |
+| displayTimeToLive | Int | Define por quanto tempo (em segundos) esse conteúdo de notificação permanecerá no Visualizador de notificação de cada plataforma. Por exemplo, quando a notificação é entregue a um dispositivo do Windows, o valor dessa propriedade é passado para ToastNotification. ExpirationTime, que determina por quanto tempo a notificação de notificação de falha permanecerá na central de ações do Windows do usuário. |
 | prioridade | EnumType | Indica a prioridade de uma notificação de usuário bruto. As notificações visuais são enviadas com alta prioridade por padrão. Os valores válidos são alto e baixo. |
 | Nome_do_grupo | String | O nome do grupo ao qual essa notificação pertence. Ele é definido pelo desenvolvedor com o objetivo de agrupar notificações. |
 | targetPolicy | EDM. complexType, objeto JSON | O objeto de política de destino trata a política de entrega de notificação em dois níveis diferentes-tipos de ponto de extremidade (Windows, iOS e Android) que devem ser direcionados e pontos de extremidade específicos (identificados por IDs de assinatura) que devem ser direcionados. |

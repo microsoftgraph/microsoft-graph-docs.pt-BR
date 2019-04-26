@@ -4,12 +4,12 @@ description: Uma subclasse de educationResource. Este recurso é um formulário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5e0b03eeea8c0e9d22a9f7279c821f6d90211470
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3f2747d94c80732091db06294b26546afc567e03
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542843"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334251"
 ---
 # <a name="educationformresource-resource-type"></a>tipo de recurso educationFormResource
 
@@ -23,7 +23,7 @@ Uma subclasse de [educationResource](educationresource.md). Este recurso é um f
 |:---------------|:--------|:----------|
 |originalFormId|String|ID original do formulário.|
 |formId|String|ID do formulário.|
-|isGroupForm|Booliano|Se o formulário pertence a um grupo de classe.|
+|isGroupForm|Boolean|Se o formulário pertence a um grupo de classe.|
 |viewUrl|String|URL do aluno para o formulário.|
 |viewUrl|String|URL do aluno para o formulário.|
 |editUrl|String|URL do professor para o formulário.|
@@ -42,10 +42,10 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "originalFormId": "String"
-  "formId": "String"
-  "isGroupForm": "Boolean"
-  "viewUrl": "String"
+  "originalFormId": "String",
+  "formId": "String",
+  "isGroupForm": "Boolean",
+  "viewUrl": "String",
   "editUrl": "String"
 }
 
@@ -60,8 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationformresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: Tipo de recurso patternedRecurrence
 description: O padrão e o intervalo da recorrência.
 localization_priority: Normal
-ms.openlocfilehash: f4ffd62b54eb6d577269b36d0ee3bea0a3a0002c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 063df70dfeeb1d37cfc5e23710108dd4cfc9ae57
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568260"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344912"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
 
@@ -18,8 +18,8 @@ O padrão e o intervalo da recorrência.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|pattern|[RecurrencePattern](recurrencepattern.md)|A frequência de um evento.|
-|range|[RecurrenceRange](recurrencerange.md)|A duração de um evento.|
+|pattern|[GetRecurrencePattern](recurrencepattern.md)|A frequência de um evento.|
+|range|[recurrenceRange](recurrencerange.md)|A duração de um evento.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -50,8 +50,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/patternedrecurrence.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

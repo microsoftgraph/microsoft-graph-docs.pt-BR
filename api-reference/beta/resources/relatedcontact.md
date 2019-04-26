@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: d29cf93154e2c032ac7010372e3f116f2a1dd46c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563041"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343879"
 ---
 # <a name="relatedcontact-resource-type"></a>tipo de recurso relatedContact
 
@@ -25,7 +25,7 @@ Registro de contato relacionado a um [educationUser](../resources/educationuser.
 |emailAddress|String|Endereço de email principal do contato.|
 |mobilePhone|String|Número do telefone celular do contato.|
 |relação|`contactRelationship`|Relação com o usuário. Os valores possíveis `parent`são `relative`: `aide` `doctor` `guardian` `child`,,,, `other`, `unknownFutureValue`,.|
-|accessConsent|Booliano|Indica se o usuário foi remetido para acessar os dados dos alunos.|
+|accessConsent|Boolean|Indica se o usuário foi remetido para acessar os dados dos alunos.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -4,12 +4,12 @@ description: Representa uma notificação para uma pessoa com base no endereço 
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: f8e04722edf878b4f3851de837908dc5c0a02de7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 28a77b393f2d5574453d08b93df487ffc5203e2c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523469"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342314"
 ---
 # <a name="mention-resource-type"></a>tipo de recurso menção
 
@@ -88,8 +88,6 @@ Nenhuma
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mention.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

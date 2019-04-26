@@ -4,12 +4,12 @@ description: Os envios são propriedade de uma atribuição. Um envio representa
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: aeeb1355da2ffcb0ebf561af2ecd15ac93221e26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39adc3f394d106860406b3dd22bbf9a1c600280f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542887"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334125"
 ---
 # <a name="educationsubmission-resource-type"></a>tipo de recurso educationSubmission
 
@@ -27,7 +27,7 @@ Os envios são criados automaticamente quando uma atribuição é publicada. O e
 |[Obter educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Ler propriedades e relações de um objeto **educationSubmission** .|
 |[Listar recursos](../api/educationsubmission-list-resources.md) |coleção [educationSubmissionResource](educationsubmissionresource.md)| Obtenha uma coleção de objetos **educationSubmissionResource** .|
 |[Listar submittedResources](../api/educationsubmission-list-submittedresources.md) |coleção [educationSubmissionResource](educationsubmissionresource.md)| Obtenha uma coleção de objetos **educationSubmissionResource** .|
-|[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Atualize um objeto **educationSubmission** . |
+|[Atualizar](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Atualize um objeto **educationSubmission** . |
 |[Enter](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Um professor usa Return para indicar que os notas/comentários podem ser mostrados para o aluno.|
 |[Enviar](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa Submit para ativar a atribuição. Isso copiará os recursos na pasta **submittedResources** para a gradação e atualizará o status.|
 |[Não enviar](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa o não enviar para mover o estado do envio de enviado de volta para o trabalho. Isso copiará os recursos na pasta **workingResources** para a gradação e atualizará o status.|
@@ -62,6 +62,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -70,18 +71,20 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
-  "grade": {"@odata.type": "microsoft.graph.educationAssignmentGrade"},
-  "id": "String (identifier)",
-  "recipient": {"@odata.type": "microsoft.graph.educationSubmissionRecipient"},
-  "returnedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "returnedDateTime": "String (timestamp)",
-  "resourcesFolderUrl": "String",
-  "status": "string",
-  "submittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "submittedDateTime": "String (timestamp)",
-  "unsubmittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "unsubmittedDateTime": "String (timestamp)"
+    "feedback":{"@odata.type":"microsoft.graph.educationFeedback"},
+    "grade":{"@odata.type":"microsoft.graph.educationAssignmentGrade"},
+    "id":"String (identifier)",
+    "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
+    "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "returnedDateTime":"String (timestamp)",
+    "resourcesFolderUrl":"String",
+    "status":"string",
+    "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "submittedDateTime":"String (timestamp)",
+    "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "unsubmittedDateTime":"String (timestamp)",
+    "releasedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "releasedDateTime":"String (timestamp)"
 }
 ```
 
@@ -94,8 +97,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsubmission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

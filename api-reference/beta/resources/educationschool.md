@@ -4,12 +4,12 @@ description: 'Uma escola. O recurso **educationSchool** atualmente corresponde a
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 917395324e6ae519af468a4bb4b31056796e1498
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 893f01fffcc606c85cec30789ec94dd658b2a4b2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542911"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334187"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -26,7 +26,7 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Leia as propriedades e relações de um objeto **educationSchool**.|
+|[Get](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Leia as propriedades e relações de um objeto **educationSchool**.|
 |[Adicionar classe](../api/educationschool-post-classes.md) |[educationClass](educationclass.md)| Adicione uma nova **educationClass** para a escola postando na propriedade de navegação de aulas.|
 |[Listar classes](../api/educationschool-list-classes.md) |Coleção [educationClass](educationclass.md)| Obtenha a coleção de objetos **educationClass**.|
 |[Remover classe](../api/educationschool-delete-classes.md) |[educationClass](educationclass.md)| Remova uma **educationClass** da escola por meio da propriedade de navegação de aulas.|
@@ -35,7 +35,7 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 |[Remover usuário](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| Remova um **educationUser** da escola por meio da propriedade de navegação **users**.|
 |[Obter administrativeUnit](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| Obtenha o **administrativeUnit** que corresponde a esse **educationSchool**.|
 |[Atualizar](../api/educationschool-update.md) | [educationSchool](educationschool.md) |Atualize um objeto **educationSchool**. |
-|[Excluir](../api/educationschool-delete.md) | Nenhum |Exclua um objeto **educationSchool**. |
+|[Delete](../api/educationschool-delete.md) | Nenhum |Exclua um objeto **educationSchool**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -70,6 +70,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -106,8 +107,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationschool.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

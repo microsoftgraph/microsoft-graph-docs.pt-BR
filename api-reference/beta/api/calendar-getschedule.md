@@ -4,14 +4,16 @@ description: Obtenha as informações de disponibilidade para um conjunto de usu
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7634997b58ec2bb65df1b3914c541fc57c5c37f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b7146bf264b2435694848062dc263d081bd23b01
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461679"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322385"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adquira as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos (salas e equipamentos) para um período de tempo especificado.
 
@@ -60,7 +62,7 @@ O exemplo a seguir obtém as informações de disponibilidade de dois usuários 
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
+POST https://graph.microsoft.com/beta/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -91,7 +93,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value": [
         {
             "scheduleId": "adelev@contoso.onmicrosoft.com",
@@ -232,6 +234,7 @@ Content-type: application/json
   "description": "calendar: getSchedule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": []
 }
 -->

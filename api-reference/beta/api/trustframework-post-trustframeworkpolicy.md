@@ -4,12 +4,12 @@ description: Essa operação cria um novo objeto trustFrameworkPolicy em um loca
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4dc64ed9d1db3354926f0f2395e6c2cef84cff28
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5b06048859853fbf15b1d82cdee97ac507513fc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548002"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329813"
 ---
 # <a name="create-trustframeworkpolicy"></a>Criar trustFrameworkPolicy
 
@@ -58,12 +58,14 @@ O exemplo a seguir cria um **trustFrameworkPolicy**.
 ##### <a name="request"></a>Solicitação
 
 <!-- {
-  "blockType": "request",
-  "name": "create__trustframeworkpolicy_from__trustframeworkpolicy"
+  "blockType": "ignored",
+  "truncated": true,
+  "name": "create_trustframeworkpolicy_from_trustframeworkpolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/trustFramework/policies
-Content-Type:application/xml
+Content-Type: application/xml
+
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
     <!---PolicyContent-->
 </TrustFrameworkPolicy>
@@ -72,14 +74,15 @@ Content-Type:application/xml
 ##### <a name="response"></a>Resposta
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trustFramework.policy"
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy"
 } -->
 ```http
 HTTP/1.1 201 Created
-Content-Type application/xml
-Location /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
+Content-Type: application/xml
+Location: /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
+
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base" PublicPolicyUri="http://tenantName.onmicrosoft.com/B2C_1A_Test">
     <!---PolicyContent-->
 </TrustFrameworkPolicy>

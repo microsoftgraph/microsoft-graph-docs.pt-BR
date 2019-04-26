@@ -5,14 +5,16 @@ ms.date: 09/11/2017
 title: Criar uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 88b12ebbe56a3e57b441581ba319734edbe9e5c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1640e0227045cc49af77fba1b902586da5c595f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541021"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333453"
 ---
 # <a name="create-a-new-list"></a>Criar uma nova lista
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar uma nova [lista][] em um [site][].
 
@@ -31,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -103,13 +105,16 @@ Content-type: application/json
 **Observação:** O objeto Response será truncado para mais clareza.
 As propriedades padrão serão retornadas da chamada real.
 
-[list]: ../resources/list.md
+[lista]: ../resources/list.md
 [site]: ../resources/site.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
-} -->
+  "tocPath": "List/Create",
+  "suppressions": []
+}
+-->

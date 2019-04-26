@@ -4,12 +4,12 @@ description: ) para tarefas em um plano no Office 365. Ele está contido em um p
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 85cf30bc13b3236928e662807a144f81614adbd7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9e6b3ac4a9bad8d7402dee28706b5200c623078
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579251"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344582"
 ---
 # <a name="plannerbucket-resource-type"></a>tipo de recurso plannerBucket
 
@@ -24,16 +24,16 @@ O recurso **plannerBucket** representa um Bucket (ou "coluna personalizada") par
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Leia as propriedades e os relacionamentos do objeto **plannerBucket** .|
-|[Listar plannerTasks](../api/plannerbucket-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obtenha uma coleção de objetos **plannerTask** .|
-|[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Criar um novo objeto **plannerBucket** . |
-|[Update](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Atualize o objeto **plannerBucket** . |
-|[Excluir](../api/plannerbucket-delete.md) | Nenhum |Exclua o objeto **plannerBucket** . |
+|[Listar plannerTasks](../api/plannerbucket-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
+|[Criar](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Criar um novo objeto **plannerBucket** . |
+|[Atualizar](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Atualize o objeto **plannerBucket** . |
+|[Delete](../api/plannerbucket-delete.md) | Nenhum |Exclua o objeto **plannerBucket** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID do Bucket. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
-|name|String|Nome do Bucket.|
+|name|Cadeia de caracteres|Nome do Bucket.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |planId|String|ID do plano ao qual o Bucket pertence.|
 
@@ -50,6 +50,8 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.plannerBucket"
 }-->
 
@@ -72,8 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerbucket.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

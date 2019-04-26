@@ -3,14 +3,16 @@ title: tipo de recurso visualInfo
 description: Um tipo complexo para representar a propriedade **visualElements** no objeto Activity.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 56d3822c89de074847aeab6c8a0a742ecd7f006f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: edf02c7318f45f711da3a27b03747aac94fd9706
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563342"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344040"
 ---
 # <a name="visualinfo-resource-type"></a>tipo de recurso visualInfo
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um tipo complexo para representar a propriedade **visualElements** no objeto [Activity](../resources/projectrome-activity.md) .
 
@@ -47,7 +49,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-    "@odata.type": "microsoft.graph.visualInfo",
+    "@data.type": "microsoft.graph.visualInfo",
     "attribution": {
         "@odata.type": "microsoft.graph.imageInfo",
         "iconUrl": "String (URL)",
@@ -58,17 +60,20 @@ Veja a seguir uma representação JSON do recurso.
     "backgroundColor": "String",
     "displayText": "String",
     "content": {
-        "@odata.type": "microsoft.graph.Json"
+        "@data.type": "microsoft.graph.Json"
     }
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "visualinfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

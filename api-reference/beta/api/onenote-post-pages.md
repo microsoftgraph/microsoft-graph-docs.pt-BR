@@ -4,14 +4,16 @@ description: Crie uma nova página do OneNote na seção padrão do bloco de ano
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9b8a48de889a0db5c6eea42fcbd64cae4ff23a43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da37b32d3a1559292c47fa58a464b32d7266b19c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539965"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333078"
 ---
 # <a name="create-page"></a>Criar página
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie uma nova página do OneNote na seção padrão do bloco de anotações padrão.
 
@@ -50,7 +52,7 @@ O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [OneNotePage](../resources/onenotepage.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -60,7 +62,7 @@ No `../onenote/pages` caminho, você pode usar o `sectionName` parâmetro de con
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/pages
+POST https://graph.microsoft.com/beta/me/onenote/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -124,10 +126,13 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

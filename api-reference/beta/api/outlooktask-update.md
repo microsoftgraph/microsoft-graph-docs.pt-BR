@@ -4,12 +4,12 @@ description: Alterar as propriedades graváveis de uma tarefa do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1908d9b918b13f87b1d5ab61dab912577f06da64
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 47a96d7e1fd7044bcc43edac809696c5a3ad2c42
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539786"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332673"
 ---
 # <a name="update-outlooktask"></a>Atualizar outlooktask
 
@@ -53,9 +53,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|assignedTo|Cadeia de caracteres|O nome da pessoa a qual a tarefa foi atribuída.|
-|corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
-|categories|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
+|assignedTo|String|O nome da pessoa a qual a tarefa foi atribuída.|
+|Corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
+|Categorias|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
 |changeKey|String|A versão da tarefa.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
@@ -71,7 +71,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |sensibilidade|cadeia de caracteres|Indica o nível de privacidade da tarefa. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será iniciada.|
 |status|cadeia de caracteres|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|subject|String|Uma breve descrição ou o título da tarefa.|
+|assunto|Cadeia de caracteres|Uma breve descrição ou o título da tarefa.|
 
 ## <a name="response"></a>Resposta
 
@@ -88,8 +88,7 @@ O exemplo a seguir modifica a propriedade **dueDateTime** e usa o `Prefer: outlo
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTHgwAAA=')
-
+PATCH https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTHgwAAA=
 Prefer: outlook.timezone="Eastern Standard Time"
 Content-type: application/json
 Content-length: 76
@@ -160,8 +159,6 @@ Content-length: 376
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

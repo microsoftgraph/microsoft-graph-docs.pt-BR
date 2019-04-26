@@ -4,12 +4,12 @@ description: Obtenha uma lista dos membros do grupo. Um grupo pode ter usuários
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e1dc5c2b89305373b22b6ef87cfaee25d6669750
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 96b68a26eed767884562382e6ef7e262894e23bd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502108"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329739"
 ---
 # <a name="list-group-transitive-members"></a>Membros transitivos do grupo de lista
 
@@ -85,8 +85,8 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
+      "@odata.type": "#microsoft.graph.user",
       "businessPhones": [
         "businessPhones-value"
       ],
@@ -114,8 +114,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-list-transitivemembers.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

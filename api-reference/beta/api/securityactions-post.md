@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 2d8b957df914225231623f0edbc633182393dff8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545544"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336008"
 ---
 # <a name="create-securityaction"></a>Criar securityAction
 
