@@ -4,12 +4,12 @@ description: 'Um canal é uma coleção de chatMessages dentro de uma equipe. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ae93d6f81d1be9b1af767129d75ceab75d23cec4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1b77afb1560ed451683838a617123db013b71cd6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543700"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338756"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 

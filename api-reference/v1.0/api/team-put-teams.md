@@ -5,21 +5,21 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3d2d595d95e5276ac1785a9f03459cfd6c3085b6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959955"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570775"
 ---
 # <a name="create-team"></a>Criar equipe
 
 
 
-Crie uma nova [equipe](../resources/team.md) em um [grupo](../resources/group.md).
+Criar uma nova [equipe](../resources/team.md) em um [grupo](../resources/group.md).
 
-Para criar uma equipe, o grupo deve ter um mínimo de um proprietário.
+Para criar uma equipe, o grupo deve ter pelo menos um proprietário.
 
-Se o grupo foi criado há menos de 15 minutos, é possível para a chamada de equipe criar falha com um código de 404 erro devido aos atrasos de replicação. O padrão recomendado é repetir a chamada de equipe criar três vezes, com um atraso de segunda 10 entre chamadas.
+Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação. O padrão recomendado é repetir a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All |
 
-> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar que eles não são membros de grupos.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e administradores do serviço do Microsoft Teams podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,11 +50,11 @@ PUT /groups/{id}/team
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um objeto de [equipe](../resources/team.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [team](../resources/team.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esse método deve retornar uma `201 Created` código de resposta e um objeto de [equipe](../resources/team.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [team](../resources/team.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -140,4 +140,4 @@ Content-length: 401
 
 ## <a name="see-also"></a>Confira também
 
-- [Criando um grupo com uma equipe](/graph/teams-create-group-and-team)
+- [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)

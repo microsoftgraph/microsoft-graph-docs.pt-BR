@@ -1,15 +1,15 @@
 ---
 title: Visão geral das propriedades estendidas do Outlook
-description: 'Propriedades estendidas permitem armazenar dados personalizados e especificamente servem como um mecanismo de fallback para aplicativos acessar '
+description: 'Propriedades estendidas permitem o armazenamento de dados personalizados e especificamente servem como um mecanismo de fallback para os aplicativos acessarem '
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 935f97819155318a6bfc7c77d07bf8a308e512e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578096"
 ---
 # <a name="outlook-extended-properties-overview"></a>Visão geral das propriedades estendidas do Outlook
 
@@ -43,36 +43,36 @@ Você pode usar **id** para obter uma instância de recurso específica em conju
 **Observação** Não é possível usar a API REST para obter todas as propriedades estendidas de uma instância específica em uma única chamada.
   
 
-### <a name="id-formats"></a>formatos de ID
+### <a name="id-formats"></a>formatos de id
 
 Você pode especificar o **id** de uma propriedade estendida em um dos três formatos:
 
-- Como uma propriedade nomeada, identificada por um nome de cadeia de caracteres, namespace e o tipo de propriedade estendida.
-- Como uma propriedade nomeada, identificada por um identificador numérico, namespace e o tipo de propriedade estendida.
-- Em um formato proptag, identificado pelo tipo de propriedade estendida e uma [marca de propriedade MAPI](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-tags).
+- Como uma propriedade nomeada, identificada pelo tipo de propriedade estendida, namespace e nome de uma cadeia de caracteres.
+- Como uma propriedade nomeada, identificada pelo tipo de propriedade estendida, namespace e um identificador numérico.
+- Em um formato de proptag, identificado pelo tipo de propriedade estendida e uma [marca de propriedade MAPI](https://docs.microsoft.com/pt-BR/office/client-developer/outlook/mapi/mapi-property-tags).
 
-As tabelas próximas 2 descrevem esses formatos como propriedades estendidas aplicadas ao único e de valores múltiplos. {_tipo_} representa o tipo do valor ou valores da propriedade estendida. Os exemplos mostram a cadeia de caracteres, inteiro e matrizes desses tipos.
+As próximas 2 tabelas descrevem esses formatos aplicados a propriedades estendidas única e com vários valores. {_tipo_} representa o tipo de valor ou valores da propriedade estendida. Os exemplos mostram a cadeia de caracteres, inteiro e matrizes desses tipos.
 
 **Formatos de id válidos para propriedades estendidas de valor único**
 
 |**Formato**|**Exemplo**|**Descrição**|
 |:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica uma propriedade namespace (o GUID) qual ele pertence e um nome de cadeia de caracteres.         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifica uma propriedade namespace (o GUID) qual ele pertence e um identificador numérico.  |
-| "{_tipo_} {_proptag_}"                    | ```"String 0x4001001E"```                                           | Identifica uma propriedade pré-definidos pela marca de sua propriedade. |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica uma propriedade namespace (GUID) à qual ele pertence, e um nome de cadeia de caracteres.         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifica uma propriedade namespace (GUID) à qual ele pertence, e um identificador numérico.  |
+| "{_type_} {_proptag_}"                    | ```"String 0x4001001E"```                                           | Identifica uma propriedade predefinida por sua marca de propriedade. |
 
 **Formatos de id válidos para propriedades estendidas de vários valores**
 
 |**Formato**|**Exemplo**|**Descrição**|
 |:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica uma propriedade por namespace (o GUID) e um nome de cadeia de caracteres.         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifica uma propriedade por namespace (o GUID) e um identificador numérico.   |
-| "{_tipo_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | Identifica uma propriedade pré-definidos pela marca de sua propriedade. |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica uma propriedade namespace (GUID) e um nome de cadeia de caracteres.         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifica uma propriedade namespace (GUID) e um identificador numérico.   |
+| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | Identifica uma propriedade predefinida por sua marca de propriedade. |
 
 
-Use um dos formatos de nome da propriedade para definir uma propriedade estendida de valor único ou vários valor como uma propriedade personalizada. Entre os dois formatos, o primeiro que necessita de um nome de cadeia de caracteres (**nome**) é o formato preferido para facilitar a referência. Propriedades nomeadas tem seus [identificadores de propriedade](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-identifier-overview) em 0x8000-0xfffe o intervalo.
+Use qualquer um dos formatos de propriedade nomeada para definir uma propriedade estendida de valor único ou vários valores como uma propriedade personalizada. Entre os dois formatos, o primeiro que leva o nome da cadeia de caracteres (**Nome**) é o formato preferencial para facilitar a referência. Propriedades nomeadas tem seus [identificadores de propriedade](https://docs.microsoft.com/pt-BR/office/client-developer/outlook/mapi/mapi-property-identifier-overview) no intervalo 0x8000-0xfffe.
 
-Use o formato de proptag para acessar as propriedades predefinidas por MAPI ou por um cliente ou servidor e que já não foram expostas no Microsoft Graph. Essas propriedades têm identificadores de propriedade no 0x0001-0x7fff intervalo. Não tente definir uma propriedade personalizada usando o formato de proptag. 
+Use o formato proptag para acessar propriedades predefinidas por MAPI ou por um cliente ou servidor e que já não tenha sido exibida no Microsoft Graph. Essas propriedades tem identificadores de propriedade no intervalo 0x0001-0x7fff. Não tente definir uma propriedade personalizada usando o formato proptag. 
 
 Você pode encontrar informações sobre o mapeamento de uma propriedade estendida para uma propriedade MAPI existente, como o identificador de propriedade e o GUID, na publicação da Microsoft Corporation \[MS-OXPROPS\], ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx).
 
