@@ -1,15 +1,15 @@
 ---
 title: 'evento: delta'
-description: 'Obter um conjunto de eventos que foram adicionadas, excluídas ou atualizados em um **calendarView** (um intervalo de eventos) '
+description: 'Obtém um conjunto de eventos que foram adicionados, excluídos ou atualizado em um**calendarView** (um intervalo de eventos) '
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7eb8a80f8e857edc9aa9ff8781fae01dc1476677
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562850"
 ---
 # <a name="event-delta"></a>evento: delta
 
@@ -55,7 +55,7 @@ Quando você faz uma consulta delta em um modo de exibição de calendário, esp
 |:---------------|:----------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
-| Preferir | string  | odata.maxpagesize={x}. Opcional. |
+| Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 | Preferir | string | {Fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
 
 ## <a name="response"></a>Resposta
