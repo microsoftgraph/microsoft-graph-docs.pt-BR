@@ -1,13 +1,13 @@
 ---
 title: Atualizar profilephoto
-description: Atualize a foto entrou no **usuário**, ou do **grupo** de especificado ou **entre em contato**. Desde daí
+description: Atualize a foto do **usuário** conectado, ou do **grupo** ou **cotato** especificado. Desde lá
 localization_priority: Priority
 ms.openlocfilehash: 39c5a0405a05d46cbd77f161cd45fb19c40d8b7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871817"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576343"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -20,11 +20,11 @@ Você pode usar PATCH ou PUT para esta operação na versão 1.0.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-- Foto do perfil de **usuário** conectado – User.ReadWrite, User.ReadWrite.All
+- Foto do perfil do **usuário** conectado – User.ReadWrite, User.ReadWrite.All
 - Foto do perfil de um **grupo** – Group.ReadWrite.All
 - Foto de um **contato** – Contacts.ReadWrite
 
-> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão de aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](/graph/auth-v2-service).
+> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão do aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

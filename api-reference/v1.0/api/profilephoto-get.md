@@ -1,13 +1,13 @@
 ---
 title: Obter foto
-description: Obtenha a profilePhoto especificada ou seus metadados (propriedades de profilePhoto).
+description: Obtenha profilePhoto especificado ou seus metadados (propriedades profilePhoto ).
 localization_priority: Priority
-ms.openlocfilehash: 6b1a3e54b1145cc2fdcf8ed9e587652d4d7061c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: e0b115ecf3ce05d87856e553b111af537ffad0e3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833947"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576280"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -15,13 +15,13 @@ Obtenha a [profilePhoto](../resources/profilephoto.md) especificada ou seus meta
 
 > **Observação** Esta operação na versão 1.0 é compatível com caixas de correio corporativas ou de estudante ou caixas de correio não pessoais dos usuários
 
-Os tamanhos de fotos em HD compatíveis com o Office 365 são os seguintes: “48x48”, “64x64”, “96x96”, “120x120”, “240x240”, “360x360”, “432x432”, “504x504” e “648x648”. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
+Os tamanhos de fotos em HD compatíveis com o Office 365 são os seguintes: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
 
 Você pode obter os metadados da maior foto disponível ou especificar um tamanho para obter os metadados do tamanho dessa foto.
 Se o tamanho solicitado não estiver disponível, você ainda poderá obter um tamanho menor que o usuário carregou e disponibilizou.
-Por exemplo, quando o usuário carrega uma foto de 504x504 pixels, todos os tamanhos de foto ficam disponíveis para baixar, exceto o de 648x648.
+Por exemplo, se o usuário carrega uma foto de 504 x 504 pixels, tudo menos o tamanho 648 x 648 da foto estará disponível para download.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP 
 
-### <a name="get-the-photo"></a>Obtenha a foto
+### <a name="get-the-photo"></a>Obter a foto
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-### <a name="get-the-metadata-of-the-photo"></a>Obtenha os metadados da foto
+### <a name="get-the-metadata-of-the-photo"></a>Obter os metadados da foto
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -58,26 +58,22 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-### <a name="get-the-metadata-for-a-specific-photo-size"></a>Obter os metadados para um tamanho específico de foto
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>Obter os metadados de um tamanho de página específica.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
 GET /groups/{id}/photos/{size}
-GET /me/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
-GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
 ## <a name="path-parameters"></a>Parâmetros do caminho
 
 |Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|size  |Cadeia de caracteres  | Um tamanho de foto. Os tamanhos de fotos em HD compatíveis com o Office 365 são os seguintes: “48x48”, “64x64”, “96x96”, “120x120”, “240x240”, “360x360”, “432x432”, “504x504” e “648x648”. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory. |
+|tamanho  |Cadeia de caracteres  | Um tamanho de foto. Os tamanhos de fotos em HD compatíveis com o Office 365 são os seguintes: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -92,9 +88,10 @@ Não forneça um corpo de solicitação para esse método.
 Se for bem-sucedido, este método retornará um código de resposta `200 OK` e dados binários da foto solicitada.  Se não existirem fotos, a operação retornará `404 Not Found`.
 ### <a name="response-for-getting-the-metadata-of-the-photo"></a>Resposta para obter os metadados da foto
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [profilePhoto](../resources/profilephoto.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
-Esta solicitação obtém a foto do usuário conectado, com o maior tamanho disponível.
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-the-photo-for-the-signed-in-user-in-the-largest-available-size"></a>Exemplo 1: Obter a foto do usuário conectado com o maior tamanho disponível
+##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
 }-->
@@ -102,12 +99,11 @@ Esta solicitação obtém a foto do usuário conectado, com o maior tamanho disp
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response-1"></a>Resposta 1
+##### <a name="response"></a>Resposta 
 Contém os dados binários da foto solicitada. O código de resposta HTTP é 200.
 
-##### <a name="request-2"></a>Solicitação 2
-Esta solicitação obtém a foto de 48x48 para o usuário conectado.
-
+### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>Exemplo 2: Obtenha foto 48 x 48 para uso conectado
+##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
 }-->
@@ -116,11 +112,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response-2"></a>Resposta 2
+##### <a name="response"></a>Resposta
 Contém os dados binários da foto de 48x48 solicitada. O código de resposta HTTP é 200.
 
-##### <a name="request-3"></a>Solicitação 3
-Esta solicitação obtém os metadados da foto do usuário conectado.
+### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>Exemplo 3: Esta solicitação obtém os metadados da foto do usuário conectado.
+##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
 }-->
@@ -128,9 +124,11 @@ Esta solicitação obtém os metadados da foto do usuário conectado.
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response-3"></a>Resposta 3
+##### <a name="response"></a>Resposta
 
-Os dados de resposta a seguir mostram os metadados da foto. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.
+Os dados de resposta a seguir mostram os metadados da foto. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -149,7 +147,9 @@ Content-type: application/json
 }
 ```
 
-Os dados de resposta a seguir mostram o conteúdo de uma resposta quando uma foto ainda não foi carregada para o usuário. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.
+Os dados de resposta a seguir mostram o conteúdo de uma resposta quando uma foto ainda não foi carregada para o usuário.
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "ignored"

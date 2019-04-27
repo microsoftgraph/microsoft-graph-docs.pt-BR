@@ -5,23 +5,23 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: d2f61152b8edd98aa11fc7c6b34d2c2b04b72f55
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990121"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565475"
 ---
 # <a name="get-mailfolder"></a>Obter mailFolder
 
 Recupere as propriedades e os relacionamentos de um objeto da pasta de mensagens.
 
-Há dois cenários onde um aplicativo pode obter a pasta de correio de outro usuário:
+Existem dois cenários em que um aplicativo pode receber a pasta de email de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

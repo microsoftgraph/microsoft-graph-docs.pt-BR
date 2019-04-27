@@ -1,33 +1,36 @@
 ---
-title: Criar Evento
-description: Criar um evento no calendário padrão do usuário ou em um calendário específico.
-localization_priority: Priority
+title: Criar evento
+description: Crie um evento no calendário especificado ou no calendário padrão do usuário.
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ef3ac07ba64115a10862cbdfb98dfbd63d2023ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978610"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564075"
 ---
-# <a name="create-event"></a>Criar Evento
+# <a name="create-event"></a>Criar evento
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.
 
-É possível especificar o fuso horário para cada hora de início e fim do evento como parte desses valores, já que as propriedades **start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md). 
+É possível especificar o fuso horário para cada hora de início e fim do evento como parte desses valores, já que as propriedades **start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md).
 
 Quando um evento é enviado, o servidor envia convites para os participantes.
 
 **Definir o local em um evento**
 
-Um administrador do Exchange pode configurar um endereço de email e uma caixa de correio para um recurso como uma sala de reunião ou equipamento como um projetor. Os usuários podem convidar o recurso como um participante para uma reunião. Em nome do recurso, o servidor aceita ou recusa a solicitação de reunião com base na disponibilidade do recurso. Se o servidor aceitar uma reunião do recurso, ele criará um evento para a reunião no calendário do recurso. Se a reunião for reagendada, o servidor atualizará o evento no calendário do recurso.
+Um administrador do Exchange pode configurar um endereço de email e uma caixa de correio para um recurso como uma sala de reunião ou equipamento como um projetor. Os usuários podem convidar o recurso como um participante para uma reunião. Em nome do recurso, o servidor aceita ou recusa a solicitação de reunião com base na disponibilidade do recurso.
+Se o servidor aceitar uma reunião do recurso, ele criará um evento para a reunião no calendário do recurso. Se a reunião for reagendada, o servidor atualizará o evento no calendário do recurso.
 
 Outra vantagem de configurar uma caixa de correio para um recurso é controlar o agendamento do recurso. Por exemplo, somente executivos ou seus representantes podem agendar uma sala de reunião particular.
 
 Se você está organizando um evento que envolve um local de reunião:
 
-1. Defina a propriedade **location** de **event** adequadamente. 
+1. Defina a propriedade **location** de **event** adequadamente.
 2. Defina a propriedade opcional **locationEmailAddress** se o local da reunião tiver um endereço de email.
 
 Além disso, se o local da reunião tiver sido configurado como um recurso ou se o evento envolver algum equipamento que tenha sido definido como um recurso:
@@ -35,7 +38,6 @@ Além disso, se o local da reunião tiver sido configurado como um recurso ou se
 3. Convide o recurso como um [participante](../resources/attendee.md).
 4. Defina a propriedade **type** do participante como `resource`.
 5. Defina o **emailAddress** do participante como o endereço de email do recurso.
-
 
 
 ## <a name="permissions"></a>Permissões
@@ -82,7 +84,7 @@ Este é um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Pref
   "name": "create_event_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events
+POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 Content-length: 600
@@ -117,7 +119,8 @@ Content-length: 600
 ```
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 ##### <a name="response-1"></a>Resposta 1
-Veja um exemplo de resposta que exibe as propriedades **start** e **end** usando o fuso horário especificado no cabeçalho `Prefer: outlook.timezone`. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja um exemplo de resposta que exibe as propriedades **start** e **end** usando o fuso horário especificado no cabeçalho `Prefer: outlook.timezone`.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -130,7 +133,7 @@ Content-type: application/json
 Content-length: 2197
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
     "id":"AAMkAGI1AAAt9AHjAAA=",
     "createdDateTime":"2017-04-15T03:00:50.7579581Z",
@@ -141,7 +144,7 @@ Content-length: 2197
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
+    "uid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -220,7 +223,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [event](.
   "name": "create_event_from_user_multiple_locations"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events
+POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 Content-length: 1390
@@ -300,7 +303,7 @@ Content-type: application/json
 Content-length: 2985
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
   "createdDateTime":"2017-08-30T07:06:33.8673345Z",
@@ -311,7 +314,7 @@ Content-length: 2985
   ],
   "originalStartTimeZone":"Pacific Standard Time",
   "originalEndTimeZone":"Pacific Standard Time",
-  "iCalUId":"04000000820089190544",
+  "uid":"04000000820089190544",
   "reminderMinutesBeforeStart":15,
   "isReminderOn":true,
   "hasAttachments":false,
@@ -362,6 +365,7 @@ Content-length: 2985
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
+        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",
@@ -421,7 +425,7 @@ O terceiro exemplo mostra como criar um evento recorrente. O evento ocorre das 1
   "name": "create_event_recurring"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events
+POST https://graph.microsoft.com/beta/me/events
 Content-type: application/json
 
 {
@@ -478,7 +482,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
     "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==\"",
     "id":"AAMkADQwMD",
     "createdDateTime":"2017-10-07T04:59:12.9698856Z",
@@ -489,7 +493,7 @@ Content-type: application/json
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
+    "uid":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -579,6 +583,8 @@ Content-type: application/json
 ```
 
 
+
+
 ## <a name="see-also"></a>Confira também
 
 - [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
@@ -586,13 +592,15 @@ Content-type: application/json
 - [Adicionar dados personalizados a grupos usando as extensões do esquema](/graph/extensibility-schema-groups)
 
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

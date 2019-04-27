@@ -1,20 +1,20 @@
 ---
 title: Atualizar evento
-description: Atualize as propriedades do objeto event.
+description: Atualizar as propriedades do objeto evento.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 441a135cf43226927e9a8aee074c2547b9beb23e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972366"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584317"
 ---
 # <a name="update-event"></a>Atualizar evento
 
-Atualize as propriedades do objeto [event](../resources/event.md) .
-## <a name="permissions"></a>Permissions
+Atualizar as propriedades do objeto [evento](../resources/event.md).
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -65,20 +65,20 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
 |responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
-|sensitivity|Cadeia de caracteres| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
+|sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |showAs|String|O status a ser exibido. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |iniciar|[DateTimeTimeZone](../resources/datetimetimezone.md)|A hora de início do evento. <br/><br/>Por padrão, a hora de início é em UTC. Você pode especificar um fuso horário opcional em StartTimeZone, expressar a hora de início no fuso horário correspondente e incluir uma diferença de tempo em relação a UTC. Se usar StartTimeZone, você deverá especificar um valor para EndTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 19:34 na Hora Padrão do Pacífico: "2015-02-25T19:34:00-08:00".  |
-|subject|Cadeia de caracteres|O texto da linha de assunto do evento.|
+|subject|String|O texto da linha de assunto do evento.|
 
-Como o recurso de **evento** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância existente do **evento** .  
+Como o recurso **evento** dá suporte as [extensões](/graph/extensibility-overview), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância do **evento** existente.  
   
-Se o **evento** que você está atualizando é o evento mestre de uma série recorrente, contém vários participantes e tem instâncias que foram atualizadas separadamente, notificação de vários emails serão enviadas: uma para a série de mestre e um por instância que tenha foi atualizado.  
+Se o **evento** que você está atualizando é o evento mestre de uma série recorrente, com vários participantes e com instâncias atualizadas separadamente, vários emails de notificação serão enviados: uma para a série mestre e um por instância que foi atualizada.  
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [event](../resources/event.md) atualizado no corpo da resposta.  
 
->**Observação:** Este método pode retornar uma resposta de HTTP 400 Solicitação incorreta com um código de erro de `ErrorOccurrenceCrossingBoundary` e a seguinte mensagem de erro: a ocorrência modificada é Cruzando ou sobrepostas ocorrência adjacente. Isso indica que a atualização viola a seguinte restrição do Outlook em exceções de recorrência: uma ocorrência não pode ser transferida para ou antes do dia da ocorrência anterior e não podem ser movida para ou após o dia da ocorrência seguinte.
+>**Observação:** Esse método poderá retornar uma Resposta de Solicitação Incorreta HTTP 400 com um código de erro `ErrorOccurrenceCrossingBoundary` e a seguinte mensagem de erro: A ocorrência modificada está cruzando ou se sobrepondo à ocorrência adjacente. Isso indica que a atualização viola a seguinte restrição do Outlook nas exceções de recorrência: uma ocorrência não pode ser movida para ou antes do dia da ocorrência anterior e não pode ser movida para ou após o dia da ocorrência seguinte.
 
 ## <a name="example"></a>Exemplo
 

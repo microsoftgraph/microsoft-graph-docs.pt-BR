@@ -1,21 +1,21 @@
 ---
 title: Listar joinedTeams
-description: Obtenha as equipes no Microsoft Teams que o usuário é um membro direto.
+description: Obtenha as equipes do Microsoft Teams das quais o usuário é um membro direto.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 95dfa387a55dd5270035816d144ac3a6ac2b6703
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016699"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571377"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 
 
 
-Obtenha as [equipes](../resources/team.md) no Microsoft Teams que o usuário é um membro direto.
+Obtenha as [equipes](../resources/team.md) do Microsoft Teams das quais o usuário é um membro direto.
  
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All, User.ReadWrite.All |
 
-> Com as permissões de usuário delegado essa operação só funciona para 'me' usuário. 
-> Com as permissões de aplicativo, ele funciona para todos os usuários, especificando a id de usuário específico. ('me' alias não é suportado com permissões de aplicativo)
+> Com permissões de usuário delegado esta operação só funciona para o usuário "eu". 
+> Com permissões de aplicativo, funciona para todos os usuários especificando a id de usuário específico. ("eu" alias não é compatível com permissões de aplicativo)
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /users/{id}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Os [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) não são suportados no momento.
+Atualmente, os [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) não têm suporte.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -85,7 +85,7 @@ Content-length: 55
 ```
 
 ## <a name="see-also"></a>Confira também
-[Liste todas as equipes](/graph/teams-list-all-teams)
+[Listar todas as equipes](/graph/teams-list-all-teams)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

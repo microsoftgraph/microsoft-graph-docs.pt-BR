@@ -1,23 +1,23 @@
 ---
 title: Criar canal
-description: Crie um novo canal em um Microsoft Team, conforme especificado no corpo da solicitação.
-localization_priority: Priority
+description: Crie um novo canal no Microsoft Team, como especificado no corpo da solicitação.
+localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 9021ed45cb187b8db64ec2a3270b6a7f840134ba
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016685"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565454"
 ---
 # <a name="create-channel"></a>Criar canal
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Criar um novo [canal](../resources/channel.md) no Microsoft Team, como especificado no corpo da solicitação.
 
-Crie um novo [canal](../resources/channel.md) em um Microsoft Team, conforme especificado no corpo da solicitação.
-
-> **Observação**: não há um problema conhecido com permissões de aplicativo e essa API. Para obter detalhes, consulte a [lista de problemas conhecidos do](/graph/known-issues#application-permissions).
+> **Observação**: Há um problema conhecido com as permissões do aplicativo e este API. Para saber mais, confira a [lista de problemas conhecidos](/graph/known-issues#application-permissions).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All    |
 
-> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /teams/{id}/channels
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto de [canal](../resources/channel.md) .
+No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto de código e o [canal](../resources/channel.md) de resposta no corpo da resposta.
+Se bem-sucedido, esse método retornará `201 Created` código de resposta e um objeto [canal](../resources/channel.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -57,7 +57,7 @@ Este é um exemplo da solicitação.
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels
+POST https://graph.microsoft.com/beta/teams/{id}/channels
 Content-type: application/json
 
 {
@@ -86,10 +86,13 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

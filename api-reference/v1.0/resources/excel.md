@@ -1,15 +1,15 @@
 ---
 title: Trabalhando com o Excel no Microsoft Graph
-description: 'É possível usar o Microsoft Graph para permitir que aplicativos Web e móveis leiam e modifiquem pastas de trabalho do Excel armazenadas no OneDrive for Business, site do SharePoint ou unidade do Grupo. O recurso `Workbook` (ou arquivo do Excel) contém todos os outros recursos do Excel por meio de relações. É possível acessar uma pasta de trabalho por meio da API Drive identificando a localização do arquivo na URL. Por exemplo:'
+description: 'Você pode usar o Microsoft Graph para permitir que aplicativos web e dispositivos móveis leiam e modifiquem as pastas de trabalho do Excel armazenadas no OneDrive for Business, o site do SharePoint ou drive do grupo. O recurso `Workbook` (ou arquivo do Excel) contém todos os outros recursos do Excel por meio de relações. Você pode acessar uma pasta de trabalho por meio da API Drive identificando a localização do arquivo na URL. Por exemplo:'
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 0010a7244d9ba6e629849f55dfc793bf6b875b38
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917682"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575797"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
@@ -150,7 +150,8 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -177,7 +178,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -204,7 +206,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -245,7 +248,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>Listar gráficos que fazem parte da planilha 
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
@@ -253,7 +257,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -278,14 +283,16 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>Obter imagem do gráfico
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -310,7 +317,8 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -361,7 +369,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>Atualizar dados de origem do gráfico 
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -372,7 +381,8 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -381,7 +391,8 @@ HTTP code: 204 No Content
 
 #### <a name="get-list-of-tables"></a>Obter lista de tabelas 
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
@@ -389,7 +400,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -397,7 +409,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="create-table"></a>Criar tabela
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/{table-id}/add
 content-type: Application/Json 
@@ -407,7 +420,8 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -425,7 +439,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-table"></a>Atualizar tabela
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
@@ -435,7 +450,8 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -543,7 +559,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-list-of-table-columns"></a>Obter lista de colunas de tabelas
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns
 authorization: Bearer {access-token} 
@@ -654,7 +671,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-row"></a>Adicionar uma linha de tabela
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows
 content-type: Application/Json 
@@ -664,7 +682,8 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -685,7 +704,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-column"></a>Adicionar uma coluna de tabela 
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/columns
 content-type: Application/Json 
@@ -724,47 +744,54 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-table-row"></a>Excluir linha de tabela
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows/$/itemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="delete-table-column"></a>Excluir coluna de tabela 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="convert-table-to-range"></a>Converter tabela em intervalo 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
 #### <a name="table-sort"></a>Classificação de tabela
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
@@ -780,13 +807,15 @@ workbook-session-id: {session-id}
 ```
 
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>Filtro de tabela
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
@@ -803,21 +832,24 @@ workbook-session-id: {session-id}
 }
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
 #### <a name="clear-filter"></a>Limpar filtro
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -826,7 +858,8 @@ HTTP code: 204 No Content
 
 #### <a name="get-range"></a>Obter intervalo 
 
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/{item-id}/workbook/worksheets/{worksheet-id}/range(address='A1:B2')
 authorization: Bearer {access-token} 
@@ -1031,7 +1064,8 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="range-sort"></a>Classificação de intervalo
-Solicitação<!-- { "blockType": "ignored" } -->
+Solicitação
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
@@ -1046,7 +1080,8 @@ workbook-session-id: {session-id}
 }
 ```
 
-Resposta<!-- { "blockType": "ignored" } -->
+Resposta
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```

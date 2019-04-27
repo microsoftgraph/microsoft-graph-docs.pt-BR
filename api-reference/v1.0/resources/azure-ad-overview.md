@@ -3,17 +3,17 @@ title: Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 description: 'Com o Microsoft Graph, você pode acessar recursos do Azure Active Directory (Azure AD) para habilitar cenários como gerenciar funções de administrador (diretório), convidando usuários externos para uma organização e, se você for um Provedor de Solução na Nuvem (CSP), gerenciar dados do cliente. O Microsoft Graph também fornece métodos que os aplicativos podem usar para, por exemplo, descobrir informações sobre grupo transitivo e associações de função de usuário. '
 localization_priority: Priority
 ms.openlocfilehash: 5269725a130a2aada958ec5998f21bc6489696b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894331"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569344"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
 Com o Microsoft Graph, você pode acessar recursos do [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) para habilitar cenários como gerenciar funções de administrador (diretório), convidando usuários externos para uma organização e, se você for um [Provedor de Solução na Nuvem (CSP)](https://partner.microsoft.com/cloud-solution-provider), gerenciar dados do cliente. O Microsoft Graph também fornece métodos que os aplicativos podem usar para, por exemplo, descobrir informações sobre grupo transitivo e associações de função de usuário. 
 
-> **Observação**: alguns recursos do Azure AD são documentados em outras seções da API de referência. Para saber mais, confira os artigos sobre [Usuários](users.md) e [Grupos](group.md).
+> **Observação**: alguns recursos do Azure AD são documentados em outras seções da API de referência. Para saber mais, confira [Usuários](users.md) e [Grupos](group.md).
 
 
 ## <a name="authorization"></a>Autorização

@@ -1,17 +1,19 @@
 ---
 title: Listar calendários
-description: 'Obtenha calendários de todos do usuário (propriedade de navegação `/calendars`), obtenha os calendários do grupo padrão de calendários ou de um grupo de calendários específico. '
-localization_priority: Priority
+description: 'Obtenha calendários de todos do usuário (`/calendars` propriedade de navegação ), obtenha os calendários do grupo padrão de calendários ou de um grupo de calendários específico. '
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 762a8ffeaacbc294587e88bf14290cc985c8b2d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925781"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567848"
 ---
 # <a name="list-calendars"></a>Listar calendários
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha calendários de todos do usuário (propriedade de navegação `/calendars`), obtenha os calendários do grupo padrão de calendários ou de um grupo de calendários específico. 
 ## <a name="permissions"></a>Permissões
@@ -66,7 +68,7 @@ Este é um exemplo da solicitação.
   "name": "get_calendars"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendars
+GET https://graph.microsoft.com/beta/me/calendars
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -81,16 +83,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/calendars",
     "value": [
         {
-            "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+            "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
             "id": "AAMkAGI2TGuLAAA=",
             "name": "Calendar",
             "color": "auto",
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+            "isDefaultCalendar": true,
             "canShare":true,
             "canViewPrivateItems":true,
+            "hexColor": "",
+            "isShared":false,
+            "isSharedWithMe":false,
             "canEdit":true,
             "owner":{
                 "name":"Samantha Booth",
@@ -99,14 +105,18 @@ Content-type: application/json
         }
     ]
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List calendars",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

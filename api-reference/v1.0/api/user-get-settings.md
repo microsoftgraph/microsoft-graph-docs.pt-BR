@@ -1,22 +1,24 @@
 ---
 title: Obter configurações
-description: Leia o objeto de configurações de usuário e da organização.
+description: Leia o usuário e o objeto de configurações da organização.
 author: dkershaw10
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 59685923c939dae2ae066a2e146398ea8f87a05c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943645"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567932"
 ---
 # <a name="get-settings"></a>Obter configurações
 
-Leia o objeto de [configurações](../resources/user-settings.md) de usuário e da organização.
-Para saber como atualizar as propriedades do objeto de [configurações](../resources/user-settings.md) , consulte [Atualizar configurações de usuário](user-update-settings.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a>Permissions
+Leia o usuário e o objeto de [configurações](../resources/user-settings.md) da organização.
+Para saber como atualizar as propriedades do objeto [configurações](../resources/user-settings.md), confira [atualizar as configurações de usuário](user-update-settings.md).
+
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -24,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User.Read.All, User.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.Read.All,User.ReadWrite.All |
+|Application | User.Read.All,User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -32,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /me/settings/
 ```
 
-Solicitar com uma id de usuário' ' ou 'userPrincipalName' só está acessível pelo usuário ou por um usuário com as permissões User.ReadWrite.All. Para saber mais, consulte [Permissions](/graph/permissions-reference).
+Solicitação com uma "id de usuário" ou "userPrincipalName" ficará acessível somente para o usuário ou um usuário com permissões User.ReadWrite.All. Para saber mais, confira [permissões](/graph/permissions-reference).
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
@@ -44,14 +46,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto de [configurações de usuário](../resources/user-settings.md) e o código de resposta no corpo da resposta.
+Se bem-sucedido, esse método retornará um `200 OK` código de resposta e um objeto [configurações do usuário](../resources/user-settings.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/settings
+GET https://graph.microsoft.com/beta/me/settings
 ```
 
 ##### <a name="response"></a>Resposta
@@ -68,4 +70,3 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": false
 }
 ```
-

@@ -1,17 +1,19 @@
 ---
 title: Listar calendarView
-description: 'Obtenha as ocorrências, exceções e única instâncias de eventos em um modo de exibição de calendário definido por um intervalo de tempo de calendário, o padrão do usuário '
-localization_priority: Priority
+description: Obter as ocorrências, exceções e instâncias únicas de eventos em uma exibição de calendário definida por um intervalo de tempo, a partir do calendário padrão do usuário,
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2f90f1f5d3af6da0e84919128b362777268f4e0e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984224"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567939"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida por um intervalo de tempo, do calendário padrão do usuário ou grupo ou de algum outro calendário do usuário.
 ## <a name="permissions"></a>Permissões
@@ -24,7 +26,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-
 Um [calendar](../resources/calendar.md) padrão do usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -55,8 +56,8 @@ Forneça os seguintes parâmetros de consulta necessários com valores na URL so
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|startDateTime|Cadeia de caracteres|A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T19:00:00.0000000".|
-|endDateTime|Cadeia de caracteres|A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T20:00:00.0000000".|
+|startDateTime|String|A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T19:00:00.0000000".|
+|endDateTime|String|A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T20:00:00.0000000".|
 
 Este método também dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -64,7 +65,7 @@ Este método também dá suporte a [Parâmetros de consulta OData](https://devel
 |:---------------|:--------|:--------|
 | Autorização  | string | {token} de portador. Obrigatório.  |
 | Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
-| Prefer: outlook.body-content-type | string | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
+| Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -80,7 +81,7 @@ Este é um exemplo da solicitação.
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000 
+GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -102,9 +103,9 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "",
-        "time": "datetime-value"
+        "time": "2016-10-19T10:37:00Z"
       },
-      "iCalUId": "iCalUId-value",
+      "uid": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }
@@ -114,10 +115,13 @@ Content-length: 354
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List calendarView",
-  "keywords": "",
+  "keywords": "calendar",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

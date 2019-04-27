@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: e7dd5c2ffefe57ffebf5e8d2fe3e9dca3101a488
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946347"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571223"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -43,8 +43,8 @@ Este método oferece suporte aos [ parâmetros de consulta OData ](/graph/query-
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
 |$filter|string|Limita a resposta apenas às pessoas cujo registro contém os critérios especificados.|
-|$orderby|string|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
-|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa. Parâmetro funciona apenas para a pesquisa de pessoas de relevantes do usuário conectado, não para pesquisar pessoas relevantes para outros usuários. Também oferece suporte a `topic` palavra-chave para localizar pessoas com base em tópicos extraídos de conversas de email com essa pessoa. Consulte a seção de *executar uma pesquisa difusa* em [obter as informações relevantes sobre pessoas](/graph/people-example#perform-a-fuzzy-search) para obter informações e exemplos. |
+|$orderby|cadeia de caracteres|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
+|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa. O parâmetro só funciona para pesquisar pessoas relevantes do usuário conectado, não para pesquisar pessoas relevantes para outros usuários. Também dá suporte a `topic` palavra-chave para encontrar pessoas com base em tópicos extraídos a partir de conversas de email com essa pessoa. Confira a seção *Realizar uma pesquisa difusa * em [Obter informações relevantes sobre pessoas](/graph/people-example#perform-a-fuzzy-search) para informações e exemplos. |
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.|
 |$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.|
 |$top|int|Número de resultados a ser retornado.|

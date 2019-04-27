@@ -1,17 +1,19 @@
 ---
 title: checkMemberGroups
-description: Verifique se a associação na lista especificada dos grupos. Retorna da lista os grupos dos quais
+description: Verifique se há associação na lista de grupos especificada. Retorna da lista aqueles grupos dos quais
 author: dkershaw10
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a259416525cbd339f68962674a3441c10f6b3235
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981347"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567890"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Verifique se há associação na lista de grupos especificada. Retorna da lista os grupos com os quais o usuário tem uma associação direta ou transitiva.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                     |
 | Aplicativo                            | ~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Observação:** Essa API atualmente requer o `Directory.Read.All` permissão ou superior. Usando o `User.Read.All` ou `User.ReadWrite.All` permissões retornará um erro. Este é um bug conhecido.
+> **Observação:** Esta API atualmente exige a `Directory.Read.All` permissão ou posterior. Usar as permissões `User.Read.All` ou `User.ReadWrite.All` retornarão um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,9 +50,9 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro | Tipo              | Descrição           |
-| :-------- | :---------------- | :-------------------- |
-| groupIds  | String collection | Uma matriz de IDs de grupo |
+| Parâmetro | Tipo   | Descrição           |
+| :-------- | :----- | :-------------------- |
+| groupIds  | Coleção de cadeias de caracteres | Uma matriz de IDs de grupo |
 
 ## <a name="response"></a>Resposta
 
@@ -70,7 +72,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/beta/me/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -107,10 +109,13 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
