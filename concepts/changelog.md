@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 746902cb9e091a5b206966c631d6b68930e76ff9
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.openlocfilehash: 7cf2521f5e119b5270344aef25b775d49451e9cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31981065"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33440091"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,12 +17,24 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="april-2019"></a>Abril de 2019
+
+### <a name="access-reviews-api"></a>API de revisões de acesso
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicione as permissões de aplicativo AccessReview.Read.All, ProgramControl.Read.All e ProgramControl.ReadWrite.All. Para mais detalhes, confira a [referência da API de revisões de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+
 ### <a name="azure-ad-b2c-apis"></a>APIs do Azure AD B2C
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | Beta |Introduzido um novo tipo de recurso [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta). Este tipo de recurso oferece suporte a operações de [criar](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [listar](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [obter](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [atualizar](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), e [excluir](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta).|
 
+### <a name="webhooks-change-notifications"></a>Webhooks (notificações de alteração)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Foram adicionadas dois tipos de notificações de ciclo de vida, `subscriptionRemoved` e `missed`, disponível para os recursos do Outlook. Aplicativos assinados podem executar ações apropriadas para atenuar as interrupções de notificação. Para mais detalhes, consulte [Reduzir assinaturas ausentes e notificações de recursos do Outlook (visualização)](webhooks-outlook-authz.md).|
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -76,7 +88,9 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | beta          | Adicionado suporte para uma nova [ permissão Mail.ReadBasic (Visualização)](permissions-reference.md#mail-permissions) para [Listar Mensagens](/graph/api/user-list-messages?view=graph-rest-beta) e [Obter Mensagem](/graph/api/message-get?view=graph-rest-beta).            |
+| Adição        | Beta          | Suporte adicionado para uma nova [ permissão Mail.ReadBasic (visualização)](permissions-reference.md#mail-permissions) para [Listar Mensagens](/graph/api/user-list-messages?view=graph-rest-beta) e [Obter Mensagem](/graph/api/message-get?view=graph-rest-beta).            |
+| Adição        | Beta          | Funcionalidade adicionada para [obter o conteúdo MIME de uma mensagem](outlook-get-mime-message.md). |
+| Adição        | Beta          | Funcionalidade adicionada para [obter conteúdo não processado de um arquivo ou anexo do item](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem, tarefa do Outlook ou postagem no grupo. |
 
 ### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 
@@ -84,6 +98,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição |v1.0 | Foi adicionado suporte para permissões do aplicativo para o recurso [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0).|
 |Adição |v1.0| Adicionar o **email** e propriedades **webUrl** para o [canal](/graph/api/resources/channel?view=graph-rest-1.0).|
+| Adição | beta | Foram adicionados os recursos do [chat](/api-reference/beta/resources/chat.md) e métodos associados. |
 
 ## <a name="march-2019"></a>Março de 2019
 
@@ -118,6 +133,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | Adicionar a propriedade**destinatários** no recurso[educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta).|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
+
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[windowsHealthMonitoringConfiguration](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringconfiguration?view=graph-rest-beta)<br/>|
@@ -1161,7 +1177,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Exclusão|Beta|Foi removida a propriedade **ipAddressOrFqdn** do tipo complexo [vpnServer](/graph/api/resources/intune-deviceconfig-vpnserver?view=graph-rest-beta)|
 |Exclusão|Beta|Foi removida a propriedade **restartMode** do tipo complexo [windowsUpdateScheduledInstall](/graph/api/resources/intune-deviceconfig-windowsupdatescheduledinstall?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionado o membro **paloAltoGlobalProtect** ao tipo de enumeração [androidForWorkVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidforworkvpnconnectiontype?view=graph-rest-beta)|
-|Adição|Beta|Foi adicionado o membro **paloAltoGlobalProtect** ao tipo de enumeração [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta)|
+|Adição|beta|Foi adicionado o membro **paloAltoGlobalProtect** ao tipo de enumeração [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionado o membro **paloAltoGlobalProtect** ao tipo de enumeração [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionado o membro **androidWorkProfile** ao tipo de enumeração [policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-beta)|
 
@@ -2873,7 +2889,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="outlook-calendar"></a>Calendário do Outlook
 
-| **Tipo de alteração** | **Version** | **Descrição**                          |
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | v1.0        | A propriedade **onlineMeetingUrl** foi adicionada ao recurso [event](/graph/api/resources/event?view=graph-rest-1.0). |
 | Adição        | Beta        | A ação [forward](/graph/api/event-forward?view=graph-rest-beta) foi adicionada ao recurso event. |

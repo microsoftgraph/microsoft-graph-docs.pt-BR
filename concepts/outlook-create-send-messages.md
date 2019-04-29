@@ -4,12 +4,12 @@ description: Emails são representados pelo recurso de mensagem no Microsoft Gra
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 160db6aae079d90f1ce20640429181cdbe6a4da5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 06074950ae1ea81be9546066ebff05825d44b700
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927608"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33440084"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Automatizar a criação, o envio e o processamento de mensagens
 
@@ -108,6 +108,9 @@ Aproveite as seguintes funcionalidades comuns que são compartilhadas entre enti
 
 Saiba mais sobre:
 
-- [Por que integrar-se com o email do Outlook](outlook-mail-concept-overview.md)
+- [Por que integrar com o email do Outlook](outlook-mail-concept-overview.md)
+- [Obter conteúdo MIME (visualização)](outlook-get-mime-message.md)
+- [Receber mensagens compartilhadas](outlook-share-messages-folders.md)
+- [Enviar mensagens do Outlook de outro usuário](outlook-send-mail-from-other-user.md)
 - [Obter identificadores imutáveis para recursos do Outlook (visualização)](outlook-immutable-id.md)
 - [Como usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e seus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) do Microsoft Graph versão 1.0.
