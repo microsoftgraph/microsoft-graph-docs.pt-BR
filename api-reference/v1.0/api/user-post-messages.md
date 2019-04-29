@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 295397e4c85e2096d69e7ba14432cc866b4094a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976139"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564040"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -139,7 +139,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir adiciona duas cabeçalhos de mensagem de Internet do cliente durante a criação de rascunho da mensagem.
+O próximo exemplo adiciona alguns cabeçalhos das mensagens de Internet de cliente ao criar um rascunho da mensagem.
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -173,9 +173,9 @@ Content-type: application/json
     ]
 }
 ```
-No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
 ##### <a name="response-2"></a>Resposta 2
-Veja a seguir um exemplo da resposta. Observação: Os cabeçalhos de mensagens da Internet não são retornados por padrão em uma resposta de POSTAGEM. Também pode estar truncado no objeto response mostrado aqui para fins de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: Os cabeçalhos das mensagens Internet não são retornados por padrão em uma resposta de POSTAGEM. O objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
