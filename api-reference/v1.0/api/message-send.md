@@ -1,15 +1,15 @@
 ---
 title: 'message: send'
-description: Envie uma mensagem na pasta rascunho. A mensagem de rascunho pode ser um rascunho da nova mensagem, rascunho de responder, responder a todos com rascunho, ou
+description: Envie uma mensagem na pasta de rascunho. A mensagem de rascunho pode ser o rascunho de uma mensagem nova, rascunho de resposta, rascunho de resposta a todos ou
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 3f9740f74238012571abcfa7f406fd12ed58c9e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977056"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463590"
 ---
 # <a name="message-send"></a>message: send
 
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Tamanho do conteúdo | number | 0. necessária. |
+| Content-Length | number | 0. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

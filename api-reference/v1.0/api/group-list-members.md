@@ -1,15 +1,15 @@
 ---
 title: Listar membros
-description: Obtenha uma lista de membros de direto do grupo. Um grupo pode ter usuários, contatos e outros grupos como membros.
+description: Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos e outros grupos como membros.
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 70bf3040402c03dc1918d271a2abb8e4adb5d40b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936526"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584646"
 ---
 # <a name="list-members"></a>Listar membros
 Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos e outros grupos como membros. Essa operação não é transitiva.
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
