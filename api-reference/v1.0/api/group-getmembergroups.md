@@ -4,12 +4,12 @@ description: Retorne todos os grupos dos quais o grupo especificado é membro. A
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 578caa1660ee86f24483cff9143a9153ca448526
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b96e092ec30040dadaff3399d932c70d73d7f037
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575881"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334461"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 
@@ -23,11 +23,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
-| Aplicativo                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
+| Aplicativo                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Observação:** esta API atualmente exige a permissão `Directory.Read.All` ou posterior. Usando a permissão `Group.Read.All` retornarão um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
