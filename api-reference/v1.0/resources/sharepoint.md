@@ -1,14 +1,14 @@
 ---
 title: Trabalhar com sites do SharePoint no Microsoft Graph
-description: 'A API do SharePoint no Microsoft Graph suporta os seguintes cenários principais:'
+description: 'A API do SharePoint no Microsoft Graph oferece suporte aos seguintes cenários principais:'
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: de3c4b91f0e53a9a4efaf135fc91364b1802b2ec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946907"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549612"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Trabalhar com sites do SharePoint no Microsoft Graph
 
@@ -22,7 +22,7 @@ A API do SharePoint no Microsoft Graph suporta os seguintes cenários principais
 A API do SharePoint expõe três tipos de recursos principais:
 
 * [Site](site.md) _(objeto de nível superior)_
-* [List](list.md)
+* [Lista](list.md)
 * [ListItem](listitem.md)
 
 A seguir está um exemplo de um recurso listItem.
@@ -89,12 +89,15 @@ Sites também podem ser tratados pelo caminho usando o nome de host do SharePoin
 
 | Caminho                                           | Descrição
 |:-----------------------------------------------|:-----------------------------------
-| /sites/contoso.sharepoint.com:/teams/hr        | O site associadohttps://contoso.sharepoint.com/teams/hr
+| /sites/contoso.sharepoint.com:/teams/hr        | O site associado comhttps://contoso.sharepoint.com/teams/hr
 | /sites/contoso.sharepoint.com:/teams/hr:/drive | Acessar a [unidade](drive.md) padrão desse.
 
 ## <a name="note-for-existing-sharepoint-developers"></a>Observação para desenvolvedores do SharePoint existentes
 
-A API do Microsoft Graph do SharePoint tem algumas diferenças essenciais das APIs CSOM. Os recurso do [site][] mapeia para `SPWeb`. O [site][] (`SPWeb`) raiz em uma coleção de site com uma faceta [siteCollection](sitecollection.md), que contém informações sobre o `SPSite`. Como as IDs de sites são exclusivas penas em sua coleção de site, abordar um site por ID requer o fornecimento do identificador de coleção de site e identificador de site.
+A API do Microsoft Graph do SharePoint tem algumas diferenças essenciais das APIs CSOM.
+Os recurso do [site][] mapeia para `SPWeb`.
+O [site][] (`SPWeb`) raiz em um conjunto de sites tem uma faceta [siteCollection](sitecollection.md), que contém informações sobre `SPSite`.
+Como as IDs de sites são exclusivas penas em sua coleção de site, abordar um site por ID requer o fornecimento do identificador de coleção de site e identificador de site.
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id},{spweb-id}/

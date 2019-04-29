@@ -5,17 +5,17 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: bbfbcbf7826190e092929f48d02f98d3bc811153
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971769"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563739"
 ---
 # <a name="people-overview"></a>Visão geral sobre pessoas
 
 O Microsoft Graph fornece acesso a dados úteis de pessoas.
 
-Você pode usar o recurso de [pessoa](../resources/person.md) e a API de pessoas para agregação de informações sobre uma pessoa em email, contatos e redes sociais. Os resultados são ordenados por seu relevância com base em vários comunicação e padrões de colaboração e relacionamentos de negócios. A API permite procurar, classificar, selecione, filter ou pesquisa para as pessoas com base nos seus critérios.
+Você pode usar o recurso [pessoa](../resources/person.md) e a API de Pessoas para agregar informações sobre uma pessoa provenientes de emails, contatos e redes sociais. Os resultados são ordenados por relevância com base em vários padrões de comunicação e colaboração e em relações comerciais. A API permite navegar, classificar, selecionar, filtrar ou procurar pessoas com base em critérios selecionados.
 
 Para ver cenários e exemplos, confira [Obter informações sobre pessoas relevantes](/graph/people-example).
 

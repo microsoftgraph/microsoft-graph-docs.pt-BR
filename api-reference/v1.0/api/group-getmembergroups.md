@@ -1,15 +1,15 @@
 ---
 title: 'grupo: getMemberGroups'
-description: Retorne todos os grupos dos quais o grupo especificado é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação memberOf, que retorna somente os grupos dos quais o grupo é membro direto.
+description: Retorne todos os grupos dos quais o grupo especificado é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação, que retorna somente os grupos dos quais o grupo é membro direto.
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 578caa1660ee86f24483cff9143a9153ca448526
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934276"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575881"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
 | Aplicativo                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Observação:** Essa API atualmente requer o `Directory.Read.All` permissão ou superior. Usando o `Group.Read.All` permissão retornará um erro. Este é um bug conhecido.
+> **Observação:** esta API atualmente exige a permissão `Directory.Read.All` ou posterior. Usando a permissão `Group.Read.All` retornarão um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro           | Tipo    | Descrição                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| securityEnabledOnly | Booliano | Defina como **false**. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários. |
+| securityEnabledOnly | Boolean | Defina como **false**. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários. |
 
 ## <a name="response"></a>Resposta
 
@@ -80,7 +80,7 @@ Content-length: 33
 
 Este é um exemplo de resposta.
 
-> **Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

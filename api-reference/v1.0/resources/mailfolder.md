@@ -5,11 +5,11 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: dbcb35ad0b131f4e714acd7f178fbbb1109b913c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920111"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574023"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -17,35 +17,35 @@ Uma pasta de email na caixa de correio de um usuário, como Caixa de entrada e R
 
 Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/mailfolder-delta.md).
 
-**Nomes de pasta conhecido**
+**Nomes de pasta conhecidos**
 
-O Outlook cria determinadas pastas para usuários por padrão. Em vez de usar o valor de **id** de pasta correspondente, para sua conveniência, você pode usar os nomes de pasta conhecido da tabela abaixo ao acessar essas pastas. Por exemplo, você pode obter a pasta Rascunhos usando seu nome conhecido com a seguinte consulta.
+O Outlook cria determinadas pastas para usuários por padrão. Em vez de usar a pasta correspondente com valor **id** para sua conveniência, você pode usar os nomes das pastas conhecidas na tabela abaixo ao acessar essas pastas. Por exemplo, você encontra a pasta de Rascunhos usando seu nome reconhecido com a seguinte consulta.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-Nomes conhecidos funcionam independentemente da localidade da caixa de correio do usuário, portanto, a consulta acima retornará sempre na pasta Rascunhos do usuário independentemente de como ele é chamado.
+Nomes conhecidos funcionam independentemente da localidade da caixa de correio do usuário, então a consulta acima sempre retornará a pasta de Rascunhos do usuário independentemente de como será nomeada.
 
-| Nome da pasta conhecido | Descrição |
+| Nome da pasta conhecida | Descrição |
 |:-----------------------|:------------|
-| arquivo morto | As mensagens de pasta de arquivo morto são enviadas ao usar o recurso de arquivamento One_Click nos clientes do Outlook com suporte. **Observação:** isso não é o mesmo que o recurso de caixa de correio de arquivamento do Exchange online. |
-| desorganização | As mensagens de baixa prioridade de pasta desorganização são movidas para ao usar o recurso desorganização. |
-| conflitos | A pasta que contém itens conflitantes na caixa de correio. |
-| conversationhistory | A pasta onde o Skype salva conversas de mensagens Instantâneas (se Skype estiver configurada para fazê-lo). |
-| deleteditems | Os itens da pasta são movidos para quando eles são excluídos. |
+| arquivar | As mensagens da pasta arquivo morto são enviadas ao usar o recurso arquivar One_Click em clientes do Outlook que são compatíveis com ele. **Observação:** esse não é o mesmo recurso de Caixa de Correio de Arquivamento do Exchange online. |
+| Email secundário | As mensagens de baixa prioridade da pasta de email secundário são movidas ao usar o recurso email secundário. |
+| Conflitos | A pasta que contém itens conflitantes na caixa de correio. |
+| conversationhistory | A pasta em que o Skype salva conversas de mensagens Instantâneas (se o Skype está configurado para fazer isso). |
+| deleteditems | Os itens da pasta são movidos quando são excluídas. |
 | rascunhos | A pasta que contém as mensagens não enviadas. |
-| caixa de entrada | A pasta de caixa de entrada. |
-| junkemail | A pasta de lixo eletrônico. |
-| localfailures | A pasta que contém itens que existem no cliente local, mas não puderam ser carregados no servidor. |
-| msgfolderroot | A pasta "Superior do armazenamento de informações". Essa pasta é a pasta pai para as pastas que são exibidos em clientes de email normal, como a caixa de entrada. |
-| caixa de saída | A pasta caixa de saída. |
-| recoverableitemsdeletions | A pasta que contém itens excluída: excluído da pasta Itens excluídos ou por pressionar shift + delete no Outlook. Essa pasta não é visível em qualquer cliente de email do Outlook, mas os usuários finais podem interagir com ele por meio do recurso de **Recuperar itens excluídos do servidor** do Outlook ou do Outlook na web. |
-| agendado | A pasta que contém as mensagens que são agendadas reaparecem na caixa de entrada usando o recurso de agendamento no Outlook para iOS. |
-| SearchFolders | A pasta pai para todas as pastas de pesquisa definido na caixa de correio do usuário. |
-| itens enviados | A pasta Itens enviados. |
-| serverfailures | A pasta que contém itens que existem no servidor, mas não pôde ser sincronizados no cliente local. |
+| caixa de entrada | A pasta caixa de entrada. |
+| junkemail | A pasta lixo eletrônico. |
+| localfailures | A pasta que contém itens que existem no cliente local, mas não podem ser carregados para o servidor. |
+| msgfolderroot | A pasta "Superior do repositório de informações". Esta pasta é a pasta pai das pastas que são exibidas em clientes de email normais, como a caixa de entrada. |
+| Caixa de saída | A pasta caixa de saída. |
+| recoverableitemsdeletions | A pasta que contém itens excluídos de modo reversível: excluído da pasta Itens excluídos ou ao pressionar shift + delete no Outlook. Esta pasta não está visível em qualquer cliente de email do Outlook, mas os usuários finais podem interagir com ela pelo recurso **Recuperar itens excluídos do servidor** no Outlook ou no Outlook na web. |
+| agendado | A pasta que contém mensagens que estão agendadas para serem exibidas na caixa de entrada usando o recurso de cronograma do Outlook para iOS. |
+| SearchFolders | A pasta pai para todas as pastas de pesquisa definida na caixa de correio do usuário. |
+| sentitems | A pasta Itens enviados. |
+| serverfailures | A pasta que contém itens que existem no servidor, mas não podem ser sincronizados para o cliente local. |
 | syncissues | A pasta que contém os logs de sincronização criados pelo Outlook. |
 
 ## <a name="methods"></a>Métodos
@@ -73,22 +73,22 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
-|displayName|Cadeia de caracteres|O nome de exibição da mailFolder.|
-|id|Cadeia de caracteres|Identificador exclusivo do mailFolder.|
+|displayName|String|O nome de exibição da mailFolder.|
+|id|String|Identificador exclusivo de mailFolder.|
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|
 |unreadItemCount|Int32|O número de itens na mailFolder marcados como não lidos.|
 
 **Acessar contagens de itens de forma eficiente**
 
-O `TotalItemCount` e `UnreadItemCount` propriedades de uma pasta permitem que você convenientemente calcular o número de itens de leitura na pasta.
-Eles permitem evitar consultas semelhante ao seguinte que pode acarretar uma latência significativa:
+As propriedades `TotalItemCount` e `UnreadItemCount` de uma pasta permitem convenientemente calcular o número de itens de leitura na pasta.
+Eles permitem que você evite consultas semelhante à seguinte, que podem causar latência significativa:
 
 ```http
 https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
 ```
 
-Pastas de email no Outlook podem conter mais de um tipo de itens, por exemplo, a caixa de entrada pode conter itens que são diferentes dos itens de email da solicitação de reunião. `TotalItemCount`e `UnreadItemCount` incluir itens em uma pasta de email, independentemente de seus tipos de item.
+As pastas de email no Outlook podem conter mais de um tipo de item, por exemplo, a caixa de entrada pode conter itens que são diferentes de itens de email da solicitação de reunião. `TotalItemCount` e `UnreadItemCount` incluem itens em uma pasta de email independentemente seus tipos de item.
 
 ## <a name="relationships"></a>Relações
 

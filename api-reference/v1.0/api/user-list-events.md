@@ -1,15 +1,15 @@
 ---
 title: Listar eventos
-description: 'Obtenha uma lista de objetos de evento na caixa de correio do usuário. A lista contém único '
+description: 'Obter uma lista de objetos de evento na caixa de correio do usuário. A lista contém único '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b5e23391c434e2ace5a567bb23efe5539ad7aee5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946305"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571405"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -19,10 +19,10 @@ Para obter instâncias de evento expandidas, [obtenha a visualização de calend
 
 No momento, esta operação retorna corpos de eventos somente no formato HTML.
 
-Há dois cenários onde um aplicativo pode obter eventos no calendário de outro usuário:
+Há dois cenários em que um aplicativo pode encontrar eventos do calendário de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou um calendário com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
+* Se o aplicativo tem permissões de aplicativo ou
+* Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
 ### <a name="support-various-time-zones"></a>Suporte a vários fusos horários
 
@@ -71,7 +71,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |:---------------|:--------|:--------|
 | Autorização  | string | {token} de portador. Obrigatório.  |
 | Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
-| Prefer: outlook.body-content-type | string | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
+| Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
