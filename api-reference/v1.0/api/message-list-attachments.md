@@ -1,60 +1,61 @@
 ---
 title: Listar anexos
-description: Recupere uma lista de objetos attachment anexados a uma mensagem.
+description: Recupere uma lista de objetos anexados a uma mensagem.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 2e37e863d4b050a07b756b91f1e98a4349239154
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463712"
 ---
-# <a name="list-attachments"></a><span data-ttu-id="6d925-103">Listar anexos</span><span class="sxs-lookup"><span data-stu-id="6d925-103">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="1804a-103">Listar anexos</span><span class="sxs-lookup"><span data-stu-id="1804a-103">List attachments</span></span>
 
-<span data-ttu-id="6d925-104">Recupere uma lista de objetos [attachment](../resources/attachment.md) anexados a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="6d925-104">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6d925-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="6d925-105">Permissions</span></span>
-<span data-ttu-id="6d925-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6d925-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1804a-104">Recupere uma lista de objetos [attachment](../resources/attachment.md) anexados a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="1804a-104">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1804a-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1804a-105">Permissions</span></span>
+<span data-ttu-id="1804a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1804a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6d925-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6d925-108">Permission type</span></span>      | <span data-ttu-id="6d925-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6d925-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1804a-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1804a-108">Permission type</span></span>      | <span data-ttu-id="1804a-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1804a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6d925-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6d925-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6d925-111">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="6d925-111">Mail.Read</span></span>    |
-|<span data-ttu-id="6d925-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6d925-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d925-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="6d925-113">Mail.Read</span></span>    |
-|<span data-ttu-id="6d925-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6d925-114">Application</span></span> | <span data-ttu-id="6d925-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="6d925-115">Mail.Read</span></span> |
+|<span data-ttu-id="1804a-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1804a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1804a-111">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1804a-111">Mail.Read</span></span>    |
+|<span data-ttu-id="1804a-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1804a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1804a-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1804a-113">Mail.Read</span></span>    |
+|<span data-ttu-id="1804a-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1804a-114">Application</span></span> | <span data-ttu-id="1804a-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1804a-115">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6d925-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6d925-116">HTTP request</span></span>
-<span data-ttu-id="6d925-117"><!-- { "blockType": "ignored" } -->Anexos de uma [mensagem](../resources/message.md) na caixa de correio do usuário.</span><span class="sxs-lookup"><span data-stu-id="6d925-117"><!-- { "blockType": "ignored" } --> Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+## <a name="http-request"></a><span data-ttu-id="1804a-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1804a-116">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="1804a-117">Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.</span><span class="sxs-lookup"><span data-stu-id="1804a-117">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
-<span data-ttu-id="6d925-118">Anexos de uma [message](../resources/message.md) contidos em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário.</span><span class="sxs-lookup"><span data-stu-id="6d925-118">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+<span data-ttu-id="1804a-118">Anexos de uma [message](../resources/message.md) contidos em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário.</span><span class="sxs-lookup"><span data-stu-id="1804a-118">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-<span data-ttu-id="6d925-p102">Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="6d925-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="1804a-p102">Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="1804a-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6d925-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6d925-121">Optional query parameters</span></span>
-<span data-ttu-id="6d925-122">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6d925-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="6d925-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6d925-123">Request headers</span></span>
-| <span data-ttu-id="6d925-124">Nome</span><span class="sxs-lookup"><span data-stu-id="6d925-124">Name</span></span>       | <span data-ttu-id="6d925-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="6d925-125">Type</span></span> | <span data-ttu-id="6d925-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="6d925-126">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="1804a-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="1804a-121">Optional query parameters</span></span>
+<span data-ttu-id="1804a-122">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="1804a-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1804a-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1804a-123">Request headers</span></span>
+| <span data-ttu-id="1804a-124">Nome</span><span class="sxs-lookup"><span data-stu-id="1804a-124">Name</span></span>       | <span data-ttu-id="1804a-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="1804a-125">Type</span></span> | <span data-ttu-id="1804a-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="1804a-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="6d925-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="6d925-127">Authorization</span></span>  | <span data-ttu-id="6d925-128">string</span><span class="sxs-lookup"><span data-stu-id="6d925-128">string</span></span>  | <span data-ttu-id="6d925-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6d925-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1804a-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="1804a-127">Authorization</span></span>  | <span data-ttu-id="1804a-128">string</span><span class="sxs-lookup"><span data-stu-id="1804a-128">string</span></span>  | <span data-ttu-id="1804a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1804a-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6d925-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6d925-131">Request body</span></span>
-<span data-ttu-id="6d925-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6d925-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1804a-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1804a-131">Request body</span></span>
+<span data-ttu-id="1804a-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1804a-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6d925-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="6d925-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1804a-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="1804a-133">Response</span></span>
 
-<span data-ttu-id="6d925-134">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6d925-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6d925-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6d925-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6d925-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6d925-136">Request</span></span>
-<span data-ttu-id="6d925-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6d925-137">Here is an example of the request.</span></span>
+<span data-ttu-id="1804a-134">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1804a-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1804a-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1804a-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1804a-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1804a-136">Request</span></span>
+<span data-ttu-id="1804a-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1804a-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
@@ -62,8 +63,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ```
-##### <a name="response"></a><span data-ttu-id="6d925-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="6d925-138">Response</span></span>
-<span data-ttu-id="6d925-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6d925-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1804a-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="1804a-138">Response</span></span>
+<span data-ttu-id="1804a-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1804a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
