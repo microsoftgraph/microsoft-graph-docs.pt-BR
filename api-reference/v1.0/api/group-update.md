@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 8997594bd744f3d350c88774f9c64c538523a894
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976503"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534756"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -53,11 +53,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange.|
 |mailNickname|String|O alias de email do grupo. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter.|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também é true, o grupo é um grupo de segurança habilitado para email; caso contrário, é um grupo de segurança. Deve ser **false** para grupos do Office 365. Oferece suporte a $filter.|
-|visibilidade|String|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **particular**, **público**ou em branco (que será interpretado como **pública**).|
+|visibility|String|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **Privado**, **Público** ou vazio (que é interpretado como **Público**).|
 
 > **Observação:**
 >
-> - Você pode atualizar **autoSubscribeNewMembers** especificando-o no seu próprio solicitação de PATCH, sem incluir as outras propriedades na tabela acima.
+> - Você pode atualizar o **autoSubscribeNewMembers** especificando-o em sua própria solicitação de PATCH, sem incluir as outras propriedades na tabela acima.
 > - Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes).
 
 ## <a name="response"></a>Resposta
