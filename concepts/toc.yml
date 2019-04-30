@@ -116,14 +116,16 @@ items:
             href: outlook-mail-concept-overview.md
           - name: Automatizar mensagens
             href: outlook-create-send-messages.md
-          - name: Organizar mensagens
-            href: outlook-organize-messages.md
+          - name: Obter conteúdo de MIME (versão prévia)
+            href: outlook-get-mime-message.md
           - name: Receber mensagens compartilhadas
             href: outlook-share-messages-folders.md
-          - name: ID imutável (visualização)
-            href: outlook-immutable-id.md
           - name: Enviar email de outro usuário
             href: outlook-send-mail-from-other-user.md
+          - name: Organizar mensagens
+            href: outlook-organize-messages.md
+          - name: ID imutável (visualização)
+            href: outlook-immutable-id.md
       - name: Observações
         displayName: OneNote
         items:
@@ -251,8 +253,12 @@ items:
           - name: Limitação
             href: throttling.md
           - name: Notificações de alteração
-            href: webhooks.md
             displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: Visão Geral
+                href: webhooks.md
+              - name: Notificações ausentes do Outlook (versão prévia)
+                href: webhooks-outlook-authz.md
           - name: Controlar alterações
             displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
             items:
