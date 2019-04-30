@@ -1,29 +1,29 @@
 ---
-title: Lista signIns
-description: Recupera as Azure AD entradas do usuário para seu locatário. Entradas que são interativas em natureza (onde uma nome de usuário/senha é passada como parte do token de autorização) e entradas federadas bem-sucedidas atualmente estão incluídas nos logs de entrar.  Os mais recentes signIns são retornados pela primeira vez.
+title: Listar logons
+description: Recupera as entradas de usuário do Azure AD usuário para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.  Os logons mais recentes são retornados primeiro.
 localization_priority: Priority
 ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861786"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545154"
 ---
-# <a name="list-signins"></a>Lista signIns
+# <a name="list-signins"></a>Listar logons
 
-Recupera as Azure AD entradas do usuário para seu locatário. Entradas que são interativas em natureza (onde uma nome de usuário/senha é passada como parte do token de autorização) e entradas federadas bem-sucedidas atualmente estão incluídas nos logs de entrar.  Os mais recentes signIns são retornados pela primeira vez.
+Recupera as entradas de usuário do Azure AD usuário para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.  Os logons mais recentes são retornados primeiro.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AuditLog.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte   |
+|Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All | 
 
-Além disso, os aplicativos devem ser [registrado corretamente](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para o Windows Azure AD.
+Além disso, os aplicativos devem ser [corretamente registrados](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -31,36 +31,36 @@ Além disso, os aplicativos devem ser [registrado corretamente](https://docs.mic
 GET auditLogs/signIns
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes Parâmetros de consulta OData para ajudar a personalizar a resposta. Verifique [Os parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para como usar esses parâmetros.
+Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar a personalizar a resposta. Verifique [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para saber como usar esses parâmetros.
 
 |Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)|Filtra os resultados (linhas). |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
 |[$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|Recupera que a próxima página de resultados do resultado define que ocupar várias páginas.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>Lista de atributos suportados pelo parâmetro $filter
-|Nome do atributo |Operadores com suporte|
+### <a name="list-of-attributes-supported-by-filter-parameter"></a>Lista de atributos com suporte parâmetro $filter
+|Nome do Atributo |Operadores com suporte|
 |:----------------|:------|
 |id|eq|
 |userId|eq|
 |appId|eq|
-|createdDateTime| EQ, le, ge|
-|userDisplayName| EQ, startswith|
-|userPrincipalName| EQ, startswith|
-|appDisplayName| EQ, startswith|
-|ipAddress| EQ, startswith|
-|Cidade do local| EQ, startswith|
-|local/estado| EQ, startswith|
-|local/countryOrRegion| EQ, startswith|
+|createdDateTime| eq, le, ge|
+|userDisplayName| eq, startswith|
+|userPrincipalName| eq, startswith|
+|appDisplayName| eq, startswith|
+|ipAddress| eq, startswith|
+|localização/cidade| eq, startswith|
+|localização/estado| eq, startswith|
+|location/countryOrRegion| eq, startswith|
 |status/errorCode|eq|
-|id/de usuário de initiatedBy|eq|
-|displayName/de usuário de initiatedBy| eq|
-|initiatedBy/usuário/userPrincipalName| EQ, startswith|
+|initiatedBy/user/id|eq|
+|initiatedBy/user/displayName| eq|
+|initiatedBy/user/userPrincipalName| eq, startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetail/navegador| EQ, startswith|
-|deviceDetail/operatingSystem| EQ, startswith|
+|deviceDetail/browser| eq, startswith|
+|deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
 |riskDetail| eq|
 |riskLevelAggregated| eq|
@@ -75,7 +75,7 @@ Este método dá suporte aos seguintes Parâmetros de consulta OData para ajudar
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de [entrar](../resources/signin.md) no corpo da resposta.
+Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos de [logon](../resources/signin.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

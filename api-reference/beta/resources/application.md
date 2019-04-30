@@ -4,12 +4,12 @@ description: 'Representa um aplicativo. Qualquer aplicativo que terceirize a aut
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a0bed2d85e0b7308e8006c99143ea80e2d756202
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548198"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339051"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -43,7 +43,7 @@ Esse recurso permite:
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|api|[api](api.md)| Especifica configurações para um aplicativo de API. |
+|api|[apiApplication](apiapplication.md)| Especifica configurações para um aplicativo de API. |
 |appId| String | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Azure AD. Não anulável. Somente leitura. |
 |appRoles|Coleção [appRole](approle.md)|A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
 |createdDateTime|DateTimeOffset| A data e a hora que o aplicativo foi registrado. |
@@ -57,14 +57,14 @@ Esse recurso permite:
 |logo|Stream|O principal logotipo do aplicativo. Não anulável. |
 |optionalClaims|optionalClaims| Reserved for future use. |
 |orgRestrictions|Coleção String| Reserved for future use. |
-|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo.|
+|parentalControlSettings|coleção [parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo.|
 |passwordCredentials|Coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
-|publicClient|[publicClient](publicclient.md)| Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
+|publicClient|[publicClientApplication](publicclientapplication.md)| Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
 |publisherDomain| String | O domínio do publicador verificado para o aplicativo. Somente leitura.|
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Especifica os recursos para os quais esse aplicativo requer acesso e o conjunto de escopos de permissão e funções de aplicativo do OAuth necessários em cada um desses recursos. Essa pré-configuração de acesso necessário aos recursos impulsiona a experiência de consentimento. Não anulável.|
 |signInAudience | String | Especifica a quais contas da Microsoft são compatíveis com o aplicativo atual. Os valores compatíveis são:<ul><li>**AzureADMyOrg**: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, locatário único)</li><li>**AzureADMultipleOrgs**: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, multilocatário)</li> <li>**AzureADandPersonalMicrosoftAccount**: usuários com uma conta pessoal da Microsoft ou uma conta corporativa ou de estudante no locatário do Azure AD de qualquer organização</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |marcações|Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
-|web|[web](web.md)| Especifica configurações para um aplicativo Web. |
+|web|[webApplication](webapplication.md)| Especifica configurações para um aplicativo Web. |
 
 ## <a name="relationships"></a>Relações
 
@@ -83,6 +83,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "createdOnBehalfOf",
     "owners"
@@ -104,7 +105,7 @@ Veja a seguir uma representação JSON do recurso.
   "isFallbackPublicClient": true,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
-  "optionalClaims": [{"@odata.type": "microsoft.graph.optionalClaims"}],
+  "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "orgRestrictions": ["Guid"],
   "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
@@ -127,8 +128,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/application.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e350ebe21b9db1f4e0b9b954a6621a1d26e81d29
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e5f369e1c95e13cb4b4c16aa3317e78c33c5d601
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547463"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340187"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -75,10 +75,10 @@ Esse recurso permite:
 |[Listar threads](../api/group-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obter todos os threads de um grupo.|
 |[Atualizar thread](../api/group-update-thread.md) |Nenhum| Atualizar as propriedades de um objeto thread.|
 |[Excluir thread](../api/group-delete-thread.md) |Nenhum| Excluir objeto thread
-|[Listar acceptedSenders](../api/group-list-acceptedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obter uma lista de usuários ou grupos que estão na lista acceptedSenders desse grupo.|
+|[Listar acceptedSenders](../api/group-list-acceptedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.|
 |[Adicionar acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| Adicionar um Usuário ou Grupo à coleção acceptSenders.|
 |[Remover acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Remover um Usuário ou Grupo da coleção acceptedSenders.|
-|[Listar rejectedSenders](../api/group-list-rejectedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obter uma lista de usuários ou grupos que estão na lista rejectedSenders desse grupo.|
+|[Listar rejectedSenders](../api/group-list-rejectedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para este grupo.|
 |[Adicionar rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Adicionar um novo Usuário ou Grupo à coleção rejectedSenders.|
 |[Remover rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remover um novo Usuário ou Grupo da coleção rejectedSenders.|
 |**Extensões abertas**| | |
@@ -161,8 +161,8 @@ Veja o que cada valor da propriedade de **visibilidade** significa:
 |groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|O conjunto de políticas de ciclo de vida para esse grupo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos e unidades administrativas dos quais esse grupo é membro. Métodos HTTP: GET (suporte para todos os grupos). Somente leitura. Anulável.|
 |members|Coleção [directoryObject](directoryobject.md)| Os usuários, contatos e grupos que são membros desse grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte somente para grupos de segurança). Anulável.|
-|membersWithLicenseErrors|Coleção [user](user.md)|Uma lista de membros do grupo com erros de licença desse grupo baseado em atribuição de licença. Somente leitura.|
-|onenote|[OneNote](onenote.md)| Somente leitura.|
+|membersWithLicenseErrors|Coleção [usuário](user.md)|Uma lista de membros do grupo com erros de licença desse grupo baseado em atribuição de licença. Somente leitura.|
+|onenote|[onenote](onenote.md)| Somente leitura.|
 |owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte somente para grupos de segurança). Anulável.|
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do grupo. |
 |fotos|Coleção [profilePhoto](profilephoto.md)| As fotos de perfil pertencentes ao grupo. Somente leitura. Anulável.|
@@ -201,7 +201,6 @@ Veja a seguir uma representação JSON do recurso
     "settings",
     "sites",
     "threads",
-
     "allowExternalSenders",
     "assignedLicenses",
     "autoSubscribeNewMembers",
@@ -229,7 +228,7 @@ Veja a seguir uma representação JSON do recurso
   "expirationDateTime": "String (timestamp)",
   "groupTypes": ["string"],
   "id": "string (identifier)",
-  "isFavorite": true,  
+  "isFavorite": true,
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
   "mail": "string",
@@ -239,7 +238,7 @@ Veja a seguir uma representação JSON do recurso
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": ["string"],
+  "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
@@ -247,21 +246,27 @@ Veja a seguir uma representação JSON do recurso
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
   "visibility": "string",
-  "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "conversations": [ { "@odata.type": "microsoft.graph.conversation" }],
-  "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "events": [ { "@odata.type": "microsoft.graph.event" }],
-  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "acceptedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "calendar": {"@odata.type": "microsoft.graph.calendar"},
+  "calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  "conversations": [{"@odata.type": "microsoft.graph.conversation"}],
+  "createdOnBehalfOf": {"@odata.type": "microsoft.graph.directoryObject"},
+  "drive": {"@odata.type": "microsoft.graph.drive"},
+  "events": [{"@odata.type": "microsoft.graph.event"}],
+  "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "members": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
-  "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
-  "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
+  "owners": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "rejectedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "sites": [{"@odata.type": "microsoft.graph.site"}],
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}],
+  "classification": "string",
+  "hasMembersWithLicenseErrors": true,
+  "membershipRule": "string",
+  "membershipRuleProcessingState": "string",
+  "preferredLanguage": "string",
+  "theme": "string"
 }
 
 ```
@@ -282,8 +287,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/group.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

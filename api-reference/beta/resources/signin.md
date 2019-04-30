@@ -2,12 +2,12 @@
 title: tipo de recurso de domínio
 description: 'Esse recurso fornece detalhes sobre o usuário ou aplicativo atividade de entrada no diretório. '
 localization_priority: Priority
-ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9736e906810ce1be1525bf85b687f4a5f1a57f3e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557968"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343014"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 Esse recurso fornece detalhes sobre o usuário ou aplicativo atividade de entrada no diretório. 
@@ -41,11 +41,10 @@ Esse recurso fornece detalhes sobre o usuário ou aplicativo atividade de entrad
 |riskDetail|`riskDetail`|Fornece o motivo por trás de um estado específico de um usuário arriscado, uma entrada arriscada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
 |riskLevelAggregated|`riskLevel`|Fornece o nível de risco agregado. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
 |riskLevelDuringSignIn|`riskLevel`|Fornece o nível de risco durante a entrada. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
-|riskEventTypes|`riskEventTypes`|Fornece a lista de tipos de evento de risco associados à entrada. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`.|
+|riskEventTypes|coleção `riskEventType`|Fornece a lista de tipos de evento de risco associados à entrada. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`.|
 |riskState|`riskState`|Fornece o motivo atrás de um estado específico de um usuário arriscado, entrada ou um evento de risco. Os valores possíveis são `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Fornece a MFA relacionada a informações como a MFA, MFA Status Requerido para a entrada correspondente.|
-|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Fornece detalhes sobre o local de rede.|
-|riskLevel|cadeia de caracteres| Fornece o nível de riscos associado a entrar. Os valores possíveis são: `low`, `medium`, `high`.|
+|networkLocationDetails|coleção [networkLocationDetail](networklocationdetail.md)|Fornece detalhes sobre o local de rede.|
 |status|[signInStatus](signinstatus.md)|Fornece o status de entrada. Os valores possíveis incluem `Success` e `Failure`.|
 |userDisplayName|Cadeia de caracteres|Indica o nome de exibição do usuário.|
 |userId|Cadeia de caracteres|Indica que o userId do usuário.|
@@ -95,11 +94,13 @@ Veja a seguir uma representação JSON do recurso.
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
-  "riskEventTypes": "string",
+  "riskEventTypes": ["String"],
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
+  "processingTimeInMilliseconds": 12356,
+  "networkLocationDetails": [{"@odata.type": "microsoft.graph.networkLocationDetail"}]
 }
 
 ```

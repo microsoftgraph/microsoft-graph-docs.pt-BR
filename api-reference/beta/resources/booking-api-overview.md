@@ -4,12 +4,12 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 7fc58a4fe0fb616963fd91d83a401d4ad8e1c43e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 78276af6a21653645d6c9344b5962d0c8f4086b2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529856"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328210"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Usar a API do Microsoft Bookings no Microsoft Graph
 
@@ -29,7 +29,8 @@ Programaticamente, um [bookingBusiness](bookingbusiness.md) na API do Bookings e
 Siga as etapas a seguir antes de agendar os compromissos do cliente para uma empresa pela primeira vez. Certifique-se de fornecer os [tokens de acesso](/graph/auth-overview) apropriados para as operações correspondentes.
 
 1. Garanta que a empresa tenha um assinatura do [Office 365 Business Premium](https://products.office.com/pt-BR/business/office-365-business-premium).
-2. Crie um novo **bookingBusiness** enviando uma operação POST para o conjunto de entidades. Você deve pelo menos especificar um nome para o novo negócio que os clientes verão: <!-- { "blockType": "ignored" } -->
+2. Crie um novo **bookingBusiness** enviando uma operação POST para o conjunto de entidades. No mínimo, você deve especificar um nome para a nova empresa que os clientes verão:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -41,7 +42,8 @@ Content-Type: application/json
 ```
 Use a propriedade **id** do novo **bookingBusiness** retornado na resposta do POST para continuar a [personalizar](../api/bookingbusiness-update.md) configurações de negócios e adicionar funcionários e serviços para a empresa.
 
-3. Adicione membros individuais da equipe à empresa: <!-- { "blockType": "ignored" } -->
+3. Adicione membros individuais da equipe para a empresa:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Authorization: Bearer {access token}
@@ -53,7 +55,8 @@ Content-Type: application/json
     "role": "externalGuest"
 }
 ```
-4. Defina cada serviço oferecido pela empresa: <!-- { "blockType": "ignored" } -->
+4. Defina cada serviço oferecido pela empresa:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/services
 Authorization: Bearer {access token}
@@ -63,19 +66,21 @@ Content-Type: application/json
     "displayName":"Bento"
 }
 ```
-5. Publique a página de agendamento para a empresa para permitir que clientes e operadores de negócios comecem a agendar compromissos: <!-- { "blockType": "ignored" } -->
+5. Publique a página de agendamento para a empresa, para permitir que clientes e operadores de negócios comecem a agendar compromissos:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-Em geral, para listar todas as empresas de reserva no locatário do Office 365: <!-- { "blockType": "ignored" } -->
+Em geral, para listar todas as empresas de agendamento no locatário do Office 365:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
 ```
 
-## <a name="common-use-cases"></a>Casos de uso comuns 
+## <a name="common-use-cases"></a>Casos de usos comuns 
 
 A tabela a seguir lista as operações comuns para uma empresa na API do Bookings.
 
@@ -96,11 +101,3 @@ A tabela a seguir lista as operações comuns para uma empresa na API do Booking
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Saiba como escolher [permissões](/graph/permissions-reference) no Microsoft Graph.
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/booking-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -2,18 +2,20 @@
 title: Tipo de recurso chatMessage
 description: Representa uma mensagem de chat individual dentro de uma entidade de canal ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
 localization_priority: Priority
-ms.openlocfilehash: 1f1e38e53a7c7ad1b0452c9facc6d7f97314094e
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4c2631d0ba4883160c443000fa2ecb0e1853523d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30799995"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339837"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma mensagem de chat individual dentro de uma entidade de [canal](channel.md) ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
+Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [bate-papo](chat.md). A mensagem pode ser uma mensagem raiz ou parte de um thread definido pela propriedade **replyToId** na mensagem.
 
 ## <a name="methods"></a>Métodos
 
@@ -25,27 +27,29 @@ Representa uma mensagem de chat individual dentro de uma entidade de [canal](cha
 |[Get a reply to a message](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Obtenha uma resposta a uma mensagem única em um canal.|
 |[Enviar uma mensagem em um canal](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Crie uma nova mensagem de nível superior em um canal.|
 |[Responder a uma mensagem em um canal](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Responder a uma mensagem existente em um canal.|
+|[Listar mensagens em um bate-papo](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. |
+|[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID única da mensagem.|
-|replyToId| string | ID da mensagem pai/raiz do thread. |
+|replyToId| string | ID da mensagem pai/raiz do thread. (Aplica-se apenas a mensagens em canais e não em bate-papos) |
 |from|[identitySet](identityset.md)| Somente leitura. Detalhes do remetente da mensagem.|
 |etag| string | O número de versão da mensagem. |
 |messageType|String|Os valores de tipo de mensagem com suporte atualmente são: message, chatEvent, Typing.|
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi criada.|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi editada/atualizada.|
-|deleted|Boolean|Indica se uma mensagem foi excluída de modo reversível.|
 |deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de hora em que a mensagem foi excluída ou nulo se não foi excluído. |
-|corpo|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. Retorna o texto sem formatação por padrão, o aplicativo pode escolher HTML como parte de um parâmetro de consulta|
-|summary|string|Texto de resumo da mensagem que poderia ser usado para notificações por push e modos de exibição de resumo ou de fallback|
-|mentions|[chatMessageMention](chatmention.md) collection| Lista de entidades mencionada na mensagem. Atualmente, dá suporte a usuário, bot, equipe, canal.|
+|assunto|cadeia de caracteres| O assunto da mensagem, em texto simples.|
+|corpo|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. A representação é especificada pelo contentType dentro do corpo. O conteúdo está sempre em HTML se a mensagem contiver um [chatMessageMention](chatmessagemention.md). |
+|summary|cadeia de caracteres| Texto de resumo da mensagem que pode ser usado para notificações por push e visualizações resumidas ou de fallback. Aplica-se apenas às mensagens de canal, não às mensagens de bate-papo. |
+|attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |
+|mentions|[chatMessageMention](chatmessagemention.md) collection| Lista de entidades mencionada na mensagem. Atualmente, dá suporte a usuário, bot, equipe, canal.|
 |importância| string | A importância da mensagem: Normal, Alta.|
-|reactions| [chatMessageReaction](chatreaction.md) collection | Reações para essa mensagem (por exemplo, Curtir)|
-|locale|string|Localidade da mensagem definida pelo cliente|
-|attachments|[chatMessageAttachment](chatattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |
+|reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reações para esta mensagem (por exemplo, Curtir).|
+|localidade|cadeia de caracteres|Local da mensagem definido pelo cliente.|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -84,8 +88,10 @@ Veja a seguir uma representação JSON do recurso.
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
+  "policyViolation": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
-  "locale": "string"
+  "locale": "string",
+  "deleted": true
 }
 
 ```
@@ -99,8 +105,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/chatmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

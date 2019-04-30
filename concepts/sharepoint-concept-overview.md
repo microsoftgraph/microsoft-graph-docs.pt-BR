@@ -3,12 +3,12 @@ title: Visão geral da API de conteúdo e sites do SharePoint
 description: O SharePoint é sua Intranet móvel e inteligente. Com o SharePoint, os usuários podem compartilhar e gerenciar conteúdo, conhecimentos e aplicativos para capacitar o trabalho em equipe, encontrar informações e colaborar em uma organização. Você pode usar a API REST do SharePoint no Microsoft Graph para integrar suas soluções a conteúdo e sites do SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7f703854112643afc11cf82b32b6b9247f0bca39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5e794d52bd0f876e1572b1bca5bca23fbd40154a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573477"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345817"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>Visão geral da API de conteúdo e sites do SharePoint
 
@@ -58,9 +58,9 @@ Está procurando a referência de API para esse serviço?
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Aprenda mais sobre como [trabalhar com sites][SharePoint] usando o SharePoint com o Microsoft Graph.
+Comece a usar o SharePoint no Microsoft Graph aprendendo mais sobre como [trabalhar com sites](/graph/api/resources/sharepoint?view=graph-rest-1.0).
 
-[lista]: /graph/api/resources/list?view=graph-rest-1.0
+[list]: /graph/api/resources/list?view=graph-rest-1.0
 [colunas]: /graph/api/resources/columndefinition?view=graph-rest-1.0
 [tipo de lista]: /graph/api/resources/listinfo?view=graph-rest-1.0
 [criar]: /graph/api/list-create?view=graph-rest-1.0

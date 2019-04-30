@@ -4,12 +4,12 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a99d63bd880fd37359ba1d72452093443d41236e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa18cf9ce8a0dbaf7f50c0b643335a5a992d9049
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570768"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324791"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -69,10 +69,10 @@ Esse recurso permite:
 |[Listar threads](../api/group-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obter todos os threads de um grupo.|
 |[Atualizar thread](../api/group-update-thread.md) |Nenhum| Atualizar as propriedades de um objeto thread.|
 |[Excluir thread](../api/group-delete-thread.md) |Nenhum| Excluir objeto thread.|
-|[Listar acceptedSenders](../api/group-list-acceptedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obter uma lista de usuários ou grupos que estão na lista acceptedSenders desse grupo.|
+|[Listar acceptedSenders](../api/group-list-acceptedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.|
 |[Adicionar acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| Adicionar um Usuário ou Grupo à coleção acceptSenders.|
 |[Remover acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Remover um Usuário ou Grupo da coleção acceptedSenders.|
-|[Listar rejectedSenders](../api/group-list-rejectedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obter uma lista de usuários ou grupos que estão na lista rejectedSenders desse grupo.|
+|[Listar rejectedSenders](../api/group-list-rejectedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para este grupo.|
 |[Adicionar rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Adicionar um novo Usuário ou Grupo à coleção rejectedSenders.|
 |[Remover rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remover um novo Usuário ou Grupo da coleção rejectedSenders.|
 |[Criar configuração](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação.|

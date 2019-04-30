@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 12a24d57370dfd593c6056e30db0d956266b29a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2858701aaa795bad617c395c91d15508f6dd650f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555441"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341345"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -230,7 +230,7 @@ Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclu
 
 * Não há suporte para vários namespaces.
 * Não há suporte para GETs em `$ref` e conversão em usuários, grupos, dispositivos, entidades de serviço e aplicativos.
-* Não há suporte para `@odata.bind`. Isso significa que os desenvolvedores não poderão definir corretamente `Accepted` ou `RejectedSenders` em um grupo.
+* `@odata.bind` não é compatível. Isso significa que os desenvolvedores não poderão definir corretamente a propriedade de navegação **acceptedSenders** ou **rejectedSenders** em um grupo.
 * `@odata.id` não está presente na navegação sem confinamento (como mensagens) quando há o uso de metadados mínimos.
 * `$expand`:
   * Não há suporte para `nextLink`
