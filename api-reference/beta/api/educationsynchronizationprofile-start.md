@@ -4,49 +4,49 @@ description: Verifique se os arquivos foram carregados em um perfil de sincroniz
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: c432b05aaea02eee03bc74311e82102d7b134aaa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 067beecf2570dc8775cc1a570a87cb8acac31d10
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322283"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587060"
 ---
-# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a><span data-ttu-id="9d9fb-107">Iniciar sincronização após carregar arquivos em um educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="9d9fb-107">Start sync after uploading files to an educationSynchronizationProfile</span></span>
+# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a><span data-ttu-id="3a294-107">Iniciar sincronização após carregar arquivos em um educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="3a294-107">Start sync after uploading files to an educationSynchronizationProfile</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9d9fb-108">Verifique se os arquivos foram carregados em um [perfil de sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-108">Verify the files uploaded to a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="9d9fb-109">Se a verificação for bem-sucedida, a sincronização será iniciada no perfil.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-109">If the verification is successful, synchronization will start on the profile.</span></span> <span data-ttu-id="9d9fb-110">Caso contrário, a resposta conterá erros e avisos.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-110">Otherwise, the response will contain errors and warnings.</span></span> <span data-ttu-id="9d9fb-111">Se a resposta contiver erros, a sincronização não será iniciada.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-111">If the response contains errors, the synchronization will not start.</span></span> <span data-ttu-id="9d9fb-112">Se a resposta contiver apenas avisos, a sincronização será iniciada.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-112">If the response contains only warnings, synchronization will start.</span></span>
+<span data-ttu-id="3a294-108">Verifique se os arquivos foram carregados em um [perfil de sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário.</span><span class="sxs-lookup"><span data-stu-id="3a294-108">Verify the files uploaded to a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="3a294-109">Se a verificação for bem-sucedida, a sincronização será iniciada no perfil.</span><span class="sxs-lookup"><span data-stu-id="3a294-109">If the verification is successful, synchronization will start on the profile.</span></span> <span data-ttu-id="3a294-110">Caso contrário, a resposta conterá erros e avisos.</span><span class="sxs-lookup"><span data-stu-id="3a294-110">Otherwise, the response will contain errors and warnings.</span></span> <span data-ttu-id="3a294-111">Se a resposta contiver erros, a sincronização não será iniciada.</span><span class="sxs-lookup"><span data-stu-id="3a294-111">If the response contains errors, the synchronization will not start.</span></span> <span data-ttu-id="3a294-112">Se a resposta contiver apenas avisos, a sincronização será iniciada.</span><span class="sxs-lookup"><span data-stu-id="3a294-112">If the response contains only warnings, synchronization will start.</span></span>
 
-> <span data-ttu-id="9d9fb-113">**Observação:** Use este método somente quando o provedor de dados for do tipo [educationcsvdataprovider](../resources/educationcsvdataprovider.md).</span><span class="sxs-lookup"><span data-stu-id="9d9fb-113">**Note:** Use this method only when the data provider is of type [educationcsvdataprovider](../resources/educationcsvdataprovider.md).</span></span> <span data-ttu-id="9d9fb-114">Além disso, a propriedade State do perfil precisa ser provisionada para que possa ser iniciada.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-114">Also, the profile's state property needs to be provisioned before it can be started.</span></span> <span data-ttu-id="9d9fb-115">Sondar o objeto de perfil para verificar sua propriedade State.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-115">Poll the profile object to check its state property.</span></span>
+> <span data-ttu-id="3a294-113">**Observação:** Use este método somente quando o provedor de dados for do tipo [educationcsvdataprovider](../resources/educationcsvdataprovider.md).</span><span class="sxs-lookup"><span data-stu-id="3a294-113">**Note:** Use this method only when the data provider is of type [educationcsvdataprovider](../resources/educationcsvdataprovider.md).</span></span> <span data-ttu-id="3a294-114">Além disso, a propriedade State do perfil precisa ser provisionada para que possa ser iniciada.</span><span class="sxs-lookup"><span data-stu-id="3a294-114">Also, the profile's state property needs to be provisioned before it can be started.</span></span> <span data-ttu-id="3a294-115">Sondar o objeto de perfil para verificar sua propriedade State.</span><span class="sxs-lookup"><span data-stu-id="3a294-115">Poll the profile object to check its state property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9d9fb-116">Permissões</span><span class="sxs-lookup"><span data-stu-id="9d9fb-116">Permissions</span></span>
-<span data-ttu-id="9d9fb-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9d9fb-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3a294-116">Permissões</span><span class="sxs-lookup"><span data-stu-id="3a294-116">Permissions</span></span>
+<span data-ttu-id="3a294-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3a294-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="9d9fb-119">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9d9fb-119">Permission type</span></span> | <span data-ttu-id="9d9fb-120">Permissões</span><span class="sxs-lookup"><span data-stu-id="9d9fb-120">Permissions</span></span> |
+| <span data-ttu-id="3a294-119">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3a294-119">Permission type</span></span> | <span data-ttu-id="3a294-120">Permissões</span><span class="sxs-lookup"><span data-stu-id="3a294-120">Permissions</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="9d9fb-121">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9d9fb-121">Delegated (work or school account)</span></span> | <span data-ttu-id="9d9fb-122">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9d9fb-122">EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="9d9fb-123">Delegado (conta pessoal da Microsoft</span><span class="sxs-lookup"><span data-stu-id="9d9fb-123">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="9d9fb-124">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-124">Not supported.</span></span>|
-|<span data-ttu-id="9d9fb-125">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9d9fb-125">Application</span></span>|<span data-ttu-id="9d9fb-126">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-126">Not supported.</span></span>|
+| <span data-ttu-id="3a294-121">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3a294-121">Delegated (work or school account)</span></span> | <span data-ttu-id="3a294-122">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3a294-122">EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="3a294-123">Delegado (conta pessoal da Microsoft</span><span class="sxs-lookup"><span data-stu-id="3a294-123">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="3a294-124">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3a294-124">Not supported.</span></span>|
+|<span data-ttu-id="3a294-125">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3a294-125">Application</span></span>|<span data-ttu-id="3a294-126">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3a294-126">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9d9fb-127">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9d9fb-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a294-127">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3a294-127">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /synchronizationProfiles/{id}/start
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9d9fb-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9d9fb-128">Request headers</span></span>
-| <span data-ttu-id="9d9fb-129">Nome</span><span class="sxs-lookup"><span data-stu-id="9d9fb-129">Name</span></span>       | <span data-ttu-id="9d9fb-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="9d9fb-130">Type</span></span> | <span data-ttu-id="9d9fb-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="9d9fb-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3a294-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3a294-128">Request headers</span></span>
+| <span data-ttu-id="3a294-129">Nome</span><span class="sxs-lookup"><span data-stu-id="3a294-129">Name</span></span>       | <span data-ttu-id="3a294-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="3a294-130">Type</span></span> | <span data-ttu-id="3a294-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="3a294-131">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="9d9fb-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="9d9fb-132">Authorization</span></span>  | <span data-ttu-id="9d9fb-133">string</span><span class="sxs-lookup"><span data-stu-id="9d9fb-133">string</span></span>  | <span data-ttu-id="9d9fb-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3a294-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="3a294-132">Authorization</span></span>  | <span data-ttu-id="3a294-133">string</span><span class="sxs-lookup"><span data-stu-id="3a294-133">string</span></span>  | <span data-ttu-id="3a294-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3a294-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9d9fb-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9d9fb-136">Request body</span></span>
-<span data-ttu-id="9d9fb-137">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-137">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="9d9fb-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d9fb-138">Response</span></span>
-<span data-ttu-id="9d9fb-139">Se tiver êxito, este método retornará um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-139">If successful, this method returns a `200 OK` response code.</span></span> <span data-ttu-id="9d9fb-140">Se não tiver êxito, retornará um `400 Bad Request`.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-140">If unsuccessful, it returns a `400 Bad Request`.</span></span> <span data-ttu-id="9d9fb-141">A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se forem encontrados erros ou avisos.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-141">The response contains a collection of [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) objects as part of the response body if any errors or warnings were found.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a294-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3a294-136">Request body</span></span>
+<span data-ttu-id="3a294-137">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3a294-137">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="3a294-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a294-138">Response</span></span>
+<span data-ttu-id="3a294-139">Se tiver êxito, este método retornará um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="3a294-139">If successful, this method returns a `200 OK` response code.</span></span> <span data-ttu-id="3a294-140">Se não tiver êxito, retornará um `400 Bad Request`.</span><span class="sxs-lookup"><span data-stu-id="3a294-140">If unsuccessful, it returns a `400 Bad Request`.</span></span> <span data-ttu-id="3a294-141">A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se forem encontrados erros ou avisos.</span><span class="sxs-lookup"><span data-stu-id="3a294-141">The response contains a collection of [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) objects as part of the response body if any errors or warnings were found.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9d9fb-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9d9fb-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9d9fb-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d9fb-143">Request</span></span>
-<span data-ttu-id="9d9fb-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3a294-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3a294-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3a294-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3a294-143">Request</span></span>
+<span data-ttu-id="3a294-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3a294-144">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "post_educationSynchronizationProfile_start"
@@ -55,10 +55,10 @@ POST /synchronizationProfiles/{id}/start
 POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/start
 ```
 
-##### <a name="response"></a><span data-ttu-id="9d9fb-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d9fb-145">Response</span></span>
-<span data-ttu-id="9d9fb-146">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-146">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="3a294-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a294-145">Response</span></span>
+<span data-ttu-id="3a294-146">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3a294-146">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="9d9fb-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9d9fb-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="3a294-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3a294-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -127,3 +127,24 @@ Content-length: 2105
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="3a294-149">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="3a294-149">SDK sample code</span></span>
+
+# <a name="ctabcs"></a>[<span data-ttu-id="3a294-150">Basic</span><span class="sxs-lookup"><span data-stu-id="3a294-150">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_start-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-start.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-start.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
