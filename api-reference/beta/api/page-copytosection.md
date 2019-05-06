@@ -4,12 +4,12 @@ description: Copia uma página para uma seção específica.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 3ba56a8f5723a7f00b61e59b7ba2e40c7fbb59ce
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5811772360cfd6c50a75d664396de6638078b31b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337891"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596176"
 ---
 # <a name="page-copytosection"></a>página: copyToSection
 
@@ -47,8 +47,8 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site de equipe do Office 365.|
-|siteId|String|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site de equipe do Office 365.|
+|siteCollectionId|Cadeia de caracteres|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site de equipe do Office 365.|
+|siteId|Cadeia de caracteres|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site de equipe do Office 365.|
 |groupId|Cadeia de caracteres|A ID do grupo para o qual copiar. Use somente ao copiar para um grupo do Office 365.|
 |id|String|Obrigatório. A ID da seção de destino.|
 
@@ -85,6 +85,16 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/page_copytosection-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/page_copytosection-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -95,6 +105,9 @@ HTTP/1.1 202 Accepted
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

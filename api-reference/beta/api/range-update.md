@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto range.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 33aafe25a7537a6c392409f98677ab27dd9a50c6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 49587a52de74503f7bac974a5bc52c7cabea7716
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337002"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33610509"
 ---
 # <a name="update-range"></a>Intervalo de atualização
 
@@ -44,7 +44,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columnHidden|booliano|Representa se todas as colunas do intervalo atual estão ocultas.|
-|formulas|Json|Representa a fórmula em notação A1.|
+|fórmulas|Json|Representa a fórmula em notação A1.|
 |formulasLocal|Json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.|
 |formulasR1C1|Json|Representa a fórmula em notação no estilo L1C1.|
 |numberFormat|Json|Representa o código de formato de número do Excel para determinada célula.|
@@ -94,6 +94,14 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_range-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -104,6 +112,8 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/range-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

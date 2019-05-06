@@ -5,16 +5,14 @@ ms.date: 09/10/2017
 title: Mover um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 95246dc6de4a618de12804183ca34ebf828930ed
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 879d9946b4c6a54622d948dd9d2041da20be6f8d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325295"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588289"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover um DriveItem para uma nova pasta
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Para mover um DriveItem para um novo item pai, o aplicativo solicita a atualização de **parentReference** do DriveItem a ser movido.
 
@@ -65,7 +63,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurs
 
 Este exemplo move um item especificado por {item-id} para uma pasta na unidade do usuário com a ID `new-parent-folder-id`.
 
-<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -73,7 +71,7 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "new-parent-folder-id"
+    "id": "{new-parent-folder-id}"
   },
   "name": "new-item-name.txt"
 }
@@ -100,6 +98,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/move-item-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/move-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-responses"></a>Respostas de erro
 
@@ -107,13 +115,14 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
 
 [error-response]: /graph/errors
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Move an item to another location or rename the item.",
   "keywords": "move,rename,mv,change location",
   "section": "documentation",
   "tocPath": "Items/Move",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-move.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-move.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

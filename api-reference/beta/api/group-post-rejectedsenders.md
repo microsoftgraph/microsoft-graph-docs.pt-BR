@@ -4,17 +4,14 @@ description: Adiciona um novo usuário ou grupo à lista rejectedSender.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d1f22c5a14a9d08204532217d61665659acc979a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6c2de839c163a2f43b12060c6e26c3b32373e2e5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328516"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592534"
 ---
 # <a name="create-rejectedsender"></a>Criar rejectedSender
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Adiciona um novo usuário ou grupo à lista rejectedSender.
 
 Especifique o usuário ou grupo em `@odata.id` no corpo da solicitação. Os usuários na lista de remetentes rejeitados não podem postar em conversas do grupo (identificado na URL da solicitação POST). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.
@@ -33,7 +30,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 POST /groups/{id}/rejectedSenders/$ref
 ```
-
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -50,18 +46,17 @@ Este método retorna o código de resposta `204 No Content` e nenhum corpo de re
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "create_rejectedsender"
+  "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref
+POST https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
+  "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 <!-- {
@@ -71,16 +66,24 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create rejectedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-rejectedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

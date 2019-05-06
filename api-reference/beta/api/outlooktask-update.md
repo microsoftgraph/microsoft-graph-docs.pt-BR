@@ -4,12 +4,12 @@ description: Alterar as propriedades graváveis de uma tarefa do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 47a96d7e1fd7044bcc43edac809696c5a3ad2c42
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fcd0c73e48cf98f52d0c87e3e48acb403d6558b2
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332673"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596491"
 ---
 # <a name="update-outlooktask"></a>Atualizar outlooktask
 
@@ -56,12 +56,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |assignedTo|String|O nome da pessoa a qual a tarefa foi atribuída.|
 |Corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
 |Categorias|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
-|changeKey|String|A versão da tarefa.|
+|changeKey|Cadeia de caracteres|A versão da tarefa.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |hasAttachments|Booliano|Defina como verdadeiro se a tarefa tiver anexos.|
-|importance|string|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|string|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |proprietário|String|O nome da pessoa que criou a tarefa.|
@@ -149,6 +149,16 @@ Content-length: 376
 
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_outlooktask-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_outlooktask-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -159,6 +169,9 @@ Content-length: 376
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

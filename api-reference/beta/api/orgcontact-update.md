@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto orgcontact.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 77eccacead0871c883da1baa005fefc796158fdc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 959be23764b5348c0e9473aa00205620f321ebb4
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338038"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596596"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
@@ -40,22 +40,22 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|String||
-|country|String||
-|departamento|String||
-|onPremisesSyncEnabled|Boolean||
-|displayName|String||
-|givenName|String||
-|jobTitle|String||
+|city|Cadeia de caracteres||
+|country|Cadeia de caracteres||
+|department|Cadeia de caracteres||
+|onPremisesSyncEnabled|Booliano||
+|displayName|Cadeia de caracteres||
+|givenName|Cadeia de caracteres||
+|jobTitle|Cadeia de caracteres||
 |onPremisesLastSyncDateTime|DateTimeOffset||
 |email|String||
-|mailNickname|String||
+|mailNickname|Cadeia de caracteres||
 |mobilePhone|Cadeia de caracteres||
-|officeLocation|String||
-|postalCode|String||
+|officeLocation|Cadeia de caracteres||
+|postalCode|Cadeia de caracteres||
 |proxyAddresses|String||
-|state|String||
-|streetAddress|String||
+|state|Cadeia de caracteres||
+|streetAddress|Cadeia de caracteres||
 |surname|String||
 |businessPhones|Coleção de cadeias de caracteres||
 
@@ -108,6 +108,16 @@ Content-length: 222
   "displayName": "displayName-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_orgcontact-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_orgcontact-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -118,6 +128,9 @@ Content-length: 222
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/orgcontact-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/orgcontact-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,17 +4,14 @@ description: 'Inicie uma nova conversa em grupo criando primeiro um thread. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 61da26f38204ba6e0a11162b2454d5d3100d1cc0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 228657e23b46efa6146bb46fc62220d10c1ee673
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328455"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592606"
 ---
 # <a name="create-conversation-thread"></a>Criar thread de conversas
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Inicie uma nova conversa em grupo criando primeiro um thread. 
 
 Uma nova conversa, thread de conversas e posts são criados no grupo. Use [reply thread](conversationthread-reply.md) ou [reply post](post-reply.md) para postar mais naquele thread.
@@ -55,7 +52,7 @@ Este é um exemplo de solicitação.
   "name": "create_conversationthread_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads
+POST https://graph.microsoft.com/v1.0/groups/{id}/threads
 Content-type: application/json
 
 {
@@ -74,7 +71,6 @@ Content-type: application/json
   }]
 }
 ```
-
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -99,7 +95,7 @@ Content-length: 419
   ],
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
+  "lastDeliveredDateTime": "datetime-value",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
@@ -113,16 +109,27 @@ Content-length: 419
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_conversationthread_from_group-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_conversationthread_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-threads.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-post-threads.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

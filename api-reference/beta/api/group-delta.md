@@ -4,12 +4,12 @@ description: Obter grupos recém-criados, atualizados ou excluídos, incluindo a
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ff525bf807cf7f4d2932aad30f61dab157dc6619
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 983ec7447a38122d971d123745c3e2cf6078ba6b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329664"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593225"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -65,7 +65,7 @@ Este método oferece suporte a parâmetros de consulta OData opcionais para ajud
 |:---------------|:----------|
 | Autorização  | &lt;Token&gt; de portador|
 | Content-Type  | application/json |
-| Preferir | retorno = mínimo <br><br>A especificação desse cabeçalho com uma solicitação que usa `deltaLink` um retornava apenas as propriedades do objeto que foram alteradas desde a última rodada. Opcional. |
+| Preferir | return=minimal <br><br>Especificar esse cabeçalho com uma solicitação que usa `deltaLink` retorna somente as propriedades do objeto que foram alteradas desde a última vez. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -75,39 +75,39 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma coleção de objetos [group](../resources/group.md) no corpo da resposta. A resposta também inclui um token de estado que é uma `nextLink` URL ou uma `deltaLink` URL.
 
-- Se uma `nextLink` URL for retornada:
-  - Isso indica que há outras páginas de dados a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.
-  - A resposta inclui o mesmo conjunto de propriedades que na solicitação de consulta Delta inicial. Isso permite que você capture o estado atual completo dos objetos ao iniciar o ciclo Delta.
+- Se uma URL `nextLink` for retornada:
+  - Existem páginas de dados adicionais a recuperar na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.
+  - A resposta inclui o mesmo conjunto de propriedades como na solicitação de consulta delta inicial. Assim você pode capturar o estado atual de todos os objetos ao iniciar o ciclo de delta.
 
-- Se uma `deltaLink` URL for retornada:
-  - Isso indica que não há mais dados sobre o estado existente do recurso a ser retornado. Salve e use a `deltaLink` URL para saber mais sobre as alterações no recurso na próxima rodada.
-  - Você tem a opção de especificar o `Prefer:return=minimal` cabeçalho, para incluir os valores de resposta somente para as propriedades que foram alteradas desde o momento `deltaLink` em que foi emitido.
+- Se uma URL `deltaLink` for retornada:
+  - Isso indica que não há mais nenhum dado a retornar sobre o estado do recurso. Salve e use a URL `deltaLink` para saber mais sobre alterações ao recurso na próxima fase.
+  - Você pode especificar o cabeçalho `Prefer:return=minimal` para incluir somente os valores de resposta das propriedades que foram alteradas desde a hora em que o `deltaLink` foi emitido.
 
-#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>Padrão: retornar as mesmas propriedades que a solicitação Delta inicial
+#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>Padrão: retornar as mesmas propriedades de uma solicitação delta inicial
 
-Por padrão, as solicitações usando `deltaLink` uma `nextLink` ou retornam as mesmas propriedades selecionadas na consulta Delta inicial das seguintes maneiras:
+Por padrão, as solicitações usando `deltaLink` ou `nextLink` retornam as mesmas propriedades selecionadas na consulta delta inicial das seguintes maneiras:
 
-- Se a propriedade tiver sido alterada, o novo valor será incluído na resposta. Isso inclui propriedades que estão sendo definidas como valor nulo.
-- Se a propriedade não tiver sido alterada, o valor antigo será incluído na resposta.
-- Se a propriedade nunca tiver sido definida antes de não ser incluída na resposta.
+- Se a propriedade foi alterada, o novo valor será incluído na resposta. Isso inclui propriedades definidas com valor nulo.
+- Se a propriedade não foi alterada, o valor antigo será incluído na resposta.
+- Se a propriedade nunca foi definida anteriormente, de nenhuma forma será incluída na resposta.
 
 
-> **Observação:** Com esse comportamento, observando a resposta, não é possível dizer se uma propriedade está sendo alterada ou não. Além disso, as respostas Delta tendem a ser grandes porque elas contêm todos os valores de propriedade, conforme mostrado no [segundo exemplo](#request-2) abaixo.
+> **Observação:** com esse comportamento, ao verificar a resposta, não será possível dizer se uma propriedade foi alterada ou não. Além disso, as respostas delta tendem a ser grandes porque contêm todos os valores de propriedades, como mostrado no [segundo exemplo](#request-2) abaixo.
 
 #### <a name="alternative-return-only-the-changed-properties"></a>Alternativa: retornar somente as propriedades alteradas
 
-Adicionar um cabeçalho de solicitação opcional `prefer:return=minimal` --resulta no seguinte comportamento:
+Adicionar o cabeçalho `prefer:return=minimal` opcional na solicitação resulta no comportamento a seguir:
 
-- Se a propriedade tiver sido alterada, o novo valor será incluído na resposta. Isso inclui propriedades que estão sendo definidas como valor nulo.
-- Se a propriedade não tiver sido alterada, a propriedade não será incluída na resposta. (Diferente do comportamento padrão.)
+- Se a propriedade foi alterada, o novo valor será incluído na resposta. Isso inclui propriedades definidas com valor nulo.
+- Se a propriedade não foi alterada, a propriedade não será incluído na resposta de forma alguma. (Diferente do comportamento padrão.)
 
-> **Observação:** O cabeçalho pode ser adicionado a uma `deltaLink` solicitação em um determinado momento no ciclo Delta. O cabeçalho afeta apenas o conjunto de propriedades incluído na resposta e não afeta como a consulta Delta é executada. ConFira o [terceiro exemplo](#request-3) abaixo.
+> **Observação:** é possível adicionar o cabeçalho a uma solicitação `deltaLink` a qualquer momento no ciclo de delta. O cabeçalho afeta apenas o conjunto de propriedades incluídas na resposta e ele não afeta como a consulta delta é executada. Veja o [terceiro exemplo](#request-3) a seguir.
 
 ### <a name="example"></a>Exemplo
 
 #### <a name="request-1"></a>Solicitação 1
 
-Este é um exemplo de solicitação. Não há nenhum `$select` parâmetro, portanto, um conjunto padrão de propriedades é rastreado e retornado.
+Este é um exemplo de solicitação. Não há nenhum parâmetro `$select`, assim um conjunto padrão de propriedades será controlado e retornado.
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/beta/groups/delta
 
 #### <a name="response-1"></a>Resposta 1
 
-Veja a seguir um exemplo da resposta ao usar `deltaLink` obtido da inicialização da consulta.
+A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta.
 
 >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 >
@@ -162,10 +162,20 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="request-2"></a>Solicitação 2
 
-O exemplo a seguir mostra a solicitação inicial selecionando 3 Propriedades para o controle de alterações, com comportamento de resposta padrão:
+O próximo exemplo mostra uma solicitação inicial selecionando três propriedades para controle de alterações, com o comportamento de resposta padrão:
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -177,7 +187,7 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 
 #### <a name="response-2"></a>Resposta 2
 
-Veja a seguir um exemplo da resposta ao usar `deltaLink` obtido da inicialização da consulta. Observe que todas as 3 propriedades estão incluídas na resposta e não são conhecidas quais foram alteradas desde que `deltaLink` foram obtidas.
+A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observe que todas as três propriedades foram incluídas na resposta e não se sabe quais foram alteradas desde que `deltaLink` foi obtido.
 
 <!-- {
   "blockType": "response",
@@ -202,10 +212,20 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="request-3"></a>Solicitação 3
 
-O exemplo a seguir mostra a solicitação inicial selecionando 3 Propriedades para controle de alterações, com comportamento de resposta mínimo alternativo:
+O exemplo a seguir mostra uma solicitação inicial selecionando três propriedades para controle de alterações com o comportamento de resposta mínima alternativa:
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -218,7 +238,7 @@ Prefer: return=minimal
 
 #### <a name="response-3"></a>Resposta 3
 
-Veja a seguir um exemplo da resposta ao usar `deltaLink` obtido da inicialização da consulta. Observe que a `mailNickname` propriedade não é incluída, o que significa que ela não foi alterada desde a última consulta Delta; `displayName` e `description` são incluídos, o que significa que seus valores foram alterados.
+A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observe que a propriedade `mailNickname` não foi incluída, ou seja, não foi alterada desde a última consulta delta; `displayName` e `description` foram incluídas, o que significa que os valores foram alterados.
 
 <!-- {
   "blockType": "response",
@@ -245,7 +265,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Usar a consulta Delta para controlar alterações nos dados do Microsoft Graph](/graph/delta-query-overview).
+- [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](/graph/delta-query-overview).
 - [Obter alterações incrementais para grupos](/graph/delta-query-groups).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -257,6 +277,13 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

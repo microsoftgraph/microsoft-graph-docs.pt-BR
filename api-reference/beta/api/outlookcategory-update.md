@@ -4,16 +4,15 @@ description: 'Atualize a propriedade gravável, **color**, do objeto outlookCate
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 05290d9310f00f282684d2f2476b5a70f59f3e2f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ad0896f815fc1cabd3128e0a325d9beab603db28
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332725"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596771"
 ---
 # <a name="update-outlook-category"></a>Atualizar a categoria do Outlook
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize a propriedade gravável, **color**, do objeto [outlookCategory](../resources/outlookcategory.md) especificado. Não é possível modificar a propriedade **displayName** depois de criar a categoria.
 
@@ -53,10 +52,11 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["bac262b7-485d-4739-b436-e31467d64fac"],
   "name": "update_outlookcategory"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
+PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
 Content-type: application/json
 Content-length: 30
 
@@ -77,22 +77,33 @@ Content-type: application/json
 Content-length: 251
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
   "id":"bac262b7-485d-4739-b436-e31467d64fac",
   "displayName":"Project expenses",
   "color":"preset15"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_outlookcategory-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_outlookcategory-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update outlookCategory",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/outlookcategory-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/outlookcategory-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

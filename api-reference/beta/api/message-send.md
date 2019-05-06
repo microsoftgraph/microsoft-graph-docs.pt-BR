@@ -1,15 +1,15 @@
 ---
 title: 'message: send'
-description: Envie uma mensagem na pasta de rascunho. A mensagem de rascunho pode ser um novo rascunho de mensagem, rascunho de resposta, responder-todos os rascunhos ou
+description: Envie uma mensagem na pasta de rascunho. A mensagem de rascunho pode ser o rascunho de uma mensagem nova, rascunho de resposta, rascunho de resposta a todos ou
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 60c8aaa1e68541074fda4c123146439f55823fb4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c4a4010a69f3c6323ab624d2b1fa1f16075a519b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333183"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33597749"
 ---
 # <a name="message-send"></a>message: send
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Length | number | 0. Required. |
+| Content-Length | number | 0. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -75,6 +75,16 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/message_send-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/message_send-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -85,6 +95,9 @@ HTTP/1.1 202 Accepted
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-send.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-send.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

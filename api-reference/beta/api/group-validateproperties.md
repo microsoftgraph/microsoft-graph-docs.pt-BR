@@ -4,12 +4,12 @@ description: Validar se o nome de exibição ou o apelido de email de um grupo d
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 5361e05d2a58e2d4c27bd662f158d4f185c447fe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5f5725885e3e37f23c2b31fc6b1ab1d856d99ad
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501935"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592431"
 ---
 # <a name="group-validateproperties"></a>Group: ValidateProperties
 
@@ -19,7 +19,7 @@ As seguintes validações são realizadas para o nome de exibição e as proprie
 1. Validar a política de nomenclatura de prefixo e sufixo
 2. Validar a política personalizada de palavras banidas
 
-Essa API retorna com a primeira falha encontrada. Se uma ou mais propriedades falharem várias validações, somente a propriedade com a primeira falha de validação será retornada. No enTanto, você pode validar tanto o apelido de email quanto o nome de exibição e receber uma coleção de erros de validação se você estiver validando apenas o prefixo e a política de nomenclatura de sufixo.
+Essa API retorna com a primeira falha encontrada. Se uma ou mais propriedades falharem várias validações, somente a propriedade com a primeira falha de validação será retornada. No entanto, você pode validar tanto o apelido de email quanto o nome de exibição e receber uma coleção de erros de validação se você estiver validando apenas o prefixo e a política de nomenclatura de sufixo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,8 +50,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No enTanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
-|mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No enTanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
+|displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
+|mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
 |onBehalfOfUserId|Guid| A ID de objeto do usuário a ser representada ao chamar a API. Os resultados de validação são para os atributos e funções do onBehalfOfUserId. |
 
 ## <a name="response"></a>Resposta
@@ -90,6 +90,16 @@ Content-length: 132
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_validateproperties-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_validateproperties-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Este é um exemplo de uma solicitação com erros de validação.
 
@@ -137,5 +147,9 @@ Content-length: 223
   "description": "group: validateProperties",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-validateproperties.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-validateproperties.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

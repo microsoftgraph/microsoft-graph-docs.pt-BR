@@ -4,12 +4,12 @@ description: Representa usuários do Azure AD que estão em risco. O Azure AD av
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 179a6cbddf3e4b27c47761bd81aad1052ae7f728
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 685600c110088d9bd9809a8c754e8530b123412e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343532"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33620805"
 ---
 # <a name="riskyuser-resource-type"></a>tipo de recurso riskyUser
 
@@ -27,8 +27,9 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |:---------------|:--------|:----------|
 |[Listar riskyUsers](../api/riskyusers-list.md) | coleção [riskyUser](riskyUser.md)|Listar usuários arriscados e suas propriedades.|
 |[Obter riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|Obtenha um usuário arriscado específico e suas propriedades.|
+|[Histórico de lista](../api/riskyuser-list-history.md) | coleção [riskyUserHistoryItem](riskyuserhistoryitem.md)|Obter o histórico de riscos de um usuário do Azure AD.|
 |[Confirmar riskyUsers comprometido](../api/riskyusers-confirmcompromised.md)|Nenhum |Confirmar um usuário arriscado como comprometido.|
-|[Ignorar riskyUsers](../api/riskyusers-dismiss.md)|Nenhum | DesCartar o risco de um usuário arriscado.|
+|[Ignorar riskyUsers](../api/riskyusers-dismiss.md)|Nenhum | Descartar o risco de um usuário arriscado.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -48,7 +49,7 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|histórico|coleção [riskyUserHistoryItem](riskyuserhistoryitem.md)| |
+|histórico|coleção [riskyUserHistoryItem](riskyuserhistoryitem.md)|Representa o histórico de riscos de um usuário do Azure AD, conforme determinado pela proteção de identidade do Azure AD. |
 
 ## <a name="json-representation"></a>Representação JSON
 

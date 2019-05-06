@@ -2,12 +2,12 @@
 title: Atualizar privilegedRoleSettings
 description: Atualize as configurações de função para a configuração de função determinada. Um objeto privilegedRoleSettings será retornado.
 localization_priority: Normal
-ms.openlocfilehash: ce04a6e8c61c59f576d3a5e36592ba8ab4373de3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 17f813a72fb88948bd8906924c312ad9fce1dd79
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337243"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593804"
 ---
 # <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
 
@@ -45,15 +45,15 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|A duração quando a função é ativada. Obrigatório.|
-|id|string|O identificador exclusivo das configurações de função. Somente leitura. Obrigatório.|
+|id|cadeia de caracteres|O identificador exclusivo das configurações de função. Somente leitura. Obrigatório.|
 |isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável. Obrigatório.|
-|lastGlobalAdmin|Boolean|Apenas para uso interno.|
+|lastGlobalAdmin|Booliano|Apenas para uso interno.|
 |maxElavationDuration|duration|Duração máxima da função ativada. Obrigatório.|
-|mfaOnElevation|Boolean|**true** se a MFA é necessária para ativar a função. **false** se a MFA não é necessária para ativar a função. Obrigatório.|
+|mfaOnElevation|Booliano|**true** se a MFA é necessária para ativar a função. **false** se a MFA não é necessária para ativar a função. Obrigatório.|
 |minElevationDuration|duration|Duração mínima para a função ativada. Obrigatório.|
-|notificationToUserOnElevation|Boolean|**true** se enviar notificação para o usuário final quando a função é ativada. **false** se não enviar notificações quando a função for ativada. Obrigatório.|
-|ticketingInfoOnElevation|Boolean|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função. Obrigatório.|
-|approvalOnElevation|Boolean|**true** se a aprovação é necessária ao ativar a função. **false** se a aprovação não é necessária ao ativar a função. Obrigatório.|
+|notificationToUserOnElevation|Booliano|**true** se enviar notificação para o usuário final quando a função é ativada. **false** se não enviar notificações quando a função for ativada. Obrigatório.|
+|ticketingInfoOnElevation|Booliano|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função. Obrigatório.|
+|approvalOnElevation|Booliano|**true** se a aprovação é necessária ao ativar a função. **false** se a aprovação não é necessária ao ativar a função. Obrigatório.|
 |approverIds|coleção de cadeias de caracteres|Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
 
 ## <a name="response"></a>Resposta
@@ -95,6 +95,16 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +115,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

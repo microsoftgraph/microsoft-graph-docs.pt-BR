@@ -4,12 +4,12 @@ description: Validar se o nome de exibição ou o apelido de email de um grupo d
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 182e1d97a0fe6406a0d5d2930cb87a473c7f9cdb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 64bfe6865cbb7d887bbb19e27ee583b123616c80
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325715"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591129"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryobject: ValidateProperties
 
@@ -20,7 +20,7 @@ As seguintes validações são realizadas para o nome de exibição e as proprie
 2. Validar a política personalizada de palavras banidas
 3. Validar o apelido do email é exclusivo
 
-Essa API retorna com a primeira falha encontrada. Se uma ou mais propriedades falharem várias validações, somente a propriedade com a primeira falha de validação será retornada. No enTanto, você pode validar tanto o apelido de email quanto o nome de exibição e receber uma coleção de erros de validação se você estiver validando apenas o prefixo e a política de nomenclatura de sufixo.
+Essa API retorna com a primeira falha encontrada. Se uma ou mais propriedades falharem várias validações, somente a propriedade com a primeira falha de validação será retornada. No entanto, você pode validar tanto o apelido de email quanto o nome de exibição e receber uma coleção de erros de validação se você estiver validando apenas o prefixo e a política de nomenclatura de sufixo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -44,9 +44,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|entityType|String| `Group`é o único tipo de entidade com suporte. |
-|displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No enTanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
-|mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No enTanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
+|entityType|Cadeia de caracteres| `Group`é o único tipo de entidade com suporte. |
+|displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
+|mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
 |onBehalfOfUserId|Guid| A ID de objeto do usuário a ser representada ao chamar a API. Os resultados de validação são para os atributos e funções do onBehalfOfUserId. |
 
 ## <a name="response"></a>Resposta
@@ -87,6 +87,16 @@ Content-length: 164
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Este é um exemplo de uma solicitação com erros de validação.
 
@@ -144,5 +154,9 @@ Content-Type: application/json
   "description": "directoryObject: validateProperties",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

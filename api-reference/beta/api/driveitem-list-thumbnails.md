@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Recuperar miniaturas de um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 271bf311c121807bede6ba49ce2a585a7400c641
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e220caed7a745caf7f75935ed9b47eb415173135
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325309"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589991"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 
@@ -95,6 +95,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/enum-item-thumbnails-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/enum-item-thumbnails-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="get-a-single-thumbnail"></a>Obter uma única miniatura
 
@@ -112,7 +122,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 | Nome         | Tipo   | Descrição                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
-| **item-id**  | string | O identificador exclusivo do item referenciado.                                           |
+| **item-id**  | cadeia de caracteres | O identificador exclusivo do item referenciado.                                           |
 | **thumb-id** | number | O índice da miniatura, geralmente de 0 a 4. Se houver uma miniatura personalizada, seu índice será 0. |
 | **size**     | string | O tamanho da miniatura solicitada. Pode ter um dos tamanhos padrão listados abaixo, ou um tamanho personalizado. |
 
@@ -128,6 +138,16 @@ Content-Type: application/json
   "url": "https://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-one-thumbnail-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-one-thumbnail-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="retrieve-thumbnail-binary-content"></a>Recuperar o conteúdo binário da miniatura
 
@@ -151,6 +171,16 @@ O serviço responde com um redirecionamento para a URL da miniatura.
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-thumbnail-content-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-thumbnail-content-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 URLs de miniaturas são seguras em cache. A URL mudará se o item for alterado de uma maneira que exigir que uma nova miniatura seja gerada.
 
@@ -207,6 +237,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-thumbnail-while-listing-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-thumbnail-while-listing-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="size-values"></a>Valores de tamanho
 
@@ -249,6 +289,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-thumbnail-custom-size-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-thumbnail-custom-size-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Você pode especificar as seguintes opções após o tamanho de miniatura solicitado:
 
@@ -286,6 +336,17 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
   "tocPath": "Items/Thumbnails",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

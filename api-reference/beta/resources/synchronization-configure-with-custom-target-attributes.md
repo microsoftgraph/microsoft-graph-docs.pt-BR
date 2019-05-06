@@ -2,12 +2,12 @@
 title: Configurar a sincronização com atributos de destino personalizados
 description: Você pode personalizar o esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura do Salesforce adicionando um novo campo chamado `officeCode`. Você configura a sincronização do Azure Active Directory (Azure AD) para o Salesforce e para cada usuário, você preencherá o `officeCode` campo na Salesforce com o valor do `extensionAttribute10` campo no Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: 8a6f33c0325c8e062c2e704c7f1d319148a051ba
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 698c6b1cd05f3146962c9ebd5bd0e52b264a3145
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342908"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621274"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Configurar a sincronização com atributos de destino personalizados
 
@@ -183,6 +183,16 @@ Content-Type: application/json
         }]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Adicionar uma definição para o atributo officeCode e um mapeamento entre atributos
 
@@ -196,7 +206,7 @@ Use um editor de texto sem formatação de sua escolha (por exemplo, [bloco de n
 2. Adicione um [mapeamento](synchronization-attributemapping.md) de atributos `officeCode` entre `extensionAttribute10`o e o.
 
     - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure ad como o diretório de origem e Salesforce.com como o diretório de`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`destino ().
-    - Nos objectMappings da regra, encontre o mapeamento entre usuários ( [](synchronization-objectmapping.md) `"sourceObjectName": "User",   "targetObjectName": "User"`).
+    - Nos objectmappings da regra, encontre o mapeamento entre usuários ( [](synchronization-objectmapping.md) `"sourceObjectName": "User",   "targetObjectName": "User"`).
     - Na matriz [attributeMappings](synchronization-attributemapping.md) do objectmapping ****, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
 
 ```json
@@ -263,3 +273,16 @@ HTTP/1.1 201 No Content
 ```
 
 Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a reprocessar todas as contas em seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get the synchronization schema",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -2,12 +2,12 @@
 title: Criar governanceRoleAssignmentRequest
 description: Crie uma solicitação de atribuição de função para representar a operação desejada em uma atribuição de função. A tabela a seguir lista as operações.
 localization_priority: Normal
-ms.openlocfilehash: b9b5f701f3f8ad283f589d07b250ce8ea63aa479
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2ab5328b9841c157a031e3e0ab9ff7599ddcaf57
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329608"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593467"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -15,17 +15,17 @@ ms.locfileid: "33329608"
 
 Crie uma solicitação de atribuição de função para representar a operação desejada em uma atribuição de função. A tabela a seguir lista as operações.
 
-| Operação                                   | Tipo        |
+| Operation                                   | Tipo        |
 |:--------------------------------------------|:------------|
 | Atribuir uma atribuição de função                    | AdminAdd    |
 | Ativar uma atribuição de função qualificada        | UserAdd     |
-| Desativar uma atribuição de função ativada     | UserRemove  |
+| Desativar uma atribuição de função ativada     | Userremove  |
 | Remover uma atribuição de função                    | AdminRemove |
 | Atualizar uma atribuição de função                    | AdminUpdate |
-| Solicitação para estender minha atribuição de função        | UserExtend  |
+| Solicitação para estender minha atribuição de função        | Userextend  |
 | Estender uma atribuição de função                    | AdminExtend |
-| Solicitação para renovar minha atribuição de função expirada | UserRenew   |
-| ReNovar uma atribuição de função expirada            | AdminRenew  |
+| Solicitação para renovar minha atribuição de função expirada | Userrenew   |
+| Renovar uma atribuição de função expirada            | AdminRenew  |
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | PrivilegedAccess. ReadWrite. AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                            |
-| Aplicativo                            | PrivilegedAccess. ReadWrite. AzureResources |
+| Application                            | PrivilegedAccess. ReadWrite. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,12 +59,12 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [gover
 | Propriedade         | Tipo                                                     | Descrição |
 |:-----------------|:---------------------------------------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | A ID do recurso. Obrigatório. |
-| roleDefinitionId | String                                                   | A ID da definição de função. Obrigatório. |
-| SubjectID        | String                                                   | A ID do assunto. Obrigatório. |
-| assignmentstate  | String                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active`. Obrigatório. |
-| tipo             | String                                                   | O tipo de solicitação. O valor pode ser `AdminAdd`, `UserAdd`, `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew`,,,, `AdminRenew`e. `AdminExtend` Obrigatório. |
-| motivos           | String                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise. |
-| futebol         | [governanceSchedule](../resources/governanceschedule.md) | O agendamento da solicitação de atribuição de função. Para o tipo de `UserAdd`solicitação `AdminAdd`de `AdminUpdate`,, `AdminExtend`, e, é necessário. |
+| roleDefinitionId | Cadeia de caracteres                                                   | A ID da definição de função. Obrigatório. |
+| SubjectID        | Cadeia de caracteres                                                   | A ID do assunto. Obrigatório. |
+| assignmentstate  | Cadeia de caracteres                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active`. Obrigatório. |
+| type             | String                                                   | O tipo de solicitação. O valor pode ser `AdminAdd`, `UserAdd`, `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew`,,,, `AdminRenew`e. `AdminExtend` Obrigatório. |
+| motivos           | Cadeia de caracteres                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise. |
+| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O agendamento da solicitação de atribuição de função. Para o tipo de `UserAdd`solicitação `AdminAdd`de `AdminUpdate`,, `AdminExtend`, e, é necessário. |
 
 ## <a name="response"></a>Resposta
 
@@ -97,12 +97,12 @@ Neste exemplo, um administrador atribui o usuário nawu@fimdev.net à função l
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                      | \<roleDefinitionId\> |
-| SubjectID        | String                                                   | Sim                      | \<SubjectID\> |
-| assignmentstate  | String                                                   | Sim                      | Qualificado/ativo |
-| tipo             | String                                                   | Sim                      | AdminAdd |
-| motivos           | String                                                   | depende das configurações de função |   |
-| futebol         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
+| SubjectID        | Cadeia de caracteres                                                   | Sim                      | \<SubjectID\> |
+| assignmentstate  | Cadeia de caracteres                                                   | Sim                      | Qualificado/ativo |
+| type             | String                                                   | Sim                      | AdminAdd |
+| motivos           | Cadeia de caracteres                                                   | depende das configurações de função |   |
+| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
 
@@ -181,6 +181,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-user-activates-eligible-role"></a>Exemplo 2: o usuário ativa a função qualificada
 
@@ -189,12 +199,12 @@ Neste exemplo, o usuário nawu@fimdev.net ativa a função de leitor de cobranç
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                      | \<roleDefinitionId\> |
-| SubjectID        | String                                                   | Sim                      | \<SubjectID\> |
-| assignmentstate  | String                                                   | Sim                      | Ativo |
-| tipo             | String                                                   | Sim                      | UserAdd |
-| motivos           | String                                                   | depende das configurações de função |   |
-| futebol         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
+| SubjectID        | Cadeia de caracteres                                                   | Sim                      | \<SubjectID\> |
+| assignmentstate  | Cadeia de caracteres                                                   | Sim                      | Ativo |
+| type             | String                                                   | Sim                      | UserAdd |
+| motivos           | Cadeia de caracteres                                                   | depende das configurações de função |   |
+| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
 
@@ -292,12 +302,12 @@ Neste exemplo, o usuário nawu@fimdev.net desativa a função de leitor de cobra
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim      | \<roleDefinitionId\> |
-| SubjectID        | String                                                   | Sim      | \<SubjectID\> |
-| assignmentstate  | String                                                   | Sim      | Ativo |
-| tipo             | String                                                   | Sim      | UserRemove |
-| motivos           | String                                                   | Não       |   |
-| futebol         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
+| SubjectID        | Cadeia de caracteres                                                   | Sim      | \<SubjectID\> |
+| assignmentstate  | Cadeia de caracteres                                                   | Sim      | Ativo |
+| type             | String                                                   | Sim      | Userremove |
+| motivos           | Cadeia de caracteres                                                   | Não       |   |
+| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
 #### <a name="request"></a>Solicitação
 
@@ -362,12 +372,12 @@ Neste exemplo, um administrador remove o usuário nawu@fimdev.net da função le
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim      | \<roleDefinitionId\> |
-| SubjectID        | String                                                   | Sim      | \<SubjectID\> |
-| assignmentstate  | String                                                   | Sim      | Qualificado/ativo |
-| tipo             | String                                                   | Sim      | AdminRemove |
-| motivos           | String                                                   | Não       |   |
-| futebol         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
+| SubjectID        | Cadeia de caracteres                                                   | Sim      | \<SubjectID\> |
+| assignmentstate  | Cadeia de caracteres                                                   | Sim      | Qualificado/ativo |
+| type             | String                                                   | Sim      | AdminRemove |
+| motivos           | Cadeia de caracteres                                                   | Não       |   |
+| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
 #### <a name="request"></a>Solicitação
 
@@ -430,12 +440,12 @@ Neste exemplo, os administradores atualizam a atribuição de função para o us
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                     | \<roleDefinitionId\> |
-| SubjectID        | String                                                   | Sim                     | \<SubjectID\> |
-| assignmentstate  | String                                                   | Sim                     | Qualificado/ativo |
-| tipo             | String                                                   | Sim                     | AdminUpdate |
-| motivos           | String                                                   | depende do roleSettings |   |
-| futebol         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
+| SubjectID        | Cadeia de caracteres                                                   | Sim                     | \<SubjectID\> |
+| assignmentstate  | Cadeia de caracteres                                                   | Sim                     | Qualificado/ativo |
+| type             | String                                                   | Sim                     | AdminUpdate |
+| motivos           | Cadeia de caracteres                                                   | depende do roleSettings |   |
+| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação
 
@@ -521,12 +531,12 @@ Este exemplo estende a atribuição de função de expiração para o usuário A
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                     | \<roleDefinitionId\> |
-| SubjectID        | String                                                   | Sim                     | \<SubjectID\> |
-| assignmentstate  | String                                                   | Sim                     | Qualificado/ativo |
-| tipo             | String                                                   | Sim                     | AdminExtend |
-| motivos           | String                                                   | depende do roleSettings |   |
-| futebol         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
+| SubjectID        | Cadeia de caracteres                                                   | Sim                     | \<SubjectID\> |
+| assignmentstate  | Cadeia de caracteres                                                   | Sim                     | Qualificado/ativo |
+| type             | Cadeia de caracteres                                                   | Sim                     | AdminExtend |
+| motivos           | Cadeia de caracteres                                                   | depende do roleSettings |   |
+| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação
 
@@ -613,6 +623,19 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

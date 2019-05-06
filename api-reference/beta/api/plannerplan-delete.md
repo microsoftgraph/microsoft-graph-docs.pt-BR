@@ -4,16 +4,14 @@ description: Exclua **plannerPlan**.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 958cda8bc0ee21c5c1fcc503a5bc91740242ae20
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3e31dac12c3843f19c036dcc4d58e20e9a961b01
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332445"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33594552"
 ---
 # <a name="delete-plannerplan"></a>Excluir plannerPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclua **plannerPlan**.
 ## <a name="permissions"></a>Permissões
@@ -28,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/plans/<id>
+DELETE /planner/plans/{id}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,7 +52,7 @@ Este é um exemplo da solicitação.
   "name": "delete_plannerplan"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/planner/plans/<id>
+DELETE https://graph.microsoft.com/v1.0/planner/plans/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 ##### <a name="response"></a>Resposta
@@ -66,16 +64,27 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_plannerplan-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_plannerplan-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete plannerPlan",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannerplan-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannerplan-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

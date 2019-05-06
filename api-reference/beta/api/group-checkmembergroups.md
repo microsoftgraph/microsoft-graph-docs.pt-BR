@@ -4,12 +4,12 @@ description: Verifique se há associação na lista de grupos especificada. Reto
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 1815f187a25eaddbd3b1757fde5e7e4e9c74f650
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b4566b896a7acb35a478e2d3e2db23ed5b529f53
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329614"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593388"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
 | Application                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Observação:** esta API atualmente exige o `Directory.Read.All` permissão ou posterior. Usando a permissão `Group.Read.All` retornarão um erro. Este é um bug conhecido.
+> **Observação:** esta API atualmente exige a permissão `Directory.Read.All` ou posterior. Usando a permissão `Group.Read.All` retornarão um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -104,6 +104,16 @@ Content-length: 39
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_checkmembergroups-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_checkmembergroups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -115,6 +125,9 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

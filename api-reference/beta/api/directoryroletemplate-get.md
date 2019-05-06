@@ -4,16 +4,14 @@ description: Recupera as propriedades e os relacionamentos do objeto directoryro
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f41b0fe0e23b6b5595a789a8d03b95a5c8ce6e5b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9b877ed403615329f61ada9bd4a4ba8208e22271
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325873"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33590305"
 ---
 # <a name="get-directoryroletemplate"></a>Obter directoryRoleTemplate
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupera as propriedades e os relacionamentos do objeto directoryroletemplate.
 ## <a name="permissions"></a>Permissões
@@ -52,7 +50,7 @@ Este é um exemplo da solicitação.
   "name": "get_directoryroletemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/directoryRoleTemplates/{id}
+GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -72,16 +70,27 @@ Content-length: 98
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryroletemplate-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryroletemplate-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get directoryRoleTemplate",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/directoryroletemplate-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/directoryroletemplate-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

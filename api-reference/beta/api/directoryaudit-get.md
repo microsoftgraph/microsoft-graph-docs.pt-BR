@@ -1,51 +1,65 @@
 ---
 title: Obter directoryAudit
-description: Fornece (ou obtém) um item específico de log de auditoria do Azure Active Directory. Inclui os logs de auditoria gerados por vários serviços no Azure Active Directory como Usuário, Aplicativo, Dispositivo e Gerenciamento de Grupos, Privileged Identity Management, Avaliações de Acesso, Termos de Uso, Proteção de Identidade, Gerenciamento de Senha (redefinição de senhas SSPR e pelos administradores), Autoatendimento e Gerenciamento de Grupo etc...
+description: Descreve o método Get do recurso directoryAudit (entidade) da API do Microsoft Graph (versão beta).
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 40d94dd0ffe5df1adc9df9042173e33b5b98a204
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455111"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591675"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
-Fornece (ou obtém) um item específico de log de auditoria do Azure Active Directory. Inclui os logs de auditoria gerados por vários serviços no Azure Active Directory como Usuário, Aplicativo, Dispositivo e Gerenciamento de Grupos, Privileged Identity Management, Avaliações de Acesso, Termos de Uso, Proteção de Identidade, Gerenciamento de Senha (redefinição de senhas SSPR e pelos administradores), Autoatendimento e Gerenciamento de Grupo etc...
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Obter um item específico de log de auditoria do Azure Active Directory. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como usuários, aplicativos, gerenciamento de dispositivo e grupo, gerenciamento de identidade privilegiada (PIM), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senha ( Autoatendimento e redefinições de senha de administrador), gerenciamento de grupo de autoatendimento e assim por diante.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AuditLog.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte   |
+|Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All | 
 
 Além disso, os aplicativos devem ser [corretamente registrados](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/directoryAudits/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar a personalizar a resposta. Verifique [parâmetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) sobre como usar esses parâmetros.
+
+Este método dá suporte a parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [parâmetros de consulta OData](/graph/query_parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "get_directoryaudit"
@@ -53,8 +67,11 @@ Este é um exemplo da solicitação.
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 ```
-##### <a name="response"></a>Resposta
+
+### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -67,7 +84,7 @@ Content-length: 218
 ```
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{
         "id": "id",
         "category": "UserManagement",
@@ -89,7 +106,7 @@ Content-length: 218
         "targetResources": [{
             "@odata.type": "#microsoft.graph.TargetResourceGroup",
             "id": "ef7x527d-6xx2-4xx4-8xxd-cxxfdxx5xx95",
-            "displayName": "Lynda.com",
+            "displayName": "Example.com",
             "modifiedProperties": [{
                 "displayName": "Action Client Name",
                 "oldValue": null,
@@ -110,3 +127,27 @@ Content-length: 218
     }]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryaudit-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryaudit-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryaudit-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryaudit-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
