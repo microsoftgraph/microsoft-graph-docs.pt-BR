@@ -4,12 +4,12 @@ ms.author: chackman
 title: Item da unidade não seguir
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1cd3976feb643d8553920df624e30d232c5b5ed4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 67438469beceeff50d067c7507318a0e0df5e543
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325329"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588233"
 ---
 # <a name="unfollow-drive-item"></a>Item da unidade não seguir
 
@@ -64,6 +64,16 @@ DELETE /me/drive/following/{item-id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/unfollow-item-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/unfollow-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <!--
 {
   "type": "#page.annotation",
@@ -71,6 +81,9 @@ HTTP/1.1 204 No Content
   "keywords": "unfollow item",
   "section": "documentation",
   "tocPath": "Items/Unfollow",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-unfollow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-unfollow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

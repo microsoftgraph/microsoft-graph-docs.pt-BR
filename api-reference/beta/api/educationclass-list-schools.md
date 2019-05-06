@@ -4,16 +4,14 @@ description: Recupere uma lista de escolas nas quais a aula é ministrada.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d905651e8ec495aea0d0f1a36c650779b7992244
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 134b073e91136d1bd308b488db974f59140cb2dc
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325188"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588161"
 ---
 # <a name="list-schools"></a>Listar escolas
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de escolas nas quais a aula é ministrada.
 
@@ -52,7 +50,7 @@ Este é um exemplo de solicitação.
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/11014/schools
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -104,16 +102,27 @@ Content-length: 892
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_schools-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_schools-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List schools",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-list-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationclass-list-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3b5e0c6ef03af87af9f28745bd73bb0cb886852d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0fab3f7a25a9f16a3808e4c3ec530132781e0bee
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325288"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589455"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -63,7 +63,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | destinatários       | Collection([DriveRecipient](../resources/driverecipient.md)) | Uma coleção dos destinatários que receberão o acesso e o convite de compartilhamento.                                            |
 | mensagem          | String                                          | Uma mensagem de texto sem formatação que está incluída no convite de compartilhamento. Comprimento máximo de 2000 caracteres. |
-| requireSignIn    | Boolean                                         | Especifica onde o destinatário do convite precisa entrar para exibir o item compartilhado.            |
+| requireSignIn    | Booliano                                         | Especifica onde o destinatário do convite precisa entrar para exibir o item compartilhado.            |
 | sendInvitation   | Booliano                                         | Especifica se um email ou uma postagem é gerado (false) ou se a permissão é recém-criada (true).            |
 | funções            | Collection(String)                              | Especifique as funções que são concedidas aos destinatários do convite de compartilhamento.                         |
 | expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em contas pessoais do OneDrive para o OneDrive for Business, SharePoint e Premium.
@@ -130,6 +130,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 ### <a name="partial-success-response"></a>Resposta parcial com êxito
 
 Ao convidar vários destinatários, é possível que a notificação tenha êxito em alguns e falha para outras pessoas.
@@ -196,7 +206,7 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos ob
 | hipCheckRequired               | É necessário resolver a verificação HIP (Host Intrusion Prevention) para desbloquear o envio de notificações.
 | exchangeInvalidUser            | A caixa de correio do usuário atual não foi encontrada.
 | exchangeOutOfMailboxQuota      | Fora da cota.
-| exchangeMaxRecipients          | Foi exCedido o número máximo de destinatários que podem receber notificações ao mesmo tempo.
+| exchangeMaxRecipients          | Foi excedido o número máximo de destinatários que podem receber notificações ao mesmo tempo.
 
 >**Observação:** O serviço pode adicionar novos códigos de erro ou parar de retornar os antigos a qualquer momento.
 
@@ -219,6 +229,9 @@ Saiba mais sobre como os erros são retornados em [Respostas de erro][error-resp
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
   "tocPath": "Sharing/Add permissions",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
