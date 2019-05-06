@@ -4,12 +4,12 @@ description: Use esta API para criar um novo mailSearchFolder na caixa de correi
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bdebbcb9c842d57d4c6ee8d8eb72f45df74a22d7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0c600048961b560364982b8b8ef5cff531ae2031
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333306"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598205"
 ---
 # <a name="create-mailsearchfolder"></a>Criar mailSearchFolder
 
@@ -51,11 +51,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| @odata.type | String | O tipo de pasta a ser criada. Defina como "Microsoft. Graph. mailSearchFolder". |
+| @odata.type | Cadeia de caracteres | O tipo de pasta a ser criada. Defina como "Microsoft. Graph. mailSearchFolder". |
 | displayName | String | O nome de exibição da nova pasta.|
-| includeNestedFolders | Boolean | Como a hierarquia da pasta de caixa de correio deve ser percorrida. `true`significa que uma pesquisa profunda deve ser feita enquanto `false` uma pesquisa superficial deve ser realizada. |
-| sourceFolderIDs | Coleção String | As pastas de caixa de correio que devem ser minadas. |
-| filterQuery | String | A consulta OData para filtrar as mensagens. |
+| includeNestedFolders | Booliano | Como a hierarquia da pasta de caixa de correio deve ser percorrida. `true`significa que uma pesquisa profunda deve ser feita enquanto `false` uma pesquisa superficial deve ser realizada. |
+| sourceFolderIDs | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
+| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 
@@ -118,6 +118,14 @@ Content-length: 179
   "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_mailsearchfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -128,6 +136,8 @@ Content-length: 179
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

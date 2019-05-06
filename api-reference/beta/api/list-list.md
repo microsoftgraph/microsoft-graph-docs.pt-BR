@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Lista as listas do SharePoint em um site
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: f7f6863f87814b56ea85b05ac1d96537828cb135
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 24ec21489d0a5100eef02d8f31fb63ba8b5cad7f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333460"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598383"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter a coleção de [listas][] de um [site][].
 
@@ -34,17 +32,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ## <a name="example"></a>Exemplo
 
 #### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ##### <a name="response"></a>Resposta
@@ -80,6 +78,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/enum-lists-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/enum-lists-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Comentários
 
@@ -88,13 +96,14 @@ Para listá-los, inclua `system` na instrução `$select`.
 
 [system]: ../resources/systemfacet.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Lists/Enumerate",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/list-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/list-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

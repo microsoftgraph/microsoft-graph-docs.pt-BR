@@ -4,16 +4,14 @@ description: Atualize as propriedades do objeto **plannerPlan** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f090b9a35d1a99c4fd1ee08067d8b89200625276
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 04b1382a6c6e295831f908165e44d019503efe56
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332291"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33594494"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades do objeto **plannerPlan** .
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/plans/<id>
+PATCH /planner/plans/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -44,7 +42,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|owner|Cadeia de caracteres|[Grupo](../resources/group.md) `id` pelo qual o plano é proprietário. Deve haver um grupo válido para que esse campo possa ser definido. Uma vez definido, isso só pode ser atualizado pelo proprietário.|
+|proprietário|Cadeia de caracteres|[Grupo](../resources/group.md) `id` pelo qual o plano é proprietário. Deve haver um grupo válido para que esse campo possa ser definido. Uma vez definido, isso só pode ser atualizado pelo proprietário.|
 |title|String|Título do plano.|
 
 ## <a name="response"></a>Resposta
@@ -61,7 +59,7 @@ Este é um exemplo da solicitação.
   "name": "update_plannerplan"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/planner/plans/<id>
+PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
 Content-length: 29
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
@@ -97,16 +95,27 @@ Content-length: 357
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_plannerplan-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_plannerplan-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update plannerplan",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannerplan-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannerplan-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

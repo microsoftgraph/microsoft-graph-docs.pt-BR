@@ -4,16 +4,14 @@ description: Copie uma mensagem para uma pasta.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 351bceec181e0fc7e621621a770c5118e843bc29
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d8a5defe751a77a84af9e36a536c5a751d4e056c
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333285"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598037"
 ---
 # <a name="message-copy"></a>message: copy
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copie uma mensagem para uma pasta.
 
@@ -51,18 +49,17 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-|destinationId|Cadeia de caracteres|A ID da pasta de destino ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
+|destinationId|String|A ID da pasta de destino ou um nome de pasta bem conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um recurso [Message](../resources/message.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o recurso [message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 Eis um exemplo de como chamar esta API.
 
 ##### <a name="request"></a>Solicitação
-
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
@@ -70,7 +67,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/messages/{id}/copy
+POST https://graph.microsoft.com/v1.0/me/messages/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -96,8 +93,8 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "2016-10-19T10:37:00Z",
-  "sentDateTime": "2016-10-19T10:37:00Z",
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -107,16 +104,27 @@ Content-length: 248
   "bodyPreview": "bodyPreview-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/message_copy-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/message_copy-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "message: copy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/message-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/message-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

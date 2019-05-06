@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Criar uma nova entrada em uma lista do SharePoint
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 57b054ae0e70b3694faa7051bf7f7d332499401d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a7126a20be81018480267cade3416bd79f7e4d76
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338744"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598166"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Criar um novo item em uma lista
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar um novo [listItem][] em uma [lista][].
 
@@ -33,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -47,7 +45,7 @@ Aqui está um exemplo de como criar um novo item de lista genérica.
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {
@@ -87,19 +85,27 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **Observação:** O objeto Response será truncado para mais clareza. As propriedades padrão serão retornadas da chamada real.
 
 [lista]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
   "tocPath": "ListItem/Create",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->
