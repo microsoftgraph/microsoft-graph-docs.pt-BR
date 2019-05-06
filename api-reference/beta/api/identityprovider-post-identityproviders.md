@@ -2,65 +2,65 @@
 title: Criar identityProvider
 description: Criar um novo identityProvider especificando o nome de exibição, tipo de identityProvider, ID do cliente e o segredo do cliente.
 localization_priority: Normal
-ms.openlocfilehash: 5d9940803ab9a140312c21f21832623eccd77969
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e90d6e3569b51dedf5a0c46c2c8596aeeb9e203d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323836"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592193"
 ---
-# <a name="create-identityprovider"></a><span data-ttu-id="5bf46-103">Criar identityProvider</span><span class="sxs-lookup"><span data-stu-id="5bf46-103">Create identityProvider</span></span>
+# <a name="create-identityprovider"></a><span data-ttu-id="e8e1b-103">Criar identityProvider</span><span class="sxs-lookup"><span data-stu-id="e8e1b-103">Create identityProvider</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5bf46-104">Criar um novo [identityProvider](../resources/identityprovider.md) especificando o nome de exibição, tipo de identityProvider, ID do cliente e o segredo do cliente.</span><span class="sxs-lookup"><span data-stu-id="5bf46-104">Create a new [identityProvider](../resources/identityprovider.md) by specifying display name, identityProvider type, client ID, and client secret.</span></span>
+<span data-ttu-id="e8e1b-104">Criar um novo [identityProvider](../resources/identityprovider.md) especificando o nome de exibição, tipo de identityProvider, ID do cliente e o segredo do cliente.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-104">Create a new [identityProvider](../resources/identityprovider.md) by specifying display name, identityProvider type, client ID, and client secret.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5bf46-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="5bf46-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e8e1b-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e8e1b-105">Permissions</span></span>
 
-<span data-ttu-id="5bf46-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5bf46-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e8e1b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e8e1b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5bf46-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5bf46-108">Permission type</span></span>      | <span data-ttu-id="5bf46-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5bf46-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e8e1b-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e8e1b-108">Permission type</span></span>      | <span data-ttu-id="e8e1b-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e8e1b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5bf46-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5bf46-110">Delegated (work or school account)</span></span>|<span data-ttu-id="5bf46-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5bf46-111">IdentityProvider.ReadWrite.All</span></span>|
-|<span data-ttu-id="5bf46-112">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5bf46-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="5bf46-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5bf46-113">Not supported.</span></span>|
-|<span data-ttu-id="5bf46-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5bf46-114">Application</span></span>|<span data-ttu-id="5bf46-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5bf46-115">Not supported.</span></span>|
+|<span data-ttu-id="e8e1b-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e8e1b-110">Delegated (work or school account)</span></span>|<span data-ttu-id="e8e1b-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8e1b-111">IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="e8e1b-112">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e8e1b-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="e8e1b-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-113">Not supported.</span></span>|
+|<span data-ttu-id="e8e1b-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e8e1b-114">Application</span></span>|<span data-ttu-id="e8e1b-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-115">Not supported.</span></span>|
 
-<span data-ttu-id="5bf46-116">A conta corporativa ou de estudante deve ser um administrador global do locatário.</span><span class="sxs-lookup"><span data-stu-id="5bf46-116">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="e8e1b-116">A conta corporativa ou de estudante deve ser um administrador global do locatário.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-116">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="5bf46-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5bf46-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e8e1b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e8e1b-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /identityProviders
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5bf46-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5bf46-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e8e1b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e8e1b-118">Request headers</span></span>
 
-|<span data-ttu-id="5bf46-119">Nome</span><span class="sxs-lookup"><span data-stu-id="5bf46-119">Name</span></span>|<span data-ttu-id="5bf46-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="5bf46-120">Description</span></span>|
+|<span data-ttu-id="e8e1b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="e8e1b-119">Name</span></span>|<span data-ttu-id="e8e1b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="e8e1b-120">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="5bf46-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="5bf46-121">Authorization</span></span>|<span data-ttu-id="5bf46-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5bf46-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="5bf46-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5bf46-124">Content-Type</span></span>|<span data-ttu-id="5bf46-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5bf46-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="e8e1b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="e8e1b-121">Authorization</span></span>|<span data-ttu-id="e8e1b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="e8e1b-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e8e1b-124">Content-Type</span></span>|<span data-ttu-id="e8e1b-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5bf46-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5bf46-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e8e1b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e8e1b-127">Request body</span></span>
 
-<span data-ttu-id="5bf46-128">No corpo da solicitação, forneça uma representação JSON do objeto [identityProvider](../resources/identityprovider.md).</span><span class="sxs-lookup"><span data-stu-id="5bf46-128">In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) object.</span></span> <span data-ttu-id="5bf46-129">Todas as propriedades listadas na tabela a seguir são necessárias.</span><span class="sxs-lookup"><span data-stu-id="5bf46-129">All the properties listed in the following table are required.</span></span>
+<span data-ttu-id="e8e1b-128">No corpo da solicitação, forneça uma representação JSON do objeto [identityProvider](../resources/identityprovider.md).</span><span class="sxs-lookup"><span data-stu-id="e8e1b-128">In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) object.</span></span> <span data-ttu-id="e8e1b-129">Todas as propriedades listadas na tabela a seguir são necessárias.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-129">All the properties listed in the following table are required.</span></span>
 
-|<span data-ttu-id="5bf46-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5bf46-130">Property</span></span>|<span data-ttu-id="5bf46-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="5bf46-131">Type</span></span>|<span data-ttu-id="5bf46-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="5bf46-132">Description</span></span>|
+|<span data-ttu-id="e8e1b-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e8e1b-130">Property</span></span>|<span data-ttu-id="e8e1b-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="e8e1b-131">Type</span></span>|<span data-ttu-id="e8e1b-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="e8e1b-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5bf46-133">clientId</span><span class="sxs-lookup"><span data-stu-id="5bf46-133">clientId</span></span>|<span data-ttu-id="5bf46-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5bf46-134">String</span></span>|<span data-ttu-id="5bf46-135">O ID do cliente para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="5bf46-135">The client ID for the application.</span></span> <span data-ttu-id="5bf46-136">Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.</span><span class="sxs-lookup"><span data-stu-id="5bf46-136">This is the client ID obtained when registering the application with the identity provider.</span></span>|
-|<span data-ttu-id="5bf46-137">clientSecret</span><span class="sxs-lookup"><span data-stu-id="5bf46-137">clientSecret</span></span>|<span data-ttu-id="5bf46-138">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5bf46-138">String</span></span>|<span data-ttu-id="5bf46-139">O segredo do cliente para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="5bf46-139">The client secret for the application.</span></span> <span data-ttu-id="5bf46-140">Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.</span><span class="sxs-lookup"><span data-stu-id="5bf46-140">This is the client secret obtained when registering the application with the identity provider.</span></span>|
-|<span data-ttu-id="5bf46-141">nome</span><span class="sxs-lookup"><span data-stu-id="5bf46-141">name</span></span>|<span data-ttu-id="5bf46-142">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5bf46-142">String</span></span>|<span data-ttu-id="5bf46-143">O nome de exibição exclusivo do provedor de identidade.</span><span class="sxs-lookup"><span data-stu-id="5bf46-143">The display name of the identity provider.</span></span>|
-|<span data-ttu-id="5bf46-144">tipo</span><span class="sxs-lookup"><span data-stu-id="5bf46-144">type</span></span>|<span data-ttu-id="5bf46-145">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5bf46-145">String</span></span>|<span data-ttu-id="5bf46-146">A identidade do provedor de identidade.</span><span class="sxs-lookup"><span data-stu-id="5bf46-146">The identity provider type.</span></span> <span data-ttu-id="5bf46-147">Deve ser um dos seguintes valores:</span><span class="sxs-lookup"><span data-stu-id="5bf46-147">It must be one of the following values:</span></span> <ul><li/><span data-ttu-id="5bf46-148">Microsoft</span><span class="sxs-lookup"><span data-stu-id="5bf46-148">Microsoft</span></span><li/><span data-ttu-id="5bf46-149">Google</span><span class="sxs-lookup"><span data-stu-id="5bf46-149">Google</span></span><li/><span data-ttu-id="5bf46-150">Amazon</span><span class="sxs-lookup"><span data-stu-id="5bf46-150">Amazon</span></span><li/><span data-ttu-id="5bf46-151">LinkedIn</span><span class="sxs-lookup"><span data-stu-id="5bf46-151">LinkedIn</span></span><li/><span data-ttu-id="5bf46-152">Facebook</span><span class="sxs-lookup"><span data-stu-id="5bf46-152">Facebook</span></span></ul>|
+|<span data-ttu-id="e8e1b-133">clientId</span><span class="sxs-lookup"><span data-stu-id="e8e1b-133">clientId</span></span>|<span data-ttu-id="e8e1b-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e8e1b-134">String</span></span>|<span data-ttu-id="e8e1b-135">O ID do cliente para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-135">The client ID for the application.</span></span> <span data-ttu-id="e8e1b-136">Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-136">This is the client ID obtained when registering the application with the identity provider.</span></span>|
+|<span data-ttu-id="e8e1b-137">clientSecret</span><span class="sxs-lookup"><span data-stu-id="e8e1b-137">clientSecret</span></span>|<span data-ttu-id="e8e1b-138">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e8e1b-138">String</span></span>|<span data-ttu-id="e8e1b-139">O segredo do cliente para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-139">The client secret for the application.</span></span> <span data-ttu-id="e8e1b-140">Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-140">This is the client secret obtained when registering the application with the identity provider.</span></span>|
+|<span data-ttu-id="e8e1b-141">nome</span><span class="sxs-lookup"><span data-stu-id="e8e1b-141">name</span></span>|<span data-ttu-id="e8e1b-142">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e8e1b-142">String</span></span>|<span data-ttu-id="e8e1b-143">O nome de exibição exclusivo do provedor de identidade.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-143">The display name of the identity provider.</span></span>|
+|<span data-ttu-id="e8e1b-144">tipo</span><span class="sxs-lookup"><span data-stu-id="e8e1b-144">type</span></span>|<span data-ttu-id="e8e1b-145">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e8e1b-145">String</span></span>|<span data-ttu-id="e8e1b-146">A identidade do provedor de identidade.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-146">The identity provider type.</span></span> <span data-ttu-id="e8e1b-147">Deve ser um dos seguintes valores:</span><span class="sxs-lookup"><span data-stu-id="e8e1b-147">It must be one of the following values:</span></span> <ul><li/><span data-ttu-id="e8e1b-148">Microsoft</span><span class="sxs-lookup"><span data-stu-id="e8e1b-148">Microsoft</span></span><li/><span data-ttu-id="e8e1b-149">Google</span><span class="sxs-lookup"><span data-stu-id="e8e1b-149">Google</span></span><li/><span data-ttu-id="e8e1b-150">Amazon</span><span class="sxs-lookup"><span data-stu-id="e8e1b-150">Amazon</span></span><li/><span data-ttu-id="e8e1b-151">LinkedIn</span><span class="sxs-lookup"><span data-stu-id="e8e1b-151">LinkedIn</span></span><li/><span data-ttu-id="e8e1b-152">Facebook</span><span class="sxs-lookup"><span data-stu-id="e8e1b-152">Facebook</span></span></ul>|
 
-## <a name="response"></a><span data-ttu-id="5bf46-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="5bf46-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e8e1b-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8e1b-153">Response</span></span>
 
-<span data-ttu-id="5bf46-154">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [identityProvider](../resources/identityprovider.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5bf46-154">If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityprovider.md) object in the response body.</span></span> <span data-ttu-id="5bf46-155">Caso não consiga, um `4xx` erro será retornado com detalhes específicos.</span><span class="sxs-lookup"><span data-stu-id="5bf46-155">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
+<span data-ttu-id="e8e1b-154">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [identityProvider](../resources/identityprovider.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-154">If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityprovider.md) object in the response body.</span></span> <span data-ttu-id="e8e1b-155">Caso não consiga, um `4xx` erro será retornado com detalhes específicos.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-155">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5bf46-156">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5bf46-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e8e1b-156">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e8e1b-156">Example</span></span>
 
-<span data-ttu-id="5bf46-157">O exemplo a seguir cria um **identityProvider**.</span><span class="sxs-lookup"><span data-stu-id="5bf46-157">The following example creates an **identityProvider**.</span></span>
+<span data-ttu-id="e8e1b-157">O exemplo a seguir cria um **identityProvider**.</span><span class="sxs-lookup"><span data-stu-id="e8e1b-157">The following example creates an **identityProvider**.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="5bf46-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5bf46-158">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e8e1b-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e8e1b-158">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -78,7 +78,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="5bf46-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="5bf46-159">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e8e1b-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8e1b-159">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -97,6 +97,16 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="e8e1b-160">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="e8e1b-160">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="e8e1b-161">Basic</span><span class="sxs-lookup"><span data-stu-id="e8e1b-161">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_identityprovider_from_identityproviders-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e8e1b-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e8e1b-162">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_identityprovider_from_identityproviders-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -106,6 +116,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/identityprovider-post-identityproviders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/identityprovider-post-identityproviders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
