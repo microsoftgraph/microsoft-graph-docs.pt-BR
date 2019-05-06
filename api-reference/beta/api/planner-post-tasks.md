@@ -1,59 +1,57 @@
 ---
 title: Criar plannerTask
 description: Use essa API para criar um novo **plannerTask**.
-localization_priority: Normal
+localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 400f40540370580b3d3af7a94368cdc9582d703e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e5c3c1c9fec96e7f72ab3c7aa61fe574d1f3319a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332522"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595509"
 ---
-# <a name="create-plannertask"></a><span data-ttu-id="3372c-103">Criar plannerTask</span><span class="sxs-lookup"><span data-stu-id="3372c-103">Create plannerTask</span></span>
+# <a name="create-plannertask"></a><span data-ttu-id="53eac-103">Criar plannerTask</span><span class="sxs-lookup"><span data-stu-id="53eac-103">Create plannerTask</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="53eac-104">Use essa API para criar um novo **plannerTask**.</span><span class="sxs-lookup"><span data-stu-id="53eac-104">Use this API to create a new **plannerTask**.</span></span>
+## <a name="permissions"></a><span data-ttu-id="53eac-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="53eac-105">Permissions</span></span>
+<span data-ttu-id="53eac-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="53eac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="3372c-104">Use essa API para criar um novo **plannerTask**.</span><span class="sxs-lookup"><span data-stu-id="3372c-104">Use this API to create a new **plannerTask**.</span></span>
-## <a name="permissions"></a><span data-ttu-id="3372c-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="3372c-105">Permissions</span></span>
-<span data-ttu-id="3372c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3372c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="3372c-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3372c-108">Permission type</span></span>      | <span data-ttu-id="3372c-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3372c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="53eac-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="53eac-108">Permission type</span></span>      | <span data-ttu-id="53eac-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="53eac-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3372c-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3372c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3372c-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3372c-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3372c-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3372c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3372c-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3372c-113">Not supported.</span></span>    |
-|<span data-ttu-id="3372c-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3372c-114">Application</span></span> | <span data-ttu-id="3372c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3372c-115">Not supported.</span></span> |
+|<span data-ttu-id="53eac-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="53eac-110">Delegated (work or school account)</span></span> | <span data-ttu-id="53eac-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53eac-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="53eac-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="53eac-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="53eac-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="53eac-113">Not supported.</span></span>    |
+|<span data-ttu-id="53eac-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="53eac-114">Application</span></span> | <span data-ttu-id="53eac-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="53eac-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3372c-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3372c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="53eac-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="53eac-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/tasks
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="3372c-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3372c-117">Request headers</span></span>
-| <span data-ttu-id="3372c-118">Nome</span><span class="sxs-lookup"><span data-stu-id="3372c-118">Name</span></span>       | <span data-ttu-id="3372c-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="3372c-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="53eac-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="53eac-117">Request headers</span></span>
+| <span data-ttu-id="53eac-118">Nome</span><span class="sxs-lookup"><span data-stu-id="53eac-118">Name</span></span>       | <span data-ttu-id="53eac-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="53eac-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="3372c-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="3372c-120">Authorization</span></span>  | <span data-ttu-id="3372c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3372c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="53eac-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="53eac-120">Authorization</span></span>  | <span data-ttu-id="53eac-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="53eac-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3372c-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3372c-123">Request body</span></span>
-<span data-ttu-id="3372c-p103">No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md). A propriedade planId do **plannerTask** deve ser definida como a id de um objeto [plannerPlan](../resources/plannerplan.md) existente.</span><span class="sxs-lookup"><span data-stu-id="3372c-p103">In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object. The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's id.</span></span>
+## <a name="request-body"></a><span data-ttu-id="53eac-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="53eac-123">Request body</span></span>
+<span data-ttu-id="53eac-p103">No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md). A propriedade planId do **plannerTask** deve ser definida como a id de um objeto [plannerPlan](../resources/plannerplan.md) existente.</span><span class="sxs-lookup"><span data-stu-id="53eac-p103">In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object. The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's id.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3372c-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="3372c-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="53eac-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="53eac-126">Response</span></span>
 
-<span data-ttu-id="3372c-127">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [plannerTask](../resources/plannertask.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3372c-127">If successful, this method returns `201 Created` response code and [plannerTask](../resources/plannertask.md) object in the response body.</span></span>
+<span data-ttu-id="53eac-127">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [plannerTask](../resources/plannertask.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="53eac-127">If successful, this method returns `201 Created` response code and [plannerTask](../resources/plannertask.md) object in the response body.</span></span>
 
-<span data-ttu-id="3372c-p104">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="3372c-p104">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="53eac-p104">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="53eac-p104">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="3372c-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3372c-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3372c-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3372c-132">Request</span></span>
-<span data-ttu-id="3372c-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3372c-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="53eac-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="53eac-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="53eac-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="53eac-132">Request</span></span>
+<span data-ttu-id="53eac-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="53eac-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_plannertask_from_planner"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/planner/tasks
+POST https://graph.microsoft.com/v1.0/planner/tasks
 Content-type: application/json
 Content-length: 285
 
@@ -69,9 +67,9 @@ Content-length: 285
   },
 }
 ```
-<span data-ttu-id="3372c-134">No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md).</span><span class="sxs-lookup"><span data-stu-id="3372c-134">In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="3372c-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="3372c-135">Response</span></span>
-<span data-ttu-id="3372c-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3372c-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="53eac-134">No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md).</span><span class="sxs-lookup"><span data-stu-id="53eac-134">In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="53eac-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="53eac-135">Response</span></span>
+<span data-ttu-id="53eac-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="53eac-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,16 +106,24 @@ Content-length: 677
   "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="53eac-139">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="53eac-139">SDK sample code</span></span>
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="53eac-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53eac-140">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_plannertask_from_planner-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create plannerTask",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/planner-post-tasks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
