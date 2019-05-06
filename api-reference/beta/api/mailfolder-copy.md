@@ -4,16 +4,14 @@ description: Copie uma mailFolder e seu conteúdo para outra mailFolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6b1fb9b0b3d3891f33020458ffb5b140f9bf42c6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c19903977cb90b119e21fbc4cad944afd87ea1fc
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333383"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598096"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copie uma mailFolder e seu conteúdo para outra mailFolder.
 
@@ -37,7 +35,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-
 | Cabeçalho | Valor |
 |:-------|:------|
 | Autorização | `Bearer {token}`. Obrigatório. |
@@ -49,7 +46,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-|destinationId|Cadeia de caracteres|A ID da pasta ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
+|destinationId|String|A ID da pasta ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Resposta
 
@@ -60,7 +57,6 @@ Se bem-sucedido, este método retorna `200 OK` um código de resposta e um recur
 Eis um exemplo de como chamar esta API.
 
 ##### <a name="request"></a>Solicitação
-
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
@@ -68,7 +64,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -82,7 +78,6 @@ Content-length: 44
 Veja a seguir um exemplo da resposta.
 
 > **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,16 +98,27 @@ Content-length: 179
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/mailfolder_copy-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/mailfolder_copy-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
