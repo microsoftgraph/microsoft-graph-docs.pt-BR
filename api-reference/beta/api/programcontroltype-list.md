@@ -2,12 +2,12 @@
 title: Listar programControlTypes
 description: No recurso de revisões do Azure AD Access, liste todos os objetos programControlType.
 localization_priority: Normal
-ms.openlocfilehash: 11e66d39587ace59d635c5e5d092673c90684adb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fd9317b5a40c9587b91f0fdd4a9e1a9cfd8f2933
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337188"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33610618"
 ---
 # <a name="list-programcontroltypes"></a>Listar programControlTypes
 
@@ -21,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl. Read. All, ProgramControl. ReadWrite. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | ProgramControl. Read. All ', ProgramControl. ReadWrite. All  |
+|Application                            | ProgramControl. Read. All ', ProgramControl. ReadWrite. All  |
 
 O usuário conectado também deve estar em uma função de diretório que permite que ele leia um programa.
 
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/beta/programControlTypes
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,6 +86,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_programcontroltype-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_programcontroltype-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>Confira também
 
@@ -101,6 +111,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontroltype-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/programcontroltype-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

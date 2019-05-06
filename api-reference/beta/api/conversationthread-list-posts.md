@@ -4,16 +4,14 @@ description: 'Obtenha as postagens do thread especificado. Você pode especifica
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 3ebea2708c4d76c4d8f545da380a2d11ccd89b94
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4a7f9e02e9ee8677e070f5eaebe6e09568bcba36
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33326098"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591486"
 ---
 # <a name="list-posts"></a>Listar postagens
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as postagens do thread especificado. Você pode especificar a conversa pai e o thread ou apenas o thread, sem fazer referência à conversa pai.
 
@@ -24,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group. ReadWrite. All, Group. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group. ReadWrite. All, Group. Read. All |
+|Application | Group. ReadWrite. All, Group. Read. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +52,7 @@ Este é um exemplo da solicitação.
   "name": "get_posts"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts
+GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -67,53 +65,55 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 523
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('0d75b8dc-c42d-44dd-890a-751a99c0589f')/threads('AAQkAD8EJUmcWwTJi06Cew%3D%3D')/posts",
-    "value":[
-        {
-            "@odata.etag":"W/\"CQAAABYAAAC/3QURwysWS6IJYYw5exv4AAAAAAlK\"",
-            "id":"AQMkADgAAAIJbQAAAA==",
-            "createdDateTime":"2018-01-11T17:36:17Z",
-            "lastModifiedDateTime":"2018-01-11T17:36:17Z",
-            "importance": "normal",
-            "changeKey":"CQAAABYAAAC/3QURwysWS6IJYYw5exv4AAAAAAlK",
-            "categories":[
-
-            ],
-            "receivedDateTime":"2018-01-11T17:36:17Z",
-            "hasAttachments":false,
-            "body":{
-                "contentType":"html",
-                "content":"<html><body></body></html>"
-            },
-            "from":{
-                "emailAddress":{
-                    "name":"Marketing",
-                    "address":"Marketing@M365B489948.onmicrosoft.com"
-                }
-            },
-            "sender":{
-                "emailAddress":{
-                    "name":"Marketing",
-                    "address":"Marketing@M365B489948.onmicrosoft.com"
-                }
-            }
+  "value": [
+    {
+      "body": {
+        "contentType": "",
+        "content": "content-value"
+      },
+      "receivedDateTime": "datetime-value",
+      "hasAttachments": true,
+      "from": {
+        "emailAddress": {
+          "name": "name-value",
+          "address": "address-value"
         }
-    ]
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "name-value",
+          "address": "address-value"
+        }
+      },
+      "conversationThreadId": "conversationThreadId-value"
+    }
+  ]
 }
-
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_posts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_posts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List posts",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversationthread-list-posts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversationthread-list-posts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

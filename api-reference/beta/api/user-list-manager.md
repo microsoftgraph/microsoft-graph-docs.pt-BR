@@ -4,12 +4,12 @@ description: Obtenha o gerente do usuário. Retorna o usuário ou contato atribu
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ec0e150cbd6f91a50e0a0d4fb28b54c02b67c6c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f5f91ec297c948603aeef3a0e247b7236ecd7356
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329862"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33609555"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -28,6 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -43,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

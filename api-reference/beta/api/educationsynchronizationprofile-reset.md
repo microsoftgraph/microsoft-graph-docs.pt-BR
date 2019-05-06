@@ -4,12 +4,12 @@ description: Redefinir a sincronização de um perfil de sincronização de dado
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ccf257a2fc479f87d1e0b6d2b6414d0e3431fcb6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d1bae89181f496bac3fc89b50b76e6f57f1fb8a1
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322290"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587075"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Redefinir a sincronização em um educationSynchronizationProfile
 
@@ -66,3 +66,26 @@ Não há corpo de resposta.
 ```
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_reset-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_reset-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-reset.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-reset.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

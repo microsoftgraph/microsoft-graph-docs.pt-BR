@@ -4,12 +4,12 @@ description: Use essa API para criar uma nova configuração, com base nos model
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 097fdc26dd78986e6a869a26e214d073db03f98b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dc73029a66dd1ee0fffb4e99d0dd290870de9b99
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325818"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33590387"
 ---
 # <a name="create-a-directory-setting"></a>Criar uma configuração de diretório
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ POST /groups/{id}/settings
 | Autorização  | {token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .  No enTanto, o nome de exibição da configuração será definido com base no nome do modelo de configurações referenciado.
+No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .  No entanto, o nome de exibição da configuração será definido com base no nome do modelo de configurações referenciado.
 
 ## <a name="response"></a>Resposta
 
@@ -97,6 +97,16 @@ Content-length: 244
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -107,6 +117,9 @@ Content-length: 244
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/directorysetting-post-settings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directorysetting-post-settings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

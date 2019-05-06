@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto chartlineformat.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 860b0aaf39211131a2ea346d9cbe95749631e17a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c6cb35240599742538e5c388d8b7b1b3e1c6c40f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327758"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33584449"
 ---
 # <a name="update-chartlineformat"></a>Atualizar chartlineformat
 
@@ -80,6 +80,16 @@ Content-length: 28
   "color": "color-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_chartlineformat-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_chartlineformat-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -90,6 +100,9 @@ Content-length: 28
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartlineformat-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chartlineformat-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

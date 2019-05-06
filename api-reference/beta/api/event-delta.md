@@ -1,15 +1,15 @@
 ---
 title: 'evento: delta'
-description: Obter um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos)
+description: Obtém um conjunto de eventos que foram adicionados, excluídos ou atualizado em um**calendarView** (um intervalo de eventos)
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9ab9fce0294bb5c496c8d56c42914f185b9daf32
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ec03f37346d67c7c52128d8db146882a06d1e3f5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325072"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587245"
 ---
 # <a name="event-delta"></a>evento: delta
 
@@ -58,7 +58,7 @@ Quando você faz uma consulta delta em um modo de exibição de calendário, esp
 | Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
-| Preferir | cadeia de caracteres | {Fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
+| Preferir | string | {Fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
 
 ## <a name="response"></a>Resposta
 
@@ -115,6 +115,16 @@ Content-length: 359
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/event_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/event_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>Confira também
 
@@ -130,6 +140,9 @@ Content-length: 359
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/event-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

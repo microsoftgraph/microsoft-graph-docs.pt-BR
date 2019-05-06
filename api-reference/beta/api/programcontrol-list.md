@@ -2,12 +2,12 @@
 title: Listar programControls
 description: No recurso de revisões do Azure AD Access, liste todos os objetos programControl em todos os programas no locatário.
 localization_priority: Normal
-ms.openlocfilehash: bfc224c0897b9e9edba2114bac4d88e06ca0720d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4b11eb6e7c35e678159a15af0938c8f07e8f02e0
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332059"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33610753"
 ---
 # <a name="list-programcontrols"></a>Listar programControls
 
@@ -21,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl. Read. All, ProgramControl. ReadWrite. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | ProgramControl. Read. All, ProgramControl. ReadWrite. All  |
+|Application                            | ProgramControl. Read. All, ProgramControl. ReadWrite. All  |
 
 O usuário conectado também deve estar em uma função de diretório que permite que ele leia um programa.
 
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/beta/programControls
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,6 +80,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_programControl-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_programControl-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>Confira também
 
@@ -95,6 +105,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/programcontrol-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

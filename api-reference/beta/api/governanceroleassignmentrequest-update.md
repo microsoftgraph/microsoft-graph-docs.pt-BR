@@ -2,12 +2,12 @@
 title: Atualizar governanceRoleAssignmentRequests
 description: Permitir que os administradores atualizem suas`AdminApproved` decisões `AdminDenied`(ou) no governanceRoleAssignmentRequests que estão no `PendingAdminDecision`status de.
 localization_priority: Normal
-ms.openlocfilehash: e18793f1267047ca4e8e2fed9d03cb8e21c7c289
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a20e583d701dca988b935b21e1d5874efcff6415
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329571"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593488"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governanceRoleAssignmentRequests
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
+|Application | PrivilegedAccess. ReadWrite. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,10 +42,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Parâmetros      |Tipo                   |Obrigatório |Descrição|
 |:-------------|:----------------------|:--------|:----------|
-|motivos        |String                 |✓        |O motivo fornecido pelo administrador para sua decisão.|
-|sobre        |String                 |✓        |A decisão de administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied`.|
-|futebol      |[governanceSchedule](../resources/governanceschedule.md)|        | O agendamento da solicitação de atribuição de função. Para o status `AdminApproved`de, é necessário.|
-|assignmentstate      |String|         | O estado da atribuição e os valores podem ser `Eligible` ou. `Active` Para a decisão `AdminApproved`de, é necessário. |
+|motivos        |Cadeia de caracteres                 |✓        |O motivo fornecido pelo administrador para sua decisão.|
+|sobre        |Cadeia de caracteres                 |✓        |A decisão de administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied`.|
+|Cronograma      |[governanceSchedule](../resources/governanceschedule.md)|        | O agendamento da solicitação de atribuição de função. Para o status `AdminApproved`de, é necessário.|
+|assignmentstate      |Cadeia de caracteres|         | O estado da atribuição e os valores podem ser `Eligible` ou. `Active` Para a decisão `AdminApproved`de, é necessário. |
 ### <a name="response"></a>Resposta
 Este método só pode ser aplicado a solicitações que estão no status de `PendingAdminDecision`.
 
@@ -73,6 +73,16 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
   "assignmentState": "Eligible"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="response"></a>Resposta
 <!-- {
@@ -93,6 +103,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

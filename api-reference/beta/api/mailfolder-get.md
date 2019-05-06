@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos de um objeto da pasta
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7aefadcd0cb7a82123bcbc7f776c5a0e64f45652
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1934b9b124747e16a7c086a697713ed2f0a6116a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333362"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598542"
 ---
 # <a name="get-mailfolder"></a>Obter mailFolder
 
@@ -17,7 +17,7 @@ ms.locfileid: "33333362"
 
 Recupere as propriedades e os relacionamentos de um objeto da pasta de mensagens.
 
-Há dois cenários em que um aplicativo pode obter a pasta de email de outro usuário:
+Existem dois cenários em que um aplicativo pode receber a pasta de email de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
 * Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
@@ -104,6 +104,16 @@ Content-type: application/json
   "wellKnownName": "inbox"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_mailfolder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_mailfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-get-a-mail-search-folder"></a>Exemplo 2: obter uma pasta de pesquisa de email
 
@@ -153,6 +163,16 @@ Content-type: application/json
   "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_mailSearchfolder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_mailSearchfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -163,6 +183,11 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

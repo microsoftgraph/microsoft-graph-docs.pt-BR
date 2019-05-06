@@ -1,15 +1,15 @@
 ---
 title: Adicionar anexo
-description: Use esta API para adicionar um anexo a um evento. Como não há
+description: Use esta API para adicionar um anexo a um evento. Desde lá
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 583959b227afccaf52b5951aa4270523bccd1dc1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 238afc378ac7e49cb39a07308c8b1e176cbd11ae
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324335"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586711"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -106,6 +106,14 @@ Content-Length: 735
     "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_file_attachment_from_event-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="example-item-attachment"></a>Exemplo (anexo de item)
 
@@ -171,6 +179,14 @@ Content-length: 162
     "isInline":false
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_item_attachment_from_event-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="example-reference-attachment"></a>Exemplo (anexo de referência)
 
@@ -228,6 +244,14 @@ HTTP 201 Created
   "isFolder": true
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_reference_attachment_from_event-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -239,6 +263,9 @@ HTTP 201 Created
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: create_file_attachment_from_event/contentBytes:\r\n      Expected type Binary but actual was String. Property: contentBytes, actual value: 'bWFjIGFuZCBjaGVlc2UgdG9kYXk='"
   ]
 }

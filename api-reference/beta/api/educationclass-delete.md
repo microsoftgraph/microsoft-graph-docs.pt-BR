@@ -4,16 +4,14 @@ description: Exclua uma aula. Como uma aula também é um grupo universal, exclu
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 722e7986a32670a764f1dd11b2875194a1c5a257
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b918b97dfc45af79f0df9708889f4fc763816023
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324962"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587391"
 ---
 # <a name="delete-educationclass"></a>Excluir educationClass
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclua uma aula. Como uma aula também é um grupo universal, excluir uma aula exclui o grupo.
 
@@ -24,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +50,7 @@ Este é um exemplo de solicitação.
   "name": "delete_educationclass"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11022
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -64,16 +62,27 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_educationclass-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_educationclass-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete educationClass",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationclass-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

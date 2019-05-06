@@ -4,12 +4,12 @@ description: Excluir um perfil de sincronização de dados da escola no locatár
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 479ba39101e22b5183880246b5a04b95fab0f2d4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5f786bf9c36b09aae4a26d3de317d09d1376fb35
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322262"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587032"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Excluir um educationSynchronizationProfile
 
@@ -62,3 +62,24 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_synchronizationProfile-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

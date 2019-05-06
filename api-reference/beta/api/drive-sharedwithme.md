@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar arquivos compartilhados comigo
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: f6183ec0f786f89f8a0714553c844db798f6a4d1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 59b626acefc125870412b5c43507fc4e476762d6
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325426"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589737"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Listar itens compartilhados com o usuário conectado
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma coleção de recursos [DriveItem](../resources/driveitem.md) que foram compartilhados com o proprietário de [Drive](../resources/drive.md).
 
@@ -33,7 +31,7 @@ Além disso, sem uma das permissões **All**, os itens compartilhados retornados
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/sharedWithMe
@@ -80,6 +78,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/shared-with-me-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/shared-with-me-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Comentários
 
@@ -91,13 +99,14 @@ DriveItems retornados da ação **sharedWithMe** sempre incluirão a faceta [**r
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List the items shared with the owner of a drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
   "tocPath": "Sharing/Shared with me",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/drive-sharedwithme.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/drive-sharedwithme.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

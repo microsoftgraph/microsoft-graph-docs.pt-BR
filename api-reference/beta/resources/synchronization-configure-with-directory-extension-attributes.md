@@ -2,12 +2,12 @@
 title: Configurar a sincronização com atributos de extensão de diretório
 description: 'Você pode personalizar o esquema de sincronização para incluir os atributos de extensão de diretório do Azure Active Directory (Azure AD). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para popular o valor de User. CommunityNickname no Salesforce. Neste cenário, você tem o Azure AD Connect configurado para provisionar um número de atributos de extensão de diretório do Windows Server Active Directory no local para o Azure AD. '
 localization_priority: Normal
-ms.openlocfilehash: 9ffa262a6905c193c6e042663accb4089d30d2d4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 439d70ff4e42513b465b80719be34989c97a810d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345618"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33620908"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com atributos de extensão de diretório
 
@@ -193,6 +193,16 @@ Content-Type: application/json
         }]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>Adicionar uma definição para o atributo de extensão de diretório e um mapeamento entre os atributos
 
@@ -206,7 +216,7 @@ Use um editor de texto sem formatação de sua escolha (por exemplo, [bloco de n
 2. Adicione um [mapeamento de atributos](synchronization-attributemapping.md) entre Extension_9d98asdfl15980a_Nickname e CommunityNickname.
 
     - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure ad como diretório de origem e Salesforce.com como o diretório de`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`destino ().
-    - Nos objectMappings da regra, encontre o mapeamento entre usuários ( [](synchronization-objectmapping.md) `"sourceObjectName": "User",   "targetObjectName": "User"`).
+    - Nos objectmappings da regra, encontre o mapeamento entre usuários ( [](synchronization-objectmapping.md) `"sourceObjectName": "User",   "targetObjectName": "User"`).
     - Na matriz [attributeMappings](synchronization-attributemapping.md) do objectmapping ****, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
 
     ```json
@@ -274,3 +284,16 @@ HTTP/1.1 201 No Content
 ```
 
 Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a reprocessar todas as contas em seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get the synchronization schema",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

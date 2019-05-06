@@ -1,21 +1,19 @@
 ---
 title: Criar thread
-description: Crie um novo thread na conversa especificada.
+description: 'Crie um novo thread na conversa especificada. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f4b939758906da1814ee4ffc2a722427bf4e7f6e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 63a2eb54ebeaaeaf0aabfddb4aa8fe7caeb0854e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33326678"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591150"
 ---
 # <a name="create-thread"></a>Criar thread
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Crie um novo thread na conversa especificada.
+Crie um novo thread na conversa especificada. 
 
 Um thread e uma postagem são criados conforme especificado. Use [responder ao thread](conversationthread-reply.md) para incluir postagens adicionais no thread. Ou, se receber a ID de postagem, você também poderá [responder](post-reply.md) a essa postagem no thread.
 
@@ -55,7 +53,7 @@ Este é um exemplo da solicitação.
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
+POST https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
@@ -71,7 +69,7 @@ Content-type: application/json
 No corpo da solicitação, forneça uma representação JSON do objeto [ConversationThread](../resources/conversationthread.md).
 ##### <a name="response"></a>Resposta
 
-Se for bem-sucedido, este método retornará um código de resposta `201 Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta.
+Se for bem-sucedido, este método retornará um código de resposta `201 Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,16 +84,27 @@ Content-length: 346
   "id": "thread-id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

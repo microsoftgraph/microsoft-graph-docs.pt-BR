@@ -1,15 +1,15 @@
 ---
 title: Obter evento
-description: Obtenha as propriedades e as relações do objeto event especificado.
+description: Obtenha as propriedades e relacionamentos do objeto de evento especificado.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a6fff3bff03e90a31144bea18fa072ac79c80001
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f457c3392bda3d74c42f4d2340a088c00f2ccdb1
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325164"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587607"
 ---
 # <a name="get-event"></a>Obter evento
 
@@ -17,15 +17,15 @@ ms.locfileid: "33325164"
 
 Obtenha as propriedades e as relações do objeto [event](../resources/event.md) especificado.
 
-Há dois cenários em que um aplicativo pode obter um evento no calendário de outro usuário:
+Existem dois cenários em que um aplicativo pode obter um evento no calendário de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo ou
-* Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
 Como o recurso **event** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **event**.
 
 
-### <a name="support-various-time-zones"></a>Suporte a vários fusos horários
+### <a name="support-various-time-zones"></a>Suporte para vários fusos horários
 
 Para todas as operações GET que retornam eventos, você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar o fuso horário para as horas de início e de término do evento na resposta. 
 
@@ -176,6 +176,16 @@ Content-length: 1928
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_event-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_event-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-2"></a>Solicitação 2
 O segundo exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter a propriedade **Body** do evento especificado no formato de texto.
@@ -217,6 +227,16 @@ Content-length: 636
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_event_in_text-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_event_in_text-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### <a name="request-3"></a>Solicitação 3
@@ -332,6 +352,16 @@ Content-length: 1992
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_event_multiple_locations-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_event_multiple_locations-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>Confira também
 
@@ -349,6 +379,13 @@ Content-length: 1992
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

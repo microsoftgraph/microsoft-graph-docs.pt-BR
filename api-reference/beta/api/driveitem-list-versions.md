@@ -3,16 +3,14 @@ title: Listando versões de um DriveItem
 description: O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3b9078da144bbee02a7f97046b6cce3fa8a84154
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5f1e53326fced074bddacbaa7501ed4ed2986a68
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325244"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588310"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Listando versões de um DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.
 Dependendo do serviço e da configuração, uma nova versão pode ser criada para cada edição, sempre que o arquivo for salvo, manualmente ou nunca.
@@ -53,7 +51,7 @@ Este exemplo recupera as versões de um arquivo na unidade do usuário atual.
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions
@@ -108,6 +106,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Comentários
 
@@ -116,13 +124,14 @@ O OneDrive não preserva os metadados completos de versões anteriores de um arq
 Quando seu aplicativo recupera a lista de versões disponíveis de um arquivo, um recurso [DriveItemVersion](../resources/driveitemversion.md) é retornado e fornece as informações disponíveis sobre a versão específica.
 
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
   "tocPath": "Items/Version history",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

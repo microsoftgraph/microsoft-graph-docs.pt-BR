@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Criar uma nova pasta
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 1efd0150a1444f312c047a4aea30091928bb6cd5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 820c95aa5cd331c91a773fd37c1da56132361a97
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325267"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588273"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Criar uma nova pasta em uma unidade
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar uma nova pasta ou [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) com um item pai ou caminho especificado.
 
@@ -107,6 +105,14 @@ Content-Type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-folder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-response"></a>Resposta de erro
 
@@ -116,13 +122,13 @@ Para mais informações sobre como os erros são retornados veja [Respostas de E
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a folder item in a drive.",
   "keywords": "create,folder,new item",
   "section": "documentation",
   "tocPath": "Items/Create folder",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

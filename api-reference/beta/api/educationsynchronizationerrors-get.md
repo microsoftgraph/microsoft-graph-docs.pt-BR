@@ -4,12 +4,12 @@ description: 'Obtenha os erros gerados durante a validação e/ou durante uma si
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 48afa5ce7efc267eedc16449324980e527409dc9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 322eeb409584020dfa15c18be4c264cacd8a23cb
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464269"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587155"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-----------|:------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration. Read, EduAdministration. ReadWrite |
 |Delegado (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo| EduAdministration. Read. All, EduAdministration. ReadWrite. All |
+|Application| EduAdministration. Read. All, EduAdministration. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -99,3 +99,24 @@ Content-length: 1568
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_error-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationerrors-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationsynchronizationerrors-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -4,16 +4,14 @@ description: "  administradores de grupo representam os professores da turma. Se
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: d9aa8491ddbb0e81ae858d4dd0785afe40cd08bb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9a9d3629b58a1521d61b1f7c527a19d9ead45087
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324936"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587813"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma aula do sistema. Uma aula é um grupo universal com uma propriedade especial que indica ao sistema que o grupo é uma aula. Os membros do grupo representam os alunos; os administradores do grupo representam os professores da aula. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros.
 
@@ -51,7 +49,7 @@ Este é um exemplo da solicitação.
   "name": "get_educationclass"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/11023
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -85,16 +83,27 @@ Content-length: 224
   "mailNickname": "fineartschool.net "
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_educationclass-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationclass-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get educationClass",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

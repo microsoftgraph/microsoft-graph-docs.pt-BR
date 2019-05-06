@@ -4,12 +4,12 @@ description: Atualize as propriedades de uma aula.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e492a82636a0772d5d14b232ecdaa514abb03ed3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3cb386507265b6c6315ad222f74fc6655f549f11
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324820"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587858"
 ---
 # <a name="update-educationclass-properties"></a>Atualizar propriedades educationclass
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|String| Descrição da aula.|
-|displayName|String| Nome da aula.|
+|displayName|Cadeia de caracteres| Nome da aula.|
 |mailNickname|Cadeia de caracteres| Alias de email para envio de email a todos os usuários, se esse recurso estiver habilitado. |
 <!-- Please verify the revised description here. -->
 |classCode|Cadeia de caracteres| Código de aula usado pela escola.| |externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. | |externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.| |externalSource|cadeia de caracteres| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
@@ -99,6 +99,16 @@ Content-length: 224
   "mailNickname": "Fabrikam"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationclass-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationclass-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -109,6 +119,9 @@ Content-length: 224
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationclass-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationclass-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

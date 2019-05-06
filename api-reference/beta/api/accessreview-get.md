@@ -4,12 +4,12 @@ description: 'No recurso de revisões do Azure AD Access, recupere um objeto acc
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 263749521e199079dc8b4d9b352eb9c2cb5adf35
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a6df4461144f6823378ae16b93ff68dbee4c2413
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323642"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586270"
 ---
 # <a name="get-accessreview"></a>Obter accessReview
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All  |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview. Read. All  |
+|Application                            | AccessReview.Read.All  |
 
 Para chamar essa API, o usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access ou que o usuário possa ser atribuído como um revisor na revisão do Access.  Para obter mais detalhes, consulte a função e os requisitos de permissão para [revisões do Access](../resources/accessreviews-root.md).
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,6 +100,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_accessReview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_accessReview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>Confira também
 
@@ -119,6 +129,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

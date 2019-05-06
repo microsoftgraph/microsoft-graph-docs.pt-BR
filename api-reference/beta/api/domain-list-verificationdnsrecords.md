@@ -4,16 +4,14 @@ description: Recupere uma lista de objetos domainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 147c2ba3c5bd01d3824ee1c32b60efd3ecda975d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ce414fe23c00e0b4c1254bab968fff1418d881e0
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325831"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589269"
 ---
 # <a name="list-verificationdnsrecords"></a>Listar verificationDnsRecords
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos [domainDnsRecord](../resources/domaindnsrecord.md) .
 
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Domain.ReadWrite.All |
+|Application | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -67,7 +65,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>Resposta
@@ -97,16 +95,27 @@ Content-length: 220
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_verificationdnsrecords-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_verificationdnsrecords-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List verificationDnsRecords",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/domain-list-verificationdnsrecords.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/domain-list-verificationdnsrecords.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

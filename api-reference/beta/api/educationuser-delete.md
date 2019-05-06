@@ -4,16 +4,14 @@ description: Exclua um usuário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7028ee71cbbd0b4166ea046a2ceae2f156115ddf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 703ecc41cead8039ea3609de7afec558d6ae5b87
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322985"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587098"
 ---
 # <a name="delete-educationuser"></a>Excluir educationUser
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclua um usuário.
 
@@ -25,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.ReadWrite.All |
+|Application | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +50,7 @@ Este é um exemplo da solicitação.
   "name": "delete_educationuser"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/users/13019
+DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -63,16 +61,27 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_educationuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_educationuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete educationUser",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationuser-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationuser-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

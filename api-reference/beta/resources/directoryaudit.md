@@ -1,19 +1,21 @@
 ---
 title: Tipo de recurso directoryObject
-description: Esse recurso representa seu conjunto e os itens de auditoria do diretório
+description: Descreve o recurso directoryAudit (entidade) da API do Microsoft Graph (REST), que ajuda as atividades de auditoria de diretório (locatário) (versão beta).
 author: lleonard-msft
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 4511c2f34a12298651f690deeac713ff3caa3006
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543223"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611285"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
-Esse recurso representa seu conjunto e os itens de auditoria do diretório
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Representa os itens de auditoria de diretório e sua coleção.
 
 ## <a name="methods"></a>Métodos
 
@@ -27,7 +29,7 @@ Esse recurso representa seu conjunto e os itens de auditoria do diretório
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Indica a data e hora que a atividade foi executada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|activityDisplayName|Cadeia de caracteres|Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades registradas, veja [lista de atividades do Azure Ad](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
+|activityDisplayName|Cadeia de caracteres|Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades registradas, veja [lista de atividades do Azure Ad](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
 |additionalDetails|Coleção [KeyValue](keyvalue.md)|Indica detalhes adicionais sobre a atividade.|
 |category|Cadeia de caracteres|Indica qual categoria de recurso direcionada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)|
 |correlationId|GUID|Indica uma ID exclusiva que ajuda correlacionar atividades que englobam vários serviços. Pode ser usado para os logs de serviços de rastreamento.|

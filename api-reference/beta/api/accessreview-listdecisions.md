@@ -4,12 +4,12 @@ description: No recurso de revisões do Azure AD Access, recupere as decisões d
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fee4b4adc4bc4e33964575976c67cfeaa077a34c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ef1db408a4b47928e86f47f30588a8e09f98dad7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323720"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586198"
 ---
 # <a name="list-accessreview-decisions"></a>Listar decisões accessReview
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview. Read. All |
+|Application                            | AccessReview.Read.All |
 
  O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,6 +81,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>Confira também
 
@@ -88,10 +98,10 @@ Content-type: application/json
 |:---------------|:--------|:----------|
 |[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão do Access. |
 |[Listar minhas decisões do accessReview](accessreview-listmydecisions.md) |        coleção [accessReviewDecision](../resources/accessreviewdecision.md)|    Como revisor, obtenha as minhas decisões de um accessReview.|
-|[Enviar lembrete accessReview](accessreview-sendreminder.md) |       Nenhum   |   Envie um lembrete para os revisores de um accessReview. |
-|[Parar accessReview](accessreview-stop.md) |        Nenhum   |   Parar um accessReview. |
-|[Redefinir decisões do accessReview](accessreview-reset.md) |        Nenhum   |   ReDefina as decisões em um accessReview em andamento.|
-|[Aplicar decisões accessReview](accessreview-apply.md) |        Nenhum   |   Aplique as decisões de um accessReview concluído.|
+|[Enviar lembrete accessReview](accessreview-sendreminder.md) |       Nenhum.   |   Envie um lembrete para os revisores de um accessReview. |
+|[Parar accessReview](accessreview-stop.md) |        Nenhum.   |   Parar um accessReview. |
+|[Redefinir decisões do accessReview](accessreview-reset.md) |        Nenhum.   |   Redefina as decisões em um accessReview em andamento.|
+|[Aplicar decisões accessReview](accessreview-apply.md) |        Nenhum.   |   Aplique as decisões de um accessReview concluído.|
 
 
 <!--
@@ -101,6 +111,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listdecisions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-listdecisions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

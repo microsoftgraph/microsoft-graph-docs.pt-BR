@@ -4,16 +4,14 @@ description: Recupere uma lista de escolas de um usuário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 4722f4777c4cd13923700c4d290282ce9d71393c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4dc66914ae94127ae4ace7083924d9d6b5567aab
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33321923"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587341"
 ---
 # <a name="list-schools"></a>Listar escolas
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de escolas de um usuário.
 
@@ -26,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Application | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +52,7 @@ Este é um exemplo de solicitação.
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/me/schools
+GET https://graph.microsoft.com/v1.0/education/me/schools
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -106,16 +104,27 @@ Content-length: 345
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_schools-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_schools-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List schools",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationuser-list-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationuser-list-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

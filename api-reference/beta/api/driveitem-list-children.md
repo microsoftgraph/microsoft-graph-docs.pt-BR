@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Listar o conteúdo de uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3220f11522114192648433fff9f743d678d81300
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 83a3394c8c7f5b77dbedeece6c38045bab0fd9a6
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325250"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589743"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 
@@ -64,6 +64,16 @@ Para recuperar arquivos na raiz da unidade, use a relação `root` na unidade e 
 ```http
 GET /me/drive/root/children
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-root-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-root-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ### <a name="list-children-of-a-driveitem-with-a-known-id"></a>Filhos da lista de um DriveItem com uma ID conhecida
@@ -75,6 +85,16 @@ Para recuperar arquivos na raiz da unidade, use a relação `root` na unidade e 
 ```http
 GET /drives/{drive-id}/items/{item-id}/children
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="list-children-of-a-driveitem-with-a-known-path"></a>Filhos da lista de um DriveItem com um caminho conhecido
 
@@ -126,6 +146,11 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "keywords": "list,children,collection",
   "section": "documentation",
   "tocPath": "Items/List children",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

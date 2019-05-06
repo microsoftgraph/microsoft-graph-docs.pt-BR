@@ -4,12 +4,12 @@ description: Atualize as propriedades de um objeto **educationuser**.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: ef544aca0509322d12d6cd3e70e4c52334272bb3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c1f5c659c86b49c689d727d9417f0ae54168a984
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324829"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587362"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.ReadWrite.All |
+|Application | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,14 +42,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName| String| Nome de exibição do usuário|
-|givenName| String | Nome |
+|displayName| Cadeia de caracteres| Nome de exibição do usuário|
+|givenName| Cadeia de caracteres | Nome |
 |middleName| String | O nome do meio do usuário|
-|surname| String | Sobrenome do usuário|
+|surname| Cadeia de caracteres | Sobrenome do usuário|
 |email| String| endereço de email|
 |mobilePhone| Cadeia de caracteres | O número de celular do usuário |
-|externalSource|string| Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
-|externalSource|string| De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|cadeia de caracteres| Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|cadeia de caracteres| De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço de email do usuário.|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço em que o usuário reside.|
 |primaryRole|cadeia de caracteres| Função padrão de um usuário.  A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`.|
@@ -127,6 +127,16 @@ Content-length: 508
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -137,6 +147,9 @@ Content-length: 508
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

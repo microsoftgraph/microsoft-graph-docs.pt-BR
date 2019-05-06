@@ -4,12 +4,12 @@ description: Atualize o objeto assignment. Somente os professores da turma podem
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: c8b6659d0af1ae57829add1f64c19cb954b8413f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d3446a6e6759acc4a81daa86cc34f6c13ed54448
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325015"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587694"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -42,14 +42,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Boolean| Se os envios podem ser enviados após a data de conclusão.|
-|allowStudentsToAddResourcesToSubmission|Boolean| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
+|allowLateSubmissions|Booliano| Se os envios podem ser enviados após a data de conclusão.|
+|allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. |
 |atribuir|educationAssignmentRecipient| Estudantes que obtêm a atribuição.|
 |displayName|String| Nome da atribuição. |
 |dueDateTime|DateTimeOffset| A atribuição de data deve ser concluída. |
 |notas|educationAssignmentGradeType| Como a atribuição será classificada.|
-|contida|itemBody| Instruções a serem dadas aos alunos junto com a atribuição. |
+|contida|dobody| Instruções a serem dadas aos alunos junto com a atribuição. |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
@@ -101,6 +101,16 @@ Content-length: 279
   "assignedDateTime": "2014-01-01T00:00:00Z"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationassignment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationassignment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -111,6 +121,9 @@ Content-length: 279
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

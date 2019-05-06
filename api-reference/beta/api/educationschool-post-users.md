@@ -4,16 +4,14 @@ description: Adicione um usuário a uma escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bdd2f5a2487b6887907c2215973dda07f53c784d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2fef72e17d512a0637a7bbc10c0a41ebbcd351e0
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325180"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587791"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>Adicionar educationUser a uma educationSchool
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adicione um usuário a uma escola.
 
@@ -24,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -52,12 +50,12 @@ Este é um exemplo de solicitação.
   "name": "create_educationuser_from_educationschool"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/schools/<id>/users/$ref
+POST https://graph.microsoft.com/v1.0/education/schools/{id}/users/$ref
 Content-type: application/json
 Content-length: 56
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/education/users/14008"
+  "@odata.id":"https://graph.microsoft.com/v1.0/education/users/14008"
 }
 ```
 
@@ -74,16 +72,24 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_educationuser_from_educationschool-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create educationUser",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationschool-post-users.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -4,12 +4,12 @@ description: Obtenha um conjunto de contatos que foram adicionados, excluídos o
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8899e5a13b8306717382f698309bb37ffe529dd2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 80fa244e200cad408976112419c2c2e00b540d40
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327590"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591577"
 ---
 # <a name="contact-delta"></a>entre em contato com: delta
 
@@ -41,7 +41,7 @@ O controle de alterações em contatos corresponde a uma série de uma ou mais c
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de contatos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
+| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de contatos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de contatos. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
@@ -52,7 +52,7 @@ O controle de alterações em contatos corresponde a uma série de uma ou mais c
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 
@@ -110,6 +110,16 @@ Content-length: 337
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/contact_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/contact_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>Confira também
 
@@ -125,6 +135,9 @@ Content-length: 337
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/contact-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/contact-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

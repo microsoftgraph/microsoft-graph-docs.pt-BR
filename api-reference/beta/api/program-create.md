@@ -2,12 +2,12 @@
 title: Criar programa
 description: No recurso de revisões do Azure AD Access, crie um novo objeto de programa.
 localization_priority: Normal
-ms.openlocfilehash: 7ba329924761b1f43d0fc0fff02c6578b3a64a72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 87f766917499e6e9d1896ccf64f8fbae2bef813b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337198"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593656"
 ---
 # <a name="create-program"></a>Criar programa
 
@@ -19,7 +19,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl. ReadWrite. All   |
+|Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -68,7 +68,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,6 +84,16 @@ Content-type: application/json
     "description": "test description"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_program_from_programs-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_program_from_programs-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>Confira também
 
@@ -101,6 +111,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/program-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

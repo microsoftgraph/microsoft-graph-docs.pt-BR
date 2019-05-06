@@ -2,12 +2,12 @@
 title: Criar privilegedRoleAssignmentRequest
 description: Criar um objeto privilegedroleassignmentrequest.
 localization_priority: Normal
-ms.openlocfilehash: f120181144bc73d7a66c42d03e8743bbbc736582
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d963bd1cc103928675890aa7ddeccd5fd27594c0
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337207"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593754"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Criar privilegedRoleAssignmentRequest
 
@@ -40,11 +40,11 @@ No corpo da solicitação, forneça uma representação JSON do objeto [privileg
 
 | Propriedade     | Tipo    |  Descrição|
 |:---------------|:--------|:----------|
-|roleId|String|A ID da função. Obrigatório.|
-|type|String|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: os administradores adicionam usuários a funções; `UserAdd`: Os usuários adicionam atribuições de função. Obrigatório.|
-|assignmentstate|String|O estado da atribuição. O valor pode ser `Eligible` para atribuição `Active` qualificada-se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
-|motivos|String|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise.|
-|futebol|[governanceSchedule](../resources/governanceschedule.md)|O agendamento da solicitação de atribuição de função.|
+|roleId|Cadeia de caracteres|A ID da função. Obrigatório.|
+|type|Cadeia de caracteres|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: os administradores adicionam usuários a funções; `UserAdd`: Os usuários adicionam atribuições de função. Obrigatório.|
+|assignmentstate|Cadeia de caracteres|O estado da atribuição. O valor pode ser `Eligible` para atribuição `Active` qualificada-se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
+|motivos|Cadeia de caracteres|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise.|
+|Cronograma|[governanceSchedule](../resources/governanceschedule.md)|O agendamento da solicitação de atribuição de função.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
@@ -67,7 +67,7 @@ Essa API retorna os códigos de erro HTTP padrão. Além disso, ele pode retorna
 | 400 BadRequest | A função já está ativada. |
 | 400 BadRequest | GenericElevateUserToRoleAssignments: as informações de Tickting são necessárias e não são fornecidas no processo de ativação. |
 | 400 BadRequest | Há uma sobreposição entre ativação agendada e a solicitação. |
-| 403 não autorizado | A elevação requer autenticação multiFator. |
+| 403 não autorizado | A elevação requer autenticação multifator. |
 | 403 não autorizado | Em nome da elevação não é permitida. |
 
 ## <a name="example"></a>Exemplo
@@ -130,6 +130,16 @@ Content-length: 304
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_privilegedroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_privilegedroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -140,6 +150,9 @@ Content-length: 304
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
