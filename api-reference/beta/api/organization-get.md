@@ -4,34 +4,34 @@ description: Recupere as propriedades e os relacionamentos da organização aute
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f4669e5b07d6665479bb177727f7faa436f14669
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 882ba48291c2ff171cd6bef7b6bbcee492cfd824
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338137"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596914"
 ---
-# <a name="get-organization"></a><span data-ttu-id="76b84-103">Obter organização</span><span class="sxs-lookup"><span data-stu-id="76b84-103">Get organization</span></span>
+# <a name="get-organization"></a><span data-ttu-id="9a544-103">Obter organização</span><span class="sxs-lookup"><span data-stu-id="9a544-103">Get organization</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="76b84-104">Recupere as propriedades e os relacionamentos da organização autenticada no momento.</span><span class="sxs-lookup"><span data-stu-id="76b84-104">Retrieve the properties and relationships of currently authenticated organization.</span></span>
+<span data-ttu-id="9a544-104">Recupere as propriedades e os relacionamentos da organização autenticada no momento.</span><span class="sxs-lookup"><span data-stu-id="9a544-104">Retrieve the properties and relationships of currently authenticated organization.</span></span>
 
-<span data-ttu-id="76b84-105">Como o recurso de **organização** suporta [extensões](/graph/extensibility-overview), você também pode usar `GET` a operação para obter propriedades personalizadas e dados de extensão em uma instância de **organização** .</span><span class="sxs-lookup"><span data-stu-id="76b84-105">Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.</span></span>
+<span data-ttu-id="9a544-105">Como o recurso de **organização** suporta [extensões](/graph/extensibility-overview), você também pode usar `GET` a operação para obter propriedades personalizadas e dados de extensão em uma instância de **organização** .</span><span class="sxs-lookup"><span data-stu-id="9a544-105">Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="76b84-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="76b84-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9a544-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="9a544-106">Permissions</span></span>
 
-<span data-ttu-id="76b84-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="76b84-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9a544-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9a544-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="76b84-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="76b84-109">Permission type</span></span> | <span data-ttu-id="76b84-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="76b84-110">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="9a544-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9a544-109">Permission type</span></span> | <span data-ttu-id="9a544-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9a544-110">Permissions (from least to most privileged)</span></span> |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="76b84-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="76b84-111">Delegated (work or school account)</span></span> | <span data-ttu-id="76b84-112">User. Read, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="76b84-112">User.Read, Directory.Read.All</span></span> |
-|<span data-ttu-id="76b84-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="76b84-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="76b84-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="76b84-114">Not supported.</span></span> |
-|<span data-ttu-id="76b84-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="76b84-115">Application</span></span> | <span data-ttu-id="76b84-116">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="76b84-116">Directory.Read.All</span></span> |
+|<span data-ttu-id="9a544-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9a544-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9a544-112">User. Read, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="9a544-112">User.Read, Directory.Read.All</span></span> |
+|<span data-ttu-id="9a544-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9a544-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9a544-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9a544-114">Not supported.</span></span> |
+|<span data-ttu-id="9a544-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9a544-115">Application</span></span> | <span data-ttu-id="9a544-116">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="9a544-116">Directory.Read.All</span></span> |
 
-> <span data-ttu-id="76b84-117">Observação: os aplicativos que têm a permissão User.Read só conseguem ler as propriedades *id*, *displayName* e *verifiedDomains* da organização.</span><span class="sxs-lookup"><span data-stu-id="76b84-117">Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.</span></span>  <span data-ttu-id="76b84-118">Todas as outras propriedades retornarão valores `null`.</span><span class="sxs-lookup"><span data-stu-id="76b84-118">All other properties will return with `null` values.</span></span> <span data-ttu-id="76b84-119">Para ler todas as propriedades, use Directory.Read.All.</span><span class="sxs-lookup"><span data-stu-id="76b84-119">To read all properties, use Directory.Read.All.</span></span>
+> <span data-ttu-id="9a544-117">Observação: os aplicativos que têm a permissão User.Read só conseguem ler as propriedades *id*, *displayName* e *verifiedDomains* da organização.</span><span class="sxs-lookup"><span data-stu-id="9a544-117">Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.</span></span>  <span data-ttu-id="9a544-118">Todas as outras propriedades retornarão valores `null`.</span><span class="sxs-lookup"><span data-stu-id="9a544-118">All other properties will return with `null` values.</span></span> <span data-ttu-id="9a544-119">Para ler todas as propriedades, use Directory.Read.All.</span><span class="sxs-lookup"><span data-stu-id="9a544-119">To read all properties, use Directory.Read.All.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="76b84-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="76b84-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9a544-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9a544-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,29 +39,29 @@ ms.locfileid: "33338137"
 GET /organization
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="76b84-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="76b84-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9a544-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9a544-121">Optional query parameters</span></span>
 
-<span data-ttu-id="76b84-122">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="76b84-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="9a544-122">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="9a544-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="76b84-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="76b84-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9a544-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9a544-123">Request headers</span></span>
 
-| <span data-ttu-id="76b84-124">Nome</span><span class="sxs-lookup"><span data-stu-id="76b84-124">Name</span></span>       | <span data-ttu-id="76b84-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="76b84-125">Type</span></span> | <span data-ttu-id="76b84-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="76b84-126">Description</span></span>|
+| <span data-ttu-id="9a544-124">Nome</span><span class="sxs-lookup"><span data-stu-id="9a544-124">Name</span></span>       | <span data-ttu-id="9a544-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="9a544-125">Type</span></span> | <span data-ttu-id="9a544-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="9a544-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="76b84-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="76b84-127">Authorization</span></span>  | <span data-ttu-id="76b84-128">string</span><span class="sxs-lookup"><span data-stu-id="76b84-128">string</span></span>  | <span data-ttu-id="76b84-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="76b84-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9a544-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="9a544-127">Authorization</span></span>  | <span data-ttu-id="9a544-128">string</span><span class="sxs-lookup"><span data-stu-id="9a544-128">string</span></span>  | <span data-ttu-id="9a544-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9a544-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="76b84-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="76b84-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9a544-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9a544-131">Request body</span></span>
 
-<span data-ttu-id="76b84-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="76b84-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="9a544-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9a544-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="76b84-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="76b84-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9a544-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="9a544-133">Response</span></span>
 
-<span data-ttu-id="76b84-134">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [organization](../resources/organization.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="76b84-134">If successful, this method returns a `200 OK` response code and [organization](../resources/organization.md) object in the response body.</span></span>
+<span data-ttu-id="9a544-134">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [organization](../resources/organization.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9a544-134">If successful, this method returns a `200 OK` response code and [organization](../resources/organization.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="76b84-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="76b84-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9a544-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9a544-135">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="76b84-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="76b84-136">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="9a544-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9a544-136">Request</span></span>
 
-<span data-ttu-id="76b84-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="76b84-137">Here is an example of the request.</span></span>
+<span data-ttu-id="9a544-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9a544-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_organization"
@@ -71,9 +71,9 @@ GET /organization
 GET https://graph.microsoft.com/beta/organization
 ```
 
-##### <a name="response"></a><span data-ttu-id="76b84-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="76b84-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="9a544-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="9a544-138">Response</span></span>
 
-<span data-ttu-id="76b84-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="76b84-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="9a544-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9a544-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,11 +108,21 @@ Content-length: 411
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="9a544-142">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="9a544-142">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="9a544-143">Basic</span><span class="sxs-lookup"><span data-stu-id="9a544-143">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_organization-Cs-snippets.md)]
 
-## <a name="see-also"></a><span data-ttu-id="76b84-142">Confira também</span><span class="sxs-lookup"><span data-stu-id="76b84-142">See also</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9a544-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9a544-144">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_organization-Javascript-snippets.md)]
 
-- [<span data-ttu-id="76b84-143">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="76b84-143">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="76b84-144">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="76b84-144">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="see-also"></a><span data-ttu-id="9a544-145">Confira também</span><span class="sxs-lookup"><span data-stu-id="9a544-145">See also</span></span>
+
+- [<span data-ttu-id="9a544-146">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="9a544-146">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="9a544-147">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="9a544-147">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
@@ -126,6 +136,9 @@ Content-length: 411
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/organization-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/organization-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
