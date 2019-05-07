@@ -5,32 +5,32 @@ ms.date: 09/10/2017
 title: Listar os subsites de um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fd0b4c43ae03bd7f09ea095e2f7a73b6fa1dbc13
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4abf8eab77ff33b896aab9d0e650373da791a0ac
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520808"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603032"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="1e038-102">Enumerar subsites</span><span class="sxs-lookup"><span data-stu-id="1e038-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="399cc-102">Enumerar subsites</span><span class="sxs-lookup"><span data-stu-id="399cc-102">Enumerate subsites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1e038-103">Obtém uma coleção de subsites definidos para um [site][].</span><span class="sxs-lookup"><span data-stu-id="1e038-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="399cc-103">Obtém uma coleção de subsites definidos para um [site][].</span><span class="sxs-lookup"><span data-stu-id="399cc-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="1e038-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1e038-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="399cc-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="399cc-105">Permissions</span></span>
 
-<span data-ttu-id="1e038-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1e038-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="399cc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="399cc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1e038-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1e038-108">Permission type</span></span>      | <span data-ttu-id="1e038-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1e038-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="399cc-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="399cc-108">Permission type</span></span>      | <span data-ttu-id="399cc-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="399cc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1e038-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1e038-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1e038-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e038-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1e038-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1e038-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e038-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1e038-113">Not supported.</span></span>    |
-|<span data-ttu-id="1e038-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1e038-114">Application</span></span> | <span data-ttu-id="1e038-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e038-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="399cc-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="399cc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="399cc-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="399cc-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="399cc-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="399cc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="399cc-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="399cc-113">Not supported.</span></span>    |
+|<span data-ttu-id="399cc-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="399cc-114">Application</span></span> | <span data-ttu-id="399cc-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="399cc-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1e038-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1e038-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="399cc-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="399cc-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "32520808"
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="1e038-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="1e038-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="399cc-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="399cc-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -67,6 +67,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="399cc-118">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="399cc-118">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="399cc-119">C#</span><span class="sxs-lookup"><span data-stu-id="399cc-119">C</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-subsites-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="399cc-120">Javascript</span><span class="sxs-lookup"><span data-stu-id="399cc-120">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-subsites-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -76,7 +86,8 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/List subsites",
   "suppressions": [
-    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
