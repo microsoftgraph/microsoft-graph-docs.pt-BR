@@ -5,28 +5,28 @@ ms.date: 09/11/2017
 title: Criar uma nova entrada em uma lista do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 48cccb9c4200c80a0f37a04493b4df0f2d4066d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a4237703d8cb8d3142a331def586843e4d7a2c59
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557086"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613005"
 ---
-# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="be4ca-102">Criar um novo item em uma lista</span><span class="sxs-lookup"><span data-stu-id="be4ca-102">Create a new item in a list</span></span>
+# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="9554f-102">Criar um novo item em uma lista</span><span class="sxs-lookup"><span data-stu-id="9554f-102">Create a new item in a list</span></span>
 
-<span data-ttu-id="be4ca-103">Criar um novo [listItem][] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="be4ca-103">Create a new [listItem][] in a [list][].</span></span>
+<span data-ttu-id="9554f-103">Criar um novo [listItem][] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="9554f-103">Create a new [listItem][] in a [list][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="be4ca-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="be4ca-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9554f-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="9554f-104">Permissions</span></span>
 
-<span data-ttu-id="be4ca-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="be4ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9554f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9554f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="be4ca-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="be4ca-107">Permission type</span></span>      | <span data-ttu-id="be4ca-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="be4ca-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9554f-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9554f-107">Permission type</span></span>      | <span data-ttu-id="9554f-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9554f-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="be4ca-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="be4ca-109">Delegated (work or school account)</span></span> | <span data-ttu-id="be4ca-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="be4ca-110">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="be4ca-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="be4ca-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="be4ca-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="be4ca-112">Not supported.</span></span>    |
-|<span data-ttu-id="be4ca-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="be4ca-113">Application</span></span> | <span data-ttu-id="be4ca-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="be4ca-114">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="9554f-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9554f-109">Delegated (work or school account)</span></span> | <span data-ttu-id="9554f-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9554f-110">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9554f-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9554f-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9554f-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9554f-112">Not supported.</span></span>    |
+|<span data-ttu-id="9554f-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9554f-113">Application</span></span> | <span data-ttu-id="9554f-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9554f-114">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="be4ca-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="be4ca-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9554f-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9554f-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,13 +34,13 @@ ms.locfileid: "32557086"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
-## <a name="request-body"></a><span data-ttu-id="be4ca-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="be4ca-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9554f-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9554f-116">Request body</span></span>
 
-<span data-ttu-id="be4ca-117">No corpo da solicitação, forneça uma representação JSON do recurso [listItem][] a criar.</span><span class="sxs-lookup"><span data-stu-id="be4ca-117">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
+<span data-ttu-id="9554f-117">No corpo da solicitação, forneça uma representação JSON do recurso [listItem][] a criar.</span><span class="sxs-lookup"><span data-stu-id="9554f-117">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="be4ca-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="be4ca-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9554f-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9554f-118">Example</span></span>
 
-<span data-ttu-id="be4ca-119">Aqui está um exemplo de como criar um novo item de lista genérica.</span><span class="sxs-lookup"><span data-stu-id="be4ca-119">Here is an example of how to create a new generic list item.</span></span>
+<span data-ttu-id="9554f-119">Aqui está um exemplo de como criar um novo item de lista genérica.</span><span class="sxs-lookup"><span data-stu-id="9554f-119">Here is an example of how to create a new generic list item.</span></span>
 
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
@@ -57,9 +57,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="be4ca-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="be4ca-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9554f-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="9554f-120">Response</span></span>
 
-<span data-ttu-id="be4ca-121">Se for bem-sucedido, esse método retornará um [listItem][] no corpo da resposta da lista criada.</span><span class="sxs-lookup"><span data-stu-id="be4ca-121">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
+<span data-ttu-id="9554f-121">Se for bem-sucedido, esse método retornará um [listItem][] no corpo da resposta da lista criada.</span><span class="sxs-lookup"><span data-stu-id="9554f-121">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -85,8 +85,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="9554f-122">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="9554f-122">SDK sample code</span></span>
 
-<span data-ttu-id="be4ca-122">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="be4ca-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="be4ca-123">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="be4ca-123">Default properties will be returned from the actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9554f-123">Javascript</span><span class="sxs-lookup"><span data-stu-id="9554f-123">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<span data-ttu-id="9554f-124">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="9554f-124">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="9554f-125">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="9554f-125">Default properties will be returned from the actual call.</span></span>
 
 [lista]: ../resources/list.md
 [list]: ../resources/list.md
@@ -97,5 +105,8 @@ Content-type: application/json
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Create"
+  "tocPath": "ListItem/Create",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

@@ -4,65 +4,65 @@ description: Recupere uma lista de objetos user.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7529097f5d22443b95123cc7a2f578f0521b8ca4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b7326796ec45e0cb628be954e3f82f317096fb51
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563893"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601512"
 ---
-# <a name="list-users"></a><span data-ttu-id="d5747-103">Listar usuários</span><span class="sxs-lookup"><span data-stu-id="d5747-103">List users</span></span>
+# <a name="list-users"></a><span data-ttu-id="2d858-103">Listar usuários</span><span class="sxs-lookup"><span data-stu-id="2d858-103">List users</span></span>
 
-<span data-ttu-id="d5747-104">Recuperar uma lista de objetos user.</span><span class="sxs-lookup"><span data-stu-id="d5747-104">Retrieve a list of user objects.</span></span>
+<span data-ttu-id="2d858-104">Recuperar uma lista de objetos user.</span><span class="sxs-lookup"><span data-stu-id="2d858-104">Retrieve a list of user objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d5747-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d5747-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2d858-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="2d858-105">Permissions</span></span>
 
-<span data-ttu-id="d5747-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5747-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2d858-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d858-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d5747-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d5747-108">Permission type</span></span>      | <span data-ttu-id="d5747-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d5747-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2d858-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2d858-108">Permission type</span></span>      | <span data-ttu-id="2d858-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2d858-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d5747-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d5747-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d5747-111">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="d5747-111">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="d5747-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d5747-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5747-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d5747-113">Not supported.</span></span>    |
-|<span data-ttu-id="d5747-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d5747-114">Application</span></span> | <span data-ttu-id="d5747-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d5747-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="2d858-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2d858-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2d858-111">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2d858-111">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="2d858-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2d858-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d858-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2d858-113">Not supported.</span></span>    |
+|<span data-ttu-id="2d858-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2d858-114">Application</span></span> | <span data-ttu-id="2d858-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d858-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d5747-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d5747-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d858-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2d858-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d5747-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d5747-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2d858-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="2d858-117">Optional query parameters</span></span>
 
-<span data-ttu-id="d5747-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d5747-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="2d858-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="2d858-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="d5747-119">Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span><span class="sxs-lookup"><span data-stu-id="d5747-119">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> 
+<span data-ttu-id="2d858-119">Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span><span class="sxs-lookup"><span data-stu-id="2d858-119">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> 
 
-<span data-ttu-id="d5747-120">Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="d5747-120">To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="d5747-121">Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`</span><span class="sxs-lookup"><span data-stu-id="d5747-121">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
+<span data-ttu-id="2d858-120">Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="2d858-120">To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="2d858-121">Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`</span><span class="sxs-lookup"><span data-stu-id="2d858-121">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
 
-> <span data-ttu-id="d5747-p103">Observação: Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário. As seguintes propriedades só terão suporte na [recuperação de um único usuário](./user-get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_</span><span class="sxs-lookup"><span data-stu-id="d5747-p103">Note: Certain properties cannot be returned within a user collection. The following properties are only supported when [retrieving an single user](./user-get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_</span></span>
+> <span data-ttu-id="2d858-p103">Observação: Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário. As seguintes propriedades só terão suporte na [recuperação de um único usuário](./user-get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_</span><span class="sxs-lookup"><span data-stu-id="2d858-p103">Note: Certain properties cannot be returned within a user collection. The following properties are only supported when [retrieving an single user](./user-get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d5747-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d5747-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2d858-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2d858-124">Request headers</span></span>
 
-| <span data-ttu-id="d5747-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d5747-125">Header</span></span>        | <span data-ttu-id="d5747-126">Valor</span><span class="sxs-lookup"><span data-stu-id="d5747-126">Value</span></span>                      |
+| <span data-ttu-id="2d858-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2d858-125">Header</span></span>        | <span data-ttu-id="2d858-126">Valor</span><span class="sxs-lookup"><span data-stu-id="2d858-126">Value</span></span>                      |
 |:--------------|:---------------------------|
-| <span data-ttu-id="d5747-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="d5747-127">Authorization</span></span> | <span data-ttu-id="d5747-128">{token} do portador (obrigatório)</span><span class="sxs-lookup"><span data-stu-id="d5747-128">Bearer {token} (required)</span></span>  |
-| <span data-ttu-id="d5747-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d5747-129">Content-Type</span></span>  | <span data-ttu-id="d5747-130">application/json</span><span class="sxs-lookup"><span data-stu-id="d5747-130">application/json</span></span>           |
+| <span data-ttu-id="2d858-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="2d858-127">Authorization</span></span> | <span data-ttu-id="2d858-128">{token} do portador (obrigatório)</span><span class="sxs-lookup"><span data-stu-id="2d858-128">Bearer {token} (required)</span></span>  |
+| <span data-ttu-id="2d858-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2d858-129">Content-Type</span></span>  | <span data-ttu-id="2d858-130">application/json</span><span class="sxs-lookup"><span data-stu-id="2d858-130">application/json</span></span>           |
 
-## <a name="request-body"></a><span data-ttu-id="d5747-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d5747-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d858-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2d858-131">Request body</span></span>
 
-<span data-ttu-id="d5747-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d5747-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="2d858-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2d858-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d5747-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5747-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2d858-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d858-133">Response</span></span>
 
-<span data-ttu-id="d5747-134">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d5747-134">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span>
+<span data-ttu-id="2d858-134">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2d858-134">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d5747-135">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d5747-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2d858-135">Exemplos</span><span class="sxs-lookup"><span data-stu-id="2d858-135">Examples</span></span>
 
-### <a name="example-1-standard-users-request"></a><span data-ttu-id="d5747-136">Exemplo 1: Solicitação de usuários padrão</span><span class="sxs-lookup"><span data-stu-id="d5747-136">Example 1: Standard users request</span></span>
+### <a name="example-1-standard-users-request"></a><span data-ttu-id="2d858-136">Exemplo 1: Solicitação de usuários padrão</span><span class="sxs-lookup"><span data-stu-id="2d858-136">Example 1: Standard users request</span></span>
 
-<span data-ttu-id="d5747-137">Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span><span class="sxs-lookup"><span data-stu-id="d5747-137">By default, only a limited set of properties are returned (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span></span> <span data-ttu-id="d5747-138">Este exemplo ilustra a solicitação padrão e a resposta.</span><span class="sxs-lookup"><span data-stu-id="d5747-138">This example illustrates the default request and response.</span></span> 
+<span data-ttu-id="2d858-137">Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span><span class="sxs-lookup"><span data-stu-id="2d858-137">By default, only a limited set of properties are returned (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span></span> <span data-ttu-id="2d858-138">Este exemplo ilustra a solicitação padrão e a resposta.</span><span class="sxs-lookup"><span data-stu-id="2d858-138">This example illustrates the default request and response.</span></span> 
 
-##### <a name="request"></a><span data-ttu-id="d5747-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d5747-139">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="2d858-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d858-139">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -72,7 +72,7 @@ GET /users
 GET https://graph.microsoft.com/v1.0/users
 ```
 
-##### <a name="response"></a><span data-ttu-id="d5747-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5747-140">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="2d858-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d858-140">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,24 +105,34 @@ Content-length: 608
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="2d858-141">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="2d858-141">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="2d858-142">C#</span><span class="sxs-lookup"><span data-stu-id="2d858-142">C</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_users-Cs-snippets.md)]
 
-### <a name="example-2-users-request-using-select"></a><span data-ttu-id="d5747-141">Exemplo 2: Solicitação de usuários usando $select</span><span class="sxs-lookup"><span data-stu-id="d5747-141">Example 2: Users request using $select</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2d858-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="2d858-143">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_users-Javascript-snippets.md)]
 
-<span data-ttu-id="d5747-142">Se precisar de um conjunto de propriedades diferente, você poderá usar o parâmetro de consulta OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="d5747-142">If you need a different property set, you can use the OData `$select` query parameter.</span></span> <span data-ttu-id="d5747-143">Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`</span><span class="sxs-lookup"><span data-stu-id="d5747-143">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
+---
 
-##### <a name="request"></a><span data-ttu-id="d5747-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d5747-144">Request</span></span>
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### <a name="example-2-users-request-using-select"></a><span data-ttu-id="2d858-144">Exemplo 2: Solicitação de usuários usando $select</span><span class="sxs-lookup"><span data-stu-id="2d858-144">Example 2: Users request using $select</span></span>
+
+<span data-ttu-id="2d858-145">Se precisar de um conjunto de propriedades diferente, você poderá usar o parâmetro de consulta OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="2d858-145">If you need a different property set, you can use the OData `$select` query parameter.</span></span> <span data-ttu-id="2d858-146">Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`</span><span class="sxs-lookup"><span data-stu-id="2d858-146">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
+
+##### <a name="request"></a><span data-ttu-id="2d858-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d858-147">Request</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "get_users"
+  "name": "get_users_properties"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
 ```
 
-##### <a name="response"></a><span data-ttu-id="d5747-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5747-145">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="2d858-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d858-148">Response</span></span>
 
-<span data-ttu-id="d5747-146">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="d5747-146">Note: The response object shown here may be truncated for brevity.</span></span>
+<span data-ttu-id="2d858-149">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="2d858-149">Note: The response object shown here may be truncated for brevity.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,6 +154,16 @@ Content-length: 159
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="2d858-150">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="2d858-150">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="2d858-151">C#</span><span class="sxs-lookup"><span data-stu-id="2d858-151">C</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_users_properties-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2d858-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="2d858-152">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_users_properties-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -152,5 +172,11 @@ Content-length: 159
   "description": "List users",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -4,48 +4,48 @@ description: 'Obter o conjunto de pastas de email sob a pasta raiz do usuário c
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f92a933cc7b38ac713722a42809b2fe7f44c516f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78469088afc93bc61244a365a25029329adfb714
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571321"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601756"
 ---
-# <a name="list-mailfolders"></a><span data-ttu-id="d1447-103">Listar mailFolders</span><span class="sxs-lookup"><span data-stu-id="d1447-103">List mailFolders</span></span>
+# <a name="list-mailfolders"></a><span data-ttu-id="53882-103">Listar mailFolders</span><span class="sxs-lookup"><span data-stu-id="53882-103">List mailFolders</span></span>
 
-<span data-ttu-id="d1447-104">Obtenha a coleção de pastas de email sob a pasta raiz do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="d1447-104">Get the mail folder collection under the root folder of the signed-in user.</span></span> 
-## <a name="permissions"></a><span data-ttu-id="d1447-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d1447-105">Permissions</span></span>
-<span data-ttu-id="d1447-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d1447-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="53882-104">Obtenha a coleção de pastas de email sob a pasta raiz do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="53882-104">Get the mail folder collection under the root folder of the signed-in user.</span></span> 
+## <a name="permissions"></a><span data-ttu-id="53882-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="53882-105">Permissions</span></span>
+<span data-ttu-id="53882-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="53882-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d1447-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d1447-108">Permission type</span></span>      | <span data-ttu-id="d1447-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d1447-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="53882-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="53882-108">Permission type</span></span>      | <span data-ttu-id="53882-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="53882-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d1447-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d1447-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d1447-111">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d1447-111">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="d1447-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d1447-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d1447-113">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d1447-113">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="d1447-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d1447-114">Application</span></span> | <span data-ttu-id="d1447-115">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d1447-115">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="53882-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="53882-110">Delegated (work or school account)</span></span> | <span data-ttu-id="53882-111">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="53882-111">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="53882-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="53882-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="53882-113">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="53882-113">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="53882-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="53882-114">Application</span></span> | <span data-ttu-id="53882-115">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="53882-115">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d1447-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d1447-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="53882-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="53882-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d1447-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d1447-117">Optional query parameters</span></span>
-<span data-ttu-id="d1447-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d1447-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="d1447-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d1447-119">Request headers</span></span>
-| <span data-ttu-id="d1447-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d1447-120">Header</span></span>       | <span data-ttu-id="d1447-121">Valor</span><span class="sxs-lookup"><span data-stu-id="d1447-121">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="53882-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="53882-117">Optional query parameters</span></span>
+<span data-ttu-id="53882-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="53882-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="53882-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="53882-119">Request headers</span></span>
+| <span data-ttu-id="53882-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="53882-120">Header</span></span>       | <span data-ttu-id="53882-121">Valor</span><span class="sxs-lookup"><span data-stu-id="53882-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d1447-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="d1447-122">Authorization</span></span>  | <span data-ttu-id="d1447-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d1447-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="d1447-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d1447-125">Content-Type</span></span>   | <span data-ttu-id="d1447-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d1447-126">application/json</span></span>  |
+| <span data-ttu-id="53882-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="53882-122">Authorization</span></span>  | <span data-ttu-id="53882-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="53882-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="53882-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="53882-125">Content-Type</span></span>   | <span data-ttu-id="53882-126">application/json</span><span class="sxs-lookup"><span data-stu-id="53882-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d1447-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d1447-127">Request body</span></span>
-<span data-ttu-id="d1447-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d1447-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="53882-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="53882-127">Request body</span></span>
+<span data-ttu-id="53882-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="53882-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d1447-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1447-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="53882-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="53882-129">Response</span></span>
 
-<span data-ttu-id="d1447-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [MailFolder](../resources/mailfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d1447-130">If successful, this method returns a `200 OK` response code and collection of [MailFolder](../resources/mailfolder.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d1447-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d1447-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d1447-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d1447-132">Request</span></span>
-<span data-ttu-id="d1447-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d1447-133">Here is an example of the request.</span></span>
+<span data-ttu-id="53882-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [MailFolder](../resources/mailfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="53882-130">If successful, this method returns a `200 OK` response code and collection of [MailFolder](../resources/mailfolder.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="53882-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="53882-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="53882-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="53882-132">Request</span></span>
+<span data-ttu-id="53882-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="53882-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_mailfolders"
@@ -53,8 +53,8 @@ GET /users/{id | userPrincipalName}/mailFolders
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders
 ```
-##### <a name="response"></a><span data-ttu-id="d1447-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1447-134">Response</span></span>
-<span data-ttu-id="d1447-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d1447-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="53882-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="53882-134">Response</span></span>
+<span data-ttu-id="53882-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="53882-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,6 +79,16 @@ Content-length: 232
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="53882-138">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="53882-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="53882-139">C#</span><span class="sxs-lookup"><span data-stu-id="53882-139">C</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_mailfolders-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="53882-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="53882-140">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_mailfolders-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -87,5 +97,9 @@ Content-length: 232
   "description": "List mailFolders",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list-mailfolders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list-mailfolders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
