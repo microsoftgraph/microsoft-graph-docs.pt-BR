@@ -4,12 +4,12 @@ description: Recupere uma coleção de objetos person ordenados por relevância 
 author: dkershaw10
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: e7dd5c2ffefe57ffebf5e8d2fe3e9dca3101a488
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bc314bfd0e13808ddc400a6acb552db6c34e1e64
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571223"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601588"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -166,6 +166,16 @@ Content-length: 1370
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_person_collection-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_person_collection-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Para ver mais exemplos, confira o artigo [Obter informações relevantes sobre as pessoas](/graph/people-example).
 
@@ -176,5 +186,9 @@ Para ver mais exemplos, confira o artigo [Obter informações relevantes sobre a
   "description": "List people",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
