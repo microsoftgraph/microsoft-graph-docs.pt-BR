@@ -4,57 +4,57 @@ description: Atualize as propriedades do objeto range.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fda18c3632874cd60da881ec82ff174c5ede5b7d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 706147a3ff3aade9ae19679aab6bb09bc271128a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525562"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33607529"
 ---
-# <a name="update-range"></a><span data-ttu-id="e8a13-103">Intervalo de atualização</span><span class="sxs-lookup"><span data-stu-id="e8a13-103">Update range</span></span>
+# <a name="update-range"></a><span data-ttu-id="53fed-103">Intervalo de atualização</span><span class="sxs-lookup"><span data-stu-id="53fed-103">Update range</span></span>
 
-<span data-ttu-id="e8a13-104">Atualize as propriedades do objeto range.</span><span class="sxs-lookup"><span data-stu-id="e8a13-104">Update the properties of range object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e8a13-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e8a13-105">Permissions</span></span>
-<span data-ttu-id="e8a13-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e8a13-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="53fed-104">Atualize as propriedades do objeto range.</span><span class="sxs-lookup"><span data-stu-id="53fed-104">Update the properties of range object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="53fed-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="53fed-105">Permissions</span></span>
+<span data-ttu-id="53fed-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="53fed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e8a13-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e8a13-108">Permission type</span></span>      | <span data-ttu-id="e8a13-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e8a13-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="53fed-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="53fed-108">Permission type</span></span>      | <span data-ttu-id="53fed-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="53fed-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e8a13-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e8a13-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e8a13-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8a13-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e8a13-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e8a13-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8a13-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e8a13-113">Not supported.</span></span>    |
-|<span data-ttu-id="e8a13-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e8a13-114">Application</span></span> | <span data-ttu-id="e8a13-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e8a13-115">Not supported.</span></span> |
+|<span data-ttu-id="53fed-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="53fed-110">Delegated (work or school account)</span></span> | <span data-ttu-id="53fed-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="53fed-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="53fed-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="53fed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="53fed-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="53fed-113">Not supported.</span></span>    |
+|<span data-ttu-id="53fed-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="53fed-114">Application</span></span> | <span data-ttu-id="53fed-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="53fed-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e8a13-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e8a13-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="53fed-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="53fed-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}/range
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="e8a13-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="e8a13-117">Optional request headers</span></span>
-| <span data-ttu-id="e8a13-118">Nome</span><span class="sxs-lookup"><span data-stu-id="e8a13-118">Name</span></span>       | <span data-ttu-id="e8a13-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="e8a13-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="53fed-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="53fed-117">Optional request headers</span></span>
+| <span data-ttu-id="53fed-118">Nome</span><span class="sxs-lookup"><span data-stu-id="53fed-118">Name</span></span>       | <span data-ttu-id="53fed-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="53fed-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="e8a13-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="e8a13-120">Authorization</span></span>  | <span data-ttu-id="e8a13-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e8a13-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e8a13-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e8a13-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e8a13-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="e8a13-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="53fed-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="53fed-120">Authorization</span></span>  | <span data-ttu-id="53fed-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="53fed-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="53fed-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="53fed-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="53fed-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="53fed-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e8a13-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e8a13-126">Request body</span></span>
-<span data-ttu-id="e8a13-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="e8a13-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="53fed-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="53fed-126">Request body</span></span>
+<span data-ttu-id="53fed-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="53fed-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="e8a13-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e8a13-130">Property</span></span>     | <span data-ttu-id="e8a13-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="e8a13-131">Type</span></span>   |<span data-ttu-id="e8a13-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="e8a13-132">Description</span></span>|
+| <span data-ttu-id="53fed-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="53fed-130">Property</span></span>     | <span data-ttu-id="53fed-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="53fed-131">Type</span></span>   |<span data-ttu-id="53fed-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="53fed-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e8a13-133">columnHidden</span><span class="sxs-lookup"><span data-stu-id="e8a13-133">columnHidden</span></span>|<span data-ttu-id="e8a13-134">booliano</span><span class="sxs-lookup"><span data-stu-id="e8a13-134">boolean</span></span>|<span data-ttu-id="e8a13-135">Representa se todas as colunas do intervalo atual estão ocultas.</span><span class="sxs-lookup"><span data-stu-id="e8a13-135">Represents if all columns of the current range are hidden.</span></span>|
-|<span data-ttu-id="e8a13-136">formulas</span><span class="sxs-lookup"><span data-stu-id="e8a13-136">formulas</span></span>|<span data-ttu-id="e8a13-137">Json</span><span class="sxs-lookup"><span data-stu-id="e8a13-137">Json</span></span>|<span data-ttu-id="e8a13-138">Representa a fórmula em notação A1.</span><span class="sxs-lookup"><span data-stu-id="e8a13-138">Represents the formula in A1-style notation.</span></span>|
-|<span data-ttu-id="e8a13-139">formulasLocal</span><span class="sxs-lookup"><span data-stu-id="e8a13-139">formulasLocal</span></span>|<span data-ttu-id="e8a13-140">Json</span><span class="sxs-lookup"><span data-stu-id="e8a13-140">Json</span></span>|<span data-ttu-id="e8a13-p105">Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.</span><span class="sxs-lookup"><span data-stu-id="e8a13-p105">Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.</span></span>|
-|<span data-ttu-id="e8a13-143">formulasR1C1</span><span class="sxs-lookup"><span data-stu-id="e8a13-143">formulasR1C1</span></span>|<span data-ttu-id="e8a13-144">Json</span><span class="sxs-lookup"><span data-stu-id="e8a13-144">Json</span></span>|<span data-ttu-id="e8a13-145">Representa a fórmula em notação no estilo L1C1.</span><span class="sxs-lookup"><span data-stu-id="e8a13-145">Represents the formula in R1C1-style notation.</span></span>|
-|<span data-ttu-id="e8a13-146">numberFormat</span><span class="sxs-lookup"><span data-stu-id="e8a13-146">numberFormat</span></span>|<span data-ttu-id="e8a13-147">Json</span><span class="sxs-lookup"><span data-stu-id="e8a13-147">Json</span></span>|<span data-ttu-id="e8a13-148">Representa o código de formato de número do Excel para determinada célula.</span><span class="sxs-lookup"><span data-stu-id="e8a13-148">Represents Excel's number format code for the given cell.</span></span>|
-|<span data-ttu-id="e8a13-149">rowHidden</span><span class="sxs-lookup"><span data-stu-id="e8a13-149">rowHidden</span></span>|<span data-ttu-id="e8a13-150">booliano</span><span class="sxs-lookup"><span data-stu-id="e8a13-150">boolean</span></span>|<span data-ttu-id="e8a13-151">Representa se todas as linhas do intervalo atual estão ocultas.</span><span class="sxs-lookup"><span data-stu-id="e8a13-151">Represents if all rows of the current range are hidden.</span></span>|
-|<span data-ttu-id="e8a13-152">values</span><span class="sxs-lookup"><span data-stu-id="e8a13-152">values</span></span>|<span data-ttu-id="e8a13-153">Json</span><span class="sxs-lookup"><span data-stu-id="e8a13-153">Json</span></span>|<span data-ttu-id="e8a13-p106">Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.</span><span class="sxs-lookup"><span data-stu-id="e8a13-p106">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
+|<span data-ttu-id="53fed-133">columnHidden</span><span class="sxs-lookup"><span data-stu-id="53fed-133">columnHidden</span></span>|<span data-ttu-id="53fed-134">booliano</span><span class="sxs-lookup"><span data-stu-id="53fed-134">boolean</span></span>|<span data-ttu-id="53fed-135">Representa se todas as colunas do intervalo atual estão ocultas.</span><span class="sxs-lookup"><span data-stu-id="53fed-135">Represents if all columns of the current range are hidden.</span></span>|
+|<span data-ttu-id="53fed-136">fórmulas</span><span class="sxs-lookup"><span data-stu-id="53fed-136">formulas</span></span>|<span data-ttu-id="53fed-137">Json</span><span class="sxs-lookup"><span data-stu-id="53fed-137">Json</span></span>|<span data-ttu-id="53fed-138">Representa a fórmula em notação A1.</span><span class="sxs-lookup"><span data-stu-id="53fed-138">Represents the formula in A1-style notation.</span></span>|
+|<span data-ttu-id="53fed-139">formulasLocal</span><span class="sxs-lookup"><span data-stu-id="53fed-139">formulasLocal</span></span>|<span data-ttu-id="53fed-140">Json</span><span class="sxs-lookup"><span data-stu-id="53fed-140">Json</span></span>|<span data-ttu-id="53fed-p105">Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.</span><span class="sxs-lookup"><span data-stu-id="53fed-p105">Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.</span></span>|
+|<span data-ttu-id="53fed-143">formulasR1C1</span><span class="sxs-lookup"><span data-stu-id="53fed-143">formulasR1C1</span></span>|<span data-ttu-id="53fed-144">Json</span><span class="sxs-lookup"><span data-stu-id="53fed-144">Json</span></span>|<span data-ttu-id="53fed-145">Representa a fórmula em notação no estilo L1C1.</span><span class="sxs-lookup"><span data-stu-id="53fed-145">Represents the formula in R1C1-style notation.</span></span>|
+|<span data-ttu-id="53fed-146">numberFormat</span><span class="sxs-lookup"><span data-stu-id="53fed-146">numberFormat</span></span>|<span data-ttu-id="53fed-147">Json</span><span class="sxs-lookup"><span data-stu-id="53fed-147">Json</span></span>|<span data-ttu-id="53fed-148">Representa o código de formato de número do Excel para determinada célula.</span><span class="sxs-lookup"><span data-stu-id="53fed-148">Represents Excel's number format code for the given cell.</span></span>|
+|<span data-ttu-id="53fed-149">rowHidden</span><span class="sxs-lookup"><span data-stu-id="53fed-149">rowHidden</span></span>|<span data-ttu-id="53fed-150">booliano</span><span class="sxs-lookup"><span data-stu-id="53fed-150">boolean</span></span>|<span data-ttu-id="53fed-151">Representa se todas as linhas do intervalo atual estão ocultas.</span><span class="sxs-lookup"><span data-stu-id="53fed-151">Represents if all rows of the current range are hidden.</span></span>|
+|<span data-ttu-id="53fed-152">values</span><span class="sxs-lookup"><span data-stu-id="53fed-152">values</span></span>|<span data-ttu-id="53fed-153">Json</span><span class="sxs-lookup"><span data-stu-id="53fed-153">Json</span></span>|<span data-ttu-id="53fed-p106">Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.</span><span class="sxs-lookup"><span data-stu-id="53fed-p106">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e8a13-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8a13-157">Response</span></span>
+## <a name="response"></a><span data-ttu-id="53fed-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="53fed-157">Response</span></span>
 
-<span data-ttu-id="e8a13-158">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [Range](../resources/range.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e8a13-158">If successful, this method returns a `200 OK` response code and updated [Range](../resources/range.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e8a13-159">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e8a13-159">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e8a13-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e8a13-160">Request</span></span>
-<span data-ttu-id="e8a13-p107">Este é um exemplo da solicitação. Atualiza um intervalo: valores, formato de número e fórmula. A entrada `null` é para instruir a API a ignorar a célula para esta entrada específica. Os valores, o formato de número e as fórmulas podem ser atualizados independentemente ou combinados na mesma chamada à API.</span><span class="sxs-lookup"><span data-stu-id="e8a13-p107">Here is an example of the request. It updates a range - values, number-format and formula. The `null` input is to instruct the API to ignore the cell for that particular input. The values, number-format and formulas can be independently updated or combined together in the same API call.</span></span> 
+<span data-ttu-id="53fed-158">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [Range](../resources/range.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="53fed-158">If successful, this method returns a `200 OK` response code and updated [Range](../resources/range.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="53fed-159">Exemplo</span><span class="sxs-lookup"><span data-stu-id="53fed-159">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="53fed-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="53fed-160">Request</span></span>
+<span data-ttu-id="53fed-p107">Este é um exemplo da solicitação. Atualiza um intervalo: valores, formato de número e fórmula. A entrada `null` é para instruir a API a ignorar a célula para esta entrada específica. Os valores, o formato de número e as fórmulas podem ser atualizados independentemente ou combinados na mesma chamada à API.</span><span class="sxs-lookup"><span data-stu-id="53fed-p107">Here is an example of the request. It updates a range - values, number-format and formula. The `null` input is to instruct the API to ignore the cell for that particular input. The values, number-format and formulas can be independently updated or combined together in the same API call.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -71,8 +71,8 @@ Content-length: 169
 "numberFormat" : [[null,null], ["m-ddd", null]]
 }
 ```
-##### <a name="response"></a><span data-ttu-id="e8a13-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8a13-165">Response</span></span>
-<span data-ttu-id="e8a13-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e8a13-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="53fed-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="53fed-165">Response</span></span>
+<span data-ttu-id="53fed-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="53fed-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,6 +92,14 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="53fed-169">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="53fed-169">SDK sample code</span></span>
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="53fed-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53fed-170">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_range-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,6 +109,7 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/range-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
       Inconsistent types between parameter (Collection) and table (None)",
     "Warning: /api-reference/v1.0/api/range-update.md/update_range/values:
