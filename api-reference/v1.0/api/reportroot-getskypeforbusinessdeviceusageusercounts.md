@@ -4,30 +4,30 @@ description: Obtenha as tendências de uso de quantos usuários de sua organiza�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 980e83838833e2fc7c16218417eb84df4949cc83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac6e4ce816162115d1f2c340c2479cf546d979ad
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584793"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33604203"
 ---
-# <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a><span data-ttu-id="acede-104">reportRoot: getSkypeForBusinessDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="acede-104">reportRoot: getSkypeForBusinessDeviceUsageUserCounts</span></span>
+# <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a><span data-ttu-id="d9c77-104">reportRoot: getSkypeForBusinessDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="d9c77-104">reportRoot: getSkypeForBusinessDeviceUsageUserCounts</span></span>
 
-<span data-ttu-id="acede-105">Obtenha as tendências de uso de quantos usuários de sua organização conectaram usando o aplicativo Skype for Business.</span><span class="sxs-lookup"><span data-stu-id="acede-105">Get the usage trends on how many users in your organization have connected using the Skype for Business app.</span></span> <span data-ttu-id="acede-106">Você também obterá um detalhamento pelo tipo de dispositivo (Windows, Windows Phone, telefone Android, iPhone ou iPad) em que o aplicativo cliente Skype for Business está instalado e usado em toda a sua organização.</span><span class="sxs-lookup"><span data-stu-id="acede-106">You will also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.</span></span>
+<span data-ttu-id="d9c77-105">Obtenha as tendências de uso de quantos usuários de sua organização conectaram usando o aplicativo Skype for Business.</span><span class="sxs-lookup"><span data-stu-id="d9c77-105">Get the usage trends on how many users in your organization have connected using the Skype for Business app.</span></span> <span data-ttu-id="d9c77-106">Você também obterá um detalhamento pelo tipo de dispositivo (Windows, Windows Phone, telefone Android, iPhone ou iPad) em que o aplicativo cliente Skype for Business está instalado e usado em toda a sua organização.</span><span class="sxs-lookup"><span data-stu-id="d9c77-106">You will also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.</span></span>
 
-> <span data-ttu-id="acede-107">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Skype for Business usado pelos clientes](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).</span><span class="sxs-lookup"><span data-stu-id="acede-107">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).</span></span>
+> <span data-ttu-id="d9c77-107">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Skype for Business usado pelos clientes](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).</span><span class="sxs-lookup"><span data-stu-id="d9c77-107">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="acede-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="acede-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d9c77-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="d9c77-108">Permissions</span></span>
 
-<span data-ttu-id="acede-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="acede-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d9c77-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9c77-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="acede-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="acede-111">Permission type</span></span>                        | <span data-ttu-id="acede-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="acede-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d9c77-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d9c77-111">Permission type</span></span>                        | <span data-ttu-id="d9c77-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d9c77-112">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="acede-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="acede-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="acede-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="acede-114">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="acede-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="acede-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acede-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="acede-116">Not supported.</span></span>                           |
-| <span data-ttu-id="acede-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="acede-117">Application</span></span>                            | <span data-ttu-id="acede-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="acede-118">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="d9c77-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d9c77-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="d9c77-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d9c77-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="d9c77-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d9c77-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9c77-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d9c77-116">Not supported.</span></span>                           |
+| <span data-ttu-id="d9c77-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d9c77-117">Application</span></span>                            | <span data-ttu-id="d9c77-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d9c77-118">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="acede-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="acede-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d9c77-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d9c77-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -35,43 +35,43 @@ ms.locfileid: "32584793"
 GET /reports/getSkypeForBusinessDeviceUsageUserCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="acede-120">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="acede-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="d9c77-120">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="d9c77-120">Function parameters</span></span>
 
-<span data-ttu-id="acede-121">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="acede-121">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="d9c77-121">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="d9c77-121">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="acede-122">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="acede-122">Parameter</span></span> | <span data-ttu-id="acede-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="acede-123">Type</span></span>   | <span data-ttu-id="acede-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="acede-124">Description</span></span>                              |
+| <span data-ttu-id="d9c77-122">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="d9c77-122">Parameter</span></span> | <span data-ttu-id="d9c77-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="d9c77-123">Type</span></span>   | <span data-ttu-id="d9c77-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="d9c77-124">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="acede-125">ponto</span><span class="sxs-lookup"><span data-stu-id="acede-125">period</span></span>    | <span data-ttu-id="acede-126">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="acede-126">string</span></span> | <span data-ttu-id="acede-127">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="acede-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="acede-128">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="acede-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="acede-129">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="acede-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="acede-130">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="acede-130">Required.</span></span> |
+| <span data-ttu-id="d9c77-125">ponto</span><span class="sxs-lookup"><span data-stu-id="d9c77-125">period</span></span>    | <span data-ttu-id="d9c77-126">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d9c77-126">string</span></span> | <span data-ttu-id="d9c77-127">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="d9c77-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="d9c77-128">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="d9c77-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="d9c77-129">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="d9c77-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="d9c77-130">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d9c77-130">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="acede-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="acede-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d9c77-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d9c77-131">Request headers</span></span>
 
-| <span data-ttu-id="acede-132">Nome</span><span class="sxs-lookup"><span data-stu-id="acede-132">Name</span></span>          | <span data-ttu-id="acede-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="acede-133">Description</span></span>                              |
+| <span data-ttu-id="d9c77-132">Nome</span><span class="sxs-lookup"><span data-stu-id="d9c77-132">Name</span></span>          | <span data-ttu-id="d9c77-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="d9c77-133">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="acede-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="acede-134">Authorization</span></span> | <span data-ttu-id="acede-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="acede-p105">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="acede-137">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="acede-137">If-None-Match</span></span> | <span data-ttu-id="acede-138">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="acede-138">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="acede-139">Opcional.</span><span class="sxs-lookup"><span data-stu-id="acede-139">Optional.</span></span> |
+| <span data-ttu-id="d9c77-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="d9c77-134">Authorization</span></span> | <span data-ttu-id="d9c77-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d9c77-p105">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="d9c77-137">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="d9c77-137">If-None-Match</span></span> | <span data-ttu-id="d9c77-138">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="d9c77-138">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="d9c77-139">Opcional.</span><span class="sxs-lookup"><span data-stu-id="d9c77-139">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="acede-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="acede-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d9c77-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="d9c77-140">Response</span></span>
 
-<span data-ttu-id="acede-141">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="acede-141">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="acede-142">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="acede-142">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="d9c77-141">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="d9c77-141">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="d9c77-142">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="d9c77-142">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="acede-143">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="acede-143">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="d9c77-143">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="d9c77-143">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="acede-144">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="acede-144">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="d9c77-144">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="d9c77-144">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="acede-145">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="acede-145">Report Refresh Date</span></span>
-- <span data-ttu-id="acede-146">Windows</span><span class="sxs-lookup"><span data-stu-id="acede-146">Windows</span></span>
-- <span data-ttu-id="acede-147">Windows Phone</span><span class="sxs-lookup"><span data-stu-id="acede-147">Windows Phone</span></span>
-- <span data-ttu-id="acede-148">Telefone Android</span><span class="sxs-lookup"><span data-stu-id="acede-148">Android Phone</span></span>
-- <span data-ttu-id="acede-149">iPhone</span><span class="sxs-lookup"><span data-stu-id="acede-149">iPhone</span></span>
-- <span data-ttu-id="acede-150">iPad</span><span class="sxs-lookup"><span data-stu-id="acede-150">iPad</span></span>
-- <span data-ttu-id="acede-151">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="acede-151">Report Date</span></span>
-- <span data-ttu-id="acede-152">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="acede-152">Report Period</span></span>
+- <span data-ttu-id="d9c77-145">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="d9c77-145">Report Refresh Date</span></span>
+- <span data-ttu-id="d9c77-146">Windows</span><span class="sxs-lookup"><span data-stu-id="d9c77-146">Windows</span></span>
+- <span data-ttu-id="d9c77-147">Windows Phone</span><span class="sxs-lookup"><span data-stu-id="d9c77-147">Windows Phone</span></span>
+- <span data-ttu-id="d9c77-148">Telefone Android</span><span class="sxs-lookup"><span data-stu-id="d9c77-148">Android Phone</span></span>
+- <span data-ttu-id="d9c77-149">iPhone</span><span class="sxs-lookup"><span data-stu-id="d9c77-149">iPhone</span></span>
+- <span data-ttu-id="d9c77-150">iPad</span><span class="sxs-lookup"><span data-stu-id="d9c77-150">iPad</span></span>
+- <span data-ttu-id="d9c77-151">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="d9c77-151">Report Date</span></span>
+- <span data-ttu-id="d9c77-152">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="d9c77-152">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="acede-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="acede-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d9c77-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d9c77-153">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="acede-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="acede-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d9c77-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d9c77-154">Request</span></span>
 
-<span data-ttu-id="acede-155">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="acede-155">The following is an example of the request.</span></span>
+<span data-ttu-id="d9c77-155">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d9c77-155">The following is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -83,9 +83,9 @@ GET /reports/getSkypeForBusinessDeviceUsageUserCounts(period='{period_value}')
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessDeviceUsageUserCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="acede-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="acede-156">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d9c77-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="d9c77-156">Response</span></span>
 
-<span data-ttu-id="acede-157">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="acede-157">The following is an example of the response.</span></span>
+<span data-ttu-id="d9c77-157">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d9c77-157">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -98,8 +98,18 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="d9c77-158">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="d9c77-158">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="d9c77-159">Basic</span><span class="sxs-lookup"><span data-stu-id="d9c77-159">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessdeviceusageusercounts-Cs-snippets.md)]
 
-<span data-ttu-id="acede-158">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="acede-158">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d9c77-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d9c77-160">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessdeviceusageusercounts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<span data-ttu-id="d9c77-161">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="d9c77-161">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -109,3 +119,16 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Windows,Windows Phone,Android Phone,iPhone,iPad,Report Date,Report Period
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinessdeviceusageusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinessdeviceusageusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
