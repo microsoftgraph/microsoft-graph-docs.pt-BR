@@ -4,49 +4,49 @@ description: Obtenha a lista de dispositivos de propriedade do usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a9956d61bace31f9a4dc51f8e8a7aa2855bfb19b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 370a253bdbbaf49a14db31c2a1f98222fa8cf5e1
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334783"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637217"
 ---
-# <a name="list-owneddevices"></a><span data-ttu-id="0cf29-103">Listar ownedDevices</span><span class="sxs-lookup"><span data-stu-id="0cf29-103">List ownedDevices</span></span>
+# <a name="list-owneddevices"></a><span data-ttu-id="a4ab4-103">Listar ownedDevices</span><span class="sxs-lookup"><span data-stu-id="a4ab4-103">List ownedDevices</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0cf29-104">Obtenha a lista de dispositivos de propriedade do usuário.</span><span class="sxs-lookup"><span data-stu-id="0cf29-104">Get the list of devices that are owned by the user.</span></span>
-## <a name="permissions"></a><span data-ttu-id="0cf29-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="0cf29-105">Permissions</span></span>
-<span data-ttu-id="0cf29-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0cf29-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a4ab4-104">Obtenha a lista de dispositivos de propriedade do usuário.</span><span class="sxs-lookup"><span data-stu-id="a4ab4-104">Get the list of devices that are owned by the user.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a4ab4-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a4ab4-105">Permissions</span></span>
+<span data-ttu-id="a4ab4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a4ab4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0cf29-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0cf29-108">Permission type</span></span>      | <span data-ttu-id="0cf29-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0cf29-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a4ab4-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a4ab4-108">Permission type</span></span>      | <span data-ttu-id="a4ab4-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a4ab4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0cf29-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0cf29-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0cf29-111">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0cf29-111">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="0cf29-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0cf29-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0cf29-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0cf29-113">Not supported.</span></span>    |
-|<span data-ttu-id="0cf29-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0cf29-114">Application</span></span> | <span data-ttu-id="0cf29-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0cf29-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="a4ab4-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a4ab4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a4ab4-111">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a4ab4-111">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a4ab4-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a4ab4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a4ab4-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a4ab4-113">Not supported.</span></span>    |
+|<span data-ttu-id="a4ab4-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a4ab4-114">Application</span></span> | <span data-ttu-id="a4ab4-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a4ab4-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0cf29-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0cf29-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a4ab4-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a4ab4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/ownedDevices
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="0cf29-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0cf29-117">Optional query parameters</span></span>
-<span data-ttu-id="0cf29-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="0cf29-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="0cf29-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0cf29-119">Request headers</span></span>
-| <span data-ttu-id="0cf29-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="0cf29-120">Header</span></span>       | <span data-ttu-id="0cf29-121">Valor</span><span class="sxs-lookup"><span data-stu-id="0cf29-121">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="a4ab4-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a4ab4-117">Optional query parameters</span></span>
+<span data-ttu-id="a4ab4-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a4ab4-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a4ab4-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a4ab4-119">Request headers</span></span>
+| <span data-ttu-id="a4ab4-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a4ab4-120">Header</span></span>       | <span data-ttu-id="a4ab4-121">Valor</span><span class="sxs-lookup"><span data-stu-id="a4ab4-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="0cf29-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="0cf29-122">Authorization</span></span>  | <span data-ttu-id="0cf29-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0cf29-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="0cf29-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="0cf29-125">Accept</span></span>  | <span data-ttu-id="0cf29-126">application/json</span><span class="sxs-lookup"><span data-stu-id="0cf29-126">application/json</span></span>|
+| <span data-ttu-id="a4ab4-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="a4ab4-122">Authorization</span></span>  | <span data-ttu-id="a4ab4-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a4ab4-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a4ab4-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="a4ab4-125">Accept</span></span>  | <span data-ttu-id="a4ab4-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a4ab4-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0cf29-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0cf29-127">Request body</span></span>
-<span data-ttu-id="0cf29-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0cf29-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a4ab4-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a4ab4-127">Request body</span></span>
+<span data-ttu-id="a4ab4-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a4ab4-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0cf29-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="0cf29-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a4ab4-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="a4ab4-129">Response</span></span>
 
-<span data-ttu-id="0cf29-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0cf29-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="0cf29-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0cf29-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0cf29-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0cf29-132">Request</span></span>
-<span data-ttu-id="0cf29-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0cf29-133">Here is an example of the request.</span></span>
+<span data-ttu-id="a4ab4-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a4ab4-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a4ab4-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a4ab4-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a4ab4-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a4ab4-132">Request</span></span>
+<span data-ttu-id="a4ab4-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a4ab4-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_owneddevices"
@@ -54,8 +54,8 @@ GET /users/{id | userPrincipalName}/ownedDevices
 ```http
 GET https://graph.microsoft.com/beta/me/ownedDevices
 ```
-##### <a name="response"></a><span data-ttu-id="0cf29-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="0cf29-134">Response</span></span>
-<span data-ttu-id="0cf29-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0cf29-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a4ab4-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="a4ab4-134">Response</span></span>
+<span data-ttu-id="a4ab4-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a4ab4-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,6 +75,16 @@ Content-length: 55
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="a4ab4-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="a4ab4-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="a4ab4-139">Basic</span><span class="sxs-lookup"><span data-stu-id="a4ab4-139">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_owneddevices-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a4ab4-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a4ab4-140">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_owneddevices-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -85,6 +95,9 @@ Content-length: 55
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-owneddevices.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-owneddevices.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -2,57 +2,57 @@
 title: Listar o servicePrincipalName memberOf
 description: Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro direto. Essa operação não é transitiva.
 localization_priority: Normal
-ms.openlocfilehash: a5f00aa87f4df1d99d04f41b74b939bd8fb87236
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d487f7a29d5b6e9de42254e7b090405ced3bff3d
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331354"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638799"
 ---
-# <a name="list-serviceprincipal-memberof"></a><span data-ttu-id="9e0b1-104">Listar o servicePrincipalName memberOf</span><span class="sxs-lookup"><span data-stu-id="9e0b1-104">List servicePrincipal memberOf</span></span>
+# <a name="list-serviceprincipal-memberof"></a><span data-ttu-id="dada5-104">Listar o servicePrincipalName memberOf</span><span class="sxs-lookup"><span data-stu-id="dada5-104">List servicePrincipal memberOf</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9e0b1-105">Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro direto.</span><span class="sxs-lookup"><span data-stu-id="9e0b1-105">Get the groups and directory roles that this service principal is a direct member of.</span></span> <span data-ttu-id="9e0b1-106">Essa operação não é transitiva.</span><span class="sxs-lookup"><span data-stu-id="9e0b1-106">This operation is not transitive.</span></span>
+<span data-ttu-id="dada5-105">Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro direto.</span><span class="sxs-lookup"><span data-stu-id="dada5-105">Get the groups and directory roles that this service principal is a direct member of.</span></span> <span data-ttu-id="dada5-106">Essa operação não é transitiva.</span><span class="sxs-lookup"><span data-stu-id="dada5-106">This operation is not transitive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9e0b1-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="9e0b1-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dada5-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="dada5-107">Permissions</span></span>
 
-<span data-ttu-id="9e0b1-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9e0b1-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dada5-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dada5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9e0b1-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9e0b1-110">Permission type</span></span>      | <span data-ttu-id="9e0b1-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9e0b1-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dada5-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dada5-110">Permission type</span></span>      | <span data-ttu-id="dada5-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dada5-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9e0b1-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9e0b1-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9e0b1-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9e0b1-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="9e0b1-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9e0b1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e0b1-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9e0b1-115">Not supported.</span></span>    |
-|<span data-ttu-id="9e0b1-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9e0b1-116">Application</span></span> | <span data-ttu-id="9e0b1-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e0b1-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="dada5-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dada5-112">Delegated (work or school account)</span></span> | <span data-ttu-id="dada5-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="dada5-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="dada5-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dada5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dada5-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dada5-115">Not supported.</span></span>    |
+|<span data-ttu-id="dada5-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dada5-116">Application</span></span> | <span data-ttu-id="dada5-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dada5-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9e0b1-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9e0b1-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dada5-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dada5-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/memberOf
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9e0b1-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9e0b1-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="dada5-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="dada5-119">Optional query parameters</span></span>
 
-<span data-ttu-id="9e0b1-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="9e0b1-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="dada5-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="dada5-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9e0b1-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9e0b1-121">Request headers</span></span>
-| <span data-ttu-id="9e0b1-122">Nome</span><span class="sxs-lookup"><span data-stu-id="9e0b1-122">Name</span></span>       | <span data-ttu-id="9e0b1-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="9e0b1-123">Type</span></span> | <span data-ttu-id="9e0b1-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="9e0b1-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dada5-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dada5-121">Request headers</span></span>
+| <span data-ttu-id="dada5-122">Nome</span><span class="sxs-lookup"><span data-stu-id="dada5-122">Name</span></span>       | <span data-ttu-id="dada5-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="dada5-123">Type</span></span> | <span data-ttu-id="dada5-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="dada5-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="9e0b1-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="9e0b1-125">Authorization</span></span>  | <span data-ttu-id="9e0b1-126">string</span><span class="sxs-lookup"><span data-stu-id="9e0b1-126">string</span></span>  | <span data-ttu-id="9e0b1-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9e0b1-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dada5-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="dada5-125">Authorization</span></span>  | <span data-ttu-id="dada5-126">string</span><span class="sxs-lookup"><span data-stu-id="dada5-126">string</span></span>  | <span data-ttu-id="dada5-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dada5-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9e0b1-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9e0b1-129">Request body</span></span>
-<span data-ttu-id="9e0b1-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9e0b1-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dada5-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dada5-129">Request body</span></span>
+<span data-ttu-id="dada5-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="dada5-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9e0b1-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="9e0b1-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dada5-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="dada5-131">Response</span></span>
 
-<span data-ttu-id="9e0b1-132">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9e0b1-132">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+<span data-ttu-id="dada5-132">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dada5-132">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9e0b1-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9e0b1-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dada5-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="dada5-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9e0b1-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9e0b1-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="dada5-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dada5-134">Request</span></span>
 
-<span data-ttu-id="9e0b1-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9e0b1-135">Here is an example of the request.</span></span>
+<span data-ttu-id="dada5-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="dada5-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_serviceprincipal_memberof"
@@ -61,9 +61,9 @@ GET /servicePrincipals/{id}/memberOf
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 ```
 
-### <a name="response"></a><span data-ttu-id="9e0b1-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="9e0b1-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dada5-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="dada5-136">Response</span></span>
 
-<span data-ttu-id="9e0b1-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9e0b1-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="dada5-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dada5-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,6 +89,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="dada5-140">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="dada5-140">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="dada5-141">Basic</span><span class="sxs-lookup"><span data-stu-id="dada5-141">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_serviceprincipal_memberof-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dada5-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dada5-142">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_serviceprincipal_memberof-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,6 +109,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-list-memberof.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/serviceprincipal-list-memberof.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,55 +4,55 @@ description: Recupere as propriedades e os relacionamentos de um objeto **applic
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2fe08254384c4ff7123e3876ba2286068d2ddb28
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d93f661baf60f5d6116639ae3d2dc3aa9f167f48
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322877"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636230"
 ---
-# <a name="get-applicationsigninsummary"></a><span data-ttu-id="95fb2-103">Obter applicationSignInSummary</span><span class="sxs-lookup"><span data-stu-id="95fb2-103">Get applicationSignInSummary</span></span>
+# <a name="get-applicationsigninsummary"></a><span data-ttu-id="607ed-103">Obter applicationSignInSummary</span><span class="sxs-lookup"><span data-stu-id="607ed-103">Get applicationSignInSummary</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="95fb2-104">Recupere as propriedades e os relacionamentos de um objeto [applicationSigninSummary](../resources/applicationsigninsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="95fb2-104">Retrieve the properties and relationships of an [applicationSigninSummary](../resources/applicationsigninsummary.md) object.</span></span>
+<span data-ttu-id="607ed-104">Recupere as propriedades e os relacionamentos de um objeto [applicationSigninSummary](../resources/applicationsigninsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="607ed-104">Retrieve the properties and relationships of an [applicationSigninSummary](../resources/applicationsigninsummary.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="95fb2-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="95fb2-105">Permissions</span></span>
-<span data-ttu-id="95fb2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="95fb2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="607ed-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="607ed-105">Permissions</span></span>
+<span data-ttu-id="607ed-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="607ed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="95fb2-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="95fb2-108">Permission type</span></span>      | <span data-ttu-id="95fb2-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="95fb2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="607ed-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="607ed-108">Permission type</span></span>      | <span data-ttu-id="607ed-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="607ed-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="95fb2-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="95fb2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="95fb2-111">Report. Read. All</span><span class="sxs-lookup"><span data-stu-id="95fb2-111">Report.Read.All</span></span> |
-|<span data-ttu-id="95fb2-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="95fb2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95fb2-113">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="95fb2-113">Not supported</span></span>   |
-|<span data-ttu-id="95fb2-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="95fb2-114">Application</span></span> | <span data-ttu-id="95fb2-115">Report. Read. All</span><span class="sxs-lookup"><span data-stu-id="95fb2-115">Report.Read.All</span></span> | 
+|<span data-ttu-id="607ed-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="607ed-110">Delegated (work or school account)</span></span> | <span data-ttu-id="607ed-111">Report. Read. All</span><span class="sxs-lookup"><span data-stu-id="607ed-111">Report.Read.All</span></span> |
+|<span data-ttu-id="607ed-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="607ed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="607ed-113">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="607ed-113">Not supported</span></span>   |
+|<span data-ttu-id="607ed-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="607ed-114">Application</span></span> | <span data-ttu-id="607ed-115">Report. Read. All</span><span class="sxs-lookup"><span data-stu-id="607ed-115">Report.Read.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="95fb2-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="95fb2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="607ed-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="607ed-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ``` http
 reports/getAzureADApplicationSignInSummary(period='{period}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="95fb2-117">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="95fb2-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="607ed-117">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="607ed-117">Function parameters</span></span>
 
-| <span data-ttu-id="95fb2-118">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="95fb2-118">Parameter</span></span> | <span data-ttu-id="95fb2-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="95fb2-119">Description</span></span> |
+| <span data-ttu-id="607ed-118">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="607ed-118">Parameter</span></span> | <span data-ttu-id="607ed-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="607ed-119">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="95fb2-120">ponto</span><span class="sxs-lookup"><span data-stu-id="95fb2-120">period</span></span> | <span data-ttu-id="95fb2-121">`D7` (Últimos sete dias) ou `D30` (últimos 30 dias); outros valores geram erros.</span><span class="sxs-lookup"><span data-stu-id="95fb2-121">Either `D7` (last seven days) or `D30` (last 30 days); other values generate errors.</span></span> |
+| <span data-ttu-id="607ed-120">ponto</span><span class="sxs-lookup"><span data-stu-id="607ed-120">period</span></span> | <span data-ttu-id="607ed-121">`D7` (Últimos sete dias) ou `D30` (últimos 30 dias); outros valores geram erros.</span><span class="sxs-lookup"><span data-stu-id="607ed-121">Either `D7` (last seven days) or `D30` (last 30 days); other values generate errors.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="95fb2-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="95fb2-122">Request headers</span></span>
-| <span data-ttu-id="95fb2-123">Nome</span><span class="sxs-lookup"><span data-stu-id="95fb2-123">Name</span></span>      |<span data-ttu-id="95fb2-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="95fb2-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="607ed-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="607ed-122">Request headers</span></span>
+| <span data-ttu-id="607ed-123">Nome</span><span class="sxs-lookup"><span data-stu-id="607ed-123">Name</span></span>      |<span data-ttu-id="607ed-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="607ed-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="95fb2-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="95fb2-125">Authorization</span></span> | <span data-ttu-id="95fb2-126">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="95fb2-126">Bearer {code}</span></span> |
+| <span data-ttu-id="607ed-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="607ed-125">Authorization</span></span> | <span data-ttu-id="607ed-126">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="607ed-126">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="95fb2-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="95fb2-127">Request body</span></span>
-<span data-ttu-id="95fb2-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="95fb2-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="607ed-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="607ed-127">Request body</span></span>
+<span data-ttu-id="607ed-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="607ed-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="95fb2-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="95fb2-129">Response</span></span>
-<span data-ttu-id="95fb2-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [applicationSignInSummary](../resources/applicationsigninsummary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="95fb2-130">If successful, this method returns a `200 OK` response code and an [applicationSignInSummary](../resources/applicationsigninsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="607ed-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="607ed-129">Response</span></span>
+<span data-ttu-id="607ed-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [applicationSignInSummary](../resources/applicationsigninsummary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="607ed-130">If successful, this method returns a `200 OK` response code and an [applicationSignInSummary](../resources/applicationsigninsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="95fb2-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="95fb2-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="607ed-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="607ed-131">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="95fb2-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="95fb2-132">Request</span></span>
-<span data-ttu-id="95fb2-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="95fb2-133">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="607ed-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="607ed-132">Request</span></span>
+<span data-ttu-id="607ed-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="607ed-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_applicationsigninsummary"
@@ -60,10 +60,10 @@ reports/getAzureADApplicationSignInSummary(period='{period}')
 ```http
 GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
 ```
-### <a name="response"></a><span data-ttu-id="95fb2-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="95fb2-134">Response</span></span>
-<span data-ttu-id="95fb2-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="95fb2-135">The following is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="607ed-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="607ed-134">Response</span></span>
+<span data-ttu-id="607ed-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="607ed-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="95fb2-136">**Observação:** O objeto Response mostrado aqui mmight ser reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="95fb2-136">**Note:** The response object shown here mmight be shortened for readability.</span></span> <span data-ttu-id="95fb2-137">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="95fb2-137">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="607ed-136">**Observação:** O objeto Response mostrado aqui mmight ser reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="607ed-136">**Note:** The response object shown here mmight be shortened for readability.</span></span> <span data-ttu-id="607ed-137">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="607ed-137">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,6 +82,16 @@ Content-length: 157
   "successPercentage": 99
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="607ed-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="607ed-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="607ed-139">Basic</span><span class="sxs-lookup"><span data-stu-id="607ed-139">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_applicationsigninsummary-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="607ed-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="607ed-140">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_applicationsigninsummary-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -90,5 +100,9 @@ Content-length: 157
   "description": "Get applicationSignInSummary",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/applicationsigninsummary-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/applicationsigninsummary-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -4,50 +4,50 @@ description: Obter os grupos de calendários do usuário.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb9a8115c3342cb6064b1eb67809de1ecba4b395
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cc4737cfa0e34c1f1bc313d9b3bd93832beaea9b
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334923"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637308"
 ---
-# <a name="list-calendargroups"></a><span data-ttu-id="cfbdd-103">Listar calendarGroups</span><span class="sxs-lookup"><span data-stu-id="cfbdd-103">List calendarGroups</span></span>
+# <a name="list-calendargroups"></a><span data-ttu-id="d2503-103">Listar calendarGroups</span><span class="sxs-lookup"><span data-stu-id="d2503-103">List calendarGroups</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cfbdd-104">Obter os grupos de calendários do usuário.</span><span class="sxs-lookup"><span data-stu-id="cfbdd-104">Get the user's calendar groups.</span></span>
-## <a name="permissions"></a><span data-ttu-id="cfbdd-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="cfbdd-105">Permissions</span></span>
-<span data-ttu-id="cfbdd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cfbdd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d2503-104">Obter os grupos de calendários do usuário.</span><span class="sxs-lookup"><span data-stu-id="d2503-104">Get the user's calendar groups.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d2503-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d2503-105">Permissions</span></span>
+<span data-ttu-id="d2503-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d2503-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cfbdd-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cfbdd-108">Permission type</span></span>      | <span data-ttu-id="cfbdd-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cfbdd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d2503-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d2503-108">Permission type</span></span>      | <span data-ttu-id="d2503-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d2503-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cfbdd-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cfbdd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cfbdd-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cfbdd-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="cfbdd-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cfbdd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cfbdd-113">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cfbdd-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="cfbdd-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cfbdd-114">Application</span></span> | <span data-ttu-id="cfbdd-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cfbdd-115">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="d2503-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d2503-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d2503-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2503-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="d2503-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d2503-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2503-113">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2503-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="d2503-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d2503-114">Application</span></span> | <span data-ttu-id="d2503-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2503-115">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cfbdd-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cfbdd-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d2503-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d2503-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarGroups
 GET /users/{id | userPrincipalName}/calendarGroups
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cfbdd-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cfbdd-117">Optional query parameters</span></span>
-<span data-ttu-id="cfbdd-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="cfbdd-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="cfbdd-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cfbdd-119">Request headers</span></span>
-| <span data-ttu-id="cfbdd-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cfbdd-120">Header</span></span>       | <span data-ttu-id="cfbdd-121">Valor</span><span class="sxs-lookup"><span data-stu-id="cfbdd-121">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="d2503-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d2503-117">Optional query parameters</span></span>
+<span data-ttu-id="d2503-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d2503-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d2503-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d2503-119">Request headers</span></span>
+| <span data-ttu-id="d2503-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d2503-120">Header</span></span>       | <span data-ttu-id="d2503-121">Valor</span><span class="sxs-lookup"><span data-stu-id="d2503-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="cfbdd-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="cfbdd-122">Authorization</span></span>  | <span data-ttu-id="cfbdd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cfbdd-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="cfbdd-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cfbdd-125">Content-Type</span></span>  | <span data-ttu-id="cfbdd-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cfbdd-126">application/json</span></span>  |
+| <span data-ttu-id="d2503-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="d2503-122">Authorization</span></span>  | <span data-ttu-id="d2503-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d2503-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="d2503-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d2503-125">Content-Type</span></span>  | <span data-ttu-id="d2503-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d2503-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="cfbdd-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cfbdd-127">Request body</span></span>
-<span data-ttu-id="cfbdd-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cfbdd-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d2503-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d2503-127">Request body</span></span>
+<span data-ttu-id="d2503-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d2503-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cfbdd-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="cfbdd-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d2503-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2503-129">Response</span></span>
 
-<span data-ttu-id="cfbdd-130">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [CalendarGroup](../resources/calendargroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cfbdd-130">If successful, this method returns a `200 OK` response code and collection of [CalendarGroup](../resources/calendargroup.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cfbdd-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cfbdd-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cfbdd-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cfbdd-132">Request</span></span>
-<span data-ttu-id="cfbdd-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cfbdd-133">Here is an example of the request.</span></span>
+<span data-ttu-id="d2503-130">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [CalendarGroup](../resources/calendargroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d2503-130">If successful, this method returns a `200 OK` response code and collection of [CalendarGroup](../resources/calendargroup.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d2503-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d2503-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d2503-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d2503-132">Request</span></span>
+<span data-ttu-id="d2503-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d2503-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_calendargroups"
@@ -55,8 +55,8 @@ GET /users/{id | userPrincipalName}/calendarGroups
 ```http
 GET https://graph.microsoft.com/beta/me/calendarGroups
 ```
-##### <a name="response"></a><span data-ttu-id="cfbdd-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="cfbdd-134">Response</span></span>
-<span data-ttu-id="cfbdd-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cfbdd-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d2503-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2503-134">Response</span></span>
+<span data-ttu-id="d2503-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d2503-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,6 +79,16 @@ Content-length: 155
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="d2503-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="d2503-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="d2503-139">Basic</span><span class="sxs-lookup"><span data-stu-id="d2503-139">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_calendargroups-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d2503-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d2503-140">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_calendargroups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,6 +99,9 @@ Content-length: 155
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-calendargroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-calendargroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

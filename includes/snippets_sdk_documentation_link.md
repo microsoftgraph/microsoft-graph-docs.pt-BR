@@ -1,0 +1,3 @@
+<!-- markdownlint-disable MD041-->
+
+> <span data-ttu-id="3ec02-101">Para obter detalhes sobre como [Adicionar o SDK](https://docs.microsoft.com/graph/sdks/sdk-installation) ao seu projeto e [criar uma](https://docs.microsoft.com/graph/sdks/choose-authentication-providers) instância de provedor de autenticação, consulte a [documentação do SDK](https://docs.microsoft.com/graph/sdks/sdks-overview).</span><span class="sxs-lookup"><span data-stu-id="3ec02-101">For details about how to [add the SDK](https://docs.microsoft.com/graph/sdks/sdk-installation) to your project and [create an auth provider](https://docs.microsoft.com/graph/sdks/choose-authentication-providers) instance, see the [SDK documentation](https://docs.microsoft.com/graph/sdks/sdks-overview).</span></span> 
