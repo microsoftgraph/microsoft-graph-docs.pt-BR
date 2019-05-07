@@ -4,52 +4,52 @@ description: 'Atualize a propriedade gravável, **color**, do objeto outlookCate
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 65763a0bffa6536cffe755b6f0435a1d8d666937
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d48b04eb893632df4ecd9b80d09c80bd2d4e6a97
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562402"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611679"
 ---
-# <a name="update-outlook-category"></a><span data-ttu-id="f080e-104">Atualizar a categoria do Outlook</span><span class="sxs-lookup"><span data-stu-id="f080e-104">Update Outlook category</span></span>
+# <a name="update-outlook-category"></a><span data-ttu-id="67614-104">Atualizar a categoria do Outlook</span><span class="sxs-lookup"><span data-stu-id="67614-104">Update Outlook category</span></span>
 
 
-<span data-ttu-id="f080e-105">Atualize a propriedade gravável, **color**, do objeto [outlookCategory](../resources/outlookcategory.md) especificado.</span><span class="sxs-lookup"><span data-stu-id="f080e-105">Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span> <span data-ttu-id="f080e-106">Não é possível modificar a propriedade **displayName** depois de criar a categoria.</span><span class="sxs-lookup"><span data-stu-id="f080e-106">You cannot modify the **displayName** property once you have created the category.</span></span>
+<span data-ttu-id="67614-105">Atualize a propriedade gravável, **color**, do objeto [outlookCategory](../resources/outlookcategory.md) especificado.</span><span class="sxs-lookup"><span data-stu-id="67614-105">Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span> <span data-ttu-id="67614-106">Não é possível modificar a propriedade **displayName** depois de criar a categoria.</span><span class="sxs-lookup"><span data-stu-id="67614-106">You cannot modify the **displayName** property once you have created the category.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f080e-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="f080e-107">Permissions</span></span>
-<span data-ttu-id="f080e-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f080e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="67614-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="67614-107">Permissions</span></span>
+<span data-ttu-id="67614-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67614-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f080e-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f080e-110">Permission type</span></span>      | <span data-ttu-id="f080e-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f080e-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="67614-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="67614-110">Permission type</span></span>      | <span data-ttu-id="67614-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="67614-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f080e-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f080e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f080e-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f080e-113">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="f080e-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f080e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f080e-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f080e-115">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="f080e-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f080e-116">Application</span></span> | <span data-ttu-id="f080e-117">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f080e-117">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="67614-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="67614-112">Delegated (work or school account)</span></span> | <span data-ttu-id="67614-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="67614-113">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="67614-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="67614-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="67614-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="67614-115">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="67614-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="67614-116">Application</span></span> | <span data-ttu-id="67614-117">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="67614-117">MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f080e-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f080e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="67614-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="67614-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/outlook/masterCategories/{id}
 PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f080e-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f080e-119">Request headers</span></span>
-| <span data-ttu-id="f080e-120">Nome</span><span class="sxs-lookup"><span data-stu-id="f080e-120">Name</span></span>      |<span data-ttu-id="f080e-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="f080e-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="67614-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="67614-119">Request headers</span></span>
+| <span data-ttu-id="67614-120">Nome</span><span class="sxs-lookup"><span data-stu-id="67614-120">Name</span></span>      |<span data-ttu-id="67614-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="67614-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f080e-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="f080e-122">Authorization</span></span>  | <span data-ttu-id="f080e-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f080e-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="67614-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="67614-122">Authorization</span></span>  | <span data-ttu-id="67614-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="67614-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f080e-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f080e-125">Request body</span></span>
-<span data-ttu-id="f080e-p105">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="f080e-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="67614-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="67614-125">Request body</span></span>
+<span data-ttu-id="67614-p105">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="67614-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="f080e-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f080e-129">Property</span></span>     | <span data-ttu-id="f080e-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="f080e-130">Type</span></span>   |<span data-ttu-id="f080e-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="f080e-131">Description</span></span>|
+| <span data-ttu-id="67614-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="67614-129">Property</span></span>     | <span data-ttu-id="67614-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="67614-130">Type</span></span>   |<span data-ttu-id="67614-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="67614-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f080e-132">color</span><span class="sxs-lookup"><span data-stu-id="f080e-132">color</span></span>|<span data-ttu-id="f080e-133">String</span><span class="sxs-lookup"><span data-stu-id="f080e-133">String</span></span>|<span data-ttu-id="f080e-134">Uma constante de cor predefinida que caracteriza uma categoria e que é mapeada para uma das 25 cores predefinidas.</span><span class="sxs-lookup"><span data-stu-id="f080e-134">A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors.</span></span> |
+|<span data-ttu-id="67614-132">color</span><span class="sxs-lookup"><span data-stu-id="67614-132">color</span></span>|<span data-ttu-id="67614-133">String</span><span class="sxs-lookup"><span data-stu-id="67614-133">String</span></span>|<span data-ttu-id="67614-134">Uma constante de cor predefinida que caracteriza uma categoria e que é mapeada para uma das 25 cores predefinidas.</span><span class="sxs-lookup"><span data-stu-id="67614-134">A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="f080e-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="f080e-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="67614-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="67614-135">Response</span></span>
 
-<span data-ttu-id="f080e-136">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [outlookCategory](../resources/outlookcategory.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f080e-136">If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f080e-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f080e-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f080e-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f080e-138">Request</span></span>
-<span data-ttu-id="f080e-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f080e-139">Here is an example of the request.</span></span>
+<span data-ttu-id="67614-136">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [outlookCategory](../resources/outlookcategory.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="67614-136">If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="67614-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="67614-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="67614-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67614-138">Request</span></span>
+<span data-ttu-id="67614-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="67614-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["bac262b7-485d-4739-b436-e31467d64fac"],
@@ -64,8 +64,8 @@ Content-length: 30
   "color":"preset15"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="f080e-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="f080e-140">Response</span></span>
-<span data-ttu-id="f080e-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f080e-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="67614-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="67614-140">Response</span></span>
+<span data-ttu-id="67614-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="67614-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,6 +83,16 @@ Content-length: 251
   "color":"preset15"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="67614-144">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="67614-144">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="67614-145">Basic</span><span class="sxs-lookup"><span data-stu-id="67614-145">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_outlookcategory-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="67614-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="67614-146">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_outlookcategory-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -91,5 +101,9 @@ Content-length: 251
   "description": "Update outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/outlookcategory-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/outlookcategory-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
