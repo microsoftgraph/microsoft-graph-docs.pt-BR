@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos de um objeto Notebook
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 3d14edf5a8992f9f4386e4b50aa74d54986b62f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a68ff63fde8fc560c91892679a9551e27dc7459
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562199"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612002"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>bloco de anotações: getNotebookFromWebUrl
 
@@ -21,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes. Create, Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -94,3 +94,24 @@ Content-Length: 544
     "self": "self-value",
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/notebook_fromweburl-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

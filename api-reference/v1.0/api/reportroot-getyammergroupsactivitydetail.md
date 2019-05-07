@@ -4,12 +4,12 @@ description: Obtenha dados sobre as atividades de grupo do Yammer por grupo.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: df48b4ac527103ea97fb262ad49566e7c2339549
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6de7fd82fbd54d6bfdfc1f52fab4fafe1967d6f8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581468"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603506"
 ---
 # <a name="reportroot-getyammergroupsactivitydetail"></a>reportRoot: getYammerGroupsActivityDetail
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Reports.Read.All                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                           |
+| Delegada (conta corporativa ou de estudante)     | Reports.Read.All                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -101,6 +101,16 @@ Este é um exemplo de resposta.
 HTTP/1.1 302 Found
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getyammergroupsactivityuserdetail-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getyammergroupsactivityuserdetail-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="request"></a>Solicitação
 Se chamado com um `date`, o relatório terá o escopo para a atividade em determinada data.
@@ -139,3 +149,16 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Office 365 Connected,Member Count,Posted Count,Read Count,Liked Count,Report Period
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getyammergroupsactivitydetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/reportroot-getyammergroupsactivitydetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

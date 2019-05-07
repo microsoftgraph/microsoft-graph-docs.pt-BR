@@ -4,16 +4,14 @@ description: Cria um novo grupo de seção no bloco de anotações especificado.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 31a0f13c30682e491016b6dce4675b8159b8d897
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 133a90c1ac6fe331f94f2e68817e2601781be25b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562136"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611974"
 ---
 # <a name="create-sectiongroup"></a>Criar sectionGroup
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Cria um novo [grupo de seção](../resources/sectiongroup.md) no bloco de anotações especificado.
 ## <a name="permissions"></a>Permissões
@@ -56,7 +54,7 @@ Este é um exemplo da solicitação.
   "name": "create_sectiongroup_from_notebook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
+POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
 Content-type: application/json
 Content-length: 30
 
@@ -81,7 +79,6 @@ Content-length: 305
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "displayName": "name-value",
-  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "createdBy": {
     "user": {
       "id": "id-value",
@@ -96,16 +93,27 @@ Content-length: 305
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_sectiongroup_from_notebook-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_sectiongroup_from_notebook-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create SectionGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/notebook-post-sectiongroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/notebook-post-sectiongroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

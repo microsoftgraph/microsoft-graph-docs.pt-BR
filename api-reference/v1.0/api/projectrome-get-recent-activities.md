@@ -1,18 +1,18 @@
 ---
 title: Obter atividades recentes do usuário
-description: " API. O serviço consultará o historyItems mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão userActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar."
+description: " API. O serviço consultará o historyItems mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão UserActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar."
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: d7d119f5a80e86a47c8f61756cad99542d0b3b0b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 709723dfb728c169c8b596675dc26308dd60dac5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575335"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608374"
 ---
 # <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
 
-Obter atividades recentes para um determinado usuário. Essa função OData tem alguns comportamentos padrão incluídos para que funcionem como uma API "mais recentemente usada". O serviço consultará o [historyItems](../resources/projectrome-historyitem.md)mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão userActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
+Obter atividades recentes para um determinado usuário. Essa função OData tem alguns comportamentos padrão incluídos para que funcionem como uma API "mais recentemente usada". O serviço consultará o [historyItems](../resources/projectrome-historyitem.md)mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão UserActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
 
 ## <a name="permissions"></a>Permissões
 
@@ -37,7 +37,7 @@ GET /me/activities/recent
 Este método oferece suporte a alguns [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
 
 - $expand da propriedade de navegação **historyItems** .
-- $Top limitar o número máximo de itens nas páginas.
+- $top limitar o número máximo de itens nas páginas.
 - $filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandida.
 
 Veja a seguir alguns exemplos de consultas suportadas com codificação de URL.
@@ -138,6 +138,16 @@ Content-Type: application/json
     }]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_recent_activities-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_recent_activities-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
@@ -147,6 +157,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/projectrome-get-recent-activities.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/projectrome-get-recent-activities.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: get_recent_activities/container/contentInfo:
       Property 'contentInfo' is of type Custom but has no custom members.",
 

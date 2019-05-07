@@ -3,12 +3,12 @@ title: Obter um recurso DriveItemVersion
 description: Recuperar os metadados de uma versão específica de um DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2924cae410cd7df6a28c7ef81930dee09e566be9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 783090c9ec98d3df04b6a4b1595626132ddca768
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550487"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616119"
 ---
 # <a name="get-a-driveitemversion-resource"></a>Obter um recurso DriveItemVersion
 
@@ -76,6 +76,16 @@ Content-Type: application/json
     "size": 123
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-single-version-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-single-version-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Comentários
 
@@ -89,5 +99,9 @@ Quando seu aplicativo recupera a lista de versões disponíveis de um arquivo, u
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitemversion-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitemversion-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

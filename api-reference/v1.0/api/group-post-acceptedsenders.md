@@ -4,12 +4,12 @@ description: Adicione um novo usuário ou grupo à lista acceptedSender.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ba5d98796807be0ad1bb6eb58bb55fd8eb00fb84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f98a98afe3fd0bb6c4e9aa72ee9b17de6882d8ff
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561814"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613755"
 ---
 # <a name="create-acceptedsender"></a>Criar acceptedSender
 Adicione um novo usuário ou grupo à lista acceptedSender.
@@ -67,6 +67,14 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_acceptedsender-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -75,5 +83,8 @@ HTTP/1.1 204 No Content
   "description": "Create acceptedSender",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -3,12 +3,12 @@ title: Excluir extensão aberta
 description: 'Exclua uma extensão aberta (objeto openTypeExtension) da instância especificada de um recurso. '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: de0e609ba0d10d8d0b96e64f650347fb4f6fded8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af71848e0bbc6dab98a3ca9cb2875fbbe1ae82cf
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562094"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611744"
 ---
 # <a name="delete-open-extension"></a>Excluir extensão aberta
 
@@ -51,7 +51,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|id|string|Um identificador exclusivo para uma instância na coleção correspondente. Obrigatório.|
+|id|cadeia de caracteres|Um identificador exclusivo para uma instância na coleção correspondente. Obrigatório.|
 |extensionId|string|Pode ser um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -84,6 +84,16 @@ O segundo exemplo exclui uma extensão no evento de grupo especificado.
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVlN17IsAAA=/extensions/Com.Contoso.Referral
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_opentypeextension-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_opentypeextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
  
 
@@ -104,5 +114,9 @@ HTTP/1.1 204 No Content
   "description": "Delete opentypeextension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

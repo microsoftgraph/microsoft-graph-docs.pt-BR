@@ -2,12 +2,12 @@
 title: Adicionar item nomeado FormulaLocal
 description: Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
 localization_priority: Normal
-ms.openlocfilehash: 24232699220a025c19a4e2141d15ac76f0ad807f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 452707d546e7f0b358a840056b03271ca1a0c7ee
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460888"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612122"
 ---
 # <a name="add-named-item-formulalocal"></a>Adicionar item nomeado FormulaLocal
 Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
@@ -19,7 +19,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Sites.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sites.Read.All |
+|Application | Sites.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -93,6 +93,16 @@ Content-length: 109
     "visible": true
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/NamedItemcollection_add-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/NamedItemcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -102,5 +112,9 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/nameditem-addformulalocal.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/nameditem-addformulalocal.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

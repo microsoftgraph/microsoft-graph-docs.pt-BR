@@ -1,17 +1,17 @@
 ---
-title: Fechar sessão
+title: Fechar Sessão
 description: 'Use esta API para fechar uma sessão de pasta de trabalho existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9fbbaea28f93b757881550f36d76540fb6cfb388
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4c348690e0fbe8942ddea31102adc02c08707036
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573561"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33600711"
 ---
-# <a name="close-session"></a>Fechar sessão
+# <a name="close-session"></a>Fechar Sessão
 
 Use esta API para fechar uma sessão de pasta de trabalho existente. 
 
@@ -74,10 +74,22 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/close_excel_session-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/close_excel_session-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/workbook-closesession.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/workbook-closesession.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: close_excel_session//api-reference/v1.0/api/workbook-closesession.md:
       Request includes a non-standard header: workbook-session-id"
   ]

@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto **plannertaskdetails** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: cd9bf69fcb458c40c8506ccf2a7d401793e8fbef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 76c969158019c39592b819da2e4b281386f53276
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525443"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608443"
 ---
 # <a name="update-plannertaskdetails"></a>Atualizar plannertaskdetails
 
@@ -40,8 +40,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |verificação|[plannerChecklistItems](../resources/plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
-|description|String|Descrição da tarefa|
-|previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida é escolhido pelo aplicativo que está exibindo a tarefa.|
+|description|Cadeia de caracteres|Descrição da tarefa|
+|previewType|cadeia de caracteres|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida é escolhido pelo aplicativo que está exibindo a tarefa.|
 |Referencie|[plannerExternalReferences](../resources/plannerexternalreferences.md)|A coleção de referências na tarefa.|
 
 ## <a name="response"></a>Resposta
@@ -162,6 +162,14 @@ Content-length: 1793
   "id": "gcrYAaAkgU2EQUvpkNNXLGQAGTtu"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_plannertaskdetails-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -170,5 +178,8 @@ Content-length: 1793
   "description": "Update plannertaskdetails",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannertaskdetails-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

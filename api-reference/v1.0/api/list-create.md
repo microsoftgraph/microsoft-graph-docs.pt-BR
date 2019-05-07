@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: Criar uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7faabe9bddc806d4c416ebed439592ec8630e8af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 576c7b8c5f2f3e7b75e336cf898312a24e712903
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568093"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613149"
 ---
 # <a name="create-a-new-list"></a>Criar uma nova lista
 
@@ -99,6 +99,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **Observação:** O objeto Response será truncado para mais clareza.
 As propriedades padrão serão retornadas da chamada real.
@@ -111,5 +121,9 @@ As propriedades padrão serão retornadas da chamada real.
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
+  "tocPath": "List/Create",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

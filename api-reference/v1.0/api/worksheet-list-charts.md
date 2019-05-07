@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos de gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: dc7fcbb6ed80c057d748cbf85ca41cfe269901cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: efe2a5742ad684318dc6e411fd8cb446a2e93dc8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569813"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601162"
 ---
 # <a name="list-charts"></a>Listar gráficos
 
@@ -76,6 +76,16 @@ Content-length: 93
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_charts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_charts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -84,5 +94,9 @@ Content-length: 93
   "description": "List charts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/worksheet-list-charts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/worksheet-list-charts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -4,12 +4,12 @@ description: Desfaz a mesclagem das células do intervalo em células separadas.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 31f668506ce04271e31acec3efd85ce0cd747e9d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a7b1999dc80597801baf20433465420a6b29bea3
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583967"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33607758"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 
@@ -64,6 +64,16 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/range_unmerge-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/range_unmerge-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -72,5 +82,9 @@ HTTP/1.1 200 OK
   "description": "Range: unmerge",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/range-unmerge.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/range-unmerge.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

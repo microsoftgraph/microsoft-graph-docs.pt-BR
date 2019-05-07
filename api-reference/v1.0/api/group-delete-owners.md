@@ -4,17 +4,14 @@ description: Use esta API para remover um proprietário de um grupo do Office 36
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f07eb16e2e7f70c3f503a5f182c015c6862ce5e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aac93c8f26ceb89dc1eceaa0b33e3d3d0039fef5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461149"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614810"
 ---
 # <a name="remove-owner"></a>Remover proprietário
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Use esta API para remover um proprietário de um grupo do Office 365, de um grupo de segurança ou de um grupo de segurança habilitado para email através da propriedade de navegação owners.
 
 ## <a name="permissions"></a>Permissões
@@ -48,10 +45,10 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "delete_owner_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```
 Na solicitação, especifique a `id` do objeto diretório que deseja remover após o segmento $ref.
 
@@ -66,18 +63,27 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_owner_from_group-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_owner_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete owner",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/group-delete-owners.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

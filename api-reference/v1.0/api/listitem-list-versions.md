@@ -3,12 +3,12 @@ title: Listando versões de um ListItem
 description: O SharePoint pode ser configurado para manter o histórico para itens da lista.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0da37c65c4f7cf737d7e37b0ed50305aa19b3e53
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9e0230ac732f39831894315ef86a7c1bcdfa10e0
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568030"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613347"
 ---
 # <a name="listing-versions-of-a-listitem"></a>Listando versões de um ListItem
 
@@ -99,6 +99,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-previous-versions-listitem-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-previous-versions-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!-- {
@@ -106,5 +116,9 @@ Content-Type: application/json
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/listitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

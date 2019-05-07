@@ -4,12 +4,12 @@ description: Exclui um objeto groupLifecyclePolicy.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 9d58eca82c72008cb30095fe4fbfacf5a382111a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ae3d415f04803dd197a8da666612c65eed77be8b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567435"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613494"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>Excluir groupLifecyclePolicy
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -67,6 +67,16 @@ DELETE https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_grouplifecyclepolicy-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_grouplifecyclepolicy-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -75,5 +85,9 @@ HTTP/1.1 204 No Content
   "description": "Delete groupLifecyclePolicy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/grouplifecyclepolicy-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/grouplifecyclepolicy-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

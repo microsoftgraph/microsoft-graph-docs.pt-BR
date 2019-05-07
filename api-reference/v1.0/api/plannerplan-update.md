@@ -4,16 +4,14 @@ description: Atualize as propriedades do objeto **plannerPlan** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d4f8f3c3704c1108485ec21e5ac4a8836a401925
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 72811b69c77e12d84bbb29813b8b3f1019ab2f05
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525695"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608780"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades do objeto **plannerPlan** .
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/plans/<id>
+PATCH /planner/plans/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -44,8 +42,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|owner|String|[Grupo](../resources/group.md) `id` pelo qual o plano é proprietário. Um grupo válido deve existir antes que este campo possa ser definido. Uma vez definido, isso só pode ser atualizado pelo proprietário.|
-|title|Cadeia de caracteres|Título do plano.|
+|proprietário|Cadeia de caracteres|[Grupo](../resources/group.md) `id` pelo qual o plano é proprietário. Deve haver um grupo válido para que esse campo possa ser definido. Uma vez definido, isso só pode ser atualizado pelo proprietário.|
+|title|String|Título do plano.|
 
 ## <a name="response"></a>Resposta
 
@@ -61,7 +59,7 @@ Este é um exemplo da solicitação.
   "name": "update_plannerplan"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/planner/plans/<id>
+PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
 Content-length: 29
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
@@ -97,18 +95,27 @@ Content-length: 357
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_plannerplan-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_plannerplan-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update plannerplan",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/plannerplan-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/v1.0/api/plannerplan-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannerplan-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

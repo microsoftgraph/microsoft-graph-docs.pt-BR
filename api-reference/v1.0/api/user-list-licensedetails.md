@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos licenseDetails.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ad9b10a377e89858cad03d3eabe4e62a4f86627
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b51b129977a2923646ec93479c0d8b888db2369e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571384"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601840"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
@@ -57,7 +57,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 GET https://graph.microsoft.com/beta/me/licenseDetails
 ```
 ##### <a name="response"></a>Resposta
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,6 +87,16 @@ Content-length: 389
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_licensedetails-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_licensedetails-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -97,6 +107,9 @@ Content-length: 389
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-licensedetails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-licensedetails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: Adicione um membro a uma aula.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1999833036d4e1452cb45bedbd58a0e2d160df39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5fc2000b119d25e144079639909dbd7c4c9c9a10
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550452"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615998"
 ---
 # <a name="add-a-student"></a>Adicionar um aluno
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster. ReadWrite. All mais member. Read. Hidden | 
+|Application | EduRoster. ReadWrite. All mais member. Read. Hidden | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -71,6 +71,14 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_educationuser_from_educationclass-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -79,5 +87,8 @@ HTTP/1.1 204 No Content
   "description": "Create educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-post-members.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

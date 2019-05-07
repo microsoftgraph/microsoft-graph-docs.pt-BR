@@ -4,12 +4,12 @@ description: Recupera uma lista de objetos groupLifecyclePolicy à qual um grupo
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 5e2153a1827f2ddbe3c7274c090f092d8b7c5724
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e17e6a0466c34f6e344bd919525a767c950acac
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583526"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614136"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Listar groupLifecyclePolicies
 
@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 ```
 ##### <a name="response"></a>Resposta
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,6 +78,16 @@ Content-length: 222
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -86,5 +96,9 @@ Content-length: 222
   "description": "List groupLifecyclePolicies",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

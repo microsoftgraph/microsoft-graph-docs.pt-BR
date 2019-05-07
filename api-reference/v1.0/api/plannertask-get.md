@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos do objeto **plannerta
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: c896bd204f490bb906762a0225195bd2484c8dd4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 13f54b505c010aecdf2363e94b2243591cb8dd5f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576378"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608647"
 ---
 # <a name="get-plannertask"></a>Obter plannerTask
 
@@ -41,7 +41,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerTask](../resources/plannertask.md) no corpo da resposta.
 
-Este método pode retornar qualquer um dos [códigos de status http](/graph/errors). Os erros mais comuns que os aplicativos devem lidar com esse método são as respostas 403 e 404. Para obter mais informações sobre esses erros, confira [condições de erro do planejador comum](../resources/planner-overview.md#common-planner-error-conditions).
+Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -92,6 +92,16 @@ Content-length: 707
   "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_plannertask-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_plannertask-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,5 +110,9 @@ Content-length: 707
   "description": "Get plannerTask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannertask-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannertask-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

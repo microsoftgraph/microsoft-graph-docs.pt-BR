@@ -2,16 +2,14 @@
 title: Excluir foto
 description: Exclua uma foto.
 localization_priority: Normal
-ms.openlocfilehash: e83e00f6579c300395b21608c89984a775bb5ab4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 05a679217aea32ee026ef1786c7d6a21689d1cab
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521072"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611409"
 ---
 # <a name="delete-photo"></a>Excluir foto
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclua uma foto.
 ## <a name="permissions"></a>Permissões
@@ -49,10 +47,10 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "name": "delete_photo"
+"name": "delete_photo"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
+DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
@@ -63,18 +61,27 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_photo-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_photo-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete photo",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/photo-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/v1.0/api/photo-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/photo-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

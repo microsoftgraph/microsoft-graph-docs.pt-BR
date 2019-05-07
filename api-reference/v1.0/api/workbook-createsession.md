@@ -1,17 +1,17 @@
 ---
-title: Criar sessão
+title: Criar Sessão
 description: 'Use essa API para criar uma nova sessão de pasta de trabalho. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9a377c4bb86f468e9e6107e451b40494665f5b16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7fc275f95ae83f5f6fdc76e0b0951e9b488e45a6
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573596"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33600928"
 ---
-# <a name="create-session"></a>Criar sessão
+# <a name="create-session"></a>Criar Sessão
 
 Use essa API para criar uma nova sessão de pasta de trabalho. 
 
@@ -63,7 +63,7 @@ Este é um exemplo da solicitação.
   "name": "create_excel_session"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
 Content-length: 52
 
@@ -90,4 +90,27 @@ Content-length: 52
   "persistChanges": true
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_excel_session-Cs-snippets.md)]
 
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_excel_session-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/workbook-createsession.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/workbook-createsession.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

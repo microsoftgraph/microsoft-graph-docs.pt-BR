@@ -4,16 +4,16 @@ description: Recupere a lista de aplicativos instalados na equipe especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 62ed898417e53b4ec88e4c620cfcc7b974731e48
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6de93a0613aa872154e2448450552585d50e6a2e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574824"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602330"
 ---
 # <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere a lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)especificada.
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All, Group.ReadWrite.All    |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -64,7 +64,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET /teams/{id}/installedApps
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
 
 ### <a name="response"></a>Resposta
@@ -91,6 +91,16 @@ Content-length: 55
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_owners-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_owners-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="example----getting-the-names-of-the-installed-apps"></a>Exemplo: obtendo os nomes dos aplicativos instalados
 
@@ -103,7 +113,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
 ### <a name="response"></a>Resposta
@@ -155,13 +165,31 @@ Content-length: 55
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_owners-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_owners-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List owners",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

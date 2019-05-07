@@ -4,12 +4,12 @@ description: Obtenha a contagem de ativações do Office 365 em desktops e dispo
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 31aed10d7a2b70c32f0654df67dfa86385d5fd17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1180ed5730475801821d43379789c1d688919bba
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582336"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33606694"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Reports.Read.All                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                           |
+| Delegada (conta corporativa ou de estudante)     | Reports.Read.All                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -89,6 +89,16 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getoffice365activationcounts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getoffice365activationcounts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 
@@ -100,3 +110,16 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Product Type,Windows,Mac,Android,iOS,Windows 10 Mobile
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getoffice365activationcounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/reportroot-getoffice365activationcounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

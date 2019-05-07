@@ -1,15 +1,15 @@
 ---
 title: Listar calendarView
-description: Obtenha as ocorrências, exceções e instâncias únicas de eventos em uma exibição de calendário definida por um intervalo de tempo,
+description: Obter as ocorrências, exceções e instâncias únicas de eventos em uma exibição de calendário definida por um intervalo de tempo, a partir do calendário padrão do usuário,
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: db4c448176f21fc2a2d691e9155f9b7bba45d873
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a76766a82e573c3916b3de1236ee936788231b3f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583589"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614223"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida, do calendário padrão de um grupo.
@@ -44,7 +44,7 @@ Este método também dá suporte a [Parâmetros de consulta OData](/graph/query-
 |:---------------|:--------|:--------|
 | Autorização  | string | {token} de portador. Obrigatório.  |
 | Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
-| Prefer: outlook.body-content-type | string | O formato da propriedade **body** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação quando este cabeçalho `Prefer` é especificado. Se o cabeçalho não for especificado, a propriedade **body** será retornada no formato HTML. Opcional. |
+| Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -245,6 +245,16 @@ Preference-Applied: outlook.body-content-type="text"
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_calendarview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_calendarview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -253,5 +263,9 @@ Preference-Applied: outlook.body-content-type="text"
   "description": "List calendarView",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

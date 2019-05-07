@@ -3,14 +3,16 @@ title: Atualizar assinatura
 description: Renove uma assinatura ampliando seu tempo de validade.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 1bf693fb8551db916807570459d9658fa02665f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aef2e72898230440bf43c43c0acb317ae0f720ad
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560960"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603035"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Renove uma assinatura ampliando seu tempo de validade.
 
@@ -42,7 +44,6 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
   - Usar a permissão de aplicativos correspondentes para inscrever as alterações dos itens em uma pasta ou uma caixa de correio de _qualquer_ usuários no locatário.
   - Não use as permissões de compartilhamento do Outlook (Contacts.Read.Shared Calendars.Read.Shared, Mail.Read.Shared e seus equivalentes de somente leitura), pois eles **não**suportam inscrições que alteram as notificações em itens de pastas compartilhadas ou delegadas.
 
-
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
@@ -72,7 +73,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
+PATCH https://graph.microsoft.com/beta/subscriptions/{id}
 Content-type: application/json
 
 {
@@ -85,7 +86,7 @@ Content-type: application/json
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -99,17 +100,33 @@ Content-length: 252
   "resource":"me/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType":"created,updated",
-  "clientState":"subscription-identifier",
+  "clientState":"secretClientValue",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_subscription-Cs-snippets.md)]
 
-<!-- {
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_subscription-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!--
+{
   "type": "#page.annotation",
   "description": "Update subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/subscription-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

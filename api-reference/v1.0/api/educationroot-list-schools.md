@@ -4,12 +4,12 @@ description: Recupere uma lista de todos os objetos de escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 4074f77cc3954e87b8a20ed2aae5c00accd42d8c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1e47074b7c80e8a75caa0cbb94fad3b22d7921c1
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550326"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616046"
 ---
 # <a name="list-educationschools"></a>Listar educationSchools
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Application | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -100,6 +100,16 @@ Content-length: 345
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_schools-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_schools-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -108,5 +118,9 @@ Content-length: 345
   "description": "List schools",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationroot-list-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationroot-list-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

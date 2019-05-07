@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos do objeto tablecolumn
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fb6a50ce16fa952f6c2718c54b70d7e9cacf1a83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0319111365f10875869067e297fe7059b9f5877f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520414"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602665"
 ---
 # <a name="get-tablecolumn"></a>Obter TableColumn
 
@@ -73,6 +73,16 @@ Content-length: 81
   "values": "values-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_tablecolumn-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_tablecolumn-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -81,5 +91,9 @@ Content-length: 81
   "description": "Get TableColumn",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/tablecolumn-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/tablecolumn-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

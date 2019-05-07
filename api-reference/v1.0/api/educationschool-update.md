@@ -4,12 +4,12 @@ description: Atualize as propriedades de um objeto de escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: aa26a34013ddd20925c7063595d5d57980e0c516
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dbabebb14bfd107afb1823054e33150c9d170e9d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550053"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615785"
 ---
 # <a name="update-educationschool-properties"></a>Atualizar as propriedades educationschool
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.ReadWrite.All |
+|Application | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,14 +42,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |displayName| String| Nome de exibição da escola| 
 |description| String | Descrição da escola| 
-|principalEmail| String| Endereço de email da entidade de segurança|
-|principalName| String | Nome da entidade de segurança|
-|externalPrincipalId| String | ID da entidade de segurança no sistema de sincronização. |
-|highestGrade|String| Ensino de nível mais alto. |
-|lowestGrade|String| Ensino de nível mais baixo. |
-|schoolNumber|String| Número da escola.|
-|externalId|String| ID da escola no sistema de sincronização. |
-|phone|String| Número de telefone da escola. |
+|principalEmail| Cadeia de caracteres| Endereço de email da entidade de segurança|
+|principalName| Cadeia de caracteres | Nome da entidade de segurança|
+|externalPrincipalId| Cadeia de caracteres | ID da entidade de segurança no sistema de sincronização. |
+|highestGrade|Cadeia de caracteres| Ensino de nível mais alto. |
+|lowestGrade|Cadeia de caracteres| Ensino de nível mais baixo. |
+|schoolNumber|Cadeia de caracteres| Número da escola.|
+|externalId|Cadeia de caracteres| ID da escola no sistema de sincronização. |
+|phone|Cadeia de caracteres| Número de telefone da escola. |
 |fax|Cadeia de caracteres| Número de fax da escola. |
 |address|[physicalAddress](../resources/physicaladdress.md)| Endereço da escola.|
 |createdBy|[identitySet](../resources/identityset.md)|Entidade que criou a escola.|
@@ -112,6 +112,16 @@ Content-length: 292
   "phone": "+1 (253) 555-0102"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationschool-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationschool-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -120,5 +130,9 @@ Content-length: 292
   "description": "Update educationschool",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
