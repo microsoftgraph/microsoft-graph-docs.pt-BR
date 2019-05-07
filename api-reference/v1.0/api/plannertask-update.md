@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto **plannertask** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 93fc1745cff9b3f2e776291c4bcf0b4b95430db8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 378f1938f37b5af654116c131e808bd317f9776f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503580"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608511"
 ---
 # <a name="update-plannertask"></a>Atualizar plannertask
 
@@ -43,12 +43,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |assigneePriority|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|O conjunto de usuários ao qual a tarefa é atribuída.|
 |bucketId|String|ID de Bucket à qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](../resources/planner-identifiers-disclaimer.md) é feito no serviço. |
-|conversationThreadId|String|ID do thread da conversa na tarefa. Esta é a ID do objeto de thread de conversa criado no grupo.|
+|conversationThreadId|Cadeia de caracteres|ID do thread da conversa na tarefa. Esta é a ID do objeto de thread de conversa criado no grupo.|
 |dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |orderHint|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
 |startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|title|Cadeia de caracteres|Título da tarefa.|
+|title|String|Título da tarefa.|
 
 ## <a name="response"></a>Resposta
 
@@ -146,6 +146,14 @@ Content-length: 1423
   "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_plannertask-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -154,5 +162,8 @@ Content-length: 1423
   "description": "Update plannertask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannertask-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

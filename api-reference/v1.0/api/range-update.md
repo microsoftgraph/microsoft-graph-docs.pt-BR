@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto range.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fda18c3632874cd60da881ec82ff174c5ede5b7d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 706147a3ff3aade9ae19679aab6bb09bc271128a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525562"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33607529"
 ---
 # <a name="update-range"></a>Intervalo de atualização
 
@@ -42,7 +42,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columnHidden|booliano|Representa se todas as colunas do intervalo atual estão ocultas.|
-|formulas|Json|Representa a fórmula em notação A1.|
+|fórmulas|Json|Representa a fórmula em notação A1.|
 |formulasLocal|Json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.|
 |formulasR1C1|Json|Representa a fórmula em notação no estilo L1C1.|
 |numberFormat|Json|Representa o código de formato de número do Excel para determinada célula.|
@@ -92,6 +92,14 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_range-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,6 +109,7 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/range-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
       Inconsistent types between parameter (Collection) and table (None)",
     "Warning: /api-reference/v1.0/api/range-update.md/update_range/values:
