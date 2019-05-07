@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7cf2521f5e119b5270344aef25b775d49451e9cd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ce2554efa452a95f52f34d358e39b0d32ce839a7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440091"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599776"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -16,32 +16,38 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
-## <a name="april-2019"></a>Abril de 2019
+## <a name="may-2019"></a>Maio de 2019
 
-### <a name="access-reviews-api"></a>API de revisões de acesso
+### <a name="risky-users-api"></a>Usuários arriscados API
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicione as permissões de aplicativo AccessReview.Read.All, ProgramControl.Read.All e ProgramControl.ReadWrite.All. Para mais detalhes, confira a [referência da API de revisões de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Adição | Beta | Adição da entidade [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta). |
+| Adição | Beta | Adição da operação [listar histórico](/graph/api/riskyuser-list-history?view=graph-rest-beta). |
+
+### <a name="security-apis"></a>APIs de segurança
+
+| **Tipo de alteração** | **Versão** | **Descrição**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | v1.0       | Adição da Classificação de Segurança das APIs para [API de segurança](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), incluindo os seguintes recursos e operações:<br/>[secureScores](/graph/api/resources/securescore?view=graph-rest-1.0) (e entidades relacionadas)<br/>[Lista secureScores](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[Lista secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[Atualizar secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
+
+
+## <a name="april-2019"></a>Abril de 2019
+
+### <a name="azure-ad-apis"></a>APIs do Azure AD
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 |  Introdução do novo **APIs de logs de auditoria do Azure AD**, oferecendo logs de atividades para tarefas de gerenciamento de diretório através de [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-v1.0) e atividade de entrada pelo [signIns](/graph/api/resources/signIns?view=graph-rest-v1.0).|
+| Adição | beta | Adição de novas permissões de aplicativo para APIs de **avaliação de acesso**: AccessReview.Read.All, ProgramControl.Read.All e ProgramControl.ReadWrite.All. Para mais detalhes, confira a [referência da API de revisões de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Adição | beta | Adicione a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Essa é uma renomeação das propriedades **refreshTokensValidFromDateTime**, mas ambas as propriedades terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a propriedade antiga, **refreshTokensValidFromDateTime**, será removida.|
+| Adição | beta | Adicione a ação **revokeSignInSessions** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Esta é uma renomeação da ação **invalidateAllRefreshTokens**, mas ambas as ações de serviço terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a ação de serviço antiga, **invalidateAllRefreshTokens**, será removida. |
 
 ### <a name="azure-ad-b2c-apis"></a>APIs do Azure AD B2C
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | Beta |Introduzido um novo tipo de recurso [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta). Este tipo de recurso oferece suporte a operações de [criar](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [listar](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [obter](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [atualizar](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), e [excluir](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta).|
-
-### <a name="webhooks-change-notifications"></a>Webhooks (notificações de alteração)
-
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Foram adicionadas dois tipos de notificações de ciclo de vida, `subscriptionRemoved` e `missed`, disponível para os recursos do Outlook. Aplicativos assinados podem executar ações apropriadas para atenuar as interrupções de notificação. Para mais detalhes, consulte [Reduzir assinaturas ausentes e notificações de recursos do Outlook (visualização)](webhooks-outlook-authz.md).|
-
-### <a name="directory-apis"></a>APIs de diretório
-
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicione a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Essa é uma renomeação das propriedades **refreshTokensValidFromDateTime**, mas ambas as propriedades terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a propriedade antiga, **refreshTokensValidFromDateTime**, será removida.|
-| Adição | beta | Adicione a ação **revokeSignInSessions** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Esta é uma renomeação da ação **invalidateAllRefreshTokens**, mas ambas as ações de serviço terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a ação de serviço antiga, **invalidateAllRefreshTokens**, será removida. |
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 |Tipo de alteração|Versão|Descrição|
@@ -84,14 +90,6 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionadas as propriedades de navegação **tentativas**, **settingDefinitions**, **modelos** e **categorias** à entidade [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade de navegação **securityBaselineStates** à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
 
-### <a name="messages"></a>Mensagens
-
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Suporte adicionado para uma nova [ permissão Mail.ReadBasic (visualização)](permissions-reference.md#mail-permissions) para [Listar Mensagens](/graph/api/user-list-messages?view=graph-rest-beta) e [Obter Mensagem](/graph/api/message-get?view=graph-rest-beta).            |
-| Adição        | Beta          | Funcionalidade adicionada para [obter o conteúdo MIME de uma mensagem](outlook-get-mime-message.md). |
-| Adição        | Beta          | Funcionalidade adicionada para [obter conteúdo não processado de um arquivo ou anexo do item](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem, tarefa do Outlook ou postagem no grupo. |
-
 ### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -100,15 +98,22 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição |v1.0| Adicionar o **email** e propriedades **webUrl** para o [canal](/graph/api/resources/channel?view=graph-rest-1.0).|
 | Adição | beta | Foram adicionados os recursos do [chat](/api-reference/beta/resources/chat.md) e métodos associados. |
 
-## <a name="march-2019"></a>Março de 2019
-
-### <a name="risky-users-api"></a>Usuários arriscados API
+### <a name="outlook-mail"></a>Email do Outlook
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição |beta| Introduziu o método [Confirmar riskyUsers comprometidos](/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta) que permite que os administradores confirmem os usuários como comprometidos na Proteção de Identidade do Azure AD. |
-|Adição |beta| Introduziu o método [Ignorar riskyUsers](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta), o qual permite que os administradores ignorem os usuários marcados como arriscados na Proteção de Identidade do Azure AD. |
-|Adição |beta| Introduziu a propriedade **isProcessing** ao recurso [riskyUsers](/graph/api/resources/riskyuser?view=graph-rest-beta). |
+| Adição        | Beta          | Suporte adicionado para uma nova [ permissão Mail.ReadBasic (visualização)](permissions-reference.md#mail-permissions) para [Listar Mensagens](/graph/api/user-list-messages?view=graph-rest-beta) e [Obter Mensagem](/graph/api/message-get?view=graph-rest-beta).            |
+| Adição        | Beta          | Funcionalidade adicionada para [obter o conteúdo MIME de uma mensagem](outlook-get-mime-message.md). |
+| Adição        | Beta          | Funcionalidade adicionada para [obter conteúdo não processado de um arquivo ou anexo do item](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem, tarefa do Outlook ou postagem no grupo. |
+
+### <a name="webhooks-change-notifications"></a>Webhooks (notificações de alteração)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Foram adicionadas dois tipos de notificações de ciclo de vida, `subscriptionRemoved` e `missed`, disponível para os recursos do Outlook. Aplicativos assinados podem executar ações apropriadas para atenuar as interrupções de notificação. Para mais detalhes, consulte [Reduzir assinaturas ausentes e notificações de recursos do Outlook (visualização)](webhooks-outlook-authz.md).|
+
+
+## <a name="march-2019"></a>Março de 2019
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -131,6 +136,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | Adicionar APIs para gerenciar os recursos do [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) no[educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) e [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
 | Adição | beta | Adicionar o novo recurso[educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta).|
 | Adição | beta | Adicionar a propriedade**destinatários** no recurso[educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta).|
+
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 
@@ -192,6 +198,14 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Exclusão | Beta | Tipos complexos: <br> **attendeeAvailabilityDataModel** <br> **attendeeDataModel** <br> **findMeetingTimesResponse** <br> **findMeetingTimesTimeConstraints** <br> **locationConstraints** <br> **meetingTimeSlotDataModel** <br> **searchWindowTimeSlot**|
 |Exclusão | Beta | Enumerações: <br> **addressType** <br> **availabilityStatus** |
 |Adição | Beta | Foram removidos os seguintes tipos complexos: <br> [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) <br> [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) <br>[timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta) |
+
+### <a name="risky-users-api"></a>Usuários arriscados API
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição |beta| Introduziu o método [Confirmar riskyUsers comprometidos](/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta) que permite que os administradores confirmem os usuários como comprometidos na Proteção de Identidade do Azure AD. |
+|Adição |beta| Introduziu o método [Ignorar riskyUsers](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta), o qual permite que os administradores ignorem os usuários marcados como arriscados na Proteção de Identidade do Azure AD. |
+|Adição |beta| Introdução da propriedade **isProcessing** ao recurso [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta). |
 
 
 ## <a name="february-2019"></a>Fevereiro de 2019
@@ -1170,7 +1184,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|Beta|Foi adicionada a propriedade de navegação **deviceConfigurationRestrictedAppsViolations** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionada a propriedade de navegação **assignments** à entidade [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionada a propriedade de navegação **networkAccessConfigurations** à entidade [windowsDomainJoinConfiguration](/graph/api/resources/intune-deviceconfig-windowsdomainjoinconfiguration?view=graph-rest-beta)|
-|Exclusão|Beta|Foi removida a propriedade **permissions** do tipo complexo [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta)|
+|Exclusão|beta|Foi removida a propriedade **permissions** do tipo complexo [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta)|
 |Alteração|beta|Foi alterado o tipo das seguintes propriedades no tipo complexo [bitLockerRecoveryOptions](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryoptions?view=graph-rest-beta):<br/>**recoveryInformationToStore** de [bitLockerRecoveryinformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta) para [bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta)<br/>|
 |Adição|Beta|Foi adicionada a propriedade **deviceInactivityBeforeRetirementInDay** ao tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionada a propriedade **landingPageCustomizedImage** ao tipo complexo [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)|
