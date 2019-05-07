@@ -4,32 +4,32 @@ description: Obtenha um timeOffReason por ID.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: afae52aa7e3e5b88c44d0fd3f672d5e80a195624
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b8aca386a460534fa258c96acedfb91ef6cf1d8c
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335105"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637476"
 ---
-# <a name="get-timeoffreason"></a><span data-ttu-id="7a268-103">Obter timeOffReason</span><span class="sxs-lookup"><span data-stu-id="7a268-103">Get timeOffReason</span></span>
+# <a name="get-timeoffreason"></a><span data-ttu-id="1fc31-103">Obter timeOffReason</span><span class="sxs-lookup"><span data-stu-id="1fc31-103">Get timeOffReason</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7a268-104">Recupere as propriedades e os relacionamentos de um objeto [timeOffReason](../resources/timeoffreason.md) por ID.</span><span class="sxs-lookup"><span data-stu-id="7a268-104">Retrieve the properties and relationships of a [timeOffReason](../resources/timeoffreason.md) object by ID.</span></span>
+<span data-ttu-id="1fc31-104">Recupere as propriedades e os relacionamentos de um objeto [timeOffReason](../resources/timeoffreason.md) por ID.</span><span class="sxs-lookup"><span data-stu-id="1fc31-104">Retrieve the properties and relationships of a [timeOffReason](../resources/timeoffreason.md) object by ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7a268-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="7a268-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1fc31-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1fc31-105">Permissions</span></span>
 
-<span data-ttu-id="7a268-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7a268-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1fc31-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1fc31-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7a268-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7a268-108">Permission type</span></span>      | <span data-ttu-id="7a268-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7a268-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1fc31-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1fc31-108">Permission type</span></span>      | <span data-ttu-id="1fc31-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1fc31-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7a268-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7a268-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7a268-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a268-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7a268-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7a268-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7a268-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7a268-113">Not supported.</span></span>    |
-|<span data-ttu-id="7a268-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7a268-114">Application</span></span> | <span data-ttu-id="7a268-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7a268-115">Not supported.</span></span> |
+|<span data-ttu-id="1fc31-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1fc31-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1fc31-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1fc31-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1fc31-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1fc31-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1fc31-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1fc31-113">Not supported.</span></span>    |
+|<span data-ttu-id="1fc31-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1fc31-114">Application</span></span> | <span data-ttu-id="1fc31-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1fc31-115">Not supported.</span></span> |
 
-> <span data-ttu-id="7a268-116">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="7a268-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="7a268-117">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="7a268-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="1fc31-116">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="1fc31-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="1fc31-117">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="1fc31-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7a268-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7a268-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1fc31-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1fc31-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,25 +37,25 @@ ms.locfileid: "33335105"
 GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7a268-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7a268-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1fc31-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1fc31-119">Request headers</span></span>
 
-| <span data-ttu-id="7a268-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7a268-120">Header</span></span>       | <span data-ttu-id="7a268-121">Valor</span><span class="sxs-lookup"><span data-stu-id="7a268-121">Value</span></span> |
+| <span data-ttu-id="1fc31-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1fc31-120">Header</span></span>       | <span data-ttu-id="1fc31-121">Valor</span><span class="sxs-lookup"><span data-stu-id="1fc31-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="7a268-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="7a268-122">Authorization</span></span>  | <span data-ttu-id="7a268-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7a268-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7a268-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7a268-125">Content-Type</span></span>  | <span data-ttu-id="7a268-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7a268-126">application/json</span></span>  |
+| <span data-ttu-id="1fc31-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="1fc31-122">Authorization</span></span>  | <span data-ttu-id="1fc31-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1fc31-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1fc31-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1fc31-125">Content-Type</span></span>  | <span data-ttu-id="1fc31-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1fc31-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7a268-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7a268-127">Request body</span></span>
-<span data-ttu-id="7a268-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7a268-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1fc31-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1fc31-127">Request body</span></span>
+<span data-ttu-id="1fc31-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1fc31-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7a268-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="7a268-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1fc31-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="1fc31-129">Response</span></span>
 
-<span data-ttu-id="7a268-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7a268-130">If successful, this method returns a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.</span></span>
+<span data-ttu-id="1fc31-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1fc31-130">If successful, this method returns a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7a268-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7a268-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1fc31-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1fc31-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7a268-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7a268-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1fc31-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1fc31-132">Request</span></span>
 
-<span data-ttu-id="7a268-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7a268-133">The following is an example of the request.</span></span>
+<span data-ttu-id="1fc31-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1fc31-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "timeoffreason-get"
@@ -64,11 +64,11 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
-#### <a name="response"></a><span data-ttu-id="7a268-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="7a268-134">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1fc31-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="1fc31-134">Response</span></span>
 
-<span data-ttu-id="7a268-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7a268-135">The following is an example of the response.</span></span> 
+<span data-ttu-id="1fc31-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1fc31-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="7a268-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7a268-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="1fc31-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1fc31-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,6 +98,16 @@ Content-length: 401
   }
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="1fc31-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="1fc31-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="1fc31-139">Basic</span><span class="sxs-lookup"><span data-stu-id="1fc31-139">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/timeoffreason-get-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1fc31-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1fc31-140">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/timeoffreason-get-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -108,6 +118,9 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/timeoffreason-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/timeoffreason-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
