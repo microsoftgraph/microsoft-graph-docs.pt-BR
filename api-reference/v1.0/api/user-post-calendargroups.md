@@ -4,14 +4,16 @@ description: Use esta API para criar um novo CalendarGroup.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 775f499bc3fb5562f9936d7d64f20e5494f10bd0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e303896a3c0625a964dd65e34484efb98d6d7c81
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563865"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601441"
 ---
 # <a name="create-calendargroup"></a>Atualizar CalendarGroup
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use esta API para criar um novo CalendarGroup.
 ## <a name="permissions"></a>Permissões
@@ -50,7 +52,7 @@ Este é um exemplo da solicitação.
   "name": "create_calendargroup_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendarGroups
+POST https://graph.microsoft.com/beta/me/calendarGroups
 Content-type: application/json
 Content-length: 90
 
@@ -80,13 +82,29 @@ Content-length: 110
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_calendargroup_from_user-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_calendargroup_from_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create CalendarGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-post-calendargroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-calendargroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

@@ -1,17 +1,17 @@
 ---
-title: Atualizar sessão
+title: Atualizar Sessão
 description: 'Use esta API para atualizar uma sessão de pasta de trabalho existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c10372e332072eb69bfb605484695d950185e62c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dba9d76d0b366dac578eeedbbb5bb4aeab812e4a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534693"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33600599"
 ---
-# <a name="refresh-session"></a>Atualizar sessão
+# <a name="refresh-session"></a>Atualizar Sessão
 
 Use esta API para atualizar uma sessão de pasta de trabalho existente. 
 
@@ -51,7 +51,7 @@ Este é um exemplo da solicitação.
   "name": "refresh_excel_session"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/refreshSession
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/refreshSession
 Content-type: application/json
 workbook-session-id: {session-id}
 Content-length: 0
@@ -74,3 +74,23 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/refresh_excel_session-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/refresh_excel_session-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/workbook-refreshsession.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/workbook-refreshsession.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Warning: refresh_excel_session//api-reference/v1.0/api/workbook-refreshsession.md:
+      Request includes a non-standard header: workbook-session-id"
+  ]
+}-->

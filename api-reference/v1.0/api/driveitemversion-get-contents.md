@@ -3,12 +3,12 @@ title: Baixar o conteúdo de um recurso do DriveItemVersion
 description: Recuperar o conteúdo de uma versão específica de um DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b6b1f8fbb840cba88f05cb30e2617ca23cb6ad1f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 85ec476ae683bb670245328d4e671855b62080d9
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550445"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616248"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>Baixar o conteúdo de um recurso do DriveItemVersion
 
@@ -67,6 +67,16 @@ Isso retorna um redirecionamento para onde o conteúdo da versão pode ser baixa
 HTTP/1.1 302 Found
 Location: https://onedrive.com/34FF49D6...
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-version-contents-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-version-contents-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ## <a name="remarks"></a>Comentários
@@ -80,5 +90,9 @@ Quando seu aplicativo recupera a lista de versões disponíveis de um arquivo, u
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

@@ -3,12 +3,12 @@ title: Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 description: 'O Active Directory do Azure (Azure AD) ajuda a centralizar o gerenciamento de identidade e acesso para permitir acesso seguro e produtivo entre aplicativos, dispositivos, serviços e infraestrutura. As organizações podem usar o Azure AD para gerenciar identidades e controlar o acesso em ambientes locais, híbridos e em nuvem.  '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 634b2c806065f6e1b7cd2a0f2aca41cfdb2aa7fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: edf02faa345426b77e0ede8a0c92e54207338bec
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570254"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599818"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 
@@ -84,7 +84,7 @@ Está procurando a referência de API para esse serviço?
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba como [Usar as APIs REST do Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Use o Azure AD para se [autenticar](auth-overview.md) no Microsoft Graph.
+- Use o Azure AD para se [autenticar](./auth/) no Microsoft Graph.
 - Integre o [logon do Azure AD](https://azure.microsoft.com/pt-BR/develop/identity/signin/) ao seu aplicativo ou website.
 - Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.
 - Explore [exemplos](https://developer.microsoft.com/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.

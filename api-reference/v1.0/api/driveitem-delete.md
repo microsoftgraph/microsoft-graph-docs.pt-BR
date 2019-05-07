@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Excluir um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6c6afe91167d6ce8c4bce3d53eb3cb9085bb394f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 69286819a0f49def234709a0fce41eca155b6a74
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548065"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33617138"
 ---
 # <a name="delete-a-driveitem"></a>Excluir um DriveItem
 
@@ -63,6 +63,16 @@ Se bem sucedida, esta chamada retorna uma resposta `204 No Content` para indicar
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete-item-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="error-responses"></a>Respostas de erro
 
@@ -75,5 +85,9 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "description": "Delete a DriveItem from a drive",
   "keywords": "delete,existing item,onedrive",
   "section": "documentation",
-  "tocPath": "Items/Delete"
+  "tocPath": "Items/Delete",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

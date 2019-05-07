@@ -4,12 +4,12 @@ description: Envia uma solicitação de operação de política de dados, feita 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba26d2b2bc5af63f01a4333490d9850ffa3dd767
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6feffbe56a6b4fe21c5a06eb89016f68d8f045ef
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576273"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602146"
 ---
 # <a name="user-exportpersonaldata"></a>usuário: exportPersonalData
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User. Export. All, User. Read. All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Aplicativo | User. Export. All, User. Read. All |
+|Application | User. Export. All, User. Read. All |
 
 >**Observação:** A exportação só pode ser realizada por um administrador da empresa quando permissões delegadas são usadas.
 
@@ -42,14 +42,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|storageLocation|String|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta de armazenamento do Azure, onde os dados devem ser exportados.|
+|storageLocation|Cadeia de caracteres|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta de armazenamento do Azure, onde os dados devem ser exportados.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta. A resposta contém os cabeçalhos de resposta a seguir.
 
 | Nome       | Descrição|
 |:---------------|:----------|
-| Local  | URL para verificar o status da solicitação. |
+| Locais  | URL para verificar o status da solicitação. |
 | Repetir-após  | Período de tempo em segundos. O criador de solicitação deve aguardar esse tempo depois de enviar uma solicitação para verificar o status. |
 
 ## <a name="example"></a>Exemplo
@@ -70,6 +70,16 @@ Content-length: 48
 ##### <a name="response"></a>Resposta
 
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 {
   Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
   Retry-After: 60
@@ -92,5 +102,9 @@ HTTP/1.1 202 Accepted
   "description": "user: exportPersonalData",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
