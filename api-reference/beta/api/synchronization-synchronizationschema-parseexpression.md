@@ -2,12 +2,12 @@
 title: 'synchronizationSchema: ParseName'
 description: '(.. objeto/Resources/synchronization_attributemappingsource.MD). '
 localization_priority: Normal
-ms.openlocfilehash: ba506e0a2c1cd922d8c5cd3b01375f21f45c6f97
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b11d50bc62dafedcdbf658e15e5501e134eb7a26
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335577"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637973"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: ParseName
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|expressão               |String               |Expressão a ser analisada.|
+|expressão               |Cadeia de caracteres               |Expressão a ser analisada.|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Objeto de dados de teste para avaliar a expressão. Opcional.|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definição do atributo que será mapeado para esta expressão. Opcional.|
 
@@ -170,6 +170,14 @@ Content-type: application/json
     "parsingSucceeded": true
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -180,6 +188,8 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

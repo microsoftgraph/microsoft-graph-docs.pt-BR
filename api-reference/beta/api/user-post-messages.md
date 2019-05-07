@@ -4,12 +4,12 @@ description: Use essa API para criar uma nova mensagem. Rascunhos podem ser cria
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c6178abcae6f7dadde2166f7f3a71bf4915ec245
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 466bcd3836b72c184e376890d67af450f661767f
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334548"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637273"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -156,11 +156,21 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_message_from_user-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_message_from_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-2"></a>Solicitação 2
 O exemplo a seguir mostra um rascunho de email do Randi Welch para o estande de Paula. A mensagem também inclui uma menção de outro usuário, Dana Swope.
 
-No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
 <!-- {
   "blockType": "request",
   "name": "create_message_with_mentions_from_user"
@@ -250,9 +260,19 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_message_with_mentions_from_user-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_message_with_mentions_from_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-3"></a>Solicitação 3
-O próximo exemplo adiciona alguns cabeçalhos de mensagem de Internet de cliente ao criar o rascunho da mensagem.
+O próximo exemplo adiciona alguns cabeçalhos das mensagens de Internet de cliente ao criar um rascunho da mensagem.
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -286,9 +306,9 @@ Content-type: application/json
     ]
 }
 ```
-No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
 ##### <a name="response-3"></a>Resposta 3
-Veja a seguir um exemplo da resposta. Observação: cabeçalhos de mensagem da Internet não são retornados por padrão em uma resposta POST. O objeto Response mostrado aqui também pode ser truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: Os cabeçalhos das mensagens Internet não são retornados por padrão em uma resposta de POSTAGEM. O objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -355,6 +375,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_message_with_headers_from_user-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_message_with_headers_from_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>Confira também
 
@@ -371,6 +401,13 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto bookingService no bookingbusi
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 41bcc4b31735cefb162a03a8c5a3dfd82cc6364e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 607949e8c4b00230815fa8b29eba751494efb8b3
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322456"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636006"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
@@ -48,21 +48,21 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|defaultDuration|Duração|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M 59.999999999999 S. |
-|defaultLocation|[location](../resources/location.md)|O local físico padrão para o serviço.|
-|defaultPrice|Duplo|O preço monetário padrão do serviço.|
-|defaultPricetype|string|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
-|defaultLembrers|coleção [bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao se ler este **bookingService** por sua ID.|
+|defaultduration|Duração|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M 59.999999999999 S. |
+|DefaultLocation|[location](../resources/location.md)|O local físico padrão para o serviço.|
+|defaultprice|Duplo|O preço monetário padrão do serviço.|
+|defaultpricetype|cadeia de caracteres|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultlembrers|coleção [bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao se ler este **bookingService** por sua ID.|
 |description|String|Uma descrição de texto para o serviço.|
-|displayName|String|Um nome de serviço.|
+|displayName|Cadeia de caracteres|Um nome de serviço.|
 |emailAddress|String|Um endereço de email|
-|id|String| Somente leitura.|
-|isHiddenFromCustomers|Boolean|True significa que este serviço não está disponível para os clientes para reserva.|
+|id|Cadeia de caracteres| Somente leitura.|
+|isHiddenFromCustomers|Booliano|True significa que este serviço não está disponível para os clientes para reserva.|
 |notes|Cadeia de caracteres|Informações adicionais sobre este serviço.|
 |Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
 |antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
-|staffMemberIds|Coleção String|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
+|staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
@@ -91,6 +91,16 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingservice-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingservice-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,6 +111,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
