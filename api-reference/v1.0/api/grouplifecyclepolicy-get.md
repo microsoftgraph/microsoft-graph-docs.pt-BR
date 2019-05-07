@@ -4,47 +4,47 @@ description: Recupera as propriedades e os relacionamentos de um objeto groupLif
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 0b4d29ca8a08c2ec805549e6f10da4ac268771a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec486e17d2ecbd88a422fc7a6935e23417f683aa
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566126"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614041"
 ---
-# <a name="get-grouplifecyclepolicy"></a><span data-ttu-id="92ff9-103">Obter groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="92ff9-103">Get groupLifecyclePolicy</span></span>
+# <a name="get-grouplifecyclepolicy"></a><span data-ttu-id="e43e2-103">Obter groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="e43e2-103">Get groupLifecyclePolicy</span></span>
 
-<span data-ttu-id="92ff9-104">Recupera as propriedades e os relacionamentos de um objeto [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="92ff9-104">Retrieve the properties and relationships of a [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md) object.</span></span>
+<span data-ttu-id="e43e2-104">Recupera as propriedades e os relacionamentos de um objeto [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="e43e2-104">Retrieve the properties and relationships of a [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="92ff9-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="92ff9-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e43e2-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e43e2-105">Permissions</span></span>
 
-<span data-ttu-id="92ff9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="92ff9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e43e2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e43e2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="92ff9-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="92ff9-108">Permission type</span></span>      | <span data-ttu-id="92ff9-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="92ff9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e43e2-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e43e2-108">Permission type</span></span>      | <span data-ttu-id="e43e2-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e43e2-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="92ff9-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="92ff9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="92ff9-111">Directory.Read.All ou Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92ff9-111">Directory.Read.All or Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="92ff9-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="92ff9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92ff9-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="92ff9-113">Not supported.</span></span>    |
-|<span data-ttu-id="92ff9-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="92ff9-114">Application</span></span> | <span data-ttu-id="92ff9-115">Directory.Read.All ou Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92ff9-115">Directory.Read.All or Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="e43e2-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e43e2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e43e2-111">Directory.Read.All ou Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e43e2-111">Directory.Read.All or Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="e43e2-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e43e2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e43e2-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e43e2-113">Not supported.</span></span>    |
+|<span data-ttu-id="e43e2-114">Application</span><span class="sxs-lookup"><span data-stu-id="e43e2-114">Application</span></span> | <span data-ttu-id="e43e2-115">Directory.Read.All ou Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e43e2-115">Directory.Read.All or Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="92ff9-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="92ff9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e43e2-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e43e2-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groupLifecyclePolicies/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="92ff9-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="92ff9-117">Optional query parameters</span></span>
-<span data-ttu-id="92ff9-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="92ff9-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e43e2-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e43e2-117">Optional query parameters</span></span>
+<span data-ttu-id="e43e2-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e43e2-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="92ff9-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="92ff9-119">Request headers</span></span>
-| <span data-ttu-id="92ff9-120">Nome</span><span class="sxs-lookup"><span data-stu-id="92ff9-120">Name</span></span> | <span data-ttu-id="92ff9-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="92ff9-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="e43e2-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e43e2-119">Request headers</span></span>
+| <span data-ttu-id="e43e2-120">Nome</span><span class="sxs-lookup"><span data-stu-id="e43e2-120">Name</span></span> | <span data-ttu-id="e43e2-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="e43e2-121">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="92ff9-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="92ff9-122">Authorization</span></span> | <span data-ttu-id="92ff9-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="92ff9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e43e2-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="e43e2-122">Authorization</span></span> | <span data-ttu-id="e43e2-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e43e2-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="92ff9-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="92ff9-125">Request body</span></span>
-<span data-ttu-id="92ff9-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="92ff9-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="92ff9-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="92ff9-127">Response</span></span>
-<span data-ttu-id="92ff9-128">Quando é bem-sucedido, este método retorna um código de resposta `200 OK` e o objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="92ff9-128">If successful, this method returns a `200 OK` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="92ff9-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="92ff9-129">Example</span></span>
+## <a name="request-body"></a><span data-ttu-id="e43e2-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e43e2-125">Request body</span></span>
+<span data-ttu-id="e43e2-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e43e2-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="e43e2-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="e43e2-127">Response</span></span>
+<span data-ttu-id="e43e2-128">Quando é bem-sucedido, este método retorna um código de resposta `200 OK` e o objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e43e2-128">If successful, this method returns a `200 OK` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e43e2-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e43e2-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="92ff9-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="92ff9-130">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e43e2-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e43e2-130">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -53,9 +53,9 @@ GET /groupLifecyclePolicies/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="92ff9-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="92ff9-131">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e43e2-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="e43e2-131">Response</span></span>
 
-<span data-ttu-id="92ff9-p103">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="92ff9-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="e43e2-p103">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e43e2-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,6 +73,16 @@ Content-length: 174
   "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="e43e2-134">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="e43e2-134">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="e43e2-135">Basic</span><span class="sxs-lookup"><span data-stu-id="e43e2-135">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_grouplifecyclepolicy-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e43e2-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e43e2-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_grouplifecyclepolicy-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -81,5 +91,9 @@ Content-length: 174
   "description": "Get groupLifecyclePolicy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/grouplifecyclepolicy-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/grouplifecyclepolicy-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
