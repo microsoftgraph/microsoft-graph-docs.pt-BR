@@ -1,21 +1,21 @@
 ---
 title: Listar alertas
-description: Recupere uma lista de objetos Alert.
+description: Recuperar uma lista de objetos de alerta.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: ab9ec3c42b0a46279e43660e241fb3cde52e83a9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e71b22ae1e60aa2f70bafd4dcd54805e46efdddf
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322682"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636552"
 ---
 # <a name="list-alerts"></a>Listar alertas
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [Alert](../resources/alert.md) .
+Recuperar uma lista de objetos de [alerta](../resources/alert.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,18 +41,18 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:
+Este método suporta os seguintes [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`retornará os principais resultados agregados de cada provedor de API de segurança.
+- `$top` retornará os principais resultados agregados de cada provedor de API de segurança.
 
-Para retornar um conjunto de propriedades alternativo, use o `$select` parâmetro de consulta OData para especificar o conjunto de propriedades de **alerta** que você deseja.  Por exemplo, para retornar as propriedades **assignedTo**, **Category**e **Severity** , adicione o seguinte à sua consulta: `$select=assignedTo,category,severity`.
+Para retornar um conjunto de propriedades alternativas, use o parâmetro de consulta OData `$select` para especificar o conjunto de propriedades de **alerta** que você deseja.  Por exemplo, para retornar as propriedades **assignedTo**, **category** e **severity**, adicione o seguinte à sua consulta: `$select=assignedTo,category,severity`.
 
-> **Observação:** `$top` tem um limite de 1000 alertas e uma combinação de `$top`  +  `$skip` não pode exceder 6000 alertas. Por exemplo, `/security/alerts?$top=10&$skip=5990` o retornará um `200 OK` código de resposta, `/security/alerts?$top=10&$skip=5991` mas retornará um `400 Bad Request` código de resposta.  Para obter mais informações, consulte [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+> **Observação:** `$top` possui um limite de 1000 alertas, e uma combinação de `$top` + `$skip` não pode exceder 6000 alertas. Por exemplo, `/security/alerts?$top=10&$skip=5990` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=5991` retornará um código de resposta `400 Bad Request`.  Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -66,7 +66,7 @@ Não forneça um corpo de solicitação para esse método. O corpo da solicitaç
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos **Alert** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um `206 Partial Content` código de status com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos de **alerta** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -111,6 +111,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_alerts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_alerts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -121,6 +131,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

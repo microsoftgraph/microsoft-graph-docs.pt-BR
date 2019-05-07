@@ -2,12 +2,12 @@
 title: Obter singleValueLegacyExtendedProperty
 description: Você pode obter uma única instância de recurso expandida com uma propriedade estendida específica ou uma coleção de instâncias de recurso
 localization_priority: Normal
-ms.openlocfilehash: a518e50f694d70fadc7fab4ee79a7e4860cc5cb1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 134096aca522db6c1f83fd93ec060a26f13f1846
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335879"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638568"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Obter singleValueLegacyExtendedProperty
 
@@ -43,7 +43,7 @@ Confira [Visão geral de propriedades estendidas](../resources/extended-properti
 ## <a name="permissions"></a>Permissões
 Dependendo do recurso para o qual você está obtendo a propriedade estendida e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
@@ -269,7 +269,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |**Parâmetro**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|id_value|String|A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|id_value|Cadeia de caracteres|A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 |property_value |String|O valor da propriedade estendida a ser correspondida. Obrigatório quando indicado na seção **Solicitação HTTP** acima. Se {property_value} não for uma cadeia de caracteres, converta o `ep/value` para o tipo de dado Edm apropriado ao compará-lo com {property_value}. Confira exemplos na [solicitação 4](#request-4) abaixo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -345,6 +345,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="request-2"></a>Solicitação 2
 
@@ -427,6 +437,9 @@ Para cada um dos dois exemplos anteriores, uma resposta bem-sucedida é indicada
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

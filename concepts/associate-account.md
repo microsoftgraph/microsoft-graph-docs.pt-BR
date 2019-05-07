@@ -1,13 +1,13 @@
 ---
-title: Associar sua conta do Office 365 ao Azure AD para criar e gerenciar aplicativos
+title: Associar sua conta do Office 365 ao AD do Azure para criar e gerenciar aplicativos
 description: 'Para autenticar seus aplicativos usando o Microsoft Azure Active Directory (Azure AD), você precisa registrá-los no Azure AD. É lá que as informações da conta de usuário do Office 365 e do aplicativo estão armazenadas. Para gerenciar o Azure AD no Portal do Azure, você precisará de uma assinatura do Microsoft Azure. Use o portal no Microsoft Azure para gerenciar usuários, funções e aplicativos. '
 localization_priority: Normal
-ms.openlocfilehash: 815cc80fa8d25f52ac05a1bf80f9e9dfa89b9b4d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+ms.openlocfilehash: efcb898290944314951af9b6dca980513aff2954
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880154"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599853"
 ---
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>Associar sua conta do Office 365 ao Azure AD para criar e gerenciar aplicativos
 
@@ -15,7 +15,7 @@ Para autenticar seus aplicativos usando o Microsoft Azure Active Directory (Azur
 
 Este artigo mostra como associar sua conta do Office 365 ao Azure AD para criar e gerenciar aplicativos.
 
- >**Observação:** Este artigo usa o Azure AD como provedor de autenticação para o seu aplicativo. Se você estiver usando o ponto de extremidade do Azure AD v2.0, não precisará executar esta etapa. Para mais informações, confira [Autenticação de aplicativo com o Microsoft Graph](auth-overview.md).
+ >**Observação:** Este artigo usa o Azure AD como provedor de autenticação para o seu aplicativo. Se você estiver usando o ponto de extremidade do Azure AD v2.0, não precisará executar esta etapa. Para mais informações, confira [Autenticação de aplicativo com o Microsoft Graph](./auth).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -23,8 +23,8 @@ Este artigo mostra como associar sua conta do Office 365 ao Azure AD para criar 
 
 Se você não tiver uma conta do Office 365 para empresas, poderá:
 
-- Inscreva-se em um dos [planos do Office 365 para empresas](https://products.office.com/pt-BR/business/compare-office-365-for-business-plans) listados acima ou
-- [Participar do Programa de Desenvolvedores do Office 365 e obter uma assinatura gratuita 1 ano do Office 365](https://aka.ms/devprogramsignup).
+- Inscreva-se em um dos [planos do Office 365 para empresas](https://products.office.com/en-us/business/compare-office-365-for-business-plans) listados acima ou
+- [Join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
 
 **Assinatura do Microsoft Azure** 
 
@@ -42,7 +42,7 @@ Se você não tiver uma conta do Office 365 para empresas, poderá:
         
 2. Selecione o nó **Active Directory**, selecione a guia **Diretório** e, na parte inferior da tela, selecione **Novo**. 
      
-4. No menu **Novo**, selecione **Active Directory**  >  **Diretório**  >  **Criar Personalizado**.
+4. No menu **Novo**, selecione **Active Directory** > **Diretório** > **Criar Personalizado**.
     
 5. Em **Adicionar diretório**, na caixa suspensa **Diretório**, selecione **Usar diretório existente**. Marque **Estou pronto para sair** e escolha a marca de seleção no canto inferior direito. 
     
@@ -82,7 +82,7 @@ Se você não tiver uma conta do Office 365 para empresas, poderá:
     3. Depois que você receber seu código de verificação, digite-o e escolha **Verificar código**.
     4. Insira as informações de pagamento, verifique o contrato e selecione **Inscrever-se**.
         
-        Seu cartão de crédito não será cobrado.
+        Your credit card will not be charged.
         
         Não feche ou atualize o navegador enquanto a assinatura do Azure está sendo criada.
             
@@ -93,5 +93,5 @@ Se você não tiver uma conta do Office 365 para empresas, poderá:
     Agora, você deve ver todos os itens na sua assinatura do Azure. Ele lista um diretório com o nome do seu locatário do Office 365.
     
 ## <a name="see-also"></a>Confira também
-- [Noções básicas de como registrar um aplicativo no Azure AD](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [Adicionar, atualizar ou remover um aplicativo no Azure AD](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-integrating-applications/)
+- [Noções básicas de como registrar um aplicativo no Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Adicionar, atualizar ou remover um aplicativo no Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)

@@ -4,12 +4,12 @@ description: Atualize uma propriedade de alerta editável em qualquer solução 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: ac757bb6248902f097ebf49d803a323977976acd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: de663b4cdcd4f12bfdf3d180f039144f86d2d624
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322674"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636559"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |   SecurityEvents.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | SecurityEvents.ReadWrite.All |
+|Application | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,12 +49,12 @@ No corpo da solicitação, forneça uma representação JSON dos valores de camp
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|String|Nome do analista ao qual o alerta é atribuído para a triagem, investigação ou correção.|
+|assignedTo|Cadeia de caracteres|Nome do analista ao qual o alerta é atribuído para a triagem, investigação ou correção.|
 |closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |comentários|String collection|Comentários de analista sobre o alerta (para o gerenciamento de alerta do cliente).|
 |comentários|Enumeração alertFeedback|Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|Enumeração alertStatus|Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|marcações|Coleção String|Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "vimos).|
+|marcações|String collection|Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "vimos).|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Os campos Provider e Vendor são necessários.**|
 
 ## <a name="response"></a>Resposta
@@ -108,6 +108,16 @@ Veja a seguir o exemplo de uma resposta bem-sucedida.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: solicitação com cabeçalho preferencial
 
@@ -174,6 +184,11 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

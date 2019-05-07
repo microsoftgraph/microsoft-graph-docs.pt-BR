@@ -2,12 +2,12 @@
 title: 'synchronizationJob: validateCredentials'
 description: Valide se as credenciais são válidas no locatário.
 localization_priority: Normal
-ms.openlocfilehash: 4be9317f753865fdb956e58566ec1302d1542de5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b533305f622ddb5249fb64727979cafb6fbbc56a
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330080"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638001"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -40,7 +40,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Boolean|Quando `true`, o `credentials` parâmetro será ignorado e as credenciais salvas anteriormente (se houver alguma) serão validadas. |
+|useSavedCredentials|Booliano|Quando `true`, o `credentials` parâmetro será ignorado e as credenciais salvas anteriormente (se houver alguma) serão validadas. |
 |las|coleção [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciais a serem validadas. Ignorado quando o `useSavedCredentials` parâmetro é `true`.|
 
 ## <a name="response"></a>Resposta
@@ -77,6 +77,16 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/synchronizationjob_validatecredentials-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/synchronizationjob_validatecredentials-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -87,6 +97,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-validatecredentials.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-validatecredentials.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: f268bc37eb3805e1e7acaf15beebe5fc24befe70
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c0729bd4e4a83633c80493eb51a1013fc635e008
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330063"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637672"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
@@ -95,6 +95,14 @@ Content-length: 45
   "values": "values-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tablerowcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +113,8 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/tablerowcollection-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

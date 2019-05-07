@@ -2,12 +2,12 @@
 title: Atualizar o servicePrincipalName
 description: Atualiza as propriedades do objeto servicePrincipalName.
 localization_priority: Normal
-ms.openlocfilehash: 9bb3f8b578d3a0e24418f80da693ff317a7cc132
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e2caffafe114f0023a849cecef98f8173bf6468f
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331433"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638631"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar o servicePrincipalName
 
@@ -43,19 +43,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |appId|Cadeia de caracteres|O identificador exclusivo do aplicativo associado (sua propriedade **appId**).|
 |appRoleAssignmentRequired|Boolean|Especifica se um **appRoleAssignment** de um usuário ou grupo é necessário antes que o Azure AD emita um token de usuário ou de acesso ao aplicativo.                            **Observações**: requer a versão 1,5 ou posterior, não anulável.            |
 |appRoles|appRole|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **appRoles** na entidade de aplicativo **observações**: requer a versão 1,5 ou posterior, não anulável.            |
-|displayName|String|O nome de exibição da entidade de serviço.|
-|errorUrl|String|            |
-|homepage|String|A URL da home page do aplicativo associado.|
-|keyCredentials|keyCredential|A coleção de credenciais principais associada à entidade de serviço.                            **Anotações**: não anulável.            |
-|logoutUrl|String| Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML. |
+|displayName|Cadeia de caracteres|O nome de exibição da entidade de serviço.|
+|errorUrl|Cadeia de caracteres|            |
+|homepage|Cadeia de caracteres|A URL da home page do aplicativo associado.|
+|keyCredentials|keycredential|A coleção de credenciais principais associada à entidade de serviço.                            **Anotações**: não anulável.            |
+|logoutUrl|Cadeia de caracteres| Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML. |
 |oauth2Permissions|oAuth2Permission|As permissões OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, confira a definição da propriedade **oauth2Permissions** na entidade aplicativo.                            **Observações**: requer a versão 1,5 ou posterior, não anulável.            |
 |passwordCredentials|passwordCredential|A coleção de credenciais de senha associada à entidade de serviço.                            **Anotações**: não anulável.            |
-|preferredTokenSigningKeyThumbprint|String|Reservado apenas para uso interno. Não escreva ou dependa de alguma forma dessa propriedade. Pode ser removida em versões futuras.                            **Observações**: requer a versão 1,5 ou mais recente.            |
+|preferredTokenSigningKeyThumbprint|Cadeia de caracteres|Reservado apenas para uso interno. Não escreva ou dependa de alguma forma dessa propriedade. Pode ser removida em versões futuras.                            **Observações**: requer a versão 1,5 ou mais recente.            |
 |publisherName|String|O nome de exibição do locatário no qual o aplicativo associado está especificado.|
-|replyUrls|String|As URLs às quais os tokens de usuário são enviados para entrar com aplicativo associado ou os URIs de redirecionamento aos quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado.                            **Anotações**: não anulável.            |
+|replyUrls|Cadeia de caracteres|As URLs às quais os tokens de usuário são enviados para entrar com aplicativo associado ou os URIs de redirecionamento aos quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado.                            **Anotações**: não anulável.            |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|String|Os URIs que identificam o aplicativo associado. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Observações**: não nulos, o operador **any** é obrigatório para expressões de filtro em Propriedades de vários valores; para obter mais informações, consulte [supported queries, Filters, and paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
-|marcações|String|                                        **Anotações**: não anulável.            |
+|servicePrincipalNames|Cadeia de caracteres|Os URIs que identificam o aplicativo associado. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Observações**: não nulos, o operador **any** é obrigatório para expressões de filtro em Propriedades de vários valores; para obter mais informações, consulte [supported queries, Filters, and paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|marcações|Cadeia de caracteres|                                        **Anotações**: não anulável.            |
 
 ## <a name="response"></a>Resposta
 
@@ -124,6 +124,16 @@ Content-length: 391
   "appRoleAssignmentRequired": true
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_serviceprincipal-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_serviceprincipal-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -134,6 +144,9 @@ Content-length: 391
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/serviceprincipal-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

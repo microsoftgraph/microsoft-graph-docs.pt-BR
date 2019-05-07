@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto de gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 28f385c003be89ada8e70d67a9703760b2adb33b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d7219f073f02a5e587e1be15cd9d32def6a6eba5
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327853"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635614"
 ---
 # <a name="update-chart"></a>Atualizar gráfico
 
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |height|double|Representa a altura, em pontos, do objeto Chart.|
 |left|double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
-|name|string|Representa o nome de um objeto Chart.|
+|nome|string|Representa o nome de um objeto Chart.|
 |top|duplo|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
 |width|Double|Representa a largura, em pontos, do objeto de gráfico.|
 
@@ -85,6 +85,16 @@ Content-length: 52
   "left": 99
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_chart-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_chart-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -95,6 +105,9 @@ Content-length: 52
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/chart-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chart-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

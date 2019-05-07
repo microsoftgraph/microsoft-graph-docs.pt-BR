@@ -4,12 +4,12 @@ description: Atenda às chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bf97684ec6b659984af2518fecb1cf80643e33be
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 87ae3b6911585ae3b698ba575e0b8523f96edea8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325044"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635908"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |A ID de retorno de chamada ou de assinatura à qual os retornos serão entregues. Precisam                                                               |
-|acceptedModalities|Coleção String                         |A lista de aceitar modalidades. O valor possível são `unknown`: `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`,. Precisam |
+|acceptedModalities|Coleção de cadeias de caracteres                         |A lista de aceitar modalidades. O valor possível são `unknown`: `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`,. Precisam |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|A configuração de mídia. Precisam                                                                                                            |
 
 ## <a name="response"></a>Resposta
@@ -88,6 +88,14 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-answer-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="answer-voip-call-with-service-hosted-media"></a>Responder chamada VOIP com mídia hospedada pelo serviço
 
@@ -408,6 +416,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-answer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

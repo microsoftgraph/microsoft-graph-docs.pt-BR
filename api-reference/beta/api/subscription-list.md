@@ -1,16 +1,16 @@
 ---
-title: Listar de assinaturas
+title: Listar assinaturas
 description: " Veja os cenários abaixo para obter detalhes."
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 3ffcf78c7df28faba22b92a7389f473f0ea91613
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3728c3fcf2fe3d78b243894632a363804a2f92c8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335808"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638694"
 ---
-# <a name="list-subscriptions"></a>Listar de assinaturas
+# <a name="list-subscriptions"></a>Listar assinaturas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,34 +18,34 @@ Recupere uma lista de assinaturas de webhook. O conteúdo da resposta depende do
 
 ## <a name="permissions"></a>Permissões
 
-Essa API suporta os seguintes escopos de permissão; para saber mais, incluindo como escolher permissões, consulte [permissões](/graph/permissions-reference).
+Esta API suporta os seguintes escopos de permissão; para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão  | Permissões (da com menos para a com mais privilégios)  |
 |:---------------- |:-------------------------------------------- |
 | [Delegado](/graph/auth-v2-user) (conta corporativa ou de estudante) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
 | [Delegado](/graph/auth-v2-user) (conta pessoal da Microsoft) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
-| [Application](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
+| [Aplicativo](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
 
-Os resultados da resposta são baseados no contexto do aplicativo de chamada. Veja a seguir um resumo dos cenários comuns:
+Os resultados da resposta são baseados no contexto do aplicativo de chamada. A seguir, um resumo dos cenários comuns:
 
-### <a name="basic-scenarios"></a>Cenários básicos
+### <a name="basic-scenarios"></a>Cenários Básicos
 
-Normalmente, um aplicativo deseja recuperar as assinaturas criadas originalmente para o usuário conectado no momento ou para todos os usuários no diretório (contas corporativas/de estudante). Esses cenários não exigem nenhuma permissão especial além daquelas que o aplicativo usava originalmente para criar suas assinaturas.
+Comumente, um aplicativo deseja recuperar assinaturas originalmente criadas para o usuário atualmente conectado ou para todos os usuários no diretório (contas corporativas/de estudante). Esses cenários não exigem permissões especiais além daquelas usadas originalmente pelo aplicativo para criar suas assinaturas.
 
-| Contexto do aplicativo de chamada | Resposta contém |
+| Contexto do aplicativo de chamada | A resposta contém |
 |:-----|:---------------- |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). <br/>e<br/>O aplicativo tem a permissão original necessária para [criar a assinatura](subscription-post-subscriptions.md).<br/><br/>Observação: isso se aplica às contas da Microsoft pessoais e às contas corporativas/de estudante. | Assinaturas criadas por **este aplicativo** somente para o usuário conectado. |
-| O aplicativo está chamando em nome de si mesmo (permissão de aplicativo).<br/>e<br/>O aplicativo tem a permissão original necessária para [criar a assinatura](subscription-post-subscriptions.md).<br/><br/>Observação: isso se aplica apenas às contas corporativas/de estudante.| Assinaturas criadas por **este aplicativo** para si mesmo ou para qualquer usuário no diretório.|
+| O aplicativo está chamando em nome do usuário conectado (permissão delegada). <br/>-e-<br/>O aplicativo tem a permissão original necessária para [criar a assinatura](subscription-post-subscriptions.md).<br/><br/>Nota: Isso se aplica a contas pessoais da Microsoft e contas de trabalho/escola. | Assinaturas criadas por **este aplicativo** apenas para o usuário conectado. |
+| O aplicativo está chamando em nome de si mesmo (permissão de aplicativo).<br/>-e-<br/>O aplicativo tem a permissão original necessária para [criar a assinatura](subscription-post-subscriptions.md).<br/><br/>Nota: Isso se aplica apenas a contas de trabalho/escola.| Assinaturas criadas por **este aplicativo** para si ou para qualquer usuário no diretório.|
 
 ### <a name="advanced-scenarios"></a>Cenários avançados
 
 Em alguns casos, um aplicativo deseja recuperar assinaturas criadas por outros aplicativos. Por exemplo, um usuário deseja ver todas as assinaturas criadas por qualquer aplicativo em seu nome. Ou, um administrador pode querer ver todas as assinaturas de todos os aplicativos em seu diretório.
-Para esses cenários, uma assinatura de permissão delegada. Read. All é necessário.
+Para esses cenários, é necessária uma permissão delegada Subscription.Read.All.
 
-| Contexto do aplicativo de chamada | Resposta contém |
+| Contexto do aplicativo de chamada | A resposta contém |
 |:-----|:---------------- |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário não é um administrador*. <br/>e<br/>O aplicativo tem a permissão Subscription. Read. All<br/><br/>Observação: isso se aplica às contas da Microsoft pessoais e às contas corporativas/de estudante. | Assinaturas criadas por **qualquer aplicativo** somente para o usuário conectado. |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um administrador*.<br/>e<br/>O aplicativo tem a permissão Subscription. Read. All<br/><br/>Observação: isso se aplica apenas às contas corporativas/de estudante. | Assinaturas criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
+| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um não administrador*. <br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica a contas pessoais da Microsoft e contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** apenas para o usuário conectado. |
+| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um administrador*.<br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica apenas a contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +57,7 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte aos [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método não é compatível com os [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -71,7 +71,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma lista de objetos [Subscription](../resources/subscription.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma lista de objetos de [assinatura](../resources/subscription.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -118,6 +118,16 @@ Content-length: 586
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -128,8 +138,11 @@ Content-length: 586
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
 
-Quando uma solicitação retorna várias páginas de dados, a resposta inclui uma `@odata.nextLink` propriedade para ajudá-lo a gerenciar os resultados.  Para saber mais, confira paGinação [de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+Quando uma solicitação retorna várias páginas de dados, a resposta inclui uma propriedade `@odata.nextLink` para ajudá-lo a gerenciar os resultados.  Para saber mais, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).

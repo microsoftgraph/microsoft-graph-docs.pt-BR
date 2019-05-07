@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações de um anexo, anexados a um eve
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d1274e4332fdbc6aa022d700884f59e58f44e68a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a33941a1eca442a689b3d61a1d270198c394d09e
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322625"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636461"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -34,9 +34,9 @@ Para um anexo de item que é um [contato](../resources/contact.md), [evento](../
 
 | Tipo de anexo de item  | Conteúdo bruto retornado |
 |:-----------|:----------|
-| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) Formato MIME. ConFira o [exemplo](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **event** | formato MIME iCal. ConFira o [exemplo](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **message** | Formato MIME. ConFira o [exemplo](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) Formato MIME. Confira o [exemplo](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event** | formato MIME iCal. Confira o [exemplo](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **message** | Formato MIME. Confira o [exemplo](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
 Tentar obter um anexo `$value` de referência retorna http 405.
 
@@ -45,7 +45,7 @@ Tentar obter um anexo `$value` de referência retorna http 405.
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 * Se estiver acessando anexos em mensagens: mail. Read
-* Se estiver acessando anexos em eventos: caLendars. Read
+* Se estiver acessando anexos em eventos: Calendars. Read
 * Se estiver acessando anexos em tarefas do Outlook: tarefas. leitura
 * Se estiver acessando anexos em Postagens de Grupo: Group. Read. All
 
@@ -194,6 +194,16 @@ Content-type: application/json
     "contentBytes": "base64,UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_file_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_file_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-get-the-properties-of-an-item-attachment"></a>Exemplo 2: obter as propriedades de um anexo de item
 
@@ -234,6 +244,16 @@ Content-type: application/json
   "isInline":false
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_item_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_item_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>Exemplo 3: expandir e obter as propriedades do item anexado a uma mensagem
 #### <a name="request"></a>Solicitação
@@ -328,6 +348,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_and_expand_item_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_and_expand_item_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>Exemplo 4: obter as propriedades de um anexo de referência
 
@@ -374,6 +404,16 @@ Content-type: application/json
   "isFolder": true
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_reference_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_reference_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Exemplo 5: obter o conteúdo bruto de um anexo de arquivo em uma mensagem
@@ -620,6 +660,15 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -2,12 +2,12 @@
 title: Atualizar secureScoreControlProfiles
 description: Atualize uma propriedade secureScoreControlProfiles editável em qualquer solução integrada para alterar várias propriedades, como assignedTo ou tenantNote.
 localization_priority: Normal
-ms.openlocfilehash: ee184e921301fc8e2ce9e86122e5f01c335fa540
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8808a73536a67d8ed4ed50f0e5dc8c05707130fa
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331458"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638778"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Atualizar secureScoreControlProfiles
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |   Escopo securityevents. ReadWrite. All.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | Escopo securityevents. ReadWrite. All. |
+|Application | Escopo securityevents. ReadWrite. All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,9 +46,9 @@ No corpo da solicitação, forneça uma representação JSON dos valores de camp
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|String|Nome do analista ao qual o controle é atribuído para a triagem, implementação ou correção.|
-|tenantNote|String|Comentários de analista sobre o controle (para o gerenciamento de controle de clientes).|
-|controlStateUpdates| String|Configuração orientada pelo analista no controle. Os valores possíveis são: `ignore`, `thirdParty`, `reviewed`.|
+|assignedTo|Cadeia de caracteres|Nome do analista ao qual o controle é atribuído para a triagem, implementação ou correção.|
+|tenantNote|Cadeia de caracteres|Comentários de analista sobre o controle (para o gerenciamento de controle de clientes).|
+|controlStateUpdates| Cadeia de caracteres|Configuração orientada pelo analista no controle. Os valores possíveis são: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Resposta
@@ -88,6 +88,16 @@ Veja a seguir o exemplo de uma resposta bem-sucedida.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 
@@ -99,6 +109,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

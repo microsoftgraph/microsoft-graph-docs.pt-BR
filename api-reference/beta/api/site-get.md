@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Obter um Site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 644d7b617f6b47bc06a163655450fdf5ddbc0bfc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e0242952a0cecef9ab23cad2cdcd3175dd08fe24
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335810"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638701"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 
@@ -101,6 +101,16 @@ Content-type: application/json
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-site-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-site-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -109,6 +119,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/Get by ID",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

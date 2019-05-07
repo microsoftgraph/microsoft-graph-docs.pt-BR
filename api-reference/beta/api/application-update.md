@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto Application.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3c85608ad31d0d83607a49e06e2a46032e927bc4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a55b977201574c2cdf4a9b2ede140abe205d1ae0
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322891"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636328"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -41,7 +41,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Allowpublicclient e|Boolean| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
+|Allowpublicclient e|Booliano| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
 |api|[apiApplication](../resources/apiapplication.md)| Especifica configurações para um aplicativo de API. |
 |appRoles|Coleção [appRole](../resources/approle.md)|A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
 |É applicationaliases|Coleção String| Os URIs que identificam o aplicativo. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |logo|Stream|O principal logotipo do aplicativo. Não anulável. |
 |orgRestrictions|Coleção String| A organização tenantIds à qual o aplicativo é restrito.  Se a coleção estiver vazia, o aplicativo será multilocatário (não restrito). Se a coleção contiver tenantIds, o aplicativo será restrito ao tenantIds organizacional na coleção. A especificação de outros locatários, mas não o tenantid onde o aplicativo está registrado indica que a própria tenantid do aplicativo está indiretamente incluída. |
 |passwordCredentials|Coleção [passwordCredential](../resources/passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
-|preAuthorizedApplications|coleção [preauthorizedapplication e](../resources/preauthorizedapplication.md)| Lista os aplicativos e as permissões solicitadas para o consentimento implícito. Requer um administrador para ter fornecido o consentimento para o aplicativo. o preAuthorizedApplications não exige que o usuário concorde com as permissões solicitadas. As permissões listadas no preAuthorizedApplications não exigem o consentimento do usuário. No enTanto, as permissões adicionais solicitadas não listadas no preAuthorizedApplications exigem o consentimento do usuário. |
+|preAuthorizedApplications|coleção [preauthorizedapplication e](../resources/preauthorizedapplication.md)| Lista os aplicativos e as permissões solicitadas para o consentimento implícito. Requer um administrador para ter fornecido o consentimento para o aplicativo. o preAuthorizedApplications não exige que o usuário concorde com as permissões solicitadas. As permissões listadas no preAuthorizedApplications não exigem o consentimento do usuário. No entanto, as permissões adicionais solicitadas não listadas no preAuthorizedApplications exigem o consentimento do usuário. |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) collection|Especifica os recursos para os quais esse aplicativo requer acesso e o conjunto de escopos de permissão e funções de aplicativo do OAuth necessários em cada um desses recursos. Essa pré-configuração de acesso necessário aos recursos impulsiona a experiência de consentimento. Não anulável.|
 |tags|Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
 |web|[webApplication](../resources/webApplication.md)| Especifica configurações para um aplicativo Web. |
@@ -89,6 +89,16 @@ Observação: o objeto response mostrado aqui pode estar truncado por motivos de
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_application-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_application-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,6 +109,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/application-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,24 +1,24 @@
 ---
-title: Confirmar riskyUsers comprometido
-description: Confirme um objeto riskyUsers como comprometido.
+title: Confirmar riskyUser comprometido
+description: Confirme um objeto riskyUser como comprometido.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: beca64415a2d03898d57cd9cda2fb248121c424b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f0ce7b0a29b90f12104a697bdc38f3297e52676e
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336359"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639030"
 ---
-# <a name="confirm-riskyusers-compromised"></a>Confirmar riskyUsers comprometido
+# <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**Observação:** A API riskyUsers requer uma licença do Azure AD Premium P2.
 
-Confirme um objeto [riskyUser](../resources/riskyuser.md) como comprometido. Isso definirá o nível de risco do usuário de destino como alto.
+Confirme um ou mais objetos [riskyUser](../resources/riskyuser.md) como comprometidos. Esta ação define o nível de risco do usuário de destino como alto.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Identityriskuser. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Identityriskuser. ReadWrite. All |
+|Application | Identityriskuser. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,10 +40,9 @@ POST /riskyUsers/confirmCompromised
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Especifique as userIds a serem descartadas no corpo da solicitação.
+Especifique as IDs de usuário arriscadas a serem descartadas no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
@@ -75,6 +74,16 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/confirm_riskyuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/confirm_riskyuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -84,5 +93,8 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

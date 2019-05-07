@@ -4,12 +4,12 @@ description: Criar uma nova chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 850e6da61941c03f4c18dd6562a168e6f790e33d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 25e716c25ee8d06f5564b8ac6b4e3f6476f0ce84
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322898"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636454"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -159,6 +159,14 @@ Content-Type: application/json
   "tenantId": "tenantId-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-call-from-application-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---establishing"></a>Notificação-estabelecimento
 
@@ -513,6 +521,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-post-calls.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

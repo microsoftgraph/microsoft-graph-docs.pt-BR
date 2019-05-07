@@ -3,12 +3,12 @@ title: Enumerar sites
 description: Liste [sites] [] em uma organização que corresponda aos critérios de filtro e opções de consulta fornecidos.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0bcf6023779178ea2c5d8e6ccb24adafad4bb7d7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f61aab6a7a333e83438f5cc6d03c6ac79e277df2
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330108"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638638"
 ---
 # <a name="enumerate-sites"></a>Enumerar sites
 
@@ -90,6 +90,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-sites-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-sites-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -98,6 +108,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Site/List sites",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

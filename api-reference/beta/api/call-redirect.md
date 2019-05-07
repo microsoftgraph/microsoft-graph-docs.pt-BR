@@ -4,12 +4,12 @@ description: Redirecione as chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9dcb8b6fd83f431bf5048bcc42b0de5d1ff55110
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8291751b4dfc74fcd2f4ccfd194cc8bfbe66c482
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328012"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636321"
 ---
 # <a name="call-redirect"></a>Call: Redirect
 
@@ -44,17 +44,17 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |targets|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento.|
-|targetDisposition|String|O valor possível é:`default`|
+|targetDisposition|Cadeia de caracteres|O valor possível é:`default`|
 |timeout|Int32|O tempo limite em segundos para a operação de redirecionamento.|
-|maskCallee|Boolean|Indica se o receptor deve ser mascarado.|
-|maskCaller|Boolean|Indica se o chamador deve ser mascarado.|
+|maskCallee|Booliano|Indica se o receptor deve ser mascarado.|
+|maskCaller|Booliano|Indica se o chamador deve ser mascarado.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` o código de resposta
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="redirect-a-call"></a>ReDirecionar uma chamada
+### <a name="redirect-a-call"></a>Redirecionar uma chamada
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -102,8 +102,16 @@ Content-Length: 515
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 
-### <a name="forward-a-call"></a>EnCaminhar uma chamada
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-redirect-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### <a name="forward-a-call"></a>Encaminhar uma chamada
 
 ##### <a name="notification---incoming"></a>Notificação-entrada
 
@@ -267,6 +275,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

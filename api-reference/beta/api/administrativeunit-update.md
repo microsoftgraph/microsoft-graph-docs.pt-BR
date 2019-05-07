@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto administrativeUnit.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1b1334a26451f457fa0a08466daa31292d641d8e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 56b92a7dc191b41798255f1db5a5da84285688f8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322721"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636636"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Descrição da unidade administrativa.|
-|displayName|string|Nome de exibição para a unidade administrativa.|
+|displayName|cadeia de caracteres|Nome de exibição para a unidade administrativa.|
 |visibilidade|string|Visibilidade para a unidade administrativa. Se não for definido, o padrão será "Public". Pode ser definido como "HiddenMembership", que oculta a associação de não membros.|
 
 Como o recurso **administrativeUnit** oferece suporte a [extensões](/graph/extensibility-overview), você pode `PATCH` usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância existente do **administrativeUnit** .
@@ -84,6 +84,16 @@ Content-length: 114
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_administrativeunit-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_administrativeunit-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>Confira também
 
@@ -103,6 +113,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/administrativeunit-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/administrativeunit-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -2,12 +2,12 @@
 title: 'synchronizationSchema: funções'
 description: Listar todas as funções atualmente suportadas no attributeMappingSource.
 localization_priority: Normal
-ms.openlocfilehash: d5b24f77e61011d6c5a8bc7652c3c4ff168d2e1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c1563255a7444c65030799de3477bbadcaf7a196
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330570"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637987"
 ---
 # <a name="synchronizationschema-functions"></a>synchronizationSchema: funções
 
@@ -135,6 +135,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/synchronizationschema_functions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/synchronizationschema_functions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 Below is the full response, which had to be redacted above as Markdown Scanner tool trips over "type" values containing 
@@ -400,6 +410,9 @@ non-string type names like "Integer" or "Boolean"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-functions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-functions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

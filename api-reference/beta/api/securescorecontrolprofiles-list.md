@@ -2,12 +2,12 @@
 title: Listar secureScoreControlProfiles
 description: Recupere as propriedades e os relacionamentos de um objeto secureScoreControlProfiles.
 localization_priority: Normal
-ms.openlocfilehash: 29efa2c9bedaa295304eb82190a64fbc4a863cd1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 94f94feb5f540d3a830b97ec3defe7972b345557
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331537"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638813"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Listar secureScoreControlProfiles
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All.   |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All. |
+|Application | Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -117,6 +117,16 @@ Content-type: application/json
      ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_list-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!--
@@ -126,6 +136,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

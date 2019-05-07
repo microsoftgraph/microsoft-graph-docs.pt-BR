@@ -1,15 +1,15 @@
 ---
 title: Obter calendário
-description: 'Obtenha as propriedades e as relações de um objeto calendar. O calendário pode ser um para um usuário, '
+description: 'Obtenha as propriedades e as relações de um objeto calendário. O calendário pode ser um para um usuário '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a611bfe35991aa7558a890ecede8519677c5e643
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dbdad8b4ff5bc639fd19ffa4e85e0e1c9ba257be
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322271"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635894"
 ---
 # <a name="get-calendar"></a>Obter calendário
 
@@ -17,10 +17,10 @@ ms.locfileid: "33322271"
 
 Obtenha as propriedades e as relações de um objeto [calendar](../resources/calendar.md). O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365.
 
-Há dois cenários em que um aplicativo pode obter o calendário de outro usuário:
+Existem dois cenários em que um aplicativo pode receber o calendário de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo ou
-* Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
 
 ## <a name="permissions"></a>Permissões
@@ -110,6 +110,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_calendar-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_calendar-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -120,6 +130,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/calendar-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/calendar-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

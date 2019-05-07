@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto workbookChartFont.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1228a49815419a077fd6999a400f4d720b6724f6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4f42f2ef09743ba62e7462d696bd3259b9435289
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327748"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635110"
 ---
 # <a name="update-chartfont"></a>Atualizar chartfont
 
@@ -44,9 +44,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bold|booliano|Representa o status da fonte em negrito.|
-|color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
+|color|cadeia de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|name|string|Nome da fonte (por exemplo, "Calibri")|
+|nome|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Tamanho da fonte, por exemplo, 11.|
 |underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None` e `Single`.|
 
@@ -95,6 +95,16 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_chartfont-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_chartfont-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +115,9 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartfont-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chartfont-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

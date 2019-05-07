@@ -3,12 +3,12 @@ title: Criar assinatura
 description: Assina um aplicativo de escuta para receber notificações quando os dados de um recurso do Microsoft Graph são alterados.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: fae31505790f7ec06f40412fa772548844f236c8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a781d3654a54c8514b243f4a1f15772c5dd63fe8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335700"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638569"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -127,6 +127,16 @@ Content-length: 252
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_subscription_from_subscriptions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_subscription_from_subscriptions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
@@ -141,6 +151,9 @@ O ponto de extremidade da notificação da assinatura (especificado na `notifica
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-post-subscriptions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/subscription-post-subscriptions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

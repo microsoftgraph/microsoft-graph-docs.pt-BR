@@ -1,17 +1,17 @@
 ---
-title: 'usuário: getDicas de dicas'
+title: 'usuário: getdicas de dicas'
 description: Obter as Dicas de E-mail de um ou mais destinatários como disponíveis para o usuário conectado.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 03143b511fc2eade8bac0e9c4adc6a4224a344ee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5ba3c606f9e54a27f46586ecc13b008a761a7d85
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334930"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637329"
 ---
-# <a name="user-getmailtips"></a>usuário: getDicas de dicas
+# <a name="user-getmailtips"></a>usuário: getdicas de dicas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,8 +47,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EmailAddresses|Coleção String|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
-|MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são `automaticReplies`: `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, e `totalMemberCount`.|
+|EmailAddresses|Coleção de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|MailTipsOptions|Cadeia de caracteres|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são `automaticReplies`: `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, e `totalMemberCount`.|
 
 ## <a name="response"></a>Resposta
 
@@ -125,6 +125,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_getmailtips-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_getmailtips-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -135,6 +145,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: Criar um novo **audioRoutingGroup**.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c406f29a2a14f1c7cd763c6d3e8ec5b9f3d2fa22
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a8bd4e0c1e3e78152df9631b2fd4ed06f6df7c69
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328293"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635873"
 ---
 # <a name="create-audio-routing-group"></a>Criar grupo de roteamento de áudio
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Aplicativo                            | Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All |
+| Application                            | Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -99,6 +99,16 @@ Content-Length: 233
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-audioRoutingGroup-from-call-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-audioRoutingGroup-from-call-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 ### <a name="example-2-multicast-audioroutinggroup"></a>Exemplo 2: audioRoutingGroup de difusão seletiva
 
 ##### <a name="request"></a>Solicitação
@@ -170,6 +180,9 @@ Content-Length: 233
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-post-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/call-post-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

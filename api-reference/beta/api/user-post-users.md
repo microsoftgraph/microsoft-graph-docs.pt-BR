@@ -4,19 +4,18 @@ description: Use esta API para criar um novo usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2bd39aa9251fabeeb564eb9db1e782804f533543
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5efcc4bd793ca876d1db5860785c3ba67d447ade
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334587"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637119"
 ---
 # <a name="create-user"></a>Criar usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo usuário.
-O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
+Use esta API para criar um novo usuário. O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar qualquer outra propriedade gravável.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -45,7 +44,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled |booliano |true se a conta estiver habilitada; caso contrário, false.|
-|displayName |cadeia de caracteres |Nome de exibição no catálogo de endereços do usuário.|
+|displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário.|
@@ -107,6 +106,16 @@ Content-type: application/json
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_user_from_users_2-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_user_from_users_2-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>Confira também
 
@@ -123,6 +132,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-post-users.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-users.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

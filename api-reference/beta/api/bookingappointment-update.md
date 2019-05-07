@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto bookingAppointment no booking
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 1cca20fa9cca596095f902adf961ea424ff688cd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 32596ae8528f6c73ae4b82852baaed0031db7b57
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322531"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636209"
 ---
 # <a name="update-bookingappointment"></a>Atualizar bookingappointment
 
@@ -40,31 +40,31 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|customerEmailAddress|String|O endereço SMTP do [bookingCustomer](../resources/bookingcustomer.md) que está reservando o compromisso.|
-|Box|String|A ID do [bookingCustomer](../resources/bookingcustomer.md) para este compromisso. Se nenhuma ID for especificada quando um compromisso for criado, será criado um novo objeto **bookingCustomer** . Depois de definido, considere o **CustomerID** imutável.|
+|customerEmailAddress|Cadeia de caracteres|O endereço SMTP do [bookingCustomer](../resources/bookingcustomer.md) que está reservando o compromisso.|
+|Box|Cadeia de caracteres|A ID do [bookingCustomer](../resources/bookingcustomer.md) para este compromisso. Se nenhuma ID for especificada quando um compromisso for criado, será criado um novo objeto **bookingCustomer** . Depois de definido, considere o **CustomerID** imutável.|
 |customerLocation|[location](../resources/location.md)|Representa as informações de local para o [bookingCustomer](../resources/bookingcustomer.md) que está reservando o compromisso.|
-|Customer|String|O nome do cliente.|
-|customerNotes|String|Observações do cliente associado a este compromisso. Você pode obter o valor somente ao ler este **bookingAppointment** por sua ID. <br> Você pode definir essa propriedade somente quando criar inicialmente um compromisso com um novo cliente. Após esse ponto, o valor é calculado a partir do cliente representado por **CustomerID**.|
-|customerPhone|String|O número de telefone do cliente.|
+|Customer|Cadeia de caracteres|O nome do cliente.|
+|customerNotes|Cadeia de caracteres|Observações do cliente associado a este compromisso. Você pode obter o valor somente ao ler este **bookingAppointment** por sua ID. <br> Você pode definir essa propriedade somente quando criar inicialmente um compromisso com um novo cliente. Após esse ponto, o valor é calculado a partir do cliente representado por **CustomerID**.|
+|customerPhone|Cadeia de caracteres|O número de telefone do cliente.|
 |duration|Duração|O comprimento do compromisso, indicado no formato [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o compromisso termina.|
 |invoiceAmount|Duplo|O valor cobrado na fatura.|
 |invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário da fatura para este compromisso.|
-|faturaid|String|A ID da fatura.|
-|invoiceStatus|string| O status da fatura. Os possíveis valores são: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
-|invoiceUrl|String|A URL da fatura em Microsoft bookings.|
-|optOutOfCustomerEmail|Boolean|True indica que o [bookingCustomer](../resources/bookingcustomer.md) para este compromisso não deseja receber uma confirmação desse compromisso.|
+|faturaid|Cadeia de caracteres|A ID da fatura.|
+|invoiceStatus|cadeia de caracteres| O status da fatura. Os possíveis valores são: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
+|invoiceUrl|Cadeia de caracteres|A URL da fatura em Microsoft bookings.|
+|optOutOfCustomerEmail|Booliano|True indica que o [bookingCustomer](../resources/bookingcustomer.md) para este compromisso não deseja receber uma confirmação desse compromisso.|
 |Buffer|Duração|A quantidade de tempo para reservar depois que o compromisso termina, para limpeza, como um exemplo. O valor é expresso no formato [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
 |antes do buffer|Duração|A quantidade de tempo para reservar antes de o compromisso começar, para preparação, como um exemplo. O valor é expresso no formato [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 |descontos|Duplo|O preço regular de um compromisso para o [bookingService](../resources/bookingservice.md)especificado.|
-|PriceType|string| Uma configuração para fornecer flexibilidade para a estrutura de preços de serviços. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|PriceType|cadeia de caracteres| Uma configuração para fornecer flexibilidade para a estrutura de preços de serviços. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |lembretes|coleção [bookingReminder](../resources/bookingreminder.md)|O conjunto de lembretes do cliente enviado para este compromisso. O valor dessa propriedade está disponível somente ao se ler este **bookingAppointment** por sua ID.|
-|selfServiceAppointmentId|String|Uma ID de controle adicional para o compromisso, se o compromisso tiver sido criado diretamente pelo cliente na página de agendamento, em vez de por um membro da equipe em nome do cliente.|
-|serviceId|String|A ID da [bookingService](../resources/bookingservice.md) associada a este compromisso.|
+|selfServiceAppointmentId|Cadeia de caracteres|Uma ID de controle adicional para o compromisso, se o compromisso tiver sido criado diretamente pelo cliente na página de agendamento, em vez de por um membro da equipe em nome do cliente.|
+|serviceId|Cadeia de caracteres|A ID da [bookingService](../resources/bookingservice.md) associada a este compromisso.|
 |serviceLocation|[location](../resources/location.md)|O local onde o serviço é entregue.|
-|serviceName|String|O nome do **bookingService** associado a este compromisso.<br>Essa propriedade é opcional ao criar um novo compromisso. Se não for especificado, será calculado a partir do serviço associado ao compromisso pela propriedade **ServiceId** .|
-|Notas|String|Observações de um [bookingStaffMember](../resources/bookingstaffmember.md). O valor dessa propriedade está disponível somente ao se ler este **bookingAppointment** por sua ID.|
-|staffMemberIds|Coleção String|A ID de cada [bookingStaffMember](../resources/bookingstaffmember.md) que está agendado neste compromisso.|
+|serviceName|Cadeia de caracteres|O nome do **bookingService** associado a este compromisso.<br>Essa propriedade é opcional ao criar um novo compromisso. Se não for especificado, será calculado a partir do serviço associado ao compromisso pela propriedade **ServiceId** .|
+|Notas|Cadeia de caracteres|Observações de um [bookingStaffMember](../resources/bookingstaffmember.md). O valor dessa propriedade está disponível somente ao se ler este **bookingAppointment** por sua ID.|
+|staffMemberIds|Coleção de cadeias de caracteres|A ID de cada [bookingStaffMember](../resources/bookingstaffmember.md) que está agendado neste compromisso.|
 |iniciar|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário de início do compromisso.|
 
 
@@ -109,6 +109,16 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingappointment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingappointment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -119,6 +129,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingappointment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

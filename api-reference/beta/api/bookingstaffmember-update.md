@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um bookingStaffMember no bookingbusines
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 4124a681332a91d2d909c141b54d412cae9bcc69
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: acfef7e88e6fe8d5bb8e46c5d3c3e3c85ff1aa33
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322313"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635887"
 ---
 # <a name="update-bookingstaffmember"></a>Atualizar bookingstaffmember
 
@@ -40,12 +40,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|True significa que, se o membro da equipe for um usuário do Office 365, a API Books usa o calendário pessoal do membro da equipe no Office 365, bem como a propriedade **workingHours** para determinar a disponibilidade. |
+|availabilityIsAffectedByPersonalCalendar|Booliano|True significa que, se o membro da equipe for um usuário do Office 365, a API Books usa o calendário pessoal do membro da equipe no Office 365, bem como a propriedade **workingHours** para determinar a disponibilidade. |
 |colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página de **detalhes da equipe** no aplicativo de reservas.|
 |displayName|String|O nome do membro da equipe, conforme exibido para os clientes.|
 |emailAddress|String|O endereço de email do membro da equipe. Isso pode ser no mesmo locatário do Office 365 que a empresa ou em um domínio de email diferente. Esse endereço de email será usado se a propriedade **sendConfirmationsToOwner** estiver definida como true na política de agendamento da empresa.|
-|role|string| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|useBusinessHours|Boolean|True significa que a disponibilidade do membro da equipe é determinada pela propriedade **businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHouse** do membro da equipe.|
+|role|cadeia de caracteres| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|useBusinessHours|Booliano|True significa que a disponibilidade do membro da equipe é determinada pela propriedade **businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHouse** do membro da equipe.|
 |workingHours|coleção [bookingWorkHours](../resources/bookingworkhours.md)|O intervalo de horas por dia da semana em que o membro da equipe está disponível para reserva.|
 
 ## <a name="response"></a>Resposta
@@ -136,6 +136,16 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingstaffmember-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingstaffmember-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -146,6 +156,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,12 +1,12 @@
 ---
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
-ms.openlocfilehash: a32d8bde766718aa0f6f6080ed4b8ff4e3e7f520
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1eeb6c91f8c5162ae0b372e758a81d57aa0daa7a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526303"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599825"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -22,6 +22,8 @@ Cada ambiente de nuvem nacional é exclusivo e diferente do ambiente global da M
 
 Este artigo fornece informações sobre as diferentes implantações de nuvem nacional do Microsoft Graph e os recursos disponíveis para os desenvolvedores dentro de cada um.
 
+>**Observação:** O [Microsoft Graph data Connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) não dá suporte a nenhuma implantação nacional de nuvem. 
+
 ## <a name="app-registration-and-token-service-root-endpoints"></a>Pontos de extremidade de registro de aplicativo e serviço de token
 
 Antes de chamar as APIs do Microsoft Graph, você deve primeiro registrar seu aplicativo e adquirir um token. A tabela a seguir lista as URLs de base para os pontos de extremidade do Azure Active Directory (Azure AD) para registrar seu aplicativo e adquirir tokens para cada nuvem nacional.
@@ -33,7 +35,7 @@ Antes de chamar as APIs do Microsoft Graph, você deve primeiro registrar seu ap
 |Microsoft Azure AD China operado pela 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 |Microsoft Azure AD (serviço global)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
-Para saber mais sobre tokens de acesso do Azure AD e o Microsoft Graph, confira [obter tokens de autenticação](./auth-overview.md). Para cenários de autenticação do Azure AD, confira [noções básicas de autenticação do Azure ad](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
+Para saber mais sobre os tokens de acesso do Azure AD e o Microsoft Graph, consulte [Basics Authentication](./auth/auth-concepts.md). Para cenários de autenticação do Azure AD, confira [noções básicas de autenticação do Azure ad](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
 
 > **Observação:** Os [pontos de extremidade de Azure autorização e token do AD v 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) estão disponíveis apenas no serviço global. Eles ainda não têm suporte para uso com implantações de nuvem nacional.
 

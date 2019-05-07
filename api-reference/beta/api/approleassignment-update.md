@@ -2,12 +2,12 @@
 title: Atualizar approleassignment
 description: Atualize as propriedades do objeto approleassignment.
 localization_priority: Normal
-ms.openlocfilehash: a3aeea70142c81c7ce368d0c9e688c87677eb210
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2e87f4b95e20dd57f227f7ed6bfc0c81ad653437
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322607"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636433"
 ---
 # <a name="update-approleassignment"></a>Atualizar approleassignment
 
@@ -42,7 +42,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|A hora em que a concessão foi criada.|
 |id|Guid|A ID de função que foi atribuída à entidade.  Essa função deve ser declarada pela **resourceId** do aplicativo do recurso de destino em sua propriedade **appRoles**. Quando o recurso não declarar nenhuma permissão, uma ID padrão (zero GUID) deve ser especificada.                            **Anotações**: não anulável.            |
-|principalDisplayName|String|O nome de exibição da entidade à qual foi concedido o acesso.|
+|principalDisplayName|Cadeia de caracteres|O nome de exibição da entidade à qual foi concedido o acesso.|
 |principalId|Guid|O identificador exclusivo (**ObjectID**) da entidade de segurança que recebeu o acesso.                            **Observações**: obrigatório.            |
 |principalType|String|O tipo de entidade.  Pode ser “User”, “Group” ou “ServicePrincipal”.|
 |resourceDisplayName|String|O nome de exibição do recurso para o qual a tarefa foi feita.|
@@ -92,6 +92,16 @@ Content-length: 253
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_approleassignment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_approleassignment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -102,6 +112,9 @@ Content-length: 253
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

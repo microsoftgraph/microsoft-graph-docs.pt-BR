@@ -4,12 +4,12 @@ description: Cancelar o bookingAppointment especificado no bookingbusiness espec
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: f80f97f6e085980d26ce4555f35f769db6a4f4e9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c96ed0403e59f4b2dd357514168361fc3bc683f6
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322548"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636531"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: cancelar
 
@@ -42,7 +42,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|Uma mensagem a ser reconhecida pelo cliente de que o compromisso foi cancelado.|
+|cancellationMessage|Cadeia de caracteres|Uma mensagem a ser reconhecida pelo cliente de que o compromisso foi cancelado.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
@@ -76,6 +76,16 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/bookingappointment_cancel-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/bookingappointment_cancel-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -86,6 +96,9 @@ HTTP/1.1 204 No content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

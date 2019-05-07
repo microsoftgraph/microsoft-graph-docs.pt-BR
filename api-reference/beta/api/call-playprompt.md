@@ -1,21 +1,21 @@
 ---
 title: 'Call: playPrompt'
-description: ReProduza um prompt na chamada.
+description: Reproduza um prompt na chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e0f1c29b01861e931b96dc75549b8e883460b98d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 571c8b412e6e8099aaee020ef45e2ad55b1e5707
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328019"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635859"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ReProduza um prompt na chamada.
+Reproduza um prompt na chamada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -45,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |prompts|coleção [prompt](../resources/prompt.md)||
-|clientContext|String|O contexto do cliente.|
+|clientContext|Cadeia de caracteres|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [playPromptOperation](../resources/playPromptOperation.md) no corpo da resposta.
@@ -93,6 +93,14 @@ Content-Length: 166
 HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-playPrompt-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---operation-completed"></a>Notificação-operação concluída
 
@@ -133,6 +141,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-playprompt.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

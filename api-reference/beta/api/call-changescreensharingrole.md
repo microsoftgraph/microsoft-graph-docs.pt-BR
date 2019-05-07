@@ -4,12 +4,12 @@ description: Inicie e interrompa a tela de compartilhamento na chamada. Essa API
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 582cd19a341e75211a457bf5ab678fb63261cace
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cbb21c2953b6805df6986dab8f7503fa76c065ea
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328009"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636300"
 ---
 # <a name="call-changescreensharingrole"></a>Call: changeScreenSharingRole
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|role|String|Os valores possíveis são: ' Visualizador ', ' participante '|
+|role|Cadeia de caracteres|Os valores possíveis são: ' Visualizador ', ' participante '|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` o código de resposta.
@@ -79,6 +79,16 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-changeScreenSharingRole-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-changeScreenSharingRole-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,6 +99,9 @@ HTTP/1.1 202 Accepted
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-changescreensharingrole.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/call-changescreensharingrole.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

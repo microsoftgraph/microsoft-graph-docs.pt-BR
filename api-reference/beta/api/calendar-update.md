@@ -1,15 +1,15 @@
 ---
 title: Atualizar o calendário
-description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser um para um usuário, '
+description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser um para um usuário '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a67d578aa1ee03a777025aba330832460bb92fad
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 455121534528be8d1f1a61052aa6c6253a3fdb50
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322277"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635845"
 ---
 # <a name="update-calendar"></a>Atualizar o calendário
 
@@ -59,7 +59,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |isDefaultCalendar|Booliano|True se esse calendário for o calendário padrão do usuário, caso contrário, será false.|
-|name|Cadeia de caracteres|O nome do calendário.|
+|nome|Cadeia de caracteres|O nome do calendário.|
 
 ## <a name="response"></a>Resposta
 
@@ -110,6 +110,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_calendar-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_calendar-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -120,6 +130,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/calendar-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/calendar-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

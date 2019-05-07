@@ -4,12 +4,12 @@ description: Excluir vários indicadores de inteligência de ameaça (TI) em uma
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 41c964f02e12d420c73e005fd0d669aecbd92d0f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ed36e61dc60ddeae3b936f4f4712e05059333f8f
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335223"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637749"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,7 +47,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|valor|Coleção String| Coleção de `externalIds` objetos **tiIndicator** a serem excluídos. |
+|valor|Coleção de cadeias de caracteres| Coleção de `externalIds` objetos **tiIndicator** a serem excluídos. |
 
 ## <a name="response"></a>Resposta
 
@@ -106,6 +106,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[Basic](#tab/cs)
+[!INCLUDE [sample-code](../includes/tiindicator_deletetiindicatorsbyexternalid-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tiindicator_deletetiindicatorsbyexternalid-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -114,5 +124,9 @@ Content-type: application/json
   "description": "tiIndicator: deleteTiIndicatorsByExternalId",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-deletetiindicatorsbyexternalid.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-deletetiindicatorsbyexternalid.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
