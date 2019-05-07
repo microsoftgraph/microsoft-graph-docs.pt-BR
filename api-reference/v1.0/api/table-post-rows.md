@@ -4,12 +4,12 @@ description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 02817faf621bfd0df264f62fc957f2cbe5e251d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5421d684c15da9ff684732d60422a73714bf7d8f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520596"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602790"
 ---
 # <a name="create-tablerow"></a>Criar TableRow
 
@@ -91,6 +91,14 @@ Content-length: 45
   "values": "values-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tablerowcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,6 +108,7 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/table-post-rows.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
       Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
     "Warning: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
