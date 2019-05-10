@@ -1,23 +1,28 @@
 ---
 title: tipo de recurso de domínio
-description: 'Esse recurso fornece detalhes sobre o usuário ou aplicativo atividade de entrada no diretório. '
-localization_priority: Priority
-ms.openlocfilehash: 9736e906810ce1be1525bf85b687f4a5f1a57f3e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+description: Descreve o recurso signIn da API do Microsoft Graph (REST), que ajuda a auditar a atividade de login de usuário e de aplicativo (versão beta).
+author: lleonard-msft
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 90e2b2cf56776657f9c76c442b3ca9579b75cd5f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343014"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33620812"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
-Esse recurso fornece detalhes sobre o usuário ou aplicativo atividade de entrada no diretório. 
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu diretório. 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Listar entrar](../api/signin-list.md) | [signIn](signin.md) |Leia as propriedades e os relacionamentos de objetos de domínio.|
-|[Obter entrar](../api/signin-get.md) | [signIn](signin.md) |Leia as propriedades e os relacionamentos de um objeto de domínio.|
+|[Obter entrar](../api/signin-get.md) | [signIn](signin.md) |Ler propriedades e relações de um objeto signIn.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

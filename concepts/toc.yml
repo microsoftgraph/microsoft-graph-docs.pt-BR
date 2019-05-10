@@ -18,7 +18,7 @@ items:
             href: deployments.md
           - name: Implantações híbridas (visualização)
             href: hybrid-rest-support.md
-      - name: Conexão de dados do Microsoft Graph (visualização)
+      - name: Microsoft Graph Data Connect
         href: data-connect-overview.md
       - name: Tutoriais
         items:
@@ -88,13 +88,23 @@ items:
       - name: Reserva de clientes (visualização)
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
-      - name: Acesso a dados (visualização)
+      - name: Acesso aos dados
         displayName: Microsoft Graph data connect
         items:
-          - name: Visão Geral
+          - name: Visão geral do Data Connect
             href: data-connect-concept-overview.md
           - name: Introdução
             href: data-connect-get-started.md
+          - name: 'Conjuntos de dados, regiões e coletores'
+            href: data-connect-datasets.md
+          - name: Políticas e licenças
+            href: data-connect-policies.md
+          - name: Seleção de usuário e filtragem
+            href: data-connect-filtering.md
+          - name: Integração com PAM
+            href: data-connect-pam.md
+          - name: 'Dicas '
+            href: data-connect-tips.md
       - name: Dispositivos e aplicativos
         href: intune-concept-overview.md
         displayName: Intune
@@ -228,8 +238,10 @@ items:
     items:
       - name: Obter tokens de autenticação
         items:
-          - name: Visão Geral
-            href: auth-overview.md
+          - name: Visão geral
+            href: auth/index.yml
+          - name: Noções básicas
+            href: auth/auth-concepts.md
           - name: Registrar seu aplicativo
             href: auth-register-app-v2.md
           - name: Obter acesso em nome de um usuário
@@ -281,7 +293,54 @@ items:
                 href: extensibility-open-users.md
               - name: Usar extensões de esquema (exemplo)
                 href: extensibility-schema-groups.md
+      - name: Migrar
+        expanded: false
+        items:
+          - name: Azure AD Graph.
+            displayname: 'Migration, Azure AD Graph'
+            items:
+              - name: Visão geral
+                href: migrate-azure-ad-graph-overview.md
+              - name: Lista de verificação para migração de aplicativos
+                href: migrate-azure-ad-graph-planning-checklist.md
+              - name: '1: Examinar as diferenças'
+                expanded: true
+                items:
+                  - name: Solicitações
+                    href: migrate-azure-ad-graph-request-differences.md
+                  - name: Recursos de serviço
+                    href: migrate-azure-ad-graph-feature-differences.md
+                  - name: Tipos de recursos
+                    href: migrate-azure-ad-graph-resource-differences.md
+                  - name: Propriedades de entidade
+                    href: migrate-azure-ad-graph-property-differences.md
+                  - name: Métodos
+                    href: migrate-azure-ad-graph-method-differences.md
+              - name: '2: Examinar uso da API'
+                href: migrate-azure-ad-graph-audit-api-use.md
+              - name: '3: Examinar detalhes do aplicativo'
+                expanded: true
+                items:
+                  - name: Registro do aplicativo
+                    href: migrate-azure-ad-graph-app-registration.md
+                  - name: Bibliotecas de autenticação
+                    href: migrate-azure-ad-graph-authentication-library.md
+                  - name: Bibliotecas de cliente .NET
+                    href: migrate-azure-ad-graph-client-libraries.md
+              - name: '4: implantar, testar e estender'
+                href: migrate-azure-ad-graph-deploy-test-extend.md
+      - name: Usar SDKs
+        items:
+          - name: Visão geral
+            href: sdks/sdks-overview.md
+          - name: Instalar o SDK
+            href: sdks/sdk-installation.md
+          - name: Criar um cliente
+            href: sdks/create-client.md
+          - name: Escolher um provedor de autenticação.
+            href: sdks/choose-authentication-providers.md
       - name: Recursos
+        expanded: true
         items:
           - name: Práticas recomendadas
             href: best-practices-concept.md
@@ -291,7 +350,7 @@ items:
             href: changelog.md
           - name: Erros
             href: errors.md
-  - name: Referência v1.0
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-  - name: Referência beta
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+      - name: Referência v1.0
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+      - name: Referência beta
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta

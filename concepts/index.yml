@@ -20,8 +20,8 @@ abstract:
       height: 110
       src: ./images/index/whatsnew-video.png
       width: 250
-    title: 'Novidades do Microsoft Graph (12:39)'
-    href: 'https://www.youtube.com/watch?v=3X10r2VVLCg'
+    title: 'Visão geral do Microsoft Graph (4:46)'
+    href: 'https://youtu.be/PI9NO5rayiY'
     width: 250
 sections:
   - items:
@@ -60,6 +60,41 @@ sections:
             image:
               src: ./images/index/i_api.svg
             title: API REST Beta do Microsoft Graph
+  - title: Novidades nos documentos
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/graph/data-connect-concept-overview">Microsoft Graph data connect</a>
+          - html: <a href="/graph/outlook-get-free-busy-schedule">Obter agenda de disponibilidade</a>
+          - html: <a href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Logs de auditoria e de entrada</a>
+          - html: <a href="/graph/api/resources/identityprovider?view=graph-rest-1.0">Provedores de Identidade</a>
+          - html: <a href="/graph/auth">Guias de autenticação aprimorados</a>
+          - html: <a href="/graph/migrate-azure-ad-graph-overview">Migração de aplicativos do Azure AD Graph para o Microsoft Graph</a>
+          - html: <a href="/graph/api/resources/securescore?view=graph-rest-1.0">Classificação de segurança do locatário</a>
+          - html: <a href="/graph/sdks/sdks-overview?view=graph-rest-1.0">Guias SDK</a>
+          - html: 'Trechos de API (<a href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">exemplo</a>)'
+      - type: paragraph
+        text: <b>Somente beta</b>
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/graph/dynamics-business-central-concept-overview">Dynamics 365 Business Central</a>
+          - html: <a href="/graph/api/driveitem-follow?view=graph-rest-beta">Seguir</a> e <a href="/graph/api/driveitem-unfollow?view=graph-rest-beta">parar de seguir</a> documentos
+          - html: '<a href="/graph/api/driveitem-invite?view=graph-rest-beta#request-body">Compartilhamento de convite</a> inclui data de vencimento e senha'
+          - html: <a href="/graph/api/resources/accessreviews-root?view=graph-rest-beta">Revisões de acesso</a> tem suporte para permissões de aplicativo.
+          - html: <a href="/graph/api/resources/applicationsigninsummary?view=graph-rest-beta">Relatórios de entrada do aplicativo</a>
+          - html: <a href="/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta">Conectar-se e inscrever-se personalizados no Azure AD B2C</a>
+          - html: <a href="/graph/api/resources/riskyuser?view=graph-rest-beta">Usuário de risco</a> e <a href="/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta">histórico</a>
+          - html: <a href="/graph/outlook-get-mime-message">Obter conteúdo MIME de mensagens</a>
+          - html: '<a href="/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment">Colocar conteúdo bruto/MIME de anexos</a>'
+          - html: <a href="/graph/webhooks-outlook-authz">Reduzir notificações ausentes de alteração</a>
+          - html: <a href="graph/api/resources/tiindicator?view=graph-rest-beta">Indicadores de ameaças</a>
+          - html: <a href="/graph/api/resources/securityaction?view=graph-rest-beta">Ações de segurança</a>
+          - html: <a href="/graph/api/resources/shift?view=graph-rest-beta">gerenciamento de turnos</a>
+          - html: '<a href="/graph/api/resources/chat?view=graph-rest-beta">Gráficos 1:1</a>'
+      - type: paragraph
+        text: Saiba mais em <a href="/graph/changelog">log de alteração</a>!
   - title: Plataformas com suporte
     items:
       - type: paragraph

@@ -3,53 +3,77 @@ title: Visão geral do Microsoft Graph
 description: O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. O Microsoft Graph fornece um modelo de programabilidade unificada que você pode usar para aproveitar a enorme quantidade de dados disponíveis no Office 365, no Enterprise Mobility + Security e no Windows 10.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: b8256cebe9e8e706a655221c3e1acc5947f9eecd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 071023ed10658b1e3ebebff50c1845db5a6913a6
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558004"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639541"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão geral do Microsoft Graph
 
-O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. O Microsoft Graph fornece um modelo de programabilidade unificada que você pode usar para aproveitar a enorme quantidade de dados disponíveis no Office 365, no Enterprise Mobility + Security e no Windows 10. 
+O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. Ele fornece um modelo de programabilidade unificada que você pode usar para acessar a grande quantidade de dados disponíveis no Office 365, no Windows 10 e no Enterprise Mobility + Security. Você pode usar a grande quantidade de dados no Microsoft Graph para criar aplicativos para organizações e clientes que interagem com milhões de usuários. 
 
-Você pode usar a API do Microsoft Graph para criar aplicativos para organizações e clientes que interagem com os dados de milhões de usuários. Com o Microsoft Graph, você pode se conectar a uma ampla variedade de recursos, relações e inteligência, tudo por um único ponto de extremidade: `https://graph.microsoft.com`.
+## <a name="powering-the-microsoft-365-platform"></a>Alimentar a plataforma do Microsoft 365
 
-## <a name="whats-in-the-graph"></a>O que há no gráfico?
-O Microsoft Graph expõe as APIs REST e bibliotecas do cliente para acessar dados no seguinte:
+![O Microsoft Graph, Microsoft Graph Data Connect e Microsoft Graph Connectors permitem ampliar as experiências Microsoft 365 e desenvolver aplicativos inteligentes.](images/microsoft-graph-dataconnect-connectors-800.png)
 
-- Azure Active Directory
-- Serviços do Office 365: SharePoint, OneDrive, Outlook/Exchange, Microsoft Teams, OneNote, Planner e Excel
-- Serviços do Enterprise Mobility + Security: Identity Manager, Intune, Advanced Threat Analytics e Advanced Threat Protection.
-- Serviços do Windows 10: atividades e dispositivos
-- Educação
+Na plataforma do Microsoft 365, três componentes principais facilitam o acesso e o fluxo de dados:
 
-Para saber mais, veja os [principais serviços e recursos do Microsoft Graph](overview-major-services.md).
+- A API do Microsoft Graph oferece um único ponto de extremidade, `https://graph.microsoft.com`, para fornecer acesso a dados avançados focados nas pessoas, e informações expostas como recursos dos serviços do Microsoft 365. Você pode usar as APIs REST ou SDKs para acessar o ponto de extremidade e desenvolver aplicativos compatíveis com cenários que abrangem a produtividade, colaboração, educação, segurança, identidade, acesso, gerenciamento de dispositivo e muito mais.
+- [Microsoft Graph Data Connect](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) fornece um conjunto de ferramentas para simplificar entrega segura e escalonável de dados do Microsoft Graph para repositórios populares de dados do Azure. Esses dados armazenados em cache servem como fontes de dados para ferramentas de desenvolvimento do Azure que você pode usar para desenvolver aplicativos inteligentes.
+- Microsoft Graph Connectors (visualização privada) funciona na direção de entrada, entregando dados externos em aplicativos e serviços do Microsoft Graph e aprimorando as experiências personalizadas.
 
-O Microsoft Graph conecta todos os recursos entre esses serviços usando relações. Por exemplo, um usuário pode estar conectado a um grupo por meio de uma relação [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) e com outro usuário por uma relação [manager](/graph/api/user-list-manager?view=graph-rest-1.0). O aplicativo pode desviar dessas relações para acessar esses recursos conectados e executar ações neles pela API.
+Juntos, o API do Microsoft Graph Data Connect e Connectors (visualização privada) alimentam a plataforma do Microsoft 365. Com a capacidade de acessar dados e outros conjuntos de dados do Microsoft Graph para gerar informação e análise, você pode ampliar as experiências Microsoft 365 ou desenvolver aplicativos exclusivos e inteligentes.
 
-Você também pode obter informações valiosas e inteligência sobre os dados pelo Microsoft Graph. Por exemplo, você pode obter os arquivos [mais populares](/graph/api/resources/insights-trending?view=graph-rest-beta) para um determinado usuário ou [obter as pessoas mais relevantes](/graph/api/user-list-people?view=graph-rest-beta) para um usuário.
+>**Observação**: o Microsoft Graph Connectors está em uma visualização privada. A participação no programa de visualização é apenas por convite. Para mais informações sobre os conectores, confira [Build 2019: Microsoft Graph alimenta a plataforma do Microsoft 365](https://aka.ms/microsoftgraphbuild2019).
 
-Descubra as possibilidades nas relações dentro do Microsoft Graph.
+
+## <a name="whats-in-microsoft-graph"></a>Serviços do Microsoft Graph
+O Microsoft Graph expõe as APIs REST e bibliotecas do cliente para acessar dados nos seguintes serviços Microsoft 365:
+
+- Serviços Office 365: Delve, Excel, Microsoft Bookings, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, e SharePoint
+- Serviços Enterprise Mobility e Security: Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, e Intune 
+- Serviços do Windows 10: atividades, dispositivos e notificações
+- Dynamics 365 Business Central
+
+Para saber mais, confira os [Principais serviços e recursos do Microsoft Graph](overview-major-services.md).
 
 ![Uma imagem mostrando os recursos principais e as relações que fazem parte do gráfico](images/microsoft-graph.png)
 
 ## <a name="what-can-you-do-with-microsoft-graph"></a>O que você pode fazer com o Microsoft Graph? 
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
+
 Você pode usar o Microsoft Graph para criar experiências de acordo com o contexto exclusivo do usuário para ajudá-lo a ser mais produtivo. Imagine um aplicativo que...
 
-- Analisa sua próxima reunião e o ajuda a se preparar para ela ao fornecer informações de perfil dos participantes, incluindo os cargos e com quem eles trabalham, bem como informações sobre os documentos e projetos mais recentes nos quais eles estão trabalhando.
+- Analisa sua próxima reunião e o ajuda a se preparar para ela ao fornecer informações de perfil dos participantes, incluindo os cargos e com quem eles trabalham, bem como informações sobre os documentos e projetos mais recentes nos quais eles estão colaborando.
 - Verifica seu calendário e sugere os horários recomendados para a próxima reunião de equipe.
 - Busca o gráfico de projeção mais recente das vendas de um arquivo do Excel em seu OneDrive e permite atualizar a previsão em tempo real, tudo em seu telefone.
 - Assina alterações em seu calendário, envia um alerta quando você está gastando muito tempo em reuniões e oferece recomendações sobre as que você pode perder ou delegar com base na relevância dos participantes para você.
 - Ajuda você a classificar informações pessoais e profissionais em seu telefone, por exemplo, categorizando imagens que devem seguir para seu OneDrive pessoal e recibos comerciais que devem seguir para seu OneDrive for Business.
+- Analisa os dados do Office 365 em escala para que os tomadores de decisões possam desbloquear informações valiosas sobre os padrões de colaboração e a alocação de tempo que aumentam a produtividade do negócio.
+- Exibe dados personalizados de negócios para o Microsoft Graph, fazendo indexação para torná-los pesquisáveis juntamente com os dados dos serviços do Microsoft 365.
 
-Você pode fazer tudo isso e muito mais com a API do Microsoft Graph.
+Escolha o primeiro cenário sobre a pesquisa de participantes da reunião como um exemplo. Com a API do Microsoft Graph, você pode:
+
+1. Obtenha os endereços de email dos participantes de um [evento de reunião](/graph/api/resources/event?view=graph-rest-1.0). 
+2. Faça a pesquisa individualmente como um [usuário](/graph/api/resources/user?view=graph-rest-1.0) no Azure Active Directory para [obter as informações de perfil](/graph/api/user-get?view=graph-rest-1.0).
+
+Você pode navegar por outros recursos usando relações: 
+
+- Conecte-se ao gerente por meio de uma [relação de gerente](/graph/api/user-list-manager?view=graph-rest-1.0).
+- Obtenha informações valiosas e inteligência incluindo arquivos populares com [tendências ao redor](/graph/api/resources/insights-trending?view=graph-rest-beta) do usuário.
+- [Obtenha as pessoas mais relevantes](/graph/api/user-list-people?view=graph-rest-beta) para o usuário.
+- Estender o cenário para acessar os grupos de usuários por meio de uma relação [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)
+- [Acessar outros membros em cada grupo](/graph/api/group-list-members?view=graph-rest-1.0). 
+- Toque em outras situações habilitadas por [grupos](office365-groups-concept-overview.md), como [educação](education-concept-overview.md) e [trabalho em equipe](teams-concept-overview.md). 
+
+Microsoft Graph continua a abrir a plataforma Microsoft 365 para os desenvolvedores, e sempre somente com as permissões apropriadas.
 
 >**Observação:** ao usar a API do Microsoft Graph, você concorda com os [Termos de Uso do Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use) e com a [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-### <a name="popular-requests"></a>Solicitações mais usadas
+### <a name="popular-api-requests"></a>Solicitações de API populares
 
 Veja alguns desses cenários mais comuns para trabalhar com a API do Microsoft Graph. Os links levam você ao [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
@@ -70,19 +94,20 @@ Veja alguns desses cenários mais comuns para trabalhar com a API do Microsoft G
 |   Itens GET mais populares à minha volta |  [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
 |   GET minhas anotações |  [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
-## <a name="access-microsoft-graph-at-scale"></a>Acessar o Microsoft Graph em escala
+## <a name="access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect"></a>Acesse dados do Microsoft Graph em escala com o Microsoft Graph Data Connect
 
+Microsoft Graph Data Connect oferece um conjunto de ferramentas de acesso aos dados no Microsoft Graph em escala, permitindo aos administradores autorização granular e controle total sobre seus dados do Microsoft Graph. Data Connect simplifica a entrega desses dados para o Microsoft Azure. 
 
-O Microsoft Graph Data Connect habilita acesso em massa (em vez do tradicional acesso transacional) aos dados do Office 365. Com os dados em massa do Office 365, você pode usar as ferramentas do Azure para criar aplicativos inteligentes que:
+Ao usar ferramentas Azure, você pode então criar aplicativos inteligentes que:
 
 - Encontram para você o especialista em um determinado tópico mais próximo em sua organização 
 - Automatizam a criação de base de dados de conhecimento
 - Analisam solicitações de reunião para fornecer insights sobre o uso de sala de conferência
 - Detectam fraudes envolvendo dados de comunicação e de produtividade
 
-## <a name="when-should-i-use-microsoft-graph-data-connect"></a>Por que devo usar o Microsoft Graph Data Connect?
+## <a name="when-should-i-use-microsoft-graph-api-or-data-connect"></a>Por que usar a API do Microsoft Graph ou o Data Connect?
 
-O Microsoft Graph Data Connect fornece uma nova maneira de interagir com os dados que estão disponíveis por meio de APIs do Microsoft Graph. Além de fornecer acesso escalonável aos dados do Office 365, o Microsoft Graph Data Connect também fornece um conjunto exclusivo de recursos que facilitam o desenvolvimento de aplicativos inteligentes, tudo isso na nuvem da Microsoft.
+O Microsoft Graph Data Connect fornece uma nova maneira de interagir com os dados disponíveis por meio de APIs do Microsoft Graph. Data Connect fornece um conjunto exclusivo de ferramentas que facilitam o desenvolvimento de aplicativos inteligentes, tudo isso na nuvem da Microsoft.
 
 |**Recurso**| **API do Microsoft Graph** | **Microsoft Graph Data Connect** |
 |:----------|:------------------------|:--------------------------------------|
@@ -94,7 +119,7 @@ O Microsoft Graph Data Connect fornece uma nova maneira de interagir com os dado
 | **Consentimento do administrador** | Toda a organização<br>Tipos de recursos | Selecione grupos de usuários<br>Propriedades e tipos de recursos<br>Exclui usuários |
 | **Ferramentas de acesso** | Consultas da Web RESTful | Azure Data Factory |
 
-Para obter mais informações sobre o Microsoft Graph Data Connect, veja [Microsoft Graph Data Connect](data-connect-overview.md). Para começar, veja [Visão geral do Microsoft Graph Data Connect](data-connect-concept-overview.md). 
+ Para obter mais informações, consulte [Microsoft Graph Data Connect](data-connect-overview.md), e [Introdução ao Microsoft Graph Data Connect](data-connect-concept-overview.md). 
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -102,7 +127,7 @@ Para obter mais informações sobre o Microsoft Graph Data Connect, veja [Micros
 - Experimente um exemplo de solicitação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Use o [início rápido](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de exemplo pronto para funcionar.
 - Consulte o item **Saiba mais** no índice para ler sobre os serviços e recursos que você pode usar em seus cenários. 
-- Descubra como [obter um token de autenticação](auth-overview.md) em seu aplicativo.
+- Descubra como [obter um token de autenticação](auth/auth-concepts.md) em seu aplicativo.
 - Comece a [usar a API](use-the-api.md).
 
 

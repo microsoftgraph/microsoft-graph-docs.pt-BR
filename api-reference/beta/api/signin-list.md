@@ -1,20 +1,24 @@
 ---
 title: Listar logons
-description: Recupera as entradas de usuário do Azure AD usuário para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.  Os logons mais recentes são retornados primeiro.
-localization_priority: Priority
-ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Descreve o método de lista o recurso de logon (entidade) do Microsoft Graph API (REST), que ajuda a auditoria das atividades de diretório (locatário) (versão beta).
+localization_priority: Normal
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: fdb1358d36a0e1da34779de5505c5f18f901e681
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545154"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638677"
 ---
 # <a name="list-signins"></a>Listar logons
 
-Recupera as entradas de usuário do Azure AD usuário para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.  Os logons mais recentes são retornados primeiro.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Recupera os logons de usuário do Azure AD para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.  Os logons mais recentes são retornados primeiro.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -31,7 +35,7 @@ Além disso, os aplicativos devem ser [corretamente registrados](https://docs.mi
 GET auditLogs/signIns
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar a personalizar a resposta. Verifique [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para saber como usar esses parâmetros.
+Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
 
 |Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -87,7 +91,9 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,6 +105,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 264
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_signins-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_signins-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
@@ -201,5 +217,9 @@ Content-length: 264
   "description": "List signIns",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

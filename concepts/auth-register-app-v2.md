@@ -4,91 +4,69 @@ description: Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplic
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d62fb12c094307fcd09f3e4600046b818ec4bbaa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5e59415bc18f25532e306d32383569d368606e2d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521905"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599883"
 ---
-# <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Registrar um aplicativo no ponto de extremidade do Azure AD v2.0
+# <a name="register-an-application-with-the-microsoft-identity-platform"></a>Registrar um aplicativo com a Microsoft Identity Platform
 
-Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplicativo estabelece uma identificação exclusiva do aplicativo e outros valores que o aplicativo usa para autenticar com o Azure AD e obter tokens. Para o ponto de extremidade Azure AD v2.0, você registra o aplicativo no [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com). Você pode usar uma conta da Microsoft ou uma conta corporativa ou de estudante para registrar seu aplicativo. Dependendo do tipo de aplicativo que estiver desenvolvendo, você precisará copiar uma ou mais propriedades durante o registro para usar ao configurar autenticação e a autorização para seu aplicativo. 
+Esta página mostra como adicionar e registrar um aplicativo usando a experiência **Registros do aplicativo** do portal do Azure para que o seu aplicativo possa ser integrado à Microsoft Identity Platform e chamar o Microsoft Graph. 
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
-> **Observação:** Este artigo aborda principalmente o registro de aplicativos no ponto de extremidade do Azure AD v2.0. Para saber mais sobre como registrar seu aplicativo com o ponto de extremidade do Azure AD, veja [Considerações de ponto de extremidade do Azure AD](#azure-ad-endpoint-considerations) abaixo.
-> 
-> Além disso, lembre-se de que se você alguma vez registrou aplicativos no Portal do Microsoft Azure, esses aplicativos não estarão listados no Portal de Registro do Aplicativo. Gerencie esses aplicativos no Portal do Azure. 
+## <a name="register-a-new-application-using-the-azure-portal"></a>Registrar um novo aplicativo usando o portal do Azure
 
+1. Entre no [portal do Azure](https://portal.azure.com) usando uma conta corporativa ou de estudante ou uma conta pessoal da Microsoft.
+1. Se sua conta fornecer acesso a mais de um locatário, selecione sua conta no canto superior direito e defina sua sessão do portal para o locatário desejado do Azure AD.
+1. No painel de navegação à esquerda, selecione o serviço **Azure Active Directory** e depois **Registros de aplicativo > Novo registro**.
+1. Quando a página **Registrar um aplicativo** for exibida, insira as informações de registro do aplicativo:
 
-A captura de tela a seguir mostra um registro de aplicativo Web de exemplo que foi configurado com senha e fluxo implícito. ![Registro de aplicativo Web com senha e concessão implícita.](./images/v2-web-registration.png)
+   - **Nome**: insira um nome de aplicativo relevante que será exibido aos usuários do aplicativo.
+   - **Tipos de conta com suporte**: selecione as contas às quais você gostaria que seu aplicativo desse suporte.
 
-Para registrar seu aplicativo, siga estas etapas. Copie os valores indicados para usar ao configurar a autorização para seu aplicativo:
+       | Tipos de conta com suporte | Descrição |
+       |-------------------------|-------------|
+       | **Contas apenas neste diretório organizacional** | Selecione esta opção se você está criando um aplicativo de linha de negócios (LOB). Essa opção não estará disponível se você não estiver registrando o aplicativo em um diretório.<br><br>Essa opção mapeia para o único locatário somente do Azure AD.<br><br>Essa é a opção padrão, a menos que você esteja registrando o aplicativo fora de um diretório. Quando o aplicativo é registrado fora de um diretório, o padrão é contas da Microsoft pessoais e de vários locatários do Azure AD. |
+       | **Contas em qualquer diretório organizacional** | Selecione essa opção se você deseja direcionar para todos os clientes corporativos e educacionais.<br><br>Essa opção mapeia para vários locatários somente do Azure AD.<br><br>Se você registrou o aplicativo como único locatário somente do Azure AD, pode atualizá-lo para ser multilocatário e voltar a ser locatário único na folha **Autenticação**. |
+       | **Contas em qualquer diretório organizacional e contas pessoais da Microsoft** | Selecione essa opção para direcionar ao conjunto mais amplo de clientes.<br><br>Essa opção mapeia para contas da Microsoft pessoais e multilocatário do Azure AD.<br><br>Se você registrou o aplicativo como contas da Microsoft pessoais e multilocatário do Azure AD, não poderá alterar isso na interface do usuário. Em vez disso, use o editor de manifesto do aplicativo para alterar os tipos de conta com suporte. |
 
-1. Entrar no [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com/).
-   
-    Você pode entrar com uma conta da Microsoft ou uma conta corporativa ou de estudante. 
+   - **URI de redirecionamento (opcional)**: selecione o tipo de aplicativo que você está desenvolvendo, **Web** ou **Cliente público (dispositivos móvel e desktop)** e insira o URI de redirecionamento (ou a URL de resposta) para o aplicativo.
+       - Para aplicativos Web, informe a URL base do aplicativo. Por exemplo, `http://localhost:31544` pode ser uma URL para um aplicativo Web em execução no seu computador local. Os usuários usariam essa URL para entrar em um aplicativo cliente Web.
+       - Para aplicativos cliente públicos, informe o URI usado pelo Azure AD para retornar respostas de token. Insira um valor específico para o aplicativo, por exemplo, `myapp://auth`.
 
-2. Escolha **Adicionar um aplicativo**.
-    > Observação: Se você entrou com uma conta corporativa ou de estudante, selecione o botão **Adicionar um aplicativo** em **Aplicativos convergentes**. 
+     Para ver exemplos específicos de aplicativos Web ou aplicativos nativos, confira os [inícios rápidos](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
 
-3. Insira um nome para o aplicativo e escolha **Criar aplicativo**.
+1. Ao terminar, selecione **Registrar**.
 
-    A página de registro é exibida, listando as propriedades do seu aplicativo.
+    [![Registrar um novo aplicativo no portal do Azure](./images/auth-v2/new-app-registration-expanded.png)](./images/auth-v2/new-app-registration-expanded.png#lightbox)
 
-4. Copie a ID do aplicativo. Esse é o identificador exclusivo do aplicativo.
+O Azure AD atribui uma ID exclusiva do aplicativo (cliente) para seu aplicativo, e você é redirecionado para a página **Visão geral** do aplicativo. Para adicionar mais recursos ao aplicativo, você pode selecionar outras opções de configuração, incluindo identidade visual, certificados e segredos, permissões de API e muito mais.
 
-    Você usará a ID do aplicativo para configurar o aplicativo.
+[![Página de visão geral do aplicativo registrado recentemente](./images/auth-v2/new-app-overview-page-expanded.png)](./images/auth-v2/new-app-overview-page-expanded.png#lightbox)
 
-5. Em **Plataformas**, escolha **Adicionar plataforma** e selecione a plataforma apropriada para o seu aplicativo:
-    
-    **Para obter aplicativos móveis ou nativos**:
-
-    1. Escolha **Aplicativo Nativo**.
-
-    2. Copiar o valor de **URI de redirecionamento incorporada**. Você precisará dessa informação para configurar seu aplicativo.
-
-        Um URI de redirecionamento é um URI exclusivo fornecido para seu aplicativo para garantir que as mensagens enviadas para esse URI sejam enviadas somente para esse aplicativo. 
-
-    **Para aplicativos Web**:
-
-    1. Selecione **Web**.
-
-    2. Dependendo do tipo de fluxo de autenticação que você está usando, poderá ser necessário garantir que a caixa de seleção **Permitir Fluxo Implícito** esteja selecionada. 
-        
-        A opção **Permitir Fluxo Implícito** habilita os fluxos híbridos e implícitos do OpenID Connect. O fluxo híbrido permite ao aplicativo receber informações de entrada (o token de id) e artefatos (neste caso, um código de autorização) que o aplicativo usa para obter um token de acesso. O fluxo híbrido é o fluxo padrão usado pelo middleware OpenID Connect do OWIN. Para aplicativos SPA (aplicativos de página única), o fluxo implícito permite ao aplicativo receber informações de entrada e o token de acesso. 
-
-    3. Especifique uma URL de redirecionamento.
-        
-        A URL de redirecionamento é o local em seu aplicativo que o ponto de extremidade do Azure AD v2.0 chama quando ele processou a solicitação de autenticação.
-
-    4. Em **Segredos do Aplicativo**, escolha **Gerar Nova Senha**. Copie o segredo do aplicativo da caixa de diálogo **Nova senha gerada**.
-        > **Importante** você deve copiar o segredo de aplicativo antes de fechar a caixa de diálogo **Nova senha gerada**. Depois de fechar a caixa de diálogo, não será possível recuperar o segredo. 
-            
-6. Escolha **Salvar**.
+## <a name="platform-specific-properties"></a>Propriedades específicas de plataformas
 
 
 A tabela a seguir mostra as propriedades que você precisa configurar e copiar para tipos diferentes de aplicativos. _Atribuído_ significa que você deve usar o valor atribuído pelo Azure AD.
 
 
-| Tipo de aplicativo | Plataforma | ID do Aplicativo | Segredo do Aplicativo | URI/URL de redirecionamento | Fluxo Implícito 
+| Tipo de aplicativo | Plataforma | ID do aplicativo (cliente) | Segredo de Cliente | URI/URL de redirecionamento | Fluxo Implícito 
 | --- | --- | --- | --- | --- | --- |
 | Nativos/Móveis | Nativo | Atribuído  | Não | Atribuído | Não |
 | Web App | Web | Atribuído | Sim | Sim | Opcional <br/>O middleware OpenID Connect usa o fluxo híbrido por padrão (Sim) | 
 | Aplicativo de página única (SPA) | Web | Atribuído | Sim | Sim | Sim <br/> SPAs usam o fluxo implícito do Open ID Connect |
 | Serviço/Daemon | Web | Atribuído | Sim | Sim | Não |
 
-Aplicativos que oferecem uma experiência de consentimento do administrador podem precisar de uma URL adicional de redirecionamento para o Azure AD à qual responder.
+## <a name="next-steps"></a>Próximas etapas
 
-Para obter mais detalhes sobre o Portal de Registro de Aplicativos e as propriedades que você pode configurar para seu Aplicativo, veja [Referência de registro de aplicativo](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-registration-portal).  
-
-## <a name="azure-ad-endpoint-considerations"></a>Considerações sobre o ponto de extremidade do Azure AD
-
-Você usa o [Portal do Azure](https://aka.ms/aadapplist) para registrar seu aplicativo no ponto de extremidade do Azure AD. Você configura as mesmas propriedades básicas como ID do Aplicativo, Segredo do Aplicativo e URI/URL de Redirecionamento, como faria no ponto de extremidade v2.0. No entanto, há algumas diferenças importantes sobre as quais você deve ter ciência: 
-
-- Você só pode usar uma conta corporativa ou de estudante para registrar um aplicativo.
-- Seu aplicativo exigirá uma ID do Aplicativo diferente para cada plataforma.
-- Se o aplicativo for um aplicativo multilocatário, você deve configurá-lo explicitamente para funcionar como vários locatários no portal.
-- Você deve configurar previamente todas as permissões (incluindo as permissões do Microsoft Graph) que seu aplicativo precisa no portal. 
-
-Para obter orientação sobre como usar o Portal do Azure para adicionar um aplicativo, veja [Registrar um aplicativo no ponto de extremidade do Azure Active Directory v2.0nt](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/quickstart-v2-register-an-app).
+- Saiba mais sobre [consentimento e permissões](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent.md) ou veja a [referência de permissões](permissions-reference.md) do Microsoft Graph.
+- Para habilitar recursos adicionais de configuração durante o registro de seu aplicativo, como credenciais e permissões, e habilitar a entrada para usuários de outros locatários, confira estes inícios rápidos:
+    - [Configurar um aplicativo cliente para acessar APIs Web](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis.md)
+    - [Configurar um aplicativo para expor APIs Web](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis.md)
+    - [Modificar as contas que têm suporte por um aplicativo](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts.md)
+- Escolha um [início rápido](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts) para desenvolver rapidamente um aplicativo e adicionar funcionalidades como obtenção de tokens, atualização de tokens, conexão do usuário, exibição de algumas informações do usuário e muito mais.
+- Saiba mais sobre os dois objetos do Azure AD que representam um aplicativo registrado e a relação entre eles: [Objetos de aplicativo e objetos de entidade de serviço](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals.md).
+- Saiba mais sobre as diretrizes de identidade visual que você deve usar ao desenvolver aplicativos em [Diretrizes de identidade visual para aplicativos](https://docs.microsoft.com/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps.md).
