@@ -4,18 +4,18 @@ description: Recuperar a lista de canais nessa equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 476f5a698801725ce441c31d21715a2a180658cf
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 90320abf7ddbb630c1aede5df43d0e0614da5de4
+ms.sourcegitcommit: 5e8a6761d2766f2d12068c7a5e02724da3f3e11d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33659597"
 ---
 # <a name="list-channels"></a>Listar canais
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar a lista de [canais](../resources/channel.md) nessa equipe.
+Recuperar a lista de [canais](../resources/channel.md) nessa [equipe](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
