@@ -1,15 +1,15 @@
 ---
 title: Obter deviceAndAppManagementRoleAssignment
 description: Ler propriedades de leitura e relações do objeto deviceAndAppManagementRoleAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d54e4724f3a18db5014fc5338932ae4e5e22c4d4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6ed6b6b60ea84028193a389c42d96222fab2c904
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528047"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899701"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>Obter deviceAndAppManagementRoleAssignment
 
@@ -86,7 +86,6 @@ Content-Length: 438
   }
 }
 ```
-
 
 
 

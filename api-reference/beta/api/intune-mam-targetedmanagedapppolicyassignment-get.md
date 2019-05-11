@@ -1,15 +1,15 @@
 ---
 title: Get targetedManagedAppPolicyAssignment
 description: Ler propriedades e relações do objeto targetedManagedAppPolicyAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec3abec81ea2d39e088c96d2f5d2650010818e4a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 940dcd331bcc05cde7b65aabaad338d6d94b7391
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529321"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903030"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>Get targetedManagedAppPolicyAssignment
 
@@ -81,7 +81,6 @@ Content-Length: 252
   }
 }
 ```
-
 
 
 

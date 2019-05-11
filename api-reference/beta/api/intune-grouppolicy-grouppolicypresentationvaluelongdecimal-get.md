@@ -1,15 +1,15 @@
 ---
 title: Obter groupPolicyPresentationValueLongDecimal
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationValueLongDecimal.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55ba50d6d2848fcf9d3d019dad522667642ccb4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a58a6c70e560243aea9b52a34144f68dec49680b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530673"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904192"
 ---
 # <a name="get-grouppolicypresentationvaluelongdecimal"></a>Obter groupPolicyPresentationValueLongDecimal
 
@@ -77,7 +77,6 @@ Content-Length: 297
   }
 }
 ```
-
 
 
 

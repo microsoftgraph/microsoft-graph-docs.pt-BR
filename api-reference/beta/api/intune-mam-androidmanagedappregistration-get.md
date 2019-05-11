@@ -1,15 +1,15 @@
 ---
 title: Get androidManagedAppRegistration
 description: Ler propriedades e relações do objeto androidManagedAppRegistration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9589f637d1b62d8664e42b4a6e0092b972bff48
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c585f5edc5e20dbb5fdea2324f38e7dad3f1d7f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530463"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904122"
 ---
 # <a name="get-androidmanagedappregistration"></a>Get androidManagedAppRegistration
 
@@ -96,7 +96,6 @@ Content-Length: 1054
   }
 }
 ```
-
 
 
 

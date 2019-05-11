@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementScript
 description: O Intune fornecerá ao cliente a capacidade de executar os scripts do PowerShell nos dispositivos de ingresso no Azure Active Directory do Windows 10 registrados. O script pode ser executado uma vez ou periodicamente.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6599f0dbc083859bef4f7a334d36fdcdfa63ee86
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 649ecb29aa3ff18960e858fc86a0f9fae316b13c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578012"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942056"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso deviceManagementScript
 
@@ -33,10 +33,10 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts do PowerShell
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivo.|
-|displayName|String|Nome do script de gerenciamento de dispositivo.|
+|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de execução do script. Se não definido, o script será executado uma vez|
-|scriptContent|Binário|O conteúdo de script.|
+|scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
@@ -83,7 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "runAs32Bit": true
 }
 ```
-
 
 
 

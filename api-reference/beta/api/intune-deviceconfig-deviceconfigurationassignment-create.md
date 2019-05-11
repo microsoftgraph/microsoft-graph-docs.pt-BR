@@ -1,15 +1,15 @@
 ---
 title: Criar deviceConfigurationAssignment
 description: Criar um novo objeto deviceConfigurationAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 035828ad5266c745e33cbd57f097d925e6ea4c5c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 89f93804273dd6c4820c046b9a3131831aca4a68
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469590"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927490"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Criar deviceConfigurationAssignment
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da atribuição.|
+|id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 
 
@@ -98,7 +98,6 @@ Content-Length: 218
   }
 }
 ```
-
 
 
 

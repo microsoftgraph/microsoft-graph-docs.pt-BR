@@ -1,15 +1,15 @@
 ---
 title: Atualizar usuário
 description: Atualize as propriedades de um objeto user.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3401ae8c2a33e56e69121b5704cc2e45905429be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c4b898a3c9b1907f6b2a05c16daa241b5b363c6b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526829"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897881"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Mam** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **Solução de Problemas** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [user](.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do usuário.|
+|id|Cadeia de caracteres|Identificador exclusivo do usuário.|
 |**Integração**|
 |deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 

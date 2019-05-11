@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementSettingXmlConstraint
 description: A restrição que impõe a configuração é XML bem formado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 510d16f8c28bc3efc3c1bb1952c62edbc5394810
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6544844778a7e9a2437525506d6d8a21c9fb0503
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550585"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943297"
 ---
 # <a name="devicemanagementsettingxmlconstraint-resource-type"></a>tipo de recurso deviceManagementSettingXmlConstraint
 
@@ -41,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceManagementSettingXmlConstraint"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso deviceExchangeAccessStateSummary
 description: Resumo do Estado de Acesso ao Exchange do dispositivo
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39f944b7559abf72d144f5c1608ec4efec014530
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 15b7a3e1f07694f0a75bb84bdad7640981639079
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549115"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942119"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>Tipo de recurso deviceExchangeAccessStateSummary
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   "unavailableDeviceCount": 1024
 }
 ```
-
 
 
 

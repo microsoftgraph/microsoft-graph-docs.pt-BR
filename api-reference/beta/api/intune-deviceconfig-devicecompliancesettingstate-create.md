@@ -1,15 +1,15 @@
 ---
 title: Criar deviceComplianceSettingState
 description: Criar um novo objeto deviceComplianceSettingState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbc15b29552e671bb102cadc027ed551bc360233
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e62d9ce097426b028a41d0ce882038f75e99de94
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470430"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927640"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Criar deviceComplianceSettingState
 
@@ -52,15 +52,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |:---|:---|:---|
 |id|String|Chave da entidade|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` ,,,,,,,, , `blackberry`, `palm`, `unknown`.|
-|configuração|String|O nome da classe de configuração e o nome da propriedade.|
-|settingName|String|O nome da configuração sendo relatada|
-|deviceId|String|A ID do dispositivo sendo relatada|
+|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
+|settingName|Cadeia de caracteres|O nome da configuração sendo relatada|
+|deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
 |deviceName|String|O nome do dispositivo sendo relatado|
-|userId|String|A ID do usuário sendo relatada|
+|userId|Cadeia de caracteres|A ID do usuário sendo relatada|
 |userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
-|userName|String|O nome de usuário que está sendo relatado|
-|userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
-|deviceModel|String|O modelo do dispositivo que está sendo relatado|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
+|userPrincipalName|Cadeia de caracteres|O PrincipalName do usuário que está sendo relatado|
+|deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
@@ -119,7 +119,6 @@ Content-Length: 598
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

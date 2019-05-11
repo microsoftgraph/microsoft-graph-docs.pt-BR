@@ -1,15 +1,15 @@
 ---
 title: Ação syncLicenses
 description: Sincroniza as licenças associadas a um appleVolumePurchaseProgramToken específico
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 732300c26fe3e2355421f8813fd038031d5ab1e5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a8f186bacd52143ae31467dddeb0e451519aeece
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528061"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899849"
 ---
 # <a name="synclicenses-action"></a>ação syncLicenses
 
@@ -98,7 +98,6 @@ Content-Length: 1192
   }
 }
 ```
-
 
 
 

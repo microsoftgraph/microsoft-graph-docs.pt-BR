@@ -1,15 +1,15 @@
 ---
 title: Atualizar groupPolicyPresentationDropdownList
 description: Atualiza as propriedades de um objeto groupPolicyPresentationDropdownList.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bee92900d50e5813e12568ce9fd717b01deed590
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: db3dea3d6cf32c7c374b10089399fdaa61533741
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531051"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904822"
 ---
 # <a name="update-grouppolicypresentationdropdownlist"></a>Atualizar groupPolicyPresentationDropdownList
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |DefaultItem|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|O valor da cadeia de caracteres localizada que identifica a opção padrão da lista de itens.|
 |items|coleção [groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Representa um conjunto de nomes de exibição localizados e seus valores associados.|
@@ -118,7 +118,6 @@ Content-Length: 602
   "required": true
 }
 ```
-
 
 
 

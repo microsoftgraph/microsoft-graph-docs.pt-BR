@@ -1,15 +1,15 @@
 ---
 title: Criar deviceCompliancePolicyAssignment
 description: Criar um novo objeto deviceCompliancePolicyAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3de77738e476702a25650cfd8f43137946631def
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1f89512cf6ad6ae5b5d7c9432e0e911f5019e1bf
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470542"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927829"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Criar deviceCompliancePolicyAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino da atribuição de políticas de conformidade.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Listar groupPolicyPresentationLongDecimalTextBoxes
 description: Listar Propriedades e relações dos objetos groupPolicyPresentationLongDecimalTextBox.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3cad9441a4650f5437d3a03444106a5f9fc7ffc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 03d40e012f1a89a50bae80dda5b02952b9cb4cf7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531065"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904773"
 ---
 # <a name="list-grouppolicypresentationlongdecimaltextboxes"></a>Listar groupPolicyPresentationLongDecimalTextBoxes
 
@@ -81,7 +81,6 @@ Content-Length: 411
   ]
 }
 ```
-
 
 
 

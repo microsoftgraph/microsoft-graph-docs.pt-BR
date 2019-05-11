@@ -1,15 +1,15 @@
 ---
 title: Atualizar deviceComplianceUserOverview
 description: Atualizar as propriedades de um objeto deviceComplianceUserOverview.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1abb345761238e494d47a2bda579ad5043fc7f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 379e4f534af1857c909c5e06f73f6572d143997a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469814"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927584"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>Atualizar deviceComplianceUserOverview
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |pendingCount|Int32|Número de usuários pendentes|
 |notApplicableCount|Int32|Número de usuários não aplicáveis|
 |successCount|Int32|Número de usuários bem-sucedidos|
@@ -107,7 +107,6 @@ Content-Length: 352
   "configurationVersion": 4
 }
 ```
-
 
 
 

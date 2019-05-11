@@ -1,15 +1,15 @@
 ---
 title: Listar androidWorkProfileVpnConfigurations
 description: Listar Propriedades e relações dos objetos androidWorkProfileVpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a127f018f166e747f8146b234f75e454af334b09
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 84455b5739276bb1052060272bcb4878211037c5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32472586"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928201"
 ---
 # <a name="list-androidworkprofilevpnconfigurations"></a>Listar androidWorkProfileVpnConfigurations
 
@@ -111,7 +111,6 @@ Content-Length: 1350
   ]
 }
 ```
-
 
 
 

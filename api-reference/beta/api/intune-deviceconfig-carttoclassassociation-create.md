@@ -1,15 +1,15 @@
 ---
 title: Criar cartToClassAssociation
 description: Criar um novo objeto cartToClassAssociation.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c683b2ae19caa55c62f0af834fbb8b74d5fb904c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 68700982b642798a8fd0b29cbe31d063ca48b38c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471578"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928062"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar cartToCl
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
@@ -110,7 +110,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementScriptUserState
 description: Contém propriedades para o estado de execução do usuário do script de gerenciamento de dispositivos.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2476329a402e0d6a50594ab110e88da4b5f5ac1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70c0ab2cbfd52a538997dce5cc3c7dadb98aaae7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522402"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942027"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>tipo de recurso deviceManagementScriptUserState
 
@@ -31,10 +31,10 @@ Contém propriedades para o estado de execução do usuário do script de gerenc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
+|id|String|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito para um usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
-|userPrincipalName|String|Nome principal do usuário do usuário específico.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário do usuário específico.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

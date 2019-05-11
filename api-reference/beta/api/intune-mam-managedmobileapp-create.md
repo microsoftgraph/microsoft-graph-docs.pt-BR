@@ -1,15 +1,15 @@
 ---
 title: Criar managedMobileApp
 description: Criar um novo objeto managedMobileApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d825acd6700c3415320c229c18a80e6aa30a1de2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f865b4921157e4591d216e6f55585688939fb61b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529629"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903382"
 ---
 # <a name="create-managedmobileapp"></a>Criar managedMobileApp
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador de um aplicativo com seu tipo de sistema operacional.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 
@@ -96,7 +96,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
 
 
 

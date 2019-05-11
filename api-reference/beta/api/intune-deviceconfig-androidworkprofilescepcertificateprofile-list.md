@@ -1,15 +1,15 @@
 ---
 title: Listar androidWorkProfileScepCertificateProfiles
 description: Listar Propriedades e relações dos objetos Entidadeandroidworkprofilescepcertificateprofile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 964f4211b4d5812dce3fe373b14f93a94e147769
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e1e8af0bb03cb40a94c5bc4ea9d5947860efb2e8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32472943"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928299"
 ---
 # <a name="list-androidworkprofilescepcertificateprofiles"></a>Listar androidWorkProfileScepCertificateProfiles
 
@@ -111,7 +111,6 @@ Content-Length: 1570
   ]
 }
 ```
-
 
 
 

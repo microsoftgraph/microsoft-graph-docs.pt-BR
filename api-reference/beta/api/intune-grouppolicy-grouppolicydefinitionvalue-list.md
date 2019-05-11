@@ -1,15 +1,15 @@
 ---
 title: Listar groupPolicyDefinitionValues
 description: Listar Propriedades e relações dos objetos groupPolicyDefinitionValue.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e500b01feb610bc42b41196c33ca66c8b1c71455
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fdd7213fb8aaebd19ab58b245aa8d197a7028680
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531408"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905039"
 ---
 # <a name="list-grouppolicydefinitionvalues"></a>Listar groupPolicyDefinitionValues
 
@@ -77,7 +77,6 @@ Content-Length: 355
   ]
 }
 ```
-
 
 
 

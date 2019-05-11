@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso groupPolicyPresentation
 description: A entidade base para a apresentação de exibição de qualquer opção adicional em uma definição de política de grupo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00151ec7c75a071df9c6485a68749cce07e6f91a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a8a1e4a615999a899712ad82d2177fbb862328c2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575825"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941125"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>tipo de recurso groupPolicyPresentation
 
@@ -28,8 +28,8 @@ A entidade base para a apresentação de exibição de qualquer opção adiciona
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
-|id|String|Chave da entidade.|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Atualizar androidWorkProfileTrustedRootCertificate
 description: Atualiza as propriedades de um objeto androidWorkProfileTrustedRootCertificate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2f349c8edd948329f1530602de4ff4ad2c26c4a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f60a4647d67c755be8e250928c93d279098eaabb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32472796"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928222"
 ---
 # <a name="update-androidworkprofiletrustedrootcertificate"></a>Atualizar androidWorkProfileTrustedRootCertificate
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -60,8 +60,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|trustedRootCertificate|Binary|Certificado raiz confiável|
-|certFileName|String|Nome do arquivo a ser exibido na interface do usuário.|
+|trustedRootCertificate|Binária|Certificado raiz confiável|
+|certFileName|Cadeia de caracteres|Nome do arquivo a ser exibido na interface do usuário.|
 
 
 
@@ -114,7 +114,6 @@ Content-Length: 550
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

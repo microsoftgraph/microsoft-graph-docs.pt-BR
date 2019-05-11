@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração windowsAutopilotProfileAssignmentDetailedStatus
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13a1f81f4364454dee281763722999092a4632af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 057e81219e67c3b88c96397340fe533237614efe
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547071"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941426"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>tipo de enumeração windowsAutopilotProfileAssignmentDetailedStatus
 
@@ -22,9 +22,8 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum status detalhado de atribuição|
-|hardwareRequirementsNotMet|1 |Os requisitos de hardware não são atendidos. Isso pode acontecer se um perfil autoimplantar do autoautoria for atribuído a um dispositivo sem o TPM 2,0.|
-
+|none|,0|Nenhum status detalhado de atribuição|
+|hardwareRequirementsNotMet|1|Os requisitos de hardware não são atendidos. Isso pode acontecer se um perfil autoimplantar do autoautoria for atribuído a um dispositivo sem o TPM 2,0.|
 
 
 

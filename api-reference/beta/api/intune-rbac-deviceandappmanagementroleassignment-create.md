@@ -1,15 +1,15 @@
 ---
 title: Criar deviceAndAppManagementRoleAssignment
 description: Cria um novo objeto deviceAndAppManagementRoleAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4df222bc2049fd7034e062eb2e6af8a86684cde6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6022736eec4e95fccd3282de87d0283158540937
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528019"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899687"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>Criar deviceAndAppManagementRoleAssignment
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceAn
 |displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |description|String|Descrição da atribuição de função. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |scopeMembers|Conjunto de cadeia de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md)|
-|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|Especifica o tipo de escopo de uma atribuição de função. O tipo padrão ' ResourceScope ' permite a atribuição de ResourceScopes. Para ' myDevices ', ' AllLicensedUsers ' e ' AllDevicesAndLicensedUsers ', a propriedade ResourceScopes deve ser deixada vazia. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md). Os valores possíveis são: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
+|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|Especifica o tipo de escopo de uma atribuição de função. O tipo padrão ' ResourceScope ' permite a atribuição de ResourceScopes. Para ' mydevices ', ' AllLicensedUsers ' e ' AllDevicesAndLicensedUsers ', a propriedade ResourceScopes deve ser deixada vazia. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md). Os valores possíveis são: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
 |resourceScopes|Conjunto de cadeia de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |members|Coleção de cadeias de caracteres|A lista de IDs de grupos de segurança de membros da função. Estas são as IDs do Azure Active Directory.|
 
@@ -113,7 +113,6 @@ Content-Length: 391
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Criar iosManagedAppProtection
 description: Cria um novo objeto iosManagedAppProtection.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dcd2c52247b2e665513bf85665523436dfe5964a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 590c03bf456f96c3fb9c8ed4929f729eff34040b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530379"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903821"
 ---
 # <a name="create-iosmanagedappprotection"></a>Criar iosManagedAppProtection
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosManag
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
@@ -79,12 +79,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosManag
 |printBlocked|Booliano|Indica se a impressão a partir de aplicativos gerenciados é permitida. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |fingerprintBlocked|Booliano|Indica se será permitido o uso do leitor de impressão digital em vez de um pin se PinRequired estiver definido como True. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |disableAppPinIfDevicePinIsSet|Booliano|Indica se o uso do pin do aplicativo será obrigatório se o pin do dispositivo estiver definido. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumRequiredOsVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWarningOsVersion|String|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado ao acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumRequiredAppVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumRequiredOsVersion|Cadeia de caracteres|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWarningOsVersion|Cadeia de caracteres|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado ao acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumRequiredAppVersion|Cadeia de caracteres|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningAppVersion|String|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeOsVersion|String|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeAppVersion|String|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeOsVersion|Cadeia de caracteres|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeAppVersion|Cadeia de caracteres|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloqueio ou apagamento, quando o dispositivo é enraizada ou desbloqueado, se DeviceComplianceRequired estiver definido como true. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloqueio ou apagamento, com base no número máximo de tentativas de repetição de PIN incorretas. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Duração|Tempo limite em minutos para um PIN de aplicativo em vez de uma senha não biométrica herdada de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -96,13 +96,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosManag
 |deployedAppCount|Int32|Contagem de aplicativos em que a política atual é implantada.|
 |faceIdBlocked|Boolean|Indica se será permitido o uso do FaceID em vez de um pin se PinRequired estiver definido como True.|
 |exemptedAppProtocols|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Os aplicativos nesta lista serão isentos da política e poderão receber dados de aplicativos gerenciados.|
-|minimumWipeSdkVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa.|
-|allowedIosDeviceModels|String|Lista separada por ponto-e-vírgula de modelos de dispositivo permitidos, como uma cadeia de caracteres, para que o aplicativo gerenciado funcione.|
+|minimumWipeSdkVersion|Cadeia de caracteres|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa.|
+|allowedIosDeviceModels|Cadeia de caracteres|Lista separada por ponto-e-vírgula de modelos de dispositivo permitidos, como uma cadeia de caracteres, para que o aplicativo gerenciado funcione.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, seja Block ou apagamento, se o modelo de dispositivo especificado não for permitido. Os valores possíveis são: `block`, `wipe`, `warn`.|
-|thirdPartyKeyboardsBlocked|Booliano|Define se teclados de terceiros são permitidos ao acessar um aplicativo gerenciado|
 |filterOpenInToOnlyManagedApps|Booliano|Define se a operação de abertura é suportada do aplicativo gerenciado para os locais de compartilhamento de filesharing selecionados. Essa configuração aplica-se somente quando AllowedOutboundDataTransferDestinations é definida como ManagedApps e Propriedadesdisableprotectionofmanagedoutboundopenindata é definida como false.|
 |Propriedadesdisableprotectionofmanagedoutboundopenindata|Booliano|Desabilitar a proteção de dados transferidos para outros aplicativos por meio da opção abrir do IOS. Essa configuração só pode ser true quando AllowedOutboundDataTransferDestinations está definida como ManagedApps.|
 |protectInboundDataFromUnknownSources|Booliano|Proteger dados de entrada de fonte desconhecida. Essa configuração só poderá ser true quando AllowedInboundDataTransferSources estiver definido como myapps.|
+|customBrowserProtocol|Cadeia de caracteres|Um protocolo de navegador personalizado para abrir O WebLink no iOS.|
 
 
 
@@ -116,7 +116,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections
 Content-type: application/json
-Content-length: 2544
+Content-length: 2566
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -176,10 +176,10 @@ Content-length: 2544
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
-  "protectInboundDataFromUnknownSources": true
+  "protectInboundDataFromUnknownSources": true,
+  "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
 
@@ -188,7 +188,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2716
+Content-Length: 2738
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -251,13 +251,12 @@ Content-Length: 2716
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
-  "protectInboundDataFromUnknownSources": true
+  "protectInboundDataFromUnknownSources": true,
+  "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
-
 
 
 

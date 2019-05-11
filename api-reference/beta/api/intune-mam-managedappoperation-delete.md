@@ -1,15 +1,15 @@
 ---
 title: Excluir managedAppOperation
 description: Exclui managedAppOperation.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a78dac0552e8bc32a1da0f10a38925ec746dd1f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3b1190031b2ddd5ae3805f4ea286032536b8b5d4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530218"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903702"
 ---
 # <a name="delete-managedappoperation"></a>Excluir managedAppOperation
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

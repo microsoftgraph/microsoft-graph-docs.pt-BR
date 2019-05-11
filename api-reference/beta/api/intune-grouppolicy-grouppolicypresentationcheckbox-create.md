@@ -1,15 +1,15 @@
 ---
 title: Criar groupPolicyPresentationCheckBox
 description: Criar um novo objeto groupPolicyPresentationCheckBox.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5a74200d6cf85c02a91d50e8522fb79c58ae67f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 33ede1801a7aa965ce4eef38788684b89c4b712b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531317"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905032"
 ---
 # <a name="create-grouppolicypresentationcheckbox"></a>Criar groupPolicyPresentationCheckBox
 
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultChecked|Booliano|Valor padrão da caixa de seleção. O valor padrão é falso.|
 
@@ -91,7 +91,6 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
-
 
 
 

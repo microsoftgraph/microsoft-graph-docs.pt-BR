@@ -1,15 +1,15 @@
 ---
 title: Atualizar groupPolicyPresentationTextBox
 description: Atualiza as propriedades de um objeto groupPolicyPresentationTextBox.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b5b7ac370825c54c55ebdcfc0c219dd3916834a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ade36f817022dcfec2dfa7a41e60a64cbb27536e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530736"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904619"
 ---
 # <a name="update-grouppolicypresentationtextbox"></a>Atualizar groupPolicyPresentationTextBox
 
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|String|Cadeia de caracteres padrão localizada exibida na caixa de texto. O valor padrão é vazio.|
+|defaultValue|Cadeia de caracteres|Cadeia de caracteres padrão localizada exibida na caixa de texto. O valor padrão é vazio.|
 |obrigatório|Booliano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro sem sinal que especifica o número máximo de caracteres de texto. O valor padrão é 1023.|
 
@@ -98,7 +98,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

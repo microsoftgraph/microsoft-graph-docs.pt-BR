@@ -1,15 +1,15 @@
 ---
 title: Excluir deviceConfigurationGroupAssignment
 description: Exclui deviceConfigurationGroupAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42a06b1a0c6213ad5b1848a5301be4a7f0b9950f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5a7a59fb1078e095f1b3a77bbcc168c3cb55073
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469436"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927395"
 ---
 # <a name="delete-deviceconfigurationgroupassignment"></a>Excluir deviceConfigurationGroupAssignment
 
@@ -70,7 +70,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementIntentUserStateSummary
 description: Entidade que representa o resumo de estado do usuário para uma intenção
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 538d1e5da36a1d90aac95641175eb0cebeeb69c3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b4b13d4dc368c52686aa4d003a0f5995762ec56
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550550"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943449"
 ---
 # <a name="devicemanagementintentuserstatesummary-resource-type"></a>tipo de recurso deviceManagementIntentUserStateSummary
 
@@ -28,7 +28,7 @@ Entidade que representa o resumo de estado do usuário para uma intenção
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID|
+|id|Cadeia de caracteres|A ID|
 |conflictCount|Int32|Número de usuários em conflito|
 |errorCount|Int32|Número de usuários de erro|
 |failedCount|Int32|Número de usuários com falha|
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "successCount": 1024
 }
 ```
-
 
 
 

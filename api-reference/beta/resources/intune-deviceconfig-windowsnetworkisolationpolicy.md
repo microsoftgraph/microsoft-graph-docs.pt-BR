@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsNetworkIsolationPolicy
 description: Política de isolamento de rede do Windows
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b5e96a56f511289f75a7910f1defb44b7a20bf3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 273e6d7689a81e7f64ec2000f881e963e5cbd2f8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573183"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943939"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>tipo de recurso windowsNetworkIsolationPolicy
 
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 
