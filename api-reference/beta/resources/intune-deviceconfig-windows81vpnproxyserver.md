@@ -1,41 +1,41 @@
 ---
 title: tipo de recurso windows81VpnProxyServer
 description: Servidor proxy VPN.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a337dc2d18ed5f10ecb9f8f654a7d19175fc476
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 26f15e8e2b6982c322ffc78cb9d6270b08bcbc3c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554251"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944240"
 ---
-# <a name="windows81vpnproxyserver-resource-type"></a><span data-ttu-id="530f2-103">tipo de recurso windows81VpnProxyServer</span><span class="sxs-lookup"><span data-stu-id="530f2-103">windows81VpnProxyServer resource type</span></span>
+# <a name="windows81vpnproxyserver-resource-type"></a><span data-ttu-id="4f365-103">tipo de recurso windows81VpnProxyServer</span><span class="sxs-lookup"><span data-stu-id="4f365-103">windows81VpnProxyServer resource type</span></span>
 
-> <span data-ttu-id="530f2-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="530f2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4f365-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="4f365-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="530f2-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="530f2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4f365-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="4f365-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="530f2-106">Servidor proxy VPN.</span><span class="sxs-lookup"><span data-stu-id="530f2-106">VPN Proxy Server.</span></span>
+<span data-ttu-id="4f365-106">Servidor proxy VPN.</span><span class="sxs-lookup"><span data-stu-id="4f365-106">VPN Proxy Server.</span></span>
 
 
-<span data-ttu-id="530f2-107">Herda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="530f2-107">Inherits from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>
+<span data-ttu-id="4f365-107">Herda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="4f365-107">Inherits from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="530f2-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="530f2-108">Properties</span></span>
-|<span data-ttu-id="530f2-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="530f2-109">Property</span></span>|<span data-ttu-id="530f2-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="530f2-110">Type</span></span>|<span data-ttu-id="530f2-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="530f2-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4f365-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4f365-108">Properties</span></span>
+|<span data-ttu-id="4f365-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4f365-109">Property</span></span>|<span data-ttu-id="4f365-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="4f365-110">Type</span></span>|<span data-ttu-id="4f365-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="4f365-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="530f2-112">automaticConfigurationScriptUrl</span><span class="sxs-lookup"><span data-stu-id="530f2-112">automaticConfigurationScriptUrl</span></span>|<span data-ttu-id="530f2-113">String</span><span class="sxs-lookup"><span data-stu-id="530f2-113">String</span></span>|<span data-ttu-id="530f2-114">URL do script de configuração automática do proxy.</span><span class="sxs-lookup"><span data-stu-id="530f2-114">Proxy's automatic configuration script url.</span></span> <span data-ttu-id="530f2-115">Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="530f2-115">Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
-|<span data-ttu-id="530f2-116">address</span><span class="sxs-lookup"><span data-stu-id="530f2-116">address</span></span>|<span data-ttu-id="530f2-117">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="530f2-117">String</span></span>|<span data-ttu-id="530f2-118">Enfrentar.</span><span class="sxs-lookup"><span data-stu-id="530f2-118">Address.</span></span> <span data-ttu-id="530f2-119">Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="530f2-119">Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
-|<span data-ttu-id="530f2-120">propor</span><span class="sxs-lookup"><span data-stu-id="530f2-120">port</span></span>|<span data-ttu-id="530f2-121">Int32</span><span class="sxs-lookup"><span data-stu-id="530f2-121">Int32</span></span>|<span data-ttu-id="530f2-122">Propor.</span><span class="sxs-lookup"><span data-stu-id="530f2-122">Port.</span></span> <span data-ttu-id="530f2-123">Valores válidos de 0 a 65535 herdados de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="530f2-123">Valid values 0 to 65535 Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
-|<span data-ttu-id="530f2-124">automaticallyDetectProxySettings</span><span class="sxs-lookup"><span data-stu-id="530f2-124">automaticallyDetectProxySettings</span></span>|<span data-ttu-id="530f2-125">Booliano</span><span class="sxs-lookup"><span data-stu-id="530f2-125">Boolean</span></span>|<span data-ttu-id="530f2-126">Detectar automaticamente as configurações de proxy.</span><span class="sxs-lookup"><span data-stu-id="530f2-126">Automatically detect proxy settings.</span></span>|
-|<span data-ttu-id="530f2-127">bypassProxyServerForLocalAddress</span><span class="sxs-lookup"><span data-stu-id="530f2-127">bypassProxyServerForLocalAddress</span></span>|<span data-ttu-id="530f2-128">Booliano</span><span class="sxs-lookup"><span data-stu-id="530f2-128">Boolean</span></span>|<span data-ttu-id="530f2-129">Ignorar servidor proxy para endereço local.</span><span class="sxs-lookup"><span data-stu-id="530f2-129">Bypass proxy server for local address.</span></span>|
+|<span data-ttu-id="4f365-112">automaticConfigurationScriptUrl</span><span class="sxs-lookup"><span data-stu-id="4f365-112">automaticConfigurationScriptUrl</span></span>|<span data-ttu-id="4f365-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4f365-113">String</span></span>|<span data-ttu-id="4f365-114">URL do script de configuração automática do proxy.</span><span class="sxs-lookup"><span data-stu-id="4f365-114">Proxy's automatic configuration script url.</span></span> <span data-ttu-id="4f365-115">Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="4f365-115">Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
+|<span data-ttu-id="4f365-116">address</span><span class="sxs-lookup"><span data-stu-id="4f365-116">address</span></span>|<span data-ttu-id="4f365-117">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4f365-117">String</span></span>|<span data-ttu-id="4f365-118">Enfrentar.</span><span class="sxs-lookup"><span data-stu-id="4f365-118">Address.</span></span> <span data-ttu-id="4f365-119">Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="4f365-119">Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
+|<span data-ttu-id="4f365-120">propor</span><span class="sxs-lookup"><span data-stu-id="4f365-120">port</span></span>|<span data-ttu-id="4f365-121">Int32</span><span class="sxs-lookup"><span data-stu-id="4f365-121">Int32</span></span>|<span data-ttu-id="4f365-122">Propor.</span><span class="sxs-lookup"><span data-stu-id="4f365-122">Port.</span></span> <span data-ttu-id="4f365-123">Valores válidos de 0 a 65535 herdados de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="4f365-123">Valid values 0 to 65535 Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
+|<span data-ttu-id="4f365-124">automaticallyDetectProxySettings</span><span class="sxs-lookup"><span data-stu-id="4f365-124">automaticallyDetectProxySettings</span></span>|<span data-ttu-id="4f365-125">Booliano</span><span class="sxs-lookup"><span data-stu-id="4f365-125">Boolean</span></span>|<span data-ttu-id="4f365-126">Detectar automaticamente as configurações de proxy.</span><span class="sxs-lookup"><span data-stu-id="4f365-126">Automatically detect proxy settings.</span></span>|
+|<span data-ttu-id="4f365-127">bypassProxyServerForLocalAddress</span><span class="sxs-lookup"><span data-stu-id="4f365-127">bypassProxyServerForLocalAddress</span></span>|<span data-ttu-id="4f365-128">Booliano</span><span class="sxs-lookup"><span data-stu-id="4f365-128">Boolean</span></span>|<span data-ttu-id="4f365-129">Ignorar servidor proxy para endereço local.</span><span class="sxs-lookup"><span data-stu-id="4f365-129">Bypass proxy server for local address.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="530f2-130">Relações</span><span class="sxs-lookup"><span data-stu-id="530f2-130">Relationships</span></span>
-<span data-ttu-id="530f2-131">Nenhum</span><span class="sxs-lookup"><span data-stu-id="530f2-131">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="4f365-130">Relações</span><span class="sxs-lookup"><span data-stu-id="4f365-130">Relationships</span></span>
+<span data-ttu-id="4f365-131">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4f365-131">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="530f2-132">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="530f2-132">JSON Representation</span></span>
-<span data-ttu-id="530f2-133">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="530f2-133">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4f365-132">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4f365-132">JSON Representation</span></span>
+<span data-ttu-id="4f365-133">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4f365-133">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows81VpnProxyServer"
@@ -51,7 +51,6 @@ ms.locfileid: "32554251"
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 
