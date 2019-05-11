@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração Enumeraçãodevicecomplianceactiontype
 description: Enumeração de tipo de ação agendada
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba07cb2b0fe076642cb1157a5d5df09a04a63a47
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37caa3ca741c752a67a9f90222856b31fa4978c3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566028"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947201"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>tipo de enumeração Enumeraçãodevicecomplianceactiontype
 
@@ -22,15 +22,14 @@ Enumeração de tipo de ação agendada
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|noAction|,0|Nenhuma ação|
-|Notifica|1 |Enviar notificação|
-|Larga|2 |Bloquear o dispositivo no AAD|
-|Ative|3 |Desativar o dispositivo|
-|revelar|4 |Apagar o dispositivo|
-|removeResourceAccessProfiles|5 |Remover perfis de acesso a recursos do dispositivo|
+|NoAction|,0|Nenhuma ação|
+|Notifica|1|Enviar notificação|
+|Larga|duas|Bloquear o dispositivo no AAD|
+|Ative|3D|Desativar o dispositivo|
+|revelar|quatro|Apagar o dispositivo|
+|removeResourceAccessProfiles|0,5|Remover perfis de acesso a recursos do dispositivo|
 |Membropushnotification|9 |Enviar notificação por push ao dispositivo|
 |remoteLock|10 |Bloquear o dispositivo remotamente|
-
 
 
 

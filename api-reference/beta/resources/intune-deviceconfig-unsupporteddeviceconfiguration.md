@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso unsupportedDeviceConfiguration
 description: UnsupportedDeviceConfiguration é usado quando uma entidade não pode ser mapeada para outro subtipo compatível com o modelo de deviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 493b65241231befe1a7195db09398e89eb6eecb7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 625cfac70fd6625ca6cf8761545921e0128d0ee8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548695"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944667"
 ---
 # <a name="unsupporteddeviceconfiguration-resource-type"></a>tipo de recurso unsupportedDeviceConfiguration
 
@@ -42,7 +42,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|originalEntityTypeName|String|O tipo de entidade que seria retornado de outra forma.|
+|originalEntityTypeName|Cadeia de caracteres|O tipo de entidade que seria retornado de outra forma.|
 |detalhes|coleção [unsupportedDeviceConfigurationDetail](../resources/intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)|Detalhes que descrevem por que a entidade não é suportada. Essa coleção pode conter um máximo de 1000 elementos.|
 
 ## <a name="relationships"></a>Relações
@@ -87,7 +87,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

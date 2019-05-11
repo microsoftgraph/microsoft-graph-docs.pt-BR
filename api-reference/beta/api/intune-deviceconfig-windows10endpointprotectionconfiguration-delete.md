@@ -1,15 +1,15 @@
 ---
 title: Excluir windows10EndpointProtectionConfiguration
 description: Exclui windows10EndpointProtectionConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7ca0ba4bc8fbb3490c7f527a06b8e5593cbd03d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec1bea5d4b11d7601dd52a0d21d8d2fd348b79f5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32516620"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921825"
 ---
 # <a name="delete-windows10endpointprotectionconfiguration"></a>Excluir windows10EndpointProtectionConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

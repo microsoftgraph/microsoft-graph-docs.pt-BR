@@ -1,15 +1,15 @@
 ---
 title: Obter deviceManagementIntentSettingCategory
 description: Leia as propriedades e as relações do objeto deviceManagementIntentSettingCategory.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a1be017bd1d56e3501cbac86551c48b7a1cb7d6a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b6eb4a0922d2df0a3ed2192dbd01647ed7a1445
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507795"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915836"
 ---
 # <a name="get-devicemanagementintentsettingcategory"></a>Obter deviceManagementIntentSettingCategory
 
@@ -75,7 +75,6 @@ Content-Length: 193
   }
 }
 ```
-
 
 
 

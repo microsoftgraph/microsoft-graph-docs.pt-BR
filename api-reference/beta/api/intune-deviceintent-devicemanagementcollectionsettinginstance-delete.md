@@ -1,15 +1,15 @@
 ---
 title: Excluir deviceManagementCollectionSettingInstance
 description: Exclui deviceManagementCollectionSettingInstance.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5371fdc8f8b7d43aa929286450a2e90e959141f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dfbc2039003284887293b3602c9ff75de492eb57
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32510042"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916626"
 ---
 # <a name="delete-devicemanagementcollectionsettinginstance"></a>Excluir deviceManagementCollectionSettingInstance
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

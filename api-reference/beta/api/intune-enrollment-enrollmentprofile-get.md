@@ -1,15 +1,15 @@
 ---
 title: Obter enrollmentProfile
 description: Leia as propriedades e as relações do objeto enrollmentProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d29a5d64432ebef22a40f9a3d2655882e6786ea3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5d58a70429dae06636cb05b53bb2a2cc9fa9992
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533140"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908578"
 ---
 # <a name="get-enrollmentprofile"></a>Obter enrollmentProfile
 
@@ -80,7 +80,6 @@ Content-Length: 454
   }
 }
 ```
-
 
 
 

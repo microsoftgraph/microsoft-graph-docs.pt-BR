@@ -1,15 +1,15 @@
 ---
 title: Obter macOSCertificateProfileBase
 description: Leia as propriedades e as relações do objeto macOSCertificateProfileBase.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b33b356fea2ac32270e50ca3fbe0594c0eefa133
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6d6d80cc727d698c812ee896dfbe536087b446ea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518958"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922989"
 ---
 # <a name="get-macoscertificateprofilebase"></a>Obter macOSCertificateProfileBase
 
@@ -89,7 +89,6 @@ Content-Length: 699
   }
 }
 ```
-
 
 
 

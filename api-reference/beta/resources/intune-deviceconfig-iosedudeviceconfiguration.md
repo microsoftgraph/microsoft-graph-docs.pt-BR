@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso iosEduDeviceConfiguration
 description: configuração de dispositivo do treinamento iOS
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3289cb4259608857602e9e72a13514208b0cf27f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c64fdae367197ed936b72bcff6d1ccda2c28ee4e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548275"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946487"
 ---
 # <a name="iosedudeviceconfiguration-resource-type"></a>tipo de recurso iosEduDeviceConfiguration
 
@@ -113,7 +113,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração vpnOnDemandRuleConnectionDomainAction
 description: Ação de domínio de conexão de regra por demanda de VPN.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 864abbe321aa40388f2cd87d31178ac31ea4a5cc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5202c4bc2871697481f7ea1c5047b495f90a7c39
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561947"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944562"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>tipo de enumeração vpnOnDemandRuleConnectionDomainAction
 
@@ -23,8 +23,7 @@ Ação de domínio de conexão de regra por demanda de VPN.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |connectIfNeeded|,0|Conectar se necessário.|
-|neverConnect|1 |Nunca conectar.|
-
+|neverConnect|1|Nunca conectar.|
 
 
 

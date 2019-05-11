@@ -1,15 +1,15 @@
 ---
 title: Ação consentToDataSharing
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84cbd281cdd8c20e62e321cf23ad1ba832fd0d5e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5896d5f5e0b823d93fed1be1bb7d14268d178618
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466039"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910585"
 ---
 # <a name="consenttodatasharing-action"></a>Ação consentToDataSharing
 
@@ -77,7 +77,6 @@ Content-Length: 417
   }
 }
 ```
-
 
 
 

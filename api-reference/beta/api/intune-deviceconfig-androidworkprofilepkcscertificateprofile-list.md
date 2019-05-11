@@ -1,15 +1,15 @@
 ---
 title: Listar androidWorkProfilePkcsCertificateProfiles
 description: Listar Propriedades e relações dos objetos androidWorkProfilePkcsCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 882fba3a94546ccc0f804f199c466c23e8921ccb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b1917847bca7e2dd53f3fa643f69435b83c3058
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32472957"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928327"
 ---
 # <a name="list-androidworkprofilepkcscertificateprofiles"></a>Listar androidWorkProfilePkcsCertificateProfiles
 
@@ -99,7 +99,6 @@ Content-Length: 1282
   ]
 }
 ```
-
 
 
 

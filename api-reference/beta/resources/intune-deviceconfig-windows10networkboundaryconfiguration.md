@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windows10NetworkBoundaryConfiguration
 description: Configuração de limite de rede do Windows10
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fac3952488b5004a74286d337f04a8aa6038b174
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7231e7c1d8c509058fb18f6958e39f48cc84e4fa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572042"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944289"
 ---
 # <a name="windows10networkboundaryconfiguration-resource-type"></a>tipo de recurso windows10NetworkBoundaryConfiguration
 
@@ -109,7 +109,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Listar iosEnterpriseWiFiConfigurations
 description: Listar Propriedades e relações dos objetos iosEnterpriseWiFiConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e455df12ca6a557eef913134e5e4a250a156c769
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3b098be6b9f954c2178e5d08a9c148b213e3b1e7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467201"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923514"
 ---
 # <a name="list-iosenterprisewificonfigurations"></a>Listar iosEnterpriseWiFiConfigurations
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1404
+Content-Length: 1530
 
 {
   "value": [
@@ -96,12 +96,13 @@ Content-Length: 1404
       ],
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+      "usernameFormatString": "Username Format String value",
+      "passwordFormatString": "Password Format String value"
     }
   ]
 }
 ```
-
 
 
 

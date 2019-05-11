@@ -1,15 +1,15 @@
 ---
 title: Obter windowsInformationProtectionPolicy
 description: Ler propriedades e relações do objeto windowsInformationProtectionPolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 929d02d24ebe845de9ebcc870d9237d31dc2a542
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41fe39f88d45d53e17675b31e4968396971f9257
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529111"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900668"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>Obter windowsInformationProtectionPolicy
 
@@ -212,7 +212,6 @@ Content-Length: 4938
   }
 }
 ```
-
 
 
 

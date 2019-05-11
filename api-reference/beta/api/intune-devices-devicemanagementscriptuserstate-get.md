@@ -1,15 +1,15 @@
 ---
 title: Obter deviceManagementScriptUserState
 description: Leia as propriedades e as relações do objeto deviceManagementScriptUserState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74d442bf4c3c9d87ba272b99076d6f5c07633615
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d91ff0190d03ff7bc160a51255df2406cb31b2fa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465493"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909768"
 ---
 # <a name="get-devicemanagementscriptuserstate"></a>Obter deviceManagementScriptUserState
 
@@ -77,7 +77,6 @@ Content-Length: 258
   }
 }
 ```
-
 
 
 

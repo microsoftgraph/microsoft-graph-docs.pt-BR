@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração updateClassification
 description: Valores possíveis para classificação de atualização automática.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc068892b37eb3b3e3ce29cfbc2ce8c8e1aaf2da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1851ed4dda3d0af631632c1a2e8234794628cbe
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548492"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944639"
 ---
 # <a name="updateclassification-enum-type"></a>tipo de enumeração updateClassification
 
@@ -22,11 +22,10 @@ Valores possíveis para classificação de atualização automática.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|recommendedAndImportant|1 |Recomendado e importante.|
-|Important|2 |Important.|
-|Nenhuma|3 |Nenhum|
-
+|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|recommendedAndImportant|1|Recomendado e importante.|
+|Important|duas|Important.|
+|none|3D|Nenhum|
 
 
 

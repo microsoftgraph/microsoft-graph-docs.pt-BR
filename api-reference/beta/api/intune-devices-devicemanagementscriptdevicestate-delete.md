@@ -1,15 +1,15 @@
 ---
 title: Excluir deviceManagementScriptDeviceState
 description: Exclui deviceManagementScriptDeviceState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ef0760f2d40a370210e0a42c87bb3e4e1f15511
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 84f6a983bf85abfd7eb00eba129b2afd1832b83c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465773"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909845"
 ---
 # <a name="delete-devicemanagementscriptdevicestate"></a>Excluir deviceManagementScriptDeviceState
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
