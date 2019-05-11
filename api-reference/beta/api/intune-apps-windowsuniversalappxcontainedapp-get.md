@@ -1,15 +1,15 @@
 ---
 title: Obter windowsUniversalAppXContainedApp
 description: Leia as propriedades e as relações do objeto windowsUniversalAppXContainedApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: defbdb0f378c39c67e3c7861801a25b79c1aee32
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b0b3d859a92025e9803713efc9e7209d8435e5c7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32485548"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934443"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>Obter windowsUniversalAppXContainedApp
 
@@ -77,7 +77,6 @@ Content-Length: 196
   }
 }
 ```
-
 
 
 

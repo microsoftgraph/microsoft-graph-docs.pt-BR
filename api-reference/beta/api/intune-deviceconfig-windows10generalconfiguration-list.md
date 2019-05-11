@@ -1,15 +1,15 @@
 ---
 title: Listar windows10GeneralConfigurations
 description: Listar propriedades e relações dos objetos windows10GeneralConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6984d2700c6e615fd6efcd29862d83e7f84e58db
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7fddabaacee066c42d285db2a5a708e9c1865284
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32516606"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921017"
 ---
 # <a name="list-windows10generalconfigurations"></a>Listar windows10GeneralConfigurations
 
@@ -391,7 +391,6 @@ Content-Length: 14999
   ]
 }
 ```
-
 
 
 

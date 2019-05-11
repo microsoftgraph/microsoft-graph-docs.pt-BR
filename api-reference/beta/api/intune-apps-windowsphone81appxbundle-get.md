@@ -1,15 +1,15 @@
 ---
 title: Obter windowsPhone81AppXBundle
 description: Leia as propriedades e as relações do objeto windowsPhone81AppXBundle.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cfccc740857b31fd66abaacce048def020c950a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6cb98a263e85f5c878b015ad2d7b1a734e6ec2e8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488047"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934660"
 ---
 # <a name="get-windowsphone81appxbundle"></a>Obter windowsPhone81AppXBundle
 
@@ -140,7 +140,6 @@ Content-Length: 2534
   }
 }
 ```
-
 
 
 

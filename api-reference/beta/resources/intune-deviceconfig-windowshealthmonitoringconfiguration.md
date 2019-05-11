@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsHealthMonitoringConfiguration
 description: Configuração de monitoramento de integridade do dispositivo Windows
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a182dfd71c6afcdd5dfc04be369cd1212b3e054
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1947bb34a028ab44af094afc24d0ea9de292de3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573869"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944027"
 ---
 # <a name="windowshealthmonitoringconfiguration-resource-type"></a>tipo de recurso windowsHealthMonitoringConfiguration
 
@@ -43,7 +43,8 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |allowDeviceHealthMonitoring|[habilitação](../resources/intune-shared-enablement.md)|Habilita o monitoramento de integridade do dispositivo no dispositivo. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Especifica conjunto de eventos coletados do dispositivo onde o monitoramento de integridade está habilitado. Os valores possíveis são: `undefined`, `healthMonitoring`, `bootPerformance`.|
+|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Especifica o conjunto de eventos coletados do dispositivo onde o monitoramento de integridade está habilitado. Os valores possíveis são: `undefined`, `healthMonitoring`, `bootPerformance`.|
+|configDeviceHealthMonitoringCustomScope|Cadeia de caracteres|Especifica um conjunto personalizado de eventos coletados do dispositivo onde o monitoramento de integridade está habilitado|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -78,10 +79,10 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "version": 1024,
   "allowDeviceHealthMonitoring": "String",
-  "configDeviceHealthMonitoringScope": "String"
+  "configDeviceHealthMonitoringScope": "String",
+  "configDeviceHealthMonitoringCustomScope": "String"
 }
 ```
-
 
 
 

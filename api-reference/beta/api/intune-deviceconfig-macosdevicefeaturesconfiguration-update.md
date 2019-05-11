@@ -1,15 +1,15 @@
 ---
 title: Atualizar macOSDeviceFeaturesConfiguration
 description: Atualizar as propriedades de um objeto macOSDeviceFeaturesConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d3d583d894a11edc6d95a95f2b1869b08467689
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 64588b45886d8abfbc6f7598d626c3bb47dfcdc9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518734"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922821"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Atualizar macOSDeviceFeaturesConfiguration
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |airPrintDestinations|coleção [airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Uma matriz de impressoras de impressão que sempre devem ser mostradas. Esta coleção pode conter um máximo de 500 elementos. Herdado de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|coleção [macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Lista de aplicativos, arquivos, pastas e outros itens a serem iniciados quando o usuário fizer logon. Esta coleção pode conter um máximo de 500 elementos.|
 |adminShowHostInfo|Booliano|Se deseja mostrar as informações de host de administrador na janela de logon.|
-|loginWindowText|String|Texto personalizado a ser exibido na janela de logon.|
+|loginWindowText|Cadeia de caracteres|Texto personalizado a ser exibido na janela de logon.|
 |authorizedUsersListHidden|Booliano|Se deseja mostrar a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
 |authorizedUsersListHideLocalUsers|Booliano|Se deseja mostrar somente usuários de rede e de sistema na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListHideMobileAccounts|Booliano|Se os usuários móveis serão ocultos na lista de usuários autorizados na janela de logon.|
@@ -71,7 +71,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |authorizedUsersListHideAdminUsers|Booliano|Se os usuários de administrador serão ocultos na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListShowOtherManagedUsers|Booliano|Se deseja mostrar outros usuários na lista de usuários autorizados na janela de logon.|
 |shutDownDisabled|Booliano|Se o item de botão desligar será ocultado na janela de logon.|
-|restartDisabled|Booliano|Se o item de botão de reInicialização será ocultado na janela de logon.|
+|restartDisabled|Booliano|Se o item de botão de reinicialização será ocultado na janela de logon.|
 |sleepDisabled|Booliano|Se o item de menu de suspensão será ocultado na janela de logon.|
 |consoleAccessDisabled|Booliano|Se o outro usuário desconsiderará o uso do nome de usuário especial do >console>.|
 |shutDownDisabledWhileLoggedIn|Booliano|Se o item de menu desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
@@ -193,7 +193,6 @@ Content-Length: 1506
   "screenLockDisableImmediate": true
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Excluir windowsPhoneXAP
 description: Exclui windowsPhoneXAP.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19b27fcb09c76d20952ae8de5bd6f8d810ff6518
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5c02b8f090360dcb958478a8b5785bac73296b5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32487963"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934604"
 ---
 # <a name="delete-windowsphonexap"></a>Excluir windowsPhoneXAP
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

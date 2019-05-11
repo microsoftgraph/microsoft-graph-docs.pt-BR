@@ -2,14 +2,14 @@
 title: Listar windowsOfficeClientConfigurations
 description: Listar Propriedades e relações dos objetos windowsOfficeClientConfiguration.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 46e8397d04ee9727a6d48feab91660d9f0be5421
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 67fb3d6b5a5c8c9f25b8329ec7a27dd410883670
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483037"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933988"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>Listar windowsOfficeClientConfigurations
 

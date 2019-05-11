@@ -1,15 +1,15 @@
 ---
 title: Criar iosLobAppProvisioningConfiguration
 description: Criar um novo objeto iosLobAppProvisioningConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89420fa4680fdb6978ebff209c36f4f81804596a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a848b7bb83146019f4eebc37c95a99ce4beba17
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496090"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937019"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Criar iosLobAppProvisioningConfiguration
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosLobAp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data e hora de expiração do perfil opcional.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*. mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
@@ -112,7 +112,6 @@ Content-Length: 547
   "version": 7
 }
 ```
-
 
 
 

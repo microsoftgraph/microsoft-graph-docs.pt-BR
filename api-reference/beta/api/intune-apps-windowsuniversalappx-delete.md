@@ -1,15 +1,15 @@
 ---
 title: Excluir windowsUniversalAppX
 description: Exclui windowsUniversalAppX.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef1ce24ebcef30d9988d6733563f79d7f98123fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37be01aabf4e5bf4d3088e5fa2072a237355da3a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32485933"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934492"
 ---
 # <a name="delete-windowsuniversalappx"></a>Excluir windowsUniversalAppX
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

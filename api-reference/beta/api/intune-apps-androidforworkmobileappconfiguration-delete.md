@@ -1,15 +1,15 @@
 ---
 title: Excluir androidForWorkMobileAppConfiguration
 description: Exclui androidForWorkMobileAppConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ef29e93728b12f57056342a8af66bf6d3a24ed2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd05fb76b751f99bc67842a3d9001b9fe973429d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32497392"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937432"
 ---
 # <a name="delete-androidforworkmobileappconfiguration"></a>Excluir androidForWorkMobileAppConfiguration
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

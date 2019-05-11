@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração userPfxPaddingScheme
 description: Valores com suporte para o esquema de preenchimento usado pelo provedor de criptografia.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e1028f5e3bcac6b3ece66efb1ca50e7b65ea2bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6bf3d5b30dab16983cee549d6dcf9895a086180a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566364"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940054"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>tipo de enumeração userPfxPaddingScheme
 
@@ -22,12 +22,13 @@ Valores com suporte para o esquema de preenchimento usado pelo provedor de cript
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Ainda não documentado|
-|PKCS1|1 |Ainda não documentado|
-|oaepSha1|2 |Ainda não documentado|
-|oaepSha256|3 |Ainda não documentado|
-|oaepSha384|4 |Ainda não documentado|
-|oaepSha512|5 |Ainda não documentado|
+|none|,0|Ainda não documentado|
+|pkcs1|1|Ainda não documentado|
+|oaepSha1|duas|Ainda não documentado|
+|oaepSha256|3D|Ainda não documentado|
+|oaepSha384|quatro|Ainda não documentado|
+|oaepSha512|0,5|Ainda não documentado|
+
 
 
 

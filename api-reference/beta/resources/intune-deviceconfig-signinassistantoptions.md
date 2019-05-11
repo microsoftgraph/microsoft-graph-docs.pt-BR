@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração signInAssistantOptions
 description: Valores para o SignInAssistantSettings.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f363967ef6aec0b6f505bc130ee29f05278bc378
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8a24c76e69ee644efdd50605f06da4cdc79566dc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464600"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944688"
 ---
 # <a name="signinassistantoptions-enum-type"></a>tipo de enumeração signInAssistantOptions
 
@@ -24,7 +24,6 @@ Valores para o SignInAssistantSettings.
 |:---|:---|:---|
 |notConfigured|,0|Não configurado-WLIDSVC start será definido como SERVICE_DEMAND_START.|
 |deficiência|1|Disabled-WLIDSVC start será definido como SERVICE_DISABLED.|
-
 
 
 

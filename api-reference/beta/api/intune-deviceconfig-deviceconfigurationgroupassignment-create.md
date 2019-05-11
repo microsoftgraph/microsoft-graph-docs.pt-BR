@@ -1,15 +1,15 @@
 ---
 title: Criar deviceConfigurationGroupAssignment
 description: Criar um novo objeto deviceConfigurationGroupAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1c7edbe6e646647ffa9887ae49a16539c451e20
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 85834603ce0bc267e3f670fc4e31cf4e55d0e851
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470528"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927374"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Criar deviceConfigurationGroupAssignment
 
@@ -58,8 +58,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|targetGroupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|targetGroupId|Cadeia de caracteres|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
 |excludeGroup|Booliano|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
 
 
@@ -97,7 +97,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 

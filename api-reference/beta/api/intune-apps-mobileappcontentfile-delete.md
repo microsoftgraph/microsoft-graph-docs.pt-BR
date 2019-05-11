@@ -1,15 +1,15 @@
 ---
 title: Excluir mobileAppContentFile
 description: Exclui mobileAppContentFile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92bfd6ccf3f679add50a2a3b9a1d57b058a5c073
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83aa94763ea920ac418be65a4a0da1cf9dcdeeb5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489251"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935185"
 ---
 # <a name="delete-mobileappcontentfile"></a>Excluir mobileAppContentFile
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

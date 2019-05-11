@@ -1,15 +1,15 @@
 ---
 title: Obter windowsAppX
 description: Leia as propriedades e as relações do objeto windowsAppX.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 771ca124f5e5a02c08477aafc49672b9c2bd2444
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0e0142c8aead42571ffa32e6320e03a177ffe87c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488453"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934779"
 ---
 # <a name="get-windowsappx"></a>Obter windowsAppX
 
@@ -118,7 +118,6 @@ Content-Length: 1646
   }
 }
 ```
-
 
 
 

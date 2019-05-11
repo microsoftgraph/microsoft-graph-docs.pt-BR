@@ -1,15 +1,15 @@
 ---
 title: Obter mobileContainedApp
 description: Leia as propriedades e as relações do objeto mobileContainedApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91a70a98c4be3cbb00fd4d8d1e8c1999290d4405
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2eb98d9af5598a4e946bdf8e12e2e21a541e3d2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488677"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935017"
 ---
 # <a name="get-mobilecontainedapp"></a>Obter mobileContainedApp
 
@@ -76,7 +76,6 @@ Content-Length: 132
   }
 }
 ```
-
 
 
 

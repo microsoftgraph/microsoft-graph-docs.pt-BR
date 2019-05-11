@@ -1,15 +1,15 @@
 ---
 title: Listar managedDeviceMobileAppConfigurationDeviceStatuses
 description: Listar Propriedades e relações dos objetos managedDeviceMobileAppConfigurationDeviceStatus.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 137b7a5a3e0dc956984348521053f06b594e240c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f6c2cfa70cea352d740ef87789ab31d721f2801
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32493290"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935626"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>Listar managedDeviceMobileAppConfigurationDeviceStatuses
 
@@ -82,7 +82,6 @@ Content-Length: 585
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Atualizar windowsUniversalAppXContainedApp
 description: Atualiza as propriedades de um objeto windowsUniversalAppXContainedApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffc389f5b43132c21bfd0abfbfb7d45783e4ba75
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2f3748c17a1bfabe48210e4fb83c110580a07e4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32485499"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934415"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>Atualizar windowsUniversalAppXContainedApp
 
@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|A ID do modelo do usuário do aplicativo do aplicativo contido de um aplicativo do WindowsUniversalAppX.|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|Cadeia de caracteres|A ID do modelo do usuário do aplicativo do aplicativo contido de um aplicativo do WindowsUniversalAppX.|
 
 
 
@@ -88,7 +88,6 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

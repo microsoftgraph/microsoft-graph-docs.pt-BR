@@ -1,15 +1,15 @@
 ---
 title: Ação enableLostMode
 description: Habilitar modo perdido
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 735ee2659c603b03718a0e0031973dd5addb21eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2e8103e113ab97f117d32b4fb50aaa828700f490
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520218"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909670"
 ---
 # <a name="enablelostmode-action"></a>Ação enableLostMode
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |:---|:---|:---|
 |mensagem|String|Ainda não documentado|
 |phoneNumber|String|Ainda não documentado|
-|footer|String|Ainda não documentado|
+|cabeçalho|String|Ainda não documentado|
 
 
 
@@ -84,7 +84,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

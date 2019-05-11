@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração vppTokenActionFailureReason
 description: Possíveis tipos de motivos para uma falha na ação de token do Apple Volume Purchase Program.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9adb896d384be99496c016ef3bd39b02ff1a28e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f8e06243d8b719ad4cb3f2a2c264fdafe7e468cf
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548254"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938636"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>tipo de enumeração vppTokenActionFailureReason
 
@@ -22,12 +22,11 @@ Possíveis tipos de motivos para uma falha na ação de token do Apple Volume Pu
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum.|
-|appleFailure|1 |Ocorreu um erro no serviço da Apple.|
-|internalError|2 |Ocorreu um erro interno.|
-|expiredVppToken|3 |Ocorreu um erro porque o token do Apple Volume Purchase Program expirou.|
-|expiredApplePushNotificationCertificate|4 |Ocorreu um erro porque o certificado de notificação por push do Apple Volume Purchase Program expirou.|
-
+|none|,0|Nenhum.|
+|appleFailure|1|Ocorreu um erro no serviço da Apple.|
+|internalError|duas|Ocorreu um erro interno.|
+|expiredVppToken|3D|Ocorreu um erro porque o token do Apple Volume Purchase Program expirou.|
+|expiredApplePushNotificationCertificate|quatro|Ocorreu um erro porque o certificado de notificação por push do Apple Volume Purchase Program expirou.|
 
 
 

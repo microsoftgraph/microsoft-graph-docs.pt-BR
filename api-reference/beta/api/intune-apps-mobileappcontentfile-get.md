@@ -1,15 +1,15 @@
 ---
 title: Acessar mobileAppContentFile
 description: Leia as propriedades e as relações do objeto mobileAppContentFile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88658d10f709978cef92e3d1b5b016ab16f321ef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4c222e421799b407afb5c7a01a662191a4b01f72
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489111"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935178"
 ---
 # <a name="get-mobileappcontentfile"></a>Acessar mobileAppContentFile
 
@@ -85,7 +85,6 @@ Content-Length: 548
   }
 }
 ```
-
 
 
 

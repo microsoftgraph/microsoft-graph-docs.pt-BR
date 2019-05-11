@@ -1,15 +1,15 @@
 ---
 title: Criar androidForWorkMobileAppConfiguration
 description: Criar um novo objeto androidForWorkMobileAppConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12a04a83dcee91e67716aa6f44a4ec0245acd33e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b8b8fd66d0aa5857d15627be28e95149a8270b8e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32497441"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937425"
 ---
 # <a name="create-androidforworkmobileappconfiguration"></a>Criar androidForWorkMobileAppConfiguration
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidF
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|Coleção de cadeias de caracteres|o aplicativo associado. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de configuração de aplicativo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidF
 |displayName|String|Nome fornecido pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|ID do pacote de configuração do aplicativo Android for Work.|
-|payloadJson|String|Carga JSON da configuração de aplicativo do Android for Work.|
+|payloadJson|Cadeia de caracteres|Carga JSON da configuração de aplicativo do Android for Work.|
 |permissionActions|coleção [androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)|Lista de permissões de aplicativo Android e ações de permissão correspondentes.|
 
 
@@ -131,7 +131,6 @@ Content-Length: 732
   ]
 }
 ```
-
 
 
 

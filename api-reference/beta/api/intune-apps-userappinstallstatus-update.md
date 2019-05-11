@@ -1,15 +1,15 @@
 ---
 title: Atualizar userAppInstallStatus
 description: Atualiza as propriedades de um objeto userAppInstallStatus.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb999de52c39bc3e0a0e97c4e80d3043bb700165
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9f8cbcec45e1575c2bde8832c893c41a0eac0010
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488817"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934887"
 ---
 # <a name="update-userappinstallstatus"></a>Atualizar userAppInstallStatus
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userApp
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
-|userPrincipalName|String|Nome principal do usuário.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|
 |notInstalledDeviceCount|Int32|Sem contagem de dispositivos instalados.|
@@ -98,7 +98,6 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

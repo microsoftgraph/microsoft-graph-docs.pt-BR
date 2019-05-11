@@ -1,15 +1,15 @@
 ---
 title: Listar androidLobApps
 description: Listar propriedades e relações dos objetos androidLobApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee7a9bb5577ef02725a68660c20c82c14b300517
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f9548645ac9b127325e8281ccf5d5394a05439c3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32497427"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937285"
 ---
 # <a name="list-androidlobapps"></a>Listar androidLobApps
 
@@ -121,7 +121,6 @@ Content-Length: 1818
   ]
 }
 ```
-
 
 
 

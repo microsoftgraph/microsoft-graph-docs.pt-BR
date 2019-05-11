@@ -1,15 +1,15 @@
 ---
 title: Atualizar Navegaçãoadvancedthreatprotectiononboardingstatesummary
 description: Atualiza as propriedades de um objeto Navegaçãoadvancedthreatprotectiononboardingstatesummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0be5ec3f75cc57c008ff53f7e0f50a6e5a79f567
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 092b71ca5532f10f97996c629bf679d3862b76b8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482239"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933351"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>Atualizar Navegaçãoadvancedthreatprotectiononboardingstatesummary
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [navega�
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo|
+|id|Cadeia de caracteres|Identificador exclusivo|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -107,7 +107,6 @@ Content-Length: 380
   "notAssignedDeviceCount": 6
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração devicePlatformType
 description: Tipos de plataforma suportados.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51f74a9820b808bcc5685494665c67679d2191a3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 27711e7392e0ba1804b8a24426b4d6e3afa418de
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562206"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938892"
 ---
 # <a name="deviceplatformtype-enum-type"></a>tipo de enumeração devicePlatformType
 
@@ -23,14 +23,14 @@ Tipos de plataforma suportados.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Android|,0|Android.|
-|androidForWork|1 |AndroidForWork.|
-|iOS|2 |emiti.|
-|macOS|3 |MacOS.|
-|windowsPhone81|4 |Windowsphonee 8,1.|
-|windows81AndLater|5 |Windows 8,1 e posterior|
-|windows10AndLater|6 |Windows 10 e posterior.|
-|androidWorkProfile|7 |Perfil de trabalho do Android.|
-
+|androidForWork|1|AndroidForWork.|
+|iOS|duas|emiti.|
+|macOS|3D|MacOS.|
+|windowsPhone81|quatro|Windowsphonee 8,1.|
+|windows81AndLater|0,5|Windows 8,1 e posterior|
+|windows10AndLater|6|Windows 10 e posterior.|
+|androidWorkProfile|178|Perfil de trabalho do Android.|
+|desconhecido|8 |Unknown.|
 
 
 

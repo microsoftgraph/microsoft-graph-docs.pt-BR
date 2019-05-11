@@ -1,15 +1,15 @@
 ---
 title: Obter iosVppAppAssignedDeviceLicense
 description: Leia as propriedades e as relações do objeto iosVppAppAssignedDeviceLicense.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe44dfca8773f706e3b84e4975cf74ec678efacd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 917a924917b6d482794963f034cd92feefa1fc95
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495698"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936193"
 ---
 # <a name="get-iosvppappassigneddevicelicense"></a>Obter iosVppAppAssignedDeviceLicense
 
@@ -80,7 +80,6 @@ Content-Length: 411
   }
 }
 ```
-
 
 
 

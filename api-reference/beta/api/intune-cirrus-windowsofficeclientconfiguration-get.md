@@ -2,14 +2,14 @@
 title: Obter windowsOfficeClientConfiguration
 description: Obtenha um objeto windowsOfficeClientConfiguration de política de não segurança específico.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: a244487d367351087786712a358e3491d7d59580
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6cf1a2d9c5f322e49215d7e6fc513eb9e2035d11
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483317"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934002"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>Obter windowsOfficeClientConfiguration
 

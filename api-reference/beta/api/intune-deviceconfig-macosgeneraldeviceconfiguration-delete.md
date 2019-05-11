@@ -1,15 +1,15 @@
 ---
 title: Excluir macOSGeneralDeviceConfiguration
 description: Exclui macOSGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc9685e4d81e54e85e395be8d391adc7acd27397
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0057c0a9d6a4767da23bad5aacc3221c62d945b6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518552"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922428"
 ---
 # <a name="delete-macosgeneraldeviceconfiguration"></a>Excluir macOSGeneralDeviceConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

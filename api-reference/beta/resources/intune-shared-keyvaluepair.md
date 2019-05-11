@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso keyValuePair
 description: Par chave-valor para armazenar configurações personalizadas
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a8feecabeca3cfc916c0bd3ce1b87cab3a68809
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cc34bad30ff5bc33f60e6ec4e561e6644b97cc37
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525240"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938657"
 ---
 # <a name="keyvaluepair-resource-type"></a>Tipo de recurso keyValuePair
 
@@ -22,7 +22,7 @@ Par chave-valor para armazenar configurações personalizadas
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|Nome deste par chave-valor|
+|nome|Cadeia de caracteres|Nome deste par chave-valor|
 |value|Cadeia de caracteres|Valor deste par chave-valor|
 
 ## <a name="relationships"></a>Relações

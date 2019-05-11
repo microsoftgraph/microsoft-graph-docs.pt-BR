@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso windowsPhone81CompliancePolicy
 description: Essa classe contém as configurações de conformidade do Windows 8.1 Mobile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99b7ce78f0183e613fb19c48388b509a47e0f1fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f432478bcab266d446fc15bf9bd8bcc1b82425e8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573176"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943687"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>Tipo de recurso windowsPhone81CompliancePolicy
 
@@ -39,7 +39,7 @@ Herda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecomplia
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |passwordBlockSimple|Boolean|Se a sincronização do calendário deve ou não ser bloqueada.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha.|
@@ -49,7 +49,7 @@ Herda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecomplia
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 0 a 24|
 |passwordRequired|Booliano|Se uma senha deve ou não ser exigida.|
-|osMinimumVersion|String|Versão mínima do Windows Phone.|
+|osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
 |osMaximumVersion|String|Versão máxima do Windows Phone.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Windows Phone.|
 
@@ -97,7 +97,6 @@ Veja a seguir uma representação JSON do recurso.
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

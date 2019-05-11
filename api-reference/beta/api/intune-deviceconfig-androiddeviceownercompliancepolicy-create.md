@@ -1,15 +1,15 @@
 ---
 title: Criar androidDeviceOwnerCompliancePolicy
 description: Criar um novo objeto androidDeviceOwnerCompliancePolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19ccb8cc7d778f62528b1558d762a7a938b12645
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f36a9aaf47bb29f60c09616dd4235f45fcbbfcf
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32481203"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933687"
 ---
 # <a name="create-androiddeviceownercompliancepolicy"></a>Criar androidDeviceOwnerCompliancePolicy
 
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|osMinimumVersion|String|Versão mínima do Android.|
-|osMaximumVersion|String|Versão máxima do Android.|
+|osMinimumVersion|Cadeia de caracteres|Versão mínima do Android.|
+|osMaximumVersion|Cadeia de caracteres|Versão máxima do Android.|
 |minAndroidSecurityPatchLevel|String|Nível mínimo de patch de segurança Android.|
 |passwordRequired|Booliano|Exige uma senha para desbloquear o dispositivo.|
 |passwordMinimumLength|Int32|Comprimento mínimo da senha. Valores válidos de 4 a 16|
@@ -151,7 +151,6 @@ Content-Length: 1104
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

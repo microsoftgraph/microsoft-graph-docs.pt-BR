@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso windowsInformationProtectionAppLearningSummary
 description: Entidade de Resumo de AppLearning da Proteção de Informações do Windows
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be7f1eb6f3149499edccd75f2f352ac6ad5a84ef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5d5362e34ba067f02f794ca587ae1ccceb00e1af
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570072"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938686"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionAppLearningSummary
 
@@ -31,7 +31,7 @@ Entidade de Resumo de AppLearning da Proteção de Informações do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
+|id|Cadeia de caracteres|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
 |applicationName|Cadeia de caracteres|Nome do Aplicativo|
 |applicationType|[Tipo](../resources/intune-wip-applicationtype.md)|Tipo de aplicativo. Os valores possíveis são: `universal` e `desktop`.|
 |deviceCount|Int32|Contagem de dispositivos|
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCount": 1024
 }
 ```
-
 
 
 

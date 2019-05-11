@@ -1,15 +1,15 @@
 ---
 title: Criar androidForWorkEnrollmentProfile
 description: Cria um novo objeto androidForWorkEnrollmentProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1beabbd597ebaee3ab75bb51fa7dc59f28369a34
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da20ba9352dd14d1168ac76b4fb4a4f92d8d6726
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498897"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938678"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Criar androidForWorkEnrollmentProfile
 
@@ -50,13 +50,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidF
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
-|id|String|GUID exclusivo do perfil de registro.|
-|displayName|String|Nome de exibição do perfil de registro.|
+|accountId|Cadeia de caracteres|GUID de locatário ao qual o perfil de registro pertence.|
+|id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
+|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
 |description|String|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
-|tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|
+|tokenValue|Cadeia de caracteres|Valor do token mais recentemente criado para este perfil de registro.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
@@ -119,7 +119,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

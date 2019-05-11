@@ -1,15 +1,15 @@
 ---
 title: Obter macOsVppApp
 description: Leia as propriedades e as relações do objeto macOsVppApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f847cf750b423b5c9ba627594db8126fc9e1f60c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 216865b97869c51d22b800fa52f8633164e7832e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495271"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935843"
 ---
 # <a name="get-macosvppapp"></a>Obter macOsVppApp
 
@@ -129,7 +129,6 @@ Content-Length: 2170
   }
 }
 ```
-
 
 
 

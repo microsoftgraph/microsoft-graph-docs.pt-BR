@@ -1,15 +1,15 @@
 ---
 title: Listar mobileAppProvisioningConfigGroupAssignments
 description: Listar Propriedades e relações dos objetos mobileAppProvisioningConfigGroupAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d18332abd17b76474b2f23c2cb5f856b4acf2416
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eee41c794fe96169a81395f2126cbba3ba467091
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488684"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935045"
 ---
 # <a name="list-mobileappprovisioningconfiggroupassignments"></a>Listar mobileAppProvisioningConfigGroupAssignments
 
@@ -74,7 +74,6 @@ Content-Length: 223
   ]
 }
 ```
-
 
 
 

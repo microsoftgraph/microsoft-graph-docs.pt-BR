@@ -1,15 +1,15 @@
 ---
 title: Criar mobileAppContent
 description: Criar um novo objeto mobileAppContent.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba9b744b85644e554993801c801da5d0c23b3409
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9d9dcbbc339898eebdf70edabe19b95959fea75c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489598"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935311"
 ---
 # <a name="create-mobileappcontent"></a>Criar mobileAppContent
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A versão do conteúdo do aplicativo.|
+|id|Cadeia de caracteres|A versão do conteúdo do aplicativo.|
 
 
 
@@ -85,7 +85,6 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
-
 
 
 

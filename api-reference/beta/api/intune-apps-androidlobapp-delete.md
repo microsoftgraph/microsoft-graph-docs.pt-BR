@@ -1,15 +1,15 @@
 ---
 title: Excluir androidLobApp
 description: Exclui androidLobApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0843ac16b7fb9169cb8bd57c85adcaae0f52b4c6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ffa9fecc104dc0840e425f2549c0457d40e780ea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32497420"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937292"
 ---
 # <a name="delete-androidlobapp"></a>Excluir androidLobApp
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

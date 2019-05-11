@@ -1,15 +1,15 @@
 ---
 title: Acessar mobileAppAssignment
 description: Leia as propriedades e as relações do objeto mobileAppAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91f687f3b257f6c0f05fd193161b0770a953525b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a198f6c93edf79bdb2bbe156af6f80b5548f9c10
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489566"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935325"
 ---
 # <a name="get-mobileappassignment"></a>Acessar mobileAppAssignment
 
@@ -81,7 +81,6 @@ Content-Length: 359
   }
 }
 ```
-
 
 
 

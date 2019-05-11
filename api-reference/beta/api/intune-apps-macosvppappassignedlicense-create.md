@@ -1,15 +1,15 @@
 ---
 title: Criar macOsVppAppAssignedLicense
 description: Criar um novo objeto macOsVppAppAssignedLicense.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b21b002e7cae3f3b52967cb320caa43e67c10a9d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9738b39b3d30c5c246fdfd77788187a7dc46a47a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495320"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935822"
 ---
 # <a name="create-macosvppappassignedlicense"></a>Criar macOsVppAppAssignedLicense
 
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOsVpp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|userEmailAddress|String|O endereço de email do usuário.|
+|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
 |userId|String|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
-|userPrincipalName|String|O nome da entidade de segurança do usuário.|
+|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

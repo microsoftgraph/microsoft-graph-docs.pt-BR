@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsDeliveryOptimizationConfiguration
 description: Configuração de otimização de entrega do Windows
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6a63f76cfed7cb8f7be96f23109fc70adaa40b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 50c7ef99c1256b59377a24f409f8f398d9fd1f82
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554223"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944037"
 ---
 # <a name="windowsdeliveryoptimizationconfiguration-resource-type"></a>tipo de recurso windowsDeliveryOptimizationConfiguration
 
@@ -58,7 +58,7 @@ Valores recomendados: 64 GB a 256 GB. Valores válidos de 1 a 100000|
 Valores recomendados: 1 MB a 100.000 MB. Valores válidos de 1 a 100000|
 |minimumBatteryPercentageAllowedToUpload|Int32|Especifica a porcentagem de bateria mínima para permitir que o dispositivo carregue dados (0-100). Valores válidos de 0 a 100
 O valor padrão é 0. O valor 0 (zero) significa "não limitado" e o valor padrão do serviço de nuvem será usado. Valores válidos de 0 a 100|
-|modifyCacheLocation|String|Especifica a unidade que a otimização de entrega deve usar para seu cache.|
+|modifyCacheLocation|Cadeia de caracteres|Especifica a unidade que a otimização de entrega deve usar para seu cache.|
 |maximumCacheAgeInDays|Int32|Especifica o tempo máximo, em dias, em que cada arquivo é mantido no cache de otimização de entrega após o download bem-sucedido (0-49710). Valores válidos de 0 a 49710|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|Especifica o tamanho máximo de cache que a otimização de entrega como uma porcentagem ou em GB.|
 |vpnPeerCaching|[habilitação](../resources/intune-shared-enablement.md)|Especifica se o dispositivo tem permissão para participar do cache de mesmo nível enquanto conectado via VPN à rede de domínio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
@@ -117,7 +117,6 @@ Veja a seguir uma representação JSON do recurso.
   "vpnPeerCaching": "String"
 }
 ```
-
 
 
 

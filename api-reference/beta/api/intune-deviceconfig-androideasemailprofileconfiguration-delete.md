@@ -1,15 +1,15 @@
 ---
 title: Excluir androidEasEmailProfileConfiguration
 description: Exclui androidEasEmailProfileConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c9b5a2d7417cc20a2267061ed079273e885aee2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 87ebd3647eea71d221558da5caf4976d7dc560d5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479712"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933099"
 ---
 # <a name="delete-androideasemailprofileconfiguration"></a>Excluir androidEasEmailProfileConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

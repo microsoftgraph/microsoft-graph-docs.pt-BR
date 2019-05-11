@@ -1,15 +1,15 @@
 ---
 title: Listar macOsVppAppAssignedLicenses
 description: Listar Propriedades e relações dos objetos macOsVppAppAssignedLicense.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1dab235658aa82ff0c27a462b40bc348b9ee0e19
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a99637e9947e32e87a896fa4990b4e183637747f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495488"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935787"
 ---
 # <a name="list-macosvppappassignedlicenses"></a>Listar macOsVppAppAssignedLicenses
 
@@ -77,7 +77,6 @@ Content-Length: 342
   ]
 }
 ```
-
 
 
 

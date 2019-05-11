@@ -1,15 +1,15 @@
 ---
 title: Criar microsoftStoreForBusinessContainedApp
 description: Criar um novo objeto microsoftStoreForBusinessContainedApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7d8894e01b7993e50f12ee3aa3e83173fbebb11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cbdea27ad63b3216df4e729d5f4fc3387a5ade5a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490973"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935402"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>Criar microsoftStoreForBusinessContainedApp
 
@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar microsof
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|A ID do modelo do usuário do aplicativo do aplicativo contido de um MicrosoftStoreForBusinessApp.|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|Cadeia de caracteres|A ID do modelo do usuário do aplicativo do aplicativo contido de um MicrosoftStoreForBusinessApp.|
 
 
 
@@ -88,7 +88,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

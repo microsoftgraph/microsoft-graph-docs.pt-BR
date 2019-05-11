@@ -2,14 +2,14 @@
 title: Atualizar officeClientConfigurationAssignment
 description: Atualiza as propriedades de um objeto officeClientConfigurationAssignment.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 9820bfd08d509ee0eb5903a847be62e4d417b346
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 80b748ddff1926d0f2794c7fc9d65cde05e5faa2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483114"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934037"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Atualizar officeClientConfigurationAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [officeC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |destino|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Ainda não documentado|
 
 

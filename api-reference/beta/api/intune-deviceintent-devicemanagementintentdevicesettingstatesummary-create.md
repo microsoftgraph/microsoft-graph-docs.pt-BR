@@ -1,15 +1,15 @@
 ---
 title: Criar deviceManagementIntentDeviceSettingStateSummary
 description: Criar um novo objeto deviceManagementIntentDeviceSettingStateSummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bfe4c44bdd0ec2a68e58c3a881dbe00ae1b7f5e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c32c8cf44fd891da6766e38b00afa948203466d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508425"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916123"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>Criar deviceManagementIntentDeviceSettingStateSummary
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID|
+|id|Cadeia de caracteres|A ID|
 |settingName|Cadeia de caracteres|Nome de uma configuração|
 |compliantCount|Int32|Número de dispositivos em conformidade|
 |conflictCount|Int32|Número de dispositivos em conflito|
@@ -104,7 +104,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

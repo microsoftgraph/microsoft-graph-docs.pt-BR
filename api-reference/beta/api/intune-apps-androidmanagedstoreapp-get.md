@@ -1,15 +1,15 @@
 ---
 title: Obter androidManagedStoreApp
 description: Leia as propriedades e as relações do objeto androidManagedStoreApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51934e39cea37d2bd3f0f51c875b8c6a470ec49b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eaa5cf3073b22aa6c1bf01f1f109778fcb93bb8e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496881"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937383"
 ---
 # <a name="get-androidmanagedstoreapp"></a>Obter androidManagedStoreApp
 
@@ -105,7 +105,6 @@ Content-Length: 1191
   }
 }
 ```
-
 
 
 

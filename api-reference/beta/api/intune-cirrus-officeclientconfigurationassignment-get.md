@@ -2,14 +2,14 @@
 title: Obter officeClientConfigurationAssignment
 description: Leia as propriedades e as relações do objeto officeClientConfigurationAssignment.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 6cf3416b606fc1fa32d3657ef77317834980a046
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 20b57b5f7de1a59c94845bfd7917e568da3043d0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483310"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934023"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>Obter officeClientConfigurationAssignment
 

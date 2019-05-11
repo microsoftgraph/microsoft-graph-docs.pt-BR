@@ -1,15 +1,15 @@
 ---
 title: Criar termsAndConditionsGroupAssignment
 description: Criar um novo objeto termsAndConditionsGroupAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c390ed0d3d5fce21cc69adfe513169833d8f4a43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9d12dc03357faa804c801768294321fabe559bd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482449"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933757"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Criar termsAndConditionsGroupAssignment
 
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar termsAnd
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
-|targetGroupId|String|Identificador exclusivo de um grupo ao qual a política T&C é atribuída.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
+|targetGroupId|Cadeia de caracteres|Identificador exclusivo de um grupo ao qual a política T&C é atribuída.|
 
 
 
@@ -86,7 +86,6 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 
