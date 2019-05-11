@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso windowsDefenderAdvancedThreatProtectionConfiguration
 description: Configuração de AdvancedThreatProtection do Windows Defender
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8976a0a783176c4651c10f4b641bc217e39e8e30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a61925fa1693a48474943f98888be9b8805a38a1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554216"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944079"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>Tipo de recurso windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -42,13 +42,13 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|advancedThreatProtectionOnboardingBlob|String|Blob de integração do Windows Defender AdvancedThreatProtection.|
-|advancedThreatProtectionOnboardingFilename|String|Nome do arquivo do qual o AdvancedThreatProtectionOnboardingBlob foi obtido.|
+|advancedThreatProtectionOnboardingBlob|Cadeia de caracteres|Blob de integração do Windows Defender AdvancedThreatProtection.|
+|advancedThreatProtectionOnboardingFilename|Cadeia de caracteres|Nome do arquivo do qual o AdvancedThreatProtectionOnboardingBlob foi obtido.|
 |advancedThreatProtectionAutoPopulateOnboardingBlob|Booliano|Preencher automaticamente o blob de integração programaticamente do serviço de proteção avançada contra ameaças|
 |allowSampleSharing|Booliano|Regra para "Permitir o compartilhamento de exemplo" de AdvancedThreatProtection do Windows Defender|
 |enableExpeditedTelemetryReporting|Booliano|Acelera a frequência de relatórios de telemetria da Proteção Avançada Contra Ameaças do Windows Defender.|
-|advancedThreatProtectionOffboardingBlob|String|Blob de remoção AdvancedThreatProtection do Windows Defender.|
-|advancedThreatProtectionOffboardingFilename|String|Nome do arquivo do qual o AdvancedThreatProtectionOffboardingBlob foi obtido.|
+|advancedThreatProtectionOffboardingBlob|Cadeia de caracteres|Blob de remoção AdvancedThreatProtection do Windows Defender.|
+|advancedThreatProtectionOffboardingFilename|Cadeia de caracteres|Nome do arquivo do qual o AdvancedThreatProtectionOffboardingBlob foi obtido.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -91,7 +91,6 @@ Veja a seguir uma representação JSON do recurso.
   "advancedThreatProtectionOffboardingFilename": "String"
 }
 ```
-
 
 
 

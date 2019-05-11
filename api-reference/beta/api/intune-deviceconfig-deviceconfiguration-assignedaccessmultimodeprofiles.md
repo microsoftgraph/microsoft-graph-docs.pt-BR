@@ -1,15 +1,15 @@
 ---
 title: ação assignedAccessMultiModeProfiles
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f902d8bef523b62e0bbad763ca56cfc45ede15d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2ea366c70de271dd571db64166bd858113ed7100
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469821"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927556"
 ---
 # <a name="assignedaccessmultimodeprofiles-action"></a>ação assignedAccessMultiModeProfiles
 
@@ -96,7 +96,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

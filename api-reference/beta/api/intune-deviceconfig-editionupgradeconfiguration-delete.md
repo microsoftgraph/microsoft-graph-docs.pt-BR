@@ -1,15 +1,15 @@
 ---
 title: Excluir editionUpgradeConfiguration
 description: Exclui editionUpgradeConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba7866dcff1680daf1fa000d553b62703a68c6d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b58874d1b5e6a5f232b3bb81b9ad6ba881800219
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467733"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33926737"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>Excluir editionUpgradeConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

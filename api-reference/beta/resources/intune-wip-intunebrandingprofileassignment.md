@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso intuneBrandingProfileAssignment
 description: Esta entidade contém as propriedades usadas para atribuir um perfil de identidade visual a um grupo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 731d20cff9e0504422161c00c641cf8535ef8ae0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 97c3b27c0fe42b0fe1bc3b3350bc98957e88e92b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570016"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939755"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>tipo de recurso intuneBrandingProfileAssignment
 
@@ -31,7 +31,7 @@ Esta entidade contém as propriedades usadas para atribuir um perfil de identida
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual o perfil de identidade visual está atribuído.|
 
 ## <a name="relationships"></a>Relações
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

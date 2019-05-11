@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso mobileAppDependency
 description: Descreve um tipo de dependência entre dois aplicativos móveis.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbad9cc613ff97d0f627109316d58f9f0c8f1364
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf64854db4421028d4982145a860141a7dc91f61
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551754"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949931"
 ---
 # <a name="mobileappdependency-resource-type"></a>tipo de recurso mobileAppDependency
 
@@ -34,10 +34,10 @@ Herda de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da entidade de relação. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|A ID de aplicativo do aplicativo móvel do filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayName|String|O nome de exibição do aplicativo móvel filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|DependencyType|[mobileAppDependecyType](../resources/intune-apps-mobileappdependecytype.md)|O tipo de relação de dependência entre os aplicativos pai e filho. Os valores possíveis são: `detect` e `autoInstall`.|
+|id|Cadeia de caracteres|A ID da entidade de relação. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|Cadeia de caracteres|A ID de aplicativo do aplicativo móvel do filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo móvel filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|DependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|O tipo de relação de dependência entre os aplicativos pai e filho. Os valores possíveis são: `detect` e `autoInstall`.|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho.|
 
 ## <a name="relationships"></a>Relações
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "dependentAppCount": 1024
 }
 ```
-
 
 
 

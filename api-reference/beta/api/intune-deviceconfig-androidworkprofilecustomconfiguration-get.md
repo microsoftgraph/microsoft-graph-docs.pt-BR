@@ -1,15 +1,15 @@
 ---
 title: Obter androidWorkProfileCustomConfiguration
 description: Leia as propriedades e as relações do objeto androidWorkProfileCustomConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92f6cb0343b03dfe9e917ff69adf7bb2ad0979bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c46653ddb8ffa14488c0c09b0f564a2c69ce6ba
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475232"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928565"
 ---
 # <a name="get-androidworkprofilecustomconfiguration"></a>Obter androidWorkProfileCustomConfiguration
 
@@ -94,7 +94,6 @@ Content-Length: 736
   }
 }
 ```
-
 
 
 

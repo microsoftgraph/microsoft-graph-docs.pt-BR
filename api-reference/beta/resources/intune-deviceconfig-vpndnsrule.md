@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso vpnDnsRule
 description: Definição de regra DNS de VPN.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db3be739e6ee1e7c5ebe2a5bd33af648488df54f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bdb362bcbf672f491e22e2ee7d69a7e5c243e812
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561933"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944611"
 ---
 # <a name="vpndnsrule-resource-type"></a>tipo de recurso vpnDnsRule
 
@@ -22,10 +22,10 @@ Definição de regra DNS de VPN.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|Tdomínio.|
+|nome|Cadeia de caracteres|Tdomínio.|
 |servidores|Coleção de cadeias de caracteres|Servidores.|
-|proxyServerUri|String|URI do servidor proxy.|
-|Gatilho autoTrigger|Booliano|Conectar-se automaticamente à VPN quando o dispositivo se conectar a este domínio: padrão false.|
+|proxyServerUri|Cadeia de caracteres|URI do servidor proxy.|
+|Gatilho autotrigger|Booliano|Conectar-se automaticamente à VPN quando o dispositivo se conectar a este domínio: padrão false.|
 |persistente|Booliano|Manter esta regra ativa mesmo quando a VPN não estiver conectada: false padrão|
 
 ## <a name="relationships"></a>Relações
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "persistent": true
 }
 ```
-
 
 
 

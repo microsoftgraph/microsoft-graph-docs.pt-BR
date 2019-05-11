@@ -1,15 +1,15 @@
 ---
 title: Excluir windowsManagedDevice
 description: Exclui windowsManagedDevice.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cd0ed3a818b3bc996c48a79a83bb2d8ca8057f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee814abcfb46371f797347a9f7445d12c901d48b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525268"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909257"
 ---
 # <a name="delete-windowsmanageddevice"></a>Excluir windowsManagedDevice
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

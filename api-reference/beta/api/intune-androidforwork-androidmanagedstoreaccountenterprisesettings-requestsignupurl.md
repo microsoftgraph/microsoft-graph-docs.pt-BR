@@ -1,15 +1,15 @@
 ---
 title: Ação requestSignupUrl
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4b7c0fd26994182aa7040f770f748d47994d6ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5d5ac6e1e169dd425215fe1be80972eb4bd43f44
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498169"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938969"
 ---
 # <a name="requestsignupurl-action"></a>Ação requestSignupUrl
 
@@ -83,7 +83,6 @@ Content-Length: 56
   "value": "https://example.com/requestSignupUrl/"
 }
 ```
-
 
 
 

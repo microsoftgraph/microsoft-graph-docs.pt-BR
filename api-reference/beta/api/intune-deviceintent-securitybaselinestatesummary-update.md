@@ -1,15 +1,15 @@
 ---
 title: Atualizar securityBaselineStateSummary
 description: Atualiza as propriedades de um objeto securityBaselineStateSummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5ac7e4094f415af6b2922eaa03af663d0cf0572
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f38b58d59eab1bc74b622c968cab110da39d856d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466200"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33914468"
 ---
 # <a name="update-securitybaselinestatesummary"></a>Atualizar securityBaselineStateSummary
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [securit
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |secureCount|Int32|Número de dispositivos seguros|
 |notSecureCount|Int32|Número de dispositivos não seguros|
 |unknownCount|Int32|Número de dispositivos desconhecidos|
@@ -101,7 +101,6 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
-
 
 
 

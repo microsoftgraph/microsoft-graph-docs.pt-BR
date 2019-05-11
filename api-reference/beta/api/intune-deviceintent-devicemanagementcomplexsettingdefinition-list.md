@@ -1,15 +1,15 @@
 ---
 title: Listar deviceManagementComplexSettingDefinitions
 description: Listar Propriedades e relações dos objetos deviceManagementComplexSettingDefinition.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 386b400035593c9dc2324aae4a8c917ec1b84b86
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b8ad87490780c4d030d4a4cafa5d55d177363c6f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32510035"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916619"
 ---
 # <a name="list-devicemanagementcomplexsettingdefinitions"></a>Listar deviceManagementComplexSettingDefinitions
 
@@ -103,7 +103,6 @@ Content-Length: 1006
   ]
 }
 ```
-
 
 
 

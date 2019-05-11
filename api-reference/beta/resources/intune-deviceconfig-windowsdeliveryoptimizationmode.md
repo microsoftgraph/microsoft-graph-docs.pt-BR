@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração windowsDeliveryOptimizationMode
 description: Modo de otimização de entrega para distribuição de mesmo nível
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3872b7c09c8934e95725565b83cc195d9b9d8da5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e020b4f32cc9075acab6c783b4e9df3eb19a438b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554146"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944121"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeração windowsDeliveryOptimizationMode
 
@@ -22,14 +22,13 @@ Modo de otimização de entrega para distribuição de mesmo nível
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Permite que o usuário defina.|
-|httpOnly|1 |Somente HTTP, sem emparelhamento|
-|httpWithPeeringNat|2 |Padrão de so – http combinado com emparelhamento atrás do mesmo conversor de endereço de rede|
-|httpWithPeeringPrivateGroup|3 |HTTP combinado com emparelhamento em um grupo privado|
-|httpWithInternetPeering|4 |HTTP combinado com emparelhamento da Internet|
+|UserDefined|,0|Permite que o usuário defina.|
+|httpOnly|1|Somente HTTP, sem emparelhamento|
+|httpWithPeeringNat|duas|Padrão de so – http combinado com emparelhamento atrás do mesmo conversor de endereço de rede|
+|httpWithPeeringPrivateGroup|3D|HTTP combinado com emparelhamento em um grupo privado|
+|httpWithInternetPeering|quatro|HTTP combinado com emparelhamento da Internet|
 |simpleDownload|99|Modo de download simples sem emparelhamento|
 |bypassmode|100|Modo bypass. Não usar otimização de entrega e usar BITS em vez disso|
-
 
 
 

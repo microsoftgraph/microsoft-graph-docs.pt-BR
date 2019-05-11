@@ -1,15 +1,15 @@
 ---
 title: Atualizar deviceConfigurationGroupAssignment
 description: Atualiza as propriedades de um objeto deviceConfigurationGroupAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d803ac7a3f6525b0ea947b5739c1434100a4f8a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4e114f665ea1b6cb12a0477811714040f93db778
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470248"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927479"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Atualizar deviceConfigurationGroupAssignment
 
@@ -58,8 +58,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|targetGroupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|targetGroupId|Cadeia de caracteres|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
 |excludeGroup|Booliano|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
 
 
@@ -97,7 +97,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 

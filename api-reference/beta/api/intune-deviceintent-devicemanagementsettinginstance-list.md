@@ -1,15 +1,15 @@
 ---
 title: Listar deviceManagementSettingInstances
 description: Listar Propriedades e relações dos objetos deviceManagementSettingInstance.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31378f7317a5d1f3e6d016705ae1809c2a445fa3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d02c227af57811a2dddc7939a8fb3199cf391e9b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466781"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917096"
 ---
 # <a name="list-devicemanagementsettinginstances"></a>Listar deviceManagementSettingInstances
 
@@ -78,7 +78,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

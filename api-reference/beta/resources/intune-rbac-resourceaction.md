@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso resourceAction
 description: Conjunto de ações permitidas e não permitidas para um recurso.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4cccb0b47d0d4724ebba7a4749529ccbfe5f7f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 597a9c7cdc2f04247e799772f100d1a0b778453e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566336"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939984"
 ---
 # <a name="resourceaction-resource-type"></a>Tipo de recurso resourceAction
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

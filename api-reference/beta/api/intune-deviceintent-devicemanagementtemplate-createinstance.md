@@ -1,15 +1,15 @@
 ---
 title: ação createInstance
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66203d2de8c6c3a1a7be7172ca8e70cccd708263
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: babd7aa6a9f0fe5d62e0d62bb8c9657d81e3cc0e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466606"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915997"
 ---
 # <a name="createinstance-action"></a>ação createInstance
 
@@ -35,6 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 POST /deviceManagement/templates/{deviceManagementTemplateId}/createInstance
+POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}/createInstance
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -102,7 +103,6 @@ Content-Length: 350
   }
 }
 ```
-
 
 
 

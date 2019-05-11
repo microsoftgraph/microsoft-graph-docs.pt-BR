@@ -1,15 +1,15 @@
 ---
 title: Listar iosVpnConfigurations
 description: Listar Propriedades e relações dos objetos iosVpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9001db7db9dbcb42fcc7a76b315db11dff34bdae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ebe004c36252bbe92b800606b1b4cad9da4f0ffa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519035"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923094"
 ---
 # <a name="list-iosvpnconfigurations"></a>Listar iosVpnConfigurations
 
@@ -147,7 +147,6 @@ Content-Length: 2547
   ]
 }
 ```
-
 
 
 

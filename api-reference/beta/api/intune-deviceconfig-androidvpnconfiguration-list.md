@@ -1,15 +1,15 @@
 ---
 title: Listar androidVpnConfigurations
 description: Listar Propriedades e relações dos objetos androidVpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca521264a3997783fae03c8ef0786f667a16ac08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f36c9d7cccf7326fd662d48c7c62ffa2ebce9f21
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475337"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928778"
 ---
 # <a name="list-androidvpnconfigurations"></a>Listar androidVpnConfigurations
 
@@ -111,7 +111,6 @@ Content-Length: 1339
   ]
 }
 ```
-
 
 
 

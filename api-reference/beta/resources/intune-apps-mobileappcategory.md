@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso mobileAppCategory
 description: Contém as propriedades para uma única categoria de aplicativo do Intune.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60d7468f5b353b120081d99d315ce1719bef7d4c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee6a4d90d72a7df79a19ba353448dc700ed00f68
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552831"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949973"
 ---
 # <a name="mobileappcategory-resource-type"></a>Tipo de recurso mobileAppCategory
 
@@ -31,7 +31,7 @@ Contém as propriedades para uma única categoria de aplicativo do Intune.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade.|
+|id|Cadeia de caracteres|A chave da entidade.|
 |displayName|Cadeia de caracteres|O nome da categoria do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

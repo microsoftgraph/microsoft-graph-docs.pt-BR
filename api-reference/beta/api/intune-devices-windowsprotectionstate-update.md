@@ -1,15 +1,15 @@
 ---
 title: Atualizar Windowsprotectionstate foi
 description: Atualiza as propriedades de um objeto Windowsprotectionstate foi.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b53e93f09be2b091ffe3e6a30cd109feb55c8d8a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60fbdfd6ad0ca934b97fd5410b35d2806a8fa067
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534280"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908956"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar Windowsprotectionstate foi
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do objeto de status de proteção de dispositivo. Esta é a ID do dispositivo|
+|id|Cadeia de caracteres|O identificador exclusivo do objeto de status de proteção de dispositivo. Esta é a ID do dispositivo|
 |malwareProtectionEnabled|Booliano|O anti-malware está habilitado ou não|
 |DeviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente, etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Booliano|A proteção em tempo real está habilitada ou não?|
@@ -59,15 +59,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |quickScanOverdue|Booliano|Verificação rápida em atraso ou não?|
 |fullScanOverdue|Booliano|Verificação completa em atraso ou não?|
 |signatureUpdateOverdue|Booliano|Assinatura desatualizada ou não?|
-|rebootRequired|Booliano|ReInicialização necessária ou não?|
+|rebootRequired|Booliano|Reinicialização necessária ou não?|
 |fullScanRequired|Booliano|Verificação completa necessária ou não?|
-|engineVersion|String|Versão atual do mecanismo do Endpoint Protection|
-|signatureVersion|String|Versão atual de definições de malware|
-|antiMalwareVersion|String|Versão Antimalware atual|
+|engineVersion|Cadeia de caracteres|Versão atual do mecanismo do Endpoint Protection|
+|signatureVersion|Cadeia de caracteres|Versão atual de definições de malware|
+|antiMalwareVersion|Cadeia de caracteres|Versão Antimalware atual|
 |lastQuickScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
-|lastQuickScanSignatureVersion|String|Versão da última assinatura de verificação rápida|
-|lastFullScanSignatureVersion|String|Versão da última assinatura de verificação completa|
+|lastQuickScanSignatureVersion|Cadeia de caracteres|Versão da última assinatura de verificação rápida|
+|lastFullScanSignatureVersion|Cadeia de caracteres|Versão da última assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Hora do último status de integridade do dispositivo relatado|
 
 
@@ -135,7 +135,6 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 
