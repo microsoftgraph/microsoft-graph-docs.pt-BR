@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsManagementAppHealthSummary
 description: Contém propriedades para o resumo de integridade do aplicativo de gerenciamento do Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aea7f113d144ca876b301acc3b303ac0f7072bc4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07e782cb14ab2ee4996ff8e53f61323693e00846
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520022"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941685"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>tipo de recurso windowsManagementAppHealthSummary
 
@@ -28,13 +28,13 @@ Contém propriedades para o resumo de integridade do aplicativo de gerenciamento
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de Resumo de integridade do aplicativo de gerenciamento do Windows.|
+|id|Cadeia de caracteres|Chave da entidade de Resumo de integridade do aplicativo de gerenciamento do Windows.|
 |healthyDeviceCount|Int32|Contagem de dispositivos íntegros.|
 |unhealthyDeviceCount|Int32|Contagem de dispositivos não íntegros.|
 |unknownDeviceCount|Int32|Contagem desconhecida de dispositivos.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "unknownDeviceCount": 1024
 }
 ```
-
 
 
 

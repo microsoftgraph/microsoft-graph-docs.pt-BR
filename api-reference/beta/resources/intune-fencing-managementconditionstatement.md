@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso managementConditionStatement
 description: Uma instrução de condição de gerenciamento é um grupo de condições de gerenciamento que Habilita/desabilita as configurações de dispositivo/aplicativo quando todas as condições de gerenciamento contidas são atendidas.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a90d17bd56a2fbb957bdde5ba8b159baeb3ae2e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78f2464793ac8410b3636f3ef378cfc623cc08d2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568749"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941235"
 ---
 # <a name="managementconditionstatement-resource-type"></a>tipo de recurso managementConditionStatement
 
@@ -34,7 +34,7 @@ Uma instrução de condição de gerenciamento é um grupo de condições de ger
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
-|displayName|String|O nome do administrador definido da instrução de condição de gerenciamento.|
+|displayName|Cadeia de caracteres|O nome do administrador definido da instrução de condição de gerenciamento.|
 |description|String|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a instrução de gerenciamento da condição foi criada. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço.|
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

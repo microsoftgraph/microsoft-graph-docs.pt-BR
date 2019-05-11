@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsAutopilotSettings
 description: O recurso windowsAutopilotSettings representa uma conta do Windows AutoPilot para sincronizar dados com o serviço de sincronização de dados do dispositivo Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7882a522eb3e3adcf9ebdf24e2b8f820b0f3581
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5f7893b7a9dd01a3ea7c41875f235870a5ce27f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547043"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941433"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>tipo de recurso windowsAutopilotSettings
 
@@ -29,7 +29,7 @@ O recurso windowsAutopilotSettings representa uma conta do Windows AutoPilot par
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
+|id|Cadeia de caracteres|O GUID do objeto.|
 |lastSyncDateTime|DateTimeOffset|Data e hora da última sincronização de dados com o DDS Service.|
 |lastManualSyncTriggerDateTime|DateTimeOffset|Data e hora da última sincronização de dados com o DDS Service.|
 |syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Indica o status da sincronização com o serviço de DDS (sincronização de dados do dispositivo). Os valores possíveis são: `unknown`, `inProgress`, `completed`, `failed`.|
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "syncStatus": "String"
 }
 ```
-
 
 
 

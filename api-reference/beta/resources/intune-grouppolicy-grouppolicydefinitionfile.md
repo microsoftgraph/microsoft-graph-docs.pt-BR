@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso groupPolicyDefinitionFile
 description: A entidade representa um arquivo XML ADMX (modelo administrativo). O arquivo ADMX contém uma coleção de definições de política de grupo e seus locais por caminho de categoria. O arquivo de definição de política de grupo também contém os idiomas suportados conforme determinado pelos arquivos de idioma do ADML (modelo administrativo) dependente de idioma.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ecccc683187b592c422d26a6f41bfd15b9d805b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa766eace326dd05470b753f8daf6acfa8362e6f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575993"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941132"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>tipo de recurso groupPolicyDefinitionFile
 
@@ -31,8 +31,8 @@ A entidade representa um arquivo XML ADMX (modelo administrativo). O arquivo ADM
 |displayName|String|O nome amigável localizado do arquivo ADMX.|
 |description|String|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio.|
 |languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma suportados para o arquivo ADMX.|
-|targetPrefix|String|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX.|
-|targetNamespace|String|Especifica o URI usado para identificar o namespace no arquivo ADMX.|
+|targetPrefix|Cadeia de caracteres|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX.|
+|targetNamespace|Cadeia de caracteres|Especifica o URI usado para identificar o namespace no arquivo ADMX.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso importedWindowsAutopilotDeviceIdentityState
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42726817395296945fc593552ee50154fa34d332
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4f392f011f4bfcc615f88b6ea965fbc2b47899c9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567099"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941531"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentityState
 
@@ -23,7 +23,7 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)|Status do dispositivo relatado pelo Device Directory Service (DDS). Os valores possíveis são: `unknown`, `pending`, `partial`, `complete`, `error`.|
-|deviceRegistrationId|String|ID de Registro do Dispositivo para dispositivo adicionado com êxito relatada pelo Device Directory Service (DDS).|
+|deviceRegistrationId|Cadeia de caracteres|ID de Registro do Dispositivo para dispositivo adicionado com êxito relatada pelo Device Directory Service (DDS).|
 |deviceErrorCode|Int32|Código de erro do dispositivo relatado pelo Device Directory Service (DDS).|
 |deviceErrorName|Cadeia de caracteres|Nome do erro de dispositivo relatado pelo Device Directory Service(DDS).|
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceErrorName": "String"
 }
 ```
-
 
 
 

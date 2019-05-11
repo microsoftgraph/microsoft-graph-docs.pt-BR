@@ -1,15 +1,15 @@
 ---
 title: Obter windows10EnrollmentCompletionPageConfiguration
 description: Leia as propriedades e as relações do objeto windows10EnrollmentCompletionPageConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f17fe2899efa13318d5669408775318f040af03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f71c14e5b22307ce27146459c887198e19959eb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527992"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899830"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Obter windows10EnrollmentCompletionPageConfiguration
 
@@ -90,7 +90,6 @@ Content-Length: 810
   }
 }
 ```
-
 
 
 

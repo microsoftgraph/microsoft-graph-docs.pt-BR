@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementTemplateSettingCategory
 description: Entidade que representa uma categoria de configuração de modelo
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f8974c102bcd07bb6042e703f38b59840a164b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd476adffd3608041cbfe0e9223940bfb2e29066
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562262"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943393"
 ---
 # <a name="devicemanagementtemplatesettingcategory-resource-type"></a>tipo de recurso deviceManagementTemplateSettingCategory
 
@@ -34,7 +34,7 @@ Herda de [deviceManagementSettingCategory](../resources/intune-deviceintent-devi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de categoria herdada de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|id|Cadeia de caracteres|A ID de categoria herdada de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|String|O nome da categoria herdado de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 ## <a name="relationships"></a>Relações
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
 
 
 

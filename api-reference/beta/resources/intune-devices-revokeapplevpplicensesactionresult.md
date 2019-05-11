@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso revokeAppleVppLicensesActionResult
 description: Cancelar o resultado da ação de licenças VPP da Apple
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5315c2061eafbe87b6a5292237828c65999433e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3646aa2cf790b599abdef38eb62df1118e67d9f8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526248"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941804"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>tipo de recurso revokeAppleVppLicensesActionResult
 
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "failedLicensesCount": 1024
 }
 ```
-
 
 
 

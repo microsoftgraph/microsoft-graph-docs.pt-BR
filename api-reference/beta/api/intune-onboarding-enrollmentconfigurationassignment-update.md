@@ -1,15 +1,15 @@
 ---
 title: Atualizar enrollmentConfigurationAssignment
 description: Atualizar as propriedades de um objeto enrollmentConfigurationAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f01ea1a443a656e4b426850122cde482cb6705d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca6edf132ba027dc4b0e5c30a7e827a1c9587cc6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528628"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900023"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>Atualizar enrollmentConfigurationAssignment
 
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [enrollm
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Ainda não documentado|
+|id|Cadeia de caracteres|Chave da atribuição de configuração de registro|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Representa uma atribuição para dispositivos gerenciados no locatário|
 
 
 
@@ -90,7 +90,6 @@ Content-Length: 222
   }
 }
 ```
-
 
 
 

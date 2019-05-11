@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso dataSharingConsent
 description: Informações de consentimento de compartilhamento de dados.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e1cb144957ee000a4e077f0f9c58065fad3a8dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6a062b44b24eee6a33e98be0fb3400522b4d1031
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453926"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942966"
 ---
 # <a name="datasharingconsent-resource-type"></a>tipo de recurso dataSharingConsent
 
@@ -32,16 +32,16 @@ Informações de consentimento de compartilhamento de dados.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de consentimento de compartilhamento de dados|
-|objectDisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
-|granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
+|id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
+|objectdisplayname|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|Cadeia de caracteres|O TermsUrl para o consentimento de compartilhamento de dados|
+|granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
+|grantedByUpn|Cadeia de caracteres|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|Cadeia de caracteres|O UserId do usuário que concedeu o consentimento para esta conta|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "grantedByUserId": "String"
 }
 ```
-
 
 
 

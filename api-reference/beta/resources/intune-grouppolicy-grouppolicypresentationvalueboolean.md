@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso groupPolicyPresentationValueBoolean
 description: A entidade representa um valor booliano de uma apresentação de caixa de seleção em uma definição de política.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f47087424474ea142098292d82748aeb10d6af16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f2a50495b2b68922fa738698df6e8818f0bd261
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575811"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941020"
 ---
 # <a name="grouppolicypresentationvalueboolean-resource-type"></a>tipo de recurso groupPolicyPresentationValueBoolean
 
@@ -36,7 +36,7 @@ Herda de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppol
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |value|Boolean|Um valor booliano para a apresentação associada.|
 
 ## <a name="relationships"></a>Relações
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": true
 }
 ```
-
 
 
 

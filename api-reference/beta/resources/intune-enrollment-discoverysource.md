@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração Discovery
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2506cc1c0ae8cbb623a88c3681bbbd36462a2622
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1c08304e1701c3d9abba2ee0744feb96c8a69ef4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573855"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941629"
 ---
 # <a name="discoverysource-enum-type"></a>tipo de enumeração Discovery
 
@@ -23,9 +23,8 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O Discovery é desconhecido.|
-|adminImport|2 |O dispositivo é importado por administrador.|
-|deviceEnrollmentProgram|4 |O dispositivo é adicionado pelo programa de registro de dispositivo (DEP) da Apple.|
-
+|adminImport|duas|O dispositivo é importado por administrador.|
+|deviceEnrollmentProgram|quatro|O dispositivo é adicionado pelo programa de registro de dispositivo (DEP) da Apple.|
 
 
 

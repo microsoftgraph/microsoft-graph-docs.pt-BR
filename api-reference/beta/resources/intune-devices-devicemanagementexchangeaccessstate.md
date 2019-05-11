@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração deviceManagementExchangeAccessState
 description: Estado de acesso do Exchange de dispositivo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3cbe04dee84418d43dc610253522174caad9b2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fa5a49ca352163f41ed747c4bf33c150ce2ecba9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570030"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942063"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessState
 
@@ -22,12 +22,11 @@ Estado de acesso do Exchange de dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum estado de acesso descoberto do Exchange|
-|desconhecido|1 |O estado de acesso do dispositivo ao Exchange é desconhecido|
-|autorizado|2 |O dispositivo tem acesso ao Exchange|
-|bloqueou|3 |O dispositivo está bloqueado no Exchange|
-|em quarentena|4 |O dispositivo está em quarentena no Exchange|
-
+|none|,0|Nenhum estado de acesso descoberto do Exchange|
+|desconhecido|1|O estado de acesso do dispositivo ao Exchange é desconhecido|
+|autorizado|duas|O dispositivo tem acesso ao Exchange|
+|bloqueou|3D|O dispositivo está bloqueado no Exchange|
+|em quarentena|quatro|O dispositivo está em quarentena no Exchange|
 
 
 

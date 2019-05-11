@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração managedDeviceRemoteAction
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c619a45f1ddfe20654c208fed424631e4d3e183c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: afe1984ac9d5503bb795ae625b340ad3637f1ead
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521310"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941944"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>tipo de enumeração managedDeviceRemoteAction
 
@@ -23,11 +23,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Ative|,0|Ainda não documentado|
-|delete|1 |Ainda não documentado|
-|fullScan|2 |Ainda não documentado|
-|quickScan|3 |Ainda não documentado|
-|signatureUpdate|4 |Ainda não documentado|
-
+|delete|1|Ainda não documentado|
+|fullScan|duas|Ainda não documentado|
+|quickScan|3D|Ainda não documentado|
+|signatureUpdate|quatro|Ainda não documentado|
+|revelar|0,5|Ainda não documentado|
 
 
 

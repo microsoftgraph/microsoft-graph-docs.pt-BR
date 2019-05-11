@@ -1,15 +1,15 @@
 ---
 title: Obter userPFXCertificate
 description: Leia as propriedades e as relações do objeto userPFXCertificate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 339f7662beae46c2c8513a59bd84c6b66d06a256
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9d1b8c0464f74f9c88288f9c71fe1cbff1aac690
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527977"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899757"
 ---
 # <a name="get-userpfxcertificate"></a>Obter userPFXCertificate
 
@@ -86,6 +86,7 @@ Content-Length: 742
   }
 }
 ```
+
 
 
 

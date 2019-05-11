@@ -1,15 +1,15 @@
 ---
 title: Listar organizations
 description: Listar propriedades e relações de objetos de organização.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 067489dad7e08053cd4e6004f1e8b20fca479853
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b817607138399d10bdb96debfba1766e42818082
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528502"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899967"
 ---
 # <a name="list-organizations"></a>Listar organizations
 
@@ -83,7 +83,6 @@ Content-Length: 622
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsManagementAppHealthState
 description: Entidade de estado de integridade do aplicativo de gerenciamento do Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c02904a5a4cc4d0242c35e487d30f2b2ed6083a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b443c95b363e926777150013e20bef4bc8bc602d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519994"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942168"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>tipo de recurso windowsManagementAppHealthState
 
@@ -31,15 +31,15 @@ Entidade de estado de integridade do aplicativo de gerenciamento do Windows.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o estado de integridade do aplicativo de gerenciamento do Windows|
+|id|Cadeia de caracteres|Identificador exclusivo para o estado de integridade do aplicativo de gerenciamento do Windows|
 |HealthState|[HealthState](../resources/intune-devices-healthstate.md)|Estado de integridade do aplicativo de gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Versão instalada do aplicativo de gerenciamento do Windows.|
+|installedVersion|Cadeia de caracteres|Versão instalada do aplicativo de gerenciamento do Windows.|
 |lastCheckInDateTime|DateTimeOffset|Tempo de check-in do aplicativo de gerenciamento do Windows por último.|
 |deviceName|String|Nome do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
-|deviceOSVersion|String|Versão do Windows 10 so do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
+|deviceOSVersion|Cadeia de caracteres|Versão do Windows 10 so do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceOSVersion": "String"
 }
 ```
-
 
 
 

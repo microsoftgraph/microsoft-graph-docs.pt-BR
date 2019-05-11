@@ -1,15 +1,15 @@
 ---
 title: função getLicensesForApp
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc97c48b7c4b5505808d8370e7181f2d7ca0d0ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e36c1d64af268a9f489a13f1cc3374b08c8fb4c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528026"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899778"
 ---
 # <a name="getlicensesforapp-function"></a>função getLicensesForApp
 
@@ -84,7 +84,6 @@ Content-Length: 298
   ]
 }
 ```
-
 
 
 

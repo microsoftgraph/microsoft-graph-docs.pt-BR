@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração groupPolicyDefinitionClassType
 description: Tipo de classe de definição de política de grupo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e57ff5928cb0ddd9c4ff507c7a39d2f559204eb9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6a8a59cb8838b74c4bed0c005f8928b9770b770a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575748"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941139"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>tipo de enumeração groupPolicyDefinitionClassType
 
@@ -23,8 +23,7 @@ Tipo de classe de definição de política de grupo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |user|,0|Identifica o posicionamento da configuração de política no nó Configuração do usuário.|
-|máquina|1 |Identifica o posicionamento da configuração de política no nó Configuração do computador.|
-
+|máquina|1|Identifica o posicionamento da configuração de política no nó Configuração do computador.|
 
 
 

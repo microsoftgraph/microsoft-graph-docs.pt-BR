@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração wiFiAuthenticationMethod
 description: Método de autenticação Wi-Fi.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e3bc52b5f12eb3cc57f6e0b9db8b93a22c2c4ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e976a855203ddb257480d986c7a8cfe38c9dafdd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555021"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944464"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>tipo de enumeração wiFiAuthenticationMethod
 
@@ -23,8 +23,8 @@ Método de autenticação Wi-Fi.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |certificado|,0|Use um certificado de identidade para autenticação.|
-|usernameAndPassword|1 |Usar nome de usuário e senha para autenticação.|
-
+|usernameAndPassword|1|Usar nome de usuário e senha para autenticação.|
+|derivedCredential|duas|Usar nome de usuário e senha para autenticação.|
 
 
 

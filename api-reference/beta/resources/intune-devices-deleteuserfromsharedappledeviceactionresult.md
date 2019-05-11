@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso deleteUserFromSharedAppleDeviceActionResult
 description: Resultado de ação de excluir o usuário do dispositivo compartilhado da Apple
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90dec4f79d44d4441d23bdba649ddeb3caa311a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a86128b3bb8f863c21225567c91dc0a9938bc7b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454027"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942175"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>Tipo de recurso deleteUserFromSharedAppleDeviceActionResult
 
@@ -29,10 +29,10 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado da ação herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|userPrincipalName|String|Nome da entidade de segurança do usuário a ser excluído|
+|userPrincipalName|Cadeia de caracteres|Nome da entidade de segurança do usuário a ser excluído|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

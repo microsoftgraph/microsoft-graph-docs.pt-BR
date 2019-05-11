@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso deviceOperatingSystemSummary
 description: Resumo do sistema operacional do dispositivo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13bfc5d8d4e85f31b178801becd56e744a40c106
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d53d9fdfcf3dfcc86f40ccadb3d71bdbd6b8686b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521352"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942035"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 
@@ -30,7 +30,7 @@ Resumo do sistema operacional do dispositivo.
 |unknownCount|Int32|Número da contagem de dispositivos desconhecidos.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "unknownCount": 1024
 }
 ```
-
 
 
 

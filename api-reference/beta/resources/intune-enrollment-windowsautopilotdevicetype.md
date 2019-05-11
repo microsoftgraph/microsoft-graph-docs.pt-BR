@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração windowsAutopilotDeviceType
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c5903342895075ea5521bf6d121920b9c323055
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 283aec39e25d09ea40f39fee3b35ac491d0ff228
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547001"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941440"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>tipo de enumeração windowsAutopilotDeviceType
 
@@ -23,8 +23,7 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |windowsPc|,0|PC Windows|
-|surfaceHub2|1 |Surface Hub 2|
-
+|surfaceHub2|1|Surface Hub 2|
 
 
 

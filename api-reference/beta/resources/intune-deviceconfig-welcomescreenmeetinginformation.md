@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração welcomeScreenMeetingInformation
 description: Valores possíveis para informações de reunião de tela de boas-vindas.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b967a654bfda0a0afe44496654412496984e356
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 38f31b1306ed7e46e6f1aba8cc8ff04421d06a3f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555049"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944457"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>tipo de enumeração welcomeScreenMeetingInformation
 
@@ -22,10 +22,9 @@ Valores possíveis para informações de reunião de tela de boas-vindas.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|showOrganizerAndTimeOnly|1 |Mostrar somente organizador e hora.|
-|showOrganizerAndTimeAndSubject|2 |Mostrar organizador, hora e assunto (o assunto está oculto para reuniões privadas).|
-
+|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|showOrganizerAndTimeOnly|1|Mostrar somente organizador e hora.|
+|showOrganizerAndTimeAndSubject|duas|Mostrar organizador, hora e assunto (o assunto está oculto para reuniões privadas).|
 
 
 

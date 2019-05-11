@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração de enrollmentid
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4826ae7cc0bfc53338212d812c293e5577d0ae02
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78038fc9a279536c1e68708b767c6b7c81e4e4df
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579188"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941573"
 ---
 # <a name="enrollmentstate-enum-type"></a>tipo de enumeração de enrollmentid
 
@@ -23,12 +23,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O estado do registro do dispositivo é desconhecido|
-|registrados|1 |O dispositivo está inscrito.|
-|pendingReset|2 |Inscrito, mas ele está inscrito via perfil de registro e o perfil inscrito é diferente do perfil atribuído.|
-|falhou|3 |Não registrado e o registro de falha de registro.|
-|Não contatado|4 |O dispositivo é importado, mas não está inscrito.|
-|bloqueou|5 |O dispositivo está inscrito como um não-usuário, mas é impedido de migrar para o registro do usuário porque o aplicativo não pôde ser instalado.|
-
+|registrados|1|O dispositivo está inscrito.|
+|pendingReset|duas|Inscrito, mas ele está inscrito via perfil de registro e o perfil inscrito é diferente do perfil atribuído.|
+|falhou|3D|Não registrado e o registro de falha de registro.|
+|Não contatado|quatro|O dispositivo é importado, mas não está inscrito.|
+|bloqueou|0,5|O dispositivo está inscrito como um não-usuário, mas é impedido de migrar para o registro do usuário porque o aplicativo não pôde ser instalado.|
 
 
 

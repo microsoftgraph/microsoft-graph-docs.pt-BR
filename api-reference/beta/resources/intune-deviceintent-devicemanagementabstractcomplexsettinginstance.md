@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementAbstractComplexSettingInstance
 description: Uma instância de configuração representando um valor complexo para uma configuração abstrata
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef69bbf34cb4f273f7c9caea529072b369266189
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e254833f6381643afad250e7d61a4bb42b8098b9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523550"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943533"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>tipo de recurso deviceManagementAbstractComplexSettingInstance
 
@@ -34,10 +34,10 @@ Herda de [deviceManagementSettingInstance](../resources/intune-deviceintent-devi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da instância de configuração herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|DefinitionId|String|A ID da definição de configuração dessa instância herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|valueJson|String|Representação JSON do valor herdado de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|implementationid|String|A ID de definição da implementação escolhida dessa configuração complexa|
+|id|Cadeia de caracteres|A ID da instância de configuração herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|DefinitionId|Cadeia de caracteres|A ID da definição de configuração dessa instância herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|valueJson|Cadeia de caracteres|Representação JSON do valor herdado de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|implementationid|Cadeia de caracteres|A ID de definição da implementação escolhida dessa configuração complexa|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "implementationId": "String"
 }
 ```
-
 
 
 

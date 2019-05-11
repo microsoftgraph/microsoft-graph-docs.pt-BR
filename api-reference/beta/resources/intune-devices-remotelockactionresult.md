@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso remoteLockActionResult
 description: Resultado da ação de bloquear com um pin para desbloquear
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b16a99c793d60de04201fc057a58da122c83fd6c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8a8da7d99425e35c937250eee8a36ba005a133af
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526157"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941741"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Tipo de recurso remoteLockActionResult
 
@@ -25,7 +25,7 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|actionName|String|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionName|Cadeia de caracteres|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado da ação herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora em que o estado da ação foi atualizado pela última vez, herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "unlockPin": "String"
 }
 ```
-
 
 
 

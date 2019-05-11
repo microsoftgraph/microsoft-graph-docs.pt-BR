@@ -1,15 +1,15 @@
 ---
 title: Criar groupPolicyPresentationValueBoolean
 description: Criar um novo objeto groupPolicyPresentationValueBoolean.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3cb89bac8c8d934e1c2ce602c68c0fcffcd1a1a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9e9f9924f76a0621947d1012eba89713abb9bcf7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530820"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904493"
 ---
 # <a name="create-grouppolicypresentationvalueboolean"></a>Criar groupPolicyPresentationValueBoolean
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |value|Boolean|Um valor booliano para a apresentação associada.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 267
   "value": true
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração deviceManagementSubscriptions
 description: Assinaturas de gerenciamento de dispositivo móvel de locatário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e17823eb8fd07c9e7a624db425ef55540e43c96
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 182b288fc84dfb4b98c4b810618ac09bfdbefa0d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522416"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942182"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>tipo de enumeração deviceManagementSubscriptions
 
@@ -22,13 +22,12 @@ Assinaturas de gerenciamento de dispositivo móvel de locatário.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhuma|
-|Intune|1 |Assinatura do Microsoft Intune|
-|Office365|2 |Assinatura do Office365|
-|intunePremium|4 |Assinatura do Microsoft Intune Premium|
+|none|,0|Nenhuma|
+|Intune|1|Assinatura do Microsoft Intune|
+|Office365|duas|Assinatura do Office365|
+|intunePremium|quatro|Assinatura do Microsoft Intune Premium|
 |intune_EDU|8 |Assinatura do Microsoft Intune para educação|
-|intune_SMB|16 |Assinatura do Microsoft Intune para pequenas empresas|
-
+|intune_SMB|dezesseis|Assinatura do Microsoft Intune para pequenas empresas|
 
 
 

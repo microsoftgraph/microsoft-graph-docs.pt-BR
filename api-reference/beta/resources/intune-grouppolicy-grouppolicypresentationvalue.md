@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso groupPolicyPresentationValue
 description: A entidade de valor de apresentação base que armazena o valor de uma única apresentação de política de grupo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d4f3d1493e85708335797252301b451f5e41520
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fbfdd15ab81e6da03a95f2cec9073e06f70c799b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575846"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941034"
 ---
 # <a name="grouppolicypresentationvalue-resource-type"></a>tipo de recurso groupPolicyPresentationValue
 
@@ -33,7 +33,7 @@ A entidade de valor de apresentação base que armazena o valor de uma única ap
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
-
 
 
 

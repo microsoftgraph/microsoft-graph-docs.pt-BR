@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso windowsDeviceAzureADAccount
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2432ce2b1991be495a042af1ffde6467c0344621
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 73dfbc0d80186cd83ec20fec15a154594d027ad3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549358"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942154"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>Tipo de recurso windowsDeviceAzureADAccount
 
@@ -26,7 +26,7 @@ Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |password|String|Ainda não documentado. Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|userPrincipalName|String|Ainda não documentado|
+|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

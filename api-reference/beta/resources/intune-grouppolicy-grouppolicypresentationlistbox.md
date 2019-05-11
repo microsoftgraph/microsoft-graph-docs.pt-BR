@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso groupPolicyPresentationListBox
 description: Representa um elemento listBox do ADMX e um elemento de lista ADMX.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c2318a827e4056fac2f6b984ddf4e43405a06c2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3656e8da07558727c31b0333d0318854f7305300
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575762"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941069"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>tipo de recurso groupPolicyPresentationListBox
 
@@ -34,8 +34,8 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |explicitValue|Booliano|Se essa opção for especificada true, o usuário deverá especificar o valor da subchave do registro e o nome da subchave do registro. A caixa de listagem mostra duas colunas, uma para o nome e outra para os dados. O valor padrão é falso.|
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "explicitValue": true
 }
 ```
-
 
 
 

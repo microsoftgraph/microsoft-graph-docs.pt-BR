@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração compliancestate
 description: Estado de conformidade.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c462df866b3c711bf4738c70ad4a1b0d68ceeb4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6dc39839754f24ae25044b0aa249d61fe2655d68
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549122"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943030"
 ---
 # <a name="compliancestate-enum-type"></a>tipo de enumeração compliancestate
 
@@ -23,13 +23,12 @@ Estado de conformidade.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|com|1 |Com.|
-|incompatível|2 |O dispositivo não está em conformidade e é bloqueado de recursos corporativos.|
-|apresentar|3 |Conflito com outras regras.|
-|erro|4 |Erro|
+|com|1|Com.|
+|incompatível|duas|O dispositivo não está em conformidade e é bloqueado de recursos corporativos.|
+|apresentar|3D|Conflito com outras regras.|
+|erro|quatro|Erro|
 |inGracePeriod|254|O dispositivo não está em conformidade, mas ainda tem acesso aos recursos corporativos|
 |configmanager|255|Gerenciado pelo Gerenciador de configuração|
-
 
 
 

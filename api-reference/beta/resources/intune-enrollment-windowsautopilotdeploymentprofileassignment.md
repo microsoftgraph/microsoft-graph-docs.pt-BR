@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsAutopilotDeploymentProfileAssignment
 description: Uma atribuição de um perfil de implantação do piloto automático do Windows a um grupo do AAD.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9c5106393fa49f6d3260ee6cdfd57a9422a2d99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 155bd4f65daa81ef164dbc76e22a624a018a422e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567106"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941454"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfileAssignment
 
@@ -31,7 +31,7 @@ Uma atribuição de um perfil de implantação do piloto automático do Windows 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da atribuição.|
+|id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição para o perfil de implantação do piloto automático do Windows.|
 
 ## <a name="relationships"></a>Relações
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

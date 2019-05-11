@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementEnumValue
 description: Informações de definição para um valor de enumeração
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9fdddac077caa15fec5cbd516930747ef948665a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 016c20153d7e4d9e970d5c10038aad4616a8e952
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523319"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943452"
 ---
 # <a name="devicemanagementenumvalue-resource-type"></a>tipo de recurso deviceManagementEnumValue
 
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
 
 
 

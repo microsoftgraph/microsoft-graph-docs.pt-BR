@@ -1,15 +1,15 @@
 ---
 title: Atualizar managedMobileApp
 description: Atualizar as propriedades de um objeto managedMobileApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7912fc159257fd1d416fd8f8b6b1d1dc05e6086c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 91291c18ecf5e66c865d6ca5e52a93c8902064ca
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529601"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903228"
 ---
 # <a name="update-managedmobileapp"></a>Atualizar managedMobileApp
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador de um aplicativo com seu tipo de sistema operacional.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 
@@ -96,7 +96,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
 
 
 

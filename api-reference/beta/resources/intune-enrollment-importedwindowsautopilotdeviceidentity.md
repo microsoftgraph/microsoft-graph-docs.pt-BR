@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso importedWindowsAutopilotDeviceIdentity
 description: Dispositivos importados do Windows AutoPilot.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50fd9d25faa4b7f1dc244701977bf6c71cd82974
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70cdc846424941ea98fefdb23da0886930498f75
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567050"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941559"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentity
 
@@ -32,13 +32,14 @@ Dispositivos importados do Windows AutoPilot.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
-|orderIdentifier|String|ID do pedido do dispositivo do Windows AutoPilot.|
+|id|Cadeia de caracteres|O GUID do objeto.|
+|orderIdentifier|Cadeia de caracteres|ID do pedido do dispositivo do Windows AutoPilot.|
 |serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|importid|String|A ID de importação do dispositivo do Windows AutoPilot.|
+|importid|Cadeia de caracteres|A ID de importação do dispositivo do Windows AutoPilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
+|assignedUserPrincipalName|Cadeia de caracteres|UPN do usuário que o dispositivo será atribuído|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -66,10 +67,10 @@ Veja a seguir uma representação JSON do recurso.
     "deviceRegistrationId": "String",
     "deviceErrorCode": 1024,
     "deviceErrorName": "String"
-  }
+  },
+  "assignedUserPrincipalName": "String"
 }
 ```
-
 
 
 

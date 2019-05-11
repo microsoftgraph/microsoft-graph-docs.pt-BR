@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsAutopilotDeploymentProfile
 description: Perfil de implantação do Windows AutoPilot
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f82d48422ecff99f106d4a62b07ac8532cb546c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0596f4cd23c98b271c5e463a973dcfd29cee6dad
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546994"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941461"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfile
 
@@ -37,9 +37,10 @@ Perfil de implantação do Windows AutoPilot
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Configuração de experiência inicial da caixa|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Configuração da tela status do registro|
 |extractHardwareHash|Booliano|Extração HardwareHash para o perfil|
-|deviceNameTemplate|String|O modelo usado para nomear o dispositivo de piloto automático. Pode ser um texto personalizado e também pode conter o número de série do dispositivo ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo não pode ter mais de 15 caracteres.|
+|deviceNameTemplate|Cadeia de caracteres|O modelo usado para nomear o dispositivo de piloto automático. Pode ser um texto personalizado e também pode conter o número de série do dispositivo ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo não pode ter mais de 15 caracteres.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|O tipo de dispositivo piloto automático ao qual esse perfil se aplica. Os valores possíveis são: `windowsPc` e `surfaceHub2`.|
 |enableWhiteGlove|Booliano|Habilite o Glove branco do piloto automático para o perfil.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo para o perfil.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -86,10 +87,12 @@ Veja a seguir uma representação JSON do recurso.
   "extractHardwareHash": true,
   "deviceNameTemplate": "String",
   "deviceType": "String",
-  "enableWhiteGlove": true
+  "enableWhiteGlove": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

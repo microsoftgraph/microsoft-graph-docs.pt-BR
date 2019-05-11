@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementScriptDeviceState
 description: Contém propriedades para o estado de execução do dispositivo do script de gerenciamento de dispositivos.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b985b7641d66c806acc544174fffff4a2216421a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 18e9e78898671d2c64381f7c3f4fa597ca862456
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522437"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942112"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>tipo de recurso deviceManagementScriptDeviceState
 
@@ -31,9 +31,9 @@ Contém propriedades para o estado de execução do dispositivo do script de ger
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos.|
+|id|Cadeia de caracteres|Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado da última execução do script de gerenciamento de dispositivos. Os valores possíveis são: `unknown`, `success`, `fail`.|
-|resultMessage|String|Detalhes da saída de execução.|
+|resultMessage|Cadeia de caracteres|Detalhes da saída de execução.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivos é executado.|
 |errorCode|Int32|Código de erro correspondente à execução errada do script de gerenciamento de dispositivos.|
 |errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução errada do script de gerenciamento de dispositivo.|
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "errorDescription": "String"
 }
 ```
-
 
 
 

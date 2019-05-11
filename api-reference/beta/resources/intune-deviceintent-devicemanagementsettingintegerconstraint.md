@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementSettingIntegerConstraint
 description: Restrição que impõe o intervalo de valor permitido para uma configuração de inteiro
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9bf28c3f3942e99841b43f1cd7ff5304fd81d800
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c58572b1fb30a3270b58070f917c90a38a4ddd72
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550683"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943414"
 ---
 # <a name="devicemanagementsettingintegerconstraint-resource-type"></a>tipo de recurso deviceManagementSettingIntegerConstraint
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "maximumValue": 1024
 }
 ```
-
 
 
 

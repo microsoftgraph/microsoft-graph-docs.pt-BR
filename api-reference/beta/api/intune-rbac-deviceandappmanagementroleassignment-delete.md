@@ -1,15 +1,15 @@
 ---
 title: Excluir deviceAndAppManagementRoleAssignment
 description: Exclui deviceAndAppManagementRoleAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 029962799e717b58df68ddb56168d95e726beba9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 27e8966f2d29754b8f09040ec43a43bff02ad5d7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527921"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899673"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>Excluir deviceAndAppManagementRoleAssignment
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

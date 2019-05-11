@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso managementConditionExpressionModel
 description: Um modelo de expressão de condição de gerenciamento é uma representação de modelo de uma expressão de condição de gerenciamento.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54dda054e82749b91c1f84b027a1a798b06a1e98
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: df3098ac3a83b2080e11be3701b06b7462019e17
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568840"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941272"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>tipo de recurso managementConditionExpressionModel
 
@@ -41,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.managementConditionExpressionModel"
 }
 ```
-
 
 
 

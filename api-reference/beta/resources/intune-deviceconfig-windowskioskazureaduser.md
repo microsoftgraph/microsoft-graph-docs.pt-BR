@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsKioskAzureADUser
 description: A classe usada para identificar uma conta de usuário do AzureAD para a configuração do quiosque
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93a47ba1bafe8f2070eedb028cb0eaa64808d03d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 96d91f585d8c762a2e1080d38bfd7cebb75e3acc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522486"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943941"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>tipo de recurso windowsKioskAzureADUser
 
@@ -26,10 +26,10 @@ Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |userId|String|A ID do usuário do AzureAD que será bloqueada para esta configuração de quiosque|
-|userPrincipalName|String|As contas de usuário que serão bloqueadas para esta configuração de quiosque|
+|userPrincipalName|Cadeia de caracteres|As contas de usuário que serão bloqueadas para esta configuração de quiosque|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso osVersionCount
 description: Contagem de dispositivos com malware para cada versão do sistema operacional
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7df4f920335c579e2e17cdeb275cc0545887f1d4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa6c8c117fa7cfb9f131d00cff1fe55a21be37ce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578726"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941768"
 ---
 # <a name="osversioncount-resource-type"></a>tipo de recurso osVersionCount
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdateDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

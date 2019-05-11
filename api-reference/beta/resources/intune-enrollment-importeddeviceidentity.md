@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso importedDeviceIdentity
 description: O recurso importedDeviceIdentity representa uma identidade de hardware exclusiva de um dispositivo que foi pré-configurado para configuração de pré-registro.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7cc903fa1b30177f037493fe090ebfde31831b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 197f4d9fd3377e6359d93a75ac36c8c15be3e0f5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550725"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941524"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>tipo de recurso importedDeviceIdentity
 
@@ -34,8 +34,8 @@ O recurso importedDeviceIdentity representa uma identidade de hardware exclusiva
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|ID da identidade do dispositivo importado|
-|importedDeviceIdentifier|String|Identificador de dispositivo imPortado|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de identidade de dispositivo imPortada. Os valores possíveis são: `unknown`, `imei`, `serialNumber`.|
+|importedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo importado|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de identidade de dispositivo importada. Os valores possíveis são: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da descrição|
 |createdDateTime|DateTimeOffset|Data e hora de criação do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do dispositivo|
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "platform": "String"
 }
 ```
-
 
 
 

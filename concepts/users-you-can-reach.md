@@ -4,18 +4,18 @@ description: 'A Microsoft oferece soluções e serviços que ampliam a vida mode
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f68023bb86ee08defb10c9b955e5691e07ea3ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1f20db2c626c7af2f042cf4916d2be37dda4b184
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575944"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951233"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Usuários que você pode alcançar com o Microsoft Graph
 
-A Microsoft oferece soluções e serviços que ampliam a vida moderna e o trabalho atual. 
+A Microsoft oferece soluções e serviços que ampliam a vida moderna e o trabalho atual.
 
-Como desenvolvedor, você pode usar a API do Microsoft Graph para criar aplicativos que se conectam a milhões de usuários que usam os produtos de nuvem da Microsoft para o trabalho, a escola e produtividade pessoal. 
+Como desenvolvedor, você pode usar a API do Microsoft Graph para criar aplicativos que se conectam a milhões de usuários que usam os produtos de nuvem da Microsoft para o trabalho, a escola e produtividade pessoal.
 
 ## <a name="connect-to-personal-services"></a>Conectar-se aos serviços pessoais
 
@@ -26,8 +26,8 @@ Use o Microsoft Graph para alcançar usuários com contas pessoais da Microsoft,
 Use o Microsoft Graph para alcançar usuários e organizações que têm licenças para os serviços do Microsoft 365 para negócios, empresas ou educação. Esses serviços do Microsoft 365 incluem:
 
 -   Office 365
--   Enterprise Mobility + Security 
--   Windows 10 
+-   Enterprise Mobility + Security
+-   Windows 10
 
 Com o consentimento deles, você pode usar o Microsoft Graph para obter acesso aos dados de usuários e organizacionais de acordo com os serviços para os quais eles têm licenças e os serviços e recursos disponíveis no Microsoft Graph. Para saber mais, veja os [principais serviços e recursos do Microsoft Graph](overview-major-services.md).
 
@@ -48,6 +48,6 @@ Use o Microsoft Graph para alcançar alunos, professores e escolas que tenham li
 - Confira alguns [Cenários em destaque](https://developer.microsoft.com/graph/examples).
 - Experimente um exemplo de solicitação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Use o [início rápido](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de exemplo pronto para funcionar.
-- Consulte o item **Saiba mais** no índice para ler sobre os serviços e recursos que você pode usar em seus cenários. 
-- Descubra como [obter um token de autenticação](auth-overview.md) em seu aplicativo.
+- Consulte o item **Saiba mais** no índice para ler sobre os serviços e recursos que você pode usar em seus cenários.
+- Descubra como [obter um token de autenticação](/graph/auth) em seu aplicativo.
 - Comece a [usar a API](use-the-api.md).

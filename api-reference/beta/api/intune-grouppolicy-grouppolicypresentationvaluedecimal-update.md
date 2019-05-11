@@ -1,15 +1,15 @@
 ---
 title: Atualizar groupPolicyPresentationValueDecimal
 description: Atualiza as propriedades de um objeto groupPolicyPresentationValueDecimal.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef618622393e91048a06102aab842a5b43741ce1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ccc1d88a88a89a2f85a653df06fd90aea0dfbe0d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530792"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904374"
 ---
 # <a name="update-grouppolicypresentationvaluedecimal"></a>Atualizar groupPolicyPresentationValueDecimal
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |valor|Int64|Um valor inteiro não assinado para a apresentação associada.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 264
   "value": 5
 }
 ```
-
 
 
 
