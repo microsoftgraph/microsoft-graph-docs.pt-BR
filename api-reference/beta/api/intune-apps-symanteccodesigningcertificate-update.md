@@ -1,15 +1,15 @@
 ---
 title: Atualizar symantecCodeSigningCertificate
 description: Atualiza as propriedades de um objeto symantecCodeSigningCertificate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d21f72c62bd31bb25312e2b86835c339807d81ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: adc2f49931b4a8d5938874d8f23bce6329eaf174
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488775"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934947"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Atualizar symantecCodeSigningCertificate
 
@@ -51,13 +51,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [symante
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|conteúdo|Binary|O certificado de assinatura de código Symantec do Windows no formato de dados brutos.|
+|conteúdo|Binária|O certificado de assinatura de código Symantec do Windows no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |password|String|A senha necessária para o arquivo. pfx.|
-|SubjectName|String|O nome da entidade do certificado.|
-|Assunto|String|O valor de entidade para o certificado.|
-|issuerName|String|O nome do emissor do certificado.|
-|emissor|String|O valor do emissor para o certificado.|
+|SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
+|subject|Cadeia de caracteres|O valor de entidade para o certificado.|
+|issuerName|Cadeia de caracteres|O nome do emissor do certificado.|
+|emissor|Cadeia de caracteres|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
 |uploadDateTime|DateTimeOffset|O tipo do certificado de codeSignação como CERT da Symantec.|
 
@@ -110,7 +110,6 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Excluir settingStateDeviceSummary
 description: Exclui settingStateDeviceSummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ecbb7c6bbd4329c65635063b7fd977c448b6b11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c0da756e38b95beacaebaf7e919400ae7cb6d789
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518132"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922070"
 ---
 # <a name="delete-settingstatedevicesummary"></a>Excluir settingStateDeviceSummary
 
@@ -71,7 +71,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

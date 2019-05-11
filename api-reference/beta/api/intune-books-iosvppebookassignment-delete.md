@@ -1,15 +1,15 @@
 ---
 title: Excluir iosVppEBookAssignment
 description: Exclui iosVppEBookAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8027f3503a85ee85bf962b5ae6823f23c46b8134
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1292630f1d2db1c7c30e6dc4eb71ca2039230a62
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483632"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934268"
 ---
 # <a name="delete-iosvppebookassignment"></a>Excluir iosVppEBookAssignment
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

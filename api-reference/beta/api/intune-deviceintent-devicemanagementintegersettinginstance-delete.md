@@ -1,15 +1,15 @@
 ---
 title: Excluir deviceManagementIntegerSettingInstance
 description: Exclui deviceManagementIntegerSettingInstance.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce9bfd2eb8c7cec359964184ca2ef8625246ed95
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 77a76654e4ec0f71800cd22d5a89dd600d863527
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509419"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916399"
 ---
 # <a name="delete-devicemanagementintegersettinginstance"></a>Excluir deviceManagementIntegerSettingInstance
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

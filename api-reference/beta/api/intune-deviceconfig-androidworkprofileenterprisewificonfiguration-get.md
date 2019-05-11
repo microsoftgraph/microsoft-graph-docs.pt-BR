@@ -1,15 +1,15 @@
 ---
 title: Obter androidWorkProfileEnterpriseWiFiConfiguration
 description: Leia as propriedades e as relações do objeto androidWorkProfileEnterpriseWiFiConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 064ccab43e12be908b7ac2876eb56a577faa411d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd5afddce8b2815c0437641f45eafd6fb84f5199
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475218"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928579"
 ---
 # <a name="get-androidworkprofileenterprisewificonfiguration"></a>Obter androidWorkProfileEnterpriseWiFiConfiguration
 
@@ -95,7 +95,6 @@ Content-Length: 1009
   }
 }
 ```
-
 
 
 

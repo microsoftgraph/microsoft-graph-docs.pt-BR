@@ -1,15 +1,15 @@
 ---
 title: Excluir windowsPhone81CompliancePolicy
 description: Exclui windowsPhone81CompliancePolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e0888d16d7f8d51a404e28fc11e01488e372745
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1ebd5dfb8eab21bd04a9ee8d502fa7b9ee8202cb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32513318"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917895"
 ---
 # <a name="delete-windowsphone81compliancepolicy"></a>Excluir windowsPhone81CompliancePolicy
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Excluir defaultDeviceCompliancePolicy
 description: Exclui defaultDeviceCompliancePolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66d40554473bc17314dd1033a1f3a1a234469a49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 40b7c0b9fe9badb4a1fe81c793555d7ea5ebce3c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471599"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928040"
 ---
 # <a name="delete-defaultdevicecompliancepolicy"></a>Excluir defaultDeviceCompliancePolicy
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

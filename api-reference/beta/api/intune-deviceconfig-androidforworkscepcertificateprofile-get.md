@@ -1,15 +1,15 @@
 ---
 title: Obter androidForWorkScepCertificateProfile
 description: Leia as propriedades e as relações do objeto androidForWorkScepCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e0199fb4a47aa953a9408a5bc6a74cfda86c025
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa0708960a5ed0227157a0d2255b186dcc98582c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478361"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33932917"
 ---
 # <a name="get-androidforworkscepcertificateprofile"></a>Obter androidForWorkScepCertificateProfile
 
@@ -113,7 +113,6 @@ Content-Length: 1474
   }
 }
 ```
-
 
 
 

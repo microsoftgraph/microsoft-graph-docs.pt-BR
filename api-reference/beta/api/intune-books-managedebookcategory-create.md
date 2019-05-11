@@ -1,15 +1,15 @@
 ---
 title: Criar managedEBookCategory
 description: Criar um novo objeto managedEBookCategory.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c63b42f066e2e61a0e54bc3aca4a6d41685dd9bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 511ca7a903668af49217999680ca20ccebce7c83
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483268"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934151"
 ---
 # <a name="create-managedebookcategory"></a>Criar managedEBookCategory
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade.|
+|id|Cadeia de caracteres|A chave da entidade.|
 |displayName|String|O nome da categoria eBook.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o ManagedEBookCategory foi modificado pela última vez.|
 
@@ -89,7 +89,6 @@ Content-Length: 215
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

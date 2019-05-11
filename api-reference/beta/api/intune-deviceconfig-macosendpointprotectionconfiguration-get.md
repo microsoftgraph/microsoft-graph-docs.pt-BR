@@ -1,15 +1,15 @@
 ---
 title: Obter macOSEndpointProtectionConfiguration
 description: Leia as propriedades e as relações do objeto macOSEndpointProtectionConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e2855128c3f3915a409f5436653277cd46db59e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8a31bb8df9e8274a7d954456e3284521edc36a89
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518769"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922589"
 ---
 # <a name="get-macosendpointprotectionconfiguration"></a>Obter macOSEndpointProtectionConfiguration
 
@@ -97,7 +97,6 @@ Content-Length: 884
   }
 }
 ```
-
 
 
 

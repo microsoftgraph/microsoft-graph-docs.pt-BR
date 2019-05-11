@@ -1,15 +1,15 @@
 ---
 title: Listar windowsHealthMonitoringConfigurations
 description: Listar Propriedades e relações dos objetos windowsHealthMonitoringConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69c07f07b94211a44a44e43c589bc625cd57baaa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8de488247afcfc83ffe1efc42cab8cb07870c758
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32514963"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917958"
 ---
 # <a name="list-windowshealthmonitoringconfigurations"></a>Listar windowsHealthMonitoringConfigurations
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 628
+Content-Length: 732
 
 {
   "value": [
@@ -80,12 +80,12 @@ Content-Length: 628
       "displayName": "Display Name value",
       "version": 7,
       "allowDeviceHealthMonitoring": "enabled",
-      "configDeviceHealthMonitoringScope": "healthMonitoring"
+      "configDeviceHealthMonitoringScope": "healthMonitoring",
+      "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
     }
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Listar ndesConnectors
 description: Listar Propriedades e relações dos objetos ndesConnector.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3e7ebb2f7325ad6bd38556c83aa0519ba7ce067
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 081a0f018ec229215e3f10014927f9a0b901f50f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518153"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922182"
 ---
 # <a name="list-ndesconnectors"></a>Listar ndesConnectors
 
@@ -76,7 +76,6 @@ Content-Length: 285
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Acessar deviceComplianceActionItem
 description: Leia as propriedades e as relações do objeto deviceComplianceActionItem.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0e9b96ea5cc443864b825880619e131713bc779
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 32755e27d7dbd967cb525f53c1ed14c6a7d9f06a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471613"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927998"
 ---
 # <a name="get-devicecomplianceactionitem"></a>Acessar deviceComplianceActionItem
 
@@ -80,7 +80,6 @@ Content-Length: 355
   }
 }
 ```
-
 
 
 

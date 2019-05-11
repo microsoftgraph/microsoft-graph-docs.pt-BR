@@ -1,15 +1,15 @@
 ---
 title: Obter deviceManagementSettingInstance
 description: Leia as propriedades e as relações do objeto deviceManagementSettingInstance.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32b1adbfe5c8b073c9a13d71dc239fe369a54e04
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6925147b41a1d6a34cda94afa9e2e1198503815d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466760"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917089"
 ---
 # <a name="get-devicemanagementsettinginstance"></a>Obter deviceManagementSettingInstance
 
@@ -79,7 +79,6 @@ Content-Length: 227
   }
 }
 ```
-
 
 
 

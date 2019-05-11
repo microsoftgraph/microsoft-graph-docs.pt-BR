@@ -1,15 +1,15 @@
 ---
 title: Atualizar deviceConfigurationDeviceStateSummary
 description: Atualizar as propriedades de um objeto deviceConfigurationDeviceStateSummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f7077e76e6bfc0c0652291a491eab4e1aee0d97
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ff364068a012535ad8c7a6958b9ff5e6ce5fdd49
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469394"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927409"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>Atualizar deviceConfigurationDeviceStateSummary
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -104,7 +104,6 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

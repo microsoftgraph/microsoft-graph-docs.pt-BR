@@ -1,15 +1,15 @@
 ---
 title: Obter windows10ImportedPFXCertificateProfile
 description: Leia as propriedades e as relações do objeto windows10ImportedPFXCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c41eda1843612adf5c97a6c95c3a48657239c6a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f2e38fd6571a0fac07eda9da518a0936c4e041fd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32516655"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921094"
 ---
 # <a name="get-windows10importedpfxcertificateprofile"></a>Obter windows10ImportedPFXCertificateProfile
 
@@ -92,7 +92,6 @@ Content-Length: 813
   }
 }
 ```
-
 
 
 

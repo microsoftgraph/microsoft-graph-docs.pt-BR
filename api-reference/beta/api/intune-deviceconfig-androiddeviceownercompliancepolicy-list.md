@@ -1,15 +1,15 @@
 ---
 title: Listar androidDeviceOwnerCompliancePolicies
 description: Listar Propriedades e relações dos objetos androidDeviceOwnerCompliancePolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bece83244ebebe846cba3c47fbc173658a6c2560
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9258f620f306ff21203b2a6f6e52354bb72c11f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32480986"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933232"
 ---
 # <a name="list-androiddeviceownercompliancepolicies"></a>Listar androidDeviceOwnerCompliancePolicies
 
@@ -97,7 +97,6 @@ Content-Length: 1241
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Atualizar cartToClassAssociation
 description: Atualiza as propriedades de um objeto cartToClassAssociation.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4443a2924b60333d34830fee77f802df7e8aead3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4961d3efeaabd6cee345b0cc23b99e4ff30f6dcd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471585"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928005"
 ---
 # <a name="update-carttoclassassociation"></a>Atualizar cartToClassAssociation
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [cartToC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
@@ -110,7 +110,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

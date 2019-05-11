@@ -1,15 +1,15 @@
 ---
 title: Listar easEmailProfileConfigurationBases
 description: Listar Propriedades e relações dos objetos easEmailProfileConfigurationBase.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c000782ff255602d2de5b3b1b1ecac0aaac4164
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 534f9fd35af1f52739084bb3d0defcbff8c66442
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467705"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33926786"
 ---
 # <a name="list-easemailprofileconfigurationbases"></a>Listar easEmailProfileConfigurationBases
 
@@ -87,7 +87,6 @@ Content-Length: 715
   ]
 }
 ```
-
 
 
 

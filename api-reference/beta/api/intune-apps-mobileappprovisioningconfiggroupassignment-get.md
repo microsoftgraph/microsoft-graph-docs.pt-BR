@@ -1,15 +1,15 @@
 ---
 title: Obter mobileAppProvisioningConfigGroupAssignment
 description: Leia as propriedades e as relações do objeto mobileAppProvisioningConfigGroupAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d81f87776609a6b99b918ee5800365018b96b67a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e6768d0344d97963b69710b71659448540411631
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488908"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935038"
 ---
 # <a name="get-mobileappprovisioningconfiggroupassignment"></a>Obter mobileAppProvisioningConfigGroupAssignment
 
@@ -75,7 +75,6 @@ Content-Length: 203
   }
 }
 ```
-
 
 
 

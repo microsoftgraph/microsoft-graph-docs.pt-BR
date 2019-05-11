@@ -1,15 +1,15 @@
 ---
 title: Excluir windowsWifiConfiguration
 description: Exclui windowsWifiConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a4ca80255ade7953eae6252e1efcd20572afbc0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a48c83041d1588f10a4bfa40cd44fb6cea58abcd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32510882"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917194"
 ---
 # <a name="delete-windowswificonfiguration"></a>Excluir windowsWifiConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
