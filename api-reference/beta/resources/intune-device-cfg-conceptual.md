@@ -1,15 +1,15 @@
 ---
 title: Configuração de dispositivo no Microsoft Intune-Microsoft Gaaph API
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que definem configurar dispositivos para uma organização de locatário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a341de5bc6753102e3ce7a6c6c15114296a92248
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556421"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949161"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -171,6 +171,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Resumo do status do usuário da configuração do dispositivo](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [Status do usuário da configuração do dispositivo](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Tipo de proteção de credenciais de autoridade do sistema local de proteção de dispositivos](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [Emissor de credenciais derivadas de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
+- [Tipo de notificação de credencial derivada de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
+- [Configurações de credenciais derivadas de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [Configurações de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementsettings.md)
 - [Usuário ou grupo local de direitos de usuário de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Configuração de direitos do usuário de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -198,6 +201,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Modo de telemetria de borda](intune-deviceconfig-edgetelemetrymode.md)
 - [Configuração de atualização da edição](intune-deviceconfig-editionupgradeconfiguration.md)
 - [Tipo de licença de atualização de edição](intune-deviceconfig-editionupgradelicensetype.md)
+- [Tipo de certificado de email](intune-deviceconfig-emailcertificatetype.md)
 - [Duração da sincronização de emails](intune-deviceconfig-emailsyncduration.md)
 - [Agenda de sincronização de emails](intune-deviceconfig-emailsyncschedule.md)
 - [Estado de preparação de criptografia](intune-deviceconfig-encryptionreadinessstate.md)
@@ -244,6 +248,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Base de perfil de certificado do iOS](intune-deviceconfig-ioscertificateprofilebase.md)
 - [Política de conformidade do iOS](intune-deviceconfig-ioscompliancepolicy.md)
 - [Configuração personalizada do iOS](intune-deviceconfig-ioscustomconfiguration.md)
+- [configuração de autenticação de credencial derivada do iOS](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [Configuração de recursos do dispositivo iOS](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
 - [Configuração de perfil de email do EAS do iOS](intune-deviceconfig-ioseasemailprofileconfiguration.md)
 - [Configurações do certificado EDU do iOS](intune-deviceconfig-ioseducertificatesettings.md)

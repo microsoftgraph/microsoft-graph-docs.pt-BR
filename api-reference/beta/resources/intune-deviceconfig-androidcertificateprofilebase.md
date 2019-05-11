@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidCertificateProfileBase
 description: Base de perfil do certificado Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afa3a69505ed9d146e4b4fc4dd4029f19989b2a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41b5ef5ea9fde42711c97b278d3f234abe60ec8b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556429"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949168"
 ---
 # <a name="androidcertificateprofilebase-resource-type"></a>tipo de recurso androidCertificateProfileBase
 
@@ -93,7 +93,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

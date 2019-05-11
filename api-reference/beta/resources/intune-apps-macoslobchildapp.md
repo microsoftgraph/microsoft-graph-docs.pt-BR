@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso macOSLobChildApp
 description: Contém as propriedades do aplicativo de LOB do MacOS em um pacote de pacote
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54bd15c4549495ff891d7283c6851e7058ffb887
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c4ee0802b6e6029d6c49672736e77a89f5346a0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553033"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950281"
 ---
 # <a name="macoslobchildapp-resource-type"></a>tipo de recurso macOSLobChildApp
 
@@ -24,7 +24,7 @@ Contém as propriedades do aplicativo de LOB do MacOS em um pacote de pacote
 |:---|:---|:---|
 |bundleId|String|O Nome da Identidade.|
 |buildNumber|String|O número de compilação do aplicativo de linha de negócios (LoB) MacOS.|
-|versionNumber|String|O número da versão do aplicativo de linha de negócios (LoB) MacOS.|
+|versionNumber|Cadeia de caracteres|O número da versão do aplicativo de linha de negócios (LoB) MacOS.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "versionNumber": "String"
 }
 ```
-
 
 
 

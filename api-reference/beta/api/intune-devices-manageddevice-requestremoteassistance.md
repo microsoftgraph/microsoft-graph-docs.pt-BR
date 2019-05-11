@@ -1,15 +1,15 @@
 ---
 title: Ação requestRemoteAssistance
 description: Solicitar assistência remota
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fdf955e90e41679fe11a3f6d869be6491b4c51a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d730fe0db17baf8d1bef60725182358c95fc68e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520127"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909607"
 ---
 # <a name="requestremoteassistance-action"></a>Ação requestRemoteAssistance
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

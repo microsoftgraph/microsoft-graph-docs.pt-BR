@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceAndAppManagementData
-description: Dados exPortados
-author: tfitzmac
+description: Dados exportados
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a889e65463733971dd36d04e6bba8a140fdba16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3d85c6ba4eb4cdb96326f7a95efd5a8f9a8af4df
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521226"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940432"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>tipo de recurso deviceAndAppManagementData
 
@@ -17,7 +17,7 @@ ms.locfileid: "32521226"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Dados exPortados
+Dados exportados
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -25,7 +25,7 @@ Dados exPortados
 |conteúdo|Fluxo|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -40,7 +40,6 @@ Veja a seguir uma representação JSON do recurso.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
 
 
 

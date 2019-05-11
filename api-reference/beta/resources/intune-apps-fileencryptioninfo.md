@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso fileEncryptionInfo
 description: Contém propriedades de informações de criptografia de arquivos para a versão de conteúdo de um aplicativo de linha de negócios.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a2236e2c63703ea5af2662d5b0f4594e7888799
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3a507aed30d82fd012a964082a2d83fed0f7c751
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552174"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950421"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Tipo de recurso fileEncryptionInfo
 
@@ -22,11 +22,11 @@ Contém propriedades de informações de criptografia de arquivos para a versão
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|encryptionKey|Binário|A chave usada para criptografar o conteúdo do arquivo.|
-|initializationVector|Binário|O vetor de inicialização usado para o algoritmo de criptografia.|
-|mac|Binário|O hash do conteúdo do arquivo criptografado + IV (hash conteúdo).|
-|macKey|Binário|Chave usada para acessar mac.|
-|profileIdentifier|String|O identificador de perfil.|
+|encryptionKey|Binária|A chave usada para criptografar o conteúdo do arquivo.|
+|initializationVector|Binária|O vetor de inicialização usado para o algoritmo de criptografia.|
+|mac|Binária|O hash do conteúdo do arquivo criptografado + IV (hash conteúdo).|
+|macKey|Binária|Chave usada para acessar mac.|
+|profileIdentifier|Cadeia de caracteres|O identificador de perfil.|
 |fileDigest|Binária|O resumo de arquivo antes da criptografia.|
 |fileDigestAlgorithm|Cadeia de caracteres|O algoritmo de conteúdo do arquivo.|
 
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "fileDigestAlgorithm": "String"
 }
 ```
-
 
 
 

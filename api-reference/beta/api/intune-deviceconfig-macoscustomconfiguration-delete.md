@@ -1,15 +1,15 @@
 ---
 title: Excluir macOSCustomConfiguration
 description: Exclui macOSCustomConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04b2fde12044340da8979f180e06fed54b889c4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c2fb5f29a1a3cf39179da2ba417c1379a2259f91
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518902"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922919"
 ---
 # <a name="delete-macoscustomconfiguration"></a>Excluir macOSCustomConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

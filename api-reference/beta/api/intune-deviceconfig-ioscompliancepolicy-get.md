@@ -1,15 +1,15 @@
 ---
 title: Acessar iosCompliancePolicy
 description: Leia as propriedades e as relações do objeto iosCompliancePolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ccb4ee75266e85f5089b17ec8670572cbfe3cfc5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 871cc87543bf66018f5f872fb3192e676f25fa3e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467579"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923922"
 ---
 # <a name="get-ioscompliancepolicy"></a>Acessar iosCompliancePolicy
 
@@ -108,7 +108,6 @@ Content-Length: 1504
   }
 }
 ```
-
 
 
 

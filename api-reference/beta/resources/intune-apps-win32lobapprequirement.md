@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso win32LobAppRequirement
 description: Classe base para detectar um aplicativo Win32
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3177493c5289b54cb43369a9dc62970097486f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee8593603f00a06fc47540d2829ef851cc99facb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554097"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949504"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>tipo de recurso win32LobAppRequirement
 
@@ -23,7 +23,7 @@ Classe base para detectar um aplicativo Win32
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detecçaovalue|String|O valor de detecção|
+|detecçaovalue|Cadeia de caracteres|O valor de detecção|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "detectionValue": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração androidDeviceOwnerAppAutoUpdatePolicyType
 description: Proprietário do dispositivo Android valores possíveis para Estados da política de atualização automática do aplicativo do dispositivo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e67dbdd96c1df067ead3724705a4c2067757130
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 92ea62ccd7f1077558d91eef4ca9e4f7157ec258
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556506"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949189"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>tipo de enumeração androidDeviceOwnerAppAutoUpdatePolicyType
 
@@ -23,11 +23,10 @@ Proprietário do dispositivo Android valores possíveis para Estados da polític
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|userChoice|1 |O usuário pode controlar as atualizações automáticas.|
-|Édito|2 |Os aplicativos nunca são atualizados automaticamente.|
-|wiFiOnly|3 |Os aplicativos são atualizados automaticamente através de Wi-Fi apenas.|
-|permanente|4 |Os aplicativos são atualizados automaticamente a qualquer momento. Tarifas de dados podem ser aplicadas.|
-
+|UserChoice|1|O usuário pode controlar as atualizações automáticas.|
+|Édito|duas|Os aplicativos nunca são atualizados automaticamente.|
+|wiFiOnly|3D|Os aplicativos são atualizados automaticamente através de Wi-Fi apenas.|
+|permanente|quatro|Os aplicativos são atualizados automaticamente a qualquer momento. Tarifas de dados podem ser aplicadas.|
 
 
 

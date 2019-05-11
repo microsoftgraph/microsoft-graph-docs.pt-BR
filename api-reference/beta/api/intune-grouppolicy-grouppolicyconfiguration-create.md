@@ -1,15 +1,15 @@
 ---
 title: Criar groupPolicyConfiguration
 description: Criar um novo objeto groupPolicyConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd0c63b1d8c8df449a68cbeb64f391adb659ae64
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0764f7cfd488afbf98ae2bb32c61f061a49b1fa7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532111"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905186"
 ---
 # <a name="create-grouppolicyconfiguration"></a>Criar groupPolicyConfiguration
 
@@ -93,7 +93,6 @@ Content-Length: 317
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso Navegaçãoadvancedthreatprotectiononboardingstatesummary
 description: Resumo do estado de integração da proteção avançada contra ameaças do Windows Defender na conta.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf0c9604d356bbd20d14aec9eb60768342cc2945
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d96de8e427d265003811c751bce7b6c0675ba667
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556414"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949119"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>tipo de recurso Navegaçãoadvancedthreatprotectiononboardingstatesummary
 
@@ -28,7 +28,7 @@ Resumo do estado de integração da proteção avançada contra ameaças do Wind
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo|
+|id|Cadeia de caracteres|Identificador exclusivo|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "notAssignedDeviceCount": 1024
 }
 ```
-
 
 
 

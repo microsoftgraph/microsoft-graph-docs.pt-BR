@@ -1,15 +1,15 @@
 ---
 title: Obter remoteActionAudit
 description: Leia as propriedades e as relações do objeto remoteActionAudit.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97143a97addc863ebc585823025f2ca4c9c36c43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1849f92f00b86e2d7dd36a51afb4cebe3d9ebc45
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523445"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909418"
 ---
 # <a name="get-remoteactionaudit"></a>Obter remoteActionAudit
 
@@ -82,7 +82,6 @@ Content-Length: 543
   }
 }
 ```
-
 
 
 

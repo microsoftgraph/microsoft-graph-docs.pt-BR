@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementIntent
 description: Entidade que representa uma intenção de aplicar configurações a um dispositivo
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 976a13bb8ac542e67ebdd0422669cd866cc70af6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541854"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943438"
 ---
 # <a name="devicemanagementintent-resource-type"></a>tipo de recurso deviceManagementIntent
 
@@ -28,6 +28,7 @@ Entidade que representa uma intenção de aplicar configurações a um dispositi
 |[Excluir deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-delete.md)|Nenhum|Exclui [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md).|
 |[Atualizar deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Atualiza as propriedades de um objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) .|
 |[ação updateSettings](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|Nenhuma|Ainda não documentado|
+|[ação migrateToTemplate](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|Nenhuma|Ainda não documentado|
 |[atribuir ação](../api/intune-deviceintent-devicemanagementintent-assign.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
@@ -38,7 +39,7 @@ Entidade que representa uma intenção de aplicar configurações a um dispositi
 |description|String|Descrição fornecida pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
+|templateId|Cadeia de caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -71,7 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "templateId": "String"
 }
 ```
-
 
 
 

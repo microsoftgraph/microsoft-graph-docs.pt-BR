@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso mobileAppInstallSummary
 description: Contém propriedades para o resumo de instalação de um aplicativo móvel.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a981477daefae92b6afcd3612a173d75b37e8637
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 49ab6340614405d6c9474a0fd31b578ff4b42fef
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551866"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949896"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>tipo de recurso mobileAppInstallSummary
 
@@ -28,7 +28,7 @@ Contém propriedades para o resumo de instalação de um aplicativo móvel.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |installedDeviceCount|Int32|Número de dispositivos que instalaram com êxito este aplicativo.|
 |failedDeviceCount|Int32|Número de dispositivos que falharam ao instalar este aplicativo.|
 |notApplicableDeviceCount|Int32|Número de dispositivos que não se aplicam a este aplicativo.|
@@ -67,7 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "pendingInstallUserCount": 1024
 }
 ```
-
 
 
 

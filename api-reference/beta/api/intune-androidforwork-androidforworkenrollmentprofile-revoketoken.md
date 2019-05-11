@@ -1,15 +1,15 @@
 ---
 title: Ação revokeToken
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8b4349b5f5dd83a21475a9221fd5009b7527413
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 780c88edec60443fd47f6f106b90c3598acb3190
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498904"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939060"
 ---
 # <a name="revoketoken-action"></a>Ação revokeToken
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

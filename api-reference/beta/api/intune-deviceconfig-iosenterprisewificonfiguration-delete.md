@@ -1,15 +1,15 @@
 ---
 title: Excluir iosEnterpriseWiFiConfiguration
 description: Exclui iosEnterpriseWiFiConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38796bcd7e379cae0ddac5ec17f00a290c3091f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f6723c5f81fcc93e1629935f49ea3ae71d7ce192
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467481"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923521"
 ---
 # <a name="delete-iosenterprisewificonfiguration"></a>Excluir iosEnterpriseWiFiConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

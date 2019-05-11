@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração windowsFirewallRuleTrafficDirectionType
 description: Direções de tráfego de regra de firewall.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbde291788bb0f68f53dae57352e4942d1358fcf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b431bc1577460b7245b00764df4835e933662484
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573820"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944044"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>tipo de enumeração windowsFirewallRuleTrafficDirectionType
 
@@ -23,9 +23,8 @@ Direções de tráfego de regra de firewall.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|bota|1 |A regra se aplica ao tráfego de saída.|
-|no|2 |A regra se aplica ao tráfego de entrada.|
-
+|bota|1|A regra se aplica ao tráfego de saída.|
+|pol|duas|A regra se aplica ao tráfego de entrada.|
 
 
 

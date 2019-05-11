@@ -1,15 +1,15 @@
 ---
 title: Excluir iosEasEmailProfileConfiguration
 description: Exclui iosEasEmailProfileConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f35e87356b432c404ed7f5d3ea6793df2728abeb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e65233b5c42e30d3f804585f9f7e39416bb0098f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467460"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923613"
 ---
 # <a name="delete-ioseasemailprofileconfiguration"></a>Excluir iosEasEmailProfileConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

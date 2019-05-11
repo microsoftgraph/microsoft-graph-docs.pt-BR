@@ -1,15 +1,15 @@
 ---
 title: Gerenciamento de dispositivos no Microsoft Intune-API do Microsoft Graph
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que definem o gerenciamento de dispositivos para uma organização de locatário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: cf2c6ccec71eed225b87a52a3e5941f54b606b01
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bee3080acefe6c6e2377f153dd6c58fc05850700
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556428"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949195"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -152,10 +152,9 @@ ms.locfileid: "32556428"
 - [Resultado da ação de redefinir a senha](intune-devices-resetpasscodeactionresult.md)
 - [Resultado de ação de revogar licenças VPP da Apple](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Executar cronograma](intune-devices-runschedule.md)
+- [Resumo do estado de categoria da linha de base de segurança](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Estado de conformidade da linha de base de segurança](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Estado do dispositivo de linha de base de segurança](intune-deviceintent-securitybaselinedevicestate.md)
-- [Estado de configuração da linha de base de segurança](intune-deviceintent-securitybaselinesettingstate.md)
-- [Estado da linha de base de segurança](intune-deviceintent-securitybaselinestate.md)
 - [Resumo do estado da linha de base de segurança](intune-deviceintent-securitybaselinestatesummary.md)
 - [Modelo de linha da base de segurança](intune-deviceintent-securitybaselinetemplate.md)
 - [Usuário de dispositivo Apple compartilhado](intune-devices-sharedappledeviceuser.md)

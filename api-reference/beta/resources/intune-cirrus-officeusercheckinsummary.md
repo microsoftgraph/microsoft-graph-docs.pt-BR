@@ -2,14 +2,14 @@
 title: tipo de recurso officeUserCheckinSummary
 description: Entidade que descreve as estatísticas de check-in do locatário.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: b74d7508c9ef3b1d7183c806783e567cb75859ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ee53bbdbb02a3d5716f49941ec108e23a09ae88
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526381"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949266"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>tipo de recurso officeUserCheckinSummary
 

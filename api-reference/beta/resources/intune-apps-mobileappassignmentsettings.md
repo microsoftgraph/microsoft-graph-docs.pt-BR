@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso mobileAppAssignmentSettings
 description: Classe de resumo que contém as propriedades usadas para atribuir um aplicativo móvel a um grupo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b5fff18f7227b1b8f30bd4a9ec35076e6b3f5a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee8426e9a932b38a8d6002ca08d18264d49efbf0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552202"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949987"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>Tipo de recurso mobileAppAssignmentSettings
 
@@ -38,7 +38,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
-
 
 
 

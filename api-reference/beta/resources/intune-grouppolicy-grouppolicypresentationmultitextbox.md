@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso groupPolicyPresentationMultiTextBox
-description: Representa um elemento multiTextBox de ADMX e um elemento de multiTexto ADMX.
-author: tfitzmac
+description: Representa um elemento multiTextBox de ADMX e um elemento de multitexto ADMX.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f17177b55d6033b35c4476e9df61150e785ba45
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 810ae2c187f900fbd649a6e25b5c70ed488ec669
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575874"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941055"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>tipo de recurso groupPolicyPresentationMultiTextBox
 
@@ -17,7 +17,7 @@ ms.locfileid: "32575874"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa um elemento multiTextBox de ADMX e um elemento de multiTexto ADMX.
+Representa um elemento multiTextBox de ADMX e um elemento de multitexto ADMX.
 
 
 Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
@@ -34,8 +34,8 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |obrigatório|Booliano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro sem sinal que especifica o número máximo de caracteres de texto. O valor padrão é 1023.|
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "maxStrings": 1024
 }
 ```
-
 
 
 

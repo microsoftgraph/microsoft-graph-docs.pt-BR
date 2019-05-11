@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração windowsUserAccountControlSettings
 description: Valores possíveis para as configurações de controle de conta de usuário do Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b63fe44abfb0a06e5978d78e49c392c08122e38
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 955fdf21528ca4bfa9be82aa75e06f6e52e44727
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523557"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944142"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de enumeração windowsUserAccountControlSettings
 
@@ -22,12 +22,11 @@ Valores possíveis para as configurações de controle de conta de usuário do W
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|alwaysNotify|1 |Sempre notificar.|
-|notifyOnAppChanges|2 |Notificar alterações no aplicativo.|
-|notifyOnAppChangesWithoutDimming|3 |Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
-|neverNotify|4 |Nunca notificar.|
-
+|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|alwaysNotify|1|Sempre notificar.|
+|notifyOnAppChanges|duas|Notificar alterações no aplicativo.|
+|notifyOnAppChangesWithoutDimming|3D|Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
+|neverNotify|quatro|Nunca notificar.|
 
 
 

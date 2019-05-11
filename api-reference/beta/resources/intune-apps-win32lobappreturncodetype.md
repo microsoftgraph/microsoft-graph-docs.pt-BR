@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração win32LobAppReturnCodeType
 description: Indica o tipo de código de retorno.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 441c0270bc6488a09fec02f1e1681e009b889918
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9e926c7fa5f78eb71048e8f93bf91fc56e48b2b7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556890"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949469"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>tipo de enumeração win32LobAppReturnCodeType
 
@@ -23,11 +23,10 @@ Indica o tipo de código de retorno.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |falhou|,0|Falhou.|
-|sucesso|1 |Audita.|
-|softReboot|2 |Soft-a reinicialização é necessária.|
-|hardReboot|3 |É necessário reinicializar o disco rígido.|
-|Nova|4 |Tente novamente.|
-
+|sucesso|1|Audita.|
+|softReboot|duas|Soft-a reinicialização é necessária.|
+|hardReboot|3D|É necessário reinicializar o disco rígido.|
+|Nova|quatro|Tente novamente.|
 
 
 

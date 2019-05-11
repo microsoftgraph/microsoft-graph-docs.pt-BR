@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso mobileAppProvisioningConfigGroupAssignment
 description: Contém as propriedades usadas para atribuir uma configuração de provisionamento de aplicativo a um grupo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6af0d2547e5e63ed887e31983046944630f8cdf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c01dfd8da7d241719ca873fa910338a286f16dbd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554300"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949910"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>tipo de recurso mobileAppProvisioningConfigGroupAssignment
 
@@ -31,8 +31,8 @@ Contém as propriedades usadas para atribuir uma configuração de provisionamen
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|targetGroupId|String|A ID do grupo do AAD no qual a configuração de provisionamento do aplicativo está sendo direcionada.|
-|id|String|Chave da entidade.|
+|targetGroupId|Cadeia de caracteres|A ID do grupo do AAD no qual a configuração de provisionamento do aplicativo está sendo direcionada.|
+|id|Cadeia de caracteres|Chave da entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
-
 
 
 

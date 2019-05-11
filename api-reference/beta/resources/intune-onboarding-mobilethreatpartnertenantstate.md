@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração mobileThreatPartnerTenantState
 description: Estado do parceiro desse locatário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b145805247a41f28e957cc024941d0e0448a73ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5565ecff080ce8c70f1dbf3885b39477bdbe978
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566483"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940173"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>tipo de enumeração mobileThreatPartnerTenantState
 
@@ -23,10 +23,9 @@ Estado do parceiro desse locatário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |indisponível|,0|O parceiro não está disponível.|
-|disponível|1 |O parceiro está disponível.|
-|enabled|2 |O parceiro está habilitado.|
-|Não responde|3 |O parceiro não responde.|
-
+|disponível|1|O parceiro está disponível.|
+|enabled|duas|O parceiro está habilitado.|
+|Não responde|3D|O parceiro não responde.|
 
 
 

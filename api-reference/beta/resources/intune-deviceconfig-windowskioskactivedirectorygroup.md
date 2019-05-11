@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsKioskActiveDirectoryGroup
 description: A classe usada para identificar um grupo de diretórios do Azure para a configuração do quiosque
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20f4c0eaf8470f01619a9ff4067bec0d95851b3c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d4c0810cfeda4f620f6733a5b824cde8d0234f38
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464621"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943960"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>tipo de recurso windowsKioskActiveDirectoryGroup
 
@@ -25,10 +25,10 @@ Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Nome_do_grupo|String|O nome do grupo do AD que será bloqueado para esta configuração de quiosque|
+|Nome_do_grupo|Cadeia de caracteres|O nome do grupo do AD que será bloqueado para esta configuração de quiosque|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "groupName": "String"
 }
 ```
-
 
 
 

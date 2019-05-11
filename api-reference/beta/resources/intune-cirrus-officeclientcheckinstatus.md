@@ -2,14 +2,14 @@
 title: tipo de recurso officeClientCheckinStatus
 description: Entidade que descreve as estatísticas de check-in do locatário.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 465b07ba286b9ee3a58132424be2a25b1c7e564e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a7cbc54ac2e276932273130f194f484f3ee23b7c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526696"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949287"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>tipo de recurso officeClientCheckinStatus
 
@@ -21,14 +21,14 @@ Entidade que descreve as estatísticas de check-in do locatário.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Nome principal do usuário usando o dispositivo.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário usando o dispositivo.|
 |deviceName|String|Nome do dispositivo que está tentando fazer check-in.|
-|devicePlatform|String|Plataforma do dispositivo que está tentando fazer check-in.|
-|devicePlatformVersion|String|Versão da plataforma do dispositivo que está tentando fazer check-in.|
+|devicePlatform|Cadeia de caracteres|Plataforma do dispositivo que está tentando fazer check-in.|
+|devicePlatformVersion|Cadeia de caracteres|Versão da plataforma do dispositivo que está tentando fazer check-in.|
 |wasSuccessful|Booliano|Se o último check-in foi bem-sucedido.|
-|userId|String|Identificador de usuário usando o dispositivo.|
+|userId|Cadeia de caracteres|Identificador de usuário usando o dispositivo.|
 |checkinDateTime|DateTimeOffset|Tempo de check-in do último dispositivo em UTC.|
-|errorMessage|String|Mensagem de erro se algum associado para o último check-in.|
+|errorMessage|Cadeia de caracteres|Mensagem de erro se algum associado para o último check-in.|
 |appliedPolicies|Coleção de cadeias de caracteres|Lista de políticas entregues ao dispositivo como última verificação.|
 
 ## <a name="relationships"></a>Relações

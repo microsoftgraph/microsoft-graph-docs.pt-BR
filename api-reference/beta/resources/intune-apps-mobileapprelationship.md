@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso mobileAppRelationship
 description: Descreve o relacionamento de um aplicativo móvel filho para seu aplicativo móvel pai.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ed999914958578bfa4c39b99b27ff159827e207
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c871ba51733195947243fa9b22824156108f5eb7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554153"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949882"
 ---
 # <a name="mobileapprelationship-resource-type"></a>tipo de recurso mobileAppRelationship
 
@@ -28,9 +28,9 @@ Descreve o relacionamento de um aplicativo móvel filho para seu aplicativo móv
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da entidade de relação.|
-|targetId|String|A ID de aplicativo do aplicativo móvel do filho de destino.|
-|targetDisplayName|String|O nome de exibição do aplicativo móvel filho de destino.|
+|id|Cadeia de caracteres|A ID da entidade de relação.|
+|targetId|Cadeia de caracteres|A ID de aplicativo do aplicativo móvel do filho de destino.|
+|targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo móvel filho de destino.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "targetDisplayName": "String"
 }
 ```
-
 
 
 
