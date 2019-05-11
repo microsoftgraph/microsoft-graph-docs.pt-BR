@@ -1,31 +1,30 @@
 ---
 title: tipo de enumeração windowsHelloForBusinessPinUsage
 description: Opções de uso de PIN do Windows Hello para empresas
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55a0aec3bbd27ac1b557285cb7ae2f722b8d72d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 10c4f99efaf7c4911af3ede66e318431d85e87ab
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566441"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940089"
 ---
-# <a name="windowshelloforbusinesspinusage-enum-type"></a><span data-ttu-id="64a14-103">tipo de enumeração windowsHelloForBusinessPinUsage</span><span class="sxs-lookup"><span data-stu-id="64a14-103">windowsHelloForBusinessPinUsage enum type</span></span>
+# <a name="windowshelloforbusinesspinusage-enum-type"></a><span data-ttu-id="6df24-103">tipo de enumeração windowsHelloForBusinessPinUsage</span><span class="sxs-lookup"><span data-stu-id="6df24-103">windowsHelloForBusinessPinUsage enum type</span></span>
 
-> <span data-ttu-id="64a14-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="64a14-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6df24-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="6df24-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="64a14-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="64a14-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6df24-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6df24-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="64a14-106">Opções de uso de PIN do Windows Hello para empresas</span><span class="sxs-lookup"><span data-stu-id="64a14-106">Windows Hello for Business pin usage options</span></span>
+<span data-ttu-id="6df24-106">Opções de uso de PIN do Windows Hello para empresas</span><span class="sxs-lookup"><span data-stu-id="6df24-106">Windows Hello for Business pin usage options</span></span>
 
-## <a name="members"></a><span data-ttu-id="64a14-107">Membros</span><span class="sxs-lookup"><span data-stu-id="64a14-107">Members</span></span>
-|<span data-ttu-id="64a14-108">Membro</span><span class="sxs-lookup"><span data-stu-id="64a14-108">Member</span></span>|<span data-ttu-id="64a14-109">Valor</span><span class="sxs-lookup"><span data-stu-id="64a14-109">Value</span></span>|<span data-ttu-id="64a14-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="64a14-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="6df24-107">Membros</span><span class="sxs-lookup"><span data-stu-id="6df24-107">Members</span></span>
+|<span data-ttu-id="6df24-108">Membro</span><span class="sxs-lookup"><span data-stu-id="6df24-108">Member</span></span>|<span data-ttu-id="6df24-109">Valor</span><span class="sxs-lookup"><span data-stu-id="6df24-109">Value</span></span>|<span data-ttu-id="6df24-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="6df24-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="64a14-111">autorizado</span><span class="sxs-lookup"><span data-stu-id="64a14-111">allowed</span></span>|<span data-ttu-id="64a14-112">,0</span><span class="sxs-lookup"><span data-stu-id="64a14-112">0</span></span>|<span data-ttu-id="64a14-113">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="64a14-113">Not yet documented</span></span>|
-|<span data-ttu-id="64a14-114">obrigatório</span><span class="sxs-lookup"><span data-stu-id="64a14-114">required</span></span>|<span data-ttu-id="64a14-115">1 </span><span class="sxs-lookup"><span data-stu-id="64a14-115">1</span></span>|<span data-ttu-id="64a14-116">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="64a14-116">Not yet documented</span></span>|
-|<span data-ttu-id="64a14-117">Não</span><span class="sxs-lookup"><span data-stu-id="64a14-117">disallowed</span></span>|<span data-ttu-id="64a14-118">2 </span><span class="sxs-lookup"><span data-stu-id="64a14-118">2</span></span>|<span data-ttu-id="64a14-119">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="64a14-119">Not yet documented</span></span>|
-
+|<span data-ttu-id="6df24-111">autorizado</span><span class="sxs-lookup"><span data-stu-id="6df24-111">allowed</span></span>|<span data-ttu-id="6df24-112">,0</span><span class="sxs-lookup"><span data-stu-id="6df24-112">0</span></span>|<span data-ttu-id="6df24-113">Permitiu o uso de determinada regra de PIN</span><span class="sxs-lookup"><span data-stu-id="6df24-113">Allowed the usage of certain pin rule</span></span>|
+|<span data-ttu-id="6df24-114">obrigatório</span><span class="sxs-lookup"><span data-stu-id="6df24-114">required</span></span>|<span data-ttu-id="6df24-115">1</span><span class="sxs-lookup"><span data-stu-id="6df24-115">1</span></span>|<span data-ttu-id="6df24-116">Impor o uso de determinada regra de PIN</span><span class="sxs-lookup"><span data-stu-id="6df24-116">Enforce the usage of certain pin rule</span></span>|
+|<span data-ttu-id="6df24-117">Não</span><span class="sxs-lookup"><span data-stu-id="6df24-117">disallowed</span></span>|<span data-ttu-id="6df24-118">duas</span><span class="sxs-lookup"><span data-stu-id="6df24-118">2</span></span>|<span data-ttu-id="6df24-119">Forbit o uso de determinada regra de PIN</span><span class="sxs-lookup"><span data-stu-id="6df24-119">Forbit the usage of certain pin rule</span></span>|
 
 
 
