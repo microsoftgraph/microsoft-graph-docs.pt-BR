@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração windows10VpnProfileTarget
 description: Tipos de destino de perfil VPN do Windows 10.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 602316620aa076107436abdc39c97ea0dcb270d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 737b8e9f828d4054fef407e148b9073dd7924b5c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571986"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944212"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>tipo de enumeração windows10VpnProfileTarget
 
@@ -23,9 +23,8 @@ Tipos de destino de perfil VPN do Windows 10.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |user|,0|Perfil VPN de destino do usuário.|
-|device|1 |Perfil VPN de dispositivo direcionado.|
-|autoPilotDevice|2 |Perfil VPN de dispositivo de piloto automático direcionado.|
-
+|device|1|Perfil VPN de dispositivo direcionado.|
+|autoPilotDevice|duas|Perfil VPN de dispositivo de piloto automático direcionado.|
 
 
 

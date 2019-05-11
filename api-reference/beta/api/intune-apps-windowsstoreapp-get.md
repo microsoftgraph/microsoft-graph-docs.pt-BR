@@ -1,15 +1,15 @@
 ---
 title: Obter windowsStoreApp
 description: Leia as propriedades e as relações do objeto windowsStoreApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a723b135a8d0b315db9b3c84fe561c38cc01d59a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d6cda8f7fd29f4b536573a163f3475c13dfb1a9d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32486087"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934541"
 ---
 # <a name="get-windowsstoreapp"></a>Obter windowsStoreApp
 
@@ -100,7 +100,6 @@ Content-Length: 1011
   }
 }
 ```
-
 
 
 

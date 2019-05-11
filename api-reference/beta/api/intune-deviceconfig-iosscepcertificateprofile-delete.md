@@ -1,15 +1,15 @@
 ---
 title: Excluir iosScepCertificateProfile
 description: Exclui iosScepCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6d5351c8674aa0618bb1c403cda0950098ac2b2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 92f33ecc82ca6fe1bc361d335c76d96cd2a094b1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519826"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923346"
 ---
 # <a name="delete-iosscepcertificateprofile"></a>Excluir iosScepCertificateProfile
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

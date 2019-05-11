@@ -1,15 +1,15 @@
 ---
 title: Listar androidWiFiConfigurations
 description: Listar Propriedades e relações dos objetos androidWiFiConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36f4e794cd7250fc336d258222660adf579b02dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f51b6f00272d8e5faccef58a63b1911a2a9cb6d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475330"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928733"
 ---
 # <a name="list-androidwificonfigurations"></a>Listar androidWiFiConfigurations
 
@@ -88,7 +88,6 @@ Content-Length: 704
   ]
 }
 ```
-
 
 
 

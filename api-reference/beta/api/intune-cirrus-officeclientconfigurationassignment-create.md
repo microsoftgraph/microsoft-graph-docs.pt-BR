@@ -2,14 +2,14 @@
 title: Criar officeClientConfigurationAssignment
 description: Adicione um grupo de destino a uma política existente.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 3e646b70ea3e18a79aaee5b4129e54da833c5c4a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e1222a23112356b1681f1cdc01556800ffe44586
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483821"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934058"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Criar officeClientConfigurationAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar officeCl
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID do OfficeConfigurationAssignment.|
+|id|Cadeia de caracteres|ID do OfficeConfigurationAssignment.|
 |destino|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|A atribuição de destino definida pelo administrador.|
 
 

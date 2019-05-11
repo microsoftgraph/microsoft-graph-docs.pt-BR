@@ -4,12 +4,12 @@ description: Redefinir a sincronização de um perfil de sincronização de dado
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d1bae89181f496bac3fc89b50b76e6f57f1fb8a1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: bd7f9112036d94b1249a413f7846f816c6c6d8ef
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587075"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938770"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Redefinir a sincronização em um educationSynchronizationProfile
 
@@ -63,14 +63,14 @@ Não há corpo de resposta.
   "blockType": "response",
   "name": "post_educationSynchronizationProfile_reset"
 }-->
-```
+```http
 HTTP/1.1 200 OK
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_reset-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_reset-Javascript-snippets.md)]
 
 ---

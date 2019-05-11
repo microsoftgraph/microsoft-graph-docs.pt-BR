@@ -1,15 +1,15 @@
 ---
 title: Obter managedEBookCategory
 description: Leia as propriedades e as relações do objeto managedEBookCategory.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db176b6bf5b8d3799f1259b5b23abfa07e8f197c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 668594c92de07c274f8a8443c163b6439b2e6149
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483009"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934142"
 ---
 # <a name="get-managedebookcategory"></a>Obter managedEBookCategory
 
@@ -77,7 +77,6 @@ Content-Length: 242
   }
 }
 ```
-
 
 
 

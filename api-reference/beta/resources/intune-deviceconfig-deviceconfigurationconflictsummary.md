@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso Propriedadesdeviceconfigurationconflictsummary
 description: Resumo de conflito para um conjunto de políticas de configuração de dispositivo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75c2e4e0375797340cf53cbe73d5d3f2fe1a0332
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 818f5390717015fce642d83b10c0d8409733741c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568819"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947040"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>tipo de recurso Propriedadesdeviceconfigurationconflictsummary
 
@@ -32,7 +32,7 @@ Resumo de conflito para um conjunto de políticas de configuração de dispositi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|O conjunto de políticas em conflito com a configuração determinada|
-|id|String|A ID desse conjunto de diretivas conflitantes. Esta ID é as identificações de todas as políticas no ConflictingDeviceConfigurations na ordem lexicographical separadas por sublinhados.|
+|id|Cadeia de caracteres|A ID desse conjunto de diretivas conflitantes. Esta ID é as identificações de todas as políticas no ConflictingDeviceConfigurations na ordem lexicographical separadas por sublinhados.|
 |contributingSettings|Coleção de cadeias de caracteres|O conjunto de configurações em conflito com as políticas determinadas|
 |deviceCheckinsImpacted|Int32|A contagem de check-ins impactados pelas políticas e configurações conflitantes|
 
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCheckinsImpacted": 1024
 }
 ```
-
 
 
 

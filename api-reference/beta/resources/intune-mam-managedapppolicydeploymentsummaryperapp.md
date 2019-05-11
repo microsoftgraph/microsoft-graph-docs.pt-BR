@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso managedAppPolicyDeploymentSummaryPerApp
 description: Representa o resumo da implantação da política por aplicativo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 23fb9b2658bb15a851fca169c37bcf080d1c7c1c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f051c36a7d14a75b6a85a9352a6188756d0545ad
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573884"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940712"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>Tipo de recurso managedAppPolicyDeploymentSummaryPerApp
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "configurationAppliedUserCount": 1024
 }
 ```
-
 
 
 

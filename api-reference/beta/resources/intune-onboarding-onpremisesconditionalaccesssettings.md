@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso onPremisesConditionalAccessSettings
 description: Entidade singleton que representa as Configurações de acesso condicional do Exchange OnPremises para um locatário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fe4dd79722392ea5c0e5e6487c3c3dbc3587d4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5a0e4151150b53947fceff1a3937e703256b42f8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566448"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940166"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>Tipo de recurso onPremisesConditionalAccessSettings
 
@@ -28,7 +28,7 @@ Entidade singleton que representa as Configurações de acesso condicional do Ex
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |enabled|Boolean|Indica se o acesso condicional local está habilitado para esta organização|
 |includedGroups|Coleção de GUIDs|Grupos de usuários que serão direcionados pelo acesso condicional local. Todos os usuários nesses grupos deverão ter dispositivos móveis gerenciados e compatíveis com o acesso a email.|
 |excludedGroups|Coleção de GUIDs|Grupos de usuários que estarão isentos ao acesso condicional local. Todos os usuários desses grupos ficarão isentos da política de acesso condicional.|
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "overrideDefaultRule": true
 }
 ```
-
 
 
 

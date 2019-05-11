@@ -1,15 +1,15 @@
 ---
 title: Obter Androidenterprisewificonfiguration.
 description: Leia as propriedades e as relações do objeto Androidenterprisewificonfiguration..
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eba7572805ba93d47ef01274fe6c15be1577d56c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2bc3eed6a1bcc6207b90936246c9ce04bbc89ba8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479691"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933015"
 ---
 # <a name="get-androidenterprisewificonfiguration"></a>Obter Androidenterprisewificonfiguration.
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 998
+Content-Length: 1165
 
 {
   "value": {
@@ -91,11 +91,13 @@ Content-Length: 998
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+    "usernameFormatString": "Username Format String value",
+    "passwordFormatString": "Password Format String value",
+    "preSharedKey": "Pre Shared Key value"
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Excluir windows10VpnConfiguration
 description: Exclui windows10VpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dba3ae63ad588a9e71336c36fc64445a8a75411a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 177d0ae755d3b5976b988084c656f49de5341af9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515586"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918406"
 ---
 # <a name="delete-windows10vpnconfiguration"></a>Excluir windows10VpnConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

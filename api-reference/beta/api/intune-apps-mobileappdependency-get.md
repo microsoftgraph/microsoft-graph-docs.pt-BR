@@ -1,15 +1,15 @@
 ---
 title: Obter mobileAppDependency
 description: Leia as propriedades e as relações do objeto mobileAppDependency.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: add44c591da6b0a970eedd800822191ef215ef6d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1ed575e48a2fb8d175d7d459c84a7fe9c6332c4f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489013"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935123"
 ---
 # <a name="get-mobileappdependency"></a>Obter mobileAppDependency
 
@@ -78,7 +78,6 @@ Content-Length: 291
   }
 }
 ```
-
 
 
 

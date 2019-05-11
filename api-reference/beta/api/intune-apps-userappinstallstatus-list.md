@@ -1,15 +1,15 @@
 ---
 title: Listar userAppInstallStatuses
 description: Listar Propriedades e relações dos objetos userAppInstallStatus.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 775d6680abb6f5620b1941dc14ee15720757fe26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2e9ddb8be8215e423d9a6bc2219c2180809b8628
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488782"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934880"
 ---
 # <a name="list-userappinstallstatuses"></a>Listar userAppInstallStatuses
 
@@ -78,7 +78,6 @@ Content-Length: 349
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Obter mobileAppRelationship
 description: Leia as propriedades e as relações do objeto mobileAppRelationship.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ca1c2334fe5cfc94370c8bedea3dcc32330fa42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c0164f7f01e3c6e043a9567fe64a21b5f331bf5e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488621"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935031"
 ---
 # <a name="get-mobileapprelationship"></a>Obter mobileAppRelationship
 
@@ -76,7 +76,6 @@ Content-Length: 226
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso rolePermission
 description: Contém o conjunto de ResourceActions que determina as permissões permitidas e não permitidas para cada função.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9bbd4782022faebcf56b8bf582e233fd5ba54f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c5ef360393e99b8c8a152596a2285cddd49d7e0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573036"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939025"
 ---
 # <a name="rolepermission-resource-type"></a>Tipo de recurso rolePermission
 
@@ -22,7 +22,7 @@ Contém o conjunto de ResourceActions que determina as permissões permitidas e 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|actions|Coleção de cadeias de caracteres|Ações permitidas-preTeridas|
+|actions|Coleção de cadeias de caracteres|Ações permitidas-preteridas|
 |resourceActions|Coleção [resourceAction](../resources/intune-rbac-resourceaction.md)|Ações de recurso que contêm um conjunto de permissões permitidas e não permitidas.|
 
 ## <a name="relationships"></a>Relações
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

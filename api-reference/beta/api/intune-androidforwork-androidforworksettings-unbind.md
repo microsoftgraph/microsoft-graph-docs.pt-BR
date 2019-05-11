@@ -1,15 +1,15 @@
 ---
 title: ação de desassociar
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc628f5241d7586f74e99b1cd882fcc3c064358f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bbc2878825e51bf4e25a0d9118ce41d1ae69a090
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498176"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938643"
 ---
 # <a name="unbind-action"></a>ação unbind
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Atualizar enterpriseCodeSigningCertificate
 description: Atualiza as propriedades de um objeto enterpriseCodeSigningCertificate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc97e3cceada031747dbbc32b40e0c9b6b8c31e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e53d669f47649489e6ff7801f7ea443c044b9fc3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496475"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936886"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>Atualizar enterpriseCodeSigningCertificate
 
@@ -51,12 +51,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [enterpr
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|conteúdo|Binary|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
+|conteúdo|Binária|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
-|SubjectName|String|O nome da entidade do certificado.|
-|Assunto|String|O valor de entidade para o certificado.|
-|issuerName|String|O nome do emissor do certificado.|
-|emissor|String|O valor do emissor para o certificado.|
+|SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
+|subject|Cadeia de caracteres|O valor de entidade para o certificado.|
+|issuerName|Cadeia de caracteres|O nome do emissor do certificado.|
+|emissor|Cadeia de caracteres|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
 |uploadDateTime|DateTimeOffset|A data/hora do certificado de codeSignação quando é carregado.|
 
@@ -107,7 +107,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

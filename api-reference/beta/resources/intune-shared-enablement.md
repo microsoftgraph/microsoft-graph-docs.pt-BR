@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração de habilitação
 description: Descreve a enumeração de habilitação da API do Microsoft Graph para o Intune, que oferece suporte a vários fluxos de trabalho.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e781e1c58427ea166f77f3c250e572cbd3520210
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4854b9209d749b86967cc4b8894431d05d785fe7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525226"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938664"
 ---
 # <a name="enablement-enum-type"></a>tipo de enumeração de habilitação
 
@@ -23,5 +23,5 @@ Valores possíveis de uma propriedade
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Valor padrão do dispositivo, sem intenção.|
-|enabled|1 |Habilita a configuração do dispositivo.|
-|deficiência|2 |Desabilita a configuração do dispositivo.|
+|enabled|1|Habilita a configuração do dispositivo.|
+|deficiência|duas|Desabilita a configuração do dispositivo.|

@@ -1,15 +1,15 @@
 ---
 title: Listar mobileAppRelationships
 description: Listar Propriedades e relações dos objetos mobileAppRelationship.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89aed8daf6939d3c2e9a68b1567fdd63f0b9a8ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f0a07a3a7721164e804c3600d0467d9955429621
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488824"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935003"
 ---
 # <a name="list-mobileapprelationships"></a>Listar mobileAppRelationships
 
@@ -75,7 +75,6 @@ Content-Length: 248
   ]
 }
 ```
-
 
 
 

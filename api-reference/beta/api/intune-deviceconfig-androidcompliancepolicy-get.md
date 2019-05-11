@@ -1,15 +1,15 @@
 ---
 title: Get androidCompliancePolicy
 description: Ler propriedades e relações do objeto androidCompliancePolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a4ac196e391bd9464001afebb7189c003458e54
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 91d8577bfa6b01ddff81e5f297ccfeaa66723782
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32481259"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933309"
 ---
 # <a name="get-androidcompliancepolicy"></a>Get androidCompliancePolicy
 
@@ -114,7 +114,6 @@ Content-Length: 1863
   }
 }
 ```
-
 
 
 

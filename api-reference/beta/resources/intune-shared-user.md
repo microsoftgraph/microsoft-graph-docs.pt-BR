@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso de usuário
 description: Representa um objeto de usuário do Azure Active Directory.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: daa6f7a4802341347f364040504368dc96d75e33
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9e99cd379d16896ca60bccef6170e256677e8e95
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548317"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938976"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -23,8 +23,8 @@ Representa um objeto de usuário do Azure Active Directory.
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar](../api/intune-shared-user-list.md) objetos users.|Conjunto [user](../resources/intune-shared-user.md)|Listar propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
-|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|[Usuário](../resources/intune-shared-user.md)|Ler propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
-|[Criar objeto user](../api/intune-shared-user-create.md) .|[Usuário](../resources/intune-shared-user.md)|Criar um novo objeto de [user](../resources/intune-shared-user.md).|
+|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|[usuário](../resources/intune-shared-user.md)|Ler propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
+|[Criar objeto user](../api/intune-shared-user-create.md) .|[usuário](../resources/intune-shared-user.md)|Criar um novo objeto de [user](../resources/intune-shared-user.md).|
 |[Excluir usuário](../api/intune-shared-user-delete.md).|Nenhum|Excluir [user](../resources/intune-shared-user.md).|
 |[Atualize](../api/intune-shared-user-update.md) o objeto do usuário.|[user](../resources/intune-shared-user.md)|Atualizar as propriedades de um objeto de [user](../resources/intune-shared-user.md).|
 |**Gerenciamento de dispositivos**|
@@ -45,7 +45,7 @@ Representa um objeto de usuário do Azure Active Directory.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do usuário.|
+|id|Cadeia de caracteres|Identificador exclusivo do usuário.|
 |**Integração**|
 |deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 

@@ -1,15 +1,15 @@
 ---
 title: Criar iosLobAppProvisioningConfigurationAssignment
 description: Criar um novo objeto iosLobAppProvisioningConfigurationAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68005d3f8682b61417a9b1a768b62a8ff5cf235e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b57788c96223073e1c3eb80acd19e3389d55daf3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496083"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936928"
 ---
 # <a name="create-ioslobappprovisioningconfigurationassignment"></a>Criar iosLobAppProvisioningConfigurationAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosLobAp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 233
   }
 }
 ```
-
 
 
 

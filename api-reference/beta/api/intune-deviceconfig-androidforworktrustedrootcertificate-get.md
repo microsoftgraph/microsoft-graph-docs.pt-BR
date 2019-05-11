@@ -1,15 +1,15 @@
 ---
 title: Obter androidForWorkTrustedRootCertificate
 description: Leia as propriedades e as relações do objeto androidForWorkTrustedRootCertificate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6812ca16fa83aa830cd7aabceb10713fb37a053c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1f71ab09553bc9d2b510072d6eb61a4a7e525c0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478074"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33932875"
 ---
 # <a name="get-androidforworktrustedrootcertificate"></a>Obter androidForWorkTrustedRootCertificate
 
@@ -86,7 +86,6 @@ Content-Length: 591
   }
 }
 ```
-
 
 
 

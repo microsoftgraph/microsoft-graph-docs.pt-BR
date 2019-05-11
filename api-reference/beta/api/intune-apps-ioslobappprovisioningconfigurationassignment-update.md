@@ -1,15 +1,15 @@
 ---
 title: Atualizar iosLobAppProvisioningConfigurationAssignment
 description: Atualiza as propriedades de um objeto iosLobAppProvisioningConfigurationAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1339dca15ded4ef725e732f9c07ba5d7564f87ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cb89d98eb4536f8cda959e3025cc7cec8dc6ebe7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495866"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937054"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>Atualizar iosLobAppProvisioningConfigurationAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosLobA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 233
   }
 }
 ```
-
 
 
 

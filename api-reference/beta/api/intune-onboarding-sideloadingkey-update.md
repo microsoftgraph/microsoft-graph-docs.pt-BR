@@ -1,15 +1,15 @@
 ---
 title: Atualizar sideLoadingKey
 description: Atualiza as propriedades de um objeto sideLoadingKey.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6eaab5e4fd2b12ce65c87304a47490447e6f3664
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 33e0e04a2caaeca4f4df111aa7ecca35e1d95e52
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527984"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899820"
 ---
 # <a name="update-sideloadingkey"></a>Atualizar sideLoadingKey
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [sideLoa
 |displayName|String|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
 |description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
 |totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
-|lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
+|lastUpdatedDateTime|Cadeia de caracteres|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
 
 
 
@@ -98,7 +98,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

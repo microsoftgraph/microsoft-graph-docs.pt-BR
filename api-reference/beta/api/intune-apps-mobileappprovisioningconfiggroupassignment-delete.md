@@ -1,15 +1,15 @@
 ---
 title: Excluir mobileAppProvisioningConfigGroupAssignment
 description: Exclui mobileAppProvisioningConfigGroupAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 328bad467a3c2f4923ca1076ca34530721724c9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a3f8f4dfe012bd203043de9539fc36b74b252406
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488642"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935060"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>Excluir mobileAppProvisioningConfigGroupAssignment
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

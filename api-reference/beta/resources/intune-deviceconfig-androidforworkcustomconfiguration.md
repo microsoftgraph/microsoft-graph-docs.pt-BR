@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidForWorkCustomConfiguration
 description: Configuração personalizada do Android para trabalho
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 229d098f5443dfcc5ccdc5e4ad161404e0d7f169
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ca4f7ead11c39a7c057687a905377dd9109113b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556092"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949056"
 ---
 # <a name="androidforworkcustomconfiguration-resource-type"></a>tipo de recurso androidForWorkCustomConfiguration
 
@@ -87,7 +87,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

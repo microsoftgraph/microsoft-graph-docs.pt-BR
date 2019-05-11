@@ -1,15 +1,15 @@
 ---
 title: Excluir androidForWorkCustomConfiguration
 description: Exclui androidForWorkCustomConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e14502808ae68077fccd766c7a9869dd84b7bda2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc99fd62c4b2dacb41d254fd027b3a64447507e2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479292"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933715"
 ---
 # <a name="delete-androidforworkcustomconfiguration"></a>Excluir androidForWorkCustomConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

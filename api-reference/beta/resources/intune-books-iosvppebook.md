@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso iosVppEBook
 description: Uma classe que contém as propriedades do livro eletrônico Vpp iOS.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e792e79520c1ad02c90d2fcd54da995ea81ec6e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9aa33133cdf517199aa9a5b135a5b904be77c16b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558395"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949301"
 ---
 # <a name="iosvppebook-resource-type"></a>Tipo de recurso iosVppEBook
 
@@ -35,20 +35,20 @@ Herda de [managedEBook](../resources/intune-books-managedebook.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|String|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |description|String|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|publisher|String|Publicador. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|Cadeia de caracteres|Publicador. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |informationUrl|String|A URL de informações adicionais. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|String|A URL da declaração de privacidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
-|appleId|String|O Apple ID associado ao token Vpp.|
-|vppOrganizationName|String|O nome da organização do token Vpp.|
+|appleId|Cadeia de caracteres|O Apple ID associado ao token Vpp.|
+|vppOrganizationName|Cadeia de caracteres|O nome da organização do token Vpp.|
 |genres|Coleção de cadeia de caracteres|Gêneros.|
-|idioma|String|Idioma.|
+|idioma|Cadeia de caracteres|Idioma.|
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
 |usedLicenseCount|Int32|Contagem de licenças usadas.|
@@ -103,7 +103,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

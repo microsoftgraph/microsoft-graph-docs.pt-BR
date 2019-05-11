@@ -1,15 +1,15 @@
 ---
 title: Listar windowsUniversalAppXContainedApps
 description: Listar Propriedades e relações dos objetos windowsUniversalAppXContainedApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d318265dd4a21ca94a435b90bf12c7a5eba513ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c32f9e3457707e82747d72675f42867f15527e1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32485562"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934429"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Listar windowsUniversalAppXContainedApps
 
@@ -76,7 +76,6 @@ Content-Length: 216
   ]
 }
 ```
-
 
 
 

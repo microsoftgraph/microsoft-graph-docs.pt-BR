@@ -1,15 +1,15 @@
 ---
 title: Listar unsupportedDeviceConfigurations
 description: Listar Propriedades e relações dos objetos unsupportedDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be68994f7d333ed428039093fda1fb6b98e52af5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 00a4f43e5f21e77cee7a17602d6cec5a5defc71c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32517817"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922035"
 ---
 # <a name="list-unsupporteddeviceconfigurations"></a>Listar unsupportedDeviceConfigurations
 
@@ -91,7 +91,6 @@ Content-Length: 799
   ]
 }
 ```
-
 
 
 

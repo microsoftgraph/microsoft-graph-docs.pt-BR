@@ -1,15 +1,15 @@
 ---
 title: Listar webApps
 description: Listar propriedades e relações dos objetos webApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a99e932aa4069f608d8a1de8870e486efb62156
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8040a846a4f14dac975c6993a94bbdf4de4a226d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488404"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934863"
 ---
 # <a name="list-webapps"></a>Listar webApps
 
@@ -98,7 +98,6 @@ Content-Length: 1092
   ]
 }
 ```
-
 
 
 
