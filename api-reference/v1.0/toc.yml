@@ -20,7 +20,7 @@ items:
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
   - name: Usar a API
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/use-the-api?toc=./ref/toc.json
       - name: Paginação
         href: /graph/paging?toc=./ref/toc.json
@@ -62,32 +62,32 @@ items:
   - name: Migrar
     expanded: false
     items:
-      - name: Gráfico do Azure AD
+      - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: Visão geral
             href: /graph/migrate-azure-ad-graph-overview?toc=./ref/toc.json
-          - name: Lista de verificação para migrar aplicativos
+          - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
-          - name: '1: analisar as diferenças'
+          - name: '1: Examinar as diferenças'
             expanded: true
             items:
-              - name: Quest
+              - name: Solicitações
                 href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
               - name: Recursos de serviço
                 href: /graph/migrate-azure-ad-graph-feature-differences?toc=./ref/toc.json
               - name: Tipos de recursos
                 href: /graph/migrate-azure-ad-graph-resource-differences?toc=./ref/toc.json
-              - name: Propriedades da entidade
+              - name: Propriedades de entidade
                 href: /graph/migrate-azure-ad-graph-property-differences?toc=./ref/toc.json
               - name: Métodos
                 href: /graph/migrate-azure-ad-graph-method-differences?toc=./ref/toc.json
-          - name: '2: examinar o uso da API'
+          - name: '2: Examinar uso da API'
             href: /graph/migrate-azure-ad-graph-audit-api-use?toc=./ref/toc.json
-          - name: '3: examinar os detalhes do aplicativo'
+          - name: '3: Examinar detalhes do aplicativo'
             expanded: true
             items:
-              - name: Registro de aplicativo
+              - name: Registro do aplicativo
                 href: /graph/migrate-azure-ad-graph-app-registration?toc=./ref/toc.json
               - name: Bibliotecas de autenticação
                 href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
@@ -103,7 +103,7 @@ items:
         href: /graph/sdks/sdk-installation?toc=./ref/toc.json
       - name: Criar um cliente
         href: /graph/sdks/create-client?toc=./ref/toc.json
-      - name: Escolher um provedor de autenticação
+      - name: Escolher um provedor de autenticação.
         href: /graph/sdks/choose-authentication-providers?toc=./ref/toc.json
   - name: Recursos
     items:
@@ -838,7 +838,7 @@ items:
               - name: Aplicativo do macOS Office Suite
                 href: resources/intune-apps-macosofficesuiteapp.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-apps-macosofficesuiteapp-list.md
                   - name: Obter
                     href: api/intune-apps-macosofficesuiteapp-get.md
@@ -851,7 +851,7 @@ items:
               - name: Aplicativo LOB do android gerenciado
                 href: resources/intune-apps-managedandroidlobapp.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-apps-managedandroidlobapp-list.md
                   - name: Obter
                     href: api/intune-apps-managedandroidlobapp-get.md
@@ -864,7 +864,7 @@ items:
               - name: Aplicativo da loja do Android gerenciado
                 href: resources/intune-apps-managedandroidstoreapp.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-apps-managedandroidstoreapp-list.md
                   - name: Obter
                     href: api/intune-apps-managedandroidstoreapp-get.md
@@ -2370,7 +2370,7 @@ items:
                     href: api/intune-mam-defaultmanagedappprotection-list.md
                   - name: Obter
                     href: api/intune-mam-defaultmanagedappprotection-get.md
-                  - name: Create
+                  - name: Criar
                     href: api/intune-mam-defaultmanagedappprotection-create.md
                   - name: Excluir
                     href: api/intune-mam-defaultmanagedappprotection-delete.md
@@ -3825,12 +3825,12 @@ items:
             items:
               - name: Listar classificações de segurança
                 href: api/security-list-securescores.md
-              - name: Obter pontuação segura
+              - name: Obter classificação de segurança
                 href: api/securescore-get.md
           - name: Perfis de controle da classificação de segurança
             href: resources/securescorecontrolprofile.md
             items:
-              - name: Obter o perfil de controle de Pontuação segura
+              - name: Obter perfis de controle da classificação de segurança
                 href: api/securescorecontrolprofile-get.md
               - name: Listar perfis de controle da classificação de segurança
                 href: api/security-list-securescorecontrolprofiles.md
@@ -4227,47 +4227,49 @@ items:
               - name: Listar intervalo
                 href: api/nameditem-range.md
       - name: Ferramentas
-      - name: Extensões abertas
-        href: resources/opentypeextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+        expanded: true
         items:
-          - name: Criar extensão aberta
-            href: api/opentypeextension-post-opentypeextension.md
-          - name: Obter extensão aberta
-            href: api/opentypeextension-get.md
-          - name: Atualizar extensão aberta
-            href: api/opentypeextension-update.md
-          - name: Excluir extensão aberta
-            href: api/opentypeextension-delete.md
-      - name: Extensões de esquema
-        href: resources/schemaextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-        items:
-          - name: Listar extensões de esquema
-            href: api/schemaextension-list.md
-          - name: Criar extensão de esquema
-            href: api/schemaextension-post-schemaextensions.md
-          - name: Obter extensão de esquema
-            href: api/schemaextension-get.md
-          - name: Atualizar extensão de esquema
-            href: api/schemaextension-update.md
-          - name: Excluir extensão de esquema
-            href: api/schemaextension-delete.md
-      - name: Notificações de alteração
-        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-        items:
-          - name: Visão Geral
-            href: resources/webhooks.md
-          - name: Assinatura
-            href: resources/subscription.md
+          - name: Extensões abertas
+            href: resources/opentypeextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
-              - name: Listar assinatura
-                href: api/subscription-list.md
-              - name: Obter assinatura
-                href: api/subscription-get.md
-              - name: Criar assinatura
-                href: api/subscription-post-subscriptions.md
-              - name: Atualizar assinatura
-                href: api/subscription-update.md
-              - name: Excluir assinatura
-                href: api/subscription-delete.md
+              - name: Criar extensão aberta
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Obter extensão aberta
+                href: api/opentypeextension-get.md
+              - name: Atualizar extensão aberta
+                href: api/opentypeextension-update.md
+              - name: Excluir extensão aberta
+                href: api/opentypeextension-delete.md
+          - name: Extensões de esquema
+            href: resources/schemaextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: Listar extensões de esquema
+                href: api/schemaextension-list.md
+              - name: Criar extensão de esquema
+                href: api/schemaextension-post-schemaextensions.md
+              - name: Obter extensão de esquema
+                href: api/schemaextension-get.md
+              - name: Atualizar extensão de esquema
+                href: api/schemaextension-update.md
+              - name: Excluir extensão de esquema
+                href: api/schemaextension-delete.md
+          - name: Notificações de alteração
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: Visão Geral
+                href: resources/webhooks.md
+              - name: Assinatura
+                href: resources/subscription.md
+                items:
+                  - name: Listar assinatura
+                    href: api/subscription-list.md
+                  - name: Obter assinatura
+                    href: api/subscription-get.md
+                  - name: Criar assinatura
+                    href: api/subscription-post-subscriptions.md
+                  - name: Atualizar assinatura
+                    href: api/subscription-update.md
+                  - name: Excluir assinatura
+                    href: api/subscription-delete.md

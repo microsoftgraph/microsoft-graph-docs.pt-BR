@@ -3,10 +3,8 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workbookTableRow = await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Rows
+var rows = await graphClient.Me.Drive.Root.Workbook.Worksheets["{id}"].Range('A1:Z10').VisibleView().Rows
     .Request()
-    .Skip(5)
-    .Top(5)
     .GetAsync();
 
 ```

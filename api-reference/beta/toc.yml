@@ -20,7 +20,7 @@ items:
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
   - name: Usar a API
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/use-the-api?toc=./ref/toc.json
       - name: Paginação
         href: /graph/paging?toc=./ref/toc.json
@@ -62,32 +62,32 @@ items:
   - name: Migrar
     expanded: false
     items:
-      - name: Gráfico do Azure AD
+      - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: Visão geral
             href: /graph/migrate-azure-ad-graph-overview?toc=./ref/toc.json
-          - name: Lista de verificação para migrar aplicativos
+          - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
-          - name: '1: analisar as diferenças'
+          - name: '1: Examinar as diferenças'
             expanded: true
             items:
-              - name: Quest
+              - name: Solicitações
                 href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
               - name: Recursos de serviço
                 href: /graph/migrate-azure-ad-graph-feature-differences?toc=./ref/toc.json
               - name: Tipos de recursos
                 href: /graph/migrate-azure-ad-graph-resource-differences?toc=./ref/toc.json
-              - name: Propriedades da entidade
+              - name: Propriedades de entidade
                 href: /graph/migrate-azure-ad-graph-property-differences?toc=./ref/toc.json
               - name: Métodos
                 href: /graph/migrate-azure-ad-graph-method-differences?toc=./ref/toc.json
-          - name: '2: examinar o uso da API'
+          - name: '2: Examinar uso da API'
             href: /graph/migrate-azure-ad-graph-audit-api-use?toc=./ref/toc.json
-          - name: '3: examinar os detalhes do aplicativo'
+          - name: '3: Examinar detalhes do aplicativo'
             expanded: true
             items:
-              - name: Registro de aplicativo
+              - name: Registro do aplicativo
                 href: /graph/migrate-azure-ad-graph-app-registration?toc=./ref/toc.json
               - name: Bibliotecas de autenticação
                 href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
@@ -103,7 +103,7 @@ items:
         href: /graph/sdks/sdk-installation?toc=./ref/toc.json
       - name: Criar um cliente
         href: /graph/sdks/create-client?toc=./ref/toc.json
-      - name: Escolher um provedor de autenticação
+      - name: Escolher um provedor de autenticação.
         href: /graph/sdks/choose-authentication-providers?toc=./ref/toc.json
   - name: Recursos
     items:
@@ -643,7 +643,7 @@ items:
                 href: api/calendar-delete.md
               - name: Listar modo de exibição de calendário
                 href: api/calendar-list-calendarview.md
-              - name: Modo de exibição de lembrete
+              - name: Modo de exibição Lembrete
                 href: api/user-reminderview.md
               - name: Listar eventos
                 href: api/calendar-list-events.md
@@ -1671,6 +1671,8 @@ items:
                     href: api/intune-apps-mobileappdependency-delete.md
                   - name: Atualizar
                     href: api/intune-apps-mobileappdependency-update.md
+              - name: Tipo de dependência do aplicativo móvel
+                href: resources/intune-apps-mobileappdependencytype.md
               - name: Status de instalação do aplicativo móvel
                 href: resources/intune-apps-mobileappinstallstatus.md
                 items:
@@ -2148,7 +2150,7 @@ items:
               - name: Perfil de registro de iOS do DEP
                 href: resources/intune-enrollment-depiosenrollmentprofile.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-enrollment-depiosenrollmentprofile-list.md
                   - name: Obter
                     href: api/intune-enrollment-depiosenrollmentprofile-get.md
@@ -2161,7 +2163,7 @@ items:
               - name: Perfil de registro de macOS do DEP
                 href: resources/intune-enrollment-depmacosenrollmentprofile.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-enrollment-depmacosenrollmentprofile-list.md
                   - name: Obter
                     href: api/intune-enrollment-depmacosenrollmentprofile-get.md
@@ -2575,7 +2577,7 @@ items:
               - name: Configuração de Wi-Fi corporativa do Android for Work
                 href: resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-get.md
@@ -2588,7 +2590,7 @@ items:
               - name: Configuração geral do dispositivo Android for Work
                 href: resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md
@@ -3370,6 +3372,17 @@ items:
                     href: api/intune-deviceconfig-deviceconfigurationuserstatus-update.md
               - name: Tipo de proteção de credenciais de autoridade do sistema local de proteção de dispositivos
                 href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
+              - name: Emissor de credenciais derivadas de gerenciamento de dispositivos
+                href: resources/intune-deviceconfig-devicemanagementderivedcredentialissuer.md
+              - name: Tipo de notificação de credencial derivada de gerenciamento de dispositivo
+                href: resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md
+              - name: Configurações de credenciais derivadas de gerenciamento de dispositivos
+                href: resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md
+                items:
+                  - name: Obter
+                    href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-get.md
+                  - name: Atualizar
+                    href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-update.md
               - name: Configurações de gerenciamento de dispositivo
                 href: resources/intune-deviceconfig-devicemanagementsettings.md
               - name: Usuário ou grupo local de direitos de usuário de gerenciamento de dispositivos
@@ -3440,6 +3453,8 @@ items:
                     href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
               - name: Tipo de licença de atualização de edição
                 href: resources/intune-deviceconfig-editionupgradelicensetype.md
+              - name: Tipo de certificado de email
+                href: resources/intune-deviceconfig-emailcertificatetype.md
               - name: Duração da sincronização de emails
                 href: resources/intune-deviceconfig-emailsyncduration.md
               - name: Agenda de sincronização de emails
@@ -3635,7 +3650,7 @@ items:
               - name: Caixa de texto de apresentação da política de grupo
                 href: resources/intune-grouppolicy-grouppolicypresentationtextbox.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-grouppolicy-grouppolicypresentationtextbox-list.md
                   - name: Obter
                     href: api/intune-grouppolicy-grouppolicypresentationtextbox-get.md
@@ -3661,7 +3676,7 @@ items:
               - name: Valor booliano da apresentação da política de grupo
                 href: resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-grouppolicy-grouppolicypresentationvalueboolean-list.md
                   - name: Obter
                     href: api/intune-grouppolicy-grouppolicypresentationvalueboolean-get.md
@@ -3790,6 +3805,19 @@ items:
                     href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
                   - name: Atualizar
                     href: api/intune-deviceconfig-ioscustomconfiguration-update.md
+              - name: configuração de autenticação de credencial derivada do iOS
+                href: resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md
+                items:
+                  - name: Lista
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-list.md
+                  - name: Obter
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-get.md
+                  - name: Criar
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-create.md
+                  - name: Excluir
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-update.md
               - name: Configuração de recursos do dispositivo iOS
                 href: resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md
                 items:
@@ -3860,7 +3888,7 @@ items:
               - name: Configuração geral do dispositivo iOS
                 href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
@@ -4029,7 +4057,7 @@ items:
               - name: Base de perfil de certificado do macOS
                 href: resources/intune-deviceconfig-macoscertificateprofilebase.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-macoscertificateprofilebase-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-macoscertificateprofilebase-get.md
@@ -4062,7 +4090,7 @@ items:
               - name: Configuração de recursos do dispositivo macOS
                 href: resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
@@ -4075,7 +4103,7 @@ items:
               - name: Configuração de proteção de ponto de extremidade do macOS
                 href: resources/intune-deviceconfig-macosendpointprotectionconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-macosendpointprotectionconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-macosendpointprotectionconfiguration-get.md
@@ -4088,7 +4116,7 @@ items:
               - name: Configuração de Wi-Fi corporativa do macOS
                 href: resources/intune-deviceconfig-macosenterprisewificonfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-macosenterprisewificonfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-macosenterprisewificonfiguration-get.md
@@ -4426,7 +4454,7 @@ items:
               - name: Certificado PFX do usuário
                 href: resources/intune-raimportcerts-userpfxcertificate.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-raimportcerts-userpfxcertificate-list.md
                   - name: Obter
                     href: api/intune-raimportcerts-userpfxcertificate-get.md
@@ -4498,7 +4526,7 @@ items:
               - name: Política de conformidade do Windows 10
                 href: resources/intune-deviceconfig-windows10compliancepolicy.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-windows10compliancepolicy-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windows10compliancepolicy-get.md
@@ -4511,7 +4539,7 @@ items:
               - name: Configuração personalizada do Windows 10
                 href: resources/intune-deviceconfig-windows10customconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-windows10customconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windows10customconfiguration-get.md
@@ -4725,7 +4753,7 @@ items:
               - name: Perfil de certificado do SCEP do Windows 8.1
                 href: resources/intune-deviceconfig-windows81scepcertificateprofile.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-windows81scepcertificateprofile-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windows81scepcertificateprofile-get.md
@@ -4868,7 +4896,7 @@ items:
               - name: Configuração de quiosque do Windows
                 href: resources/intune-deviceconfig-windowskioskconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-windowskioskconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windowskioskconfiguration-get.md
@@ -4934,7 +4962,7 @@ items:
               - name: Configuração geral do Windows Phone 8.1
                 href: resources/intune-deviceconfig-windowsphone81generalconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
@@ -5092,7 +5120,7 @@ items:
               - name: Configuração de EAP corporativa de Wi-Fi do Windows
                 href: resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md
@@ -5114,7 +5142,7 @@ items:
               - name: Solicitação de conjunto de log do aplicativo
                 href: resources/intune-devices-applogcollectionrequest.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-devices-applogcollectionrequest-list.md
                   - name: Obter
                     href: api/intune-devices-applogcollectionrequest-get.md
@@ -5140,7 +5168,7 @@ items:
               - name: Evento de solução de problemas de token do Apple VPP
                 href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-troubleshooting-applevpptokentroubleshootingevent-list.md
                   - name: Obter
                     href: api/intune-troubleshooting-applevpptokentroubleshootingevent-get.md
@@ -5155,7 +5183,7 @@ items:
               - name: Evento de auditoria
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-auditing-auditevent-list.md
                   - name: Obter
                     href: api/intune-auditing-auditevent-get.md
@@ -5316,7 +5344,7 @@ items:
               - name: Definição de configuração complexa de gerenciamento de dispositivos
                 href: resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-list.md
                   - name: Obter
                     href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-get.md
@@ -5329,7 +5357,7 @@ items:
               - name: Instância de configuração complexa de gerenciamento de dispositivos
                 href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
                   - name: Obter
                     href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
@@ -5352,7 +5380,7 @@ items:
               - name: Instância de configuração de inteiro do gerenciamento de dispositivos
                 href: resources/intune-deviceintent-devicemanagementintegersettinginstance.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceintent-devicemanagementintegersettinginstance-list.md
                   - name: Obter
                     href: api/intune-deviceintent-devicemanagementintegersettinginstance-get.md
@@ -5365,7 +5393,7 @@ items:
               - name: Tentativa do gerenciamento de dispositivos
                 href: resources/intune-deviceintent-devicemanagementintent.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceintent-devicemanagementintent-list.md
                   - name: Obter
                     href: api/intune-deviceintent-devicemanagementintent-get.md
@@ -5377,6 +5405,8 @@ items:
                     href: api/intune-deviceintent-devicemanagementintent-update.md
                   - name: ação updateSettings
                     href: api/intune-deviceintent-devicemanagementintent-updatesettings.md
+                  - name: ação migrateToTemplate
+                    href: api/intune-deviceintent-devicemanagementintent-migratetotemplate.md
                   - name: atribuir ação
                     href: api/intune-deviceintent-devicemanagementintent-assign.md
               - name: Atribuição de tentativa do gerenciamento de dispositivos
@@ -5537,7 +5567,7 @@ items:
               - name: Categoria de configuração do gerenciamento de dispositivos
                 href: resources/intune-deviceintent-devicemanagementsettingcategory.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceintent-devicemanagementsettingcategory-list.md
                   - name: Obter
                     href: api/intune-deviceintent-devicemanagementsettingcategory-get.md
@@ -5550,7 +5580,7 @@ items:
               - name: Definição de configuração do gerenciamento de dispositivos
                 href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
                   - name: Obter
                     href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
@@ -5565,7 +5595,7 @@ items:
               - name: Instância de configuração do gerenciamento de dispositivos
                 href: resources/intune-deviceintent-devicemanagementsettinginstance.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceintent-devicemanagementsettinginstance-list.md
                   - name: Obter
                     href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
@@ -5580,7 +5610,7 @@ items:
               - name: Instância de configuração da cadeia de caracteres do gerenciamento de dispositivos
                 href: resources/intune-deviceintent-devicemanagementstringsettinginstance.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceintent-devicemanagementstringsettinginstance-list.md
                   - name: Obter
                     href: api/intune-deviceintent-devicemanagementstringsettinginstance-get.md
@@ -5752,6 +5782,8 @@ items:
                     href: api/intune-devices-manageddevice-playlostmodesound.md
                   - name: Ação setDeviceName
                     href: api/intune-devices-manageddevice-setdevicename.md
+                  - name: ação rotateFileVaultKey
+                    href: api/intune-devices-manageddevice-rotatefilevaultkey.md
                   - name: Ação retire
                     href: api/intune-devices-manageddevice-retire.md
                   - name: ação wipe
@@ -5933,7 +5965,7 @@ items:
               - name: Auditoria de ação remota
                 href: resources/intune-devices-remoteactionaudit.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-devices-remoteactionaudit-list.md
                   - name: Obter
                     href: api/intune-devices-remoteactionaudit-get.md
@@ -5948,7 +5980,7 @@ items:
               - name: Parceiro de assistência remota
                 href: resources/intune-remoteassistance-remoteassistancepartner.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-remoteassistance-remoteassistancepartner-list.md
                   - name: Obter
                     href: api/intune-remoteassistance-remoteassistancepartner-get.md
@@ -5970,12 +6002,25 @@ items:
                 href: resources/intune-devices-revokeapplevpplicensesactionresult.md
               - name: Executar cronograma
                 href: resources/intune-devices-runschedule.md
+              - name: Resumo do estado de categoria da linha de base de segurança
+                href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
+                items:
+                  - name: Lista
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
               - name: Estado de conformidade da linha de base de segurança
                 href: resources/intune-deviceintent-securitybaselinecompliancestate.md
               - name: Estado do dispositivo de linha de base de segurança
                 href: resources/intune-deviceintent-securitybaselinedevicestate.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceintent-securitybaselinedevicestate-list.md
                   - name: Obter
                     href: api/intune-deviceintent-securitybaselinedevicestate-get.md
@@ -5985,32 +6030,6 @@ items:
                     href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
                   - name: Atualizar
                     href: api/intune-deviceintent-securitybaselinedevicestate-update.md
-              - name: Estado de configuração da linha de base de segurança
-                href: resources/intune-deviceintent-securitybaselinesettingstate.md
-                items:
-                  - name: Listar
-                    href: api/intune-deviceintent-securitybaselinesettingstate-list.md
-                  - name: Obter
-                    href: api/intune-deviceintent-securitybaselinesettingstate-get.md
-                  - name: Criar
-                    href: api/intune-deviceintent-securitybaselinesettingstate-create.md
-                  - name: Excluir
-                    href: api/intune-deviceintent-securitybaselinesettingstate-delete.md
-                  - name: Atualizar
-                    href: api/intune-deviceintent-securitybaselinesettingstate-update.md
-              - name: Estado da linha de base de segurança
-                href: resources/intune-deviceintent-securitybaselinestate.md
-                items:
-                  - name: Listar
-                    href: api/intune-deviceintent-securitybaselinestate-list.md
-                  - name: Obter
-                    href: api/intune-deviceintent-securitybaselinestate-get.md
-                  - name: Criar
-                    href: api/intune-deviceintent-securitybaselinestate-create.md
-                  - name: Excluir
-                    href: api/intune-deviceintent-securitybaselinestate-delete.md
-                  - name: Atualizar
-                    href: api/intune-deviceintent-securitybaselinestate-update.md
               - name: Resumo do estado da linha de base de segurança
                 href: resources/intune-deviceintent-securitybaselinestatesummary.md
                 items:
@@ -6210,7 +6229,7 @@ items:
               - name: Atribuição do perfil de identidade visual do Intune
                 href: resources/intune-wip-intunebrandingprofileassignment.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-wip-intunebrandingprofileassignment-list.md
                   - name: Obter
                     href: api/intune-wip-intunebrandingprofileassignment-get.md
@@ -6359,7 +6378,7 @@ items:
               - name: Configuração direcionada de aplicativo gerenciado
                 href: resources/intune-mam-targetedmanagedappconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-mam-targetedmanagedappconfiguration-list.md
                   - name: Obter
                     href: api/intune-mam-targetedmanagedappconfiguration-get.md
@@ -6420,7 +6439,7 @@ items:
               - name: Arquivo do bloqueador de aplicativos da proteção de informações do Windows
                 href: resources/intune-mam-windowsinformationprotectionapplockerfile.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
                   - name: Obter
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
@@ -6437,7 +6456,7 @@ items:
               - name: Registro de dispositivo de proteção de informações do Windows
                 href: resources/intune-mam-windowsinformationprotectiondeviceregistration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-mam-windowsinformationprotectiondeviceregistration-list.md
                   - name: Obter
                     href: api/intune-mam-windowsinformationprotectiondeviceregistration-get.md
@@ -6510,7 +6529,7 @@ items:
               - name: Configuração de registro do dispositivo
                 href: resources/intune-onboarding-deviceenrollmentconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-onboarding-deviceenrollmentconfiguration-list.md
                   - name: Obter
                     href: api/intune-onboarding-deviceenrollmentconfiguration-get.md
@@ -6634,7 +6653,7 @@ items:
               - name: Conector de defesa contra ameaças móveis
                 href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                   - name: Obter
                     href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -6656,7 +6675,7 @@ items:
               - name: Organização
                 href: resources/intune-onboarding-organization.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-onboarding-organization-list.md
                   - name: Obter
                     href: api/intune-onboarding-organization-get.md
@@ -7496,7 +7515,7 @@ items:
               - name: Modelo de fluxo de negócios
                 href: resources/businessflowtemplate.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/businessflowtemplate-list.md
               - name: Programa
                 href: resources/program.md
@@ -7941,7 +7960,7 @@ items:
               - name: Definições de função
                 href: resources/governanceroledefinition.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/governanceroledefinition-list.md
                   - name: Obter
                     href: api/governanceroledefinition-get.md
@@ -7957,7 +7976,7 @@ items:
               - name: Atribuições de função
                 href: resources/governanceroleassignment.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/governanceroleassignment-list.md
                   - name: Obter
                     href: api/governanceroleassignment-get.md
@@ -8606,7 +8625,7 @@ items:
       - name: Segurança
         displayname: 'Security API, Microsoft Graph Security API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/security-api-overview.md
           - name: Ações
             href: resources/securityaction.md
@@ -9093,7 +9112,7 @@ items:
             items:
               - name: Listar
                 href: api/outlookuser-list-tasks.md
-              - name: Criar
+              - name: Create
                 href: api/outlookuser-post-tasks.md
               - name: Obter
                 href: api/outlooktask-get.md
@@ -9112,7 +9131,7 @@ items:
             items:
               - name: Listar
                 href: api/outlookuser-list-taskfolders.md
-              - name: Criar
+              - name: Create
                 href: api/outlookuser-post-taskfolders.md
               - name: Obter
                 href: api/outlooktaskfolder-get.md
@@ -9129,7 +9148,7 @@ items:
             items:
               - name: Listar
                 href: api/outlookuser-list-taskgroups.md
-              - name: Criar
+              - name: Create
                 href: api/outlookuser-post-taskgroups.md
               - name: Obter
                 href: api/outlooktaskgroup-get.md
@@ -9302,47 +9321,49 @@ items:
               - name: Listar intervalo
                 href: api/nameditem-range.md
       - name: Ferramentas
-      - name: Extensões abertas
-        href: resources/opentypeextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+        expanded: true
         items:
-          - name: Criar extensão aberta
-            href: api/opentypeextension-post-opentypeextension.md
-          - name: Obter extensão aberta
-            href: api/opentypeextension-get.md
-          - name: Atualizar extensão aberta
-            href: api/opentypeextension-update.md
-          - name: Excluir extensão aberta
-            href: api/opentypeextension-delete.md
-      - name: Extensões de esquema
-        href: resources/schemaextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-        items:
-          - name: Listar extensões de esquema
-            href: api/schemaextension-list.md
-          - name: Criar extensão de esquema
-            href: api/schemaextension-post-schemaextensions.md
-          - name: Obter extensão de esquema
-            href: api/schemaextension-get.md
-          - name: Atualizar extensão de esquema
-            href: api/schemaextension-update.md
-          - name: Excluir extensão de esquema
-            href: api/schemaextension-delete.md
-      - name: Notificações de alteração
-        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-        items:
-          - name: Visão Geral
-            href: resources/webhooks.md
-          - name: Assinatura
-            href: resources/subscription.md
+          - name: Extensões abertas
+            href: resources/opentypeextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
-              - name: Listar assinatura
-                href: api/subscription-list.md
-              - name: Obter assinatura
-                href: api/subscription-get.md
-              - name: Criar assinatura
-                href: api/subscription-post-subscriptions.md
-              - name: Atualizar assinatura
-                href: api/subscription-update.md
-              - name: Excluir assinatura
-                href: api/subscription-delete.md
+              - name: Criar extensão aberta
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Obter extensão aberta
+                href: api/opentypeextension-get.md
+              - name: Atualizar extensão aberta
+                href: api/opentypeextension-update.md
+              - name: Excluir extensão aberta
+                href: api/opentypeextension-delete.md
+          - name: Extensões de esquema
+            href: resources/schemaextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: Listar extensões de esquema
+                href: api/schemaextension-list.md
+              - name: Criar extensão de esquema
+                href: api/schemaextension-post-schemaextensions.md
+              - name: Obter extensão de esquema
+                href: api/schemaextension-get.md
+              - name: Atualizar extensão de esquema
+                href: api/schemaextension-update.md
+              - name: Excluir extensão de esquema
+                href: api/schemaextension-delete.md
+          - name: Notificações de alteração
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: Visão Geral
+                href: resources/webhooks.md
+              - name: Assinatura
+                href: resources/subscription.md
+                items:
+                  - name: Listar assinatura
+                    href: api/subscription-list.md
+                  - name: Obter assinatura
+                    href: api/subscription-get.md
+                  - name: Criar assinatura
+                    href: api/subscription-post-subscriptions.md
+                  - name: Atualizar assinatura
+                    href: api/subscription-update.md
+                  - name: Excluir assinatura
+                    href: api/subscription-delete.md
