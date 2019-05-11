@@ -1,15 +1,15 @@
 ---
 title: Obter windowsAutopilotDeviceIdentity
 description: Leia as propriedades e as relações do objeto windowsAutopilotDeviceIdentity.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 23e76d4de1b06f999563f8be33dc198dbad79950
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9f54778d59a8c611aa3b348477ae6ab7ff81eebd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532573"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908228"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>Obter windowsAutopilotDeviceIdentity
 
@@ -94,7 +94,6 @@ Content-Length: 1145
   }
 }
 ```
-
 
 
 

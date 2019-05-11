@@ -1,15 +1,15 @@
 ---
 title: Atualizar deviceManagementIntentUserState
 description: Atualiza as propriedades de um objeto deviceManagementIntentUserState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4590a77b20cd5584c4d3edc885e869ba8d3064a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ea5718c3deaae9472cc2a601ddc5614eaebfde4b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507767"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915927"
 ---
 # <a name="update-devicemanagementintentuserstate"></a>Atualizar deviceManagementIntentUserState
 
@@ -51,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID|
-|userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
+|userPrincipalName|Cadeia de caracteres|O nome principal do usuário que está sendo relatado em um dispositivo|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceCount|Int32|Contagem de dispositivos que pertencem a um usuário para uma intenção|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação de um relatório de intenção|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado do usuário para uma intenção. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado do usuário para uma intenção. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 
 
 
@@ -98,7 +98,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

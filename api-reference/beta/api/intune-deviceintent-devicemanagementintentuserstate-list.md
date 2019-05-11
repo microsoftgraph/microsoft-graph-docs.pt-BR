@@ -1,15 +1,15 @@
 ---
 title: Listar deviceManagementIntentUserStates
 description: Listar Propriedades e relações dos objetos deviceManagementIntentUserState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8bbe661255abad4329e3a3da867fce68588edc1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 874afc8ef583c0d7626e2cc01e3b5aab263bc6be
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507788"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915871"
 ---
 # <a name="list-devicemanagementintentuserstates"></a>Listar deviceManagementIntentUserStates
 
@@ -78,7 +78,6 @@ Content-Length: 385
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso mediaContentRatingAustralia
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5703da7bcc21cc84b0f133e9a6b653e1b22031c3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9fc72352f667f0d5b6a3801b10582b6707489ed0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572770"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944926"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>Tipo de recurso mediaContentRatingAustralia
 
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
-
 
 
 
