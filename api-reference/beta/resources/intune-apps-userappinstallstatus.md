@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso userAppInstallStatus
 description: Contém propriedades para o status de instalação de um usuário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3efd555f4b4a728e9a4ae660eac9568cb7e3b2a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2f8c4b31a3c30210c1fbf9de6af5f7d00a939ea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555105"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949700"
 ---
 # <a name="userappinstallstatus-resource-type"></a>tipo de recurso userAppInstallStatus
 
@@ -31,9 +31,9 @@ Contém propriedades para o status de instalação de um usuário.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
-|userPrincipalName|String|Nome principal do usuário.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|
 |notInstalledDeviceCount|Int32|Sem contagem de dispositivos instalados.|
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledDeviceCount": 1024
 }
 ```
-
 
 
 

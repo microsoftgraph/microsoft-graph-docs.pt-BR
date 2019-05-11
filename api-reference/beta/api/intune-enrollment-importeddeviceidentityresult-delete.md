@@ -1,15 +1,15 @@
 ---
 title: Excluir importedDeviceIdentityResult
 description: Exclui importedDeviceIdentityResult.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1a8a5b7a91df8909cc2b4a6fae238a11b69d13f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2af5b170519ca75d9e4066768669c6d69a129116
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532741"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908424"
 ---
 # <a name="delete-importeddeviceidentityresult"></a>Excluir importedDeviceIdentityResult
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

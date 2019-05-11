@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração windowsAutopilotProfileAssignmentStatus
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f4c6fbfcbefd88af31f2875cf33755b3be21e06
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d241d93924de254af3cb76adfab27b49291b97f2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525275"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941391"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>tipo de enumeração windowsAutopilotProfileAssignmentStatus
 
@@ -23,13 +23,12 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status de atribuição desconhecido|
-|assignedInSync|1 |Atribuído com êxito no Intune e em sincronia com o programa piloto automático do Windows|
-|assignedOutOfSync|2 |Atribuído com êxito no Intune e não em sincronia com o programa piloto automático do Windows|
-|assignedUnkownSyncState|3 |Atribuído com êxito no Intune e em sincronia ou fora de sincronização com o programa piloto automático do Windows|
-|Não atribuído|4 |Não atribuído|
-|função|5 |Atribuição pendente|
-|falhou|6 | Falha de atribuição|
-
+|assignedInSync|1|Atribuído com êxito no Intune e em sincronia com o programa piloto automático do Windows|
+|assignedOutOfSync|duas|Atribuído com êxito no Intune e não em sincronia com o programa piloto automático do Windows|
+|assignedUnkownSyncState|3D|Atribuído com êxito no Intune e em sincronia ou fora de sincronização com o programa piloto automático do Windows|
+|Não atribuído|quatro|Não atribuído|
+|função|0,5|Atribuição pendente|
+|falhou|6| Falha de atribuição|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso mobileAppIdentifier
 description: O identificador de um aplicativo móvel.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f93b488010d885e1534f7995930a3bc3719bb15e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 45746852cc7b260c8bd634c3ef36590ea1cd0e57
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581272"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940663"
 ---
 # <a name="mobileappidentifier-resource-type"></a>Tipo de recurso mobileAppIdentifier
 
@@ -38,7 +38,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.mobileAppIdentifier"
 }
 ```
-
 
 
 

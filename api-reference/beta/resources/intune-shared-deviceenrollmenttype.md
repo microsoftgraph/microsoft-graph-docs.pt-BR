@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração deviceEnrollmentType
 description: Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b186110c4f69ea7b6f4d12c9fb2a333927f81385
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9c5c5fbdd68af1c78e55fc023a8c85642928889
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524586"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940012"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeração deviceEnrollmentType
 
@@ -23,15 +23,15 @@ Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O valor padrão, o tipo de registro não foi coletado.|
-|userRegistrar|1 |Registro controlado pelo usuário por meio do canal BYOD.|
-|deviceEnrollmentManager|2 |Registro de usuário com uma conta de Gerenciador de registro de dispositivo.|
-|appleBulkWithUser|3 |Inscrição em massa da Apple com o desafio do usuário. (DEP, Apple conFigurator)|
-|appleBulkWithoutUser|4 |Inscrição em massa da Apple sem o desafio do usuário. (DEP, Apple conFigurator, configuração móvel)|
-|windowsAzureADJoin|5 |Ingressar no Azure AD do Windows 10.|
-|windowsBulkUserless|6 |Registro em massa do Windows 10 através do ICD com o certificado.|
-|windowsAutoEnrollment|7 |Registro automático do Windows 10. (Adicionar conta de trabalho)|
+|userregistrar|1|Registro controlado pelo usuário por meio do canal BYOD.|
+|deviceEnrollmentManager|duas|Registro de usuário com uma conta de Gerenciador de registro de dispositivo.|
+|appleBulkWithUser|3D|Inscrição em massa da Apple com o desafio do usuário. (DEP, Apple Configurator)|
+|appleBulkWithoutUser|quatro|Inscrição em massa da Apple sem o desafio do usuário. (DEP, Apple Configurator, configuração móvel)|
+|windowsAzureADJoin|0,5|Ingressar no Azure AD do Windows 10.|
+|windowsBulkUserless|6|Registro em massa do Windows 10 através do ICD com o certificado.|
+|windowsAutoEnrollment|178|Registro automático do Windows 10. (Adicionar conta de trabalho)|
 |windowsBulkAzureDomainJoin|8 |Ingresso no Azure AD em massa do Windows 10.|
-|windowsCoManagement|9 |Co-gerenciamento de interGestão do Windows 10 disparado por autoPilot ou política de grupo.|
+|windowsCoManagement|9 |Co-gerenciamento de intergestão do Windows 10 disparado por AutoPilot ou política de grupo.|
 
 
 

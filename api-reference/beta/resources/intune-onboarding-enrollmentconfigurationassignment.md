@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso enrollmentConfigurationAssignment
-description: Ainda não documentado
-author: tfitzmac
+description: Atribuição de configuração de registro
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d88d3fa5985d4b210e616f6767be660e9f8c9a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4683997a061e756a1860349644d2a2d0cfaa5246
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566511"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940188"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Tipo de recurso enrollmentConfigurationAssignment
 
@@ -17,7 +17,7 @@ ms.locfileid: "32566511"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Atribuição de configuração de registro
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -31,8 +31,8 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Ainda não documentado|
+|id|Cadeia de caracteres|Chave da atribuição de configuração de registro|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Representa uma atribuição para dispositivos gerenciados no locatário|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração runState
 description: Indica o tipo de status de execução do script de gerenciamento de dispositivo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 706ef0d5ea87796c951d2fcb8c7357643fba7afb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 093af5b16854bf65699e469b1afd47fe6b990375
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522584"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939837"
 ---
 # <a name="runstate-enum-type"></a>tipo de enumeração runState
 
@@ -23,8 +23,8 @@ Indica o tipo de status de execução do script de gerenciamento de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Resultado desconhecido.|
-|sucesso|1 |O script é executado com êxito.|
-|fail|2 |O script não pôde ser executado.|
+|sucesso|1|O script é executado com êxito.|
+|fail|duas|O script não pôde ser executado.|
 
 
 

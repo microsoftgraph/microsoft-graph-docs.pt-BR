@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração edgeOpenOptions
 description: Valores possíveis para a configuração EdgeOpensWith.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fc4c39a5400b84d1718845b1f36f76be8d6df50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2505eac36176093d6e939a4fdb823dbc86b85f7a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524397"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946746"
 ---
 # <a name="edgeopenoptions-enum-type"></a>tipo de enumeração edgeOpenOptions
 
@@ -23,11 +23,10 @@ Valores possíveis para a configuração EdgeOpensWith.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|Inicial|1 |Inicial.|
-|newTabPage|2 |NewTabPage.|
-|inPreviouspagetype|3 |PreviousPageType.|
-|specificPages|4 |SpecificPages.|
-
+|Inicial|1|Inicial.|
+|newTabPage|duas|NewTabPage.|
+|inpreviouspagetype|3D|PreviousPageType.|
+|specificPages|quatro|SpecificPages.|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Criar roleDefinition
 description: Criar um novo objeto roleDefinition
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3949cf3dbeab5a9c6c1717d2103c574f532aad46
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fa847f21b18fcdbb37429ff56a504d0b4e0caae
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527382"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899463"
 ---
 # <a name="create-roledefinition"></a>Criar roleDefinition
 
@@ -180,7 +180,6 @@ Content-Length: 1256
   ]
 }
 ```
-
 
 
 

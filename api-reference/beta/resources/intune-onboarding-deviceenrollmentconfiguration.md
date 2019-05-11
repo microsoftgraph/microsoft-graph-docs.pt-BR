@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso deviceEnrollmentConfiguration
-description: Ainda não documentado
-author: tfitzmac
+description: A classe base da configuração de registro do dispositivo
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ac4d37529eb6e3688b110146801a7ec5ee533c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d05914e1b25ac3712ac60274facf0904c91d4224
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521247"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940453"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -17,7 +17,7 @@ ms.locfileid: "32521247"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+A classe base da configuração de registro do dispositivo
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -30,18 +30,18 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID da configuração da página de status de registro|
-|displayName|String|Ainda não documentado|
-|description|String|Ainda não documentado|
-|prioridade|Int32|Ainda não documentado|
-|createdDateTime|DateTimeOffset|Ainda não documentado|
-|lastModifiedDateTime|DateTimeOffset|Ainda não documentado|
-|versão|Int32|Ainda não documentado|
+|id|Cadeia de caracteres|Identificador exclusivo para a conta|
+|displayName|String|O nome de exibição da configuração de registro do dispositivo|
+|description|String|A descrição da configuração de registro do dispositivo|
+|prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos somente à configuração com o menor valor de prioridade.|
+|createdDateTime|DateTimeOffset|Data e hora de criação em UTC da configuração de registro do dispositivo|
+|lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação em UTC da configuração de registro do dispositivo|
+|versão|Int32|A versão da configuração de registro do dispositivo|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|atribuições|Conjunto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo.|
+|atribuições|Conjunto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
 
 
 

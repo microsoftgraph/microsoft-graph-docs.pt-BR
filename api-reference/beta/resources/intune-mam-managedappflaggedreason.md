@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração managedAppFlaggedReason
 description: O motivo pelo qual um usuário foi sinalizado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf3190ce35d56ef83d19368001175896cb794c01
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2e2e8d473ba1dad1db8cd53d990a4cd8150b5544
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580817"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940740"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>tipo de enumeração managedAppFlaggedReason
 
@@ -22,11 +22,10 @@ O motivo pelo qual um usuário foi sinalizado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum problema.|
-|rootedDevice|1 |O registro do aplicativo está em execução em um dispositivo raiz/desbloqueado.|
-|androidBootloaderUnlocked|2 |O registro do aplicativo está em execução em um dispositivo Android no qual o carregador de erro é desbloqueado.|
-|androidFactoryRomModified|3 |O registro do aplicativo está em execução em um dispositivo Android em que a ROM de fábrica foi modificada.|
-
+|none|,0|Nenhum problema.|
+|rootedDevice|1|O registro do aplicativo está em execução em um dispositivo raiz/desbloqueado.|
+|androidBootloaderUnlocked|duas|O registro do aplicativo está em execução em um dispositivo Android no qual o carregador de erro é desbloqueado.|
+|androidFactoryRomModified|3D|O registro do aplicativo está em execução em um dispositivo Android em que a ROM de fábrica foi modificada.|
 
 
 

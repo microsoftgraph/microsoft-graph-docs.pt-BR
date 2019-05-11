@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso groupPolicyPresentationValueDecimal
 description: A entidade representa um valor inteiro não assinado de uma apresentação de caixa de texto decimal em uma definição de política.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e260c1f554667429e5086c1f5c9eb603bd098f56
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 831ef458164aaab169a0c10424faadb4dffc49d9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575741"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941013"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>tipo de recurso groupPolicyPresentationValueDecimal
 
@@ -36,7 +36,7 @@ Herda de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppol
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |valor|Int64|Um valor inteiro não assinado para a apresentação associada.|
 
 ## <a name="relationships"></a>Relações
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": 1024
 }
 ```
-
 
 
 

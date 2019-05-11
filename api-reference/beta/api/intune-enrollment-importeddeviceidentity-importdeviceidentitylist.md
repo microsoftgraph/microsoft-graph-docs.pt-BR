@@ -1,15 +1,15 @@
 ---
 title: Ação importDeviceIdentityList
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae23252d9a161328571e87a562c30ecbff5a2dcf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b42964ad5bbb2424167f449859eec911466ba97b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532797"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908305"
 ---
 # <a name="importdeviceidentitylist-action"></a>Ação importDeviceIdentityList
 
@@ -112,7 +112,6 @@ Content-Length: 606
   ]
 }
 ```
-
 
 
 

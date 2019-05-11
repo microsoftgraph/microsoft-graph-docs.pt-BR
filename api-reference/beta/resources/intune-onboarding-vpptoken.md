@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso vppToken
 description: Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume Purchase Program para Empresas ou Educação. Isso envolve configurar uma conta do Apple VPP do site da Apple e carregar o token do Apple VPP Empresarial ou Educacional ao Intune. Você pode sincronizar suas informações de volume de compras com o Intune e acompanhar o uso do aplicativo comprado por volume. Você pode carregar vários tokens do Apple VPP Empresarial ou Educacional.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 806c652e7d1d75de16dd40f4db1dfc39ae4f442a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b6ce5ed8e699b8dbd49308591f252a8bcb30d876
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566490"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940110"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
 
@@ -34,13 +34,13 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
+|id|Cadeia de caracteres|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
 |organizationName|String|A organização associada ao Token do Programa de Compra por Volume da Apple|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|O tipo de programa de compra por volume ao qual o Token do Programa de Compra por Volume da Apple especificado está associado. Os valores possíveis são: `business` e `education`. Os valores possíveis são: `business`, `education`.|
-|appleId|String|O Apple ID associado ao Token do Apple Volume Purchase Program.|
+|appleId|Cadeia de caracteres|O Apple ID associado ao Token do Apple Volume Purchase Program.|
 |expirationDateTime|DateTimeOffset|A data e hora de expiração do Token do Apple Volume Purchase Program.|
 |lastSyncDateTime|DateTimeOffset|A última vez que uma sincronização de aplicativo foi realizada com o serviço do Apple Volume Purchase Program usando o Token do Apple Volume Purchase Program.|
-|token|String|A cadeia de caracteres do Token do Apple Volume Purchase Program baixada do Apple Volume Purchase Program.|
+|token|Cadeia de caracteres|A cadeia de caracteres do Token do Apple Volume Purchase Program baixada do Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação associada com o Token do Apple Volume Purchase Program.|
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Estado atual do Token do Apple Volume Purchase Program. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
 |tokenActionResults|coleção [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|A coleção de status das ações executadas no token do Apple Volume Purchase Program.|
@@ -48,8 +48,8 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o Apple Volume Purchase Program.|
-|displayName|String|Um nome amigável de token especificado pelo administrador.|
-|LocationName|String|Local do token retornado da Apple VPP.|
+|displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
+|LocationName|Cadeia de caracteres|Local do token retornado da Apple VPP.|
 |claimTokenManagementFromExternalMdm|Booliano|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a esta entidade.|
 
@@ -97,7 +97,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

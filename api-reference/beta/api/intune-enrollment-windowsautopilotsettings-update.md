@@ -1,15 +1,15 @@
 ---
 title: Atualizar windowsAutopilotSettings
 description: Atualiza as propriedades de um objeto windowsAutopilotSettings.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0392fda945cb3b98c872e75d5f896a13b2f4ce2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41c7b8f00bdd3adbb7f2b1de1ad72a62676b8af5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532580"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908137"
 ---
 # <a name="update-windowsautopilotsettings"></a>Atualizar windowsAutopilotSettings
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
+|id|Cadeia de caracteres|O GUID do objeto.|
 |lastSyncDateTime|DateTimeOffset|Data e hora da última sincronização de dados com o DDS Service.|
 |lastManualSyncTriggerDateTime|DateTimeOffset|Data e hora da última sincronização de dados com o DDS Service.|
 |syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Indica o status da sincronização com o serviço de DDS (sincronização de dados do dispositivo). Os valores possíveis são: `unknown`, `inProgress`, `completed`, `failed`.|
@@ -92,7 +92,6 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
-
 
 
 

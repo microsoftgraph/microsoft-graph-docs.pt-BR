@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso vppTokenRevokeLicensesActionResult
 description: O status da ação de revogação de licenças executada no token do Apple Volume Purchase Program.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 432419f337750362256140b8d13a1841b49907d4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 543ec2a75c61c516cfe32632a82a7cfd08810f94
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566462"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940250"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>tipo de recurso vppTokenRevokeLicensesActionResult
 
@@ -55,7 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   "actionFailureReason": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Listar localizedNotificationMessages
 description: Listar propriedades e relações de objetos de localizedNotificationMessage.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d2403a3655b3d22f19dd54e243a44b44deafe80a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c2b35f97083a694edc67f304325f4fd179c98ff7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529041"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900654"
 ---
 # <a name="list-localizednotificationmessages"></a>Listar localizedNotificationMessages
 
@@ -78,7 +78,6 @@ Content-Length: 374
   ]
 }
 ```
-
 
 
 

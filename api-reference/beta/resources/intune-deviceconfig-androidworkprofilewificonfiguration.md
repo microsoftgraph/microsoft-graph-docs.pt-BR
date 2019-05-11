@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidWorkProfileWiFiConfiguration
 description: Ao fornecer as configurações neste perfil, você pode instruir o dispositivo de perfil de trabalho do Android para se conectar ao ponto de extremidade de Wi-Fi desejado. Especificando o método de autenticação e os tipos de segurança esperados pelo ponto de extremidade Wi-Fi, você pode tornar a conexão Wi-Fi perfeita para o usuário final. Este perfil oferece tipos de segurança limitados e mais simples do que o perfil de Wi-Fi corporativo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b124a622645c22910c06d52e15a0f22db7f7e38
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec7775fbf56d02b1679ac75a4f8381fa107f5764
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562346"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947754"
 ---
 # <a name="androidworkprofilewificonfiguration-resource-type"></a>tipo de recurso androidWorkProfileWiFiConfiguration
 
@@ -42,8 +42,8 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|NetworkName|String|Nome da rede|
-|SSID|String|Este é o nome da rede Wi-Fi que é transmitida para todos os dispositivos.|
+|NetworkName|Cadeia de caracteres|Nome da rede|
+|SSID|Cadeia de caracteres|Este é o nome da rede Wi-Fi que é transmitida para todos os dispositivos.|
 |connectAutomatically|Booliano|Conectar automaticamente quando esta rede estiver no intervalo. A definição dessa opção como true ignorará o prompt do usuário e conectará automaticamente o dispositivo à rede Wi-Fi.|
 |connectWhenNetworkNameIsHidden|Booliano|Quando definido como true, esse perfil força o dispositivo a se conectar a uma rede que não transmite seu SSID para todos os dispositivos.|
 |à|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indica se o ponto de extremidade Wi-Fi usa um tipo de segurança baseado em EAP. Os valores possíveis são: `open`, `wpaEnterprise`.|
@@ -87,7 +87,6 @@ Veja a seguir uma representação JSON do recurso.
   "wiFiSecurityType": "String"
 }
 ```
-
 
 
 

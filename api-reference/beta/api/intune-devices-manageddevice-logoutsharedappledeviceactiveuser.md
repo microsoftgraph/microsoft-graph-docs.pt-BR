@@ -1,15 +1,15 @@
 ---
 title: Ação logoutSharedAppleDeviceActiveUser
 description: Sair do usuário ativo no dispositivo Apple compartilhado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5c9593a8c2ab9a443de177f544e949ba158b77c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2ab50bbc742c713bff617efd7074b62b8f03fd3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520169"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909628"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>Ação logoutSharedAppleDeviceActiveUser
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

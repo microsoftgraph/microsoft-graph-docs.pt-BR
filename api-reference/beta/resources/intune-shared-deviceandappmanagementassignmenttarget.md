@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso deviceAndAppManagementAssignmentTarget
 description: Tipo base para destinos de atribuição.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d7bf5d3d169b472eeaf14d5435cd661b3fe4161
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b050e26f746c7da05f99c6db6c4b728e216c986
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572987"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939662"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Tipo de recurso deviceAndAppManagementAssignmentTarget
 
@@ -38,7 +38,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
 }
 ```
-
 
 
 

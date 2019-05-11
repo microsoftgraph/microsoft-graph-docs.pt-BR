@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso mobileAppIntentAndState
 description: MobileApp tentativa e estado de instalação para um determinado dispositivo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e90251338ad7e740b216452a52cc0fffcfc44565
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0bc39ec4db3c777fc7cf34528e9d8054f6d382e8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558150"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939767"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>tipo de recurso mobileAppIntentAndState
 
@@ -33,7 +33,7 @@ MobileApp tentativa e estado de instalação para um determinado dispositivo.
 |:---|:---|:---|
 |id|String|O UUID do objeto.|
 |managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
-|userId|String|Identificador do usuário que tentou registrar o dispositivo.|
+|userId|Cadeia de caracteres|Identificador do usuário que tentou registrar o dispositivo.|
 |mobileAppList|coleção [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|A lista de efeitos e Estados de carga para o locatário.|
 
 ## <a name="relationships"></a>Relações
@@ -73,6 +73,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

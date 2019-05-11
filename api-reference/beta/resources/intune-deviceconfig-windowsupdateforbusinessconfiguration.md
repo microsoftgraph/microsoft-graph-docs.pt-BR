@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso windowsUpdateForBusinessConfiguration
 description: Configuração do Windows Update para Empresas.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b951655fbc78c7e5f6b7179da07d382bdbf429bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bb2c77e38e6e4349355367bb6028630e1de67470
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523823"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943673"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Tipo de recurso windowsUpdateForBusinessConfiguration
 
@@ -30,8 +30,8 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |[Criar windowsUpdateForBusinessConfiguration](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create.md)|[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md)|Cria um novo objeto [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).|
 |[Excluir windowsUpdateForBusinessConfiguration](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-delete.md)|Nenhum|Exclui um [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).|
 |[Atualizar windowsUpdateForBusinessConfiguration](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-update.md)|[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md)|Atualiza as propriedades de um objeto [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).|
-|[ação extendFeatureUpdatesPause](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendfeatureupdatespause.md)|Nenhum|Estender as atualizações de recurso paUsar para um toque do Windows Update para empresas.|
-|[ação extendQualityUpdatesPause](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendqualityupdatespause.md)|Nenhum|Estender as atualizações de qualidade paUsar para um toque do Windows Update para empresas.|
+|[ação extendFeatureUpdatesPause](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendfeatureupdatespause.md)|Nenhum|Estender as atualizações de recurso pausar para um toque do Windows Update para empresas.|
+|[ação extendQualityUpdatesPause](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendqualityupdatespause.md)|Nenhum|Estender as atualizações de qualidade pausar para um toque do Windows Update para empresas.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -59,15 +59,15 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Determina quais dispositivos de filial receberão suas atualizações. Os possíveis valores são: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
 |skipChecksBeforeRestart|Booliano|Definido como ignorar todas as verificação antes de reiniciar: nível da bateria = 40%, presença do usuário, exibição necessária, modo de apresentação, modo de tela cheia, estado de chamada telefônica, modo de jogo, etc. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Agendou a instalação da atualização nas semanas do mês. Os possíveis valores são: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
-|qualityUpdatesPauseStartDate|Data|Atualização de qualidade paUsar data de início. Essa propriedade é somente leitura.|
-|featureUpdatesPauseStartDate|Data|Atualização de recursos paUsar data de início. Essa propriedade é somente leitura.|
+|qualityUpdatesPauseStartDate|Data|Atualização de qualidade pausar data de início. Essa propriedade é somente leitura.|
+|featureUpdatesPauseStartDate|Data|Atualização de recursos pausar data de início. Essa propriedade é somente leitura.|
 |featureUpdatesRollbackWindowInDays|Int32|O número de dias após uma atualização de recurso para a qual uma reversão é válida|
 |qualityUpdatesWillBeRolledBack|Booliano|Especifica se é para reverter as atualizações de qualidade no próximo check-in de dispositivos|
 |featureUpdatesWillBeRolledBack|Booliano|Especifica se as atualizações de recursos devem ser revertidas no próximo check-in de dispositivos|
-|qualityUpdatesRollbackStartDateTime|DateTimeOffset|Data de início da reVersão de atualização de qualidade|
-|featureUpdatesRollbackStartDateTime|DateTimeOffset|Atualização de recursos data de início da reVersão|
+|qualityUpdatesRollbackStartDateTime|DateTimeOffset|Data de início da reversão de atualização de qualidade|
+|featureUpdatesRollbackStartDateTime|DateTimeOffset|Atualização de recursos data de início da reversão|
 |engagedRestartDeadlineInDays|Int32|Prazo em dias antes de agendar automaticamente e executar uma reinicialização pendente fora do horário ativo, com intervalo válido de 2 a 30 dias|
-|engagedRestartSnoozeScheduleInDays|Int32|Número de dias durante os quais um usuário pode adiar notificações de lembrete de reInício envolvidos com um intervalo válido de 1 a 3 dias|
+|engagedRestartSnoozeScheduleInDays|Int32|Número de dias durante os quais um usuário pode adiar notificações de lembrete de reinício envolvidos com um intervalo válido de 1 a 3 dias|
 |engagedRestartTransitionScheduleInDays|Int32|Número de dias antes da transição de reinícios automáticos agendados fora do horário ativo para o reinício envolvido, o que requer que o usuário agende, com o intervalo válido de 0 a 30 dias|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Especifique o método pelo qual a notificação de reinício automático necessário é ignorada. Os valores possíveis são: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Especifique o período para notificações de lembrete de aviso de reinício automático. Valores com suporte: 2, 4, 8, 12 ou 24 (horas).|
@@ -145,7 +145,6 @@ Veja a seguir uma representação JSON do recurso.
   "updateNotificationLevel": "String"
 }
 ```
-
 
 
 

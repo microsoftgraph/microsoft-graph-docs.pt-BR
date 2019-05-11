@@ -1,15 +1,15 @@
 ---
 title: Excluir windows10EnrollmentCompletionPageConfiguration
 description: Exclui windows10EnrollmentCompletionPageConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d5c906eca2f882fc93ccb9198739330772e2b5b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a3530aa9b281bb1512a2cdc86e3abe91b204721
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528012"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899771"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfiguration"></a>Excluir windows10EnrollmentCompletionPageConfiguration
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

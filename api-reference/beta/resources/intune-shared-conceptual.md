@@ -2,14 +2,14 @@
 title: Recursos compartilhados no Microsoft Intune-API do Microsoft Graph
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que dão suporte a vários fluxos de trabalho para uma organização de locatário.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 6436f134ae9e95623b073f6e645f0737d45d540e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d627ebb67876c89136ba6e4e63e9879e3a0ed8d2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566280"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939900"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -51,7 +51,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Estado da execução](intune-shared-runstate.md)
 - [Opções de geração do estado da interface do usuário salvas](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [Usuário](intune-shared-user.md)
 - [Tipo de conta do token VPP](intune-shared-vpptokenaccounttype.md)
 - [Causa da falha da ação do token VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Configuração de ingresso no domínio do Windows](intune-shared-windowsdomainjoinconfiguration.md)

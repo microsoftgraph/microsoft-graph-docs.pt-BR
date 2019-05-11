@@ -1,15 +1,15 @@
 ---
 title: Listar groupPolicyConfigurationAssignments
 description: Listar Propriedades e relações dos objetos groupPolicyConfigurationAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f94d607db688fd420ca6e646f5d553e1ae2b6ea7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2bf67e75d94ea817685e9cc8146f30796ced7fc0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531450"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905158"
 ---
 # <a name="list-grouppolicyconfigurationassignments"></a>Listar groupPolicyConfigurationAssignments
 
@@ -77,7 +77,6 @@ Content-Length: 344
   ]
 }
 ```
-
 
 
 

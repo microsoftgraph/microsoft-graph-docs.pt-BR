@@ -1,15 +1,15 @@
 ---
 title: Ação shareForSchoolDataSyncService
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46af6faf0fb7ea4d391cb566ec7cd9771eac0acb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60f2f99e43874d1fdea69694a17fc4d5fb2124b3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533280"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908725"
 ---
 # <a name="shareforschooldatasyncservice-action"></a>Ação shareForSchoolDataSyncService
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso macOSGeneralDeviceConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso macOSGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ac4dc94099eb8b9b3e9c5e983d2a92d13b48c2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3375411314fe6fff68ee84a2bb036aa5e672a7d6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570810"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946086"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso macOSGeneralDeviceConfiguration
 
@@ -58,7 +58,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |airPrintBlocked|Booliano|Indica se o arquivo de impressão está bloqueado (macOS 10,12 e posterior).|
 |airPrintForceTrustedTLS|Booliano|Indica se certificados confiáveis são necessários para comunicação de impressão TLS (macOS 10,13 e posterior).|
 |airPrintBlockiBeaconDiscovery|Booliano|Indica se a descoberta de impressoras de impressão do iBeacon está ou não bloqueada. Isso impede os beacons Bluetooth de impressão de mensagens de phishing para tráfego de rede (macOS 10,3 e posterior).|
-|safariBlockAutofill|Boolean|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari.|
+|safariBlockAutofill|Booliano|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari.|
 |cameraBlocked|Booliano|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo.|
 |iTunesBlockMusicService|Booliano|Indica se o serviço de música deve ou não ser bloqueado e o aplicativo de música é revertido para o modo clássico.|
 |spotlightBlockInternetResults|Boolean|Indica se o Spotlight deve ou não bloquear o retorno de qualquer resultado de uma pesquisa na Internet.|
@@ -82,6 +82,13 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |softwareUpdatesEnforcedDelayInDays|Int32|Define o número de dias que uma atualização de software será delyed para um dispositivo supervisionado. Valores válidos de 0 a 90|
 |softwareUpdatesForceDelayed|Booliano|Indica se o usuário deve ou não atrasar a visibilidade de atualizações de software quando o dispositivo estiver no modo supervisionado.|
 |contentCachingBlocked|Booliano|Indica se o cache de conteúdo deve ou não ser permitido.|
+|iCloudBlockPhotoLibrary|Booliano|Indica se Biblioteca de Fotos do iCloud deve ou não ser bloqueada.|
+|screenCaptureBlocked|Boolean|Indica se o usuário será ou não impedido de fazer capturas de tela.|
+|classroomAppBlockRemoteScreenObservation|Booliano|Indica se a observação de tela remota deve ou não ser permitida por aplicativo de sala de aula. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|classroomAppForceUnpromptedScreenObservation|Booliano|Indica se a permissão será ou não automaticamente para o professor de um curso gerenciado no aplicativo da sala de aula para exibir a tela de um aluno sem avisar. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|classroomForceAutomaticallyJoinClasses|Booliano|Indica se a permissão será ou não automaticamente para as solicitações do professor, sem avisar o aluno. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|classroomForceRequestPermissionToLeaveClasses|Booliano|Indica se um aluno inscrito em um curso não gerenciado via sala de aula será solicitado a solicitar permissão do professor ao tentar sair do curso. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|classroomForceUnpromptedAppAndDeviceLock|Booliano|Indica se o professor deve ou não bloquear aplicativos ou o dispositivo sem avisar o aluno. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -164,10 +171,16 @@ Veja a seguir uma representação JSON do recurso.
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 1024,
   "softwareUpdatesForceDelayed": true,
-  "contentCachingBlocked": true
+  "contentCachingBlocked": true,
+  "iCloudBlockPhotoLibrary": true,
+  "screenCaptureBlocked": true,
+  "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true
 }
 ```
-
 
 
 

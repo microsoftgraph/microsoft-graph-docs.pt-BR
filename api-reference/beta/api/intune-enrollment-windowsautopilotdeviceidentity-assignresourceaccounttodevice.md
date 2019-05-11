@@ -1,15 +1,15 @@
 ---
 title: Ação assignResourceAccountToDevice
 description: Atribui a conta de recurso aos dispositivos do AutoPilot.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa265a2a39400233cd6a604d77651baf69e1e5bc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ed4f876e0544b7a2e07d616c6f7549cab3bfb386
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532650"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908229"
 ---
 # <a name="assignresourceaccounttodevice-action"></a>Ação assignResourceAccountToDevice
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Ainda não documentado|
+|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
 |addressableUserName|String|Ainda não documentado|
 |resourceAccountName|String|Ainda não documentado|
 
@@ -82,7 +82,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

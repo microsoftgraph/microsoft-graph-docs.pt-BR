@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementUserRightsLocalUserOrGroup
 description: Representa informações de um usuário ou grupo local usado para a configuração de direitos do usuário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cfdb49ef0b98e3d76d092b1ebf9574d6df8c47d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: acccbb68ecc0b62d27ac20e3eba9e637aac3e11c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567197"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946935"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>tipo de recurso deviceManagementUserRightsLocalUserOrGroup
 
@@ -22,9 +22,9 @@ Representa informações de um usuário ou grupo local usado para a configuraç�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|O nome desse usuário ou grupo local.|
+|nome|Cadeia de caracteres|O nome desse usuário ou grupo local.|
 |description|String|Descrição do administrador desse usuário ou grupo local.|
-|securityIdentifier|String|O identificador de segurança desse usuário ou grupo local (por exemplo, * S-1-5-32-544).|
+|securityIdentifier|Cadeia de caracteres|O identificador de segurança desse usuário ou grupo local (por exemplo, * S-1-5-32-544).|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "securityIdentifier": "String"
 }
 ```
-
 
 
 

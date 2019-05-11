@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração complianceStatus
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b71b74c7819b108f5f1a68406614828e814104d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 181bb61b73f5dcfde23a19c6f62846de69fb4bf4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573001"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939907"
 ---
 # <a name="compliancestatus-enum-type"></a>tipo de enumeração complianceStatus
 
@@ -23,14 +23,13 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Ainda não documentado|
-|Não aplicável|1 |Ainda não documentado|
-|com|2 |Ainda não documentado|
-|corrigidos|3 |Ainda não documentado|
-|Incompatível|4 |Ainda não documentado|
-|erro|5 |Ainda não documentado|
-|apresentar|6 |Ainda não documentado|
-|Não atribuído|7 |Ainda não documentado|
-
+|Não aplicável|1|Ainda não documentado|
+|com|duas|Ainda não documentado|
+|corrigidos|3D|Ainda não documentado|
+|Incompatível|quatro|Ainda não documentado|
+|erro|0,5|Ainda não documentado|
+|apresentar|6|Ainda não documentado|
+|Não atribuído|178|Ainda não documentado|
 
 
 

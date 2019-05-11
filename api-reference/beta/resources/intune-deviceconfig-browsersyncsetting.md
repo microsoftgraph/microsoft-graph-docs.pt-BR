@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração browserSyncSetting
 description: Permitir (não configurado) ou impedir (bloquear) a sincronização das configurações do navegador Microsoft Edge. Opção para impedir a sincronização entre dispositivos, mas permitir a substituição do usuário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f08031e970f56c071a4dd01af0542bd56924edd5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 33b7edf861154005b2548441dcf3cc776451f3ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549345"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947467"
 ---
 # <a name="browsersyncsetting-enum-type"></a>tipo de enumeração browserSyncSetting
 
@@ -23,9 +23,8 @@ Permitir (não configurado) ou impedir (bloquear) a sincronização das configur
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Padrão – permite a sincronização de configurações de navegador entre dispositivos.|
-|blockedWithUserOverride|1 |Impedir a sincronização das configurações do navegador nos dispositivos de usuário, permitir a substituição de configuração do usuário.|
-|bloqueou|2 |Impede totalmente a sincronização das configurações do navegador nos dispositivos de usuário.|
-
+|blockedWithUserOverride|1|Impedir a sincronização das configurações do navegador nos dispositivos de usuário, permitir a substituição de configuração do usuário.|
+|bloqueou|duas|Impede totalmente a sincronização das configurações do navegador nos dispositivos de usuário.|
 
 
 

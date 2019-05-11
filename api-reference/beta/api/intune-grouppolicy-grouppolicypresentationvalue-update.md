@@ -1,15 +1,15 @@
 ---
 title: Atualizar groupPolicyPresentationValue
 description: Atualiza as propriedades de um objeto groupPolicyPresentationValue.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e81726ea683b200c3e2a26071d834c7ab6b3428
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dc93403587282d9f9c449a09dad77b98f9e70181
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530862"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904500"
 ---
 # <a name="update-grouppolicypresentationvalue"></a>Atualizar groupPolicyPresentationValue
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 
 
 
@@ -87,7 +87,6 @@ Content-Length: 242
   "id": "8132eaab-eaab-8132-abea-3281abea3281"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deliveryOptimizationGroupIdCustom
 description: Tipo de ID de grupo personalizado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d4f369c9a3b62480549f19d4a7c1d7b1d0bb196
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3e439b9d4777a0b0c513d750d0b5e35783dbd9a1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556162"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947250"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>tipo de recurso deliveryOptimizationGroupIdCustom
 
@@ -25,7 +25,7 @@ Herda de [deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-de
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|groupIdCustom|String|Especifica uma ID de grupo arbitrária à qual o dispositivo pertence|
+|groupIdCustom|Cadeia de caracteres|Especifica uma ID de grupo arbitrária à qual o dispositivo pertence|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "groupIdCustom": "String"
 }
 ```
-
 
 
 

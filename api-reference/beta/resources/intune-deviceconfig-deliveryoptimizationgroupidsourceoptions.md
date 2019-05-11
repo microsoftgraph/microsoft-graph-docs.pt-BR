@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deliveryOptimizationGroupIdSourceOptions
 description: Tipo de opções de ID de grupo
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cd541fd9ff3a91f40be1b6ccea67787cdad2567
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8931c2e2a8a6dc3848b4ec73236443f9707aacea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565804"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947222"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>tipo de recurso deliveryOptimizationGroupIdSourceOptions
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "groupIdSourceOption": "String"
 }
 ```
-
 
 
 

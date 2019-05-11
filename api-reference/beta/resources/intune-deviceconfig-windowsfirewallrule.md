@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsFirewallRule
 description: Uma regra que controla o tráfego por meio do firewall do Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77df7da501aee80b534accbe4c0d33dcf0e8df63
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dbf322718bd3b95e27583350bf840cc05f2e6ca0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570212"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944058"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>tipo de recurso windowsFirewallRule
 
@@ -24,9 +24,9 @@ Uma regra que controla o tráfego por meio do firewall do Windows.
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome de exibição da regra. Não precisa ser exclusivo.|
 |description|String|A descrição da regra.|
-|packageFamilyName|String|O nome da família de pacotes de um aplicativo da Microsoft Store que é afetado pela regra de firewall.|
-|filePath|String|O caminho completo do arquivo de um aplicativo afetado pela regra de firewall.|
-|serviceName|String|O nome usado em casos em que um serviço, não um aplicativo, está enviando ou recebendo tráfego.|
+|packageFamilyName|Cadeia de caracteres|O nome da família de pacotes de um aplicativo da Microsoft Store que é afetado pela regra de firewall.|
+|filePath|Cadeia de caracteres|O caminho completo do arquivo de um aplicativo afetado pela regra de firewall.|
+|serviceName|Cadeia de caracteres|O nome usado em casos em que um serviço, não um aplicativo, está enviando ou recebendo tráfego.|
 |RDP|Int32|0-255 número que representa o protocolo IP (TCP = 6, UDP = 17). Se não for especificado, o padrão é ALL. Valores válidos de 0 a 255|
 |localPortRanges|Coleção de cadeias de caracteres|Lista de intervalos de porta locais. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão é ALL.|
 |remotePortRanges|Coleção de cadeias de caracteres|Lista de intervalos de portas remotas. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão é ALL.|
@@ -91,7 +91,6 @@ Veja a seguir uma representação JSON do recurso.
   "localUserAuthorizations": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Criar importedDeviceIdentity
 description: Criar um novo objeto importedDeviceIdentity.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0be79099f755963eb039bc4f280200fe346e99ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1c5148a4d131410ba0947cd597e9ed557a1553a4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532895"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908473"
 ---
 # <a name="create-importeddeviceidentity"></a>Criar importedDeviceIdentity
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar imported
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|ID da identidade do dispositivo importado|
-|importedDeviceIdentifier|String|Identificador de dispositivo imPortado|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de identidade de dispositivo imPortada. Os valores possíveis são: `unknown`, `imei`, `serialNumber`.|
+|importedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo importado|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de identidade de dispositivo importada. Os valores possíveis são: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da descrição|
 |createdDateTime|DateTimeOffset|Data e hora de criação do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do dispositivo|
@@ -105,7 +105,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 

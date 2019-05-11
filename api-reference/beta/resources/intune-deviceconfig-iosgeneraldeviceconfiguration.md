@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso iosGeneralDeviceConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso iosGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dba0349ddfe7b0e4fd71193bbea7dd35dcf0a04
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d9425caee528030af0e199ccd20eb93aa3320330
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564208"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946494"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso iosGeneralDeviceConfiguration
 
@@ -113,18 +113,23 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |keyboardBlockSpellCheck|Booliano|Indica se a verificação ortográfica do teclado será ou não bloqueada quando o dispositivo estiver no modo supervisionado (iOS 8.1.3 ou posterior).|
 |kioskModeAllowAssistiveSpeak|Booliano|Indica se a fala assistencial será permitida ou não no modo quiosque.|
 |kioskModeAllowAssistiveTouchSettings|Booliano|Indica se o acesso às configurações do Toque assistencial será permitido ou não no modo quiosque.|
-|kioskModeAllowAutoLock|Booliano|Indica se o bloqueio automático do dispositivo será permitido ou não no modo quiosque.|
+|kioskModeAllowAutoLock|Booliano|Indica se o bloqueio automático do dispositivo será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockAutoLock em vez disso.|
+|kioskModeBlockAutoLock|Booliano|Indica se o bloqueio automático do dispositivo deve ou não ser bloqueado no modo quiosque.|
 |kioskModeAllowColorInversionSettings|Booliano|Indica se o acesso às configurações de Inversão de cores será permitido ou não no modo quiosque.|
-|kioskModeAllowRingerSwitch|Booliano|Indica se o uso do botão de toque será permitido ou não no modo quiosque.|
-|kioskModeAllowScreenRotation|Booliano|Indica se a rotação de tela será permitida ou não no modo quiosque.|
-|kioskModeAllowSleepButton|Booliano|Indica se o uso do botão de suspensão será permitido ou não no modo quiosque.|
-|kioskModeAllowTouchscreen|Booliano|Indica se o uso da tela touch será permitido ou não no modo quiosque.|
+|kioskModeAllowRingerSwitch|Booliano|Indica se o uso do botão de toque será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockRingerSwitch em vez disso.|
+|kioskModeBlockRingerSwitch|Booliano|Indica se o uso do comutador de toque deve ou não ser bloqueado no modo quiosque.|
+|kioskModeAllowScreenRotation|Booliano|Indica se a rotação de tela será permitida ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockScreenRotation em vez disso.|
+|kioskModeBlockScreenRotation|Booliano|Indica se a rotação de tela deve ou não ser bloqueada enquanto estiver no modo quiosque.|
+|kioskModeAllowSleepButton|Boolean|Indica se o uso do botão de suspensão será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockSleepButton em vez disso.|
+|kioskModeBlockSleepButton|Booliano|Indica se o uso do botão de suspensão deve ou não ser bloqueado no modo quiosque.|
+|kioskModeAllowTouchscreen|Booliano|Indica se o uso da tela touch será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockTouchscreen em vez disso.|
+|kioskModeBlockTouchscreen|Booliano|Indica se o uso da tela de toque deve ou não ser bloqueado enquanto estiver no modo quiosque.|
 |kioskModeAllowVoiceOverSettings|Booliano|Indica se o acesso às configurações de voice over será permitido ou não no modo quiosque.|
-|kioskModeAllowVolumeButtons|Booliano|Indica se o uso dos botões de volume será permitido ou não no modo quiosque.|
+|kioskModeAllowVolumeButtons|Booliano|Indica se o uso dos botões de volume será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockVolumeButtons em vez disso.|
 |kioskModeBlockVolumeButtons|Booliano|Indica se os botões de volume devem ou não ser bloqueados no modo quiosque.|
-|kioskModeAllowZoomSettings|Boolean|Indica se o acesso às configurações de zoom será permitido ou não no modo quiosque.|
-|kioskModeAppStoreUrl|String|URL na loja de aplicativos do aplicativo para uso no modo de quiosque. Use se KioskModeManagedAppId não for conhecido.|
-|Propriedadekioskmodebuiltinappid|String|ID para aplicativos internos a serem usados no modo quiosque. Usado quando KioskModeManagedAppId e KioskModeAppStoreUrl não são definidos.|
+|kioskModeAllowZoomSettings|Booliano|Indica se o acesso às configurações de zoom será permitido ou não no modo quiosque.|
+|kioskModeAppStoreUrl|Cadeia de caracteres|URL na loja de aplicativos do aplicativo para uso no modo de quiosque. Use se KioskModeManagedAppId não for conhecido.|
+|Propriedadekioskmodebuiltinappid|Cadeia de caracteres|ID para aplicativos internos a serem usados no modo quiosque. Usado quando KioskModeManagedAppId e KioskModeAppStoreUrl não são definidos.|
 |kioskModeRequireAssistiveTouch|Booliano|Indica se o toque assistencial deve ou não ser exigido no modo quiosque.|
 |kioskModeRequireColorInversion|Booliano|Indica se a inversão de cores deve ou não ser exigida no modo quiosque.|
 |kioskModeRequireMonoAudio|Booliano|Indica se o áudio mono deve ou não ser exigido no modo quiosque.|
@@ -134,7 +139,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |lockScreenBlockControlCenter|Booliano|Indica se o usuário será ou não impedido de usar o centro de controle na tela de bloqueio.|
 |lockScreenBlockNotificationView|Booliano|Indica se o usuário será ou não impedido de usar a exibição de notificações na tela de bloqueio.|
 |lockScreenBlockPassbook|Booliano|Indica se o usuário será ou não impedido de usar o Passbook quando o dispositivo estiver bloqueado|
-|lockScreenBlockTodayView|Booliano|Indica se o usuário será ou não impedido de usar a exibição Hoje na tela de bloqueio.|
+|lockScreenBlockTodayView|Boolean|Indica se o usuário será ou não impedido de usar a exibição Hoje na tela de bloqueio.|
 |mediaContentRatingAustralia|[mediaContentRatingAustralia](../resources/intune-deviceconfig-mediacontentratingaustralia.md)|Configurações de classificação de conteúdo de mídia da Austrália|
 |mediaContentRatingCanada|[mediaContentRatingCanada](../resources/intune-deviceconfig-mediacontentratingcanada.md)|Configurações de classificação de conteúdo de mídia do Canadá|
 |mediaContentRatingFrance|[mediaContentRatingFrance](../resources/intune-deviceconfig-mediacontentratingfrance.md)|Configurações de classificação de conteúdo de mídia da França|
@@ -150,7 +155,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |notificationsBlockSettingsModification|Booliano|Indica se a modificação de configurações de notificações será permitida ou não no dispositivo supervisionado (iOS 9.3 ou posterior).|
 |passcodeBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
 |passcodeBlockFingerprintModification|Booliano|Impedir a modificação de impressões digitais registradas do Touch ID no modo supervisionado.|
-|passcodeBlockModification|Boolean|Indica se a modificação de senha será permitida ou não no dispositivo supervisionado (iOS 9.0 e posterior).|
+|passcodeBlockModification|Booliano|Indica se a modificação de senha será permitida ou não no dispositivo supervisionado (iOS 9.0 e posterior).|
 |passcodeBlockSimple|Booliano|Indica se códigos de acesso simples devem ou não ser bloqueados.|
 |passcodeExpirationDays|Int32|Número de dias antes da expiração do código de acesso. Valores válidos de 1 a 65535|
 |passcodeMinimumLength|Int32|Comprimento mínimo do código de acesso. Valores válidos de 4 a 14|
@@ -175,7 +180,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |siriBlocked|Booliano|Indica se o usuário será ou não impedido de usar a Siri.|
 |siriBlockedWhenLocked|Booliano|Indica se o usuário será ou não impedido de usar a Siri com o dispositivo bloqueado.|
 |siriBlockUserGeneratedContent|Booliano|Indica se a Siri será ou não impedida de consultar conteúdos gerados pelo usuário quando usada em um dispositivo supervisionado.|
-|siriRequireProfanityFilter|Booliano|Indica se a Siri deve ou não ser impedida de utilizar linguagem imprópria no dispositivo supervisionado.|
+|siriRequireProfanityFilter|Boolean|Indica se a Siri deve ou não ser impedida de utilizar linguagem imprópria no dispositivo supervisionado.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Define o número de dias que uma atualização de software será delyed para um dispositivo supervisionado. Valores válidos de 0 a 90|
 |softwareUpdatesForceDelayed|Booliano|Indica se o usuário deve ou não atrasar a visibilidade de atualizações de software quando o dispositivo estiver no modo supervisionado.|
 |spotlightBlockInternetResults|Booliano|Indica se a Pesquisa em Destaque poderá ou não retornar resultados da Internet no dispositivo supervisionado.|
@@ -202,6 +207,8 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |dateAndTimeForceSetAutomatically|Booliano|Indica se o recurso "definir automaticamente" de data e hora está habilitado e não pode ser desativado pelo usuário (iOS 12,0 e posterior).|
 |contactsAllowManagedToUnmanagedWrite|Booliano|Indica se os aplicativos gerenciados podem ou não gravar contatos para contas de contatos não gerenciados (iOS 12,0 e posterior).|
 |contactsAllowUnmanagedToManagedRead|Booliano|Indica se os aplicativos não gerenciados podem ler de contas de contatos gerenciados (iOS 12,0 ou posterior).|
+|cellularBlockPersonalHotspotModification|Booliano|Indica se o usuário será ou não impedido de modificar a configuração de hotspot pessoal (iOS 12,2 ou posterior).|
+|siriDisableServerLogging|Booliano|Indica se o registro em log do lado do servidor do Siri está desabilitado (iOS 12,2 ou posterior).|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -333,11 +340,16 @@ Veja a seguir uma representação JSON do recurso.
   "kioskModeAllowAssistiveSpeak": true,
   "kioskModeAllowAssistiveTouchSettings": true,
   "kioskModeAllowAutoLock": true,
+  "kioskModeBlockAutoLock": true,
   "kioskModeAllowColorInversionSettings": true,
   "kioskModeAllowRingerSwitch": true,
+  "kioskModeBlockRingerSwitch": true,
   "kioskModeAllowScreenRotation": true,
+  "kioskModeBlockScreenRotation": true,
   "kioskModeAllowSleepButton": true,
+  "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
+  "kioskModeBlockTouchscreen": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -475,10 +487,11 @@ Veja a seguir uma representação JSON do recurso.
   "passwordBlockAirDropSharing": true,
   "dateAndTimeForceSetAutomatically": true,
   "contactsAllowManagedToUnmanagedWrite": true,
-  "contactsAllowUnmanagedToManagedRead": true
+  "contactsAllowUnmanagedToManagedRead": true,
+  "cellularBlockPersonalHotspotModification": true,
+  "siriDisableServerLogging": true
 }
 ```
-
 
 
 

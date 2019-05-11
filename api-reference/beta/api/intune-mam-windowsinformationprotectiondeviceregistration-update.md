@@ -1,15 +1,15 @@
 ---
 title: Atualizar windowsInformationProtectionDeviceRegistration
 description: Atualiza as propriedades de um objeto windowsInformationProtectionDeviceRegistration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54d8dc2e1c2c62d956502e48791ad55e0787de03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: be2938889a5b3c21c7b0ba734d5ccc7b58301618
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529167"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33902929"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>Atualizar windowsInformationProtectionDeviceRegistration
 
@@ -51,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|userId|String|UserId associado a este registro de registro de dispositivo.|
-|deviceRegistrationId|String|Identificador de dispositivo para este registro de registro de dispositivo.|
+|userId|Cadeia de caracteres|UserId associado a este registro de registro de dispositivo.|
+|deviceRegistrationId|Cadeia de caracteres|Identificador de dispositivo para este registro de registro de dispositivo.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceType|String|Tipo de dispositivo, por exemplo, Windows laptop VS Windows Phone.|
-|deviceMacAddress|String|Endereço MAC do dispositivo.|
+|deviceMacAddress|Cadeia de caracteres|Endereço MAC do dispositivo.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo.|
 
 
@@ -101,7 +101,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

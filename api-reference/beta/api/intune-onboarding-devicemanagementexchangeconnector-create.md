@@ -1,15 +1,15 @@
 ---
 title: Criar deviceManagementExchangeConnector
 description: Crie um novo objeto deviceManagementExchangeConnector.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6961c5a4279e69fb264abe7ed0fd4d960226c12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2226d76903612062e97ec382bd67be1fc253c6d7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528817"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900174"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Criar deviceManagementExchangeConnector
 
@@ -50,15 +50,15 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceManagement
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Status do Exchange Connector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|String|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
-|serverName|String|O nome do servidor Exchange.|
-|connectorServerName|String|O nome do servidor que hospeda o Exchange Connector.|
+|primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
+|serverName|Cadeia de caracteres|O nome do servidor Exchange.|
+|connectorServerName|Cadeia de caracteres|O nome do servidor que hospeda o Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |versão|String|A versão do ExchangeConnectorAgent|
-|exchangeAlias|String|Um alias atribuído a um servidor Exchange|
+|exchangeAlias|Cadeia de caracteres|Um alias atribuído a um servidor Exchange|
 |exchangeOrganization|Cadeia de caracteres|Organização do Exchange no servidor Exchange|
 
 
@@ -110,7 +110,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
 
 
 

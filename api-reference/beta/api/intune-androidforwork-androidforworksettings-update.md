@@ -1,15 +1,15 @@
 ---
 title: Atualizar androidForWorkSettings
 description: Atualizar as propriedades de um objeto de androidForWorkSettings.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f71d9087b457189d3796306e0585981c0e58855
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 910d97b8736487023e6cc6a3f07827a41bc08b92
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498211"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939130"
 ---
 # <a name="update-androidforworksettings"></a>Atualizar androidForWorkSettings
 
@@ -50,11 +50,11 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [androidForWorkS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador de configurações do Android for Work|
+|id|Cadeia de caracteres|O identificador de configurações do Android for Work|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Vincule o status do locatário à API do Google EMM. Os valores possíveis são: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Hora da conclusão da última sincronização do aplicativo|
-|lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|Resultado da última sincronização do aplicativo. Os valores possíveis são: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
-|ownerUserPrincipalName|String|UPN proprietária que criou a empresa|
+|lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|Resultado da última sincronização do aplicativo. Os possíveis valores são: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
+|ownerUserPrincipalName|Cadeia de caracteres|UPN proprietária que criou a empresa|
 |ownerOrganizationName|String|Nome da organização usada ao integrar o Android for Work|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação das configurações do Android for Work|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Indica quais usuários podem registrar dispositivos no Android para gerenciamento de dispositivos de trabalho. Os valores possíveis são: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
@@ -113,7 +113,6 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
-
 
 
 

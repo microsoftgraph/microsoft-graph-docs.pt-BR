@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso deviceAppManagement
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de aplicativos de dispositivos.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 45164300bbfa9ff3a4de3da144dd66d5dad6e42b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8b047c470ee60ab99275675626a3917911f2a715
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341327"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939774"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 
@@ -30,7 +30,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |**Integração**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
 |microsoftStoreForBusinessLanguage|String|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é <languagecode2>-<country/regioncode2>, onde <languagecode2> é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
@@ -72,14 +72,12 @@ Veja a seguir uma representação JSON do recurso.  Observe que este é apenas u
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "optionalProperties":[
-    "managedAppRegistrations"
-    ],
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
-}-->
+}
+-->
 ``` json
 {
+  "@odata.type": "#microsoft.graph.deviceAppManagement",
   "id": "String (identifier)",
   "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "String (timestamp)",
   "isEnabledForMicrosoftStoreForBusiness": true,

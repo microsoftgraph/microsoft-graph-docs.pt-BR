@@ -1,15 +1,15 @@
 ---
 title: Obter networkManagementCondition
 description: Leia as propriedades e as relações do objeto networkManagementCondition.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7aca1114305df6e3526511e925bab817786f10e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e4103213a2cb429eef9fe4ecbb252923e0163d0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532048"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905214"
 ---
 # <a name="get-networkmanagementcondition"></a>Obter networkManagementCondition
 
@@ -84,7 +84,6 @@ Content-Length: 475
   }
 }
 ```
-
 
 
 

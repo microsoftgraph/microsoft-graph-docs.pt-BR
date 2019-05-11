@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração win32LobAppDetectionOperator
 description: Contém propriedades para o operador de detecção.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 662a49dfcb5f4c80e870185849c6943ace9eed88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d373b03898fdeed45d1dc3218c812b3f7b9726d0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550781"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949756"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>tipo de enumeração win32LobAppDetectionOperator
 
@@ -23,13 +23,12 @@ Contém propriedades para o operador de detecção.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|EQUAL|1 |Operador equal.|
-|Não igual a|2 |Operador diferente de.|
-|greaterThan|4 |Operador maior que.|
-|greaterThanOrEqual|5 |Operador maior ou igual a.|
+|EQUAL|1|Operador equal.|
+|Não igual a|duas|Operador diferente de.|
+|greaterThan|quatro|Operador maior que.|
+|greaterThanOrEqual|0,5|Operador maior ou igual a.|
 |lessThan|8 |Operador menor que.|
 |lessThanOrEqual|9 |Operador menor ou igual.|
-
 
 
 

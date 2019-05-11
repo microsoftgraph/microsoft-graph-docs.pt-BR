@@ -1,15 +1,15 @@
 ---
 title: Get androidForWorkAppConfigurationSchema
 description: Ler propriedades e relações do objeto androidForWorkAppConfigurationSchema.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e5c6e60a34632dccb95b2ad66473ec9f143b89d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 015ef4b92eb4ca327b63bd0bafa329b6cc9f3a02
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32499842"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939088"
 ---
 # <a name="get-androidforworkappconfigurationschema"></a>Get androidForWorkAppConfigurationSchema
 
@@ -97,7 +97,6 @@ Content-Length: 913
   }
 }
 ```
-
 
 
 

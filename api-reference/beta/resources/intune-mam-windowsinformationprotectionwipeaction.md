@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsInformationProtectionWipeAction
 description: Representa as solicitações de apagamento emitidas por um administrador de locatários para dispositivos do Windows BYOD (Traga seu próprio dispositivo).
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47047f401bbf0a690494490cbbd3b934340a26c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 262a27b53aaebc356c3b48987ac00ae349d90320
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558269"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940439"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>tipo de recurso windowsInformationProtectionWipeAction
 
@@ -31,12 +31,12 @@ Representa as solicitações de apagamento emitidas por um administrador de loca
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Status de ação de apagamento. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|String|O UserId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceRegistrationId|String|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceName|String|Nome do dispositivo de destino.|
-|targetedDeviceMacAddress|String|Endereço MAC do dispositivo de destino.|
+|targetedUserId|Cadeia de caracteres|O UserId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceRegistrationId|Cadeia de caracteres|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceName|Cadeia de caracteres|Nome do dispositivo de destino.|
+|targetedDeviceMacAddress|Cadeia de caracteres|Endereço MAC do dispositivo de destino.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo direcionado por esta ação de apagamento.|
 
 ## <a name="relationships"></a>Relações
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

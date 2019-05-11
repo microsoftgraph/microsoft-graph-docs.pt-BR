@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidForWorkPkcsCertificateProfile
 description: Perfil de certificado PKCS para Android para trabalho
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c8862adca3dac9633cd8345ad753a99fc375949
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec593d4c4a8bd507b892bc2298f14f299da3fed5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556204"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33948594"
 ---
 # <a name="androidforworkpkcscertificateprofile-resource-type"></a>tipo de recurso androidForWorkPkcsCertificateProfile
 
@@ -48,10 +48,10 @@ Herda de [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Dimensionar o período de validade do certificado. Herdado de [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md). Os valores possíveis são: `days`, `months`, `years`.|
 |extendedKeyUsages|coleção [extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Configurações de EKU (uso estendido de chave). Esta coleção pode conter um máximo de 500 elementos. Herdado de [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de nome alternativo da entidade do certificado. Herdado de [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md). Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
-|certificationAuthority|String|Autoridade de certificação PKCS|
-|certificationAuthorityName|String|Nome da autoridade de certificação PKCS|
-|certificateTemplateName|String|Nome do modelo de certificado PKCS|
-|Subjectalternativenameformatstring foi|String|Cadeia de caracteres personalizada que define o atributo AAD.|
+|certificationAuthority|Cadeia de caracteres|Autoridade de certificação PKCS|
+|certificationAuthorityName|Cadeia de caracteres|Nome da autoridade de certificação PKCS|
+|certificateTemplateName|Cadeia de caracteres|Nome do modelo de certificado PKCS|
+|Subjectalternativenameformatstring foi|Cadeia de caracteres|Cadeia de caracteres personalizada que define o atributo AAD.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -105,7 +105,6 @@ Veja a seguir uma representação JSON do recurso.
   "subjectAlternativeNameFormatString": "String"
 }
 ```
-
 
 
 

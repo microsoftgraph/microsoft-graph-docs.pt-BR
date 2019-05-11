@@ -1,15 +1,15 @@
 ---
 title: Listar windowsInformationProtectionPolicies
 description: Listar propriedades e relações dos objetos windowsInformationProtectionPolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50b88a5af80f5b63da2fbfa24fdec53f2de658c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 26f74097aef662abf26070439cb2f9a1b439a21e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529118"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900633"
 ---
 # <a name="list-windowsinformationprotectionpolicies"></a>Listar windowsInformationProtectionPolicies
 
@@ -211,7 +211,6 @@ Content-Length: 5232
   ]
 }
 ```
-
 
 
 

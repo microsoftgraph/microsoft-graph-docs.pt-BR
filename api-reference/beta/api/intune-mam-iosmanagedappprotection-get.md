@@ -1,15 +1,15 @@
 ---
 title: Obter iosManagedAppProtections
 description: Ler propriedades e relações do objeto iosManagedAppProtection.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf41e88e7ba24c25f599ed15eb5698bd31db859a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c079fbae4907e2cdf18e9a16bef62f344e6d09a6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530400"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904017"
 ---
 # <a name="get-iosmanagedappprotection"></a>Obter iosManagedAppProtections
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2863
+Content-Length: 2885
 
 {
   "value": {
@@ -129,14 +129,13 @@ Content-Length: 2863
     "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
     "allowedIosDeviceModels": "Allowed Ios Device Models value",
     "appActionIfIosDeviceModelNotAllowed": "wipe",
-    "thirdPartyKeyboardsBlocked": true,
     "filterOpenInToOnlyManagedApps": true,
     "disableProtectionOfManagedOutboundOpenInData": true,
-    "protectInboundDataFromUnknownSources": true
+    "protectInboundDataFromUnknownSources": true,
+    "customBrowserProtocol": "Custom Browser Protocol value"
   }
 }
 ```
-
 
 
 

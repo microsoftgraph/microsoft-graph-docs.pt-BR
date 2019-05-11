@@ -1,15 +1,15 @@
 ---
 title: Obter networkIPv4ConfigurationManagementCondition
 description: Leia as propriedades e as relações do objeto networkIPv4ConfigurationManagementCondition.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9c9881b32d28281285f9bc7c97f5521f15a0aa1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: df1125476f2b77a14ee60b34ed7b411f2c78313d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532195"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905305"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>Obter networkIPv4ConfigurationManagementCondition
 
@@ -93,7 +93,6 @@ Content-Length: 756
   }
 }
 ```
-
 
 
 

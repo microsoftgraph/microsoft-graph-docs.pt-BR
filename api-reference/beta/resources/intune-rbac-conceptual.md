@@ -2,14 +2,14 @@
 title: Controle de acesso baseado em função no Microsoft Intune
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que definem e gerenciam o controle de acesso baseado em função (RBAC) para uma organização de locatário.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 24280426585014f5e397dab39daa71f8930b26c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7bb65853c04ebe7595dfd302e9836b51fcb7cfac
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566385"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940019"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Controle de acesso baseado em função no Microsoft Intune
 

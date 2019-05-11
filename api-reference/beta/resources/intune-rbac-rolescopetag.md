@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso roleScopeTag
 description: Marca de escopo de função
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6916521c8edef1b1decfb6b006779a372d3ab4e5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f44deb124b2347aa2d0300c9fd143b7dca21d74c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566322"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939949"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso roleScopeTag
 
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String"
 }
 ```
-
 
 
 

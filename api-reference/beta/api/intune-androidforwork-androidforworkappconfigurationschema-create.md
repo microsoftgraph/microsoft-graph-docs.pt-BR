@@ -1,15 +1,15 @@
 ---
 title: Criar androidForWorkAppConfigurationSchema
 description: Criar um novo objeto androidForWorkAppConfigurationSchema.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93742039823782fbfe06f2c072a5bb6022d2e5da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 97614ecd0693289b0771cf62d8634c774e6dae35
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501109"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938997"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>Criar androidForWorkAppConfigurationSchema
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidF
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
+|id|Cadeia de caracteres|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
 |exampleJson|Binária|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
 |schemaItems|Coleção [androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema|
 
@@ -131,7 +131,6 @@ Content-Length: 844
   ]
 }
 ```
-
 
 
 

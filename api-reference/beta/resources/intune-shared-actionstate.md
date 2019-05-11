@@ -1,15 +1,15 @@
 ---
 title: tipo de Enumeração ActionState
 description: Estado da ação no dispositivo
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1188670476e911b01375598a2361aae326a98425
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fa3e3dcd9b563301fb87b9bae0f3c2957631334b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566315"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939914"
 ---
 # <a name="actionstate-enum-type"></a>tipo de Enumeração ActionState
 
@@ -22,14 +22,13 @@ Estado da ação no dispositivo
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Não é um estado de ação válido|
-|função|1 |Ação pendente|
-|foi|2 |A ação foi cancelada.|
-|active|3 |A ação está ativa.|
-|done|4 |Ação concluída sem erros.|
-|falhou|5 |Falha na ação|
-|notSupported|6 |Não há suporte para a ação.|
-
+|none|,0|Não é um estado de ação válido|
+|função|1|Ação pendente|
+|foi|duas|A ação foi cancelada.|
+|active|3D|A ação está ativa.|
+|done|quatro|Ação concluída sem erros.|
+|falhou|0,5|Falha na ação|
+|notSupported|6|Não há suporte para a ação.|
 
 
 

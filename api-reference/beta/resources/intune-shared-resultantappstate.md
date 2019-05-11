@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração resultantAppState
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7a364945e3b494c26873cdcc9bc4bb618e89f40
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 904d47ebc2efe08a06f1d228b93788b47aea5144
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572952"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939788"
 ---
 # <a name="resultantappstate-enum-type"></a>tipo de enumeração resultantAppState
 
@@ -22,11 +22,11 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|instalação|1 |O aplicativo é instalado sem erros|
-|falhou|2 |Falha ao instalar o aplicativo.|
-|não instalado|3 |O aplicativo não está instalado.|
-|uninstallFailed|4 |Falha ao desinstalar o aplicativo.|
-|pendingInstall|5 |A instalação do aplicativo está em andamento.|
+|instalação|1|O aplicativo é instalado sem erros|
+|falhou|duas|Falha ao instalar o aplicativo.|
+|não instalado|3D|O aplicativo não está instalado.|
+|uninstallFailed|quatro|Falha ao desinstalar o aplicativo.|
+|pendingInstall|0,5|A instalação do aplicativo está em andamento.|
 |desconhecido|99|O status do aplicativo é desconhecido.|
 |Não aplicável|-1|O aplicativo não é aplicável.|
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso groupPolicyPresentationValueText
 description: A entidade representa um valor de cadeia de caracteres para uma lista suspensa, caixa de combinação ou apresentação de caixa de texto em uma definição de política.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 015d136db76ae7523a06e4dba10c2c7e5bc48187
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 14a7baee5a265421175c42e8a8d127398d8b124d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556883"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940985"
 ---
 # <a name="grouppolicypresentationvaluetext-resource-type"></a>tipo de recurso groupPolicyPresentationValueText
 
@@ -36,7 +36,7 @@ Herda de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppol
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |value|Cadeia de caracteres|Um valor String para a apresentação associada.|
 
 ## <a name="relationships"></a>Relações
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
-
 
 
 

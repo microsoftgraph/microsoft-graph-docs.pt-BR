@@ -1,15 +1,15 @@
 ---
 title: Listar embeddedSIMDeviceStates
 description: Listar Propriedades e relações dos objetos embeddedSIMDeviceState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 79f13f5ea9a176dc9aa9281e5bdc39b2770bf042
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d746c489f67e0f3036dc1b679f80d7d1af96bcfc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532335"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905529"
 ---
 # <a name="list-embeddedsimdevicestates"></a>Listar embeddedSIMDeviceStates
 
@@ -81,7 +81,6 @@ Content-Length: 602
   ]
 }
 ```
-
 
 
 

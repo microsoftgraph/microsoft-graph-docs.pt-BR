@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso managementConditionExpressionString
 description: Uma sequência de expressão de condição de gerenciamento é uma representação de cadeia de caracteres de uma expressão de condição de gerenciamento.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3dac405c71e4e85cc29bb36d335a57bb51fbe0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 510a12e38415b002e62c23891acf95cff7d6fd5a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568728"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941265"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>tipo de recurso managementConditionExpressionString
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
-
 
 
 

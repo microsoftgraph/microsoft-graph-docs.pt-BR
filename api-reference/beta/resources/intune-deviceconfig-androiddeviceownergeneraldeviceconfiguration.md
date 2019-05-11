@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidDeviceOwnerGeneralDeviceConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso androidDeviceOwnerGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 712278c7ad1a84b9e52fe94758ca0da522200d1b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 01059b3d711a41852e1fb9f0af082436b1fbee5a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556405"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33948993"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>tipo de recurso androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -56,8 +56,8 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |factoryResetDeviceAdministratorEmails|Coleção de cadeias de caracteres|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica em configurações está desabilitada.|
 |kioskModeApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos gerenciados que serão mostrados quando o dispositivo estiver no modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|kioskModeWallpaperUrl|String|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
-|kioskModeExitCode|String|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
+|kioskModeWallpaperUrl|Cadeia de caracteres|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
+|kioskModeExitCode|Cadeia de caracteres|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
 |kioskModeVirtualHomeButtonEnabled|Booliano|Se um botão de Home virtual será exibido ou não quando o dispositivo estiver no modo quiosque.|
 |kioskModeBluetoothConfigurationEnabled|Booliano|Se permitirá ou não que um usuário defina configurações de Bluetooth no modo quiosque.|
 |kioskModeWiFiConfigurationEnabled|Booliano|Se permitirá ou não que um usuário defina configurações de Wi-Fi no modo quiosque.|
@@ -95,7 +95,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |usersBlockAdd|Booliano|Indica se os usuários e perfis serão ou não desabilitados.|
 |usersBlockRemove|Booliano|Indica se a remoção de outros usuários do dispositivo deve ou não ser desabilitada.|
 |volumeBlockAdjustment|Booliano|Indica se o ajuste do volume mestre está ou não desabilitado.|
-|vpnAlwaysOnPackageIdentifier|String|Nome do pacote do aplicativo Android para o aplicativo que manipulará uma conexão VPN sempre ativa.|
+|vpnAlwaysOnPackageIdentifier|Cadeia de caracteres|Nome do pacote do aplicativo Android para o aplicativo que manipulará uma conexão VPN sempre ativa.|
 |vpnAlwaysOnLockdownMode|Booliano|Se um nome de pacote VPN Always on for especificado, se o tráfego de rede será ou não bloqueado quando essa VPN for desconectada.|
 |wifiBlockEditConfigurations|Booliano|Indica se o usuário será ou não impedido de editar as configurações de conexão WiFi.|
 |wifiBlockEditPolicyDefinedConfigurations|Booliano|Indica se o usuário será ou não impedido de editar apenas as redes definidas pela política.|
@@ -205,7 +205,6 @@ Veja a seguir uma representação JSON do recurso.
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
 
 
 

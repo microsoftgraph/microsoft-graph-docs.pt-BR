@@ -1,15 +1,15 @@
 ---
 title: Excluir groupPolicyConfiguration
 description: Exclui groupPolicyConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f645870ed6c0f48874a8aecadd59655d027ee220
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ef9f738bb98cdb6f1fd686fced74767c81caaec4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532181"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905200"
 ---
 # <a name="delete-grouppolicyconfiguration"></a>Excluir groupPolicyConfiguration
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

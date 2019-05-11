@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração androidDeviceOwnerDefaultAppPermissionPolicyType
 description: Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0eb1958c539078d7625fc6d930be75136273b974
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 73e2d1533cdf1bbcf34c219e5da9e3a0062b3210
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556477"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949042"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>tipo de enumeração androidDeviceOwnerDefaultAppPermissionPolicyType
 
@@ -23,10 +23,9 @@ Tipo de política de permissão de aplicativo padrão do proprietário do dispos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|prompt|1 |Notifica.|
-|Concessão autoGrant|2 |Concessão automática.|
-|Negação de permissão|3 |Negação automática.|
-
+|prompt|1|Notifica.|
+|Concessão autogrant|duas|Concessão automática.|
+|Negação de permissão|3D|Negação automática.|
 
 
 

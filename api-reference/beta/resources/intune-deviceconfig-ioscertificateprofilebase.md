@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso iosCertificateProfileBase
 description: base de perfil de certificado iOS.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5b8fa70fc3d741f52cfd72aa5230c6a48aad2cd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee2ac341b18ad5d49c1c925642b8c2606e3161a6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571125"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946529"
 ---
 # <a name="ioscertificateprofilebase-resource-type"></a>tipo de recurso iosCertificateProfileBase
 
@@ -84,7 +84,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificateValidityPeriodScale": "String"
 }
 ```
-
 
 
 

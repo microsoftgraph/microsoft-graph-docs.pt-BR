@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração androidDeviceOwnerPlayStoreMode
 description: Tipo de modo de repositório de execução do dispositivo Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00909f739773e67d4b5a1ae87f53982b627f511e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d37f57dc2481e18871fca840499142eda30ab8fd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556385"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949000"
 ---
 # <a name="androiddeviceownerplaystoremode-enum-type"></a>tipo de enumeração androidDeviceOwnerPlayStoreMode
 
@@ -23,9 +23,8 @@ Tipo de modo de repositório de execução do dispositivo Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|permissão|1 |Somente os aplicativos que estão na política estão disponíveis e qualquer aplicativo que não esteja na política será desinstalado automaticamente do dispositivo.|
-|Lista|2 |Todos os aplicativos estão disponíveis e qualquer aplicativo que não esteja no dispositivo deve ser explicitamente marcado como ' bloqueado ' na política de aplicativos.|
-
+|permissão|1|Somente os aplicativos que estão na política estão disponíveis e qualquer aplicativo que não esteja na política será desinstalado automaticamente do dispositivo.|
+|Lista|duas|Todos os aplicativos estão disponíveis e qualquer aplicativo que não esteja no dispositivo deve ser explicitamente marcado como ' bloqueado ' na política de aplicativos.|
 
 
 

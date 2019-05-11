@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso iPv6Range
 description: Definição de intervalo IPv6.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51815dffc0048ec88b81cbe6034a42e108e5b222
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b767b5af514045c52dec57244d186d7ff3feb9f8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550578"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940558"
 ---
 # <a name="ipv6range-resource-type"></a>Tipo de recurso iPv6Range
 
@@ -25,7 +25,7 @@ Herda de [ipRange](../resources/intune-shared-iprange.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|lowerAddress|String|Endereço inferior.|
+|lowerAddress|Cadeia de caracteres|Endereço inferior.|
 |upperAddress|Cadeia de caracteres|Endereço superior.|
 
 ## <a name="relationships"></a>Relações
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "upperAddress": "String"
 }
 ```
-
 
 
 

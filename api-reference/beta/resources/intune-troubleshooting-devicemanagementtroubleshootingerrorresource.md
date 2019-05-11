@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementTroubleshootingErrorResource
 description: Objeto representando um link para informações de solução de problemas, o link pode ser para o portal do Azure ou um documento Microsoft.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5905f62a1da0329db1b311ae586cdb64517a2b5d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 712832420b556517be8ef053cc6cd292acfeed86
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554048"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939844"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>tipo de recurso deviceManagementTroubleshootingErrorResource
 
@@ -23,7 +23,7 @@ Objeto representando um link para informações de solução de problemas, o lin
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |texto|String|Ainda não documentado|
-|vínculo|String|O link para o recurso da Web. Pode conter qualquer um dos seguintes formatadores: {{UPN}}, {{DeviceGUID}}, {{userGUID}}|
+|vínculo|Cadeia de caracteres|O link para o recurso da Web. Pode conter qualquer um dos seguintes formatadores: {{UPN}}, {{DeviceGUID}}, {{userGUID}}|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "link": "String"
 }
 ```
+
 
 
 

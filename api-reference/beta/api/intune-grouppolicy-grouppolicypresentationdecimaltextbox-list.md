@@ -1,15 +1,15 @@
 ---
 title: Listar groupPolicyPresentationDecimalTextBoxes
 description: Listar Propriedades e relações dos objetos groupPolicyPresentationDecimalTextBox.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b716f60ee0e072dc23d59935725b0b0d8a6a8076
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 21672e4eb45859c23f95ee60c8b61a516fde3562
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531233"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904924"
 ---
 # <a name="list-grouppolicypresentationdecimaltextboxes"></a>Listar groupPolicyPresentationDecimalTextBoxes
 
@@ -81,7 +81,6 @@ Content-Length: 407
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Listar deviceManagementPartners
 description: Listar propriedades e relações de objetos de deviceManagementPartner.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e88d32c0b293a63dcf65fc22cf61ad1c9586fff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 735e6ee974e6a7d0f1c2fe07b6e35097a654944b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528754"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900065"
 ---
 # <a name="list-devicemanagementpartners"></a>Listar deviceManagementPartners
 
@@ -83,7 +83,6 @@ Content-Length: 794
   ]
 }
 ```
-
 
 
 

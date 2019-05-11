@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração defenderSubmitSamplesConsentType
 description: Valores possíveis para DefenderSubmitSamplesConsentType
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 105f282f93eb43d8e977a997d0ea114ff86ace10
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 212215c95a0f9674be793e6f001d8e71d2039b4a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563466"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947271"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>tipo de enumeração defenderSubmitSamplesConsentType
 
@@ -23,10 +23,9 @@ Valores possíveis para DefenderSubmitSamplesConsentType
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sendSafeSamplesAutomatically|,0|Enviar amostras seguras automaticamente|
-|alwaysPrompt|1 |Sempre avisar|
-|neverSend|2 |Nunca enviar|
-|sendAllSamplesAutomatically|3 |Enviar todos os exemplos automaticamente|
-
+|alwaysPrompt|1|Sempre avisar|
+|neverSend|duas|Nunca enviar|
+|sendAllSamplesAutomatically|3D|Enviar todos os exemplos automaticamente|
 
 
 

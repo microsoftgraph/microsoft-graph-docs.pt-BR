@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
 description: Item de histórico contido no evento de solução de problemas de aplicativo móvel.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbbf575c7eaecb93e0256d6f672d0c4d6bdd0edf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ce8cf0290830a22ae1f074f9b177535cd2b20e09
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570037"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939829"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
 
@@ -47,6 +47,7 @@ Veja a seguir uma representação JSON do recurso.
   "errorCode": "String"
 }
 ```
+
 
 
 
