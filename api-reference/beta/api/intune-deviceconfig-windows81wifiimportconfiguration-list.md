@@ -1,34 +1,34 @@
 ---
 title: Listar windows81WifiImportConfigurations
 description: Listar Propriedades e relações dos objetos windows81WifiImportConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f01ed0fff6250bb4f729cb69b67fc6cf45b7fe47
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3858f9e423cac4b378968d8f00f6a7e8ff513825
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515488"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918084"
 ---
-# <a name="list-windows81wifiimportconfigurations"></a><span data-ttu-id="28505-103">Listar windows81WifiImportConfigurations</span><span class="sxs-lookup"><span data-stu-id="28505-103">List windows81WifiImportConfigurations</span></span>
+# <a name="list-windows81wifiimportconfigurations"></a><span data-ttu-id="1ffea-103">Listar windows81WifiImportConfigurations</span><span class="sxs-lookup"><span data-stu-id="1ffea-103">List windows81WifiImportConfigurations</span></span>
 
-> <span data-ttu-id="28505-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="28505-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1ffea-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1ffea-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="28505-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="28505-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1ffea-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1ffea-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="28505-106">Listar Propriedades e relações dos objetos [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="28505-106">List properties and relationships of the [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) objects.</span></span>
+<span data-ttu-id="1ffea-106">Listar Propriedades e relações dos objetos [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="1ffea-106">List properties and relationships of the [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="28505-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="28505-107">Prerequisites</span></span>
-<span data-ttu-id="28505-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28505-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1ffea-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1ffea-107">Prerequisites</span></span>
+<span data-ttu-id="1ffea-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1ffea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="28505-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="28505-110">Permission type</span></span>|<span data-ttu-id="28505-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="28505-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1ffea-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1ffea-110">Permission type</span></span>|<span data-ttu-id="1ffea-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1ffea-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="28505-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="28505-112">Delegated (work or school account)</span></span>|<span data-ttu-id="28505-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="28505-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="28505-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="28505-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="28505-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="28505-115">Not supported.</span></span>|
-|<span data-ttu-id="28505-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="28505-116">Application</span></span>|<span data-ttu-id="28505-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="28505-117">Not supported.</span></span>|
+|<span data-ttu-id="1ffea-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1ffea-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1ffea-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="1ffea-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="1ffea-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1ffea-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1ffea-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1ffea-115">Not supported.</span></span>|
+|<span data-ttu-id="1ffea-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1ffea-116">Application</span></span>|<span data-ttu-id="1ffea-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1ffea-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="28505-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="28505-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1ffea-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1ffea-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="28505-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="28505-119">Request headers</span></span>
-|<span data-ttu-id="28505-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="28505-120">Header</span></span>|<span data-ttu-id="28505-121">Valor</span><span class="sxs-lookup"><span data-stu-id="28505-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1ffea-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1ffea-119">Request headers</span></span>
+|<span data-ttu-id="1ffea-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1ffea-120">Header</span></span>|<span data-ttu-id="1ffea-121">Valor</span><span class="sxs-lookup"><span data-stu-id="1ffea-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="28505-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="28505-122">Authorization</span></span>|<span data-ttu-id="28505-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="28505-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="28505-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="28505-124">Accept</span></span>|<span data-ttu-id="28505-125">application/json</span><span class="sxs-lookup"><span data-stu-id="28505-125">application/json</span></span>|
+|<span data-ttu-id="1ffea-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="1ffea-122">Authorization</span></span>|<span data-ttu-id="1ffea-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1ffea-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1ffea-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1ffea-124">Accept</span></span>|<span data-ttu-id="1ffea-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1ffea-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="28505-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="28505-126">Request body</span></span>
-<span data-ttu-id="28505-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="28505-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1ffea-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1ffea-126">Request body</span></span>
+<span data-ttu-id="1ffea-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1ffea-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="28505-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="28505-128">Response</span></span>
-<span data-ttu-id="28505-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28505-129">If successful, this method returns a `200 OK` response code and a collection of [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1ffea-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ffea-128">Response</span></span>
+<span data-ttu-id="1ffea-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1ffea-129">If successful, this method returns a `200 OK` response code and a collection of [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="28505-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="28505-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1ffea-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1ffea-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="28505-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="28505-131">Request</span></span>
-<span data-ttu-id="28505-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="28505-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1ffea-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1ffea-131">Request</span></span>
+<span data-ttu-id="1ffea-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1ffea-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="28505-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="28505-133">Response</span></span>
-<span data-ttu-id="28505-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="28505-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1ffea-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ffea-133">Response</span></span>
+<span data-ttu-id="1ffea-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1ffea-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -86,7 +86,6 @@ Content-Length: 642
   ]
 }
 ```
-
 
 
 
