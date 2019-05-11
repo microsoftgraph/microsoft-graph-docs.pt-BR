@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso sharedAppleDeviceUser
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 43bc64243cb330f0761c8ded3ab646a0cde4f926
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ff51ad89600919fb1ed2c3bb506a53178ccdc445
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526109"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941748"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>tipo de recurso sharedAppleDeviceUser
 
@@ -22,10 +22,10 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Nome de usuário|
+|userPrincipalName|Cadeia de caracteres|Nome de usuário|
 |dataToSync|Booliano|Dados a serem sincronizados|
-|dataQuota|Int64|Cota de dados|
-|dataUsed|Int64|Cota de dados|
+|dataquota|Int64|Cota de dados|
+|dataused|Int64|Cota de dados|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "dataUsed": 1024
 }
 ```
-
 
 
 

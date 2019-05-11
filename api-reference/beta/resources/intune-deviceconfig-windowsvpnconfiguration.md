@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsVpnConfiguration
 description: Perfil de configuração da VPN do Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b4e7953bf914fbe2db3dbe4717d6127373a5cb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c30adf2274ba681f9f8fa8c1ca4eaaf65dc53715
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523571"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944107"
 ---
 # <a name="windowsvpnconfiguration-resource-type"></a>tipo de recurso windowsVpnConfiguration
 
@@ -39,9 +39,9 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|ConnectionName|String|Nome da conexão exibido para o usuário.|
+|ConnectionName|Cadeia de caracteres|Nome da conexão exibido para o usuário.|
 |servidores|coleção [vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Lista de servidores VPN na rede. Verifique se os usuários finais podem acessar esses locais de rede. Esta coleção pode conter um máximo de 500 elementos.|
-|customXml|Binário|Comandos XML personalizados que configura a conexão VPN. (Matriz de bytes codificados em UTF8)|
+|customXml|Binária|Comandos XML personalizados que configura a conexão VPN. (Matriz de bytes codificados em UTF8)|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -87,7 +87,6 @@ Veja a seguir uma representação JSON do recurso.
   "customXml": "binary"
 }
 ```
-
 
 
 

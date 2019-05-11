@@ -1,15 +1,15 @@
 ---
 title: Excluir windowsPhone81VpnConfiguration
 description: Exclui windowsPhone81VpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9401ade0495beac1e702aff6ce7f330a4ec1ca99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f4842e9f5e805231b931d0320628ba9211222549
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512639"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917608"
 ---
 # <a name="delete-windowsphone81vpnconfiguration"></a>Excluir windowsPhone81VpnConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

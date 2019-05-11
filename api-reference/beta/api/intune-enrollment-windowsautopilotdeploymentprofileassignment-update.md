@@ -1,15 +1,15 @@
 ---
 title: Atualizar windowsAutopilotDeploymentProfileAssignment
 description: Atualiza as propriedades de um objeto windowsAutopilotDeploymentProfileAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 562ae8b137754acc3475ba98fb335a4f7e7310dd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b5f28f6208fe81e251b5a5a2dc79c8e56def15ad
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532657"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908214"
 ---
 # <a name="update-windowsautopilotdeploymentprofileassignment"></a>Atualizar windowsAutopilotDeploymentProfileAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da atribuição.|
+|id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição para o perfil de implantação do piloto automático do Windows.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 232
   }
 }
 ```
-
 
 
 

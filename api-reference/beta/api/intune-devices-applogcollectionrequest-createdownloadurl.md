@@ -1,15 +1,15 @@
 ---
 title: ação createDownloadUrl
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91cbfb4bba360ca11558e8dd0c01cf8a854a9c5e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 762835b58be334b72a2f67935cefcae8c6263e12
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466081"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910522"
 ---
 # <a name="createdownloadurl-action"></a>ação createDownloadUrl
 
@@ -73,7 +73,6 @@ Content-Length: 239
   }
 }
 ```
-
 
 
 
