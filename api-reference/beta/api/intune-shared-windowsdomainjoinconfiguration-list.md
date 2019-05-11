@@ -1,15 +1,15 @@
 ---
 title: Listar windowsDomainJoinConfigurations
 description: Listar Propriedades e relações dos objetos windowsDomainJoinConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 19f4687039e2a07b32994d855f3e215da2af85c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fba5ecec145196f4fd4a12182edc31022fb491b6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526822"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897804"
 ---
 # <a name="list-windowsdomainjoinconfigurations"></a>Listar windowsDomainJoinConfigurations
 

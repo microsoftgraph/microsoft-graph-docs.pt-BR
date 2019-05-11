@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração meteredConnectionLimitType
 description: Configurações de limite de conexão limitada.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb0cd84d5cdee909cb897ee46010551605ab1f5a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b6e7cabe52bdf3c6b0a77304b7dd11c88f50cc99
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554356"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950764"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>tipo de enumeração meteredConnectionLimitType
 
@@ -23,9 +23,8 @@ Configurações de limite de conexão limitada.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |irrestrito|,0|Unrestricted|
-|prefixo|1 |Fixed|
-|variável|2 |Variável|
-
+|prefixo|1|Fixed|
+|variável|duas|Variável|
 
 
 

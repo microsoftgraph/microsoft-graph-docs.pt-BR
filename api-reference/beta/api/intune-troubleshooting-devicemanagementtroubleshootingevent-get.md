@@ -1,15 +1,15 @@
 ---
 title: Acessar deviceManagementTroubleshootingEvent
 description: Leia as propriedades e as relações do objeto deviceManagementTroubleshootingEvent.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cae0e91fe2a7d105de829063e0a81abe48df2dac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 693e1f60e41af105f0111eb4cd76ccecfdf8a212
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525293"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899323"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>Acessar deviceManagementTroubleshootingEvent
 
@@ -98,6 +98,7 @@ Content-Length: 972
   }
 }
 ```
+
 
 
 

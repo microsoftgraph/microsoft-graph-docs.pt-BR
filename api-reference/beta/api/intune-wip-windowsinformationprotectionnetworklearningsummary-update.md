@@ -1,15 +1,15 @@
 ---
 title: Atualizar windowsInformationProtectionNetworkLearningSummary
 description: Atualizar as propriedades de um objeto windowsInformationProtectionNetworkLearningSummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e22260808237797c14d8cf77f14ed07ff0add8e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 09b02072f0b5f11e593e8b9f7f04f420499ca4d1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541266"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898175"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>Atualizar windowsInformationProtectionNetworkLearningSummary
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo de WindowsInformationProtectionNetworkLearningSummary.|
+|id|Cadeia de caracteres|Identificador exclusivo de WindowsInformationProtectionNetworkLearningSummary.|
 |url|Cadeia de caracteres|Url do site|
 |deviceCount|Int32|Contagem de dispositivos|
 
@@ -89,7 +89,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
 
 
 

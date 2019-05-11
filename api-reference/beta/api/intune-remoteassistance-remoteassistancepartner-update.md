@@ -1,15 +1,15 @@
 ---
 title: Atualizar remoteAssistancePartner
 description: Atualizar as propriedades de um objeto remoteAssistancePartner.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f1a4b37c27f6df9b3618051b1241cc35923834f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 46224143f3315cdcd9791d7c847f65f1697d8ebd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527186"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899302"
 ---
 # <a name="update-remoteassistancepartner"></a>Atualizar remoteAssistancePartner
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [remoteA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do parceiro.|
+|id|Cadeia de caracteres|O identificador exclusivo do parceiro.|
 |displayName|String|Nome de exibição do parceiro.|
 |onboardingUrl|Cadeia de caracteres|URL do portal de integração do parceiro, no qual um administrador pode configurar o serviço de assistência remota.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Uma descrição amigável do status atual do conector do TeamViewer. Os valores possíveis são: `notOnboarded`, `onboarding`, `onboarded`.|
@@ -95,7 +95,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

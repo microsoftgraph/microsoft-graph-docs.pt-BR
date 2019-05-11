@@ -1,15 +1,15 @@
 ---
 title: Get enrollmentTroubleshootingEvent
 description: Propriedades de leitura e relações do objeto enrollmentTroubleshootingEvent.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21de48e21ef4dd0b1036942945d7db88d8b1c0b2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0eae252fbdbbad8967083deae825090bb0474905
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541238"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898642"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
 
@@ -106,6 +106,7 @@ Content-Length: 1318
   }
 }
 ```
+
 
 
 

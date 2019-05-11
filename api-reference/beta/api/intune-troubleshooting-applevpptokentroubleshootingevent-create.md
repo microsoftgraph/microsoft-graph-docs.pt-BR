@@ -1,15 +1,15 @@
 ---
 title: Criar appleVppTokenTroubleshootingEvent
 description: Criar um novo objeto appleVppTokenTroubleshootingEvent.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e136b7a3a1fc43792a521e0b15678936b3d74641
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 45412c0acc9061a1e247f4f39824eedf279999da
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526661"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897818"
 ---
 # <a name="create-applevpptokentroubleshootingevent"></a>Criar appleVppTokenTroubleshootingEvent
 
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar appleVpp
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu. Herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço. Herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção. Herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|EventName|String|Nome do evento correspondente ao evento de solução de problemas. É um campo opcional herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|EventName|Cadeia de caracteres|Nome do evento correspondente ao evento de solução de problemas. É um campo opcional herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres que fornece informações adicionais sobre o evento de solução de problemas herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|tokenid|String|Identificador de token do Apple Volume Purchase Program.|
+|tokenid|Cadeia de caracteres|Identificador de token do Apple Volume Purchase Program.|
 
 
 
@@ -139,6 +139,7 @@ Content-Length: 930
   "tokenId": "Token Id value"
 }
 ```
+
 
 
 

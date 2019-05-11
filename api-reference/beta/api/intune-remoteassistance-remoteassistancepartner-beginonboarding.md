@@ -1,15 +1,15 @@
 ---
 title: Ação beginOnboarding
 description: Uma solicitação para iniciar a integração.  Deve ser associado às informações de conta do TeamViewer apropriadas
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36fa3b2d27bbcad94ad2427c5a248a3ae5360fc8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ba1ec22e80cf7c876e3ed2767ade9e05cd8823f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527235"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899414"
 ---
 # <a name="beginonboarding-action"></a>Ação beginOnboarding
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

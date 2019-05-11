@@ -1,15 +1,15 @@
 ---
 title: Função getManagedAppPolicies
 description: Obtém as restrições de aplicativo para um determinado usuário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f1b32188f002b51cad4a2dd491c0a3ea8edeeb8d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ee0a27edde8b48a7bbf34eb783ff5485bdd9734
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526864"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897839"
 ---
 # <a name="getmanagedapppolicies-function"></a>Função getManagedAppPolicies
 

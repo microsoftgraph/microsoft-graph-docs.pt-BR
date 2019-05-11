@@ -1,15 +1,15 @@
 ---
 title: Atualizar roleScopeTag
 description: Atualiza as propriedades de um objeto roleScopeTag.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3670850bb0a9b3907b02c3e48d893b35ce7fcbb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a4f361ba40e92434a3fbd5566a1e5c20517032ba
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527270"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899372"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 
@@ -90,7 +90,6 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
-
 
 
 

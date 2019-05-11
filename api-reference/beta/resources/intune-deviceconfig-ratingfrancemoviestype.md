@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração ratingFranceMoviesType
 description: Rótulos de classificação de filmes na França
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12c775d7717dfd06f20e8300fe3e04db6c526840
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9432640a5f2d4ab861a553129b7e29a8aea4a3f9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566707"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951100"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>tipo de enumeração ratingFranceMoviesType
 
@@ -23,12 +23,11 @@ Rótulos de classificação de filmes na França
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1 |Não permitir conteúdo de filmes|
-|agesAbove10|2 |A classificação 10 proíbe a triagem do filme para menores abaixo de 10|
-|agesAbove12|3 |A classificação 12 proíbe a triagem do filme em menos de 12|
-|agesAbove16|4 |A classificação 16 proíbe a triagem do filme para menores em 16|
-|agesAbove18|5 |A classificação 18 proíbe a triagem para menores abaixo de 18|
-
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|agesAbove10|duas|A classificação 10 proíbe a triagem do filme para menores abaixo de 10|
+|agesAbove12|3D|A classificação 12 proíbe a triagem do filme em menos de 12|
+|agesAbove16|quatro|A classificação 16 proíbe a triagem do filme para menores em 16|
+|agesAbove18|0,5|A classificação 18 proíbe a triagem para menores abaixo de 18|
 
 
 

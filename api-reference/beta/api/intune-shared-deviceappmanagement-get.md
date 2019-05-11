@@ -1,15 +1,15 @@
 ---
 title: Get deviceAppManagement
 description: Ler propriedades e relações do objeto deviceAppManagement.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c27099cdc0e2ffbbc3e0e02cde07b9b4e34ea33c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dd95af58907525b2de1cfeb80baae09429480695
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527179"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899344"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 

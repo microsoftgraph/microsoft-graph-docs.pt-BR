@@ -1,15 +1,15 @@
 ---
 title: Ação desconectar
 description: Uma solicitação para remover o conector do TeamViewer ativo
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dda674128dc42690ec5385cf5e2ac350f9284fc1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d35ac1f94fe36ba82f237f3d0fecfa5a6ae23e3e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527228"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899386"
 ---
 # <a name="disconnect-action"></a>Ação disconnect
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

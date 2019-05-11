@@ -6,18 +6,18 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 09950a590063327f054fa30038854dd98bf74de0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 27e9a13b41ce2b8e46321eef2afc4e103248281b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599832"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951184"
 ---
 # <a name="dynamics-365-business-central-api-overview-preview"></a>Visão geral da API do Dynamics 365 Business central (versão prévia)
 O Dynamics 365 Business central é uma solução de gerenciamento de negócios unificada e fácil de usar e adaptar, ajudando você a se conectar à sua empresa e tomar decisões mais inteligentes. Ele fornece uma visão completa de sua empresa, permitindo que você gerencie suas finanças, automatize e proteja sua cadeia de fornecimento, venda mais inteligente e aprimore o atendimento ao cliente, mantenha projetos no prazo e sob o orçamento e otimize as operações.
 
 ## <a name="why-integrate-with-dynamics-365-business-central"></a>Por que integrar com o Dynamics 365 Business central?
-Integrando seus aplicativos ao Dynamics 365 Business central, você pode criar experiências que abranjam suas necessidades de negócios. Você pode criar soluções que permitem que os usuários realizem as principais tarefas e funções de negócios. Você pode usar o Microsoft Graph para acessar e gerenciar seus finanças, trabalhar com contatos comerciais, criar e enviar documentos de vendas e compras e obter informações sobre relatórios financeiros. 
+Integrando seus aplicativos ao Dynamics 365 Business central, você pode criar experiências que abranjam suas necessidades de negócios. Você pode criar soluções que permitem que os usuários realizem as principais tarefas e funções de negócios. Você pode usar o Microsoft Graph para acessar e gerenciar seus finanças, trabalhar com contatos comerciais, criar e enviar documentos de vendas e compras e obter informações sobre relatórios financeiros.
 
 ### <a name="synchronize-your-business-applications"></a>Sincronizar seus aplicativos de negócios
 Muitas empresas usam diferentes aplicativos de negócios desconectados para gerenciar várias funções da empresa. O Microsoft Graph permite que você conecte os dados para trazer esses aplicativos juntos. Isso facilita a conexão do aplicativo de folha de pagamento aos registros de funcionários, a conexão de seus aplicativos de despesas aos registros de fornecedores e o seu aplicativo de CRM manter os registros do cliente atualizados. Conecte seus dados para manter seus aplicativos sincronizados.
@@ -29,7 +29,7 @@ Cada empresa é diferente e pode ter processos de negócios especializados. Esse
 O Microsoft Graph fornece acesso aos seus relatórios financeiros. Conecte as ferramentas e os aplicativos de BI à sua folha de saldo, declaração de fluxo de caixa, relatórios de envelhecimento de contas a pagar e contas a receber e relatórios de balancete para criar painéis de BI e garantir que os usuários tenham acesso às informações de que precisam.
 
 ## <a name="authorization"></a>Autorização
-Use o ponto de extremidade do Azure AD v 2.0 para autenticar as APIs do Dynamics 365 Business central. Todas as APIs exigem `Authorization: Bearer {access-token}` o cabeçalho da solicitação. Para obter mais informações sobre autorização, consulte [obter tokens de acesso para chamar o Microsoft Graph](./auth/).
+Use o ponto de extremidade do Azure AD v 2.0 para autenticar as APIs do Dynamics 365 Business central. Todas as APIs exigem `Authorization: Bearer {access-token}` o cabeçalho da solicitação. Para obter mais informações sobre autorização, consulte [obter tokens de acesso para chamar o Microsoft Graph](/graph/auth).
 
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?

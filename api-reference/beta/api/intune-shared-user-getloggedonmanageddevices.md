@@ -1,15 +1,15 @@
 ---
 title: função getLoggedOnManagedDevices
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f9768956201e5537964493f32273664b47f2983d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d8e53199a02b3f28ed8826cd1555f2386276fcfa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527025"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898399"
 ---
 # <a name="getloggedonmanageddevices-function"></a>função getLoggedOnManagedDevices
 

@@ -3,12 +3,12 @@ title: Atualizar secureScoreControlProfile
 description: Atualize um objeto secureScoreControlProfile editável em qualquer solução integrada para alterar várias propriedades, como assignedTo ou tenantNote.
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 8f3193b72ac59528c386bb6207b17d4440e6c98a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 79d958e3f2bd04be8dab2d8fe0bda6117f487973
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629744"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951283"
 ---
 # <a name="update-securescorecontrolprofile"></a>Atualizar secureScoreControlProfile
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |   Escopo securityevents. ReadWrite. All.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application | Escopo securityevents. ReadWrite. All. |
+|Aplicativo | Escopo securityevents. ReadWrite. All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -99,6 +99,14 @@ Veja a seguir o exemplo de uma resposta bem-sucedida.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: solicitação com cabeçalho preferencial
 
@@ -201,6 +209,10 @@ Content-type: application/json
   "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,15 +1,15 @@
 ---
 title: Obter intuneBrandingProfileAssignment
 description: Leia as propriedades e as relações do objeto intuneBrandingProfileAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7da63b694acf1846021f9635999ece4155d61a0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e12a60dadccb275808891da3ac60b0066ebd82c4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541770"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898298"
 ---
 # <a name="get-intunebrandingprofileassignment"></a>Obter intuneBrandingProfileAssignment
 
@@ -77,7 +77,6 @@ Content-Length: 249
   }
 }
 ```
-
 
 
 

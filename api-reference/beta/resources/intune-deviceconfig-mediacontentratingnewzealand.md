@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso mediaContentRatingNewZealand
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1d2b608a285413e8ad4f7049d06982a06878450
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 48698cf0f35fc39c8e385d391344914ea34745ea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554390"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950876"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>Tipo de recurso mediaContentRatingNewZealand
 
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Criar intuneBrandingProfileAssignment
 description: Criar um novo objeto intuneBrandingProfileAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6eefb230598d381f306a8a167c01217bc11b9504
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec9fec5aeb954c2bf4264d12a4ff1cb44a2ed3c6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541800"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899316"
 ---
 # <a name="create-intunebrandingprofileassignment"></a>Criar intuneBrandingProfileAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar intuneBr
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual o perfil de identidade visual está atribuído.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 220
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: função managedDeviceEnrollmentFailureTrends
 description: Metadados para o relatório de tendências de falha de inscrição
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e5d15c247c16e22748da0fe0db358adbe41035f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 022eb9e2f3f820540d7b6cc32547b53875786205
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526969"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898189"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>função managedDeviceEnrollmentFailureTrends
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp; &nbsp; **Solução de Problemas** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

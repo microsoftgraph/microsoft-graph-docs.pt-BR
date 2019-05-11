@@ -1,15 +1,15 @@
 ---
 title: Acessar deviceManagement
 description: Leia as propriedades e as relações do objeto deviceManagement.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ba39a49f02d6f6eb541786a46b0cb0fa761de18f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bbbe6c21d602266be2223fbd72b10ae9f51f7818
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527081"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898378"
 ---
 # <a name="get-devicemanagement"></a>Acessar deviceManagement
 
@@ -41,8 +41,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp;&nbsp; **Acesso remoto** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Assistência remota** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; **Solução de Problemas** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-| &nbsp;&nbsp; **Proteção de informações do Windows** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
+| &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
 | Aplicativo | Sem suporte. |
 

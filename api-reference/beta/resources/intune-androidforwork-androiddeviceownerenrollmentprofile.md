@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidDeviceOwnerEnrollmentProfile
 description: Perfil de registro usado para registrar dispositivos COSU usando o Gerenciamento de Nuvem do Google.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e528d067f457fc441a2d5c6f880971bc79360992
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e4e4fdb5ef4beedc6f253480199f29994bae53f0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553194"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950799"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>tipo de recurso androidDeviceOwnerEnrollmentProfile
 
@@ -33,13 +33,13 @@ Perfil de registro usado para registrar dispositivos COSU usando o Gerenciamento
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
+|accountId|Cadeia de caracteres|GUID de locatário ao qual o perfil de registro pertence.|
 |id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
-|displayName|String|Nome de exibição do perfil de registro.|
+|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
 |description|String|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
-|tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|
+|tokenValue|Cadeia de caracteres|Valor do token mais recentemente criado para este perfil de registro.|
 |Propriedadetokencreationdatetime|DateTimeOffset|Data e hora em que o token criado mais recentemente foi criado.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
@@ -78,7 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

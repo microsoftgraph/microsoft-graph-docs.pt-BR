@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos da exibição de intervalo.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c0760e63fd9d1c143c4d4e649c093d83009374c8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 36e7c93133dd4298aa53898d05557cb88ca127c0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33600458"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951269"
 ---
 # <a name="list-rangeview-rows"></a>Linhas da lista rangeView
 
@@ -79,9 +79,11 @@ Content-length: 247
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_rows-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_rows-Cs-snippets.md)]
 
 ---

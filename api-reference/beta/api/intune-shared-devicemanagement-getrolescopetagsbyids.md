@@ -1,15 +1,15 @@
 ---
 title: função Funçãogetrolescopetagsbyids
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 764bfd10fdfde445d38dbf5eb4f2552f02a8231f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4856b981937bbbf422d5cb8b9e30349ef492e4c1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527074"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898322"
 ---
 # <a name="getrolescopetagsbyids-function"></a>função Funçãogetrolescopetagsbyids
 
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ids|String collection|Ainda não documentado|
+|ids|Coleção de cadeias de caracteres|Ainda não documentado|
 
 
 

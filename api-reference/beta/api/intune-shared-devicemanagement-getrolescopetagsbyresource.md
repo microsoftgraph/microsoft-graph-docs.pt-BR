@@ -1,15 +1,15 @@
 ---
 title: função getRoleScopeTagsByResource
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4729aa6fdc6dd63acead2c9d1225c05d881706df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a70b64961924fa5f6ee4bbf20827a8cf5e7d04c1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527067"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898357"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>função getRoleScopeTagsByResource
 

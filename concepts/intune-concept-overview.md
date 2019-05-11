@@ -1,15 +1,15 @@
 ---
 title: Visão geral da API de dispositivos e aplicativos do Intune
 description: 'O Microsoft Intune ajuda as empresas a gerenciar dispositivos e aplicativos em uma organização. Você pode usar a API do Intune no Microsoft Graph para gerenciar dispositivos, aplicativos e até mesmo configurar o Intune enquanto usa suas ferramentas favoritas. '
-author: tfitzmac
+author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 3fc51a81bce93de3b17b8107158998a3b5764da4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37c77147029f58625ee8a115dffebb91ee432b30
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560891"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951191"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Visão geral da API de dispositivos e aplicativos do Intune
 

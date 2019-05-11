@@ -1,15 +1,15 @@
 ---
 title: Criar mobileAppIntentAndState
 description: Criar um novo objeto mobileAppIntentAndState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99629932f8cf1d578a7bc6b4447690cb7f21e7b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bdf522608972a8a43d0b6fae2cef8e0afce65eff
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541203"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898686"
 ---
 # <a name="create-mobileappintentandstate"></a>Criar mobileAppIntentAndState
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 |:---|:---|:---|
 |id|String|O UUID do objeto.|
 |managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
-|userId|String|Identificador do usuário que tentou registrar o dispositivo.|
+|userId|Cadeia de caracteres|Identificador do usuário que tentou registrar o dispositivo.|
 |mobileAppList|coleção [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|A lista de efeitos e Estados de carga para o locatário.|
 
 
@@ -126,6 +126,7 @@ Content-Length: 880
   ]
 }
 ```
+
 
 
 

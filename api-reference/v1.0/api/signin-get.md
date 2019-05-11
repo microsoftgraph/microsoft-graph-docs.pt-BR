@@ -4,16 +4,16 @@ description: Descreve o método Get do recurso de entrada (entidade) da API do M
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d1971a0c0dd85ab07ff7a23204b31c141c130a62
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 218812e25967a6643636ee6f027b2592a2088647
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629723"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951375"
 ---
 # <a name="get-signin"></a>Obter entrada
 
-Recupere um evento específico de logon de usuário do Azure AD para seu locatário. As entradas interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e os logins federados bem-sucedidos estão incluídos atualmente nos logs de entrada.
+Recupere um evento específico de entrada do Azure AD para seu locatário. As entradas interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e os logins federados bem-sucedidos estão incluídos atualmente nos logs de entrada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte   |
+|Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -34,7 +34,7 @@ GET /auditLogs/signIns/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [parâmetros de consulta OData](/graph/query_parameters).
+Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -81,6 +81,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_signin-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_signin-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ```json
 {
@@ -137,5 +147,9 @@ Content-length: 211
   "description": "Get signIn",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

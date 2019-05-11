@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso mediaContentRatingUnitedStates
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60208f2bace4826f06ff5a81f02bc087211d52a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f085bc24c3c5bd7b510ee5fa0a0b841361c0269e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542281"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950757"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>Tipo de recurso mediaContentRatingUnitedStates
 
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
-
 
 
 

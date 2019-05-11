@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso ndesConnector
 description: Entidade que representa um conector NDES local.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3781827d93f1e646becc2ee47de57cbba82dfc63
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4e0f8c4d59a668354e81b04bd84342b0354138a5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554468"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950785"
 ---
 # <a name="ndesconnector-resource-type"></a>tipo de recurso ndesConnector
 
@@ -31,7 +31,7 @@ Entidade que representa um conector NDES local.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave do conector NDES.|
+|id|Cadeia de caracteres|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector NDES|
 |estado|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
 |displayName|String|O nome amigável do conector NDES.|
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
 
 
 

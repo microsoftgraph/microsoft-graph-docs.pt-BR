@@ -1,15 +1,15 @@
 ---
 title: Excluir telecomExpenseManagementPartner
 description: Exclui telecomExpenseManagementPartner.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c01eb4f159c3083f6391214139ecf476f2f8bad5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 40c89b59840c117e4549c0e0dddace3caabe7faa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526689"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897874"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Excluir telecomExpenseManagementPartner
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

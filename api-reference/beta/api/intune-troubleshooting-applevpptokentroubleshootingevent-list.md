@@ -1,15 +1,15 @@
 ---
 title: Listar appleVppTokenTroubleshootingEvents
 description: Listar Propriedades e relações dos objetos appleVppTokenTroubleshootingEvent.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e4a5d2022ff289f4bfb7be6690801e0f162071b1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a261aa5b0f1dd312342ebbac70d7a2f2026bcdcc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526668"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898420"
 ---
 # <a name="list-applevpptokentroubleshootingevents"></a>Listar appleVppTokenTroubleshootingEvents
 
@@ -98,6 +98,7 @@ Content-Length: 1071
   ]
 }
 ```
+
 
 
 

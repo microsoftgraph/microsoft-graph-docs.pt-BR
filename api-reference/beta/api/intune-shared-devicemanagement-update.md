@@ -1,15 +1,15 @@
 ---
 title: Atualizar deviceManagement
 description: Atualizar as propriedades de um objeto deviceManagement.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e0dc83489ede464eb9da000acb8db4e6af13f8d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2621df4ec2373c06433df5df4f253971d4280a15
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527046"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898483"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -44,7 +44,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp;&nbsp; **Assistência remota** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; **Proteção de informações do Windows** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
 | Aplicativo | Sem suporte. |
 
@@ -72,7 +72,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo do dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|GUID|ID da conta do Intune para determinado locatário|
 |legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|

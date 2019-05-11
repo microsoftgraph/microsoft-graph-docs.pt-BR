@@ -1,15 +1,15 @@
 ---
 title: ação enableLegacyPcManagement
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ea5e5f8639dd59d91ec30102fd5a7c9a017622a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4d6be39db71c6fa6d1105db65b05c071627f08d5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527123"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898772"
 ---
 # <a name="enablelegacypcmanagement-action"></a>ação enableLegacyPcManagement
 

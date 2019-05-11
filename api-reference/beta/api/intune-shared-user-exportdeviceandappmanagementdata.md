@@ -1,15 +1,15 @@
 ---
 title: função exportDeviceAndAppManagementData
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e36936710bcd97c10c4a69c496cf56ceffa43e46
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4eda08e5ed2f164de5cb262a515be4eec3bcbfc2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527004"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898112"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>função exportDeviceAndAppManagementData
 

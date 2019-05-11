@@ -1,15 +1,15 @@
 ---
 title: Ação removeAllDevicesFromManagement
 description: Desativa todos os dispositivos de gerenciamento deste usuário
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2b03261fb833277e4cbff1ee0be09e8dc277a018
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83fbe8bc730c8519f2f0bcb0fb1da89dbce0f0c6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526899"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898105"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>Ação removeAllDevicesFromManagement
 

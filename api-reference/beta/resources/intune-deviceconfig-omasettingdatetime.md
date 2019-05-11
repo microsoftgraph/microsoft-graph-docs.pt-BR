@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso omaSettingDateTime
 description: Definição de datetime para configurações de OMA.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a237f36a209e2fa1d552c8f50207770429a0c53
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d9d58c6fdbba9f4a2fcceaa5d0e2964f0666c571
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554489"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950918"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Tipo de recurso omaSettingDateTime
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String (timestamp)"
 }
 ```
-
 
 
 

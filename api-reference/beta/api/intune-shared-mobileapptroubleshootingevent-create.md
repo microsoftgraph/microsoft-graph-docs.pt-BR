@@ -2,14 +2,14 @@
 title: Criar mobileAppTroubleshootingEvent
 description: Descreve o método Create mobileAppTroubleshootingEvent da API do Microsoft Graph para o Intune, que oferece suporte a vários fluxos de trabalho.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 89a191f94d68636226b6a8d41be0d9ba962da761
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d258a2d05d260a7820efcbdccc423743b9e6a4cd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526976"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899260"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Criar mobileAppTroubleshootingEvent
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
 |&nbsp;&nbsp; **Gerenciamento de dispositivos**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **Solução de Problemas**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Solução de problemas**|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -56,14 +56,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 |id|String|O GUID do objeto.|
 |**Solução de Problemas**|
 |additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres que fornece informações adicionais sobre o evento de solução de problemas.|
-|ApplicationId|String|Identificador de aplicativo do Intune.|
-|correlationId|String|ID usada para rastrear a falha no serviço. |
+|ApplicationId|Cadeia de caracteres|Identificador de aplicativo do Intune.|
+|correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço. |
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu. |
-|EventName|String|Nome do evento correspondente ao evento de solução de problemas. Opcional.|
+|EventName|Cadeia de caracteres|Nome do evento correspondente ao evento de solução de problemas. Opcional.|
 |histórico|coleção [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Item do histórico de solução de problemas do aplicativo móvel do Intune|
 |managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção. |
-|userId|String|Identificador do usuário que tentou registrar o dispositivo.|
+|userId|Cadeia de caracteres|Identificador do usuário que tentou registrar o dispositivo.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) no corpo da resposta.
