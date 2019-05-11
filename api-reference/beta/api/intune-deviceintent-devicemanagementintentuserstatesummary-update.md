@@ -1,15 +1,15 @@
 ---
 title: Atualizar deviceManagementIntentUserStateSummary
 description: Atualiza as propriedades de um objeto deviceManagementIntentUserStateSummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1661770f444fe7479d47858ce6e8ad394d3ed98e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7eb98c9c77c5bc8cecef7994fd2913111bd913fb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507739"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915758"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a>Atualizar deviceManagementIntentUserStateSummary
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID|
+|id|Cadeia de caracteres|A ID|
 |conflictCount|Int32|Número de usuários em conflito|
 |errorCount|Int32|Número de usuários de erro|
 |failedCount|Int32|Número de usuários com falha|
@@ -98,7 +98,6 @@ Content-Length: 247
   "successCount": 12
 }
 ```
-
 
 
 

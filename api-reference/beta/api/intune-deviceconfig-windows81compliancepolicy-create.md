@@ -1,15 +1,15 @@
 ---
 title: Criar windows81CompliancePolicy
 description: Cria um novo objeto windows81CompliancePolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ea2f8c87341689d7db42a33e1bc653eefd4136b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f8628931626f9b2915094a1cc419b135061441ac
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515416"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918329"
 ---
 # <a name="create-windows81compliancepolicy"></a>Criar windows81CompliancePolicy
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows8
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -65,7 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows8
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado. Valores válidos de 0 a 24|
-|osMinimumVersion|String|Versão mínima do Windows 8.1.|
+|osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows 8.1.|
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do Windows 8.1.|
 |storageRequireEncryption|Booliano|Indica se a criptografia é ou não necessária em um dispositivo Windows 8.1.|
 
@@ -136,7 +136,6 @@ Content-Length: 836
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

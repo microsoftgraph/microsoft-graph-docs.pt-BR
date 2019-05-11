@@ -1,15 +1,15 @@
 ---
 title: Obter deviceManagementTemplate
 description: Leia as propriedades e as relações do objeto deviceManagementTemplate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d128b9cc6771ebd41abfa66fd715f26733330ee6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa3cf8f8cddfffa177fdf598d823b99f58892191
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466571"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917054"
 ---
 # <a name="get-devicemanagementtemplate"></a>Obter deviceManagementTemplate
 
@@ -35,6 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 GET /deviceManagement/templates/{deviceManagementTemplateId}
+GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -65,18 +66,20 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 221
+Content-Length: 314
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementTemplate",
     "id": "edd764ca-64ca-edd7-ca64-d7edca64d7ed",
     "displayName": "Display Name value",
-    "description": "Description value"
+    "description": "Description value",
+    "versionInfo": "Version Info value",
+    "isDeprecated": true,
+    "intentCount": 11
   }
 }
 ```
-
 
 
 

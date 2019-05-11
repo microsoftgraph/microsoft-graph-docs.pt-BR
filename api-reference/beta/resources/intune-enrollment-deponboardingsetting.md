@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso depOnboardingSetting
 description: O depOnboardingSetting representa uma instância do serviço Apple DEP que está sendo integrado ao Intune. A instância de serviço integrada gerencia um token Apple usado para sincronizar dados entre o Apple e o Intune.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56f25c3e187671e0ba91f2d9124bf5f2d801e663
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0dbe83aa09674a161b15f3d5c384a9f9ceb8cba4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573925"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941601"
 ---
 # <a name="deponboardingsetting-resource-type"></a>tipo de recurso depOnboardingSetting
 
@@ -27,7 +27,7 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP que está
 |[Criar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Criar um novo objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
 |[Excluir depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|Nenhum|Exclui [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
 |[Atualizar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Atualiza as propriedades de um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
-|[função getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Obter uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple|
+|[função getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|Cadeia de caracteres|Obter uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple|
 |[Ação uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Nenhum|Carrega um novo token do programa de registro de dispositivos|
 |[Ação syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Nenhum|Sincroniza entre o programa de registro de dispositivo Apple e o Intune|
 |[Ação shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Nenhuma|Ainda não documentado|
@@ -36,7 +36,7 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP que está
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O UUID do objeto.|
+|id|Cadeia de caracteres|O UUID do objeto.|
 |appleIdentifier|Cadeia de caracteres|A ID da Apple usada para obter o token atual.|
 |tokenExpirationDateTime|DateTimeOffset|Quando o token expirará.|
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
@@ -45,7 +45,7 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP que está
 |shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
 |TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenname|String|Nome amigável para token Dep|
+|tokenname|Cadeia de caracteres|Nome amigável para token Dep|
 |syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
 |dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
@@ -86,7 +86,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

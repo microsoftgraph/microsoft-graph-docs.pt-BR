@@ -1,15 +1,15 @@
 ---
 title: Como proteger os dados de aplicativo da sua empresa com o Microsoft Intune-API do Microsoft Graph
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que gerenciam aplicativos e suas políticas para uma organização de locatário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 360b8e9bdda139246a5418898f1db3962fefaea4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d0e38a8129e2cfcb60895be762d5bf3d65d1b6f9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552405"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950526"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -112,6 +112,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Estado de carregamento do arquivo de conteúdo do aplicativo móvel](intune-apps-mobileappcontentfileuploadstate.md)
 - [Tipo de dependecy do aplicativo móvel](intune-apps-mobileappdependecytype.md)
 - [Dependência do aplicativo móvel](intune-apps-mobileappdependency.md)
+- [Tipo de dependência do aplicativo móvel](intune-apps-mobileappdependencytype.md)
 - [Status de instalação do aplicativo móvel](intune-apps-mobileappinstallstatus.md)
 - [Resumo de instalação do aplicativo móvel](intune-apps-mobileappinstallsummary.md)
 - [Atribuição de grupo de configuração de provisionamento do aplicativo móvel](intune-apps-mobileappprovisioningconfiggroupassignment.md)

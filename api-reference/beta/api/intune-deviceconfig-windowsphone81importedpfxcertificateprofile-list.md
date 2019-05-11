@@ -1,15 +1,15 @@
 ---
 title: Listar windowsPhone81ImportedPFXCertificateProfiles
 description: Listar Propriedades e relações dos objetos windowsPhone81ImportedPFXCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 935cdc6697156e5105cacc38eb1764a12ed73852
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 43ba41660b2bae3aff8c2043e6428f8385ff7312
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512569"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917699"
 ---
 # <a name="list-windowsphone81importedpfxcertificateprofiles"></a>Listar windowsPhone81ImportedPFXCertificateProfiles
 
@@ -90,7 +90,6 @@ Content-Length: 868
   ]
 }
 ```
-
 
 
 

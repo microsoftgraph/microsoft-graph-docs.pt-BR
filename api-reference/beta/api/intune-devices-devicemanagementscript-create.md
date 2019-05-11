@@ -1,15 +1,15 @@
 ---
 title: Criar deviceManagementScript
 description: Criar um novo objeto deviceManagementScript.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13afc26b59d6e9d46b68e1754f9b4362b5bda916
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a58b0d4f957dc6cdfc98c58449c2b12dfba19397
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465878"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910041"
 ---
 # <a name="create-devicemanagementscript"></a>Criar deviceManagementScript
 
@@ -50,11 +50,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
-|displayName|String|Nome do script de gerenciamento de dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivo.|
+|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de execução do script. Se não definido, o script será executado uma vez|
-|scriptContent|Binary|O conteúdo de script.|
+|scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
@@ -122,7 +122,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Obter iosTrustedRootCertificate
 description: Leia as propriedades e as relações do objeto iosTrustedRootCertificate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d0c085512136f145ee4bacfe02deed0c364b040
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f3a0221d0eeed4cb8875521d243b3e62ac19e3cf
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519427"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923262"
 ---
 # <a name="get-iostrustedrootcertificate"></a>Obter iosTrustedRootCertificate
 
@@ -86,7 +86,6 @@ Content-Length: 580
   }
 }
 ```
-
 
 
 

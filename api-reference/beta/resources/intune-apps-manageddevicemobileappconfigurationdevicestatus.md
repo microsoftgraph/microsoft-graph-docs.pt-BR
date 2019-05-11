@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso managedDeviceMobileAppConfigurationDeviceStatus
 description: Contém propriedades, propriedades herdadas e ações para um status de configuração de aplicativo móvel do MDM para um dispositivo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7933404f3e40117dfb04318c93df3fc48df6e594
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: beab4f406b36a8d350b37c73738bf0bd18447c45
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552167"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950110"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>tipo de recurso managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -31,15 +31,15 @@ Contém propriedades, propriedades herdadas e ações para um status de configur
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|deviceDisplayName|String|Nome do dispositivo de DevicePolicyStatus.|
-|userName|String|O nome de usuário que está sendo relatado|
+|id|String|Chave da entidade.|
+|deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |platform|Int32|Plataforma do dispositivo que está sendo relatado|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -66,7 +66,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

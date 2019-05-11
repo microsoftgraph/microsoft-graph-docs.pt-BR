@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidForWorkMobileAppConfiguration
 description: Contém propriedades, propriedades herdadas e ações para configurações de aplicativos móveis do AFW.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88e0a5078c108e44f32a674590731e53cbd0df6b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 58670a6e5b3fb64904c379214d8a456d14e65e72
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552356"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950512"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>tipo de recurso androidForWorkMobileAppConfiguration
 
@@ -43,7 +43,7 @@ Herda de [managedDeviceMobileAppConfiguration](../resources/intune-apps-managedd
 |displayName|String|Nome fornecido pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|ID do pacote de configuração do aplicativo Android for Work.|
-|payloadJson|String|Carga JSON da configuração de aplicativo do Android for Work.|
+|payloadJson|Cadeia de caracteres|Carga JSON da configuração de aplicativo do Android for Work.|
 |permissionActions|coleção [androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)|Lista de permissões de aplicativo Android e ações de permissão correspondentes.|
 
 ## <a name="relationships"></a>Relações
@@ -89,7 +89,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

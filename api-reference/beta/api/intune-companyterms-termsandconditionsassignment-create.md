@@ -1,15 +1,15 @@
 ---
 title: Criar termsAndConditionsAssignment
 description: Criar um novo objeto termsAndConditionsAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af88847ac2ce47b09f5a07304f02a1d1fcce2598
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 18cb89e02a22933fcb284c64169520bce77eacce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482505"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933806"
 ---
 # <a name="create-termsandconditionsassignment"></a>Criar termsAndConditionsAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar termsAnd
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual a política de T&C foi designada.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 217
   }
 }
 ```
-
 
 
 

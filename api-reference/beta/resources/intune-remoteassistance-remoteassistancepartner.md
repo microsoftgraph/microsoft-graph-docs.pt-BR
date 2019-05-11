@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso remoteAssistancePartner
 description: Os recursos do RemoteAssistPartner representam os metadados e o status de um determinado serviço de parceiro de assistência remota.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3343d0e9d68c76db91f1153704176d70b06a7483
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 596027baaa5bc118c835de9aaff009bb0de180a3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566301"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939921"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Tipo de recurso remoteAssistancePartner
 
@@ -33,7 +33,7 @@ Os recursos do RemoteAssistPartner representam os metadados e o status de um det
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do parceiro.|
+|id|Cadeia de caracteres|O identificador exclusivo do parceiro.|
 |displayName|String|Nome de exibição do parceiro.|
 |onboardingUrl|Cadeia de caracteres|URL do portal de integração do parceiro, no qual um administrador pode configurar o serviço de assistência remota.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Uma descrição amigável do status atual do conector do TeamViewer. Os valores possíveis são: `notOnboarded`, `onboarding`, `onboarded`.|
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Obter macOSDeviceFeaturesConfiguration
 description: Ler propriedades e relações do objeto macOSDeviceFeaturesConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 304d365248b05dc1cc0b823905f8f9d189eb3478
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83163e6fc1061c3681000ee20dd97e3521891725
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518839"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922842"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>Obter macOSDeviceFeaturesConfiguration
 
@@ -118,7 +118,6 @@ Content-Length: 1613
   }
 }
 ```
-
 
 
 

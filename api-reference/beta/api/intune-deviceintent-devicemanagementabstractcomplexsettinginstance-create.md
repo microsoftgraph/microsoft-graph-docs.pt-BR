@@ -1,15 +1,15 @@
 ---
 title: Criar deviceManagementAbstractComplexSettingInstance
 description: Criar um novo objeto deviceManagementAbstractComplexSettingInstance.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 754ea0cfa4b8c79f77b4cc22731d3b3b341e266b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: db6cd5fee0731685e95e5c5e27f1233ea89bb2f7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32510693"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916956"
 ---
 # <a name="create-devicemanagementabstractcomplexsettinginstance"></a>Criar deviceManagementAbstractComplexSettingInstance
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da instância de configuração herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|DefinitionId|String|A ID da definição de configuração dessa instância herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|valueJson|String|Representação JSON do valor herdado de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|implementationid|String|A ID de definição da implementação escolhida dessa configuração complexa|
+|id|Cadeia de caracteres|A ID da instância de configuração herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|DefinitionId|Cadeia de caracteres|A ID da definição de configuração dessa instância herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|valueJson|Cadeia de caracteres|Representação JSON do valor herdado de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|implementationid|Cadeia de caracteres|A ID de definição da implementação escolhida dessa configuração complexa|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
-
 
 
 

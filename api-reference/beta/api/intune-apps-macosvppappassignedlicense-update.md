@@ -1,15 +1,15 @@
 ---
 title: Atualizar macOsVppAppAssignedLicense
 description: Atualiza as propriedades de um objeto macOsVppAppAssignedLicense.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 816de40dd2efadb47fad8ed93415499f1fb5342a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 361e64df09ad5c17f065d5335dc35a83a3643904
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495460"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935801"
 ---
 # <a name="update-macosvppappassignedlicense"></a>Atualizar macOsVppAppAssignedLicense
 
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOsVp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|userEmailAddress|String|O endereço de email do usuário.|
+|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
 |userId|String|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
-|userPrincipalName|String|O nome da entidade de segurança do usuário.|
+|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

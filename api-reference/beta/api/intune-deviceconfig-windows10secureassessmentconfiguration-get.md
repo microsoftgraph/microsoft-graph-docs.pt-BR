@@ -1,15 +1,15 @@
 ---
 title: Acessar windows10SecureAssessmentConfiguration
 description: Leia as propriedades e relações de objetos de windows10SecureAssessmentConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 301b2f691b5f998171f3037a0376d3ec4afb25ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 92d49cd4714d1fd3925ad7117c636204b353964c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515733"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918439"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>Acessar windows10SecureAssessmentConfiguration
 
@@ -91,7 +91,6 @@ Content-Length: 724
   }
 }
 ```
-
 
 
 

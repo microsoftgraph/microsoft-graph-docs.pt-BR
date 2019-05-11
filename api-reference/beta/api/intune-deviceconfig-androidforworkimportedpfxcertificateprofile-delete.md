@@ -1,15 +1,15 @@
 ---
 title: Excluir androidForWorkImportedPFXCertificateProfile
 description: Exclui androidForWorkImportedPFXCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 078c376c5596ba29fcc88d1d0773e4eb07f557a5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0e4f7d50a1152bb7f899e53ba712296364ac14f9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478662"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933568"
 ---
 # <a name="delete-androidforworkimportedpfxcertificateprofile"></a>Excluir androidForWorkImportedPFXCertificateProfile
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

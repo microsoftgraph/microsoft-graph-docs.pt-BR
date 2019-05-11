@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso microsoftStoreForBusinessContainedApp
 description: Uma classe que representa um aplicativo contido de um MicrosoftStoreForBusinessApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c1d85373743e66f8d744200a488fa902f0d6944
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6cb07075e3313cfd2232bebdeca2f06fef2a991e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552183"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950015"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>tipo de recurso microsoftStoreForBusinessContainedApp
 
@@ -34,8 +34,8 @@ Herda de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|A ID do modelo do usuário do aplicativo do aplicativo contido de um MicrosoftStoreForBusinessApp.|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|Cadeia de caracteres|A ID do modelo do usuário do aplicativo do aplicativo contido de um MicrosoftStoreForBusinessApp.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -55,7 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   "appUserModelId": "String"
 }
 ```
-
 
 
 

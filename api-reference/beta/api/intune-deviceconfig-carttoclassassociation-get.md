@@ -1,15 +1,15 @@
 ---
 title: Obter cartToClassAssociation
 description: Leia as propriedades e as relações do objeto cartToClassAssociation.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a6002fae4d1283944ff48ffd3a9e77c562b8810
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 29fe739b718385efd8f08f1e345e1c94e2c15090
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471543"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928152"
 ---
 # <a name="get-carttoclassassociation"></a>Obter cartToClassAssociation
 
@@ -85,7 +85,6 @@ Content-Length: 488
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso mobileThreatDefenseConnector
 description: Entidade que representa uma conexão com o parceiro de defesa contra ameaças móveis.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a89897ffe058cdd15ea01fe4fb6abd1acb6a4ef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e69bba98a6017769a4b70333e5e76888ecd6bbb4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566469"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940327"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>Tipo de recurso mobileThreatDefenseConnector
 
@@ -31,7 +31,7 @@ Entidade que representa uma conexão com o parceiro de defesa contra ameaças m�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |lastHeartbeatDateTime|DateTimeOffset|Data e hora da última Pulsação recebida de um Parceiro de Sincronização de Dados|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Estado do parceiro de sincronização de dados para esta conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|Booliano|No Android, definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
@@ -76,7 +76,6 @@ Veja a seguir uma representação JSON do recurso.
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
 
 
 

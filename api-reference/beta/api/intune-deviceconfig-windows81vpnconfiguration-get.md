@@ -1,15 +1,15 @@
 ---
 title: Obter windows81VpnConfiguration
 description: Leia as propriedades e as relações do objeto windows81VpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ee8d44879f51a616e3c6aa89f36c8644941f138
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c1de6574027aa44f503d7f8e421ec7a1e1254bba
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515215"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918140"
 ---
 # <a name="get-windows81vpnconfiguration"></a>Obter windows81VpnConfiguration
 
@@ -107,7 +107,6 @@ Content-Length: 1272
   }
 }
 ```
-
 
 
 

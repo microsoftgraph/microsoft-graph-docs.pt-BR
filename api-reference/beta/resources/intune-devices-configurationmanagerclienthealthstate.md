@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso configurationManagerClientHealthState
 description: Estado de integridade do cliente de gerenciador de configurações
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2a04b8cf7520425527e118fcc9db00461c4edda
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0e0ed47d34f8f3d749ccab7d2788528c9b12679f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563802"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943008"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>tipo de recurso configurationManagerClientHealthState
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

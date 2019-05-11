@@ -1,15 +1,15 @@
 ---
 title: função getMobileAppCount
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e91686226557e90f60eac3c2aba730627e52dfd0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: be043b447e3b97bc248d62f25cdce19c906e81fd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490329"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935360"
 ---
 # <a name="getmobileappcount-function"></a>função getMobileAppCount
 
@@ -75,7 +75,6 @@ Content-Length: 18
   "value": 1
 }
 ```
-
 
 
 

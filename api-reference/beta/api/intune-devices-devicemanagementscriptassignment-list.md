@@ -1,15 +1,15 @@
 ---
 title: Listar deviceManagementScriptAssignments
 description: Listar Propriedades e relações dos objetos deviceManagementScriptAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2ad63548757cff0af0f545ee02cd14de34ee9f8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac9227f68a06ff693f238399d3c68db45d6480b3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466305"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909929"
 ---
 # <a name="list-devicemanagementscriptassignments"></a>Listar deviceManagementScriptAssignments
 
@@ -76,7 +76,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

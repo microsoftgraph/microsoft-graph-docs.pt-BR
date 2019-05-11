@@ -1,15 +1,15 @@
 ---
 title: Atualizar managedDeviceCertificateState
 description: Atualiza as propriedades de um objeto managedDeviceCertificateState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 336eca53d4eac1898519de61559cd6b3561c60d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 137edaaecd417b8e3c7927390b549236bb011c9c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518237"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922631"
 ---
 # <a name="update-manageddevicecertificatestate"></a>Atualizar managedDeviceCertificateState
 
@@ -67,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma de dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
+|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma de dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |certificateKeyUsage|[usos de](../resources/intune-deviceconfig-keyusages.md)|Uso de chave. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Unidades de período de validade. Os valores possíveis são: `days`, `months`, `years`.|
 |certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|Estado de emissão. Os valores possíveis são `unknown`: `challengeIssued`, `challengeIssueFailed`, `requestCreationFailed`, `requestSubmitFailed`, `challengeValidationSucceeded`, `challengeValidationFailed`, `issueFailed`, `issuePending`, `issued` `responseProcessingFailed` `responsePending`,,, `enrollmentSucceeded`, `enrollmentNotNeeded`, `revoked`, `removedFromCollection`, `renewVerified`, `installFailed`, `installed` ,,,,,,,, , `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
@@ -75,20 +75,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato do nome da entidade. Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Formato de nome alternativo da entidade. Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|String|Nome de exibição do perfil do certificado|
+|certificateProfileDisplayName|Cadeia de caracteres|Nome de exibição do perfil do certificado|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userDisplayName|String|Nome de exibição do usuário|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
 |certificateExpirationDateTime|DateTimeOffset|Data de vencimento do certificado|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Última alteração no estado de emissão de certificado|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Última alteração no estado de emissão de certificado|
-|certificateIssuer|String|Emissor|
-|certificateThumbprint|String|Identificação|
-|certificateSerialNumber|String|Número de série|
+|certificateIssuer|Cadeia de caracteres|Emissor|
+|certificateThumbprint|Cadeia de caracteres|Identificação|
+|certificateSerialNumber|Cadeia de caracteres|Número de série|
 |certificateKeyLength|Int32|Comprimento de chave|
-|certificateEnhancedKeyUsage|String|Uso estendido de chave|
+|certificateEnhancedKeyUsage|Cadeia de caracteres|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
-|certificateSubjectNameFormatString|String|Cadeia de caracteres de formato de nome de entidade para formatos de nome de entidade personalizados|
-|certificateSubjectAlternativeNameFormatString|String|Cadeia de caracteres de formato de nome alternativo da entidade para formatos personalizados|
+|certificateSubjectNameFormatString|Cadeia de caracteres|Cadeia de caracteres de formato de nome de entidade para formatos de nome de entidade personalizados|
+|certificateSubjectAlternativeNameFormatString|Cadeia de caracteres|Cadeia de caracteres de formato de nome alternativo da entidade para formatos personalizados|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 |certificateErrorCode|Int32|Código de erro|
 
@@ -171,7 +171,6 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
-
 
 
 

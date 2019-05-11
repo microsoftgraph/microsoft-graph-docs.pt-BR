@@ -1,15 +1,15 @@
 ---
 title: Atualizar windowsPhone81CompliancePolicy
 description: Atualizar as propriedades de um objeto windowsPhone81CompliancePolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 804fdb19f5f9ba17afb3b8880f7b3ed602cdf197
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 95d44b4da8551ee5c94b0b531a0e1d25ffdf21f1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32513276"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917769"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>Atualizar windowsPhone81CompliancePolicy
 
@@ -51,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |passwordBlockSimple|Boolean|Se a sincronização do calendário deve ou não ser bloqueada.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha.|
@@ -65,7 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 0 a 24|
 |passwordRequired|Booliano|Se uma senha deve ou não ser exigida.|
-|osMinimumVersion|String|Versão mínima do Windows Phone.|
+|osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
 |osMaximumVersion|String|Versão máxima do Windows Phone.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Windows Phone.|
 
@@ -136,7 +136,6 @@ Content-Length: 841
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

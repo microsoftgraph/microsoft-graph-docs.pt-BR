@@ -1,15 +1,15 @@
 ---
 title: Obter windowsDefenderAdvancedThreatProtectionConfiguration
 description: Ler propriedades e relações do objeto windowsDefenderAdvancedThreatProtectionConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d1c0318158323a8ef7d7cdbcba5fbb76ae1c76f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7def78368b7731a182e47aa3a315ce6aa2b3beca
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515019"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918021"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>Obter windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -92,7 +92,6 @@ Content-Length: 1057
   }
 }
 ```
-
 
 
 

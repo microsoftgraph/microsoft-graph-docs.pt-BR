@@ -1,15 +1,15 @@
 ---
 title: Criar Entidadeandroidforworkprofiledeviceconfiguration
 description: Criar um novo objeto Entidadeandroidforworkprofiledeviceconfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de10918fad9ba8ca6ee1d2f8c08ac65ee8c91862
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 022a72ca6df714a95ba4e93f22b345f209e15714
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475071"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928551"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>Criar Entidadeandroidforworkprofiledeviceconfiguration
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar Entidade
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -93,7 +93,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar Entidade
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Tipo de senha de perfil de trabalho necessário. Os valores possíveis são: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |Workprofilerequirepassword foram adicionadas|Booliano|A senha é obrigatória ou não para o perfil de trabalho|
 |securityRequireVerifyApps|Boolean|Exige que o recurso de verificação de aplicativos Android esteja ativado.|
-|vpnAlwaysOnPackageIdentifier|String|Habilitar o modo de bloqueio para VPN Always-on.|
+|vpnAlwaysOnPackageIdentifier|Cadeia de caracteres|Habilitar o modo de bloqueio para VPN Always-on.|
 |vpnEnableAlwaysOnLockdownMode|Booliano|Habilitar o modo de bloqueio para VPN Always-on.|
 
 
@@ -215,7 +215,6 @@ Content-Length: 2214
   "vpnEnableAlwaysOnLockdownMode": true
 }
 ```
-
 
 
 

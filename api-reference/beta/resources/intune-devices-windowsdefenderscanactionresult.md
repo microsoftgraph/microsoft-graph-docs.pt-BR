@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso windowsDefenderScanActionResult
 description: Resultado da última verificação do Windows Defender
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b54feb06e18e0ea772ab69e2ed3bd138564cfc08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5bffa0e1c227a8d1a6c13fc9daac00e5d8df8b03
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558206"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941720"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>Tipo de recurso windowsDefenderScanActionResult
 
@@ -25,7 +25,7 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|actionName|String|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionName|Cadeia de caracteres|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado da ação herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "scanType": "String"
 }
 ```
-
 
 
 

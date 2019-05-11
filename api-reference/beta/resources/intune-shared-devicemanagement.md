@@ -2,14 +2,14 @@
 title: Tipo de recurso deviceManagement
 description: 'O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  '
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: intune
-ms.openlocfilehash: b23285738d8a4268ce55d056ccd49defb823369a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e79bd6d5573930d041b4a8249ae993275f0e26c7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574450"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939676"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -57,7 +57,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo associado ao dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
 |legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
@@ -157,7 +157,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |telecomExpenseManagementPartners|Conjunto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md)|Os parceiros de gerenciamento de despesas de telecomunicações.|
 |**Solução de Problemas**|
 |troubleshootingEvents|Conjunto [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|A lista de eventos de solução de problemas para o locatário.|
-|**Proteção de informações do Windows**|
+|**Proteção de Informações do Windows**|
 |Navegaçãointunebrandingprofiles|coleção [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Perfis de identidade visual do Intune direcionados para grupos do AAD|
 |windowsInformationProtectionAppLearningSummaries|Conjunto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md)|Os resumos de aprendizagem de aplicativos da proteção de informações do Windows.|
 |windowsInformationProtectionNetworkLearningSummaries|Conjunto [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md)|Os resumos de aprendizagem de redes da proteção de informações do Windows.|

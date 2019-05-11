@@ -1,15 +1,15 @@
 ---
 title: Listar appLogCollectionRequests
 description: Listar Propriedades e relações dos objetos appLogCollectionRequest.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0def63422162a6ef372ed1e42506869131293c91
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fab2639cf8cc042d8f4a012b4143a0dc3429cc7d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466053"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910578"
 ---
 # <a name="list-applogcollectionrequests"></a>Listar appLogCollectionRequests
 
@@ -79,7 +79,6 @@ Content-Length: 371
   ]
 }
 ```
-
 
 
 

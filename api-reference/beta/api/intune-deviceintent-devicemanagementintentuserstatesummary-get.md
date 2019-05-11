@@ -1,15 +1,15 @@
 ---
 title: Obter deviceManagementIntentUserStateSummary
 description: Leia as propriedades e as relações do objeto deviceManagementIntentUserStateSummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 961b480fdadeb89d06fd0fb7d7b0b84c309eb0c7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d0db419f41c0d2edeed27eaf10c5c8be1bb6ed7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507816"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915737"
 ---
 # <a name="get-devicemanagementintentuserstatesummary"></a>Obter deviceManagementIntentUserStateSummary
 
@@ -79,7 +79,6 @@ Content-Length: 280
   }
 }
 ```
-
 
 
 

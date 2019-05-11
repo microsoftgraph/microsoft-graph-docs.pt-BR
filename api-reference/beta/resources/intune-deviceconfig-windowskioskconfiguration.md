@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsKioskConfiguration
 description: Esta entidade fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso quiosque.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92cea089ea86e1ad56607442ac983d83c0c78e68
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 26a32a98968fb71c6a19d1d05ef9166605573247
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548282"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944016"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>tipo de recurso windowsKioskConfiguration
 
@@ -43,7 +43,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |kioskProfiles|coleção [windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)|Essa configuração de política permite definir uma lista de perfis de quiosque para uma configuração de quiosque. Essa coleção pode conter um máximo de 3 elementos.|
-|kioskBrowserDefaultUrl|String|Especifique a URL padrão para a qual o navegador deve navegar na inicialização.|
+|kioskBrowserDefaultUrl|Cadeia de caracteres|Especifique a URL padrão para a qual o navegador deve navegar na inicialização.|
 |kioskBrowserEnableHomeButton|Booliano|Habilite o botão Home do navegador quiosque. Por padrão, o botão página inicial está desabilitado.|
 |kioskBrowserEnableNavigationButtons|Booliano|Habilite os botões de navegação do navegador quiosque (avançar/voltar). Por padrão, os botões de navegação estão desabilitados.|
 |kioskBrowserEnableEndSessionButton|Booliano|Habilite o botão encerrar sessão do navegador quiosque. Por padrão, o botão encerrar sessão está desabilitado.|
@@ -129,7 +129,6 @@ Veja a seguir uma representação JSON do recurso.
   "edgeKioskEnablePublicBrowsing": true
 }
 ```
-
 
 
 

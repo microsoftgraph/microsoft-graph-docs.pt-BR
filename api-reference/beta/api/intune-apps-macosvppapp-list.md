@@ -1,15 +1,15 @@
 ---
 title: Listar macOsVppApps
 description: Listar Propriedades e relações dos objetos macOsVppApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8c3e92200c86f661e8d6511e16166a83b0892f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a939f5e46d792ae1a1a86d46eb9e7965c6fbf271
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495376"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935835"
 ---
 # <a name="list-macosvppapps"></a>Listar macOsVppApps
 
@@ -126,7 +126,6 @@ Content-Length: 2294
   ]
 }
 ```
-
 
 
 

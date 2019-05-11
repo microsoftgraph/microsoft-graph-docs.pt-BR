@@ -1,15 +1,15 @@
 ---
 title: Atualizar windowsPrivacyDataAccessControlItem
 description: Atualiza as propriedades de um objeto windowsPrivacyDataAccessControlItem.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e32a3062d11cf1801fc0013f035a7fdbc1bc130
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 977ed3f788cdc5abe07fbc0a7819409f6274829e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511848"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917433"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>Atualizar windowsPrivacyDataAccessControlItem
 
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |id|String|A chave de WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Isso indica um nível de acesso para a categoria de dados de privacidade à qual o aplicativo especificado será atribuído. Os valores possíveis são: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Isso indica uma categoria de dados de privacidade à qual o controle de acesso específico será aplicado. Os valores possíveis são `notConfigured`: `accountInfo`, `appsRunInBackground`, `calendar`, `callHistory`, `camera`, `contacts`, `diagnosticsInfo`, `email`, `location` `messaging` `microphone`,,, `motion`, `notifications`, `phone`, `radios`, `tasks`, `syncWithDevices`, `trustedDevices` ,,,,,,,, .|
-|appPackageFamilyName|String|O nome da família de pacote de um aplicativo Windows. Quando definido, o nível de acesso se aplica ao aplicativo especificado.|
-|appDisplayName|String|O nome da família de pacote de um aplicativo Windows. Quando definido, o nível de acesso se aplica ao aplicativo especificado.|
+|appPackageFamilyName|Cadeia de caracteres|O nome da família de pacote de um aplicativo Windows. Quando definido, o nível de acesso se aplica ao aplicativo especificado.|
+|appDisplayName|Cadeia de caracteres|O nome da família de pacote de um aplicativo Windows. Quando definido, o nível de acesso se aplica ao aplicativo especificado.|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
 
 
 

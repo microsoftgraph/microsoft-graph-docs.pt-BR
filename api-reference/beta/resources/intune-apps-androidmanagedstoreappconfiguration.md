@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidManagedStoreAppConfiguration
 description: Contém propriedades, propriedades herdadas e ações para configurações de aplicativos móveis corporativos do Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0caae4c2964873ed9f2dc4af98b69dfd1e4bbd3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc2e32aa273e7944d409b9649bd92ee2ac755fd6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552342"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950491"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>tipo de recurso androidManagedStoreAppConfiguration
 
@@ -43,7 +43,7 @@ Herda de [managedDeviceMobileAppConfiguration](../resources/intune-apps-managedd
 |displayName|String|Nome fornecido pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|ID do pacote de configuração do aplicativo Enterprise Android.|
-|payloadJson|String|Carga JSON da configuração do aplicativo empresarial Android.|
+|payloadJson|Cadeia de caracteres|Carga JSON da configuração do aplicativo empresarial Android.|
 |permissionActions|coleção [androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)|Lista de permissões de aplicativo Android e ações de permissão correspondentes.|
 |appSupportsOemConfig|Booliano|Se este AppConfig é ou não uma política de OEMConfig.|
 
@@ -91,7 +91,6 @@ Veja a seguir uma representação JSON do recurso.
   "appSupportsOemConfig": true
 }
 ```
-
 
 
 

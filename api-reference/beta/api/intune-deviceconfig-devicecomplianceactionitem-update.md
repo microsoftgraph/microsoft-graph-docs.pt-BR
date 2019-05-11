@@ -1,15 +1,15 @@
 ---
 title: Atualizar deviceComplianceActionItem
 description: Atualizar as propriedades de um objeto deviceComplianceActionItem.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 497a5e8b653d7873a45a242d0594d025f5e8a680
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37376ed6318a97d6f26859021f0480124cceb963
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471809"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927920"
 ---
 # <a name="update-devicecomplianceactionitem"></a>Atualizar deviceComplianceActionItem
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceComplianc
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |gracePeriodHours|Int32|Número de horas a aguardar até que a ação seja aplicada. Valores válidos de 0 a 8760|
 |actionType|[Enumeraçãodevicecomplianceactiontype](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|Qual ação executar. Os valores possíveis são: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`, `remoteLock`.|
 |notificationTemplateId|Cadeia de caracteres|Qual modelo de notificação de mensagem será usado|
@@ -99,7 +99,6 @@ Content-Length: 320
   ]
 }
 ```
-
 
 
 

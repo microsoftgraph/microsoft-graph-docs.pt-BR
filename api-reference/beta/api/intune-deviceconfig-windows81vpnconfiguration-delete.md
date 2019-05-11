@@ -1,15 +1,15 @@
 ---
 title: Excluir windows81VpnConfiguration
 description: Exclui windows81VpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbdf2bdecce6c0ebdea9eaf6c34509b574f11095
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 80d5c30c11281656a5265ef7bdcbce54936e5ee8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515257"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918119"
 ---
 # <a name="delete-windows81vpnconfiguration"></a>Excluir windows81VpnConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

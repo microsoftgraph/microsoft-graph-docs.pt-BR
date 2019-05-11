@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração windowsUpdateType
 description: Para quais dispositivos de filial receberão suas atualizações
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 228cc5ba4b50681bfe78a15ef214d6f3ab2ebb17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5869bcfaa3949a8463d2625c4e7de48897a62daf
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523592"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943603"
 ---
 # <a name="windowsupdatetype-enum-type"></a>tipo de enumeração windowsUpdateType
 
@@ -22,13 +22,12 @@ Para quais dispositivos de filial receberão suas atualizações
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Permite que o usuário defina.|
-|todos os|1 |Canal semestral (direcionado). O dispositivo obtém todas as atualizações de recursos aplicáveis do canal semestral (direcionado).|
-|businessReadyOnly|2 |Canal semestral. O dispositivo Obtém atualizações de recursos do canal semestral.|
-|windowsInsiderBuildFast|3 |Compilação do Windows inSider-Fast|
-|windowsInsiderBuildSlow|4 |Compilação do Windows inSider-lenta|
-|windowsInsiderBuildRelease|5 |Versão de lançamento do Windows inSider|
-
+|UserDefined|,0|Permite que o usuário defina.|
+|todos os|1|Canal semestral (direcionado). O dispositivo obtém todas as atualizações de recursos aplicáveis do canal semestral (direcionado).|
+|businessReadyOnly|duas|Canal semestral. O dispositivo Obtém atualizações de recursos do canal semestral.|
+|windowsInsiderBuildFast|3D|Compilação do Windows Insider-Fast|
+|windowsInsiderBuildSlow|quatro|Compilação do Windows Insider-lenta|
+|windowsInsiderBuildRelease|0,5|Versão de lançamento do Windows Insider|
 
 
 

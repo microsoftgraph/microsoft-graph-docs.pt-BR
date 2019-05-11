@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windows81WifiImportConfiguration
 description: Configuração de importação do Windows 8.1 + Wi-Fi. Ao configurar esse perfil, você pode instruir dispositivos Windows 8,1 (e posteriores) para se conectar ao ponto de extremidade Wi-Fi desejado. Conecte um dispositivo Windows 8,1 para a rede Wi-Fi desejada e extraia o XML desse dispositivo para incorporá-lo posteriormente a este perfil Wi-Fi.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0748af88746501c173a056786059d59cd1bd77e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a383c254667a4eb621eaad18cddc56bc8d86a44c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554200"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944163"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>tipo de recurso windows81WifiImportConfiguration
 
@@ -43,7 +43,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*. xml).|
-|ProfileName|String|Nome do perfil exibido na interface do usuário.|
+|ProfileName|Cadeia de caracteres|Nome do perfil exibido na interface do usuário.|
 |payload|Binária|Carga. (Matriz de bytes codificados por UTF8). Este é o arquivo XML salvo no dispositivo que você usou para se conectar ao ponto de extremidade Wi-Fi.|
 
 ## <a name="relationships"></a>Relações
@@ -83,7 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "payload": "binary"
 }
 ```
-
 
 
 

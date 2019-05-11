@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 description: Único item de configuração no esquema de configuração personalizada de um aplicativo Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 964916f9f6a46cd8b276e304bfb341d6504db0d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3012542315cd30a565da315a9d383757557b1008
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552431"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950540"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 
@@ -22,7 +22,7 @@ ms.locfileid: "32552431"
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|schemaItemKey|String|Chave exclusiva que o aplicativo usa para identificar o item|
+|schemaItemKey|Cadeia de caracteres|Chave exclusiva que o aplicativo usa para identificar o item|
 |displayName|String|Nome legível por humanos|
 |description|String|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

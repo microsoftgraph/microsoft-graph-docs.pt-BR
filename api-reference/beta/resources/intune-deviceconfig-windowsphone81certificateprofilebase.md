@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windowsPhone81CertificateProfileBase
 description: Perfil de certificado base do Windows Phone 8.1 +.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82c48ddf2ac0ee31b17362b504caa73aacc7b71a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d04eef2e707ce5d64869fcc43f09080b7321f1e7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574635"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943757"
 ---
 # <a name="windowsphone81certificateprofilebase-resource-type"></a>tipo de recurso windowsPhone81CertificateProfileBase
 
@@ -94,7 +94,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

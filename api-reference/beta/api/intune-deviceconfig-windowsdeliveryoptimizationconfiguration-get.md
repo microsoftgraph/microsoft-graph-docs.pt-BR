@@ -1,15 +1,15 @@
 ---
 title: Obter windowsDeliveryOptimizationConfiguration
 description: Leia as propriedades e as relações do objeto windowsDeliveryOptimizationConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e35ce47d69ada0faec78db17bdbaa3a71196e63d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8183d4b28114be8ea4cd2af71fed54f21aefe248
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32514879"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918014"
 ---
 # <a name="get-windowsdeliveryoptimizationconfiguration"></a>Obter windowsDeliveryOptimizationConfiguration
 
@@ -105,7 +105,6 @@ Content-Length: 1313
   }
 }
 ```
-
 
 
 

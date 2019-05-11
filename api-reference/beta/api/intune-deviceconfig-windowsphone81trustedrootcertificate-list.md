@@ -1,15 +1,15 @@
 ---
 title: Listar windowsPhone81TrustedRootCertificates
 description: Listar Propriedades e relações dos objetos windowsPhone81TrustedRootCertificate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4347d38e8af1f63b734233c4e5cfd4b1c40b5836
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c131dea17ea0eff39ff76a9ed4abca231399d6b8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512646"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917622"
 ---
 # <a name="list-windowsphone81trustedrootcertificates"></a>Listar windowsPhone81TrustedRootCertificates
 
@@ -85,7 +85,6 @@ Content-Length: 631
   ]
 }
 ```
-
 
 
 

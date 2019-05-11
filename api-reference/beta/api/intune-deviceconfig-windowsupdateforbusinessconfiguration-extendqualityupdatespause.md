@@ -1,15 +1,15 @@
 ---
 title: ação extendQualityUpdatesPause
-description: Estender as atualizações de qualidade paUsar para um toque do Windows Update para empresas.
-author: tfitzmac
+description: Estender as atualizações de qualidade pausar para um toque do Windows Update para empresas.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 714d699497564b13962163069d34bb63d9ee1794
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5c0c819993b4c29e9bdc50068cb9a80af5f9ac01
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511638"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917362"
 ---
 # <a name="extendqualityupdatespause-action"></a>ação extendQualityUpdatesPause
 
@@ -17,7 +17,7 @@ ms.locfileid: "32511638"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estender as atualizações de qualidade paUsar para um toque do Windows Update para empresas.
+Estender as atualizações de qualidade pausar para um toque do Windows Update para empresas.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

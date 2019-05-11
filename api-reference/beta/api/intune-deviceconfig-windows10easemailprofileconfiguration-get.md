@@ -1,15 +1,15 @@
 ---
 title: Obter windows10EasEmailProfileConfiguration
 description: Leia as propriedades e as relações do objeto windows10EasEmailProfileConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92233e811bf9e6f65a05d658b0f599b22d9c4dae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6c7ba17ebda83544c1f7178bed2b1fa1a48f3545
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32517082"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921944"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>Obter windows10EasEmailProfileConfiguration
 
@@ -98,7 +98,6 @@ Content-Length: 992
   }
 }
 ```
-
 
 
 

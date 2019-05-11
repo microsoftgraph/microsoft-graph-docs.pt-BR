@@ -1,15 +1,15 @@
 ---
 title: Obter windows81CertificateProfileBase
 description: Leia as propriedades e as relações do objeto windows81CertificateProfileBase.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e35950fb9b0a187aeca8ebab517fd454d54b7103
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 540e526324fbe9f1a54c2a319510508943ee90b1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515362"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918350"
 ---
 # <a name="get-windows81certificateprofilebase"></a>Obter windows81CertificateProfileBase
 
@@ -105,7 +105,6 @@ Content-Length: 1167
   }
 }
 ```
-
 
 
 

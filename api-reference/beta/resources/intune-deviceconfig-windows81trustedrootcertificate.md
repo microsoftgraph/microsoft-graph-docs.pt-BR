@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windows81TrustedRootCertificate
 description: Perfil de configuração de certificado confiável do Windows 8,1
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a1a73c94473b9bc03b4a4ee119e223b259a542a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ed5b91900915ee215d7e257513d96ef22f7cfc41
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554135"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944170"
 ---
 # <a name="windows81trustedrootcertificate-resource-type"></a>tipo de recurso windows81TrustedRootCertificate
 
@@ -42,8 +42,8 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|trustedRootCertificate|Binário|Certificado raiz confiável|
-|certFileName|String|Nome do arquivo a ser exibido na interface do usuário.|
+|trustedRootCertificate|Binária|Certificado raiz confiável|
+|certFileName|Cadeia de caracteres|Nome do arquivo a ser exibido na interface do usuário.|
 |destinationStore|[certificateDestinationStore](../resources/intune-deviceconfig-certificatedestinationstore.md)|Local do repositório de destino para o certificado raiz confiável. Os valores possíveis são: `computerCertStoreRoot`, `computerCertStoreIntermediate`, `userCertStoreIntermediate`.|
 
 ## <a name="relationships"></a>Relações
@@ -83,7 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "destinationStore": "String"
 }
 ```
-
 
 
 

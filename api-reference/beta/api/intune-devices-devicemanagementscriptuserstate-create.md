@@ -1,15 +1,15 @@
 ---
 title: Criar deviceManagementScriptUserState
 description: Criar um novo objeto deviceManagementScriptUserState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 465ee52f3ac8e0341419e778ec95ec1daa040aa5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 872c3a039d0fd474e94492aac814745da188d3aa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465409"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909796"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>Criar deviceManagementScriptUserState
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |id|String|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito para um usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
-|userPrincipalName|String|Nome principal do usuário do usuário específico.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário do usuário específico.|
 
 
 
@@ -92,7 +92,6 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

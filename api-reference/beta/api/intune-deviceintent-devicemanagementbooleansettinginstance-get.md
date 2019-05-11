@@ -1,15 +1,15 @@
 ---
 title: Obter deviceManagementBooleanSettingInstance
 description: Leia as propriedades e as relações do objeto deviceManagementBooleanSettingInstance.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1f00b9d9c967d43711b12b01035818ec212d88c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c42a6626df1a3971b13728c480ed50ce89515e9c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509776"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916711"
 ---
 # <a name="get-devicemanagementbooleansettinginstance"></a>Obter deviceManagementBooleanSettingInstance
 
@@ -80,7 +80,6 @@ Content-Length: 254
   }
 }
 ```
-
 
 
 

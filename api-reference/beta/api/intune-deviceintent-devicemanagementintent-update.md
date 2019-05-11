@@ -1,15 +1,15 @@
 ---
 title: Atualizar deviceManagementIntent
 description: Atualiza as propriedades de um objeto deviceManagementIntent.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6cf31f6b4e0ee8eeaf88b9421587e52d6b4b2f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d61a86001e85f58a9c0f8fa1cb719453029e4fe2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508306"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916436"
 ---
 # <a name="update-devicemanagementintent"></a>Atualizar deviceManagementIntent
 
@@ -50,12 +50,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de intenção|
+|id|Cadeia de caracteres|A ID de intenção|
 |displayName|String|O nome de exibição fornecido pelo usuário|
 |description|String|Descrição fornecida pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
+|templateId|Cadeia de caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
 
 
 
@@ -97,7 +97,6 @@ Content-Length: 317
   "templateId": "Template Id value"
 }
 ```
-
 
 
 

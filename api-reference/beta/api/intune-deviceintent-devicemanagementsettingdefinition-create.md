@@ -1,15 +1,15 @@
 ---
 title: Criar deviceManagementSettingDefinition
 description: Criar um novo objeto deviceManagementSettingDefinition.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66dc71a6e95f9838788a0aac22341a5a3881a5e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9062c48fbf3be9ab33f8abc3f7ecebc40eeef0b6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467019"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915666"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Criar deviceManagementSettingDefinition
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da definição de configuração|
-|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os valores possíveis são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
+|id|Cadeia de caracteres|A ID da definição de configuração|
+|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os possíveis valores são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
 |displayName|String|O nome de exibição da configuração|
 |isTopLevel|Booliano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
 |description|String|A descrição da configuração|
-|documentationUrl|String|URL para configurar a documentação|
+|documentationUrl|Cadeia de caracteres|URL para configurar a documentação|
 |palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
@@ -142,7 +142,6 @@ Content-Length: 777
   ]
 }
 ```
-
 
 
 

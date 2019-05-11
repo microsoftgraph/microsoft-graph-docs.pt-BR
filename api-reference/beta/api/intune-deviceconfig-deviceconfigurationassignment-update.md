@@ -1,15 +1,15 @@
 ---
 title: Atualizar deviceConfigurationAssignment
 description: Atualizar as propriedades de um objeto deviceConfigurationAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70dda5714222b17f4a366016de308868d8840a42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ab6075c3bb097ddcfd7ef5975855afc396499ece
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469457"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927325"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Atualizar deviceConfigurationAssignment
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da atribuição.|
+|id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 
 
@@ -98,7 +98,6 @@ Content-Length: 218
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Excluir deviceManagementTemplateSettingCategory
 description: Exclui deviceManagementTemplateSettingCategory.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b79c13a49d1ca68941c897c8cac278f49112482
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 80de4eebf10b24a5e516e3e969ba8a8aff68fca9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466592"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915456"
 ---
 # <a name="delete-devicemanagementtemplatesettingcategory"></a>Excluir deviceManagementTemplateSettingCategory
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

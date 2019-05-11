@@ -1,15 +1,15 @@
 ---
 title: Obter androidForWorkGeneralDeviceConfiguration
 description: Leia as propriedades e as relações do objeto androidForWorkGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df029663d0d53ca4d652effe52570a6763992e2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca96bf48ef2f97fe90db3237d4ecde912f461da7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478991"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933645"
 ---
 # <a name="get-androidforworkgeneraldeviceconfiguration"></a>Obter androidForWorkGeneralDeviceConfiguration
 
@@ -121,7 +121,6 @@ Content-Length: 2323
   }
 }
 ```
-
 
 
 
