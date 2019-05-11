@@ -1,33 +1,33 @@
 ---
 title: tipo de recurso deviceManagementConstraint
 description: Entidade base para uma restrição
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0886eaa03c25ab72387bc90a3caf1673ece7b23b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 62b936b7d7137fd34fe9fc33c2c18e5aacfb55a8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523396"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943470"
 ---
-# <a name="devicemanagementconstraint-resource-type"></a><span data-ttu-id="326d6-103">tipo de recurso deviceManagementConstraint</span><span class="sxs-lookup"><span data-stu-id="326d6-103">deviceManagementConstraint resource type</span></span>
+# <a name="devicemanagementconstraint-resource-type"></a><span data-ttu-id="7fe37-103">tipo de recurso deviceManagementConstraint</span><span class="sxs-lookup"><span data-stu-id="7fe37-103">deviceManagementConstraint resource type</span></span>
 
-> <span data-ttu-id="326d6-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="326d6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="7fe37-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="7fe37-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="326d6-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="326d6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7fe37-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7fe37-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="326d6-106">Entidade base para uma restrição</span><span class="sxs-lookup"><span data-stu-id="326d6-106">Base entity for a constraint</span></span>
+<span data-ttu-id="7fe37-106">Entidade base para uma restrição</span><span class="sxs-lookup"><span data-stu-id="7fe37-106">Base entity for a constraint</span></span>
 
-## <a name="properties"></a><span data-ttu-id="326d6-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="326d6-107">Properties</span></span>
-|<span data-ttu-id="326d6-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="326d6-108">Property</span></span>|<span data-ttu-id="326d6-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="326d6-109">Type</span></span>|<span data-ttu-id="326d6-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="326d6-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7fe37-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7fe37-107">Properties</span></span>
+|<span data-ttu-id="7fe37-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7fe37-108">Property</span></span>|<span data-ttu-id="7fe37-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="7fe37-109">Type</span></span>|<span data-ttu-id="7fe37-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="7fe37-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="326d6-111">Relações</span><span class="sxs-lookup"><span data-stu-id="326d6-111">Relationships</span></span>
-<span data-ttu-id="326d6-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="326d6-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7fe37-111">Relações</span><span class="sxs-lookup"><span data-stu-id="7fe37-111">Relationships</span></span>
+<span data-ttu-id="7fe37-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="7fe37-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="326d6-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="326d6-113">JSON Representation</span></span>
-<span data-ttu-id="326d6-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="326d6-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7fe37-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7fe37-113">JSON Representation</span></span>
+<span data-ttu-id="7fe37-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7fe37-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementConstraint"
@@ -38,7 +38,6 @@ ms.locfileid: "32523396"
   "@odata.type": "#microsoft.graph.deviceManagementConstraint"
 }
 ```
-
 
 
 

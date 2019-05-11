@@ -1,31 +1,30 @@
 ---
 title: tipo de enumeração mobileAppPublishingState
 description: Indica o estado de publicação de um aplicativo.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e644264c1e72092be16063156708b45364b5097
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ce69b2a2743496714fdb2697cec7e37a1efbaf19
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551859"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949917"
 ---
-# <a name="mobileapppublishingstate-enum-type"></a><span data-ttu-id="06ade-103">tipo de enumeração mobileAppPublishingState</span><span class="sxs-lookup"><span data-stu-id="06ade-103">mobileAppPublishingState enum type</span></span>
+# <a name="mobileapppublishingstate-enum-type"></a><span data-ttu-id="ac258-103">tipo de enumeração mobileAppPublishingState</span><span class="sxs-lookup"><span data-stu-id="ac258-103">mobileAppPublishingState enum type</span></span>
 
-> <span data-ttu-id="06ade-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="06ade-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ac258-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ac258-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="06ade-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="06ade-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ac258-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ac258-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="06ade-106">Indica o estado de publicação de um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="06ade-106">Indicates the publishing state of an app.</span></span>
+<span data-ttu-id="ac258-106">Indica o estado de publicação de um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="ac258-106">Indicates the publishing state of an app.</span></span>
 
-## <a name="members"></a><span data-ttu-id="06ade-107">Membros</span><span class="sxs-lookup"><span data-stu-id="06ade-107">Members</span></span>
-|<span data-ttu-id="06ade-108">Membro</span><span class="sxs-lookup"><span data-stu-id="06ade-108">Member</span></span>|<span data-ttu-id="06ade-109">Valor</span><span class="sxs-lookup"><span data-stu-id="06ade-109">Value</span></span>|<span data-ttu-id="06ade-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="06ade-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="ac258-107">Membros</span><span class="sxs-lookup"><span data-stu-id="ac258-107">Members</span></span>
+|<span data-ttu-id="ac258-108">Membro</span><span class="sxs-lookup"><span data-stu-id="ac258-108">Member</span></span>|<span data-ttu-id="ac258-109">Valor</span><span class="sxs-lookup"><span data-stu-id="ac258-109">Value</span></span>|<span data-ttu-id="ac258-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="ac258-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="06ade-111">Não publicado</span><span class="sxs-lookup"><span data-stu-id="06ade-111">notPublished</span></span>|<span data-ttu-id="06ade-112">,0</span><span class="sxs-lookup"><span data-stu-id="06ade-112">0</span></span>|<span data-ttu-id="06ade-113">O aplicativo ainda não foi publicado.</span><span class="sxs-lookup"><span data-stu-id="06ade-113">The app is not yet published.</span></span>|
-|<span data-ttu-id="06ade-114">processe</span><span class="sxs-lookup"><span data-stu-id="06ade-114">processing</span></span>|<span data-ttu-id="06ade-115">1 </span><span class="sxs-lookup"><span data-stu-id="06ade-115">1</span></span>|<span data-ttu-id="06ade-116">O aplicativo está aguardando o processamento do lado do serviço.</span><span class="sxs-lookup"><span data-stu-id="06ade-116">The app is pending service-side processing.</span></span>|
-|<span data-ttu-id="06ade-117">novamente</span><span class="sxs-lookup"><span data-stu-id="06ade-117">published</span></span>|<span data-ttu-id="06ade-118">2 </span><span class="sxs-lookup"><span data-stu-id="06ade-118">2</span></span>|<span data-ttu-id="06ade-119">O aplicativo é publicado.</span><span class="sxs-lookup"><span data-stu-id="06ade-119">The app is published.</span></span>|
-
+|<span data-ttu-id="ac258-111">Não publicado</span><span class="sxs-lookup"><span data-stu-id="ac258-111">notPublished</span></span>|<span data-ttu-id="ac258-112">,0</span><span class="sxs-lookup"><span data-stu-id="ac258-112">0</span></span>|<span data-ttu-id="ac258-113">O aplicativo ainda não foi publicado.</span><span class="sxs-lookup"><span data-stu-id="ac258-113">The app is not yet published.</span></span>|
+|<span data-ttu-id="ac258-114">processe</span><span class="sxs-lookup"><span data-stu-id="ac258-114">processing</span></span>|<span data-ttu-id="ac258-115">1</span><span class="sxs-lookup"><span data-stu-id="ac258-115">1</span></span>|<span data-ttu-id="ac258-116">O aplicativo está aguardando o processamento do lado do serviço.</span><span class="sxs-lookup"><span data-stu-id="ac258-116">The app is pending service-side processing.</span></span>|
+|<span data-ttu-id="ac258-117">novamente</span><span class="sxs-lookup"><span data-stu-id="ac258-117">published</span></span>|<span data-ttu-id="ac258-118">duas</span><span class="sxs-lookup"><span data-stu-id="ac258-118">2</span></span>|<span data-ttu-id="ac258-119">O aplicativo é publicado.</span><span class="sxs-lookup"><span data-stu-id="ac258-119">The app is published.</span></span>|
 
 
 
