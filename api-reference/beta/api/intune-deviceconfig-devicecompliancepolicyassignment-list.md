@@ -1,15 +1,15 @@
 ---
 title: Listar deviceCompliancePolicyAssignments
 description: Listar propriedades e relações dos objetosdeviceCompliancePolicyAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20c80c4213c37075ee280093c0016883f4d9bce7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b912b7212ef5c4a63fe46a47604139dbfa43d99
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470458"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927866"
 ---
 # <a name="list-devicecompliancepolicyassignments"></a>Listar deviceCompliancePolicyAssignments
 
@@ -76,7 +76,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

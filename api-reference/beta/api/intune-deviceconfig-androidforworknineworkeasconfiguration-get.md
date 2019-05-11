@@ -1,15 +1,15 @@
 ---
 title: Obter androidForWorkNineWorkEasConfiguration
 description: Leia as propriedades e as relações do objeto androidForWorkNineWorkEasConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 496a7b8ae083bd9475568ce39d265783dd2ab702
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f0d417cb18074dc8558df93a4552e502882c8632
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478711"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933603"
 ---
 # <a name="get-androidforworknineworkeasconfiguration"></a>Obter androidForWorkNineWorkEasConfiguration
 
@@ -94,7 +94,6 @@ Content-Length: 797
   }
 }
 ```
-
 
 
 

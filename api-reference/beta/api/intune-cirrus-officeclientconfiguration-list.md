@@ -2,14 +2,14 @@
 title: Listar officeClientConfigurations
 description: Obtenha todas as políticas.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: dbbfae2a7568977c8dbdbc640d0829837c5e3fb2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 093364b093606153fd82c18791a86ff441291d56
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483149"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934065"
 ---
 # <a name="list-officeclientconfigurations"></a>Listar officeClientConfigurations
 

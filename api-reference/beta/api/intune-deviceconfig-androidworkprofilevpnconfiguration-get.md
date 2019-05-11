@@ -1,15 +1,15 @@
 ---
 title: Obter androidWorkProfileVpnConfiguration
 description: Leia as propriedades e as relações do objeto androidWorkProfileVpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0a3aa9ceff0d63924a5315c07343323ab153094
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e8856fa3ba25ae903213d2ca6fa00b98e6b8668f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32472628"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928187"
 ---
 # <a name="get-androidworkprofilevpnconfiguration"></a>Obter androidWorkProfileVpnConfiguration
 
@@ -113,7 +113,6 @@ Content-Length: 1258
   }
 }
 ```
-
 
 
 

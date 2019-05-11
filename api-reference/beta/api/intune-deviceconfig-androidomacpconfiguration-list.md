@@ -1,15 +1,15 @@
 ---
 title: Listar androidOmaCpConfigurations
 description: Listar Propriedades e relações dos objetos androidOmaCpConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc5eebea1dbe210693119c19c3e0231572da61a5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 969bf1dc1566b21517f62790a3c4a8b81f521be4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475884"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33929207"
 ---
 # <a name="list-androidomacpconfigurations"></a>Listar androidOmaCpConfigurations
 
@@ -84,7 +84,6 @@ Content-Length: 559
   ]
 }
 ```
-
 
 
 

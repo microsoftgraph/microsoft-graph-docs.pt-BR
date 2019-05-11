@@ -1,15 +1,15 @@
 ---
 title: Obter androidForWorkCertificateProfileBase
 description: Leia as propriedades e as relações do objeto androidForWorkCertificateProfileBase.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6401768042a8682a3a56548ed3ab64097b3dee3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 06b8ff59702bb9ce173b76797396f42e0dce9420
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479341"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933043"
 ---
 # <a name="get-androidforworkcertificateprofilebase"></a>Obter androidForWorkCertificateProfileBase
 
@@ -98,7 +98,6 @@ Content-Length: 915
   }
 }
 ```
-
 
 
 

@@ -2,14 +2,14 @@
 title: Listar windowsOfficeClientSecurityConfigurations
 description: Listar Propriedades e relações dos objetos windowsOfficeClientSecurityConfiguration.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: e97b364e7a30a85bd5b9109dd41806b7ed8589a4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f9fb04213a4e1d83c5e697d3d607b42d5fc8f944
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482778"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933939"
 ---
 # <a name="list-windowsofficeclientsecurityconfigurations"></a>Listar windowsOfficeClientSecurityConfigurations
 

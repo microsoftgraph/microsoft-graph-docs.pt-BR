@@ -1,15 +1,15 @@
 ---
 title: Get deviceInstallState
 description: Ler propriedades e relações do objeto deviceInstallState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1556f654aaa71455ae6e76522ad6111aa981ba89
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2ae555e8fcd3fa173fc545e9b89c7f9e3ae73e49
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483926"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934352"
 ---
 # <a name="get-deviceinstallstate"></a>Get deviceInstallState
 
@@ -83,7 +83,6 @@ Content-Length: 462
   }
 }
 ```
-
 
 
 

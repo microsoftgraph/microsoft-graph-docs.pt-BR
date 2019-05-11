@@ -1,15 +1,15 @@
 ---
 title: Criar groupPolicyDefinitionValue
 description: Criar um novo objeto groupPolicyDefinitionValue.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60fef42cc86aa2cdef23b81223b1e715027c659a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ea0ca1731607e450032d0d24d380436fe9c90736
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531464"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905088"
 ---
 # <a name="create-grouppolicydefinitionvalue"></a>Criar groupPolicyDefinitionValue
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
 |enabled|Boolean|Habilita ou desabilita a definição de política de grupo associada.|
 |ConfigurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Especifica como o valor deve ser configurado. Isso pode ser uma política ou uma preferência. Os valores possíveis são: `policy` e `preference`.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 
@@ -93,7 +93,6 @@ Content-Length: 298
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: Excluir windowsPhone81CustomConfiguration
-description: Exclui windowsPhone81CustomConfiguration.
+title: ação migrateToTemplate
+description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6d59bde6bc5a9cdd651a38ca611ff2f52740121
+ms.openlocfilehash: 4ba9e96abad5f29afb3c7a26883633fda958653e
 ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917825"
+ms.locfileid: "33956863"
 ---
-# <a name="delete-windowsphone81customconfiguration"></a>Excluir windowsPhone81CustomConfiguration
+# <a name="migratetotemplate-action"></a>ação migrateToTemplate
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md).
+Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -34,9 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+POST /deviceManagement/intents/{deviceManagementIntentId}/migrateToTemplate
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,17 +44,34 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+
+A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|newTemplateId|String|Ainda não documentado|
+|preserveCustomValues|Booliano|Ainda não documentado|
+
+
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/migrateToTemplate
+
+Content-type: application/json
+Content-length: 81
+
+{
+  "newTemplateId": "New Template Id value",
+  "preserveCustomValues": true
+}
 ```
 
 ### <a name="response"></a>Resposta

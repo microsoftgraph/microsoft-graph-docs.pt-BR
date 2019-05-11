@@ -2,14 +2,14 @@
 title: ação updatePriorities
 description: Atualizar prioridades de política.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 6422cd3f40270f6502a58551e6c5c1b739219e00
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1a237ac20154e9356ff999bc5c671b02c15c7028
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483163"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934051"
 ---
 # <a name="updatepriorities-action"></a>ação updatePriorities
 

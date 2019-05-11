@@ -1,15 +1,15 @@
 ---
 title: Excluir androidOmaCpConfiguration
 description: Exclui androidOmaCpConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9caec0eed26a3276328588b661532c4e7522f5cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5f914bce5f387673890a3ad99bb6c288327c964
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475842"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33929277"
 ---
 # <a name="delete-androidomacpconfiguration"></a>Excluir androidOmaCpConfiguration
 
@@ -64,7 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

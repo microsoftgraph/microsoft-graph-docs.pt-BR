@@ -1,15 +1,15 @@
 ---
 title: Acessar macOSOfficeSuiteApp
 description: Leia as propriedades e as relações do objeto macOSOfficeSuiteApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f5fdb0a84b3e8ba83a5a7ff293a3fae146b9b13
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cb127a7428a13b864d984f095f184f563c86ca63
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495369"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935885"
 ---
 # <a name="get-macosofficesuiteapp"></a>Acessar macOSOfficeSuiteApp
 
@@ -99,7 +99,6 @@ Content-Length: 959
   }
 }
 ```
-
 
 
 
