@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso macOSTrustedRootCertificate
 description: Perfil de configuração de certificado raiz confiável de so X.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80b5ef9140cec663f07d3287f53da9cd93d53adf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c46e7561bdda1f67840758a6988976a2742530e2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570649"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944982"
 ---
 # <a name="macostrustedrootcertificate-resource-type"></a>tipo de recurso macOSTrustedRootCertificate
 
@@ -42,8 +42,8 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|trustedRootCertificate|Binário|Certificado raiz confiável.|
-|certFileName|String|Nome do arquivo a ser exibido na interface do usuário.|
+|trustedRootCertificate|Binária|Certificado raiz confiável.|
+|certFileName|Cadeia de caracteres|Nome do arquivo a ser exibido na interface do usuário.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -81,7 +81,6 @@ Veja a seguir uma representação JSON do recurso.
   "certFileName": "String"
 }
 ```
-
 
 
 

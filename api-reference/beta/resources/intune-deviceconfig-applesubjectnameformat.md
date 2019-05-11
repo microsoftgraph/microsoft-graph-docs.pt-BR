@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração appleSubjectNameFormat
 description: Opções de formato de nome de entidade para dispositivos Apple.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ba3861589dae07ce794366e30b1d9bc934cb9d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 284514b055b04b9c1c57c93b26bfd9ea59c7248a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562311"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947747"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>tipo de enumeração appleSubjectNameFormat
 
@@ -23,12 +23,11 @@ Opções de formato de nome de entidade para dispositivos Apple.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |CommonName|,0|Nome comum.|
-|commonNameAsEmail|1 |Nome comum como email.|
-|cliente|2 |Formato de nome de entidade personalizado.|
-|commonNameIncludingEmail|3 |Nome comum incluindo email.|
-|commonNameAsIMEI|5 |Nome comum como IMEI.|
-|commonNameAsSerialNumber|6 |Nome comum como número de série.|
-
+|commonNameAsEmail|1|Nome comum como email.|
+|cliente|duas|Formato de nome de entidade personalizado.|
+|commonNameIncludingEmail|3D|Nome comum incluindo email.|
+|commonNameAsIMEI|0,5|Nome comum como IMEI.|
+|commonNameAsSerialNumber|6|Nome comum como número de série.|
 
 
 

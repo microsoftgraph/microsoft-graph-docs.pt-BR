@@ -1,15 +1,15 @@
 ---
 title: Excluir detectedApp
 description: Exclui detectedApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a696d860d8f091d398bd80943e226f1165ea0423
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70cfc39d871fbbac39c168b865cf8658a4ab214c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465948"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909957"
 ---
 # <a name="delete-detectedapp"></a>Excluir detectedApp
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

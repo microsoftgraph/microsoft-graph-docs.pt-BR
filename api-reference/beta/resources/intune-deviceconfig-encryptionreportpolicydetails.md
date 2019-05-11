@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso encryptionReportPolicyDetails
 description: Detalhes da política para o relatório de criptografia
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c9903b54483fc6f77cd183abee0e54b10acf9cc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ddca213c3de3c004a19ebc3877aed1542604933e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556295"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946641"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>tipo de recurso encryptionReportPolicyDetails
 
@@ -22,8 +22,8 @@ Detalhes da política para o relatório de criptografia
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|PolicyId|String|ID de política para o relatório de criptografia|
-|policyName|String|Nome da política para o relatório de criptografia|
+|PolicyId|Cadeia de caracteres|ID de política para o relatório de criptografia|
+|policyName|Cadeia de caracteres|Nome da política para o relatório de criptografia|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "policyName": "String"
 }
 ```
-
 
 
 

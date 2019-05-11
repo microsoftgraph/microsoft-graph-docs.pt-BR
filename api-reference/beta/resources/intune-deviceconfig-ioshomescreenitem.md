@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso iosHomeScreenItem
 description: Representa um item na tela inicial do iOS
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b4685c62177dcb7d8cdf0f827d5af085d571d9b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f69bb07a54366a84fc9509f900b8a36513f545e3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521611"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946459"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>Tipo de recurso iosHomeScreenItem
 
@@ -25,7 +25,7 @@ Representa um item na tela inicial do iOS
 |displayName|String|Nome do aplicativo|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -40,7 +40,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
 
 
 

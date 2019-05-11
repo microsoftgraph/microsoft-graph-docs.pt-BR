@@ -1,15 +1,15 @@
 ---
 title: Obter depIOSEnrollmentProfile
 description: Leia as propriedades e as relações do objeto depIOSEnrollmentProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6ee9d73d25945480123f7cf8ef44d8eacc45e0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f65d736230ca89e1e127eee8f008f51c9b185f54
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533979"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908837"
 ---
 # <a name="get-depiosenrollmentprofile"></a>Obter depIOSEnrollmentProfile
 
@@ -120,7 +120,6 @@ Content-Length: 1955
   }
 }
 ```
-
 
 
 

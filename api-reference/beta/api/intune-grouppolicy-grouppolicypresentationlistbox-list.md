@@ -1,15 +1,15 @@
 ---
 title: Listar groupPolicyPresentationListBoxes
 description: Listar Propriedades e relações dos objetos groupPolicyPresentationListBox.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36744bc759fb972423e98b209c1c006f59472c5d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a9e13b745ec0cfd2fe7f5ef77f8781858a5a315
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531002"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904794"
 ---
 # <a name="list-grouppolicypresentationlistboxes"></a>Listar groupPolicyPresentationListBoxes
 
@@ -76,7 +76,6 @@ Content-Length: 291
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso da ioseducationdeviceconfiguration
 description: Perfil de configuração do educação do iOS
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 665b551f591c48b98afd87b7ebc1a50e1d7564af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 298269a4ffe1a57d0113048340e6279b90a8bbcd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572308"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946655"
 ---
 # <a name="ioseducationdeviceconfiguration-resource-type"></a>tipo de recurso da ioseducationdeviceconfiguration
 
@@ -77,7 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
 
 
 

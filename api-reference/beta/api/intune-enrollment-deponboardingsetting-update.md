@@ -1,15 +1,15 @@
 ---
 title: Atualizar depOnboardingSetting
 description: Atualiza as propriedades de um objeto depOnboardingSetting.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ce491760b670953ca87e7953fb0d91c3c3a12f7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a3603f4dd93d7fd3b9e5ba06e263ad765331cfaa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533259"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908655"
 ---
 # <a name="update-deponboardingsetting"></a>Atualizar depOnboardingSetting
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [depOnbo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O UUID do objeto.|
+|id|Cadeia de caracteres|O UUID do objeto.|
 |appleIdentifier|Cadeia de caracteres|A ID da Apple usada para obter o token atual.|
 |tokenExpirationDateTime|DateTimeOffset|Quando o token expirará.|
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [depOnbo
 |shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
 |TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenname|String|Nome amigável para token Dep|
+|tokenname|Cadeia de caracteres|Nome amigável para token Dep|
 |syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
 |dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
@@ -122,7 +122,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

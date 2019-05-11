@@ -1,15 +1,15 @@
 ---
 title: Acessar targetedManagedAppConfiguration
 description: Leia as propriedades e as relações do objeto targetedManagedAppConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0366dd67b12145a0c26e99bf8353c15fe2be3a18
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75c753cebc5a663a3da9a9fe61f19089797b459d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529412"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33902896"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>Acessar targetedManagedAppConfiguration
 
@@ -91,7 +91,6 @@ Content-Length: 679
   }
 }
 ```
-
 
 
 

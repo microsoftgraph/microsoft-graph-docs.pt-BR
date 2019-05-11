@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso appListItem
 description: Representa um aplicativo na lista de aplicativos gerenciados
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f452de7d002368c204cb57cc352ac9f9658609a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d29fca9155ac14c7b8ebf9ad862bda3bed874353
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549556"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947712"
 ---
 # <a name="applistitem-resource-type"></a>Tipo de recurso appListItem
 
@@ -22,9 +22,9 @@ Representa um aplicativo na lista de aplicativos gerenciados
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|O nome do aplicativo|
-|distribuidor|String|O distribuidor do aplicativo|
-|appStoreUrl|String|A URL da loja do aplicativo|
+|nome|Cadeia de caracteres|O nome do aplicativo|
+|distribuidor|Cadeia de caracteres|O distribuidor do aplicativo|
+|appStoreUrl|Cadeia de caracteres|A URL da loja do aplicativo|
 |appId|Cadeia de caracteres|O aplicativo ou identificador do pacote do aplicativo|
 
 ## <a name="relationships"></a>Relações
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "appId": "String"
 }
 ```
-
 
 
 

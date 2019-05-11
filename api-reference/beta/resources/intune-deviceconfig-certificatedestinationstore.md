@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração certificateDestinationStore
 description: Valores possíveis para o repositório de destino do certificado.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36571d1cefbedfb0da37c018755356e3354ad777
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 641ea734cb352a81fa169f6251bcd8ab8f6663ce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549395"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947453"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>tipo de enumeração certificateDestinationStore
 
@@ -23,9 +23,8 @@ Valores possíveis para o repositório de destino do certificado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |computerCertStoreRoot|,0|Repositório de certificados do computador-raiz.|
-|computerCertStoreIntermediate|1 |Repositório de certificados do computador-intermediário.|
-|userCertStoreIntermediate|2 |Repositório de certificados do usuário-intermediário.|
-
+|computerCertStoreIntermediate|1|Repositório de certificados do computador-intermediário.|
+|userCertStoreIntermediate|duas|Repositório de certificados do usuário-intermediário.|
 
 
 

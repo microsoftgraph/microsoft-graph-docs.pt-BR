@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windows10PFXImportCertificateProfile
 description: Preterido
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3cfff9ffb778feb7b8e62dadd4cc5a58bbb59945
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 99c38942059b7df45e31c54173ae0001662f31e3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572070"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944261"
 ---
 # <a name="windows10pfximportcertificateprofile-resource-type"></a>tipo de recurso windows10PFXImportCertificateProfile
 
@@ -79,7 +79,6 @@ Veja a seguir uma representação JSON do recurso.
   "keyStorageProvider": "String"
 }
 ```
-
 
 
 

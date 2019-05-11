@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidOmaCpConfiguration
 description: Ao fornecer uma configuração neste perfil, você pode configurar dispositivos Android que oferecem suporte a OMA-CP.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c0e5edcbaabe0a363088eb0a21c5b9e4e416baa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d605ca07a092f9abffaa6a073f6c137d9c6c693f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556197"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33948566"
 ---
 # <a name="androidomacpconfiguration-resource-type"></a>tipo de recurso androidOmaCpConfiguration
 
@@ -42,7 +42,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|configurationXml|Binário|XML de configuração que será aplicada ao dispositivo. Quando ele é lido, ele só fornece uma cadeia de caracteres de espaço reservado, pois os dados originais são criptografados e armazenados.|
+|configurationXml|Binária|XML de configuração que será aplicada ao dispositivo. Quando ele é lido, ele só fornece uma cadeia de caracteres de espaço reservado, pois os dados originais são criptografados e armazenados.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -79,7 +79,6 @@ Veja a seguir uma representação JSON do recurso.
   "configurationXml": "binary"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Obter networkIPv6ConfigurationManagementCondition
 description: Leia as propriedades e as relações do objeto networkIPv6ConfigurationManagementCondition.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ea9c859a422d04ae30c8ce8941d938ff78e7411
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 97a5c61e1c4564f52742468f74c06c9aeabc053c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532118"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905242"
 ---
 # <a name="get-networkipv6configurationmanagementcondition"></a>Obter networkIPv6ConfigurationManagementCondition
 
@@ -92,7 +92,6 @@ Content-Length: 708
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso deviceManagementUserRightsSetting
 description: Representa uma configuração de direitos de usuário.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2228e28b2edb3584a0861628644188d6fd54495b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bb3eb4c381fea9cb8087f4007ef492d2bdc1931b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567218"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946956"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>tipo de recurso deviceManagementUserRightsSetting
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

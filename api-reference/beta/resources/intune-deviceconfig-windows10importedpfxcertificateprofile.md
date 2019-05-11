@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso windows10ImportedPFXCertificateProfile
 description: Perfil de certificado de importação PFX móvel e de área de trabalho do Windows 10
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab3a402d543aa3d108874d5f323c60c8a0d6bbbe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 420e09f3867c6aba173d8b912725a1542c959cbc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571972"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944317"
 ---
 # <a name="windows10importedpfxcertificateprofile-resource-type"></a>tipo de recurso windows10ImportedPFXCertificateProfile
 
@@ -92,7 +92,6 @@ Veja a seguir uma representação JSON do recurso.
   "intendedPurpose": "String"
 }
 ```
-
 
 
 

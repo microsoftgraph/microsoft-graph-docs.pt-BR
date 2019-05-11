@@ -1,15 +1,15 @@
 ---
 title: Atualizar importedWindowsAutopilotDeviceIdentity
 description: Atualizar as propriedades de um objeto importedWindowsAutopilotDeviceIdentity.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18bb8a3ffbae8c191344a3d24fdac85a51d3e82f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e073cabe69b9415aae67deaa8b3d482efd12b3cb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532440"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908347"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Atualizar importedWindowsAutopilotDeviceIdentity
 
@@ -51,13 +51,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [importe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
-|orderIdentifier|String|ID do pedido do dispositivo do Windows AutoPilot.|
+|id|Cadeia de caracteres|O GUID do objeto.|
+|orderIdentifier|Cadeia de caracteres|ID do pedido do dispositivo do Windows AutoPilot.|
 |serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|importid|String|A ID de importação do dispositivo do Windows AutoPilot.|
+|importid|Cadeia de caracteres|A ID de importação do dispositivo do Windows AutoPilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
+|assignedUserPrincipalName|Cadeia de caracteres|UPN do usuário que o dispositivo será atribuído|
 
 
 
@@ -71,7 +72,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 Content-type: application/json
-Content-length: 575
+Content-length: 645
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -86,7 +87,8 @@ Content-length: 575
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
 
@@ -95,7 +97,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 624
+Content-Length: 694
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -111,10 +113,10 @@ Content-Length: 624
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

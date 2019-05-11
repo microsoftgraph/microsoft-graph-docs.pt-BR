@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração eapType
 description: Tipos de configuração EAP (Extensible Authentication Protocol).
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c0fea3bed512c98cd26488a7703554ac6c600f7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 87f2aae2d7ab06ea219c9b1488992b50ce846941
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567134"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946886"
 ---
 # <a name="eaptype-enum-type"></a>tipo de enumeração eapType
 
@@ -22,13 +22,12 @@ Tipos de configuração EAP (Extensible Authentication Protocol).
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|eapTls|13 |EAP-Transport Layer Security (EAP-TLS).|
-|surpreendente|17 |Protocolo de autenticação exTensível (LEAP) leves.|
-|eapSim|18 |EAP para módulo de identidade do assinante GSM (EAP-SIM).|
+|eapTls|Treze|EAP-Transport Layer Security (EAP-TLS).|
+|surpreendente|17.07.06|Protocolo de autenticação extensível (LEAP) leves.|
+|eapSim|anos|EAP para módulo de identidade do assinante GSM (EAP-SIM).|
 |eapTtls|21|Protocolo EAP-TTLS (Transport Layer Security).|
-|autenticação|25|PEAP (protocolo de autenticação exTensível protegido).|
+|autenticação|25|PEAP (protocolo de autenticação extensível protegido).|
 |eapFast|43|Autenticação flexível EAP por meio de encapsulamento seguro (EAP-FAST).|
-
 
 
 

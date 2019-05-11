@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso androidForWorkTrustedRootCertificate
 description: Perfil de configuração de certificado raiz confiável para Android para trabalho
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 572fbc9d633eb623ac3e4f50a6642c91b8ef0c9c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74269849edd8bc3a8269982086490caf7594f587
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556259"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33948517"
 ---
 # <a name="androidforworktrustedrootcertificate-resource-type"></a>tipo de recurso androidForWorkTrustedRootCertificate
 
@@ -42,8 +42,8 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|trustedRootCertificate|Binário|Certificado raiz confiável|
-|certFileName|String|Nome do arquivo a ser exibido na interface do usuário.|
+|trustedRootCertificate|Binária|Certificado raiz confiável|
+|certFileName|Cadeia de caracteres|Nome do arquivo a ser exibido na interface do usuário.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -81,7 +81,6 @@ Veja a seguir uma representação JSON do recurso.
   "certFileName": "String"
 }
 ```
-
 
 
 

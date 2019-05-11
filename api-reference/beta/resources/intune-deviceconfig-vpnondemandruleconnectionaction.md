@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração vpnOnDemandRuleConnectionAction
 description: Ação de conexão de regra por demanda da VPN.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08e39402a0ab6211c3feec53cf325530ea216c85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 548a52697e6107d6c1c3d64503067db29d24f3fe
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561940"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944569"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>tipo de enumeração vpnOnDemandRuleConnectionAction
 
@@ -23,10 +23,9 @@ Ação de conexão de regra por demanda da VPN.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |connect|,0|Ao.|
-|evaluateConnection|1 |Avaliar conexão.|
-|ignora|2 |Ignora.|
-|disconnect|3 |Desconectar.|
-
+|evaluateConnection|1|Avaliar conexão.|
+|ignora|duas|Ignora.|
+|disconnect|3D|Desconectar.|
 
 
 

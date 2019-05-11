@@ -1,15 +1,15 @@
 ---
 title: Ação executeAction
 description: Ainda não documentado
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12fe1e0974fbbc9e2ae673a10fac20df0de2533f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf5edf59f0cc96f5f711dd0361e6623cd41b3ebc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520183"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909698"
 ---
 # <a name="executeaction-action"></a>Ação executeAction
 
@@ -53,6 +53,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|Ainda não documentado|
+|keepEnrollmentData|Booliano|Ainda não documentado|
+|keepUserData|Booliano|Ainda não documentado|
 |deviceIds|String collection|Ainda não documentado|
 
 
@@ -68,10 +70,12 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 78
+Content-length: 134
 
 {
   "actionName": "delete",
+  "keepEnrollmentData": true,
+  "keepUserData": true,
   "deviceIds": [
     "Device Ids value"
   ]
@@ -103,7 +107,6 @@ Content-Length: 385
   }
 }
 ```
-
 
 
 

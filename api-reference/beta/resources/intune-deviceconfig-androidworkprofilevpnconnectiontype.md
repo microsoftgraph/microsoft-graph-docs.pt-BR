@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração androidWorkProfileVpnConnectionType
 description: Tipo de conexão VPN do perfil de trabalho do Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d860650d254e610b371620b168562bef96179c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 77f561f9fe30daed4b0c0d57094f92338a0bac28
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562325"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947607"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>tipo de enumeração androidWorkProfileVpnConnectionType
 
@@ -23,13 +23,12 @@ Tipo de conexão VPN do perfil de trabalho do Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ciscoAnyConnect|,0|Cisco AnyConnect.|
-|pulseSecure|1 |Pulso seguro.|
-|f5EdgeClient|2 |Cliente de borda F5.|
-|dellSonicWallMobileConnect|3 |Conexão móvel Dell SonicWALL.|
-|checkPointCapsuleVpn|4 |Verificar VPN de cápsula de ponto.|
-|Citrix|5 |Citrix|
-|paloAltoGlobalProtect|6 |GlobalProtect de redes de Palo Alto.|
-
+|pulseSecure|1|Pulso seguro.|
+|f5EdgeClient|duas|Cliente de borda F5.|
+|dellSonicWallMobileConnect|3D|Conexão móvel Dell SonicWALL.|
+|checkPointCapsuleVpn|quatro|Verificar VPN de cápsula de ponto.|
+|Citrix|0,5|Citrix|
+|paloAltoGlobalProtect|6|GlobalProtect de redes de Palo Alto.|
 
 
 

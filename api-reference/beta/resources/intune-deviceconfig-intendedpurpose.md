@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração da intendedpurpose
 description: Opções de importação de PFX.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 831a0137e7aac53d26e51e30d867ef99996f56b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bfe6b9fb6775d4314ff71b8760756856f9c840ab
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556043"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946578"
 ---
 # <a name="intendedpurpose-enum-type"></a>tipo de enumeração da intendedpurpose
 
@@ -22,12 +22,11 @@ Opções de importação de PFX.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não atribuídos|1 |Não atribuídos|
-|smimeEncryption|2 |SmimeEncryption|
-|smimeSigning|3 |SmimeSigning|
-|VPN|4 |VPN|
-|detector|5 |Detector|
-
+|não atribuídos|1|Não atribuídos|
+|smimeEncryption|duas|SmimeEncryption|
+|smimeSigning|3D|SmimeSigning|
+|VPN|quatro|VPN|
+|detector|0,5|Detector|
 
 
 

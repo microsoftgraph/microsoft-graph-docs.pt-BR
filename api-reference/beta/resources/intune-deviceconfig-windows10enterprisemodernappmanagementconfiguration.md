@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso windows10EnterpriseModernAppManagementConfiguration
 description: Configuração de gerenciamento de aplicativos modernos do Windows 10 Enterprise
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 234c39e13b6819ca36882ef04a1d8b0a0063b2f8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 19d1bdc7199168081de7226e763899171336c971
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572140"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944324"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>Tipo de recurso windows10EnterpriseModernAppManagementConfiguration
 
@@ -79,7 +79,6 @@ Veja a seguir uma representação JSON do recurso.
   "uninstallBuiltInApps": true
 }
 ```
-
 
 
 

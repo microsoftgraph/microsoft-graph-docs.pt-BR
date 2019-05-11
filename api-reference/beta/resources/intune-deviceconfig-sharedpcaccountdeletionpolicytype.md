@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração sharedPCAccountDeletionPolicyType
 description: Valores possíveis para quando as contas são excluídas em um computador compartilhado.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6db021476afdc47129fd677702bc6cc58af204fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 90ece330d4d266c42a7a932d5962aaf1d85496e0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464947"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944709"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>tipo de enumeração sharedPCAccountDeletionPolicyType
 
@@ -25,7 +25,6 @@ Valores possíveis para quando as contas são excluídas em um computador compar
 |imediato|,0|Excluir imediatamente.|
 |diskSpaceThreshold|1|Excluir no limite de espaço em disco.|
 |diskSpaceThresholdOrInactiveThreshold|duas|Excluir no limite de espaço em disco ou limite inativo.|
-
 
 
 

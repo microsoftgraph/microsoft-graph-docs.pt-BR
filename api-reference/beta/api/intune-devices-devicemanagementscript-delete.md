@@ -1,15 +1,15 @@
 ---
 title: Excluir deviceManagementScript
 description: Exclui deviceManagementScript.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f190ad02b4cfd35ef893d6a0ecb0026ec51770cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e69f1af944b2ddf9a66ede8f27d93cef5b7add8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465857"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909971"
 ---
 # <a name="delete-devicemanagementscript"></a>Excluir deviceManagementScript
 
@@ -62,7 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

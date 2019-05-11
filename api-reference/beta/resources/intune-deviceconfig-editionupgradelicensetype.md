@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração editionUpgradeLicenseType
 description: Tipo de licença de atualização de edição
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d39e625d24d6ab8486bc281be957ef8728d4403b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60ce0f65a07c1fddacc0856c7e7549b31c7851b4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556155"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946648"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>tipo de enumeração editionUpgradeLicenseType
 
@@ -23,9 +23,8 @@ Tipo de licença de atualização de edição
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |productKey|,0|Tipo de chave do produto|
-|LicenseFile|1 |Tipo de arquivo de licença|
-|notConfigured|2 |NotConfigured|
-
+|LicenseFile|1|Tipo de arquivo de licença|
+|notConfigured|duas|NotConfigured|
 
 
 

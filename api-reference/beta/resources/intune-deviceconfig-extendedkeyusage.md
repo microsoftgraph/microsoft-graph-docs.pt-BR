@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso extendedKeyUsage
 description: Definição de uso de chave estendida personalizada
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd89a46c2739f80a0a5c661884fb5e72c6e17522
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 36752e9a2f86e68bd4ada1a342dc174726a684c7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556148"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946949"
 ---
 # <a name="extendedkeyusage-resource-type"></a>tipo de recurso extendedKeyUsage
 
@@ -22,8 +22,8 @@ Definição de uso de chave estendida personalizada
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|Nome estendido do uso de chave|
-|objectIdentifier|String|Identificador de objeto de uso estendido de chave|
+|nome|Cadeia de caracteres|Nome estendido do uso de chave|
+|objectidentifier|Cadeia de caracteres|Identificador de objeto de uso estendido de chave|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "objectIdentifier": "String"
 }
 ```
-
 
 
 

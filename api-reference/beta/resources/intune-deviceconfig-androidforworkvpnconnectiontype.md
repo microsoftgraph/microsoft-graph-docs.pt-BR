@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração androidForWorkVpnConnectionType
 description: Tipo de conexão VPN do Android para work.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4a8cffb385549f803a55f1414592663f10908ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e4380989c3652dda7a75ad17eb05834492785417
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556190"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33948545"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>tipo de enumeração androidForWorkVpnConnectionType
 
@@ -23,12 +23,11 @@ Tipo de conexão VPN do Android para work.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ciscoAnyConnect|,0|Cisco AnyConnect.|
-|pulseSecure|1 |Pulso seguro.|
-|f5EdgeClient|2 |Cliente de borda F5.|
-|dellSonicWallMobileConnect|3 |Conexão móvel Dell SonicWALL.|
-|checkPointCapsuleVpn|4 |Verificar VPN de cápsula de ponto.|
-|Citrix|5 |Citrix|
-
+|pulseSecure|1|Pulso seguro.|
+|f5EdgeClient|duas|Cliente de borda F5.|
+|dellSonicWallMobileConnect|3D|Conexão móvel Dell SonicWALL.|
+|checkPointCapsuleVpn|quatro|Verificar VPN de cápsula de ponto.|
+|Citrix|0,5|Citrix|
 
 
 

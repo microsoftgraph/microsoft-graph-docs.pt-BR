@@ -1,17 +1,17 @@
 ---
-title: tipo de enumeração de inStarttype
+title: tipo de enumeração de instarttype
 description: Possíveis valores de tipo de inicialização do serviço do Xbox
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5dac286f2f722e7cf58b69e143111568fbddbe1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ce6f4da06b12e8dc59aa7e5e4d65d0162c17c13a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464926"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944772"
 ---
-# <a name="servicestarttype-enum-type"></a>tipo de enumeração de inStarttype
+# <a name="servicestarttype-enum-type"></a>tipo de enumeração de instarttype
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,7 +25,6 @@ Possíveis valores de tipo de inicialização do serviço do Xbox
 |Manual|,0|Tipo de início de serviço manual (padrão)|
 |Automático|1|Tipo de inicialização automática de serviço|
 |deficiência|duas|Tipo de início de serviço desabilitado|
-
 
 
 

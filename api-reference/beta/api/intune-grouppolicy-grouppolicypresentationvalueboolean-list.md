@@ -1,15 +1,15 @@
 ---
 title: Listar groupPolicyPresentationValueBooleans
 description: Listar Propriedades e relações dos objetos groupPolicyPresentationValueBoolean.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa5e4e230fc70b3c9706a549685e4c42f23a4f99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c7f5b68ccb715099e58d6ccd9f0d5fea4f8e3640
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530806"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904479"
 ---
 # <a name="list-grouppolicypresentationvaluebooleans"></a>Listar groupPolicyPresentationValueBooleans
 
@@ -76,7 +76,6 @@ Content-Length: 320
   ]
 }
 ```
-
 
 
 
