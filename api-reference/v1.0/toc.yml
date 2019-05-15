@@ -3102,6 +3102,8 @@ items:
                 href: api/driveitem-list-versions.md
               - name: Item de visualização
                 href: api/driveitem-preview.md
+              - name: Obter análise do item
+                href: api/itemanalytics-get.md
           - name: Permissões
             href: resources/permission.md
             items:
@@ -3852,6 +3854,8 @@ items:
                 href: api/list-list.md
               - name: Listar subsites
                 href: api/site-list-subsites.md
+              - name: Obter análise do item
+                href: api/itemanalytics-get.md
           - name: Listas
             href: resources/list.md
             items:
@@ -3874,6 +3878,8 @@ items:
                 href: api/listitem-delete.md
               - name: Listar versões
                 href: api/listitem-list-versions.md
+              - name: Obter análise do item
+                href: api/itemanalytics-get.md
       - name: 'Inteligência social: pessoas'
         items:
           - name: Visão geral
@@ -3967,7 +3973,7 @@ items:
       - name: Teamwork
         displayName: Microsoft Teams
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/teams-api-overview.md
           - name: Equipe
             href: resources/team.md
@@ -4112,7 +4118,7 @@ items:
       - name: Workbooks e gráficos
         displayName: Excel
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/excel.md
           - name: Workbook
             href: resources/workbook.md
