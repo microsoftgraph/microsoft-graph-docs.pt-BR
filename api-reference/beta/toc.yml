@@ -819,14 +819,6 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-          - name: Notificações
-            href: resources/notifications-api-overview.md
-            items:
-              - name: Notificação
-                href: resources/projectrome-notification.md
-                items:
-                  - name: Criar e enviar uma notificação
-                    href: api/projectrome-notification-post.md
       - name: Reserva de clientes
         displayName: 'Bookings, Microsoft Bookings'
         items:
@@ -869,7 +861,7 @@ items:
           - name: Moeda da reserva
             href: resources/bookingcurrency.md
             items:
-              - name: Lista
+              - name: Listar
                 href: api/bookingcurrency-list.md
               - name: Obter
                 href: api/bookingcurrency-get.md
@@ -2150,7 +2142,7 @@ items:
               - name: Perfil de registro de iOS do DEP
                 href: resources/intune-enrollment-depiosenrollmentprofile.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-enrollment-depiosenrollmentprofile-list.md
                   - name: Obter
                     href: api/intune-enrollment-depiosenrollmentprofile-get.md
@@ -2163,7 +2155,7 @@ items:
               - name: Perfil de registro de macOS do DEP
                 href: resources/intune-enrollment-depmacosenrollmentprofile.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-enrollment-depmacosenrollmentprofile-list.md
                   - name: Obter
                     href: api/intune-enrollment-depmacosenrollmentprofile-get.md
@@ -2577,7 +2569,7 @@ items:
               - name: Configuração de Wi-Fi corporativa do Android for Work
                 href: resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-get.md
@@ -2590,7 +2582,7 @@ items:
               - name: Configuração geral do dispositivo Android for Work
                 href: resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md
@@ -2795,7 +2787,7 @@ items:
               - name: Configuração de VPN do Android
                 href: resources/intune-deviceconfig-androidvpnconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-androidvpnconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidvpnconfiguration-get.md
@@ -2810,7 +2802,7 @@ items:
               - name: Configuração de Wi-Fi do Android
                 href: resources/intune-deviceconfig-androidwificonfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-androidwificonfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -3663,7 +3655,7 @@ items:
               - name: Valor da apresentação da política de grupo
                 href: resources/intune-grouppolicy-grouppolicypresentationvalue.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-grouppolicy-grouppolicypresentationvalue-list.md
                   - name: Obter
                     href: api/intune-grouppolicy-grouppolicypresentationvalue-get.md
@@ -4727,7 +4719,7 @@ items:
               - name: Política de conformidade do Windows 8.1
                 href: resources/intune-deviceconfig-windows81compliancepolicy.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-windows81compliancepolicy-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windows81compliancepolicy-get.md
@@ -7515,7 +7507,7 @@ items:
               - name: Modelo de fluxo de negócios
                 href: resources/businessflowtemplate.md
                 items:
-                  - name: Listar
+                  - name: List
                     href: api/businessflowtemplate-list.md
               - name: Programa
                 href: resources/program.md
@@ -7524,7 +7516,7 @@ items:
                     href: api/program-create.md
                   - name: Excluir
                     href: api/program-delete.md
-                  - name: List
+                  - name: Listar
                     href: api/program-list.md
                   - name: Atualizar
                     href: api/program-update.md
@@ -7960,14 +7952,14 @@ items:
               - name: Definições de função
                 href: resources/governanceroledefinition.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/governanceroledefinition-list.md
                   - name: Obter
                     href: api/governanceroledefinition-get.md
               - name: Configurações de função
                 href: resources/governancerolesetting.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/governancerolesetting-list.md
                   - name: Obter
                     href: api/governancerolesetting-get.md
@@ -8330,6 +8322,14 @@ items:
             items:
               - name: Obter recurso
                 href: api/resource-get.md
+      - name: Notificações
+        href: resources/notifications-api-overview.md
+        items:
+          - name: Notificação
+            href: resources/projectrome-notification.md
+            items:
+              - name: Criar e enviar uma notificação
+                href: api/notifications-post.md
       - name: Contatos pessoais
         href: resources/contact.md
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
