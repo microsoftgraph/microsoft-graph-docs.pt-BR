@@ -4,12 +4,12 @@ description: Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplic
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5e59415bc18f25532e306d32383569d368606e2d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9f15158351d2ea83565506d04fd4f5bf56b4173b
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599883"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968832"
 ---
 # <a name="register-an-application-with-the-microsoft-identity-platform"></a>Registrar um aplicativo com a Microsoft Identity Platform
 
@@ -62,11 +62,11 @@ A tabela a seguir mostra as propriedades que você precisa configurar e copiar p
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Saiba mais sobre [consentimento e permissões](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent.md) ou veja a [referência de permissões](permissions-reference.md) do Microsoft Graph.
+- Saiba mais sobre [consentimento e permissões](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) ou veja a [referência de permissões](permissions-reference.md) do Microsoft Graph.
 - Para habilitar recursos adicionais de configuração durante o registro de seu aplicativo, como credenciais e permissões, e habilitar a entrada para usuários de outros locatários, confira estes inícios rápidos:
-    - [Configurar um aplicativo cliente para acessar APIs Web](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis.md)
-    - [Configurar um aplicativo para expor APIs Web](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis.md)
-    - [Modificar as contas que têm suporte por um aplicativo](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts.md)
+    - [Configurar um aplicativo cliente para acessar APIs Web](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
+    - [Configurar um aplicativo para expor APIs Web](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
+    - [Modificar as contas que têm suporte por um aplicativo](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts)
 - Escolha um [início rápido](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts) para desenvolver rapidamente um aplicativo e adicionar funcionalidades como obtenção de tokens, atualização de tokens, conexão do usuário, exibição de algumas informações do usuário e muito mais.
-- Saiba mais sobre os dois objetos do Azure AD que representam um aplicativo registrado e a relação entre eles: [Objetos de aplicativo e objetos de entidade de serviço](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals.md).
-- Saiba mais sobre as diretrizes de identidade visual que você deve usar ao desenvolver aplicativos em [Diretrizes de identidade visual para aplicativos](https://docs.microsoft.com/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps.md).
+- Saiba mais sobre os dois objetos do Azure AD que representam um aplicativo registrado e a relação entre eles: [Objetos de aplicativo e objetos de entidade de serviço](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
+- Saiba mais sobre as diretrizes de identidade visual que você deve usar ao desenvolver aplicativos em [Diretrizes de identidade visual para aplicativos](https://docs.microsoft.com/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps).

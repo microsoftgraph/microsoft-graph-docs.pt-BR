@@ -4,12 +4,12 @@ ms.author: chackman
 title: Seguir item de unidade
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ba42ecab522ca09999de0df06ef681164d831d4f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e62f256e9c4c0832b2f1ef71713c57b596d2a811
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33589134"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960876"
 ---
 # <a name="follow-drive-item"></a>Seguir item de unidade
 
@@ -86,3 +86,13 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-12-12T10:40:59Z"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/follow-item-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/follow-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]

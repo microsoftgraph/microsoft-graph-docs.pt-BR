@@ -4,14 +4,14 @@ description: Para chamar o Microsoft Graph, o aplicativo deve adquirir um token 
 author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a50a800ff88bcdc15ce0d8bab9a7992d95592b49
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2578d7d4533577e88993e5c83884b393c78dc2af
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629856"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951219"
 ---
-# <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Noções básicas de autorização e autenticação do Microsoft Graph
+# <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 
 Para chamar o Microsoft Graph, o aplicativo deve adquirir um token de acesso da Microsoft Identity Plataform. O token de acesso contém informações sobre seu aplicativo e as permissões que ele possui para os recursos e APIs disponíveis no Microsoft Graph. Para obter um token de acesso, o aplicativo deve ser registrado com a Microsoft Identity Platform e ter autorização de um usuário ou administrador para acessar os recursos necessários do Microsoft Graph. 
 

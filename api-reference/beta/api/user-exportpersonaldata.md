@@ -4,12 +4,12 @@ description: Envia uma solicitação de operação de política de dados, feita 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: adc6e35609b27a8353d24585b5542d3e9a704bd6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 776602eb600ca74feff61c595092e1e2518b49a1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33609590"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961295"
 ---
 # <a name="user-exportpersonaldata"></a>usuário: exportPersonalData
 
@@ -21,8 +21,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User. Export. All e User. Read. All  |
-|Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Application | User. Export. All e User. Read. All |
+|Delegado (conta pessoal da Microsoft) |  Não se aplica  |
+|Aplicativo | User. Export. All e User. Read. All |
 
 >**Observação:** A exportação só pode ser realizada por um administrador da empresa quando a permissão delegada é usada.
 
@@ -70,22 +70,22 @@ Content-length: 48
 ```
 ##### <a name="response"></a>Resposta
 
-```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+```http
 {
   Location: https://graph.microsoft.com/beta/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
   Retry-After: 60
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "blockType": "response",

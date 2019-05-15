@@ -4,12 +4,12 @@ description: 'Obtenha os erros gerados durante a validação e/ou durante uma si
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 322eeb409584020dfa15c18be4c264cacd8a23cb
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 84c0139e950274de6d8d625d00787784b52661bb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587155"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960869"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-----------|:------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration. Read, EduAdministration. ReadWrite |
 |Delegado (conta pessoal da Microsoft|Sem suporte.|
-|Application| EduAdministration. Read. All, EduAdministration. ReadWrite. All |
+|Aplicativo| EduAdministration. Read. All, EduAdministration. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -99,9 +99,11 @@ Content-length: 1568
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_error-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_error-Cs-snippets.md)]
 
 ---
