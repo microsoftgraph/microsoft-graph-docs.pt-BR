@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: Atualizar um registro em uma lista do SharePoint
+title: Atualizar o listItem
+description: Atualize as propriedades em um **[listItem][]**.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 811dcd2640b2fe95ab78c1561fea8ea98f3029ff
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c75f14a5dd118a6735f494fb56e9f0895ce99ba9
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613993"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968734"
 ---
-# <a name="update-an-item-in-a-list"></a>Atualizar um item em uma lista
+# <a name="update-listitem"></a>Atualizar o listItem
 
 Atualizar as propriedades em um **[listItem][]**.
 
@@ -30,6 +30,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 
+Atualizar as propriedades de um listItem.
+```http
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+
+Atualizar os valores de coluna de um listItem.
 ```http
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
@@ -40,15 +46,18 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | Se este cabeçalho de solicitação estiver incluso e a eTag fornecida não corresponder à eTag atual no item, uma resposta `412 Precondition Failed` será exibida e o item não será atualizado.
 
-
-## <a name="request-body"></a>Corpo da solicitação
-
+## <a name="request-body"></a>Corpo da solicitação 
 No corpo da solicitação, forneça uma representação JSON de [fieldValueSet][] especificando os campos a atualizar.
+
+## <a name="response"></a>Resposta 
+
+Se bem-sucedido, esse método retornará um código de resposta `201 Created` e um [fieldValueSet][] no corpo da resposta para o item de lista atualizado.
 
 ## <a name="example"></a>Exemplo
 
-Aqui está um exemplo que atualiza os campos de cor e quantidade do item de lista com novos valores.
-Todos os outros valores no listItem ficam inalterados. 
+O exemplo a seguir atualiza os campos **Cor** e **Quantidade** do item de lista com novos valores. Todos os outros valores em **listItem** são deixados de lado. 
+
+### <a name="request"></a>Solicitação 
 
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
@@ -62,9 +71,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a>Resposta
-
-Se for bem-sucedido, esse método retornará um [fieldValueSet][] no corpo da resposta do item de lista atualizada.
+### <a name="response"></a>Resposta
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
@@ -78,7 +85,7 @@ Content-type: application/json
   "Quantity": 934
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update-listitem-Javascript-snippets.md)]
