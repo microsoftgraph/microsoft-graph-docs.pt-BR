@@ -2,12 +2,12 @@
 title: 'Usar a API do Microsoft Graph para trabalhar com o Project Roma '
 description: 'O Project Roma é uma iniciativa da Microsoft para criar uma plataforma que permite aos desenvolvedores de aplicativos criar grandes experiências entre dispositivos. O Project Roma permite diferentes recursos que conectam diferentes serviços e pontos de extremidade do cliente quando o usuário entra com a mesma conta da Microsoft ou conta corporativa ou de estudante. Isso permite que você implemente experiências entre dispositivos e várias plataformas centradas em tarefas do usuário, em vez de dispositivos. '
 localization_priority: Normal
-ms.openlocfilehash: b247c434c90ff0517d012f23254a70c591cdafd4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3b02f6f6efa61495f226ad80649cf3d1ef50f5ac
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344041"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036560"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API do Microsoft Graph para trabalhar com o Project Roma 
 
@@ -27,7 +27,7 @@ As atividades no Microsoft Graph permitem que você direcionar o compromisso do 
 
 Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de envolvimento do usuário. Cada vez que um usuário reparticipa de uma atividade, um novo item de histórico é adicionado à atividade para acumular o envolvimento do usuário.
 
-Quando um aplicativo publica objetos de atividade do usuário, o objeto aparecerá em algumas das novas superfícies de interface de usuário no Windows; por exemplo, notificações e cronograma da corTana. Você pode especificar tanto metadados avançados (para permitir que as atividades sejam apresentadas no contexto certo) e Visual ricos (usando a marcação de [cartão adaptável](https://adaptivecards.io/) ) em seus objetos de atividade.
+Quando um aplicativo publica objetos de atividade do usuário, o objeto aparecerá em algumas das novas superfícies de interface de usuário no Windows; por exemplo, notificações e cronograma da Cortana. Você pode especificar tanto metadados avançados (para permitir que as atividades sejam apresentadas no contexto certo) e Visual ricos (usando a marcação de [cartão adaptável](https://adaptivecards.io/) ) em seus objetos de atividade.
 
 Você pode usar as seguintes APIs do Microsoft Graph para criar e recuperar atividades do usuário:
 
@@ -53,12 +53,4 @@ Você pode usar as seguintes APIs do Microsoft Graph para se comunicar com outro
 - [Listar os dispositivos do usuário](../api/user-list-devices.md)
 - [Enviar um comando para um dispositivo](../api/send-device-command.md)
 - [Obter status do comando](../api/get-device-command-status.md)
-
-## <a name="notifications"></a>Notificações
-
-Você pode usar as APIs de notificações no Microsoft Graph para entregar notificações entre vários pontos de extremidade nos quais o mesmo usuário está conectado. Você pode direcionar um usuário diretamente ao postar notificações em vez de se preocupar com endereços/canais de dispositivos. Dessa forma, você pode se concentrar no design dos cenários de notificação adequados em uma forma centrada no homem, e não em um dispositivo. 
-
-Você pode publicar uma notificação de dados brutos ou uma notificação Visual direta. Quando uma notificação de dados brutos é entregue a um ponto de extremidade do dispositivo, você pode usar o SDK do [cliente](https://github.com/Microsoft/project-rome) (SDK de notificações do Microsoft Graph para Windows, SDK do Project Roma para IOS e Android) para receber e gerenciar notificações. Quando uma notificação Visual direta é entregue a um ponto de extremidade do dispositivo, ela mostra a notificação nativa específica da plataforma para o usuário. 
-
-Para obter detalhes, consulte [criar e enviar uma notificação](../api/projectrome-notification-post.md).
 

@@ -4,12 +4,12 @@ description: 'Antes de poder usar o Microsoft Graph Data Connect, um administrad
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 8372653d8904ba247975a649e6709b2206a4d6d3
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7033a5f9a823977a99a753911600545ef35b0f1c
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599783"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036511"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect"></a>Introdução ao Microsoft Graph Data Connect
 
@@ -20,4 +20,4 @@ Antes de poder usar o Microsoft Graph Data Connect, um administrador do Office 3
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Parabéns! Agora você está pronto para começar a criar aplicativos inteligentes com as ferramentas do Azure. Para obter passo a passo das instruções, veja o [módulo de treinamento do Microsoft Graph Data Connect](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md). Para obter mais informações sobre os recursos que o Microsoft Graph Data Connect oferece, confira [conjuntos de dados, regiões e coletores](/concepts/data-connect-datasets.md) ou [seleção de usuário e filtragem](/concepts/data-connect-filtering.md) que o Data Connect suporta.
+Parabéns! Agora você está pronto para começar a criar aplicativos inteligentes com as ferramentas do Azure. Para obter passo a passo das instruções, veja o [módulo de treinamento do Microsoft Graph Data Connect](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md). Para obter mais informações sobre os recursos que o Microsoft Graph Data Connect oferece, confira [conjuntos de dados, regiões e coletores](data-connect-datasets.md) ou [seleção de usuário e filtragem](data-connect-filtering.md) que o Data Connect suporta.

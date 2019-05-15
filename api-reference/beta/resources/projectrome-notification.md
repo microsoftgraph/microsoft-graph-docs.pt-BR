@@ -3,12 +3,12 @@ title: tipo de recurso de notificação
 description: 'Representa uma notificação publicada por um servidor de aplicativos que se destina a um usuário especificado. A notificação é armazenada no Microsoft Graph e é distribuída para diferentes pontos de extremidade do dispositivo de Propriedade do usuário. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 56a05ced6d722b3c1c347fc43735dec461aa0f69
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 13839cdc946ecaf47e59d37e90fe4be144789a6d
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344080"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036477"
 ---
 # <a name="notification-resource-type"></a>tipo de recurso de notificação
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,7 +22,7 @@ Quando um usuário atua em uma notificação Visual, o cliente do aplicativo pod
 ## <a name="methods"></a>Métodos
 |Método | Tipo de retorno | Descrição|
 |:------|:------------|:-----------|
-|[Criar notificação](../api/projectrome-notification-post.md) | [Notifica](projectrome-notification.md) |Criar e enviar uma notificação. |
+|[Criar notificação](../api/notifications-post.md) | [Notifica](projectrome-notification.md) |Criar e enviar uma notificação. |
 
 ## <a name="properties"></a>Propriedades
 |Nome | Tipo | Descrição|
@@ -39,7 +39,7 @@ Quando um usuário atua em uma notificação Visual, o cliente do aplicativo pod
 | prioridade | EnumType | Indica a prioridade de uma notificação de usuário bruto. As notificações visuais são enviadas com alta prioridade por padrão. Os valores válidos são alto e baixo. |
 | Nome_do_grupo | String | O nome do grupo ao qual essa notificação pertence. Ele é definido pelo desenvolvedor com o objetivo de agrupar notificações. |
 | targetPolicy | EDM. complexType, objeto JSON | O objeto de política de destino trata a política de entrega de notificação em dois níveis diferentes-tipos de ponto de extremidade (Windows, iOS e Android) que devem ser direcionados e pontos de extremidade específicos (identificados por IDs de assinatura) que devem ser direcionados. |
-| targetPolicy. platformTypes | EDM. complexType, coleção (EnumType) | Use para filtrar a distribuição de notificação para uma plataforma ou plataformas específicas. Por padrão, todos os tipos de ponto de extremidade de envio (iOS, Windows e Android) estão habilitados. |
+| targetPolicy.platformTypes | EDM. complexType, coleção (EnumType) | Use para filtrar a distribuição de notificação para uma plataforma ou plataformas específicas. Por padrão, todos os tipos de ponto de extremidade de envio (iOS, Windows e Android) estão habilitados. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

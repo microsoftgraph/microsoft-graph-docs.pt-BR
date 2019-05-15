@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5ca5df50b9c7ce9c16f3aa09bd54dbc1c0444dc0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3dfa65d9c285422351c82a43494aaf524b894685
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951247"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968839"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -139,6 +139,24 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição |v1.0 | Foi adicionado suporte para permissões do aplicativo para o recurso [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0).|
 |Adição |v1.0| Adicionar o **email** e propriedades **webUrl** para o [canal](/graph/api/resources/channel?view=graph-rest-1.0).|
 | Adição | beta | Foram adicionados os recursos do [chat](/api-reference/beta/resources/chat.md) e métodos associados. |
+
+### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | v1.0        | Adicionada a propriedade de **análise** à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionada a propriedade de **análise** à entidade do [site](/graph/api/resources/site?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionada a propriedade de **análise** à entidade [listItem](/graph/api/resources/listitem?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionada a função **getActivitiesByInterval** na entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionado a função **getActivitiesByInterval** na entidade do [site](/graph/api/resources/site?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionada a função **getActivitiesByInterval** na entidade [listItem](/graph/api/resources/listitem?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionada a entidade [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionada a entidade [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionado o tipo complexo [itemActionStat](/graph/api/resources/itemactionstat?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionado o tipo complexo [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionado o tipo complexo [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionado a propriedade de **acesso** ao tipo complexo [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionado a propriedade **local** ao tipo complexo [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta). |
 
 ### <a name="outlook-mail"></a>Email do Outlook
 

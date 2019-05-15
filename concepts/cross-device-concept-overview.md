@@ -3,12 +3,12 @@ title: Experiências entre dispositivos no Microsoft Graph
 description: 'No mundo atual, com tantos dispositivos, a forma como os clientes usam os dispositivos abrange diferentes plataformas e formatos: eles podem ler as notícias de manhã no tablet, ler os emails no celular no caminho para o trabalho e usar computadores de mesa no trabalho. À noite, podem assistir a filmes em seus consoles de mídia domésticos e usar alto-falantes inteligentes para ouvir as notícias do dia. O cliente comum utiliza diversos dispositivos e plataformas ao longo do dia. '
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 85d48d07f06d189f30c8eba9f7f0876353b3ff25
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78b1eebb2db66151a0e1ae1fee30f9122510be47
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570275"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036518"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Experiências entre dispositivos no Microsoft Graph
 
@@ -26,11 +26,6 @@ Com as atividades, você pode capturar as tarefas exclusivas dos usuários do se
 ### <a name="build-rich-cross-device-experiences-by-using-the-device-relay-api"></a>Criar experiências avançadas em vários dispositivos usando a API de retransmissão de dispositivo 
 Além dos dispositivos da Microsoft (PCs, Windows Phone, Xbox, IoT, HoloLens e muito mais), a API de retransmissão de dispositivo também abrange dispositivos Android e iOS. Isso possibilita que você reduza os limites entre os dispositivos dos usuários. Você pode criar aplicativos que utilizam o ambiente do usuário e criar experiências avançadas que vão além de um único dispositivo em tempo real. 
 
-### <a name="engage-users-with-human-centric-cross-device-notifications-preview"></a>Envolva os usuários com notificações entre dispositivos centradas no ser humano (visualização)
-
-As notificações são uma das maneiras mais eficientes e diretas de se comunicar e interagir com os usuários. 
-
-Com a API de notificações do Microsoft Graph, você pode exibir notificações de uma maneira centrada no ser humano, não no dispositivo. Você pode direcionar um usuário para enviar notificações e usar a estrutura de notificações do Microsoft Graph para fornecer as notificações a cada ponto de extremidade em que o usuário está conectado. O gerenciamento de notificações entre dispositivos também fica mais fácil com a API de notificações do Microsoft Graph. Você pode sincronizar notificações em todos os dispositivos dos usuários e reduzir a redundância e as interrupções para eles. 
 
 ## <a name="api-reference"></a>Referência da API
 Procurando a referência de API para estes serviços?
@@ -44,4 +39,3 @@ Procurando a referência de API para estes serviços?
 - [Usar a API do Microsoft Graph para habilitar experiências em vários dispositivos](/graph/api/resources/cross-device-reference-overview?view=graph-rest-1.0)
 - [Saiba mais sobre a API do feed de atividades no Microsoft Graph](activity-feed-concept-overview.md)
 - [Saiba mais sobre a API de retransmissão de dispositivo no Microsoft Graph](device-relay-concept-overview.md)
-- [Saiba mais sobre a API de notificações do Microsoft Graph do Microsoft Graph](notifications-concept-overview.md)

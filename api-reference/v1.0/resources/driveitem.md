@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: DriveItem
+title: tipo de recurso driveItem
+description: Item é o principal modelo de dados na API do OneDrive. Tudo é um item.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 8dbbf3b673fe7f436b9600366765425011ab129f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d80c6cf2b121f606938e533a6428e2d85d54033
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562745"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968790"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -21,7 +21,8 @@ Há duas maneiras principais de endereçar um recurso **driveItem**:
 * Pelo identificador exclusivo de **driveItem** usando `drive/items/{item-id}`
 * Usando o caminho do sistema de arquivos `/drive/root:/path/to/file`
 
-Os recursos **DriveItem** têm facetas modeladas como propriedades que fornecem dados sobre as identidades e capacidades de driveItem. Por exemplo:
+Os recursos de **driveItem** têm facetas modeladas como propriedades que fornecem dados sobre as identidades e recursos do driveItem.
+Por exemplo:
 
 * As pastas têm uma [**faceta folder**][folder]
 * Os arquivos têm uma [**faceta file**][file].
@@ -30,71 +31,7 @@ Os recursos **DriveItem** têm facetas modeladas como propriedades que fornecem 
 
 Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm uma referência `children` apontando para um conjunto de **driveItems** na pasta.
 
-## <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON de um recurso **driveItem**.
-
-O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propriedades desse recurso.
-
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
-       "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
-       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
-       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
-
-```json
-{
-  "audio": { "@odata.type": "microsoft.graph.audio" },
-  "content": { "@odata.type": "Edm.Stream" },
-  "cTag": "string (etag)",
-  "deleted": { "@odata.type": "microsoft.graph.deleted"},
-  "description": "string",
-  "file": { "@odata.type": "microsoft.graph.file" },
-  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
-  "folder": { "@odata.type": "microsoft.graph.folder" },
-  "image": { "@odata.type": "microsoft.graph.image" },
-  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
-  "package": { "@odata.type": "microsoft.graph.package" },
-  "photo": { "@odata.type": "microsoft.graph.photo" },
-  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
-  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
-  "root": { "@odata.type": "microsoft.graph.root" },
-  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
-  "shared": { "@odata.type": "microsoft.graph.shared" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
-  "video": { "@odata.type": "microsoft.graph.video" },
-  "webDavUrl": "string",
-
-  /* relationships */
-  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
-  "createdByUser": { "@odata.type": "microsoft.graph.user" },
-  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
-  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string (identifier)",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
-  "eTag": "string",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "string",
-  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "string",
-
-  /* instance annotations */
-  "@microsoft.graph.conflictBehavior": "string",
-  "@microsoft.graph.downloadUrl": "url",
-  "@microsoft.graph.sourceUrl": "url"
-}
-```
+>**Observação:** No OneDrive for Business ou nas bibliotecas de documentos do SharePoint, a propriedade **cTag** não é retornada se o **driveItem** tiver uma faceta de [pasta][].
 
 ## <a name="properties"></a>Propriedades
 
@@ -138,7 +75,9 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 
 | Relação       | Tipo                        | Descrição
 |:-------------------|:----------------------------|:--------------------------
-| filhos           | coleção driveItem        | Coleção que contêm objetos Item para os filhos imediatos do Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
+| activities         | Conjunto [itemActivity][] | A lista de atividades recentes que ocorreram neste item.
+| análise          | recurso [itemAnalytics][]  | Análise sobre as atividades de visualização que ocorreram neste item.
+| children           | coleção driveItem        | Coleção que contêm objetos Item para os filhos imediatos do Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
 | createdByUser      | [user][]                    | A identidade do usuário que criou o item. Somente leitura.
 | lastModifiedByUser | [user][]                    | A identidade do usuário que modificou o item pela última vez. Somente leitura.
 | listItem           | [listItem][]                | Para unidades no SharePoint, o item da lista da biblioteca de documentos associado. Somente leitura. Anulável.
@@ -162,36 +101,104 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada.
 A remoção das permissões de arquivo de um usuário pode não invalidar a URL imediatamente.
 
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON de um recurso **driveItem**.
+
+O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propriedades desse recurso.
+
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+       "baseType": "microsoft.graph.baseItem",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
+       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
+       "sharepointIds"],
+       "keyProperty": "id", "openType": true } -->
+
+```json
+{
+  "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
+  "cTag": "string (etag)",
+  "deleted": { "@odata.type": "microsoft.graph.deleted"},
+  "description": "string",
+  "file": { "@odata.type": "microsoft.graph.file" },
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "folder": { "@odata.type": "microsoft.graph.folder" },
+  "image": { "@odata.type": "microsoft.graph.image" },
+  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "package": { "@odata.type": "microsoft.graph.package" },
+  "photo": { "@odata.type": "microsoft.graph.photo" },
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
+  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
+  "root": { "@odata.type": "microsoft.graph.root" },
+  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
+  "shared": { "@odata.type": "microsoft.graph.shared" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "size": 1024,
+  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
+  "video": { "@odata.type": "microsoft.graph.video" },
+  "webDavUrl": "string",
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": {"@odata.type": "microsoft.graph.itemAnalytics"},
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
+  "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
+  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string (identifier)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "eTag": "string",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
+  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "string",
+
+  /* instance annotations */
+  "@microsoft.graph.conflictBehavior": "string",
+  "@microsoft.graph.downloadUrl": "url",
+  "@microsoft.graph.sourceUrl": "url"
+}
+```
+
 ## <a name="methods"></a>Métodos
 
-| Método                                                   | Caminho REST
-|:---------------------------------------------------------|:------------------
-| [Obter item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [Listar filhos](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [Listar versões](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Criar item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [Atualizar item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [Carregar conteúdo](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [Baixar conteúdo](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [Baixar formato de arquivo específico][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [Excluir item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [Mover item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [Copiar item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [Pesquisar itens](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [Listar alterações em uma unidade](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Criar link de compartilhamento](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [Adicionar permissões](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [Listar permissões](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Excluir permissão](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [Obter canal WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| Método                                                   | Tipo de retorno | Descrição
+|:---------------------------------------------------------|:------------|:------------
+| [Obter item](../api/driveitem-get.md)                      | driveItem |Recupere os metadados de um DriveItem em uma unidade.
+| [Obter análises][]                                        | [itemAnalytics][] | Obter análises para este recurso. 
+| [Obter atividades por intervalo][]                           | [itemActivityStat][] | Obter uma coleção de itemActivityStats dentro do intervalo de tempo especificado.
+| [Listar filhos](../api/driveitem-list-children.md)       | coleção de driveItem | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem.
+| [Listar versões](../api/driveitem-list-versions.md)       | coleção de [DriveItemVersion][] | Recupera as versões de um arquivo na unidade do usuário atual.
+| [Criar item](../api/driveitem-post-children.md)         | driveItem | Cria um driveItem na unidade especificada.
+| [Atualizar item](../api/driveitem-update.md)                | driveItem | Atualiza um driveItem na unidade.
+| [Carregar conteúdo](../api/driveitem-put-content.md)        | driveItem | Carrega conteúdo para o driveItem.
+| [Baixar conteúdo](../api/driveitem-get-content.md)      | URL de download | Baixa o conteúdo de um driveItem.
+| [Baixar formato de arquivo específico][download-format]         | URL de download | Baixa o conteúdo de um driveItem com um formato específico.
+| [Excluir item](../api/driveitem-delete.md)                | Sem Conteúdo | Exclui um driveItem.
+| [Mover item](../api/driveitem-move.md)                    | driveItem | Move um DriveItem para um novo item pai.
+| [Copiar item](../api/driveitem-copy.md)                    | detalhes sobre como [monitorar o progresso](/graph/long-running-actions-overview) da cópia | Cria uma cópia de um driveItem (incluindo qualquer filho).
+| [Pesquisar itens](../api/driveitem-search.md)               | coleção de driveItem | Pesquise a hierarquia de itens para itens que correspondam a uma consulta.
+| [Listar alterações em uma unidade](../api/driveitem-delta.md)     | link delta | Listar quaisquer alterações na unidade.
+| [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | coleção de driveItem | Listar driveItems com suas miniaturas. 
+| [Criar link de compartilhamento](../api/driveitem-createlink.md)    | link de compartilhamento | Criar um link para compartilhar o driveItem.
+| [Adicionar permissões](../api/driveitem-invite.md)            | coleção de [permissão][] | Envia um convite de compartilhamento a um usuário.
+| [Listar permissões](../api/driveitem-list-permissions.md) | coleção de [permissão][] | Recupera a coleção de permissões em um driveItem.
+| [Excluir permissão](../api/permission-delete.md)         | Sem Conteúdo | Remove a permissão do driveItem.
+| [Obter canal WebSocket][getWebSocket]                    | [assinatura][] | Recebe notificações de alteração quase em tempo real para uma unidade usando o socket.io.
+| [Item de visualização][item-preview]                             | objeto json | Obtenha URLs incorporáveis de curta duração para um item de modo a renderizar uma visualização temporária.
 
 [item-preview]: ../api/driveitem-preview.md
-
-## <a name="remarks"></a>Comentários
-
-Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propriedade **cTag** não será retornada se **driveItem** for uma faceta [folder][].
+[Obter análises]: ../api/itemanalytics-get.md
+[Obter atividades por intervalo]: ../api/itemactivitystat-getactivitybyinterval.md
 
 [audio]: audio.md
 [baseItem]: baseitem.md
@@ -206,6 +213,8 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
@@ -224,6 +233,11 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [pasta de trabalho]: workbook.md
 [Usuário]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
+
+[DriveItemVersion]: driveitemversion.md
+[permissão]: permission.md
+[assinatura]: subscription.md
+[itemActivityStat]: itemactivitystat.md
 
 <!-- {
   "type": "#page.annotation",

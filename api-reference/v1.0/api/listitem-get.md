@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: Obter uma entrada de uma lista do SharePoint
+title: Obter listItem
+description: Retorna os metadados de um item em uma lista do SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: c46fed1c2da3ac246212dbbcdfeb35479699efe6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a498947002247541bebf4fc7cd24147a0ca0df7a
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613040"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968783"
 ---
-# <a name="get-an-item-in-a-list"></a>Obter um item em uma lista
+# <a name="get-listitem"></a>Obter listItem
 
 Retorna os metadados de um [item][] em uma [lista][].
 
@@ -31,15 +31,38 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
+Obter um listItem
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+Obter os valores de coluna de um listItem
+```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
+```
+Obter valores de coluna específicos de um listItem
+```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome      |Descrição|
+|:----------|:----------|
+| Autorização  | Portador {código}. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta 
+
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um [item][] no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 <!-- { "blockType": "request", "name": "get-list-item", "scopes": "sites.read.all" } -->
 
@@ -47,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -64,6 +87,7 @@ Content-type: application/json
     }
 }
 ```
+
 #### <a name="sdk-sample-code"></a>Código de amostra do SDK
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-list-item-Cs-snippets.md)]

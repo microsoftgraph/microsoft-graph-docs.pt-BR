@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: d3c9b2f77b63abf21d8eb538d08bade4f6cfcb32
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0921cec73d405262470ed30b7f0d61534f6b5ab4
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345656"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036567"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Enviar mensagens do Outlook de outro usuário
 
@@ -107,7 +107,7 @@ Depois que a mensagem é enviada, pode ser salva em pastas de itens enviados do 
 O comportamento padrão pode ser alterado por outros fatores externos:
 
 - Os administradores podem atualizar na caixa de correio do usuário para [sempre salvar uma cópia das mensagens enviadas de um representante](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox) para seus itens enviados.
-- Configurando a `saveToSentItems` propriedade para `true` em um solicitação [enviar email](/graph/api/user-sendmail?view=graph-rest-1.0), você pode impedir o item de ser salvo na pasta Itens enviados. No entanto, se o administrador definiu a configuração "sempre salvar uma cópia", a mensagem será ainda salva a partir dos itens enviados do usuário.
+- Configurando a `saveToSentItems` propriedade para `false` em um solicitação [enviar email](/graph/api/user-sendmail?view=graph-rest-1.0), você pode impedir o item de ser salvo na pasta Itens enviados. No entanto, se o administrador definiu a configuração "sempre salvar uma cópia", a mensagem será ainda salva a partir dos itens enviados do usuário.
 
 ## <a name="examples"></a>Exemplos
 
