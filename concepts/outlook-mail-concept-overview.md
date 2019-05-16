@@ -4,16 +4,18 @@ description: O Outlook é um hub de comunicação de mensagens do Office 365. El
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 86f7506ec06325657465a5762261a061bf0ad575
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 14debcfb59b062e0c29b5024d32e6a5dcc4e7394
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440063"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083236"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 
 O Outlook é um hub de comunicação de mensagens do Office 365. Além disso, ele permite gerenciar contatos, agendar reuniões, saber mais sobre os usuários de uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/L-gm25wusIQ]
 
 ## <a name="why-integrate-with-outlook-mail"></a>Por que integrar-se ao email do Outlook?
 
