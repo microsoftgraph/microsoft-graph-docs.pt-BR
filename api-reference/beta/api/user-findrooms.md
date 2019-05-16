@@ -2,22 +2,22 @@
 title: 'user: findRooms'
 description: 'Veja todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. '
 localization_priority: Priority
-author: dkershaw10
+author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5784824fe0e6c174935d12b8b22052709a61f69d
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 9c7d6fb47a52e67ae5dd884d9413726e9b2e3bae
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637373"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083303"
 ---
 # <a name="user-findrooms"></a>user: findRooms
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Veja todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. 
+Obter os objetos [emailAddress](../resources/emailaddress.md) que representam todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. 
 
-Os locatários podem organizar salas de reunião em listas de salas. Cada sala de reunião e a lista de salas são representadas por uma instância [emailAddress](../resources/emailaddress.md). Você pode [ver todas as listas de salas](user-findroomlists.md) no locatário, obter todas as salas no locatário ou todas as salas em uma lista de salas específica. É possível ter acesso até as primeiras 100 salas do locatário.
+Os locatários podem organizar salas de reunião em listas de salas. Nesta API, cada sala de reunião e lista de salas é representada por uma instância de [emailAddress](../resources/emailaddress.md). Você pode [ver todas as listas de salas](user-findroomlists.md) no locatário, obter todas as salas no locatário ou todas as salas em uma lista de salas específica. É possível ter acesso até as primeiras 100 salas do locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,8 +43,8 @@ Para ver todas as salas em uma lista de salas específicas do locatário:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/findRooms(RoomList='{room_list}')
-GET /users/<id>/findRooms(RoomList='{room_list}')
+GET /me/findRooms(RoomList='{room_list_emailAddress}')
+GET /users/<id>/findRooms(RoomList='{room_list_emailAddress}')
 ```
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
@@ -65,14 +65,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [emailAddress](../resources/emailaddress.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [emailAddress](../resources/emailaddress.md) no corpo da resposta.
 
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request-1"></a>Solicitação 1
 
-O primeiro exemplo obtém todas as salas definidas no locatário do usuário conectado.
+O primeiro exemplo obtém os objetos [emailAddress](../resources/emailaddress.md) que representam todas as salas definidas no locatário do usuário conectado.
 
 <!-- {
   "blockType": "request",
@@ -140,7 +140,7 @@ Content-type: application/json
 
 ##### <a name="request-2"></a>Solicitação 2
 
-O segundo exemplo recebe as salas na lista de salas especificada identificada pelo endereço de email Building2Rooms@contoso.onmicrosoft.com.
+O segundo exemplo obtém os objetos [emailAddress](../resources/emailaddress.md) que representam as salas na lista de salas especificadas, identificadas pelo endereço de email Building2Rooms@contoso.onmicrosoft.com.
 
 <!-- {
   "blockType": "request",
