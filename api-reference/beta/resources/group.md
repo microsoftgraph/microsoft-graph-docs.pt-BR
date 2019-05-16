@@ -1,21 +1,21 @@
 ---
 title: tipo de recurso de grupo
-description: Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo do Office 365, uma equipe no Microsoft Teams, um grupo dinâmico ou um grupo de segurança.
+description: Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo do Office 365, uma equipe do Microsoft Teams ou um grupo de segurança.
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e5f369e1c95e13cb4b4c16aa3317e78c33c5d601
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cc8d3b724b42827c568377b1f4d83d6c4513414a
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340187"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036504"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo do Office 365, uma equipe no Microsoft Teams, um grupo dinâmico ou um grupo de segurança.
+Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo do Office 365, uma equipe do Microsoft Teams ou um grupo de segurança. Herda de [directoryObject](directoryobject.md).
 
 Por motivos de desempenho, as operações [create](../api/group-post-groups.md), [get](../api/group-get.md) e [list](../api/group-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades _padrão_ estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. Veja um [exemplo](../api/group-get.md#request-2).
 
@@ -110,15 +110,15 @@ Esse recurso permite:
 |description|String|Uma descrição opcional para o grupo. <br><br>Retornado por padrão.|
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante as atualizações. <br><br>Retornado por padrão. Oferece suporte a $filter e $orderby. |
 |expirationDateTime|DateTimeOffset| Data e hora de quando o grupo está configurado para expirar. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. |
-|groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo a ser criado. Os valores possíveis são `Unified` para criar um grupo do Office 365 ou `DynamicMembership` para grupos dinâmicos.  Para todos os outro tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade. <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver `Unified`, o grupo será um grupo do Office 365; caso contrário, será um grupo de segurança.  <br><br>Se a coleção inclui `DynamicMembership`, o grupo tem associação dinâmica; caso contrário, a associação é estática.  <br><br>Retornado por padrão. Oferece suporte a $filter.|
 |hasMembersWithLicenseErrors|Boolean| Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Essa propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é **true**). Veja um [exemplo](../api/group-list.md#request-2).|
 |id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas de email. O valor padrão é **true**. <br><br>Retornado apenas em $select. |
 |licenseProcessingState|String|Indica o status da atribuição de licença de grupo para todos os membros do grupo. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress` e `ProcessingComplete`. <br><br>Retornado apenas em $select. Somente leitura. |
 |email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
-|mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange. <br><br>Retornado por padrão.|
+|mailEnabled|Boolean|Especifica se o grupo está habilitado para email. <br><br>Retornado por padrão.|
 |mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. <br><br>Retornado por padrão. Oferece suporte a $filter.|
-|membershipRule|String|A regra que determina membros para esse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para saber mais sobre a sintaxe da regra de associação, confira [sintaxe regras de associação](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Retornado por padrão. |
+|membershipRule|String|A regra que determina membros para esse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para saber mais sobre a sintaxe da regra de associação, confira [sintaxe regras de associação](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Retornado por padrão. |
 |membershipRuleProcessingState|String|Indica se o processamento de associação dinâmica está ativado ou em pausa. Valores possíveis são "On" ou "Paused". <br><br>Retornado por padrão. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o grupo foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
 |onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br><br>Retornado por padrão.|
@@ -128,7 +128,7 @@ Esse recurso permite:
 |preferredLanguage|String|O idioma preferencial para um grupo do Office 365. Deve seguir o código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/grouplifecyclepolicy-renewgroup.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura.|
-|securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também for true, o grupo será um de segurança habilitado para email; caso contrário, será um grupo de segurança. Deve ser **false** para grupos do Office 365. <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. <br><br>Retornado por padrão. Oferece suporte a $filter.|
 |tema|String|Especifica o tema de cor de um grupo Office 365. Os valores possíveis são: `Teal`, `Purple`, `Green`, `Blue`,`Pink`, `Orange` ou `Red`. <br><br>Retornado por padrão. |
 |unseenConversationsCount|Int32|Contagem de conversas que receberam uma ou mais novas postagens desde a última visita do usuário conectado ao grupo. Essa propriedade é igual a **unseenCount**. <br><br>Retornado apenas em $select.|
 |unseenCount|Int32|Contagem das conversas que receberam novas postagens desde que o usuário conectado visitou o grupo pela última vez. Essa propriedade é igual a **unseenConversationsCount**.<br><br>Retornado apenas em $select. |

@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto group.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: be6ecbe4a46757bae88e93e75eb6be86563059e6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: adb66a65fa3c8612952b990e17922055d4d0984d
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036364"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -48,17 +48,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |allowExternalSenders|Boolean|O padrão é **false**. Indica se as pessoas externas à empresa podem enviar mensagens para o grupo.|
 |autoSubscribeNewMembers|Boolean|O padrão é **false**. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email.|
 |description|String|Uma descrição opcional para o grupo. |
-|displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
-|groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo a ser criado. Os valores possíveis são **Unified** para criar um grupo do Office 365 ou **DynamicMembership** para grupos dinâmicos.  Para todos os outro tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade.|
-|mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange.|
-|mailNickname|String|O alias de email do grupo. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter.|
-|securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também é true, o grupo é um grupo de segurança habilitado para email; caso contrário, é um grupo de segurança. Deve ser **false** para grupos do Office 365. Oferece suporte a $filter.|
+|displayName|Cadeia de caracteres|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. |
+|groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver **Unificado** o grupo será um grupo do Office 365; caso contrário, será um grupo de segurança.  <br><br>Se a coleção incluir **DynamicMembership**, o grupo tem associação dinâmica; caso contrário, a associação é estática. |
+|mailEnabled|Boolean|Especifica se o grupo está habilitado para email.|
+|mailNickname|String|O alias de email do grupo. Essa propriedade deve ser especificada quando um grupo é criado. |
+|securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. |
 |visibility|String|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **Privado**, **Público** ou vazio (que é interpretado como **Público**).|
 
 > **Observação:**
 >
 > - Você pode atualizar o **autoSubscribeNewMembers** especificando-o em sua própria solicitação de PATCH, sem incluir as outras propriedades na tabela acima.
 > - Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes).
+> - As regras para atualizar os grupos de segurança habilitados para email no Microsoft Exchange Server podem ser complexas; Para saber mais, confira [Gerenciar grupos de segurança habilitados para email no Exchange Server](https://docs.microsoft.com/pt-BR/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
+
 
 ## <a name="response"></a>Resposta
 
@@ -66,7 +68,9 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+O exemplo a seguir mostra como criar um grupo.
+
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 <!-- {
@@ -91,7 +95,7 @@ Content-length: 211
 }
 ```
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 

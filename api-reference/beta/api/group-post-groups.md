@@ -1,24 +1,23 @@
 ---
 title: Criar grupo
-description: 'Use esta API para criar um novo grupo, conforme especificado no corpo da solicitação. Você pode criar um dos três tipos de grupos:'
+description: Crie um novo grupo ou grupo de segurança do Office 365.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: fca67796786bfc5a0268eef1b6bdd7262173a65c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0fc20f2882c57e336c36ca3bc73dad6b549b79de
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592657"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036343"
 ---
 # <a name="create-group"></a>Criar grupo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo [grupo](../resources/group.md), conforme especificado no corpo da solicitação. Você pode criar um dos três tipos de grupos:
+Crie um novo [grupo](../resources/group.md) conforme especificado no corpo da solicitação. Você pode criar um dos seguintes grupos:
 
 * Grupo do Office 365 (grupo unificado)
-* Grupo dinâmico
 * Grupo de segurança
 
 Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties).
@@ -37,35 +36,32 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 A tabela a seguir mostra as propriedades do recurso [group](../resources/group.md) que você deve especificar quando criar um grupo. 
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | displayName | string | O nome para exibição no catálogo de endereços do grupo. Obrigatório. |
-| mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Defina isto como **true**, se estiver criando um Grupo do Office 365. Defina como **false**, se estiver criando um grupo dinâmico ou de segurança. Obrigatório. |
+| mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
 | mailNickname | string | O alias de email do grupo. Obrigatório. |
-| securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança. Defina isto como **true**, se estiver criando um grupo dinâmico ou de segurança. Defina isto como **false**, se estiver criando um Grupo do Office 365. Obrigatório. |
-| owners | coleção de cadeias de caracteres | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
-| membros | coleção de cadeias de caracteres | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
+| securityEnabled | booliano | Defina como **verdadeiro** para grupos ativados por segurança, incluindo grupos do Office 365. Obrigatório. |
+| owners | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
+| membros | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
 
-Especifique a propriedade **groupTypes** se estiver criando um grupo do Office 365 ou um grupo dinâmico, conforme descrito a seguir.
-
-| Tipo de grupo | Propriedade **groupTypes** |
-|:--------------|:------------------------|
-| Office 365 (também conhecido como grupo unificado)| "Unified" |
-| Dinâmica | "DynamicMembership" |
-| Segurança | Não defina. |
+> Observação: os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** e **mailEnabled** definidos inicialmente como `true`.
 
 Como o recurso **group** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados para o grupo ao criá-lo.
 
@@ -73,17 +69,32 @@ Como o recurso **group** dá suporte a [extensions](/graph/extensibility-overvie
 
 Especifique outras propriedades graváveis conforme necessário para o grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
 
+### <a name="grouptypes-options"></a>Opções de groupTypes
+
+Use a propriedade **groupTypes** para controlar o tipo de grupo e sua associação, conforme mostrado abaixo:
+
+| Tipo de grupo | Associação atribuída | Associação dinâmica |
+|:--------------|:------------------------|:---------------|
+| Office 365 (também conhecido como grupo unificado)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Dinâmica | `[]` (_null_) | `["DynamicMembership"]`|
+
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [group](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão do grupo.
 
-## <a name="example"></a>Exemplo
-#### <a name="request-1"></a>Solicitação 1
-A primeira solicitação de exemplo cria um Grupo do Office 365.
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-create-an-office-365-group"></a>Exemplo 1: criando um grupo do Office 365
+
+O exemplo a seguir cria um grupo do Office 365.
+
+#### <a name="request"></a>Solicitação
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
 Content-length: 244
@@ -101,15 +112,18 @@ Content-length: 244
 ```
 
 #### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
+
 >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades padrão serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -146,7 +160,7 @@ Content-type: application/json
      "onPremisesProvisioningErrors": []
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_group-Cs-snippets.md)]
 
@@ -157,13 +171,17 @@ Content-type: application/json
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-2"></a>Solicitação 2
-A segunda solicitação de exemplo cria um Grupo do Office 365 com um proprietário especificado.
+### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a>Exemplo 2: criando um grupo do Office 365 com um proprietário e membros
+
+O exemplo a seguir cria um grupo do Office 365 com um proprietário e membros especificados.
+
+#### <a name="request"></a>Solicitação
+
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
@@ -186,16 +204,19 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta 
+
 Veja a seguir o exemplo de uma resposta bem-sucedida. Ele inclui apenas propriedades padrão. Posteriormente, você pode acessar as propriedades de navegação de grupo **proprietários** ou **membros** para verificar o proprietário ou membros. 
+
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades padrão serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -229,7 +250,7 @@ Content-type: application/json
     "onPremisesProvisioningErrors": []
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_prepopulated_group-Cs-snippets.md)]
 
