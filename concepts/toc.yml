@@ -79,11 +79,9 @@ items:
             href: cross-device-concept-overview.md
           - name: Feed de atividades
             href: activity-feed-concept-overview.md
-          - name: Retransmissão de dispositivo (visualização)
+          - name: Retransmissão de dispositivo (prévia)
             href: device-relay-concept-overview.md
-          - name: Notificações (visualização)
-            href: notifications-concept-overview.md
-          - name: Criar aplicativos entre dispositivos
+          - name: Crie aplicativos entre dispositivos
             href: cross-device-app-configuration.md
       - name: Reserva de clientes (visualização)
         href: booking-concept-overview.md
@@ -166,6 +164,28 @@ items:
             href: onenote-branding.md
           - name: Códigos de erro
             href: onenote-error-codes.md
+      - name: Notificações (visualização)
+        displayName: Notifications
+        items:
+          - name: Visão Geral
+            href: notifications-concept-overview.md
+          - name: Introdução
+            displayName: Notifications
+            items:
+              - name: Visão Geral
+                href: notifications-integration-e2e-overview.md
+              - name: Registro de aplicativo
+                href: notifications-integration-app-registration.md
+              - name: Integração em dispositivos cruzados
+                href: notifications-integration-cross-device-experiences-onboarding.md
+              - name: Integração do servidor de aplicativos
+                href: notifications-integrating-app-server.md
+              - name: Integração de aplicativos do Windows
+                href: notifications-integrating-with-windows.md
+              - name: Integração de aplicativos Android
+                href: notifications-integrating-with-android.md
+              - name: Integração de aplicativos IOS
+                href: notifications-integrating-with-ios.md
       - name: Contatos pessoais
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
