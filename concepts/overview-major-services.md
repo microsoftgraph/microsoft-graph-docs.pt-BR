@@ -3,12 +3,12 @@ title: Principais serviços e recursos do Microsoft Graph
 description: 'O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8908b53754f9a8775cb1f29e3e86ec04f3abacff
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: c8d7a209744eade704432c2c93561d4e60070ec1
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036553"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083250"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -101,7 +101,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
-| Notificações do usuário | Notificações do usuário | Permite que experiências de aplicativos criem experiências de notificação centradas no usuário e em várias plataformas, incluindo fan-out com base no usuário, dispensa universal e acesso ao histórico de notificações. | [Visão geral das experiências entre dispositivos](notifications-concept-overview.md) |
+| Notificações do usuário | Notificações do usuário | Permite que experiências de aplicativos criem experiências de notificação centradas no usuário e em várias plataformas, incluindo fan-out com base no usuário, dispensa universal e acesso ao histórico de notificações. | [Habilitando experiências de notificação centradas no ser humano usando notificações do Microsoft Graph](notifications-concept-overview.md) |
 
 
 ## <a name="usage-reports"></a>Relatórios de uso
