@@ -155,15 +155,17 @@ items:
             href: onenote-extract-data.md
           - name: Usar marcas de anotação
             href: onenote-note-tags.md
-          - name: RECURSOS
-          - name: HTML de entrada e saída
-            href: onenote-input-output-html.md
-          - name: Práticas recomendadas
-            href: onenote-best-practices.md
-          - name: Diretrizes de identidade visual
-            href: onenote-branding.md
-          - name: Códigos de erro
-            href: onenote-error-codes.md
+          - name: Recursos
+            expanded: true
+            items:
+              - name: HTML de entrada e saída
+                href: onenote-input-output-html.md
+              - name: Práticas recomendadas
+                href: onenote-best-practices.md
+              - name: Diretrizes de identidade visual
+                href: onenote-branding.md
+              - name: Códigos de erro
+                href: onenote-error-codes.md
       - name: Notificações (visualização)
         displayName: Notifications
         items:
