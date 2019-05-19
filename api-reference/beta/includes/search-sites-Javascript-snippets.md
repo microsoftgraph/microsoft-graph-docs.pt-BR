@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups')
+let res = await client.api('/sites')
     .version('beta')
     .get();
 
