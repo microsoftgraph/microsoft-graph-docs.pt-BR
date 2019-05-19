@@ -3,8 +3,9 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var educationClass = await graphClient.Education.Classes["11023"]
+await graphClient.Me.Drive.Items["{id}"].Workbook
+    .CloseSession(this)
     .Request()
-    .GetAsync();
+    .PostAsync()
 
 ```
