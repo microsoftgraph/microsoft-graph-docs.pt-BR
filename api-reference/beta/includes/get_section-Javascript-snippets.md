@@ -7,8 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/sites/{site-id}/lists/{list-id}/items/{item-id}')
+let res = await client.api('/me/onenote/sections/{id}')
     .version('beta')
-    .delete();
+    .get();
 
 ```
