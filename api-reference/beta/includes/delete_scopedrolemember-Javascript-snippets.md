@@ -7,8 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups')
+let res = await client.api('/administrativeUnits/{id}/scopedRoleMembers/{id}')
     .version('beta')
-    .get();
+    .delete();
 
 ```

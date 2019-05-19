@@ -7,8 +7,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups')
+const reject = {
+  reason: "none"
+};
+
+let res = await client.api('/app/calls/{id}/reject')
     .version('beta')
-    .get();
+    .post(reject);
 
 ```
