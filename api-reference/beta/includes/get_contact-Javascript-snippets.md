@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/contacts/{id}')
+let res = await client.api('/me/contacts/AAMkAGI2THk0AAA=')
+    .version('beta')
     .get();
 
 ```
