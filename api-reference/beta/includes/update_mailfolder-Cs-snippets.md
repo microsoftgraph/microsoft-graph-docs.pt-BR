@@ -8,7 +8,7 @@ var mailFolder = new MailFolder
     DisplayName = "displayName-value",
 };
 
-await graphClient.Me.MailFolders["{id}"]
+await graphClient.Me.MailFolders["AAMkAGVmMDEzM"]
     .Request()
     .UpdateAsync(mailFolder);
 
