@@ -4,12 +4,12 @@ description: Um evento em um calendário.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 766212a79d4d58e0775ea2af0363e26fe6487f44
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 852384ec4c1dd18216df7f642a7c958c53897280
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333895"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108970"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -83,13 +83,13 @@ Veja a seguir uma representação JSON do recurso
   "subject": "string",
   "type": "String",
   "webLink": "string",
-  
+
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]  
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -104,8 +104,8 @@ Veja a seguir uma representação JSON do recurso
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|A data e a hora em que o evento termina.|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
-|id|String| Somente leitura.|
-|importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|id|Cadeia de caracteres| Identificador exclusivo do evento. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
+|importância|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
 |isOrganizer|Booliano|Defina como true se o remetente da mensagem também for o organizador.|

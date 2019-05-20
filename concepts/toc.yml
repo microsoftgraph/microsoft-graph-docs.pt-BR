@@ -38,10 +38,10 @@ items:
             href: /graph/tutorials/php
           - name: Python
             href: /graph/tutorials/python
-          - name: Ruby
-            href: /graph/tutorials/ruby
           - name: React
             href: /graph/tutorials/react
+          - name: Ruby
+            href: /graph/tutorials/ruby
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -291,6 +291,8 @@ items:
             items:
               - name: Visão Geral
                 href: webhooks.md
+              - name: Tutorial
+                href: /graph/tutorials/change-notifications
               - name: Notificações ausentes do Outlook (versão prévia)
                 href: webhooks-outlook-authz.md
           - name: Controlar alterações

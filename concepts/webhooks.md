@@ -3,18 +3,21 @@ title: Configurar notificações para alterações nos dados de usuário
 description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 7060a1d6f213a413c453725774da8ffeedb1b277
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3bffab081e8f9520890f6bfe7c690b9258cd3dee
+ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575965"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34182087"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
 A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações.
 
 Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia notificações por push para a URL especificada na assinatura. O aplicativo então realiza ações de acordo com sua lógica comercial. Por exemplo, ele busca mais dados, atualiza o cache e as exibições, etc.
+
+> [!div class="nextstepaction"]
+> [Criar um aplicativo webhook com .NET Core](/graph/tutorials/change-notifications)
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
@@ -234,6 +237,7 @@ Repita o procedimento para outras notificações na solicitação.
 
 Os exemplos de código a seguir estão disponíveis no GitHub.
 
+- [Módulo de Treinamento do Microsoft Graph - Usar notificações de alteração e controlar alterações com o Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-changenotifications)
 - [Exemplo de webhooks do Microsoft Graph para Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 - [Exemplo de webhooks do Microsoft Graph para ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 - [Exemplo de webhooks de usuários do Microsoft Graph usando o SDK do WebJobs](https://github.com/microsoftgraph/webjobs-webhooks-sample)
@@ -243,6 +247,7 @@ Os exemplos de código a seguir estão disponíveis no GitHub.
 - [Tipo de recurso de assinatura](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Obter assinatura](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [Alterar tutorial de notificações](/graph/tutorials/change-notifications)
 
 [contato]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversa]: /graph/api/resources/conversation?view=graph-rest-1.0

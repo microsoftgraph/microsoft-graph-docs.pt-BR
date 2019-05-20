@@ -4,18 +4,18 @@ description: 'Um item do Outlook que pode acompanhar um item de trabalho. '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d8dd9c4b87ebe43755ae4ad0ce0dae92de5a9d96
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 819f2e30cce8b284e054a172c69bb1940770bca3
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341698"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34109535"
 ---
 # <a name="outlooktask-resource-type"></a>tipo de recurso outlookTask
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um item do Outlook que pode acompanhar um item de trabalho. 
+Um item do Outlook que pode acompanhar um item de trabalho.
 
 Você pode usar uma tarefa para controlar as datas e horas de conclusão atuais ou anteriores, seu andamento ou status, se são recorrentes ou requerem um lembrete.
 
@@ -28,7 +28,8 @@ As propriedades relacionadas à data no recurso **outlookTask** incluem o seguin
 - reminderDateTime
 - startDateTime
 
-Por padrão, as operações POST, GET, PATCH e [complete](../api/outlooktask-complete.md) retornam as propriedades relacionadas à data em suas respostas REST em UTC. Você pode usar o `Prefer: outlook.timezone` cabeçalho para que todas as propriedades relacionadas às datas como resposta representada em um fuso horário diferente do UTC. O exemplo a seguir retorna propriedades de data no EST na resposta correspondente:
+Por padrão, as operações POST, GET, PATCH e [complete](../api/outlooktask-complete.md) retornam as propriedades relacionadas à data em suas respostas REST em UTC.
+Você pode usar o `Prefer: outlook.timezone` cabeçalho para que todas as propriedades relacionadas às datas como resposta representada em um fuso horário diferente do UTC. O exemplo a seguir retorna propriedades de data no EST na resposta correspondente:
 
 ```
 Prefer: outlook.timezone="Eastern Standard Time"
@@ -62,7 +63,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |hasAttachments|Booliano|Defina como verdadeiro se a tarefa tiver anexos.|
-|id|Cadeia de caracteres|O identificador exclusivo da tarefa. Somente leitura.|
+|id|Cadeia de caracteres| Identificador exclusivo para a tarefa. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
 |importância|cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
@@ -93,7 +94,7 @@ Veja a seguir uma representação JSON do recurso.
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookTask"
 }-->
 

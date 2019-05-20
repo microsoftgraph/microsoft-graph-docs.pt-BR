@@ -4,12 +4,12 @@ description: Uma mensagem em uma pasta da caixa de correio.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f2dd5ec207ed90ccce830fd80d8bfbbded17bea1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0e2a63a8f252b20b42c51605cc9fc3ee787ff210
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342251"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34110637"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -88,9 +88,11 @@ Veja a seguir uma representação JSON do recurso
 }
 
 ```
+
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
+
+| Propriedade | Tipo | Descrição |
+|:---------|:-----|:------------|
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
 |body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto. Saiba mais sobre [HTML seguro no corpo da mensagem](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto. Se a mensagem contiver instâncias de [menção](mention.md), essa propriedade também conteria uma concatenação dessas menções. |
@@ -103,8 +105,8 @@ Veja a seguir uma representação JSON do recurso
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos. Esta propriedade não inclui anexos em linha, portanto, se uma mensagem contém somente anexos em linha, essa propriedade é falsa. Para verificar a existência de anexos em linha, analise a propriedade **body** para procurar um atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
-|id|String|Identificador exclusivo da mensagem (observe que esse valor pode mudar se uma mensagem é movida ou alterada)|
-|importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
+|id|Cadeia de caracteres| Identificador exclusivo da mensagem. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
+|importância|String| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` e `other`.|
 |internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagens definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagens que indicam o caminho de rede adotado por uma mensagem do remetente para o destinatário. Também pode conter cabeçalhos de mensagens personalizados com dados do aplicativo para a mensagem. <br><br> Retornado apenas mediante aplicação da opção de consulta `$select`. Somente leitura.|
 |internetMessageId | String | A ID da mensagem no formato especificado por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Atualizável apenas se **isDraft** for true.|
@@ -126,9 +128,9 @@ Veja a seguir uma representação JSON do recurso
 |unsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  valueTrue se o cabeçalho list-Unsubscribe estiver em conformidade com o rfc-2369.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 
-
 ## <a name="relationships"></a>Relações
-| Relação | Tipo   |Descrição|
+
+| Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [Attachment](attachment.md)|Os anexos [fileAttachment](fileattachment.md) e [itemAttachment](itemattachment.md) da mensagem.|
 |extensions|Coleção [Extension](extension.md)| A coleção de extensões abertas definidas para a mensagem. Anulável.|
@@ -138,8 +140,8 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="methods"></a>Métodos
 
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
+| Método | Tipo de retorno |Descrição|
+|:-------|:------------|:----------|
 |[Listar mensagens](../api/user-list-messages.md) |Coleção [message](message.md) | Obter todas as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). |
 |[Criar mensagem](../api/user-post-messages.md) | [message](message.md) | Criar um rascunho de uma nova mensagem. |
 |[Obter mensagem](../api/message-get.md) | [message](message.md) |Ler propriedades e relações do objeto mensage.|
@@ -172,7 +174,7 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="see-also"></a>Confira também
 
-- [Get mailbox settings](../api/user-get-mailboxsettings.md) 
+- [Get mailbox settings](../api/user-get-mailboxsettings.md)
 - [Atualizar configurações da caixa de correio](../api/user-update-mailboxsettings.md)
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](/graph/delta-query-overview)
 - [Obter as alterações incrementais para as mensagens em uma pasta](/graph/delta-query-messages)

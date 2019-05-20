@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 3dfa65d9c285422351c82a43494aaf524b894685
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: 69dfab3d7c7042ce7c5240f0bb3d58f5d604bdf6
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968839"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108625"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,11 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="may-2019"></a>Maio de 2019
+
+### <a name="directory-apis"></a>APIs de diretório
+| **Tipo de alteração** | **Versão** | **Descrição** |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade **assignedlabels** à entidade do [grupo](https://docs.microsoft.com/pt-BR/graph/api/resources/group?view=graph-rest-beta). Essa propriedade representa a lista de pares de rótulos de confidencialidade (ID do rótulo, nome do rótulo) associados a um grupo.
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 |Tipo de alteração|Versão|Descrição|
@@ -433,7 +438,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionar a nova propriedade `expirationDateTime` para [grupos](https://docs.microsoft.com/en-us/graph/api/group-list-transitivemembers?view=graph-rest-beta) para [grupo vencimento](https://docs.microsoft.com/pt-BR/azure/active-directory/users-groups-roles/groups-lifecycle).|
+| Adição | beta | Adicionar a nova propriedade `expirationDateTime` para [grupos](https://docs.microsoft.com/pt-BR/graph/api/group-list-transitivemembers?view=graph-rest-beta) para [grupo vencimento](https://docs.microsoft.com/pt-BR/azure/active-directory/users-groups-roles/groups-lifecycle).|
 | Adição | beta | Adicionado novo tipo de recurso [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
 | Adição | beta | Adicionada a propriedade `createdDateTime` para o recurso [organization](/graph/api/resources/organization?view=graph-rest-beta).|
 | Adição | v1.0 | Adicionado método `memberOf` para obter uma direta [associação](/graph/api/resources/device?view=graph-rest-1.0) de [dispositivos](/graph/api/device-list-memberOf?view=graph-rest-1.0). Esse método foi adicionado para obter a lista de associações, incluindo associações aninhadas.|
