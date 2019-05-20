@@ -35,6 +35,8 @@ items:
         items:
           - name: Visão Geral
             href: /graph/webhooks?toc=./ref/toc.json
+          - name: Tutorial
+            href: /graph/tutorials/change-notifications
           - name: Notificações ausentes do Outlook (versão prévia)
             href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
       - name: Controlar alterações
@@ -53,7 +55,7 @@ items:
       - name: Adicionar dados personalizados
         displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/extensibility-overview?toc=./ref/toc.json
           - name: Usar extensões abertas (exemplo)
             href: /graph/extensibility-open-users?toc=./ref/toc.json
@@ -641,7 +643,7 @@ items:
                 href: api/calendar-update.md
               - name: Excluir calendário
                 href: api/calendar-delete.md
-              - name: Listar modo de exibição de calendário
+              - name: Listar visão de calendário
                 href: api/calendar-list-calendarview.md
               - name: Modo de exibição Lembrete
                 href: api/user-reminderview.md
@@ -861,7 +863,7 @@ items:
           - name: Moeda da reserva
             href: resources/bookingcurrency.md
             items:
-              - name: Listar
+              - name: Lista
                 href: api/bookingcurrency-list.md
               - name: Obter
                 href: api/bookingcurrency-get.md
@@ -2787,7 +2789,7 @@ items:
               - name: Configuração de VPN do Android
                 href: resources/intune-deviceconfig-androidvpnconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-androidvpnconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidvpnconfiguration-get.md
@@ -2802,7 +2804,7 @@ items:
               - name: Configuração de Wi-Fi do Android
                 href: resources/intune-deviceconfig-androidwificonfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-androidwificonfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -7952,14 +7954,14 @@ items:
               - name: Definições de função
                 href: resources/governanceroledefinition.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/governanceroledefinition-list.md
                   - name: Obter
                     href: api/governanceroledefinition-get.md
               - name: Configurações de função
                 href: resources/governancerolesetting.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/governancerolesetting-list.md
                   - name: Obter
                     href: api/governancerolesetting-get.md
