@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Users["{user-id}"]
+await graphClient.Directory.DeletedItems["{object-id}"]
     .Request()
     .DeleteAsync();
 
