@@ -4,12 +4,12 @@ description: 'Crie um novo grupo conforme especificado no corpo da solicitação
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: baaf76455fefc6e44bf4995854d99baafb713005
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: 792fe5389e7796facd013adb787d43b7052d9519
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036371"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310948"
 ---
 # <a name="create-group"></a>Criar grupo
 Crie um novo grupo conforme especificado no corpo da solicitação. Você pode criar os seguintes tipos de grupos:
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 | owners | coleção de cadeias de caracteres | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
 | membros | coleção de cadeias de caracteres | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
 
-> Observação: Os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** e **mailEnabled** definidos inicialmente como `true`.
+> Observação: os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.
 
 Especifique outras propriedades graváveis conforme necessário para o seu grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
 

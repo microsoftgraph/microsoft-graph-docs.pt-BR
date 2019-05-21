@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 99f556c3585cb9bdda8756d277fb7a0211e583a3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0af2e83628b7bf221159dd0d2610feb808242f1f
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327951"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310990"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph 
 O Microsoft Graph expõe permissões granulares que controlam o acesso de aplicativos a recursos, como usuários, grupos e email. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo solicita. Quando um usuário faz logon **no** seu aplicativo, ele ou, em alguns casos, um administrador, tem a chance de consentir a essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs solicitados. Para aplicativos que não aceitam um usuário conectado, as permissões podem ser previamente autorizadas por um administrador quando o aplicativo é instalado ou durante a inscrição. 
@@ -253,6 +253,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read_ |Ler suas mensagens de bate-papo  |Permite que um aplicativo leia, em seu nome, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Não | Não |
+|_Chat.ReadWrite_ |Leia as suas mensagens de chat e envie novas mensagens   |Permite que um aplicativo leia e envie, em seu nome, suas mensagens de chat individual ou em grupo no Microsoft Teams. |Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 

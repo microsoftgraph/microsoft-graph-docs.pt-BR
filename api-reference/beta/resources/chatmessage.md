@@ -4,12 +4,12 @@ description: Representa uma mensagem de chat individual dentro de uma entidade d
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4c2631d0ba4883160c443000fa2ecb0e1853523d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0639fd0b5317abd4814123b500ec0548f78d05ac
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339837"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34311158"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -50,7 +50,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |importância| string | A importância da mensagem: Normal, Alta.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reações para esta mensagem (por exemplo, Curtir).|
 |localidade|cadeia de caracteres|Local da mensagem definido pelo cliente.|
-
+|webUrl|cadeia de caracteres|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

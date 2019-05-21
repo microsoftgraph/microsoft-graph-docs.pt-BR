@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 69dfab3d7c7042ce7c5240f0bb3d58f5d604bdf6
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.openlocfilehash: 887bcdc17dce733509c2a9763c91a65e46e7c644
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108625"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34311172"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -77,6 +77,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | v1.0       | Adição da Classificação de Segurança das APIs para [API de segurança](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), incluindo os seguintes recursos e operações:<br/>[secureScores](/graph/api/resources/securescore?view=graph-rest-1.0) (e entidades relacionadas)<br/>[Lista secureScores](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[Lista secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[Atualizar secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
+
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionar as propriedades de **webUrl** ao [chat](/graph/api/resources/chatmessage).|
 
 
 ## <a name="april-2019"></a>Abril de 2019
