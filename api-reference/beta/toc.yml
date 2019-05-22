@@ -8973,6 +8973,10 @@ items:
                 href: api/chat-list-messages.md
               - name: Receba uma mensagem no bate-papo
                 href: api/chat-get-message.md
+              - name: Obter Membros no chat
+                href: api/conversationmember-list.md
+              - name: Obter um membro no chat
+                href: api/conversationmember-get.md
           - name: Aplicativos
             href: resources/teamsapp.md
             items:

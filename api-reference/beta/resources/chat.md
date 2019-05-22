@@ -4,12 +4,12 @@ description: Um chat é uma coleção de chatMessages entre um ou mais participa
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1091021235a50d3dfa237467e319da9b131b7a72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4d0f1009079c4994814385ae8758af6c211f17a2
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339710"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344973"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -22,9 +22,11 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 |  Método       |  Tipo de retorno  | Descrição| 
 |:---------------|:--------|:----------|
 |[Listar chats](../api/chat-list.md) | coleção [chat](channel.md) | Obter a lista de chats de que um usuário faz parte.|
-|[Obter chat](../api/chat-get.md) | [chat](channel.md) | Leia as propriedades e as relações do chat.|
-|[Listar mensagens em um chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obter mensagens em um bate-papo de grupo ou 1:1. |
-|[Obter mensagem no chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Obter uma única mensagem em um chat. |
+|[Obter bate-papo](../api/chat-get.md) | [chat](channel.md) | Leia as propriedades e as relações do chat.|
+|[Listar membros de chat](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Obtenha a lista de todos os usuários no chat.|
+|[Obter membro de chat](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obtenha um único usuário no chat.|
+|[Listar mensagens em um bate-papo](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. |
+|[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -38,6 +40,7 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+| membros | coleção [conversationMember](conversationmember.md) | Uma coleção de todas as pessoas no chat. Anulável. |
 | messages | [chatMessage](chatmessage.md) collection | Uma coleção de todas as mensagens no chat. Anulável. |
 
 ## <a name="json-representation"></a>Representação JSON
