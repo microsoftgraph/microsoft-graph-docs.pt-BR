@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: obter um arquivo ou uma pasta
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 9cff51558f84556fc05c69164ba48809acc12fa8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dcca3963e5b5b2f808469f9d478811b22291877f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548023"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33617211"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 
@@ -106,6 +106,16 @@ Content-type: application/json
   "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-drive-root-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-drive-root-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Comentários
 
@@ -121,5 +131,9 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item"
+  "tocPath": "Items/Get item",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

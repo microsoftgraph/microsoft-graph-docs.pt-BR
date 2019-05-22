@@ -3,12 +3,12 @@ title: tipo de recurso oneDriveUsageAccountDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c13e03d1170b0ebbc53394541c4564c60c67e78
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcf75fad8c39a543e69fc378546a2621f24eaeab
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563541"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344924"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>tipo de recurso oneDriveUsageAccountDetail
 
@@ -19,6 +19,7 @@ ms.locfileid: "32563541"
 | reportRefreshDate       | Data    |
 | siteUrl                 | String  |
 | ownerDisplayName        | String  |
+| ownerPrincipalName      | String  |
 | isDeleted               | Booliano |
 | lastActivityDate        | Data    |
 | Contagem de FileCount               | Int64   |
@@ -41,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "reportRefreshDate": "Date", 
   "siteUrl": "String", 
   "ownerDisplayName": "String", 
+  "ownerPrincipalName": "String", 
   "isDeleted": true, 
   "lastActivityDate": "Date", 
   "fileCount": 1024, 
