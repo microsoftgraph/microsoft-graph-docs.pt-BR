@@ -1,33 +1,40 @@
-
-```Cs
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: cad2313629109debe5d0886cccd9f3f21f1fe032
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34465675"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var vendorInformation = new SecurityVendorInformation
-{
-    Provider = "String",
-    Vendor = "String",
-};
-
-var tagsList = new List<String>();
-tagsList.Add( "String" );
-
-var commentsList = new List<String>();
-commentsList.Add( "String" );
 
 var alert = new Alert
 {
     AssignedTo = "String",
     ClosedDateTime = "String (timestamp)",
-    Comments = commentsList,
+    Comments = new List<String>()
+    {
+        "String"
+    },
     Feedback = AlertFeedback.Unknown,
     Status = AlertStatus.Unknown,
-    Tags = tagsList,
-    VendorInformation = vendorInformation,
+    Tags = new List<String>()
+    {
+        "String"
+    },
+    VendorInformation = new SecurityVendorInformation
+    {
+        Provider = "String",
+        Vendor = "String"
+    }
 };
 
 await graphClient.Security.Alerts["{alert_id}"]
     .Request()
+    .Header("Prefer","return=representation")
     .UpdateAsync(alert);
 
 ```
