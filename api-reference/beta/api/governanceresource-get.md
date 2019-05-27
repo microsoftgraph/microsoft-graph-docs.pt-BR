@@ -2,12 +2,12 @@
 title: Obter Entidadegovernanceresource
 description: Recupere as propriedades e os relacionamentos de um objeto Entidadegovernanceresource.
 localization_priority: Normal
-ms.openlocfilehash: 30c5c5404e11ba5394c306c8d6196cdf58954d25
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 346ebe770b12d9a66c77951521e59b453fbc8ea6
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329613"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422427"
 ---
 # <a name="get-governanceresource"></a>Obter Entidadegovernanceresource
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
+|Aplicativo | Sem suporte. |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 
