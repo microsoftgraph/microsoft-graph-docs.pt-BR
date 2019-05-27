@@ -4,63 +4,63 @@ description: Use esta API para criar um novo convite. O convite adiciona um usu�
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 44b1cb9524b2a41fe354a88e8632f3aba473c683
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 03e799f10e358013477a15205a401681dd3f744b
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613413"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34461591"
 ---
-# <a name="create-invitation"></a><span data-ttu-id="8a560-104">Criar convite</span><span class="sxs-lookup"><span data-stu-id="8a560-104">Create invitation</span></span>
+# <a name="create-invitation"></a><span data-ttu-id="4502d-104">Criar convite</span><span class="sxs-lookup"><span data-stu-id="4502d-104">Create invitation</span></span>
 
-<span data-ttu-id="8a560-p102">Use essa API para criar um novo [convite](../resources/invitation.md). O convite adiciona um usuário externo à organização.</span><span class="sxs-lookup"><span data-stu-id="8a560-p102">Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.</span></span>
+<span data-ttu-id="4502d-p102">Use essa API para criar um novo [convite](../resources/invitation.md). O convite adiciona um usuário externo à organização.</span><span class="sxs-lookup"><span data-stu-id="4502d-p102">Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.</span></span>
 
-<span data-ttu-id="8a560-107">Ao criar um novo convite, você tem várias opções disponíveis:</span><span class="sxs-lookup"><span data-stu-id="8a560-107">When creating a new invitation you have several options available:</span></span>
+<span data-ttu-id="4502d-107">Ao criar um novo convite, você tem várias opções disponíveis:</span><span class="sxs-lookup"><span data-stu-id="4502d-107">When creating a new invitation you have several options available:</span></span>
 
-1. <span data-ttu-id="8a560-p103">À criação do convite, o Microsoft Graph pode enviar automaticamente um email de convite diretamente ao usuário convidado, ou seu aplicativo pode usar o *inviteRedeemUrl* retornado na resposta da criação para articular o seu próprio convite (por meio de seu mecanismo de comunicação de preferência) para o usuário convidado. Se você decidir fazer com que o Microsoft Graph envie um email de convite automaticamente, poderá controlar o conteúdo e o idioma do email usando [ *invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span><span class="sxs-lookup"><span data-stu-id="8a560-p103">On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span></span>
-2. <span data-ttu-id="8a560-p104">Quando o usuário é convidado, uma entidade de usuário (do userType Convidado) é criada e, agora, pode ser usada para o controle do acesso aos recursos. O usuário convidado precisa passar pelo processo de resgate para acessar os recursos para os quais ele foi convidado.</span><span class="sxs-lookup"><span data-stu-id="8a560-p104">When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.</span></span>
+1. <span data-ttu-id="4502d-p103">À criação do convite, o Microsoft Graph pode enviar automaticamente um email de convite diretamente ao usuário convidado, ou seu aplicativo pode usar o *inviteRedeemUrl* retornado na resposta da criação para articular o seu próprio convite (por meio de seu mecanismo de comunicação de preferência) para o usuário convidado. Se você decidir fazer com que o Microsoft Graph envie um email de convite automaticamente, poderá controlar o conteúdo e o idioma do email usando [ *invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span><span class="sxs-lookup"><span data-stu-id="4502d-p103">On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span></span>
+2. <span data-ttu-id="4502d-p104">Quando o usuário é convidado, uma entidade de usuário (do userType Convidado) é criada e, agora, pode ser usada para o controle do acesso aos recursos. O usuário convidado precisa passar pelo processo de resgate para acessar os recursos para os quais ele foi convidado.</span><span class="sxs-lookup"><span data-stu-id="4502d-p104">When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8a560-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="8a560-112">Permissions</span></span>
-<span data-ttu-id="8a560-p105">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a560-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4502d-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="4502d-112">Permissions</span></span>
+<span data-ttu-id="4502d-p105">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4502d-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="8a560-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8a560-115">Permission type</span></span>      | <span data-ttu-id="8a560-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8a560-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4502d-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4502d-115">Permission type</span></span>      | <span data-ttu-id="4502d-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4502d-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8a560-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8a560-117">Delegated (work or school account)</span></span> | <span data-ttu-id="8a560-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a560-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8a560-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8a560-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8a560-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8a560-120">Not supported.</span></span>    |
-|<span data-ttu-id="8a560-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8a560-121">Application</span></span> | <span data-ttu-id="8a560-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a560-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="4502d-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4502d-117">Delegated (work or school account)</span></span> | <span data-ttu-id="4502d-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4502d-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4502d-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4502d-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4502d-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4502d-120">Not supported.</span></span>    |
+|<span data-ttu-id="4502d-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4502d-121">Application</span></span> | <span data-ttu-id="4502d-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4502d-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8a560-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8a560-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4502d-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4502d-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
-## <a name="request-headers"></a><span data-ttu-id="8a560-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8a560-124">Request headers</span></span>
-| <span data-ttu-id="8a560-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="8a560-125">Header</span></span>       | <span data-ttu-id="8a560-126">Valor</span><span class="sxs-lookup"><span data-stu-id="8a560-126">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="4502d-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4502d-124">Request headers</span></span>
+| <span data-ttu-id="4502d-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4502d-125">Header</span></span>       | <span data-ttu-id="4502d-126">Valor</span><span class="sxs-lookup"><span data-stu-id="4502d-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="8a560-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="8a560-127">Authorization</span></span>  | <span data-ttu-id="8a560-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8a560-p106">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="8a560-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8a560-130">Content-Type</span></span>  | <span data-ttu-id="8a560-131">application/json</span><span class="sxs-lookup"><span data-stu-id="8a560-131">application/json</span></span>  |
+| <span data-ttu-id="4502d-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="4502d-127">Authorization</span></span>  | <span data-ttu-id="4502d-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4502d-p106">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="4502d-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4502d-130">Content-Type</span></span>  | <span data-ttu-id="4502d-131">application/json</span><span class="sxs-lookup"><span data-stu-id="4502d-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="8a560-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8a560-132">Request body</span></span>
-<span data-ttu-id="8a560-133">No corpo da solicitação, forneça uma representação JSON do objeto [invitation](../resources/invitation.md).</span><span class="sxs-lookup"><span data-stu-id="8a560-133">In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4502d-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4502d-132">Request body</span></span>
+<span data-ttu-id="4502d-133">No corpo da solicitação, forneça uma representação JSON do objeto [invitation](../resources/invitation.md).</span><span class="sxs-lookup"><span data-stu-id="4502d-133">In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.</span></span>
 
-<span data-ttu-id="8a560-134">A tabela a seguir mostra as propriedades que são necessárias ao criar um convite.</span><span class="sxs-lookup"><span data-stu-id="8a560-134">The following table shows the properties that are required when you create a invitation.</span></span>
+<span data-ttu-id="4502d-134">A tabela a seguir mostra as propriedades que são necessárias ao criar um convite.</span><span class="sxs-lookup"><span data-stu-id="4502d-134">The following table shows the properties that are required when you create a invitation.</span></span>
 
-| <span data-ttu-id="8a560-135">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="8a560-135">Parameter</span></span> | <span data-ttu-id="8a560-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="8a560-136">Type</span></span> | <span data-ttu-id="8a560-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="8a560-137">Description</span></span>|
+| <span data-ttu-id="4502d-135">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="4502d-135">Parameter</span></span> | <span data-ttu-id="4502d-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="4502d-136">Type</span></span> | <span data-ttu-id="4502d-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="4502d-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8a560-138">invitedUserEmailAddress</span><span class="sxs-lookup"><span data-stu-id="8a560-138">invitedUserEmailAddress</span></span> |<span data-ttu-id="8a560-139">string</span><span class="sxs-lookup"><span data-stu-id="8a560-139">string</span></span> | <span data-ttu-id="8a560-140">O endereço de email do usuário que você está convidando.</span><span class="sxs-lookup"><span data-stu-id="8a560-140">The email address of the user you are inviting.</span></span>|
-|<span data-ttu-id="8a560-141">inviteRedirectUrl</span><span class="sxs-lookup"><span data-stu-id="8a560-141">inviteRedirectUrl</span></span> |<span data-ttu-id="8a560-142">string</span><span class="sxs-lookup"><span data-stu-id="8a560-142">string</span></span> |<span data-ttu-id="8a560-143">A URL para a qual o usuário será redirecionado após o resgate.</span><span class="sxs-lookup"><span data-stu-id="8a560-143">The URL that the user will be redirected to after redemption.</span></span>|
+|<span data-ttu-id="4502d-138">invitedUserEmailAddress</span><span class="sxs-lookup"><span data-stu-id="4502d-138">invitedUserEmailAddress</span></span> |<span data-ttu-id="4502d-139">string</span><span class="sxs-lookup"><span data-stu-id="4502d-139">string</span></span> | <span data-ttu-id="4502d-140">O endereço de email do usuário que você está convidando.</span><span class="sxs-lookup"><span data-stu-id="4502d-140">The email address of the user you are inviting.</span></span>|
+|<span data-ttu-id="4502d-141">inviteRedirectUrl</span><span class="sxs-lookup"><span data-stu-id="4502d-141">inviteRedirectUrl</span></span> |<span data-ttu-id="4502d-142">string</span><span class="sxs-lookup"><span data-stu-id="4502d-142">string</span></span> |<span data-ttu-id="4502d-143">A URL para a qual o usuário será redirecionado após o resgate.</span><span class="sxs-lookup"><span data-stu-id="4502d-143">The URL that the user will be redirected to after redemption.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8a560-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="8a560-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4502d-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="4502d-144">Response</span></span>
 
-<span data-ttu-id="8a560-145">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [invitation](../resources/invitation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8a560-145">If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.</span></span>
+<span data-ttu-id="4502d-145">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [invitation](../resources/invitation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4502d-145">If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8a560-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8a560-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8a560-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8a560-147">Request</span></span>
-<span data-ttu-id="8a560-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8a560-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4502d-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4502d-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4502d-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4502d-147">Request</span></span>
+<span data-ttu-id="4502d-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4502d-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
-  "name": "create_user_from_users"
+  "name": "create_invitation_post"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/invitations
@@ -73,8 +73,8 @@ Content-length: 551
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="8a560-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="8a560-149">Response</span></span>
-<span data-ttu-id="8a560-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8a560-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="4502d-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="4502d-149">Response</span></span>
+<span data-ttu-id="4502d-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4502d-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,12 +108,12 @@ Content-length: 551
   "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8a560-153">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="8a560-153">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8a560-154">C#</span><span class="sxs-lookup"><span data-stu-id="8a560-154">C</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
+#### <a name="sdk-sample-code"></a><span data-ttu-id="4502d-153">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="4502d-153">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="4502d-154">C#</span><span class="sxs-lookup"><span data-stu-id="4502d-154">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_invitation_post-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8a560-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="8a560-155">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4502d-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="4502d-155">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_invitation_post-Javascript-snippets.md)]
 
 ---
 
