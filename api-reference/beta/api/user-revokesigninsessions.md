@@ -4,12 +4,12 @@ description: Invalida todos os tokens de atualização do usuário emitidos para
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b28356112cdca6c3f79599224f89bec8a265d84e
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 1221edadd8e69139b28aaf1122409cf311986d6c
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637084"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34453394"
 ---
 # <a name="user-revokesigninsessions"></a>usuário: revokeSignInSessions
 
@@ -19,14 +19,18 @@ Invalida todos os tokens de atualização emitidos para aplicativos para um usu�
 
 Se o aplicativo tentar resgatar um token de acesso delegado para esse usuário usando um token de atualização invalidado, o aplicativo receberá um erro. Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização fazendo uma solicitação para o ponto de extremidade de autorização, que forçará o usuário a entrar.
 
+[!NOTE]
+Após chamar o **revokeSignInSessions**, pode haver um pequeno atraso de alguns minutos antes de os tokens serem revogados.
+
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | User. ReadWrite, Directory. ReadWrite. All, Directory. AccessAsUser. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Aplicativo                            | Directory.ReadWrite.All, Directory.AccessAsUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -67,10 +71,10 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_revokesigninsessionss-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_revokesigninsessionss-Javascript-snippets.md)]
 
 ---
