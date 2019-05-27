@@ -7779,19 +7779,6 @@ items:
                     href: api/riskyusers-confirmcompromised.md
                   - name: Ignorar
                     href: api/riskyusers-dismiss.md
-          - name: Política de estrutura de confiança
-            href: resources/trustframeworkpolicy.md
-            items:
-              - name: Listar
-                href: api/trustframework-list-trustframeworkpolicies.md
-              - name: Criar
-                href: api/trustframework-post-trustframeworkpolicy.md
-              - name: Obter
-                href: api/trustframeworkpolicy-get.md
-              - name: Atualizar
-                href: api/trustframework-put-trustframeworkpolicy.md
-              - name: Excluir
-                href: api/trustframeworkpolicy-delete.md
           - name: Provedor de identidade
             href: resources/identityprovider.md
             items:
@@ -7879,116 +7866,125 @@ items:
               - name: Listar aplicadas ao aplicativo
                 href: api/policy-list-appliesto.md
           - name: Privileged Identity Management
-            href: resources/privilegedidentitymanagement-root.md
             items:
-              - name: Função com privilégios
-                href: resources/privilegedrole.md
+              - name: Privileged Identity Management
+                href: resources/privilegedidentitymanagement-root.md
+              - name: AD do Azure
                 items:
-                  - name: Listar funções com privilégios
-                    href: api/privilegedrole-list.md
-                  - name: Obter função com privilégios
-                    href: api/privilegedrole-get.md
-                  - name: Listar atribuições de função
-                    href: api/privilegedrole-list-assignments.md
-                  - name: Ativar a função Self
-                    href: api/privilegedrole-selfactivate.md
-                  - name: Desativar a função Self
-                    href: api/privilegedrole-selfdeactivate.md
-                  - name: Obter configurações da função
-                    href: api/privilegedrolesettings-get.md
-                  - name: Atualizar configurações da função
-                    href: api/privilegedrolesettings-update.md
-                  - name: Obter resumo da função
-                    href: api/privilegedrolesummary-get.md
-              - name: Atribuição de função com privilégios
-                href: resources/privilegedroleassignment.md
+                  - name: AD do Azure
+                    href: resources/privilegedidentitymanagement-directory.md
+                  - name: Função com privilégios
+                    href: resources/privilegedrole.md
+                    items:
+                      - name: Listar funções com privilégios
+                        href: api/privilegedrole-list.md
+                      - name: Obter função com privilégios
+                        href: api/privilegedrole-get.md
+                      - name: Listar atribuições de função
+                        href: api/privilegedrole-list-assignments.md
+                      - name: Ativar a função Self
+                        href: api/privilegedrole-selfactivate.md
+                      - name: Desativar a função Self
+                        href: api/privilegedrole-selfdeactivate.md
+                      - name: Obter configurações da função
+                        href: api/privilegedrolesettings-get.md
+                      - name: Atualizar configurações da função
+                        href: api/privilegedrolesettings-update.md
+                      - name: Obter resumo da função
+                        href: api/privilegedrolesummary-get.md
+                  - name: Atribuição de função com privilégios
+                    href: resources/privilegedroleassignment.md
+                    items:
+                      - name: Listar atribuições de função
+                        href: api/privilegedroleassignment-list.md
+                      - name: Obter atribuição de função
+                        href: api/privilegedroleassignment-get.md
+                      - name: Criar atribuições de função
+                        href: api/privilegedroleassignment-post-privilegedroleassignments.md
+                      - name: Excluir atribuição de função
+                        href: api/privilegedroleassignment-delete.md
+                      - name: Obter minhas atribuições de função
+                        href: api/privilegedroleassignment-my.md
+                      - name: Tornar a atribuição de função qualificada
+                        href: api/privilegedroleassignment-makeeligible.md
+                      - name: Tornar a atribuição de função permanente
+                        href: api/privilegedroleassignment_makepermanent.md
+                  - name: Solicitação da atribuição de função com privilégios
+                    href: resources/privilegedroleassignmentrequest.md
+                    items:
+                      - name: Listar atribuições de função
+                        href: api/privilegedroleassignmentrequest-list.md
+                      - name: Criar atribuições de função
+                        href: api/privilegedroleassignmentrequest-post.md
+                      - name: Cancelar atribuição de função
+                        href: api/privilegedroleassignmentrequest-cancel.md
+                      - name: Obter minhas atribuições de função
+                        href: api/privilegedroleassignmentrequest-my.md
+                  - name: Aprovação com privilégios
+                    href: resources/privilegedapproval.md
+                    items:
+                      - name: Listar aprovações com privilégios
+                        href: api/privilegedapproval-list.md
+                      - name: Obter aprovação com privilégios
+                        href: api/privilegedapproval-get.md
+                      - name: Atualizar atribuição de função
+                        href: api/privilegedapproval-update.md
+                  - name: Evento de auditoria
+                    href: resources/privilegedoperationevent.md
+                    items:
+                      - name: Listar eventos de auditoria
+                        href: api/privilegedoperationevent-list.md
+              - name: Recursos do Azure
                 items:
-                  - name: Listar atribuições de função
-                    href: api/privilegedroleassignment-list.md
-                  - name: Obter atribuição de função
-                    href: api/privilegedroleassignment-get.md
-                  - name: Criar atribuições de função
-                    href: api/privilegedroleassignment-post-privilegedroleassignments.md
-                  - name: Excluir atribuição de função
-                    href: api/privilegedroleassignment-delete.md
-                  - name: Obter minhas atribuições de função
-                    href: api/privilegedroleassignment-my.md
-                  - name: Tornar a atribuição de função qualificada
-                    href: api/privilegedroleassignment-makeeligible.md
-                  - name: Tornar a atribuição de função permanente
-                    href: api/privilegedroleassignment_makepermanent.md
-              - name: Solicitação da atribuição de função com privilégios
-                href: resources/privilegedroleassignmentrequest.md
-                items:
-                  - name: Listar atribuições de função
-                    href: api/privilegedroleassignmentrequest-list.md
-                  - name: Criar atribuições de função
-                    href: api/privilegedroleassignmentrequest-post.md
-                  - name: Cancelar atribuição de função
-                    href: api/privilegedroleassignmentrequest-cancel.md
-                  - name: Obter minhas atribuições de função
-                    href: api/privilegedroleassignmentrequest-my.md
-              - name: Aprovação com privilégios
-                href: resources/privilegedapproval.md
-                items:
-                  - name: Listar aprovações com privilégios
-                    href: api/privilegedapproval-list.md
-                  - name: Obter aprovação com privilégios
-                    href: api/privilegedapproval-get.md
-                  - name: Atualizar atribuição de função
-                    href: api/privilegedapproval-update.md
-              - name: Evento de auditoria
-                href: resources/privilegedoperationevent.md
-                items:
-                  - name: Listar eventos de auditoria
-                    href: api/privilegedoperationevent-list.md
-              - name: Recursos gerenciados
-                href: resources/governanceresource.md
-                items:
-                  - name: Lista
-                    href: api/governanceresource-list.md
-                  - name: Obter
-                    href: api/governanceresource-get.md
-                  - name: Registrar
-                    href: api/governanceresource-register.md
-              - name: Definições de função
-                href: resources/governanceroledefinition.md
-                items:
-                  - name: Listar
-                    href: api/governanceroledefinition-list.md
-                  - name: Obter
-                    href: api/governanceroledefinition-get.md
-              - name: Configurações de função
-                href: resources/governancerolesetting.md
-                items:
-                  - name: Lista
-                    href: api/governancerolesetting-list.md
-                  - name: Obter
-                    href: api/governancerolesetting-get.md
-                  - name: Atualizar
-                    href: api/governancerolesetting-update.md
-              - name: Atribuições de função
-                href: resources/governanceroleassignment.md
-                items:
-                  - name: Lista
-                    href: api/governanceroleassignment-list.md
-                  - name: Obter
-                    href: api/governanceroleassignment-get.md
-                  - name: Exportar
-                    href: api/governanceroleassignment-export.md
-              - name: Solicitações de atribuição de função
-                href: resources/governanceroleassignmentrequest.md
-                items:
-                  - name: Listar
-                    href: api/governanceroleassignmentrequest-list.md
-                  - name: Criar
-                    href: api/governanceroleassignmentrequest-post.md
-                  - name: Obter
-                    href: api/governanceroleassignmentrequest-get.md
-                  - name: Atualizar
-                    href: api/governanceroleassignmentrequest-update.md
-                  - name: Cancelar
-                    href: api/governanceroleassignmentrequest-cancel.md
+                  - name: Recursos do Azure
+                    href: resources/privilegedidentitymanagement-resources.md
+                  - name: Recursos gerenciados
+                    href: resources/governanceresource.md
+                    items:
+                      - name: Lista
+                        href: api/governanceresource-list.md
+                      - name: Obter
+                        href: api/governanceresource-get.md
+                      - name: Registrar
+                        href: api/governanceresource-register.md
+                  - name: Definições de função
+                    href: resources/governanceroledefinition.md
+                    items:
+                      - name: Lista
+                        href: api/governanceroledefinition-list.md
+                      - name: Obter
+                        href: api/governanceroledefinition-get.md
+                  - name: Configurações de função
+                    href: resources/governancerolesetting.md
+                    items:
+                      - name: Listar
+                        href: api/governancerolesetting-list.md
+                      - name: Obter
+                        href: api/governancerolesetting-get.md
+                      - name: Atualizar
+                        href: api/governancerolesetting-update.md
+                  - name: Atribuições de função
+                    href: resources/governanceroleassignment.md
+                    items:
+                      - name: Lista
+                        href: api/governanceroleassignment-list.md
+                      - name: Obter
+                        href: api/governanceroleassignment-get.md
+                      - name: Exportar
+                        href: api/governanceroleassignment-export.md
+                  - name: Solicitações de atribuição de função
+                    href: resources/governanceroleassignmentrequest.md
+                    items:
+                      - name: Listar
+                        href: api/governanceroleassignmentrequest-list.md
+                      - name: Criar
+                        href: api/governanceroleassignmentrequest-post.md
+                      - name: Obter
+                        href: api/governanceroleassignmentrequest-get.md
+                      - name: Atualizar
+                        href: api/governanceroleassignmentrequest-update.md
+                      - name: Cancelar
+                        href: api/governanceroleassignmentrequest-cancel.md
           - name: Entidade de serviço
             href: resources/serviceprincipal.md
             items:
@@ -8066,6 +8062,19 @@ items:
                 href: api/agreement-delete.md
               - name: Listar status de aceitação
                 href: api/user-list-agreementacceptances.md
+          - name: Política de estrutura de confiança
+            href: resources/trustframeworkpolicy.md
+            items:
+              - name: Listar
+                href: api/trustframework-list-trustframeworkpolicies.md
+              - name: Criar
+                href: api/trustframework-post-trustframeworkpolicy.md
+              - name: Obter
+                href: api/trustframeworkpolicy-get.md
+              - name: Atualizar
+                href: api/trustframework-put-trustframeworkpolicy.md
+              - name: Excluir
+                href: api/trustframeworkpolicy-delete.md
       - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
