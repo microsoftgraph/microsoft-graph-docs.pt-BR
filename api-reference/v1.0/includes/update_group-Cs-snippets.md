@@ -1,19 +1,27 @@
-
-```Cs
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: ea88dd497bff512531bfdf9fb5d635e520fabd08
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34468340"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var groupTypesList = new List<String>();
-groupTypesList.Add( "groupTypes-value" );
 
 var group = new Group
 {
     Description = "description-value",
     DisplayName = "displayName-value",
-    GroupTypes = groupTypesList,
+    GroupTypes = new List<String>()
+    {
+        "groupTypes-value"
+    },
     Mail = "mail-value",
     MailEnabled = true,
-    MailNickname = "mailNickname-value",
+    MailNickname = "mailNickname-value"
 };
 
 await graphClient.Groups["{id}"]
