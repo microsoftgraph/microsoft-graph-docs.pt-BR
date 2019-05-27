@@ -2,12 +2,12 @@
 title: Listar governanceResources
 description: Recupere uma coleção de Entidadegovernanceresource à qual o solicitante tem acesso.
 localization_priority: Normal
-ms.openlocfilehash: e68e4633735d1eecb5d4994e3c2c70bf06a70e6a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fa82ddf97b394af747f73133446c8bc15d21ba36
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593530"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422400"
 ---
 # <a name="list-governanceresources"></a>Listar governanceResources
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PrivilegedAccess. ReadWrite. AzureResources |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -101,10 +101,10 @@ Content-Length: 1289
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_governanceresources-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_governanceresources-Javascript-snippets.md)]
 
 ---

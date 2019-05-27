@@ -2,12 +2,12 @@
 title: Listar governanceRoleAssignments
 description: Recupere uma coleção de governanceRoleAssignments.
 localization_priority: Normal
-ms.openlocfilehash: 1e6d90c50503188e4b75b103f303e74af367081a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ed8ad77fdd2621bc14cad12a34b06836607b3b98
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324191"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422434"
 ---
 # <a name="list-governanceroleassignments"></a>Listar governanceRoleAssignments
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
+|Aplicativo | Sem suporte. |
 
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -4,12 +4,12 @@ description: Use esta API para criar um novo convite. O convite adiciona um usu�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9fafb0b1c9f10e91fe84185a682d7385994af5be
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 498e0861808a1de5a713037b9bbe341e36714903
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33960792"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34453632"
 ---
 # <a name="create-invitation"></a>Criar convite
 
@@ -62,7 +62,7 @@ Se bem-sucedido, este método retorna um código de resposta `201 Created` e um 
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "name": "create_user_from_users"
+  "name": "create_invitation_post"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/invitations
@@ -111,15 +111,16 @@ Content-length: 551
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de amostra do SDK
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
-
 # <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/create_invitation_post-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_invitation_post-Javascript-snippets.md)]
 
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

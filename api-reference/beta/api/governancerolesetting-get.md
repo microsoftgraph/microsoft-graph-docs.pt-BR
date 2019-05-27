@@ -2,12 +2,12 @@
 title: Obter governanceRoleSetting
 description: Recupere as propriedades e os relacionamentos de um governanceRoleSetting.
 localization_priority: Normal
-ms.openlocfilehash: d8d920e9abbe73de573fb41a6b7be76ae9914484
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 988fc237e76c0ec653fff768a617a08d33a6998e
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593439"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422343"
 ---
 # <a name="get-governancerolesetting"></a>Obter governanceRoleSetting
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PrivilegedAccess. ReadWrite. AzureResources |
+|Aplicativo | Sem suporte. |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso ao qual o [governanceRoleSetting](../resources/governancerolesetting.md) pertence.
 ## <a name="http-request"></a>Solicitação HTTP
@@ -113,10 +113,10 @@ Content-length: 370
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_governancerolesetting-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_governancerolesetting-Javascript-snippets.md)]
 
 ---
