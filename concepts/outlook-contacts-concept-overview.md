@@ -4,12 +4,12 @@ description: Os contatos do Outlook permitem que você armazene dados de contato
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6991845e05373a1c874553b8b195f77fb79757b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 241227993a8194d955d0a28f8fcfaf9f946a1e68
+ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555210"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34407076"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Visão geral da API de contatos pessoais do Outlook
 
@@ -33,7 +33,7 @@ A API de contatos permite manter os seus clientes organizados, muito parecido co
 
 ### <a name="share-contact-information"></a>Compartilhar informações de contato
 
-A API de contatos permite que você obtenha os itens de contato do usuário conectado ou dos usuários que compartilharam ou delegaram seus contatos ao usuário conectado. Por exemplo, se Henrique tiver compartilhado uma pasta de contato com Paulo ou tiver delegado acesso a Paulo, as [permissões delegadas](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions) de Paulo também concederão acesso de leitura ao calendário e ao conteúdo que Henrique compartilhou.
+A API de contatos permite que você obtenha os itens de contato do usuário conectado ou dos usuários que compartilharam ou delegaram seus contatos ao usuário conectado. Por exemplo, se Henrique tiver compartilhado uma pasta de contato com Paulo ou tiver delegado acesso a Paulo, as [permissões delegadas](./auth/auth-concepts#microsoft-graph-permissions) de Paulo também concederão acesso de leitura ao calendário e ao conteúdo que Henrique compartilhou.
 
 
 ### <a name="leverage-people-api-in-microsoft-graph-to-make-better-use-of-all-people-data"></a>Utilize a API de pessoas no Microsoft Graph para fazer melhor uso de todos os dados de pessoas

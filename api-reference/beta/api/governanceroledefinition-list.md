@@ -2,12 +2,12 @@
 title: Listar governanceRoleDefinitions
 description: Obtenha uma coleção de governanceRoleDefinitions em um recurso.
 localization_priority: Normal
-ms.openlocfilehash: b79a8c27a6d2c26b5f827d87762f7edc9c0aaf3b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ec648687b70dac37b6775ac1d3d14b3fcd6c7b7e
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324171"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422476"
 ---
 # <a name="list-governanceroledefinitions"></a>Listar governanceRoleDefinitions
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -21,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
+|Aplicativo | Sem suporte. |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 

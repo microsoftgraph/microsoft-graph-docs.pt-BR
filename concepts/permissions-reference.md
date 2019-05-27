@@ -3,30 +3,20 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 0af2e83628b7bf221159dd0d2610feb808242f1f
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: fa1c479a55d6aef5653e06a85cb6f1d4148cea66
+ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34310990"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34407083"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph 
-O Microsoft Graph expõe permissões granulares que controlam o acesso de aplicativos a recursos, como usuários, grupos e email. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo solicita. Quando um usuário faz logon **no** seu aplicativo, ele ou, em alguns casos, um administrador, tem a chance de consentir a essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs solicitados. Para aplicativos que não aceitam um usuário conectado, as permissões podem ser previamente autorizadas por um administrador quando o aplicativo é instalado ou durante a inscrição. 
 
-## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>Permissões delegadas, Permissões de aplicativo e permissões efetivas
-O Microsoft Graph tem dois tipos de permissões: **Permissões delegadas** e **Permissões de aplicativo**. 
+Para que o aplicativo acesse os dados no Microsoft Graph, o usuário ou administrador deve conceder a ele as permissões corretas por meio de um processo de consentimento. Este tópico lista as permissões associadas a cada grande conjunto de APIs do Microsoft Graph. Ele também fornece orientações sobre como usar as permissões. 
 
-- As **Permissões delegadas** são usadas por aplicativos com um usuário conectado. Para eles, o usuário ou um administrador concorda com as permissões que o aplicativo solicita, e o aplicativo tem permissão delegada para atuar como o usuário conectado ao fazer chamadas para o Microsoft Graph. Algumas Permissões delegadas podem ser autorizadas por usuários não administrativos, mas algumas permissões com privilégios mais altos exigem o [consentimento do administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
+Para saber mais sobre como funcionam as permissões, confira [noções básicas de autenticação e autorização](https://docs.microsoft.com/pt-BR/graph/auth/auth-concepts?view=graph-rest-1.0#microsoft-graph-permissions).
 
-- As **Permissões de aplicativo** são usadas por aplicativos sem um usuário conectado. Por exemplo, aplicativos executados como daemonst ou serviços em segundo plano. As Permissões de aplicativo só podem ser [autorizadas por um administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
-
-As _permissões efetivas_ são as permissões que seu aplicativo terá ao fazer solicitações ao Microsoft Graph. É importante compreender a diferença entre as Permissões Delegadas e as Permissões de aplicativo que o aplicativo tem autorização para usar e as respectivas Permissões Efetivas ao fazer chamadas para o Microsoft Graph
-
-- No caso de Permissões Delegadas, as _Permissões Efetivas_ do aplicativo estarão na interseção menos privilegiada das Permissões Delegadas que o aplicativo recebeu (por meio de consentimento) e dos privilégios do usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por exemplo, digamos que o aplicativo recebeu a Permissão Delegada _User.ReadWrite.All_. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
-  
-- No caso de Permissões de aplicativo, as _Permissões Efetivas_ do aplicativo estarão no nível completo de privilégios implícitos da permissão. Por exemplo, um aplicativo que tem a Permissão de aplicativo _User.ReadWrite.All_ pode atualizar o perfil de todos os usuários na organização. 
-
-### <a name="microsoft-graph-permission-names"></a>Nomes de permissões do Microsoft Graph
+## <a name="microsoft-graph-permission-names"></a>Nomes de permissões do Microsoft Graph
 
 Os nomes de permissões do Microsoft Graph seguem um padrão simples: _resource.operation.constraint_. Por exemplo, _User.Read_ concede permissão para ler o perfil do usuário conectado, _User.ReadWrite_ concede permissão para ler e modificar o perfil do usuário conectado e _Mail.Send_ concede permissão para enviar emails em nome do usuário conectado. 
 
@@ -39,15 +29,15 @@ O elemento _constraint_ do nome determina a extensão potencial do acesso que o 
 
 > **Observação**: Em cenários delegados, as permissões efetivas concedidas ao aplicativo podem ser limitadas pelos privilégios do usuário conectado na organização.
 
-### <a name="microsoft-accounts-and-work-or-school-accounts"></a>Contas da Microsoft e contas corporativas e de estudante
+## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Contas da Microsoft e contas corporativas e de estudante
 
-Nem todas as permissões são válidas tanto para contas da Microsoft como para contas corporativas e de estudante. Você pode escolher **Conta de suporte da Microsoft** para cada grupo de permissão para determinar se uma permissão específica é válida para contas da Microsoft, contas corporativas ou de estudante ou ambas. 
+Nem todas as permissões são válidas tanto para contas da Microsoft como para contas corporativas e de estudante. Você pode escolher **Conta de suporte da Microsoft** para cada grupo de permissão para determinar se uma permissão específica é válida para contas da Microsoft, contas corporativas ou de estudante ou ambas.
 
-### <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>Limitações de pesquisa de usuário e grupo para usuários convidados em organizações
+## <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>Limitações de pesquisa de usuário e grupo para usuários convidados em organizações
 
-Os recursos de pesquisa de usuário e grupo permitem que o aplicativo pesquise usuários ou grupos em um diretório da organização executando consultas no conjunto de recursos `/users` ou `/groups` (por exemplo, `https://graph.microsoft.com/v1.0/users`). Os administradores e os usuários têm esse recurso. No entanto, os usuários convidados não. 
+Os recursos de pesquisa de usuário e grupo permitem que o aplicativo pesquise usuários ou grupos em um diretório da organização executando consultas no conjunto de recursos `/users` ou `/groups` (por exemplo, `https://graph.microsoft.com/v1.0/users`). Os administradores e os usuários têm esse recurso. No entanto, os usuários convidados não.
 
-Se o usuário conectado for um usuário convidado, dependendo das permissões que recebeu um aplicativo, ele pode ler o perfil de um usuário específico ou grupo (por exemplo, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`). No entanto, o usuário não pode executar consultas no conjunto de recursos `/users` ou `/groups` que, potencialmente, retornam mais de um recurso. 
+Se o usuário conectado for um usuário convidado, dependendo das permissões que recebeu um aplicativo, ele pode ler o perfil de um usuário específico ou grupo (por exemplo, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`). No entanto, o usuário não pode executar consultas no conjunto de recursos `/users` ou `/groups` que, potencialmente, retornam mais de um recurso.
 
 Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou grupos que ele obtém seguindo os links nas propriedades de navegação. Por exemplo, `/users/{id}/directReports` ou `/groups/{id}/members`.
 
@@ -785,7 +775,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado	
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1227,7 +1217,7 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 
 ## <a name="permission-scenarios"></a>Cenários de permissão
 
-Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário](/graph/api/resources/user?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0) em uma organização. As tabelas mostram as permissões que um aplicativo precisa para conseguir executar operações específicas necessárias para o cenário. Observe que, em alguns casos, a capacidade do aplicativo de executar operações específicas dependerá se uma permissão é uma Permissão de aplicativo ou Permissão Delegada. No caso de Permissões Delegadas, as Permissões Efetivas do aplicativo também dependerão dos privilégios do usuário conectado na organização. Para obter mais informações, confira [Permissões delegadas, Permissões de aplicativo e permissões efetivas](#delegated-permissions-application-permissions-and-effective-permissions).
+Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário](/graph/api/resources/user?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0) em uma organização. As tabelas mostram as permissões que um aplicativo precisa para conseguir executar operações específicas necessárias para o cenário. Observe que, em alguns casos, a capacidade do aplicativo de executar operações específicas dependerá se uma permissão é uma Permissão de aplicativo ou Permissão Delegada. No caso de Permissões Delegadas, as Permissões Efetivas do aplicativo também dependerão dos privilégios do usuário conectado na organização. Para obter mais informações, confira [Permissões delegadas, Permissões de aplicativo e permissões efetivas](./auth/auth-concepts#microsoft-graph-permissions).
 
 ### <a name="access-scenarios-on-the-user-resource"></a>Cenários de acesso do recurso Usuário
 

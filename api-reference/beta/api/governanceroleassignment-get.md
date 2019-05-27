@@ -2,12 +2,12 @@
 title: Obter governanceRoleAssignment
 description: Recupere as propriedades e os relacionamentos de um governanceRoleAssignment.
 localization_priority: Normal
-ms.openlocfilehash: 96499b214216576ce12f27fe448f1da9c7927847
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e2e116baad573c8b99ab278771d1149ea3563209
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329723"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422420"
 ---
 # <a name="get-governanceroleassignment"></a>Obter governanceRoleAssignment
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
