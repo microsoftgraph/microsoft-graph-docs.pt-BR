@@ -1,13 +1,15 @@
-
-```Cs
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: c458b671699e66b0cd32c4117e07f6dd6e74a54f
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34466462"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var body = new ItemBody
-{
-    ContentType = BodyType.Text,
-    Content = "content-value",
-};
 
 var message = new Message
 {
@@ -15,8 +17,12 @@ var message = new Message
     SentDateTime = "2016-10-19T10:37:00Z",
     HasAttachments = true,
     Subject = "subject-value",
-    Body = body,
-    BodyPreview = "bodyPreview-value",
+    Body = new ItemBody
+    {
+        ContentType = BodyType.Text,
+        Content = "content-value"
+    },
+    BodyPreview = "bodyPreview-value"
 };
 
 await graphClient.Me.MailFolders["{id}"].Messages

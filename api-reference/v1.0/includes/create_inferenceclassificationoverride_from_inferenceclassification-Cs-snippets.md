@@ -1,18 +1,24 @@
-
-```Cs
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 29522765be4bbe5b7c35f46a2a0ffa7ca38f3f2c
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34468644"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var senderEmailAddress = new EmailAddress
-{
-    Name = "Samantha Booth",
-    Address = "samanthab@adatum.onmicrosoft.com",
-};
 
 var inferenceClassificationOverride = new InferenceClassificationOverride
 {
     ClassifyAs = InferenceClassificationType.Focused,
-    SenderEmailAddress = senderEmailAddress,
+    SenderEmailAddress = new EmailAddress
+    {
+        Name = "Samantha Booth",
+        Address = "samanthab@adatum.onmicrosoft.com"
+    }
 };
 
 await graphClient.Me.InferenceClassification.Overrides
