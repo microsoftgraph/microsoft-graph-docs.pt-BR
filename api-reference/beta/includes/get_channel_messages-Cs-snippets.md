@@ -1,5 +1,13 @@
-
-```Cs
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: bc23cd3d5428fbd77a022a619c05dc57fbe0afc3
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34473271"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 

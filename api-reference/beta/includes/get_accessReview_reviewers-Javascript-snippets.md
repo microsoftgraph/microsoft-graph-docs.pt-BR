@@ -1,5 +1,13 @@
-
-```Javascript
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 75523fa2ee8308663023fcb03f2b97ae3bfb6d0f
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34474293"
+---
+```javascript
 
 const options = {
     authProvider,
