@@ -4,16 +4,18 @@ description: O calendário do Outlook faz parte do hub de mensagens do Outlook n
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d8894897cc8fd9670314d5cc134a2b351b04b1f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 66b9bee8f7059678a97af6c2571132212dad73dd
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555252"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422490"
 ---
 # <a name="outlook-calendar-api-overview"></a>Visão geral da API do calendário do Outlook
 
 O calendário do Outlook faz parte do hub de mensagens do Outlook no Office 365 que também permite gerenciar emails e contatos, encontrar informações sobre usuários em uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/_ST4nyz4g9E]
 
 ## <a name="why-integrate-with-outlook-calendar"></a>Por que integrar-se com o calendário do Outlook?
 
@@ -27,10 +29,9 @@ Os clientes gostam da forma como o Outlook permite que eles organizem seu tempo 
 
 - No Outlook, os clientes podem criar calendários individuais para fins profissionais, familiares e outros e organizá-los em grupos do calendário. Eles podem ativar o calendário gratuito de **Aniversários** e **Feriados** para lembrá-los dos aniversários e dos feriados locais dos contatos. Eles podem adicionar calendários que correspondam aos seus interesses, como calendários de times esportivos e programas de TV. Os clientes podem escolher e sobrepor calendários e ver seus eventos na mesma visualização. Com a API de calendário, seu aplicativo pode organizar [calendários](/graph/api/resources/calendar?view=graph-rest-1.0) em [grupos de calendários](/graph/api/resources/calendargroup?view=graph-rest-1.0) e interagir com calendários interessantes como qualquer outro **calendário** na caixa de correio do usuário.
 
-- Os clientes do Outlook podem aplicar categorias a eventos, mensagens, contatos, tarefas e postagens de grupo de maneira consistente para melhorar a organização e a recuperação. A API de calendário permite acessar e [definir uma lista mestra de categorias de usuários](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0) que abre outros cenários de criação. Por exemplo, um clube de atletismo pode organizar um torneio esportivo e oferecer um aplicativo que diferencia emails e eventos de cada esporte com sua própria categoria de cor. Para saber as últimas notícias, como alterações de horários imprevistas, o aplicativo também pode definir a propriedade **importance** desses eventos e emails para alertar os clientes.
+- Os clientes do Outlook podem aplicar categorias a eventos, mensagens, contatos, tarefas e postagens de grupo de maneira consistente para aprimorar a organização e a descoberta. A API de calendário permite acessar e [definir uma lista mestra de categorias de usuários](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0) que abre outros cenários de criação. Por exemplo, um clube de atletismo pode organizar um torneio esportivo e oferecer um aplicativo que diferencia emails e eventos de cada esporte com sua própria categoria de cor. Para saber as últimas notícias, como alterações de horários imprevistas, o aplicativo também pode definir a propriedade **importance** desses eventos e emails para alertar os clientes.
 
 - Em uma pasta de calendário, você pode [criar](/graph/api/user-post-events?view=graph-rest-1.0) e [atualizar](/graph/api/event-update?view=graph-rest-1.0) [eventos](/graph/api/resources/event?view=graph-rest-1.0) de instância única ou [agendar e manter eventos recorrentes](outlook-schedule-recurring-events.md). Você pode deixar seus clientes responderem a [solicitações de reunião](/graph/api/resources/eventmessage?view=graph-rest-1.0) e [adiar](/graph/api/event-snoozereminder?view=graph-rest-1.0) ou [dispensar](/graph/api/event-dismissreminder?view=graph-rest-1.0) [lembretes](/graph/api/resources/reminder?view=graph-rest-1.0) usando a propriedade de navegação **event**.
-
 
 ### <a name="help-customers-stay-synchronized-and-navigate-their-day"></a>Ajude os clientes a manterem-se sincronizados e a orientar seu dia de trabalho
 
@@ -47,11 +48,10 @@ A API de calendário ajuda os clientes a orientar seu dia de trabalho e aumentar
 ### <a name="enhance-collaboration"></a>Melhorar a colaboração
 
 - No Outlook, os clientes podem compartilhar calendários com entre eles e conceder permissões para ler, gravar ou excluir conteúdo do calendário. Ou podem delegar um calendário para que outro cliente responda a solicitações de reunião em nome deles. De forma programática, embora não seja possível iniciar uma ação de compartilhamento ou delegação em nome de um usuário, você pode usar um conjunto de propriedades para verificar o status de compartilhamento e habilitar cenários em torno de calendários compartilhados ou delegados: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared** e **isSharedWithMe**.
-- A API de calendário permite que você receba itens de calendário do usuário conectado ou de usuários que compartilharam ou delegaram seus calendários ao usuário conectado. Por exemplo, se Henrique tiver compartilhado um calendário com Davi ou tiver delegado acesso a Davi, as [permissões delegadas](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions) de Davi também concederão acesso de leitura ao calendário e ao conteúdo que Henrique compartilhou.
+- A API de calendário permite que você receba itens de calendário do usuário conectado ou de usuários que compartilharam ou delegaram seus calendários ao usuário conectado. Por exemplo, se Henrique tiver compartilhado um calendário com Davi ou tiver delegado acesso a Davi, as [permissões delegadas](auth/auth-concepts.md#microsoft-graph-permissions) de Davi também concederão acesso de leitura ao calendário e ao conteúdo que Henrique compartilhou.
 - ** Os grupos do Office 365 permitem que os membros do grupo colaborem e acessem conversas e calendários de grupo diretamente no Outlook de forma prática. Além de algumas pequenas diferenças entre os calendários de grupo e os calendários de usuários, a API de calendário permite que você interaja com os calendários de grupo da mesma forma que interagiria com os calendários de usuários. Confira o recurso [calendário](/graph/api/resources/calendar?view=graph-rest-1.0) para saber mais.
 
 ** Indica recursos especificamente aplicáveis a calendários do Outlook em contas corporativas ou de estudante.
-
 
 ### <a name="schedule-smart"></a>Agendar de forma inteligente
 
@@ -62,7 +62,6 @@ O Outlook e a API de calendário oferecem muitas conveniências inteligentes par
 - ** Você pode [consultar informações de disponibilidade de usuários e recurso](outlook-get-free-busy-schedule.md) por um período de tempo específico. Depois, pode aplicar esses dados a cenários diferentes, incluindo o planejamento de recursos e agendamento de eventos.
 - ** Se o seu cenário envolver o agendamento de reuniões em horários ideais, considere o [uso de findMeetingTimes para identificar horários ou locais possíveis para a reunião](findmeetingtimes-example.md). A função [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) considera o status de disponibilidade dos participantes e as salas, horários e outras restrições que você tenha marcado como preferencial. Se a primeira tentativa não retornar um horário de reunião comum, verifique o motivo, ajuste seus critérios e chame **findMeetingTimes** novamente.
 
-
 ### <a name="teleconference-across-multiple-locations-and-time-zones"></a>Teleconferência em vários locais e fusos horários
 
 Com a globalização, as atuais reuniões de negócios geralmente envolvem participantes de diferentes locais e fusos horários. Veja aqui como você pode usar o API de calendário para gerenciar essas reuniões:
@@ -71,7 +70,6 @@ Com a globalização, as atuais reuniões de negócios geralmente envolvem parti
 - O Outlook oferece aos clientes a flexibilidade de organizar eventos e especificar um fuso horário para cada um dos horários de início e término de um evento. Para oferecer suporte a essa flexibilidade, por padrão, a API de calendário retorna os horários de **início** e **término** de um **evento** em UTC e oferece as propriedades **originalStartTimeZone** e **originalEndTimeZone** para observar os fusos horários usados quando o evento foi criado.
 - Como alternativa, você pode especificar o cabeçalho `Prefer: outlook.timezone="{time zone name}"` para que uma operação de evento GET retorne **início** e **término** no fuso horário especificado. O nome do fuso horário pode ser qualquer um dos nomes compatíveis com o Windows e, também, os nomes nesta [lista](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). Confira um [exemplo](/graph/api/event-get?view=graph-rest-1.0#request-1) de cabeçalho `Prefer` em uso.
 
-
 ### <a name="take-advantage-of-social-intelligence-and-other-developer-conveniences-in-microsoft-graph"></a>Aproveite a inteligência social e outras conveniências de desenvolvedor no Microsoft Graph
 
 Use a [API de pessoas](people-example.md) no Microsoft Graph para conectar-se a [dados de pessoas](/graph/api/resources/person?view=graph-rest-1.0) que são baseados nos padrões de comunicação e colaboração de um usuário e nas relações comerciais. Você pode implementar controles, como um seletor de pessoas, e sugerir pessoas relevantes para o usuário ao organizar reuniões em nome do usuário.
@@ -79,11 +77,11 @@ Use a [API de pessoas](people-example.md) no Microsoft Graph para conectar-se a 
 Economize custos indiretos ao armazenar e gerenciar dados de aplicativos em armazenamentos de dados externos. Com o Microsoft Graph, você pode armazenar dados de aplicativos personalizados como [extensões abertas](extensibility-overview.md#open-extensions) em instâncias de recursos individuais. Se você precisar que os dados sejam digitados ou gostaria de poder compartilhar o esquema digitado, poderá armazenar dados de aplicativos personalizados em [extensões de esquema](extensibility-overview.md#schema-extensions).
 
 ## <a name="api-reference"></a>Referência da API
+
 Está procurando a referência de API para esse serviço?
 
 - [API do Calendário do Outlook no Microsoft Graph v1.0](/graph/api/resources/calendar?view=graph-rest-1.0)
 - [API do Calendário do Outlook no Microsoft Graph beta](/graph/api/resources/calendar?view=graph-rest-beta)
-
 
 ## <a name="next-steps"></a>Próximas etapas
 

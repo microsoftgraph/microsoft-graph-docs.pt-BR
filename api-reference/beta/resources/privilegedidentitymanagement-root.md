@@ -1,46 +1,25 @@
 ---
-title: Azure AD Privileged Identity Management
-description: Aqui está a lista de métodos fornecidos pelo serviço Privileged Identity Management.
+title: Privileged Identity Management
+description: APIs para o Privileged Identity Management do Azure AD para gerenciar as funções do Azure Active Directory e as funções de recursos do Azure.
 localization_priority: Priority
-ms.openlocfilehash: e5454a976a8dcdb17fea5ef9c217fc2eec9e2670
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4aa4d969d97c89cf1dac3bebe8d0d6c01b68aedd
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344256"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422525"
 ---
-# <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
+# <a name="privileged-identity-management---azure-ad"></a>Privileged Identity Management - Azure AD
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aqui está a lista de métodos fornecidos pelo serviço [Privileged Identity Management](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-privileged-identity-management-configure/).
+[O PIM (Privileged Identity Management) do Active Directory do Azure (Azure AD)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) é um serviço que permite gerenciar, controlar e monitorar o acesso a recursos importantes em sua organização. Isso inclui o acesso a recursos no Azure AD, recursos do Azure e outros Microsoft Online Services, como o Office 365 ou o Microsoft Intune. O Microsoft Graph fornece APIs que você pode usar para gerenciar as funções do Azure AD e as funções de recursos do Azure.
 
-O serviço é criado com base no OData. Para filtrar os resultados da consulta, use as expressões ``$filter`` padrão do OData nos URIs.
+- [APIs para funções do Azure AD](privilegedidentitymanagement-directory.md)
+- [APIs para funções de recursos do Azure](privilegedidentitymanagement-resources.md)
 
-## <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[List privilegedOperationEvent](../api/privilegedoperationevent-list.md) | [privilegedOperationEvent](privilegedoperationevent.md) collection |Obtenha a coleção de objeto privilegedOperationEvent. |
-|[Get privilegedRole](../api/privilegedrole-get.md) |[privilegedRole](privilegedrole.md)| Recupere um objeto privilegedRole.|
-|[List privilegedRole](../api/privilegedrole-list.md) | [privilegedRole](privilegedrole.md) collection |Obtenha coleção de objeto privilegedRole. |
-|[List role assignments](../api/privilegedrole-list-assignments.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection |Obtenha a coleção privilegedRoleAssignment para a função em particular. Cada privilegedRoleAssignment representa uma atribuição de função a um usuário.|
-|[selfActivate](../api/privilegedrole-selfactivate.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Ative a função que é atribuída ao solicitante.|
-|[selfDeactivate](../api/privilegedrole-selfdeactivate.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Desative a função que é atribuída ao solicitante.|
-|[Create privilegedRoleAssignment](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Crie uma nova privilegedRoleAssignment (atribuição de função) postando-a na coleção privilegedRoleAssignments.|
-|[List privilegedRoleAssignment](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection |Obtenha a coleção de objeto privilegedRoleAssignment. A coleção contém todas as atribuições de função da organização. Cada privilegedRoleAssignment representa uma atribuição de função a um usuário. |
-|[Get privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md)|Obtenha o objeto privilegedRoleAssignment com a id da tarefa especificada. |
-|[Delete privilegedRoleAssignment](../api/privilegedroleassignment-delete.md) | Nenhum. |Exclua um objeto privilegedRoleAssignment. |
-|[makePermanent](../api/privilegedroleassignment-makepermanent.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Torne a atribuição de função como permanente. |
-|[makeEligible](../api/privilegedroleassignment-makeeligible.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Tornar a atribuição de função como qualificada. |
-|[my](../api/privilegedroleassignment-my.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection|Obtenha as atribuições de função do solicitante. |
-|[Get privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](../resources/privilegedrolesettings.md)|Recupere as propriedades do objeto privilegedRoleSettings. |
-|[Get privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](../resources/privilegedrolesummary.md)|Recupere o objeto privilegedRoleSummary. |
-|[Get privilegedApproval](../api/privilegedapproval-get.md) |[privilegedApproval](privilegedapproval.md)| Obtenha um objeto privilegedApproval.|
-|[List privilegedApproval](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) collection |Obtenha uma coleção de objeto privilegedApproval. |
-|[Create privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |Crie um objeto privilegedApproval. |
-|[Update privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |Atualize um objeto privilegedApproval. |
-|[myrequests](../api/privilegedapproval-myrequests.md) | [privilegedApproval](privilegedapproval.md) collection|Receba solicitações de aprovação do solicitante. |
+> [!IMPORTANT]
+> A API para gerenciar funções do Azure AD será alterada entre junho e novembro de 2019 para acompanhar o namespace e a convenção da [API de recursos do Azure](privilegedidentitymanagement-resources.md). O PIM do Azure AD se tornará um recurso na convenção de recursos do Azure. Se essa alteração afetar diretamente seu locatário, preencha o [formulário de Mudança da API do Graph para PIM do Azure AD](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzfBSoy7dT5DqNLWwotW3OFUNFFMRlRLSUtRNEdDWEZHN05LT09IWjkyTS4u) para obter informações adicionais, suporte e a capacidade de agendar um horário para essa alteração da API.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
