@@ -65,10 +65,10 @@ HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a><span data-ttu-id="08bae-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="08bae-138">SDK sample code</span></span>
 # <a name="ctabcs"></a>[<span data-ttu-id="08bae-139">C#</span><span class="sxs-lookup"><span data-stu-id="08bae-139">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete_owner_from_group-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[<span data-ttu-id="08bae-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="08bae-140">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete_owner_from_group-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Javascript-snippets.md)]
 
 ---
 
