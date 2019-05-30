@@ -4,55 +4,55 @@ description: Atualize as propriedades do objeto **plannerAssignedToTaskBoardTask
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 112bf79a8264d1f7d0842e1c604bba49ba1cb0b8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b3ea3d89356d0a9b312a2c445197ad93e757bf82
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33595711"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537306"
 ---
-# <a name="update-plannerassignedtotaskboardtaskformat"></a><span data-ttu-id="462af-103">Atualizar plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="462af-103">Update plannerAssignedToTaskBoardTaskFormat</span></span>
+# <a name="update-plannerassignedtotaskboardtaskformat"></a><span data-ttu-id="d8c53-103">Atualizar plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="d8c53-103">Update plannerAssignedToTaskBoardTaskFormat</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="462af-104">Atualize as propriedades do objeto **plannerAssignedToTaskBoardTaskFormat** .</span><span class="sxs-lookup"><span data-stu-id="462af-104">Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="462af-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="462af-105">Permissions</span></span>
-<span data-ttu-id="462af-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="462af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d8c53-104">Atualize as propriedades do objeto **plannerAssignedToTaskBoardTaskFormat** .</span><span class="sxs-lookup"><span data-stu-id="d8c53-104">Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d8c53-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d8c53-105">Permissions</span></span>
+<span data-ttu-id="d8c53-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d8c53-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="462af-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="462af-108">Permission type</span></span>      | <span data-ttu-id="462af-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="462af-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d8c53-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d8c53-108">Permission type</span></span>      | <span data-ttu-id="d8c53-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d8c53-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="462af-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="462af-110">Delegated (work or school account)</span></span> | <span data-ttu-id="462af-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="462af-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="462af-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="462af-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="462af-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="462af-113">Not supported.</span></span>    |
-|<span data-ttu-id="462af-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="462af-114">Application</span></span> | <span data-ttu-id="462af-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="462af-115">Not supported.</span></span> |
+|<span data-ttu-id="d8c53-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d8c53-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d8c53-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d8c53-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d8c53-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d8c53-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d8c53-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d8c53-113">Not supported.</span></span>    |
+|<span data-ttu-id="d8c53-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d8c53-114">Application</span></span> | <span data-ttu-id="d8c53-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d8c53-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="462af-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="462af-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d8c53-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d8c53-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="462af-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="462af-117">Optional request headers</span></span>
-| <span data-ttu-id="462af-118">Nome</span><span class="sxs-lookup"><span data-stu-id="462af-118">Name</span></span>       | <span data-ttu-id="462af-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="462af-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="d8c53-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="d8c53-117">Optional request headers</span></span>
+| <span data-ttu-id="d8c53-118">Nome</span><span class="sxs-lookup"><span data-stu-id="d8c53-118">Name</span></span>       | <span data-ttu-id="d8c53-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="d8c53-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="462af-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="462af-120">Authorization</span></span>  | <span data-ttu-id="462af-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="462af-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="462af-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="462af-123">If-Match</span></span>  | <span data-ttu-id="462af-124">O último valor de ETag conhecido para **plannerAssignedToTaskBoardTaskFormat** a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="462af-124">Last known ETag value for **plannerAssignedToTaskBoardTaskFormat** to be updated.</span></span> <span data-ttu-id="462af-125">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="462af-125">Required.</span></span>|
+| <span data-ttu-id="d8c53-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="d8c53-120">Authorization</span></span>  | <span data-ttu-id="d8c53-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d8c53-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d8c53-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="d8c53-123">If-Match</span></span>  | <span data-ttu-id="d8c53-124">O último valor de ETag conhecido para **plannerAssignedToTaskBoardTaskFormat** a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="d8c53-124">Last known ETag value for **plannerAssignedToTaskBoardTaskFormat** to be updated.</span></span> <span data-ttu-id="d8c53-125">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d8c53-125">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="462af-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="462af-126">Request body</span></span>
-<span data-ttu-id="462af-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="462af-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d8c53-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d8c53-126">Request body</span></span>
+<span data-ttu-id="d8c53-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="d8c53-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="462af-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="462af-130">Property</span></span>     | <span data-ttu-id="462af-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="462af-131">Type</span></span>   |<span data-ttu-id="462af-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="462af-132">Description</span></span>|
+| <span data-ttu-id="d8c53-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d8c53-130">Property</span></span>     | <span data-ttu-id="d8c53-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="d8c53-131">Type</span></span>   |<span data-ttu-id="d8c53-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="d8c53-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="462af-133">orderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="462af-133">orderHintsByAssignee</span></span>|[<span data-ttu-id="462af-134">plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="462af-134">plannerOrderHintsByAssignee</span></span>](../resources/plannerorderhintsbyassignee.md)|<span data-ttu-id="462af-135">Dicionário de dicas usado para ordenar tarefas na exibição AssignedTo do quadro de tarefas.</span><span class="sxs-lookup"><span data-stu-id="462af-135">Dictionary of hints used to order tasks on the AssignedTo view of the Task Board.</span></span> <span data-ttu-id="462af-136">A chave de cada entrada é um dos usuários para os quais a tarefa é atribuída e o valor é a dica ORDER.</span><span class="sxs-lookup"><span data-stu-id="462af-136">The key of each entry is one of the users the task is assigned to and the value is the order hint.</span></span> <span data-ttu-id="462af-137">O formato de cada valor é definido em [using Order Hints in Planner (.. /resources/planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="462af-137">The format of each value is defined in [Using order hints in Planner(../resources/planner_order_hint_format.md).</span></span>|
-|<span data-ttu-id="462af-138">unassignedOrderHint</span><span class="sxs-lookup"><span data-stu-id="462af-138">unassignedOrderHint</span></span>|<span data-ttu-id="462af-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="462af-139">String</span></span>|<span data-ttu-id="462af-140">O valor de dica usado para ordenar a tarefa na exibição AssignedTo do quadro de tarefas quando a tarefa não é atribuída a qualquer pessoa ou quando o dicionário do orderHintsByAssignee não fornece uma dica de pedido para o usuário ao qual a tarefa é atribuída.</span><span class="sxs-lookup"><span data-stu-id="462af-140">Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to.</span></span> <span data-ttu-id="462af-141">O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="462af-141">The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="d8c53-133">orderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="d8c53-133">orderHintsByAssignee</span></span>|[<span data-ttu-id="d8c53-134">plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="d8c53-134">plannerOrderHintsByAssignee</span></span>](../resources/plannerorderhintsbyassignee.md)|<span data-ttu-id="d8c53-135">Dicionário de dicas usado para ordenar tarefas na exibição AssignedTo do quadro de tarefas.</span><span class="sxs-lookup"><span data-stu-id="d8c53-135">Dictionary of hints used to order tasks on the AssignedTo view of the Task Board.</span></span> <span data-ttu-id="d8c53-136">A chave de cada entrada é um dos usuários para os quais a tarefa é atribuída e o valor é a dica ORDER.</span><span class="sxs-lookup"><span data-stu-id="d8c53-136">The key of each entry is one of the users the task is assigned to and the value is the order hint.</span></span> <span data-ttu-id="d8c53-137">O formato de cada valor é definido em [using Order Hints in Planner (.. /resources/planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="d8c53-137">The format of each value is defined in [Using order hints in Planner(../resources/planner_order_hint_format.md).</span></span>|
+|<span data-ttu-id="d8c53-138">unassignedOrderHint</span><span class="sxs-lookup"><span data-stu-id="d8c53-138">unassignedOrderHint</span></span>|<span data-ttu-id="d8c53-139">String</span><span class="sxs-lookup"><span data-stu-id="d8c53-139">String</span></span>|<span data-ttu-id="d8c53-140">O valor de dica usado para ordenar a tarefa na exibição AssignedTo do quadro de tarefas quando a tarefa não é atribuída a qualquer pessoa ou quando o dicionário do orderHintsByAssignee não fornece uma dica de pedido para o usuário ao qual a tarefa é atribuída.</span><span class="sxs-lookup"><span data-stu-id="d8c53-140">Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to.</span></span> <span data-ttu-id="d8c53-141">O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="d8c53-141">The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="462af-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="462af-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d8c53-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="d8c53-142">Response</span></span>
 
-<span data-ttu-id="462af-143">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="462af-143">If successful, this method returns a `200 OK` response code and updated [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) object in the response body.</span></span>
+<span data-ttu-id="d8c53-143">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d8c53-143">If successful, this method returns a `200 OK` response code and updated [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) object in the response body.</span></span>
 
-<span data-ttu-id="462af-p107">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="462af-p107">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="d8c53-p107">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="d8c53-p107">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="462af-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="462af-147">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="462af-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="462af-148">Request</span></span>
-<span data-ttu-id="462af-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="462af-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d8c53-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d8c53-147">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d8c53-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d8c53-148">Request</span></span>
+<span data-ttu-id="d8c53-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d8c53-149">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_plannerassignedtotaskboardtaskformat"
@@ -69,8 +69,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-##### <a name="response"></a><span data-ttu-id="462af-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="462af-150">Response</span></span>
-<span data-ttu-id="462af-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="462af-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d8c53-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="d8c53-150">Response</span></span>
+<span data-ttu-id="d8c53-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d8c53-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,9 +90,11 @@ Content-length: 225
   "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="462af-154">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="462af-154">SDK sample code</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="d8c53-154">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="d8c53-154">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="d8c53-155">C#</span><span class="sxs-lookup"><span data-stu-id="d8c53-155">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_plannerassignedtotaskboardtaskformat-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="462af-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="462af-155">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d8c53-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="d8c53-156">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_plannerassignedtotaskboardtaskformat-Javascript-snippets.md)]
 
 ---
@@ -109,6 +111,7 @@ Content-length: 225
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/plannerassignedtotaskboardtaskformat-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/plannerassignedtotaskboardtaskformat-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

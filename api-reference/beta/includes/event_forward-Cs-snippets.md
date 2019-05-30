@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 085c6dc8a218713c3b9fa193f5e711986a3bf103
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: c90baf78633007b25810abc663b275d62045c60a
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34436639"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34535900"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var ToRecipients = new List<Recipient>()
+var toRecipients = new List<Recipient>()
 {
     new Recipient
     {
@@ -23,7 +23,7 @@ var ToRecipients = new List<Recipient>()
     }
 };
 
-var Comment = "Dana, hope you can make this meeting.";
+var comment = "Dana, hope you can make this meeting.";
 
 await graphClient.Me.Events["{id}"]
     .Forward(comment,toRecipients)
