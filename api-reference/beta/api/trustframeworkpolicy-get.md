@@ -4,12 +4,12 @@ description: Esta operação recupera um conteúdo existente do trustFrameworkPo
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1e16c636dd1a367978396af7fcbe21aebfa4cd37
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 986d6dc109a334e0a64e5472d5de6d80850b55e3
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335091"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536040"
 ---
 # <a name="get-trustframeworkpolicy"></a>Obter trustFrameworkPolicy
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma representação XML do [trustFrameworkPolicy](../resources/trustFrameworkpolicy.md) no corpo da resposta.  
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma representação XML do [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) no corpo da resposta.  
 
 >**Observação:** o tipo de conteúdo de resposta `application/xml`será.
 

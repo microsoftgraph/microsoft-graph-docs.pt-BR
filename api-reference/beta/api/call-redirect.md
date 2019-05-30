@@ -4,12 +4,12 @@ description: Redirecione as chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8291751b4dfc74fcd2f4ccfd194cc8bfbe66c482
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8c0bea95767881adc10c7e209825803461df20c6
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636321"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536082"
 ---
 # <a name="call-redirect"></a>Call: Redirect
 
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |targets|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento.|
-|targetDisposition|Cadeia de caracteres|O valor possível é:`default`|
+|targetDisposition|String|O valor possível é:`default`|
 |timeout|Int32|O tempo limite em segundos para a operação de redirecionamento.|
 |maskCallee|Booliano|Indica se o receptor deve ser mascarado.|
 |maskCaller|Booliano|Indica se o chamador deve ser mascarado.|
@@ -92,7 +92,7 @@ Content-Length: 515
 
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -103,8 +103,10 @@ Content-Length: 515
 HTTP/1.1 202 Accepted
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-redirect-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-redirect-Javascript-snippets.md)]
 
 ---
@@ -276,6 +278,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

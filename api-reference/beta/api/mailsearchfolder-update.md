@@ -4,12 +4,12 @@ description: Atualize as propriedades graváveis do objeto mailSearchFolder.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: fb11e06ac450aa218a8e1102557eb9e3a79f874c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dac2bbb95da7d287ce00503ac4b79cdf52a85968
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598178"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536019"
 ---
 # <a name="update-mailsearchfolder"></a>Atualizar mailSearchFolder
 
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | displayName | String | O nome de exibição do [mailFolder](../resources/mailfolder.md).|
 | includeNestedFolders | Booliano | Como a hierarquia da pasta de caixa de correio deve ser percorrida. `true`significa que uma pesquisa profunda deve ser feita enquanto `false` uma pesquisa superficial deve ser realizada. |
 | sourceFolderIDs | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
-| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
+| filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
@@ -101,8 +101,10 @@ Content-length: 179
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_mailsearchfolder-Javascript-snippets.md)]
 
 ---
@@ -119,6 +121,7 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Atualizar um registro em uma lista do SharePoint
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 074df35c54795002897b1d0d147944715c7c79df
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7c5031a9f2d2729a268f26bb1b1489f3bae2c351
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598005"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536488"
 ---
 # <a name="update-an-item-in-a-list"></a>Atualizar um item em uma lista
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualizar as propriedades em um **[listItem][]**.
 
@@ -31,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
@@ -50,10 +52,10 @@ No corpo da solicitação, forneça uma representação JSON de [fieldValueSet][
 Aqui está um exemplo que atualiza os campos de cor e quantidade do item de lista com novos valores.
 Todos os outros valores no listItem ficam inalterados. 
 
-<!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 Content-Type: application/json
 
 {
@@ -66,7 +68,7 @@ Content-Type: application/json
 
 Se for bem-sucedido, esse método retornará um [fieldValueSet][] no corpo da resposta do item de lista atualizada.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
 ```json
 HTTP/1.1 201 Created
@@ -79,9 +81,11 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de amostra do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-listitem-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update-listitem-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
 
 ---
 
@@ -90,13 +94,16 @@ Content-type: application/json
 [fieldValueSet]: ../resources/fieldvalueset.md
 [listItem]: ../resources/listitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "ListItem/Update",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-} -->
+}
+-->

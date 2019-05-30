@@ -4,12 +4,12 @@ description: Transferir uma chamada ativa.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ced05ad4539dadf490198d4a0ed70ea981672e3
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 92cb446303278d95eeb9f852491566b6305d468b
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635831"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536061"
 ---
 # <a name="call-transfer"></a>Call: transferência
 
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|O participante que é o destino da transferência.|
-|clientContext|Cadeia de caracteres|O contexto do cliente.|
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` o código de resposta.
@@ -87,7 +87,7 @@ Content-Length: 430
 
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -98,8 +98,10 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-transfer-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-transfer-Javascript-snippets.md)]
 
 ---
@@ -238,7 +240,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 ```http
 HTTP/1.1 202 Accepted
@@ -352,6 +354,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

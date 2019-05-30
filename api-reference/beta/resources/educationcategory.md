@@ -4,12 +4,12 @@ description: Uma categoria que pode ser aplicada a atribuições.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bf5ee33ec7d217c0bc4c6e4d35666d6e9f34dadb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dd9eccac3a1b6b1bdc3b0eca4c87b5e29e2135a9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340589"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536170"
 ---
 # <a name="educationcategory-resource-type"></a>tipo de recurso educationCategory
 
@@ -22,7 +22,7 @@ Uma categoria que pode ser aplicada a atribuições.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter educationCategory](../api/educationcategory-get.md) | [educationCategory](educationCategory.md) | Obter um **educationCategory**existente.|
+|[Obter educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Obter um **educationCategory**existente.|
 |[Excluir categoria](../api/educationcategory-delete.md) | Nenhum | Remover um **educationCategory**.|
 
 

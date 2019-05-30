@@ -4,17 +4,19 @@ description: Usar esta API para criar um novo Usuário.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d9c247c3d9befef7fb6f342ce063620e11a4d3a6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0193ab061f98d1cf799a9f84133ed88a2122c2b9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33600813"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536446"
 ---
 # <a name="create-user"></a>Criar Usuário
 
-Use essa API para criar um novo Usuário. O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
+Crie um novo usuário. O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
+
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -28,13 +30,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 POST /users
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar um usuário.
@@ -48,17 +53,25 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário.|
 |userPrincipalName |string |Nome UPN (usuario@contoso.com).|
 
+Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.
+
+>[!NOTE]
+>Os usuários federados criados usando essa API serão forçados a entrar a cada 12 horas por padrão.  Para obter mais informações sobre como alterar isso, confira [exceções para vidas úteis de token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [user](../resources/user.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ##### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
@@ -74,14 +87,18 @@ Content-type: application/json
   }
 }
 ```
+
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).
+
 ##### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.user"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -101,7 +118,8 @@ Content-type: application/json
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
 

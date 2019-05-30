@@ -4,12 +4,12 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7754b884354244e5cc62355d73e11b9a9b7403e5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f87ff4df1ea1fab1b727a725c01f024a872a8f1f
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345064"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34475203"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -69,7 +69,8 @@ Esse recurso permite:
 |[getMailTips](../api/user-getmailtips.md)|Coleção [mailTips](mailtips.md)|Retornar dicas de email de um ou mais destinatários conforme disponíveis para o usuário conectado. |
 |[getMemberGroups](../api/user-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|Coleção String| Retornar todos os grupos, funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva. |
-|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| Nenhum |Invalidar todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **refreshTokensValidFromDateTime** para a data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos.|
+|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| Nenhum |Invalidar todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **refreshTokensValidFromDateTime** para a data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Esse método é substituído por **revokeSignInSessions**.|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Nenhum |Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Esse método substitui **invalidateAllRefreshTokens**.|
 |[reminderView](../api/user-reminderview.md)|Coleção [Reminder](reminder.md)|Retorna uma lista de lembretes de calendário nas horas de início e término especificadas.|
 |[delta](../api/user-delta.md)|coleção de usuários| Obter as alterações incrementais para usuários. |
 |[Traduzir identificadores do Outlook](../api/user-translateexchangeids.md) |Coleção [tipo de recurso convertIdResult](convertidresult.md)| Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.|
@@ -277,11 +278,14 @@ Veja a seguir uma representação JSON do recurso
   "companyName": "string",
   "consentProvidedForMinor": "string",
   "country": "string",
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
   "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
+  "faxNumber": "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -296,12 +300,17 @@ Veja a seguir uma representação JSON do recurso
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
+  "onPremisesSamAccountName": "string",
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -311,8 +320,11 @@ Veja a seguir uma representação JSON do recurso
   "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "proxyAddresses": ["string"],
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
@@ -343,17 +355,7 @@ Veja a seguir uma representação JSON do recurso
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
-  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
-  "createdDateTime": "2019-02-07T21:53:13.067Z",
-  "employeeId": "string",
-  "faxNumber": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
-  "onPremisesSamAccountName": "string",
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
-  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  "showInAddressList": true
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}]
 }
 ```
 

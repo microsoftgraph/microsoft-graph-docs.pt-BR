@@ -2,12 +2,12 @@
 title: Cancelar privilegedRoleAssignmentRequest
 description: Cancelar uma privilegedRoleAssignmentRequest.
 localization_priority: Normal
-ms.openlocfilehash: 114729351f5ae412cea77e1a97e16fd3d8300849
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dc27edc71956c64d91dcc85e72ddd6c3cd65c793
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593846"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537466"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Cancelar privilegedRoleAssignmentRequest
 
@@ -40,7 +40,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 Ok`. Ele retorna [privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 Ok`. Ele retorna [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
 
 ### <a name="error-codes"></a>Códigos de erro
 Essa API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os códigos de erro personalizados listados na tabela a seguir.
@@ -97,10 +97,10 @@ Content-length: 304
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Javascript-snippets.md)]
 
 ---

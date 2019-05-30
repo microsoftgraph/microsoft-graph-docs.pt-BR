@@ -4,12 +4,12 @@ description: Representa usuários do Azure AD que estão em risco. O Azure AD av
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 685600c110088d9bd9809a8c754e8530b123412e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 02c1fe3bbbcf532298a5f615971d7ffbc273bf5a
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33620805"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537292"
 ---
 # <a name="riskyuser-resource-type"></a>tipo de recurso riskyUser
 
@@ -25,8 +25,8 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Listar riskyUsers](../api/riskyusers-list.md) | coleção [riskyUser](riskyUser.md)|Listar usuários arriscados e suas propriedades.|
-|[Obter riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|Obtenha um usuário arriscado específico e suas propriedades.|
+|[Listar riskyUsers](../api/riskyusers-list.md) | coleção [riskyUser](riskyuser.md)|Listar usuários arriscados e suas propriedades.|
+|[Obter riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|Obtenha um usuário arriscado específico e suas propriedades.|
 |[Histórico de lista](../api/riskyuser-list-history.md) | coleção [riskyUserHistoryItem](riskyuserhistoryitem.md)|Obter o histórico de riscos de um usuário do Azure AD.|
 |[Confirmar riskyUsers comprometido](../api/riskyusers-confirmcompromised.md)|Nenhum |Confirmar um usuário arriscado como comprometido.|
 |[Ignorar riskyUsers](../api/riskyusers-dismiss.md)|Nenhum | Descartar o risco de um usuário arriscado.|

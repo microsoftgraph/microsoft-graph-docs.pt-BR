@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos de um objeto **riskyU
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 82eb470bf977321def10b66c0ec8199a3bec07a5
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: b268804444ad4693d06728568c5a2439883a8f95
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639017"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536454"
 ---
 # <a name="get-riskyuser"></a>Obter riskyUser
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskyUser.Read.All |
+|Aplicativo | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [riskyUser](../resources/riskyUser.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [riskyUser](../resources/riskyuser.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -83,10 +83,10 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_riskyuser-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_riskyuser-Javascript-snippets.md)]
 
 ---

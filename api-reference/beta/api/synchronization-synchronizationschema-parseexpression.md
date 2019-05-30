@@ -2,12 +2,12 @@
 title: 'synchronizationSchema: ParseName'
 description: '(.. objeto/Resources/synchronization_attributemappingsource.MD). '
 localization_priority: Normal
-ms.openlocfilehash: b11d50bc62dafedcdbf658e15e5501e134eb7a26
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 79cb683571fa7a5e1b48f93a1805ae5d7a4f7202
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637973"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536145"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: ParseName
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|expressão               |Cadeia de caracteres               |Expressão a ser analisada.|
+|expressão               |String               |Expressão a ser analisada.|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Objeto de dados de teste para avaliar a expressão. Opcional.|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definição do atributo que será mapeado para esta expressão. Opcional.|
 
@@ -171,8 +171,10 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
 
 ---
@@ -189,6 +191,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

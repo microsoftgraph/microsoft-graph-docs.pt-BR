@@ -3,12 +3,12 @@ title: Atualizar secureScoreControlProfile
 description: Atualize um objeto secureScoreControlProfile editável em qualquer solução integrada para alterar várias propriedades, como assignedTo ou tenantNote.
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 79d958e3f2bd04be8dab2d8fe0bda6117f487973
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 91b14c83098c1e03580c4ffeb320a0e5eba6d18b
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951283"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536809"
 ---
 # <a name="update-securescorecontrolprofile"></a>Atualizar secureScoreControlProfile
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça uma representação JSON dos valores de camp
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|Cadeia de caracteres|Nome do analista ao qual o controle é atribuído para a triagem, implementação ou correção.|
+|assignedTo|String|Nome do analista ao qual o controle é atribuído para a triagem, implementação ou correção.|
 |comment|String|Comentários de analista sobre o controle (para o gerenciamento de controle de clientes).|
 |state| Cadeia de caracteres|Configuração orientada pelo analista no controle. Os valores possíveis são: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = SecureScore;). **Os campos Provider e Vendor são necessários.** |
@@ -99,7 +99,9 @@ Veja a seguir o exemplo de uma resposta bem-sucedida.
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]

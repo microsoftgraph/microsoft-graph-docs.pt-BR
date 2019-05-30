@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto Application.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a55b977201574c2cdf4a9b2ede140abe205d1ae0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2984e7d57144fd6d5e3efee7d6c9a9c8d68c529c
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636328"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34535991"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |preAuthorizedApplications|coleção [preauthorizedapplication e](../resources/preauthorizedapplication.md)| Lista os aplicativos e as permissões solicitadas para o consentimento implícito. Requer um administrador para ter fornecido o consentimento para o aplicativo. o preAuthorizedApplications não exige que o usuário concorde com as permissões solicitadas. As permissões listadas no preAuthorizedApplications não exigem o consentimento do usuário. No entanto, as permissões adicionais solicitadas não listadas no preAuthorizedApplications exigem o consentimento do usuário. |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) collection|Especifica os recursos para os quais esse aplicativo requer acesso e o conjunto de escopos de permissão e funções de aplicativo do OAuth necessários em cada um desses recursos. Essa pré-configuração de acesso necessário aos recursos impulsiona a experiência de consentimento. Não anulável.|
 |tags|Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
-|web|[webApplication](../resources/webApplication.md)| Especifica configurações para um aplicativo Web. |
+|web|[webApplication](../resources/webapplication.md)| Especifica configurações para um aplicativo Web. |
 
 ## <a name="response"></a>Resposta
 
@@ -90,10 +90,10 @@ Observação: o objeto response mostrado aqui pode estar truncado por motivos de
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_application-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_application-Javascript-snippets.md)]
 
 ---

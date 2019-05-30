@@ -4,12 +4,12 @@ description: Use esta API para criar um novo mailSearchFolder na caixa de correi
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 0c600048961b560364982b8b8ef5cff531ae2031
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2fc7a51675b0bfc559b5ab5c9f7a857c84c43174
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598205"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536365"
 ---
 # <a name="create-mailsearchfolder"></a>Criar mailSearchFolder
 
@@ -51,11 +51,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| @odata.type | Cadeia de caracteres | O tipo de pasta a ser criada. Defina como "Microsoft. Graph. mailSearchFolder". |
+| @odata.type | String | O tipo de pasta a ser criada. Defina como "Microsoft. Graph. mailSearchFolder". |
 | displayName | String | O nome de exibição da nova pasta.|
 | includeNestedFolders | Booliano | Como a hierarquia da pasta de caixa de correio deve ser percorrida. `true`significa que uma pesquisa profunda deve ser feita enquanto `false` uma pesquisa superficial deve ser realizada. |
 | sourceFolderIDs | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
-| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
+| filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 
@@ -119,8 +119,10 @@ Content-length: 179
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_mailsearchfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_mailsearchfolder-Javascript-snippets.md)]
 
 ---
@@ -137,6 +139,7 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

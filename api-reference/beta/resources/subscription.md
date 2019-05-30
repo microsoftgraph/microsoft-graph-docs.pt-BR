@@ -3,12 +3,12 @@ title: tipo de recurso de assinatura
 description: 'Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:'
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 563d232d200797b87e894292e31eb48ad88bf540
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6a7fd50a53e68313ba72c8bd5d90b47d2b5b2607
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342876"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537202"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -59,7 +59,7 @@ Veja a seguir uma representação JSON do recurso.
 | recurso | string | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/beta/`). |
 | expirationDateTime | DateTimeOffset | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
 | clientState | string | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação foi proveniente do serviço comparando o valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida com cada notificação. |
-| id | string | Identificador exclusivo da assinatura. Somente leitura. |
+| id | cadeia de caracteres | Identificador exclusivo da assinatura. Somente leitura. |
 | ApplicationId | string | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Somente leitura. |
 
@@ -67,6 +67,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Recurso            | Tempo de Expiração Máximo  |
 |:--------------------|:-------------------------|
+| Usuário, grupo, outros recursos de diretório   | 4230 minutos (em 3 dias)    |
 | Email                | 4230 minutos (em 3 dias)    |
 | Calendário            | 4230 minutos (em 3 dias)    |
 | Contatos            | 4230 minutos (em 3 dias)    |
@@ -85,7 +86,7 @@ Nenhum
 | Método | Tipo de retorno | Descrição |
 |:-------|:------------|:------------|
 | [Criar assinatura](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Assina um aplicativo de escuta para receber notificações quando dados do Microsoft Graph são alterados. |
-| [Atualizar assinatura](../api/subscription-update.md) | [subscription](subscription.md) | ReNovar uma assinatura atualizando seu tempo de expiração. |
+| [Atualizar assinatura](../api/subscription-update.md) | [subscription](subscription.md) | Renovar uma assinatura atualizando seu tempo de expiração. |
 | [Listar de assinaturas](../api/subscription-list.md) | [assinatura](subscription.md) | Lista assinaturas ativas. |
 | [Obter assinatura](../api/subscription-get.md) | [subscription](subscription.md) | Leia as propriedades e as relações do objeto Subscription. |
 | [Excluir assinatura](../api/subscription-delete.md) | Nenhuma | Excluir um objeto Subscription. |

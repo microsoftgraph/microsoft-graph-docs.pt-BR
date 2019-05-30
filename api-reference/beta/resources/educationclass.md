@@ -4,12 +4,12 @@ description: 'Representa uma aula em uma escola. O recurso **educationClass** co
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2a1fb4434933a4cc41c9a84c54864f2211f40962
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dfce83c99ec886a01c2c52c3bae58c91b12fa0b0
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334421"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536166"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -33,8 +33,8 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 |[Criar educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| Crie um novo **educationAssignment** postando na coleção assignments.|
 |[Listar tarefas](../api/educationclass-list-assignments.md) |coleção [educationAssignment](../resources/educationassignment.md)| Obtenha uma coleção de objetos **educationAssignment** .|
 |[Obter grupo](../api/educationclass-get-group.md) |[group](group.md)| Recupere o **group** do Office 365 que corresponde a essa **educationClass**.|
-|[Criar educationCategory](../api/educationclass-post-category.md) | [educationCategory](educationCategory.md) | Crie um novo **educationCategory** para esta classe.|
-|[Listar categorias](../api/educationclass-list-categories.md) | coleção [educationCategory](educationCategory.md) | Obtenha uma lista de objetos **educationCategory** pertencentes a essa classe.|
+|[Criar educationCategory](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Crie um novo **educationCategory** para esta classe.|
+|[Listar categorias](../api/educationclass-list-categories.md) | coleção [educationCategory](educationcategory.md) | Obtenha uma lista de objetos **educationCategory** pertencentes a essa classe.|
 |[Atualizar](../api/educationclass-update.md) | [educationClass](educationclass.md)    |Atualize o objeto **educationClass**. |
 |[Delete](../api/educationclass-delete.md) | Nenhum |Exclua o objeto **educationClass**. |
 
@@ -42,7 +42,7 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id| Cadeia de caracteres| O identificador exclusivo da aula.|
-|description|String| Descrição da aula.|
+|descrição|String| Descrição da aula.|
 |displayName|String| Nome da aula.|
 |mailNickname|String| Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada. |
 |createdBy|[identitySet](identityset.md)| Entidade que criou a aula |
@@ -56,7 +56,7 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|members|Coleção [educationUser](../resources/educationuser.md)| Todos os usuários da aula. Anulável.|
+|membros|Coleção [educationUser](../resources/educationuser.md)| Todos os usuários da aula. Anulável.|
 |schools|Coleção [educationSchool](../resources/educationschool.md)| Todas as escolas às quais essa aula está associada. Anulável.|
 |teachers|Coleção [educationUser](../resources/educationuser.md)|  Todos os professores da aula. Anulável.|
 |assignments|coleção [educationAssignment](../resources/educationassignment.md)| Todas as atribuições associadas a esta classe. Anulável.|

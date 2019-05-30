@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto **plannerAssignedToTaskBoardTask
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 112bf79a8264d1f7d0842e1c604bba49ba1cb0b8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b3ea3d89356d0a9b312a2c445197ad93e757bf82
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33595711"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537306"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Atualizar plannerAssignedToTaskBoardTaskFormat
 
@@ -42,7 +42,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Dicionário de dicas usado para ordenar tarefas na exibição AssignedTo do quadro de tarefas. A chave de cada entrada é um dos usuários para os quais a tarefa é atribuída e o valor é a dica ORDER. O formato de cada valor é definido em [using Order Hints in Planner (.. /resources/planner_order_hint_format.md).|
-|unassignedOrderHint|Cadeia de caracteres|O valor de dica usado para ordenar a tarefa na exibição AssignedTo do quadro de tarefas quando a tarefa não é atribuída a qualquer pessoa ou quando o dicionário do orderHintsByAssignee não fornece uma dica de pedido para o usuário ao qual a tarefa é atribuída. O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).|
+|unassignedOrderHint|String|O valor de dica usado para ordenar a tarefa na exibição AssignedTo do quadro de tarefas quando a tarefa não é atribuída a qualquer pessoa ou quando o dicionário do orderHintsByAssignee não fornece uma dica de pedido para o usuário ao qual a tarefa é atribuída. O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Resposta
 
@@ -91,8 +91,10 @@ Content-length: 225
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_plannerassignedtotaskboardtaskformat-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_plannerassignedtotaskboardtaskformat-Javascript-snippets.md)]
 
 ---
@@ -109,6 +111,7 @@ Content-length: 225
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/plannerassignedtotaskboardtaskformat-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/plannerassignedtotaskboardtaskformat-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

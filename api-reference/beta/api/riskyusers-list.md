@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos de uma coleção de o
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5ab89ab69d2e2b02eebff4498499ceddc5ae0df0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 6bdf36d1056f63f6b5e818a28b695d19aced17b1
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639009"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537473"
 ---
 # <a name="list-riskyusers"></a>Listar riskyUsers
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskyUser.Read.All |
+|Aplicativo | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ Este método oferece `$filter` suporte para personalizar a resposta de consulta.
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [riskyUser](../resources/riskyUser.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [riskyUser](../resources/riskyuser.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-list-risky-users"></a>Exemplo 1: listar usuários arriscados
@@ -89,10 +89,10 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/list_riskyusers-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/list_riskyusers-Javascript-snippets.md)]
 
 ---
@@ -141,10 +141,10 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/list_filter_riskyusers-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/list_filter_riskyusers-Javascript-snippets.md)]
 
 ---

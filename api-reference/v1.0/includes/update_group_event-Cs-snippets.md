@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fe851345abd9be61c71a77fe37bf72f9da6bdbe2
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: fdf7267983b422bb3000cc29628f4116a603d6dc
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34453338"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536778"
 ---
 ```csharp
 
@@ -13,19 +13,13 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var @event = new Event
 {
-    OriginalStartTimeZone = "originalStartTimeZone-value",
-    OriginalEndTimeZone = "originalEndTimeZone-value",
-    ResponseStatus = new ResponseStatus
+    Location = new Location
     {
-        Response = ResponseType.None,
-        Time = "datetime-value"
-    },
-    ICalUId = "iCalUId-value",
-    ReminderMinutesBeforeStart = 99,
-    IsReminderOn = true
+        DisplayName = "Conf Room 2"
+    }
 };
 
-await graphClient.Groups["{id}"].Events["{id}"]
+await graphClient.Groups["01d4ee64-15ce-491e-bad1-b91aa3223df4"].Calendar.Events["AAMkADZlAAAAABERAAA="]
     .Request()
     .UpdateAsync(@event);
 

@@ -4,12 +4,12 @@ description: A operação playPrompt para obter o resultado da ação playPrompt
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 89a47fc8400d2f0d426ef6f683eb566f9c2376d4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 663675bb895d452c9ad50c89f22f1a51efca20a9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344358"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536992"
 ---
 # <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
 
@@ -26,7 +26,7 @@ A operação playPrompt para obter o resultado da ação playPrompt.
 | createdDateTime     | DateTimeOffset              | A hora de início da operação.                                                   |
 | id                  | Cadeia de caracteres                      | Somente leitura.                                                                         |
 | lastActionDateTime  | DateTimeOffset              | A hora da última ação da operação.                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | As informações de resultado. Somente leitura. Servidor gerado.                               |
+| resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura. Servidor gerado.                               |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## <a name="relationships"></a>Relações

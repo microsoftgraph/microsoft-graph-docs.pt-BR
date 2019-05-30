@@ -5,12 +5,12 @@ title: tipo de recurso de multiatividade
 description: O objeto myactivity fornece informações sobre uma atividade que ocorreu em um item.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c05493ddeb8e007da6ba8b7508369b4d013e672
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: 98ae9e4881de18c94490469b10df43b2aaf58140
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970597"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536684"
 ---
 # <a name="itemactivity-resource-type"></a>tipo de recurso de multiatividade
 
@@ -32,7 +32,7 @@ As ações que ocorreram em um ItemProperty são detalhadas na propriedade itemp
 | actor    | [identitySet][]         | Identidade de quem executou a ação. Somente leitura.
 | activityDateTime    | DateTimeOffset | Detalhes sobre quando ocorreu a atividade. Somente leitura.
 
-[accessaction]: accessAction.md
+[accessaction]: accessaction.md
 [identitySet]: identityset.md
 
 ## <a name="relationships"></a>Relações

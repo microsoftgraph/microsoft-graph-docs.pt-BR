@@ -4,12 +4,12 @@ description: Reproduza um prompt na chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 571c8b412e6e8099aaee020ef45e2ad55b1e5707
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: ad0001c1961f1c6e9126a39609d368104e133aec
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635859"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536068"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
 
@@ -45,10 +45,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |prompts|coleção [prompt](../resources/prompt.md)||
-|clientContext|Cadeia de caracteres|O contexto do cliente.|
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [playPromptOperation](../resources/playPromptOperation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -82,7 +82,7 @@ Content-Length: 166
 
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -95,7 +95,7 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-playPrompt-Javascript-snippets.md)]
 
 ---

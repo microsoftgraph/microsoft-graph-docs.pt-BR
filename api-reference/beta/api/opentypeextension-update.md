@@ -3,12 +3,12 @@ title: Atualizar extensão aberta
 description: 'Atualize uma extensão aberta (objeto openTypeExtension) com as propriedades no corpo da solicitação:'
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: bc8e8446631a0872fc3e7fa73cb0bea36d40672e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 881a408d45418e4d267cea230121a90c4c4f3578
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596912"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536432"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
@@ -239,8 +239,10 @@ Content-Type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_opentypeextension-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_opentypeextension-Javascript-snippets.md)]
 
 ---
@@ -258,6 +260,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/opentypeextension-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/opentypeextension-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

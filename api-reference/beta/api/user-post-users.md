@@ -4,12 +4,12 @@ description: Crie um novo usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8e7653095ded6d4146c07c37660260ba53190df5
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 19388f645eeea78a4237a8085abdd17b3c819f08
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34479053"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536978"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 
 Como o recurso de **usuário** oferece suporte a [extensões](/graph/extensibility-overview), você `POST` pode usar a operação e adicionar propriedades personalizadas com seus próprios dados à instância de usuário ao criá-la.
 
-[!NOTE]
-Os usuários federados criados usando essa API serão forçados a entrar a cada 12 horas por padrão. Para obter mais informações sobre como alterar isso, confira [exceções para tempos de vida do token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+>[!NOTE]
+>Os usuários federados criados usando essa API serão forçados a entrar a cada 12 horas por padrão. Para obter mais informações sobre como alterar isso, confira [exceções para tempos de vida do token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 ## <a name="response"></a>Resposta
 
