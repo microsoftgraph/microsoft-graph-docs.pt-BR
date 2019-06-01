@@ -1,15 +1,15 @@
 ---
 title: Listar domínios
 description: Recupere uma lista de objetos Domain.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6c84c01a423bed5507cbc07e8202a2e963e5b0c4
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 714eb13377ee613b19812c42a2edc19726c941c9
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33617021"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655618"
 ---
 # <a name="list-domains"></a>Listar domínios
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.Read.All, Domain.ReadWrite.All |
+|Aplicativo | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +55,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma cole
 GET https://graph.microsoft.com/v1.0/domains
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,10 +86,10 @@ Content-length: 245
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_domains-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_domains-Javascript-snippets.md)]
 
 ---

@@ -1,19 +1,17 @@
 ---
 title: tipo de recurso de domínio
 description: Representa um domínio associado ao locatário.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bd141fe02ab7b2685f83ebcfb787aca4ced2294f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc035824767b532da0a8d2b24fa4f3158ef2881a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562774"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34658005"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um domínio associado ao locatário.
 
@@ -54,9 +52,9 @@ Para associar um domínio a um locatário:
 |id|String| O nome totalmente qualificado do domínio. Key, imutável, não anulável, exclusivo |
 |isAdminManaged|Booliano| O valor da propriedade será false se o gerenciamento de registro DNS do domínio tiver sido delegado para o Office 365. Caso contrário, o valor será true. Não anulável |
 |isDefault|Booliano| True se este é o domínio padrão usado para a criação de usuários. Há apenas um domínio padrão por empresa. Não anulável |
-|isInitial|Booliano| True se este é o domínio inicial criado pelo Microsoft Online Services (companyname.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |
-|isRoot|Booliano| True se o domínio é um domínio raiz verificado. Caso contrário, false se o domínio é um subdomínio ou não verificado. Não anulável |
-|isVerificed|Booliano| True se o domínio tiver concluído a verificação de propriedade de domínio. Não anulável |
+|isinitial|Booliano| True se este é o domínio inicial criado pelo Microsoft Online Services (companyname.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |
+|IsRoot|Booliano| True se o domínio é um domínio raiz verificado. Caso contrário, false se o domínio é um subdomínio ou não verificado. Não anulável |
+|isverificed|Booliano| True se o domínio tiver concluído a verificação de propriedade de domínio. Não anulável |
 |passwordNotificationWindowInDays|Int32|Especifica o número de dias antes que um usuário receba uma notificação de que a senha expirará. Se a propriedade não for definida, será usado um valor padrão de 14 dias.|
 |passwordValidityPeriodInDays|Int32| Especifica o período de tempo que uma senha é válida antes de ser alterada. Se a propriedade não for definida, será usado um valor padrão de 90 dias. |
 |supportedservices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio.<br><br>Pode incluir 0, 1 ou mais dos seguintes valores: *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar/remover usando a API do Graph incluem: *email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
@@ -75,12 +73,11 @@ As relações entre um domínio e outros objetos no diretório, como seus regist
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty":"id",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.domain"
 }-->
 
@@ -104,13 +101,10 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domain resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->

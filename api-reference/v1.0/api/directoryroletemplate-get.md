@@ -1,15 +1,15 @@
 ---
 title: Obter directoryRoleTemplate
 description: Recupera as propriedades e os relacionamentos do objeto directoryroletemplate.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 55582635c4ccfbeea2d05175f53c3ca5f1eee1b6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 35dee2924f171976b538e930a264df8147e85b24
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33617063"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656528"
 ---
 # <a name="get-directoryroletemplate"></a>Obter directoryRoleTemplate
 
@@ -71,10 +71,10 @@ Content-length: 98
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directoryroletemplate-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directoryroletemplate-Javascript-snippets.md)]
 
 ---

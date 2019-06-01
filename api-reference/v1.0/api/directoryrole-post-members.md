@@ -1,15 +1,15 @@
 ---
 title: Adicionar membro da função de diretório
 description: Use esta API para criar um novo membro de função de diretório.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 768e2a780fcfe96bd14d883d0f7ea0d03ac434cc
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 1ee4d884642a47c83f48eda38601e2d320e609c9
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33617083"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656535"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -73,7 +73,7 @@ Content-type: text/plain
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_directoryrole-Javascript-snippets.md)]
 
 ---

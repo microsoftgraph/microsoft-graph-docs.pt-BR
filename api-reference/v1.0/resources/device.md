@@ -2,14 +2,14 @@
 title: tipo de recurso de dispositivo
 description: Representa um dispositivo registrado na organização. Dispositivos são criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Intune. Eles são usados por políticas de acesso condicional para a autenticação multifator. Estes dispositivos podem variar desde computadores desktop e laptops até telefones e tablets. Herda de directoryObject.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e72777691f0c599067c885168c0c58bb49cec3cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: adfe8ddda99f5ff9ef516aba286f866cb7957dfa
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574607"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34658040"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -63,7 +63,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável.|
-|[Listar memberOf transitivos](../api/device-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais o dispositivo é membro. Essa operação é transitiva. |
+|[Listar memberOf transitivos](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| Listar os grupos dos quais o dispositivo é membro. Essa operação é transitiva. |
 |registeredOwners|Coleção [directoryObject](directoryobject.md)|O usuário que associou o dispositivo na nuvem ou registrou seu dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário. Somente leitura. Anulável. |
 |registeredUsers|Coleção [directoryObject](directoryobject.md)|Coleção de usuários registrados do dispositivo. Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro. Somente leitura. Anulável.|
 

@@ -1,15 +1,15 @@
 ---
 title: Permissões
 description: 'Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  '
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1d57bbada024bdb2358c39ce9183004ea53289dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75d943a37899b6f1d84971305cd473a398b049bb
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555084"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656654"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Listar itens excluídos pertencentes a um usuário**
 
@@ -54,7 +54,7 @@ O corpo da solicitação requer os seguintes parâmetros:
 
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|userId|String|ID do proprietário.|
+|userId|Cadeia de caracteres|ID do proprietário.|
 |type|String|Tipo de objetos de propriedade a ser retornado; `Group` no momento, o único valor com suporte.|
 
 

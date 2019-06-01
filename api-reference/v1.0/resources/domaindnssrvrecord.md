@@ -1,19 +1,17 @@
 ---
 title: tipo de recurso domainDnsSrvRecord
 description: Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade DomainDnsRecord.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 28c590ff210952fc5d54ace61c08348383ce393a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1e7563d90a92e319ceec5a5ca11d7edb4f267c5b
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562786"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657662"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>tipo de recurso domainDnsSrvRecord
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .
 
@@ -24,7 +22,7 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura.|
-|isOptional|Booliano| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
+|IsOptional|Booliano| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
 |rótulo|String| O valor usado ao configurar a propriedade *Name* do registro SRV no host DNS. |
 |nameTarget|String| O valor a ser usado ao configurar a propriedade *target* do registro SRV no host DNS. |
 |propor|Int32| O valor a ser usado ao configurar a propriedade *Port* do registro SRV no host DNS. |
@@ -45,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -53,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -72,13 +70,10 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainDnsSrvRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->
