@@ -2,14 +2,14 @@
 title: Obter entrada
 description: Recupere um evento específico de entrada do Azure AD para seu locatário.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1a3d1f8cbff40eb76e26a5f08afa36368a5148dd
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
-ms.translationtype: HT
+ms.openlocfilehash: 4b1a6aad8847bfaf2b30439c86c841a85005a3d2
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638541"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657368"
 ---
 # <a name="get-signin"></a>Obter entrada
 

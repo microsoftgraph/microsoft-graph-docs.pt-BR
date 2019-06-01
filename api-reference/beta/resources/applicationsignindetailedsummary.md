@@ -2,14 +2,14 @@
 title: tipo de recurso applicationSignInDetailedSummary-API do Microsoft Graph
 description: Representa um resumo detalhado de uma entrada de aplicativo.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 783201ec40ac0749d2c2999649bf1c420eaba5b6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4d4fcd00e305c19f1d445738a22125cc8addc143
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328488"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657634"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>tipo de recurso applicationSignInDetailedSummary
 

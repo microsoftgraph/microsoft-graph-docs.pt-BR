@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso domainDnsSrvRecord
 description: Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade DomainDnsRecord.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a80bfd1caa755a7b4f27f29e1c34ec4295a52f33
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fdcee0e05a3088bcb60ddab357db3ad2def497d7
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340677"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657144"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>tipo de recurso domainDnsSrvRecord
 
@@ -24,7 +24,7 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura.|
-|isOptional|Boolean| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
+|IsOptional|Booliano| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
 |rótulo|String| O valor usado ao configurar a propriedade *Name* do registro SRV no host DNS. |
 |nameTarget|String| O valor a ser usado ao configurar a propriedade *target* do registro SRV no host DNS. |
 |propor|Int32| O valor a ser usado ao configurar a propriedade *Port* do registro SRV no host DNS. |

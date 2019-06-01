@@ -2,14 +2,14 @@
 title: Listar organização
 description: Recupere uma lista de objetos de organização.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e1cb64b412285ff4bfa36db049aa0ab2b0ea0afc
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 314eeef458dfeb917c43c0b1270a500abac2f182
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33597945"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657291"
 ---
 # <a name="list-organization"></a>Listar organização
 
@@ -89,10 +89,10 @@ Content-length: 500
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_organization-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_organization-Javascript-snippets.md)]
 
 ---

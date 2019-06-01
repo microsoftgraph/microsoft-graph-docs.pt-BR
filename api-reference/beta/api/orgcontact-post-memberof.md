@@ -2,14 +2,14 @@
 title: Criar memberOf
 description: Use esta API para criar um novo memberOf.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: af1bad7f14947bc3e740866e3f67d687657742c7
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a4b0730a7ad65770f31a36d5be39a0cd841c8809
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596560"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657151"
 ---
 # <a name="create-memberof"></a>Criar memberOf
 
@@ -81,7 +81,7 @@ Content-length: 51
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_orgcontact-Javascript-snippets.md)]
 
 ---

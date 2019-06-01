@@ -2,14 +2,14 @@
 title: tipo de recurso accessReview
 description: 'No recurso de revisões do Azure AD Access, `accessReview` o representa uma revisão do Access.  '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d65d41c23b97c5883be4c062598f438640cd7c1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b1801a7f7cbd52375e4fbbfb42847b29539a2dde
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339371"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657732"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
 
@@ -24,17 +24,17 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , `accessRev
 |:---------------|:--------|:----------|
 |[Obter accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Obtenha uma revisão do Access com uma ID específica. |
 |[Criar accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Criar um novo accessReview. |
-|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum   | Excluir um accessReview. |
+|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum.   | Excluir um accessReview. |
 |[Atualizar accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Atualizar um accessReview. |
 |[Listar revisores do accessReview](../api/accessreview-listreviewers.md) |      [](useridentity.md) coleção UserIdentity| Obter os revisores de um accessReview. |
-|[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum   |   Adicionar um revisor a um accessReview. |
-|[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum  |   Remover um revisor de um accessReview. |
+|[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum.   |   Adicionar um revisor a um accessReview. |
+|[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum.  |   Remover um revisor de um accessReview. |
 |[Listar decisões accessReview](../api/accessreview-listdecisions.md) |      coleção [accessReviewDecision](accessreviewdecision.md)| Obtenha as decisões de um accessReview.|
 |[Listar minhas decisões do accessReview](../api/accessreview-listmydecisions.md) |     coleção [accessReviewDecision](accessreviewdecision.md)| Como revisor, obtenha as minhas decisões de um accessReview.|
-|[Enviar lembrete accessReview](../api/accessreview-sendreminder.md) |        Nenhum   |   Envie um lembrete para os revisores de um accessReview. |
-|[Parar accessReview](../api/accessreview-stop.md) |     Nenhum   |   Parar um accessReview. |
-|[Redefinir decisões do accessReview](../api/accessreview-reset.md) |     Nenhum   |   ReDefina as decisões em um accessReview em andamento.|
-|[Aplicar decisões accessReview](../api/accessreview-apply.md) |     Nenhum   |   Aplique as decisões de um accessReview concluído.|
+|[Enviar lembrete accessReview](../api/accessreview-sendreminder.md) |        Nenhum.   |   Envie um lembrete para os revisores de um accessReview. |
+|[Parar accessReview](../api/accessreview-stop.md) |     Nenhum.   |   Parar um accessReview. |
+|[Redefinir decisões do accessReview](../api/accessreview-reset.md) |     Nenhum.   |   Redefina as decisões em um accessReview em andamento.|
+|[Aplicar decisões accessReview](../api/accessreview-apply.md) |     Nenhum.   |   Aplique as decisões de um accessReview concluído.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -67,7 +67,7 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , `accessRev
 
 Se essas relações estão presentes em um objeto, depende se o objeto é uma revisão de acesso único, a série de uma revisão de acesso recorrente ou uma instância de uma revisão de acesso recorrente.
 
-| Cenário | Tem revisores? | Tem decisões e myDecisions? | Tem instâncias? |
+| Cenário | Tem revisores? | Tem decisões e mydecisions? | Tem instâncias? |
 |:---------|:---------------|:---------------|:---------------|
 |Revisão de acesso de uso único|Sim | Sim, depois de iniciado | Não |
 | Análise de acesso recorrente | Sim | Não | Sim |

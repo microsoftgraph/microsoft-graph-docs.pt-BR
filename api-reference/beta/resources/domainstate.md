@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso domainstate
 description: Representa o status de operações assíncronas agendadas em um domínio.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6e945b271ec9f41a4337144d8313de0a4dc36a37
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c1afe3402d20c534a3e976d21a4f00de969f20ee
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334578"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657116"
 ---
 # <a name="domainstate-resource-type"></a>tipo de recurso domainstate
 

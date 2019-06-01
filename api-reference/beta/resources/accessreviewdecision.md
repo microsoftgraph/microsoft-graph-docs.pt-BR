@@ -2,14 +2,14 @@
 title: tipo de recurso accessReviewDecision
 description: No recurso de revisões do Azure AD Access, `accessReviewDecision` o representa uma decisão de revisão do Azure ad Access de um determinado acesso de uma entidade.  Em uma revisão do Access, ou uma instância de uma revisão de acesso recorrente, há uma `accessReviewDecision` por usuário revisado.  Por exemplo, se um grupo tiver dois convidados e um não convidado como membros, e uma revisão de acesso de convidados for executada para esse grupo, haverá dois objetos de decisão de análise do Access.  Se um revisor alterar sua decisão ou outro revisor o substituir, o `accessReviewDecision` será atualizado.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a3ba49484f46f6d41349abbd7a857ee365ef3ff0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 034ecbdaa108d0c63378d1c00136f0415019b262
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339358"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657739"
 ---
 # <a name="accessreviewdecision-resource-type"></a>tipo de recurso accessReviewDecision
 
@@ -20,7 +20,7 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , `accessRev
 
 ## <a name="methods"></a>Métodos
 
-Nenhum  Os objetos desse tipo são criados automaticamente pelo recurso quando uma revisão do Access Inicializa e não pode ser excluída.  Eles podem ser recuperados de uma revisão de acesso usando as relações de [decisões](../api/accessreview-listdecisions.md) e mydecisions. [](../api/accessreview-listmydecisions.md)
+Nenhum.  Os objetos desse tipo são criados automaticamente pelo recurso quando uma revisão do Access Inicializa e não pode ser excluída.  Eles podem ser recuperados de uma revisão de acesso usando as relações de [decisões](../api/accessreview-listdecisions.md) e mydecisions. [](../api/accessreview-listmydecisions.md)
 
 ## <a name="properties"></a>Propriedades
 

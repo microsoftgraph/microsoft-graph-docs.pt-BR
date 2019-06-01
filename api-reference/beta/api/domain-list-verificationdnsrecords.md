@@ -1,15 +1,15 @@
 ---
 title: Listar verificationDnsRecords
 description: Recupere uma lista de objetos domainDnsRecord.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ce414fe23c00e0b4c1254bab968fff1418d881e0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e20dacd6822a2c614aad8a8b149c8c47f3142b6d
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33589269"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655751"
 ---
 # <a name="list-verificationdnsrecords"></a>Listar verificationDnsRecords
 

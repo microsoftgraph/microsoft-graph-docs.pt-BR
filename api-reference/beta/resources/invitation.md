@@ -2,14 +2,14 @@
 title: gerenciador de convites
 description: 'Use o gerenciador de convites para criar um convite para adicionar um usuário externo à organização. '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 524e97befcdc08fcf216255ee37f981a5f2b54ac
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: aaa335717fe2e6829fdff42cee180cd9a3c4ffe2
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341366"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657725"
 ---
 # <a name="invitation-manager"></a>gerenciador de convites
 
@@ -47,7 +47,7 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|invitedUser|[user](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
+|invitedUser|[Usuário](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso

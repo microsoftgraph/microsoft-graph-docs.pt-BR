@@ -2,14 +2,14 @@
 title: tipo de recurso dataPolicyOperation
 description: Representa uma operação de política de dados enviada. Ele contém informações necessárias para controlar o status de uma operação. Por exemplo, um administrador da empresa pode enviar uma solicitação de operação de política de dados para exportar os dados da empresa de um funcionário e, posteriormente, rastrear essa solicitação.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07c708ac2d46e23cc4bdcea233587c910d30fc3e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543174"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657711"
 ---
 # <a name="datapolicyoperation-resource-type"></a>tipo de recurso dataPolicyOperation
 
@@ -28,10 +28,10 @@ Representa uma operação de política de dados enviada. Ele contém informaçõ
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de política de dados foi concluída, em horário UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Nulo até que a operação seja concluída.|
-|id|Cadeia de caracteres| Chave exclusiva para esta operação. |
+|id|String| Chave exclusiva para esta operação. |
 |status|cadeia de caracteres| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|String|O local da URL para o qual os dados estão sendo exportados para solicitações de exportação.|
-|userId|String|A ID do usuário em que a operação é executada.|
+|userId|Cadeia de caracteres|A ID do usuário em que a operação é executada.|
 |submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em horário UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |progresso|Duplo|Especifica o progresso de uma operação.|
 

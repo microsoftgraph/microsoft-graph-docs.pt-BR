@@ -1,15 +1,15 @@
 ---
 title: Listar proprietários
 description: Recupere uma lista de objetos directoryobject.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 402f56dca2fcb7539976e2bf410023acc6c57990
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: a3ee383b1a1635ee593c25d2bbb191a9817ab1b0
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636370"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655177"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
@@ -76,10 +76,10 @@ Content-length: 55
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_owners-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_owners-Javascript-snippets.md)]
 
 ---

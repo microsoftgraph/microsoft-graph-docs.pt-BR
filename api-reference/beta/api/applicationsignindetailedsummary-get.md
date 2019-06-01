@@ -2,14 +2,14 @@
 title: Obter applicationSignInDetailedSummary
 description: Recupere as propriedades e os relacionamentos de um objeto applicationSignInDetailSummary.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bd479161edbf1c0b261f467671c8a4b4c8797349
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2145bfb511c1460b8001aa9eee9c1087fec460ba
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636503"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655100"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Obter applicationSignInDetailedSummary
 
@@ -88,10 +88,10 @@ Content-length: 295
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_applicationsignindetailedsummary-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_applicationsignindetailedsummary-Javascript-snippets.md)]
 
 ---

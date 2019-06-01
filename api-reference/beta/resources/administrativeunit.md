@@ -2,14 +2,14 @@
 title: tipo de recurso administrativeUnit
 description: Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de usuário e de grupo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários e grupos contidos ou dentro do escopo para uma unidade administrativa para um administrador regional ou departamental.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4dbc1c00b87e35f90cb0e14169364591c28c406f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 94d6c359449400ad2b37840b34d1b62e6f1b2138
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339124"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656843"
 ---
 # <a name="administrativeunit-resource-type"></a>tipo de recurso administrativeUnit
 
@@ -52,7 +52,7 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 |:---------------|:--------|:----------|
 |description|string|Uma descrição opcional para a unidade administrativa.|
 |displayName|string|Nome de exibição para a unidade administrativa.|
-|id|string|Identificador exclusivo para a unidade administrativa. Somente leitura.|
+|id|cadeia de caracteres|Identificador exclusivo para a unidade administrativa. Somente leitura.|
 |visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como HiddenMembership ou público. Se não for definido, o comportamento padrão é público. Quando definido como HiddenMembership, somente os membros da unidade administrativa podem listar outros membros da unidade administrativa.|
 
 ## <a name="relationships"></a>Relações

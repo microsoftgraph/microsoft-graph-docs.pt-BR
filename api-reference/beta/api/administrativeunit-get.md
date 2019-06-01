@@ -1,15 +1,15 @@
 ---
 title: Obter administrativeUnit
 description: Recupere as propriedades e os relacionamentos de um objeto administrativeUnit.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8f9a3880111cf7c3cfa51c4f59a1e5b3b5600cbf
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: aa56f7752e303ffbf694bd8ecbe21dd71884d3b1
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636650"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655296"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
@@ -78,10 +78,10 @@ Content-length: 134
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_administrativeunit-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_administrativeunit-Javascript-snippets.md)]
 
 ---

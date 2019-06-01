@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso domainDnsCnameRecord
 description: Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade DomainDnsRecord.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb730cafd1689ab95563fa1e4dd6ea23962af903
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4de771a543459ffa1529cb2a6bb11e480d645e43
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340678"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657844"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>tipo de recurso domainDnsCnameRecord
 
@@ -26,7 +26,7 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 |:---------------|:--------|:----------|
 |canônicaname|String| O nome canônico do registro CNAME. Usado para configurar o registro CNAME no host DNS. |
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura|
-|isOptional|Boolean| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável |
+|IsOptional|Booliano| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável |
 |rótulo|String| O valor usado ao configurar o *alias/host/nome* do registro CNAME no host DNS. |
 |recordType|String| Tipo de registro DNS. O valor é sempre *CNAME*. Chave|
 |supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro CNAME.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune*|

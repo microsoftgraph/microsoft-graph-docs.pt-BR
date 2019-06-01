@@ -1,15 +1,15 @@
 ---
 title: Remover um scopedRoleMember
 description: Remover um membro de função com escopo de uma unidade administrativa.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 90272c109e7304071f7245f588607c764999d0b2
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8bf7eff918b9b3e333dc0b5c19f787416675ffb6
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636678"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655415"
 ---
 # <a name="remove-a-scopedrolemember"></a>Remover um scopedRoleMember
 
@@ -65,10 +65,10 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_scopedrolemember-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_scopedrolemember-Javascript-snippets.md)]
 
 ---

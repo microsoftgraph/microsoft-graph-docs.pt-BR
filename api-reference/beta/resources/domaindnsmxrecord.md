@@ -1,15 +1,15 @@
 ---
 title: tipo de recurso domainDnsMxRecord
 description: Representa um registro MX adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade DomainDnsRecord.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cda91672d978549c1bb320b1ac4445b0844a4385
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b61638c2013257eebbe77f4c36a274619d6daf2b
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340676"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657109"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>tipo de recurso domainDnsMxRecord
 
@@ -24,7 +24,7 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura.|
-|isOptional|Boolean| Se for falso, o registro MX deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
+|IsOptional|Booliano| Se for falso, o registro MX deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
 |rótulo|String| O valor usado ao configurar a propriedade *alias/Host/Name* do registro MX no host DNS. |
 |mailExchange|String| O valor usado ao configurar a *resposta/destino/valor* do registro MX no host DNS.|
 |preferência|Int32| O valor usado ao configurar a propriedade *preference/Priority* do registro MX no host DNS. |

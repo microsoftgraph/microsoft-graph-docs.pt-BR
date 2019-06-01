@@ -2,14 +2,14 @@
 title: tipo de recurso directorySetting
 description: As configurações de diretório podem ser criadas com base no directorySettingTemplates disponível e alteradas de seus padrões predefinidos. Essas configurações podem controlar comportamentos de entidade ou de recurso, tanto em um nível de locatário quanto em um nível de entidade específico. Quando a mesma configuração é definida no nível de entidade de todo o locatário e específico, a configuração de nível de entidade específica pode ser recusada a partir da configuração de todo o locatário.  Por exemplo, a configuração de todos os locatários pode permitir que convidados sejam convidados por membros existentes de grupos, mas uma configuração de grupo específico pode recusar e não permitir que convidados sejam convidados por membros do grupo. As configurações definidas pelo sistema atualmente são controlar o comportamento de grupos do Office.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3336ec351c44ba0b69df55e1383cca73b6ea1a96
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3eccdb3b19acb286a8b67393f9a7b441b108627c
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340739"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657879"
 ---
 # <a name="directorysetting-resource-type"></a>tipo de recurso directorySetting
 
@@ -33,7 +33,7 @@ As configurações de diretório podem ser criadas com base no [directorySetting
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|string|Exibe o nome deste grupo de configurações, que vem do modelo associado. Somente leitura.|
-|id|string| Identificador exclusivo dessas configurações. Somente leitura.|
+|id|cadeia de caracteres| Identificador exclusivo dessas configurações. Somente leitura.|
 |templateId|string| Identificador exclusivo para o modelo usado para criar esse grupo de configurações. Somente leitura.|
 |values|[](settingvalue.md) coleção SettingValue| Coleção de pares de valor de nome. Deve conter e definir todas as configurações definidas no modelo.|
 

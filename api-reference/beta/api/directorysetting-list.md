@@ -1,15 +1,15 @@
 ---
 title: Listar configurações de diretório
 description: Recupere uma lista de objetos de configuração de diretório.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1c41039c75a92c1b60e806680fd99d613823a624
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 8bec072a859b43a3737aabb45f73dc546da83ca8
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590116"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655863"
 ---
 # <a name="list-directory-settings"></a>Listar configurações de diretório
 
@@ -89,10 +89,10 @@ Content-length: 263
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_settings-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_settings-Javascript-snippets.md)]
 
 ---

@@ -1,21 +1,24 @@
 ---
 title: Lista directoryAudits
-description: Fornece a lista de logs de auditoria gerado pelo Azure Active Directory. Inclui os logs de auditoria gerados por vários serviços no Azure Active Directory como Usuário, Aplicativo, Dispositivo e Gerenciamento de Grupos, Privileged Identity Management, Avaliações de Acesso, Termos de Uso, Proteção de Identidade, Gerenciamento de Senha (redefinição de senhas SSPR e pelos administradores), Autoatendimento e Gerenciamento de Grupo etc...
-localization_priority: Priority
-author: lleonard-msft
+description: Descreve o método list do recurso directoryAudit (entidade) da API do Microsoft Graph (versão beta).
+localization_priority: Normal
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: ae0c98fe5be956aa5a00ce28cad5859c12063b35
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455104"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656122"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
-Fornece a lista de logs de auditoria gerado pelo Azure Active Directory. Inclui os logs de auditoria gerados por vários serviços no Azure Active Directory como Usuário, Aplicativo, Dispositivo e Gerenciamento de Grupos, Privileged Identity Management, Avaliações de Acesso, Termos de Uso, Proteção de Identidade, Gerenciamento de Senha (redefinição de senhas SSPR e pelos administradores), Autoatendimento e Gerenciamento de Grupo etc...
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Obtenha a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo o usuário, o aplicativo, o gerenciamento de dispositivos e de grupo, o gerenciamento de identidade privilegiado (PIM), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (SSPR e senha de administrador Redefine) e gerenciamento de grupo de autoatendimento.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -27,12 +30,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 Além disso, os aplicativos devem ser [corretamente registrados](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/directoryAudits
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar a personalizar a resposta. Verifique [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para saber como usar esses parâmetros.
+
+Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [parâmetros de consulta OData](/graph/query_parameters).
 
 |Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -40,7 +46,8 @@ Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>Lista de atributos com suporte parâmetro $filter
+### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte pelo parâmetro $filter
+
 |Nome do Atributo |Operadores com suporte|
 |:----------------|:------|
 |activityDisplayName| eq, startswith|
@@ -53,33 +60,47 @@ Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar
 |initiatedBy/app/appDisplayName| eq|
 |targetResources/any(t: t/id)| eq|
 |targetResources/any(t:t/displayName)| eq, startswith|
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome      |Descrição|
 |:----------|:----------|
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_directoryaudits"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
+### <a name="response"></a>Resposta
+
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryAudit",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -87,7 +108,7 @@ Content-length: 271
 ```
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{
         "id": "id",
         "category": "UserManagement",
@@ -109,7 +130,7 @@ Content-length: 271
         "targetResources": [{
             "@odata.type": "#microsoft.graph.TargetResourceGroup",
             "id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
-            "displayName": "Lynda.com",
+            "displayName": "Example.com",
             "modifiedProperties": [{
                 "displayName": "Action Client Name",
                 "oldValue": null,
@@ -130,6 +151,16 @@ Content-length: 271
     }]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryaudits-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryaudits-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -138,5 +169,9 @@ Content-length: 271
   "description": "List directoryAudits",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

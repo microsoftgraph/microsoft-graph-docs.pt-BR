@@ -1,15 +1,15 @@
 ---
 title: Atualizar administrativeunit
 description: Atualiza as propriedades de um objeto administrativeUnit.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 56b92a7dc191b41798255f1db5a5da84285688f8
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: adf8d355c9e693ef1c79b0b774dc859e7a8d4f26
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636636"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655212"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Descrição da unidade administrativa.|
-|displayName|cadeia de caracteres|Nome de exibição para a unidade administrativa.|
+|displayName|string|Nome de exibição para a unidade administrativa.|
 |visibilidade|string|Visibilidade para a unidade administrativa. Se não for definido, o padrão será "Public". Pode ser definido como "HiddenMembership", que oculta a associação de não membros.|
 
 Como o recurso **administrativeUnit** oferece suporte a [extensões](/graph/extensibility-overview), você pode `PATCH` usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância existente do **administrativeUnit** .
@@ -85,10 +85,10 @@ Content-length: 114
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_administrativeunit-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_administrativeunit-Javascript-snippets.md)]
 
 ---
