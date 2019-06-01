@@ -1,53 +1,53 @@
 ---
 title: Obter item excluído
 description: Recupera as propriedades de um item recentemente excluído em itens excluídos.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e8dd278352ca74ea1adc16b3f7f081c70ea8387a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 586f4e8811f5fa1bbb720516f13d07ce2f403b9e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590606"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656185"
 ---
-# <a name="get-deleted-item"></a><span data-ttu-id="1ef84-103">Obter item excluído</span><span class="sxs-lookup"><span data-stu-id="1ef84-103">Get deleted item</span></span>
+# <a name="get-deleted-item"></a><span data-ttu-id="7d0b8-103">Obter item excluído</span><span class="sxs-lookup"><span data-stu-id="7d0b8-103">Get deleted item</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1ef84-104">Recupera as propriedades de um item recentemente excluído em [itens excluídos](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="1ef84-104">Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="7d0b8-104">Recupera as propriedades de um item recentemente excluído em [itens excluídos](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="7d0b8-104">Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="1ef84-105">Atualmente, a funcionalidade de itens excluídos apenas tem suporte para os recursos [group](../resources/group.md) e [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="1ef84-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
+<span data-ttu-id="7d0b8-105">Atualmente, a funcionalidade de itens excluídos apenas tem suporte para os recursos [group](../resources/group.md) e [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="7d0b8-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1ef84-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1ef84-106">Permissions</span></span>
-<span data-ttu-id="1ef84-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1ef84-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d0b8-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7d0b8-106">Permissions</span></span>
+<span data-ttu-id="7d0b8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7d0b8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="1ef84-109">Para usuários: user. Read. All, User. ReadWrite. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="1ef84-109">For users: User.Read.All, User.ReadWrite.All, Directory.Read.All</span></span>
-* <span data-ttu-id="1ef84-110">Para grupos: Group. Read. All, Group. ReadWrite. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="1ef84-110">For groups: Group.Read.All, Group.ReadWrite.All, Directory.Read.All</span></span>
+* <span data-ttu-id="7d0b8-109">Para usuários: user. Read. All, User. ReadWrite. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="7d0b8-109">For users: User.Read.All, User.ReadWrite.All, Directory.Read.All</span></span>
+* <span data-ttu-id="7d0b8-110">Para grupos: Group. Read. All, Group. ReadWrite. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="7d0b8-110">For groups: Group.Read.All, Group.ReadWrite.All, Directory.Read.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="1ef84-111">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1ef84-111">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d0b8-111">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7d0b8-111">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directory/deleteditems/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1ef84-112">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="1ef84-112">Optional query parameters</span></span>
-<span data-ttu-id="1ef84-113">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="1ef84-113">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7d0b8-112">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7d0b8-112">Optional query parameters</span></span>
+<span data-ttu-id="7d0b8-113">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7d0b8-113">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1ef84-114">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1ef84-114">Request headers</span></span>
-| <span data-ttu-id="1ef84-115">Nome</span><span class="sxs-lookup"><span data-stu-id="1ef84-115">Name</span></span>      |<span data-ttu-id="1ef84-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="1ef84-116">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7d0b8-114">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7d0b8-114">Request headers</span></span>
+| <span data-ttu-id="7d0b8-115">Nome</span><span class="sxs-lookup"><span data-stu-id="7d0b8-115">Name</span></span>      |<span data-ttu-id="7d0b8-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="7d0b8-116">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="1ef84-117">Autorização</span><span class="sxs-lookup"><span data-stu-id="1ef84-117">Authorization</span></span>  | <span data-ttu-id="1ef84-118">&lt;Código&gt; do portador *Obrigatório*</span><span class="sxs-lookup"><span data-stu-id="1ef84-118">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="1ef84-119">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1ef84-119">Accept</span></span>  | <span data-ttu-id="1ef84-120">application/json</span><span class="sxs-lookup"><span data-stu-id="1ef84-120">application/json</span></span> |
+| <span data-ttu-id="7d0b8-117">Autorização</span><span class="sxs-lookup"><span data-stu-id="7d0b8-117">Authorization</span></span>  | <span data-ttu-id="7d0b8-118">&lt;Código&gt; do portador *Obrigatório*</span><span class="sxs-lookup"><span data-stu-id="7d0b8-118">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="7d0b8-119">Aceitar</span><span class="sxs-lookup"><span data-stu-id="7d0b8-119">Accept</span></span>  | <span data-ttu-id="7d0b8-120">application/json</span><span class="sxs-lookup"><span data-stu-id="7d0b8-120">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1ef84-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1ef84-121">Request body</span></span>
-<span data-ttu-id="1ef84-122">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1ef84-122">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d0b8-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7d0b8-121">Request body</span></span>
+<span data-ttu-id="7d0b8-122">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7d0b8-122">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1ef84-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ef84-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7d0b8-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d0b8-123">Response</span></span>
 
-<span data-ttu-id="1ef84-124">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1ef84-124">If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1ef84-125">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1ef84-125">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1ef84-126">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1ef84-126">Request</span></span>
+<span data-ttu-id="7d0b8-124">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7d0b8-124">If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7d0b8-125">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7d0b8-125">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7d0b8-126">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7d0b8-126">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -56,8 +56,8 @@ GET /directory/deleteditems/{id}
 ```http
 GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
-##### <a name="response"></a><span data-ttu-id="1ef84-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ef84-127">Response</span></span>
-<span data-ttu-id="1ef84-p102">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1ef84-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7d0b8-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d0b8-127">Response</span></span>
+<span data-ttu-id="7d0b8-p102">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7d0b8-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,11 +79,11 @@ Content-type: application/json
   "visibility":"Public"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="1ef84-130">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="1ef84-130">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="1ef84-131">Basic</span><span class="sxs-lookup"><span data-stu-id="1ef84-131">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="7d0b8-130">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="7d0b8-130">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="7d0b8-131">C#</span><span class="sxs-lookup"><span data-stu-id="7d0b8-131">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directory-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1ef84-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1ef84-132">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7d0b8-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="7d0b8-132">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directory-Javascript-snippets.md)]
 
 ---
