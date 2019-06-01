@@ -2,50 +2,50 @@
 title: Listar registeredOwners
 description: Recupera uma lista de usuários que são proprietários registrados do dispositivo. Um proprietário registrado é o usuário que se associou ao dispositivo na nuvem ou que registrou o dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ec8990a2b0c2d0f674304c4005fbf28a0b5a631e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1ae819c9144f1996cb2961eced6211c9437ab3c
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583743"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657340"
 ---
-# <a name="list-registeredowners"></a><span data-ttu-id="24393-106">Listar registeredOwners</span><span class="sxs-lookup"><span data-stu-id="24393-106">List registeredOwners</span></span>
+# <a name="list-registeredowners"></a><span data-ttu-id="b1c53-106">Listar registeredOwners</span><span class="sxs-lookup"><span data-stu-id="b1c53-106">List registeredOwners</span></span>
 
-<span data-ttu-id="24393-107">Recupera uma lista de usuários que são proprietários registrados do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="24393-107">Retrieve a list of users that are registered owners of the device.</span></span> <span data-ttu-id="24393-108">Um proprietário registrado é o usuário que se associou ao dispositivo na nuvem ou que registrou o dispositivo pessoal.</span><span class="sxs-lookup"><span data-stu-id="24393-108">A registered owner is the user that cloud joined the device or registered their personal device.</span></span> <span data-ttu-id="24393-109">O proprietário registrado é definido no momento do registro.</span><span class="sxs-lookup"><span data-stu-id="24393-109">The registered owner is set at the time of registration.</span></span> <span data-ttu-id="24393-110">Atualmente, só pode haver um proprietário.</span><span class="sxs-lookup"><span data-stu-id="24393-110">Currently, there can be only one owner.</span></span>
+<span data-ttu-id="b1c53-107">Recupera uma lista de usuários que são proprietários registrados do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="b1c53-107">Retrieve a list of users that are registered owners of the device.</span></span> <span data-ttu-id="b1c53-108">Um proprietário registrado é o usuário que se associou ao dispositivo na nuvem ou que registrou o dispositivo pessoal.</span><span class="sxs-lookup"><span data-stu-id="b1c53-108">A registered owner is the user that cloud joined the device or registered their personal device.</span></span> <span data-ttu-id="b1c53-109">O proprietário registrado é definido no momento do registro.</span><span class="sxs-lookup"><span data-stu-id="b1c53-109">The registered owner is set at the time of registration.</span></span> <span data-ttu-id="b1c53-110">Atualmente, só pode haver um proprietário.</span><span class="sxs-lookup"><span data-stu-id="b1c53-110">Currently, there can be only one owner.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="24393-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="24393-111">Permissions</span></span>
-<span data-ttu-id="24393-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="24393-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b1c53-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="b1c53-111">Permissions</span></span>
+<span data-ttu-id="b1c53-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b1c53-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="24393-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="24393-114">Permission type</span></span>      | <span data-ttu-id="24393-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="24393-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b1c53-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b1c53-114">Permission type</span></span>      | <span data-ttu-id="b1c53-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b1c53-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="24393-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="24393-116">Delegated (work or school account)</span></span> | <span data-ttu-id="24393-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="24393-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="24393-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="24393-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="24393-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="24393-119">Not supported.</span></span>    |
-|<span data-ttu-id="24393-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="24393-120">Application</span></span> | <span data-ttu-id="24393-121">Directory.Read.All ou Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="24393-121">Directory.Read.All or Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="b1c53-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b1c53-116">Delegated (work or school account)</span></span> | <span data-ttu-id="b1c53-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b1c53-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="b1c53-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b1c53-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b1c53-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b1c53-119">Not supported.</span></span>    |
+|<span data-ttu-id="b1c53-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b1c53-120">Application</span></span> | <span data-ttu-id="b1c53-121">Directory.Read.All ou Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b1c53-121">Directory.Read.All or Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="24393-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="24393-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b1c53-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b1c53-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/registeredOwners
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="24393-123">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="24393-123">Optional query parameters</span></span>
-<span data-ttu-id="24393-124">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="24393-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="24393-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="24393-125">Request headers</span></span>
-| <span data-ttu-id="24393-126">Nome</span><span class="sxs-lookup"><span data-stu-id="24393-126">Name</span></span>       | <span data-ttu-id="24393-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="24393-127">Type</span></span> | <span data-ttu-id="24393-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="24393-128">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="b1c53-123">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b1c53-123">Optional query parameters</span></span>
+<span data-ttu-id="b1c53-124">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b1c53-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b1c53-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b1c53-125">Request headers</span></span>
+| <span data-ttu-id="b1c53-126">Nome</span><span class="sxs-lookup"><span data-stu-id="b1c53-126">Name</span></span>       | <span data-ttu-id="b1c53-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="b1c53-127">Type</span></span> | <span data-ttu-id="b1c53-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="b1c53-128">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="24393-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="24393-129">Authorization</span></span>  | <span data-ttu-id="24393-130">string</span><span class="sxs-lookup"><span data-stu-id="24393-130">string</span></span>  | <span data-ttu-id="24393-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="24393-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b1c53-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="b1c53-129">Authorization</span></span>  | <span data-ttu-id="b1c53-130">string</span><span class="sxs-lookup"><span data-stu-id="b1c53-130">string</span></span>  | <span data-ttu-id="b1c53-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b1c53-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="24393-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="24393-133">Request body</span></span>
-<span data-ttu-id="24393-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="24393-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b1c53-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b1c53-133">Request body</span></span>
+<span data-ttu-id="b1c53-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b1c53-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="24393-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="24393-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b1c53-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="b1c53-135">Response</span></span>
 
-<span data-ttu-id="24393-136">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="24393-136">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="24393-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="24393-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="24393-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="24393-138">Request</span></span>
-<span data-ttu-id="24393-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="24393-139">Here is an example of the request.</span></span>
+<span data-ttu-id="b1c53-136">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b1c53-136">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b1c53-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b1c53-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b1c53-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b1c53-138">Request</span></span>
+<span data-ttu-id="b1c53-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b1c53-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_registeredowners"
@@ -53,8 +53,8 @@ GET /devices/{id}/registeredOwners
 ```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
 ```
-##### <a name="response"></a><span data-ttu-id="24393-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="24393-140">Response</span></span>
-<span data-ttu-id="24393-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="24393-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b1c53-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="b1c53-140">Response</span></span>
+<span data-ttu-id="b1c53-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b1c53-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -74,6 +74,16 @@ Content-length: 55
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b1c53-144">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="b1c53-144">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b1c53-145">C#</span><span class="sxs-lookup"><span data-stu-id="b1c53-145">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_registeredowners-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b1c53-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="b1c53-146">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_registeredowners-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,5 +92,9 @@ Content-length: 55
   "description": "List registeredOwners",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/device-list-registeredowners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/device-list-registeredowners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
