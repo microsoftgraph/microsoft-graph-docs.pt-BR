@@ -4,12 +4,12 @@ description: A API educacional do Microsoft Graph aprimora os recursos do Office
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: 0d3f5360d0ef40283021a1e037c40df66d90dd92
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f181441a9333d678ecb989eaa369e972b45ba570
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526229"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536509"
 ---
 # <a name="education-api-overview"></a>Visão geral da API de educação
 
@@ -23,7 +23,7 @@ A API educacional do Microsoft Graph fornece acesso a aulas, escolas, usuários,
 
 ### <a name="build-applications-that-are-aware-of-class-roster"></a>Criar aplicativos que reconhecem a lista de participantes do curso
 
-A maioria dos desenvolvedores de softwares educacionais sabe desde o início que essa lista de participantes do curso é uma das principais informações necessárias à execução do aplicativo, e geralmente ela está “presa” no Sistema de Informações do Aluno (SIS, Student Information System) da escola. Sempre que os professores utilizam um novo aplicativo na sala de aula, eles perdem tempo importando manualmente os dados da lista de participação para o aplicativo. Muitos ISVs abordam isso se conectando a um SIS para importar os dados da lista de participação. Com centenas de SIS com formatos proprietários, isso pode se tornar um desafio. O [Microsoft School Data Sync](https://sds.microsoft.com/), combinado às APIs de lista de participação, lida com esse desafio para desenvolvedores de aplicativos e escolas.
+A maioria dos desenvolvedores de softwares educacionais sabe desde o início que essa lista de participantes do curso é uma das principais informações necessárias à execução do aplicativo, e geralmente ela está “presa” no Sistema de Informações do Aluno (SIS, Student Information System) da escola. Sempre que os professores utilizam um novo aplicativo na sala de aula, eles perdem tempo importando manualmente os dados da lista de participação para o aplicativo. Muitos fornecedores independentes de software (ISVs) abordam isso se conectando a um SIS para importar os dados da lista de participação. Com centenas de SIS com formatos proprietários, isso pode se tornar um desafio. O [Microsoft School Data Sync](https://sds.microsoft.com/), combinado às APIs de lista de participação, lida com esse desafio para desenvolvedores de aplicativos e escolas.
 
 Vejamos a seguir alguns dos cenários permitidos pelas APIs de lista de participação:
 

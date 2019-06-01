@@ -3,12 +3,12 @@ title: tipo de recurso de assinatura
 description: 'Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:'
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: db3a536395f327115af69f769f37c823013ec7fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 30671dcd93b4593015a5c3cf2eeddac8d7e00c4d
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563697"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536771"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -75,7 +75,8 @@ Veja a seguir uma representação JSON do recurso.
 
 | Recurso            | Tempo de Expiração Máximo  |
 |:--------------------|:-------------------------|
-| Email                | 4230 minutos (em 3 dias)    |
+| Usuário, grupo, outros recursos de diretório   | 4230 minutos (em 3 dias)    |
+| Correio                | 4230 minutos (em 3 dias)    |
 | Calendário            | 4230 minutos (em 3 dias)    |
 | Contatos            | 4230 minutos (em 3 dias)    |
 | Conversas em grupo | 4230 minutos (em 3 dias)    |
