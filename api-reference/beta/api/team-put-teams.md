@@ -4,16 +4,19 @@ description: Crie uma nova equipe a partir de um grupo.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9950b92acb28d8138bba363170c8e1e89b5f1d5a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c47b3e7568c09c3b7f5e3debaec2eb74e074d6e7
+ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335248"
+ms.lasthandoff: 06/01/2019
+ms.locfileid: "34669656"
 ---
 # <a name="create-team-from-group"></a>Criar equipe a partir do grupo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> Essa API está sendo preterida em favor de [Criar equipe](../api/team-post.md) e será removida até o final de 2019. Para obter detalhes sobre como criar uma equipe a partir de um grupo, confira os exemplos 4 e 5 em [Criar equipe](../api/team-post.md).
 
 Crie uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md).
 

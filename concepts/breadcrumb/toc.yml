@@ -1,18 +1,11 @@
 - name: Microsoft Graph
-  tocHref: /graph/
-  topicHref: /graph/overview
-- name: MS Graph
-  tocHref: /azure/
-  topicHref: /graph/overview
+  tocHref: /graph
+  topicHref: /graph
   items:
-    - name: Desenvolver
-      topHref: /azure/active-directory/
-      topicHref: /graph/auth/index
+    - name: Explorar
+      tocHref: /graph/overview
+      topiccHref: /graph/overview
       items:
-        - name: Obter tokens de autenticação
-          topHref: /azure/active-directory/develop/
-          topicHref: /graph/auth/index
-          items:
-            - name: Registrar um aplicativo
-              topHref: /azure/active-directory/develop/quickstart-register-app/
-              topicHref: /graph/
+        - name: Termos de uso
+          tocHref: /legal/microsoft-apis/terms-of-use
+          topicHref: /legal/microsoft-apis/terms-of-use

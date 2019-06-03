@@ -4,18 +4,18 @@ description: 'A conexão de dados do Microsoft Graph traz dados do Office 365 e 
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 10f5626a785e357677d6428b060e421a1bbf9138
-ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
+ms.openlocfilehash: 2a7756223f7a94eafc62ed14f455e67a4aae880a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34407062"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656416"
 ---
 # <a name="microsoft-graph-data-connect"></a>Conexão de dados do Microsoft Graph
 
-A conexão de dados do Microsoft Graph traz dados do Office 365 e recursos do Microsoft Azure para você através de um conjunto de ferramentas. Você pode usar a conexão de dados do Microsoft Graph para criar aplicativos inteligentes que acessam dados valiosos usando as melhores ferramentas de desenvolvimento oferecidas pela Microsoft, tudo isso dentro da nuvem segura da Microsoft. Todas as empresas estão interessadas em melhorar a produtividade, o que significa que a criação de produtos que tornam os trabalhadores do conhecimento mais produtivos apresenta grandes oportunidades. 
+A conexão de dados do Microsoft Graph traz dados do Office 365 e recursos do Microsoft Azure para você através de um conjunto de ferramentas. Você pode usar a conexão de dados do Microsoft Graph para criar aplicativos inteligentes que acessam dados valiosos usando as melhores ferramentas de desenvolvimento oferecidas pela Microsoft, tudo isso dentro da nuvem segura da Microsoft. Todas as empresas estão interessadas em melhorar a produtividade, o que significa que a criação de produtos que tornam os trabalhadores do conhecimento mais produtivos apresenta grandes oportunidades.
 
-Você pode aproveitar a conexão de dados do Microsoft Graph se concordar com os [termos de uso](https://developer.microsoft.com/pt-BR/graph/terms-of-use) e a [Declaração de privacidade do Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=123161) e são:
+Você pode aproveitar a conexão de dados do Microsoft Graph se concordar com os [Termos de Uso das APIs da Microsoft](/legal/microsoft-apis/terms-of-use?context=/graph/context) e a [Declaração de privacidade da Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=123161) e são:
 
 - Um ISV criando aplicativos inteligentes para todos os clientes do Office 365.
 - Um desenvolvedor corporativo criando aplicativos inteligentes para todos dentro da organização que acessam os dados do Office 365.
@@ -30,5 +30,5 @@ Após desenvolver um aplicativo usando a conexão de dados do Microsoft Graph, v
 
 Os clientes que instalam o aplicativo verão os termos de serviço, os dados necessários, o preço de cada SKU do aplicativo e o custo aproximado do consumo do recurso. Quando as propriedades de implantação são especificadas pelo comprador, os recursos são provisionados. Isso inclui o pipeline Data Factory que inicia a extração de dados. Você fornece um Leiame para seu aplicativo que explica quando se deve esperar que a instalação seja concluída, como usar o aplicativo e como obter suporte.
 
-## <a name="next-steps"></a>Próximas etapas 
+## <a name="next-steps"></a>Próximas etapas
 Para começar a desenvolver a conexão de dados do Microsoft Graph, confira [Visão geral da conexão de dados do Microsoft Graph](data-connect-concept-overview.md).

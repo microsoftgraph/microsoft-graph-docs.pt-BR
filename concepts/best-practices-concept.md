@@ -2,12 +2,12 @@
 title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 localization_priority: Priority
-ms.openlocfilehash: 11db24ee87485987f1bf23e750d4af59206885a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4d0f0a382b7a61fe636ae5fb0fc791ed1f63327d
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526367"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657606"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
@@ -94,7 +94,7 @@ Por padrão, o Microsoft Graph não retorna membros desconhecidos. Se, no entant
 
 ## <a name="storing-data-locally"></a>Armazenamento de dados no local
 
-Idealmente, seu aplicativo deveria fazer chamadas para o Microsoft Graph para recuperar dados em tempo real conforme necessário. Você só deve armazenar em cache ou armazenar dados localmente se um cenário específico assim o exigir e, se esse caso de uso for abrangido pelos seus termos de uso e pela política de privacidade e não violar os [termos de uso do Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use). O aplicativo também deve implementar políticas adequadas de retenção e de exclusão.
+Idealmente, seu aplicativo deveria fazer chamadas para o Microsoft Graph para recuperar dados em tempo real conforme necessário. Você só deve armazenar em cache ou armazenar dados localmente se um cenário específico assim o exigir e, se esse caso de uso for abrangido pelos seus termos de uso e pela política de privacidade e não violar os [termos de uso das APIs da Microsoft](/legal/microsoft-apis/terms-of-use?context=/graph/context). O aplicativo também deve implementar políticas adequadas de retenção e de exclusão.
 
 ## <a name="optimizations"></a>Otimizações
 

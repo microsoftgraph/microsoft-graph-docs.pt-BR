@@ -3,16 +3,16 @@ title: Visão geral do Microsoft Graph
 description: O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. O Microsoft Graph fornece um modelo de programabilidade unificada que você pode usar para aproveitar a enorme quantidade de dados disponíveis no Office 365, no Enterprise Mobility + Security e no Windows 10.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 071023ed10658b1e3ebebff50c1845db5a6913a6
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: c97f7d681774a6ba6ffa3969cec35f4104c1edbb
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639541"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656913"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão geral do Microsoft Graph
 
-O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. Ele fornece um modelo de programabilidade unificada que você pode usar para acessar a grande quantidade de dados disponíveis no Office 365, no Windows 10 e no Enterprise Mobility + Security. Você pode usar a grande quantidade de dados no Microsoft Graph para criar aplicativos para organizações e clientes que interagem com milhões de usuários. 
+O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. Ele fornece um modelo de programabilidade unificada que você pode usar para acessar a grande quantidade de dados disponíveis no Office 365, no Windows 10 e no Enterprise Mobility + Security. Você pode usar a grande quantidade de dados no Microsoft Graph para criar aplicativos para organizações e clientes que interagem com milhões de usuários.
 
 ## <a name="powering-the-microsoft-365-platform"></a>Alimentar a plataforma do Microsoft 365
 
@@ -26,14 +26,15 @@ Na plataforma do Microsoft 365, três componentes principais facilitam o acesso 
 
 Juntos, o API do Microsoft Graph Data Connect e Connectors (visualização privada) alimentam a plataforma do Microsoft 365. Com a capacidade de acessar dados e outros conjuntos de dados do Microsoft Graph para gerar informação e análise, você pode ampliar as experiências Microsoft 365 ou desenvolver aplicativos exclusivos e inteligentes.
 
->**Observação**: o Microsoft Graph Connectors está em uma visualização privada. A participação no programa de visualização é apenas por convite. Para mais informações sobre os conectores, confira [Build 2019: Microsoft Graph alimenta a plataforma do Microsoft 365](https://aka.ms/microsoftgraphbuild2019).
-
+> [!NOTE]
+> O Microsoft Graph está em uma visualização privada. A participação no programa de visualização é apenas por convite. Para mais informações sobre os conectores, confira [Build 2019: Microsoft Graph alimenta a plataforma do Microsoft 365](https://aka.ms/microsoftgraphbuild2019).
 
 ## <a name="whats-in-microsoft-graph"></a>Serviços do Microsoft Graph
+
 O Microsoft Graph expõe as APIs REST e bibliotecas do cliente para acessar dados nos seguintes serviços Microsoft 365:
 
 - Serviços Office 365: Delve, Excel, Microsoft Bookings, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, e SharePoint
-- Serviços Enterprise Mobility e Security: Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, e Intune 
+- Serviços Enterprise Mobility e Security: Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, e Intune
 - Serviços do Windows 10: atividades, dispositivos e notificações
 - Dynamics 365 Business Central
 
@@ -41,7 +42,7 @@ Para saber mais, confira os [Principais serviços e recursos do Microsoft Graph]
 
 ![Uma imagem mostrando os recursos principais e as relações que fazem parte do gráfico](images/microsoft-graph.png)
 
-## <a name="what-can-you-do-with-microsoft-graph"></a>O que você pode fazer com o Microsoft Graph? 
+## <a name="what-can-you-do-with-microsoft-graph"></a>O que você pode fazer com o Microsoft Graph?
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
 
@@ -57,21 +58,22 @@ Você pode usar o Microsoft Graph para criar experiências de acordo com o conte
 
 Escolha o primeiro cenário sobre a pesquisa de participantes da reunião como um exemplo. Com a API do Microsoft Graph, você pode:
 
-1. Obtenha os endereços de email dos participantes de um [evento de reunião](/graph/api/resources/event?view=graph-rest-1.0). 
+1. Obtenha os endereços de email dos participantes de um [evento de reunião](/graph/api/resources/event?view=graph-rest-1.0).
 2. Faça a pesquisa individualmente como um [usuário](/graph/api/resources/user?view=graph-rest-1.0) no Azure Active Directory para [obter as informações de perfil](/graph/api/user-get?view=graph-rest-1.0).
 
-Você pode navegar por outros recursos usando relações: 
+Você pode navegar por outros recursos usando relações:
 
 - Conecte-se ao gerente por meio de uma [relação de gerente](/graph/api/user-list-manager?view=graph-rest-1.0).
 - Obtenha informações valiosas e inteligência incluindo arquivos populares com [tendências ao redor](/graph/api/resources/insights-trending?view=graph-rest-beta) do usuário.
 - [Obtenha as pessoas mais relevantes](/graph/api/user-list-people?view=graph-rest-beta) para o usuário.
 - Estender o cenário para acessar os grupos de usuários por meio de uma relação [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)
-- [Acessar outros membros em cada grupo](/graph/api/group-list-members?view=graph-rest-1.0). 
-- Toque em outras situações habilitadas por [grupos](office365-groups-concept-overview.md), como [educação](education-concept-overview.md) e [trabalho em equipe](teams-concept-overview.md). 
+- [Acessar outros membros em cada grupo](/graph/api/group-list-members?view=graph-rest-1.0).
+- Toque em outras situações habilitadas por [grupos](office365-groups-concept-overview.md), como [educação](education-concept-overview.md) e [trabalho em equipe](teams-concept-overview.md).
 
 Microsoft Graph continua a abrir a plataforma Microsoft 365 para os desenvolvedores, e sempre somente com as permissões apropriadas.
 
->**Observação:** ao usar a API do Microsoft Graph, você concorda com os [Termos de Uso do Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use) e com a [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).
+> [!NOTE]
+> Ao usar a API do Microsoft Graph, você concorda com os [Termos de Uso das APIs da Microsoft](/legal/microsoft-apis/terms-of-use?context=/graph/context) e com a [Declaração de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ### <a name="popular-api-requests"></a>Solicitações de API populares
 
@@ -79,28 +81,28 @@ Veja alguns desses cenários mais comuns para trabalhar com a API do Microsoft G
 
 | **Operação** | **URL** |
 |:--------------------------|:----------------------------------------|
-|   GET meu perfil |    [`https://graph.microsoft.com/v1.0/me`](https://developer.microsoft.com/graph/graph-explorer/?request=me&version=v1.0) |
+|   GET meu perfil | [`https://graph.microsoft.com/v1.0/me`](https://developer.microsoft.com/graph/graph-explorer/?request=me&version=v1.0) |
 |   GET meus arquivos | [`https://graph.microsoft.com/v1.0/me/drive/root/children`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fdrive%2Froot%2Fchildren&version=v1.0) |
 |   GET minha foto | [`https://graph.microsoft.com/v1.0/me/photo/$value`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fphoto%2F%24value&version=v1.0) |
-|   GET meu email |   [`https://graph.microsoft.com/v1.0/me/messages`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0) |
+|   GET meu email | [`https://graph.microsoft.com/v1.0/me/messages`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0) |
 |   GET meu email de alta prioridade | [`https://graph.microsoft.com/v1.0/me/messages?$filter=importance%20eq%20'high'`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages%3F%24filter%3Dimportance%2520eq%2520'high'&version=v1.0) |
-|   GET eventos do meu calendário |    [`https://graph.microsoft.com/v1.0/me/events`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) |
-|   GET meu gerente  | [`https://graph.microsoft.com/v1.0/me/manager`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmanager&version=v1.0) |
-|   GET o último usuário que modificou o arquivo foo.txt |  [`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fdrive%2Froot%2Fchildren%2Ffoo.txt%2FlastModifiedByUser&version=v1.0) |
+|   GET eventos do meu calendário | [`https://graph.microsoft.com/v1.0/me/events`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) |
+|   GET meu gerente | [`https://graph.microsoft.com/v1.0/me/manager`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmanager&version=v1.0) |
+|   GET o último usuário que modificou o arquivo foo.txt | [`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fdrive%2Froot%2Fchildren%2Ffoo.txt%2FlastModifiedByUser&version=v1.0) |
 |   GET grupos do Office365 dos quais eu sou membro| [`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2FmemberOf%2F%24%2Fmicrosoft.graph.group%3F%24filter%3DgroupTypes%2Fany(a%3Aa%2520eq%2520'unified')&version=v1.0) |
-|   GET os usuários em minha organização     | [`https://graph.microsoft.com/v1.0/users`](https://developer.microsoft.com/graph/graph-explorer/?request=users&version=v1.0) |
+|   GET os usuários em minha organização  | [`https://graph.microsoft.com/v1.0/users`](https://developer.microsoft.com/graph/graph-explorer/?request=users&version=v1.0) |
 |   GET grupos em minha organização | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
-|   GET as pessoas relacionadas a mim    | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
-|   Itens GET mais populares à minha volta |  [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
-|   GET minhas anotações |  [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
+|   GET as pessoas relacionadas a mim | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
+|   Itens GET mais populares à minha volta | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
+|   GET minhas anotações | [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
 ## <a name="access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect"></a>Acesse dados do Microsoft Graph em escala com o Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect oferece um conjunto de ferramentas de acesso aos dados no Microsoft Graph em escala, permitindo aos administradores autorização granular e controle total sobre seus dados do Microsoft Graph. Data Connect simplifica a entrega desses dados para o Microsoft Azure. 
+Microsoft Graph Data Connect oferece um conjunto de ferramentas de acesso aos dados no Microsoft Graph em escala, permitindo aos administradores autorização granular e controle total sobre seus dados do Microsoft Graph. Data Connect simplifica a entrega desses dados para o Microsoft Azure.
 
 Ao usar ferramentas Azure, você pode então criar aplicativos inteligentes que:
 
-- Encontram para você o especialista em um determinado tópico mais próximo em sua organização 
+- Encontram para você o especialista em um determinado tópico mais próximo em sua organização
 - Automatizam a criação de base de dados de conhecimento
 - Analisam solicitações de reunião para fornecer insights sobre o uso de sala de conferência
 - Detectam fraudes envolvendo dados de comunicação e de produtividade
@@ -119,15 +121,13 @@ O Microsoft Graph Data Connect fornece uma nova maneira de interagir com os dado
 | **Consentimento do administrador** | Toda a organização<br>Tipos de recursos | Selecione grupos de usuários<br>Propriedades e tipos de recursos<br>Exclui usuários |
 | **Ferramentas de acesso** | Consultas da Web RESTful | Azure Data Factory |
 
- Para obter mais informações, consulte [Microsoft Graph Data Connect](data-connect-overview.md), e [Introdução ao Microsoft Graph Data Connect](data-connect-concept-overview.md). 
+ Para obter mais informações, consulte [Microsoft Graph Data Connect](data-connect-overview.md), e [Introdução ao Microsoft Graph Data Connect](data-connect-concept-overview.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
 - Confira alguns [cenários em destaque](https://developer.microsoft.com/graph/examples).
 - Experimente um exemplo de solicitação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Use o [início rápido](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de exemplo pronto para funcionar.
-- Consulte o item **Saiba mais** no índice para ler sobre os serviços e recursos que você pode usar em seus cenários. 
+- Consulte o item **Saiba mais** no índice para ler sobre os serviços e recursos que você pode usar em seus cenários.
 - Descubra como [obter um token de autenticação](auth/auth-concepts.md) em seu aplicativo.
 - Comece a [usar a API](use-the-api.md).
-
-
