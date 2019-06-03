@@ -1,15 +1,15 @@
 ---
 title: Obter directoryObject
 description: Recupere as propriedades e os relacionamentos do objeto directoryObject.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 79cf534fc154257a952bef6494c3aa0124dfb928
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ee35563a3b2e89c2d43cf683745afff202f69d1
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571944"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656997"
 ---
 # <a name="get-directoryobject"></a>Obter directoryObject
 
@@ -52,7 +52,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -66,6 +66,16 @@ Content-type: application/json
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryobject-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryobject-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -74,5 +84,9 @@ Content-type: application/json
   "description": "Get directoryObject",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/directoryobject-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/directoryobject-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

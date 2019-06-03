@@ -2,14 +2,14 @@
 title: tipo de recurso do aplicativo
 description: 'Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no Azure Active Directory (Azure AD) deve estar registrado em um diretório. O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Para saber mais, confira Noções básicas de como registrar um aplicativo no Azure AD. Herda de directoryObject. '
 localization_priority: Priority
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a0bed2d85e0b7308e8006c99143ea80e2d756202
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 153079b2c03066445a61a0672416a5615d12ab62
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339051"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657669"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 

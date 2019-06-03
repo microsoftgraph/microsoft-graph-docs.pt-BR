@@ -2,14 +2,14 @@
 title: Obter organização
 description: Recupere as propriedades e os relacionamentos da organização autenticada no momento.
 localization_priority: Priority
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8bf23b2c733a5788866a20ee76960f1b25bf0cb0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7dda606f102b189d10ee45e3cae04c23fde31570
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33612736"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657816"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -104,7 +104,7 @@ Content-length: 411
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_organization-Cs-snippets.md)]
 
