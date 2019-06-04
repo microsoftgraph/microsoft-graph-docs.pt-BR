@@ -88,10 +88,8 @@ Após a conclusão da instalação, o pacote é exibido abaixo de **Referências
 
 Para saber mais sobre a incluisão e o consumo de pacotes do NuGet de seu aplicativo UWP, confira:
 
-* 
-  [Usar os pacotes do nuget.org](https://docs.microsoft.com/pt-BR/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
-* 
-  [Início rápido: Instalar e usar um pacote no Visual Studio](https://docs.microsoft.com/pt-BR/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [Usar os pacotes do nuget.org](https://docs.microsoft.com/pt-BR/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
+* [Início rápido: Instalar e usar um pacote no Visual Studio](https://docs.microsoft.com/pt-BR/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 ## <a name="initializing-the-connected-device-platforms"></a>Inicializando as Plataformas de Dispositivo Conectado
@@ -279,7 +277,6 @@ await channel.DeleteUserNotificationAsync(notification.Id);
 
 ## <a name="see-also"></a>Confira também
 
-- 
-  [Referência da API](https://docs.microsoft.com/pt-BR/windows/project-rome/notifications/api-reference-for-windows/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
+- [Referência da API](https://docs.microsoft.com/pt-BR/windows/project-rome/notifications/api-reference-for-windows/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
 - [Exemplo do lado do cliente](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample) para aplicativos UWP do Windows.
 - [Exemplo do servidor do aplicativo](notifications-integrating-app-server.md) para publicar as notificações. 

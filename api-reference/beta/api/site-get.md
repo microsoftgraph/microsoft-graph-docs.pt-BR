@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Obter um Site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e0242952a0cecef9ab23cad2cdcd3175dd08fe24
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: f189a28d9b4853492c68e581fc9790253ce6de89
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638701"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34683549"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 
@@ -19,17 +19,6 @@ ms.locfileid: "33638701"
 Recupere as propriedades e as relações de um recurso [site][]. Um recurso **site** representa um site de equipe no SharePoint.
 
 [site]: ../resources/site.md
-
-Um **site** é endereçado para ser um identificador exclusivo que é uma ID composta dos seguintes valores:
-
-* Hostname do conjunto de sites (contoso.sharepoint.com)
-* ID exclusiva do conjunto de sites (GUID)
-* ID exclusiva do site (GUID)
-
-Há também um identificador de site reservado, `root`, que sempre faz referência ao site raiz de um determinado destino da seguinte maneira:
-
-* `/sites/root`: O site raiz do locatário.
-* `/groups/{group-id}/sites/root`: O site da equipe do grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -102,10 +91,10 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-site-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-site-Javascript-snippets.md)]
 
 ---

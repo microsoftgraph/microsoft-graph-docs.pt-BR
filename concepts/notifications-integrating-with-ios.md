@@ -251,7 +251,6 @@ Uma notificação é removida do repositório de notificação do usuário apena
 
 ## <a name="see-also"></a>Confira também
 
-- 
-  [Referência da API](https://docs.microsoft.com/pt-BR/windows/project-rome/notifications/api-reference-for-ios/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
+- [Referência da API](https://docs.microsoft.com/pt-BR/windows/project-rome/notifications/api-reference-for-ios/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
 - [Exemplo do lado do cliente](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) para aplicativos Android.
 - [Exemplo do servidor do aplicativo](notifications-integrating-app-server.md) para publicar as notificações. 

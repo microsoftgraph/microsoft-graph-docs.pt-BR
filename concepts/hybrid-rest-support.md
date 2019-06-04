@@ -44,7 +44,6 @@ O Microsoft Graph fornece abertura (suporte a padrões abertos como JSON, OAUTH 
 
 Os administradores de TI podem encontrar mais informações nos seguintes recursos:
 
-- 
-  [Implantações Híbridas do Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
+- [Implantações Híbridas do Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
 - [Lançamento de atualização cumulativa de setembro de 2016](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [Requisitos de arquitetura local para a API REST](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)
