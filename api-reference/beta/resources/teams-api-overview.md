@@ -4,12 +4,12 @@ description: O Microsoft Teams é um espaço de trabalho baseado em chat no Offi
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 53334b834e9c4c0248a02f9d3c5c27c41cb47bcd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ba27e303ab05e3a9ea3e02f3d0a32066e60c82a6
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345672"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709380"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -27,8 +27,8 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Office 365 que fo
 |[teamsTab](../resources/teamstab.md) |[Listar](../api/teamstab-list.md), [criar](../api/teamstab-add.md), [ler](../api/teamstab-get.md), [atualizar](../api/teamstab-update.md), [excluir](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[Listar](../api/teamsapp-list.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/teamsappinstallation-list.md), [instalar](../api/teamsappinstallation-add.md), [atualizar](../api/teamsappinstallation-delete.md), [remover](../api/teamsappinstallation-delete.md) |
-| [chatMessage](../resources/chatmessage.md) (visualização)| [Lista](../api/channel-list-messages.md), [enviar](../api/channel-post-chatmessage.md), [ler](/graph/api/channel-get-message?view=graph-rest-beta) |
-| [Chamada](/graph/api/resources/call?view=graph-rest-beta) (visualização) | [Responder](/graph/api/call-answer?view=graph-rest-beta), [rejeitar](/graph/api/call-reject?view=graph-rest-beta), [redirecionar](/graph/api/call-redirect?view=graph-rest-beta), [ativar mudo](/graph/api/call-mute?view=graph-rest-beta), [desfazer ativar mudo](/graph/api/call-unmute?view=graph-rest-beta), [atualizar metadados](/graph/api/call-updatemetadata?view=graph-rest-beta), [alterar a função de compartilhamento de tela](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [listar participantes](/graph/api/call-list-participants?view=graph-rest-beta), [convidar participantes](/graph/api/participant-invite?view=graph-rest-beta), [ativar mudo para todos os participantes](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[chatMessage](../resources/chatmessage.md) (visualização)| [Lista](../api/channel-list-messages.md), [enviar](../api/channel-post-messages.md), [ler](/graph/api/channel-get-message?view=graph-rest-beta) |
+|[Chamada](/graph/api/resources/call?view=graph-rest-beta) (visualização) | [Responder](/graph/api/call-answer?view=graph-rest-beta), [rejeitar](/graph/api/call-reject?view=graph-rest-beta), [redirecionar](/graph/api/call-redirect?view=graph-rest-beta), [ativar mudo](/graph/api/call-mute?view=graph-rest-beta), [desfazer ativar mudo](/graph/api/call-unmute?view=graph-rest-beta), [atualizar metadados](/graph/api/call-updatemetadata?view=graph-rest-beta), [alterar a função de compartilhamento de tela](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [listar participantes](/graph/api/call-list-participants?view=graph-rest-beta), [convidar participantes](/graph/api/participant-invite?view=graph-rest-beta), [ativar mudo para todos os participantes](/graph/api/participant-muteall?view=graph-rest-beta) |
 |[cronograma](/graph/api/resources/schedule?view=graph-rest-beta) (visualização)| [Criar ou substituir](/graph/api/team-put-schedule?view=graph-rest-beta), [obter](/graph/api/schedule-get?view=graph-rest-beta), [compartilhar](/graph/api/schedule-share?view=graph-rest-beta) |
 |[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) visualização| [Criar](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [Listar](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [Obter](/graph/api/schedulinggroup-get?view=graph-rest-beta), [Substituir](/graph/api/schedulinggroup-put?view=graph-rest-beta), [Excluir](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
 |[turno](/graph/api/resources/shift?view=graph-rest-beta) (visualização)| [Criar](/graph/api/schedule-post-shifts?view=graph-rest-beta), [Listar](/graph/api/schedule-list-shifts?view=graph-rest-beta), [Obter](/graph/api/shift-get?view=graph-rest-beta), [Substituir](/graph/api/shift-put?view=graph-rest-beta), [Excluir](/graph/api/shift-delete?view=graph-rest-beta) |
