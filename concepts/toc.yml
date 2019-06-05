@@ -274,6 +274,8 @@ items:
             href: permissions-reference.md
           - name: Gerenciar o acesso ao aplicativo (Provedores de Soluções na Nuvem da Microsoft)
             href: auth-cloudsolutionprovider.md
+          - name: Acesso à caixa de correio limitado
+            href: auth-limit-mailbox-access.md
       - name: Usar a API
         items:
           - name: Visão Geral
