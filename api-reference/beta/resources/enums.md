@@ -1,25 +1,25 @@
 ---
 title: Valores de enumeração
 description: Valores de enumeração do Microsoft Graph
-ms.openlocfilehash: 7394ee9dbfa70e7cda1269c8f61d3b77d92e8094
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f553b2378f646bf367cf75515cd758dd0e37b53a
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340158"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709401"
 ---
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |primário|,0|O pai do usuário.|
-|relativo|1 | O relativo do usuário.|
-|facilita|2 | O auxílio do usuário.|
-|Doutor|3 | O médico do usuário.|
-|responsável|4 | O guardião do usuário.|
-|pensão|5 | O filho do usuário.|
-|outro|6 | Uma relação não especificada com o usuário.|
-|unknownFutureValue|7 | Valor de marcador para compatibilidade futura.|
+|relativo|1| O relativo do usuário.|
+|facilita|duas| O auxílio do usuário.|
+|Doutor|3D| O médico do usuário.|
+|responsável|quatro| O guardião do usuário.|
+|pensão|0,5| O filho do usuário.|
+|outro|6| Uma relação não especificada com o usuário.|
+|unknownFutureValue|178| Valor de marcador para compatibilidade futura.|
 
 
 ### <a name="scheduleentitytheme-values"></a>valores de scheduleEntityTheme
@@ -82,10 +82,10 @@ ms.locfileid: "33340158"
 | Membro            |Valor
 |:------------------|:-------
 | macro              | ,0
-| provisória         | 1 
-| Atualmente              | 2 
-| temporária               | 3 
-| workingElsewhere  | 4 
+| provisória         | 1
+| Atualmente              | duas
+| temporária               | 3D
+| workingElsewhere  | quatro
 | desconhecido           | -1
 
 
@@ -132,13 +132,13 @@ ms.locfileid: "33340158"
 |:-----------|:----------
 | Automático       | -1
 | lightBlue  | ,0
-| lightGreen | 1 
-| lightOrange| 2 
-| lightGray  | 3 
-| lightYellow| 4 
-| lightTeal  | 5 
-| lightPink  | 6 
-| lightBrown | 7 
+| lightGreen | 1
+| lightOrange| duas
+| lightGray  | 3D
+| lightYellow| quatro
+| lightTeal  | 0,5
+| lightPink  | 6
+| lightBrown | 178
 | lightRed   | 8 
 | maxColor   | 9 
 
@@ -147,11 +147,11 @@ ms.locfileid: "33340158"
 
 | Membro     | Valor
 |:-----------|:----------
-| deleta          | 2 
-| deletionFailed    | 3 
-| provisioningFailed | 5 
-| provisionado        | 6 
-| provisionamento       | 7 
+| deleta          | duas
+| deletionFailed    | 3D
+| provisioningFailed | 0,5
+| provisionado        | 6
+| provisionamento       | 178
 | unknownFutureValue | 8 
 
 
@@ -160,12 +160,12 @@ ms.locfileid: "33340158"
 | Membro     | Valor
 |:-----------|:----------
 | pausado          | ,0
-| inProgress    | 1 
-| sucesso | 2 
-| erro        | 3 
-| validationError | 4 
-| em quarentena       | 5 
-| unknownFutureValue | 6 
+| inProgress    | 1
+| sucesso | duas
+| erro        | 3D
+| validationError | quatro
+| em quarentena       | 0,5
+| unknownFutureValue | 6
 
 ### <a name="educationexternalsource-values"></a>valores de educationExternalSource
 
@@ -270,9 +270,9 @@ ms.locfileid: "33340158"
 | autentica
 | nesse
 | accountValidation
-| userValidation
+| uservalidation
 | deviceNotSupported
-| inManutenção
+| inmanutenção
 | badRequest
 | featureNotSupported
 | enrollmentRestrictionsEnforced
@@ -321,10 +321,10 @@ ms.locfileid: "33340158"
 | doNotForward
 | Acompanhamento
 | conhecimento
-| forward
+| direta
 | noResponseNecessary
 | Saiba
-| reply
+| resposta
 | replyToAll
 | exame
 
@@ -334,8 +334,8 @@ ms.locfileid: "33340158"
 | Membro      | Valor
 |:------------|:------------
 | Owner       | ,0
-| Colaborador | 1 
-| Leitor      | 2 
+| Colaborador | 1
+| Leitor      | duas
 | Nenhum        | -1
 
 
@@ -388,9 +388,9 @@ ms.locfileid: "33340158"
 | Valor
 |:-------------------------
 | Automático
-| noPreview
+| nopreview
 | verificação
-| description
+| descrição
 | de referência
 
 
@@ -497,24 +497,24 @@ ms.locfileid: "33340158"
 |:---------|:--------
 | none     | -1      
 | preset0  | ,0       
-| preset1  | 1        
-| preset2  | 2        
-| preset3  | 3        
-| preset4  | 4        
-| preset5  | 5        
-| preset6  | 6        
-| preset7  | 7        
+| preset1  | 1       
+| preset2  | duas       
+| preset3  | 3D       
+| preset4  | quatro       
+| preset5  | 0,5       
+| preset6  | 6       
+| preset7  | 178       
 | preset8  | 8        
 | preset9  | 9        
 | preset10 | 10       
-| preset11 | 11       
-| preset12 | 12      
-| preset13 | 13       
-| preset14 | 14       
-| preset15 | 15       
-| preset16 | 16       
-| preset17 | 17       
-| preset18 | 18       
+| preset11 | 11      
+| preset12 | 3,6      
+| preset13 | Treze      
+| preset14 | 14      
+| preset15 | 15      
+| preset16 | dezesseis      
+| preset17 | 17.07.06      
+| preset18 | anos      
 | preset19 | 19      
 | preset20 | 508      
 | preset21 | 21      
@@ -529,22 +529,22 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|truePositive|1 |O alerta é verdadeiro e positivo.|
-|falsePositive|2 | O alerta é falso positivo.|
-|benignPositive|3 | O alerta é benigno-positivo.|
+|truePositive|1|O alerta é verdadeiro e positivo.|
+|falsePositive|duas| O alerta é falso positivo.|
+|benignPositive|3D| O alerta é benigno-positivo.|
 
-### <a name="filehashtype-values"></a>valores de fileHashtype
+### <a name="filehashtype-values"></a>valores de filehashtype
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo desconhecido.|
-|SHA1|1 |Tipo de hash SHA1.|
-|SHA256|2 | Tipo de hash SHA256.|
-|MD5|3 | Tipo de hash MD5.|
-|authenticodeHash256|4 | Tipo de hash AuthenticodeHash256.|
-|lsHash|5 | Tipo de hash LsHash.|
-|ctph|6 | Tipo de hash CTPH.|
-|peSha1|7 | Tipo de hash PESHA1.|
+|SHA1|1|Tipo de hash SHA1.|
+|SHA256|duas| Tipo de hash SHA256.|
+|MD5|3D| Tipo de hash MD5.|
+|authenticodeHash256|quatro| Tipo de hash AuthenticodeHash256.|
+|lsHash|0,5| Tipo de hash LsHash.|
+|ctph|6| Tipo de hash CTPH.|
+|peSha1|178| Tipo de hash PESHA1.|
 |peSha256|8 | Tipo de hash PESHA256.|
 
 ### <a name="connectiondirection-values"></a>valores de connectionDirection
@@ -552,18 +552,18 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Conexão desconhecida.|
-|entrada|1 |Conexão de entrada.|
-|saída|2 | Conexão de saída.|
+|entrada|1|Conexão de entrada.|
+|saída|duas| Conexão de saída.|
 
 ### <a name="connectionstatus-values"></a>valores de connectionStatus
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status de conexão desconhecido.|
-|tentou|1 |Tentativa de conexão.|
-|adicionada|2 | Conexão bem-sucedida.|
-|bloqueou|3 | Conexão bloqueada.|
-|falhou|4 | Falha de conexão.|
+|tentou|1|Tentativa de conexão.|
+|adicionada|duas| Conexão bem-sucedida.|
+|bloqueou|3D| Conexão bloqueada.|
+|falhou|quatro| Falha de conexão.|
 
 ### <a name="processintegritylevel-values"></a>valores de processIntegrityLevel
 
@@ -583,12 +583,12 @@ Enumeração para hives do registro, conforme [https://docs.microsoft.com/en-us/
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Hive desconhecido.|
-|currentConfig|1 |Hive HKEY_CURRENT_CONFIG.|
-|currentUser|2 | Hive HKEY_CURRENT_USER.|
-|localMachineSam|3 | Hive HKEY_LOCAL_MACHINE\SAM.|
-|localMachineSamSoftware|4 | Hive HKEY_LOCAL_MACHINE\Software.|
-|localMachineSystem|5 | HKEY_LOCAL_MACHINE\System Hive.|
-|usersDefault|6 | HKEY_USERS\\. Hive padrão.|
+|currentConfig|1|Hive HKEY_CURRENT_CONFIG.|
+|currentUser|duas| Hive HKEY_CURRENT_USER.|
+|localMachineSam|3D| Hive HKEY_LOCAL_MACHINE\SAM.|
+|localMachineSamSoftware|quatro| Hive HKEY_LOCAL_MACHINE\Software.|
+|localMachineSystem|0,5| HKEY_LOCAL_MACHINE\System Hive.|
+|usersDefault|6| HKEY_USERS\\. Hive padrão.|
 
 ### <a name="registryoperation-values"></a>valores de registryOperation
 
@@ -597,9 +597,9 @@ Operação que alterou o nome da chave do registro e/ou o valor.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo de valor de registro desconhecido.|
-|create|1 |Criar registro.|
-|modifica|2 |Modificar o registro.|
-|delete|3 |Excluir registro.|
+|create|1|Criar registro.|
+|modifica|duas|Modificar o registro.|
+|delete|3D|Excluir registro.|
 
 ### <a name="registryvaluetype-values"></a>valores de registryValueType
 
@@ -608,17 +608,17 @@ Enumeração para tipos de valor do registro conforme [https://docs.microsoft.co
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo de valor de registro desconhecido.|
-|binário|1 |Tipo de valor de registro REG_BINARY.|
-|últimas|2 | Tipo de valor do registro REG_DWORD.|
-|dwordLittleEndian|3 | Tipo de valor do registro REG_DWORD_LITTLE_ENDIAN.|
-|dwordBigEndian|4 | Tipo de valor do registro REG_DWORD_BIG_ENDIAN.|
-|expandSz|5 | Tipo de valor do registro REG_EXPAND_SZ.|
-|vínculo|6 | Tipo de valor do registro REG_LINK.|
-|multiSz|7 | Tipo de valor de registro REG_MULTI_SZ.|
+|binário|1|Tipo de valor de registro REG_BINARY.|
+|últimas|duas| Tipo de valor do registro REG_DWORD.|
+|dwordLittleEndian|3D| Tipo de valor do registro REG_DWORD_LITTLE_ENDIAN.|
+|dwordBigEndian|quatro| Tipo de valor do registro REG_DWORD_BIG_ENDIAN.|
+|expandSz|0,5| Tipo de valor do registro REG_EXPAND_SZ.|
+|vínculo|6| Tipo de valor do registro REG_LINK.|
+|multiSz|178| Tipo de valor de registro REG_MULTI_SZ.|
 |none|8 | Tipo de valor do registro REG_NONE.|
 |QWORD|9 | Tipo de valor do registro REG_QWORD.|
 |qwordlittleEndian|10 | Tipo de valor do registro REG_QWORD_LITTLE_ENDIAN.|
-|v|11 | Tipo de valor do registro REG_SZ.|
+|v|11| Tipo de valor do registro REG_SZ.|
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
 
@@ -627,10 +627,10 @@ Enumeração para gravidade de alertas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|A severidade é desconhecida.|
-|informativa|1 |A severidade só é para informações.|
-|low|2 | A severidade é baixa.|
-|medium|3 | A severidade é média.|
-|high|4 | A severidade é alta.|
+|informativa|1|A severidade só é para informações.|
+|low|duas| A severidade é baixa.|
+|medium|3D| A severidade é média.|
+|high|quatro| A severidade é alta.|
 
 ### <a name="alertstatus-values"></a>valores de alertStatus
 
@@ -650,8 +650,8 @@ Valores possíveis para funções de email.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Função desconhecida.|
-|sender|1 |Remetente do email.|
-|destinatário|2 |Destinatário do email.|
+|remetente|1|Remetente do email.|
+|destinatário|duas|Destinatário do email.|
 
 ### <a name="logontype-values"></a>valores de Logontype
 
@@ -661,10 +661,10 @@ Valores possíveis para o método de User Sign.
 |:---|:---|:---|
 |desconhecido|-1|Unknown.|
 |interativa|,0|O logon é interativo.|
-|remoteInteractive|1 | O logon é interativo remoto.|
-|rede|2 | O logon é rede.|
-|batch|3 | O logon é em lote.|
-|service|4 | O logon é serviço.|
+|remoteInteractive|1| O logon é interativo remoto.|
+|rede|duas| O logon é rede.|
+|batch|3D| O logon é em lote.|
+|service|quatro| O logon é serviço.|
 
 ### <a name="useraccountsecuritytype-values"></a>valores de userAccountSecurityType
 
@@ -674,8 +674,8 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |:---|:---|:---|
 |desconhecido|-1|Unknown.|
 |caracteres|,0|Membro do grupo de usuários padrão.|
-|força|1 | Membro do grupo de usuários avançados.|
-|administrador|2 | Membro do grupo Administradores.|
+|força|1| Membro do grupo de usuários avançados.|
+|administrador|duas| Membro do grupo Administradores.|
 
 ### <a name="scopeoperatormultivaluedcomparisontype-values"></a>valores de scopeOperatorMultiValuedComparisonType
 
@@ -796,7 +796,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |Membro|
 |:---|
 |permanente|
-|objectAddOnamente|
+|objectaddonamente|
 |multiValueAddOnly|
 |restid|
 
@@ -805,6 +805,20 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |Membro| Valor|
 |:---|:-------|
 |Nenhuma| ,0      |
-|Adicionar| 1        |
-|Atualizar|2      |
-|Delete|4      |
+|Adicionar| 1       |
+|Atualizar|duas     |
+|Delete|quatro     |
+
+### <a name="chatmessagetype-values"></a>valores de chatMessageType
+
+|Membro|
+|:---|
+|message|
+
+### <a name="chatmessageimportance-values"></a>valores de chatMessageImportance
+
+|Membro|
+|:---|
+|SS|
+|high|
+|urgente|
