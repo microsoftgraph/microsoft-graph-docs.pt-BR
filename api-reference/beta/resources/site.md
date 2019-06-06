@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 63d4232c2af37541f2a96359f9d2a209d065bc98
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f2386228c3758cc15d9c270f0da32608e4f2b901
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343043"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34683500"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -31,6 +31,8 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Listar páginas][]                 | GET /sites/{site-id}/pages
 | [Lista sites raiz][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Procurar sites][]           | GET /sites?search={query}
+| [Seguir Site][]                | POST /users/{user-id}/followedSites/add
+| [Deixar de Seguir Site][]              | POST /users/{user-id}/followedSites/remove
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -41,13 +43,15 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [Listar páginas]: ../api/sitepage-list.md
 [Lista sites raiz]: ../api/site-list.md
 [Procurar sites]: ../api/site-search.md
+[Seguir site]: ../api/site-follow.md
+[Deixar de seguir site]: ../api/site-unfollow.md
 
 
 ## <a name="properties"></a>Propriedades
 
 | Nome da propriedade            | Tipo               | Descrição
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | O identificador exclusivo do item. Somente leitura.
+| **id**                   | cadeia de caracteres             | O [identificador exclusivo](#id-property) do item. Somente leitura.
 | **createdDateTime**      | DateTimeOffset     | A data e a hora da criação do item. Somente leitura.
 | **description**          | string             | O texto descritivo do site.
 | **eTag**                 | string             | ETag do item. Somente leitura.                                                                  |
@@ -59,7 +63,18 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | **siteCollection**       | [siteCollection][] | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura.
 | **webUrl**               | string (url)       | A URL que exibe o item no navegador. Somente leitura.
 
-## <a name="relationships"></a>Relações
+### <a name="id-property"></a>propriedade do id
+Um **site** é identificado por um ID exclusivo que é composto pelos seguintes valores:
+* Hostname do conjunto de sites (contoso.sharepoint.com)
+* ID exclusiva do conjunto de sites (GUID)
+* ID exclusiva do site (GUID)
+  
+O identificador `root` sempre faz referência ao site raiz de um determinado destino, como a seguir:
+
+* `/sites/root`: O site raiz do locatário.
+* `/groups/{group-id}/sites/root`: O site da equipe do grupo.
+
+## <a name="relationships"></a>Relacionamentos
 
 | Nome da relação | Tipo                             | Descrição
 |:------------------|:---------------------------------|:----------------------
