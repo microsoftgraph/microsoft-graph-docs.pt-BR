@@ -7012,6 +7012,8 @@ items:
                 href: api/educationschool-post-users.md
               - name: Remover usuário
                 href: api/educationschool-delete-users.md
+              - name: Obter intervalo
+                href: api/educationschool-delta.md
           - name: Aulas
             href: resources/educationclass.md
             items:
@@ -7047,6 +7049,8 @@ items:
                 href: api/educationclass-list-categories.md
               - name: Criar categoria
                 href: api/educationclass-post-category.md
+              - name: Obter intervalo
+                href: api/educationclass-delta.md
           - name: Usuários
             href: resources/educationuser.md
             items:
@@ -7058,6 +7062,8 @@ items:
                 href: api/educationuser-get.md
               - name: Excluir usuário
                 href: api/educationuser-delete.md
+              - name: Obter intervalo
+                href: api/educationuser-delta.md
           - name: Tarefa
             href: resources/educationassignment.md
             items:
@@ -7952,7 +7958,7 @@ items:
                   - name: Definições de função
                     href: resources/governanceroledefinition.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/governanceroledefinition-list.md
                       - name: Obter
                         href: api/governanceroledefinition-get.md

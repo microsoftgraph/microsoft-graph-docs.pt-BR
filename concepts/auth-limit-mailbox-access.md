@@ -1,0 +1,87 @@
+---
+title: Permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online
+description: Para definir o escopo das permissões de aplicativo de um aplicativo para caixas de correio específicas do Exchange Online, você precisará criar políticas de acesso a aplicativos.
+author: svpsiva
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 42e08989f462def2d1956c7e6fee2ad635f23e5a
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34692763"
+---
+# <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a><span data-ttu-id="1be50-103">Permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online</span><span class="sxs-lookup"><span data-stu-id="1be50-103">Scoping application permissions to specific Exchange Online mailboxes</span></span> 
+
+<span data-ttu-id="1be50-104">Alguns aplicativos chamam o Microsoft Graph usando sua própria identidade e não em nome de um usuário.</span><span class="sxs-lookup"><span data-stu-id="1be50-104">Some apps call Microsoft Graph with their own identity and not on behalf of a user.</span></span> <span data-ttu-id="1be50-105">Geralmente, são serviços de segundo plano ou aplicativos daemon executados em um servidor sem a presença de um usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="1be50-105">In many cases, these are background services or daemons that run on a server without the presence of a signed-in user.</span></span> <span data-ttu-id="1be50-106">Esses aplicativos usam o [fluxo de concessão de credenciais do cliente OAuth 2.0](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) para autenticar e são configurados com permissões de aplicativo, que permitem que esses aplicativos acessem todas as caixas de correio de uma organização no Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="1be50-106">These apps make use of [OAuth 2.0 client credentials grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which enable such apps to access all mailboxes in a organization on Exchange Online.</span></span> <span data-ttu-id="1be50-107">Por exemplo, a permissão de aplicativo Mail.Read permite que os aplicativos leiam emails em todas as caixas de correio sem um usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="1be50-107">For example, the Mail.Read application permission allows apps to read mail in all mailboxes without a signed-in user.</span></span> 
+
+<span data-ttu-id="1be50-108">Os administradores que desejem limitar o acesso ao aplicativo a um conjunto específico de caixas de correio podem usar o cmdlet **New-ApplicationAccessPolicy** do PowerShell para configurar o controle de acesso.</span><span class="sxs-lookup"><span data-stu-id="1be50-108">Administrators who want to limit the app access to a specific set of mailboxes can use the **New-ApplicationAccessPolicy** PowerShell cmdlet to configure access control.</span></span> <span data-ttu-id="1be50-109">Este artigo aborda as etapas básicas para configurar uma política de acesso a aplicativos.</span><span class="sxs-lookup"><span data-stu-id="1be50-109">This article covers the basic steps to configure an application access policy.</span></span>
+
+<span data-ttu-id="1be50-110">Estas etapas são específicas aos recursos do Exchange Online e não se aplicam a outras cargas de trabalho do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="1be50-110">These steps are specific to Exchange Online resources and do not apply to other Microsoft Graph workloads.</span></span> 
+
+## <a name="configure-applicationaccesspolicy"></a><span data-ttu-id="1be50-111">Configurar ApplicationAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="1be50-111">Configure ApplicationAccessPolicy</span></span>
+
+<span data-ttu-id="1be50-112">Para configurar uma política de acesso a aplicativos e limitar o escopo das permissões de aplicativos:</span><span class="sxs-lookup"><span data-stu-id="1be50-112">To configure an application access policy and limit the scope of application permissions:</span></span>
+1.  <span data-ttu-id="1be50-113">Conecte-se ao PowerShell do Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="1be50-113">Connect to Exchange Online PowerShell.</span></span> <span data-ttu-id="1be50-114">Para detalhes, consulte [Conectar-se ao PowerShell do Exchange Online](https://docs.microsoft.com/pt-BR/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).</span><span class="sxs-lookup"><span data-stu-id="1be50-114">For more information, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).</span></span>
+
+2.  <span data-ttu-id="1be50-115">Identifique o ID do cliente do aplicativo e um grupo de segurança habilitado para email para restringir o acesso do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1be50-115">Identify the app’s client ID and a mail-enabled security group to restrict the app’s access to.</span></span>
+
+    - <span data-ttu-id="1be50-116">Identifique o ID do aplicativo (cliente) do aplicativo no [portal de registro de aplicativos do Azure](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).</span><span class="sxs-lookup"><span data-stu-id="1be50-116">Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).</span></span>
+    - <span data-ttu-id="1be50-117">Crie um novo grupo de segurança habilitado para email ou use um existente e identifique o endereço de email do grupo.</span><span class="sxs-lookup"><span data-stu-id="1be50-117">Create a new mail-enabled security group or use an existing one and identify the email address for the group.</span></span> 
+
+3.  <span data-ttu-id="1be50-118">Crie uma política de acesso a aplicativos.</span><span class="sxs-lookup"><span data-stu-id="1be50-118">Create an application access policy.</span></span> 
+
+    <span data-ttu-id="1be50-119">Execute o seguinte comando, substituindo os argumentos **AppId**, **PolicyScopeGroupId** e **Description**.</span><span class="sxs-lookup"><span data-stu-id="1be50-119">Run the following command, replacing the **AppId**, **PolicyScopeGroupId**, and **Description** arguments.</span></span>
+    ```sh 
+    New-ApplicationAccessPolicy -AppId e7e4dbfc-046f-4074-9b3b-2ae8f144f59b -PolicyScopeGroupId EvenUsers@contoso.com -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group EvenUsers."
+    ```
+4.  <span data-ttu-id="1be50-120">Teste a política de acesso a aplicativos recém-criada.</span><span class="sxs-lookup"><span data-stu-id="1be50-120">Test the newly created application access policy.</span></span>
+
+    <span data-ttu-id="1be50-121">Execute o seguinte comando, substituindo os argumentos **AppId** e **Identity**.</span><span class="sxs-lookup"><span data-stu-id="1be50-121">Run the following command, replacing the **AppId** and **Identity** arguments.</span></span>
+    ```sh
+    Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b 
+    ```
+    <span data-ttu-id="1be50-122">A saída desse comando indicará se o aplicativo tem acesso à caixa de correio do Usuário 1.</span><span class="sxs-lookup"><span data-stu-id="1be50-122">The output of this command will indicate whether the app has access to User1’s mailbox.</span></span>
+
+<span data-ttu-id="1be50-123">Observação: as alterações nas políticas de acesso a aplicativos podem levar até 30 minutos para entrar em vigor nas chamadas da API REST do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="1be50-123">Note: Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.</span></span>
+
+## <a name="supported-permissions-and-additional-resources"></a><span data-ttu-id="1be50-124">Permissões compatíveis e recursos adicionais</span><span class="sxs-lookup"><span data-stu-id="1be50-124">Supported app scenarios and additional resources</span></span>
+<span data-ttu-id="1be50-125">Os administradores podem usar os cmdlets ApplicationAccessPolicy para controlar o acesso à caixa de correio de um aplicativo que tenha recebido as seguintes permissões de aplicativo:</span><span class="sxs-lookup"><span data-stu-id="1be50-125">Adminstrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following application permissions:</span></span> 
+- <span data-ttu-id="1be50-126">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1be50-126">Mail.Read</span></span>
+- <span data-ttu-id="1be50-127">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1be50-127">Mail.ReadWrite</span></span>
+- <span data-ttu-id="1be50-128">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="1be50-128">Mail.Send</span></span>
+- <span data-ttu-id="1be50-129">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="1be50-129">MailboxSettings.Read</span></span>  
+- <span data-ttu-id="1be50-130">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1be50-130">MailboxSettings.ReadWrite</span></span>
+- <span data-ttu-id="1be50-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="1be50-131">Calendars.Read</span></span>
+- <span data-ttu-id="1be50-132">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1be50-132">Calendars.ReadWrite</span></span>
+- <span data-ttu-id="1be50-133">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="1be50-133">Contacts.Read</span></span>
+- <span data-ttu-id="1be50-134">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1be50-134">Contacts.ReadWrite</span></span>
+
+<span data-ttu-id="1be50-135">Para obter mais informações sobre como configurar a política de acesso a aplicativos, consulte a [referência de cmdlet do PowerShell para New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/new-applicationaccesspolicy).</span><span class="sxs-lookup"><span data-stu-id="1be50-135">For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/new-applicationaccesspolicy).</span></span> 
+
+## <a name="handling-api-errors"></a><span data-ttu-id="1be50-136">Como lidar com erros da API</span><span class="sxs-lookup"><span data-stu-id="1be50-136">Handling API errors</span></span>
+<span data-ttu-id="1be50-137">Você poderá encontrar o seguinte erro quando uma chamada de API for negada devido a uma política de acesso de aplicativo configurada.</span><span class="sxs-lookup"><span data-stu-id="1be50-137">You might encounter the following error when an API call is denied access due to a configured application access policy.</span></span> 
+```json
+{
+    "error": {
+        "code": "ErrorAccessDenied",
+        "message": "Access to OData is disabled.",
+        "innerError": {
+            "request-id": "2f038156-cf40-403d-8e46-831fe42a8229",
+            "date": "2019-05-24T10:16:21"
+        }
+    }
+}
+```
+<span data-ttu-id="1be50-138">Se as chamadas da API do Microsoft Graph de seu aplicativo retornarem esse erro, trabalhe com o administrador do Exchange Online da organização para garantir que seu aplicativo tenha permissão para acessar o recurso de caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="1be50-138">If Microsoft Graph API calls from your app return this error, work with the Exchange Online administrator for the organization to ensure that your app has permission to access the mailbox resource.</span></span>
+
+
+
+## <a name="see-also"></a><span data-ttu-id="1be50-139">Confira também</span><span class="sxs-lookup"><span data-stu-id="1be50-139">See also</span></span>
+
+- [<span data-ttu-id="1be50-140">Referência de permissões</span><span class="sxs-lookup"><span data-stu-id="1be50-140">Permissions reference</span></span>](permissions-reference.md)
+- [<span data-ttu-id="1be50-141">New-ApplicationAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="1be50-141">New-ApplicationAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/exchange/organization/new-applicationaccesspolicy)
+- [<span data-ttu-id="1be50-142">Get-ApplicationAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="1be50-142">Get-ApplicationAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/exchange/organization/get-applicationaccesspolicy)
+- [<span data-ttu-id="1be50-143">Remove-ApplicationAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="1be50-143">Remove-ApplicationAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/exchange/organization/remove-applicationaccesspolicy)
+- [<span data-ttu-id="1be50-144">Set-ApplicationAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="1be50-144">Set-ApplicationAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/exchange/organization/set-applicationaccesspolicy)
+- [<span data-ttu-id="1be50-145">Test-ApplicationAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="1be50-145">Test-ApplicationAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/exchange/organization/test-applicationaccesspolicy)
