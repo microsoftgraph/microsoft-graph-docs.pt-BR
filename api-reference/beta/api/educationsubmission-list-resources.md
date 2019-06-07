@@ -4,12 +4,12 @@ description: Listar os recursos associados a esse envio. O objeto **submissionRe
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 8b1759e2dca969acb0db1a287099ef97e810e064
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 51a70d3554ea0dac3c5e3487bb9f9dab88addba2
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322882"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34749965"
 ---
 # <a name="list-resources"></a>Listar recursos
 
@@ -18,42 +18,57 @@ ms.locfileid: "33322882"
 Listar os recursos associados a esse envio. O objeto **submissionResource** é um invólucro em torno do objeto de recurso real em que o aluno está trabalhando. O wrapper também inclui um ponteiro para os recursos na atribuição se ele foi copiado da atribuição durante o processo assign. Esses recursos são a cópia de trabalho da atribuição. Os **submittedResources** são os recursos que foram enviados oficialmente para serem comparados.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte. | 
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
+| Aplicativo                            | Sem suporte.                                                                                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /educationClasses/assignments/{id}/submissions/{id}/resources
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+
+| Cabeçalho        | Valor                     |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
+
 Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
+
 ##### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_resources"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/education/classes/<id>/assignments/<id>/submissions/<id>/resources
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/resources
 ```
+
 ##### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -64,6 +79,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.educationSubmissionResource",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

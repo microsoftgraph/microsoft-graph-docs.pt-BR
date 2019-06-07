@@ -4,19 +4,19 @@ description: 'Um canal é uma coleção de chatMessages dentro de uma equipe. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b77afb1560ed451683838a617123db013b71cd6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8b284cdfef42e9eb3319fc51c17febcf02eba1a1
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338756"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709429"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Teams](../resources/team.md) é formado por canais que são as conversas que você tem com seus colegas. Cada canal é dedicado a um tópico específico, departamento ou projeto.
-Os canais estão onde o trabalho é feito - onde conversas via texto, áudio e vídeo abertas para toda a equipe ocotecem, onde os arquivos são compartilhados e as guias são adicionadas.
+Os canais estão onde o trabalho é feito - onde conversas via texto, áudio e vídeo abertas para toda a equipe ocontecem, onde os arquivos são compartilhados e as guias são adicionadas.
 
 ## <a name="methods"></a>Métodos
 
@@ -28,12 +28,13 @@ Os canais estão onde o trabalho é feito - onde conversas via texto, áudio e v
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Atualize as propriedades do canal.|
 |[Delete channel](../api/channel-delete.md) | Nenhum | Exclua um canal.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens em um canal. |
-|[Enviar a mensagem do canal](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Enviar uma mensagem para um canal](../api/channel-post-chatmessage.md) |
+|[Criar uma chatMessage em um canal](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
+|[Criar uma resposta chatMessage em um canal](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal.|
 |[Listar guias](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
 |[Obter guia](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Ler uma guia fixada a um canal.|
-|[Adicionar guia](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adiciona (fixa) uma guia em um canal.|
-|[Remover guia](../api/teamstab-delete.md) | Nenhum | Remove (desafixa) uma guia de um canal.|
-|[Guia de atualização](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualiza as propriedades da guia.|
+|[Adicionar guia](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia em um canal.|
+|[Remover guia](../api/teamstab-delete.md) | Nenhum | Remover (desafixar) uma guia de um canal.|
+|[Guia de atualização](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualizar as propriedades da guia.|
 
 
 ## <a name="properties"></a>Propriedades

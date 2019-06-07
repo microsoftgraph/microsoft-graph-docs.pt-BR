@@ -4,12 +4,12 @@ description: Recupere um objeto Category.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5335626c3eccd225dbe7de86d9620395604af99c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 061590564df2ac52b498ea2993227f878e1d1128
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324623"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750091"
 ---
 # <a name="get-educationcategory"></a>Obter educationCategory
 
@@ -18,42 +18,55 @@ ms.locfileid: "33324623"
 Recupere um objeto [educationCategory](../resources/educationcategory.md) .
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite   |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | Sem suporte. | 
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
+| Aplicativo                            | Sem suporte.                                                                                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignmentCategories/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Cabeçalho        | Valor                     |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
+
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationCategory](../resources/educationcategory.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
+
 ##### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "ignored",
   "name": "get_assignments"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/education/classes/<id>/assignmentCategories/<id>
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories/{id}
 ```
+
 ##### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -64,6 +77,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": false
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

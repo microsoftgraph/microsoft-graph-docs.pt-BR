@@ -4,109 +4,107 @@ description: 'Uma escola. O recurso **educationSchool** atualmente corresponde a
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 893f01fffcc606c85cec30789ec94dd658b2a4b2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9cded9db9ab9d7310a10ab690e05f49dca8711c8
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334187"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750140"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma escola. O recurso **educationSchool** atualmente corresponde a um recurso [administrativeUnit](administrativeunit.md) e compartilha a mesma ID.  
+Uma escola. O recurso **educationSchool** atualmente corresponde a um recurso [administrativeUnit](administrativeunit.md) e compartilha a mesma ID.
 
 Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 
-
-
-
 ## <a name="methods"></a>Métodos
 
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Get](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Leia as propriedades e relações de um objeto **educationSchool**.|
-|[Adicionar classe](../api/educationschool-post-classes.md) |[educationClass](educationclass.md)| Adicione uma nova **educationClass** para a escola postando na propriedade de navegação de aulas.|
-|[Listar classes](../api/educationschool-list-classes.md) |Coleção [educationClass](educationclass.md)| Obtenha a coleção de objetos **educationClass**.|
-|[Remover classe](../api/educationschool-delete-classes.md) |[educationClass](educationclass.md)| Remova uma **educationClass** da escola por meio da propriedade de navegação de aulas.|
-|[Adicionar usuário](../api/educationschool-post-users.md) |[educationUser](educationuser.md)| Adicione um novo **educationUser** para a escola postando na propriedade de navegação de **usuários**.|
-|[Listar usuários](../api/educationschool-list-users.md) |Coleção [educationUser](educationuser.md)| Obtenha a coleção de objetos **educationUser**.|
-|[Remover usuário](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| Remova um **educationUser** da escola por meio da propriedade de navegação **users**.|
-|[Obter administrativeUnit](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| Obtenha o **administrativeUnit** que corresponde a esse **educationSchool**.|
-|[Atualizar](../api/educationschool-update.md) | [educationSchool](educationschool.md) |Atualize um objeto **educationSchool**. |
-|[Delete](../api/educationschool-delete.md) | Nenhum |Exclua um objeto **educationSchool**. |
+| Método                                                                     | Tipo de retorno                                      | Descrição                                                                                 |
+| :------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| [Get](../api/educationschool-get.md)                                       | [educationSchool](educationschool.md)            | Leia as propriedades e relações de um objeto **educationSchool**.                         |
+| [Adicionar classe](../api/educationschool-post-classes.md)                        | [educationClass](educationclass.md)              | Adicione uma nova **educationClass** para a escola postando na propriedade de navegação de aulas.  |
+| [Listar classes](../api/educationschool-list-classes.md)                     | Coleção [educationClass](educationclass.md)   | Obtenha a coleção de objetos **educationClass**.                                               |
+| [Remover classe](../api/educationschool-delete-classes.md)                   | [educationClass](educationclass.md)              | Remova uma **educationClass** da escola por meio da propriedade de navegação de aulas.       |
+| [Adicionar usuário](../api/educationschool-post-users.md)                           | [educationUser](educationuser.md)                | Adicione um novo **educationUser** para a escola postando na propriedade de navegação de **usuários**. |
+| [Listar usuários](../api/educationschool-list-users.md)                         | Coleção [educationUser](educationuser.md)     | Obtenha a coleção de objetos **educationUser**.                                                |
+| [Remover usuário](../api/educationschool-delete-users.md)                      | [educationUser](educationuser.md)                | Remova um **educationUser** da escola por meio da propriedade de navegação **users**.      |
+| [Obter administrativeUnit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Obtenha o **administrativeUnit** que corresponde a esse **educationSchool**.                |
+| [Atualizar](../api/educationschool-update.md)                                 | [educationSchool](educationschool.md)            | Atualize um objeto **educationSchool**.                                                       |
+| [Delete](../api/educationschool-delete.md)                                 | Nenhum                                             | Exclua um objeto **educationSchool**.                                                       |
+| [Delta](../api/educationschool-delta.md)                                   | Coleção [educationSchool](educationschool.md) | Obter alterações incrementais para o **educationSchools**                                            |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|id|Cadeia de caracteres|GUID desta escola.|
-|displayName| String| Nome de exibição da escola.| 
-|description| String | Descrição da escola.| 
-|status| cadeia de caracteres| Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`.|
-|externalSource| cadeia de caracteres| Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
-|principalEmail| String| Endereço de email da entidade de segurança.|
-|principalName| String | Nome da entidade de segurança.|
-|externalPrincipalId| String | ID da entidade de segurança no sistema de sincronização. |
-|highestGrade|String| Ensino de nível mais alto. |
-|lowestGrade|String| Ensino de nível mais baixo. |
-|schoolNumber|String| Número da escola.|
-|externalId|Cadeia de caracteres| ID da escola no sistema de sincronização. |
-|phone|String| Número de telefone da escola. |
-|fax|String| Número de fax da escola. |
-|address|[physicalAddress](physicaladdress.md)| Endereço da escola.|
-|createdBy|[identitySet](identityset.md)|Entidade que criou a escola.|
 
+| Propriedade            | Tipo                                  | Descrição                                        |
+| :------------------ | :------------------------------------ | :------------------------------------------------- |
+| id                  | Cadeia de caracteres                                | GUID desta escola.                               |
+| address             | [physicalAddress](physicaladdress.md) | Endereço da escola.                             |
+| createdBy           | [identitySet](identityset.md)         | Entidade que criou a escola.                     |
+| descrição         | String                                | Descrição da escola.                         |
+| displayName         | String                                | Nome de exibição da escola.                        |
+| externalId          | Cadeia de caracteres                                | ID da escola no sistema de sincronização.                    |
+| externalPrincipalId | String                                | ID da entidade de segurança no sistema de sincronização.                 |
+| externalSource      | cadeia de caracteres                                | Somente Leitura. Os valores possíveis são: `sis` ou `manual`. |
+| fax                 | Cadeia de caracteres                                | Número de fax da escola.                              |
+| highestGrade        | String                                | Ensino de nível mais alto.                              |
+| lowestGrade         | String                                | Ensino de nível mais baixo.                               |
+| phone               | String                                | Número de telefone da escola.                            |
+| principalEmail      | String                                | Endereço de email da entidade de segurança.                    |
+| principalName       | String                                | Nome da entidade de segurança.                             |
+| schoolNumber        | String                                | Número da escola.                                     |
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|classes|Coleção [educationClass](educationclass.md)| Aulas ministradas na escola. Anulável.|
-|users|Coleção [educationUser](educationuser.md)| Usuários na escola. Anulável.|
+
+| Relação | Tipo                                           | Descrição                             |
+| :----------- | :--------------------------------------------- | :-------------------------------------- |
+| classes      | Coleção [educationClass](educationclass.md) | Aulas ministradas na escola. Anulável. |
+| users        | Coleção [educationUser](educationuser.md)   | Usuários na escola. Anulável.          |
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "optionalProperties": [
+"blockType": "resource",
+"keyProperty": "id",
+"optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.educationSchool"
+],
+"@odata.type": "microsoft.graph.educationSchool"
 }-->
+
 
 ```json
 {
-  "id": "String",
-  "displayName": "String",
+  "address": { "@odata.type": "microsoft.graph.physicalAddress" },
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
   "description": "String",
-  "status": "String",
-  "externalSource": "String",
+  "displayName": "String",
+  "externalId": "String",
+  "externalPrincipalId": "String",
+  "externalSource": "string",
+  "fax": "String",
+  "highestGrade": "String",
+  "id": "String (identifier)",
+  "lowestGrade": "String",
+  "phone": "String",
   "principalEmail": "String",
   "principalName": "String",
-  "externalPrincipalId": "String",
-  "highestGrade": "String",
-  "lowestGrade": "String",
-  "schoolNumber": "String",
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "externalId": "String",
-  "fax": "String",
-  "phone": "String",
+  "schoolNumber": "String"
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "educationSchool resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [ 
+    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!" 
+  ]  
+}-->

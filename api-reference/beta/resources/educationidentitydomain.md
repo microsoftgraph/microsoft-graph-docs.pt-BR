@@ -4,12 +4,12 @@ description: 'Representa o mapeamento entre um tipo de usuário educacional e o 
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 5cf7444c51b34ae4a8eacf9c99fdfd085dbec896
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 628fbdea770c685eca0194fb95a314e2e542d2fc
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334252"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750154"
 ---
 # <a name="educationidentitydomain-resource-type"></a>tipo de recurso educationIdentityDomain
 
@@ -21,7 +21,7 @@ Representa o mapeamento entre um tipo de usuário educacional e o domínio ao qu
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **appliesTo** | string |  O tipo de função de usuário a ser atribuído à licença. Os valores possíveis são: `student` e `teacher`.      |
+| **appliesTo** | string |  O tipo de função de usuário a ser atribuído à licença. Os valores possíveis são: `student`, `teacher`, `faculty`.      |
 | **name** | string |  Representa o domínio da conta de usuário.         |
 
 ## <a name="json-representation"></a>Representação JSON

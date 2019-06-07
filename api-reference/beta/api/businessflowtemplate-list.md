@@ -2,12 +2,12 @@
 title: Listar businessFlowTemplates
 description: No recurso de revisões do Azure AD Access, liste todos os objetos businessFlowTemplate.
 localization_priority: Normal
-ms.openlocfilehash: 3d26784caf0eb121350c7575934c4aa9dae61789
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1cb95b9c5eda1f561aaffcc936b2c95f8a21c980
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322343"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750063"
 ---
 # <a name="list-businessflowtemplates"></a>Listar businessFlowTemplates
 
@@ -21,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview. Read. All |
+|Aplicativo                            | AccessReview.Read.All |
 
 O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.
 
@@ -46,10 +46,10 @@ Se tiver êxito, este método retornará `200, OK` um código de resposta e uma 
 
 <!-- {
   "blockType": "request",
-  "name": "get_businesFlowTemplate"
+  "name": "get_businessFlowTemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/businesFlowTemplates
+GET https://graph.microsoft.com/beta/businessFlowTemplates
 ```
 
 ##### <a name="response"></a>Resposta

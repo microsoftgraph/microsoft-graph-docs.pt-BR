@@ -4,12 +4,12 @@ description: Fornece um mapeamento entre uma propriedade de origem e uma proprie
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7ce68460e8dfd0ff3e58b51d0007278aa6c9426e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 37ebb55fdd5457841ca0083c18518babca7565c4
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334237"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750147"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>tipo de recurso educationIdentityMatchingOptions
 
@@ -21,7 +21,7 @@ Fornece um mapeamento entre uma propriedade de origem e uma propriedade de desti
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **appliesTo** | string |  O tipo de função de usuário a ser atribuído à licença. Os valores possíveis são: `student` e `teacher`.      |
+| **appliesTo** | string |  O tipo de função de usuário a ser atribuído à licença. Os valores possíveis são: `student`, `teacher`, `faculty`.      |
 | **sourcePropertyName** | string |  O nome da propriedade Source, que deve ser um nome de campo nos dados de origem. Essa propriedade diferencia maiúsculas de minúsculas.        |
 | **TargetName** | string |  O nome da propriedade de destino, que deve ser uma propriedade válida no Azure AD. Essa propriedade diferencia maiúsculas de minúsculas.     |
 | **targetDomain** | string |  O domínio a ser sufixo com a propriedade Source para corresponder ao destino. Se fornecido como nulo, a propriedade Source será usada para corresponder à Propriedade Target.        |

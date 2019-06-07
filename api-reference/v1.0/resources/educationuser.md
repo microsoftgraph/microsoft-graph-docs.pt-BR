@@ -4,12 +4,12 @@ description: Um usuário no sistema. Essa é uma variante específica de educaç
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 4a1caaa7d81540f6a90052b13f04d7d3e5bf77da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7841311c64d131bffda8ffa8d96406f268f1467d
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463562"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750175"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 
@@ -26,7 +26,7 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 |[Listar escolas](../api/educationuser-list-schools.md) |Coleção [educationSchool](educationschool.md)| Obtenha a coleção de objetos **educationSchool** da qual o usuário é um membro.|
 |[Obter usuário](../api/educationuser-get-user.md) |[user](user.md)| Obtenha o **user** do diretório simples que corresponde a esse **educationUser**.|
 |[Atualizar](../api/educationuser-update.md) | [educationUser](educationuser.md)   |Atualize um objeto **educationUser**. |
-|[Excluir](../api/educationuser-delete.md) | Nenhum |Exclua um objeto **educationUser**. |
+|[Delete](../api/educationuser-delete.md) | Nenhum |Exclua um objeto **educationUser**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -38,9 +38,9 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 |createdBy|[identitySet](identityset.md)| Entidade que criou o usuário. |
 |department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
 |displayName|String|O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
-|externalSource|`educationExternalSource`| De onde esse usuário foi criado. Os valores possíveis são: `sis`, `manual`, `unkownFutureValue`.|
+|externalSource|`educationExternalSource`| De onde esse usuário foi criado. Os valores possíveis são: `sis`, `manual`.|
 |givenName|String|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
-|id|String|O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
 |mailingAddress|[physicalAddress](physicaladdress.md)| Endereço de email do usuário.|
 |mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a $filter.|
@@ -49,7 +49,7 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Os dois podem ser especificados juntos, por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo, "en-US".|
-|primaryRole|educationUserRole| Função padrão de um usuário. A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `unknownFutureValue`. Oferece suporte a $filter.|
+|primaryRole|educationUserRole| Função padrão de um usuário. A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`. Oferece suporte a $filter.|
 |provisionedPlans|Coleção [ProvisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
 |relatedContacts|coleção [relatedContact](relatedcontact.md)|Conjunto de contatos relacionados ao usuário.  Essa propriedade opcional deve ser especificada em uma cláusula $select e só pode ser recuperada para um usuário individual.|
 |residenceAddress|[physicalAddress](physicaladdress.md)| Endereço em que o usuário reside.|
@@ -66,7 +66,7 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 |classes|Coleção [educationClass](educationclass.md)| Aulas às quais o usuário pertence. Anulável.|
 |schools|Coleção [educationSchool](educationschool.md)| Escolas às quais o usuário pertence. Anulável.|
 |assignments| [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)| Lista de atribuições para o usuário. Anulável.|
-|user|[usuário](user.md)| O usuário de diretório correspondente a este usuário.|
+|user|[Usuário](user.md)| O usuário de diretório correspondente a este usuário.|
 
 >**Observação:** o recurso **educationassignment** é uma versão /beta. Se for usar esse recurso, não se esqueça de revisar o [log de alterações](/graph/changelog) periodicamente. Quando os recursos de API do Microsoft Graph forem lançados no ponto de extremidade /v1.0, o lançamento será anotado no log de alterações. Se o aplicativo consumir o recurso **educationassignment**, será necessário declarar as URLs de solicitação básicas, como mostrado no seguinte bloco de códigos:  
 ```JavaScript

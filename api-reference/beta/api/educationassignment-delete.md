@@ -4,12 +4,12 @@ description: Excluir uma atribuição existente. Somente os professores de uma a
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 22c5e7c2795377eaeba9e8bcacc0c188ed0995ef
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 10a66116b9fb3443cce72641fd8ffb7f63d6fee0
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33588063"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750035"
 ---
 # <a name="delete-educationassignment"></a>Excluir educationAssignment
 
@@ -18,35 +18,41 @@ ms.locfileid: "33588063"
 Excluir uma atribuição existente. Somente os professores de uma aula podem excluir atribuições.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite |
-|Delegado (conta pessoal da Microsoft) |   Sem suporte. |
-|Application | Sem suporte.  | 
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)             |
+| :------------------------------------- | :------------------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                          |
+| Aplicativo                            | Sem suporte.                                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/<id>/assignments/<id>
+DELETE /education/classes/{id}/assignments/{id}
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+
+| Cabeçalho        | Valor                     |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 <!-- {
@@ -69,11 +75,15 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+
+# <a name="ctabcs"></a>[C#](#tab/cs)
+
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
 
 ---
