@@ -4,18 +4,18 @@ description: Listar todas as mensagens na caixa de correio do usuário conectado
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2afbf190402081587de1e6ae7373ad84c8f96183
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2e5ec3bd9518fe47840c608ee861056967ec964b
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598339"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812926"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar todas as mensagens na caixa de correio do usuário conectado ou as mensagens de uma pasta especificada na caixa de correio ou unidade.
+Listar todas as mensagens na caixa de correio do usuário especificado ou as mensagens de uma pasta especificada na caixa de correio.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -134,11 +134,11 @@ Content-length: 317
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_messages-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_messages-Javascript-snippets.md)]
 
 ---

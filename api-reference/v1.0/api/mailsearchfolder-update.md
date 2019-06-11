@@ -1,19 +1,17 @@
 ---
 title: Atualizar mailSearchFolder
-description: Atualize as propriedades graváveis do objeto mailSearchFolder.
+description: Atualizar as propriedades graváveis de um objeto mailSearchFolder.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6b5dee2fae2da89cd9fdff43465f1e57e3f57407
+ms.openlocfilehash: 2fe7dc08487026c5fa3c2ef355241fb127d1eed5
 ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812891"
+ms.locfileid: "34818655"
 ---
 # <a name="update-mailsearchfolder"></a>Atualizar mailSearchFolder
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualizar as propriedades graváveis de um objeto [mailSearchFolder](../resources/mailsearchfolder.md) .
 
@@ -61,7 +59,7 @@ A seguir está um exemplo de solicitação que atualiza a propriedade **filterQu
   "name": "update_mailsearchfolder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
+PATCH https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 Content-type: application/json
 
 {
@@ -99,16 +97,6 @@ Content-type: application/json
   "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -120,8 +108,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    
   ]
 }
 -->

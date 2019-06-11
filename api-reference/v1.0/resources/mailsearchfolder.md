@@ -4,16 +4,14 @@ description: Um mailSearchFolder é uma pasta virtual na caixa de correio do usu
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7f522d6d947d190232d510662dfe2c6a70001fb2
+ms.openlocfilehash: 0980a99567a93b48c4bd75ef3510c51347d8d794
 ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812919"
+ms.locfileid: "34818659"
 ---
 # <a name="mailsearchfolder-resource-type"></a>tipo de recurso mailSearchFolder
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um **mailSearchFolder** é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email correspondentes aos critérios de pesquisa especificados. **mailSearchFolder** herda de [mailFolder](mailfolder.md). Pastas de pesquisa podem ser criadas em qualquer pasta da caixa de correio do Exchange Online de um usuário. No entanto, para que uma pasta de pesquisa apareça no Outlook, no Outlook para a Web ou no Outlook Live, a pasta deve ser criada na pasta **WellKnownFolderName. SearchFolders** . 
 
