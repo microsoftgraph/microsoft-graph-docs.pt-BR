@@ -4,12 +4,12 @@ description: O Microsoft Graph permite que o seu aplicativo obtenha acesso autor
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2c81fc7f7e91a4a568445be2e96b01d545b5be22
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5baf5c6c9b03c93aaa62df9a8f0690d4afe7f437
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345124"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812954"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 
@@ -47,6 +47,7 @@ A API do Microsoft Graph também fornece métodos e ações que ofereçam suport
 | Rascunho, ler, responder, encaminhar, enviar, atualizar ou excluir mensagens | [message](../resources/message.md) | [Métodos de mensagem](../resources/message.md#methods) |
 | Delegar outro usuário para enviar mensagens em nome do proprietário da caixa de correio | [message](../resources/message.md) | Configurar as propriedades **from** e **sender** em uma [mensagem](../resources/message.md) |
 | Permitir que o usuário visualize as mensagens mais importantes primeiro | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Caixa de Entrada Prioritária](../resources/manage-focused-inbox.md) |
+| Procure por mensagens e as obtenha em uma pasta de pesquisa  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Métodos de mailSearchFolder](../resources/mailsearchfolder.md#methods) |
 | Obter o conteúdo de MIME de uma mensagem ou anexo de mensagem (versão prévia) | [message](../resources/message.md) | [Obter conteúdo de MIME](/graph/outlook-get-mime-message) |
 | Adicionar, obter ou excluir anexos de uma mensagem | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Métodos de anexo](../resources/attachment.md#methods) |
 | Acessar as opções de idioma e fuso horário para um usuário | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |

@@ -4,12 +4,12 @@ description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: bab8e6ead9a88977fe84034ef1c9694d2948c498
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: 52837993d26b764aa8590aadec327fd3a660f104
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709387"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812828"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -57,6 +57,7 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |isArchived|Booliano|Se essa equipe está no modo somente leitura. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots na equipe.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Configurações para definir a mensagens e menções na equipe.|
+|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Configurações de capacidade de descoberta da equipe por outras pessoas.|
 |webUrl|cadeia de caracteres (somente leitura) | Um hiperlink que será enviado à equipe no cliente do Microsoft Teams. Esta é a URL que você recebe ao clicar com o botão direito do mouse em uma equipe no cliente do Microsoft Teams e escolher **Obter o link para a equipe**. Essa URL deve ser tratada como um blob opaco e não analisado. |
 
 ## <a name="relationships"></a>Relações
@@ -83,11 +84,12 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 
 ```json
-{  
+{
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "discoverySettings": {"@odata.type": "microsoft.graph.teamDiscoverySettings"},
   "internalId": "string",
   "isArchived": false,
   "webUrl": "string (URL)",

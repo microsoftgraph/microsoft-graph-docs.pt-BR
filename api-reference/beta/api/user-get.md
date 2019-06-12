@@ -4,12 +4,12 @@ description: Recuperar as propriedades e os relacionamentos do objeto user.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c00349e0de78c83778b972dd36e7d24c7d582db1
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 3bec928759dde2d1b29cb761316b85ce594eb88f
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637343"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812947"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -47,6 +47,9 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [user](../resources/user.md) no corpo da resposta.
+
+Esse método retorna `202 Accepted` quando a solicitação tenha sido processada com sucesso, mas o servidor requer mais tempo para concluir as operações de segundo plano relacionadas.
+
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
