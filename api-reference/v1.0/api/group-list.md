@@ -4,12 +4,12 @@ description: Lista todos os grupos disponíveis em uma organização, inclusive,
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: aad378eaa82b5550f4d021b283c8437187fdf8c1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6f854afd94ef4d2cdd47c03ceaf157f20e4b84fc
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613807"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812779"
 ---
 # <a name="list-groups"></a>Listar grupos
 Lista todos os grupos disponíveis em uma organização, inclusive, mas não limitado a Grupos do Office 365.
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All, Group.ReadWrite.All |
+|Aplicativo | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

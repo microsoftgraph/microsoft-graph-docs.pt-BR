@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 763491bf5359eda58a1802b172d269151a647f59
-ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
+ms.openlocfilehash: bae71d394cbc2dff682a4e0ce4aa93ab18c7b2d4
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34683570"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812674"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -25,7 +25,30 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | Beta        | A propriedade de navegação [followSite](/graph/api/follow-site?view=graph-rest-beta) foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta) |
 | Adição        | Beta        | A propriedade de navegação [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta)foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta)  |
 
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionado o recurso [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) e os métodos associados. |
+
 ## <a name="may-2019"></a>Maio de 2019
+
+### <a name="education-apis"></a>APIs de educação
+| Tipo de alteração | Versão | Descrição                                                                                                                                                      |
+| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Adição    | beta    | TaughtClasses adicionou a [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).                                                                  |
+| Adição    | beta    | [educationCourse](/graph/api/resources/educationCourse?view=graph-rest-beta)adicionou a [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) |
+| Adição    | beta    | Suporte [delta](/graph/delta-query-overview) adicionado a [aeducationUser](/graph/api/resources/educationUser?view=graph-rest-beta).                                   |
+| Adição    | beta    | [Delta](/graph/delta-query-overview) adicionado a [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta).                                       |
+| Adição    | beta    | [Delta](/graph/delta-query-overview) adicionado a [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta).                                         |
+| Adição    | beta    | Opção `faculty` adicionada à enumeração [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values).                              |
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta        | Adicionou a propriedade **urgente** a enumeração[chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta).|
+| Adição        | Beta        | Adicionada a propriedadede navegação **hostedContents** à entidade [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
+| Adição        | Beta        | Adicionado a entidade **chatMessageHostedContent** para representar o conteúdo hospedado pelo Microsoft Teams associado a um [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). |
 
 ### <a name="reports-apis"></a>APIs de relatórios
 
@@ -80,6 +103,14 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Alteração|beta|Alterado o tipo das seguintes propriedades no tipo enum [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta):<br/>**fullScan** de 2 a 3<br/>**quickScan** de 3 a 4<br/>**signatureUpdate** de 4 a 5<br/>|
 |Adição|beta|Adicionado o membro **derivedCredential** ao tipo enum [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro **derivedCredential** ao tipo enum [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta)|
+
+
+### <a name="outlook-mail"></a>Email do Outlook
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adicionada a entidade[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0), que é derivada e suporta os métodos da entidade [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0). |
+
 
 ### <a name="risky-users-api"></a>Usuários arriscados API
 
