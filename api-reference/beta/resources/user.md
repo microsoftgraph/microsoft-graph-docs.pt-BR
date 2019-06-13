@@ -4,12 +4,12 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f87ff4df1ea1fab1b727a725c01f024a872a8f1f
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: a397c3433de4d3615e09475059eeb58254bd3086
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34475203"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914655"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -63,17 +63,17 @@ Esse recurso permite:
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.|
 |[Listar licenseDetails](../api/user-list-licensedetails.md) |Coleção [licenseDetails](licensedetails.md)| Obtenha uma coleção de objetos licenseDetails.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
+|[delta](../api/user-delta.md)|coleção de usuários| Obter as alterações incrementais para usuários. |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Encontrar o tempo e locais para reunião com base na disponibilidade dos participantes, localização ou restrições de tempo.|
 |[findRoomLists](../api/user-findroomlists.md)|Coleção [emailaddress.md](emailaddress.md) | Obter as listas de salas definidas em um locatário.|
 |[findRooms](../api/user-findrooms.md)|Coleção [emailaddress.md](emailaddress.md) | Obter todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. |
 |[getMailTips](../api/user-getmailtips.md)|Coleção [mailTips](mailtips.md)|Retornar dicas de email de um ou mais destinatários conforme disponíveis para o usuário conectado. |
 |[getMemberGroups](../api/user-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|Coleção String| Retornar todos os grupos, funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva. |
-|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| Nenhum |Invalidar todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **refreshTokensValidFromDateTime** para a data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Esse método é substituído por **revokeSignInSessions**.|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Nenhum |Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Esse método substitui **invalidateAllRefreshTokens**.|
+|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| Nenhum |Invalidar todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **refreshTokensValidFromDateTime** para a data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método é substituído por **revokeSignInSessions**.|
 |[reminderView](../api/user-reminderview.md)|Coleção [Reminder](reminder.md)|Retorna uma lista de lembretes de calendário nas horas de início e término especificadas.|
-|[delta](../api/user-delta.md)|coleção de usuários| Obter as alterações incrementais para usuários. |
-|[Traduzir identificadores do Outlook](../api/user-translateexchangeids.md) |Coleção [tipo de recurso convertIdResult](convertidresult.md)| Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Nenhum |Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método substitui **invalidateAllRefreshTokens**.|
+|[translateExchangeIds](../api/user-translateexchangeids.md) |coleção [convertIdResult](convertidresult.md)| Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
