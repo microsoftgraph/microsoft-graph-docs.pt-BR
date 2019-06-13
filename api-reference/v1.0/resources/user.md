@@ -4,12 +4,12 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bf6bb70c43f65909dd0b8bed6f75afe985529e80
-ms.sourcegitcommit: 5cdd6a9dba70b54923ec3520ed9daad5f19a8dac
+ms.openlocfilehash: c1e1cecdcf99d146b42867dae8f332b74f2c689a
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "34730362"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914690"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -57,11 +57,10 @@ Esse recurso permite:
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.|
 |[Listar licenseDetails](../api/user-list-licensedetails.md) |Coleção [licenseDetails](licensedetails.md)| Obtenha uma coleção de objetos licenseDetails.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
+|[delta](../api/user-delta.md)|coleção de usuários| Obter as alterações incrementais para usuários. |
 |[getMemberGroups](../api/user-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorna todos os grupos e funções de diretório dos quais o usuário é membro. A verificação é transitiva. |
 |[reminderView](../api/user-reminderview.md)|Coleção [Reminder](reminder.md)|Retorna uma lista de lembretes de calendário nas horas de início e término especificadas.|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Nenhum |Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos.|
-|[delta](../api/user-delta.md)|coleção de usuários| Obtenha as alterações incrementais para usuários. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
@@ -127,7 +126,6 @@ Esse recurso permite:
 |schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que frequentou.|
 |showInAddressList|Booliano|**true** se a lista de endereços global do Outlook deve conter o usuário, caso contrário **false**. Se não estiver configurado, isso será tratado como **true**. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como **false**.|
 |skills|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas qualificações.|
-|signInSessionsValidFromDateTime|DateTimeOffset| Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
 |state|String|O estado ou município no endereço do usuário. Oferece suporte a $filter.|
 |streetAddress|String|O endereço do local de trabalho do usuário.|
 |surname|String|O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a $filter.|
@@ -175,7 +173,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |granted|1|O consentimento foi obtido para o usuário ter uma conta.|
 |denied|2|O consentimento não foi obtido para o usuário ter uma conta.|
 |notRequired|3|O usuário é de um local que não exige consentimento.|
- 
+
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   |Descrição|
@@ -424,7 +422,6 @@ Veja a seguir uma representação JSON do recurso
   "responsibilities": ["string"],
   "schools": ["string"],
   "showInAddressList": true,
-  "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",

@@ -1,21 +1,21 @@
 ---
-title: gerenciador de convites
-description: 'Use o gerenciador de convites para criar um convite para adicionar um usuário externo à organização. '
+title: tipo de recurso convite
+description: Representa um convite usado para adicionar usuários externos a uma organização.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: aaa335717fe2e6829fdff42cee180cd9a3c4ffe2
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: bb0979954421a9b0fe1d5b119e7f060843380a06
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657725"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914662"
 ---
-# <a name="invitation-manager"></a>gerenciador de convites
+# <a name="invitation-resource-type"></a>tipo de recurso convite
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use o gerenciador de convites para criar um convite para adicionar um usuário externo à organização. 
+Representa um convite usado para adicionar usuários externos a uma organização. 
 
 O processo de convite usa o fluxo a seguir:
 
