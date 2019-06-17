@@ -4,12 +4,12 @@ description: Contém propriedades para o operador de detecção.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d373b03898fdeed45d1dc3218c812b3f7b9726d0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 896e7c09ceed111095e3e84acaedf05ea0324eaf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949756"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993169"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>tipo de enumeração win32LobAppDetectionOperator
 
@@ -29,6 +29,7 @@ Contém propriedades para o operador de detecção.
 |greaterThanOrEqual|0,5|Operador maior ou igual a.|
 |lessThan|8 |Operador menor que.|
 |lessThanOrEqual|9 |Operador menor ou igual.|
+
 
 
 

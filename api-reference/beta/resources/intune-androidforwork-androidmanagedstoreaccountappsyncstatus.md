@@ -4,12 +4,12 @@ description: Status de sincronização do locatário com a API Google EMM
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc6555e4722098b5f35d0098d1c1e55209926d6e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 21eccae8d063a6007f6798c0909857688abe13ea
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950624"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993379"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>tipo de enumeração androidManagedStoreAccountAppSyncStatus
 
@@ -28,6 +28,7 @@ Status de sincronização do locatário com a API Google EMM
 |managementServiceError|3D|Ainda não documentado|
 |unknownError|quatro|Ainda não documentado|
 |none|0,5|Ainda não documentado|
+
 
 
 

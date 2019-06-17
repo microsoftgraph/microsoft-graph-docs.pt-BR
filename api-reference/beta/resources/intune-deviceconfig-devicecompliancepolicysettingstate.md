@@ -4,12 +4,12 @@ description: Estado da configuração da política de conformidade de dispositiv
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22e71dc6a272a0e49e3ff0f60af90f63c44b3cfa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3bf24f25a529c271af670c2e9e2fe3a467941099
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947120"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995508"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingState
 
@@ -22,16 +22,16 @@ Estado da configuração da política de conformidade de dispositivo para um det
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configuração|Cadeia de caracteres|A configuração que é relatada|
-|settingName|Cadeia de caracteres|Nome de configuração localizada/de usuário que é relatada|
-|instanceDisplayName|Cadeia de caracteres|Nome da instância de configuração que é relatada.|
+|configuração|String|A configuração que é relatada|
+|settingName|String|Nome de configuração localizada/de usuário que é relatada|
+|instanceDisplayName|String|Nome da instância de configuração que é relatada.|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de erro da configuração|
-|errorDescription|Cadeia de caracteres|Descrição de erro|
+|errorDescription|String|Descrição de erro|
 |userId|String|UserId|
-|userName|Cadeia de caracteres|UserName|
-|userEmail|Cadeia de caracteres|UserEmail|
-|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
+|userName|String|UserName|
+|userEmail|String|UserEmail|
+|userPrincipalName|String|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
 
@@ -68,6 +68,7 @@ Veja a seguir uma representação JSON do recurso.
   "currentValue": "String"
 }
 ```
+
 
 
 

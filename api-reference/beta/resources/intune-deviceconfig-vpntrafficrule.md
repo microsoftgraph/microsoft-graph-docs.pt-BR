@@ -4,12 +4,12 @@ description: Definição de regra de tráfego VPN.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21f174056021e9a9789a2c033383c42ba8f09cc3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: db16de3ddcbfe17bd5fe19bfe9e672002324c5cb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944555"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991594"
 ---
 # <a name="vpntrafficrule-resource-type"></a>tipo de recurso vpnTrafficRule
 
@@ -22,16 +22,16 @@ Definição de regra de tráfego VPN.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|Tdomínio.|
+|name|String|Tdomínio.|
 |protocolos|Int32|Protocolos (0-255). Valores válidos de 0 a 255|
 |localPortRanges|coleção [numberRange](../resources/intune-deviceconfig-numberrange.md)|O intervalo de porta local só pode ser definido quando o protocolo é TCP ou UDP (6 ou 17). Esta coleção pode conter um máximo de 500 elementos.|
 |remotePortRanges|coleção [numberRange](../resources/intune-deviceconfig-numberrange.md)|O intervalo de porta remoto só pode ser definido quando o protocolo é TCP ou UDP (6 ou 17). Esta coleção pode conter um máximo de 500 elementos.|
 |localAddressRanges|coleção [iPv4Range](../resources/intune-shared-ipv4range.md)|Intervalo de endereços local. Esta coleção pode conter um máximo de 500 elementos.|
 |remoteAddressRanges|coleção [iPv4Range](../resources/intune-shared-ipv4range.md)|Intervalo de endereços remoto. Esta coleção pode conter um máximo de 500 elementos.|
-|appId|Cadeia de caracteres|Identificador de aplicativo, se essa regra de tráfego é disparada por um aplicativo.|
+|appId|String|Identificador de aplicativo, se essa regra de tráfego é disparada por um aplicativo.|
 |appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Tipo de aplicativo, se essa regra de tráfego é disparada por um aplicativo. Os valores possíveis são: `none`, `desktop`, `universal`.|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|Quando o aplicativo é acionado, indica se deseja habilitar o túnel de divisão ao longo desta rota. Os valores possíveis são: `none`, `splitTunnel`, `forceTunnel`.|
-|afirma|Cadeia de caracteres|Declarações associadas a esta regra de tráfego.|
+|afirma|String|Declarações associadas a esta regra de tráfego.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -82,6 +82,7 @@ Veja a seguir uma representação JSON do recurso.
   "claims": "String"
 }
 ```
+
 
 
 

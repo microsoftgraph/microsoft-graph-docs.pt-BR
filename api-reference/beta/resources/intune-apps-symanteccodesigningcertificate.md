@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea5578f39f607a66770a040c4b88fbc2d75e8ffc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: eb2df97c125827b54936ec5890923c799592ae61
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949728"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993309"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>tipo de recurso symantecCodeSigningCertificate
 
@@ -34,10 +34,10 @@ Ainda não documentado
 |password|String|A senha necessária para o arquivo. pfx.|
 |SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
 |subject|Cadeia de caracteres|O valor de entidade para o certificado.|
-|issuerName|Cadeia de caracteres|O nome do emissor do certificado.|
-|emissor|Cadeia de caracteres|O valor do emissor para o certificado.|
+|issuerName|String|O nome do emissor do certificado.|
+|emissor|String|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
-|uploadDateTime|DateTimeOffset|O tipo do certificado de codeSignação como CERT da Symantec.|
+|uploadDateTime|DateTimeOffset|O tipo do certificado de codesignação como CERT da Symantec.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -65,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

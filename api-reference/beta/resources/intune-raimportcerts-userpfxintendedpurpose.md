@@ -4,12 +4,12 @@ description: Valores com suporte para a finalidade pretendida de um certificado 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd732953e1782767d6ab7557d76d3f84d071f56b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 66a9509eebffb8434ca629e0c3336d7078d9afff
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940082"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993687"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>tipo de enumeração userPfxIntendedPurpose
 
@@ -27,6 +27,7 @@ Valores com suporte para a finalidade pretendida de um certificado PFX de usuár
 |smimeSigning|duas|Ainda não documentado|
 |VPN|quatro|Ainda não documentado|
 |detector|8 |Ainda não documentado|
+
 
 
 

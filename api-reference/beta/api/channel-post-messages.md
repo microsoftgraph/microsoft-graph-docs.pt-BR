@@ -5,18 +5,20 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0681ded7bb45eea328f9ce6a61f65683aa4d8cf9
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: dfd71d10f73d91a1f6b400dcaa4833e134043f88
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34720862"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963419"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Criar chat em um canal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar um novo [chat](../resources/chatmessage.md) no [canal](../resources/channel.md)especificado.
+
+> **Observação**: não é recomendável usar essa API para a migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.
 
 ## <a name="permissions"></a>Permissões
 

@@ -4,12 +4,12 @@ description: Exclui ndesConnector.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e41752a3291b41f7b808563d2a9d555cd70bc32d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4a680f34580405009c0d0dbe13a63c7cd864fb90
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922624"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976397"
 ---
 # <a name="delete-ndesconnector"></a>Excluir ndesConnector
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

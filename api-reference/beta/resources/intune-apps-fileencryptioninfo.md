@@ -4,12 +4,12 @@ description: Contém propriedades de informações de criptografia de arquivos p
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a507aed30d82fd012a964082a2d83fed0f7c751
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 725a47eda88cbbdad752d73e6ea3451dcc3d140b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950421"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991307"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Tipo de recurso fileEncryptionInfo
 
@@ -26,7 +26,7 @@ Contém propriedades de informações de criptografia de arquivos para a versão
 |initializationVector|Binária|O vetor de inicialização usado para o algoritmo de criptografia.|
 |mac|Binária|O hash do conteúdo do arquivo criptografado + IV (hash conteúdo).|
 |macKey|Binária|Chave usada para acessar mac.|
-|profileIdentifier|Cadeia de caracteres|O identificador de perfil.|
+|profileIdentifier|String|O identificador de perfil.|
 |fileDigest|Binária|O resumo de arquivo antes da criptografia.|
 |fileDigestAlgorithm|Cadeia de caracteres|O algoritmo de conteúdo do arquivo.|
 
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "fileDigestAlgorithm": "String"
 }
 ```
+
 
 
 

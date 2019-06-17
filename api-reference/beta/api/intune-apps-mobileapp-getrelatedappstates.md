@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4877a321bab9b216ceab999ff6d49cb36702145
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1f2cf130b7e205767ddae5a5a7e857a12725d824
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935374"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974304"
 ---
 # <a name="getrelatedappstates-function"></a>função getRelatedAppStates
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
+|userPrincipalName|String|Ainda não documentado|
 |deviceId|Cadeia de caracteres|Ainda não documentado|
 
 
@@ -92,6 +92,7 @@ Content-Length: 481
   ]
 }
 ```
+
 
 
 

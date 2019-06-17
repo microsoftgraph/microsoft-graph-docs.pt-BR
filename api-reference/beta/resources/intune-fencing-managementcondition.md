@@ -4,12 +4,12 @@ description: As condições de gerenciamento são eventos que podem ser acionado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efd9dfa17858e4de1aa430c26977babe659c1067
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 046f3280e5ab5ddcd4518b4938f9b8917b3914d9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941286"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979211"
 ---
 # <a name="managementcondition-resource-type"></a>tipo de recurso managementCondition
 
@@ -30,9 +30,9 @@ As condições de gerenciamento são eventos que podem ser acionados dinamicamen
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
-|uniqueName|Cadeia de caracteres|Nome exclusivo para a condição de gerenciamento. Usado em expressões de condição de gerenciamento.|
-|displayName|Cadeia de caracteres|O nome do administrador definido da condição de gerenciamento.|
-|description|String|A descrição definida pelo administrador da condição de gerenciamento.|
+|uniqueName|String|Nome exclusivo para a condição de gerenciamento. Usado em expressões de condição de gerenciamento.|
+|displayName|String|O nome do administrador definido da condição de gerenciamento.|
+|descrição|String|A descrição definida pelo administrador da condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi criada. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço.|
 |eTag|String|ETag da condição de gerenciamento. Atualizado o lado do serviço.|
@@ -66,6 +66,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

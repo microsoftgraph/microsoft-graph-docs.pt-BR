@@ -4,12 +4,12 @@ description: Tipo de direcionamento de gerenciamento de dispositivo do Android f
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1aa164ba9fcb9c303873888dc6080512eb2208e1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fa7412d13935f072d75d0e05e6d906a5cff8faf8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950589"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993414"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>tipo de enumeração androidForWorkEnrollmentTarget
 
@@ -26,6 +26,7 @@ Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para 
 |todos os|1|Ainda não documentado|
 |visa|duas|Ainda não documentado|
 |targetedAsEnrollmentRestrictions|3D|Ainda não documentado|
+
 
 
 

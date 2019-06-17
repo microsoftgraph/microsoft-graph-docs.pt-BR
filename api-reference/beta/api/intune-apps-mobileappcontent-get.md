@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto mobileAppContent.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c00700ca4cf66d418dc1b963c3b39bd5907e4ca
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3afdffab9a5a3241bdd019467eadd9ed83178cd2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935227"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974024"
 ---
 # <a name="get-mobileappcontent"></a>Acessar mobileAppContent
 
@@ -76,6 +76,7 @@ Content-Length: 130
   }
 }
 ```
+
 
 
 

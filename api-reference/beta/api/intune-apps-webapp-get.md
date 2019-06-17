@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto webApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a02d1aac676b0039427685c530b72781fa2e745b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d82f22af424c23fd2076d8f573546fd6f53189b2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934849"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973401"
 ---
 # <a name="get-webapp"></a>Acessar webApp
 
@@ -101,6 +101,7 @@ Content-Length: 1024
   }
 }
 ```
+
 
 
 

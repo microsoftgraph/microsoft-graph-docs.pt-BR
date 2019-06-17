@@ -4,12 +4,12 @@ description: A entidade de valor de definição armazena o valor de uma única d
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acc7393a8fcbaf7dfc484f40b3ed12bc821ba63e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 816d2e78a969dcd50ad4cff0efd6e294def78d23
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941153"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975928"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>tipo de recurso groupPolicyDefinitionValue
 
@@ -34,7 +34,7 @@ A entidade de valor de definição armazena o valor de uma única definição de
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
 |enabled|Boolean|Habilita ou desabilita a definição de política de grupo associada.|
 |ConfigurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Especifica como o valor deve ser configurado. Isso pode ser uma política ou uma preferência. Os valores possíveis são: `policy` e `preference`.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações
@@ -61,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Lista as propriedades e relações de objetos importedWindowsAutopi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7822a7449b2633b23b2ff2330c1a0d16ba291a3d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 16cc4ba8dedf6bd74ebace828da55bf79b56847e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908340"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981703"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>Listar importedWindowsAutopilotDeviceIdentities
 
@@ -87,6 +87,7 @@ Content-Length: 787
   ]
 }
 ```
+
 
 
 

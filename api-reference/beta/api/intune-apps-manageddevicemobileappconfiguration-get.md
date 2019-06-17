@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto managedDeviceMobileAppConfi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f644e378ef723bd80d3aa33c49b02fdc3474534b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a942f702e549f05fe27d2d3991a9e5ea32c4dbbe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935696"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974892"
 ---
 # <a name="get-manageddevicemobileappconfiguration"></a>Obter managedDeviceMobileAppConfiguration
 
@@ -85,6 +85,7 @@ Content-Length: 519
   }
 }
 ```
+
 
 
 

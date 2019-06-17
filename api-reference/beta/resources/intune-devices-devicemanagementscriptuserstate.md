@@ -4,12 +4,12 @@ description: Contém propriedades para o estado de execução do usuário do scr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70c0ab2cbfd52a538997dce5cc3c7dadb98aaae7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dbde1236d741b0eba5841170b7a18e0ac00f71ee
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942027"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995284"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>tipo de recurso deviceManagementScriptUserState
 
@@ -34,7 +34,7 @@ Contém propriedades para o estado de execução do usuário do script de gerenc
 |id|String|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito para um usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário do usuário específico.|
+|userPrincipalName|String|Nome principal do usuário do usuário específico.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -58,6 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

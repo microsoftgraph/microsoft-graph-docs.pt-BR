@@ -4,12 +4,12 @@ description: Contém um caminho de arquivo ou pasta para detectar um aplicativo 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c7ba5c05647f25eb6248a7611617e630611025a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 447195064a9d42db9756c71dfe08e333bf567b31
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949637"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993176"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>tipo de recurso win32LobAppFileSystemDetection
 
@@ -26,11 +26,11 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |caminho|String|O caminho do arquivo ou da pasta para detectar o aplicativo de LoB (linha de negócios) do Win32|
-|fileOrFolderName|Cadeia de caracteres|O nome do arquivo ou pasta para detectar o aplicativo de LoB (linha de negócios) do Win32|
+|fileOrFolderName|String|O nome do arquivo ou pasta para detectar o aplicativo de LoB (linha de negócios) do Win32|
 |check32BitOn64System|Booliano|Um valor que indica se este arquivo ou pasta é para verificar o aplicativo de 32 bits no sistema de 64 bits|
 |Detecção|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|O tipo de detecção do sistema de arquivos. Os valores possíveis são: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção de arquivo ou pasta. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detecçaovalue|Cadeia de caracteres|O valor de detecção de arquivo ou pasta|
+|detecçaovalue|String|O valor de detecção de arquivo ou pasta|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "detectionValue": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsAppX.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e0142c8aead42571ffa32e6320e03a177ffe87c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3419cf1c02dcc1073eecf04796f1392b5e91c54d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934779"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973233"
 ---
 # <a name="get-windowsappx"></a>Obter windowsAppX
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1646
+Content-Length: 1696
 
 {
   "value": {
@@ -112,12 +112,15 @@ Content-Length: 1646
       "v10_1607": true,
       "v10_1703": true,
       "v10_1709": true,
-      "v10_1803": true
+      "v10_1803": true,
+      "v10_1809": true,
+      "v10_1903": true
     },
     "identityVersion": "Identity Version value"
   }
 }
 ```
+
 
 
 

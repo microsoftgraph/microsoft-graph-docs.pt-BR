@@ -4,12 +4,12 @@ description: Certificados de raiz confiável e PFX para iOS EDU.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4305745c8b9d12bf19c4e8be6c10f24076ec29f1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 30e7a68f76c60fafff9fc2b035a65a60307f775d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946501"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981465"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>tipo de recurso iosEduCertificateSettings
 
@@ -23,10 +23,10 @@ Certificados de raiz confiável e PFX para iOS EDU.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |trustedRootCertificate|Binária|Certificado raiz confiável.|
-|certFileName|Cadeia de caracteres|Nome do arquivo a ser exibido na interface do usuário.|
-|certificationAuthority|Cadeia de caracteres|Autoridade de certificação PKCS.|
-|certificationAuthorityName|Cadeia de caracteres|Nome da autoridade de certificação PKCS.|
-|certificateTemplateName|Cadeia de caracteres|Nome do modelo de certificado PKCS.|
+|certFileName|String|Nome do arquivo a ser exibido na interface do usuário.|
+|certificationAuthority|String|Autoridade de certificação PKCS.|
+|certificationAuthorityName|String|Nome da autoridade de certificação PKCS.|
+|certificateTemplateName|String|Nome do modelo de certificado PKCS.|
 |renewalThresholdPercentage|Int32|Porcentagem de limite de renovação de certificado. Valores válidos de 1 a 99|
 |certificateValidityPeriodValue|Int32|Valor para o período de validade do certificado.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Dimensionar o período de validade do certificado. Os valores possíveis são: `days`, `months`, `years`.|
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   "certificateValidityPeriodScale": "String"
 }
 ```
+
 
 
 

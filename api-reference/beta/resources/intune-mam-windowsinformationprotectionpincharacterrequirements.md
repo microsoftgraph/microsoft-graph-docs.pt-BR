@@ -4,12 +4,12 @@ description: Requisitos de caracteres de PIN
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d057dad0331fdb1b201fe720dd03a031cdfd2f82
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b6fa6e899d62383134b5fa76f44da9dfa0e29933
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940523"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994458"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>tipo de enumeração windowsInformationProtectionPinCharacterRequirements
 
@@ -25,6 +25,7 @@ Requisitos de caracteres de PIN
 |Não permitir|,0|Não permitir|
 |requireAtLeastOne|1|Exigir pelo menos um|
 |permitiu|duas|Permitir qualquer número|
+
 
 
 

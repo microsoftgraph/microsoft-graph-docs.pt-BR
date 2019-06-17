@@ -4,12 +4,12 @@ description: Valores possíveis para monitorar a atividade do arquivo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09750eb4e9a6edda24006b7c7fd28d88f1ccd146
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f8aeec78103897fbd20c370dc2719ce401e96720
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947348"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979834"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>tipo de enumeração defenderMonitorFileActivity
 
@@ -27,6 +27,7 @@ Valores possíveis para monitorar a atividade do arquivo.
 |monitorAllFiles|duas|Monitorar todos os arquivos.|
 |monitorIncomingFilesOnly|3D| Monitorar somente os arquivos de entrada.|
 |monitorOutgoingFilesOnly|quatro|Monitorar somente os arquivos de saída.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Rótulos de classificação de filmes na Austrália
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aebff459a96e686f8d60ee5e862113502a846ab8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: df09ba09db619d22de4e59a5976173df5a3daa79
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950932"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995781"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>tipo de enumeração ratingAustraliaMoviesType
 
@@ -29,6 +29,7 @@ Rótulos de classificação de filmes na Austrália
 |completa|quatro|A classificação M não é recomendada para visualizadores abaixo de 15|
 |agesAbove15|0,5|A classificação MA15 + não é adequada para visualizadores abaixo de 15|
 |agesAbove18|6|A classificação R18 + não é adequada para visualizadores em 18|
+
 
 
 

@@ -4,12 +4,12 @@ description: Contém propriedades usadas para atribuir um script de gerenciament
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11e4093c1a92f13b71cf205e48db1a7b8a5c444f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5d8b3c7c64330016c71131095277ca932ba7f98f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942049"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995319"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>tipo de recurso deviceManagementScriptGroupAssignment
 
@@ -31,8 +31,8 @@ Contém propriedades usadas para atribuir um script de gerenciamento de disposit
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de atribuição do grupo de scripts de gerenciamento de dispositivos.|
-|targetGroupId|Cadeia de caracteres|A ID do grupo do Azure Active Directory para o qual estamos direcionando o script.|
+|id|String|Chave da entidade de atribuição do grupo de scripts de gerenciamento de dispositivos.|
+|targetGroupId|String|A ID do grupo do Azure Active Directory para o qual estamos direcionando o script.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "targetGroupId": "String"
 }
 ```
+
 
 
 

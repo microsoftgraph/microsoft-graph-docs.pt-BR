@@ -4,12 +4,12 @@ description: Contém propriedades para aplicativos do Office365 excluídos.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37abd83b34fde565aa78e62454c4ce7d47ea192a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 91418a1a60a87f381dc15c63a60d69e8c264a5c3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950407"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991244"
 ---
 # <a name="excludedapps-resource-type"></a>tipo de recurso excludedApps
 
@@ -66,6 +66,7 @@ Veja a seguir uma representação JSON do recurso.
   "word": true
 }
 ```
+
 
 
 

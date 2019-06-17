@@ -4,12 +4,12 @@ description: Contém propriedades para o sistema operacional mínimo obrigatóri
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6cff0c1e925be61efe68a52d822deb074589505
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 73cdb712f74b3339f36cdcb3057afbf4a62d74fb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950561"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991328"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
@@ -66,6 +66,7 @@ Veja a seguir uma representação JSON do recurso.
   "v9_0": true
 }
 ```
+
 
 
 

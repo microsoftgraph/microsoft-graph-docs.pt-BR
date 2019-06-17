@@ -4,12 +4,12 @@ description: Criar um novo objeto ndesConnector.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 839f6f7d740ced78331168f46f6d89dbb2afd01b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 77ea2772671fef2e79d98308379257ac2ce3ae1c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922652"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976404"
 ---
 # <a name="create-ndesconnector"></a>Criar ndesConnector
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar ndesConn
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave do conector NDES.|
+|id|String|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector NDES|
 |estado|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
 |displayName|String|O nome amigável do conector NDES.|
@@ -92,6 +92,7 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

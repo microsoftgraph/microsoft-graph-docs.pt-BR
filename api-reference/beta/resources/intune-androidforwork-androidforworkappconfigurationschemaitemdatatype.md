@@ -4,12 +4,12 @@ description: Tipo de dados para um item de configuração em um esquema de confi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8b792c9b88cb35fe24382662d324a5e06c1f814
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f84a115e449a5a4d5c233cdfd8401f5f6ed2641b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950645"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993463"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>tipo de enumeração androidForWorkAppConfigurationSchemaItemDataType
 
@@ -30,6 +30,7 @@ Tipo de dados para um item de configuração em um esquema de configuração per
 |pacote|0,5|Ainda não documentado|
 |bundleArray|6|Ainda não documentado|
 |hidden|178|Ainda não documentado|
+
 
 
 

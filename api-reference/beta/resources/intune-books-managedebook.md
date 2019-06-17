@@ -4,12 +4,12 @@ description: Uma classe abstrata que contém as propriedades base do livro eletr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a9248a2bca56188deb913159d9ff664ce8d9b48
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8bf13e2c0a5c8e55a397516c21fe91d65aa413a5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949294"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991650"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -30,15 +30,15 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|displayName|Cadeia de caracteres|Nome do livro eletrônico.|
-|description|String|Descrição.|
+|displayName|String|Nome do livro eletrônico.|
+|descrição|String|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro.|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico.|
 |informationUrl|String|A URL de informações adicionais.|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade.|
+|privacyInformationUrl|String|A URL da declaração de privacidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -76,6 +76,7 @@ Veja a seguir uma representação JSON do recurso.
   "privacyInformationUrl": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78038fc9a279536c1e68708b767c6b7c81e4e4df
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: adb8c668bf3f6d30667417500a5989734167fb5c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941573"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992658"
 ---
 # <a name="enrollmentstate-enum-type"></a>tipo de enumeração de enrollmentid
 
@@ -28,6 +28,7 @@ Ainda não documentado
 |falhou|3D|Não registrado e o registro de falha de registro.|
 |Não contatado|quatro|O dispositivo é importado, mas não está inscrito.|
 |bloqueou|0,5|O dispositivo está inscrito como um não-usuário, mas é impedido de migrar para o registro do usuário porque o aplicativo não pôde ser instalado.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Estado do parceiro desse locatário.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f31cce7831bfb73ed49399daea7bc4438741d32
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a7c2c7e36d920a7f8ab08be75324983f583174b2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940243"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992966"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enumeração deviceManagementPartnerTenantState
 
@@ -28,6 +28,7 @@ Estado do parceiro desse locatário.
 |Cerro|3D|Conexão de parceiro terminada.|
 |rejeitar|quatro|As mensagens de parceiros são rejeitadas.|
 |Não responde|0,5|O parceiro não responde.|
+
 
 
 

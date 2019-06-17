@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a9e2411c2eb2b6d5cd58b336deeb9f8017832e9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 306103f59de675204200284c3c10e63aa49e0163
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941475"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992504"
 ---
 # <a name="platform-enum-type"></a>tipo de enumeração de plataforma
 
@@ -28,6 +28,7 @@ Ainda não documentado
 |Windows|3D|Plataforma de dispositivo do Windows|
 |windowsMobile|quatro|Plataforma de dispositivo WindowsMobile|
 |macOS|0,5|Plataforma de dispositivo Mac|
+
 
 
 

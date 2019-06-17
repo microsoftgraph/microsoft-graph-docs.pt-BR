@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managedIOSStoreApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eebc28c57e031a0971f4f507d929d254eb391e35
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bf5881a06192a3e859125cd252590dcf77e4034a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935493"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974493"
 ---
 # <a name="get-managediosstoreapp"></a>Acessar managedIOSStoreApp
 
@@ -116,6 +116,7 @@ Content-Length: 1493
   }
 }
 ```
+
 
 
 

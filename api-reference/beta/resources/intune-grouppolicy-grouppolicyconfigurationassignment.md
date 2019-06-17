@@ -4,12 +4,12 @@ description: A entidade de atribuição configuração de política de grupo atr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b85e3892a92605f4964700bdb9a1a28e5d02187d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e0ec4346174bdaafbc37c0721462ba8fd612abcc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941160"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975942"
 ---
 # <a name="grouppolicyconfigurationassignment-resource-type"></a>tipo de recurso groupPolicyConfigurationAssignment
 
@@ -31,7 +31,7 @@ A entidade de atribuição configuração de política de grupo atribui um ou ma
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O tipo de grupo de destino da configuração da política de grupo.|
 
@@ -56,6 +56,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 
