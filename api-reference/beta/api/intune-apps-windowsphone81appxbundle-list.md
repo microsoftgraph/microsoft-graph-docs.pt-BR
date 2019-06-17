@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsPhone81AppXBund
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d2a2616921cc2f8d8a91ee6495fb0a5a721e948e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 377bf4df991ad69940381b454c5c2e549afc9353
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934723"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973016"
 ---
 # <a name="list-windowsphone81appxbundles"></a>Listar windowsPhone81AppXBundles
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2680
+Content-Length: 2796
 
 {
   "value": [
@@ -107,7 +107,9 @@ Content-Length: 2680
         "v10_1607": true,
         "v10_1703": true,
         "v10_1709": true,
-        "v10_1803": true
+        "v10_1803": true,
+        "v10_1809": true,
+        "v10_1903": true
       },
       "phoneProductIdentifier": "Phone Product Identifier value",
       "phonePublisherId": "Phone Publisher Id value",
@@ -129,7 +131,9 @@ Content-Length: 2680
             "v10_1607": true,
             "v10_1703": true,
             "v10_1709": true,
-            "v10_1803": true
+            "v10_1803": true,
+            "v10_1809": true,
+            "v10_1903": true
           }
         }
       ]
@@ -137,6 +141,7 @@ Content-Length: 2680
   ]
 }
 ```
+
 
 
 

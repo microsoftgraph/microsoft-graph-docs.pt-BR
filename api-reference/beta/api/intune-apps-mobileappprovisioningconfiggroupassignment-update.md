@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto mobileAppProvisioningConfigGr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2347f45ca5744e89319fe3dc899a9c87a9d402c2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7f7f707defc74ae42c8faccdd66fe4bbd239a30d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935052"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973646"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Atualizar mobileAppProvisioningConfigGroupAssignment
 
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|targetGroupId|Cadeia de caracteres|A ID do grupo do AAD no qual a configuração de provisionamento do aplicativo está sendo direcionada.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|targetGroupId|String|A ID do grupo do AAD no qual a configuração de provisionamento do aplicativo está sendo direcionada.|
+|id|String|Chave da entidade.|
 
 
 
@@ -86,6 +86,7 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
+
 
 
 

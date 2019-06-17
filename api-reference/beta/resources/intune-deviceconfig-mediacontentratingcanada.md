@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c4c5f863fb20833586d7ea97ea59d293d702870
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 53855d4dddee03c2c500b28abc20ab0f9cbd15ce
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944856"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980415"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>Tipo de recurso mediaContentRatingCanada
 
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
 
 
 

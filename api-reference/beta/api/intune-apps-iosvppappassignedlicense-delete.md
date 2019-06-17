@@ -4,12 +4,12 @@ description: Exclui iosVppAppAssignedLicense.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39a3200354399b8430662e10768a83b41c1b4db6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f817e4cb1b6ebfd738c931b6ceb7febda7374758
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936172"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975508"
 ---
 # <a name="delete-iosvppappassignedlicense"></a>Excluir iosVppAppAssignedLicense
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

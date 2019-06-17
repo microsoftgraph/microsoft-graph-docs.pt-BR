@@ -4,12 +4,12 @@ description: Criar um novo objeto depOnboardingSetting.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7693ae66b21e434fab88bc9500b6b25f77facd0e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 71d942195ff6f55a8455fe8b5f687ebe45053c51
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908802"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980233"
 ---
 # <a name="create-deponboardingsetting"></a>Criar depOnboardingSetting
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depOnboa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O UUID do objeto.|
+|id|String|O UUID do objeto.|
 |appleIdentifier|Cadeia de caracteres|A ID da Apple usada para obter o token atual.|
 |tokenExpirationDateTime|DateTimeOffset|Quando o token expirará.|
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depOnboa
 |shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
 |TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenname|Cadeia de caracteres|Nome amigável para token Dep|
+|tokenname|String|Nome amigável para token Dep|
 |syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
 |dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
@@ -122,6 +122,7 @@ Content-Length: 689
   ]
 }
 ```
+
 
 
 
