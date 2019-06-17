@@ -4,31 +4,31 @@ description: Atualiza as propriedades de um objeto iosEduDeviceConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbfd86b8356a1174435ad94deb7a132ae680e20f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4fb3f0c06712157aac4e2ec45f0a43cdedf36cdf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923528"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966800"
 ---
-# <a name="update-iosedudeviceconfiguration"></a><span data-ttu-id="ce3b4-103">Atualizar iosEduDeviceConfiguration</span><span class="sxs-lookup"><span data-stu-id="ce3b4-103">Update iosEduDeviceConfiguration</span></span>
+# <a name="update-iosedudeviceconfiguration"></a><span data-ttu-id="2b923-103">Atualizar iosEduDeviceConfiguration</span><span class="sxs-lookup"><span data-stu-id="2b923-103">Update iosEduDeviceConfiguration</span></span>
 
-> <span data-ttu-id="ce3b4-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2b923-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="2b923-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ce3b4-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2b923-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2b923-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ce3b4-106">Atualiza as propriedades de um objeto [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="ce3b4-106">Update the properties of a [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object.</span></span>
+<span data-ttu-id="2b923-106">Atualiza as propriedades de um objeto [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="2b923-106">Update the properties of a [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ce3b4-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ce3b4-107">Prerequisites</span></span>
-<span data-ttu-id="ce3b4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce3b4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2b923-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="2b923-107">Prerequisites</span></span>
+<span data-ttu-id="2b923-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2b923-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ce3b4-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ce3b4-110">Permission type</span></span>|<span data-ttu-id="ce3b4-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="2b923-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2b923-110">Permission type</span></span>|<span data-ttu-id="2b923-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="2b923-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ce3b4-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ce3b4-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce3b4-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="ce3b4-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ce3b4-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-115">Not supported.</span></span>|
-|<span data-ttu-id="ce3b4-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ce3b4-116">Application</span></span>|<span data-ttu-id="ce3b4-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-117">Not supported.</span></span>|
+|<span data-ttu-id="2b923-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2b923-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2b923-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2b923-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="2b923-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2b923-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2b923-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2b923-115">Not supported.</span></span>|
+|<span data-ttu-id="2b923-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2b923-116">Application</span></span>|<span data-ttu-id="2b923-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2b923-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ce3b4-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ce3b4-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2b923-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2b923-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,44 +39,47 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssign
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ce3b4-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ce3b4-119">Request headers</span></span>
-|<span data-ttu-id="ce3b4-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ce3b4-120">Header</span></span>|<span data-ttu-id="ce3b4-121">Valor</span><span class="sxs-lookup"><span data-stu-id="ce3b4-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2b923-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2b923-119">Request headers</span></span>
+|<span data-ttu-id="2b923-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2b923-120">Header</span></span>|<span data-ttu-id="2b923-121">Valor</span><span class="sxs-lookup"><span data-stu-id="2b923-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ce3b4-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="ce3b4-122">Authorization</span></span>|<span data-ttu-id="ce3b4-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ce3b4-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="ce3b4-124">Accept</span></span>|<span data-ttu-id="ce3b4-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ce3b4-125">application/json</span></span>|
+|<span data-ttu-id="2b923-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="2b923-122">Authorization</span></span>|<span data-ttu-id="2b923-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2b923-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2b923-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="2b923-124">Accept</span></span>|<span data-ttu-id="2b923-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2b923-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ce3b4-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ce3b4-126">Request body</span></span>
-<span data-ttu-id="ce3b4-127">No corpo da solicitação, forneça uma representação JSON do objeto [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="ce3b4-127">In the request body, supply a JSON representation for the [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2b923-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2b923-126">Request body</span></span>
+<span data-ttu-id="2b923-127">No corpo da solicitação, forneça uma representação JSON do objeto [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="2b923-127">In the request body, supply a JSON representation for the [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object.</span></span>
 
-<span data-ttu-id="ce3b4-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="ce3b4-128">The following table shows the properties that are required when you create the [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md).</span></span>
+<span data-ttu-id="2b923-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="2b923-128">The following table shows the properties that are required when you create the [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md).</span></span>
 
-|<span data-ttu-id="ce3b4-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ce3b4-129">Property</span></span>|<span data-ttu-id="ce3b4-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="ce3b4-130">Type</span></span>|<span data-ttu-id="ce3b4-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="ce3b4-131">Description</span></span>|
+|<span data-ttu-id="2b923-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2b923-129">Property</span></span>|<span data-ttu-id="2b923-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="2b923-130">Type</span></span>|<span data-ttu-id="2b923-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="2b923-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ce3b4-132">id</span><span class="sxs-lookup"><span data-stu-id="ce3b4-132">id</span></span>|<span data-ttu-id="ce3b4-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ce3b4-133">String</span></span>|<span data-ttu-id="ce3b4-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-134">Key of the entity.</span></span> <span data-ttu-id="ce3b4-135">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="ce3b4-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ce3b4-136">lastModifiedDateTime</span></span>|<span data-ttu-id="ce3b4-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ce3b4-137">DateTimeOffset</span></span>|<span data-ttu-id="ce3b4-138">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-138">DateTime the object was last modified.</span></span> <span data-ttu-id="ce3b4-139">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="ce3b4-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="ce3b4-140">roleScopeTagIds</span></span>|<span data-ttu-id="ce3b4-141">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="ce3b4-141">String collection</span></span>|<span data-ttu-id="ce3b4-142">Lista de marcas de escopo para esta instância de entidade.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="ce3b4-143">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="ce3b4-144">supportsScopeTags</span><span class="sxs-lookup"><span data-stu-id="ce3b4-144">supportsScopeTags</span></span>|<span data-ttu-id="ce3b4-145">Booliano</span><span class="sxs-lookup"><span data-stu-id="ce3b4-145">Boolean</span></span>|<span data-ttu-id="ce3b4-146">Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="ce3b4-147">A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="ce3b4-148">Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="ce3b4-149">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-149">This property is read-only.</span></span> <span data-ttu-id="ce3b4-150">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="ce3b4-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="ce3b4-151">createdDateTime</span></span>|<span data-ttu-id="ce3b4-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ce3b4-152">DateTimeOffset</span></span>|<span data-ttu-id="ce3b4-153">DateTime em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-153">DateTime the object was created.</span></span> <span data-ttu-id="ce3b4-154">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="ce3b4-155">description</span><span class="sxs-lookup"><span data-stu-id="ce3b4-155">description</span></span>|<span data-ttu-id="ce3b4-156">String</span><span class="sxs-lookup"><span data-stu-id="ce3b4-156">String</span></span>|<span data-ttu-id="ce3b4-157">O administrador forneceu a descrição da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-157">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="ce3b4-158">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="ce3b4-159">displayName</span><span class="sxs-lookup"><span data-stu-id="ce3b4-159">displayName</span></span>|<span data-ttu-id="ce3b4-160">String</span><span class="sxs-lookup"><span data-stu-id="ce3b4-160">String</span></span>|<span data-ttu-id="ce3b4-161">O administrador forneceu o nome da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-161">Admin provided name of the device configuration.</span></span> <span data-ttu-id="ce3b4-162">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="ce3b4-163">versão</span><span class="sxs-lookup"><span data-stu-id="ce3b4-163">version</span></span>|<span data-ttu-id="ce3b4-164">Int32</span><span class="sxs-lookup"><span data-stu-id="ce3b4-164">Int32</span></span>|<span data-ttu-id="ce3b4-165">Versão da configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-165">Version of the device configuration.</span></span> <span data-ttu-id="ce3b4-166">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ce3b4-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="ce3b4-167">teacherCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="ce3b4-167">teacherCertificateSettings</span></span>|[<span data-ttu-id="ce3b4-168">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="ce3b4-168">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="ce3b4-169">Certificados de raiz confiável e PFX para professores</span><span class="sxs-lookup"><span data-stu-id="ce3b4-169">The Trusted Root and PFX certificates for Teacher</span></span>|
-|<span data-ttu-id="ce3b4-170">studentCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="ce3b4-170">studentCertificateSettings</span></span>|[<span data-ttu-id="ce3b4-171">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="ce3b4-171">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="ce3b4-172">Os certificados de raiz confiável e PFX do aluno</span><span class="sxs-lookup"><span data-stu-id="ce3b4-172">The Trusted Root and PFX certificates for Student</span></span>|
-|<span data-ttu-id="ce3b4-173">deviceCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="ce3b4-173">deviceCertificateSettings</span></span>|[<span data-ttu-id="ce3b4-174">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="ce3b4-174">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="ce3b4-175">Os certificados de raiz confiável e PFX do dispositivo</span><span class="sxs-lookup"><span data-stu-id="ce3b4-175">The Trusted Root and PFX certificates for Device</span></span>|
+|<span data-ttu-id="2b923-132">id</span><span class="sxs-lookup"><span data-stu-id="2b923-132">id</span></span>|<span data-ttu-id="2b923-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="2b923-133">String</span></span>|<span data-ttu-id="2b923-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="2b923-134">Key of the entity.</span></span> <span data-ttu-id="2b923-135">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="2b923-136">lastModifiedDateTime</span></span>|<span data-ttu-id="2b923-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2b923-137">DateTimeOffset</span></span>|<span data-ttu-id="2b923-138">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="2b923-138">DateTime the object was last modified.</span></span> <span data-ttu-id="2b923-139">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="2b923-140">roleScopeTagIds</span></span>|<span data-ttu-id="2b923-141">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="2b923-141">String collection</span></span>|<span data-ttu-id="2b923-142">Lista de marcas de escopo para esta instância de entidade.</span><span class="sxs-lookup"><span data-stu-id="2b923-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="2b923-143">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-144">supportsScopeTags</span><span class="sxs-lookup"><span data-stu-id="2b923-144">supportsScopeTags</span></span>|<span data-ttu-id="2b923-145">Booliano</span><span class="sxs-lookup"><span data-stu-id="2b923-145">Boolean</span></span>|<span data-ttu-id="2b923-146">Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo.</span><span class="sxs-lookup"><span data-stu-id="2b923-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="2b923-147">A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo.</span><span class="sxs-lookup"><span data-stu-id="2b923-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="2b923-148">Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="2b923-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="2b923-149">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="2b923-149">This property is read-only.</span></span> <span data-ttu-id="2b923-150">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-151">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="2b923-151">deviceManagementApplicabilityRuleOsEdition</span></span>|[<span data-ttu-id="2b923-152">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="2b923-152">deviceManagementApplicabilityRuleOsEdition</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|<span data-ttu-id="2b923-153">A aplicabilidade da edição do sistema operacional para essa política.</span><span class="sxs-lookup"><span data-stu-id="2b923-153">The OS edition applicability for this Policy.</span></span> <span data-ttu-id="2b923-154">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-155">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="2b923-155">deviceManagementApplicabilityRuleOsVersion</span></span>|[<span data-ttu-id="2b923-156">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="2b923-156">deviceManagementApplicabilityRuleOsVersion</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|<span data-ttu-id="2b923-157">A regra de aplicabilidade da versão do sistema operacional para esta política.</span><span class="sxs-lookup"><span data-stu-id="2b923-157">The OS version applicability rule for this Policy.</span></span> <span data-ttu-id="2b923-158">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-159">deviceManagementApplicabilityRuleDeviceMode</span><span class="sxs-lookup"><span data-stu-id="2b923-159">deviceManagementApplicabilityRuleDeviceMode</span></span>|[<span data-ttu-id="2b923-160">deviceManagementApplicabilityRuleDeviceMode</span><span class="sxs-lookup"><span data-stu-id="2b923-160">deviceManagementApplicabilityRuleDeviceMode</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|<span data-ttu-id="2b923-161">A regra de aplicabilidade do modo de dispositivo para essa política.</span><span class="sxs-lookup"><span data-stu-id="2b923-161">The device mode applicability rule for this Policy.</span></span> <span data-ttu-id="2b923-162">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-163">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="2b923-163">createdDateTime</span></span>|<span data-ttu-id="2b923-164">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2b923-164">DateTimeOffset</span></span>|<span data-ttu-id="2b923-165">DateTime em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="2b923-165">DateTime the object was created.</span></span> <span data-ttu-id="2b923-166">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-167">descrição</span><span class="sxs-lookup"><span data-stu-id="2b923-167">description</span></span>|<span data-ttu-id="2b923-168">String</span><span class="sxs-lookup"><span data-stu-id="2b923-168">String</span></span>|<span data-ttu-id="2b923-169">O administrador forneceu a descrição da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="2b923-169">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="2b923-170">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-170">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-171">displayName</span><span class="sxs-lookup"><span data-stu-id="2b923-171">displayName</span></span>|<span data-ttu-id="2b923-172">String</span><span class="sxs-lookup"><span data-stu-id="2b923-172">String</span></span>|<span data-ttu-id="2b923-173">O administrador forneceu o nome da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="2b923-173">Admin provided name of the device configuration.</span></span> <span data-ttu-id="2b923-174">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-174">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-175">versão</span><span class="sxs-lookup"><span data-stu-id="2b923-175">version</span></span>|<span data-ttu-id="2b923-176">Int32</span><span class="sxs-lookup"><span data-stu-id="2b923-176">Int32</span></span>|<span data-ttu-id="2b923-177">Versão da configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="2b923-177">Version of the device configuration.</span></span> <span data-ttu-id="2b923-178">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="2b923-178">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="2b923-179">teacherCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="2b923-179">teacherCertificateSettings</span></span>|[<span data-ttu-id="2b923-180">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="2b923-180">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="2b923-181">Certificados de raiz confiável e PFX para professores</span><span class="sxs-lookup"><span data-stu-id="2b923-181">The Trusted Root and PFX certificates for Teacher</span></span>|
+|<span data-ttu-id="2b923-182">studentCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="2b923-182">studentCertificateSettings</span></span>|[<span data-ttu-id="2b923-183">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="2b923-183">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="2b923-184">Os certificados de raiz confiável e PFX do aluno</span><span class="sxs-lookup"><span data-stu-id="2b923-184">The Trusted Root and PFX certificates for Student</span></span>|
+|<span data-ttu-id="2b923-185">deviceCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="2b923-185">deviceCertificateSettings</span></span>|[<span data-ttu-id="2b923-186">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="2b923-186">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="2b923-187">Os certificados de raiz confiável e PFX do dispositivo</span><span class="sxs-lookup"><span data-stu-id="2b923-187">The Trusted Root and PFX certificates for Device</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ce3b4-176">Resposta</span><span class="sxs-lookup"><span data-stu-id="ce3b4-176">Response</span></span>
-<span data-ttu-id="ce3b4-177">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-177">If successful, this method returns a `200 OK` response code and an updated [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2b923-188">Resposta</span><span class="sxs-lookup"><span data-stu-id="2b923-188">Response</span></span>
+<span data-ttu-id="2b923-189">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2b923-189">If successful, this method returns a `200 OK` response code and an updated [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ce3b4-178">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ce3b4-178">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2b923-190">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2b923-190">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ce3b4-179">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ce3b4-179">Request</span></span>
-<span data-ttu-id="ce3b4-180">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-180">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2b923-191">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2b923-191">Request</span></span>
+<span data-ttu-id="2b923-192">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2b923-192">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1910
+Content-length: 2683
 
 {
   "@odata.type": "#microsoft.graph.iosEduDeviceConfiguration",
@@ -84,6 +87,27 @@ Content-length: 1910
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -123,12 +147,12 @@ Content-length: 1910
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ce3b4-181">Resposta</span><span class="sxs-lookup"><span data-stu-id="ce3b4-181">Response</span></span>
-<span data-ttu-id="ce3b4-p110">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ce3b4-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2b923-193">Resposta</span><span class="sxs-lookup"><span data-stu-id="2b923-193">Response</span></span>
+<span data-ttu-id="2b923-p113">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2b923-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2082
+Content-Length: 2855
 
 {
   "@odata.type": "#microsoft.graph.iosEduDeviceConfiguration",
@@ -138,6 +162,27 @@ Content-Length: 2082
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -177,6 +222,7 @@ Content-Length: 2082
   }
 }
 ```
+
 
 
 
