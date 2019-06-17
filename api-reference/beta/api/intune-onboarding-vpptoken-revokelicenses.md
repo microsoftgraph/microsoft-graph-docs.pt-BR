@@ -4,12 +4,12 @@ description: Revogar licenças associadas a um determinado appleVolumePurchasePr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 691a8b6aeb23bc388a0316a81eeacfdb3a375e75
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2222e45996e1022aa58bacc08d4fcd7ecde23778
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899799"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980548"
 ---
 # <a name="revokelicenses-action"></a>ação revokeLicenses
 
@@ -77,6 +77,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

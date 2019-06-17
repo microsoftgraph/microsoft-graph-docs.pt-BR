@@ -4,12 +4,12 @@ description: Estado da ação no dispositivo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa3e3dcd9b563301fb87b9bae0f3c2957631334b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 35fccdc65eec7781f38d366e31ddb1a626005169
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939914"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996222"
 ---
 # <a name="actionstate-enum-type"></a>tipo de Enumeração ActionState
 
@@ -29,6 +29,7 @@ Estado da ação no dispositivo
 |done|quatro|Ação concluída sem erros.|
 |falhou|0,5|Falha na ação|
 |notSupported|6|Não há suporte para a ação.|
+
 
 
 

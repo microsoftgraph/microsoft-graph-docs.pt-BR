@@ -4,12 +4,12 @@ description: Representa um tipo de configuração de filtro de conteúdo da Web 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb6bf2da4320c228123e24ae67bd21b13f2c21eb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 90a94273e6675187c7aa02cc89d793f38c34516e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946067"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985392"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>tipo de recurso iosWebContentFilterAutoFilter
 
@@ -49,6 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui managementConditionStatement.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66572810a02056486f1161009a1bcd177253135a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 179d7bccc3019cfe3c123c482da4ec1d6ed1aafe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905403"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984146"
 ---
 # <a name="delete-managementconditionstatement"></a>Excluir managementConditionStatement
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

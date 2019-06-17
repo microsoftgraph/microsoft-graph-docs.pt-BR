@@ -4,12 +4,12 @@ description: Valores possíveis para LocalSecurityOptionsAdministratorElevationP
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5039fca8b3cc90e1fd87f0ff11a23685e880985
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24434b710a80e8839b95168204a4d68b31c20b4c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946032"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989354"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>tipo de enumeração localSecurityOptionsAdministratorElevationPromptBehaviorType
 
@@ -29,6 +29,7 @@ Valores possíveis para LocalSecurityOptionsAdministratorElevationPromptBehavior
 |promptForCredentials|quatro|Solicitar credenciais|
 |promptForConsent|0,5|Solicitar consentimento|
 |promptForConsentForNonWindowsBinaries|6|Solicitar consentimento para binários não Windows|
+
 
 
 

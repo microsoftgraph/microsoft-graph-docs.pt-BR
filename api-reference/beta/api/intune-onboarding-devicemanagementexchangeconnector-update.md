@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto deviceManagementExchangeConn
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f33d1ffa27c344c89d11c8ab176fb264067c9359
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4413ffd5a48e2891f998bd97a00cf82949ce8558
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900100"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981045"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Atualizar deviceManagementExchangeConnector
 
@@ -50,15 +50,15 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceManagemen
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Status do Exchange Connector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
-|serverName|Cadeia de caracteres|O nome do servidor Exchange.|
-|connectorServerName|Cadeia de caracteres|O nome do servidor que hospeda o Exchange Connector.|
+|primarySmtpAddress|String|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
+|serverName|String|O nome do servidor Exchange.|
+|connectorServerName|String|O nome do servidor que hospeda o Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |versão|String|A versão do ExchangeConnectorAgent|
-|exchangeAlias|Cadeia de caracteres|Um alias atribuído a um servidor Exchange|
+|exchangeAlias|String|Um alias atribuído a um servidor Exchange|
 |exchangeOrganization|Cadeia de caracteres|Organização do Exchange no servidor Exchange|
 
 
@@ -110,6 +110,7 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
 
 
 

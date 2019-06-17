@@ -4,12 +4,12 @@ description: Representa os registros de registro de dispositivo para os disposit
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39d6d17109b4de5e1a3025bd66ae6f07ccafe56c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c72a094178bbd34849b8a870566c549f5eea37e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940586"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994486"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>tipo de recurso windowsInformationProtectionDeviceRegistration
 
@@ -34,10 +34,10 @@ Representa os registros de registro de dispositivo para os dispositivos do Windo
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |userId|Cadeia de caracteres|UserId associado a este registro de registro de dispositivo.|
-|deviceRegistrationId|Cadeia de caracteres|Identificador de dispositivo para este registro de registro de dispositivo.|
+|deviceRegistrationId|String|Identificador de dispositivo para este registro de registro de dispositivo.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceType|String|Tipo de dispositivo, por exemplo, Windows laptop VS Windows Phone.|
-|deviceMacAddress|Cadeia de caracteres|Endereço MAC do dispositivo.|
+|deviceMacAddress|String|Endereço MAC do dispositivo.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo.|
 
 ## <a name="relationships"></a>Relações
@@ -63,6 +63,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: A linha de base de segurança por categoria Resumo de estado de con
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd8f40c2997e512f690dcb48908f22b80d7e34c4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 00735cb51952ec9cc8104a1d2f142d74cb773e05
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33956879"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983446"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>tipo de recurso securityBaselineCategoryStateSummary
 
@@ -34,7 +34,7 @@ Herda de [securityBaselineStateSummary](../resources/intune-deviceintent-securit
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade. Herdado de [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
+|id|String|Identificador exclusivo da entidade. Herdado de [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |secureCount|Int32|Número de dispositivos seguros herdados de [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |notSecureCount|Int32|Número de dispositivos não seguros herdados de [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |unknownCount|Int32|Número de dispositivos desconhecidos herdados de [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
@@ -67,6 +67,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
+
 
 
 

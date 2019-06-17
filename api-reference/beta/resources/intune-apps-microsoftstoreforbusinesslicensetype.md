@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d72ac447570a540178816ebc337b490e96db140f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aee85a811b03c67a14d960846c044fe78f9db7d8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950036"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986141"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>tipo de enumeração microsoftStoreForBusinessLicenseType
 
@@ -24,6 +24,7 @@ Ainda não documentado
 |:---|:---|:---|
 |modo|,0|Ainda não documentado|
 |modo|1|Ainda não documentado|
+
 
 
 

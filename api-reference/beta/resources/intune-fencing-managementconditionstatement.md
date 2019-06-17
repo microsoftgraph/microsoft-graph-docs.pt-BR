@@ -4,12 +4,12 @@ description: Uma instrução de condição de gerenciamento é um grupo de condi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78f2464793ac8410b3636f3ef378cfc623cc08d2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 37718b5efaa34680f3b990fe61421d0faf24dac5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941235"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979169"
 ---
 # <a name="managementconditionstatement-resource-type"></a>tipo de recurso managementConditionStatement
 
@@ -34,8 +34,8 @@ Uma instrução de condição de gerenciamento é um grupo de condições de ger
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
-|displayName|Cadeia de caracteres|O nome do administrador definido da instrução de condição de gerenciamento.|
-|description|String|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
+|displayName|String|O nome do administrador definido da instrução de condição de gerenciamento.|
+|descrição|String|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a instrução de gerenciamento da condição foi criada. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão de instrução de condição de gerenciamento usada para avaliar se uma instrução de condição de gerenciamento foi ativada/desativada.|
@@ -73,6 +73,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

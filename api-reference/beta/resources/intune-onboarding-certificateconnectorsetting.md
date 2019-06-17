@@ -4,12 +4,12 @@ description: Configurações do conector de certificado.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a980e6bf8dd97141fc3fc5a078beedbd0348a79
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 014d9ab627d1606d9850548128c51ed52939f2c8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940460"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995536"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>tipo de recurso certificateConnectorSetting
 
@@ -24,9 +24,9 @@ Configurações do conector de certificado.
 |:---|:---|:---|
 |status|Int32|Status do conector de certificado|
 |certExpiryTime|DateTimeOffset|Tempo de validade do certificado|
-|enrollmentError|Cadeia de caracteres|Erro de registro do conector de certificado|
+|enrollmentError|String|Erro de registro do conector de certificado|
 |lastConnectorConnectionTime|DateTimeOffset|Última vez em que o conector de certificado está conectado|
-|connectorVersion|Cadeia de caracteres|Versão do conector de certificado|
+|connectorVersion|String|Versão do conector de certificado|
 |lastUploadVersion|Int64|Versão do último conector de certificado carregado|
 
 ## <a name="relationships"></a>Relações
@@ -50,6 +50,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastUploadVersion": 1024
 }
 ```
+
 
 
 

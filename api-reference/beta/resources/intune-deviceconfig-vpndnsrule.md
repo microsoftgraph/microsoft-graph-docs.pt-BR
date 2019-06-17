@@ -4,12 +4,12 @@ description: Definição de regra DNS de VPN.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdb362bcbf672f491e22e2ee7d69a7e5c243e812
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9f2188efc73201aabf98267a77fee96b9c60de9d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944611"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996334"
 ---
 # <a name="vpndnsrule-resource-type"></a>tipo de recurso vpnDnsRule
 
@@ -22,9 +22,9 @@ Definição de regra DNS de VPN.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|Cadeia de caracteres|Tdomínio.|
+|name|String|Tdomínio.|
 |servidores|Coleção de cadeias de caracteres|Servidores.|
-|proxyServerUri|Cadeia de caracteres|URI do servidor proxy.|
+|proxyServerUri|String|URI do servidor proxy.|
 |Gatilho autotrigger|Booliano|Conectar-se automaticamente à VPN quando o dispositivo se conectar a este domínio: padrão false.|
 |persistente|Booliano|Manter esta regra ativa mesmo quando a VPN não estiver conectada: false padrão|
 
@@ -50,6 +50,7 @@ Veja a seguir uma representação JSON do recurso.
   "persistent": true
 }
 ```
+
 
 
 

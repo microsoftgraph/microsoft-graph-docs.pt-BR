@@ -4,12 +4,12 @@ description: Exclui windowsKioskConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5de0f1f88f949d5a56c08f30bd5455be548a34b3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0545bbf1d7c0000ef54580b276e9d3eb12f78cc9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917930"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977566"
 ---
 # <a name="delete-windowskioskconfiguration"></a>Excluir windowsKioskConfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

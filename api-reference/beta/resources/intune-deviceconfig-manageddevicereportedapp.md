@@ -4,12 +4,12 @@ description: Dados de aplicativo para relatórios
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76317a14d05ad1e4a949485f2ae63e00b1e91b81
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e028ec07142a7902ec02b2b8eeccdc9c378170d8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944940"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992021"
 ---
 # <a name="manageddevicereportedapp-resource-type"></a>tipo de recurso managedDeviceReportedApp
 
@@ -22,7 +22,7 @@ Dados de aplicativo para relatórios
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|appId|Cadeia de caracteres|O aplicativo ou identificador do pacote do aplicativo|
+|appId|String|O aplicativo ou identificador do pacote do aplicativo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -40,6 +40,7 @@ Veja a seguir uma representação JSON do recurso.
   "appId": "String"
 }
 ```
+
 
 
 

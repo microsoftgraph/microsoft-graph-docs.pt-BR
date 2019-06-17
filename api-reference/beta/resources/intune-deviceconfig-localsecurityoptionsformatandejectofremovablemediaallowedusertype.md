@@ -4,12 +4,12 @@ description: Valores possíveis para LocalSecurityOptionsFormatAndEjectOfRemovab
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0ddff4e6ccce6812f3841660b7022041dd94210
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5f33808fd5b1a7ce929b3e22b98cf1754c21fded
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946256"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989361"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>tipo de enumeração localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType
 
@@ -26,6 +26,7 @@ Valores possíveis para LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowe
 |grupos|1|Administradores|
 |administratorsAndPowerUsers|duas|Administradores e usuários avançados|
 |administratorsAndInteractiveUsers|3D|Administradores e usuários interativos |
+
 
 
 

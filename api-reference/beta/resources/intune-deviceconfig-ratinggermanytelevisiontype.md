@@ -4,12 +4,12 @@ description: Rótulos de classificação de conteúdo de TV na Alemanha
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20f8528bc062b7ef834bd4cac9cc02f2c22b56c3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2c881f729a9b0af57c53515af88afe311fe8a877
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951012"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984636"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>tipo de enumeração ratingGermanyTelevisionType
 
@@ -29,6 +29,7 @@ Rótulos de classificação de conteúdo de TV na Alemanha
 |agesAbove12|quatro|AB 12 Jahren, 12 anos ou mais|
 |agesAbove16|0,5|AB 16 Jahren, 16 anos ou mais|
 |adultos|6|AB 18 Jahren, somente adultos|
+
 
 
 

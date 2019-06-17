@@ -4,12 +4,12 @@ description: Tipo de agente de gerenciamento.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7bb3c564366e2fa5c4be2c7c7ed75267a4d58275
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e3b9fd469a787e0afdacb26dc5a07ee114d72bbe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941923"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986120"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de enumeração managementAgentType
 
@@ -34,6 +34,7 @@ Tipo de agente de gerenciamento.
 |jamf|32|Os atributos do dispositivo são buscados do JAMF.|
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado pelo CloudDPC do Google.|
 |microsoft365ManagedMdm|258|Este dispositivo é gerenciado pelo Microsoft 365 por meio do Intune.|
+
 
 
 

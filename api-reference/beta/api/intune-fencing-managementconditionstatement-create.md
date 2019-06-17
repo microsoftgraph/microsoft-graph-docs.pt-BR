@@ -4,12 +4,12 @@ description: Criar um novo objeto managementConditionStatement.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9637c200c799d5a32610df9df3e86cd573dc8b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5cf357169752ef2b73ee22992cde782d063fb6df
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905382"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984069"
 ---
 # <a name="create-managementconditionstatement"></a>Criar managementConditionStatement
 
@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar manageme
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
-|displayName|Cadeia de caracteres|O nome do administrador definido da instrução de condição de gerenciamento.|
-|description|String|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
+|displayName|String|O nome do administrador definido da instrução de condição de gerenciamento.|
+|descrição|String|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a instrução de gerenciamento da condição foi criada. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão de instrução de condição de gerenciamento usada para avaliar se uma instrução de condição de gerenciamento foi ativada/desativada.|
@@ -112,6 +112,7 @@ Content-Length: 491
   ]
 }
 ```
+
 
 
 

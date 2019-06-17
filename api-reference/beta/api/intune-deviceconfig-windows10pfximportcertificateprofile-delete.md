@@ -4,12 +4,12 @@ description: Exclui windows10PFXImportCertificateProfile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3671f5d5fe69ead219c0a3a0427f309ee2c761f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: afc4f0780681a33f79bcf981b0cffd74e24c680a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918518"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978035"
 ---
 # <a name="delete-windows10pfximportcertificateprofile"></a>Excluir windows10PFXImportCertificateProfile
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

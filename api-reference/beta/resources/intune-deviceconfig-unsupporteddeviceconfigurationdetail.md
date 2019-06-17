@@ -4,12 +4,12 @@ description: Uma descrição do motivo pelo qual uma entidade não é suportada.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfb4a25325826b20f77d75dc9d545ee64d12f254
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ce838f73c4ad02ecb29d540a9f0d4af065796993
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944646"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978966"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>tipo de recurso unsupportedDeviceConfigurationDetail
 
@@ -23,7 +23,7 @@ Uma descrição do motivo pelo qual uma entidade não é suportada.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |mensagem|String|Uma mensagem explicando por que uma entidade não é suportada.|
-|NomeDaPropriedade|Cadeia de caracteres|Se a mensagem estiver relacionada a uma propriedade específica na entidade original, o nome dessa propriedade.|
+|NomeDaPropriedade|String|Se a mensagem estiver relacionada a uma propriedade específica na entidade original, o nome dessa propriedade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "propertyName": "String"
 }
 ```
+
 
 
 

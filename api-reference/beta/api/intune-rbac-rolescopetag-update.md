@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto roleScopeTag.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4f361ba40e92434a3fbd5566a1e5c20517032ba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d4ee2de294f83db9abdd200bcced4c4c442cbc25
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899372"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985203"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleSco
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
-|description|String|Descrição da marca de escopo da função.|
+|descrição|String|Descrição da marca de escopo da função.|
 
 
 
@@ -90,6 +90,7 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto networkIPv4Configura
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df1125476f2b77a14ee60b34ed7b411f2c78313d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a80eac9528f83929371d55665fba9db9822096a3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905305"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984153"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>Obter networkIPv4ConfigurationManagementCondition
 
@@ -93,6 +93,7 @@ Content-Length: 756
   }
 }
 ```
+
 
 
 

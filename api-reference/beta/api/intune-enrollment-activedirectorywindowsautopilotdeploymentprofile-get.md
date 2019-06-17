@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto activeDirectoryWindo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb7107912e8124e179363364294edef15c33d05f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d2505bcaca5556717d6f2d4ecf6a9040a0096e94
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908970"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978308"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>Obter activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -107,6 +107,7 @@ Content-Length: 1424
   }
 }
 ```
+
 
 
 

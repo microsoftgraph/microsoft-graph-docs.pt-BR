@@ -4,12 +4,12 @@ description: Exclui mobileAppInstallStatus.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4297f78d6b5b7418bda632d5c354553f76431a07
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 27cd4a9f0c743716998770d3952a1d5a26613b86
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935091"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973933"
 ---
 # <a name="delete-mobileappinstallstatus"></a>Excluir mobileAppInstallStatus
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

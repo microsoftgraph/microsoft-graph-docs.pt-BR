@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto embeddedSIMActivationCodePool
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d18f1c4e286ca3b296cb082f0aa4a566345ad899
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e13caf5650a636727f77c97a5e7915d9b756af2d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905564"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982529"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>Atualizar embeddedSIMActivationCodePoolAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [embedde
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da atribuição do pool de códigos de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
+|id|String|Identificador exclusivo da atribuição do pool de códigos de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O tipo de grupos direcionados pelo pool de códigos de ativação do SIM incorporado.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 228
   }
 }
 ```
+
 
 
 

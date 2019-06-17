@@ -4,12 +4,12 @@ description: Par chave-valor para armazenar configurações personalizadas
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc34bad30ff5bc33f60e6ec4e561e6644b97cc37
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed0df0d07c21ea41aaad5eb9aac993b35ca28f8c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938657"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995970"
 ---
 # <a name="keyvaluepair-resource-type"></a>Tipo de recurso keyValuePair
 
@@ -22,7 +22,7 @@ Par chave-valor para armazenar configurações personalizadas
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|Cadeia de caracteres|Nome deste par chave-valor|
+|name|String|Nome deste par chave-valor|
 |value|Cadeia de caracteres|Valor deste par chave-valor|
 
 ## <a name="relationships"></a>Relações
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
+
 
 
 

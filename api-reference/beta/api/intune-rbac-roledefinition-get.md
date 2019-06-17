@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto roleDefinition.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e409291bad51a6693823aaf7eb74929f176057c1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 976e44287a063a0fa7d5303d41dbc7850c85a669
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899421"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988465"
 ---
 # <a name="get-roledefinition"></a>Acessar roleDefinition
 
@@ -120,6 +120,7 @@ Content-Length: 1369
   }
 }
 ```
+
 
 
 

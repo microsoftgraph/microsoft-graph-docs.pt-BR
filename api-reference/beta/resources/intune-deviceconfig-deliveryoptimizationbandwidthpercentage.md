@@ -4,12 +4,12 @@ description: Limites de largura de banda especificados como uma porcentagem.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bae3771f6c0d8d13edda7bed3d7968da48e042db
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 482dd1ee20e28a3ae9f5982d144d19a9143123af
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947278"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979673"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthPercentage
 
@@ -47,6 +47,7 @@ Veja a seguir uma representação JSON do recurso.
   "maximumForegroundBandwidthPercentage": 1024
 }
 ```
+
 
 
 

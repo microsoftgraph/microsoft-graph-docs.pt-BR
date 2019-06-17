@@ -4,12 +4,12 @@ description: Contém as propriedades usadas para atribuir uma configuração de 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 277804face310d12a0bb95dd605da0fc788b9537
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ad903eb1442326836d15ebf2c4a29672e805d524
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950141"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979302"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationAssignment
 
@@ -31,7 +31,7 @@ Contém as propriedades usadas para atribuir uma configuração de aplicativo MD
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
+|id|String|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual a política de T&C foi designada.|
 
 ## <a name="relationships"></a>Relações
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Item de configuração único dentro de um esquema de configuraçõ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3313ba3cef3a996d030d25ac1bb24492b28b4b2a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b3ac320b0630d7307a56b06cd07b8d4d0d7f12b9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950771"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993470"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchemaItem
 
@@ -22,9 +22,9 @@ Item de configuração único dentro de um esquema de configurações personaliz
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|schemaItemKey|Cadeia de caracteres|Chave exclusiva que o aplicativo usa para identificar o item|
+|schemaItemKey|String|Chave exclusiva que o aplicativo usa para identificar o item|
 |displayName|String|Nome legível por humanos|
-|description|String|Descrição do que o item controla dentro do aplicativo|
+|descrição|String|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
 |defaultIntValue|Int32|Valor padrão para itens do tipo inteiro, se especificado pelo desenvolvedor do aplicativo|
 |defaultStringValue|Cadeia de caracteres|Valor padrão para itens do tipo cadeia de caracteres, se especificado pelo desenvolvedor do aplicativo|
@@ -64,6 +64,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Maneiras possíveis de adicionar um dispositivo móvel ao gerenciam
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9c5c5fbdd68af1c78e55fc023a8c85642928889
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3ae3edcb1d6411e889381c2171f0daeb1cbcc528
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940012"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996138"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeração deviceEnrollmentType
 
@@ -32,6 +32,7 @@ Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 |windowsAutoEnrollment|178|Registro automático do Windows 10. (Adicionar conta de trabalho)|
 |windowsBulkAzureDomainJoin|8 |Ingresso no Azure AD em massa do Windows 10.|
 |windowsCoManagement|9 |Co-gerenciamento de intergestão do Windows 10 disparado por AutoPilot ou política de grupo.|
+
 
 
 

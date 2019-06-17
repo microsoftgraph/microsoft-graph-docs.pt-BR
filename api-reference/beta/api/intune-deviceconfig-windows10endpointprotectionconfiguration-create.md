@@ -4,12 +4,12 @@ description: Criar um novo objeto windows10EndpointProtectionConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74dc20bf9a160e68f81024ee1badeb95df9d717a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5b6a9f73f7e44b288ec5fa60851c193392c42508
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921769"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976075"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Criar windows10EndpointProtectionConfiguration
 
@@ -55,8 +55,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|Essa política destina-se a fornecer segurança adicional contra dispositivos compatíveis com DMA externo. Permite mais controle sobre a enumeração de dispositivos compatíveis com DMA externo incompatíveis com o remapeamento de DMA/isolamento de memória do dispositivo e área restrita. Essa política só entra em vigor quando a proteção DMA de kernel é suportada e habilitada pelo firmware do sistema. A proteção DMA de kernel é um recurso de plataforma que não pode ser controlado via política ou pelo usuário final. É preciso ter suporte do sistema no momento da fabricação. Para verificar se o sistema suporta a proteção DMA de kernel, verifique o campo proteção DMA de kernel na página Resumo de MSINFO32. exe. Os valores possíveis são: `deviceDefault`, `blockAll`, `allowAll`.|
@@ -98,9 +101,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |localSecurityOptionsBlockMicrosoftAccounts|Booliano|Impedir que os usuários adicionem novas contas da Microsoft a este computador.|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Booliano|Habilitar contas locais que não estão protegidas por senha para fazer logon de locais diferentes do dispositivo físico. O padrão é habilitado|
 |localSecurityOptionsDisableAdministratorAccount|Booliano|Determina se a conta de administrador local está habilitada ou desabilitada.|
-|localSecurityOptionsAdministratorAccountName|Cadeia de caracteres|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "administrador".|
+|localSecurityOptionsAdministratorAccountName|String|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "administrador".|
 |localSecurityOptionsDisableGuestAccount|Booliano|Determina se a conta de convidado está habilitada ou desabilitada.|
-|localSecurityOptionsGuestAccountName|Cadeia de caracteres|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "convidado".|
+|localSecurityOptionsGuestAccountName|String|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "convidado".|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Booliano|Impedir que um computador portátil seja desencaixado sem ter que fazer logon.|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Booliano|Restringir a instalação dos drivers de impressora como parte da conexão a uma impressora compartilhada somente para administradores.|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Booliano|Habilitar essa configuração permite que somente o usuário conectado interativamente acesse a mídia de CD-ROM.|
@@ -110,11 +113,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |localSecurityOptionsDoNotRequireCtrlAltDel|Booliano|Exigir CTRL + ALT + DEL para ser pressionada para que um usuário possa fazer logon.|
 |localSecurityOptionsHideLastSignedInUser|Booliano|Não exibe o nome de usuário da última pessoa que entrou neste dispositivo.|
 |localSecurityOptionsHideUsernameAtSignIn|Booliano|Não exibe o nome de usuário da pessoa que está entrando neste dispositivo depois que as credenciais são inseridas e antes da área de trabalho do dispositivo ser exibida.|
-|localSecurityOptionsLogOnMessageTitle|Cadeia de caracteres|Defina o título da mensagem para usuários que tentam fazer logon.|
-|localSecurityOptionsLogOnMessageText|Cadeia de caracteres|Definir o texto da mensagem para usuários que tentam fazer logon.|
+|localSecurityOptionsLogOnMessageTitle|String|Defina o título da mensagem para usuários que tentam fazer logon.|
+|localSecurityOptionsLogOnMessageText|String|Definir o texto da mensagem para usuários que tentam fazer logon.|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Booliano|Bloquear solicitações de autenticação PKU2U para este dispositivo para usar identidades online.|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Booliano|Boolean do auxiliar da interface do usuário para entidade LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|Cadeia de caracteres|Edite a cadeia de caracteres de definição de descritor de segurança padrão para permitir ou impedir que usuários e grupos façam chamadas remotas para o SAM.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Edite a cadeia de caracteres de definição de descritor de segurança padrão para permitir ou impedir que usuários e grupos façam chamadas remotas para o SAM.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Essa configuração de segurança permite que um cliente exija a negociação de criptografia de 128 bits e/ou segurança de sessão NTLMv2. Os valores possíveis são: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Essa configuração de segurança permite que um servidor exija a negociação de criptografia de 128 bits e/ou segurança de sessão NTLMv2. Os valores possíveis são: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Essa configuração de segurança determina qual protocolo de autenticação de desafio/resposta é usado para logons de rede. Os possíveis valores são: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
@@ -156,10 +159,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderSecurityCenterDisableSecureBootUI|Booliano|Usado para desabilitar a exibição da área de inicialização segura sob segurança de dispositivo.|
 |defenderSecurityCenterDisableTroubleshootingUI|Booliano|Usado para desabilitar a exibição do processo de segurança Solucionando problemas de segurança de dispositivo.|
 |defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Booliano|Usado para desabilitar a exibição de atualizar o firmware do TPM quando um firmware vulnerável é detectado.|
-|defenderSecurityCenterOrganizationDisplayName|Cadeia de caracteres|O nome da empresa que é exibido para os usuários.|
-|defenderSecurityCenterHelpEmail|Cadeia de caracteres|O endereço de email que é exibido para os usuários.|
-|defenderSecurityCenterHelpPhone|Cadeia de caracteres|O número de telefone ou Skype ID que é exibido aos usuários.|
-|defenderSecurityCenterHelpURL|Cadeia de caracteres|A URL do portal da ajuda que é exibida para os usuários.|
+|defenderSecurityCenterOrganizationDisplayName|String|O nome da empresa que é exibido para os usuários.|
+|defenderSecurityCenterHelpEmail|String|O endereço de email que é exibido para os usuários.|
+|defenderSecurityCenterHelpPhone|String|O número de telefone ou Skype ID que é exibido aos usuários.|
+|defenderSecurityCenterHelpURL|String|A URL do portal da ajuda que é exibida para os usuários.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Notificações para mostrar das áreas de aplicativo exibidas. Os valores possíveis são: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Configurar onde exibir informações de contato de ti para usuários finais. Os valores possíveis são: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Booliano|Bloqueia conexões de FTP com estado ao dispositivo|
@@ -210,7 +213,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Permite que o administrador escolha quais tipos de aplicativo permitir nos dispositivos. Os valores possíveis são: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Ative o Credential Guard quando o nível de segurança da plataforma com segurança baseada em inicialização e virtualização segura estiverem habilitados. Os valores possíveis são: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
 |deviceGuardEnableVirtualizationBasedSecurity|Booliano|Ativa a segurança baseada em virtualização (VBS).|
-|deviceGuardEnableSecureBootWithDMA|Booliano|Especifica se o nível de segurança da plataforma está habilitado na próxima reinicialização.|
+|deviceGuardEnableSecureBootWithDMA|Booliano|Essa propriedade será substituída em maio de 2019 e será substituída pela propriedade DeviceGuardSecureBootWithDMA. Especifica se o nível de segurança da plataforma está habilitado na próxima reinicialização.|
+|deviceGuardSecureBootWithDMA|[secureBootWithDMAType](../resources/intune-deviceconfig-securebootwithdmatype.md)|Especifica se o nível de segurança da plataforma está habilitado na próxima reinicialização. Os valores possíveis são: `notConfigured`, `withoutDMA`, `withDMA`.|
 |deviceGuardLaunchSystemGuard|[habilitação](../resources/intune-shared-enablement.md)|Permite que o administrador de ti configure o lançamento do System Guard. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Booliano|Permite que os administradores de TI configurem SmartScreen para Windows.|
 |smartScreenBlockOverrideForFiles|Booliano|Permite que administradores de TI controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos maliciosos.|
@@ -247,7 +251,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 27641
+Content-length: 28463
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -255,6 +259,27 @@ Content-length: 27641
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -837,6 +862,7 @@ Content-length: 27641
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardSecureBootWithDMA": "withoutDMA",
   "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
@@ -910,7 +936,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 27813
+Content-Length: 28635
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -920,6 +946,27 @@ Content-Length: 27813
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -1503,6 +1550,7 @@ Content-Length: 27813
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardSecureBootWithDMA": "withoutDMA",
   "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
@@ -1570,6 +1618,7 @@ Content-Length: 27813
   }
 }
 ```
+
 
 
 

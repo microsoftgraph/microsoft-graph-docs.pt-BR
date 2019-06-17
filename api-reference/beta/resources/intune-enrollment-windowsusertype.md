@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56483c849558a670ff153e8161d7a02b16bc61c6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4b3fb79e7555e66c91f53d35476b020c52cb610d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941384"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994864"
 ---
 # <a name="windowsusertype-enum-type"></a>tipo de enumeração windowsUserType
 
@@ -24,6 +24,7 @@ Ainda não documentado
 |:---|:---|:---|
 |administrador|,0|Ainda não documentado|
 |caracteres|1|Ainda não documentado|
+
 
 
 

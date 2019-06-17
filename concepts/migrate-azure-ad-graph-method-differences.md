@@ -4,12 +4,12 @@ description: Descreve as diferenças de métodos entre a API do Graph do Azure A
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 35f97a6c24e0b72200dcd4a37b6fba42ad7ce03d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: f8ab5723c4fc25115f7c505099f19c847618f404
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630234"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990369"
 ---
 # <a name="method-differences-between-azure-ad-and-microsoft-graph"></a>Diferenças de métodos entre o Azure AD e o Microsoft Graph
 
@@ -17,17 +17,17 @@ Este artigo faz parte da *etapa 1:* revisar as diferenças de API do [processo d
 
 Alguns métodos do Azure AD Graph também foram alterados.  Se um método não é mostrado na lista, ele já está disponível na [versão v 1.0](/graph/api/overview?view=graph-rest-1.0) do Microsoft Graph, com exatamente o mesmo nome que no Azure ad Graph.
 
-|Gráfico do Azure AD <br>método (v 1.6) |Microsoft Graph<br>(recurso/método)|Comments|
+|Azure AD Graph. <br>método (v 1.6) |Microsoft Graph<br>(recurso/método)|Comments|
 |---|---|---|
-| getObjectsByObjectId | diretório&nbsp;-&nbsp;beta/getByIds <br> v 1.0-Directory/getByIds | |
-| restore | &nbsp;-&nbsp;restauração&nbsp;beta (aplicativos,&nbsp;usuários&nbsp;e&nbsp;grupos)<br> &nbsp;-&nbsp;restauração&nbsp;de v 1.0 (&nbsp;usuários&nbsp;e grupos) | Você também pode exibir aplicativos, usuários e grupos excluídos e excluí-los permanentemente. |
-| invalidateAllRefreshTokens | Beta-invalidateSigninSessions <br> v 1.0- _ainda não disponível_ | |
-| getAvailableExtensionProperties | Beta- _não planejado_ <br> v 1.0- _não planejado_ | Não planejado no momento; pode ser revisitado com base na demanda. |
-| isMemberOf | Beta- _não planejado_ <br> v 1.0- _não planejado_ | Use checkMemberGroups em vez disso. |
 | addKey | Beta- _ainda não disponível_ <br> v 1.0- _ainda não disponível_ | Planejado, mas ainda não disponível. | 
-| removeKey | Beta- _ainda não disponível_ <br> v 1.0- _ainda não disponível_ | Planejado, mas ainda não disponível. | 
 | addpassword | Beta-addpassword <br> v 1.0- _ainda não disponível_ | |
+| getAvailableExtensionProperties | Beta- _não planejado_ <br> v 1.0- _não planejado_ | Não planejado no momento; pode ser revisitado com base na demanda. |
+| getObjectsByObjectId | diretório&nbsp;-&nbsp;beta/getByIds <br> v 1.0-Directory/getByIds | |
+| invalidateAllRefreshTokens | Beta-revokeSignInSessions <br> v 1.0-revokeSignInSessions | |
+| isMemberOf | Beta- _não planejado_ <br> v 1.0- _não planejado_ | Use checkMemberGroups em vez disso. |
+| removeKey | Beta- _ainda não disponível_ <br> v 1.0- _ainda não disponível_ | Planejado, mas ainda não disponível. | 
 | removePassword | Beta-removePassword <br> v 1.0- _ainda não disponível_ | |
+| restore | &nbsp;-&nbsp;restauração&nbsp;beta (aplicativos,&nbsp;usuários&nbsp;e&nbsp;grupos)<br> &nbsp;-&nbsp;restauração&nbsp;de v 1.0 (&nbsp;usuários&nbsp;e grupos) | Você também pode exibir aplicativos, usuários e grupos excluídos e excluí-los permanentemente. |
 
 ## <a name="next-steps"></a>Próximos passos
 

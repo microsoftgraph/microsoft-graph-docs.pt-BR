@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos depIOSEnrollmentProfil
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c59fec4da9efd9a915e57d6e524f8311b3dac69
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 95e19534ce95b7deb78beaae7911b19ac6e0e29b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908760"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979379"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>Listar depIOSEnrollmentProfiles
 
@@ -119,6 +119,7 @@ Content-Length: 2065
   ]
 }
 ```
+
 
 
 

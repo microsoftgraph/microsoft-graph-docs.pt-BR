@@ -4,12 +4,12 @@ description: Uma classe abstrata que contém as propriedades base de aplicativos
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4bc14b517068ba8427389d09dace8945ebbd1b0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1d937495f44fc511b260ee6feb322043bcf9cff7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950029"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986134"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -34,17 +34,17 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
-|description|Cadeia de caracteres|A descrição do aplicativo.|
-|publisher|Cadeia de caracteres|O publicador do aplicativo.|
+|displayName|String|O título do aplicativo importado ou definido pelo administrador.|
+|descrição|String|A descrição do aplicativo.|
+|publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez.|
 |isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador.|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade.|
-|informationUrl|Cadeia de caracteres|A URL de informações adicionais.|
-|owner|Cadeia de caracteres|O proprietário do conteúdo.|
-|developer|Cadeia de caracteres|O desenvolvedor do aplicativo.|
+|privacyInformationUrl|String|A URL da declaração de privacidade.|
+|informationUrl|String|A URL de informações adicionais.|
+|owner|String|O proprietário do conteúdo.|
+|developer|String|O desenvolvedor do aplicativo.|
 |notes|String|Anotações do aplicativo.|
 |uploadState|Int32|O estado de upload.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
@@ -99,6 +99,7 @@ Veja a seguir uma representação JSON do recurso.
   "dependentAppCount": 1024
 }
 ```
+
 
 
 
