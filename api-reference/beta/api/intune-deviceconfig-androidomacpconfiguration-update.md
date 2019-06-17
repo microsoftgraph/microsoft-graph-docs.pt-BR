@@ -4,31 +4,31 @@ description: Atualiza as propriedades de um objeto androidOmaCpConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ba142d0d0a5c2ed56bfa76b93cc65b39a962755
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8853e1da34d5b7ac789a6dbf1e3a8a115ebaef57
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33929242"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34970041"
 ---
-# <a name="update-androidomacpconfiguration"></a><span data-ttu-id="700e9-103">Atualizar androidOmaCpConfiguration</span><span class="sxs-lookup"><span data-stu-id="700e9-103">Update androidOmaCpConfiguration</span></span>
+# <a name="update-androidomacpconfiguration"></a><span data-ttu-id="56585-103">Atualizar androidOmaCpConfiguration</span><span class="sxs-lookup"><span data-stu-id="56585-103">Update androidOmaCpConfiguration</span></span>
 
-> <span data-ttu-id="700e9-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="700e9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="56585-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="56585-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="700e9-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="700e9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="56585-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="56585-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="700e9-106">Atualiza as propriedades de um objeto [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="700e9-106">Update the properties of a [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) object.</span></span>
+<span data-ttu-id="56585-106">Atualiza as propriedades de um objeto [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="56585-106">Update the properties of a [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="700e9-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="700e9-107">Prerequisites</span></span>
-<span data-ttu-id="700e9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="700e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="56585-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="56585-107">Prerequisites</span></span>
+<span data-ttu-id="56585-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56585-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="700e9-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="700e9-110">Permission type</span></span>|<span data-ttu-id="700e9-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="700e9-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="56585-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="56585-110">Permission type</span></span>|<span data-ttu-id="56585-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="56585-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="700e9-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="700e9-112">Delegated (work or school account)</span></span>|<span data-ttu-id="700e9-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="700e9-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="700e9-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="700e9-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="700e9-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="700e9-115">Not supported.</span></span>|
-|<span data-ttu-id="700e9-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="700e9-116">Application</span></span>|<span data-ttu-id="700e9-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="700e9-117">Not supported.</span></span>|
+|<span data-ttu-id="56585-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="56585-112">Delegated (work or school account)</span></span>|<span data-ttu-id="56585-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="56585-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="56585-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="56585-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="56585-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="56585-115">Not supported.</span></span>|
+|<span data-ttu-id="56585-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="56585-116">Application</span></span>|<span data-ttu-id="56585-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="56585-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="700e9-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="700e9-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="56585-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="56585-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,42 +39,45 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssign
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="700e9-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="700e9-119">Request headers</span></span>
-|<span data-ttu-id="700e9-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="700e9-120">Header</span></span>|<span data-ttu-id="700e9-121">Valor</span><span class="sxs-lookup"><span data-stu-id="700e9-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="56585-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="56585-119">Request headers</span></span>
+|<span data-ttu-id="56585-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="56585-120">Header</span></span>|<span data-ttu-id="56585-121">Valor</span><span class="sxs-lookup"><span data-stu-id="56585-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="700e9-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="700e9-122">Authorization</span></span>|<span data-ttu-id="700e9-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="700e9-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="700e9-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="700e9-124">Accept</span></span>|<span data-ttu-id="700e9-125">application/json</span><span class="sxs-lookup"><span data-stu-id="700e9-125">application/json</span></span>|
+|<span data-ttu-id="56585-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="56585-122">Authorization</span></span>|<span data-ttu-id="56585-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="56585-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="56585-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="56585-124">Accept</span></span>|<span data-ttu-id="56585-125">application/json</span><span class="sxs-lookup"><span data-stu-id="56585-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="700e9-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="700e9-126">Request body</span></span>
-<span data-ttu-id="700e9-127">No corpo da solicitação, forneça uma representação JSON do objeto [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="700e9-127">In the request body, supply a JSON representation for the [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="56585-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="56585-126">Request body</span></span>
+<span data-ttu-id="56585-127">No corpo da solicitação, forneça uma representação JSON do objeto [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="56585-127">In the request body, supply a JSON representation for the [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) object.</span></span>
 
-<span data-ttu-id="700e9-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="700e9-128">The following table shows the properties that are required when you create the [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md).</span></span>
+<span data-ttu-id="56585-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="56585-128">The following table shows the properties that are required when you create the [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md).</span></span>
 
-|<span data-ttu-id="700e9-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="700e9-129">Property</span></span>|<span data-ttu-id="700e9-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="700e9-130">Type</span></span>|<span data-ttu-id="700e9-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="700e9-131">Description</span></span>|
+|<span data-ttu-id="56585-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="56585-129">Property</span></span>|<span data-ttu-id="56585-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="56585-130">Type</span></span>|<span data-ttu-id="56585-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="56585-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="700e9-132">id</span><span class="sxs-lookup"><span data-stu-id="700e9-132">id</span></span>|<span data-ttu-id="700e9-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="700e9-133">String</span></span>|<span data-ttu-id="700e9-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="700e9-134">Key of the entity.</span></span> <span data-ttu-id="700e9-135">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="700e9-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="700e9-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="700e9-136">lastModifiedDateTime</span></span>|<span data-ttu-id="700e9-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="700e9-137">DateTimeOffset</span></span>|<span data-ttu-id="700e9-138">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="700e9-138">DateTime the object was last modified.</span></span> <span data-ttu-id="700e9-139">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="700e9-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="700e9-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="700e9-140">roleScopeTagIds</span></span>|<span data-ttu-id="700e9-141">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="700e9-141">String collection</span></span>|<span data-ttu-id="700e9-142">Lista de marcas de escopo para esta instância de entidade.</span><span class="sxs-lookup"><span data-stu-id="700e9-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="700e9-143">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="700e9-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="700e9-144">supportsScopeTags</span><span class="sxs-lookup"><span data-stu-id="700e9-144">supportsScopeTags</span></span>|<span data-ttu-id="700e9-145">Booliano</span><span class="sxs-lookup"><span data-stu-id="700e9-145">Boolean</span></span>|<span data-ttu-id="700e9-146">Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo.</span><span class="sxs-lookup"><span data-stu-id="700e9-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="700e9-147">A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo.</span><span class="sxs-lookup"><span data-stu-id="700e9-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="700e9-148">Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="700e9-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="700e9-149">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="700e9-149">This property is read-only.</span></span> <span data-ttu-id="700e9-150">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="700e9-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="700e9-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="700e9-151">createdDateTime</span></span>|<span data-ttu-id="700e9-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="700e9-152">DateTimeOffset</span></span>|<span data-ttu-id="700e9-153">DateTime em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="700e9-153">DateTime the object was created.</span></span> <span data-ttu-id="700e9-154">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="700e9-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="700e9-155">description</span><span class="sxs-lookup"><span data-stu-id="700e9-155">description</span></span>|<span data-ttu-id="700e9-156">String</span><span class="sxs-lookup"><span data-stu-id="700e9-156">String</span></span>|<span data-ttu-id="700e9-157">O administrador forneceu a descrição da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="700e9-157">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="700e9-158">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="700e9-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="700e9-159">displayName</span><span class="sxs-lookup"><span data-stu-id="700e9-159">displayName</span></span>|<span data-ttu-id="700e9-160">String</span><span class="sxs-lookup"><span data-stu-id="700e9-160">String</span></span>|<span data-ttu-id="700e9-161">O administrador forneceu o nome da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="700e9-161">Admin provided name of the device configuration.</span></span> <span data-ttu-id="700e9-162">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="700e9-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="700e9-163">versão</span><span class="sxs-lookup"><span data-stu-id="700e9-163">version</span></span>|<span data-ttu-id="700e9-164">Int32</span><span class="sxs-lookup"><span data-stu-id="700e9-164">Int32</span></span>|<span data-ttu-id="700e9-165">Versão da configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="700e9-165">Version of the device configuration.</span></span> <span data-ttu-id="700e9-166">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="700e9-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="700e9-167">configurationXml</span><span class="sxs-lookup"><span data-stu-id="700e9-167">configurationXml</span></span>|<span data-ttu-id="700e9-168">Binária</span><span class="sxs-lookup"><span data-stu-id="700e9-168">Binary</span></span>|<span data-ttu-id="700e9-169">XML de configuração que será aplicada ao dispositivo.</span><span class="sxs-lookup"><span data-stu-id="700e9-169">Configuration XML that will be applied to the device.</span></span> <span data-ttu-id="700e9-170">Quando ele é lido, ele só fornece uma cadeia de caracteres de espaço reservado, pois os dados originais são criptografados e armazenados.</span><span class="sxs-lookup"><span data-stu-id="700e9-170">When it is read, it only provides a placeholder string since the original data is encrypted and stored.</span></span>|
+|<span data-ttu-id="56585-132">id</span><span class="sxs-lookup"><span data-stu-id="56585-132">id</span></span>|<span data-ttu-id="56585-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="56585-133">String</span></span>|<span data-ttu-id="56585-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="56585-134">Key of the entity.</span></span> <span data-ttu-id="56585-135">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="56585-136">lastModifiedDateTime</span></span>|<span data-ttu-id="56585-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="56585-137">DateTimeOffset</span></span>|<span data-ttu-id="56585-138">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="56585-138">DateTime the object was last modified.</span></span> <span data-ttu-id="56585-139">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="56585-140">roleScopeTagIds</span></span>|<span data-ttu-id="56585-141">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="56585-141">String collection</span></span>|<span data-ttu-id="56585-142">Lista de marcas de escopo para esta instância de entidade.</span><span class="sxs-lookup"><span data-stu-id="56585-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="56585-143">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-144">supportsScopeTags</span><span class="sxs-lookup"><span data-stu-id="56585-144">supportsScopeTags</span></span>|<span data-ttu-id="56585-145">Booliano</span><span class="sxs-lookup"><span data-stu-id="56585-145">Boolean</span></span>|<span data-ttu-id="56585-146">Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo.</span><span class="sxs-lookup"><span data-stu-id="56585-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="56585-147">A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo.</span><span class="sxs-lookup"><span data-stu-id="56585-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="56585-148">Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="56585-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="56585-149">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="56585-149">This property is read-only.</span></span> <span data-ttu-id="56585-150">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-151">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="56585-151">deviceManagementApplicabilityRuleOsEdition</span></span>|[<span data-ttu-id="56585-152">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="56585-152">deviceManagementApplicabilityRuleOsEdition</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|<span data-ttu-id="56585-153">A aplicabilidade da edição do sistema operacional para essa política.</span><span class="sxs-lookup"><span data-stu-id="56585-153">The OS edition applicability for this Policy.</span></span> <span data-ttu-id="56585-154">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-155">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="56585-155">deviceManagementApplicabilityRuleOsVersion</span></span>|[<span data-ttu-id="56585-156">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="56585-156">deviceManagementApplicabilityRuleOsVersion</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|<span data-ttu-id="56585-157">A regra de aplicabilidade da versão do sistema operacional para esta política.</span><span class="sxs-lookup"><span data-stu-id="56585-157">The OS version applicability rule for this Policy.</span></span> <span data-ttu-id="56585-158">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-159">deviceManagementApplicabilityRuleDeviceMode</span><span class="sxs-lookup"><span data-stu-id="56585-159">deviceManagementApplicabilityRuleDeviceMode</span></span>|[<span data-ttu-id="56585-160">deviceManagementApplicabilityRuleDeviceMode</span><span class="sxs-lookup"><span data-stu-id="56585-160">deviceManagementApplicabilityRuleDeviceMode</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|<span data-ttu-id="56585-161">A regra de aplicabilidade do modo de dispositivo para essa política.</span><span class="sxs-lookup"><span data-stu-id="56585-161">The device mode applicability rule for this Policy.</span></span> <span data-ttu-id="56585-162">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-163">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="56585-163">createdDateTime</span></span>|<span data-ttu-id="56585-164">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="56585-164">DateTimeOffset</span></span>|<span data-ttu-id="56585-165">DateTime em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="56585-165">DateTime the object was created.</span></span> <span data-ttu-id="56585-166">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-167">descrição</span><span class="sxs-lookup"><span data-stu-id="56585-167">description</span></span>|<span data-ttu-id="56585-168">String</span><span class="sxs-lookup"><span data-stu-id="56585-168">String</span></span>|<span data-ttu-id="56585-169">O administrador forneceu a descrição da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="56585-169">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="56585-170">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-170">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-171">displayName</span><span class="sxs-lookup"><span data-stu-id="56585-171">displayName</span></span>|<span data-ttu-id="56585-172">String</span><span class="sxs-lookup"><span data-stu-id="56585-172">String</span></span>|<span data-ttu-id="56585-173">O administrador forneceu o nome da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="56585-173">Admin provided name of the device configuration.</span></span> <span data-ttu-id="56585-174">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-174">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-175">versão</span><span class="sxs-lookup"><span data-stu-id="56585-175">version</span></span>|<span data-ttu-id="56585-176">Int32</span><span class="sxs-lookup"><span data-stu-id="56585-176">Int32</span></span>|<span data-ttu-id="56585-177">Versão da configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="56585-177">Version of the device configuration.</span></span> <span data-ttu-id="56585-178">Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="56585-178">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="56585-179">configurationXml</span><span class="sxs-lookup"><span data-stu-id="56585-179">configurationXml</span></span>|<span data-ttu-id="56585-180">Binária</span><span class="sxs-lookup"><span data-stu-id="56585-180">Binary</span></span>|<span data-ttu-id="56585-181">XML de configuração que será aplicada ao dispositivo.</span><span class="sxs-lookup"><span data-stu-id="56585-181">Configuration XML that will be applied to the device.</span></span> <span data-ttu-id="56585-182">Quando ele é lido, ele só fornece uma cadeia de caracteres de espaço reservado, pois os dados originais são criptografados e armazenados.</span><span class="sxs-lookup"><span data-stu-id="56585-182">When it is read, it only provides a placeholder string since the original data is encrypted and stored.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="700e9-171">Resposta</span><span class="sxs-lookup"><span data-stu-id="700e9-171">Response</span></span>
-<span data-ttu-id="700e9-172">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="700e9-172">If successful, this method returns a `200 OK` response code and an updated [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="56585-183">Resposta</span><span class="sxs-lookup"><span data-stu-id="56585-183">Response</span></span>
+<span data-ttu-id="56585-184">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="56585-184">If successful, this method returns a `200 OK` response code and an updated [androidOmaCpConfiguration](../resources/intune-deviceconfig-androidomacpconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="700e9-173">Exemplo</span><span class="sxs-lookup"><span data-stu-id="700e9-173">Example</span></span>
+## <a name="example"></a><span data-ttu-id="56585-185">Exemplo</span><span class="sxs-lookup"><span data-stu-id="56585-185">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="700e9-174">Solicitação</span><span class="sxs-lookup"><span data-stu-id="700e9-174">Request</span></span>
-<span data-ttu-id="700e9-175">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="700e9-175">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="56585-186">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56585-186">Request</span></span>
+<span data-ttu-id="56585-187">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="56585-187">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 306
+Content-length: 1079
 
 {
   "@odata.type": "#microsoft.graph.androidOmaCpConfiguration",
@@ -82,6 +85,27 @@ Content-length: 306
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -89,12 +113,12 @@ Content-length: 306
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="700e9-176">Resposta</span><span class="sxs-lookup"><span data-stu-id="700e9-176">Response</span></span>
-<span data-ttu-id="700e9-p111">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="700e9-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="56585-188">Resposta</span><span class="sxs-lookup"><span data-stu-id="56585-188">Response</span></span>
+<span data-ttu-id="56585-p114">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="56585-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 478
+Content-Length: 1251
 
 {
   "@odata.type": "#microsoft.graph.androidOmaCpConfiguration",
@@ -104,6 +128,27 @@ Content-Length: 478
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -111,6 +156,7 @@ Content-Length: 478
   "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
+
 
 
 
