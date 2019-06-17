@@ -4,12 +4,12 @@ description: Permite que os administradores de TI configurem um mecanismo de pes
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a83965eb67762135eba3dcf1edf31fb4aec7827
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c1e44ee54752817b8dc95a1126a333d5065b507b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946725"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990229"
 ---
 # <a name="edgesearchengine-resource-type"></a>Tipo de recurso edgeSearchEngine
 
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "edgeSearchEngineType": "String"
 }
 ```
+
 
 
 

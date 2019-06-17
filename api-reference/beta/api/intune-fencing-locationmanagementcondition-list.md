@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos locationManagementCond
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6ebceea8d9a5914c7a9d905c5df56930facc18a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: be99871d61ebf4c5a7a2c26f818b3138e42fc863
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905424"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983866"
 ---
 # <a name="list-locationmanagementconditions"></a>Listar locationManagementConditions
 
@@ -83,6 +83,7 @@ Content-Length: 512
   ]
 }
 ```
+
 
 
 

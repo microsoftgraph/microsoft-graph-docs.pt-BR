@@ -4,12 +4,12 @@ description: A entidade representa um valor de cadeia de caracteres de uma apres
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be9136108dfc7c566408ece4e961e5c25dfe084b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 175d0113ccf4cda201ca9feb17d684397ac064db
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940999"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987842"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>tipo de recurso groupPolicyPresentationValueMultiText
 
@@ -36,7 +36,7 @@ Herda de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppol
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |values|Coleção de cadeias de caracteres|Uma coleção de cadeias de caracteres não vazias para a apresentação associada.|
 
 ## <a name="relationships"></a>Relações
@@ -64,6 +64,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

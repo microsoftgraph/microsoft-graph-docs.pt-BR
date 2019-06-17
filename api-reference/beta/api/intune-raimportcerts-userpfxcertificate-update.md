@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto userPFXCertificate.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d996f67517bd28a7c12990883602a50c9a0ac1c2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ce7aa967f62010f335c75b0211794f733de8e1f5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899708"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988752"
 ---
 # <a name="update-userpfxcertificate"></a>Atualizar userPFXCertificate
 
@@ -51,16 +51,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userPFX
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo do certificado PFX.|
-|identificação|Cadeia de caracteres|Impressão digital SHA-1 do certificado PFX.|
+|identificação|String|Impressão digital SHA-1 do certificado PFX.|
 |Da intendedpurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Finalidade do certificado do ponto de vista da implantação. Os valores possíveis são: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|Cadeia de caracteres|Nome principal de usuário do certificado PFX.|
+|userPrincipalName|String|Nome principal de usuário do certificado PFX.|
 |startDateTime|DateTimeOffset|Data/hora de início da validade do certificado.|
 |expirationDateTime|DateTimeOffset|Data/hora de validade do certificado.|
-|providerName|Cadeia de caracteres|Provedor de criptografia usado para criptografar este BLOB.|
-|keyName|Cadeia de caracteres|Nome da chave (dentro do provedor) usada para criptografar o blob.|
+|providerName|String|Provedor de criptografia usado para criptografar este BLOB.|
+|keyName|String|Nome da chave (dentro do provedor) usada para criptografar o blob.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema de preenchimento usado pelo provedor durante a criptografia/descriptografia. Os possíveis valores são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |encryptedPfxBlob|Binária|Blob PFX criptografado.|
-|encryptedPfxPassword|Cadeia de caracteres|Senha PFX criptografada.|
+|encryptedPfxPassword|String|Senha PFX criptografada.|
 |createdDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi importado.|
 |lastModifiedDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi modificado pela última vez.|
 
@@ -117,6 +117,7 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto importedAppleDeviceIdentity.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7881e153261ad71b2468f5555386c9c17f3d3983
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 501a8bb31d5b01b184f4a53bb4f68fbd27661675
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908474"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982333"
 ---
 # <a name="update-importedappledeviceidentity"></a>Atualizar importedAppleDeviceIdentity
 
@@ -52,13 +52,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [importe
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |serialNumber|String|Número de série do dispositivo|
-|requestedEnrollmentProfileId|Cadeia de caracteres|ID do perfil de registro o administrador pretende aplicar ao dispositivo durante o próximo registro|
+|requestedEnrollmentProfileId|String|ID do perfil de registro o administrador pretende aplicar ao dispositivo durante o próximo registro|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|O perfil de registro de tempo foi atribuído ao dispositivo|
 |isSupervised|Boolean|Indica se o dispositivo Apple é supervisionado. Mais informações em:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Fonte de descoberta de dispositivos Apple. Os valores possíveis são: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do dispositivo|
-|description|String|A descrição do dispositivo|
+|descrição|String|A descrição do dispositivo|
 |enrollmentid|[enrollmentid](../resources/intune-enrollment-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
@@ -112,6 +112,7 @@ Content-Length: 605
   "platform": "ios"
 }
 ```
+
 
 
 

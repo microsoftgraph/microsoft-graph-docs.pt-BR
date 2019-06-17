@@ -4,12 +4,12 @@ description: Os recursos do RemoteAssistPartner representam os metadados e o sta
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 596027baaa5bc118c835de9aaff009bb0de180a3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7223d69c519aa0d0e99419cefb704c7e8dc27540
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939921"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996264"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Tipo de recurso remoteAssistancePartner
 
@@ -33,7 +33,7 @@ Os recursos do RemoteAssistPartner representam os metadados e o status de um det
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do parceiro.|
+|id|String|O identificador exclusivo do parceiro.|
 |displayName|String|Nome de exibição do parceiro.|
 |onboardingUrl|Cadeia de caracteres|URL do portal de integração do parceiro, no qual um administrador pode configurar o serviço de assistência remota.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Uma descrição amigável do status atual do conector do TeamViewer. Os valores possíveis são: `notOnboarded`, `onboarding`, `onboarded`.|
@@ -60,6 +60,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

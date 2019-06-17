@@ -4,12 +4,12 @@ description: Tipo Windows 10 Edition.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 824fe87c381332d90adfa243ef89eeafc8cc1773
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e304cb77694554443b879b145f9735ab6b315069
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944338"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982284"
 ---
 # <a name="windows10editiontype-enum-type"></a>tipo de enumeração windows10EditionType
 
@@ -35,6 +35,14 @@ Tipo Windows 10 Edition.
 |windows10ProfessionalWorkstation|10 |Windows 10 Professional para estações de trabalho|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional para estações de trabalho N|
 |notConfigured|3,6|NotConfigured|
+|windows10Home|Treze|Página inicial do Windows 10|
+|windows10HomeChina|14|Windows 10 Home da China|
+|windows10HomeN|15|Windows 10 Home N|
+|windows10HomeSingleLanguage|dezesseis|Idioma de Home único do Windows 10|
+|windows10Mobile|17.07.06|Windows 10 Mobile|
+|windows10IoTCore|anos|Windows 10 IoT Core|
+|windows10IoTCoreCommercial|19|Comercial do Windows 10 IoT Core|
+
 
 
 

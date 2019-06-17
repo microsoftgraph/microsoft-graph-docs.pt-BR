@@ -4,12 +4,12 @@ description: A entidade descreve todas as informações sobre uma única diretiv
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17fef49d7d08f94f5ebafd02636d9536a05b87f9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e38daccc28f3525b0efc80586b71d7ac62359616
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941167"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975879"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>tipo de recurso groupPolicyDefinition
 
@@ -30,11 +30,11 @@ A entidade descreve todas as informações sobre uma única diretiva de grupo.
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifica o tipo de grupo ao qual a política pode ser aplicada. Os valores possíveis são: `user` e `machine`.|
 |displayName|String|O nome da política localizada.|
-|Texto não criptografado|Cadeia de caracteres|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
-|categoryPath|Cadeia de caracteres|O caminho de categoria completo localizado para a política.|
-|com suporte|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
+|Texto não criptografado|String|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
+|categoryPath|String|O caminho de categoria completo localizado para a política.|
+|com suporte|String|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações
@@ -64,6 +64,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

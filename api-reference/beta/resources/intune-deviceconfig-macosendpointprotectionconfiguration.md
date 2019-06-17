@@ -4,12 +4,12 @@ description: Perfil de configuração do MacOS Endpoint Protection.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83ae5940d9aa985c7dd5d553c2891478e57ac587
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0fdbd1c46b870a8448381890120fe66f894b7fa4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946130"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989193"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>tipo de recurso macOSEndpointProtectionConfiguration
 
@@ -38,8 +38,11 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Configuração de sistema e privacidade que determina quais locais de download os aplicativos podem ser executados em um dispositivo macOS. Os valores possíveis são: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
@@ -48,6 +51,15 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |firewallBlockAllIncoming|Booliano|Corresponde à opção "bloquear todas as conexões de entrada".|
 |firewallEnableStealthMode|Booliano|Corresponde a "Habilitar modo oculto".|
 |firewallApplications|coleção [macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)|Lista de aplicativos com configurações de firewall. As configurações de firewall para aplicativos que não estão nessa lista são determinadas pelo usuário. Esta coleção pode conter um máximo de 500 elementos.|
+|fileVaultEnabled|Booliano|Se o FileVault deve ser habilitado ou não.|
+|fileVaultSelectedRecoveryKeyTypes|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|Obrigatório se FileVault estiver habilitado, determina o (s) tipo (s) de chave de recuperação a ser usado. . Os valores possíveis são: `notConfigured`, `institutionalRecoveryKey`, `personalRecoveryKey`.|
+|fileVaultInstitutionalRecoveryKeyCertificate|Binária|Obrigatório se os tipos de chave de recuperação selecionados incluem InstitutionalRecoveryKey. O arquivo de certificado codificado por DER usado para definir uma chave de recuperação institucional.|
+|fileVaultInstitutionalRecoveryKeyCertificateFileName|String|Nome do arquivo do certificado de chave de recuperação institucional a ser exibido na interface do usuário. (*. der).|
+|fileVaultPersonalRecoveryKeyHelpMessage|String|Obrigatório se os tipos de chave de recuperação selecionados incluem PersonalRecoveryKey. Uma mensagem curta exibida para o usuário que explica como eles podem recuperar sua chave de recuperação pessoal.|
+|fileVaultAllowDeferralUntilSignOut|Booliano|Opcional. Se for definido como true, o usuário poderá adiar a habilitação do FileVault até que ele saia.|
+|fileVaultNumberOfTimesUserCanIgnore|Int32|Opcional. Ao usar a opção Defer, este é o número máximo de vezes que o usuário pode ignorar as solicitações para habilitar o FileVault antes que o usuário entre no FileVault será necessário para entrar. Se for definido como-1, ele sempre solicitará a habilitação do FileVault até que o FileVault esteja habilitado, embora permita que o usuário ignore a habilitação de FileVault. Configurar como 0 desativará o recurso.|
+|fileVaultDisablePromptAtSignOut|Booliano|Opcional. Ao usar a opção Defer, se definida como true, o usuário não será solicitado a habilitar o FileVault ao sair.|
+|fileVaultPersonalRecoveryKeyRotationInMonths|Int32|Opcional. Se os tipos de chave de recuperação selecionados incluírem PersonalRecoveryKey, a frequência de rotação dessa chave, em meses.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -77,6 +89,27 @@ Veja a seguir uma representação JSON do recurso.
     "String"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "String"
+    ],
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "String",
+    "maxOSVersion": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -92,9 +125,19 @@ Veja a seguir uma representação JSON do recurso.
       "bundleId": "String",
       "allowsIncomingConnections": true
     }
-  ]
+  ],
+  "fileVaultEnabled": true,
+  "fileVaultSelectedRecoveryKeyTypes": "String",
+  "fileVaultInstitutionalRecoveryKeyCertificate": "binary",
+  "fileVaultInstitutionalRecoveryKeyCertificateFileName": "String",
+  "fileVaultPersonalRecoveryKeyHelpMessage": "String",
+  "fileVaultAllowDeferralUntilSignOut": true,
+  "fileVaultNumberOfTimesUserCanIgnore": 1024,
+  "fileVaultDisablePromptAtSignOut": true,
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 1024
 }
 ```
+
 
 
 

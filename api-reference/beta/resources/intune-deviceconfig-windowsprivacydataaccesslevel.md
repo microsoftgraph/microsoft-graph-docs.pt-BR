@@ -4,12 +4,12 @@ description: Determine o nível de acesso à categoria de dados de privacidade d
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80e2546939b9053eca16607d069689e0226380d9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c6eea937d05d45e6fcf7fa955df16885067047b3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943701"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996478"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>tipo de enumeração windowsPrivacyDataAccessLevel
 
@@ -26,6 +26,7 @@ Determine o nível de acesso à categoria de dados de privacidade do Windows esp
 |forceAllow|1|Os aplicativos terão permissão para acessar os dados de privacidade especificados.|
 |forceDeny|duas|Os aplicativos serão negados para acessar os dados de privacidade especificados.|
 |userInControl|3D|Os usuários serão solicitados quando os aplicativos tentarem acessar dados de privacidade especificados.|
+
 
 
 

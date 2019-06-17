@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos userPFXCertificate.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aad2b6dbd5a61c2fc18cfe53174da0e747578a4d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0791c80043144a65c8a2099fb89c72116f6cad2a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899736"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988759"
 ---
 # <a name="list-userpfxcertificates"></a>Listar userPFXCertificates
 
@@ -85,6 +85,7 @@ Content-Length: 784
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Ao fornecer as configurações neste perfil, você pode instruir o 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd6faa11f17c8c8f9e478b5f04513e59620ba6a8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 57bb435ca3b85c8b1011cc014f9428753297dbf7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948503"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989025"
 ---
 # <a name="androidforworkwificonfiguration-resource-type"></a>tipo de recurso androidForWorkWiFiConfiguration
 
@@ -38,15 +38,18 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|NetworkName|Cadeia de caracteres|Nome da rede|
-|SSID|Cadeia de caracteres|Este é o nome da rede Wi-Fi que é transmitida para todos os dispositivos.|
+|NetworkName|String|Nome da rede|
+|SSID|String|Este é o nome da rede Wi-Fi que é transmitida para todos os dispositivos.|
 |connectAutomatically|Booliano|Conectar automaticamente quando esta rede estiver no intervalo. A definição dessa opção como true ignorará o prompt do usuário e conectará automaticamente o dispositivo à rede Wi-Fi.|
 |connectWhenNetworkNameIsHidden|Booliano|Quando definido como true, esse perfil força o dispositivo a se conectar a uma rede que não transmite seu SSID para todos os dispositivos.|
-|à|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indica se o ponto de extremidade Wi-Fi usa um tipo de segurança baseado em EAP. Os valores possíveis são: `open`, `wpaEnterprise`.|
+|à|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indica se o ponto de extremidade Wi-Fi usa um tipo de segurança baseado em EAP. Os valores possíveis são: `open`, `wpaEnterprise`, `wpa2Enterprise`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -76,6 +79,27 @@ Veja a seguir uma representação JSON do recurso.
     "String"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "String"
+    ],
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "String",
+    "maxOSVersion": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -87,6 +111,7 @@ Veja a seguir uma representação JSON do recurso.
   "wiFiSecurityType": "String"
 }
 ```
+
 
 
 

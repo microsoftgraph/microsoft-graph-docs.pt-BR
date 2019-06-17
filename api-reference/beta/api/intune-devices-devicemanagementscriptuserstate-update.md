@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceManagementScriptUserSta
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5609e4600d2ca7d9853bf05de6ac979e550a23ce
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f9af21db27bc4da908ecd852a97e490697ff020d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909769"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978266"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Atualizar deviceManagementScriptUserState
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |id|String|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito para um usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário do usuário específico.|
+|userPrincipalName|String|Nome principal do usuário do usuário específico.|
 
 
 
@@ -92,6 +92,7 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

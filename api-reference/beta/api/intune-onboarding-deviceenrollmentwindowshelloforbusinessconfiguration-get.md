@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto deviceEnrollmentWindowsHell
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66d9c7a0a3a76e3bd8b9d8867768c0c4d6bb6716
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bd0799f6ab4fa416585fd6d871c1c6cc8e9acd32
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900297"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981192"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Obter deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 860
+Content-Length: 900
 
 {
   "value": {
@@ -88,10 +88,12 @@ Content-Length: 860
     "remotePassportEnabled": true,
     "pinPreviousBlockCount": 5,
     "pinExpirationInDays": 3,
-    "enhancedBiometricsState": "enabled"
+    "enhancedBiometricsState": "enabled",
+    "securityKeyForSignIn": "enabled"
   }
 }
 ```
+
 
 
 

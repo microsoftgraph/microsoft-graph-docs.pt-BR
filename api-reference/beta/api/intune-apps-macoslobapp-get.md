@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto macOSLobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b264e075933e4f212da51a1705860a270e5c629
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 398cceeab242efbec35968d5ab97036236609c1f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935936"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975340"
 ---
 # <a name="get-macoslobapp"></a>Obter macOSLobApp
 
@@ -129,6 +129,7 @@ Content-Length: 1875
   }
 }
 ```
+
 
 
 

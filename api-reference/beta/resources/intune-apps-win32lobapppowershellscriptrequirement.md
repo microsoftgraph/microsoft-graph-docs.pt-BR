@@ -4,12 +4,12 @@ description: Contém propriedades de script do PowerShell para detectar um aplic
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2df6d406f5bc86b2637d60098a819138195b1383
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a85a777f0dd888296250627b6bab05d0c87dc14c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949511"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987338"
 ---
 # <a name="win32lobapppowershellscriptrequirement-resource-type"></a>tipo de recurso win32LobAppPowerShellScriptRequirement
 
@@ -26,12 +26,12 @@ Herda de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequiremen
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção herdada de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detecçaovalue|Cadeia de caracteres|O valor de detecção herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|detecçaovalue|String|O valor de detecção herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |displayName|String|O nome de exibição exclusivo para esta regra|
 |enforceSignatureCheck|Booliano|Um valor que indica se a verificação de assinatura é imposta|
 |runAs32Bit|Booliano|Um valor que indica se este script deve ser executado como 32 bits|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que o script é executado. Os valores possíveis são: `system` e `user`.|
-|scriptContent|Cadeia de caracteres|O conteúdo de script codificado em base64 para detectar o aplicativo de LoB (linha de negócios) do Win32|
+|scriptContent|String|O conteúdo de script codificado em base64 para detectar o aplicativo de LoB (linha de negócios) do Win32|
 |Detecção|[win32LobAppPowerShellScriptDetectionType](../resources/intune-apps-win32lobapppowershellscriptdetectiontype.md)|O tipo de detecção para saída de script. Os valores possíveis são: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
 
 ## <a name="relationships"></a>Relações
@@ -57,6 +57,7 @@ Veja a seguir uma representação JSON do recurso.
   "detectionType": "String"
 }
 ```
+
 
 
 

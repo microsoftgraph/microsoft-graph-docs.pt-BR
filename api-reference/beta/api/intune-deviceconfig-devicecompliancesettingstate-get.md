@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceComplianceSett
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9cd00f3cb6e379715acc76381dc15db1b3dc54d1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: df1aa0a1c621f38a942875703b73bba70d045a52
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927654"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968186"
 ---
 # <a name="get-devicecompliancesettingstate"></a>Acessar deviceComplianceSettingState
 
@@ -86,6 +86,7 @@ Content-Length: 645
   }
 }
 ```
+
 
 
 

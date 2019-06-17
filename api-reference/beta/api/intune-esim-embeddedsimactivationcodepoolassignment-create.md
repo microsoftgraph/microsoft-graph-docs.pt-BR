@@ -4,12 +4,12 @@ description: Criar um novo objeto embeddedSIMActivationCodePoolAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 235d7b291532e08596feffef0804716048703277
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 55ce932d8d8bcbac57fcfc1c65cce571a0af0d37
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905536"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982599"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>Criar embeddedSIMActivationCodePoolAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar embedded
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da atribuição do pool de códigos de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
+|id|String|Identificador exclusivo da atribuição do pool de códigos de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O tipo de grupos direcionados pelo pool de códigos de ativação do SIM incorporado.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 228
   }
 }
 ```
+
 
 
 

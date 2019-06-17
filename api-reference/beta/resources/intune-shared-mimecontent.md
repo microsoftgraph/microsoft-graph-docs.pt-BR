@@ -4,12 +4,12 @@ description: Contém as propriedades de um conteúdo genérico MIME.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f2224d255e8aa4ceb48554fdc01356277ffbc89
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d8114074b99957c687079ac80abef7a4f704444b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939109"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986367"
 ---
 # <a name="mimecontent-resource-type"></a>Tipo de recurso mimeContent
 
@@ -22,7 +22,7 @@ Contém as propriedades de um conteúdo genérico MIME.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|type|Cadeia de caracteres|Indica o tipo de conteúdo MIME.|
+|type|String|Indica o tipo de conteúdo MIME.|
 |value|Binária|A matriz de byte que contém o conteúdo atual.|
 
 ## <a name="relationships"></a>Relações
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "value": "binary"
 }
 ```
+
 
 
 

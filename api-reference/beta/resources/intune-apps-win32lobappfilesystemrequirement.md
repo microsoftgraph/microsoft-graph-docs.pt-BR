@@ -4,12 +4,12 @@ description: Contém um caminho de arquivo ou pasta para detectar um aplicativo 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 498e4b953b283ac0a0cffa6a7a21ea91232b724b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 90d620a13b6472960dad7ab6edd90b1d237387d2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949588"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987317"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>tipo de recurso win32LobAppFileSystemRequirement
 
@@ -26,9 +26,9 @@ Herda de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequiremen
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção herdada de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detecçaovalue|Cadeia de caracteres|O valor de detecção herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|detecçaovalue|String|O valor de detecção herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |caminho|String|O caminho do arquivo ou da pasta para detectar o aplicativo de LoB (linha de negócios) do Win32|
-|fileOrFolderName|Cadeia de caracteres|O nome do arquivo ou pasta para detectar o aplicativo de LoB (linha de negócios) do Win32|
+|fileOrFolderName|String|O nome do arquivo ou pasta para detectar o aplicativo de LoB (linha de negócios) do Win32|
 |check32BitOn64System|Booliano|Um valor que indica se este arquivo ou pasta é para verificar o aplicativo de 32 bits no sistema de 64 bits|
 |Detecção|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|O tipo de detecção do sistema de arquivos. Os valores possíveis são: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "detectionType": "String"
 }
 ```
+
 
 
 

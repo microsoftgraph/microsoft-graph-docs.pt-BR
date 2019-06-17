@@ -4,12 +4,12 @@ description: Opções de identidade visual para o modelo de mensagem. A identida
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97684092c9f704ef4d477b153e4168190f588071
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3056c0965506637a9d16d0d2b52b981b424d004c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940474"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994199"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>tipo de enumeração notificationTemplateBrandingOptions
 
@@ -26,6 +26,7 @@ Opções de identidade visual para o modelo de mensagem. A identidade visual é 
 |includeCompanyLogo|1|Incluir logotipo da empresa.|
 |includeCompanyName|duas|Incluir o nome da empresa.|
 |includeContactInformation|quatro|Incluir informações de contato.|
+
 
 
 

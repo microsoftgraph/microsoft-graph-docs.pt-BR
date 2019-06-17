@@ -4,12 +4,12 @@ description: Estado de acesso do Exchange de dispositivo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa5a49ca352163f41ed747c4bf33c150ce2ecba9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 35c110734078484f7bec5aac1ad31df0b66a0473
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942063"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983033"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessState
 
@@ -27,6 +27,7 @@ Estado de acesso do Exchange de dispositivo.
 |autorizado|duas|O dispositivo tem acesso ao Exchange|
 |bloqueou|3D|O dispositivo está bloqueado no Exchange|
 |em quarentena|quatro|O dispositivo está em quarentena no Exchange|
+
 
 
 

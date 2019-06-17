@@ -4,12 +4,12 @@ description: Criar um novo objeto iosUpdateDeviceStatus.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 168f15e16367e070c3400ba27aa450d5c1d376ba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3bfed8ec9b24353c475b229c4dba92d469691434
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923213"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977174"
 ---
 # <a name="create-iosupdatedevicestatus"></a>Criar iosUpdateDeviceStatus
 
@@ -53,16 +53,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosUpdat
 |id|String|Chave da entidade.|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|O status de instalação do relatório de políticas. Os valores possíveis são `success`: `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`,,,,,,,,,.|
 |osVersion|String|A versão do dispositivo que está sendo relatado.|
-|deviceId|Cadeia de caracteres|A ID do dispositivo que está sendo relatado.|
+|deviceId|String|A ID do dispositivo que está sendo relatado.|
 |userId|Cadeia de caracteres|A ID do usuário que está sendo relatado.|
-|deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
-|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
+|deviceDisplayName|String|Nome do dispositivo de DevicePolicyStatus.|
+|userName|String|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |platform|Int32|Plataforma do dispositivo que está sendo relatado|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
-|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
+|userPrincipalName|String|UserPrincipalName.|
 
 
 
@@ -119,6 +119,7 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

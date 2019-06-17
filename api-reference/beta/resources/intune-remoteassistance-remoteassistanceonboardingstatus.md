@@ -4,12 +4,12 @@ description: O status atual do conector do TeamViewer
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8011908e08249d915261208d9615ef627519d40c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 12a127b053482d87a17cb8c3e5ca4a7191ce32aa
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940117"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996271"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>tipo de enumeração remoteAssistanceOnboardingStatus
 
@@ -25,6 +25,7 @@ O status atual do conector do TeamViewer
 |notOnboarded|,0|O status relatado quando não há conector do TeamViewer ativo configurado ou ativo|
 |integração|1|O status relatado quando o sistema iniciou uma conexão do TeamViewer, mas o serviço ainda não concluiu a confirmação de um conector|
 |integrado|duas|O status relatado quando o sistema trocava com êxito informações de conta com o TeamViewer e agora pode iniciar sessões de assistência remota com clientes|
+
 
 
 

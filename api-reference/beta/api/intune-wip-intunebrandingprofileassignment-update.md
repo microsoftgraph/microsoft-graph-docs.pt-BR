@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto intuneBrandingProfileAssignme
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1673955a1aa96d84604db512e85acc5605d1641f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8f20a2fee2d4a6ddf595d7d75e34e000fd3a139e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898865"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990537"
 ---
 # <a name="update-intunebrandingprofileassignment"></a>Atualizar intuneBrandingProfileAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [intuneB
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
+|id|String|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual o perfil de identidade visual está atribuído.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 220
   }
 }
 ```
+
 
 
 

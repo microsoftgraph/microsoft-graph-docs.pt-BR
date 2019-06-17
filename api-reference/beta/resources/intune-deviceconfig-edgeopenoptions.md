@@ -4,12 +4,12 @@ description: Valores possíveis para a configuração EdgeOpensWith.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2505eac36176093d6e939a4fdb823dbc86b85f7a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 75b9ec2106a9350e1f490e92470c357df7fc4465
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946746"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985161"
 ---
 # <a name="edgeopenoptions-enum-type"></a>tipo de enumeração edgeOpenOptions
 
@@ -27,6 +27,7 @@ Valores possíveis para a configuração EdgeOpensWith.
 |newTabPage|duas|NewTabPage.|
 |inpreviouspagetype|3D|PreviousPageType.|
 |specificPages|quatro|SpecificPages.|
+
 
 
 

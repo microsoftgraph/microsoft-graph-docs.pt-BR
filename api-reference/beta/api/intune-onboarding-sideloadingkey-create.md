@@ -4,12 +4,12 @@ description: Criar um novo objeto sideLoadingKey.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c448e675df87d0706f377b43857adc00f1f5d32
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: be989b909b0d56e6d55c44e3d0df368d5c9c6825
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899897"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980723"
 ---
 # <a name="create-sideloadingkey"></a>Criar sideLoadingKey
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar sideLoad
 |id|Cadeia de caracteres|ID exclusiva da chave de carregamento do lado.|
 |value|Cadeia de caracteres|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
 |displayName|String|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
-|description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
+|descrição|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
 |totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
-|lastUpdatedDateTime|Cadeia de caracteres|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
+|lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
 
 
 
@@ -98,6 +98,7 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
 
 
 

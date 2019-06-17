@@ -4,12 +4,12 @@ description: Indica o tipo de status de execução do script de gerenciamento de
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 093af5b16854bf65699e469b1afd47fe6b990375
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 43912d24663f21281058636d3eb8a3811b6dbfa0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939837"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986267"
 ---
 # <a name="runstate-enum-type"></a>tipo de enumeração runState
 
@@ -25,6 +25,7 @@ Indica o tipo de status de execução do script de gerenciamento de dispositivo.
 |desconhecido|,0|Resultado desconhecido.|
 |sucesso|1|O script é executado com êxito.|
 |fail|duas|O script não pôde ser executado.|
+
 
 
 

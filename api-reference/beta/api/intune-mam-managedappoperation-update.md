@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto managedAppOperation.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73c1547f4c7878e9f4b5c032f972951c52296868
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 53539d388754b3e7d00c9d0ddcd70d5c310d611c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903674"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986547"
 ---
 # <a name="update-managedappoperation"></a>Atualizar managedAppOperation
 
@@ -94,6 +94,7 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
 
 
 

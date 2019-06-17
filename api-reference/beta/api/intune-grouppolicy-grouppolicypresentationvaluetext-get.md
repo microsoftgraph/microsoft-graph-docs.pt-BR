@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto groupPolicyPresentat
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46e7b1b80e7d48c6e62a152dd593d220fd12ff9d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8e020d996622b7ba8d4fd01637e410d7f373ef56
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904093"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985679"
 ---
 # <a name="get-grouppolicypresentationvaluetext"></a>Obter groupPolicyPresentationValueText
 
@@ -77,6 +77,7 @@ Content-Length: 302
   }
 }
 ```
+
 
 
 

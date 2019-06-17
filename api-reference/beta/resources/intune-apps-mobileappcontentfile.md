@@ -4,12 +4,12 @@ description: Contém propriedades de um único arquivo de instalação associado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b0b1697bcbf4832b00f40584ebd85644c0052ac
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 05912c4b48f11b1a399d6ad7a81ff2d7eb82fcbb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949957"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990320"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -37,7 +37,7 @@ Contém propriedades de um único arquivo de instalação associado uma versão 
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
 |id|String|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
-|nome|Cadeia de caracteres|O nome do arquivo.|
+|name|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|
 |sizeEncrypted|Int64|O tamanho do arquivo após a criptografia.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
@@ -74,6 +74,7 @@ Veja a seguir uma representação JSON do recurso.
   "isDependency": true
 }
 ```
+
 
 
 

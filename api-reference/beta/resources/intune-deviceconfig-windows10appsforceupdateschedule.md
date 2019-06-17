@@ -4,12 +4,12 @@ description: Agendamento de atualização forçada do Windows 10 para aplicativo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e5d7cf1b4e32543b9937603e1b7b782e39410cc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 53afa839ef3ef48333cf584ebff84b747ef5635a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944443"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992791"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>tipo de recurso windows10AppsForceUpdateSchedule
 
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
+
 
 
 

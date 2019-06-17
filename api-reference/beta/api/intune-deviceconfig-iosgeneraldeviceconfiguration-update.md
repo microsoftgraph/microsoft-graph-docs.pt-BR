@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto iosGeneralDeviceConfiguratio
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71a2618af07d459d52c379a27e47f7c251c9d97d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 022a367dcd6b1252916b847521ecb68d3bb68ce2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923451"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966667"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Atualizar iosGeneralDeviceConfiguration
 
@@ -56,8 +56,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountBlockModification|Booliano|Indica se a modificação da conta será permitida ou não quando o dispositivo estiver no modo supervisionado.|
@@ -73,11 +76,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |appsVisibilityListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Tipo de lista que está em AppsVisibilityList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Booliano|Indica se será bloqueado ou não o download automático de aplicativos comprados em outros dispositivos quando o dispositivo estiver no modo supervisionado (iOS 9.0 ou posterior).|
 |appStoreBlocked|Booliano|Indica se o usuário será ou não impedido de usar a App Store.|
-|appStoreBlockInAppPurchases|Booliano|Indica se o usuário será ou não impedido de fazer compras no aplicativo.|
+|appStoreBlockInAppPurchases|Boolean|Indica se o usuário será ou não impedido de fazer compras no aplicativo.|
 |appStoreBlockUIAppInstallation|Booliano|Indica se o aplicativo da App Store será bloqueado ou não, o que não restringe a instalação por meio de aplicativos do host. Aplica-se apenas ao modo supervisionado (iOS 9.0 ou posterior).|
 |appStoreRequirePassword|Booliano|Indica se uma senha deve ou não ser exigida ao usar a loja de aplicativos.|
 |autoFillForceAuthentication|Booliano|Indica se a autenticação do usuário deve ou não ser forçada antes de preencher automaticamente as informações de cartão de crédito e o Safari e outros aplicativos em dispositivos supervisionados.|
-|bluetoothBlockModification|Boolean|Indica se a modificação das configurações do Bluetooth será ou não permitida quando o dispositivo estiver no modo supervisionado (iOS 10.0 ou posterior).|
+|bluetoothBlockModification|Booliano|Indica se a modificação das configurações do Bluetooth será ou não permitida quando o dispositivo estiver no modo supervisionado (iOS 10.0 ou posterior).|
 |cameraBlocked|Booliano|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo.|
 |cellularBlockDataRoaming|Booliano|Indica se o roaming de dados deve ou não ser bloqueado.|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Booliano|Indica se a busca global em segundo plano será ou não bloqueada durante roaming.|
@@ -105,15 +108,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |enterpriseAppBlockTrust|Booliano|Indica se o usuário será ou não impedido de confiar em um aplicativo corporativo.|
 |enterpriseAppBlockTrustModification|Booliano|Indica se o usuário será ou não impedido de modificar as configurações de confiança de um aplicativo corporativo.|
 |esimBlockModification|Booliano|Indica se a adição ou a remoção de planos da rede celular deve ou não ser permitida no eSIM de um dispositivo supervisionado.|
-|faceTimeBlocked|Booliano|Indica se o usuário será ou não impedido de usar o FaceTime.|
+|faceTimeBlocked|Boolean|Indica se o usuário será ou não impedido de usar o FaceTime.|
 |findMyFriendsBlocked|Booliano|Indica se Encontrar Meus Amigos será bloqueado ou não quando o dispositivo estiver no modo supervisionado.|
 |gamingBlockGameCenterFriends|Booliano|Indica se o usuário será ou não impedido de ter amigos no Game Center.|
 |gamingBlockMultiplayer|Booliano|Indica se o usuário será ou não impedido de usar jogos para vários participantes.|
-|gameCenterBlocked|Boolean|Indica se o usuário será ou não impedido de usar o Game Center quando o dispositivo estiver no modo supervisionado.|
+|gameCenterBlocked|Booliano|Indica se o usuário será ou não impedido de usar o Game Center quando o dispositivo estiver no modo supervisionado.|
 |hostPairingBlocked|Booliano|indica se será permitido ou não o emparelhamento de host para controlar os dispositivos com os quais um dispositivo iOS poderá ser pareado estiver no modo supervisionado.|
 |iBooksStoreBlocked|Booliano|Indica se o usuário será ou não impedido de usar a iBooks Store quando o dispositivo estiver no modo supervisionado.|
 |iBooksStoreBlockErotica|Booliano|Indica se o usuário será ou não impedido de baixar mídia marcada como erótica da iBookstore.|
-|iCloudBlockActivityContinuation|Booliano|Indica se o usuário será ou não impedido de continuar um trabalho que começou no dispositivo iOS em outro dispositivo iOS ou macOS.|
+|iCloudBlockActivityContinuation|Booliano|Indica se o usuário será ou não impedido de continuar o trabalho que começou no dispositivo iOS em outro dispositivo iOS ou macOS.|
 |iCloudBlockBackup|Booliano|Indica se o backup do iCloud deve ou não ser bloqueado.|
 |iCloudBlockDocumentSync|Booliano|Indica se a sincronização de documentos do iCloud deve ou não ser bloqueada.|
 |iCloudBlockManagedAppsSync|Booliano|Indica se a Sincronização de nuvem de aplicativos gerenciados deve ou não ser bloqueada.|
@@ -131,23 +134,23 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |keyboardBlockSpellCheck|Booliano|Indica se a verificação ortográfica do teclado será ou não bloqueada quando o dispositivo estiver no modo supervisionado (iOS 8.1.3 ou posterior).|
 |kioskModeAllowAssistiveSpeak|Booliano|Indica se a fala assistencial será permitida ou não no modo quiosque.|
 |kioskModeAllowAssistiveTouchSettings|Booliano|Indica se o acesso às configurações do Toque assistencial será permitido ou não no modo quiosque.|
-|kioskModeAllowAutoLock|Booliano|Indica se o bloqueio automático do dispositivo será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockAutoLock em vez disso.|
+|kioskModeAllowAutoLock|Booliano|Indica se o bloqueio automático do dispositivo será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockAutoLock em vez disso.|
 |kioskModeBlockAutoLock|Booliano|Indica se o bloqueio automático do dispositivo deve ou não ser bloqueado no modo quiosque.|
 |kioskModeAllowColorInversionSettings|Booliano|Indica se o acesso às configurações de Inversão de cores será permitido ou não no modo quiosque.|
-|kioskModeAllowRingerSwitch|Booliano|Indica se o uso do botão de toque será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockRingerSwitch em vez disso.|
+|kioskModeAllowRingerSwitch|Booliano|Indica se o uso do botão de toque será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockRingerSwitch em vez disso.|
 |kioskModeBlockRingerSwitch|Booliano|Indica se o uso do comutador de toque deve ou não ser bloqueado no modo quiosque.|
-|kioskModeAllowScreenRotation|Booliano|Indica se a rotação de tela será permitida ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockScreenRotation em vez disso.|
+|kioskModeAllowScreenRotation|Boolean|Indica se a rotação de tela será permitida ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockScreenRotation em vez disso.|
 |kioskModeBlockScreenRotation|Booliano|Indica se a rotação de tela deve ou não ser bloqueada enquanto estiver no modo quiosque.|
-|kioskModeAllowSleepButton|Booliano|Indica se o uso do botão de suspensão será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockSleepButton em vez disso.|
+|kioskModeAllowSleepButton|Booliano|Indica se o uso do botão de suspensão será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockSleepButton em vez disso.|
 |kioskModeBlockSleepButton|Booliano|Indica se o uso do botão de suspensão deve ou não ser bloqueado no modo quiosque.|
-|kioskModeAllowTouchscreen|Boolean|Indica se o uso da tela touch será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockTouchscreen em vez disso.|
+|kioskModeAllowTouchscreen|Booliano|Indica se o uso da tela touch será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockTouchscreen em vez disso.|
 |kioskModeBlockTouchscreen|Booliano|Indica se o uso da tela de toque deve ou não ser bloqueado enquanto estiver no modo quiosque.|
 |kioskModeAllowVoiceOverSettings|Booliano|Indica se o acesso às configurações de voice over será permitido ou não no modo quiosque.|
-|kioskModeAllowVolumeButtons|Booliano|Indica se o uso dos botões de volume será permitido ou não no modo quiosque. O funcionalidade desta propriedade é redundante com o padrão do sistema operacional e é preterido. Use KioskModeBlockVolumeButtons em vez disso.|
+|kioskModeAllowVolumeButtons|Booliano|Indica se o uso dos botões de volume será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockVolumeButtons em vez disso.|
 |kioskModeBlockVolumeButtons|Booliano|Indica se os botões de volume devem ou não ser bloqueados no modo quiosque.|
 |kioskModeAllowZoomSettings|Booliano|Indica se o acesso às configurações de zoom será permitido ou não no modo quiosque.|
-|kioskModeAppStoreUrl|Cadeia de caracteres|URL na loja de aplicativos do aplicativo para uso no modo de quiosque. Use se KioskModeManagedAppId não for conhecido.|
-|Propriedadekioskmodebuiltinappid|Cadeia de caracteres|ID para aplicativos internos a serem usados no modo quiosque. Usado quando KioskModeManagedAppId e KioskModeAppStoreUrl não são definidos.|
+|kioskModeAppStoreUrl|String|URL na loja de aplicativos do aplicativo para uso no modo de quiosque. Use se KioskModeManagedAppId não for conhecido.|
+|Propriedadekioskmodebuiltinappid|String|ID para aplicativos internos a serem usados no modo quiosque. Usado quando KioskModeManagedAppId e KioskModeAppStoreUrl não são definidos.|
 |kioskModeRequireAssistiveTouch|Booliano|Indica se o toque assistencial deve ou não ser exigido no modo quiosque.|
 |kioskModeRequireColorInversion|Booliano|Indica se a inversão de cores deve ou não ser exigida no modo quiosque.|
 |kioskModeRequireMonoAudio|Booliano|Indica se o áudio mono deve ou não ser exigido no modo quiosque.|
@@ -157,7 +160,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |lockScreenBlockControlCenter|Booliano|Indica se o usuário será ou não impedido de usar o centro de controle na tela de bloqueio.|
 |lockScreenBlockNotificationView|Booliano|Indica se o usuário será ou não impedido de usar a exibição de notificações na tela de bloqueio.|
 |lockScreenBlockPassbook|Booliano|Indica se o usuário será ou não impedido de usar o Passbook quando o dispositivo estiver bloqueado|
-|lockScreenBlockTodayView|Booliano|Indica se o usuário será ou não impedido de usar a exibição Hoje na tela de bloqueio.|
+|lockScreenBlockTodayView|Boolean|Indica se o usuário será ou não impedido de usar a exibição Hoje na tela de bloqueio.|
 |mediaContentRatingAustralia|[mediaContentRatingAustralia](../resources/intune-deviceconfig-mediacontentratingaustralia.md)|Configurações de classificação de conteúdo de mídia da Austrália|
 |mediaContentRatingCanada|[mediaContentRatingCanada](../resources/intune-deviceconfig-mediacontentratingcanada.md)|Configurações de classificação de conteúdo de mídia do Canadá|
 |mediaContentRatingFrance|[mediaContentRatingFrance](../resources/intune-deviceconfig-mediacontentratingfrance.md)|Configurações de classificação de conteúdo de mídia da França|
@@ -170,7 +173,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |networkUsageRules|Coleção [iosNetworkUsageRule](../resources/intune-deviceconfig-iosnetworkusagerule.md)|Lista de aplicativos gerenciados e regras de rede que se aplicam a eles. Essa coleção pode conter um máximo de 1.000 elementos.|
 |mediaContentRatingApps|[ratingAppsType](../resources/intune-deviceconfig-ratingappstype.md)|Configurações de classificação de conteúdo de mídia para aplicativos. Os possíveis valores são: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
 |messagesBlocked|Booliano|Indica se o usuário será ou não impedido de usar o aplicativo Mensagens no dispositivo supervisionado.|
-|notificationsBlockSettingsModification|Boolean|Indica se a modificação de configurações de notificações será permitida ou não no dispositivo supervisionado (iOS 9.3 ou posterior).|
+|notificationsBlockSettingsModification|Booliano|Indica se a modificação de configurações de notificações será permitida ou não no dispositivo supervisionado (iOS 9.3 ou posterior).|
 |passcodeBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
 |passcodeBlockFingerprintModification|Booliano|Impedir a modificação de impressões digitais registradas do Touch ID no modo supervisionado.|
 |passcodeBlockModification|Booliano|Indica se a modificação de senha será permitida ou não no dispositivo supervisionado (iOS 9.0 e posterior).|
@@ -197,8 +200,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |screenCaptureBlocked|Booliano|Indica se o usuário será ou não impedido de fazer capturas de tela.|
 |siriBlocked|Booliano|Indica se o usuário será ou não impedido de usar a Siri.|
 |siriBlockedWhenLocked|Booliano|Indica se o usuário será ou não impedido de usar a Siri com o dispositivo bloqueado.|
-|siriBlockUserGeneratedContent|Booliano|Indica se a Siri será ou não impedida de consultar conteúdos gerados pelo usuário quando usada em um dispositivo supervisionado.|
-|siriRequireProfanityFilter|Boolean|Indica se a Siri deve ou não ser impedida de utilizar linguagem imprópria no dispositivo supervisionado.|
+|siriBlockUserGeneratedContent|Boolean|Indica se a Siri será ou não impedida de consultar conteúdos gerados pelo usuário quando usada em um dispositivo supervisionado.|
+|siriRequireProfanityFilter|Booliano|Indica se a Siri deve ou não ser impedida de utilizar linguagem imprópria no dispositivo supervisionado.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Define o número de dias que uma atualização de software será delyed para um dispositivo supervisionado. Valores válidos de 0 a 90|
 |softwareUpdatesForceDelayed|Booliano|Indica se o usuário deve ou não atrasar a visibilidade de atualizações de software quando o dispositivo estiver no modo supervisionado.|
 |spotlightBlockInternetResults|Booliano|Indica se a Pesquisa em Destaque poderá ou não retornar resultados da Internet no dispositivo supervisionado.|
@@ -240,7 +243,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 9386
+Content-length: 10159
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -248,6 +251,27 @@ Content-length: 9386
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -507,7 +531,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9558
+Content-Length: 10331
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -517,6 +541,27 @@ Content-Length: 9558
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -771,6 +816,7 @@ Content-Length: 9558
   "siriDisableServerLogging": true
 }
 ```
+
 
 
 

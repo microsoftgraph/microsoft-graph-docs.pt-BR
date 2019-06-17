@@ -4,12 +4,12 @@ description: Entidade de estado de integridade do aplicativo de gerenciamento do
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b443c95b363e926777150013e20bef4bc8bc602d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f423521ddd6e00fd887195d841c1e50518d2c428
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942168"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983964"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>tipo de recurso windowsManagementAppHealthState
 
@@ -31,12 +31,12 @@ Entidade de estado de integridade do aplicativo de gerenciamento do Windows.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para o estado de integridade do aplicativo de gerenciamento do Windows|
+|id|String|Identificador exclusivo para o estado de integridade do aplicativo de gerenciamento do Windows|
 |HealthState|[HealthState](../resources/intune-devices-healthstate.md)|Estado de integridade do aplicativo de gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|Cadeia de caracteres|Versão instalada do aplicativo de gerenciamento do Windows.|
+|installedVersion|String|Versão instalada do aplicativo de gerenciamento do Windows.|
 |lastCheckInDateTime|DateTimeOffset|Tempo de check-in do aplicativo de gerenciamento do Windows por último.|
 |deviceName|String|Nome do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
-|deviceOSVersion|Cadeia de caracteres|Versão do Windows 10 so do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
+|deviceOSVersion|String|Versão do Windows 10 so do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -60,6 +60,7 @@ Veja a seguir uma representação JSON do recurso.
   "deviceOSVersion": "String"
 }
 ```
+
 
 
 

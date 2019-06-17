@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto deviceAppManagement.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: dd95af58907525b2de1cfeb80baae09429480695
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f7bfd02d2e98386fa8f9e6172cfdfcfeb63af5b4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899344"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989543"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é necessária para chamar esta API. Para saber ma
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 | Delegado (conta corporativa ou de estudante) | |
-| &nbsp;&nbsp; **Aplicativos**, **livros**ou **integração** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
+| &nbsp;&nbsp; **Aplicativos**, **livros**, **** **integração ou integração com parceiros** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
 | &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|

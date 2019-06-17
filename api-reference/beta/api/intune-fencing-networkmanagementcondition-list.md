@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos networkManagementCondi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c93776671fc059dfeefdec1a9b6687edaa0eac6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6550024d8b3f9f229e21ccbbe8db69ee65e250a9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905228"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984958"
 ---
 # <a name="list-networkmanagementconditions"></a>Listar networkManagementConditions
 
@@ -83,6 +83,7 @@ Content-Length: 511
   ]
 }
 ```
+
 
 
 

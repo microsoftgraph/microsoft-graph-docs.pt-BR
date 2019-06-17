@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto depEnrollmentProfile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8f04390092381b789ff7c375ea2c40c6848317c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ff10fda496fd640454ae37bda6e673da4b0a68a6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908781"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979029"
 ---
 # <a name="update-depenrollmentprofile"></a>Atualizar depEnrollmentProfile
 
@@ -52,18 +52,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [depEnro
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|String|Nome do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|description|String|Descrição do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|descrição|String|Descrição do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação de usuário herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|Cadeia de caracteres|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Booliano|Indica se este é o perfil padrão|
 |supervisedModeEnabled|Booliano|Modo supervisionado, true para habilitar, caso contrário, false. Consulte https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune para obter mais informações.|
-|supportDepartment|Cadeia de caracteres|Informações do departamento de suporte|
+|supportDepartment|String|Informações do departamento de suporte|
 |passCodeDisabled|Booliano|Indica se o painel de configuração de senha está desabilitado|
 |IsMandatory|Booliano|Indica se o perfil é obrigatório|
 |locationDisabled|Booliano|Indica se o painel de instalação do serviço de localização está desabilitado|
-|supportPhoneNumber|Cadeia de caracteres|Número de telefone de suporte|
+|supportPhoneNumber|String|Número de telefone de suporte|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indica o modo de emparelhamento do iTunes. Os valores possíveis são: `disallow`, `allow`, `requiresCertificate`.|
 |profileRemovalDisabled|Booliano|Indica se a opção de remoção de perfil está desabilitada|
 |managementCertificates|coleção [managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Certificados de gerenciamento para o Apple Configurator|
@@ -185,6 +185,7 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
 
 
 

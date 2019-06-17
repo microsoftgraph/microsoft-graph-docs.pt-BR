@@ -4,12 +4,12 @@ description: Criar um novo objeto androidManagedStoreAppConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3100ce3046522e55ff65fb20d7ac48448089bd6d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 27c260dfff3544b68269bceb190b5194258bce80
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937236"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966289"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>Criar androidManagedStoreAppConfiguration
 
@@ -54,12 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidM
 |targetedMobileApps|Coleção de cadeias de caracteres|o aplicativo associado. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de configuração de aplicativo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|description|String|Descrição fornecida pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|descrição|String|Descrição fornecida pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |displayName|String|Nome fornecido pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|ID do pacote de configuração do aplicativo Enterprise Android.|
-|payloadJson|Cadeia de caracteres|Carga JSON da configuração do aplicativo empresarial Android.|
+|payloadJson|String|Carga JSON da configuração do aplicativo empresarial Android.|
 |permissionActions|coleção [androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)|Lista de permissões de aplicativo Android e ações de permissão correspondentes.|
 |appSupportsOemConfig|Booliano|Se este AppConfig é ou não uma política de OEMConfig.|
 
@@ -134,6 +134,7 @@ Content-Length: 764
   "appSupportsOemConfig": true
 }
 ```
+
 
 
 

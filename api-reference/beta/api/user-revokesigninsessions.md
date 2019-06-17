@@ -4,12 +4,12 @@ description: Invalida todos os tokens de atualização do usuário emitidos para
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1221edadd8e69139b28aaf1122409cf311986d6c
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 26f2224e74a90bbc4a47a4e31c5738d3b1baf08e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34453394"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979340"
 ---
 # <a name="user-revokesigninsessions"></a>usuário: revokeSignInSessions
 
@@ -19,8 +19,8 @@ Invalida todos os tokens de atualização emitidos para aplicativos para um usu�
 
 Se o aplicativo tentar resgatar um token de acesso delegado para esse usuário usando um token de atualização invalidado, o aplicativo receberá um erro. Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização fazendo uma solicitação para o ponto de extremidade de autorização, que forçará o usuário a entrar.
 
-[!NOTE]
-Após chamar o **revokeSignInSessions**, pode haver um pequeno atraso de alguns minutos antes de os tokens serem revogados.
+>[!NOTE]
+>Após chamar o **revokeSignInSessions**, pode haver um pequeno atraso de alguns minutos antes de os tokens serem revogados.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,10 +38,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /me/revokeSignInSessions
 POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Esta operação não tem conteúdo de solicitação.

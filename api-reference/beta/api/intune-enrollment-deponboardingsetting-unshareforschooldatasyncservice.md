@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86d604add264fea8d7ffa7dcdbce258fcd37b990
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bb546d44f174dd41b041ed5744dfe3e463ec97fb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908753"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980345"
 ---
 # <a name="unshareforschooldatasyncservice-action"></a>Ação unshareForSchoolDataSyncService
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

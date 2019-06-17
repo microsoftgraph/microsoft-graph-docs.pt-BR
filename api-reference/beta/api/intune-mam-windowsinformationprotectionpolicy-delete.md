@@ -4,12 +4,12 @@ description: Exclui windowsInformationProtectionPolicy.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76951ef5c433ccb2636f72453d4828136c613275
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1f4c78e4de4cfd7dcedfe01d5c01a30d0de2cc1b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900605"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984258"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>Excluir windowsInformationProtectionPolicy
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

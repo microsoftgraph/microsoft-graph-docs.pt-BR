@@ -4,12 +4,12 @@ description: Um item que descreve a configuração de notificação.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0503d938860798408fa5eb2af20ac51dc988f8a7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 434278967fa5ffe781b53595edae69bffc725289
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946445"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995669"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Tipo de recurso iosNotificationSettings
 
@@ -22,7 +22,7 @@ Um item que descreve a configuração de notificação.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|bundleID|Cadeia de caracteres|Id de pacote do aplicativo ao qual aplicar essas configurações de notificação.|
+|bundleID|String|Id de pacote do aplicativo ao qual aplicar essas configurações de notificação.|
 |appName|Cadeia de caracteres|Nome do aplicativo a ser associado à bundleID.|
 |publicador|String|Publicador a ser associado à bundleID.|
 |enabled|Boolean|Indica se são permitidas notificações neste aplicativo.|
@@ -56,6 +56,7 @@ Veja a seguir uma representação JSON do recurso.
   "soundsEnabled": true
 }
 ```
+
 
 
 

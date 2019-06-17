@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windows10EnrollmentC
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f71c14e5b22307ce27146459c887198e19959eb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f86af3d402ce178cc724cffbf9c6d90a540466e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899830"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980485"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Obter windows10EnrollmentCompletionPageConfiguration
 
@@ -90,6 +90,7 @@ Content-Length: 810
   }
 }
 ```
+
 
 
 

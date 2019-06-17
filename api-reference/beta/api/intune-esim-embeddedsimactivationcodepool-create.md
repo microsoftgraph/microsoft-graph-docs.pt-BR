@@ -4,12 +4,12 @@ description: Criar um novo objeto embeddedSIMActivationCodePool.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71da04670308603530c8525c4dc2240a920bd4e6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 405ddba4ef816d81ec20c1ece176e3d8811601c8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908144"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982669"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>Criar embeddedSIMActivationCodePool
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar embedded
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do pool de códigos de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
+|id|String|Identificador exclusivo do pool de códigos de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
 |displayName|String|O nome definido pelo administrador do pool de código de ativação do SIM incorporado.|
 |createdDateTime|DateTimeOffset|A hora em que o pool de códigos de ativação do SIM incorporado foi criado. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que o pool de código de ativação do SIM incorporado foi modificado pela última vez. Atualizado o lado do serviço.|
@@ -110,6 +110,7 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
+
 
 
 

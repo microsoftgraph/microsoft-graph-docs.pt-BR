@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto windowsInformationProtection
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cd73750c8859289b179dd7017d587d101126542
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24dd2ad7869af76197c0a9606073d8f213049aab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33902973"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987744"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>Atualizar windowsInformationProtectionAppLockerFile
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome amigável|
+|displayName|String|O nome amigável|
 |fileHash|Cadeia de caracteres|Hash SHA256 do arquivo|
 |file|Binária|Arquivo como uma matriz de bytes|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 
@@ -98,6 +98,7 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
 
 
 

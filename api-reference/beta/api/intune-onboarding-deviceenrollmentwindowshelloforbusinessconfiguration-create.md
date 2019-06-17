@@ -4,12 +4,12 @@ description: Crie um novo objeto deviceEnrollmentWindowsHelloForBusinessConfigur
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6184bccb43171e0323ef60cf166878c8d1b3fa3f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8e932b69a1d4a83d9f01bcf734c491556f0480e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900220"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981185"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Criar deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceEnrollment
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da conta herdada de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |displayName|String|O nome de exibição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|description|String|A descrição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|descrição|String|A descrição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos somente à configuração com o menor valor de prioridade. Herdada do [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Data e hora de criação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
@@ -69,6 +69,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceEnrollment
 |pinPreviousBlockCount|Int32|Controla a capacidade de impedir que os usuários usem PINs passados. Isso deve ser definido entre 0 e 50, inclusive, e o PIN atual do usuário é incluído nessa contagem. Se for definido como 0, os PINs anteriores não serão armazenados. O histórico de PIN não é preservado por meio de uma redefinição de PIN.|
 |pinExpirationInDays|Int32|Controla o período de tempo (em dias) que um PIN pode ser usado antes que o sistema exija que o usuário o altere. Isso deve ser definido entre 0 e 730, inclusive. Se definido como 0, o PIN do usuário nunca expirará|
 |enhancedBiometricsState|[habilitação](../resources/intune-shared-enablement.md)|Controla a capacidade de usar os recursos antifalsificação para reconhecimento facial em dispositivos que dão suporte a ele. Se for definido como Disabled, os recursos anti-falsificação não serão permitidos. Se definido como não configurado, o usuário pode escolher se deseja usar anti-falsificação. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|securityKeyForSignIn|[habilitação](../resources/intune-shared-enablement.md)|Chave de segurança para entrar fornece a capacidade de ativar/desativar remotamente o Windows Hello sercurity Keyl não configurada honrará as configurações realizadas no clinet. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -82,7 +83,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 629
+Content-length: 667
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -101,7 +102,8 @@ Content-length: 629
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 5,
   "pinExpirationInDays": 3,
-  "enhancedBiometricsState": "enabled"
+  "enhancedBiometricsState": "enabled",
+  "securityKeyForSignIn": "enabled"
 }
 ```
 
@@ -110,7 +112,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 801
+Content-Length: 839
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -132,9 +134,11 @@ Content-Length: 801
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 5,
   "pinExpirationInDays": 3,
-  "enhancedBiometricsState": "enabled"
+  "enhancedBiometricsState": "enabled",
+  "securityKeyForSignIn": "enabled"
 }
 ```
+
 
 
 

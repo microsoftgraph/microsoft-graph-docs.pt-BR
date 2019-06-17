@@ -4,12 +4,12 @@ description: Tipo base para uma instância de configuração
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b780fad1df833a1a5d431835364493ac5afc3c6b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 628ca393006666f7a655cf45832784e88f2a4d01
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943330"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984489"
 ---
 # <a name="devicemanagementsettinginstance-resource-type"></a>tipo de recurso deviceManagementSettingInstance
 
@@ -28,9 +28,9 @@ Tipo base para uma instância de configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID de instância da configuração|
-|DefinitionId|Cadeia de caracteres|A ID da definição de configuração dessa instância|
-|valueJson|Cadeia de caracteres|Representação JSON do valor|
+|id|String|A ID de instância da configuração|
+|DefinitionId|String|A ID da definição de configuração dessa instância|
+|valueJson|String|Representação JSON do valor|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -51,6 +51,7 @@ Veja a seguir uma representação JSON do recurso.
   "valueJson": "String"
 }
 ```
+
 
 
 

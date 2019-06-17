@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto windows81CompliancePolicy.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acce16d05f2ed8966cc2ce68e1029dd0a170cc36
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 76500bfdbdef81eaf6f34bfdee5dbe43daaf1a98
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918308"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977818"
 ---
 # <a name="update-windows81compliancepolicy"></a>Atualizar windows81CompliancePolicy
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows81Compli
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -65,7 +65,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows81Compli
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado. Valores válidos de 0 a 24|
-|osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows 8.1.|
+|osMinimumVersion|String|Versão mínima do Windows 8.1.|
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do Windows 8.1.|
 |storageRequireEncryption|Booliano|Indica se a criptografia é ou não necessária em um dispositivo Windows 8.1.|
 
@@ -136,6 +136,7 @@ Content-Length: 836
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

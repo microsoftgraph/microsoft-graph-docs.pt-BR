@@ -4,12 +4,12 @@ description: Descreve um tipo de dependência entre dois aplicativos móveis.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf64854db4421028d4982145a860141a7dc91f61
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4a29f658a67c3930b1b693589dc9115c0c1ff185
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949931"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990257"
 ---
 # <a name="mobileappdependency-resource-type"></a>tipo de recurso mobileAppDependency
 
@@ -34,9 +34,9 @@ Herda de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da entidade de relação. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|Cadeia de caracteres|A ID de aplicativo do aplicativo móvel do filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo móvel filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|id|String|A ID da entidade de relação. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|String|A ID de aplicativo do aplicativo móvel do filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|String|O nome de exibição do aplicativo móvel filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |DependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|O tipo de relação de dependência entre os aplicativos pai e filho. Os valores possíveis são: `detect` e `autoInstall`.|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho.|
 
@@ -61,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   "dependentAppCount": 1024
 }
 ```
+
 
 
 

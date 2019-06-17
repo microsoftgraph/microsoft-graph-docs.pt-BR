@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec1aaf4b77943e75f59da9601ed6e234bbab0240
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6fbb464487bbebfae850be25cc3959ec9faf9f80
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899505"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988570"
 ---
 # <a name="getscopesforuser-function"></a>função Getscopesforuser à
 
@@ -77,6 +77,7 @@ Content-Length: 56
   ]
 }
 ```
+
 
 
 

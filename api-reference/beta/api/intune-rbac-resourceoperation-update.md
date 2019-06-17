@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto resourceOperation.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1116c50717813ed05a8278deaae134fbd6f26c0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: be70c6a09d15a431cda97c9ec0fab8fef7b9caf1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899498"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985238"
 ---
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperati
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|Cadeia de caracteres|Categoria de recurso à qual essa operação pertence.|
+|recurso|String|Categoria de recurso à qual essa operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|description|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|descrição|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
 |enabledForScopeValidation|Booliano|Determina se a permissão é validada para os escopos definidos por atribuição de função.|
 
 
@@ -98,6 +98,7 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
 
 
 

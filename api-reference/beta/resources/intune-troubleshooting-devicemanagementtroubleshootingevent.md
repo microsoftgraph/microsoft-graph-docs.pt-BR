@@ -4,12 +4,12 @@ description: Evento que representa uma falha geral.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad7e1f8f02af829613f60ecd3f9b61b1c8bdf403
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d3901da50b524013f8126fe8f163a519b05211f0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939732"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988178"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingEvent
 
@@ -35,7 +35,7 @@ Evento que representa uma falha geral.
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção.|
-|EventName|Cadeia de caracteres|Nome do evento correspondente ao evento de solução de problemas. É um campo opcional|
+|EventName|String|Nome do evento correspondente ao evento de solução de problemas. É um campo opcional|
 |additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres que fornece informações adicionais sobre o evento de solução de problemas|
 
 ## <a name="relationships"></a>Relações
@@ -79,6 +79,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Definição de valor de chave.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 592f3ff070ab7440d5c16d5380b556993915e6ec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c8e8028a4863ee313499f8c4982b569ca25747b3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946111"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989375"
 ---
 # <a name="keyvalue-resource-type"></a>tipo de recurso KeyValue
 
@@ -22,7 +22,7 @@ Definição de valor de chave.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|Cadeia de caracteres|Chave.|
+|key|String|Chave.|
 |value|Cadeia de caracteres|Valor.|
 
 ## <a name="relationships"></a>Relações
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
+
 
 
 

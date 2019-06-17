@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto importedDeviceIdentity.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b114bd928db1d3c05d6ab5a0a1a9a897c91efd60
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5a95cd0b74c35d0d9a8e3a22b6fc9ad66d80d397
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908354"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981836"
 ---
 # <a name="update-importeddeviceidentity"></a>Atualizar importedDeviceIdentity
 
@@ -51,12 +51,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [importe
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|ID da identidade do dispositivo importado|
-|importedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo importado|
+|importedDeviceIdentifier|String|Identificador de dispositivo importado|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de identidade de dispositivo importada. Os valores possíveis são: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da descrição|
 |createdDateTime|DateTimeOffset|Data e hora de criação do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do dispositivo|
-|description|String|A descrição do dispositivo|
+|descrição|String|A descrição do dispositivo|
 |enrollmentid|[enrollmentid](../resources/intune-enrollment-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
@@ -105,6 +105,7 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
+
 
 
 

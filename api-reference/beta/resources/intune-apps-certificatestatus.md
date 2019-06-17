@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ead8353b7b7082efb8bc32f7a73e6eebe50cda25
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5c7293501950bc346f2a266c4956627f5779c7ae
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950470"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991251"
 ---
 # <a name="certificatestatus-enum-type"></a>tipo de enumeração certificateStatus
 
@@ -24,6 +24,7 @@ Ainda não documentado
 |:---|:---|:---|
 |desprovisionado|,0|Ainda não documentado|
 |provisionado|1|Ainda não documentado|
+
 
 
 

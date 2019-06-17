@@ -4,12 +4,12 @@ description: Violação de perfil de configuração de aplicativos restritos por
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a519399cebd0af6cb5a0b9b0f1b75b346e24764
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 27477d0f12b130975abe42f8b994282e5de5bbcb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944779"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986694"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>tipo de recurso restrictedAppsViolation
 
@@ -34,10 +34,10 @@ Violação de perfil de configuração de aplicativos restritos por dispositivo 
 |id|String|Identificador exclusivo do objeto. Composto de AccountId, DeviceID, PolicyId e userId|
 |userId|Cadeia de caracteres|O identificador exclusivo do usuário deve ser GUID|
 |userName|Cadeia de caracteres|Nome de usuário|
-|managedDeviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo gerenciado deve ser GUID|
+|managedDeviceId|String|O identificador exclusivo do dispositivo gerenciado deve ser GUID|
 |deviceName|String|Nome do dispositivo|
-|deviceConfigurationId|Cadeia de caracteres|O identificador exclusivo do perfil de configuração do dispositivo deve ser GUID|
-|deviceConfigurationName|Cadeia de caracteres|Nome do perfil de configuração do dispositivo|
+|deviceConfigurationId|String|O identificador exclusivo do perfil de configuração do dispositivo deve ser GUID|
+|deviceConfigurationName|String|Nome do perfil de configuração do dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado de aplicativos restritos. Os valores possíveis são: `prohibitedApps` e `notApprovedApps`.|
 |restrictedApps|coleção [managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicativos restritos violados|
@@ -73,6 +73,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

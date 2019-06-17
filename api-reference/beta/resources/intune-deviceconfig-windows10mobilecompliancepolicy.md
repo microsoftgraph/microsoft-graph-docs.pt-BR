@@ -4,12 +4,12 @@ description: Essa classe contém as configurações de conformidade do Windows 1
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7b5c16bf7d11a31ddd4983831f3fba76adce56f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cb383a97a88eb5bc917fabc49ea948f9ee6e4f99
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944303"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982214"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>Tipo de recurso windows10MobileCompliancePolicy
 
@@ -37,9 +37,9 @@ Herda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecomplia
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |passwordRequired|Booliano|Exige uma senha para desbloquear o dispositivo Windows Phone.|
 |passwordBlockSimple|Booliano|Se a sincronização do calendário deve ou não ser bloqueada.|
@@ -50,7 +50,7 @@ Herda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecomplia
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
 |passwordRequireToUnlockFromIdle|Booliano|Exige uma senha para desbloquear o dispositivo ocioso.|
-|osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
+|osMinimumVersion|String|Versão mínima do Windows Phone.|
 |osMaximumVersion|String|Versão máxima do Windows Phone.|
 |earlyLaunchAntiMalwareDriverEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
 |bitLockerEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
@@ -118,6 +118,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

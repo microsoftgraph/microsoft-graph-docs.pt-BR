@@ -4,12 +4,12 @@ description: Contém propriedades usadas para atribuir um aplicativo móvel da M
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8855a73f148e9e80b2bb82ba16f784a4ac52441f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e117e805a4fff60eb3271310f1e501413b3ebb33
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950057"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986190"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>tipo de recurso microsoftStoreForBusinessAppAssignmentSettings
 
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "useDeviceContext": true
 }
 ```
+
 
 
 

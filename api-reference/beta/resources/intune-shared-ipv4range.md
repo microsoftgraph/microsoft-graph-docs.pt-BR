@@ -4,12 +4,12 @@ description: Definição de intervalo IPv4.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6a732ad11980b22b08d4684a8706e244e78a08a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c740cc94965ae41a857aa2c6ccb1394e161e6866
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938864"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995998"
 ---
 # <a name="ipv4range-resource-type"></a>Tipo de recurso iPv4Range
 
@@ -25,7 +25,7 @@ Herda de [ipRange](../resources/intune-shared-iprange.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|lowerAddress|Cadeia de caracteres|Endereço inferior.|
+|lowerAddress|String|Endereço inferior.|
 |upperAddress|Cadeia de caracteres|Endereço superior.|
 
 ## <a name="relationships"></a>Relações
@@ -45,6 +45,7 @@ Veja a seguir uma representação JSON do recurso.
   "upperAddress": "String"
 }
 ```
+
 
 
 

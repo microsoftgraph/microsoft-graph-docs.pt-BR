@@ -4,12 +4,12 @@ description: Contém as propriedades do registro para detectar um aplicativo Win
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cd9ce4223d18d001ca1d299f8dbcae31c6f99d2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3013ca82a0545379c96cf832818783dedd4576f4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949525"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986099"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>tipo de recurso win32LobAppRegistryDetection
 
@@ -26,11 +26,11 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |check32BitOn64System|Booliano|Um valor que indica se este caminho de registro é para verificar o aplicativo de 32 bits no sistema de 64 bits|
-|Caminho-chave|Cadeia de caracteres|O caminho da chave do registro para detectar o aplicativo de LoB (linha de negócios) do Win32|
-|valueName|Cadeia de caracteres|O nome do valor do registro|
+|Caminho-chave|String|O caminho da chave do registro para detectar o aplicativo de LoB (linha de negócios) do Win32|
+|valueName|String|O nome do valor do registro|
 |Detecção|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|O tipo de detecção de dados do registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para a detecção de dados do registro. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detecçaovalue|Cadeia de caracteres|O valor de detecção do registro|
+|detecçaovalue|String|O valor de detecção do registro|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "detectionValue": "String"
 }
 ```
+
 
 
 

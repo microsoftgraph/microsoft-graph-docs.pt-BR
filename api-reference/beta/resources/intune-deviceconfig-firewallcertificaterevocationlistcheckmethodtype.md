@@ -4,12 +4,12 @@ description: Valores possíveis para firewallCertificateRevocationListCheckMetho
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92d0f13416e543e018a5a69d28751d9ddd4512c8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cbfad062f551bbf53c0e0e27fe40611d6f70dd0e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946634"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985861"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>tipo de enumeração firewallCertificateRevocationListCheckMethodType
 
@@ -26,6 +26,7 @@ Valores possíveis para firewallCertificateRevocationListCheckMethod
 |none|1|Não verificar a lista de certificados revogados|
 |Houve|duas|Tentar verificação de CRL e permitir um certificado somente se o certificado for confirmado pela verificação|
 |precisa|3D|Exigir uma verificação de CRL bem-sucedida antes de permitir um certificado|
+
 
 
 

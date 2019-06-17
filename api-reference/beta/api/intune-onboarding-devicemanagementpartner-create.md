@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceManagementPartner.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c9eea3c6ba8a3010a2a63d6dd362555aed553f0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d8cf972806c246c033bef95f26bff7d55a5d9c44
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900093"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980989"
 ---
 # <a name="create-devicemanagementpartner"></a>Criar deviceManagementPartner
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID da entidade|
+|id|String|ID da entidade|
 |lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação após a opção de administrador habilitado conectar-se ao parceiro de gerenciamento de dispositivo|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Tipo de aplicativo de parceiro. Os valores possíveis são: `unknown`, `singleTenantApp`, `multiTenantApp`.|
@@ -113,6 +113,7 @@ Content-Length: 713
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
 
 
 

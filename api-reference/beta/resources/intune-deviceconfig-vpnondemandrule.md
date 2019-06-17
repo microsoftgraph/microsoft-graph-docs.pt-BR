@@ -4,12 +4,12 @@ description: Definição de regra VPN sob demanda.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb17bb1ec1af12f89ea1ab5470cf6a2d808868c4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fa1ac8562ac2a43db43bb359cb189f8a4ed9500b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944583"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987576"
 ---
 # <a name="vpnondemandrule-resource-type"></a>tipo de recurso vpnOnDemandRule
 
@@ -24,11 +24,11 @@ Definição de regra VPN sob demanda.
 |:---|:---|:---|
 |SSIDs|Coleção de cadeias de caracteres|Identificadores de conjuntos de serviços de rede (SSIDs).|
 |dnsSearchDomains|Coleção de cadeias de caracteres|Domínios de pesquisa de DNS.|
-|probeUrl|Cadeia de caracteres|Uma URL para sondar. Se essa URL for obtida com êxito (retornando um código de status HTTP 200) sem redirecionamento, essa regra será correspondente.|
+|probeUrl|String|Uma URL para sondar. Se essa URL for obtida com êxito (retornando um código de status HTTP 200) sem redirecionamento, essa regra será correspondente.|
 |ação|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Ação. Os valores possíveis são: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
 |domainaction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Ação de domínio (aplicável somente quando a ação é avaliar conexão). Os valores possíveis são: `connectIfNeeded` e `neverConnect`.|
 |domínio|Coleção de cadeias de caracteres|Domains (só é aplicável quando Action é Evaluate Connection).|
-|probeRequiredUrl|Cadeia de caracteres|A URL obrigatória da sonda (aplicável somente quando Action é Evaluate Connection e domainaction é conectada se necessário).|
+|probeRequiredUrl|String|A URL obrigatória da sonda (aplicável somente quando Action é Evaluate Connection e domainaction é conectada se necessário).|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -58,6 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "probeRequiredUrl": "String"
 }
 ```
+
 
 
 

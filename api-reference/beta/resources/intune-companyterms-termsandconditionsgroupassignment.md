@@ -4,12 +4,12 @@ description: Uma entidade termsAndConditionsGroupAssignment representa a atribui
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 417871f610e9c278e902b41c020c1d8fd904eb6a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 804ac878ef2ec691d1dd4ca5e62cf28ec4ef1770
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949133"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996600"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>tipo de recurso termsAndConditionsGroupAssignment
 
@@ -31,8 +31,8 @@ Uma entidade termsAndConditionsGroupAssignment representa a atribuição de uma 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
-|targetGroupId|Cadeia de caracteres|Identificador exclusivo de um grupo ao qual a política T&C é atribuída.|
+|id|String|Identificador exclusivo da entidade.|
+|targetGroupId|String|Identificador exclusivo de um grupo ao qual a política T&C é atribuída.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   "targetGroupId": "String"
 }
 ```
+
 
 
 

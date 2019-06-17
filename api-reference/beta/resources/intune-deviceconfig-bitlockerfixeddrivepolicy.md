@@ -4,12 +4,12 @@ description: Políticas de unidade fixa do BitLocker.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 326d9c873fd1e0b6b00656aa6b831b7e05ac6bf0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c5729952f2700c42eaf28a292ef0f520dfbe89da
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947516"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983586"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>tipo de recurso bitLockerFixedDrivePolicy
 
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

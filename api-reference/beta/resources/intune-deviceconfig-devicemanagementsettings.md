@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 079d957d14e5f891af691ba7b41916adb8ac9669
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a087192b9ff46b79f5f585cc9515b9c78d806e99
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946963"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990005"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 
@@ -28,7 +28,7 @@ Ainda não documentado
 |enhancedJailBreak|Booliano|O recurso está habilitado ou não para a detecção de jailbreak avançada.|
 |deviceInactivityBeforeRetirementInDay|Int32|Quando o dispositivo não faz check-in por um número especificado de dias, os dados da empresa podem ser removidos e o dispositivo não estará sob gerenciamento. Valores válidos de 30 a 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|O provedor de credenciais derivado a ser usado para esta conta. Os valores possíveis são: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
-|derivedCredentialUrl|Cadeia de caracteres|O URI de autoatendimento do provedor de credenciais derivado.|
+|derivedCredentialUrl|String|O URI de autoatendimento do provedor de credenciais derivado.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "derivedCredentialUrl": "String"
 }
 ```
+
 
 
 

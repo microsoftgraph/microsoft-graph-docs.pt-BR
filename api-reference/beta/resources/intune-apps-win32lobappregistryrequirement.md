@@ -4,12 +4,12 @@ description: Contém as propriedades do registro para detectar um aplicativo Win
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bd6f5e64953f71bcea6ed5e6e06205213bba58b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6a75e30c0cc84f9e775f4ee304e27eacb42b409f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949532"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975802"
 ---
 # <a name="win32lobappregistryrequirement-resource-type"></a>tipo de recurso win32LobAppRegistryRequirement
 
@@ -26,10 +26,10 @@ Herda de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequiremen
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção herdada de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detecçaovalue|Cadeia de caracteres|O valor de detecção herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|detecçaovalue|String|O valor de detecção herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |check32BitOn64System|Booliano|Um valor que indica se este caminho de registro é para verificar o aplicativo de 32 bits no sistema de 64 bits|
-|Caminho-chave|Cadeia de caracteres|O caminho da chave do registro para detectar o aplicativo de LoB (linha de negócios) do Win32|
-|valueName|Cadeia de caracteres|O nome do valor do registro|
+|Caminho-chave|String|O caminho da chave do registro para detectar o aplicativo de LoB (linha de negócios) do Win32|
+|valueName|String|O nome do valor do registro|
 |Detecção|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|O tipo de detecção de dados do registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 
 ## <a name="relationships"></a>Relações
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "detectionType": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceManagement.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: bbbe6c21d602266be2223fbd72b10ae9f51f7818
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b1c3534583d1e5f825c734160dea3ddd8959934c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898378"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989683"
 ---
 # <a name="get-devicemanagement"></a>Acessar deviceManagement
 
@@ -36,12 +36,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Notificação** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All |
 | &nbsp;&nbsp; **Acesso remoto** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Assistência remota** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **Solução de Problemas** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
 | Aplicativo | Sem suporte. |

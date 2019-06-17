@@ -4,12 +4,12 @@ description: Esta entidade contém as propriedades usadas para atribuir um perfi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97c3b27c0fe42b0fe1bc3b3350bc98957e88e92b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 97c256122734db4197d44bc89be569ed1bcb9696
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939755"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983488"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>tipo de recurso intuneBrandingProfileAssignment
 
@@ -31,7 +31,7 @@ Esta entidade contém as propriedades usadas para atribuir um perfil de identida
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
+|id|String|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual o perfil de identidade visual está atribuído.|
 
 ## <a name="relationships"></a>Relações
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 
