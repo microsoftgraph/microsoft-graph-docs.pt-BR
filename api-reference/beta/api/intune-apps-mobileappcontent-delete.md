@@ -4,12 +4,12 @@ description: Exclui mobileAppContent.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b76b320de4e1f5332762e8e701c578e37209f2b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2a3b4355e46f7e4c074fca8cd2bb6dfb99b1a456
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935255"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974031"
 ---
 # <a name="delete-mobileappcontent"></a>Excluir mobileAppContent
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

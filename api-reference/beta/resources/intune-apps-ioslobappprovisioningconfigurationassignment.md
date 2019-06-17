@@ -4,12 +4,12 @@ description: Uma classe que contém as propriedades usadas para atribuição de 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46b4cb7d6d41cef9da9bbebbaefef5af1041c142
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9dcc0eebdc29c045820c4b2ddbc87f3b6c6dd234
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950428"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991174"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>tipo de recurso iosLobAppProvisioningConfigurationAssignment
 
@@ -31,7 +31,7 @@ Uma classe que contém as propriedades usadas para atribuição de grupo de um p
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 
 ## <a name="relationships"></a>Relações
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Criar um novo objeto mobileAppCategory.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aaf8fb298488b6de09fb875a9a87ab676a0c9cd3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d71c7f9452f65d40fea6b0e5141916560a0c9f01
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935276"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974164"
 ---
 # <a name="create-mobileappcategory"></a>Criar mobileAppCategory
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade.|
+|id|String|A chave da entidade.|
 |displayName|Cadeia de caracteres|O nome da categoria do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 
@@ -89,6 +89,7 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

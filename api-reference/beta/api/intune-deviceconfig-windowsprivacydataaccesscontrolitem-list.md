@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsPrivacyDataAcce
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7189885a84703315500a4ce4fc14a2367b4b31b5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 178e873d39fa682cb7cdc67696c42698f0f2691f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917440"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961410"
 ---
 # <a name="list-windowsprivacydataaccesscontrolitems"></a>Listar windowsPrivacyDataAccessControlItems
 
@@ -77,6 +77,7 @@ Content-Length: 356
   ]
 }
 ```
+
 
 
 

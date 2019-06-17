@@ -4,12 +4,12 @@ description: Estados possíveis associados a um token do Apple Volume Purchase P
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd568bdb4430f61a52577617876a682cc4f7ed99
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: faef244a196ae99a9ba82f4c5396db22b79be8b5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940236"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958512"
 ---
 # <a name="vpptokenstate-enum-type"></a>tipo de enumeração vppTokenState
 
@@ -27,6 +27,7 @@ Estados possíveis associados a um token do Apple Volume Purchase Program.
 |venceu|duas|O token expirou.|
 |Inválido|3D|O token é inválido.|
 |assignedToExternalMDM|quatro|O token é gerenciado por outro serviço MDM.|
+
 
 
 

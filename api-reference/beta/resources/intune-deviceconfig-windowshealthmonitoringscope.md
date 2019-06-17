@@ -4,12 +4,12 @@ description: Escopo de monitoramento de integridade do dispositivo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b72531bd71aafb58dd93e803982b00ff1f4653a2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d7287efb09c901e5adf2014774f5ef50752b1978
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944093"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994038"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>tipo de enumeração windowsHealthMonitoringScope
 
@@ -25,6 +25,7 @@ Escopo de monitoramento de integridade do dispositivo
 |indefinido|,0|Undefined|
 |healthMonitoring|1|Eventos básicos para o monitoramento de integridade do dispositivo Windows|
 |bootPerformance|duas|Eventos de desempenho de inicialização|
+
 
 
 

@@ -4,12 +4,12 @@ description: Entidade que representa uma intenção de aplicar configurações a
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 976a13bb8ac542e67ebdd0422669cd866cc70af6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3b840a8865545080370c5bfc8c0471f0137c746e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943438"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964070"
 ---
 # <a name="devicemanagementintent-resource-type"></a>tipo de recurso deviceManagementIntent
 
@@ -30,16 +30,18 @@ Entidade que representa uma intenção de aplicar configurações a um dispositi
 |[ação updateSettings](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|Nenhuma|Ainda não documentado|
 |[ação migrateToTemplate](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|Nenhuma|Ainda não documentado|
 |[atribuir ação](../api/intune-deviceintent-devicemanagementintent-assign.md)|Nenhuma|Ainda não documentado|
+|[função compare](../api/intune-deviceintent-devicemanagementintent-compare.md)|coleção [deviceManagementSettingComparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID de intenção|
 |displayName|String|O nome de exibição fornecido pelo usuário|
-|description|String|Descrição fornecida pelo usuário|
+|descrição|String|Descrição fornecida pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|Cadeia de caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
+|templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -69,9 +71,13 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String",
   "isAssigned": true,
   "lastModifiedDateTime": "String (timestamp)",
-  "templateId": "String"
+  "templateId": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
+
 
 
 

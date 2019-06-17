@@ -4,12 +4,12 @@ description: Entidade que representa o resumo de estado do dispositivo para uma 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d9e0d8af7992248114364d7bdf4c2c34d2c715b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72ba65c7b23310a6fb3883bd72579ce838471f4f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943379"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964091"
 ---
 # <a name="devicemanagementintentdevicestatesummary-resource-type"></a>tipo de recurso deviceManagementIntentDeviceStateSummary
 
@@ -28,7 +28,7 @@ Entidade que representa o resumo de estado do dispositivo para uma intenção
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID|
+|id|String|A ID|
 |conflictCount|Int32|Número de dispositivos em conflito|
 |errorCount|Int32|Número de dispositivos com erro|
 |failedCount|Int32|Número de dispositivos com falha|
@@ -59,6 +59,7 @@ Veja a seguir uma representação JSON do recurso.
   "successCount": 1024
 }
 ```
+
 
 
 

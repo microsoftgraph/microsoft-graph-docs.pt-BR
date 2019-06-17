@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto mobileLobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 098c23473e1452bfaf9c45783340aae1cf64501a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 71ca4b489ee1ec9478f77a337e08b3730cc94c56
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935010"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973583"
 ---
 # <a name="get-mobilelobapp"></a>Acessar mobileLobApp
 
@@ -102,6 +102,7 @@ Content-Length: 1071
   }
 }
 ```
+
 
 
 

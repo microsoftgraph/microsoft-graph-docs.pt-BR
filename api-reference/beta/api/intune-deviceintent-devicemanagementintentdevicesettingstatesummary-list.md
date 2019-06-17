@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos deviceManagementIntent
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b051c2c83561f6acb7aa5977f8e818b0e5c5654
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9e00f97d3217628eaf948ebb60d6a973cc9a8cce
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916222"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960311"
 ---
 # <a name="list-devicemanagementintentdevicesettingstatesummaries"></a>Listar deviceManagementIntentDeviceSettingStateSummaries
 
@@ -80,6 +80,7 @@ Content-Length: 398
   ]
 }
 ```
+
 
 
 

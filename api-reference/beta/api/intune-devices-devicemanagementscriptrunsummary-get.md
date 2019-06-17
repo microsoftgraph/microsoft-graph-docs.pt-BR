@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceManagementScri
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4e3a0718bf62155952d1d3e10357c8cd6144dfc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fc779f1d0b2384a757356e043f762073cebfe4d1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909810"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958799"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a>Obter deviceManagementScriptRunSummary
 
@@ -78,6 +78,7 @@ Content-Length: 259
   }
 }
 ```
+
 
 
 

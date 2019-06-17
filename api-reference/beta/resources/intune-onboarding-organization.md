@@ -4,12 +4,12 @@ description: O recurso da organização representa uma instância de configuraç
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c587d5a15fa0161e10058eec4a2f8c6183a28a1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 46186451d55247c3a405df83955113cfcf05e143
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940152"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958624"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -30,7 +30,7 @@ O recurso da organização representa uma instância de configurações e recurs
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
+|id|String|O GUID do objeto.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Define autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Configuração do conector de certificado.|
 
@@ -61,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui deviceManagementIntentDeviceState.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9cd8e95cc71075b418fa8a3e868cfe1cdc714877
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ac0b25c93b91882a44f0abbadebea159cc38d7fe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916137"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960276"
 ---
 # <a name="delete-devicemanagementintentdevicestate"></a>Excluir deviceManagementIntentDeviceState
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

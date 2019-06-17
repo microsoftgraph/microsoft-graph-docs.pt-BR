@@ -4,12 +4,12 @@ description: Exclui notificationMessageTemplate.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c887c2c41d8e194b0f3bb195c77835081ea41a79
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0bbb5ccf9327cbf7a85bbee09d62bc3405814080
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900591"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963545"
 ---
 # <a name="delete-notificationmessagetemplate"></a>Excluir notificationMessageTemplate
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

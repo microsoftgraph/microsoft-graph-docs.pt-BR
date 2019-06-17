@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto cartToClassAssociation.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4961d3efeaabd6cee345b0cc23b99e4ff30f6dcd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6f382315d1932d275936be14071af7bf2025060c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928005"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968753"
 ---
 # <a name="update-carttoclassassociation"></a>Atualizar cartToClassAssociation
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [cartToC
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
-|description|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
+|descrição|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
 |deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivos a serem associados às classes.|
 |classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
 
@@ -110,6 +110,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

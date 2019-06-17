@@ -4,12 +4,12 @@ description: Entidade que representa o resumo de estado de configuração de dis
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20eb5e9ae2941d1762a7cad634c9e6f5b3f2c24e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 364dd6783b31f0d8423ac2825de424f2d5699b1e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943421"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964014"
 ---
 # <a name="devicemanagementintentdevicesettingstatesummary-resource-type"></a>tipo de recurso deviceManagementIntentDeviceSettingStateSummary
 
@@ -31,7 +31,7 @@ Entidade que representa o resumo de estado de configuração de dispositivo para
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID|
+|id|String|A ID|
 |settingName|Cadeia de caracteres|Nome de uma configuração|
 |compliantCount|Int32|Número de dispositivos em conformidade|
 |conflictCount|Int32|Número de dispositivos em conflito|
@@ -64,6 +64,7 @@ Veja a seguir uma representação JSON do recurso.
   "remediatedCount": 1024
 }
 ```
+
 
 
 

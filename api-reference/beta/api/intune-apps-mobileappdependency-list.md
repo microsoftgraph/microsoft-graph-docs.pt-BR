@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos mobileAppDependency.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4e2df040ec5a63d754d89d53c45432b1a37f74b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72daeb7c2726f084f34672e91d62fd233a43c0c1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935117"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973940"
 ---
 # <a name="list-mobileappdependencies"></a>Listar mobileAppDependencies
 
@@ -77,6 +77,7 @@ Content-Length: 317
   ]
 }
 ```
+
 
 
 

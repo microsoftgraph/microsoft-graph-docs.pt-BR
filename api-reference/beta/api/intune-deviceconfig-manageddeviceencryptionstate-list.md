@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos managedDeviceEncryptio
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe0c48e0bb64998d5df30e932798d4b935f48513
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9b677588491fe031c141f547e4be4cc69fdeba2d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922168"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976425"
 ---
 # <a name="list-manageddeviceencryptionstates"></a>Listar managedDeviceEncryptionStates
 
@@ -89,6 +89,7 @@ Content-Length: 812
   ]
 }
 ```
+
 
 
 

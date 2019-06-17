@@ -4,12 +4,12 @@ description: Valores possíveis para o estado de instalação.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20bc5fa16b13506a9cd436e1df13394cc7197b4d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 26665b5aee40f14ffa6a4d194e706061a35a6bdb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949350"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964343"
 ---
 # <a name="installstate-enum-type"></a>tipo de enumeração InstallState
 
@@ -28,6 +28,7 @@ Valores possíveis para o estado de instalação.
 |não instalado|3D|Não instalado.|
 |uninstallFailed|quatro|Falha na desinstalação.|
 |desconhecido|0,5|Unknown.|
+
 
 
 

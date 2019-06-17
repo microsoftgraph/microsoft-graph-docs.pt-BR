@@ -4,18 +4,18 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: bee3080acefe6c6e2377f153dd6c58fc05850700
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0741955dd2d939c70417e27842dd1964e003a146
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949195"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965848"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 - [Consentimento do administrador](intune-devices-adminconsent.md)
 - [Estado de autorização de administrador](intune-devices-adminconsentstate.md)
@@ -55,6 +55,7 @@ ms.locfileid: "33949195"
 - [Instância de configuração booleana de gerenciamento de dispositivos](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [Definição de configuração da coleção de gerenciamento de dispositivos](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [Instância de configuração da coleção de gerenciamento de dispositivos](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
+- [Resultado da comparação de gerenciamento de dispositivos](intune-deviceintent-devicemanagementcomparisonresult.md)
 - [Definição de configuração complexa de gerenciamento de dispositivos](intune-deviceintent-devicemanagementcomplexsettingdefinition.md)
 - [Instância de configuração complexa de gerenciamento de dispositivos](intune-deviceintent-devicemanagementcomplexsettinginstance.md)
 - [Restrição de gerenciamento de dispositivos](intune-deviceintent-devicemanagementconstraint.md)
@@ -79,6 +80,7 @@ ms.locfileid: "33949195"
 - [Estado de usuário de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptuserstate.md)
 - [Restrição booleana de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [Categoria de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingcategory.md)
+- [Comparação de configurações de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [Definição de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingdefinition.md)
 - [Dependência de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingdependency.md)
 - [Instância de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettinginstance.md)
@@ -91,6 +93,7 @@ ms.locfileid: "33949195"
 - [Assinaturas de gerenciamento de dispositivo](intune-devices-devicemanagementsubscriptions.md)
 - [Modelo do gerenciamento de dispositivos](intune-deviceintent-devicemanagementtemplate.md)
 - [Categoria de configuração de modelo do gerenciamento de dispositivos](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [Tipo de modelo de gerenciamento de dispositivos](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Detalhes de erros de solução de problemas de gerenciamento de dispositivo](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [Recursos de erros de solução de problemas de gerenciamento de dispositivo](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [Evento de solução de problemas com o gerenciamento de dispositivos](intune-troubleshooting-devicemanagementtroubleshootingevent.md)

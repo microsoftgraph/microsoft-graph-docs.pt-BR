@@ -4,12 +4,12 @@ description: Exclui androidDeviceOwnerGeneralDeviceConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6e7da058fae098f4d1bbb05ff6931df062b8d8b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 86a8f617bb815aa8c6f519fbee48766d8a5ed082
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933302"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971385"
 ---
 # <a name="delete-androiddeviceownergeneraldeviceconfiguration"></a>Excluir androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

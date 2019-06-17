@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos deviceManagementTempla
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51e0cb7e40fc4442eb7bb0e696ae4192f446ecea
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1a9933a1a8f2be95c7593ae599550d46c215db52
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915906"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959702"
 ---
 # <a name="list-devicemanagementtemplates"></a>Listar deviceManagementTemplates
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 342
+Content-Length: 452
 
 {
   "value": [
@@ -74,11 +74,14 @@ Content-Length: 342
       "description": "Description value",
       "versionInfo": "Version Info value",
       "isDeprecated": true,
-      "intentCount": 11
+      "intentCount": 11,
+      "templateType": "specializedDevices",
+      "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
     }
   ]
 }
 ```
+
 
 
 

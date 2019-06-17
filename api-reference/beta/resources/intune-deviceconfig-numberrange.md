@@ -4,12 +4,12 @@ description: Definição do intervalo de números.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8912b6a0cba8c1265060a53a8f32d9455b3bba39
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 772ffc59bc9ac4848b6b34eee8c62f8006468784
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951028"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958715"
 ---
 # <a name="numberrange-resource-type"></a>tipo de recurso numberRange
 
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "upperNumber": 1024
 }
 ```
+
 
 
 

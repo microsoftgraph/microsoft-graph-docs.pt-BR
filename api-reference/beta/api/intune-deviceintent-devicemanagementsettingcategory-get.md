@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceManagementSett
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e94cd39c175ba8a9ce58e4e86c22f9e96fb9dc2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b854299ed2d34dac3af04e40cab2aac5ff331310
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917019"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959982"
 ---
 # <a name="get-devicemanagementsettingcategory"></a>Obter deviceManagementSettingCategory
 
@@ -75,6 +75,7 @@ Content-Length: 187
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Criar um novo objeto dataSharingConsent.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83928d0ee472d4c902ac7df75a17ab1cebe66ff3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0748a104a9976f691f0f2f84e542ef37f57edbac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910175"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959254"
 ---
 # <a name="create-datasharingconsent"></a>Criar dataSharingConsent
 
@@ -50,13 +50,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar dataShar
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
-|objectdisplayname|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|Cadeia de caracteres|O TermsUrl para o consentimento de compartilhamento de dados|
+|id|String|A ID de consentimento de compartilhamento de dados|
+|objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
 |granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|Cadeia de caracteres|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|Cadeia de caracteres|O UserId do usuário que concedeu o consentimento para esta conta|
+|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

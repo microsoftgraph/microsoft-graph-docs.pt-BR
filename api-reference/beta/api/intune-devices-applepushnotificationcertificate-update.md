@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto applePushNotificationCertifi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9446dafefaa98a421bcc11148dc6f651a6806eae
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0038de8c351ff0a26443987d05b5e92025fef316
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910557"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959366"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Atualizar applePushNotificationCertificate
 
@@ -50,13 +50,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [applePu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do certificado.|
-|appleIdentifier|Cadeia de caracteres|Id da Apple da conta usada para criar o certificado de push do MDM.|
+|id|String|O identificador exclusivo do certificado.|
+|appleIdentifier|String|Id da Apple da conta usada para criar o certificado de push do MDM.|
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
-|certificateUploadStatus|Cadeia de caracteres|O status do carregamento do certificado.|
-|certificateUploadFailureReason|Cadeia de caracteres|O motivo da falha no carregamento do certificado.|
+|certificateUploadStatus|String|O status do carregamento do certificado.|
+|certificateUploadFailureReason|String|O motivo da falha no carregamento do certificado.|
 |certificado|String|Ainda não documentado|
 
 
@@ -103,6 +103,7 @@ Content-Length: 529
   "certificate": "Certificate value"
 }
 ```
+
 
 
 

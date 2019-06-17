@@ -4,12 +4,12 @@ description: Marca de escopo de função
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f44deb124b2347aa2d0300c9fd143b7dca21d74c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 54aa59e99a9697924512da0072e7b4e05e4fa12a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939949"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993532"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso roleScopeTag
 
@@ -27,16 +27,19 @@ Marca de escopo de função
 |[Criar roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Criar um novo objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) .|
 |[Excluir roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|Nenhum|Exclui [roleScopeTag](../resources/intune-rbac-rolescopetag.md).|
 |[Atualizar roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Atualiza as propriedades de um objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) .|
+|[atribuir ação](../api/intune-rbac-rolescopetag-assign.md)|coleção [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
-|description|String|Descrição da marca de escopo da função.|
+|descrição|String|Descrição da marca de escopo da função.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+|Relação|Tipo|Descrição|
+|:---|:---|:---|
+|assignments|coleção [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|A lista de atribuições para esta marca de escopo de função.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -54,6 +57,7 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String"
 }
 ```
+
 
 
 

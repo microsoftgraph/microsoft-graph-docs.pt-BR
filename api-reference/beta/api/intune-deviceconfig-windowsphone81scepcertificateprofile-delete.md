@@ -4,12 +4,12 @@ description: Exclui windowsPhone81SCEPCertificateProfile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e91042515a6a901238c96c2211d69194a5a0ef1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bb09f0ba63ff11437911cdc7c14c22c08a7a2820
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917678"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961599"
 ---
 # <a name="delete-windowsphone81scepcertificateprofile"></a>Excluir windowsPhone81SCEPCertificateProfile
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

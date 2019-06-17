@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto windows10MobileCompliancePo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5148c0a8fe3d020944c4cb7ea23c1379a1501b91
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5fe8ce01c5300c63b7bf43002b7dac22b9febaa5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918603"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962530"
 ---
 # <a name="get-windows10mobilecompliancepolicy"></a>Get windows10MobileCompliancePolicy
 
@@ -107,6 +107,7 @@ Content-Length: 1419
   }
 }
 ```
+
 
 
 

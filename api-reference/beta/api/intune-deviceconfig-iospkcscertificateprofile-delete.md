@@ -4,12 +4,12 @@ description: Exclui iosPkcsCertificateProfile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4946b268bba88e615feb8248fc3c95714cb8876
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2a778c9afb4d13adf5afb89416598e133d55b3b5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923409"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963755"
 ---
 # <a name="delete-iospkcscertificateprofile"></a>Excluir iosPkcsCertificateProfile
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

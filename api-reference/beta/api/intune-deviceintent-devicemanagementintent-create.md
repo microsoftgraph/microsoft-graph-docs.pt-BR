@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceManagementIntent.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4f3fa68dada15f80592ae771f0cd1854b7e4b62
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 61a485a14b5054d0a31f81c4be833dcd8dd7acd2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916369"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960584"
 ---
 # <a name="create-devicemanagementintent"></a>Criar deviceManagementIntent
 
@@ -52,10 +52,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID de intenção|
 |displayName|String|O nome de exibição fornecido pelo usuário|
-|description|String|Descrição fornecida pelo usuário|
+|descrição|String|Descrição fornecida pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|Cadeia de caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
+|templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
@@ -69,14 +70,17 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents
 Content-type: application/json
-Content-length: 204
+Content-length: 266
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
   "displayName": "Display Name value",
   "description": "Description value",
   "isAssigned": true,
-  "templateId": "Template Id value"
+  "templateId": "Template Id value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -85,7 +89,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 379
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
@@ -94,9 +98,13 @@ Content-Length: 317
   "description": "Description value",
   "isAssigned": true,
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "templateId": "Template Id value"
+  "templateId": "Template Id value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
+
 
 
 
