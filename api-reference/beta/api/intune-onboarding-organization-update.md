@@ -4,31 +4,31 @@ description: Atualizar as propriedades de um objeto organização.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca25ac972a52922897762e8337db598857844483
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 89afccfa33761747c779bad14230dd953965a4e5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899876"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980716"
 ---
-# <a name="update-organization"></a><span data-ttu-id="c3cdf-103">Atualize a organização</span><span class="sxs-lookup"><span data-stu-id="c3cdf-103">Update organization</span></span>
+# <a name="update-organization"></a><span data-ttu-id="5dfd2-103">Atualize a organização</span><span class="sxs-lookup"><span data-stu-id="5dfd2-103">Update organization</span></span>
 
-> <span data-ttu-id="c3cdf-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5dfd2-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c3cdf-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5dfd2-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c3cdf-106">Atualizar as propriedades de um objeto [organização](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="c3cdf-106">Update the properties of a [organization](../resources/intune-onboarding-organization.md) object.</span></span>
+<span data-ttu-id="5dfd2-106">Atualizar as propriedades de um objeto [organização](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="5dfd2-106">Update the properties of a [organization](../resources/intune-onboarding-organization.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="c3cdf-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="c3cdf-107">Prerequisites</span></span>
-<span data-ttu-id="c3cdf-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c3cdf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5dfd2-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5dfd2-107">Prerequisites</span></span>
+<span data-ttu-id="5dfd2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5dfd2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c3cdf-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c3cdf-110">Permission type</span></span>|<span data-ttu-id="c3cdf-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="c3cdf-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5dfd2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5dfd2-110">Permission type</span></span>|<span data-ttu-id="5dfd2-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="5dfd2-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c3cdf-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c3cdf-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c3cdf-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3cdf-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="c3cdf-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c3cdf-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c3cdf-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-115">Not supported.</span></span>|
-|<span data-ttu-id="c3cdf-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c3cdf-116">Application</span></span>|<span data-ttu-id="c3cdf-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-117">Not supported.</span></span>|
+|<span data-ttu-id="5dfd2-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5dfd2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5dfd2-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5dfd2-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="5dfd2-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5dfd2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5dfd2-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-115">Not supported.</span></span>|
+|<span data-ttu-id="5dfd2-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5dfd2-116">Application</span></span>|<span data-ttu-id="5dfd2-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c3cdf-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c3cdf-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5dfd2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5dfd2-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,32 +37,32 @@ ms.locfileid: "33899876"
 PATCH /organization/{organizationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c3cdf-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c3cdf-119">Request headers</span></span>
-|<span data-ttu-id="c3cdf-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c3cdf-120">Header</span></span>|<span data-ttu-id="c3cdf-121">Valor</span><span class="sxs-lookup"><span data-stu-id="c3cdf-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5dfd2-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5dfd2-119">Request headers</span></span>
+|<span data-ttu-id="5dfd2-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5dfd2-120">Header</span></span>|<span data-ttu-id="5dfd2-121">Valor</span><span class="sxs-lookup"><span data-stu-id="5dfd2-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="c3cdf-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="c3cdf-122">Authorization</span></span>|<span data-ttu-id="c3cdf-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="c3cdf-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="c3cdf-124">Accept</span></span>|<span data-ttu-id="c3cdf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c3cdf-125">application/json</span></span>|
+|<span data-ttu-id="5dfd2-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="5dfd2-122">Authorization</span></span>|<span data-ttu-id="5dfd2-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5dfd2-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="5dfd2-124">Accept</span></span>|<span data-ttu-id="5dfd2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5dfd2-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c3cdf-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c3cdf-126">Request body</span></span>
-<span data-ttu-id="c3cdf-127">No corpo da solicitação, forneça uma representação JSON do objeto [organization](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="c3cdf-127">In the request body, supply a JSON representation for the [organization](../resources/intune-onboarding-organization.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5dfd2-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5dfd2-126">Request body</span></span>
+<span data-ttu-id="5dfd2-127">No corpo da solicitação, forneça uma representação JSON do objeto [organization](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="5dfd2-127">In the request body, supply a JSON representation for the [organization](../resources/intune-onboarding-organization.md) object.</span></span>
 
-<span data-ttu-id="c3cdf-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [organization](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="c3cdf-128">The following table shows the properties that are required when you create the [organization](../resources/intune-onboarding-organization.md).</span></span>
+<span data-ttu-id="5dfd2-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [organization](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="5dfd2-128">The following table shows the properties that are required when you create the [organization](../resources/intune-onboarding-organization.md).</span></span>
 
-|<span data-ttu-id="c3cdf-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c3cdf-129">Property</span></span>|<span data-ttu-id="c3cdf-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="c3cdf-130">Type</span></span>|<span data-ttu-id="c3cdf-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="c3cdf-131">Description</span></span>|
+|<span data-ttu-id="5dfd2-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5dfd2-129">Property</span></span>|<span data-ttu-id="5dfd2-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="5dfd2-130">Type</span></span>|<span data-ttu-id="5dfd2-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="5dfd2-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c3cdf-132">id</span><span class="sxs-lookup"><span data-stu-id="c3cdf-132">id</span></span>|<span data-ttu-id="c3cdf-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c3cdf-133">String</span></span>|<span data-ttu-id="c3cdf-134">O GUID do objeto.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-134">The GUID for the object.</span></span>|
-|<span data-ttu-id="c3cdf-135">mobileDeviceManagementAuthority</span><span class="sxs-lookup"><span data-stu-id="c3cdf-135">mobileDeviceManagementAuthority</span></span>|[<span data-ttu-id="c3cdf-136">mdmAuthority</span><span class="sxs-lookup"><span data-stu-id="c3cdf-136">mdmAuthority</span></span>](../resources/intune-onboarding-mdmauthority.md)|<span data-ttu-id="c3cdf-137">Define autoridade de gerenciamento de dispositivo móvel.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-137">Mobile device management authority.</span></span> <span data-ttu-id="c3cdf-138">Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-138">Possible values are: `unknown`, `intune`, `sccm`, `office365`.</span></span>|
-|<span data-ttu-id="c3cdf-139">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="c3cdf-139">certificateConnectorSetting</span></span>|[<span data-ttu-id="c3cdf-140">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="c3cdf-140">certificateConnectorSetting</span></span>](../resources/intune-onboarding-certificateconnectorsetting.md)|<span data-ttu-id="c3cdf-141">Configuração do conector de certificado.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-141">Certificate connector setting.</span></span>|
+|<span data-ttu-id="5dfd2-132">id</span><span class="sxs-lookup"><span data-stu-id="5dfd2-132">id</span></span>|<span data-ttu-id="5dfd2-133">String</span><span class="sxs-lookup"><span data-stu-id="5dfd2-133">String</span></span>|<span data-ttu-id="5dfd2-134">O GUID do objeto.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-134">The GUID for the object.</span></span>|
+|<span data-ttu-id="5dfd2-135">mobileDeviceManagementAuthority</span><span class="sxs-lookup"><span data-stu-id="5dfd2-135">mobileDeviceManagementAuthority</span></span>|[<span data-ttu-id="5dfd2-136">mdmAuthority</span><span class="sxs-lookup"><span data-stu-id="5dfd2-136">mdmAuthority</span></span>](../resources/intune-onboarding-mdmauthority.md)|<span data-ttu-id="5dfd2-137">Define autoridade de gerenciamento de dispositivo móvel.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-137">Mobile device management authority.</span></span> <span data-ttu-id="5dfd2-138">Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-138">Possible values are: `unknown`, `intune`, `sccm`, `office365`.</span></span>|
+|<span data-ttu-id="5dfd2-139">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="5dfd2-139">certificateConnectorSetting</span></span>|[<span data-ttu-id="5dfd2-140">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="5dfd2-140">certificateConnectorSetting</span></span>](../resources/intune-onboarding-certificateconnectorsetting.md)|<span data-ttu-id="5dfd2-141">Configuração do conector de certificado.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-141">Certificate connector setting.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="c3cdf-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="c3cdf-142">Response</span></span>
-<span data-ttu-id="c3cdf-143">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [organization](../resources/intune-onboarding-organization.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-143">If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune-onboarding-organization.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5dfd2-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="5dfd2-142">Response</span></span>
+<span data-ttu-id="5dfd2-143">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [organization](../resources/intune-onboarding-organization.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-143">If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune-onboarding-organization.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c3cdf-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c3cdf-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5dfd2-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5dfd2-144">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c3cdf-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c3cdf-145">Request</span></span>
-<span data-ttu-id="c3cdf-146">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-146">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5dfd2-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5dfd2-145">Request</span></span>
+<span data-ttu-id="5dfd2-146">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-146">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 492
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c3cdf-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="c3cdf-147">Response</span></span>
-<span data-ttu-id="c3cdf-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c3cdf-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5dfd2-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="5dfd2-147">Response</span></span>
+<span data-ttu-id="5dfd2-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5dfd2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -105,6 +105,7 @@ Content-Length: 541
   }
 }
 ```
+
 
 
 

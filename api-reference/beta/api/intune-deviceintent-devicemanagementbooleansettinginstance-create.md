@@ -4,31 +4,31 @@ description: Criar um novo objeto deviceManagementBooleanSettingInstance.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 961a9f7bcca3b9ca97024bfd10d5e6d536be8b29
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4436acd901f595fb9ab57c45f3a87d14181cd20c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916879"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960927"
 ---
-# <a name="create-devicemanagementbooleansettinginstance"></a><span data-ttu-id="3bac8-103">Criar deviceManagementBooleanSettingInstance</span><span class="sxs-lookup"><span data-stu-id="3bac8-103">Create deviceManagementBooleanSettingInstance</span></span>
+# <a name="create-devicemanagementbooleansettinginstance"></a><span data-ttu-id="d1cde-103">Criar deviceManagementBooleanSettingInstance</span><span class="sxs-lookup"><span data-stu-id="d1cde-103">Create deviceManagementBooleanSettingInstance</span></span>
 
-> <span data-ttu-id="3bac8-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3bac8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="d1cde-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d1cde-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3bac8-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3bac8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d1cde-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d1cde-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3bac8-106">Criar um novo objeto [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) .</span><span class="sxs-lookup"><span data-stu-id="3bac8-106">Create a new [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object.</span></span>
+<span data-ttu-id="d1cde-106">Criar um novo objeto [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) .</span><span class="sxs-lookup"><span data-stu-id="d1cde-106">Create a new [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="3bac8-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="3bac8-107">Prerequisites</span></span>
-<span data-ttu-id="3bac8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3bac8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d1cde-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d1cde-107">Prerequisites</span></span>
+<span data-ttu-id="d1cde-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d1cde-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3bac8-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3bac8-110">Permission type</span></span>|<span data-ttu-id="3bac8-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="3bac8-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d1cde-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d1cde-110">Permission type</span></span>|<span data-ttu-id="d1cde-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="d1cde-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3bac8-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3bac8-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3bac8-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3bac8-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="3bac8-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3bac8-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3bac8-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3bac8-115">Not supported.</span></span>|
-|<span data-ttu-id="3bac8-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3bac8-116">Application</span></span>|<span data-ttu-id="3bac8-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3bac8-117">Not supported.</span></span>|
+|<span data-ttu-id="d1cde-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d1cde-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d1cde-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d1cde-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="d1cde-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d1cde-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d1cde-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d1cde-115">Not supported.</span></span>|
+|<span data-ttu-id="d1cde-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d1cde-116">Application</span></span>|<span data-ttu-id="d1cde-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d1cde-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3bac8-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3bac8-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d1cde-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d1cde-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,33 +40,33 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMana
 POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceManagementTemplateSettingCategoryId}/recommendedSettings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3bac8-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3bac8-119">Request headers</span></span>
-|<span data-ttu-id="3bac8-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3bac8-120">Header</span></span>|<span data-ttu-id="3bac8-121">Valor</span><span class="sxs-lookup"><span data-stu-id="3bac8-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d1cde-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d1cde-119">Request headers</span></span>
+|<span data-ttu-id="d1cde-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d1cde-120">Header</span></span>|<span data-ttu-id="d1cde-121">Valor</span><span class="sxs-lookup"><span data-stu-id="d1cde-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3bac8-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="3bac8-122">Authorization</span></span>|<span data-ttu-id="3bac8-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3bac8-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3bac8-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="3bac8-124">Accept</span></span>|<span data-ttu-id="3bac8-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3bac8-125">application/json</span></span>|
+|<span data-ttu-id="d1cde-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="d1cde-122">Authorization</span></span>|<span data-ttu-id="d1cde-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d1cde-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d1cde-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="d1cde-124">Accept</span></span>|<span data-ttu-id="d1cde-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d1cde-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3bac8-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3bac8-126">Request body</span></span>
-<span data-ttu-id="3bac8-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementBooleanSettingInstance.</span><span class="sxs-lookup"><span data-stu-id="3bac8-127">In the request body, supply a JSON representation for the deviceManagementBooleanSettingInstance object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d1cde-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d1cde-126">Request body</span></span>
+<span data-ttu-id="d1cde-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementBooleanSettingInstance.</span><span class="sxs-lookup"><span data-stu-id="d1cde-127">In the request body, supply a JSON representation for the deviceManagementBooleanSettingInstance object.</span></span>
 
-<span data-ttu-id="3bac8-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementBooleanSettingInstance.</span><span class="sxs-lookup"><span data-stu-id="3bac8-128">The following table shows the properties that are required when you create the deviceManagementBooleanSettingInstance.</span></span>
+<span data-ttu-id="d1cde-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementBooleanSettingInstance.</span><span class="sxs-lookup"><span data-stu-id="d1cde-128">The following table shows the properties that are required when you create the deviceManagementBooleanSettingInstance.</span></span>
 
-|<span data-ttu-id="3bac8-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3bac8-129">Property</span></span>|<span data-ttu-id="3bac8-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="3bac8-130">Type</span></span>|<span data-ttu-id="3bac8-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="3bac8-131">Description</span></span>|
+|<span data-ttu-id="d1cde-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d1cde-129">Property</span></span>|<span data-ttu-id="d1cde-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="d1cde-130">Type</span></span>|<span data-ttu-id="d1cde-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="d1cde-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3bac8-132">id</span><span class="sxs-lookup"><span data-stu-id="3bac8-132">id</span></span>|<span data-ttu-id="3bac8-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3bac8-133">String</span></span>|<span data-ttu-id="3bac8-134">A ID da instância de configuração herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="3bac8-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="3bac8-135">DefinitionId</span><span class="sxs-lookup"><span data-stu-id="3bac8-135">definitionId</span></span>|<span data-ttu-id="3bac8-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3bac8-136">String</span></span>|<span data-ttu-id="3bac8-137">A ID da definição de configuração dessa instância herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="3bac8-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="3bac8-138">valueJson</span><span class="sxs-lookup"><span data-stu-id="3bac8-138">valueJson</span></span>|<span data-ttu-id="3bac8-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3bac8-139">String</span></span>|<span data-ttu-id="3bac8-140">Representação JSON do valor herdado de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="3bac8-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="3bac8-141">value</span><span class="sxs-lookup"><span data-stu-id="3bac8-141">value</span></span>|<span data-ttu-id="3bac8-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="3bac8-142">Boolean</span></span>|<span data-ttu-id="3bac8-143">O valor booliano</span><span class="sxs-lookup"><span data-stu-id="3bac8-143">The boolean value</span></span>|
+|<span data-ttu-id="d1cde-132">id</span><span class="sxs-lookup"><span data-stu-id="d1cde-132">id</span></span>|<span data-ttu-id="d1cde-133">String</span><span class="sxs-lookup"><span data-stu-id="d1cde-133">String</span></span>|<span data-ttu-id="d1cde-134">A ID da instância de configuração herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="d1cde-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="d1cde-135">DefinitionId</span><span class="sxs-lookup"><span data-stu-id="d1cde-135">definitionId</span></span>|<span data-ttu-id="d1cde-136">String</span><span class="sxs-lookup"><span data-stu-id="d1cde-136">String</span></span>|<span data-ttu-id="d1cde-137">A ID da definição de configuração dessa instância herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="d1cde-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="d1cde-138">valueJson</span><span class="sxs-lookup"><span data-stu-id="d1cde-138">valueJson</span></span>|<span data-ttu-id="d1cde-139">String</span><span class="sxs-lookup"><span data-stu-id="d1cde-139">String</span></span>|<span data-ttu-id="d1cde-140">Representação JSON do valor herdado de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="d1cde-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="d1cde-141">value</span><span class="sxs-lookup"><span data-stu-id="d1cde-141">value</span></span>|<span data-ttu-id="d1cde-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="d1cde-142">Boolean</span></span>|<span data-ttu-id="d1cde-143">O valor booliano</span><span class="sxs-lookup"><span data-stu-id="d1cde-143">The boolean value</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="3bac8-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="3bac8-144">Response</span></span>
-<span data-ttu-id="3bac8-145">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3bac8-145">If successful, this method returns a `201 Created` response code and a [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d1cde-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1cde-144">Response</span></span>
+<span data-ttu-id="d1cde-145">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d1cde-145">If successful, this method returns a `201 Created` response code and a [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3bac8-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3bac8-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d1cde-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d1cde-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3bac8-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3bac8-147">Request</span></span>
-<span data-ttu-id="3bac8-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3bac8-148">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d1cde-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d1cde-147">Request</span></span>
+<span data-ttu-id="d1cde-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d1cde-148">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/settings
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 176
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="3bac8-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="3bac8-149">Response</span></span>
-<span data-ttu-id="3bac8-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3bac8-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d1cde-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1cde-149">Response</span></span>
+<span data-ttu-id="d1cde-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d1cde-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -95,6 +95,7 @@ Content-Length: 225
   "value": true
 }
 ```
+
 
 
 

@@ -4,28 +4,29 @@ description: Valores possíveis para LocalSecurityOptionsFormatAndEjectOfRemovab
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0ddff4e6ccce6812f3841660b7022041dd94210
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5f33808fd5b1a7ce929b3e22b98cf1754c21fded
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946256"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989361"
 ---
-# <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a><span data-ttu-id="dc01d-103">tipo de enumeração localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType</span><span class="sxs-lookup"><span data-stu-id="dc01d-103">localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type</span></span>
+# <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a><span data-ttu-id="0f8fc-103">tipo de enumeração localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType</span><span class="sxs-lookup"><span data-stu-id="0f8fc-103">localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type</span></span>
 
-> <span data-ttu-id="dc01d-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="dc01d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0f8fc-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="0f8fc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dc01d-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="dc01d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0f8fc-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="0f8fc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dc01d-106">Valores possíveis para LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser</span><span class="sxs-lookup"><span data-stu-id="dc01d-106">Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser</span></span>
+<span data-ttu-id="0f8fc-106">Valores possíveis para LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser</span><span class="sxs-lookup"><span data-stu-id="0f8fc-106">Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser</span></span>
 
-## <a name="members"></a><span data-ttu-id="dc01d-107">Membros</span><span class="sxs-lookup"><span data-stu-id="dc01d-107">Members</span></span>
-|<span data-ttu-id="dc01d-108">Membro</span><span class="sxs-lookup"><span data-stu-id="dc01d-108">Member</span></span>|<span data-ttu-id="dc01d-109">Valor</span><span class="sxs-lookup"><span data-stu-id="dc01d-109">Value</span></span>|<span data-ttu-id="dc01d-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc01d-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="0f8fc-107">Membros</span><span class="sxs-lookup"><span data-stu-id="0f8fc-107">Members</span></span>
+|<span data-ttu-id="0f8fc-108">Membro</span><span class="sxs-lookup"><span data-stu-id="0f8fc-108">Member</span></span>|<span data-ttu-id="0f8fc-109">Valor</span><span class="sxs-lookup"><span data-stu-id="0f8fc-109">Value</span></span>|<span data-ttu-id="0f8fc-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="0f8fc-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dc01d-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="dc01d-111">notConfigured</span></span>|<span data-ttu-id="dc01d-112">,0</span><span class="sxs-lookup"><span data-stu-id="dc01d-112">0</span></span>|<span data-ttu-id="dc01d-113">Não configurado</span><span class="sxs-lookup"><span data-stu-id="dc01d-113">Not Configured</span></span>|
-|<span data-ttu-id="dc01d-114">grupos</span><span class="sxs-lookup"><span data-stu-id="dc01d-114">administrators</span></span>|<span data-ttu-id="dc01d-115">1</span><span class="sxs-lookup"><span data-stu-id="dc01d-115">1</span></span>|<span data-ttu-id="dc01d-116">Administradores</span><span class="sxs-lookup"><span data-stu-id="dc01d-116">Administrators</span></span>|
-|<span data-ttu-id="dc01d-117">administratorsAndPowerUsers</span><span class="sxs-lookup"><span data-stu-id="dc01d-117">administratorsAndPowerUsers</span></span>|<span data-ttu-id="dc01d-118">duas</span><span class="sxs-lookup"><span data-stu-id="dc01d-118">2</span></span>|<span data-ttu-id="dc01d-119">Administradores e usuários avançados</span><span class="sxs-lookup"><span data-stu-id="dc01d-119">Administrators and Power Users</span></span>|
-|<span data-ttu-id="dc01d-120">administratorsAndInteractiveUsers</span><span class="sxs-lookup"><span data-stu-id="dc01d-120">administratorsAndInteractiveUsers</span></span>|<span data-ttu-id="dc01d-121">3D</span><span class="sxs-lookup"><span data-stu-id="dc01d-121">3</span></span>|<span data-ttu-id="dc01d-122">Administradores e usuários interativos</span><span class="sxs-lookup"><span data-stu-id="dc01d-122">Administrators and Interactive Users</span></span> |
+|<span data-ttu-id="0f8fc-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="0f8fc-111">notConfigured</span></span>|<span data-ttu-id="0f8fc-112">,0</span><span class="sxs-lookup"><span data-stu-id="0f8fc-112">0</span></span>|<span data-ttu-id="0f8fc-113">Não configurado</span><span class="sxs-lookup"><span data-stu-id="0f8fc-113">Not Configured</span></span>|
+|<span data-ttu-id="0f8fc-114">grupos</span><span class="sxs-lookup"><span data-stu-id="0f8fc-114">administrators</span></span>|<span data-ttu-id="0f8fc-115">1</span><span class="sxs-lookup"><span data-stu-id="0f8fc-115">1</span></span>|<span data-ttu-id="0f8fc-116">Administradores</span><span class="sxs-lookup"><span data-stu-id="0f8fc-116">Administrators</span></span>|
+|<span data-ttu-id="0f8fc-117">administratorsAndPowerUsers</span><span class="sxs-lookup"><span data-stu-id="0f8fc-117">administratorsAndPowerUsers</span></span>|<span data-ttu-id="0f8fc-118">duas</span><span class="sxs-lookup"><span data-stu-id="0f8fc-118">2</span></span>|<span data-ttu-id="0f8fc-119">Administradores e usuários avançados</span><span class="sxs-lookup"><span data-stu-id="0f8fc-119">Administrators and Power Users</span></span>|
+|<span data-ttu-id="0f8fc-120">administratorsAndInteractiveUsers</span><span class="sxs-lookup"><span data-stu-id="0f8fc-120">administratorsAndInteractiveUsers</span></span>|<span data-ttu-id="0f8fc-121">3D</span><span class="sxs-lookup"><span data-stu-id="0f8fc-121">3</span></span>|<span data-ttu-id="0f8fc-122">Administradores e usuários interativos</span><span class="sxs-lookup"><span data-stu-id="0f8fc-122">Administrators and Interactive Users</span></span> |
+
 
 
 
