@@ -4,31 +4,31 @@ description: Atualizar as propriedades de um objeto onPremisesConditionalAccessS
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3742c2e328ff2401dfb0d0b4d4d770a0c97675db
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3060bf5085f5fc73b73e3571be1bc4cc545bede8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899939"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980709"
 ---
-# <a name="update-onpremisesconditionalaccesssettings"></a><span data-ttu-id="6e38d-103">Atualizar onPremisesConditionalAccessSettings</span><span class="sxs-lookup"><span data-stu-id="6e38d-103">Update onPremisesConditionalAccessSettings</span></span>
+# <a name="update-onpremisesconditionalaccesssettings"></a><span data-ttu-id="78366-103">Atualizar onPremisesConditionalAccessSettings</span><span class="sxs-lookup"><span data-stu-id="78366-103">Update onPremisesConditionalAccessSettings</span></span>
 
-> <span data-ttu-id="6e38d-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="6e38d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="78366-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="78366-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6e38d-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6e38d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="78366-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="78366-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6e38d-106">Atualizar as propriedades de um objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="6e38d-106">Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
+<span data-ttu-id="78366-106">Atualizar as propriedades de um objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="78366-106">Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="6e38d-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6e38d-107">Prerequisites</span></span>
-<span data-ttu-id="6e38d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6e38d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="78366-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="78366-107">Prerequisites</span></span>
+<span data-ttu-id="78366-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78366-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6e38d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6e38d-110">Permission type</span></span>|<span data-ttu-id="6e38d-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="6e38d-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="78366-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="78366-110">Permission type</span></span>|<span data-ttu-id="78366-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="78366-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6e38d-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6e38d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="6e38d-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6e38d-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="6e38d-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6e38d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6e38d-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6e38d-115">Not supported.</span></span>|
-|<span data-ttu-id="6e38d-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6e38d-116">Application</span></span>|<span data-ttu-id="6e38d-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6e38d-117">Not supported.</span></span>|
+|<span data-ttu-id="78366-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="78366-112">Delegated (work or school account)</span></span>|<span data-ttu-id="78366-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78366-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="78366-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="78366-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="78366-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="78366-115">Not supported.</span></span>|
+|<span data-ttu-id="78366-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="78366-116">Application</span></span>|<span data-ttu-id="78366-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="78366-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6e38d-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6e38d-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="78366-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="78366-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,34 +38,34 @@ PATCH /deviceManagement/conditionalAccessSettings
 PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6e38d-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6e38d-119">Request headers</span></span>
-|<span data-ttu-id="6e38d-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6e38d-120">Header</span></span>|<span data-ttu-id="6e38d-121">Valor</span><span class="sxs-lookup"><span data-stu-id="6e38d-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="78366-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="78366-119">Request headers</span></span>
+|<span data-ttu-id="78366-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="78366-120">Header</span></span>|<span data-ttu-id="78366-121">Valor</span><span class="sxs-lookup"><span data-stu-id="78366-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6e38d-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="6e38d-122">Authorization</span></span>|<span data-ttu-id="6e38d-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6e38d-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6e38d-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="6e38d-124">Accept</span></span>|<span data-ttu-id="6e38d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="6e38d-125">application/json</span></span>|
+|<span data-ttu-id="78366-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="78366-122">Authorization</span></span>|<span data-ttu-id="78366-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="78366-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="78366-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="78366-124">Accept</span></span>|<span data-ttu-id="78366-125">application/json</span><span class="sxs-lookup"><span data-stu-id="78366-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6e38d-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6e38d-126">Request body</span></span>
-<span data-ttu-id="6e38d-127">No corpo da solicitação, forneça uma representação JSON do objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="6e38d-127">In the request body, supply a JSON representation for the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="78366-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="78366-126">Request body</span></span>
+<span data-ttu-id="78366-127">No corpo da solicitação, forneça uma representação JSON do objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="78366-127">In the request body, supply a JSON representation for the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
 
-<span data-ttu-id="6e38d-128">A tabela a seguir mostra as propriedades obrigatórias ao criar [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="6e38d-128">The following table shows the properties that are required when you create the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span></span>
+<span data-ttu-id="78366-128">A tabela a seguir mostra as propriedades obrigatórias ao criar [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="78366-128">The following table shows the properties that are required when you create the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span></span>
 
-|<span data-ttu-id="6e38d-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6e38d-129">Property</span></span>|<span data-ttu-id="6e38d-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="6e38d-130">Type</span></span>|<span data-ttu-id="6e38d-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="6e38d-131">Description</span></span>|
+|<span data-ttu-id="78366-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="78366-129">Property</span></span>|<span data-ttu-id="78366-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="78366-130">Type</span></span>|<span data-ttu-id="78366-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="78366-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6e38d-132">id</span><span class="sxs-lookup"><span data-stu-id="6e38d-132">id</span></span>|<span data-ttu-id="6e38d-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6e38d-133">String</span></span>|<span data-ttu-id="6e38d-134">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6e38d-134">Not yet documented</span></span>|
-|<span data-ttu-id="6e38d-135">enabled</span><span class="sxs-lookup"><span data-stu-id="6e38d-135">enabled</span></span>|<span data-ttu-id="6e38d-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="6e38d-136">Boolean</span></span>|<span data-ttu-id="6e38d-137">Indica se o acesso condicional local está habilitado para esta organização</span><span class="sxs-lookup"><span data-stu-id="6e38d-137">Indicates if on premises conditional access is enabled for this organization</span></span>|
-|<span data-ttu-id="6e38d-138">includedGroups</span><span class="sxs-lookup"><span data-stu-id="6e38d-138">includedGroups</span></span>|<span data-ttu-id="6e38d-139">Coleção de GUIDs</span><span class="sxs-lookup"><span data-stu-id="6e38d-139">Guid collection</span></span>|<span data-ttu-id="6e38d-140">Grupos de usuários que serão direcionados pelo acesso condicional local.</span><span class="sxs-lookup"><span data-stu-id="6e38d-140">User groups that will be targeted by on premises conditional access.</span></span> <span data-ttu-id="6e38d-141">Todos os usuários nesses grupos deverão ter dispositivos móveis gerenciados e compatíveis com o acesso a email.</span><span class="sxs-lookup"><span data-stu-id="6e38d-141">All users in these groups will be required to have mobile device managed and compliant for mail access.</span></span>|
-|<span data-ttu-id="6e38d-142">excludedGroups</span><span class="sxs-lookup"><span data-stu-id="6e38d-142">excludedGroups</span></span>|<span data-ttu-id="6e38d-143">Coleção de GUIDs</span><span class="sxs-lookup"><span data-stu-id="6e38d-143">Guid collection</span></span>|<span data-ttu-id="6e38d-144">Grupos de usuários que estarão isentos ao acesso condicional local.</span><span class="sxs-lookup"><span data-stu-id="6e38d-144">User groups that will be exempt by on premises conditional access.</span></span> <span data-ttu-id="6e38d-145">Todos os usuários desses grupos ficarão isentos da política de acesso condicional.</span><span class="sxs-lookup"><span data-stu-id="6e38d-145">All users in these groups will be exempt from the conditional access policy.</span></span>|
-|<span data-ttu-id="6e38d-146">overrideDefaultRule</span><span class="sxs-lookup"><span data-stu-id="6e38d-146">overrideDefaultRule</span></span>|<span data-ttu-id="6e38d-147">Booliano</span><span class="sxs-lookup"><span data-stu-id="6e38d-147">Boolean</span></span>|<span data-ttu-id="6e38d-148">Substitui as regras de acesso padrão ao permitir a um dispositivo que seja concedida a garantia de acesso.</span><span class="sxs-lookup"><span data-stu-id="6e38d-148">Override the default access rule when allowing a device to ensure access is granted.</span></span>|
+|<span data-ttu-id="78366-132">id</span><span class="sxs-lookup"><span data-stu-id="78366-132">id</span></span>|<span data-ttu-id="78366-133">String</span><span class="sxs-lookup"><span data-stu-id="78366-133">String</span></span>|<span data-ttu-id="78366-134">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="78366-134">Not yet documented</span></span>|
+|<span data-ttu-id="78366-135">enabled</span><span class="sxs-lookup"><span data-stu-id="78366-135">enabled</span></span>|<span data-ttu-id="78366-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="78366-136">Boolean</span></span>|<span data-ttu-id="78366-137">Indica se o acesso condicional local está habilitado para esta organização</span><span class="sxs-lookup"><span data-stu-id="78366-137">Indicates if on premises conditional access is enabled for this organization</span></span>|
+|<span data-ttu-id="78366-138">includedGroups</span><span class="sxs-lookup"><span data-stu-id="78366-138">includedGroups</span></span>|<span data-ttu-id="78366-139">Coleção de GUIDs</span><span class="sxs-lookup"><span data-stu-id="78366-139">Guid collection</span></span>|<span data-ttu-id="78366-140">Grupos de usuários que serão direcionados pelo acesso condicional local.</span><span class="sxs-lookup"><span data-stu-id="78366-140">User groups that will be targeted by on premises conditional access.</span></span> <span data-ttu-id="78366-141">Todos os usuários nesses grupos deverão ter dispositivos móveis gerenciados e compatíveis com o acesso a email.</span><span class="sxs-lookup"><span data-stu-id="78366-141">All users in these groups will be required to have mobile device managed and compliant for mail access.</span></span>|
+|<span data-ttu-id="78366-142">excludedGroups</span><span class="sxs-lookup"><span data-stu-id="78366-142">excludedGroups</span></span>|<span data-ttu-id="78366-143">Coleção de GUIDs</span><span class="sxs-lookup"><span data-stu-id="78366-143">Guid collection</span></span>|<span data-ttu-id="78366-144">Grupos de usuários que estarão isentos ao acesso condicional local.</span><span class="sxs-lookup"><span data-stu-id="78366-144">User groups that will be exempt by on premises conditional access.</span></span> <span data-ttu-id="78366-145">Todos os usuários desses grupos ficarão isentos da política de acesso condicional.</span><span class="sxs-lookup"><span data-stu-id="78366-145">All users in these groups will be exempt from the conditional access policy.</span></span>|
+|<span data-ttu-id="78366-146">overrideDefaultRule</span><span class="sxs-lookup"><span data-stu-id="78366-146">overrideDefaultRule</span></span>|<span data-ttu-id="78366-147">Booliano</span><span class="sxs-lookup"><span data-stu-id="78366-147">Boolean</span></span>|<span data-ttu-id="78366-148">Substitui as regras de acesso padrão ao permitir a um dispositivo que seja concedida a garantia de acesso.</span><span class="sxs-lookup"><span data-stu-id="78366-148">Override the default access rule when allowing a device to ensure access is granted.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="6e38d-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="6e38d-149">Response</span></span>
-<span data-ttu-id="6e38d-150">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6e38d-150">If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="78366-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="78366-149">Response</span></span>
+<span data-ttu-id="78366-150">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="78366-150">If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6e38d-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6e38d-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="78366-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="78366-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6e38d-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6e38d-152">Request</span></span>
-<span data-ttu-id="6e38d-153">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6e38d-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="78366-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="78366-152">Request</span></span>
+<span data-ttu-id="78366-153">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="78366-153">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/conditionalAccessSettings
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 275
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="6e38d-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="6e38d-154">Response</span></span>
-<span data-ttu-id="6e38d-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6e38d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="78366-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="78366-154">Response</span></span>
+<span data-ttu-id="78366-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="78366-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -104,6 +104,7 @@ Content-Length: 324
   "overrideDefaultRule": true
 }
 ```
+
 
 
 
