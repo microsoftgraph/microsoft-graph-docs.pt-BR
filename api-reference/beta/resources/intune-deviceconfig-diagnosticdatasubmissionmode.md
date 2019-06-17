@@ -4,12 +4,12 @@ description: Permitir que o dispositivo envie dados de telemetria e diagnóstico
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ba90c6cbbd8e242e4cd5902a938d5e670d7d2d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cf69232ee31bf7fd1eebd440e482d76c052f4fbc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946872"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989921"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>tipo de enumeração diagnosticDataSubmissionMode
 
@@ -27,6 +27,7 @@ Permitir que o dispositivo envie dados de telemetria e diagnósticos de uso, com
 |Basic|duas|Envia dados básicos de telemetria.|
 |metarquivo|3D|Envia dados de telemetria avançados, incluindo dados de uso e insights.|
 |cheia|quatro|Envia dados de telemetria completos, incluindo dados de diagnóstico, como o estado do sistema.|
+
 
 
 

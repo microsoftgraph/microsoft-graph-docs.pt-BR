@@ -4,12 +4,12 @@ description: Opções de formato de nome de entidade para dispositivos Apple.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 284514b055b04b9c1c57c93b26bfd9ea59c7248a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 99e2e480091ab877f660d9bdc12de7f83f538b71
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947747"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987681"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>tipo de enumeração appleSubjectNameFormat
 
@@ -28,6 +28,7 @@ Opções de formato de nome de entidade para dispositivos Apple.
 |commonNameIncludingEmail|3D|Nome comum incluindo email.|
 |commonNameAsIMEI|0,5|Nome comum como IMEI.|
 |commonNameAsSerialNumber|6|Nome comum como número de série.|
+
 
 
 

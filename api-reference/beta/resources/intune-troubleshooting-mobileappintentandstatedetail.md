@@ -4,12 +4,12 @@ description: Tentativa de aplicativo móvel e estado de instalação para um det
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2392d9bc83fda65832cb123115ba1285c823174a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 99374d098d103b9a9898f10ea105ab41ca7bef41
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939018"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988073"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>tipo de recurso mobileAppIntentAndStateDetail
 
@@ -25,7 +25,7 @@ Tentativa de aplicativo móvel e estado de instalação para um determinado disp
 |ApplicationId|Cadeia de caracteres|Identificador MobieApp.|
 |displayName|String|O título do aplicativo importado ou definido pelo administrador.|
 |mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md)|Tentativa de aplicativo móvel. Os valores possíveis são: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`.|
-|displayVersion|Cadeia de caracteres|Versão de leitura humana do aplicativo|
+|displayVersion|String|Versão de leitura humana do aplicativo|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |supportedDeviceTypes|coleção [mobileAppSupportedDeviceType](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md)|As plataformas com suporte para o aplicativo.|
 
@@ -57,6 +57,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

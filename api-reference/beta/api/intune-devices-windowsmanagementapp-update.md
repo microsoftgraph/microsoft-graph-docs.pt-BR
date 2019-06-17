@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto windowsManagementApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93a47a41125a0f3b0e9684d914ba426085326fa9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 54f981b70266431199e8b3b0968169f91a00d592
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909208"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978833"
 ---
 # <a name="update-windowsmanagementapp"></a>Atualizar windowsManagementApp
 
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para o aplicativo de gerenciamento do Windows|
-|availableVersion|Cadeia de caracteres|Versão disponível do aplicativo de gerenciamento do Windows.|
+|id|String|Identificador exclusivo para o aplicativo de gerenciamento do Windows|
+|availableVersion|String|Versão disponível do aplicativo de gerenciamento do Windows.|
 
 
 
@@ -86,6 +86,7 @@ Content-Length: 161
   "availableVersion": "Available Version value"
 }
 ```
+
 
 
 

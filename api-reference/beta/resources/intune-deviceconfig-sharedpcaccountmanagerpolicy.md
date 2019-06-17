@@ -4,12 +4,12 @@ description: Política do gerenciador de conta de PC compartilhado. Aplica-se so
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f604df505bea11c59d1e0e3c0acdb5b638295449
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ef25086d573d084e9a4c2917eaa5f56a70bea244
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944716"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992455"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>Tipo de recurso sharedPCAccountManagerPolicy
 
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
+
 
 
 

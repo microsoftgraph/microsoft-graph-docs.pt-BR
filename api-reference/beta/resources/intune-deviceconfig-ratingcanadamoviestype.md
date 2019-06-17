@@ -4,12 +4,12 @@ description: Rótulos de classificação de filmes no Canadá
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dcb5612be1045c2c99e760ca4056e1f00004367
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6cc112ccf178d7c2a7c5d5c5e70a6306b3696b35
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950974"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995767"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>tipo de enumeração ratingCanadaMoviesType
 
@@ -29,6 +29,7 @@ Rótulos de classificação de filmes no Canadá
 |agesAbove14|quatro|A classificação do 14A é adequada para visualizadores acima de 14 ou mais antigos|
 |agesAbove18|0,5|A classificação do 18A é adequada para visualizadores acima de 18 ou mais|
 |limitado|6|A classificação R é restrita a 18 anos e mais|
+
 
 
 

@@ -4,12 +4,12 @@ description: Objeto contendo informações detalhadas sobre o erro e sua correç
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a50c749e6c6c6ddd59705bbea34f0bbd2488f9a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4759665d96940d806e283cd5b59caed7fee63d32
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939781"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988192"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>tipo de recurso deviceManagementTroubleshootingErrorDetails
 
@@ -24,8 +24,8 @@ Objeto contendo informações detalhadas sobre o erro e sua correção.
 |:---|:---|:---|
 |context|String|Ainda não documentado|
 |alguma|String|Ainda não documentado|
-|failureDetails|Cadeia de caracteres|A descrição detalhada do que deu errado.|
-|correção|Cadeia de caracteres|A descrição detalhada de como corrigir esse problema.|
+|failureDetails|String|A descrição detalhada do que deu errado.|
+|correção|String|A descrição detalhada de como corrigir esse problema.|
 |recursos|coleção [deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Links para a documentação útil sobre esta falha.|
 
 ## <a name="relationships"></a>Relações
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Representa um elemento checkBox ADMX e um elemento Boolean do ADMX.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72171c2216319ae13b9ba0eff6e516a6c7fd9309
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cbcff2437270ef7c56846f0945e856a1cc62ba03
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941104"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982963"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>tipo de recurso groupPolicyPresentationCheckBox
 
@@ -34,8 +34,8 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultChecked|Booliano|Valor padrão da caixa de seleção. O valor padrão é falso.|
 
@@ -61,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   "defaultChecked": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Criar um novo objeto groupPolicyConfigurationAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41689302bfbb8dead46a610e277895219a58d181
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b3f02ee6ad6296d0558834717dd694b31c00941d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905165"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984853"
 ---
 # <a name="create-grouppolicyconfigurationassignment"></a>Criar groupPolicyConfigurationAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O tipo de grupo de destino da configuração da política de grupo.|
 
@@ -92,6 +92,7 @@ Content-Length: 287
   }
 }
 ```
+
 
 
 

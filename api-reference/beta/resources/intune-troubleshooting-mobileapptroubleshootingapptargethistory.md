@@ -4,12 +4,12 @@ description: Item de histórico contido no evento de solução de problemas de a
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fd3ba328dac666feac9f5a87dd8cfebe7627f43
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0b90b903c024377ad74509f8a16617b1dd28fb1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939739"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990964"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppTargetHistory
 
@@ -26,7 +26,7 @@ Herda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooti
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Hora em que o item de histórico ocorreu. Herdado de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|securityGroupId|Cadeia de caracteres|ID do grupo de segurança do AAD para o qual foi direcionado.|
+|securityGroupId|String|ID do grupo de segurança do AAD para o qual foi direcionado.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Status do item. Os valores possíveis são: `unknown`, `success`, `fail`.|
 |errorCode|Cadeia de caracteres|Código de erro para a falha, vazio se não houver falha.|
 
@@ -49,6 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   "errorCode": "String"
 }
 ```
+
 
 
 

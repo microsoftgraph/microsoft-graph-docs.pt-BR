@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto termsAndConditionsAssignment
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 397eb9e0c0cb23bf8405964e699db82c152cea8e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58070da632f880df45f693d5f8665b46d47030a4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933771"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971875"
 ---
 # <a name="update-termsandconditionsassignment"></a>Atualizar termsAndConditionsAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [termsAn
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
+|id|String|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual a política de T&C foi designada.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 217
   }
 }
 ```
+
 
 
 

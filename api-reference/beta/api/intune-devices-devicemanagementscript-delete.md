@@ -4,12 +4,12 @@ description: Exclui deviceManagementScript.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e69f1af944b2ddf9a66ede8f27d93cef5b7add8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f18aec2f2c98492cd85ce874f41bc99a274b17af
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909971"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959058"
 ---
 # <a name="delete-devicemanagementscript"></a>Excluir deviceManagementScript
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: atribuição de licença do programa de compra de volume iOS. Essa 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc967be6bc808ea6443f2fd6333b6313b11ab596
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6765b7ae313714433c848b57dec0ef1a58d7a38d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950372"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987856"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>tipo de recurso iosVppAppAssignedLicense
 
@@ -32,10 +32,10 @@ atribuição de licença do programa de compra de volume iOS. Essa classe não o
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
+|useremailaddress|String|O endereço de email do usuário.|
 |userId|String|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
-|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|
+|userPrincipalName|String|O nome da entidade de segurança do usuário.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -58,6 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

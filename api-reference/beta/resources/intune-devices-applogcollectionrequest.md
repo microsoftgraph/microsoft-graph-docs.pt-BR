@@ -4,12 +4,12 @@ description: Entidade AppLogCollectionRequest.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24d6ee782dc50935cffddc9916b04121bf3a1cb1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 210fa5f75cf23a8d648da82f502a1335ab58bea5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943197"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983299"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>tipo de recurso appLogCollectionRequest
 
@@ -32,9 +32,9 @@ Entidade AppLogCollectionRequest.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo. Esta é a ID do userId_DeviceId_AppId.|
+|id|String|O identificador exclusivo. Esta é a ID do userId_DeviceId_AppId.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
-|errorMessage|Cadeia de caracteres|Mensagem de erro se qualquer um durante o processo de carregamento|
+|errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
 |customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
@@ -61,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   "completedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

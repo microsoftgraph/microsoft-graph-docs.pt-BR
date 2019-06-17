@@ -4,12 +4,12 @@ description: AppLogUploadStatus
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6a0c880fe8fa7fe743bea3ad42fee6d1e24d209
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ebfbed2517143cb4574d75afad77f2f822e503cd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943113"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983376"
 ---
 # <a name="apploguploadstate-enum-type"></a>tipo de enumeração appLogUploadState
 
@@ -25,6 +25,7 @@ AppLogUploadStatus
 |função|,0|A solicitação está aguardando processamento ou sob processamento|
 |Completed|1|A solicitação foi concluída com o arquivo carregado no blob do Azure para download.|
 |falhou|duas|Solicitar processamento concluído e em estado de erro.|
+
 
 
 

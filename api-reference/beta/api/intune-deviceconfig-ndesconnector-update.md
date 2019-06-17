@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto ndesConnector.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03519d8298e7e7786ed754545ebbefae1179584d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5ae9ebc8701ec0c91c378b65156970571a5d0125
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922189"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976355"
 ---
 # <a name="update-ndesconnector"></a>Atualizar ndesConnector
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [ndesCon
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave do conector NDES.|
+|id|String|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector NDES|
 |estado|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
 |displayName|String|O nome amigável do conector NDES.|
@@ -92,6 +92,7 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

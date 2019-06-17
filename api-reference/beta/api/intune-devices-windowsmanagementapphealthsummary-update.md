@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto windowsManagementAppHealthSum
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 323e8fdf611b25676f2b1337829a162eedb83f58
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 97ed5c3f5d9126e73fd421e2c9868e09f61e0fe4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909096"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978373"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>Atualizar windowsManagementAppHealthSummary
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de Resumo de integridade do aplicativo de gerenciamento do Windows.|
+|id|String|Chave da entidade de Resumo de integridade do aplicativo de gerenciamento do Windows.|
 |healthyDeviceCount|Int32|Contagem de dispositivos íntegros.|
 |unhealthyDeviceCount|Int32|Contagem de dispositivos não íntegros.|
 |unknownDeviceCount|Int32|Contagem desconhecida de dispositivos.|
@@ -92,6 +92,7 @@ Content-Length: 210
   "unknownDeviceCount": 2
 }
 ```
+
 
 
 

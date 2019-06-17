@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsAutopilotDevi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f54778d59a8c611aa3b348477ae6ab7ff81eebd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8fb9db317f5990520f0350a764027cc0123bbf1c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908228"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982788"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>Obter windowsAutopilotDeviceIdentity
 
@@ -94,6 +94,7 @@ Content-Length: 1145
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Criar um novo objeto intuneBrandingProfile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01d487da88677db899aea4c2ec25c54d3ae3d1bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ec5e863d171c952c07acfb0ecf2c312dcd89a366
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898992"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990663"
 ---
 # <a name="create-intunebrandingprofile"></a>Criar intuneBrandingProfile
 
@@ -50,26 +50,27 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar intuneBr
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave de perfil|
-|ProfileName|Cadeia de caracteres|Nome do perfil|
-|profileDescription|Cadeia de caracteres|Descrição do perfil|
-|isDefaultProfile|Booliano|Apresenta se o perfil é usado para o padrão.|
-|createdDateTime|DateTimeOffset|Quando o BrandingProfile foi criado.|
-|lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile foi modificado pela última vez.|
-|displayName|String|Nome da empresa/organização exibido para usuários finais.|
-|contactITName|Cadeia de caracteres|Nome da pessoa/organização responsável pelo suporte de TI.|
-|contactITPhoneNumber|Cadeia de caracteres|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
-|contactITEmailAddress|Cadeia de caracteres|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
-|contactITNotes|Cadeia de caracteres|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
-|privacyUrl|Cadeia de caracteres|URL da política de privacidade da empresa/organização.|
-|onlineSupportSiteUrl|Cadeia de caracteres|URL do site de assistência técnica de TI da empresa/organização.|
-|onlineSupportSiteName|Cadeia de caracteres|Nome de exibição do site de assistência técnica de TI da empresa/organização.|
-|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor de tema principal usado nos aplicativos e no portal da Web do Portal da Empresa.|
-|showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|
-|showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa em planos de fundo de cores de tema.|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa em planos de fundo claros.|
+|id|String|Chave de perfil|
+|ProfileName|String|Nome do perfil|
+|profileDescription|String|Descrição do perfil|
+|isDefaultProfile|Booliano|Booliano que indica se o perfil é usado como padrão ou não|
+|createdDateTime|DateTimeOffset|Hora em que o BrandingProfile foi criado|
+|lastModifiedDateTime|DateTimeOffset|Hora em que a BrandingProfile foi modificada pela última vez|
+|displayName|String|Nome da empresa/organização que é exibido para os usuários finais|
+|contactITName|String|Nome da pessoa/organização responsável pelo suporte de ti|
+|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de ti|
+|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de ti|
+|contactITNotes|String|Comentários de texto sobre a pessoa/organização responsável pelo suporte de ti|
+|privacyUrl|String|URL para a política de privacidade da empresa/organização|
+|onlineSupportSiteUrl|String|URL para o site de assistência técnica de ti da empresa/organização|
+|onlineSupportSiteName|Cadeia de caracteres|Nome para exibição do site de assistência técnica de ti da empresa/organização|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor do tema principal usada nos aplicativos do portal da empresa e no portal da Web|
+|showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador são mostradas ou não|
+|showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será mostrado ao lado da imagem de logotipo ou não|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo de cor de tema atrás do logotipo|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo claro atrás do logotipo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial dos aplicativos do portal da empresa|
+|customPrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
 
 
 
@@ -83,7 +84,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1205
+Content-length: 1264
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -120,7 +121,8 @@ Content-length: 1205
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "customPrivacyMessage": "Custom Privacy Message value"
 }
 ```
 
@@ -129,7 +131,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1377
+Content-Length: 1436
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -169,9 +171,11 @@ Content-Length: 1377
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "customPrivacyMessage": "Custom Privacy Message value"
 }
 ```
+
 
 
 

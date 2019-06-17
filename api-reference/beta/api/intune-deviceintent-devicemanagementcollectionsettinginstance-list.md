@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos deviceManagementCollec
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00d11981862aa77fa0271e4d5b081aec775eb09d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 93b1edb40d77c89acd2354869add6bfffbb77257
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916661"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960766"
 ---
 # <a name="list-devicemanagementcollectionsettinginstances"></a>Listar deviceManagementCollectionSettingInstances
 
@@ -78,6 +78,7 @@ Content-Length: 259
   ]
 }
 ```
+
 
 
 

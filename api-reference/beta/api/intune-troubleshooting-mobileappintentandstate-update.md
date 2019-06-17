@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto mobileAppIntentAndState.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afde30fe3970e70bf7912634f720df79510208be
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3903a03b0d74e696a8dac48a8deae5726dbabc3f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898999"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990698"
 ---
 # <a name="update-mobileappintentandstate"></a>Atualizar mobileAppIntentAndState
 
@@ -126,6 +126,7 @@ Content-Length: 880
   ]
 }
 ```
+
 
 
 

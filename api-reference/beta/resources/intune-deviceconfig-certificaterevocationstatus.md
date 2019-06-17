@@ -4,12 +4,12 @@ description: Status de revogação de certificado.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4544968e473c41d787df606112801c9b60e2cb98
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ef7181707e6e80c9ad816f345f2a299dbce147e7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947425"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990110"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>tipo de enumeração certificateRevocationStatus
 
@@ -27,6 +27,7 @@ Status de revogação de certificado.
 |executados|duas|Comando de revogação emitido.|
 |falhou|3D|Falha de revogação.|
 |revogado|quatro|Revogado.|
+
 
 
 

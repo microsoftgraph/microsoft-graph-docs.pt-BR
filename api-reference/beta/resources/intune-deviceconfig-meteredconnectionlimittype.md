@@ -4,12 +4,12 @@ description: Configurações de limite de conexão limitada.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6e7cabe52bdf3c6b0a77304b7dd11c88f50cc99
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0bb0dfeeed0c348d08e22f01af78d3403ec26c16
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950764"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986687"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>tipo de enumeração meteredConnectionLimitType
 
@@ -25,6 +25,7 @@ Configurações de limite de conexão limitada.
 |irrestrito|,0|Unrestricted|
 |prefixo|1|Fixed|
 |variável|duas|Variável|
+
 
 
 

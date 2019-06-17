@@ -4,12 +4,12 @@ description: O resumo do estado de conformidade da linha de base de segurança p
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c7c1cf31ddca02348eed55b9dc19dd5420b016e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cd3ec6e2b207adc70fbcd6ea793a636a799bf1bc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943267"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983404"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>tipo de recurso securityBaselineStateSummary
 
@@ -28,7 +28,7 @@ O resumo do estado de conformidade da linha de base de segurança para a linha d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
+|id|String|Identificador exclusivo da entidade.|
 |secureCount|Int32|Número de dispositivos seguros|
 |notSecureCount|Int32|Número de dispositivos não seguros|
 |unknownCount|Int32|Número de dispositivos desconhecidos|
@@ -59,6 +59,7 @@ Veja a seguir uma representação JSON do recurso.
   "notApplicableCount": 1024
 }
 ```
+
 
 
 

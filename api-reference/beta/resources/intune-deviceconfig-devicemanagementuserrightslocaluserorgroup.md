@@ -4,12 +4,12 @@ description: Representa informações de um usuário ou grupo local usado para a
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acccbb68ecc0b62d27ac20e3eba9e637aac3e11c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e1cd7cb3f197e381da0b334ed849d881d071979e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946935"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989998"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>tipo de recurso deviceManagementUserRightsLocalUserOrGroup
 
@@ -22,9 +22,9 @@ Representa informações de um usuário ou grupo local usado para a configuraç�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|Cadeia de caracteres|O nome desse usuário ou grupo local.|
-|description|String|Descrição do administrador desse usuário ou grupo local.|
-|securityIdentifier|Cadeia de caracteres|O identificador de segurança desse usuário ou grupo local (por exemplo, * S-1-5-32-544).|
+|name|String|O nome desse usuário ou grupo local.|
+|descrição|String|Descrição do administrador desse usuário ou grupo local.|
+|securityIdentifier|String|O identificador de segurança desse usuário ou grupo local (por exemplo, * S-1-5-32-544).|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "securityIdentifier": "String"
 }
 ```
+
 
 
 

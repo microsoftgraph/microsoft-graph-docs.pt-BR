@@ -4,12 +4,12 @@ description: Categorias de falha de nível superior para registro.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae92cf0e9dc73dc2d846e549756fe1977fa19036
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2e932a86cef5c15d3a6d41cc424b1acfdf4c95a7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951197"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991013"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>tipo de enumeração deviceEnrollmentFailureReason
 
@@ -34,6 +34,7 @@ Categorias de falha de nível superior para registro.
 |enrollmentRestrictionsEnforced|9 |As restrições de registro configuradas pelo administrador bloquearam esse registro.|
 |clientDisconnected|10 |O cliente esgotou o tempo limite ou o registro foi anulado pelo enduser.|
 |Membrouserabandonment|11|O registro foi abandonado pelo enduser. (Enduser Started onboard, mas não conseguiu concluí-la na forma oportuna)|
+
 
 
 

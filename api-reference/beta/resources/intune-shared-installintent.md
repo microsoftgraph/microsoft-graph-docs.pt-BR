@@ -4,12 +4,12 @@ description: Valores possíveis para o propósito de instalação escolhido pelo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33250854c07c99e9e9d280f56e55b9ae3a514c71
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bebfc66507f2e93e5f66ef4c973399722c02843f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939081"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996089"
 ---
 # <a name="installintent-enum-type"></a>tipo de enumeração installIntent
 
@@ -26,6 +26,7 @@ Valores possíveis para o propósito de instalação escolhido pelo administrado
 |obrigatório|1|Tentativa de instalação necessária.|
 |INTAL|duas|Tentativa de instalação de desinstalação.|
 |availableWithoutEnrollment|3D|Disponível sem a intenção de instalação do registro.|
+
 
 
 

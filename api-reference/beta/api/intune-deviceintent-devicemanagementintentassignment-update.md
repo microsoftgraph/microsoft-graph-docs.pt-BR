@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceManagementIntentAssignm
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dace2f8babeabb492bbddfe7c0e9dac6c533565e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: af153fb48969eb0d78d8471a151a3ac9090b1429
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916158"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960374"
 ---
 # <a name="update-devicemanagementintentassignment"></a>Atualizar deviceManagementIntentAssignment
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da atribuição|
+|id|String|A ID da atribuição|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição|
 
 
@@ -90,6 +90,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

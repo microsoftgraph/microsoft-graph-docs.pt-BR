@@ -4,12 +4,12 @@ description: Recuperar senha
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72d21c95bab08628580cfc935cf37ee7f2df764d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8693360515cb11aabb275a46c5042ef7d8f13f5e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909642"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958351"
 ---
 # <a name="recoverpasscode-action"></a>Ação recoverPasscode
 
@@ -65,6 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

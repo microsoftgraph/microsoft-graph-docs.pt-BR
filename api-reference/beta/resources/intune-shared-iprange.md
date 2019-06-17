@@ -4,12 +4,12 @@ description: Classe base de intervalo de IP para intervalo de endereços IPV4 e 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42b7ccf9f4bd0c138b2a64090fc0e6ecf9ffbb62
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a8d371cb47cbddc9ecef1ec19517c1da2596d77c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939648"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996061"
 ---
 # <a name="iprange-resource-type"></a>Tipo de recurso ipRange
 
@@ -38,6 +38,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
 
 
 

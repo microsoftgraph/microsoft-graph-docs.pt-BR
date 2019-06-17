@@ -4,12 +4,12 @@ description: Exclui groupPolicyPresentationValueMultiText.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6853f7f5f5ed8618745402732a275f290d4e5373
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7cc2534634a8a4f4694b698647f0cfc5ede61f12
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904318"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985791"
 ---
 # <a name="delete-grouppolicypresentationvaluemultitext"></a>Excluir groupPolicyPresentationValueMultiText
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

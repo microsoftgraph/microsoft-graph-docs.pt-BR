@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos iosStoreApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f641657044ca5edbdc345f5493bac8848c9368d9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f724abcc9f11938eb6f994abcb5df90c6f16cb09
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937061"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964938"
 ---
 # <a name="list-iosstoreapps"></a>Listar iosStoreApps
 
@@ -111,6 +111,7 @@ Content-Length: 1505
   ]
 }
 ```
+
 
 
 

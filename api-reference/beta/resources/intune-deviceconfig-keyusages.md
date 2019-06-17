@@ -4,12 +4,12 @@ description: Opções de uso de chave.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65707cd57031e89f795c0e8e7e4a72e84eca2f79
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a9001780e62c705bd7655f19325f0ece5938beab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946214"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989396"
 ---
 # <a name="keyusages-enum-type"></a>tipo de enumeração de usos de
 
@@ -24,6 +24,7 @@ Opções de uso de chave.
 |:---|:---|:---|
 |keyEncipherment|1|Uso da codificação de chave.|
 |digitalSignature|duas|Uso de assinatura digital.|
+
 
 
 

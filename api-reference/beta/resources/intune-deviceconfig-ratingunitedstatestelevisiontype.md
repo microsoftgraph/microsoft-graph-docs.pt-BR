@@ -4,12 +4,12 @@ description: Rótulos de classificação de conteúdo de TV nos Estados Unidos
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25cbfe3a2ff44035916f3da4f5f1be75a9e397fb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1d99114d8ead877b5bd9fee58e0a52e1ad9b288e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944891"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986708"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de enumeração ratingUnitedStatesTelevisionType
 
@@ -30,6 +30,7 @@ Rótulos de classificação de conteúdo de TV nos Estados Unidos
 |parentalGuidance|0,5|TV-PG, orientação dos pais|
 |childrenAbove14|6|TV-14, crianças 14 e acima|
 |adultos|178|TV-MA, somente adultos|
+
 
 
 

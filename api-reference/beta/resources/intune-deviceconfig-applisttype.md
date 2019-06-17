@@ -4,12 +4,12 @@ description: Valores possíveis da lista de aplicativos de conformidade.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98d7f8a71f12dd70eb062a1e6eff5c5c3054fd40
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5df56b14d3c5416a04245ffbccd0b3b887266bde
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947551"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987786"
 ---
 # <a name="applisttype-enum-type"></a>tipo de enumeração appListType
 
@@ -25,6 +25,7 @@ Valores possíveis da lista de aplicativos de conformidade.
 |none|,0|Valor padrão, sem intenção.|
 |appsInListCompliant|1|A lista representa os aplicativos que serão considerados compatíveis (apenas os aplicativos na lista são compatíveis).|
 |appsNotInListCompliant|duas|A lista representa os aplicativos que serão considerados não compatíveis (todos os aplicativos são compatíveis, exceto os aplicativos na lista).|
+
 
 
 

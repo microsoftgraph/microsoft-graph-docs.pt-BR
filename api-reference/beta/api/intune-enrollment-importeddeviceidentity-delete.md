@@ -4,12 +4,12 @@ description: Exclui importedDeviceIdentity.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 169b03de95a85f93f93346651b824450117a1540
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 412c9849620dcfecd15c1c411795e36739f0caff
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908312"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981920"
 ---
 # <a name="delete-importeddeviceidentity"></a>Excluir importedDeviceIdentity
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

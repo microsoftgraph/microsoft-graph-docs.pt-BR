@@ -4,12 +4,12 @@ description: Operadores suportados para expressões de condição de gerenciamen
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1b4545954d0dd56b965700d74c7f3d4d99c12f0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d2d07531c0385e2b7e5cf4da79da8463cc4009e4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941213"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990089"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>tipo de enumeração unaryManagementConditionExpressionOperatorType
 
@@ -23,6 +23,7 @@ Operadores suportados para expressões de condição de gerenciamento unários
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |not|,0|Nega a avaliação do operando.|
+
 
 
 

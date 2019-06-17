@@ -4,12 +4,12 @@ description: Tipo absoluto de tamanho máximo de cache da otimização de entreg
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 285c1830065d18669bd6d3d02d615400af27e231
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bfeb2e4279e9858f9fd8f923657c8e32bf129396
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947187"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979582"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>tipo de recurso deliveryOptimizationMaxCacheSizeAbsolute
 
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
+
 
 
 

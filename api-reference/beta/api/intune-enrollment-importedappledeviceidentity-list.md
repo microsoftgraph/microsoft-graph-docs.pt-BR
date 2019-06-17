@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos importedAppleDeviceIde
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 491683b9be8b6c280d0f025fcadd7c949559b45d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 837b14176441546fce084a4a1746fa43ce80af0d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908466"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982032"
 ---
 # <a name="list-importedappledeviceidentities"></a>Listar importedAppleDeviceIdentities
 
@@ -83,6 +83,7 @@ Content-Length: 686
   ]
 }
 ```
+
 
 
 

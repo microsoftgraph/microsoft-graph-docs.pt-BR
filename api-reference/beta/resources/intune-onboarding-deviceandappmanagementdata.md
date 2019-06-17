@@ -4,12 +4,12 @@ description: Dados exportados
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d85c6ba4eb4cdb96326f7a95efd5a8f9a8af4df
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e734da701a544156a511172d11c97faa13c8a0a7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940432"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982452"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>tipo de recurso deviceAndAppManagementData
 
@@ -40,6 +40,7 @@ Veja a seguir uma representação JSON do recurso.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
 
 
 

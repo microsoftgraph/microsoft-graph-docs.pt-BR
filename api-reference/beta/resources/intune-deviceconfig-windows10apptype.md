@@ -4,12 +4,12 @@ description: Tipo de aplicativo do Windows 10.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 686ef20469c23eebfb365ca85d7157c0935b164f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7170e080afbe503100c5f049b7d11f3625b18a23
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944408"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992735"
 ---
 # <a name="windows10apptype-enum-type"></a>tipo de enumeração windows10AppType
 
@@ -24,6 +24,7 @@ Tipo de aplicativo do Windows 10.
 |:---|:---|:---|
 |placa|,0|Placa.|
 |UTC|1|UTC.|
+
 
 
 

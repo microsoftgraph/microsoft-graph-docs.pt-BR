@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto targetedManagedAppCo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75c753cebc5a663a3da9a9fe61f19089797b459d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2ccd8220c51596f9ae3a86e92f7b15601282eaa3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33902896"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986981"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>Acessar targetedManagedAppConfiguration
 
@@ -91,6 +91,7 @@ Content-Length: 679
   }
 }
 ```
+
 
 
 

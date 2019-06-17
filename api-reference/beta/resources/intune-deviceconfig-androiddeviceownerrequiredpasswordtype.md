@@ -4,12 +4,12 @@ description: Política de proprietário do dispositivo Android tipo de senha exi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc6d81a71fe01addb6111252b28aee01072fe0dd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e55aa24896e72a2351cfbfc2ac8a88ac2a2d3dd8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949063"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983789"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>tipo de enumeração androidDeviceOwnerRequiredPasswordType
 
@@ -30,6 +30,7 @@ Política de proprietário do dispositivo Android tipo de senha exigido.
 |tecla|0,5|Pelo menos a senha alfanumérica|
 |alphanumericWithSymbols|6|Pelo menos alfanumérico com símbolos.|
 |lowSecurityBiometric|178|Senha com base em Biometria de segurança baixa necessária.|
+
 
 
 

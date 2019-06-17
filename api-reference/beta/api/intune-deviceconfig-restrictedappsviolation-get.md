@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto restrictedAppsViolat
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84f4fb2bcb6afe12153d92ee876bc31c8b824d3b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b57ecf0c921ba2554ca4ddf256fbcf6ee8eb4d02
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922147"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962929"
 ---
 # <a name="get-restrictedappsviolation"></a>Obter restrictedAppsViolation
 
@@ -88,6 +88,7 @@ Content-Length: 664
   }
 }
 ```
+
 
 
 

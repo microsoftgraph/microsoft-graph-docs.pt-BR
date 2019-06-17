@@ -4,12 +4,12 @@ description: Mostrar o botão página inicial; clicar no botão página inicial 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76951c80da374a69a62c45b2676e3f36794d4bb2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fdebeb93ea5d2199f2cdf5f5349c960e8466437c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946753"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989802"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>tipo de recurso edgeHomeButtonOpensNewTab
 
@@ -41,6 +41,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
+
 
 
 

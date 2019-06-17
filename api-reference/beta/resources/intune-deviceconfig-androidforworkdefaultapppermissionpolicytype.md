@@ -4,12 +4,12 @@ description: Tipo de política de permissão de aplicativo padrão do Android pa
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8db747055ab1e817b3b6cc1e519586e8add9cf7e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c4d4e4bccb65f87e5a7ba77027e636e076980408
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948658"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991181"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>tipo de enumeração androidForWorkDefaultAppPermissionPolicyType
 
@@ -26,6 +26,7 @@ Tipo de política de permissão de aplicativo padrão do Android para trabalho.
 |prompt|1|Notifica.|
 |Concessão autogrant|duas|Concessão automática.|
 |Negação de permissão|3D|Negação automática.|
+
 
 
 

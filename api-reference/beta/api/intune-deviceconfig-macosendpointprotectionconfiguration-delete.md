@@ -4,12 +4,12 @@ description: Exclui macOSEndpointProtectionConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6865e2c3eaecba078c957a31e701f12dd588b80a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a9632d0419d8ec9e222b179210e300ce83f0d4be
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922814"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976789"
 ---
 # <a name="delete-macosendpointprotectionconfiguration"></a>Excluir macOSEndpointProtectionConfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

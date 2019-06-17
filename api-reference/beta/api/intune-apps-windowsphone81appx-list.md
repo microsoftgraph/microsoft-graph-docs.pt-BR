@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsPhone81AppX.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 275ac481f0dfb8009616df6852cb3c2cd2db544e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 961aa30ac36d6443deed24cf5865375ae5cb0a21
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934695"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973058"
 ---
 # <a name="list-windowsphone81appxs"></a>Listar windowsPhone81AppXs
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1852
+Content-Length: 1906
 
 {
   "value": [
@@ -107,7 +107,9 @@ Content-Length: 1852
         "v10_1607": true,
         "v10_1703": true,
         "v10_1709": true,
-        "v10_1803": true
+        "v10_1803": true,
+        "v10_1809": true,
+        "v10_1903": true
       },
       "phoneProductIdentifier": "Phone Product Identifier value",
       "phonePublisherId": "Phone Publisher Id value",
@@ -116,6 +118,7 @@ Content-Length: 1852
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto securityBaselineStat
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55f69ba40e8c6167e48536fe3c7d096b407d0df5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6e86e86cb9aa58ade78d894fd288cfd16c5329cf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33914475"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959506"
 ---
 # <a name="get-securitybaselinestatesummary"></a>Obter securityBaselineStateSummary
 
@@ -80,6 +80,7 @@ Content-Length: 297
   }
 }
 ```
+
 
 
 

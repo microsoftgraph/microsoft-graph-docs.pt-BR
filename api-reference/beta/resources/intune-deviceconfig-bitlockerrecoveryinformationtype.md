@@ -4,12 +4,12 @@ description: Tipos BitLockerRecoveryInformationType
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b628e0ac44e0ae595e5cca37a0752ae07336ca1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1287ceda9c6aa5f7e7960684d6dfa809ec4ed42a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947495"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983572"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>tipo de enumeração bitLockerRecoveryInformationType
 
@@ -24,6 +24,7 @@ Tipos BitLockerRecoveryInformationType
 |:---|:---|:---|
 |passwordAndKey|1|Armazenar senhas de recuperação e pacotes de chaves.|
 |passwordOnly|duas|Armazenar somente senhas de recuperação.|
+
 
 
 
