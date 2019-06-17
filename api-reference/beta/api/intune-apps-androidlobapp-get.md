@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidLobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad9e9f49ea0adb789e331a78259bdcf241c98eba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: da0709edf1d8c31b5f7ea396632fc5a76189ad71
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937271"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966331"
 ---
 # <a name="get-androidlobapp"></a>Acessar androidLobApp
 
@@ -124,6 +124,7 @@ Content-Length: 1704
   }
 }
 ```
+
 
 
 

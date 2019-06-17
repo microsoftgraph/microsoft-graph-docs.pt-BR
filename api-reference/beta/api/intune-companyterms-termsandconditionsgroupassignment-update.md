@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto termsAndConditionsGroupAssign
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6ee50c5b6781a78d16fc8ee05b8d9d9a53cad28
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 21216e265c3af81fd0c53b76dda8f5015d13b10a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933708"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971791"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>Atualizar termsAndConditionsGroupAssignment
 
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [termsAn
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
-|targetGroupId|Cadeia de caracteres|Identificador exclusivo de um grupo ao qual a política T&C é atribuída.|
+|id|String|Identificador exclusivo da entidade.|
+|targetGroupId|String|Identificador exclusivo de um grupo ao qual a política T&C é atribuída.|
 
 
 
@@ -86,6 +86,7 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

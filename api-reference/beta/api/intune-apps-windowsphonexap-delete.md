@@ -4,12 +4,12 @@ description: Exclui windowsPhoneXAP.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5c02b8f090360dcb958478a8b5785bac73296b5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 895799821defb9a9f5fde1afa95d27f46b197075
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934604"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972890"
 ---
 # <a name="delete-windowsphonexap"></a>Excluir windowsPhoneXAP
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

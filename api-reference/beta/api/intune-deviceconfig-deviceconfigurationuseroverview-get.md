@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceConfigurationU
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd9dad7a3d521dfffdbbcdb28a04838eb1ed9bf4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 47dc7624008d6254919ba7da4fd32a9704de06c2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927430"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967612"
 ---
 # <a name="get-deviceconfigurationuseroverview"></a>Acessar deviceConfigurationUserOverview
 
@@ -90,6 +90,7 @@ Content-Length: 394
   }
 }
 ```
+
 
 
 

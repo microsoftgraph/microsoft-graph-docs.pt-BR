@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos managedIOSLobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32974bfc944e474a10ec99cd45cd3049213bfeef
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7579c30d672da4159bb1e4b9f4250423ff61d2ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935521"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974570"
 ---
 # <a name="list-managedioslobapps"></a>Listar managedIOSLobApps
 
@@ -119,6 +119,7 @@ Content-Length: 1866
   ]
 }
 ```
+
 
 
 

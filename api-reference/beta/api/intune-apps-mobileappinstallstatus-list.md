@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos mobileAppInstallStatus
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ebc387b1b344003bda82102f2209d8100d60971
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 590bb3d10b94e66095466e73f24fb8fab76844c3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935085"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973905"
 ---
 # <a name="list-mobileappinstallstatuses"></a>Listar mobileAppInstallStatuses
 
@@ -86,6 +86,7 @@ Content-Length: 693
   ]
 }
 ```
+
 
 
 

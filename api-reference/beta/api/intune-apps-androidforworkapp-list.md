@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidForWorkApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b53db3d2bc6dcecccf0adfe5bf4634f2e518970
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b6c85f8a796500507205a5e8d1a1bec5c0f8f4a2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937397"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965365"
 ---
 # <a name="list-androidforworkapps"></a>Listar androidForWorkApps
 
@@ -101,6 +101,7 @@ Content-Length: 1228
   ]
 }
 ```
+
 
 
 

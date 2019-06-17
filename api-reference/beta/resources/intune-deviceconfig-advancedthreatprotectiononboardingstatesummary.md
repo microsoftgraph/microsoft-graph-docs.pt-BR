@@ -4,12 +4,12 @@ description: Resumo do estado de integração da proteção avançada contra ame
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d96de8e427d265003811c751bce7b6c0675ba667
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ee8058a61daa9c1510dab5a683ac46b2eea0f590
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949119"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965786"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>tipo de recurso Navegaçãoadvancedthreatprotectiononboardingstatesummary
 
@@ -28,7 +28,7 @@ Resumo do estado de integração da proteção avançada contra ameaças do Wind
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo|
+|id|String|Identificador exclusivo|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -65,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "notAssignedDeviceCount": 1024
 }
 ```
+
 
 
 

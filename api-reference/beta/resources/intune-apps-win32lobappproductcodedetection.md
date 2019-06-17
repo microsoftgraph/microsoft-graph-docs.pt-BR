@@ -4,12 +4,12 @@ description: Contém as propriedades de código e versão do produto para detect
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c56e3047ccc83e7d417e03bc4a95a8538650341
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3ab90e57f8a6b78057c8358be319921a197c81cd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949518"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977356"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>tipo de recurso win32LobAppProductCodeDetection
 
@@ -25,7 +25,7 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|productCode|Cadeia de caracteres|O código de produto do aplicativo de linha de negócios (LoB) Win32.|
+|productCode|String|O código de produto do aplicativo de linha de negócios (LoB) Win32.|
 |productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detectar a versão do produto. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |productVersion|String|A versão do produto do aplicativo de linha de negócios (LoB) Win32.|
 
@@ -47,6 +47,7 @@ Veja a seguir uma representação JSON do recurso.
   "productVersion": "String"
 }
 ```
+
 
 
 

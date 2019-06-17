@@ -4,18 +4,18 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a341de5bc6753102e3ce7a6c6c15114296a92248
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8c13ed037ffb07e8a3e357f3ab5633dc984e4803
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949161"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965850"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Use a carga de trabalho de configuração de dispositivo do Microsoft Intune para gerenciar configurações e recursos em todos os dispositivos que você gerencia.
 
@@ -90,6 +90,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Tipo de conexão de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Configuração de Wi-Fi do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [Tipo de controle de instalação de aplicativo](intune-deviceconfig-appinstallcontroltype.md)
 - [Item da lista do aplicativo](intune-deviceconfig-applistitem.md)
 - [Tipo de lista do aplicativo](intune-deviceconfig-applisttype.md)
 - [Tipo de controle do aplicativo App Locker](intune-deviceconfig-applockerapplicationcontroltype.md)
@@ -115,6 +116,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Status de revogação de certificados](intune-deviceconfig-certificaterevocationstatus.md)
 - [Repositório de certificados](intune-deviceconfig-certificatestore.md)
 - [Escala de período de validade do certificado](intune-deviceconfig-certificatevalidityperiodscale.md)
+- [Alterar a permissão de configurações de UEFI](intune-deviceconfig-changeuefisettingspermission.md)
 - [Uso de configurações](intune-deviceconfig-configurationusage.md)
 - [Nome alternativo da entidade personalizada](intune-deviceconfig-customsubjectalternativename.md)
 - [Dia da semana](intune-deviceconfig-dayofweek.md)
@@ -171,6 +173,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Resumo do status do usuário da configuração do dispositivo](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [Status do usuário da configuração do dispositivo](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Tipo de proteção de credenciais de autoridade do sistema local de proteção de dispositivos](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [Modo de dispositivo de regra de aplicabilidade de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)
+- [Edição de so da regra de aplicabilidade de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
+- [Versão de so da regra de aplicabilidade de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
+- [Tipo de regra de aplicabilidade de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
 - [Emissor de credenciais derivadas de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
 - [Tipo de notificação de credencial derivada de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
 - [Configurações de credenciais derivadas de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
@@ -273,11 +279,13 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Status do dispositivo de atualização do iOS](intune-deviceconfig-iosupdatedevicestatus.md)
 - [Status de instalação de atualizações do iOS](intune-deviceconfig-iosupdatesinstallstatus.md)
 - [Configuração de VPN do iOS](intune-deviceconfig-iosvpnconfiguration.md)
+- [parâmetros de associação de segurança da VPN iOS](intune-deviceconfig-iosvpnsecurityassociationparameters.md)
 - [Local de exibição do papel de parede do iOS](intune-deviceconfig-ioswallpaperdisplaylocation.md)
 - [Filtro automático de filtro de conteúdo da web do iOS](intune-deviceconfig-ioswebcontentfilterautofilter.md)
 - [Base de filtro de conteúdo da web do iOS](intune-deviceconfig-ioswebcontentfilterbase.md)
 - [Acesso de sites específicos de filtro de conteúdo da Web do iOS](intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess.md)
 - [Configuração de Wi-Fi do iOS](intune-deviceconfig-ioswificonfiguration.md)
+- [iOSik EV2 VPN Configuration](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [Tamanho da chave](intune-deviceconfig-keysize.md)
 - [Opção de provedor de armazenamento de chaves](intune-deviceconfig-keystorageprovideroption.md)
 - [Usos de chave](intune-deviceconfig-keyusages.md)
@@ -297,6 +305,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de proteção de ponto de extremidade do macOS](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [Configuração de Wi-Fi corporativa do macOS](intune-deviceconfig-macosenterprisewificonfiguration.md)
 - [configuração de extensões macOS](intune-deviceconfig-macosextensionsconfiguration.md)
+- [tipos de chave de recuperação do compartimento de arquivos macOS](intune-deviceconfig-macosfilevaultrecoverykeytypes.md)
 - [Aplicativo de firewall do macOS](intune-deviceconfig-macosfirewallapplication.md)
 - [Origens do aplicativo gatekeeper do macOS](intune-deviceconfig-macosgatekeeperappsources.md)
 - [Configuração geral do dispositivo macOS](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
@@ -362,6 +371,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Violação de aplicativos restritos](intune-deviceconfig-restrictedappsviolation.md)
 - [Tipo de filtro de pesquisa segura](intune-deviceconfig-safesearchfiltertype.md)
 - [Tipo de conta de avaliação segura](intune-deviceconfig-secureassessmentaccounttype.md)
+- [Inicialização segura com um tipo de d m](intune-deviceconfig-securebootwithdmatype.md)
 - [Tipo de início do serviço](intune-deviceconfig-servicestarttype.md)
 - [Fonte de configuração](intune-deviceconfig-settingsource.md)
 - [Resumo de dispositivo de estado de configuração](intune-deviceconfig-settingstatedevicesummary.md)
@@ -385,7 +395,12 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Origem do nome do usuário](intune-deviceconfig-usernamesource.md)
 - [Configuração de visibilidade](intune-deviceconfig-visibilitysetting.md)
 - [Método de autenticação da VPN](intune-deviceconfig-vpnauthenticationmethod.md)
+- [Tipo de autenticação de cliente VPN](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [Taxa de detecção de ponto de saída de VPN](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [Regra de DNS da VPN](intune-deviceconfig-vpndnsrule.md)
+- [Tipo de algoritmo de criptografia VPN](intune-deviceconfig-vpnencryptionalgorithmtype.md)
+- [Tipo de algoritmo de integridade da VPN](intune-deviceconfig-vpnintegrityalgorithmtype.md)
+- [Identificador de VPN local](intune-deviceconfig-vpnlocalidentifier.md)
 - [Regra sob demanda da VPN](intune-deviceconfig-vpnondemandrule.md)
 - [Ação de conexão da regra sob demanda da VPN](intune-deviceconfig-vpnondemandruleconnectionaction.md)
 - [Ação de domínio de conexão da regra sob demanda da VPN](intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)
@@ -393,6 +408,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Servidor proxy da VPN](intune-deviceconfig-vpnproxyserver.md)
 - [Rota de VPN](intune-deviceconfig-vpnroute.md)
 - [Servidor VPN](intune-deviceconfig-vpnserver.md)
+- [Tipo de certificado do servidor VPN](intune-deviceconfig-vpnservercertificatetype.md)
 - [Regra de tráfego da VPN](intune-deviceconfig-vpntrafficrule.md)
 - [Tipo de aplicativo de regra de tráfego da VPN](intune-deviceconfig-vpntrafficruleapptype.md)
 - [Tipo de política de roteamento da regra de tráfego da VPN](intune-deviceconfig-vpntrafficruleroutingpolicytype.md)
@@ -409,6 +425,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Base de perfil de certificado do Windows 10](intune-deviceconfig-windows10certificateprofilebase.md)
 - [Política de conformidade do Windows 10](intune-deviceconfig-windows10compliancepolicy.md)
 - [Configuração personalizada do Windows 10](intune-deviceconfig-windows10customconfiguration.md)
+- [Interface de configuração de firmware de dispositivo do Windows 10](intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+- [Tipo de modo de dispositivo do Windows 10](intune-deviceconfig-windows10devicemodetype.md)
 - [Configuração de perfil de email do EAS do Windows 10](intune-deviceconfig-windows10easemailprofileconfiguration.md)
 - [Tipo de edição do Windows 10](intune-deviceconfig-windows10editiontype.md)
 - [Configuração de proteção de ponto de extremidade do Windows 10](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
@@ -494,4 +512,4 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de VPN do Windows](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Tipo de conexão de VPN do Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Configuração de Wi-Fi do Windows](intune-deviceconfig-windowswificonfiguration.md)
-- [Configuração de EAP corporativa de Wi-Fi do Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Configuração EAP do Windows Wi-Fi Enterprise](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)

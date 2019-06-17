@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceInstallState.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38798602751655cbf4da997c63c3043af1d2d1bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8c27f63b6a8753335c0c95d496000f5ef23a6d32
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934373"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972527"
 ---
 # <a name="create-deviceinstallstate"></a>Criar deviceInstallState
 
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceIn
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|deviceId|Cadeia de caracteres|ID do dispositivo.|
+|id|String|Chave da entidade.|
+|deviceName|String|Nome do dispositivo.|
+|deviceId|String|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
 |installState|[installState](../resources/intune-books-installstate.md)|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Cadeia de caracteres|O código de erro de falhas de instalação.|
+|errorCode|String|O código de erro de falhas de instalação.|
 |osVersion|String|Versão do sistema operacional.|
-|osDescription|Cadeia de caracteres|Descrição do sistema operacional.|
+|osDescription|String|Descrição do sistema operacional.|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo.|
 
 
@@ -108,6 +108,7 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Gera um token Web que é usado em um componente incorporável.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 520a8ce4e54a43fc84a28440930a093863599ceb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 31318c40894f861832a99c7de43f64b6a7e3c64e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939123"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965505"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>ação createGooglePlayWebToken
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|parentUri|Cadeia de caracteres|O caminho https da página que hospeda o componente.|
+|parentUri|String|O caminho https da página que hospeda o componente.|
 
 
 
@@ -83,6 +83,7 @@ Content-Length: 53
   "value": "Create Google Play Web Token value"
 }
 ```
+
 
 
 
