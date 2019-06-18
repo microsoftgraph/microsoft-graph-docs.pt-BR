@@ -4,12 +4,12 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a397c3433de4d3615e09475059eeb58254bd3086
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+ms.openlocfilehash: 67a43e13be16b8e57832c8b9bcacf0658b3c0531
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914655"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995018"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -32,22 +32,22 @@ Esse recurso permite:
 |[Obter usuário](../api/user-get.md) | [user](user.md) |Ler propriedades e relações do objeto user.|
 |[Atualizar usuário](../api/user-update.md) | [user](user.md) |Atualizar o objeto user. |
 |[Excluir usuário](../api/user-delete.md) | Nenhum |Excluir o objeto user. |
-|[Listar mensagens](../api/user-list-messages.md) |Coleção [Message](message.md)| Obter todas as mensagens na caixa de correio do usuário conectado.|
-|[Criar Mensagem](../api/user-post-messages.md) |[Message](message.md)| Criar uma Mensagem postando na coleção messages.|
-|[Listar mailFolders](../api/user-list-mailfolders.md) |Coleção [MailFolder](mailfolder.md)| Obter a coleção de pastas de email sob a pasta raiz do usuário conectado. |
-|[Criar MailFolder](../api/user-post-mailfolders.md) |[MailFolder](mailfolder.md)| Criar uma nova MailFolder postando na coleção mailFolders.|
+|[Listar mensagens](../api/user-list-messages.md) |Coleção [message](message.md)| Obter todas as mensagens na caixa de correio do usuário conectado.|
+|[Criar mensagem](../api/user-post-messages.md) |[message](message.md)| Crie uma mensagem postando na coleção de mensagens.|
+|[Listar mailFolders](../api/user-list-mailfolders.md) |Coleção [mailFolder](mailfolder.md)| Obter o conjunto de pastas de email sob a pasta raiz do usuário conectado. |
+|[Criar MailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Crie um novo mailFolder postando na coleção mailFolders.|
 |[sendMail](../api/user-sendmail.md)|Nenhum|Enviar a mensagem especificada no corpo da solicitação.|
-|[Listar eventos](../api/user-list-events.md) |Coleção [Event](event.md)| Obter uma lista de objetos event na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres em série.|
-|[Criar evento](../api/user-post-events.md) |[Event](event.md)| Criar um novo Event postando na coleção events.|
+|[Listar eventos](../api/user-list-events.md) |Coleção [event](event.md)| Obter uma lista de objetos event na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres em série.|
+|[Criar evento](../api/user-post-events.md) |[event](event.md)| Criar um novo Event postando na coleção de eventos.|
 |[Listar calendários](../api/user-list-calendars.md) |Coleção [Calendar](calendar.md)| Obter uma coleção de objetos Calendar.|
 |[Criar calendário](../api/user-post-calendars.md) |[Calendar](calendar.md)| Criar um novo Calendar postando na coleção calendars.|
 |[Listar calendarGroups](../api/user-list-calendargroups.md) |Coleção [CalendarGroup](calendargroup.md)| Obter uma coleção de objetos CalendarGroup.|
 |[Criar calendarGroup](../api/user-post-calendargroups.md) |[CalendarGroup](calendargroup.md)| Criar um novo CalendarGroup postando na coleção calendarGroups.|
-|[Listar calendarView](../api/user-list-calendarview.md) |Coleção [Event](event.md)| Obter uma coleção de objetos Event.|
-|[Listar contatos](../api/user-list-contacts.md) |Coleção [Contact](contact.md)| Obter uma coleção de contatos da pasta Contatos padrão do usuário conectado.|
-|[Criar Contato](../api/user-post-contacts.md) |[Contact](contact.md)| Criar um novo Contact postando na coleção contacts.|
-|[Listar contactFolders](../api/user-list-contactfolders.md) |Coleção [ContactFolder](contactfolder.md)| Obter a coleção de pastas de contatos na pasta Contatos padrão do usuário conectado.|
-|[Criar ContactFolder](../api/user-post-contactfolders.md) |[ContactFolder](contactfolder.md)| Criar uma nova ContactFolder postando na coleção contactFolders.|
+|[Listar calendarView](../api/user-list-calendarview.md) |Coleção [event](event.md)| Obter uma coleção de objetos de evento.|
+|[Listar contatos](../api/user-list-contacts.md) |Coleção [Contact](contact.md)| Obter uma coleção de contatos da pasta padrão de contatos do usuário conectado.|
+|[Criar contato](../api/user-post-contacts.md) |[contato](contact.md)| Crie um novo contato postando na coleção de contatos.|
+|[Listar contactFolders](../api/user-list-contactfolders.md) |Coleção [ContactFolder](contactfolder.md)| Obtenha a coleção de pastas de contatos na pasta de contatos padrão do usuário conectado.|
+|[Criar contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| Crie um novo contactFolder postando na coleção contactFolders.|
 |[Listar directReports](../api/user-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Obter os usuários ou contatos subordinados ao usuário da propriedade de navegação directReports.|
 |[Listar gerente](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Obter o usuário ou contato que é o gerente do usuário da propriedade de navegação manager.|
 |[Listar memberOf](../api/user-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos, funções de diretório e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação memberOf.|
@@ -90,6 +90,7 @@ Esse recurso permite:
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|businessPhones|String collection|Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
 |city|String|A cidade em que o usuário está localizado. Oferece suporte a $filter.|
 |companyName| String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. |
 |consentProvidedForMinor|String|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
@@ -118,7 +119,7 @@ Esse recurso permite:
 |officeLocation|String|A localização do escritório no local de trabalho do usuário.|
 |onPremisesDistinguishedName|String| Contém o `distinguished name` do Active Directory no local ou `DN`. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |onPremisesDomainName|String| Contém o `domainFQDN` local, também chamado dnsDomainName sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
-|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um usuário `onPremisesSyncEnabled`, esse conjunto de propriedades é masterizado no local e somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. |
+|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um usuário `onPremisesSyncEnabled`, esse conjunto de propriedades é masterizado no local e somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. |
 |onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Essa propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade `userPrincipalName` (UPN) do usuário. Importante: Os caracteres  e _ não podem ser usados ao especificar essa propriedade. Oferece suporte a $filter. **Importante:** Os caracteres **$** e **_** e não podem ser usados ao especificar essa propriedade. Oferece suporte a $filter. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório local; por exemplo: "2013-02-16T03:04:54Z". O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. |
@@ -128,13 +129,13 @@ Esse recurso permite:
 |onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |otherMails|String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. Oferece suporte a $filter.|
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[PasswordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
+|passwordProfile|[passwordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
 |postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
 |preferredDataLocation|String|O local de dados preferido para o usuário. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US".|
 |preferredName|String|O nome preferencial do usuário.|
-|provisionedPlans|Coleção [ProvisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
+|provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
 |proxyAddresses|Coleção de cadeias de caracteres|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura, não anulável. Oferece suporte a $filter.          |
 |refreshTokensValidFromDateTime|DateTimeOffset| Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para redefinir.|
 |responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|

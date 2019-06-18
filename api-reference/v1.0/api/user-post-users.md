@@ -4,19 +4,19 @@ description: Usar esta API para criar um novo Usuário.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2f023c8882600952feeacffea62b90dc167cf58a
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+ms.openlocfilehash: e81ecd9b31ab5f2836e40e3b461a4974e161eb60
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914683"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981458"
 ---
 # <a name="create-user"></a>Criar Usuário
 
-Crie um novo usuário. O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
+Crie um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
 
 >[!NOTE]
->Usuários externos devem ser criados por meio de um convite. Se você precisar habilitar a criação de usuários externos, consulte [convite](../resources/invitation.md).
+>Para criar usuários externos, use a [API de convite](invitation-post.md).
 
 ## <a name="permissions"></a>Permissões
 

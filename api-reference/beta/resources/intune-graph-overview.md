@@ -4,18 +4,18 @@ description: Lista a API do Microsoft Graph para pontos de extremidade do Intune
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 883fce914176b2e08d49e4de414cc7c09776714a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 850f1866c83e755d4075a429f16a453409c2bd9a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941188"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990215"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/pt-BR/cloud-platform/microsoft-intune-pricing) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A API do Microsoft Graph para Intune permite o acesso programático a informações do Intune para seu locatário; a API executa as mesmas operações do Intune disponíveis pelo **Portal do Azure**.  
 
