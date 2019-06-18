@@ -4,72 +4,72 @@ description: Usar esta API para criar um novo Usuário.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2f023c8882600952feeacffea62b90dc167cf58a
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+ms.openlocfilehash: e81ecd9b31ab5f2836e40e3b461a4974e161eb60
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914683"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981458"
 ---
-# <a name="create-user"></a><span data-ttu-id="b9280-103">Criar Usuário</span><span class="sxs-lookup"><span data-stu-id="b9280-103">Create User</span></span>
+# <a name="create-user"></a><span data-ttu-id="7cbaa-103">Criar Usuário</span><span class="sxs-lookup"><span data-stu-id="7cbaa-103">Create User</span></span>
 
-<span data-ttu-id="b9280-p101">Crie um novo usuário. O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.</span><span class="sxs-lookup"><span data-stu-id="b9280-p101">Use this API to create a new User. The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.</span></span>
+<span data-ttu-id="7cbaa-p101">Crie um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-p101">Use this API to create a new User. The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="b9280-108">Usuários externos devem ser criados por meio de um convite.</span><span class="sxs-lookup"><span data-stu-id="b9280-108">External users must be created through an invitation.</span></span> <span data-ttu-id="b9280-109">Se você precisar habilitar a criação de usuários externos, consulte [convite](../resources/invitation.md).</span><span class="sxs-lookup"><span data-stu-id="b9280-109">If you need to enable the creation of external users, see [invitation](../resources/invitation.md).</span></span>
+><span data-ttu-id="7cbaa-108">Para criar usuários externos, use a [API de convite](invitation-post.md).</span><span class="sxs-lookup"><span data-stu-id="7cbaa-108">To create external users, use the [invitation API](invitation-post.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b9280-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="b9280-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7cbaa-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="7cbaa-109">Permissions</span></span>
 
-<span data-ttu-id="b9280-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b9280-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7cbaa-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7cbaa-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b9280-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b9280-113">Permission type</span></span>      | <span data-ttu-id="b9280-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b9280-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7cbaa-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7cbaa-112">Permission type</span></span>      | <span data-ttu-id="7cbaa-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7cbaa-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b9280-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b9280-115">Delegated (work or school account)</span></span> | <span data-ttu-id="b9280-116">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b9280-116">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="b9280-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b9280-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9280-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b9280-118">Not supported.</span></span>    |
-|<span data-ttu-id="b9280-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b9280-119">Application</span></span> | <span data-ttu-id="b9280-120">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9280-120">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="7cbaa-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7cbaa-114">Delegated (work or school account)</span></span> | <span data-ttu-id="7cbaa-115">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7cbaa-115">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="7cbaa-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7cbaa-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7cbaa-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-117">Not supported.</span></span>    |
+|<span data-ttu-id="7cbaa-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7cbaa-118">Application</span></span> | <span data-ttu-id="7cbaa-119">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7cbaa-119">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b9280-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b9280-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7cbaa-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7cbaa-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b9280-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b9280-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7cbaa-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7cbaa-121">Request headers</span></span>
 
-| <span data-ttu-id="b9280-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b9280-123">Header</span></span>       | <span data-ttu-id="b9280-124">Valor</span><span class="sxs-lookup"><span data-stu-id="b9280-124">Value</span></span> |
+| <span data-ttu-id="7cbaa-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7cbaa-122">Header</span></span>       | <span data-ttu-id="7cbaa-123">Valor</span><span class="sxs-lookup"><span data-stu-id="7cbaa-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="b9280-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="b9280-125">Authorization</span></span>  | <span data-ttu-id="b9280-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b9280-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="b9280-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b9280-128">Content-Type</span></span>  | <span data-ttu-id="b9280-129">application/json</span><span class="sxs-lookup"><span data-stu-id="b9280-129">application/json</span></span>  |
+| <span data-ttu-id="7cbaa-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="7cbaa-124">Authorization</span></span>  | <span data-ttu-id="7cbaa-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7cbaa-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7cbaa-127">Content-Type</span></span>  | <span data-ttu-id="7cbaa-128">application/json</span><span class="sxs-lookup"><span data-stu-id="7cbaa-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="b9280-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b9280-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7cbaa-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7cbaa-129">Request body</span></span>
 
-<span data-ttu-id="b9280-131">No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="b9280-131">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
+<span data-ttu-id="7cbaa-130">No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="7cbaa-130">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
 
-<span data-ttu-id="b9280-132">A tabela a seguir mostra as propriedades que são necessárias ao criar um usuário.</span><span class="sxs-lookup"><span data-stu-id="b9280-132">The following table shows the properties that are required when you create a user.</span></span>
+<span data-ttu-id="7cbaa-131">A tabela a seguir mostra as propriedades que são necessárias ao criar um usuário.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-131">The following table shows the properties that are required when you create a user.</span></span>
 
-| <span data-ttu-id="b9280-133">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="b9280-133">Parameter</span></span> | <span data-ttu-id="b9280-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="b9280-134">Type</span></span> | <span data-ttu-id="b9280-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="b9280-135">Description</span></span>|
+| <span data-ttu-id="7cbaa-132">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="7cbaa-132">Parameter</span></span> | <span data-ttu-id="7cbaa-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="7cbaa-133">Type</span></span> | <span data-ttu-id="7cbaa-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="7cbaa-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b9280-136">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="b9280-136">accountEnabled</span></span> |<span data-ttu-id="b9280-137">booliano</span><span class="sxs-lookup"><span data-stu-id="b9280-137">boolean</span></span> |<span data-ttu-id="b9280-138">true se a conta estiver habilitada; caso contrário, false.</span><span class="sxs-lookup"><span data-stu-id="b9280-138">true if the account is enabled; otherwise, false.</span></span>|
-|<span data-ttu-id="b9280-139">displayName</span><span class="sxs-lookup"><span data-stu-id="b9280-139">displayName</span></span> |<span data-ttu-id="b9280-140">string</span><span class="sxs-lookup"><span data-stu-id="b9280-140">string</span></span> |<span data-ttu-id="b9280-141">Nome de exibição no catálogo de endereços do usuário.</span><span class="sxs-lookup"><span data-stu-id="b9280-141">The name to display in the address book for the user.</span></span>|
-|<span data-ttu-id="b9280-142">onPremisesImmutableId</span><span class="sxs-lookup"><span data-stu-id="b9280-142">onPremisesImmutableId</span></span> |<span data-ttu-id="b9280-143">string</span><span class="sxs-lookup"><span data-stu-id="b9280-143">string</span></span> |<span data-ttu-id="b9280-144">Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.</span><span class="sxs-lookup"><span data-stu-id="b9280-144">Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.</span></span>|
-|<span data-ttu-id="b9280-145">mailNickname</span><span class="sxs-lookup"><span data-stu-id="b9280-145">mailNickname</span></span> |<span data-ttu-id="b9280-146">string</span><span class="sxs-lookup"><span data-stu-id="b9280-146">string</span></span> |<span data-ttu-id="b9280-147">O alias de email do usuário.</span><span class="sxs-lookup"><span data-stu-id="b9280-147">The mail alias for the user.</span></span>|
-|<span data-ttu-id="b9280-148">passwordProfile</span><span class="sxs-lookup"><span data-stu-id="b9280-148">passwordProfile</span></span>|[<span data-ttu-id="b9280-149">PasswordProfile</span><span class="sxs-lookup"><span data-stu-id="b9280-149">PasswordProfile</span></span>](../resources/passwordprofile.md) |<span data-ttu-id="b9280-150">O perfil de senha do usuário.</span><span class="sxs-lookup"><span data-stu-id="b9280-150">The password profile for the user.</span></span>|
-|<span data-ttu-id="b9280-151">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="b9280-151">userPrincipalName</span></span> |<span data-ttu-id="b9280-152">string</span><span class="sxs-lookup"><span data-stu-id="b9280-152">string</span></span> |<span data-ttu-id="b9280-153">Nome UPN (usuario@contoso.com).</span><span class="sxs-lookup"><span data-stu-id="b9280-153">The user principal name (someuser@contoso.com).</span></span>|
+|<span data-ttu-id="7cbaa-135">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="7cbaa-135">accountEnabled</span></span> |<span data-ttu-id="7cbaa-136">booliano</span><span class="sxs-lookup"><span data-stu-id="7cbaa-136">boolean</span></span> |<span data-ttu-id="7cbaa-137">true se a conta estiver habilitada; caso contrário, false.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-137">true if the account is enabled; otherwise, false.</span></span>|
+|<span data-ttu-id="7cbaa-138">displayName</span><span class="sxs-lookup"><span data-stu-id="7cbaa-138">displayName</span></span> |<span data-ttu-id="7cbaa-139">string</span><span class="sxs-lookup"><span data-stu-id="7cbaa-139">string</span></span> |<span data-ttu-id="7cbaa-140">Nome de exibição no catálogo de endereços do usuário.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-140">The name to display in the address book for the user.</span></span>|
+|<span data-ttu-id="7cbaa-141">onPremisesImmutableId</span><span class="sxs-lookup"><span data-stu-id="7cbaa-141">onPremisesImmutableId</span></span> |<span data-ttu-id="7cbaa-142">string</span><span class="sxs-lookup"><span data-stu-id="7cbaa-142">string</span></span> |<span data-ttu-id="7cbaa-143">Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-143">Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.</span></span>|
+|<span data-ttu-id="7cbaa-144">mailNickname</span><span class="sxs-lookup"><span data-stu-id="7cbaa-144">mailNickname</span></span> |<span data-ttu-id="7cbaa-145">string</span><span class="sxs-lookup"><span data-stu-id="7cbaa-145">string</span></span> |<span data-ttu-id="7cbaa-146">O alias de email do usuário.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-146">The mail alias for the user.</span></span>|
+|<span data-ttu-id="7cbaa-147">passwordProfile</span><span class="sxs-lookup"><span data-stu-id="7cbaa-147">passwordProfile</span></span>|[<span data-ttu-id="7cbaa-148">PasswordProfile</span><span class="sxs-lookup"><span data-stu-id="7cbaa-148">PasswordProfile</span></span>](../resources/passwordprofile.md) |<span data-ttu-id="7cbaa-149">O perfil de senha do usuário.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-149">The password profile for the user.</span></span>|
+|<span data-ttu-id="7cbaa-150">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="7cbaa-150">userPrincipalName</span></span> |<span data-ttu-id="7cbaa-151">string</span><span class="sxs-lookup"><span data-stu-id="7cbaa-151">string</span></span> |<span data-ttu-id="7cbaa-152">Nome UPN (usuario@contoso.com).</span><span class="sxs-lookup"><span data-stu-id="7cbaa-152">The user principal name (someuser@contoso.com).</span></span>|
 
-<span data-ttu-id="b9280-154">Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="b9280-154">Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.</span></span>
+<span data-ttu-id="7cbaa-153">Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-153">Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="b9280-155">Os usuários federados criados usando essa API serão forçados a entrar a cada 12 horas por padrão.</span><span class="sxs-lookup"><span data-stu-id="b9280-155">Federated users created using this API will be forced to sign-in every 12 hours by default.</span></span>  <span data-ttu-id="b9280-156">Para obter mais informações sobre como alterar isso, confira [exceções para vidas úteis de token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span><span class="sxs-lookup"><span data-stu-id="b9280-156">For more information on how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span></span>
+><span data-ttu-id="7cbaa-154">Os usuários federados criados usando essa API serão forçados a entrar a cada 12 horas por padrão.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-154">Federated users created using this API will be forced to sign-in every 12 hours by default.</span></span>  <span data-ttu-id="7cbaa-155">Para obter mais informações sobre como alterar isso, confira [exceções para vidas úteis de token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span><span class="sxs-lookup"><span data-stu-id="7cbaa-155">For more information on how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span></span>
 
-## <a name="response"></a><span data-ttu-id="b9280-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="b9280-157">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7cbaa-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="7cbaa-156">Response</span></span>
 
-<span data-ttu-id="b9280-158">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b9280-158">If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="7cbaa-157">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-157">If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b9280-159">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b9280-159">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7cbaa-158">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7cbaa-158">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="b9280-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b9280-160">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="7cbaa-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7cbaa-159">Request</span></span>
 
-<span data-ttu-id="b9280-161">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b9280-161">Here is an example of the request.</span></span>
+<span data-ttu-id="7cbaa-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-160">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
@@ -91,11 +91,11 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="b9280-162">No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="b9280-162">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
+<span data-ttu-id="7cbaa-161">No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="7cbaa-161">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="b9280-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="b9280-163">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="7cbaa-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="7cbaa-162">Response</span></span>
 
-<span data-ttu-id="b9280-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b9280-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7cbaa-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7cbaa-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,11 +122,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b9280-167">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="b9280-167">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b9280-168">C#</span><span class="sxs-lookup"><span data-stu-id="b9280-168">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="7cbaa-166">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="7cbaa-166">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="7cbaa-167">C#</span><span class="sxs-lookup"><span data-stu-id="7cbaa-167">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b9280-169">Javascript</span><span class="sxs-lookup"><span data-stu-id="b9280-169">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7cbaa-168">Javascript</span><span class="sxs-lookup"><span data-stu-id="7cbaa-168">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
 
 ---
