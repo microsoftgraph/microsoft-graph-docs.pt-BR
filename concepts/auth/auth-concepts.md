@@ -4,12 +4,12 @@ description: Para chamar o Microsoft Graph, o aplicativo deve adquirir um token 
 author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2578d7d4533577e88993e5c83884b393c78dc2af
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7e532867c9d92e2c2a7dd27e2e17a51fcbc1d2d4
+ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951219"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017763"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 
@@ -76,6 +76,15 @@ As _permissões efetivas_ são as permissões que seu aplicativo terá ao fazer 
 - No caso de permissões delegadas, as permissões efetivas do aplicativo estarão na interseção menos privilegiada das permissões delegadas que o aplicativo recebeu (por meio de consentimento) e dos privilégios do usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por exemplo, digamos que o aplicativo recebeu a permissão delegada User.ReadWrite.All. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
   
 - No caso de permissões de aplicativo, as permissões efetivas do aplicativo estarão no nível completo de privilégios implícitos na permissão. Por exemplo, um aplicativo que tem a permissão de aplicativo User.ReadWrite.All pode atualizar o perfil de todos os usuários na organização.
+
+>**Observação** Por padrão, os aplicativos que receberam permissões de aplicativo para os seguintes conjuntos de dados podem acessar todas as caixas de correio na organização:
+
+- [Calendários](../permissions-reference.md#calendars-permissions)
+- [Contatos](../permissions-reference.md#contacts-permissions)
+- [Email](../permissions-reference.md#mail-permissions)
+- [Configurações da Caixa de Correio](../permissions-reference.md#mail-permissions)
+
+>Os administradores podem configurar a [política de acesso a aplicativos](../auth-limit-mailbox-access.md) para limitar o acesso do aplicativo a caixas de correio _específicas_. 
 
 Para obter uma lista completa das permissões do Microsoft Graph e saber quais permissões precisam de autorização de um administrador, confira a [Referência de permissões](../permissions-reference.md).
 
