@@ -3,11 +3,11 @@ title: tipo de recurso workbookNamedItem
 description: Representa um nome definido para um intervalo de células ou um valor. Os nomes podem ser objetos nomeados primitivos (conforme exibido no tipo abaixo), objetos de intervalo ou uma referência a um intervalo. Use esse objeto para obter um objeto de intervalo associado aos nomes.
 localization_priority: Normal
 ms.openlocfilehash: 49267379385a13b94e8639e4c129c05192b2ae6f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348511"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084079"
 ---
 # <a name="workbooknameditem-resource-type"></a>tipo de recurso workbookNamedItem
 
@@ -37,7 +37,7 @@ Representa um nome definido para um intervalo de células ou um valor. Os nomes 
 |value|string|Representa a fórmula à qual o nome está definido para fazer referência. Por exemplo, =Plan14!$B$2:$H$12, =4,75, etc. Somente leitura.|
 |visible|booliano|Determina se o objeto fica visível ou não.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |planilha|[workbookWorksheet](workbookworksheet.md)|Retorna a planilha em que o item nomeado está no escopo. Disponível somente se o item estiver com escopo de planilha. Somente leitura.|
