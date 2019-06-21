@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso chatMessage
 description: Representa uma mensagem de chat individual dentro de uma entidade de canal ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
-localization_priority: Priority
-author: nkramer
+localization_priority: Normal
+author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea21d57134643c83406f449ee7cdad192afc0326
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: 269041dece2ab626c5f3d0ecccbf70d62c296ede
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709408"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084044"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -22,14 +22,17 @@ A mensagem pode ser uma mensagem raiz ou parte de um thread definido pela propri
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[List Channel messages](../api/channel-list-messages.md) | [chatmessage](chatmessage.md) collection | Obtenha uma lista de todas as mensagens raiz em um canal.|
-|[Get Channel message](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Obtenha uma mensagem raiz única de um canal.|
-|[List replies to a message](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) collection| Obtenha a lista de todas as respostas a uma mensagem no canal.|
-|[Get a reply to a message](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Obtenha uma resposta a uma mensagem única em um canal.|
-|[Criar uma chatMessage em um canal](../api/channel-post-messages.md) | [chatmessage](chatmessage.md)| Crie uma nova mensagem de nível superior em um canal.|
-|[Criar uma resposta chatMessage em um canal](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Responder a uma mensagem existente em um canal.|
-|[Listar mensagens em um bate-papo](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. |
+|[List Channel messages](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | Lista de todas as mensagens raiz em um canal.|
+|[Get Channel message](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Obtenha uma mensagem raiz única de um canal.|
+|[List replies to a message](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| Lista de todas as respostas a uma mensagem no canal.|
+|[Get a reply to a message](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Obtenha uma resposta a uma mensagem única em um canal.|
+|[Criar uma chatMessage em um canal](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Crie uma nova mensagem de nível superior em um canal.|
+|[Responder a uma mensagem em um canal](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Responder a uma mensagem existente em um canal.|
+|[Listar mensagens em um bate-papo](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Liste mensagens em um bate-papo em grupo ou 1:1. |
 |[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
+|[Listar todas as imagens hospedadas](../api/chatmessagehostedimage-list-hostedimages.md) | coleção [hostedImage](../resources/chatmessagehostedimage.md)| Obtenha todas as imagens hospedadas em uma mensagem.|
+|[Obter imagem hospedada](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | Obtenha uma imagem hospedada de uma mensagem.|
+|[Obter bytes da imagem hospedada](../api/chatmessagehostedimage-getbytes.md) | dados binários de imagem | Obtenha dados binários de imagem de uma imagem hospedada em uma mensagem.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -51,7 +54,6 @@ A mensagem pode ser uma mensagem raiz ou parte de um thread definido pela propri
 |importância| chatMessageImportance | A importância da mensagem. Os valores possíveis são: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reações para esta mensagem (por exemplo, Curtir).|
 |localidade|cadeia de caracteres|Local da mensagem definido pelo cliente.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 
