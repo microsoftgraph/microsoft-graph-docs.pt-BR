@@ -3,12 +3,12 @@ title: 'Paginação de dados do Microsoft Graph em seu aplicativo '
 description: 'Propriedade odata.nextLink` na resposta que contém uma URL para a próxima página de resultados. '
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 6a19d1873057f5a6f6ea1749a6941389b9be8eb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8c39ff697de2d6afdb2f24c1ec99d2ce5a89b32c
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564173"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133800"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Paginação de dados do Microsoft Graph em seu aplicativo 
 
@@ -41,3 +41,8 @@ O comportamento de paginação varia entre diferentes APIs do Microsoft Graph. A
 - APIs diferentes podem ter tamanhos padrão e máximo de página diferentes.
 - APIs diferentes poderão se comportar de maneira diferente se você especificar um tamanho de página (por meio do parâmetro de consulta `$top`) que exceda o tamanho máximo de página para essa API. Dependendo da API, o tamanho de página solicitado pode ser ignorado, ele pode usar por padrão o tamanho máximo de página para essa API ou o Microsoft Graph pode retornar um erro. 
 - Nem todos os recursos ou relações dão suporte à paginação. Por exemplo, consultas em relação a [directoryRoles](/graph/api/resources/directoryrole?view=graph-rest-1.0) não dão suporte à paginação. Isso inclui os objetos de função de leitura e os membros de função.
+
+## <a name="learn-more-about-paging"></a>Saiba mais sobre paginação
+O vídeo a seguir apresenta a paginação no Microsoft Graph.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/DB_NoC9a1JI]

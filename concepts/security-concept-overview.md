@@ -4,20 +4,24 @@ description: Você pode usar a API de Segurança do Microsoft Graph para se cone
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: b4a858182f1fca4ce123af05d271d68fc13088f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1036a41a8447b1f6305adf763b200b17fbfa37dd
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564188"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133835"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
 Você pode usar a API de Segurança do Microsoft Graph para se conectar aos produtos, serviços e parceiros de segurança da Microsoft para simplificar operações de segurança e melhorar a proteção contra ameaças, a detecção de ameaças e a capacidade de resposta. A API de Segurança do Microsoft Graph é um serviço (ou agente) intermediário que proporciona uma interface de programação única para conectar diversos [provedores de Segurança do Microsoft Graph](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0) (também chamados provedores de segurança ou provedores). As solicitações para a API de Segurança do Microsoft Graph são federadas para todos os provedores de segurança aplicáveis. Os resultados são agregados e retornam ao aplicativo solicitantes em um esquema comum, como mostrado no diagrama a seguir. Para saber detalhes, confira o[ fluxo de dados da API de Segurança do Microsoft Graph](security-dataflow.md).
 
+
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
 Para informações sobre autorização, confira [Autorização e a API de Segurança do Microsoft Graph](security-authorization.md). Para saber mais sobre permissões, incluindo permissões delegadas e de aplicativos, confira [Permissões](permissions-reference.md#security-permissions).
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/ZXkKjkxdrB4]
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Por que usar a API de Segurança do Microsoft Graph?
 

@@ -3,12 +3,12 @@ title: Adicionar dados personalizados aos recursos usando extensões
 description: O Microsoft Graph fornece um único ponto de extremidade de API que lhe dá acesso a dados e insights avançados centrados em pessoas através de uma série de recursos, como usuário e mensagem. Você também pode ampliar o Microsoft Graph com seus próprios dados de aplicativo. Você pode adicionar propriedades personalizadas aos recursos do Microsoft Graph sem a necessidade de um repositório de dados externos.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 7b1789fb12a971dab3b5ad591bc65fc49b85c76e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c14e9b328d8572142bf19ac232c3405e60b2da4
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526213"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133842"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Adicionar dados personalizados aos recursos usando extensões
 
@@ -46,6 +46,8 @@ Você pode usar extensões em todos esses recursos ao se conectar com uma conta 
 
 [Extensões abertas](/graph/api/resources/opentypeextension?view=graph-rest-1.0) (anteriormente conhecidas como extensões de dados do Office 365) são [tipos abertos](https://www.odata.org/getting-started/advanced-tutorial/#openType) que oferecem uma maneira flexível de adicionar dados de aplicativo não tipados diretamente a uma instância do recurso.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
+
 As extensões abertas, juntamente com seus dados personalizados, podem ser acessadas por meio da propriedade de navegação **extensões** da instância do recurso.
 A propriedade **extensionName** é a única propriedade _predefinida_ gravável em uma extensão aberta. Ao criar uma extensão aberta, você deve atribuir à propriedade **extensionName** um nome exclusivo no locatário.
 
@@ -61,7 +63,11 @@ Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usand
 
 ## <a name="schema-extensions"></a>Extensões de esquema
 
+
 [As extensões de esquema](/graph/api/resources/schemaextension?view=graph-rest-1.0) permitem que você defina um esquema que você pode usar para estender um tipo de recurso. Primeiro, crie a definição de extensão de esquema. Em seguida, use-a para estender instâncias de recurso com dados personalizados fortemente tipados. Além disso, você pode controlar o [status](#schema-extensions-lifecycle) da extensão de esquema e permitir que ela seja descoberta por outros aplicativos. Esses aplicativos, por sua vez, podem usar a extensão para seus dados e criar experiências adicionais nela.
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
 Ao criar uma definição de extensão de esquema, você deve fornecer um nome exclusivo para sua **id**. Há duas opções de nomes:
 
@@ -146,6 +152,7 @@ Nas limitações conhecidas usando extensões, veja a [seção extensões](known
 
 ## <a name="see-also"></a>Confira também
 
-- [Domínios do Office 365](https://technet.microsoft.com/pt-BR/library/office-365-domains.aspx)
+- 
+  [Domínios do Office 365](https://technet.microsoft.com/pt-BR/library/office-365-domains.aspx)
 
 - [Adição e verificação de um domínio para um locatário do Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

@@ -3,12 +3,12 @@ title: Visão geral da API de armazenamento de arquivos do OneDrive
 description: O OneDrive é a central de arquivos no Office 365.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 9bbc5158140930081beb665580b3f8344f6a1738
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 61e94a9e7fe9e708762ae5e45c69bd54b8be0ef6
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560764"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133772"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>Visão geral da API de armazenamento de arquivos do OneDrive
 
@@ -20,6 +20,8 @@ Os arquivos no Office 365 são armazenados em [unidades][Drive API].
 Os usuários podem armazenar arquivos em uma unidade pessoal, o OneDrive pessoal, ou em uma unidade compartilhada com a tecnologia de uma biblioteca de documentos do [SharePoint][].
 A flexibilidade do OneDrive permite que os usuários colaborem como acharem melhor para eles.
 Os usuários podem compartilhar links para arquivos, copiar ou mover arquivos para unidades da equipe ou até mesmo anexar arquivos do OneDrive às mensagens de email no Outlook.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/vG-hQxFHCAE]
 
 ## <a name="why-integrate-with-onedrive-file-storage-in-the-cloud"></a>Por que se integrar ao armazenamento de arquivos do OneDrive na nuvem?
 

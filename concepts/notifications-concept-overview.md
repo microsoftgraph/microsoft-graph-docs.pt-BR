@@ -3,16 +3,18 @@ title: 'Ativando experiências de notificação centradas no ser humano usando n
 description: 'As notificações são uma das maneiras mais eficazes de se envolver novamente com os usuários do seu aplicativo. Uma ótima experiência de notificação pode ajudar a abrir um canal de comunicação quase em tempo real entre você e os usuários do aplicativo, o que pode aumentar o engajamento com o aplicativo no momento certo, ajudar os usuários a serem mais produtivos e alertá-los sobre eventos importantes ou ações oportunas que possam ser necessárias. '
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 2b604cc2cab4b08b15b609399574ed4864c002dd
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: b83e91be74de44dbd72315331964379992b811de
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036526"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133562"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>Ativando experiências de notificação centradas no ser humano usando notificações do Microsoft Graph
 
 As notificações são uma das formas mais eficazes de interagir com os usuários do seu aplicativo. Uma ótima experiência de notificação pode ajudar a abrir um canal de comunicação quase em tempo real entre você e seus usuários, o que pode aumentar o engajamento com o aplicativo no momento certo, tornar os usuários mais produtivos e alertá-los sobre eventos importantes ou ações necessárias.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/cmpPFhrS8ZA]
 
 Hoje, os usuários podem acessar seus aplicativos e serviços por meio de uma ampla variedade de plataformas e formatos. Essa combinação de dispositivos exige que você entenda e dê suporte a sistemas de notificação multiplataforma, mapeie usuários para pontos de extremidade e mantenha o estado de notificação em todos os dispositivos. 
 

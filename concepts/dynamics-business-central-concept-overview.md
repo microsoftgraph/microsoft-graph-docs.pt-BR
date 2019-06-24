@@ -6,15 +6,17 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 27e9a13b41ce2b8e46321eef2afc4e103248281b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aafc7e6f1f7a688d1f083c584ceedc8a11878866
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951184"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133737"
 ---
 # <a name="dynamics-365-business-central-api-overview-preview"></a>Visão geral da API do Dynamics 365 Business central (versão prévia)
 O Dynamics 365 Business central é uma solução de gerenciamento de negócios unificada e fácil de usar e adaptar, ajudando você a se conectar à sua empresa e tomar decisões mais inteligentes. Ele fornece uma visão completa de sua empresa, permitindo que você gerencie suas finanças, automatize e proteja sua cadeia de fornecimento, venda mais inteligente e aprimore o atendimento ao cliente, mantenha projetos no prazo e sob o orçamento e otimize as operações.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/na1kFk53cbk]
 
 ## <a name="why-integrate-with-dynamics-365-business-central"></a>Por que integrar com o Dynamics 365 Business central?
 Integrando seus aplicativos ao Dynamics 365 Business central, você pode criar experiências que abranjam suas necessidades de negócios. Você pode criar soluções que permitem que os usuários realizem as principais tarefas e funções de negócios. Você pode usar o Microsoft Graph para acessar e gerenciar seus finanças, trabalhar com contatos comerciais, criar e enviar documentos de vendas e compras e obter informações sobre relatórios financeiros.

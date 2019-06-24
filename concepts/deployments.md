@@ -1,12 +1,12 @@
 ---
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
-ms.openlocfilehash: 1eeb6c91f8c5162ae0b372e758a81d57aa0daa7a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 73d392bae722d0f719f836766e344da19c77c6b2
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599825"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133724"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -23,6 +23,8 @@ Cada ambiente de nuvem nacional é exclusivo e diferente do ambiente global da M
 Este artigo fornece informações sobre as diferentes implantações de nuvem nacional do Microsoft Graph e os recursos disponíveis para os desenvolvedores dentro de cada um.
 
 >**Observação:** O [Microsoft Graph data Connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) não dá suporte a nenhuma implantação nacional de nuvem. 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
 ## <a name="app-registration-and-token-service-root-endpoints"></a>Pontos de extremidade de registro de aplicativo e serviço de token
 

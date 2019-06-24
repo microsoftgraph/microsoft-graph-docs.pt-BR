@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: bae71d394cbc2dff682a4e0ce4aa93ab18c7b2d4
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: f468abd516fd83b50ebe3902edd1cef616698999
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812674"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084037"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,12 +18,44 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="june-2019"></a>Junho de 2019
 
-### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
+### <a name="directory-apis"></a>APIs de diretório
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | A propriedade de navegação [followSite](/graph/api/follow-site?view=graph-rest-beta) foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta) |
-| Adição        | Beta        | A propriedade de navegação [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta)foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta)  |
+| Adição | v1.0 | Adicionada a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
+| Adição | v1.0 | Adicionada a ação [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) no recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
+
+### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice?view=graph-rest-beta)<br/>[appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp?view=graph-rest-beta)<br/>[appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta)<br/>[deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector?view=graph-rest-beta)<br/>[iosikEv2VpnConfiguration](/graph/api/resources/intune-deviceconfig-iosikev2vpnconfiguration?view=graph-rest-beta)<br/>[roleScopeTagAutoAssignment](/graph/api/resources/intune-rbac-rolescopetagautoassignment?view=graph-rest-beta)<br/>[windows10DeviceFirmwareConfigurationInterface](/graph/api/resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[deviceManagementApplicabilityRuleDeviceMode](/graph/api/resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode?view=graph-rest-beta)<br/>[deviceManagementApplicabilityRuleOsEdition](/graph/api/resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition?view=graph-rest-beta)<br/>[deviceManagementApplicabilityRuleOsVersion](/graph/api/resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion?view=graph-rest-beta)<br/>[deviceManagementSettingComparison](/graph/api/resources/intune-deviceintent-devicemanagementsettingcomparison?view=graph-rest-beta)<br/>[iosVpnSecurityAssociationParameters](/graph/api/resources/intune-deviceconfig-iosvpnsecurityassociationparameters?view=graph-rest-beta)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[appInstallControlType](/graph/api/resources/intune-deviceconfig-appinstallcontroltype?view=graph-rest-beta)<br/>[appVulnerabilityTaskMitigationType](/graph/api/resources/intune-partnerintegration-appvulnerabilitytaskmitigationtype?view=graph-rest-beta)<br/>[changeUefiSettingsPermission](/graph/api/resources/intune-deviceconfig-changeuefisettingspermission?view=graph-rest-beta)<br/>[deviceAppManagementTaskCategory](/graph/api/resources/intune-partnerintegration-deviceappmanagementtaskcategory?view=graph-rest-beta)<br/>[deviceAppManagementTaskPriority](/graph/api/resources/intune-partnerintegration-deviceappmanagementtaskpriority?view=graph-rest-beta)<br/>[deviceAppManagementTaskStatus](/graph/api/resources/intune-partnerintegration-deviceappmanagementtaskstatus?view=graph-rest-beta)<br/>[deviceManagementApplicabilityRuleType](/graph/api/resources/intune-deviceconfig-devicemanagementapplicabilityruletype?view=graph-rest-beta)<br/>[deviceManagementComparisonResult](/graph/api/resources/intune-deviceintent-devicemanagementcomparisonresult?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnectorState](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnectorstate?view=graph-rest-beta)<br/>[deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype?view=graph-rest-beta)<br/>[macOSFileVaultRecoveryKeyTypes](/graph/api/resources/intune-deviceconfig-macosfilevaultrecoverykeytypes?view=graph-rest-beta)<br/>[managedAppNotificationRestriction](/graph/api/resources/intune-mam-managedappnotificationrestriction?view=graph-rest-beta)<br/>[mobileAppDependencyType](/graph/api/resources/intune-apps-mobileappdependencytype?view=graph-rest-beta)<br/>[secureBootWithDMAType](/graph/api/resources/intune-deviceconfig-securebootwithdmatype?view=graph-rest-beta)<br/>[vpnClientAuthenticationType](/graph/api/resources/intune-deviceconfig-vpnclientauthenticationtype?view=graph-rest-beta)<br/>[vpnDeadPeerDetectionRate](/graph/api/resources/intune-deviceconfig-vpndeadpeerdetectionrate?view=graph-rest-beta)<br/>[vpnEncryptionAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnencryptionalgorithmtype?view=graph-rest-beta)<br/>[vpnIntegrityAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnintegrityalgorithmtype?view=graph-rest-beta)<br/>[vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta)<br/>[vpnServerCertificateType](/graph/api/resources/intune-deviceconfig-vpnservercertificatetype?view=graph-rest-beta)<br/>[windows10DeviceModeType](/graph/api/resources/intune-deviceconfig-windows10devicemodetype?view=graph-rest-beta)<br/>|
+|Adição|beta|Foi adicionada a ação [updateStatus](/graph/api/intune-partnerintegration-deviceappmanagementtask-updatestatus?view=graph-rest-beta) em [deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta) |
+|Adição|beta|Foi adicionada a ação [assign](/graph/api/intune-rbac-rolescopetag-assign?view=graph-rest-beta) em [roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta) |
+|Adição|beta|Foi adicionada a função [compare](/graph/api/intune-deviceintent-devicemanagementtemplate-compare?view=graph-rest-beta) em [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta) |
+|Adição|beta|Foi adicionada a função [compare](/graph/api/intune-deviceintent-devicemanagementintent-compare?view=graph-rest-beta) em [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) |
+|Exclusão|Beta|Foram removidos os seguintes tipos de enumeração:<br/>**mobileAppDependecyType**<br/>|
+|Adição|beta|Foram adicionadas as propriedades **deviceManagementApplicabilityRuleOsEdition**, **deviceManagementApplicabilityRuleOsVersion** e **deviceManagementApplicabilityRuleDeviceMode** à entidade [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta)|
+|Adição|beta|Foi adicionada a propriedade **securityKeyForSignIn** à entidade [deviceEnrollmentWindowsHelloForBusinessConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration?view=graph-rest-beta)|
+|Adição|beta|Foi adicionada a propriedade **roleScopeTagIds** à entidade [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta)|
+|Adição|beta|Foram adicionadas as propriedades **templateType** e **publishedDateTime** à entidade [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta)|
+|Adição|beta|Foram adicionadas as propriedades **customPrivacyMessage** à entidade [intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile?view=graph-rest-beta)|
+|Adição|beta|Foram adicionadas as propriedades **fileVaultEnabled**, **fileVaultSelectedRecoveryKeyTypes**, **fileVaultInstitutionalRecoveryKeyCertificate**, **fileVaultInstitutionalRecoveryKeyCertificateFileName**, **fileVaultPersonalRecoveryKeyHelpMessage**, **fileVaultAllowDeferralUntilSignOut**, **fileVaultNumberOfTimesUserCanIgnore**, **fileVaultDisablePromptAtSignOut** e **fileVaultPersonalRecoveryKeyRotationInMonths** à entidade [macOSEndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-macosendpointprotectionconfiguration?view=graph-rest-beta)|
+|Adição|beta|Foi adicionada a propriedade **notificationRestriction** à entidade [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
+|Alteração|beta|Alterado o tipo das seguintes propriedades na entidade [mobileAppDependency](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta):<br/>**dependencyType** de [mobileAppDependecyType](/graph/api/resources/intune-apps-mobileappdependecytype?view=graph-rest-beta) para [mobileAppDependencyType](/graph/api/resources/intune-apps-mobileappdependencytype?view=graph-rest-beta)<br/>|
+|Adição|beta|Foi adicionada a propriedade **deviceGuardSecureBootWithDMA** à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
+|Adição|beta|Foram adicionadas as propriedades **smartScreenAppInstallControl** e **lockScreenActivateAppsWithVoice** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
+|Adição|beta|Foi adicionada a propriedade de navegação **deviceAppManagementTasks** à entidade [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta)|
+|Adição|beta|Foi adicionada a propriedade de navegação **domainJoinConnectors** à entidade [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
+|Adição|beta|Foi adicionada a propriedade de navegação **assignments** à entidade [roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta)|
+|Adição|beta|Foi adicionada a propriedade **isReadOnly** ao tipo complexo [omaSettingInteger](/graph/api/resources/intune-deviceconfig-omasettinginteger?view=graph-rest-beta)|
+|Adição|beta|Foram adicionadas as propriedades **v10_1809** e **v10_1903** ao tipo complexo [windowsMinimumOperatingSystem](/graph/api/resources/intune-apps-windowsminimumoperatingsystem?view=graph-rest-beta)|
+|Adição|beta|Foi adicionado o membro **wpa2Enterprise** ao tipo enum [androidWiFiSecurityType](/graph/api/resources/intune-deviceconfig-androidwifisecuritytype?view=graph-rest-beta)|
+|Adição|beta|Foi adicionado o membro **ikEv2** ao tipo enum [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta)|
+|Adição|beta|Foram adicionados os membros **rotateFileVaultKey** e **getFileVaultKey** ao tipo enum [remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta)|
+|Adição|beta|Foi adicionado o membro **sharedSecret** ao tipo enum [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
+|Adição|beta|Foram adicionados os membros **windows10Home**, **windows10HomeChina**, **windows10HomeN**, **windows10HomeSingleLanguage**, **windows10Mobile**, **windows10IoTCore** e **windows10IoTCoreCommercial** ao tipo enum [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta)|
 
 ### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 
@@ -31,7 +63,27 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionado o recurso [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) e os métodos associados. |
 
+### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta        | A propriedade de navegação [followSite](/graph/api/follow-site?view=graph-rest-beta) foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta) |
+| Adição        | Beta        | A propriedade de navegação [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta)foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta)  |
+
+### <a name="outlook-mail-calendar-contacts"></a>Email, calendário e contatos do Outlook
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Foi adicionada a entidade[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0), que é derivada e suporta os métodos da entidade [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0). |
+| Adição | v1.0 e beta | Foi adicionada a capacidade de administradores limitaram o acesso do aplicativo apenas às caixas de correio específicas, mesmo quando um aplicativo recebe permissões de aplicativo para email, configurações de caixa de correio, calendários ou contatos. Para obter mais detalhes, Confira [Escopo de permissões do aplicativo para caixas de correio específicas do Exchange Online](auth-limit-mailbox-access.md). |
+
+
 ## <a name="may-2019"></a>Maio de 2019
+
+### <a name="directory-apis"></a>APIs de diretório
+| **Tipo de alteração** | **Versão** | **Descrição** |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade **assignedlabels** à entidade do [grupo](https://docs.microsoft.com/pt-BR/graph/api/resources/group?view=graph-rest-beta). Essa propriedade representa a lista de pares de rótulos de confidencialidade (ID do rótulo, nome do rótulo) associados a um grupo.
 
 ### <a name="education-apis"></a>APIs de educação
 | Tipo de alteração | Versão | Descrição                                                                                                                                                      |
@@ -42,25 +94,6 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição    | beta    | [Delta](/graph/delta-query-overview) adicionado a [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta).                                       |
 | Adição    | beta    | [Delta](/graph/delta-query-overview) adicionado a [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta).                                         |
 | Adição    | beta    | Opção `faculty` adicionada à enumeração [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values).                              |
-### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
-
-| **Tipo de alteração** | **Versão** | **Descrição**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Adição        | Beta        | Adicionou a propriedade **urgente** a enumeração[chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta).|
-| Adição        | Beta        | Adicionada a propriedadede navegação **hostedContents** à entidade [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
-| Adição        | Beta        | Adicionado a entidade **chatMessageHostedContent** para representar o conteúdo hospedado pelo Microsoft Teams associado a um [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). |
-
-### <a name="reports-apis"></a>APIs de relatórios
-
-| **Tipo de alteração** | **Versão** | **Descrição**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Adição        | Beta  | Adicionada a propriedade **ownerPrincipalName** à entidade [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
-| Adição        | Beta  | Adicionada a propriedade **ownerPrincipalName** à entidade [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
-
-### <a name="directory-apis"></a>APIs de diretório
-| **Tipo de alteração** | **Versão** | **Descrição** |
-| :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionada a propriedade **assignedlabels** à entidade do [grupo](https://docs.microsoft.com/pt-BR/graph/api/resources/group?view=graph-rest-beta). Essa propriedade representa a lista de pares de rótulos de confidencialidade (ID do rótulo, nome do rótulo) associados a um grupo.
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 |Tipo de alteração|Versão|Descrição|
@@ -104,13 +137,20 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionado o membro **derivedCredential** ao tipo enum [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro **derivedCredential** ao tipo enum [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta)|
 
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 
-### <a name="outlook-mail"></a>Email do Outlook
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta        | Adicionou a propriedade **urgente** a enumeração[chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta).|
+| Adição        | Beta        | Adicionada a propriedadede navegação **hostedContents** à entidade [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
+| Adição        | Beta        | Adicionado a entidade **chatMessageHostedContent** para representar o conteúdo hospedado pelo Microsoft Teams associado a um [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). |
 
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Adicionada a entidade[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0), que é derivada e suporta os métodos da entidade [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0). |
+### <a name="reports-apis"></a>APIs de relatórios
 
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta  | Adicionada a propriedade **ownerPrincipalName** à entidade [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
+| Adição        | Beta  | Adicionada a propriedade **ownerPrincipalName** à entidade [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 
 ### <a name="risky-users-api"></a>Usuários arriscados API
 
@@ -190,8 +230,9 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição |v1.0 | Foi adicionado suporte para permissões do aplicativo para o recurso [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0).|
 |Adição |v1.0| Adicionar o **email** e propriedades **webUrl** para o [canal](/graph/api/resources/channel?view=graph-rest-1.0).|
-| Adição | beta | Foram adicionados os recursos do [chat](/api-reference/beta/resources/chat.md) e métodos associados. |
-| Adição | beta | Adicionados os recursos de [membro de conversação](/api-reference/beta/resources/conversationmember.md) e métodos associados. |
+|Adição | beta | Foram adicionados os recursos do [chat](/api-reference/beta/resources/chat.md) e métodos associados. |
+|Adição |beta| APIs adicionadas para ler[imagens](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta) em mensagens.|
+|Adição | beta | Adicionados os recursos de [membro de conversação](/api-reference/beta/resources/conversationmember.md) e métodos associados. |
 
 ### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
 
@@ -2046,16 +2087,16 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | v1.0        | A propriedade **driveType** foi adicionada ao tipo complexo [ItemReference][]. |
 | Adição        | v1.0        | As propriedades **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** e **frameRate** foram adicionadas ao tipo complexo [Video][]. |
 | Adição        | beta        | A propriedade **system** foi adicionada ao recurso [Drive][Drive-beta]. |
-| Adição        | beta        | A relação **activities** foi adicionada ao recurso [Drive][Drive-beta]. |
-| Adição        | beta        | A propriedade **publication** foi adicionada ao recurso [DriveItem][DriveItem-beta]. |
-| Adição        | beta        | As relações **activities** e **versions** foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
+| Adição        | beta        | A relação **atividades** foi adicionada ao recurso [Drive][Drive-beta]. |
+| Adição        | beta        | A propriedade **publicação** foi adicionada ao recurso [DriveItem][DriveItem-beta]. |
+| Adição        | beta        | As relações **atividades** e **versões** foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
 | Adição        | beta        | Foram adicionadas novas entidades: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]. |
-| Adição        | beta        | Foram adicionados novos tipos complexos: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta] e [VersionAction][VersionAction-beta]. |
+| Adição        | beta        | Novos tipos complexos foram adicionados: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta] e [VersionAction][VersionAction-beta]. |
 | Adição        | beta        | A propriedade **driveType** foi adicionada ao tipo complexo [ItemReference][ItemReference-beta]. |
-| Exclusão        | beta        | Remoção da propriedade **tenantId** do tipo complexo [SharepointIds][SharepointIds-beta]. |
+| Exclusão        | beta        | A propriedade **tenantId** foi removida do tipo complexo [SharepointIds][SharepointIds-beta]. |
 | Adição        | v1.0        | As propriedades **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** e **frameRate** foram adicionadas ao tipo complexo [Video][Video-beta]. |
-| Adição        | beta        | As ações [CheckIn][CheckIn-beta] e [CheckOut][CheckOut-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
-| Adição        | beta        | As propriedades **expirationDateTime**, **password**, **message** e **recipients** na ação [CreateLink][CreateLink-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
+| Adição        | beta        | As ações [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
+| Adição        | beta        | As propriedades **expirationDateTime**, **senha**, **mensagem** e **destinatários** foram adicionadas ao recurso [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta]. |
 
 [Drive]: /graph/api/resources/drive?view=graph-rest-1.0
 [DriveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
@@ -2134,12 +2175,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | v1.0        | Foram adicionadas novas entidades: [ColumnDefinition][], [ColumnLink][], [ContentType][], [List][], [ListItem][]. |
 | Adição        | v1.0        | As relações **columns**, **contentTypes**, **items** e **lists** foram adicionadas ao recurso [Site][]. |
 | Adição        | v1.0        | Foram adicionados novos tipos complexos: [BooleanColumn][], [CalculatedColumn][], [ChoiceColumn][], [ContentTypeInfo][], [ContentTypeOrder][], [CurrencyColumn][], [DateTimeColumn][], [DefaultColumnValue][], [ListInfo][], [LookupColumn][], [NumberColumn][], [PersonOrGroupColumn][], [SystemFacet][], [TextColumn][]. |
-| Adição        | beta        | Foram adicionadas novas entidades: [BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta], [ContentType][ContentType-beta], [ListItemVersion][ListItemVersion-beta], |
-| Adição        | beta        | As propriedades **columnGroup**, **currency**, **defaultValue** e **displayName** foram adicionadas à [ColumnDefinition][ColumnDefinition-beta]. |
-| Adição        | beta        | As propriedades **displayName** e **system** foram adicionadas ao recurso [List][List-beta]. |
-| Adição        | beta        | As relações **activities** e **contentTypes** foram adicionadas ao recurso [List][List-beta]. |
+| Adição        | beta        | Novas entidades foram adicionadas: [BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta], [ContentType][ContentType-beta], [ListItemVersion][ListItemVersion-beta], |
+| Adição        | beta        | As propriedades **columnGroup**, **moeda**, **defaultValue** e **displayName** foram adicionadas à [ColumnDefinition][ColumnDefinition-beta]. |
+| Adição        | beta        | As propriedades **displayName** e **sistema** foram adicionadas ao recurso [Lista][List-beta]. |
+| Adição        | beta        | As relações **atividades** e **contentTypes** foram adicionadas ao recurso [Lista][List-beta]. |
 | Adição        | beta        | As propriedade **contentType** foram adicionadas ao recurso [ListItem][ListItem-beta]. |
-| Adição        | beta        | As relações **activities** e **versions** foram adicionadas ao recurso [ListItem][ListItem-beta]. |
+| Adição        | beta        | As relações **atividades** e **versões** foram adicionadas ao recurso [ListItem][ListItem-beta]. |
 | Adição        | beta        | A relação **contentTypes** foi adicionada ao recurso [Site][Site-beta]. |
 | Adição        | beta        | A propriedade **outputType** foi adicionada ao tipo [BooleanColumn][BooleanColumn-beta]. |
 | Adição        | beta        | Foram adicionados novos tipos complexos: [ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta], [CurrencyColumn][CurrencyColumn-beta] e [SystemFacet][SystemFacet-beta]. |
@@ -2147,8 +2188,8 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | beta        | A propriedade **allowUnlimitedLength** foi adicionada ao tipo complexo [LookupColumn][LookupColumn-beta]. |
 | Alteração          | beta        | Renomeação da propriedade **allowMultipleValue** para **allowMultipleValues** no tipo complexo [LookupColumn][LookupColumn-beta]. |
 | Alteração          | beta        | Renomeação da propriedade **chooseFrom** para **chooseFromType** no tipo complexo [PersonOrGroupColumn][PersonOrGroupColumn-beta]. |
-| Exclusão        | beta        | Remoção da propriedade **locale** no tipo complexo [NumberColumn][NumberColumn-beta]. |
-| Exclusão        | beta        | Remoção da propriedade **enforceUniqueValues** do tipo complexo [PersonOrGroupColumn][PersonOrGroupColumn-beta]. |
+| Exclusão        | beta        | Remoção da propriedade **localidade** no tipo complexo [NumberColumn][NumberColumn-beta]. |
+| Exclusão        | beta        | A propriedade **enforceUniqueValues** foi removida do tipo complexo [PersonOrGroupColumn][PersonOrGroupColumn-beta]. |
 
 [BaseItemVersion-beta]: /graph/api/resources/baseitemversion?view=graph-rest-beta
 [BooleanColumn-beta]:  /graph/api/resources/booleanColumn?view=graph-rest-beta
@@ -2193,7 +2234,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | beta        | As propriedades **dataLocationCode** e **root** foram adicionadas ao tipo complexo [SiteCollection][SiteCollection-beta]. |
+| Adição        | beta        | As propriedades **dataLocationCode** e **raiz** foram adicionadas ao tipo complexo [SiteCollection][SiteCollection-beta]. |
 
 [SiteCollection-beta]: /graph/api/resources/sitecollection?view=graph-rest-beta
 

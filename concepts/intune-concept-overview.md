@@ -4,18 +4,20 @@ description: 'O Microsoft Intune ajuda as empresas a gerenciar dispositivos e ap
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 37c77147029f58625ee8a115dffebb91ee432b30
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a18096f53dfa88bd37b0cad11639c3b2285206e6
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951191"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133765"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Visão geral da API de dispositivos e aplicativos do Intune
 
 O Microsoft Intune ajuda as empresas a gerenciar dispositivos e aplicativos em uma organização. Você pode usar a API do Intune no Microsoft Graph para gerenciar dispositivos, aplicativos e até mesmo configurar o Intune enquanto usa suas ferramentas favoritas. 
 
 Se você for um ISV, também poderá usar a API do Intune para gerenciar locatários de clientes.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/yU1HeqNmN7A]
 
 ## <a name="why-integrate-with-intune"></a>Por que se integrar com o Intune?
 

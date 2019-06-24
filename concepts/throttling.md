@@ -3,12 +3,12 @@ title: Diretrizes de limitação do Microsoft Graph
 description: Os limites de controle limitam número de chamadas simultâneas para um serviço para evitar a utilização exagerada dos recursos. O Microsoft Graph foi projetado para lidar com um alto volume de solicitações. Se ocorrer um número impressionante de solicitações, a limitação ajuda a manter um desempenho ideal e a confiabilidade do serviço Microsoft Graph.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 8b3b8c5b0ec5a5209ad96f87dc677f4331c24e0b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 305487778c1c94996606e00febb023a69625b943
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580978"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133786"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -16,6 +16,8 @@ ms.locfileid: "32580978"
 Os limites de controle limitam número de chamadas simultâneas para um serviço para evitar a utilização exagerada dos recursos. O Microsoft Graph foi projetado para lidar com um alto volume de solicitações. Se ocorrer um número impressionante de solicitações, a limitação ajuda a manter um desempenho ideal e a confiabilidade do serviço Microsoft Graph.
 
 Os limites de controle variam de acordo com o cenário. Por exemplo, se você estiver executando um grande volume de gravações, a possibilidade de limitação é mais alta do que se você estiver realizando apenas leituras.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 
 ## <a name="what-happens-when-throttling-occurs"></a>O que acontece quando a limitação ocorre?
 

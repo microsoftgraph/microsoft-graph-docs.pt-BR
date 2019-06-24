@@ -4,16 +4,18 @@ description: O Excel é uma ferramenta de produtividade indispensável. Os usuá
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 940a8e055a6a730bd12a7ab73e7d3a611a63e53f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11e5cd85a066acf6ee1a3bfcdb659e30afe5cd75
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556127"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133723"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Visão geral da API de gráficos e pastas de trabalho do Excel
 
 O Excel é uma ferramenta de produtividade indispensável. Os usuários de todos os setores e funções o usam como uma ferramenta para armazenar, acompanhar e manipular todos os tipos de dados. Ele é usado para tudo, desde de um simples acompanhamento de tarefas e gerenciamento de dados até cálculos complexos e relatórios profissionais. Você pode usar a API REST do Excel no Microsoft Graph para ampliar o valor de seus dados, cálculos, relatórios e painéis.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/I1rSkJww2Dk]
 
 ## <a name="why-integrate-with-excel"></a>Por que integrar-se com o Excel?
 

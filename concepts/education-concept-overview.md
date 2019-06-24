@@ -4,20 +4,18 @@ description: A API educacional do Microsoft Graph aprimora os recursos do Office
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: f181441a9333d678ecb989eaa369e972b45ba570
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: ab3aec0748c2036ba25ac28a3c2ab7b0cd7e4112
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536509"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133716"
 ---
 # <a name="education-api-overview"></a>Visão geral da API de educação
 
 A API educacional do Microsoft Graph aprimora os recursos do Office 365 com informações relevantes para cenários educacionais, incluindo informações sobre escolas, aulas, usuários (alunos e professores), tarefas e trabalhos. Isso facilita a criação de soluções que se integrem aos recursos educacionais para vários cenários da escola e da sala de aula.
 
-A API educacional do Microsoft Graph fornece acesso a aulas, escolas, usuários, tarefas, trabalhos e muito mais.
-
-![Visão geral do EDU Graph](images/edugraph.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/EnDM7KMTEqQ]
 
 ## <a name="why-integrate-with-education-scenarios"></a>Por que se integrar aos cenários educativos?
 

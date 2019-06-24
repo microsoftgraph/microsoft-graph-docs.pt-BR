@@ -4,16 +4,18 @@ description: 'A conexão de dados do Microsoft Graph traz dados do Office 365 e 
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 2a7756223f7a94eafc62ed14f455e67a4aae880a
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 6f82fb3a9e9a5254f36049ab96be8adca41e7be5
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656416"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133744"
 ---
 # <a name="microsoft-graph-data-connect"></a>Conexão de dados do Microsoft Graph
 
 A conexão de dados do Microsoft Graph traz dados do Office 365 e recursos do Microsoft Azure para você através de um conjunto de ferramentas. Você pode usar a conexão de dados do Microsoft Graph para criar aplicativos inteligentes que acessam dados valiosos usando as melhores ferramentas de desenvolvimento oferecidas pela Microsoft, tudo isso dentro da nuvem segura da Microsoft. Todas as empresas estão interessadas em melhorar a produtividade, o que significa que a criação de produtos que tornam os trabalhadores do conhecimento mais produtivos apresenta grandes oportunidades.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/J1WGFRGnc7g]
 
 Você pode aproveitar a conexão de dados do Microsoft Graph se concordar com os [Termos de Uso das APIs da Microsoft](/legal/microsoft-apis/terms-of-use?context=/graph/context) e a [Declaração de privacidade da Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=123161) e são:
 

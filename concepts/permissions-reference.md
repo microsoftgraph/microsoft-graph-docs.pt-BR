@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: fae0b7cd490b32f7ae5691a93e164d1a9eb4a870
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+ms.openlocfilehash: e8751a246baedaf85867f28bbd5be0f656673677
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422497"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084051"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -180,6 +180,7 @@ Nenhuma.
 |_Calendars.Read_ |Ler calendários em todas as caixas de correio |Permite ao aplicativo ler eventos de todos os calendários sem um usuário conectado. |Sim |
 |_Calendars.ReadWrite_ |Ler e gravar calendários em todas as caixas de correio |Permite ao aplicativo criar, ler, atualizar e excluir eventos de todos os calendários sem um usuário conectado. |Sim |
 
+> Os Administradores **Importantes** podem configurar a [política de acesso ao aplicativo](auth-limit-mailbox-access.md) para limitar o acesso do aplicativo às caixas de correio _específicas_ e não a todas as caixas de correio na organização, mesmo que as permissões de aplicativo do Calendars.Read ou Calendars.ReadWrite sejam concedidas ao aplicativo. 
 <br/>
 
 ### <a name="example-usage"></a>Exemplo de uso
@@ -271,6 +272,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |_Contacts.Read_ |Ler contatos em todas as caixas de correio |Permite ao aplicativo ler todos os contatos em todas as caixas de correio sem um usuário conectado. |Sim |
 |_Contacts.ReadWrite_ |Ler e gravar contatos em todas as caixas de correio |Permite ao aplicativo criar, ler, atualizar e excluir todos os contatos em todas as caixas de correio sem um usuário conectado. |Sim |
 
+> Os Administradores **Importantes** podem configurar a [política de acesso ao aplicativo](auth-limit-mailbox-access.md) para limitar o acesso do aplicativo às caixas de correio _específicas_ e não a todas as caixas de correio na organização, mesmo que as permissões de aplicativo do Contacts.Read or Contacts.ReadWrite sejam concedidas ao aplicativo. 
+
 ### <a name="example-usage"></a>Exemplo de uso
 #### <a name="delegated"></a>Delegado
 
@@ -323,7 +326,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Directory.ReadWrite.All_ |Ler e gravar dados de diretório | Permite ao aplicativo ler e gravar dados no diretório da sua organização, como usuários e grupos. Não permite ao aplicativo excluir usuários ou grupos, ou redefinir senhas de usuário. | Sim | Não |
 | _Directory.AccessAsUser.All_ |Access Directory como o usuário conectado  | Permite ao aplicativo ter o mesmo acesso que o usuário conectado a informações no diretório. | Sim | Não |
 | _PrivilegedAccess.ReadWrite.AzureAD_ |Ler e gravar dados do Privileged Identity Management para diretório  | Permite que o aplicativo tenha acesso de leitura e gravação nas APIs do Privileged Identity Management do Azure AD. | Sim | Não |
-| _PrivilegedAccess.ReadWrite.AzureRBAC_ |Ler e gravar dados Privileged Identity Management de recursos do Azure | Permite que o aplicativo tenha acesso de leitura e gravação nas APIs do Privileged Identity Management dos recursos do Azure. | Sim | Não |
+| _PrivilegedAccess.ReadWrite.AzureResources_ |Ler e gravar dados Privileged Identity Management de recursos do Azure | Permite que o aplicativo tenha acesso de leitura e gravação nas APIs do Privileged Identity Management dos recursos do Azure. | Sim | Não |
 
 <br/>
 
@@ -351,9 +354,11 @@ A permissão _Directory.ReadWrite.All_ concede os seguintes privilégios:
 - Atualizar o proprietário do grupo
 - Gerenciar as atribuições de licença
 - Definir as extensões de esquema em aplicativos
+
 > **Observação**:
-> - Não há direitos para redefinir senhas de usuários
-> - Não há direitos para excluir recursos (incluindo usuários ou grupos)
+> - Nenhum direito de redefinir senhas de usuários.
+> - A atualização das propriedades **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida somente para usuários que não sejam administradores ou que tenham uma das seguintes funções atribuídas: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  Esse é o caso de aplicativos que receberam as permissões User.ReadWrite.All ou Directory.ReadWrite.All delegadas ou de aplicativo.
+> - Nenhum direito de excluir recursos (incluindo usuários ou grupos).
 > - Exclui especificamente a criação ou a atualização de recursos que não estão listados acima. Isso inclui: application, oAauth2Permissiongrant, appRoleAssignment, device, servicePrincipal, organization, domains e assim por diante.
 
 
@@ -681,6 +686,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Mail.Send_ |    Enviar email como qualquer usuário | Permite ao aplicativo enviar emails como qualquer usuário sem um usuário conectado. | Sim |
 | _MailboxSettings.Read_ |  Ler as configurações de caixa de correio do usuário | Permite que o aplicativo leia configurações da caixa de correio do usuário sem um usuário conectado. Não inclui a permissão para enviar emails. | Não |
 | _MailboxSettings.ReadWrite_ | Leia e grave todas as configurações de caixa de correio do usuário  | Permite que o aplicativo crie, leia, atualize e exclua as configurações da caixa de correio sem um usuário conectado. Não inclui a permissão para enviar emails. | Sim |
+
+> Os Administradores **Importantes** podem configurar a [política de acesso ao aplicativo](auth-limit-mailbox-access.md) para limitar o acesso do aplicativo às caixas de correio _específicas_ e não a todas as caixas de correio na organização, mesmo que as permissões de aplicativo do Mail.Read, Mail.ReadWrite, Mail.Send, MailboxSettings.Read, ou MailboxSettings.ReadWrite sejam concedidas ao aplicativo. 
+
 
 ### <a name="remarks"></a>Comentários
 
@@ -1129,7 +1137,6 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="remarks"></a>Comentários
 
-
 Com a permissão _User.Read_, um aplicativo também pode ler as informações básicas da empresa do usuário conectado de uma conta corporativa ou de estudante através do recurso [Organização](/graph/api/resources/organization?view=graph-rest-1.0). As propriedades a seguir estão disponíveis: id, displayName e verifiedDomains.
 
 Para contas corporativas ou de estudante, o perfil completo inclui todas as propriedades declaradas do recurso [Usuário](/graph/api/resources/user?view=graph-rest-1.0). No caso das leituras, somente um número limitado de propriedades é retornado por padrão. Para ler propriedades que não estão no conjunto padrão, use `$select`. As propriedades padrão são:
@@ -1153,13 +1160,15 @@ Para contas corporativas ou de estudante, o perfil completo inclui todas as prop
 - mobilePhone
 - mySite
 - pastProjects
-- Foto
+- photo
 - preferredName
 - responsibilities
 - schools
 - skills
 
 Com a Permissão de aplicativo _User.ReadWrite.All_, o aplicativo pode atualizar todas as propriedades declaradas das contas corporativas ou de estudante, com exceção da senha.
+
+Com a permissão _User.ReadWrite.All_ delegada ou de aplicativo, a atualização de **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não são administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 Para ler ou gravar os subordinados diretos (`directReports`) ou o gerente (`manager`) de uma conta corporativa ou de estudante, o aplicativo deve ter as permissões _User.Read.All_ (somente leitura) ou _User.ReadWrite.All_.
 
