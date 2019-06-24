@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: f468abd516fd83b50ebe3902edd1cef616698999
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: f14b36b11424b46fd092e155482b727f7b19dd4a
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084037"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133793"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,13 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="june-2019"></a>Junho de 2019
+
+
+### <a name="azure-ad-apis"></a>APIs do Azure AD
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta  | Apresentação do novo tipo de recurso [applicationTemplate](/graph/api/resources/applicationtemplate.md). Esse tipo de recurso dá suporte a [instanciar](/graph/api/applicationtemplate-instantiate.md), [listar](/graph/api/applicationtemplate-instantiate.md) e [obter](/graph/api/applicationtemplate-get.md) aplicativos da galeria do aplicativo Azure AD.|
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -63,6 +70,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionado o recurso [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) e os métodos associados. |
 
+
 ### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
@@ -70,7 +78,14 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | Beta        | A propriedade de navegação [followSite](/graph/api/follow-site?view=graph-rest-beta) foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta) |
 | Adição        | Beta        | A propriedade de navegação [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta)foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta)  |
 
+
+
+## <a name="may-2019"></a>Maio de 2019
+
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
+=======
 ### <a name="outlook-mail-calendar-contacts"></a>Email, calendário e contatos do Outlook
+
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |

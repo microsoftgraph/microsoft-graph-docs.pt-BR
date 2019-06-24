@@ -3,18 +3,20 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: e8751a246baedaf85867f28bbd5be0f656673677
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: 9d0d82eddf4aaf283942aa6213f28bdb9d589c65
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084051"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133758"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
 Para que o aplicativo acesse os dados no Microsoft Graph, o usuário ou administrador deve conceder a ele as permissões corretas por meio de um processo de consentimento. Este tópico lista as permissões associadas a cada grande conjunto de APIs do Microsoft Graph. Ele também fornece orientações sobre como usar as permissões.
 
-Para saber mais sobre como funcionam as permissões, confira [noções básicas de autenticação e autorização](auth/auth-concepts.md#microsoft-graph-permissions).
+Para saber mais sobre como funcionam as permissões, [Confira noções básicas de autenticação e autorização](auth/auth-concepts.md#microsoft-graph-permissions) e assista ao vídeo a seguir.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
 
 ## <a name="microsoft-graph-permission-names"></a>Nomes de permissões do Microsoft Graph
 
