@@ -7682,6 +7682,15 @@ items:
                 href: api/application-list-owners.md
               - name: Atribuir proprietários
                 href: api/application-post-owners.md
+              - name: Modelo de aplicativo
+                href: resources/applicationtemplate.md
+                items:
+                  - name: Listar modelos de aplicativo
+                    href: api/applicationtemplate-list.md
+                  - name: Obter modelo de aplicativo
+                    href: api/applicationtemplate-get.md
+                  - name: Criar um modelo de aplicativo
+                    href: api/applicationtemplate-instantiate.md
           - name: Logs de auditoria
             href: resources/azure-ad-auditlog-overview.md
             items:
@@ -8167,7 +8176,7 @@ items:
       - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/mail-api-overview.md
           - name: Mensagem
             href: resources/message.md
@@ -9263,7 +9272,7 @@ items:
             items:
               - name: Listar
                 href: api/outlookuser-list-taskgroups.md
-              - name: Create
+              - name: Criar
                 href: api/outlookuser-post-taskgroups.md
               - name: Obter
                 href: api/outlooktaskgroup-get.md
