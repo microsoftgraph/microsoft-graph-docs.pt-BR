@@ -4,16 +4,16 @@ description: " Não há suporte para as implantações híbridas do Intune. "
 author: tfitzmac
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 2dfeb5ff55670f3e11b175e0472359002b09bab6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c30436c80af8621b1c633d12a11489f7e586f00
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551809"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133849"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/pt-BR/cloud-platform/microsoft-intune-pricing) pelo cliente.
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) pelo cliente.
 
 A API do Microsoft Graph para Intune permite o acesso programático a informações do Intune para seu locatário; a API executa as mesmas operações do Intune disponíveis pelo **Portal do Azure**.  
 
@@ -37,6 +37,9 @@ O exemplo a seguir mostra como determinar se um aplicativo está instalado no di
 
     https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
+## <a name="accessing-the-microsoft-graph-api-for-intune"></a>Acessando a API do Microsoft Graph para o Intune
+
+O Intune tem suporte para [permissões delegadas](https://docs.microsoft.com/graph/auth-v2-user) e para [permissões do aplicativo](https://docs.microsoft.com/graph/auth-v2-service). As permissões delegadas têm suporte para operações de leitura e gravação. Atualmente, as permissões de aplicativo têm suporte apenas para operações de leitura. As permissões delegadas e de aplicativo oferecem suporte a aplicativos de locatário único, bem como a aplicativos multilocatários. Para obter mais informações sobre as permissões disponíveis por meio do Microsoft Graph, consulte [referência de permissões do Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference).
 
 ## <a name="using-permissions"></a>Usando permissões
 
