@@ -2,12 +2,12 @@
 title: tipo de recurso onenoteSection
 description: Uma seção em um bloco de anotações do OneNote. As seções podem conter páginas.
 localization_priority: Normal
-ms.openlocfilehash: d262065f46052c1cae55b42babaa91a2e065d3ef
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b07ea378a4338e22896d40065e35aa599db42832
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348469"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236626"
 ---
 # <a name="onenotesection-resource-type"></a>tipo de recurso onenoteSection
 
@@ -24,12 +24,12 @@ Uma seção em um bloco de anotações do OneNote. As seções podem conter pág
 |isDefault|Booliano|Indica se esta é a seção padrão do usuário. Somente leitura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a seção foi modificada pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|links|[sectionLinks](sectionlinks.md)|Links para abrir a seção. O `oneNoteClientURL` link abre a seção no cliente nativo do OneNote se ele estiver instalado. O `oneNoteWebURL` link abre a seção no OneNote online.|
+|links|[sectionLinks](sectionlinks.md)|Links para abrir a seção. O `oneNoteClientURL` link abre a seção no cliente nativo do OneNote se ele estiver instalado. O `oneNoteWebURL` link abre a seção no OneNote na Web.|
 |displayName|String|O nome da seção. |
 |pagesUrl|String|O `pages` ponto de extremidade onde você pode obter detalhes de todas as páginas da seção. Somente leitura.|
 |própria|String|O ponto de extremidade onde você pode obter detalhes sobre a seção. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |páginas|coleção [onenotePage](onenotepage.md)|Obtém o conjunto de páginas da seção.  Somente leitura. Anulável.|

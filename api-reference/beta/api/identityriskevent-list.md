@@ -4,18 +4,19 @@ description: Recupere uma lista de objetos identityriskevent.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 3f26b52f988a02e3a3f9f97ca9f78f7d5c8a6cc0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d6e19bf777b96226fa270c1f49301533b63a9cae
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328459"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236416"
 ---
 # <a name="list-identityriskevents"></a>Listar identityRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos identityriskevent.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -50,7 +51,7 @@ Este é um exemplo da solicitação.
   "name": "get_identityriskevents"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/identityRiskEvents
+GET https://graph.microsoft.com/beta/identityRiskEvents
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

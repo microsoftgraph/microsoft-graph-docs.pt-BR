@@ -2,12 +2,12 @@
 title: tipo de recurso recentNotebookLinks
 description: Links para abrir um bloco de anotações do OneNote. Esse tipo de recurso existe como uma propriedade em um recurso recentNotebook.
 localization_priority: Normal
-ms.openlocfilehash: c25ee3bc1e5096f7bbdf046090f8db9c0cc623fd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b68602f1fb8933f02e8f2c0957162d21a20d0e4b
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343938"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236542"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>tipo de recurso recentNotebookLinks
 
@@ -19,7 +19,7 @@ Links para abrir um bloco de anotações do OneNote. Esse tipo de recurso existe
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Abre o bloco de anotações no cliente do OneNote, se ele estiver instalado.|
-|oneNoteWebUrl|[externalLink](externallink.md)|Abre o bloco de anotações no OneNote Online.|
+|oneNoteWebUrl|[externalLink](externallink.md)|Abre o bloco de anotações no OneNote na Web.|
 
 ## <a name="json-representation"></a>Representação JSON
 

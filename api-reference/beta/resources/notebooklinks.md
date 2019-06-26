@@ -4,12 +4,12 @@ description: Links para abrir um bloco de anotações do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: b9ea408c869c5ad8fb546b6ea9548f3fc7c33b63
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 12be75eda0d4f3146332cec0b2eeda09a1d9c5e7
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342146"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236598"
 ---
 # <a name="notebooklinks-resource-type"></a>tipo de recurso notebookLinks
 
@@ -40,7 +40,7 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Abre o bloco de anotações no cliente nativo do OneNote se ele estiver instalado.|
-|oneNoteWebUrl|[externalLink](externallink.md)|Abre o bloco de anotações no OneNote Online.|
+|oneNoteWebUrl|[externalLink](externallink.md)|Abre o bloco de anotações no OneNote na Web.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

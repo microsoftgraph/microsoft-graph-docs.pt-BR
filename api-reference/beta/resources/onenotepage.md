@@ -2,12 +2,12 @@
 title: tipo de recurso onenotePage
 description: Uma página em um bloco de anotações do OneNote.
 localization_priority: Normal
-ms.openlocfilehash: 04e06fefd0b48a5d794f20733a4755e030cb7e0d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 70b500180185a2b449a2ebbaddb809772486f45e
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630794"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236591"
 ---
 # <a name="onenotepage-resource-type"></a>tipo de recurso onenotePage
 
@@ -19,15 +19,15 @@ Uma página em um bloco de anotações do OneNote.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |conteúdo|Fluxo|O conteúdo HTML da página.|
-|contentUrl|Cadeia de caracteres|A URL do conteúdo HTML da página.  Somente leitura.|
-|Pela createdbyappid|Cadeia de caracteres|O identificador exclusivo do aplicativo que criou a página. Somente leitura.|
+|contentUrl|String|A URL do conteúdo HTML da página.  Somente leitura.|
+|Pela createdbyappid|String|O identificador exclusivo do aplicativo que criou a página. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a página foi criada. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |id|Cadeia de caracteres|O identificador exclusivo da página.  Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a página foi modificada pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |antes|Int32|O nível de recuo da página. Somente leitura.|
-|links|[pageLinks](pagelinks.md)|Links para abrir a página. O `oneNoteClientURL` link abre a página no cliente nativo do OneNote se ele estiver instalado. O `oneNoteWebUrl` link abre a página no OneNote online. Somente leitura.|
+|links|[pageLinks](pagelinks.md)|Links para abrir a página. O `oneNoteClientURL` link abre a página no cliente nativo do OneNote se ele estiver instalado. O `oneNoteWebUrl` link abre a página no OneNote na Web. Somente leitura.|
 |Ordene|Int32|A ordem da página dentro da seção pai. Somente leitura.|
-|própria|Cadeia de caracteres|O ponto de extremidade onde você pode obter detalhes sobre a página. Somente leitura.|
+|própria|String|O ponto de extremidade onde você pode obter detalhes sobre a página. Somente leitura.|
 |title|String|O título da página. |
 
 ## <a name="relationships"></a>Relações

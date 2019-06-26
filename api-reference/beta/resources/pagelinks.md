@@ -2,12 +2,12 @@
 title: tipo de recurso pageLinks
 description: Links para abrir uma página do OneNote.
 localization_priority: Normal
-ms.openlocfilehash: d6ce07ae53b4d1f960566012d4a46e482ccbf9c5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7dab353d4e936559e26a16e64b58bbf3f4c01232
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344944"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236549"
 ---
 # <a name="pagelinks-resource-type"></a>tipo de recurso pageLinks
 
@@ -38,7 +38,7 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Abre a página no cliente nativo do OneNote se ele estiver instalado.|
-|oneNoteWebUrl|[externalLink](externallink.md)|Abre a página no OneNote online.|
+|oneNoteWebUrl|[externalLink](externallink.md)|Abre a página no OneNote na Web.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,12 +3,12 @@ title: 'driveItem: visualização'
 description: Esta ação permite que você obtenha URLs que podem ser inseridas de curta duração em um item para renderizar uma visualização temporária.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 74e6058d61fc5672bedd5e6479829f234707c45a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5e260e3dc360464b39daa5dde671a1bc11c9c6b6
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325116"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236297"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
@@ -78,7 +78,7 @@ A resposta será um objeto JSON que contém as seguintes propriedades:
 
 GetUrl, postUrl ou ambos podem ser retornados, dependendo do estado atual do suporte de embed para as opções especificadas.
 
-postparameters é uma cadeia de caracteres `application/x-www-form-urlencoded`formatada como e, se estiver executando uma postaGem no postUrl, o tipo de conteúdo deve ser definido de acordo. Por exemplo:
+postparameters é uma cadeia de caracteres `application/x-www-form-urlencoded`formatada como e, se estiver executando uma postagem no postUrl, o tipo de conteúdo deve ser definido de acordo. Por exemplo:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -94,7 +94,7 @@ Os valores a seguir são permitidos para o parâmetro **Viewer** .
 |:-----------|:----------------------------------------------------------------
 | vazio     | Escolhe um aplicativo apropriado para renderizar o arquivo. Na maioria dos casos, isso usará o visualizador, mas pode variar de acordo com o tipo de `onedrive` arquivo.
 | `onedrive` | Use o aplicativo de visualização do OneDrive para renderizar o arquivo.
-| `office`   | Use o WAC (Office Online) para renderizar o arquivo. Só é válido para documentos do Office.
+| `office`   | Use a versão da Web do Office para renderizar o arquivo. Só é válido para documentos do Office.
 
 ### <a name="chrome-vs-chromeless"></a>Cromado vs não monocromático
 

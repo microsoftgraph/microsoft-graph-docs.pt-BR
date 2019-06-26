@@ -2,12 +2,12 @@
 title: tipo de recurso recentNotebook
 description: Um bloco de notas do OneNote recentemente acessado. Um **recentNotebook** é similar a um notebook, mas tem menos propriedades.
 localization_priority: Normal
-ms.openlocfilehash: 67c707043e5b6ca65cd72ddc323b5a484f0f2959
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fb5e7a7b75ea62bc644d19cf895666ba106d5dd9
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579543"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236654"
 ---
 # <a name="recentnotebook-resource-type"></a>tipo de recurso recentNotebook
 
@@ -18,7 +18,7 @@ Um bloco de notas do OneNote recentemente acessado. Um **recentNotebook** é sim
 |:---------------|:--------|:----------|
 |displayName|String|O nome do bloco de anotações.|
 |lastAccessedTime|DateTimeOffset|A data e hora da última modificação do bloco de anotações. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|links|[recentNotebookLinks](recentnotebooklinks.md)|Links para abrir o bloco de anotações. O link `oneNoteClientURL` abre o bloco de anotações no cliente do OneNote quando ele está instalado. O link `oneNoteWebURL` abre o bloco de anotações no OneNote Online.|
+|links|[recentNotebookLinks](recentnotebooklinks.md)|Links para abrir o bloco de anotações. O link `oneNoteClientURL` abre o bloco de anotações no cliente do OneNote quando ele está instalado. O `oneNoteWebURL` link abre o bloco de anotações no OneNote na Web.|
 |sourceService|onenoteSourceService|A loja de back-end onde o bloco de anotações (notebook) reside, tanto em `OneDriveForBusiness` ou em `OneDrive`.|
 
 ## <a name="json-representation"></a>Representação JSON
