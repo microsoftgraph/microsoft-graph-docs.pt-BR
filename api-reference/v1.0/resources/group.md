@@ -4,12 +4,12 @@ description: 'Representa um grupo do Azure Active Directory (Azure AD), que pode
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: aafee2146d4b269f3a755cf867531085c39ffc5a
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: e410de0a4ef354a636a1c3fdd9851a9a109ee6dd
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036574"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236661"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -17,7 +17,7 @@ Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo 
 
 Herda de [directoryObject](directoryobject.md).
 
-Por motivos de desempenho, as operações [create](../api/group-post-groups.md), [get](../api/group-get.md) e [list](../api/group-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades _padrão_ estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. Veja um [exemplo](../api/group-get.md#request-2).
+Por motivos de desempenho, as operações [create](../api/group-post-groups.md), [get](../api/group-get.md) e [list](../api/group-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades _padrão_ estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.
 
 Esse recurso permite:
 
