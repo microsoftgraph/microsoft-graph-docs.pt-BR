@@ -5,40 +5,40 @@ ms.date: 09/10/2017
 title: Recuperar miniaturas de um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e58cdf153ea1fab98eac1a903e402d80228be5d4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1cfeb65d0295813793ee7df06dcb75f98b9967d3
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548072"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272832"
 ---
-# <a name="list-thumbnails-for-a-driveitem"></a><span data-ttu-id="841a0-102">Listar miniaturas para um DriveItem</span><span class="sxs-lookup"><span data-stu-id="841a0-102">List thumbnails for a DriveItem</span></span>
+# <a name="list-thumbnails-for-a-driveitem"></a><span data-ttu-id="87125-102">Listar miniaturas para um DriveItem</span><span class="sxs-lookup"><span data-stu-id="87125-102">List thumbnails for a DriveItem</span></span>
 
-<span data-ttu-id="841a0-103">Recupere uma coleção de recursos [ThumbnailSet](../resources/thumbnailset.md) para um recurso [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="841a0-103">Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.</span></span>
+<span data-ttu-id="87125-103">Recupere uma coleção de recursos [ThumbnailSet](../resources/thumbnailset.md) para um recurso [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="87125-103">Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.</span></span>
 
-<span data-ttu-id="841a0-p101">Um DriveItem pode ser representado por zero ou mais recursos [ThumbnailSet](../resources/thumbnailset.md). Cada **thumbnailSet** pode ter um ou mais objetos [**thumbnail**](../resources/thumbnail.md), que são imagens que representam o item. Por exemplo, um **thumbnailSet** podem incluir objetos **thumbnail**, como objetos comuns que incluem `small`, `medium` ou `large`.</span><span class="sxs-lookup"><span data-stu-id="841a0-p101">A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources. Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item. For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.</span></span>
+<span data-ttu-id="87125-p101">Um DriveItem pode ser representado por zero ou mais recursos [ThumbnailSet](../resources/thumbnailset.md). Cada **thumbnailSet** pode ter um ou mais objetos [**thumbnail**](../resources/thumbnail.md), que são imagens que representam o item. Por exemplo, um **thumbnailSet** podem incluir objetos **thumbnail**, como objetos comuns que incluem `small`, `medium` ou `large`.</span><span class="sxs-lookup"><span data-stu-id="87125-p101">A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources. Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item. For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.</span></span>
 
-<span data-ttu-id="841a0-p102">Há várias maneiras de trabalhar com miniaturas no OneDrive. Veja a seguir as mais comuns:</span><span class="sxs-lookup"><span data-stu-id="841a0-p102">There are many ways to work with thumbnails on OneDrive. Here are the most common ones:</span></span>
+<span data-ttu-id="87125-p102">Há várias maneiras de trabalhar com miniaturas no OneDrive. Veja a seguir as mais comuns:</span><span class="sxs-lookup"><span data-stu-id="87125-p102">There are many ways to work with thumbnails on OneDrive. Here are the most common ones:</span></span>
 
-* <span data-ttu-id="841a0-109">Enumerar miniaturas disponíveis para um item</span><span class="sxs-lookup"><span data-stu-id="841a0-109">Enumerate available thumbnails for an item</span></span>
-* <span data-ttu-id="841a0-110">Recuperar uma única miniatura para um item</span><span class="sxs-lookup"><span data-stu-id="841a0-110">Retrieve a single thumbnail for an item</span></span>
-* <span data-ttu-id="841a0-111">Recuperar o conteúdo da miniatura</span><span class="sxs-lookup"><span data-stu-id="841a0-111">Retrieve thumbnail content</span></span>
-* <span data-ttu-id="841a0-112">Recuperar miniaturas de vários itens em uma única solicitação</span><span class="sxs-lookup"><span data-stu-id="841a0-112">Retrieve thumbnails for multiple items in a single request</span></span>
-* <span data-ttu-id="841a0-113">Recuperar tamanhos personalizados de miniaturas</span><span class="sxs-lookup"><span data-stu-id="841a0-113">Retrieve custom thumbnail sizes</span></span>
-* <span data-ttu-id="841a0-114">Carregar uma miniatura personalizada para um item</span><span class="sxs-lookup"><span data-stu-id="841a0-114">Upload a custom thumbnail for an item</span></span>
-* <span data-ttu-id="841a0-115">Determinar se uma miniatura personalizada carregada existe</span><span class="sxs-lookup"><span data-stu-id="841a0-115">Determine if a custom uploaded thumbnail exists</span></span>
+* <span data-ttu-id="87125-109">Enumerar miniaturas disponíveis para um item</span><span class="sxs-lookup"><span data-stu-id="87125-109">Enumerate available thumbnails for an item</span></span>
+* <span data-ttu-id="87125-110">Recuperar uma única miniatura para um item</span><span class="sxs-lookup"><span data-stu-id="87125-110">Retrieve a single thumbnail for an item</span></span>
+* <span data-ttu-id="87125-111">Recuperar o conteúdo da miniatura</span><span class="sxs-lookup"><span data-stu-id="87125-111">Retrieve thumbnail content</span></span>
+* <span data-ttu-id="87125-112">Recuperar miniaturas de vários itens em uma única solicitação</span><span class="sxs-lookup"><span data-stu-id="87125-112">Retrieve thumbnails for multiple items in a single request</span></span>
+* <span data-ttu-id="87125-113">Recuperar tamanhos personalizados de miniaturas</span><span class="sxs-lookup"><span data-stu-id="87125-113">Retrieve custom thumbnail sizes</span></span>
+* <span data-ttu-id="87125-114">Carregar uma miniatura personalizada para um item</span><span class="sxs-lookup"><span data-stu-id="87125-114">Upload a custom thumbnail for an item</span></span>
+* <span data-ttu-id="87125-115">Determinar se uma miniatura personalizada carregada existe</span><span class="sxs-lookup"><span data-stu-id="87125-115">Determine if a custom uploaded thumbnail exists</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="841a0-116">Permissões</span><span class="sxs-lookup"><span data-stu-id="841a0-116">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="87125-116">Permissões</span><span class="sxs-lookup"><span data-stu-id="87125-116">Permissions</span></span>
 
-<span data-ttu-id="841a0-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="841a0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="87125-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="87125-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="841a0-119">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="841a0-119">Permission type</span></span>      | <span data-ttu-id="841a0-120">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="841a0-120">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="87125-119">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="87125-119">Permission type</span></span>      | <span data-ttu-id="87125-120">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="87125-120">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="841a0-121">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="841a0-121">Delegated (work or school account)</span></span> | <span data-ttu-id="841a0-122">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="841a0-122">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="841a0-123">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="841a0-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="841a0-124">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="841a0-124">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="841a0-125">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="841a0-125">Application</span></span> | <span data-ttu-id="841a0-126">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="841a0-126">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="87125-121">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="87125-121">Delegated (work or school account)</span></span> | <span data-ttu-id="87125-122">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87125-122">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="87125-123">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="87125-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="87125-124">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87125-124">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="87125-125">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="87125-125">Application</span></span> | <span data-ttu-id="87125-126">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87125-126">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="841a0-127">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="841a0-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="87125-127">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="87125-127">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -50,17 +50,17 @@ GET /sites/{site-id}/drive/items/{item-id}/thumbnails
 GET /users/{user-id}/drive/items/{item-id}/thumbnails
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="841a0-128">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="841a0-128">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="87125-128">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="87125-128">Optional query parameters</span></span>
 
-<span data-ttu-id="841a0-129">Este método oferece suporte ao [Parâmetro de consulta OData](/graph/query-parameters) `$select` para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="841a0-129">This method supports the `$select` [OData puery parameter](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="87125-129">Este método oferece suporte ao [Parâmetro de consulta OData](/graph/query-parameters) `$select` para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="87125-129">This method supports the `$select` [OData puery parameter](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="841a0-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="841a0-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="87125-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="87125-130">Response</span></span>
 
-<span data-ttu-id="841a0-131">Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos [ThumbnailSet](../resources/thumbnailset.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="841a0-131">If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.</span></span>
+<span data-ttu-id="87125-131">Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos [ThumbnailSet](../resources/thumbnailset.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="87125-131">If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="841a0-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="841a0-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="87125-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="87125-132">Example</span></span>
 
-<span data-ttu-id="841a0-133">Veja um exemplo da solicitação que recupera as miniaturas disponíveis de um item no OneDrive atual do usuário.</span><span class="sxs-lookup"><span data-stu-id="841a0-133">Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.</span></span>
+<span data-ttu-id="87125-133">Veja um exemplo da solicitação que recupera as miniaturas disponíveis de um item no OneDrive atual do usuário.</span><span class="sxs-lookup"><span data-stu-id="87125-133">Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.</span></span>
 
 <!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -68,12 +68,12 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 GET /me/drive/items/{item-id}/thumbnails
 ```
 
-<span data-ttu-id="841a0-134">Isto retorna uma matriz de **thumbnailSets** disponíveis para o item.</span><span class="sxs-lookup"><span data-stu-id="841a0-134">This returns an array of available **thumbnailSets** for the item.</span></span> <span data-ttu-id="841a0-135">Qualquer item em uma unidade pode ter zero ou mais miniaturas.</span><span class="sxs-lookup"><span data-stu-id="841a0-135">Any item in a drive can have zero or more thumbnails.</span></span>
+<span data-ttu-id="87125-134">Isto retorna uma matriz de **thumbnailSets** disponíveis para o item.</span><span class="sxs-lookup"><span data-stu-id="87125-134">This returns an array of available **thumbnailSets** for the item.</span></span> <span data-ttu-id="87125-135">Qualquer item em uma unidade pode ter zero ou mais miniaturas.</span><span class="sxs-lookup"><span data-stu-id="87125-135">Any item in a drive can have zero or more thumbnails.</span></span>
 
-<span data-ttu-id="841a0-p105">**Observação:** Você pode usar o parâmetro da cadeia de caracteres de consulta _select_ para controlar quais tamanhos de miniatura são retornados no **ThumbnailSet**. Por exemplo, `/thumbnails?select=medium` recupera somente miniaturas de tamanho médio.</span><span class="sxs-lookup"><span data-stu-id="841a0-p105">**Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**. For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.</span></span>
+<span data-ttu-id="87125-p105">**Observação:** Você pode usar o parâmetro da cadeia de caracteres de consulta _select_ para controlar quais tamanhos de miniatura são retornados no **ThumbnailSet**. Por exemplo, `/thumbnails?select=medium` recupera somente miniaturas de tamanho médio.</span><span class="sxs-lookup"><span data-stu-id="87125-p105">**Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**. For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.</span></span>
 
 
-### <a name="response"></a><span data-ttu-id="841a0-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="841a0-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="87125-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="87125-138">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -92,12 +92,24 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="87125-139">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="87125-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="87125-140">C#</span><span class="sxs-lookup"><span data-stu-id="87125-140">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/enum-item-thumbnails-Cs-snippets.md)]
 
-## <a name="get-a-single-thumbnail"></a><span data-ttu-id="841a0-139">Obter uma única miniatura</span><span class="sxs-lookup"><span data-stu-id="841a0-139">Get a single thumbnail</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="87125-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="87125-141">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/enum-item-thumbnails-Javascript-snippets.md)]
 
-<span data-ttu-id="841a0-140">Recupere os metadados de uma única miniatura e um único tamanho endereçando-os diretamente em uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="841a0-140">Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.</span></span>
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="87125-142">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="87125-142">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/enum-item-thumbnails-Objective-C-snippets.md)]
+---
 
-### <a name="http-request"></a><span data-ttu-id="841a0-141">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="841a0-141">HTTP request</span></span>
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="get-a-single-thumbnail"></a><span data-ttu-id="87125-143">Obter uma única miniatura</span><span class="sxs-lookup"><span data-stu-id="87125-143">Get a single thumbnail</span></span>
+
+<span data-ttu-id="87125-144">Recupere os metadados de uma única miniatura e um único tamanho endereçando-os diretamente em uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="87125-144">Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="87125-145">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="87125-145">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -105,13 +117,13 @@ Content-type: application/json
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
 
-### <a name="path-parameters"></a><span data-ttu-id="841a0-142">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="841a0-142">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="87125-146">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="87125-146">Path parameters</span></span>
 
-| <span data-ttu-id="841a0-143">Nome</span><span class="sxs-lookup"><span data-stu-id="841a0-143">Name</span></span>         | <span data-ttu-id="841a0-144">Tipo</span><span class="sxs-lookup"><span data-stu-id="841a0-144">Type</span></span>   | <span data-ttu-id="841a0-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="841a0-145">Description</span></span>                                                                              |
+| <span data-ttu-id="87125-147">Nome</span><span class="sxs-lookup"><span data-stu-id="87125-147">Name</span></span>         | <span data-ttu-id="87125-148">Tipo</span><span class="sxs-lookup"><span data-stu-id="87125-148">Type</span></span>   | <span data-ttu-id="87125-149">Descrição</span><span class="sxs-lookup"><span data-stu-id="87125-149">Description</span></span>                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="841a0-146">**item-id**</span><span class="sxs-lookup"><span data-stu-id="841a0-146">**item-id**</span></span>  | <span data-ttu-id="841a0-147">string</span><span class="sxs-lookup"><span data-stu-id="841a0-147">string</span></span> | <span data-ttu-id="841a0-148">O identificador exclusivo do item referenciado.</span><span class="sxs-lookup"><span data-stu-id="841a0-148">The unique identifier for the item referenced.</span></span>                                           |
-| <span data-ttu-id="841a0-149">**thumb-id**</span><span class="sxs-lookup"><span data-stu-id="841a0-149">**thumb-id**</span></span> | <span data-ttu-id="841a0-150">number</span><span class="sxs-lookup"><span data-stu-id="841a0-150">number</span></span> | <span data-ttu-id="841a0-p106">O índice da miniatura, geralmente de 0 a 4. Se houver uma miniatura personalizada, seu índice será 0.</span><span class="sxs-lookup"><span data-stu-id="841a0-p106">The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0.</span></span> |
-| <span data-ttu-id="841a0-153">**size**</span><span class="sxs-lookup"><span data-stu-id="841a0-153">**size**</span></span>     | <span data-ttu-id="841a0-154">string</span><span class="sxs-lookup"><span data-stu-id="841a0-154">string</span></span> | <span data-ttu-id="841a0-155">O tamanho da miniatura solicitada.</span><span class="sxs-lookup"><span data-stu-id="841a0-155">The size of the thumbnail requested.</span></span> <span data-ttu-id="841a0-156">Pode ter um dos tamanhos padrão listados abaixo, ou um tamanho personalizado.</span><span class="sxs-lookup"><span data-stu-id="841a0-156">This can be one of the standard sizes listed below or a custom size.</span></span> |
+| <span data-ttu-id="87125-150">**item-id**</span><span class="sxs-lookup"><span data-stu-id="87125-150">**item-id**</span></span>  | <span data-ttu-id="87125-151">string</span><span class="sxs-lookup"><span data-stu-id="87125-151">string</span></span> | <span data-ttu-id="87125-152">O identificador exclusivo do item referenciado.</span><span class="sxs-lookup"><span data-stu-id="87125-152">The unique identifier for the item referenced.</span></span>                                           |
+| <span data-ttu-id="87125-153">**thumb-id**</span><span class="sxs-lookup"><span data-stu-id="87125-153">**thumb-id**</span></span> | <span data-ttu-id="87125-154">number</span><span class="sxs-lookup"><span data-stu-id="87125-154">number</span></span> | <span data-ttu-id="87125-p106">O índice da miniatura, geralmente de 0 a 4. Se houver uma miniatura personalizada, seu índice será 0.</span><span class="sxs-lookup"><span data-stu-id="87125-p106">The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0.</span></span> |
+| <span data-ttu-id="87125-157">**size**</span><span class="sxs-lookup"><span data-stu-id="87125-157">**size**</span></span>     | <span data-ttu-id="87125-158">string</span><span class="sxs-lookup"><span data-stu-id="87125-158">string</span></span> | <span data-ttu-id="87125-159">O tamanho da miniatura solicitada.</span><span class="sxs-lookup"><span data-stu-id="87125-159">The size of the thumbnail requested.</span></span> <span data-ttu-id="87125-160">Pode ter um dos tamanhos padrão listados abaixo, ou um tamanho personalizado.</span><span class="sxs-lookup"><span data-stu-id="87125-160">This can be one of the standard sizes listed below or a custom size.</span></span> |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -125,12 +137,24 @@ Content-Type: application/json
   "url": "https://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="87125-161">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="87125-161">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="87125-162">C#</span><span class="sxs-lookup"><span data-stu-id="87125-162">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-one-thumbnail-Cs-snippets.md)]
 
-## <a name="retrieve-thumbnail-binary-content"></a><span data-ttu-id="841a0-157">Recuperar o conteúdo binário da miniatura</span><span class="sxs-lookup"><span data-stu-id="841a0-157">Retrieve thumbnail binary content</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="87125-163">Javascript</span><span class="sxs-lookup"><span data-stu-id="87125-163">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-one-thumbnail-Javascript-snippets.md)]
 
-<span data-ttu-id="841a0-158">Você pode recuperar diretamente o conteúdo da miniatura solicitando a propriedade **content** dessa miniatura.</span><span class="sxs-lookup"><span data-stu-id="841a0-158">You can directly retrieve the content of the thumbnail by requesting the **content** property of the thumbnail.</span></span>
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="87125-164">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="87125-164">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-one-thumbnail-Objective-C-snippets.md)]
+---
 
-### <a name="http-request"></a><span data-ttu-id="841a0-159">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="841a0-159">HTTP request</span></span>
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="retrieve-thumbnail-binary-content"></a><span data-ttu-id="87125-165">Recuperar o conteúdo binário da miniatura</span><span class="sxs-lookup"><span data-stu-id="87125-165">Retrieve thumbnail binary content</span></span>
+
+<span data-ttu-id="87125-166">Você pode recuperar diretamente o conteúdo da miniatura solicitando a propriedade **content** dessa miniatura.</span><span class="sxs-lookup"><span data-stu-id="87125-166">You can directly retrieve the content of the thumbnail by requesting the **content** property of the thumbnail.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="87125-167">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="87125-167">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -138,9 +162,9 @@ Content-Type: application/json
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
 
-### <a name="response"></a><span data-ttu-id="841a0-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="841a0-160">Response</span></span>
+### <a name="response"></a><span data-ttu-id="87125-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="87125-168">Response</span></span>
 
-<span data-ttu-id="841a0-161">O serviço responde com um redirecionamento para a URL da miniatura.</span><span class="sxs-lookup"><span data-stu-id="841a0-161">The service responds with a redirect to the thumbnail URL.</span></span>
+<span data-ttu-id="87125-169">O serviço responde com um redirecionamento para a URL da miniatura.</span><span class="sxs-lookup"><span data-stu-id="87125-169">The service responds with a redirect to the thumbnail URL.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -148,16 +172,28 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="87125-170">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="87125-170">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="87125-171">C#</span><span class="sxs-lookup"><span data-stu-id="87125-171">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-thumbnail-content-Cs-snippets.md)]
 
-<span data-ttu-id="841a0-162">URLs de miniaturas são seguras em cache.</span><span class="sxs-lookup"><span data-stu-id="841a0-162">Thumbnail URLs are cache-safe.</span></span> <span data-ttu-id="841a0-163">A URL mudará se o item for alterado de uma maneira que exigir que uma nova miniatura seja gerada.</span><span class="sxs-lookup"><span data-stu-id="841a0-163">The URL will change, if the item changes in a way that requires a new thumbnail to be generated.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="87125-172">Javascript</span><span class="sxs-lookup"><span data-stu-id="87125-172">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-thumbnail-content-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="87125-173">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="87125-173">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-thumbnail-content-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<span data-ttu-id="87125-174">URLs de miniaturas são seguras em cache.</span><span class="sxs-lookup"><span data-stu-id="87125-174">Thumbnail URLs are cache-safe.</span></span> <span data-ttu-id="87125-175">A URL mudará se o item for alterado de uma maneira que exigir que uma nova miniatura seja gerada.</span><span class="sxs-lookup"><span data-stu-id="87125-175">The URL will change, if the item changes in a way that requires a new thumbnail to be generated.</span></span>
 
 
-## <a name="getting-thumbnails-while-listing-driveitems"></a><span data-ttu-id="841a0-164">Obter miniaturas ao listar DriveItems</span><span class="sxs-lookup"><span data-stu-id="841a0-164">Getting thumbnails while listing DriveItems</span></span>
+## <a name="getting-thumbnails-while-listing-driveitems"></a><span data-ttu-id="87125-176">Obter miniaturas ao listar DriveItems</span><span class="sxs-lookup"><span data-stu-id="87125-176">Getting thumbnails while listing DriveItems</span></span>
 
-<span data-ttu-id="841a0-165">Se você estiver recuperando uma lista de recursos DriveItem para exibição, use o parâmetro de cadeia de consulta _$expand_ para incluir as miniaturas para esses recursos.</span><span class="sxs-lookup"><span data-stu-id="841a0-165">If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.</span></span>
-<span data-ttu-id="841a0-166">Isso permite que seu aplicativo recupere miniaturas e itens em uma única solicitação, em vez de emitir muitas solicitações.</span><span class="sxs-lookup"><span data-stu-id="841a0-166">This enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.</span></span>
+<span data-ttu-id="87125-177">Se você estiver recuperando uma lista de recursos DriveItem para exibição, use o parâmetro de cadeia de consulta _$expand_ para incluir as miniaturas para esses recursos.</span><span class="sxs-lookup"><span data-stu-id="87125-177">If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.</span></span>
+<span data-ttu-id="87125-178">Isso permite que seu aplicativo recupere miniaturas e itens em uma única solicitação, em vez de emitir muitas solicitações.</span><span class="sxs-lookup"><span data-stu-id="87125-178">This enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="841a0-167">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="841a0-167">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="87125-179">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="87125-179">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -165,9 +201,9 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
 
-### <a name="response"></a><span data-ttu-id="841a0-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="841a0-168">Response</span></span>
+### <a name="response"></a><span data-ttu-id="87125-180">Resposta</span><span class="sxs-lookup"><span data-stu-id="87125-180">Response</span></span>
 
-<span data-ttu-id="841a0-169">As respostas do serviço com a lista de DriveItems e suas miniaturas.</span><span class="sxs-lookup"><span data-stu-id="841a0-169">The service responses with the list of DriveItems and their thumbnails.</span></span>
+<span data-ttu-id="87125-181">As respostas do serviço com a lista de DriveItems e suas miniaturas.</span><span class="sxs-lookup"><span data-stu-id="87125-181">The service responses with the list of DriveItems and their thumbnails.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -204,24 +240,36 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="87125-182">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="87125-182">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="87125-183">C#</span><span class="sxs-lookup"><span data-stu-id="87125-183">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-thumbnail-while-listing-Cs-snippets.md)]
 
-## <a name="size-options"></a><span data-ttu-id="841a0-170">Opções de tamanho</span><span class="sxs-lookup"><span data-stu-id="841a0-170">Size options</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="87125-184">Javascript</span><span class="sxs-lookup"><span data-stu-id="87125-184">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-thumbnail-while-listing-Javascript-snippets.md)]
 
-<span data-ttu-id="841a0-p110">Essa tabela define os possíveis tamanhos de miniaturas. Embora você possa solicitar qualquer tamanho de miniatura arbitrário, os valores definidos provavelmente existem e retornam um valor rapidamente:</span><span class="sxs-lookup"><span data-stu-id="841a0-p110">This table defines the possible thumbnail sizes. While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:</span></span>
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="87125-185">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="87125-185">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-thumbnail-while-listing-Objective-C-snippets.md)]
+---
 
-| <span data-ttu-id="841a0-173">Nome</span><span class="sxs-lookup"><span data-stu-id="841a0-173">Name</span></span>           | <span data-ttu-id="841a0-174">Resolução</span><span class="sxs-lookup"><span data-stu-id="841a0-174">Resolution</span></span>  | <span data-ttu-id="841a0-175">Taxa de proporção</span><span class="sxs-lookup"><span data-stu-id="841a0-175">Aspect Ratio</span></span> | <span data-ttu-id="841a0-176">Descrição</span><span class="sxs-lookup"><span data-stu-id="841a0-176">Description</span></span>                                                          |
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="size-options"></a><span data-ttu-id="87125-186">Opções de tamanho</span><span class="sxs-lookup"><span data-stu-id="87125-186">Size options</span></span>
+
+<span data-ttu-id="87125-p110">Essa tabela define os possíveis tamanhos de miniaturas. Embora você possa solicitar qualquer tamanho de miniatura arbitrário, os valores definidos provavelmente existem e retornam um valor rapidamente:</span><span class="sxs-lookup"><span data-stu-id="87125-p110">This table defines the possible thumbnail sizes. While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:</span></span>
+
+| <span data-ttu-id="87125-189">Nome</span><span class="sxs-lookup"><span data-stu-id="87125-189">Name</span></span>           | <span data-ttu-id="87125-190">Resolução</span><span class="sxs-lookup"><span data-stu-id="87125-190">Resolution</span></span>  | <span data-ttu-id="87125-191">Taxa de proporção</span><span class="sxs-lookup"><span data-stu-id="87125-191">Aspect Ratio</span></span> | <span data-ttu-id="87125-192">Descrição</span><span class="sxs-lookup"><span data-stu-id="87125-192">Description</span></span>                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | <span data-ttu-id="841a0-177">96 mais longa</span><span class="sxs-lookup"><span data-stu-id="841a0-177">96 longest</span></span>  | <span data-ttu-id="841a0-178">Original</span><span class="sxs-lookup"><span data-stu-id="841a0-178">Original</span></span>     | <span data-ttu-id="841a0-179">Miniatura pequena e altamente compactada, recortada em uma taxa de proporção quadrada.</span><span class="sxs-lookup"><span data-stu-id="841a0-179">Small, highly compressed thumbnail cropped to a square aspect ratio.</span></span> |
-| `medium`       | <span data-ttu-id="841a0-180">176 mais longa</span><span class="sxs-lookup"><span data-stu-id="841a0-180">176 longest</span></span> | <span data-ttu-id="841a0-181">Original</span><span class="sxs-lookup"><span data-stu-id="841a0-181">Original</span></span>     | <span data-ttu-id="841a0-182">Recortada no tamanho do item padrão para o modo de exibição de Web do OneDrive.</span><span class="sxs-lookup"><span data-stu-id="841a0-182">Cropped to the standard item size for the OneDrive web view.</span></span>         |
-| `large`        | <span data-ttu-id="841a0-183">800 mais longa</span><span class="sxs-lookup"><span data-stu-id="841a0-183">800 longest</span></span> | <span data-ttu-id="841a0-184">Original</span><span class="sxs-lookup"><span data-stu-id="841a0-184">Original</span></span>     | <span data-ttu-id="841a0-185">Miniatura com a borda mais longa redimensionada para 800 pixels.</span><span class="sxs-lookup"><span data-stu-id="841a0-185">Thumbnail with the longest edge resized to 800 pixels.</span></span>               |
-| `smallSquare`  | <span data-ttu-id="841a0-186">96x96</span><span class="sxs-lookup"><span data-stu-id="841a0-186">96x96</span></span>       | <span data-ttu-id="841a0-187">Corte quadrado</span><span class="sxs-lookup"><span data-stu-id="841a0-187">Square Crop</span></span>  | <span data-ttu-id="841a0-188">Miniatura quadrada pequena</span><span class="sxs-lookup"><span data-stu-id="841a0-188">Small square thumbnail</span></span>                                               |
-| `mediumSquare` | <span data-ttu-id="841a0-189">176x176</span><span class="sxs-lookup"><span data-stu-id="841a0-189">176x176</span></span>     | <span data-ttu-id="841a0-190">Corte quadrado</span><span class="sxs-lookup"><span data-stu-id="841a0-190">Square Crop</span></span>  | <span data-ttu-id="841a0-191">Miniatura quadrada pequena</span><span class="sxs-lookup"><span data-stu-id="841a0-191">Small square thumbnail</span></span>                                               |
-| `largeSquare`  | <span data-ttu-id="841a0-192">800x800</span><span class="sxs-lookup"><span data-stu-id="841a0-192">800x800</span></span>     | <span data-ttu-id="841a0-193">Corte quadrado</span><span class="sxs-lookup"><span data-stu-id="841a0-193">Square Crop</span></span>  | <span data-ttu-id="841a0-194">Miniatura quadrada grande</span><span class="sxs-lookup"><span data-stu-id="841a0-194">Large square thumbnail</span></span>                                               |
+| `small`        | <span data-ttu-id="87125-193">96 mais longa</span><span class="sxs-lookup"><span data-stu-id="87125-193">96 longest</span></span>  | <span data-ttu-id="87125-194">Original</span><span class="sxs-lookup"><span data-stu-id="87125-194">Original</span></span>     | <span data-ttu-id="87125-195">Miniatura pequena e altamente compactada, recortada em uma taxa de proporção quadrada.</span><span class="sxs-lookup"><span data-stu-id="87125-195">Small, highly compressed thumbnail cropped to a square aspect ratio.</span></span> |
+| `medium`       | <span data-ttu-id="87125-196">176 mais longa</span><span class="sxs-lookup"><span data-stu-id="87125-196">176 longest</span></span> | <span data-ttu-id="87125-197">Original</span><span class="sxs-lookup"><span data-stu-id="87125-197">Original</span></span>     | <span data-ttu-id="87125-198">Recortada no tamanho do item padrão para o modo de exibição de Web do OneDrive.</span><span class="sxs-lookup"><span data-stu-id="87125-198">Cropped to the standard item size for the OneDrive web view.</span></span>         |
+| `large`        | <span data-ttu-id="87125-199">800 mais longa</span><span class="sxs-lookup"><span data-stu-id="87125-199">800 longest</span></span> | <span data-ttu-id="87125-200">Original</span><span class="sxs-lookup"><span data-stu-id="87125-200">Original</span></span>     | <span data-ttu-id="87125-201">Miniatura com a borda mais longa redimensionada para 800 pixels.</span><span class="sxs-lookup"><span data-stu-id="87125-201">Thumbnail with the longest edge resized to 800 pixels.</span></span>               |
+| `smallSquare`  | <span data-ttu-id="87125-202">96x96</span><span class="sxs-lookup"><span data-stu-id="87125-202">96x96</span></span>       | <span data-ttu-id="87125-203">Corte quadrado</span><span class="sxs-lookup"><span data-stu-id="87125-203">Square Crop</span></span>  | <span data-ttu-id="87125-204">Miniatura quadrada pequena</span><span class="sxs-lookup"><span data-stu-id="87125-204">Small square thumbnail</span></span>                                               |
+| `mediumSquare` | <span data-ttu-id="87125-205">176x176</span><span class="sxs-lookup"><span data-stu-id="87125-205">176x176</span></span>     | <span data-ttu-id="87125-206">Corte quadrado</span><span class="sxs-lookup"><span data-stu-id="87125-206">Square Crop</span></span>  | <span data-ttu-id="87125-207">Miniatura quadrada pequena</span><span class="sxs-lookup"><span data-stu-id="87125-207">Small square thumbnail</span></span>                                               |
+| `largeSquare`  | <span data-ttu-id="87125-208">800x800</span><span class="sxs-lookup"><span data-stu-id="87125-208">800x800</span></span>     | <span data-ttu-id="87125-209">Corte quadrado</span><span class="sxs-lookup"><span data-stu-id="87125-209">Square Crop</span></span>  | <span data-ttu-id="87125-210">Miniatura quadrada grande</span><span class="sxs-lookup"><span data-stu-id="87125-210">Large square thumbnail</span></span>                                               |
 
-## <a name="requesting-custom-thumbnail-sizes"></a><span data-ttu-id="841a0-195">Solicitar tamanhos personalizados de miniaturas</span><span class="sxs-lookup"><span data-stu-id="841a0-195">Requesting custom thumbnail sizes</span></span>
+## <a name="requesting-custom-thumbnail-sizes"></a><span data-ttu-id="87125-211">Solicitar tamanhos personalizados de miniaturas</span><span class="sxs-lookup"><span data-stu-id="87125-211">Requesting custom thumbnail sizes</span></span>
 
-<span data-ttu-id="841a0-196">Além dos tamanhos definidos, seu aplicativo pode solicitar um tamanho personalizado de miniatura, especificando as dimensões da miniatura prefixadas com `c`.</span><span class="sxs-lookup"><span data-stu-id="841a0-196">In addition to the defined sizes, your app can request a custom thumbnail size by specifying the dimensions of the thumbnail prefixed with `c`.</span></span>
-<span data-ttu-id="841a0-197">Por exemplo, se o seu aplicativo precisar de miniaturas de 300 x 400, é possível solicitar esse tamanho desta forma:</span><span class="sxs-lookup"><span data-stu-id="841a0-197">For example if your app needs thumbnails that are 300x400, it can request that size like this:</span></span>
+<span data-ttu-id="87125-212">Além dos tamanhos definidos, seu aplicativo pode solicitar um tamanho personalizado de miniatura, especificando as dimensões da miniatura prefixadas com `c`.</span><span class="sxs-lookup"><span data-stu-id="87125-212">In addition to the defined sizes, your app can request a custom thumbnail size by specifying the dimensions of the thumbnail prefixed with `c`.</span></span>
+<span data-ttu-id="87125-213">Por exemplo, se o seu aplicativo precisar de miniaturas de 300 x 400, é possível solicitar esse tamanho desta forma:</span><span class="sxs-lookup"><span data-stu-id="87125-213">For example if your app needs thumbnails that are 300x400, it can request that size like this:</span></span>
 
 <!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -229,7 +277,7 @@ Content-type: application/json
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
 
-<span data-ttu-id="841a0-198">Que responde com o tamanho de miniatura personalizado selecionado:</span><span class="sxs-lookup"><span data-stu-id="841a0-198">Which responds with just the custom thumbnail size selected:</span></span>
+<span data-ttu-id="87125-214">Que responde com o tamanho de miniatura personalizado selecionado:</span><span class="sxs-lookup"><span data-stu-id="87125-214">Which responds with just the custom thumbnail size selected:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -246,33 +294,45 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="87125-215">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="87125-215">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="87125-216">C#</span><span class="sxs-lookup"><span data-stu-id="87125-216">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-thumbnail-custom-size-Cs-snippets.md)]
 
-<span data-ttu-id="841a0-199">Você pode especificar as seguintes opções após o tamanho de miniatura solicitado:</span><span class="sxs-lookup"><span data-stu-id="841a0-199">You can specify the following options after the size of the thumbnail requested:</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="87125-217">Javascript</span><span class="sxs-lookup"><span data-stu-id="87125-217">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-thumbnail-custom-size-Javascript-snippets.md)]
 
-### <a name="examples-of-custom-identifiers"></a><span data-ttu-id="841a0-200">Exemplos de identificadores personalizados</span><span class="sxs-lookup"><span data-stu-id="841a0-200">Examples of custom identifiers</span></span>
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="87125-218">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="87125-218">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-thumbnail-custom-size-Objective-C-snippets.md)]
+---
 
-| <span data-ttu-id="841a0-201">Identificador de miniatura</span><span class="sxs-lookup"><span data-stu-id="841a0-201">Thumbnail identifier</span></span> | <span data-ttu-id="841a0-202">Resolução</span><span class="sxs-lookup"><span data-stu-id="841a0-202">Resolution</span></span>             | <span data-ttu-id="841a0-203">Taxa de proporção</span><span class="sxs-lookup"><span data-stu-id="841a0-203">Aspect ratio</span></span> | <span data-ttu-id="841a0-204">Descrição</span><span class="sxs-lookup"><span data-stu-id="841a0-204">Description</span></span>                                                                                                                                         |
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<span data-ttu-id="87125-219">Você pode especificar as seguintes opções após o tamanho de miniatura solicitado:</span><span class="sxs-lookup"><span data-stu-id="87125-219">You can specify the following options after the size of the thumbnail requested:</span></span>
+
+### <a name="examples-of-custom-identifiers"></a><span data-ttu-id="87125-220">Exemplos de identificadores personalizados</span><span class="sxs-lookup"><span data-stu-id="87125-220">Examples of custom identifiers</span></span>
+
+| <span data-ttu-id="87125-221">Identificador de miniatura</span><span class="sxs-lookup"><span data-stu-id="87125-221">Thumbnail identifier</span></span> | <span data-ttu-id="87125-222">Resolução</span><span class="sxs-lookup"><span data-stu-id="87125-222">Resolution</span></span>             | <span data-ttu-id="87125-223">Taxa de proporção</span><span class="sxs-lookup"><span data-stu-id="87125-223">Aspect ratio</span></span> | <span data-ttu-id="87125-224">Descrição</span><span class="sxs-lookup"><span data-stu-id="87125-224">Description</span></span>                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="841a0-205">c300x400</span><span class="sxs-lookup"><span data-stu-id="841a0-205">c300x400</span></span>             | <span data-ttu-id="841a0-206">Limitado por uma caixa de 300 x 400</span><span class="sxs-lookup"><span data-stu-id="841a0-206">Bounded by 300x400 box</span></span> | <span data-ttu-id="841a0-207">Original</span><span class="sxs-lookup"><span data-stu-id="841a0-207">Original</span></span>     | <span data-ttu-id="841a0-208">Gere uma miniatura que se ajuste em uma caixa de 300 x 400 pixels, mantendo a taxa de proporção</span><span class="sxs-lookup"><span data-stu-id="841a0-208">Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio</span></span>                                                                 |
-| <span data-ttu-id="841a0-209">c300x400_Crop</span><span class="sxs-lookup"><span data-stu-id="841a0-209">c300x400_Crop</span></span>        | <span data-ttu-id="841a0-210">300x400</span><span class="sxs-lookup"><span data-stu-id="841a0-210">300x400</span></span>                | <span data-ttu-id="841a0-211">Recortada</span><span class="sxs-lookup"><span data-stu-id="841a0-211">Cropped</span></span>      | <span data-ttu-id="841a0-p112">Gere uma miniatura de 300 x 400 pixels. Para isso, é preciso redimensionar a imagem para caber na caixa de 300 x 400 e recortar o que ficar fora da caixa.</span><span class="sxs-lookup"><span data-stu-id="841a0-p112">Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box.</span></span> |
+| <span data-ttu-id="87125-225">c300x400</span><span class="sxs-lookup"><span data-stu-id="87125-225">c300x400</span></span>             | <span data-ttu-id="87125-226">Limitado por uma caixa de 300 x 400</span><span class="sxs-lookup"><span data-stu-id="87125-226">Bounded by 300x400 box</span></span> | <span data-ttu-id="87125-227">Original</span><span class="sxs-lookup"><span data-stu-id="87125-227">Original</span></span>     | <span data-ttu-id="87125-228">Gere uma miniatura que se ajuste em uma caixa de 300 x 400 pixels, mantendo a taxa de proporção</span><span class="sxs-lookup"><span data-stu-id="87125-228">Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio</span></span>                                                                 |
+| <span data-ttu-id="87125-229">c300x400_Crop</span><span class="sxs-lookup"><span data-stu-id="87125-229">c300x400_Crop</span></span>        | <span data-ttu-id="87125-230">300x400</span><span class="sxs-lookup"><span data-stu-id="87125-230">300x400</span></span>                | <span data-ttu-id="87125-231">Recortada</span><span class="sxs-lookup"><span data-stu-id="87125-231">Cropped</span></span>      | <span data-ttu-id="87125-p112">Gere uma miniatura de 300 x 400 pixels. Para isso, é preciso redimensionar a imagem para caber na caixa de 300 x 400 e recortar o que ficar fora da caixa.</span><span class="sxs-lookup"><span data-stu-id="87125-p112">Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box.</span></span> |
 
-<span data-ttu-id="841a0-214">**Observação:** talvez a miniatura retornada não corresponda exatamente às dimensões de pixel solicitadas, mas corresponderá com a taxa de proporção.</span><span class="sxs-lookup"><span data-stu-id="841a0-214">**Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.</span></span>
-<span data-ttu-id="841a0-215">Em alguns casos, uma miniatura maior do que a solicitada pode retornar, se a miniatura já existir, e pode ser facilmente dimensionada para coincidir com a resolução solicitada.</span><span class="sxs-lookup"><span data-stu-id="841a0-215">In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.</span></span>
+<span data-ttu-id="87125-234">**Observação:** talvez a miniatura retornada não corresponda exatamente às dimensões de pixel solicitadas, mas corresponderá com a taxa de proporção.</span><span class="sxs-lookup"><span data-stu-id="87125-234">**Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.</span></span>
+<span data-ttu-id="87125-235">Em alguns casos, uma miniatura maior do que a solicitada pode retornar, se a miniatura já existir, e pode ser facilmente dimensionada para coincidir com a resolução solicitada.</span><span class="sxs-lookup"><span data-stu-id="87125-235">In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="841a0-216">Comentários</span><span class="sxs-lookup"><span data-stu-id="841a0-216">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="87125-236">Comentários</span><span class="sxs-lookup"><span data-stu-id="87125-236">Remarks</span></span>
 
-<span data-ttu-id="841a0-217">**Observação** No OneDrive for Business e no SharePoint:</span><span class="sxs-lookup"><span data-stu-id="841a0-217">**Note** In OneDrive for Business and SharePoint:</span></span>
+<span data-ttu-id="87125-237">**Observação** No OneDrive for Business e no SharePoint:</span><span class="sxs-lookup"><span data-stu-id="87125-237">**Note** In OneDrive for Business and SharePoint:</span></span>
 
-<span data-ttu-id="841a0-218">O uso dessas chamadas para expandir a coleção de miniaturas não funcionará:</span><span class="sxs-lookup"><span data-stu-id="841a0-218">Using these calls to expand the thumbnails collection will not work:</span></span>
+<span data-ttu-id="87125-238">O uso dessas chamadas para expandir a coleção de miniaturas não funcionará:</span><span class="sxs-lookup"><span data-stu-id="87125-238">Using these calls to expand the thumbnails collection will not work:</span></span>
 
 * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
 * `GET /drive/items/{item-id}/children?expand=thumbnails`
 
-<span data-ttu-id="841a0-219">Não há suporte para miniaturas no SharePoint Server 2016.</span><span class="sxs-lookup"><span data-stu-id="841a0-219">Thumbnails are not supported on SharePoint Server 2016.</span></span>
+<span data-ttu-id="87125-239">Não há suporte para miniaturas no SharePoint Server 2016.</span><span class="sxs-lookup"><span data-stu-id="87125-239">Thumbnails are not supported on SharePoint Server 2016.</span></span>
 
-### <a name="error-responses"></a><span data-ttu-id="841a0-220">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="841a0-220">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="87125-240">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="87125-240">Error responses</span></span>
 
-<span data-ttu-id="841a0-221">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="841a0-221">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="87125-241">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="87125-241">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
@@ -282,6 +342,17 @@ Content-Type: application/json
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-thumbnails.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/v1.0/api/driveitem-list-thumbnails.md:
       Unable to map some markdown elements into schema.
          Unmapped methods:
