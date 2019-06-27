@@ -2,38 +2,36 @@
 title: Criar evento
 description: Use essa API para criar um novo evento no calendário especificado ou no padrão.
 author: angelgolfer-ms
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e974bd17b4fe1b1f43e743cbcacbb2104a3888fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1dec239f6da7a5053ac9cbfb02b761cefb67dcf2
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572000"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264754"
 ---
-# <a name="create-event"></a><span data-ttu-id="0f16d-103">Criar evento</span><span class="sxs-lookup"><span data-stu-id="0f16d-103">Create event</span></span>
+# <a name="create-event"></a><span data-ttu-id="c30c0-103">Criar evento</span><span class="sxs-lookup"><span data-stu-id="c30c0-103">Create event</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="c30c0-104">Use essa API para criar um novo evento no calendário especificado ou no padrão.</span><span class="sxs-lookup"><span data-stu-id="c30c0-104">Use this API to create a new event in the default or specified calendar.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c30c0-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="c30c0-105">Permissions</span></span>
+<span data-ttu-id="c30c0-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c30c0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="0f16d-104">Use essa API para criar um novo evento no calendário especificado ou no padrão.</span><span class="sxs-lookup"><span data-stu-id="0f16d-104">Use this API to create a new event in the default or specified calendar.</span></span>
-## <a name="permissions"></a><span data-ttu-id="0f16d-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="0f16d-105">Permissions</span></span>
-<span data-ttu-id="0f16d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0f16d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="0f16d-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0f16d-108">Permission type</span></span>      | <span data-ttu-id="0f16d-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0f16d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c30c0-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c30c0-108">Permission type</span></span>      | <span data-ttu-id="c30c0-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c30c0-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0f16d-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0f16d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0f16d-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f16d-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="0f16d-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0f16d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f16d-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f16d-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="0f16d-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0f16d-114">Application</span></span> | <span data-ttu-id="0f16d-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f16d-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="c30c0-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c30c0-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c30c0-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c30c0-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="c30c0-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c30c0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c30c0-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c30c0-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="c30c0-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c30c0-114">Application</span></span> | <span data-ttu-id="c30c0-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c30c0-115">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0f16d-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0f16d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c30c0-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c30c0-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="0f16d-117">Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.</span><span class="sxs-lookup"><span data-stu-id="0f16d-117">A user's or group's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="c30c0-117">Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.</span><span class="sxs-lookup"><span data-stu-id="c30c0-117">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 POST /me/calendar/events
 POST /users/{id | userPrincipalName}/calendar/events
 POST /groups/{id}/calendar/events
 ```
-<span data-ttu-id="0f16d-118">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) padrão.</span><span class="sxs-lookup"><span data-stu-id="0f16d-118">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="c30c0-118">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) padrão.</span><span class="sxs-lookup"><span data-stu-id="c30c0-118">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
@@ -41,49 +39,49 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 POST /me/calendarGroup/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
-<span data-ttu-id="0f16d-119">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.</span><span class="sxs-lookup"><span data-stu-id="0f16d-119">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="c30c0-119">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.</span><span class="sxs-lookup"><span data-stu-id="c30c0-119">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 POST /me/calendarGroups/{id}/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
-## <a name="request-headers"></a><span data-ttu-id="0f16d-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0f16d-120">Request headers</span></span>
-| <span data-ttu-id="0f16d-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="0f16d-121">Header</span></span>       | <span data-ttu-id="0f16d-122">Valor</span><span class="sxs-lookup"><span data-stu-id="0f16d-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c30c0-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c30c0-120">Request headers</span></span>
+| <span data-ttu-id="c30c0-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c30c0-121">Header</span></span>       | <span data-ttu-id="c30c0-122">Valor</span><span class="sxs-lookup"><span data-stu-id="c30c0-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="0f16d-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="0f16d-123">Authorization</span></span>  | <span data-ttu-id="0f16d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0f16d-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="0f16d-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0f16d-126">Content-Type</span></span>  | <span data-ttu-id="0f16d-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0f16d-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="c30c0-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="c30c0-123">Authorization</span></span>  | <span data-ttu-id="c30c0-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c30c0-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c30c0-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c30c0-126">Content-Type</span></span>  | <span data-ttu-id="c30c0-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c30c0-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="0f16d-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0f16d-129">Request body</span></span>
-<span data-ttu-id="0f16d-130">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="0f16d-130">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c30c0-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c30c0-129">Request body</span></span>
+<span data-ttu-id="c30c0-130">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="c30c0-130">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0f16d-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f16d-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c30c0-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="c30c0-131">Response</span></span>
 
-<span data-ttu-id="0f16d-132">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0f16d-132">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+<span data-ttu-id="c30c0-132">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c30c0-132">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0f16d-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0f16d-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0f16d-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0f16d-134">Request</span></span>
-<span data-ttu-id="0f16d-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0f16d-135">Here is an example of the request.</span></span>
-<span data-ttu-id="0f16d-136">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="0f16d-136">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="example"></a><span data-ttu-id="c30c0-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c30c0-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c30c0-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c30c0-134">Request</span></span>
+<span data-ttu-id="c30c0-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c30c0-135">Here is an example of the request.</span></span>
+<span data-ttu-id="c30c0-136">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="c30c0-136">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
   "name": "create_event_from_calendar"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
+POST https://graph.microsoft.com/v1.0/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
 Content-type: application/json
 
 {
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does next month work for you?"
+    "content": "Does mid month work for you?"
   },
   "start": {
-      "dateTime": "2019-03-10T12:00:00",
+      "dateTime": "2019-03-15T12:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "end": {
-      "dateTime": "2019-03-10T14:00:00",
+      "dateTime": "2019-03-15T14:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "location":{
@@ -101,8 +99,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="0f16d-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f16d-137">Response</span></span>
-<span data-ttu-id="0f16d-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0f16d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c30c0-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="c30c0-137">Response</span></span>
+<span data-ttu-id="c30c0-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c30c0-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,21 +111,21 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU7zAAAAAGtlAAA%3D')/events/$entity",
-    "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==\"",
-    "id": "AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA=",
-    "createdDateTime": "2019-02-28T21:36:26.7105485Z",
-    "lastModifiedDateTime": "2019-02-28T21:36:26.9577227Z",
-    "changeKey": "/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU7zAAAAAGtlAAA%3D')/events/$entity",
+    "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjEpA==\"",
+    "id": "AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA=",
+    "createdDateTime": "2019-02-28T21:17:57.56197Z",
+    "lastModifiedDateTime": "2019-02-28T21:17:59.044919Z",
+    "changeKey": "/IUUrIl3PkG1JCSsPfU+8wAAGXjEpA==",
     "categories": [],
     "originalStartTimeZone": "Pacific Standard Time",
     "originalEndTimeZone": "Pacific Standard Time",
-    "uid": "040000008200C780DAE",
+    "iCalUId": "040000008200E641B4C",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
     "subject": "Let's go for lunch",
-    "bodyPreview": "Does next month work for you?",
+    "bodyPreview": "Does mid month work for you?",
     "importance": "normal",
     "sensitivity": "normal",
     "isAllDay": false,
@@ -137,7 +135,7 @@ Content-type: application/json
     "seriesMasterId": null,
     "showAs": "busy",
     "type": "singleInstance",
-    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl": null,
     "recurrence": null,
     "responseStatus": {
@@ -146,14 +144,14 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes next month work for you?\r\n</body>\r\n</html>\r\n"
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes mid month work for you?\r\n</body>\r\n</html>\r\n"
     },
     "start": {
-        "dateTime": "2019-03-10T12:00:00.0000000",
+        "dateTime": "2019-03-15T12:00:00.0000000",
         "timeZone": "Pacific Standard Time"
     },
     "end": {
-        "dateTime": "2019-03-10T14:00:00.0000000",
+        "dateTime": "2019-03-15T14:00:00.0000000",
         "timeZone": "Pacific Standard Time"
     },
     "location": {
@@ -191,16 +189,30 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="c30c0-141">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="c30c0-141">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="c30c0-142">C#</span><span class="sxs-lookup"><span data-stu-id="c30c0-142">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_event_from_calendar-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c30c0-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="c30c0-143">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_event_from_calendar-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="c30c0-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c30c0-144">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_event_from_calendar-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create event",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/calendar-post-events.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/calendar-post-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/calendar-post-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

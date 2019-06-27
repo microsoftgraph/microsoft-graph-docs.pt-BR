@@ -4,30 +4,30 @@ description: Recupere uma única mensagem em um bate-papo.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69ad1bf9c5d10acdcd96f46035f8d898a4916c01
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 41bdff9689c53c3e852b32ecf167b96b8d50ec85
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591666"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261548"
 ---
-# <a name="get-chat-message"></a><span data-ttu-id="14d49-103">Receba uma mensagem de bate-papo</span><span class="sxs-lookup"><span data-stu-id="14d49-103">Get chat message</span></span>
+# <a name="get-chat-message"></a><span data-ttu-id="02c86-103">Receba uma mensagem de bate-papo</span><span class="sxs-lookup"><span data-stu-id="02c86-103">Get chat message</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="14d49-104">Recupere uma única [mensagem](../resources/chatmessage.md) em um [bate-papo](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="14d49-104">Retrieve a single [message](../resources/chatmessage.md) in a [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="02c86-104">Recupere uma única [mensagem](../resources/chatmessage.md) em um [bate-papo](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="02c86-104">Retrieve a single [message](../resources/chatmessage.md) in a [chat](../resources/chat.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="14d49-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="14d49-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="02c86-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="02c86-105">Permissions</span></span>
 
-<span data-ttu-id="14d49-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14d49-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="02c86-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="02c86-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="14d49-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="14d49-108">Permission type</span></span>      | <span data-ttu-id="14d49-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="14d49-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="02c86-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="02c86-108">Permission type</span></span>      | <span data-ttu-id="02c86-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="02c86-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="14d49-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="14d49-110">Delegated (work or school account)</span></span> | <span data-ttu-id="14d49-111">Chat.Read</span><span class="sxs-lookup"><span data-stu-id="14d49-111">Chat.Read</span></span>   |
-|<span data-ttu-id="14d49-112">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="14d49-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14d49-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="14d49-113">Not supported.</span></span>    |
-|<span data-ttu-id="14d49-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="14d49-114">Application</span></span> | <span data-ttu-id="14d49-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="14d49-115">Not supported.</span></span>   |
+|<span data-ttu-id="02c86-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="02c86-110">Delegated (work or school account)</span></span> | <span data-ttu-id="02c86-111">Chat.Read</span><span class="sxs-lookup"><span data-stu-id="02c86-111">Chat.Read</span></span>   |
+|<span data-ttu-id="02c86-112">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="02c86-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="02c86-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="02c86-113">Not supported.</span></span>    |
+|<span data-ttu-id="02c86-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="02c86-114">Application</span></span> | <span data-ttu-id="02c86-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="02c86-115">Not supported.</span></span>   |
 
-## <a name="http-request"></a><span data-ttu-id="14d49-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="14d49-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="02c86-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="02c86-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -36,25 +36,25 @@ GET /users/{id}/chats/{id}/messages/{id}
 GET /chats/{id}/messages/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="14d49-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="14d49-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="02c86-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="02c86-117">Optional query parameters</span></span>
 
-<span data-ttu-id="14d49-118">Esta operação não é atualmente compatível com [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="14d49-118">This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="02c86-118">Esta operação não é atualmente compatível com [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="02c86-118">This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="14d49-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="14d49-119">Request headers</span></span>
-| <span data-ttu-id="14d49-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="14d49-120">Header</span></span>       | <span data-ttu-id="14d49-121">Valor</span><span class="sxs-lookup"><span data-stu-id="14d49-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="02c86-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="02c86-119">Request headers</span></span>
+| <span data-ttu-id="02c86-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="02c86-120">Header</span></span>       | <span data-ttu-id="02c86-121">Valor</span><span class="sxs-lookup"><span data-stu-id="02c86-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="14d49-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="14d49-122">Authorization</span></span>  | <span data-ttu-id="14d49-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="14d49-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="02c86-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="02c86-122">Authorization</span></span>  | <span data-ttu-id="02c86-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="02c86-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="14d49-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="14d49-125">Request body</span></span>
-<span data-ttu-id="14d49-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="14d49-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="02c86-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="02c86-125">Request body</span></span>
+<span data-ttu-id="02c86-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="02c86-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="14d49-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="14d49-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="02c86-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="02c86-127">Response</span></span>
 
-<span data-ttu-id="14d49-128">Se bem-sucedido, esse método retornará um `200 OK` código de resposta e um objeto [chatmessage](../resources/chatmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="14d49-128">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="02c86-128">Se bem-sucedido, esse método retornará um `200 OK` código de resposta e um objeto [chatmessage](../resources/chatmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="02c86-128">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="14d49-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="14d49-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="14d49-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="14d49-130">Request</span></span>
-<span data-ttu-id="14d49-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="14d49-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="02c86-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="02c86-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="02c86-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="02c86-130">Request</span></span>
+<span data-ttu-id="02c86-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="02c86-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_chat_message"
@@ -63,10 +63,10 @@ GET /chats/{id}/messages/{id}
 GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="14d49-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="14d49-132">Response</span></span>
-<span data-ttu-id="14d49-133">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="14d49-133">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="02c86-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="02c86-132">Response</span></span>
+<span data-ttu-id="02c86-133">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="02c86-133">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="14d49-134">**Observação:** O objeto de resposta mostrado aqui é encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="14d49-134">**Note:** The response object shown here is shortened for readability.</span></span> <span data-ttu-id="14d49-135">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="14d49-135">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="02c86-134">**Observação:** O objeto de resposta mostrado aqui é encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="02c86-134">**Note:** The response object shown here is shortened for readability.</span></span> <span data-ttu-id="02c86-135">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="02c86-135">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,13 +119,15 @@ Content-length: 201
     "reactions": []
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="14d49-136">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="14d49-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="14d49-137">C#</span><span class="sxs-lookup"><span data-stu-id="14d49-137">C</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="02c86-136">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="02c86-136">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="02c86-137">C#</span><span class="sxs-lookup"><span data-stu-id="02c86-137">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_chat_message-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="14d49-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="14d49-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="02c86-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="02c86-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_chat_message-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="02c86-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="02c86-139">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_chat_message-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -140,6 +142,7 @@ Content-length: 201
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/chat-get-message.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/chat-get-message.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/chat-get-message.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
