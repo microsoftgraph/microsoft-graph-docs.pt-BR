@@ -2,18 +2,18 @@
 title: Obter canal
 description: Recuperar as propriedades e os relacionamentos de um canal.
 author: nkramer
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5b5f70b79deaf7fa90b6083dcbd4c83a09aa84e5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1d816f281dfb8c8d9ef244e837c0c9f673c02909
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565545"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273672"
 ---
 # <a name="get-channel"></a>Obter canal
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Recuperar as propriedades e os relacionamentos de um [canal](../resources/channel.md).
 
@@ -58,7 +58,7 @@ Este é um exemplo da solicitação.
   "name": "get_channel"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
@@ -80,16 +80,30 @@ Content-length: 201
     "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_channel-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_channel-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_channel-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get channel",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/channel-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/channel-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/channel-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

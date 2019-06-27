@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um bookingStaffMember no bookingbusines
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: acfef7e88e6fe8d5bb8e46c5d3c3e3c85ff1aa33
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 97649a47aba9cd63d58e40e388bf9bd8292156b9
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635887"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262465"
 ---
 # <a name="update-bookingstaffmember"></a>Atualizar bookingstaffmember
 
@@ -44,7 +44,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página de **detalhes da equipe** no aplicativo de reservas.|
 |displayName|String|O nome do membro da equipe, conforme exibido para os clientes.|
 |emailAddress|String|O endereço de email do membro da equipe. Isso pode ser no mesmo locatário do Office 365 que a empresa ou em um domínio de email diferente. Esse endereço de email será usado se a propriedade **sendConfirmationsToOwner** estiver definida como true na política de agendamento da empresa.|
-|role|cadeia de caracteres| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|role|string| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`.|
 |useBusinessHours|Booliano|True significa que a disponibilidade do membro da equipe é determinada pela propriedade **businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHouse** do membro da equipe.|
 |workingHours|coleção [bookingWorkHours](../resources/bookingworkhours.md)|O intervalo de horas por dia da semana em que o membro da equipe está disponível para reserva.|
 
@@ -136,13 +136,15 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_bookingstaffmember-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_bookingstaffmember-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_bookingstaffmember-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -157,6 +159,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

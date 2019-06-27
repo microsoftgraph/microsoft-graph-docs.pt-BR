@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto contactfolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 508a8ac6791eda1b854d95c3e08d693f77cc92cb
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a01cc70222205bcafd5cd892561b1ca831f51a59
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591309"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261233"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
@@ -43,8 +43,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|String|O nome de exibição da pasta.|
-|parentFolderId|Cadeia de caracteres|A ID da pasta pai da pasta.|
-|wellKnownName|cadeia de caracteres|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente `contacts` é a única pasta de contatos reconhecida.|
+|parentFolderId|String|A ID da pasta pai da pasta.|
+|wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente `contacts` é a única pasta de contatos reconhecida.|
 
 ## <a name="response"></a>Resposta
 
@@ -86,12 +86,14 @@ Content-length: 104
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_contactfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_contactfolder-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_contactfolder-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -106,6 +108,7 @@ Content-length: 104
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/contactfolder-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/contactfolder-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/contactfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,12 +4,12 @@ description: Copia uma seção para um bloco de anotações específico.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 897a157c636f8aba342c87cd8773b28b56a099f5
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8bb7cac484893a7b821707e4c774e33996da80cf
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638890"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263928"
 ---
 # <a name="section-copytonotebook"></a>seção: copyToNotebook
 
@@ -46,11 +46,11 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|Cadeia de caracteres|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site de equipe do Office 365.|
-|siteId|Cadeia de caracteres|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site de equipe do Office 365.|
+|siteCollectionId|String|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site de equipe do Office 365.|
+|siteId|String|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site de equipe do Office 365.|
 |groupId|Cadeia de caracteres|A ID do grupo para o qual copiar. Use somente ao copiar para um grupo do Office 365.|
 |id|String|Obrigatório. A ID do bloco de anotações de destino. |
-|renomeas|Cadeia de caracteres|O nome da cópia. O padrão é o nome do item existente. |
+|renomeas|String|O nome da cópia. O padrão é o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 
@@ -87,12 +87,14 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/section_copytonotebook-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/section_copytonotebook-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/section_copytonotebook-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -107,6 +109,7 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/section-copytonotebook.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/section-copytonotebook.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/section-copytonotebook.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

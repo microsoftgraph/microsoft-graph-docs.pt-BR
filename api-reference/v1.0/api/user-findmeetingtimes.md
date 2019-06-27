@@ -4,12 +4,12 @@ description: Localize as sugestões de hora da reunião com base no organizador 
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7280053012f0a5e3769e12827c242dfae02130e0
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: a57ba3c18287cd56f302651a82067510a5367433
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537125"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35278026"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 Localize as sugestões de hora da reunião com base no organizador e na disponibilidade dos participantes, assim como nas restrições de horário ou local especificadas como parâmetros.
@@ -349,6 +349,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_findmeetingtimes-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_findmeetingtimes-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -361,6 +363,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
       "Warning: /api-reference/v1.0/api/user-findmeetingtimes.md:

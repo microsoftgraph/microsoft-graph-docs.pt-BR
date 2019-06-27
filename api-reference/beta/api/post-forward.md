@@ -4,14 +4,16 @@ description: 'Encaminhe uma postagem para um destinatário. Você pode especific
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ac4f4f193d4b647fd97292f1aaa5d5b3bb88e1a1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: cf8d8c7759eec6f2429d16b791480ebcf531145c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33595252"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264250"
 ---
 # <a name="post-forward"></a>post: forward
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Encaminhe uma postagem para um destinatário. Você pode especificar a conversa pai e o thread na solicitação ou pode especificar apenas o thread pai, sem a conversa pai. 
 
@@ -57,7 +59,7 @@ Este é um exemplo da solicitação.
   "name": "post_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/forward
+POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/forward
 Content-type: application/json
 Content-length: 166
 
@@ -84,26 +86,31 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 200 OK
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_forward-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/post_forward-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/post_forward-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "post: forward",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/post-forward.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/post-forward.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/post-forward.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/post-forward.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/post-forward.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

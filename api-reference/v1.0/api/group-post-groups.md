@@ -4,12 +4,12 @@ description: 'Crie um novo grupo conforme especificado no corpo da solicitação
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 2416835da76345a09370169484a83bb6ac713f90
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 9cfbe95c25d6bed66dcbc20d5e2a7039a2a74cf3
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812814"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236472"
 ---
 # <a name="create-group"></a>Criar grupo
 Crie um novo grupo conforme especificado no corpo da solicitação. Você pode criar os seguintes tipos de grupos:
@@ -19,7 +19,7 @@ Crie um novo grupo conforme especificado no corpo da solicitação. Você pode c
 
 Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties).
 
-Para obter propriedades _não_ retornadas por padrão, execute uma operação GET e especifique as propriedades em uma opção de consulta `$select` do OData. Veja um [exemplo](group-get.md#request-2).
+Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) e especifique as propriedades em uma opção de consulta `$select` do OData.
 
 > **Observação**: embora o Microsoft Teams tenha como base grupos do Office 365, não é possível criar uma equipe por meio desta API atualmente. Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.
 

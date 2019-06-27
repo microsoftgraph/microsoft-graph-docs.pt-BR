@@ -3,12 +3,12 @@ title: Listar assinaturas
 description: " Veja os cenários abaixo para obter detalhes."
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 3728c3fcf2fe3d78b243894632a363804a2f92c8
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 62985d912992c6a45ccbec0b6e4f1bbd977156db
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638694"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271453"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
@@ -24,7 +24,7 @@ Esta API suporta os seguintes escopos de permissão; para saber mais, incluindo 
 |:---------------- |:-------------------------------------------- |
 | [Delegado](/graph/auth-v2-user) (conta corporativa ou de estudante) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
 | [Delegado](/graph/auth-v2-user) (conta pessoal da Microsoft) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
-| [Aplicativo](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
+| [Application](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
 
 Os resultados da resposta são baseados no contexto do aplicativo de chamada. A seguir, um resumo dos cenários comuns:
 
@@ -118,13 +118,15 @@ Content-length: 586
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_subscriptions-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_subscriptions-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -139,6 +141,7 @@ Content-length: 586
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

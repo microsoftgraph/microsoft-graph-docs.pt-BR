@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto bookingService no bookingbusi
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 607949e8c4b00230815fa8b29eba751494efb8b3
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 98bade824541db13810071bc2a256c3daf06a887
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636006"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262563"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
@@ -51,12 +51,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |defaultduration|Duração|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M 59.999999999999 S. |
 |DefaultLocation|[location](../resources/location.md)|O local físico padrão para o serviço.|
 |defaultprice|Duplo|O preço monetário padrão do serviço.|
-|defaultpricetype|cadeia de caracteres|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultpricetype|string|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultlembrers|coleção [bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao se ler este **bookingService** por sua ID.|
-|description|String|Uma descrição de texto para o serviço.|
-|displayName|Cadeia de caracteres|Um nome de serviço.|
+|descrição|String|Uma descrição de texto para o serviço.|
+|displayName|String|Um nome de serviço.|
 |emailAddress|String|Um endereço de email|
-|id|Cadeia de caracteres| Somente leitura.|
+|id|String| Somente leitura.|
 |isHiddenFromCustomers|Booliano|True significa que este serviço não está disponível para os clientes para reserva.|
 |notes|Cadeia de caracteres|Informações adicionais sobre este serviço.|
 |Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
@@ -91,13 +91,15 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_bookingservice-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_bookingservice-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_bookingservice-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -112,6 +114,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

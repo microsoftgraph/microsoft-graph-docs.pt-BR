@@ -4,14 +4,16 @@ description: Recupere os professores e alunos de uma aula. Se o token delegado f
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 6b563e144374eb026ab1c91698b49d9da75a5935
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: be51648f2a6f3549059eb5d0d69bb82198d53328
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587471"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259805"
 ---
 # <a name="list-members"></a>Listar membros
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere os professores e alunos de uma aula. Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.
 
@@ -49,7 +51,7 @@ Este é um exemplo de solicitação.
   "name": "get_members"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
+GET https://graph.microsoft.com/beta/education/classes/11016/members
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -92,6 +94,8 @@ Content-length: 593
         "street": "12345 Main St."
       },
       "primaryRole": "teacher",
+      "externalId": "13013",
+      "teacherNumber": "8802",
       "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -99,10 +103,6 @@ Content-length: 593
         "state": "CA",
         "street": "12345 Main St."
       },
-      "teacher": {
-        "externalId": "13013",
-        "teacherNumber": "8802",
-      }
     },
     {
       "id": "13005",
@@ -126,15 +126,13 @@ Content-length: 593
         "state": "NY",
         "street": "12345 Main St."
       },
-      "student": {
-        "birthDate": "2001-01-01T00:00:00Z",
-        "externalId": "13005",
-        "gender": "female",
-        "grade": "9",
-        "graduationYear": "2019",
-        "studentNumber": "13005",
-      },
       "primaryRole": "student",
+      "externalId": "13005",
+      "birthDate": "2001-01-01T00:00:00Z",
+      "gender": "female",
+      "grade": "9",
+      "graduationYear": "2019",
+      "studentNumber": "13005",
       "residenceAddress": {
         "city": "Long Beach",
         "countryOrRegion": "United States",
@@ -147,26 +145,31 @@ Content-length: 593
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_members-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_members-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_members-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List members",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

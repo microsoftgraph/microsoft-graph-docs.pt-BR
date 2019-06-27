@@ -4,12 +4,12 @@ description: Recupera uma lista de objetos groupLifecyclePolicy à qual um grupo
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: b21af434faf981f83cd5e13661ece5c17e49e6e5
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 8c705261632433a7d17ac8bb89936aac12e04971
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812548"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263046"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Listar groupLifecyclePolicies
 
@@ -87,6 +87,8 @@ Content-length: 227
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -101,6 +103,7 @@ Content-length: 227
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

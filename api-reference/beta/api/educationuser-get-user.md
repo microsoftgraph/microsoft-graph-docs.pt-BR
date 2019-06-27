@@ -4,14 +4,16 @@ description: Recupere o **usuário** do diretório simples que corresponde a ess
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: e8db669f35030cef77d75c0a89a50c9d7b860b1c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e8f693d8922dec1609b047a4ccced530cdb5eb36
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587236"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259315"
 ---
 # <a name="get-user"></a>Obter usuário
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere o **usuário** do diretório simples que corresponde a esse **educationUser**.
 
@@ -24,7 +26,7 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All|
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
+|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ Este é um exemplo de solicitação.
   "name": "get_user"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/me/user
+GET https://graph.microsoft.com/beta/education/me/user
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -84,26 +86,31 @@ Content-length: 491
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_user-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_user-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_user-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: FC4AAF57-A0ED-4899-B104-A8B89B72AD5A
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationuser-get-user.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationuser-get-user.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/educationuser-get-user.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/educationuser-get-user.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationuser-get-user.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

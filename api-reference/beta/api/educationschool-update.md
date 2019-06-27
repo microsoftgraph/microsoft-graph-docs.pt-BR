@@ -4,14 +4,16 @@ description: Atualize as propriedades de um objeto de escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: dc7b2bac294d52dcd70a96770619e205a2e0b4b7
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 76ffa0a72b4966b884733f2c178b874290982c18
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587699"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259546"
 ---
 # <a name="update-educationschool-properties"></a>Atualizar as propriedades educationschool
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades de um objeto de escola.
 
@@ -22,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application | EduRoster.ReadWrite.All |
+|Aplicativo | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,15 +43,15 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName| String| Nome de exibição da escola| 
-|description| String | Descrição da escola| 
-|principalEmail| Cadeia de caracteres| Endereço de email da entidade de segurança|
-|principalName| Cadeia de caracteres | Nome da entidade de segurança|
-|externalPrincipalId| Cadeia de caracteres | ID da entidade de segurança no sistema de sincronização. |
-|highestGrade|Cadeia de caracteres| Ensino de nível mais alto. |
-|lowestGrade|Cadeia de caracteres| Ensino de nível mais baixo. |
-|schoolNumber|Cadeia de caracteres| Número da escola.|
-|externalId|Cadeia de caracteres| ID da escola no sistema de sincronização. |
-|phone|Cadeia de caracteres| Número de telefone da escola. |
+|descrição| String | Descrição da escola| 
+|principalEmail| String| Endereço de email da entidade de segurança|
+|principalName| String | Nome da entidade de segurança|
+|externalPrincipalId| String | ID da entidade de segurança no sistema de sincronização. |
+|highestGrade|String| Ensino de nível mais alto. |
+|lowestGrade|String| Ensino de nível mais baixo. |
+|schoolNumber|String| Número da escola.|
+|externalId|String| ID da escola no sistema de sincronização. |
+|phone|String| Número de telefone da escola. |
 |fax|Cadeia de caracteres| Número de fax da escola. |
 |address|[physicalAddress](../resources/physicaladdress.md)| Endereço da escola.|
 |createdBy|[identitySet](../resources/identityset.md)|Entidade que criou a escola.|
@@ -64,7 +66,7 @@ Este é um exemplo de solicitação.
   "name": "update_educationschool"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
+PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
 Content-length: 292
 
@@ -113,26 +115,31 @@ Content-length: 292
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_educationschool-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_educationschool-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_educationschool-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationschool",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->
