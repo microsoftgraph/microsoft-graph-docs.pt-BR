@@ -2,12 +2,12 @@
 title: 'servicePrincipalName: listar ownedObjects'
 description: Recupere uma lista de objetos pertencentes ao servicePrincipalName.  Isso pode incluir aplicativos ou grupos.
 localization_priority: Normal
-ms.openlocfilehash: 8837b6c0505b31fa187ce5bf3caebe27b950a155
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 9b99643eee693902bbdb10467463c2944f4b6fb0
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638715"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269003"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipalName: listar ownedObjects
 
@@ -75,12 +75,14 @@ Content-length: 55
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_ownedobjects-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_ownedobjects-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_ownedobjects-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -95,6 +97,7 @@ Content-length: 55
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-list-ownedobjects.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/serviceprincipal-list-ownedobjects.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/serviceprincipal-list-ownedobjects.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

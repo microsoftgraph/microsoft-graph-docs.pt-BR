@@ -4,12 +4,12 @@ description: Retorna o objeto de intervalo associado a toda a linha.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: da47add9d566be4e9ccca926ecb12f968fefa1bd
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6b1ff4f10080e89ab60e17b6733f7bd6b01cc437
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602484"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35278747"
 ---
 # <a name="tablerow-range"></a>TableRow: Range
 
@@ -77,12 +77,14 @@ Content-length: 169
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/tablerow_range-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/tablerow_range-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/tablerow_range-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -96,6 +98,7 @@ Content-length: 169
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/tablerow-range.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/tablerow-range.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/tablerow-range.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

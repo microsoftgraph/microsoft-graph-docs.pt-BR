@@ -4,12 +4,12 @@ description: Adiciona um novo usuário ou grupo à lista rejectedSender.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 640a1728f498a26770827d02d10e60cf9a8bc6cb
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dd92d188b580a56ab45374eb9d59bec851a2e3a8
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613726"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277662"
 ---
 # <a name="create-rejectedsender"></a>Criar rejectedSender
 Adiciona um novo usuário ou grupo à lista rejectedSender.
@@ -66,11 +66,13 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+#### <a name="sdk-sample-code"></a>Código de amostra do SDK
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -84,6 +86,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-rejectedsenders.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-post-rejectedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

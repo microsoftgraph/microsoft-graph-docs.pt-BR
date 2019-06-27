@@ -4,14 +4,16 @@ description: Copie uma mensagem para uma pasta.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d8a5defe751a77a84af9e36a536c5a751d4e056c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 54e9811f808e099ba8232f7984fdff85ce342a9c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598037"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266091"
 ---
 # <a name="message-copy"></a>message: copy
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copie uma mensagem para uma pasta.
 
@@ -60,6 +62,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o re
 Eis um exemplo de como chamar esta API.
 
 ##### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
@@ -67,7 +70,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/copy
+POST https://graph.microsoft.com/beta/me/messages/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -93,8 +96,8 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
+  "receivedDateTime": "2016-10-19T10:37:00Z",
+  "sentDateTime": "2016-10-19T10:37:00Z",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -105,26 +108,31 @@ Content-length: 248
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/message_copy-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/message_copy-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/message_copy-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: copy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/message-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/message-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/message-copy.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/message-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

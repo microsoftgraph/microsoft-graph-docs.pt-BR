@@ -4,20 +4,20 @@ ms.author: dspektor
 title: Obter ponto de extremidade do WebSocket
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2172015e446b57706caeecf73b8da2b6b486f7d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f14f13d3c84d3f352d03ea5533649614367b7e48
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345831"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276990"
 ---
 # <a name="get-websocket-endpoint"></a>Obter ponto de extremidade do WebSocket
 
 Permite que você receba notificações de alteração quase em tempo real para uma [unidade][] usando o [Socket.Io][].
-Socket.io é uma biblioteca de notificações popular para JavaScript que utiliza webSockets. Para saber mais, confira [Socket.Io](https://socket.io).
+Socket.io é uma biblioteca de notificações popular para JavaScript que utiliza WebSockets. Para saber mais, confira [Socket.Io](https://socket.io).
 
 [drive]: ../resources/drive.md
-[Socket.Io]: https://socket.io/
+[socket.io]: https://socket.io/
 
 ## <a name="permissions"></a>Permissões
 
@@ -67,6 +67,18 @@ Content-type: application/json
   "notificationUrl": "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523"
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 O `notificationUrl` retornado é uma URL de ponto de extremidade Socket.IO.
 Para usá-lo com um cliente do socket.io, divida a cadeia `/callback?` de caracteres no token.
@@ -90,3 +102,17 @@ socket.on("connect", ()=>console.log("Connected!"));
 socket.on("notification", (data)=>console.log("Notification!", data));
 ```
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

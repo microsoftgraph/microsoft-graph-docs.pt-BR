@@ -4,12 +4,12 @@ description: Adiciona uma nova coluna à tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3858816594ca7fdcd87c72c1e5bd7792cd4c34ef
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2eced50021770194ff80518632f686faf502099f
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602513"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35278803"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |índice|Int32|Especifica a posição relativa da nova coluna. A coluna anterior nessa posição é deslocada para a direita. O valor do índice deve ser igual ou menor que o valor do índice da última coluna, portanto não pode ser usado para acrescentar uma coluna ao final da tabela. Indexado com zero.|
 |values|Json|Opcional. Uma matriz bidimensional de valores não formatados da coluna da tabela.|
-|nome|string|nome
+|name|string|name
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [WorkbookTableColumn](../resources/tablecolumn.md) no corpo da resposta.
@@ -90,12 +90,14 @@ Content-length: 81
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/tablecolumncollection_add-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/tablecolumncollection_add-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/tablecolumncollection_add-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -108,6 +110,7 @@ Content-length: 81
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/tablecolumncollection-add.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/tablecolumncollection-add.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/tablecolumncollection-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/v1.0/api/tablecolumncollection-add.md/tablecolumncollection_add/values:

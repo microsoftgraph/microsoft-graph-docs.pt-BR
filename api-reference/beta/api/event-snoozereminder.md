@@ -4,14 +4,16 @@ description: Adiar um lembrete para um evento em um calendário de usuário até
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 53643800e9148297be166e4f41deaa4eaf9ca542
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 13ab5d66a54980e79d11543fa2c1347e513c9ad9
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33586669"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259196"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adiar um lembrete para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md) de usuário até um novo horário.
 
@@ -68,13 +70,13 @@ Este é um exemplo da solicitação.
   "name": "event_snoozereminder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/{id}/snoozeReminder
+POST https://graph.microsoft.com/beta/me/events/{id}/snoozeReminder
 Content-type: application/json
 Content-length: 97
 
 {
   "newReminderTime": {
-    "dateTime": "dateTime-value",
+    "dateTime": "2016-10-19T10:37:00Z",
     "timeZone": "timeZone-value"
   }
 }
@@ -90,26 +92,31 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 200 OK
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/event_snoozereminder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/event_snoozereminder-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/event_snoozereminder-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event: snoozeReminder",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/event-snoozereminder.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/event-snoozereminder.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/event-snoozereminder.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/event-snoozereminder.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/event-snoozereminder.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

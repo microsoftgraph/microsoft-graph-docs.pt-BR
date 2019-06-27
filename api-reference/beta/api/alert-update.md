@@ -4,12 +4,12 @@ description: Atualize uma propriedade de alerta editável em qualquer solução 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: de663b4cdcd4f12bfdf3d180f039144f86d2d624
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 3ad81e698c43e8863d3081d6995fc29b1b9a9dc3
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636559"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258538"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |   SecurityEvents.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application | SecurityEvents.ReadWrite.All |
+|Aplicativo | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça uma representação JSON dos valores de camp
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|Cadeia de caracteres|Nome do analista ao qual o alerta é atribuído para a triagem, investigação ou correção.|
+|assignedTo|String|Nome do analista ao qual o alerta é atribuído para a triagem, investigação ou correção.|
 |closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |comentários|String collection|Comentários de analista sobre o alerta (para o gerenciamento de alerta do cliente).|
 |comentários|Enumeração alertFeedback|Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
@@ -109,12 +109,14 @@ Veja a seguir o exemplo de uma resposta bem-sucedida.
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_alert-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -185,6 +187,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

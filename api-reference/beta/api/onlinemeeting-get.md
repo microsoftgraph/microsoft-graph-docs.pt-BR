@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos de um objeto **online
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ff164b7b525c83436dc5c0db6e583704f79414e3
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: da94541540989ef8e85c89e5fd64ea4b75867d91
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596983"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35265895"
 ---
 # <a name="get-online-meeting"></a>Obter reunião online
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
-| Application                            | OnlineMeetings. Read. All, OnlineMeetings. ReadWrite. All |
+| Aplicativo                            | OnlineMeetings. Read. All, OnlineMeetings. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -130,12 +130,14 @@ Content-Length: 1574
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-onlineMeeting-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-onlineMeeting-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-onlineMeeting-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -150,6 +152,7 @@ Content-Length: 1574
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

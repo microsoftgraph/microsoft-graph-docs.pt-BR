@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos tiindicator.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c2b2549167f4bd861389672e211a854cc284a832
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: e0f602482271207afab38174596dff528467aecf
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637581"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270613"
 ---
 # <a name="list-threat-intelligence-indicators"></a>Listar indicadores de inteligência de ameaças
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ThreatIndicators.ReadWrite.OwnedBy  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Aplicativo                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -101,12 +101,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_tiindicators-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_tiindicators-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_tiindicators-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -120,6 +122,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/tiindicators-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/tiindicators-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/tiindicators-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

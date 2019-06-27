@@ -2,12 +2,12 @@
 title: Excluir programControl
 description: No recurso de revisões do Azure AD Access, exclua um objeto programControl.  Isso desvincula uma revisão do Access de um programa.
 localization_priority: Normal
-ms.openlocfilehash: 6883c1683529338545be3a65629fdb6961d6c4bb
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ddbd040d05d6e2c236a024e3d5eb8710562cebe9
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33610718"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264089"
 ---
 # <a name="delete-programcontrol"></a>Excluir programControl
 
@@ -21,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl.ReadWrite.All  |
+|Aplicativo                            | ProgramControl.ReadWrite.All  |
 
 O usuário conectado também deve estar em uma função de diretório que permite excluir um `programControl`.
 
@@ -52,7 +52,7 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
 DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-d4f9f9129213
 ```
 ##### <a name="response"></a>Resposta
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -61,12 +61,14 @@ DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_programControl-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_programControl-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_programControl-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -81,6 +83,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/programcontrol-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/programcontrol-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

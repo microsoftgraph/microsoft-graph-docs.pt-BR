@@ -4,12 +4,12 @@ description: Obtenha uma lista dos membros do grupo. Um grupo pode ter usuários
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: fad3ad81268de77116b912153541ca7d147c563a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 57bc17f97c1dc21203d712d1da178d531f645791
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592767"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263032"
 ---
 # <a name="list-group-transitive-members"></a>Membros transitivos do grupo de lista
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory. Read. All, Directory. AccessAsUser. All, User. ReadBasic. All, User. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory. Read. All, User. Read. All |
+|Aplicativo | Directory. Read. All, User. Read. All |
 
 > Observação: para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
 
@@ -105,12 +105,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group_transitivemembers-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_group_transitivemembers-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_group_transitivemembers-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -125,6 +127,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

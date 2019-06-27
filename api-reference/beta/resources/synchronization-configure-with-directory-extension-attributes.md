@@ -2,12 +2,12 @@
 title: Configurar a sincronização com atributos de extensão de diretório
 description: 'Você pode personalizar o esquema de sincronização para incluir os atributos de extensão de diretório do Azure Active Directory (Azure AD). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para popular o valor de User. CommunityNickname no Salesforce. Neste cenário, você tem o Azure AD Connect configurado para provisionar um número de atributos de extensão de diretório do Windows Server Active Directory no local para o Azure AD. '
 localization_priority: Normal
-ms.openlocfilehash: 439d70ff4e42513b465b80719be34989c97a810d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b16cf5f73c95c34d624de8c1c7a8330b0ce64f4c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33620908"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277088"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com atributos de extensão de diretório
 
@@ -194,12 +194,14 @@ Content-Type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_synchronizationschema-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_synchronizationschema-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -293,6 +295,7 @@ Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincron
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

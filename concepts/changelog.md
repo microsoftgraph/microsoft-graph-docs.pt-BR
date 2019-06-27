@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: f14b36b11424b46fd092e155482b727f7b19dd4a
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 799abc4fa62eaeb813a5b109c7817acf8a8f2b59
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133793"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236395"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -79,20 +79,6 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | Beta        | A propriedade de navegação [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta)foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta)  |
 
 
-
-## <a name="may-2019"></a>Maio de 2019
-
-### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
-=======
-### <a name="outlook-mail-calendar-contacts"></a>Email, calendário e contatos do Outlook
-
-
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Foi adicionada a entidade[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0), que é derivada e suporta os métodos da entidade [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0). |
-| Adição | v1.0 e beta | Foi adicionada a capacidade de administradores limitaram o acesso do aplicativo apenas às caixas de correio específicas, mesmo quando um aplicativo recebe permissões de aplicativo para email, configurações de caixa de correio, calendários ou contatos. Para obter mais detalhes, Confira [Escopo de permissões do aplicativo para caixas de correio específicas do Exchange Online](auth-limit-mailbox-access.md). |
-
-
 ## <a name="may-2019"></a>Maio de 2019
 
 ### <a name="directory-apis"></a>APIs de diretório
@@ -159,6 +145,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | Beta        | Adicionou a propriedade **urgente** a enumeração[chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta).|
 | Adição        | Beta        | Adicionada a propriedadede navegação **hostedContents** à entidade [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
 | Adição        | Beta        | Adicionado a entidade **chatMessageHostedContent** para representar o conteúdo hospedado pelo Microsoft Teams associado a um [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). |
+
+### <a name="outlook-mail-calendar-contacts"></a>Email, calendário e contatos do Outlook
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Foi adicionada a entidade[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0), que é derivada e suporta os métodos da entidade [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0). |
+| Adição | v1.0 e beta | Foi adicionada a capacidade de administradores limitaram o acesso do aplicativo apenas às caixas de correio específicas, mesmo quando um aplicativo recebe permissões de aplicativo para email, configurações de caixa de correio, calendários ou contatos. Para obter mais detalhes, confira [Escopo de permissões do aplicativo para caixas de correio específicas do Exchange Online](auth-limit-mailbox-access.md). |
 
 ### <a name="reports-apis"></a>APIs de relatórios
 

@@ -4,12 +4,12 @@ description: Atualize as propriedades de um objeto contact.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 381aa191639e32677d4fccbf9e9f48c99f3d988f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d8a6d344326d1dfb03a23fc21e7e21680a827dd
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566147"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277494"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
@@ -58,9 +58,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |businessPhones|String|Os números de telefone comerciais do contato.|
 |categories|String|As categorias associadas ao contato.|
 |children|String|Os nomes dos filhos do contato.|
-|companyName|String|O nome da empresa do contato.|
+|nomeDaEmpresa|String|O nome da empresa do contato.|
 |department|String|O departamento do contato.|
-|displayName|String|O nome para exibição do contato. Observe que atualizações posteriores a outras propriedades podem fazer com que um valor gerado automaticamente substitua o valor displayName que você especificou. Para preservar um valor preexistente, sempre inclua-o como displayName em uma operação Update.|
+|displayName|String|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
 |emailAddresses|Coleção [EmailAddress](../resources/emailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
 |generation|String|A geração do contato.|
@@ -72,16 +72,16 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |jobTitle|String|O cargo do contato.|
 |manager|String|O nome do gerente do contato.
 |middleName|String|O nome do meio do contato.|
-|mobilePhone|String|O número de celular do contato.|
+|mobilePhone|Cadeia de caracteres|O número de celular do contato.|
 |nickName|String|O apelido do contato.|
 |officeLocation|String|O local do escritório do contato.|
 |otherAddress|[PhysicalAddress](../resources/physicaladdress.md)|Outros endereços do contato.|
-|parentFolderId|String|A ID da pasta pai do contato.|
+|parentFolderId|Cadeia de caracteres|A ID da pasta pai do contato.|
 |personalNotes|String|As anotações do usuário sobre o contato.|
 |profession|String|A profissão do contato.|
 |spouseName|String|O nome do cônjuge/parceiro do contato.|
 |surname|String|O sobrenome do contato.|
-|title|Cadeia de caracteres|O título do contato.|
+|title|String|O título do contato.|
 |yomiCompanyName|String|O nome de empresa japonês fonético do contato. Essa propriedade é opcional.|
 |yomiGivenName|String|O nome japonês fonético do contato. Essa propriedade é opcional.|
 |yomiSurname|String|O sobrenome japonês fonético do contato. Essa propriedade é opcional.|
@@ -184,6 +184,18 @@ Content-length: 1977
   "children": []
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_contact-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_contact-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_contact-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -192,5 +204,10 @@ Content-length: 1977
   "description": "Update contact",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

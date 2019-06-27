@@ -4,12 +4,12 @@ description: Obtém um workbookchart com base em sua posição na coleção.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bfed0dd8162ecb4c7b90d16de52bb7c476541af7
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 005a0462cb9d8ba0957f398fce10f53684b26a4a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635684"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261856"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -86,9 +86,11 @@ Content-length: 52
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/chartcollection_itemat-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/chartcollection_itemat-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -103,6 +105,7 @@ Content-length: 52
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/chartcollection-itemat.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/chartcollection-itemat.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

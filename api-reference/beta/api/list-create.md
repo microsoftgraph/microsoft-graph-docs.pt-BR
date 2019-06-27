@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: Criar uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2a14e0dd1123e2f108f84bbdd39bdd0e26398d10
-ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
+ms.openlocfilehash: d0de56a1fac8ecaa15e0f54ba0dda48d19cf868d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "34204816"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264579"
 ---
 # <a name="create-a-new-list"></a>Criar uma nova lista
 
@@ -108,6 +108,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create-list-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -126,6 +128,7 @@ As propriedades padrão serão retornadas da chamada real.
   "section": "documentation",
   "tocPath": "List/Create",
   "suppressions": [
+    "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

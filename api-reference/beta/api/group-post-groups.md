@@ -4,12 +4,12 @@ description: Crie um novo grupo ou grupo de segurança do Office 365.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: e33a1fbfe4ff3c48fe80e71e9a066f8d59e31208
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 4c8bf61e3c918e75b8bb911a3558ee4681e8efe0
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812534"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236444"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -20,9 +20,7 @@ Crie um novo [grupo](../resources/group.md) conforme especificado no corpo da so
 * Grupo do Office 365 (grupo unificado)
 * Grupo de segurança
 
-Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties).
-
-Para obter propriedades _não_ retornadas por padrão, execute uma operação GET e especifique as propriedades em uma opção de consulta `$select` do OData. Veja um [exemplo](group-get.md#request-2).
+Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) e especifique as propriedades em uma opção de consulta `$select` do OData.
 
 >**Observação**: para criar uma [equipe](../resources/team.md), primeiro crie um grupo e adicione uma equipe nele, confira [Criar equipe](../api/team-put-teams.md).
 

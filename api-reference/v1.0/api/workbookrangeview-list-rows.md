@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos da exibição de intervalo.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 36e7c93133dd4298aa53898d05557cb88ca127c0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e12a5fc81cb5176acb7141b17a1722ff24d68aae
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951269"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35278425"
 ---
 # <a name="list-rangeview-rows"></a>Linhas da lista rangeView
 
@@ -79,13 +79,15 @@ Content-length: 247
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_rows-Javascript-snippets.md)]
 
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_rows-Cs-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_rows-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -98,6 +100,7 @@ Content-length: 247
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/workbookrangeview-list-rows.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/workbookrangeview-list-rows.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/workbookrangeview-list-rows.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,21 +4,17 @@ description: Lista todos os grupos disponíveis em uma organização, inclusive,
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 6f854afd94ef4d2cdd47c03ceaf157f20e4b84fc
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 26743ec0be606bc76466c6fa680824d4d2f8914a
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812779"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236479"
 ---
 # <a name="list-groups"></a>Listar grupos
-Lista todos os grupos disponíveis em uma organização, inclusive, mas não limitado a Grupos do Office 365.
+Lista todos os grupos em uma organização, inclusive, mas não se limitando a, Grupos do Office 365. 
 
-Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties). 
-
-Para obter propriedades _não_ retornadas por padrão, execute uma operação [GET](group-get.md) para o grupo e especifique as propriedades em uma opção de consulta `$select` do OData. Veja um [exemplo](group-get.md#request-2).
-
-A propriedade **hasMembersWithLicenseErrors** é uma exceção. Veja um [exemplo](#request-2) de como usar essa propriedade.
+Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, execute uma operação [GET](group-get.md) para o grupo e especifique as propriedades em uma opção de consulta `$select` do OData. A propriedade **hasMembersWithLicenseErrors** é uma exceção e ela não é retornada na consulta `$select`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -62,7 +58,11 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [group](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão de cada grupo.
 
 ## <a name="example"></a>Exemplo
-#### <a name="request-1"></a>Solicitação 1
+
+### <a name="example-1-return-a-list-of-group-objects"></a>Exemplo 1: Retorna uma lista de objetos group
+
+#### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
@@ -72,7 +72,8 @@ Este é um exemplo de solicitação.
 GET https://graph.microsoft.com/v1.0/groups
 ```
 
-#### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
 
 >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades padrão são retornadas para cada grupo em uma chamada real.
@@ -151,7 +152,9 @@ Content-type: application/json
 }
 
 ```
+
 #### <a name="sdk-sample-code"></a>Código de amostra do SDK
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_groups-Cs-snippets.md)]
 
@@ -161,7 +164,11 @@ Content-type: application/json
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-#### <a name="request-2"></a>Solicitação 2
+
+### <a name="example-2-return-a-filtered-list-of-group-objects"></a>Exemplo 2: Retorna uma lista filtrada de objetos group
+
+#### <a name="request"></a>Solicitação
+
 Este exemplo usa uma opção de consulta `$filter` para obter os grupos cujos membros tenham erros de licença, nas respectivas atribuições de licença baseadas em grupo. Ele usa também uma opção de consulta `$select` para obter apenas as propriedades **id** e **displayName** de cada grupo na resposta, e não outras propriedades de retorno padrão ou não padrão.
 <!-- {
   "blockType": "request",
@@ -171,7 +178,8 @@ Este exemplo usa uma opção de consulta `$filter` para obter os grupos cujos me
 GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 
-#### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
+
 Veja a seguir o exemplo de uma resposta que inclui apenas as propriedades solicitadas.
 
 <!-- {
@@ -199,7 +207,9 @@ Content-type: application/json
     ]
 }
 ```
+
 #### <a name="sdk-sample-code"></a>Código de amostra do SDK
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Cs-snippets.md)]
 

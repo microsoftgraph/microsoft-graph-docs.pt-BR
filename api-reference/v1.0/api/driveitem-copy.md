@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Copiar um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a4a20a98badcf96848f5317d5625dc1b05750223
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39cf224c959f55801a3a0cb76f906a09afd15df8
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548303"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279335"
 ---
 # <a name="copy-a-driveitem"></a>Copiar um DriveItem
 
@@ -80,6 +80,18 @@ Retorna detalhes sobre como [monitorar o progresso](/graph/long-running-actions-
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/copy-item-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/copy-item-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/copy-item-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 O valor do cabeçalho `Location` fornece uma URL para um serviço que irá retornar o estado atual da operação de cópia. Você pode usar essas informações para [determinar quando a cópia terminou](/graph/long-running-actions-overview).
 
@@ -94,5 +106,10 @@ Em muitos casos, a ação de copiar é executada de forma assíncrona. A respost
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
+  "tocPath": "Items/Copy",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-copy.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Remover o acesso a um item
 localization_priority: Normal
-ms.openlocfilehash: 5e6718793423a866c636afa4b818de791b54f6e5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ebbc3388e1e207b83ec3cd7ea45635a49f5f7a01
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611423"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275541"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Excluir uma permissão de compartilhamento de um arquivo ou pasta
 
@@ -68,12 +68,14 @@ DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete-permission-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete-permission-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete-permission-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -91,6 +93,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "Sharing/Remove permissions",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/permission-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/permission-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/permission-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

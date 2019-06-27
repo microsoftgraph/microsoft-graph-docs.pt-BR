@@ -4,12 +4,12 @@ description: Traduzir os identificadores de recursos relacionados ao Outlook ent
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1015ae12f5ecfd63b29efe38f7172321b06386ec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2b62027af1f21df9118fe278a8ad1b04f6796fe5
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33961226"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269444"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -124,13 +124,15 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de amostra do SDK
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_translateexchangeids-Javascript-snippets.md)]
 
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_translateexchangeids-Cs-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_translateexchangeids-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -143,6 +145,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -3,16 +3,14 @@ title: Excluir schemaExtension
 description: Exclui uma definição da extensão de esquema.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 5ae6f367d271db9dfb16a5cc490653ccb9db6784
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 79d37a46c2b7acec0ffd6f6591eebbff9555aaea
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33603401"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279328"
 ---
 # <a name="delete-schemaextension"></a>Excluir schemaExtension
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclui uma definição da [extensão de esquema](../resources/schemaextension.md).
 
@@ -55,7 +53,7 @@ Este é um exemplo da solicitação.
   "name": "delete_schemaextension"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
+DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
@@ -67,12 +65,14 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_schemaextension-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_schemaextension-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_schemaextension-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -84,16 +84,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete schemaExtension",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schemaextension-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/schemaextension-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/schemaextension-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/schemaextension-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/schemaextension-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

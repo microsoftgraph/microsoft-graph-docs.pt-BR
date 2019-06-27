@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37e2bc8a383f5078c413ccc37f369442f55b597c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548093"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272860"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -123,6 +123,18 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Comentários
 
@@ -143,5 +155,10 @@ Saiba mais sobre como os erros são retornados em [Respostas de erro][error-resp
   "description": "Add permissions to an item and optionally send a sharing notification.",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Sharing/Add permissions"
+  "tocPath": "Sharing/Add permissions",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->
