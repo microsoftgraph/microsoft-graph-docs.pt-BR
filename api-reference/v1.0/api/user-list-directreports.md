@@ -1,62 +1,60 @@
 ---
 title: Listar directReports
 description: Obtenha relatórios diretos do usuário. Retorna os usuários e contatos para quem este usuário está atribuído como gerente.
-localization_priority: Normal
+localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a843584fb136af1613ca15172b6c97246043a708
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c292bd5ebfcfda2c69d98c211d552cae814c90be
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33601889"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277928"
 ---
-# <a name="list-directreports"></a><span data-ttu-id="ffdfc-104">Listar directReports</span><span class="sxs-lookup"><span data-stu-id="ffdfc-104">List directReports</span></span>
+# <a name="list-directreports"></a><span data-ttu-id="2024a-104">Listar directReports</span><span class="sxs-lookup"><span data-stu-id="2024a-104">List directReports</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="2024a-105">Obtenha relatórios diretos do usuário.</span><span class="sxs-lookup"><span data-stu-id="2024a-105">Get user's direct reports.</span></span> <span data-ttu-id="2024a-106">Retorna os usuários e contatos para quem este usuário está atribuído como gerente.</span><span class="sxs-lookup"><span data-stu-id="2024a-106">Returns the users and contacts for whom this user is assigned as manager.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2024a-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="2024a-107">Permissions</span></span>
+<span data-ttu-id="2024a-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2024a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="ffdfc-105">Obtenha relatórios diretos do usuário.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-105">Get user's direct reports.</span></span> <span data-ttu-id="ffdfc-106">Retorna os usuários e contatos para quem este usuário está atribuído como gerente.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-106">Returns the users and contacts for whom this user is assigned as manager.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ffdfc-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="ffdfc-107">Permissions</span></span>
-<span data-ttu-id="ffdfc-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ffdfc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="ffdfc-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ffdfc-110">Permission type</span></span>      | <span data-ttu-id="ffdfc-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ffdfc-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2024a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2024a-110">Permission type</span></span>      | <span data-ttu-id="2024a-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2024a-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ffdfc-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ffdfc-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ffdfc-113">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ffdfc-113">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ffdfc-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ffdfc-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ffdfc-115">User.Read, User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ffdfc-115">User.Read, User.ReadWrite</span></span>    |
-|<span data-ttu-id="ffdfc-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ffdfc-116">Application</span></span> | <span data-ttu-id="ffdfc-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffdfc-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="2024a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2024a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2024a-113">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2024a-113">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="2024a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2024a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2024a-115">User.Read, User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2024a-115">User.Read, User.ReadWrite</span></span>    |
+|<span data-ttu-id="2024a-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2024a-116">Application</span></span> | <span data-ttu-id="2024a-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2024a-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ffdfc-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ffdfc-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2024a-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2024a-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/directReports
 GET /users/{id | userPrincipalName}/directReports
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="ffdfc-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="ffdfc-119">Optional query parameters</span></span>
-<span data-ttu-id="ffdfc-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="ffdfc-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ffdfc-121">Request headers</span></span>
-| <span data-ttu-id="ffdfc-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ffdfc-122">Header</span></span>       | <span data-ttu-id="ffdfc-123">Valor</span><span class="sxs-lookup"><span data-stu-id="ffdfc-123">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="2024a-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="2024a-119">Optional query parameters</span></span>
+<span data-ttu-id="2024a-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="2024a-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2024a-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2024a-121">Request headers</span></span>
+| <span data-ttu-id="2024a-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2024a-122">Header</span></span>       | <span data-ttu-id="2024a-123">Valor</span><span class="sxs-lookup"><span data-stu-id="2024a-123">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="ffdfc-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="ffdfc-124">Authorization</span></span>  | <span data-ttu-id="ffdfc-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="ffdfc-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ffdfc-127">Content-Type</span></span>   | <span data-ttu-id="ffdfc-128">application/json</span><span class="sxs-lookup"><span data-stu-id="ffdfc-128">application/json</span></span>  |
+| <span data-ttu-id="2024a-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="2024a-124">Authorization</span></span>  | <span data-ttu-id="2024a-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2024a-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2024a-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2024a-127">Content-Type</span></span>   | <span data-ttu-id="2024a-128">application/json</span><span class="sxs-lookup"><span data-stu-id="2024a-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ffdfc-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ffdfc-129">Request body</span></span>
-<span data-ttu-id="ffdfc-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2024a-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2024a-129">Request body</span></span>
+<span data-ttu-id="2024a-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2024a-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ffdfc-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="ffdfc-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2024a-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="2024a-131">Response</span></span>
 
-<span data-ttu-id="ffdfc-132">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-132">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ffdfc-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ffdfc-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ffdfc-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ffdfc-134">Request</span></span>
-<span data-ttu-id="ffdfc-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-135">Here is an example of the request.</span></span>
+<span data-ttu-id="2024a-132">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2024a-132">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2024a-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2024a-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2024a-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2024a-134">Request</span></span>
+<span data-ttu-id="2024a-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2024a-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directreports"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/directReports
+GET https://graph.microsoft.com/v1.0/me/directReports
 ```
-##### <a name="response"></a><span data-ttu-id="ffdfc-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="ffdfc-136">Response</span></span>
-<span data-ttu-id="ffdfc-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2024a-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="2024a-136">Response</span></span>
+<span data-ttu-id="2024a-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2024a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,29 +74,30 @@ Content-length: 55
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="ffdfc-140">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="ffdfc-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="ffdfc-141">C#</span><span class="sxs-lookup"><span data-stu-id="ffdfc-141">C</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="2024a-140">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="2024a-140">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="2024a-141">C#</span><span class="sxs-lookup"><span data-stu-id="2024a-141">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directreports-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ffdfc-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="ffdfc-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2024a-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="2024a-142">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directreports-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="2024a-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2024a-143">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_directreports-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->
