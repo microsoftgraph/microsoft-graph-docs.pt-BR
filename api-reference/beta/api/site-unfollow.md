@@ -5,12 +5,12 @@ description: Não acompanhar o site de um usuário
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 63027ab1fcf47baaf8709db1c5c22089e0dbb7a9
-ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
+ms.openlocfilehash: efb5862b38a5e8f0da651383aa935295dbc3dac1
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34692791"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271558"
 ---
 # <a name="unfollow-site"></a>Site da seguinte 
 
@@ -81,6 +81,18 @@ Se tiver êxito, retornará a seguinte resposta JSON.
 ```json
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/unfollow-site-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/unfollow-site-Javascript-snippets.md)]
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/unfollow-site-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Se ocorreu um erro, ele retornará a seguinte resposta JSON 
 
@@ -116,5 +128,10 @@ Content-type: application/json
   "description": "Unfollow sharepoint site/sites for a user.",
   "keywords": "unfollow site",
   "section": "documentation",
-  "tocPath": "Sites/Unfollow site"
+  "tocPath": "Sites/Unfollow site",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-unfollow.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/site-unfollow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/site-unfollow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)"
+  ]
 } -->
