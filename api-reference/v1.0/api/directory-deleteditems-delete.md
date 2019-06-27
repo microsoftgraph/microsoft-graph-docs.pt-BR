@@ -4,58 +4,58 @@ description: Exclui permanentemente um item de itens excluídos.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e141edc547766e5c9527b8332e9080e07581c497
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: d806b879fce8a7352576684a3f3254a25e777863
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656815"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276878"
 ---
-# <a name="permanently-delete-item"></a><span data-ttu-id="6b416-103">Excluir permanentemente item</span><span class="sxs-lookup"><span data-stu-id="6b416-103">Permanently delete item</span></span>
+# <a name="permanently-delete-item"></a><span data-ttu-id="0e807-103">Excluir permanentemente item</span><span class="sxs-lookup"><span data-stu-id="0e807-103">Permanently delete item</span></span>
 
-<span data-ttu-id="6b416-104">Exclui permanentemente um item de [itens excluídos](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="6b416-104">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="0e807-104">Exclui permanentemente um item de [itens excluídos](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="0e807-104">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="6b416-105">Atualmente, a funcionalidade de itens excluídos apenas tem suporte para os recursos [group](../resources/group.md) e [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="6b416-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="6b416-106">É possível excluir permanentemente um item de itens excluídos.</span><span class="sxs-lookup"><span data-stu-id="6b416-106">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="6b416-107">Mas, uma vez que um item é excluído permanentemente, ele **não pode** ser restaurado.</span><span class="sxs-lookup"><span data-stu-id="6b416-107">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
+<span data-ttu-id="0e807-105">Atualmente, a funcionalidade de itens excluídos apenas tem suporte para os recursos [group](../resources/group.md) e [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="0e807-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="0e807-106">É possível excluir permanentemente um item de itens excluídos.</span><span class="sxs-lookup"><span data-stu-id="0e807-106">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="0e807-107">Mas, uma vez que um item é excluído permanentemente, ele **não pode** ser restaurado.</span><span class="sxs-lookup"><span data-stu-id="0e807-107">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6b416-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="6b416-108">Permissions</span></span>
-<span data-ttu-id="6b416-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6b416-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0e807-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="0e807-108">Permissions</span></span>
+<span data-ttu-id="0e807-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0e807-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="for-users"></a><span data-ttu-id="6b416-111">Para usuários:</span><span class="sxs-lookup"><span data-stu-id="6b416-111">For users:</span></span>
+### <a name="for-users"></a><span data-ttu-id="0e807-111">Para usuários:</span><span class="sxs-lookup"><span data-stu-id="0e807-111">For users:</span></span>
 
-|<span data-ttu-id="6b416-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6b416-112">Permission type</span></span>      | <span data-ttu-id="6b416-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6b416-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0e807-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0e807-112">Permission type</span></span>      | <span data-ttu-id="0e807-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0e807-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6b416-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6b416-114">Delegated (work or school account)</span></span> | <span data-ttu-id="6b416-115">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6b416-115">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="6b416-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6b416-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b416-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6b416-117">Not supported.</span></span> |
-|<span data-ttu-id="6b416-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6b416-118">Application</span></span> | <span data-ttu-id="6b416-119">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b416-119">User.ReadWrite.All</span></span> |
+|<span data-ttu-id="0e807-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0e807-114">Delegated (work or school account)</span></span> | <span data-ttu-id="0e807-115">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0e807-115">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="0e807-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0e807-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0e807-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0e807-117">Not supported.</span></span> |
+|<span data-ttu-id="0e807-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0e807-118">Application</span></span> | <span data-ttu-id="0e807-119">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0e807-119">User.ReadWrite.All</span></span> |
 
-### <a name="for-groups"></a><span data-ttu-id="6b416-120">Para grupos:</span><span class="sxs-lookup"><span data-stu-id="6b416-120">For groups:</span></span>
+### <a name="for-groups"></a><span data-ttu-id="0e807-120">Para grupos:</span><span class="sxs-lookup"><span data-stu-id="0e807-120">For groups:</span></span>
 
-|<span data-ttu-id="6b416-121">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6b416-121">Permission type</span></span>      | <span data-ttu-id="6b416-122">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6b416-122">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0e807-121">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0e807-121">Permission type</span></span>      | <span data-ttu-id="0e807-122">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0e807-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6b416-123">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6b416-123">Delegated (work or school account)</span></span> | <span data-ttu-id="6b416-124">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6b416-124">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="6b416-125">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6b416-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b416-126">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6b416-126">Not supported.</span></span>    |
-|<span data-ttu-id="6b416-127">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6b416-127">Application</span></span> | <span data-ttu-id="6b416-128">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b416-128">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="0e807-123">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0e807-123">Delegated (work or school account)</span></span> | <span data-ttu-id="0e807-124">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0e807-124">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="0e807-125">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0e807-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0e807-126">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0e807-126">Not supported.</span></span>    |
+|<span data-ttu-id="0e807-127">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0e807-127">Application</span></span> | <span data-ttu-id="0e807-128">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0e807-128">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6b416-129">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6b416-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0e807-129">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0e807-129">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/deletedItems/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="6b416-130">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6b416-130">Request headers</span></span>
-| <span data-ttu-id="6b416-131">Nome</span><span class="sxs-lookup"><span data-stu-id="6b416-131">Name</span></span>       | <span data-ttu-id="6b416-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="6b416-132">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0e807-130">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0e807-130">Request headers</span></span>
+| <span data-ttu-id="0e807-131">Nome</span><span class="sxs-lookup"><span data-stu-id="0e807-131">Name</span></span>       | <span data-ttu-id="0e807-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="0e807-132">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6b416-133">Autorização</span><span class="sxs-lookup"><span data-stu-id="6b416-133">Authorization</span></span>  | <span data-ttu-id="6b416-134">&lt;Código&gt; do portador *Obrigatório*</span><span class="sxs-lookup"><span data-stu-id="6b416-134">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="6b416-135">Aceitar</span><span class="sxs-lookup"><span data-stu-id="6b416-135">Accept</span></span>  | <span data-ttu-id="6b416-136">application/json</span><span class="sxs-lookup"><span data-stu-id="6b416-136">application/json</span></span> |
+| <span data-ttu-id="0e807-133">Autorização</span><span class="sxs-lookup"><span data-stu-id="0e807-133">Authorization</span></span>  | <span data-ttu-id="0e807-134">&lt;Código&gt; do portador *Obrigatório*</span><span class="sxs-lookup"><span data-stu-id="0e807-134">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="0e807-135">Aceitar</span><span class="sxs-lookup"><span data-stu-id="0e807-135">Accept</span></span>  | <span data-ttu-id="0e807-136">application/json</span><span class="sxs-lookup"><span data-stu-id="0e807-136">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6b416-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6b416-137">Request body</span></span>
-<span data-ttu-id="6b416-138">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6b416-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0e807-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0e807-137">Request body</span></span>
+<span data-ttu-id="0e807-138">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0e807-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6b416-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b416-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0e807-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="0e807-139">Response</span></span>
 
-<span data-ttu-id="6b416-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6b416-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0e807-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0e807-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6b416-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6b416-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6b416-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6b416-143">Request</span></span>
+## <a name="example"></a><span data-ttu-id="0e807-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0e807-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0e807-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0e807-143">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -64,8 +64,8 @@ DELETE /directory/deletedItems/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
-##### <a name="response"></a><span data-ttu-id="6b416-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b416-144">Response</span></span>
-<span data-ttu-id="6b416-p104">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6b416-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0e807-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="0e807-144">Response</span></span>
+<span data-ttu-id="0e807-p104">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0e807-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -73,13 +73,15 @@ DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="6b416-147">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="6b416-147">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="6b416-148">C#</span><span class="sxs-lookup"><span data-stu-id="6b416-148">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="0e807-147">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="0e807-147">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="0e807-148">C#</span><span class="sxs-lookup"><span data-stu-id="0e807-148">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_directory-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6b416-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="6b416-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0e807-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="0e807-149">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_directory-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="0e807-150">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="0e807-150">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_directory-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -93,6 +95,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/directory-deleteditems-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/directory-deleteditems-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/directory-deleteditems-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
