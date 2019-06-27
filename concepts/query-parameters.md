@@ -3,17 +3,16 @@ title: Usar parâmetros de consulta para personalizar respostas
 description: O Microsoft Graph fornece parâmetros de consulta opcional que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta. Há suporte para os parâmetros de consulta a seguir.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 5f986a84604a5783c16e6febc6130d4d53bd058f
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 26f765f2537bda8c29a6c25c9352da3558d78f9a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133813"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273798"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
 O Microsoft Graph fornece suporte a parâmetros de consulta opcionais que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta. O suporte para os parâmetros de consulta exatos variam de uma operação de API para outra e, dependendo da API, podem diferir entre os pontos de extremidade v1.0 e beta. 
-
 
 > [!TIP] 
 > No ponto de extremidade beta, o prefixo `$` é opcional. Por exemplo, em vez de `$filter`, você pode usar `filter`. No ponto de extremidade v1, o prefixo `$` é opcional apenas para um subconjunto de APIs. Para simplificar, inclua sempre `$` se estiver usando o ponto de extremidade v1.
@@ -25,7 +24,9 @@ Os parâmetros de consulta podem ser opções de consulta de sistema OData ou ou
 ## <a name="odata-system-query-options"></a>Opções de consulta de sistema OData
 Uma operação de API do Microsoft Graph pode oferecer suporte a uma ou mais das seguintes opções de consulta de sistema OData. Essas opções de consulta são compatíveis com a [linguagem de consulta OData V4][odata-query].
 
->**Observação:** Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
+>**Observação:** o OData 4.0 oferece suporte às opções de consulta do sistema apenas em operações GET.
+
+Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
 
 | Nome                     | Descrição | Exemplo
 |:-------------------------|:------------|:---------|
