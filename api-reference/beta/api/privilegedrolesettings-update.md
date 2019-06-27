@@ -2,12 +2,12 @@
 title: Atualizar privilegedRoleSettings
 description: Atualize as configurações de função para a configuração de função determinada. Um objeto privilegedRoleSettings será retornado.
 localization_priority: Normal
-ms.openlocfilehash: 17f813a72fb88948bd8906924c312ad9fce1dd79
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a20fed06c15e6eacfb62491b3f1dd930327363f2
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593804"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267673"
 ---
 # <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
 
@@ -45,7 +45,7 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|A duração quando a função é ativada. Obrigatório.|
-|id|cadeia de caracteres|O identificador exclusivo das configurações de função. Somente leitura. Obrigatório.|
+|id|string|O identificador exclusivo das configurações de função. Somente leitura. Obrigatório.|
 |isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável. Obrigatório.|
 |lastGlobalAdmin|Booliano|Apenas para uso interno.|
 |maxElavationDuration|duration|Duração máxima da função ativada. Obrigatório.|
@@ -96,12 +96,14 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -116,6 +118,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
