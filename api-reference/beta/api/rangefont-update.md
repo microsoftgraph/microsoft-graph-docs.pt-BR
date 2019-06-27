@@ -4,58 +4,58 @@ description: Atualize as propriedades do objeto rangefont.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 09e3830597dd79ddb72be91c4d7aefee41907fd5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: eee98b6bb51b82a00c43ad7da4af0fb6299d3951
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33610524"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35265461"
 ---
-# <a name="update-rangefont"></a><span data-ttu-id="05d53-103">Atualizar rangefont</span><span class="sxs-lookup"><span data-stu-id="05d53-103">Update rangefont</span></span>
+# <a name="update-rangefont"></a><span data-ttu-id="ce32e-103">Atualizar rangefont</span><span class="sxs-lookup"><span data-stu-id="ce32e-103">Update rangefont</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="05d53-104">Atualize as propriedades do objeto rangefont.</span><span class="sxs-lookup"><span data-stu-id="05d53-104">Update the properties of rangefont object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="05d53-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="05d53-105">Permissions</span></span>
-<span data-ttu-id="05d53-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="05d53-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ce32e-104">Atualize as propriedades do objeto rangefont.</span><span class="sxs-lookup"><span data-stu-id="ce32e-104">Update the properties of rangefont object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ce32e-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ce32e-105">Permissions</span></span>
+<span data-ttu-id="ce32e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce32e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="05d53-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="05d53-108">Permission type</span></span>      | <span data-ttu-id="05d53-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="05d53-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ce32e-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ce32e-108">Permission type</span></span>      | <span data-ttu-id="ce32e-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ce32e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="05d53-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="05d53-110">Delegated (work or school account)</span></span> | <span data-ttu-id="05d53-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="05d53-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="05d53-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="05d53-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="05d53-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="05d53-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="05d53-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="05d53-114">Application</span></span> | <span data-ttu-id="05d53-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="05d53-115">Not supported.</span></span> |
+|<span data-ttu-id="ce32e-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ce32e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ce32e-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ce32e-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ce32e-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ce32e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce32e-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ce32e-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ce32e-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ce32e-114">Application</span></span> | <span data-ttu-id="ce32e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ce32e-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="05d53-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="05d53-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ce32e-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ce32e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}/range/format/font
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="05d53-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="05d53-117">Optional request headers</span></span>
-| <span data-ttu-id="05d53-118">Nome</span><span class="sxs-lookup"><span data-stu-id="05d53-118">Name</span></span>       | <span data-ttu-id="05d53-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="05d53-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="ce32e-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="ce32e-117">Optional request headers</span></span>
+| <span data-ttu-id="ce32e-118">Nome</span><span class="sxs-lookup"><span data-stu-id="ce32e-118">Name</span></span>       | <span data-ttu-id="ce32e-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="ce32e-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="05d53-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="05d53-120">Authorization</span></span>  | <span data-ttu-id="05d53-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="05d53-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="05d53-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="05d53-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="05d53-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="05d53-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="ce32e-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="ce32e-120">Authorization</span></span>  | <span data-ttu-id="ce32e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ce32e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ce32e-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ce32e-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ce32e-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="ce32e-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="05d53-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="05d53-126">Request body</span></span>
-<span data-ttu-id="05d53-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="05d53-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ce32e-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ce32e-126">Request body</span></span>
+<span data-ttu-id="ce32e-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="ce32e-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="05d53-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="05d53-130">Property</span></span>     | <span data-ttu-id="05d53-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="05d53-131">Type</span></span>   |<span data-ttu-id="05d53-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="05d53-132">Description</span></span>|
+| <span data-ttu-id="ce32e-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ce32e-130">Property</span></span>     | <span data-ttu-id="ce32e-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="ce32e-131">Type</span></span>   |<span data-ttu-id="ce32e-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="ce32e-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="05d53-133">bold</span><span class="sxs-lookup"><span data-stu-id="05d53-133">bold</span></span>|<span data-ttu-id="05d53-134">booliano</span><span class="sxs-lookup"><span data-stu-id="05d53-134">boolean</span></span>|<span data-ttu-id="05d53-135">Representa o status da fonte em negrito.</span><span class="sxs-lookup"><span data-stu-id="05d53-135">Represents the bold status of font.</span></span>|
-|<span data-ttu-id="05d53-136">color</span><span class="sxs-lookup"><span data-stu-id="05d53-136">color</span></span>|<span data-ttu-id="05d53-137">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="05d53-137">string</span></span>|<span data-ttu-id="05d53-p105">Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.</span><span class="sxs-lookup"><span data-stu-id="05d53-p105">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
-|<span data-ttu-id="05d53-141">italic</span><span class="sxs-lookup"><span data-stu-id="05d53-141">italic</span></span>|<span data-ttu-id="05d53-142">booliano</span><span class="sxs-lookup"><span data-stu-id="05d53-142">boolean</span></span>|<span data-ttu-id="05d53-143">Representa o status da fonte em itálico.</span><span class="sxs-lookup"><span data-stu-id="05d53-143">Represents the italic status of the font.</span></span>|
-|<span data-ttu-id="05d53-144">nome</span><span class="sxs-lookup"><span data-stu-id="05d53-144">name</span></span>|<span data-ttu-id="05d53-145">string</span><span class="sxs-lookup"><span data-stu-id="05d53-145">string</span></span>|<span data-ttu-id="05d53-146">Nome da fonte (por exemplo, "Calibri")</span><span class="sxs-lookup"><span data-stu-id="05d53-146">Font name (e.g. "Calibri")</span></span>|
-|<span data-ttu-id="05d53-147">size</span><span class="sxs-lookup"><span data-stu-id="05d53-147">size</span></span>|<span data-ttu-id="05d53-148">Double</span><span class="sxs-lookup"><span data-stu-id="05d53-148">double</span></span>|<span data-ttu-id="05d53-149">Font Size</span><span class="sxs-lookup"><span data-stu-id="05d53-149">Font size.</span></span>|
-|<span data-ttu-id="05d53-150">underline</span><span class="sxs-lookup"><span data-stu-id="05d53-150">underline</span></span>|<span data-ttu-id="05d53-151">string</span><span class="sxs-lookup"><span data-stu-id="05d53-151">string</span></span>|<span data-ttu-id="05d53-p106">Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.</span><span class="sxs-lookup"><span data-stu-id="05d53-p106">Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
+|<span data-ttu-id="ce32e-133">bold</span><span class="sxs-lookup"><span data-stu-id="ce32e-133">bold</span></span>|<span data-ttu-id="ce32e-134">booliano</span><span class="sxs-lookup"><span data-stu-id="ce32e-134">boolean</span></span>|<span data-ttu-id="ce32e-135">Representa o status da fonte em negrito.</span><span class="sxs-lookup"><span data-stu-id="ce32e-135">Represents the bold status of font.</span></span>|
+|<span data-ttu-id="ce32e-136">color</span><span class="sxs-lookup"><span data-stu-id="ce32e-136">color</span></span>|<span data-ttu-id="ce32e-137">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ce32e-137">string</span></span>|<span data-ttu-id="ce32e-p105">Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.</span><span class="sxs-lookup"><span data-stu-id="ce32e-p105">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
+|<span data-ttu-id="ce32e-141">italic</span><span class="sxs-lookup"><span data-stu-id="ce32e-141">italic</span></span>|<span data-ttu-id="ce32e-142">booliano</span><span class="sxs-lookup"><span data-stu-id="ce32e-142">boolean</span></span>|<span data-ttu-id="ce32e-143">Representa o status da fonte em itálico.</span><span class="sxs-lookup"><span data-stu-id="ce32e-143">Represents the italic status of the font.</span></span>|
+|<span data-ttu-id="ce32e-144">name</span><span class="sxs-lookup"><span data-stu-id="ce32e-144">name</span></span>|<span data-ttu-id="ce32e-145">string</span><span class="sxs-lookup"><span data-stu-id="ce32e-145">string</span></span>|<span data-ttu-id="ce32e-146">Nome da fonte (por exemplo, "Calibri")</span><span class="sxs-lookup"><span data-stu-id="ce32e-146">Font name (e.g. "Calibri")</span></span>|
+|<span data-ttu-id="ce32e-147">size</span><span class="sxs-lookup"><span data-stu-id="ce32e-147">size</span></span>|<span data-ttu-id="ce32e-148">Double</span><span class="sxs-lookup"><span data-stu-id="ce32e-148">double</span></span>|<span data-ttu-id="ce32e-149">Font Size</span><span class="sxs-lookup"><span data-stu-id="ce32e-149">Font size.</span></span>|
+|<span data-ttu-id="ce32e-150">underline</span><span class="sxs-lookup"><span data-stu-id="ce32e-150">underline</span></span>|<span data-ttu-id="ce32e-151">string</span><span class="sxs-lookup"><span data-stu-id="ce32e-151">string</span></span>|<span data-ttu-id="ce32e-p106">Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.</span><span class="sxs-lookup"><span data-stu-id="ce32e-p106">Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="05d53-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="05d53-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ce32e-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="ce32e-154">Response</span></span>
 
-<span data-ttu-id="05d53-155">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookRangeFont](../resources/workbookrangefont.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="05d53-155">If successful, this method returns a `200 OK` response code and updated [workbookRangeFont](../resources/workbookrangefont.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="05d53-156">Exemplo</span><span class="sxs-lookup"><span data-stu-id="05d53-156">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="05d53-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="05d53-157">Request</span></span>
-<span data-ttu-id="05d53-158">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="05d53-158">Here is an example of the request.</span></span>
+<span data-ttu-id="ce32e-155">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookRangeFont](../resources/workbookrangefont.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ce32e-155">If successful, this method returns a `200 OK` response code and updated [workbookRangeFont](../resources/workbookrangefont.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="ce32e-156">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ce32e-156">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ce32e-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ce32e-157">Request</span></span>
+<span data-ttu-id="ce32e-158">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ce32e-158">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_rangefont"
@@ -74,8 +74,8 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="05d53-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="05d53-159">Response</span></span>
-<span data-ttu-id="05d53-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="05d53-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ce32e-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="ce32e-159">Response</span></span>
+<span data-ttu-id="ce32e-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ce32e-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,13 +95,15 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="05d53-163">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="05d53-163">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="05d53-164">Basic</span><span class="sxs-lookup"><span data-stu-id="05d53-164">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ce32e-163">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="ce32e-163">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ce32e-164">C#</span><span class="sxs-lookup"><span data-stu-id="ce32e-164">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangefont-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="05d53-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="05d53-165">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ce32e-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="ce32e-165">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangefont-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ce32e-166">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ce32e-166">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangefont-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -116,6 +118,7 @@ Content-length: 134
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

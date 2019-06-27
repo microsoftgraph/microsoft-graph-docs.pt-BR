@@ -4,31 +4,31 @@ description: Obtenha a lista de timeOffReasons em um cronograma.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 42dfbd9b4abbc16ee6d5ef257c4d44ab521e0d0c
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 81f1734b96893013d5bcb595e0343197b2794525
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639072"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264950"
 ---
-# <a name="list-timeoffreasons"></a><span data-ttu-id="33dba-103">Listar timeOffReasons</span><span class="sxs-lookup"><span data-stu-id="33dba-103">List timeOffReasons</span></span>
+# <a name="list-timeoffreasons"></a><span data-ttu-id="ffac6-103">Listar timeOffReasons</span><span class="sxs-lookup"><span data-stu-id="ffac6-103">List timeOffReasons</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-<span data-ttu-id="33dba-104">Obtenha a lista de [timeOffReasons](../resources/timeoffreason.md) em um [cronograma](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="33dba-104">Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="ffac6-104">Obtenha a lista de [timeOffReasons](../resources/timeoffreason.md) em um [cronograma](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="ffac6-104">Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="33dba-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="33dba-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ffac6-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ffac6-105">Permissions</span></span>
 
-<span data-ttu-id="33dba-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="33dba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ffac6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ffac6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="33dba-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="33dba-108">Permission type</span></span>      | <span data-ttu-id="33dba-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="33dba-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ffac6-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ffac6-108">Permission type</span></span>      | <span data-ttu-id="ffac6-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ffac6-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="33dba-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="33dba-110">Delegated (work or school account)</span></span> | <span data-ttu-id="33dba-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33dba-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="33dba-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="33dba-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33dba-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="33dba-113">Not supported.</span></span>    |
-|<span data-ttu-id="33dba-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="33dba-114">Application</span></span> | <span data-ttu-id="33dba-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="33dba-115">Not supported.</span></span> |
+|<span data-ttu-id="ffac6-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ffac6-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ffac6-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffac6-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ffac6-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ffac6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ffac6-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ffac6-113">Not supported.</span></span>    |
+|<span data-ttu-id="ffac6-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ffac6-114">Application</span></span> | <span data-ttu-id="ffac6-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ffac6-115">Not supported.</span></span> |
 
-> <span data-ttu-id="33dba-116">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="33dba-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="33dba-117">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="33dba-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="ffac6-116">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="ffac6-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="ffac6-117">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="ffac6-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="33dba-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="33dba-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ffac6-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ffac6-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,25 +36,25 @@ ms.locfileid: "33639072"
 GET /teams/{teamId}/schedule/timeOffReasons
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="33dba-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="33dba-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ffac6-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ffac6-119">Request headers</span></span>
 
-| <span data-ttu-id="33dba-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="33dba-120">Header</span></span>       | <span data-ttu-id="33dba-121">Valor</span><span class="sxs-lookup"><span data-stu-id="33dba-121">Value</span></span> |
+| <span data-ttu-id="ffac6-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ffac6-120">Header</span></span>       | <span data-ttu-id="ffac6-121">Valor</span><span class="sxs-lookup"><span data-stu-id="ffac6-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="33dba-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="33dba-122">Authorization</span></span>  | <span data-ttu-id="33dba-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="33dba-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="33dba-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="33dba-125">Content-Type</span></span>  | <span data-ttu-id="33dba-126">application/json</span><span class="sxs-lookup"><span data-stu-id="33dba-126">application/json</span></span>  |
+| <span data-ttu-id="ffac6-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="ffac6-122">Authorization</span></span>  | <span data-ttu-id="ffac6-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ffac6-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ffac6-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ffac6-125">Content-Type</span></span>  | <span data-ttu-id="ffac6-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ffac6-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="33dba-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="33dba-127">Request body</span></span>
-<span data-ttu-id="33dba-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="33dba-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ffac6-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ffac6-127">Request body</span></span>
+<span data-ttu-id="ffac6-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ffac6-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="33dba-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="33dba-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ffac6-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="ffac6-129">Response</span></span>
 
-<span data-ttu-id="33dba-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="33dba-130">If successful, this method returns a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.</span></span>
+<span data-ttu-id="ffac6-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ffac6-130">If successful, this method returns a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="33dba-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="33dba-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ffac6-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ffac6-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="33dba-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="33dba-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ffac6-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ffac6-132">Request</span></span>
 
-<span data-ttu-id="33dba-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="33dba-133">The following is an example of the request.</span></span>
+<span data-ttu-id="ffac6-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ffac6-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "schedule-list-timeoffreasons"
@@ -63,11 +63,11 @@ GET /teams/{teamId}/schedule/timeOffReasons
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```
 
-#### <a name="response"></a><span data-ttu-id="33dba-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="33dba-134">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ffac6-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="ffac6-134">Response</span></span>
 
-<span data-ttu-id="33dba-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="33dba-135">The following is an example of the response.</span></span> 
+<span data-ttu-id="ffac6-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ffac6-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="33dba-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="33dba-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="ffac6-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ffac6-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,13 +102,15 @@ Content-length: 401
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="33dba-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="33dba-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="33dba-139">Basic</span><span class="sxs-lookup"><span data-stu-id="33dba-139">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ffac6-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="ffac6-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ffac6-139">C#</span><span class="sxs-lookup"><span data-stu-id="ffac6-139">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/schedule-list-timeoffreasons-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="33dba-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="33dba-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ffac6-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="ffac6-140">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/schedule-list-timeoffreasons-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ffac6-141">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ffac6-141">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/schedule-list-timeoffreasons-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -123,6 +125,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/schedule-list-timeoffreasons.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/schedule-list-timeoffreasons.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/schedule-list-timeoffreasons.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

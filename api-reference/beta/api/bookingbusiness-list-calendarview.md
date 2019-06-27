@@ -4,54 +4,54 @@ description: Obter a coleção de objetos bookingAppointment para um bookingBusi
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 7ab6e3aee41dc17a87e4a9027d1ae78e7b249cf4
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: f62631d440e4516ca13b8f967fa0329aa4a92c86
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636216"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258136"
 ---
-# <a name="list-bookings-calendarview"></a><span data-ttu-id="8b9c8-103">Listar o calendarView do Bookings</span><span class="sxs-lookup"><span data-stu-id="8b9c8-103">List Bookings calendarView</span></span>
+# <a name="list-bookings-calendarview"></a><span data-ttu-id="2e790-103">Listar o calendarView do Bookings</span><span class="sxs-lookup"><span data-stu-id="2e790-103">List Bookings calendarView</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8b9c8-104">Obter a coleção de objetos [bookingAppointment](../resources/bookingappointment.md) para um [bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-104">Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.</span></span>
+<span data-ttu-id="2e790-104">Obter a coleção de objetos [bookingAppointment](../resources/bookingappointment.md) para um [bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.</span><span class="sxs-lookup"><span data-stu-id="2e790-104">Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8b9c8-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="8b9c8-105">Permissions</span></span>
-<span data-ttu-id="8b9c8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8b9c8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2e790-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="2e790-105">Permissions</span></span>
+<span data-ttu-id="2e790-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2e790-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8b9c8-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8b9c8-108">Permission type</span></span>      | <span data-ttu-id="8b9c8-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8b9c8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2e790-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2e790-108">Permission type</span></span>      | <span data-ttu-id="2e790-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2e790-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8b9c8-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8b9c8-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="8b9c8-111">Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="8b9c8-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="8b9c8-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8b9c8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b9c8-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-113">Not supported.</span></span>   |
-|<span data-ttu-id="8b9c8-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8b9c8-114">Application</span></span> | <span data-ttu-id="8b9c8-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-115">Not supported.</span></span>  |
+|<span data-ttu-id="2e790-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2e790-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="2e790-111">Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="2e790-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="2e790-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2e790-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2e790-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2e790-113">Not supported.</span></span>   |
+|<span data-ttu-id="2e790-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2e790-114">Application</span></span> | <span data-ttu-id="2e790-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2e790-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="8b9c8-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8b9c8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2e790-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2e790-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8b9c8-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8b9c8-117">Request headers</span></span>
-| <span data-ttu-id="8b9c8-118">Nome</span><span class="sxs-lookup"><span data-stu-id="8b9c8-118">Name</span></span>       | <span data-ttu-id="8b9c8-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="8b9c8-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2e790-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2e790-117">Request headers</span></span>
+| <span data-ttu-id="2e790-118">Nome</span><span class="sxs-lookup"><span data-stu-id="2e790-118">Name</span></span>       | <span data-ttu-id="2e790-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="2e790-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8b9c8-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8b9c8-120">Authorization</span></span>  | <span data-ttu-id="8b9c8-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="8b9c8-121">Bearer {code}</span></span>|
+| <span data-ttu-id="2e790-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2e790-120">Authorization</span></span>  | <span data-ttu-id="2e790-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="2e790-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8b9c8-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8b9c8-122">Request body</span></span>
-<span data-ttu-id="8b9c8-123">Forneça os seguintes parâmetros de consulta com valores na URL solicitada.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-123">In the request URL, provide following query parameters with values.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2e790-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2e790-122">Request body</span></span>
+<span data-ttu-id="2e790-123">Forneça os seguintes parâmetros de consulta com valores na URL solicitada.</span><span class="sxs-lookup"><span data-stu-id="2e790-123">In the request URL, provide following query parameters with values.</span></span>
 
-| <span data-ttu-id="8b9c8-124">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="8b9c8-124">Parameter</span></span>    | <span data-ttu-id="8b9c8-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="8b9c8-125">Type</span></span>   |<span data-ttu-id="8b9c8-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="8b9c8-126">Description</span></span>|
+| <span data-ttu-id="2e790-124">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="2e790-124">Parameter</span></span>    | <span data-ttu-id="2e790-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="2e790-125">Type</span></span>   |<span data-ttu-id="2e790-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="2e790-126">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8b9c8-127">iniciar</span><span class="sxs-lookup"><span data-stu-id="8b9c8-127">start</span></span>|<span data-ttu-id="8b9c8-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8b9c8-128">DateTimeOffset</span></span>|<span data-ttu-id="8b9c8-129">A data e a hora de início de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-129">The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="8b9c8-130">Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T00:00:00Z ' e o mesmo tempo em PST teria a seguinte aparência: ' 2017-12-31T16:00:00-08:00 '.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-130">For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.</span></span>|
-|<span data-ttu-id="8b9c8-131">end</span><span class="sxs-lookup"><span data-stu-id="8b9c8-131">end</span></span>|<span data-ttu-id="8b9c8-132">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8b9c8-132">DateTimeOffset</span></span>|<span data-ttu-id="8b9c8-133">A data e a hora de término de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-133">The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="8b9c8-134">Por exemplo, 3am UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T03:00: o 00Z ' e o mesmo momento em PST teria a seguinte aparência: ' 2017-12-31T19:00:00-08:00 '.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-134">For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.</span></span>|
+|<span data-ttu-id="2e790-127">iniciar</span><span class="sxs-lookup"><span data-stu-id="2e790-127">start</span></span>|<span data-ttu-id="2e790-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2e790-128">DateTimeOffset</span></span>|<span data-ttu-id="2e790-129">A data e a hora de início de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC.</span><span class="sxs-lookup"><span data-stu-id="2e790-129">The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="2e790-130">Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T00:00:00Z ' e o mesmo tempo em PST teria a seguinte aparência: ' 2017-12-31T16:00:00-08:00 '.</span><span class="sxs-lookup"><span data-stu-id="2e790-130">For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.</span></span>|
+|<span data-ttu-id="2e790-131">end</span><span class="sxs-lookup"><span data-stu-id="2e790-131">end</span></span>|<span data-ttu-id="2e790-132">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2e790-132">DateTimeOffset</span></span>|<span data-ttu-id="2e790-133">A data e a hora de término de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC.</span><span class="sxs-lookup"><span data-stu-id="2e790-133">The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="2e790-134">Por exemplo, 3am UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T03:00: o 00Z ' e o mesmo momento em PST teria a seguinte aparência: ' 2017-12-31T19:00:00-08:00 '.</span><span class="sxs-lookup"><span data-stu-id="2e790-134">For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8b9c8-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="8b9c8-135">Response</span></span>
-<span data-ttu-id="8b9c8-136">Se bem-sucedido, este método retorna `200, OK` o código de resposta e o objeto da coleção [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-136">If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2e790-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e790-135">Response</span></span>
+<span data-ttu-id="2e790-136">Se bem-sucedido, este método retorna `200, OK` o código de resposta e o objeto da coleção [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2e790-136">If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8b9c8-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8b9c8-137">Example</span></span>
-<span data-ttu-id="8b9c8-138">Veja a seguir um exemplo de como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-138">The following is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="8b9c8-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8b9c8-139">Request</span></span>
-<span data-ttu-id="8b9c8-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-140">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2e790-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2e790-137">Example</span></span>
+<span data-ttu-id="2e790-138">Veja a seguir um exemplo de como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="2e790-138">The following is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="2e790-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2e790-139">Request</span></span>
+<span data-ttu-id="2e790-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2e790-140">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getcalendarview"
@@ -60,8 +60,8 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 
-##### <a name="response"></a><span data-ttu-id="8b9c8-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="8b9c8-141">Response</span></span>
-<span data-ttu-id="8b9c8-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-142">The following is an example of the response.</span></span> <span data-ttu-id="8b9c8-143">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-143">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="8b9c8-144">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8b9c8-144">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2e790-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e790-141">Response</span></span>
+<span data-ttu-id="2e790-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2e790-142">The following is an example of the response.</span></span> <span data-ttu-id="2e790-143">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="2e790-143">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="2e790-144">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2e790-144">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -246,13 +246,15 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8b9c8-145">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="8b9c8-145">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8b9c8-146">Basic</span><span class="sxs-lookup"><span data-stu-id="8b9c8-146">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="2e790-145">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="2e790-145">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="2e790-146">C#</span><span class="sxs-lookup"><span data-stu-id="2e790-146">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/bookingbusiness_getcalendarview-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8b9c8-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8b9c8-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2e790-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="2e790-147">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/bookingbusiness_getcalendarview-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="2e790-148">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="2e790-148">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/bookingbusiness_getcalendarview-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -267,6 +269,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingbusiness-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingbusiness-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,32 +4,32 @@ description: Obtenha a lista de um The Scheduling neste cronograma.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 858797347741ce66890d9d8e170c093ff770e069
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2761c7df38551ae6852f087853261c24488bf8a6
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638974"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264943"
 ---
-# <a name="list-schedulegroups"></a><span data-ttu-id="430ab-103">Listar scheduleGroups</span><span class="sxs-lookup"><span data-stu-id="430ab-103">List scheduleGroups</span></span>
+# <a name="list-schedulegroups"></a><span data-ttu-id="dc974-103">Listar scheduleGroups</span><span class="sxs-lookup"><span data-stu-id="dc974-103">List scheduleGroups</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="430ab-104">Obtenha a lista de [schedulingGroups](../resources/schedulinggroup.md) neste [cronograma](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="430ab-104">Get the list of [schedulingGroups](../resources/schedulinggroup.md) in this [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="dc974-104">Obtenha a lista de [schedulingGroups](../resources/schedulinggroup.md) neste [cronograma](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="dc974-104">Get the list of [schedulingGroups](../resources/schedulinggroup.md) in this [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="430ab-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="430ab-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dc974-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="dc974-105">Permissions</span></span>
 
-<span data-ttu-id="430ab-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="430ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dc974-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dc974-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="430ab-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="430ab-108">Permission type</span></span>      | <span data-ttu-id="430ab-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="430ab-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dc974-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dc974-108">Permission type</span></span>      | <span data-ttu-id="dc974-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dc974-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="430ab-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="430ab-110">Delegated (work or school account)</span></span> | <span data-ttu-id="430ab-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="430ab-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="430ab-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="430ab-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="430ab-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="430ab-113">Not supported.</span></span>    |
-|<span data-ttu-id="430ab-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="430ab-114">Application</span></span> | <span data-ttu-id="430ab-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="430ab-115">Not supported.</span></span> |
+|<span data-ttu-id="dc974-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dc974-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dc974-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc974-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dc974-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dc974-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc974-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dc974-113">Not supported.</span></span>    |
+|<span data-ttu-id="dc974-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dc974-114">Application</span></span> | <span data-ttu-id="dc974-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dc974-115">Not supported.</span></span> |
 
-> <span data-ttu-id="430ab-116">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="430ab-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="430ab-117">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="430ab-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="dc974-116">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="dc974-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="dc974-117">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="dc974-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="430ab-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="430ab-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc974-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dc974-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,25 +37,25 @@ ms.locfileid: "33638974"
 GET /teams/{teamId}/schedule/schedulingGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="430ab-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="430ab-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="dc974-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dc974-119">Request headers</span></span>
 
-| <span data-ttu-id="430ab-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="430ab-120">Header</span></span>       | <span data-ttu-id="430ab-121">Valor</span><span class="sxs-lookup"><span data-stu-id="430ab-121">Value</span></span> |
+| <span data-ttu-id="dc974-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="dc974-120">Header</span></span>       | <span data-ttu-id="dc974-121">Valor</span><span class="sxs-lookup"><span data-stu-id="dc974-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="430ab-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="430ab-122">Authorization</span></span>  | <span data-ttu-id="430ab-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="430ab-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="430ab-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="430ab-125">Content-Type</span></span>  | <span data-ttu-id="430ab-126">application/json</span><span class="sxs-lookup"><span data-stu-id="430ab-126">application/json</span></span>  |
+| <span data-ttu-id="dc974-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="dc974-122">Authorization</span></span>  | <span data-ttu-id="dc974-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dc974-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="dc974-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dc974-125">Content-Type</span></span>  | <span data-ttu-id="dc974-126">application/json</span><span class="sxs-lookup"><span data-stu-id="dc974-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="430ab-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="430ab-127">Request body</span></span>
-<span data-ttu-id="430ab-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="430ab-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dc974-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dc974-127">Request body</span></span>
+<span data-ttu-id="dc974-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="dc974-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="430ab-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="430ab-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dc974-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc974-129">Response</span></span>
 
-<span data-ttu-id="430ab-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos de grupo de [agendamento](../resources/schedulinggroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="430ab-130">If successful, this method returns a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulinggroup.md) objects in the response body.</span></span>
+<span data-ttu-id="dc974-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos de grupo de [agendamento](../resources/schedulinggroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dc974-130">If successful, this method returns a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulinggroup.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="430ab-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="430ab-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dc974-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="dc974-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="430ab-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="430ab-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="dc974-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc974-132">Request</span></span>
 
-<span data-ttu-id="430ab-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="430ab-133">The following is an example of the request.</span></span>
+<span data-ttu-id="dc974-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="dc974-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "schedule-list-schedulinggroups"
@@ -64,11 +64,11 @@ GET /teams/{teamId}/schedule/schedulingGroups
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 ```
 
-#### <a name="response"></a><span data-ttu-id="430ab-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="430ab-134">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="dc974-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc974-134">Response</span></span>
 
-<span data-ttu-id="430ab-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="430ab-135">The following is an example of the response.</span></span> 
+<span data-ttu-id="dc974-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="dc974-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="430ab-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="430ab-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="dc974-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dc974-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,13 +107,15 @@ Content-length: 401
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="430ab-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="430ab-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="430ab-139">Basic</span><span class="sxs-lookup"><span data-stu-id="430ab-139">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="dc974-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="dc974-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="dc974-139">C#</span><span class="sxs-lookup"><span data-stu-id="dc974-139">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/schedule-list-schedulinggroups-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="430ab-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="430ab-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dc974-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="dc974-140">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/schedule-list-schedulinggroups-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="dc974-141">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="dc974-141">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/schedule-list-schedulinggroups-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -128,6 +130,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/schedule-list-schedulinggroups.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/schedule-list-schedulinggroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/schedule-list-schedulinggroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
