@@ -3,32 +3,32 @@ title: Listando versões de um DriveItem
 description: O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: afd73c26c8a35cbac7c66397c89b1a9466af5971
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 549010cd97870e90662ae7074c3d49632e926a14
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33616083"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276955"
 ---
-# <a name="listing-versions-of-a-driveitem"></a><span data-ttu-id="faade-103">Listando versões de um DriveItem</span><span class="sxs-lookup"><span data-stu-id="faade-103">Listing versions of a DriveItem</span></span>
+# <a name="listing-versions-of-a-driveitem"></a><span data-ttu-id="12021-103">Listando versões de um DriveItem</span><span class="sxs-lookup"><span data-stu-id="12021-103">Listing versions of a DriveItem</span></span>
 
-<span data-ttu-id="faade-104">O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.</span><span class="sxs-lookup"><span data-stu-id="faade-104">OneDrive and SharePoint can be configured to retain the history for files.</span></span>
-<span data-ttu-id="faade-105">Dependendo do serviço e da configuração, uma nova versão pode ser criada para cada edição, sempre que o arquivo for salvo, manualmente ou nunca.</span><span class="sxs-lookup"><span data-stu-id="faade-105">Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.</span></span>
+<span data-ttu-id="12021-104">O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.</span><span class="sxs-lookup"><span data-stu-id="12021-104">OneDrive and SharePoint can be configured to retain the history for files.</span></span>
+<span data-ttu-id="12021-105">Dependendo do serviço e da configuração, uma nova versão pode ser criada para cada edição, sempre que o arquivo for salvo, manualmente ou nunca.</span><span class="sxs-lookup"><span data-stu-id="12021-105">Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.</span></span>
 
-<span data-ttu-id="faade-106">Versões anteriores de um documento podem ser retidas por um determinado período dependendo das configurações de administração, que podem ser exclusivas por usuário ou local.</span><span class="sxs-lookup"><span data-stu-id="faade-106">Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
+<span data-ttu-id="12021-106">Versões anteriores de um documento podem ser retidas por um determinado período dependendo das configurações de administração, que podem ser exclusivas por usuário ou local.</span><span class="sxs-lookup"><span data-stu-id="12021-106">Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="faade-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="faade-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="12021-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="12021-107">Permissions</span></span>
 
-<span data-ttu-id="faade-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="faade-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="12021-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="12021-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="faade-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="faade-110">Permission type</span></span>      | <span data-ttu-id="faade-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="faade-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="12021-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="12021-110">Permission type</span></span>      | <span data-ttu-id="12021-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="12021-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="faade-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="faade-112">Delegated (work or school account)</span></span> | <span data-ttu-id="faade-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="faade-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="faade-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="faade-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="faade-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="faade-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="faade-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="faade-116">Application</span></span> | <span data-ttu-id="faade-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="faade-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="12021-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="12021-112">Delegated (work or school account)</span></span> | <span data-ttu-id="12021-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12021-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="12021-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="12021-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="12021-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12021-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="12021-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="12021-116">Application</span></span> | <span data-ttu-id="12021-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12021-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="faade-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="faade-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="12021-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="12021-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -40,16 +40,16 @@ GET /sites/{site-id}/drive/items/{item-id}/versions
 GET /users/{user-id}/drive/items/{item-id}/versions
 ```
 
-## <a name="response"></a><span data-ttu-id="faade-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="faade-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="12021-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="12021-119">Response</span></span>
 
-<span data-ttu-id="faade-120">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [DriveItemVersion](../resources/driveitemversion.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="faade-120">If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](../resources/driveitemversion.md) objects in the response body.</span></span>
+<span data-ttu-id="12021-120">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [DriveItemVersion](../resources/driveitemversion.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="12021-120">If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](../resources/driveitemversion.md) objects in the response body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="faade-121">Exemplo</span><span class="sxs-lookup"><span data-stu-id="faade-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="12021-121">Exemplo</span><span class="sxs-lookup"><span data-stu-id="12021-121">Example</span></span>
 
-<span data-ttu-id="faade-122">Este exemplo recupera as versões de um arquivo na unidade do usuário atual.</span><span class="sxs-lookup"><span data-stu-id="faade-122">This example retrieves the versions of a file in the current user's drive.</span></span>
+<span data-ttu-id="12021-122">Este exemplo recupera as versões de um arquivo na unidade do usuário atual.</span><span class="sxs-lookup"><span data-stu-id="12021-122">This example retrieves the versions of a file in the current user's drive.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="faade-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="faade-123">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="12021-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="12021-123">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -57,9 +57,9 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 GET /me/drive/items/{item-id}/versions
 ```
 
-### <a name="response"></a><span data-ttu-id="faade-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="faade-124">Response</span></span>
+### <a name="response"></a><span data-ttu-id="12021-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="12021-124">Response</span></span>
 
-<span data-ttu-id="faade-125">Isso retornará uma coleção de versões:</span><span class="sxs-lookup"><span data-stu-id="faade-125">This returns a collection of versions:</span></span>
+<span data-ttu-id="12021-125">Isso retornará uma coleção de versões:</span><span class="sxs-lookup"><span data-stu-id="12021-125">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItemVersion)", "truncated": true } -->
 
@@ -106,22 +106,24 @@ Content-Type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="faade-126">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="faade-126">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="faade-127">Basic</span><span class="sxs-lookup"><span data-stu-id="faade-127">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="12021-126">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="12021-126">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="12021-127">C#</span><span class="sxs-lookup"><span data-stu-id="12021-127">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-previous-versions-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="faade-128">JavaScript</span><span class="sxs-lookup"><span data-stu-id="faade-128">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="12021-128">Javascript</span><span class="sxs-lookup"><span data-stu-id="12021-128">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-previous-versions-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="12021-129">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="12021-129">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="remarks"></a><span data-ttu-id="faade-129">Comentários</span><span class="sxs-lookup"><span data-stu-id="faade-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="12021-130">Comentários</span><span class="sxs-lookup"><span data-stu-id="12021-130">Remarks</span></span>
 
-<span data-ttu-id="faade-130">O OneDrive não preserva os metadados completos de versões anteriores de um arquivo.</span><span class="sxs-lookup"><span data-stu-id="faade-130">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
+<span data-ttu-id="12021-131">O OneDrive não preserva os metadados completos de versões anteriores de um arquivo.</span><span class="sxs-lookup"><span data-stu-id="12021-131">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
 
-<span data-ttu-id="faade-131">Quando seu aplicativo recupera a lista de versões disponíveis de um arquivo, um recurso [DriveItemVersion](../resources/driveitemversion.md) é retornado e fornece as informações disponíveis sobre a versão específica.</span><span class="sxs-lookup"><span data-stu-id="faade-131">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
+<span data-ttu-id="12021-132">Quando seu aplicativo recupera a lista de versões disponíveis de um arquivo, um recurso [DriveItemVersion](../resources/driveitemversion.md) é retornado e fornece as informações disponíveis sobre a versão específica.</span><span class="sxs-lookup"><span data-stu-id="12021-132">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
 
 
 <!-- {
@@ -131,6 +133,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "Items/Version history",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

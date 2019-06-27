@@ -5,32 +5,32 @@ ms.date: 09/10/2017
 title: Listar os subsites de um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bdbe1b70be15cac8acfd55a4735acd6185408545
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 5a2c16b53dd6b89588932d0f562f91a2deba348a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638542"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271572"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="b14f8-102">Enumerar subsites</span><span class="sxs-lookup"><span data-stu-id="b14f8-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="ff8ae-102">Enumerar subsites</span><span class="sxs-lookup"><span data-stu-id="ff8ae-102">Enumerate subsites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b14f8-103">Obtém uma coleção de subsites definidos para um [site][].</span><span class="sxs-lookup"><span data-stu-id="b14f8-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="ff8ae-103">Obtém uma coleção de subsites definidos para um [site][].</span><span class="sxs-lookup"><span data-stu-id="ff8ae-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="b14f8-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="b14f8-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ff8ae-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ff8ae-105">Permissions</span></span>
 
-<span data-ttu-id="b14f8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b14f8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ff8ae-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ff8ae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b14f8-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b14f8-108">Permission type</span></span>      | <span data-ttu-id="b14f8-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b14f8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ff8ae-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ff8ae-108">Permission type</span></span>      | <span data-ttu-id="ff8ae-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ff8ae-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b14f8-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b14f8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b14f8-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b14f8-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b14f8-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b14f8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b14f8-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b14f8-113">Not supported.</span></span>    |
-|<span data-ttu-id="b14f8-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b14f8-114">Application</span></span> | <span data-ttu-id="b14f8-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b14f8-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ff8ae-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ff8ae-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ff8ae-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff8ae-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ff8ae-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ff8ae-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff8ae-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ff8ae-113">Not supported.</span></span>    |
+|<span data-ttu-id="ff8ae-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ff8ae-114">Application</span></span> | <span data-ttu-id="ff8ae-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff8ae-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b14f8-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b14f8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ff8ae-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ff8ae-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "33638542"
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="b14f8-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="b14f8-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ff8ae-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="ff8ae-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -67,13 +67,15 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b14f8-118">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="b14f8-118">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b14f8-119">Basic</span><span class="sxs-lookup"><span data-stu-id="b14f8-119">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ff8ae-118">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="ff8ae-118">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ff8ae-119">C#</span><span class="sxs-lookup"><span data-stu-id="ff8ae-119">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/list-subsites-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b14f8-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b14f8-120">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ff8ae-120">Javascript</span><span class="sxs-lookup"><span data-stu-id="ff8ae-120">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/list-subsites-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ff8ae-121">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ff8ae-121">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/list-subsites-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -86,6 +88,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/List subsites",
   "suppressions": [
+    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
