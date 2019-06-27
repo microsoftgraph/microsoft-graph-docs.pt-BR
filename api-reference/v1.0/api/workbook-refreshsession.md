@@ -4,48 +4,48 @@ description: 'Use esta API para atualizar uma sessão de pasta de trabalho exist
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: dba9d76d0b366dac578eeedbbb5bb4aeab812e4a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: f5519d447c8e752a000ee8b260a383fb586cd7be
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33600599"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35278579"
 ---
-# <a name="refresh-session"></a><span data-ttu-id="aa6cc-103">Atualizar Sessão</span><span class="sxs-lookup"><span data-stu-id="aa6cc-103">Refresh Session</span></span>
+# <a name="refresh-session"></a><span data-ttu-id="365b1-103">Atualizar Sessão</span><span class="sxs-lookup"><span data-stu-id="365b1-103">Refresh Session</span></span>
 
-<span data-ttu-id="aa6cc-104">Use esta API para atualizar uma sessão de pasta de trabalho existente.</span><span class="sxs-lookup"><span data-stu-id="aa6cc-104">Use this API to refresh an existing workbook session.</span></span> 
+<span data-ttu-id="365b1-104">Use esta API para atualizar uma sessão de pasta de trabalho existente.</span><span class="sxs-lookup"><span data-stu-id="365b1-104">Use this API to refresh an existing workbook session.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="aa6cc-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="aa6cc-105">Permissions</span></span>
-<span data-ttu-id="aa6cc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aa6cc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="365b1-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="365b1-105">Permissions</span></span>
+<span data-ttu-id="365b1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="365b1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="aa6cc-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="aa6cc-108">Permission type</span></span>      | <span data-ttu-id="aa6cc-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="aa6cc-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="365b1-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="365b1-108">Permission type</span></span>      | <span data-ttu-id="365b1-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="365b1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="aa6cc-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="aa6cc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="aa6cc-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa6cc-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="aa6cc-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="aa6cc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aa6cc-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="aa6cc-113">Not supported.</span></span>    |
-|<span data-ttu-id="aa6cc-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="aa6cc-114">Application</span></span> | <span data-ttu-id="aa6cc-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="aa6cc-115">Not supported.</span></span> |
+|<span data-ttu-id="365b1-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="365b1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="365b1-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="365b1-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="365b1-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="365b1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="365b1-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="365b1-113">Not supported.</span></span>    |
+|<span data-ttu-id="365b1-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="365b1-114">Application</span></span> | <span data-ttu-id="365b1-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="365b1-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="aa6cc-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="aa6cc-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="365b1-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="365b1-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/refreshSession
 workbook-session-id: {session-id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="aa6cc-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="aa6cc-117">Request headers</span></span>
-| <span data-ttu-id="aa6cc-118">Nome</span><span class="sxs-lookup"><span data-stu-id="aa6cc-118">Name</span></span>       | <span data-ttu-id="aa6cc-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="aa6cc-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="365b1-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="365b1-117">Request headers</span></span>
+| <span data-ttu-id="365b1-118">Nome</span><span class="sxs-lookup"><span data-stu-id="365b1-118">Name</span></span>       | <span data-ttu-id="365b1-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="365b1-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="aa6cc-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="aa6cc-120">Authorization</span></span>  | <span data-ttu-id="aa6cc-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="aa6cc-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="aa6cc-123">Workbook-session-ID</span><span class="sxs-lookup"><span data-stu-id="aa6cc-123">workbook-session-id</span></span> | <span data-ttu-id="aa6cc-124">ID da sessão da pasta de trabalho a ser atualizada</span><span class="sxs-lookup"><span data-stu-id="aa6cc-124">Workbook session Id to be refreshed</span></span> |
+| <span data-ttu-id="365b1-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="365b1-120">Authorization</span></span>  | <span data-ttu-id="365b1-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="365b1-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="365b1-123">Workbook-session-ID</span><span class="sxs-lookup"><span data-stu-id="365b1-123">workbook-session-id</span></span> | <span data-ttu-id="365b1-124">ID da sessão da pasta de trabalho a ser atualizada</span><span class="sxs-lookup"><span data-stu-id="365b1-124">Workbook session Id to be refreshed</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="aa6cc-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="aa6cc-125">Request body</span></span>
-<span data-ttu-id="aa6cc-126">Essa API não requer nenhum corpo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="aa6cc-126">This API does not require any request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="365b1-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="365b1-125">Request body</span></span>
+<span data-ttu-id="365b1-126">Essa API não requer nenhum corpo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="365b1-126">This API does not require any request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="aa6cc-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="aa6cc-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="365b1-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="365b1-127">Response</span></span>
 
-<span data-ttu-id="aa6cc-128">Se bem sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="aa6cc-128">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="365b1-128">Se bem sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="365b1-128">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aa6cc-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="aa6cc-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="aa6cc-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="aa6cc-130">Request</span></span>
-<span data-ttu-id="aa6cc-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="aa6cc-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="365b1-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="365b1-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="365b1-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="365b1-130">Request</span></span>
+<span data-ttu-id="365b1-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="365b1-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "refresh_excel_session"
@@ -61,11 +61,11 @@ Content-length: 0
 }
 ```
 
-<span data-ttu-id="aa6cc-132">Observe que o cabeçalho Workbook-session-ID é necessário.</span><span class="sxs-lookup"><span data-stu-id="aa6cc-132">Note that workbook-session-id header is required.</span></span> 
+<span data-ttu-id="365b1-132">Observe que o cabeçalho Workbook-session-ID é necessário.</span><span class="sxs-lookup"><span data-stu-id="365b1-132">Note that workbook-session-id header is required.</span></span> 
 
 
-##### <a name="response"></a><span data-ttu-id="aa6cc-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="aa6cc-133">Response</span></span>
-<span data-ttu-id="aa6cc-134">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="aa6cc-134">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="365b1-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="365b1-133">Response</span></span>
+<span data-ttu-id="365b1-134">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="365b1-134">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -74,13 +74,15 @@ Content-length: 0
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="aa6cc-135">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="aa6cc-135">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="aa6cc-136">Basic</span><span class="sxs-lookup"><span data-stu-id="aa6cc-136">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="365b1-135">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="365b1-135">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="365b1-136">C#</span><span class="sxs-lookup"><span data-stu-id="365b1-136">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/refresh_excel_session-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="aa6cc-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aa6cc-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="365b1-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="365b1-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/refresh_excel_session-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="365b1-138">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="365b1-138">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/refresh_excel_session-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -88,6 +90,7 @@ HTTP/1.1 204 No Content
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/workbook-refreshsession.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/workbook-refreshsession.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/workbook-refreshsession.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: refresh_excel_session//api-reference/v1.0/api/workbook-refreshsession.md:

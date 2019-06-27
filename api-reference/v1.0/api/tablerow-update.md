@@ -4,50 +4,50 @@ description: Atualize as propriedades do objeto tablerow.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 05f3df038767cee1138b26808e7a818b508bda46
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a9d9cbcf02e9a5fb9d8867f065b5ae55c8970d76
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602462"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274743"
 ---
-# <a name="update-tablerow"></a><span data-ttu-id="f6c74-103">Atualizar tablerow</span><span class="sxs-lookup"><span data-stu-id="f6c74-103">Update tablerow</span></span>
+# <a name="update-tablerow"></a><span data-ttu-id="ead35-103">Atualizar tablerow</span><span class="sxs-lookup"><span data-stu-id="ead35-103">Update tablerow</span></span>
 
-<span data-ttu-id="f6c74-104">Atualize as propriedades do objeto tablerow.</span><span class="sxs-lookup"><span data-stu-id="f6c74-104">Update the properties of tablerow object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f6c74-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="f6c74-105">Permissions</span></span>
-<span data-ttu-id="f6c74-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f6c74-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ead35-104">Atualize as propriedades do objeto tablerow.</span><span class="sxs-lookup"><span data-stu-id="ead35-104">Update the properties of tablerow object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ead35-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ead35-105">Permissions</span></span>
+<span data-ttu-id="ead35-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ead35-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f6c74-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f6c74-108">Permission type</span></span>      | <span data-ttu-id="f6c74-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f6c74-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ead35-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ead35-108">Permission type</span></span>      | <span data-ttu-id="ead35-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ead35-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f6c74-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f6c74-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f6c74-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f6c74-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="f6c74-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f6c74-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f6c74-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f6c74-113">Not supported.</span></span>    |
-|<span data-ttu-id="f6c74-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f6c74-114">Application</span></span> | <span data-ttu-id="f6c74-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f6c74-115">Not supported.</span></span> |
+|<span data-ttu-id="ead35-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ead35-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ead35-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ead35-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ead35-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ead35-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ead35-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ead35-113">Not supported.</span></span>    |
+|<span data-ttu-id="ead35-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ead35-114">Application</span></span> | <span data-ttu-id="ead35-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ead35-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f6c74-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f6c74-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ead35-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ead35-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/tables/{id|name}/rows/{index}
 PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="f6c74-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="f6c74-117">Optional request headers</span></span>
-| <span data-ttu-id="f6c74-118">Nome</span><span class="sxs-lookup"><span data-stu-id="f6c74-118">Name</span></span>       | <span data-ttu-id="f6c74-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="f6c74-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="ead35-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="ead35-117">Optional request headers</span></span>
+| <span data-ttu-id="ead35-118">Nome</span><span class="sxs-lookup"><span data-stu-id="ead35-118">Name</span></span>       | <span data-ttu-id="ead35-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="ead35-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="f6c74-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="f6c74-120">Authorization</span></span>  | <span data-ttu-id="f6c74-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f6c74-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f6c74-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f6c74-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="f6c74-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="f6c74-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="ead35-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="ead35-120">Authorization</span></span>  | <span data-ttu-id="ead35-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ead35-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ead35-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ead35-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ead35-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="ead35-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f6c74-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f6c74-126">Request body</span></span>
-<span data-ttu-id="f6c74-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="f6c74-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ead35-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ead35-126">Request body</span></span>
+<span data-ttu-id="ead35-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="ead35-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="f6c74-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f6c74-130">Property</span></span>     | <span data-ttu-id="f6c74-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="f6c74-131">Type</span></span>   |<span data-ttu-id="f6c74-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="f6c74-132">Description</span></span>|
+| <span data-ttu-id="ead35-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ead35-130">Property</span></span>     | <span data-ttu-id="ead35-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="ead35-131">Type</span></span>   |<span data-ttu-id="ead35-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="ead35-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f6c74-133">values</span><span class="sxs-lookup"><span data-stu-id="f6c74-133">values</span></span>|<span data-ttu-id="f6c74-134">Json</span><span class="sxs-lookup"><span data-stu-id="f6c74-134">Json</span></span>|<span data-ttu-id="f6c74-p105">Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.</span><span class="sxs-lookup"><span data-stu-id="f6c74-p105">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
+|<span data-ttu-id="ead35-133">values</span><span class="sxs-lookup"><span data-stu-id="ead35-133">values</span></span>|<span data-ttu-id="ead35-134">Json</span><span class="sxs-lookup"><span data-stu-id="ead35-134">Json</span></span>|<span data-ttu-id="ead35-p105">Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.</span><span class="sxs-lookup"><span data-stu-id="ead35-p105">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f6c74-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="f6c74-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ead35-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="ead35-138">Response</span></span>
 
-<span data-ttu-id="f6c74-139">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookTableRow](../resources/tablerow.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f6c74-139">If successful, this method returns a `200 OK` response code and updated [WorkbookTableRow](../resources/tablerow.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f6c74-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f6c74-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f6c74-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f6c74-141">Request</span></span>
-<span data-ttu-id="f6c74-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f6c74-142">Here is an example of the request.</span></span>
+<span data-ttu-id="ead35-139">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookTableRow](../resources/tablerow.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ead35-139">If successful, this method returns a `200 OK` response code and updated [WorkbookTableRow](../resources/tablerow.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="ead35-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ead35-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ead35-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ead35-141">Request</span></span>
+<span data-ttu-id="ead35-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ead35-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_tablerow"
@@ -62,8 +62,8 @@ Content-length: 45
   "values": "values-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="f6c74-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="f6c74-143">Response</span></span>
-<span data-ttu-id="f6c74-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f6c74-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ead35-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="ead35-143">Response</span></span>
+<span data-ttu-id="ead35-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ead35-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,13 +79,15 @@ Content-length: 45
   "values": "values-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f6c74-147">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="f6c74-147">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f6c74-148">Basic</span><span class="sxs-lookup"><span data-stu-id="f6c74-148">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ead35-147">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="ead35-147">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ead35-148">C#</span><span class="sxs-lookup"><span data-stu-id="ead35-148">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_tablerow-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f6c74-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f6c74-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ead35-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="ead35-149">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_tablerow-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ead35-150">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ead35-150">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_tablerow-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -99,6 +101,7 @@ Content-length: 45
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/tablerow-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/tablerow-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/tablerow-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
