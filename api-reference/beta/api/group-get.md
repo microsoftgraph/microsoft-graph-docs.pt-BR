@@ -4,24 +4,20 @@ description: Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: c569ad43554f2f9835b4134b49a9572b62134129
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 7d2a65ae003ae3944811f9e9fb59d4c443abee1c
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812562"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236290"
 ---
 # <a name="get-group"></a>Obter grupo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as propriedades e os relacionamentos de um objeto [group](../resources/group.md).
+Obtenha as propriedades e os relacionamentos de um objeto [group](../resources/group.md). 
 
-Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties). 
-
-Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. Veja um [exemplo](#request-2) de `$select`. A propriedade **hasMembersWithLicenseErrors** é uma exceção. Veja um [exemplo](group-list.md#request-2) de como usar essa propriedade.
-
-Como o recurso **group** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **group**.
+Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. A propriedade **hasMembersWithLicenseErrors** é uma exceção e ela não é retornada na consulta `$select`. Como o recurso **group** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **group**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,13 +28,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+>**Observação:** dependendo dos recursos de grupo que você está tentando acessar, as permissões podem ser limitadas. Para obter mais informações, consulte a seção [Grupos](/graph/known-issues#groups) em [Problemas conhecidos com o Microsoft Graph](/graph/known-issues).
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-É possível usar a opção de consulta `$select` para obter propriedades específicas do grupo, inclusive aquelas que não são retornadas por padrão. Veja um [exemplo](#request-2) abaixo.
+É possível usar a opção de consulta `$select` para obter propriedades específicas do grupo, inclusive aquelas que não são retornadas por padrão.
 
 Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -54,7 +52,11 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [group](../resources/group.md) no corpo da resposta. Retorna as propriedades padrão, a menos que você use `$select` para especificar as propriedades específicas.
 
 ## <a name="example"></a>Exemplo
-#### <a name="request-1"></a>Solicitação 1
+
+### <a name="example-1-return-all-default-properties"></a>Exemplo 1: Retornar todas as propriedades padrão
+
+#### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação GET. 
 <!-- {
   "blockType": "request",
@@ -65,7 +67,7 @@ Este é um exemplo de solicitação GET.
 GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 
-#### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
 Este é um exemplo de resposta. Ele inclui apenas as propriedades padrão.
 
 >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades padrão serão retornadas em uma chamada real.
@@ -113,7 +115,9 @@ Content-type: application/json
   "onPremisesProvisioningErrors": []
 }
 ```
+
 #### <a name="sdk-sample-code"></a>Código de amostra do SDK
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
 
@@ -124,8 +128,12 @@ Content-type: application/json
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir usa uma opção de consulta `$select` para obter algumas propriedades não retornadas por padrão. 
+### <a name="example-2-return-additional-properties-by-using-select"></a>Exemplo 2: Retornar propriedades adicionais usando $select
+
+#### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de solicitação GET. 
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
@@ -135,7 +143,8 @@ O exemplo a seguir usa uma opção de consulta `$select` para obter algumas prop
 GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 ```
 
-#### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
+
 Veja a seguir o exemplo de uma resposta que inclui as propriedades solicitadas não retornadas por padrão.
 
 <!-- {
@@ -157,7 +166,9 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
+
 #### <a name="sdk-sample-code"></a>Código de amostra do SDK
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group_non_default-Cs-snippets.md)]
 
