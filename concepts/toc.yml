@@ -319,6 +319,8 @@ items:
                 href: extensibility-open-users.md
               - name: Usar extensões de esquema (exemplo)
                 href: extensibility-schema-groups.md
+          - name: Usar o Postman
+            href: use-postman.md
       - name: Migrar
         expanded: false
         items:
@@ -365,6 +367,38 @@ items:
             href: sdks/create-client.md
           - name: Escolher um provedor de autenticação.
             href: sdks/choose-authentication-providers.md
+      - name: Usar o kit de ferramentas (visualização)
+        items:
+          - name: Visão geral do kit de ferramentas
+            href: toolkit/overview.md
+          - name: Componentes
+            items:
+              - name: Logon
+                href: toolkit/components/login.md
+              - name: Pessoa
+                href: toolkit/components/person.md
+              - name: Pessoas
+                href: toolkit/components/people.md
+              - name: Agenda
+                href: toolkit/components/agenda.md
+              - name: Tarefas
+                href: toolkit/components/tasks.md
+          - name: Provedores
+            items:
+              - name: Usando os provedores
+                href: toolkit/providers.md
+              - name: Provedor MSAL
+                href: toolkit/providers/msal.md
+              - name: Provedor do SharePoint
+                href: toolkit/providers/sharepoint.md
+              - name: Provedor do Microsoft Teams
+                href: toolkit/providers/teams.md
+              - name: Provedor personalizado
+                href: toolkit/providers/custom.md
+          - name: Componentes de estilização
+            href: toolkit/style.md
+          - name: Componentes de modelagem
+            href: toolkit/templates.md
       - name: Recursos
         expanded: true
         items:

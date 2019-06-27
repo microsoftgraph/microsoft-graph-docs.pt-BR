@@ -4,28 +4,28 @@ description: Adicione um contato na pasta de contatos raiz ou no ponto de extrem
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: cd0c6d8473347ed86aff0bd83a8cd663e9b2c1ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 213d60a3dacb976d1bcc06509982ffe5a38a6359
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566203"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273889"
 ---
-# <a name="create-contact"></a><span data-ttu-id="2a986-103">Criar contato</span><span class="sxs-lookup"><span data-stu-id="2a986-103">Create contact</span></span>
+# <a name="create-contact"></a><span data-ttu-id="3981b-103">Criar contato</span><span class="sxs-lookup"><span data-stu-id="3981b-103">Create contact</span></span>
 
-<span data-ttu-id="2a986-104">Adicione um contato na pasta de contatos raiz ou no ponto de extremidade do `contacts` de outra pasta de contatos.</span><span class="sxs-lookup"><span data-stu-id="2a986-104">Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.</span></span>
+<span data-ttu-id="3981b-104">Adicione um contato na pasta de contatos raiz ou no ponto de extremidade do `contacts` de outra pasta de contatos.</span><span class="sxs-lookup"><span data-stu-id="3981b-104">Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2a986-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="2a986-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3981b-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="3981b-105">Permissions</span></span>
 
-<span data-ttu-id="2a986-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a986-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3981b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3981b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2a986-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2a986-108">Permission type</span></span>      | <span data-ttu-id="2a986-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2a986-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3981b-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3981b-108">Permission type</span></span>      | <span data-ttu-id="3981b-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3981b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2a986-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2a986-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2a986-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a986-111">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="2a986-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2a986-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a986-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a986-113">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="2a986-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2a986-114">Application</span></span> | <span data-ttu-id="2a986-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a986-115">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="3981b-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3981b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3981b-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3981b-111">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="3981b-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3981b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3981b-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3981b-113">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="3981b-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3981b-114">Application</span></span> | <span data-ttu-id="3981b-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3981b-115">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2a986-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2a986-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3981b-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3981b-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,25 +39,25 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 
 <br/>
 
-## <a name="request-headers"></a><span data-ttu-id="2a986-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2a986-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3981b-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3981b-117">Request headers</span></span>
 
-| <span data-ttu-id="2a986-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2a986-118">Header</span></span>       | <span data-ttu-id="2a986-119">Valor</span><span class="sxs-lookup"><span data-stu-id="2a986-119">Value</span></span> |
+| <span data-ttu-id="3981b-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3981b-118">Header</span></span>       | <span data-ttu-id="3981b-119">Valor</span><span class="sxs-lookup"><span data-stu-id="3981b-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2a986-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="2a986-120">Authorization</span></span>  | <span data-ttu-id="2a986-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2a986-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2a986-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2a986-123">Content-Type</span></span>  | <span data-ttu-id="2a986-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2a986-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="3981b-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="3981b-120">Authorization</span></span>  | <span data-ttu-id="3981b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3981b-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3981b-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3981b-123">Content-Type</span></span>  | <span data-ttu-id="3981b-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3981b-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2a986-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2a986-126">Request body</span></span>
-<span data-ttu-id="2a986-127">No corpo da solicitação, forneça uma representação JSON do objeto [Contact](../resources/contact.md).</span><span class="sxs-lookup"><span data-stu-id="2a986-127">In the request body, supply a JSON representation of the [Contact](../resources/contact.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3981b-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3981b-126">Request body</span></span>
+<span data-ttu-id="3981b-127">No corpo da solicitação, forneça uma representação JSON do objeto [Contact](../resources/contact.md).</span><span class="sxs-lookup"><span data-stu-id="3981b-127">In the request body, supply a JSON representation of the [Contact](../resources/contact.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2a986-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="2a986-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3981b-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="3981b-128">Response</span></span>
 
-<span data-ttu-id="2a986-129">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [Contact](../resources/contact.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2a986-129">If successful, this method returns `201 Created` response code and the [Contact](../resources/contact.md) object in the response body.</span></span>
+<span data-ttu-id="3981b-129">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [Contact](../resources/contact.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3981b-129">If successful, this method returns `201 Created` response code and the [Contact](../resources/contact.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2a986-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2a986-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3981b-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3981b-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2a986-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2a986-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3981b-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3981b-131">Request</span></span>
 
-<span data-ttu-id="2a986-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2a986-132">Here is an example of the request.</span></span>
+<span data-ttu-id="3981b-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3981b-132">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -81,11 +81,11 @@ Content-length: 210
 
 <br/>
 
-<span data-ttu-id="2a986-133">No corpo da solicitação, forneça uma representação JSON do objeto [Contact](../resources/contact.md).</span><span class="sxs-lookup"><span data-stu-id="2a986-133">In the request body, supply a JSON representation of the [Contact](../resources/contact.md) object.</span></span>
+<span data-ttu-id="3981b-133">No corpo da solicitação, forneça uma representação JSON do objeto [Contact](../resources/contact.md).</span><span class="sxs-lookup"><span data-stu-id="3981b-133">In the request body, supply a JSON representation of the [Contact](../resources/contact.md) object.</span></span>
 
-### <a name="response"></a><span data-ttu-id="2a986-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="2a986-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3981b-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="3981b-134">Response</span></span>
 
-<span data-ttu-id="2a986-135">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2a986-135">Here is an example of the response.</span></span> <span data-ttu-id="2a986-136">**Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="2a986-136">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="2a986-137">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2a986-137">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="3981b-135">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3981b-135">Here is an example of the response.</span></span> <span data-ttu-id="3981b-136">**Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="3981b-136">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="3981b-137">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3981b-137">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -107,6 +107,18 @@ Content-length: 210
   "initials": "initials-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="3981b-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="3981b-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="3981b-139">C#</span><span class="sxs-lookup"><span data-stu-id="3981b-139">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_contact_from_contactfolder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3981b-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="3981b-140">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_contact_from_contactfolder-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="3981b-141">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="3981b-141">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_contact_from_contactfolder-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <br/>
 
@@ -117,5 +129,10 @@ Content-length: 210
   "description": "Create Contact",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/contactfolder-post-contacts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/contactfolder-post-contacts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/contactfolder-post-contacts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

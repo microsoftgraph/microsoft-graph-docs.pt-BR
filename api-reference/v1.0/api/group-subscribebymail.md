@@ -4,45 +4,45 @@ description: Chamar esse método permitirá que o usuário atual receba notifica
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 66a33d103642972aebf55a0437f03840c55a4ef5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6795257a1a86049457ddb475356280980e9a203e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613602"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277627"
 ---
-# <a name="group-subscribebymail"></a><span data-ttu-id="97cdf-104">group: subscribeByMail</span><span class="sxs-lookup"><span data-stu-id="97cdf-104">group: subscribeByMail</span></span>
-<span data-ttu-id="97cdf-p102">Chamar esse método permitirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Suporte apenas para grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="97cdf-p102">Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Office 365 groups only.</span></span>
+# <a name="group-subscribebymail"></a><span data-ttu-id="015b4-104">group: subscribeByMail</span><span class="sxs-lookup"><span data-stu-id="015b4-104">group: subscribeByMail</span></span>
+<span data-ttu-id="015b4-p102">Chamar esse método permitirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Suporte apenas para grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="015b4-p102">Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Office 365 groups only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="97cdf-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="97cdf-107">Permissions</span></span>
-<span data-ttu-id="97cdf-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97cdf-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="015b4-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="015b4-107">Permissions</span></span>
+<span data-ttu-id="015b4-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="015b4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="97cdf-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="97cdf-110">Permission type</span></span>      | <span data-ttu-id="97cdf-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="97cdf-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="015b4-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="015b4-110">Permission type</span></span>      | <span data-ttu-id="015b4-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="015b4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="97cdf-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="97cdf-112">Delegated (work or school account)</span></span> | <span data-ttu-id="97cdf-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97cdf-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="97cdf-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="97cdf-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97cdf-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="97cdf-115">Not supported.</span></span>    |
-|<span data-ttu-id="97cdf-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="97cdf-116">Application</span></span> | <span data-ttu-id="97cdf-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="97cdf-117">Not supported.</span></span> |
+|<span data-ttu-id="015b4-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="015b4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="015b4-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="015b4-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="015b4-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="015b4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="015b4-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="015b4-115">Not supported.</span></span>    |
+|<span data-ttu-id="015b4-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="015b4-116">Application</span></span> | <span data-ttu-id="015b4-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="015b4-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="97cdf-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="97cdf-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="015b4-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="015b4-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/subscribeByMail
 ```
-## <a name="request-headers"></a><span data-ttu-id="97cdf-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="97cdf-119">Request headers</span></span>
-| <span data-ttu-id="97cdf-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="97cdf-120">Header</span></span>       | <span data-ttu-id="97cdf-121">Valor</span><span class="sxs-lookup"><span data-stu-id="97cdf-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="015b4-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="015b4-119">Request headers</span></span>
+| <span data-ttu-id="015b4-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="015b4-120">Header</span></span>       | <span data-ttu-id="015b4-121">Valor</span><span class="sxs-lookup"><span data-stu-id="015b4-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="97cdf-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="97cdf-122">Authorization</span></span>  | <span data-ttu-id="97cdf-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="97cdf-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="97cdf-125">Preferir</span><span class="sxs-lookup"><span data-stu-id="97cdf-125">Prefer</span></span> | <span data-ttu-id="97cdf-126">retorno=mínimo.</span><span class="sxs-lookup"><span data-stu-id="97cdf-126">return=minimal.</span></span> <span data-ttu-id="97cdf-127">Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="97cdf-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="97cdf-128">Opcional.</span><span class="sxs-lookup"><span data-stu-id="97cdf-128">Optional.</span></span>  | 
+| <span data-ttu-id="015b4-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="015b4-122">Authorization</span></span>  | <span data-ttu-id="015b4-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="015b4-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="015b4-125">Preferir</span><span class="sxs-lookup"><span data-stu-id="015b4-125">Prefer</span></span> | <span data-ttu-id="015b4-126">retorno=mínimo.</span><span class="sxs-lookup"><span data-stu-id="015b4-126">return=minimal.</span></span> <span data-ttu-id="015b4-127">Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="015b4-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="015b4-128">Opcional.</span><span class="sxs-lookup"><span data-stu-id="015b4-128">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="97cdf-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="97cdf-129">Request body</span></span>
-<span data-ttu-id="97cdf-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="97cdf-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="015b4-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="015b4-129">Request body</span></span>
+<span data-ttu-id="015b4-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="015b4-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="97cdf-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="97cdf-131">Response</span></span>
-<span data-ttu-id="97cdf-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="97cdf-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="015b4-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="015b4-131">Response</span></span>
+<span data-ttu-id="015b4-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="015b4-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="97cdf-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="97cdf-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="97cdf-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="97cdf-135">Request</span></span>
-<span data-ttu-id="97cdf-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="97cdf-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="015b4-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="015b4-134">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="015b4-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="015b4-135">Request</span></span>
+<span data-ttu-id="015b4-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="015b4-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_subscribebymail"
@@ -51,8 +51,8 @@ POST /groups/{id}/subscribeByMail
 POST https://graph.microsoft.com/v1.0/groups/{id}/subscribeByMail
 ```
 
-#### <a name="response"></a><span data-ttu-id="97cdf-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="97cdf-137">Response</span></span>
-<span data-ttu-id="97cdf-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="97cdf-138">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="015b4-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="015b4-137">Response</span></span>
+<span data-ttu-id="015b4-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="015b4-138">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -60,13 +60,15 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/subscribeByMail
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="97cdf-139">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="97cdf-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="97cdf-140">Basic</span><span class="sxs-lookup"><span data-stu-id="97cdf-140">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="015b4-139">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="015b4-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="015b4-140">C#</span><span class="sxs-lookup"><span data-stu-id="015b4-140">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/group_subscribebymail-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="97cdf-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="97cdf-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="015b4-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="015b4-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/group_subscribebymail-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="015b4-142">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="015b4-142">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/group_subscribebymail-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -80,6 +82,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-subscribebymail.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-subscribebymail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-subscribebymail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
