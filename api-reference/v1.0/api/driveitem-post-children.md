@@ -5,28 +5,28 @@ ms.date: 09/10/2017
 title: Criar uma nova pasta
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: b4c65c6e57a9504db42b65a1bf3aa97236ac8031
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 8036a1b66d93709259e3e73ca5d131f6c19ba9c4
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536341"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272823"
 ---
-# <a name="create-a-new-folder-in-a-drive"></a><span data-ttu-id="108eb-102">Criar uma nova pasta em uma unidade</span><span class="sxs-lookup"><span data-stu-id="108eb-102">Create a new folder in a drive</span></span>
+# <a name="create-a-new-folder-in-a-drive"></a><span data-ttu-id="15886-102">Criar uma nova pasta em uma unidade</span><span class="sxs-lookup"><span data-stu-id="15886-102">Create a new folder in a drive</span></span>
 
-<span data-ttu-id="108eb-103">Criar uma nova pasta ou [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) com um item pai ou caminho especificado.</span><span class="sxs-lookup"><span data-stu-id="108eb-103">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
+<span data-ttu-id="15886-103">Criar uma nova pasta ou [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) com um item pai ou caminho especificado.</span><span class="sxs-lookup"><span data-stu-id="15886-103">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="108eb-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="108eb-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="15886-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="15886-104">Permissions</span></span>
 
-<span data-ttu-id="108eb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="108eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="15886-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15886-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="108eb-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="108eb-107">Permission type</span></span>      | <span data-ttu-id="108eb-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="108eb-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="15886-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="15886-107">Permission type</span></span>      | <span data-ttu-id="15886-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="15886-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="108eb-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="108eb-109">Delegated (work or school account)</span></span> | <span data-ttu-id="108eb-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="108eb-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="108eb-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="108eb-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="108eb-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="108eb-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="108eb-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="108eb-113">Application</span></span> | <span data-ttu-id="108eb-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="108eb-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="15886-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="15886-109">Delegated (work or school account)</span></span> | <span data-ttu-id="15886-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15886-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="15886-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="15886-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15886-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15886-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="15886-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="15886-113">Application</span></span> | <span data-ttu-id="15886-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15886-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="108eb-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="108eb-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15886-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="15886-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,20 +38,20 @@ POST /sites/{site-id}/drive/items/{parent-item-id}/children
 POST /users/{user-id}/drive/items/{parent-item-id}/children
 ```
 
-## <a name="request-body"></a><span data-ttu-id="108eb-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="108eb-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="15886-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="15886-116">Request body</span></span>
 
-<span data-ttu-id="108eb-117">No corpo da solicitação, forneça uma representação JSON do recurso [DriveItem](../resources/driveitem.md) a criar.</span><span class="sxs-lookup"><span data-stu-id="108eb-117">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
+<span data-ttu-id="15886-117">No corpo da solicitação, forneça uma representação JSON do recurso [DriveItem](../resources/driveitem.md) a criar.</span><span class="sxs-lookup"><span data-stu-id="15886-117">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="108eb-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="108eb-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15886-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="15886-118">Response</span></span>
 
-<span data-ttu-id="108eb-119">Se bem sucedido, este método retorna o código de resposta `201 Created` e o recurso [Driveitem](../resources/driveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="108eb-119">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="15886-119">Se bem sucedido, este método retorna o código de resposta `201 Created` e o recurso [Driveitem](../resources/driveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="15886-119">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="108eb-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="108eb-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="15886-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="15886-120">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="108eb-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="108eb-121">Request</span></span>
+### <a name="request"></a><span data-ttu-id="15886-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15886-121">Request</span></span>
 
-<span data-ttu-id="108eb-122">Eis um exemplo de solicitação para criar uma nova pasta na raiz do OneDrive do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="108eb-122">Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.</span></span>
-<span data-ttu-id="108eb-123">A propriedade `@microsoft.graph.conflictBehavior` usada indica que, se já existe um item com o mesmo nome, o serviço deve escolher um novo nome para a pasta ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="108eb-123">The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.</span></span>
+<span data-ttu-id="15886-122">Eis um exemplo de solicitação para criar uma nova pasta na raiz do OneDrive do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="15886-122">Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.</span></span>
+<span data-ttu-id="15886-123">A propriedade `@microsoft.graph.conflictBehavior` usada indica que, se já existe um item com o mesmo nome, o serviço deve escolher um novo nome para a pasta ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="15886-123">The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.</span></span>
 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
@@ -66,9 +66,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="108eb-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="108eb-124">Response</span></span>
+### <a name="response"></a><span data-ttu-id="15886-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="15886-124">Response</span></span>
 
-<span data-ttu-id="108eb-125">Se for bem-sucedido, esse método retornará uma pasta recém criada como um recurso [DriveItem] [ item-resource].</span><span class="sxs-lookup"><span data-stu-id="108eb-125">If successful, this method returns the newly created folder as a [DriveItem][item-resource] resource.</span></span>
+<span data-ttu-id="15886-125">Se for bem-sucedido, esse método retornará uma pasta recém criada como um recurso [DriveItem][item-resource].</span><span class="sxs-lookup"><span data-stu-id="15886-125">If successful, this method returns the newly created folder as a [DriveItem][item-resource] resource.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -105,20 +105,22 @@ Content-Type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="108eb-126">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="108eb-126">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="108eb-127">C#</span><span class="sxs-lookup"><span data-stu-id="108eb-127">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="15886-126">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="15886-126">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="15886-127">C#</span><span class="sxs-lookup"><span data-stu-id="15886-127">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create-folder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="108eb-128">Javascript</span><span class="sxs-lookup"><span data-stu-id="108eb-128">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="15886-128">Javascript</span><span class="sxs-lookup"><span data-stu-id="15886-128">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create-folder-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="15886-129">Objective-C</span><span class="sxs-lookup"><span data-stu-id="15886-129">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create-folder-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="error-response"></a><span data-ttu-id="108eb-129">Resposta de erro</span><span class="sxs-lookup"><span data-stu-id="108eb-129">Error response</span></span>
+## <a name="error-response"></a><span data-ttu-id="15886-130">Resposta de erro</span><span class="sxs-lookup"><span data-stu-id="15886-130">Error response</span></span>
 
-<span data-ttu-id="108eb-130">Para mais informações sobre como os erros são retornados veja [Respostas de Erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="108eb-130">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="15886-131">Confira mais informações sobre como os erros são retornados em [Respostas de Erros][error-response].</span><span class="sxs-lookup"><span data-stu-id="15886-131">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
@@ -131,6 +133,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "Items/Create folder",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
