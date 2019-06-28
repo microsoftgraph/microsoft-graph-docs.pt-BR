@@ -1,12 +1,12 @@
 ---
 title: Valores de enumeração
 description: Valores de enumeração do Microsoft Graph
-ms.openlocfilehash: b9e7dac80f40739854128e874b0e1fa82c0c1844
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 10660c7b44dc80145dd4a3ce14c9cdfc06da7743
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750162"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348695"
 ---
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
@@ -719,6 +719,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |userPassedMFADrivenByRiskBasedPolicy|
 |adminDismissedAllRiskForUser|
 |adminConfirmedSigninCompromised|
+|adminConfirmedUserCompromised|
 |hidden|
 |unknownFutureValue|
 
@@ -821,3 +822,30 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |SS|
 |high|
 |urgente|
+
+### <a name="tokenissuertype-values"></a>valores de tokenIssuerType
+
+|Membro|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|unknownFutureValue|
+
+### <a name="riskdetectiontimingtype-values"></a>valores de riskDetectionTimingType
+
+|Membro|
+|:---|
+|Não definido|
+|Realtime|
+|nearRealtime|
+|modo|
+|unknownFutureValue|
+
+
+### <a name="activitytype-values"></a>valores de ActivityType
+
+|Membro|
+|:---|
+|SignIn|
+|user|
+|unknownFutureValue|

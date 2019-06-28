@@ -4,12 +4,12 @@ description: Obter uma única resposta a uma mensagem em um canal de uma equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d0ec855b2b91ce9ee912725140e7222c32ff630
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 0f06a4ab2a197f6c54e545eb74b6d278f29688cc
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262108"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348632"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Obter uma resposta a uma mensagem de canal
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|Group.Read.All,Group.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|Group.Read.All, Group.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| Sem suporte. |
+|Aplicativo| Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

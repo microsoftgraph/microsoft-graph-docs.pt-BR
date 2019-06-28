@@ -1,25 +1,30 @@
 ---
 title: tipo de recurso modifiedproperty
-description: Indica todas as propriedades modificadas com o valor antigo e o novo valor de qualquer recurso no Azure AD que foi alterado
+description: Descreve as alterações realizadas no sistema de destino.
 localization_priority: Normal
-ms.openlocfilehash: 91e5df357a40b2e44bb26edc5fb3bf6965a260e5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: resourcePageType
+ms.openlocfilehash: 03ae8cb2c36cb811325839341c0fa8b3f395c954
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506233"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348702"
 ---
 # <a name="modifiedproperty-resource-type"></a>tipo de recurso modifiedproperty
-Indica todas as propriedades modificadas com o valor antigo e o novo valor de qualquer recurso no Azure AD que foi alterado
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Descreve as alterações realizadas no sistema de destino. 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|displayName|String|Indica o nome da Propriedade do atributo de destino que foi alterado.|
-|newValue|Cadeia de caracteres|Indica o valor atualizado para o correto.|
-|oldValue|String|Indica o valor anterior (antes da atualização) para a propriedade.|
+
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|displayName|String|Nome da propriedade que foi modificada.|
+|newValue|Cadeia de caracteres|Novo valor da propriedade.|
+|oldValue|String|Valor da propriedade Old.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -30,7 +35,8 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.modifiedProperty"
+  "@odata.type": "microsoft.graph.modifiedProperty",
+  "baseType": null
 }-->
 
 ```json
@@ -39,11 +45,10 @@ Veja a seguir uma representação JSON do recurso.
   "newValue": "String",
   "oldValue": "String"
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "modifiedProperty resource",
