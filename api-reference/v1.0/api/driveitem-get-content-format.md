@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Converter em outros formatos
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: b63e22aa280640362a70efcc4fa0d50673aab63d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e0486012bbc9b4ba3fe019f69872dbdf8ab9724b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575391"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279076"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
@@ -75,10 +75,22 @@ As URLs de download previamente autenticadas são válidas apenas por um curto p
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/convert-item-content-Cs-snippets.md)]
 
-### <a name="error-responses"></a>Respostas de erro
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/convert-item-content-Javascript-snippets.md)]
 
-Confira [Respostas de erro][error-response] para saber mais sobre como os erros retornam.
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/convert-item-content-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### <a name="error-responses"></a>Respostas de erros
+
+Confira [Respostas de Erros][error-response] para saber mais sobre como os erros retornam.
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md
@@ -88,5 +100,10 @@ Confira [Respostas de erro][error-response] para saber mais sobre como os erros 
   "description": "Convert the contents of an item in OneDrive to a different format.",
   "keywords": "convert,pdf,convert to pdf",
   "section": "documentation",
-  "tocPath": "Items/Download formats"
+  "tocPath": "Items/Download formats",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-get-content-format.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-get-content-format.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-get-content-format.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->
