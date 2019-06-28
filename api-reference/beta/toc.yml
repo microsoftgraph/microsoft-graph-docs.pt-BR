@@ -7708,6 +7708,11 @@ items:
                     href: api/signin-list.md
                   - name: Obter entrada
                     href: api/signin-get.md
+              - name: Provisionando logs
+                href: resources/provisioningobjectsummary.md
+                items:
+                  - name: Provisionamento de diretório de lista
+                    href: api/provisioningobjectsummary-list.md
           - name: Contratos
             href: resources/contract.md
             items:
@@ -7877,6 +7882,13 @@ items:
                     href: api/riskyusers-confirmcompromised.md
                   - name: Ignorar
                     href: api/riskyusers-dismiss.md
+          - name: Detecção de risco
+            href: resources/riskdetection.md
+            items:
+              - name: Listar detecções de riscos
+                href: api/riskdetection-list.md
+              - name: Obter a detecção de riscos
+                href: api/riskdetection-get.md
           - name: Provedor de identidade
             href: resources/identityprovider.md
             items:
