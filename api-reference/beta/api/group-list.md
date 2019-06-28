@@ -4,12 +4,12 @@ description: Lista todos os grupos disponíveis em uma organização, inclusive,
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 7024e456d672f1af49bd82c1b06c21ad57968f55
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 7bda59ff9417492d5001f4cc3c3fea2ceb3bf71d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236409"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263011"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -63,7 +63,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-return-a-list-of-group-objects"></a>Exemplo 1: Retorna uma lista de objetos group.
+### <a name="example-1-return-a-list-of-group-objects"></a>Exemplo 1: Retorna uma lista de objetos group
 
 #### <a name="request"></a>Solicitação
 
@@ -172,11 +172,13 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_groups-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_groups-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-### <a name="example-2-return-a-filtered-list-of-group-objects"></a>Exemplo 2: Retorna uma lista filtrada de objetos group. 
+### <a name="example-2-return-a-filtered-list-of-group-objects"></a>Exemplo 2: Retorna uma lista filtrada de objetos group 
 
 #### <a name="request"></a>Solicitação
 
@@ -227,6 +229,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -241,6 +245,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

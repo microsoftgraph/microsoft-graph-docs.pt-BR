@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: Recuperar itens de uma lista do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 6038b5d82ed91b94a9388689ba39c890f1dc4f6c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b3b41aceaad0251eeaf8c6339ef7f691abe1261c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613514"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271964"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 
@@ -91,6 +91,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-list-items-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-list-items-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -102,6 +104,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "ListItem/Enumerate",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/listitem-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/listitem-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
