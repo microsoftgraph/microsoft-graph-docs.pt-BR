@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 799abc4fa62eaeb813a5b109c7817acf8a8f2b59
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 065bb9e52477d06e05ae055e920821db6e9d9a7a
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236395"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348674"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,17 +18,19 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="june-2019"></a>Junho de 2019
 
+### <a name="identity-protection-apis"></a>Proteção de identidade
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição | beta | Adicionada a API [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta), que representa as detecções de risco na proteção de identidades do Azure AD. |
 
-### <a name="azure-ad-apis"></a>APIs do Azure AD
+
+### <a name="identity-and-access"></a>Identidade e acesso
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição        | Beta  | Apresentação do novo tipo de recurso [applicationTemplate](/graph/api/resources/applicationtemplate.md). Esse tipo de recurso dá suporte a [instanciar](/graph/api/applicationtemplate-instantiate.md), [listar](/graph/api/applicationtemplate-instantiate.md) e [obter](/graph/api/applicationtemplate-get.md) aplicativos da galeria do aplicativo Azure AD.|
-
-### <a name="directory-apis"></a>APIs de diretório
-
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
-| :-------------- | :---------- | :--------------------------------------- |
+| Adição | beta|Novos recursos adicionados: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [Iniciador](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
+| Adição |beta |Operação de [lista provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) adicionada</br>|                     |
 | Adição | v1.0 | Adicionada a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
 | Adição | v1.0 | Adicionada a ação [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) no recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
 
