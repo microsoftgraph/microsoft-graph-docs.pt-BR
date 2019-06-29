@@ -4,12 +4,12 @@ description: Retornar todos os grupos dos quais o usuário, grupo, entidade de s
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cc893a7d45adaf3b22c4bba9c85daf9b3ca523c8
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 2cf3755e7419541f0047cada5fc0ee85a0a57eba
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35260757"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395132"
 ---
 # <a name="get-member-groups"></a>Obter grupos de membros
 
@@ -23,9 +23,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
+|Delegado (conta corporativa ou de estudante) | User. ReadBasic. All e Group. Read. All, User. Read. All e Group. Read. All, Directory. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All |
+|Aplicativo | User.Read.All e Group.Read.All, Directory.Read.All |
+
+Use as orientações de cenário a seguir para ajudar a determinar quais tipos de permissão usar:
+- Use as permissões User. Read e Group. Read. All para obter associações de grupo para o usuário conectado.
+- Use as permissões User. ReadBasic. All e Group. Read. All ou User. Read. All e Group. Read. All para obter associações de grupo para qualquer usuário.
+- Use a permissão Group. Read. All para obter associações de grupo para um grupo.
+- Use as permissões Application. ReadWrite. All e Group. Read. All para obter associações de grupo para uma entidade de serviço.
+- Use a permissão Directory. Read. All para obter associações de grupo para um objeto de diretório.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

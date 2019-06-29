@@ -4,12 +4,12 @@ description: Retorne todos os grupos dos quais o usuário é membro. A verifica�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 60cc7819511816728dcd901d51174c75ba365f33
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b50a56dac343181f72a2c1eb102a1e609de15a21
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270326"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395188"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | User. ReadBasic. All e Group. Read. All, User. Read e Group. Read. All, User. Read. All e Group. Read. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                                                       |
-| Aplicativo                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
+| Aplicativo                            | User. Read. All e Group. Read. All, Directory. Read. All, Directory. ReadWrite. All            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

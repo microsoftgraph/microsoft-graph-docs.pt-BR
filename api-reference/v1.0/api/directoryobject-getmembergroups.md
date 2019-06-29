@@ -4,12 +4,12 @@ description: Retorna todos os grupos dos quais o usuário, grupo ou objeto de di
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0a4d216c23b52a539611e4e160e2236d66cc9ca3
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 599462c9589841fe5c49fddfbc6a6167e182ea77
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274869"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395153"
 ---
 # <a name="get-member-groups"></a>Obter grupos de membros
 
@@ -20,9 +20,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read.All e Group.Read.All, Directory.Read.All    |
+|Delegado (conta corporativa ou de estudante) | User. ReadBasic. All e Group. Read. All, User. Read. All e Group. Read. All, Directory. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All e Group.Read.All, Directory.Read.All |
+
+Use as orientações de cenário a seguir para ajudar a determinar quais tipos de permissão usar:
+- Use as permissões User. Read e Group. Read. All para obter associações de grupo para o usuário conectado.
+- Use as permissões User. ReadBasic. All e Group. Read. All ou User. Read. All e Group. Read. All para obter associações de grupo para qualquer usuário.
+- Use a permissão Group. Read. All para obter associações de grupo para um grupo.
+- Use a permissão Directory. Read. All para obter associações de grupo para um objeto de diretório.
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

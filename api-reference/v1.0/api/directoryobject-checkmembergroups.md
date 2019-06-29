@@ -4,12 +4,12 @@ description: Verificar se há associação em uma lista de grupos especificada e
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bc858afd18430635d991ce5e564b1a7c7976ad86
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: ad25e1e8925135bd5b9760f957d7c755061ad305
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35275590"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395167"
 ---
 # <a name="check-member-groups"></a>Verificar grupos de membros
 
@@ -20,9 +20,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read.All e Group.Read.All, Directory.Read.All    |
+|Delegado (conta corporativa ou de estudante) | User. ReadBasic. All e Group. Read. All, User. Read. All e Group. Read. All, Directory. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All e Group.Read.All, Directory.Read.All |
+
+Use as orientações de cenário a seguir para ajudar a determinar quais tipos de permissão usar:
+- Use as permissões User. Read e Group. Read. All para verificar as associações de grupo para o usuário conectado.
+- Use as permissões User. ReadBasic. All e Group. Read. All ou User. Read. All e Group. Read. All para verificar as associações de grupo para qualquer usuário.
+- Use a permissão Group. Read. All para verificar os membros do grupo para um grupo.
+- Use a permissão Directory. Read. All para verificar as associações de grupo para um objeto de diretório.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -4,12 +4,12 @@ description: Verifique se há associação na lista de grupos especificada. Reto
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 30cc5f43a0ca61b4ebae27854e53ee52180fad0b
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 524cfeff7a01de50d33224089557ecd62081dc77
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35263410"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395146"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -25,11 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
-| Application                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
-
-> **Observação:** esta API atualmente exige a permissão `Directory.Read.All` ou posterior. Usando a permissão `Group.Read.All` retornarão um erro. Este é um bug conhecido.
+| Application                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
