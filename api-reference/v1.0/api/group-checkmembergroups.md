@@ -4,12 +4,12 @@ description: Verifique se há associação na lista de grupos especificada. Reto
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 0c0b850857b094567ba04c8c701227a6dda742bc
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9d76df33ac36ef936a1abfa873332c3be3aa0650
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35275877"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395181"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -23,11 +23,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
-| Application                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
+| Aplicativo                            | Group. Read. All, Directory. Read. All. Directory.ReadWrite.All                               |
 
-> **Observação:** esta API atualmente exige o `Directory.Read.All` permissão ou posterior. Usando a permissão `Group.Read.All` retornarão um erro. Este é um bug conhecido.
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 

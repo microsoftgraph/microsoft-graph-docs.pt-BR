@@ -4,12 +4,12 @@ description: Retorne todos os grupos dos quais o usuário é membro. A verifica�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a99aca467e34d82025a45d5a898235f5cc7bf368
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 2871dd2bfcc2de54ddeead019a54598989c20e43
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277977"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395195"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     |  User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadBasic.All and Group.Read.All, User.Read and Group.Read.All,  User.Read.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                                                       |
-| Aplicativo                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
+| Aplicativo                            |  User.Read.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -4,12 +4,12 @@ description: Verifique se há associação na lista de grupos especificada. Reto
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb46306a7ea2298bec4abb9827d93787ca843f7e
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 171dffcb912c2ac26ecc3cd01388299228ca44db
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274638"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395160"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -23,11 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                                        |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | ~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, User.ReadWrite.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                     |
-| Aplicativo                            | ~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
-
-> **Observação:** Esta API atualmente exige a `Directory.Read.All` permissão ou posterior. Usar as permissões `User.Read.All` ou `User.ReadWrite.All` retornarão um erro. Este é um bug conhecido.
+| Aplicativo                            | User.Read.All and Group.Read.All, User.ReadWrite.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
