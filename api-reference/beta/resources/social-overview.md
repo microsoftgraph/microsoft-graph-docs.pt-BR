@@ -1,17 +1,17 @@
 ---
-title: Usar a API do Microsoft Graph para integrar a inteligência social em um aplicativo
+title: Usar a API do Microsoft Graph para integrar a inteligência social e do local de trabalho em um aplicativo
 description: O Microsoft Graph dá suporte a gestos sociais em um contexto social do usuário e fornece acesso a pessoas e dados sociais úteis.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 45482d2e47c97b6c09302ab60ff9c031cef1e92a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0118902f42984a541c750f34db945bc0e7ede5f2
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345676"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417672"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência social em um aplicativo
+# <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência social e do local de trabalho em um aplicativo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,6 +22,14 @@ O Microsoft Graph dá suporte a gestos sociais em um contexto social do usuário
 Use o recurso [person](../resources/person.md) e a API de Pessoas para agregar informações sobre uma pessoa provenientes de emails, contatos e redes sociais. Os resultados são ordenados por sua relevância com base em várias relações de comunicação, colaboração e comerciais. A API permite navegar, classificar, selecionar, filtrar ou procurar pessoas com base em critérios selecionados.
 
 - [Listar pessoas](../api/user-list-people.md)
+
+## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Ajudar os usuários a obter os documentos mais relevantes para seu trabalho
+
+Usar a API insights para identificar os documentos mais relevantes para o usuário: 
+
+- Listar documentos [mais populares](../api/insights-list-trending.md) de um usuário
+- Listar documentos [usados por](../api/insights-list-used.md) um usuário
+- Listar documentos [compartilhados com ou por](../api/insights-list-shared.md) um usuário
 
 ## <a name="manage--mentions"></a>Gerenciar as @menções
 
@@ -47,9 +55,3 @@ Include the next sentence when supporting events.
 
 - [Excluir uma menção](../api/message-delete.md#request-2) em uma mensagem
 
-## <a name="access-social-data-around-and-about-a-user"></a>Acessar dados sociais em torno e sobre um usuário
-
-O Office Graph encapsula as relações entre diferentes entidades no Office 365. Use o Office Graph para obter informações sociais sobre usuários individuais no Office 365.
-
-- Listar os itens de [tendência em torno](../api/insights-list-trending.md) de um usuário
-- Listar usuários que têm [trabalhado com](../api/user-list-people.md) um usuário
