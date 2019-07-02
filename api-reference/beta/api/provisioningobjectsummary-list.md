@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: abae4feb7f68097b828ac4989561c168c81b3491
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: a165ea63e5f2a5c99ba0f76702b0bd266bcd3835
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349335"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417756"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
@@ -51,15 +51,12 @@ Para obter informações gerais, confira [parâmetros de consulta OData](/graph/
 |Nome do atributo |Operadores com suporte|
 |:----------------|:------|
 |id| EQ, contém|
-|activityDateTime| EQ, contém|
+|activityDateTime| eq|
 |tenantid|EQ, contém|
 |ID|EQ, contém|
 |ChangeId|EQ, contém|
 |cycleid|EQ, contém|
 |ação|EQ, contém|
-|modifiedproperty/DisplayName| EQ, contém|
-|modifiedproperty/oldValue| EQ, contém|
-|modifiedproperty/newValue| EQ, contém|
 |statusInfo/status|EQ, contém|
 |sourceSystem/displayName|EQ, contém|
 |targetSystem/displayName|EQ, contém|

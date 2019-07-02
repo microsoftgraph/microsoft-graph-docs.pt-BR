@@ -4,12 +4,12 @@ description: 'Obtenha a coleção de pastas sob a pasta especificada. Você pode
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 68d85a6430d72222ffdcf52795c9fec3d0a11f2e
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 275f7bcd771db43f5d091848d9be8c50c6ddb124
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266882"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417725"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Mail.Read, Mail.ReadWrite           |
-| Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite           |
+| Delegado (conta corporativa ou de estudante)     | Mail. ReadBasic, mail. Read, mail. ReadWrite           |
+| Delegado (conta pessoal da Microsoft) | Mail. ReadBasic, mail. Read, mail. ReadWrite           |
 | Aplicativo                            | Mail.Read, Mail.ReadWrite           |
 
 ## <a name="http-request"></a>Solicitação HTTP
