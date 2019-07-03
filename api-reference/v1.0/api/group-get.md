@@ -4,61 +4,63 @@ description: Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: bb1078f5d2d15a2c58e39a98dd6794053f8ade76
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: ef0a798833f00188cb92310ee4f56e5749320a2a
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35273560"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35460865"
 ---
-# <a name="get-group"></a><span data-ttu-id="29c55-103">Obter grupo</span><span class="sxs-lookup"><span data-stu-id="29c55-103">Get group</span></span>
+# <a name="get-group"></a><span data-ttu-id="0b507-103">Obter grupo</span><span class="sxs-lookup"><span data-stu-id="0b507-103">Get group</span></span>
 
-<span data-ttu-id="29c55-104">Obtenha as propriedades e os relacionamentos de um objeto de grupo.</span><span class="sxs-lookup"><span data-stu-id="29c55-104">Get the properties and relationships of a group object.</span></span>
+<span data-ttu-id="0b507-104">Obtenha as propriedades e os relacionamentos de um objeto de grupo.</span><span class="sxs-lookup"><span data-stu-id="0b507-104">Get the properties and relationships of a group object.</span></span>
 
-<span data-ttu-id="29c55-105">Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="29c55-105">This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="29c55-106">Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.</span><span class="sxs-lookup"><span data-stu-id="29c55-106">To get properties that are _not_ returned by default, specify them in a `$select` OData query option.</span></span> <span data-ttu-id="29c55-107">A propriedade **hasMembersWithLicenseErrors** é uma exceção e ela não é retornada na consulta `$select`.</span><span class="sxs-lookup"><span data-stu-id="29c55-107">The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.</span></span>
+<span data-ttu-id="0b507-105">Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="0b507-105">This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="0b507-106">Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.</span><span class="sxs-lookup"><span data-stu-id="0b507-106">To get properties that are _not_ returned by default, specify them in a `$select` OData query option.</span></span> <span data-ttu-id="0b507-107">A propriedade **hasMembersWithLicenseErrors** é uma exceção e ela não é retornada na consulta `$select`.</span><span class="sxs-lookup"><span data-stu-id="0b507-107">The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="29c55-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="29c55-108">Permissions</span></span>
-<span data-ttu-id="29c55-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29c55-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0b507-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="0b507-108">Permissions</span></span>
+<span data-ttu-id="0b507-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0b507-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="29c55-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="29c55-111">Permission type</span></span>      | <span data-ttu-id="29c55-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="29c55-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0b507-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0b507-111">Permission type</span></span>      | <span data-ttu-id="0b507-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0b507-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="29c55-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="29c55-113">Delegated (work or school account)</span></span> | <span data-ttu-id="29c55-114">Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="29c55-114">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
-|<span data-ttu-id="29c55-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="29c55-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29c55-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="29c55-116">Not supported.</span></span>    |
-|<span data-ttu-id="29c55-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="29c55-117">Application</span></span> | <span data-ttu-id="29c55-118">Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29c55-118">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="0b507-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0b507-113">Delegated (work or school account)</span></span> | <span data-ttu-id="0b507-114">Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0b507-114">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
+|<span data-ttu-id="0b507-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0b507-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b507-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0b507-116">Not supported.</span></span>    |
+|<span data-ttu-id="0b507-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0b507-117">Application</span></span> | <span data-ttu-id="0b507-118">Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0b507-118">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-><span data-ttu-id="29c55-119">**Observação:** dependendo dos recursos de grupo que você está tentando acessar, as permissões podem ser limitadas.</span><span class="sxs-lookup"><span data-stu-id="29c55-119">**Note:** Depending on the group features you're trying to access, permissions might be limited.</span></span> <span data-ttu-id="29c55-120">Para obter mais informações, consulte a seção [Grupos](/graph/known-issues#groups) em [Problemas conhecidos com o Microsoft Graph](/graph/known-issues).</span><span class="sxs-lookup"><span data-stu-id="29c55-120">For more information, see the [Groups](/graph/known-issues#groups) section in [Known issues with Microsoft Graph](/graph/known-issues).</span></span>
+><span data-ttu-id="0b507-119">**Observação:** dependendo dos recursos de grupo que você está tentando acessar, as permissões podem ser limitadas.</span><span class="sxs-lookup"><span data-stu-id="0b507-119">**Note:** Depending on the group features you're trying to access, permissions might be limited.</span></span> <span data-ttu-id="0b507-120">Para obter mais informações, consulte a seção [Grupos](/graph/known-issues#groups) em [Problemas conhecidos com o Microsoft Graph](/graph/known-issues).</span><span class="sxs-lookup"><span data-stu-id="0b507-120">For more information, see the [Groups](/graph/known-issues#groups) section in [Known issues with Microsoft Graph](/graph/known-issues).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="29c55-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="29c55-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0b507-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0b507-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="29c55-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="29c55-122">Optional query parameters</span></span>
-<span data-ttu-id="29c55-123">É possível usar a opção de consulta `$select` para obter propriedades específicas do grupo, inclusive aquelas que não são retornadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="29c55-123">You can use `$select` to get specific group properties, including those that are not returned by default.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0b507-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0b507-122">Optional query parameters</span></span>
+<span data-ttu-id="0b507-123">É possível usar a opção de consulta `$select` para obter propriedades específicas do grupo, inclusive aquelas que não são retornadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="0b507-123">You can use `$select` to get specific group properties, including those that are not returned by default.</span></span>
 
-<span data-ttu-id="29c55-124">Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="29c55-124">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="0b507-124">Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="0b507-124">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="29c55-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="29c55-125">Request headers</span></span>
-| <span data-ttu-id="29c55-126">Nome</span><span class="sxs-lookup"><span data-stu-id="29c55-126">Name</span></span>       | <span data-ttu-id="29c55-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="29c55-127">Type</span></span> | <span data-ttu-id="29c55-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="29c55-128">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0b507-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0b507-125">Request headers</span></span>
+| <span data-ttu-id="0b507-126">Nome</span><span class="sxs-lookup"><span data-stu-id="0b507-126">Name</span></span>       | <span data-ttu-id="0b507-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="0b507-127">Type</span></span> | <span data-ttu-id="0b507-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="0b507-128">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="29c55-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="29c55-129">Authorization</span></span>  | <span data-ttu-id="29c55-130">string</span><span class="sxs-lookup"><span data-stu-id="29c55-130">string</span></span>  | <span data-ttu-id="29c55-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="29c55-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0b507-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="0b507-129">Authorization</span></span>  | <span data-ttu-id="0b507-130">string</span><span class="sxs-lookup"><span data-stu-id="0b507-130">string</span></span>  | <span data-ttu-id="0b507-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0b507-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="29c55-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="29c55-133">Request body</span></span>
-<span data-ttu-id="29c55-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="29c55-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0b507-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0b507-133">Request body</span></span>
+<span data-ttu-id="0b507-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0b507-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="29c55-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="29c55-135">Response</span></span>
-<span data-ttu-id="29c55-136">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [group](../resources/group.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="29c55-136">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="29c55-137">Retorna as propriedades padrão, a menos que você use `$select` para especificar as propriedades específicas.</span><span class="sxs-lookup"><span data-stu-id="29c55-137">It returns the default properties unless you use `$select` to specify specific properties.</span></span>
+## <a name="response"></a><span data-ttu-id="0b507-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="0b507-135">Response</span></span>
+<span data-ttu-id="0b507-136">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [group](../resources/group.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0b507-136">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="0b507-137">Retorna as propriedades padrão, a menos que você use `$select` para especificar as propriedades específicas.</span><span class="sxs-lookup"><span data-stu-id="0b507-137">It returns the default properties unless you use `$select` to specify specific properties.</span></span>
 
-## <a name="example"></a><span data-ttu-id="29c55-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="29c55-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0b507-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0b507-138">Example</span></span>
 
-### <a name="example-1-return-all-default-properties"></a><span data-ttu-id="29c55-139">Exemplo 1: Retornar todas as propriedades padrão</span><span class="sxs-lookup"><span data-stu-id="29c55-139">Example 1: Return all default properties</span></span>
+### <a name="example-1-return-all-default-properties"></a><span data-ttu-id="0b507-139">Exemplo 1: Retornar todas as propriedades padrão</span><span class="sxs-lookup"><span data-stu-id="0b507-139">Example 1: Return all default properties</span></span>
 
-<span data-ttu-id="29c55-140">Retornar todas as propriedades padrão.</span><span class="sxs-lookup"><span data-stu-id="29c55-140">Return all default properties.</span></span>
+<span data-ttu-id="0b507-140">Retornar todas as propriedades padrão.</span><span class="sxs-lookup"><span data-stu-id="0b507-140">Return all default properties.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="29c55-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="29c55-141">Request</span></span> 
+#### <a name="request"></a><span data-ttu-id="0b507-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0b507-141">Request</span></span> 
 
-<span data-ttu-id="29c55-142">Veja a seguir um exemplo de solicitação GET.</span><span class="sxs-lookup"><span data-stu-id="29c55-142">The following is an example of a GET request.</span></span> 
+<span data-ttu-id="0b507-142">Veja a seguir um exemplo de solicitação GET.</span><span class="sxs-lookup"><span data-stu-id="0b507-142">The following is an example of a GET request.</span></span> 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="0b507-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="0b507-143">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
@@ -67,11 +69,25 @@ GET /groups/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="0b507-144">C#</span><span class="sxs-lookup"><span data-stu-id="0b507-144">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="29c55-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="29c55-143">Response</span></span>
-<span data-ttu-id="29c55-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="29c55-144">The following is an example of the response.</span></span> <span data-ttu-id="29c55-145">Ele inclui apenas as propriedades padrão.</span><span class="sxs-lookup"><span data-stu-id="29c55-145">It includes only the default properties.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0b507-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="0b507-145">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="29c55-146">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="29c55-146">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="29c55-147">Todas as propriedades padrão serão retornadas em uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="29c55-147">All the default properties are returned in an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0b507-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0b507-146">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="0b507-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="0b507-147">Response</span></span>
+<span data-ttu-id="0b507-148">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0b507-148">The following is an example of the response.</span></span> <span data-ttu-id="0b507-149">Ele inclui apenas as propriedades padrão.</span><span class="sxs-lookup"><span data-stu-id="0b507-149">It includes only the default properties.</span></span>
+
+><span data-ttu-id="0b507-150">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0b507-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0b507-151">Todas as propriedades padrão serão retornadas em uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0b507-151">All the default properties are returned in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -114,28 +130,17 @@ Content-type: application/json
 }
 ```
 
-#### <a name="sdk-sample-code"></a><span data-ttu-id="29c55-148">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="29c55-148">SDK sample code</span></span>
 
-# <a name="ctabcs"></a>[<span data-ttu-id="29c55-149">C#</span><span class="sxs-lookup"><span data-stu-id="29c55-149">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
+### <a name="example-2-return-additional-properties-by-using-select"></a><span data-ttu-id="0b507-152">Exemplo 2: Retornar propriedades adicionais usando $select</span><span class="sxs-lookup"><span data-stu-id="0b507-152">Example 2: Return additional properties by using $select</span></span>
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="29c55-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="29c55-150">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_group-Javascript-snippets.md)]
+<span data-ttu-id="0b507-153">Retornar propriedades adicionais usando `$select`.</span><span class="sxs-lookup"><span data-stu-id="0b507-153">Return additional properties by using `$select`.</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="29c55-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="29c55-151">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_group-Objective-C-snippets.md)]
----
+#### <a name="request"></a><span data-ttu-id="0b507-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0b507-154">Request</span></span>
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<span data-ttu-id="0b507-155">Veja a seguir um exemplo de solicitação GET.</span><span class="sxs-lookup"><span data-stu-id="0b507-155">The following is an example of a GET request.</span></span>
 
-### <a name="example-2-return-additional-properties-by-using-select"></a><span data-ttu-id="29c55-152">Exemplo 2: Retornar propriedades adicionais usando $select</span><span class="sxs-lookup"><span data-stu-id="29c55-152">Example 2: Return additional properties by using $select</span></span>
 
-<span data-ttu-id="29c55-153">Retornar propriedades adicionais usando `$select`.</span><span class="sxs-lookup"><span data-stu-id="29c55-153">Return additional properties by using `$select`.</span></span>
-
-#### <a name="request"></a><span data-ttu-id="29c55-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="29c55-154">Request</span></span>
-
-<span data-ttu-id="29c55-155">Veja a seguir um exemplo de solicitação GET.</span><span class="sxs-lookup"><span data-stu-id="29c55-155">The following is an example of a GET request.</span></span>
-
+# <a name="httptabhttp"></a>[<span data-ttu-id="0b507-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="0b507-156">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
@@ -144,10 +149,24 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="0b507-157">C#</span><span class="sxs-lookup"><span data-stu-id="0b507-157">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-non-default-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="29c55-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="29c55-156">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0b507-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="0b507-158">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-non-default-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="29c55-157">Veja a seguir o exemplo de uma resposta que inclui as propriedades solicitadas não retornadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="29c55-157">The following is an example of the response which includes the requested non-default properties.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0b507-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0b507-159">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-non-default-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="0b507-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="0b507-160">Response</span></span>
+
+<span data-ttu-id="0b507-161">Veja a seguir o exemplo de uma resposta que inclui as propriedades solicitadas não retornadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="0b507-161">The following is an example of the response which includes the requested non-default properties.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -169,19 +188,6 @@ Content-type: application/json
 }
 ```
 
-#### <a name="sdk-sample-code"></a><span data-ttu-id="29c55-158">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="29c55-158">SDK sample code</span></span>
-
-# <a name="ctabcs"></a>[<span data-ttu-id="29c55-159">C#</span><span class="sxs-lookup"><span data-stu-id="29c55-159">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_group_non_default-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="29c55-160">Javascript</span><span class="sxs-lookup"><span data-stu-id="29c55-160">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_group_non_default-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="29c55-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="29c55-161">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_group_non_default-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -192,10 +198,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -5,109 +5,137 @@ ms.date: 09/10/2017
 title: Listar unidades
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: ae97b3aecea005b06748874e5f4c527b934ea2a7
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 21c811e501116c8865686a9f5efb379e3631c229
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35272881"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35458506"
 ---
-# <a name="list-available-drives"></a><span data-ttu-id="121de-102">Listar as unidades disponíveis</span><span class="sxs-lookup"><span data-stu-id="121de-102">List available drives</span></span>
+# <a name="list-available-drives"></a><span data-ttu-id="ff765-102">Listar as unidades disponíveis</span><span class="sxs-lookup"><span data-stu-id="ff765-102">List available drives</span></span>
 
-<span data-ttu-id="121de-103">Recupera a lista de recursos [Drive](../resources/drive.md) disponíveis para um User, Group ou [Site](../resources/site.md) de destino.</span><span class="sxs-lookup"><span data-stu-id="121de-103">Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).</span></span>
+<span data-ttu-id="ff765-103">Recupera a lista de recursos [Drive](../resources/drive.md) disponíveis para um User, Group ou [Site](../resources/site.md) de destino.</span><span class="sxs-lookup"><span data-stu-id="ff765-103">Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="121de-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="121de-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ff765-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="ff765-104">Permissions</span></span>
 
-<span data-ttu-id="121de-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="121de-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ff765-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ff765-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="121de-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="121de-107">Permission type</span></span>      | <span data-ttu-id="121de-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="121de-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ff765-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ff765-107">Permission type</span></span>      | <span data-ttu-id="ff765-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ff765-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="121de-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="121de-109">Delegated (work or school account)</span></span> | <span data-ttu-id="121de-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="121de-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="121de-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="121de-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="121de-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="121de-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="121de-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="121de-113">Application</span></span> | <span data-ttu-id="121de-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="121de-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ff765-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ff765-109">Delegated (work or school account)</span></span> | <span data-ttu-id="ff765-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff765-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ff765-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ff765-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff765-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff765-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ff765-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ff765-113">Application</span></span> | <span data-ttu-id="ff765-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff765-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="list-a-groups-drives"></a><span data-ttu-id="121de-115">Lista as unidades de um grupo</span><span class="sxs-lookup"><span data-stu-id="121de-115">List a group's drives</span></span>
+## <a name="list-a-groups-drives"></a><span data-ttu-id="ff765-115">Lista as unidades de um grupo</span><span class="sxs-lookup"><span data-stu-id="ff765-115">List a group's drives</span></span>
 
-<span data-ttu-id="121de-116">Para listar as bibliotecas de documentos de um grupo, seu aplicativo solicita a relação de **unidades** no Grupo.</span><span class="sxs-lookup"><span data-stu-id="121de-116">To list the document libraries for a group, your app requests the **drives** relationship on the Group.</span></span>
+<span data-ttu-id="ff765-116">Para listar as bibliotecas de documentos de um grupo, seu aplicativo solicita a relação de **unidades** no Grupo.</span><span class="sxs-lookup"><span data-stu-id="ff765-116">To list the document libraries for a group, your app requests the **drives** relationship on the Group.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="121de-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="121de-117">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="ff765-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ff765-117">HTTP request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="ff765-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff765-118">--Http</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drives
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="121de-118">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="121de-118">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="121de-119">C#</span><span class="sxs-lookup"><span data-stu-id="121de-119">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/group-list-drives-Cs-snippets.md)]
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ff765-119">C#</span><span class="sxs-lookup"><span data-stu-id="ff765-119">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-list-drives-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="121de-120">Javascript</span><span class="sxs-lookup"><span data-stu-id="121de-120">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/group-list-drives-Javascript-snippets.md)]
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ff765-120">Javascript</span><span class="sxs-lookup"><span data-stu-id="ff765-120">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-list-drives-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="121de-121">Objective-C</span><span class="sxs-lookup"><span data-stu-id="121de-121">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/group-list-drives-Objective-C-snippets.md)]
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ff765-121">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff765-121">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/group-list-drives-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="list-a-sites-drives"></a><span data-ttu-id="121de-122">Lista as unidades do site</span><span class="sxs-lookup"><span data-stu-id="121de-122">List a site's drives</span></span>
+## <a name="list-a-sites-drives"></a><span data-ttu-id="ff765-122">Lista as unidades do site</span><span class="sxs-lookup"><span data-stu-id="ff765-122">List a site's drives</span></span>
 
-<span data-ttu-id="121de-123">Para listar as bibliotecas de documentos de um site, seu aplicativo solicita a relação de **unidades** no Site.</span><span class="sxs-lookup"><span data-stu-id="121de-123">To list the document libraries for a site, your app requests the **drives** relationship on the Site.</span></span>
+<span data-ttu-id="ff765-123">Para listar as bibliotecas de documentos de um site, seu aplicativo solicita a relação de **unidades** no Site.</span><span class="sxs-lookup"><span data-stu-id="ff765-123">To list the document libraries for a site, your app requests the **drives** relationship on the Site.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="ff765-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff765-124">--Http</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /sites/{siteId}/drives
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="121de-124">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="121de-124">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="121de-125">C#</span><span class="sxs-lookup"><span data-stu-id="121de-125">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/site-list-drives-Cs-snippets.md)]
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ff765-125">C#</span><span class="sxs-lookup"><span data-stu-id="ff765-125">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/site-list-drives-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="121de-126">Javascript</span><span class="sxs-lookup"><span data-stu-id="121de-126">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/site-list-drives-Javascript-snippets.md)]
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ff765-126">Javascript</span><span class="sxs-lookup"><span data-stu-id="ff765-126">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/site-list-drives-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="121de-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="121de-127">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/site-list-drives-Objective-C-snippets.md)]
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ff765-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff765-127">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/site-list-drives-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="list-a-users-drives"></a><span data-ttu-id="121de-128">Lista as unidades de um usuário</span><span class="sxs-lookup"><span data-stu-id="121de-128">List a user's drives</span></span>
+## <a name="list-a-users-drives"></a><span data-ttu-id="ff765-128">Lista as unidades de um usuário</span><span class="sxs-lookup"><span data-stu-id="ff765-128">List a user's drives</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="ff765-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff765-129">--Http</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /users/{userId}/drives
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="121de-129">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="121de-129">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="121de-130">C#</span><span class="sxs-lookup"><span data-stu-id="121de-130">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/user-list-drives-Cs-snippets.md)]
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ff765-130">C#</span><span class="sxs-lookup"><span data-stu-id="ff765-130">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-drives-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="121de-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="121de-131">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user-list-drives-Javascript-snippets.md)]
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ff765-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="ff765-131">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-drives-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="121de-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="121de-132">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/user-list-drives-Objective-C-snippets.md)]
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ff765-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff765-132">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-list-drives-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="list-the-current-users-drives"></a><span data-ttu-id="121de-133">Lista as unidades do usuário atual</span><span class="sxs-lookup"><span data-stu-id="121de-133">List the current user's drives</span></span>
+## <a name="list-the-current-users-drives"></a><span data-ttu-id="ff765-133">Lista as unidades do usuário atual</span><span class="sxs-lookup"><span data-stu-id="ff765-133">List the current user's drives</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="ff765-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff765-134">--Http</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drives
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ff765-135">C#</span><span class="sxs-lookup"><span data-stu-id="ff765-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/enum-drives-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="121de-134">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="121de-134">Optional query parameters</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ff765-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="ff765-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/enum-drives-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="121de-135">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` e `$orderby` para personalizar as resposta.</span><span class="sxs-lookup"><span data-stu-id="121de-135">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ff765-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff765-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/enum-drives-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-## <a name="response"></a><span data-ttu-id="121de-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="121de-136">Response</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ff765-138">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="ff765-138">Optional query parameters</span></span>
 
-<span data-ttu-id="121de-137">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Drive](../resources/drive.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="121de-137">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
+<span data-ttu-id="ff765-139">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` e `$orderby` para personalizar as resposta.</span><span class="sxs-lookup"><span data-stu-id="ff765-139">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+
+
+## <a name="response"></a><span data-ttu-id="ff765-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="ff765-140">Response</span></span>
+
+<span data-ttu-id="ff765-141">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Drive](../resources/drive.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ff765-141">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.drive)",
@@ -145,27 +173,15 @@ Content-Type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="121de-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="121de-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="121de-139">C#</span><span class="sxs-lookup"><span data-stu-id="121de-139">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/enum-drives-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="121de-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="121de-140">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/enum-drives-Javascript-snippets.md)]
+## <a name="remarks"></a><span data-ttu-id="ff765-142">Comentários</span><span class="sxs-lookup"><span data-stu-id="ff765-142">Remarks</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="121de-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="121de-141">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/enum-drives-Objective-C-snippets.md)]
----
+<span data-ttu-id="ff765-143">A maioria dos usuários só terá um único recurso Drive.</span><span class="sxs-lookup"><span data-stu-id="ff765-143">Most users will only have a single Drive resource.</span></span>
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<span data-ttu-id="ff765-144">Grupos e Sites podem ter vários recursos de unidade disponíveis.</span><span class="sxs-lookup"><span data-stu-id="ff765-144">Groups and Sites may have multiple Drive resources available.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="121de-142">Comentários</span><span class="sxs-lookup"><span data-stu-id="121de-142">Remarks</span></span>
-
-<span data-ttu-id="121de-143">A maioria dos usuários só terá um único recurso Drive.</span><span class="sxs-lookup"><span data-stu-id="121de-143">Most users will only have a single Drive resource.</span></span>
-
-<span data-ttu-id="121de-144">Grupos e Sites podem ter vários recursos de unidade disponíveis.</span><span class="sxs-lookup"><span data-stu-id="121de-144">Groups and Sites may have multiple Drive resources available.</span></span>
-
-<span data-ttu-id="121de-145">Unidades com a faceta [sistema][] estão ocultas por padrão.</span><span class="sxs-lookup"><span data-stu-id="121de-145">Drives with the [system][] facet are hidden by default.</span></span>
-<span data-ttu-id="121de-146">Para listá-los, inclua `system` na instrução `$select`.</span><span class="sxs-lookup"><span data-stu-id="121de-146">To list them, include `system` in your `$select` statement.</span></span>
+<span data-ttu-id="ff765-145">Unidades com a faceta [sistema][] estão ocultas por padrão.</span><span class="sxs-lookup"><span data-stu-id="ff765-145">Drives with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="ff765-146">Para listá-los, inclua `system` na instrução `$select`.</span><span class="sxs-lookup"><span data-stu-id="ff765-146">To list them, include `system` in your `$select` statement.</span></span>
 
 [system]: ../resources/systemfacet.md
 
@@ -176,14 +192,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "Drives/List drives",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/drive-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/drive-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/drive-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/drive-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/drive-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/drive-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/drive-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/drive-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/drive-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->
