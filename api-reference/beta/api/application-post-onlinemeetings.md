@@ -4,53 +4,55 @@ description: Cria uma reunião online em nome de um usuário específico no corp
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: bd4d68a5e93e9b1b0afe91129d83e40135e79cbf
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b136f53a15e5a8d47bee8d2d9a73a92c937e864f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35258426"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35439606"
 ---
-# <a name="create-online-meeting"></a><span data-ttu-id="e99c6-103">Criar reunião online</span><span class="sxs-lookup"><span data-stu-id="e99c6-103">Create online meeting</span></span>
+# <a name="create-online-meeting"></a><span data-ttu-id="ea7a5-103">Criar reunião online</span><span class="sxs-lookup"><span data-stu-id="ea7a5-103">Create online meeting</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e99c6-104">Cria uma reunião online em nome de um usuário específico no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e99c6-104">Creates an online meeting on behalf of a user specified in the request body.</span></span>
+<span data-ttu-id="ea7a5-104">Cria uma reunião online em nome de um usuário específico no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ea7a5-104">Creates an online meeting on behalf of a user specified in the request body.</span></span>
 
-> <span data-ttu-id="e99c6-105">**Observação**: a reunião não é exibida no calendário do usuário.</span><span class="sxs-lookup"><span data-stu-id="e99c6-105">**Note**: The meeting does not show on the user's calendar.</span></span>
+> <span data-ttu-id="ea7a5-105">**Observação**: a reunião não é exibida no calendário do usuário.</span><span class="sxs-lookup"><span data-stu-id="ea7a5-105">**Note**: The meeting does not show on the user's calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e99c6-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e99c6-106">Permissions</span></span>
-<span data-ttu-id="e99c6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e99c6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ea7a5-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ea7a5-106">Permissions</span></span>
+<span data-ttu-id="ea7a5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea7a5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e99c6-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e99c6-109">Permission type</span></span>                        | <span data-ttu-id="e99c6-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e99c6-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ea7a5-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ea7a5-109">Permission type</span></span>                        | <span data-ttu-id="ea7a5-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ea7a5-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="e99c6-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e99c6-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="e99c6-112">Não suportado</span><span class="sxs-lookup"><span data-stu-id="e99c6-112">Not Supported</span></span>                               |
-| <span data-ttu-id="e99c6-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e99c6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e99c6-114">Não suportado</span><span class="sxs-lookup"><span data-stu-id="e99c6-114">Not Supported</span></span>                               |
-| <span data-ttu-id="e99c6-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e99c6-115">Application</span></span>                            | <span data-ttu-id="e99c6-116">OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e99c6-116">OnlineMeetings.ReadWrite.All</span></span>                |
+| <span data-ttu-id="ea7a5-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ea7a5-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ea7a5-112">Não suportado</span><span class="sxs-lookup"><span data-stu-id="ea7a5-112">Not Supported</span></span>                               |
+| <span data-ttu-id="ea7a5-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ea7a5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea7a5-114">Não suportado</span><span class="sxs-lookup"><span data-stu-id="ea7a5-114">Not Supported</span></span>                               |
+| <span data-ttu-id="ea7a5-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ea7a5-115">Application</span></span>                            | <span data-ttu-id="ea7a5-116">OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea7a5-116">OnlineMeetings.ReadWrite.All</span></span>                |
 
-## <a name="http-request"></a><span data-ttu-id="e99c6-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e99c6-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ea7a5-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ea7a5-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/onlineMeetings
 POST /applications/{id}/onlineMeetings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e99c6-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e99c6-118">Request headers</span></span>
-| <span data-ttu-id="e99c6-119">Nome</span><span class="sxs-lookup"><span data-stu-id="e99c6-119">Name</span></span>          | <span data-ttu-id="e99c6-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="e99c6-120">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="ea7a5-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ea7a5-118">Request headers</span></span>
+| <span data-ttu-id="ea7a5-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ea7a5-119">Name</span></span>          | <span data-ttu-id="ea7a5-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ea7a5-120">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="e99c6-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="e99c6-121">Authorization</span></span> | <span data-ttu-id="e99c6-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e99c6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ea7a5-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ea7a5-121">Authorization</span></span> | <span data-ttu-id="ea7a5-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ea7a5-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e99c6-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e99c6-124">Request body</span></span>
-<span data-ttu-id="e99c6-125">No corpo da solicitação, forneça uma representação JSON de um objeto [onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="e99c6-125">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ea7a5-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ea7a5-124">Request body</span></span>
+<span data-ttu-id="ea7a5-125">No corpo da solicitação, forneça uma representação JSON de um objeto [onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="ea7a5-125">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e99c6-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="e99c6-126">Response</span></span>
-<span data-ttu-id="e99c6-127">Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e99c6-127">If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ea7a5-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea7a5-126">Response</span></span>
+<span data-ttu-id="ea7a5-127">Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ea7a5-127">If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e99c6-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e99c6-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ea7a5-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ea7a5-128">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e99c6-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e99c6-129">Request</span></span>
-<span data-ttu-id="e99c6-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="e99c6-130">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="ea7a5-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ea7a5-129">Request</span></span>
+<span data-ttu-id="ea7a5-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="ea7a5-130">The following example shows the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="ea7a5-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea7a5-131">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-onlinemeeting-from-application"
@@ -74,12 +76,26 @@ Content-Length: 1553
   "subject": "subject-value"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ea7a5-132">C#</span><span class="sxs-lookup"><span data-stu-id="ea7a5-132">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-from-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="e99c6-131">No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="e99c6-131">In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ea7a5-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="ea7a5-133">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-from-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="e99c6-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="e99c6-132">Response</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ea7a5-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ea7a5-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-from-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="e99c6-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e99c6-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+---
+
+
+<span data-ttu-id="ea7a5-135">No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="ea7a5-135">In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+
+##### <a name="response"></a><span data-ttu-id="ea7a5-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea7a5-136">Response</span></span>
+
+><span data-ttu-id="ea7a5-p103">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ea7a5-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -130,18 +146,6 @@ Content-Length: 1574
   "subject": "Quarterly sales numbers"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="e99c6-135">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="e99c6-135">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="e99c6-136">C#</span><span class="sxs-lookup"><span data-stu-id="e99c6-136">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-onlinemeeting-from-application-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e99c6-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="e99c6-137">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-onlinemeeting-from-application-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="e99c6-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e99c6-138">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create-onlinemeeting-from-application-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -153,9 +157,6 @@ Content-Length: 1574
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
