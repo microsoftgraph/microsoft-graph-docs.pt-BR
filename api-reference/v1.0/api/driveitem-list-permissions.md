@@ -5,36 +5,36 @@ ms.date: 09/10/2017
 title: Listar quem tem acesso a um arquivo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0cb68d148b3b7fd93f1a3c59b11f6eb003d30f5b
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9613db58232e95eda11f0117b363304d9d9cccfc
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35272839"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35445412"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a><span data-ttu-id="a0518-102">Listar permissões de compartilhamento em um DriveItem</span><span class="sxs-lookup"><span data-stu-id="a0518-102">List sharing permissions on a DriveItem</span></span>
+# <a name="list-sharing-permissions-on-a-driveitem"></a><span data-ttu-id="9f861-102">Listar permissões de compartilhamento em um DriveItem</span><span class="sxs-lookup"><span data-stu-id="9f861-102">List sharing permissions on a DriveItem</span></span>
 
-<span data-ttu-id="a0518-103">Liste as permissões efetivas de compartilhamento de um [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="a0518-103">List the effective sharing permissions of on a [DriveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="9f861-103">Liste as permissões efetivas de compartilhamento de um [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="9f861-103">List the effective sharing permissions of on a [DriveItem](../resources/driveitem.md).</span></span>
 
-## <a name="access-to-sharing-permissions"></a><span data-ttu-id="a0518-104">Acessar permissões de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="a0518-104">Access to sharing permissions</span></span>
+## <a name="access-to-sharing-permissions"></a><span data-ttu-id="9f861-104">Acessar permissões de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="9f861-104">Access to sharing permissions</span></span>
 
-<span data-ttu-id="a0518-105">A coleção de permissões inclui informações potencialmente confidenciais e pode não estar disponível para todos os chamadores.</span><span class="sxs-lookup"><span data-stu-id="a0518-105">The permissions collection includes potentially sensitive information and may not be available for every caller.</span></span>
+<span data-ttu-id="9f861-105">A coleção de permissões inclui informações potencialmente confidenciais e pode não estar disponível para todos os chamadores.</span><span class="sxs-lookup"><span data-stu-id="9f861-105">The permissions collection includes potentially sensitive information and may not be available for every caller.</span></span>
 
-* <span data-ttu-id="a0518-106">Para o proprietário do item, todas as permissões de compartilhamento serão retornadas.</span><span class="sxs-lookup"><span data-stu-id="a0518-106">For the owner of the item, all sharing permissions will be returned.</span></span> <span data-ttu-id="a0518-107">Isto inclui os coproprietários.</span><span class="sxs-lookup"><span data-stu-id="a0518-107">This includes co-owners.</span></span>
-* <span data-ttu-id="a0518-108">Para um chamador não proprietário, somente as permissões de compartilhamento que se aplicam ao chamador são retornadas.</span><span class="sxs-lookup"><span data-stu-id="a0518-108">For a non-owner caller, only the sharing permissions that apply to the caller are returned.</span></span>
-* <span data-ttu-id="a0518-109">Propriedades de permissão de compartilhamento que contêm segredos (por exemplo, `shareId` e `webUrl`) são retornadas somente para chamadores que são capazes de criar a permissão de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="a0518-109">Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.</span></span>
+* <span data-ttu-id="9f861-106">Para o proprietário do item, todas as permissões de compartilhamento serão retornadas.</span><span class="sxs-lookup"><span data-stu-id="9f861-106">For the owner of the item, all sharing permissions will be returned.</span></span> <span data-ttu-id="9f861-107">Isto inclui os coproprietários.</span><span class="sxs-lookup"><span data-stu-id="9f861-107">This includes co-owners.</span></span>
+* <span data-ttu-id="9f861-108">Para um chamador não proprietário, somente as permissões de compartilhamento que se aplicam ao chamador são retornadas.</span><span class="sxs-lookup"><span data-stu-id="9f861-108">For a non-owner caller, only the sharing permissions that apply to the caller are returned.</span></span>
+* <span data-ttu-id="9f861-109">Propriedades de permissão de compartilhamento que contêm segredos (por exemplo, `shareId` e `webUrl`) são retornadas somente para chamadores que são capazes de criar a permissão de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="9f861-109">Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a0518-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="a0518-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9f861-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="9f861-110">Permissions</span></span>
 
-<span data-ttu-id="a0518-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0518-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9f861-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9f861-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a0518-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a0518-113">Permission type</span></span>      | <span data-ttu-id="a0518-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a0518-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9f861-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9f861-113">Permission type</span></span>      | <span data-ttu-id="9f861-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9f861-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a0518-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a0518-115">Delegated (work or school account)</span></span> | <span data-ttu-id="a0518-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0518-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a0518-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a0518-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0518-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0518-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a0518-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a0518-119">Application</span></span> | <span data-ttu-id="a0518-120">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0518-120">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="9f861-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9f861-115">Delegated (work or school account)</span></span> | <span data-ttu-id="9f861-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f861-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9f861-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9f861-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f861-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f861-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9f861-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9f861-119">Application</span></span> | <span data-ttu-id="9f861-120">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f861-120">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a0518-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a0518-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9f861-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9f861-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,42 +47,58 @@ GET /sites/{siteId}/drive/items/{itemId}/permissions
 GET /users/{userId}/drive/items/{itemId}/permissions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a0518-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a0518-122">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9f861-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9f861-122">Optional query parameters</span></span>
 
-<span data-ttu-id="a0518-123">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$select` para personalizar as resposta.</span><span class="sxs-lookup"><span data-stu-id="a0518-123">This method supports the `$select` [OData Query Parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="9f861-123">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$select` para personalizar as resposta.</span><span class="sxs-lookup"><span data-stu-id="9f861-123">This method supports the `$select` [OData Query Parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="a0518-124">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="a0518-124">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="9f861-124">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="9f861-124">Optional request headers</span></span>
 
-| <span data-ttu-id="a0518-125">Nome</span><span class="sxs-lookup"><span data-stu-id="a0518-125">Name</span></span>          | <span data-ttu-id="a0518-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="a0518-126">Type</span></span>   | <span data-ttu-id="a0518-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="a0518-127">Description</span></span>                                                                                                                                     |
+| <span data-ttu-id="9f861-125">Nome</span><span class="sxs-lookup"><span data-stu-id="9f861-125">Name</span></span>          | <span data-ttu-id="9f861-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="9f861-126">Type</span></span>   | <span data-ttu-id="9f861-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="9f861-127">Description</span></span>                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="a0518-128">if-none-match</span><span class="sxs-lookup"><span data-stu-id="a0518-128">if-none-match</span></span> | <span data-ttu-id="a0518-129">string</span><span class="sxs-lookup"><span data-stu-id="a0518-129">string</span></span> | <span data-ttu-id="a0518-130">Se este cabeçalho de solicitação estiver incluso e a etag fornecida corresponder à marca atual do item, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="a0518-130">If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="9f861-128">if-none-match</span><span class="sxs-lookup"><span data-stu-id="9f861-128">if-none-match</span></span> | <span data-ttu-id="9f861-129">string</span><span class="sxs-lookup"><span data-stu-id="9f861-129">string</span></span> | <span data-ttu-id="9f861-130">Se este cabeçalho de solicitação estiver incluso e a etag fornecida corresponder à marca atual do item, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="9f861-130">If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="a0518-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0518-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9f861-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="9f861-131">Response</span></span>
 
-<span data-ttu-id="a0518-132">Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de recursos [Permission](../resources/permission.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a0518-132">If successful, this method returns a `200 OK` response code and collection of [Permission](../resources/permission.md) resources in the response body.</span></span>
+<span data-ttu-id="9f861-132">Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de recursos [Permission](../resources/permission.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9f861-132">If successful, this method returns a `200 OK` response code and collection of [Permission](../resources/permission.md) resources in the response body.</span></span>
 
-<span data-ttu-id="a0518-133">As permissões efetivas de compartilhamento de um DriveItem podem vir de duas fontes:</span><span class="sxs-lookup"><span data-stu-id="a0518-133">Effective sharing permissions of a DriveItem can come from two sources:</span></span>
+<span data-ttu-id="9f861-133">As permissões efetivas de compartilhamento de um DriveItem podem vir de duas fontes:</span><span class="sxs-lookup"><span data-stu-id="9f861-133">Effective sharing permissions of a DriveItem can come from two sources:</span></span>
 
-* <span data-ttu-id="a0518-134">Permissões de compartilhamento aplicadas diretamente ao próprio DriveItem</span><span class="sxs-lookup"><span data-stu-id="a0518-134">Sharing permissions applied directly on the DriveItem itself</span></span>
-* <span data-ttu-id="a0518-135">Permissões de compartilhamento herdadas de ancestrais do DriveItem</span><span class="sxs-lookup"><span data-stu-id="a0518-135">Sharing permissions inherited from the DriveItem's ancestors</span></span>
+* <span data-ttu-id="9f861-134">Permissões de compartilhamento aplicadas diretamente ao próprio DriveItem</span><span class="sxs-lookup"><span data-stu-id="9f861-134">Sharing permissions applied directly on the DriveItem itself</span></span>
+* <span data-ttu-id="9f861-135">Permissões de compartilhamento herdadas de ancestrais do DriveItem</span><span class="sxs-lookup"><span data-stu-id="9f861-135">Sharing permissions inherited from the DriveItem's ancestors</span></span>
 
-<span data-ttu-id="a0518-p103">Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade **inheritedFrom**. Esta propriedade é um recurso [**itemReference**](../resources/itemreference.md) que referencia o ancestral do qual a permissão é herdada.</span><span class="sxs-lookup"><span data-stu-id="a0518-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
+<span data-ttu-id="9f861-p103">Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade **inheritedFrom**. Esta propriedade é um recurso [**itemReference**](../resources/itemreference.md) que referencia o ancestral do qual a permissão é herdada.</span><span class="sxs-lookup"><span data-stu-id="9f861-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
 
-<span data-ttu-id="a0518-p104">Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).</span><span class="sxs-lookup"><span data-stu-id="a0518-p104">SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).</span></span>
+<span data-ttu-id="9f861-p104">Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).</span><span class="sxs-lookup"><span data-stu-id="9f861-p104">SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).</span></span>
 
-## <a name="example"></a><span data-ttu-id="a0518-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a0518-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9f861-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9f861-141">Example</span></span>
 
-<span data-ttu-id="a0518-142">Este exemplo recupera a coleção de permissões em um item na unidade do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="a0518-142">This example retrieves the collection of permissions on an item in the signed in user's drive.</span></span>
+<span data-ttu-id="9f861-142">Este exemplo recupera a coleção de permissões em um item na unidade do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="9f861-142">This example retrieves the collection of permissions on an item in the signed in user's drive.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="9f861-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="9f861-143">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9f861-144">C#</span><span class="sxs-lookup"><span data-stu-id="9f861-144">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="a0518-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0518-143">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9f861-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="9f861-145">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="a0518-144">Esta resposta de exemplo inclui três permissões, a primeira é um link de compartilhamento com permissões de edição, a segunda é uma permissão explícita para um usuário chamado John, que foi herdada da pasta pai, e a terceira é um link de compartilhamento de leitura e gravação criado por um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="a0518-144">This example response includes three permissions, the first is a sharing link with edit permissions, the second is an explicit permission for a user named John, which was inherited from a parent folder, and the third is a read-write sharing link created by an application.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9f861-146">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="9f861-146">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="9f861-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="9f861-147">Response</span></span>
+
+<span data-ttu-id="9f861-148">Esta resposta de exemplo inclui três permissões, a primeira é um link de compartilhamento com permissões de edição, a segunda é uma permissão explícita para um usuário chamado John, que foi herdada da pasta pai, e a terceira é um link de compartilhamento de leitura e gravação criado por um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9f861-148">This example response includes three permissions, the first is a sharing link with edit permissions, the second is an explicit permission for a user named John, which was inherited from a parent folder, and the third is a read-write sharing link created by an application.</span></span>
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true} -->
 
@@ -129,26 +145,14 @@ Content-Type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a0518-145">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="a0518-145">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a0518-146">C#</span><span class="sxs-lookup"><span data-stu-id="a0518-146">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-item-permissions-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a0518-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="a0518-147">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-item-permissions-Javascript-snippets.md)]
+## <a name="remarks"></a><span data-ttu-id="9f861-149">Comentários</span><span class="sxs-lookup"><span data-stu-id="9f861-149">Remarks</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="a0518-148">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a0518-148">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-item-permissions-Objective-C-snippets.md)]
----
+<span data-ttu-id="9f861-p105">A relação **permissions** de um DriveItem não pode ser expandida como parte de uma chamada para [get DriveItem](driveitem-get.md) ou uma coleção de DriveItems. Você deve acessar a propriedade permissions diretamente.</span><span class="sxs-lookup"><span data-stu-id="9f861-p105">The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems. You must access the permissions property directly.</span></span>
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+## <a name="error-responses"></a><span data-ttu-id="9f861-152">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="9f861-152">Error responses</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="a0518-149">Comentários</span><span class="sxs-lookup"><span data-stu-id="a0518-149">Remarks</span></span>
-
-<span data-ttu-id="a0518-p105">A relação **permissions** de um DriveItem não pode ser expandida como parte de uma chamada para [get DriveItem](driveitem-get.md) ou uma coleção de DriveItems. Você deve acessar a propriedade permissions diretamente.</span><span class="sxs-lookup"><span data-stu-id="a0518-p105">The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems. You must access the permissions property directly.</span></span>
-
-## <a name="error-responses"></a><span data-ttu-id="a0518-152">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="a0518-152">Error responses</span></span>
-
-<span data-ttu-id="a0518-153">Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="a0518-153">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="9f861-153">Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="9f861-153">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
@@ -159,8 +163,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Permissions",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

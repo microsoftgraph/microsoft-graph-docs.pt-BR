@@ -8533,16 +8533,42 @@
           items:
             - name: Relatórios de identidade e acesso
               items:
-                - name: Resumo de entrada do aplicativo
-                  href: resources/applicationsigninsummary.md
+                - name: Entrada do aplicativo
                   items:
-                    - name: Obter
-                      href: api/applicationsigninsummary-get.md
-                - name: Detalhes do Resumo de entrada do aplicativo
-                  href: resources/applicationsignindetailedsummary.md
+                    - name: Resumo de entrada
+                      href: resources/applicationsigninsummary.md
+                      items:
+                        - name: Obter Resumo de entrada
+                          href: api/applicationsigninsummary-get.md
+                    - name: Detalhes de entrada
+                      href: resources/applicationsignindetailedsummary.md
+                      items:
+                        - name: Obter detalhes de entrada
+                          href: api/applicationsignindetailedsummary-get.md
+                - name: Registro e uso
                   items:
-                    - name: Obter
-                      href: api/applicationsignindetailedsummary-get.md
+                    - name: Visão geral
+                      href: resources/authenticationmethods-usage-insights-overview.md
+                    - name: Contagem de registro de usuário de credenciais
+                      href: resources/credentialuserregistrationcount.md
+                      items:
+                        - name: Obter contagem de registro
+                          href: api/reportroot-getcredentialuserregistrationcount.md
+                    - name: Detalhes de registro de usuário de credenciais
+                      href: resources/credentialuserregistrationdetails.md
+                      items:
+                        - name: Listar detalhes de registro
+                          href: api/reportroot-list-credentialuserregistrationdetails.md
+                    - name: Detalhes do uso de credenciais de usuário
+                      href: resources/usercredentialusagedetails.md
+                      items:
+                        - name: Detalhes de uso de lista
+                          href: api/reportroot-list-usercredentialusagedetails.md
+                    - name: Resumo do uso de credenciais
+                      href: resources/credentialusagesummary.md
+                      items:
+                        - name: Obter Resumo de uso
+                          href: api/reportroot-getcredentialusagesummary.md
             - name: Relatórios de uso do Office 365
               items:
                 - name: Visão geral
@@ -9248,7 +9274,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-tasks.md
-                - name: Create
+                - name: Criar
                   href: api/outlookuser-post-tasks.md
                 - name: Obter
                   href: api/outlooktask-get.md
@@ -9267,7 +9293,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskfolders.md
-                - name: Create
+                - name: Criar
                   href: api/outlookuser-post-taskfolders.md
                 - name: Obter
                   href: api/outlooktaskfolder-get.md
@@ -9342,7 +9368,7 @@
         - name: Workbooks e gráficos
           displayName: Excel
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/excel.md
             - name: Workbook
               href: resources/workbook.md

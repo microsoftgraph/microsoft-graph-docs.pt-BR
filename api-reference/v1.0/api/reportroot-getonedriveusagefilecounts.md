@@ -4,72 +4,74 @@ description: Obtenha o número total de arquivos em todos os sites e quantos sã
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5fd64df543009b4bbd6a0303223e6390f81b4376
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 3f0f630335f4abd37d0f87e40a8711b2c7216f12
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35268582"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35454983"
 ---
-# <a name="reportroot-getonedriveusagefilecounts"></a><span data-ttu-id="29034-104">reportRoot: getOneDriveUsageFileCounts</span><span class="sxs-lookup"><span data-stu-id="29034-104">reportRoot: getOneDriveUsageFileCounts</span></span>
+# <a name="reportroot-getonedriveusagefilecounts"></a><span data-ttu-id="fef7c-104">reportRoot: getOneDriveUsageFileCounts</span><span class="sxs-lookup"><span data-stu-id="fef7c-104">reportRoot: getOneDriveUsageFileCounts</span></span>
 
-<span data-ttu-id="29034-105">Obtenha o número total de arquivos em todos os sites e quantos são arquivos ativos.</span><span class="sxs-lookup"><span data-stu-id="29034-105">Get the total number of files across all sites and how many are active files.</span></span> <span data-ttu-id="29034-106">Um arquivo é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado.</span><span class="sxs-lookup"><span data-stu-id="29034-106">A file is considered active if it has been saved, synced, modified, or shared within the specified time period.</span></span>
+<span data-ttu-id="fef7c-105">Obtenha o número total de arquivos em todos os sites e quantos são arquivos ativos.</span><span class="sxs-lookup"><span data-stu-id="fef7c-105">Get the total number of files across all sites and how many are active files.</span></span> <span data-ttu-id="fef7c-106">Um arquivo é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado.</span><span class="sxs-lookup"><span data-stu-id="fef7c-106">A file is considered active if it has been saved, synced, modified, or shared within the specified time period.</span></span>
 
-> <span data-ttu-id="29034-107">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Uso do OneDrive for Business](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).</span><span class="sxs-lookup"><span data-stu-id="29034-107">**Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business usage](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).</span></span>
+> <span data-ttu-id="fef7c-107">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Uso do OneDrive for Business](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).</span><span class="sxs-lookup"><span data-stu-id="fef7c-107">**Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business usage](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="29034-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="29034-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fef7c-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="fef7c-108">Permissions</span></span>
 
-<span data-ttu-id="29034-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29034-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fef7c-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fef7c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="29034-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="29034-111">Permission type</span></span>                        | <span data-ttu-id="29034-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="29034-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="fef7c-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fef7c-111">Permission type</span></span>                        | <span data-ttu-id="fef7c-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fef7c-112">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="29034-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="29034-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="29034-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="29034-114">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="29034-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="29034-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29034-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="29034-116">Not supported.</span></span>                           |
-| <span data-ttu-id="29034-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="29034-117">Application</span></span>                            | <span data-ttu-id="29034-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="29034-118">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="fef7c-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fef7c-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="fef7c-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fef7c-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="fef7c-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fef7c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fef7c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fef7c-116">Not supported.</span></span>                           |
+| <span data-ttu-id="fef7c-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fef7c-117">Application</span></span>                            | <span data-ttu-id="fef7c-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fef7c-118">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="29034-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="29034-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fef7c-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fef7c-119">HTTP request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="fef7c-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="fef7c-120">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
 GET /reports/getOneDriveUsageFileCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="29034-120">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="29034-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="fef7c-121">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="fef7c-121">Function parameters</span></span>
 
-<span data-ttu-id="29034-121">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="29034-121">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="fef7c-122">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="fef7c-122">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="29034-122">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="29034-122">Parameter</span></span> | <span data-ttu-id="29034-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="29034-123">Type</span></span>   | <span data-ttu-id="29034-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="29034-124">Description</span></span>                              |
+| <span data-ttu-id="fef7c-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="fef7c-123">Parameter</span></span> | <span data-ttu-id="fef7c-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="fef7c-124">Type</span></span>   | <span data-ttu-id="fef7c-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="fef7c-125">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="29034-125">ponto</span><span class="sxs-lookup"><span data-stu-id="29034-125">period</span></span>    | <span data-ttu-id="29034-126">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="29034-126">string</span></span> | <span data-ttu-id="29034-127">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="29034-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="29034-128">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="29034-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="29034-129">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="29034-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="29034-130">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="29034-130">Required.</span></span> |
+| <span data-ttu-id="fef7c-126">ponto</span><span class="sxs-lookup"><span data-stu-id="fef7c-126">period</span></span>    | <span data-ttu-id="fef7c-127">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fef7c-127">string</span></span> | <span data-ttu-id="fef7c-128">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="fef7c-128">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="fef7c-129">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="fef7c-129">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="fef7c-130">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="fef7c-130">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="fef7c-131">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fef7c-131">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="29034-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="29034-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fef7c-132">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fef7c-132">Request headers</span></span>
 
-| <span data-ttu-id="29034-132">Nome</span><span class="sxs-lookup"><span data-stu-id="29034-132">Name</span></span>          | <span data-ttu-id="29034-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="29034-133">Description</span></span>                              |
+| <span data-ttu-id="fef7c-133">Nome</span><span class="sxs-lookup"><span data-stu-id="fef7c-133">Name</span></span>          | <span data-ttu-id="fef7c-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="fef7c-134">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="29034-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="29034-134">Authorization</span></span> | <span data-ttu-id="29034-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="29034-p105">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="29034-137">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="29034-137">If-None-Match</span></span> | <span data-ttu-id="29034-138">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="29034-138">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="29034-139">Opcional.</span><span class="sxs-lookup"><span data-stu-id="29034-139">Optional.</span></span> |
+| <span data-ttu-id="fef7c-135">Autorização</span><span class="sxs-lookup"><span data-stu-id="fef7c-135">Authorization</span></span> | <span data-ttu-id="fef7c-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fef7c-p105">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="fef7c-138">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="fef7c-138">If-None-Match</span></span> | <span data-ttu-id="fef7c-139">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="fef7c-139">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="fef7c-140">Opcional.</span><span class="sxs-lookup"><span data-stu-id="fef7c-140">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="29034-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="29034-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fef7c-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="fef7c-141">Response</span></span>
 
-<span data-ttu-id="29034-141">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="29034-141">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="29034-142">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="29034-142">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="fef7c-142">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="fef7c-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="fef7c-143">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="fef7c-143">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="29034-143">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="29034-143">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="fef7c-144">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="fef7c-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="29034-144">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="29034-144">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="fef7c-145">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="fef7c-145">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="29034-145">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="29034-145">Report Refresh Date</span></span>
-- <span data-ttu-id="29034-146">Tipo de site</span><span class="sxs-lookup"><span data-stu-id="29034-146">Site Type</span></span>
-- <span data-ttu-id="29034-147">Total</span><span class="sxs-lookup"><span data-stu-id="29034-147">Total</span></span>
-- <span data-ttu-id="29034-148">Ativo</span><span class="sxs-lookup"><span data-stu-id="29034-148">Active</span></span>
-- <span data-ttu-id="29034-149">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="29034-149">Report Date</span></span>
-- <span data-ttu-id="29034-150">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="29034-150">Report Period</span></span>
+- <span data-ttu-id="fef7c-146">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="fef7c-146">Report Refresh Date</span></span>
+- <span data-ttu-id="fef7c-147">Tipo de site</span><span class="sxs-lookup"><span data-stu-id="fef7c-147">Site Type</span></span>
+- <span data-ttu-id="fef7c-148">Total</span><span class="sxs-lookup"><span data-stu-id="fef7c-148">Total</span></span>
+- <span data-ttu-id="fef7c-149">Ativo</span><span class="sxs-lookup"><span data-stu-id="fef7c-149">Active</span></span>
+- <span data-ttu-id="fef7c-150">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="fef7c-150">Report Date</span></span>
+- <span data-ttu-id="fef7c-151">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="fef7c-151">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="29034-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="29034-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fef7c-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fef7c-152">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="29034-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="29034-152">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fef7c-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fef7c-153">Request</span></span>
 
-<span data-ttu-id="29034-153">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="29034-153">The following is an example of the request.</span></span>
+<span data-ttu-id="fef7c-154">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="fef7c-154">The following is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -80,10 +82,24 @@ GET /reports/getOneDriveUsageFileCounts(period='{period_value}')
 ```http
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveUsageFileCounts(period='D7')
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="fef7c-155">C#</span><span class="sxs-lookup"><span data-stu-id="fef7c-155">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getonedriveusagefilecounts-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="29034-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="29034-154">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fef7c-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="fef7c-156">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getonedriveusagefilecounts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="29034-155">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="29034-155">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fef7c-157">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="fef7c-157">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getonedriveusagefilecounts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="fef7c-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="fef7c-158">Response</span></span>
+
+<span data-ttu-id="fef7c-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="fef7c-159">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -96,20 +112,8 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="29034-156">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="29034-156">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="29034-157">C#</span><span class="sxs-lookup"><span data-stu-id="29034-157">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getonedriveusagefilecounts-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="29034-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="29034-158">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getonedriveusagefilecounts-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="29034-159">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="29034-159">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/reportroot_getonedriveusagefilecounts-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-<span data-ttu-id="29034-160">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="29034-160">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="fef7c-160">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="fef7c-160">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -128,8 +132,5 @@ Report Refresh Date,Site Type,Total,Active,Report Date,Report Period
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/reportroot-getonedriveusagefilecounts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/reportroot-getonedriveusagefilecounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/reportroot-getonedriveusagefilecounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
