@@ -2,89 +2,89 @@
 title: Obter singleValueLegacyExtendedProperty
 description: Você pode obter uma única instância de recurso expandida com uma propriedade estendida específica ou uma coleção de instâncias de recurso
 localization_priority: Normal
-ms.openlocfilehash: c4e028ecd7e881d42ee165560beced4dd097c553
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9fd46ac9e28ef466e58d555cfb0182df1d6513dc
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35279251"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35461488"
 ---
-# <a name="get-singlevaluelegacyextendedproperty"></a><span data-ttu-id="19f29-103">Obter singleValueLegacyExtendedProperty</span><span class="sxs-lookup"><span data-stu-id="19f29-103">Get singleValueLegacyExtendedProperty</span></span>
+# <a name="get-singlevaluelegacyextendedproperty"></a><span data-ttu-id="28284-103">Obter singleValueLegacyExtendedProperty</span><span class="sxs-lookup"><span data-stu-id="28284-103">Get singleValueLegacyExtendedProperty</span></span>
 
-<span data-ttu-id="19f29-104">Você pode acessar uma instância de recurso único expandida com uma propriedade estendida específica ou uma coleção de instâncias de recurso que incluem as propriedades estendidas que correspondem a um filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-104">You can get a single resource instance expanded with a specific extended property, or a collection of resource instances that include extended properties matching a filter.</span></span>
+<span data-ttu-id="28284-104">Você pode acessar uma instância de recurso único expandida com uma propriedade estendida específica ou uma coleção de instâncias de recurso que incluem as propriedades estendidas que correspondem a um filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-104">You can get a single resource instance expanded with a specific extended property, or a collection of resource instances that include extended properties matching a filter.</span></span>
 
-<span data-ttu-id="19f29-105">Usar o parâmetro de consulta `$expand` permite que você acesse a instância de recurso especificada expandida com uma propriedade estendida específica.</span><span class="sxs-lookup"><span data-stu-id="19f29-105">Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended property.</span></span> <span data-ttu-id="19f29-106">Use um `$filter` e um operador `eq` na propriedade **id** para especificar a propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="19f29-106">Use a `$filter` and `eq` operator on the **id** property to specify the extended property.</span></span> <span data-ttu-id="19f29-107">Atualmente, esta é a única maneira de acessar o objeto [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) que representa uma propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="19f29-107">This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property.</span></span> 
+<span data-ttu-id="28284-105">Usar o parâmetro de consulta `$expand` permite que você acesse a instância de recurso especificada expandida com uma propriedade estendida específica.</span><span class="sxs-lookup"><span data-stu-id="28284-105">Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended property.</span></span> <span data-ttu-id="28284-106">Use um `$filter` e um operador `eq` na propriedade **id** para especificar a propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="28284-106">Use a `$filter` and `eq` operator on the **id** property to specify the extended property.</span></span> <span data-ttu-id="28284-107">Atualmente, esta é a única maneira de acessar o objeto [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) que representa uma propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="28284-107">This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property.</span></span> 
 
-<span data-ttu-id="19f29-108">Para acessar instâncias de recurso com determinadas propriedades estendidas, use o parâmetro de consulta `$filter` e aplique um operador `eq` na propriedade **id**.</span><span class="sxs-lookup"><span data-stu-id="19f29-108">To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator on the **id** property.</span></span> <span data-ttu-id="19f29-109">Além disso, em propriedades estendidas numéricas, aplique um dos seguintes operadores na propriedade **valor**: `eq`, `ne`,`ge`, `gt`, `le` ou `lt`.</span><span class="sxs-lookup"><span data-stu-id="19f29-109">In addition, for numeric extended properties, apply one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="19f29-110">Para propriedades estendidas de cadeia de caracteres digitados, aplique um operador `contains`, `startswith`, `eq` ou `ne` em **value**.</span><span class="sxs-lookup"><span data-stu-id="19f29-110">For string-typed extended properties, apply a `contains`, `startswith`, `eq`, or `ne` operator on **value**.</span></span>
+<span data-ttu-id="28284-108">Para acessar instâncias de recurso com determinadas propriedades estendidas, use o parâmetro de consulta `$filter` e aplique um operador `eq` na propriedade **id**.</span><span class="sxs-lookup"><span data-stu-id="28284-108">To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator on the **id** property.</span></span> <span data-ttu-id="28284-109">Além disso, em propriedades estendidas numéricas, aplique um dos seguintes operadores na propriedade **valor**: `eq`, `ne`,`ge`, `gt`, `le` ou `lt`.</span><span class="sxs-lookup"><span data-stu-id="28284-109">In addition, for numeric extended properties, apply one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="28284-110">Para propriedades estendidas de cadeia de caracteres digitados, aplique um operador `contains`, `startswith`, `eq` ou `ne` em **value**.</span><span class="sxs-lookup"><span data-stu-id="28284-110">For string-typed extended properties, apply a `contains`, `startswith`, `eq`, or `ne` operator on **value**.</span></span>
 
-<span data-ttu-id="19f29-111">O filtro é aplicado a todas as instâncias do recurso na caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="19f29-111">The filter is applied to all instances of the resource in the signed-in user's mailbox.</span></span> 
+<span data-ttu-id="28284-111">O filtro é aplicado a todas as instâncias do recurso na caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="28284-111">The filter is applied to all instances of the resource in the signed-in user's mailbox.</span></span> 
 
-<span data-ttu-id="19f29-112">Maiúsculas e minúsculas são diferenciadas ao filtrar o nome de cadeia de caracteres (`Name`) na **id** de uma propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="19f29-112">Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive.</span></span> <span data-ttu-id="19f29-113">Maiúsculas e minúsculas não são diferenciadas ao filtrar a propriedade **value** de uma propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="19f29-113">Filtering the **value** property of an extended property is case-insensitive.</span></span>
+<span data-ttu-id="28284-112">Maiúsculas e minúsculas são diferenciadas ao filtrar o nome de cadeia de caracteres (`Name`) na **id** de uma propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="28284-112">Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive.</span></span> <span data-ttu-id="28284-113">Maiúsculas e minúsculas não são diferenciadas ao filtrar a propriedade **value** de uma propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="28284-113">Filtering the **value** property of an extended property is case-insensitive.</span></span>
 
-<span data-ttu-id="19f29-114">Há suporte para os seguintes recursos de usuário:</span><span class="sxs-lookup"><span data-stu-id="19f29-114">The following user resources are supported:</span></span>
+<span data-ttu-id="28284-114">Há suporte para os seguintes recursos de usuário:</span><span class="sxs-lookup"><span data-stu-id="28284-114">The following user resources are supported:</span></span>
 
-- [<span data-ttu-id="19f29-115">calendar</span><span class="sxs-lookup"><span data-stu-id="19f29-115">calendar</span></span>](../resources/calendar.md)
-- [<span data-ttu-id="19f29-116">contact</span><span class="sxs-lookup"><span data-stu-id="19f29-116">contact</span></span>](../resources/contact.md)
-- [<span data-ttu-id="19f29-117">contactFolder</span><span class="sxs-lookup"><span data-stu-id="19f29-117">contactFolder</span></span>](../resources/contactfolder.md) 
-- [<span data-ttu-id="19f29-118">evento</span><span class="sxs-lookup"><span data-stu-id="19f29-118">event</span></span>](../resources/event.md)
-- [<span data-ttu-id="19f29-119">mailFolder</span><span class="sxs-lookup"><span data-stu-id="19f29-119">mailFolder</span></span>](../resources/mailfolder.md)
-- [<span data-ttu-id="19f29-120">message</span><span class="sxs-lookup"><span data-stu-id="19f29-120">message</span></span>](../resources/message.md) 
+- [<span data-ttu-id="28284-115">calendar</span><span class="sxs-lookup"><span data-stu-id="28284-115">calendar</span></span>](../resources/calendar.md)
+- [<span data-ttu-id="28284-116">contact</span><span class="sxs-lookup"><span data-stu-id="28284-116">contact</span></span>](../resources/contact.md)
+- [<span data-ttu-id="28284-117">contactFolder</span><span class="sxs-lookup"><span data-stu-id="28284-117">contactFolder</span></span>](../resources/contactfolder.md) 
+- [<span data-ttu-id="28284-118">evento</span><span class="sxs-lookup"><span data-stu-id="28284-118">event</span></span>](../resources/event.md)
+- [<span data-ttu-id="28284-119">mailFolder</span><span class="sxs-lookup"><span data-stu-id="28284-119">mailFolder</span></span>](../resources/mailfolder.md)
+- [<span data-ttu-id="28284-120">message</span><span class="sxs-lookup"><span data-stu-id="28284-120">message</span></span>](../resources/message.md) 
 
-<span data-ttu-id="19f29-121">Também há suporte para os seguintes recursos de grupo:</span><span class="sxs-lookup"><span data-stu-id="19f29-121">As well as the following group resources:</span></span>
+<span data-ttu-id="28284-121">Também há suporte para os seguintes recursos de grupo:</span><span class="sxs-lookup"><span data-stu-id="28284-121">As well as the following group resources:</span></span>
 
-- <span data-ttu-id="19f29-122">grupo [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="19f29-122">group [calendar](../resources/calendar.md)</span></span>
-- <span data-ttu-id="19f29-123">grupo [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="19f29-123">group [event](../resources/event.md)</span></span>
-- <span data-ttu-id="19f29-124">grupo [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="19f29-124">group [post](../resources/post.md)</span></span> 
+- <span data-ttu-id="28284-122">grupo [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="28284-122">group [calendar](../resources/calendar.md)</span></span>
+- <span data-ttu-id="28284-123">grupo [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="28284-123">group [event](../resources/event.md)</span></span>
+- <span data-ttu-id="28284-124">grupo [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="28284-124">group [post](../resources/post.md)</span></span> 
 
-<span data-ttu-id="19f29-125">Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.</span><span class="sxs-lookup"><span data-stu-id="19f29-125">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
+<span data-ttu-id="28284-125">Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.</span><span class="sxs-lookup"><span data-stu-id="28284-125">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="19f29-126">Permissões</span><span class="sxs-lookup"><span data-stu-id="19f29-126">Permissions</span></span>
-<span data-ttu-id="19f29-127">Dependendo do recurso para o qual você está obtendo a propriedade estendida e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="19f29-127">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="19f29-128">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="19f29-128">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="28284-126">Permissões</span><span class="sxs-lookup"><span data-stu-id="28284-126">Permissions</span></span>
+<span data-ttu-id="28284-127">Dependendo do recurso para o qual você está obtendo a propriedade estendida e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="28284-127">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="28284-128">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28284-128">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="19f29-129">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="19f29-129">Supported resource</span></span> | <span data-ttu-id="19f29-130">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="19f29-130">Delegated (work or school account)</span></span> | <span data-ttu-id="19f29-131">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="19f29-131">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19f29-132">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="19f29-132">Application</span></span> |
+| <span data-ttu-id="28284-129">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="28284-129">Supported resource</span></span> | <span data-ttu-id="28284-130">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="28284-130">Delegated (work or school account)</span></span> | <span data-ttu-id="28284-131">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="28284-131">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="28284-132">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="28284-132">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="19f29-133">calendar</span><span class="sxs-lookup"><span data-stu-id="19f29-133">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="19f29-134">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-134">Calendars.Read</span></span> | <span data-ttu-id="19f29-135">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-135">Calendars.Read</span></span> | <span data-ttu-id="19f29-136">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-136">Calendars.Read</span></span> |
-| [<span data-ttu-id="19f29-137">contato</span><span class="sxs-lookup"><span data-stu-id="19f29-137">contact</span></span>](../resources/contact.md) | <span data-ttu-id="19f29-138">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-138">Contacts.Read</span></span> | <span data-ttu-id="19f29-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-139">Contacts.Read</span></span> | <span data-ttu-id="19f29-140">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-140">Contacts.Read</span></span> |
-| [<span data-ttu-id="19f29-141">contactFolder</span><span class="sxs-lookup"><span data-stu-id="19f29-141">contactFolder</span></span>](../resources/contactfolder.md) | <span data-ttu-id="19f29-142">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-142">Contacts.Read</span></span> | <span data-ttu-id="19f29-143">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-143">Contacts.Read</span></span> | <span data-ttu-id="19f29-144">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-144">Contacts.Read</span></span> |
-| [<span data-ttu-id="19f29-145">evento</span><span class="sxs-lookup"><span data-stu-id="19f29-145">event</span></span>](../resources/event.md) | <span data-ttu-id="19f29-146">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-146">Calendars.Read</span></span> | <span data-ttu-id="19f29-147">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-147">Calendars.Read</span></span> |  <span data-ttu-id="19f29-148">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-148">Calendars.Read</span></span>|
-| <span data-ttu-id="19f29-149">grupo [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="19f29-149">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="19f29-150">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="19f29-150">Group.Read.All</span></span> | <span data-ttu-id="19f29-151">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="19f29-151">Not supported</span></span> | <span data-ttu-id="19f29-152">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="19f29-152">Not supported</span></span> |
-| <span data-ttu-id="19f29-153">grupo [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="19f29-153">group [event](../resources/event.md)</span></span> | <span data-ttu-id="19f29-154">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="19f29-154">Group.Read.All</span></span> | <span data-ttu-id="19f29-155">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="19f29-155">Not supported</span></span> | <span data-ttu-id="19f29-156">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="19f29-156">Not supported</span></span> |
-| <span data-ttu-id="19f29-157">grupo [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="19f29-157">group [post](../resources/post.md)</span></span> | <span data-ttu-id="19f29-158">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="19f29-158">Group.Read.All</span></span> | <span data-ttu-id="19f29-159">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="19f29-159">Not supported</span></span> | <span data-ttu-id="19f29-160">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="19f29-160">Group.Read.All</span></span> |
-| [<span data-ttu-id="19f29-161">mailFolder</span><span class="sxs-lookup"><span data-stu-id="19f29-161">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="19f29-162">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-162">Mail.Read</span></span> | <span data-ttu-id="19f29-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-163">Mail.Read</span></span> | <span data-ttu-id="19f29-164">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-164">Mail.Read</span></span> |
-| [<span data-ttu-id="19f29-165">message</span><span class="sxs-lookup"><span data-stu-id="19f29-165">message</span></span>](../resources/message.md) | <span data-ttu-id="19f29-166">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-166">Mail.Read</span></span> | <span data-ttu-id="19f29-167">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-167">Mail.Read</span></span> | <span data-ttu-id="19f29-168">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="19f29-168">Mail.Read</span></span> |
+| [<span data-ttu-id="28284-133">calendar</span><span class="sxs-lookup"><span data-stu-id="28284-133">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="28284-134">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="28284-134">Calendars.Read</span></span> | <span data-ttu-id="28284-135">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="28284-135">Calendars.Read</span></span> | <span data-ttu-id="28284-136">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="28284-136">Calendars.Read</span></span> |
+| [<span data-ttu-id="28284-137">contato</span><span class="sxs-lookup"><span data-stu-id="28284-137">contact</span></span>](../resources/contact.md) | <span data-ttu-id="28284-138">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="28284-138">Contacts.Read</span></span> | <span data-ttu-id="28284-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="28284-139">Contacts.Read</span></span> | <span data-ttu-id="28284-140">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="28284-140">Contacts.Read</span></span> |
+| [<span data-ttu-id="28284-141">contactFolder</span><span class="sxs-lookup"><span data-stu-id="28284-141">contactFolder</span></span>](../resources/contactfolder.md) | <span data-ttu-id="28284-142">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="28284-142">Contacts.Read</span></span> | <span data-ttu-id="28284-143">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="28284-143">Contacts.Read</span></span> | <span data-ttu-id="28284-144">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="28284-144">Contacts.Read</span></span> |
+| [<span data-ttu-id="28284-145">evento</span><span class="sxs-lookup"><span data-stu-id="28284-145">event</span></span>](../resources/event.md) | <span data-ttu-id="28284-146">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="28284-146">Calendars.Read</span></span> | <span data-ttu-id="28284-147">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="28284-147">Calendars.Read</span></span> |  <span data-ttu-id="28284-148">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="28284-148">Calendars.Read</span></span>|
+| <span data-ttu-id="28284-149">grupo [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="28284-149">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="28284-150">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="28284-150">Group.Read.All</span></span> | <span data-ttu-id="28284-151">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="28284-151">Not supported</span></span> | <span data-ttu-id="28284-152">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="28284-152">Not supported</span></span> |
+| <span data-ttu-id="28284-153">grupo [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="28284-153">group [event](../resources/event.md)</span></span> | <span data-ttu-id="28284-154">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="28284-154">Group.Read.All</span></span> | <span data-ttu-id="28284-155">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="28284-155">Not supported</span></span> | <span data-ttu-id="28284-156">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="28284-156">Not supported</span></span> |
+| <span data-ttu-id="28284-157">grupo [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="28284-157">group [post](../resources/post.md)</span></span> | <span data-ttu-id="28284-158">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="28284-158">Group.Read.All</span></span> | <span data-ttu-id="28284-159">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="28284-159">Not supported</span></span> | <span data-ttu-id="28284-160">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="28284-160">Group.Read.All</span></span> |
+| [<span data-ttu-id="28284-161">mailFolder</span><span class="sxs-lookup"><span data-stu-id="28284-161">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="28284-162">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="28284-162">Mail.Read</span></span> | <span data-ttu-id="28284-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="28284-163">Mail.Read</span></span> | <span data-ttu-id="28284-164">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="28284-164">Mail.Read</span></span> |
+| [<span data-ttu-id="28284-165">message</span><span class="sxs-lookup"><span data-stu-id="28284-165">message</span></span>](../resources/message.md) | <span data-ttu-id="28284-166">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="28284-166">Mail.Read</span></span> | <span data-ttu-id="28284-167">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="28284-167">Mail.Read</span></span> | <span data-ttu-id="28284-168">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="28284-168">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="19f29-169">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="19f29-169">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28284-169">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="28284-169">HTTP request</span></span>
 
-#### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a><span data-ttu-id="19f29-170">Instância de recurso GET expandida com uma propriedade estendida que corresponde a um filtro</span><span class="sxs-lookup"><span data-stu-id="19f29-170">GET a resource instance expanded with an extended property that matches a filter</span></span>
-<span data-ttu-id="19f29-p105">Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-p105">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
+#### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a><span data-ttu-id="28284-170">Instância de recurso GET expandida com uma propriedade estendida que corresponde a um filtro</span><span class="sxs-lookup"><span data-stu-id="28284-170">GET a resource instance expanded with an extended property that matches a filter</span></span>
+<span data-ttu-id="28284-p105">Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-p105">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
 
-<span data-ttu-id="19f29-173">Obtenha uma instância de **message**:</span><span class="sxs-lookup"><span data-stu-id="19f29-173">Get a **message** instance:</span></span>
+<span data-ttu-id="28284-173">Obtenha uma instância de **message**:</span><span class="sxs-lookup"><span data-stu-id="28284-173">Get a **message** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="19f29-174">Obtenha uma instância de **mailFolder**:</span><span class="sxs-lookup"><span data-stu-id="19f29-174">Get a **mailFolder** instance:</span></span>
+<span data-ttu-id="28284-174">Obtenha uma instância de **mailFolder**:</span><span class="sxs-lookup"><span data-stu-id="28284-174">Get a **mailFolder** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="19f29-175">Obtenha uma instância de **event**:</span><span class="sxs-lookup"><span data-stu-id="19f29-175">Get an **event** instance:</span></span>
+<span data-ttu-id="28284-175">Obtenha uma instância de **event**:</span><span class="sxs-lookup"><span data-stu-id="28284-175">Get an **event** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="19f29-176">Obtenha uma instância de **calendar**:</span><span class="sxs-lookup"><span data-stu-id="19f29-176">Get a **calendar** instance:</span></span>
+<span data-ttu-id="28284-176">Obtenha uma instância de **calendar**:</span><span class="sxs-lookup"><span data-stu-id="28284-176">Get a **calendar** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="19f29-177">Obtenha uma instância de **contact**:</span><span class="sxs-lookup"><span data-stu-id="19f29-177">Get a **contact** instance:</span></span>
+<span data-ttu-id="28284-177">Obtenha uma instância de **contact**:</span><span class="sxs-lookup"><span data-stu-id="28284-177">Get a **contact** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -92,58 +92,58 @@ GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedPrope
 GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="19f29-178">Obtenha uma instância de **contactFolder**:</span><span class="sxs-lookup"><span data-stu-id="19f29-178">Get a **contactFolder** instance:</span></span>
+<span data-ttu-id="28284-178">Obtenha uma instância de **contactFolder**:</span><span class="sxs-lookup"><span data-stu-id="28284-178">Get a **contactFolder** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="19f29-179">Obtenha uma instância de **group event**:</span><span class="sxs-lookup"><span data-stu-id="19f29-179">Get a group **event** instance:</span></span>
+<span data-ttu-id="28284-179">Obtenha uma instância de **group event**:</span><span class="sxs-lookup"><span data-stu-id="28284-179">Get a group **event** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="19f29-180">Acesse uma instância de **postar** em grupo:</span><span class="sxs-lookup"><span data-stu-id="19f29-180">Get a group **post** instance:</span></span>
+<span data-ttu-id="28284-180">Acesse uma instância de **postar** em grupo:</span><span class="sxs-lookup"><span data-stu-id="28284-180">Get a group **post** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a><span data-ttu-id="19f29-181">Instâncias de recurso GET que incluem as propriedades estendidas numéricas que correspondem a um filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-181">GET resource instances that include numeric extended properties matching a filter</span></span>
+#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a><span data-ttu-id="28284-181">Instâncias de recurso GET que incluem as propriedades estendidas numéricas que correspondem a um filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-181">GET resource instances that include numeric extended properties matching a filter</span></span>
 
-<span data-ttu-id="19f29-182">Acesse as instâncias de um recurso com suporte que têm uma propriedade estendida numérica que corresponde a um filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-182">Get instances of a supported resource that have a numeric extended property matching a filter.</span></span> <span data-ttu-id="19f29-183">O filtro usa um operador `eq` na propriedade **id** e um dos seguintes operadores na propriedade **value**: `eq`, `ne`,`ge`, `gt`, `le` ou `lt`.</span><span class="sxs-lookup"><span data-stu-id="19f29-183">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="19f29-184">Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.</span><span class="sxs-lookup"><span data-stu-id="19f29-184">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
+<span data-ttu-id="28284-182">Acesse as instâncias de um recurso com suporte que têm uma propriedade estendida numérica que corresponde a um filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-182">Get instances of a supported resource that have a numeric extended property matching a filter.</span></span> <span data-ttu-id="28284-183">O filtro usa um operador `eq` na propriedade **id** e um dos seguintes operadores na propriedade **value**: `eq`, `ne`,`ge`, `gt`, `le` ou `lt`.</span><span class="sxs-lookup"><span data-stu-id="28284-183">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="28284-184">Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.</span><span class="sxs-lookup"><span data-stu-id="28284-184">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
 
-<span data-ttu-id="19f29-185">As linhas de sintaxe a seguir mostram um filtro que usa um operador `eq` na id e outro operador `eq` no valor da propriedade.</span><span class="sxs-lookup"><span data-stu-id="19f29-185">The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value.</span></span> <span data-ttu-id="19f29-186">Você pode substituir o operador `eq` no **value** por qualquer um dos outros operadores (`ne`,`ge`, `gt`, `le` ou `lt`) que se aplicam aos valores numéricos.</span><span class="sxs-lookup"><span data-stu-id="19f29-186">You can substitute the `eq` operator on the **value** by any one of the other operators (`ne`,`ge`, `gt`, `le`, or `lt`) that apply to numeric values.</span></span>
+<span data-ttu-id="28284-185">As linhas de sintaxe a seguir mostram um filtro que usa um operador `eq` na id e outro operador `eq` no valor da propriedade.</span><span class="sxs-lookup"><span data-stu-id="28284-185">The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value.</span></span> <span data-ttu-id="28284-186">Você pode substituir o operador `eq` no **value** por qualquer um dos outros operadores (`ne`,`ge`, `gt`, `le` ou `lt`) que se aplicam aos valores numéricos.</span><span class="sxs-lookup"><span data-stu-id="28284-186">You can substitute the `eq` operator on the **value** by any one of the other operators (`ne`,`ge`, `gt`, `le`, or `lt`) that apply to numeric values.</span></span>
 
-<span data-ttu-id="19f29-187">Obtenha instâncias de **message**:</span><span class="sxs-lookup"><span data-stu-id="19f29-187">Get **message** instances:</span></span>
+<span data-ttu-id="28284-187">Obtenha instâncias de **message**:</span><span class="sxs-lookup"><span data-stu-id="28284-187">Get **message** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="19f29-188">Acesse as instâncias de **mailFolder**:</span><span class="sxs-lookup"><span data-stu-id="19f29-188">Get **mailFolder** instances:</span></span>
+<span data-ttu-id="28284-188">Acesse as instâncias de **mailFolder**:</span><span class="sxs-lookup"><span data-stu-id="28284-188">Get **mailFolder** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-<span data-ttu-id="19f29-189">Obtenha instâncias de **event**:</span><span class="sxs-lookup"><span data-stu-id="19f29-189">Get **event** instances:</span></span>
+<span data-ttu-id="28284-189">Obtenha instâncias de **event**:</span><span class="sxs-lookup"><span data-stu-id="28284-189">Get **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="19f29-190">Acesse as instâncias de **calendar**:</span><span class="sxs-lookup"><span data-stu-id="19f29-190">Get **calendar** instances:</span></span>
+<span data-ttu-id="28284-190">Acesse as instâncias de **calendar**:</span><span class="sxs-lookup"><span data-stu-id="28284-190">Get **calendar** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="19f29-191">Acesse as instâncias de **contact**:</span><span class="sxs-lookup"><span data-stu-id="19f29-191">Get **contact** instances:</span></span>
+<span data-ttu-id="28284-191">Acesse as instâncias de **contact**:</span><span class="sxs-lookup"><span data-stu-id="28284-191">Get **contact** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -151,31 +151,31 @@ GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties
 GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="19f29-192">Acesse as instâncias de **contactFolder**:</span><span class="sxs-lookup"><span data-stu-id="19f29-192">Get **contactFolder** instances:</span></span>
+<span data-ttu-id="28284-192">Acesse as instâncias de **contactFolder**:</span><span class="sxs-lookup"><span data-stu-id="28284-192">Get **contactFolder** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="19f29-193">Obtenha instâncias de **group event**:</span><span class="sxs-lookup"><span data-stu-id="19f29-193">Get group **event** instances:</span></span>
+<span data-ttu-id="28284-193">Obtenha instâncias de **group event**:</span><span class="sxs-lookup"><span data-stu-id="28284-193">Get group **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-<span data-ttu-id="19f29-194">Acesse as instâncias de **postar** em grupo:</span><span class="sxs-lookup"><span data-stu-id="19f29-194">Get group **post** instances:</span></span>
+<span data-ttu-id="28284-194">Acesse as instâncias de **postar** em grupo:</span><span class="sxs-lookup"><span data-stu-id="28284-194">Get group **post** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-#### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a><span data-ttu-id="19f29-195">Instâncias de recurso GET com propriedades estendidas de cadeia de caracteres digitados que correspondem a um filtro</span><span class="sxs-lookup"><span data-stu-id="19f29-195">GET resource instances with string-typed extended properties matching a filter</span></span>
+#### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a><span data-ttu-id="28284-195">Instâncias de recurso GET com propriedades estendidas de cadeia de caracteres digitados que correspondem a um filtro</span><span class="sxs-lookup"><span data-stu-id="28284-195">GET resource instances with string-typed extended properties matching a filter</span></span>
 
-<span data-ttu-id="19f29-196">Acesse as instâncias do recurso **message** ou **event** que têm uma propriedade estendida de cadeia de caracteres digitados que correspondem a um filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-196">Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter.</span></span> <span data-ttu-id="19f29-197">O filtro usa um operador `eq` na propriedade **id** e um dos seguintes operadores na propriedade **valor**: `contains`, `startswith`, `eq` ou `ne`.</span><span class="sxs-lookup"><span data-stu-id="19f29-197">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`.</span></span> <span data-ttu-id="19f29-198">Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.</span><span class="sxs-lookup"><span data-stu-id="19f29-198">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
+<span data-ttu-id="28284-196">Acesse as instâncias do recurso **message** ou **event** que têm uma propriedade estendida de cadeia de caracteres digitados que correspondem a um filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-196">Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter.</span></span> <span data-ttu-id="28284-197">O filtro usa um operador `eq` na propriedade **id** e um dos seguintes operadores na propriedade **valor**: `contains`, `startswith`, `eq` ou `ne`.</span><span class="sxs-lookup"><span data-stu-id="28284-197">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`.</span></span> <span data-ttu-id="28284-198">Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.</span><span class="sxs-lookup"><span data-stu-id="28284-198">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
 
 
-<span data-ttu-id="19f29-199">Acesse as instâncias de **mensagem**:</span><span class="sxs-lookup"><span data-stu-id="19f29-199">Get **message** instances:</span></span>
+<span data-ttu-id="28284-199">Acesse as instâncias de **mensagem**:</span><span class="sxs-lookup"><span data-stu-id="28284-199">Get **message** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -195,7 +195,7 @@ GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-<span data-ttu-id="19f29-200">Acesse as instâncias de **event**:</span><span class="sxs-lookup"><span data-stu-id="19f29-200">Get **event** instances:</span></span>
+<span data-ttu-id="28284-200">Acesse as instâncias de **event**:</span><span class="sxs-lookup"><span data-stu-id="28284-200">Get **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -211,7 +211,7 @@ GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-<span data-ttu-id="19f29-201">Acesse as instâncias de **group event**:</span><span class="sxs-lookup"><span data-stu-id="19f29-201">Get group **event** instances:</span></span>
+<span data-ttu-id="28284-201">Acesse as instâncias de **group event**:</span><span class="sxs-lookup"><span data-stu-id="28284-201">Get group **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -220,35 +220,37 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-## <a name="path-parameters"></a><span data-ttu-id="19f29-202">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="19f29-202">Path parameters</span></span>
-|<span data-ttu-id="19f29-203">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="19f29-203">Parameter</span></span>|<span data-ttu-id="19f29-204">Tipo</span><span class="sxs-lookup"><span data-stu-id="19f29-204">Type</span></span>|<span data-ttu-id="19f29-205">Descrição</span><span class="sxs-lookup"><span data-stu-id="19f29-205">Description</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="28284-202">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="28284-202">Path parameters</span></span>
+|<span data-ttu-id="28284-203">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="28284-203">Parameter</span></span>|<span data-ttu-id="28284-204">Tipo</span><span class="sxs-lookup"><span data-stu-id="28284-204">Type</span></span>|<span data-ttu-id="28284-205">Descrição</span><span class="sxs-lookup"><span data-stu-id="28284-205">Description</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="19f29-206">id_value</span><span class="sxs-lookup"><span data-stu-id="19f29-206">id_value</span></span>|<span data-ttu-id="19f29-207">String</span><span class="sxs-lookup"><span data-stu-id="19f29-207">String</span></span>|<span data-ttu-id="19f29-p109">A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="19f29-p109">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
-|<span data-ttu-id="19f29-212">property_value</span><span class="sxs-lookup"><span data-stu-id="19f29-212">property_value</span></span> |<span data-ttu-id="19f29-213">String</span><span class="sxs-lookup"><span data-stu-id="19f29-213">String</span></span>|<span data-ttu-id="19f29-214">O valor da propriedade estendida a ser correspondida.</span><span class="sxs-lookup"><span data-stu-id="19f29-214">The value of the extended property to match.</span></span> <span data-ttu-id="19f29-215">Obrigatório quando indicado na seção **Solicitação HTTP** acima.</span><span class="sxs-lookup"><span data-stu-id="19f29-215">Required where listed in the **HTTP request** section above.</span></span> <span data-ttu-id="19f29-216">Se {property_value} não for uma cadeia de caracteres, converta o `ep/value` para o tipo de dado Edm apropriado ao compará-lo com {property_value}.</span><span class="sxs-lookup"><span data-stu-id="19f29-216">If {property_value} is not a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with {property_value}.</span></span> <span data-ttu-id="19f29-217">Confira exemplos na [solicitação 4](#request-4) abaixo.</span><span class="sxs-lookup"><span data-stu-id="19f29-217">See [request 4](#request-4) below for examples.</span></span> |
+|<span data-ttu-id="28284-206">id_value</span><span class="sxs-lookup"><span data-stu-id="28284-206">id_value</span></span>|<span data-ttu-id="28284-207">String</span><span class="sxs-lookup"><span data-stu-id="28284-207">String</span></span>|<span data-ttu-id="28284-p109">A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="28284-p109">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
+|<span data-ttu-id="28284-212">property_value</span><span class="sxs-lookup"><span data-stu-id="28284-212">property_value</span></span> |<span data-ttu-id="28284-213">String</span><span class="sxs-lookup"><span data-stu-id="28284-213">String</span></span>|<span data-ttu-id="28284-214">O valor da propriedade estendida a ser correspondida.</span><span class="sxs-lookup"><span data-stu-id="28284-214">The value of the extended property to match.</span></span> <span data-ttu-id="28284-215">Obrigatório quando indicado na seção **Solicitação HTTP** acima.</span><span class="sxs-lookup"><span data-stu-id="28284-215">Required where listed in the **HTTP request** section above.</span></span> <span data-ttu-id="28284-216">Se {property_value} não for uma cadeia de caracteres, converta o `ep/value` para o tipo de dado Edm apropriado ao compará-lo com {property_value}.</span><span class="sxs-lookup"><span data-stu-id="28284-216">If {property_value} is not a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with {property_value}.</span></span> <span data-ttu-id="28284-217">Confira exemplos na [solicitação 4](#request-4) abaixo.</span><span class="sxs-lookup"><span data-stu-id="28284-217">See [request 4](#request-4) below for examples.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="19f29-218">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="19f29-218">Request headers</span></span>
-| <span data-ttu-id="19f29-219">Nome</span><span class="sxs-lookup"><span data-stu-id="19f29-219">Name</span></span>      |<span data-ttu-id="19f29-220">Descrição</span><span class="sxs-lookup"><span data-stu-id="19f29-220">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="28284-218">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="28284-218">Request headers</span></span>
+| <span data-ttu-id="28284-219">Nome</span><span class="sxs-lookup"><span data-stu-id="28284-219">Name</span></span>      |<span data-ttu-id="28284-220">Descrição</span><span class="sxs-lookup"><span data-stu-id="28284-220">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="19f29-221">Autorização</span><span class="sxs-lookup"><span data-stu-id="19f29-221">Authorization</span></span>  | <span data-ttu-id="19f29-p111">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="19f29-p111">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="28284-221">Autorização</span><span class="sxs-lookup"><span data-stu-id="28284-221">Authorization</span></span>  | <span data-ttu-id="28284-p111">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="28284-p111">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="19f29-224">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="19f29-224">Request body</span></span>
-<span data-ttu-id="19f29-225">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="19f29-225">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="28284-224">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="28284-224">Request body</span></span>
+<span data-ttu-id="28284-225">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="28284-225">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="19f29-226">Resposta</span><span class="sxs-lookup"><span data-stu-id="19f29-226">Response</span></span>
+## <a name="response"></a><span data-ttu-id="28284-226">Resposta</span><span class="sxs-lookup"><span data-stu-id="28284-226">Response</span></span>
 
-<span data-ttu-id="19f29-227">Se tiver êxito, este método retornará um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="19f29-227">If successful, this method returns a `200 OK` response code.</span></span>
+<span data-ttu-id="28284-227">Se tiver êxito, este método retornará um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="28284-227">If successful, this method returns a `200 OK` response code.</span></span>
 
-#### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a><span data-ttu-id="19f29-228">Instância de recurso GET expandida com uma propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="19f29-228">GET resource instance expanded with a matching extended property</span></span>
-<span data-ttu-id="19f29-229">O corpo da resposta inclui um objeto que representa a instância de recurso solicitada, expandida com o objeto [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) correspondente.</span><span class="sxs-lookup"><span data-stu-id="19f29-229">The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.</span></span>
+#### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a><span data-ttu-id="28284-228">Instância de recurso GET expandida com uma propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="28284-228">GET resource instance expanded with a matching extended property</span></span>
+<span data-ttu-id="28284-229">O corpo da resposta inclui um objeto que representa a instância de recurso solicitada, expandida com o objeto [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) correspondente.</span><span class="sxs-lookup"><span data-stu-id="28284-229">The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.</span></span>
   
-#### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a><span data-ttu-id="19f29-230">Instâncias de recurso GET que contenham uma propriedade estendida correspondente a um filtro</span><span class="sxs-lookup"><span data-stu-id="19f29-230">GET resource instances that contain an extended property matching a filter</span></span>
-<span data-ttu-id="19f29-231">O corpo da resposta inclui um ou mais objetos que representam as instâncias de recursos contendo uma propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="19f29-231">The response body includes one or more objects representing the resource instances that contain a matching extended property.</span></span> <span data-ttu-id="19f29-232">O corpo da resposta não inclui a propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="19f29-232">The response body does not include the extended property.</span></span>
+#### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a><span data-ttu-id="28284-230">Instâncias de recurso GET que contenham uma propriedade estendida correspondente a um filtro</span><span class="sxs-lookup"><span data-stu-id="28284-230">GET resource instances that contain an extended property matching a filter</span></span>
+<span data-ttu-id="28284-231">O corpo da resposta inclui um ou mais objetos que representam as instâncias de recursos contendo uma propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="28284-231">The response body includes one or more objects representing the resource instances that contain a matching extended property.</span></span> <span data-ttu-id="28284-232">O corpo da resposta não inclui a propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="28284-232">The response body does not include the extended property.</span></span>
 
-## <a name="example"></a><span data-ttu-id="19f29-233">Exemplo</span><span class="sxs-lookup"><span data-stu-id="19f29-233">Example</span></span>
-#### <a name="request-1"></a><span data-ttu-id="19f29-234">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="19f29-234">Request 1</span></span>
+## <a name="example"></a><span data-ttu-id="28284-233">Exemplo</span><span class="sxs-lookup"><span data-stu-id="28284-233">Example</span></span>
+#### <a name="request-1"></a><span data-ttu-id="28284-234">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="28284-234">Request 1</span></span>
 
-<span data-ttu-id="19f29-p113">O primeiro exemplo obtém e expande a mensagem especificada, incluindo uma propriedade estendida de valor único. O filtro retorna a propriedade estendida cuja **id** corresponde à cadeia de caracteres `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (com a URL de codificação removida aqui para facilitar a leitura).</span><span class="sxs-lookup"><span data-stu-id="19f29-p113">The first example gets and expands the specified message by including a single-value extended property. The filter returns the extended property that has its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
+<span data-ttu-id="28284-p113">O primeiro exemplo obtém e expande a mensagem especificada, incluindo uma propriedade estendida de valor único. O filtro retorna a propriedade estendida cuja **id** corresponde à cadeia de caracteres `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (com a URL de codificação removida aqui para facilitar a leitura).</span><span class="sxs-lookup"><span data-stu-id="28284-p113">The first example gets and expands the specified message by including a single-value extended property. The filter returns the extended property that has its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="28284-237">HTTP</span><span class="sxs-lookup"><span data-stu-id="28284-237">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGE1M2_bs88AACHsLqWAAA="],
@@ -257,10 +259,24 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-#### <a name="response-1"></a><span data-ttu-id="19f29-237">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="19f29-237">Response 1</span></span>
-<span data-ttu-id="19f29-238">O corpo da resposta inclui todas as propriedades da mensagem especificada e a propriedade estendida retornada do filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-238">The response body includes all the properties of the specified message and extended property returned from the filter.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="28284-238">C#</span><span class="sxs-lookup"><span data-stu-id="28284-238">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-singlevaluelegacyextendedproperty-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="19f29-p114">Observação: O objeto **message** mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="19f29-p114">Note: The **message** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="28284-239">Javascript</span><span class="sxs-lookup"><span data-stu-id="28284-239">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-singlevaluelegacyextendedproperty-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="28284-240">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="28284-240">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-singlevaluelegacyextendedproperty-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response-1"></a><span data-ttu-id="28284-241">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="28284-241">Response 1</span></span>
+<span data-ttu-id="28284-242">O corpo da resposta inclui todas as propriedades da mensagem especificada e a propriedade estendida retornada do filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-242">The response body includes all the properties of the specified message and extended property returned from the filter.</span></span>
+
+<span data-ttu-id="28284-p114">Observação: O objeto **message** mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="28284-p114">Note: The **message** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -300,66 +316,54 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="19f29-241">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="19f29-241">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="19f29-242">C#</span><span class="sxs-lookup"><span data-stu-id="19f29-242">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="19f29-243">Javascript</span><span class="sxs-lookup"><span data-stu-id="19f29-243">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Javascript-snippets.md)]
+#### <a name="request-2"></a><span data-ttu-id="28284-245">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="28284-245">Request 2</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="19f29-244">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="19f29-244">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Objective-C-snippets.md)]
----
+<span data-ttu-id="28284-246">O segundo exemplo obtém mensagens que possuem a propriedade estendida de valor único com cadeia de caracteres digitada especificada no filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-246">The second example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="28284-247">O filtro procura a propriedade estendida com:</span><span class="sxs-lookup"><span data-stu-id="28284-247">The filter looks for the extended property that has:</span></span>
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+- <span data-ttu-id="28284-248">**id** igual à cadeia de caracteres `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (com a URL de codificação aqui removida para facilitar a leitura).</span><span class="sxs-lookup"><span data-stu-id="28284-248">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
 
-#### <a name="request-2"></a><span data-ttu-id="19f29-245">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="19f29-245">Request 2</span></span>
-
-<span data-ttu-id="19f29-246">O segundo exemplo obtém mensagens que possuem a propriedade estendida de valor único com cadeia de caracteres digitada especificada no filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-246">The second example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="19f29-247">O filtro procura a propriedade estendida com:</span><span class="sxs-lookup"><span data-stu-id="19f29-247">The filter looks for the extended property that has:</span></span>
-
-- <span data-ttu-id="19f29-248">**id** igual à cadeia de caracteres `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (com a URL de codificação aqui removida para facilitar a leitura).</span><span class="sxs-lookup"><span data-stu-id="19f29-248">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
-
-- <span data-ttu-id="19f29-249">O **valor** igual à cadeia de caracteres `Green`.</span><span class="sxs-lookup"><span data-stu-id="19f29-249">Its **value** equal to the string `Green`.</span></span>
+- <span data-ttu-id="28284-249">O **valor** igual à cadeia de caracteres `Green`.</span><span class="sxs-lookup"><span data-stu-id="28284-249">Its **value** equal to the string `Green`.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
-#### <a name="response-2"></a><span data-ttu-id="19f29-250">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="19f29-250">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="28284-250">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="28284-250">Response 2</span></span>
 
-<span data-ttu-id="19f29-p116">Uma resposta bem-sucedida é indicada por um código de resposta `HTTP 200 OK`, e o corpo da resposta inclui todas as propriedades das mensagens cuja propriedade estendida corresponde ao filtro. O corpo da resposta é semelhante à resposta da [obtenção de uma coleção de mensagens](../api/user-list-messages.md). A resposta não inclui a propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="19f29-p116">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter. The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not include the matching extended property.</span></span>
+<span data-ttu-id="28284-p116">Uma resposta bem-sucedida é indicada por um código de resposta `HTTP 200 OK`, e o corpo da resposta inclui todas as propriedades das mensagens cuja propriedade estendida corresponde ao filtro. O corpo da resposta é semelhante à resposta da [obtenção de uma coleção de mensagens](../api/user-list-messages.md). A resposta não inclui a propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="28284-p116">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter. The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not include the matching extended property.</span></span>
 
 
-#### <a name="request-3"></a><span data-ttu-id="19f29-254">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="19f29-254">Request 3</span></span>
+#### <a name="request-3"></a><span data-ttu-id="28284-254">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="28284-254">Request 3</span></span>
 
-<span data-ttu-id="19f29-255">O terceiro exemplo obtém mensagens que possuem a propriedade estendida de valor único com cadeia de caracteres digitada especificada no filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-255">The third example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="19f29-256">O filtro procura a propriedade estendida com:</span><span class="sxs-lookup"><span data-stu-id="19f29-256">The filter looks for the extended property that has:</span></span>
+<span data-ttu-id="28284-255">O terceiro exemplo obtém mensagens que possuem a propriedade estendida de valor único com cadeia de caracteres digitada especificada no filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-255">The third example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="28284-256">O filtro procura a propriedade estendida com:</span><span class="sxs-lookup"><span data-stu-id="28284-256">The filter looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="19f29-257">**id** igual à cadeia de caracteres `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (com a URL de codificação aqui removida para facilitar a leitura).</span><span class="sxs-lookup"><span data-stu-id="19f29-257">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
+- <span data-ttu-id="28284-257">**id** igual à cadeia de caracteres `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (com a URL de codificação aqui removida para facilitar a leitura).</span><span class="sxs-lookup"><span data-stu-id="28284-257">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
 
-- <span data-ttu-id="19f29-258">O **value** que contém a cadeia de caracteres `green`.</span><span class="sxs-lookup"><span data-stu-id="19f29-258">Its **value** containing the string `green`.</span></span> 
+- <span data-ttu-id="28284-258">O **value** que contém a cadeia de caracteres `green`.</span><span class="sxs-lookup"><span data-stu-id="28284-258">Its **value** containing the string `green`.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
 ```
 
-#### <a name="response-3"></a><span data-ttu-id="19f29-259">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="19f29-259">Response 3</span></span>
+#### <a name="response-3"></a><span data-ttu-id="28284-259">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="28284-259">Response 3</span></span>
 
-<span data-ttu-id="19f29-260">Uma resposta bem-sucedida é indicada por um código de resposta `HTTP 200 OK` e o corpo da resposta inclui todas as propriedades das mensagens cuja propriedade estendida corresponde ao filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-260">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter.</span></span> <span data-ttu-id="19f29-261">Por exemplo, uma mensagem com uma propriedade estendida de valor único com a **id** igual à cadeia de caracteres `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` e ao **value** `Light green` corresponderia ao filtro e seria incluída na resposta.</span><span class="sxs-lookup"><span data-stu-id="19f29-261">For example, a message that has a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and the **value** `Light green`, would match the filter and be included in the response.</span></span>
+<span data-ttu-id="28284-260">Uma resposta bem-sucedida é indicada por um código de resposta `HTTP 200 OK` e o corpo da resposta inclui todas as propriedades das mensagens cuja propriedade estendida corresponde ao filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-260">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter.</span></span> <span data-ttu-id="28284-261">Por exemplo, uma mensagem com uma propriedade estendida de valor único com a **id** igual à cadeia de caracteres `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` e ao **value** `Light green` corresponderia ao filtro e seria incluída na resposta.</span><span class="sxs-lookup"><span data-stu-id="28284-261">For example, a message that has a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and the **value** `Light green`, would match the filter and be included in the response.</span></span>
 
-<span data-ttu-id="19f29-262">O corpo da resposta é semelhante à resposta da [obtenção de uma coleção de mensagens](../api/user-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="19f29-262">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="19f29-263">A resposta não inclui a propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="19f29-263">The response does not include the matching extended property.</span></span>
+<span data-ttu-id="28284-262">O corpo da resposta é semelhante à resposta da [obtenção de uma coleção de mensagens](../api/user-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="28284-262">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="28284-263">A resposta não inclui a propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="28284-263">The response does not include the matching extended property.</span></span>
 
 
-#### <a name="request-4"></a><span data-ttu-id="19f29-264">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="19f29-264">Request 4</span></span>
+#### <a name="request-4"></a><span data-ttu-id="28284-264">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="28284-264">Request 4</span></span>
 
-<span data-ttu-id="19f29-265">Os próximos dois exemplos mostram como acessar mensagens que possuam propriedades estendidas de valor único sem cadeia de caracteres digitada.</span><span class="sxs-lookup"><span data-stu-id="19f29-265">The next 2 examples show how to get messages that have non-string typed single-value extended properties.</span></span> <span data-ttu-id="19f29-266">Para facilitar a leitura, elas não incluem a codificação de URL necessária.</span><span class="sxs-lookup"><span data-stu-id="19f29-266">For ease of reading, they do not include the necessary URL encoding.</span></span>
+<span data-ttu-id="28284-265">Os próximos dois exemplos mostram como acessar mensagens que possuam propriedades estendidas de valor único sem cadeia de caracteres digitada.</span><span class="sxs-lookup"><span data-stu-id="28284-265">The next 2 examples show how to get messages that have non-string typed single-value extended properties.</span></span> <span data-ttu-id="28284-266">Para facilitar a leitura, elas não incluem a codificação de URL necessária.</span><span class="sxs-lookup"><span data-stu-id="28284-266">For ease of reading, they do not include the necessary URL encoding.</span></span>
 
-<span data-ttu-id="19f29-267">O exemplo a seguir mostra um filtro que procura a propriedade estendida com:</span><span class="sxs-lookup"><span data-stu-id="19f29-267">The following example shows a filter that looks for the extended property that has:</span></span>
+<span data-ttu-id="28284-267">O exemplo a seguir mostra um filtro que procura a propriedade estendida com:</span><span class="sxs-lookup"><span data-stu-id="28284-267">The following example shows a filter that looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="19f29-268">O **id** correspondente à cadeia de caracteres `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span><span class="sxs-lookup"><span data-stu-id="19f29-268">Its **id** matching the string `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span></span>
+- <span data-ttu-id="28284-268">O **id** correspondente à cadeia de caracteres `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span><span class="sxs-lookup"><span data-stu-id="28284-268">Its **id** matching the string `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span></span>
 
-- <span data-ttu-id="19f29-269">Sendo o **valor** o GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span><span class="sxs-lookup"><span data-stu-id="19f29-269">Its **value** being the GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span></span> <span data-ttu-id="19f29-270">Para comparar o valor da propriedade com um GUID, converta o `ep/value` para `Edm.Guid`.</span><span class="sxs-lookup"><span data-stu-id="19f29-270">To compare the property value with a GUID, cast `ep/value` to `Edm.Guid`.</span></span>
+- <span data-ttu-id="28284-269">Sendo o **valor** o GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span><span class="sxs-lookup"><span data-stu-id="28284-269">Its **value** being the GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span></span> <span data-ttu-id="28284-270">Para comparar o valor da propriedade com um GUID, converta o `ep/value` para `Edm.Guid`.</span><span class="sxs-lookup"><span data-stu-id="28284-270">To compare the property value with a GUID, cast `ep/value` to `Edm.Guid`.</span></span>
 
 
 <!-- { "blockType": "ignored" } -->
@@ -367,11 +371,11 @@ GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProp
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid' and cast(ep/value, Edm.Guid) eq (b9cf8971-7d55-4b73-9ffa-a584611b600b))
 ```
 
-<span data-ttu-id="19f29-271">O próximo exemplo mostra um filtro que procura a propriedade estendida com:</span><span class="sxs-lookup"><span data-stu-id="19f29-271">The next example shows a filter that looks for the extended property that has:</span></span>
+<span data-ttu-id="28284-271">O próximo exemplo mostra um filtro que procura a propriedade estendida com:</span><span class="sxs-lookup"><span data-stu-id="28284-271">The next example shows a filter that looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="19f29-272">O **id** correspondente à cadeia de caracteres `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span><span class="sxs-lookup"><span data-stu-id="19f29-272">Its **id** matching the string `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span></span>
+- <span data-ttu-id="28284-272">O **id** correspondente à cadeia de caracteres `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span><span class="sxs-lookup"><span data-stu-id="28284-272">Its **id** matching the string `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span></span>
 
-- <span data-ttu-id="19f29-273">O **valor** igual inteiro 12.</span><span class="sxs-lookup"><span data-stu-id="19f29-273">Its **value** equal to the integer 12.</span></span> <span data-ttu-id="19f29-274">Para comparar o valor da propriedade com um número inteiro, converta o `ep/value` para `Edm.Int32`.</span><span class="sxs-lookup"><span data-stu-id="19f29-274">To compare the property value with an integer, cast `ep/value` to `Edm.Int32`.</span></span>
+- <span data-ttu-id="28284-273">O **valor** igual inteiro 12.</span><span class="sxs-lookup"><span data-stu-id="28284-273">Its **value** equal to the integer 12.</span></span> <span data-ttu-id="28284-274">Para comparar o valor da propriedade com um número inteiro, converta o `ep/value` para `Edm.Int32`.</span><span class="sxs-lookup"><span data-stu-id="28284-274">To compare the property value with an integer, cast `ep/value` to `Edm.Int32`.</span></span>
 
 
 <!-- { "blockType": "ignored" } -->
@@ -380,9 +384,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 ```
 
 
-#### <a name="response-4"></a><span data-ttu-id="19f29-275">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="19f29-275">Response 4</span></span>
+#### <a name="response-4"></a><span data-ttu-id="28284-275">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="28284-275">Response 4</span></span>
 
-<span data-ttu-id="19f29-276">Para cada um dos dois exemplos anteriores, uma resposta bem-sucedida é indicada por um código de resposta `HTTP 200 OK`, e o corpo da resposta inclui todas as propriedades das mensagens cuja propriedade estendida corresponde ao filtro.</span><span class="sxs-lookup"><span data-stu-id="19f29-276">For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the corresponding filter.</span></span> <span data-ttu-id="19f29-277">O corpo da resposta é semelhante à resposta da [obtenção de uma coleção de mensagens](../api/user-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="19f29-277">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="19f29-278">A resposta não inclui a propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="19f29-278">The response does not include the matching extended property.</span></span>
+<span data-ttu-id="28284-276">Para cada um dos dois exemplos anteriores, uma resposta bem-sucedida é indicada por um código de resposta `HTTP 200 OK`, e o corpo da resposta inclui todas as propriedades das mensagens cuja propriedade estendida corresponde ao filtro.</span><span class="sxs-lookup"><span data-stu-id="28284-276">For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the corresponding filter.</span></span> <span data-ttu-id="28284-277">O corpo da resposta é semelhante à resposta da [obtenção de uma coleção de mensagens](../api/user-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="28284-277">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="28284-278">A resposta não inclui a propriedade estendida correspondente.</span><span class="sxs-lookup"><span data-stu-id="28284-278">The response does not include the matching extended property.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -393,8 +397,5 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

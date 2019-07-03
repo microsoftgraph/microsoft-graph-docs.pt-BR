@@ -4,68 +4,70 @@ description: Validar se o nome de exibição ou o apelido de email de um grupo d
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ecf5be372cb00df26bf6ae14fdba933782040bc6
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 7da24d3a28c8640f231b9d94c295e6a16abe040b
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262801"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35442668"
 ---
-# <a name="group-validateproperties"></a><span data-ttu-id="89f96-105">Group: ValidateProperties</span><span class="sxs-lookup"><span data-stu-id="89f96-105">group: validateProperties</span></span>
+# <a name="group-validateproperties"></a><span data-ttu-id="a6c00-105">Group: ValidateProperties</span><span class="sxs-lookup"><span data-stu-id="a6c00-105">group: validateProperties</span></span>
 
-<span data-ttu-id="89f96-106">Validar se o nome de exibição ou o apelido de email de um grupo do Office 365 está em conformidade com as políticas de nomenclatura.</span><span class="sxs-lookup"><span data-stu-id="89f96-106">Validate if an Office 365 group's display name or mail nickname complies with naming policies.</span></span> <span data-ttu-id="89f96-107">Os clientes podem usar a API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **Atualizar** um grupo do Office 365.</span><span class="sxs-lookup"><span data-stu-id="89f96-107">Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group.</span></span> <span data-ttu-id="89f96-108">Para validar as propriedades antes de criar um grupo, use a [função ValidateProperties](directoryobject-validateproperties.md) para objetos de diretório.</span><span class="sxs-lookup"><span data-stu-id="89f96-108">For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.</span></span>
+<span data-ttu-id="a6c00-106">Validar se o nome de exibição ou o apelido de email de um grupo do Office 365 está em conformidade com as políticas de nomenclatura.</span><span class="sxs-lookup"><span data-stu-id="a6c00-106">Validate if an Office 365 group's display name or mail nickname complies with naming policies.</span></span> <span data-ttu-id="a6c00-107">Os clientes podem usar a API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **Atualizar** um grupo do Office 365.</span><span class="sxs-lookup"><span data-stu-id="a6c00-107">Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group.</span></span> <span data-ttu-id="a6c00-108">Para validar as propriedades antes de criar um grupo, use a [função ValidateProperties](directoryobject-validateproperties.md) para objetos de diretório.</span><span class="sxs-lookup"><span data-stu-id="a6c00-108">For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.</span></span>
 
-<span data-ttu-id="89f96-109">As seguintes validações são realizadas para o nome de exibição e as propriedades de apelido de email:</span><span class="sxs-lookup"><span data-stu-id="89f96-109">The following validations are performed for the display name and mail nickname properties:</span></span> 
-1. <span data-ttu-id="89f96-110">Validar a política de nomenclatura de prefixo e sufixo</span><span class="sxs-lookup"><span data-stu-id="89f96-110">Validate the prefix and suffix naming policy</span></span>
-2. <span data-ttu-id="89f96-111">Validar a política personalizada de palavras banidas</span><span class="sxs-lookup"><span data-stu-id="89f96-111">Validate the custom banned words policy</span></span>
+<span data-ttu-id="a6c00-109">As seguintes validações são realizadas para o nome de exibição e as propriedades de apelido de email:</span><span class="sxs-lookup"><span data-stu-id="a6c00-109">The following validations are performed for the display name and mail nickname properties:</span></span> 
+1. <span data-ttu-id="a6c00-110">Validar a política de nomenclatura de prefixo e sufixo</span><span class="sxs-lookup"><span data-stu-id="a6c00-110">Validate the prefix and suffix naming policy</span></span>
+2. <span data-ttu-id="a6c00-111">Validar a política personalizada de palavras banidas</span><span class="sxs-lookup"><span data-stu-id="a6c00-111">Validate the custom banned words policy</span></span>
 
-<span data-ttu-id="89f96-112">Essa API retorna com a primeira falha encontrada.</span><span class="sxs-lookup"><span data-stu-id="89f96-112">This API returns with the first failure encountered.</span></span> <span data-ttu-id="89f96-113">Se uma ou mais propriedades falharem várias validações, somente a propriedade com a primeira falha de validação será retornada.</span><span class="sxs-lookup"><span data-stu-id="89f96-113">If one or more properties fail multiple validations, only the property with the first validation failure is returned.</span></span> <span data-ttu-id="89f96-114">No entanto, você pode validar tanto o apelido de email quanto o nome de exibição e receber uma coleção de erros de validação se você estiver validando apenas o prefixo e a política de nomenclatura de sufixo.</span><span class="sxs-lookup"><span data-stu-id="89f96-114">However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.</span></span>
+<span data-ttu-id="a6c00-112">Essa API retorna com a primeira falha encontrada.</span><span class="sxs-lookup"><span data-stu-id="a6c00-112">This API returns with the first failure encountered.</span></span> <span data-ttu-id="a6c00-113">Se uma ou mais propriedades falharem várias validações, somente a propriedade com a primeira falha de validação será retornada.</span><span class="sxs-lookup"><span data-stu-id="a6c00-113">If one or more properties fail multiple validations, only the property with the first validation failure is returned.</span></span> <span data-ttu-id="a6c00-114">No entanto, você pode validar tanto o apelido de email quanto o nome de exibição e receber uma coleção de erros de validação se você estiver validando apenas o prefixo e a política de nomenclatura de sufixo.</span><span class="sxs-lookup"><span data-stu-id="a6c00-114">However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="89f96-115">Permissões</span><span class="sxs-lookup"><span data-stu-id="89f96-115">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a6c00-115">Permissões</span><span class="sxs-lookup"><span data-stu-id="a6c00-115">Permissions</span></span>
 
-<span data-ttu-id="89f96-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="89f96-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a6c00-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a6c00-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="89f96-118">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="89f96-118">Permission type</span></span>      | <span data-ttu-id="89f96-119">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="89f96-119">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a6c00-118">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a6c00-118">Permission type</span></span>      | <span data-ttu-id="a6c00-119">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a6c00-119">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="89f96-120">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="89f96-120">Delegated (work or school account)</span></span> | <span data-ttu-id="89f96-121">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="89f96-121">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="89f96-122">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="89f96-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="89f96-123">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="89f96-123">Not supported.</span></span>    |
-|<span data-ttu-id="89f96-124">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="89f96-124">Application</span></span> | <span data-ttu-id="89f96-125">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="89f96-125">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="a6c00-120">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a6c00-120">Delegated (work or school account)</span></span> | <span data-ttu-id="a6c00-121">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a6c00-121">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a6c00-122">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a6c00-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a6c00-123">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a6c00-123">Not supported.</span></span>    |
+|<span data-ttu-id="a6c00-124">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a6c00-124">Application</span></span> | <span data-ttu-id="a6c00-125">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a6c00-125">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="89f96-126">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="89f96-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a6c00-126">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a6c00-126">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ``` http
 POST /groups/<id>/validateProperties
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="89f96-127">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="89f96-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a6c00-127">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a6c00-127">Request headers</span></span>
 
-| <span data-ttu-id="89f96-128">Nome</span><span class="sxs-lookup"><span data-stu-id="89f96-128">Name</span></span>           | <span data-ttu-id="89f96-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="89f96-129">Description</span></span>      |
+| <span data-ttu-id="a6c00-128">Nome</span><span class="sxs-lookup"><span data-stu-id="a6c00-128">Name</span></span>           | <span data-ttu-id="a6c00-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="a6c00-129">Description</span></span>      |
 |:---------------|:-----------------|
-| <span data-ttu-id="89f96-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="89f96-130">Authorization</span></span>  | <span data-ttu-id="89f96-131">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="89f96-131">Bearer {code}</span></span>    |
-| <span data-ttu-id="89f96-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="89f96-132">Content-Type</span></span>   | <span data-ttu-id="89f96-133">application/json</span><span class="sxs-lookup"><span data-stu-id="89f96-133">application/json</span></span> |
+| <span data-ttu-id="a6c00-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="a6c00-130">Authorization</span></span>  | <span data-ttu-id="a6c00-131">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="a6c00-131">Bearer {code}</span></span>    |
+| <span data-ttu-id="a6c00-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a6c00-132">Content-Type</span></span>   | <span data-ttu-id="a6c00-133">application/json</span><span class="sxs-lookup"><span data-stu-id="a6c00-133">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="89f96-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="89f96-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a6c00-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a6c00-134">Request body</span></span>
 
-<span data-ttu-id="89f96-135">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="89f96-135">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="a6c00-135">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a6c00-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="89f96-136">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="89f96-136">Parameter</span></span>    | <span data-ttu-id="89f96-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="89f96-137">Type</span></span>   |<span data-ttu-id="89f96-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="89f96-138">Description</span></span>|
+| <span data-ttu-id="a6c00-136">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a6c00-136">Parameter</span></span>    | <span data-ttu-id="a6c00-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="a6c00-137">Type</span></span>   |<span data-ttu-id="a6c00-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="a6c00-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="89f96-139">displayName</span><span class="sxs-lookup"><span data-stu-id="89f96-139">displayName</span></span>|<span data-ttu-id="89f96-140">String</span><span class="sxs-lookup"><span data-stu-id="89f96-140">String</span></span>| <span data-ttu-id="89f96-141">O nome de exibição do grupo a ser validado.</span><span class="sxs-lookup"><span data-stu-id="89f96-141">The display name of the group to validate.</span></span> <span data-ttu-id="89f96-142">A propriedade não é necessária individualmente.</span><span class="sxs-lookup"><span data-stu-id="89f96-142">The property is not individually required.</span></span> <span data-ttu-id="89f96-143">No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária.</span><span class="sxs-lookup"><span data-stu-id="89f96-143">However, at least one property (displayName or mailNickname) is required.</span></span> |
-|<span data-ttu-id="89f96-144">mailNickname</span><span class="sxs-lookup"><span data-stu-id="89f96-144">mailNickname</span></span>|<span data-ttu-id="89f96-145">String</span><span class="sxs-lookup"><span data-stu-id="89f96-145">String</span></span>| <span data-ttu-id="89f96-146">O apelido de email do grupo a ser validado.</span><span class="sxs-lookup"><span data-stu-id="89f96-146">The mail nickname of the group to validate.</span></span> <span data-ttu-id="89f96-147">A propriedade não é necessária individualmente.</span><span class="sxs-lookup"><span data-stu-id="89f96-147">The property is not individually required.</span></span> <span data-ttu-id="89f96-148">No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária.</span><span class="sxs-lookup"><span data-stu-id="89f96-148">However, at least one property (displayName or mailNickname) is required.</span></span> |
-|<span data-ttu-id="89f96-149">onBehalfOfUserId</span><span class="sxs-lookup"><span data-stu-id="89f96-149">onBehalfOfUserId</span></span>|<span data-ttu-id="89f96-150">Guid</span><span class="sxs-lookup"><span data-stu-id="89f96-150">Guid</span></span>| <span data-ttu-id="89f96-151">A ID de objeto do usuário a ser representada ao chamar a API.</span><span class="sxs-lookup"><span data-stu-id="89f96-151">The object ID of the user to impersonate when calling the API.</span></span> <span data-ttu-id="89f96-152">Os resultados de validação são para os atributos e funções do onBehalfOfUserId.</span><span class="sxs-lookup"><span data-stu-id="89f96-152">The validation results are for the onBehalfOfUserId's attributes and roles.</span></span> |
+|<span data-ttu-id="a6c00-139">displayName</span><span class="sxs-lookup"><span data-stu-id="a6c00-139">displayName</span></span>|<span data-ttu-id="a6c00-140">String</span><span class="sxs-lookup"><span data-stu-id="a6c00-140">String</span></span>| <span data-ttu-id="a6c00-141">O nome de exibição do grupo a ser validado.</span><span class="sxs-lookup"><span data-stu-id="a6c00-141">The display name of the group to validate.</span></span> <span data-ttu-id="a6c00-142">A propriedade não é necessária individualmente.</span><span class="sxs-lookup"><span data-stu-id="a6c00-142">The property is not individually required.</span></span> <span data-ttu-id="a6c00-143">No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária.</span><span class="sxs-lookup"><span data-stu-id="a6c00-143">However, at least one property (displayName or mailNickname) is required.</span></span> |
+|<span data-ttu-id="a6c00-144">mailNickname</span><span class="sxs-lookup"><span data-stu-id="a6c00-144">mailNickname</span></span>|<span data-ttu-id="a6c00-145">String</span><span class="sxs-lookup"><span data-stu-id="a6c00-145">String</span></span>| <span data-ttu-id="a6c00-146">O apelido de email do grupo a ser validado.</span><span class="sxs-lookup"><span data-stu-id="a6c00-146">The mail nickname of the group to validate.</span></span> <span data-ttu-id="a6c00-147">A propriedade não é necessária individualmente.</span><span class="sxs-lookup"><span data-stu-id="a6c00-147">The property is not individually required.</span></span> <span data-ttu-id="a6c00-148">No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária.</span><span class="sxs-lookup"><span data-stu-id="a6c00-148">However, at least one property (displayName or mailNickname) is required.</span></span> |
+|<span data-ttu-id="a6c00-149">onBehalfOfUserId</span><span class="sxs-lookup"><span data-stu-id="a6c00-149">onBehalfOfUserId</span></span>|<span data-ttu-id="a6c00-150">Guid</span><span class="sxs-lookup"><span data-stu-id="a6c00-150">Guid</span></span>| <span data-ttu-id="a6c00-151">A ID de objeto do usuário a ser representada ao chamar a API.</span><span class="sxs-lookup"><span data-stu-id="a6c00-151">The object ID of the user to impersonate when calling the API.</span></span> <span data-ttu-id="a6c00-152">Os resultados de validação são para os atributos e funções do onBehalfOfUserId.</span><span class="sxs-lookup"><span data-stu-id="a6c00-152">The validation results are for the onBehalfOfUserId's attributes and roles.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="89f96-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="89f96-153">Response</span></span>
-<span data-ttu-id="89f96-154">Se tiver êxito e não houver erros de validação, o método `204 No Content` retornará o código de resposta.</span><span class="sxs-lookup"><span data-stu-id="89f96-154">If successful and there are no validation errors, the method returns `204 No Content` response code.</span></span> <span data-ttu-id="89f96-155">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="89f96-155">It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a6c00-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="a6c00-153">Response</span></span>
+<span data-ttu-id="a6c00-154">Se tiver êxito e não houver erros de validação, o método `204 No Content` retornará o código de resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c00-154">If successful and there are no validation errors, the method returns `204 No Content` response code.</span></span> <span data-ttu-id="a6c00-155">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c00-155">It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="89f96-156">Se a solicitação for inválida, o método `400 Bad Request` retornará um código de resposta.</span><span class="sxs-lookup"><span data-stu-id="89f96-156">If the request is invalid, the method returns `400 Bad Request` response code.</span></span> <span data-ttu-id="89f96-157">Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="89f96-157">An error message with details about the invalid request is returned in the response body.</span></span>
+<span data-ttu-id="a6c00-156">Se a solicitação for inválida, o método `400 Bad Request` retornará um código de resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c00-156">If the request is invalid, the method returns `400 Bad Request` response code.</span></span> <span data-ttu-id="a6c00-157">Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c00-157">An error message with details about the invalid request is returned in the response body.</span></span>
 
-<span data-ttu-id="89f96-158">Se houver um erro de validação.</span><span class="sxs-lookup"><span data-stu-id="89f96-158">If there is a validation error.</span></span> <span data-ttu-id="89f96-159">O método retorna `422 Unprocessable Entity` um código de resposta.</span><span class="sxs-lookup"><span data-stu-id="89f96-159">The method returns `422 Unprocessable Entity` response code.</span></span> <span data-ttu-id="89f96-160">Uma mensagem de erro e um conjunto de detalhes de erro é retornado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="89f96-160">An error message and a collection of error details is returned in the response body.</span></span>
+<span data-ttu-id="a6c00-158">Se houver um erro de validação.</span><span class="sxs-lookup"><span data-stu-id="a6c00-158">If there is a validation error.</span></span> <span data-ttu-id="a6c00-159">O método retorna `422 Unprocessable Entity` um código de resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c00-159">The method returns `422 Unprocessable Entity` response code.</span></span> <span data-ttu-id="a6c00-160">Uma mensagem de erro e um conjunto de detalhes de erro é retornado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c00-160">An error message and a collection of error details is returned in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="89f96-161">Exemplos</span><span class="sxs-lookup"><span data-stu-id="89f96-161">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a6c00-161">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a6c00-161">Examples</span></span>
 
-<span data-ttu-id="89f96-162">Este é um exemplo de uma solicitação de validação bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="89f96-162">This is an example of a successful validation request.</span></span>
+<span data-ttu-id="a6c00-162">Este é um exemplo de uma solicitação de validação bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="a6c00-162">This is an example of a successful validation request.</span></span>
 
-### <a name="request"></a><span data-ttu-id="89f96-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="89f96-163">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a6c00-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a6c00-163">Request</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a6c00-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="a6c00-164">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_validateproperties"
@@ -81,8 +83,22 @@ Content-length: 132
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a6c00-165">C#</span><span class="sxs-lookup"><span data-stu-id="a6c00-165">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="89f96-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="89f96-164">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a6c00-166">Javascript</span><span class="sxs-lookup"><span data-stu-id="a6c00-166">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a6c00-167">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a6c00-167">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="a6c00-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="a6c00-168">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,22 +106,10 @@ Content-length: 132
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="89f96-165">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="89f96-165">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="89f96-166">C#</span><span class="sxs-lookup"><span data-stu-id="89f96-166">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/group_validateproperties-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="89f96-167">Javascript</span><span class="sxs-lookup"><span data-stu-id="89f96-167">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/group_validateproperties-Javascript-snippets.md)]
+<span data-ttu-id="a6c00-169">Este é um exemplo de uma solicitação com erros de validação.</span><span class="sxs-lookup"><span data-stu-id="a6c00-169">This is an example of a request with validation errors.</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="89f96-168">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="89f96-168">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/group_validateproperties-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-<span data-ttu-id="89f96-169">Este é um exemplo de uma solicitação com erros de validação.</span><span class="sxs-lookup"><span data-stu-id="89f96-169">This is an example of a request with validation errors.</span></span>
-
-### <a name="request"></a><span data-ttu-id="89f96-170">Solicitação</span><span class="sxs-lookup"><span data-stu-id="89f96-170">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a6c00-170">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a6c00-170">Request</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/groups/{id}/validateProperties
 Content-type: application/json
@@ -117,7 +121,7 @@ Content-length: 128
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="89f96-171">Resposta</span><span class="sxs-lookup"><span data-stu-id="89f96-171">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a6c00-171">Resposta</span><span class="sxs-lookup"><span data-stu-id="a6c00-171">Response</span></span>
 ```http
 HTTP/1.1 422
 Content-type: application/json
@@ -151,8 +155,5 @@ Content-length: 223
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/group-validateproperties.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/group-validateproperties.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/group-validateproperties.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -2,61 +2,63 @@
 title: Atualizar inferenceClassificationOverride
 description: 'Altere o **** campo classificas de uma substituição de caixa de entrada destaques, conforme especificado. '
 localization_priority: Normal
-ms.openlocfilehash: dfdff637d8a0fd946a970ea9a0fe3e05923cdfe0
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 02d12c854aee64d3380d66fbf2ed131d5582eaa2
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262591"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35441846"
 ---
-# <a name="update-inferenceclassificationoverride"></a><span data-ttu-id="6e277-103">Atualizar inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="6e277-103">Update inferenceClassificationOverride</span></span>
+# <a name="update-inferenceclassificationoverride"></a><span data-ttu-id="a7455-103">Atualizar inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="a7455-103">Update inferenceClassificationOverride</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6e277-104">Altere o \*\*\*\* campo classificas de uma substituição de [caixa de entrada destaques](../resources/manage-focused-inbox.md) , conforme especificado.</span><span class="sxs-lookup"><span data-stu-id="6e277-104">Change the **classifyAs** field of a [Focused Inbox](../resources/manage-focused-inbox.md) override as specified.</span></span> 
+<span data-ttu-id="a7455-104">Altere o \*\*\*\* campo classificas de uma substituição de [caixa de entrada destaques](../resources/manage-focused-inbox.md) , conforme especificado.</span><span class="sxs-lookup"><span data-stu-id="a7455-104">Change the **classifyAs** field of a [Focused Inbox](../resources/manage-focused-inbox.md) override as specified.</span></span> 
 
-<span data-ttu-id="6e277-105">Você não pode usar PATCH para alterar outros campos em uma instância de [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md).</span><span class="sxs-lookup"><span data-stu-id="6e277-105">You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance.</span></span> 
+<span data-ttu-id="a7455-105">Você não pode usar PATCH para alterar outros campos em uma instância de [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md).</span><span class="sxs-lookup"><span data-stu-id="a7455-105">You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance.</span></span> 
 
-<span data-ttu-id="6e277-106">Se houver uma substituição de um remetente e o remetente alterar seu nome de exibição, você poderá usar [POST](inferenceclassification-post-overrides.md) para forçar uma atualização para o campo de nome em uma substituição existente.</span><span class="sxs-lookup"><span data-stu-id="6e277-106">If an override exists for a sender and the sender changes his/her display name, you can use [POST](inferenceclassification-post-overrides.md) to force an update to the name field in the existing override.</span></span>
+<span data-ttu-id="a7455-106">Se houver uma substituição de um remetente e o remetente alterar seu nome de exibição, você poderá usar [POST](inferenceclassification-post-overrides.md) para forçar uma atualização para o campo de nome em uma substituição existente.</span><span class="sxs-lookup"><span data-stu-id="a7455-106">If an override exists for a sender and the sender changes his/her display name, you can use [POST](inferenceclassification-post-overrides.md) to force an update to the name field in the existing override.</span></span>
 
-<span data-ttu-id="6e277-107">Se houver uma substituição de um remetente e o remetente alterar seu endereço SMTP, [excluir](inferenceclassificationoverride-delete.md) a substituição existente e [criar](inferenceclassification-post-overrides.md) uma nova com o novo endereço SMTP será a única maneira de "atualizar" a substituição deste remetente.</span><span class="sxs-lookup"><span data-stu-id="6e277-107">If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride-delete.md) the existing override and [creating](inferenceclassification-post-overrides.md) a new one with the new SMTP address is the only way to "update" the override for this sender.</span></span>
+<span data-ttu-id="a7455-107">Se houver uma substituição de um remetente e o remetente alterar seu endereço SMTP, [excluir](inferenceclassificationoverride-delete.md) a substituição existente e [criar](inferenceclassification-post-overrides.md) uma nova com o novo endereço SMTP será a única maneira de "atualizar" a substituição deste remetente.</span><span class="sxs-lookup"><span data-stu-id="a7455-107">If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride-delete.md) the existing override and [creating](inferenceclassification-post-overrides.md) a new one with the new SMTP address is the only way to "update" the override for this sender.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6e277-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="6e277-108">Permissions</span></span>
-<span data-ttu-id="6e277-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6e277-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a7455-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="a7455-108">Permissions</span></span>
+<span data-ttu-id="a7455-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a7455-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6e277-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6e277-111">Permission type</span></span>      | <span data-ttu-id="6e277-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6e277-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a7455-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a7455-111">Permission type</span></span>      | <span data-ttu-id="a7455-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a7455-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6e277-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6e277-113">Delegated (work or school account)</span></span> | <span data-ttu-id="6e277-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6e277-114">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="6e277-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6e277-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6e277-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6e277-116">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="6e277-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6e277-117">Application</span></span> | <span data-ttu-id="6e277-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6e277-118">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="a7455-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a7455-113">Delegated (work or school account)</span></span> | <span data-ttu-id="a7455-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a7455-114">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="a7455-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a7455-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a7455-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a7455-116">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="a7455-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a7455-117">Application</span></span> | <span data-ttu-id="a7455-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a7455-118">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6e277-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6e277-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a7455-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a7455-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/inferenceClassification/overrides/{id}
 PATCH /users/{id}/inferenceClassification/overrides/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6e277-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6e277-120">Request headers</span></span>
-| <span data-ttu-id="6e277-121">Nome</span><span class="sxs-lookup"><span data-stu-id="6e277-121">Name</span></span>       | <span data-ttu-id="6e277-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="6e277-122">Type</span></span> | <span data-ttu-id="6e277-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="6e277-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a7455-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a7455-120">Request headers</span></span>
+| <span data-ttu-id="a7455-121">Nome</span><span class="sxs-lookup"><span data-stu-id="a7455-121">Name</span></span>       | <span data-ttu-id="a7455-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="a7455-122">Type</span></span> | <span data-ttu-id="a7455-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="a7455-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="6e277-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="6e277-124">Authorization</span></span>  | <span data-ttu-id="6e277-125">string</span><span class="sxs-lookup"><span data-stu-id="6e277-125">string</span></span>  | <span data-ttu-id="6e277-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6e277-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6e277-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6e277-128">Content-Type</span></span> | <span data-ttu-id="6e277-129">string</span><span class="sxs-lookup"><span data-stu-id="6e277-129">string</span></span>  | <span data-ttu-id="6e277-p103">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6e277-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="a7455-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="a7455-124">Authorization</span></span>  | <span data-ttu-id="a7455-125">string</span><span class="sxs-lookup"><span data-stu-id="a7455-125">string</span></span>  | <span data-ttu-id="a7455-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a7455-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a7455-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a7455-128">Content-Type</span></span> | <span data-ttu-id="a7455-129">string</span><span class="sxs-lookup"><span data-stu-id="a7455-129">string</span></span>  | <span data-ttu-id="a7455-p103">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a7455-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6e277-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6e277-132">Request body</span></span>
-<span data-ttu-id="6e277-p104">No corpo da solicitação, forneça o novo valor para **classifyAs**. Para obter o melhor desempenho, não inclua valores existentes que não estão sendo alterados.</span><span class="sxs-lookup"><span data-stu-id="6e277-p104">In the request body, supply the new value for **classifyAs**. For best performance you shouldn't include existing values that are not changing.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a7455-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a7455-132">Request body</span></span>
+<span data-ttu-id="a7455-p104">No corpo da solicitação, forneça o novo valor para **classifyAs**. Para obter o melhor desempenho, não inclua valores existentes que não estão sendo alterados.</span><span class="sxs-lookup"><span data-stu-id="a7455-p104">In the request body, supply the new value for **classifyAs**. For best performance you shouldn't include existing values that are not changing.</span></span>
 
-| <span data-ttu-id="6e277-135">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6e277-135">Property</span></span>     | <span data-ttu-id="6e277-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="6e277-136">Type</span></span>   |<span data-ttu-id="6e277-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="6e277-137">Description</span></span>|
+| <span data-ttu-id="a7455-135">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a7455-135">Property</span></span>     | <span data-ttu-id="a7455-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="a7455-136">Type</span></span>   |<span data-ttu-id="a7455-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="a7455-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6e277-138">classifyAs</span><span class="sxs-lookup"><span data-stu-id="6e277-138">classifyAs</span></span>|<span data-ttu-id="6e277-139">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6e277-139">string</span></span>| <span data-ttu-id="6e277-p105">Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` e `other`.</span><span class="sxs-lookup"><span data-stu-id="6e277-p105">Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.</span></span>|
+|<span data-ttu-id="a7455-138">classifyAs</span><span class="sxs-lookup"><span data-stu-id="a7455-138">classifyAs</span></span>|<span data-ttu-id="a7455-139">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a7455-139">string</span></span>| <span data-ttu-id="a7455-p105">Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` e `other`.</span><span class="sxs-lookup"><span data-stu-id="a7455-p105">Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="6e277-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="6e277-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a7455-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="a7455-142">Response</span></span>
 
-<span data-ttu-id="6e277-143">Se for bem-sucedido, este método retornará um código de resposta `200 OK` e o objeto [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6e277-143">If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6e277-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6e277-144">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6e277-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6e277-145">Request</span></span>
-<span data-ttu-id="6e277-146">O exemplo a seguir altera a substituição para o endereço SMTP randiw@adatum.onmicrosoft.com de `other` para `focused`.</span><span class="sxs-lookup"><span data-stu-id="6e277-146">The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.</span></span>
+<span data-ttu-id="a7455-143">Se for bem-sucedido, este método retornará um código de resposta `200 OK` e o objeto [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a7455-143">If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a7455-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a7455-144">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a7455-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a7455-145">Request</span></span>
+<span data-ttu-id="a7455-146">O exemplo a seguir altera a substituição para o endereço SMTP randiw@adatum.onmicrosoft.com de `other` para `focused`.</span><span class="sxs-lookup"><span data-stu-id="a7455-146">The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a7455-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="a7455-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_inferenceclassificationoverride"
@@ -69,8 +71,22 @@ Content-type: application/json
   "classifyAs": "focused"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="6e277-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="6e277-147">Response</span></span>
-<span data-ttu-id="6e277-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6e277-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a7455-148">C#</span><span class="sxs-lookup"><span data-stu-id="a7455-148">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-inferenceclassificationoverride-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a7455-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="a7455-149">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-inferenceclassificationoverride-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a7455-150">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a7455-150">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-inferenceclassificationoverride-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="a7455-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="a7455-151">Response</span></span>
+<span data-ttu-id="a7455-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a7455-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,18 +105,6 @@ Content-type: application/json
   "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="6e277-151">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="6e277-151">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="6e277-152">C#</span><span class="sxs-lookup"><span data-stu-id="6e277-152">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_inferenceclassificationoverride-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6e277-153">Javascript</span><span class="sxs-lookup"><span data-stu-id="6e277-153">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_inferenceclassificationoverride-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="6e277-154">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6e277-154">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update_inferenceclassificationoverride-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -112,9 +116,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/inferenceclassificationoverride-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/inferenceclassificationoverride-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/inferenceclassificationoverride-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

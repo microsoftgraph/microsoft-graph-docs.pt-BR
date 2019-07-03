@@ -4,49 +4,51 @@ description: Obtenha uma lista de usuários ou grupos que estão na lista de rem
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 707dc8267972055a007119775fd4bdf729dd8a95
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 6bc202d91852ca34c9415ab0dd5647aecc5494a8
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35273539"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35441727"
 ---
-# <a name="list-acceptedsenders"></a><span data-ttu-id="3bc0f-103">Listar acceptedSenders</span><span class="sxs-lookup"><span data-stu-id="3bc0f-103">List acceptedSenders</span></span>
-<span data-ttu-id="3bc0f-104">Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-104">Get a list of users or groups that are in the accepted-senders list for this group.</span></span>
+# <a name="list-acceptedsenders"></a><span data-ttu-id="7a768-103">Listar acceptedSenders</span><span class="sxs-lookup"><span data-stu-id="7a768-103">List acceptedSenders</span></span>
+<span data-ttu-id="7a768-104">Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.</span><span class="sxs-lookup"><span data-stu-id="7a768-104">Get a list of users or groups that are in the accepted-senders list for this group.</span></span>
 
-<span data-ttu-id="3bc0f-p101">Os usuários na lista de remetentes aceitos podem postar em conversas do grupo (identificado na URL da solicitação GET). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-p101">Users in the accepted senders list can post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.</span></span>
+<span data-ttu-id="7a768-p101">Os usuários na lista de remetentes aceitos podem postar em conversas do grupo (identificado na URL da solicitação GET). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.</span><span class="sxs-lookup"><span data-stu-id="7a768-p101">Users in the accepted senders list can post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3bc0f-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="3bc0f-107">Permissions</span></span>
-<span data-ttu-id="3bc0f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3bc0f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7a768-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="7a768-107">Permissions</span></span>
+<span data-ttu-id="7a768-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7a768-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3bc0f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3bc0f-110">Permission type</span></span>      | <span data-ttu-id="3bc0f-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3bc0f-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7a768-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7a768-110">Permission type</span></span>      | <span data-ttu-id="7a768-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7a768-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3bc0f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3bc0f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="3bc0f-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3bc0f-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3bc0f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3bc0f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3bc0f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-115">Not supported.</span></span>    |
-|<span data-ttu-id="3bc0f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3bc0f-116">Application</span></span> | <span data-ttu-id="3bc0f-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-117">Not supported.</span></span> |
+|<span data-ttu-id="7a768-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7a768-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7a768-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a768-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7a768-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7a768-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7a768-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7a768-115">Not supported.</span></span>    |
+|<span data-ttu-id="7a768-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7a768-116">Application</span></span> | <span data-ttu-id="7a768-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7a768-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3bc0f-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3bc0f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7a768-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7a768-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/acceptedSenders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="3bc0f-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="3bc0f-119">Optional query parameters</span></span>
-<span data-ttu-id="3bc0f-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7a768-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7a768-119">Optional query parameters</span></span>
+<span data-ttu-id="7a768-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7a768-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3bc0f-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3bc0f-121">Request headers</span></span>
-| <span data-ttu-id="3bc0f-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3bc0f-122">Header</span></span>       | <span data-ttu-id="3bc0f-123">Valor</span><span class="sxs-lookup"><span data-stu-id="3bc0f-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="7a768-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7a768-121">Request headers</span></span>
+| <span data-ttu-id="7a768-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7a768-122">Header</span></span>       | <span data-ttu-id="7a768-123">Valor</span><span class="sxs-lookup"><span data-stu-id="7a768-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="3bc0f-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="3bc0f-124">Authorization</span></span>  | <span data-ttu-id="3bc0f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7a768-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="7a768-124">Authorization</span></span>  | <span data-ttu-id="7a768-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7a768-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3bc0f-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3bc0f-127">Request body</span></span>
-<span data-ttu-id="3bc0f-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7a768-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7a768-127">Request body</span></span>
+<span data-ttu-id="7a768-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7a768-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3bc0f-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="3bc0f-129">Response</span></span>
-<span data-ttu-id="3bc0f-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7a768-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="7a768-129">Response</span></span>
+<span data-ttu-id="7a768-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7a768-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3bc0f-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3bc0f-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="3bc0f-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3bc0f-132">Request</span></span>
-<span data-ttu-id="3bc0f-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7a768-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7a768-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="7a768-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7a768-132">Request</span></span>
+<span data-ttu-id="7a768-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7a768-133">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="7a768-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="7a768-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_acceptedsenders"
@@ -54,10 +56,24 @@ GET /groups/{id}/acceptedSenders
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7a768-135">C#</span><span class="sxs-lookup"><span data-stu-id="7a768-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-acceptedsenders-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="3bc0f-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="3bc0f-134">Response</span></span>
-<span data-ttu-id="3bc0f-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-135">The following is an example of the response.</span></span>
-><span data-ttu-id="3bc0f-136">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-136">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="3bc0f-137">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3bc0f-137">All the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7a768-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="7a768-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-acceptedsenders-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7a768-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="7a768-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-acceptedsenders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="7a768-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="7a768-138">Response</span></span>
+<span data-ttu-id="7a768-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7a768-139">The following is an example of the response.</span></span>
+><span data-ttu-id="7a768-140">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="7a768-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7a768-141">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7a768-141">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,18 +93,6 @@ Content-length: 55
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="3bc0f-138">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="3bc0f-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="3bc0f-139">C#</span><span class="sxs-lookup"><span data-stu-id="3bc0f-139">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_acceptedsenders-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3bc0f-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="3bc0f-140">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_acceptedsenders-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="3bc0f-141">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="3bc0f-141">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_acceptedsenders-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,8 +103,5 @@ Content-length: 55
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/group-list-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/group-list-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/group-list-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
