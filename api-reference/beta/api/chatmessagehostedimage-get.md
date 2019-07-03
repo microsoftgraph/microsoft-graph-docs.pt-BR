@@ -4,12 +4,12 @@ description: Recupere uma imagem hospedada dentro de um chat.
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 41ffef10ce68e4d36399839dbcb8da7dd0eac69c
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: e2c2f3d36bdd4be1820af9e6d1f28c39c24afe90
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35085801"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437716"
 ---
 # <a name="get-chatmessagehostedimage"></a>Obter chatMessageHostedImage
 
@@ -59,6 +59,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 ##### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_channel_message"
@@ -66,6 +68,20 @@ Este é um exemplo da solicitação.
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-message-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-message-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-channel-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 

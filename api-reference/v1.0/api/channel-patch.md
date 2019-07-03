@@ -4,12 +4,12 @@ description: Atualiza as propriedades do canal especificado.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b101b964d166ffd2a757a2c461f019c107d5db7b
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: e31c576801816fdc9f64a026681c825190798f5f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35273697"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35443655"
 ---
 # <a name="patch-channel"></a>Canal de patch
 
@@ -51,6 +51,8 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
@@ -58,6 +60,12 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
+# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -75,14 +83,6 @@ Content-length: 201
     "displayName": "display-name-value",
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/patch_channel-Objective-C-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,6 +93,5 @@ Content-length: 201
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/channel-patch.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)"
   ]
 }-->
