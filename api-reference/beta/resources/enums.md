@@ -1,13 +1,25 @@
 ---
 title: Valores de enumeração
 description: Valores de enumeração do Microsoft Graph
-ms.openlocfilehash: 10660c7b44dc80145dd4a3ce14c9cdfc06da7743
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: dbaa9acc7636bdf629df347efd0f59398083eef3
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348695"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435959"
 ---
+### <a name="registrationauthmethod-values"></a>valores de registrationAuthMethod
+
+|Membro|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
 |Membro|Valor|Descrição|

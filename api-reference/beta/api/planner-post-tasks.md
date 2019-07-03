@@ -1,17 +1,19 @@
 ---
 title: Criar plannerTask
 description: Use essa API para criar um novo **plannerTask**.
-localization_priority: Priority
+localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: e5c3c1c9fec96e7f72ab3c7aa61fe574d1f3319a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 36beb3dc63c3f1cff10f7b5ce19da38a34f62f02
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33595509"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35454116"
 ---
 # <a name="create-plannertask"></a>Criar plannerTask
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use essa API para criar um novo **plannerTask**.
 ## <a name="permissions"></a>Permissões
@@ -46,12 +48,14 @@ Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/e
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_plannertask_from_planner"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/planner/tasks
+POST https://graph.microsoft.com/beta/planner/tasks
 Content-type: application/json
 Content-length: 285
 
@@ -67,6 +71,12 @@ Content-length: 285
   },
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-plannertask-from-planner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md).
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -106,24 +116,17 @@ Content-length: 677
   "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_plannertask_from_planner-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create plannerTask",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/planner-post-tasks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

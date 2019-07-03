@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 231d75798fb8c58e678fbe26a16c2bbb2299290c
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: de889892e023d5d6036ab1886534d94c4362d641
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349319"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35448588"
 ---
 # <a name="riskdetection-resource-type"></a>tipo de recurso riskDetection
 
@@ -29,7 +29,7 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Listar riskDetection](../api/riskdetection-list.md) | coleção [riskDetection](riskDetection.md)|Listar detecções de risco e suas propriedades.|
+|[Listar riskDetection](../api/riskdetection-list.md) | coleção [riskDetection](riskdetection.md)|Listar detecções de risco e suas propriedades.|
 |[Obter riskDetection](../api/riskdetection-get.md) | [riskDetection](riskdetection.md)|Obtenha uma detecção arriscada específica e suas propriedades.|
 
 ## <a name="properties"></a>Propriedades
