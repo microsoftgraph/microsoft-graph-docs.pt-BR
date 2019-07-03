@@ -1,18 +1,18 @@
 ---
 title: Principais serviços e recursos do Microsoft Graph
 description: 'O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
-author: jthake-msft
+author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: c8d7a209744eade704432c2c93561d4e60070ec1
-ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
+ms.openlocfilehash: bb100d4b8c64300681dd0463184cb30b925654d2
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34083250"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417707"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
-O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. 
+O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, oferece segurança e inteligência que podem aumentar a produtividade do usuário, bem como a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. 
 
 ## <a name="users-and-groups"></a>Usuários e grupos
 
@@ -68,12 +68,12 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |Trabalho em equipe |  Microsoft Teams | O hub digital e espaço de trabalho baseado em bate-papo para as equipes compartilharem arquivos, observações, calendários e planos. | [Visão geral do trabalho em equipe do Microsoft Teams](teams-concept-overview.md) |
 
 
-## <a name="social-intelligence-and-analytics"></a>Inteligência social e análise
+## <a name="social-and-workplace-intelligence"></a>Inteligência social e do local de trabalho
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
-| Inteligência social: pessoas | Azure AD, Outlook, SharePoint e muito mais | Obtém informações sobre pessoas ordenados por relevância para o usuário, o que é determinado pelo padrões de comunicação e colaboração e pelas relações comerciais do usuário.  | [Inteligência social no Microsoft Graph](social-intel-concept-overview.md) |
-| Inteligência social: insights de documentos (prévia) | Delve, OneDrive, Outlook, SharePoint | Usa análises avançadas e técnicas de aprendizado de máquina para obter documentos mais populares, vistos, modificados ou compartilhados por um usuário.  | [Inteligência social no Microsoft Graph](social-intel-concept-overview.md)  |
+| Inteligência social: pessoas | Azure AD, Outlook, SharePoint e muito mais | Obtém informações sobre pessoas ordenados por relevância para o usuário, o que é determinado pelo padrões de comunicação e colaboração e pelas relações comerciais do usuário.  | [Inteligência social e do local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
+| Inteligência social: insights de documentos (prévia) | Delve, OneDrive, Outlook, SharePoint | Usa análises avançadas e técnicas de aprendizado de máquina para obter documentos mais populares, vistos, modificados ou compartilhados por um usuário.  | [Inteligência social e do local de trabalho no Microsoft Graph](social-intel-concept-overview.md)  |
 
 
 ## <a name="device-management"></a>Gerenciamento de dispositivo

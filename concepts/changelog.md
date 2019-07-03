@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 065bb9e52477d06e05ae055e920821db6e9d9a7a
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 42865c9c03f0f0bfc5e815e46b6d2ad04ef9bd47
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348674"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417742"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -65,6 +65,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Foram adicionados os membros **rotateFileVaultKey** e **getFileVaultKey** ao tipo enum [remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta)|
 |Adição|beta|Foi adicionado o membro **sharedSecret** ao tipo enum [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
 |Adição|beta|Foram adicionados os membros **windows10Home**, **windows10HomeChina**, **windows10HomeN**, **windows10HomeSingleLanguage**, **windows10Mobile**, **windows10IoTCore** e **windows10IoTCoreCommercial** ao tipo enum [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta)|
+
+### <a name="outlook-mail"></a>Email do Outlook
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionado suporte para a permissão Mail.ReadBasic na API mailFolder: [listar pastas de email](/graph/api/user-list-mailfolders?view=graph-rest-beta), [obter uma pasta de email](/graph/api/mailfolder-get?view=graph-rest-beta), [listar pastas filho](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) e [listar mensagens em uma pasta de mensagens](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Também foi adicionado suporte Mail.ReadBasic na [consulta delta de email](/graph/api/message-delta?view=graph-rest-beta) e [consulta delta de mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).|
 
 ### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 

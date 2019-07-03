@@ -1,17 +1,17 @@
 ---
-title: Visão geral de inteligência social e análises no Microsoft Graph
+title: Visão geral da inteligência social e do local de trabalho no Microsoft Graph
 description: As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes.
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 3c274c6bef751c0fa39bf38c8f1472b075567da5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1ab4140272cb227898ba1db79d4ab575073e51f
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459766"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417714"
 ---
-# <a name="overview-of-social-intelligence-and-analytics-in-microsoft-graph"></a>Visão geral de inteligência social e análises no Microsoft Graph
+# <a name="overview-of-social-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência social e do local de trabalho no Microsoft Graph
 
 As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes. Eles fornece informações inteligentes que podem responder a perguntas como:
 
@@ -93,7 +93,7 @@ A API do Insights fornece uma com uma funcionalidade semelhante às entidades [u
 Procurando a referência de API para estes serviços?
 
 - [API de Pessoas no Microsoft Graph v1.0](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [API para inteligência social e análises no Microsoft Graph beta](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Use a API do Microsoft Graph para integrar inteligência social e de local de trabalho em um aplicativo](/graph/api/resources/social-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 
