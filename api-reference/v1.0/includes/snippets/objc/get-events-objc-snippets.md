@@ -1,0 +1,32 @@
+---
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 595a85ef6a2e8997014380f0ef2556eb77cf96e5
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35507568"
+---
+```objc
+
+MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location"]]];
+[urlRequest setHTTPMethod:@"GET"];
+[urlRequest setValue:@"outlook.timezone=\"Pacific Standard Time\"" forHTTPHeaderField:@"Prefer"];
+
+MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+        NSError *jsonError = nil;
+        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+        NSMutableArray *eventList = [[NSMutableArray alloc] init];
+        eventList = [jsonFinal valueForKey:@"value"];
+        MSGraphEvent *event = [[MSGraphEvent alloc] initWithDictionary:[eventList objectAtIndex: 0] error:&nserror];
+
+}];
+
+[meDataTask execute];
+
+```
