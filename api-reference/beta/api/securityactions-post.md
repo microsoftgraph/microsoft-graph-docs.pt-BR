@@ -4,30 +4,30 @@ description: Criar um novo objeto SecurityAction. "
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 90fe593dcb34791525f2cff4eb7d5822b7397cab
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 293be54ec8dcf6aaa069186a366b6fd13db8a430
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35263851"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35453779"
 ---
-# <a name="create-securityaction"></a><span data-ttu-id="70235-103">Criar securityAction</span><span class="sxs-lookup"><span data-stu-id="70235-103">Create securityAction</span></span>
+# <a name="create-securityaction"></a><span data-ttu-id="75b55-103">Criar securityAction</span><span class="sxs-lookup"><span data-stu-id="75b55-103">Create securityAction</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="70235-104">Criar um novo [](../resources/securityaction.md) objeto SecurityAction.</span><span class="sxs-lookup"><span data-stu-id="70235-104">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="75b55-104">Criar um novo [](../resources/securityaction.md) objeto SecurityAction.</span><span class="sxs-lookup"><span data-stu-id="75b55-104">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="70235-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="70235-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="75b55-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="75b55-105">Permissions</span></span>
 
-<span data-ttu-id="70235-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="70235-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="75b55-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="75b55-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="70235-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="70235-108">Permission type</span></span>                        | <span data-ttu-id="70235-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="70235-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="75b55-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="75b55-108">Permission type</span></span>                        | <span data-ttu-id="75b55-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="75b55-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="70235-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="70235-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="70235-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="70235-111">Not supported.</span></span> |
-| <span data-ttu-id="70235-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="70235-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70235-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="70235-113">Not supported.</span></span> |
-| <span data-ttu-id="70235-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="70235-114">Application</span></span>                            | <span data-ttu-id="70235-115">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="70235-115">SecurityActions.ReadWrite.All</span></span> |
+| <span data-ttu-id="75b55-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="75b55-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="75b55-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="75b55-111">Not supported.</span></span> |
+| <span data-ttu-id="75b55-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="75b55-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="75b55-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="75b55-113">Not supported.</span></span> |
+| <span data-ttu-id="75b55-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="75b55-114">Application</span></span>                            | <span data-ttu-id="75b55-115">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="75b55-115">SecurityActions.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="70235-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="70235-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="75b55-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="75b55-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,25 +35,27 @@ ms.locfileid: "35263851"
 POST /security/securityActions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="70235-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="70235-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="75b55-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="75b55-117">Request headers</span></span>
 
-| <span data-ttu-id="70235-118">Nome</span><span class="sxs-lookup"><span data-stu-id="70235-118">Name</span></span>          | <span data-ttu-id="70235-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="70235-119">Description</span></span>   |
+| <span data-ttu-id="75b55-118">Nome</span><span class="sxs-lookup"><span data-stu-id="75b55-118">Name</span></span>          | <span data-ttu-id="75b55-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="75b55-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="70235-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="70235-120">Authorization</span></span> | <span data-ttu-id="70235-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="70235-121">Bearer {code}</span></span> |
+| <span data-ttu-id="75b55-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="75b55-120">Authorization</span></span> | <span data-ttu-id="75b55-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="75b55-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="70235-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="70235-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="75b55-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="75b55-122">Request body</span></span>
 
-<span data-ttu-id="70235-123">No corpo da solicitação, forneça uma representação JSON de um [](../resources/securityaction.md) objeto SecurityAction.</span><span class="sxs-lookup"><span data-stu-id="70235-123">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="75b55-123">No corpo da solicitação, forneça uma representação JSON de um [](../resources/securityaction.md) objeto SecurityAction.</span><span class="sxs-lookup"><span data-stu-id="75b55-123">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="70235-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="70235-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="75b55-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="75b55-124">Response</span></span>
 
-<span data-ttu-id="70235-125">Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [SecurityAction](../resources/securityaction.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="70235-125">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
+<span data-ttu-id="75b55-125">Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [SecurityAction](../resources/securityaction.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="75b55-125">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="70235-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="70235-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="75b55-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="75b55-126">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="70235-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="70235-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="75b55-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="75b55-127">Request</span></span>
 
-<span data-ttu-id="70235-128">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="70235-128">The following is an example of the request.</span></span>
+<span data-ttu-id="75b55-128">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="75b55-128">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="75b55-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="75b55-129">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_securityaction_from_security"
@@ -78,13 +80,27 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="75b55-130">C#</span><span class="sxs-lookup"><span data-stu-id="75b55-130">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-securityaction-from-security-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="70235-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="70235-129">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="75b55-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="75b55-131">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-securityaction-from-security-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="70235-130">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="70235-130">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="75b55-132">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="75b55-132">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-securityaction-from-security-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="75b55-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="75b55-133">Response</span></span>
+
+<span data-ttu-id="75b55-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="75b55-134">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="70235-131">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="70235-131">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="70235-132">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="70235-132">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="75b55-135">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="75b55-135">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="75b55-136">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="75b55-136">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -118,18 +134,6 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="70235-133">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="70235-133">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="70235-134">C#</span><span class="sxs-lookup"><span data-stu-id="70235-134">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_securityaction_from_security-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="70235-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="70235-135">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_securityaction_from_security-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="70235-136">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="70235-136">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_securityaction_from_security-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -140,8 +144,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/securityactions-post.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/securityactions-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/securityactions-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -2,58 +2,60 @@
 title: Atualizar approleassignment
 description: Atualize as propriedades do objeto approleassignment.
 localization_priority: Normal
-ms.openlocfilehash: ab8014624e81b946ce5c9566cd586e03f16b2855
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 898eb756ed8ad018317713be8788bb3feb0950c0
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35258342"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35439466"
 ---
-# <a name="update-approleassignment"></a><span data-ttu-id="c9a17-103">Atualizar approleassignment</span><span class="sxs-lookup"><span data-stu-id="c9a17-103">Update approleassignment</span></span>
+# <a name="update-approleassignment"></a><span data-ttu-id="9eeff-103">Atualizar approleassignment</span><span class="sxs-lookup"><span data-stu-id="9eeff-103">Update approleassignment</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c9a17-104">Atualize as propriedades do objeto approleassignment.</span><span class="sxs-lookup"><span data-stu-id="c9a17-104">Update the properties of approleassignment object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c9a17-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="c9a17-105">Permissions</span></span>
-<span data-ttu-id="c9a17-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c9a17-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9eeff-104">Atualize as propriedades do objeto approleassignment.</span><span class="sxs-lookup"><span data-stu-id="9eeff-104">Update the properties of approleassignment object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9eeff-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="9eeff-105">Permissions</span></span>
+<span data-ttu-id="9eeff-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9eeff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c9a17-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c9a17-108">Permission type</span></span>      | <span data-ttu-id="c9a17-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c9a17-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9eeff-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9eeff-108">Permission type</span></span>      | <span data-ttu-id="9eeff-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9eeff-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c9a17-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c9a17-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c9a17-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c9a17-111">Directory.AccessAsUser.All</span></span>   |
-|<span data-ttu-id="c9a17-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c9a17-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9a17-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c9a17-113">Not supported.</span></span>    |
-|<span data-ttu-id="c9a17-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c9a17-114">Application</span></span> | <span data-ttu-id="c9a17-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c9a17-115">Not supported.</span></span> |
+|<span data-ttu-id="9eeff-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9eeff-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9eeff-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9eeff-111">Directory.AccessAsUser.All</span></span>   |
+|<span data-ttu-id="9eeff-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9eeff-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9eeff-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9eeff-113">Not supported.</span></span>    |
+|<span data-ttu-id="9eeff-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9eeff-114">Application</span></span> | <span data-ttu-id="9eeff-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9eeff-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c9a17-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c9a17-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9eeff-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9eeff-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id | userPrincipalName}/appRoleAssignments/{id}
 PATCH /servicePrincipals/{id}/appRoleAssignedTo
 PATCH /groups/{id}/appRoleAssignments/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="c9a17-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c9a17-117">Request headers</span></span>
-| <span data-ttu-id="c9a17-118">Nome</span><span class="sxs-lookup"><span data-stu-id="c9a17-118">Name</span></span>       | <span data-ttu-id="c9a17-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="c9a17-119">Type</span></span> | <span data-ttu-id="c9a17-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="c9a17-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9eeff-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9eeff-117">Request headers</span></span>
+| <span data-ttu-id="9eeff-118">Nome</span><span class="sxs-lookup"><span data-stu-id="9eeff-118">Name</span></span>       | <span data-ttu-id="9eeff-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="9eeff-119">Type</span></span> | <span data-ttu-id="9eeff-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="9eeff-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="c9a17-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="c9a17-121">Authorization</span></span>  | <span data-ttu-id="c9a17-122">string</span><span class="sxs-lookup"><span data-stu-id="c9a17-122">string</span></span>  | <span data-ttu-id="c9a17-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c9a17-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9eeff-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="9eeff-121">Authorization</span></span>  | <span data-ttu-id="9eeff-122">string</span><span class="sxs-lookup"><span data-stu-id="9eeff-122">string</span></span>  | <span data-ttu-id="9eeff-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9eeff-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c9a17-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c9a17-125">Request body</span></span>
-<span data-ttu-id="c9a17-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="c9a17-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9eeff-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9eeff-125">Request body</span></span>
+<span data-ttu-id="9eeff-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="9eeff-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="c9a17-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c9a17-129">Property</span></span>     | <span data-ttu-id="c9a17-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="c9a17-130">Type</span></span>   |<span data-ttu-id="c9a17-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="c9a17-131">Description</span></span>|
+| <span data-ttu-id="9eeff-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9eeff-129">Property</span></span>     | <span data-ttu-id="9eeff-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="9eeff-130">Type</span></span>   |<span data-ttu-id="9eeff-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="9eeff-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c9a17-132">creationTimestamp</span><span class="sxs-lookup"><span data-stu-id="c9a17-132">creationTimestamp</span></span>|<span data-ttu-id="c9a17-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c9a17-133">DateTimeOffset</span></span>|<span data-ttu-id="c9a17-134">A hora em que a concessão foi criada.</span><span class="sxs-lookup"><span data-stu-id="c9a17-134">The time when the grant was created.</span></span>|
-|<span data-ttu-id="c9a17-135">id</span><span class="sxs-lookup"><span data-stu-id="c9a17-135">id</span></span>|<span data-ttu-id="c9a17-136">Guid</span><span class="sxs-lookup"><span data-stu-id="c9a17-136">Guid</span></span>|<span data-ttu-id="c9a17-137">A ID de função que foi atribuída à entidade.</span><span class="sxs-lookup"><span data-stu-id="c9a17-137">The role id that was assigned to the principal.</span></span>  <span data-ttu-id="c9a17-138">Essa função deve ser declarada pela **resourceId** do aplicativo do recurso de destino em sua propriedade **appRoles**.</span><span class="sxs-lookup"><span data-stu-id="c9a17-138">This role must be declared by the target resource application **resourceId** in its **appRoles** property.</span></span> <span data-ttu-id="c9a17-139">Quando o recurso não declarar nenhuma permissão, uma ID padrão (zero GUID) deve ser especificada.</span><span class="sxs-lookup"><span data-stu-id="c9a17-139">Where the resource does not declare any permissions, a default id (zero GUID) must be specified.</span></span>                            <span data-ttu-id="c9a17-140">**Anotações**: não anulável.</span><span class="sxs-lookup"><span data-stu-id="c9a17-140">**Notes**: not nullable.</span></span>            |
-|<span data-ttu-id="c9a17-141">principalDisplayName</span><span class="sxs-lookup"><span data-stu-id="c9a17-141">principalDisplayName</span></span>|<span data-ttu-id="c9a17-142">String</span><span class="sxs-lookup"><span data-stu-id="c9a17-142">String</span></span>|<span data-ttu-id="c9a17-143">O nome de exibição da entidade à qual foi concedido o acesso.</span><span class="sxs-lookup"><span data-stu-id="c9a17-143">The display name of the principal that was granted the access.</span></span>|
-|<span data-ttu-id="c9a17-144">principalId</span><span class="sxs-lookup"><span data-stu-id="c9a17-144">principalId</span></span>|<span data-ttu-id="c9a17-145">Guid</span><span class="sxs-lookup"><span data-stu-id="c9a17-145">Guid</span></span>|<span data-ttu-id="c9a17-146">O identificador exclusivo (**ObjectID**) da entidade de segurança que recebeu o acesso.</span><span class="sxs-lookup"><span data-stu-id="c9a17-146">The unique identifier (**objectId**) for the principal being granted the access.</span></span>                            <span data-ttu-id="c9a17-147">**Observações**: obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c9a17-147">**Notes**: required.</span></span>            |
-|<span data-ttu-id="c9a17-148">principalType</span><span class="sxs-lookup"><span data-stu-id="c9a17-148">principalType</span></span>|<span data-ttu-id="c9a17-149">String</span><span class="sxs-lookup"><span data-stu-id="c9a17-149">String</span></span>|<span data-ttu-id="c9a17-150">O tipo de entidade.</span><span class="sxs-lookup"><span data-stu-id="c9a17-150">The type of principal.</span></span>  <span data-ttu-id="c9a17-151">Pode ser “User”, “Group” ou “ServicePrincipal”.</span><span class="sxs-lookup"><span data-stu-id="c9a17-151">This can either be "User", "Group" or "ServicePrincipal".</span></span>|
-|<span data-ttu-id="c9a17-152">resourceDisplayName</span><span class="sxs-lookup"><span data-stu-id="c9a17-152">resourceDisplayName</span></span>|<span data-ttu-id="c9a17-153">String</span><span class="sxs-lookup"><span data-stu-id="c9a17-153">String</span></span>|<span data-ttu-id="c9a17-154">O nome de exibição do recurso para o qual a tarefa foi feita.</span><span class="sxs-lookup"><span data-stu-id="c9a17-154">The display name of the resource to which the assignment was made.</span></span>|
-|<span data-ttu-id="c9a17-155">resourceId</span><span class="sxs-lookup"><span data-stu-id="c9a17-155">resourceId</span></span>|<span data-ttu-id="c9a17-156">Guid</span><span class="sxs-lookup"><span data-stu-id="c9a17-156">Guid</span></span>|<span data-ttu-id="c9a17-157">O identificador exclusivo (**ObjectID**) do recurso de destino (entidade de serviço) para o qual a atribuição foi feita.</span><span class="sxs-lookup"><span data-stu-id="c9a17-157">The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made.</span></span>|
+|<span data-ttu-id="9eeff-132">creationTimestamp</span><span class="sxs-lookup"><span data-stu-id="9eeff-132">creationTimestamp</span></span>|<span data-ttu-id="9eeff-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9eeff-133">DateTimeOffset</span></span>|<span data-ttu-id="9eeff-134">A hora em que a concessão foi criada.</span><span class="sxs-lookup"><span data-stu-id="9eeff-134">The time when the grant was created.</span></span>|
+|<span data-ttu-id="9eeff-135">id</span><span class="sxs-lookup"><span data-stu-id="9eeff-135">id</span></span>|<span data-ttu-id="9eeff-136">Guid</span><span class="sxs-lookup"><span data-stu-id="9eeff-136">Guid</span></span>|<span data-ttu-id="9eeff-137">A ID de função que foi atribuída à entidade.</span><span class="sxs-lookup"><span data-stu-id="9eeff-137">The role id that was assigned to the principal.</span></span>  <span data-ttu-id="9eeff-138">Essa função deve ser declarada pela **resourceId** do aplicativo do recurso de destino em sua propriedade **appRoles**.</span><span class="sxs-lookup"><span data-stu-id="9eeff-138">This role must be declared by the target resource application **resourceId** in its **appRoles** property.</span></span> <span data-ttu-id="9eeff-139">Quando o recurso não declarar nenhuma permissão, uma ID padrão (zero GUID) deve ser especificada.</span><span class="sxs-lookup"><span data-stu-id="9eeff-139">Where the resource does not declare any permissions, a default id (zero GUID) must be specified.</span></span>                            <span data-ttu-id="9eeff-140">**Anotações**: não anulável.</span><span class="sxs-lookup"><span data-stu-id="9eeff-140">**Notes**: not nullable.</span></span>            |
+|<span data-ttu-id="9eeff-141">principalDisplayName</span><span class="sxs-lookup"><span data-stu-id="9eeff-141">principalDisplayName</span></span>|<span data-ttu-id="9eeff-142">String</span><span class="sxs-lookup"><span data-stu-id="9eeff-142">String</span></span>|<span data-ttu-id="9eeff-143">O nome de exibição da entidade à qual foi concedido o acesso.</span><span class="sxs-lookup"><span data-stu-id="9eeff-143">The display name of the principal that was granted the access.</span></span>|
+|<span data-ttu-id="9eeff-144">principalId</span><span class="sxs-lookup"><span data-stu-id="9eeff-144">principalId</span></span>|<span data-ttu-id="9eeff-145">Guid</span><span class="sxs-lookup"><span data-stu-id="9eeff-145">Guid</span></span>|<span data-ttu-id="9eeff-146">O identificador exclusivo (**ObjectID**) da entidade de segurança que recebeu o acesso.</span><span class="sxs-lookup"><span data-stu-id="9eeff-146">The unique identifier (**objectId**) for the principal being granted the access.</span></span>                            <span data-ttu-id="9eeff-147">**Observações**: obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9eeff-147">**Notes**: required.</span></span>            |
+|<span data-ttu-id="9eeff-148">principalType</span><span class="sxs-lookup"><span data-stu-id="9eeff-148">principalType</span></span>|<span data-ttu-id="9eeff-149">String</span><span class="sxs-lookup"><span data-stu-id="9eeff-149">String</span></span>|<span data-ttu-id="9eeff-150">O tipo de entidade.</span><span class="sxs-lookup"><span data-stu-id="9eeff-150">The type of principal.</span></span>  <span data-ttu-id="9eeff-151">Pode ser “User”, “Group” ou “ServicePrincipal”.</span><span class="sxs-lookup"><span data-stu-id="9eeff-151">This can either be "User", "Group" or "ServicePrincipal".</span></span>|
+|<span data-ttu-id="9eeff-152">resourceDisplayName</span><span class="sxs-lookup"><span data-stu-id="9eeff-152">resourceDisplayName</span></span>|<span data-ttu-id="9eeff-153">String</span><span class="sxs-lookup"><span data-stu-id="9eeff-153">String</span></span>|<span data-ttu-id="9eeff-154">O nome de exibição do recurso para o qual a tarefa foi feita.</span><span class="sxs-lookup"><span data-stu-id="9eeff-154">The display name of the resource to which the assignment was made.</span></span>|
+|<span data-ttu-id="9eeff-155">resourceId</span><span class="sxs-lookup"><span data-stu-id="9eeff-155">resourceId</span></span>|<span data-ttu-id="9eeff-156">Guid</span><span class="sxs-lookup"><span data-stu-id="9eeff-156">Guid</span></span>|<span data-ttu-id="9eeff-157">O identificador exclusivo (**ObjectID**) do recurso de destino (entidade de serviço) para o qual a atribuição foi feita.</span><span class="sxs-lookup"><span data-stu-id="9eeff-157">The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c9a17-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9a17-158">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9eeff-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="9eeff-158">Response</span></span>
 
-<span data-ttu-id="c9a17-159">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [appRoleAssignment](../resources/approleassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c9a17-159">If successful, this method returns a `200 OK` response code and updated [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c9a17-160">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c9a17-160">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c9a17-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c9a17-161">Request</span></span>
-<span data-ttu-id="c9a17-162">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c9a17-162">Here is an example of the request.</span></span>
+<span data-ttu-id="9eeff-159">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [appRoleAssignment](../resources/approleassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9eeff-159">If successful, this method returns a `200 OK` response code and updated [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9eeff-160">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9eeff-160">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9eeff-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9eeff-161">Request</span></span>
+<span data-ttu-id="9eeff-162">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9eeff-162">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="9eeff-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="9eeff-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_approleassignment"
@@ -71,8 +73,22 @@ Content-length: 233
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="c9a17-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9a17-163">Response</span></span>
-<span data-ttu-id="c9a17-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c9a17-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9eeff-164">C#</span><span class="sxs-lookup"><span data-stu-id="9eeff-164">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9eeff-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="9eeff-165">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9eeff-166">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="9eeff-166">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="9eeff-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="9eeff-167">Response</span></span>
+<span data-ttu-id="9eeff-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9eeff-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,18 +108,6 @@ Content-length: 253
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="c9a17-167">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="c9a17-167">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="c9a17-168">C#</span><span class="sxs-lookup"><span data-stu-id="c9a17-168">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_approleassignment-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c9a17-169">Javascript</span><span class="sxs-lookup"><span data-stu-id="c9a17-169">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_approleassignment-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="c9a17-170">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="c9a17-170">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update_approleassignment-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -115,9 +119,6 @@ Content-length: 253
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

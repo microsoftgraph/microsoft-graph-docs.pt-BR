@@ -5,50 +5,66 @@ ms.date: 03/15/2018
 title: Obter uma página em um site
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 47a9360d54263cf60213002518df8f39e24f7656
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: df9cc84f136e4da7833574082c34ac6224d225da
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271551"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35453555"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="e80c6-102">Obter uma página na lista de páginas do site de um site</span><span class="sxs-lookup"><span data-stu-id="e80c6-102">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="d8228-102">Obter uma página na lista de páginas do site de um site</span><span class="sxs-lookup"><span data-stu-id="d8228-102">Get a page in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e80c6-103">Retorna os metadados de um [sitePage][] na [lista][] de páginas do site em um [site][].</span><span class="sxs-lookup"><span data-stu-id="e80c6-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="d8228-103">Retorna os metadados de um [sitePage][] na [lista][] de páginas do site em um [site][].</span><span class="sxs-lookup"><span data-stu-id="d8228-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="e80c6-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="e80c6-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d8228-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="d8228-107">Permissions</span></span>
 
-<span data-ttu-id="e80c6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e80c6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d8228-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d8228-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e80c6-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e80c6-110">Permission type</span></span>      | <span data-ttu-id="e80c6-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e80c6-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d8228-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d8228-110">Permission type</span></span>      | <span data-ttu-id="d8228-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d8228-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e80c6-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e80c6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e80c6-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e80c6-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e80c6-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e80c6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e80c6-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e80c6-115">Not supported.</span></span>    |
-|<span data-ttu-id="e80c6-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e80c6-116">Application</span></span> | <span data-ttu-id="e80c6-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e80c6-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="d8228-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d8228-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d8228-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d8228-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d8228-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d8228-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d8228-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d8228-115">Not supported.</span></span>    |
+|<span data-ttu-id="d8228-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d8228-116">Application</span></span> | <span data-ttu-id="d8228-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d8228-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e80c6-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e80c6-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d8228-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d8228-118">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="e80c6-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e80c6-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d8228-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d8228-119">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e80c6-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e80c6-120">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="d8228-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d8228-120">Request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="d8228-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="d8228-121">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d8228-122">C#</span><span class="sxs-lookup"><span data-stu-id="d8228-122">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="e80c6-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="e80c6-121">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d8228-123">Javascript</span><span class="sxs-lookup"><span data-stu-id="d8228-123">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d8228-124">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="d8228-124">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-page-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="d8228-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="d8228-125">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -132,18 +148,6 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="e80c6-122">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="e80c6-122">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="e80c6-123">C#</span><span class="sxs-lookup"><span data-stu-id="e80c6-123">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-page-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e80c6-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="e80c6-124">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-page-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="e80c6-125">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="e80c6-125">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-page-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -153,9 +157,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
   "suppressions": [
-    "Error: /api-reference/beta/api/sitepage-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/sitepage-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/sitepage-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
