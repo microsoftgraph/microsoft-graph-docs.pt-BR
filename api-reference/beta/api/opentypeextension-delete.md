@@ -3,12 +3,12 @@ title: Excluir extensão aberta
 description: 'Exclua uma extensão aberta (objeto openTypeExtension) da instância especificada de um recurso. '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 9d3eab05983488e4b4c008ec7ab655e08041ce83
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 374c018e87bf740deb9fffa357d2873dc2503c58
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266322"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35450237"
 ---
 # <a name="delete-open-extension"></a>Excluir extensão aberta
 
@@ -73,6 +73,8 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O primeiro exemplo referencia uma extensão por seu nome e exclui a extensão da mensagem especificada.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_opentypeextension"
@@ -80,6 +82,20 @@ O primeiro exemplo referencia uma extensão por seu nome e exclui a extensão da
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral/
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-opentypeextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-opentypeextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 O segundo exemplo exclui uma extensão no evento de grupo especificado.
 
@@ -87,18 +103,6 @@ O segundo exemplo exclui uma extensão no evento de grupo especificado.
 ```http
 DELETE https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVlN17IsAAA=/extensions/Com.Contoso.Referral
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete_opentypeextension-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete_opentypeextension-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/delete_opentypeextension-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
  
 
@@ -122,9 +126,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -4,12 +4,12 @@ description: Obtenha um conjunto de mensagens que foram adicionadas, excluídas 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2c87f92c9e2b273e1446e15dc9ca36a924d77694
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: 7b093d809ceb4df70b191ce9f38fb7cf594b4675
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417700"
+ms.locfileid: "35449761"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -70,6 +70,8 @@ O exemplo a seguir mostra como fazer uma única chamada de função **delta** e 
 
 Para controlar alterações nas mensagens em uma pasta, faça uma ou mais chamadas de função **delta** para obter o conjunto de alterações incrementais desde a última consulta delta. Veja um exemplo que mostra uma série de chamadas de consulta delta em [Obter alterações incrementais para mensagens em uma pasta](/graph/delta-query-messages).
  
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_delta"
@@ -79,6 +81,16 @@ GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
 
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/message-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 Se a solicitação for bem-sucedida, a resposta incluiria um token de estado que é um _skipToken_  
@@ -86,7 +98,7 @@ Se a solicitação for bem-sucedida, a resposta incluiria um token de estado que
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,16 +127,6 @@ Content-length: 337
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de amostra do SDK
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/message_delta-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/message_delta-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>Confira também
 
@@ -141,8 +143,6 @@ Content-length: 337
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/message-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/message-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

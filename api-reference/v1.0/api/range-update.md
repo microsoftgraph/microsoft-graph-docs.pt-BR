@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto range.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 706147a3ff3aade9ae19679aab6bb09bc271128a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 18302e2f79c3b80168b02ae94e62e28ace92e01a
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33607529"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35461558"
 ---
 # <a name="update-range"></a>Intervalo de atualização
 
@@ -56,6 +56,8 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação. Atualiza um intervalo: valores, formato de número e fórmula. A entrada `null` é para instruir a API a ignorar a célula para esta entrada específica. Os valores, o formato de número e as fórmulas podem ser atualizados independentemente ou combinados na mesma chamada à API. 
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_range"
@@ -71,6 +73,12 @@ Content-length: 169
 "numberFormat" : [[null,null], ["m-ddd", null]]
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-range-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -92,14 +100,6 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_range-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -109,7 +109,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/range-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
       Inconsistent types between parameter (Collection) and table (None)",
     "Warning: /api-reference/v1.0/api/range-update.md/update_range/values:

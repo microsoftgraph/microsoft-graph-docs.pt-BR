@@ -4,14 +4,16 @@ description: Use essa API para criar uma nova mensagem em uma pasta de email.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: cc5534fbde3a3071f849c7f843e2ded7a3edc9db
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: d576854517c9fb4cf2d34fa7cf33d2388b452b95
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598350"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449677"
 ---
 # <a name="create-message"></a>Criar mensagem
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use essa API para criar uma nova mensagem em uma pasta de email.
 ## <a name="permissions"></a>Permissões
@@ -45,18 +47,20 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages
+POST https://graph.microsoft.com/beta/me/mailFolders/{id}/messages
 Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
+  "receivedDateTime": "2016-10-19T10:37:00Z",
+  "sentDateTime": "2016-10-19T10:37:00Z",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -66,6 +70,16 @@ Content-length: 248
   "bodyPreview": "bodyPreview-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-message-from-mailfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-message-from-mailfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -80,8 +94,8 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
+  "receivedDateTime": "2016-10-19T10:37:00Z",
+  "sentDateTime": "2016-10-19T10:37:00Z",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -91,27 +105,17 @@ Content-length: 248
   "bodyPreview": "bodyPreview-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_message_from_mailfolder-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_message_from_mailfolder-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/mailfolder-post-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/mailfolder-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->
