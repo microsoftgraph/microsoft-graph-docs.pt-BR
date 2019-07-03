@@ -5,28 +5,28 @@ ms.date: 09/11/2017
 title: Criar uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7a1333cee432c04bbc127298e005350fc21eb525
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 7afa2d17a07f671396366288be3ae28fe6fd4ead
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35272097"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35445797"
 ---
-# <a name="create-a-new-list"></a><span data-ttu-id="a0b75-102">Criar uma nova lista</span><span class="sxs-lookup"><span data-stu-id="a0b75-102">Create a new list</span></span>
+# <a name="create-a-new-list"></a><span data-ttu-id="f392d-102">Criar uma nova lista</span><span class="sxs-lookup"><span data-stu-id="f392d-102">Create a new list</span></span>
 
-<span data-ttu-id="a0b75-103">Criar uma nova [lista][] em um [site][].</span><span class="sxs-lookup"><span data-stu-id="a0b75-103">Create a new [list][] in a [site][].</span></span>
+<span data-ttu-id="f392d-103">Criar uma nova [lista][] em um [site][].</span><span class="sxs-lookup"><span data-stu-id="f392d-103">Create a new [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a0b75-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="a0b75-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f392d-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="f392d-104">Permissions</span></span>
 
-<span data-ttu-id="a0b75-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0b75-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f392d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f392d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="a0b75-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a0b75-107">Permission type</span></span>             | <span data-ttu-id="a0b75-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a0b75-108">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="f392d-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f392d-107">Permission type</span></span>             | <span data-ttu-id="f392d-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f392d-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="a0b75-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a0b75-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="a0b75-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="a0b75-110">Sites.Manage.All</span></span>                            |
-| <span data-ttu-id="a0b75-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a0b75-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0b75-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a0b75-112">Not supported.</span></span>                              |
-| <span data-ttu-id="a0b75-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a0b75-113">Application</span></span>                            | <span data-ttu-id="a0b75-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0b75-114">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="f392d-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f392d-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="f392d-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="f392d-110">Sites.Manage.All</span></span>                            |
+| <span data-ttu-id="f392d-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f392d-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f392d-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f392d-112">Not supported.</span></span>                              |
+| <span data-ttu-id="f392d-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f392d-113">Application</span></span>                            | <span data-ttu-id="f392d-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f392d-114">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="a0b75-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a0b75-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f392d-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f392d-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,14 +34,16 @@ ms.locfileid: "35272097"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a><span data-ttu-id="a0b75-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a0b75-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f392d-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f392d-116">Request body</span></span>
 
-<span data-ttu-id="a0b75-117">No corpo da solicitação, forneça uma representação JSON do recurso [lista][] a criar.</span><span class="sxs-lookup"><span data-stu-id="a0b75-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
+<span data-ttu-id="f392d-117">No corpo da solicitação, forneça uma representação JSON do recurso [lista][] a criar.</span><span class="sxs-lookup"><span data-stu-id="f392d-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a0b75-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a0b75-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f392d-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f392d-118">Example</span></span>
 
-<span data-ttu-id="a0b75-119">Aqui está um exemplo de como criar uma nova lista genérica.</span><span class="sxs-lookup"><span data-stu-id="a0b75-119">Here is an example of how to create a new generic list.</span></span>
+<span data-ttu-id="f392d-119">Aqui está um exemplo de como criar uma nova lista genérica.</span><span class="sxs-lookup"><span data-stu-id="f392d-119">Here is an example of how to create a new generic list.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f392d-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="f392d-120">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -65,15 +67,29 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f392d-121">C#</span><span class="sxs-lookup"><span data-stu-id="f392d-121">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="a0b75-120">**Observação:** Colunas personalizadas são opcionais.</span><span class="sxs-lookup"><span data-stu-id="a0b75-120">**Note:** Custom columns are optional.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f392d-122">Javascript</span><span class="sxs-lookup"><span data-stu-id="f392d-122">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-list-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="a0b75-121">Além de todas as colunas especificadas aqui, novas listas são criadas com colunas definidas no **modelo** referenciado.</span><span class="sxs-lookup"><span data-stu-id="a0b75-121">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
-<span data-ttu-id="a0b75-122">Se a faceta **lista** ou **modelo** não for especificada, a lista considera como padrão o modelo `genericList`, que inclui uma coluna _Título_.</span><span class="sxs-lookup"><span data-stu-id="a0b75-122">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f392d-123">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="f392d-123">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-## <a name="response"></a><span data-ttu-id="a0b75-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0b75-123">Response</span></span>
+---
 
-<span data-ttu-id="a0b75-124">Se for bem-sucedido, esse método retornará uma [lista][] no corpo da resposta da lista criada.</span><span class="sxs-lookup"><span data-stu-id="a0b75-124">If successful, this method returns a [list][] in the response body for the created list.</span></span>
+
+<span data-ttu-id="f392d-124">**Observação:** Colunas personalizadas são opcionais.</span><span class="sxs-lookup"><span data-stu-id="f392d-124">**Note:** Custom columns are optional.</span></span>
+
+<span data-ttu-id="f392d-125">Além de todas as colunas especificadas aqui, novas listas são criadas com colunas definidas no **modelo** referenciado.</span><span class="sxs-lookup"><span data-stu-id="f392d-125">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
+<span data-ttu-id="f392d-126">Se a faceta **lista** ou **modelo** não for especificada, a lista considera como padrão o modelo `genericList`, que inclui uma coluna _Título_.</span><span class="sxs-lookup"><span data-stu-id="f392d-126">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
+
+## <a name="response"></a><span data-ttu-id="f392d-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="f392d-127">Response</span></span>
+
+<span data-ttu-id="f392d-128">Se for bem-sucedido, esse método retornará uma [lista][] no corpo da resposta da lista criada.</span><span class="sxs-lookup"><span data-stu-id="f392d-128">If successful, this method returns a [list][] in the response body for the created list.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
@@ -99,21 +115,9 @@ Content-type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a0b75-125">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="a0b75-125">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a0b75-126">C#</span><span class="sxs-lookup"><span data-stu-id="a0b75-126">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a0b75-127">Javascript</span><span class="sxs-lookup"><span data-stu-id="a0b75-127">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="a0b75-128">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a0b75-128">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create-list-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-<span data-ttu-id="a0b75-129">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="a0b75-129">**Note:** The response object is truncated for clarity.</span></span>
-<span data-ttu-id="a0b75-130">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="a0b75-130">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="f392d-129">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="f392d-129">**Note:** The response object is truncated for clarity.</span></span>
+<span data-ttu-id="f392d-130">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="f392d-130">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
 [site]: ../resources/site.md
@@ -125,8 +129,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "List/Create",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->
