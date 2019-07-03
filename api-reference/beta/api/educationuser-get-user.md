@@ -4,48 +4,50 @@ description: Recupere o **usuário** do diretório simples que corresponde a ess
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: e8f693d8922dec1609b047a4ccced530cdb5eb36
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 483136a5c63cc547f0d8bdb625409d8f133b5ae4
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35259315"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35441244"
 ---
-# <a name="get-user"></a><span data-ttu-id="cfdbf-103">Obter usuário</span><span class="sxs-lookup"><span data-stu-id="cfdbf-103">Get user</span></span>
+# <a name="get-user"></a><span data-ttu-id="f4c46-103">Obter usuário</span><span class="sxs-lookup"><span data-stu-id="f4c46-103">Get user</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cfdbf-104">Recupere o **usuário** do diretório simples que corresponde a esse **educationUser**.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-104">Retrieve the simple directory **user** that corresponds to this **educationUser**.</span></span>
+<span data-ttu-id="f4c46-104">Recupere o **usuário** do diretório simples que corresponde a esse **educationUser**.</span><span class="sxs-lookup"><span data-stu-id="f4c46-104">Retrieve the simple directory **user** that corresponds to this **educationUser**.</span></span>
 
-><span data-ttu-id="cfdbf-105">**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-105">**Note:** If the delegated token is used, members can only see information about their own schools.</span></span> <span data-ttu-id="cfdbf-106">Nesse caso, use o recurso `...beta/education/me/schools`.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-106">Use the `...beta/education/me/schools` resource in this case.</span></span>
+><span data-ttu-id="f4c46-105">**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas.</span><span class="sxs-lookup"><span data-stu-id="f4c46-105">**Note:** If the delegated token is used, members can only see information about their own schools.</span></span> <span data-ttu-id="f4c46-106">Nesse caso, use o recurso `...beta/education/me/schools`.</span><span class="sxs-lookup"><span data-stu-id="f4c46-106">Use the `...beta/education/me/schools` resource in this case.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cfdbf-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="cfdbf-107">Permissions</span></span>
-<span data-ttu-id="cfdbf-108">Uma combinação de permissões é obrigatória para chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-108">A combination of permissions is required to call this API.</span></span> <span data-ttu-id="cfdbf-109">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cfdbf-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f4c46-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="f4c46-107">Permissions</span></span>
+<span data-ttu-id="f4c46-108">Uma combinação de permissões é obrigatória para chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="f4c46-108">A combination of permissions is required to call this API.</span></span> <span data-ttu-id="f4c46-109">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f4c46-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cfdbf-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cfdbf-110">Permission type</span></span>      | <span data-ttu-id="cfdbf-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cfdbf-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f4c46-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f4c46-110">Permission type</span></span>      | <span data-ttu-id="f4c46-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f4c46-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cfdbf-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cfdbf-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="cfdbf-113">Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="cfdbf-113">One from EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write plus either Directory.Read.All or User.Read</span></span>|
-|<span data-ttu-id="cfdbf-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cfdbf-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="cfdbf-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-115">Not supported.</span></span>  |
-|<span data-ttu-id="cfdbf-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cfdbf-116">Application</span></span> | <span data-ttu-id="cfdbf-117">EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="cfdbf-117">EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All</span></span>| 
+|<span data-ttu-id="f4c46-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f4c46-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="f4c46-113">Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="f4c46-113">One from EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write plus either Directory.Read.All or User.Read</span></span>|
+|<span data-ttu-id="f4c46-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f4c46-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="f4c46-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f4c46-115">Not supported.</span></span>  |
+|<span data-ttu-id="f4c46-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f4c46-116">Application</span></span> | <span data-ttu-id="f4c46-117">EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="f4c46-117">EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="cfdbf-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cfdbf-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f4c46-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f4c46-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/user
 GET /education/users/{id}/user
 ```
-## <a name="request-headers"></a><span data-ttu-id="cfdbf-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cfdbf-119">Request headers</span></span>
-| <span data-ttu-id="cfdbf-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cfdbf-120">Header</span></span>       | <span data-ttu-id="cfdbf-121">Valor</span><span class="sxs-lookup"><span data-stu-id="cfdbf-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="f4c46-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f4c46-119">Request headers</span></span>
+| <span data-ttu-id="f4c46-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f4c46-120">Header</span></span>       | <span data-ttu-id="f4c46-121">Valor</span><span class="sxs-lookup"><span data-stu-id="f4c46-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="cfdbf-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="cfdbf-122">Authorization</span></span>  | <span data-ttu-id="cfdbf-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f4c46-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="f4c46-122">Authorization</span></span>  | <span data-ttu-id="f4c46-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f4c46-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="cfdbf-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cfdbf-125">Request body</span></span>
-<span data-ttu-id="cfdbf-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="cfdbf-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="cfdbf-127">Response</span></span>
-<span data-ttu-id="cfdbf-128">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-128">If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cfdbf-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cfdbf-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cfdbf-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cfdbf-130">Request</span></span>
-<span data-ttu-id="cfdbf-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-131">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f4c46-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f4c46-125">Request body</span></span>
+<span data-ttu-id="f4c46-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f4c46-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="f4c46-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="f4c46-127">Response</span></span>
+<span data-ttu-id="f4c46-128">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f4c46-128">If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f4c46-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f4c46-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f4c46-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f4c46-130">Request</span></span>
+<span data-ttu-id="f4c46-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f4c46-131">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f4c46-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="f4c46-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user"
@@ -53,10 +55,24 @@ GET /education/users/{id}/user
 ```http
 GET https://graph.microsoft.com/beta/education/me/user
 ```
-##### <a name="response"></a><span data-ttu-id="cfdbf-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="cfdbf-132">Response</span></span>
-<span data-ttu-id="cfdbf-133">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-133">The following is an example of the response.</span></span> 
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f4c46-133">C#</span><span class="sxs-lookup"><span data-stu-id="f4c46-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="cfdbf-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cfdbf-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f4c46-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="f4c46-134">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f4c46-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="f4c46-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="f4c46-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="f4c46-136">Response</span></span>
+<span data-ttu-id="f4c46-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f4c46-137">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="f4c46-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f4c46-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -85,18 +101,6 @@ Content-length: 491
    "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="cfdbf-136">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="cfdbf-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="cfdbf-137">C#</span><span class="sxs-lookup"><span data-stu-id="cfdbf-137">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_user-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cfdbf-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="cfdbf-138">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_user-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cfdbf-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="cfdbf-139">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_user-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: FC4AAF57-A0ED-4899-B104-A8B89B72AD5A
 2015-10-25 14:57:30 UTC -->
@@ -108,9 +112,6 @@ Content-length: 491
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/educationuser-get-user.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/educationuser-get-user.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/educationuser-get-user.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

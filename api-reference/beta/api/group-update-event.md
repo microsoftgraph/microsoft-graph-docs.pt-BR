@@ -4,53 +4,58 @@ description: Atualize um objeto event.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 4edf9011db83fa3fa47e52749fa8cc5aa630d035
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2dba8ba7fb99fd8fa16fd65b9423eed15429b603
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592480"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35442752"
 ---
-# <a name="update-event"></a><span data-ttu-id="ba282-103">Atualizar evento</span><span class="sxs-lookup"><span data-stu-id="ba282-103">Update event</span></span>
-<span data-ttu-id="ba282-104">Atualize um objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="ba282-104">Update an [event](../resources/event.md) object.</span></span>
+# <a name="update-event"></a><span data-ttu-id="6f1ce-103">Atualizar evento</span><span class="sxs-lookup"><span data-stu-id="6f1ce-103">Update event</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ba282-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ba282-105">Permissions</span></span>
-<span data-ttu-id="ba282-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ba282-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-|<span data-ttu-id="ba282-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ba282-108">Permission type</span></span>      | <span data-ttu-id="ba282-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ba282-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="6f1ce-104">Atualize um objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="6f1ce-104">Update an [event](../resources/event.md) object.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="6f1ce-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="6f1ce-105">Permissions</span></span>
+<span data-ttu-id="6f1ce-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6f1ce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="6f1ce-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6f1ce-108">Permission type</span></span>      | <span data-ttu-id="6f1ce-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6f1ce-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ba282-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ba282-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ba282-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ba282-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ba282-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ba282-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba282-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ba282-113">Not supported.</span></span>    |
-|<span data-ttu-id="ba282-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ba282-114">Application</span></span> | <span data-ttu-id="ba282-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ba282-115">Not supported.</span></span> |
+|<span data-ttu-id="6f1ce-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6f1ce-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6f1ce-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6f1ce-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6f1ce-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6f1ce-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6f1ce-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6f1ce-113">Not supported.</span></span>    |
+|<span data-ttu-id="6f1ce-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6f1ce-114">Application</span></span> | <span data-ttu-id="6f1ce-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6f1ce-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ba282-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ba282-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6f1ce-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6f1ce-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/events/{id}
 PATCH /groups/{id}/calendar/events/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ba282-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ba282-117">Request headers</span></span>
-| <span data-ttu-id="ba282-118">Nome</span><span class="sxs-lookup"><span data-stu-id="ba282-118">Name</span></span>       | <span data-ttu-id="ba282-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="ba282-119">Type</span></span> | <span data-ttu-id="ba282-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ba282-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6f1ce-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6f1ce-117">Request headers</span></span>
+| <span data-ttu-id="6f1ce-118">Nome</span><span class="sxs-lookup"><span data-stu-id="6f1ce-118">Name</span></span>       | <span data-ttu-id="6f1ce-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="6f1ce-119">Type</span></span> | <span data-ttu-id="6f1ce-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f1ce-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ba282-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ba282-121">Authorization</span></span>  | <span data-ttu-id="ba282-122">string</span><span class="sxs-lookup"><span data-stu-id="ba282-122">string</span></span>  | <span data-ttu-id="ba282-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ba282-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6f1ce-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="6f1ce-121">Authorization</span></span>  | <span data-ttu-id="6f1ce-122">string</span><span class="sxs-lookup"><span data-stu-id="6f1ce-122">string</span></span>  | <span data-ttu-id="6f1ce-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6f1ce-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ba282-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ba282-125">Request body</span></span>
-<span data-ttu-id="ba282-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="ba282-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6f1ce-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6f1ce-125">Request body</span></span>
+<span data-ttu-id="6f1ce-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="6f1ce-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ba282-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="ba282-129">Response</span></span>
-<span data-ttu-id="ba282-130">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="ba282-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="6f1ce-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f1ce-129">Response</span></span>
+<span data-ttu-id="6f1ce-130">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="6f1ce-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ba282-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ba282-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="ba282-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ba282-132">Request</span></span>
-<span data-ttu-id="ba282-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ba282-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6f1ce-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6f1ce-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="6f1ce-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6f1ce-132">Request</span></span>
+<span data-ttu-id="6f1ce-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6f1ce-133">The following is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="6f1ce-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="6f1ce-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_group_event"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}/events/{id}
+PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -61,14 +66,24 @@ Content-length: 211
     "response": "",
     "time": "datetime-value"
   },
-  "iCalUId": "iCalUId-value",
+  "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6f1ce-135">C#</span><span class="sxs-lookup"><span data-stu-id="6f1ce-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="ba282-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="ba282-134">Response</span></span>
-<span data-ttu-id="ba282-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ba282-135">The following is an example of the response.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6f1ce-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="6f1ce-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="6f1ce-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f1ce-137">Response</span></span>
+<span data-ttu-id="6f1ce-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6f1ce-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -77,27 +92,17 @@ Content-length: 211
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="ba282-136">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="ba282-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="ba282-137">Basic</span><span class="sxs-lookup"><span data-stu-id="ba282-137">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_group_event-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ba282-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ba282-138">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_group_event-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update event",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/group-update-event.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/group-update-event.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->
