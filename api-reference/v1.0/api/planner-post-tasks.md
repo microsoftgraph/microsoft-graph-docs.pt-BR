@@ -4,12 +4,12 @@ description: Use essa API para criar um novo **plannerTask**.
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f628dcf4aed87f896f9a6a97682c10ecef7fec31
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c62ce0ff48154fe848e01f6405109ba1266a76d
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562052"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35455452"
 ---
 # <a name="create-plannertask"></a>Criar plannerTask
 
@@ -46,6 +46,8 @@ Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/e
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_plannertask_from_planner"
@@ -67,6 +69,12 @@ Content-length: 285
   },
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-plannertask-from-planner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md).
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -114,5 +122,7 @@ Content-length: 677
   "description": "Create plannerTask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->
