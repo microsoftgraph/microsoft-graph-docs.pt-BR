@@ -4,14 +4,17 @@ description: Atualize um objeto event.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 4edf9011db83fa3fa47e52749fa8cc5aa630d035
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2dba8ba7fb99fd8fa16fd65b9423eed15429b603
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592480"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35442752"
 ---
 # <a name="update-event"></a>Atualizar evento
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Atualize um objeto [event](../resources/event.md).
 
 ## <a name="permissions"></a>Permissões
@@ -45,12 +48,14 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_group_event"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}/events/{id}
+PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -61,11 +66,21 @@ Content-length: 211
     "response": "",
     "time": "datetime-value"
   },
-  "iCalUId": "iCalUId-value",
+  "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
@@ -77,27 +92,17 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Código de exemplo do SDK
-# <a name="ctabcs"></a>[Basic](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_group_event-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_group_event-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update event",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/group-update-event.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/group-update-event.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->
