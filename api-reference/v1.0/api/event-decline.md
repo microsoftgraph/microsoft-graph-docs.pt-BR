@@ -4,28 +4,28 @@ description: Recusar o convite para o evento específico em um calendário de us
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 2b28dcc0c9cfd4980e769c4f1899f2c4776f27c4
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 5354df4bbe96735c43e3675eb633cea2754bb978
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277235"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35444215"
 ---
-# <a name="event-decline"></a><span data-ttu-id="c04d9-103">event: decline</span><span class="sxs-lookup"><span data-stu-id="c04d9-103">event: decline</span></span>
+# <a name="event-decline"></a><span data-ttu-id="985ff-103">event: decline</span><span class="sxs-lookup"><span data-stu-id="985ff-103">event: decline</span></span>
 
-<span data-ttu-id="c04d9-104">Recusar o convite para o [evento](../resources/event.md) especificado em um [calendário](../resources/calendar.md)do usuário.</span><span class="sxs-lookup"><span data-stu-id="c04d9-104">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="985ff-104">Recusar o convite para o [evento](../resources/event.md) especificado em um [calendário](../resources/calendar.md)do usuário.</span><span class="sxs-lookup"><span data-stu-id="985ff-104">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c04d9-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="c04d9-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="985ff-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="985ff-105">Permissions</span></span>
 
-<span data-ttu-id="c04d9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c04d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="985ff-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="985ff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c04d9-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c04d9-108">Permission type</span></span>      | <span data-ttu-id="c04d9-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c04d9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="985ff-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="985ff-108">Permission type</span></span>      | <span data-ttu-id="985ff-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="985ff-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c04d9-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c04d9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c04d9-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c04d9-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="c04d9-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c04d9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c04d9-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c04d9-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="c04d9-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c04d9-114">Application</span></span> | <span data-ttu-id="c04d9-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c04d9-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="985ff-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="985ff-110">Delegated (work or school account)</span></span> | <span data-ttu-id="985ff-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="985ff-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="985ff-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="985ff-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="985ff-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="985ff-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="985ff-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="985ff-114">Application</span></span> | <span data-ttu-id="985ff-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="985ff-115">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c04d9-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c04d9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="985ff-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="985ff-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -48,34 +48,36 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 <br/>
 
-## <a name="request-headers"></a><span data-ttu-id="c04d9-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c04d9-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="985ff-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="985ff-117">Request headers</span></span>
 
-| <span data-ttu-id="c04d9-118">Nome</span><span class="sxs-lookup"><span data-stu-id="c04d9-118">Name</span></span>       | <span data-ttu-id="c04d9-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="c04d9-119">Type</span></span> | <span data-ttu-id="c04d9-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="c04d9-120">Description</span></span>|
+| <span data-ttu-id="985ff-118">Nome</span><span class="sxs-lookup"><span data-stu-id="985ff-118">Name</span></span>       | <span data-ttu-id="985ff-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="985ff-119">Type</span></span> | <span data-ttu-id="985ff-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="985ff-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="c04d9-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="c04d9-121">Authorization</span></span>  | <span data-ttu-id="c04d9-122">string</span><span class="sxs-lookup"><span data-stu-id="c04d9-122">string</span></span>  | <span data-ttu-id="c04d9-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c04d9-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c04d9-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c04d9-125">Content-Type</span></span> | <span data-ttu-id="c04d9-126">string</span><span class="sxs-lookup"><span data-stu-id="c04d9-126">string</span></span>  | <span data-ttu-id="c04d9-p103">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c04d9-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="985ff-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="985ff-121">Authorization</span></span>  | <span data-ttu-id="985ff-122">string</span><span class="sxs-lookup"><span data-stu-id="985ff-122">string</span></span>  | <span data-ttu-id="985ff-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="985ff-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="985ff-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="985ff-125">Content-Type</span></span> | <span data-ttu-id="985ff-126">string</span><span class="sxs-lookup"><span data-stu-id="985ff-126">string</span></span>  | <span data-ttu-id="985ff-p103">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="985ff-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c04d9-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c04d9-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="985ff-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="985ff-129">Request body</span></span>
 
-<span data-ttu-id="c04d9-130">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c04d9-130">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="985ff-130">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="985ff-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="c04d9-131">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="c04d9-131">Parameter</span></span>    | <span data-ttu-id="c04d9-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="c04d9-132">Type</span></span>   |<span data-ttu-id="c04d9-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="c04d9-133">Description</span></span>|
+| <span data-ttu-id="985ff-131">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="985ff-131">Parameter</span></span>    | <span data-ttu-id="985ff-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="985ff-132">Type</span></span>   |<span data-ttu-id="985ff-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="985ff-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c04d9-134">comment</span><span class="sxs-lookup"><span data-stu-id="c04d9-134">comment</span></span>|<span data-ttu-id="c04d9-135">String</span><span class="sxs-lookup"><span data-stu-id="c04d9-135">String</span></span>|<span data-ttu-id="c04d9-p104">Texto incluído na resposta. Opcional.</span><span class="sxs-lookup"><span data-stu-id="c04d9-p104">Text included in the response. Optional.</span></span>|
-|<span data-ttu-id="c04d9-138">sendResponse</span><span class="sxs-lookup"><span data-stu-id="c04d9-138">sendResponse</span></span>|<span data-ttu-id="c04d9-139">Booliano</span><span class="sxs-lookup"><span data-stu-id="c04d9-139">Boolean</span></span>|<span data-ttu-id="c04d9-p105">`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.</span><span class="sxs-lookup"><span data-stu-id="c04d9-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
+|<span data-ttu-id="985ff-134">comment</span><span class="sxs-lookup"><span data-stu-id="985ff-134">comment</span></span>|<span data-ttu-id="985ff-135">String</span><span class="sxs-lookup"><span data-stu-id="985ff-135">String</span></span>|<span data-ttu-id="985ff-p104">Texto incluído na resposta. Opcional.</span><span class="sxs-lookup"><span data-stu-id="985ff-p104">Text included in the response. Optional.</span></span>|
+|<span data-ttu-id="985ff-138">sendResponse</span><span class="sxs-lookup"><span data-stu-id="985ff-138">sendResponse</span></span>|<span data-ttu-id="985ff-139">Booliano</span><span class="sxs-lookup"><span data-stu-id="985ff-139">Boolean</span></span>|<span data-ttu-id="985ff-p105">`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.</span><span class="sxs-lookup"><span data-stu-id="985ff-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c04d9-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="c04d9-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="985ff-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="985ff-143">Response</span></span>
 
-<span data-ttu-id="c04d9-p106">Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c04d9-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="985ff-p106">Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="985ff-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c04d9-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c04d9-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="985ff-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="985ff-146">Example</span></span>
 
-<span data-ttu-id="c04d9-147">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="c04d9-147">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="985ff-147">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="985ff-147">Here is an example of how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="c04d9-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c04d9-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="985ff-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="985ff-148">Request</span></span>
 
-<span data-ttu-id="c04d9-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c04d9-149">Here is an example of the request.</span></span>
+<span data-ttu-id="985ff-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="985ff-149">Here is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="985ff-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="985ff-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_decline"
@@ -91,12 +93,26 @@ Content-length: 56
   "sendResponse": true
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="985ff-151">C#</span><span class="sxs-lookup"><span data-stu-id="985ff-151">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/event-decline-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="985ff-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="985ff-152">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/event-decline-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="985ff-153">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="985ff-153">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/event-decline-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <br/>
 
-### <a name="response"></a><span data-ttu-id="c04d9-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="c04d9-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="985ff-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="985ff-154">Response</span></span>
 
-<span data-ttu-id="c04d9-151">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c04d9-151">Here is an example of the response.</span></span>
+<span data-ttu-id="985ff-155">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="985ff-155">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -106,18 +122,6 @@ Content-length: 56
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="c04d9-152">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="c04d9-152">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="c04d9-153">C#</span><span class="sxs-lookup"><span data-stu-id="c04d9-153">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/event_decline-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c04d9-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="c04d9-154">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/event_decline-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="c04d9-155">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="c04d9-155">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/event_decline-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <br/>
 
@@ -130,8 +134,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/event-decline.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/event-decline.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/event-decline.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -4,48 +4,50 @@ description: Recupere uma lista de objetos identityriskevent.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: d6e19bf777b96226fa270c1f49301533b63a9cae
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 8f07f690bd7f4c9285109932b540e9ccafca737b
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236416"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35441832"
 ---
-# <a name="list-identityriskevents"></a><span data-ttu-id="1820e-103">Listar identityRiskEvents</span><span class="sxs-lookup"><span data-stu-id="1820e-103">List identityRiskEvents</span></span>
+# <a name="list-identityriskevents"></a><span data-ttu-id="fb4fe-103">Listar identityRiskEvents</span><span class="sxs-lookup"><span data-stu-id="fb4fe-103">List identityRiskEvents</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1820e-104">Recupere uma lista de objetos identityriskevent.</span><span class="sxs-lookup"><span data-stu-id="1820e-104">Retrieve a list of identityriskevent objects.</span></span>
+<span data-ttu-id="fb4fe-104">Recupere uma lista de objetos identityriskevent.</span><span class="sxs-lookup"><span data-stu-id="fb4fe-104">Retrieve a list of identityriskevent objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1820e-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1820e-105">Permissions</span></span>
-<span data-ttu-id="1820e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1820e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fb4fe-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="fb4fe-105">Permissions</span></span>
+<span data-ttu-id="fb4fe-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fb4fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1820e-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1820e-108">Permission type</span></span>      | <span data-ttu-id="1820e-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1820e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fb4fe-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fb4fe-108">Permission type</span></span>      | <span data-ttu-id="fb4fe-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fb4fe-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1820e-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1820e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1820e-111">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="1820e-111">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="1820e-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1820e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1820e-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1820e-113">Not supported.</span></span>    |
-|<span data-ttu-id="1820e-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1820e-114">Application</span></span> | <span data-ttu-id="1820e-115">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="1820e-115">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="fb4fe-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fb4fe-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fb4fe-111">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="fb4fe-111">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="fb4fe-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fb4fe-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fb4fe-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fb4fe-113">Not supported.</span></span>    |
+|<span data-ttu-id="fb4fe-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fb4fe-114">Application</span></span> | <span data-ttu-id="fb4fe-115">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="fb4fe-115">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1820e-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1820e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fb4fe-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fb4fe-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityRiskEvents
 ```
-## <a name="request-headers"></a><span data-ttu-id="1820e-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1820e-117">Request headers</span></span>
-| <span data-ttu-id="1820e-118">Nome</span><span class="sxs-lookup"><span data-stu-id="1820e-118">Name</span></span>      |<span data-ttu-id="1820e-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="1820e-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fb4fe-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fb4fe-117">Request headers</span></span>
+| <span data-ttu-id="fb4fe-118">Nome</span><span class="sxs-lookup"><span data-stu-id="fb4fe-118">Name</span></span>      |<span data-ttu-id="fb4fe-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="fb4fe-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="1820e-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="1820e-120">Authorization</span></span>  | <span data-ttu-id="1820e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1820e-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1820e-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="1820e-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="1820e-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="1820e-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="fb4fe-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="fb4fe-120">Authorization</span></span>  | <span data-ttu-id="fb4fe-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fb4fe-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fb4fe-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="fb4fe-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="fb4fe-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="fb4fe-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1820e-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1820e-126">Request body</span></span>
-<span data-ttu-id="1820e-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1820e-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fb4fe-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fb4fe-126">Request body</span></span>
+<span data-ttu-id="fb4fe-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fb4fe-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1820e-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="1820e-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fb4fe-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="fb4fe-128">Response</span></span>
 
-<span data-ttu-id="1820e-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [identityRiskEvent](../resources/identityriskevent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1820e-129">If successful, this method returns a `200 OK` response code and collection of [identityRiskEvent](../resources/identityriskevent.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1820e-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1820e-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1820e-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1820e-131">Request</span></span>
-<span data-ttu-id="1820e-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1820e-132">Here is an example of the request.</span></span>
+<span data-ttu-id="fb4fe-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [identityRiskEvent](../resources/identityriskevent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fb4fe-129">If successful, this method returns a `200 OK` response code and collection of [identityRiskEvent](../resources/identityriskevent.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="fb4fe-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fb4fe-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fb4fe-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fb4fe-131">Request</span></span>
+<span data-ttu-id="fb4fe-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fb4fe-132">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="fb4fe-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="fb4fe-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityriskevents"
@@ -53,8 +55,22 @@ GET /identityRiskEvents
 ```http
 GET https://graph.microsoft.com/beta/identityRiskEvents
 ```
-##### <a name="response"></a><span data-ttu-id="1820e-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="1820e-133">Response</span></span>
-<span data-ttu-id="1820e-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1820e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="fb4fe-134">C#</span><span class="sxs-lookup"><span data-stu-id="fb4fe-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityriskevents-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fb4fe-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="fb4fe-135">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityriskevents-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fb4fe-136">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="fb4fe-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityriskevents-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="fb4fe-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="fb4fe-137">Response</span></span>
+<span data-ttu-id="fb4fe-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fb4fe-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

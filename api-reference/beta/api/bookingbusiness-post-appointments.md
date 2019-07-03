@@ -4,48 +4,50 @@ description: Crie um novo bookingAppointment para o bookingbusiness especificado
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 50605b91af3f00d0f6d448c21bea165b1ce60321
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 3a1690e9a27c23b6b45fa78b622a46dba7ef24ec
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35258090"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35439214"
 ---
-# <a name="create-bookingappointment"></a><span data-ttu-id="931e4-103">Criar bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="931e4-103">Create bookingAppointment</span></span>
+# <a name="create-bookingappointment"></a><span data-ttu-id="cbd46-103">Criar bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="cbd46-103">Create bookingAppointment</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="931e4-104">Crie um novo [bookingAppointment](../resources/bookingappointment.md) para o [bookingbusiness](../resources/bookingbusiness.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="931e4-104">Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="931e4-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="931e4-105">Permissions</span></span>
-<span data-ttu-id="931e4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="931e4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cbd46-104">Crie um novo [bookingAppointment](../resources/bookingappointment.md) para o [bookingbusiness](../resources/bookingbusiness.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="cbd46-104">Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cbd46-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="cbd46-105">Permissions</span></span>
+<span data-ttu-id="cbd46-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cbd46-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="931e4-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="931e4-108">Permission type</span></span>      | <span data-ttu-id="931e4-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="931e4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cbd46-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cbd46-108">Permission type</span></span>      | <span data-ttu-id="cbd46-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cbd46-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="931e4-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="931e4-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="931e4-111">BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="931e4-111">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="931e4-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="931e4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="931e4-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="931e4-113">Not supported.</span></span>   |
-|<span data-ttu-id="931e4-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="931e4-114">Application</span></span> | <span data-ttu-id="931e4-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="931e4-115">Not supported.</span></span>  |
+|<span data-ttu-id="cbd46-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cbd46-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="cbd46-111">BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="cbd46-111">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="cbd46-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cbd46-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cbd46-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cbd46-113">Not supported.</span></span>   |
+|<span data-ttu-id="cbd46-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cbd46-114">Application</span></span> | <span data-ttu-id="cbd46-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cbd46-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="931e4-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="931e4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cbd46-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cbd46-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/appointments
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="931e4-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="931e4-117">Request headers</span></span>
-| <span data-ttu-id="931e4-118">Nome</span><span class="sxs-lookup"><span data-stu-id="931e4-118">Name</span></span>       | <span data-ttu-id="931e4-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="931e4-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cbd46-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cbd46-117">Request headers</span></span>
+| <span data-ttu-id="cbd46-118">Nome</span><span class="sxs-lookup"><span data-stu-id="cbd46-118">Name</span></span>       | <span data-ttu-id="cbd46-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="cbd46-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="931e4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="931e4-120">Authorization</span></span>  | <span data-ttu-id="931e4-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="931e4-121">Bearer {code}</span></span>|
+| <span data-ttu-id="cbd46-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="cbd46-120">Authorization</span></span>  | <span data-ttu-id="cbd46-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="cbd46-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="931e4-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="931e4-122">Request body</span></span>
-<span data-ttu-id="931e4-123">No corpo da solicitação, forneça uma representação JSON do objeto [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="931e4-123">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cbd46-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cbd46-122">Request body</span></span>
+<span data-ttu-id="cbd46-123">No corpo da solicitação, forneça uma representação JSON do objeto [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="cbd46-123">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="931e4-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="931e4-124">Response</span></span>
-<span data-ttu-id="931e4-125">Se bem-sucedido, este método retorna `201, Created` o código de resposta e o objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="931e4-125">If successful, this method returns `201, Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cbd46-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="cbd46-124">Response</span></span>
+<span data-ttu-id="cbd46-125">Se bem-sucedido, este método retorna `201, Created` o código de resposta e o objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cbd46-125">If successful, this method returns `201, Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="931e4-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="931e4-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="931e4-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="931e4-127">Request</span></span>
-<span data-ttu-id="931e4-128">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="931e4-128">The following is an example of the request.</span></span> <span data-ttu-id="931e4-129">Este compromisso não envolve a reserva de membros específicos da equipe.</span><span class="sxs-lookup"><span data-stu-id="931e4-129">This appointment does not involve booking specific staff members.</span></span>
+## <a name="example"></a><span data-ttu-id="cbd46-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cbd46-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cbd46-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cbd46-127">Request</span></span>
+<span data-ttu-id="cbd46-128">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="cbd46-128">The following is an example of the request.</span></span> <span data-ttu-id="cbd46-129">Este compromisso não envolve a reserva de membros específicos da equipe.</span><span class="sxs-lookup"><span data-stu-id="cbd46-129">This appointment does not involve booking specific staff members.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="cbd46-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="cbd46-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookingappointment_from_bookingbusiness"
@@ -161,9 +163,23 @@ Content-type: application/json
     }
 }
 ```
-<span data-ttu-id="931e4-130">No corpo da solicitação, forneça uma representação JSON do objeto [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="931e4-130">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="931e4-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="931e4-131">Response</span></span>
-<span data-ttu-id="931e4-132">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="931e4-132">The following is an example of the response.</span></span> <span data-ttu-id="931e4-133">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="931e4-133">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="931e4-134">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="931e4-134">All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cbd46-131">C#</span><span class="sxs-lookup"><span data-stu-id="cbd46-131">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingappointment-from-bookingbusiness-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cbd46-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="cbd46-132">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingappointment-from-bookingbusiness-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cbd46-133">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="cbd46-133">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-bookingappointment-from-bookingbusiness-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+<span data-ttu-id="cbd46-134">No corpo da solicitação, forneça uma representação JSON do objeto [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="cbd46-134">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="cbd46-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="cbd46-135">Response</span></span>
+<span data-ttu-id="cbd46-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="cbd46-136">The following is an example of the response.</span></span> <span data-ttu-id="cbd46-137">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="cbd46-137">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="cbd46-138">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cbd46-138">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -275,18 +291,6 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="931e4-135">Código de amostra do SDK</span><span class="sxs-lookup"><span data-stu-id="931e4-135">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="931e4-136">C#</span><span class="sxs-lookup"><span data-stu-id="931e4-136">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_bookingappointment_from_bookingbusiness-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="931e4-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="931e4-137">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_bookingappointment_from_bookingbusiness-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="931e4-138">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="931e4-138">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_bookingappointment_from_bookingbusiness-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -298,9 +302,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/bookingbusiness-post-appointments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/bookingbusiness-post-appointments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/bookingbusiness-post-appointments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

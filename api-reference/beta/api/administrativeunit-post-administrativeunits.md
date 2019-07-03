@@ -4,50 +4,52 @@ description: Use esta API para criar um novo administrativeUnit.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5195bd4cfce03e20a93b8cc465b6ddd28e616d5c
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b429ba332e8fa47b36e88db515cb2dfc2d0182f4
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35258685"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35439865"
 ---
-# <a name="create-administrativeunit"></a><span data-ttu-id="511fe-103">Criar administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="511fe-103">Create administrativeUnit</span></span>
+# <a name="create-administrativeunit"></a><span data-ttu-id="96f2d-103">Criar administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="96f2d-103">Create administrativeUnit</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="511fe-104">Use esta API para criar um novo [administrativeUnit](../resources/administrativeunit.md).</span><span class="sxs-lookup"><span data-stu-id="511fe-104">Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="511fe-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="511fe-105">Permissions</span></span>
-<span data-ttu-id="511fe-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="511fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="96f2d-104">Use esta API para criar um novo [administrativeUnit](../resources/administrativeunit.md).</span><span class="sxs-lookup"><span data-stu-id="96f2d-104">Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="96f2d-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="96f2d-105">Permissions</span></span>
+<span data-ttu-id="96f2d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="96f2d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="511fe-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="511fe-108">Permission type</span></span>      | <span data-ttu-id="511fe-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="511fe-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="96f2d-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="96f2d-108">Permission type</span></span>      | <span data-ttu-id="96f2d-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="96f2d-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="511fe-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="511fe-110">Delegated (work or school account)</span></span> | <span data-ttu-id="511fe-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="511fe-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="511fe-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="511fe-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="511fe-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="511fe-113">Not supported.</span></span>    |
-|<span data-ttu-id="511fe-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="511fe-114">Application</span></span> | <span data-ttu-id="511fe-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="511fe-115">Not supported.</span></span> |
+|<span data-ttu-id="96f2d-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="96f2d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="96f2d-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="96f2d-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="96f2d-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="96f2d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96f2d-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="96f2d-113">Not supported.</span></span>    |
+|<span data-ttu-id="96f2d-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="96f2d-114">Application</span></span> | <span data-ttu-id="96f2d-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="96f2d-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="511fe-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="511fe-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96f2d-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="96f2d-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="511fe-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="511fe-117">Request headers</span></span>
-| <span data-ttu-id="511fe-118">Nome</span><span class="sxs-lookup"><span data-stu-id="511fe-118">Name</span></span>      |<span data-ttu-id="511fe-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="511fe-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="96f2d-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="96f2d-117">Request headers</span></span>
+| <span data-ttu-id="96f2d-118">Nome</span><span class="sxs-lookup"><span data-stu-id="96f2d-118">Name</span></span>      |<span data-ttu-id="96f2d-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="96f2d-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="511fe-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="511fe-120">Authorization</span></span>  | <span data-ttu-id="511fe-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="511fe-p102">Bearer {token}. Required.</span></span> |
-## <a name="request-body"></a><span data-ttu-id="511fe-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="511fe-123">Request body</span></span>
-<span data-ttu-id="511fe-124">No corpo da solicitação, forneça uma representação JSON do objeto [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="511fe-124">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+| <span data-ttu-id="96f2d-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="96f2d-120">Authorization</span></span>  | <span data-ttu-id="96f2d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="96f2d-p102">Bearer {token}. Required.</span></span> |
+## <a name="request-body"></a><span data-ttu-id="96f2d-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="96f2d-123">Request body</span></span>
+<span data-ttu-id="96f2d-124">No corpo da solicitação, forneça uma representação JSON do objeto [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="96f2d-124">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
 
-<span data-ttu-id="511fe-125">Como o recurso **administrativeUnit** oferece suporte a [extensões](/graph/extensibility-overview), você pode `POST` usar a operação e adicionar propriedades personalizadas com seus próprios dados à unidade administrativa ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="511fe-125">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.</span></span>
+<span data-ttu-id="96f2d-125">Como o recurso **administrativeUnit** oferece suporte a [extensões](/graph/extensibility-overview), você pode `POST` usar a operação e adicionar propriedades personalizadas com seus próprios dados à unidade administrativa ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="96f2d-125">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="511fe-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="511fe-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="96f2d-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="96f2d-126">Response</span></span>
 
-<span data-ttu-id="511fe-127">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="511fe-127">If successful, this method returns `201 Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
+<span data-ttu-id="96f2d-127">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="96f2d-127">If successful, this method returns `201 Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="511fe-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="511fe-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="511fe-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="511fe-129">Request</span></span>
-<span data-ttu-id="511fe-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="511fe-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="96f2d-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="96f2d-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="96f2d-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="96f2d-129">Request</span></span>
+<span data-ttu-id="96f2d-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="96f2d-130">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="96f2d-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="96f2d-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_administrativeunit_from_administrativeunits"
@@ -63,9 +65,23 @@ Content-length: 150
     "visibility": "true"
 }
 ```
-<span data-ttu-id="511fe-131">No corpo da solicitação, forneça uma representação JSON do objeto [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="511fe-131">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="511fe-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="511fe-132">Response</span></span>
-<span data-ttu-id="511fe-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="511fe-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="96f2d-132">C#</span><span class="sxs-lookup"><span data-stu-id="96f2d-132">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-administrativeunit-from-administrativeunits-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="96f2d-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="96f2d-133">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-administrativeunit-from-administrativeunits-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="96f2d-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="96f2d-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-administrativeunit-from-administrativeunits-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+<span data-ttu-id="96f2d-135">No corpo da solicitação, forneça uma representação JSON do objeto [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="96f2d-135">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="96f2d-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="96f2d-136">Response</span></span>
+<span data-ttu-id="96f2d-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="96f2d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,23 +101,11 @@ Content-length: 172
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="511fe-136">Código de exemplo do SDK</span><span class="sxs-lookup"><span data-stu-id="511fe-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="511fe-137">C#</span><span class="sxs-lookup"><span data-stu-id="511fe-137">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_administrativeunit_from_administrativeunits-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="511fe-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="511fe-138">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_administrativeunit_from_administrativeunits-Javascript-snippets.md)]
+## <a name="see-also"></a><span data-ttu-id="96f2d-140">Confira também</span><span class="sxs-lookup"><span data-stu-id="96f2d-140">See also</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="511fe-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="511fe-139">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_administrativeunit_from_administrativeunits-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-## <a name="see-also"></a><span data-ttu-id="511fe-140">Confira também</span><span class="sxs-lookup"><span data-stu-id="511fe-140">See also</span></span>
-
-- [<span data-ttu-id="511fe-141">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="511fe-141">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="511fe-142">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="511fe-142">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="96f2d-141">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="96f2d-141">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="96f2d-142">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="96f2d-142">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
@@ -117,9 +121,6 @@ Content-length: 172
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/administrativeunit-post-administrativeunits.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/administrativeunit-post-administrativeunits.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/administrativeunit-post-administrativeunits.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
