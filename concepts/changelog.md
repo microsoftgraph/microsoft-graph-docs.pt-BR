@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 42865c9c03f0f0bfc5e815e46b6d2ad04ef9bd47
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: 4e4c205c73524c9c26f5f0fe66300e29baf80f4b
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417742"
+ms.locfileid: "35447478"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,11 +18,16 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="june-2019"></a>Junho de 2019
 
-### <a name="identity-protection-apis"></a>Proteção de identidade
+### <a name="reports-apis"></a>APIs de relatórios
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Adição|beta| Novos relatórios adicionados para recuperar informações de registro e uso do usuário:<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) – Relata o uso do autoatendimento de redefinição de senha.</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) – Relata o número de registros de autoatendimento de redefinição de senha e autenticação multifator.</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) – Relata o uso de registros de autoatendimento de redefinição de senha e autenticação multifator.</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) – Relata o uso do autoatendimento de redefinição de senha para um usuário.</li></ul> |
+
+### <a name="identity-protection-apis"></a>APIs de Proteção de identidade 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | beta | Adicionada a API [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta), que representa as detecções de risco na proteção de identidades do Azure AD. |
-
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 
