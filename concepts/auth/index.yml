@@ -5,15 +5,11 @@ metadata:
   title: Visão geral da autenticação do Microsoft Graph
   description: Saiba mais sobre o OAuth 2.0 e como obter tokens para chamar a API do Microsoft Graph.
   services: active-directory
-  author: danieldobalian
+  author: CelesteDG
   manager: CelesteDG
-  ms.service: active-directory
-  ms.subservice: develop
-  ms.tgt_pltfrm: na
-  ms.devlang: na
   ms.topic: landing-page
   ms.date: 04/26/2019
-  ms.author: dadobali
+  ms.reviewer: jawoods
 abstract:
   description: 'Saiba como autenticar e trabalhar com permissões para acessar dados com segurança através do Microsoft Graph. Explore a documentação abaixo para saber mais sobre o registro de aplicativos, bibliotecas de autenticação, autorização e outras partes da plataforma de identidade da Microsoft que dão suporte ao desenvolvimento do Microsoft Graph.'
   aside:
@@ -43,10 +39,10 @@ sections:
               src: ../images/index/i_overview.svg
             title: Noções básicas de autenticação
           - href: /graph/permissions-reference
-            html: <p>Saiba mais sobre as permissões de aplicativo do & de escopos do Microsoft Graph.</p>
+            html: <p>Saiba mais sobre os escopos do Microsoft Graph & permissões de aplicativo.</p>
             image:
               src: ../images/index/i_code-edit.svg
-            title: _AMP_ escopos de permissão
+            title: '& escopos de permissões'
           - href: /graph/auth/auth-cloudsolutionprovider
             html: <p>Habilitar o acesso de aplicativos a dados gerenciados por parceiros.</p>
             image:
