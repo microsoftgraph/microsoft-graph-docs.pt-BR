@@ -4,12 +4,12 @@ description: A entidade representa um arquivo XML ADMX (modelo administrativo). 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a872671186e55524002b2d0a5f85b2ce1bbf2466
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 384b59a2c9e1b669cd71b294c6420c13b95d1102
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975935"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576484"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>tipo de recurso groupPolicyDefinitionFile
 
@@ -34,6 +34,7 @@ A entidade representa um arquivo XML ADMX (modelo administrativo). O arquivo ADM
 |targetPrefix|String|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX.|
 |targetNamespace|String|Especifica o URI usado para identificar o namespace no arquivo ADMX.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
+|firmware|String|A versão de revisão associada ao arquivo.|
 |id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -61,12 +62,11 @@ Veja a seguir uma representação JSON do recurso.
   "targetPrefix": "String",
   "targetNamespace": "String",
   "policyType": "String",
+  "revision": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

@@ -3,19 +3,19 @@ title: Kit de ferramentas do Microsoft Graph (versão prévia)
 description: O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares da estrutura para acessar e trabalhar com o Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e6d5974029625a8dd1bef0c7b981fcf2b36b747c
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: ca55500217ab23f9e6a2744da61f332e745af398
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242951"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576400"
 ---
 # <a name="microsoft-graph-toolkit-preview"></a>Kit de ferramentas do Microsoft Graph (versão prévia)
 
 O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares da estrutura para acessar e trabalhar com o Microsoft Graph. Todos os componentes podem acessar o Microsoft Graph sem a necessidade de personalização.
 
->[!NOTE]
->Esta biblioteca está em versão prévia e está no desenvolvimento inicial. Esperamos fazer alterações e melhorias em todos os componentes e APIs com base nos comentários da Comunidade.
+> [!NOTE]
+> Esta biblioteca está em versão prévia e está no desenvolvimento inicial. Esperamos fazer alterações e melhorias em todos os componentes e APIs com base nos comentários da Comunidade.
 
 ## <a name="get-started"></a>Introdução
 
