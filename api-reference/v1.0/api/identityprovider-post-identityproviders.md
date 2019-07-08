@@ -4,12 +4,12 @@ description: Criar um novo identityProvider
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a33354c35903fedc3efedb84e9f2ed7bc20c9506
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63a1ae5fddcc1279c3980b8475c7cbdad0bd74f8
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577655"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537585"
 ---
 # <a name="create-identityprovider"></a>Criar identityProvider
 
@@ -43,7 +43,7 @@ POST /identityProviders
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [identityProvider](../resources/identityProvider.md). Todas as propriedades listadas na tabela a seguir são necessárias.
+No corpo da solicitação, forneça uma representação JSON do objeto [identityProvider](../resources/identityprovider.md). Todas as propriedades listadas na tabela a seguir são necessárias.
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [identity
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [identityProvider](../resources/identityProvider.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [identityProvider](../resources/identityprovider.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="example"></a>Exemplo
 

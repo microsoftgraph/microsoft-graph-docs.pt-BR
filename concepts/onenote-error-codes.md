@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: f74f9be52756e068aa3e197f2de526b38c187266
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987850"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558374"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Códigos de erro para APIs do OneNote no Microsoft Graph
 
@@ -343,7 +343,7 @@ Não há suporte para a fonte do vídeo especificada na solicitação. Confira [
 Algo está errado com a conta do usuário.
 
 ### <a name="30101"></a>30101
-A conta do usuário excedeu sua cota do OneDrive. Confira [OneDrive](https://onedrive.live.com/about/pt-BR/).
+A conta do usuário excedeu sua cota do OneDrive. Confira [OneDrive](https://onedrive.live.com/about/en-us/).
 
 ### <a name="30102"></a>30102
 Nada mais pode ser adicionado à seção solicitada porque ela atingiu seu tamanho máximo.

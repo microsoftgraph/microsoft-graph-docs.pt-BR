@@ -4,16 +4,19 @@ description: 'Os grupos do Office 365 fornecem o serviço de associação fundam
 author: dkershaw10
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 3706c7373a80992cec1f920dbfdf5e8829829d10
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cbd06a28b96680e43bbc6b9c2a440ed1b95b21cd
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578805"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621239"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Visão geral dos grupos do Office 365 no Microsoft Graph
 
 Os grupos do Office 365 fornecem o serviço de associação fundamental para os usuários compartilharem conversas, arquivos, anotações, calendários, planos e muitos outros ativos. 
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]
 
 ## <a name="why-integrate-with-office-365-groups"></a>Por que se integrar aos grupos do Office 365?   
 

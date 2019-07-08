@@ -4,16 +4,20 @@ description: 'O Microsoft Teams é o melhor hub para trabalhos em equipe e comun
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 251bb02af83fc86f996c8bbf0c9ea10a5efad8ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da9999a0719d190950adf20bc119044366126f24
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584333"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621218"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
 O [Microsoft Teams](https://products.office.com/microsoft-teams) é o melhor hub para trabalhos em equipe e comunicações inteligentes. Criado com base na força e na escala do [Office 365](https://products.office.com/), que conta com mais de 120 milhões de usuários, o Microsoft Teams oferece recursos de colaboração, reuniões, chamadas e voz empresarial baseados em bate-papo.
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
+
 
 ## <a name="why-integrate-with-microsoft-teams"></a>Por que integrar-se com o Microsoft Teams?
 
@@ -24,7 +28,7 @@ Se quiser reunir a nova equipe para discutir o problema de negócios, [adicione 
 
 ![Automatize os ciclos de vida da equipe criando uma equipe, adicionando membros e proprietários, definindo configurações de equipe, adicionando canais, instalando aplicativos, adicionando guias e arquivando ou excluindo a equipe quanto o momento chegar.](images/teams-lifecycle.png)
 
-Quando o problema de negócios for resolvido e você já não precisar da equipe virtual, use a API do Microsoft Teams para [arquivar](/graph/api/team-archive?view=graph-rest-1.0) ou [excluir](/graph/api/group-delete?view=graph-rest-1.0) a equipe. Se, ao criar a equipe virtual, você souber qual será sua duração máxima, defina uma [política de expiração de grupo do Office 365](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) para a equipe, que removerá a equipe automaticamente de acordo com a política.
+Quando o problema de negócios for resolvido e você já não precisar da equipe virtual, use a API do Microsoft Teams para [arquivar](/graph/api/team-archive?view=graph-rest-1.0) ou [excluir](/graph/api/group-delete?view=graph-rest-1.0) a equipe. Se, ao criar a equipe virtual, você souber qual será sua duração máxima, defina uma [política de expiração de grupo do Office 365](https://support.office.com/pt-BR/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) para a equipe, que removerá a equipe automaticamente de acordo com a política.
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>Faça com que o trabalho seja feito mesmo quando não houver ninguém por perto
 
@@ -34,7 +38,8 @@ Crie equipes automaticamente para aulas no início do ano letivo e arquive essas
 ### <a name="create-teams-linked-to-your-app"></a>Criar equipes vinculadas ao seu aplicativo
 
 Permita que os clientes criem novas [equipes](/graph/api/resources/team?view=graph-rest-1.0) e [canais](/graph/api/resources/channel?view=graph-rest-1.0). 
-[Instale](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) seu [Aplicativo de Equipes](https://docs.microsoft.com/pt-BR/microsoftteams/platform/#pivot=home&panel=home-all) nas novas equipes. 
+
+  [Instale](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) seu [Aplicativo de Equipes](https://docs.microsoft.com/pt-BR/microsoftteams/platform/#pivot=home&panel=home-all) nas novas equipes. 
 [Fixe o aplicativo em uma guia](/graph/api/teamstab-add?view=graph-rest-1.0) no novo canal. 
 [Envie mensagens](/graph/api/channel-post-chatmessage?view=graph-rest-beta) para o canal vinculando-o ao seu site.
 
@@ -64,14 +69,20 @@ As APIs do Microsoft Teams podem melhorar os aplicativos dentro e fora do Teams:
 
 |Tipo de aplicativo|Descrição do cenário|
 |:-------|:-------------------|
-| [Guias](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/tabs/tabs-overview) |Exibem o conteúdo no Microsoft Teams.|
-| [Bots](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/bots/bots-overview) |Ajudam os usuários a concluir tarefas em conversas.|
-| [Conectores](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/connectors/connectors) |Postam atualizações de serviços externos para canais.|
-| [Mensagens Acionáveis](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/cards/cards) |Adicionam interação aprimorada aos cartões do conector.|
-| [Extensões de Mensagens](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/messaging-extensions) |Permitem que os usuários consultem e compartilhem informações em conversas.|
+| 
+  [Guias](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/tabs/tabs-overview) |Exibem o conteúdo no Microsoft Teams.|
+| 
+  [Bots](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/bots/bots-overview) |Ajudam os usuários a concluir tarefas em conversas.|
+| 
+  [Conectores](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/connectors/connectors) |Postam atualizações de serviços externos para canais.|
+| 
+  [Mensagens Acionáveis](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/cards/cards) |Adicionam interação aprimorada aos cartões do conector.|
+| 
+  [Extensões de Mensagens](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/messaging-extensions) |Permitem que os usuários consultem e compartilhem informações em conversas.|
 |Sites| Exibem conteúdo aprimorado em suas páginas da Web.|
 |Serviços|Aprimoram seus aplicativos de cliente com dados do Microsoft Graph por meio do seu serviço Web.|
-| [Feed de atividades](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/activity-feed)|Envolve os usuários por meio de notificações do feed.|
+| 
+  [Feed de atividades](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/activity-feed)|Envolve os usuários por meio de notificações do feed.|
 | [Chamadas e reuniões online (visualização)](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |Crie aplicativos do Microsoft Teams usando bots podem iniciar e participar de chamadas de áudio/vídeo, rotear/transferir chamadas com base em fluxos de resposta de voz interativa (IVR) e participe de reuniões online.|
 
 ## <a name="api-reference"></a>Referência da API

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: VinodRavichandran
 ms.prod: microsoft-teams
 ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970413"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570247"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>Chamando a API do Microsoft Graph
 

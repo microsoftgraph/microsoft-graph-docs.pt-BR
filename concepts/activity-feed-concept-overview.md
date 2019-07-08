@@ -4,11 +4,11 @@ description: Quando você usa atividades, essas experiências da Microsoft podem
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 8e65615d46e795f1bd4d11d68ff291d938ac6c82
-ms.sourcegitcommit: 889145f924d50e7fe6abf3f59261197826b532a1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29760857"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521814"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Usar a API do feed de atividades no Microsoft Graph para habilitar experiências entre dispositivos
 
