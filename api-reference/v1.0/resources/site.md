@@ -1,38 +1,81 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Site
+title: Recurso do site
+description: O recurso do site fornece metadados e relações para um site do SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d4dfb3f340a2b2b7ff5ad5a3c9279cb2a03c63be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 40add99dfbeee28d82b3d02def833497c01385df
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549598"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968846"
 ---
-# <a name="site-resource"></a>Recurso site
+# <a name="site-resource"></a>Recurso do site
 
 O recurso **site** fornece metadados e relações para um site do SharePoint.
 
-## <a name="tasks"></a>Tarefas
+## <a name="methods"></a>Métodos
 
-Todos os exemplos a seguir referem-se ao endereço `https://graph.microsoft.com/v1.0`.
-
-| Nome da tarefa                | Exemplo de Solicitação
-|:-------------------------|:--------------------------------------------------
-| [Obter site raiz][]        | GET /sites/root
-| [Obter site][]             | GET /sites/{site-id}
-| [Obter site por caminho][]     | GET /sites/{hostname}:/{site-path}
-| [Obter o site para um grupo][] | GET /groups/{group-id}/sites/root
-| [Procurar sites][]     | GET /sites?search={query}
+| Método                | Tipo de retorno | Descrição
+|:-------------------------|:-------------|:----------
+| [Obter site raiz][]        | site | Acessar o site raiz do SharePoint dentro de um locatário.
+| [Obter site][]             | site | Acessar um site do sharePoint usando o siteId.
+| [Obter site por caminho][]     | site | Acessar o site raiz do SharePoint com um caminho relativo.
+| [Obter site para um grupo][] | site | Acessar o site de equipe de um grupo.
+| [Obter análises][]              | [itemAnalytics][] | Obter análises para este recurso. 
+| [Obter atividades por intervalo][] | [itemActivityStat][] | Obter uma coleção de **itemActivityStats** dentro do intervalo de tempo especificado.
+| [Pesquisar sites][]     | coleção de sites | Pesquise num locatário do SharePoint por sites que correspondam a palavras-chave fornecidas.
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
 [Obter site por caminho]: ../api/site-getbypath.md
 [Obter o site para um grupo]: ../api/site-get.md
-[Procurar sites]: ../api/site-search.md
+[Obter análises]: ../api/itemanalytics-get.md
+[Obter atividades por intervalo]: ../api/itemactivitystat-getactivitybyinterval.md
+[Pesquisar sites]: ../api/site-search.md
+[itemActivityStat]: itemactivitystat.md
+
+## <a name="properties"></a>Propriedades
+
+| Propriedade            | Tipo                                | Descrição                                                                                    |
+| :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
+| **id**                   | string                              | O identificador exclusivo do item. Somente leitura.                                                  |
+| **createdDateTime**      | DateTimeOffset                      | A data e a hora da criação do item. Somente leitura.                                             |
+| **description**          | string                              | O texto descritivo do site.                                                             |
+| **displayName**          | cadeia de caracteres                              | O texto completo do site. Somente leitura.                                                        |
+| **eTag**                 | string                              | ETag do item. Somente leitura.                                                                  |
+| **lastModifiedDateTime** | DateTimeOffset                      | A data e a hora que o item foi modificado pela última vez. Somente leitura.                                       |
+| **name**                 | string                              | O nome/título do item.                                                                  |
+| **root**                 | [root](root.md)                     | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.            |
+| **sharepointIds**        | [sharepointIds](sharepointids.md)   | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                       |
+| **siteCollection**       | [siteCollection](sitecollection.md) | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura. |
+| **webUrl**               | string (url)                        | A URL que exibe o item no navegador. Somente leitura.                                          |
+
+## <a name="relationships"></a>Relacionamentos
+
+| Relação      | Tipo                             | Descrição
+|:------------------|:---------------------------------|:----------------------
+| **analytics**     | [itemAnalytics][] resource       | Análise sobre as atividades de modo de exibição que ocorreram no site.
+| **columns**       | Collection([columnDefinition][]) | O conjunto de definições de coluna reutilizáveis entre listas nesse site.
+| **contentTypes**  | Collection([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
+| **drive**         | [drive][]                        | A unidade padrão (biblioteca de documentos) desse site.
+| **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
+| **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
+| **lists**         | Collection([list][])             | O conjunto de listas neste site.
+| **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
+| **onenote**       | [onenote][]                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
+
+[columnDefinition]: columndefinition.md
+[baseItem]: baseitem.md
+[contentType]: contenttype.md
+[drive]: drive.md
+[identitySet]: identityset.md
+[itemAnalytics]: itemanalytics.md
+[list]: list.md
+[site]: site.md
+[onenote]: onenote.md
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -64,6 +107,7 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "displayName": "string",
 
   /* relationships */
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
@@ -82,44 +126,6 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "webUrl": "url"
 }
 ```
-
-## <a name="properties"></a>Propriedades
-
-| Nome da propriedade            | Tipo                                | Descrição                                                                                    |
-| :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **id**                   | string                              | O identificador exclusivo do item. Somente leitura.                                                  |
-| **createdDateTime**      | DateTimeOffset                      | A data e a hora da criação do item. Somente leitura.                                             |
-| **description**          | string                              | O texto descritivo do site.                                                             |
-| **displayName**          | cadeia de caracteres                              | O texto completo do site. Somente leitura.                                                        |
-| **eTag**                 | string                              | ETag do item. Somente leitura.                                                                  |
-| **lastModifiedDateTime** | DateTimeOffset                      | A data e a hora que o item foi modificado pela última vez. Somente leitura.                                       |
-| **name**                 | string                              | O nome/título do item.                                                                  |
-| **root**                 | [root](root.md)                     | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.            |
-| **sharepointIds**        | [sharepointIds](sharepointids.md)   | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                       |
-| **siteCollection**       | [siteCollection](sitecollection.md) | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura. |
-| **webUrl**               | string (url)                        | A URL que exibe o item no navegador. Somente leitura.                                          |
-
-## <a name="relationships"></a>Relações
-
-| Nome da relação | Tipo                             | Descrição
-|:------------------|:---------------------------------|:----------------------
-| **columns**       | Collection([columnDefinition][]) | O conjunto de definições de coluna reutilizáveis entre listas nesse site.
-| **contentTypes**  | Collection([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
-| **drive**         | [drive][]                        | A unidade padrão (biblioteca de documentos) desse site.
-| **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
-| **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
-| **lists**         | Collection([list][])             | O conjunto de listas neste site.
-| **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
-| **onenote**       | [onenote][]                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
-
-[columnDefinition]: columndefinition.md
-[baseItem]: baseitem.md
-[contentType]: contenttype.md
-[drive]: drive.md
-[identitySet]: identityset.md
-[list]: list.md
-[site]: site.md
-[onenote]: onenote.md
 
 <!-- {
   "type": "#page.annotation",
