@@ -4,12 +4,12 @@ description: Os provedores de Segurança do Microsoft Graph podem ser gerenciado
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: f411bbbfbedd1e692489b3dcb995e9d34bfab203
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 22ed2806bcaea999fe396fb88f4547e6bbf7f116
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584877"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621288"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>Integração dos alertas da API de Segurança do Microsoft Graph com o SIEM usando o Azure Monitor
 
@@ -90,14 +90,14 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
     }
     ```
 
-  Substitua os valores no arquivo JSON da seguinte maneira:
+Substitua os valores no arquivo JSON da seguinte maneira:
 
   * **SUBSCRIPTION_ID** é a ID de assinatura do Azure que hospeda o grupo de recursos e o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
   * **RESOURCE_GROUP** é o grupo de recursos que contém o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
   * **EVENT_HUB_NAMESPACE** é o namespace do Hub de Eventos para o qual você enviará os alertas de segurança da organização.
   * **"days":** é o número de dias pelos quais você deseja manter as mensagens no Hub de evEntos.
   
-&nbsp;
+
 4. Salve o arquivo como JSON no diretório onde você vai invocar o ARMClient.exe. Por exemplo, chame o arquivo de **AzMonConfig.json.**
 
 5. Execute o seguinte comando para entrar na ferramenta ARMClient. Você precisará usar credenciais da conta de Administrador Global.
@@ -112,13 +112,22 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
     ARMClient.exe put https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview  @".\AzMonConfig.json"
     ```
 
+    > **Observação: É seguro usar** a versão da API `2017-04-01-preview` para produção.
+
+
 7. Para verificar a aplicação correta das configurações, execute este comando e confirme que a saída corresponde às configurações do arquivo JSON.
 
     ``` shell
     ARMClient.exe get https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
     ```
 
-8. Saia da ferramenta ARMClient. Você concluiu a configuração do Azure Monitor para o envio de alertas de segurança do locatário para hub de eventos.
+8. Saia da ferramenta ARMClient. Você concluiu a configuração do Azure Monitor para o envio de alertas de segurança do locatário para Hub de Eventos.
+
+>**Dica:** Para desabilitar o fluxo de alerta do locatário para o Hub de eventos, exclua as configurações do Azure Monitor executando o seguinte comando `delete`.
+
+    ``` shell
+    ARMClient.exe delete https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
+    ```
 
 ## <a name="step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts"></a>Etapa 3: baixar e instalar o complemento do Azure Monitor para o Splunk permitindo a este consumir alertas de segurança
 

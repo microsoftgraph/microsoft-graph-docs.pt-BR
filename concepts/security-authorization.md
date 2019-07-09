@@ -4,12 +4,12 @@ description: Os dados de segurança acessíveis por meio da API de Segurança do
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 795ac1da43c3ba67dcbc83853e4bbb0d54cdae0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 52f781eecef1da2d801025d4ba2409f9297b5cd8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564145"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621225"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorização e API de Segurança do Microsoft Graph
 
@@ -62,9 +62,9 @@ Por exemplo, suponha que você tenha um aplicativo, dois locatários do Microsof
 
 - Para que o aplicativo funcione novamente no locatário **T1**, o administrador de locatários **T1** deve conceder explicitamente as permissões **P1** e **P2** ao aplicativo.
 
-## <a name="register-an-application-in-the-azure-ad-v20-endpoint"></a>Registrar um aplicativo no ponto de extremidade do Microsoft Azure AD v2.0
+## <a name="register-an-application-with-the-microsoft-identity-platform-endpoint"></a>Registrar um aplicativo com o ponto de extremidade da plataforma de identidade da Microsoft 
 
-Para registrar um aplicativo no ponto de extremidade do Microsoft Azure AD v2.0, você precisará:
+Para registrar um aplicativo com o ponto de extremidade da plataforma de identidade da Microsoft, você precisará:
 
 - **Nome do aplicativo** - uma cadeia de caracteres usada para o nome do aplicativo.
 - **URL de redirecionamento** - o URL no qual a resposta de autenticação do Microsoft Azure AD é enviada. Para começar, você pode usar a homepage do aplicativo Web do cliente de teste.
@@ -72,11 +72,13 @@ Para registrar um aplicativo no ponto de extremidade do Microsoft Azure AD v2.0,
 
 Para registrar seu aplicativo:
 
-1. Acesse https://apps.dev.microsoft.com/ e entre.
+1. Vá para o [portal de registro do aplicativo Azure](https://go.microsoft.com/fwlink/?linkid=2083908) e conecte-se.
     >**Observação**: não é necessário ser um administrador de locatários. Você será redirecionado para a lista **Meus aplicativos**.
-2. Escolha **Adicionar um aplicativo** e insira um **Nome do aplicativo** para criar um novo aplicativo.
-3. Na página de registro do novo aplicativo, escolha **Adicionar Plataforma ** > **Web**. No campo **URL de redirecionamento**, insira o URL de redirecionamento.
-4. Na seção **Permissões do Microsoft Graph**, em **Permissões delegadas**, escolha **Adicionar**. Na caixa de diálogo, escolha as permissões necessárias. Para obter uma lista de permissões, consulte [Permissões de segurança](permissions-reference.md#security-permissions).
+2. Selecione **Novo registro**.
+3. Na página de registro do novo aplicativo, digite um valor para **Nome** e selecione os tipos de conta aos quais deseja dar suporte. No campo **URI de redirecionamento**, insira o URL de redirecionamento.
+4. Selecione **Registrar** para criar o aplicativo e exibir a respectiva página de visão geral.
+5. Acesse a página**permissões de API** do aplicativo.
+6. Selecione **Adicionar uma permissão** e selecione **Microsoft Graph** no submenu. Selecione **Permissões delegadas**. Use a caixa de pesquisa para localizar e selecionar as permissões necessárias. Para obter uma lista de permissões, consulte [Permissões de segurança](permissions-reference.md#security-permissions).
 
     >**Observação** A API de Segurança do Microsoft Graph requer o escopo *.Read.All para consultas GET, e o escopo *.ReadWrite.All para consultas PATCH/POST/DELETE.
 
@@ -84,19 +86,19 @@ Para registrar seu aplicativo:
     |:----------|:-------|:-------------------|
     |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (visualização) | GET |
     |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (visualização) | GET, POST |
-    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (visualização)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (visualização) | GET |
-    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (visualização)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (visualização) | GET, POST, PATCH |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | OBTER |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET, POST, PATCH |
     |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (visualização) | GET, POST, PATCH, DELETE|
 
-5. Escolha **Salvar**.
+7. Selecione **Adicionar permissões**.
 
 Salve as informações a seguir:
 
-- ID do Aplicativo
+- ID do aplicativo (cliente)
 - URL de redirecionamento
 - Lista de permissões necessárias
 
-Para mais informações, consulte [Registrar seu aplicativo com o ponto de extremidade do Microsoft Azure AD v2.0](auth-register-app-v2.md).
+Para obter mais informações, consulte [Registrar um aplicativo na Plataforma de Identidade da Microsoft](auth-register-app-v2.md).
 
 ## <a name="grant-permissions-to-an-application"></a>Conceder permissões a um aplicativo.
 
@@ -104,8 +106,8 @@ O registro do aplicativo define somente qual permissão o aplicativo requer - el
 
 Para conceder permissões a um aplicativo, você precisará:
 
-- **ID do Aplicativo** - a ID do aplicativo do portal de registro do aplicativo.
-- **URL de redirecionamento** - a cadeia de caracteres que você define no portal de registro do aplicativo para resposta de autenticação.
+- **ID do Aplicativo** – ID do aplicativo do portal de registro do aplicativo Azure.
+- **URL de redirecionamento** – Cadeia de caracteres que você define no portal de registro do aplicativo para resposta de autenticação.
 
 Para conceder as permissões:
 
@@ -125,7 +127,7 @@ Depois que um aplicativo receber permissões, todas as pessoas com acesso ao apl
 
 Para atribuir funções aos usuários:
 
-- Entre no [Portal do Azure](https://portal.azure.com) (https://portal.azure.com).
+- Entre no [portal do Azure](https://portal.azure.com) (https://portal.azure.com).
 - No menu, selecione **Azure Active Directory ** > **Usuários**.
 - Selecione o nome do usuário.
 - Selecione **Gerenciar ** > **Função de diretório**.
@@ -144,12 +146,18 @@ A tabela a seguir lista os recursos que você pode usar para criar um código de
 
 |**Tipo de aplicativo**|**Biblioteca de autenticação**|
 |------------------------|----------------------------|
-|[Aplicativos da área de trabalho, iOS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Visualização da Biblioteca de Autenticação da Microsoft para iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Aplicativos da área de trabalho - Android](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-android)|[Biblioteca de Autenticação Microsoft (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[Aplicativos da área de trabalho - .Net](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Biblioteca de Autenticação Microsoft (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Aplicativos Web - JavaScript SPA](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Biblioteca de autenticação da Microsoft para visualização de JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Aplicativos Web - Servidor Web .NET](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|[Aplicativos Web - Aplicativo da Web NodeJS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|
+  [Aplicativos da área de trabalho, iOS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Visualização da Biblioteca de Autenticação da Microsoft para iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|
+  [Aplicativos da área de trabalho - Android](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-android)|[Biblioteca de Autenticação Microsoft (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|
+  [Aplicativos da área de trabalho - .Net](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Biblioteca de Autenticação Microsoft (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|
+  [Aplicativos Web - JavaScript SPA](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Biblioteca de autenticação da Microsoft para visualização de JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|
+  [Aplicativos Web - Servidor Web .NET](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
+|
+  [Aplicativos Web - Aplicativo da Web NodeJS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 Para aplicativos que não usam nenhuma das bibliotecas existentes, consulte [Obter acesso em nome de um usuário](auth-v2-user.md).
 
