@@ -3,18 +3,26 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 4e4c205c73524c9c26f5f0fe66300e29baf80f4b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5c5c364edb6ff8c0b840450b428cda649d4eba11
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447478"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576414"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
+
+## <a name="july-2019"></a>Julho de 2019
+
+### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|beta|Propriedade **revision** adicionada à entidade [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) |
+|Adição|beta|Propriedade **valuePrefix** adicionada à entidade [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) |
 
 ## <a name="june-2019"></a>Junho de 2019
 
@@ -24,15 +32,11 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :---------- | :--------------------------------------- |
 |Adição|beta| Novos relatórios adicionados para recuperar informações de registro e uso do usuário:<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) – Relata o uso do autoatendimento de redefinição de senha.</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) – Relata o número de registros de autoatendimento de redefinição de senha e autenticação multifator.</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) – Relata o uso de registros de autoatendimento de redefinição de senha e autenticação multifator.</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) – Relata o uso do autoatendimento de redefinição de senha para um usuário.</li></ul> |
 
-### <a name="identity-protection-apis"></a>APIs de Proteção de identidade 
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Adição | beta | Adicionada a API [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta), que representa as detecções de risco na proteção de identidades do Azure AD. |
-
 ### <a name="identity-and-access"></a>Identidade e acesso
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
+| Adição | beta | Adicionada a [API riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta), que representa as detecções de risco na Proteção de Identidades do Azure AD. |
 | Adição        | Beta  | Apresentação do novo tipo de recurso [applicationTemplate](/graph/api/resources/applicationtemplate.md). Esse tipo de recurso dá suporte a [instanciar](/graph/api/applicationtemplate-instantiate.md), [listar](/graph/api/applicationtemplate-instantiate.md) e [obter](/graph/api/applicationtemplate-get.md) aplicativos da galeria do aplicativo Azure AD.|
 | Adição | beta|Novos recursos adicionados: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [Iniciador](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
 | Adição |beta |Operação de [lista provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) adicionada</br>|                     |
