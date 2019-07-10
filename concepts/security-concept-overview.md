@@ -4,12 +4,12 @@ description: Você pode usar a API de Segurança do Microsoft Graph para se cone
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 1036a41a8447b1f6305adf763b200b17fbfa37dd
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 595c1f80bb7c110197bf755fe74c0c842fa06014
+ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133835"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35607389"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
@@ -21,7 +21,7 @@ Você pode usar a API de Segurança do Microsoft Graph para se conectar aos prod
 Para informações sobre autorização, confira [Autorização e a API de Segurança do Microsoft Graph](security-authorization.md). Para saber mais sobre permissões, incluindo permissões delegadas e de aplicativos, confira [Permissões](permissions-reference.md#security-permissions).
 
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/ZXkKjkxdrB4]
+> [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Por que usar a API de Segurança do Microsoft Graph?
 

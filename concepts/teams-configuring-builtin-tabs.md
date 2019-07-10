@@ -4,12 +4,12 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: afd06dcfbefdab71a72ea2b73ff12e84328d361e
+ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574593"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35607396"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
@@ -149,8 +149,8 @@ Para as guias do OneNote, o `teamsAppId` é `0d820ecd-def2-4297-adad-78056cde7c7
 | Propriedade   | Tipo        | Descrição                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `{randomGuid}_{notebookId}`, em que {randomGuid} é um GUID que você gera.                                      |
-| contentUrl | string      | Uma URL no formato `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, em que `{sectionsUrl}`, `{notebookId}` e `{oneNoteWebUrl}` podem ser encontradas em [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Barras invertidas devem conter sequências de escape. {locale} e {tid} são literais. |
-| removeUrl  | string      | Uma URL no formato `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, em que `{sectionsUrl}`, `{notebookId}` e `{oneNoteWebUrl}` podem ser encontradas em [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Barras invertidas devem conter sequências de escape. {locale} e {tid} são literais. |
+| contentUrl | string      | Uma `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{groupId}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`URL do formulário, onde `{notebookId}` e `{oneNoteWebUrl}` pode ser encontrada em [obter/groups/{ID}/OneNote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Barras invertidas devem conter sequências de escape. {GroupId}, {locale} e {tid} são literais. |
+| removeUrl  | string      | Uma `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{groupId}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`URL do formulário, onde `{notebookId}` e `{oneNoteWebUrl}` pode ser encontrada em [obter/groups/{ID}/OneNote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Barras invertidas devem conter sequências de escape. {GroupId}, {locale} e {tid} são literais. |
 | websiteUrl | string      | Uma URL no formato `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, em que `oneNoteWebUrl` pode ser encontrado em [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) |
 
 ## <a name="power-bi-tabs"></a>Guias do Power BI
