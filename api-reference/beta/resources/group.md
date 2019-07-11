@@ -4,12 +4,12 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f4131d3d2c327c91fc29d31a922b167c72607397
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 551ee0939d4a8ba10ea54d61b068078e21e5003a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236493"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621134"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -80,7 +80,7 @@ Esse recurso permite:
 |[Remover acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Remover um Usuário ou Grupo da coleção acceptedSenders.|
 |[Listar rejectedSenders](../api/group-list-rejectedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para este grupo.|
 |[Adicionar rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Adicionar um novo Usuário ou Grupo à coleção rejectedSenders.|
-|[Remover rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remover um novo Usuário ou Grupo da coleção rejectedSenders.|
+|[Remover rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remover um novo Usuário ou Grupo da coleção Remetentesrejeitados.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|

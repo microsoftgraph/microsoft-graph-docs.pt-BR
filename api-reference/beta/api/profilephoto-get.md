@@ -2,12 +2,12 @@
 title: Obter foto
 description: Obtenha a profilePhoto específica ou seus metadados (propriedades **profilePhoto**).
 localization_priority: Priority
-ms.openlocfilehash: 422b9cb39b7af6527341070cbe35f3bfb59d504d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7d90054391d27dd15758aa4330d777e23fe21344
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337164"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620595"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -34,6 +34,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Para recurso de **usuário**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
 |Delegado (conta pessoal da Microsoft)  <br /> **Observação**: não há suporte para a operação de metadados. | Para recurso de **usuário**:<br/>User.Read, User.ReadWrite<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
 |Aplicativo                        | Para recurso de **usuário**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
+
+> 
+  **Observação:** Há um [problema conhecido](https://docs.microsoft.com/pt-BR/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP 
 
