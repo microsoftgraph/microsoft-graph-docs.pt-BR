@@ -2,29 +2,31 @@
 title: 'synchronizationSchema: funções'
 description: Listar todas as funções atualmente suportadas no attributeMappingSource.
 localization_priority: Normal
-ms.openlocfilehash: a9967f1d3a6d68c847596f1e1ece2224ba0242fc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 41355675da4ec2f11f9f3b32d086a8db2aaf398b
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458154"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621008"
 ---
-# <a name="synchronizationschema-functions"></a><span data-ttu-id="9c489-103">synchronizationSchema: funções</span><span class="sxs-lookup"><span data-stu-id="9c489-103">synchronizationSchema: functions</span></span>
+# <a name="synchronizationschema-functions"></a><span data-ttu-id="865c1-103">synchronizationSchema: funções</span><span class="sxs-lookup"><span data-stu-id="865c1-103">synchronizationSchema: functions</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9c489-104">Listar todas as funções atualmente suportadas no [attributeMappingSource](../resources/synchronization-attributemappingsource.md).</span><span class="sxs-lookup"><span data-stu-id="9c489-104">List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md).</span></span>
+<span data-ttu-id="865c1-104">Listar todas as funções atualmente suportadas no [attributeMappingSource](../resources/synchronization-attributemappingsource.md).</span><span class="sxs-lookup"><span data-stu-id="865c1-104">List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9c489-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="9c489-105">Permissions</span></span>
-<span data-ttu-id="9c489-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9c489-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="865c1-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="865c1-105">Permissions</span></span>
+<span data-ttu-id="865c1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="865c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9c489-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9c489-108">Permission type</span></span>                        | <span data-ttu-id="9c489-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9c489-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="865c1-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="865c1-108">Permission type</span></span>                        | <span data-ttu-id="865c1-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="865c1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9c489-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9c489-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="9c489-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c489-111">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="9c489-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9c489-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="9c489-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9c489-113">Not supported.</span></span>|
-|<span data-ttu-id="9c489-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9c489-114">Application</span></span>                            |<span data-ttu-id="9c489-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9c489-115">Not supported.</span></span> | 
+|<span data-ttu-id="865c1-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="865c1-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="865c1-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="865c1-111">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="865c1-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="865c1-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="865c1-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="865c1-113">Not supported.</span></span>|
+|<span data-ttu-id="865c1-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="865c1-114">Application</span></span>                            |<span data-ttu-id="865c1-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="865c1-115">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="9c489-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9c489-116">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="865c1-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="865c1-116">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
@@ -32,26 +34,26 @@ GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema/functi
 GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9c489-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9c489-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="865c1-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="865c1-117">Request headers</span></span>
 
-| <span data-ttu-id="9c489-118">Nome</span><span class="sxs-lookup"><span data-stu-id="9c489-118">Name</span></span>           | <span data-ttu-id="9c489-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="9c489-119">Type</span></span>    | <span data-ttu-id="9c489-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="9c489-120">Description</span></span>|
+| <span data-ttu-id="865c1-118">Nome</span><span class="sxs-lookup"><span data-stu-id="865c1-118">Name</span></span>           | <span data-ttu-id="865c1-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="865c1-119">Type</span></span>    | <span data-ttu-id="865c1-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="865c1-120">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="9c489-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="9c489-121">Authorization</span></span>  | <span data-ttu-id="9c489-122">string</span><span class="sxs-lookup"><span data-stu-id="9c489-122">string</span></span>  | <span data-ttu-id="9c489-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9c489-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="865c1-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="865c1-121">Authorization</span></span>  | <span data-ttu-id="865c1-122">string</span><span class="sxs-lookup"><span data-stu-id="865c1-122">string</span></span>  | <span data-ttu-id="865c1-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="865c1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9c489-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9c489-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="865c1-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="865c1-125">Request body</span></span>
 
-<span data-ttu-id="9c489-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9c489-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="865c1-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="865c1-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9c489-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="9c489-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="865c1-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="865c1-127">Response</span></span>
 
-<span data-ttu-id="9c489-128">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9c489-128">If successful, this method returns a `200 OK` response code and a collection of [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) objects in the response body.</span></span>
+<span data-ttu-id="865c1-128">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="865c1-128">If successful, this method returns a `200 OK` response code and a collection of [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9c489-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9c489-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="865c1-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="865c1-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9c489-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9c489-130">Request</span></span>
-<span data-ttu-id="9c489-131">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="9c489-131">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="865c1-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="865c1-130">Request</span></span>
+<span data-ttu-id="865c1-131">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="865c1-131">The following is an example of a request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9c489-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="9c489-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="865c1-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="865c1-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_functions"
@@ -59,25 +61,25 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9c489-133">C#</span><span class="sxs-lookup"><span data-stu-id="9c489-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="865c1-133">C#</span><span class="sxs-lookup"><span data-stu-id="865c1-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-functions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9c489-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="9c489-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="865c1-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="865c1-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-functions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9c489-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="9c489-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="865c1-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="865c1-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-functions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="9c489-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="9c489-136">Response</span></span>
-<span data-ttu-id="9c489-137">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="9c489-137">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="865c1-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="865c1-136">Response</span></span>
+<span data-ttu-id="865c1-137">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="865c1-137">The following is an example of a response.</span></span>
 
-><span data-ttu-id="9c489-138">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="9c489-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="9c489-139">Todas as propriedades serão retornadas em uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9c489-139">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="865c1-138">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="865c1-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="865c1-139">Todas as propriedades serão retornadas em uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="865c1-139">All the properties will be returned in an actual call.</span></span>
 
 <!--
 {
