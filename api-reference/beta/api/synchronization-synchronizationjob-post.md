@@ -2,12 +2,14 @@
 title: Criar synchronizationJob
 description: Crie um novo trabalho de sincronização com um esquema de sincronização padrão. O trabalho é criado em um estado desabilitado. Inicie o trabalho de início de chamada para iniciar a sincronização.
 localization_priority: Normal
-ms.openlocfilehash: b57787ee03097b7b6cfadeba077fb49773d569f3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 65ae773af55a524fdd05d95b736c4b50b22585a3
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457027"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621092"
 ---
 # <a name="create-synchronizationjob"></a>Criar synchronizationJob
 

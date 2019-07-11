@@ -2,12 +2,14 @@
 title: tipo de recurso parseExpressionResponse
 description: 'Representa a resposta da ação [synchronizationSchema: ParseName](../api/synchronization_synchronizationschema_parseexpression.md) .'
 localization_priority: Normal
-ms.openlocfilehash: 14fcce13d2e78b99a8712c51768e6a94928fa07f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d63a8834640d357e41051750f7f2cd50b8724fee
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345534"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620483"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>tipo de recurso parseExpressionResponse
 
@@ -19,10 +21,10 @@ Representa a resposta da ação [parsery](../api/synchronization-synchronization
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |erro|publicError|Detalhes do erro, se a avaliação da expressão resultar em um erro.|
-|evaluationResult|Coleção String|Uma coleção de valores produzidos pela avaliação da expressão.|
-|evaluationSucceeded|Boolean|`true`se a avaliação tiver sido bem-sucedida.|
+|evaluationResult|Coleção de cadeias de caracteres|Uma coleção de valores produzidos pela avaliação da expressão.|
+|evaluationSucceeded|Booliano|`true`se a avaliação tiver sido bem-sucedida.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Um objeto [attributeMappingSource](synchronization-attributemappingsource.md) que representa a expressão analisada.|
-|parsingSucceeded|Boolean|`true`se a expressão tiver sido analisada com êxito.|
+|parsingSucceeded|Booliano|`true`se a expressão tiver sido analisada com êxito.|
 
 ## <a name="json-representation"></a>Representação JSON
 

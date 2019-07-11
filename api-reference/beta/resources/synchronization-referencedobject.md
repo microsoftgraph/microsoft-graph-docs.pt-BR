@@ -2,12 +2,14 @@
 title: tipo de recurso referenciouobject
 description: Descreve uma referência a outro objeto definido na mesma definição de diretório.
 localization_priority: Normal
-ms.openlocfilehash: 185691c970a5555d23b7b349cef546fb85be0893
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b06bac82ca78c3d249d3b173c0db7f72a953e2d2
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345571"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620448"
 ---
 # <a name="referencedobject-resource-type"></a>tipo de recurso referenciouobject
 

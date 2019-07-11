@@ -2,12 +2,14 @@
 title: tipo de recurso stringKeyLongValuePair
 description: Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é Int64.
 localization_priority: Normal
-ms.openlocfilehash: 48ca44c70e02be153aaeb5ee1171cd8c60e0fa2d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c422c565ebdbea58baa3f6709fdd5deef6cb1929
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342745"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620406"
 ---
 # <a name="stringkeylongvaluepair-resource-type"></a>tipo de recurso stringKeyLongValuePair
 

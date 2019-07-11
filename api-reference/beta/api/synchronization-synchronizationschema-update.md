@@ -2,12 +2,14 @@
 title: Atualizar synchronizationSchema
 description: Atualize o esquema de sincronização de um determinado trabalho ou modelo. Esse método substitui completamente o esquema atual pelo fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto Application. Você deve ser o proprietário do aplicativo.
 localization_priority: Normal
-ms.openlocfilehash: 0990c1218d93b75e93b20271fc929621ab7e83e2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 432b22207bc8daee547b7d217a3a2e0f059f9f99
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458181"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620980"
 ---
 # <a name="update-synchronizationschema"></a>Atualizar synchronizationSchema
 

@@ -1,19 +1,19 @@
 ---
 title: Tipo de recurso groupLifecyclePolicy
-description: Representa uma política de ciclo de vida de um Grupo do Office 365. Uma política de ciclo de vida permite aos administradores definir um período de validade para os grupos. Por exemplo, após 180 dias o grupo expira. Quando um grupo alcança esse prazo, os proprietários devem renovar o grupo por um período definido pelo administrador. Depois de renovado, o período de validade é estendido de acordo com o número de dias definido na política. Por exemplo, a nova validade do grupo é de 180 dias após a renovação. Caso não seja renovado, ele expirará e será excluído. É possível renovar o grupo no prazo de 30 dias da data de exclusão.
+description: Representa uma política de ciclo de vida de um grupo do Office 365. Uma política de ciclo de vida permite aos administradores definir um período de validade para os grupos. Por exemplo, após 180 dias o grupo expira. Quando um grupo alcança esse prazo, os proprietários devem renovar o grupo por um período definido pelo administrador. Depois de renovado, o período de validade é estendido de acordo com o número de dias definido na política. Por exemplo, a nova validade do grupo é de 180 dias após a renovação. Caso não seja renovado, ele expirará e será excluído. É possível renovar o grupo no prazo de 30 dias da data de exclusão.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: c69a54ef5323b1e3d171135d4b1b0231b6834c79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 766050909a9ee9a417db666061d2427e12d3a6c9
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506353"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620854"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Tipo de recurso groupLifecyclePolicy
 
-Representa uma política de ciclo de vida de um Grupo do Office 365. Uma política de ciclo de vida permite aos administradores definir um período de validade para os grupos. Por exemplo, após 180 dias o grupo expira. Quando um grupo alcança esse prazo, os proprietários devem renovar o grupo por um período definido pelo administrador. Depois de renovado, o período de validade é estendido de acordo com o número de dias definido na política. Por exemplo, a nova validade do grupo é de 180 dias após a renovação. Caso não seja renovado, ele expirará e será excluído. É possível renovar o grupo no prazo de 30 dias da data de exclusão.
+Representa uma política de ciclo de vida de um grupo do Office 365. Uma política de ciclo de vida permite aos administradores definir um período de validade para os grupos. Por exemplo, após 180 dias o grupo expira. Quando um grupo alcança esse prazo, os proprietários devem renovar o grupo por um período definido pelo administrador. Depois de renovado, o período de validade é estendido de acordo com o número de dias definido na política. Por exemplo, a nova validade do grupo é de 180 dias após a renovação. Caso não seja renovado, ele expirará e será excluído. É possível renovar o grupo no prazo de 30 dias da data de exclusão.
 
 ## <a name="methods"></a>Métodos
 
@@ -25,7 +25,7 @@ Representa uma política de ciclo de vida de um Grupo do Office 365. Uma políti
 |[Excluir groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | Nenhum | Excluir um objeto groupLifecyclePolicy. |
 |[Adicionar um grupo a um objeto groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|Nenhum| Adicionar um grupo a uma política de ciclo de vida |
 |[Remover um grupo de um objeto groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|Nenhum| Remover um grupo de uma política de ciclo de vida. |
-|[ReNovar um grupo](../api/grouplifecyclepolicy-renewgroup.md)|Nenhum| ReNovar a data de vencimento de um grupo. |
+|[Renovar um grupo](../api/grouplifecyclepolicy-renewgroup.md)|Nenhum| Renovar a data de vencimento de um grupo. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,7 +36,7 @@ Representa uma política de ciclo de vida de um Grupo do Office 365. Uma políti
 |id|Guid| Um identificador exclusivo de uma política. Somente leitura.|
 |managedGroupTypes|Cadeia de caracteres| O tipo de grupo ao qual se aplica a política de expiração. Os valores possíveis são **All**, **Selected** ou **None**. |
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 
 Nenhum
 

@@ -4,12 +4,12 @@ description: Tipo complexo contendo propriedades de insights.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a8f6f048576ce5bc6ab532793d98fa1644e5158d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7eddc083bd38c0902f61d326926c86f48ca78714
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333560"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620903"
 ---
 # <a name="resourcevisualization-resource-type"></a>tipo de recurso resourceVisualization
 
@@ -45,8 +45,8 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |---------------| -------------|
 | title                 | String        | O texto do título do item.               |
-| tipo              | Cadeia de caracteres        | O tipo de mídia do item. Pode ser usado para filtrar um arquivo específico com base em um tipo específico. Veja abaixo os tipos suportados. |
-| Mídia             | String        | O tipo de mídia do item. Pode ser usado para filtragem para um tipo específico de arquivo baseado em tipos MIME de mídias da IANA compatíveis. Observe que nem todos os tipos de MIME de mídia têm suporte. |
+| type              | Cadeia de caracteres        | O tipo de mídia do item. Pode ser usado para filtrar um arquivo específico com base em um tipo específico. Veja abaixo os tipos suportados. |
+| Mídia             | String        | O tipo de mídia do item. Pode ser usado para filtragem de um tipo específico de arquivo baseado em tipos MIME de mídias da IANA compatíveis. Observe que nem todos os tipos de MIME de mídia têm suporte. |
 | previewImageUrl       | String        | Uma URL que leva à imagem de visualização do item. |
 | previewText           | String        | Um texto de visualização para o item. |
 | containerWebUrl       | String        | Um caminho que conduz à pasta na qual o item está armazenado. |
@@ -65,7 +65,7 @@ Veja a seguir uma representação JSON do recurso
 -   Publisher
 -   Project
 -   Access
--   Email
+-   Correio
 -   Limit
 -   Arquivo
 -   XPS
@@ -78,7 +78,7 @@ Veja a seguir uma representação JSON do recurso
 -   História
 -   ExternalContent
 -   Folder
--   Outros
+-   Other
 
 Consulta de exemplo:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -87,7 +87,7 @@ Os tipos com suporte podem diferir com base nos contêineres dos quais o [office
 
 -   OneDriveBusiness
 -   Site
--   Email
+-   Correio
 -   DropBox
 -   Caixa
 -   GDrive

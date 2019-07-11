@@ -2,12 +2,12 @@
 title: tipo de recurso governancePermission
 description: 'Representa a permissão de acesso que um governanceSubject tem a um Entidadegovernanceresource específico.  '
 localization_priority: Normal
-ms.openlocfilehash: 2f6be4bdc502f829b1dcfd991d1c2ae6130dea8a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cd5b15a85dee7a193962a6072bcdf34b1d4f131a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340176"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621302"
 ---
 # <a name="governancepermission-resource-type"></a>tipo de recurso governancePermission
 
@@ -20,8 +20,8 @@ Representa a permissão de acesso que um [governanceSubject](../resources/govern
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |accessLevel|String|O nível de acesso. Valores válidos: ``None``, ``UserRead``, ``AdminRead``e ``AdminReadWrite``.|
-|isActive|Boolean|Indica se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
-|isQualificável|Boolean|Indica se o solicitante tem qualquer atribuição de função qualificada para o nível de acesso.|
+|isActive|Booliano|Indica se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
+|isqualificável|Booliano|Indica se o solicitante tem qualquer atribuição de função qualificada para o nível de acesso.|
 
 ## <a name="json-representation"></a>Representação JSON
 

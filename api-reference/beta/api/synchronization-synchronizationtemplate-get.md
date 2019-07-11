@@ -2,12 +2,14 @@
 title: Obter synchronizationtemplate
 description: Recupere um modelo de sincronização por seu identificador.
 localization_priority: Normal
-ms.openlocfilehash: 982727fa54f1b6f83d7acf382f0ccacdad72b7ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 27402a9e24c03ee000df419cb11082aff5afe1ea
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335538"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620952"
 ---
 # <a name="get-synchronizationtemplate"></a>Obter synchronizationtemplate
 

@@ -2,12 +2,14 @@
 title: tipo de recurso synchronizationError
 description: Representa um erro que ocorreu durante o processo de sincronização.
 localization_priority: Normal
-ms.openlocfilehash: 7f678cdbd48a3d5f013c22120d01c28bb61738e6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b48f1f47f343995b5cb7dc9ab3de4210a5249124
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324696"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620749"
 ---
 # <a name="synchronizationerror-resource-type"></a>tipo de recurso synchronizationError
 
@@ -22,7 +24,7 @@ Representa um erro que ocorreu durante o processo de sincronização.
 |:---------------|:--------|:----------|
 |código|String||
 |mensagem|String||
-|tenantActionable|Boolean||
+|tenantActionable|Booliano||
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -2,12 +2,12 @@
 title: tipo de recurso governanceRoleAssignmentRequest
 description: Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: d5d5f34d417b5d5cbd5eca9bb32ad49c17ef70e5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 13834b683fa909b51f3f81550aad426808c034d2
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333677"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620924"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>tipo de recurso governanceRoleAssignmentRequest
 
@@ -23,9 +23,9 @@ Representa a solicitação de operações de atribuição de função no gerenci
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Obtenha uma solicitação de atribuição de função especificada por ID.  
 |[List](../api/governanceroleassignmentrequest-list.md) | coleção [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Obter solicitações de atribuição de função em um recurso.|
-|[Criar](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Criar uma solicitação para gerenciar o ciclo de vida da atribuição de função nova ou existente.|
+|[Create](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Criar uma solicitação para gerenciar o ciclo de vida da atribuição de função nova ou existente.|
 |[Cancel](../api/governanceroleassignmentrequest-cancel.md)|  |Cancelar uma solicitação de atribuição de função pendente.|
-|[Atualizar](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Os administradores atualizam as decisões sobre solicitações se as solicitações estiverem no `PendingAdminDecision`status de.|
+|[Atualização](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Os administradores atualizam as decisões sobre solicitações se as solicitações estiverem no `PendingAdminDecision`status de.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade                  | Tipo          |Descrição|
@@ -37,7 +37,7 @@ Representa a solicitação de operações de atribuição de função no gerenci
 |type                       |String         |Obrigatório. Representando o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Os administradores atribuem usuários/grupos a funções;</li><li>`UserAdd`: Os usuários ativam atribuições qualificadas;</li><li> `AdminUpdate`: Administradores alterar as atribuições de função existentes</li><li>`AdminRemove`: Administradores removem usuários/grupos de funções;<li>`UserRemove`: Os usuários desativam atribuições ativas;<li>`UserExtend`: Os usuários solicitam estender suas atribuições de expiração;</li><li>`AdminExtend`: Os administradores extendem as atribuições expiradas.</li><li>`UserRenew`: Os usuários solicitam a renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Os administradores extendem as atribuições expiradas.</li></ul>|
 |assignmentstate|String  |Obrigatório. O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição qualificada</li><li> `Active`– Se ele for atribuído `Active` diretamente por administradores ou ativado em uma atribuição qualificada pelos usuários.</li></ul>|
 |requestedDateTime          |DateTimeOffset |Somente leitura. O tempo de criação da solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|futebol                   |[governanceSchedule](governanceschedule.md)|O objeto Schedule da solicitação de atribuição de função.|
+|Cronograma                   |[governanceSchedule](governanceschedule.md)|O objeto Schedule da solicitação de atribuição de função.|
 |motivos                     |String         |Uma mensagem fornecida por usuários e administradores quando você cria a solicitação sobre por que ela é necessária.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |O status da solicitação de atribuição de função.|
 |linkedEligibleRoleAssignmentId|String        |Se esta for uma solicitação para ativação de função, ela representará a ID `eligible assignment` da referida; Caso contrário, o valor `null`será. |

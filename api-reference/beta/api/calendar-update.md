@@ -4,14 +4,14 @@ description: 'Atualize as propriedades de um objeto calendar. O calendário pode
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: b81e172e9931ff407339996562945a9710df9386
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 36fd6dbcd41f7a90b4a662ed340f3fcd233f7332
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438864"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620287"
 ---
-# <a name="update-calendar"></a>Atualizar o calendário
+# <a name="update-calendar"></a>Atualizar calendário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

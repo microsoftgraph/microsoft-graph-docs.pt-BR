@@ -1,15 +1,17 @@
 ---
-title: tipo de recurso objectMapping
+title: tipo de recurso objectmapping
 description: Define como um determinado objeto deve ser sincronizado do diretório de origem para o diretório de destino. Em particular, define como o objeto no diretório de origem deve corresponder a um objeto no diretório de destino, quais filtros de escopo (se houver) devem ser usados para decidir se queremos provisionar um determinado objeto e como os atributos do objeto devem ser transformados origem para o diretório de destino.
 localization_priority: Normal
-ms.openlocfilehash: 10b57c385d57a1fb5492bbb292e5ddc1fa2ff999
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 667a58f299847188d193a5b50bb9883721d191e9
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345548"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620511"
 ---
-# <a name="objectmapping-resource-type"></a>tipo de recurso objectMapping
+# <a name="objectmapping-resource-type"></a>tipo de recurso objectmapping
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ Os mapeamentos de objetos são a parte principal da [regra de sincronização](s
 |flowTypes      |objectFlowTypes    |Quais tipos de fluxo estão habilitados para este mapeamento de objeto. `Add`cria novos objetos no diretório de destino, `Update` modifica objetos existentes e `Delete` desprovisiona usuários existentes. O padrão é `Add, Update, Delete`. |
 |los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
 |name           |String     |Nome amigável do mapeamento do objeto.|
-|escopo          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você pode querer provisionar apenas usuários que estão localizados nos EUA.|
+|scope          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você pode querer provisionar apenas usuários que estão localizados nos EUA.|
 |sourceObjectName           |String     |Nome do objeto no diretório de origem. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de origem.|
 |targetObjectName           |String     |Nome do objeto no diretório de destino. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de destino.|
 

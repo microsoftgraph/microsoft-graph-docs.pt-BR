@@ -2,12 +2,14 @@
 title: Visão geral da API de sincronização do Azure AD
 description: ') permite automatizar a criação, a manutenção e a remoção de identidades em aplicativos de nuvem (software como serviço ou SaaS) como o Dropbox, Salesforce, ServiceNow e muito mais. Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:'
 localization_priority: Normal
-ms.openlocfilehash: e472acc60e74c6a22a744d84e7e4dcf672337a6e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c500eeb188461eaf245b6a9149421216cfaf2f43
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342899"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620497"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 

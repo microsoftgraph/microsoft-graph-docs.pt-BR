@@ -2,12 +2,14 @@
 title: tipo de recurso attributeMappingParameterSchema
 description: Descreve um único parâmetro usado em um attributeMappingFunctionSchema.
 localization_priority: Normal
-ms.openlocfilehash: 44234e7e76b5b0d0fb514366be6106c8177b56db
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d8624851d37f475df66ec51f1951ebbbe1ea97a8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342912"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620264"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>tipo de recurso attributeMappingParameterSchema
 
@@ -19,9 +21,9 @@ Descreve um único parâmetro usado em um [attributeMappingFunctionSchema](../re
 
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Boolean                   |O parâmetro fornecido pode ser fornecido várias vezes (por exemplo, várias cadeias de caracteres `Concatenate(string,string,...)` de entrada na função). |
+|allowMultipleOccurrences    |Booliano                   |O parâmetro fornecido pode ser fornecido várias vezes (por exemplo, várias cadeias de caracteres `Concatenate(string,string,...)` de entrada na função). |
 |name                        |String                    |Nome do parâmetro. |
-|obrigatório                    |Boolean                   |`true`Se o parâmetro for necessário; caso `false`contrário. |
+|obrigatório                    |Booliano                   |`true`Se o parâmetro for necessário; caso `false`contrário. |
 |type                        |String                    |Os valores possíveis são: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. O padrão é `String`.|
 
 ## <a name="json-representation"></a>Representação JSON

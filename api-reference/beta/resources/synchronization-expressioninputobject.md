@@ -2,12 +2,14 @@
 title: tipo de recurso expressionInputObject
 description: 'Representa um objeto a ser usado como dados de teste de entrada quando a ação [synchronizationSchema: ParseName](../api/synchronization_synchronizationschema_parseexpression.md) executa uma avaliação de expressão.'
 localization_priority: Normal
-ms.openlocfilehash: 90d394639de7050eaed3b696dd8526e144cac03d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b5fb11471757328bf0b84ae5ea0977d43587d7e4
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345565"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621379"
 ---
 # <a name="expressioninputobject-resource-type"></a>tipo de recurso expressionInputObject
 
@@ -18,7 +20,7 @@ Representa um objeto que será usado como dados de teste de entrada [](../api/sy
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definir|[objectDefinition](synchronization-objectdefinition.md)|Definição do objeto Test.|
+|definir|[ObjectDefinition](synchronization-objectdefinition.md)|Definição do objeto Test.|
 |properties|coleção [stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md)|Valores de Propriedade do objeto Test.|
 
 ## <a name="json-representation"></a>Representação JSON

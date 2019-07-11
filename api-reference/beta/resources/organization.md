@@ -4,12 +4,12 @@ description: 'Representa um locatário do Azure Active Directory. '
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bfde61b207979f734398ef62f988d332a4abb455
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 0acd2701a0dd8d08021057a545b84ae18a61adb2
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656885"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620944"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -32,32 +32,32 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Criar uma definição para a extensão de esquema e usá-la para adicionar dados digitados personalizados a um recurso.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|assignedPlans|Coleção [assignedPlan](assignedplan.md)|A coleção de planos de serviço associados ao locatário. Não anulável.            |
-| businessPhones                      | String collection                                         | Número de telefone da organização. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                            |
-|city|String| Nome da cidade do endereço da organização |
-|companyLastDirSyncTime|DateTimeOffset|A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|country|String| Nome do país/região do endereço da organização |
-|countryLetterCode|String| Abreviação de país/região da organização |
-|createdDateTime|DateTimeOffset| Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-| deletedDateTime                    | DateTimeOffset                                                    | Representa a data e a hora que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no horário do UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.                                                                                     |
-|dirSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
-|displayName|String|O nome de exibição do locatário.|
-|id|Cadeia de caracteres|A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
-|isMultipleDataLocationsForServicesEnabled|Boolean|**verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|marketingNotificationEmails|String collection| Não anulável.            |
-|objectType|String|Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
-|postalCode|Cadeia de caracteres| CEP do endereço da organização |
-|preferredLanguage|String| O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
-|privacyProfile|[privacyProfile](privacyprofile.md)| O perfil de privacidade de uma organização.            |
-|provisionedPlans|coleção [provisionedPlan](provisionedplan.md)| Não anulável.            |
-|securityComplianceNotificationMails|Coleção de cadeias de caracteres||
-|securityComplianceNotificationPhones|Coleção de cadeias de caracteres||
-|state|String| Nome do estado do endereço da organização |
-|street|String| Nome da rua do endereço da organização |
-|technicalNotificationMails|Coleção de cadeias de caracteres| Não anulável. |
-|verifiedDomains|coleção [verifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável.            |
+| Propriedade | Tipo   | Descrição |
+|:-------- |:---- |:----------- |
+| assignedPlans | Coleção [assignedPlan](assignedplan.md) | A coleção de planos de serviço associados ao locatário. Não anulável. |
+| businessPhones | String collection | Número de telefone da organização. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
+| city | String | Nome da cidade do endereço da organização. |
+| country | String | Nome do país/região do endereço da organização. |
+| countryLetterCode | String | Abreviação de país/região da organização. |
+| createdDateTime | DateTimeOffset | Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
+| deletedDateTime | DateTimeOffset | Representa a data e a hora que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no horário do UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
+| displayName | String | O nome de exibição do locatário. |
+| id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
+| isMultipleDataLocationsForServicesEnabled | Boolean | **verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
+| marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
+| objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
+| onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+| onPremisesSyncEnabled | Booliano | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
+| postalCode | Cadeia de caracteres | Código postal do endereço da organização. |
+| preferredLanguage | String | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
+| privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |
+| provisionedPlans | coleção [provisionedPlan](provisionedplan.md) | Não anulável. |
+| securityComplianceNotificationMails | Coleção de cadeias de caracteres ||
+| securityComplianceNotificationPhones | Coleção de cadeias de caracteres ||
+| state | String | Nome do estado do endereço da organização. |
+| street | String | Nome da rua do endereço da organização. |
+| technicalNotificationMails |Coleção de cadeias de caracteres | Não anulável. |
+| verifiedDomains | coleção [verifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável. |
 
 ## <a name="relationships"></a>Relações
 

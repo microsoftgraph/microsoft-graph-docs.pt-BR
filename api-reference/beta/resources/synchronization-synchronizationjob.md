@@ -2,12 +2,14 @@
 title: tipo de recurso synchronizationJob
 description: Realiza a sincronização periodicamente em segundo plano, pesquisando alterações em um diretório e empurrando-os para outro diretório. O trabalho de sincronização é sempre específico para uma instância específica de um aplicativo em seu locatário. Como parte da configuração do trabalho de sincronização, você precisa dar autorização para ler e gravar objetos no diretório de destino e personalizar o esquema de sincronização do trabalho.
 localization_priority: Normal
-ms.openlocfilehash: 186df51b9a2a941d6c27cda03895423e311fb0b0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 19f30dd20d313d5ab7a46dd9368d391b83ee1993
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33620826"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620728"
 ---
 # <a name="synchronizationjob-resource-type"></a>tipo de recurso synchronizationJob
 
@@ -34,10 +36,10 @@ Realiza a sincronização periodicamente em segundo plano, pesquisando alteraç�
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|id             |Cadeia de caracteres                     |Identificador exclusivo do trabalho de sincronização. Somente leitura.|
+|id             |String                     |Identificador exclusivo do trabalho de sincronização. Somente leitura.|
 |Cronograma       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Agendamento usado para executar o trabalho. Somente leitura.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Status do trabalho, que inclui quando o trabalho foi executado pela última vez, o estado atual do trabalho e os erros.|
-|templateId     |Cadeia de caracteres    |Identificador do [modelo de sincronização](synchronization-synchronizationtemplate.md) em que este trabalho se baseia.|
+|templateId     |String    |Identificador do [modelo de sincronização](synchronization-synchronizationtemplate.md) em que este trabalho se baseia.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

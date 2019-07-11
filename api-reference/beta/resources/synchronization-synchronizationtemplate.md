@@ -2,12 +2,14 @@
 title: tipo de recurso synchronizationtemplate
 description: " qualquer pessoa pode recuperar o modelo para ver as configurações padrão, incluindo o esquema de sincronização."
 localization_priority: Normal
-ms.openlocfilehash: fda63ede321de1a87604e7bca7fe7d7536d42689
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 125b8fe81aedc285da33380c3043827c7c534ab8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339851"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620644"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>tipo de recurso synchronizationtemplate
 
@@ -34,8 +36,8 @@ Você pode fornecer vários modelos para um aplicativo e designar um modelo padr
 |:--------------|:--------------------------|:-----------------------------|
 |id             |Cadeia de caracteres                     |Identificador de modelo exclusivo.|
 |ApplicationId  |Cadeia de caracteres                     |Identificador do aplicativo ao qual este modelo pertence.|
-|Padrão.        |Boolean                    |`true`Se este modelo é recomendado para ser o padrão para o aplicativo.|
-|description    |String                     |Descrição do modelo.|
+|Padrão.        |Booliano                    |`true`Se este modelo é recomendado para ser o padrão para o aplicativo.|
+|descrição    |String                     |Descrição do modelo.|
 |detectáveis   |String                     |`true`Se esse modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
 |factoryTag     |String                     |Uma das marcas de fábrica conhecidas suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização que implementação usar ao processar trabalhos com base nesse modelo.|
 |los       |coleção metadataEntry   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|

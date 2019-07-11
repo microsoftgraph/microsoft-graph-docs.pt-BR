@@ -2,12 +2,14 @@
 title: tipo de recurso de filtro
 description: Determina quais objetos devem ser provisionados para o aplicativo. Por exemplo, você pode querer provisionar apenas usuários que estão localizados nos EUA. Quando um filtro de escopo estiver presente, os objetos que não satisfaçam o filtro serão ignorados durante a sincronização.
 localization_priority: Normal
-ms.openlocfilehash: 0aa75f3b3116991696e9456d7cdfc7b0f72ea86e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4c350216d4d323d736b7d1e3f88234ca206a8116
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345538"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621405"
 ---
 # <a name="filter-resource-type"></a>tipo de recurso de filtro
 

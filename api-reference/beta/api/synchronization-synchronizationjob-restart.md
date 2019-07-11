@@ -2,12 +2,14 @@
 title: Reiniciar synchronizationJob
 description: Reinicie o trabalho de sincronização, forçando-o a reprocessar todos os objetos no diretório. Opcionalmente limpa o estado de sincronização existente e os erros anteriores.
 localization_priority: Normal
-ms.openlocfilehash: 2c14a77553054fe689aba90bc8eeb53854f63642
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 765b8801c808a71426fc6a5150229e028429436f
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457012"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621085"
 ---
 # <a name="restart-synchronizationjob"></a>Reiniciar synchronizationJob
 

@@ -2,12 +2,12 @@
 title: tipo de recurso chatMessageAttachment
 description: Representa um anexo a uma entidade de mensagem de chat.
 localization_priority: Normal
-ms.openlocfilehash: 3358d5bd851c00b422efee8721920ffb7b74ab45
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6415ac6b52d33946f582c22c7b48770047f57866
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341440"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620882"
 ---
 # <a name="chatmessageattachment-resource-type"></a>tipo de recurso chatMessageAttachment
 
@@ -25,7 +25,7 @@ Uma entidade do tipo `chatMessageAttachment` é retornada como parte da API [Get
 |contentUrl|string|URL para o conteúdo do anexo. Protocolos suportados: http, HTTPS, File e data.|
 |conteúdo|string|O conteúdo do anexo. Se o anexo for um cartão rico, defina a propriedade com o objeto ficha avançada. Essa propriedade e contentUrl são mutuamente exclusivas.|
 |name|string|Nome do anexo.|
-|thumbnailUrl| string |URL para uma imagem em miniatura que o canal pode usar se oferecer suporte ao uso de uma forma de conteúdo ou de um formato menor ou contentUrl. Por exemplo, se você definir contentType como Application/Word e definir contentUrl como o local do documento do Word, você pode incluir uma imagem em miniatura que representa o documento. O canal pode exibir a imagem em miniatura em vez do documento. Quando o usuário clica na imagem, o canal abre o documento.|
+|thumbnailUrl| string |URL para uma imagem em miniatura que o canal pode usar se oferecer suporte ao uso de um formato de conteúdo ou de uma alternativa menor ou contentUrl. Por exemplo, se você definir contentType como Application/Word e definir contentUrl como o local do documento do Word, você pode incluir uma imagem em miniatura que representa o documento. O canal pode exibir a imagem em miniatura em vez do documento. Quando o usuário clica na imagem, o canal abre o documento.|
 
 ## <a name="json-representation"></a>Representação JSON
  Veja a seguir uma representação JSON do recurso

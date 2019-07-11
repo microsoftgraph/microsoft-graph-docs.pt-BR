@@ -2,12 +2,14 @@
 title: tipo de recurso synchronizationTaskExecution
 description: Resume os resultados da execução do trabalho de sincronização.
 localization_priority: Normal
-ms.openlocfilehash: a9008dd7d51a1d07be75c5b9bbad34d636fff74c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2aeb64d0ef08d25a8be9b2ed711d6deabfe522a1
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339822"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620658"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>tipo de recurso synchronizationTaskExecution
 
@@ -30,8 +32,8 @@ Resume os resultados da execução do trabalho de sincronização.
 |countImportedReferenceDeltas |Int64  |Contagem de alterações delta importadas referentes a alterações de referência.|
 |erro                        |[synchronizationError](synchronization-synchronizationerror.md)|Se for encontrado um erro, conterá um objeto **synchronizationError** com detalhes.|
 |state                        |String |Código que resume o resultado desta execução. Os valores possíveis são: `Succeeded`, `Failed`, `EntryLevelErrors`.|
-|timeComeçou                    |DateTimeOffset|Hora em que esta execução de trabalho começou. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|timeTerminou                    |DateTimeOffset|Hora em que esse trabalho foi executado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|timecomeçou                    |DateTimeOffset|Hora em que esta execução de trabalho começou. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|timeterminou                    |DateTimeOffset|Hora em que esse trabalho foi executado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

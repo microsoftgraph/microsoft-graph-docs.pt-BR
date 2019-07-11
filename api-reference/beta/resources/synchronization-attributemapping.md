@@ -2,12 +2,14 @@
 title: tipo de recurso attributeMapping
 description: Define como os valores para o atributo de destino fornecido devem fluir durante a sincronização.
 localization_priority: Normal
-ms.openlocfilehash: 5e44570440790c98755bc5c02091e8fe31f3fc26
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1f2884a4fc9f4e3091f1e7523c615d9ed132abc6
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345616"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621386"
 ---
 # <a name="attributemapping-resource-type"></a>tipo de recurso attributeMapping
 

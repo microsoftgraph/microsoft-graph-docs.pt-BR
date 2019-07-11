@@ -2,12 +2,14 @@
 title: tipo de recurso attributeMappingSource
 description: 'Define como um valor deve ser extraído (ou transformado) a partir do objeto Source. Por exemplo, pode ser um valor simples de um determinado atributo no objeto Source ou pode ser uma expressão mais complexa de concatenação/extração/substituição de cadeia de caracteres com base em vários atributos de origem. '
 localization_priority: Normal
-ms.openlocfilehash: 8b00cec8f49b914d37d252e5dc464720228bb825
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0c5ef197a72767fb0c764689558b9c005be856f8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345614"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621449"
 ---
 # <a name="attributemappingsource-resource-type"></a>tipo de recurso attributeMappingSource
 
@@ -22,7 +24,7 @@ Define como um valor deve ser extraído (ou transformado) a partir do objeto Sou
 |expressão             |String                     |Representação de expressão equivalente deste objeto **attributeMappingSource** .|
 |name                   |String                     |Parâmetro Name da origem do mapeamento. Dependendo do valor da propriedade **Type** , isso pode ser o nome da função, o nome do atributo de origem ou um valor constante a ser usado. |
 |parameters             |coleção [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) | Se este objeto representar uma função, lista os parâmetros da função. Os parâmetros consistem nos objetos **attributeMappingSource** , permitindo expressões complexas. Se **Type** não `Function`for, esta propriedade será NULL/matriz vazia. |
-|tipo                   | String                    |O tipo desta fonte de mapeamento de atributos. Os valores possíveis são: `Attribute`, `Constant`, `Function`. O padrão é `Attribute`.| 
+|type                   | String                    |O tipo desta fonte de mapeamento de atributos. Os valores possíveis são: `Attribute`, `Constant`, `Function`. O padrão é `Attribute`.| 
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto windows10EndpointProtectionC
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5949b3a4c1609386b7c6ede41469f35b4df8bdd5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 9594362998b5c13e2f38fcd1ca6043cf10fd80cd
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976026"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620322"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Atualizar windows10EndpointProtectionConfiguration
 
@@ -218,7 +218,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |deviceGuardSecureBootWithDMA|[secureBootWithDMAType](../resources/intune-deviceconfig-securebootwithdmatype.md)|Especifica se o nível de segurança da plataforma está habilitado na próxima reinicialização. Os valores possíveis são: `notConfigured`, `withoutDMA`, `withDMA`.|
 |deviceGuardLaunchSystemGuard|[habilitação](../resources/intune-shared-enablement.md)|Permite que o administrador de ti configure o lançamento do System Guard. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Booliano|Permite que os administradores de TI configurem SmartScreen para Windows.|
-|smartScreenBlockOverrideForFiles|Booliano|Permite que administradores de TI controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos maliciosos.|
+|smartScreenBlockOverrideForFiles|Booliano|Permite que os administradores de ti controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos mal-intencionados.|
 |applicationGuardEnabled|Booliano|Habilitar o Windows Defender Application Guard|
 |applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|Habilitar o Windows Defender Application Guard para novas versões do Windows. Os valores possíveis são: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
 |applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Bloquear a área de transferência para transferir o arquivo de imagem, o arquivo de texto ou nenhum deles. Os valores possíveis são: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|

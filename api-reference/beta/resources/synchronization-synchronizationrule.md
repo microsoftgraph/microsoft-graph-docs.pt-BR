@@ -2,12 +2,14 @@
 title: tipo de recurso synchronizationRule
 description: Define como a sincronização deve ser executada para o mecanismo de sincronização, incluindo quais objetos sincronizar e em que direção, como os objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos deve ser transformada quando estiverem sincronizadas da origem para o diretório de destino.
 localization_priority: Normal
-ms.openlocfilehash: b881c73d8fec8dc6b342192195d486807c744cf7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 83bb8751a60197b8afd9132618ba994c33f370c8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340016"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620707"
 ---
 # <a name="synchronizationrule-resource-type"></a>tipo de recurso synchronizationRule
 
@@ -23,11 +25,11 @@ As regras de sincronização são atualizadas como parte do [esquema de sincroni
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|edita       |Boolean    |`true`se a regra de sincronização puder ser personalizada; `false` se essa regra é somente leitura e não deve ser alterada.|
+|edita       |Booliano    |`true`se a regra de sincronização puder ser personalizada; `false` se essa regra é somente leitura e não deve ser alterada.|
 |id             |String     |Identificador de regra de sincronização. Deve ser um dos identificadores reconhecidos pelo mecanismo de sincronização. Os identificadores de regra suportados podem ser encontrados no modelo de sincronização retornado pela API.|
 |los       |coleção [stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) |Propriedades de extensão adicionais. A menos que instruído explicitamente pela equipe de suporte, os valores de metadados não devem ser alterados.|
 |name           |String     |Nome legível da regra de sincronização. Não anulável.|
-|objectMappings |[](synchronization-objectmapping.md) coleção objectmapping    |Conjunto de mapeamentos de objeto com suporte da regra. Informa ao mecanismo de sincronização quais objetos devem ser sincronizados.|
+|objectmappings |[](synchronization-objectmapping.md) coleção objectmapping    |Conjunto de mapeamentos de objeto com suporte da regra. Informa ao mecanismo de sincronização quais objetos devem ser sincronizados.|
 |prioridade       |Inteiro    |Prioridade relativa a outras regras no [synchronizationSchema](synchronization-synchronizationschema.md). As regras com o número de prioridade mais baixa serão processadas primeiro.|
 |sourceDirectoryName       |String    |Nome do diretório de origem. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
 |targetDirectoryName       |String    |Nome do diretório de destino. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
