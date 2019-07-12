@@ -2,12 +2,12 @@
 title: Obter foto
 description: Obtenha profilePhoto especificado ou seus metadados (propriedades profilePhoto ).
 localization_priority: Priority
-ms.openlocfilehash: e0b115ecf3ce05d87856e553b111af537ffad0e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ab580436a9262e60ef9ab07bc4d61d9ee6f8d04
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576280"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620609"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -31,6 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo                        | Para recurso de **usuário**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
 
+> 
+  **Observação:** Há um [problema conhecido](https://docs.microsoft.com/pt-BR/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP 
 
