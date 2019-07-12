@@ -4,53 +4,53 @@ description: 'Restaura um item recentemente excluído de itens excluídos. '
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ff80911e02b9acaaf02abdedd9fd49bc1fc8a82a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ce665b06da098661de1ba27a9ea1648470e15ae0
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437121"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638969"
 ---
-# <a name="restore-deleted-item"></a><span data-ttu-id="f3f91-103">Restaurar item excluído</span><span class="sxs-lookup"><span data-stu-id="f3f91-103">Restore deleted item</span></span>
+# <a name="restore-deleted-item"></a><span data-ttu-id="2c0d6-103">Restaurar item excluído</span><span class="sxs-lookup"><span data-stu-id="2c0d6-103">Restore deleted item</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f3f91-104">Restaura um item recentemente excluído de [itens excluídos](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="f3f91-104">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
+<span data-ttu-id="2c0d6-104">Restaura um item recentemente excluído de [itens excluídos](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="2c0d6-104">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
 
-<span data-ttu-id="f3f91-105">Atualmente, a funcionalidade de itens excluídos apenas tem suporte para os recursos [group](../resources/group.md) e [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="f3f91-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="f3f91-106">Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente.</span><span class="sxs-lookup"><span data-stu-id="f3f91-106">If an item was accidentally deleted, you can fully restore the item.</span></span>
+<span data-ttu-id="2c0d6-105">Atualmente, a funcionalidade de itens excluídos apenas tem suporte para os recursos [group](../resources/group.md) e [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="2c0d6-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="2c0d6-106">Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente.</span><span class="sxs-lookup"><span data-stu-id="2c0d6-106">If an item was accidentally deleted, you can fully restore the item.</span></span>
 
-<span data-ttu-id="f3f91-107">Um item recentemente excluído permanecerá disponível por até 30 dias.</span><span class="sxs-lookup"><span data-stu-id="f3f91-107">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="f3f91-108">Após 30 dias, esse item será excluído permanentemente.</span><span class="sxs-lookup"><span data-stu-id="f3f91-108">After 30 days, the item is permanently deleted.</span></span>
+<span data-ttu-id="2c0d6-107">Um item recentemente excluído permanecerá disponível por até 30 dias.</span><span class="sxs-lookup"><span data-stu-id="2c0d6-107">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="2c0d6-108">Após 30 dias, esse item será excluído permanentemente.</span><span class="sxs-lookup"><span data-stu-id="2c0d6-108">After 30 days, the item is permanently deleted.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f3f91-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="f3f91-109">Permissions</span></span>
-<span data-ttu-id="f3f91-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f3f91-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2c0d6-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="2c0d6-109">Permissions</span></span>
+<span data-ttu-id="2c0d6-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2c0d6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="f3f91-112">Para usuários: user. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="f3f91-112">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
-* <span data-ttu-id="f3f91-113">Para grupos: Group. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="f3f91-113">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="2c0d6-112">Para usuários: user. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="2c0d6-112">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="2c0d6-113">Para grupos: Group. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="2c0d6-113">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f3f91-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f3f91-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2c0d6-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2c0d6-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/deleteditems/{id}/restore
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f3f91-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f3f91-115">Request headers</span></span>
-| <span data-ttu-id="f3f91-116">Nome</span><span class="sxs-lookup"><span data-stu-id="f3f91-116">Name</span></span>       | <span data-ttu-id="f3f91-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="f3f91-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2c0d6-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2c0d6-115">Request headers</span></span>
+| <span data-ttu-id="2c0d6-116">Nome</span><span class="sxs-lookup"><span data-stu-id="2c0d6-116">Name</span></span>       | <span data-ttu-id="2c0d6-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="2c0d6-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f3f91-118">Autorização</span><span class="sxs-lookup"><span data-stu-id="f3f91-118">Authorization</span></span>  | <span data-ttu-id="f3f91-119">&lt;Código&gt; do portador *Obrigatório*</span><span class="sxs-lookup"><span data-stu-id="f3f91-119">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="f3f91-120">Aceitar</span><span class="sxs-lookup"><span data-stu-id="f3f91-120">Accept</span></span> | <span data-ttu-id="f3f91-121">application/json</span><span class="sxs-lookup"><span data-stu-id="f3f91-121">application/json</span></span> |
+| <span data-ttu-id="2c0d6-118">Autorização</span><span class="sxs-lookup"><span data-stu-id="2c0d6-118">Authorization</span></span>  | <span data-ttu-id="2c0d6-119">&lt;Token&gt; de portador *necessário*</span><span class="sxs-lookup"><span data-stu-id="2c0d6-119">Bearer &lt;token&gt; *Required*</span></span>|
+| <span data-ttu-id="2c0d6-120">Content-type</span><span class="sxs-lookup"><span data-stu-id="2c0d6-120">Content-type</span></span> | <span data-ttu-id="2c0d6-121">application/json</span><span class="sxs-lookup"><span data-stu-id="2c0d6-121">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f3f91-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f3f91-122">Request body</span></span>
-<span data-ttu-id="f3f91-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f3f91-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2c0d6-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2c0d6-122">Request body</span></span>
+<span data-ttu-id="2c0d6-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2c0d6-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f3f91-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="f3f91-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2c0d6-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="2c0d6-124">Response</span></span>
 
-<span data-ttu-id="f3f91-125">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f3f91-125">If successful, this method returns `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="2c0d6-125">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2c0d6-125">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f3f91-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f3f91-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f3f91-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f3f91-127">Request</span></span>
+## <a name="example"></a><span data-ttu-id="2c0d6-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2c0d6-126">Example</span></span>
+### <a name="request"></a><span data-ttu-id="2c0d6-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2c0d6-127">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f3f91-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="f3f91-128">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="2c0d6-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="2c0d6-128">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_directory"
@@ -58,23 +58,22 @@ POST /directory/deleteditems/{id}/restore
 ```http
 POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f3f91-129">C#</span><span class="sxs-lookup"><span data-stu-id="f3f91-129">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="2c0d6-129">C#</span><span class="sxs-lookup"><span data-stu-id="2c0d6-129">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f3f91-130">Javascript</span><span class="sxs-lookup"><span data-stu-id="f3f91-130">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2c0d6-130">Javascript</span><span class="sxs-lookup"><span data-stu-id="2c0d6-130">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f3f91-131">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="f3f91-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2c0d6-131">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="2c0d6-131">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="f3f91-132">No corpo da solicitação, forneça uma representação JSON do objeto [directoryObject](../resources/directoryobject.md).</span><span class="sxs-lookup"><span data-stu-id="f3f91-132">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="f3f91-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="f3f91-133">Response</span></span>
-<span data-ttu-id="f3f91-p104">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f3f91-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2c0d6-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="2c0d6-132">Response</span></span>
+<span data-ttu-id="2c0d6-p104">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2c0d6-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
