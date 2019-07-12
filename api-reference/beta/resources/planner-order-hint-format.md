@@ -4,12 +4,12 @@ description: '`)'
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: a80d9d52d3eff99754fa07c8a778c59d0a39f27a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6d88fa821aba48538c102ba439439fe22a4d686f
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344715"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639186"
 ---
 # <a name="using-order-hints-in-planner"></a>Usando dicas de ordenação no Planner
 
@@ -60,7 +60,7 @@ Quando essas alterações nos valores de dica de ordenação são enviadas para 
 4. Item 2 (Dica de ordenação: `'adhg'`)
 5. Item 1 (Dica de ordenação: `'de5%'`)
 
-Dicas de ordenação podem ser especificadas para criar o primeiro item na lista como ` !`, pois nem um item anterior ou próximo existe nesse caso, porém isso é desnecessário, como o serviço gerará automaticamente valores para todos os valores de dica de ordenação nos itens se eles não forem especificados durante a criação do item. O exemplo a seguir ilustra as dicas de ordenação que devem ser usadas ao inserir itens em uma lista anteriormente vazia.
+Dicas de ordenação podem ser especificadas para criar o primeiro item na lista como `!`, pois nem um item anterior ou próximo existe nesse caso, porém isso é desnecessário, como o serviço gerará automaticamente valores para todos os valores de dica de ordenação nos itens se eles não forem especificados durante a criação do item. O exemplo a seguir ilustra as dicas de ordenação que devem ser usadas ao inserir itens em uma lista anteriormente vazia.
 Adicione o primeiro item:
 
 1. Item 1 (Dica de ordenação: `' !'`)

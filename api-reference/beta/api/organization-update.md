@@ -4,12 +4,13 @@ description: Atualize as propriedades da organização autenticada no momento.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f8b8dd73d19cd1697b6ab090415fa56166ba7c8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 10b2ab6650bb255e38eb6bfd2def745edcecd87b
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440236"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639049"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -23,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante) | Organization. ReadWrite. All, Directory. AccessAsUser. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Organization. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -37,15 +38,17 @@ PATCH /organization/{id}
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:-----------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
+| Content-Type   | application/json |
+
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo   |Descrição|
+| Propriedade  | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|O perfil de privacidade de uma organização (definir statementUrl e contactEmail).            |

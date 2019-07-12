@@ -4,18 +4,19 @@ description: Recupere as propriedades e os relacionamentos da organização aute
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4e0105a5a81a754beab637fe2199dd7e5bf5d6a7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 1460765c1218fdb397da02fab8073a833b2dd714
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450566"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639070"
 ---
 # <a name="get-organization"></a>Obter organização
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos da organização autenticada no momento.
+Obtenha as propriedades e os relacionamentos da organização autenticada no momento.
 
 Como o recurso de **organização** suporta [extensões](/graph/extensibility-overview), você também pode usar `GET` a operação para obter propriedades personalizadas e dados de extensão em uma instância de **organização** .
 
@@ -25,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User. Read, Directory. Read. All |
+|Delegado (conta corporativa ou de estudante) | User. Read, Organization. Read. All, Directory. Read. All, Organization. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Directory.Read.All |
+|Aplicativo | Organization. Read. All, Directory. Read. All, Organization. ReadWrite. All, Directory. ReadWrite. All |
 
-> Observação: os aplicativos que têm a permissão User.Read só conseguem ler as propriedades *id*, *displayName* e *verifiedDomains* da organização.  Todas as outras propriedades retornarão valores `null`. Para ler todas as propriedades, use Directory.Read.All.
+> **Observação**: os aplicativos que receberam a permissão User. Read podem ler apenas as propriedades **ID**, **DisplayName**e **verifiedDomains** da organização.  Todas as outras propriedades retornarão valores `null`. Para ler todas as propriedades, use Organization. Read. All.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,9 +46,9 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:-----------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
