@@ -5,12 +5,12 @@ title: tipo de recurso do multianalytics
 description: O objeto PostItem fornece análises sobre as atividades que ocorreram em um item.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5c716f8faaafffe6afd75987843e6b614f5d6552
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: a18d12bd2b431d147f2d23ea2c958cd75078c9a8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970595"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620413"
 ---
 # <a name="itemanalytics-resource-type"></a>tipo de recurso do multianalytics
 
@@ -24,10 +24,10 @@ Você também pode usar a API [funçãogetactivitiesbyinterval][] para recuperar
 
 | Propriedade      | Tipo                 | Descrição
 |:--------------|:---------------------|:--------------------------------------
-| Época       | [Entidadeitemactivitystat][] | Análise sobre o ciclo de vida do item.
-| lastSevenDays | [Entidadeitemactivitystat][] | Análise dos últimos sete dias.
+| Época       | [itemActivityStat][] | Análise sobre o ciclo de vida do item.
+| lastSevenDays | [itemActivityStat][] | Análise dos últimos sete dias.
 
-[Entidadeitemactivitystat]: itemactivitystat.md
+[itemActivityStat]: itemactivitystat.md
 [Funçãogetactivitiesbyinterval]: ../api/itemactivitystat-getactivitybyinterval.md
 
 ## <a name="json-representation"></a>Representação JSON

@@ -4,14 +4,14 @@ description: 'Atualize as propriedades de um objeto calendar. O calendário pode
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7a7914a9bd7dfbb3c868c2e1ae788f3c6ab9eefc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3a7c91fb8037bf2dc5c05eff32f085f622d96061
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443788"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620840"
 ---
-# <a name="update-calendar"></a>Atualizar o calendário
+# <a name="update-calendar"></a>Atualizar calendário
 
 Atualize as propriedades de um objeto [calendar](../resources/calendar.md). O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365.
 ## <a name="permissions"></a>Permissões
