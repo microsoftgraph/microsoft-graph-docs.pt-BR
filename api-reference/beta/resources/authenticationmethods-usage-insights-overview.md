@@ -4,12 +4,12 @@ description: O relatório de uso dos métodos de autenticação ajuda uma organi
 author: davidmu1
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 19f99b0909a762201ea91399125bba841d705338
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a819276b19f2c7fdfe6ed22bd3dd07023ea08992
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35498877"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645225"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Trabalhar com a API de relatório de uso dos métodos de autenticação
 
@@ -29,10 +29,10 @@ A tabela a seguir lista algumas solicitações comuns que você pode usar com es
 
 | Operation | Experimente o Explorador do Graph | Descrição |
 | --------- | --- | ----------- |
-| [getCredentialUserRegistrationcount](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) | [OBTER/credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Obtenha o número de usuários registrados para redefinição e MFA de senha de autoatendimento. |
-| [getCredentialUsageSummary](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) | [OBTER/credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Obtenha o número de usuários usando a redefinição de senha de autoatendimento. |
-| [credentialUserRegistrationDetails](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) | [OBTER/credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | Obtenha os detalhes do usuário para as atividades de redefinição de senha de autoatendimento e de registro de MFA. |
-| [userCredentialUsageDetails](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) | [OBTER/usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Obtenha detalhes do usuário para todas as atividades de redefinição de senha de autoatendimento. |
+| [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta) | [OBTER/credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Obtenha o número de usuários registrados para redefinição e MFA de senha de autoatendimento. |
+| [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta) | [OBTER/credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Obtenha o número de usuários usando a redefinição de senha de autoatendimento. |
+| [credentialUserRegistrationDetails](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) | [OBTER/credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | Obtenha os detalhes do usuário para as atividades de redefinição de senha de autoatendimento e de registro de MFA. |
+| [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) | [OBTER/usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Obtenha detalhes do usuário para todas as atividades de redefinição de senha de autoatendimento. |
 
 ## <a name="licenses"></a>Licenças
 

@@ -4,12 +4,12 @@ description: 'Descreve como migrar aplicativos do Azure Active Directory (Azure 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8a63c14ef27648a1d586551ebe12e18a5f263a9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6b5236f6b7be140e1040a3169edded6e162b5e7a
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630248"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645249"
 ---
 # <a name="deploy-test-and-extend"></a>Implantar, testar e estender
 
@@ -42,7 +42,7 @@ Se você encontrar problemas ou precisar de ajuda durante o processo de migraç�
 - Revise a [lista de verificação](migrate-azure-ad-graph-overview.md) novamente
 - Postar perguntas no [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
 - Revise as amostras do Microsoft Graph para comparar e comparar com o código do aplicativo existente:
-  - **Aplicativos que usam a API REST**: explorar [inícios e amostras rápidas](/graph/get-started), escolhendo sua plataforma de escolha e executar o início rápido ou pesquisar um exemplo apropriado
+  - **Aplicativos que usam a API REST**: explorar [inícios e amostras rápidas](https://developer.microsoft.com/graph/get-started), escolhendo sua plataforma de escolha e executar o início rápido ou pesquisar um exemplo apropriado
   - **Aplicativo que usa a biblioteca de cliente .net**: examinar [console-Csharp-Snippets-Sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) e/ou [dotnetcore-console-Sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
 ## <a name="next-steps"></a>Próximos passos

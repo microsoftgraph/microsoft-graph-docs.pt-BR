@@ -4,18 +4,18 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: f97f3d36599fe088f28176d001fecc701bb5e3ab
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d996c5e06c5c12e3a5115253bb73ed4a7a450258
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339018"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645210"
 ---
 # <a name="bookingcustomer-resource-type"></a>tipo de recurso bookingCustomer
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa um cliente de um [bookingBsiness](bookingbusiness.md).
+Representa um cliente de um [bookingBusiness](bookingbusiness.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -25,8 +25,8 @@ Representa um cliente de um [bookingBsiness](bookingbusiness.md).
 |[Listar clientes](../api/bookingbusiness-list-customers.md) | coleção [bookingCustomer](bookingcustomer.md) | Obtenha uma lista de objetos **bookingCustomer** . |
 |[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Criar um novo objeto **bookingCustomer** . |
 |[Obter bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Leia as propriedades e os relacionamentos de um objeto **bookingCustomer** .|
-|[Atualizar](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Atualizar um objeto **bookingCustomer** . |
-|[Delete](../api/bookingcustomer-delete.md) | Nenhuma |Excluir um objeto **bookingCustomer** . |
+|[Atualização](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Atualizar um objeto **bookingCustomer** . |
+|[Delete](../api/bookingcustomer-delete.md) | None |Excluir um objeto **bookingCustomer** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

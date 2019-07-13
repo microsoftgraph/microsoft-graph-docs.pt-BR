@@ -4,12 +4,12 @@ description: 'Restaura um item recentemente excluído de itens excluídos. '
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 798be2e38bcbb064fac4069ec7e7276bd9ed49d1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 39a63711881b0d97ab1c103c0d10f2caaadcc043
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455963"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639007"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 
@@ -47,8 +47,8 @@ POST /directory/deletedItems/{id}/restore
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | &lt;Código&gt; do portador *Obrigatório*|
-| Aceitar | application/json |
+| Autorização  | &lt;Token&gt; de portador *necessário*|
+| Content-type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -83,8 +83,7 @@ POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [directoryObject](../resources/directoryobject.md).
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

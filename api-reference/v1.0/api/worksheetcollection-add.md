@@ -4,16 +4,16 @@ description: . Activate () nele.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b8a9389ecbc9dd934f02e75a1d9b870aab832d1b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3bd363a48c3e99133246b1ab46c0d7fcb4d8aa1b
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455027"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645258"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
-Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. Se você quiser ativar a planilha recém-adicionada, chame “.activate()” nela.
+Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. Se você deseja ativar a planilha recém-adicionada, chame. Activate () nele.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

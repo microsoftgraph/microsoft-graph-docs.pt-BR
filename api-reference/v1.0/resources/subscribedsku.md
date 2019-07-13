@@ -4,12 +4,12 @@ description: Contém informações sobre um serviço SKU assinado por uma empres
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ed1a9dc5b12cf1e3b3a01b31d7a990fa7fd562c
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: c3343661f6c72a057c73b70f91a284f3168a9c72
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656465"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639063"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
@@ -20,8 +20,8 @@ Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e exclu
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Leia as propriedades e os relacionamentos do objeto subscribedSku.|
-|[Listar subscribedsku](../api/subscribedsku-list.md) | Coleção [subscribedSku](subscribedsku.md) |Recupere a lista de assinaturas comerciais que uma organização adquiriu.|
+|[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Obtenha uma assinatura comercial específica que uma organização adquiriu.|
+|[Listar subscribedsku](../api/subscribedsku-list.md) | Coleção [subscribedSku](subscribedsku.md) |Obtenha a lista de assinaturas comerciais que uma organização adquiriu.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
