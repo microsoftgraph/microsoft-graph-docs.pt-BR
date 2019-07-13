@@ -4,12 +4,12 @@ description: O Excel é uma ferramenta de produtividade indispensável. Os usuá
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 11e5cd85a066acf6ee1a3bfcdb659e30afe5cd75
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: fb116658b087f09dfb3f40b065acb9218e243cee
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133723"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639056"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Visão geral da API de gráficos e pastas de trabalho do Excel
 
@@ -40,7 +40,7 @@ Você pode usar o Microsoft Graph para permitir que aplicativos Web e móveis le
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`
 
-`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/ `
+`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`
 
 Você pode acessar um conjunto de objetos do Excel (como Table, Range ou Chart) usando APIs REST padrão para realizar operações de criação, leitura, atualização e exclusão (CRUD) na pasta de trabalho.
 

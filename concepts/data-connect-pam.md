@@ -4,16 +4,16 @@ description: Microsoft Graph Data Connect depende do Privileged Access Managemen
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: b09effe96a0b6c04ee68a23016f464a8e0f9d9e0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 439a5e50779888ff1ae7ccfb11311d8b3f6b8a14
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629814"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645264"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Integração do Microsoft Graph Data Connect com o Privileged Access Management
 
-Microsoft Graph Data Connect depende do Privileged Access Management (PAM) para permitir que os administradores do Office 365 aprovem solicitações de movimentação de dados. Os pipelines do Data Connect devem ser aprovados por um membro aprovador de solicitação de acesso a dados especificado pelo administrador do Office 365 durante a ativação. Para configurar o grupo aprovador, confira [Introdução](/concepts/data-connect-get-started.md).
+Microsoft Graph Data Connect depende do Privileged Access Management (PAM) para permitir que os administradores do Office 365 aprovem solicitações de movimentação de dados. Os pipelines do Data Connect devem ser aprovados por um membro aprovador de solicitação de acesso a dados especificado pelo administrador do Office 365 durante a ativação. Para configurar o grupo aprovador, confira [Introdução](data-connect-get-started.md).
 
 Emails de solicitação de aprovação serão enviados a todos os membros do grupo aprovador para notificá-los quando atividades de cópia solicitam acesso para extrair dados do Office 365. Aprovadores podem aprovar ou negar essas solicitações, especificar um grupo de usuários que deve ser apagado dos dados extraídos ou revogar uma solicitação anteriormente aprovada. As aprovações são válidas por 6 meses, sendo necessária uma aprovação por atividade de cópia no pipeline do Azure Data Factory. 
 
@@ -47,9 +47,9 @@ Os pipelines do Data Connect devem ser aprovados por um membro de um grupo aprov
 
 Faça o seguinte para interagir com uma solicitação usando o módulo do PowerShell do Exchange Online:
 
-1. Instalar o módulo do Powershell do Microsoft Exchange Online. Para obter mais informações, confira [Conectar-se ao PowerShell do Exchange Online usando a autenticação de multifator](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+1. Instalar o módulo do Powershell do Microsoft Exchange Online. Para obter mais informações, confira [Conectar-se ao PowerShell do Exchange Online usando a autenticação de multifator](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
 
-2. Conectar-se ao PowerShell do Exchange Online usando a autenticação multifator (MFA). Para obter mais informações, confira [Conectar-se ao PowerShell do Exchange Online usando a autenticação multifator](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+2. Conectar-se ao PowerShell do Exchange Online usando a autenticação multifator (MFA). Para obter mais informações, confira [Conectar-se ao PowerShell do Exchange Online usando a autenticação multifator](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
     >**Observação**: você não precisa habilitar a autenticação multifator para sua organização para usar estas etapas ao se conectar ao PowerShell do Exchange Online. Conexão MFA cria um token OAuth usado pelo PAM para assinar suas solicitações.
 
 3. Entrar com sua conta. Observe que você deve fazer parte do grupo aprovador de acesso aos dados definido para aprovar, recusar ou revogar solicitações. Os usuários convidados não podem aprovar solicitações, mesmo se estiverem no grupo aprovador. 
@@ -168,4 +168,4 @@ A tabela a seguir mostra os nomes dos conjuntos de dados e das colunas cujos con
 
 ## <a name="next-steps"></a>Próximos passos
 
-Certifique-se que sua organização têm o Privileged Access Management configurado corretamente para uso com dados do Microsoft Graph ao completar as etapas descritas na [Introdução](/concepts/data-connect-get-started.md).
+Certifique-se que sua organização têm o Privileged Access Management configurado corretamente para uso com dados do Microsoft Graph ao completar as etapas descritas na [Introdução](data-connect-get-started.md).

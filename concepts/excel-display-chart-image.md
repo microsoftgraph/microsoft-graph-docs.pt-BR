@@ -4,16 +4,16 @@ description: Ao executar uma operação GET para recuperar uma imagem de gráfic
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 5cdf5522ccd0a72798ee62211e9221cf2ea9cd53
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 330c7d3a531a5735e824dda61928c3af2f05e5e3
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526290"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645209"
 ---
 # <a name="display-a-chart-image-in-excel-with-microsoft-graph"></a>Exibir uma imagem de gráfico do Excel com o Microsoft Graph
 
-Ao executar uma [operação GET para recuperar uma imagem de gráfico](/api-reference/v1.0/api/chart-image.md), a API do Excel retorna a imagem como uma cadeia de caracteres de Base 64.
+Ao executar uma [operação GET para recuperar uma imagem de gráfico](/graph/api/chart-image?view=graph-rest-1.0), a API do Excel retorna a imagem como uma cadeia de caracteres de Base 64.
 
 Você pode exibir a cadeia de caracteres de Base 64 dentro de uma marca de imagem HTML: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 
