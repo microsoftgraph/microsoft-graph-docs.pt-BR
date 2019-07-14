@@ -3,12 +3,12 @@ title: Integração do aplicativo Android no SDK do lado do cliente para notific
 description: Integre o aplicativo Android com notificações de usuário no SDK do cliente.
 localization_priority: Priority
 ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: 8925dcb7e064015c8ee525e9f1a8c3adc4270f8a
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: a0c3050d7f9c644c23696d9a2071e7427b6b565d
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063231"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620301"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo Android no SDK do lado do cliente para notificações ao usuário
 
@@ -104,7 +104,7 @@ Observe que as permissões relacionadas ao Bluetooth só são necessárias para 
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
-Em seguida, acesse classes de atividade onde desejar que a funcionalidade de dispositivos conectados seja localizada. Importar os namespaces seguintes.
+Em seguida, acesse as classes de atividade onde desejar que a funcionalidade dos Dispositivos Conectados seja localizada. Importar os namespaces a seguir.
 
 ```java
 import com.microsoft.connecteddevices;
@@ -112,7 +112,7 @@ import com.microsoft.connecteddevices.userdata;
 import com.microsoft.connecteddevices.userdata.usernotifications;
 ```
 
-## <a name="initializing-the-connected-device-platforms"></a>Inicializando as Plataformas de Dispositivo Conectado
+## <a name="initializing-the-connected-device-platforms"></a>Inicializar as Plataformas do Dispositivo Conectado
 
 No SDK do lado do cliente é desenvolvido com base em uma infraestrutura chamada Plataforma de Dispositivo Conectado. Antes de poder usar qualquer recurso, a plataforma deve ser inicializada em seu aplicativo. As etapas de inicialização que devem ocorrer em sua classe principal no método **OnCreate**, porque eles são necessários para ocorrer os cenários de notificação.
 
@@ -377,6 +377,7 @@ channel.deleteUserNotificationAsync(notification.getId()).whenCompleteAsync((use
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência da API](https://docs.microsoft.com/pt-BR/windows/project-rome/notifications/api-reference-for-android) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
+- 
+  [Referência da API](https://docs.microsoft.com/pt-BR/windows/project-rome/notifications/api-reference-for-android) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
 - [Exemplo do lado do cliente](https://github.com/Microsoft/project-rome/tree/master/Android/samples/graphnotificationssample) para aplicativos Android.
 - [Exemplo do servidor do aplicativo](notifications-integrating-app-server.md) para publicar as notificações. 

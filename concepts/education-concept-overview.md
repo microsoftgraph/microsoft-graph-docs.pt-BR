@@ -4,12 +4,12 @@ description: A API educacional do Microsoft Graph aprimora os recursos do Office
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: ab3aec0748c2036ba25ac28a3c2ab7b0cd7e4112
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 79212e9f196f3eb20468d34c34dc9d4588718615
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133716"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620147"
 ---
 # <a name="education-api-overview"></a>Visão geral da API de educação
 
@@ -79,7 +79,7 @@ Está procurando a referência de API para esse serviço?
     - [Exemplo de SSO e lista de participantes em .NET](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
     - [Exemplo de nó angular para SSO e Lista de participantes](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
     - [Exemplo de SSO e Lista de participantes em Python](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-    - [Exemplo de SSO e Lista de participantes em PHP](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
+    - [Exemplo de PHP para Lista de Participantes & de SSO](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
     - [Exemplo de APIs de gerenciamento de perfil](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 

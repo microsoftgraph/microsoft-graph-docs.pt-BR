@@ -3,32 +3,26 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 416ba84527957b59ad4f8ff9e6d8c0194d60f245
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: 6701c423aebfdb72758d4c93997a5b1700b3241d
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35420423"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620385"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
 Você sabia que alguns dos novos recursos do Microsoft Graph se originam de solicitações populares da comunidade de desenvolvedores? 
 
-Neste artigo, percorreremos o ciclo de vida típico de um novo recurso, o que há de novo no Microsoft Graph e como você pode [compartilhar as suas ideias](#want-to-stay-in-the-loop).
+A equipe do Microsoft Graph avalia regularmente as necessidades dos clientes, melhora as experiências de desenvolvimento e das APIs e as lança como novos recursos na seguinte ordem:
 
-## <a name="life-cycle-of-a-feature"></a>Ciclo de vida de um recurso
+1. Estreia no **_Status_** de Visualização. As atualizações da API REST relacionadas estão no ponto de extremidade (`https://graph.microsoft.com/beta`). Os recursos no modo de visualização podem ser alterados sem aviso. Não use-os em aplicativos de produção. 
 
-Os proprietários de serviço do Microsoft Graph avaliam periodicamente as ideias de recursos e as necessidades dos clientes para oferecer novos cenários de suporte. Para criar um novo recurso, eles podem adicionar ou atualizar as APIs REST. Eles podem manter a mesma sintaxe da API e estender o comportamento dos recursos. Ou, eles podem oferecer uma experiência melhor de aprendizado ou desenvolvimento.
+2. Promovido para status de**_disponibilidade geral_ (DG)**, se um feedback suficiente indicar a viabilidade.. Todas as atualizações da API REST relacionadas serão adicionadas ao ponto de extremidade do v 1.0 (`https://graph.microsoft.com/v1.0`). Use somente os recursos do status do GA em aplicativos de produção.
 
-Na maioria dos casos, os proprietários de serviço lançam novos recursos na seguinte ordem:
+Vamos percorrer o que há de novo no Microsoft Graph e como você pode [compartilhar suas ideias](#want-to-stay-in-the-loop). Para detalhes sobre as atualizações da API, consulte as seções de [maio](changelog.md#may-2019), [junho](changelog.md#june-2019) e [julho](changelog.md#july-2019) do changelog. 
 
-1. Estreia no status de **_visualização_**, o que significa que o comportamento do recurso pode mudar sem aviso prévio. O proprietário expõe quaisquer adições ou atualizações relacionadas à API REST no ponto de extremidade beta (`https://graph.microsoft.com/beta`). Não use recursos de visualização, incluindo as APIs, em aplicativos de produção.
-
-2. Se um proprietário de serviço receber comentários suficientes e considerar o recurso viável, o proprietário poderá promover o recurso para o status **_disponibilidade geral_ (DG)**. O proprietário também inclui quaisquer adições ou atualizações da API relacionadas ao ponto de extremidade v1.0 (`https://graph.microsoft.com/v1.0`). Você pode usar o recurso (incluindo as APIs) no status DG em aplicativos de produção.
-
-As seções a seguir destacam as novidades de maio e junho de 2019. Para detalhes sobre as atualizações da API, consulte as seções de [maio](changelog.md#may-2019) e [junho](changelog.md#june-2019) do changelog. 
-
-## <a name="new-and-generally-available-released-may---june-2019"></a>Novo e disponível para o público em geral (lançado em maio - junho de 2019)
+## <a name="new-and-generally-available-released-may---july-2019"></a>Novo e disponível para o público em geral (lançado em maio - julho de 2019)
 
 ### <a name="calendar-mail-and-personal-contacts"></a>Calendário, email e contatos pessoais
 Os administradores do Exchange podem conceder permissões de aplicativo a um aplicativo e [restringir o seu acesso apenas a um subconjunto de caixas de correio em um ](auth-limit-mailbox-access.md), ao invés do padrão, que é o acesso a todas as caixas de correio na organização. Este acesso restrito se aplicaria a quaisquer permissões de aplicativos concedidas ao aplicativo para [calendários](permissions-reference.md#calendars-permissions), [contatos](permissions-reference.md#contacts-permissions) e [configurações de email e de caixa de correio](permissions-reference.md#mail-permissions). Confira o [anúncio do blog](https://developer.microsoft.com/en-us/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/) relacionado.
@@ -49,7 +43,7 @@ Experimente o novo [tutorial para criar um aplicativo de console do Java](/graph
 Administradores ou usuários podem [revogar](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) todos os tokens de atualização emitidos para um usuário. Isso geralmente é usado para impedir que aplicativos em um dispositivo perdido ou roubado acessem os dados de uma organização.
 
 
-## <a name="new-in-preview-released-may---june-2019"></a>Novidades em visualização (lançado em maio - junho de 2019)
+## <a name="new-in-preview-released-may---july-2019"></a>Novidades na visualização (lançado em maio - junho de 2019)
 
 > [!IMPORTANT]
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use-os em aplicativos de produção.
@@ -57,6 +51,7 @@ Administradores ou usuários podem [revogar](/graph/api/user-revokesigninsession
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
 - Atualizações de [maio](changelog.md#may-2019) do Intune 
 - Atualizações de [junho](changelog.md#june-2019) do Intune
+- Atualizações de [julho](changelog.md#july-2019) do Intune
 
 ### <a name="education"></a>Educação
 - Consulta Delta para um objeto [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta).
@@ -75,6 +70,9 @@ Use a [permissão Mail.ReadBasic](permissions-reference.md#mail-permissions) na 
 
 ### <a name="microsoft-graph-toolkit"></a>Kit de ferramentas do Microsoft Graph
 O [kit de ferramentas do Microsoft Graph](/graph/toolkit/overview) é um conjunto de colaboradores e de componentes da Web de estrutura independente que oferece conveniência para autenticar e acessar dados no Microsoft Graph. Como o kit de ferramentas do Microsoft Graph está no status de visualização, use provedores e componentes do kit de ferramentas somente em aplicativos que não são de produção.
+
+### <a name="reports"></a>Relatórios
+Obtenha [relatórios sobre os métodos de autenticação](/graph/api/resources/authenticationmethods-usage-insights-overview?view=graph-rest-beta) adotados pelos usuários em uma organização, como rest de senha de autoatendimento e autenticação multifator (MFA).
 
 ### <a name="sites"></a>Sites
 Permitir que os usuários [sigam](/graph/api/site-follow?view=graph-rest-beta) ou [parem de seguir](/graph/api/site-unfollow?view=graph-rest-beta) os sites do SharePoint.
