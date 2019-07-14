@@ -4,12 +4,12 @@ description: Representa uma mensagem de chat individual dentro de uma entidade d
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 269041dece2ab626c5f3d0ecccbf70d62c296ede
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: 3f27434e5dd8e3ccfc949c870a239522dd96d9d3
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084044"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645237"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -44,7 +44,7 @@ A mensagem pode ser uma mensagem raiz ou parte de um thread definido pela propri
 |etag| cadeia de caracteres | Somente leitura. O número de versão da mensagem. |
 |messageType|chatMessageType|O tipo de mensagem. Os valores possíveis são: `message`.|
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi criada.|
-|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi editada/atualizada.|
+|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora da criação ou edição da mensagem, incluindo quando uma resposta é criada (se for uma mensagem raiz em um canal) ou uma reação é adicionada ou removida. |
 |deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de hora em que a mensagem foi excluída ou nulo se não foi excluído. |
 |assunto|cadeia de caracteres| O assunto da mensagem, em texto simples.|
 |corpo|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. A representação é especificada pelo contentType dentro do corpo. O conteúdo está sempre em HTML se a mensagem contiver um [chatMessageMention](chatmessagemention.md). |
