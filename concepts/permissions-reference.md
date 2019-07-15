@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 9d0d82eddf4aaf283942aa6213f28bdb9d589c65
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 6e68a9c0a8f0eca222bd46a9ac15dda8d3d12f55
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133758"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620883"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -132,7 +132,7 @@ Nenhum.
 * _Application.ReadWrite.All_: listar todos os aplicativos (`GET /beta/applications`)
 * _Application.ReadWrite.All_: excluir uma entidade de serviço (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_: criar um aplicativo (`POST /beta/applications`)
-* _Application.ReadWrite.OwnedBy_: listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_: Listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_: adicionar outro proprietário a um aplicativo próprio (`POST /applications/{id}/owners/$ref`).
 > OBSERVAÇÃO: isso pode exigir permissões adicionais.
 
