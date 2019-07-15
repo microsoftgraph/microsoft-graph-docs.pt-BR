@@ -3,12 +3,12 @@ title: Listar assinaturas
 description: Recupere as propriedades e os relacionamentos das assinaturas do webhook, com base no ID do aplicativo, no usuário e na função do usuário com um locatário.
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 58300c1d3f7c54136bb443c681d477ccc0bd9734
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a82d47d01a21ee49f12228b8c1dd6e93bda61522
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450468"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621260"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 ##### <a name="response"></a>Resposta
 
-Aqui está um exemplo da resposta.  Observe que pode estar truncada, para brevidade.  Todas as propriedades compatíveis apropriadas para a solicitação e contexto de chamada serão retornadas de uma chamada real.
+Veja um exemplo de resposta.  Observe que pode estar truncada, para brevidade.  Todas as propriedades compatíveis apropriadas para a solicitação e contexto de chamada serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
