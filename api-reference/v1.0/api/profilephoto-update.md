@@ -2,12 +2,12 @@
 title: Atualizar profilephoto
 description: Atualize a foto do **usuário** conectado, ou do **grupo** ou **cotato** especificado. Desde lá
 localization_priority: Priority
-ms.openlocfilehash: d7dbd54fa86d2a1dde8c5e8a50f654f112a688cb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: eac653df8f0188b292c765076af8d81b9543ca2d
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449453"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620623"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -25,6 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 - Foto de um **contato** – Contacts.ReadWrite
 
 > **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão do aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service).
+
+> 
+  **Observação:** Há um [problema conhecido](https://docs.microsoft.com/pt-BR/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
