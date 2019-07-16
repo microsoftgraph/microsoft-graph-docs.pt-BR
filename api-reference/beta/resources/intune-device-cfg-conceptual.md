@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8c13ed037ffb07e8a3e357f3ab5633dc984e4803
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: b651acefa45cee6e4e89c6c391890dd263cc414a
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965850"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731571"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -214,6 +214,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Detalhes de política de relatório de criptografia](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [Estado de criptografia](intune-deviceconfig-encryptionstate.md)
 - [Uso estendido de chave](intune-deviceconfig-extendedkeyusage.md)
+- [Estado do cofre de arquivos](intune-deviceconfig-filevaultstate.md)
 - [Tipo de método de verificação da lista de revogação de certificados do firewall](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [Tipo de método de enfileiramento de pacotes do firewall](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
 - [Tipo de método de codificação de chaves pré-compartilhadas do firewall](intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)
@@ -316,6 +317,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Certificado raiz confiável do macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Configuração de VPN do macOS](intune-deviceconfig-macosvpnconfiguration.md)
 - [Configuração de Wi-Fi do macOS](intune-deviceconfig-macoswificonfiguration.md)
+- [Estado do certificado de todos os dispositivos gerenciados](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [Estado de certificado do dispositivo gerenciado](intune-deviceconfig-manageddevicecertificatestate.md)
 - [Estado de criptografia de dispositivo gerenciado](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Aplicativo reportado pelo dispositivo gerenciado](intune-deviceconfig-manageddevicereportedapp.md)
@@ -344,7 +346,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Inteiro de configuração de OMA](intune-deviceconfig-omasettinginteger.md)
 - [Cadeia de configuração de OMA ](intune-deviceconfig-omasettingstring.md)
 - [Cadeia xml de configuração de OMA](intune-deviceconfig-omasettingstringxml.md)
+- [Carga de criptografia local](intune-raimportcerts-onpremencryptedpayload.md)
 - [Intervalo de versão do sistema operacional](intune-deviceconfig-operatingsystemversionrange.md)
+- [Solicitação de recript de pfx](intune-raimportcerts-pfxrecryptionrequest.md)
+- [Certificado de usuário pfx](intune-raimportcerts-pfxusercertificate.md)
 - [Tipo de plataforma da política](intune-deviceconfig-policyplatformtype.md)
 - [Recursos pré-lançamento](intune-deviceconfig-prereleasefeatures.md)
 - [Classificação de tipo de aplicativos](intune-deviceconfig-ratingappstype.md)
@@ -456,6 +461,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tamanho do bloco de layout de início do aplicativo do Windows](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [Base de perfil de certificado do Windows](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Configuração de proteção avançada contra ameaças do Windows Defender](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
+- [Opções de proteção de violação do Windows Defender](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Configuração de otimização de distribuição do Windows](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Modo de otimização de distribuição do Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Perfil de rede de firewall do Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
@@ -475,6 +481,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Usuário do Azure AD do quiosque do Windows](intune-deviceconfig-windowskioskazureaduser.md)
 - [Configuração de quiosque do Windows](intune-deviceconfig-windowskioskconfiguration.md)
 - [Aplicativo para área de trabalho de quiosque do Windows](intune-deviceconfig-windowskioskdesktopapp.md)
+- [Agendamento de atualização forçada do Windows quiosque](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Grupo local do quiosque do Windows](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Usuário local do quiosque do Windows](intune-deviceconfig-windowskiosklocaluser.md)
 - [Aplicativo para vários quiosques do Windows](intune-deviceconfig-windowskioskmultipleapps.md)
@@ -506,10 +513,11 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de agendamento de instalação do Windows Update](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Opção de exibição para notificação de atualização do Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Instalação agendada do Windows Update](intune-deviceconfig-windowsupdatescheduledinstall.md)
+- [Estado do Windows Update](intune-deviceconfig-windowsupdatestate.md)
 - [Status do Windows Update](intune-deviceconfig-windowsupdatestatus.md)
 - [Tipo de atualização do Windows](intune-deviceconfig-windowsupdatetype.md)
 - [Configurações de controle da conta do usuário do Windows](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Configuração de VPN do Windows](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Tipo de conexão de VPN do Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Configuração de Wi-Fi do Windows](intune-deviceconfig-windowswificonfiguration.md)
-- [Configuração EAP do Windows Wi-Fi Enterprise](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Configuração de EAP corporativa de Wi-Fi do Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)

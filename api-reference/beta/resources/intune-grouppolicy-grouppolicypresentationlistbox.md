@@ -4,12 +4,12 @@ description: Representa um elemento listBox do ADMX e um elemento de lista ADMX.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd7e6c5c3d12719bdcc79aef0e0df4462175b4c1
-ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
+ms.openlocfilehash: 4aafe808f2439cd8515126fb6c8a666500dff5cd
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576477"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715554"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>tipo de recurso groupPolicyPresentationListBox
 
@@ -63,6 +63,8 @@ Veja a seguir uma representação JSON do recurso.
   "valuePrefix": "String"
 }
 ```
+
+
 
 
 

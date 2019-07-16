@@ -4,12 +4,12 @@ description: Esta entidade fornece descrições dos métodos declarados, das pro
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8da4c53d22621f08faf4edb27be2da10ce5674c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 32a7d319314d1fddc40724d686de797dcd1d15d1
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978504"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731746"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>tipo de recurso windowsKioskConfiguration
 
@@ -54,6 +54,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |kioskBrowserBlockedURLs|Coleção de cadeias de caracteres|Especificar URLs às quais os navegadores quiosques não devem navegar|
 |kioskBrowserBlockedUrlExceptions|Coleção de cadeias de caracteres|Especificar URLs às quais o navegador de quiosque pode navegar|
 |edgeKioskEnablePublicBrowsing|Booliano|Habilitar modo quiosque de navegação pública para o navegador Microsoft Edge. O padrão é false.|
+|windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|forçar agendamento de atualização para dispositivos quiosque.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -150,7 +151,15 @@ Veja a seguir uma representação JSON do recurso.
   "kioskBrowserBlockedUrlExceptions": [
     "String"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "String (timestamp)",
+    "recurrence": "String",
+    "dayofWeek": "String",
+    "dayofMonth": 1024,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 

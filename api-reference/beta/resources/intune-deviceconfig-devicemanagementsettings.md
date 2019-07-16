@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a087192b9ff46b79f5f585cc9515b9c78d806e99
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 025008a74df37daee068fe557df1511d60dcc48f
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990005"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35734455"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 
@@ -29,6 +29,7 @@ Ainda não documentado
 |deviceInactivityBeforeRetirementInDay|Int32|Quando o dispositivo não faz check-in por um número especificado de dias, os dados da empresa podem ser removidos e o dispositivo não estará sob gerenciamento. Valores válidos de 30 a 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|O provedor de credenciais derivado a ser usado para esta conta. Os valores possíveis são: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |derivedCredentialUrl|String|O URI de autoatendimento do provedor de credenciais derivado.|
+|androidDeviceAdministratorEnrollmentEnabled|Booliano|A propriedade para determinar se o registro do administrador do dispositivo Android está habilitado para esta conta.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -49,7 +50,8 @@ Veja a seguir uma representação JSON do recurso.
   "enhancedJailBreak": true,
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
-  "derivedCredentialUrl": "String"
+  "derivedCredentialUrl": "String",
+  "androidDeviceAdministratorEnrollmentEnabled": true
 }
 ```
 

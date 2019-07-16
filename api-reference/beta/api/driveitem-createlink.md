@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Compartilhar um arquivo com um link
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58e0fc5e76904e133b5e9a31e2b32d8ecf87b91c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 249b67852d4b796be465c79cadde9b07d97f695a
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436463"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35713139"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Criar um link de compartilhamento para um DriveItem
 
@@ -49,10 +49,12 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 O corpo da solicitação define as propriedades do link de compartilhamento que seu aplicativo está solicitando.
 A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
-|   Nome    |  Tipo  |                                 Descrição                                  |
-| :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.       |
-| **scope** | string | Opcional. O escopo do link a ser criado. Pode ser `anonymous` ou `organization`. |
+|   Propriedade                 |  Tipo  |                                 Descrição                                                               |
+| :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
+|type               | string | O tipo de link de compartilhamento a ser criado. Exibir, editar ou incorporar.                                    |
+|password           | string | A senha do link de compartilhamento que é definida pelo criador. Opcional e o OneDrive somente pessoal.         |
+|expirationDateTime | string | Uma cadeia de caracteres com formato AAAA-MM-ddTHH: mm: ssZ de DateTime indica o tempo de expiração da permissão. |
+|escopo              | string | Opcional. O escopo do link a ser criado. Anônimo ou organização.                              |
 
 
 ### <a name="link-types"></a>Tipos de link
@@ -61,19 +63,20 @@ Os seguintes valores são permitidos para o parâmetro **type**.
 
 | Valor do tipo | Descrição                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| `view`     | Cria um link somente leitura para DriveItem.                                                        |
-| `edit`     | Cria um link de leitura e gravação para DriveItem.                                                       |
-| `embed`    | Cria um link incorporado para DriveItem. Essa opção só está disponível para arquivos no OneDrive Pessoal. |
+| modo de exibição     | Cria um link somente leitura para DriveItem.                                                        |
+| edit     | Cria um link de leitura e gravação para DriveItem.                                                       |
+| Incorporar    | Cria um link incorporado para DriveItem. Essa opção só está disponível para arquivos no OneDrive Pessoal. |
 
 ### <a name="scope-types"></a>Tipos de escopo
 
 Os seguintes valores são permitidos para o parâmetro **scope**.
 Se o parâmetro **scope** não for especificado, o tipo de link padrão será criado para a organização.
 
-| Valor do tipo     | Descrição                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Cria um link para o DriveItem, que pode ser acessado por qualquer pessoa com o link. Links anônimos podem ser desabilitados por um administrador.                 |
-| `organization` | Cria um link para o DriveItem, que pode ser acessado por qualquer pessoa dentro da organização do usuário. O escopo do link da organização não está disponível para uso pessoal do OneDrive. |
+| Valor          | Descrição
+|:---------------|:------------------------------------------------------------
+| sejam    | Qualquer pessoa com o link tem acesso, sem a necessidade de fazer logon. Isso pode incluir pessoas de fora da sua organização. O suporte a link anônimo pode ser desabilitado por um administrador.
+| organization | Qualquer pessoa que se inscreveu em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
+
 
 ## <a name="response"></a>Resposta
 
@@ -101,6 +104,7 @@ Content-type: application/json
 
 {
   "type": "view",
+  "password": "ThisIsMyPrivatePassword",
   "scope": "anonymous"
 }
 ```
@@ -138,7 +142,8 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
+  "hasPassword": true
 }
 ```
 

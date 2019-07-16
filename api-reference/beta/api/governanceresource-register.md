@@ -1,66 +1,80 @@
 ---
-title: Registrar Entidadegovernanceresource
-description: Registre um objeto Entidadegovernanceresource não gerenciado no PIM.
+title: 'Entidadegovernanceresource: Register'
+description: Registrar um objeto Entidadegovernanceresource no PIM.
 localization_priority: Normal
-ms.openlocfilehash: 814ccd84d449f20882e1febbf0d48216ba3f5b89
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 2b8457f7ddee4564ca6b6b300121ddb7b8247e34
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422455"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35713916"
 ---
-# <a name="register-governanceresource"></a>Registrar Entidadegovernanceresource
+# <a name="governanceresource-register"></a>Entidadegovernanceresource: Register
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Registre um objeto [entidadegovernanceresource](../resources/governanceresource.md) não gerenciado no gerenciamento de identidade privilegiado.
+Registre um objeto [entidadegovernanceresource](../resources/governanceresource.md) no gerenciamento de identidade privilegiado.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 >**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função ativa no recurso.
 
-|Tipo de permissão      | Permissões              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+| Tipo de permissão | Permissões |
+|:--------------- |:----------- |
+| Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedAccess/azureResources/resources/register
 ```
 
-### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método **só** oferece suporte `$select` a `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-### <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome      |Descrição|
-|:----------|:----------|
-| Authorization  | Portador {código}|
-| Content-type  | application/json|
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-### <a name="request-body"></a>Corpo da solicitação
+| Nome | Descrição |
+|:---- |:----------- |
+| Autorização | Portador {token} |
+| Content-type | application/json |
 
-|Parâmetros      |Tipo                 |Obrigatório |Descrição|
-|:-------------|:----------------------|:--------|:----------|
-|externalId    |Cadeia de caracteres                 |✓        |ExternalId do recurso a ser registrado no PIM.|
+## <a name="request-body"></a>Corpo da solicitação
 
-### <a name="response"></a>Resposta
+| Propriedades | Tipo | Descrição |
+|:---------- |:---- |:----------- |
+| externalId | Cadeia de caracteres | O identificador externo do recurso a ser registrado no PIM. Se estiver registrando uma assinatura, o identificador será o identificador de assinatura precedida por `/subscriptions/`. Por exemplo, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
+
+## <a name="response"></a>Resposta
+
 Se tiver êxito, este método retornará `200 OK` uma resposta.
 
-### <a name="example"></a>Exemplo
-Este exemplo mostra como registrar uma assinatura do Azure na Wingtip Toys-prod.
+## <a name="example"></a>Exemplo
+
+O exemplo a seguir mostra como chamar essa API.
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"
 }-->
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/register
+Content-type: application/json
+
+{
+  "externalId": "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac"
+}
 ```
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windows10EndpointProte
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d32ed3e2785d7363017cd3f17f9f155632a59bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4964d87e950b1d00777e5cde25a5ba56480f06d0
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921671"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715288"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Listar windows10EndpointProtectionConfigurations
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30466
+Content-Length: 31927
 
 {
   "value": [
@@ -75,6 +75,27 @@ Content-Length: 30466
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -105,6 +126,7 @@ Content-Length: 30466
           "action": "blocked",
           "trafficDirection": "out",
           "interfaceTypes": "remoteAccess",
+          "edgeTraversal": "blocked",
           "localUserAuthorizations": "Local User Authorizations value"
         }
       ],
@@ -157,6 +179,18 @@ Content-Length: 30466
         ]
       },
       "userRightsLocalLogOn": {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+        "state": "blocked",
+        "localUsersOrGroups": [
+          {
+            "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+            "name": "Name value",
+            "description": "Description value",
+            "securityIdentifier": "Security Identifier value"
+          }
+        ]
+      },
+      "userRightsDenyLocalLogOn": {
         "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
         "state": "blocked",
         "localUsersOrGroups": [
@@ -528,6 +562,7 @@ Content-Length: 30466
       "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
       "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
       "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+      "windowsDefenderTamperProtection": "enable",
       "firewallBlockStatefulFTP": true,
       "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
       "firewallPreSharedKeyEncodingMethod": "none",
@@ -658,6 +693,7 @@ Content-Length: 30466
       "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
       "deviceGuardEnableVirtualizationBasedSecurity": true,
       "deviceGuardEnableSecureBootWithDMA": true,
+      "deviceGuardSecureBootWithDMA": "withoutDMA",
       "deviceGuardLaunchSystemGuard": "enabled",
       "smartScreenEnableInShell": true,
       "smartScreenBlockOverrideForFiles": true,
@@ -727,6 +763,7 @@ Content-Length: 30466
   ]
 }
 ```
+
 
 
 

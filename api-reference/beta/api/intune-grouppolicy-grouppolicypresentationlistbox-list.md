@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos groupPolicyPresentatio
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85d0c4dba57e9c7b5f37d51809ca20643d8b55ab
-ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
+ms.openlocfilehash: 38ff5affe5946379aeaf6aa4ae4b34c5061ae04b
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576428"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35721959"
 ---
 # <a name="list-grouppolicypresentationlistboxes"></a>Listar groupPolicyPresentationListBoxes
 
@@ -77,6 +77,8 @@ Content-Length: 335
   ]
 }
 ```
+
+
 
 
 

@@ -1,8 +1,16 @@
-    ---
-title: "tipo de recurso educationIdentitySynchronizationConfiguration" Descrição: "classe abstrata base para todas as configurações de sincronização de identidade de perfil de dados da escola. As classes derivadas definem o comportamento da sincronização de identidades. Estes são os tipos derivados. "
-Author: "mmast-MSFT" localization_priority: normal MS. Prod: "educação"
 ---
-
+title: tipo de recurso educationIdentitySynchronizationConfiguration
+description: Classe abstrata de base para todas as configurações de sincronização de identidade de perfil de dados da escola. As classes derivadas definem o comportamento da sincronização de identidades. Estes são os tipos derivados.
+author: mmast-msft
+localization_priority: Normal
+ms.prod: education
+ms.openlocfilehash: 713bb285e739d9182a982f02975a9b9f46761e3a
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35736513"
+---
 # <a name="educationidentitysynchronizationconfiguration-resource-type"></a>tipo de recurso educationIdentitySynchronizationConfiguration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

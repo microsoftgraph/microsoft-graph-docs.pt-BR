@@ -4,12 +4,12 @@ description: Valores com suporte para a finalidade pretendida de um certificado 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66a9509eebffb8434ca629e0c3336d7078d9afff
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1790b1d1835d19cacb7e3b32262ce06be4daa378
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993687"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35739278"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>tipo de enumeração userPfxIntendedPurpose
 
@@ -22,11 +22,11 @@ Valores com suporte para a finalidade pretendida de um certificado PFX de usuár
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não atribuídos|,0|Ainda não documentado|
-|smimeEncryption|1|Ainda não documentado|
-|smimeSigning|duas|Ainda não documentado|
-|VPN|quatro|Ainda não documentado|
-|detector|8 |Ainda não documentado|
+|não atribuídos|,0|Nenhuma função/uso atribuído.|
+|smimeEncryption|1|Válido para criptografia S/MIME.|
+|smimeSigning|duas|Válido para assinatura S/MIME.|
+|VPN|quatro|Válido para uso na VPN.|
+|detector|8 |Válido para uso em WiFi.|
 
 
 

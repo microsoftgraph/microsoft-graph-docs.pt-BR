@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto windowsDeliveryOptimizationCo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea12634b689b5df13313ae22aaf585eadb0e3659
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 10f2834fcc8888f12ea6abea0ded80d48e543591
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961984"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35722022"
 ---
 # <a name="update-windowsdeliveryoptimizationconfiguration"></a>Atualizar windowsDeliveryOptimizationConfiguration
 
@@ -83,6 +83,9 @@ O valor padrão é 0. O valor 0 (zero) significa "não limitado" e o valor padr�
 |maximumCacheAgeInDays|Int32|Especifica o tempo máximo, em dias, em que cada arquivo é mantido no cache de otimização de entrega após o download bem-sucedido (0-3650). Valores válidos de 0 a 3650|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|Especifica o tamanho máximo de cache que a otimização de entrega como uma porcentagem ou em GB.|
 |vpnPeerCaching|[habilitação](../resources/intune-shared-enablement.md)|Especifica se o dispositivo tem permissão para participar do cache de mesmo nível enquanto conectado via VPN à rede de domínio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|cacheServerHostNames|Coleção de cadeias de caracteres|Especifica nomes de host dos servidores de cache.|
+|cacheServerForegroundDownloadFallbackToHttpDelayInSeconds|Int32|Especifica o número de segundos para atrasar um retorno dos servidores de cache para uma fonte HTTP para um download de primeiro plano. Valores válidos de 0 a 2592000.|
+|cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds|Int32|Especifica o número de segundos para atrasar um retorno dos servidores de cache para uma origem HTTP para um download em segundo plano. Valores válidos de 0 a 2592000.|
 
 
 
@@ -96,7 +99,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1833
+Content-length: 2039
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -147,7 +150,12 @@ Content-length: 1833
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "enabled"
+  "vpnPeerCaching": "enabled",
+  "cacheServerHostNames": [
+    "Cache Server Host Names value"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 9,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
 
@@ -156,7 +164,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2005
+Content-Length: 2211
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -210,7 +218,12 @@ Content-Length: 2005
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "enabled"
+  "vpnPeerCaching": "enabled",
+  "cacheServerHostNames": [
+    "Cache Server Host Names value"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 9,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
 

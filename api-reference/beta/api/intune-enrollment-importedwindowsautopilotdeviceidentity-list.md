@@ -4,12 +4,12 @@ description: Lista as propriedades e relações de objetos importedWindowsAutopi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16cc4ba8dedf6bd74ebace828da55bf79b56847e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: d99edced6a20f243441fd755ec1e343fc6e6dc61
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981703"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35729975"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>Listar importedWindowsAutopilotDeviceIdentities
 
@@ -35,7 +35,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentities
-GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -63,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 787
+Content-Length: 825
 
 {
   "value": [
@@ -71,6 +70,7 @@ Content-Length: 787
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
       "orderIdentifier": "Order Identifier value",
+      "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
       "importId": "Import Id value",

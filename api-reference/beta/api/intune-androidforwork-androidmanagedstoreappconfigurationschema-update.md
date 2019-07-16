@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto androidManagedStoreAppConfigu
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41780f92571cc9fbcbfb78e14667768dcfd8d12f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: c0cd5c0a5c40a7de602af9e7bb013cd070272494
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965414"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35705202"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>Atualizar androidManagedStoreAppConfigurationSchema
 
@@ -52,7 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |:---|:---|:---|
 |id|String|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
 |exampleJson|Binária|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
-|schemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema|
+|schemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema. Ele contém apenas a configuração de nível de raiz.|
+|nestedSchemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema. Ele contém uma lista simples de todas as configurações.|
 
 
 
@@ -66,7 +67,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManagedStoreAppConfigurationSchemaId}
 Content-type: application/json
-Content-length: 805
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchema",
@@ -74,6 +75,32 @@ Content-length: 805
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
+      "schemaItemKey": "Schema Item Key value",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "defaultBoolValue": true,
+      "defaultIntValue": 15,
+      "defaultStringValue": "Default String Value value",
+      "defaultStringArrayValue": [
+        "Default String Array Value value"
+      ],
+      "dataType": "integer",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
       "schemaItemKey": "Schema Item Key value",
       "displayName": "Display Name value",
       "description": "Description value",
@@ -101,7 +128,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 854
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchema",
@@ -110,6 +137,32 @@ Content-Length: 854
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
+      "schemaItemKey": "Schema Item Key value",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "defaultBoolValue": true,
+      "defaultIntValue": 15,
+      "defaultStringValue": "Default String Value value",
+      "defaultStringArrayValue": [
+        "Default String Array Value value"
+      ],
+      "dataType": "integer",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
       "schemaItemKey": "Schema Item Key value",
       "displayName": "Display Name value",
       "description": "Description value",

@@ -4,12 +4,12 @@ description: Ao fornecer as configurações neste perfil, você pode instruir o 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26c189e14850562c39c5fa00737e33ba38c82049
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 69267d6d100f54569450a0469952c5bfe4b788f9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002683"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737500"
 ---
 # <a name="iosikev2vpnconfiguration-resource-type"></a>tipo de recurso iosikEv2VpnConfiguration
 
@@ -75,7 +75,7 @@ Herda de [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfigurat
 |enableEAP|Booliano|Habilita a autenticação somente EAP|
 |enablePerfectForwardSecrecy|Booliano|Habilitar sigilo total na transferência (PFS).|
 |enableUseInternalSubnetAttributes|Booliano|Habilitar o uso de atributos de sub-rede interna.|
-|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|Método de identificação do cliente que está tentando se conectar via VPN. . Os valores possíveis são `deviceFQDN`:.|
+|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|Método de identificação do cliente que está tentando se conectar via VPN. . Os valores possíveis são: `deviceFQDN`, `empty`, `clientCertificateSubjectName`.|
 |remoteIdentifier|String|Endereço do servidor IKEv2. Deve ser um FQDN, userfqdn, endereço de rede ou ASN1DN|
 |securityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|Parâmetros de associação de segurança|
 |serverCertificateCommonName|String|Nome comum do certificado de servidor IKEv2 usado na autenticação de servidor|

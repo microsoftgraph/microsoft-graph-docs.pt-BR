@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windows10SecureAssessm
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e20950151759925d5e9af2d377de7e1cabf4e3c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: fa583a384f118b9ffaead2f00583cef78ca0c8f5
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977944"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715267"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Listar windows10SecureAssessmentConfigurations
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1629
+Content-Length: 1768
 
 {
   "value": [
@@ -105,7 +105,9 @@ Content-Length: 1629
       "configurationAccountType": "domainAccount",
       "allowPrinting": true,
       "allowScreenCapture": true,
-      "allowTextSuggestion": true
+      "allowTextSuggestion": true,
+      "localGuestAccountName": "Local Guest Account Name value",
+      "assessmentAppUserModelId": "Assessment App User Model Id value"
     }
   ]
 }

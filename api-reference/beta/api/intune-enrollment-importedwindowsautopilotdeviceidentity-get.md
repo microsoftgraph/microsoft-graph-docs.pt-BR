@@ -4,12 +4,12 @@ description: Lê as propriedades e relações do objeto importedWindowsAutopilot
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c349cbe092d638c113031d6499ff6c0615bfee9e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 384cdbf7032a18c44e9f217634f7da53cc8f08b9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981752"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35729982"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>Obter importedWindowsAutopilotDeviceIdentity
 
@@ -35,7 +35,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
-GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -66,13 +65,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 743
+Content-Length: 779
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
     "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
     "orderIdentifier": "Order Identifier value",
+    "groupTag": "Group Tag value",
     "serialNumber": "Serial Number value",
     "productKey": "Product Key value",
     "importId": "Import Id value",

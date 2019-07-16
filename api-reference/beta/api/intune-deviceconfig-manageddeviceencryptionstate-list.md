@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos managedDeviceEncryptio
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b677588491fe031c141f547e4be4cc69fdeba2d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 12d95ec8159e6cd04f119b8c3033882ebb3bd6d9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976425"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715330"
 ---
 # <a name="list-manageddeviceencryptionstates"></a>Listar managedDeviceEncryptionStates
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 812
+Content-Length: 862
 
 {
   "value": [
@@ -78,6 +78,7 @@ Content-Length: 812
       "encryptionState": "encrypted",
       "encryptionPolicySettingState": "notApplicable",
       "advancedBitLockerStates": "noUserConsent",
+      "fileVaultStates": "driveEncryptedByUser",
       "policyDetails": [
         {
           "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",

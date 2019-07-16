@@ -4,12 +4,12 @@ description: Marca de escopo de função
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54aa59e99a9697924512da0072e7b4e05e4fa12a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1a1a426265caaf2f05beb5678d49b9ae960d31c3
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993532"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35739264"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso roleScopeTag
 
@@ -28,6 +28,8 @@ Marca de escopo de função
 |[Excluir roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|Nenhum|Exclui [roleScopeTag](../resources/intune-rbac-rolescopetag.md).|
 |[Atualizar roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Atualiza as propriedades de um objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) .|
 |[atribuir ação](../api/intune-rbac-rolescopetag-assign.md)|coleção [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Ainda não documentado|
+|[ação getRoleScopeTagsById](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|coleção [roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Ainda não documentado|
+|[função hasCustomRoleScopeTag](../api/intune-rbac-rolescopetag-hascustomrolescopetag.md)|Booliano|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

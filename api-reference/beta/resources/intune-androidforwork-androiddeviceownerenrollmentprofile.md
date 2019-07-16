@@ -4,12 +4,12 @@ description: Perfil de registro usado para registrar dispositivos COSU usando o 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92fc907fdc0e50e5d983ac0dbb6f8a122c92641a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 53c3f1e26956b1f3cce830b7e7b2fed6a2e3df72
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992889"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737367"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>tipo de recurso androidDeviceOwnerEnrollmentProfile
 
@@ -45,6 +45,7 @@ Perfil de registro usado para registrar dispositivos COSU usando o Gerenciamento
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
+|scopeTags|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -75,7 +76,10 @@ Veja a seguir uma representação JSON do recurso.
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "String",
     "value": "binary"
-  }
+  },
+  "scopeTags": [
+    "String"
+  ]
 }
 ```
 

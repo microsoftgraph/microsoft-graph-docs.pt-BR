@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidDeviceOwnerEnro
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32660b1d70cb614304d2c0897df62f1d165a958c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 74cb5100feb61e76103e448a20b88c8953a51fc6
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966604"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35705209"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>Listar androidDeviceOwnerEnrollmentProfiles
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 838
+Content-Length: 898
 
 {
   "value": [
@@ -83,7 +83,10 @@ Content-Length: 838
         "@odata.type": "microsoft.graph.mimeContent",
         "type": "Type value",
         "value": "dmFsdWU="
-      }
+      },
+      "scopeTags": [
+        "Scope Tags value"
+      ]
     }
   ]
 }

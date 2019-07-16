@@ -4,12 +4,12 @@ description: Criar um novo objeto windowsKioskConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4adb045f318a9841be0b7597dfe5b3caecf624a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 9e81355897bbdb108897e941e0db102d49068787
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961802"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35722029"
 ---
 # <a name="create-windowskioskconfiguration"></a>Criar windowsKioskConfiguration
 
@@ -71,6 +71,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsK
 |kioskBrowserBlockedURLs|Coleção de cadeias de caracteres|Especificar URLs às quais os navegadores quiosques não devem navegar|
 |kioskBrowserBlockedUrlExceptions|Coleção de cadeias de caracteres|Especificar URLs às quais o navegador de quiosque pode navegar|
 |edgeKioskEnablePublicBrowsing|Booliano|Habilitar modo quiosque de navegação pública para o navegador Microsoft Edge. O padrão é false.|
+|windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|forçar agendamento de atualização para dispositivos quiosque.|
 
 
 
@@ -84,7 +85,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2526
+Content-length: 2829
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -158,7 +159,15 @@ Content-length: 2526
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "dayofWeek": "monday",
+    "dayofMonth": 10,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 
@@ -167,7 +176,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2698
+Content-Length: 3001
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -244,7 +253,15 @@ Content-Length: 2698
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "dayofWeek": "monday",
+    "dayofMonth": 10,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 

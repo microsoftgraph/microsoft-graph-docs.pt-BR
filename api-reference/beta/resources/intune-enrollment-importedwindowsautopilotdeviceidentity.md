@@ -4,12 +4,12 @@ description: Dispositivos importados do Windows AutoPilot.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5a5058f3930acb8cc1af4acf59254b4fd5ab67c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 0e22a68bb9805417af9c81b8e1c79b7c49813358
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992567"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35734448"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentity
 
@@ -33,7 +33,8 @@ Dispositivos importados do Windows AutoPilot.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
-|orderIdentifier|String|ID do pedido do dispositivo do Windows AutoPilot.|
+|orderIdentifier|String|ID do pedido do dispositivo do Windows AutoPilot. – Substituir|
+|groupTag|String|Marca de grupo do dispositivo do Windows AutoPilot.|
 |serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |importid|String|A ID de importação do dispositivo do Windows AutoPilot.|
@@ -57,6 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "String (identifier)",
   "orderIdentifier": "String",
+  "groupTag": "String",
   "serialNumber": "String",
   "productKey": "String",
   "importId": "String",

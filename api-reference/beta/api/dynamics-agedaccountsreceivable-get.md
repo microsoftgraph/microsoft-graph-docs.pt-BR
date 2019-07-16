@@ -6,12 +6,12 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.author: solsen
-ms.openlocfilehash: ccacb3626d982cc2cd08fe31ba443fadcdfaa315
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7270e50881b9e6358052fef4ae879bbb3dcfc5fe
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454220"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35712817"
 ---
 # <a name="get-agedaccountsreceivable"></a>Obter agedAccountsReceivable
 Recupere as propriedades e os relacionamentos de um objeto de relatório de contas a receber antigo para o Dynamics 365 Business central.
@@ -53,7 +53,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies('{id}')/agedAccountsReceivable?$filter=periodLengthFilter eq '3M'
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

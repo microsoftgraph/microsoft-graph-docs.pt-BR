@@ -4,12 +4,12 @@ description: Esquema que descreve as configurações personalizadas de um aplica
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35d2b8a3c380be46865e208471af5467ca6a46f8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: fbf66567ed8d2404ee8da1dd854c44d4faec23cc
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987709"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35741203"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>tipo de recurso androidManagedStoreAppConfigurationSchema
 
@@ -33,7 +33,8 @@ Esquema que descreve as configurações personalizadas de um aplicativo Android.
 |:---|:---|:---|
 |id|String|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
 |exampleJson|Binária|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
-|schemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Conjunto de itens que representa uma opção de configuração nomeada no esquema|
+|schemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema. Ele contém apenas a configuração de nível de raiz.|
+|nestedSchemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema. Ele contém uma lista simples de todas as configurações.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,6 +55,32 @@ Veja a seguir uma representação JSON do recurso.
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
+      "schemaItemKey": "String",
+      "displayName": "String",
+      "description": "String",
+      "defaultBoolValue": true,
+      "defaultIntValue": 1024,
+      "defaultStringValue": "String",
+      "defaultStringArrayValue": [
+        "String"
+      ],
+      "dataType": "String",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "String",
+          "value": "String"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
       "schemaItemKey": "String",
       "displayName": "String",
       "description": "String",
