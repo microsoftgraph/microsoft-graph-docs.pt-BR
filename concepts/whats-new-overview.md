@@ -3,20 +3,20 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 13823057cf45dd89ede984748fc8672b9342404a
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 5500d80f1fc9ac4ec0a0a097c106c619aa76f1c9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35638952"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731788"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
 Você sabia que alguns dos novos recursos do Microsoft Graph se originam de solicitações populares da comunidade de desenvolvedores? 
 
-A equipe do Microsoft Graph avalia regularmente as necessidades dos clientes, melhora as experiências de desenvolvimento e das APIs e as lança como novos recursos na seguinte ordem:
+A equipe do Microsoft Graph avalia regularmente as necessidades dos clientes e lança novos recursos na seguinte ordem:
 
-1. Estreia no **_Status_** de Visualização. As atualizações da API REST relacionadas estão no ponto de extremidade (`https://graph.microsoft.com/beta`). Os recursos no modo de visualização podem ser alterados sem aviso. Não use-os em aplicativos de produção. 
+1. Estreia no status de visualização **_prévia_**. As atualizações da API REST relacionadas estão no ponto de extremidade (`https://graph.microsoft.com/beta`). Os recursos no modo de visualização podem ser alterados sem aviso. Não use-os em aplicativos de produção. 
 
 2. Promovido para status de**_disponibilidade geral_ (DG)**, se um feedback suficiente indicar a viabilidade.. Todas as atualizações da API REST relacionadas serão adicionadas ao ponto de extremidade do v 1.0 (`https://graph.microsoft.com/v1.0`). Use somente os recursos do status do GA em aplicativos de produção.
 
@@ -29,6 +29,9 @@ Os administradores do Exchange podem conceder permissões de aplicativo a um apl
 
 ### <a name="example-code-snippets"></a>Exemplo de trechos de código
 Além do C# e do JavaScript, agora há trechos de código do Objective-C em todos os tópicos da API nas referências v1.0 e beta. Veja o exemplo do Objective-C de como [obter um evento](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
+
+### <a name="identity-and-access"></a>Identidade e acesso
+Use as [novas permissões delegadas e de aplicativo](permissions-reference.md#organization-permissions), _Organization.Read.All_ e _Organization.ReadWrite.All_ para acessar uma [organização](/graph/api/resources/organization?view=graph-rest-1.0) e recursos relacionados, como [SKUs inscritos](/graph/api/resources/subscribedsku?view=graph-rest-1.0).
 
 ### <a name="mail"></a>Email
 Use a API de [pastas de pesquisa de email](/graph/api/resources/mailsearchfolder?view=graph-rest-1.0) para pesquisar mensagens e acessar os resultados de pesquisa de email do Outlook. Confira o [anúncio do blog](https://developer.microsoft.com/en-us/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/) relacionado.
@@ -57,6 +60,9 @@ Administradores ou usuários podem [revogar](/graph/api/user-revokesigninsession
 - Consulta Delta para um objeto [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta).
 - Consulta Delta e adições de propriedade para objetos [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) e [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta).
 
+### <a name="files"></a>Arquivos 
+Aplique a data/hora de vencimento ou a senha ao [criar um link de compartilhamento](/graph/api/driveitem-createlink?view=graph-rest-beta) para um arquivo, pasta, ou outros [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta).
+
 ### <a name="group"></a>Grupo
 Obtenha [rótulos de confidencialidade](/graph/api/resources/assignedlabel?view=graph-rest-beta) para ajudar a proteger dados confidenciais de grupos do Office 365 e atender às políticas de conformidade. Esses rótulos são objetos [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta), publicados por administradores no Centro de Conformidade e Segurança do Microsoft 365, como parte dos recursos de Proteção de Informações da Microsoft. 
 
@@ -64,6 +70,7 @@ Obtenha [rótulos de confidencialidade](/graph/api/resources/assignedlabel?view=
 - Obtenha uma instância de um [aplicativo](/graph/api/resources/applicationtemplate?view=graph-rest-beta) ou adicione uma instância da galeria de aplicativos do Azure AD ao seu diretório como modelo.
 - Obtenha uma lista de todos os [eventos de provisionamento](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) em um locatário.
 - Obtenha informações sobre [usuário detectado ou riscos de login](/graph/api/resources/riskdetection?view=graph-rest-beta) em um ambiente do Azure AD. Esta funcionalidade de detecção de riscos faz parte do Azure AD Identity Protection.
+- Use as [novas permissões delegadas e de aplicativo](permissions-reference.md#organization-permissions), _Organization.Read.All_ e _Organization.ReadWrite.All_ para acessar uma [organização](/graph/api/resources/organization?view=graph-rest-beta) e recursos relacionados, como [SKUs inscritos](/graph/api/resources/subscribedsku?view=graph-rest-beta).
 
 ### <a name="mail"></a>Email
 Use a [permissão Mail.ReadBasic](permissions-reference.md#mail-permissions) na API [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta) e nas [notificações de alteração](webhooks.md) para [mensagem](/graph/api/resources/message?view=graph-rest-beta) e **mailFolder**.
