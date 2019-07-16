@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: bfe6a16abcfc0b7ce2900c76e142139fc84df176
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 484f4607e14baf6bb6a48e11ad4f0d00461cc014
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621141"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35736702"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -19,10 +19,52 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 ## <a name="july-2019"></a>Julho de 2019
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
+
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[managedAllDeviceCertificateState](/graph/api/resources/intune-deviceconfig-managedalldevicecertificatestate?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[windowsKioskForceUpdateSchedule](/graph/api/resources/intune-deviceconfig-windowskioskforceupdateschedule?view=graph-rest-beta)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[fileVaultState](/graph/api/resources/intune-deviceconfig-filevaultstate?view=graph-rest-beta)<br/>[windowsDefenderTamperProtectionOptions](/graph/api/resources/intune-deviceconfig-windowsdefendertamperprotectionoptions?view=graph-rest-beta)<br/>|
+|Adição|beta|Adicionada a ação getRoleScopeTagsById à coleção [roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta)  |
+|Adição|beta|Adicionada a ação [createInstance](/graph/api/intune-deviceintent-devicemanagementtemplate-createinstance?view=graph-rest-beta) ao [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta) |
+|Adição|beta|Adicionada a função hasCustomRoleScopeTag à coleção [roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta)  |
+|Exclusão|beta|Removida a ação [createInstance](/graph/api/intune-deviceintent-devicemanagementtemplate-createinstance?view=graph-rest-beta) de [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta) |
+|Exclusão|beta|A função [autopilotDeviceStream](/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream?view=graph-rest-beta) foi removida de [importedWindowsAutopilotDeviceIdentityUpload](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta) |
+|Adição|beta|Adicionada a propriedade **tokenCreationDateTime** à entidade [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **nestedSchemaItems** à entidade [androidManagedStoreAppConfigurationSchema](/graph/api/resources/intune-androidforwork-androidmanagedstoreappconfigurationschema?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **importId** à entidade [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **fileVaultStates**à entidade [managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta) |
+|Adição|beta|Adicionadas as propriedades **userRightsDenyLocalLogOn** e **windowsDefenderTamperProtection** à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) |
+|Adição|beta|Adicionadas as propriedades **localGuestAccountName** e **assessmentAppUserModelId** à entidade [windows10SecureAssessmentConfiguration](/graph/api/resources/intune-deviceconfig-windows10secureassessmentconfiguration?view=graph-rest-beta) |
+|Adição|beta|Adicionadas as propriedades **cacheServerHostNames**, **cacheServerForegroundDownloadFallbackToHttpDelayInSeconds** e **cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds** à entidade [windowsDeliveryOptimizationConfiguration](/graph/api/resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration?view=graph-rest-beta) |
+|Adição|beta|Adicionada a propriedade **windowsKioskForceUpdateSchedule** à entidade [windowsKioskConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskconfiguration?view=graph-rest-beta) |
+|Adição|beta|Adicionada a propriedade de navegação **deviceConfigurationsAllManagedDeviceCertificateStates** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) |
+|Exclusão|beta|Removida a propriedade de navegação **importedWindowsAutopilotDeviceIdentities** da entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade de navegação **deviceUpdateStates** à entidade [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) |
+|Adição|beta|Adicionadas as propriedades **índice** e**Índicepai** ao tipo complexo [androidManagedStoreAppConfigurationSchemaItem](/graph/api/resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem?view=graph-rest-beta) |
+|Adição|beta|Adicionada a propriedade **androidDeviceAdministratorEnrollmentEnabled**ao tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta) |
+|Adição|beta|Adicionada a propriedade **edgeTraversal** ao tipo complexo [windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta) |
+|Adição|beta|Adicionado o membro **localGuestAccount** ao tipo enumerado [secureAssessmentAccountType](/graph/api/resources/intune-deviceconfig-secureassessmentaccounttype?view=graph-rest-beta) |
+|Adição|beta|Adicionados os membros **vazio** e **clientCertificateSubjectName** ao tipo enumerado [vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta) |
+
+### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
+
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
 |Adição|beta|Propriedade **revision** adicionada à entidade [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) |
-|Adição|beta|Propriedade **valuePrefix** adicionada à entidade [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) |
+|Adição|beta|Adicionada a propriedade **valuePrefix** à entidade [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) |
+
+### <a name="files-onedrive"></a>Arquivos (OneDrive)
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|beta|Adicionadas as propriedades **expirationDatetime** e **password** à ação [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta). |
+
+### <a name="identity-and-access"></a>Identidade e acesso
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | v1.0 | Adicionadas as [novas permissões delegadas e de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-1.0) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0). |
+| Adição | beta | Adicionadas as [novas permissões delegadas e de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-beta) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
 
 ## <a name="june-2019"></a>Junho de 2019
 
@@ -903,7 +945,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição          | Beta        | Adicionar o tipo de recurso [notificação](/graph/api/resources/projectrome-notification?view=graph-rest-beta). |
-| Adição          | Beta        | Adicionada a API [Criar e publicar notificação] (/ graph / api / projectrome_notification_post? View = graph-rest-beta).|
+| Adição          | Beta        | Adicionada a API [Criar e publicar notificações](/graph/api/projectrome_notification_post?view=graph-rest-beta).|
 
 ### <a name="security-apis"></a>APIs de segurança
 
