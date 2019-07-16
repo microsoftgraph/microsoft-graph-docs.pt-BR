@@ -4,12 +4,12 @@ description: Uma regra que controla o tráfego por meio do firewall do Windows.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f4191edfee5148094f10b7a57bb50844d3bfcca
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: ae5c51a2ce5b3f86f03e651162611e8d219e7da2
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994115"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737661"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>tipo de recurso windowsFirewallRule
 
@@ -51,7 +51,9 @@ O padrão é qualquer endereço. | | remoteAddressRanges | Conjunto de cadeias d
 - Um endereço IPv6 válido.
 - Um intervalo de endereços IPv4 no formato "Iniciar endereço-end endereço" sem espaços incluídos.
 - Um intervalo de endereços IPv6 no formato "Iniciar endereço-end endereço" sem espaços incluídos.
-O padrão é qualquer endereço. | | profiletypes | [windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)| Especifica os perfis aos quais a regra pertence. Se não for especificado, o padrão é ALL. Os valores possíveis são `notConfigured`: `domain`, `private`, `public`,. | | ação | [stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)| A ação que a regra impõe. Se não for especificado, o padrão será permitido. Os valores possíveis são `notConfigured`: `blocked`, `allowed`,. | | trafficDirection | [windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)| A direção de tráfego para a qual a regra está habilitada. Se não for especificado, o padrão será out. Os valores possíveis são `notConfigured`: `out`, `in`,. | | Interfaces | [windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)| Os tipos de interface da regra. Os valores possíveis são `notConfigured`: `remoteAccess`, `wireless`, `lan`,. | | localUserAuthorizations | Cadeia de caracteres | Especifica a lista de usuários locais autorizados para o contêiner de aplicativos. Esta é uma cadeia de caracteres no formato SDDL (Security Descriptor Definition Language). |
+O padrão é qualquer endereço. | | profiletypes | [windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)| Especifica os perfis aos quais a regra pertence. Se não for especificado, o padrão é ALL. Os valores possíveis são `notConfigured`: `domain`, `private`, `public`,. | | ação | [stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)| A ação que a regra impõe. Se não for especificado, o padrão será permitido. Os valores possíveis são `notConfigured`: `blocked`, `allowed`,. | | trafficDirection | [windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)| A direção de tráfego para a qual a regra está habilitada. Se não for especificado, o padrão será out. Os valores possíveis são `notConfigured`: `out`, `in`,. | | Interfaces | [windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)| Os tipos de interface da regra. Os valores possíveis são `notConfigured`: `remoteAccess`, `wireless`, `lan`,. | | edgeTraversal | [stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)| Indica se a travessia de borda está habilitada ou desabilitada para esta regra.
+A configuração EdgeTraversal indica que o tráfego de entrada específico tem permissão para fazer o túnel por meio de NATs e outros dispositivos de borda usando a tecnologia de encapsulamento Teredo. Para que essa configuração funcione corretamente, o aplicativo ou serviço com a regra de firewall de entrada precisa dar suporte a IPv6. O aplicativo principal dessa configuração permite que os ouvintes no host sejam endereçados globalmente por meio de um endereço IPv6 Teredo.
+As novas regras têm a propriedade EdgeTraversal desabilitada por padrão. Os valores possíveis são `notConfigured`: `blocked`, `allowed`,. | | localUserAuthorizations | Cadeia de caracteres | Especifica a lista de usuários locais autorizados para o contêiner de aplicativos. Esta é uma cadeia de caracteres no formato SDDL (Security Descriptor Definition Language). |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -88,6 +90,7 @@ Veja a seguir uma representação JSON do recurso.
   "action": "String",
   "trafficDirection": "String",
   "interfaceTypes": "String",
+  "edgeTraversal": "String",
   "localUserAuthorizations": "String"
 }
 ```

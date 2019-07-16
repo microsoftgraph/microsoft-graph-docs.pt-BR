@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos iosikEv2VpnConfigurati
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fcdca8a677b301b4473f29a4fb5d7adab79da48
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: c5e951b2d3cd1c18f234283bf368bbf453cc25a3
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001773"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715365"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>Listar iosikEv2VpnConfigurations
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4954
+Content-Length: 4949
 
 {
   "value": [
@@ -179,7 +179,7 @@ Content-Length: 4954
       "enableEAP": true,
       "enablePerfectForwardSecrecy": true,
       "enableUseInternalSubnetAttributes": true,
-      "localIdentifier": "deviceFQDN",
+      "localIdentifier": "empty",
       "remoteIdentifier": "Remote Identifier value",
       "securityAssociationParameters": {
         "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",

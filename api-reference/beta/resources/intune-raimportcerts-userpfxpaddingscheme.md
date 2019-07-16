@@ -4,12 +4,12 @@ description: Valores com suporte para o esquema de preenchimento usado pelo prov
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4219734edcaf4e40ea4885ef539189e30d86683
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1a079075d3e0a44a773c854df55df1635d54584c
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992329"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35739271"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>tipo de enumeração userPfxPaddingScheme
 
@@ -22,12 +22,12 @@ Valores com suporte para o esquema de preenchimento usado pelo provedor de cript
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Ainda não documentado|
-|pkcs1|1|Ainda não documentado|
-|oaepSha1|duas|Ainda não documentado|
-|oaepSha256|3D|Ainda não documentado|
-|oaepSha384|quatro|Ainda não documentado|
-|oaepSha512|0,5|Ainda não documentado|
+|none|,0|Nenhum preenchimento é usado.|
+|pkcs1|1|Usar preenchimento PKCS # 1.|
+|oaepSha1|duas|Use o enchimento OAEP SHA-1.|
+|oaepSha256|3D|Use o preenchimento OAEP SHA-256.|
+|oaepSha384|quatro|Use o preenchimento OAEP SHA-384.|
+|oaepSha512|0,5|Use o preenchimento OAEP SHA-512.|
 
 
 

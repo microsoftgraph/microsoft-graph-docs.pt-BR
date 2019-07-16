@@ -4,12 +4,12 @@ description: Único item de configuração no esquema de configuração personal
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 706a4daa53201f8bdf295ca26ecf6f20134437da
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 6bb634cd3bab2933f0b66dbc1b9b861c6fe52e64
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991412"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35734966"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 
@@ -22,6 +22,8 @@ ms.locfileid: "34991412"
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
+|índice|Int32|Índice exclusivo que o aplicativo usa para manter itens de esquema aninhados|
+|parentIndex|Int32|Índice do item de esquema pai para rastrear itens de esquema aninhados|
 |schemaItemKey|String|Chave exclusiva que o aplicativo usa para identificar o item|
 |displayName|String|Nome legível por humanos|
 |descrição|String|Descrição do que o item controla dentro do aplicativo|
@@ -45,6 +47,8 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+  "index": 1024,
+  "parentIndex": 1024,
   "schemaItemKey": "String",
   "displayName": "String",
   "description": "String",
