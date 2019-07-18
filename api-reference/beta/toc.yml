@@ -9217,9 +9217,9 @@
                 - name: Obter bate-papo
                   href: api/chat-get.md
                 - name: Listar mensagens em um bate-papo
-                  href: api/chat-list-messages.md
+                  href: api/chatmessage-list.md
                 - name: Receba uma mensagem no bate-papo
-                  href: api/chat-get-message.md
+                  href: api/chatmessage-get.md
                 - name: Obter Membros no chat
                   href: api/conversationmember-list.md
                 - name: Obter um membro no chat
