@@ -3,12 +3,12 @@ title: Provedores de kit de ferramentas do Microsoft Graph
 description: Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e89247daf92471b4a7c6aa16f34396eaedaaa37a
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 3e5d587e8c2690d2b71a2e70e41266519566f91e
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242947"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778709"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Provedores de kit de ferramentas do Microsoft Graph
 
@@ -37,13 +37,13 @@ Você pode criar um provedor a qualquer momento. Recomendamos que você crie o p
 
 A `Providers` variável global expõe as seguintes propriedades e funções
 
-   - `globalProvider : IProvider`
+- `globalProvider : IProvider`
 
 Defina essa propriedade como um provedor que você deseja usar globalmente. Todos os componentes usam essa propriedade para obter uma referência ao provedor. A definição dessa propriedade acionará `onProvidersChanged` o evento.
 
-   - `function onProviderUpdated(callbackFunction)`
+- `function onProviderUpdated(callbackFunction)`
 
- A `callbackFunction` função será chamada quando um provedor for alterado ou quando o estado de um provedor for alterado. Um `ProvidersChangedState` valor de enumeração será passado para a função para indicar o que foi atualizado.
+A `callbackFunction` função será chamada quando um provedor for alterado ou quando o estado de um provedor for alterado. Um `ProvidersChangedState` valor de enumeração será passado para a função para indicar o que foi atualizado.
 
 ## <a name="implement-your-own-provider"></a>Implementar seu próprio provedor
 

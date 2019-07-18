@@ -4,12 +4,12 @@ description: Recupere um evento específico de entrada do Azure AD para seu loca
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a5e168bccfbecc080cb2a6fdd0e8b06260ae0ede
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c7111e8f63684cd98a1c21d0de72e9adb246353c
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453618"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778446"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -25,8 +25,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AuditLog.Read.All |
-|Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All | 
+|Aplicativo | Directory.Read.All | 
+
 
 Além disso, os aplicativos devem ser [corretamente registrados](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 

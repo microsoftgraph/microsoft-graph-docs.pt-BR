@@ -3,12 +3,12 @@ title: abrir o cliente do OneNote
 description: 'Você pode usar a propriedade **links** de uma página ou de um bloco de anotações para abrir um aplicativo do OneNote em determinada página ou bloco de anotações. '
 author: Jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: b4ad078443bd6d85c46a6e23552ddc730c725b51
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: d9f4ec45e79ed0526b4d02a6c3f676944384ab46
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236283"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778289"
 ---
 # <a name="open-the-onenote-client"></a>Abrir o cliente do OneNote
 
@@ -31,13 +31,13 @@ A propriedade **links** é um objeto JSON que contém duas URLs. As URLs abrirã
 
 - **oneNoteClientUrl** 
 
-    - Abre o cliente do OneNote, caso já esteja instalado no dispositivo. Essa URL inclui o prefixo *onenote*.
-    - Abre a versão de idioma específico, caso esteja instalada no dispositivo. Caso contrário, usa a configuração de idioma da plataforma.
+  - Abre o cliente do OneNote, caso já esteja instalado no dispositivo. Essa URL inclui o prefixo *onenote*.
+  - Abre a versão de idioma específico, caso esteja instalada no dispositivo. Caso contrário, usa a configuração de idioma da plataforma.
 
 - **oneNoteWebUrl** 
 
-    - Abre o OneNote na Web se o navegador padrão no dispositivo oferecer suporte a ele. 
-    - Usa a configuração de idioma do navegador.
+  - Abre o OneNote na Web se o navegador padrão no dispositivo oferecer suporte a ele. 
+  - Usa a configuração de idioma do navegador.
 
 
 A API do OneNote retorna a propriedade **links** na resposta HTTP para as seguintes operações:

@@ -2,12 +2,12 @@
 title: Criar programControl
 description: No recurso de revisões do Azure AD Access, crie um novo objeto programControl.  Isso vincula uma revisão do Access a um programa.
 localization_priority: Normal
-ms.openlocfilehash: 5c8bf73cc62a937848577baf3358ead189f88aae
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 101606433c16f711e0d0301cf97b325149459bd3
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450075"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778436"
 ---
 # <a name="create-programcontrol"></a>Criar programControl
 
@@ -17,9 +17,9 @@ No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md)
 
 Antes de fazer essa solicitação, o chamador deve ter sido
 
- - [criou um programa](program-create.md) ou [recuperou um programa](program-list.md), para que o valor `programId` de a ser incluído na solicitação,
- - [criou uma revisão do Access](accessreview-create.md) ou [recuperou uma revisão do Access](accessreview-get.md), para que `controlId` o valor de seja incluído na solicitação e
- - [recuperada a lista de tipos de controle de programa](programcontroltype-list.md)para que o `controlTypeId` valor de seja incluído na solicitação.
+- [criou um programa](program-create.md) ou [recuperou um programa](program-list.md), para que o valor `programId` de a ser incluído na solicitação,
+- [criou uma revisão do Access](accessreview-create.md) ou [recuperou uma revisão do Access](accessreview-get.md), para que `controlId` o valor de seja incluído na solicitação e
+- [recuperada a lista de tipos de controle de programa](programcontroltype-list.md)para que o `controlTypeId` valor de seja incluído na solicitação.
 
 
 ## <a name="permissions"></a>Permissões

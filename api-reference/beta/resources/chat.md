@@ -4,12 +4,12 @@ description: Um chat é uma coleção de chatMessages entre um ou mais participa
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d0f1009079c4994814385ae8758af6c211f17a2
-ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
+ms.openlocfilehash: e95adb1c00b88fcc2649acb669ee693caef6cccf
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34344973"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778651"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -25,8 +25,8 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 |[Obter bate-papo](../api/chat-get.md) | [chat](channel.md) | Leia as propriedades e as relações do chat.|
 |[Listar membros de chat](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Obtenha a lista de todos os usuários no chat.|
 |[Obter membro de chat](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obtenha um único usuário no chat.|
-|[Listar mensagens em um bate-papo](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. |
-|[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
+|[Listar mensagens em um bate-papo](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. |
+|[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
 
 ## <a name="properties"></a>Propriedades
 

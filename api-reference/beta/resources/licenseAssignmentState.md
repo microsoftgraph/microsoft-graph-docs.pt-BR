@@ -2,12 +2,12 @@
 title: tipo de recurso licenseAssignmentState
 description: 'A propriedade **licenseAssignmentStates** da entidade User é uma coleção de **licenseAssignmentState**. Ele fornece detalhes sobre as atribuições de licença a um usuário. Os detalhes incluem informações como:  '
 localization_priority: Normal
-ms.openlocfilehash: 1aa91dcb841c8f3219ba0ea00ad615777da89aa9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e720070c4c97c58fd3c99e49656d7ca33f5fb9d4
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345334"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778422"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>tipo de recurso licenseAssignmentState
 
@@ -15,10 +15,10 @@ ms.locfileid: "33345334"
 
 A propriedade **licenseAssignmentStates** da entidade [User](user.md) é uma coleção de **licenseAssignmentState**. Ele fornece detalhes sobre as atribuições de licença a um usuário. Os detalhes incluem informações como:  
 
- - Quais planos estão desabilitados para um usuário
- - Se a licença foi atribuída ao usuário diretamente ou herdada de um grupo
- - Estado atual da atribuição
- - Se o estado da atribuição for erro, qual é o detalhe do erro para a falha? 
+- Quais planos estão desabilitados para um usuário
+- Se a licença foi atribuída ao usuário diretamente ou herdada de um grupo
+- Estado atual da atribuição
+- Se o estado da atribuição for erro, qual é o detalhe do erro para a falha? 
 
 
 ## <a name="properties"></a>Propriedades

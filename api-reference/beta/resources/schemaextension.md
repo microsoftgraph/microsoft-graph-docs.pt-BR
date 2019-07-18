@@ -3,12 +3,12 @@ title: Tipo de recurso schemaExtension (extensões de esquema)
 description: 'As extensões de esquema permitem que você defina um esquema para estender e adicionar dados personalizados digitados a um tipo de recurso. Os dados personalizados aparecem como um tipo complexo no recurso estendido. '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: a6d7ed28b1fedefe1b4172bb780e3a014e4d3ff7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 65b70a00b9da6b41a178d07b9eeb42ed8e92a2f6
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343449"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778654"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>Tipo de recurso schemaExtension (extensões de esquema)
 
@@ -18,15 +18,15 @@ As extensões de esquema permitem que você defina um esquema para estender e ad
 
 As extensões de esquema são suportadas pelos seguintes tipos de recursos:
 
- - [administrativeUnit](administrativeunit.md)
- - [contact](contact.md)
- - [device](device.md)
- - [event](event.md) em um usuário ou calendário de grupo do Office 365
- - [post](post.md) de um grupo do Office 365
- - [group](group.md)
- - [message](message.md) 
- - [organization](organization.md)
- - [user](user.md)
+- [administrativeUnit](administrativeunit.md)
+- [contact](contact.md)
+- [device](device.md)
+- [event](event.md) em um usuário ou calendário de grupo do Office 365
+- [post](post.md) de um grupo do Office 365
+- [group](group.md)
+- [message](message.md) 
+- [organization](organization.md)
+- [user](user.md)
 
 Confira o [exemplo de extensão de esquema](/graph/extensibility-schema-groups) para aprender a adicionar dados personalizados aos grupos.
 

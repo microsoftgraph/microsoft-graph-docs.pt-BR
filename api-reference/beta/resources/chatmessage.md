@@ -4,12 +4,12 @@ description: Representa uma mensagem de chat individual dentro de uma entidade d
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3f27434e5dd8e3ccfc949c870a239522dd96d9d3
-ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
-ms.translationtype: HT
+ms.openlocfilehash: 99e69bd51a661b67fd4cb325fffe80db91214714
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645237"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778667"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -26,29 +26,29 @@ A mensagem pode ser uma mensagem raiz ou parte de um thread definido pela propri
 |[Get Channel message](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Obtenha uma mensagem raiz única de um canal.|
 |[List replies to a message](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| Lista de todas as respostas a uma mensagem no canal.|
 |[Get a reply to a message](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Obtenha uma resposta a uma mensagem única em um canal.|
-|[Criar uma chatMessage em um canal](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Crie uma nova mensagem de nível superior em um canal.|
+|[Criar chat em um canal](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Crie uma nova mensagem de nível superior em um canal.|
 |[Responder a uma mensagem em um canal](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Responder a uma mensagem existente em um canal.|
-|[Listar mensagens em um bate-papo](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Liste mensagens em um bate-papo em grupo ou 1:1. |
-|[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
-|[Listar todas as imagens hospedadas](../api/chatmessagehostedimage-list-hostedimages.md) | coleção [hostedImage](../resources/chatmessagehostedimage.md)| Obtenha todas as imagens hospedadas em uma mensagem.|
-|[Obter imagem hospedada](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | Obtenha uma imagem hospedada de uma mensagem.|
-|[Obter bytes da imagem hospedada](../api/chatmessagehostedimage-getbytes.md) | dados binários de imagem | Obtenha dados binários de imagem de uma imagem hospedada em uma mensagem.|
+|[Listar mensagens em um bate-papo](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Listar mensagens em um bate-papo de grupo ou 1:1. |
+|[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
+|[Listar todas as imagens hospedadas](../api/chatmessagehostedimage-list-hostedimages.md) | coleção [hostedImage](../resources/chatmessagehostedimage.md)| Obter todas as imagens hospedadas em uma mensagem.|
+|[Obter imagem hospedada](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | Obter uma imagem hospedada de uma mensagem.|
+|[Obter bytes de imagem hospedado](../api/chatmessagehostedimage-getbytes.md) | dados de imagem binária | Obtém dados de imagem binária de uma imagem hospedada de uma mensagem.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. ID exclusivo da mensagem.|
+|id|String| Somente leitura. ID exclusiva da mensagem.|
 |replyToId| cadeia de caracteres | Somente leitura. ID da mensagem pai/raiz do thread. (Aplica-se apenas a mensagens em canais e não em bate-papos) |
 |from|[identitySet](identityset.md)| Somente leitura. Detalhes do remetente da mensagem.|
 |etag| cadeia de caracteres | Somente leitura. O número de versão da mensagem. |
 |messageType|chatMessageType|O tipo de mensagem. Os valores possíveis são: `message`.|
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi criada.|
-|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora da criação ou edição da mensagem, incluindo quando uma resposta é criada (se for uma mensagem raiz em um canal) ou uma reação é adicionada ou removida. |
+|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem é criada ou editada, incluindo quando uma resposta é feita (se é uma mensagem raiz em um canal) ou uma reação é adicionada ou removida. |
 |deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de hora em que a mensagem foi excluída ou nulo se não foi excluído. |
-|assunto|cadeia de caracteres| O assunto da mensagem, em texto simples.|
+|assunto|string| O assunto da mensagem, em texto simples.|
 |corpo|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. A representação é especificada pelo contentType dentro do corpo. O conteúdo está sempre em HTML se a mensagem contiver um [chatMessageMention](chatmessagemention.md). |
-|summary|cadeia de caracteres| Texto de resumo da mensagem que pode ser usado para notificações por push e visualizações resumidas ou de fallback. Aplica-se apenas às mensagens de canal, não às mensagens de bate-papo. |
+|summary|string| Texto de resumo da mensagem que pode ser usado para notificações por push e visualizações resumidas ou de fallback. Aplica-se apenas às mensagens de canal, não às mensagens de bate-papo. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| Lista de entidades mencionada na mensagem. Atualmente, dá suporte a usuário, bot, equipe, canal.|
 |importância| chatMessageImportance | A importância da mensagem. Os valores possíveis são: `normal`, `high`, `urgent`.|

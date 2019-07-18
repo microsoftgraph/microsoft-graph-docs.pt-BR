@@ -3,12 +3,12 @@ title: Escolher um provedor de autenticação do Microsoft Graph
 description: Saiba como escolher provedores de autenticação específicos do cenário para seu aplicativo.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 8f69312b4993320e76e2fe46a2977d98c0a42c93
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 7975a2049ee16d89cfc9668babde091db7dd140e
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35275555"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778296"
 ---
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolher um provedor de autenticação do Microsoft Graph com base no cenário
 
@@ -42,8 +42,13 @@ O fluxo de código de autorização permite que aplicativos nativos e Web obtenh
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-IConfidentialClientApplication clientApplication = AuthorizationCodeProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
-AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(clientApplication, scopes);
+IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
+    .Create(clientId)
+    .WithRedirectUri(redirectUri)
+    .WithClientSecret(clientSecret) // or .WithCertificate(certificate)
+    .Build();
+
+AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(confidentialClientApplication, scopes);  
 ```
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
@@ -86,8 +91,13 @@ O fluxo de credenciais do cliente permite que aplicativos de serviço sejam exec
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-IConfidentialClientApplication clientApplication = ClientCredentialProvider.CreateClientApplication(clientId, clientCredential);
-ClientCredentialProvider authProvider = new ClientCredentialProvider(clientApplication);
+IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
+    .Create(clientId)
+    .WithTenantId(tenantID)
+    .WithClientSecret(clientSecret)
+    .Build();
+
+ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentialClientApplication);
 ```
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
@@ -130,8 +140,13 @@ O fluxo em nome de é aplicável quando o aplicativo chama uma API de serviço/W
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-IConfidentialClientApplication clientApplication = OnBehalfOfProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
-OnBehalfOfProvider authProvider = new OnBehalfOfProvider(clientApplication, scopes);
+IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
+    .Create(clientId)
+    .WithRedirectUri(redirectUri)
+    .WithClientSecret(clientSecret)
+    .Build();
+
+OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientApplication, scopes);
 ```
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
@@ -219,8 +234,13 @@ O fluxo de código de dispositivo permite entrar em dispositivos por meio de out
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication clientApplication = DeviceCodeProvider.CreateClientApplication(clientId);
-DeviceCodeProvider authProvider = new DeviceCodeProvider(clientApplication, scopes);
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create(clientId)
+            .Build();
+
+Func<DeviceCodeResult, Task> deviceCodeReadyCallback = async dcr => await Console.Out.WriteLineAsync(dcr.Message);
+
+DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, scopes, deviceCodeReadyCallback);
 ```
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
@@ -256,8 +276,12 @@ O fluxo integrado do Windows oferece uma maneira para que os computadores com Wi
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication clientApplication = IntegratedWindowsAuthenticationProvider.CreateClientApplication(clientId);
-IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(clientApplication, scopes);
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create(clientId)
+            .WithTenantId(tenantID)
+            .Build();
+
+IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(publicClientApplication, scopes);
 ```
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
@@ -293,8 +317,11 @@ O fluxo interativo é usado por aplicativos móveis (Xamarin e UWP) e aplicativo
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication clientApplication = InteractiveAuthenticationProvider.CreateClientApplication(clientId);
-InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(clientApplication, scopes);
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create(clientId)
+            .Build();
+
+InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(publicClientApplication, scopes);
 ```
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
@@ -354,8 +381,18 @@ O provedor de nome de usuário/senha permite que um aplicativo entre em um usuá
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication clientApplication = UsernamePasswordProvider.CreateClientApplication(clientId);
-UsernamePasswordProvider authProvider = new UsernamePasswordProvider(clientApplication, scopes);
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create(clientId)
+            .WithTenantId(tenantID)
+            .Build();
+
+UsernamePasswordProvider authProvider = new UsernamePasswordProvider(publicClientApplication, scopes);
+
+GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+
+User me = await graphClient.Me.Request()
+                .WithUsernamePassword(email, password)
+                .GetAsync();
 ```
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)

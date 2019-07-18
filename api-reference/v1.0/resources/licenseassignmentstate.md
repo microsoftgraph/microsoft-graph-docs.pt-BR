@@ -4,22 +4,22 @@ description: A propriedade **licenseAssignmentStates** da entidade User é uma c
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 0822c975ab81badf5334881bb460532161858010
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 358c54ae2562479734cc496b1fe9ab8eb34812fa
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585143"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778688"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>tipo de recurso licenseAssignmentState
 
 
 A propriedade **licenseAssignmentStates** da entidade [User](user.md) é uma coleção de objetos **licenseAssignmentState** . Ele fornece detalhes sobre as atribuições de licença a um usuário. Os detalhes incluem informações como:  
 
- - Quais planos estão desabilitados para um usuário
- - Se a licença foi atribuída ao usuário diretamente ou herdada de um grupo
- - O estado atual da atribuição
- - Detalhes do erro se o estado da atribuição for erro 
+- Quais planos estão desabilitados para um usuário
+- Se a licença foi atribuída ao usuário diretamente ou herdada de um grupo
+- O estado atual da atribuição
+- Detalhes do erro se o estado da atribuição for erro 
 
 
 ## <a name="properties"></a>Propriedades

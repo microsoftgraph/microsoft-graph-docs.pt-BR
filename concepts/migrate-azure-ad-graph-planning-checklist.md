@@ -4,12 +4,12 @@ description: Lista de verificação para migrar seus aplicativos do Azure AD Gra
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 78b6ba30d84a2ca71ae8998df1321b2b8e0ba331
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 905a692e6a4fddf71b6488e1695957cba5b182ae
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630220"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778261"
 ---
 # <a name="app-migration-planning-checklist"></a>Lista de verificação de planejamento de migração de aplicativos
 
@@ -41,9 +41,9 @@ Use o [Explorador do Graph](https://aka.ms/ge) para experimentar novas chamadas 
 
 ## <a name="step-3-review-app-details"></a>Etapa 3: examinar os detalhes do aplicativo
 
-  - Alterações de consentimento e [registro de aplicativo](migrate-azure-ad-graph-app-registration.md) (que devem ser nenhuma).
-  - Aquisição de token e [bibliotecas de autenticação](migrate-azure-ad-graph-authentication-library.md).
-  - Para aplicativos .NET, use de [bibliotecas de cliente](migrate-azure-ad-graph-client-libraries.md).
+- Alterações de consentimento e [registro de aplicativo](migrate-azure-ad-graph-app-registration.md) (que devem ser nenhuma).
+- Aquisição de token e [bibliotecas de autenticação](migrate-azure-ad-graph-authentication-library.md).
+- Para aplicativos .NET, use de [bibliotecas de cliente](migrate-azure-ad-graph-client-libraries.md).
 
 ## <a name="step-4-deploy-test-and-extend-your-app"></a>Etapa 4: implantar, testar e estender seu aplicativo
 

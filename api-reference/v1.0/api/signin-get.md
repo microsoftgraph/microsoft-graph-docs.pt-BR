@@ -4,12 +4,12 @@ description: Descreve o método Get do recurso de entrada (entidade) da API do M
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f4c10ffcf600fd51b0d6531f78c38cc2066ae4a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0f258b49d763ddda90b5ee5b05de92a2b44722f0
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444187"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778438"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
 |Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
-|Aplicativo | AuditLog.Read.All |
+|Aplicativo | AuditLog. Read. All e Directory. Read. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -4,12 +4,12 @@ description: Listar todas as respostas de uma mensagem em um canal de uma equipe
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7bc637d1eaec19bd3de18517c9339b8c15c9d663
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2db1c418ef669776c945e4c2176a49648ba185c4
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438472"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778402"
 ---
 # <a name="list-channel-message-replies"></a>Listar respostas de mensagens de canal
 
@@ -26,7 +26,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)|Group.Read.All,Group.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| Sem suporte. |
+|Aplicativo| Group.Read.All,Group.ReadWrite.All|
+
+> [!NOTE]
+> Antes de chamar esta API com permissões de aplicativo, você deve solicitar acesso. Para obter detalhes, consulte [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
