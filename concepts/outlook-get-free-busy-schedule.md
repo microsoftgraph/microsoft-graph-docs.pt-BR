@@ -4,12 +4,12 @@ description: Em uma configuração de escola ou trabalho, um cenário comum é v
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 5e8fd1cd96c852c07c87bcaa35396fdd0fa5857d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 171a8a41b2f51335d7f5d5f38b63590421d94d48
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555203"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778282"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>Obter agenda de disponibilidade de usuários e recursos
 
@@ -174,8 +174,8 @@ Por exemplo, o **getSchedule** pode retornar o status de disponibilidade e as ho
 
 - O evento esteja marcado com um nível de confidencialidade baixo - `normal` ou `personal`- E uma ou mais das seguintes condições se aplicam:
 
-   - As configurações de calendário do usuário solicitado permitem com que o usuário conectado veja as linhas de assunto e localizações
-   - O calendário do usuário solicitado é compartilhado com o usuário conectado
+  - As configurações de calendário do usuário solicitado permitem com que o usuário conectado veja as linhas de assunto e localizações
+  - O calendário do usuário solicitado é compartilhado com o usuário conectado
 
 Estas condições se aplicam independentemente se o usuário conectado é um administrador na organização. O usuário solicitado tem controle sobre os dados de eventos retornados.
 

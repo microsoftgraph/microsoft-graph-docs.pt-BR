@@ -2,12 +2,12 @@
 title: 'Controle de versão, suporte e mudanças significativas de políticas para o Microsoft Graph '
 description: Este artigo descreve o suporte e as alterações significativas de políticas do Microsoft Graph e as versões da API Microsoft Graph disponível no momento.
 localization_priority: Priority
-ms.openlocfilehash: a362fba9bd66c029d7e4b9675b07d8d178fab561
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 8ac36dd12feb10eb545cea80cd8d59023b6d9783
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656871"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778695"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Controle de versão, suporte e mudanças significativas de políticas do Microsoft Graph
 
@@ -29,21 +29,21 @@ O Microsoft Graph tem um log de alterações entre as versões. Essas alteraçõ
 
 A seguir há exemplos de alterações não compatíveis com versões anteriores:
 
- - Mudanças na URL ou solicitação/resposta fundamentais associadas ao recurso
- - Remoção, renomear ou alterar o tipo de uma propriedade declarada
- - Remoção ou renomeação de APIs ou parâmetros de API
- - Adição de um cabeçalho de solicitação obrigatório
+- Mudanças na URL ou solicitação/resposta fundamentais associadas ao recurso
+- Remoção, renomear ou alterar o tipo de uma propriedade declarada
+- Remoção ou renomeação de APIs ou parâmetros de API
+- Adição de um cabeçalho de solicitação obrigatório
 
 A seguir há exemplos de alterações compatíveis com versões anteriores:
 
- - Adição de propriedades que são anuláveis ou têm um valor padrão
- - Adição de um membro a uma enumeração
- - Remover, renomear ou alterar o tipo de uma extensão aberta
- - Remover, renomear ou alterar o tipo de uma anotação
- - Introdução de paginação a coleções existentes
- - Alterações de códigos de erro
- - Alterações à ordem das propriedades
- - Alterações no formato ou no comprimento de cadeias de caracteres opacas, como IDs de recurso
+- Adição de propriedades que são anuláveis ou têm um valor padrão
+- Adição de um membro a uma enumeração
+- Remover, renomear ou alterar o tipo de uma extensão aberta
+- Remover, renomear ou alterar o tipo de uma anotação
+- Introdução de paginação a coleções existentes
+- Alterações de códigos de erro
+- Alterações à ordem das propriedades
+- Alterações no formato ou no comprimento de cadeias de caracteres opacas, como IDs de recurso
 
 >**Observação:** Ao longo do tempo, atualizaremos a lista de alterações compatíveis com versões anteriores. Se você gerar seus próprios proxies de cliente (como clientes WCF), nossa orientação é que os aplicativos cliente devem estar preparados para receber propriedades e tipos derivados definidos anteriormente pelo serviço da API do Microsoft Graph. A API do Microsoft Graph segue a orientação descrita na seção [Controle de Versão de Modelo](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) nas [diretrizes da API do Microsoft REST](https://github.com/microsoft/api-guidelines/).
 

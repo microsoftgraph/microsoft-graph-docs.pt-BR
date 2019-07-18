@@ -4,12 +4,12 @@ description: Um evento em um calendário.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 852384ec4c1dd18216df7f642a7c958c53897280
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.openlocfilehash: 01aac673f5bf9f4a1ecbc4b1fa3b82b9cd001537
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108970"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778464"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -25,9 +25,9 @@ Esse recurso permite:
 
 > **Observação:** existem algumas pequenas diferenças na maneira como você pode interagir com calendários de usuários, calendários de grupos e seus eventos:
 
- - Você pode organizar apenas os calendários de usuários em [calendarGroup](calendargroup.md).
- - O Outlook aceita automaticamente todas as solicitações de reunião em nome de grupos. Você pode [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) solicitações de reuniões apenas para calendários do _usuário_.
-  - O Outlook não oferece suporte a lembretes de eventos do grupo. Você pode [adiar](../api/event-snoozereminder.md) ou [descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) apenas para calendários de _usuário_.
+- Você pode organizar apenas os calendários de usuários em [calendarGroup](calendargroup.md).
+- O Outlook aceita automaticamente todas as solicitações de reunião em nome de grupos. Você pode [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) solicitações de reuniões apenas para calendários do _usuário_.
+- O Outlook não oferece suporte a lembretes de eventos do grupo. Você pode [adiar](../api/event-snoozereminder.md) ou [descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) apenas para calendários de _usuário_.
 
 ## <a name="json-representation"></a>Representação JSON
 

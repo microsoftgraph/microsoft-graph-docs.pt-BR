@@ -4,12 +4,12 @@ description: Os provedores de Segurança do Microsoft Graph podem ser gerenciado
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 83e631a4e276e06ac4f43366d95cde7a2f455777
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 49db00a3a667922d6d7fc50365ea1ad9282c3a8d
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573487"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778275"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>Integração dos alertas da API de Segurança do Microsoft Graph com o IBM QRadar SIEM usando o Azure Monitor
 
@@ -83,14 +83,12 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
     }
     ```
 
-  Substitua os valores no arquivo JSON da seguinte maneira:
+    Substitua os valores no arquivo JSON da seguinte maneira:
 
-  * **SUBSCRIPTION_ID** é a ID de assinatura do Azure que hospeda o grupo de recursos e o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
-  * **RESOURCE_GROUP** é o grupo de recursos que contém o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
-  * **EVENT_HUB_NAMESPACE** é o namespace do Hub de Eventos para o qual você enviará os alertas de segurança da organização.
-  * **"days":** é o número de dias pelos quais você deseja manter as mensagens no Hub de evEntos.
-  
-&nbsp;
+    * **SUBSCRIPTION_ID** é a ID de assinatura do Azure que hospeda o grupo de recursos e o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
+    * **RESOURCE_GROUP** é o grupo de recursos que contém o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
+    * **EVENT_HUB_NAMESPACE** é o namespace do Hub de Eventos para o qual você enviará os alertas de segurança da organização.
+    * **"days":** é o número de dias pelos quais você deseja manter as mensagens no Hub de evEntos.
 
 4. Salve o arquivo como JSON no diretório onde você vai invocar o ARMClient.exe. Por exemplo, chame o arquivo de **AzMonConfig.json.**
 

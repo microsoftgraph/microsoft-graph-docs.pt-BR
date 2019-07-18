@@ -3,12 +3,12 @@ title: Reduzir assinaturas ausentes e notificações de recursos do Outlook (vis
 description: Outlook pode suspender a entrega ou alterar notificações de devido a eventos de segurança como a redefinição de senha do usuário. Eventos com ciclo de vida especial – `subscriptionRemoved` e `missed` -precisam ser tratados para garantir a entrega contínua de notificações.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 1c430743f860536ef20fa2ad9974e580c78a6f0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f273046c084e83375c835349b43caebcefca473
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32683973"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778240"
 ---
 # <a name="reduce-missing-subscriptions-and-notifications-for-outlook-resources-preview"></a>Reduzir assinaturas ausentes e notificações de recursos do Outlook (visualização) 
 
@@ -138,7 +138,7 @@ Alguns aspectos a serem observados neste tipo de notificação:
 ### <a name="actions-to-take"></a>Ações a serem executadas
 
 1. [Aceite](webhooks.md#notifications) o recebimento da notificação respondendo a chamada POSTAGEM com `202 - Accepted`.
-  - Caso você ignore estes, sinais, não faça nada. Caso contrário:
+    - Caso você ignore estes, sinais, não faça nada. Caso contrário:
 2. [Validar](webhooks.md#notifications) a autenticidade da notificação.
 3. Executaremos ressincronização de dados completa para identificar as alterações que não foram entregues como notificações. 
 

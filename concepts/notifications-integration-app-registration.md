@@ -3,12 +3,12 @@ title: Gerenciar registro do aplicativo e permissão de API para notificações 
 description: Para receber notificações enviadas pelo Microsoft Graph, primeiro é necessário registrar seu aplicativo no portal do Microsoft Azure.
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 93ee4d83afac73b7d7ae90abe8e2876ffe688b68
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: dc102f451b3f206bbfefe1d3c38c3995041f04fa
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063244"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778632"
 ---
 # <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>Gerenciar registro do aplicativo e permissão de API para notificações do Microsoft Graph
 
@@ -43,19 +43,19 @@ Para que o aplicativo se identifique e se autentique ao obter tokens de autentic
     
 Adicione as seguintes permissões:
 
-  - User.Read – permite que o aplicativo conecte seu usuário
+- User.Read – permite que o aplicativo conecte seu usuário
 
-  - Device.Read – permite a identificação da lista de dispositivos do usuário
+- Device.Read – permite a identificação da lista de dispositivos do usuário
 
-  - Device.Command – permite a comunicação do dispositivo do usuário
+- Device.Command – permite a comunicação do dispositivo do usuário
 
-  - UserActivity.ReadWrite.CreatedByApp – permite a assinatura do aplicativo para recuperação de notificação
+- UserActivity.ReadWrite.CreatedByApp – permite a assinatura do aplicativo para recuperação de notificação
 
-  - Notifications.ReadWrite.CreatedByApp – permite o acesso e entrega de notificação
+- Notifications.ReadWrite.CreatedByApp – permite o acesso e entrega de notificação
 
-  - wns.connect – permite conectar ao serviço de notificação do Windows
+- wns.connect – permite conectar ao serviço de notificação do Windows
 
-  ![Captura de tela das permissões delegadas para notificações no portal do Azure](images/notifications-api-permissions-list.png)
+![Captura de tela das permissões delegadas para notificações no portal do Azure](images/notifications-api-permissions-list.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 

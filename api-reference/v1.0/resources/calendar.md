@@ -4,12 +4,12 @@ description: Um calendário que é um contêiner para eventos. Pode ser um calen
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1ca76ba581b4db8ab3a42ccc993e545afd9a922c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ab1d80073ea73b2e1b6321628218218f71d6ed24
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569393"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778338"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -17,9 +17,9 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 
 > **Observação:** existem algumas pequenas diferenças na maneira como você pode interagir com calendários de usuários e calendários de grupos:
 
- - Você pode organizar apenas os calendários de usuários em [calendarGroup](calendargroup.md).
- - O Outlook aceita automaticamente todas as solicitações de reunião em nome de grupos. Você pode [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) solicitações de reuniões apenas para calendários do usuário.
-  - O Outlook não oferece suporte a lembretes de eventos do grupo. Você pode [adiar](../api/event-snoozereminder.md) ou [descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) apenas para calendários do usuário.
+- Você pode organizar apenas os calendários de usuários em [calendarGroup](calendargroup.md).
+- O Outlook aceita automaticamente todas as solicitações de reunião em nome de grupos. Você pode [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) solicitações de reuniões apenas para calendários do usuário.
+- O Outlook não oferece suporte a lembretes de eventos do grupo. Você pode [adiar](../api/event-snoozereminder.md) ou [descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) apenas para calendários do usuário.
 
 ## <a name="methods"></a>Métodos
 

@@ -4,12 +4,12 @@ description: Os provedores de Segurança do Microsoft Graph podem ser gerenciado
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 22ed2806bcaea999fe396fb88f4547e6bbf7f116
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 865dde2f2f67f61c82c5172ee0f5df763ba4c024
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621288"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778303"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>Integração dos alertas da API de Segurança do Microsoft Graph com o SIEM usando o Azure Monitor
 
@@ -66,10 +66,7 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
 
 3. Prepare um arquivo JSON de solicitação de configuração de diagnóstico como este:
 
-<!-- {
-  "blockType": "ignored"
-} -->
-
+    <!-- { "blockType": "ignored" } -->
     ``` json
     {
       "location": "",
@@ -90,13 +87,13 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
     }
     ```
 
-Substitua os valores no arquivo JSON da seguinte maneira:
+    Substitua os valores no arquivo JSON da seguinte maneira:
 
-  * **SUBSCRIPTION_ID** é a ID de assinatura do Azure que hospeda o grupo de recursos e o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
-  * **RESOURCE_GROUP** é o grupo de recursos que contém o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
-  * **EVENT_HUB_NAMESPACE** é o namespace do Hub de Eventos para o qual você enviará os alertas de segurança da organização.
-  * **"days":** é o número de dias pelos quais você deseja manter as mensagens no Hub de evEntos.
-  
+    * **SUBSCRIPTION_ID** é a ID de assinatura do Azure que hospeda o grupo de recursos e o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
+    * **RESOURCE_GROUP** é o grupo de recursos que contém o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
+    * **EVENT_HUB_NAMESPACE** é o namespace do Hub de Eventos para o qual você enviará os alertas de segurança da organização.
+    * **"days":** é o número de dias pelos quais você deseja manter as mensagens no Hub de evEntos.
+
 
 4. Salve o arquivo como JSON no diretório onde você vai invocar o ARMClient.exe. Por exemplo, chame o arquivo de **AzMonConfig.json.**
 

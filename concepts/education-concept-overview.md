@@ -4,12 +4,12 @@ description: A API educacional do Microsoft Graph aprimora os recursos do Office
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: 79212e9f196f3eb20468d34c34dc9d4588718615
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: c1a93242071f8ad1aa208ca3361f16d08c13d682
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620147"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778751"
 ---
 # <a name="education-api-overview"></a>Visão geral da API de educação
 
@@ -71,16 +71,16 @@ Está procurando a referência de API para esse serviço?
 ## <a name="next-steps"></a>Próximas etapas
 
 - Para começar a usar as APIs educacionais, consulte:
-    - [Usar as APIs de lista de participantes](/graph/api/resources/education-overview?view=graph-rest-1.0)
-    - [Usar as APIs de tarefa](/graph/api/resources/educationassignment?view=graph-rest-beta)
-    - [Usar as APIs de gerenciamento de SDS](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
+  - [Usar as APIs de lista de participantes](/graph/api/resources/education-overview?view=graph-rest-1.0)
+  - [Usar as APIs de tarefa](/graph/api/resources/educationassignment?view=graph-rest-beta)
+  - [Usar as APIs de gerenciamento de SDS](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
 - Experimente as APIs de educação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Explore os seguintes exemplos relacionados ao setor educacional:
-    - [Exemplo de SSO e lista de participantes em .NET](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-    - [Exemplo de nó angular para SSO e Lista de participantes](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-    - [Exemplo de SSO e Lista de participantes em Python](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-    - [Exemplo de PHP para Lista de Participantes & de SSO](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
-    - [Exemplo de APIs de gerenciamento de perfil](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
+  - [Exemplo de SSO e lista de participantes em .NET](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
+  - [Exemplo de nó angular para SSO e Lista de participantes](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
+  - [Exemplo de SSO e Lista de participantes em Python](https://github.com/OfficeDev/O365-EDU-Python-Samples)
+  - [Exemplo de PHP para Lista de Participantes & de SSO](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
+  - [Exemplo de APIs de gerenciamento de perfil](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 
 

@@ -2,12 +2,12 @@
 title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 localization_priority: Priority
-ms.openlocfilehash: 4d0f0a382b7a61fe636ae5fb0fc791ed1f63327d
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 50b5149708a342b08e953790aa1b40c9335c418c
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657606"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778678"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
@@ -40,14 +40,14 @@ Aplique as seguintes práticas recomendadas de consentimento e autorização ao 
 <!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
 - **Esteja atento ao configurar seu aplicativo**. Isso afetará diretamente as experiências do usuário final e do administrador, além da adoção e segurança do aplicativo. Por exemplo:
 
-    - A declaração de privacidade, os termos de uso, o nome, o logotipo e o domínio do seu aplicativo serão exibidos com consentimento e outras experiências. Portanto, verifique se foram configurados com cuidado para que sejam compreendidos pelos usuários finais.
-    - Leve em consideração quem consentirá com seu aplicativo, seja o usuário final ou administrador, e configure seu aplicativo para [solicitar permissões de forma adequada](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes).
-    - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+  - A declaração de privacidade, os termos de uso, o nome, o logotipo e o domínio do seu aplicativo serão exibidos com consentimento e outras experiências. Portanto, verifique se foram configurados com cuidado para que sejam compreendidos pelos usuários finais.
+  - Leve em consideração quem consentirá com seu aplicativo, seja o usuário final ou administrador, e configure seu aplicativo para [solicitar permissões de forma adequada](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes).
+  - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
 
 - **Considere usar aplicativos multilocatários**. Tenha em mente que os clientes podem ter vários controles de aplicativo e consentimentos em diferentes estados. Por exemplo:
 
-    - os administradores de locatários podem desabilitar a capacidade dos usuários finais permitirem os aplicativos. Nesse caso, um administrador precisaria consentir em nome de seus usuários.
-    - Os administradores de locatários podem definir políticas de autorização personalizadas, como impedir que os usuários leiam perfis de outros usuários ou limitar a criação de grupos de autoatendimento a um conjunto limitado de usuários. Nesse caso, seu aplicativo deve esperar que a resposta de erro 403 seja tratada ao atuar em nome de um usuário.
+  - os administradores de locatários podem desabilitar a capacidade dos usuários finais permitirem os aplicativos. Nesse caso, um administrador precisaria consentir em nome de seus usuários.
+  - Os administradores de locatários podem definir políticas de autorização personalizadas, como impedir que os usuários leiam perfis de outros usuários ou limitar a criação de grupos de autoatendimento a um conjunto limitado de usuários. Nesse caso, seu aplicativo deve esperar que a resposta de erro 403 seja tratada ao atuar em nome de um usuário.
 
 ## <a name="handle-responses-effectively"></a>Controlar as respostas com eficiência
 
