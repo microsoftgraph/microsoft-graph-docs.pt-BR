@@ -4,12 +4,12 @@ description: 'Recupere a lista de mensagens (sem as respostas) em um canal de eq
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: be255279415c8c973666b328c9edf922607a8d7b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 741c5f31e0b867a5fe6624cb81ea790e61c1fedb
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438458"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778394"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 
@@ -27,7 +27,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)|Group.Read.All,Group.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| Sem suporte. |
+|Aplicativo| Group.Read.All,Group.ReadWrite.All|
+
+> [!NOTE]
+> É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

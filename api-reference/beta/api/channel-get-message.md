@@ -4,12 +4,12 @@ description: Recupere uma única mensagem (sem suas respostas) no canal de uma e
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea69a9926a07c0f9fcd05a70bdf409fd9bd4d922
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 884da7f1f27c20c3012c8f8a1d38681d472a8337
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438507"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778401"
 ---
 # <a name="get-channel-message"></a>Obter mensagens do canal
 
@@ -25,6 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)|Group.Read.All, Group.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo| Group.Read.All, Group.ReadWrite.All |
+
+> [!NOTE]
+> É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
