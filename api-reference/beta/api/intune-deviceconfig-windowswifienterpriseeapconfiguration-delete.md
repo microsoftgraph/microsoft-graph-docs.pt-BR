@@ -4,12 +4,12 @@ description: Exclui windowsWifiEnterpriseEAPConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d50a746f9acf2f16b0f407571c615c032348bd92
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4bca4ec05407e87fcbc0c3cee869d266d1e3ef76
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917201"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961158"
 ---
 # <a name="delete-windowswifienterpriseeapconfiguration"></a>Excluir windowsWifiEnterpriseEAPConfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

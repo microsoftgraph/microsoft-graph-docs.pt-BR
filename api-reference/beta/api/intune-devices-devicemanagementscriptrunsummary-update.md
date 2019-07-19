@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceManagementScriptRunSumm
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 495b9b9085b23f40261b40805c510ae78fbf00eb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58963f558c56b4c26cffb329052d97ce942df999
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909789"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958834"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Atualizar deviceManagementScriptRunSummary
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo.|
+|id|String|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro.|
 |successUserCount|Int32|Contagem de usuários com sucesso.|
@@ -95,6 +95,7 @@ Content-Length: 228
   "errorUserCount": 14
 }
 ```
+
 
 
 

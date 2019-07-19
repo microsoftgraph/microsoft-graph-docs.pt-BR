@@ -4,12 +4,12 @@ description: O status da ação executada com um token do Apple Volume Purchase 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0faeee14db33366f8d48645e7419a97e6909398c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 43becee571f14eb172a124470750ceae1529c2c7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940103"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958603"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>tipo de recurso vppTokenActionResult
 
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

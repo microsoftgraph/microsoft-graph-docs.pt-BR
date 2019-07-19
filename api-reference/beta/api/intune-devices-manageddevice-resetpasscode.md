@@ -4,12 +4,12 @@ description: Redefinir senha
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e32f195f443ba4d9bd2c889f8264473c4d51bf3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1eda8a5a3174d4970a8df997678bbd81532f7a4a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909621"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958337"
 ---
 # <a name="resetpasscode-action"></a>Ação resetPasscode
 
@@ -65,6 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

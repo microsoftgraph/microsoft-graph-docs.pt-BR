@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto mobileAppInstallSummary.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cff057bdb80e57fa2bdfcf4b9c008dacd0a58b42
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 91bbad1fc56069ec6fa66752efea4d2c0bcab90e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935069"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973723"
 ---
 # <a name="update-mobileappinstallsummary"></a>Atualizar mobileAppInstallSummary
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |installedDeviceCount|Int32|Número de dispositivos que instalaram com êxito este aplicativo.|
 |failedDeviceCount|Int32|Número de dispositivos que falharam ao instalar este aplicativo.|
 |notApplicableDeviceCount|Int32|Número de dispositivos que não se aplicam a este aplicativo.|
@@ -113,6 +113,7 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
+
 
 
 

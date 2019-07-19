@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto Navegaçãoadvancedt
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6bd4e4059dca65e00fc34fa765d45b208bae3c01
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 834ade4a9f4a97d7905b2f05362302b6b6bd848f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933337"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971693"
 ---
 # <a name="get-advancedthreatprotectiononboardingstatesummary"></a>Obter Navegaçãoadvancedthreatprotectiononboardingstatesummary
 
@@ -82,6 +82,7 @@ Content-Length: 419
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Regras de Uso da Rede permitem que empresas especifiquem como aplic
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7d11b8a7591d2fce03b3f8a023e9ef90fab4f1b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2dc693eb993e6740098ab90dcae53214d8af4d0c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946921"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995690"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Tipo de recurso iosNetworkUsageRule
 
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "cellularDataBlocked": true
 }
 ```
+
 
 
 

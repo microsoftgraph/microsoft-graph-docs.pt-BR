@@ -4,12 +4,12 @@ description: A classe base de usuário usada para identificar as informações d
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f5427581e2fcefb8b7d876d0810d178d3b054d8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7d2b8ae31099d670b52eaea7f701988351d56354
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943764"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957623"
 ---
 # <a name="windowskioskuser-resource-type"></a>tipo de recurso windowsKioskUser
 
@@ -38,6 +38,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.windowsKioskUser"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos securityBaselineTempla
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6276cfe94eac8db637ce50738dc27e667f1106f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4b50fba507a4966a67a8be4938b5647fce2deef9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33911683"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959415"
 ---
 # <a name="list-securitybaselinetemplates"></a>Listar securityBaselineTemplates
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 342
+Content-Length: 452
 
 {
   "value": [
@@ -74,11 +74,14 @@ Content-Length: 342
       "description": "Description value",
       "versionInfo": "Version Info value",
       "isDeprecated": true,
-      "intentCount": 11
+      "intentCount": 11,
+      "templateType": "specializedDevices",
+      "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
     }
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui remoteActionAudit.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b98760b0c42d6518d459e013233d43ee7d020cb2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 639e394f474c92fd758cdab9b7ec0ccdce17e1e9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909439"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958155"
 ---
 # <a name="delete-remoteactionaudit"></a>Excluir remoteActionAudit
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto groupPolicyDefinitionValue.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 411e707f9ae7f949f01c605b72210ecef79dbc26
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 679352fc7a3b3267f79983feab40b5b1983d33cc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905074"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958785"
 ---
 # <a name="update-grouppolicydefinitionvalue"></a>Atualizar groupPolicyDefinitionValue
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
 |enabled|Boolean|Habilita ou desabilita a definição de política de grupo associada.|
 |ConfigurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Especifica como o valor deve ser configurado. Isso pode ser uma política ou uma preferência. Os valores possíveis são: `policy` e `preference`.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 
@@ -94,6 +94,7 @@ Content-Length: 298
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

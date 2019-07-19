@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceManagementSettingDefini
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95e2052a56fcae6cd3ff48dba96512d0658f88b4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bccf0e045881c90a76539e0b40b3dbb0c8d77ea8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917082"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959905"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>Atualizar deviceManagementSettingDefinition
 
@@ -57,8 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os possíveis valores são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
 |displayName|String|O nome de exibição da configuração|
 |isTopLevel|Booliano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
-|description|String|A descrição da configuração|
-|documentationUrl|Cadeia de caracteres|URL para configurar a documentação|
+|descrição|String|A descrição da configuração|
+|documentationUrl|String|URL para configurar a documentação|
 |palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
@@ -142,6 +142,7 @@ Content-Length: 777
   ]
 }
 ```
+
 
 
 

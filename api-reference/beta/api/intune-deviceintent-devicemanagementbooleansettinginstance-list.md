@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos deviceManagementBoolea
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d6bb62240729b61b84e886ec020779865c4f372
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 099027f076b54ac1665e4b2e03813a16422300e0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916689"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960934"
 ---
 # <a name="list-devicemanagementbooleansettinginstances"></a>Listar deviceManagementBooleanSettingInstances
 
@@ -79,6 +79,7 @@ Content-Length: 278
   ]
 }
 ```
+
 
 
 

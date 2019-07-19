@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceManagementTemplate.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c8c2ad9d9c0020157068c4e9b78bd13369365f9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 570e8d97b66db1cd34b3c7ffc84d90da943bf6e6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915864"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959730"
 ---
 # <a name="update-devicemanagementtemplate"></a>Atualizar deviceManagementTemplate
 
@@ -53,10 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID do modelo|
 |displayName|String|O nome de exibição do modelo|
-|description|String|A descrição do modelo|
-|versionInfo|Cadeia de caracteres|As informações de versão do modelo|
+|descrição|String|A descrição do modelo|
+|versionInfo|String|As informações de versão do modelo|
 |preterido|Booliano|O modelo é preterido ou não. Os propósitos não podem ser criados a partir de um modelo preterido.|
 |intentCount|Int32|Número de tentativas criadas a partir deste modelo.|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os valores possíveis são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
+|publishedDateTime|DateTimeOffset|Quando o modelo foi publicado|
 
 
 
@@ -70,7 +72,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
 Content-type: application/json
-Content-length: 232
+Content-length: 334
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -78,7 +80,9 @@ Content-length: 232
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
 
@@ -87,7 +91,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 383
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -96,9 +100,12 @@ Content-Length: 281
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 
