@@ -4,12 +4,12 @@ description: Obtenha dados sobre as atividades dos Grupos do Office 365 por grup
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: b7725ca7f56db7873d49729518a37dd3934ed3d0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b0435fd85e813942fd5e4a8b087e5a220a934fdd
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446882"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805071"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
@@ -84,6 +84,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Armazenamento utilizado da caixa de correio do Exchange (bytes)
 - Contagem total de arquivos do SharePoint
 - Armazenamento utilizado do site do SharePoint (bytes)
+- ID de grupo
 - Período de Relatório
 
 Não há suporte para as seguintes colunas no Microsoft Graph da China operado pela 21Vianet:
@@ -163,7 +164,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Group Id,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -220,6 +221,7 @@ Content-Length: 674
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsActivityDetail)", 
   "value": [
     {
+      "groupId": "0003cf63-7ff3-4471-b24b-50ffbfb8b5d2",
       "reportRefreshDate": "2017-09-01", 
       "groupDisplayName": "groupDisplayName-value", 
       "isDeleted": false, 

@@ -4,18 +4,21 @@ description: Atualizar as propriedades do objeto evento.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 911f15257ce10e628cb63db2ca4ee9517b5cbe81
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 36f7c643bd843f20488304dbc365455c01877354
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440936"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805064"
 ---
 # <a name="update-event"></a>Atualizar evento
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualizar as propriedades do objeto [evento](../resources/event.md).
+
+Ao atualizar o fuso horário da hora de início ou de término de um evento, primeiro [encontre os fusos horários com suporte](outlookuser-supportedtimezones.md) para certificar-se de que você definiu somente os fusos horários que foram configurados para o servidor de caixa de correio do usuário. 
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -58,19 +61,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | attendees|Attendee|A coleção de participantes do evento.|
 | corpo|ItemBody|O corpo da mensagem associada ao evento.|
 | categories|String|As categorias associadas ao evento.|
-| end|DateTimeTimeZone|A data e a hora em que o evento termina.<br/><br/>Por padrão, a hora de término é em UTC. Você pode especificar um fuso horário opcional em EndTimeZone, expressar a hora de término nesse fuso horário e incluir uma diferença de tempo em relação a UTC. Se usar EndTimeZone, você deverá especificar um valor para StartTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 21: 34 na Hora Padrão do Pacífico: "2015-02-25T21:34:00-08:00". |
+| end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina. |
 | importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 | isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
-| isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
+| isReminderOn|Boolean|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 | location|Locais|O local do evento.|
 |locations|[location](../resources/location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
 | recurrence|PatternedRecurrence|O padrão de recorrência do evento.|
 | reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
 | responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
-| sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
+| sensitivity|Cadeia de caracteres| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|O status a ser exibido. Os valores possíveis são `free` : `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`,.|
-| iniciar|DateTimeTimeZone|A hora de início do evento. <br/><br/>Por padrão, a hora de início é em UTC. Você pode especificar um fuso horário opcional em StartTimeZone, expressar a hora de início no fuso horário correspondente e incluir uma diferença de tempo em relação a UTC. Se usar StartTimeZone, você deverá especificar um valor para EndTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 19:34 na Hora Padrão do Pacífico: "2015-02-25T19:34:00-08:00".  |
-| subject|String|O texto da linha de assunto do evento.|
+| iniciar|DateTimeTimeZone|A data de início, a hora e o fuso horário do evento. |
+| subject|Cadeia de caracteres|O texto da linha de assunto do evento.|
 
 Como o recurso **evento** dá suporte as [extensões](/graph/extensibility-overview), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância do **evento** existente.
 

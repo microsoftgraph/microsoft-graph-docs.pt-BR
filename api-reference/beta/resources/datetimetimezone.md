@@ -2,12 +2,14 @@
 title: tipo de recurso dateTimeTimeZone
 description: Descreve a data, a hora e o fuso horário de um ponto no tempo.
 localization_priority: Normal
-ms.openlocfilehash: 4bf62081d190e3af031d305c7db7f64d606926b6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: e3554386c599b4d36f4041f6e42dc091f9763817
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340955"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805253"
 ---
 # <a name="datetimetimezone-resource-type"></a>tipo de recurso dateTimeTimeZone
 
@@ -19,9 +21,13 @@ Descreve a data, a hora e o fuso horário de um ponto no tempo.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |dateTime|Cadeia de caracteres|Um único ponto de tempo em uma representação combinada de data e hora (`{date}T{time}`). Por exemplo, "2019-04-16T09:00:00".|
-|timeZone|Cadeia de caracteres|Um nome de fuso horário, conforme descrito abaixo.|
+|timeZone|Cadeia de caracteres|Representa um fuso horário, por exemplo, "hora padrão do Pacífico". Confira abaixo os valores possíveis.|
 
-A propriedade **timeZone** pode ser definida para qualquer um dos fusos horários com suporte no Windows, bem como os nomes de fusos horários a seguir.
+Em geral, a **** Propriedade timeZone _pode_ ser definida para qualquer um dos [fusos horários atualmente com suporte no Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones), bem como os [fusos horários adicionais suportados pela API de calendário](#additional-time-zones). 
+
+Ao usar o **dateTimeTimeZone** em conjunto com um método (como [criar](../api/user-post-events.md) ou [Atualizar](../api/event-update.md) um evento), anote os fusos horários reais compatíveis, que podem ser um subconjunto menor.
+
+### <a name="additional-time-zones"></a>Fusos horários adicionais
 
 Etc/GMT+12
 
