@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5d294584e402875980cee1fd0ca2666c68256681
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 7f88a9370b59e13c571c10863b3c07eee9a6e480
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778744"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805232"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -45,12 +45,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionada a propriedade **androidDeviceAdministratorEnrollmentEnabled**ao tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta) |
 |Adição|beta|Adicionada a propriedade **edgeTraversal** ao tipo complexo [windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta) |
 |Adição|beta|Adicionado o membro **localGuestAccount** ao tipo enumerado [secureAssessmentAccountType](/graph/api/resources/intune-deviceconfig-secureassessmentaccounttype?view=graph-rest-beta) |
-|Adição|beta|Adicionados os membros **vazio** e **clientCertificateSubjectName** ao tipo enumerado [vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta) |
-
-### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
-
-|Tipo de alteração|Versão|Descrição|
-|:---|:---|:---|
+|Adição|beta|Adicionados os membros **vazio** e **clientCertificateSubjectName** ao tipo enum [vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta) |
 |Adição|beta|Propriedade **revision** adicionada à entidade [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) |
 |Adição|beta|Adicionada a propriedade **valuePrefix** à entidade [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) |
 
@@ -64,7 +59,16 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição | v1.0 | Adicionadas as [novas permissões delegadas e de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-1.0) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0). |
-| Adição | beta | Adicionadas as [novas permissões delegadas e de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-beta) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
+| Adição | beta | Adicionadas as [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-beta) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
+| Adição | v1.0 | Adicionadas a [ função ValidateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) e a[função directoryobject: ValidateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) em [grupos](/graph/api/group-delta?view=graph-rest-1.0), o qual validam que o nome de exibição de um grupo do Office 365 ou seu apelido de email está em conformidade com as políticas de nomenclatura. |
+
+### <a name="reports"></a>Relatórios
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta  | Adicionada a propriedade **deletedItemCount** à entidade [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta).|
+| Adição        | Beta  | Propriedade **deletedItemSizeInBytes** adicionada à entidade [ mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta).|
+| Adição        | Beta  | Propriedade **groupId**adicionada à entidade [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta).|
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
@@ -594,7 +598,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionar a nova propriedade `expirationDateTime` para [grupos](https://docs.microsoft.com/pt-BR/graph/api/group-list-transitivemembers?view=graph-rest-beta) para [grupo vencimento](https://docs.microsoft.com/pt-BR/azure/active-directory/users-groups-roles/groups-lifecycle).|
+| Adição | beta | Adicionar a nova propriedade `expirationDateTime` para [grupos](https://docs.microsoft.com/pt-BR/graph/api/resources/group?view=graph-rest-beta) para [grupo vencimento](https://docs.microsoft.com/pt-BR/azure/active-directory/users-groups-roles/groups-lifecycle).|
 | Adição | beta | Adicionado novo tipo de recurso [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
 | Adição | beta | Adicionada a propriedade `createdDateTime` para o recurso [organization](/graph/api/resources/organization?view=graph-rest-beta).|
 | Adição | v1.0 | Adicionado método `memberOf` para obter uma direta [associação](/graph/api/resources/device?view=graph-rest-1.0) de [dispositivos](/graph/api/device-list-memberOf?view=graph-rest-1.0). Esse método foi adicionado para obter a lista de associações, incluindo associações aninhadas.|
