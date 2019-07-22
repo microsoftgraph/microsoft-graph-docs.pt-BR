@@ -4,12 +4,12 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 551ee0939d4a8ba10ea54d61b068078e21e5003a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 9fd24cb22b027990c9673017a645c937ee3e1384
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621134"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805256"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -71,6 +71,7 @@ Esse recurso permite:
 |[Obter conversa](../api/group-get-conversation.md) |[conversation](conversation.md)| Ler as propriedades de um objeto conversation.|
 |[Listar conversas](../api/group-list-conversations.md) |Coleção [conversation](conversation.md)| Obter uma coleção de objetos Conversation.|
 |[Excluir conversa](../api/group-delete-conversation.md) |Nenhum|Excluir objeto conversation.|
+|[Criar thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Criar um novo thread de conversa.|
 |[Acessar thread](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Ler as propriedades de um objeto thread.|
 |[Listar threads](../api/group-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obter todos os threads de um grupo.|
 |[Atualizar thread](../api/group-update-thread.md) |Nenhum| Atualizar as propriedades de um objeto thread.|
