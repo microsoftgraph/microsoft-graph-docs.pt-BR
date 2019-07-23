@@ -2,20 +2,20 @@
 title: Criar evento
 description: Crie um evento no calendário especificado ou no calendário padrão do usuário.
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1c79fad8e5ec6265d98acf3d16f99d869eaa6db8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: fe9864474a83a827430b539d80127441b548ecb1
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460123"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805092"
 ---
 # <a name="create-event"></a>Criar evento
 
 Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.
 
-É possível especificar o fuso horário para cada hora de início e fim do evento como parte desses valores, já que as propriedades **start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md). 
+Você pode especificar o fuso horário de cada um dos horários de início e de término do evento como parte de seus valores, porque as propriedades**inicial** e **final** são do tipo [ dateTimeTimeZone](../resources/datetimetimezone.md). Primeiro [localize os fusos horários com suporte](outlookuser-supportedtimezones.md) para garantir que você tenha definido somente fusos horários que tenham sido configurados para o servidor de caixas de correio do usuário. 
 
 Quando um evento é enviado, o servidor envia convites para os participantes.
 

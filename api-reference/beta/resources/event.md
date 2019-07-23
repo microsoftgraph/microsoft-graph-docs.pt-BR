@@ -4,12 +4,12 @@ description: Um evento em um calendário.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 01aac673f5bf9f4a1ecbc4b1fa3b82b9cd001537
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 0d8e25276613461098f2194daa60bf260cc7887b
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778464"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805267"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -102,7 +102,7 @@ Veja a seguir uma representação JSON do recurso
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao evento. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](outlookcategory.md) definida para o usuário.|
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|end|[DateTimeTimeZone](datetimetimezone.md)|A data e a hora em que o evento termina.|
+|end|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina. Por padrão, a hora de término é em UTC.|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |id|Cadeia de caracteres| Identificador exclusivo do evento. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
 |importância|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
@@ -125,8 +125,8 @@ Veja a seguir uma representação JSON do recurso
 |sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
 |showAs|String|O status a ser exibido. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|iniciar|[DateTimeTimeZone](datetimetimezone.md)|A hora de início do evento.|
-|subject|String|O texto da linha de assunto do evento.|
+|iniciar|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário do evento. Por padrão, a hora de início é em UTC.|
+|assunto|String|O texto da linha de assunto do evento.|
 |type|String|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura|
 |uid|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes. **Observação:** essa propriedade exibe o mesmo objetivo da propriedade `iCalUid` no [recurso event](/graph/api/resources/event?view=graph-rest-1.0) no ponto de extremidade v1.0, mas não é garantido que tenha o mesmo valor.|
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
