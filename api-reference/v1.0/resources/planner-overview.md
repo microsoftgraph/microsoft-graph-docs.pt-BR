@@ -4,12 +4,12 @@ description: É possível usar a API do Planner no Microsoft Graph para criar e 
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 86d5c950b2e281a0af254d48a7d133d7e352341f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d14ec6e535dc8f4ca690f50cdf7712eafcf5d2bb
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462393"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820770"
 ---
 # <a name="use-the-planner-rest-api"></a>Usar a API REST do Planner
 
@@ -23,7 +23,7 @@ Os grupos do Office 365 são os proprietários dos planos da API do Planner.
 Para [obter os planos pertencentes a um grupo](../api/plannergroup-list-plans.md), faça a solicitação HTTP a seguir.
 
 ``` http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
 Ao [criar um novo plano](../api/planner-post-plans.md), torne o grupo o proprietário do plano definindo a propriedade `owner` em um objeto de plano. Os planos devem pertencer a grupos.
@@ -37,7 +37,7 @@ No momento, as tarefas não podem ser criadas sem planos.
 Para [recuperar as tarefas em um plano de](../api/plannerplan-list-tasks.md), faça a solicitação HTTP a seguir.
 
 ``` http
-GET /planner/plans/{id}/tasks
+GET /planner/plans/{plan-id}/tasks
 ```
 
 ## <a name="tasks"></a>Tarefas
