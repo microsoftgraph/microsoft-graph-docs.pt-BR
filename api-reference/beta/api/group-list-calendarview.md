@@ -4,12 +4,12 @@ description: Obtenha as ocorrências, exceções e instâncias individuais de ev
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a3a1352ada3adac6ae87f1c98b5fbdb546298b9e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 860a7e398727cad1d3158645990237c4786cc3be
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440502"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820700"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -40,7 +40,10 @@ Forneça os seguintes parâmetros de consulta necessários com valores na URL so
 |startDateTime|String|A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T20:00:00.0000000".|
 
-Este método também dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método também dá suporte a alguns dos [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+
+> [!NOTE] 
+> As propriedades **createdDateTime** e **lastModifiedDateTime** do [evento](../resources/event.md) não oferecem suporte `$select`. Para obter seus valores, basta consultar no **calendarView** sem aplicar `$select`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |

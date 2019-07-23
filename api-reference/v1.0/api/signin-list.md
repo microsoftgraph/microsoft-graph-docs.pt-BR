@@ -4,12 +4,12 @@ description: Descreve o método list do recurso de entrada (entidade) da API do 
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 44df448a514e173d4e22d615a27afdd07843593f
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 7e8499538ba5a5fa61159f4c1a5db68454dbf0d7
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778471"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820812"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -63,8 +63,8 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetails/navegador| eq, startswith|
-|deviceDetails/operatingSystem| eq, startswith|
+|deviceDetail/browser| eq, startswith|
+|deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
 |isrisky| eq|
 

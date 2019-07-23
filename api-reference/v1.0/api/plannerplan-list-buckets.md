@@ -4,16 +4,16 @@ description: Recupere uma lista de objetos **plannerbucket** contidos em um obje
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2b4fd35cc8d64c5d985ab739ed2e79592739b096
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8372c9cfda40a7b2364db9780a0a060399ca3fe8
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459570"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820777"
 ---
 # <a name="list-buckets"></a>Listar buckets
 
-Recupere uma lista de objetos **plannerbucket** contidos em um objeto [plannerPlan](../resources/plannerplan.md) .
+Recupere uma lista de objetos [plannerBucket](../resources/plannerbucket.md) contidos em um objeto [plannerPlan](../resources/plannerplan.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/{id}/buckets
+GET /planner/plans/{plan-id}/buckets
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -69,7 +69,9 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/buckets
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
