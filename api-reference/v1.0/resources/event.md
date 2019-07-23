@@ -4,12 +4,12 @@ description: Um evento em um calendário.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 0be46df98faf4540e221a140daf0ec22355fc24a
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 887674cb70f5c3247d4a617f6ab6f591340bd0c4
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778723"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805274"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -64,7 +64,7 @@ Esse recurso permite:
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao evento.|
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|end|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina.|
+|end|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina. Por padrão, a hora de término é em UTC.|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |iCalUId|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes. Somente leitura.|
 |id|String| Somente leitura.|
@@ -88,8 +88,8 @@ Esse recurso permite:
 |sensitivity|sensibilidade| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
 |showAs|freeBusyStatus|O status a ser exibido. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
-|subject|String|O texto da linha de assunto do evento.|
+|iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa. Por padrão, a hora de início é em UTC.|
+|assunto|String|O texto da linha de assunto do evento.|
 |type|eventType|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura.|
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 

@@ -4,12 +4,12 @@ description: 'Representa um grupo do Azure Active Directory (Azure AD), que pode
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 57587b183ccc15c4ebc46784161724d9cc7af773
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 170f89c0e7c4e701e8b98a5aac8c02404b174b4e
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620777"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805239"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -55,7 +55,8 @@ Esse recurso permite:
 |[Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 |[Atualizar configuração](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Atualizar um objeto de configuração. |
 |[Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
-|**Calendário**| | |
+|[validateProperties](../api/group-validateproperties.md)|JSON| Valide se o nome de exibição do grupo do Office 365 ou apelido de email está em conformidade com as políticas de nomenclatura. |
+|**Calendar**| | |
 |[Criar evento](../api/group-post-events.md) |[event](event.md)| Criar um novo Event postando na coleção de eventos.|
 |[Obter evento](../api/group-get-event.md) |[event](event.md)|Ler as propriedades de um objeto event.|
 |[Listar eventos](../api/group-list-events.md) |Coleção de [eventos](event.md)| Obter uma coleção de objetos de evento.|
@@ -67,6 +68,7 @@ Esse recurso permite:
 |[Obter conversa](../api/group-get-conversation.md) |[conversation](conversation.md)| Ler as propriedades de um objeto conversation.|
 |[Listar conversas](../api/group-list-conversations.md) |Coleção [conversation](conversation.md)| Obter uma coleção de objetos Conversation.|
 |[Excluir conversa](../api/group-delete-conversation.md) |Nenhum|Excluir objeto conversation.|
+|[Criar thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Criar um novo thread de conversa.|
 |[Acessar thread](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Ler as propriedades de um objeto thread.|
 |[Listar threads](../api/group-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obter todos os threads de um grupo.|
 |[Atualizar thread](../api/group-update-thread.md) |Nenhum| Atualizar as propriedades de um objeto thread.|
@@ -82,6 +84,8 @@ Esse recurso permite:
 |[Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 |[Atualizar configuração](../api/groupsetting-update.md) | Nenhum | Atualizar um objeto setting. |
 |[Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
+|[Obter modelo de configuração](../api/groupsettingtemplate-get.md) | Nenhum | Ler as propriedades de um modelo de configuração. |
+|[Listar modelo de configuração](../api/groupsettingtemplate-list.md) | Nenhum | Listar propriedades de todos os modelos de configuração. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
