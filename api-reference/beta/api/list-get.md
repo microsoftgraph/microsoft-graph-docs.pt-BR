@@ -1,22 +1,21 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: Obter uma lista do SharePoint
+title: Obter metadados de uma lista
+description: Retornar os metadados de um [list] [].
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bb5b99b273a60ccd68622e4d4625c7afd21037be
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 60764674ab8aeca106434c4c4400b339a7296152
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449250"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840772"
 ---
 # <a name="get-metadata-for-a-list"></a>Obter metadados de uma lista
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retorna os metadados de uma [list][].
+Retornar os metadados de uma [lista][].
 
 [list]: ../resources/list.md
 
@@ -161,6 +160,67 @@ Content-type: application/json
         "Name": "Gizmo",
         "Color": "Green",
         "Quantity": 92
+       }
+    }
+  ]
+}
+```
+#### <a name="request"></a>Solicitação
+
+<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
+
+O exemplo a seguir mostra como obter metadados para uma lista que contém três colunas: Name, Quantity e Category.
+Colunas de [metadados gerenciados](https://docs.microsoft.com/en-us/sharepoint/managed-metadata) como ```Category``` valores de retorno como um par de ID de termo e nome de termo.
+```http
+GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "name": "Inventory",
+  "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+  "columns": [
+    {
+      "name": "Name",
+      "description": "Customer-facing name of the SKU"
+    },
+    {
+      "name": "Quantity",
+      "description": "Number of items in stock"
+    },
+    {
+      "name": "Category",
+      "description": "Category of the item"
+    }
+  ],
+  "items": [
+    {
+      "id": "2",
+      "fields": {
+        "Name": "Gadget",
+        "Quantity": 503,
+        "Category": {
+          "termId": "791d537a-9c1c-3b05-97b0-1ce7ece7e1a4",
+          "name": "Tool"
+         }
+       }
+    },
+    {
+      "id": "4",
+      "fields": {
+        "Name": "Widget",
+        "Quantity": 2357,
+        "Category": {
+          "termId": "902e568b-9b2d-4d06-87c2-2cf8ecf9f2b5" ,
+          "name": "Mechanical Device"
+         }
        }
     }
   ]

@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Office 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 97a9acb8244446191b09d99753e30d94c47c4f1e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 939875ce060abeb4a76d33bea68b3e3bbb49a203
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555245"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840758"
 ---
 # <a name="update-onenote-page-content"></a>Atualizar o conteúdo da página do OneNote
 
@@ -58,13 +58,16 @@ Suas alterações serão enviadas no corpo da mensagem como uma matriz de objeto
 
 A matriz a seguir define duas alterações. A primeira insere uma imagem acima de um parágrafo como um irmão, e a segunda acrescenta um item em uma lista como um último filho.
 
+> [!NOTE]
+> Ao atualizar uma imagem em uma página do OneNote, você não pode usar links da www. O serviço não tentará baixar recursos aleatórios. Em vez disso, a imagem deve fazer parte da solicitação, seja por uma URL de dados de imagem ou um nome de parte de uma solicitação com diversas partes.
+
 ```json
 [
    {
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url-or-part-name" alt="Image above the target paragraph" />'
+    'content':'<img src="image-data-url-or-part-name" alt="Image above the target paragraph" />'
   }, 
   {
     'target':'#list-id',
@@ -89,7 +92,7 @@ O elemento a ser atualizado. O valor deve ser uma dos seguintes identificadores:
 |------|------|  
 | #{data-id} | <p>Essa ID é opcionalmente definida em elementos na HTML de entrada ao [criar uma página](onenote-create-page.md) ou [atualizar uma página](onenote-update-page.md). Coloque um # como prefixo do valor.</p><p> Exemplo:<br/>`'target':'#intro'` tem como destino o elemento `<div data-id="intro" ...>`</p> |  
 | id | <p>É a [ID gerada](#generated-ids) do Microsoft Graph e é necessário para a maioria das operações de substituição. Não use # como prefixo.</p><p> Exemplo:<br/>`'target':'div:{33f8a2...}{37}'` tem como destino o elemento `<div id="div:{33f8a2...}{37}" ...>`</p><p>Não confunda esses identificadores com valores de **id** definidos no [HTML de entrada](onenote-input-output-html.md). Todos os valores de **id** enviados no HTML de entrada são descartados.</p> |  
-| body | A palavra-chave que tem como destino o primeiro div na página. Não use # como prefixo. |  
+| corpo | A palavra-chave que tem como destino o primeiro div na página. Não use # como prefixo. |  
 | title | A palavra-chave que tem como destino o título da página. Não use # como prefixo. |  
  
 #### <a name="action"></a>action
@@ -139,8 +142,8 @@ Você pode especificar elementos de destino usando os valores **data-id** ou **i
 
 - Para as ações **append** e **insert**, você pode usar o ID como o valor de destino.
 - Para as ações **replace**, use o ID gerado para todos os elementos, exceto o título da página e imagens e objetos que estejam dentro de um div. 
-    - Para substituir um título, use a palavra-chave **título**. 
-    - Para substituir imagens e objetos que estejam dentro de um div, use **data-id** ou **id**.
+  - Para substituir um título, use a palavra-chave **título**. 
+  - Para substituir imagens e objetos que estejam dentro de um div, use **data-id** ou **id**.
 
 O exemplo a seguir usa o valor **id** para o destino. Não use o prefixo # com um ID gerado.
 
@@ -280,7 +283,7 @@ O exemplo a seguir adiciona dois nós irmãos à página. Adiciona uma imagem ac
      'target':'#para1',
      'action':'insert',
      'position':'before',
-     'content':'<img src="image-url-or-part-name" alt="Image inserted above the target" />'
+     'content':'<img src="image-data-url-or-part-name" alt="Image inserted above the target" />'
   },
   {
     'target':'#para2',
@@ -384,7 +387,7 @@ Authorization: Bearer {token}
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url" alt="New image from a URL" />'
+    'content':'<img src="image-data-url" alt="New image from a URL" />'
   }, 
   {
     'target':'#list-id',
@@ -444,7 +447,7 @@ Content-Type: image/png
 
 <br/> 
 
-| Dados de resposta | Descrição |  
+| Dado de resposta | Descrição |  
 |------|------|  
 | Código de êxito | Um código de status de HTTP 204. Nenhum dado JSON é retornado para uma solicitação PATCH. |  
 | Erros | Leia [Códigos de erro para APIs do OneNote no Microsoft Graph](onenote-error-codes.md) para saber mais sobre erros do OneNote que poderão ser retornados pelo Microsoft Graph. |  
