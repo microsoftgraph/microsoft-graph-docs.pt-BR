@@ -4,12 +4,12 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9fd24cb22b027990c9673017a645c937ee3e1384
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: 81a87d1ec6575516e12edab99ee205056b8b4593
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805256"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840744"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -57,7 +57,6 @@ Esse recurso permite:
 |[Excluir configuração](../api/directorysetting-delete.md) | None |Excluir um objeto de configuração. |
 |[Listar pontos de extremidade](../api/group-list-endpoints.md) |conjunto [ponto de extremidade](endpoint.md) | Obtenha uma coleção de o objeto ponto de extremidade. |
 |[Obter o ponto de extremidade](../api/endpoint-get.md) | [ponto de extremidade](endpoint.md) | Leia as propriedades e os relacionamentos do objeto ponto de extremidade. |
-|[delta](../api/group-delta.md)|Coleção group| Obter alterações incrementais para grupos. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validar um nome de exibição ou um apelido de email do grupo do Office 365 em conformidade com as políticas de nomenclatura. | 
 |**Calendário**| | |
 |[Criar evento](../api/group-post-events.md) |[event](event.md)| Criar um novo Event postando na coleção de eventos.|
