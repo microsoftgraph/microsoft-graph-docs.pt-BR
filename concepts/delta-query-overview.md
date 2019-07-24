@@ -3,12 +3,12 @@ title: Usar a consulta delta para controlar alterações nos dados do Microsoft 
 description: A consulta delta permite que aplicativos localizem entidades recém-criadas, atualizadas ou excluídas sem executar uma leitura completa do recurso de destino com cada solicitação. Os aplicativos do Microsoft Graph podem usar consulta delta para sincronizar, com eficiência, alterações com armazenamento de dados local.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 9c040ad61902dd623ffc2010716e6a843c4d1a38
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: e053811ae0c070f767ea8aefc20d768d188d355a
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750189"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820798"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -44,7 +44,14 @@ Esses tokens são opacos para o cliente. Os seguintes detalhes são o que você 
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solicitação inicial. O Microsoft Graph codifica automaticamente o parâmetro especificado nos parâmetros `nextLink` ou `deltaLink` fornecidos na resposta. O aplicativo de chamada só precisa especificar os parâmetros de consulta desejados uma vez antecipados. O Microsoft Graph adiciona os parâmetros especificados automaticamente para todas as solicitações subsequentes.
+Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solicitação inicial. O Microsoft Graph codifica automaticamente o parâmetro especificado em `nextLink` ou `deltaLink` fornecidos na resposta. O aplicativo de chamada só precisa especificar os parâmetros de consulta desejados uma vez antecipados. O Microsoft Graph adiciona os parâmetros especificados automaticamente para todas as solicitações subsequentes.
+
+Observe o seguinte em relação aos parâmetros de consulta opcionais:
+
+- `$orderby` não é um parâmetro de consulta com suporte para consultas delta.
+ - Não assuma que uma sequência específica das respostas tenha retornado de uma consulta delta. Suponha que o mesmo item possa aparecer em qualquer lugar na sequência do `nextLink` e leve isso em conta em sua lógica de mesclagem.
+
+Para usuários e grupos, as restrições a seguir aplicam-se sobre como usar alguns parâmetros de consulta:
 
 Para usuários e grupos, existem restrições sobre como usar alguns parâmetros de consulta:
 
