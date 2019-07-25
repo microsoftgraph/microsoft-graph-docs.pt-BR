@@ -2,12 +2,12 @@
 title: Atualizar foto
 description: Atualize as propriedades do objeto de foto.
 localization_priority: Normal
-ms.openlocfilehash: 5567a10a0af8e27c60c3f4888f193b3054945d50
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 00d8f63509635c4f4aabe0deb02a59efa8af0f3c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458849"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35856866"
 ---
 # <a name="update-photo"></a>Atualizar foto
 
@@ -73,6 +73,10 @@ Content-length: 53
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-photo-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

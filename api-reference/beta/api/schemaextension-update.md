@@ -3,12 +3,12 @@ title: Update schemaExtension
 description: Atualize as propriedades na definição da schemaExtension especificada.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: e9743e5820e70b4dd1c7e659fbdca425c59fde7a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f32a85a832f74783cd6eeec8d3b22f8f5148f1ad
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457473"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870579"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 
@@ -98,6 +98,10 @@ Content-length: 201
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-schemaextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
