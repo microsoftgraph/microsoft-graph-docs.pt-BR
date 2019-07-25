@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7f88a9370b59e13c571c10863b3c07eee9a6e480
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: a5231180e4477d5ac200bc56fee5e8f1464c612e
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805232"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840632"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,17 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="july-2019"></a>Julho de 2019
+
+### <a name="calendar--places"></a>Calendário | Locais
+
+A estreia da API de locais para fornecer detalhes apurados para locais em aplicativos.
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta  | Adicionado o recurso de [lista de salas](/graph/api/resources/roomlist?view=graph-rest-beta) |
+| Adição        | Beta  | Adicionado o recurso de [sala](/graph/api/resources/room?view=graph-rest-beta) |
+| Adição        | Beta  | Adicionado o recurso de [local](/graph/api/resources/place?view=graph-rest-beta) |
+|Adição         | Beta  | Adicionadas [permissões delegadas e de aplicativo para a API de locais](permissions-reference.md#places-permissions): Place.Read.All |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -77,9 +88,11 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | Suporte adicional para permissões de aplicativo para [Listar mensagens de canal ](/api-reference/beta/api/channel-list-messages.md), [Obter mensagem de canal](/api-reference/beta/api/channel-get-message.md), [Listar respostas a uma mensagem](/api-reference/beta/api/channel-list-messagereplies.md), e [obter uma resposta a uma mensagem ](/api-reference/beta/api/channel-get-messagereply.md). |
 | Adição | beta | Suporte adicional para permissões de aplicativo para [Listar mensagens em um chat](/api-reference/beta/api/chatmessage-list.md) e [Receber mensagens no chat](/api-reference/beta/api/chatmessage-get.md). |
 
+
 ## <a name="june-2019"></a>Junho de 2019
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
+
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice?view=graph-rest-beta)<br/>[appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp?view=graph-rest-beta)<br/>[appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta)<br/>[deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector?view=graph-rest-beta)<br/>[iosikEv2VpnConfiguration](/graph/api/resources/intune-deviceconfig-iosikev2vpnconfiguration?view=graph-rest-beta)<br/>[roleScopeTagAutoAssignment](/graph/api/resources/intune-rbac-rolescopetagautoassignment?view=graph-rest-beta)<br/>[windows10DeviceFirmwareConfigurationInterface](/graph/api/resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface?view=graph-rest-beta)<br/>|
