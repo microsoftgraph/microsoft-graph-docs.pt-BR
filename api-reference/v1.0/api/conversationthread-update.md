@@ -4,53 +4,53 @@ description: Bloqueia ou desbloqueia um thread, para permitir ou evitar postar a
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 2542b59b97ffc58ae5976ab59a3f73eff6468d73
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2479dd9582931252a509a5f3fa44685cc141d375
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444733"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883573"
 ---
-# <a name="update-conversationthread"></a><span data-ttu-id="917fe-103">Atualizar conversationthread</span><span class="sxs-lookup"><span data-stu-id="917fe-103">Update conversationthread</span></span>
+# <a name="update-conversationthread"></a><span data-ttu-id="7a608-103">Atualizar conversationthread</span><span class="sxs-lookup"><span data-stu-id="7a608-103">Update conversationthread</span></span>
 
-<span data-ttu-id="917fe-104">Bloqueia ou desbloqueia um thread, para permitir ou evitar postar ainda mais no thread.</span><span class="sxs-lookup"><span data-stu-id="917fe-104">Lock or unlock a thread, to allow or avoid further posting to the thread.</span></span>
-## <a name="permissions"></a><span data-ttu-id="917fe-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="917fe-105">Permissions</span></span>
-<span data-ttu-id="917fe-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="917fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7a608-104">Bloqueia ou desbloqueia um thread, para permitir ou evitar postar ainda mais no thread.</span><span class="sxs-lookup"><span data-stu-id="7a608-104">Lock or unlock a thread, to allow or avoid further posting to the thread.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7a608-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="7a608-105">Permissions</span></span>
+<span data-ttu-id="7a608-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7a608-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="917fe-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="917fe-108">Permission type</span></span>      | <span data-ttu-id="917fe-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="917fe-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7a608-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7a608-108">Permission type</span></span>      | <span data-ttu-id="7a608-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7a608-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="917fe-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="917fe-110">Delegated (work or school account)</span></span> | <span data-ttu-id="917fe-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="917fe-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="917fe-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="917fe-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="917fe-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="917fe-113">Not supported.</span></span>    |
-|<span data-ttu-id="917fe-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="917fe-114">Application</span></span> | <span data-ttu-id="917fe-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="917fe-115">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="7a608-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7a608-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7a608-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a608-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7a608-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7a608-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7a608-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7a608-113">Not supported.</span></span>    |
+|<span data-ttu-id="7a608-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7a608-114">Application</span></span> | <span data-ttu-id="7a608-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a608-115">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="917fe-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="917fe-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7a608-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7a608-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/threads/{id}
 PATCH /groups/{id}/conversations/{id}/threads/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="917fe-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="917fe-117">Request headers</span></span>
-| <span data-ttu-id="917fe-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="917fe-118">Header</span></span>       | <span data-ttu-id="917fe-119">Valor</span><span class="sxs-lookup"><span data-stu-id="917fe-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="7a608-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7a608-117">Request headers</span></span>
+| <span data-ttu-id="7a608-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7a608-118">Header</span></span>       | <span data-ttu-id="7a608-119">Valor</span><span class="sxs-lookup"><span data-stu-id="7a608-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="917fe-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="917fe-120">Authorization</span></span>  | <span data-ttu-id="917fe-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="917fe-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="917fe-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="917fe-123">Content-Type</span></span>  | <span data-ttu-id="917fe-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="917fe-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="7a608-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="7a608-120">Authorization</span></span>  | <span data-ttu-id="7a608-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7a608-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7a608-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7a608-123">Content-Type</span></span>  | <span data-ttu-id="7a608-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7a608-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="917fe-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="917fe-126">Request body</span></span>
-<span data-ttu-id="917fe-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="917fe-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7a608-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7a608-126">Request body</span></span>
+<span data-ttu-id="7a608-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="7a608-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="917fe-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="917fe-130">Property</span></span>     | <span data-ttu-id="917fe-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="917fe-131">Type</span></span>   |<span data-ttu-id="917fe-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="917fe-132">Description</span></span>|
+| <span data-ttu-id="7a608-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7a608-130">Property</span></span>     | <span data-ttu-id="7a608-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="7a608-131">Type</span></span>   |<span data-ttu-id="7a608-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="7a608-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="917fe-133">isLocked</span><span class="sxs-lookup"><span data-stu-id="917fe-133">isLocked</span></span>|<span data-ttu-id="917fe-134">Booliano</span><span class="sxs-lookup"><span data-stu-id="917fe-134">Boolean</span></span>|<span data-ttu-id="917fe-p105">Indica se o thread está bloqueado. Defina como `true` para proibir a postagem.</span><span class="sxs-lookup"><span data-stu-id="917fe-p105">Indicates if the thread is locked. Set to `true` to disallow posting.</span></span>|
+|<span data-ttu-id="7a608-133">isLocked</span><span class="sxs-lookup"><span data-stu-id="7a608-133">isLocked</span></span>|<span data-ttu-id="7a608-134">Booliano</span><span class="sxs-lookup"><span data-stu-id="7a608-134">Boolean</span></span>|<span data-ttu-id="7a608-p105">Indica se o thread está bloqueado. Defina como `true` para proibir a postagem.</span><span class="sxs-lookup"><span data-stu-id="7a608-p105">Indicates if the thread is locked. Set to `true` to disallow posting.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="917fe-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="917fe-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7a608-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="7a608-137">Response</span></span>
 
-<span data-ttu-id="917fe-138">Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [conversationThread](../resources/conversationthread.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="917fe-138">If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="917fe-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="917fe-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="917fe-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="917fe-140">Request</span></span>
-<span data-ttu-id="917fe-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="917fe-141">Here is an example of the request.</span></span>
+<span data-ttu-id="7a608-138">Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [conversationThread](../resources/conversationthread.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7a608-138">If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7a608-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7a608-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7a608-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7a608-140">Request</span></span>
+<span data-ttu-id="7a608-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7a608-141">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="917fe-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="917fe-142">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7a608-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="7a608-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_conversationthread"
@@ -65,22 +65,26 @@ Content-length: 419
   "isLocked": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="917fe-143">C#</span><span class="sxs-lookup"><span data-stu-id="917fe-143">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7a608-143">C#</span><span class="sxs-lookup"><span data-stu-id="7a608-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-conversationthread-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="917fe-144">Javascript</span><span class="sxs-lookup"><span data-stu-id="917fe-144">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7a608-144">Javascript</span><span class="sxs-lookup"><span data-stu-id="7a608-144">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-conversationthread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="917fe-145">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="917fe-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7a608-145">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="7a608-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-conversationthread-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="7a608-146">Java</span><span class="sxs-lookup"><span data-stu-id="7a608-146">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-conversationthread-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="917fe-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="917fe-146">Response</span></span>
-<span data-ttu-id="917fe-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="917fe-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7a608-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="7a608-147">Response</span></span>
+<span data-ttu-id="7a608-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7a608-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

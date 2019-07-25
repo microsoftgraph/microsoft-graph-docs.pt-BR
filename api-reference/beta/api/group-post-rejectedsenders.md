@@ -4,52 +4,52 @@ description: Adiciona um novo usuário ou grupo à lista rejectedSender.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a5088b93f6053a7a47127a8988a8ee1997a5d8c3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a730b8a6278f2ca803081643ce2396aae149befe
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440222"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857956"
 ---
-# <a name="create-rejectedsender"></a><span data-ttu-id="55ee8-103">Criar rejectedSender</span><span class="sxs-lookup"><span data-stu-id="55ee8-103">Create rejectedSender</span></span>
+# <a name="create-rejectedsender"></a><span data-ttu-id="a1a5c-103">Criar rejectedSender</span><span class="sxs-lookup"><span data-stu-id="a1a5c-103">Create rejectedSender</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="55ee8-104">Adiciona um novo usuário ou grupo à lista rejectedSender.</span><span class="sxs-lookup"><span data-stu-id="55ee8-104">Add a new user or group to the rejectedSender list.</span></span>
+<span data-ttu-id="a1a5c-104">Adiciona um novo usuário ou grupo à lista rejectedSender.</span><span class="sxs-lookup"><span data-stu-id="a1a5c-104">Add a new user or group to the rejectedSender list.</span></span>
 
-<span data-ttu-id="55ee8-p101">Especifique o usuário ou grupo em `@odata.id` no corpo da solicitação. Os usuários na lista de remetentes rejeitados não podem postar em conversas do grupo (identificado na URL da solicitação POST). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.</span><span class="sxs-lookup"><span data-stu-id="55ee8-p101">Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
+<span data-ttu-id="a1a5c-p101">Especifique o usuário ou grupo em `@odata.id` no corpo da solicitação. Os usuários na lista de remetentes rejeitados não podem postar em conversas do grupo (identificado na URL da solicitação POST). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.</span><span class="sxs-lookup"><span data-stu-id="a1a5c-p101">Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="55ee8-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="55ee8-108">Permissions</span></span>
-<span data-ttu-id="55ee8-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="55ee8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a1a5c-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="a1a5c-108">Permissions</span></span>
+<span data-ttu-id="a1a5c-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a1a5c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="55ee8-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="55ee8-111">Permission type</span></span>      | <span data-ttu-id="55ee8-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="55ee8-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a1a5c-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a1a5c-111">Permission type</span></span>      | <span data-ttu-id="a1a5c-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a1a5c-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="55ee8-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="55ee8-113">Delegated (work or school account)</span></span> | <span data-ttu-id="55ee8-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="55ee8-114">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="55ee8-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="55ee8-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="55ee8-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="55ee8-116">Not supported.</span></span>    |
-|<span data-ttu-id="55ee8-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="55ee8-117">Application</span></span> | <span data-ttu-id="55ee8-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="55ee8-118">Not supported.</span></span> |
+|<span data-ttu-id="a1a5c-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a1a5c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="a1a5c-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1a5c-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a1a5c-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a1a5c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a1a5c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a1a5c-116">Not supported.</span></span>    |
+|<span data-ttu-id="a1a5c-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a1a5c-117">Application</span></span> | <span data-ttu-id="a1a5c-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a1a5c-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="55ee8-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="55ee8-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a1a5c-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a1a5c-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/rejectedSenders/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="55ee8-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="55ee8-120">Request headers</span></span>
-| <span data-ttu-id="55ee8-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="55ee8-121">Header</span></span>       | <span data-ttu-id="55ee8-122">Valor</span><span class="sxs-lookup"><span data-stu-id="55ee8-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="a1a5c-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a1a5c-120">Request headers</span></span>
+| <span data-ttu-id="a1a5c-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a1a5c-121">Header</span></span>       | <span data-ttu-id="a1a5c-122">Valor</span><span class="sxs-lookup"><span data-stu-id="a1a5c-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="55ee8-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="55ee8-123">Authorization</span></span>  | <span data-ttu-id="55ee8-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="55ee8-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a1a5c-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="a1a5c-123">Authorization</span></span>  | <span data-ttu-id="a1a5c-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a1a5c-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="55ee8-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="55ee8-126">Request body</span></span>
-<span data-ttu-id="55ee8-127">No corpo da solicitação, forneça a id de um objeto de usuário ou grupo.</span><span class="sxs-lookup"><span data-stu-id="55ee8-127">In the request body, supply the id of a user or group object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a1a5c-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a1a5c-126">Request body</span></span>
+<span data-ttu-id="a1a5c-127">No corpo da solicitação, forneça a id de um objeto de usuário ou grupo.</span><span class="sxs-lookup"><span data-stu-id="a1a5c-127">In the request body, supply the id of a user or group object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="55ee8-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="55ee8-128">Response</span></span>
-<span data-ttu-id="55ee8-129">Este método retorna o código de resposta `204 No Content` e nenhum corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="55ee8-129">This method returns `204 No Content` response code and no response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a1a5c-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="a1a5c-128">Response</span></span>
+<span data-ttu-id="a1a5c-129">Este método retorna o código de resposta `204 No Content` e nenhum corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a1a5c-129">This method returns `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="55ee8-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="55ee8-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="55ee8-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="55ee8-131">Request</span></span>
-<span data-ttu-id="55ee8-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="55ee8-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a1a5c-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a1a5c-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="a1a5c-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a1a5c-131">Request</span></span>
+<span data-ttu-id="a1a5c-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a1a5c-132">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="55ee8-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="55ee8-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a1a5c-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="a1a5c-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_rejectedsender"
@@ -63,19 +63,27 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55ee8-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="55ee8-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a1a5c-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="a1a5c-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-rejectedsender-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="55ee8-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="55ee8-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a1a5c-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a1a5c-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-rejectedsender-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a1a5c-136">C#</span><span class="sxs-lookup"><span data-stu-id="a1a5c-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-rejectedsender-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="a1a5c-137">Java</span><span class="sxs-lookup"><span data-stu-id="a1a5c-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-rejectedsender-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="55ee8-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="55ee8-136">Response</span></span>
-<span data-ttu-id="55ee8-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="55ee8-137">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="a1a5c-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="a1a5c-138">Response</span></span>
+<span data-ttu-id="a1a5c-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a1a5c-139">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

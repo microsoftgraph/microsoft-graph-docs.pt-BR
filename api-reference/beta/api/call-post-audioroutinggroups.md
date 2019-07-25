@@ -4,55 +4,55 @@ description: Criar um novo **audioRoutingGroup**.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fc3f32592bb466bf345734cdd924472fe245730c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cb993616e8ed4d55341e74aa7881e6ca76bf310d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438661"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35864707"
 ---
-# <a name="create-audio-routing-group"></a><span data-ttu-id="e3b75-103">Criar grupo de roteamento de áudio</span><span class="sxs-lookup"><span data-stu-id="e3b75-103">Create audio routing group</span></span>
+# <a name="create-audio-routing-group"></a><span data-ttu-id="a031a-103">Criar grupo de roteamento de áudio</span><span class="sxs-lookup"><span data-stu-id="a031a-103">Create audio routing group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e3b75-104">Criar um novo **audioRoutingGroup**.</span><span class="sxs-lookup"><span data-stu-id="e3b75-104">Create a new **audioRoutingGroup**.</span></span>
+<span data-ttu-id="a031a-104">Criar um novo **audioRoutingGroup**.</span><span class="sxs-lookup"><span data-stu-id="a031a-104">Create a new **audioRoutingGroup**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e3b75-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e3b75-105">Permissions</span></span>
-<span data-ttu-id="e3b75-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e3b75-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a031a-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a031a-105">Permissions</span></span>
+<span data-ttu-id="a031a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a031a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e3b75-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e3b75-108">Permission type</span></span>                        | <span data-ttu-id="e3b75-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e3b75-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a031a-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a031a-108">Permission type</span></span>                        | <span data-ttu-id="a031a-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a031a-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="e3b75-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e3b75-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e3b75-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e3b75-111">Not supported.</span></span>                               |
-| <span data-ttu-id="e3b75-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e3b75-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e3b75-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e3b75-113">Not supported.</span></span>                               |
-| <span data-ttu-id="e3b75-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e3b75-114">Application</span></span>                            | <span data-ttu-id="e3b75-115">Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All</span><span class="sxs-lookup"><span data-stu-id="e3b75-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="a031a-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a031a-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="a031a-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a031a-111">Not supported.</span></span>                               |
+| <span data-ttu-id="a031a-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a031a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a031a-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a031a-113">Not supported.</span></span>                               |
+| <span data-ttu-id="a031a-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a031a-114">Application</span></span>                            | <span data-ttu-id="a031a-115">Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All</span><span class="sxs-lookup"><span data-stu-id="a031a-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e3b75-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e3b75-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a031a-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a031a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/audioRoutingGroups
 POST /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e3b75-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e3b75-117">Request headers</span></span>
-| <span data-ttu-id="e3b75-118">Nome</span><span class="sxs-lookup"><span data-stu-id="e3b75-118">Name</span></span>          | <span data-ttu-id="e3b75-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="e3b75-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="a031a-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a031a-117">Request headers</span></span>
+| <span data-ttu-id="a031a-118">Nome</span><span class="sxs-lookup"><span data-stu-id="a031a-118">Name</span></span>          | <span data-ttu-id="a031a-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="a031a-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="e3b75-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="e3b75-120">Authorization</span></span> | <span data-ttu-id="e3b75-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e3b75-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a031a-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="a031a-120">Authorization</span></span> | <span data-ttu-id="a031a-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a031a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e3b75-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e3b75-123">Request body</span></span>
-<span data-ttu-id="e3b75-124">No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .</span><span class="sxs-lookup"><span data-stu-id="e3b75-124">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a031a-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a031a-123">Request body</span></span>
+<span data-ttu-id="a031a-124">No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .</span><span class="sxs-lookup"><span data-stu-id="a031a-124">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e3b75-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="e3b75-125">Response</span></span>
-<span data-ttu-id="e3b75-126">Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e3b75-126">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a031a-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="a031a-125">Response</span></span>
+<span data-ttu-id="a031a-126">Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a031a-126">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e3b75-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e3b75-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a031a-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a031a-127">Examples</span></span>
 
-### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="e3b75-128">Exemplo 1: grupo de roteamento de áudio de um para um</span><span class="sxs-lookup"><span data-stu-id="e3b75-128">Example 1: One-to-one audio routing group</span></span>
+### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="a031a-128">Exemplo 1: grupo de roteamento de áudio de um para um</span><span class="sxs-lookup"><span data-stu-id="a031a-128">Example 1: One-to-one audio routing group</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e3b75-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e3b75-129">Request</span></span>
-<span data-ttu-id="e3b75-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="e3b75-130">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="a031a-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a031a-129">Request</span></span>
+<span data-ttu-id="a031a-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="a031a-130">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e3b75-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="e3b75-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a031a-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="a031a-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-audioRoutingGroup-from-call"
@@ -73,26 +73,30 @@ Content-Length: 233
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e3b75-132">C#</span><span class="sxs-lookup"><span data-stu-id="e3b75-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a031a-132">C#</span><span class="sxs-lookup"><span data-stu-id="a031a-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-audioroutinggroup-from-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e3b75-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="e3b75-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a031a-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="a031a-133">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-audioroutinggroup-from-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e3b75-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="e3b75-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a031a-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a031a-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-audioroutinggroup-from-call-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="a031a-135">Java</span><span class="sxs-lookup"><span data-stu-id="a031a-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-audioroutinggroup-from-call-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="e3b75-135">No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .</span><span class="sxs-lookup"><span data-stu-id="e3b75-135">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="a031a-136">No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .</span><span class="sxs-lookup"><span data-stu-id="a031a-136">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="e3b75-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="e3b75-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a031a-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="a031a-137">Response</span></span>
 
-> <span data-ttu-id="e3b75-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e3b75-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a031a-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a031a-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -115,10 +119,10 @@ Content-Length: 233
   ]
 }
 ```
-### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="e3b75-139">Exemplo 2: audioRoutingGroup de difusão seletiva</span><span class="sxs-lookup"><span data-stu-id="e3b75-139">Example 2: Multicast audioRoutingGroup</span></span>
+### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="a031a-140">Exemplo 2: audioRoutingGroup de difusão seletiva</span><span class="sxs-lookup"><span data-stu-id="a031a-140">Example 2: Multicast audioRoutingGroup</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e3b75-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e3b75-140">Request</span></span>
-<span data-ttu-id="e3b75-141">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="e3b75-141">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="a031a-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a031a-141">Request</span></span>
+<span data-ttu-id="a031a-142">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="a031a-142">The following example shows the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -146,11 +150,11 @@ Content-Length: 233
 }
 ```
 
-<span data-ttu-id="e3b75-142">No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .</span><span class="sxs-lookup"><span data-stu-id="e3b75-142">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="a031a-143">No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .</span><span class="sxs-lookup"><span data-stu-id="a031a-143">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="e3b75-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="e3b75-143">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a031a-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="a031a-144">Response</span></span>
 
-> <span data-ttu-id="e3b75-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e3b75-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a031a-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a031a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
