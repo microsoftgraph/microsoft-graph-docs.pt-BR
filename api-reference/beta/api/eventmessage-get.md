@@ -4,43 +4,43 @@ description: Expanda ' parâmetro no **evento**
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5c87416d8f18bf763ece903eef4c54aae4b68ccc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d2fa99650276fac357a3673394ff1f3ce7efc0c3
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440922"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859371"
 ---
-# <a name="get-eventmessage"></a><span data-ttu-id="765b2-103">Obter eventMessage</span><span class="sxs-lookup"><span data-stu-id="765b2-103">Get eventMessage</span></span>
+# <a name="get-eventmessage"></a><span data-ttu-id="4084f-103">Obter eventMessage</span><span class="sxs-lookup"><span data-stu-id="4084f-103">Get eventMessage</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="765b2-104">Obtenha as propriedades e os relacionamentos do objeto [eventMessage](../resources/eventmessage.md).</span><span class="sxs-lookup"><span data-stu-id="765b2-104">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="765b2-105">Aplique o `$expand` parâmetro na propriedade de navegação de **evento** para obter o [evento](../resources/event.md) associado no calendário de um participante.</span><span class="sxs-lookup"><span data-stu-id="765b2-105">Apply the `$expand` parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
+<span data-ttu-id="4084f-104">Obtenha as propriedades e os relacionamentos do objeto [eventMessage](../resources/eventmessage.md).</span><span class="sxs-lookup"><span data-stu-id="4084f-104">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="4084f-105">Aplique o `$expand` parâmetro na propriedade de navegação de **evento** para obter o [evento](../resources/event.md) associado no calendário de um participante.</span><span class="sxs-lookup"><span data-stu-id="4084f-105">Apply the `$expand` parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
 
-### <a name="get-the-event-message-body-in-html-or-text-format"></a><span data-ttu-id="765b2-106">Obter o corpo da mensagem de evento no formato HTML ou de texto</span><span class="sxs-lookup"><span data-stu-id="765b2-106">Get the event message body in HTML or text format</span></span>
+### <a name="get-the-event-message-body-in-html-or-text-format"></a><span data-ttu-id="4084f-106">Obter o corpo da mensagem de evento no formato HTML ou de texto</span><span class="sxs-lookup"><span data-stu-id="4084f-106">Get the event message body in HTML or text format</span></span>
 
-<span data-ttu-id="765b2-107">Os corpos de mensagens de evento podem estar no formato HTML ou de texto.</span><span class="sxs-lookup"><span data-stu-id="765b2-107">Event message bodies can be in HTML or text format.</span></span>
+<span data-ttu-id="4084f-107">Os corpos de mensagens de evento podem estar no formato HTML ou de texto.</span><span class="sxs-lookup"><span data-stu-id="4084f-107">Event message bodies can be in HTML or text format.</span></span>
 
-<span data-ttu-id="765b2-108">Você pode usar o `Prefer: outlook.body-content-type` cabeçalho para especificar o formato desejado retornado nas propriedades **Body** e **uniqueBody** em uma `GET` solicitação:</span><span class="sxs-lookup"><span data-stu-id="765b2-108">You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:</span></span>
+<span data-ttu-id="4084f-108">Você pode usar o `Prefer: outlook.body-content-type` cabeçalho para especificar o formato desejado retornado nas propriedades **Body** e **uniqueBody** em uma `GET` solicitação:</span><span class="sxs-lookup"><span data-stu-id="4084f-108">You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:</span></span>
 
-- <span data-ttu-id="765b2-109">Especifique `Prefer: outlook.body-content-type="text"` para obter um corpo de mensagem de evento retornado no formato de texto.</span><span class="sxs-lookup"><span data-stu-id="765b2-109">Specify `Prefer: outlook.body-content-type="text"` to get a event message body returned in text format.</span></span>
-- <span data-ttu-id="765b2-110">Especifique `Prefer: outlook.body-content-type="html"`ou apenas pule o cabeçalho para retornar o corpo da mensagem de evento no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="765b2-110">Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event message body in HTML format.</span></span>
+- <span data-ttu-id="4084f-109">Especifique `Prefer: outlook.body-content-type="text"` para obter um corpo de mensagem de evento retornado no formato de texto.</span><span class="sxs-lookup"><span data-stu-id="4084f-109">Specify `Prefer: outlook.body-content-type="text"` to get a event message body returned in text format.</span></span>
+- <span data-ttu-id="4084f-110">Especifique `Prefer: outlook.body-content-type="html"`ou apenas pule o cabeçalho para retornar o corpo da mensagem de evento no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="4084f-110">Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event message body in HTML format.</span></span>
 
-<span data-ttu-id="765b2-111">Se você especificar um dos cabeçalhos, a resposta incluirá o cabeçalho `Preference-Applied` correspondente como confirmação:</span><span class="sxs-lookup"><span data-stu-id="765b2-111">If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:</span></span>
+<span data-ttu-id="4084f-111">Se você especificar um dos cabeçalhos, a resposta incluirá o cabeçalho `Preference-Applied` correspondente como confirmação:</span><span class="sxs-lookup"><span data-stu-id="4084f-111">If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:</span></span>
 
-- <span data-ttu-id="765b2-112">Para solicitações de formato de texto: `Preference-Applied: outlook.body-content-type="text"`</span><span class="sxs-lookup"><span data-stu-id="765b2-112">For text format requests: `Preference-Applied: outlook.body-content-type="text"`</span></span>
-- <span data-ttu-id="765b2-113">Para solicitações de formato HTML: `Preference-Applied: outlook.body-content-type="html"`</span><span class="sxs-lookup"><span data-stu-id="765b2-113">For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`</span></span>
+- <span data-ttu-id="4084f-112">Para solicitações de formato de texto: `Preference-Applied: outlook.body-content-type="text"`</span><span class="sxs-lookup"><span data-stu-id="4084f-112">For text format requests: `Preference-Applied: outlook.body-content-type="text"`</span></span>
+- <span data-ttu-id="4084f-113">Para solicitações de formato HTML: `Preference-Applied: outlook.body-content-type="html"`</span><span class="sxs-lookup"><span data-stu-id="4084f-113">For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="765b2-114">Permissões</span><span class="sxs-lookup"><span data-stu-id="765b2-114">Permissions</span></span>
-<span data-ttu-id="765b2-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="765b2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4084f-114">Permissões</span><span class="sxs-lookup"><span data-stu-id="4084f-114">Permissions</span></span>
+<span data-ttu-id="4084f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4084f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="765b2-117">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="765b2-117">Permission type</span></span>      | <span data-ttu-id="765b2-118">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="765b2-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4084f-117">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4084f-117">Permission type</span></span>      | <span data-ttu-id="4084f-118">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4084f-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="765b2-119">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="765b2-119">Delegated (work or school account)</span></span> | <span data-ttu-id="765b2-120">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="765b2-120">Mail.Read</span></span>    |
-|<span data-ttu-id="765b2-121">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="765b2-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="765b2-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="765b2-122">Mail.Read</span></span>    |
-|<span data-ttu-id="765b2-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="765b2-123">Application</span></span> | <span data-ttu-id="765b2-124">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="765b2-124">Mail.Read</span></span> |
+|<span data-ttu-id="4084f-119">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4084f-119">Delegated (work or school account)</span></span> | <span data-ttu-id="4084f-120">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="4084f-120">Mail.Read</span></span>    |
+|<span data-ttu-id="4084f-121">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4084f-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4084f-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="4084f-122">Mail.Read</span></span>    |
+|<span data-ttu-id="4084f-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4084f-123">Application</span></span> | <span data-ttu-id="4084f-124">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="4084f-124">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="765b2-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="765b2-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4084f-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4084f-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -49,24 +49,24 @@ GET /users/{id | userPrincipalName}/messages/{id}
 GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="765b2-126">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="765b2-126">Optional query parameters</span></span>
-<span data-ttu-id="765b2-127">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="765b2-127">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="765b2-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="765b2-128">Request headers</span></span>
-| <span data-ttu-id="765b2-129">Nome</span><span class="sxs-lookup"><span data-stu-id="765b2-129">Name</span></span>       | <span data-ttu-id="765b2-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="765b2-130">Type</span></span> | <span data-ttu-id="765b2-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="765b2-131">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="4084f-126">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="4084f-126">Optional query parameters</span></span>
+<span data-ttu-id="4084f-127">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="4084f-127">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4084f-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4084f-128">Request headers</span></span>
+| <span data-ttu-id="4084f-129">Nome</span><span class="sxs-lookup"><span data-stu-id="4084f-129">Name</span></span>       | <span data-ttu-id="4084f-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="4084f-130">Type</span></span> | <span data-ttu-id="4084f-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="4084f-131">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="765b2-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="765b2-132">Authorization</span></span>  | <span data-ttu-id="765b2-133">string</span><span class="sxs-lookup"><span data-stu-id="765b2-133">string</span></span>  | <span data-ttu-id="765b2-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="765b2-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4084f-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="4084f-132">Authorization</span></span>  | <span data-ttu-id="4084f-133">string</span><span class="sxs-lookup"><span data-stu-id="4084f-133">string</span></span>  | <span data-ttu-id="4084f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4084f-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="765b2-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="765b2-136">Request body</span></span>
-<span data-ttu-id="765b2-137">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="765b2-137">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4084f-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4084f-136">Request body</span></span>
+<span data-ttu-id="4084f-137">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4084f-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="765b2-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="765b2-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4084f-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="4084f-138">Response</span></span>
 
-<span data-ttu-id="765b2-139">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [eventMessage](../resources/eventmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="765b2-139">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="765b2-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="765b2-140">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="765b2-141">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="765b2-141">Request 1</span></span>
-<span data-ttu-id="765b2-142">O primeiro exemplo mostra como obter as propriedades de uma mensagem de evento com base no ID da mensagem do evento.</span><span class="sxs-lookup"><span data-stu-id="765b2-142">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
+<span data-ttu-id="4084f-139">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [eventMessage](../resources/eventmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4084f-139">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="4084f-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4084f-140">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="4084f-141">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="4084f-141">Request 1</span></span>
+<span data-ttu-id="4084f-142">O primeiro exemplo mostra como obter as propriedades de uma mensagem de evento com base no ID da mensagem do evento.</span><span class="sxs-lookup"><span data-stu-id="4084f-142">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="765b2-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="765b2-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="4084f-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="4084f-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_eventmessage"
@@ -74,22 +74,26 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="765b2-144">C#</span><span class="sxs-lookup"><span data-stu-id="765b2-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="4084f-144">C#</span><span class="sxs-lookup"><span data-stu-id="4084f-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="765b2-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="765b2-145">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4084f-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="4084f-145">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="765b2-146">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="765b2-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4084f-146">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="4084f-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="4084f-147">Java</span><span class="sxs-lookup"><span data-stu-id="4084f-147">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-1"></a><span data-ttu-id="765b2-147">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="765b2-147">Response 1</span></span>
-<span data-ttu-id="765b2-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="765b2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="4084f-148">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="4084f-148">Response 1</span></span>
+<span data-ttu-id="4084f-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4084f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -195,10 +199,10 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-2"></a><span data-ttu-id="765b2-151">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="765b2-151">Request 2</span></span>
-<span data-ttu-id="765b2-152">O segundo exemplo mostra como obter o evento associado a uma mensagem de evento.</span><span class="sxs-lookup"><span data-stu-id="765b2-152">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="765b2-153">Ele usa a ID da mensagem para obter a mensagem do evento, fornece explicitamente uma conversão na mensagem do evento para acessar a propriedade de navegação **event** e aplica um parâmetro $expand para obter as propriedades do evento.</span><span class="sxs-lookup"><span data-stu-id="765b2-153">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="4084f-152">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="4084f-152">Request 2</span></span>
+<span data-ttu-id="4084f-153">O segundo exemplo mostra como obter o evento associado a uma mensagem de evento.</span><span class="sxs-lookup"><span data-stu-id="4084f-153">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="4084f-154">Ele usa a ID da mensagem para obter a mensagem do evento, fornece explicitamente uma conversão na mensagem do evento para acessar a propriedade de navegação **event** e aplica um parâmetro $expand para obter as propriedades do evento.</span><span class="sxs-lookup"><span data-stu-id="4084f-154">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="765b2-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="765b2-154">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="4084f-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="4084f-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"
@@ -206,23 +210,27 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=microsoft.graph.eventMessage/event
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="765b2-155">C#</span><span class="sxs-lookup"><span data-stu-id="765b2-155">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="4084f-156">C#</span><span class="sxs-lookup"><span data-stu-id="4084f-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-based-on-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="765b2-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="765b2-156">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4084f-157">Javascript</span><span class="sxs-lookup"><span data-stu-id="4084f-157">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="765b2-157">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="765b2-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4084f-158">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="4084f-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-based-on-eventmessage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="4084f-159">Java</span><span class="sxs-lookup"><span data-stu-id="4084f-159">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-based-on-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-2"></a><span data-ttu-id="765b2-158">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="765b2-158">Response 2</span></span>
-<span data-ttu-id="765b2-159">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="765b2-159">Here is an example of the response.</span></span> <span data-ttu-id="765b2-160">As propriedades do evento correspondente são retornadas na resposta.</span><span class="sxs-lookup"><span data-stu-id="765b2-160">The properties of the associated event are returned in the response.</span></span>
-<span data-ttu-id="765b2-161">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="765b2-161">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="765b2-162">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="765b2-162">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="4084f-160">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="4084f-160">Response 2</span></span>
+<span data-ttu-id="4084f-161">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4084f-161">Here is an example of the response.</span></span> <span data-ttu-id="4084f-162">As propriedades do evento correspondente são retornadas na resposta.</span><span class="sxs-lookup"><span data-stu-id="4084f-162">The properties of the associated event are returned in the response.</span></span>
+<span data-ttu-id="4084f-163">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="4084f-163">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="4084f-164">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4084f-164">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

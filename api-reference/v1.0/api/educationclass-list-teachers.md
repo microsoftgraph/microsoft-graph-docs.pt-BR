@@ -4,48 +4,48 @@ description: Recupere uma lista de professores de uma aula. Os tokens delegados 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 180bbbd610748a8565e82fb94dbf711ee20372e4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 97e1f296d0efa1f83b5c9f5290f1ce1b451cbd3e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449943"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881522"
 ---
-# <a name="list-teachers"></a><span data-ttu-id="51ae6-104">Listar professores</span><span class="sxs-lookup"><span data-stu-id="51ae6-104">List teachers</span></span>
+# <a name="list-teachers"></a><span data-ttu-id="79cdd-104">Listar professores</span><span class="sxs-lookup"><span data-stu-id="79cdd-104">List teachers</span></span>
 
-<span data-ttu-id="51ae6-105">Recupere uma lista de professores de uma aula.</span><span class="sxs-lookup"><span data-stu-id="51ae6-105">Retrieve a list teachers for a class.</span></span> <span data-ttu-id="51ae6-106">Os tokens delegados devem ser membros da aula para obterem a lista de professores.</span><span class="sxs-lookup"><span data-stu-id="51ae6-106">Delegated tokens must be members of the class to get the teacher list.</span></span>
+<span data-ttu-id="79cdd-105">Recupere uma lista de professores de uma aula.</span><span class="sxs-lookup"><span data-stu-id="79cdd-105">Retrieve a list teachers for a class.</span></span> <span data-ttu-id="79cdd-106">Os tokens delegados devem ser membros da aula para obterem a lista de professores.</span><span class="sxs-lookup"><span data-stu-id="79cdd-106">Delegated tokens must be members of the class to get the teacher list.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="51ae6-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="51ae6-107">Permissions</span></span>
-<span data-ttu-id="51ae6-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="51ae6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="79cdd-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="79cdd-107">Permissions</span></span>
+<span data-ttu-id="79cdd-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="79cdd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="51ae6-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="51ae6-110">Permission type</span></span>      | <span data-ttu-id="51ae6-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="51ae6-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="79cdd-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="79cdd-110">Permission type</span></span>      | <span data-ttu-id="79cdd-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="79cdd-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="51ae6-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="51ae6-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="51ae6-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="51ae6-113">EduRoster.ReadBasic</span></span>  |
-|<span data-ttu-id="51ae6-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="51ae6-114">Delegated (personal Microsoft account)</span></span> |   <span data-ttu-id="51ae6-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="51ae6-115">Not supported.</span></span>  |
-|<span data-ttu-id="51ae6-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="51ae6-116">Application</span></span> | <span data-ttu-id="51ae6-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="51ae6-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="79cdd-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="79cdd-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="79cdd-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="79cdd-113">EduRoster.ReadBasic</span></span>  |
+|<span data-ttu-id="79cdd-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="79cdd-114">Delegated (personal Microsoft account)</span></span> |   <span data-ttu-id="79cdd-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="79cdd-115">Not supported.</span></span>  |
+|<span data-ttu-id="79cdd-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="79cdd-116">Application</span></span> | <span data-ttu-id="79cdd-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="79cdd-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="51ae6-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="51ae6-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="79cdd-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="79cdd-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/teachers
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="51ae6-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="51ae6-119">Optional query parameters</span></span>
-<span data-ttu-id="51ae6-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="51ae6-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="79cdd-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="79cdd-119">Optional query parameters</span></span>
+<span data-ttu-id="79cdd-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="79cdd-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="51ae6-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="51ae6-121">Request headers</span></span>
-| <span data-ttu-id="51ae6-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="51ae6-122">Header</span></span>       | <span data-ttu-id="51ae6-123">Valor</span><span class="sxs-lookup"><span data-stu-id="51ae6-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="79cdd-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="79cdd-121">Request headers</span></span>
+| <span data-ttu-id="79cdd-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="79cdd-122">Header</span></span>       | <span data-ttu-id="79cdd-123">Valor</span><span class="sxs-lookup"><span data-stu-id="79cdd-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="51ae6-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="51ae6-124">Authorization</span></span>  | <span data-ttu-id="51ae6-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="51ae6-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="79cdd-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="79cdd-124">Authorization</span></span>  | <span data-ttu-id="79cdd-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="79cdd-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="51ae6-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="51ae6-127">Request body</span></span>
-<span data-ttu-id="51ae6-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="51ae6-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="51ae6-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="51ae6-129">Response</span></span>
-<span data-ttu-id="51ae6-130">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos [educationUser](../resources/educationuser.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="51ae6-130">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="51ae6-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="51ae6-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="51ae6-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="51ae6-132">Request</span></span>
-<span data-ttu-id="51ae6-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="51ae6-133">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="79cdd-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="79cdd-127">Request body</span></span>
+<span data-ttu-id="79cdd-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="79cdd-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="79cdd-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="79cdd-129">Response</span></span>
+<span data-ttu-id="79cdd-130">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos [educationUser](../resources/educationuser.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="79cdd-130">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="79cdd-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="79cdd-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="79cdd-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="79cdd-132">Request</span></span>
+<span data-ttu-id="79cdd-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="79cdd-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="51ae6-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="51ae6-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="79cdd-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="79cdd-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_teachers"
@@ -53,24 +53,28 @@ GET /education/classes/{id}/teachers
 ```http
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="51ae6-135">C#</span><span class="sxs-lookup"><span data-stu-id="51ae6-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="79cdd-135">C#</span><span class="sxs-lookup"><span data-stu-id="79cdd-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teachers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="51ae6-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="51ae6-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="79cdd-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="79cdd-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-teachers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="51ae6-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="51ae6-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="79cdd-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="79cdd-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-teachers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="79cdd-138">Java</span><span class="sxs-lookup"><span data-stu-id="79cdd-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-teachers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="51ae6-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="51ae6-138">Response</span></span>
-<span data-ttu-id="51ae6-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="51ae6-139">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="79cdd-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="79cdd-139">Response</span></span>
+<span data-ttu-id="79cdd-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="79cdd-140">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="51ae6-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="51ae6-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="79cdd-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="79cdd-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
