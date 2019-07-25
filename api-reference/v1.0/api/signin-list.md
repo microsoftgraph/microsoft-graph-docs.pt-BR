@@ -4,12 +4,12 @@ description: Descreve o método list do recurso de entrada (entidade) da API do 
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7e8499538ba5a5fa61159f4c1a5db68454dbf0d7
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: b628abb986e04a137fb2fa50fe27d39a9390d580
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820812"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891587"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-signins-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-signins-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: Descreve o método Delete do recurso de grupo (entidade) da API do 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c71a068b3b3bd5a8fadfb735f6592b58a1fbbd11
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 15bd2c55fd7f5a056510a5025bc816e029267af3
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446140"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890705"
 ---
 # <a name="delete-group"></a>Excluir grupo
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
