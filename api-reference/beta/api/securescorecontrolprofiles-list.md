@@ -2,12 +2,12 @@
 title: Listar secureScoreControlProfiles
 description: Recupere as propriedades e os relacionamentos de um objeto secureScoreControlProfiles.
 localization_priority: Normal
-ms.openlocfilehash: b4bc25e8ed9820824f26a3380ef53e20ae08af45
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 089510a8b1abb8e6969dd0f40be7ea4858ffa98c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453793"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870391"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Listar secureScoreControlProfiles
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: Envie uma mensagem na pasta de rascunho. A mensagem de rascunho pod
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7f907fee128ac3f83a57f535f176c5bc30efd742
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 84b840b7525172c8a22d18d8e22361c5136a9083
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447939"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879435"
 ---
 # <a name="message-send"></a>message: send
 
@@ -75,6 +75,10 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-send-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-send-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

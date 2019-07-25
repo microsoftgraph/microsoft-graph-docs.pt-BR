@@ -4,12 +4,12 @@ description: 'Retorne uma lista de lembretes de calendário nas horas de início
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e1862065af70b372fc08090dc1c34814d6cb81c7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 96215dd3de6cf0d25c942f263af9f646f6b96b58
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449012"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855166"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 Retornar uma lista de lembretes de eventos em um calendário de usuário dentro dos horários de início e término especificados. 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T1
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-reminderview-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-reminderview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
