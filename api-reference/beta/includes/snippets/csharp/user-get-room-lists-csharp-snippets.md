@@ -1,17 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b26c76d2aa31188f948665765326b3de612540dc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6a6e93d95b4955725b680778bd8eb46626bc3dad
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35519196"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35867744"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var findRoomLists = await graphClient.Me.FindRoomLists()
+var findRoomLists = await graphClient.Me
+    .FindRoomLists()
     .Request()
     .GetAsync();
 

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1e368a464a693aaf45e11457c2a8dad12971d199
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 33a10630411230cc5e9fd5ab855f3e129cc3de64
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35739110"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891009"
 ---
 ```csharp
 
@@ -16,7 +16,8 @@ var queryOptions = new List<QueryOption>()
     new QueryOption("token", "latest")
 };
 
-var delta = await graphClient.Me.Drive.Root.Delta()
+var delta = await graphClient.Me.Drive.Root
+    .Delta()
     .Request( queryOptions )
     .GetAsync();
 
