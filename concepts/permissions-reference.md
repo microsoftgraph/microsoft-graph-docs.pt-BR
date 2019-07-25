@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 6e68a9c0a8f0eca222bd46a9ac15dda8d3d12f55
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 5f2af5521071821d7271547f207ccefa0d17aade
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620883"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840751"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -548,7 +548,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="identity-risk-event-permissions"></a>Permissões de Eventos de Risco de Identidade
+## <a name="identity-risk-event-permissions"></a>Permissões de eventos de risco de identidade
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
@@ -845,6 +845,22 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
+## <a name="on-premises-publishing-profiles-permissions"></a>Permissões de Perfis de Publicações Locais
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    Acessar Perfis de Publicações Locais| Permite que o aplicativo gerencie a configuração do serviço de identidade híbrida criando, exibindo, atualizando e excluindo recursos de publicações locais, agentes locais e grupos de agentes, em nome do usuário conectado. | Não | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    Acessar Perfis de Publicações Locais| Permite que o aplicativo gerencie a configuração do serviço de identidade híbrida criando, exibindo, atualizando e excluindo recursos de publicações locais, agentes locais e grupos de agentes, em nome do usuário conectado. | Não | Não |
+
+---
+
 ## <a name="openid-permissions"></a>Permissões do OpenID
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -868,6 +884,37 @@ Com o ponto de extremidade (v 1.0) do Azure AD, somente a permissão _openid_ é
 Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _offline\_access_ no parâmetro _scope_ para solicitar explicitamente um token de atualização quando estiver usando os protocolos OAuth 2.0 ou OpenID Connect. Com o OpenID Connect, você especifica a permissão _openid_ para solicitar um token de ID. Também é possível especificar a permissão _email_, a permissão _profile_, ou ambas, para retornar declarações adicionais no token de ID. Você não precisa especificar a _User.Read_ para retornar um token de ID com o ponto de extremidade v 2.0. Para saber mais, confira os [escopos do OpenID Connect](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 
 > **Importante** A Biblioteca de Autenticação da Microsoft (MSAL) atualmente especifica as permissões _offline\_access_, _openid_, _profile_ e _email_ por padrão nas solicitações de autorização e de token. Isso significa que, para o caso padrão, se você especificar explicitamente essas permissões, o Azure AD pode retornar um erro.
+
+---
+
+## <a name="organization-permissions"></a>Permissões da organização
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Organization.Read.All_ |Ler informações da organização | Permite que o aplicativo leia a organização e os recursos relacionados em nome do usuário conectado. Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário.|Sim | Não |
+| _Organization.ReadWrite.All_ |Ler e gravar informações da organização | Permite que o aplicativo leia e grave a organização e os recursos relacionados em nome do usuário conectado. Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário. |Sim | Não |
+
+<br/>
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Organization.Read.All_ |Ler informações da organização | Permite que o aplicativo leia a organização e os recursos relacionados sem um usuário conectado. Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário. | Sim |
+| _Organization.ReadWrite.All_ |Ler e gravar informações da organização | Permite que o aplicativo leia e grave a organização e os recursos relacionados sem um usuário conectado. Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário. |Sim |
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado	
+
+* _Organization.Read.All_: Obter informações da organização (`GET /organization`).
+* _Organization.Read.All_: Obter as SKUs inscritas pela organização (`GET /subscribedSkus`).
+
+#### <a name="application"></a>Aplicação
+
+* _Organization.ReadWrite.All_: Atualizar as informações da organização (como **technicalNotificationMails**) (`PATCH /organization/{id}`).
 
 ---
 
@@ -897,6 +944,22 @@ A permissão People.Read.All só é válida para contas corporativas ou de estud
 * _People.Read.All_: Ler uma lista de pessoas relevantes para outro usuário na mesma organização (`GET /users('{id})/people`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="places-permissions"></a>Permissões de locais
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Place.Read.All_ |Ler todos os locais da empresa |Permite que o aplicativo leia os locais da empresa (salas de conferência e listas de salas) para eventos de calendário e outros aplicativos. |Não | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Place.Read.All_ |   Ler todos os locais da empresa | Permite que o aplicativo leia os locais da empresa (salas de conferência e listas de salas) para eventos de calendário e outros aplicativos.| Sim |
 
 ---
 
