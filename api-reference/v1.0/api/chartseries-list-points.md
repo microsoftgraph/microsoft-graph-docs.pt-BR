@@ -4,12 +4,12 @@ description: Recupera uma lista de objetos chartpoints.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: dc5892c41bbd9a548cfb59d5086566adfcaf2da1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 57fd4ee742a61e3f2ca657166de76c460303374b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443200"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891435"
 ---
 # <a name="list-points"></a>Listar pontos
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-points-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-points-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

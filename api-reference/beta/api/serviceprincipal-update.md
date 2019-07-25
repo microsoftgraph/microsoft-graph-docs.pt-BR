@@ -2,12 +2,12 @@
 title: Atualizar o servicePrincipalName
 description: Atualiza as propriedades do objeto servicePrincipalName.
 localization_priority: Normal
-ms.openlocfilehash: b8b5d9e935c3dd745774cdf604507c15b068d58b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 829f8421875e0b11d174655424723c5dd856c46c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457216"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869880"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar o servicePrincipalName
 
@@ -104,6 +104,10 @@ Content-length: 391
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-serviceprincipal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
