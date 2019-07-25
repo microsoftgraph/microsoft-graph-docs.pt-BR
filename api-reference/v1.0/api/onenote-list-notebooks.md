@@ -4,12 +4,12 @@ description: Recuperar uma lista de objetos do bloco de anotações.
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 6e96c155d16c7a9bdc26a39c2c47cc930f478940
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 819120fbd4e91db4edbeff89315396ce3e41e36c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35454668"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892803"
 ---
 # <a name="list-notebooks"></a>Listar blocos de anotações
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-notebooks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-notebooks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
