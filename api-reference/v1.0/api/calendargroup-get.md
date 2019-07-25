@@ -4,12 +4,12 @@ description: Recupera as propriedades e os relacionamentos de um objeto de grupo
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 3cc37dffaa7c98d8bb851429908c58b279f45bec
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c8350ed7c3f703cb7d41563785e18c438709c931
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443760"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882410"
 ---
 # <a name="get-calendargroup"></a>Obter calendarGroup
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendargroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-calendargroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

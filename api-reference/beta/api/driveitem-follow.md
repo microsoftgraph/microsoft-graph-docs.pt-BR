@@ -4,12 +4,12 @@ ms.author: chackman
 title: Seguir item de unidade
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1dc7cdd1f863687773236fee927b6c5a37cf82ea
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 45831a12b9d2ad8466c4b176be6e6176f616d3f2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436421"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861205"
 ---
 # <a name="follow-drive-item"></a>Seguir item de unidade
 
@@ -70,6 +70,10 @@ POST /me/drive/items/{item-id}/follow
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/follow-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

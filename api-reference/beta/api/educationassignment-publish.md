@@ -4,12 +4,12 @@ description: Esta ação altera o estado de uma atribuição do status original 
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: efc25c79991a43d6003a8db4e23d7db006485280
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 52867328238c848657f00cdabe166e9249c1b00e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436134"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860770"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: publish
 
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

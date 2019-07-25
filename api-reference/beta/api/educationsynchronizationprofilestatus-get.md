@@ -4,12 +4,12 @@ description: Obter o status de um perfil de sincronização de dados escolar esp
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e17c8275c97e71430bc512bc85b87c976df18550
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ec1d86e7f9b4fc0ea57daf1bb979a45ed7abb9be
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441258"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859937"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Obter o status de um educationSynchronizationProfile
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-status-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-status-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

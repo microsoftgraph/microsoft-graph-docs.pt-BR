@@ -4,12 +4,12 @@ description: Exclua um calendário que não o calendário padrão.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7db2d3f57fe945c8c6a77d7fcc454f502cd9d046
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 43a8b34675fb043a2081873de87cec8a7f52a57a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443837"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882557"
 ---
 # <a name="delete-calendar"></a>Excluir calendário
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/me/calendar
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-calendar-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
