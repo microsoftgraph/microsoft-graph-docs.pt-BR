@@ -4,12 +4,12 @@ description: Remova o grupo da lista de grupos favoritos do usuário atual. Supo
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 86944b7899bfdced2e703a38b0d8ad2bb356183c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c93c858d72af6e19b216a7fb45e1ec64977f30c4
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442808"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857927"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-removefavorite-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-removefavorite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

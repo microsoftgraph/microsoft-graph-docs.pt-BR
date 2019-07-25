@@ -288,8 +288,10 @@ items:
             href: auth-limit-mailbox-access.md
       - name: Usar a API
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: use-the-api.md
+          - name: Acessar dados e métodos
+            href: traverse-the-graph.md
           - name: Paginação
             href: paging.md
           - name: Usar parâmetros de consulta

@@ -2,12 +2,12 @@
 title: Criar contrato
 description: Criar um novo objeto de contrato.
 localization_priority: Normal
-ms.openlocfilehash: caf98c8f5d1f006ce64c6e39c0d2e52cbfbde61a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a9f0dd682ca09ea9723409193447c07f845e27da
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439788"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855452"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -89,6 +89,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-agreement-from-agreements-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

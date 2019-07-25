@@ -4,12 +4,12 @@ description: Chamar esse método permitirá que o usuário atual receba notifica
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 3ccb84708b9213af4cb883ad79cd81d5f52de4b1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 12503de3c37cfa6e77affdd8125fe9cc7e431232
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442794"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857916"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 
@@ -64,6 +64,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/subscribeByMail
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-subscribebymail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-subscribebymail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

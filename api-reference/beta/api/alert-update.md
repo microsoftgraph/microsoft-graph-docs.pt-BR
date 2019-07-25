@@ -4,12 +4,12 @@ description: Atualize uma propriedade de alerta editável em qualquer solução 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 84e9a0687aa9ac298f4318d8c3c22b85b5dc3955
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 47c5499a49ce6e9f4bae7962a0a30e26a7290ed2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439753"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855369"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
@@ -105,6 +105,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-alert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

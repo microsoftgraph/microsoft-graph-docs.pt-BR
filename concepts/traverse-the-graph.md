@@ -1,15 +1,15 @@
 ---
-title: Percorrer o Microsoft Graph
+title: Acessar dados e métodos ao navegar no Microsoft Graph
 description: Além de usar a API do Microsoft Graph para ler e gravar dados, você pode usar diversos padrões de solicitação para desviar pelos recursos no Microsoft Graph. O documento de metadados também ajuda a entender o modelo de dados dos recursos e das relações no Microsoft Graph.
 localization_priority: Priority
-ms.openlocfilehash: 6f368568f34e1a81bddb38948325e5d97150f493
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2b02ca0ed623fa17d9b640ff0bb1c17c3b3e022e
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951220"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840646"
 ---
-# <a name="traverse-microsoft-graph"></a>Percorrer o Microsoft Graph
+# <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Acessar dados e métodos ao navegar no Microsoft Graph
 
 Além de usar a API do Microsoft Graph para ler e gravar dados, você pode usar diversos padrões de solicitação para desviar pelos recursos no Microsoft Graph. O documento de metadados também ajuda a entender o modelo de dados dos recursos e das relações no Microsoft Graph.
 
@@ -32,20 +32,23 @@ Com os metadados, você pode exibir e entender o modelo de dados do Microsoft Gr
 
 Você pode usar os metadados para compreender as relações entre entidades no Microsoft Graph e estabelecer URLs que navegam entre essas entidades.
 
-Os nomes de recursos, parâmetros de consulta, parâmetros de ação e valores da URL do caminho não diferenciam maiúsculas de minúsculas. No entanto, os valores atribuídos, as IDs de entidade e outros valores Codificados em Base 64 diferenciam maiúsculas de minúsculas.
+> [!NOTE]
+> - Use as IDs de recurso no mesmo caso de serem retornadas das APIs do Microsoft Graph.
+> - Presuma as IDs de recurso, os valores atribuídos e outros valores Codificados em Base 64 _diferenciam maiúsculas de minúsculas_.
+> - Os nomes de recursos, parâmetros de consulta, parâmetros de ação e valores da URL do caminho _não diferenciam maiúsculas de minúsculas_.
 
 ## <a name="view-a-collection-of-resources"></a>Exibir uma coleção de recursos
 
-O Microsoft Graph permite exibir recursos em um locatário usando consultas HTTP GET. A resposta da consulta inclui as propriedades de cada recurso, com todos os recursos identificados pelas respectivas IDs. O formato da ID do recurso pode ser um GUID e normalmente varia de acordo com o tipo de recurso.
+O Microsoft Graph permite exibir recursos em um locatário usando consultas HTTP `GET`. A resposta de consulta inclui as propriedades de cada recurso. Os recursos de entidade são todos identificados pela sua ID. O formato da ID do recurso pode ser um GUID e normalmente varia de acordo com o tipo de recurso.
 
-Por exemplo, você pode obter uma coleção de usuários definida no locatário:
+Por exemplo, você pode obter uma coleção de recursos de [user](/graph/api/resources/user?view=graph-rest-1.0) definida no locatário:
 
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-Se tiver êxito, você receberá uma resposta 200 OK que contém a coleção de recursos [user](/graph/api/resources/user?view=graph-rest-1.0) no payload. Cada usuário será identificado pela propriedade **id** e acompanhado pelas respectivas propriedades padrão. O payload exibido abaixo foi truncado por uma questão de resumo.
+Se tiver êxito, você receberá uma resposta 200 OK que contém a coleção de recursos **user** no payload. Cada usuário será identificado pela propriedade **id** e acompanhado pelas respectivas propriedades padrão. O payload exibido abaixo foi truncado por uma questão de resumo.
 
 ```no-highlight
 HTTP/1.1 200 OK
@@ -137,7 +140,9 @@ Content-type: application/json
 
 ## <a name="view-a-specific-resource-from-a-collection-by-id"></a>Exibir um recurso específico de uma coleção pela ID
 
-Para exibir as informações sobre um usuário, ainda com o uso do recurso **user** como exemplo, use uma solicitação GET HTTPS para chegar a um usuário específico pela ID do usuário. No caso de uma entidade **user**, você pode usar a propriedade **id** ou **userPrincipalName** como identificador. A solicitação de exemplo a seguir usa o valor **userPrincipalName** como ID do usuário.
+Para exibir as informações sobre um usuário, ainda com o uso do recurso **user** como exemplo, use uma solicitação GET HTTPS para chegar a um usuário específico pela ID do usuário. No caso de uma entidade **user**, você pode usar a propriedade **id** ou **userPrincipalName** como identificador.
+
+A solicitação de exemplo a seguir usa o valor **userPrincipalName** como ID do usuário.
 
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
@@ -194,7 +199,9 @@ content-length: 169
 Aqui, em vez de todos os conjuntos de propriedade na entidade **user**, somente as propriedades básicas **aboutMe**, **displayName** e **skills** são retornadas.
 
 ## <a name="read-specific-properties-of-the-resources-in-a-collection"></a>Ler propriedades específicas dos recursos em uma coleção
-Além de ler propriedades específicas de um único recurso, você também pode aplicar o parâmetro de consulta [$select](query-parameters.md) semelhante a uma coleção para obter todos os recursos na coleção com apenas as propriedades específicas retornadas em cada um. Por exemplo, para consultar o nome dos itens na unidade do usuário conectado, você pode enviar a seguinte solicitação HTTPS GET.
+Além de ler propriedades específicas de um único recurso, você também pode aplicar o parâmetro de consulta [$select](query-parameters.md) semelhante a uma coleção para obter todos os recursos na coleção com apenas as propriedades específicas retornadas em cada um.
+
+Por exemplo, para consultar o nome dos itens na unidade do usuário conectado, você pode enviar a seguinte solicitação HTTPS GET.
 
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
@@ -294,10 +301,10 @@ content-length: 147
   ]
 }
 ```
-Você pode ver todas as relações em um determinado recurso indo para os metadados, localizando EntityType e examinando todas as NavigationProperties do EntityType.
+Você pode ver todas as relações em um determinado recurso indo para os metadados, localizando `EntityType` e examinando todas as`NavigationProperty` do `EntityType`.
 
-## <a name="call-functions"></a>Funções de chamada
-O Microsoft Graph também oferece suporte a _funções_ para manipular recursos de maneiras que não são apenas operações de criar, ler, atualizar e excluir (CRUD). Eles normalmente estão na forma de solicitações de HTTPS POST para receber argumentos para a função. Por exemplo, a seguinte função permite que o usuário conectado (`me`) envie uma mensagem de email.
+## <a name="call-actions-and-functions"></a>Funções e ações de chamada
+O Microsoft Graph também oferece suporte a _ações_ e _funções_ para manipular recursos de maneiras que não são apenas operações de criar, ler, atualizar e excluir (CRUD). Eles normalmente estão na forma de solicitações de HTTPS POST para receber argumentos para ação e função. Por exemplo, a seguinte ação permite que o usuário conectado (`me`) envie uma mensagem de email.
 
 ```no-highlight
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
@@ -315,7 +322,7 @@ content-length: 96
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "garthf@a830edad9050849NDA1.onmicrosoft.com"
+          "address": "garthf@contoso.onmicrosoft.com"
         }
       }
     ],

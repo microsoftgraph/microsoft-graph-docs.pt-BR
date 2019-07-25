@@ -4,18 +4,20 @@ description: Use esta API para criar um novo proprietário.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3a0270d18856b32b6298ab66740ec754123dbbd8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 7c7ace73e1d6a2db3bac4502f9ddae6f4f0c0e1f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439585"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35856768"
 ---
 # <a name="create-owner"></a>Criar proprietário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use esta API para criar um novo proprietário.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,24 +30,24 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/{id}/owners
+POST /applications/{id}/owners/$ref
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório.  |
+| Nome | Descrição|
+|:---- |:---------- |
+| Autorização | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [directoryObject](../resources/directoryobject.md).
+No corpo da solicitação, forneça o identificador do objeto de diretório a ser atribuído como proprietário.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+O exemplo a seguir mostra a solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -53,14 +55,14 @@ Este é um exemplo da solicitação.
   "name": "create_directoryobject_from_application"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/owners
+POST https://graph.microsoft.com/beta/applications/{id}/owners/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+"@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
+
 ```
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-application-javascript-snippets.md)]
@@ -68,24 +70,19 @@ Content-length: 30
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [directoryObject](../resources/directoryobject.md).
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 51
-
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

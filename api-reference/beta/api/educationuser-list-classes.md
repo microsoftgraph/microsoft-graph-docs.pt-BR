@@ -4,12 +4,12 @@ description: 'Recupere uma lista de objetos de classe. Se o token delegado for u
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 46673a46d125bfebe1d3061b15161cf3a548a712
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ba276c72cc34c502670d73b70d10958954ccd691
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441209"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859815"
 ---
 # <a name="list-classes"></a>Listar classes
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/education/me/classes
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-classes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

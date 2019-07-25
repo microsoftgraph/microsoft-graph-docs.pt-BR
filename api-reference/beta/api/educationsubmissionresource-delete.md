@@ -4,12 +4,12 @@ description: Exclui um recurso do envio. Isso só pode ser feito pelo aluno. Se 
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ece6960764051401f08889a0d21bb88c39835701
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f9831a848c79ab2622b6a5d55fa4980b887c3069
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441356"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860098"
 ---
 # <a name="delete-educationsubmissionresource"></a>Excluir educationSubmissionResource
 
@@ -66,6 +66,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-educationsubmissionresource-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationsubmissionresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
