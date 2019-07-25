@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5c1d56ef7984f720e63c6c8ad904682b4ab1e809
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9d273c3a0446a7ad0059db40981691fb5097ac12
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35498152"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879507"
 ---
 ```csharp
 
@@ -13,6 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var attachment = new Attachment
 {
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.type","#microsoft.graph.referenceAttachment"}
+    },
     Name = "Personal pictures",
     SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
     ProviderType = "oneDriveConsumer",

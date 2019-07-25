@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: eaaa002278b2b7e45e9bf60b35e634a0624dd4de
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ed829c50c571add47f1836b4dd1fb6efe2d920b9
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35477479"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35874534"
 ---
 ```csharp
 
@@ -16,7 +16,8 @@ var workbookRangeFill = new WorkbookRangeFill
     Color = "color-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"].Range().Format.Fill
+await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+    .Range().Format.Fill
     .Request()
     .UpdateAsync(workbookRangeFill);
 

@@ -4,36 +4,36 @@ description: Gerencia operações de classificação em objetos Range.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fb7f99cc1d7dbdf3ecb81de6bd3e08f87b329642
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 1fa09d156210d7dbe31b5896be071663cc214c64
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460872"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891658"
 ---
-# <a name="rangesort-resource-type"></a><span data-ttu-id="fc5d6-103">Tipo de recurso RangeSort</span><span class="sxs-lookup"><span data-stu-id="fc5d6-103">RangeSort resource type</span></span>
+# <a name="rangesort-resource-type"></a><span data-ttu-id="ae950-103">Tipo de recurso RangeSort</span><span class="sxs-lookup"><span data-stu-id="ae950-103">RangeSort resource type</span></span>
 
-<span data-ttu-id="fc5d6-104">Gerencia operações de classificação em objetos Range.</span><span class="sxs-lookup"><span data-stu-id="fc5d6-104">Manages sorting operations on Range objects.</span></span>
+<span data-ttu-id="ae950-104">Gerencia operações de classificação em objetos Range.</span><span class="sxs-lookup"><span data-stu-id="ae950-104">Manages sorting operations on Range objects.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="fc5d6-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="fc5d6-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="ae950-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="ae950-105">Methods</span></span>
 
-| <span data-ttu-id="fc5d6-106">Método</span><span class="sxs-lookup"><span data-stu-id="fc5d6-106">Method</span></span>           | <span data-ttu-id="fc5d6-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="fc5d6-107">Return Type</span></span>    |<span data-ttu-id="fc5d6-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="fc5d6-108">Description</span></span>|
+| <span data-ttu-id="ae950-106">Método</span><span class="sxs-lookup"><span data-stu-id="ae950-106">Method</span></span>           | <span data-ttu-id="ae950-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="ae950-107">Return Type</span></span>    |<span data-ttu-id="ae950-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="ae950-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="fc5d6-109">Apply</span><span class="sxs-lookup"><span data-stu-id="fc5d6-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="fc5d6-110">Nenhum</span><span class="sxs-lookup"><span data-stu-id="fc5d6-110">None</span></span>|<span data-ttu-id="fc5d6-111">Execute uma operação de classificação.</span><span class="sxs-lookup"><span data-stu-id="fc5d6-111">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="ae950-109">Apply</span><span class="sxs-lookup"><span data-stu-id="ae950-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="ae950-110">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ae950-110">None</span></span>|<span data-ttu-id="ae950-111">Execute uma operação de classificação.</span><span class="sxs-lookup"><span data-stu-id="ae950-111">Perform a sort operation.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="fc5d6-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fc5d6-112">Properties</span></span>
-<span data-ttu-id="fc5d6-113">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="fc5d6-113">None</span></span>
+## <a name="properties"></a><span data-ttu-id="ae950-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ae950-112">Properties</span></span>
+<span data-ttu-id="ae950-113">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="ae950-113">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="fc5d6-114">Relações</span><span class="sxs-lookup"><span data-stu-id="fc5d6-114">Relationships</span></span>
-<span data-ttu-id="fc5d6-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="fc5d6-115">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="ae950-114">Relações</span><span class="sxs-lookup"><span data-stu-id="ae950-114">Relationships</span></span>
+<span data-ttu-id="ae950-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ae950-115">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="fc5d6-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fc5d6-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ae950-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ae950-116">JSON representation</span></span>
 
-<span data-ttu-id="fc5d6-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fc5d6-117">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ae950-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ae950-117">Here is a JSON representation of the resource.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fc5d6-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="fc5d6-118">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ae950-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="ae950-118">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
@@ -48,8 +48,8 @@ ms.locfileid: "35460872"
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="fc5d6-119">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fc5d6-119">Request</span></span>
-<span data-ttu-id="fc5d6-120">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fc5d6-120">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="ae950-119">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ae950-119">Request</span></span>
+<span data-ttu-id="ae950-120">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ae950-120">Here is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -58,23 +58,27 @@ ms.locfileid: "35460872"
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fc5d6-121">C#</span><span class="sxs-lookup"><span data-stu-id="fc5d6-121">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ae950-121">C#</span><span class="sxs-lookup"><span data-stu-id="ae950-121">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-sort-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fc5d6-122">Javascript</span><span class="sxs-lookup"><span data-stu-id="fc5d6-122">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ae950-122">Javascript</span><span class="sxs-lookup"><span data-stu-id="ae950-122">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-sort-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fc5d6-123">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="fc5d6-123">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ae950-123">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ae950-123">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-sort-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="ae950-124">Java</span><span class="sxs-lookup"><span data-stu-id="ae950-124">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/range-sort-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="fc5d6-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="fc5d6-124">Response</span></span>
-<span data-ttu-id="fc5d6-125">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fc5d6-125">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="ae950-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="ae950-125">Response</span></span>
+<span data-ttu-id="ae950-126">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ae950-126">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,69 +4,73 @@ title: Obter metadados de uma lista
 description: Retornar os metadados de um [list] [].
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 60764674ab8aeca106434c4c4400b339a7296152
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: b60b5b1d6190738d133a030c96149688fc9fc88b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840772"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880338"
 ---
-# <a name="get-metadata-for-a-list"></a><span data-ttu-id="3688d-103">Obter metadados de uma lista</span><span class="sxs-lookup"><span data-stu-id="3688d-103">Get metadata for a list</span></span>
+# <a name="get-metadata-for-a-list"></a><span data-ttu-id="898da-103">Obter metadados de uma lista</span><span class="sxs-lookup"><span data-stu-id="898da-103">Get metadata for a list</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3688d-104">Retornar os metadados de uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="3688d-104">Return the metadata for a [list][].</span></span>
+<span data-ttu-id="898da-104">Retornar os metadados de uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="898da-104">Return the metadata for a [list][].</span></span>
 
 [list]: ../resources/list.md
 
-## <a name="permissions"></a><span data-ttu-id="3688d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3688d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="898da-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="898da-106">Permissions</span></span>
 
-<span data-ttu-id="3688d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3688d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="898da-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="898da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3688d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3688d-109">Permission type</span></span>      | <span data-ttu-id="3688d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3688d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="898da-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="898da-109">Permission type</span></span>      | <span data-ttu-id="898da-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="898da-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3688d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3688d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3688d-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3688d-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3688d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3688d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3688d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3688d-114">Not supported.</span></span>    |
-|<span data-ttu-id="3688d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3688d-115">Application</span></span> | <span data-ttu-id="3688d-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3688d-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="898da-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="898da-111">Delegated (work or school account)</span></span> | <span data-ttu-id="898da-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="898da-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="898da-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="898da-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="898da-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="898da-114">Not supported.</span></span>    |
+|<span data-ttu-id="898da-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="898da-115">Application</span></span> | <span data-ttu-id="898da-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="898da-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3688d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3688d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="898da-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="898da-117">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-## <a name="request-body"></a><span data-ttu-id="3688d-118">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3688d-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="898da-118">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="898da-118">Request body</span></span>
 
-<span data-ttu-id="3688d-119">Não forneça um corpo de solicitação com esse método.</span><span class="sxs-lookup"><span data-stu-id="3688d-119">Do not supply a request body with this method.</span></span>
+<span data-ttu-id="898da-119">Não forneça um corpo de solicitação com esse método.</span><span class="sxs-lookup"><span data-stu-id="898da-119">Do not supply a request body with this method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3688d-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3688d-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="898da-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="898da-120">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3688d-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3688d-121">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="898da-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="898da-121">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3688d-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="3688d-122">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="898da-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="898da-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-list" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3688d-123">C#</span><span class="sxs-lookup"><span data-stu-id="3688d-123">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="898da-123">C#</span><span class="sxs-lookup"><span data-stu-id="898da-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3688d-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="3688d-124">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="898da-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="898da-124">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3688d-125">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="3688d-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="898da-125">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="898da-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="898da-126">Java</span><span class="sxs-lookup"><span data-stu-id="898da-126">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="3688d-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="3688d-126">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="898da-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="898da-127">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -86,33 +90,37 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="3688d-127">Com instruções `select` e `expand`, você pode recuperar metadados de lista, definições de coluna e itens de lista em uma única solicitação.</span><span class="sxs-lookup"><span data-stu-id="3688d-127">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
+<span data-ttu-id="898da-128">Com instruções `select` e `expand`, você pode recuperar metadados de lista, definições de coluna e itens de lista em uma única solicitação.</span><span class="sxs-lookup"><span data-stu-id="898da-128">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3688d-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3688d-128">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="898da-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="898da-129">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3688d-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="3688d-129">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="898da-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="898da-130">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3688d-130">C#</span><span class="sxs-lookup"><span data-stu-id="3688d-130">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="898da-131">C#</span><span class="sxs-lookup"><span data-stu-id="898da-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-multi-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3688d-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="3688d-131">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="898da-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="898da-132">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-multi-expand-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3688d-132">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="3688d-132">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="898da-133">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="898da-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-multi-expand-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="898da-134">Java</span><span class="sxs-lookup"><span data-stu-id="898da-134">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-multi-expand-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="3688d-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="3688d-133">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="898da-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="898da-135">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -165,17 +173,17 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="request"></a><span data-ttu-id="3688d-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3688d-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="898da-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="898da-136">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
-<span data-ttu-id="3688d-135">O exemplo a seguir mostra como obter metadados para uma lista que contém três colunas: Name, Quantity e Category.</span><span class="sxs-lookup"><span data-stu-id="3688d-135">The following example shows how to get metadata for a list that contains three columns: Name, Quantity, and Category.</span></span>
-<span data-ttu-id="3688d-136">Colunas de [metadados gerenciados](https://docs.microsoft.com/en-us/sharepoint/managed-metadata) como ```Category``` valores de retorno como um par de ID de termo e nome de termo.</span><span class="sxs-lookup"><span data-stu-id="3688d-136">[Managed Metadata](https://docs.microsoft.com/en-us/sharepoint/managed-metadata) columns like ```Category``` return values as term ID and term name pair.</span></span>
+<span data-ttu-id="898da-137">O exemplo a seguir mostra como obter metadados para uma lista que contém três colunas: Name, Quantity e Category.</span><span class="sxs-lookup"><span data-stu-id="898da-137">The following example shows how to get metadata for a list that contains three columns: Name, Quantity, and Category.</span></span>
+<span data-ttu-id="898da-138">Colunas de [metadados gerenciados](https://docs.microsoft.com/en-us/sharepoint/managed-metadata) como ```Category``` valores de retorno como um par de ID de termo e nome de termo.</span><span class="sxs-lookup"><span data-stu-id="898da-138">[Managed Metadata](https://docs.microsoft.com/en-us/sharepoint/managed-metadata) columns like ```Category``` return values as term ID and term name pair.</span></span>
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```
 
-#### <a name="response"></a><span data-ttu-id="3688d-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="3688d-137">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="898da-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="898da-139">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 

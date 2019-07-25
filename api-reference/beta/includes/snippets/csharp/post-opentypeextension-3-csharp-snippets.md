@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b96e48dcc26de546bbf86fb7115dccf052cbdee6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 04640234310079bd23af69209292dad557d69ea4
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35477314"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878342"
 ---
 ```csharp
 
@@ -13,6 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var extension = new Extension
 {
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.type","microsoft.graph.openTypeExtension"}
+    },
     ExtensionName = "Com.Contoso.Deal",
     CompanyName = "Alpine Skis",
     DealValue = 1010100,

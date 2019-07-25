@@ -4,50 +4,50 @@ description: Aplica novamente todos os filtros à tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f9f563a62ba79fa3f101c534b8935c94720beb74
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ec1106cae6e54516c43f47ad4a1f7201c088de98
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450405"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889571"
 ---
-# <a name="table-reapplyfilters"></a><span data-ttu-id="ea61a-103">Table: reapplyFilters</span><span class="sxs-lookup"><span data-stu-id="ea61a-103">Table: reapplyFilters</span></span>
+# <a name="table-reapplyfilters"></a><span data-ttu-id="8aaa8-103">Table: reapplyFilters</span><span class="sxs-lookup"><span data-stu-id="8aaa8-103">Table: reapplyFilters</span></span>
 
-<span data-ttu-id="ea61a-104">Aplica novamente todos os filtros à tabela.</span><span class="sxs-lookup"><span data-stu-id="ea61a-104">Reapplies all the filters currently on the table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ea61a-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ea61a-105">Permissions</span></span>
-<span data-ttu-id="ea61a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea61a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8aaa8-104">Aplica novamente todos os filtros à tabela.</span><span class="sxs-lookup"><span data-stu-id="8aaa8-104">Reapplies all the filters currently on the table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8aaa8-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="8aaa8-105">Permissions</span></span>
+<span data-ttu-id="8aaa8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8aaa8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ea61a-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ea61a-108">Permission type</span></span>      | <span data-ttu-id="ea61a-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ea61a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8aaa8-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8aaa8-108">Permission type</span></span>      | <span data-ttu-id="8aaa8-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8aaa8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ea61a-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ea61a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ea61a-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ea61a-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ea61a-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ea61a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea61a-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ea61a-113">Not supported.</span></span>    |
-|<span data-ttu-id="ea61a-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ea61a-114">Application</span></span> | <span data-ttu-id="ea61a-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ea61a-115">Not supported.</span></span> |
+|<span data-ttu-id="8aaa8-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8aaa8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8aaa8-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8aaa8-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8aaa8-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8aaa8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8aaa8-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8aaa8-113">Not supported.</span></span>    |
+|<span data-ttu-id="8aaa8-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8aaa8-114">Application</span></span> | <span data-ttu-id="8aaa8-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8aaa8-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ea61a-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ea61a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8aaa8-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8aaa8-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/reapplyFilters
 POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ea61a-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ea61a-117">Request headers</span></span>
-| <span data-ttu-id="ea61a-118">Nome</span><span class="sxs-lookup"><span data-stu-id="ea61a-118">Name</span></span>       | <span data-ttu-id="ea61a-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="ea61a-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8aaa8-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8aaa8-117">Request headers</span></span>
+| <span data-ttu-id="8aaa8-118">Nome</span><span class="sxs-lookup"><span data-stu-id="8aaa8-118">Name</span></span>       | <span data-ttu-id="8aaa8-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="8aaa8-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ea61a-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="ea61a-120">Authorization</span></span>  | <span data-ttu-id="ea61a-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ea61a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ea61a-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ea61a-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ea61a-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="ea61a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="8aaa8-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="8aaa8-120">Authorization</span></span>  | <span data-ttu-id="8aaa8-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8aaa8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8aaa8-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="8aaa8-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="8aaa8-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="8aaa8-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ea61a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ea61a-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8aaa8-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8aaa8-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="ea61a-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea61a-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8aaa8-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="8aaa8-127">Response</span></span>
 
-<span data-ttu-id="ea61a-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ea61a-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="8aaa8-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8aaa8-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ea61a-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ea61a-130">Example</span></span>
-<span data-ttu-id="ea61a-131">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="ea61a-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="ea61a-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ea61a-132">Request</span></span>
-<span data-ttu-id="ea61a-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ea61a-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8aaa8-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8aaa8-130">Example</span></span>
+<span data-ttu-id="8aaa8-131">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="8aaa8-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="8aaa8-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8aaa8-132">Request</span></span>
+<span data-ttu-id="8aaa8-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8aaa8-133">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ea61a-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea61a-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8aaa8-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="8aaa8-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "table_reapplyfilters"
@@ -55,23 +55,27 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ea61a-135">C#</span><span class="sxs-lookup"><span data-stu-id="ea61a-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8aaa8-135">C#</span><span class="sxs-lookup"><span data-stu-id="8aaa8-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-reapplyfilters-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ea61a-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="ea61a-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8aaa8-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="8aaa8-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/table-reapplyfilters-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ea61a-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ea61a-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8aaa8-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="8aaa8-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/table-reapplyfilters-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="8aaa8-138">Java</span><span class="sxs-lookup"><span data-stu-id="8aaa8-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/table-reapplyfilters-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="ea61a-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea61a-138">Response</span></span>
-<span data-ttu-id="ea61a-139">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ea61a-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="8aaa8-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="8aaa8-139">Response</span></span>
+<span data-ttu-id="8aaa8-140">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8aaa8-140">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

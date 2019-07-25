@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c2cdd2eafc51e5bd38aed41fcfcae259b5a9fe66
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: adb963d1f9b3ee2e0c6625a786e35a77682f6d4d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841077"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878244"
 ---
-# <a name="update-onpremisespublishingprofile"></a><span data-ttu-id="202a8-103">Atualizar onPremisesPublishingProfile</span><span class="sxs-lookup"><span data-stu-id="202a8-103">Update onPremisesPublishingProfile</span></span>
+# <a name="update-onpremisespublishingprofile"></a><span data-ttu-id="15b8d-103">Atualizar onPremisesPublishingProfile</span><span class="sxs-lookup"><span data-stu-id="15b8d-103">Update onPremisesPublishingProfile</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="202a8-104">Atualiza as propriedades de um objeto [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="202a8-104">Update the properties of an [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) object.</span></span>
+<span data-ttu-id="15b8d-104">Atualiza as propriedades de um objeto [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="15b8d-104">Update the properties of an [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="202a8-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="202a8-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="15b8d-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="15b8d-105">Permissions</span></span>
 
-<span data-ttu-id="202a8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="202a8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="15b8d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15b8d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="202a8-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="202a8-108">Permission type</span></span>                        | <span data-ttu-id="202a8-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="202a8-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="15b8d-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="15b8d-108">Permission type</span></span>                        | <span data-ttu-id="15b8d-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="15b8d-109">Permissions (from least to most privileged)</span></span> |
 |:--------------------------------------|:---------------------------------------------------------|
-| <span data-ttu-id="202a8-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="202a8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="202a8-111">OnPremisesPublishingProfiles. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="202a8-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
-| <span data-ttu-id="202a8-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="202a8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="202a8-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="202a8-113">Not supported.</span></span> |
-| <span data-ttu-id="202a8-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="202a8-114">Application</span></span>                            | <span data-ttu-id="202a8-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="202a8-115">Not supported.</span></span> |
+| <span data-ttu-id="15b8d-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="15b8d-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="15b8d-111">OnPremisesPublishingProfiles. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="15b8d-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
+| <span data-ttu-id="15b8d-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="15b8d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15b8d-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="15b8d-113">Not supported.</span></span> |
+| <span data-ttu-id="15b8d-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="15b8d-114">Application</span></span>                            | <span data-ttu-id="15b8d-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="15b8d-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="202a8-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="202a8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15b8d-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="15b8d-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,33 +36,35 @@ ms.locfileid: "35841077"
 PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfiguration
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="202a8-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="202a8-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="15b8d-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="15b8d-117">Request headers</span></span>
 
-| <span data-ttu-id="202a8-118">Nome</span><span class="sxs-lookup"><span data-stu-id="202a8-118">Name</span></span>       | <span data-ttu-id="202a8-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="202a8-119">Description</span></span>|
+| <span data-ttu-id="15b8d-118">Nome</span><span class="sxs-lookup"><span data-stu-id="15b8d-118">Name</span></span>       | <span data-ttu-id="15b8d-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="15b8d-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="202a8-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="202a8-120">Authorization</span></span> | <span data-ttu-id="202a8-121">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="202a8-121">Bearer {token}</span></span> |
+| <span data-ttu-id="15b8d-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="15b8d-120">Authorization</span></span> | <span data-ttu-id="15b8d-121">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="15b8d-121">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="202a8-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="202a8-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="15b8d-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="15b8d-122">Request body</span></span>
 
-<span data-ttu-id="202a8-123">No corpo da solicitação, forneça os valores de campos relevantes a serem atualizados.</span><span class="sxs-lookup"><span data-stu-id="202a8-123">In the request body, supply the values for relevant fields to update.</span></span> <span data-ttu-id="202a8-124">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="202a8-124">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="202a8-125">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="202a8-125">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="15b8d-123">No corpo da solicitação, forneça os valores de campos relevantes a serem atualizados.</span><span class="sxs-lookup"><span data-stu-id="15b8d-123">In the request body, supply the values for relevant fields to update.</span></span> <span data-ttu-id="15b8d-124">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="15b8d-124">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="15b8d-125">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="15b8d-125">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="202a8-126">Propriedade</span><span class="sxs-lookup"><span data-stu-id="202a8-126">Property</span></span>     | <span data-ttu-id="202a8-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="202a8-127">Type</span></span>        | <span data-ttu-id="202a8-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="202a8-128">Description</span></span> |
+| <span data-ttu-id="15b8d-126">Propriedade</span><span class="sxs-lookup"><span data-stu-id="15b8d-126">Property</span></span>     | <span data-ttu-id="15b8d-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="15b8d-127">Type</span></span>        | <span data-ttu-id="15b8d-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="15b8d-128">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="202a8-129">hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="202a8-129">hybridAgentUpdaterConfiguration</span></span>|<span data-ttu-id="202a8-130">hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="202a8-130">hybridAgentUpdaterConfiguration</span></span>|<span data-ttu-id="202a8-131">Representa [hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="202a8-131">Represents [hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md).</span></span>|
+|<span data-ttu-id="15b8d-129">hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="15b8d-129">hybridAgentUpdaterConfiguration</span></span>|<span data-ttu-id="15b8d-130">hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="15b8d-130">hybridAgentUpdaterConfiguration</span></span>|<span data-ttu-id="15b8d-131">Representa [hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="15b8d-131">Represents [hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="202a8-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="202a8-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15b8d-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="15b8d-132">Response</span></span>
 
-<span data-ttu-id="202a8-133">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="202a8-133">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="15b8d-133">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="15b8d-133">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="202a8-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="202a8-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="15b8d-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="15b8d-134">Examples</span></span>
 
-### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a><span data-ttu-id="202a8-135">Exemplo 1: atualizar updateWindow no hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="202a8-135">Example 1: Update updateWindow in the hybridAgentUpdaterConfiguration</span></span>
+### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a><span data-ttu-id="15b8d-135">Exemplo 1: atualizar updateWindow no hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="15b8d-135">Example 1: Update updateWindow in the hybridAgentUpdaterConfiguration</span></span>
 
-<span data-ttu-id="202a8-136">O exemplo a seguir atualiza o **updateWindow** no **hybridAgentUpdaterConfiguration**.</span><span class="sxs-lookup"><span data-stu-id="202a8-136">The following example updates the **updateWindow** in the **hybridAgentUpdaterConfiguration**.</span></span>
+<span data-ttu-id="15b8d-136">O exemplo a seguir atualiza o **updateWindow** no **hybridAgentUpdaterConfiguration**.</span><span class="sxs-lookup"><span data-stu-id="15b8d-136">The following example updates the **updateWindow** in the **hybridAgentUpdaterConfiguration**.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="202a8-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="202a8-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="15b8d-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15b8d-137">Request</span></span>
 
-<span data-ttu-id="202a8-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="202a8-138">The following is an example of the request.</span></span>
+<span data-ttu-id="15b8d-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="15b8d-138">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="15b8d-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="15b8d-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_onpremisespublishingprofile"
@@ -80,8 +82,26 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="15b8d-140">C#</span><span class="sxs-lookup"><span data-stu-id="15b8d-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-onpremisespublishingprofile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="202a8-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="202a8-139">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="15b8d-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="15b8d-141">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="15b8d-142">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="15b8d-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="15b8d-143">Java</span><span class="sxs-lookup"><span data-stu-id="15b8d-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-onpremisespublishingprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="15b8d-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="15b8d-144">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -93,13 +113,13 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a><span data-ttu-id="202a8-140">Exemplo 2: atualizar deferUpdate no hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="202a8-140">Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration</span></span> 
+### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a><span data-ttu-id="15b8d-145">Exemplo 2: atualizar deferUpdate no hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="15b8d-145">Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration</span></span> 
 
-<span data-ttu-id="202a8-141">O exemplo a seguir atualiza o **deferUpdate** no **hybridAgentUpdaterConfiguration**.</span><span class="sxs-lookup"><span data-stu-id="202a8-141">The following example updates **deferUpdate** in the **hybridAgentUpdaterConfiguration**.</span></span>
+<span data-ttu-id="15b8d-146">O exemplo a seguir atualiza o **deferUpdate** no **hybridAgentUpdaterConfiguration**.</span><span class="sxs-lookup"><span data-stu-id="15b8d-146">The following example updates **deferUpdate** in the **hybridAgentUpdaterConfiguration**.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="202a8-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="202a8-142">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="15b8d-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15b8d-147">Request</span></span>
 
-<span data-ttu-id="202a8-143">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="202a8-143">The following is an example of the request.</span></span>
+<span data-ttu-id="15b8d-148">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="15b8d-148">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_onpremisespublishingprofile"
@@ -114,7 +134,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="202a8-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="202a8-144">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="15b8d-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="15b8d-149">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -126,13 +146,13 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a><span data-ttu-id="202a8-145">Exemplo 3: atualizar allowUpdateConfigurationOverride no hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="202a8-145">Example 3: Update allowUpdateConfigurationOverride in the hybridAgentUpdaterConfiguration</span></span>
+### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a><span data-ttu-id="15b8d-150">Exemplo 3: atualizar allowUpdateConfigurationOverride no hybridAgentUpdaterConfiguration</span><span class="sxs-lookup"><span data-stu-id="15b8d-150">Example 3: Update allowUpdateConfigurationOverride in the hybridAgentUpdaterConfiguration</span></span>
 
-<span data-ttu-id="202a8-146">O exemplo a seguir atualiza o **allowUpdateConfigurationOverride** no **hybridAgentUpdaterConfiguration**.</span><span class="sxs-lookup"><span data-stu-id="202a8-146">The following example updates **allowUpdateConfigurationOverride** in the **hybridAgentUpdaterConfiguration**.</span></span>
+<span data-ttu-id="15b8d-151">O exemplo a seguir atualiza o **allowUpdateConfigurationOverride** no **hybridAgentUpdaterConfiguration**.</span><span class="sxs-lookup"><span data-stu-id="15b8d-151">The following example updates **allowUpdateConfigurationOverride** in the **hybridAgentUpdaterConfiguration**.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="202a8-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="202a8-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="15b8d-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15b8d-152">Request</span></span>
 
-<span data-ttu-id="202a8-148">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="202a8-148">The following is an example of the request.</span></span>
+<span data-ttu-id="15b8d-153">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="15b8d-153">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_onpremisespublishingprofile"
@@ -147,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="202a8-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="202a8-149">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="15b8d-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="15b8d-154">Response</span></span>
 
 <!-- {
   "blockType": "response",
