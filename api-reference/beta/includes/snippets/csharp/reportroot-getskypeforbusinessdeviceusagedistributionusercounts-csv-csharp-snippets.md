@@ -1,17 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: dfa3b7c1b32edf85835ef3ae19ea0c931ad0b01f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 30f09cbea35f1d93979a02dc277a663b9a1ebb27
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35499070"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35872371"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getSkypeForBusinessDeviceUsageDistributionUserCounts = await graphClient.Reports.GetSkypeForBusinessDeviceUsageDistributionUserCounts('D7')
+var getSkypeForBusinessDeviceUsageDistributionUserCounts = await graphClient.Reports
+    .GetSkypeForBusinessDeviceUsageDistributionUserCounts('D7')
     .Request()
     .GetAsync();
 
