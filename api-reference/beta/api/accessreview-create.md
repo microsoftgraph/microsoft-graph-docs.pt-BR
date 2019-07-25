@@ -4,80 +4,80 @@ description: No recurso de revisões do Azure AD Access, crie um novo objeto acc
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 167ddfad0f34c9f36a7203f05d90b22f9607755e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 923b9f1abd515821383becd31b511c554ddf29bd
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440124"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35856173"
 ---
-# <a name="create-accessreview"></a><span data-ttu-id="4222b-103">Criar accessReview</span><span class="sxs-lookup"><span data-stu-id="4222b-103">Create accessReview</span></span>
+# <a name="create-accessreview"></a><span data-ttu-id="25e96-103">Criar accessReview</span><span class="sxs-lookup"><span data-stu-id="25e96-103">Create accessReview</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4222b-104">No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , crie um novo objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="4222b-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.</span></span>
+<span data-ttu-id="25e96-104">No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , crie um novo objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="25e96-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="4222b-105">Antes de fazer essa solicitação, o chamador deve ter [recuperado previamente a lista de modelos de fluxo de negócios](businessflowtemplate-list.md), para que `businessFlowTemplateId` o valor de seja incluído na solicitação.</span><span class="sxs-lookup"><span data-stu-id="4222b-105">Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.</span></span>
+<span data-ttu-id="25e96-105">Antes de fazer essa solicitação, o chamador deve ter [recuperado previamente a lista de modelos de fluxo de negócios](businessflowtemplate-list.md), para que `businessFlowTemplateId` o valor de seja incluído na solicitação.</span><span class="sxs-lookup"><span data-stu-id="25e96-105">Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.</span></span>
 
-<span data-ttu-id="4222b-106">Depois de fazer essa solicitação, o chamador deve [criar um programControl](programcontrol-create.md)para vincular a revisão do Access a um programa.</span><span class="sxs-lookup"><span data-stu-id="4222b-106">After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.</span></span>  
+<span data-ttu-id="25e96-106">Depois de fazer essa solicitação, o chamador deve [criar um programControl](programcontrol-create.md)para vincular a revisão do Access a um programa.</span><span class="sxs-lookup"><span data-stu-id="25e96-106">After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.</span></span>  
 
-## <a name="permissions"></a><span data-ttu-id="4222b-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="4222b-107">Permissions</span></span>
-<span data-ttu-id="4222b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4222b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="25e96-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="25e96-107">Permissions</span></span>
+<span data-ttu-id="25e96-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="25e96-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4222b-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4222b-110">Permission type</span></span>                        | <span data-ttu-id="4222b-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4222b-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="25e96-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="25e96-110">Permission type</span></span>                        | <span data-ttu-id="25e96-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="25e96-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4222b-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4222b-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="4222b-113">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4222b-113">AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="4222b-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4222b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4222b-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4222b-115">Not supported.</span></span> |
-|<span data-ttu-id="4222b-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4222b-116">Application</span></span>                            | <span data-ttu-id="4222b-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4222b-117">Not supported.</span></span> |
+|<span data-ttu-id="25e96-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="25e96-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="25e96-113">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25e96-113">AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="25e96-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="25e96-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="25e96-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="25e96-115">Not supported.</span></span> |
+|<span data-ttu-id="25e96-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="25e96-116">Application</span></span>                            | <span data-ttu-id="25e96-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="25e96-117">Not supported.</span></span> |
 
-<span data-ttu-id="4222b-118">O chamador também deve ter a permissão ProgramControl. ReadWrite. All, de modo que depois de criar uma revisão do Access, o chamador possa criar um [ProgramControl](../resources/programcontrol.md).</span><span class="sxs-lookup"><span data-stu-id="4222b-118">The caller should also have ProgramControl.ReadWrite.All permission, so that after creating an access review, the caller can create a [programControl](../resources/programcontrol.md).</span></span>
-<span data-ttu-id="4222b-119">Além disso, o usuário conectado também deve estar em uma função de diretório que permite que eles criem uma revisão do Access.</span><span class="sxs-lookup"><span data-stu-id="4222b-119">In addition, the signed in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="4222b-120">Para obter mais detalhes, consulte a função e os requisitos de permissão para [revisões do Access](../resources/accessreviews-root.md).</span><span class="sxs-lookup"><span data-stu-id="4222b-120">For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).</span></span>
+<span data-ttu-id="25e96-118">O chamador também deve ter a permissão ProgramControl. ReadWrite. All, de modo que depois de criar uma revisão do Access, o chamador possa criar um [ProgramControl](../resources/programcontrol.md).</span><span class="sxs-lookup"><span data-stu-id="25e96-118">The caller should also have ProgramControl.ReadWrite.All permission, so that after creating an access review, the caller can create a [programControl](../resources/programcontrol.md).</span></span>
+<span data-ttu-id="25e96-119">Além disso, o usuário conectado também deve estar em uma função de diretório que permite que eles criem uma revisão do Access.</span><span class="sxs-lookup"><span data-stu-id="25e96-119">In addition, the signed in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="25e96-120">Para obter mais detalhes, consulte a função e os requisitos de permissão para [revisões do Access](../resources/accessreviews-root.md).</span><span class="sxs-lookup"><span data-stu-id="25e96-120">For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4222b-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4222b-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="25e96-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="25e96-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /accessReviews
 ```
-## <a name="request-headers"></a><span data-ttu-id="4222b-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4222b-122">Request headers</span></span>
-| <span data-ttu-id="4222b-123">Nome</span><span class="sxs-lookup"><span data-stu-id="4222b-123">Name</span></span>         | <span data-ttu-id="4222b-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="4222b-124">Type</span></span>        | <span data-ttu-id="4222b-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="4222b-125">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="25e96-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="25e96-122">Request headers</span></span>
+| <span data-ttu-id="25e96-123">Nome</span><span class="sxs-lookup"><span data-stu-id="25e96-123">Name</span></span>         | <span data-ttu-id="25e96-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="25e96-124">Type</span></span>        | <span data-ttu-id="25e96-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="25e96-125">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="4222b-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="4222b-126">Authorization</span></span> | <span data-ttu-id="4222b-127">string</span><span class="sxs-lookup"><span data-stu-id="4222b-127">string</span></span> | <span data-ttu-id="4222b-p103">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4222b-p103">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="25e96-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="25e96-126">Authorization</span></span> | <span data-ttu-id="25e96-127">string</span><span class="sxs-lookup"><span data-stu-id="25e96-127">string</span></span> | <span data-ttu-id="25e96-p103">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="25e96-p103">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4222b-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4222b-130">Request body</span></span>
-<span data-ttu-id="4222b-131">No corpo da solicitação, forneça uma representação JSON de um objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="4222b-131">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="25e96-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="25e96-130">Request body</span></span>
+<span data-ttu-id="25e96-131">No corpo da solicitação, forneça uma representação JSON de um objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="25e96-131">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="4222b-132">A tabela a seguir mostra as propriedades que são necessárias ao criar um accessReview.</span><span class="sxs-lookup"><span data-stu-id="4222b-132">The following table shows the properties that are required when you create an accessReview.</span></span>
+<span data-ttu-id="25e96-132">A tabela a seguir mostra as propriedades que são necessárias ao criar um accessReview.</span><span class="sxs-lookup"><span data-stu-id="25e96-132">The following table shows the properties that are required when you create an accessReview.</span></span>
 
-| <span data-ttu-id="4222b-133">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4222b-133">Property</span></span>     | <span data-ttu-id="4222b-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="4222b-134">Type</span></span>        | <span data-ttu-id="4222b-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="4222b-135">Description</span></span> |
+| <span data-ttu-id="25e96-133">Propriedade</span><span class="sxs-lookup"><span data-stu-id="25e96-133">Property</span></span>     | <span data-ttu-id="25e96-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="25e96-134">Type</span></span>        | <span data-ttu-id="25e96-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="25e96-135">Description</span></span> |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | <span data-ttu-id="4222b-136">O nome de revisão do acesso.</span><span class="sxs-lookup"><span data-stu-id="4222b-136">The access review name.</span></span>  |
-| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="4222b-137">O DateTime quando a revisão está agendada para ser iniciada.</span><span class="sxs-lookup"><span data-stu-id="4222b-137">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="4222b-138">Isso deve ser uma data no futuro.</span><span class="sxs-lookup"><span data-stu-id="4222b-138">This must be a date in the future.</span></span>   |
-| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="4222b-139">O DateTime quando a revisão é agendada para terminar.</span><span class="sxs-lookup"><span data-stu-id="4222b-139">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="4222b-140">Este deve ser pelo menos um dia depois da data de início.</span><span class="sxs-lookup"><span data-stu-id="4222b-140">This must be at least one day later than the start date.</span></span>   |
-| `description`             |`String`                                                        | <span data-ttu-id="4222b-141">A descrição, para mostrar aos revisores.</span><span class="sxs-lookup"><span data-stu-id="4222b-141">The description, to show to the reviewers.</span></span> |
-| `businessFlowTemplateId`  |`String`                                                        | <span data-ttu-id="4222b-142">O identificador do modelo de fluxo de negócios obtido de um [businessFlowTemplate](../resources/businessflowtemplate.md).</span><span class="sxs-lookup"><span data-stu-id="4222b-142">The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).</span></span>  |
-| `reviewerType`            |`String`                                                        | <span data-ttu-id="4222b-143">O tipo de relação de revisor para os direitos de acesso do objeto revisado, `self`um `delegated`de, `entityOwners`ou.</span><span class="sxs-lookup"><span data-stu-id="4222b-143">The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`.</span></span> | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | <span data-ttu-id="4222b-144">O objeto para o qual uma revisão de acesso é criada, como a associação de um grupo ou as atribuições de usuários a um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="4222b-144">The object for which an access review is created, such as the membership of a group or the assignments of users to an application.</span></span> | 
+| `displayName`             |`String`                                                        | <span data-ttu-id="25e96-136">O nome de revisão do acesso.</span><span class="sxs-lookup"><span data-stu-id="25e96-136">The access review name.</span></span>  |
+| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="25e96-137">O DateTime quando a revisão está agendada para ser iniciada.</span><span class="sxs-lookup"><span data-stu-id="25e96-137">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="25e96-138">Isso deve ser uma data no futuro.</span><span class="sxs-lookup"><span data-stu-id="25e96-138">This must be a date in the future.</span></span>   |
+| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="25e96-139">O DateTime quando a revisão é agendada para terminar.</span><span class="sxs-lookup"><span data-stu-id="25e96-139">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="25e96-140">Este deve ser pelo menos um dia depois da data de início.</span><span class="sxs-lookup"><span data-stu-id="25e96-140">This must be at least one day later than the start date.</span></span>   |
+| `description`             |`String`                                                        | <span data-ttu-id="25e96-141">A descrição, para mostrar aos revisores.</span><span class="sxs-lookup"><span data-stu-id="25e96-141">The description, to show to the reviewers.</span></span> |
+| `businessFlowTemplateId`  |`String`                                                        | <span data-ttu-id="25e96-142">O identificador do modelo de fluxo de negócios obtido de um [businessFlowTemplate](../resources/businessflowtemplate.md).</span><span class="sxs-lookup"><span data-stu-id="25e96-142">The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).</span></span>  |
+| `reviewerType`            |`String`                                                        | <span data-ttu-id="25e96-143">O tipo de relação de revisor para os direitos de acesso do objeto revisado, `self`um `delegated`de, `entityOwners`ou.</span><span class="sxs-lookup"><span data-stu-id="25e96-143">The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`.</span></span> | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | <span data-ttu-id="25e96-144">O objeto para o qual uma revisão de acesso é criada, como a associação de um grupo ou as atribuições de usuários a um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="25e96-144">The object for which an access review is created, such as the membership of a group or the assignments of users to an application.</span></span> | 
 
 
-<span data-ttu-id="4222b-145">Se o revisortype que está sendo fornecido tiver `delegated`o valor, o chamador também deverá incluir `reviewers` a propriedade, com uma coleção de UserIdentity dos revisores. [](../resources/useridentity.md)</span><span class="sxs-lookup"><span data-stu-id="4222b-145">If the reviewerType being supplied has the value `delegated`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.</span></span>
+<span data-ttu-id="25e96-145">Se o revisortype que está sendo fornecido tiver `delegated`o valor, o chamador também deverá incluir `reviewers` a propriedade, com uma coleção de UserIdentity dos revisores. [](../resources/useridentity.md)</span><span class="sxs-lookup"><span data-stu-id="25e96-145">If the reviewerType being supplied has the value `delegated`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.</span></span>
 
-<span data-ttu-id="4222b-146">Se seu aplicativo estiver chamando esta API sem um usuário conectado, o chamador também deverá incluir a propriedade **createdBy** , o valor para o qual é um UserIdentity [](../resources/useridentity.md) do usuário que será identificado como criador da revisão.</span><span class="sxs-lookup"><span data-stu-id="4222b-146">If your app is calling this API without a signed-in user, then the caller must also include the **createdBy** property, the value for which is a [userIdentity](../resources/useridentity.md) of the user who will be identified as the creator of the review.</span></span>
+<span data-ttu-id="25e96-146">Se seu aplicativo estiver chamando esta API sem um usuário conectado, o chamador também deverá incluir a propriedade **createdBy** , o valor para o qual é um UserIdentity [](../resources/useridentity.md) do usuário que será identificado como criador da revisão.</span><span class="sxs-lookup"><span data-stu-id="25e96-146">If your app is calling this API without a signed-in user, then the caller must also include the **createdBy** property, the value for which is a [userIdentity](../resources/useridentity.md) of the user who will be identified as the creator of the review.</span></span>
 
-<span data-ttu-id="4222b-147">Além disso, o chamador pode incluir configurações, para criar uma série de análise recorrente ou para alterar o comportamento de revisão padrão.</span><span class="sxs-lookup"><span data-stu-id="4222b-147">In addition, the caller can include settings, to create a recurring review series or to change from the default review behavior.</span></span> <span data-ttu-id="4222b-148">Em particular, para criar uma revisão recorrente, o chamador deve incluir as `accessReviewRecurrenceSettings` configurações de revisão do Access,</span><span class="sxs-lookup"><span data-stu-id="4222b-148">In particular, to create a recurring review, the caller must include the `accessReviewRecurrenceSettings` within the access review settings,</span></span>
-
-
-## <a name="response"></a><span data-ttu-id="4222b-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="4222b-149">Response</span></span>
-<span data-ttu-id="4222b-150">Se tiver êxito, este método retornará `201, Created` um código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4222b-150">If successful, this method returns a `201, Created` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="4222b-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4222b-151">Example</span></span>
-
-<span data-ttu-id="4222b-152">Este é um exemplo de criação de uma revisão de acesso de uma única vez (não recorrente), especificando explicitamente dois usuários como os revisores.</span><span class="sxs-lookup"><span data-stu-id="4222b-152">This is an example of creating a one-time (not recurring) access review, explicitly specifying two users as the reviewers.</span></span>
-
-##### <a name="request"></a><span data-ttu-id="4222b-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4222b-153">Request</span></span>
-<span data-ttu-id="4222b-154">No corpo da solicitação, forneça uma representação JSON do objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="4222b-154">In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.</span></span>
+<span data-ttu-id="25e96-147">Além disso, o chamador pode incluir configurações, para criar uma série de análise recorrente ou para alterar o comportamento de revisão padrão.</span><span class="sxs-lookup"><span data-stu-id="25e96-147">In addition, the caller can include settings, to create a recurring review series or to change from the default review behavior.</span></span> <span data-ttu-id="25e96-148">Em particular, para criar uma revisão recorrente, o chamador deve incluir as `accessReviewRecurrenceSettings` configurações de revisão do Access,</span><span class="sxs-lookup"><span data-stu-id="25e96-148">In particular, to create a recurring review, the caller must include the `accessReviewRecurrenceSettings` within the access review settings,</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4222b-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="4222b-155">HTTP</span></span>](#tab/http)
+## <a name="response"></a><span data-ttu-id="25e96-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="25e96-149">Response</span></span>
+<span data-ttu-id="25e96-150">Se tiver êxito, este método retornará `201, Created` um código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="25e96-150">If successful, this method returns a `201, Created` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="25e96-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="25e96-151">Example</span></span>
+
+<span data-ttu-id="25e96-152">Este é um exemplo de criação de uma revisão de acesso de uma única vez (não recorrente), especificando explicitamente dois usuários como os revisores.</span><span class="sxs-lookup"><span data-stu-id="25e96-152">This is an example of creating a one-time (not recurring) access review, explicitly specifying two users as the reviewers.</span></span>
+
+##### <a name="request"></a><span data-ttu-id="25e96-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="25e96-153">Request</span></span>
+<span data-ttu-id="25e96-154">No corpo da solicitação, forneça uma representação JSON do objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="25e96-154">In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.</span></span>
+
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="25e96-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="25e96-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReview_from_accessReviews"
@@ -126,23 +126,27 @@ Content-type: application/json
     }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4222b-156">C#</span><span class="sxs-lookup"><span data-stu-id="4222b-156">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="25e96-156">C#</span><span class="sxs-lookup"><span data-stu-id="25e96-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreview-from-accessreviews-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4222b-157">Javascript</span><span class="sxs-lookup"><span data-stu-id="4222b-157">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="25e96-157">Javascript</span><span class="sxs-lookup"><span data-stu-id="25e96-157">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreview-from-accessreviews-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4222b-158">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="4222b-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="25e96-158">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="25e96-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accessreview-from-accessreviews-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="25e96-159">Java</span><span class="sxs-lookup"><span data-stu-id="25e96-159">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreview-from-accessreviews-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="4222b-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="4222b-159">Response</span></span>
-><span data-ttu-id="4222b-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4222b-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="25e96-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="25e96-160">Response</span></span>
+><span data-ttu-id="25e96-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="25e96-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
