@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos **plannerTask** associados a um objet
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a9a2d02105c08c4f9a34be84fa33d9e95b8251c6
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: 5ec6136a55b46062536305b6c5903d0b306a0406
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820595"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886849"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/tasks
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

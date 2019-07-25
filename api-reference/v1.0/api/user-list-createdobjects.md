@@ -4,12 +4,12 @@ description: Obtenha uma lista de objetos de diretório criados pelo usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6fcf3fa517d61a2ff71b91fc36feb0edb7a02f32
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5d4f80bf9db33b7f78070f3b2b935d285cfb0366
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460340"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888906"
 ---
 # <a name="list-createdobjects"></a>Listar createdObjects
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/v1.0/me/createdObjects
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-createdobjects-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-createdobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
