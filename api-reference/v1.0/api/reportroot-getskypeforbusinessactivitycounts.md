@@ -4,12 +4,12 @@ description: Obtenha as tendências de quantos usuários organizaram e participa
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5a4fdd8243bb5bcac11c714a0853e33916a42a41
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 7ca49349f215ed79df4db2506ef00f2930c3676b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459430"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35885910"
 ---
 # <a name="reportroot-getskypeforbusinessactivitycounts"></a>reportRoot: getSkypeForBusinessActivityCounts
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessActivityCounts(p
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessactivitycounts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getskypeforbusinessactivitycounts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

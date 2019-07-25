@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos de tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ed7e362d4fef2f99219456ccbe3f03904c0f8d8e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cb04942bb94ad413dfb561093c022c2720c4ac35
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456509"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35866226"
 ---
 # <a name="list-tables"></a>Listar tabelas
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tables-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-tables-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

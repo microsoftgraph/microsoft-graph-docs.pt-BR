@@ -4,12 +4,12 @@ description: Obtenha a contagem de usuários únicos conectados ao Exchange Onli
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e987c82b94159bcecd19638f4c8e1d56e538c3cb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5f4ba897ce25ad6f4e71f1a0339addefe19b847f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449425"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886373"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 
@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageUserCounts(period='
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getemailappusageusercounts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getemailappusageusercounts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: Os grupos são conjuntos de usuários e de outras entidades de segu
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 6905021b15b163bf18f6e08c36fba8e9a2a31229
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fe906f193f7bcac28496c41dae60af049f75144d
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547377"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840737"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -17,7 +17,7 @@ Os grupos são coleções de [usuários](user.md) e de outras entidades de segur
 
 > **Observação**: os grupos só podem ser criados por meio de contas corporativas ou de estudante. As contas pessoais da Microsoft não são compatíveis com grupos.
 
-| Tipo              | Caso de uso | groupType | habilitado para email | habilitado para segurança | Pode ser criado por meio de API? |
+| Tipo              | Caso de uso | groupType | habilitado para email | habilitado para segurança | Podem ser criados e gerenciados via API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
 | [Grupos do Office 365](#office-365-groups) | Facilitar a colaboração entre usuários com os recursos compartilhados online da Microsoft. | `["Unified"]` | `true` | `false` | Sim |
 | [Grupos de segurança](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo. | `[]` | `false` | `true` | Sim |
@@ -71,7 +71,7 @@ Saiba mais sobre os grupos do Office 365 e as experiências de administrador no 
 
 Os grupos de segurança servem para controlar o acesso de usuários aos recursos. Ao verificar se um usuário faz parte de um grupo de segurança, seu aplicativo pode tomar decisões de autorização quando esse usuário tentar acessar alguns recursos seguros do seu aplicativo. Os grupos de segurança podem ter como membros usuários e outros grupos de segurança.
 
-Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Não é possível criar grupos de segurança habilitados para email por meio da API, mas as outras operações do grupo funcionarão. Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](https://technet.microsoft.com/pt-BR/library/bb123521%28v=exchg.160%29.aspx).
+Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Não é possível criar grupos de segurança habilitados para email por meio da API, mas as outras operações do grupo funcionarão. Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx).
 
 ### <a name="security-group-example"></a>Exemplo de grupo de segurança
 
@@ -118,7 +118,7 @@ POST https://graph.microsoft.com/beta/groups
 
 Saiba como formular membershipRules no artigo [Criar regras baseadas em atributo para associação dinâmica de grupo no Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
-> **Observação**: as regras de associação dinâmica exigem que o locatário tenha uma licença ao nível [Azure Active Directory Premium P1](https://azure.microsoft.com/pt-BR/pricing/details/active-directory/) ou posterior.
+> **Observação**: as regras de associação dinâmica exigem que o locatário tenha uma licença ao nível [Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) ou posterior.
 
 ## <a name="other-types-of-groups"></a>Outros tipos de grupos
 

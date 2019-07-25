@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto chartaxis.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9b494c13be480a00537ebc515c9ee1e65d477d5c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 18ec74147644a6711096ac5d64533d3021bb0f3e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443508"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882047"
 ---
 # <a name="update-chartaxis"></a>Atualizar chartaxis
 
@@ -82,6 +82,10 @@ Content-length: 64
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-chartaxis-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-chartaxis-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: Validar se o nome de exibição ou o apelido de email de um grupo d
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 7da24d3a28c8640f231b9d94c295e6a16abe040b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: dc1f156be72536e2765d77fefa09fe2f5c4bbeec
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442668"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857728"
 ---
 # <a name="group-validateproperties"></a>Group: ValidateProperties
 
@@ -93,6 +93,10 @@ Content-length: 132
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

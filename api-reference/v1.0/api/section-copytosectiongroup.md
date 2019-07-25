@@ -4,12 +4,12 @@ description: Copia uma seção para um grupo de seção específico.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 1353cc691d3f9ea2bca47c03c47154707df4713a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a22240d5d9299c12cc4e5c5f6f7c983b57eccacd
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461523"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884076"
 ---
 # <a name="section-copytosectiongroup"></a>seção: copyToSectionGroup
 Copia uma seção para um grupo de seção específico.
@@ -86,6 +86,10 @@ Content-length: 84
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/section-copytosectiongroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/section-copytosectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

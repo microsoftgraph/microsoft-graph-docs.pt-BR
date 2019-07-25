@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Mover um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1c78bbfc7f4a1fc3042458685ce4662a08faa9d6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: dd5c38420d33a70d056cf4e7189f0d368800b37a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443963"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881683"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover um DriveItem para uma nova pasta
 
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/move-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/move-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

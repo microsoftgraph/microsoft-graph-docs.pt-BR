@@ -3,12 +3,12 @@ title: Usar a API do Microsoft Graph
 description: O Microsoft Graph é uma API Web RESTful que permite que você acesse os recursos de serviço do Microsoft Cloud. Depois que você registrar seu aplicativo e obter tokens de autenticação para um usuário ou serviço, é possível fazer solicitações para a API do Microsoft Graph.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 0d4c49e2b2961b99afac2445976c3d56234262bc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 18de281cc0becfacfdabe5fb81a68358f04c3747
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575888"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840639"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
@@ -18,22 +18,25 @@ O Microsoft Graph é uma API Web RESTful que permite que você acesse os recurso
 
 Para ler de ou gravar em um recurso como um usuário ou uma mensagem de email, você constrói uma solicitação semelhante ao seguinte.
 
+<!-- {
+  "blockType": "ignored"
+}-->
 ```http
-https://graph.microsoft.com/{version}/{resource}?query-parameters
+{HTTP method} https://graph.microsoft.com/{version}/{resource}?{query-parameters}
 ```
 
 Os componentes de uma solicitação incluem:
 
-* [Método HTTP](#http-methods) -o método HTTP usado na solicitação para o Microsoft Graph.
-* [`{version}`](#version) – a versão da API do Microsoft Graph que seu aplicativo está usando.
-* [`{resource}`](#resource) – o recurso no Microsoft Graph ao qual você está fazendo referência.
-* [query-parameters](#query-parameters-optional) – um conjunto opcional de parâmetros para modificar a solicitação ou a resposta.
+* [{Método HTTP}](#http-methods) – O método HTTP usado na solicitação para o Microsoft Graph.
+* [{versão}](#version) – A versão da API do Microsoft Graph que seu aplicativo está usando.
+* [{recurso}](#resource) – O recurso no Microsoft Graph ao qual você está fazendo referência. 
+* [{Parâmetros-da-consultas}](#query-parameters-optional) –Opções de consulta OData opcionais ou parâmetros do método REST que personalizam a resposta.
 
 Depois de fazer uma solicitação, uma resposta é retornada, que inclui: 
 
 * Código de status – um código de status HTTP que indica o sucesso ou o fracasso. Para obter detalhes sobre os códigos de erro HTTP, confira [Erros](errors.md).
 * Mensagem de resposta – os dados que você solicitou ou o resultado da operação. A mensagem de resposta pode estar vazia em algumas operações.
-* Link **Avançar** – se a solicitação retornar muitos dados, será necessário percorrê-los escolhendo **Avançar**. Para obter detalhes, confira [Paginação](paging.md).
+* `nextLink` – Se a solicitação retornar muitos dados, será necessário percorrê-los usando a URL retornada no `@odata.nextLink`. Para obter detalhes, confira [Paginação](paging.md).
 
 ## <a name="http-methods"></a>Métodos HTTP
 
@@ -48,8 +51,8 @@ O Microsoft Graph usa o método HTTP em sua solicitação para determinar sua so
 | PUT    | Substituir um recurso por um novo.           |
 | DELETE | Remover um recurso.                           |
 
-* Nos métodos **GET** e **DELETE**, nenhum corpo de solicitação é obrigatório.
-* Os métodos **POST**, **PATCH** e **PUT** precisam de um corpo de solicitação, normalmente especificado em formato JSON que contém informações adicionais, como os valores das propriedades do recurso.
+* Nos métodos CRUD, `GET` e `DELETE`, nenhum corpo de solicitação é obrigatório.
+* Os métodos `POST`, `PATCH` e `PUT` precisam de um corpo de solicitação, normalmente especificado em formato JSON que contém informações adicionais, como os valores das propriedades do recurso.
 
 ## <a name="version"></a>Versão
 
@@ -62,27 +65,41 @@ Estamos sempre buscando comentários sobre nossas APIs beta. Para fornecer comen
 
 Para saber mais sobre as versões da API, veja [Suporte e controle de versão](versioning-and-support.md).
 
-## <a name="resource"></a>Resource
+## <a name="resource"></a>Recurso
 
-Sua URL incluirá um ou mais recursos com que você está interagindo na solicitação, como `me`, `users`, `groups`, `drives` e `sites`. Cada um dos recursos de nível superior também inclui **relações**, que podem ser usados para acessar recursos adicionais, como `me/messages` ou `me/drive`. Você também pode interagir com os recursos usando **métodos**, por exemplo, para enviar um email, use `me/sendMail`.
+Um recurso pode ser uma entidade ou tipo complexo, normalmente definido com propriedades. As entidades são diferentes de tipos complexos, incluindo sempre uma propriedade de **id**.
 
-Para saber mais sobre como navegar por métodos e relações do recurso, confira [Desviar o gráfico](traverse-the-graph.md). 
+Sua URL incluirá um ou mais recursos com que você está interagindo na solicitação, como `me`, **usuário**, **grupo**, **unidade** e **site**. Frequentemente, cada um dos recursos de nível superior também inclui _relações_, que podem ser usadas para acessar recursos adicionais, como `me/messages` ou `me/drive`. Você também pode interagir com os recursos usando _métodos_; por exemplo, para enviar um email, use `me/sendMail`. Para mais informações, confira [Acessar dados e métodos ao navegar no Microsoft Graph](traverse-the-graph.md).
 
 Cada recurso pode exigir diferentes permissões de acesso. Muitas vezes será necessário um nível mais alto de permissões para criar ou atualizar um recurso do que para lê-lo. Para obter detalhes sobre as permissões necessárias, veja o tópico de referência do método. 
 
 Para obter detalhes sobre permissões, veja [Referência de permissões](permissions-reference.md).
 
-## <a name="query-parameters-optional"></a>Parâmetros de consulta (opcional)
+## <a name="query-parameters"></a>Parâmetros de consulta
 
-Você pode usar parâmetros de consulta opcionais para personalizar a resposta em seu aplicativo Microsoft Graph. Use parâmetros de consulta para incluir mais ou menos propriedades do que a resposta padrão, filtrar a resposta para itens que correspondem a uma consulta personalizada ou oferecem parâmetros adicionais para um método.
+Os parâmetros de consulta podem ser opções de consulta do sistema OData ou outras cadeias de caracteres que um método aceita para personalizar a resposta.
 
-Por exemplo, adicionar o seguinte parâmetro de filtro restringe as mensagens retornadas para apenas aquelas com a propriedade `emailAddress` de `jon@contoso.com`.
+Use parâmetros de consulta do sistema OData para incluir mais ou menos propriedades do que a resposta padrão, filtrar a resposta para itens que correspondem a uma consulta personalizada ou oferecem parâmetros adicionais para um método.
 
+Por exemplo, adicionar o seguinte parâmetro de `filter` restringe as mensagens retornadas para apenas aquelas com a propriedade de `emailAddress` do `jon@contoso.com`. 
+
+<!-- {
+  "blockType": "ignored"
+}-->
 ```http
-https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
+GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
 ```
 
-Para saber mais sobre os parâmetros de consulta, veja [Personalizar respostas](query-parameters.md).
+Para obter mais informações sobre as opções de consulta OData, confira [Usar parâmetros de consulta para personalizar respostas](query-parameters.md).
+
+Com exceção das opções de consulta OData, alguns métodos exigem valores de parâmetro especificados como parte da URL da consulta. Por exemplo, é possível obter uma coleção de eventos ocorridos durante um período de tempo no calendário de um usuário, consultando a relação **calendarView** de um **usuário**e especificando o período dos valores `startDateTime` e `endDateTime` como parâmetros da consulta:
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
+```
 
 ## <a name="next-steps"></a>Próximas etapas
 

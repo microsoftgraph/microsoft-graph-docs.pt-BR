@@ -4,12 +4,12 @@ description: Obtenha grupos e funções de diretório dos quais o usuário é me
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f0ef5e9dc32d3109095bee58b95a19eba46d83c8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c11d46b16c3a7c20bc6d2eeef4c995608218a926
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460179"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882823"
 ---
 # <a name="list-user-transitive-memberof"></a>Listar usuário transitiva membro
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/me/transitiveMemberOf
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-transitivememberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
