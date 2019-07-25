@@ -2,12 +2,12 @@
 title: Listar memberOf
 description: Recupere o MemberGroup do qual o conector é membro.
 localization_priority: Normal
-ms.openlocfilehash: 19d6e8c45751f5c257c00381c90e77b7bff0bb19
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 28051e687d65beaea3962e2f4befce9f9c9d8f25
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327475"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863404"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 
@@ -47,7 +47,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "name": "get_memberof"
+  "name": "connector_get_memberof"
 }-->
 ```http
 GET https://graph.microsoft.com/{ver}/connectors/{id}/memberOf

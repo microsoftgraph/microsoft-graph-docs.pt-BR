@@ -4,12 +4,12 @@ description: Uma ação que indica que um aluno foi feito com o trabalho e está
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 58ddf90e574e146ebdbd9134ec41ae2ac76637bb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 21b7eba1d7fac70a3e40833487e6f32ad09c28c1
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441405"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860205"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: enviar
 
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-submit-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-submit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

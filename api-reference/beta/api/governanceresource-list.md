@@ -2,12 +2,12 @@
 title: Listar governanceResources
 description: Recupere uma coleção de Entidadegovernanceresource à qual o solicitante tem acesso.
 localization_priority: Normal
-ms.openlocfilehash: dedbe5640ecd7435c6e7525fdbfa37e693d35c18
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 702ab0ae1d47913584a7d3f6e86c939d871d6865
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440796"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859146"
 ---
 # <a name="list-governanceresources"></a>Listar governanceResources
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governanceresources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-governanceresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

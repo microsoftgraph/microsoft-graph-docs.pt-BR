@@ -4,12 +4,12 @@ description: O intervalo usado é o menor intervalo que abrange todas as célula
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 835c55600a4ccf5eae8e721a516dd7f390ef68ff
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0182b752622b177ecf3ab0de029d4e0a10d356ec
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458639"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35866072"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/worksheet-usedrange-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/worksheet-usedrange-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
