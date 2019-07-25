@@ -4,54 +4,54 @@ description: Recuperar o histórico de riscos
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 66da1eeaf8fc6c357be987e54a76b8d2adeb689d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e8799e8f5bf2de0f2745a1dc5b09ab17a8066e62
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447694"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35871084"
 ---
-# <a name="list-history-of-riskyuser"></a><span data-ttu-id="d59f0-103">Listar histórico de riskyUser</span><span class="sxs-lookup"><span data-stu-id="d59f0-103">List history of riskyUser</span></span>
+# <a name="list-history-of-riskyuser"></a><span data-ttu-id="15d22-103">Listar histórico de riskyUser</span><span class="sxs-lookup"><span data-stu-id="15d22-103">List history of riskyUser</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d59f0-104">Obter o histórico de riscos de um recurso [riskyUser](../resources/riskyuser.md) .</span><span class="sxs-lookup"><span data-stu-id="d59f0-104">Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.</span></span>
+<span data-ttu-id="15d22-104">Obter o histórico de riscos de um recurso [riskyUser](../resources/riskyuser.md) .</span><span class="sxs-lookup"><span data-stu-id="15d22-104">Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.</span></span>
 
-><span data-ttu-id="d59f0-105">**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.</span><span class="sxs-lookup"><span data-stu-id="d59f0-105">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
+><span data-ttu-id="15d22-105">**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.</span><span class="sxs-lookup"><span data-stu-id="15d22-105">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d59f0-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d59f0-106">Permissions</span></span>
-<span data-ttu-id="d59f0-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d59f0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="15d22-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="15d22-106">Permissions</span></span>
+<span data-ttu-id="15d22-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15d22-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d59f0-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d59f0-109">Permission type</span></span>      | <span data-ttu-id="d59f0-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d59f0-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="15d22-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="15d22-109">Permission type</span></span>      | <span data-ttu-id="15d22-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="15d22-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d59f0-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d59f0-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d59f0-112">Identityriskuser. Read. All, IdentityRiskUser. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d59f0-112">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d59f0-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d59f0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d59f0-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d59f0-114">Not supported.</span></span>    |
-|<span data-ttu-id="d59f0-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d59f0-115">Application</span></span> | <span data-ttu-id="d59f0-116">Identityriskuser. Read. All, IdentityRiskUser. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d59f0-116">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span> |
+|<span data-ttu-id="15d22-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="15d22-111">Delegated (work or school account)</span></span> | <span data-ttu-id="15d22-112">Identityriskuser. Read. All, IdentityRiskUser. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="15d22-112">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span>    |
+|<span data-ttu-id="15d22-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="15d22-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15d22-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="15d22-114">Not supported.</span></span>    |
+|<span data-ttu-id="15d22-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="15d22-115">Application</span></span> | <span data-ttu-id="15d22-116">Identityriskuser. Read. All, IdentityRiskUser. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="15d22-116">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d59f0-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d59f0-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15d22-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="15d22-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{id}/history
 ```
 
 
-## <a name="request-headers"></a><span data-ttu-id="d59f0-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d59f0-118">Request headers</span></span>
-| <span data-ttu-id="d59f0-119">Nome</span><span class="sxs-lookup"><span data-stu-id="d59f0-119">Name</span></span>      |<span data-ttu-id="d59f0-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="d59f0-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="15d22-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="15d22-118">Request headers</span></span>
+| <span data-ttu-id="15d22-119">Nome</span><span class="sxs-lookup"><span data-stu-id="15d22-119">Name</span></span>      |<span data-ttu-id="15d22-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="15d22-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d59f0-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="d59f0-121">Authorization</span></span>  | <span data-ttu-id="d59f0-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d59f0-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="15d22-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="15d22-121">Authorization</span></span>  | <span data-ttu-id="15d22-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="15d22-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d59f0-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d59f0-124">Request body</span></span>
-<span data-ttu-id="d59f0-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d59f0-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15d22-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="15d22-124">Request body</span></span>
+<span data-ttu-id="15d22-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="15d22-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d59f0-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="d59f0-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15d22-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="15d22-126">Response</span></span>
 
-<span data-ttu-id="d59f0-127">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d59f0-127">If successful, this method returns a `200 OK` response code and a collection of [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) objects in the response body.</span></span>
+<span data-ttu-id="15d22-127">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="15d22-127">If successful, this method returns a `200 OK` response code and a collection of [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d59f0-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d59f0-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d59f0-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d59f0-129">Request</span></span>
-<span data-ttu-id="d59f0-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d59f0-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="15d22-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="15d22-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="15d22-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15d22-129">Request</span></span>
+<span data-ttu-id="15d22-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="15d22-130">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d59f0-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="d59f0-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="15d22-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="15d22-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_userriskhitsory",
@@ -60,22 +60,26 @@ GET /riskyUsers/{id}/history
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d59f0-132">C#</span><span class="sxs-lookup"><span data-stu-id="d59f0-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="15d22-132">C#</span><span class="sxs-lookup"><span data-stu-id="15d22-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d59f0-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="d59f0-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="15d22-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="15d22-133">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d59f0-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="d59f0-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="15d22-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="15d22-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="15d22-135">Java</span><span class="sxs-lookup"><span data-stu-id="15d22-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="d59f0-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="d59f0-135">Response</span></span>
-<span data-ttu-id="d59f0-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d59f0-136">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="15d22-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="15d22-136">Response</span></span>
+<span data-ttu-id="15d22-137">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="15d22-137">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

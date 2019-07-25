@@ -4,30 +4,30 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Acessar itens compartilhados
 localization_priority: Normal
-ms.openlocfilehash: 0d0c244c1707714bd651be0dd8e0d22752a0a628
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 887567bc780c65b88989d8df79fdaec0f7b4c676
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441608"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891630"
 ---
-# <a name="accessing-shared-driveitems"></a><span data-ttu-id="14470-102">Acessar DriveItems compartilhados</span><span class="sxs-lookup"><span data-stu-id="14470-102">Accessing shared DriveItems</span></span>
+# <a name="accessing-shared-driveitems"></a><span data-ttu-id="e336a-102">Acessar DriveItems compartilhados</span><span class="sxs-lookup"><span data-stu-id="e336a-102">Accessing shared DriveItems</span></span>
 
-<span data-ttu-id="14470-103">Acesse um [DriveItem](../resources/driveitem.md) compartilhado ou uma coleção de itens compartilhados usando um **shareId** ou uma URL de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="14470-103">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
+<span data-ttu-id="e336a-103">Acesse um [DriveItem](../resources/driveitem.md) compartilhado ou uma coleção de itens compartilhados usando um **shareId** ou uma URL de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="e336a-103">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
 
-<span data-ttu-id="14470-104">Para usar uma URL de compartilhamento com esta API, seu aplicativo precisa [transformar a URL em um token de compartilhamento](#encoding-sharing-urls).</span><span class="sxs-lookup"><span data-stu-id="14470-104">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).</span></span>
+<span data-ttu-id="e336a-104">Para usar uma URL de compartilhamento com esta API, seu aplicativo precisa [transformar a URL em um token de compartilhamento](#encoding-sharing-urls).</span><span class="sxs-lookup"><span data-stu-id="e336a-104">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="14470-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="14470-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e336a-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e336a-105">Permissions</span></span>
 
-<span data-ttu-id="14470-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14470-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e336a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e336a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="14470-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="14470-108">Permission type</span></span>      | <span data-ttu-id="14470-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="14470-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e336a-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e336a-108">Permission type</span></span>      | <span data-ttu-id="e336a-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e336a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="14470-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="14470-110">Delegated (work or school account)</span></span> | <span data-ttu-id="14470-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14470-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="14470-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="14470-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14470-113">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14470-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="14470-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="14470-114">Application</span></span> | <span data-ttu-id="14470-115">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14470-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="e336a-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e336a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e336a-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e336a-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e336a-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e336a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e336a-113">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e336a-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e336a-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e336a-114">Application</span></span> | <span data-ttu-id="e336a-115">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e336a-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="14470-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="14470-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e336a-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e336a-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,21 +35,21 @@ ms.locfileid: "35441608"
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### <a name="path-parameters"></a><span data-ttu-id="14470-117">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="14470-117">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="e336a-117">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="e336a-117">Path parameters</span></span>
 
-| <span data-ttu-id="14470-118">Nome do Parâmetro</span><span class="sxs-lookup"><span data-stu-id="14470-118">Parameter Name</span></span>                 | <span data-ttu-id="14470-119">Valor</span><span class="sxs-lookup"><span data-stu-id="14470-119">Value</span></span>    | <span data-ttu-id="14470-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="14470-120">Description</span></span>                                                                         |
+| <span data-ttu-id="e336a-118">Nome do Parâmetro</span><span class="sxs-lookup"><span data-stu-id="e336a-118">Parameter Name</span></span>                 | <span data-ttu-id="e336a-119">Valor</span><span class="sxs-lookup"><span data-stu-id="e336a-119">Value</span></span>    | <span data-ttu-id="e336a-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="e336a-120">Description</span></span>                                                                         |
 |:-------------------------------|:---------|:------------------------------------------------------------------------------------|
-| <span data-ttu-id="14470-121">**shareIdOrEncodedSharingUrl**</span><span class="sxs-lookup"><span data-stu-id="14470-121">**shareIdOrEncodedSharingUrl**</span></span> | `string` | <span data-ttu-id="14470-122">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="14470-122">Required.</span></span> <span data-ttu-id="14470-123">Um token de compartilhamento retornado pela API ou uma URL de compartilhamento corretamente codificada.</span><span class="sxs-lookup"><span data-stu-id="14470-123">A sharing token as returned by the API or a properly encoded sharing URL.</span></span> |
+| <span data-ttu-id="e336a-121">**shareIdOrEncodedSharingUrl**</span><span class="sxs-lookup"><span data-stu-id="e336a-121">**shareIdOrEncodedSharingUrl**</span></span> | `string` | <span data-ttu-id="e336a-122">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e336a-122">Required.</span></span> <span data-ttu-id="e336a-123">Um token de compartilhamento retornado pela API ou uma URL de compartilhamento corretamente codificada.</span><span class="sxs-lookup"><span data-stu-id="e336a-123">A sharing token as returned by the API or a properly encoded sharing URL.</span></span> |
 
-### <a name="encoding-sharing-urls"></a><span data-ttu-id="14470-124">Codificação de URLs de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="14470-124">Encoding sharing URLs</span></span>
+### <a name="encoding-sharing-urls"></a><span data-ttu-id="e336a-124">Codificação de URLs de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="e336a-124">Encoding sharing URLs</span></span>
 
-<span data-ttu-id="14470-125">Para codificar uma URL de compartilhamento, use a seguinte lógica:</span><span class="sxs-lookup"><span data-stu-id="14470-125">To encode a sharing URL, use the following logic:</span></span>
+<span data-ttu-id="e336a-125">Para codificar uma URL de compartilhamento, use a seguinte lógica:</span><span class="sxs-lookup"><span data-stu-id="e336a-125">To encode a sharing URL, use the following logic:</span></span>
 
-1. <span data-ttu-id="14470-126">Primeiro, use base64 para codificar a URL.</span><span class="sxs-lookup"><span data-stu-id="14470-126">First, use base64 encode the URL.</span></span>
-2. <span data-ttu-id="14470-127">Converta o resultado codificado na base64 para o [formato base64url sem preenchimento](https://en.wikipedia.org/wiki/Base64) removendo caracteres `=` do final do valor, substituindo `/` por `_` e `+` por `-`.)</span><span class="sxs-lookup"><span data-stu-id="14470-127">Convert the base64 encoded result to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by removing `=` characters from the end of the value, replacing `/` with `_` and `+` with `-`.)</span></span>
-3. <span data-ttu-id="14470-128">Acrescente `u!` ao início da cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="14470-128">Append `u!` to be beginning of the string.</span></span>
+1. <span data-ttu-id="e336a-126">Primeiro, use base64 para codificar a URL.</span><span class="sxs-lookup"><span data-stu-id="e336a-126">First, use base64 encode the URL.</span></span>
+2. <span data-ttu-id="e336a-127">Converta o resultado codificado na base64 para o [formato base64url sem preenchimento](https://en.wikipedia.org/wiki/Base64) removendo caracteres `=` do final do valor, substituindo `/` por `_` e `+` por `-`.)</span><span class="sxs-lookup"><span data-stu-id="e336a-127">Convert the base64 encoded result to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by removing `=` characters from the end of the value, replacing `/` with `_` and `+` with `-`.)</span></span>
+3. <span data-ttu-id="e336a-128">Acrescente `u!` ao início da cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="e336a-128">Append `u!` to be beginning of the string.</span></span>
 
-<span data-ttu-id="14470-129">Por exemplo, para codificar uma URL em C#:</span><span class="sxs-lookup"><span data-stu-id="14470-129">As an example, to encode a URL in C#:</span></span>
+<span data-ttu-id="e336a-129">Por exemplo, para codificar uma URL em C#:</span><span class="sxs-lookup"><span data-stu-id="e336a-129">As an example, to encode a URL in C#:</span></span>
 
 ```csharp
 string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&authKey=1201919!12921!1";
@@ -57,56 +57,60 @@ string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.Get
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="14470-130">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="14470-130">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="e336a-130">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="e336a-130">Optional request headers</span></span>
 
-| <span data-ttu-id="14470-131">Nome</span><span class="sxs-lookup"><span data-stu-id="14470-131">Name</span></span>       | <span data-ttu-id="14470-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="14470-132">Type</span></span>   | <span data-ttu-id="14470-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="14470-133">Description</span></span>                                                    |
+| <span data-ttu-id="e336a-131">Nome</span><span class="sxs-lookup"><span data-stu-id="e336a-131">Name</span></span>       | <span data-ttu-id="e336a-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="e336a-132">Type</span></span>   | <span data-ttu-id="e336a-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="e336a-133">Description</span></span>                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| <span data-ttu-id="14470-134">**Prefer**</span><span class="sxs-lookup"><span data-stu-id="14470-134">**Prefer**</span></span> | <span data-ttu-id="14470-135">string</span><span class="sxs-lookup"><span data-stu-id="14470-135">string</span></span> | <span data-ttu-id="14470-136">Opcional.</span><span class="sxs-lookup"><span data-stu-id="14470-136">Optional.</span></span> <span data-ttu-id="14470-137">Defina como um dos `prefer` valores documentados abaixo.</span><span class="sxs-lookup"><span data-stu-id="14470-137">Set to one of the `prefer` values documented below.</span></span>  |
+| <span data-ttu-id="e336a-134">**Prefer**</span><span class="sxs-lookup"><span data-stu-id="e336a-134">**Prefer**</span></span> | <span data-ttu-id="e336a-135">string</span><span class="sxs-lookup"><span data-stu-id="e336a-135">string</span></span> | <span data-ttu-id="e336a-136">Opcional.</span><span class="sxs-lookup"><span data-stu-id="e336a-136">Optional.</span></span> <span data-ttu-id="e336a-137">Defina como um dos `prefer` valores documentados abaixo.</span><span class="sxs-lookup"><span data-stu-id="e336a-137">Set to one of the `prefer` values documented below.</span></span>  |
 
-### <a name="prefer-header-values"></a><span data-ttu-id="14470-138">Preferir valores de cabeçalho</span><span class="sxs-lookup"><span data-stu-id="14470-138">Prefer header values</span></span>
+### <a name="prefer-header-values"></a><span data-ttu-id="e336a-138">Preferir valores de cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e336a-138">Prefer header values</span></span>
 
-| <span data-ttu-id="14470-139">Nome</span><span class="sxs-lookup"><span data-stu-id="14470-139">Name</span></span>                          | <span data-ttu-id="14470-140">Descrição</span><span class="sxs-lookup"><span data-stu-id="14470-140">Description</span></span>                                                                                             |
+| <span data-ttu-id="e336a-139">Nome</span><span class="sxs-lookup"><span data-stu-id="e336a-139">Name</span></span>                          | <span data-ttu-id="e336a-140">Descrição</span><span class="sxs-lookup"><span data-stu-id="e336a-140">Description</span></span>                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="14470-141">redeemSharingLink</span><span class="sxs-lookup"><span data-stu-id="14470-141">redeemSharingLink</span></span>             | <span data-ttu-id="14470-142">Se o **shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda ao chamador acesso durável ao item</span><span class="sxs-lookup"><span data-stu-id="14470-142">If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item</span></span>    |
-| <span data-ttu-id="14470-143">redeemSharingLinkIfNecessary</span><span class="sxs-lookup"><span data-stu-id="14470-143">redeemSharingLinkIfNecessary</span></span>  | <span data-ttu-id="14470-144">O mesmo que redeemSharingLink, mas o acesso só é garantido para a duração da solicitação</span><span class="sxs-lookup"><span data-stu-id="14470-144">Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request</span></span> |
+| <span data-ttu-id="e336a-141">redeemSharingLink</span><span class="sxs-lookup"><span data-stu-id="e336a-141">redeemSharingLink</span></span>             | <span data-ttu-id="e336a-142">Se o **shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda ao chamador acesso durável ao item</span><span class="sxs-lookup"><span data-stu-id="e336a-142">If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item</span></span>    |
+| <span data-ttu-id="e336a-143">redeemSharingLinkIfNecessary</span><span class="sxs-lookup"><span data-stu-id="e336a-143">redeemSharingLinkIfNecessary</span></span>  | <span data-ttu-id="e336a-144">O mesmo que redeemSharingLink, mas o acesso só é garantido para a duração da solicitação</span><span class="sxs-lookup"><span data-stu-id="e336a-144">Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request</span></span> |
 
-<span data-ttu-id="14470-145">redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto o redeemSharingLinkIfNecessary se destina a cenários em que a intenção é simplesmente exibir o link do los.</span><span class="sxs-lookup"><span data-stu-id="14470-145">redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture), whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.</span></span>
+<span data-ttu-id="e336a-145">redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto o redeemSharingLinkIfNecessary se destina a cenários em que a intenção é simplesmente exibir o link do los.</span><span class="sxs-lookup"><span data-stu-id="e336a-145">redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture), whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.</span></span>
 
-## <a name="response"></a><span data-ttu-id="14470-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="14470-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e336a-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="e336a-146">Response</span></span>
 
-<span data-ttu-id="14470-147">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [sharedDriveItem](../resources/shareddriveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="14470-147">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="e336a-147">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [sharedDriveItem](../resources/shareddriveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e336a-147">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="14470-148">Exemplo</span><span class="sxs-lookup"><span data-stu-id="14470-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e336a-148">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e336a-148">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="14470-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="14470-149">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e336a-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e336a-149">Request</span></span>
 
-<span data-ttu-id="14470-150">Veja a seguir um exemplo da solicitação para recuperar um item compartilhado:</span><span class="sxs-lookup"><span data-stu-id="14470-150">Here is an example of the request to retrieve a shared item:</span></span>
+<span data-ttu-id="e336a-150">Veja a seguir um exemplo da solicitação para recuperar um item compartilhado:</span><span class="sxs-lookup"><span data-stu-id="e336a-150">Here is an example of the request to retrieve a shared item:</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="14470-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="14470-151">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e336a-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="e336a-151">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
 ```http
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="14470-152">C#</span><span class="sxs-lookup"><span data-stu-id="14470-152">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e336a-152">C#</span><span class="sxs-lookup"><span data-stu-id="e336a-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="14470-153">Javascript</span><span class="sxs-lookup"><span data-stu-id="14470-153">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e336a-153">Javascript</span><span class="sxs-lookup"><span data-stu-id="e336a-153">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="14470-154">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="14470-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e336a-154">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="e336a-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-root-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="e336a-155">Java</span><span class="sxs-lookup"><span data-stu-id="e336a-155">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-root-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="14470-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="14470-155">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e336a-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="e336a-156">Response</span></span>
 
-<span data-ttu-id="14470-156">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="14470-156">Here is an example of the response.</span></span>
+<span data-ttu-id="e336a-157">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e336a-157">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
 
@@ -126,39 +130,43 @@ Content-type: application/json
 }
 ```
 
-## <a name="access-the-shared-item-directly"></a><span data-ttu-id="14470-157">Acessar diretamente o item compartilhado</span><span class="sxs-lookup"><span data-stu-id="14470-157">Access the shared item directly</span></span>
+## <a name="access-the-shared-item-directly"></a><span data-ttu-id="e336a-158">Acessar diretamente o item compartilhado</span><span class="sxs-lookup"><span data-stu-id="e336a-158">Access the shared item directly</span></span>
 
-<span data-ttu-id="14470-p104">Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas informações úteis, a maioria dos aplicativos acessará diretamente o [DriveItem](../resources/driveitem.md) compartilhado. O recurso **SharedDriveItem** inclui **root** e relações **itens** que podem acessar o conteúdo no escopo do item compartilhado.</span><span class="sxs-lookup"><span data-stu-id="14470-p104">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
+<span data-ttu-id="e336a-p104">Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas informações úteis, a maioria dos aplicativos acessará diretamente o [DriveItem](../resources/driveitem.md) compartilhado. O recurso **SharedDriveItem** inclui **root** e relações **itens** que podem acessar o conteúdo no escopo do item compartilhado.</span><span class="sxs-lookup"><span data-stu-id="e336a-p104">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
-## <a name="example-single-file"></a><span data-ttu-id="14470-160">Exemplo (arquivo único)</span><span class="sxs-lookup"><span data-stu-id="14470-160">Example (single file)</span></span>
+## <a name="example-single-file"></a><span data-ttu-id="e336a-161">Exemplo (arquivo único)</span><span class="sxs-lookup"><span data-stu-id="e336a-161">Example (single file)</span></span>
 
-### <a name="request"></a><span data-ttu-id="14470-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="14470-161">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e336a-162">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e336a-162">Request</span></span>
 
-<span data-ttu-id="14470-162">Ao solicitar a relação **driveItem**, o **DriveItem** compartilhado será retornado.</span><span class="sxs-lookup"><span data-stu-id="14470-162">By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.</span></span>
+<span data-ttu-id="e336a-163">Ao solicitar a relação **driveItem**, o **DriveItem** compartilhado será retornado.</span><span class="sxs-lookup"><span data-stu-id="e336a-163">By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="14470-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="14470-163">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e336a-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="e336a-164">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
 ```http
 GET /shares/{shareIdOrUrl}/driveItem
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="14470-164">C#</span><span class="sxs-lookup"><span data-stu-id="14470-164">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e336a-165">C#</span><span class="sxs-lookup"><span data-stu-id="e336a-165">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-driveitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="14470-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="14470-165">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e336a-166">Javascript</span><span class="sxs-lookup"><span data-stu-id="e336a-166">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-driveitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="14470-166">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="14470-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e336a-167">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="e336a-167">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="e336a-168">Java</span><span class="sxs-lookup"><span data-stu-id="e336a-168">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="14470-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="14470-167">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e336a-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="e336a-169">Response</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -175,35 +183,39 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-shared-folder"></a><span data-ttu-id="14470-168">Exemplo (pasta compartilhada)</span><span class="sxs-lookup"><span data-stu-id="14470-168">Example (shared folder)</span></span>
+## <a name="example-shared-folder"></a><span data-ttu-id="e336a-170">Exemplo (pasta compartilhada)</span><span class="sxs-lookup"><span data-stu-id="e336a-170">Example (shared folder)</span></span>
 
-### <a name="request"></a><span data-ttu-id="14470-169">Solicitação</span><span class="sxs-lookup"><span data-stu-id="14470-169">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e336a-171">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e336a-171">Request</span></span>
 
-<span data-ttu-id="14470-170">Solicitando a relação **driveItem** e expandindo a coleção **children**, o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.</span><span class="sxs-lookup"><span data-stu-id="14470-170">By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
+<span data-ttu-id="e336a-172">Solicitando a relação **driveItem** e expandindo a coleção **children**, o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.</span><span class="sxs-lookup"><span data-stu-id="e336a-172">By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="14470-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="14470-171">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e336a-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="e336a-173">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
 GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="14470-172">C#</span><span class="sxs-lookup"><span data-stu-id="14470-172">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e336a-174">C#</span><span class="sxs-lookup"><span data-stu-id="e336a-174">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-driveitem-expand-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="14470-173">Javascript</span><span class="sxs-lookup"><span data-stu-id="14470-173">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e336a-175">Javascript</span><span class="sxs-lookup"><span data-stu-id="e336a-175">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-driveitem-expand-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="14470-174">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="14470-174">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e336a-176">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="e336a-176">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-expand-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="e336a-177">Java</span><span class="sxs-lookup"><span data-stu-id="e336a-177">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-expand-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="14470-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="14470-175">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e336a-178">Resposta</span><span class="sxs-lookup"><span data-stu-id="e336a-178">Response</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -234,13 +246,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="14470-176">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="14470-176">Error Responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="e336a-179">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="e336a-179">Error Responses</span></span>
 
-<span data-ttu-id="14470-177">Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="14470-177">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="e336a-180">Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="e336a-180">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="14470-178">Comentários</span><span class="sxs-lookup"><span data-stu-id="14470-178">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e336a-181">Comentários</span><span class="sxs-lookup"><span data-stu-id="e336a-181">Remarks</span></span>
 
-* <span data-ttu-id="14470-179">Para o OneDrive for Business e o SharePoint, a API Shares sempre requer autenticação e não pode ser usada para acessar conteúdo compartilhado anonimamente sem um contexto de usuário.</span><span class="sxs-lookup"><span data-stu-id="14470-179">For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.</span></span>
+* <span data-ttu-id="e336a-182">Para o OneDrive for Business e o SharePoint, a API Shares sempre requer autenticação e não pode ser usada para acessar conteúdo compartilhado anonimamente sem um contexto de usuário.</span><span class="sxs-lookup"><span data-stu-id="e336a-182">For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.</span></span>
 
 [error-response]: /graph/errors
 
