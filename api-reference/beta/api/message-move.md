@@ -4,12 +4,12 @@ description: Mover uma mensagem para uma pasta. Isso cria uma nova cópia da men
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ab125c67b638a69c7a95c9c67a9db93aed26b7a2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d4abc154b6c148a77f54ebafb4ed0458bf3b7cfb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447981"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879453"
 ---
 # <a name="message-move"></a>message: move
 
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-move-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-move-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: 'servicePrincipalName: Delta'
 description: Obtenha entidades de serviço recém-criadas, atualizadas ou excluídas sem ter que realizar uma leitura completa de toda a coleção de recursos. Consulte usando a consulta Delta para obter detalhes.
 localization_priority: Normal
-ms.openlocfilehash: 017cfc4ed82e68e04ef414acd98c2344721017e6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2a0dd5a7e4b7573c1a0fd738ff5a54fd88ad7246
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453786"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870166"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipalName: Delta
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

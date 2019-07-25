@@ -8297,6 +8297,11 @@
                   href: resources/synchronization-configure-with-custom-target-attributes.md
                 - name: Sincronizar atributos de extensão de diretório
                   href: resources/synchronization-configure-with-directory-extension-attributes.md
+                - name: Definição de diretório
+                  href: resources/synchronization-directorydefinition.md
+                  items:
+                    - name: Descobrir
+                      href: api/directorydefinition-discover.md
                 - name: Trabalho
                   href: resources/synchronization-synchronizationjob.md
                   items:

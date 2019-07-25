@@ -2,12 +2,12 @@
 title: Excluir o servicePrincipalName
 description: Exclua o servicePrincipalName.
 localization_priority: Normal
-ms.openlocfilehash: c4a25c04e2ecfb6b3c19413ee15ca6493b2665aa
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c604886416eba49ae7bbd8c614ce2200a3bc9948
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457307"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870208"
 ---
 # <a name="delete-serviceprincipal"></a>Excluir o servicePrincipalName
 
@@ -63,6 +63,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-serviceprincipal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
