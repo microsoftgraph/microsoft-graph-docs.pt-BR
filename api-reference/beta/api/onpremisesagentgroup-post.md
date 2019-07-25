@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 752081e6b50460e8185f4bddddce603bf54e5d86
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 1771976abc56bb2b39850dcc925003df8965192e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841091"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878265"
 ---
 # <a name="create-onpremisesagentgroup"></a>Criar onPremisesAgentGroup
 
@@ -61,6 +61,8 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_onpremisesagent_from_onpremisesagentgroup"
@@ -69,6 +71,16 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-onpremisesagent-from-onpremisesagentgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-onpremisesagent-from-onpremisesagentgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 No corpo da solicitação, forneça uma representação JSON do objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
 

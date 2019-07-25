@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c46084b57cf11bd09558b872cf6399571aabcc0e
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 09e0848a713361e651be92ed318bd50b116ae209
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841175"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878647"
 ---
 # <a name="list-onpremisesagents"></a>Listar onPremisesAgents
 
@@ -59,6 +59,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agents"
@@ -67,6 +69,24 @@ Este é um exemplo de solicitação.
 ```http
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agents?$expand=agentGroups
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-agents-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agents-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-agents-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-agents-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
