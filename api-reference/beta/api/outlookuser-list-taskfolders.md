@@ -4,12 +4,12 @@ description: Obter todas as pastas de tarefas do Outlook na caixa de correio do 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d600e4d4999f307ec0bad4f2f5adb19e8cf86465
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ec0747a593061c31ade4249a148376c1e28ae38d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447142"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877461"
 ---
 # <a name="list-taskfolders"></a>Listar taskFolders
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-taskfolders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-taskfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
