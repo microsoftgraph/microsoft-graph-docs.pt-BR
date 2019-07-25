@@ -3,42 +3,42 @@ title: Enumerar sites
 description: Liste [sites] [] em uma organização que corresponda aos critérios de filtro e opções de consulta fornecidos.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 29b1a3c043712de4eca359b5b58c27308b78ee22
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 912266f0fda8104f538caa3cbc400a55b109572d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453646"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869628"
 ---
-# <a name="enumerate-sites"></a><span data-ttu-id="076d3-103">Enumerar sites</span><span class="sxs-lookup"><span data-stu-id="076d3-103">Enumerate sites</span></span>
+# <a name="enumerate-sites"></a><span data-ttu-id="33aac-103">Enumerar sites</span><span class="sxs-lookup"><span data-stu-id="33aac-103">Enumerate sites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="076d3-104">Listar os [sites][] disponíveis em uma organização que correspondam aos critérios de filtro e opções de consulta fornecidos.</span><span class="sxs-lookup"><span data-stu-id="076d3-104">List the available [sites][] in an organization that match provided filter criteria and query options.</span></span>
+<span data-ttu-id="33aac-104">Listar os [sites][] disponíveis em uma organização que correspondam aos critérios de filtro e opções de consulta fornecidos.</span><span class="sxs-lookup"><span data-stu-id="33aac-104">List the available [sites][] in an organization that match provided filter criteria and query options.</span></span>
 
-<span data-ttu-id="076d3-105">Há suporte apenas para as seguintes opções de consulta:</span><span class="sxs-lookup"><span data-stu-id="076d3-105">Only the following query options are currently supported:</span></span>
+<span data-ttu-id="33aac-105">Há suporte apenas para as seguintes opções de consulta:</span><span class="sxs-lookup"><span data-stu-id="33aac-105">Only the following query options are currently supported:</span></span>
 
-| <span data-ttu-id="076d3-106">Instrução Filter</span><span class="sxs-lookup"><span data-stu-id="076d3-106">Filter statement</span></span>             | <span data-ttu-id="076d3-107">Instrução SELECT</span><span class="sxs-lookup"><span data-stu-id="076d3-107">Select statement</span></span>        | <span data-ttu-id="076d3-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="076d3-108">Description</span></span>
+| <span data-ttu-id="33aac-106">Instrução Filter</span><span class="sxs-lookup"><span data-stu-id="33aac-106">Filter statement</span></span>             | <span data-ttu-id="33aac-107">Instrução SELECT</span><span class="sxs-lookup"><span data-stu-id="33aac-107">Select statement</span></span>        | <span data-ttu-id="33aac-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="33aac-108">Description</span></span>
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | <span data-ttu-id="076d3-109">Lista todos os conjuntos de sites de nível de raiz na organização.</span><span class="sxs-lookup"><span data-stu-id="076d3-109">Lists all root-level site collections in the organization.</span></span> <span data-ttu-id="076d3-110">Útil para descobrir o site de casa de cada geografia.</span><span class="sxs-lookup"><span data-stu-id="076d3-110">Useful for discovering the home site for each geography.</span></span>
+|`siteCollection/root ne null` | `siteCollection,webUrl` | <span data-ttu-id="33aac-109">Lista todos os conjuntos de sites de nível de raiz na organização.</span><span class="sxs-lookup"><span data-stu-id="33aac-109">Lists all root-level site collections in the organization.</span></span> <span data-ttu-id="33aac-110">Útil para descobrir o site de casa de cada geografia.</span><span class="sxs-lookup"><span data-stu-id="33aac-110">Useful for discovering the home site for each geography.</span></span>
 
-<span data-ttu-id="076d3-111">Além disso, você pode usar uma consulta de **[pesquisa][]** em relação à coleção de '/sites ' para localizar sites que correspondem a palavras-chave dadas.</span><span class="sxs-lookup"><span data-stu-id="076d3-111">In addition, you may use a **[search][]** query against the '/sites' collection to find sites matching given keywords.</span></span>
+<span data-ttu-id="33aac-111">Além disso, você pode usar uma consulta de **[pesquisa][]** em relação à coleção de '/sites ' para localizar sites que correspondem a palavras-chave dadas.</span><span class="sxs-lookup"><span data-stu-id="33aac-111">In addition, you may use a **[search][]** query against the '/sites' collection to find sites matching given keywords.</span></span>
 
 [consulte]: site-search.md
 [search]: site-search.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="076d3-114">Permissões</span><span class="sxs-lookup"><span data-stu-id="076d3-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="33aac-114">Permissões</span><span class="sxs-lookup"><span data-stu-id="33aac-114">Permissions</span></span>
 
-<span data-ttu-id="076d3-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="076d3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="33aac-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="33aac-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="076d3-117">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="076d3-117">Permission type</span></span>                        | <span data-ttu-id="076d3-118">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="076d3-118">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="33aac-117">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="33aac-117">Permission type</span></span>                        | <span data-ttu-id="33aac-118">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="33aac-118">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="076d3-119">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="076d3-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="076d3-120">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="076d3-120">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="076d3-121">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="076d3-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="076d3-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="076d3-122">Not supported.</span></span>
-|<span data-ttu-id="076d3-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="076d3-123">Application</span></span>                            | <span data-ttu-id="076d3-124">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="076d3-124">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="33aac-119">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="33aac-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="33aac-120">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33aac-120">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="33aac-121">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="33aac-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33aac-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="33aac-122">Not supported.</span></span>
+|<span data-ttu-id="33aac-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="33aac-123">Application</span></span>                            | <span data-ttu-id="33aac-124">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33aac-124">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="076d3-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="076d3-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="33aac-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="33aac-125">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,33 +46,37 @@ ms.locfileid: "35453646"
 GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 ```
 
-## <a name="example"></a><span data-ttu-id="076d3-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="076d3-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="33aac-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="33aac-126">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="076d3-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="076d3-127">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="33aac-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="33aac-127">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="076d3-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="076d3-128">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="33aac-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="33aac-128">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="076d3-129">C#</span><span class="sxs-lookup"><span data-stu-id="076d3-129">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="33aac-129">C#</span><span class="sxs-lookup"><span data-stu-id="33aac-129">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="076d3-130">Javascript</span><span class="sxs-lookup"><span data-stu-id="076d3-130">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="33aac-130">Javascript</span><span class="sxs-lookup"><span data-stu-id="33aac-130">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="076d3-131">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="076d3-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="33aac-131">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="33aac-131">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-sites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="33aac-132">Java</span><span class="sxs-lookup"><span data-stu-id="33aac-132">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-sites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="076d3-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="076d3-132">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="33aac-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="33aac-133">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
