@@ -4,12 +4,12 @@ description: Adicione um novo usuário ou grupo à lista acceptedSender.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: b7e5c3f897fda348d61acebec306dfdc659838b9
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 895abb9c9895734986d2c11193a675276ba2ae3c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446203"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888144"
 ---
 # <a name="create-acceptedsender"></a>Criar acceptedSender
 Adicione um novo usuário ou grupo à lista acceptedSender.
@@ -65,6 +65,14 @@ Content-length: 30
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-acceptedsender-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-acceptedsender-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-acceptedsender-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

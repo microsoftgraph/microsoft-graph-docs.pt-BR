@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos de gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b437f518a3fa266e5d8d3eb7b47878b27ea89b68
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d2f067ec11be65d722641c189c689859b17f0af3
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455389"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884363"
 ---
 # <a name="list-charts"></a>Listar gráficos
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-charts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-charts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

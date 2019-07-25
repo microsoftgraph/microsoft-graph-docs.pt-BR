@@ -4,12 +4,12 @@ description: Remover um membro de função com escopo de uma unidade administrat
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 37953ca1a9d8ceaac77decc4d40a1e78e886a985
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 698652ff3f34aafad77414b6a537f1f68d66fe36
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439956"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855858"
 ---
 # <a name="remove-a-scopedrolemember"></a>Remover um scopedRoleMember
 
@@ -67,6 +67,10 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembe
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-scopedrolemember-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-scopedrolemember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

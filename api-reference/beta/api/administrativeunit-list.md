@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos administrativeUnit.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 12e7fda8ffae49986300a57183f4ed0661a85bda
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 92c96242961a63cdc697b8d197946bb25ed17719
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439886"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855807"
 ---
 # <a name="list-administrativeunits"></a>Listar Administrativeunits dos quais
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/administrativeUnits
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-administrativeunits-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunits-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

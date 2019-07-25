@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos de um objeto de objet
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 06bb7f31add66f377438e5f7f18376e0580ff572
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: fa40a97520fe305469be83f61e9629160401bcec
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461509"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884630"
 ---
 # <a name="get-sectiongroup"></a>Obter o myseção
 
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-sectiongroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-sectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

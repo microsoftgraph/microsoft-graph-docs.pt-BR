@@ -4,12 +4,12 @@ description: Obter grupos dos quais o dispositivo é membro. Essa solicitação 
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f73efd6d096a860f51a4d86190e25bf7f26d8135
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 31129ca5ed4380f1b01025e9f5e4f0677ce624f2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461257"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883390"
 ---
 # <a name="list-device-transitive-groups"></a>Listar grupos transitivos de dispositivo
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-devices-transitivememberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-devices-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

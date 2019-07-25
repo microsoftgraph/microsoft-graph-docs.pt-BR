@@ -4,12 +4,12 @@ description: 'Responde a um thread em uma conversa de grupo e adicione uma nova 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f57a2f82f3b4e44fa335990ebdda03f0f6c8bf50
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 44ff0a6855628d030d4d886eab7da96ecf22921e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437369"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35862879"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -79,6 +79,10 @@ Content-length: 1131
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/conversationthread-reply-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/conversationthread-reply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

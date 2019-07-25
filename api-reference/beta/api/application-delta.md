@@ -4,12 +4,12 @@ description: Obter aplicativos recém-criados, atualizados ou excluídos sem ter
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 08f2aea98444a2aa1fe7b4d7bbae9da4771d0283
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 626a887a504eadf15506da1c239d43924c70fa66
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439725"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855300"
 ---
 # <a name="application-delta"></a>Application: Delta
 
@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/applications/delta
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

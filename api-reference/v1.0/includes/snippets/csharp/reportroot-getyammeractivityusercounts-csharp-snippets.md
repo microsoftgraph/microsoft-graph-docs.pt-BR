@@ -1,17 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a43245a951290d69d83ec643f9d8b12b29f04fdb
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 24f4b75a3ce7d4ffdda3f1415af6bf5df65b3da0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35738006"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891434"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var report = await graphClient.Reports.GetYammerActivityUserCounts('D7')
+var report = await graphClient.Reports
+    .GetYammerActivityUserCounts('D7')
     .Request()
     .GetAsync();
 

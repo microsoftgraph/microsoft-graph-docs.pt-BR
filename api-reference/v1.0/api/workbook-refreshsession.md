@@ -4,12 +4,12 @@ description: 'Use esta API para atualizar uma sessão de pasta de trabalho exist
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5983697e8685df6153cb3ad16856981b46533f17
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f2aa1ac0a898a519605d4cf4ddd7bf36195569eb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459836"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881284"
 ---
 # <a name="refresh-session"></a>Atualizar Sessão
 
@@ -72,6 +72,10 @@ Content-length: 0
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/refresh-excel-session-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/refresh-excel-session-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

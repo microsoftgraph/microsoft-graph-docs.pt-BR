@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Atualizar um arquivo ou uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a74fac49184d615b2e149374291560f7ed50e344
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f1630c89316755fdb03f3e1a05ef43fb4d400b86
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436225"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860883"
 ---
 # <a name="update-driveitem-properties"></a>Atualizar propriedades de DriveItem
 
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

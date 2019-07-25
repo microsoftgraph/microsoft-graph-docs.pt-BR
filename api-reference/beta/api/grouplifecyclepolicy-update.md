@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto do tipo de recurso groupLifec
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 13c5b72916ce0ba0b8a6d6516931d99b39ac16f5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c3602e87c2405be2438762dd7a2812a477b1f7cb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442570"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857781"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Atualizar groupLifecyclePolicy
 
@@ -83,6 +83,10 @@ Content-length: 151
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-grouplifecyclepolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-grouplifecyclepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
