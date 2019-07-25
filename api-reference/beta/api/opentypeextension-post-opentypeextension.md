@@ -3,42 +3,42 @@ title: Criar extensão aberta
 description: Criar uma extensão aberta (objeto openTypeExtension) e adicionar propriedades personalizadas
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 90ba4405a8b05e9b5b0c9e1add1bfea4d0d95eea
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ecefdfbd809a9e070f3599fe9627fb680dc1b192
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450517"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878344"
 ---
-# <a name="create-open-extension"></a><span data-ttu-id="71b97-103">Criar extensão aberta</span><span class="sxs-lookup"><span data-stu-id="71b97-103">Create open extension</span></span>
+# <a name="create-open-extension"></a><span data-ttu-id="1c407-103">Criar extensão aberta</span><span class="sxs-lookup"><span data-stu-id="1c407-103">Create open extension</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="71b97-104">Crie uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) e adicione Propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.</span><span class="sxs-lookup"><span data-stu-id="71b97-104">Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a supported resource.</span></span>
+<span data-ttu-id="1c407-104">Crie uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) e adicione Propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.</span><span class="sxs-lookup"><span data-stu-id="1c407-104">Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a supported resource.</span></span>
 
-> <span data-ttu-id="71b97-105">**Observação:** Se você estiver criando extensões abertas em recursos do Outlook, confira **considerações específicas do Outlook** no [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).</span><span class="sxs-lookup"><span data-stu-id="71b97-105">**Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).</span></span>
+> <span data-ttu-id="1c407-105">**Observação:** Se você estiver criando extensões abertas em recursos do Outlook, confira **considerações específicas do Outlook** no [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).</span><span class="sxs-lookup"><span data-stu-id="1c407-105">**Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="71b97-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="71b97-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1c407-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1c407-106">Permissions</span></span>
 
-<span data-ttu-id="71b97-107">Dependendo do recurso para o qual você está criando a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API.</span><span class="sxs-lookup"><span data-stu-id="71b97-107">Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="71b97-108">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="71b97-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1c407-107">Dependendo do recurso para o qual você está criando a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API.</span><span class="sxs-lookup"><span data-stu-id="1c407-107">Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="1c407-108">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1c407-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="71b97-109">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="71b97-109">Supported resource</span></span> | <span data-ttu-id="71b97-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="71b97-110">Delegated (work or school account)</span></span> | <span data-ttu-id="71b97-111">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="71b97-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="71b97-112">Application</span><span class="sxs-lookup"><span data-stu-id="71b97-112">Application</span></span> |
+| <span data-ttu-id="1c407-109">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="1c407-109">Supported resource</span></span> | <span data-ttu-id="1c407-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1c407-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1c407-111">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1c407-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c407-112">Application</span><span class="sxs-lookup"><span data-stu-id="1c407-112">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="71b97-113">device</span><span class="sxs-lookup"><span data-stu-id="71b97-113">device</span></span>](../resources/device.md) | <span data-ttu-id="71b97-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="71b97-114">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="71b97-115">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="71b97-115">Not supported</span></span> | <span data-ttu-id="71b97-116">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71b97-116">Device.ReadWrite.All</span></span> |
-| [<span data-ttu-id="71b97-117">evento</span><span class="sxs-lookup"><span data-stu-id="71b97-117">event</span></span>](../resources/event.md) | <span data-ttu-id="71b97-118">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-118">Calendars.ReadWrite</span></span> | <span data-ttu-id="71b97-119">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-119">Calendars.ReadWrite</span></span> | <span data-ttu-id="71b97-120">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-120">Calendars.ReadWrite</span></span> |
-| [<span data-ttu-id="71b97-121">grupo</span><span class="sxs-lookup"><span data-stu-id="71b97-121">group</span></span>](../resources/group.md) | <span data-ttu-id="71b97-122">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71b97-122">Group.ReadWrite.All</span></span> | <span data-ttu-id="71b97-123">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="71b97-123">Not supported</span></span> | <span data-ttu-id="71b97-124">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71b97-124">Group.ReadWrite.All</span></span> |
-| [<span data-ttu-id="71b97-125">evento de grupo</span><span class="sxs-lookup"><span data-stu-id="71b97-125">group event</span></span>](../resources/event.md) | <span data-ttu-id="71b97-126">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71b97-126">Group.ReadWrite.All</span></span> | <span data-ttu-id="71b97-127">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="71b97-127">Not supported</span></span> | <span data-ttu-id="71b97-128">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="71b97-128">Not supported</span></span> |
-| [<span data-ttu-id="71b97-129">postagem de grupo</span><span class="sxs-lookup"><span data-stu-id="71b97-129">group post</span></span>](../resources/post.md) | <span data-ttu-id="71b97-130">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71b97-130">Group.ReadWrite.All</span></span> | <span data-ttu-id="71b97-131">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="71b97-131">Not supported</span></span> | <span data-ttu-id="71b97-132">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71b97-132">Group.ReadWrite.All</span></span> |
-| [<span data-ttu-id="71b97-133">mensagem</span><span class="sxs-lookup"><span data-stu-id="71b97-133">message</span></span>](../resources/message.md) | <span data-ttu-id="71b97-134">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-134">Mail.ReadWrite</span></span> | <span data-ttu-id="71b97-135">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-135">Mail.ReadWrite</span></span> | <span data-ttu-id="71b97-136">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-136">Mail.ReadWrite</span></span> | 
-| [<span data-ttu-id="71b97-137">organização</span><span class="sxs-lookup"><span data-stu-id="71b97-137">organization</span></span>](../resources/organization.md) | <span data-ttu-id="71b97-138">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="71b97-138">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="71b97-139">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="71b97-139">Not supported</span></span> | <span data-ttu-id="71b97-140">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="71b97-140">Not supported</span></span> |
-| [<span data-ttu-id="71b97-141">contato pessoal</span><span class="sxs-lookup"><span data-stu-id="71b97-141">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="71b97-142">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-142">Contacts.ReadWrite</span></span> | <span data-ttu-id="71b97-143">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-143">Contacts.ReadWrite</span></span> | <span data-ttu-id="71b97-144">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-144">Contacts.ReadWrite</span></span> |
-| [<span data-ttu-id="71b97-145">user</span><span class="sxs-lookup"><span data-stu-id="71b97-145">user</span></span>](../resources/user.md) | <span data-ttu-id="71b97-146">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71b97-146">User.ReadWrite.All</span></span> | <span data-ttu-id="71b97-147">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71b97-147">User.ReadWrite</span></span> | <span data-ttu-id="71b97-148">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71b97-148">User.ReadWrite.All</span></span> |
+| [<span data-ttu-id="1c407-113">device</span><span class="sxs-lookup"><span data-stu-id="1c407-113">device</span></span>](../resources/device.md) | <span data-ttu-id="1c407-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1c407-114">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="1c407-115">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1c407-115">Not supported</span></span> | <span data-ttu-id="1c407-116">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c407-116">Device.ReadWrite.All</span></span> |
+| [<span data-ttu-id="1c407-117">evento</span><span class="sxs-lookup"><span data-stu-id="1c407-117">event</span></span>](../resources/event.md) | <span data-ttu-id="1c407-118">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-118">Calendars.ReadWrite</span></span> | <span data-ttu-id="1c407-119">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-119">Calendars.ReadWrite</span></span> | <span data-ttu-id="1c407-120">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-120">Calendars.ReadWrite</span></span> |
+| [<span data-ttu-id="1c407-121">grupo</span><span class="sxs-lookup"><span data-stu-id="1c407-121">group</span></span>](../resources/group.md) | <span data-ttu-id="1c407-122">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c407-122">Group.ReadWrite.All</span></span> | <span data-ttu-id="1c407-123">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1c407-123">Not supported</span></span> | <span data-ttu-id="1c407-124">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c407-124">Group.ReadWrite.All</span></span> |
+| [<span data-ttu-id="1c407-125">evento de grupo</span><span class="sxs-lookup"><span data-stu-id="1c407-125">group event</span></span>](../resources/event.md) | <span data-ttu-id="1c407-126">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c407-126">Group.ReadWrite.All</span></span> | <span data-ttu-id="1c407-127">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1c407-127">Not supported</span></span> | <span data-ttu-id="1c407-128">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1c407-128">Not supported</span></span> |
+| [<span data-ttu-id="1c407-129">postagem de grupo</span><span class="sxs-lookup"><span data-stu-id="1c407-129">group post</span></span>](../resources/post.md) | <span data-ttu-id="1c407-130">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c407-130">Group.ReadWrite.All</span></span> | <span data-ttu-id="1c407-131">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1c407-131">Not supported</span></span> | <span data-ttu-id="1c407-132">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c407-132">Group.ReadWrite.All</span></span> |
+| [<span data-ttu-id="1c407-133">mensagem</span><span class="sxs-lookup"><span data-stu-id="1c407-133">message</span></span>](../resources/message.md) | <span data-ttu-id="1c407-134">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-134">Mail.ReadWrite</span></span> | <span data-ttu-id="1c407-135">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-135">Mail.ReadWrite</span></span> | <span data-ttu-id="1c407-136">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-136">Mail.ReadWrite</span></span> | 
+| [<span data-ttu-id="1c407-137">organização</span><span class="sxs-lookup"><span data-stu-id="1c407-137">organization</span></span>](../resources/organization.md) | <span data-ttu-id="1c407-138">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1c407-138">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="1c407-139">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1c407-139">Not supported</span></span> | <span data-ttu-id="1c407-140">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1c407-140">Not supported</span></span> |
+| [<span data-ttu-id="1c407-141">contato pessoal</span><span class="sxs-lookup"><span data-stu-id="1c407-141">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="1c407-142">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-142">Contacts.ReadWrite</span></span> | <span data-ttu-id="1c407-143">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-143">Contacts.ReadWrite</span></span> | <span data-ttu-id="1c407-144">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-144">Contacts.ReadWrite</span></span> |
+| [<span data-ttu-id="1c407-145">user</span><span class="sxs-lookup"><span data-stu-id="1c407-145">user</span></span>](../resources/user.md) | <span data-ttu-id="1c407-146">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c407-146">User.ReadWrite.All</span></span> | <span data-ttu-id="1c407-147">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c407-147">User.ReadWrite</span></span> | <span data-ttu-id="1c407-148">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c407-148">User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="71b97-149">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="71b97-149">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1c407-149">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1c407-149">HTTP request</span></span>
 
-### <a name="create-an-extension-in-a-new-resource-instance"></a><span data-ttu-id="71b97-150">Crie uma extensão em uma nova instância de recurso</span><span class="sxs-lookup"><span data-stu-id="71b97-150">Create an extension in a new resource instance</span></span>
+### <a name="create-an-extension-in-a-new-resource-instance"></a><span data-ttu-id="1c407-150">Crie uma extensão em uma nova instância de recurso</span><span class="sxs-lookup"><span data-stu-id="1c407-150">Create an extension in a new resource instance</span></span>
 
-<span data-ttu-id="71b97-151">Use a mesma solicitação REST usada para criar a instância.</span><span class="sxs-lookup"><span data-stu-id="71b97-151">Use the same REST request that you use to create the instance.</span></span>
+<span data-ttu-id="1c407-151">Use a mesma solicitação REST usada para criar a instância.</span><span class="sxs-lookup"><span data-stu-id="1c407-151">Use the same REST request that you use to create the instance.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,13 +49,13 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
-><span data-ttu-id="71b97-152">**Observação:** Esta sintaxe acima mostra algumas maneiras comuns de criar as instâncias de recursos com suporte.</span><span class="sxs-lookup"><span data-stu-id="71b97-152">**Note:** This syntax shows some common ways to create the supported resource instances.</span></span> <span data-ttu-id="71b97-153">Todas as outras sintaxes POST que permitem criar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.</span><span class="sxs-lookup"><span data-stu-id="71b97-153">All other POST syntaxes that allows you to create these resource instances supports creating open extensions in them in a similar way.</span></span>
+><span data-ttu-id="1c407-152">**Observação:** Esta sintaxe acima mostra algumas maneiras comuns de criar as instâncias de recursos com suporte.</span><span class="sxs-lookup"><span data-stu-id="1c407-152">**Note:** This syntax shows some common ways to create the supported resource instances.</span></span> <span data-ttu-id="1c407-153">Todas as outras sintaxes POST que permitem criar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.</span><span class="sxs-lookup"><span data-stu-id="1c407-153">All other POST syntaxes that allows you to create these resource instances supports creating open extensions in them in a similar way.</span></span>
 
-<span data-ttu-id="71b97-154">Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propriedades da nova instância do recurso _e a extensão_ no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="71b97-154">See the [Request body](#request-body) section about including the properties of the new resource instance _and the extension_ in the request body.</span></span>
+<span data-ttu-id="1c407-154">Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propriedades da nova instância do recurso _e a extensão_ no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1c407-154">See the [Request body](#request-body) section about including the properties of the new resource instance _and the extension_ in the request body.</span></span>
 
-### <a name="create-an-extension-in-an-existing-resource-instance"></a><span data-ttu-id="71b97-155">Crie uma extensão em uma instância de recurso existente</span><span class="sxs-lookup"><span data-stu-id="71b97-155">Create an extension in an existing resource instance</span></span>
+### <a name="create-an-extension-in-an-existing-resource-instance"></a><span data-ttu-id="1c407-155">Crie uma extensão em uma instância de recurso existente</span><span class="sxs-lookup"><span data-stu-id="1c407-155">Create an extension in an existing resource instance</span></span>
 
-<span data-ttu-id="71b97-156">Identifique a instância do recurso na solicitação e faça um `POST` para a propriedade de navegação **extensions**.</span><span class="sxs-lookup"><span data-stu-id="71b97-156">Identify the resource instance in the request and do a `POST` to the **extensions** navigation property.</span></span>
+<span data-ttu-id="1c407-156">Identifique a instância do recurso na solicitação e faça um `POST` para a propriedade de navegação **extensions**.</span><span class="sxs-lookup"><span data-stu-id="1c407-156">Identify the resource instance in the request and do a `POST` to the **extensions** navigation property.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,66 +71,66 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
-><span data-ttu-id="71b97-157">**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância do recurso, para criar uma extensão nele.</span><span class="sxs-lookup"><span data-stu-id="71b97-157">**Note:** This syntax shows some common ways to identify a resource instance, in order to create an extension in it.</span></span> <span data-ttu-id="71b97-158">Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.</span><span class="sxs-lookup"><span data-stu-id="71b97-158">All other syntaxes that allows you to identify these resource instances supports creating open extensions in them in a similar way.</span></span>
+><span data-ttu-id="1c407-157">**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância do recurso, para criar uma extensão nele.</span><span class="sxs-lookup"><span data-stu-id="1c407-157">**Note:** This syntax shows some common ways to identify a resource instance, in order to create an extension in it.</span></span> <span data-ttu-id="1c407-158">Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.</span><span class="sxs-lookup"><span data-stu-id="1c407-158">All other syntaxes that allows you to identify these resource instances supports creating open extensions in them in a similar way.</span></span>
 
-<span data-ttu-id="71b97-159">Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extensão_ no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="71b97-159">See the [Request body](#request-body) section about including _the extension_ in the request body.</span></span>
+<span data-ttu-id="1c407-159">Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extensão_ no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1c407-159">See the [Request body](#request-body) section about including _the extension_ in the request body.</span></span>
 
-## <a name="path-parameters"></a><span data-ttu-id="71b97-160">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="71b97-160">Path parameters</span></span>
+## <a name="path-parameters"></a><span data-ttu-id="1c407-160">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="1c407-160">Path parameters</span></span>
 
-|<span data-ttu-id="71b97-161">**Parâmetro**</span><span class="sxs-lookup"><span data-stu-id="71b97-161">**Parameter**</span></span>|<span data-ttu-id="71b97-162">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="71b97-162">**Type**</span></span>|<span data-ttu-id="71b97-163">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="71b97-163">**Description**</span></span>|
+|<span data-ttu-id="1c407-161">**Parâmetro**</span><span class="sxs-lookup"><span data-stu-id="1c407-161">**Parameter**</span></span>|<span data-ttu-id="1c407-162">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="1c407-162">**Type**</span></span>|<span data-ttu-id="1c407-163">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="1c407-163">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="71b97-164">id</span><span class="sxs-lookup"><span data-stu-id="71b97-164">id</span></span>|<span data-ttu-id="71b97-165">string</span><span class="sxs-lookup"><span data-stu-id="71b97-165">string</span></span>|<span data-ttu-id="71b97-p104">Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="71b97-p104">A unique identifier for an object in the corresponding collection. Required.</span></span>|
+|<span data-ttu-id="1c407-164">id</span><span class="sxs-lookup"><span data-stu-id="1c407-164">id</span></span>|<span data-ttu-id="1c407-165">string</span><span class="sxs-lookup"><span data-stu-id="1c407-165">string</span></span>|<span data-ttu-id="1c407-p104">Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1c407-p104">A unique identifier for an object in the corresponding collection. Required.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="71b97-168">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="71b97-168">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1c407-168">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1c407-168">Request headers</span></span>
 
-| <span data-ttu-id="71b97-169">Nome</span><span class="sxs-lookup"><span data-stu-id="71b97-169">Name</span></span>       | <span data-ttu-id="71b97-170">Valor</span><span class="sxs-lookup"><span data-stu-id="71b97-170">Value</span></span> |
+| <span data-ttu-id="1c407-169">Nome</span><span class="sxs-lookup"><span data-stu-id="1c407-169">Name</span></span>       | <span data-ttu-id="1c407-170">Valor</span><span class="sxs-lookup"><span data-stu-id="1c407-170">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="71b97-171">Autorização</span><span class="sxs-lookup"><span data-stu-id="71b97-171">Authorization</span></span> | <span data-ttu-id="71b97-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="71b97-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="71b97-174">Content-Type</span><span class="sxs-lookup"><span data-stu-id="71b97-174">Content-Type</span></span> | <span data-ttu-id="71b97-175">application/json</span><span class="sxs-lookup"><span data-stu-id="71b97-175">application/json</span></span> |
+| <span data-ttu-id="1c407-171">Autorização</span><span class="sxs-lookup"><span data-stu-id="1c407-171">Authorization</span></span> | <span data-ttu-id="1c407-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1c407-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1c407-174">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1c407-174">Content-Type</span></span> | <span data-ttu-id="1c407-175">application/json</span><span class="sxs-lookup"><span data-stu-id="1c407-175">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="71b97-176">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="71b97-176">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1c407-176">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1c407-176">Request body</span></span>
 
-<span data-ttu-id="71b97-p106">Forneça um corpo JSON de um [openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome-valor obrigatórios e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.</span><span class="sxs-lookup"><span data-stu-id="71b97-p106">Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required name-value pairs and any additional custom data. The data in the JSON payload can be primitive types, or arrays of primitive types.</span></span>
+<span data-ttu-id="1c407-p106">Forneça um corpo JSON de um [openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome-valor obrigatórios e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.</span><span class="sxs-lookup"><span data-stu-id="1c407-p106">Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required name-value pairs and any additional custom data. The data in the JSON payload can be primitive types, or arrays of primitive types.</span></span>
 
-| <span data-ttu-id="71b97-179">Name</span><span class="sxs-lookup"><span data-stu-id="71b97-179">Name</span></span>       | <span data-ttu-id="71b97-180">Valor</span><span class="sxs-lookup"><span data-stu-id="71b97-180">Value</span></span> |
+| <span data-ttu-id="1c407-179">Name</span><span class="sxs-lookup"><span data-stu-id="1c407-179">Name</span></span>       | <span data-ttu-id="1c407-180">Valor</span><span class="sxs-lookup"><span data-stu-id="1c407-180">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="71b97-181">@odata.type</span><span class="sxs-lookup"><span data-stu-id="71b97-181">@odata.type</span></span> | <span data-ttu-id="71b97-182">microsoft.graph.openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="71b97-182">microsoft.graph.openTypeExtension</span></span> |
-| <span data-ttu-id="71b97-183">extensionName</span><span class="sxs-lookup"><span data-stu-id="71b97-183">extensionName</span></span> | <span data-ttu-id="71b97-184">%unique_string%</span><span class="sxs-lookup"><span data-stu-id="71b97-184">%unique_string%</span></span> |
+| <span data-ttu-id="1c407-181">@odata.type</span><span class="sxs-lookup"><span data-stu-id="1c407-181">@odata.type</span></span> | <span data-ttu-id="1c407-182">microsoft.graph.openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="1c407-182">microsoft.graph.openTypeExtension</span></span> |
+| <span data-ttu-id="1c407-183">extensionName</span><span class="sxs-lookup"><span data-stu-id="1c407-183">extensionName</span></span> | <span data-ttu-id="1c407-184">%unique_string%</span><span class="sxs-lookup"><span data-stu-id="1c407-184">%unique_string%</span></span> |
 
-<span data-ttu-id="71b97-185">Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension**, fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.</span><span class="sxs-lookup"><span data-stu-id="71b97-185">When creating an extension in a _new_ resource instance, in addition to the new **openTypeExtension** object, provide a JSON representation of the relevant properties to create such a resource instance.</span></span>
+<span data-ttu-id="1c407-185">Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension**, fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.</span><span class="sxs-lookup"><span data-stu-id="1c407-185">When creating an extension in a _new_ resource instance, in addition to the new **openTypeExtension** object, provide a JSON representation of the relevant properties to create such a resource instance.</span></span>
 
-## <a name="response"></a><span data-ttu-id="71b97-186">Resposta</span><span class="sxs-lookup"><span data-stu-id="71b97-186">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1c407-186">Resposta</span><span class="sxs-lookup"><span data-stu-id="1c407-186">Response</span></span>
 
-### <a name="response-code"></a><span data-ttu-id="71b97-187">Código da resposta</span><span class="sxs-lookup"><span data-stu-id="71b97-187">Response code</span></span>
+### <a name="response-code"></a><span data-ttu-id="1c407-187">Código da resposta</span><span class="sxs-lookup"><span data-stu-id="1c407-187">Response code</span></span>
 
-<span data-ttu-id="71b97-188">Dependendo da operação, o código de resposta pode ser `201 Created` ou `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="71b97-188">Depending on the operation, the response code can be `201 Created` or `202 Accepted`.</span></span>
+<span data-ttu-id="1c407-188">Dependendo da operação, o código de resposta pode ser `201 Created` ou `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="1c407-188">Depending on the operation, the response code can be `201 Created` or `202 Accepted`.</span></span>
 
-<span data-ttu-id="71b97-189">Quando você cria uma extensão usando a mesma operação usada para criar uma instância de recurso, a operação retorna o mesmo código de resposta retornado quando você usa a operação para criar a instância do recurso sem a extensão.</span><span class="sxs-lookup"><span data-stu-id="71b97-189">When you create an extension using the same operation that you use to create a resource instance, the operation returns the same response code that it returns when you use the operation to create the resource instance without the extension.</span></span>
-<span data-ttu-id="71b97-190">Consulte os tópicos correspondentes para criar a instância conforme listado [cima](#create-an-extension-in-a-new-resource-instance).</span><span class="sxs-lookup"><span data-stu-id="71b97-190">Refer to the corresponding topics for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).</span></span>
+<span data-ttu-id="1c407-189">Quando você cria uma extensão usando a mesma operação usada para criar uma instância de recurso, a operação retorna o mesmo código de resposta retornado quando você usa a operação para criar a instância do recurso sem a extensão.</span><span class="sxs-lookup"><span data-stu-id="1c407-189">When you create an extension using the same operation that you use to create a resource instance, the operation returns the same response code that it returns when you use the operation to create the resource instance without the extension.</span></span>
+<span data-ttu-id="1c407-190">Consulte os tópicos correspondentes para criar a instância conforme listado [cima](#create-an-extension-in-a-new-resource-instance).</span><span class="sxs-lookup"><span data-stu-id="1c407-190">Refer to the corresponding topics for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).</span></span>
 
-### <a name="response-body"></a><span data-ttu-id="71b97-191">Corpo da resposta</span><span class="sxs-lookup"><span data-stu-id="71b97-191">Response body</span></span>
+### <a name="response-body"></a><span data-ttu-id="1c407-191">Corpo da resposta</span><span class="sxs-lookup"><span data-stu-id="1c407-191">Response body</span></span>
 
-| <span data-ttu-id="71b97-192">Cenário</span><span class="sxs-lookup"><span data-stu-id="71b97-192">Scenario</span></span>       | <span data-ttu-id="71b97-193">Recurso</span><span class="sxs-lookup"><span data-stu-id="71b97-193">Resource</span></span>  | <span data-ttu-id="71b97-194">Corpo da resposta</span><span class="sxs-lookup"><span data-stu-id="71b97-194">Response body</span></span> |
+| <span data-ttu-id="1c407-192">Cenário</span><span class="sxs-lookup"><span data-stu-id="1c407-192">Scenario</span></span>       | <span data-ttu-id="1c407-193">Recurso</span><span class="sxs-lookup"><span data-stu-id="1c407-193">Resource</span></span>  | <span data-ttu-id="1c407-194">Corpo da resposta</span><span class="sxs-lookup"><span data-stu-id="1c407-194">Response body</span></span> |
 |:---------------|:----------|:--------------|
-| <span data-ttu-id="71b97-195">Criar uma extensão ao criar explicitamente uma _nova_ instância de recurso</span><span class="sxs-lookup"><span data-stu-id="71b97-195">Creating an extension while explicitly creating a _new_ resource instance</span></span> | <span data-ttu-id="71b97-196">[contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md)</span><span class="sxs-lookup"><span data-stu-id="71b97-196">[contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md)</span></span> | <span data-ttu-id="71b97-197">Inclui a nova instância expandida com o objeto [openTypeExtension](../resources/opentypeextension.md).</span><span class="sxs-lookup"><span data-stu-id="71b97-197">Includes the new instance expanded with the [openTypeExtension](../resources/opentypeextension.md) object.</span></span> |
-| <span data-ttu-id="71b97-198">Criando uma extensão ao criar implicitamente uma instância de recursos</span><span class="sxs-lookup"><span data-stu-id="71b97-198">Creating an extension while implicitly creating a resource instance</span></span> | [<span data-ttu-id="71b97-199">postagem</span><span class="sxs-lookup"><span data-stu-id="71b97-199">post</span></span>](../resources/post.md) | <span data-ttu-id="71b97-200">A resposta inclui somente um código de resposta, mas não um corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="71b97-200">The response includes only a response code but not a response body.</span></span> |
-| <span data-ttu-id="71b97-201">Criar uma extensão em uma instância de recurso _existente_</span><span class="sxs-lookup"><span data-stu-id="71b97-201">Creating an extension in an _existing_ resource instance</span></span> | <span data-ttu-id="71b97-202">Todos os recursos com suporte</span><span class="sxs-lookup"><span data-stu-id="71b97-202">All supported resources</span></span> | <span data-ttu-id="71b97-203">Inclui o objeto **openTypeExtension**.</span><span class="sxs-lookup"><span data-stu-id="71b97-203">Includes the **openTypeExtension** object.</span></span> |
+| <span data-ttu-id="1c407-195">Criar uma extensão ao criar explicitamente uma _nova_ instância de recurso</span><span class="sxs-lookup"><span data-stu-id="1c407-195">Creating an extension while explicitly creating a _new_ resource instance</span></span> | <span data-ttu-id="1c407-196">[contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md)</span><span class="sxs-lookup"><span data-stu-id="1c407-196">[contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md)</span></span> | <span data-ttu-id="1c407-197">Inclui a nova instância expandida com o objeto [openTypeExtension](../resources/opentypeextension.md).</span><span class="sxs-lookup"><span data-stu-id="1c407-197">Includes the new instance expanded with the [openTypeExtension](../resources/opentypeextension.md) object.</span></span> |
+| <span data-ttu-id="1c407-198">Criando uma extensão ao criar implicitamente uma instância de recursos</span><span class="sxs-lookup"><span data-stu-id="1c407-198">Creating an extension while implicitly creating a resource instance</span></span> | [<span data-ttu-id="1c407-199">postagem</span><span class="sxs-lookup"><span data-stu-id="1c407-199">post</span></span>](../resources/post.md) | <span data-ttu-id="1c407-200">A resposta inclui somente um código de resposta, mas não um corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1c407-200">The response includes only a response code but not a response body.</span></span> |
+| <span data-ttu-id="1c407-201">Criar uma extensão em uma instância de recurso _existente_</span><span class="sxs-lookup"><span data-stu-id="1c407-201">Creating an extension in an _existing_ resource instance</span></span> | <span data-ttu-id="1c407-202">Todos os recursos com suporte</span><span class="sxs-lookup"><span data-stu-id="1c407-202">All supported resources</span></span> | <span data-ttu-id="1c407-203">Inclui o objeto **openTypeExtension**.</span><span class="sxs-lookup"><span data-stu-id="1c407-203">Includes the **openTypeExtension** object.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="71b97-204">Exemplo</span><span class="sxs-lookup"><span data-stu-id="71b97-204">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1c407-204">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1c407-204">Example</span></span>
 
-### <a name="request-1"></a><span data-ttu-id="71b97-205">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="71b97-205">Request 1</span></span>
+### <a name="request-1"></a><span data-ttu-id="1c407-205">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="1c407-205">Request 1</span></span>
 
-<span data-ttu-id="71b97-p108">O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo da solicitação inclui o seguinte:</span><span class="sxs-lookup"><span data-stu-id="71b97-p108">The first example creates a message and an extension in the same call. The request body includes the following:</span></span>
+<span data-ttu-id="1c407-p108">O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo da solicitação inclui o seguinte:</span><span class="sxs-lookup"><span data-stu-id="1c407-p108">The first example creates a message and an extension in the same call. The request body includes the following:</span></span>
 
-- <span data-ttu-id="71b97-208">As propriedades **subject**, **body** e **toRecipients** típicas de uma nova mensagem.</span><span class="sxs-lookup"><span data-stu-id="71b97-208">The **subject**, **body**, and **toRecipients** properties typical of a new message.</span></span>
-- <span data-ttu-id="71b97-209">E para a extensão:</span><span class="sxs-lookup"><span data-stu-id="71b97-209">And for the extension:</span></span>
+- <span data-ttu-id="1c407-208">As propriedades **subject**, **body** e **toRecipients** típicas de uma nova mensagem.</span><span class="sxs-lookup"><span data-stu-id="1c407-208">The **subject**, **body**, and **toRecipients** properties typical of a new message.</span></span>
+- <span data-ttu-id="1c407-209">E para a extensão:</span><span class="sxs-lookup"><span data-stu-id="1c407-209">And for the extension:</span></span>
 
-  - <span data-ttu-id="71b97-210">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="71b97-210">The type `microsoft.graph.openTypeExtension`.</span></span>
-  - <span data-ttu-id="71b97-211">O nome da extensão "Com.Contoso.Referral".</span><span class="sxs-lookup"><span data-stu-id="71b97-211">The extension name "Com.Contoso.Referral".</span></span>
-  - <span data-ttu-id="71b97-212">Dados adicionais a serem armazenados como três propriedades personalizadas no conteúdo JSON: `companyName`, `expirationDate` e `dealValue`.</span><span class="sxs-lookup"><span data-stu-id="71b97-212">Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.</span></span>
+  - <span data-ttu-id="1c407-210">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="1c407-210">The type `microsoft.graph.openTypeExtension`.</span></span>
+  - <span data-ttu-id="1c407-211">O nome da extensão "Com.Contoso.Referral".</span><span class="sxs-lookup"><span data-stu-id="1c407-211">The extension name "Com.Contoso.Referral".</span></span>
+  - <span data-ttu-id="1c407-212">Dados adicionais a serem armazenados como três propriedades personalizadas no conteúdo JSON: `companyName`, `expirationDate` e `dealValue`.</span><span class="sxs-lookup"><span data-stu-id="1c407-212">Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="71b97-213">HTTP</span><span class="sxs-lookup"><span data-stu-id="71b97-213">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1c407-213">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c407-213">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_1"
@@ -163,30 +163,34 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="71b97-214">C#</span><span class="sxs-lookup"><span data-stu-id="71b97-214">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1c407-214">C#</span><span class="sxs-lookup"><span data-stu-id="1c407-214">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71b97-215">Javascript</span><span class="sxs-lookup"><span data-stu-id="71b97-215">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1c407-215">Javascript</span><span class="sxs-lookup"><span data-stu-id="1c407-215">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="71b97-216">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="71b97-216">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1c407-216">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1c407-216">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="1c407-217">Java</span><span class="sxs-lookup"><span data-stu-id="1c407-217">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response-1"></a><span data-ttu-id="71b97-217">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="71b97-217">Response 1</span></span>
+### <a name="response-1"></a><span data-ttu-id="1c407-218">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="1c407-218">Response 1</span></span>
 
-<span data-ttu-id="71b97-p109">Veja a seguir a resposta para o primeiro exemplo. O corpo da resposta inclui propriedades da nova mensagem e o seguinte para a nova extensão:</span><span class="sxs-lookup"><span data-stu-id="71b97-p109">Here is the response for the first example. The response body includes properties of the new message, and the following for the new extension:</span></span>
+<span data-ttu-id="1c407-p109">Veja a seguir a resposta para o primeiro exemplo. O corpo da resposta inclui propriedades da nova mensagem e o seguinte para a nova extensão:</span><span class="sxs-lookup"><span data-stu-id="1c407-p109">Here is the response for the first example. The response body includes properties of the new message, and the following for the new extension:</span></span>
 
-- <span data-ttu-id="71b97-220">A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="71b97-220">The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span></span>
-- <span data-ttu-id="71b97-221">A propriedade padrão **extensionName** especificada na solicitação.</span><span class="sxs-lookup"><span data-stu-id="71b97-221">The default property **extensionName** specified in the request.</span></span>
-- <span data-ttu-id="71b97-222">Os dados personalizados especificados na solicitação, armazenados como 3 propriedades personalizadas.</span><span class="sxs-lookup"><span data-stu-id="71b97-222">The custom data specified in the request stored as 3 custom properties.</span></span>
+- <span data-ttu-id="1c407-221">A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="1c407-221">The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span></span>
+- <span data-ttu-id="1c407-222">A propriedade padrão **extensionName** especificada na solicitação.</span><span class="sxs-lookup"><span data-stu-id="1c407-222">The default property **extensionName** specified in the request.</span></span>
+- <span data-ttu-id="1c407-223">Os dados personalizados especificados na solicitação, armazenados como 3 propriedades personalizadas.</span><span class="sxs-lookup"><span data-stu-id="1c407-223">The custom data specified in the request stored as 3 custom properties.</span></span>
 
-<span data-ttu-id="71b97-p110">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="71b97-p110">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1c407-p110">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1c407-p110">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -260,16 +264,16 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 ****
 
-### <a name="request-2"></a><span data-ttu-id="71b97-225">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="71b97-225">Request 2</span></span>
+### <a name="request-2"></a><span data-ttu-id="1c407-226">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="1c407-226">Request 2</span></span>
 
-<span data-ttu-id="71b97-p111">O segundo exemplo cria uma extensão na mensagem especificada. O corpo da solicitação inclui o seguinte para essa extensão:</span><span class="sxs-lookup"><span data-stu-id="71b97-p111">The second example creates an extension in the specified message. The request body includes the following for the extension:</span></span>
+<span data-ttu-id="1c407-p111">O segundo exemplo cria uma extensão na mensagem especificada. O corpo da solicitação inclui o seguinte para essa extensão:</span><span class="sxs-lookup"><span data-stu-id="1c407-p111">The second example creates an extension in the specified message. The request body includes the following for the extension:</span></span>
 
-- <span data-ttu-id="71b97-228">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="71b97-228">The type `microsoft.graph.openTypeExtension`.</span></span>
-- <span data-ttu-id="71b97-229">O nome da extensão "Com.Contoso.Referral".</span><span class="sxs-lookup"><span data-stu-id="71b97-229">The extension name "Com.Contoso.Referral".</span></span>
-- <span data-ttu-id="71b97-230">Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.</span><span class="sxs-lookup"><span data-stu-id="71b97-230">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.</span></span>
+- <span data-ttu-id="1c407-229">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="1c407-229">The type `microsoft.graph.openTypeExtension`.</span></span>
+- <span data-ttu-id="1c407-230">O nome da extensão "Com.Contoso.Referral".</span><span class="sxs-lookup"><span data-stu-id="1c407-230">The extension name "Com.Contoso.Referral".</span></span>
+- <span data-ttu-id="1c407-231">Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.</span><span class="sxs-lookup"><span data-stu-id="1c407-231">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="71b97-231">HTTP</span><span class="sxs-lookup"><span data-stu-id="71b97-231">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1c407-232">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c407-232">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_2"
@@ -286,28 +290,32 @@ Content-Type: application/json
   "expirationDate" : "2015-12-03T10:00:00.000Z"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="71b97-232">C#</span><span class="sxs-lookup"><span data-stu-id="71b97-232">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1c407-233">C#</span><span class="sxs-lookup"><span data-stu-id="1c407-233">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71b97-233">Javascript</span><span class="sxs-lookup"><span data-stu-id="71b97-233">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1c407-234">Javascript</span><span class="sxs-lookup"><span data-stu-id="1c407-234">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="71b97-234">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="71b97-234">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1c407-235">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1c407-235">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="1c407-236">Java</span><span class="sxs-lookup"><span data-stu-id="1c407-236">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response-2"></a><span data-ttu-id="71b97-235">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="71b97-235">Response 2</span></span>
+### <a name="response-2"></a><span data-ttu-id="1c407-237">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="1c407-237">Response 2</span></span>
 
-<span data-ttu-id="71b97-p112">Veja a seguir a resposta para o segundo exemplo. O corpo da solicitação inclui o seguinte para a nova extensão:</span><span class="sxs-lookup"><span data-stu-id="71b97-p112">Here is the response for the second example. The response body includes the following for the new extension:</span></span>
+<span data-ttu-id="1c407-p112">Veja a seguir a resposta para o segundo exemplo. O corpo da solicitação inclui o seguinte para a nova extensão:</span><span class="sxs-lookup"><span data-stu-id="1c407-p112">Here is the response for the second example. The response body includes the following for the new extension:</span></span>
 
-- <span data-ttu-id="71b97-238">A propriedade padrão **extensionName**.</span><span class="sxs-lookup"><span data-stu-id="71b97-238">The default property **extensionName**.</span></span>
-- <span data-ttu-id="71b97-239">A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="71b97-239">The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span></span>
-- <span data-ttu-id="71b97-240">Os dados personalizados a serem armazenados.</span><span class="sxs-lookup"><span data-stu-id="71b97-240">The custom data to be stored.</span></span>
+- <span data-ttu-id="1c407-240">A propriedade padrão **extensionName**.</span><span class="sxs-lookup"><span data-stu-id="1c407-240">The default property **extensionName**.</span></span>
+- <span data-ttu-id="1c407-241">A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="1c407-241">The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span></span>
+- <span data-ttu-id="1c407-242">Os dados personalizados a serem armazenados.</span><span class="sxs-lookup"><span data-stu-id="1c407-242">The custom data to be stored.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -333,16 +341,16 @@ Content-type: application/json
 
 ****
 
-### <a name="request-3"></a><span data-ttu-id="71b97-241">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="71b97-241">Request 3</span></span>
+### <a name="request-3"></a><span data-ttu-id="1c407-243">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="1c407-243">Request 3</span></span>
 
-<span data-ttu-id="71b97-p113">O terceiro exemplo cria uma extensão no evento de grupo especificado. O corpo da solicitação inclui o seguinte para essa extensão:</span><span class="sxs-lookup"><span data-stu-id="71b97-p113">The third example creates an extension in the specified group event. The request body includes the following for the extension:</span></span>
+<span data-ttu-id="1c407-p113">O terceiro exemplo cria uma extensão no evento de grupo especificado. O corpo da solicitação inclui o seguinte para essa extensão:</span><span class="sxs-lookup"><span data-stu-id="1c407-p113">The third example creates an extension in the specified group event. The request body includes the following for the extension:</span></span>
 
-- <span data-ttu-id="71b97-244">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="71b97-244">The type `microsoft.graph.openTypeExtension`.</span></span>
-- <span data-ttu-id="71b97-245">O nome da extensão "Com.Contoso.Deal".</span><span class="sxs-lookup"><span data-stu-id="71b97-245">The extension name "Com.Contoso.Deal".</span></span>
-- <span data-ttu-id="71b97-246">Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.</span><span class="sxs-lookup"><span data-stu-id="71b97-246">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.</span></span>
+- <span data-ttu-id="1c407-246">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="1c407-246">The type `microsoft.graph.openTypeExtension`.</span></span>
+- <span data-ttu-id="1c407-247">O nome da extensão "Com.Contoso.Deal".</span><span class="sxs-lookup"><span data-stu-id="1c407-247">The extension name "Com.Contoso.Deal".</span></span>
+- <span data-ttu-id="1c407-248">Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.</span><span class="sxs-lookup"><span data-stu-id="1c407-248">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="71b97-247">HTTP</span><span class="sxs-lookup"><span data-stu-id="71b97-247">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1c407-249">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c407-249">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_3"
@@ -359,24 +367,28 @@ Content-type: application/json
   "expirationDate" : "2015-07-03T13:04:00.000Z"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="71b97-248">C#</span><span class="sxs-lookup"><span data-stu-id="71b97-248">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1c407-250">C#</span><span class="sxs-lookup"><span data-stu-id="1c407-250">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71b97-249">Javascript</span><span class="sxs-lookup"><span data-stu-id="71b97-249">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1c407-251">Javascript</span><span class="sxs-lookup"><span data-stu-id="1c407-251">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="71b97-250">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="71b97-250">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1c407-252">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1c407-252">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="1c407-253">Java</span><span class="sxs-lookup"><span data-stu-id="1c407-253">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response-3"></a><span data-ttu-id="71b97-251">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="71b97-251">Response 3</span></span>
+### <a name="response-3"></a><span data-ttu-id="1c407-254">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="1c407-254">Response 3</span></span>
 
-<span data-ttu-id="71b97-252">Veja a seguir a resposta da terceira solicitação de exemplo.</span><span class="sxs-lookup"><span data-stu-id="71b97-252">Here is the response from the third example request.</span></span>
+<span data-ttu-id="1c407-255">Veja a seguir a resposta da terceira solicitação de exemplo.</span><span class="sxs-lookup"><span data-stu-id="1c407-255">Here is the response from the third example request.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -400,16 +412,16 @@ Content-type: application/json
 
 ****
 
-### <a name="request-4"></a><span data-ttu-id="71b97-253">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="71b97-253">Request 4</span></span>
+### <a name="request-4"></a><span data-ttu-id="1c407-256">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="1c407-256">Request 4</span></span>
 
-<span data-ttu-id="71b97-p114">O quarto exemplo cria uma extensão em uma nova postagem de grupo, usando a mesma chamada de ação **reply** para uma postagem de grupo existente. A ação **reply** cria uma nova postagem e uma nova extensão inserida nessa postagem. O corpo da solicitação inclui uma propriedade **post** que, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a nova extensão:</span><span class="sxs-lookup"><span data-stu-id="71b97-p114">The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post. The **reply** action creates a new post, and a new extension embedded in the post. The request body includes a **post** property, which in turn contains the **body** of the new post, and the following data for the new extension:</span></span>
+<span data-ttu-id="1c407-p114">O quarto exemplo cria uma extensão em uma nova postagem de grupo, usando a mesma chamada de ação **reply** para uma postagem de grupo existente. A ação **reply** cria uma nova postagem e uma nova extensão inserida nessa postagem. O corpo da solicitação inclui uma propriedade **post** que, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a nova extensão:</span><span class="sxs-lookup"><span data-stu-id="1c407-p114">The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post. The **reply** action creates a new post, and a new extension embedded in the post. The request body includes a **post** property, which in turn contains the **body** of the new post, and the following data for the new extension:</span></span>
 
-- <span data-ttu-id="71b97-257">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="71b97-257">The type `microsoft.graph.openTypeExtension`.</span></span>
-- <span data-ttu-id="71b97-258">O nome da extensão "Com.Contoso.HR".</span><span class="sxs-lookup"><span data-stu-id="71b97-258">The extension name "Com.Contoso.HR".</span></span>
-- <span data-ttu-id="71b97-259">Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e a matriz de cadeias de caracteres `topPicks`.</span><span class="sxs-lookup"><span data-stu-id="71b97-259">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.</span></span>
+- <span data-ttu-id="1c407-260">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="1c407-260">The type `microsoft.graph.openTypeExtension`.</span></span>
+- <span data-ttu-id="1c407-261">O nome da extensão "Com.Contoso.HR".</span><span class="sxs-lookup"><span data-stu-id="1c407-261">The extension name "Com.Contoso.HR".</span></span>
+- <span data-ttu-id="1c407-262">Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e a matriz de cadeias de caracteres `topPicks`.</span><span class="sxs-lookup"><span data-stu-id="1c407-262">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="71b97-260">HTTP</span><span class="sxs-lookup"><span data-stu-id="71b97-260">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1c407-263">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c407-263">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_4"
@@ -440,24 +452,28 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="71b97-261">C#</span><span class="sxs-lookup"><span data-stu-id="71b97-261">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1c407-264">C#</span><span class="sxs-lookup"><span data-stu-id="1c407-264">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71b97-262">Javascript</span><span class="sxs-lookup"><span data-stu-id="71b97-262">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1c407-265">Javascript</span><span class="sxs-lookup"><span data-stu-id="1c407-265">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="71b97-263">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="71b97-263">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1c407-266">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1c407-266">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="1c407-267">Java</span><span class="sxs-lookup"><span data-stu-id="1c407-267">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response-4"></a><span data-ttu-id="71b97-264">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="71b97-264">Response 4</span></span>
+### <a name="response-4"></a><span data-ttu-id="1c407-268">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="1c407-268">Response 4</span></span>
 
-<span data-ttu-id="71b97-p115">Veja a seguir a resposta do quarto exemplo. Criar uma extensão com êxito em uma nova postagem de grupo resulta apenas no código de resposta HTTP 202.</span><span class="sxs-lookup"><span data-stu-id="71b97-p115">Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the HTTP 202 response code.</span></span>
+<span data-ttu-id="1c407-p115">Veja a seguir a resposta do quarto exemplo. Criar uma extensão com êxito em uma nova postagem de grupo resulta apenas no código de resposta HTTP 202.</span><span class="sxs-lookup"><span data-stu-id="1c407-p115">Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the HTTP 202 response code.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -471,16 +487,16 @@ Content-Length: 0
 
 ****
 
-### <a name="request-5"></a><span data-ttu-id="71b97-267">Solicitação 5</span><span class="sxs-lookup"><span data-stu-id="71b97-267">Request 5</span></span>
+### <a name="request-5"></a><span data-ttu-id="1c407-271">Solicitação 5</span><span class="sxs-lookup"><span data-stu-id="1c407-271">Request 5</span></span>
 
-<span data-ttu-id="71b97-p116">O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma operação POST para criar uma conversa. A operação POST cria uma nova conversa, thread ou postagem e uma nova extensão inserida na postagem. O corpo da solicitação inclui as propriedades **Topic** e **Threads** e o objeto filho **post** para a nova conversa. O objeto **post**, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a extensão:</span><span class="sxs-lookup"><span data-stu-id="71b97-p116">The fifth example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation creates a new conversation, thread and post, and a new extension embedded in the post. The request body includes the **Topic** and **Threads** properties, and a child **post** object for the new conversation. The **post** object in turn contains the **body** of the new post, and the following data for the extension:</span></span>
+<span data-ttu-id="1c407-p116">O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma operação POST para criar uma conversa. A operação POST cria uma nova conversa, thread ou postagem e uma nova extensão inserida na postagem. O corpo da solicitação inclui as propriedades **Topic** e **Threads** e o objeto filho **post** para a nova conversa. O objeto **post**, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a extensão:</span><span class="sxs-lookup"><span data-stu-id="1c407-p116">The fifth example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation creates a new conversation, thread and post, and a new extension embedded in the post. The request body includes the **Topic** and **Threads** properties, and a child **post** object for the new conversation. The **post** object in turn contains the **body** of the new post, and the following data for the extension:</span></span>
 
-- <span data-ttu-id="71b97-272">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="71b97-272">The type `microsoft.graph.openTypeExtension`.</span></span>
-- <span data-ttu-id="71b97-273">O nome da extensão "Com.Contoso.HR".</span><span class="sxs-lookup"><span data-stu-id="71b97-273">The extension name "Com.Contoso.HR".</span></span>
-- <span data-ttu-id="71b97-274">Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e a matriz de cadeias de caracteres `topPicks`.</span><span class="sxs-lookup"><span data-stu-id="71b97-274">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.</span></span>
+- <span data-ttu-id="1c407-276">O tipo `microsoft.graph.openTypeExtension`.</span><span class="sxs-lookup"><span data-stu-id="1c407-276">The type `microsoft.graph.openTypeExtension`.</span></span>
+- <span data-ttu-id="1c407-277">O nome da extensão "Com.Contoso.HR".</span><span class="sxs-lookup"><span data-stu-id="1c407-277">The extension name "Com.Contoso.HR".</span></span>
+- <span data-ttu-id="1c407-278">Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e a matriz de cadeias de caracteres `topPicks`.</span><span class="sxs-lookup"><span data-stu-id="1c407-278">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="71b97-275">HTTP</span><span class="sxs-lookup"><span data-stu-id="71b97-275">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1c407-279">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c407-279">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_5"
@@ -518,28 +534,32 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="71b97-276">C#</span><span class="sxs-lookup"><span data-stu-id="71b97-276">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1c407-280">C#</span><span class="sxs-lookup"><span data-stu-id="1c407-280">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71b97-277">Javascript</span><span class="sxs-lookup"><span data-stu-id="71b97-277">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1c407-281">Javascript</span><span class="sxs-lookup"><span data-stu-id="1c407-281">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-5-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="71b97-278">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="71b97-278">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1c407-282">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1c407-282">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="1c407-283">Java</span><span class="sxs-lookup"><span data-stu-id="1c407-283">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-opentypeextension-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response-5"></a><span data-ttu-id="71b97-279">Resposta 5</span><span class="sxs-lookup"><span data-stu-id="71b97-279">Response 5</span></span>
+### <a name="response-5"></a><span data-ttu-id="1c407-284">Resposta 5</span><span class="sxs-lookup"><span data-stu-id="1c407-284">Response 5</span></span>
 
-<span data-ttu-id="71b97-p117">Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão.</span><span class="sxs-lookup"><span data-stu-id="71b97-p117">Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically created post, which in turn contains the new extension.</span></span>
+<span data-ttu-id="1c407-p117">Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão.</span><span class="sxs-lookup"><span data-stu-id="1c407-p117">Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically created post, which in turn contains the new extension.</span></span>
 
-<span data-ttu-id="71b97-p118">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="71b97-p118">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1c407-p118">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1c407-p118">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
-<span data-ttu-id="71b97-p119">Para obter a nova extensão, primeiro [obtenha todas as postagens](../api/conversationthread-list-posts.md) desse thread. Inicialmente, deve haver somente uma. Em seguida, aplique a ID da postagem e o nome da extensão `Com.Contoso.Benefits` para [obter a extensão](../api/opentypeextension-get.md).</span><span class="sxs-lookup"><span data-stu-id="71b97-p119">To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to [get the extension](../api/opentypeextension-get.md).</span></span>
+<span data-ttu-id="1c407-p119">Para obter a nova extensão, primeiro [obtenha todas as postagens](../api/conversationthread-list-posts.md) desse thread. Inicialmente, deve haver somente uma. Em seguida, aplique a ID da postagem e o nome da extensão `Com.Contoso.Benefits` para [obter a extensão](../api/opentypeextension-get.md).</span><span class="sxs-lookup"><span data-stu-id="1c407-p119">To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to [get the extension](../api/opentypeextension-get.md).</span></span>
 
 <!-- {
   "blockType": "response",

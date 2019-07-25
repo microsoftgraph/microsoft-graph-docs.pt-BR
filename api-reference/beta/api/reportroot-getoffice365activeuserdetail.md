@@ -4,32 +4,32 @@ description: Obtenha dados sobre os usuários ativos do Office 365.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 3de04d85c23f3403c44b0930f6bc8ac60587a438
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e41c67aa2b21a97b96fe42132bb65491220d9b6c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446889"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35873437"
 ---
-# <a name="reportroot-getoffice365activeuserdetail"></a><span data-ttu-id="4b3dd-103">reportRoot: getOffice365ActiveUserDetail</span><span class="sxs-lookup"><span data-stu-id="4b3dd-103">reportRoot: getOffice365ActiveUserDetail</span></span>
+# <a name="reportroot-getoffice365activeuserdetail"></a><span data-ttu-id="8a376-103">reportRoot: getOffice365ActiveUserDetail</span><span class="sxs-lookup"><span data-stu-id="8a376-103">reportRoot: getOffice365ActiveUserDetail</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4b3dd-104">Obtenha dados sobre os usuários ativos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-104">Get details about Office 365 active users.</span></span>
+<span data-ttu-id="8a376-104">Obtenha dados sobre os usuários ativos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="8a376-104">Get details about Office 365 active users.</span></span>
 
-> <span data-ttu-id="4b3dd-105">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Usuários ativos](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).</span><span class="sxs-lookup"><span data-stu-id="4b3dd-105">**Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).</span></span>
+> <span data-ttu-id="8a376-105">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Usuários ativos](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).</span><span class="sxs-lookup"><span data-stu-id="8a376-105">**Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4b3dd-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4b3dd-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8a376-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="8a376-106">Permissions</span></span>
 
-<span data-ttu-id="4b3dd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4b3dd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8a376-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a376-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4b3dd-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4b3dd-109">Permission type</span></span>                        | <span data-ttu-id="4b3dd-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4b3dd-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="8a376-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8a376-109">Permission type</span></span>                        | <span data-ttu-id="8a376-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8a376-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="4b3dd-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4b3dd-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4b3dd-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4b3dd-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="4b3dd-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4b3dd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4b3dd-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-114">Not supported.</span></span>                           |
-| <span data-ttu-id="4b3dd-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4b3dd-115">Application</span></span>                            | <span data-ttu-id="4b3dd-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4b3dd-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="8a376-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8a376-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="8a376-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="8a376-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="8a376-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8a376-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8a376-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8a376-114">Not supported.</span></span>                           |
+| <span data-ttu-id="8a376-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8a376-115">Application</span></span>                            | <span data-ttu-id="8a376-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="8a376-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="4b3dd-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4b3dd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8a376-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8a376-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -38,96 +38,96 @@ GET /reports/getOffice365ActiveUserDetail(period='{period_value}')
 GET /reports/getOffice365ActiveUserDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="4b3dd-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="4b3dd-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="8a376-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="8a376-118">Function parameters</span></span>
 
-<span data-ttu-id="4b3dd-119">Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
+<span data-ttu-id="8a376-119">Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.</span><span class="sxs-lookup"><span data-stu-id="8a376-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
 
-| <span data-ttu-id="4b3dd-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="4b3dd-120">Parameter</span></span> | <span data-ttu-id="4b3dd-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="4b3dd-121">Type</span></span>   | <span data-ttu-id="4b3dd-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="4b3dd-122">Description</span></span>                              |
+| <span data-ttu-id="8a376-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="8a376-120">Parameter</span></span> | <span data-ttu-id="8a376-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="8a376-121">Type</span></span>   | <span data-ttu-id="8a376-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="8a376-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="4b3dd-123">ponto</span><span class="sxs-lookup"><span data-stu-id="4b3dd-123">period</span></span>    | <span data-ttu-id="4b3dd-124">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4b3dd-124">string</span></span> | <span data-ttu-id="4b3dd-125">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="4b3dd-126">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="4b3dd-127">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
-| <span data-ttu-id="4b3dd-128">data</span><span class="sxs-lookup"><span data-stu-id="4b3dd-128">date</span></span>      | <span data-ttu-id="4b3dd-129">Data</span><span class="sxs-lookup"><span data-stu-id="4b3dd-129">Date</span></span>   | <span data-ttu-id="4b3dd-130">Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="4b3dd-131">{date_value} deve ter um formato de AAAA-MM-DD.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="4b3dd-132">Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
+| <span data-ttu-id="8a376-123">ponto</span><span class="sxs-lookup"><span data-stu-id="8a376-123">period</span></span>    | <span data-ttu-id="8a376-124">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8a376-124">string</span></span> | <span data-ttu-id="8a376-125">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="8a376-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="8a376-126">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="8a376-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="8a376-127">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="8a376-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
+| <span data-ttu-id="8a376-128">data</span><span class="sxs-lookup"><span data-stu-id="8a376-128">date</span></span>      | <span data-ttu-id="8a376-129">Data</span><span class="sxs-lookup"><span data-stu-id="8a376-129">Date</span></span>   | <span data-ttu-id="8a376-130">Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade.</span><span class="sxs-lookup"><span data-stu-id="8a376-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="8a376-131">{date_value} deve ter um formato de AAAA-MM-DD.</span><span class="sxs-lookup"><span data-stu-id="8a376-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="8a376-132">Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo.</span><span class="sxs-lookup"><span data-stu-id="8a376-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
 
-> <span data-ttu-id="4b3dd-133">**Observação:** você precisa definir o período ou data na URL.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-133">**Note:** You need to set either period or date in the URL.</span></span>
+> <span data-ttu-id="8a376-133">**Observação:** você precisa definir o período ou data na URL.</span><span class="sxs-lookup"><span data-stu-id="8a376-133">**Note:** You need to set either period or date in the URL.</span></span>
 
-<span data-ttu-id="4b3dd-134">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-134">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="4b3dd-135">O tipo de saída padrão é text/csv.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-135">The default output type is text/csv.</span></span> <span data-ttu-id="4b3dd-136">No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-136">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="8a376-134">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta.</span><span class="sxs-lookup"><span data-stu-id="8a376-134">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="8a376-135">O tipo de saída padrão é text/csv.</span><span class="sxs-lookup"><span data-stu-id="8a376-135">The default output type is text/csv.</span></span> <span data-ttu-id="8a376-136">No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="8a376-136">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4b3dd-137">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4b3dd-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8a376-137">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8a376-137">Request headers</span></span>
 
-| <span data-ttu-id="4b3dd-138">Nome</span><span class="sxs-lookup"><span data-stu-id="4b3dd-138">Name</span></span>          | <span data-ttu-id="4b3dd-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="4b3dd-139">Description</span></span>               |
+| <span data-ttu-id="8a376-138">Nome</span><span class="sxs-lookup"><span data-stu-id="8a376-138">Name</span></span>          | <span data-ttu-id="8a376-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="8a376-139">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="4b3dd-140">Autorização</span><span class="sxs-lookup"><span data-stu-id="4b3dd-140">Authorization</span></span> | <span data-ttu-id="4b3dd-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8a376-140">Autorização</span><span class="sxs-lookup"><span data-stu-id="8a376-140">Authorization</span></span> | <span data-ttu-id="8a376-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8a376-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="4b3dd-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="4b3dd-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8a376-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="8a376-143">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="4b3dd-144">CSV</span><span class="sxs-lookup"><span data-stu-id="4b3dd-144">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="8a376-144">CSV</span><span class="sxs-lookup"><span data-stu-id="8a376-144">CSV</span></span>
 
-<span data-ttu-id="4b3dd-145">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-145">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="4b3dd-146">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-146">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="8a376-145">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="8a376-145">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="8a376-146">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="8a376-146">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="4b3dd-147">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-147">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="8a376-147">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="8a376-147">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="4b3dd-148">O arquivo CSV possui os seguintes cabeçalhos para colunas:</span><span class="sxs-lookup"><span data-stu-id="4b3dd-148">The CSV file has the following headers for columns:</span></span>
+<span data-ttu-id="8a376-148">O arquivo CSV possui os seguintes cabeçalhos para colunas:</span><span class="sxs-lookup"><span data-stu-id="8a376-148">The CSV file has the following headers for columns:</span></span>
 
-- <span data-ttu-id="4b3dd-149">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="4b3dd-149">Report Refresh Date</span></span>
-- <span data-ttu-id="4b3dd-150">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="4b3dd-150">User Principal Name</span></span>
-- <span data-ttu-id="4b3dd-151">Nome de exibição</span><span class="sxs-lookup"><span data-stu-id="4b3dd-151">Display Name</span></span>
-- <span data-ttu-id="4b3dd-152">Excluído</span><span class="sxs-lookup"><span data-stu-id="4b3dd-152">Is Deleted</span></span>
-- <span data-ttu-id="4b3dd-153">Data de exclusão</span><span class="sxs-lookup"><span data-stu-id="4b3dd-153">Deleted Date</span></span>
-- <span data-ttu-id="4b3dd-154">Tem a licença do Exchange</span><span class="sxs-lookup"><span data-stu-id="4b3dd-154">Has Exchange License</span></span>
-- <span data-ttu-id="4b3dd-155">Tem a licença do OneDrive</span><span class="sxs-lookup"><span data-stu-id="4b3dd-155">Has OneDrive License</span></span>
-- <span data-ttu-id="4b3dd-156">Tem a licença do SharePoint</span><span class="sxs-lookup"><span data-stu-id="4b3dd-156">Has SharePoint License</span></span>
-- <span data-ttu-id="4b3dd-157">Tem a licença do Skype for Business</span><span class="sxs-lookup"><span data-stu-id="4b3dd-157">Has Skype For Business License</span></span>
-- <span data-ttu-id="4b3dd-158">Tem a licença do Yammer</span><span class="sxs-lookup"><span data-stu-id="4b3dd-158">Has Yammer License</span></span>
-- <span data-ttu-id="4b3dd-159">Tem a licença do Teams</span><span class="sxs-lookup"><span data-stu-id="4b3dd-159">Has Teams License</span></span>
-- <span data-ttu-id="4b3dd-160">Data da última atividade do Exchange</span><span class="sxs-lookup"><span data-stu-id="4b3dd-160">Exchange Last Activity Date</span></span>
-- <span data-ttu-id="4b3dd-161">Data da última atividade do OneDrive</span><span class="sxs-lookup"><span data-stu-id="4b3dd-161">OneDrive Last Activity Date</span></span>
-- <span data-ttu-id="4b3dd-162">Data da última atividade do SharePoint</span><span class="sxs-lookup"><span data-stu-id="4b3dd-162">SharePoint Last Activity Date</span></span>
-- <span data-ttu-id="4b3dd-163">Data da última atividade do Skype for Business</span><span class="sxs-lookup"><span data-stu-id="4b3dd-163">Skype For Business Last Activity Date</span></span>
-- <span data-ttu-id="4b3dd-164">Data da última atividade do Yammer</span><span class="sxs-lookup"><span data-stu-id="4b3dd-164">Yammer Last Activity Date</span></span>
-- <span data-ttu-id="4b3dd-165">Data da última atividade do Teams</span><span class="sxs-lookup"><span data-stu-id="4b3dd-165">Teams Last Activity Date</span></span>
-- <span data-ttu-id="4b3dd-166">Data de atribuição da licença do Exchange</span><span class="sxs-lookup"><span data-stu-id="4b3dd-166">Exchange License Assign Date</span></span>
-- <span data-ttu-id="4b3dd-167">Data de atribuição da licença do OneDrive</span><span class="sxs-lookup"><span data-stu-id="4b3dd-167">OneDrive License Assign Date</span></span>
-- <span data-ttu-id="4b3dd-168">Data de atribuição da licença do SharePoint</span><span class="sxs-lookup"><span data-stu-id="4b3dd-168">SharePoint License Assign Date</span></span>
-- <span data-ttu-id="4b3dd-169">Data de atribuição da licença do Skype for Business</span><span class="sxs-lookup"><span data-stu-id="4b3dd-169">Skype For Business License Assign Date</span></span>
-- <span data-ttu-id="4b3dd-170">Data de atribuição da licença do Yammer</span><span class="sxs-lookup"><span data-stu-id="4b3dd-170">Yammer License Assign Date</span></span>
-- <span data-ttu-id="4b3dd-171">Data de atribuição da licença do Teams</span><span class="sxs-lookup"><span data-stu-id="4b3dd-171">Teams License Assign Date</span></span>
-- <span data-ttu-id="4b3dd-172">Produtos Atribuídos</span><span class="sxs-lookup"><span data-stu-id="4b3dd-172">Assigned Products</span></span>
+- <span data-ttu-id="8a376-149">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="8a376-149">Report Refresh Date</span></span>
+- <span data-ttu-id="8a376-150">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="8a376-150">User Principal Name</span></span>
+- <span data-ttu-id="8a376-151">Nome de exibição</span><span class="sxs-lookup"><span data-stu-id="8a376-151">Display Name</span></span>
+- <span data-ttu-id="8a376-152">Excluído</span><span class="sxs-lookup"><span data-stu-id="8a376-152">Is Deleted</span></span>
+- <span data-ttu-id="8a376-153">Data de exclusão</span><span class="sxs-lookup"><span data-stu-id="8a376-153">Deleted Date</span></span>
+- <span data-ttu-id="8a376-154">Tem a licença do Exchange</span><span class="sxs-lookup"><span data-stu-id="8a376-154">Has Exchange License</span></span>
+- <span data-ttu-id="8a376-155">Tem a licença do OneDrive</span><span class="sxs-lookup"><span data-stu-id="8a376-155">Has OneDrive License</span></span>
+- <span data-ttu-id="8a376-156">Tem a licença do SharePoint</span><span class="sxs-lookup"><span data-stu-id="8a376-156">Has SharePoint License</span></span>
+- <span data-ttu-id="8a376-157">Tem a licença do Skype for Business</span><span class="sxs-lookup"><span data-stu-id="8a376-157">Has Skype For Business License</span></span>
+- <span data-ttu-id="8a376-158">Tem a licença do Yammer</span><span class="sxs-lookup"><span data-stu-id="8a376-158">Has Yammer License</span></span>
+- <span data-ttu-id="8a376-159">Tem a licença do Teams</span><span class="sxs-lookup"><span data-stu-id="8a376-159">Has Teams License</span></span>
+- <span data-ttu-id="8a376-160">Data da última atividade do Exchange</span><span class="sxs-lookup"><span data-stu-id="8a376-160">Exchange Last Activity Date</span></span>
+- <span data-ttu-id="8a376-161">Data da última atividade do OneDrive</span><span class="sxs-lookup"><span data-stu-id="8a376-161">OneDrive Last Activity Date</span></span>
+- <span data-ttu-id="8a376-162">Data da última atividade do SharePoint</span><span class="sxs-lookup"><span data-stu-id="8a376-162">SharePoint Last Activity Date</span></span>
+- <span data-ttu-id="8a376-163">Data da última atividade do Skype for Business</span><span class="sxs-lookup"><span data-stu-id="8a376-163">Skype For Business Last Activity Date</span></span>
+- <span data-ttu-id="8a376-164">Data da última atividade do Yammer</span><span class="sxs-lookup"><span data-stu-id="8a376-164">Yammer Last Activity Date</span></span>
+- <span data-ttu-id="8a376-165">Data da última atividade do Teams</span><span class="sxs-lookup"><span data-stu-id="8a376-165">Teams Last Activity Date</span></span>
+- <span data-ttu-id="8a376-166">Data de atribuição da licença do Exchange</span><span class="sxs-lookup"><span data-stu-id="8a376-166">Exchange License Assign Date</span></span>
+- <span data-ttu-id="8a376-167">Data de atribuição da licença do OneDrive</span><span class="sxs-lookup"><span data-stu-id="8a376-167">OneDrive License Assign Date</span></span>
+- <span data-ttu-id="8a376-168">Data de atribuição da licença do SharePoint</span><span class="sxs-lookup"><span data-stu-id="8a376-168">SharePoint License Assign Date</span></span>
+- <span data-ttu-id="8a376-169">Data de atribuição da licença do Skype for Business</span><span class="sxs-lookup"><span data-stu-id="8a376-169">Skype For Business License Assign Date</span></span>
+- <span data-ttu-id="8a376-170">Data de atribuição da licença do Yammer</span><span class="sxs-lookup"><span data-stu-id="8a376-170">Yammer License Assign Date</span></span>
+- <span data-ttu-id="8a376-171">Data de atribuição da licença do Teams</span><span class="sxs-lookup"><span data-stu-id="8a376-171">Teams License Assign Date</span></span>
+- <span data-ttu-id="8a376-172">Produtos Atribuídos</span><span class="sxs-lookup"><span data-stu-id="8a376-172">Assigned Products</span></span>
 
-<span data-ttu-id="4b3dd-173">Não há suporte para as seguintes colunas no Microsoft Graph da China operado pela 21Vianet:</span><span class="sxs-lookup"><span data-stu-id="4b3dd-173">The following columns are not supported in Microsoft Graph China operated by 21Vianet:</span></span>
+<span data-ttu-id="8a376-173">Não há suporte para as seguintes colunas no Microsoft Graph da China operado pela 21Vianet:</span><span class="sxs-lookup"><span data-stu-id="8a376-173">The following columns are not supported in Microsoft Graph China operated by 21Vianet:</span></span>
 
-- <span data-ttu-id="4b3dd-174">Tem a licença do Yammer</span><span class="sxs-lookup"><span data-stu-id="4b3dd-174">Has Yammer License</span></span>
-- <span data-ttu-id="4b3dd-175">Tem a licença do Teams</span><span class="sxs-lookup"><span data-stu-id="4b3dd-175">Has Teams License</span></span>
-- <span data-ttu-id="4b3dd-176">Data da última atividade do Yammer</span><span class="sxs-lookup"><span data-stu-id="4b3dd-176">Yammer Last Activity Date</span></span>
-- <span data-ttu-id="4b3dd-177">Data da última atividade do Teams</span><span class="sxs-lookup"><span data-stu-id="4b3dd-177">Teams Last Activity Date</span></span>
-- <span data-ttu-id="4b3dd-178">Data de atribuição da licença do Yammer</span><span class="sxs-lookup"><span data-stu-id="4b3dd-178">Yammer License Assign Date</span></span>
-- <span data-ttu-id="4b3dd-179">Data de atribuição da licença do Teams</span><span class="sxs-lookup"><span data-stu-id="4b3dd-179">Teams License Assign Date</span></span>
+- <span data-ttu-id="8a376-174">Tem a licença do Yammer</span><span class="sxs-lookup"><span data-stu-id="8a376-174">Has Yammer License</span></span>
+- <span data-ttu-id="8a376-175">Tem a licença do Teams</span><span class="sxs-lookup"><span data-stu-id="8a376-175">Has Teams License</span></span>
+- <span data-ttu-id="8a376-176">Data da última atividade do Yammer</span><span class="sxs-lookup"><span data-stu-id="8a376-176">Yammer Last Activity Date</span></span>
+- <span data-ttu-id="8a376-177">Data da última atividade do Teams</span><span class="sxs-lookup"><span data-stu-id="8a376-177">Teams Last Activity Date</span></span>
+- <span data-ttu-id="8a376-178">Data de atribuição da licença do Yammer</span><span class="sxs-lookup"><span data-stu-id="8a376-178">Yammer License Assign Date</span></span>
+- <span data-ttu-id="8a376-179">Data de atribuição da licença do Teams</span><span class="sxs-lookup"><span data-stu-id="8a376-179">Teams License Assign Date</span></span>
 
-### <a name="json"></a><span data-ttu-id="4b3dd-180">JSON</span><span class="sxs-lookup"><span data-stu-id="4b3dd-180">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="8a376-180">JSON</span><span class="sxs-lookup"><span data-stu-id="8a376-180">JSON</span></span>
 
-<span data-ttu-id="4b3dd-181">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-181">If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.</span></span>
+<span data-ttu-id="8a376-181">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8a376-181">If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.</span></span>
 
-<span data-ttu-id="4b3dd-182">As propriedades a seguir no objeto **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** não têm suporte no Microsoft Graph China operado pela 21vianet:</span><span class="sxs-lookup"><span data-stu-id="4b3dd-182">The following properties in **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object are not supported in Microsoft Graph China operated by 21Vianet:</span></span>
+<span data-ttu-id="8a376-182">As propriedades a seguir no objeto **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** não têm suporte no Microsoft Graph China operado pela 21vianet:</span><span class="sxs-lookup"><span data-stu-id="8a376-182">The following properties in **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object are not supported in Microsoft Graph China operated by 21Vianet:</span></span>
 
-- <span data-ttu-id="4b3dd-183">hasYammerLicense</span><span class="sxs-lookup"><span data-stu-id="4b3dd-183">hasYammerLicense</span></span>
-- <span data-ttu-id="4b3dd-184">hasTeamsLicense</span><span class="sxs-lookup"><span data-stu-id="4b3dd-184">hasTeamsLicense</span></span>
-- <span data-ttu-id="4b3dd-185">yammerLastActivityDate</span><span class="sxs-lookup"><span data-stu-id="4b3dd-185">yammerLastActivityDate</span></span>
-- <span data-ttu-id="4b3dd-186">teamsLastActivityDate</span><span class="sxs-lookup"><span data-stu-id="4b3dd-186">teamsLastActivityDate</span></span>
-- <span data-ttu-id="4b3dd-187">yammerLicenseAssignDate</span><span class="sxs-lookup"><span data-stu-id="4b3dd-187">yammerLicenseAssignDate</span></span>
-- <span data-ttu-id="4b3dd-188">teamsLicenseAssignDate</span><span class="sxs-lookup"><span data-stu-id="4b3dd-188">teamsLicenseAssignDate</span></span>
+- <span data-ttu-id="8a376-183">hasYammerLicense</span><span class="sxs-lookup"><span data-stu-id="8a376-183">hasYammerLicense</span></span>
+- <span data-ttu-id="8a376-184">hasTeamsLicense</span><span class="sxs-lookup"><span data-stu-id="8a376-184">hasTeamsLicense</span></span>
+- <span data-ttu-id="8a376-185">yammerLastActivityDate</span><span class="sxs-lookup"><span data-stu-id="8a376-185">yammerLastActivityDate</span></span>
+- <span data-ttu-id="8a376-186">teamsLastActivityDate</span><span class="sxs-lookup"><span data-stu-id="8a376-186">teamsLastActivityDate</span></span>
+- <span data-ttu-id="8a376-187">yammerLicenseAssignDate</span><span class="sxs-lookup"><span data-stu-id="8a376-187">yammerLicenseAssignDate</span></span>
+- <span data-ttu-id="8a376-188">teamsLicenseAssignDate</span><span class="sxs-lookup"><span data-stu-id="8a376-188">teamsLicenseAssignDate</span></span>
 
-<span data-ttu-id="4b3dd-189">O tamanho de página padrão para essa solicitação é de 200 itens.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-189">The default page size for this request is 200 items.</span></span>
+<span data-ttu-id="8a376-189">O tamanho de página padrão para essa solicitação é de 200 itens.</span><span class="sxs-lookup"><span data-stu-id="8a376-189">The default page size for this request is 200 items.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4b3dd-190">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4b3dd-190">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8a376-190">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8a376-190">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="4b3dd-191">CSV</span><span class="sxs-lookup"><span data-stu-id="4b3dd-191">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="8a376-191">CSV</span><span class="sxs-lookup"><span data-stu-id="8a376-191">CSV</span></span>
 
-<span data-ttu-id="4b3dd-192">Veja a seguir um exemplo que gera CSV.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-192">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="8a376-192">Veja a seguir um exemplo que gera CSV.</span><span class="sxs-lookup"><span data-stu-id="8a376-192">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4b3dd-193">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4b3dd-193">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8a376-193">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8a376-193">Request</span></span>
 
-<span data-ttu-id="4b3dd-194">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-194">The following is an example of the request.</span></span>
+<span data-ttu-id="8a376-194">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8a376-194">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4b3dd-195">HTTP</span><span class="sxs-lookup"><span data-stu-id="4b3dd-195">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8a376-195">HTTP</span><span class="sxs-lookup"><span data-stu-id="8a376-195">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getoffice365activeuserdetail_csv"
@@ -136,24 +136,28 @@ GET /reports/getOffice365ActiveUserDetail(date={date_value})
 ```http
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period='D7')?$format=text/csv
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4b3dd-196">C#</span><span class="sxs-lookup"><span data-stu-id="4b3dd-196">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8a376-196">C#</span><span class="sxs-lookup"><span data-stu-id="8a376-196">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365activeuserdetail-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4b3dd-197">Javascript</span><span class="sxs-lookup"><span data-stu-id="4b3dd-197">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8a376-197">Javascript</span><span class="sxs-lookup"><span data-stu-id="8a376-197">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365activeuserdetail-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4b3dd-198">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="4b3dd-198">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8a376-198">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="8a376-198">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activeuserdetail-csv-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="8a376-199">Java</span><span class="sxs-lookup"><span data-stu-id="8a376-199">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365activeuserdetail-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="4b3dd-199">Resposta</span><span class="sxs-lookup"><span data-stu-id="4b3dd-199">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8a376-200">Resposta</span><span class="sxs-lookup"><span data-stu-id="8a376-200">Response</span></span>
 
-<span data-ttu-id="4b3dd-200">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-200">The following is an example of the response.</span></span>
+<span data-ttu-id="8a376-201">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8a376-201">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -163,7 +167,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="4b3dd-201">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-201">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="8a376-202">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="8a376-202">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -178,16 +182,16 @@ Content-Type: application/octet-stream
 Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has Exchange License,Has OneDrive License,Has SharePoint License,Has Skype For Business License,Has Yammer License,Has Teams License,Exchange Last Activity Date,OneDrive Last Activity Date,SharePoint Last Activity Date,Skype For Business Last Activity Date,Yammer Last Activity Date,Teams Last Activity Date,Exchange License Assign Date,OneDrive License Assign Date,SharePoint License Assign Date,Skype For Business License Assign Date,Yammer License Assign Date,Teams License Assign Date,Assigned Products
 ```
 
-### <a name="json"></a><span data-ttu-id="4b3dd-202">JSON</span><span class="sxs-lookup"><span data-stu-id="4b3dd-202">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="8a376-203">JSON</span><span class="sxs-lookup"><span data-stu-id="8a376-203">JSON</span></span>
 
-<span data-ttu-id="4b3dd-203">Veja a seguir um exemplo que retorna JSON.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-203">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="8a376-204">Veja a seguir um exemplo que retorna JSON.</span><span class="sxs-lookup"><span data-stu-id="8a376-204">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4b3dd-204">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4b3dd-204">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8a376-205">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8a376-205">Request</span></span>
 
-<span data-ttu-id="4b3dd-205">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-205">The following is an example of the request.</span></span>
+<span data-ttu-id="8a376-206">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8a376-206">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4b3dd-206">HTTP</span><span class="sxs-lookup"><span data-stu-id="4b3dd-206">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8a376-207">HTTP</span><span class="sxs-lookup"><span data-stu-id="8a376-207">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getoffice365activeuserdetail_json"
@@ -196,26 +200,30 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has
 ```http
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period='D7')?$format=application/json
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4b3dd-207">C#</span><span class="sxs-lookup"><span data-stu-id="4b3dd-207">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8a376-208">C#</span><span class="sxs-lookup"><span data-stu-id="8a376-208">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365activeuserdetail-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4b3dd-208">Javascript</span><span class="sxs-lookup"><span data-stu-id="4b3dd-208">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8a376-209">Javascript</span><span class="sxs-lookup"><span data-stu-id="8a376-209">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365activeuserdetail-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4b3dd-209">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="4b3dd-209">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8a376-210">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="8a376-210">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activeuserdetail-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="8a376-211">Java</span><span class="sxs-lookup"><span data-stu-id="8a376-211">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365activeuserdetail-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="4b3dd-210">Resposta</span><span class="sxs-lookup"><span data-stu-id="4b3dd-210">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8a376-212">Resposta</span><span class="sxs-lookup"><span data-stu-id="8a376-212">Response</span></span>
 
-<span data-ttu-id="4b3dd-211">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-211">The following is an example of the response.</span></span>
+<span data-ttu-id="8a376-213">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8a376-213">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="4b3dd-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4b3dd-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="8a376-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8a376-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
