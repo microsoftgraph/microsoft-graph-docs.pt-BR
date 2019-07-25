@@ -4,12 +4,12 @@ description: 'Responda ao remetente de uma mensagem, adicione um comentário ou 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6e791419b673eb465268a8905efbfa37e75e3bd8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: bb4f4735813b24d191ddfb563a1daf6c4536c917
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447946"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879452"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-reply-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-reply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

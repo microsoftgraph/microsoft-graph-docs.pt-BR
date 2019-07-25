@@ -3,12 +3,12 @@ title: Excluir extensão aberta
 description: 'Exclua uma extensão aberta (objeto openTypeExtension) da instância especificada de um recurso. '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 374c018e87bf740deb9fffa357d2873dc2503c58
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8d2d5b208908509b41a3166e6ee5b1fe435b6ce5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450237"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878402"
 ---
 # <a name="delete-open-extension"></a>Excluir extensão aberta
 
@@ -92,6 +92,10 @@ DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: Atualizar oAuth2PermissionGrant
 description: Atualize as propriedades do objeto oAuth2PermissionGrant.
 localization_priority: Normal
-ms.openlocfilehash: f29ffb1a9c283014aa26810772f2866dba7ba78d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b54254123b38865e16e9fb5780c06effd538a970
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450055"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878926"
 ---
 # <a name="update-oauth2permissiongrant"></a>Atualizar oAuth2PermissionGrant
 
@@ -77,6 +77,10 @@ Content-length: 30
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-oauth2permissiongrant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

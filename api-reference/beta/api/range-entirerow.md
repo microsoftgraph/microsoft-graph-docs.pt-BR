@@ -4,12 +4,12 @@ description: Obtém um objeto que representa toda a linha do intervalo.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ddaf7889b565b3d4bf776dd366514d8f1f39febb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9b1840e97e374706526e58eea58aff670c0b0cdd
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445538"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35874878"
 ---
 # <a name="range-entirerow"></a>Range: EntireRow
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-entirerow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/range-entirerow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

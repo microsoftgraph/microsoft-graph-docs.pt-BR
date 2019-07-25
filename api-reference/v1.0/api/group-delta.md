@@ -4,12 +4,12 @@ description: Obter grupos recém-criados, atualizados ou excluídos, incluindo a
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9ffe12ef8aeb49db063ed4bf6f800963fe436ed5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2e2ab2c2842b6bd2423a57c54eebde03664f8a7c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446133"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890803"
 ---
 # <a name="group-delta"></a>group: delta
 Obter grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação de grupo, sem ter que executar uma leitura completa de toda a coleção de grupos. Consulte [usando a consulta Delta](/graph/delta-query-overview) para obter detalhes.
@@ -127,6 +127,10 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -183,22 +187,26 @@ O próximo exemplo mostra uma solicitação inicial selecionando três proprieda
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_delta"
+  "name": "group_delta_with_select"
 }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-with-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-with-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-delta-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/group-delta-with-select-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-delta-with-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -235,15 +243,35 @@ Content-type: application/json
 #### <a name="request-3"></a>Solicitação 3
 
 O exemplo a seguir mostra uma solicitação inicial selecionando três propriedades para controle de alterações com o comportamento de resposta mínima alternativa:
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_delta"
+  "name": "group_delta_minimal"
 }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 Prefer: return=minimal
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-minimal-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-minimal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/group-delta-minimal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-delta-minimal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response-3"></a>Resposta 3
 

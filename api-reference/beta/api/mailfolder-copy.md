@@ -4,12 +4,12 @@ description: Copie uma mailFolder e seu conteúdo para outra mailFolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9013783623e5174397fe8de3f8b20566c2029da4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c4e4429cb8cbd0b16142b4008952270248d583bf
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449376"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880163"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -88,6 +88,10 @@ Content-length: 44
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/mailfolder-copy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/mailfolder-copy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

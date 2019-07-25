@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 574de094395d44221ebc468e03cb7201d665594e
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: b33e7ab511effeab4e8d8e7576b704b092917199
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841168"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878596"
 ---
 # <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Atribuir onPremisesAgent a onPremisesAgentGroup
 
@@ -55,6 +55,8 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_onpremisesagentgroup_from_onpremisesagent"
@@ -63,6 +65,16 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agents/1234b780-965f-4149-85c5-a8c73e58b67d/agentGroups/$ref
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-onpremisesagentgroup-from-onpremisesagent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-onpremisesagentgroup-from-onpremisesagent-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 No corpo da solicitação, forneça uma representação JSON de referência de OData para um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
 

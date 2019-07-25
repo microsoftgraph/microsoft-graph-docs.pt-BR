@@ -1,15 +1,16 @@
 ---
 title: tipo de recurso directoryDefinition
-description: Fornece as informações do mecanismo de sincronização sobre um diretório e seus objetos. Esse recurso instrui o mecanismo de sincronização, por exemplo, que o diretório tem objetos chamados **usuário** e **grupo**, quais atributos são compatíveis com esses objetos e os tipos desses atributos. Para que o objeto e o atributo participem das regras de sincronização e dos mapeamentos de objetos, eles devem ser definidos como parte da definição de diretório.
+description: Fornece as informações do mecanismo de sincronização sobre um diretório e seus objetos.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2c79855ac07ab9a850fd76ac888afbbcb923d136
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: 56c1f5a6a15f7ab6724feff68aa38eba1ef22694
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621434"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888136"
 ---
 # <a name="directorydefinition-resource-type"></a>tipo de recurso directoryDefinition
 
@@ -21,6 +22,12 @@ Em geral, o [esquema de sincronização](synchronization-synchronizationschema.m
 
 As definições de diretório são atualizadas como parte do [esquema de sincronização](synchronization-synchronizationschema.md).
 
+## <a name="methods"></a>Métodos
+
+| Método       | Tipo de retorno  |Descrição|
+|:---------------|:--------|:----------|
+|[Descobrir directoryDefinition](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Descubra o esquema e as propriedades com suporte do diretório.|
+
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo      | Descrição    |
@@ -29,6 +36,9 @@ As definições de diretório são atualizadas como parte do [esquema de sincron
 |los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
 |name           |String     |Nome do diretório. Deve ser exclusivo no [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
 |objectos        |[](synchronization-objectdefinition.md) coleção ObjectDefinition    |Conjunto de objetos suportados pelo diretório.|
+|versão|String|Valor somente leitura que indica a versão descoberta. NULL se a descoberta ainda não tiver ocorrido.|
+|discoveryDateTime|DateTimeOffset| Representa a data e a hora da descoberta usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|discoverabilities|string| Valor somente leitura indicando qual tipo de descoberta o aplicativo oferece suporte. Os possíveis valores são: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -44,220 +54,15 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "discoverabilities": "String",
+  "discoveryDateTime": "DateTimeOffset",
   "id": "String",
+  "metadata": [{"@odata.type": "microsoft.graph.stringKeyStringValuePair"}],
   "name": "String",
-  "objects": [{"@odata.type": "microsoft.graph.objectDefinition"}]
+  "objects": [{"@odata.type": "microsoft.graph.objectDefinition"}],
+  "version": "String"
 }
 
-```
-
-## <a name="json-example"></a>Exemplo de JSON
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.directoryDefinition"
-}-->
-
-```json
-{
-    "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
-    "name": "salesforce.com",
-    "objects": [
-        {
-            "attributes": [
-                {
-                    "anchor": true,
-                    "name": "Id",
-                    "type": "String"
-                },
-                {
-                    "name": "IsActive",
-                    "required": true,
-                    "type": "Boolean"
-                },
-                {
-                    "mutability": "ReadWrite",
-                    "name": "Alias",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "CompanyName",
-                    "type": "String"
-                },
-                {
-                    "name": "CommunityNickname",
-                    "type": "String"
-                },
-                {
-                    "name": "Email",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "EmailEncodingKey",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "LanguageLocaleKey",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "FirstName",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "LastName",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "LocaleSidKey",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "metadata": [
-                        {
-                            "key": "LinkTypeName",
-                            "value": "PermissionSetAssignment"
-                        },
-                        {
-                            "key": "LinkPropertyNames",
-                            "value": "[\"PermissionSetId\"]"
-                        }
-                    ],
-                    "name": "PermissionSets",
-                    "referencedObjects": [
-                        {
-                            "referencedObjectName": "PermissionSet"
-                        }
-                    ],
-                    "type": "Reference"
-                },
-                {
-                    "name": "ProfileId",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "ProfileName",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "TimeZoneSidKey",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "Username",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "UserPermissionsCallCenterAutoLogin",
-                    "required": true,
-                    "type": "Boolean"
-                },
-                {
-                    "name": "UserPermissionsMarketingUser",
-                    "required": true,
-                    "type": "Boolean"
-                },
-                {
-                    "name": "Street",
-                    "type": "String"
-                },
-                {
-                    "name": "City",
-                    "type": "String"
-                },
-                {
-                    "name": "Division",
-                    "type": "String"
-                },
-                {
-                    "name": "EmployeeNumber",
-                    "type": "String"
-                },
-                {
-                    "name": "State",
-                    "type": "String"
-                },
-                {
-                    "name": "PostalCode",
-                    "type": "String"
-                },
-                {
-                    "name": "Country",
-                    "type": "String"
-                },
-                {
-                    "name": "Department",
-                    "type": "String"
-                },
-                {
-                    "name": "MobilePhone",
-                    "type": "String"
-                },
-                {
-                    "name": "Phone",
-                    "type": "String"
-                },
-                {
-                    "name": "Title",
-                    "type": "String"
-                },
-                {
-                    "name": "FederationIdentifier",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "ManagerId",
-                    "referencedObjects": [
-                        {
-                            "referencedObjectName": "User"
-                        }
-                    ],
-                    "type": "Reference"
-                },
-                {
-                    "name": "UserRoleId",
-                    "referencedObjects": [
-                        {
-                            "referencedObjectName": "UserRole"
-                        }
-                    ],
-                    "type": "Reference"
-                }
-            ],
-            "metadata": [
-                {
-                    "key": "IsSoftDeletionSupported",
-                    "value": "false"
-                },
-                {
-                    "key": "ConnectorDataStorageRequired",
-                    "value": "false"
-                },
-                {
-                    "key": "IsSynchronizeAllSupported",
-                    "value": "false"
-                }
-            ],
-            "name": "User"
-        }
-    ],
-    "metadata": []
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

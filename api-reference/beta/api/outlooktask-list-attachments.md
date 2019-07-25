@@ -4,12 +4,12 @@ description: Obter uma lista de objetos Attachment anexados a uma tarefa do Outl
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9e33571f4870a59b47d515002aba63d5121c93be
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 02327781c6354e623aed59678f69661d546c24f5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450622"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877684"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -63,22 +63,26 @@ Este é um exemplo da solicitação.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_attachments"
+  "name": "outlook_task_get_attachments"
 }-->
 
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attachments-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/outlook-task-get-attachments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attachments-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/outlook-task-get-attachments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attachments-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/outlook-task-get-attachments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/outlook-task-get-attachments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,17 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7bbf4c4abb00a839a61450856f3e3aecffe01be6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 878887f0e6449e44ba12cda7315d25058c27f02c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35476435"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35873436"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getOffice365ActiveUserDetail = await graphClient.Reports.GetOffice365ActiveUserDetail('D7')
+var getOffice365ActiveUserDetail = await graphClient.Reports
+    .GetOffice365ActiveUserDetail('D7')
     .Request()
     .GetAsync();
 

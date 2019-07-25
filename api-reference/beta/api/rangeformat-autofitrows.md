@@ -4,12 +4,12 @@ description: Altera a altura das linhas do intervalo atual para obter o melhor a
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 8da69a3bf9ef4a82cc6aba5308821ad1b9127281
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 1dd2cc4519ad47eca20b2c15a8cab60655845ded
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455753"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35874423"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 
@@ -68,6 +68,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/rangeformat-autofitrows-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rangeformat-autofitrows-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

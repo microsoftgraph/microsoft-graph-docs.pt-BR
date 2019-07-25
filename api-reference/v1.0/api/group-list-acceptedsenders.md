@@ -4,12 +4,12 @@ description: Obtenha uma lista de usuários ou grupos que estão na lista de rem
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 6bc202d91852ca34c9415ab0dd5647aecc5494a8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a00c29dc1a3667bf89a4ecc7b46837c4dd35ffa6
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441727"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889273"
 ---
 # <a name="list-acceptedsenders"></a>Listar acceptedSenders
 Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-acceptedsenders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-acceptedsenders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

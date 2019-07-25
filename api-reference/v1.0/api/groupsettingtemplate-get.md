@@ -4,12 +4,12 @@ description: Um modelo de configuração de grupo representa um modelo de config
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5c1529c439ac0630887bf03f8dd721ce8c36a4b4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e841444cb96a23d2bf05a00f920cb846f47e1579
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447429"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889375"
 ---
 # <a name="get-a-group-setting-template"></a>Obter um modelo de configuração de grupo
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettingtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettingtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
