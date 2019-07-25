@@ -4,54 +4,54 @@ description: Crie um novo thread na conversa especificada.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 4bc7fbb9a145a35b8c237e528230cdb55edc21ee
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: bd12f5a93f3cd52efbabb71c31be1241a02d0c2d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437449"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863008"
 ---
-# <a name="create-thread"></a><span data-ttu-id="4ebf0-103">Criar thread</span><span class="sxs-lookup"><span data-stu-id="4ebf0-103">Create thread</span></span>
+# <a name="create-thread"></a><span data-ttu-id="6bd9b-103">Criar thread</span><span class="sxs-lookup"><span data-stu-id="6bd9b-103">Create thread</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4ebf0-104">Crie um novo thread na conversa especificada.</span><span class="sxs-lookup"><span data-stu-id="4ebf0-104">Create a new thread in the specified conversation.</span></span>
+<span data-ttu-id="6bd9b-104">Crie um novo thread na conversa especificada.</span><span class="sxs-lookup"><span data-stu-id="6bd9b-104">Create a new thread in the specified conversation.</span></span>
 
-<span data-ttu-id="4ebf0-p101">Um thread e uma postagem são criados conforme especificado. Use [responder ao thread](conversationthread-reply.md) para incluir postagens adicionais no thread. Ou, se receber a ID de postagem, você também poderá [responder](post-reply.md) a essa postagem no thread.</span><span class="sxs-lookup"><span data-stu-id="4ebf0-p101">A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.</span></span>
+<span data-ttu-id="6bd9b-p101">Um thread e uma postagem são criados conforme especificado. Use [responder ao thread](conversationthread-reply.md) para incluir postagens adicionais no thread. Ou, se receber a ID de postagem, você também poderá [responder](post-reply.md) a essa postagem no thread.</span><span class="sxs-lookup"><span data-stu-id="6bd9b-p101">A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.</span></span>
 
-<span data-ttu-id="4ebf0-108">Observação: Você também pode [Iniciar uma nova conversa criando primeiro um thread](group-post-threads.md).</span><span class="sxs-lookup"><span data-stu-id="4ebf0-108">Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).</span></span>
+<span data-ttu-id="6bd9b-108">Observação: Você também pode [Iniciar uma nova conversa criando primeiro um thread](group-post-threads.md).</span><span class="sxs-lookup"><span data-stu-id="6bd9b-108">Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4ebf0-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="4ebf0-109">Permissions</span></span>
-<span data-ttu-id="4ebf0-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4ebf0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6bd9b-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="6bd9b-109">Permissions</span></span>
+<span data-ttu-id="6bd9b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6bd9b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4ebf0-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4ebf0-112">Permission type</span></span>      | <span data-ttu-id="4ebf0-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4ebf0-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6bd9b-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6bd9b-112">Permission type</span></span>      | <span data-ttu-id="6bd9b-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6bd9b-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4ebf0-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4ebf0-114">Delegated (work or school account)</span></span> | <span data-ttu-id="4ebf0-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4ebf0-115">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4ebf0-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4ebf0-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4ebf0-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4ebf0-117">Not supported.</span></span>    |
-|<span data-ttu-id="4ebf0-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4ebf0-118">Application</span></span> | <span data-ttu-id="4ebf0-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4ebf0-119">Not supported.</span></span> |
+|<span data-ttu-id="6bd9b-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6bd9b-114">Delegated (work or school account)</span></span> | <span data-ttu-id="6bd9b-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6bd9b-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6bd9b-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6bd9b-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6bd9b-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6bd9b-117">Not supported.</span></span>    |
+|<span data-ttu-id="6bd9b-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6bd9b-118">Application</span></span> | <span data-ttu-id="6bd9b-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6bd9b-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4ebf0-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4ebf0-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6bd9b-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6bd9b-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/conversations/{id}/threads
 ```
-## <a name="request-headers"></a><span data-ttu-id="4ebf0-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4ebf0-121">Request headers</span></span>
-| <span data-ttu-id="4ebf0-122">Nome</span><span class="sxs-lookup"><span data-stu-id="4ebf0-122">Name</span></span>       | <span data-ttu-id="4ebf0-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="4ebf0-123">Type</span></span> | <span data-ttu-id="4ebf0-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="4ebf0-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6bd9b-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6bd9b-121">Request headers</span></span>
+| <span data-ttu-id="6bd9b-122">Nome</span><span class="sxs-lookup"><span data-stu-id="6bd9b-122">Name</span></span>       | <span data-ttu-id="6bd9b-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="6bd9b-123">Type</span></span> | <span data-ttu-id="6bd9b-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="6bd9b-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="4ebf0-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="4ebf0-125">Authorization</span></span>  | <span data-ttu-id="4ebf0-126">string</span><span class="sxs-lookup"><span data-stu-id="4ebf0-126">string</span></span>  | <span data-ttu-id="4ebf0-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4ebf0-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6bd9b-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="6bd9b-125">Authorization</span></span>  | <span data-ttu-id="6bd9b-126">string</span><span class="sxs-lookup"><span data-stu-id="6bd9b-126">string</span></span>  | <span data-ttu-id="6bd9b-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6bd9b-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4ebf0-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4ebf0-129">Request body</span></span>
-<span data-ttu-id="4ebf0-130">No corpo da solicitação, forneça uma representação JSON do objeto [ConversationThread](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="4ebf0-130">In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6bd9b-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6bd9b-129">Request body</span></span>
+<span data-ttu-id="6bd9b-130">No corpo da solicitação, forneça uma representação JSON do objeto [ConversationThread](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="6bd9b-130">In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4ebf0-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="4ebf0-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6bd9b-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="6bd9b-131">Response</span></span>
 
-<span data-ttu-id="4ebf0-132">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [ConversationThread](../resources/conversationthread.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4ebf0-132">If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.</span></span>
+<span data-ttu-id="6bd9b-132">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [ConversationThread](../resources/conversationthread.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6bd9b-132">If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4ebf0-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4ebf0-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4ebf0-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4ebf0-134">Request</span></span>
-<span data-ttu-id="4ebf0-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4ebf0-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6bd9b-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6bd9b-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6bd9b-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6bd9b-134">Request</span></span>
+<span data-ttu-id="6bd9b-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6bd9b-135">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4ebf0-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="4ebf0-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="6bd9b-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="6bd9b-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversationthread_from_conversation"
@@ -70,24 +70,28 @@ Content-type: application/json
   }]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4ebf0-137">C#</span><span class="sxs-lookup"><span data-stu-id="4ebf0-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6bd9b-137">C#</span><span class="sxs-lookup"><span data-stu-id="6bd9b-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationthread-from-conversation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4ebf0-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="4ebf0-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6bd9b-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="6bd9b-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversationthread-from-conversation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4ebf0-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="4ebf0-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6bd9b-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6bd9b-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversationthread-from-conversation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="6bd9b-140">Java</span><span class="sxs-lookup"><span data-stu-id="6bd9b-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversationthread-from-conversation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="4ebf0-140">No corpo da solicitação, forneça uma representação JSON do objeto [ConversationThread](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="4ebf0-140">In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="4ebf0-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="4ebf0-141">Response</span></span>
+<span data-ttu-id="6bd9b-141">No corpo da solicitação, forneça uma representação JSON do objeto [ConversationThread](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="6bd9b-141">In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="6bd9b-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="6bd9b-142">Response</span></span>
 
-<span data-ttu-id="4ebf0-p104">Se for bem-sucedido, este método retornará um código de resposta `201 Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4ebf0-p104">If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body. Here is an example of the response.</span></span>
+<span data-ttu-id="6bd9b-p104">Se for bem-sucedido, este método retornará um código de resposta `201 Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6bd9b-p104">If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body. Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
