@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: Criar uma nova entrada em uma lista do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 80d401f45c5a43428239e6473e9acd44a8466d8e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3037903ae448fc4d05b0c8478e78ccb573aeb588
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458996"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880720"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Criar um novo item em uma lista
 
@@ -68,6 +68,10 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

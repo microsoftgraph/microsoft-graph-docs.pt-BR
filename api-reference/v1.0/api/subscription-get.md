@@ -3,12 +3,12 @@ title: Obter assinatura
 description: Recupere as propriedades e os relacionamentos da uma assinatura.
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 32df4ce27d8a3031519a44844f167dd65ec8c30d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a435f6f0188640e8810a2f2bf7fa0cd553672115
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446182"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890544"
 ---
 # <a name="get-subscription"></a>Obter assinatura
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscription-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
