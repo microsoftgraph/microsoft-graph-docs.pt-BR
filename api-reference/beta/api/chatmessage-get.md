@@ -1,17 +1,17 @@
 ---
-title: Obter chat
+title: Obter chatMessage
 description: Recupere uma única mensagem em um bate-papo.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c4f59c4f881f971a514b4922e572619a5d9a757b
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
-ms.translationtype: MT
+ms.openlocfilehash: 8d2335ea5e98816c86aff400685663320afa0325
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778387"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863554"
 ---
-# <a name="get-chatmessage"></a>Obter chat
+# <a name="get-chatmessage"></a>Obter chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,12 +23,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Chat. Read, chat. ReadWrite   |
+|Delegado (conta corporativa ou de estudante) | Chat.Read, Chat.ReadWrite   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Chat.Read.All   |
 
 > [!NOTE]
-> Antes de chamar esta API com permissões de aplicativo, você deve solicitar acesso. Para obter detalhes, consulte [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -75,8 +75,12 @@ GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

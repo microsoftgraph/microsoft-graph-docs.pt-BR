@@ -4,12 +4,12 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67a43e13be16b8e57832c8b9bcacf0658b3c0531
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: c71d9d5d64750c6df48a6e9fdf602d4bec4a0760
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995018"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908485"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -52,7 +52,7 @@ Esse recurso permite:
 |[Listar gerente](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Obter o usuário ou contato que é o gerente do usuário da propriedade de navegação manager.|
 |[Listar memberOf](../api/user-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos, funções de diretório e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação memberOf.|
 |[Listar memberOf transitivos](../api/user-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Lista os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos dos quais o usuário é membro aninhado. |
-|[Listar joinedTeams](../api/user-list-joinedteams.md) |Coleção [groups](group.md)| Obter o Microsoft Teams no qual o usuário é membro direto da propriedade de navegação joinedTeams.|
+|[Listar joinedTeams](../api/user-list-joinedteams.md) |Coleção [team](team.md)| Obter as equipes do Microsoft Teams no qual o usuário é membro direto da propriedade de navegação joinedTeams.|
 |[Listar ownedDevices](../api/user-list-owneddevices.md) |Coleção [directoryObject](directoryobject.md)| Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices.|
 |[Listar ownedObjects](../api/user-list-ownedobjects.md) |Coleção [directoryObject](directoryobject.md)| Obter os objetos directory que pertencem ao usuário da propriedade de navegação ownedObjects.|
 |[Listar plannerTasks](../api/planneruser-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter o plannerTasks atribuído ao usuário.|
@@ -214,7 +214,8 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |mailFolders|Coleção [mailFolder](mailfolder.md)| As pastas de email do usuário. Somente leitura. Anulável.|
 |manager|[directoryObject](directoryobject.md)|O usuário ou contato que é o gerente do usuário. Somente leitura. (Métodos HTTP: GET, PUT, DELETE.)|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. Somente leitura. Anulável.|
-|joinedTeams|Coleção [group](group.md)|O Microsoft Teams do qual o usuário é membro. Somente leitura. Anulável.|
+|joinedTeams|Coleção [team](team.md)|As equipes do Microsoft Teams do qual o usuário é membro. Somente leitura. Anulável.|
+|trabalho em equipe|[userTeamwork](userteamwork.md)| Um contêiner dos recursos do Microsoft Teams disponíveis para o usuário. Somente leitura. Anulável.|
 |messages|Coleção [message](message.md)|As mensagens em uma caixa de correio ou pasta. Somente leitura. Anulável.|
 |onenote|[onenote](onenote.md)| Somente leitura.|
 |outlook|[outlookUser](outlookuser.md)| Os serviços seletivos do Outlook disponíveis para o usuário. Somente leitura. Anulável.|
@@ -253,6 +254,7 @@ Veja a seguir uma representação JSON do recurso
     "manager",
     "memberOf",
     "joinedTeams",
+    "teamwork",
     "messages",
     "onenote",
     "oauth2PermissionGrants",
@@ -352,6 +354,7 @@ Veja a seguir uma representação JSON do recurso
   "manager": {"@odata.type": "microsoft.graph.directoryObject"},
   "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
+  "teamwork": {"@odata.type": "microsoft.graph.teamwork"},
   "messages": [{ "@odata.type": "microsoft.graph.message"}],
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
