@@ -1,19 +1,18 @@
 ---
 title: tipo de recurso teamsAppInstallation
 description: 'Um teamsApp instalado em uma equipe. '
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c98f1b927c319eb1d81573fd9dc43e1baad86a39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b180cae4c700eea31a5d5d9b1504f09ca12c3ae0
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462351"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908345"
 ---
 # <a name="teamsappinstallation-resource-type"></a>tipo de recurso teamsAppInstallation
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que faça parte do aplicativo se tornará parte de qualquer equipe à qual o aplicativo é adicionado.
 
@@ -21,8 +20,8 @@ Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar aplicativos](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lista os aplicativos instalados em uma equipe.|
-|[Adicionar aplicativo](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Adiciona (instala) um aplicativo a uma equipe.|
+|[Listar aplicativos](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | Lista os aplicativos instalados em uma equipe.|
+|[Adicionar aplicativo](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adiciona (instala) um aplicativo a uma equipe.|
 |[Remover aplicativo](../api/teamsappinstallation-delete.md) | Nenhum | Remove (desinstala) um aplicativo de uma equipe.|
 |[Atualizar aplicativo](../api/teamsappinstallation-upgrade.md) | Nenhum | Atualiza para a versão mais recente do aplicativo.|
 
@@ -37,7 +36,7 @@ Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que
 | Relação   | Tipo    | Descrição |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| O aplicativo que está instalado. |
-|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| Os detalhes desta versão do aplicativo. |
+|teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| Os detalhes desta versão do aplicativo. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -49,7 +48,7 @@ Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que
 
 ```json
 {
-  "id": "string",
+  "id": "string"
 }
 ```
 
@@ -59,19 +58,12 @@ Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsappinstallation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
-
+  "tocPath": ""
+}-->

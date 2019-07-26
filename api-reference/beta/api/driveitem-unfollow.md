@@ -1,15 +1,16 @@
 ---
 author: chackman
 ms.author: chackman
+description: Não siga um item que o usuário está seguindo.
 title: Item da unidade não seguir
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e3ab51d5aaa4074837a0cd7126ac6548b09d4acd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: de93302c0d08f343a0b078ceb32325cba5e4cac0
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860896"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908338"
 ---
 # <a name="unfollow-drive-item"></a>Item da unidade não seguir
 
@@ -34,8 +35,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/drive/following/{item-id} 
+DELETE /me/drive/following/{item-id}
 DELETE /users/{user-id}/drive/following/{item-id}
+POST /me/drive/items/{item-id}/unfollow
+POST /users/{user-id}/drive/items/{item-id}/unfollow
 ```
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -56,7 +59,7 @@ Este exemplo não segue um item identificado por `{item-id}`.
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-DELETE /me/drive/following/{item-id}
+DELETE /me/drive/items/{item-id}/unfollow
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-item-csharp-snippets.md)]

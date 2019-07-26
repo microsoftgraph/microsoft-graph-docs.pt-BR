@@ -1,22 +1,22 @@
 ---
-title: Atualizar um aplicativo em uma equipe
-description: Atualiza uma instalação de aplicativo em uma equipe
+title: Instalar o aplicativo para o usuário
+description: Instalar um aplicativo no escopo pessoal do usuário especificado.
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f40951eb3c33b638542a8e2210911adffb15a444
+ms.openlocfilehash: 009d2efe115d8b07f9bdead07965d402db65e65a
 ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908323"
+ms.locfileid: "35908541"
 ---
-# <a name="upgrade-an-app-in-a-team"></a>Atualizar um aplicativo em uma equipe
+# <a name="install-app-for-user"></a>Instalar o aplicativo para o usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza uma [instalação de aplicativo](../resources/teamsappinstallation.md) em uma [equipe](../resources/team.md) para a versão mais recente do aplicativo.
+Instalar um [aplicativo](../resources/teamsapp.md) no escopo pessoal do [usuário](../resources/user.md)especificado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,14 +24,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) |  User.ReadWrite.All, Directory.ReadWrite.All     |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All |
+|Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/installedApps/{id}/upgrade
+POST /users/{id}/teamwork/installedApps
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -42,11 +42,15 @@ POST /teams/{id}/installedApps/{id}/upgrade
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não forneça um corpo de solicitação para esse método.
+O corpo da solicitação deve conter a ID do aplicativo de catálogo existente a ser adicionado.
+
+| Propriedade   | Tipo |Descrição|
+|:---------------|:--------|:----------|
+|teamsApp|String|A ID do aplicativo a ser adicionado.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -55,35 +59,36 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "upgrade_teamsapp"
+  "name": "user_add_teamsApp"
 }-->
-
 ```http
-POST /teams/{id}/installedApps/{id}/upgrade
+POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
+Content-type: application/json
+
+{
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+}
 ```
 
 ### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "name": "upgrade_teamsapp",
   "truncated": true
 } -->
+
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "User add teamsAppInstallations",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->

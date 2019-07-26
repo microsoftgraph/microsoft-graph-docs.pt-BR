@@ -1,15 +1,16 @@
 ---
 title: Adicionar aplicativo à equipe
 description: Instala um aplicativo para a equipe especificada.
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 837528e20da88496ab4d9b1133e461cbc462df37
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a97c0d47633eced4e7ee24cea3649c20f4580ec1
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330051"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908366"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
@@ -18,6 +19,7 @@ ms.locfileid: "33330051"
 Instala um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)especificada.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -33,47 +35,49 @@ POST /teams/{id}/installedApps
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-| Propriedade     | Tipo   |Descrição|
+| Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |teamsApp|String|A ID do aplicativo a ser adicionado.|
 
-
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `200 OK`.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-#### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "add_teamsApp"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/installedApps
+POST /teams/87654321-0abc-zqf0-321456789q/installedApps
+Content-type: application/json
+
 {
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-#### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 401
-
-{
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -81,13 +85,10 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "Add teamsApp",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": []
 }
 -->
-
-## <a name="see-also"></a>Confira também
-
