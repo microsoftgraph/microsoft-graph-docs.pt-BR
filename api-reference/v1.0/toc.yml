@@ -4115,15 +4115,9 @@
                   href: api/channel-post.md
                 - name: Obter canal
                   href: api/channel-get.md
-            - name: Aplicativos
+            - name: Catálogo de Aplicativos
               href: resources/teamsapp.md
               items:
-                - name: Listar aplicativos em equipe
-                  href: api/teamsappinstallation-list.md
-                - name: Adicionar aplicativo à equipe
-                  href: api/teamsappinstallation-add.md
-                - name: Remover aplicativo da equipe
-                  href: api/teamsappinstallation-delete.md
                 - name: Publicar aplicativos no catálogo
                   href: api/teamsapp-publish.md
                 - name: Listar aplicativos no catálogo
@@ -4132,6 +4126,21 @@
                   href: api/teamsapp-update.md
                 - name: Remover aplicativo do catálogo
                   href: api/teamsapp-delete.md
+            - name: App
+              items:
+                - name: Aplicativo instalado
+                  href: resources/teamsappinstallation.md
+                - name: Listar aplicativos em equipe
+                  href: api/teamsappinstallation-list.md
+                - name: Adicionar aplicativo à equipe
+                  href: api/teamsappinstallation-add.md
+                - name: Remover aplicativo da equipe
+                  href: api/teamsappinstallation-delete.md
+                - name: Atualizar o aplicativo instalado para a equipe
+                  href: api/teamsappinstallation-upgrade.md
+            - name: Tab
+              href: resources/teamstab.md
+              items:
                 - name: Listar guias
                   href: api/teamstab-list.md
                 - name: Obter guia
