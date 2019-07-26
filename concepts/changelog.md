@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: a5231180e4477d5ac200bc56fee5e8f1464c612e
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 730b9a2526e82c055c282d3c02bfa1bad35d8031
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840632"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890327"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -61,6 +61,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|beta|Adicionada a propriedade **valuePrefix** à entidade [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) |
 
 ### <a name="files-onedrive-for-business"></a>Arquivos (OneDrive for Business)
+
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
 |Adição|beta|Adicionadas as propriedades **expirationDatetime** e **password** à ação [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta). |
@@ -71,7 +72,16 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |:----------------|:------------|:-----------------------------------------|
 | Adição | v1.0 | Adicionadas as [novas permissões delegadas e de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-1.0) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0). |
 | Adição | beta | Adicionadas as [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-beta) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
-| Adição | v1.0 | Adicionadas a [ função ValidateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) e a[função directoryobject: ValidateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) em [grupos](/graph/api/group-delta?view=graph-rest-1.0), o qual validam que o nome de exibição de um grupo do Office 365 ou seu apelido de email está em conformidade com as políticas de nomenclatura. |
+| Adição | v1.0 | Adicionadas a [grupo: função validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) e a[função directoryobject: validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) em [grupos](/graph/api/group-delta?view=graph-rest-1.0), o qual validam que o nome de exibição de um grupo do Office 365 ou seu apelido de email está em conformidade com as políticas de nomenclatura. |
+| Adição | Beta |As propriedades "version", "discoveryDateTime", "discoverabilities" foram adicionadas ao tipo de recurso [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta). |
+| Adição | Beta |Adicionado o método [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta).|
+
+### <a name="mail-outlook"></a>Email (Outlook)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionado suporte para a permissão Mail.ReadBasic na API mailFolder: [listar pastas de email](/graph/api/user-list-mailfolders?view=graph-rest-beta), [obter uma pasta de email](/graph/api/mailfolder-get?view=graph-rest-beta), [listar pastas secundárias](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) e [listar mensagens em uma pasta de mensagens](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Também foi adicionado suporte Mail.ReadBasic na [consulta delta de email](/graph/api/message-delta?view=graph-rest-beta) e [consulta delta de mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).|
+
 
 ### <a name="reports"></a>Relatórios
 
@@ -162,8 +172,6 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ## <a name="may-2019"></a>Maio de 2019
 
-### <a name="calendar-mail-and-personal-contacts-outlook"></a>Calendário, email e contatos pessoais (Outlook)
-
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 e beta | Foi adicionada a capacidade de administradores limitaram o acesso do aplicativo apenas às caixas de correio específicas, mesmo quando um aplicativo recebe permissões de aplicativo para email, configurações de caixa de correio, calendários ou contatos. Para obter mais detalhes, confira [Escopo de permissões do aplicativo para caixas de correio específicas do Exchange Online](auth-limit-mailbox-access.md). |
@@ -245,7 +253,6 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição        | Beta  | Adicionada a propriedade **ownerPrincipalName** à entidade [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
 | Adição        | Beta  | A propriedade **ownerPrincipalName** foi adicionada à entidade [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 
-### <a name="security"></a>Segurança
 
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |
