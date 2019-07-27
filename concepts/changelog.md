@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 730b9a2526e82c055c282d3c02bfa1bad35d8031
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 4bc30ed6b491587d4b809ce3457aaa20bb7e9c4a
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890327"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908443"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -95,8 +95,13 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Suporte adicional para permissões de aplicativo para [Listar mensagens de canal ](/api-reference/beta/api/channel-list-messages.md), [Obter mensagem de canal](/api-reference/beta/api/channel-get-message.md), [Listar respostas a uma mensagem](/api-reference/beta/api/channel-list-messagereplies.md), e [obter uma resposta a uma mensagem ](/api-reference/beta/api/channel-get-messagereply.md). |
-| Adição | beta | Suporte adicional para permissões de aplicativo para [Listar mensagens em um chat](/api-reference/beta/api/chatmessage-list.md) e [Receber mensagens no chat](/api-reference/beta/api/chatmessage-get.md). |
+| Adição | beta | Suporte adicional para permissões de aplicativo para [Listar mensagens de canal ](/graph/api/channel-list-messages?view=graph-rest-beta), [Obter mensagem de canal](/graph/api/channel-get-message?view=graph-rest-beta), [Listar respostas a uma mensagem](/graph/api/channel-list-messagereplies?view=graph-rest-beta), e [obter uma resposta a uma mensagem ](/graph/api/channel-get-messagereply?view=graph-rest-beta). |
+| Adição | beta | Suporte adicional para permissões de aplicativo para [Listar mensagens em um chat](/graph/api/chatmessage-list?view=graph-rest-beta) e [Receber mensagens no chat](/graph/api/chatmessage-get?view=graph-rest-beta). |
+| Adição | beta | A propriedade**installedApps** foi adicionada ao recurso [chat](/graph/api/resources/chat?view=graph-rest-beta).|
+| Adição | beta | Associação de navegação adicionada à propriedade **chats** do recurso de [usuário](/graph/api/resources/user?view=graph-rest-beta).|
+| Adição | beta | Recurso de [trabalho](/graph/api/resources/teamwork?view=graph-rest-beta) em equipe adicionado. |
+| Adição | beta | Recurso [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta) foi adicionado. |
+| Adição | beta | Novos métodos adicionados ao recurso de[usuário](/graph/api/resources/user?view=graph-rest-beta) habilitando os seguintes métodos com aplicativos pessoais para os usuários: <br>[Lista de aplicativos instalados para o usuário](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[Instalar o aplicativo para o usuário](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[Desinstalar o aplicativo para o usuário](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[Atualizar o aplicativo instalado para o usuário](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
 
 ## <a name="june-2019"></a>Junho de 2019
@@ -2173,12 +2178,12 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição        | beta        | A propriedade **publicação** foi adicionada ao recurso [DriveItem][DriveItem-beta]. |
 | Adição        | beta        | As relações **atividades** e **versões** foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
 | Adição        | beta        | Foram adicionadas novas entidades: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]. |
-| Adição        | beta        | Novos tipos complexos foram adicionados: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta] e [VersionAction][VersionAction-beta]. |
+| Adição        | beta        | Foram adicionados novos tipos complexos: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta] e [VersionAction][VersionAction-beta]. |
 | Adição        | beta        | A propriedade **driveType** foi adicionada ao tipo complexo [ItemReference][ItemReference-beta]. |
 | Exclusão        | beta        | A propriedade **tenantId** foi removida do tipo complexo [SharepointIds][SharepointIds-beta]. |
 | Adição        | v1.0        | As propriedades **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** e **frameRate** foram adicionadas ao tipo complexo [Video][Video-beta]. |
-| Adição        | beta        | As ações [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
-| Adição        | beta        | As propriedades **expirationDateTime**, **senha**, **mensagem** e **destinatários** foram adicionadas ao recurso [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta]. |
+| Adição        | beta        | As ações [CheckIn][CheckIn-beta] e [CheckOut][CheckOut-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
+| Adição        | beta        | As propriedades **expirationDateTime**, **password**, **message** e **recipients** na ação [CreateLink][CreateLink-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
 
 [Drive]: /graph/api/resources/drive?view=graph-rest-1.0
 [DriveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
@@ -2234,7 +2239,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição        | v1.0        | Foram adicionadas novas entidades: [ColumnDefinition][], [ColumnLink][], [ContentType][], [List][], [ListItem][]. |
 | Adição        | v1.0        | As relações **columns**, **contentTypes**, **items** e **lists** foram adicionadas ao recurso [Site][]. |
 | Adição        | v1.0        | Foram adicionados novos tipos complexos: [BooleanColumn][], [CalculatedColumn][], [ChoiceColumn][], [ContentTypeInfo][], [ContentTypeOrder][], [CurrencyColumn][], [DateTimeColumn][], [DefaultColumnValue][], [ListInfo][], [LookupColumn][], [NumberColumn][], [PersonOrGroupColumn][], [SystemFacet][], [TextColumn][]. |
-| Adição        | beta        | Novas entidades foram adicionadas: [BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta], [ContentType][ContentType-beta], [ListItemVersion][ListItemVersion-beta], |
+| Adição        | beta        | Foram adicionadas novas entidades: [BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta], [ContentType][ContentType-beta], [ListItemVersion][ListItemVersion-beta], |
 | Adição        | beta        | As propriedades **columnGroup**, **moeda**, **defaultValue** e **displayName** foram adicionadas à [ColumnDefinition][ColumnDefinition-beta]. |
 | Adição        | beta        | As propriedades **displayName** e **sistema** foram adicionadas ao recurso [Lista][List-beta]. |
 | Adição        | beta        | As relações **atividades** e **contentTypes** foram adicionadas ao recurso [Lista][List-beta]. |
@@ -2242,7 +2247,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição        | beta        | As relações **atividades** e **versões** foram adicionadas ao recurso [ListItem][ListItem-beta]. |
 | Adição        | beta        | A relação **contentTypes** foi adicionada ao recurso [Site][Site-beta]. |
 | Adição        | beta        | A propriedade **outputType** foi adicionada ao tipo [BooleanColumn][BooleanColumn-beta]. |
-| Adição        | beta        | Foram adicionados novos tipos complexos: [ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta], [CurrencyColumn][CurrencyColumn-beta] e [SystemFacet][SystemFacet-beta]. |
+| Adição        | beta        | Foram adicionados novos tipos complexos: [ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta], [CurrencyColumn][CurrencyColumn-beta]e [SystemFacet][SystemFacet-beta]. |
 | Adição        | beta        | A propriedade **contentTypesEnabled** foi adicionada ao tipo complexo [ListInfo][ListInfo-beta]. |
 | Adição        | beta        | A propriedade **allowUnlimitedLength** foi adicionada ao tipo complexo [LookupColumn][LookupColumn-beta]. |
 | Alteração          | beta        | Renomeação da propriedade **allowMultipleValue** para **allowMultipleValues** no tipo complexo [LookupColumn][LookupColumn-beta]. |
