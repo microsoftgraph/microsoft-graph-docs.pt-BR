@@ -1,15 +1,16 @@
 ---
 title: tipo de recurso de equipe
 description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
-author: nkramer
+author: clearab
+doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 52837993d26b764aa8590aadec327fd3a660f104
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 85315d43b1de42e74b83d0ba9664ebfdb7847258
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812828"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908513"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -17,9 +18,7 @@ ms.locfileid: "34812828"
 
 No Microsoft Teams, uma equipe é um conjunto de objetos de [canal](channel.md). Um canal representa um tópico e, portanto, um isolamento lógico da discussão em uma equipe.
 
-Cada equipe está associada a um [grupo](../resources/group.md).
-O grupo tem a mesma ID da equipe, por exemplo, /groups/{id}/team é igual a /teams/{id}.
-Confira mais informações sobre como trabalhar com grupos e membros em equipes, confira [Usar a API REST do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md).
+Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a mesma ID da equipe, por exemplo, `/groups/{id}/team` é o mesmo `/teams/{id}`. Confira mais informações sobre como trabalhar com grupos e membros em equipes, confira [Usar a API REST do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +43,7 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Tipo   | Descrição |
+| Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |displayName|string| O nome da equipe. |
 |description|string| Uma descrição opcional para a equipe. |
@@ -62,16 +61,16 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 
 ## <a name="relationships"></a>Relações
 
-| Relação | Tipo   | Descrição |
+| Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |apps|Coleção [teamsApp](teamsapp.md)| (Obsoleto) Os aplicativos instalados nessa equipe.|
 |channels|Coleção [channel](channel.md)|A coleção de canais e mensagens associadas à equipe.|
 |installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados nessa equipe.|
 |owners|[user](user.md)| A lista de proprietários desta equipe. Atualmente, ao criar uma equipe usando permissões de aplicativo, exatamente um proprietário deve ser especificado. Ao usar permissões delegadas pelo usuário, nenhum proprietário pode ser especificado (o usuário atual é o proprietário). O proprietário deve ser especificado como um objeto ID (GUID), não um UPN. |
 |operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. | 
+|primaryChannel|[canal](channel.md)|O canal principal associado à equipe.|
 |Cronograma|[Cronograma](schedule.md)| Cronograma de turno para essa equipe.|
 |template|[teamsTemplate](teamstemplate.md)| O modelo usado para criar essa equipe. Confira os [modelos disponíveis](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates). |
-
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -116,5 +115,6 @@ Veja a seguir uma representação JSON do recurso.
 -->
 
 ## <a name="see-also"></a>Confira também
+
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
 - [Visão geral da API do Teams](teams-api-overview.md)
