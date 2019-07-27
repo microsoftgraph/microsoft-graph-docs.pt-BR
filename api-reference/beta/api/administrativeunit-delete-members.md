@@ -4,12 +4,12 @@ description: Use esta API para remover um membro (usuário ou grupo) de uma unid
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 21bb1fc226f9c16883de32773592ca4bd52a4758
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: c307a802e2d574950b89c3f5644b5fbf70d90e34
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655408"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917928"
 ---
 # <a name="remove-a-member"></a>Remover um membro
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | AdministrativeUnit. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

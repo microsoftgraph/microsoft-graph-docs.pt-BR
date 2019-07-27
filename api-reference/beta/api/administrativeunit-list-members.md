@@ -4,12 +4,12 @@ description: Use essa API para obter a lista de Membros (usuário e grupo) em um
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d48bf767e8d786002bb523e39970a3e77f72738e
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 2257ece4adf624dcd18499e18a01d9a0e89de3c8
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655303"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917940"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All |
 
 > Observação: para listar os membros de uma associação oculta em uma unidade administrativa, a permissão member. Read. Hidden é necessária.
 

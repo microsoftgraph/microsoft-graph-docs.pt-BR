@@ -4,12 +4,12 @@ description: Recupere um recurso scopedRoleMembership específico.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 533d6296aedf2d60bd08fb365a4e8efc02b2d06f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: db0d8c50e07914108ea41d58f0988636e947a310
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855830"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917978"
 ---
 # <a name="get-a-scopedrolemember"></a>Obter um scopedRoleMember
 
@@ -22,9 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
