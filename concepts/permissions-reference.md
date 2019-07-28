@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 5f2af5521071821d7271547f207ccefa0d17aade
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 2fb1c89f8862131862869caabb5bb384fc6cb4c9
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840751"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35893148"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -684,6 +684,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_       |    Ler emails em todas as caixas de correio | Permite ao aplicativo ler emails em todas as caixas de correio sem um usuário conectado.| Sim |
+| _Mail.ReadBasic.All_ |    Ler os emails básicos de todos usuários (visualização) | (Visualização) Cartões Permite que o aplicativo leia todas as caixas de correio de usuários, exceto corpo, previewBody, anexos e propriedades estendidas. Não inclui permissões para pesquisar mensagens. | Sim | Não
 | _Mail.ReadWrite_ |    Ler e gravar emails em todas as caixas de correio | Permite ao aplicativo criar, ler, atualizar e excluir emails em todas as caixas de correio sem um usuário conectado. Não inclui a permissão para enviar emails. | Sim |
 | _Mail.Send_ |    Enviar email como qualquer usuário | Permite ao aplicativo enviar emails como qualquer usuário sem um usuário conectado. | Sim |
 | _MailboxSettings.Read_ |  Ler as configurações de caixa de correio do usuário | Permite que o aplicativo leia configurações da caixa de correio do usuário sem um usuário conectado. Não inclui a permissão para enviar emails. | Não |

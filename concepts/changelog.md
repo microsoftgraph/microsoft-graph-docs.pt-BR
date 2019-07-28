@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 4bc30ed6b491587d4b809ce3457aaa20bb7e9c4a
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+ms.openlocfilehash: 5d0ad220d99ddc12671fcdb54c4f3f88a54cb758
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908443"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35918052"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -75,13 +75,14 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição | v1.0 | Adicionadas a [grupo: função validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) e a[função directoryobject: validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) em [grupos](/graph/api/group-delta?view=graph-rest-1.0), o qual validam que o nome de exibição de um grupo do Office 365 ou seu apelido de email está em conformidade com as políticas de nomenclatura. |
 | Adição | Beta |As propriedades "version", "discoveryDateTime", "discoverabilities" foram adicionadas ao tipo de recurso [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta). |
 | Adição | Beta |Adicionado o método [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta).|
+| Adição | beta | Adicionado [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ e _AdministrativeUnit.ReadWrite.All_ para obter e atualizar o recurso da [API da unidade administrativa](/graph/api/resources/administrativeunit?view=graph-rest-beta). |
+| Adição | v1.0 | Adicionado [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ e _RoleManagement.ReadWrite.Directory_ para obter e atualizar o recurso da [API de função de diretório](/graph/api/resources/directoryRole?view=graph-rest-1.0) e para obter o recurso da [API do modelo de função de diretório](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0). |
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionado suporte para a permissão Mail.ReadBasic na API mailFolder: [listar pastas de email](/graph/api/user-list-mailfolders?view=graph-rest-beta), [obter uma pasta de email](/graph/api/mailfolder-get?view=graph-rest-beta), [listar pastas secundárias](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) e [listar mensagens em uma pasta de mensagens](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Também foi adicionado suporte Mail.ReadBasic na [consulta delta de email](/graph/api/message-delta?view=graph-rest-beta) e [consulta delta de mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).|
-
 
 ### <a name="reports"></a>Relatórios
 

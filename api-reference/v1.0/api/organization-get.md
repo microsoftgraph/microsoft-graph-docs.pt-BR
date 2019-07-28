@@ -4,16 +4,19 @@ description: Recupere as propriedades e os relacionamentos da organização aute
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 124f4a05f30196b622b62ecd82ea15a892e3682b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 252664f760f4eee57d0365a0850e040b0315fdc2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448330"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890719"
 ---
 # <a name="get-organization"></a>Obter organização
 
-Recupere as propriedades e os relacionamentos da organização autenticada no momento.
+Obtenha as propriedades e relações da organização autenticada no momento.
+
+Como o recurso da **organização** tem suporte para [extensões](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **organização**.
 
 ## <a name="permissions"></a>Permissões
 
@@ -21,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
+|Delegada (conta corporativa ou de estudante) | User.Read, Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
-> Observação: os aplicativos que têm a permissão User.Read só conseguem ler as propriedades *id*, *displayName* e *verifiedDomains* da organização.  Todas as outras propriedades retornarão valores `null`. Para ler todas as propriedades, use Directory.Read.All.
+> **Observação**: Os aplicativos que tem a permissão User.Read só conseguem ler as propriedades **id**, **displayName** e **verifiedDomains** da organização.  Todas as outras propriedades retornarão valores `null`. Para ler todas as propriedades, use Organization.Read.All.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,9 +44,9 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:-----------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -78,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/organization
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
