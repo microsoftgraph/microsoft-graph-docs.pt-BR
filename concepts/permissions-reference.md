@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 2fb1c89f8862131862869caabb5bb384fc6cb4c9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: eb9c334049dced94111cd78e22481e532c5ecd7c
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893148"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917996"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -70,6 +70,42 @@ Para um aplicativo com permissões delegadas para ler as revisões de acesso de 
 Para um aplicativo com permissões delegadas para ler revisões de acesso de uma função do Azure AD, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Função Privilegiada. Para um aplicativo com permissões delegadas para gravar revisões de acesso de uma função do Azure AD, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global ou Administrador de Função Privilegiada.
 
 Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+---
+
+## <a name="administrative-units-permissions"></a>Permissões de unidades administrativas
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _AdministrativeUnit.Read.All_ |   Ler unidades administrativas  | Permite que o aplicativo leia as unidades administrativas e a associação de unidade administrativa em nome do usuário conectado. | Sim | Não |
+| _AdministrativeUnit.ReadWrite.All_ |   Ler e gravar unidades administrativas  | Permite que o aplicativo crie, leia, atualize e exclua unidades administrativas e gerencie a associação de unidade administrativa em nome do usuário conectado. | Sim | Não |
+
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AdministrativeUnit.Read.All_ |   Ler todas as unidades administrativas | Permite que o aplicativo leia as unidades administrativas e a associação de unidade administrativa sem um usuário conectado. | Sim |
+| _AdministrativeUnit.ReadWrite.All_ |   Ler e gravar todas as unidades administrativas | Permite que o aplicativo crie, leia, atualize e exclua as unidades administrativas e gerencie a participação em unidades administrativas sem um usuário conectado. | Sim |
+
+### <a name="remarks"></a>Comentários
+Com a permissão _AdministrativeUnit.Read.All_ um aplicativo pode ler informações sobre a unidade administrativa, incluindo membros. 
+
+Com a permissão _AdministrativeUnit.Read.All_ um aplicativo pode cria, ler, atualizar e deletar informações sobre a unidade administrativa, incluindo membros. 
+
+_AdministrativeUnit.Read.All_ e _AdministrativeUnit. ReadWrite.All_ só são válidos para contas corporativas ou de estudante.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+- _AdministrativeUnit.Read.All_: Ler unidades administrativas (`GET /beta/administrativeUnits`)
+- _AdministrativeUnit.Read.All_: Ler lista de membros de uma unidade administrativa (`GET /beta/administrativeUnits/<id>/members`)
+- _AdministrativeUnit.ReadWrite.All_: Criar uma unidade administrativa (`POST /beta/administrativeUnits`)
+- _AdministrativeUnit.ReadWrite.All_: Atualizar uma unidade administrativa (`PATCH /beta/administrativeUnits/<id>`)
+- _AdministrativeUnit.ReadWrite.All_: Adicionar membros a uma unidade administrativa (`POST /beta/administrativeUnits/<id>/members`)
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
 ---
 
@@ -1013,6 +1049,43 @@ As permissões de relatórios só são válidas para contas corporativas ou de e
 * _Reports.Read.All_: Ler o relatório de detalhes de uso de aplicativos de email com período de 7 dias (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
 * _Reports.Read.All_: Ler o relatório de detalhes de atividade de email com data de '2017-01-01' (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
 * _Reports.Read.All_: Ler o relatório de detalhes de ativações do Office 365 (`GET /reports/Office365Activations(view='Detail')/content`).
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="role-management-permissions"></a>Permissões do Gerenciamento de Funções
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _RoleManagement.Read.Directory_ | Ler configurações de diretório RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
+| _RoleManagement.ReadWrite.Directory_ | Ler e gravar configurações no diretório RBAC | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _RoleManagement.Read.Directory_ | Ler todas as configurações de diretório RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) do diretório da empresa, sem um usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
+| _RoleManagement.ReadWrite.Directory_ | Ler e gravar todas as configurações no diretório RBAC | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) para o diretório da empresa, sem um usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
+
+### <a name="remarks"></a>Comentários
+Com a permissão _RoleManagement.Read.Directory_ um aplicativo pode ler directoryRoles e directoryRoleTemplates. Isso inclui a leitura de informações de associação para funções de diretório.
+
+Com a permissão _RoleManagement.ReadWrite.Directory_, um aplicativo pode ler e gravar directoryRoles (directoryRoleTemplates são recursos somente leitura). Isso inclui adicionar e remover membros de funções de diretório.
+
+As permissões de relatórios só são válidas para contas corporativas ou de estudante.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+- _RoleManagement.Read.Directory_: Ler a lista de modelos de função disponíveis(`GET /directoryRoleTemplates`)
+- _RoleManagement.Read.Directory_: Ler a lista de funções ativadas em seu diretório(`GET /directoryRoles`)
+- _RoleManagement.Read.Directory_: Ler a lista de membros para uma função (`GET /directoryRoles/<id>/members`)
+- _RoleManagement.Read.Directory_: Ler a lista de membros com escopo de unidade administrativa para uma função (`GET /directoryRoles/<id>/scopedMembers`)
+- _RoleManagement.ReadWrite.Directory_: Ativar uma função de diretório a partir de um modelo de função (`POST /directoryRoles`)
+- _RoleManagement.ReadWrite.Directory_: Adicionar um membro a uma função de diretório (`POST /directoryRoles/<id>/members`)
+- _RoleManagement.ReadWrite.Directory_: Adicionar um membro de escopo de unidade administrativa a uma função de diretório(`POST /directoryRoles/<id>/scopedMembers`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
