@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9c138fdf788aa64698b6e3fb55ff7eb8bd8a9583
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: fa840a8b66589ebd2f818da5418da5e23e08c1f7
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864598"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933755"
 ---
 ```java
 
@@ -27,7 +27,7 @@ transferTarget.replacesCallId = "replacesCallId-value";
 String clientContext = "clientContext-value";
 
 graphClient.app().calls("{id}")
-    .transfer(transferTarget,target,replacesCallId)
+    .transfer(transferTarget)
     .buildRequest()
     .post();
 
