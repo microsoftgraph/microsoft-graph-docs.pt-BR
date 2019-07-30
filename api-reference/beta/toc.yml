@@ -7442,6 +7442,8 @@
                   href: api/itemactivity-getbyinterval.md
                 - name: Item de visualização
                   href: api/driveitem-preview.md
+                - name: Pacotes
+                  href: resources/bundle.md
             - name: Permissões
               href: resources/permission.md
               items:
@@ -7449,6 +7451,8 @@
                   href: api/driveitem-createlink.md
                 - name: Usar links de compartilhamento
                   href: api/shares-get.md
+                - name: Adicionar usuários ao link de compartilhamento
+                  href: api/permission-grant.md
                 - name: Listar permissões
                   href: api/driveitem-list-permissions.md
                 - name: Adicionar permissões
@@ -8382,7 +8386,7 @@
         - name: Correio
           displayName: 'Outlook, Outlook mail'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/mail-api-overview.md
             - name: Mensagem
               href: resources/message.md

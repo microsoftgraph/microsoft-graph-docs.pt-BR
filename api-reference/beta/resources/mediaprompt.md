@@ -4,29 +4,28 @@ description: O tipo mediaPrompt.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: aa08436d46777b4e82712e3288ec17047c33a1ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cd2a700298c6f8163e3162e244f66468e1a94e7c
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342622"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932482"
 ---
-# <a name="mediaprompt-resource-type"></a><span data-ttu-id="28e0e-103">tipo de recurso mediaPrompt</span><span class="sxs-lookup"><span data-stu-id="28e0e-103">mediaPrompt resource type</span></span>
+# <a name="mediaprompt-resource-type"></a><span data-ttu-id="06257-103">tipo de recurso mediaPrompt</span><span class="sxs-lookup"><span data-stu-id="06257-103">mediaPrompt resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="28e0e-104">O tipo mediaPrompt.</span><span class="sxs-lookup"><span data-stu-id="28e0e-104">The mediaPrompt type.</span></span>
+<span data-ttu-id="06257-104">O tipo mediaPrompt.</span><span class="sxs-lookup"><span data-stu-id="06257-104">The mediaPrompt type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="28e0e-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="28e0e-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="06257-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="06257-105">Properties</span></span>
 
-| <span data-ttu-id="28e0e-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="28e0e-106">Property</span></span>    | <span data-ttu-id="28e0e-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="28e0e-107">Type</span></span>                      | <span data-ttu-id="28e0e-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="28e0e-108">Description</span></span>                                                                     |
+| <span data-ttu-id="06257-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="06257-106">Property</span></span>    | <span data-ttu-id="06257-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="06257-107">Type</span></span>                      | <span data-ttu-id="06257-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="06257-108">Description</span></span>                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| <span data-ttu-id="28e0e-109">ciclo</span><span class="sxs-lookup"><span data-stu-id="28e0e-109">loop</span></span>        | <span data-ttu-id="28e0e-110">Int32</span><span class="sxs-lookup"><span data-stu-id="28e0e-110">Int32</span></span>                     | <span data-ttu-id="28e0e-111">A contagem de loop.</span><span class="sxs-lookup"><span data-stu-id="28e0e-111">The loop count.</span></span> <span data-ttu-id="28e0e-112">o valor 0 indica o loop infinitamente.</span><span class="sxs-lookup"><span data-stu-id="28e0e-112">0 value indicates to loop infinitely.</span></span> <span data-ttu-id="28e0e-113">O valor padrão é `1`.</span><span class="sxs-lookup"><span data-stu-id="28e0e-113">The default value is `1`.</span></span> |
-| <span data-ttu-id="28e0e-114">mediaInfo</span><span class="sxs-lookup"><span data-stu-id="28e0e-114">mediaInfo</span></span>   | [<span data-ttu-id="28e0e-115">mediaInfo</span><span class="sxs-lookup"><span data-stu-id="28e0e-115">mediaInfo</span></span>](mediainfo.md) | <span data-ttu-id="28e0e-116">As informações de mídia</span><span class="sxs-lookup"><span data-stu-id="28e0e-116">The media information</span></span>                                                           |
+| <span data-ttu-id="06257-109">mediaInfo</span><span class="sxs-lookup"><span data-stu-id="06257-109">mediaInfo</span></span>   | [<span data-ttu-id="06257-110">mediaInfo</span><span class="sxs-lookup"><span data-stu-id="06257-110">mediaInfo</span></span>](mediainfo.md) | <span data-ttu-id="06257-111">As informações de mídia</span><span class="sxs-lookup"><span data-stu-id="06257-111">The media information</span></span>                                                           |
 
-## <a name="json-representation"></a><span data-ttu-id="28e0e-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="28e0e-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="06257-112">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="06257-112">JSON representation</span></span>
 
-<span data-ttu-id="28e0e-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="28e0e-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="06257-113">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="06257-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,12 +37,11 @@ ms.locfileid: "33342622"
 
 ```json
 {
-  "loop": 1024,
   "mediaInfo": { "@odata.type": "#microsoft.graph.mediaInfo" }
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="28e0e-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="28e0e-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="06257-114">Exemplo</span><span class="sxs-lookup"><span data-stu-id="06257-114">Example</span></span>
 
 <!-- {
   "blockType": "example",
@@ -51,11 +49,12 @@ ms.locfileid: "33342622"
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.mediaPrompt",
   "mediaInfo": {
+    "@odata.type": "#microsoft.graph.mediaInfo",
     "uri": "https://cdn.contoso.com/beep.wav",
     "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-  },
-  "loop": 5
+  }
 }
 ```
 
