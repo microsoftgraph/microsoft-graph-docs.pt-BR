@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: aa4e1c148a54777e566393d52f498bded0621827
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a4551c59f7d4901dd10d9553d900e3b6ba8641d0
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35498322"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933739"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const Call = {
+const call = {
   callbackUri: "https://bot.contoso.com/api/calls",
   mediaConfig: {
     @odata.type: "#microsoft.graph.serviceHostedMediaConfig",
@@ -56,6 +56,6 @@ const Call = {
 
 let res = await client.api('/app/calls')
     .version('beta')
-    .post({Call : Call});
+    .post({call : call});
 
 ```
