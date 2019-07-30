@@ -4,12 +4,12 @@ description: 'Recupere a lista de mensagens (sem as respostas) em um canal de eq
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1c7f5eb6a5358a4cfd4d9bfcac3a7fd1756c4db4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f50b14c91bb86c81de000d9593b889f1224cd063
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864468"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931051"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 
@@ -17,7 +17,7 @@ ms.locfileid: "35864468"
 
 Recupere a lista de [mensagens](../resources/chatmessage.md) (sem as respostas) em um [canal](../resources/channel.md) de [equipe](../resources/team.md). 
 
-Para obter as respostas de uma mensagem, chame as [respostas de listar mensagens](channel-get-messagereply.md) ou a API de [respostas de obter mensagens](channel-list-messagereplies.md). 
+Para obter as respostas de uma mensagem, chame as [respostas de listar mensagens](channel-list-messagereplies.md) ou a API de [respostas de obter mensagens](channel-get-messagereply.md). 
 
 ## <a name="permissions"></a>Permissões
 
