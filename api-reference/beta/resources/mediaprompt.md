@@ -4,12 +4,12 @@ description: O tipo mediaPrompt.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: aa08436d46777b4e82712e3288ec17047c33a1ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cd2a700298c6f8163e3162e244f66468e1a94e7c
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342622"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932482"
 ---
 # <a name="mediaprompt-resource-type"></a>tipo de recurso mediaPrompt
 
@@ -21,7 +21,6 @@ O tipo mediaPrompt.
 
 | Propriedade    | Tipo                      | Descrição                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| ciclo        | Int32                     | A contagem de loop. o valor 0 indica o loop infinitamente. O valor padrão é `1`. |
 | mediaInfo   | [mediaInfo](mediainfo.md) | As informações de mídia                                                           |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -38,7 +37,6 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "loop": 1024,
   "mediaInfo": { "@odata.type": "#microsoft.graph.mediaInfo" }
 }
 ```
@@ -51,11 +49,12 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.mediaPrompt",
   "mediaInfo": {
+    "@odata.type": "#microsoft.graph.mediaInfo",
     "uri": "https://cdn.contoso.com/beep.wav",
     "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-  },
-  "loop": 5
+  }
 }
 ```
 

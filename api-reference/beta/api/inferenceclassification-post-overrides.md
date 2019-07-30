@@ -2,12 +2,12 @@
 title: Criar inferenceClassificationOverride
 description: 'Criar uma substituição de caixa de entrada destaques para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas '
 localization_priority: Normal
-ms.openlocfilehash: 3d47140ff4e5aa9c333dc279e2722d93d9ea8ace
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 310171e99df0c41b07d3c178fe6ee676f317ea1b
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857486"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931145"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Criar inferenceClassificationOverride
 
@@ -17,7 +17,7 @@ Criar uma substituição de [caixa de entrada destaques](../resources/manage-foc
 
 **Observação**
 
-- Se já existir uma substituição com o mesmo endereço STMP, os campos **classifyAs** e **name** da substituição serão atualizados com os valores fornecidos.
+- Se já existir uma substituição com o mesmo endereço SMTP, os campos de **classificação** e **nome** dessa substituição serão atualizados com os valores fornecidos.
 - O número máximo de substituições com suporte para uma caixa de correio é 1000, com base nos endereços SMTP exclusivos do remetente.
 - A operação POST dá suporte à criação de apenas uma substituição de cada vez.
 

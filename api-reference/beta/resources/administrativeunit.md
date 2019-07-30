@@ -4,12 +4,12 @@ description: Uma unidade administrativa fornece um contêiner conceitual para ob
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 94d6c359449400ad2b37840b34d1b62e6f1b2138
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: a773df792a0f21480510c2a4eaf2aa32e3e10ba9
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656843"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932026"
 ---
 # <a name="administrativeunit-resource-type"></a>tipo de recurso administrativeUnit
 

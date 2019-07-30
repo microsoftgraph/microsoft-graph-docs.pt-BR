@@ -4,12 +4,12 @@ description: Um usuário no sistema. Essa é uma variante específica de educaç
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7841311c64d131bffda8ffa8d96406f268f1467d
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 71b9933f4ffbaf3b69ad3d60fc9dd06dc2e794c3
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750175"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932567"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 

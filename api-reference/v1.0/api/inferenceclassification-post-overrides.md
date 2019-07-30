@@ -2,12 +2,12 @@
 title: Criar inferenceClassificationOverride
 description: 'Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas '
 localization_priority: Normal
-ms.openlocfilehash: 5a3972a9c8a86f6bf49c892511a05e398427f33a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 967f8794a5effa68fc42dae578d4dcf0034aabf2
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880828"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932471"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Criar inferenceClassificationOverride
 
@@ -15,7 +15,7 @@ Crie uma substituição para um remetente identificado por um endereço SMTP. Me
 
 **Observação**
 
-- Se já existir uma substituição com o mesmo endereço STMP, os campos **classifyAs** e **name** da substituição serão atualizados com os valores fornecidos.
+- Se já existir uma substituição com o mesmo endereço SMTP, os campos de **classificação** e **nome** dessa substituição serão atualizados com os valores fornecidos.
 - O número máximo de substituições com suporte para uma caixa de correio é 1000, com base nos endereços SMTP exclusivos do remetente.
 - A operação POST dá suporte à criação de apenas uma substituição de cada vez.
 

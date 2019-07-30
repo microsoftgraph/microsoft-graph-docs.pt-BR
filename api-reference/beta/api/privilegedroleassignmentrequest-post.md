@@ -2,12 +2,12 @@
 title: Criar privilegedRoleAssignmentRequest
 description: Criar um objeto privilegedroleassignmentrequest.
 localization_priority: Normal
-ms.openlocfilehash: f2b69bd44b1d8506f016757b5c309bf50ed0423f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0cb7e958e9eaf8550d1262ed00e66ee477cbd195
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875536"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931848"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Criar privilegedRoleAssignmentRequest
 

@@ -4,18 +4,20 @@ description: Reproduza um prompt na chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cfb12ecbe41dd0676bebf1c38115eb4d5a55213c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cc65ed5b9ced14cd259bf678ee1152089d654e2c
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438668"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931087"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Reproduza um prompt na chamada.
+
+Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsoperation.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,11 +46,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|prompts|coleção [prompt](../resources/prompt.md)||
+|prompts|coleção [prompt](../resources/prompt.md)| Atualmente, apenas uma única solicitação e do tipo [MediaPrompt](../resources/mediaprompt.md) é suportada.|
+|ciclo|bool| O valor do loop. true indica o loop infinitamente. O valor padrão é falso. |
 |clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -63,7 +66,7 @@ O exemplo a seguir mostra a solicitação.
   "name": "call-playPrompt"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/playPrompt
+POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/playPrompt
 Content-Type: application/json
 Content-Length: 166
 
@@ -73,12 +76,13 @@ Content-Length: 166
     {
       "@odata.type": "#microsoft.graph.mediaPrompt",
       "mediaInfo": {
+        "@odata.type": "#microsoft.graph.mediaInfo",
         "uri": "https://cdn.contoso.com/beep.wav",
         "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
-      "loop": 5
-    }
-  ]
+    },
+  ],
+  "loop": false
 }
 ```
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
@@ -100,10 +104,22 @@ Content-Length: 166
 ```http
 HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+
+{
+  "@odata.type": "#microsoft.graph.playPromptOperation",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
+
 ```
 
 ##### <a name="notification---operation-completed"></a>Notificação-operação concluída
 
+ >**Observação:** Se ocorrer um loop infinito, esta notificação não será enviada.
+ 
 ```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
@@ -116,8 +132,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {

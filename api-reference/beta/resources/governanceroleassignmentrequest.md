@@ -2,12 +2,12 @@
 title: tipo de recurso governanceRoleAssignmentRequest
 description: Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: 13834b683fa909b51f3f81550aad426808c034d2
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 3a828bc14def823aeba6e06f2efe924c67ba5052
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620924"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931876"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>tipo de recurso governanceRoleAssignmentRequest
 
@@ -34,7 +34,7 @@ Representa a solicitação de operações de atribuição de função no gerenci
 |resourceId                 |String         |Obrigatório. A ID do recurso ao qual a solicitação de atribuição de função está associada.|
 |roleDefinitionId           |String         |Obrigatório. A ID da definição de função à qual a solicitação de atribuição de função está associada.|
 |SubjectID                  |String         |Obrigatório. A ID da entidade à qual a solicitação de atribuição de função está associada.|
-|type                       |String         |Obrigatório. Representando o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Os administradores atribuem usuários/grupos a funções;</li><li>`UserAdd`: Os usuários ativam atribuições qualificadas;</li><li> `AdminUpdate`: Administradores alterar as atribuições de função existentes</li><li>`AdminRemove`: Administradores removem usuários/grupos de funções;<li>`UserRemove`: Os usuários desativam atribuições ativas;<li>`UserExtend`: Os usuários solicitam estender suas atribuições de expiração;</li><li>`AdminExtend`: Os administradores extendem as atribuições expiradas.</li><li>`UserRenew`: Os usuários solicitam a renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Os administradores extendem as atribuições expiradas.</li></ul>|
+|type                       |String         |Obrigatório. Representando o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Administradores atribuem usuários/grupos a funções;</li><li>`UserAdd`: Os usuários ativam atribuições qualificadas;</li><li> `AdminUpdate`: Administradores alterar as atribuições de função existentes</li><li>`AdminRemove`: Administradores removem usuários/grupos de funções;<li>`UserRemove`: Os usuários desativam atribuições ativas;<li>`UserExtend`: Os usuários solicitam estender suas atribuições de expiração;</li><li>`AdminExtend`: Os administradores extendem as atribuições expiradas.</li><li>`UserRenew`: Os usuários solicitam a renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Os administradores extendem as atribuições expiradas.</li></ul>|
 |assignmentstate|String  |Obrigatório. O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição qualificada</li><li> `Active`– Se ele for atribuído `Active` diretamente por administradores ou ativado em uma atribuição qualificada pelos usuários.</li></ul>|
 |requestedDateTime          |DateTimeOffset |Somente leitura. O tempo de criação da solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |Cronograma                   |[governanceSchedule](governanceschedule.md)|O objeto Schedule da solicitação de atribuição de função.|

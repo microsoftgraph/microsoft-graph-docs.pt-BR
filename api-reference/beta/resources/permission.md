@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Permissão
+title: tipo de recurso Permission
+description: recurso Permission representando uma permissão de compartilhamento concedida para um driveItem
 localization_priority: Normal
-ms.openlocfilehash: e8a4adaa3c1d41270e172f9d0b0e1bf3829927c5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.prod: sharepoint
+ms.openlocfilehash: e43889f3dcab5c887cffe58cfcc4ac632389f980
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344937"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932461"
 ---
 # <a name="permission-resource-type"></a>tipo de recurso Permission
 
@@ -71,7 +72,7 @@ Veja a seguir uma representação JSON do recurso.
 | funções               | Collection(String)          | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
 | shareId             | String                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API][]** de compartilhamentos. Somente leitura.
 | expirationDateTime  | DateTimeOffset              | Um formato de yyyy-MM-ddTHH: mm: ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime. MinValue indica que não há validade configurada para essa permissão. Opcional.
-| hasPassword         | Boolean                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
+| hasPassword         | Booliano                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
 
 ### <a name="roles-enumeration-values"></a>Valores de enumeração de funções
 
@@ -141,6 +142,25 @@ Este link de edição fornece acesso de leitura e gravação a qualquer pessoa n
 }
 ```
 
+### <a name="existing-access-link"></a>Link de acesso existente
+
+Este link não concede nenhum privilégio adicional para o usuário.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "roles": ["read"],
+  "link": {
+    "scope": "existingAccess",
+    "type": "view",
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
+  },
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+
 ### <a name="specific-people-link"></a>Link de pessoas específico
 
 Este link fornece acesso de leitura e gravação às pessoas específicas na `grantedToIdentities` coleção.
@@ -176,8 +196,7 @@ Este link fornece acesso de leitura e gravação às pessoas específicas na `gr
 
 ## <a name="sharing-invitations"></a>Compartilhar convites
 
-As permissões enviadas pela API [INVITE][] podem ter mais informações na faceta [][SharingInvitation] do convite.
-Se um convite foi enviado a um endereço de email que não corresponde a uma conta conhecida **** , a propriedade concedidoto pode não ser definida até que o convite seja resgatado, que ocorre na primeira vez que o usuário clica no link e entra no.
+As permissões enviadas pelo [convite][] ou pela API de [concessão][] podem ter informações adicionais na faceta[SharingInvitation] do [convite]para endereços de email que não correspondem a uma conta conhecida. Nesses casos, a propriedade **concedidoto** pode não ser definida até que o link do convite seja resgatado, que ocorre na primeira vez que o usuário clica no link e entrar.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -225,12 +244,13 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 | [Obter permissão](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [Criar link] [CreateLink]                                | `POST /drive/items/{item-id}/createLink`
 | [Convidar pessoas] [convidar]                                  | `POST /drive/items/{item-id}/invite`
-| [Atualizar](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 
 [createLink]: ../api/driveitem-createlink.md
+[conceder]: ../api/permission-grant.md
 [IdentitySet]: identityset.md
 [Alguém]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md

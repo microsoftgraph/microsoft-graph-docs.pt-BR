@@ -2,12 +2,12 @@
 title: Atualizar governanceRoleAssignmentRequests
 description: Permitir que os administradores atualizem suas`AdminApproved` decisões `AdminDenied`(ou) no governanceRoleAssignmentRequests que estão no `PendingAdminDecision`status de.
 localization_priority: Normal
-ms.openlocfilehash: 2fc215fd95cd621e3aa29ef0fcd653964dc6208d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 5995addbd9c7a491b884aea505f2ab8d4b8c750d
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859056"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931174"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governanceRoleAssignmentRequests
 

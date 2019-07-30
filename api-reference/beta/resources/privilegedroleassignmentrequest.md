@@ -2,12 +2,12 @@
 title: tipo de recurso privilegedRoleAssignmentRequest
 description: Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: 240c84ecb0bf4f8d0e171f647f21eb6730c28d44
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 54d3fe72ab0cd9145f549e88e356ed30e2b9ef56
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621211"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932494"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>tipo de recurso privilegedRoleAssignmentRequest
 
