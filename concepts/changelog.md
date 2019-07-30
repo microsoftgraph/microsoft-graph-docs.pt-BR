@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5d0ad220d99ddc12671fcdb54c4f3f88a54cb758
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+ms.openlocfilehash: 60ad1361f5d188beacf4a34b040ee46196fb8304
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35918052"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35930563"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -223,6 +223,15 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Alteração|beta|Alterado o tipo das seguintes propriedades no tipo enum [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta):<br/>**fullScan** de 2 a 3<br/>**quickScan** de 3 a 4<br/>**signatureUpdate** de 4 a 5<br/>|
 |Adição|beta|Adicionado o membro **derivedCredential** ao tipo enum [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro **derivedCredential** ao tipo enum [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta)|
+
+### <a name="files-onedrive"></a>Arquivos (OneDrive)
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Foi adicionado o tipo complexo de [grupo](/graph/api/resources/bundle?view=graph-rest-beta)  |
+| Adição | Beta | Foi adicionado o tipo complexo de [álbum](/graph/api/resources/album?view=graph-rest-beta) |
+| Adição | Beta | Foi adicionada a propriedade de navegação de **pacotes** à entidade da [unidade](/graph/api/resources/drive?view=graph-rest-beta)  |
+| Adição | Beta | Foi adicionada a propriedade de **grupo** à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
+| Adição | Beta | Foi adicionada a ação de**concessão** à entidade de [permissão](/graph/api/resources/permission?view=graph-rest-beta)  |
 
 ### <a name="education"></a>Educação
 | Tipo de alteração | Versão | Descrição                                                                                                                                                      |
