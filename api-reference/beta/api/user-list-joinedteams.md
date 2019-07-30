@@ -4,12 +4,12 @@ description: Obtenha as equipes do Microsoft Teams das quais o usuário é um me
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2ee7834dbb9366ab1db726eaf53575b4d4c33d1f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3124f72b30a9ca82efe7f2583a6afc766bed1718
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867269"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931461"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 
@@ -51,7 +51,8 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [group](../resources/group.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos da[equipe](../resources/team.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
