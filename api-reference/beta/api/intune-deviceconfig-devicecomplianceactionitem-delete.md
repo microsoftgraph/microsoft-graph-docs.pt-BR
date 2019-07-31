@@ -4,12 +4,13 @@ description: Exclui deviceComplianceActionItem.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6bb65321a6ea45ee2393b83162b934dea21919c0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 14918e1b709b2d06aec2a351c9790ba43bc4a3a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968634"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950046"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>Excluir deviceComplianceActionItem
 

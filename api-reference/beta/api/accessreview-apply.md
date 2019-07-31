@@ -4,12 +4,13 @@ description: 'No recurso de revisões do Azure AD Access, aplique as decisões d
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1a4c94406afbba762f3c461c06f9ba8252a3cbbc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a278330685e8be053d3ada5adf2edf183998984a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856236"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946095"
 ---
 # <a name="apply-accessreview"></a>Aplicar accessReview
 

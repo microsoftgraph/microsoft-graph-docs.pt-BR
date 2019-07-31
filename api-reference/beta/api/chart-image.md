@@ -4,12 +4,13 @@ description: Processa o gráfico como uma imagem codificada em base64, dimension
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e82f0600cb43ba515bfb8bee9ecde90e645ea062
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: b75b7700d3b4a862e04a086000831f6fd4b50489
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328068"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944146"
 ---
 # <a name="chart-image"></a>Chart: Image
 

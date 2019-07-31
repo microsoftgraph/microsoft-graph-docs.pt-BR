@@ -4,12 +4,13 @@ description: Exclua o canal.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 12fe7fea8eca554c956facdba942f9af4a18ea3c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d677066570497a65fc9ba4ade6622018bb0dbf56
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864651"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944379"
 ---
 # <a name="delete-channel"></a>Delete channel
 

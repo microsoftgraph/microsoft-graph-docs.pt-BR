@@ -4,12 +4,13 @@ description: Exclua o objeto bookingCustomer especificado.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 045f6eaf21ef400338ad2159c0a036d13bfb1c07
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e766e211e8e3b538d17745ec9bc73b127ad548cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865385"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944951"
 ---
 # <a name="delete-bookingcustomer"></a>Excluir bookingCustomer
 

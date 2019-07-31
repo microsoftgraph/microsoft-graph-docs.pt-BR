@@ -4,12 +4,13 @@ description: 'Adicione um novo scopedRoleMembership. Observação: somente as fu
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: acc2dc7011d14e4832eb79407e1d08f68239f1c0
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: 1ba7a32ac88dfdfec6cd8766816ad5a7cd8fc49d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35918038"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945757"
 ---
 # <a name="add-a-scopedrolemember"></a>Adicionar um scopedRoleMember
 
@@ -23,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AdministrativeUnit. ReadWrite. All |
+|Aplicativo | RoleManagement. ReadWrite. Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

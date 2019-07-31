@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto deviceComplianceSettingState
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a87882f07ec9068bfd15061cc85cc9282cbf5139
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 596c5a8aa695f09ac9a00962f0df0f47a25eb25e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968123"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949535"
 ---
 # <a name="update-devicecompliancesettingstate"></a>Atualizar deviceComplianceSettingState
 

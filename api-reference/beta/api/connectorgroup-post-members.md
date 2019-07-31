@@ -2,12 +2,15 @@
 title: Adicionar conector ao conector
 description: Use esta API para adicionar um conector a um conector.
 localization_priority: Normal
-ms.openlocfilehash: 839189b323318b440608b699864a36b69a6c840d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c8b428ca6c724ce37116430cbae56587866c13eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327595"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943383"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Adicionar conector ao conector
 

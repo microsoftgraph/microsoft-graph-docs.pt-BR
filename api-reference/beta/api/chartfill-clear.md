@@ -4,12 +4,13 @@ description: Limpe a cor de preenchimento de um elemento do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1f3c2b5567d6fd2961b24f35066b35933d7d383a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4598d3b77b0e053fa656ef36319b7bfa010ad548
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864063"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943936"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 

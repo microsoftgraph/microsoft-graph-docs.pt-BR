@@ -4,12 +4,13 @@ description: Exclui deviceComplianceScheduledActionForRule.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d86e4768eaf875ab6c9a92aa9420ba52d344e56c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a47e1a17a13ac970ae2032c5e9a32b4181add6a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968242"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949647"
 ---
 # <a name="delete-devicecompliancescheduledactionforrule"></a>Excluir deviceComplianceScheduledActionForRule
 

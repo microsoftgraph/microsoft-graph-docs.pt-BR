@@ -2,12 +2,15 @@
 title: Atualizar connectorGroups
 description: Atualize as propriedades do objeto de conexão.
 localization_priority: Normal
-ms.openlocfilehash: df45006b57886bd3296d92d34d75de65e5bbec89
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: dfc574c9028d5e810a92fd5de4b099d3109bf7ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327541"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943369"
 ---
 # <a name="update-connectorgroups"></a>Atualizar connectorGroups
 

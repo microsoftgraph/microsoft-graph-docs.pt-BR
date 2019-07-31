@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24354579ab9fe53571eb2dfb3d028558c052a872
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c54cff0e9230e0037eb114bffcbf7e324f9b6abb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967976"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949374"
 ---
 # <a name="gettargetedusersanddevices-action"></a>ação getTargetedUsersAndDevices
 

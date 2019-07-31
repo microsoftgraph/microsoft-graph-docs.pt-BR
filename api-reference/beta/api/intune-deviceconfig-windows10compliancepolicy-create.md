@@ -4,12 +4,13 @@ description: Cria um novo objeto windows10CompliancePolicy.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 268450ba1a69895b01647bb426db84ff09e18469
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f07ddc6057c85be54959bf81660c17fd858397ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962824"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946205"
 ---
 # <a name="create-windows10compliancepolicy"></a>Criar windows10CompliancePolicy
 

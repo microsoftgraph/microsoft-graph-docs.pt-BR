@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um bookingStaffMember no bookingbusines
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 035c9c1b6bfe7243433d58b669295cb1332edb54
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a7af1f1eff882e07ebdeeb9e2066179fa34217e7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865198"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944853"
 ---
 # <a name="update-bookingstaffmember"></a>Atualizar bookingstaffmember
 

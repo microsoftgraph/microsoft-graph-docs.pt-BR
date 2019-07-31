@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto androidForWorkCustom
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87a075a28568525e6b2d2ab7c84253c9a1f53a7b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: cddcbad39580be3ad1f51a7aff51bb8abdc48ba0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971021"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35942970"
 ---
 # <a name="get-androidforworkcustomconfiguration"></a>Obter androidForWorkCustomConfiguration
 

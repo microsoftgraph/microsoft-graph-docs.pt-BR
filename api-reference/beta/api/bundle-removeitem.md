@@ -5,12 +5,13 @@ title: Remover item do pacote
 description: Remover item de um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 26c965725044d09eb4b22807ad37aa15353e0513
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: ff7f292be35b59f17465e65517174746faddca1a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932594"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944804"
 ---
 # <a name="remove-item-from-bundle"></a>Remover item do pacote
 

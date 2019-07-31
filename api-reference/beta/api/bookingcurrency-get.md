@@ -4,12 +4,13 @@ description: Obtenha as propriedades de um objeto bookingCurrency que está disp
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2969bfa6b89b539310d9a20216cbccdbbe68afa5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7db2060eb1307ffae655fae917bd8d07ef516887
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865420"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945008"
 ---
 # <a name="get-bookingcurrency"></a>Obter bookingCurrency
 

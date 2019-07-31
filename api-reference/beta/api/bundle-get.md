@@ -5,12 +5,13 @@ title: Obter pacote
 description: Obter um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0be042c6f1ce3915db93faa135ba054a3cc6a34f
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: f58595b99bd78f66f42da639db2ac1c3ac8784da
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932601"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944846"
 ---
 # <a name="get-bundle"></a>Obter pacote
 

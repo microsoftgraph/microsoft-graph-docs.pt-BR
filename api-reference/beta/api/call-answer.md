@@ -4,12 +4,13 @@ description: Atenda às chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6966c9804c5a3f7570f2decf6f35090130637786
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2a61d00efa15975e8e7fd1a10f0a6f8856398933
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864936"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944573"
 ---
 # <a name="call-answer"></a>Call: resposta
 

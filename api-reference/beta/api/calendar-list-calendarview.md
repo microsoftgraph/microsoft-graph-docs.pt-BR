@@ -4,12 +4,13 @@ description: Obter as ocorrências, exceções e instâncias únicas de eventos 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5652032f1505d948dfe173cb4cb0543fc46a020d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 61ec004fbb6cff6a0d8c64cc1fb8444412f96045
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865092"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944695"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 

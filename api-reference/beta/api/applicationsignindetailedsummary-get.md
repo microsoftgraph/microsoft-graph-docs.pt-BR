@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos de um objeto applicat
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 58a6ed05ee0bbc17049381e1442c7b183878df77
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 429047008353c658349498b6cafda59942fc3930
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945414"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Obter applicationSignInDetailedSummary
 

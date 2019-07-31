@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto bookingBusiness.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: a9713231b8d0556ff27ee872039a40f1eadcc0cd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: de39325ffff84ee975d48875e0785fd2ab7824bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865441"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945022"
 ---
 # <a name="update-bookingbusiness"></a>Atualizar bookingbusiness
 

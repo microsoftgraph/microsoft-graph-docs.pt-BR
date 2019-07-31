@@ -4,12 +4,13 @@ description: Reproduza um prompt na chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cc65ed5b9ced14cd259bf678ee1152089d654e2c
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 8ca1a83628ebbb5da2bfec41307b53e01c381883
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931087"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944454"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
 

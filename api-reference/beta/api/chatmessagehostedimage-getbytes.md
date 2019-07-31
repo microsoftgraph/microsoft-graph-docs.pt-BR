@@ -4,12 +4,13 @@ description: Obtenha a representação binária de uma imagem hospedada dentro d
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a661dfe7e51680804faaac7df6e32ee5e680d22b
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+doc_type: apiPageType
+ms.openlocfilehash: 4830e3f845d657e5b073c27e228976bfe9926630
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35085800"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943565"
 ---
 # <a name="chatmessagehostedimage-getbytes"></a>chatMessageHostedImage: GetBytes
 

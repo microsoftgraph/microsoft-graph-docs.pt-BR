@@ -4,12 +4,13 @@ description: Exclui androidForWorkCustomConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d42900ec209a2900012704594a12a2c711c18950
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fe27b991aed67883483e2be74c7f857a90f52b48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971035"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35942977"
 ---
 # <a name="delete-androidforworkcustomconfiguration"></a>Excluir androidForWorkCustomConfiguration
 

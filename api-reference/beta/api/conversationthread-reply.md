@@ -4,12 +4,13 @@ description: 'Responde a um thread em uma conversa de grupo e adicione uma nova 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 44ff0a6855628d030d4d886eab7da96ecf22921e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b4743de1b825a3aeb5915c0e984b807fe198e3be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943040"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 

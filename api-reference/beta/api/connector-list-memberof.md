@@ -2,12 +2,15 @@
 title: Listar memberOf
 description: Recupere o MemberGroup do qual o conector é membro.
 localization_priority: Normal
-ms.openlocfilehash: 28051e687d65beaea3962e2f4befce9f9c9d8f25
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6fad99d9044b7b7ba26128d2b7bf88f16ae03529
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863404"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943523"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 

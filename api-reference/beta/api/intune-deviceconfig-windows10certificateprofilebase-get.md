@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windows10Certificate
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc4ff949f43249d47dd68a9129947e1280e3b398
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c117e9ad59d77b1de14fdd4a027d73d64e1738f0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962831"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946233"
 ---
 # <a name="get-windows10certificateprofilebase"></a>Obter windows10CertificateProfileBase
 

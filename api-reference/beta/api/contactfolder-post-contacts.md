@@ -4,12 +4,13 @@ description: Adicione um contato na pasta de contatos raiz ou no ponto de extrem
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e36ad905d07b76ba3ba7010438305b0a7b1d2e2a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 34d772e0a8f574ebd675c5720ac1de5609252734
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863152"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943215"
 ---
 # <a name="create-contact"></a>Criar contato
 

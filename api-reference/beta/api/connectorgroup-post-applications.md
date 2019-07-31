@@ -2,12 +2,15 @@
 title: Criar aplicativo
 description: Use esta API para criar um novo aplicativo.
 localization_priority: Normal
-ms.openlocfilehash: ee0ecc6db99c0ea92131dbbf0e9c028234925f0a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: cdbffc239b196a2b88b94862f5469d623dce69ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327479"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943411"
 ---
 # <a name="create-application"></a>Criar aplicativo
 

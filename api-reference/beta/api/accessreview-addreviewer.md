@@ -4,12 +4,13 @@ description: 'No recurso de revisões do Azure AD Access, atualize um objeto acc
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 47d7e087924c29b145e6f5a88f679e9b46c2d86c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5dbfc84759403da822970df3a20044f91d1f9006
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856356"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946093"
 ---
 # <a name="add-accessreview-reviewer"></a>Adicionar revisor accessReview
 

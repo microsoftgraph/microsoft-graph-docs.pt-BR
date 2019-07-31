@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos microsoftStoreForBusin
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d1dcedf1d30e938d357911fdb003b7ce8c5ee7f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c8151f488c7a64fbc796ed34b0fdb2684c5e1f01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974297"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961130"
 ---
 # <a name="list-microsoftstoreforbusinesscontainedapps"></a>Listar microsoftStoreForBusinessContainedApps
 

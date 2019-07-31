@@ -4,12 +4,13 @@ description: Recupere uma lista de objetos participantes na chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a4fdfc2c151bfe205e828e8b73eada1ef1998a9c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3c08172eaa30a53c29971d346853a3aa2002b93f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864768"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944527"
 ---
 # <a name="list-participants"></a>Listar participantes
 

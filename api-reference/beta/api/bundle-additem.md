@@ -5,12 +5,13 @@ title: Adicionar item a um pacote
 description: Adicionar item a um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e6706fecd425162345e718fd43f6dc44e7c6b9db
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: f6680d4903111301f61f11f1975596386dd263be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932610"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944839"
 ---
 # <a name="add-item-to-a-bundle"></a>Adicionar item a um pacote
 

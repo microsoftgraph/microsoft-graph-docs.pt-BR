@@ -4,12 +4,13 @@ description: Cria um novo objeto iosCompliancePolicy.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11258a6b407c2e7d575c40734dcf839b7ac4e030
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e467e079dad6f747cb038bf9bae84be1022487d9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967290"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948716"
 ---
 # <a name="create-ioscompliancepolicy"></a>Criar iosCompliancePolicy
 

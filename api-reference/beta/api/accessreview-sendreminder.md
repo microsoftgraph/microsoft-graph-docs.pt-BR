@@ -4,12 +4,13 @@ description: 'No recurso de revisões do Azure AD Access, envie um lembrete para
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3eeb22bd6c42e9253f46717a01340634d0cfc0eb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ba018c7980fcf671cac889630eea595650a05dfc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945953"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
