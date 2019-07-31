@@ -4,12 +4,13 @@ description: Você pode obter uma visão de alto nível do valor que está obten
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: ec4cb7d6f533726c1ab8b22bb14f6059c04769ca
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 178bed72d2960125e6b33545aa048dc8fa4c0c34
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345130"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966486"
 ---
 # <a name="onedrive-usage-reports"></a>Relatórios de uso do OneDrive
 

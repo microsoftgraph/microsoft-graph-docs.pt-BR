@@ -2,12 +2,15 @@
 title: Obter suspiciousIpRiskEvent
 description: Recupere as propriedades e os relacionamentos de um objeto suspiciousipriskevent.
 localization_priority: Normal
-ms.openlocfilehash: 8e3e069f18553575a5d69a5fb17c2c289f44fe82
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7f874b4f5bc4e20d162d56a757596789b581ed1e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335728"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991104"
 ---
 # <a name="get-suspiciousipriskevent"></a>Obter suspiciousIpRiskEvent
 

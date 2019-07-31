@@ -4,12 +4,13 @@ description: Criar um novo objeto sideLoadingKey.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be989b909b0d56e6d55c44e3d0df368d5c9c6825
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a9bbd650c8c82f861d7e133447d7687d78ba86a3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980723"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993995"
 ---
 # <a name="create-sideloadingkey"></a>Criar sideLoadingKey
 

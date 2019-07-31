@@ -4,12 +4,13 @@ description: As condições de gerenciamento baseado em configuração IPv4 pode
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34b781b89f9cdec6a4c3cfc366513a92ca25ba3e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ea42cb0c48a24a3c50f1a778344f63f5c3562d5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979148"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998685"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv4ConfigurationManagementCondition
 

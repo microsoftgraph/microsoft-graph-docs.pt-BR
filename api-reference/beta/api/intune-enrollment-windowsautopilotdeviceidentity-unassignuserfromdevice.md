@@ -4,12 +4,13 @@ description: Retira a atribuição do usuário de um dispositivo piloto automát
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e543603a172a306648b9a4eab7713a5b57cf63c7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e3781b5e819bcededcc01e34b8ec1f7f71bdb413
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982739"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995493"
 ---
 # <a name="unassignuserfromdevice-action"></a>ação unassignUserFromDevice
 

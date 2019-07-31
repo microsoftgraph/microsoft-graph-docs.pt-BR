@@ -4,12 +4,13 @@ description: Uma atribuição de um perfil de implantação do piloto automátic
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 884f233908f1757fc775cd302fcdd95a8ed38f32
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d148be78cdef4208cc06a1d5e3f4b698dc5850ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993891"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999049"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfileAssignment
 

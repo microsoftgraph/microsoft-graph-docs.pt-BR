@@ -4,12 +4,13 @@ description: Tipo de dados de navegação enviados para a análise do Microsoft 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 105c0fe71aa851d8f8002920cdc9a91993f39c9f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: feeecf706a262d38bf956a49bc27d5d32e1e8ddb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996411"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001401"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>tipo de enumeração edgeTelemetryMode
 

@@ -2,12 +2,15 @@
 title: Tipo de recurso de ponto de extremidade
 description: 'Os pontos de extremidade representam URLs para recursos associados a uma entidade.  Por exemplo, quando um novo grupo do Office 365 é criado, recursos adicionais também são criados como parte do grupo do Office 365. Isso inclui itens como uma caixa de correio de grupo para conversas e uma pasta do OneDrive de grupo para documentos e arquivos. Informações adicionais sobre esses recursos de grupo do Office 365, incluindo suas URLs de recurso associadas, agora podem ser lidas usando a navegação de *pontos de extremidade* no tipo de recurso de grupo. Isso permite que os aplicativos entendam esses recursos e, até mesmo, incorpore as experiências de URL de recurso em suas próprias experiências. '
 localization_priority: Normal
-ms.openlocfilehash: 474da77d10d9b433dd6d4914f9b75812e040a9e4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: db9904c4c668ff86e56be85835c2752ab0d17525
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340198"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972121"
 ---
 # <a name="endpoint-resource-type"></a>Tipo de recurso de ponto de extremidade
 

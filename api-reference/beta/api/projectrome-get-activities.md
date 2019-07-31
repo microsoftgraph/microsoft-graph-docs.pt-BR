@@ -1,20 +1,22 @@
 ---
 title: Obter atividades do usuário
-description: Obter atividades para um determinado usuário. Diferentemente da função OData **recente** , as atividades sem históricos serão retornadas. A permissão userActivity. ReadWrite. CreatedByApp aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
+description: Obter atividades para um determinado usuário. Diferentemente da função OData **recente** , as atividades sem históricos serão retornadas. A permissão UserActivity. ReadWrite. CreatedByApp aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 4d09f7fef3d6666885e776f70f439f273d3cdb95
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: f45551699329d571a441d32d10c0eb1bffd9faa4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331899"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978501"
 ---
 # <a name="get-user-activities"></a>Obter atividades do usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter atividades para um determinado usuário. Diferentemente da função OData **recente** , as atividades sem históricos serão retornadas. A permissão userActivity. ReadWrite. CreatedByApp aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
+Obter atividades para um determinado usuário. Diferentemente da função OData **recente** , as atividades sem históricos serão retornadas. A permissão UserActivity. ReadWrite. CreatedByApp aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
 
 ## <a name="permissions"></a>Permissões
 
@@ -39,7 +41,7 @@ GET /me/activities
 Este método oferece suporte a alguns [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
 
 - $expand da propriedade de navegação **historyItems** .
-- $Top limitar o número máximo de itens nas páginas.
+- $top limitar o número máximo de itens nas páginas.
 - $filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandida.
 
 Veja a seguir alguns exemplos de consultas suportadas com codificação de URL:

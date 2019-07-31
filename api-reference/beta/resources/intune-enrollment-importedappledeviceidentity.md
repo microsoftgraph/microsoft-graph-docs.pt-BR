@@ -4,12 +4,13 @@ description: O recurso importedAppleDeviceIdentity representa a identidade do di
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b93929dd02b5ee1f472a89733d2dc6246cad4411
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 08e9487fc4c3f63399027e0fe40b5c90ba761547
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992644"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999161"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>tipo de recurso importedAppleDeviceIdentity
 

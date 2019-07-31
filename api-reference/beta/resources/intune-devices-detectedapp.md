@@ -4,12 +4,13 @@ description: Um aplicativo gerenciado ou não gerenciado que está instalado em 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 098ad481c854514e988037e755cefd3dbecd8165
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d48b205a01444184634ebaaff1a39b76b551859f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983152"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999980"
 ---
 # <a name="detectedapp-resource-type"></a>Tipo de recurso detectedApp
 

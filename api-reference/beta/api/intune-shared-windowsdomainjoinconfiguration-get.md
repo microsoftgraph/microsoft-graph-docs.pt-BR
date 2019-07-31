@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windowsDomainJoinCon
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 210c55308d15d8c2dcfbef5f875af0c5f67e664d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: b6328633a2ed55bbcc4af4dbe389f38bf93f5c10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993533"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>Obter windowsDomainJoinConfiguration
 

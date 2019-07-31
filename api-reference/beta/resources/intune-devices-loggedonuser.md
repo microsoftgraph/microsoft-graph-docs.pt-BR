@@ -4,12 +4,13 @@ description: Usuário conectado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e013b89eefbcdb1bf180ff90341388db9c05dcf4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3a6b58667933d530f91685f6fd12a8e5f63ea831
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995151"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999770"
 ---
 # <a name="loggedonuser-resource-type"></a>tipo de recurso loggedOnUser
 

@@ -4,12 +4,13 @@ description: Uma das seguintes permissões é necessária para chamar esta API. 
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 11dca7baf95c5e3bb4ce4111f350ef6c91f4e290
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 165bb6637a5488aa2fcbcc1c73774ec9bc3acb64
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878051"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995577"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
 

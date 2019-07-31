@@ -4,12 +4,13 @@ description: Status do registro do dispositivo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7aa2f009bc1a9fdafcabbbdbb4a5fbf5d2305b3a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: e153ac5c1bfbd09540fd55b5df23eab095e2a002
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995214"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968383"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enumeração deviceRegistrationState
 

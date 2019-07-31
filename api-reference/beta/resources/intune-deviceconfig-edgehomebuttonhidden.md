@@ -4,12 +4,13 @@ description: Ocultar o botão página inicial.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ad6fcb0c376d3a588fd2c1c3a13d863f60c58d5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 1eb2659d02e9a5a1ad3a64f3af7a5eea2e6befc0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989816"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001513"
 ---
 # <a name="edgehomebuttonhidden-resource-type"></a>tipo de recurso edgeHomeButtonHidden
 

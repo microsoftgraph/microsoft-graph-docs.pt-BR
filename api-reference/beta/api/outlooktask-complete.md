@@ -4,12 +4,13 @@ description: 'Concluir uma tarefa do Outlook que define a propriedade **complete
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: c1d1fb36f94c2948cd2430e07f35c682b0608962
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: afa90b4217aa39cef327c58dbe5216d173dff4f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338040"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995507"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: concluir
 

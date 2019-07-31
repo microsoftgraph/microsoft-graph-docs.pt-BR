@@ -4,12 +4,13 @@ description: Valores possíveis para agenda de sincronização de email.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f84c9a5cdb5d9608a34553c2a3a6f05a989b78a8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 14b73fc4cfbf9cf53bdab4c2841403cac4077fa2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995060"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001422"
 ---
 # <a name="emailsyncschedule-enum-type"></a>tipo de enumeração emailSyncSchedule
 

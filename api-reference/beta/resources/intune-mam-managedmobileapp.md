@@ -4,12 +4,13 @@ description: O identificador da implantação de um aplicativo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ccbf2a3b6326cff266a622002cab9afd6aab877d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 77d3cd301bdd1a160d9ae40643ca0e8c62d8b599
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994640"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998322"
 ---
 # <a name="managedmobileapp-resource-type"></a>Tipo de recurso managedMobileApp
 

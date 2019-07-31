@@ -4,12 +4,13 @@ description: Representa um tipo de base de configuração de filtro de conteúdo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19a691b38f6d0d4d7a80a0ede227e37d2af88347
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 97e16ec259794fb3b1a735cb5994800105b4413a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989403"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001065"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>tipo de recurso iosWebContentFilterBase
 

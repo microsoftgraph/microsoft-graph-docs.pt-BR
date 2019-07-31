@@ -4,12 +4,13 @@ description: Criar um novo objeto embeddedSIMDeviceState.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48fa960c2ca22b52e161947b509cc8eaec355c11
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8a501672f84cee4ffd5f0c85be5772827d847019
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983481"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995241"
 ---
 # <a name="create-embeddedsimdevicestate"></a>Criar embeddedSIMDeviceState
 

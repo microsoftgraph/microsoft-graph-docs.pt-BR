@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: adb8c668bf3f6d30667417500a5989734167fb5c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 4f394b02eac7e54c7e74a1c6954d6e3a7414e1b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992658"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999182"
 ---
 # <a name="enrollmentstate-enum-type"></a>tipo de enumeração de enrollmentid
 

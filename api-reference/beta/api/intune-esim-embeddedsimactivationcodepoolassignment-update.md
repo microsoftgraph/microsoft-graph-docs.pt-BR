@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto embeddedSIMActivationCodePool
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e13caf5650a636727f77c97a5e7915d9b756af2d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 601813bb791cfe97da52db41a2c6a49d706a8452
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982529"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995234"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>Atualizar embeddedSIMActivationCodePoolAssignment
 

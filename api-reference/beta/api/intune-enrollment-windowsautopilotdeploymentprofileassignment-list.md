@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos windowsAutopilotDeploy
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d56240671e8e0f6fae0a95a4b6683370db46b14
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 85e487302608e21df01986d253a5e01f8d5eb4dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980881"
 ---
 # <a name="list-windowsautopilotdeploymentprofileassignments"></a>Listar windowsAutopilotDeploymentProfileAssignments
 

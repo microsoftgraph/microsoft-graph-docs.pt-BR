@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto windowsInformationProtectio
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b694086f862e22e95ccbb600a52f8ac67f33d01b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: afb74a74e231e935b5b6ae576374d6689b066f0a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990495"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993267"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>Obter windowsInformationProtectionAppLearningSummary
 

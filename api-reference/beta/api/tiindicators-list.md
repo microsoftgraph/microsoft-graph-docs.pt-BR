@@ -4,12 +4,13 @@ description: Recupere uma lista de objetos tiindicator.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c55f3b54ae4692bdc4d8ad07b8749dcc99274e6f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4e4aa089614548379dc23e92bec5fff50696fc5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868116"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987912"
 ---
 # <a name="list-threat-intelligence-indicators"></a>Listar indicadores de inteligência de ameaças
 

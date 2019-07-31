@@ -4,12 +4,13 @@ description: Criar um novo objeto depOnboardingSetting.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71d942195ff6f55a8455fe8b5f687ebe45053c51
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 23ac56021bb81306e4e61bd878c0f0a6690a4db2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980233"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985340"
 ---
 # <a name="create-deponboardingsetting"></a>Criar depOnboardingSetting
 

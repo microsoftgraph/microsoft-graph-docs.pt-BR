@@ -4,12 +4,13 @@ description: Valores possíveis para LocalSecurityOptionsInformationShownOnLockS
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae59b5c3213bf283fce55b51518700a8e43f9040
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: df52f848d5167af38aabc621ad5ec4126cd33106
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989305"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970239"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>tipo de enumeração localSecurityOptionsInformationShownOnLockScreenType
 

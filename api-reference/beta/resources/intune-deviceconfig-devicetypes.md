@@ -4,12 +4,13 @@ description: Tipo de dispositivo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 197009595c54b7711b908c57df7ae7c381597631
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 67759255d9bdb972639743b7c50efce33f1bd9b4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989963"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001521"
 ---
 # <a name="devicetypes-enum-type"></a>tipo de enumeração deviceTypes
 

@@ -4,12 +4,13 @@ description: Configuração da página de status de registro do Windows 10
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25bf3597c45e500f7ab11dfec49b1d97cf0ded3e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4279ea38c168df6c3bfe8d1b74f9b570c8c327c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997929"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>tipo de recurso windows10EnrollmentCompletionPageConfiguration
 

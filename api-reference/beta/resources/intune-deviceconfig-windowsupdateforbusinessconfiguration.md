@@ -4,12 +4,13 @@ description: Configuração do Windows Update para Empresas.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d14e3c0925b4d7c56fa4c8f4d0edbd2476e02eb
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 98de100699da3a0fba9e82995be77fa5bbb9ecd8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35722414"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000162"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Tipo de recurso windowsUpdateForBusinessConfiguration
 

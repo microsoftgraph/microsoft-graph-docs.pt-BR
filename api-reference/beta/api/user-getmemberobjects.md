@@ -4,12 +4,13 @@ description: Retorna todos os grupos e funções de diretório e unidades admini
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4a183ddca73536effc2b1301b6dd5e1d20470ce1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1de4130791b30c048eeecd26cbd9b6153241ef89
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867591"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996473"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 

@@ -4,12 +4,13 @@ description: 'Use esta API para atualizar uma sessão de pasta de trabalho exist
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 011503ae1e3b16ba190d5b3922268dba79c66deb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 06d544325908879f847644a9f97ee62193c1fb2f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866492"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996004"
 ---
 # <a name="refresh-session"></a>Atualizar Sessão
 

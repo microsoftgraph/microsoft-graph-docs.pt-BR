@@ -4,12 +4,13 @@ description: Informações de hardware de um determinado dispositivo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cbbd95c495a970dfddbc3b6c78e5e784b43d297
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 874cee0b2b09b3d106d771f2c176ceed3d4d04e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995193"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999784"
 ---
 # <a name="hardwareinformation-resource-type"></a>tipo de recurso hardwareInformation
 

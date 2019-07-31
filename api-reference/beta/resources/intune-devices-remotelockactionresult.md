@@ -4,12 +4,13 @@ description: Resultado da ação de bloquear com um pin para desbloquear
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31af22f66b87d8102eeaf81d68d211640326f3fd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: dfae669fef3595af5e4001586bfc3673eb284cde
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963853"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999637"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Tipo de recurso remoteLockActionResult
 

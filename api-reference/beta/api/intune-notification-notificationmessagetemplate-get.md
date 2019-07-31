@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto notificationMessageTemplate
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dae5281a48b65079c590dc8d1d27aff197c6123
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 20b91adf4a5e4861a120732d6c6bda34dbc02289
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963566"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984612"
 ---
 # <a name="get-notificationmessagetemplate"></a>Get notificationMessageTemplate
 

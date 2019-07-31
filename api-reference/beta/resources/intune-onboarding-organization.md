@@ -4,12 +4,13 @@ description: O recurso da organização representa uma instância de configuraç
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46186451d55247c3a405df83955113cfcf05e143
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 76ef47ee4db5d7858ac476fd12db1615180bd18b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958624"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998013"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 

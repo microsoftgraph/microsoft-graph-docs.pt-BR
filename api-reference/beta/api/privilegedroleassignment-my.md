@@ -2,12 +2,15 @@
 title: 'privilegedRoleAssignment: My'
 description: Obtenha as atribuições de função privilegiada do solicitante.
 localization_priority: Normal
-ms.openlocfilehash: 2476bf8bcf15fd2f59557ecca2bcceb78f800e7f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2bfebcd6657abe7f8ce908e57a5602472e218f13
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875640"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992098"
 ---
 # <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: My
 

@@ -4,12 +4,13 @@ description: O código de ativação do SIM incorporado, conforme fornecido pela
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c96bc6530de0e8e6d1fde95fa71ffb6f1bdedb18
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 2cc97e88763535ccfcce9b65a6b790e872730a88
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994878"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998847"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>tipo de recurso embeddedSIMActivationCode
 

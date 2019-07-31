@@ -4,12 +4,13 @@ description: Adicionar ou remover licenças para o usuário habilitar ou desabil
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dc5a820f26ef10e9c102f08f05125a049fef65df
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 84d8be95c3d505a4714a4cecce42b4456e37d653
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867905"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996480"
 ---
 # <a name="assignlicense"></a>assignLicense
 

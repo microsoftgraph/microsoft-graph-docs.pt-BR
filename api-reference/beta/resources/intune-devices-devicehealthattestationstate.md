@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6804fe21403c53472a3da4cb521d54da3dbb9d6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 6095eb5a70776d9bfd0cd5f45985599913cafb92
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983040"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999903"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Tipo de recurso deviceHealthAttestationState
 

@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1055bca305b452dbeaeb8bf2ceee771a14ad08c6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: b2272badd8e2e9fe6b08588273cccc6240c1ec4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982984"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999231"
 ---
 # <a name="deptokentype-enum-type"></a>tipo de enumeração depTokenType
 

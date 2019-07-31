@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso doactionset fornece informações sobre as ações que fizeram uma [atividade] [item de @ atividade] em um item.
 ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
-ms.openlocfilehash: b88f7514f7871e3c3850da91e4cd90b32f3a69c4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 8053942fe96011b018e46681d69d308f65aa5d5f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345404"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967144"
 ---
 # <a name="itemactionset-resource-type"></a>Tipo de recurso ItemActionSet
 

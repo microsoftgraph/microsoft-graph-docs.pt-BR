@@ -1,15 +1,16 @@
 ---
 title: Listar logons
+doc_type: apiPageType
 description: Descreve o método de lista o recurso de logon (entidade) do Microsoft Graph API (REST), que ajuda a auditoria das atividades de diretório (locatário) (versão beta).
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 658d4abbbdeaff1f6f6de7c01756d821f4d4433b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ef799169f8a22b99f4340ed4d78e8314b18fb9ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869739"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991328"
 ---
 # <a name="list-signins"></a>Listar logons
 

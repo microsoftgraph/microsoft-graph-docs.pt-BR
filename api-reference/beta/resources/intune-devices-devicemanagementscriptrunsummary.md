@@ -4,12 +4,13 @@ description: Contém propriedades para o resumo de execução de um script de ge
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 199b9efcdc3ea862502ea22d845480d990c99caf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8a2486a52a5ce71805604f9e3d9b8d5bfdd6c85e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995305"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999833"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>tipo de recurso deviceManagementScriptRunSummary
 

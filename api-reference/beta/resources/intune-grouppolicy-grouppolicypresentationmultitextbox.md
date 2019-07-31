@@ -4,12 +4,13 @@ description: Representa um elemento multitextbox de ADMX e um elemento de multit
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e564b08aa13696993c68e611171d760baae184c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 301c3735eab78f98e5095f79e50b78bbd2ca1a66
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964917"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998643"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>tipo de recurso groupPolicyPresentationMultiTextBox
 

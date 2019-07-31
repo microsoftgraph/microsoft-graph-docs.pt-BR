@@ -2,12 +2,15 @@
 title: tipo de recurso oAuth2PermissionGrant
 description: Representa os escopos (permissões delegadas) do OAuth 2,0 que foram concedidos a um aplicativo (representado por uma entidade de serviço) como parte do processo de consentimento de administrador ou usuário.
 localization_priority: Normal
-ms.openlocfilehash: f23d2e7a8b57b324a92a1268ab4cc0393d8906f0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 25f012baca1a7dfa5aeb62b8885b00b151a657ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342062"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966612"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>tipo de recurso oAuth2PermissionGrant
 
@@ -43,7 +46,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|clientId|String| A ID da entidade de serviço que recebe o consentimento para representar o usuário ao acessar o recurso (representado pela propriedade reSourceid). |
+|clientId|String| A ID da entidade de serviço que recebe o consentimento para representar o usuário ao acessar o recurso (representado pela Propriedade ResourceId). |
 |consentType|String| Indica se o consentimento foi fornecido pelo administrador (em nome da organização) ou por um indivíduo. Os valores possíveis são ** userdirigetes ou *entidade de segurança*. |
 |expiryTime|DateTimeOffset| No momento, o valor de tempo de expiração é ignorado. |
 |id|String| Identificador exclusivo. Somente leitura.|

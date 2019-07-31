@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto reportRoot.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 845ee1c469bf0d986d8d417ad620cabf7f527884
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 66a122785d323031ff3d86cb5096caf2a0c3549b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897832"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984171"
 ---
 # <a name="update-reportroot"></a>Atualizar reportRoot
 
@@ -25,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Solução de Problemas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -51,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [reportR
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo dessa entidade.|
+|id|String|O identificador exclusivo dessa entidade.|
 
 
 

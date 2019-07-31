@@ -4,12 +4,13 @@ description: Estados de integridade disponíveis para a API de integridade do di
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0162903f7c38662b71a283a3dde30532aeb15326
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 8935c5715c9248b7c50f87d8835979906a7b3801
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995053"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999756"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>tipo de enumeração managedDevicePartnerReportedHealthState
 

@@ -4,12 +4,13 @@ description: Configuração de experiência inicial da caixa
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92a7e8e2a65817ff6aa144deaa408978804ed963
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 32336a0bc73c7d36ee4763dccbdc8a24197833ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963524"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999056"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso outOfBoxExperienceSettings
 

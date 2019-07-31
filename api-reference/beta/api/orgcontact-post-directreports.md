@@ -4,12 +4,13 @@ description: Use esta API para criar um novo directReport.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2f20b584607518e3dd96ffaed748df8a94e90818
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: bbe3121e197535668da32115dfbd23c398b075ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445307"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995521"
 ---
 # <a name="create-directreport"></a>Criar directReport
 

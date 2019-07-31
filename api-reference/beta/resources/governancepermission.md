@@ -2,12 +2,15 @@
 title: tipo de recurso governancePermission
 description: 'Representa a permissão de acesso que um governanceSubject tem a um Entidadegovernanceresource específico.  '
 localization_priority: Normal
-ms.openlocfilehash: cd5b15a85dee7a193962a6072bcdf34b1d4f131a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 8bf32b855ed77ccdf712b1a739ef913d0a3dade0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621302"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971939"
 ---
 # <a name="governancepermission-resource-type"></a>tipo de recurso governancePermission
 

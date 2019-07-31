@@ -4,12 +4,13 @@ description: Desativa todos os dispositivos de gerenciamento deste usuário
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 83fbe8bc730c8519f2f0bcb0fb1da89dbce0f0c6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: dd2fd7e9794e816e40c6f844e24110e1ef1bcdaf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898105"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993491"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>Ação removeAllDevicesFromManagement
 
