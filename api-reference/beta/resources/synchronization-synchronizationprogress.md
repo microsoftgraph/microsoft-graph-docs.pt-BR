@@ -2,14 +2,15 @@
 title: tipo de recurso synchronizationProgress
 description: Representa o andamento de um synchronizationJob para a conclusão.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 92260f5e4ee0a036322b9ce1a7593a02a0a1565a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: dd1292d34abdc745075e030609d3f28a17b2431a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621169"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964638"
 ---
 # <a name="synchronizationprogress-resource-type"></a>tipo de recurso synchronizationProgress
 

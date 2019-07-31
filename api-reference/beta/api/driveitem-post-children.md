@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Criar uma nova pasta ou DriveItem em um Drive com um item pai ou caminho especificado.
 ms.date: 09/10/2017
 title: Criar uma nova pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bf0dfda6a51d00fe58e4ab30ef1af445991da1f3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b38f6d62bdc90afc62591afa053f50c1b9c42497
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860960"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957014"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Criar uma nova pasta em uma unidade
 

@@ -2,14 +2,15 @@
 title: tipo de recurso synchronizationtemplate
 description: " qualquer pessoa pode recuperar o modelo para ver as configurações padrão, incluindo o esquema de sincronização."
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 125b8fe81aedc285da33380c3043827c7c534ab8
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: a9176c092d62b4ee43d15d29884a3882fd3c627e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620644"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964596"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>tipo de recurso synchronizationtemplate
 

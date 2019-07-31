@@ -4,12 +4,13 @@ description: Representa a legenda de um gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2e9c032966f62ac48e178aa6625b3f9891d2518a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 42414f0089cf3e33529796ebbeb53b95bc1d4ef2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348506"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964016"
 ---
 # <a name="workbookchartlegend-resource-type"></a>tipo de recurso workbookChartLegend
 
@@ -31,7 +32,7 @@ Representa a legenda de um gráfico.
 |position|string|Representa a posição da legenda no gráfico. Os valores possíveis são: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|booliano|Um valor booliano que representa a visibilidade de um objeto ChartLegend.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[workbookChartLegendFormat](workbookchartlegendformat.md)|Representa a formatação de uma legenda de gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|

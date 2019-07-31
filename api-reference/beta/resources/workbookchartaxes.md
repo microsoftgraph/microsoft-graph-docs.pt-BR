@@ -4,12 +4,13 @@ description: Representa os eixos de um gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 15e63af1e7b648288dba813790302f1dee6536ba
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e7cd34ab250f5232d1620af3b3be4fe36c286f41
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348466"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964078"
 ---
 # <a name="workbookchartaxes-resource-type"></a>tipo de recurso workbookChartAxes
 
@@ -24,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categoryAxis|[workbookChartAxis](workbookchartaxis.md)|Representa o eixo de categoria em um gráfico. Somente leitura.|

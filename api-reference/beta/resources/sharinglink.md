@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso sharingLink agrupa itens de dados relacionados ao link em uma única estrutura.
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: c5a08ca3a1a7b91d5cd2277a71f1301adf5edc93
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: f1ebff332227410bcb67d87de50a97dd2e078660
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343070"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965128"
 ---
 # <a name="sharinglink-resource-type"></a>tipo de recurso sharingLink
 
@@ -47,7 +49,7 @@ Veja a seguir uma representação JSON do recurso.
 | aplicativo    | [identity][]  | O aplicativo ao qual o link está associado.
 | type           | String        | O tipo do link criado.
 | scope          | Cadeia de caracteres        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
-| preventsDownload | Boolean       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
+| preventsDownload | Booliano       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
 | webHtml        | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
 | webUrl         | String        | Uma URL que abre o item no navegador no site do OneDrive.
 

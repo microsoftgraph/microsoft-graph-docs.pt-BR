@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 2ab608cc7e8f0e6ea17ea9911746fea52fc66a7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bd78a3125aaf10199be0e14c5f90148a5bc5d000
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458688"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956034"
 ---
 # <a name="delete-paymentterms"></a>Excluir paymentTerms
 Excluir um objeto de condições de pagamento do Dynamics 365 Business central.
@@ -56,7 +57,7 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/paymentTerms('{id}')
 ```
 
-**Response** 
+**Resposta** 
 
 Veja a seguir um exemplo da resposta. 
 

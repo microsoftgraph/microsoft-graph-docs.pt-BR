@@ -4,12 +4,13 @@ description: Uma razão válida para ser demorada no cronograma.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8ba1e4bd596b82643ecbfa4b842e60232c182a4b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: 62943670a0c87d34fd849e988ef5bf827aa6d72a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341964"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964274"
 ---
 # <a name="timeoffreason-resource-type"></a>tipo de recurso timeOffReason
 

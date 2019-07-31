@@ -2,12 +2,15 @@
 title: Tipo de recurso provisionedPlan
 description: A propriedade **provisionedPlans** das entidades user e organization é uma coleção de **provisionedPlan**.
 localization_priority: Normal
-ms.openlocfilehash: 1d6bec5cdcd4caaf8990caac6614f2fa589d4c4c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 76c29a74d54ca6e02febe8c83c80072bf158aa6b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344014"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965543"
 ---
 # <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
 

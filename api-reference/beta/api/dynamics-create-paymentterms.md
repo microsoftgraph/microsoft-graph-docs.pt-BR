@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: d863b13f506901c3216405cc612043cbd87fad3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 84a756dc92819a2ab40b6bc24600af9c66f2004c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463751"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956594"
 ---
 # <a name="create-paymentterms"></a>Criar paymentTerms
 Criar um objeto de condições de pagamento no Dynamics 365 Business central.
@@ -65,7 +66,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

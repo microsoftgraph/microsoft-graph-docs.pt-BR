@@ -4,12 +4,13 @@ description: O recurso **plannerPlanContextCollection** representa a coleção d
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 8d5394ff8a9503ab9ffba4810c9c2cad0d9a2fbf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 34fecf604b68fe092e1feeac2c0e99cc0d59cd77
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344447"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965919"
 ---
 # <a name="plannerplancontextcollection-resource-type"></a>tipo de recurso plannerPlanContextCollection
 

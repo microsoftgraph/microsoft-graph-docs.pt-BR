@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: ad49c3d4095283fc42c2e8f2046c646f3558ac18
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 10b8fff983f9c4f90bb40127ee5094a0fd0bdf74
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454185"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956818"
 ---
 # <a name="get-companyinformation"></a>Obter companyInformation
 Recupere as propriedades e os relacionamentos de um objeto de informações da empresa para o Dynamics 365 Business central.
@@ -52,7 +53,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies('{id}')/companyInformation('{id}')
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

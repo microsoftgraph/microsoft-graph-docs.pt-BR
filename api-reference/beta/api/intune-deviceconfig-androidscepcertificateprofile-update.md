@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto androidScepCertificateProfile
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8a1b323b7ad0fbb9dca19313e410ff2f61a62aa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8a8e26d8c3b255369f1597e8c59b0f3bd8a2ebb3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969901"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962628"
 ---
 # <a name="update-androidscepcertificateprofile"></a>Atualizar androidScepCertificateProfile
 

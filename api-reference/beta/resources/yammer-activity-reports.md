@@ -4,12 +4,13 @@ description: Você pode entender o nível do compromisso da sua organização co
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 792b639a2f843a0b902b3a153eee16da3c0b3b76
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: efdb4ba603be33f18cd66529edd724f6e1a3798d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342769"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963826"
 ---
 # <a name="yammer-activity-reports"></a>Relatórios de atividades do Yammer
 

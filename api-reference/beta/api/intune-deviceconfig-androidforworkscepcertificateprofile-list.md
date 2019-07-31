@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos androidForWorkScepCert
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0a5c1f4f4fecd868c5291a363649453b7636c36
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4c5721c3c2505d89422623ac92aab193beed291f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963224"
 ---
 # <a name="list-androidforworkscepcertificateprofiles"></a>Listar androidForWorkScepCertificateProfiles
 

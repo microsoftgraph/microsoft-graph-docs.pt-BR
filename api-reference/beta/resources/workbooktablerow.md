@@ -4,12 +4,13 @@ description: Representa uma linha em uma tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2c43fab3024d04a9e58f5de23e849c7b98fafeed
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e6097915005c96291f93543866ad9e28ff781f82
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348538"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963868"
 ---
 # <a name="workbooktablerow-resource-type"></a>tipo de recurso workbookTableRow
 
@@ -25,7 +26,7 @@ Representa uma linha em uma tabela.
 |[Get TableRow](../api/tablerow-get.md) | [workbookTableRow](workbooktablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
 |[Update](../api/tablerow-update.md) | [workbookTableRow](workbooktablerow.md)  |Atualize o objeto TableRow. |
 |[Range](../api/tablerow-range.md)|[workbookRange](workbookrange.md)|Retorna o objeto de intervalo associado a toda a linha.|
-|[Delete](../api/tablerow-delete.md)|Nenhuma|Exclui a linha da tabela.|
+|[Delete](../api/tablerow-delete.md)|None|Exclui a linha da tabela.|
 |[List](../api/tablerow-list.md) | coleção [workbookTableRow](workbooktablerow.md) |Obtenha uma coleção de objetos tableRow. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[workbookTableRow](workbooktablerow.md)|Obtém uma linha com base em sua posição na coleção.|
 |[Add](../api/tablerowcollection-add.md)|[workbookTableRow](workbooktablerow.md)|Adiciona uma nova linha à tabela.|

@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos termsAndConditionsGrou
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee36139d51e098335ed225bdd54d42193f135619
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: eac9e170c178feb6412e633416f08c8b3025f950
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971798"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958449"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>Listar termsAndConditionsGroupAssignments
 

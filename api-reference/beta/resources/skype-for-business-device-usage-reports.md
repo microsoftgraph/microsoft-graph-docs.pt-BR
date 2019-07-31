@@ -4,12 +4,13 @@ description: Você pode obter detalhes sobre os tipos de clientes e dispositivos
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 04599285355d2b34af2c021efcb59ee945486d33
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 2af0b2f2d6d3d411475de012fcec249cb4c4d845
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342880"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964974"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Relatórios de uso de dispositivos Skype for Business
 

@@ -4,12 +4,13 @@ description: Representa uma Tabela Dinâmica do Excel.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 99ad62474ef0c8e56ec5a699edac742ee28ae446
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d8df88699fde1e4d5562db6299cd12665512c03b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345779"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963987"
 ---
 # <a name="workbookpivottable-resource-type"></a>tipo de recurso workbookPivotTable
 

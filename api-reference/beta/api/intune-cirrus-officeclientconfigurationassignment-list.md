@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos officeClientConfigurat
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: b7b5eeac4c0a07d4cf4e87401a6e0bbf3b11aaf0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: ea744fad0c0a096157716ec87f5bc8635d4d7c28
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934009"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958876"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Listar officeClientConfigurationAssignments
 

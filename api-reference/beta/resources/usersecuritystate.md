@@ -1,17 +1,18 @@
 ---
-title: tipo de recurso userSecuritystate
+title: tipo de recurso usersecuritystate
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7ca02b6582898e8a0184c6c37115c9ac96b386ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3c0f9cb91484f23702329a38de26189176dacb13
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345060"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964224"
 ---
-# <a name="usersecuritystate-resource-type"></a>tipo de recurso userSecuritystate
+# <a name="usersecuritystate-resource-type"></a>tipo de recurso usersecuritystate
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +26,7 @@ Contém informações monitoradoras sobre a conta de usuário.
 |accountName|String|Nome da conta da conta de usuário (sem o domínio do Active Directory ou domínio DNS) `mailNickName`-(também chamado).|
 |domainName|Cadeia de caracteres|Domínio NetBIOS/Active Directory da conta de usuário (ou seja, formato de domínio \ conta).|
 |emailRole|emailRole|Para alertas relacionados a email-a função de email da conta de usuário. Os valores possíveis são: `unknown`, `sender`, `recipient`.|
-|isVpn|Boolean|Indica se o usuário fez logon por meio de uma VPN.|
+|isVpn|Booliano|Indica se o usuário fez logon por meio de uma VPN.|
 |logonDateTime|DateTimeOffset|Hora em que o logon ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |LogonId|String|ID de entrada do usuário.|
 |logonIp|String|Endereço IP para o qual a solicitação de entrada originou.|
@@ -33,7 +34,7 @@ Contém informações monitoradoras sobre a conta de usuário.
 |logonType|logonType|Método de logon do usuário. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 |onPremisesSecurityIdentifier|String|O identificador de segurança (SID) do usuário do Active Directory (local).|
 |riskScore|String|A pontuação de risco calculado/gerado pelo provedor da conta de usuário. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
-|userAccounttype|userAccountSecurityType|Tipo de conta de usuário (Associação de grupo), por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
+|useraccounttype|userAccountSecurityType|Tipo de conta de usuário (Associação de grupo), por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
 |userPrincipalName|String|Nome de entrada do usuário-formato da Internet: (nome da conta de usuário) @ (nome de domínio DNS da conta de usuário).|
 
 ## <a name="json-representation"></a>Representação JSON

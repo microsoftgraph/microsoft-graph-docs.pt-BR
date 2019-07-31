@@ -4,12 +4,13 @@ description: Exclua uma classe de uma escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 0b7ac85788c99cf5ba9773a5caced43e4f098386
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 15ab30facb9c8d762e05c37ea8230b3178ab86f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324845"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955219"
 ---
 # <a name="remove-educationclass"></a>Remover educationClass
 

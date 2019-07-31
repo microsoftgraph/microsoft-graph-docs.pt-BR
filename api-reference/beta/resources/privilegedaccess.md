@@ -2,12 +2,15 @@
 title: tipo de recurso privilegedAccess
 description: " por exemplo, `privilegedAccess/azureResources` representa o PIM que gerencia o acesso privilegiado aos recursos do Azure."
 localization_priority: Normal
-ms.openlocfilehash: 2dd131dd8f1ba5a2e7668949d2a03a9ab3321d1d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7f59f8420be6ff97511415e944d154cb5d59950f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344253"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965786"
 ---
 # <a name="privilegedaccess-resource-type"></a>tipo de recurso privilegedAccess
 

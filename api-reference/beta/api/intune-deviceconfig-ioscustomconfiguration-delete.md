@@ -4,12 +4,13 @@ description: Exclui iosCustomConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02dea151da098309c09999ac0ae651f329384d35
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0e788250de0862e2593f3d14bf4d902b4a15fba6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967227"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948660"
 ---
 # <a name="delete-ioscustomconfiguration"></a>Excluir iosCustomConfiguration
 

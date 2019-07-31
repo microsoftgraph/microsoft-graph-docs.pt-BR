@@ -4,12 +4,13 @@ description: Representa o histórico de riscos de usuários do Azure AD
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 37f38a649aa3721e65b44e64571dafb797259cf6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 586fdb046adc8977550cc386a27284752cf487c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33620833"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965331"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>tipo de recurso riskyUserHistoryItem
 
@@ -27,7 +28,7 @@ Representa o histórico de riscos de um usuário do Azure AD, conforme determina
 
 | Propriedade       | Tipo    | Descrição |
 |:---------------|:--------|:------------|
-| userId         | cadeia de caracteres  | A ID do usuário. |
+| userId         | string  | A ID do usuário. |
 | initiatedBy    | bool    | A ID do ator que faz a operação. |
 | atividade       | [riskUserActivity](riskuseractivity.md)| A atividade relacionada à alteração no nível de risco do usuário. | 
 

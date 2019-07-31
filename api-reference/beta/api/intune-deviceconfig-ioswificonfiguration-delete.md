@@ -4,12 +4,13 @@ description: Exclui iosWiFiConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 539a76f4dcaa89a009a242b493542aa59f55dd94
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9d60d6e2630e37d2640f956b65ac87d0b49bb9e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947694"
 ---
 # <a name="delete-ioswificonfiguration"></a>Excluir iosWiFiConfiguration
 

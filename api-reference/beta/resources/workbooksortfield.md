@@ -2,12 +2,15 @@
 title: tipo de recurso workbookSortField
 description: Representa uma condição em uma operação de classificação.
 localization_priority: Normal
-ms.openlocfilehash: 239c0e3b9f95108165ed32e7e22f94049e787432
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: 55a1f822e080f786b588837dd6d9120cea546d4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348529"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963903"
 ---
 # <a name="workbooksortfield-resource-type"></a>tipo de recurso workbookSortField
 
@@ -24,7 +27,7 @@ Representa uma condição em uma operação de classificação.
 |key|int|Representa a coluna (ou linha, dependendo da orientação da classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).|
 |sortOn|string|Representa o tipo de classificação dessa condição. Os valores possíveis são: `Value`, `CellColor`, `FontColor` e `Icon`.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |ícone|[workbookIcon](workbookicon.md)|Representa o ícone que é o destino da condição se a classificação está no ícone da célula.|

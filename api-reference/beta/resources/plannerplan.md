@@ -4,12 +4,13 @@ description: O recurso **plannerPlan** representa um plano no Office 365. Um pla
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 5da918e3ba0e8087d4572799168fa1132e0ce5e7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 658bcbbaf8431b65565ecebd03a014776be840e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344458"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965940"
 ---
 # <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
 

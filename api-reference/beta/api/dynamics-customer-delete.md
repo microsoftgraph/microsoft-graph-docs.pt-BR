@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: ccda17713436a2455c073eb58c8ecfadf3a58a12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: cb4bc0867d981b4e6432e59c2db4c8c36c11f71a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458394"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956482"
 ---
 # <a name="delete-customers"></a>Excluir clientes
 Excluir um objeto Customer do Dynamics 365 Business central.
@@ -55,7 +56,7 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/customers('{id}')
 ```
 
-**Response** 
+**Resposta** 
 
 Veja a seguir um exemplo da resposta. 
 

@@ -4,12 +4,13 @@ description: Criar um novo objeto macOSTrustedRootCertificate.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a85a7666b2ab445e65fee9e84de7e40ff7eec933
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a31377b27d5d21046eb495bea4568758dc89b9d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963153"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947106"
 ---
 # <a name="create-macostrustedrootcertificate"></a>Criar macOSTrustedRootCertificate
 

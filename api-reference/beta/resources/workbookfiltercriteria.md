@@ -2,12 +2,15 @@
 title: tipo de recurso workbookFilterCriteria
 description: Representa os critérios de filtragem aplicados a uma coluna.
 localization_priority: Normal
-ms.openlocfilehash: 4906a44c88fdd7cb071b4ea994fee609cda1151c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: 6e0b2b09ab464c0a04bf97ed666f3fd3a687e912
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348499"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964014"
 ---
 # <a name="workbookfiltercriteria-resource-type"></a>tipo de recurso workbookFilterCriteria
 
