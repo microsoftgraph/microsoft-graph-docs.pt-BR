@@ -4,12 +4,13 @@ description: 'Use os relatórios de uso de dispositivos do Microsoft Teams para 
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 9521e458d72463f01fff116492bb240eaef35cf8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 0beada44b46afad1b8a51358f18259374a654f14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342237"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966710"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Relatórios de uso de dispositivos do Microsoft Teams
 

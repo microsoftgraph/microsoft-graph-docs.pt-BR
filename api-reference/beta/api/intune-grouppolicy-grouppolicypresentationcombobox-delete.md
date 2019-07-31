@@ -4,12 +4,13 @@ description: Exclui groupPolicyPresentationComboBox.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f306713f6c3f145d0f990c4500f4d794744e28e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 25bd89c7f5f6f7c51e8a5395f3a85d527f430449
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983642"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989648"
 ---
 # <a name="delete-grouppolicypresentationcombobox"></a>Excluir groupPolicyPresentationComboBox
 

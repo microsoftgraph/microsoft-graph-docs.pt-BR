@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4d6be39db71c6fa6d1105db65b05c071627f08d5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: aefec17df5d16ab2df908a0899535592ed4e7d7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898772"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993631"
 ---
 # <a name="enablelegacypcmanagement-action"></a>ação enableLegacyPcManagement
 

@@ -4,12 +4,13 @@ description: Cria uma nova tabela. O endereço de origem do intervalo determina 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: f99ca30b500971de359dbf58dafefdd87bf13698
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c719607f9d8ce6efcf5158efb8e441c27c8c7990
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868745"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991048"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 

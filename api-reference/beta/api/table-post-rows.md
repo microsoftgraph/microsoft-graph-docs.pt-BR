@@ -4,12 +4,13 @@ description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 187a5e9028515a7e6450f4bc0e4930837d4be15f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: dfbaaaa33dea63042e8a1671810f3e2d70f9e156
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458007"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991027"
 ---
 # <a name="create-tablerow"></a>Criar TableRow
 

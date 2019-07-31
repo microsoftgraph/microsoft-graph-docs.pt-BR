@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 7bc21be693a5c68ecd5c6a1e4e44d53c9261acdb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d396ee84e4af6606cfde3e5fc17ef02c0a9594f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32505463"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966577"
 ---
 # <a name="office365activationcounts-resource-type"></a>tipo de recurso office365ActivationCounts
 
@@ -18,7 +19,7 @@ ms.locfileid: "32505463"
 | Propriedade          | Tipo   | Descrição                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Data   | A última data do conteúdo.          |
-| ProductType       | String | O tipo de produto, como "Office 365 proPlus", "Project Client" ou "Visio Pro for Office 365". |
+| ProductType       | String | O tipo de produto, como "Office 365 ProPlus", "Project Client" ou "Visio Pro for Office 365". |
 | Windows           | Int64  | A contagem de ativação no Windows. Esse número inclui todas as ativações em qualquer computador Windows. |
 | mac               | Int64  | A contagem de ativação no Mac OS.          |
 | Android           | Int64  | A contagem de ativação em um dispositivo Android.  |

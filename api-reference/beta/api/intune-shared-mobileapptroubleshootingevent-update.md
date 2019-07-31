@@ -4,12 +4,13 @@ description: Descreve o método Update mobileAppTroubleshootingEvent da API do M
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: b94a62e896bda2cf6a39b065df0fd698924a4c21
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 58e41160bac079b131b1afe462ddb1309e9137b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898273"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979642"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>Atualizar mobileAppTroubleshootingEvent
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
 |&nbsp;&nbsp; **Gerenciamento de dispositivos**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **Solução de problemas**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Solução de Problemas**|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -56,10 +57,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 |id|String|O GUID do objeto.|
 |**Solução de Problemas**|
 |additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres que fornece informações adicionais sobre o evento de solução de problemas.|
-|ApplicationId|Cadeia de caracteres|Identificador de aplicativo do Intune.|
-|correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço. |
+|ApplicationId|String|Identificador de aplicativo do Intune.|
+|correlationId|String|ID usada para rastrear a falha no serviço. |
 |eventDateTime|DateTimeOffset|Hora em que o evento ocorreu. |
-|EventName|Cadeia de caracteres|Nome do evento correspondente ao evento de solução de problemas. Opcional.|
+|EventName|String|Nome do evento correspondente ao evento de solução de problemas. Opcional.|
 |histórico|coleção [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Item do histórico de solução de problemas de aplicativos móveis do Intune.|
 |managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção. |

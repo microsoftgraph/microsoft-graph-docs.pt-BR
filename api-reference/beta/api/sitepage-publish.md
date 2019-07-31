@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: Publicar a versão mais recente de um recurso sitePage, que torna a versão da página disponível para todos os usuários. Se a página estiver com check-out, faça check-in na página e publique-a. Se a página estiver com check-out para o chamador desta API, a página será automaticamente verificada e publicada.
 ms.date: 09/10/2018
 title: Publicar página
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d9bf699c0038e785a11560ee7326cfb2324345f3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 5f4404b33a54979271750d4074a9c6da235966ea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335882"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991209"
 ---
 # <a name="sitepage-publish"></a>sitePage: publish
 

@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto groupPolicyPresentat
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8641b3ab5d57de8a32b77c4b9faafcc070fb7acb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b49763415d6ae3a942e29a3a111db817bfdfd6b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983691"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989732"
 ---
 # <a name="get-grouppolicypresentationcheckbox"></a>Obter groupPolicyPresentationCheckBox
 

@@ -4,12 +4,13 @@ description: Metadados para o relatório de atividades do usuário de configura�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6058b6c90a175bcda858ee93897d1cb210a3b77e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 1371fced93fe51d019373a5fe3af8f5764ca5190
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898714"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993505"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>Função deviceConfigurationUserActivity
 

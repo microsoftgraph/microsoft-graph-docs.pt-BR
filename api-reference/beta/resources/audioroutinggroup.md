@@ -4,12 +4,13 @@ description: O grupo de roteamento de áudio armazena uma rota de áudio privada
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c5139b9f1f0c56b93848868c0d76ebf3051a148c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: db5f94f9ac500dfeb97c6eb787783e9f749ae507
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328248"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974273"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso audioRoutingGroup
 
@@ -24,14 +25,14 @@ O grupo de roteamento de áudio armazena uma rota de áudio privada entre os par
 | Método                                                  | Tipo de retorno                               | Descrição                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Obter audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Leia as propriedades e os relacionamentos do objeto audioRoutingGroup.|
-| [Atualizar](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Atualizar lista de receptores.                       |
-| [Delete](../api/audioroutinggroup-delete.md)            | Nenhuma                                      | Exclua o grupo roteamento de áudio.              |
+| [Atualização](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Atualizar lista de receptores.                       |
+| [Delete](../api/audioroutinggroup-delete.md)            | None                                      | Exclua o grupo roteamento de áudio.              |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo              | Descrição                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | string            | Somente leitura. Servidor gerado.                                         |
+| id            | cadeia de caracteres            | Somente leitura. Servidor gerado.                                         |
 | receptores     | collection(string) | Lista de IDs de participantes de recebimento.                                   |
 | routingmode   | string            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
 | fontes       | collection(string) | Lista de IDs de participantes de origem.                                      |

@@ -2,12 +2,15 @@
 title: Listar programas
 description: No recurso de revisões do Azure AD Access, liste todos os objetos de programa.
 localization_priority: Normal
-ms.openlocfilehash: 29661ca95df8f3b5aea3b94dab6700bb7332d260
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d71f4c550bbde753a9f77008a6f2ad1c7e89e265
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978596"
 ---
 # <a name="list-programs"></a>Listar programas
 

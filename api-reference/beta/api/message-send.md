@@ -4,12 +4,13 @@ description: Envie uma mensagem na pasta de rascunho. A mensagem de rascunho pod
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 84b840b7525172c8a22d18d8e22361c5136a9083
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dfbe0fac9d8849b627d58ceab0ca06f319bab28d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879435"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992833"
 ---
 # <a name="message-send"></a>message: send
 

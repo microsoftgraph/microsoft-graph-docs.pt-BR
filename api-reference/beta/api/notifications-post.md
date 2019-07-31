@@ -3,12 +3,14 @@ title: Criar e enviar uma notificação
 description: 'Criar e enviar uma notificação direcionada a um usuário por meio do Microsoft Graph. A notificação é armazenada no repositório de feeds de notificação do Microsoft Graph e é enviada a todos os clientes de aplicativos em todos os pontos de extremidade do dispositivo nos quais o usuário está conectado.  '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 86e67d040dcae3a013d8848c638ffadca41e4f5f
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: a5ed743e93a5cafcb7ee919acbbcee5f2734a5de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063449"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992644"
 ---
 # <a name="create-and-send-a-notification"></a>Criar e enviar uma notificação
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

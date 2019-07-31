@@ -2,12 +2,15 @@
 title: Get privilegedRoleAssignment
 description: Recupere as propriedades e os relacionamentos do objeto privilegedRoleAssignment.
 localization_priority: Normal
-ms.openlocfilehash: b21ec9ca5fe189f99193419ab1751893d293906d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9b9f7cebde3d20c17d2b7b0537f13c324999853b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875739"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992063"
 ---
 # <a name="get-privilegedroleassignment"></a>Get privilegedRoleAssignment
 
