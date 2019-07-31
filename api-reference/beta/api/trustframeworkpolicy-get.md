@@ -4,63 +4,64 @@ description: Esta operação recupera um conteúdo existente do trustFrameworkPo
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 986d6dc109a334e0a64e5472d5de6d80850b55e3
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+doc_type: apiPageType
+ms.openlocfilehash: 39cd3f11644eca36720fccbf60ba81fd5384af6d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536040"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987863"
 ---
-# <a name="get-trustframeworkpolicy"></a><span data-ttu-id="4bf26-103">Obter trustFrameworkPolicy</span><span class="sxs-lookup"><span data-stu-id="4bf26-103">Get trustFrameworkPolicy</span></span>
+# <a name="get-trustframeworkpolicy"></a><span data-ttu-id="e0a15-103">Obter trustFrameworkPolicy</span><span class="sxs-lookup"><span data-stu-id="e0a15-103">Get trustFrameworkPolicy</span></span>
 
-><span data-ttu-id="4bf26-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="4bf26-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4bf26-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="4bf26-105">Use of these APIs in production applications is not supported.</span></span>
+><span data-ttu-id="e0a15-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="e0a15-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e0a15-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="e0a15-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="4bf26-106">Recupere o conteúdo de um [trustFrameworkPolicy](../resources/trustframeworkpolicy.md)existente.</span><span class="sxs-lookup"><span data-stu-id="4bf26-106">Retrieve the contents of an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).</span></span>
+<span data-ttu-id="e0a15-106">Recupere o conteúdo de um [trustFrameworkPolicy](../resources/trustframeworkpolicy.md)existente.</span><span class="sxs-lookup"><span data-stu-id="e0a15-106">Retrieve the contents of an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4bf26-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="4bf26-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e0a15-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="e0a15-107">Permissions</span></span>
 
-<span data-ttu-id="4bf26-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="4bf26-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+<span data-ttu-id="e0a15-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="e0a15-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="4bf26-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4bf26-110">Permission type</span></span>      | <span data-ttu-id="4bf26-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4bf26-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e0a15-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e0a15-110">Permission type</span></span>      | <span data-ttu-id="e0a15-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e0a15-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4bf26-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4bf26-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4bf26-113">Policy. Read. TrustFramework, Policy. Read. All</span><span class="sxs-lookup"><span data-stu-id="4bf26-113">Policy.Read.TrustFramework, Policy.Read.All</span></span>|
-|<span data-ttu-id="4bf26-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4bf26-114">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="4bf26-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4bf26-115">Not supported.</span></span>|
-|<span data-ttu-id="4bf26-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4bf26-116">Application</span></span>|<span data-ttu-id="4bf26-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4bf26-117">Not supported.</span></span>|
+|<span data-ttu-id="e0a15-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e0a15-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e0a15-113">Policy. Read. TrustFramework, Policy. Read. All</span><span class="sxs-lookup"><span data-stu-id="e0a15-113">Policy.Read.TrustFramework, Policy.Read.All</span></span>|
+|<span data-ttu-id="e0a15-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e0a15-114">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="e0a15-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e0a15-115">Not supported.</span></span>|
+|<span data-ttu-id="e0a15-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e0a15-116">Application</span></span>|<span data-ttu-id="e0a15-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e0a15-117">Not supported.</span></span>|
 
-<span data-ttu-id="4bf26-118">A conta corporativa ou de estudante deve ser um administrador global do locatário.</span><span class="sxs-lookup"><span data-stu-id="4bf26-118">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="e0a15-118">A conta corporativa ou de estudante deve ser um administrador global do locatário.</span><span class="sxs-lookup"><span data-stu-id="e0a15-118">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4bf26-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4bf26-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e0a15-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e0a15-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /trustFramework/policies/{id}/$value
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4bf26-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="4bf26-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e0a15-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e0a15-120">Optional query parameters</span></span>
 
-<span data-ttu-id="4bf26-121">Este método oferece suporte `$select` aos `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="4bf26-121">This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="e0a15-121">Este método oferece suporte `$select` aos `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e0a15-121">This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4bf26-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4bf26-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e0a15-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e0a15-122">Request headers</span></span>
 
-|<span data-ttu-id="4bf26-123">Nome</span><span class="sxs-lookup"><span data-stu-id="4bf26-123">Name</span></span>|<span data-ttu-id="4bf26-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="4bf26-124">Description</span></span>|
+|<span data-ttu-id="e0a15-123">Nome</span><span class="sxs-lookup"><span data-stu-id="e0a15-123">Name</span></span>|<span data-ttu-id="e0a15-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="e0a15-124">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="4bf26-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="4bf26-125">Authorization</span></span>|<span data-ttu-id="4bf26-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4bf26-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="e0a15-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="e0a15-125">Authorization</span></span>|<span data-ttu-id="e0a15-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e0a15-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4bf26-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4bf26-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e0a15-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e0a15-128">Request body</span></span>
 
-<span data-ttu-id="4bf26-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4bf26-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="e0a15-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e0a15-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4bf26-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="4bf26-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e0a15-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="e0a15-130">Response</span></span>
 
-<span data-ttu-id="4bf26-131">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma representação XML do [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4bf26-131">If successful, this method returns a `200 OK` response code and an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) in the response body.</span></span>  
+<span data-ttu-id="e0a15-131">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma representação XML do [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e0a15-131">If successful, this method returns a `200 OK` response code and an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) in the response body.</span></span>  
 
-><span data-ttu-id="4bf26-132">**Observação:** o tipo de conteúdo de resposta `application/xml`será.</span><span class="sxs-lookup"><span data-stu-id="4bf26-132">**Note:** the response content type will be `application/xml`.</span></span>
+><span data-ttu-id="e0a15-132">**Observação:** o tipo de conteúdo de resposta `application/xml`será.</span><span class="sxs-lookup"><span data-stu-id="e0a15-132">**Note:** the response content type will be `application/xml`.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4bf26-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4bf26-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e0a15-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e0a15-133">Example</span></span>
 
-<span data-ttu-id="4bf26-134">O exemplo a seguir recupera um **trustFrameworkPolicy**específico.</span><span class="sxs-lookup"><span data-stu-id="4bf26-134">The following example retrieves a specific **trustFrameworkPolicy**.</span></span>
+<span data-ttu-id="e0a15-134">O exemplo a seguir recupera um **trustFrameworkPolicy**específico.</span><span class="sxs-lookup"><span data-stu-id="e0a15-134">The following example retrieves a specific **trustFrameworkPolicy**.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4bf26-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4bf26-135">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e0a15-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e0a15-135">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -70,7 +71,7 @@ GET /trustFramework/policies/{id}/$value
 GET https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test/$value
 ```
 
-##### <a name="response"></a><span data-ttu-id="4bf26-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="4bf26-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e0a15-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="e0a15-136">Response</span></span>
 
 <!-- {
   "blockType": "ignored",
