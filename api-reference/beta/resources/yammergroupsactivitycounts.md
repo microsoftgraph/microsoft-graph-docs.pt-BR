@@ -4,29 +4,30 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 404dcd44baac005374634db097b79c10c86ae78f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 12ab6de821ad4cd4362bcd3baa82525f6894b747
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551432"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963756"
 ---
-# <a name="yammergroupsactivitycounts-resource-type"></a><span data-ttu-id="710eb-103">tipo de recurso yammerGroupsActivityCounts</span><span class="sxs-lookup"><span data-stu-id="710eb-103">yammerGroupsActivityCounts resource type</span></span>
+# <a name="yammergroupsactivitycounts-resource-type"></a><span data-ttu-id="6ae44-103">tipo de recurso yammerGroupsActivityCounts</span><span class="sxs-lookup"><span data-stu-id="6ae44-103">yammerGroupsActivityCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="710eb-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="710eb-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6ae44-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6ae44-104">Properties</span></span>
 
-| <span data-ttu-id="710eb-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="710eb-105">Property</span></span>          | <span data-ttu-id="710eb-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="710eb-106">Type</span></span>   |
+| <span data-ttu-id="6ae44-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6ae44-105">Property</span></span>          | <span data-ttu-id="6ae44-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="6ae44-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="710eb-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="710eb-107">reportRefreshDate</span></span> | <span data-ttu-id="710eb-108">Data</span><span class="sxs-lookup"><span data-stu-id="710eb-108">Date</span></span>   |
-| <span data-ttu-id="710eb-109">curti</span><span class="sxs-lookup"><span data-stu-id="710eb-109">liked</span></span>             | <span data-ttu-id="710eb-110">Int64</span><span class="sxs-lookup"><span data-stu-id="710eb-110">Int64</span></span>  |
-| <span data-ttu-id="710eb-111">posta</span><span class="sxs-lookup"><span data-stu-id="710eb-111">posted</span></span>            | <span data-ttu-id="710eb-112">Int64</span><span class="sxs-lookup"><span data-stu-id="710eb-112">Int64</span></span>  |
-| <span data-ttu-id="710eb-113">Saiba</span><span class="sxs-lookup"><span data-stu-id="710eb-113">read</span></span>              | <span data-ttu-id="710eb-114">Int64</span><span class="sxs-lookup"><span data-stu-id="710eb-114">Int64</span></span>  |
-| <span data-ttu-id="710eb-115">reportDate</span><span class="sxs-lookup"><span data-stu-id="710eb-115">reportDate</span></span>        | <span data-ttu-id="710eb-116">Data</span><span class="sxs-lookup"><span data-stu-id="710eb-116">Date</span></span>   |
-| <span data-ttu-id="710eb-117">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="710eb-117">reportPeriod</span></span>      | <span data-ttu-id="710eb-118">String</span><span class="sxs-lookup"><span data-stu-id="710eb-118">String</span></span> |
+| <span data-ttu-id="6ae44-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="6ae44-107">reportRefreshDate</span></span> | <span data-ttu-id="6ae44-108">Data</span><span class="sxs-lookup"><span data-stu-id="6ae44-108">Date</span></span>   |
+| <span data-ttu-id="6ae44-109">curti</span><span class="sxs-lookup"><span data-stu-id="6ae44-109">liked</span></span>             | <span data-ttu-id="6ae44-110">Int64</span><span class="sxs-lookup"><span data-stu-id="6ae44-110">Int64</span></span>  |
+| <span data-ttu-id="6ae44-111">posta</span><span class="sxs-lookup"><span data-stu-id="6ae44-111">posted</span></span>            | <span data-ttu-id="6ae44-112">Int64</span><span class="sxs-lookup"><span data-stu-id="6ae44-112">Int64</span></span>  |
+| <span data-ttu-id="6ae44-113">Saiba</span><span class="sxs-lookup"><span data-stu-id="6ae44-113">read</span></span>              | <span data-ttu-id="6ae44-114">Int64</span><span class="sxs-lookup"><span data-stu-id="6ae44-114">Int64</span></span>  |
+| <span data-ttu-id="6ae44-115">reportDate</span><span class="sxs-lookup"><span data-stu-id="6ae44-115">reportDate</span></span>        | <span data-ttu-id="6ae44-116">Data</span><span class="sxs-lookup"><span data-stu-id="6ae44-116">Date</span></span>   |
+| <span data-ttu-id="6ae44-117">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="6ae44-117">reportPeriod</span></span>      | <span data-ttu-id="6ae44-118">String</span><span class="sxs-lookup"><span data-stu-id="6ae44-118">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="710eb-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="710eb-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6ae44-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6ae44-119">JSON representation</span></span>
 
-<span data-ttu-id="710eb-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="710eb-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6ae44-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6ae44-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
