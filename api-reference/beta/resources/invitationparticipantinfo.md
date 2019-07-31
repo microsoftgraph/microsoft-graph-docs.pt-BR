@@ -4,12 +4,13 @@ description: O **InvitationParticipant** é usado para representar um conjunto d
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 56eb1ad90410edca795a8e29ecaa4b8b94e915ee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 570c2740cce2f4bc3b5584ba04ed50c9467591af
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345418"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967151"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
 

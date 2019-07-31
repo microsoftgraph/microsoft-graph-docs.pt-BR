@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso listItemVersion representa uma versão anterior de um recurso ListItem.
 ms.date: 09/17/2017
 title: ListItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 56413ad243e5c6c2c2a7ae3a81dab50586f42db8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ff3fbd3144a62939f9d4f6077c556c9d5884c687
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966952"
 ---
 # <a name="listitemversion-resource-type"></a>Tipo de recurso ListItemVersion
 
@@ -24,7 +25,7 @@ As seguintes tarefas estão disponíveis para os recursos listItemVersion.
 
 |            Tarefa comum             |         Método HTTP         |
 | :--------------------------------- | :-------------------------- |
-| [Versões de lista][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
+| [Listar versões][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
 | [Obter versão][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`     |
 | [Restaurar versão][version-restore] | `POST /sites/{site-id}/items/versions/{version-id}/restore` |
 

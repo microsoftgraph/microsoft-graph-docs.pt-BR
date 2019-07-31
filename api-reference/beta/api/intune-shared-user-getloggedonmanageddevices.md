@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d8e53199a02b3f28ed8826cd1555f2386276fcfa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: db9db9ebdd30d80761d8bdfdd6064109bf6d9339
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979663"
 ---
 # <a name="getloggedonmanageddevices-function"></a>função getLoggedOnManagedDevices
 

@@ -4,12 +4,13 @@ description: Obtenha a lista de um The Scheduling neste cronograma.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0bbfe0110dccbeb5642f6d9fe94db9fe40db9ba0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 98125d1040dec0dcac7107fd9f06590fad987824
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870937"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982939"
 ---
 # <a name="list-schedulegroups"></a>Listar scheduleGroups
 

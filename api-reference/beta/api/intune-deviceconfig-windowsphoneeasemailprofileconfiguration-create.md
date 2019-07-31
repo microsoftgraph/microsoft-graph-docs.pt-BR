@@ -4,12 +4,13 @@ description: Criar um novo objeto windowsPhoneEASEmailProfileConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c39dfe88b5e2a4bddc91991f85e7395d7f074d6d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c85ea38a4d0d52bbb4d3a56c8ab4fa097b9d24cb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961487"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986432"
 ---
 # <a name="create-windowsphoneeasemailprofileconfiguration"></a>Criar windowsPhoneEASEmailProfileConfiguration
 

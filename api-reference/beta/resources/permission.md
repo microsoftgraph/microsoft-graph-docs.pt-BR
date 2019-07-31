@@ -5,12 +5,13 @@ title: tipo de recurso Permission
 description: recurso Permission representando uma permissão de compartilhamento concedida para um driveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e43889f3dcab5c887cffe58cfcc4ac632389f980
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: 3f74ecd71a9f411a336c7fb4b5720208ca0ffa42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932461"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966178"
 ---
 # <a name="permission-resource-type"></a>tipo de recurso Permission
 

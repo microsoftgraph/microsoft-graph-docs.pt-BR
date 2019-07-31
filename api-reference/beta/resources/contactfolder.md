@@ -4,12 +4,13 @@ description: Uma pasta que contém contatos.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe980bc27aed3579a70c52941b1a784696b553e3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4a9fe3263bed04252e8eba5129437d0a7c155d42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341190"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973185"
 ---
 # <a name="contactfolder-resource-type"></a>tipo de recurso contactFolder
 
@@ -31,7 +32,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Criar contactFolder filho](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Cria uma nova contactFolder como um filho de uma pasta especificada.|
 |[delta](../api/contact-delta.md)|Coleção [Contact](contact.md)| Obtenha um conjunto de pastas de contatos que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
 |[Listar contatos na pasta](../api/contactfolder-list-contacts.md) |Coleção [Contact](contact.md)| Obtém uma coleção de contatos da pasta de contatos padrão do usuário conectado (`.../me/contacts`), ou da pasta contato especificada.|
-|[Criar contato na pasta](../api/contactfolder-post-contacts.md) |[contact](contact.md)| Adicione um contato na pasta de contatos raiz ou no ponto de extremidade do `contacts` de outra pasta de contatos.|
+|[Criar contato na pasta](../api/contactfolder-post-contacts.md) |[contato](contact.md)| Adicione um contato na pasta de contatos raiz ou no ponto de extremidade do `contacts` de outra pasta de contatos.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |Criar uma ou mais propriedades estendidas de valor único em uma contactFolder nova ou existente.   |
 |[Obter contactFolder com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Obtenha contactFolders que contêm uma propriedade estendida de valor único usando `$expand` ou `$filter`. |

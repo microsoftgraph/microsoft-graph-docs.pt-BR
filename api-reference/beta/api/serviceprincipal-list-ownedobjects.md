@@ -2,12 +2,15 @@
 title: 'servicePrincipalName: listar ownedObjects'
 description: Recupere uma lista de objetos pertencentes ao servicePrincipalName.  Isso pode incluir aplicativos ou grupos.
 localization_priority: Normal
-ms.openlocfilehash: a12bc406ac885b713ad3f247646bc366cb8f0b8c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 67710591594e068fefae861efcf4590516cbd8c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870005"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991356"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipalName: listar ownedObjects
 

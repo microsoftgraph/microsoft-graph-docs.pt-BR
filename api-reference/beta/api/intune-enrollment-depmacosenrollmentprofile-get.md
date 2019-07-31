@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto depMacOSEnrollmentPr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0507268b470b236561d7ec027d3d7ed12efc48a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5003dc85b23f5f94ddcab4852a99b19c5ef81c6b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980261"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985333"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>Obter depMacOSEnrollmentProfile
 

@@ -3,12 +3,14 @@ title: Get schemaExtension
 description: Obtenha as propriedades da definição schemaExtension especificada.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 3dd9d95815a5d6c2c610d27ae36deb3d5138eb06
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: cee5bf517598adfeb659e2d21fa75445cfa0e7a7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870628"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982958"
 ---
 # <a name="get-schemaextension"></a>Get schemaExtension
 

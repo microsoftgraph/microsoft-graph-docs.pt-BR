@@ -4,12 +4,13 @@ description: Os envios são propriedade de uma atribuição. Um envio representa
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 39adc3f394d106860406b3dd22bbf9a1c600280f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 81c194c08ddc5ed8f5acc38ae84a5478bb7e0229
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334125"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972520"
 ---
 # <a name="educationsubmission-resource-type"></a>tipo de recurso educationSubmission
 
@@ -27,7 +28,7 @@ Os envios são criados automaticamente quando uma atribuição é publicada. O e
 |[Obter educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Ler propriedades e relações de um objeto **educationSubmission** .|
 |[Listar recursos](../api/educationsubmission-list-resources.md) |coleção [educationSubmissionResource](educationsubmissionresource.md)| Obtenha uma coleção de objetos **educationSubmissionResource** .|
 |[Listar submittedResources](../api/educationsubmission-list-submittedresources.md) |coleção [educationSubmissionResource](educationsubmissionresource.md)| Obtenha uma coleção de objetos **educationSubmissionResource** .|
-|[Atualizar](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Atualize um objeto **educationSubmission** . |
+|[Atualização](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Atualize um objeto **educationSubmission** . |
 |[Enter](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Um professor usa Return para indicar que os notas/comentários podem ser mostrados para o aluno.|
 |[Enviar](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa Submit para ativar a atribuição. Isso copiará os recursos na pasta **submittedResources** para a gradação e atualizará o status.|
 |[Não enviar](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa o não enviar para mover o estado do envio de enviado de volta para o trabalho. Isso copiará os recursos na pasta **workingResources** para a gradação e atualizará o status.|

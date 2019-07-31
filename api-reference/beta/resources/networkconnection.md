@@ -2,12 +2,15 @@
 title: tipo de recurso networkConnection
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 94bf27265f591d32c01e7043d3a10468a924d78a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 90e505abfb9256276d24b81c3d038b2b0882069a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342195"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966668"
 ---
 # <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
 
@@ -44,14 +47,14 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |:---|:---|:---|
 |desconhecido|-1|Protocolo desconhecido.|
 |IP|,0|Protocolo de Internet.|
-|ICMP|1 | Protocolo de mensagens de controle da Internet.|
-|IGMP|2 | Protocolo de gerenciamento de grupos da Internet.|
-|GGP|3 | Gateway para protocolo gateway.|
-|IPv4|4 | Protocolo IP versão 4.|
-|tcp|6 | Protocolo de controle de transmissão.|
-|confiável|12| Protocolo de pacote universal do PARC.|
-|via|17 | Protocolo de dataGrama de usuário.|
-|IDP|22| Protocolo de dataGrama da Internet.|
+|ICMP|1| Protocolo de mensagens de controle da Internet.|
+|IGMP|duas| Protocolo de gerenciamento de grupos da Internet.|
+|ggp|3D| Gateway para protocolo gateway.|
+|IPv4|quatro| Protocolo IP versão 4.|
+|tcp|6| Protocolo de controle de transmissão.|
+|confiável|3,6| Protocolo de pacote universal do PARC.|
+|via|17.07.06| Protocolo de datagrama de usuário.|
+|IDP|22| Protocolo de datagrama da Internet.|
 |IPv6|41| Protocolo IP versão 6 (IPv6).|
 |ipv6RoutingHeader|43| cabeçalho de roteamento IPv6.|
 |ipv6FragmentHeader|44| cabeçalho de fragmento IPv6.|

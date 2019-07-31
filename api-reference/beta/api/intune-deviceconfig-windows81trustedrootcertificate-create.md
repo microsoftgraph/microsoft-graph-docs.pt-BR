@@ -4,12 +4,13 @@ description: Criar um novo objeto windows81TrustedRootCertificate.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b8c975efdc65ffaff3dd048b871449b531930274
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f3c38ff8695eff9b194f51dfb74580b1a845eea2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962187"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974924"
 ---
 # <a name="create-windows81trustedrootcertificate"></a>Criar windows81TrustedRootCertificate
 

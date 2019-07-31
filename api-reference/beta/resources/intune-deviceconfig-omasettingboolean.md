@@ -4,12 +4,13 @@ description: Definição booliana para configurações de OMA.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7269b8c61603601d0932a000f7f90e63d7cbc44e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 5e5bfbd19f4899b7ef3cdb788b4d7a7fe1b55252
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993729"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969937"
 ---
 # <a name="omasettingboolean-resource-type"></a>Tipo de recurso omaSettingBoolean
 

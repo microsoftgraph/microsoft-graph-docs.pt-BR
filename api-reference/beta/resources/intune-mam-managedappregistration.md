@@ -4,12 +4,13 @@ description: O ManagedAppEntity é o tipo de entidade de base para todos os outr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c618aacd448445fead1a0e55890ac7cb07dd7327
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 6b259c7a17d769dcaeaa79126c10c028e5d97df7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994710"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967956"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 

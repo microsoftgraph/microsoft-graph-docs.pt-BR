@@ -4,12 +4,13 @@ description: Excluir o usuário do dispositivo compartilhado da Apple
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c2d8d04e816cac4becf85f3ad565b7be0da6518
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7e8c2fad909c6caf58d294d7a9426878882fdfcc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978259"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985830"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Ação deleteUserFromSharedAppleDevice
 

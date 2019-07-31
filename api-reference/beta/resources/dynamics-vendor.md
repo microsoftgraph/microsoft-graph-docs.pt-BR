@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 1cec20dee4a124bb704d60ceb8229ea820aa55b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7c0609d96f6d97503faf5c5251d3641979a4f6e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534854"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972849"
 ---
 # <a name="vendors-resource-type"></a>tipo de recurso fornecedores
 Representa um fornecedor no Dynamics 365 Business central.
@@ -23,7 +24,7 @@ Representa um fornecedor no Dynamics 365 Business central.
 |[Obter fornecedores](../api/dynamics-vendor-get.md)|fornecedor|Obtém um objeto fornecedor.|
 |[Lançar fornecedores](../api/dynamics-create-vendor.md)|fornecedor|Cria um objeto fornecedor.|
 |[Fornecedores de patch](../api/dynamics-vendor-update.md)|fornecedor|Atualiza um objeto fornecedor.|
-|[Excluir fornecedor](../api/dynamics-vendor-delete.md)|Nenhuma|Exclui um objeto fornecedor.|
+|[Excluir fornecedor](../api/dynamics-vendor-delete.md)|none|Exclui um objeto fornecedor.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

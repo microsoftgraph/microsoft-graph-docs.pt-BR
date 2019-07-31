@@ -4,12 +4,13 @@ description: Contém propriedades para o estado de execução do usuário do scr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbde1236d741b0eba5841170b7a18e0ac00f71ee
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 504615f755845c07a938e54a950bb2460a9fb968
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995284"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968432"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>tipo de recurso deviceManagementScriptUserState
 

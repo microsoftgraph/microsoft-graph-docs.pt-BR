@@ -4,12 +4,13 @@ description: Defina a regra quando o administrador quiser que os dispositivos se
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1facb174f0047bdef90eb745195448f0451eb3b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 558c8f14f431bb10421ee77b6569f69560e8023f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995095"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968362"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>tipo de recurso managedDeviceCleanupSettings
 

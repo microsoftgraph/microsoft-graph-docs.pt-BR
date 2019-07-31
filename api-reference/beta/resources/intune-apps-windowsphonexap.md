@@ -4,12 +4,13 @@ description: Contém propriedades e propriedades herdadas para a linha XAP de ap
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce1ad0dc64c8b86fa709ff74a8a7c63cb5a30097
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: eded22f21c2a7910c9746853801fb31d0b73e546
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975613"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971631"
 ---
 # <a name="windowsphonexap-resource-type"></a>tipo de recurso windowsPhoneXAP
 

@@ -4,12 +4,13 @@ description: A classe usada para identificar um grupo local para a configuraçã
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c78e66c20f7275238cd7390a7d05daa8cd40037a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 661b1a4a6dd06fe44754232f967ebf8ec9c1ab55
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994325"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968999"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>tipo de recurso windowsKioskLocalGroup
 

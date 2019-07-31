@@ -4,12 +4,13 @@ description: Criar um novo objeto windowsInformationProtectionDeviceRegistration
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76d55c23cbff59eb7d28d85d39c5f7052345ea68
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a10be751f28d5440bb681b1d601d6766a1c37d7e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987751"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984759"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Criar windowsInformationProtectionDeviceRegistration
 

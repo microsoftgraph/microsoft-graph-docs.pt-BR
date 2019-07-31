@@ -4,12 +4,13 @@ description: Um requisito de atestado de dispositivo do SafetyNet do Android apl
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39726acbd8daf5f8f7432b0aa633e9d992a65bba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 03c7496fe5e3d1fce5f73cc0f5954d8415668641
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991923"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968075"
 ---
 # <a name="androidmanagedappsafetynetdeviceattestationtype-enum-type"></a>tipo de enumeração androidManagedAppSafetyNetDeviceAttestationType
 

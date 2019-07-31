@@ -4,12 +4,13 @@ description: Cria um novo objeto windowsPhone81CustomConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29697a6e10fa61b11f627c1db39217a44bae51b0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 63ac4d03272f5d01360bd0d9bade170c4db99b85
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986656"
 ---
 # <a name="create-windowsphone81customconfiguration"></a>Criar windowsPhone81CustomConfiguration
 

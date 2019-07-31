@@ -4,12 +4,13 @@ description: Possíveis status de sincronização associados a um token do Apple
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c493a1e967091627504b784cfb7692931af0264e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: fca1a785ca16ba3b153e18381d869e598199ed16
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958518"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967718"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>tipo de enumeração vppTokenSyncStatus
 

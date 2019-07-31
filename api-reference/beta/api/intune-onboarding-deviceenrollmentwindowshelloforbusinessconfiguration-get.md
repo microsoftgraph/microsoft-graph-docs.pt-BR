@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto deviceEnrollmentWindowsHell
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd0799f6ab4fa416585fd6d871c1c6cc8e9acd32
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2e62f62a4d61ba0167076c079bec74fab5127703
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981192"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984549"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Obter deviceEnrollmentWindowsHelloForBusinessConfiguration
 

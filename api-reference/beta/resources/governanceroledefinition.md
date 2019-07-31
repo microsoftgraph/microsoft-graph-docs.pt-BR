@@ -2,12 +2,15 @@
 title: tipo de recurso governanceRoleDefinition
 description: Representa as definições de função. Para os recursos do Azure, ele pode representar as funções do Azure RBAC, como proprietário, leitor, colaborador, etc.
 localization_priority: Normal
-ms.openlocfilehash: c760cc04b8dae39c06d0dbc2c4821401bd75a699
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 668f5430e8f098986b7d5398f32c9c35543a7e11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422504"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971848"
 ---
 # <a name="governanceroledefinition-resource-type"></a>tipo de recurso governanceRoleDefinition
 

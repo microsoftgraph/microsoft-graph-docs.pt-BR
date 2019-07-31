@@ -2,12 +2,15 @@
 title: tipo de recurso Entidadegovernanceresource
 description: Representa os recursos que podem ser gerenciados pelo gerenciamento de identidade privilegiado (PIM). Para recursos do Azure, pode ser uma assinatura, um grupo de recursos e um recurso como uma máquina virtual, um banco de dados SQL, etc.
 localization_priority: Normal
-ms.openlocfilehash: 7453397b0ea3edccd44a4eebdbbd89624bab2cc5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a0429de2cacc816eaf1a603a29a08897650da6e2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333698"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971918"
 ---
 # <a name="governanceresource-resource-type"></a>tipo de recurso Entidadegovernanceresource
 
@@ -31,7 +34,7 @@ Não `POST`, `PUT`, `PATCH`, `DELETE` há suporte no `roleDefinitions` conjunto 
 |:------------------|:----------|:----------|
 |id                 |String     |A ID do recurso. Está no formato GUID.|
 |externalId           |String   |A ID externa do recurso, que representa sua ID original no sistema externo. Por exemplo, a ID externa de um recurso de assinatura pode ser "/subscriptions/c14ae696-5e0c-4E5D-88cc-bef6637737ac". |
-|tipo               |String     |Obrigatório. Tipo de recurso. Por exemplo, para recursos do Azure, o tipo poderia ser "Subscription", "resourcer", "Microsoft. SQL/Server", etc.|
+|type               |String     |Obrigatório. Tipo de recurso. Por exemplo, para recursos do Azure, o tipo poderia ser "Subscription", "resourcer", "Microsoft. SQL/Server", etc.|
 |displayName        |String     |O nome de exibição do recurso.|
 |status             |String     |O status de um determinado recurso. Por exemplo, ele pode representar se o recurso está bloqueado ou não (valores: `Active` / `Locked`). Observação: essa propriedade pode ser estendida no futuro para dar suporte a mais cenários.|
 |registeredDateTime|DateTimeOffset      |Representa a data e hora em que o recurso é registrado no PIM.|

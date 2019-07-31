@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2890205db7cec6f20eef17c24da112517bf169a1
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+doc_type: resourcePageType
+ms.openlocfilehash: e630a64e7ece98d956a5f3821ec92413512fc7e4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805218"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966934"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>tipo de recurso mailboxUsageDetail
 

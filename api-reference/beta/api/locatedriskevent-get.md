@@ -2,12 +2,15 @@
 title: Obter locatedRiskEvent
 description: Recupere as propriedades e os relacionamentos de um objeto locatedriskevent.
 localization_priority: Normal
-ms.openlocfilehash: 9834bd3f4619e5fa55692e354701106778589be5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a90ecf29119a74e3d102e61ca1f2987683d5c54d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338707"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984087"
 ---
 # <a name="get-locatedriskevent"></a>Obter locatedRiskEvent
 

@@ -4,12 +4,13 @@ description: 'O namespace `/education` expõe funcionalidade específica ao seto
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 83879a2fe448e97f62dc592b42d1cbc1d3d5cf39
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 8084b1aae61ffb9e9982fbf8b5f4b8e430a85da1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334182"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972562"
 ---
 # <a name="educationroot-resource-type"></a>Tipo de recurso educationRoot
 

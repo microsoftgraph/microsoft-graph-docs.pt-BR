@@ -4,12 +4,13 @@ description: Representa um conjunto de configurações usadas para sincronizar e
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1926c591a679bd4fd97ceeeb7fab542af9e02544
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d5d79c50d29d4a89aa78b724f7cde747ea90706b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334041"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972352"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>tipo de recurso educationSynchronizationProfile
 
@@ -25,9 +26,9 @@ Representa um conjunto de configurações usadas para sincronizar entidades de e
 | [Obter perfil de sincronização](../api/educationsynchronizationprofile-get.md) | **educationSynchronizationProfile** | Recupere um perfil específico dado o identificador de perfil. |
 | [Criar perfil de sincronização](../api/educationsynchronizationprofile-post.md) | Nenhum | Criar um novo perfil de sincronização. |
 | [Excluir perfil de sincronização](../api/educationsynchronizationprofile-delete.md) | **educationSynchronizationProfile** | Excluir um perfil específico dado o identificador de perfil. |
-| [PaUsar uma sincronização contínua](../api/educationsynchronizationprofile-pause.md) | Nenhum | PaUsar uma sincronização em andamento. |
-| [ReTomar uma sincronização pausada](../api/educationsynchronizationprofile-resume.md) | Nenhum | ReTomar uma sincronização pausada. |
-| [Redefinir uma sincronização](../api/educationsynchronizationprofile-reset.md) | Nenhum | ReDefina o estado do perfil e reinicie a sincronização. |
+| [Pausar uma sincronização contínua](../api/educationsynchronizationprofile-pause.md) | Nenhum | Pausar uma sincronização em andamento. |
+| [Retomar uma sincronização pausada](../api/educationsynchronizationprofile-resume.md) | Nenhum | Retomar uma sincronização pausada. |
+| [Redefinir uma sincronização](../api/educationsynchronizationprofile-reset.md) | Nenhum | Redefina o estado do perfil e reinicie a sincronização. |
 | [Iniciar a sincronização de arquivos carregados](../api/educationsynchronizationprofile-start.md) | coleção [educationFileSynchronizationVerificationMessage](educationfilesynchronizationverificationmessage.md)| Verifique os arquivos de origem carregados e inicie a sincronização. Aplica-se somente quando o provedor de dados é [educationCsvDataProvider](educationcsvdataprovider.md). |
 | [Obter uma URL de upload](../api/educationsynchronizationprofile-uploadurl.md) | string | Retornar a URL de curta duração para carregar arquivos de dados CSV. Aplica-se somente quando o provedor de dados é [educationCsvDataProvider](educationcsvdataprovider.md). |
 | [Obter o status de uma sincronização](../api/educationsynchronizationprofilestatus-get.md) | [status](educationsynchronizationprofilestatus.md) | Retornar o status de um perfil de sincronização específico. |

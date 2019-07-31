@@ -2,12 +2,15 @@
 title: Política de atualização
 description: Atualize as propriedades em uma política preexistente.
 localization_priority: Normal
-ms.openlocfilehash: 53b7af8966c932598328e8b78e76022ca6db9c8a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 85104248d840478a9595382b54d3eaa7ea7e1e5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337381"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978858"
 ---
 # <a name="update-policy"></a>Política de atualização
 
@@ -42,7 +45,7 @@ No corpo da solicitação, forneça um objeto JSON com os parâmetros que precis
 |:---------------|:--------|:----------|
 |definir|String|A versão do em formato do objeto [Policy](../resources/policy.md) .|
 |displayName|String|Um nome personalizado para a política.|
-|isOrganizationDefault|Boolean|Especifica se essa política é aplicada por padrão.|
+|isOrganizationDefault|Booliano|Especifica se essa política é aplicada por padrão.|
 |type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Resposta

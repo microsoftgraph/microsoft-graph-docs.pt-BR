@@ -4,12 +4,13 @@ description: O recurso de Atribuição de Função. Atribuições de função un
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 868dd3fed4c745d97e96a5aee4c3dfa5cb16a157
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c72b6ee403a4a0b06cd1181da584dbb7b4729f8d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993540"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967599"
 ---
 # <a name="roleassignment-resource-type"></a>Tipo de recurso roleAssignment
 

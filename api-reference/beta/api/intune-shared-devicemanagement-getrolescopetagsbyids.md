@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4856b981937bbbf422d5cb8b9e30349ef492e4c1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: d2c5c800175e6896c6d98bf756eb0eecd8ea5d1c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898322"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993610"
 ---
 # <a name="getrolescopetagsbyids-function"></a>função Funçãogetrolescopetagsbyids
 

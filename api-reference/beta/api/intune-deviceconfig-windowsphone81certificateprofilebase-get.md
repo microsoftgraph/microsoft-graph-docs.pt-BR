@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windowsPhone81Certif
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62ab44b1da37eaa6498cff0f71b4551af3319ff7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 52ac04436b1bf6720b2501187ebb70adb0a3129d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961823"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984961"
 ---
 # <a name="get-windowsphone81certificateprofilebase"></a>Obter windowsPhone81CertificateProfileBase
 

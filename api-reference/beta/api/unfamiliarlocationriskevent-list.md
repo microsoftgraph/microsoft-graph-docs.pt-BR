@@ -2,12 +2,15 @@
 title: Listar unfamiliarLocationRiskEvents
 description: Recupere uma lista de objetos unfamiliarlocationriskevent.
 localization_priority: Normal
-ms.openlocfilehash: 672eda941298c4da8cee3e2e0a3ba034ee361234
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b12bc0520bfa285b654b615cfb74582683b04c49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335119"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987898"
 ---
 # <a name="list-unfamiliarlocationriskevents"></a>Listar unfamiliarLocationRiskEvents
 

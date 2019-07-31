@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windowsPhone81Truste
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6775764f61087f41f67b0cc639984713d32e2ed8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 30303fbd83576810091ae4d8945e20a25aeed292
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961550"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986537"
 ---
 # <a name="get-windowsphone81trustedrootcertificate"></a>Obter windowsPhone81TrustedRootCertificate
 
