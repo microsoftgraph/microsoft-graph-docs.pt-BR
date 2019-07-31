@@ -2,12 +2,15 @@
 title: tipo de recurso timeStamp
 description: Informações de data e hora para um ponto no tempo.
 localization_priority: Normal
-ms.openlocfilehash: 5f96ad5c557bda93ef74787d9d909fce112cfb15
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: cda000674241ee57347d6809d04d7acd9d59ff0b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341950"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964276"
 ---
 # <a name="timestamp-resource-type"></a>tipo de recurso timeStamp
 

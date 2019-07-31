@@ -4,12 +4,13 @@ description: Representa a borda de um objeto.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6b7bf53e74679a591c113f89c8744ff9c20a1211
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6457380b3027df8d99b97219ac2ae43e99e0620a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348498"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964015"
 ---
 # <a name="workbookrangeborder-resource-type"></a>tipo de recurso workbookRangeBorder
 

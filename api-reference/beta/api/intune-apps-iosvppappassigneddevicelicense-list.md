@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos iosVppAppAssignedDevic
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce6076f6a5040f23c02bb78fc17dcf93477fb178
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c394a01576acfb2309f0e05fcefc6c5abfff6a74
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975522"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962355"
 ---
 # <a name="list-iosvppappassigneddevicelicenses"></a>Listar iosVppAppAssignedDeviceLicenses
 

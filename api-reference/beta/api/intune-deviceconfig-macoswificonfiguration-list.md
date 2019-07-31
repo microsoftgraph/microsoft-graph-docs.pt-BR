@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos macOSWiFiConfiguration
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 088fd998c6fa7bad706081f8151514600c0746e3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ff4f73d8fd3ca9749b326513dec52464687b167e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976495"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946833"
 ---
 # <a name="list-macoswificonfigurations"></a>Listar macOSWiFiConfigurations
 
