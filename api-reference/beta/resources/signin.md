@@ -1,15 +1,16 @@
 ---
 title: tipo de recurso de domínio
+doc_type: resourcePageType
 description: Descreve o recurso signIn da API do Microsoft Graph (REST), que ajuda a auditar a atividade de login de usuário e de aplicativo (versão beta).
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 886631d83ad9f663597251eaecd49b7659fb6d68
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 6197600854833f7887556c35a511fad61b4539d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657627"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965058"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 

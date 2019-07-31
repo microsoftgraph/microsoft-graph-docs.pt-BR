@@ -4,12 +4,13 @@ description: Listar todos os envios associados a esta atribuição. Um professor
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 8e01bb3960b3a8d29b48f3365fc8f2f61f4bb627
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 236c5dc88a50ad537f2142cc3a8e8dc5084c2c5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324604"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955639"
 ---
 # <a name="list-submissions"></a>Envios de lista
 

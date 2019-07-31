@@ -4,12 +4,13 @@ description: Criar um novo objeto windowsPhone81AppXBundle.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c7ced679757c316485eb436808bee5f02c26fb1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3f2b18222dc4e53faa3713265933ef5f2a20ca00
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973065"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959982"
 ---
 # <a name="create-windowsphone81appxbundle"></a>Criar windowsPhone81AppXBundle
 

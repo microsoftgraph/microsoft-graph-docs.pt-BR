@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 4f51017ef57818961117078958b013a56597859d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 49f3e4abfa1fcfb3993a74069e04a24efaf33982
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458464"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956244"
 ---
 # <a name="get-items"></a>Obter itens
 Recupere as propriedades e os relacionamentos de um objeto de item para o Dynamics 365 Business central.
@@ -53,7 +54,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies('{id}')/items('{id}')
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

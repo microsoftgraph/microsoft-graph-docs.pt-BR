@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos iosImportedPFXCertific
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d2e3968946bdcd0dae6d7320a107d0137489f77e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7d1014c417235477218c532248e12c25a35fbaac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975795"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948114"
 ---
 # <a name="list-iosimportedpfxcertificateprofiles"></a>Listar iosImportedPFXCertificateProfiles
 

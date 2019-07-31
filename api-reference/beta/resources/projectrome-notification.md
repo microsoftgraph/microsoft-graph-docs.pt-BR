@@ -3,12 +3,14 @@ title: tipo de recurso de notificação
 description: 'Representa uma notificação publicada por um servidor de aplicativos que se destina a um usuário especificado. A notificação é armazenada no Microsoft Graph e é distribuída para diferentes pontos de extremidade do dispositivo de Propriedade do usuário. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 13839cdc946ecaf47e59d37e90fe4be144789a6d
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: f9d9a4ff77190e18b8c090cf9c976decb4edfc3d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036477"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965576"
 ---
 # <a name="notification-resource-type"></a>tipo de recurso de notificação
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

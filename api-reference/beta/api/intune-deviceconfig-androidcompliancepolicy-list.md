@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos androidCompliancePolic
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f11dea6e96668895a2cf3ddf6b9dca458276fd57
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7752b0e1445dda45efdfe664ed4734c257e97ec8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971602"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958260"
 ---
 # <a name="list-androidcompliancepolicies"></a>Listar androidCompliancePolicies
 

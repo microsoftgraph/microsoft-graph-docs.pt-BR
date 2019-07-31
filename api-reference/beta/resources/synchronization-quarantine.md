@@ -2,14 +2,15 @@
 title: tipo de recurso synchronizationQuarantine
 description: Fornece informações sobre o estado de quarentena de um synchronizationJob.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ca404ced0448534f6ed116f6376a8d26bcb24a90
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: d63082dbe4e8e952d41032a74467cd4c301a857b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620462"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964690"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>tipo de recurso synchronizationQuarantine
 

@@ -4,12 +4,13 @@ description: Criar um novo objeto termsAndConditionsGroupAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5225cacae7c901c24f3683717d67c110ff56571
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 291629dc53ee4b8cccebe0a52237e56638d8a0b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971882"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958498"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Criar termsAndConditionsGroupAssignment
 

@@ -4,12 +4,13 @@ description: Recupere os professores e alunos de uma aula. Se o token delegado f
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 15714450c00da11b3713fffe0414cd9f2d41ecc2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ea19ad2f93374d0707ef3f33c57fad97c1224d45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860602"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955408"
 ---
 # <a name="list-members"></a>Listar membros
 

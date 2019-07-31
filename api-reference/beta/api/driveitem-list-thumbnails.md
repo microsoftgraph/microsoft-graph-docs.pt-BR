@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Recupere uma coleção de recursos ThumbnailSet para um recurso DriveItem.
 ms.date: 09/10/2017
 title: Recuperar miniaturas de um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: df590677428184c0a3e3e888cd007399c019928a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: de4c9ce69083eecc1c6b9279ca6e648d9fde68ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861032"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957080"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 

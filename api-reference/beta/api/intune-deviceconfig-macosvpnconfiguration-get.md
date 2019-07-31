@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto macOSVpnConfiguratio
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7919d5b996a14c0fc1857d7c442b1b7eb3e7d38
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: daff3ad89beb11c7bf158b9b12a5915a3daf5eaa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976572"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946938"
 ---
 # <a name="get-macosvpnconfiguration"></a>Obter macOSVpnConfiguration
 

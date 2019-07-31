@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Recupere os metadados de um DriveItem em um Drive por ID ou caminho do sistema de arquivos.
 ms.date: 09/10/2017
 title: obter um arquivo ou uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 24e9ef4cf3a9c980ef982a88ffbe6abd7d08d289
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 11cc2c30b3591cf24602ba70e1d0b40a9275836b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861136"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957098"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 

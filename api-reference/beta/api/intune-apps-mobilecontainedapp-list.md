@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos mobileContainedApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8cba93087775a30669ed08495549555ab07d00c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4eb20785ec070337cdfcf709dc6eb4f19310a3e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973597"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960542"
 ---
 # <a name="list-mobilecontainedapps"></a>Listar mobileContainedApps
 

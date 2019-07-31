@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 14f7b2b36b687190817dc348e975ba1a23c99aae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c65e38849520c7f0c67cf2c3e642cd39fcda0594
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458408"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956041"
 ---
 # <a name="get-paymentterms"></a>Obter paymentTerms
 Recupere as propriedades e os relacionamentos de um objeto de condições de pagamento para o Dynamics 365 Business central.
@@ -54,7 +55,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies('{id}')/paymentTerms('{id}')
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

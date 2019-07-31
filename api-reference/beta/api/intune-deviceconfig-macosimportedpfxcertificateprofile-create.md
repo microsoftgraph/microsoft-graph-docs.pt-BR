@@ -4,12 +4,13 @@ description: Criar um novo objeto macOSImportedPFXCertificateProfile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7c6913603ebe194dfd1586facf113bc942e9905
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9e2d3d0ee6ce0b07b823ef59ae1ce3af8ea72182
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963174"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947176"
 ---
 # <a name="create-macosimportedpfxcertificateprofile"></a>Criar macOSImportedPFXCertificateProfile
 

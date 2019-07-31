@@ -2,14 +2,15 @@
 title: tipo de recurso objectmapping
 description: Define como um determinado objeto deve ser sincronizado do diretório de origem para o diretório de destino. Em particular, define como o objeto no diretório de origem deve corresponder a um objeto no diretório de destino, quais filtros de escopo (se houver) devem ser usados para decidir se queremos provisionar um determinado objeto e como os atributos do objeto devem ser transformados origem para o diretório de destino.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 667a58f299847188d193a5b50bb9883721d191e9
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 923567d8581f7c4497cbe45c125c529660b9d4b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620511"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964785"
 ---
 # <a name="objectmapping-resource-type"></a>tipo de recurso objectmapping
 

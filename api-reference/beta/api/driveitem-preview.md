@@ -3,12 +3,14 @@ title: 'driveItem: visualização'
 description: Esta ação permite que você obtenha URLs que podem ser inseridas de curta duração em um item para renderizar uma visualização temporária.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5e260e3dc360464b39daa5dde671a1bc11c9c6b6
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: dc2feef9e80a04753efb6b371bffccf514f46233
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236297"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956993"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 

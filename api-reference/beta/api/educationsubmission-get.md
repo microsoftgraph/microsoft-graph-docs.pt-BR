@@ -4,12 +4,13 @@ description: 'Recupere um determinado envio. Um objeto de envio representa o tra
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 97cdc45c8af271d0996ea5edabf145f239162210
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: d33fea58845fb9c9034d4fef100e3393bcdd4188
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955122"
 ---
 # <a name="get-educationsubmission"></a>Obter educationSubmission
 

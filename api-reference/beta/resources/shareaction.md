@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso ShareAction fornece informações sobre uma activity que compartilhou um item.
 ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal
-ms.openlocfilehash: 02098dd5bee739a078d8d9e3e744f7282ccb20bd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 10eb5b870a5ecd80f4a064d1dca496f216bf241d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343190"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965163"
 ---
 # <a name="shareaction-resource-type"></a>Tipo de recurso ShareAction
 

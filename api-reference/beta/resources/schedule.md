@@ -4,12 +4,13 @@ description: Uma coleção de schedulingGroups, Shifts, timeOffReasons e timesOf
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 48b3b5c118a39442469bc6155068664fcebe0ec2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: a404c620b20cfcb69076ecc3bac25f907a12216c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343518"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965324"
 ---
 # <a name="schedule-resource-type"></a>tipo de recurso Schedule
 
@@ -21,8 +22,8 @@ Uma coleção de objetos de grupo de [agendamento](schedulinggroup.md) , objetos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar ou substituir agendamento](../api/team-put-schedule.md) | [futebol](schedule.md) | Criar ou substituir um `schedule`.|
-|[Obter cronograma](../api/schedule-get.md) | [futebol](schedule.md) | Obter um `schedule`.|
+|[Criar ou substituir agendamento](../api/team-put-schedule.md) | [Cronograma](schedule.md) | Criar ou substituir um `schedule`.|
+|[Obter cronograma](../api/schedule-get.md) | [Cronograma](schedule.md) | Obter um `schedule`.|
 |[share](../api/schedule-share.md) | Nenhum | Compartilhar um `schedule` intervalo de tempo com membros de agendamento.|
 
 ## <a name="properties"></a>Propriedades

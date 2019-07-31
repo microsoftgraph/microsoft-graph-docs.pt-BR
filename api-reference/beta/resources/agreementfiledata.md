@@ -2,12 +2,15 @@
 title: tipo de recurso agreementFileData
 description: Representa o blob de um arquivo de contrato de uso do Azure Active Directory (Azure AD).
 localization_priority: Normal
-ms.openlocfilehash: c6f4b6708493c0063928a81c95eeb60b7e7603b0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: da4e600480e6ddd65112323b22f7a905b3ba29db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339136"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013420"
 ---
 # <a name="agreementfiledata-resource-type"></a>tipo de recurso agreementFileData
 

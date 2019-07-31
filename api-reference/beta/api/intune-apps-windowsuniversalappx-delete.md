@@ -4,12 +4,13 @@ description: Exclui windowsUniversalAppX.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e72734ff1b18ecd5137209bacd4fe2f96f7691f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9e2bdc79057b5e98e51b5107e2674875445066ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972771"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959681"
 ---
 # <a name="delete-windowsuniversalappx"></a>Excluir windowsUniversalAppX
 

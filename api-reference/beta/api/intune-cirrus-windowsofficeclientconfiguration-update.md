@@ -4,12 +4,13 @@ description: Corrigir uma carga de política específica de não segurança.
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 10d25d320e9d3f55c2ae4a44c5f8b816c2b09838
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: dd578b52a257d30a50b6cacec725cb027b738636
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933981"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958792"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>Atualizar windowsOfficeClientConfiguration
 
@@ -51,9 +52,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userPreferencePayload|Stream|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|policyPayload|Stream|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|description|String|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|Fluxo|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|Fluxo|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|descrição|String|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |displayName|String|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |prioridade|Int32|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Ainda não documentado herdado de [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

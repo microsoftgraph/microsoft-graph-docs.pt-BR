@@ -2,12 +2,15 @@
 title: tipo de recurso skypeForBusinessOrganizerActivityUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-ms.openlocfilehash: 39ab5844adb9525b4e0f100892927d200609040c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b6fcb2114e78bd9aabb170795b49d80bb58e6844
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534861"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964869"
 ---
 # <a name="skypeforbusinessorganizeractivityusercounts-resource-type"></a>tipo de recurso skypeForBusinessOrganizerActivityUserCounts
 

@@ -4,12 +4,13 @@ description: Recupere uma lista de objetos assignment. Um professor tem permiss√
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 58ce5e911806e6e4c6e19ce3e419bd9b02c1a990
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: apiPageType
+ms.openlocfilehash: a7b201dcafa69fa17650b0d4154ad558d0a78c96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750007"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955436"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 

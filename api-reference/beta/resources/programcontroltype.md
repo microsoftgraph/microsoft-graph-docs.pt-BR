@@ -2,12 +2,15 @@
 title: tipo de recurso programControlType
 description: 'No recurso de revisões do Azure AD Access, o tipo de controle do programa é usado ao associar um controle a um programa, para indicar o tipo de revisão do Access para o qual o controle é.  '
 localization_priority: Normal
-ms.openlocfilehash: 489fa6e5cac31165fec9f7ce9939d58fa84cb1ab
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c7b4360ffa22711c9af9961fbb9f48cee7d29424
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344035"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965625"
 ---
 # <a name="programcontroltype-resource-type"></a>tipo de recurso programControlType
 

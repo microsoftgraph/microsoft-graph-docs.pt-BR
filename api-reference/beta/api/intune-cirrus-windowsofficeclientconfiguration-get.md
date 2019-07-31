@@ -4,12 +4,13 @@ description: Obtenha um objeto windowsOfficeClientConfiguration de política de 
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 6cf1a2d9c5f322e49215d7e6fc513eb9e2035d11
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 0c9df4d2f9905979bc7add86b741545098635c1a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934002"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958820"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>Obter windowsOfficeClientConfiguration
 

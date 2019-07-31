@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto iosEduDeviceConfigur
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 345abf1a5e64692f6426954aa5d8f5d13a515053
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c6ae6c79ae1ea103c2b38e5429f2585f64d3bd66
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966814"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948331"
 ---
 # <a name="get-iosedudeviceconfiguration"></a>Obter iosEduDeviceConfiguration
 

@@ -4,12 +4,13 @@ description: Você pode obter detalhes sobre as atividades ponto a ponto em toda
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 263ebb855a122a413d7a06b20411afbb0cf7bc64
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 60f8e5c5878822eaae64d5f10d0ff52dd4bc004f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342846"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964982"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Relatórios de atividades ponto a ponto Skype for Business
 

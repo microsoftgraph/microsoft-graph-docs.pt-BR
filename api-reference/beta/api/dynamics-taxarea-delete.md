@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 631f043819d45ded32f4a79cf68e644221f2a4aa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5ddbc2cb4053456e76ee57ca06375f6a64ffa106
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458310"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955950"
 ---
 # <a name="delete-taxareas"></a>Excluir taxAreas
 Excluir um objeto de área de impostos do Dynamics 365 Business central.
@@ -57,7 +58,7 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas('{id}')
 ```
 
-**Response** 
+**Resposta** 
 
 Veja a seguir um exemplo da resposta. 
 

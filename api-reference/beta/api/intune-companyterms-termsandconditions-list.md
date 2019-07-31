@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos termsAndConditions.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 221575635da8485f37af775f41b506f7c87d8972
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ab595ab7fff2f496ba93dd30fbade313558d53af
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971987"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958636"
 ---
 # <a name="list-termsandconditionses"></a>Listar termsAndConditionses
 

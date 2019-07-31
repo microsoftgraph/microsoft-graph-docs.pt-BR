@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 00773b0147c291c9352f3a38fd81c56a53a64bf0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 89db4f4b3a1178c3de56c34340d00edbf8efb6e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458639"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955852"
 ---
 # <a name="get-unitsofmeasure"></a>Obter unitsOfMeasure
 Recupere as propriedades e os relacionamentos de um objeto de unidades de medida para o Dynamics 365 Business central.
@@ -54,7 +55,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies('{id}')/unitsOfMeasure('{id}')
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

@@ -4,12 +4,13 @@ description: Recupere um objeto Category.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 061590564df2ac52b498ea2993227f878e1d1128
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: apiPageType
+ms.openlocfilehash: b25b41168cc08986c5cc21ab2e5932e5c037993d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750091"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955520"
 ---
 # <a name="get-educationcategory"></a>Obter educationCategory
 

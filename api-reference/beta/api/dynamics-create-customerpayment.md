@@ -5,12 +5,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 99bdd4a227be12269eb4ac3937937686089f325c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 621fe92d598894589cf39cb0371830792560ae6b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454055"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956706"
 ---
 # <a name="create-customerpayments"></a>Criar customerPayments
 Cria um objeto Customer Payment no Dynamics 365 Business central.
@@ -69,7 +70,7 @@ Content-type: application/json
   "comment": "",
 }
 ```
-**Response**
+**Resposta**
 
 ```json
 HTTP/1.1 201 Created

@@ -4,12 +4,13 @@ description: 'Atualiza as propriedades do recurso associado a uma atribuição. 
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d3ce0db2353d91f17f059fe8a2dfd9d6c775e1e2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: aa9c2738b894457234cb82daee1364605fd64ba9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324643"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955548"
 ---
 # <a name="update-educationassignmentresource"></a>Atualizar educationAssignmentResource
 
@@ -42,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean| Indica se este recurso deve ser copiado para o objeto de recurso de cada aluno quando a atribuição é publicada.|
+|distributeForStudentWork|Booliano| Indica se este recurso deve ser copiado para o objeto de recurso de cada aluno quando a atribuição é publicada.|
 |recurso|educationResource| Objeto Resource. |
 
 ## <a name="response"></a>Resposta
