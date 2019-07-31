@@ -4,12 +4,13 @@ description: Esta entidade fornece descrições dos métodos declarados, das pro
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2c8d8ac1249660a345f831bff8c97b6657d7ba3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a02a28fa2f57a446d382cf590b950c1c1758d3e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968615"
 ---
 # <a name="windowswifienterpriseeapconfiguration-resource-type"></a>tipo de recurso windowsWifiEnterpriseEAPConfiguration
 

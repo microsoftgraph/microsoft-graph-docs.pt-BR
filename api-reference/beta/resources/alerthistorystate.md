@@ -4,12 +4,13 @@ description: Armazena as alterações feitas nos alertas.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 1a7975d870389be5163a8f230f6a6cc4cd1425c3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9467da6f5b088e9b1fadd3797a8b10f4b6e820db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974420"
 ---
 # <a name="alerthistorystate-resource-type"></a>tipo de recurso alertHistoryState
 

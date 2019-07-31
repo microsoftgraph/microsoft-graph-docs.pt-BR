@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso do Microsoft Analytics oferece análise sobre as atividades que ocorreram em um item. No momento, esse recurso só está disponível no SharePoint e no OneDrive for Business.
 ms.date: 09/14/2017
 title: O naanalytics
 localization_priority: Normal
-ms.openlocfilehash: 862b0b14f1efeb3a83dd4b842c0eb995abeabb80
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d2be5c7665961248e989101a1a9bd21eb805e6e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620259"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967090"
 ---
 # <a name="itemanalytics-resource-type"></a>tipo de recurso do multianalytics
 

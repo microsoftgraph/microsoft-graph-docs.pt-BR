@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e5677aecb8b3290c17d1ed50d9f4f3d152239c8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9a937f0e5adbcdf444ae5b7d96b9dc293695631d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985301"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968124"
 ---
 # <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>tipo de recurso groupPolicyPresentationDropdownListItem
 

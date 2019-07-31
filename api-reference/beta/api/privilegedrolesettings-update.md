@@ -2,12 +2,15 @@
 title: Atualizar privilegedRoleSettings
 description: Atualize as configurações de função para a configuração de função determinada. Um objeto privilegedRoleSettings será retornado.
 localization_priority: Normal
-ms.openlocfilehash: 7142cd14bd81537d33fa2764b9801ade5247181f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b097b0831ed33e826ae62a413a1b3d9f2227b45e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875480"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978655"
 ---
 # <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
 

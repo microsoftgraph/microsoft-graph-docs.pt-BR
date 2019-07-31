@@ -4,12 +4,13 @@ description: Representa uma operação de política de dados enviada. Ele conté
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 07c708ac2d46e23cc4bdcea233587c910d30fc3e
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 4e0d8916cb13c91a52d7df66fe907d611e78d908
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657711"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973164"
 ---
 # <a name="datapolicyoperation-resource-type"></a>tipo de recurso dataPolicyOperation
 

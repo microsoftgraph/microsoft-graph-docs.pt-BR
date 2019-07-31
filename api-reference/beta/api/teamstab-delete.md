@@ -4,12 +4,13 @@ description: 'Remove (desafixa) uma guia do canal especificado de uma equipe. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8f2c6ff92d01e116a33d9fbacf1c9ff4037ada6f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 25214388b270ade11a2e4e78ef102f2efa043aaa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330597"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977458"
 ---
 # <a name="delete-tab-from-channel"></a>Excluir Guia do canal
 

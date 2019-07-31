@@ -4,12 +4,13 @@ description: Informações adicionais incluídas a um educationUser que está pr
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 092d8fb9d7c358114159428d676ab1a21ea9d091
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2a94eb2c6a1d145c51fef8c35b3b2f9083cf598a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333880"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972318"
 ---
 # <a name="educationteacher-resource-type"></a>Tipo de recurso educationTeacher
 

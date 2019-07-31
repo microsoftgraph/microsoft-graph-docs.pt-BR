@@ -4,12 +4,13 @@ description: Contém propriedades, propriedades herdadas e ações para configur
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b26fea41bc75d8d57ac4f8b5a9bc8bf3d85cd661
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 73d330ec85747a08187cfd79416bc171f83530aa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991391"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971673"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>tipo de recurso androidForWorkMobileAppConfiguration
 

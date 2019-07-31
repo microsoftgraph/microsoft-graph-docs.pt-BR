@@ -4,12 +4,13 @@ description: Criar um novo objeto deviceManagementScriptGroupAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e3079da0aadd24ef0b36d3e5a02c9c979380c37
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 36cff919a633cce4057306017285565b608f5a97
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958883"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981602"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Criar deviceManagementScriptGroupAssignment
 

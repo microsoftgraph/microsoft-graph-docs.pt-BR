@@ -4,12 +4,13 @@ description: Agenda de execução diária de um script de gerenciamento de dispo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85fb83f92e7be874708190aec81e7130f65d3424
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: aaa1647ebb59271442d1917d7ac73807d7e9cb3d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983180"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968530"
 ---
 # <a name="dailyschedule-resource-type"></a>tipo de recurso dailySchedule
 

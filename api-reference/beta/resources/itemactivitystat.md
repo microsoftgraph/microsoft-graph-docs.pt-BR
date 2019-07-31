@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso Entidadeitemactivitystat fornece informações sobre as atividades que aconteceram dentro de um intervalo de tempo.
 ms.date: 09/14/2017
 title: Entidadeitemactivitystat
 localization_priority: Normal
-ms.openlocfilehash: 08bbfd414a32e8eb8a0144d879ede55c71c19b89
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 61c410d807869615ed35365743d1ae87b5b6e890
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967088"
 ---
 # <a name="itemactivitystat-resource-type"></a>tipo de recurso Entidadeitemactivitystat
 
@@ -46,7 +48,7 @@ O recurso **entidadeitemactivitystat** fornece informações sobre as atividades
 | Propriedade         | Tipo                    | Descrição
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | Indica que as estatísticas neste intervalo são baseadas em dados incompletos. Somente leitura.
-| isTendência       | Boolean                 | Indica se o item é "Trending". Somente leitura.
+| istendência       | Booliano                 | Indica se o item é "Trending". Somente leitura.
 | startDateTime    | DateTimeOffset          | Quando o intervalo é iniciado. Somente leitura.
 | endDateTime      | DateTimeOffset          | Quando o intervalo termina. Somente leitura.
 | create           | [itemActionStat][]      | Estatísticas sobre as ações de **criação** neste intervalo. Somente leitura.

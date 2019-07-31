@@ -4,12 +4,13 @@ description: Resultado da última verificação do Windows Defender
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f28e33c5edae2efe22368cd827d7e41fa2c51a51
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3077d667c5661fd153b8cd165d926671663f07ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994283"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968185"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>Tipo de recurso windowsDefenderScanActionResult
 

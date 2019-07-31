@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto appLogCollectionRequest.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd916909727f24f6e767d9f197dd75eb0e1e9b05
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 403e34e3faa98ecc1018360c9b1b486b24c5017e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959268"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981763"
 ---
 # <a name="update-applogcollectionrequest"></a>Atualizar appLogCollectionRequest
 

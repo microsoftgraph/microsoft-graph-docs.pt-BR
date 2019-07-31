@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: bbc51e4859b005c01b0f8d2cfb2db3ca902d60e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0d0ebd451252766801239e63804b59b9a1747764
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581454"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966542"
 ---
 # <a name="office365activeusercounts-resource-type"></a>tipo de recurso office365ActiveUserCounts
 

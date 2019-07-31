@@ -1,15 +1,18 @@
 ---
-title: tipo de recurso fileHash
+title: tipo de recurso FileHash
 description: Contém informações com monitoração de hash de arquivo (criptografia e confidencialidade de local).
 localization_priority: Normal
-ms.openlocfilehash: f5d865a7ded230ca611b8628c3648ec1e331c67d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 532389671cacb907c7e85862a621b936ec1691a0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547603"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973531"
 ---
-# <a name="filehash-resource-type"></a>tipo de recurso fileHash
+# <a name="filehash-resource-type"></a>tipo de recurso FileHash
 
 Contém informações com monitoração de hash de arquivo (criptografia e confidencialidade de local).
 

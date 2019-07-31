@@ -2,12 +2,15 @@
 title: Atualizar profilephoto
 description: Atualize a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. Desde lá
 localization_priority: Normal
-ms.openlocfilehash: 8a3c6d2ce042fa068fb0e0d99798fd8fa2be1d07
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c36e5d21d3082404e6622332adc400896b46ff26
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621337"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978648"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 

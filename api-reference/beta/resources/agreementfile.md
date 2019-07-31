@@ -2,12 +2,15 @@
 title: tipo de recurso contratofile
 description: Representa um arquivo de contrato de uso personalizável que um locatário gerencia com o Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
 localization_priority: Normal
-ms.openlocfilehash: b914feecfc91d71c525711f725bf4a533d44a6b1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a6651eafb57d75d6edb6342bd3f382008336332c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328598"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974512"
 ---
 # <a name="agreementfile-resource-type"></a>tipo de recurso contratofile
 

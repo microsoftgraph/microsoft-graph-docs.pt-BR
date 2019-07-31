@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: a8b01124db732866e1a7b971af57d7e0a2b692e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0791fe2b8c36bdff535f7fc56dea54abe1632647
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507249"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973629"
 ---
 # <a name="customerpaymentsjournals-resource-type"></a>tipo de recurso customerPaymentsJournals
 Representa um diário de pagamento do cliente no Dynamics 365 Business central.
@@ -23,13 +24,13 @@ Representa um diário de pagamento do cliente no Dynamics 365 Business central.
 |[Obter customerPaymentJournals](../api/dynamics-customerpaymentsjournal-get.md)      |customerPaymentJournals|Obtém um diário de pagamentos do cliente.   |
 |[Postar customerPaymentJournals](../api/dynamics-create-customerpaymentsjournal.md)  |customerPaymentJournals|Cria um diário de pagamentos do cliente.|
 |[Patch customerPaymentJournals](../api/dynamics-customerpaymentsjournal-update.md) |customerPaymentJournals|Atualiza um diário de pagamento do cliente.|
-|[Excluir customerPaymentJournals](../api/dynamics-customerpaymentsjournal-delete.md)|Nenhuma                     |Exclui um diário de pagamento do cliente.|
+|[Excluir customerPaymentJournals](../api/dynamics-customerpaymentsjournal-delete.md)|none                     |Exclui um diário de pagamento do cliente.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo                  |Descrição                                                             |
 |:-------------------|:----------------------|:-----------------------------------------------------------------------|
 |id                  |GUID                   |A ID exclusiva do diário de pagamento do cliente. Não editável.           |
-|code                |Cadeia de caracteres, tamanho máximo 10| O código do diário de pagamento do cliente.                             |
+|código                |Cadeia de caracteres, tamanho máximo 10| O código do diário de pagamento do cliente.                             |
 |displayName         |Cadeia de caracteres, tamanho máximo 50| O nome de exibição do diário de pagamentos do cliente.                     |
 |lastModifiedDateTime|DateTime               |O último DateTime que o diário de pagamentos do cliente foi modificado. Somente leitura.|
 

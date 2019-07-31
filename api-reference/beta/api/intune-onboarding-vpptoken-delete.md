@@ -4,12 +4,13 @@ description: Exclui um vppToken.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09ebb3ce1d5ac24119d20ef001525f8e98d386ab
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d38f53f343dc3db6e4f81df2fab0484b2a38ea11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980618"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980230"
 ---
 # <a name="delete-vpptoken"></a>Excluir vppToken
 

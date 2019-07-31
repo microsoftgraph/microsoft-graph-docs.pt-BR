@@ -2,12 +2,15 @@
 title: tipo de recurso importStatusModel
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-ms.openlocfilehash: fc1b0271d941b2e91d5b7ecbede9222de34a715e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 917f83f005ba682d54722d51feea3f7ff872b0f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340046"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973479"
 ---
 # <a name="importstatusmodel-resource-type"></a>tipo de recurso importStatusModel
 

@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso ItemActivity fornece informações sobre atividades que ocorreram em um item ou dentro de um repositório.
 ms.date: 09/14/2017
 title: ItemActivity
 localization_priority: Normal
-ms.openlocfilehash: bcb68f94574512fd7e952db036a86f242652851d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: ab96c3169a2d2dc37e6b94ab325866e93fa4d6c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339847"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967089"
 ---
 # <a name="itemactivity-resource-type"></a>Tipo de recurso ItemActivity
 

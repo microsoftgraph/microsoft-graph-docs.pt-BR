@@ -2,12 +2,15 @@
 title: tipo de recurso governanceRoleAssignment
 description: Representa a atribuição de um usuário ou grupo a uma função.
 localization_priority: Normal
-ms.openlocfilehash: 3b70d356886a14b17fda7ed37292797ba99d51e9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 518fbe18fcd09b1b4cc9730c6b7f0112adabfeae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340230"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971876"
 ---
 # <a name="governanceroleassignment-resource-type"></a>tipo de recurso governanceRoleAssignment
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

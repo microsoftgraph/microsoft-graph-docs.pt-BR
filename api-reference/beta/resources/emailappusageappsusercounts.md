@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 220770fab755c0e345af23f3fc3113732af63ff0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0ca694c5d416dcc062984ba03a3521a39a010a87
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542808"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972177"
 ---
 # <a name="emailappusageappsusercounts-resource-type"></a>tipo de recurso emailAppUsageAppsUserCounts
 

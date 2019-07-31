@@ -4,12 +4,13 @@ description: Recupere uma lista de objetos Section.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 8f66edb9842f04969a772eb735cabd69066f4d4d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: de8bde11e29f1f619c87c4e5f093f3941e834de1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878790"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992679"
 ---
 # <a name="list-sections"></a>Listar seções
 

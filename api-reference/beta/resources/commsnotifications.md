@@ -4,12 +4,13 @@ description: Lista de notificações usadas pelos servidores de comunicação pa
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4497e2e1ba28e7f2d0b203f8f982053c5eb8ae1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 770122387b89e96fdd8dbd9077488a9956fd90f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341434"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973248"
 ---
 # <a name="commsnotifications-resource-type"></a>tipo de recurso commsNotifications
 

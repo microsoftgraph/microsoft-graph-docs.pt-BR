@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windows10EasEmailPro
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 405dd272a2e2848d11f384ef1966f65483638629
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d3fec42098fce3b18ae2a97cdd1a759c500e6d7e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962733"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975526"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>Obter windows10EasEmailProfileConfiguration
 

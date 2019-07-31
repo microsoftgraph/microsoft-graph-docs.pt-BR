@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos appleVppTokenTroublesh
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ce89809fbab8439707cf8be2d6f6e226e07133e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d035fcd8b71298b926d133118b37ea4e05675165
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990901"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979446"
 ---
 # <a name="list-applevpptokentroubleshootingevents"></a>Listar appleVppTokenTroubleshootingEvents
 

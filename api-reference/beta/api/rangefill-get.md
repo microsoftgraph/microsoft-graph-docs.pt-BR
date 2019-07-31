@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos do objeto rangefill.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 310cd195e74cf1dd264384232a7f3d73b545347c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e2c65adcc821bfeb503116636edb9e36a8f405b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874557"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978363"
 ---
 # <a name="get-rangefill"></a>Obter RangeFill
 

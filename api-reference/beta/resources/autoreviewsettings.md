@@ -2,12 +2,15 @@
 title: tipo de recurso autoReviewSettings
 description: ''
 localization_priority: Normal
-ms.openlocfilehash: 9c7f55761c0aeaae479c4377c5642e0c7b50db27
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 5dbd6212d1b568871d5a61750da822353f0a816f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348328"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974249"
 ---
 # <a name="autoreviewsettings-resource-type"></a>tipo de recurso autoReviewSettings
 

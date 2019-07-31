@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: Criar um novo sitePage na lista de páginas do site em um site.
 ms.date: 05/07/2018
 title: Criar uma nova página em um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 93376d4b724bfea59c44456eb61bc22f9837444b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: bb54af97b1a2527893c5090e52e5bb7aa8381c94
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330133"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977864"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Criar uma página na lista de páginas do site de um site
 
@@ -184,7 +185,7 @@ Content-type: application/json
 
 **Observação:** O objeto Response será truncado para mais clareza. As propriedades padrão serão retornadas da chamada real.
 
-[lista]: ../resources/list.md
+[list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md

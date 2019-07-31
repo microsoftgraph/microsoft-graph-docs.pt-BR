@@ -4,12 +4,13 @@ description: Obtém o número de atividades do Microsoft Teams por tipo de ativi
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 9419d718da821a012b74db8ed37529ca843bb5c4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 39e352bea1c97a4c8ccd332566e48c6374981fe4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871713"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983094"
 ---
 # <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
 

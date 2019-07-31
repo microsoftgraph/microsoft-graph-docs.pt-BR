@@ -4,12 +4,13 @@ description: Exclui as células associadas ao intervalo.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2c9288e882aa1b2e329a05599356088152722dcd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 389c06796f420b4bf844cc61a0bdfa22d5eced90
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874951"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978515"
 ---
 # <a name="range-delete"></a>Range: delete
 

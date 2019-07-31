@@ -2,12 +2,15 @@
 title: Listar os memberOf transitivos de servicePrincipalName
 description: Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro. Essa operação é transitiva e inclui todos os grupos dos quais essa entidade de serviço é um membro aninhado.
 localization_priority: Normal
-ms.openlocfilehash: 440c55cd30ef87bb3589ba6336f799297597a925
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f4560b030debfdd9325733cc99210c4e9c436128
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977920"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Listar os memberOf transitivos de servicePrincipalName
 

@@ -4,12 +4,13 @@ description: 'Uma mensagem que representa uma solicitação, cancelamento ou res
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d4fa746df2c2dcde7785d768c0bd9268c19c113f
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+doc_type: resourcePageType
+ms.openlocfilehash: d22287c8c2605a623829adc94e8d05db1e1ec020
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108977"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973608"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 

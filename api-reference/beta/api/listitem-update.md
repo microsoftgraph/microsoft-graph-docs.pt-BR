@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Atualizar as propriedades de um listItem.
 ms.date: 09/11/2017
 title: Atualizar um registro em uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b8c0b3db13b956776357f99bad4c8aa7ac338a77
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9090d2bb3285e5b511b46855b937506b5c868be1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880177"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993029"
 ---
 # <a name="update-an-item-in-a-list"></a>Atualizar um item em uma lista
 

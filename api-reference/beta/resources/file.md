@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso File agrupa itens de dados relacionados a arquivos em uma única estrutura.
 ms.date: 09/10/2017
 title: Arquivo
 localization_priority: Normal
-ms.openlocfilehash: eac17370a9d54d074014d00d6ac53913e6adabd3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 3c7cc99fdd8d8405f3738f1259adbb2fba5fa0df
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333946"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973559"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 

@@ -2,12 +2,15 @@
 title: tipo de recurso genericError
 description: Um erro de uso geral.
 localization_priority: Normal
-ms.openlocfilehash: 314bb5f5e94e44c326fceb71f4a79463989f2129
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 701a3b7ed0d7bad6e33f8ba41e77ec7340a57146
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333660"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973521"
 ---
 # <a name="genericerror-resource-type"></a>tipo de recurso genericError
 

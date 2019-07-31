@@ -4,12 +4,13 @@ description: Rótulos de classificação de conteúdo de TV na Alemanha
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c881f729a9b0af57c53515af88afe311fe8a877
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: e91caae5c7da83981b96e84bb432aaf4ed34a452
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984636"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969804"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>tipo de enumeração ratingGermanyTelevisionType
 

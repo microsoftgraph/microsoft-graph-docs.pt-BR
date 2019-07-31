@@ -3,13 +3,14 @@ title: Listar riskyUsers
 description: Recupere as propriedades e os relacionamentos de uma coleção de objetos **riskyUser** .
 localization_priority: Normal
 author: cloudhandler
+doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 05418eab17447dbbaa845d964c038b5290543a1a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 287f96d37f5cd62ab763063fb8b3894831ae921e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870965"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978071"
 ---
 # <a name="list-riskyusers"></a>Listar riskyUsers
 

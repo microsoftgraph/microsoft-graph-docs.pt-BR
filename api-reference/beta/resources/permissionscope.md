@@ -2,12 +2,15 @@
 title: tipo de recurso permissionScope
 description: Representa um escopo de permissão delegada do OAuth 2,0. Os escopos de permissão delegada do OAuth 2,0 especificado podem ser solicitados por aplicativos cliente (por meio da coleção **requiredResourceAccess** no objeto Application) ao chamar um aplicativo de recurso. A propriedade **oauth2Permissions** da entidade servicePrincipalName e da entidade Application é uma coleção de **OAuth2Permission**.
 localization_priority: Normal
-ms.openlocfilehash: 6f45d2eb0645991eb55db8ef3338e3b6fcf300a7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 59770460b8fbc3c0a8946eeed94adfbe027f20cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344950"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966161"
 ---
 # <a name="permissionscope-resource-type"></a>tipo de recurso permissionScope
 

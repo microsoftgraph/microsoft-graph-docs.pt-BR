@@ -2,14 +2,15 @@
 title: Excluir synchronizationSchema
 description: Exclui o esquema personalizado e redefine o esquema para a configuração padrão. Se o esquema for excluído no contexto do modelo, ele redefinirá o esquema como o padrão associado ao modelo do `factoryTag`.
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a4b3410f89e301205eee900fd1164b5c4445b103
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 471a583851aa8e4548d2f9c66672ce54227e5d97
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621029"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977654"
 ---
 # <a name="delete-synchronizationschema"></a>Excluir synchronizationSchema
 

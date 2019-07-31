@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 89ac23b89730ec98515d6d0d3c06867e57b19ed1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8154f24fe36f2c11f3926412c3fcc062be04b5ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457071"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966521"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>tipo de recurso office365GroupsActivityFileCounts
 

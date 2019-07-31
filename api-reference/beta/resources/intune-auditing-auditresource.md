@@ -4,12 +4,13 @@ description: Uma classe que contém as propriedades para o Recurso de auditoria.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acc30182efc11822043b48e495c462a57c3863f3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c02af676c8e7a071aeb7dd53028fcd9091c1d211
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991699"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971617"
 ---
 # <a name="auditresource-resource-type"></a>Tipo de recurso auditResource
 

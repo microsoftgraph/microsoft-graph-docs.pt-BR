@@ -4,12 +4,13 @@ description: Uma subclasse de educationResource. Este recurso é um formulário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3f2747d94c80732091db06294b26546afc567e03
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d2e10ea6db0236b7deff3581c2e1b4f97c589045
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334251"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972709"
 ---
 # <a name="educationformresource-resource-type"></a>tipo de recurso educationFormResource
 
@@ -23,7 +24,7 @@ Uma subclasse de [educationResource](educationresource.md). Este recurso é um f
 |:---------------|:--------|:----------|
 |originalFormId|String|ID original do formulário.|
 |formId|String|ID do formulário.|
-|isGroupForm|Boolean|Se o formulário pertence a um grupo de classe.|
+|isGroupForm|Booliano|Se o formulário pertence a um grupo de classe.|
 |viewUrl|String|URL do aluno para o formulário.|
 |viewUrl|String|URL do aluno para o formulário.|
 |editUrl|String|URL do professor para o formulário.|

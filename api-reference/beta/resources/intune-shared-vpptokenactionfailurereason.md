@@ -4,12 +4,13 @@ description: Possíveis tipos de motivos para uma falha na ação de token do Ap
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0f8aacb6fc6f95b8c8085a78ed2851b16622357
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 697dd182aa21d98418cfee056da8cc18b1aa0aee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990985"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967302"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>tipo de enumeração vppTokenActionFailureReason
 

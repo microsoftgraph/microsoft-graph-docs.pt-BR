@@ -4,12 +4,13 @@ description: Valores possíveis para avisar o usuário para envio de amostras.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d7aec62e0ee5f0e7375e64023dbcf064170e23a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: fa3fb4f98f20b705c5905eb5fc0f07833815e228
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979827"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970917"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>tipo de enumeração defenderPromptForSampleSubmission
 

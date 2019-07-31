@@ -4,12 +4,13 @@ description: Define os tipos de ação para um aplicativo do Intune.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f2959137eceb8da591f3376b43ad33c10149aa2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: 6f4984ad23c5e38def96f35897055ff934ef85a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35740104"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967207"
 ---
 # <a name="mobileappactiontype-enum-type"></a>tipo de enumeração ao
 

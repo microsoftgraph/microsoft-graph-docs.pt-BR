@@ -4,12 +4,13 @@ description: Motivo do estado de acesso ao Exchange do dispositivo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 10482c09f7aa7dcf22b6091e55e74f4bd53b0c60
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: d6761af448b51c9c434472c4ad43978d34b1b1b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983019"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968455"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessStateReason
 

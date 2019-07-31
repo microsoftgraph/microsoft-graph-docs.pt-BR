@@ -4,12 +4,13 @@ description: Representa uma referência a um objeto Directory em um locatário d
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 327528f41795360e0da109b513f3f3f08ac0b268
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 54a6d742e31dba6861bed55d26179e1936fa8c5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973815"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso directoryObjectPartnerReference
 

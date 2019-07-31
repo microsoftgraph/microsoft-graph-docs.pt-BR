@@ -2,12 +2,15 @@
 title: Criar programa
 description: No recurso de revisões do Azure AD Access, crie um novo objeto de programa.
 localization_priority: Normal
-ms.openlocfilehash: 239eef0fe2b2026b9329b84e0c38641dda788707
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 0a446fd04bd79763120cbaa01134f5cbabbcbf52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875452"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978606"
 ---
 # <a name="create-program"></a>Criar programa
 

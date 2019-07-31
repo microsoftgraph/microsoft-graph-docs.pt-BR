@@ -4,12 +4,13 @@ description: 'Publicar um aplicativo no catálogo de aplicativos do Microsoft Te
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3560faff90e02da77e7a3a5a55dba4ce1ecf87d9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: c50b183819d7f56c6d5317a6e30840b674be750a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335294"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990782"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Publicar aplicativos no catálogo de aplicativos da sua organização
 

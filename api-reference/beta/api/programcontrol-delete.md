@@ -2,12 +2,15 @@
 title: Excluir programControl
 description: No recurso de revisões do Azure AD Access, exclua um objeto programControl.  Isso desvincula uma revisão do Access de um programa.
 localization_priority: Normal
-ms.openlocfilehash: 59c533e2cacfd612b46b7e1afafdf12be7553b58
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 36304cc486939b24b1e52470d27fc11daa357a3a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875326"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978550"
 ---
 # <a name="delete-programcontrol"></a>Excluir programControl
 

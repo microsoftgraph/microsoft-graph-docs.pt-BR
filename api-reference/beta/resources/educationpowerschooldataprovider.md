@@ -4,12 +4,13 @@ description: Usado para configurar o perfil de sincronização de dados da escol
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: cee763995dd5a75b64d94e5f170d6fea992c20b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6a036435cb7cc1a4ef70960b09feb600fe7f39f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340561"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972590"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>recurso educationPowerSchoolDataProvider
 
@@ -26,9 +27,9 @@ Derivado de [educationSynchronizationDataProvider](educationsynchronizationdatap
 | **connectionUrl** | String | A URL de conexão para a instância do PowerSchool. |
 | **clientId** | String |  A ID do cliente usada para se conectar ao PowerSchool. |
 | **clientSecret** | String |  O segredo do cliente para autenticar a conexão com a instância do PowerSchool. |
-| **schoolsIds** | Coleção String |  A lista de escolas a ser sincronizada. |
+| **schoolsIds** | Coleção de cadeias de caracteres |  A lista de escolas a ser sincronizada. |
 | **schoolYear** | String |  O ano escolar a ser sincronizado. |
-| **allowTeachersInMultipleSchools** | Boolean |  Indica se a fonte tem vários identificadores para um único aluno ou professor. |
+| **allowTeachersInMultipleSchools** | Booliano |  Indica se a fonte tem vários identificadores para um único aluno ou professor. |
 | **personalizações** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Personalização opcional a ser aplicada ao perfil de sincronização.|
 
 ## <a name="json-representation"></a>Representação JSON

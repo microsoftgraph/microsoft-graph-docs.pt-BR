@@ -4,12 +4,13 @@ description: Crie uma nova seção no grupo de seção especificado.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 0ae7b227b6cce74c438e58ac26335964fb927949
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 716baf3d846ccdd74dd2b8916e9d012d07378106
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982813"
 ---
 # <a name="create-section"></a>Criar seção
 

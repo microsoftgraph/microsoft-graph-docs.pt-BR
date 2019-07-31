@@ -4,12 +4,13 @@ description: Representa o nome e o endereço SMTP de uma instância de entidade,
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e8b49e0ff502f6e36e6ca3291d675c839e9ff5e2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4f0b36d84ffba5c5a8e39bd7603f92c815cda008
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340298"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972212"
 ---
 # <a name="emailaddress-resource-type"></a>Tipo de recurso emailAddress
 

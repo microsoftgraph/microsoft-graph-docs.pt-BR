@@ -4,12 +4,13 @@ description: A classe usada para identificar uma conta local para a configura√ß√
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: daa1899e5cbb4215053dd84fc09b5c3b5b4730fc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d3f46b47de9d3ce09c6a7d33a4b663cb64f506cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995410"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969006"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>tipo de recurso windowsKioskLocalUser
 

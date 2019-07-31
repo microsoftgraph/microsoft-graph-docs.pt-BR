@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windows10PFXImportCe
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04e7dbd0eec903459b921cdd477d8b673b607771
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bd0d3badad0276a63b4cfe9b4ce3a7a2b0e861d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962467"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977227"
 ---
 # <a name="get-windows10pfximportcertificateprofile"></a>Obter windows10PFXImportCertificateProfile
 

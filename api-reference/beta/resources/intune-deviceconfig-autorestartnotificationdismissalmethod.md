@@ -4,12 +4,13 @@ description: Reinício automático método de descarte de notificação necessá
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1418b97fd2892ceb07a68a8156384fffc63ab41d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 8488c5849466c92860c194c0d24540919dd5d810
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981563"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971099"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>tipo de enumeração autoRestartNotificationDismissalMethod
 

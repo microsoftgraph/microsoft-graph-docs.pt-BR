@@ -4,12 +4,13 @@ description: Exclui detectedApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d896e77e6eb58d72c53c166241324d23885d586
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 241ee291f038cfccc85b42aa2d1a5fe932a1a494
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959163"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981679"
 ---
 # <a name="delete-detectedapp"></a>Excluir detectedApp
 

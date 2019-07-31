@@ -4,12 +4,13 @@ description: Uma mensagem que representa uma solicitação de reunião.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ead65f036fe5537b7e349124b2771eff575be22f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3d691b814517a6180a42ecd13954e019cc75be8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973584"
 ---
 # <a name="eventmessagerequest-resource-type"></a>tipo de recurso eventMessageRequest
 
@@ -94,9 +95,9 @@ Veja a seguir uma representação JSON do recurso
 |id|String|Somente leitura.|
 |importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Os valores possíveis são: `Focused` e `Other`.|
-|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|isOutOfDate|Boolean|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
+|isOutOfDate|Booliano|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
@@ -104,7 +105,7 @@ Veja a seguir uma representação JSON do recurso
 |meetingMessageType|String| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de término anterior da reunião solicitada.|
-|previousLocation|[Location](location.md)|O local anterior da reunião solicitada.|
+|previousLocation|[Localização](location.md)|O local anterior da reunião solicitada.|
 |previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|O horário de início anterior da reunião solicitada.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da reunião solicitada.|
@@ -133,9 +134,9 @@ Veja a seguir uma representação JSON do recurso
 |[Criar anexo](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| Criar um novo anexo postando na coleção Attachments.|
 |[Listar anexos](../api/eventmessage-list-attachments.md) |[Attachment](attachment.md) collection| Obtenha uma coleção de objetos Attachment.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage. |
-|[Delete](../api/eventmessage-delete.md) | Nenhuma |Excluir o objeto eventMessage. |
+|[Delete](../api/eventmessage-delete.md) | None |Excluir o objeto eventMessage. |
 |[copy](../api/message-copy.md)|[Message](message.md)||
-|[createForward](../api/message-createforward.md)|[Mensagem](message.md)||
+|[createForward](../api/message-createforward.md)|[Message](message.md)||
 |[createReply](../api/message-createreply.md)|[Message](message.md)||
 |[createReplyAll](../api/message-createreplyall.md)|[Mensagem](message.md)||
 |[forward](../api/message-forward.md)|Nenhum|Encaminha uma mensagem. A mensagem é então salva na pasta Itens Enviados.|

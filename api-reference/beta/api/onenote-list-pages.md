@@ -4,12 +4,13 @@ description: Recupere uma lista de objetos Page.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: fe4b53c51f594c9ddd3124d5c3917efda3447edb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: cb0c1db9a795dd18ed41abf4f757d2f43601e087
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333053"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992658"
 ---
 # <a name="list-pages"></a>Listar páginas
 

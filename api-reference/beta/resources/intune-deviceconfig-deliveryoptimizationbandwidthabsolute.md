@@ -4,12 +4,13 @@ description: Limites de largura de banda em quilobytes por segundo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 626c46c035ec4a7af44c06a31f7269cde96a2b8b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 14e277258f4e8bbad75c3457b6c3da6dd604ff01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979715"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970813"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthAbsolute
 

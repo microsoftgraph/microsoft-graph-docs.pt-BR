@@ -4,12 +4,13 @@ description: Essa classe contém configurações de conformidade para o Windows 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82cb8393c5e0d0f3f2cf3c0c993263d79a16331f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ff98cb5b8ca00923a34eb35b6e9d48f8408bb15e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996614"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969125"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>Tipo de recurso windows81CompliancePolicy
 

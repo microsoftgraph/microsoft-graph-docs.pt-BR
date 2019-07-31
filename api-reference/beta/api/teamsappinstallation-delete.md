@@ -2,15 +2,15 @@
 title: Remover aplicativo da equipe
 description: Desinstala um aplicativo da equipe especificada.
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a970b8e14386ca8c7039a3df3fd1082d39ff750b
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: f03f196514ba5cf151bf13f22cba5c241a844601
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931798"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977516"
 ---
 # <a name="remove-app-from-team"></a>Remover aplicativo da equipe
 

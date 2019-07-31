@@ -2,12 +2,15 @@
 title: Tipo de recurso attendee
 description: Um participante do evento. Pode ser uma pessoa ou recurso, como uma sala de reunião ou equipamento, que seja configurado como um recurso no Exchange Server para o locatário.
 localization_priority: Normal
-ms.openlocfilehash: 12512ea274e549cacba364fb394a3346e6bfee56
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 435a9b3badf20ddb79affd4e40e5ca8b66ff34c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328597"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974287"
 ---
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
 
@@ -21,7 +24,7 @@ Derivado de [attendeeBase](attendeebase.md).
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.|
-|tipo|String|O tipo de participante: `required`, `optional` ou `resource`.|
+|type|String|O tipo de participante: `required`, `optional` ou `resource`.|
 |emailAddress|[emailAddress](emailaddress.md)|Inclui o nome e endereço SMTP do participante.|
 
 ## <a name="json-representation"></a>Representação JSON

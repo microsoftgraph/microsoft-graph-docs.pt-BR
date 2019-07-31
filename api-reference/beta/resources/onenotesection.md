@@ -2,12 +2,15 @@
 title: tipo de recurso onenoteSection
 description: Uma seção em um bloco de anotações do OneNote. As seções podem conter páginas.
 localization_priority: Normal
-ms.openlocfilehash: b07ea378a4338e22896d40065e35aa599db42832
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ed90d29e0441544bffd2576a255acf17e6cb3996
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236626"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966396"
 ---
 # <a name="onenotesection-resource-type"></a>tipo de recurso onenoteSection
 

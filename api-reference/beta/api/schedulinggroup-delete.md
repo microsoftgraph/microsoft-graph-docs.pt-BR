@@ -4,12 +4,13 @@ description: Marcar um modo de agendamento como inativo Configurando sua proprie
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d09ffdf218f3b687d29b2f14cf8bd7a1b4c91ef6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a440ae114960e5290cf8dcd0293bd2e679585a0a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870726"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991629"
 ---
 # <a name="delete-schedulinggroup"></a>Excluir schedulingGroup
 

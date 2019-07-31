@@ -2,12 +2,15 @@
 title: Get privilegedRoleSettings
 description: Recupere as configurações de função para a função específica. Um objeto privilegedRoleSettings será retornado.
 localization_priority: Normal
-ms.openlocfilehash: b4dbb6f378288a727f4c0c97541f9cb3e0eb8eda
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f86de3229a7cf426b6188246bcc28f94fa7cfd69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875521"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978683"
 ---
 # <a name="get-privilegedrolesettings"></a>Get privilegedRoleSettings
 

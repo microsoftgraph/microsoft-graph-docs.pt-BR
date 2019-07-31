@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso baseItemVersion representa uma versão anterior de um item ou de uma entidade.
 ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
-ms.openlocfilehash: 735931e757297bd9846396d6f6c42988d8cb87fa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d5265004eac969fa827e5456183180a4c6434f96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328230"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974231"
 ---
 # <a name="baseitemversion-resource-type"></a>Tipo de recurso BaseItemVersion
 

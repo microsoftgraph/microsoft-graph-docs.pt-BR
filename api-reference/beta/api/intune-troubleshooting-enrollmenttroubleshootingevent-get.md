@@ -4,12 +4,13 @@ description: Propriedades de leitura e relações do objeto enrollmentTroublesho
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4fdb482db681d0a7fb048b44910a419c46b6ec6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 781e504f945c8a5b37ae8de0457ac3cc58386d74
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990831"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979299"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
 

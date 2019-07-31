@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: Remove um sitePage da lista de páginas do site em um site.
 ms.date: 05/07/2018
 title: Excluir uma página de um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d5c38a5f5b96a100cfbae0eba30f957b079568e5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: bdf3dacabb99d5dfcfe47dcb954ff1cfd0b62ccb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330132"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977857"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Excluir página da lista de páginas do site de um site
 

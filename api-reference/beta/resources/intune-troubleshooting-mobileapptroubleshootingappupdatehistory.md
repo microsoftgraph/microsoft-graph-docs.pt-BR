@@ -4,12 +4,13 @@ description: Item de histórico contido no evento de solução de problemas de a
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab9949c2e8ac11043d53de990549cc461b43a5eb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8a0306faf7ad83e7eae88fbac7c785801220d80a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988052"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967158"
 ---
 # <a name="mobileapptroubleshootingappupdatehistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppUpdateHistory
 

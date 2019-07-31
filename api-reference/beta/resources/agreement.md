@@ -2,12 +2,15 @@
 title: tipo de recurso de contrato
 description: Representa o contrato de termos de uso personalizável de um locatário que é criado e gerenciado com o Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o recurso termos de uso do Azure Active Directory de acordo com seu cenário.
 localization_priority: Normal
-ms.openlocfilehash: d91cc8f8180ffb706639fb42a8c68d711991602c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 31c25211efbca8ae0f52a9348ad0531ea818397f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339171"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974511"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
@@ -34,7 +37,7 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 |:-------------|:------------|:------------|
 |displayName|String|Nome para exibição do contrato.|
 |id|String| Somente leitura.|
-|isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
+|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |

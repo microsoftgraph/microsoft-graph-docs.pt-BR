@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso CommentAction fornece informações sobre uma atividade de comentário feitas em um item.
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
-ms.openlocfilehash: c472a0b1b992c91b60174859e4900ffcee04c007
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: b7782c6e4dd30b503a9be88737ef6bd2dbad109b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341444"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973255"
 ---
 # <a name="commentaction-resource-type"></a>Tipo de recurso CommentAction
 

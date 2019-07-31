@@ -4,12 +4,13 @@ description: Recupera as definições de função atribuídas e as atribuições
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 61c42efdf0ae9b773f1bf136d2dccb011a687aad
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 0279a09b5a017a4a7ea16ba45efc2bb5f5c8a3fd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898664"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993617"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>função getAssignedRoleIdsForLoggedInUser
 

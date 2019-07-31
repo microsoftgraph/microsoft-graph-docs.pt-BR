@@ -4,12 +4,13 @@ description: O recurso que representa uma instância de um dispositivo ou relat�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: c975abfa3cb580d107967c7adaf66627bad2ad2e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 474ac908edee316a63c3610782cc4b8dcce070f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938727"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967362"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 
@@ -37,7 +38,7 @@ O recurso que representa uma instância de um dispositivo ou relatório de solu�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo dessa entidade.|
+|id|String|O identificador exclusivo dessa entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -4,12 +4,13 @@ description: 'Recupere as propriedades e os relacionamentos da guia especificada
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5077cbd7fbdebd946e9dbe79dfebb320e20e15a7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a2408bb63d3f4cb1e6cb44a303e689ae77416af5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330109"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977465"
 ---
 # <a name="get-tab"></a>Obter guia
 

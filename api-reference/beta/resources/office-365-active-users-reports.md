@@ -4,12 +4,13 @@ description: Você pode usar o relatório de usuários ativos do Office 365 para
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e31bc0ef8d2fa3147528503902c46b33d4944ce7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: ea93b37e4a22b733274f65d785204764afa34015
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341992"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966591"
 ---
 # <a name="office-365-active-users-reports"></a>Relatórios dos usuários ativos do Office 365
 

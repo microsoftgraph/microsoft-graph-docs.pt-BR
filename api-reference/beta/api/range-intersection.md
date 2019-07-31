@@ -4,12 +4,13 @@ description: Obtém o objeto de intervalo que representa a interseção retangul
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 25c45abdb526a31700fed68007b123e30c41377a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e107154f6f5737065b62928b212491182fee5021
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331980"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978417"
 ---
 # <a name="range-intersection"></a>Range: Intersection
 

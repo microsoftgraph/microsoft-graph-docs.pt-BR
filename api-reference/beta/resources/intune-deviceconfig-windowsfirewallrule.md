@@ -4,12 +4,13 @@ description: Uma regra que controla o tráfego por meio do firewall do Windows.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae5c51a2ce5b3f86f03e651162611e8d219e7da2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 170989596004660e14ed5cfbb2296e379bd1c4c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35737661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969055"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>tipo de recurso windowsFirewallRule
 

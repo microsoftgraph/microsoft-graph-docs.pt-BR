@@ -3,12 +3,14 @@ title: Excluir schemaExtension
 description: Exclui uma definição da extensão de esquema.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: c3ce95154319519e7dd6b4353389e392f169de35
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 3125ae80680e1d9f7b6f7ea5f3732332786283b8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870678"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978064"
 ---
 # <a name="delete-schemaextension"></a>Excluir schemaExtension
 

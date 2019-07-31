@@ -2,12 +2,15 @@
 title: tipo de recurso auditActivityInitiator
 description: Identity o objeto Resource que inicia a atividade. O iniciador pode ser um usuário, um aplicativo ou um sistema (que é considerado como um aplicativo)
 localization_priority: Normal
-ms.openlocfilehash: 14c92a4df42c3d8dbcd6836695df8d6caac3cf87
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2f76c071efd10d2d43887bdd5dd04df0d2aa86d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543765"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974224"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>tipo de recurso auditActivityInitiator
 Identity o objeto Resource que inicia a atividade. O iniciador pode ser um usuário, um aplicativo ou um sistema (que é considerado como um aplicativo)

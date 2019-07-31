@@ -4,12 +4,13 @@ description: Atualize as propriedades do objeto tablerow.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 63bc3a31b7fbbd407103bec79fd039cb00f0072f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4c29ceeff245d550c539932fe5ce4ba5cbfffc56
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868500"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977601"
 ---
 # <a name="update-tablerow"></a>Atualizar tablerow
 

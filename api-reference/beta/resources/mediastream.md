@@ -4,12 +4,13 @@ description: O tipo mediaStream.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69d8088ba161bdf4dbf0482fdab8ad757347126d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c39c4eb0754f327361fec04852293ef084b0c412
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342615"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966822"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso mediaStream
 
@@ -24,7 +25,7 @@ O tipo mediaStream.
 | direction   | String  | A direção. Os valores possíveis são `inactive`: `sendOnly` `receiveOnly`,, `sendReceive`,.                  |
 | rótulo       | String  | O rótulo do fluxo de mídia.                                                                                       |
 | Mídia   | String  | O tipo de mídia. O valor possível é `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Boolean | Se a mídia estiver com mudo ativado pelo servidor.                                                                          |
+| serverMuted | Booliano | Se a mídia estiver com mudo ativado pelo servidor.                                                                          |
 | sourceId    | String  | A ID da fonte.                                                                                                |
 
 ## <a name="json-representation"></a>Representação JSON

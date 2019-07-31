@@ -1,15 +1,17 @@
 ---
 author: kevklam
-ms.author: kevinlam
+description: O geolocationColumn em um recurso columnDefinition indica que a coluna contém uma localização geográfica.
 ms.date: 09/10/2018
 title: GeolocationColumn
 localization_priority: Normal
-ms.openlocfilehash: 1a7af7746dcfddcc67c4bfe9831bee9acfe82152
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 7ab8617ea48e02a1deca29e4aed725a938a5a07c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333711"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973517"
 ---
 # <a name="geolocationcolumn-resource-type"></a>tipo de recurso geolocationColumn
 

@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos windows81CertificatePr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66d206ddca13cc21ed491c5c7cec3706adbfa111
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 45ba8cb0e39b2d1904be7bae6a773f2a5fcecfd6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962313"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975085"
 ---
 # <a name="list-windows81certificateprofilebases"></a>Listar windows81CertificateProfileBases
 

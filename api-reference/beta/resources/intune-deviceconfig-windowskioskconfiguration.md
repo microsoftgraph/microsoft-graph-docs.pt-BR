@@ -4,12 +4,13 @@ description: Esta entidade fornece descrições dos métodos declarados, das pro
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32a7d319314d1fddc40724d686de797dcd1d15d1
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: edc1b3369a3b3ab0faab2cdb16cc8b9ef396f786
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731746"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969013"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>tipo de recurso windowsKioskConfiguration
 

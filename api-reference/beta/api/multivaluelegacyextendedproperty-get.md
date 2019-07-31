@@ -2,12 +2,15 @@
 title: Obter multiValueLegacyExtendedProperty
 description: Expanda '.
 localization_priority: Normal
-ms.openlocfilehash: f4d1f162126f6b8d0f5fac3dcdfa5aa3aa08dcd0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: cdde391b0dfec4932a8142ede97a08621a5f16bd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333136"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992784"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Obter multiValueLegacyExtendedProperty
 
@@ -22,7 +25,7 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [evento](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md) 
 - [Tarefa do Outlook](../resources/outlooktask.md)

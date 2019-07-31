@@ -4,12 +4,13 @@ description: Use essa API para criar uma nova RangeBorder.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0f97070a61d16b07a56bc964ccb6ab8fac599ad7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7aff0727d859f959545db6903beab62fd200c239
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874205"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978247"
 ---
 # <a name="create-rangeborder"></a>Criar RangeBorder
 
