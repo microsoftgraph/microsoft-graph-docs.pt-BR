@@ -4,31 +4,32 @@ description: Criar um novo objeto embeddedSIMActivationCodePoolAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55ce932d8d8bcbac57fcfc1c65cce571a0af0d37
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 02da435ae6f13ba5f9ef8cfb859bf3a6408a48d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982599"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995290"
 ---
-# <a name="create-embeddedsimactivationcodepoolassignment"></a><span data-ttu-id="1c0a6-103">Criar embeddedSIMActivationCodePoolAssignment</span><span class="sxs-lookup"><span data-stu-id="1c0a6-103">Create embeddedSIMActivationCodePoolAssignment</span></span>
+# <a name="create-embeddedsimactivationcodepoolassignment"></a><span data-ttu-id="caecb-103">Criar embeddedSIMActivationCodePoolAssignment</span><span class="sxs-lookup"><span data-stu-id="caecb-103">Create embeddedSIMActivationCodePoolAssignment</span></span>
 
-> <span data-ttu-id="1c0a6-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="caecb-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="caecb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1c0a6-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="caecb-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="caecb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1c0a6-106">Criar um novo objeto [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="1c0a6-106">Create a new [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object.</span></span>
+<span data-ttu-id="caecb-106">Criar um novo objeto [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="caecb-106">Create a new [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1c0a6-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1c0a6-107">Prerequisites</span></span>
-<span data-ttu-id="1c0a6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1c0a6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="caecb-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="caecb-107">Prerequisites</span></span>
+<span data-ttu-id="caecb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="caecb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1c0a6-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1c0a6-110">Permission type</span></span>|<span data-ttu-id="1c0a6-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1c0a6-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="caecb-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="caecb-110">Permission type</span></span>|<span data-ttu-id="caecb-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="caecb-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1c0a6-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1c0a6-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1c0a6-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c0a6-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="1c0a6-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1c0a6-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1c0a6-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-115">Not supported.</span></span>|
-|<span data-ttu-id="1c0a6-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1c0a6-116">Application</span></span>|<span data-ttu-id="1c0a6-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-117">Not supported.</span></span>|
+|<span data-ttu-id="caecb-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="caecb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="caecb-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="caecb-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="caecb-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="caecb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="caecb-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="caecb-115">Not supported.</span></span>|
+|<span data-ttu-id="caecb-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="caecb-116">Application</span></span>|<span data-ttu-id="caecb-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="caecb-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1c0a6-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1c0a6-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="caecb-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="caecb-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +38,31 @@ ms.locfileid: "34982599"
 POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1c0a6-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1c0a6-119">Request headers</span></span>
-|<span data-ttu-id="1c0a6-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1c0a6-120">Header</span></span>|<span data-ttu-id="1c0a6-121">Valor</span><span class="sxs-lookup"><span data-stu-id="1c0a6-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="caecb-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="caecb-119">Request headers</span></span>
+|<span data-ttu-id="caecb-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="caecb-120">Header</span></span>|<span data-ttu-id="caecb-121">Valor</span><span class="sxs-lookup"><span data-stu-id="caecb-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1c0a6-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="1c0a6-122">Authorization</span></span>|<span data-ttu-id="1c0a6-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1c0a6-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1c0a6-124">Accept</span></span>|<span data-ttu-id="1c0a6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1c0a6-125">application/json</span></span>|
+|<span data-ttu-id="caecb-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="caecb-122">Authorization</span></span>|<span data-ttu-id="caecb-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="caecb-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="caecb-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="caecb-124">Accept</span></span>|<span data-ttu-id="caecb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="caecb-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1c0a6-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1c0a6-126">Request body</span></span>
-<span data-ttu-id="1c0a6-127">No corpo da solicitação, forneça uma representação JSON do objeto embeddedSIMActivationCodePoolAssignment.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-127">In the request body, supply a JSON representation for the embeddedSIMActivationCodePoolAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="caecb-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="caecb-126">Request body</span></span>
+<span data-ttu-id="caecb-127">No corpo da solicitação, forneça uma representação JSON do objeto embeddedSIMActivationCodePoolAssignment.</span><span class="sxs-lookup"><span data-stu-id="caecb-127">In the request body, supply a JSON representation for the embeddedSIMActivationCodePoolAssignment object.</span></span>
 
-<span data-ttu-id="1c0a6-128">A tabela a seguir mostra as propriedades que são necessárias ao criar embeddedSIMActivationCodePoolAssignment.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-128">The following table shows the properties that are required when you create the embeddedSIMActivationCodePoolAssignment.</span></span>
+<span data-ttu-id="caecb-128">A tabela a seguir mostra as propriedades que são necessárias ao criar embeddedSIMActivationCodePoolAssignment.</span><span class="sxs-lookup"><span data-stu-id="caecb-128">The following table shows the properties that are required when you create the embeddedSIMActivationCodePoolAssignment.</span></span>
 
-|<span data-ttu-id="1c0a6-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1c0a6-129">Property</span></span>|<span data-ttu-id="1c0a6-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="1c0a6-130">Type</span></span>|<span data-ttu-id="1c0a6-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="1c0a6-131">Description</span></span>|
+|<span data-ttu-id="caecb-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="caecb-129">Property</span></span>|<span data-ttu-id="caecb-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="caecb-130">Type</span></span>|<span data-ttu-id="caecb-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="caecb-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1c0a6-132">id</span><span class="sxs-lookup"><span data-stu-id="1c0a6-132">id</span></span>|<span data-ttu-id="1c0a6-133">String</span><span class="sxs-lookup"><span data-stu-id="1c0a6-133">String</span></span>|<span data-ttu-id="1c0a6-134">Identificador exclusivo da atribuição do pool de códigos de ativação do SIM incorporado.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-134">Unique identifier for the embedded SIM activation code pool assignment.</span></span> <span data-ttu-id="1c0a6-135">Valor gerado pelo sistema atribuído quando criado.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-135">System generated value assigned when created.</span></span>|
-|<span data-ttu-id="1c0a6-136">destino</span><span class="sxs-lookup"><span data-stu-id="1c0a6-136">target</span></span>|[<span data-ttu-id="1c0a6-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="1c0a6-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="1c0a6-138">O tipo de grupos direcionados pelo pool de códigos de ativação do SIM incorporado.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-138">The type of groups targeted by the embedded SIM activation code pool.</span></span>|
+|<span data-ttu-id="caecb-132">id</span><span class="sxs-lookup"><span data-stu-id="caecb-132">id</span></span>|<span data-ttu-id="caecb-133">String</span><span class="sxs-lookup"><span data-stu-id="caecb-133">String</span></span>|<span data-ttu-id="caecb-134">Identificador exclusivo da atribuição do pool de códigos de ativação do SIM incorporado.</span><span class="sxs-lookup"><span data-stu-id="caecb-134">Unique identifier for the embedded SIM activation code pool assignment.</span></span> <span data-ttu-id="caecb-135">Valor gerado pelo sistema atribuído quando criado.</span><span class="sxs-lookup"><span data-stu-id="caecb-135">System generated value assigned when created.</span></span>|
+|<span data-ttu-id="caecb-136">destino</span><span class="sxs-lookup"><span data-stu-id="caecb-136">target</span></span>|[<span data-ttu-id="caecb-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="caecb-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="caecb-138">O tipo de grupos direcionados pelo pool de códigos de ativação do SIM incorporado.</span><span class="sxs-lookup"><span data-stu-id="caecb-138">The type of groups targeted by the embedded SIM activation code pool.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1c0a6-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="1c0a6-139">Response</span></span>
-<span data-ttu-id="1c0a6-140">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-140">If successful, this method returns a `201 Created` response code and a [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="caecb-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="caecb-139">Response</span></span>
+<span data-ttu-id="caecb-140">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="caecb-140">If successful, this method returns a `201 Created` response code and a [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1c0a6-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1c0a6-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="caecb-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="caecb-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1c0a6-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1c0a6-142">Request</span></span>
-<span data-ttu-id="1c0a6-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="caecb-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="caecb-142">Request</span></span>
+<span data-ttu-id="caecb-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="caecb-143">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments
 Content-type: application/json
@@ -75,8 +76,8 @@ Content-length: 179
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1c0a6-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="1c0a6-144">Response</span></span>
-<span data-ttu-id="1c0a6-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1c0a6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="caecb-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="caecb-144">Response</span></span>
+<span data-ttu-id="caecb-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="caecb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
