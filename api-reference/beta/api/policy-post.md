@@ -2,12 +2,15 @@
 title: Criar política
 description: Criar um novo objeto de política especificando o nome de exibição, o tipo de política e a descrição da política.
 localization_priority: Normal
-ms.openlocfilehash: 4521f6fb032f936aec27cc5cac47d27e62bd2a3a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ca8b2f2d98c577fb053f95110a11f5c3c7b875ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332186"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983436"
 ---
 # <a name="create-policy"></a>Criar política
 
@@ -15,7 +18,7 @@ ms.locfileid: "33332186"
 
 Criar um novo objeto de [política](../resources/policy.md) especificando o nome de exibição, o tipo de política e a descrição da política.
 
->Observação: os detalhes da política serão validados antes de serem armazenados. Se ele não passar na validação, uma solicitação inVálida 400 será retornada.
+>Observação: os detalhes da política serão validados antes de serem armazenados. Se ele não passar na validação, uma solicitação inválida 400 será retornada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar uma pol�
 |:---------------|:--------|:----------|
 |definir|String|A versão de cadeia de caracteres do objeto [Policy](../resources/policy.md) .|
 |displayName|String|Um nome personalizado para a política.|
-|tipo|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy"|
+|type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Resposta
 

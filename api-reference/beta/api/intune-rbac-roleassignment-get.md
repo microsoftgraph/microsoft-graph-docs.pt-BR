@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto roleAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fdd5b997ecada5e14e97a467df57fd83f2421974
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0559303a55c465115d3b774153e8e3624a637ee9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988535"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979992"
 ---
 # <a name="get-roleassignment"></a>Get roleAssignment
 

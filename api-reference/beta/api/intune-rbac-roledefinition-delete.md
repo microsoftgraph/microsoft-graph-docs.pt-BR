@@ -4,12 +4,13 @@ description: Exclui roleDefinition
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd5ab0a43553050d864a376fb8519bac972545e0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b7eadf49cc791550b7b2938aa5d6be579091d79d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988472"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979915"
 ---
 # <a name="delete-roledefinition"></a>Excluir roleDefinition
 

@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3099b9bce0a7e7594a8506b113d4804e422c6a7c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 528af707ad65d4c7906d39a548983390ec0b21ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983082"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968474"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>tipo de enumeração deviceGuardLocalSystemAuthorityCredentialGuardState
 

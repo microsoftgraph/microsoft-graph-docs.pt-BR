@@ -4,12 +4,13 @@ description: Representa as informações de licença a serem atribuídas às con
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5d1aaf2784434525e2fa750ad78966d6cbf15bc8
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: resourcePageType
+ms.openlocfilehash: b00550c1a4d2d02efc983ab345fbc429b443a5bf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750133"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972394"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>tipo de recurso educationSynchronizationLicenseAssignment
 

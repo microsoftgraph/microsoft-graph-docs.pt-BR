@@ -1,15 +1,18 @@
 ---
-title: tipo de recurso keyCredential
+title: tipo de recurso keycredential
 description: Contém uma credencial de chave associada a um aplicativo ou a uma entidade de serviço. A **** Propriedade keycredentials do aplicativo e das entidades do servicePrincipalName é uma coleção de keycredential. ****
 localization_priority: Normal
-ms.openlocfilehash: 312821a91bdbb1ad15e136d2b7fc8f9184df4eac
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c3caa5c525d654b94d9fe6aa5688cb8f3216b807
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345383"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967046"
 ---
-# <a name="keycredential-resource-type"></a>tipo de recurso keyCredential
+# <a name="keycredential-resource-type"></a>tipo de recurso keycredential
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +50,7 @@ Veja a seguir uma representação JSON do recurso
 |endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |keyId|Guid|O identificador exclusivo (GUID) da chave.|
 |startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|tipo|String|O tipo de credencial de chave; por exemplo, "simétrico".|
+|type|String|O tipo de credencial de chave; por exemplo, "simétrico".|
 |ocorrência|String|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, "Verify".|
 |chave|Binário|            |
 

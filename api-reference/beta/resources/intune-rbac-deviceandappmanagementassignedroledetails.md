@@ -4,12 +4,13 @@ description: O conjunto de definições de função e atribuições de função 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d761b8db45e1dffa8463bcee6d40e553f6853186
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: beadac8ef20d1a716369626c52664af3ef8d9042
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993631"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967669"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>tipo de recurso deviceAndAppManagementAssignedRoleDetails
 

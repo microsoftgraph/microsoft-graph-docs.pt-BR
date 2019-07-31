@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O tipo complexo listInfo oferece informações adicionais sobre uma lista.
 ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: eeb534fe149a0c80f80bec105fe78bf5c1d98ba0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 962fc4928bac69489cf2ae2a4c77f3b72169ce0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345352"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966941"
 ---
 # <a name="listinfo-resource"></a>Recurso de ListInfo
 
@@ -43,7 +44,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Nome da propriedade           | Tipo    | Descrição
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.
+| **contentTypesEnabled** | Booliano | Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.
 | **hidden**              | Booliano | Se `true`, indica que a lista não fica visível normalmente na experiência de usuário do SharePoint.
 | **template**            | String  | Um valor enumerado que representa o modelo de lista básica usado na criação da lista. Os valores possíveis incluem `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` e mais.
 

@@ -4,12 +4,13 @@ description: Tipos de suporte a GroupId
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd7db4d57e5c97c407e607d79b41ac90158070e6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b9251e146ff58bf0b88354e36c88b16426aad31b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979652"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970749"
 ---
 # <a name="deliveryoptimizationgroupidsource-resource-type"></a>tipo de recurso deliveryOptimizationGroupIdSource
 

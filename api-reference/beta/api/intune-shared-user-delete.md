@@ -4,12 +4,13 @@ description: Exclui usuário.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 394876368b6de7bd76b4eb6a5f11cc4d923fdc88
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: df68bf0089ca8f3e8aba35cac7f8a9ac5e0872b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898134"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979649"
 ---
 # <a name="delete-user"></a>Excluir usuário
 
@@ -27,7 +28,7 @@ Uma das seguintes permissões é necessária para chamar esta API. Para saber ma
 | &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Mam** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Solução de Problemas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

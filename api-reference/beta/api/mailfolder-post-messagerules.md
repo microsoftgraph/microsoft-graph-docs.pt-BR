@@ -4,12 +4,13 @@ description: 'Crie um objeto messageRule especificando um conjunto de condiçõe
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b84076674a452d06fa83ff7930c91283a5174887
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 507ea601a4e7b3f037ca2b3325e28873db23071b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879962"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984039"
 ---
 # <a name="create-rule"></a>Criar regra
 

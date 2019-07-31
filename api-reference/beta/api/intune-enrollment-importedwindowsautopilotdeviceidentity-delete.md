@@ -4,12 +4,13 @@ description: Exclui uma importedWindowsAutopilotDeviceIdentity.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9736eef22f122ffac486414f236713687e2d793
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 7a7dd6472258f59cfe3c9a89d0de966e7ed0ac67
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729962"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986761"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>Excluir importedWindowsAutopilotDeviceIdentity
 

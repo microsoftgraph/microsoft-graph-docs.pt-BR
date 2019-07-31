@@ -4,12 +4,13 @@ description: Traduzir os identificadores de recursos relacionados ao Outlook ent
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4f3c529edadf8ff1f41110ad17ce4c59f63545e4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 984b2cbe3eb321666a19cbcab432fa4a96929c96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866687"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987436"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 

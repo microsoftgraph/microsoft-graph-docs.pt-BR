@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: ee67d28a90732bdc1d804da41994de32bf0a7f4f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 5173bdba342b6774ffc931ae0b769b1d1228894d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543076"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972933"
 ---
 # <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Trabalhar com a API do Dynamics 365 Business central no Microsoft Graph
 Você pode usar o Microsoft Graph para conectar e integrar seu serviço Web ou solução SaaS com o Microsoft Dynamics 365 Business central. Com o Microsoft Graph, você pode criar aplicativos que obtêm acesso autorizado e se integram perfeitamente com os dados do Microsoft Dynamics 365 Business central.

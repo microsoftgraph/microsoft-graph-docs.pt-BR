@@ -4,12 +4,13 @@ description: Obtenha a lista de fusos horários com suporte para o usuário, con
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 43cf4472dc074539c235bc7d7b00b6655a9b55ce
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5961de82c66be5368b52ae017a6d5d49be1ff7e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877258"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983604"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 

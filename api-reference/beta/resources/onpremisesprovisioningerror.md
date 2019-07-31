@@ -2,12 +2,15 @@
 title: tipo de recurso onPremisesProvisioningError
 description: Representa erros de sincronização de diretório para o usuário, grupo ou entidades de contato organizacional ao sincronizar diretórios locais com o Azure Active Directory.
 localization_priority: Normal
-ms.openlocfilehash: e760493c388320c81d7773370a673aacc61fd3d5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 240b7f100a01c37b6b778d3b18b0297739ada66b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345543"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966367"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>tipo de recurso onPremisesProvisioningError
 

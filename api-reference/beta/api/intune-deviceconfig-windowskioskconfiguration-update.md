@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto windowsKioskConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b76505bbb51318288f19004f30a2107f6b3c360f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 3653f04f753cb14791f4fb2a52deeda654c647f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721994"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973447"
 ---
 # <a name="update-windowskioskconfiguration"></a>Atualizar windowsKioskConfiguration
 

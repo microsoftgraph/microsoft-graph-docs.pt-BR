@@ -4,12 +4,13 @@ description: Obtenha a contagem de usuários habilitados e aqueles que ativaram 
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 63b626983ce5d71597dcf8626d977383722e26b2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 37465cb36343187b03b95a27f326e6a24c645ebf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873550"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988248"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 

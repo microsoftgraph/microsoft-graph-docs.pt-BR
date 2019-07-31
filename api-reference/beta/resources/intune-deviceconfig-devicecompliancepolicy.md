@@ -4,12 +4,13 @@ description: 'Esta é a classe base para a política de Conformidade. Políticas
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11dd53ba246f712ed95cb9db12ddce7acc27b208
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ffce3853157f5852c7ebf984ff0dfeea18fc2aef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979484"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970574"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Tipo de recurso deviceCompliancePolicy
 

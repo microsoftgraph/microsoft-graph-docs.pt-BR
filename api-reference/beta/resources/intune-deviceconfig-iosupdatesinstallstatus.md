@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c49f65afd29ddd1d5394632583d0fdbcff367b46
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 550cb44e5efa6909fc982d4c9f13cc198e152ace
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995571"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970336"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>tipo de enumeração iosUpdatesInstallStatus
 

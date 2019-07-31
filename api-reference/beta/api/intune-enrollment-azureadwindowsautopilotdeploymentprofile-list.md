@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos azureADWindowsAutopilo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8a2a042c184e945b7e56ae55d1bcdeaa590fb2e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3943bea11322fd5c77d4e190bf47c7dfaf54ebc7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978581"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985592"
 ---
 # <a name="list-azureadwindowsautopilotdeploymentprofiles"></a>Listar azureADWindowsAutopilotDeploymentProfiles
 

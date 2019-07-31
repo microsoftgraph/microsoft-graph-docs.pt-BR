@@ -4,12 +4,13 @@ description: Esta entidade contém as propriedades usadas para atribuir um perfi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97c256122734db4197d44bc89be569ed1bcb9696
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ad29f8da4ae24d87e4edb112b144a4f3a2713e8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967130"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>tipo de recurso intuneBrandingProfileAssignment
 

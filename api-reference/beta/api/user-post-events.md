@@ -2,14 +2,15 @@
 title: Criar evento
 description: Crie um evento no calendário especificado ou no calendário padrão do usuário.
 localization_priority: Normal
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 154f7b34d9dd3a7f57dbd6db7190cfe84e94becc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: fcffad4ba799f6d3e45f39f3f27a382f37ee3d34
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866960"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987534"
 ---
 # <a name="create-event"></a>Criar evento
 

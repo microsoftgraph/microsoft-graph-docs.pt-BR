@@ -4,12 +4,13 @@ description: 'Recupere a lista de guias no canal especificado dentro de uma equi
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d9566462439d760e3331037afeae2c4c7b04b060
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a5521b0f450dc8c05f886a83dcf554f6f3315f68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330127"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987940"
 ---
 # <a name="list-tabs-in-channel"></a>Listar guias no canal
 

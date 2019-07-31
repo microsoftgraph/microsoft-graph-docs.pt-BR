@@ -4,12 +4,13 @@ description: Vincular o status do locatário à API do Google EMM
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebe646e3c4a992cb4becedda0aa55c127a6a84a3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 62a25e030a89656f634e538855547578df2013c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971708"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>tipo de enumeração androidManagedStoreAccountBindStatus
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: aeda0ca136c178355a8a8f9589eb7410399ef62a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 09c1c51fed961489d824136f28aaa2f5b3859b44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507228"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972891"
 ---
 # <a name="taxareas-resource-type"></a>tipo de recurso taxAreas
 Representa um tipo de recurso de área de imposto no Dynamics 365 Business central.
@@ -22,13 +23,13 @@ Representa um tipo de recurso de área de imposto no Dynamics 365 Business centr
 |[Obter taxAreas](../api/dynamics-taxarea-get.md)|taxAreas|Obtém um objeto de área de impostos.|
 |[Postar taxAreas](../api/dynamics-create-taxarea.md)|taxAreas|Cria um objeto de área de impostos.|
 |[Patch taxAreas](../api/dynamics-taxarea-update.md)|taxAreas|Atualiza um objeto de área de impostos.|
-|[Excluir taxAreas](../api/dynamics-taxarea-delete.md)|Nenhuma|Exclui um objeto de área de impostos.|
+|[Excluir taxAreas](../api/dynamics-taxarea-delete.md)|none|Exclui um objeto de área de impostos.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|GUID|A identificação exclusiva da área de impostos. Não editável.|
-|code|Cadeia de caracteres, tamanho máximo 20| O código da área de impostos.|
+|código|Cadeia de caracteres, tamanho máximo 20| O código da área de impostos.|
 |displayName|Cadeia de caracteres, tamanho máximo 50| O nome de exibição da área de impostos.|
 |taxType|string|O tipo de imposto da área de impostos.|
 |lastModifiedDateTime|DateTime|A última data/hora em que a área de impostos foi modificada. Somente leitura.|

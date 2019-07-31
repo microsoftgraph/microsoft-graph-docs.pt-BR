@@ -4,12 +4,13 @@ description: Exclui deviceManagementScript.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f18aec2f2c98492cd85ce874f41bc99a274b17af
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 29844e9f71abc8520f67cb9a3ef40d0bdf2a0daf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959058"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986096"
 ---
 # <a name="delete-devicemanagementscript"></a>Excluir deviceManagementScript
 

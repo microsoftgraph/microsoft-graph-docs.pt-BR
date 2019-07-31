@@ -4,12 +4,13 @@ description: Recupere uma lista de scopedRoleMembership para o usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 80c74905a8fb98bc34dc317766647b1ec170f760
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e828fcb841f2854de1f46451e001ee1e305385bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867073"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987591"
 ---
 # <a name="list-scopedadministratorof"></a>Listar scopedAdministratorOf
 

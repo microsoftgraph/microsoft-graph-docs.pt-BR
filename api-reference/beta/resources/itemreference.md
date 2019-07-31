@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso ItemReference proporciona as informações necessárias para enviar um DriveItem pela API.
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
-ms.openlocfilehash: 63155bbeb586956f539b0c28ac1f7706189b5445
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 434e3ed1da1f7536224e27b619cedf3bbef5f20e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581055"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967060"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
@@ -43,7 +45,7 @@ Veja a seguir uma representação JSON do recurso
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | O identificador exclusivo da instância da unidade que contém o item. Somente leitura.
 | driveType     | String            | Identifica o tipo de unidade. Consulte o recurso [unidade][] para obter os valores.
-| id            | Cadeia de caracteres            | Identificador exclusivo do item na unidade. Somente leitura.
+| id            | String            | Identificador exclusivo do item na unidade. Somente leitura.
 | name          | String            | O nome do item ao qual se faz referência. Somente leitura.
 | caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
 | shareId       | String            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
@@ -71,9 +73,5 @@ Para recuperar o caminho legível para a navegação estrutural, ignore tudo at�
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/itemreference.md:
-      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
-  ],
   "tocPath": "Resources/ItemReference"
 } -->

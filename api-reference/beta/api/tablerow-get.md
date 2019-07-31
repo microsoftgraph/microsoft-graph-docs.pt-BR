@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos do objeto tablerow.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 69ee67e7cf9b0098b84729f01b3f2c40d2971646
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3ea0c7d70b7e248f96a8507854fc11a02a60635f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868557"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982470"
 ---
 # <a name="get-tablerow"></a>Obter TableRow
 

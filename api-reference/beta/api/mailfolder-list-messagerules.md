@@ -4,12 +4,13 @@ description: Obtenha todos os objetos messageRule definidos para a Caixa de Entr
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bb14e7574de2ecb8e7e010cbee7983962d0a6f95
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c6e800ab7a42d38b397cfcfd4426e59f4b9ae80b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879938"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984060"
 ---
 # <a name="list-rules"></a>Listar regras
 

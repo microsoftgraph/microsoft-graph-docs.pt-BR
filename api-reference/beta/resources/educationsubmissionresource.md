@@ -4,12 +4,13 @@ description: 'Um wrapper em torno de um recurso para uso em um envio. O wrapper 
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b96607a0d37a3ec8af0f6ff0bad61215d6e9008c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 48f4549354603346e39b5e1f6f387b207e2f14ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340568"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972478"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>tipo de recurso educationSubmissionResource
 
@@ -23,7 +24,7 @@ Um wrapper em torno de um recurso para uso em um envio. O wrapper adiciona um po
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Ler propriedades e relações de um objeto **educationSubmissionResource** .|
-|[Delete](../api/educationsubmissionresource-delete.md) | Nenhuma |Excluir um objeto **educationSubmissionResource** . |
+|[Delete](../api/educationsubmissionresource-delete.md) | None |Excluir um objeto **educationSubmissionResource** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

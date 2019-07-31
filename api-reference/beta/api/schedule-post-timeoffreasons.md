@@ -4,12 +4,13 @@ description: Criar um novo timeOffReason.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e616884d4a222bb771857acf305a3cf2bdba028
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ccfd3dd5c45d95cdf0187c5c2d1532538976ac5f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870796"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982927"
 ---
 # <a name="create-timeoffreason"></a>Criar timeOffReason
 

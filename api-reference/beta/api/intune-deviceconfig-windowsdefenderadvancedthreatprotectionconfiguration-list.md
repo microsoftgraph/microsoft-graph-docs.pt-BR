@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos windowsDefenderAdvance
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 653729fb13a4bb4f101b69fde8e37e58de5a7480
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 19dfc86586583dd4f32862d3330f0aea2fe2c577
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977629"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982302"
 ---
 # <a name="list-windowsdefenderadvancedthreatprotectionconfigurations"></a>Listar windowsDefenderAdvancedThreatProtectionConfigurations
 

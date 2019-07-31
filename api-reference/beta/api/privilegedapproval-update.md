@@ -2,12 +2,15 @@
 title: Atualizar privilegedapproval
 description: Atualize as propriedades do objeto privilegedapproval.
 localization_priority: Normal
-ms.openlocfilehash: 240036a9ee4df57745ca1a613511b2141eec6796
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6103e01ea9832bd7858215576eaeb4319514d6be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332068"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978802"
 ---
 # <a name="update-privilegedapproval"></a>Atualizar privilegedapproval
 

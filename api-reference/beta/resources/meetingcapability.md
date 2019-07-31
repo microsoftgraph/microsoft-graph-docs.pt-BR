@@ -4,12 +4,13 @@ description: Contém os recursos de uma reunião
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 55a577490ee4c40bbd4adcc63a7e4aa7f38c8dd1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1de406cf0614a4cbb64749cef763a97a3723eb48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342594"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966837"
 ---
 # <a name="meetingcapability-resource-type"></a>tipo de recurso meetingCapability
 
@@ -21,8 +22,8 @@ Contém os recursos de uma reunião
 
 | Propriedade                          | Tipo    | Descrição                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | Boolean | Indica se os usuários anônimos de discagem são permitidos em uma reunião. |
-| allowAnonymousUsersToStartMeeting | Boolean | Indica se os usuários anônimos podem iniciar uma reunião.  |
+| allowAnonymousUsersToDialOut      | Booliano | Indica se os usuários anônimos de discagem são permitidos em uma reunião. |
+| allowAnonymousUsersToStartMeeting | Booliano | Indica se os usuários anônimos podem iniciar uma reunião.  |
 | autoAdmittedUsers                 | String  | Os valores possíveis são: `everyoneInCompany` e `everyone`.              |
 
 ## <a name="json-representation"></a>Representação JSON

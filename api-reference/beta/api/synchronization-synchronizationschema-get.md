@@ -2,14 +2,15 @@
 title: Obter synchronizationSchema
 description: Recupere o esquema de um determinado trabalho de sincronização ou modelo.
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 779a4ccc2438c4be5343074afe7ea8e10d54f5e6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 55f6b6935808cd96bf9eebf8e2662d0649bbb66c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869152"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977663"
 ---
 # <a name="get-synchronizationschema"></a>Obter synchronizationSchema
 

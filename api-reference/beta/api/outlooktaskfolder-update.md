@@ -4,12 +4,13 @@ description: Atualizar as propriedades graváveis de uma pasta de tarefas do Out
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9785eafa31154b7c3bd8f55182077ef38ad6851c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8da97f756d449bf6494f13bd43b6228fa6a21c89
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877565"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983702"
 ---
 # <a name="update-outlooktaskfolder"></a>Atualizar outlooktaskfolder
 

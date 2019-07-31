@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos windowsInformationProt
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99ffffba71de95d0bec7aed2f8f3448f0cc1045b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 81b5e5ece41ad3467fc84ba6cf47ae3a97ba5400
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981500"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984661"
 ---
 # <a name="list-windowsinformationprotectionwipeactions"></a>Listar windowsInformationProtectionWipeActions
 

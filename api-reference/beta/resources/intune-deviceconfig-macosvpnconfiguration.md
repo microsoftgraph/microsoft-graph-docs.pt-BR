@@ -4,12 +4,13 @@ description: Ao fornecer as configurações neste perfil, você pode instruir o 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71032636d950b2a2b3d84d4f4bda2fb5c6e410d6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b4fe1a9ba5dab42c7af90ec6be611c3a36ae5768
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992063"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970133"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>tipo de recurso macOSVpnConfiguration
 

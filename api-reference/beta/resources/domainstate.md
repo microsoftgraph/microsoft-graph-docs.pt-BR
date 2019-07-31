@@ -4,12 +4,13 @@ description: Representa o status de operações assíncronas agendadas em um dom
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c1afe3402d20c534a3e976d21a4f00de969f20ee
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 40e3bb3055e0156f00f95598f50a343adc332423
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657116"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973091"
 ---
 # <a name="domainstate-resource-type"></a>tipo de recurso domainstate
 

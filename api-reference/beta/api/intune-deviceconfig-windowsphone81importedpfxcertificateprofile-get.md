@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windowsPhone81Import
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c00095b455c6e86d2de54a71a766bf742b49e508
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 66df89155b4535d80cb74fa0df7d259f229f6e7d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961662"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982085"
 ---
 # <a name="get-windowsphone81importedpfxcertificateprofile"></a>Obter windowsPhone81ImportedPFXCertificateProfile
 

@@ -2,12 +2,15 @@
 title: tipo de recurso governanceRuleSetting
 description: Representa as regras nas quais as configurações de função são compostas.
 localization_priority: Normal
-ms.openlocfilehash: 433fc0d3ab3a524b86bbf1fc46dbe5185549473b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: bfc3bb7895a3ec66a32456b48901fc456d3c3b2e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333714"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971863"
 ---
 # <a name="governancerulesetting-resource-type"></a>tipo de recurso governanceRuleSetting
 

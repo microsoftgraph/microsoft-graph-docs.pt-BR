@@ -4,12 +4,13 @@ description: Modo de otimização de entrega para distribuição de mesmo nível
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a41d359f77f0fd2a893236c9a4e952b321d003b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 1c146b42eab11dab4d90de9b3b134fdd29327323
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994080"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969069"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeração windowsDeliveryOptimizationMode
 

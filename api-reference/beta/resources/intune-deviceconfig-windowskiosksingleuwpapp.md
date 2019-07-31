@@ -4,12 +4,13 @@ description: A classe usada para identificar as informações do aplicativo UWP 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff8f3cc5ecff336b179229bf24f3221cf27163c7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a52a940af8b9afedfa798c1483b7408002a0b603
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995375"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968887"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>tipo de recurso windowsKioskSingleUWPApp
 

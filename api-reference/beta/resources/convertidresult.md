@@ -2,12 +2,15 @@
 title: tipo de recurso convertIdResult
 description: O resultado de uma conversão de formato de ID executada pela função translateExchangeIds.
 localization_priority: Normal
-ms.openlocfilehash: 5981f75ee071777f9119d0db2c0078153a160180
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 040b13ab83eacffb33e8903f7d11823adb6e1bf1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341033"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973190"
 ---
 # <a name="convertidresult-resource-type"></a>tipo de recurso convertIdResult
 

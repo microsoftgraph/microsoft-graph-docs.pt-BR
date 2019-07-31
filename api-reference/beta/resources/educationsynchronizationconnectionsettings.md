@@ -4,12 +4,13 @@ description: 'Representa as configurações de conexão do provedor. Isso permit
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 387c002240d54d1ec12e58564e91831d6f0e8a50
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c82d912b13ca68dcdccd5ace0232ed65f92cd879
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334099"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972482"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>tipo de recurso educationSynchronizationConnectionSettings
 

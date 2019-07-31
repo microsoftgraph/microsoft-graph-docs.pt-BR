@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 194bad4dd3e5a6b2a260ef7795311047cf66ff38
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 1dee315f7c81df22af296a7abcd537596d1bccae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983061"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968453"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>tipo de enumeração deviceGuardVirtualizationBasedSecurityState
 

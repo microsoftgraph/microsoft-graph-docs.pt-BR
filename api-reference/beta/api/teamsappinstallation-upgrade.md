@@ -2,15 +2,15 @@
 title: Atualizar um aplicativo em uma equipe
 description: Atualiza uma instalação de aplicativo em uma equipe
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d533b8aee19ee085c67b5c56b9c856cafa1e6806
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 3d322d91ca0d03299bb53d73fe75d98e15458db5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977514"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>Atualizar um aplicativo em uma equipe
 

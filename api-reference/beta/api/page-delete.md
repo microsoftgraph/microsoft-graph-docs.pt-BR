@@ -4,12 +4,13 @@ description: Excluir uma página do OneNote.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: d9a923bd66b4476271dbb41f7f55e68fc15b2bf2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a2410cf0e73db38a4e4ee34c464095953b072ce5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983590"
 ---
 # <a name="delete-page"></a>Excluir página
 

@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos resourceOperation.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 474e4c3a6ac1aba67ad14fdd2aa3177ab7c25e22
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9ac0883c2b32a9ffb4afc213db95d402e32d3977
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988576"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980034"
 ---
 # <a name="list-resourceoperations"></a>Listar resourceOperations
 

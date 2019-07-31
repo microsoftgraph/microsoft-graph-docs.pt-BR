@@ -2,12 +2,15 @@
 title: tipo de recurso governanceRoleAssignmentRequestStatus
 description: Representa o status do governanceRoleAssignmentRequest.
 localization_priority: Normal
-ms.openlocfilehash: 768ef092dbe52b0989277905bae03eee091ca8c6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ca61e5e3ef5456889eafcef3914f16fc072dfb6b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340286"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971854"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>tipo de recurso governanceRoleAssignmentRequestStatus
 
@@ -20,7 +23,7 @@ Representa o status do [governanceRoleAssignmentRequest](../resources/governance
 Propriedade       | Tipo |Descrição|
 |:----|:-------------|:-----|
 |status |String| O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed`.|
-|subStatus |String| O status da solicitação de atribuição de função. Os valores podem ser `Accepted`, `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `AdminApproved` `AdminDenied` `PendingAdminDecision` `PendingApproval` `Failed` `PendingApprovalProvisioning` `FailedAsResourceIsLocked` `TimedOut`,,,,,,,,,,,,,, e `ProvisioningStarted` `PendingRevocation` `Revoked` `Canceled`|
+|substatus |String| O status da solicitação de atribuição de função. Os valores podem ser `Accepted`, `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `AdminApproved` `AdminDenied` `PendingAdminDecision` `PendingApproval` `Failed` `PendingApprovalProvisioning` `FailedAsResourceIsLocked` `TimedOut`,,,,,,,,,,,,,, e `ProvisioningStarted` `PendingRevocation` `Revoked` `Canceled`|
 |statusDetails       |Coleção [KeyValue](../resources/keyvalue.md)| Os detalhes do status da solicitação de atribuição de função. Ele representa os resultados de avaliação de regras diferentes. |
 
 ## <a name="json-representation"></a>Representação JSON

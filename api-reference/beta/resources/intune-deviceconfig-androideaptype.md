@@ -4,12 +4,13 @@ description: Tipos de configuração EAP (Extensible Authentication Protocol).
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05824bc47ab4d9c086786c26d93f59d72d4f84f7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 0550d3dfd265a6ce6bbbb6c11e63b821c7656d77
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988297"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971435"
 ---
 # <a name="androideaptype-enum-type"></a>tipo de enumeração androidEapType
 

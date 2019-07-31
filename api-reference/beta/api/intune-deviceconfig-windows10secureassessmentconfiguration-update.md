@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto windows10SecureAssessmentCon
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25fdcbb6ccf3be8b6ed3a647024c54a859a10019
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: c2271163181b6be26d57cfe0cbf4443bd14ff829
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715218"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976800"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>Atualizar windows10SecureAssessmentConfiguration
 

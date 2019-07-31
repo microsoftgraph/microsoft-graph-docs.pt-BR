@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto userPFXCertificate.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce7aa967f62010f335c75b0211794f733de8e1f5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 23e6b3e20add16caff4c8d756c963e091132c8ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988752"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980202"
 ---
 # <a name="update-userpfxcertificate"></a>Atualizar userPFXCertificate
 

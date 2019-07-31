@@ -4,12 +4,13 @@ description: Representa o endereço físico de um recurso, como um contato ou ev
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d6081f21069cef6014c8a028898f11ea9a3f4f3c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 35826dabd9052023abdc9d8c83ac9640ef550061
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344967"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966108"
 ---
 # <a name="physicaladdress-resource-type"></a>Tipo de recurso physicalAddress
 
