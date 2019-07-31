@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 90c2c8a25602ac2a2c4197c916b9ce14e03b8e6d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f4facea69555bd892784b26c17c2d3b79e754258
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458611"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956524"
 ---
 # <a name="create-vendors"></a>Criar fornecedores
 Criar um objeto fornecedor no Dynamics 365 Business central.
@@ -76,7 +77,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

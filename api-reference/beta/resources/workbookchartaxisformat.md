@@ -4,12 +4,13 @@ description: Encapsula as propriedades de formato do eixo do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8c152971dde5efb188cfde30c30b54a1266b44fb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 91e749fd0f1449883eca261f5ef27c0f2a7ba5dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348464"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964082"
 ---
 # <a name="workbookchartaxisformat-resource-type"></a>tipo de recurso workbookChartAxisFormat
 
@@ -23,7 +24,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |font|[workbookChartFont](workbookchartfont.md)|Representa os atributos de fonte de um elemento do eixo do gráfico, como nome, tamanho, cor, etc. Somente leitura.|

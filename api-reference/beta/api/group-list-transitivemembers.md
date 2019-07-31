@@ -4,12 +4,13 @@ description: Obtenha uma lista dos membros do grupo. Um grupo pode ter usuários
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 7864f53939b4fc81ed1317a980f64089e035e28d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f98dc43773a5679a3458ebc52f58c2eab9d455ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858163"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953630"
 ---
 # <a name="list-group-transitive-members"></a>Membros transitivos do grupo de lista
 

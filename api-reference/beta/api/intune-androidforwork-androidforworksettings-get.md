@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto androidForWorkSettings.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7093a32171f4753c93b3acce85d3e10449f0354
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3f26c9588d90de3a5f3623cd1a56037d2abb4ddb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965540"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952713"
 ---
 # <a name="get-androidforworksettings"></a>Get androidForWorkSettings
 

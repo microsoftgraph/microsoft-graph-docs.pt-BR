@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 0de10e65843efbf06968273930c7835a5d4941a2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 36be8d31d7ee43c125d77b5cf233c0c63848cf45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458632"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955908"
 ---
 # <a name="delete-taxgroups"></a>Excluir taxGroups
 Excluir um objeto de grupo de impostos do Dynamics 365 Business central.
@@ -55,7 +56,7 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/taxGroups('{id}')
 ```
 
-**Response** 
+**Resposta** 
 
 Veja a seguir um exemplo da resposta. 
 

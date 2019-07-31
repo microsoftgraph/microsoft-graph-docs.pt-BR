@@ -4,12 +4,13 @@ description: Exclui managedIOSLobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 374a3f5660696bda8dc0d9ab29ca34a47dac494b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c02f61088053c1fdaa2508fa0954a49b7ca6f2d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974598"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961396"
 ---
 # <a name="delete-managedioslobapp"></a>Excluir managedIOSLobApp
 

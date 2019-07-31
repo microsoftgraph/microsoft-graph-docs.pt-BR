@@ -4,12 +4,13 @@ description: Informações calculadas que retornam a lista de arquivos usados co
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 053f36b893cf2167cd30ea8ca1fe639a6df22494
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 31115a845c3b5af80aaba700e55e0ede05d922b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328647"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953070"
 ---
 # <a name="list-used"></a>Listar usados
 
@@ -46,7 +47,7 @@ Ou com base no tipo de contêiner:
 
 `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-ConFira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).
+Confira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto androidDeviceOwnerEn
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5ff6abd0f6375e8ba70b208a8ff0de9865222e8
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 34c0c22c0df2114f238bc06ded50541f9059ca8d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711536"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952937"
 ---
 # <a name="get-androiddeviceownerenrollmentprofile"></a>Obter androidDeviceOwnerEnrollmentProfile
 

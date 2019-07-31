@@ -4,12 +4,13 @@ description: Criar um novo objeto windowsKioskConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e81355897bbdb108897e941e0db102d49068787
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: bee2c6b4c96fc8a1f54ffad0183413706bba9bde
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35722029"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962313"
 ---
 # <a name="create-windowskioskconfiguration"></a>Criar windowsKioskConfiguration
 

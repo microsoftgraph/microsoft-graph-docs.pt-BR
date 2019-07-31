@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 63bd3e150e822d3c356f4409c2920e4998e53ec2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 6832d4c1829c6fd7ce679fe12511b694cc999b95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551516"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963777"
 ---
 # <a name="yammerdeviceusageusercounts-resource-type"></a>tipo de recurso yammerDeviceUsageUserCounts
 

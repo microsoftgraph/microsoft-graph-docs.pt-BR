@@ -4,12 +4,13 @@ description: Exclui androidWorkProfileNineWorkEasConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c44c974c2c2b8e9f4d43ee18dcbffdca1112e9ed
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d39493a5ce9950e4b9778867f52c7263112f1ae8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969257"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950669"
 ---
 # <a name="delete-androidworkprofilenineworkeasconfiguration"></a>Excluir androidWorkProfileNineWorkEasConfiguration
 

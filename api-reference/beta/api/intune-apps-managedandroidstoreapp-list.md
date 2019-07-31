@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos managedAndroidStoreApp
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28d73f9837da300963ed8e8756f43c3cd3c21b58
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 02f4e51be7442949c38bd22f663f9a4134876cc7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974976"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961781"
 ---
 # <a name="list-managedandroidstoreapps"></a>Listar managedAndroidStoreApps
 

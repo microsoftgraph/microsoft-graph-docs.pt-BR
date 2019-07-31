@@ -4,12 +4,13 @@ description: Obter as instâncias (ocorrências) de um evento para um intervalo 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 009f3a4d0b4f7670025a2b6868d6384f948b6e26
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2dcc49d9eef4b1ea68f6e736fbf2f81fb8452a17
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859532"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954484"
 ---
 # <a name="list-instances"></a>Listar instâncias
 

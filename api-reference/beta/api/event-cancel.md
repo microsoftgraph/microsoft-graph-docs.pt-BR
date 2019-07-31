@@ -4,12 +4,13 @@ description: 'Esta ação permite que o organizador de uma reunião envie uma me
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7dcd2d1de8bdb4b0000434dbdeb4182a4285259b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c402f13a50b591c88a707367d91fd2272f6084cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954596"
 ---
 # <a name="event-cancel"></a>evento: cancelar
 

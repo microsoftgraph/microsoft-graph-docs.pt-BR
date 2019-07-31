@@ -4,12 +4,13 @@ description: Obter grupos e unidades administrativas dos quais o grupo é membro
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a8a61d96261965b85b3dafac6959f28f2b61f6ac
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b1b3e3d52db48c46550b8d66821b03e2554a2f32
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953708"
 ---
 # <a name="list-group-memberof"></a>Grupo de lista memberOf
 

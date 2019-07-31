@@ -5,12 +5,13 @@ description: Não siga um item que o usuário está seguindo.
 title: Item da unidade não seguir
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: de93302c0d08f343a0b078ceb32325cba5e4cac0
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: apiPageType
+ms.openlocfilehash: 93d07621b745755cd57afaff458d711498e02863
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956942"
 ---
 # <a name="unfollow-drive-item"></a>Item da unidade não seguir
 

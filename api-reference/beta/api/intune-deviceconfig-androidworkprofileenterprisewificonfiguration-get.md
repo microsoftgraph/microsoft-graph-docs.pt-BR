@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto androidWorkProfileEn
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7dd09d30cfb21a92e2c21f08d10b89cc5dfdea6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 40246a3ed2a73e421d378adbea1d955ea1cda942
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950858"
 ---
 # <a name="get-androidworkprofileenterprisewificonfiguration"></a>Obter androidWorkProfileEnterpriseWiFiConfiguration
 

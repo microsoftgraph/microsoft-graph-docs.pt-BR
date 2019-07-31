@@ -2,12 +2,15 @@
 title: tipo de recurso recentNotebook
 description: Um bloco de notas do OneNote recentemente acessado. Um **recentNotebook** é similar a um notebook, mas tem menos propriedades.
 localization_priority: Normal
-ms.openlocfilehash: 599bee8d2f87cdc3809016909a73f21bd18651e1
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 948d3deed4e2bc51e95f0e04b5e962b09eb69195
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236563"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965502"
 ---
 # <a name="recentnotebook-resource-type"></a>tipo de recurso recentNotebook
 

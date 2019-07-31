@@ -2,12 +2,15 @@
 title: Listar governanceRoleAssignments
 description: Recupere uma coleção de governanceRoleAssignments.
 localization_priority: Normal
-ms.openlocfilehash: ed8ad77fdd2621bc14cad12a34b06836607b3b98
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: bd635d2abe405a1e09b6c672cfd4ecb2145ff793
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422434"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954197"
 ---
 # <a name="list-governanceroleassignments"></a>Listar governanceRoleAssignments
 

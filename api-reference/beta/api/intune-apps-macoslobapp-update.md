@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto macOSLobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f246f2b743154a9a74c6289670a73124ba23c572
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 69a2a938d142ac98c0eb705abe871228e707eb46
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975291"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962124"
 ---
 # <a name="update-macoslobapp"></a>Atualizar macOSLobApp
 

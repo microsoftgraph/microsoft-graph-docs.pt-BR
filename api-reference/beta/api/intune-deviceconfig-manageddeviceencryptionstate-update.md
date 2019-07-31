@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto managedDeviceEncryptionState.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c371c5663632af94dfade0b72b4a6d443aa1758
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: def987033cc6a1ea34159f5de9038d0f2c0ceefb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715302"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946605"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>Atualizar managedDeviceEncryptionState
 

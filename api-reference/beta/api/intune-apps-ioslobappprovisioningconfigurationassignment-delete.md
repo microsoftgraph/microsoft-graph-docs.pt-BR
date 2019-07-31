@@ -4,12 +4,13 @@ description: Exclui iosLobAppProvisioningConfigurationAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a7536ef3643a84dd97162b6147812a2e0717885
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 484c9dd46d62e2b930ac0377966891a96f7cfd8a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966121"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951782"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationassignment"></a>Excluir iosLobAppProvisioningConfigurationAssignment
 

@@ -4,12 +4,13 @@ description: Expanda ' parâmetro no **evento**
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d2fa99650276fac357a3673394ff1f3ce7efc0c3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d10467d9761a5a80e11e6896b633b494abd2806a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859371"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954410"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 

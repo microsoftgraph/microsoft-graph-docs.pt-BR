@@ -2,12 +2,15 @@
 title: Obter o ponto de extremidade
 description: Recupere as propriedades e os relacionamentos de um objeto Endpoint específico.
 localization_priority: Normal
-ms.openlocfilehash: 0bd4e87d44b0f3b204a6139e0da0f464c1c9db27
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 45739caf7dab65c197b9fd19213da98536337d16
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859804"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954617"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 

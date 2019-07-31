@@ -4,12 +4,13 @@ description: As configurações que determinam o conteúdo de uma guia.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: beeb9c6b06457795b802e18a1a2f7fac909e0c6c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c53fdc0b21a00c5eae43b8c170a1512e55d496b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345700"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964423"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>tipo de recurso teamsTabConfiguration (tipo aberto)
 

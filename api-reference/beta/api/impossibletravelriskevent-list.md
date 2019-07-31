@@ -2,12 +2,15 @@
 title: Listar impossibleTravelRiskEvents
 description: Recupere uma lista de objetos impossibletravelriskevent.
 localization_priority: Normal
-ms.openlocfilehash: ca526129abbee7381da1a6f957d5092ae00a06f5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 51618f9d90771aaa8364828872bb5c15b8efa291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953133"
 ---
 # <a name="list-impossibletravelriskevents"></a>Listar impossibleTravelRiskEvents
 

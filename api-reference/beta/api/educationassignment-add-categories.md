@@ -4,12 +4,13 @@ description: Adicionar um educationCategory existente a este educationAssignment
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: afb89d40dd0f074da9ef1f6c7b0aeb1ff952c43f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: b5395ab656d0a5e44b4f3a45f7c136009c5bcc61
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325179"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955789"
 ---
 # <a name="add-educationcategories"></a>Adicionar educationCategories
 

@@ -4,12 +4,13 @@ description: Chamar esse método permitirá que o usuário atual receba notifica
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 12503de3c37cfa6e77affdd8125fe9cc7e431232
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a44ad6af1731dddf9fb0e124a837ba165f5d0e0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857916"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953462"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 

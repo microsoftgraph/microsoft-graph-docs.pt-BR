@@ -4,12 +4,13 @@ description: Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter u
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 3cb6c9791e6a94d3d7091f21601db6deb6cb6dfb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c6e48f1d41d90e8072f7f50bd8ed35d970328160
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858407"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953707"
 ---
 # <a name="list-group-members"></a>Membros do grupo de lista
 

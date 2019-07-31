@@ -4,12 +4,13 @@ description: Representa uma atividade em um turno.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 24946630e9bc3ae9ba418f5c322ab212c022d6d1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: 8acfb16235c90cf6067ad5fd6c5d8e82ae239f8d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343068"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965072"
 ---
 # <a name="shiftactivity-resource-type"></a>tipo de recurso shiftActivity
 
@@ -20,7 +21,7 @@ Representa uma atividade em um [turno](shift.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade                         | Tipo                    | Descrição                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| isPago               | `bool`                  | Indica se o `microsoft.graph.user` deve ser pago para a atividade durante seu `shift`. Obrigatório.    |
+| ispago               | `bool`                  | Indica se o `microsoft.graph.user` deve ser pago para a atividade durante seu `shift`. Obrigatório.    |
 | startDateTime               | `DateTimeOffset`                  | A data e a hora de início `shiftActivity`para o. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. Obrigatório. |
 | endDateTime               | `DateTimeOffset`                  | A data e a hora de término `shiftActivity`para o. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. Obrigatório.    |
 | código               | `string`                  | Código definido pelo cliente para `shiftActivity`o. Obrigatório.    |

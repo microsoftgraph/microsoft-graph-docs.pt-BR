@@ -4,12 +4,13 @@ description: Um grupo de seções em um bloco de anotações do OneNote. Os grup
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f1cd9757b0a58afb4183bd917a7a090b14502a36
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4637784ac20d92c82e7a4771c815136ddd3e175a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343390"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965268"
 ---
 # <a name="sectiongroup-resource-type"></a>tipo de recurso de @ @ @ Section
 

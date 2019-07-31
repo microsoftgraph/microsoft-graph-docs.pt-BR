@@ -4,12 +4,13 @@ description: Obter o status de um perfil de sincronização de dados escolar esp
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ec1d86e7f9b4fc0ea57daf1bb979a45ed7abb9be
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1b9d8a1b8faf09ce9f70b4744dc116513b12c640
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859937"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954743"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Obter o status de um educationSynchronizationProfile
 

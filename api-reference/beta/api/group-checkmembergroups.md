@@ -4,12 +4,13 @@ description: Verifique se há associação na lista de grupos especificada. Reto
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 8d9219050cce3e633509d44e5d0c1d57eafbc98c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: af5aa9b1d291508530eaba72892e657ce95a627e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859013"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954036"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 

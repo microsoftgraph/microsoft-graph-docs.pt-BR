@@ -2,12 +2,15 @@
 title: Obter Entidadegovernanceresource
 description: Recupere as propriedades e os relacionamentos de um objeto Entidadegovernanceresource.
 localization_priority: Normal
-ms.openlocfilehash: 346ebe770b12d9a66c77951521e59b453fbc8ea6
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: cc725dd55c3a4bbc5c541f4c34f30ff1c8935d8c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422427"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954309"
 ---
 # <a name="get-governanceresource"></a>Obter Entidadegovernanceresource
 

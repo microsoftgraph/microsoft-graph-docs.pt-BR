@@ -4,12 +4,13 @@ description: Obter grupos e unidades administrativas dos quais o grupo é membro
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 787870d802860b76695253931df03e3c873fbcd8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f93d4e812dc4673a72d8e4aa6ed324710819a510
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858230"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953644"
 ---
 # <a name="list-group-transitive-memberof"></a>Lista de grupos transitivos transitivos
 

@@ -4,12 +4,13 @@ description: O recurso **plannerExternalReferences** representa a coleção de r
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6684757b9eb8b1d05a738b5aed887a05e8f32cb3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 65eb2deb04f44bd08be14cf1c0c6d61807552efa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966011"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>tipo de recurso plannerExternalReferences
 

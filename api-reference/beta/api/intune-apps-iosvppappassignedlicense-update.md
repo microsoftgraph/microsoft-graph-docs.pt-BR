@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto iosVppAppAssignedLicense.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bab48cd182c3914de2560fec956405d51251f5d8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4bfaa9ff143ba2996e4d34e3a512561bd080e0b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975487"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962362"
 ---
 # <a name="update-iosvppappassignedlicense"></a>Atualizar iosVppAppAssignedLicense
 

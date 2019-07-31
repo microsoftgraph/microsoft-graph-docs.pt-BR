@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto managedIOSLobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f7a4866a88e839366d89a95f16e0ca6f68f5552
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d4963f94bbf00bb5f67b74b26f338c8a1d7d3078
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974563"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961354"
 ---
 # <a name="update-managedioslobapp"></a>Atualizar managedIOSLobApp
 

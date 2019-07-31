@@ -4,12 +4,13 @@ description: 'Criar uma solicitação para um novo perfil de sincronização de 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 79e3e19f4361f0fe1fd7cb9090c685e60a46f259
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e4fe25723d146a30ad94bd99491bafe293da523a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324381"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954806"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Criar um educationSynchronizationProfile
 

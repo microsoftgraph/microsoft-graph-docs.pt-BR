@@ -4,12 +4,13 @@ description: Obtém um conjunto de eventos que foram adicionados, excluídos ou 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 375b2b8231df1877e81268b96f2bbaec1774a551
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ae00c41331d245974b9f643e70fb0c44740c3689
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859665"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954554"
 ---
 # <a name="event-delta"></a>evento: delta
 

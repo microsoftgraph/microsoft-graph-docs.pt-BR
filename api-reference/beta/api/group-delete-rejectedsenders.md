@@ -4,12 +4,13 @@ description: Remover um usuário ou grupo da lista de remetentes rejeitados.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 9eccda8c9fce5a8582215d1bf296fcbf3adafda2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f10877431a1b7931df67697a556f00be4f3cbbab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858834"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954058"
 ---
 # <a name="remove-rejectedsender"></a>Remover rejectedSender
 

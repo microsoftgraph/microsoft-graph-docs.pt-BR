@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto iosEasEmailProfileConfigurati
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ef41ed4f5100979644f000784ce115a9b181e48
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c65b09fba0bee71610ecdc3d41ad54f38b0b7e33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966975"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948471"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>Atualizar iosEasEmailProfileConfiguration
 

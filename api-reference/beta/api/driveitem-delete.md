@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Excluir um DriveItem usando sua ID ou seu caminho.
 ms.date: 09/10/2017
 title: Excluir um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d4b3222e25d715b64ead1a91c1d3b21e033b2ca6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7b2df0e8e0cc529238fbc529c0e1281f4c6f258c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861239"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957175"
 ---
 # <a name="delete-a-driveitem"></a>Excluir um DriveItem
 

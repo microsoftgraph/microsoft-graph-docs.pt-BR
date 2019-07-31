@@ -4,12 +4,13 @@ description: Recupere o conjunto de perfis de sincronização de dados da escola
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d42685d46aea1ec53c32710ea5efce81055cf515
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: ee295989618b4095425267fd1ff3d0bebfaf8baf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324398"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954856"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Listar educationSynchronizationProfiles
 

@@ -4,12 +4,13 @@ description: " o valor é o objeto plannerPlanContextDetails."
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 2e2f292de763674510f6da5a8aad90fe8e17ab7f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b8adf130dc925a4d9eb17819acf7b2a670a6c7b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344393"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965898"
 ---
 # <a name="plannerplancontextdetailscollection-resource-type"></a>tipo de recurso plannerPlanContextDetailsCollection
 

@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto microsoftStoreForBusinessAp
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: baa9b3622e5db616235808966f96ba47303ed49f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 322d087af921716eed03b144309b0f91c0729842
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974423"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961214"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>Get microsoftStoreForBusinessApp
 
