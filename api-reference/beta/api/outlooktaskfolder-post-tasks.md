@@ -4,12 +4,13 @@ description: Criar uma tarefa do Outlook na pasta de tarefas especificada.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 050d45319f822531c951a665788f1c1669406532
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a6e26dc9640baaf5c6f7a81bda29ba5b1c035a51
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337898"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988689"
 ---
 # <a name="create-outlooktask"></a>Criar outlookTask
 
@@ -77,7 +78,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [outlookT
 ##### <a name="response"></a>Resposta
 O método POST ignora a parte da hora no corpo da solicitação e assume que a hora seja sempre meia-noite no fuso horário especificado (PST). Em seguida, por padrão, o método POST converte e mostra todas as propriedades relacionadas à data em UTC na resposta.
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

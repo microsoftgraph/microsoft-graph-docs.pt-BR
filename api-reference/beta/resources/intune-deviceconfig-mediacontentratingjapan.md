@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49cd72a43f220eda6116c821bedbe1feceb9dd60
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8be7c810498f4ae395492c5265fa5cdcc45a9a7b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986771"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000792"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>Tipo de recurso mediaContentRatingJapan
 

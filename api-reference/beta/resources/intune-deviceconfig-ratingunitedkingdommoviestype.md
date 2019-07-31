@@ -4,12 +4,13 @@ description: Rótulos de classificação de filmes no Reino Unido
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4673a80102fe481852a7cb4fbff950983058463
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 8cc13022e3c5ed0a15f715957878bdabdc1794c5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957651"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000682"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enumeração ratingUnitedKingdomMoviesType
 

@@ -4,12 +4,13 @@ description: Este tópico fornece descrições dos métodos declarados, das prop
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9004f888b1e18fa1a5f27249ff6ee99e7df309a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 61b93e6721144215cc4f961e6bde2e6e01d0ad41
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964245"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000512"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>Tipo de recurso sharedPCConfiguration
 

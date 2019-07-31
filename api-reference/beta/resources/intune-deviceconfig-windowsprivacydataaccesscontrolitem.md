@@ -4,12 +4,13 @@ description: Especificar o nível de controle de acesso por categoria de dados d
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29e1ef015212974b363155299fcce012ba3d50e6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 7ac4d30cd2ffadcc795d6414dc09a4ad5c753d41
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996474"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000302"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>tipo de recurso windowsPrivacyDataAccessControlItem
 

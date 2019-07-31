@@ -4,12 +4,13 @@ description: Atualize as propriedades do objeto de tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 55e12887e884984c7abab362b61bde3d9b1913b6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f26f360863f82d8fbbdcc924744f86822b1aeca0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868767"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982561"
 ---
 # <a name="update-table"></a>Atualizar tabela
 

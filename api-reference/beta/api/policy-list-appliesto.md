@@ -2,12 +2,15 @@
 title: Listar aplicativos e entidades de serviço com política específica atribuída
 description: Recupere o aplicativo e os objetos de entidade de serviço com a política especificada atribuída.
 localization_priority: Normal
-ms.openlocfilehash: c58822e5e3c90f5774721e425af62b40422d3db2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a3a24b3f54fa6d53b3936664be97cc3da0979a01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337377"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992084"
 ---
 # <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>Listar aplicativos e entidades de serviço com política específica atribuída
 

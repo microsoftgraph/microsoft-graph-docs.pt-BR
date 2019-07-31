@@ -4,12 +4,13 @@ description: base de perfil de certificado iOS.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d57aa65afc24ddf4ce02d6405af1432eeb41e0b6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c1d27f0ee47533133903f953d193e9063c799bf8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988325"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001240"
 ---
 # <a name="ioscertificateprofilebase-resource-type"></a>tipo de recurso iosCertificateProfileBase
 

@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7bd4e156551258d98885490fbcb9dc0cd90163e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4c5cba0b06d00605510003a71aa826e11ae79426
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992014"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000869"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>Tipo de recurso mediaContentRatingAustralia
 

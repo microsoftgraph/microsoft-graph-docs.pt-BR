@@ -4,12 +4,13 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 18265a9d9e86b79706b6a268df3b8512b7b65111
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a87f504824136fc1f3e3639361e22f78c6719dba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328195"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974133"
 ---
 # <a name="bookingreminder-resource-type"></a>tipo de recurso bookingReminder
 

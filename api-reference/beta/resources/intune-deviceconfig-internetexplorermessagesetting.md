@@ -4,12 +4,13 @@ description: Qual mensagem será exibida por borda antes de mudar para o Interne
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d467d092980bce2ceff71897f3f7775d378675d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f9ae7848ced827342fb556c2ca344261f8f25362
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988388"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001325"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>tipo de enumeração internetExplorerMessageSetting
 

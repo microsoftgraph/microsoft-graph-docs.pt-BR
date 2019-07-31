@@ -4,12 +4,13 @@ description: Representa como uma atribuição será classificada. Isso é usado 
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 6e293ea97bc2b101128f9eb66f0da1f1f042cb72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 5af649da3e34336e1e8a1d45d70ab391c300ab35
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340714"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972828"
 ---
 # <a name="educationassignmentgradetype-resource-type"></a>tipo de recurso educationAssignmentGradeType
 
@@ -17,7 +18,7 @@ ms.locfileid: "33340714"
 
 Representa como uma atribuição será classificada. Isso é usado na propriedade **assignments. Grading** .
 
-Essa superclasse não pode ser usada diretamente na propriedade assignment. Ele existe para permitir várias maneiras diferentes de comParecer as atribuições.
+Essa superclasse não pode ser usada diretamente na propriedade assignment. Ele existe para permitir várias maneiras diferentes de comparecer as atribuições.
 
 
 ## <a name="properties"></a>Propriedades

@@ -4,12 +4,13 @@ description: Representa as informações de curso de uma aula.
 author: mlafleur
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: eac609f787621e30d4707d477296fc53af77dad0
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: resourcePageType
+ms.openlocfilehash: c160f9bd20f7dfccfa19dbf4d466dd967fde9c2c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34764729"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972758"
 ---
 # <a name="educationcourse-resource-type"></a>tipo de recurso educationCourse
 

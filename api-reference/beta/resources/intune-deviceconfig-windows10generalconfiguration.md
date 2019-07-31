@@ -4,12 +4,13 @@ description: Este tópico fornece descrições dos métodos declarados, das prop
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f1b8fef3b14affd252a4ff26f92a19debb9102b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c0f637ae7a8adb25ca965b169a1d8e4f92c87478
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982249"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000415"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Tipo de recurso windows10GeneralConfiguration
 

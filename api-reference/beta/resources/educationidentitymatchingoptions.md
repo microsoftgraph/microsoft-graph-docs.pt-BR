@@ -4,12 +4,13 @@ description: Fornece um mapeamento entre uma propriedade de origem e uma proprie
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 37ebb55fdd5457841ca0083c18518babca7565c4
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: resourcePageType
+ms.openlocfilehash: 88a22ff446aaa4fd1e7093ec507372c03afcc42b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972688"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>tipo de recurso educationIdentityMatchingOptions
 

@@ -4,12 +4,13 @@ description: Obtenha as tendências da quantidade de atividade do Yammer em sua 
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: c601d76100324606abed0981f8e339ea532ec339
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 14e608eed82d75a32ddf6195d76bbf6ca6dc8c72
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871425"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991790"
 ---
 # <a name="reportroot-getyammeractivitycounts"></a>reportRoot: getYammerActivityCounts
 

@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto windows10GeneralConfigurati
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a366b6f3b9b94fe7e3ffd3707db3376b7273efcd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e10547dc9e80e14d4c170cafd85d597cb2dacdd8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975442"
 ---
 # <a name="get-windows10generalconfiguration"></a>Get windows10GeneralConfiguration
 

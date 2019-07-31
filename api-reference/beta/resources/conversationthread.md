@@ -4,12 +4,13 @@ description: Um conversationThread é uma coleção de postagens.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 39861bdebbc6bb869a4e55d379fd44b2ceb73400
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a44234c2ec82b0b28df6c9bbf57b8d8069f129f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973937"
 ---
 # <a name="conversationthread-resource-type"></a>tipo de recurso conversationThread
 
@@ -27,7 +28,7 @@ A coleção de destinatários da última postagem são os destinatários agregad
 |[Criar thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Inicie uma nova conversa criando primeiro um thread. Uma nova conversa, thread de conversas e posts são criados no grupo.|
 |[Obter conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Obtenha um thread específico pertencente a um grupo. |
 |[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Atualize o objeto conversationThread. |
-|[Delete](../api/conversationthread-delete.md) | Nenhuma |Exclua um objeto conversationThread. |
+|[Delete](../api/conversationthread-delete.md) | None |Exclua um objeto conversationThread. |
 |[reply](../api/conversationthread-reply.md)|Nenhum|Responda a este thread criando uma nova entidade Post.|
 |[Listar Postagens](../api/conversationthread-list-posts.md) |Coleção [post](post.md)| Obtenha as postagens do thread especificado. |
 

@@ -4,12 +4,13 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 12b075d273e0228466db063b2c9b91232c32fc2c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f1a363f651a6db3d8b99f1fbcb48ffee782ab9c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328239"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974175"
 ---
 # <a name="bookingbusiness-resource-type"></a>tipo de recurso bookingBusiness
 
@@ -24,7 +25,7 @@ Representa uma empresa em Microsoft bookings. Este é o objeto de nível superio
 |[Listar bookingBusinesses](../api/bookingbusiness-list.md) | coleção [bookingBusiness](bookingbusiness.md) |Obtenha uma coleção de objetos bookingbusiness no locatário. |
 |[Criar bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Crie uma nova empresa de livros da Microsoft. |
 |[Obter bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Leia as propriedades e os relacionamentos do objeto bookingBusiness.|
-|[Atualizar](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Atualize as propriedades em um objeto **bookingBusiness** . |
+|[Atualização](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Atualize as propriedades em um objeto **bookingBusiness** . |
 |[Delete](../api/bookingbusiness-delete.md) | Nenhum |Excluir um objeto **bookingBusiness** . |
 |[Criar bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Crie um novo bookingAppointment postando na coleção de compromissos.|
 |[Listar compromissos](../api/bookingbusiness-list-appointments.md) |coleção [bookingAppointment](bookingappointment.md)| Obtenha uma coleção de objetos bookingAppointment.|
@@ -46,9 +47,9 @@ Representa uma empresa em Microsoft bookings. Este é o objeto de nível superio
 |businesstype|String|O tipo de negócio.|
 |defaultCurrencyIso|String|O código da moeda na qual a empresa opera em reservas da Microsoft.|
 |displayName|String|O nome da empresa, que é a interface com os clientes. Esse nome aparece na parte superior da página agendamento de negócios.|
-|email|String|O endereço de email da empresa.|
+|email|Cadeia de caracteres|O endereço de email da empresa.|
 |id|String|Um identificador de programação exclusivo para a empresa. Somente leitura.|
-|isPublished|Boolean|A página de agendamento foi disponibilizada para clientes externos. Use as ações **publicar** e cancelar **publicação** para definir essa propriedade. Somente leitura.|
+|isPublished|Booliano|A página de agendamento foi disponibilizada para clientes externos. Use as ações **publicar** e cancelar **publicação** para definir essa propriedade. Somente leitura.|
 |phone|Cadeia de caracteres|O número de telefone da empresa. A propriedade **Phone** , junto com **endereço** e **webSiteUrl**, aparecem no rodapé de uma página de agendamento de negócios.|
 |publicUrl|String|A URL da página de agendamento, que é definida depois que você [publica](../api/bookingbusiness-publish.md) ou cancela a [publicação](../api/bookingbusiness-unpublish.md) da página. Somente leitura.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Especifica como as reservas podem ser criadas para essa empresa.|

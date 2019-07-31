@@ -4,12 +4,13 @@ description: A entidade descreve todas as informações sobre uma única diretiv
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e38daccc28f3525b0efc80586b71d7ac62359616
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4a68740101c79efda08f010b6e8410428c883bb2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998678"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>tipo de recurso groupPolicyDefinition
 

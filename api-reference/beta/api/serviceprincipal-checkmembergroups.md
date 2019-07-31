@@ -2,12 +2,15 @@
 title: 'servicePrincipalName: checkMemberGroups'
 description: Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
 localization_priority: Normal
-ms.openlocfilehash: 4750ed799fda1a9cfd7df701da57b27f946ee1a1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3b508568468770942602d15cfc1c118b7f088a98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977941"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipalName: checkMemberGroups
 

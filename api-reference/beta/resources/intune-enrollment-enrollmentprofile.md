@@ -4,12 +4,13 @@ description: O recurso enrollmentProfile representa uma coleção de configuraç
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47003125bd9e548774fe163f95afe17b10559389
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8ccd3bfaea1d76c77bea62bfb3ebefaad827570e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992665"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999175"
 ---
 # <a name="enrollmentprofile-resource-type"></a>tipo de recurso enrollmentProfile
 

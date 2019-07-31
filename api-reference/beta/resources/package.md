@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: " ou uma coleção de itens que deve ser tratada como uma coleção em vez de itens individuais."
 ms.date: 09/10/2017
 title: Packager
 localization_priority: Normal
-ms.openlocfilehash: 22acb26168e2973a789a5de919063f250fb77e8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 6ae382d1f69a88d814339370264dc5dc7fac9414
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344945"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966262"
 ---
 # <a name="package-resource-type"></a>Tipo de recurso Package
 

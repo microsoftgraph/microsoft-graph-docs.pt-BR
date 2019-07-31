@@ -4,12 +4,13 @@ description: Representa um cliente no Dynamics 365 Business central.
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: e4daa28018001fb6cb6e4866bedf8e256a72abef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2a3ad7bade33af9456e65e3c19b988b9d2f679b2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507256"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973636"
 ---
 # <a name="customers-resource-type"></a>tipo de recurso clientes
 Representa um cliente no Dynamics 365 Business central.
@@ -21,7 +22,7 @@ Representa um cliente no Dynamics 365 Business central.
 |[Obter clientes](../api/dynamics-customer-get.md)      |Eles   |Obtém um cliente.   |
 |[Criar clientes](../api/dynamics-create-customer.md)|Eles   |Cria um cliente.|
 |[Atualizar clientes](../api/dynamics-customer-update.md)|Eles   |Atualiza um cliente.|
-|[Excluir clientes](../api/dynamics-customer-delete.md)|Nenhuma        |Exclui um cliente.|
+|[Excluir clientes](../api/dynamics-customer-delete.md)|none        |Exclui um cliente.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade    | Tipo     |Descrição|

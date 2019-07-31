@@ -4,12 +4,13 @@ description: Essa operação cria um novo objeto trustFrameworkPolicy em um loca
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f5b06048859853fbf15b1d82cdee97ac507513fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: ac3e1546e72e91988ef5339ad201fab7f3f2224d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329813"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990562"
 ---
 # <a name="create-trustframeworkpolicy"></a>Criar trustFrameworkPolicy
 

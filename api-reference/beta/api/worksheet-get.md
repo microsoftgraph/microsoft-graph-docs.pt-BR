@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos do objeto de planilha
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 4aad3e678e3c7c9eb15137e5dc307beb1d9e675c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fe680465cf47d226b342651691a3ae68211b7cb0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866261"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987254"
 ---
 # <a name="get-worksheet"></a>Get Worksheet
 

@@ -4,12 +4,13 @@ description: Certificados de raiz confiável e PFX para iOS EDU.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30e7a68f76c60fafff9fc2b035a65a60307f775d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: dd063ec70dd794ffb151036ea7bbbda090829343
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981465"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001248"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>tipo de recurso iosEduCertificateSettings
 

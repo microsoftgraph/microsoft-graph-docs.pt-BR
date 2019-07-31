@@ -4,12 +4,13 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: d996c5e06c5c12e3a5115253bb73ed4a7a450258
-ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
+doc_type: resourcePageType
+ms.openlocfilehash: 864635014b3e215dabd11896922ca9e73a5e8cb9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645210"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974165"
 ---
 # <a name="bookingcustomer-resource-type"></a>tipo de recurso bookingCustomer
 

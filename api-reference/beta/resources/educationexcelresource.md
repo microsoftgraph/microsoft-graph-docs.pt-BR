@@ -4,12 +4,13 @@ description: 'Uma subclasse de educationResource. Esse tipo de recurso represent
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: be9ea1d08575ad9dc07ac9fe538a597da8db2803
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ef85a92b2629e8a652ce59210018725d6afecb9a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334416"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972739"
 ---
 # <a name="educationexcelresource-resource-type"></a>tipo de recurso educationExcelResource
 

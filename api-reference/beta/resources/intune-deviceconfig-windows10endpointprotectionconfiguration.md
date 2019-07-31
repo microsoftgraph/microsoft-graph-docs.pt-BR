@@ -4,12 +4,13 @@ description: Este tópico fornece descrições dos métodos declarados, das prop
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22d02e467aceca901887eef1d03dbb1450f6d3f2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 8c8386f19a9a6700aafa9b783c973a3c232f9bf8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731760"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000414"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>Tipo de recurso windows10EndpointProtectionConfiguration
 

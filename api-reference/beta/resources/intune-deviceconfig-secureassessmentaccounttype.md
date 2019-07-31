@@ -4,12 +4,13 @@ description: Tipo de contas permitidas para o Windows10SecureAssessment Configur
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4fc8f8a163cf6e55e5fd592e3d9e0a08a9655df
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: f1f7e2b6b9cbc32ee41840d96b706322660fd2b2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715617"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000554"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>tipo de enumeração secureAssessmentAccountType
 

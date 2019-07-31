@@ -4,12 +4,13 @@ description: Altera a altura das linhas do intervalo atual para obter o melhor a
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1dd2cc4519ad47eca20b2c15a8cab60655845ded
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f0bd76273172afc3ba71d9af5f73bd3647442a5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874423"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978256"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 

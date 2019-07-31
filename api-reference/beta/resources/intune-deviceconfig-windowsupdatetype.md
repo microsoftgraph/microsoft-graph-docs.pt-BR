@@ -4,12 +4,13 @@ description: Para quais dispositivos de filial receberão suas atualizações
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35b117b1a64650a475d392ffadf81769d3b0b08b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 2eb02ddde8b570a6d68f077ead1123b00e82cfe0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978665"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000120"
 ---
 # <a name="windowsupdatetype-enum-type"></a>tipo de enumeração windowsUpdateType
 

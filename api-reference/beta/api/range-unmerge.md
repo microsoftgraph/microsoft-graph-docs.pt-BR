@@ -4,12 +4,13 @@ description: Desfaz a mesclagem das células do intervalo em células separadas.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d0230892eda37fb3a5d1d18342085da8b779c415
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 70715a6bd73c70e25fc1da3c3bf1815f0ef97c90
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874702"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988472"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 

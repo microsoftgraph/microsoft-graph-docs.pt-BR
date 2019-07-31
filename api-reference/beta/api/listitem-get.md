@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Retorna os metadados de um item em uma lista.
 ms.date: 09/11/2017
 title: Obter uma entrada de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 90095dce5b5cfdadfd37696cd9b43a7a5475b6f6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 94536503949c5348da8a66a04cfc18fdb25f9223
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880227"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993078"
 ---
 # <a name="get-an-item-in-a-list"></a>Obter um item em uma lista
 

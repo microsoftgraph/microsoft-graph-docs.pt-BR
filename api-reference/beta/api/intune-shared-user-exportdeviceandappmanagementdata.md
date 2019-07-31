@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4eda08e5ed2f164de5cb262a515be4eec3bcbfc2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 84a58a07778de1b932253bd994e1bcc1456b9187
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898112"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984143"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>função exportDeviceAndAppManagementData
 

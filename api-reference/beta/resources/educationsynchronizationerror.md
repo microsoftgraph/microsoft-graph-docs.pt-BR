@@ -4,12 +4,13 @@ description: Representa um erro durante a validação e/ou sincronização de pe
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3c512f921e77468bb30e5109eec29afa9b395b7e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 11e5be9893c6a50615774e0d2a8e4d51c9576da6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340507"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972408"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>tipo de recurso educationSynchronizationError
 

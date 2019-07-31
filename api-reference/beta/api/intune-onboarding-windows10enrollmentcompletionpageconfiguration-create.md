@@ -4,12 +4,13 @@ description: Criar um novo objeto windows10EnrollmentCompletionPageConfiguration
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ee58aeb8565856332ee23910b366832ddf5c7b7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2d48413724c124833246a1384a8356c50096d092
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980499"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993799"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Criar windows10EnrollmentCompletionPageConfiguration
 

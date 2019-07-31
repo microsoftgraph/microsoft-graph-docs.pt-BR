@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto roleScopeTag.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 657dfdc721b42ae4541c7ab5c925bc137b442dd0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f46f9803f4c538758e5cf160313f75ce5f4ed114
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985189"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979894"
 ---
 # <a name="get-rolescopetag"></a>Obter roleScopeTag
 

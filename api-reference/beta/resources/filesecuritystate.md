@@ -1,15 +1,18 @@
 ---
-title: tipo de recurso fileSecuritystate
+title: tipo de recurso filesecuritystate
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 8709df89c1a8b82f2381ab450fa235ba325a9f88
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f061ca71bcd16c16e0292673338e2cb8d915e845
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333750"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972009"
 ---
-# <a name="filesecuritystate-resource-type"></a>tipo de recurso fileSecuritystate
+# <a name="filesecuritystate-resource-type"></a>tipo de recurso filesecuritystate
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

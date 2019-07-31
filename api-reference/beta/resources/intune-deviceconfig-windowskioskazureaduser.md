@@ -4,12 +4,13 @@ description: A classe usada para identificar uma conta de usuário do AzureAD pa
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa938ff2b99f583255c18111f24b5e5f4d7a17b2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3dd72b65c8829f4b085d4bb8ec86c904746bf126
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978525"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000288"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>tipo de recurso windowsKioskAzureADUser
 

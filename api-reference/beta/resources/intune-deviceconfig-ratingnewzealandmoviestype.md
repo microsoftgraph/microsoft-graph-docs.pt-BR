@@ -4,12 +4,13 @@ description: Rótulos de classificação de filmes na Nova Zelândia
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 274d5ea373d00d4b16e5d254e1a244499518c86f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: dfc9dbb0f60cf6e7bcb9a2f695d9758298150585
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984545"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000666"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>tipo de enumeração ratingNewZealandMoviesType
 

@@ -4,12 +4,13 @@ description: Atualize as propriedades do objeto **plannerProgressTaskBoardTaskFo
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 68a89d80e5a37f848b09fa845bd5c78953b57229
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d49cbf230c852c7e76f4cb8f7a9fefec182cc744
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876285"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979005"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Atualizar plannerProgressTaskBoardTaskFormat
 

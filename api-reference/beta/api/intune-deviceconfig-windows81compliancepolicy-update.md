@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto windows81CompliancePolicy.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76500bfdbdef81eaf6f34bfdee5dbe43daaf1a98
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1b3ab7f9cff9c63590db77e06f7b36730d35744c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977818"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975001"
 ---
 # <a name="update-windows81compliancepolicy"></a>Atualizar windows81CompliancePolicy
 
