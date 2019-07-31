@@ -1,38 +1,39 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Para mover um DriveItem para um novo item pai, o aplicativo solicita a atualização de parentReference do DriveItem a ser movido.
 ms.date: 09/10/2017
 title: Mover um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b18fc6616104f20722721c76fdec8c711c48aa7d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d6398650661a0940c68f2c79563c6a092d8a97ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860987"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957021"
 ---
-# <a name="move-a-driveitem-to-a-new-folder"></a><span data-ttu-id="fe9a2-102">Mover um DriveItem para uma nova pasta</span><span class="sxs-lookup"><span data-stu-id="fe9a2-102">Move a DriveItem to a new folder</span></span>
+# <a name="move-a-driveitem-to-a-new-folder"></a><span data-ttu-id="c833a-103">Mover um DriveItem para uma nova pasta</span><span class="sxs-lookup"><span data-stu-id="c833a-103">Move a DriveItem to a new folder</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fe9a2-103">Para mover um DriveItem para um novo item pai, o aplicativo solicita a atualização de **parentReference** do DriveItem a ser movido.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-103">To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.</span></span>
+<span data-ttu-id="c833a-104">Para mover um DriveItem para um novo item pai, o aplicativo solicita a atualização de **parentReference** do DriveItem a ser movido.</span><span class="sxs-lookup"><span data-stu-id="c833a-104">To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.</span></span>
 
-<span data-ttu-id="fe9a2-104">Este é um caso especial do método [Update](driveitem-update.md).</span><span class="sxs-lookup"><span data-stu-id="fe9a2-104">This is a special case of the [Update](driveitem-update.md) method.</span></span>
-<span data-ttu-id="fe9a2-105">O aplicativo pode combinar a movimentação de um item para um novo contêiner e a atualização de outras propriedades do item em uma única solicitação.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-105">Your app can combine moving an item to a new container and updating other properties of the item into a single request.</span></span>
+<span data-ttu-id="c833a-105">Este é um caso especial do método [Update](driveitem-update.md).</span><span class="sxs-lookup"><span data-stu-id="c833a-105">This is a special case of the [Update](driveitem-update.md) method.</span></span>
+<span data-ttu-id="c833a-106">O aplicativo pode combinar a movimentação de um item para um novo contêiner e a atualização de outras propriedades do item em uma única solicitação.</span><span class="sxs-lookup"><span data-stu-id="c833a-106">Your app can combine moving an item to a new container and updating other properties of the item into a single request.</span></span>
 
-<span data-ttu-id="fe9a2-106">Não é possível mover itens entre [Unidades](../resources/drive.md) usando esta solicitação.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-106">Items cannot be moved between [Drives](../resources/drive.md) using this request.</span></span>
+<span data-ttu-id="c833a-107">Não é possível mover itens entre [Unidades](../resources/drive.md) usando esta solicitação.</span><span class="sxs-lookup"><span data-stu-id="c833a-107">Items cannot be moved between [Drives](../resources/drive.md) using this request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fe9a2-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="fe9a2-107">Permissions</span></span>
-<span data-ttu-id="fe9a2-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fe9a2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c833a-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="c833a-108">Permissions</span></span>
+<span data-ttu-id="c833a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c833a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fe9a2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fe9a2-110">Permission type</span></span>      | <span data-ttu-id="fe9a2-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fe9a2-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c833a-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c833a-111">Permission type</span></span>      | <span data-ttu-id="c833a-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c833a-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fe9a2-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fe9a2-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fe9a2-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe9a2-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fe9a2-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fe9a2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe9a2-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe9a2-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fe9a2-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fe9a2-116">Application</span></span> | <span data-ttu-id="fe9a2-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe9a2-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="c833a-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c833a-113">Delegated (work or school account)</span></span> | <span data-ttu-id="c833a-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c833a-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c833a-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c833a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c833a-116">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c833a-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c833a-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c833a-117">Application</span></span> | <span data-ttu-id="c833a-118">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c833a-118">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fe9a2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fe9a2-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c833a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c833a-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,29 +45,29 @@ PATCH /sites/{site-id}/drive/items/{item-id}
 PATCH /users/{user-id}/drive/items/{item-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="fe9a2-119">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="fe9a2-119">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="c833a-120">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="c833a-120">Optional request headers</span></span>
 
-| <span data-ttu-id="fe9a2-120">Nome</span><span class="sxs-lookup"><span data-stu-id="fe9a2-120">Name</span></span>          | <span data-ttu-id="fe9a2-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="fe9a2-121">Type</span></span>   | <span data-ttu-id="fe9a2-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="fe9a2-122">Description</span></span>                                                                                                                                                         |
+| <span data-ttu-id="c833a-121">Nome</span><span class="sxs-lookup"><span data-stu-id="c833a-121">Name</span></span>          | <span data-ttu-id="c833a-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="c833a-122">Type</span></span>   | <span data-ttu-id="c833a-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="c833a-123">Description</span></span>                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="fe9a2-123">if-match</span><span class="sxs-lookup"><span data-stu-id="fe9a2-123">if-match</span></span>      | <span data-ttu-id="fe9a2-124">String</span><span class="sxs-lookup"><span data-stu-id="fe9a2-124">String</span></span> | <span data-ttu-id="fe9a2-125">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-125">If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned.</span></span> |
+| <span data-ttu-id="c833a-124">if-match</span><span class="sxs-lookup"><span data-stu-id="c833a-124">if-match</span></span>      | <span data-ttu-id="c833a-125">String</span><span class="sxs-lookup"><span data-stu-id="c833a-125">String</span></span> | <span data-ttu-id="c833a-126">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida.</span><span class="sxs-lookup"><span data-stu-id="c833a-126">If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fe9a2-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fe9a2-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c833a-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c833a-127">Request body</span></span>
 
-<span data-ttu-id="fe9a2-p103">No corpo da solicitação, forneça o novo valor para a propriedade **parentReference**. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para obter o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-p103">In the request body, supply the new value for the **parentReference** property. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="c833a-p103">No corpo da solicitação, forneça o novo valor para a propriedade **parentReference**. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para obter o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="c833a-p103">In the request body, supply the new value for the **parentReference** property. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-<span data-ttu-id="fe9a2-130">**Observação:** Ao mover itens para a raiz de uma unidade, seu aplicativo não pode usar a sintaxe `"id:" "root"`.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-130">**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.</span></span>
-<span data-ttu-id="fe9a2-131">Seu aplicativo precisa fornecer a ID real da pasta raiz para referência do pai.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-131">Your app needs to provide the actual ID of the root folder for the parent reference.</span></span>
+<span data-ttu-id="c833a-131">**Observação:** Ao mover itens para a raiz de uma unidade, seu aplicativo não pode usar a sintaxe `"id:" "root"`.</span><span class="sxs-lookup"><span data-stu-id="c833a-131">**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.</span></span>
+<span data-ttu-id="c833a-132">Seu aplicativo precisa fornecer a ID real da pasta raiz para referência do pai.</span><span class="sxs-lookup"><span data-stu-id="c833a-132">Your app needs to provide the actual ID of the root folder for the parent reference.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fe9a2-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="fe9a2-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c833a-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="c833a-133">Response</span></span>
 
-<span data-ttu-id="fe9a2-133">Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurso [DriveItem](../resources/driveitem.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-133">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="c833a-134">Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurso [DriveItem](../resources/driveitem.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c833a-134">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fe9a2-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fe9a2-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c833a-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c833a-135">Example</span></span>
 
-<span data-ttu-id="fe9a2-135">Este exemplo move um item especificado por {item-id} para uma pasta na unidade do usuário com a ID `new-parent-folder-id`.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-135">This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.</span></span>
+<span data-ttu-id="c833a-136">Este exemplo move um item especificado por {item-id} para uma pasta na unidade do usuário com a ID `new-parent-folder-id`.</span><span class="sxs-lookup"><span data-stu-id="c833a-136">This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fe9a2-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="fe9a2-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c833a-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="c833a-137">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
 
 ```http
@@ -80,28 +81,28 @@ Content-type: application/json
   "name": "new-item-name.txt"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fe9a2-137">C#</span><span class="sxs-lookup"><span data-stu-id="fe9a2-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c833a-138">C#</span><span class="sxs-lookup"><span data-stu-id="c833a-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/move-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fe9a2-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="fe9a2-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c833a-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="c833a-139">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/move-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fe9a2-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="fe9a2-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c833a-140">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="c833a-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/move-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="fe9a2-140">Java</span><span class="sxs-lookup"><span data-stu-id="fe9a2-140">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="c833a-141">Java</span><span class="sxs-lookup"><span data-stu-id="c833a-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/move-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="fe9a2-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="fe9a2-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c833a-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="c833a-142">Response</span></span>
 
-<span data-ttu-id="fe9a2-142">O exemplo a seguir mostra a resposta para este pedido de movimentação.</span><span class="sxs-lookup"><span data-stu-id="fe9a2-142">The following example shows the response for this move request.</span></span>
+<span data-ttu-id="c833a-143">O exemplo a seguir mostra a resposta para este pedido de movimentação.</span><span class="sxs-lookup"><span data-stu-id="c833a-143">The following example shows the response for this move request.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -121,9 +122,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="fe9a2-143">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="fe9a2-143">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="c833a-144">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="c833a-144">Error responses</span></span>
 
-<span data-ttu-id="fe9a2-144">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="fe9a2-144">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="c833a-145">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="c833a-145">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
