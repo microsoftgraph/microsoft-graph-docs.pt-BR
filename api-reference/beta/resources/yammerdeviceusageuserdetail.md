@@ -4,36 +4,37 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5fe3aa7fa9da243c9cc8f9b015ee85d779b84eb3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 083ace4b10b24e8e5de5d287ddf418d93658c879
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551425"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006973"
 ---
-# <a name="yammerdeviceusageuserdetail-resource-type"></a><span data-ttu-id="99145-103">tipo de recurso yammerDeviceUsageUserDetail</span><span class="sxs-lookup"><span data-stu-id="99145-103">yammerDeviceUsageUserDetail resource type</span></span>
+# <a name="yammerdeviceusageuserdetail-resource-type"></a><span data-ttu-id="74020-103">tipo de recurso yammerDeviceUsageUserDetail</span><span class="sxs-lookup"><span data-stu-id="74020-103">yammerDeviceUsageUserDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="99145-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="99145-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="74020-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="74020-104">Properties</span></span>
 
-| <span data-ttu-id="99145-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="99145-105">Property</span></span>          | <span data-ttu-id="99145-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="99145-106">Type</span></span>    |
+| <span data-ttu-id="74020-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="74020-105">Property</span></span>          | <span data-ttu-id="74020-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="74020-106">Type</span></span>    |
 | :---------------- | :------ |
-| <span data-ttu-id="99145-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="99145-107">reportRefreshDate</span></span> | <span data-ttu-id="99145-108">Data</span><span class="sxs-lookup"><span data-stu-id="99145-108">Date</span></span>    |
-| <span data-ttu-id="99145-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="99145-109">userPrincipalName</span></span> | <span data-ttu-id="99145-110">String</span><span class="sxs-lookup"><span data-stu-id="99145-110">String</span></span>  |
-| <span data-ttu-id="99145-111">displayName</span><span class="sxs-lookup"><span data-stu-id="99145-111">displayName</span></span>       | <span data-ttu-id="99145-112">String</span><span class="sxs-lookup"><span data-stu-id="99145-112">String</span></span>  |
-| <span data-ttu-id="99145-113">userState</span><span class="sxs-lookup"><span data-stu-id="99145-113">userState</span></span>         | <span data-ttu-id="99145-114">String</span><span class="sxs-lookup"><span data-stu-id="99145-114">String</span></span>  |
-| <span data-ttu-id="99145-115">stateChangeDate</span><span class="sxs-lookup"><span data-stu-id="99145-115">stateChangeDate</span></span>   | <span data-ttu-id="99145-116">Data</span><span class="sxs-lookup"><span data-stu-id="99145-116">Date</span></span>    |
-| <span data-ttu-id="99145-117">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="99145-117">lastActivityDate</span></span>  | <span data-ttu-id="99145-118">Data</span><span class="sxs-lookup"><span data-stu-id="99145-118">Date</span></span>    |
-| <span data-ttu-id="99145-119">usedWeb</span><span class="sxs-lookup"><span data-stu-id="99145-119">usedWeb</span></span>           | <span data-ttu-id="99145-120">Booliano</span><span class="sxs-lookup"><span data-stu-id="99145-120">Boolean</span></span> |
-| <span data-ttu-id="99145-121">usedWindowsPhone</span><span class="sxs-lookup"><span data-stu-id="99145-121">usedWindowsPhone</span></span>  | <span data-ttu-id="99145-122">Booliano</span><span class="sxs-lookup"><span data-stu-id="99145-122">Boolean</span></span> |
-| <span data-ttu-id="99145-123">usedAndroidPhone</span><span class="sxs-lookup"><span data-stu-id="99145-123">usedAndroidPhone</span></span>  | <span data-ttu-id="99145-124">Booliano</span><span class="sxs-lookup"><span data-stu-id="99145-124">Boolean</span></span> |
-| <span data-ttu-id="99145-125">usediPhone</span><span class="sxs-lookup"><span data-stu-id="99145-125">usediPhone</span></span>        | <span data-ttu-id="99145-126">Booliano</span><span class="sxs-lookup"><span data-stu-id="99145-126">Boolean</span></span> |
-| <span data-ttu-id="99145-127">usediPad</span><span class="sxs-lookup"><span data-stu-id="99145-127">usediPad</span></span>          | <span data-ttu-id="99145-128">Booliano</span><span class="sxs-lookup"><span data-stu-id="99145-128">Boolean</span></span> |
-| <span data-ttu-id="99145-129">usedOthers</span><span class="sxs-lookup"><span data-stu-id="99145-129">usedOthers</span></span>        | <span data-ttu-id="99145-130">Booliano</span><span class="sxs-lookup"><span data-stu-id="99145-130">Boolean</span></span> |
-| <span data-ttu-id="99145-131">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="99145-131">reportPeriod</span></span>      | <span data-ttu-id="99145-132">String</span><span class="sxs-lookup"><span data-stu-id="99145-132">String</span></span>  |
+| <span data-ttu-id="74020-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="74020-107">reportRefreshDate</span></span> | <span data-ttu-id="74020-108">Data</span><span class="sxs-lookup"><span data-stu-id="74020-108">Date</span></span>    |
+| <span data-ttu-id="74020-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="74020-109">userPrincipalName</span></span> | <span data-ttu-id="74020-110">String</span><span class="sxs-lookup"><span data-stu-id="74020-110">String</span></span>  |
+| <span data-ttu-id="74020-111">displayName</span><span class="sxs-lookup"><span data-stu-id="74020-111">displayName</span></span>       | <span data-ttu-id="74020-112">String</span><span class="sxs-lookup"><span data-stu-id="74020-112">String</span></span>  |
+| <span data-ttu-id="74020-113">userState</span><span class="sxs-lookup"><span data-stu-id="74020-113">userState</span></span>         | <span data-ttu-id="74020-114">String</span><span class="sxs-lookup"><span data-stu-id="74020-114">String</span></span>  |
+| <span data-ttu-id="74020-115">stateChangeDate</span><span class="sxs-lookup"><span data-stu-id="74020-115">stateChangeDate</span></span>   | <span data-ttu-id="74020-116">Data</span><span class="sxs-lookup"><span data-stu-id="74020-116">Date</span></span>    |
+| <span data-ttu-id="74020-117">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="74020-117">lastActivityDate</span></span>  | <span data-ttu-id="74020-118">Data</span><span class="sxs-lookup"><span data-stu-id="74020-118">Date</span></span>    |
+| <span data-ttu-id="74020-119">usedWeb</span><span class="sxs-lookup"><span data-stu-id="74020-119">usedWeb</span></span>           | <span data-ttu-id="74020-120">Booliano</span><span class="sxs-lookup"><span data-stu-id="74020-120">Boolean</span></span> |
+| <span data-ttu-id="74020-121">usedWindowsPhone</span><span class="sxs-lookup"><span data-stu-id="74020-121">usedWindowsPhone</span></span>  | <span data-ttu-id="74020-122">Booliano</span><span class="sxs-lookup"><span data-stu-id="74020-122">Boolean</span></span> |
+| <span data-ttu-id="74020-123">usedAndroidPhone</span><span class="sxs-lookup"><span data-stu-id="74020-123">usedAndroidPhone</span></span>  | <span data-ttu-id="74020-124">Booliano</span><span class="sxs-lookup"><span data-stu-id="74020-124">Boolean</span></span> |
+| <span data-ttu-id="74020-125">usediPhone</span><span class="sxs-lookup"><span data-stu-id="74020-125">usediPhone</span></span>        | <span data-ttu-id="74020-126">Booliano</span><span class="sxs-lookup"><span data-stu-id="74020-126">Boolean</span></span> |
+| <span data-ttu-id="74020-127">usediPad</span><span class="sxs-lookup"><span data-stu-id="74020-127">usediPad</span></span>          | <span data-ttu-id="74020-128">Booliano</span><span class="sxs-lookup"><span data-stu-id="74020-128">Boolean</span></span> |
+| <span data-ttu-id="74020-129">usedOthers</span><span class="sxs-lookup"><span data-stu-id="74020-129">usedOthers</span></span>        | <span data-ttu-id="74020-130">Booliano</span><span class="sxs-lookup"><span data-stu-id="74020-130">Boolean</span></span> |
+| <span data-ttu-id="74020-131">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="74020-131">reportPeriod</span></span>      | <span data-ttu-id="74020-132">String</span><span class="sxs-lookup"><span data-stu-id="74020-132">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="99145-133">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="99145-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="74020-133">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="74020-133">JSON representation</span></span>
 
-<span data-ttu-id="99145-134">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="99145-134">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="74020-134">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="74020-134">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
