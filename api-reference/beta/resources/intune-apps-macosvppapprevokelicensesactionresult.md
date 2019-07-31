@@ -4,12 +4,13 @@ description: Define os resultados de ações em aplicativos de conteúdo do MacO
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd659ab07b5db81de4e8004461bc149c236ec576
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8fc25d2b945c0490f831dea8850e05b049a41534
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989151"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005391"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>tipo de recurso macOsVppAppRevokeLicensesActionResult
 

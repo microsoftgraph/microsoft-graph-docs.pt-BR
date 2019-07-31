@@ -4,12 +4,13 @@ description: Representa a proteção de um objeto sheet.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7e4a2f3130c71df35b1106d1a342004cfc6fdf25
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ed6f52074836368eade8851ea32f1e8ef64e493e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348478"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007036"
 ---
 # <a name="workbookworksheetprotection-resource-type"></a>tipo de recurso workbookWorksheetProtection
 

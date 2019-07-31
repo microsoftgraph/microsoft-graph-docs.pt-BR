@@ -2,12 +2,15 @@
 title: tipo de recurso onenoteResource
 description: 'Uma imagem ou outro recurso de arquivo em uma página do OneNote. '
 localization_priority: Normal
-ms.openlocfilehash: abb60a52b0f32ac2e1bdc024d07f02233db6043c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3884be59ed0eedafa9d4a45c851570d08ea70848
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348474"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009339"
 ---
 # <a name="onenoteresource-resource-type"></a>tipo de recurso onenoteResource
 

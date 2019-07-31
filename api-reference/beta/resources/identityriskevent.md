@@ -4,12 +4,13 @@ description: 'Um evento de risco detectado pela proteção de identidade do Azur
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 654b6380120c0584045d3267bddffb9db88a39aa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7ea0a11931021e828660cc7b03991b8ea96ef1f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339981"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005797"
 ---
 # <a name="identityriskevent-resource-type"></a>tipo de recurso identityRiskEvent
 
@@ -39,7 +40,7 @@ As informações completas sobre eventos de risco podem ser encontradas na [docu
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|string| Somente leitura|
+|id|cadeia de caracteres| Somente leitura|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
 |riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
@@ -51,7 +52,7 @@ As informações completas sobre eventos de risco podem ser encontradas na [docu
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| Somente leitura. Anulável.|
+|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

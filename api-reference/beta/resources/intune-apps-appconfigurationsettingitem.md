@@ -4,12 +4,13 @@ description: Contém propriedades do item de configuração de Configuração do
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f001a02a1e4e3ef2a15fe5e606687896775a6d26
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 0c001e19758865e957cb3d72f3d49acf3387281a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991258"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006049"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Tipo de recurso appConfigurationSettingItem
 

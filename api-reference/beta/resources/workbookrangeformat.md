@@ -4,12 +4,13 @@ description: Um objeto de formato que encapsula a fonte, o preenchimento, as bor
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 3ee55e1a398dab1727dfdc24d9ebd5c66b7440d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6ec27300e720892debbd458970063f1b79270597
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348532"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007064"
 ---
 # <a name="workbookrangeformat-resource-type"></a>tipo de recurso workbookRangeFormat
 
@@ -38,7 +39,7 @@ Um objeto de formato que encapsula a fonte, o preenchimento, as bordas, o alinha
 |verticalAlignment|string|Representa o alinhamento vertical do objeto especificado. Os valores possíveis são: `Top`, `Center`, `Bottom`, `Justify` e `Distributed`.|
 |wrapText|booliano|Indica se o Excel quebra automaticamente a linha de texto no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de quebra de linha automática uniforme.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |Borders|coleção [workbookRangeBorder](workbookrangeborder.md)|Coleção de objetos de borda que se aplicam a todo o intervalo selecionado. Somente leitura.|

@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso Video agrupa itens de dados relacionados a vídeos em uma única estrutura.
 ms.date: 09/10/2017
-title: Vídeos
+title: Vídeo
 localization_priority: Normal
-ms.openlocfilehash: 1dc85c4e5525d5c53e89b6f6db0ffb4a2418ab7e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: e93fd4bbd348df3ad31d1be6aa2b1dc73593327a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345419"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007358"
 ---
 # <a name="video-resource-type"></a>Tipo de recurso Video
 

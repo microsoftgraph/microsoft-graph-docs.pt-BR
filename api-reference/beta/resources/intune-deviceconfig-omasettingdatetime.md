@@ -4,12 +4,13 @@ description: Definição de datetime para configurações de OMA.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4686e3354e53dc0ad2502673bbf44866135d577d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d4abe8f9b22cdc75e8e560ddb9e15a75425cb3f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993736"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011411"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Tipo de recurso omaSettingDateTime
 

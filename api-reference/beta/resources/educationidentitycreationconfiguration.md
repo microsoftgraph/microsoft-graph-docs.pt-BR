@@ -4,12 +4,13 @@ description: Define as configurações de criação de identidades de perfis de 
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: e35eed699e1a1439fd94c251e560be902f96bd09
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 09d36a87b8ed1485ce112d40ca8b920290e23997
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340549"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006378"
 ---
 ## <a name="educationidentitycreationconfiguration-resource-type"></a>tipo de recurso educationIdentityCreationConfiguration
 
@@ -25,7 +26,7 @@ Derivado de [educationIdentitySynchronizationConfiguration](educationidentitysyn
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **userDomains** | coleção [educationIdentityDomain](educationidentitydomain.md) |  Define a lista de domínios a serem usados por tipo de usuário.  |
+| **userdomains** | coleção [educationIdentityDomain](educationidentitydomain.md) |  Define a lista de domínios a serem usados por tipo de usuário.  |
 
 
 ## <a name="json-representation"></a>Representação JSON

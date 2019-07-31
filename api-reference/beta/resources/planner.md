@@ -4,12 +4,13 @@ description: O recurso **Planner** é o ponto de entrada para o modelo de objeto
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2f1fb3b7058a87dd7b8390408590371cf1b0e9cd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2ef94a7507558279e5295239588e2a8eda512882
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344611"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009129"
 ---
 # <a name="planner-resource-type"></a>tipo de recurso Planner
 

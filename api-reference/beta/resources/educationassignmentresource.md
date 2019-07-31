@@ -4,12 +4,13 @@ description: Um objeto envoltório que armazena os recursos associados a uma atr
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 08a716edabc31c83a7fb3e358fbafd023d5fa784
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 60181a2289b272809cff025abeee83c594ae833e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006427"
 ---
 # <a name="educationassignmentresource-resource-type"></a>tipo de recurso educationAssignmentResource
 
@@ -23,13 +24,13 @@ Um objeto envoltório que armazena os recursos associados a uma atribuição. O 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Ler propriedades e relações de um objeto **educationAssignmentResource** .|
-|[Atualizar](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |Atualize um objeto **educationAssignmentResource** . |
-|[Delete](../api/educationassignmentresource-delete.md) | Nenhuma |Excluir um objeto **educationAssignmentResource** . |
+|[Atualização](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |Atualize um objeto **educationAssignmentResource** . |
+|[Delete](../api/educationassignmentresource-delete.md) | None |Excluir um objeto **educationAssignmentResource** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|Indica se esse recurso deve ser copiado para cada aluno enviado para modificação e envio.|
+|distributeForStudentWork|Booliano|Indica se esse recurso deve ser copiado para cada aluno enviado para modificação e envio.|
 |id|String| ID desse recurso. Somente leitura.|
 |recurso|[educationResource](educationresource.md)|Objeto de recurso que foi associado a essa atribuição.|
 

@@ -4,12 +4,13 @@ description: Contém propriedades, propriedades herdadas e ações para configur
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eea6da94d447d93ee843b6d9c9599bb734482cfe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3fd2ea6ba029e9a2d02e9e9bc0eb0be19050f431
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986344"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005517"
 ---
 # <a name="iosmobileappconfiguration-resource-type"></a>Tipo de recurso iosMobileAppConfiguration
 

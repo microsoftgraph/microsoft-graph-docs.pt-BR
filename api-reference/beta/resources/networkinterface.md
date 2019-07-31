@@ -2,12 +2,15 @@
 title: tipo de recurso networkInterface
 description: Representa uma placa de interface de rede (NIC) associada a esse host.
 localization_priority: Normal
-ms.openlocfilehash: 92ea26b76de8fa6ffbcdcf0bc64b85a08d0f51af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ef932729149ea21580ff5a8f1cc3f52e253bfc50
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457064"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009612"
 ---
 # <a name="networkinterface-resource-type"></a>tipo de recurso networkInterface
 

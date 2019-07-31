@@ -2,12 +2,15 @@
 title: Tipo de recurso referenceAttachment
 description: 'Um link para uma pasta ou arquivo (como um arquivo de texto ou documento do Word) em uma unidade de nuvem do OneDrive for Business ou outros locais de armazenamento com suporte, anexados a '
 localization_priority: Normal
-ms.openlocfilehash: 2c18e7dda1b5e899bdb453b6be70a47ecd6ad212
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ef3e2dd5292ee018c0b72c29c8bd6c33fed00f11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343873"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008709"
 ---
 # <a name="referenceattachment-resource-type"></a>Tipo de recurso referenceAttachment
 
@@ -22,18 +25,18 @@ Derivado de [attachment](attachment.md).
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Leia as propriedades e os relacionamentos do objeto referenceAttachment.|
-|[Delete](../api/attachment-delete.md) | Nenhuma |Exclua o objeto referenceAttachment. |
+|[Delete](../api/attachment-delete.md) | None |Exclua o objeto referenceAttachment. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contentType|String|O tipo de conteúdo do anexo. Opcional.|
 |id|String|A ID do anexo.  Somente leitura.|
-|isFolder|Boolean|Especifica se o anexo é um link para uma pasta. Deve definir this como true se **sourceUrl** for um link para uma pasta. Opcional.|
+|isFolder|Booliano|Especifica se o anexo é um link para uma pasta. Deve definir this como true se **sourceUrl** for um link para uma pasta. Opcional.|
 |isInline|Booliano|Defina como verdadeiro se o anexo é exibido embutido no corpo do objeto de incorporação. Opcional.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional.|
 |name|Cadeia de caracteres|O texto exibido abaixo do ícone que representa o anexo incorporado. Não precisa ser o nome real do arquivo. Obrigatório.|
-|permission|referenceAttachmentPermission|Especifica as permissões concedidas para o anexo pelo tipo de provedor no **ProviderType**. Os valores possíveis são: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView`, `organizationEdit`. Opcional.|
+|autorização|referenceAttachmentPermission|Especifica as permissões concedidas para o anexo pelo tipo de provedor no **ProviderType**. Os valores possíveis são: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView`, `organizationEdit`. Opcional.|
 |previewUrl|String|Aplica-se somente a um anexo de referência de uma URL de imagem para obter uma imagem de visualização. Use **thumbnailUrl** e **PreviewUrl** somente quando **sourceUrl** identifica um arquivo de imagem. Opcional.|
 |providerType|referenceAttachmentProvider|O tipo de provedor que dá suporte a um anexo deste contentType. Os valores possíveis são: `other`, `oneDriveBusiness`, `oneDriveConsumer`, `dropbox`. Opcional.|
 |size|Int32|O tamanho dos metadados em bytes armazenados na mensagem para o anexo de referência. Esse valor não indica o tamanho real do arquivo. Opcional.|

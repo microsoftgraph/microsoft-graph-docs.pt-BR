@@ -4,12 +4,13 @@ description: Representa um objeto de formatação para os pontos do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f0896001fda140ff1d2693b3463c472568f1d28e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9c3d968c4d36b8220d505edb6b7503a2b1206416
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348500"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007232"
 ---
 # <a name="workbookchartpointformat-resource-type"></a>tipo de recurso workbookChartPointFormat
 
@@ -24,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |fill|[workbookChartFill](workbookchartfill.md)|Representa o formato de preenchimento de um gráfico, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|

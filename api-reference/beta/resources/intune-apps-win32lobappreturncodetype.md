@@ -4,12 +4,13 @@ description: Indica o tipo de código de retorno.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd9967217a6470f039d2958a36f9dc99147e82dd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f4c4750b146d35f515a6dc2d5e11ebe416f2f552
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975781"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004992"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>tipo de enumeração win32LobAppReturnCodeType
 

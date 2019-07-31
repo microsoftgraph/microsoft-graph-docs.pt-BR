@@ -2,14 +2,15 @@
 title: tipo de recurso filterOperatorSchema
 description: Descreve um operador que pode ser usado em um filtro.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c55838e6e7d12789d1bd84d63dff95b4d9b72efa
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 2ed9ef208f888026224293ff86a36b62a3486d48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621365"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007890"
 ---
 # <a name="filteroperatorschema-resource-type"></a>tipo de recurso filterOperatorSchema
 

@@ -3,12 +3,14 @@ title: tipo de recurso de assinatura
 description: 'Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:'
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 6a7fd50a53e68313ba72c8bd5d90b47d2b5b2607
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d70c6d56a95c8725d214b99a4ad45f0245b51173
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537202"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008100"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 

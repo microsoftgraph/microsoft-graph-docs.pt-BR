@@ -3,12 +3,14 @@ title: tipo de recurso oneDriveUsageFileCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a7e3a52d082d1acdd2e685008d60e6594615f57a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: bf0b46c01167ac1d103b54386aabd981d99116cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568100"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009388"
 ---
 # <a name="onedriveusagefilecounts-resource-type"></a>tipo de recurso oneDriveUsageFileCounts
 

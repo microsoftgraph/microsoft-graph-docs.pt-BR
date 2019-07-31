@@ -2,12 +2,15 @@
 title: tipo de recurso workbookNamedItem
 description: Representa um nome definido para um intervalo de células ou um valor. Os nomes podem ser objetos nomeados primitivos (conforme exibido no tipo abaixo), objetos de intervalo ou uma referência a um intervalo. Use esse objeto para obter um objeto de intervalo associado aos nomes.
 localization_priority: Normal
-ms.openlocfilehash: 49267379385a13b94e8639e4c129c05192b2ae6f
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: 90c816bde49cf7062bf2b04deebd8ce6a7e08669
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084079"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007113"
 ---
 # <a name="workbooknameditem-resource-type"></a>tipo de recurso workbookNamedItem
 

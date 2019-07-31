@@ -2,12 +2,15 @@
 title: Tipo de recurso inferenceClassificationOverride
 description: Representa a substituição de um usuário sobre como as mensagens de entrada de um remetente específico devem sempre ser classificadas como
 localization_priority: Normal
-ms.openlocfilehash: 59ed4c472d7972ae4292388572bbb66b7a588996
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d01cbeb7b031c3e3b9ed66757a155eca6e33e479
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340030"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005762"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
 
@@ -21,7 +24,7 @@ Representa a substituição de um usuário sobre como as mensagens de entrada de
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhuma |Exclua uma substituição especificada de acordo com sua ID. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | None |Exclua uma substituição especificada de acordo com sua ID. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

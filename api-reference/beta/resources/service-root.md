@@ -2,12 +2,15 @@
 title: Raiz de serviço
 description: 2015-10-25 14:57:30 UTC-->
 localization_priority: Normal
-ms.openlocfilehash: 7291528381cc64ef760b2bdaa897b4ba64864cb0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: cca5e05cd1ebc1ef5aa24818b5edad80f85c9cf3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343287"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008499"
 ---
 # <a name="service-root"></a>Raiz de serviço
 
@@ -21,7 +24,7 @@ ms.locfileid: "33343287"
 |:---------------|:--------|:----------|
 |[Create device](../api/device-post-devices.md) |[device](device.md)| Crie um novo dispositivo postando na coleção de dispositivos.|
 |[List device](../api/device-list.md) | Coleção [device](device.md) |Obtenha a coleção de objetos de dispositivos. |
-|[Activate directoryRole](../api/directoryrole-post-directoryroles.md) | [directoryRole](directoryrole.md) |Ative uma função de diretório. |
+|[Ativar directoryRole](../api/directoryrole-post-directoryroles.md) | [directoryRole](directoryrole.md) |Ative uma função de diretório. |
 |[List directoryRole](../api/directoryrole-list.md) | Coleção [directoryRole](directoryrole.md) |Obtenha a coleção de objetos de directoryRole. |
 |[List directoryRoleTemplate](../api/directoryroletemplate-list.md) | Coleção [directoryRoleTemplate](directoryroletemplate.md) |Obtenha a coleção de objetos de directoryRoleTemplate. |
 |[List drive](../api/drive-list.md) | Coleção [drive](drive.md) |Obtenha a coleção de objetos de unidades. |

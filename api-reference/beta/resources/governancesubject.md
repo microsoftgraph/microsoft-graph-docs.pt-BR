@@ -2,12 +2,15 @@
 title: tipo de recurso governanceSubject
 description: Representa usuários, grupos e entidades de serviço que estão sendo gerenciados no gerenciamento de identidade privilegiada (PIM).
 localization_priority: Normal
-ms.openlocfilehash: 5ad4b30abaec66b8ad35835795848645ddd9f17b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 26f6c6904de97fc96eb1b29b9bcbc376bcf69c61
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005972"
 ---
 # <a name="governancesubject-resource-type"></a>tipo de recurso governanceSubject
 
@@ -20,9 +23,9 @@ Representa usuários, grupos e entidades de serviço que estão sendo gerenciado
 | Propriedade  | Tipo       |Descrição|
 |:----------|:----------|:----------|
 |id         |String     | A ID do assunto.|
-|tipo       |String     |O tipo do assunto. O valor pode ser ``User``, ``Group``e ``ServicePrincipal``.|
+|type       |String     |O tipo do assunto. O valor pode ser ``User``, ``Group``e ``ServicePrincipal``.|
 |displayName|String     |O nome de exibição do assunto.|
-|email      |String     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
+|email      |Cadeia de caracteres     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
 |principalName|Cadeia de caracteres   |O nome da entidade de segurança do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
 
 ## <a name="relationships"></a>Relações

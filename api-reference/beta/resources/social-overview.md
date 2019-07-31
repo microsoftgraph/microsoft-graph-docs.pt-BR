@@ -4,12 +4,13 @@ description: O Microsoft Graph dá suporte a gestos sociais em um contexto socia
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 0118902f42984a541c750f34db945bc0e7ede5f2
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+doc_type: conceptualPageType
+ms.openlocfilehash: 84e0c82173dad6f08d5911f32ef5c384f041ea19
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417672"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008086"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência social e do local de trabalho em um aplicativo
 

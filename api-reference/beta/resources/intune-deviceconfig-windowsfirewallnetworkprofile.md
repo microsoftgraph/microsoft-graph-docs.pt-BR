@@ -4,12 +4,13 @@ description: Políticas de perfil do firewall do Windows.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4de9535041770afb7183dfe99cde11072da344e8
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 6346225ecc9a6be0c7baccabe39576e3d35bd2ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731753"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011229"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>Tipo de recurso windowsFirewallNetworkProfile
 

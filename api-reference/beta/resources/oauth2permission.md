@@ -2,12 +2,15 @@
 title: tipo de recurso oAuth2Permission
 description: Representa um escopo de permissão delegada do OAuth 2,0. Os escopos de permissão delegada do OAuth 2,0 especificado podem ser solicitados por aplicativos cliente (por meio da coleção **requiredResourceAccess** no objeto Application) ao chamar um aplicativo de recurso. A propriedade **appRoles** da entidade servicePrincipalName e da entidade Application é uma coleção de **oAuth2Permission**.
 localization_priority: Normal
-ms.openlocfilehash: a76e3ccfc5afa79b145242d2c07e45ff3335587c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 16dfa93d13127d585cd5b56a56987bb22ab39d8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342104"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009570"
 ---
 # <a name="oauth2permission-resource-type"></a>tipo de recurso oAuth2Permission
 

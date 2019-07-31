@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 1e4cd044d4b552a9239b742efb302633524ce22b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 08cfc864ee670a799a5f1672fa96cf8167ef1423
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507235"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006581"
 ---
 # <a name="paymentmethods-resource-type"></a>tipo de recurso paymentMethods
 Representa um método de pagamento no Dynamics 365 Business central, como PayPal, cartão de crédito e conta bancária.
@@ -23,7 +24,7 @@ Representa um método de pagamento no Dynamics 365 Business central, como PayPal
 |[Obter paymentMethods](../api/dynamics-paymentmethods-get.md)      |paymentMethods|Obtém um objeto de método de pagamento.   |
 |[Postar paymentMethods](../api/dynamics-create-paymentmethods.md)  |paymentMethods|Cria um objeto de método de pagamento.|
 |[Patch paymentMethods](../api/dynamics-paymentmethods-update.md) |paymentMethods|Atualiza um objeto de método de pagamento.|
-|[Excluir paymentMethods](../api/dynamics-paymentmethods-delete.md)|Nenhuma          |Exclui um objeto de método de pagamento.|
+|[Excluir paymentMethods](../api/dynamics-paymentmethods-delete.md)|none          |Exclui um objeto de método de pagamento.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo   |Descrição                                                  |
@@ -35,7 +36,7 @@ Representa um método de pagamento no Dynamics 365 Business central, como PayPal
 
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 

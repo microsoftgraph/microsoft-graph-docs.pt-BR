@@ -4,12 +4,13 @@ description: Configuração personalizada do Android para trabalho
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 407a799298e6cd2c55140234fd040f6b687b1003
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 10a9ed1f65c220df3f7d01e493f7bc63c8c60338
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985434"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011838"
 ---
 # <a name="androidforworkcustomconfiguration-resource-type"></a>tipo de recurso androidForWorkCustomConfiguration
 

@@ -4,12 +4,13 @@ description: O recurso **plannerAssignedToTaskBoardTaskFormat** representa as in
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f67539847cbb8a4adb88137743b4246ced02a521
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a67f085b5e6a7984e1b73358defb28c783d2ec10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344592"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009136"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>tipo de recurso plannerAssignedToTaskBoardTaskFormat
 
@@ -23,7 +24,7 @@ O recurso **plannerAssignedToTaskBoardTaskFormat** representa as informações u
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |Leia as propriedades e os relacionamentos do objeto **plannerAssignedToTaskBoardTaskFormat** .|
-|[Atualizar](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)  |Atualize o objeto **plannerAssignedToTaskBoardTaskFormat** . |
+|[Atualização](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)  |Atualize o objeto **plannerAssignedToTaskBoardTaskFormat** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

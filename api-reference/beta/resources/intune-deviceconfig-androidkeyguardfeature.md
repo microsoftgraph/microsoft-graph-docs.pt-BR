@@ -4,12 +4,13 @@ description: Recurso de protetor de recurso Android.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f62e2a8055dd6e8f46ac40a06d0c8f0bfc7677ad
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c3dac1536f13fc068eb9bac0d2c922e0ce51fa08
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011733"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>tipo de enumeração androidKeyguardFeature
 

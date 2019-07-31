@@ -4,12 +4,13 @@ description: Uma classe abstrata que contém as propriedades base do livro eletr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bf13e2c0a5c8e55a397516c21fe91d65aa413a5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c6d39e1a965713054304e7faaf127ab8a735758c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991650"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004831"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 

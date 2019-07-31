@@ -4,12 +4,13 @@ description: Representa um item de postagem individual em uma entidade conversta
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: abfd2b19681b9821377830f1696fa6f754afd711
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9de2bfec6bab126577fa0013a58caac83ad031f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344205"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008982"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 
@@ -66,7 +67,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|body|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
+|corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **DisplayName** de um [outlookCategory](outlookcategory.md) que foi definido para um usuário.|
 |changeKey|Cadeia de caracteres|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |conversationId|String|ID exclusiva da conversa. Somente leitura.|
@@ -86,7 +87,7 @@ Veja a seguir uma representação JSON do recurso
 |:---------------|:--------|:----------|
 |attachments|Coleção [Attachment](attachment.md)|O conjunto de [](fileattachment.md)anexos de fileattachment, hiperattachment e [referenceAttachment](referenceattachment.md) para a postagem. [](itemattachment.md) Somente leitura. Anulável.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para a postagem. Somente leitura. Anulável.|
-|inResponderto|[Post](post.md)|A postagem anterior à qual esta postagem está respondendo no [conversationThread](conversationthread.md). Somente leitura.|
+|inresponderto|[Post](post.md)|A postagem anterior à qual esta postagem está respondendo no [conversationThread](conversationthread.md). Somente leitura.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a postagem. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a postagem. Somente leitura. Anulável.|
 
@@ -100,7 +101,7 @@ Veja a seguir uma representação JSON do recurso
 |[Encaminhar](../api/post-forward.md)|Nenhuma|Encaminhe uma postagem para um destinatário.|
 |**Anexos**| | |
 |[List attachments](../api/post-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em uma postagem.|
-|[Add attachment](../api/post-post-attachments.md) |[anexo](attachment.md)| Adicione um anexo a uma postagem. |
+|[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| Adicione um anexo a uma postagem. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|

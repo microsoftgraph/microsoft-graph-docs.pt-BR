@@ -4,12 +4,13 @@ description: Modelos de configuração de diretório representam configurações
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b53fc54d4468105eaf5c14039412f03005006a66
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 4239a12be5fffbf5c579752c3de4998c88749bd3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657872"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012783"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>tipo de recurso directorySettingTemplate
 

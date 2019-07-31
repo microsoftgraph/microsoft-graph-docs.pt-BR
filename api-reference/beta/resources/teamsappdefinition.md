@@ -4,12 +4,13 @@ description: Os detalhes de uma versão de um teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4b350c5ebe39da336dfe467bb73f5b91270dc31c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c4849afe745a8554243bd37d85cb82d831e00a64
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345794"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007701"
 ---
 # <a name="teamsappdefinition-resource-type"></a>tipo de recurso teamsAppDefinition
 
@@ -21,7 +22,7 @@ Os detalhes de uma versão de um [teamsApp](teamsapp.md).
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Uma ID exclusiva (não a AppID do Teams). |
+| id                  | cadeia de caracteres   | Uma ID exclusiva (não a AppID do Teams). |
 | teamsAppId          | string   | A ID do manifesto do aplicativo Teams. |
 | displayName         | string   | O nome do aplicativo fornecido pelo desenvolvedor de aplicativos. |
 | versão             | string   | O número da versão do aplicativo. |

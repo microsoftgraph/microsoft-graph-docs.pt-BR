@@ -2,12 +2,15 @@
 title: tipo de recurso privilegedRoleAssignment
 description: 'Representa uma atribuição de função privilegiada para um usuário específico. '
 localization_priority: Normal
-ms.openlocfilehash: 1e58f144eb3dda19225a836aa966f9479d3a9350
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 010dbf110de414e5221873263ffb5bcffe30db48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344210"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008877"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>tipo de recurso privilegedRoleAssignment
 
@@ -33,7 +36,7 @@ Representa uma atribuição de função privilegiada para um usuário específic
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|A data e hora UTC em que a atribuição de função privilegiada temporária será expirada. Para atribuição de função permanente, o valor é NULL.|
 |id|string| O identificador exclusivo da atribuição de função privilegiada. Somente leitura. Ele está no formato de ' userId_roleId ', onde userId é a cadeia de caracteres GUID da ID de usuário do Azure AD e RoleID é a cadeia de caracteres GUID da ID de função do administrador do Azure.|
-|isElevados|booliano|**true** se a atribuição de função é ativada. **false** se a atribuição de função é desativada.|
+|iselevados|booliano|**true** se a atribuição de função é ativada. **false** se a atribuição de função é desativada.|
 |resultMessage|string|Mensagem de resultado definida pelo serviço.|
 |roleId|string|Identificador de função. Em formato de cadeia de caracteres GUID.|
 |userId|string|Identificador de usuário. Em formato de cadeia de caracteres GUID.|

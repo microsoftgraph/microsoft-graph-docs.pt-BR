@@ -2,12 +2,15 @@
 title: tipo de recurso secureScore
 description: 'Top = n, onde n = o número de dias de dados que você deseja recuperar. '
 localization_priority: Normal
-ms.openlocfilehash: 1f4ee37b5e257cfb914f45a1260f3572403f00dd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d1db0e97c88f4532bad2052f77a3513084c74aa7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343370"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008583"
 ---
 # <a name="securescore-resource-type"></a>tipo de recurso secureScore
 
@@ -35,7 +38,7 @@ Tipo de entidade contendo propriedades da Pontuação de segurança do locatári
 |   activeUserCount |   Int32   |   Contagem de usuários ativos de um determinado locatário.  |
 |   currentScore    |   Duplo  |   Pontuação Obtida de locatário atual em data especificada.    |
 |   maxScore |  Duplo  |   Pontuação máxima possível de locatário na data especificada.    |
-|   enabledservices |   Coleção String   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, SharePoint).   |
+|   enabledservices |   Coleção de cadeias de caracteres   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, SharePoint).   |
 |   averageComparativeScores |  coleção [averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por meio de assentos) e categoria de controle (identidade, dados, dispositivo, aplicativos, infraestrutura) dentro do escopo. |
 |   controlScores | coleção [controlScore](controlscore.md)  |   Contém pontuações de locatários para um conjunto de controles.   |
 

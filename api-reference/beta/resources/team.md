@@ -2,15 +2,15 @@
 title: tipo de recurso de equipe
 description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
 author: clearab
-doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 85315d43b1de42e74b83d0ba9664ebfdb7847258
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: resourcePageType
+ms.openlocfilehash: eead2eddd7f0980ba0889ece3d84861bcdf3c323
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908513"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007722"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
