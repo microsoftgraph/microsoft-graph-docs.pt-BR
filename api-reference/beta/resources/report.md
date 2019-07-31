@@ -4,12 +4,13 @@ description: Com o Microsoft Graph, você pode acessar recursos de relatórios d
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: cc3e8948b3633f5bf48e174c79327214d77d60c3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 1364ad0463a82d604ab374d073b3bc929804f302
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343672"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008695"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Trabalhar com relatórios de uso do Office 365 no Microsoft Graph
 

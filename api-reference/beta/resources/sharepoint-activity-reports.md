@@ -4,12 +4,13 @@ description: Você pode obter a atividade de cada usuário licenciado para usar 
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: cfe8c698533b46d4edbbb724dc5fb993cc85cfdb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 408ec081a433823231d4d20af33be2cf9fad31d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343158"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008492"
 ---
 # <a name="sharepoint-activity-reports"></a>Relatório de atividades do SharePoint
 

@@ -4,12 +4,13 @@ description: Perfil de registro usado para registrar dispositivos COSU usando o 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c6f18526b59fc62be4bb3a4e375bd0684406f58
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: aa7c827c6ea6ee3b12e7093f789d11e5b486d5f0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991503"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005622"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>Tipo de recurso androidForWorkEnrollmentProfile
 

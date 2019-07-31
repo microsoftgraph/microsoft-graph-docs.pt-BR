@@ -4,12 +4,13 @@ description: Perfil de certificado de importação PFX do Android para trabalho
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 57bae6778c6f424169956cb8c11f1e92617a535e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 2cb72e8c8e4af997675d49bb1f69e36d55dca9e0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985882"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011845"
 ---
 # <a name="androidforworkimportedpfxcertificateprofile-resource-type"></a>tipo de recurso androidForWorkImportedPFXCertificateProfile
 

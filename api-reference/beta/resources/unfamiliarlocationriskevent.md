@@ -2,12 +2,15 @@
 title: tipo de recurso unfamiliarLocationRiskEvent
 description: Um evento de risco detectado pela proteção de identidade do Azure Active Directory na qual é feita uma tentativa de entrada de uma conta a partir de um novo local para esse usuário. As informações completas sobre eventos de risco podem ser encontradas na documentação de proteção de identidade do Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: 984f11f7e47a251d49acd315d29504216b7995f6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 106310a0ed0f3294842fbe7e2afd29e1d906cdec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345469"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007548"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>tipo de recurso unfamiliarLocationRiskEvent
 
@@ -27,7 +30,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|string| Somente leitura|
+|id|cadeia de caracteres| Somente leitura|
 |ipAddress|string| O endereço IP do logon|
 |location|cadeia de caracteres| O local anexado ao endereço IP do logon|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
@@ -41,7 +44,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| Somente leitura. Anulável.|
+|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -2,14 +2,15 @@
 title: tipo de recurso de filtro
 description: Define um conjunto de cláusulas que um objeto deve satisfazer para ser considerado em escopo. Um objeto é considerado no escopo do grupo (o grupo é avaliado como `true`) somente se todas as cláusulas do grupo são avaliadas. `true`
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c411b85f2661829fe8739b8f8dc1cdd09639723c
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: dd2b30c8ffa07eab87949bf53eaa98e6d88851c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621442"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007939"
 ---
 # <a name="filtergroup-resource-type"></a>tipo de recurso de filtro
 

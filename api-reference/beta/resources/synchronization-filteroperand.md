@@ -2,14 +2,15 @@
 title: tipo de recurso filterOperand
 description: Contém uma coleção de valores para o operando.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c93702ecb91da8d892de170c357e0a2381cba2f3
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: fc428022e0a95ce0ea46c9c95bb8e4f0a101b8bd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621402"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007911"
 ---
 # <a name="filteroperand-resource-type"></a>tipo de recurso filterOperand
 

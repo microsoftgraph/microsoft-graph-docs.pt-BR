@@ -4,12 +4,13 @@ description: Atribuição de configuração de cliente do Office.
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 7c222d16166d9dc63500a970d378ff0d28271eed
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: b046938b6772f4d2ad99030dc2087150fd935ff5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949252"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011985"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>tipo de recurso officeClientConfigurationAssignment
 
@@ -31,7 +32,7 @@ Atribuição de configuração de cliente do Office.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID do OfficeConfigurationAssignment.|
+|id|String|ID do OfficeConfigurationAssignment.|
 |destino|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|A atribuição de destino definida pelo administrador.|
 
 ## <a name="relationships"></a>Relações

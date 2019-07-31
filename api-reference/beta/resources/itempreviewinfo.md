@@ -1,15 +1,17 @@
 ---
 author: kevinlam
-ms.author: kevinlam
+description: O recurso ItemPreviewInfo contém informações sobre como inserir uma visualização de um DriveItem.
 ms.date: 3/16/2018
 title: ItemPreviewInfo-API do OneDrive
 localization_priority: Normal
-ms.openlocfilehash: c43626292cd07ad14d27202255a499b413dbae63
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 2d789dacb0f1c1d3daca988f334fca2e8da4b0d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345502"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010053"
 ---
 # <a name="itempreviewinfo-resource-type"></a>Tipo de recurso ItemPreviewInfo
 
@@ -35,9 +37,9 @@ O recurso **ItemPreviewInfo** contém informações sobre como inserir uma visua
 | postUrl        | string | URL adequada para incorporação usando HTTP POST (Form Post, JS, etc.)
 | postparameters | string | LANÇAR parâmetros para incluir se estiver usando postUrl
 
-SegetUrl, postUrl ou ambos podem ser retornados, dependendo do estado atual de suporte para as opções especificadas.
+Segeturl, postUrl ou ambos podem ser retornados, dependendo do estado atual de suporte para as opções especificadas.
 
-postparameters é uma cadeia de caracteres `application/x-www-form-urlencoded`formatada como e, se estiver executando uma postaGem no postUrl, o tipo de conteúdo deve ser definido de acordo. Por exemplo:
+postparameters é uma cadeia de caracteres `application/x-www-form-urlencoded`formatada como e, se estiver executando uma postagem no postUrl, o tipo de conteúdo deve ser definido de acordo. Por exemplo:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

@@ -2,12 +2,15 @@
 title: Tipo de recurso localeInfo
 description: Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.
 localization_priority: Normal
-ms.openlocfilehash: c4cba9a9e6ef1d0808311cc12801895cdd1453cd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2d359735d9ac0cc00643b323a056acbb7d44365a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345350"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009969"
 ---
 # <a name="localeinfo-resource-type"></a>Tipo de recurso localeInfo
 
@@ -19,7 +22,7 @@ Informações sobre a localidade, incluindo o idioma preferencial e o país/regi
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|locale|string|Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).|
+|localidade|string|Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).|
 |displayName|cadeia de caracteres|Um nome que representa a localidade do usuário em seu idioma natural, por exemplo, "Português (Brasil)".|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -2,12 +2,15 @@
 title: Tipo de recurso itemAttachment
 description: Um contato, evento ou mensagem que está anexado a outro evento,
 localization_priority: Normal
-ms.openlocfilehash: 91fedeac846d6f33aba6b4504eae71fe233a4324
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 31fd3e74e7fc35589abc57a891678e9a129c2a2e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345411"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010081"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 

@@ -2,12 +2,15 @@
 title: tipo de recurso mfaDetail
 description: 'Indica os detalhes de MFA de uma entrada específica. Ele inclui o método de autenticação usado para entrar e os detalhes de autenticação (por exemplo: telefone, SMS ou caixa postal) '
 localization_priority: Normal
-ms.openlocfilehash: 5069045fd202d443a94a80f7333f12ab5e707ada
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3f38fae4d0360386592f956bee05d55738ad6910
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581475"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009661"
 ---
 # <a name="mfadetail-resource-type"></a>tipo de recurso mfaDetail
 Indica os detalhes de MFA de uma entrada específica. Ele inclui o método de autenticação usado para entrar e os detalhes de autenticação (por exemplo: telefone, SMS ou caixa postal) 

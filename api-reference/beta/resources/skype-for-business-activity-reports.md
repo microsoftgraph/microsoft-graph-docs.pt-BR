@@ -4,12 +4,13 @@ description: Você pode obter detalhes sobre a atividade em sua organização. E
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: fae59f7b4053a6a57df4869da165aca023c53071
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: fcd23201732f1e0988853ae33cf08a24295a2647
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342848"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008240"
 ---
 # <a name="skype-for-business-activity-reports"></a>Relatórios de atividades do Skype for Business
 

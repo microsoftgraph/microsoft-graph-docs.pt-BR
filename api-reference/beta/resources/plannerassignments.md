@@ -4,12 +4,13 @@ description: 'O recurso **plannerAssignments** representa as atribuições de um
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2f26bab4eb69a79f4bd18f80128e4445217a1ae7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f49d31f6a46dce0af92cdec3ce76388d1c749276
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344568"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009094"
 ---
 # <a name="plannerassignments-resource-type"></a>tipo de recurso plannerAssignments
 

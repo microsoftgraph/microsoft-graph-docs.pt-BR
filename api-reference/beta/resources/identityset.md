@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso identityset é uma coleção com chave de recursos de identidade.
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: b1570fc0ec0a6e28bab569dfae6992675d8b3537
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: c43981c1f7e79567afe901217030a0b5abed6f53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333656"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006287"
 ---
 # <a name="identityset-resource-type"></a>tipo de recurso identityset
 
@@ -66,7 +68,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="remarks"></a>Comentários 
 
-ConFira [chamada](call.md) para uso **** de recursos identityset.
+Confira [chamada](call.md) para uso **** de recursos identityset.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b2c43d81d045ee6b563e7ae81f8fe6fab56bdf83
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 77741fa05f356418e688cdc4a45c5a4750604c3c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341845"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009276"
 ---
 # <a name="outlookitem-resource-type"></a>Tipo de recurso outlookItem
 

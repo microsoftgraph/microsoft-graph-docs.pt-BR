@@ -1,15 +1,17 @@
 ---
 author: VinodRavichandran
+description: O recurso Audio agrupa propriedades relacionadas a áudio em um item em uma estrutura simples.
 ms.date: 09/10/2017
 title: Áudio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f526fc92c766f3ae91831d5026a31e3bd69b4b8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 078ade2fd92d6eaf8d9017fe5cd8255a7449769e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339066"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013224"
 ---
 # <a name="audio-facet"></a>Faceta Audio
 

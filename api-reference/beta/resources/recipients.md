@@ -2,12 +2,15 @@
 title: tipo de recurso Recipients
 description: Veja a seguir uma representação JSON do recurso
 localization_priority: Normal
-ms.openlocfilehash: 367b796f46dce0f68e8077f7eba93ef0216279f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c94bde1d76155a6aa3c2651cfe7106f70e32b78d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343952"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008786"
 ---
 # <a name="recipients-resource-type"></a>tipo de recurso Recipients
 
@@ -38,7 +41,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |alias|String||
-|email|String||
+|email|Cadeia de caracteres||
 |objectId|Cadeia de caracteres||
 |permissionIdentityType|String||
 

@@ -4,12 +4,13 @@ description: Uma classe para manter os dados de registro Specialty usados para r
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1bc92a624e17c9fd0e3d4bb5116bbfbb7c38369
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: fdbcf69751cf341c78c654580a709b0873213289
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992896"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005657"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>tipo de recurso androidEnrollmentCompanyCode
 

@@ -4,12 +4,13 @@ description: Representa a formatação do título do eixo do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c98cfee5c776f761c4e84479bb6a4b3f2814bb06
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e992f083bd063ea7708f0aec4261ec04cbcc8539
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348457"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007281"
 ---
 # <a name="workbookchartaxistitleformat-resource-type"></a>tipo de recurso workbookChartAxisTitleFormat
 
@@ -24,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |font|[workbookChartFont](workbookchartfont.md)|Representa os atributos de fonte, como nome, tamanho, cor, etc., do objeto do eixo do gráfico. Somente leitura.|

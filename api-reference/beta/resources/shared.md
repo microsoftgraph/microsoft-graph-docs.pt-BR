@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso Shared indica que um DriveItem foi compartilhado com outras pessoas.
 ms.date: 09/10/2017
 title: Compartilhados
 localization_priority: Normal
-ms.openlocfilehash: 143593615d34d069c8378f1cb068fc000d076192
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d4337341245d355d85d8d4ba74171ed95863e06a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343164"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008464"
 ---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 

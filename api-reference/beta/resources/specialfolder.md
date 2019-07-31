@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso SpecialFolder agrupa itens de dados relacionados a pastas especiais em uma única estrutura.
 ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
-ms.openlocfilehash: 8fb192780e4841b584f9bb8b503ab47474949e20
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 647916e53409be47ebd3547a8712778bb6ba9f54
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342952"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008072"
 ---
 # <a name="specialfolder-resource-type"></a>Tipo de recurso SpecialFolder
 

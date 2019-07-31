@@ -2,14 +2,15 @@
 title: tipo de recurso synchronizationJob
 description: Realiza a sincronização periodicamente em segundo plano, pesquisando alterações em um diretório e empurrando-os para outro diretório. O trabalho de sincronização é sempre específico para uma instância específica de um aplicativo em seu locatário. Como parte da configuração do trabalho de sincronização, você precisa dar autorização para ler e gravar objetos no diretório de destino e personalizar o esquema de sincronização do trabalho.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19f30dd20d313d5ab7a46dd9368d391b83ee1993
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: a311c8ae7618778c2dbd8cdbc9a5b30af254eae4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620728"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007792"
 ---
 # <a name="synchronizationjob-resource-type"></a>tipo de recurso synchronizationJob
 

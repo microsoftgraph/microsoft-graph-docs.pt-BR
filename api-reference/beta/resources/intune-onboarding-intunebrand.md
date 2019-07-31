@@ -4,12 +4,13 @@ description: intuneBrand contém dados que são usados na personalização da ap
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed28888040b10ca17b06c5b8a624f4e521088fcf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9d921ffbaca07a790060011a9970b4b02b0e8472
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992938"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010697"
 ---
 # <a name="intunebrand-resource-type"></a>Tipo de recurso intuneBrand
 

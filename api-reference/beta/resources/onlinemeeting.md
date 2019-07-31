@@ -4,12 +4,13 @@ description: Captura informações sobre a reunião, incluindo a URL de ingresso
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 698058fa918462448fcd115d5573e13ada49162e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: cd3615f82a4e88d6dc0b07c12ba72e39726e755f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341838"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009353"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
@@ -33,13 +34,13 @@ Captura informações sobre a reunião, incluindo a URL de ingresso, a lista de 
 | chatInfo                  | [chatInfo](chatinfo.md)                                | O chat associado a esta reunião. |
 | creationDatetime          | DateTime                                               | A hora em que a reunião foi criada. Somente leitura.
 | endDateTime               | DateTime                                               | Hora de término da reunião. |
-| entryExitAnnouncement     | Boolean                                                | O status dos comunicados de presença para a reunião online. Quando os comunicados de presença estiverem habilitados, a reunião online anunciará os nomes dos participantes que ingressarem na reunião por meio de áudio. |
+| entryExitAnnouncement     | Booliano                                                | O status dos comunicados de presença para a reunião online. Quando os comunicados de presença estiverem habilitados, a reunião online anunciará os nomes dos participantes que ingressarem na reunião por meio de áudio. |
 | expirationDateTime        | DateTime                                               | A data e a hora UTC (tempo Universal Coordenado) absoluta após a qual a reunião online pode ser excluída. O dia e a hora devem estar entre um ano antes e dez anos após, a data e a hora atuais no servidor. |
 | id                        | String                                                 | A ID associada à reunião online. Usado em uma solicitação HTTP GET como a ID. Somente leitura. Servidor gerado. |
 | isCancelled               | Booliano                                                | Se a reunião foi cancelada. |
 | joinUrl                   | String                                                 | A URL que é usada quando a reunião online é associada da Web. |
 | meetingtype               | String                                                 | Os valores possíveis são `meetNow`: `scheduled`, `recurring`, `broadcast` , (Observação: a [criação](../api/application-post-onlinemeetings.md) de `meetNow`onlineMeeting só oferece suporte). |
-| participantes              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
+| participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime             | DateTime                                               | Hora de início da reunião. |
 | subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
 

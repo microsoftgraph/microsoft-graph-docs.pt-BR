@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: Um columnLink em um contentType anexa um columnDefinition de site para esse tipo de conteúdo.
 ms.date: 09/12/2017
 title: ColumnLink
 localization_priority: Normal
-ms.openlocfilehash: c6fc12dcfaeffcb3cd4fb08a6863611ae33541d5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 4add6ac0edc401815d8072371ce0faca48d5852b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341400"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012940"
 ---
 # <a name="columnlink-resource-type"></a>Tipo de recurso ColumnLink
 

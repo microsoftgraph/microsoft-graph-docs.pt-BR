@@ -4,12 +4,13 @@ description: 'Estes são os cenários de resposta de voz interativa (IVR) que as
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69023de179714797156f8ed039e2086e060fe9b1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 25f9339f33a6a679a8c8829214526fc29bc88b04
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338765"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013035"
 ---
 # <a name="ivr-scenarios-in-calls"></a>Cenários IVR em chamadas
 

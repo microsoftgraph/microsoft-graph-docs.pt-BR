@@ -4,12 +4,13 @@ description: Representa os serviços do Outlook disponíveis para um usuário.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5fcc05e9cbb1e59927af0722cd8812c633e36581
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2c23cccabcea33b8cdaacba6ae9abede456c5c99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345072"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009262"
 ---
 # <a name="outlookuser-resource-type"></a>Tipo de recurso outlookUser
 

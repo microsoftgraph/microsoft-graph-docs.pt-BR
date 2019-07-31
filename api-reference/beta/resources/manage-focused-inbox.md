@@ -2,12 +2,15 @@
 title: Gerenciar a Caixa de Entrada Prioritária
 description: 'A caixa de entrada destaques permite exibir mensagens importantes na `Focused` guia da caixa de entrada e o restante das mensagens da caixa de entrada `Other` na guia. O sistema de classificação '
 localization_priority: Normal
-ms.openlocfilehash: 5f4493e45038e12ed7a4459220d568ee647a5388
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 98b89140028d0deeaec674dcc124d39fa72a1cd9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342639"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009808"
 ---
 # <a name="manage-focused-inbox"></a>Gerenciar a Caixa de Entrada Prioritária
 

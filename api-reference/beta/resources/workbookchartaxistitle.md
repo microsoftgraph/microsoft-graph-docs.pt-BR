@@ -4,12 +4,13 @@ description: Representa o título de um eixo do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bb6eeb7afb270d1cbc16fe5ab818f6a650800d1a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 685ed8ce049fda8cdba12d4bc9171156b458e443
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348458"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007295"
 ---
 # <a name="workbookchartaxistitle-resource-type"></a>tipo de recurso workbookChartAxisTitle
 
@@ -31,7 +32,7 @@ Representa o título de um eixo do gráfico.
 |texto|string|Representa o título do eixo.|
 |visible|booliano|Um booliano que especifica a visibilidade de um título do eixo.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[workbookChartAxisTitleFormat](workbookchartaxistitleformat.md)|Representa a formatação do título do eixo do gráfico. Somente leitura.|

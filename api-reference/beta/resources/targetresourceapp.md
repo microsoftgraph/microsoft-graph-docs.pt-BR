@@ -2,12 +2,15 @@
 title: tipo de recurso targetResourceApp
 description: Indica o objeto app que foi adicionado, atualizado ou excluído por administradores como parte da atividade de auditoria. Derivado do recurso targetResource.
 localization_priority: Normal
-ms.openlocfilehash: e426eacb1bdea15a2666f45bb061d28afcc693bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 00408fee6217fd53bb82c61da7ea1e4db8dc1a1e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583113"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007715"
 ---
 # <a name="targetresourceapp-resource-type"></a>tipo de recurso targetResourceApp
 Indica o objeto app que foi adicionado, atualizado ou excluído por administradores como parte da atividade de auditoria. Derivado do recurso [targetResource](targetresource.md) .

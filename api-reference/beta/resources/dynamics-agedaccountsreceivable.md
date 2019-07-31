@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: ce5d010c08f956468398082821040e30b4ef2ace
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f9589cbb4cb380eececdcc7adf7bd5dd682269f6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507613"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012669"
 ---
 # <a name="agedaccountsreceivable-resource-type"></a>tipo de recurso agedAccountsReceivable
 Representa um objeto agedAccountsReceivable no Dynamics 365 Business central, que está mostrando o envelhecimento de uma conta de cliente.
@@ -27,7 +28,7 @@ Representa um objeto agedAccountsReceivable no Dynamics 365 Business central, qu
 |:---------------|:--------|:--------------------------------------------|
 |Box      |GUID     |A ID exclusiva do cliente.                   |
 |customerNumber  |string   |Especifica o número do cliente.                 |
-|nome            |string   |Especifica o nome do cliente.                   |
+|name            |string   |Especifica o nome do cliente.                   |
 |currencyCode    |string   |Especifica a moeda.                      |
 |balanceDue      |numéricos  |Especifica o saldo total do cliente.      |
 |currentAmount   |numéricos  |Especifica o saldo para o período de envelhecimento atual.|
@@ -39,7 +40,7 @@ Representa um objeto agedAccountsReceivable no Dynamics 365 Business central, qu
 
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 

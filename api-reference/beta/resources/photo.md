@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso photo fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um driveItem.
 ms.date: 09/10/2017
 title: Foto
 localization_priority: Normal
-ms.openlocfilehash: f55236489d71c88f8d000b3462e64e82b8c08e56
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 6713e66b5ca14cfa6605b9e67d4bec152a321f33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344885"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009220"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
 

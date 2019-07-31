@@ -4,12 +4,13 @@ description: Contém propriedades e propriedades herdadas para a linha de aplica
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5222b3a9886920991755c9c72908f257037d240e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 27114474a29d74fe28a321951d2c2d31a9812f9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975683"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012139"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>tipo de recurso windowsPhone81AppXBundle
 

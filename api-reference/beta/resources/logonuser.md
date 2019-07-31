@@ -2,12 +2,15 @@
 title: tipo de recurso logonUser
 description: Contém informações de estado sobre o usuário conectado neste host
 localization_priority: Normal
-ms.openlocfilehash: 3b7862555c62eb16aaceaa53d4df58541426e08a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 08053b2e3ba42c167edebb3678b41ccb3531e078
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562654"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009913"
 ---
 # <a name="logonuser-resource-type"></a>tipo de recurso logonUser
 

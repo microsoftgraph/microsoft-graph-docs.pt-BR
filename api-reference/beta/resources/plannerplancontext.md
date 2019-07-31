@@ -4,12 +4,13 @@ description: O recurso **plannerPlanContext** representa a relação de um plann
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 443331ef12469436e10f63a4311bfea0547be6fd
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.openlocfilehash: 6a1d638e26ae51bdca86bf397889d84a3a97dc11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778646"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009024"
 ---
 # <a name="plannerplancontext-resource-type"></a>tipo de recurso plannerPlanContext
 

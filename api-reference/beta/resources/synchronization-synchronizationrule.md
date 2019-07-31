@@ -2,14 +2,15 @@
 title: tipo de recurso synchronizationRule
 description: Define como a sincronização deve ser executada para o mecanismo de sincronização, incluindo quais objetos sincronizar e em que direção, como os objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos deve ser transformada quando estiverem sincronizadas da origem para o diretório de destino.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 83bb8751a60197b8afd9132618ba994c33f370c8
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 367c0f00fb4abe4a41785f3b73599c06a2b31d6f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620707"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007770"
 ---
 # <a name="synchronizationrule-resource-type"></a>tipo de recurso synchronizationRule
 

@@ -4,12 +4,13 @@ description: Contém propriedades e propriedades herdadas para aplicativos da lo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78d16c748db5528663a41efa6a935defb1510c05
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 228f0b5e59091391594f65105086e78841ad7e44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989095"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012545"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp resource type
 

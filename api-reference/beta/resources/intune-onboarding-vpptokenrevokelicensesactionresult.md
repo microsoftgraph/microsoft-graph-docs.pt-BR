@@ -4,12 +4,13 @@ description: O status da ação de revogação de licenças executada no token d
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e33a47d6fd4f40939d26a7faf41c209fe6e63651
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 91e86ad5dd490aa4f42a01c369b8597fde030857
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958582"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010627"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>tipo de recurso vppTokenRevokeLicensesActionResult
 

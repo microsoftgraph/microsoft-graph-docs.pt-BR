@@ -4,12 +4,13 @@ description: A entidade de configuração de política de grupo contém os valor
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 544b743ab690521fee48e3609e2c62582131d6ef
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b86341384bc38180e2049c7a0c0b769c78aa1874
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994241"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011019"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>tipo de recurso groupPolicyConfiguration
 

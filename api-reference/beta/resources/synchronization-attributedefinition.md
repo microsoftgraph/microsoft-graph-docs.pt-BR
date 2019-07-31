@@ -2,14 +2,15 @@
 title: tipo de recurso attributeDefinition
 description: Descreve um atributo de um objeto.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 73e218ffce2d77d0e0f716d86c74e60224fb15fb
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 3652a6d09d363a4f14227752506ba5d670dfd6fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008002"
 ---
 # <a name="attributedefinition-resource-type"></a>tipo de recurso attributeDefinition
 

@@ -4,12 +4,13 @@ description: 'Descreve a visibilidade de uma equipe. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3891092236012e0f960124d48b868256d58b538c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: enumPageType
+ms.openlocfilehash: 0983d62ddf884df4997ad02bdc9d574bbeafdcae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342023"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007666"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>tipo de enumeração teamVisibilityType
 
@@ -22,4 +23,4 @@ Descreve a visibilidade de uma [equipe](../resources/team.md).
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
 |privada|,0|Qualquer pessoa pode ver a equipe, mas apenas o proprietário pode adicionar um usuário à equipe.|
-|public|1 |Qualquer pessoa pode participar da equipe.|
+|public|1|Qualquer pessoa pode participar da equipe.|

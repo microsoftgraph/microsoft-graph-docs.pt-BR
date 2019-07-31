@@ -4,12 +4,13 @@ description: Uma percepção representando documentos usados por um usuário esp
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 407822dc4ff3f0536b0cbff3bf2894ad96d5d878
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2b6e7a7c4df94e9ffbcb34ef200457b4a903eb24
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333549"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005685"
 ---
 # <a name="usedinsight-resource-type"></a>tipo de recurso usedInsight
 
@@ -24,7 +25,7 @@ Uma percepção representando documentos usados por um usuário específico. O i
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar usados](../api/insights-list-used.md) |coleção [usedInsight](insights-used.md)| Obtenha uma lista de arquivos usados.|
+|[Listar usados](../api/insights-list-used.md) |[usedInsight](insights-used.md) conjunto| Obtenha uma lista de arquivos usados.|
 
 ## <a name="properties"></a>Propriedades
 

@@ -2,14 +2,15 @@
 title: tipo de recurso synchronizationSchema
 description: Define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de configuração de um determinado trabalho de sincronização. Normalmente, você personalizará alguns dos mapeamentos de atributo ou adicionará um filtro de escopo para sincronizar somente objetos que atendam a uma determinada condição.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7d4302cec5fe568f322e5a8d1b86bc4681b50f7c
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 95cb2a9bc38b3c23d8ddece5abe5520bf0fe25a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007778"
 ---
 # <a name="synchronizationschema-resource-type"></a>tipo de recurso synchronizationSchema
 

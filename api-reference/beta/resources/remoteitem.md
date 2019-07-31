@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso remoteItem indica que um driveItem faz referência a um item que existe em outra unidade.
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: 264c2aadf13097a728bc784aa9eb61e55d5ea819
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 05da43fb3d7b1e2adec01f707eeed61df4623f04
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008702"
 ---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 

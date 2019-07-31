@@ -4,12 +4,13 @@ description: Contém propriedades da arquitetura do Windows.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6c3679914b6babeb53f0e61c0f1158553bfba35
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 77c32eb40299ae81de8988358a1e736bd20b3208
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975690"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012181"
 ---
 # <a name="windowsarchitecture-enum-type"></a>tipo de enumeração windowsArchitecture
 

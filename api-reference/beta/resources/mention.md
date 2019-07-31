@@ -4,12 +4,13 @@ description: Representa uma notificação para uma pessoa com base no endereço 
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 28a77b393f2d5574453d08b93df487ffc5203e2c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6c182ad015882a0e34289efbecb4dbcfd1cb8369
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342314"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009724"
 ---
 # <a name="mention-resource-type"></a>tipo de recurso menção
 

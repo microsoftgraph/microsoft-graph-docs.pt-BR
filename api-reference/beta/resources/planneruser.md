@@ -4,12 +4,13 @@ description: 'O recurso **plannerUser** fornece acesso aos recursos do Planner p
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: fd279e541df4b45e47d1c389d2e8a1e212b01a41
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2229020f00331e761eceeadf0739c84995e5bbdb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344337"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008989"
 ---
 # <a name="planneruser-resource-type"></a>tipo de recurso plannerUser
 
@@ -25,7 +26,7 @@ O recurso **plannerUser** fornece acesso aos recursos do Planner para um [usuár
 |[Listar tarefas](../api/planneruser-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obtenha o [plannerTasks](plannertask.md) atribuído ao usuário.|
 |[Listar favoritePlans](../api/planneruser-list-favoriteplans.md) |Coleção [plannerPlan](plannerplan.md)| Obter o [plannerPlans](plannerplan.md) marcado como favorito pelo usuário.|
 |[Listar recentPlans](../api/planneruser-list-recentplans.md) |Coleção [plannerPlan](plannerplan.md)| Obtenha o [plannerPlans](plannerplan.md) exibido recentemente pelo usuário.|
-|[Atualizar](../api/planneruser-update.md) | [plannerUser](planneruser.md)| Atualizar um objeto **plannerUser** . |
+|[Atualização](../api/planneruser-update.md) | [plannerUser](planneruser.md)| Atualizar um objeto **plannerUser** . |
 
 
 ## <a name="properties"></a>Propriedades

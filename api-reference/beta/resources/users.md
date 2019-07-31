@@ -4,12 +4,13 @@ description: Você pode usar o Microsoft Graph para criar experiências envolven
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a65192dccabef1540e7f09b8751e1d9c6b0a3943
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: a0a1959607e72397e24065a81b7d2362e05002ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345052"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007400"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 

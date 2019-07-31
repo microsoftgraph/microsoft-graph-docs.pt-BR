@@ -4,12 +4,13 @@ description: Você pode obter a atividade de cada usuário licenciado para usar 
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 3a99ba5dbc1a61b11d916c9fff90cec53a4eeaf9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 710b2ed88deeec26846bb5afe7503808d8c470c5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345518"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009437"
 ---
 # <a name="onedrive-activity-reports"></a>Relatórios de atividades do OneDrive
 

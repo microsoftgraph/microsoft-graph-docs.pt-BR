@@ -4,12 +4,13 @@ description: 'Uma sugestão de reunião que inclui informações como o horário
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e5abecaf1064eee3621e8800874dc6a2c3ef9e11
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 08db0883021337ced13fa753c5cf3b0083782cc9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342398"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009738"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Tipo de recurso meetingTimeSuggestion
 

@@ -4,12 +4,13 @@ description: Configuração de cliente do Office.
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: c762158345e957c265d3784e46f2ef91421603be
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 3688503cf19d8cebe51b4afe7abd1563257f9192
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004756"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>tipo de recurso Conjuntoofficeclientconfiguration
 
@@ -31,9 +32,9 @@ Configuração de cliente do Office.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|ID da política de configuração de cliente do Office.|
-|userPreferencePayload|Stream|Cadeia de caracteres JSON das configurações de preferência no formato binário, esses valores podem ser substituídos pelo usuário.|
-|policyPayload|Stream|Cadeia de caracteres JSON de configurações de política no formato binário, esses valores não podem ser alterados pelo usuário.|
-|description|String|Ainda não documentado|
+|userPreferencePayload|Fluxo|Cadeia de caracteres JSON das configurações de preferência no formato binário, esses valores podem ser substituídos pelo usuário.|
+|policyPayload|Fluxo|Cadeia de caracteres JSON de configurações de política no formato binário, esses valores não podem ser alterados pelo usuário.|
+|descrição|String|Ainda não documentado|
 |displayName|String|Descrição fornecida pelo administrador da política de configuração de cliente do Office.|
 |lastModifiedDateTime|DateTime|Carimbo de data/hora da última modificação da política.|
 |prioridade|Int32|O valor de prioridade deve ser um valor exclusivo para cada política em um locatário e será usado para resolução de conflitos, a prioridade média de valores menores é alta.|

@@ -2,12 +2,15 @@
 title: tipo de recurso scheduleItem
 description: Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Esse item também se aplica a um recurso.
 localization_priority: Normal
-ms.openlocfilehash: d8b0d7bc18c00ca8bda3ef91b2ec8c629c980a97
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: microsoft-teams
+author: ''
+ms.openlocfilehash: f2901412dcf1d52d8b117afa214da159b4553a8a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343452"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008639"
 ---
 # <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
 
@@ -19,7 +22,7 @@ Um item que descreve a disponibilidade de um usuário correspondente a um evento
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente termina. |
-|isPrivate |Boolean |A sensibilidade do evento correspondente. True se o evento estiver marcado `private`; caso contrário, false. Opcional. |
+|IsPrivate |Booliano |A sensibilidade do evento correspondente. True se o evento estiver marcado `private`; caso contrário, false. Opcional. |
 |location |String | O local onde o evento correspondente é mantido ou participado. Opcional.|
 |iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente é iniciado. |
 |status |freeBusyStatus | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |

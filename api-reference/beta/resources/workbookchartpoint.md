@@ -4,12 +4,13 @@ description: Representa o ponto de uma série do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e12cc2f9a700ef66ec47a72aa88a2c30f2c2c3f6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: db0037e91f1ee9279a131c5a318c4425e7878aed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348523"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007253"
 ---
 # <a name="workbookchartpoint-resource-type"></a>tipo de recurso workbookChartPoint
 
@@ -32,7 +33,7 @@ Representa o ponto de uma série do gráfico.
 |valor|Json|Retorna o valor de um ponto do gráfico. Somente leitura.|
 |id|string|identificador exclusivo|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[workbookChartPointFormat](workbookchartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|

@@ -4,12 +4,13 @@ description: Contém propriedades para o status de instalação de um usuário.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60049701413605396ee4bf8d7277a02a11cc5bc0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b3d25b512a088900971c6471e1f66296858a5081
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993295"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005055"
 ---
 # <a name="userappinstallstatus-resource-type"></a>tipo de recurso userAppInstallStatus
 

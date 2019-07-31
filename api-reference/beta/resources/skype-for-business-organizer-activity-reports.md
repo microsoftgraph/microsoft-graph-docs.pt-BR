@@ -4,12 +4,13 @@ description: Você pode obter detalhes sobre a atividade de conferências organi
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e715e2b345dac4aae4c41b123b0c94a5d66ddc44
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 1c5962466933b0479f76c51bc15bf3a36bcc9d43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342855"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008219"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Relatórios de atividades do organizador do Skype for Business
 

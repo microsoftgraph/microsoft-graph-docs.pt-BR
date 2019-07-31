@@ -4,12 +4,13 @@ description: Configuração de otimização de entrega do Windows
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c34a8d1a87be09e66c09909486bb8b4ccd8fb2c7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: bb177f2bb272289e9e74da96fa953f6078c65ad2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35737654"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011243"
 ---
 # <a name="windowsdeliveryoptimizationconfiguration-resource-type"></a>tipo de recurso windowsDeliveryOptimizationConfiguration
 

@@ -4,12 +4,13 @@ description: Descreve o status atual de um teamsAsyncOperation.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bd44b7e1feabfba75edaa9bbeb88f1f0ed7a00f0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 35975d122adf6411afc6fe4c382d1ff46b41e263
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345736"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007680"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>tipo de enumeração teamsAsyncOperationStatus
 
@@ -22,7 +23,7 @@ Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
 |Inválido|,0|Valor inválido.|
-|notStarted|1 |A operação não foi iniciada.|
-|inProgress|2 |A operação está sendo executada.|
-|adicionada|3 |A operação foi bem-sucedida.|
-|falhou|4 |Falha na operação.|
+|notStarted|1|A operação não foi iniciada.|
+|inProgress|duas|A operação está sendo executada.|
+|adicionada|3D|A operação foi bem-sucedida.|
+|falhou|quatro|Falha na operação.|

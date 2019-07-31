@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 192629623b0a0d46453f4dd4f9bfd7f1dc48cccf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9e58e0d4613118cd8ceecfcae318982bc2035917
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32505526"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009493"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>tipo de recurso office365ActiveUserDetail
 

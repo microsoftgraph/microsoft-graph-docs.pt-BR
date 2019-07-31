@@ -4,12 +4,13 @@ description: Você pode usar o Microsoft Graph para consultar o recurso identity
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 892387c3149f7492b5494a02bbd5e4200cc7757c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: d43f3a54e8ec8aebd0c8018cea9986c0c161a073
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340258"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005818"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Usar a API de proteção de identidade do Azure AD (versão prévia)
 

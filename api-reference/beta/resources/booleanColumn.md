@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: booleanColumn em um recurso columnDefinition indica que a coluna mantém um valor booliano.
 ms.date: 09/11/2017
 title: BooleanColumn
 localization_priority: Normal
-ms.openlocfilehash: b7e82d2959d2d825562820f398a141e76683affc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d218c1b497f457abc1fdebb34a5b94d26de1d0ea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338796"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013070"
 ---
 # <a name="booleancolumn-resource-type"></a>Tipo de recurso BooleanColumn
 

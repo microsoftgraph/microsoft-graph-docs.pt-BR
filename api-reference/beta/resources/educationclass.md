@@ -4,12 +4,13 @@ description: Representa uma aula em uma escola. O recurso **educationClass** cor
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 8a228c329427ae6b3f8da1a971817e88284be917
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: resourcePageType
+ms.openlocfilehash: 0bc9fa375e3f22087fbf268933370d8a6222654e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750077"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006364"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 

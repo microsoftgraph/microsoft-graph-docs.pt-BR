@@ -4,12 +4,13 @@ description: Tipo de dados para um item de configuração no esquema de configur
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7d6a5c5e5479190171411e5587cec57c358e06b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 0202378f9ad582559dc0a60181ec9b4ca0bbe2c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006175"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>tipo de enumeração androidManagedStoreAppConfigurationSchemaItemDataType
 

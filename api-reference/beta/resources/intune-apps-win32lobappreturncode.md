@@ -4,12 +4,13 @@ description: Contém propriedades de código de retorno para um aplicativo Win32
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34bda91a0374c57ef4f5ca6e51bc006c80592361
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 1ea4c0138aa6d2cf90ac111a91f7e0acc145d64c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975774"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012209"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>tipo de recurso win32LobAppReturnCode
 

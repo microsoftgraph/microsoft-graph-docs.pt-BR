@@ -4,12 +4,13 @@ description: A entidade de valor de definição armazena o valor de uma única d
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 816d2e78a969dcd50ad4cff0efd6e294def78d23
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 999a1ef5c761fc5183d64b9adfd586f4ce8126ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010977"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>tipo de recurso groupPolicyDefinitionValue
 
