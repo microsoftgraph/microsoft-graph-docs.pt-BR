@@ -4,12 +4,12 @@ description: Para definir o escopo das permissões de aplicativo de um aplicativ
 author: svpsiva
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42e08989f462def2d1956c7e6fee2ad635f23e5a
-ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
+ms.openlocfilehash: f9121ffad617d6901688718a8982b926959d8626
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34692763"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932574"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online 
 
