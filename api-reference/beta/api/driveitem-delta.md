@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Esse método permite que o seu aplicativo controle alterações em uma unidade e seus filhos com o passar do tempo.
 ms.date: 09/10/2017
 title: Sincronizar o conteúdo de uma unidade
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e5d3e701ecd8e50c581a921663e45a64f1febe1b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 96d820a1fe5037a64a19ac558d9a9fc0f6b600ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861280"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957161"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 

@@ -4,12 +4,13 @@ description: Obter grupos recém-criados, atualizados ou excluídos, incluindo a
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a6706ab693b5977242c56677b8ac97fbe0cda802
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 745e8691260275f5237490f26943df07766dc7c5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858733"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953959"
 ---
 # <a name="group-delta"></a>group: delta
 

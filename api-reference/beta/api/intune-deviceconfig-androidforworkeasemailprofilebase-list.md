@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos androidForWorkEasEmail
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98d95faa3e60e3ffde979c3db3b4c8f1a9487497
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 64f559afbf5495273de9f40a4a9aa989de56585e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970944"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963714"
 ---
 # <a name="list-androidforworkeasemailprofilebases"></a>Listar androidForWorkEasEmailProfileBases
 

@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos androidForWorkEnterpri
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c224a99906543758b0cc17abe1c8029539c8f02c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4a66364dc431e58a312ee27c16099c87ff86c6b3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970895"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963665"
 ---
 # <a name="list-androidforworkenterprisewificonfigurations"></a>Listar androidForWorkEnterpriseWiFiConfigurations
 

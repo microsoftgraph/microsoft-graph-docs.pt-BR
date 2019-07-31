@@ -4,12 +4,13 @@ description: 'O recurso **plannerCategoryDescriptions** representa os rótulos d
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a410f748c43d50872936d4bcc106ffeb224d76cf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a8d80be1768cae3383b07c6fbb7dac1e042cc0bd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344554"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966019"
 ---
 # <a name="plannercategorydescriptions-resource-type"></a>tipo de recurso plannerCategoryDescriptions
 

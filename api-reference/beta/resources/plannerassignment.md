@@ -4,12 +4,13 @@ description: O recurso **plannerAssignment** representa a atribuição de uma ta
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: fddb3214417fc1320b6218b4e9fd0266b176e26a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 27b012374882e98da1669ac0921416bc1a9d1c63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344604"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966038"
 ---
 # <a name="plannerassignment-resource-type"></a>tipo de recurso plannerAssignment
 

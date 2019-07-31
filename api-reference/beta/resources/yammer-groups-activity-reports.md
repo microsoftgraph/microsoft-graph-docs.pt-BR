@@ -4,12 +4,13 @@ description: Você pode obter informações sobre a atividade de grupos do yamme
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 9035984cf33c56811dc411a6c9cc01e6d438d194
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 07a78a4b2047e03beee611443240f56739f76b4f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342785"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963832"
 ---
 # <a name="yammer-groups-activity-reports"></a>Relatórios de atividades de grupos do Yammer
 

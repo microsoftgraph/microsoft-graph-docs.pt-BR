@@ -4,18 +4,19 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: d543bf16617ed28d50d2e7082372ff2014cd24c5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e6f543a85ac2974f9b3e99d4290fb9d93a8cc025
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343290"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965212"
 ---
 # <a name="securityvendorinformation-resource-type"></a>tipo de recurso securityVendorInformation
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = Windows Defender ATP; subFornecedor = AppLocker).
+Contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = Windows Defender ATP; subfornecedor = AppLocker).
 
 ## <a name="properties"></a>Propriedades
 

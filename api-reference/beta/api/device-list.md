@@ -4,12 +4,13 @@ description: 'Recupere uma lista de dispositivos registrados no diretório. '
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a630b7e35a9181779e392380102e397d2419701b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e4249ac4c36167b191b60d0fb1c54948ae055f99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862669"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951355"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 

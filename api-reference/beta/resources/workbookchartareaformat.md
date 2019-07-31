@@ -4,12 +4,13 @@ description: Encapsula as propriedades de formato da área de gráfico geral.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6554604e2bb4c49d7e14546f1c5079690f99637f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: afb3bc154295495893da4f0b183d1737c3b3d090
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348459"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964092"
 ---
 # <a name="workbookchartareaformat-resource-type"></a>tipo de recurso workbookChartAreaFormat
 
@@ -24,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |fill|[workbookChartFill](workbookchartfill.md)|Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|

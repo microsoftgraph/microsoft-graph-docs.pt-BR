@@ -4,12 +4,13 @@ description: Criar um novo objeto androidManagedStoreAppConfigurationSchema.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1eccfe840161e891102710be77c95364c94b9ac
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 8ef1ebcfdb92700b1260433b7085ff9db2a14c00
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35705195"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952531"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>Criar androidManagedStoreAppConfigurationSchema
 

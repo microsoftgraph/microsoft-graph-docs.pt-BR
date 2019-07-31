@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Envia um convite de compartilhamento para um DriveItem.
 ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b324c92f58090159643aeecd4a6e2d1e24fb2f44
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 116024447d21edc353f8d774c30d32aae8c4e8fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861138"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957077"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 

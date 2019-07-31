@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto androidForWorkScepCertificate
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c1e97f05f5147c00a8a6c4f6c5e6d3fbbaa93f0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b4bf5a0b6d60592d2e9e56399ead488cd5166ea7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970468"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963203"
 ---
 # <a name="update-androidforworkscepcertificateprofile"></a>Atualizar androidForWorkScepCertificateProfile
 

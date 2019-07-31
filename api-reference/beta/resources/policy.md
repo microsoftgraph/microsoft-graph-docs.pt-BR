@@ -2,12 +2,15 @@
 title: tipo de recurso de política
 description: 'Representa uma política do Azure AD. As políticas são regras personalizadas que podem ser aplicadas em aplicativos, entidades de serviço, grupos ou toda a organização à qual foram atribuídas. Atualmente, somente um tipo de política está disponível:'
 localization_priority: Normal
-ms.openlocfilehash: 94d99bf107b8db5b264dd6dfe958da0ac53ae02a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4a97caf82a53900ac4ba1e81cebddda114336597
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344201"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965807"
 ---
 # <a name="policy-resource-type"></a>tipo de recurso de política
 
@@ -33,9 +36,9 @@ Essa política é descrita em mais detalhes abaixo.
 ##  <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definir|Coleção String|A versão de cadeia de caracteres da política específica. Veja a seguir. Obrigatório.|
+|definir|Coleção de cadeias de caracteres|A versão de cadeia de caracteres da política específica. Confira a seguir. Obrigatório.|
 |displayName|String|Um nome personalizado para a política. Obrigatório.|
-|IsOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|IsOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 |type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy". Obrigatório.|
 |alternativeIdentifer|String| |
 |keyCredentials| Coleção [keyCredential](keycredential.md)| |

@@ -2,12 +2,15 @@
 title: Listar governanceRoleDefinitions
 description: Obtenha uma coleção de governanceRoleDefinitions em um recurso.
 localization_priority: Normal
-ms.openlocfilehash: ec648687b70dac37b6775ac1d3d14b3fcd6c7b7e
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 95b8b4dad1777775660aea8b2a2d137f1564c9bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422476"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954106"
 ---
 # <a name="list-governanceroledefinitions"></a>Listar governanceRoleDefinitions
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

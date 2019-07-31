@@ -4,12 +4,13 @@ description: Informações calculadas que retornam a lista de arquivos compartil
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: fd3f784ca48c408b8616faaa965b327aec48c538
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 5fa615e27f6fe1833af8d1b7c62c952623f5b703
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328529"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953063"
 ---
 # <a name="list-shared"></a>Listar compartilhados
 
@@ -42,7 +43,7 @@ Você pode usar o `$filter` parâmetro de consulta para filtrar itens compartilh
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-ConFira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).
+Confira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 Você também pode recuperar arquivos compartilhados por um usuário específico. Por exemplo, especificando a `lastshared/sharedby/address` Propriedade:
 

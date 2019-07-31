@@ -4,12 +4,13 @@ description: Criar um novo objeto windowsStoreApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd031265cb0330fe064877769e379b06e07a36d8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b2a06aeb7f24bce2da24fabfb0cce6e57fcc35b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972834"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959772"
 ---
 # <a name="create-windowsstoreapp"></a>Criar windowsStoreApp
 

@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto androidForWorkCompli
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f426c251d17f0b38afcc32653b8a2b58e972d868
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a586c81200c06794ad57dd5814171f2f82064e90
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971077"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957826"
 ---
 # <a name="get-androidforworkcompliancepolicy"></a>Obter androidForWorkCompliancePolicy
 

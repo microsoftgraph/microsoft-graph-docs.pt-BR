@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos iosDeviceFeaturesConfi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c90255638d8e0a0644dcaa587e11c8739dd45ee7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d6fa7d35290ce434e30c0c57c2c3ae9d038bb485
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967017"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948541"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>Listar iosDeviceFeaturesConfigurations
 

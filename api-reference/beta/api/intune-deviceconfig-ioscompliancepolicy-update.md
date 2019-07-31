@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto iosCompliancePolicy.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93a58d86b522a4eb562c0e91e7c59aa3280b7529
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: dd92994b1cca3863a1e7a903cfab222f5ee8f8a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967178"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948639"
 ---
 # <a name="update-ioscompliancepolicy"></a>Atualizar iosCompliancePolicy
 

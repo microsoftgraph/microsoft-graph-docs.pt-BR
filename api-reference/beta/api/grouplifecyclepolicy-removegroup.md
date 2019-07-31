@@ -4,12 +4,13 @@ description: Remove um grupo de uma política de ciclo de vida.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 74b194a9d0bf7810e8e45ade806577177d3dc4f7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 8043119b2480f0116566d668b440e4d493ebbeb5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324088"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953308"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
