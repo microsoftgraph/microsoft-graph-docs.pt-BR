@@ -2,28 +2,31 @@
 title: tipo de recurso addIn
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-ms.openlocfilehash: 777b9e2eac1ec4052fae30b13d09aaf91a808375
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 46daa8c4f1218b3de485643a47f7acbe881c661c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339120"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974517"
 ---
-# <a name="addin-resource-type"></a><span data-ttu-id="72333-103">tipo de recurso addIn</span><span class="sxs-lookup"><span data-stu-id="72333-103">addIn resource type</span></span>
+# <a name="addin-resource-type"></a><span data-ttu-id="860c8-103">tipo de recurso addIn</span><span class="sxs-lookup"><span data-stu-id="860c8-103">addIn resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-## <a name="properties"></a><span data-ttu-id="72333-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="72333-104">Properties</span></span>
-| <span data-ttu-id="72333-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="72333-105">Property</span></span>     | <span data-ttu-id="72333-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="72333-106">Type</span></span>   |<span data-ttu-id="72333-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="72333-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="860c8-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="860c8-104">Properties</span></span>
+| <span data-ttu-id="860c8-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="860c8-105">Property</span></span>     | <span data-ttu-id="860c8-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="860c8-106">Type</span></span>   |<span data-ttu-id="860c8-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="860c8-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="72333-108">id</span><span class="sxs-lookup"><span data-stu-id="72333-108">id</span></span>|<span data-ttu-id="72333-109">#c0</span><span class="sxs-lookup"><span data-stu-id="72333-109">guid</span></span>||
-|<span data-ttu-id="72333-110">properties</span><span class="sxs-lookup"><span data-stu-id="72333-110">properties</span></span>|<span data-ttu-id="72333-111">Coleção [KeyValue](keyvalue.md)</span><span class="sxs-lookup"><span data-stu-id="72333-111">[keyValue](keyvalue.md) collection</span></span>||
-|<span data-ttu-id="72333-112">type</span><span class="sxs-lookup"><span data-stu-id="72333-112">type</span></span>|<span data-ttu-id="72333-113">string</span><span class="sxs-lookup"><span data-stu-id="72333-113">string</span></span>||
+|<span data-ttu-id="860c8-108">id</span><span class="sxs-lookup"><span data-stu-id="860c8-108">id</span></span>|<span data-ttu-id="860c8-109">#c0</span><span class="sxs-lookup"><span data-stu-id="860c8-109">guid</span></span>||
+|<span data-ttu-id="860c8-110">properties</span><span class="sxs-lookup"><span data-stu-id="860c8-110">properties</span></span>|<span data-ttu-id="860c8-111">Coleção [KeyValue](keyvalue.md)</span><span class="sxs-lookup"><span data-stu-id="860c8-111">[keyValue](keyvalue.md) collection</span></span>||
+|<span data-ttu-id="860c8-112">type</span><span class="sxs-lookup"><span data-stu-id="860c8-112">type</span></span>|<span data-ttu-id="860c8-113">string</span><span class="sxs-lookup"><span data-stu-id="860c8-113">string</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="72333-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="72333-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="860c8-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="860c8-114">JSON representation</span></span>
 
-<span data-ttu-id="72333-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="72333-115">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="860c8-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="860c8-115">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -4,48 +4,49 @@ description: Recupere as propriedades e os relacionamentos de um objeto Page.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: b4138c46a4717db4590d0e929518e1f8df2893ed
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 11166c6c8e61fcb905fa3f9fe847b1bfa39c37ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337814"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983576"
 ---
-# <a name="get-page"></a><span data-ttu-id="00f52-103">Obter página</span><span class="sxs-lookup"><span data-stu-id="00f52-103">Get page</span></span>
+# <a name="get-page"></a><span data-ttu-id="36e0b-103">Obter página</span><span class="sxs-lookup"><span data-stu-id="36e0b-103">Get page</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="00f52-104">Recupere as propriedades e os relacionamentos de um objeto [Page](../resources/onenotepage.md) .</span><span class="sxs-lookup"><span data-stu-id="00f52-104">Retrieve the properties and relationships of a [page](../resources/onenotepage.md) object.</span></span>
+<span data-ttu-id="36e0b-104">Recupere as propriedades e os relacionamentos de um objeto [Page](../resources/onenotepage.md) .</span><span class="sxs-lookup"><span data-stu-id="36e0b-104">Retrieve the properties and relationships of a [page](../resources/onenotepage.md) object.</span></span>
 
-<span data-ttu-id="00f52-105">**Obtendo informações da página**</span><span class="sxs-lookup"><span data-stu-id="00f52-105">**Getting page information**</span></span>
+<span data-ttu-id="36e0b-105">**Obtendo informações da página**</span><span class="sxs-lookup"><span data-stu-id="36e0b-105">**Getting page information**</span></span>
 
-<span data-ttu-id="00f52-106">Acessar os metadados de uma página por identificador de página:</span><span class="sxs-lookup"><span data-stu-id="00f52-106">Access a page's metadata by page identifier:</span></span>
+<span data-ttu-id="36e0b-106">Acessar os metadados de uma página por identificador de página:</span><span class="sxs-lookup"><span data-stu-id="36e0b-106">Access a page's metadata by page identifier:</span></span>
 
 ```
 GET /me/onenote/pages/{id}
 ```
 
-<span data-ttu-id="00f52-107">**Obtendo o conteúdo da página**</span><span class="sxs-lookup"><span data-stu-id="00f52-107">**Getting page content**</span></span>
+<span data-ttu-id="36e0b-107">**Obtendo o conteúdo da página**</span><span class="sxs-lookup"><span data-stu-id="36e0b-107">**Getting page content**</span></span>
 
-<span data-ttu-id="00f52-108">Você pode usar o ponto de `content` extremidade da página para obter o conteúdo HTML de uma página:</span><span class="sxs-lookup"><span data-stu-id="00f52-108">You can use the page's `content` endpoint to get the HTML content of a page:</span></span>
+<span data-ttu-id="36e0b-108">Você pode usar o ponto de `content` extremidade da página para obter o conteúdo HTML de uma página:</span><span class="sxs-lookup"><span data-stu-id="36e0b-108">You can use the page's `content` endpoint to get the HTML content of a page:</span></span>
 
 ```
 GET /me/onenote/pages/{id}/content[?includeIDs=true]
 GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
-<span data-ttu-id="00f52-109">A `includeIDs=true` opção de consulta é usada para [Atualizar páginas](../api/page-update.md).</span><span class="sxs-lookup"><span data-stu-id="00f52-109">The `includeIDs=true` query option is used to [update pages](../api/page-update.md).</span></span>
+<span data-ttu-id="36e0b-109">A `includeIDs=true` opção de consulta é usada para [Atualizar páginas](../api/page-update.md).</span><span class="sxs-lookup"><span data-stu-id="36e0b-109">The `includeIDs=true` query option is used to [update pages](../api/page-update.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="00f52-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="00f52-110">Permissions</span></span>
-<span data-ttu-id="00f52-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="00f52-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="36e0b-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="36e0b-110">Permissions</span></span>
+<span data-ttu-id="36e0b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="36e0b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="00f52-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="00f52-113">Permission type</span></span>      | <span data-ttu-id="00f52-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="00f52-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="36e0b-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="36e0b-113">Permission type</span></span>      | <span data-ttu-id="36e0b-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="36e0b-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="00f52-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="00f52-115">Delegated (work or school account)</span></span> | <span data-ttu-id="00f52-116">Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="00f52-116">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="00f52-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="00f52-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="00f52-118">Notes. Read, Notes. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="00f52-118">Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="00f52-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="00f52-119">Application</span></span> | <span data-ttu-id="00f52-120">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="00f52-120">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="36e0b-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="36e0b-115">Delegated (work or school account)</span></span> | <span data-ttu-id="36e0b-116">Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="36e0b-116">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="36e0b-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="36e0b-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="36e0b-118">Notes. Read, Notes. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="36e0b-118">Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="36e0b-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="36e0b-119">Application</span></span> | <span data-ttu-id="36e0b-120">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="36e0b-120">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="00f52-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="00f52-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="36e0b-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="36e0b-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/pages/{id}
@@ -53,32 +54,32 @@ GET /users/{id | userPrincipalName}/onenote/pages/{id}
 GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="00f52-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="00f52-122">Optional query parameters</span></span>
-<span data-ttu-id="00f52-123">Este método oferece suporte `select` aos `expand` [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="00f52-123">This method supports the `select` and `expand` [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="36e0b-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="36e0b-122">Optional query parameters</span></span>
+<span data-ttu-id="36e0b-123">Este método oferece suporte `select` aos `expand` [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="36e0b-123">This method supports the `select` and `expand` [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="00f52-124">A resposta padrão expande `parentSection` e seleciona as propriedades `id`, `name`e e. `self`</span><span class="sxs-lookup"><span data-stu-id="00f52-124">The default response expands `parentSection` and selects the section's `id`, `name`, and `self` properties.</span></span> <span data-ttu-id="00f52-125">Os `expand` valores válidos para páginas `parentNotebook` são `parentSection`e.</span><span class="sxs-lookup"><span data-stu-id="00f52-125">Valid `expand` values for pages are `parentNotebook` and `parentSection`.</span></span>
+<span data-ttu-id="36e0b-124">A resposta padrão expande `parentSection` e seleciona as propriedades `id`, `name`e e. `self`</span><span class="sxs-lookup"><span data-stu-id="36e0b-124">The default response expands `parentSection` and selects the section's `id`, `name`, and `self` properties.</span></span> <span data-ttu-id="36e0b-125">Os `expand` valores válidos para páginas `parentNotebook` são `parentSection`e.</span><span class="sxs-lookup"><span data-stu-id="36e0b-125">Valid `expand` values for pages are `parentNotebook` and `parentSection`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="00f52-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="00f52-126">Request headers</span></span>
-| <span data-ttu-id="00f52-127">Nome</span><span class="sxs-lookup"><span data-stu-id="00f52-127">Name</span></span>       | <span data-ttu-id="00f52-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="00f52-128">Type</span></span> | <span data-ttu-id="00f52-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="00f52-129">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="36e0b-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="36e0b-126">Request headers</span></span>
+| <span data-ttu-id="36e0b-127">Nome</span><span class="sxs-lookup"><span data-stu-id="36e0b-127">Name</span></span>       | <span data-ttu-id="36e0b-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="36e0b-128">Type</span></span> | <span data-ttu-id="36e0b-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="36e0b-129">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="00f52-130">Autorização</span><span class="sxs-lookup"><span data-stu-id="00f52-130">Authorization</span></span>  | <span data-ttu-id="00f52-131">string</span><span class="sxs-lookup"><span data-stu-id="00f52-131">string</span></span>  | <span data-ttu-id="00f52-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="00f52-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="00f52-134">Aceitar</span><span class="sxs-lookup"><span data-stu-id="00f52-134">Accept</span></span> | <span data-ttu-id="00f52-135">string</span><span class="sxs-lookup"><span data-stu-id="00f52-135">string</span></span> | `application/json` |
+| <span data-ttu-id="36e0b-130">Autorização</span><span class="sxs-lookup"><span data-stu-id="36e0b-130">Authorization</span></span>  | <span data-ttu-id="36e0b-131">string</span><span class="sxs-lookup"><span data-stu-id="36e0b-131">string</span></span>  | <span data-ttu-id="36e0b-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="36e0b-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="36e0b-134">Aceitar</span><span class="sxs-lookup"><span data-stu-id="36e0b-134">Accept</span></span> | <span data-ttu-id="36e0b-135">string</span><span class="sxs-lookup"><span data-stu-id="36e0b-135">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="00f52-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="00f52-136">Request body</span></span>
-<span data-ttu-id="00f52-137">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="00f52-137">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="36e0b-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="36e0b-136">Request body</span></span>
+<span data-ttu-id="36e0b-137">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="36e0b-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="00f52-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="00f52-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="36e0b-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="36e0b-138">Response</span></span>
 
-<span data-ttu-id="00f52-139">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [onenotePage](../resources/onenotepage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="00f52-139">If successful, this method returns a `200 OK` response code and the [onenotePage](../resources/onenotepage.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="00f52-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="00f52-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="00f52-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="00f52-141">Request</span></span>
-<span data-ttu-id="00f52-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="00f52-142">Here is an example of the request.</span></span>
+<span data-ttu-id="36e0b-139">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [onenotePage](../resources/onenotepage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="36e0b-139">If successful, this method returns a `200 OK` response code and the [onenotePage](../resources/onenotepage.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="36e0b-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="36e0b-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="36e0b-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="36e0b-141">Request</span></span>
+<span data-ttu-id="36e0b-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="36e0b-142">Here is an example of the request.</span></span>
  <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="00f52-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="00f52-143">Response</span></span>
-<span data-ttu-id="00f52-144">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="00f52-144">Here is an example of the response.</span></span> <span data-ttu-id="00f52-145">Observação: o objeto Response mostrado aqui é truncado por brevidade.</span><span class="sxs-lookup"><span data-stu-id="00f52-145">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="00f52-146">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="00f52-146">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="36e0b-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="36e0b-143">Response</span></span>
+<span data-ttu-id="36e0b-144">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="36e0b-144">Here is an example of the response.</span></span> <span data-ttu-id="36e0b-145">Observação: o objeto Response mostrado aqui é truncado por brevidade.</span><span class="sxs-lookup"><span data-stu-id="36e0b-145">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="36e0b-146">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="36e0b-146">All of the properties will be returned from an actual call.</span></span>
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
