@@ -2,29 +2,32 @@
 title: Tipo de recurso localeInfo
 description: Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.
 localization_priority: Normal
-ms.openlocfilehash: c4cba9a9e6ef1d0808311cc12801895cdd1453cd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2d359735d9ac0cc00643b323a056acbb7d44365a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345350"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009969"
 ---
-# <a name="localeinfo-resource-type"></a><span data-ttu-id="f4240-103">Tipo de recurso localeInfo</span><span class="sxs-lookup"><span data-stu-id="f4240-103">localeInfo resource type</span></span>
+# <a name="localeinfo-resource-type"></a><span data-ttu-id="57e14-103">Tipo de recurso localeInfo</span><span class="sxs-lookup"><span data-stu-id="57e14-103">localeInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f4240-104">Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="f4240-104">Information about the locale, including the preferred language and country/region, of the signed-in user.</span></span>
+<span data-ttu-id="57e14-104">Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="57e14-104">Information about the locale, including the preferred language and country/region, of the signed-in user.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="f4240-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f4240-105">Properties</span></span>
-| <span data-ttu-id="f4240-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f4240-106">Property</span></span>     | <span data-ttu-id="f4240-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="f4240-107">Type</span></span>   |<span data-ttu-id="f4240-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="f4240-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="57e14-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="57e14-105">Properties</span></span>
+| <span data-ttu-id="57e14-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="57e14-106">Property</span></span>     | <span data-ttu-id="57e14-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="57e14-107">Type</span></span>   |<span data-ttu-id="57e14-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="57e14-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f4240-109">locale</span><span class="sxs-lookup"><span data-stu-id="f4240-109">locale</span></span>|<span data-ttu-id="f4240-110">string</span><span class="sxs-lookup"><span data-stu-id="f4240-110">string</span></span>|<span data-ttu-id="f4240-p101">Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span><span class="sxs-lookup"><span data-stu-id="f4240-p101">A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span></span>|
-|<span data-ttu-id="f4240-114">displayName</span><span class="sxs-lookup"><span data-stu-id="f4240-114">displayName</span></span>|<span data-ttu-id="f4240-115">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f4240-115">string</span></span>|<span data-ttu-id="f4240-116">Um nome que representa a localidade do usuário em seu idioma natural, por exemplo, "Português (Brasil)".</span><span class="sxs-lookup"><span data-stu-id="f4240-116">A name representing the user's locale in natural language, for example, "English (United States)".</span></span>|
+|<span data-ttu-id="57e14-109">localidade</span><span class="sxs-lookup"><span data-stu-id="57e14-109">locale</span></span>|<span data-ttu-id="57e14-110">string</span><span class="sxs-lookup"><span data-stu-id="57e14-110">string</span></span>|<span data-ttu-id="57e14-p101">Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span><span class="sxs-lookup"><span data-stu-id="57e14-p101">A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span></span>|
+|<span data-ttu-id="57e14-114">displayName</span><span class="sxs-lookup"><span data-stu-id="57e14-114">displayName</span></span>|<span data-ttu-id="57e14-115">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="57e14-115">string</span></span>|<span data-ttu-id="57e14-116">Um nome que representa a localidade do usuário em seu idioma natural, por exemplo, "Português (Brasil)".</span><span class="sxs-lookup"><span data-stu-id="57e14-116">A name representing the user's locale in natural language, for example, "English (United States)".</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f4240-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f4240-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="57e14-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="57e14-117">JSON representation</span></span>
 
-<span data-ttu-id="f4240-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f4240-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="57e14-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="57e14-118">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
