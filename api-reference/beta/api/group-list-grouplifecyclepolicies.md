@@ -4,12 +4,13 @@ description: Recupera uma lista de objetos groupLifecyclePolicy à qual um grupo
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f68adee0cfac9d8f15ad0f4b50ee158d18732ee4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: daa67ce8b6ca885dd9473bebd12d8d0e53cc52d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858436"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953742"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Listar groupLifecyclePolicies
 

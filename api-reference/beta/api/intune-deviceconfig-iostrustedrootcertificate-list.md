@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos iosTrustedRootCertific
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04a1e5cc5ae81a22b196f66a6bb49a6cafb766c2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b3857492bde760a9f63cfed797edd7bd9085c387
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977321"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947911"
 ---
 # <a name="list-iostrustedrootcertificates"></a>Listar iosTrustedRootCertificates
 

@@ -4,12 +4,13 @@ description: O tipo serviceHostedMediaConfig.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fbd59694940d6d0b3abea1a8d56bd426a3dfbb3a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f56928a7294fba1cb31f5061a2c7b8f7bb70f02a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343291"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965198"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>tipo de recurso serviceHostedMediaConfig
 
@@ -22,7 +23,7 @@ O tipo serviceHostedMediaConfig.
 | Propriedade                    | Tipo                                                        | Descrição                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | coleção [mediaInfo](mediainfo.md)                        | A lista de mídias a buscar previamente.                   |
-| removeFromDefaultAudioGroup | Boolean                                                     | Remover o próprio participante do grupo de áudio padrão. |
+| removeFromDefaultAudioGroup | Booliano                                                     | Remover o próprio participante do grupo de áudio padrão. |
 
 ## <a name="json-representation"></a>Representação JSON
 

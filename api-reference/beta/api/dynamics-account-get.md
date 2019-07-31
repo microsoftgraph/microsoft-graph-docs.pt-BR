@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 2f9d18867474a637ea1f44ef7046d2b476edd47a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f0441a3c2f9385378e767d721c09cb28e87a5682
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454234"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956874"
 ---
 # <a name="get-accounts"></a>Obter contas
 Recupere as propriedades e os relacionamentos de um objeto de conta para o Dynamics 365 Business central.
@@ -53,7 +54,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 GET https://graph.microsoft.com/beta/financials/companies('{id}')/accounts('{id}')
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

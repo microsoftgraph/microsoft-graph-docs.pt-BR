@@ -2,12 +2,15 @@
 title: tipo de recurso rankedEmailAddress
 description: Representa um endereço de email classificado.
 localization_priority: Normal
-ms.openlocfilehash: 0c92f46c587b4f615b640e47b8d82a33aefc5e50
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: e29d5b2f2116050f9cea036df35ed6cc012c0e36
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344079"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965520"
 ---
 # <a name="rankedemailaddress-resource-type"></a>tipo de recurso rankedEmailAddress
 
@@ -19,7 +22,7 @@ Representa um endereço de email classificado.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|address|string|O endereço de email.|
+|address|cadeia de caracteres|O endereço de email.|
 |classificação|double|A classificação do endereço de email. Uma classificação é usada como uma chave de classificação, em relação aos outros resultados retornados. Um valor de classificação mais alto corresponde a um resultado mais relevante. A relevância é determinada por sinais de comunicação, colaboração e relacionamento comercial.|
 
 ## <a name="json-representation"></a>Representação JSON

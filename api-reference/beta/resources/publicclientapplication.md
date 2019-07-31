@@ -2,12 +2,15 @@
 title: tipo de recurso publicClientApplication
 description: Especifica configurações para aplicativo não Web ou API Web. (por exemplo, móvel ou outro cliente público, como um aplicativo instalado em um dispositivo de área de trabalho)
 localization_priority: Normal
-ms.openlocfilehash: 8118d1e771cb55ce5b82c9ddac14aaa45260ab56
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4503e65777b41fc2f864cd818697b048e3c8e435
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348485"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965541"
 ---
 # <a name="publicclientapplication-resource-type"></a>tipo de recurso publicClientApplication
 

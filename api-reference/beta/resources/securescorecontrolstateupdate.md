@@ -2,15 +2,18 @@
 title: " tipo de recurso secureScoreControlStateUpdate"
 description: Este recurso contém o histórico de Estados de controle atualizados pelo usuário (os Estados de controle incluem Default, ignorado, terceiros).
 localization_priority: Normal
-ms.openlocfilehash: 24febeb4bfb055e89e59cdb4f79c8b60c6c40347
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 92616569a87a6ccf91c17ea7c845b8185bd33e8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343357"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965226"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>tipo de recurso secureScoreControlStateUpdate
-Contém o histórico dos Estados de controle atualizados pelo usuário (os Estados de controle incluem padrão, ignorado, terceiros, reVisado).
+Contém o histórico dos Estados de controle atualizados pelo usuário (os Estados de controle incluem padrão, ignorado, terceiros, revisado).
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|

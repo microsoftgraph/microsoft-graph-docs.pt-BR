@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto androidWorkProfileVp
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26c03319dbb5e75b71213bcf38657ceb6258b7b6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3ad36de1d714832a7df63a34178c131d3b10eb25
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968963"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950375"
 ---
 # <a name="get-androidworkprofilevpnconfiguration"></a>Obter androidWorkProfileVpnConfiguration
 

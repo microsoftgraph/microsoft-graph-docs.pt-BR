@@ -4,12 +4,13 @@ description: Cria um novo objeto iosLobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 482e2bf60be2f8cef510dd3277453dbe37a2dde5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b91fd9d744c5e4810c78b6e526fe167e7ca974f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966226"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951971"
 ---
 # <a name="create-ioslobapp"></a>Criar iosLobApp
 

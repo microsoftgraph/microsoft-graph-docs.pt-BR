@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 29677ac148a79b0a6aa8fd8b7650c0d9fa8d26e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e50717c7b541bbc90d4937a3419be230bf636f92
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454150"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956762"
 ---
 # <a name="update-countriesregions"></a>Atualizar countriesRegions
 Atualizar as propriedades de um objeto de país/região para o Dynamics 365 Business central.
@@ -61,7 +62,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

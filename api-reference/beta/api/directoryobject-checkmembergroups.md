@@ -4,12 +4,13 @@ description: Verificar se há associação em uma lista de grupos especificada e
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d296a57a4bb50eb4fca48d836d32674a2b33b2eb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 471435b7ff0ea7dc9bfcdba82db41772a3945b53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862474"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951225"
 ---
 # <a name="check-member-groups"></a>Verificar grupos de membros
 

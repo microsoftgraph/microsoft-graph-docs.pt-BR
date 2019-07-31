@@ -4,12 +4,13 @@ description: Você pode obter detalhes sobre a atividade de conferência em toda
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 2af5372a62095226410181c3629cd2e55f87b620
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: aac93137f3931613b6c2318ed5d8402ad514b333
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342907"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964975"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Relatórios de atividades do participante do Skype for Business
 

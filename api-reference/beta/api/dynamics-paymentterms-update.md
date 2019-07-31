@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 04b04461bdf46ec08c1c0230949c3bed89acebd6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3a7c596850989831c549f7cb642318e31f7fa420
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458492"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956020"
 ---
 # <a name="update-paymentterms"></a>Atualizar paymentTerms
 Atualizar as propriedades de um objeto de condições de pagamento para o Dynamics 365 Business central.
@@ -61,7 +62,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

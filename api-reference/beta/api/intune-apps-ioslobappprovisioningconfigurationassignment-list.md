@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos iosLobAppProvisioningC
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3cb214a6640ec104b4893e9b95bdedd6afae450
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 885935169491265bdd9b31de6546ca54520367c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966065"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951803"
 ---
 # <a name="list-ioslobappprovisioningconfigurationassignments"></a>Listar iosLobAppProvisioningConfigurationAssignments
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 238b289679af5de7698801e763fbf54319e4c10f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8d48f6bd2df2307be7d22cdd6ea9395cc79723a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464357"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956354"
 ---
 # <a name="get-dimensions"></a>Obter dimensões
 Recupere as propriedades e os relacionamentos de **** um objeto Dimensions para o Dynamics 365 Business central.
@@ -54,7 +55,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies('{id}')/dimensions('{id}')
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

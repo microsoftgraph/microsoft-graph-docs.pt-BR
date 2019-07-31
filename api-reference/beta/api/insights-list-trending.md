@@ -4,12 +4,13 @@ description: Informações calculadas que retornam a lista de itens que se refer
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 49f777e77663a4c055e186860f791459db57ca9c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 2d84e2c4470b17b3073856a73d0b8cb7251ea830
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323664"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953056"
 ---
 # <a name="list-trending"></a>Listar tendências
 
@@ -44,7 +45,7 @@ Ou com base no tipo de contêiner:
 
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-ConFira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).
+Confira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

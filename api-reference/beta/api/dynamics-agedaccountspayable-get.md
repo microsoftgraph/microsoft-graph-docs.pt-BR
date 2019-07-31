@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 8d70ce2aca31a4cbfd3acbe25399cc51b3726d8b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5945a7386ce8cd946bd0249c0848d9265e1ed392
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454171"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956860"
 ---
 # <a name="get-agedaccountspayable"></a>Obter agedAccountsPayable
 Recupere as propriedades e os relacionamentos de um objeto de relatório de contas a pagar antigo para o Dynamics 365 Business central.
@@ -52,7 +53,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies('{id}')/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

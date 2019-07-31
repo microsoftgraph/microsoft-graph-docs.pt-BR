@@ -2,12 +2,15 @@
 title: tipo de recurso de programa
 description: 'No recurso de revisões do Azure AD Access, um programa é um contêiner, contendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão do Access a um programa, para facilitar a localização de revisões relacionadas do Access.  '
 localization_priority: Normal
-ms.openlocfilehash: 7c0016cb194acd7ad8533acb34650b57df720ace
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c6a978ef4bb68c09b2f5659e255d16681c9c805d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344007"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965667"
 ---
 # <a name="program-resource-type"></a>tipo de recurso de programa
 
@@ -23,7 +26,7 @@ Cada locatário que tem revisões de acesso do Azure AD integradas tem um progra
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Criar programa](../api/program-create.md) |   [programa](program.md)   |   Criar um novo programa.|
-|[Excluir programa](../api/program-delete.md) |   Nenhum   |   Excluir um programa.|
+|[Excluir programa](../api/program-delete.md) |   Nenhum.   |   Excluir um programa.|
 |[Listar programas](../api/program-list.md) |  coleção [Program](program.md)|   Obtenha uma coleção de todos os programas.|
 |[Listar programControls de um programa](../api/program-listcontrols.md) |      coleção [programControl](programcontrol.md)| Obter uma coleção de controles de um programa.|
 |[Programa de atualização](../api/program-update.md) |   [programa](program.md)|  Atualizar um programa.|

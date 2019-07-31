@@ -4,12 +4,13 @@ description: Ative uma função de diretório. Para ler uma função de diretór
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 406a88ff0a34301352a39f8d92b21999fd43a7b7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ef4e7ed1661309ea40a3a573fe5b830f65da7c88
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862197"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957651"
 ---
 # <a name="activate-directoryrole"></a>Ativar directoryRole
 
@@ -22,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+|Aplicativo | RoleManagement. ReadWrite. Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

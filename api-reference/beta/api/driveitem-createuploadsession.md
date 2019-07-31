@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 ms.date: 09/10/2017
 title: Upload de arquivos retomável
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3801be631ab64c6ab2cb25ce48b4e846f9d77287
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 182a03c3ad95f4d2223c437ef667b2c27aaa7d71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325316"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957189"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -55,7 +56,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>Corpo da solicitação
 
 Nenhum corpo de solicitação é obrigatório.
-No enTanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo sendo carregado e personalizando a semântica da operação de upload.
+No entanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo sendo carregado e personalizando a semântica da operação de upload.
 
 Por exemplo, a `item` propriedade permite definir os seguintes parâmetros:
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
@@ -90,7 +91,7 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já tiver sido 
 | Parâmetro            | Tipo                          | Descrição
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | driveItemUploadableProperties | Dados sobre o arquivo que está sendo carregado
-| deferCommit          | Boolean                       | Se for definido como true, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
+| deferCommit          | Booliano                       | Se for definido como true, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
 
 ## <a name="item-properties"></a>Propriedades do item
 

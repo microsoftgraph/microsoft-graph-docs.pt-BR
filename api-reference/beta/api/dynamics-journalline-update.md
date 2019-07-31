@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 1f404a4a344f6fddc9759da9808b7c5bec1bc7ef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: aa5f11574769e1a9b171353dd27afb5ef02e5ea1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458520"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956104"
 ---
 # <a name="update-journallines"></a>Atualizar journalLines
 Atualizar as propriedades de um objeto de linhas de diário para o Dynamics 365 Business central.
@@ -61,7 +62,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 ```json
 HTTP/1.1 200 OK

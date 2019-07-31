@@ -4,12 +4,13 @@ description: Criar um novo objeto win32LobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf015e82c6ecc3ee51a809bc3dccb415ca67b21a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a2c6eb2c8989c82320dc5f691ab01b48c19418f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973296"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960262"
 ---
 # <a name="create-win32lobapp"></a>Criar win32LobApp
 

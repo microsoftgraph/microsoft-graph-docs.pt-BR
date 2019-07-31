@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto androidStoreApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5879169c617b0f320875c20c1f5f1030d86eb046
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 96a5e997e85b49448cd56411a39367a285fc76f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965204"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952083"
 ---
 # <a name="get-androidstoreapp"></a>Get androidStoreApp
 

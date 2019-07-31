@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto androidForWorkApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65c4f6d96485ead0cf076a86f5ff585ae1967d84
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9f339d05f387b80264f1ddfee51d5adc6999ecd8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965372"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952426"
 ---
 # <a name="get-androidforworkapp"></a>Obter androidForWorkApp
 

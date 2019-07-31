@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: Esse recurso representa uma página na lista SitePages.
 ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6a9192423c4caf47913029e3671e975884533333
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 240ab50f31d500fad960768bb6c45cb9c6ff6511
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343063"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965044"
 ---
 # <a name="sitepage-resource"></a>recurso sitePage
 
@@ -26,13 +27,13 @@ Todos os exemplos abaixo são relativos a um [site][], por `https://graph.micros
 
 | Tarefa comum                     | Método HTTP
 |:--------------------------------|:------------------------------
-| [List pages][]                  | OBTER/Pages
+| [Listar páginas][]                  | OBTER/Pages
 | [Obter página][]                    | OBTER/Pages/{Page-ID}
-| [Criar][]                      | POSTAR/Pages
+| [Create][]                      | POSTAR/Pages
 | [Delete][]                      | EXCLUIR/Pages/{Page-ID}
 | [Publish][]                     | POSTAR/Pages/{Page-ID}/Publish
 
-[List pages]: ../api/sitepage-list.md
+[Listar páginas]: ../api/sitepage-list.md
 [Obter página]: ../api/sitepage-get.md
 [Create]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
@@ -106,7 +107,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 
 | Nome da propriedade        | Tipo              | Descrição
 |:---------------------|:------------------|:----------------------------------
-| id                   | string            | O identificador exclusivo do item. Somente leitura.
+| id                   | cadeia de caracteres            | O identificador exclusivo do item. Somente leitura.
 | name                 | string            | O nome/título do item.
 | createdBy            | [identitySet][]   | Identidade do criador desse item. Somente leitura.
 | eTag                 | string            | ETag do item. Somente leitura.

@@ -4,12 +4,13 @@ description: 'Essa função retorna a URL do OneDrive onde todos os recursos bas
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 104c9dddae4383fded06d5efd9678a28b570d002
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 456eb4135214d79ca6427b3dcafeee5dadbd946d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860784"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955698"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
 

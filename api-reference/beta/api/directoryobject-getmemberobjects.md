@@ -4,12 +4,13 @@ description: " Retorna todos os grupos, unidades administrativas e funções de 
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 38fd958656e7339cbbcff2e7ed9860ce12ee3535
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 04ca36fc0c4c2c932f7f4def46dda8b83b007528
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862348"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957763"
 ---
 # <a name="get-member-objects"></a>Obter objetos de membros
 

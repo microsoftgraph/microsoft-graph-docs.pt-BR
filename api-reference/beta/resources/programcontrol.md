@@ -2,12 +2,15 @@
 title: tipo de recurso programControl
 description: No recurso de revisões do Azure AD Access, o objeto de controle do programa representa um controle, vinculando uma revisão do Access a um programa.
 localization_priority: Normal
-ms.openlocfilehash: 7d194f3e80f44eb57be0deb7d2ffd71624c385d7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 16824c2ed0c053f0cc4f3a0a2903324ff1a2bf5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344004"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965632"
 ---
 # <a name="programcontrol-resource-type"></a>tipo de recurso programControl
 
@@ -21,7 +24,7 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , o objeto d
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Criar programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Adicionar um programControl a um programa.|
-|[Excluir programControl](../api/programcontrol-delete.md) |     Nenhum   |   Remover um programControl de um programa.|
+|[Excluir programControl](../api/programcontrol-delete.md) |     Nenhum.   |   Remover um programControl de um programa.|
 |[Listar programControls](../api/programcontrol-list.md) | coleção [programControl](programcontrol.md)| Listar controles em todos os programas no locatário.|
 
 ## <a name="properties"></a>Propriedades

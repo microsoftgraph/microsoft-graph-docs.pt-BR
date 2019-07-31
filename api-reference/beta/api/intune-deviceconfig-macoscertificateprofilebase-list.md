@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos macOSCertificateProfil
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6727eb108e447738c2f06a5029dc45b41d4d99be
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b15ab44953871f4f250e9b2138de3a1062ed0d22
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976964"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947589"
 ---
 # <a name="list-macoscertificateprofilebases"></a>Listar macOSCertificateProfileBases
 

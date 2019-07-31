@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto androidWorkProfileEa
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d31f1d87602184eea3b2eab33e10a1585b09d36
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c480f17c162d8cf9a04f8e08312ebdb5993237b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969495"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950935"
 ---
 # <a name="get-androidworkprofileeasemailprofilebase"></a>Obter androidWorkProfileEasEmailProfileBase
 

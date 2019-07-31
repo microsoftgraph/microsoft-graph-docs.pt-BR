@@ -2,12 +2,15 @@
 title: Listar governanceRoleSettings
 description: Recupere uma coleção de governanceRoleSettings em um Resource.
 localization_priority: Normal
-ms.openlocfilehash: 64bfd50a4b289a820b99c32d76b831d1fb4338d9
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 4c9b58480f0b1033a997721b257054be1519ac27
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422437"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954099"
 ---
 # <a name="list-governancerolesettings"></a>Listar governanceRoleSettings
 
