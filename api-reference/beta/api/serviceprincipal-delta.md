@@ -2,12 +2,15 @@
 title: 'servicePrincipalName: Delta'
 description: Obtenha entidades de serviço recém-criadas, atualizadas ou excluídas sem ter que realizar uma leitura completa de toda a coleção de recursos. Consulte usando a consulta Delta para obter detalhes.
 localization_priority: Normal
-ms.openlocfilehash: 2a0dd5a7e4b7573c1a0fd738ff5a54fd88ad7246
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ea3b2549209bef654bae182d3ff30922a97050f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870166"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977934"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipalName: Delta
 

@@ -4,12 +4,13 @@ description: Você pode ver quantos aplicativos de email são usados para se con
 localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: df40e61108a3933801f5e7c21057f71600b496ef
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: b7aeac4800fbd7681b60210e7f65c96e7086705c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340186"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972254"
 ---
 # <a name="email-app-usage-reports"></a>Relatórios de uso do aplicativo de email
 

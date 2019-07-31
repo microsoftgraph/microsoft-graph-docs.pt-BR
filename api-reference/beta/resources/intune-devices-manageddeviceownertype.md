@@ -4,12 +4,13 @@ description: Tipo de proprietário de dispositivo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d2a8d5ae5b55cf4682801b5fd96214bc38e4da0f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 39077b8fdaac45b7e8f2e810636547ffda81e209
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995088"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968369"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>tipo de enumeração managedDeviceOwnerType
 

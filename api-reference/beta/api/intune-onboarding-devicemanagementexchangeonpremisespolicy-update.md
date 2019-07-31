@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto deviceManagementExchangeOnPre
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 877cce60631d8bae03b35fde2fe4abb0c29be0d3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d57b578198defb4a80dbd5295b6fc046fe233251
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981024"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984325"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>Atualizar deviceManagementExchangeOnPremisesPolicy
 

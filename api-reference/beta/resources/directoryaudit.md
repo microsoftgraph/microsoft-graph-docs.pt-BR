@@ -4,12 +4,13 @@ description: Descreve o recurso directoryAudit (entidade) da API do Microsoft Gr
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e7e2c2bcf9708dd00054a31bcee3ba06fd100549
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: ede14029cf20c909d1cc735c18e23eb7556eea53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973125"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 

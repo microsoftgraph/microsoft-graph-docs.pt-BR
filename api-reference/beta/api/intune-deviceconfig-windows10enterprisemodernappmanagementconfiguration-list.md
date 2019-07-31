@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos windows10EnterpriseMod
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6eef533d66d31154abd6632e82134a09816ff2ce
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c3d30334684bdf796e4f8863c24b4bf491ce8f26
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976040"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975512"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>Listar windows10EnterpriseModernAppManagementConfigurations
 

@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto windowsInformationProtectionD
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de29f6e511a21f4d59f45d66f6552771684dfaa1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5e60f0de4a3e94a907866398789844b837d49b69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984307"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984731"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>Atualizar windowsInformationProtectionDeviceRegistration
 

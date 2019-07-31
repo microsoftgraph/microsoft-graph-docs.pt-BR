@@ -2,12 +2,15 @@
 title: Enviar comando do dispositivo
 description: 'Essa API permite que os recursos do Project Roma para o comando um dispositivo associado a uma conta da Microsoft. Depois de obter uma chamada GET `me/devices`, passe a ID do dispositivo para emitir um comando para seu dispositivo. Há suporte para dois tipos de comandos: LaunchURI e AppServices. Se você estiver usando o LaunchURI, especifique os parâmetros *Type* e *Payload* . Para uma chamada serviço, especifique o '
 localization_priority: Normal
-ms.openlocfilehash: 4ec87825eec72a68dce236d61b17b504a194e75a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: fd45047d673dc6def51d3f417861cf15a38a2f98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336031"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991510"
 ---
 # <a name="send-device-command"></a>Enviar comando do dispositivo
 
@@ -78,7 +81,7 @@ HTTP/1.1 201 OK
 ```
 ## <a name="command-properties"></a>Propriedades de comando 
 
-|**Nome**|**Type**|**Descrição**|
+|**Nome**|**Tipo**|**Descrição**|
 |:----|:------|:------|
 |payload | Microsoft. Graph. JSON| Carga a ser enviada a um serviço de aplicativo ou para iniciar um URI em um dispositivo. |
 |responsePayload | Microsoft. Graph. JSON| Carga retornada do dispositivo de destino. |

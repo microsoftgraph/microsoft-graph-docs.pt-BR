@@ -1,15 +1,16 @@
 ---
 title: tipo de enumeração de habilitação
 description: Descreve a enumeração de habilitação da API do Microsoft Graph para o Intune, que oferece suporte a vários fluxos de trabalho.
-author: rolyon
+author: tfitzmac
 localization_priority: Normal
+doc_type: enumPageType
 ms.prod: Intune
-ms.openlocfilehash: 4854b9209d749b86967cc4b8894431d05d785fe7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e0825c77a446ebe6d4946b0c666f5675cde2e4f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938664"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967452"
 ---
 # <a name="enablement-enum-type"></a>tipo de enumeração de habilitação
 

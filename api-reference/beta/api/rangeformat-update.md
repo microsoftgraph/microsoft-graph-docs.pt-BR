@@ -4,12 +4,13 @@ description: Atualize as propriedades do objeto rangeformat.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e49ce59a858fa1979954352a9cc95b281a7e9482
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7a0605195d10cd1a50a99d71280f47881650f7d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874220"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978284"
 ---
 # <a name="update-rangeformat"></a>Atualizar rangeformat
 

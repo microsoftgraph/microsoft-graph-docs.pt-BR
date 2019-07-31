@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos managementCondition.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24c75435369131265a86620dfe046e9603ef73c0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d6b467b8487f6470d098e9d14cf5df94c3742a9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984104"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990348"
 ---
 # <a name="list-managementconditions"></a>Listar managementConditions
 

@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto appLogCollectionRequ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84e0e6eeb33a000bbaee52f425bc8d2b566f8b8c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f6cb22030714cee563202896e9a033657c86249c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959282"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986173"
 ---
 # <a name="get-applogcollectionrequest"></a>Obter appLogCollectionRequest
 

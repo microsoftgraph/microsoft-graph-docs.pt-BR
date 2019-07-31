@@ -2,12 +2,15 @@
 title: Criar uma propriedade estendida de valor único
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 localization_priority: Normal
-ms.openlocfilehash: 193cf8608829e2f4c06f49fa9675b7384941e7e7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f1fdb6a9b329f16c7973a5c60e645d525a8bd913
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330983"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982785"
 ---
 # <a name="create-single-value-extended-property"></a>Criar uma propriedade estendida de valor único
 
@@ -20,7 +23,7 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [evento](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [Tarefa do Outlook](../resources/outlooktask.md)
@@ -40,7 +43,7 @@ Dependendo do recurso para o qual você está criando a propriedade estendida e 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contato](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
 | grupo [calendar](../resources/calendar.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |

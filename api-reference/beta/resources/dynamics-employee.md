@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 865da0c1e1256e2ba2a25902e37a00da9081eedf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 96d44856ad52c983e61181fc64b93477fbe79e6c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543060"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972947"
 ---
 # <a name="employees-resource-type"></a>tipo de recurso Employees
 Representa um funcionário no Dynamics 365 Business central.
@@ -23,7 +24,7 @@ Representa um funcionário no Dynamics 365 Business central.
 |[Obter funcionários](../api/dynamics-employee-get.md)      |dos  |Obter um objeto Employee.   |
 |[Postar funcionários](../api/dynamics-create-employee.md)  |dos  |Criar um objeto Employee.|
 |[Patch funcionários](../api/dynamics-employee-update.md) |dos  |Atualizar um objeto Employee.|
-|[Excluir funcionários](../api/dynamics-employee-delete.md)|Nenhuma       |Excluir um objeto Employee.|
+|[Excluir funcionários](../api/dynamics-employee-delete.md)|none       |Excluir um objeto Employee.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo   |Descrição                                            |

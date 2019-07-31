@@ -4,12 +4,13 @@ description: Participantes de uma reunião.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f6446ec0b896854e2566d4de82acfdb53bee893d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b88a59b3d9def58217ca3badd833b275760b49c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966826"
 ---
 # <a name="meetingparticipants-resource-type"></a>tipo de recurso meetingParticipants
 

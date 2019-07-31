@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88fdccd3f5aa0f9cdf7b5b530a6e2a4f4f06ca97
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: abfb70d50e7c023ac672613d8e3f9be4ffc1fe53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992049"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970112"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>tipo de recurso managedDeviceCertificateState
 

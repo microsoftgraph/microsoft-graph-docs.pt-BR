@@ -1,21 +1,23 @@
 ---
 author: daspek
-ms.author: dspektor
+description: A presença do recurso accessaction em uma myactivity indica que a atividade acessou um item.
 ms.date: 09/12/2018
 title: Accessaction
 localization_priority: Normal
-ms.openlocfilehash: ae515a9eca368846cf6352b5a68f95f162866710
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6ff8489cea29f5ee249266f36b784b3bd246daab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339332"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974516"
 ---
 # <a name="accessaction-resource-type"></a>tipo de recurso accessaction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A presença do recurso **accessaction** em uma myactivity [****] [ activity] indica que a atividade acessou um item.
+A presença do recurso **accessaction** em uma myactivity indica que a atividade acessou um item. [****][activity]
 
 >**Observação:** Os registros de atividade do Access atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 

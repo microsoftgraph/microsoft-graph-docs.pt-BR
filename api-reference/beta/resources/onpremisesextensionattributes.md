@@ -2,12 +2,15 @@
 title: tipo de recurso Onpremisesextensionattributes à
 description: A propriedade **onpremisesextensionattributes à** da entidade de usuário contém quinze Propriedades de atributos de extensões personalizadas. Para um usuário do **onPremisesSyncEnabled** , esse conjunto de propriedades é Mastered no Active Directory local e sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definidas durante a criação ou atualização.
 localization_priority: Normal
-ms.openlocfilehash: 14e6d8530e67f40704d1052ef5e66cf9046b883f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: cbcb3d548a99d33e05768c765ab7a7e06981acc0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341787"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966395"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>tipo de recurso Onpremisesextensionattributes à
 

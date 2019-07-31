@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d48f3351a1577abfdb465a6946f688fb2a27c07
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9ad4e45ece9599a9df29bb307fc7e277936fa86b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959107"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986082"
 ---
 # <a name="assign-action"></a>atribuir ação
 

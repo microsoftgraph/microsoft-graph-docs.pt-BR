@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto enrollmentProfile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18b6b2fffb2055e6986ec33a91b3c6de65ca0e4b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a7a34c7e571eadda316631937a718d5907096dab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981556"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985109"
 ---
 # <a name="update-enrollmentprofile"></a>Atualizar enrollmentProfile
 

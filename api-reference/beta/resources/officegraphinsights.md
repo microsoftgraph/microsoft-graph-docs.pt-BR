@@ -4,12 +4,13 @@ description: Ideias são relações calculadas usando análises e técnicas de a
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 8a07cd10622886ad6e367d5311e750454e7bf90b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 807cb786577b9c9ddd512d9dcce9a03517170f5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348492"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966500"
 ---
 # <a name="officegraphinsights-resource-type"></a>tipo de recurso officeGraphInsights
 

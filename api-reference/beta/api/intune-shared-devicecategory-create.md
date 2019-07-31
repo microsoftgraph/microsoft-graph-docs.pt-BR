@@ -4,12 +4,13 @@ description: Cria um novo objeto deviceCategory.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ebb6980d47d0046f364ce4e8bfe57805553def48
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: fd1738f6e9f697890e799fe0749d83522a690537
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898541"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979817"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
@@ -56,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCa
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Obboarding**|
-|description|String|Descrição opcional da categoria do dispositivo.|
+|descrição|String|Descrição opcional da categoria do dispositivo.|
 |displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
 
 ## <a name="response"></a>Resposta

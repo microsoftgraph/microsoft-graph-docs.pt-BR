@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto deviceManagementScript.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8cb1b6978922f99ae357cabe7fbc6d19a58fa2a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 47db108140eba46e3e32b149c49c1e3688e92871
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959037"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981714"
 ---
 # <a name="update-devicemanagementscript"></a>Atualizar deviceManagementScript
 

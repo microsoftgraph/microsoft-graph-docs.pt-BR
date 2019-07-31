@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 0d5ed2af02f429f5fd4d6e92b408d2e8e420f4d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 33339578f498460aacd24481f166ab717138f8fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966563"
 ---
 # <a name="office365activationsusercounts-resource-type"></a>tipo de recurso office365ActivationsUserCounts
 
@@ -18,7 +19,7 @@ ms.locfileid: "32581510"
 | Propriedade                 | Tipo   | Descrição                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | Data   | A última data do conteúdo.          |
-| ProductType              | String | O tipo de produto como "Office 365 proPlus", "Project Client" ou "Visio Pro for Office 365". |
+| ProductType              | String | O tipo de produto como "Office 365 ProPlus", "Project Client" ou "Visio Pro for Office 365". |
 | atribuí                 | Int64  | O número de usuários foi atribuído para a licença de produto. |
 | ativado                | Int64  | O número de usuários que ativaram o produto. |
 | sharedComputerActivation | Int64  | O número de usuários que usaram o produto em um computador compartilhado. |

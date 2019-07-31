@@ -4,12 +4,13 @@ description: Configuração e política de conformidade de dispositivo para um r
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d615a9969cc8b2690f07702bd13bbe3b344264de
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 207620758c35951f5de5b504889214f5270ef537
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964287"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969713"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>Tipo de recurso settingStateDeviceSummary
 

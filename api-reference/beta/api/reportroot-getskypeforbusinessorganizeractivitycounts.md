@@ -4,12 +4,13 @@ description: Obtenha tendências de uso do número e tipo de sessões de confer�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: edbb83a963da00f0699f85966424fb267d530bc0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f0a546d37813b98677edf1d77507f10b9234d383
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872303"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988039"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivitycounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityCounts
 

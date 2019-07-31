@@ -4,12 +4,13 @@ description: Ao fornecer as configurações neste perfil, você pode instruir o 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1336f10d2e9270d7dd63824124ad0c4f05a969da
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 961a5d42024d89cc2e5ecb9084b9fe836ed06683
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983768"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971485"
 ---
 # <a name="androiddeviceownerwificonfiguration-resource-type"></a>tipo de recurso androidDeviceOwnerWiFiConfiguration
 

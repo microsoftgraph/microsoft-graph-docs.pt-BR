@@ -4,12 +4,13 @@ description: Uma descrição do motivo pelo qual uma entidade não é suportada.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce838f73c4ad02ecb29d540a9f0d4af065796993
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 53ca6773c3b5341c3f0aae07369b4af80643728d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978966"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969601"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>tipo de recurso unsupportedDeviceConfigurationDetail
 

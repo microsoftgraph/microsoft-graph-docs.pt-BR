@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windows81ComplianceP
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b88837da00b1454a5cb78586b15dfd47d6b158f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2cfc07d99296c249a4a8650b7cd3919a161fc776
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977874"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975043"
 ---
 # <a name="get-windows81compliancepolicy"></a>Acessar windows81CompliancePolicy
 

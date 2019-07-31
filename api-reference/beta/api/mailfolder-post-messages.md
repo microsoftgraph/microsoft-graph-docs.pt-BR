@@ -4,12 +4,13 @@ description: Use essa API para criar uma nova mensagem em uma pasta de email.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a7e6f0542c91ea72481c56319ffc855dff8e5c64
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d955b8aac1475abc057808a58d8369d65ad10a85
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879918"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992973"
 ---
 # <a name="create-message"></a>Criar mensagem
 

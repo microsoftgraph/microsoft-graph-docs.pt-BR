@@ -4,12 +4,13 @@ description: Listar propriedades e relações de objetos de organização.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d49120c67c520ff17dd9cb7aeabd9e60045c388
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5962f75dc4376cc3ca5db55ba972a10f7a9e5c9c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980695"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980342"
 ---
 # <a name="list-organizations"></a>Listar organizations
 

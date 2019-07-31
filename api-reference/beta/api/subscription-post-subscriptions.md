@@ -3,12 +3,14 @@ title: Criar assinatura
 description: Assina um aplicativo de escuta para receber notificações quando os dados de um recurso do Microsoft Graph são alterados.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: a57baef119e64178f5d3a306c4b09c7b3b23e617
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 77f62bae77c42b7142ece240195c76bd2aaeb276
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869453"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991160"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 

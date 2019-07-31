@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso FileSystemInfo contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item.
 ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
-ms.openlocfilehash: 7eb9f9c5e292b720ca4c7dea772df6d28711a116
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: ec51199ce30326c47288aa0f9b5916a035c4cee3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340273"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973560"
 ---
 # <a name="filesysteminfo-facet"></a>Faceta fileSystemInfo
 
@@ -17,7 +19,7 @@ ms.locfileid: "33340273"
 
 O recurso **FileSystemInfo** contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item. Esta faceta pode ser usada para especificar a data da última modificação ou a data de criação do item como estava no dispositivo local.
 
-Ele está disponível na propriedade fileSystemInfo dos recursos [driveItem] [ item-resource].
+Ele está disponível na propriedade fileSystemInfo dos recursos do [driveItem][item-resource] .
 
 ## <a name="json-representation"></a>Representação JSON
 

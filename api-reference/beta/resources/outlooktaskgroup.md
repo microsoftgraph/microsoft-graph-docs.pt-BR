@@ -4,12 +4,13 @@ description: 'Um grupo de pastas (outlookTaskFolder) que contém tarefas do Outl
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: af5599773c6a4edef97356e99daa522760d9b37a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d519e18723ac9fbd38e7cec64a6758b0c9396bc2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345526"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966276"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>tipo de recurso outlookTaskGroup
 
@@ -27,7 +28,7 @@ No Outlook, há um grupo `My Tasks` de tarefas padrão que você não pode renom
 |[Obter outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.|
 |[Criar outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Criar uma pasta de tarefas do Outlook.|
 |[Listar taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |coleção [outlookTaskFolder](outlooktaskfolder.md)| Obter uma coleção de pastas de tarefas do Outlook.|
-|[Atualizar](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Atualizar as propriedades graváveis de um grupo de tarefas do Outlook. |
+|[Atualização](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Atualizar as propriedades graváveis de um grupo de tarefas do Outlook. |
 |[Delete](../api/outlooktaskgroup-delete.md) | Nenhum |Excluir o grupo de tarefas do Outlook especificado. |
 
 ## <a name="properties"></a>Propriedades
@@ -36,7 +37,7 @@ No Outlook, há um grupo `My Tasks` de tarefas padrão que você não pode renom
 |changeKey|String|A versão do grupo de tarefas.|
 |groupKey|Edm.Guid|O identificador exclusivo do GUID do grupo de tarefas.|
 |id|String|O identificador exclusivo da cadeia de caracteres do grupo de tarefas. Somente leitura.|
-|isDefault|Boolean|True se o grupo de tarefas é o grupo de tarefas padrão.|
+|IsDefault|Booliano|True se o grupo de tarefas é o grupo de tarefas padrão.|
 |name|String|O nome do grupo de tarefas.|
 
 ## <a name="relationships"></a>Relações

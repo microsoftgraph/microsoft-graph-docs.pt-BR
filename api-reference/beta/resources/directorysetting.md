@@ -4,12 +4,13 @@ description: As configurações de diretório podem ser criadas com base no dire
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3eccdb3b19acb286a8b67393f9a7b441b108627c
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: fdef82ef7585d3b59510b491f6b10396afbf6763
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973819"
 ---
 # <a name="directorysetting-resource-type"></a>tipo de recurso directorySetting
 

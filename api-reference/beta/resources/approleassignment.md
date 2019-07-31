@@ -2,12 +2,15 @@
 title: Tipo de recurso plannerAssignment
 description: Usado para registrar quando um usuário ou grupo é atribuído a um aplicativo. Nesse caso, a atribuição de função resultará em um bloco do aplicativo exibido no painel de acesso de aplicativo do usuário. Essa entidade também pode ser usada para conceder a outro aplicativo (modelado como uma entidade de serviço) acesso a um aplicativo de recurso em uma função específica. Você pode criar, ler, atualizar e excluir as atribuições de função.
 localization_priority: Priority
-ms.openlocfilehash: 37942e45f804efaec3e94f8fe9b582e103628025
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 471927eb3aaf0dc26a3a70b0dffae7e15c812787
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339003"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974322"
 ---
 # <a name="approleassignment-resource-type"></a>Tipo de recurso plannerAssignment
 

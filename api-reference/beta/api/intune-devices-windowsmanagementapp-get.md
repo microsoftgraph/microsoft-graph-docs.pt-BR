@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windowsManagementApp
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe557d0592fd1b27564da5c0e981c0cbe56eb57d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d9f207d52612da2c4dc4430e3ac191217b8bfc2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978616"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985669"
 ---
 # <a name="get-windowsmanagementapp"></a>Obter windowsManagementApp
 

@@ -3,12 +3,14 @@ title: Update schemaExtension
 description: Atualize as propriedades na definição da schemaExtension especificada.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: f32a85a832f74783cd6eeec8d3b22f8f5148f1ad
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: deb87928753794db7cc87d93694c0bf97c0c17f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870579"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982940"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 

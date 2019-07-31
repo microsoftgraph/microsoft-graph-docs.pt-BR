@@ -4,12 +4,13 @@ description: 'Atualize um aplicativo publicado anteriormente no catálogo de apl
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 48bf1682821578c786ad9e52b00409f35b6fab66
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 02822690d18076ee5ce2535c06e2856afe89e3c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330631"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977542"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Atualizar aplicativos publicados no catálogo de aplicativos da sua organização
 

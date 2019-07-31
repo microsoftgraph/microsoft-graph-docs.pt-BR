@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto deviceManagementScri
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 999610b66eb3a6b5c18721556d783d96448415b9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2fe601798119e767824331d4c2975cf58c55cca4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958918"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986005"
 ---
 # <a name="get-devicemanagementscriptdevicestate"></a>Obter deviceManagementScriptDeviceState
 

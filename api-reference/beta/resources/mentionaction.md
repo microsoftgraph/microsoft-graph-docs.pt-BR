@@ -1,16 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso MentionAction fornece informações sobre um atividade que mencionou pessoas.
 ms.date: 09/14/2017
 title: MentionAction
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: ad75f3a796f29f7f9c4497a3a15fd31dec0f1c6f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1b08233569fe655b5a8f0e878c4e14d178be279f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342265"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966815"
 ---
 # <a name="mentionaction-resource-type"></a>Tipo de recurso MentionAction
 

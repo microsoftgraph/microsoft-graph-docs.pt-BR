@@ -4,12 +4,13 @@ description: Essas categorias podem então ser aplicadas a um dispositivo no con
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ff6c9d5bccb48338d88e0698ee58c0121cf49101
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 159b7e38db24a103989e22209baf9a6424b2c1b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939711"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967473"
 ---
 # <a name="devicecategory-resource-type"></a>Tipo de recurso deviceCategory
 
@@ -34,7 +35,7 @@ As categorias de dispositivo fornecem uma maneira de organizar seus dispositivos
 |id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
 |displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
-|description|String|Descrição opcional da categoria do dispositivo.|
+|descrição|String|Descrição opcional da categoria do dispositivo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,12 +2,15 @@
 title: Referência do terminal beta do Microsoft Graph
 description: 'O conteúdo de referência nesta seção documenta o ponto de extremidade beta do Microsoft Graph. O ponto de extremidade beta inclui APIs que estão atualmente em visualização e ainda não estão geralmente disponíveis. Convidamos você a experimentar essas APIs e fornecer seus comentários pelos seguintes canais:'
 localization_priority: Priority
-ms.openlocfilehash: 9f9223c36679865b40303dc3530dee9c2c93950d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: adfb0abf2feab3d6846d6636136f413d7986f375
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544005"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974490"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Referência do terminal beta do Microsoft Graph
 

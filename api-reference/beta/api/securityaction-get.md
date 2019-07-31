@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos do objeto SecurityAct
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: ca048618a221814d3e8819ffe67131f2bae51a63
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d73f4b5380b5a0acdcd646c937b0a05a0bd027d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870286"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977970"
 ---
 # <a name="get-securityaction"></a>Obter securityAction
 

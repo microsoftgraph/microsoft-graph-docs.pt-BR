@@ -4,12 +4,13 @@ description: Cria um novo grupo de seção no bloco de anotações especificado.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 8b517dedc56ac6b1aa02da672729236352e566a8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0af3855c647be7e142829ce54a0ad934fb088a7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878973"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988976"
 ---
 # <a name="create-sectiongroup"></a>Criar sectionGroup
 
