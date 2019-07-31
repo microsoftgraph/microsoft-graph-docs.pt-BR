@@ -4,50 +4,51 @@ description: Obtenha as propriedades de um objeto bookingCurrency que está disp
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2969bfa6b89b539310d9a20216cbccdbbe68afa5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7db2060eb1307ffae655fae917bd8d07ef516887
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865420"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945008"
 ---
-# <a name="get-bookingcurrency"></a><span data-ttu-id="23f51-103">Obter bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="23f51-103">Get bookingCurrency</span></span>
+# <a name="get-bookingcurrency"></a><span data-ttu-id="9e723-103">Obter bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="9e723-103">Get bookingCurrency</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="23f51-104">Obtenha as propriedades de um objeto [bookingCurrency](../resources/bookingcurrency.md) que está disponível para uma empresa de livros da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="23f51-104">Get the properties of a [bookingCurrency](../resources/bookingcurrency.md) object that is available to a Microsoft Bookings business.</span></span> <span data-ttu-id="23f51-105">Use a propriedade **ID** , que é o código de moeda, para especificar a moeda.</span><span class="sxs-lookup"><span data-stu-id="23f51-105">Use the **id** property, which is the currency code, to specify the currency.</span></span>
+<span data-ttu-id="9e723-104">Obtenha as propriedades de um objeto [bookingCurrency](../resources/bookingcurrency.md) que está disponível para uma empresa de livros da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="9e723-104">Get the properties of a [bookingCurrency](../resources/bookingcurrency.md) object that is available to a Microsoft Bookings business.</span></span> <span data-ttu-id="9e723-105">Use a propriedade **ID** , que é o código de moeda, para especificar a moeda.</span><span class="sxs-lookup"><span data-stu-id="9e723-105">Use the **id** property, which is the currency code, to specify the currency.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="23f51-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="23f51-106">Permissions</span></span>
-<span data-ttu-id="23f51-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="23f51-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9e723-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="9e723-106">Permissions</span></span>
+<span data-ttu-id="9e723-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9e723-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="23f51-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="23f51-109">Permission type</span></span>      | <span data-ttu-id="23f51-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="23f51-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9e723-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9e723-109">Permission type</span></span>      | <span data-ttu-id="9e723-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9e723-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="23f51-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="23f51-111">Delegated (work or school account)</span></span> | <span data-ttu-id="23f51-112">Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="23f51-112">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="23f51-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="23f51-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="23f51-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="23f51-114">Not supported.</span></span>   |
-|<span data-ttu-id="23f51-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="23f51-115">Application</span></span> | <span data-ttu-id="23f51-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="23f51-116">Not supported.</span></span>  |
+|<span data-ttu-id="9e723-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9e723-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9e723-112">Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="9e723-112">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="9e723-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9e723-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e723-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9e723-114">Not supported.</span></span>   |
+|<span data-ttu-id="9e723-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9e723-115">Application</span></span> | <span data-ttu-id="9e723-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9e723-116">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="23f51-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="23f51-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9e723-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9e723-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingCurrencies/<id>
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="23f51-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="23f51-118">Optional query parameters</span></span>
-<span data-ttu-id="23f51-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="23f51-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9e723-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9e723-118">Optional query parameters</span></span>
+<span data-ttu-id="9e723-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="9e723-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="23f51-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="23f51-120">Request headers</span></span>
-| <span data-ttu-id="23f51-121">Nome</span><span class="sxs-lookup"><span data-stu-id="23f51-121">Name</span></span>      |<span data-ttu-id="23f51-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="23f51-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9e723-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9e723-120">Request headers</span></span>
+| <span data-ttu-id="9e723-121">Nome</span><span class="sxs-lookup"><span data-stu-id="9e723-121">Name</span></span>      |<span data-ttu-id="9e723-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="9e723-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="23f51-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="23f51-123">Authorization</span></span>  | <span data-ttu-id="23f51-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="23f51-124">Bearer {code}</span></span>|
+| <span data-ttu-id="9e723-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9e723-123">Authorization</span></span>  | <span data-ttu-id="9e723-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="9e723-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="23f51-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="23f51-125">Request body</span></span>
-<span data-ttu-id="23f51-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="23f51-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="23f51-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="23f51-127">Response</span></span>
-<span data-ttu-id="23f51-128">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [bookingCurrency](../resources/bookingcurrency.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="23f51-128">If successful, this method returns a `200 OK` response code and [bookingCurrency](../resources/bookingcurrency.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="23f51-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="23f51-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="23f51-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="23f51-130">Request</span></span>
-<span data-ttu-id="23f51-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="23f51-131">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9e723-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9e723-125">Request body</span></span>
+<span data-ttu-id="9e723-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9e723-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="9e723-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="9e723-127">Response</span></span>
+<span data-ttu-id="9e723-128">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [bookingCurrency](../resources/bookingcurrency.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9e723-128">If successful, this method returns a `200 OK` response code and [bookingCurrency](../resources/bookingcurrency.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9e723-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9e723-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9e723-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9e723-130">Request</span></span>
+<span data-ttu-id="9e723-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9e723-131">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="23f51-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="23f51-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="9e723-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="9e723-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_bookingcurrency"
@@ -55,26 +56,26 @@ GET /bookingCurrencies/<id>
 ```http
 GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="23f51-133">C#</span><span class="sxs-lookup"><span data-stu-id="23f51-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9e723-133">C#</span><span class="sxs-lookup"><span data-stu-id="9e723-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingcurrency-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="23f51-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="23f51-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9e723-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="9e723-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bookingcurrency-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="23f51-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="23f51-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9e723-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="9e723-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bookingcurrency-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="23f51-136">Java</span><span class="sxs-lookup"><span data-stu-id="23f51-136">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="9e723-136">Java</span><span class="sxs-lookup"><span data-stu-id="9e723-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingcurrency-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="23f51-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="23f51-137">Response</span></span>
-<span data-ttu-id="23f51-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="23f51-138">The following is an example of the response.</span></span> <span data-ttu-id="23f51-139">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="23f51-139">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="23f51-140">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="23f51-140">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9e723-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="9e723-137">Response</span></span>
+<span data-ttu-id="9e723-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9e723-138">The following is an example of the response.</span></span> <span data-ttu-id="9e723-139">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="9e723-139">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="9e723-140">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9e723-140">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

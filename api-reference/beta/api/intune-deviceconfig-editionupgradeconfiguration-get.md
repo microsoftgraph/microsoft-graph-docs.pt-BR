@@ -4,31 +4,32 @@ description: Ler propriedades e relações do objeto editionUpgradeConfiguration
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 498c3565c9a33b8524614446c5d1f884c662e86c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4933751d45f36cdacd3f0f550b666a1d4acc80d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967318"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948821"
 ---
-# <a name="get-editionupgradeconfiguration"></a><span data-ttu-id="26373-103">Get editionUpgradeConfiguration</span><span class="sxs-lookup"><span data-stu-id="26373-103">Get editionUpgradeConfiguration</span></span>
+# <a name="get-editionupgradeconfiguration"></a><span data-ttu-id="dc147-103">Get editionUpgradeConfiguration</span><span class="sxs-lookup"><span data-stu-id="dc147-103">Get editionUpgradeConfiguration</span></span>
 
-> <span data-ttu-id="26373-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="26373-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="dc147-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="dc147-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="26373-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="26373-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="dc147-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="dc147-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="26373-106">Ler propriedades e relações do objeto [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="26373-106">Read properties and relationships of the [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) object.</span></span>
+<span data-ttu-id="dc147-106">Ler propriedades e relações do objeto [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="dc147-106">Read properties and relationships of the [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="26373-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="26373-107">Prerequisites</span></span>
-<span data-ttu-id="26373-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="26373-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="dc147-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="dc147-107">Prerequisites</span></span>
+<span data-ttu-id="dc147-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dc147-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="26373-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="26373-110">Permission type</span></span>|<span data-ttu-id="26373-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="26373-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="dc147-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dc147-110">Permission type</span></span>|<span data-ttu-id="dc147-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="dc147-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="26373-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="26373-112">Delegated (work or school account)</span></span>|<span data-ttu-id="26373-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="26373-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="26373-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="26373-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="26373-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="26373-115">Not supported.</span></span>|
-|<span data-ttu-id="26373-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="26373-116">Application</span></span>|<span data-ttu-id="26373-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="26373-117">Not supported.</span></span>|
+|<span data-ttu-id="dc147-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dc147-112">Delegated (work or school account)</span></span>|<span data-ttu-id="dc147-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="dc147-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="dc147-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dc147-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dc147-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dc147-115">Not supported.</span></span>|
+|<span data-ttu-id="dc147-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dc147-116">Application</span></span>|<span data-ttu-id="dc147-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dc147-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="26373-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="26373-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc147-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dc147-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +40,31 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="26373-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="26373-119">Optional query parameters</span></span>
-<span data-ttu-id="26373-120">Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="26373-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="dc147-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="dc147-119">Optional query parameters</span></span>
+<span data-ttu-id="dc147-120">Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="dc147-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="26373-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="26373-121">Request headers</span></span>
-|<span data-ttu-id="26373-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="26373-122">Header</span></span>|<span data-ttu-id="26373-123">Valor</span><span class="sxs-lookup"><span data-stu-id="26373-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dc147-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dc147-121">Request headers</span></span>
+|<span data-ttu-id="dc147-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="dc147-122">Header</span></span>|<span data-ttu-id="dc147-123">Valor</span><span class="sxs-lookup"><span data-stu-id="dc147-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="26373-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="26373-124">Authorization</span></span>|<span data-ttu-id="26373-125">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="26373-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="26373-126">Aceitar</span><span class="sxs-lookup"><span data-stu-id="26373-126">Accept</span></span>|<span data-ttu-id="26373-127">application/json</span><span class="sxs-lookup"><span data-stu-id="26373-127">application/json</span></span>|
+|<span data-ttu-id="dc147-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="dc147-124">Authorization</span></span>|<span data-ttu-id="dc147-125">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dc147-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="dc147-126">Aceitar</span><span class="sxs-lookup"><span data-stu-id="dc147-126">Accept</span></span>|<span data-ttu-id="dc147-127">application/json</span><span class="sxs-lookup"><span data-stu-id="dc147-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="26373-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="26373-128">Request body</span></span>
-<span data-ttu-id="26373-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="26373-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dc147-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dc147-128">Request body</span></span>
+<span data-ttu-id="dc147-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="dc147-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="26373-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="26373-130">Response</span></span>
-<span data-ttu-id="26373-131">Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="26373-131">If successful, this method returns a `200 OK` response code and [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dc147-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc147-130">Response</span></span>
+<span data-ttu-id="dc147-131">Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dc147-131">If successful, this method returns a `200 OK` response code and [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="26373-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="26373-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dc147-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="dc147-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="26373-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="26373-133">Request</span></span>
-<span data-ttu-id="26373-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="26373-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="dc147-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc147-133">Request</span></span>
+<span data-ttu-id="dc147-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="dc147-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="26373-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="26373-135">Response</span></span>
-<span data-ttu-id="26373-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="26373-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="dc147-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc147-135">Response</span></span>
+<span data-ttu-id="dc147-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dc147-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

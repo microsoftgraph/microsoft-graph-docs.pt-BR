@@ -4,58 +4,59 @@ description: Rejeite as chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 10557ef74360d90eefe60a85d57d33c02261f4d1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1eb607815310c9751b6c1635cc827221aa14826d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864601"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944377"
 ---
-# <a name="call-reject"></a><span data-ttu-id="18ba5-103">Call: rejeitar</span><span class="sxs-lookup"><span data-stu-id="18ba5-103">call: reject</span></span>
+# <a name="call-reject"></a><span data-ttu-id="71b73-103">Call: rejeitar</span><span class="sxs-lookup"><span data-stu-id="71b73-103">call: reject</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="18ba5-104">Rejeite as chamadas recebidas.</span><span class="sxs-lookup"><span data-stu-id="18ba5-104">Reject an incoming call.</span></span>
+<span data-ttu-id="71b73-104">Rejeite as chamadas recebidas.</span><span class="sxs-lookup"><span data-stu-id="71b73-104">Reject an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="18ba5-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="18ba5-105">Permissions</span></span>
-<span data-ttu-id="18ba5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="18ba5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="71b73-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="71b73-105">Permissions</span></span>
+<span data-ttu-id="71b73-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="71b73-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="18ba5-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="18ba5-108">Permission type</span></span> | <span data-ttu-id="18ba5-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="18ba5-109">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="71b73-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="71b73-108">Permission type</span></span> | <span data-ttu-id="71b73-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="71b73-109">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="18ba5-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="18ba5-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="18ba5-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="18ba5-111">Not Supported</span></span>                       |
-| <span data-ttu-id="18ba5-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="18ba5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18ba5-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="18ba5-113">Not Supported</span></span>                       |
-| <span data-ttu-id="18ba5-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="18ba5-114">Application</span></span>     | <span data-ttu-id="18ba5-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="18ba5-115">None</span></span>                                                       |
+| <span data-ttu-id="71b73-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="71b73-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="71b73-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="71b73-111">Not Supported</span></span>                       |
+| <span data-ttu-id="71b73-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="71b73-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="71b73-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="71b73-113">Not Supported</span></span>                       |
+| <span data-ttu-id="71b73-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="71b73-114">Application</span></span>     | <span data-ttu-id="71b73-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="71b73-115">None</span></span>                                                       |
 
-## <a name="http-request"></a><span data-ttu-id="18ba5-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="18ba5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="71b73-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="71b73-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/reject
 POST /applications/{id}/calls/{id}/reject
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="18ba5-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="18ba5-117">Request headers</span></span>
-| <span data-ttu-id="18ba5-118">Nome</span><span class="sxs-lookup"><span data-stu-id="18ba5-118">Name</span></span>          | <span data-ttu-id="18ba5-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="18ba5-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="71b73-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="71b73-117">Request headers</span></span>
+| <span data-ttu-id="71b73-118">Nome</span><span class="sxs-lookup"><span data-stu-id="71b73-118">Name</span></span>          | <span data-ttu-id="71b73-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="71b73-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="18ba5-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="18ba5-120">Authorization</span></span> | <span data-ttu-id="18ba5-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="18ba5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="71b73-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="71b73-120">Authorization</span></span> | <span data-ttu-id="71b73-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="71b73-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="18ba5-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="18ba5-123">Request body</span></span>
-<span data-ttu-id="18ba5-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="18ba5-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="71b73-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="71b73-123">Request body</span></span>
+<span data-ttu-id="71b73-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="71b73-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="18ba5-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="18ba5-125">Parameter</span></span>      | <span data-ttu-id="18ba5-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="18ba5-126">Type</span></span>    |<span data-ttu-id="18ba5-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="18ba5-127">Description</span></span>|
+| <span data-ttu-id="71b73-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="71b73-125">Parameter</span></span>      | <span data-ttu-id="71b73-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="71b73-126">Type</span></span>    |<span data-ttu-id="71b73-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="71b73-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="18ba5-128">motivos</span><span class="sxs-lookup"><span data-stu-id="18ba5-128">reason</span></span>|<span data-ttu-id="18ba5-129">String</span><span class="sxs-lookup"><span data-stu-id="18ba5-129">String</span></span>|<span data-ttu-id="18ba5-130">O motivo da rejeição.</span><span class="sxs-lookup"><span data-stu-id="18ba5-130">The rejection reason.</span></span>|
+|<span data-ttu-id="71b73-128">motivos</span><span class="sxs-lookup"><span data-stu-id="71b73-128">reason</span></span>|<span data-ttu-id="71b73-129">String</span><span class="sxs-lookup"><span data-stu-id="71b73-129">String</span></span>|<span data-ttu-id="71b73-130">O motivo da rejeição.</span><span class="sxs-lookup"><span data-stu-id="71b73-130">The rejection reason.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="18ba5-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="18ba5-131">Response</span></span>
-<span data-ttu-id="18ba5-p103">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="18ba5-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="71b73-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="71b73-131">Response</span></span>
+<span data-ttu-id="71b73-p103">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="71b73-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
 ```http
 Returns `202 Accepted` response code
 ```
 
-## <a name="example"></a><span data-ttu-id="18ba5-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="18ba5-134">Example</span></span>
-<span data-ttu-id="18ba5-135">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="18ba5-135">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="71b73-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="71b73-134">Example</span></span>
+<span data-ttu-id="71b73-135">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="71b73-135">The following example shows how to call this API.</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="18ba5-136">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="18ba5-136">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="71b73-136">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="71b73-136">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -108,11 +109,11 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="18ba5-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="18ba5-137">Request</span></span>
-<span data-ttu-id="18ba5-138">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="18ba5-138">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="71b73-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="71b73-137">Request</span></span>
+<span data-ttu-id="71b73-138">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="71b73-138">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="18ba5-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="18ba5-139">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="71b73-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="71b73-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-reject"
@@ -126,27 +127,27 @@ Content-Length: 24
   "reason": "none"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="18ba5-140">C#</span><span class="sxs-lookup"><span data-stu-id="18ba5-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="71b73-140">C#</span><span class="sxs-lookup"><span data-stu-id="71b73-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="18ba5-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="18ba5-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71b73-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="71b73-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="18ba5-142">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="18ba5-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="71b73-142">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="71b73-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="18ba5-143">Java</span><span class="sxs-lookup"><span data-stu-id="18ba5-143">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="71b73-143">Java</span><span class="sxs-lookup"><span data-stu-id="71b73-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-reject-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="18ba5-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="18ba5-144">Response</span></span>
-<span data-ttu-id="18ba5-145">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="18ba5-145">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="71b73-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="71b73-144">Response</span></span>
+<span data-ttu-id="71b73-145">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="71b73-145">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -157,7 +158,7 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a><span data-ttu-id="18ba5-146">Notificação-excluído</span><span class="sxs-lookup"><span data-stu-id="18ba5-146">Notification - deleted</span></span>
+##### <a name="notification---deleted"></a><span data-ttu-id="71b73-146">Notificação-excluído</span><span class="sxs-lookup"><span data-stu-id="71b73-146">Notification - deleted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

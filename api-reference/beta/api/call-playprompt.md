@@ -4,31 +4,32 @@ description: Reproduza um prompt na chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cc65ed5b9ced14cd259bf678ee1152089d654e2c
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 8ca1a83628ebbb5da2bfec41307b53e01c381883
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931087"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944454"
 ---
-# <a name="call-playprompt"></a><span data-ttu-id="732f6-103">Call: playPrompt</span><span class="sxs-lookup"><span data-stu-id="732f6-103">call: playPrompt</span></span>
+# <a name="call-playprompt"></a><span data-ttu-id="7c4d8-103">Call: playPrompt</span><span class="sxs-lookup"><span data-stu-id="7c4d8-103">call: playPrompt</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="732f6-104">Reproduza um prompt na chamada.</span><span class="sxs-lookup"><span data-stu-id="732f6-104">Play a prompt in the call.</span></span>
+<span data-ttu-id="7c4d8-104">Reproduza um prompt na chamada.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-104">Play a prompt in the call.</span></span>
 
-<span data-ttu-id="732f6-105">Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsoperation.md)</span><span class="sxs-lookup"><span data-stu-id="732f6-105">For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)</span></span>
+<span data-ttu-id="7c4d8-105">Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsoperation.md)</span><span class="sxs-lookup"><span data-stu-id="7c4d8-105">For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="732f6-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="732f6-106">Permissions</span></span>
-<span data-ttu-id="732f6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="732f6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7c4d8-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7c4d8-106">Permissions</span></span>
+<span data-ttu-id="7c4d8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7c4d8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="732f6-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="732f6-109">Permission type</span></span>                        | <span data-ttu-id="732f6-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="732f6-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7c4d8-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7c4d8-109">Permission type</span></span>                        | <span data-ttu-id="7c4d8-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7c4d8-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="732f6-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="732f6-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="732f6-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="732f6-112">Not Supported.</span></span>                               |
-| <span data-ttu-id="732f6-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="732f6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="732f6-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="732f6-114">Not Supported.</span></span>                               |
-| <span data-ttu-id="732f6-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="732f6-115">Application</span></span>                            | <span data-ttu-id="732f6-116">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="732f6-116">None.</span></span>                                        |
+| <span data-ttu-id="7c4d8-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7c4d8-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7c4d8-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-112">Not Supported.</span></span>                               |
+| <span data-ttu-id="7c4d8-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7c4d8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c4d8-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-114">Not Supported.</span></span>                               |
+| <span data-ttu-id="7c4d8-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7c4d8-115">Application</span></span>                            | <span data-ttu-id="7c4d8-116">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-116">None.</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="732f6-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="732f6-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7c4d8-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7c4d8-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -36,31 +37,31 @@ POST /app/calls/{id}/playPrompt
 POST /applications/{id}/calls/{id}/playPrompt
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="732f6-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="732f6-118">Request headers</span></span>
-| <span data-ttu-id="732f6-119">Nome</span><span class="sxs-lookup"><span data-stu-id="732f6-119">Name</span></span>          | <span data-ttu-id="732f6-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="732f6-120">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="7c4d8-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7c4d8-118">Request headers</span></span>
+| <span data-ttu-id="7c4d8-119">Nome</span><span class="sxs-lookup"><span data-stu-id="7c4d8-119">Name</span></span>          | <span data-ttu-id="7c4d8-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c4d8-120">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="732f6-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="732f6-121">Authorization</span></span> | <span data-ttu-id="732f6-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="732f6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7c4d8-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="7c4d8-121">Authorization</span></span> | <span data-ttu-id="7c4d8-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="732f6-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="732f6-124">Request body</span></span>
-<span data-ttu-id="732f6-125">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="732f6-125">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7c4d8-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7c4d8-124">Request body</span></span>
+<span data-ttu-id="7c4d8-125">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="732f6-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="732f6-126">Parameter</span></span>      | <span data-ttu-id="732f6-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="732f6-127">Type</span></span>    |<span data-ttu-id="732f6-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="732f6-128">Description</span></span>|
+| <span data-ttu-id="7c4d8-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="7c4d8-126">Parameter</span></span>      | <span data-ttu-id="7c4d8-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="7c4d8-127">Type</span></span>    |<span data-ttu-id="7c4d8-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c4d8-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="732f6-129">prompts</span><span class="sxs-lookup"><span data-stu-id="732f6-129">prompts</span></span>|<span data-ttu-id="732f6-130">coleção [prompt](../resources/prompt.md)</span><span class="sxs-lookup"><span data-stu-id="732f6-130">[prompt](../resources/prompt.md) collection</span></span>| <span data-ttu-id="732f6-131">Atualmente, apenas uma única solicitação e do tipo [MediaPrompt](../resources/mediaprompt.md) é suportada.</span><span class="sxs-lookup"><span data-stu-id="732f6-131">Currently only a single prompt and of type [MediaPrompt](../resources/mediaprompt.md) is supported.</span></span>|
-|<span data-ttu-id="732f6-132">ciclo</span><span class="sxs-lookup"><span data-stu-id="732f6-132">loop</span></span>|<span data-ttu-id="732f6-133">bool</span><span class="sxs-lookup"><span data-stu-id="732f6-133">bool</span></span>| <span data-ttu-id="732f6-134">O valor do loop.</span><span class="sxs-lookup"><span data-stu-id="732f6-134">The loop value.</span></span> <span data-ttu-id="732f6-135">true indica o loop infinitamente.</span><span class="sxs-lookup"><span data-stu-id="732f6-135">true indicates to loop infinitely.</span></span> <span data-ttu-id="732f6-136">O valor padrão é falso.</span><span class="sxs-lookup"><span data-stu-id="732f6-136">The default value is false.</span></span> |
-|<span data-ttu-id="732f6-137">clientContext</span><span class="sxs-lookup"><span data-stu-id="732f6-137">clientContext</span></span>|<span data-ttu-id="732f6-138">String</span><span class="sxs-lookup"><span data-stu-id="732f6-138">String</span></span>|<span data-ttu-id="732f6-139">O contexto do cliente.</span><span class="sxs-lookup"><span data-stu-id="732f6-139">The client context.</span></span>|
+|<span data-ttu-id="7c4d8-129">prompts</span><span class="sxs-lookup"><span data-stu-id="7c4d8-129">prompts</span></span>|<span data-ttu-id="7c4d8-130">coleção [prompt](../resources/prompt.md)</span><span class="sxs-lookup"><span data-stu-id="7c4d8-130">[prompt](../resources/prompt.md) collection</span></span>| <span data-ttu-id="7c4d8-131">Atualmente, apenas uma única solicitação e do tipo [MediaPrompt](../resources/mediaprompt.md) é suportada.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-131">Currently only a single prompt and of type [MediaPrompt](../resources/mediaprompt.md) is supported.</span></span>|
+|<span data-ttu-id="7c4d8-132">ciclo</span><span class="sxs-lookup"><span data-stu-id="7c4d8-132">loop</span></span>|<span data-ttu-id="7c4d8-133">bool</span><span class="sxs-lookup"><span data-stu-id="7c4d8-133">bool</span></span>| <span data-ttu-id="7c4d8-134">O valor do loop.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-134">The loop value.</span></span> <span data-ttu-id="7c4d8-135">true indica o loop infinitamente.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-135">true indicates to loop infinitely.</span></span> <span data-ttu-id="7c4d8-136">O valor padrão é falso.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-136">The default value is false.</span></span> |
+|<span data-ttu-id="7c4d8-137">clientContext</span><span class="sxs-lookup"><span data-stu-id="7c4d8-137">clientContext</span></span>|<span data-ttu-id="7c4d8-138">String</span><span class="sxs-lookup"><span data-stu-id="7c4d8-138">String</span></span>|<span data-ttu-id="7c4d8-139">O contexto do cliente.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-139">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="732f6-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="732f6-140">Response</span></span>
-<span data-ttu-id="732f6-141">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="732f6-141">If successful, this method returns a `200 OK` response code and a [playPromptOperation](../resources/playpromptoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7c4d8-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="7c4d8-140">Response</span></span>
+<span data-ttu-id="7c4d8-141">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-141">If successful, this method returns a `200 OK` response code and a [playPromptOperation](../resources/playpromptoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="732f6-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="732f6-142">Example</span></span>
-<span data-ttu-id="732f6-143">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="732f6-143">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="7c4d8-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7c4d8-142">Example</span></span>
+<span data-ttu-id="7c4d8-143">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-143">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="732f6-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="732f6-144">Request</span></span>
-<span data-ttu-id="732f6-145">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="732f6-145">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="7c4d8-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7c4d8-144">Request</span></span>
+<span data-ttu-id="7c4d8-145">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-145">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="732f6-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="732f6-146">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7c4d8-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="7c4d8-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-playPrompt"
@@ -85,16 +86,16 @@ Content-Length: 166
   "loop": false
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="732f6-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="732f6-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7c4d8-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="7c4d8-147">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-playprompt-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="732f6-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="732f6-148">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="7c4d8-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="7c4d8-148">Response</span></span>
 
-> <span data-ttu-id="732f6-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="732f6-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="7c4d8-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -116,9 +117,9 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="732f6-151">Notificação-operação concluída</span><span class="sxs-lookup"><span data-stu-id="732f6-151">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="7c4d8-151">Notificação-operação concluída</span><span class="sxs-lookup"><span data-stu-id="7c4d8-151">Notification - operation completed</span></span>
 
- ><span data-ttu-id="732f6-152">**Observação:** Se ocorrer um loop infinito, esta notificação não será enviada.</span><span class="sxs-lookup"><span data-stu-id="732f6-152">**Note:** If infinite looping occurs, this notification is not sent.</span></span>
+ ><span data-ttu-id="7c4d8-152">**Observação:** Se ocorrer um loop infinito, esta notificação não será enviada.</span><span class="sxs-lookup"><span data-stu-id="7c4d8-152">**Note:** If infinite looping occurs, this notification is not sent.</span></span>
  
 ```http
 POST https://bot.contoso.com/api/calls
