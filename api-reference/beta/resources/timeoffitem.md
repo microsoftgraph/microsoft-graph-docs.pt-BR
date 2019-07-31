@@ -4,12 +4,13 @@ description: Representa uma versão do timeOff.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3b5b819b9179d266064d7ddf0f6636b9027591af
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: 6b240f587e20e2da178f9afa3e8d712cf2ae114d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345495"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964302"
 ---
 # <a name="timeoffitem-resource-type"></a>tipo de recurso timeOffItem
 
@@ -23,7 +24,7 @@ Representa uma versão do [timeOff](timeoff.md).
 | timeOffReasonId               | string                  | ID do `timeOffReason` para isso `timeOffItem`. Obrigatório.     |
 | startDateTime               | DateTimeOffset                  | A data e a hora de início `timeOffItem`para o. Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
 | endDateTime               | DateTimeOffset                  | A data e a hora de término `timeOffItem`para o. Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| tema | scheduleEntityTheme   | Cores suPortadas: branco; azuis natureza roxa Rosa amarelo acinzentada darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
+| tema | scheduleEntityTheme   | Cores suportadas: branco; azuis natureza roxa Rosa amarelo acinzentada darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 
 ## <a name="json-representation"></a>Representação JSON
 

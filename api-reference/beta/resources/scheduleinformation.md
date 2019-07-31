@@ -2,12 +2,15 @@
 title: tipo de recurso scheduleInformation
 description: 'Representa a disponibilidade de um usuário, lista de distribuição ou recurso por um período de tempo especificado. '
 localization_priority: Normal
-ms.openlocfilehash: b15d492477368d47fd3ebc9fc00bd3dcfc3e6688
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: microsoft-teams
+author: ''
+ms.openlocfilehash: 3d6ede4e1085a8be3f78b714f690b79b836abbcb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343511"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965303"
 ---
 # <a name="scheduleinformation-resource-type"></a>tipo de recurso scheduleInformation
 

@@ -4,12 +4,13 @@ description: Configuração dos níveis de mixer para um determinado participant
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 00beb746a29ae06de838f00b699a97e01f2f1941
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 27ddc297f779d1a40350bd4cc24015a2c60dd9ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344914"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966225"
 ---
 # <a name="participantmixerlevel-resource-type"></a>tipo de recurso participantMixerLevel
 

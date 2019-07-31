@@ -4,12 +4,13 @@ description: Recupere a lista de conversas desse grupo.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: cb6d6479a1bc3aba8f2d53327f88a9abdf12440a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bf241329a13045749f1546ba7e6bd9493eb56adc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858481"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953804"
 ---
 # <a name="list-conversations"></a>Listar conversas
 

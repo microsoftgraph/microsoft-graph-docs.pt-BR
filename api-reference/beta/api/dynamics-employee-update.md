@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: c3d36d06f0a3eb819af07d3edf512114a03c4409
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 34def074257dde043de6408f6b25db42f4f2630b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458443"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956286"
 ---
 # <a name="update-employees"></a>Atualizar funcionários
 Atualizar as propriedades de um objeto Employee para o Dynamics 365 Business central.
@@ -63,7 +64,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 

@@ -2,15 +2,15 @@
 title: 'Entidadegovernanceresource: Register'
 description: Registrar um objeto Entidadegovernanceresource no PIM.
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-doc_type: apiPageType
-ms.openlocfilehash: 2b8457f7ddee4564ca6b6b300121ddb7b8247e34
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: fc6f2dd3ab6ba4cddc1ba3b3cde0e80ff268bb70
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35713916"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954274"
 ---
 # <a name="governanceresource-register"></a>Entidadegovernanceresource: Register
 

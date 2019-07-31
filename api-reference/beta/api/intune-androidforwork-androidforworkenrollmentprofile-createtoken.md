@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae78d93cecd9d487300e74c1ecade822114b6ad6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bdf49b5d584d9bf30fea7844bbd8ee1fde06b8da
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965617"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952860"
 ---
 # <a name="createtoken-action"></a>Ação createToken
 

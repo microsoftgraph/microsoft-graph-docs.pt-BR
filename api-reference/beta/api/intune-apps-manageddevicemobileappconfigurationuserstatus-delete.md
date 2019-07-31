@@ -4,12 +4,13 @@ description: Exclui managedDeviceMobileAppConfigurationUserStatus.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: abb65aa8ab93f90e180f34a26b2a0acc10101136
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4a230c4985bf7379ea4d3ec63485766c34caa0bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974654"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961494"
 ---
 # <a name="delete-manageddevicemobileappconfigurationuserstatus"></a>Excluir managedDeviceMobileAppConfigurationUserStatus
 
