@@ -2,24 +2,27 @@
 title: Tipo de recurso chunkedUploadSessionDescriptor
 description: Veja a seguir uma representação JSON do recurso
 localization_priority: Normal
-ms.openlocfilehash: b11bff34e70585c4cf7be23f5ce6d3a0c2ac0a0c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9df47d6bc2ac99d36f87e2af3734f25462371a29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460601"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973440"
 ---
-# <a name="chunkeduploadsessiondescriptor-resource-type"></a><span data-ttu-id="b2c55-103">Tipo de recurso chunkedUploadSessionDescriptor</span><span class="sxs-lookup"><span data-stu-id="b2c55-103">chunkedUploadSessionDescriptor resource type</span></span>
+# <a name="chunkeduploadsessiondescriptor-resource-type"></a><span data-ttu-id="be495-103">Tipo de recurso chunkedUploadSessionDescriptor</span><span class="sxs-lookup"><span data-stu-id="be495-103">chunkedUploadSessionDescriptor resource type</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="b2c55-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b2c55-104">Properties</span></span>
-| <span data-ttu-id="b2c55-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b2c55-105">Property</span></span>     | <span data-ttu-id="b2c55-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="b2c55-106">Type</span></span>   |<span data-ttu-id="b2c55-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="b2c55-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="be495-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="be495-104">Properties</span></span>
+| <span data-ttu-id="be495-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="be495-105">Property</span></span>     | <span data-ttu-id="be495-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="be495-106">Type</span></span>   |<span data-ttu-id="be495-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="be495-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b2c55-108">nome</span><span class="sxs-lookup"><span data-stu-id="b2c55-108">name</span></span>|<span data-ttu-id="b2c55-109">String</span><span class="sxs-lookup"><span data-stu-id="b2c55-109">String</span></span>||
+|<span data-ttu-id="be495-108">name</span><span class="sxs-lookup"><span data-stu-id="be495-108">name</span></span>|<span data-ttu-id="be495-109">String</span><span class="sxs-lookup"><span data-stu-id="be495-109">String</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="b2c55-110">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b2c55-110">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="be495-110">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="be495-110">JSON representation</span></span>
 
-<span data-ttu-id="b2c55-111">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="b2c55-111">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="be495-111">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="be495-111">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

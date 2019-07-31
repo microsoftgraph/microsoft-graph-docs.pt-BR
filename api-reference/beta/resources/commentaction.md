@@ -1,26 +1,28 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso CommentAction fornece informações sobre uma atividade de comentário feitas em um item.
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
-ms.openlocfilehash: c472a0b1b992c91b60174859e4900ffcee04c007
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: b7782c6e4dd30b503a9be88737ef6bd2dbad109b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341444"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973255"
 ---
-# <a name="commentaction-resource-type"></a><span data-ttu-id="5c49c-102">Tipo de recurso CommentAction</span><span class="sxs-lookup"><span data-stu-id="5c49c-102">CommentAction resource type</span></span>
+# <a name="commentaction-resource-type"></a><span data-ttu-id="26ac8-103">Tipo de recurso CommentAction</span><span class="sxs-lookup"><span data-stu-id="26ac8-103">CommentAction resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5c49c-103">O recurso **CommentAction** fornece informações sobre uma [atividade][] de comentário feitas em um item.</span><span class="sxs-lookup"><span data-stu-id="5c49c-103">The **CommentAction** resource provides information about a comment [activity][] made on an item.</span></span>
+<span data-ttu-id="26ac8-104">O recurso **CommentAction** fornece informações sobre uma [atividade][] de comentário feitas em um item.</span><span class="sxs-lookup"><span data-stu-id="26ac8-104">The **CommentAction** resource provides information about a comment [activity][] made on an item.</span></span>
 
 [atividade]: itemactivity.md
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="5c49c-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5c49c-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="26ac8-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="26ac8-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,19 +38,19 @@ ms.locfileid: "33341444"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="5c49c-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5c49c-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="26ac8-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="26ac8-107">Properties</span></span>
 
-| <span data-ttu-id="5c49c-107">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="5c49c-107">Property name</span></span>    | <span data-ttu-id="5c49c-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="5c49c-108">Type</span></span>                       | <span data-ttu-id="5c49c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="5c49c-109">Description</span></span>
+| <span data-ttu-id="26ac8-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="26ac8-108">Property name</span></span>    | <span data-ttu-id="26ac8-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="26ac8-109">Type</span></span>                       | <span data-ttu-id="26ac8-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="26ac8-110">Description</span></span>
 |:-----------------|:---------------------------|:-----------------------------
-| <span data-ttu-id="5c49c-110">isReply</span><span class="sxs-lookup"><span data-stu-id="5c49c-110">isReply</span></span>          | <span data-ttu-id="5c49c-111">booliano</span><span class="sxs-lookup"><span data-stu-id="5c49c-111">boolean</span></span>                    | <span data-ttu-id="5c49c-112">Se for verdadeiro, essa atividade era uma resposta para um thread de comentário existente.</span><span class="sxs-lookup"><span data-stu-id="5c49c-112">If true, this activity was a reply to an existing comment thread.</span></span>
-| <span data-ttu-id="5c49c-113">parentAuthor</span><span class="sxs-lookup"><span data-stu-id="5c49c-113">parentAuthor</span></span>     | <span data-ttu-id="5c49c-114">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="5c49c-114">[identitySet][]</span></span>            | <span data-ttu-id="5c49c-115">A identidade do usuário que iniciou o thread de comentários.</span><span class="sxs-lookup"><span data-stu-id="5c49c-115">The identity of the user who started the comment thread.</span></span>
-| <span data-ttu-id="5c49c-116">participantes</span><span class="sxs-lookup"><span data-stu-id="5c49c-116">participants</span></span>     | <span data-ttu-id="5c49c-117">Coleção [identitySet][]</span><span class="sxs-lookup"><span data-stu-id="5c49c-117">[identitySet][] collection</span></span> | <span data-ttu-id="5c49c-118">As identidades dos usuários que participam deste thread de comentário.</span><span class="sxs-lookup"><span data-stu-id="5c49c-118">The identities of the users participating in this comment thread.</span></span>
+| <span data-ttu-id="26ac8-111">isReply</span><span class="sxs-lookup"><span data-stu-id="26ac8-111">isReply</span></span>          | <span data-ttu-id="26ac8-112">booliano</span><span class="sxs-lookup"><span data-stu-id="26ac8-112">boolean</span></span>                    | <span data-ttu-id="26ac8-113">Se for verdadeiro, essa atividade era uma resposta para um thread de comentário existente.</span><span class="sxs-lookup"><span data-stu-id="26ac8-113">If true, this activity was a reply to an existing comment thread.</span></span>
+| <span data-ttu-id="26ac8-114">parentAuthor</span><span class="sxs-lookup"><span data-stu-id="26ac8-114">parentAuthor</span></span>     | <span data-ttu-id="26ac8-115">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="26ac8-115">[identitySet][]</span></span>            | <span data-ttu-id="26ac8-116">A identidade do usuário que iniciou o thread de comentários.</span><span class="sxs-lookup"><span data-stu-id="26ac8-116">The identity of the user who started the comment thread.</span></span>
+| <span data-ttu-id="26ac8-117">participantes</span><span class="sxs-lookup"><span data-stu-id="26ac8-117">participants</span></span>     | <span data-ttu-id="26ac8-118">Coleção [identitySet][]</span><span class="sxs-lookup"><span data-stu-id="26ac8-118">[identitySet][] collection</span></span> | <span data-ttu-id="26ac8-119">As identidades dos usuários que participam deste thread de comentário.</span><span class="sxs-lookup"><span data-stu-id="26ac8-119">The identities of the users participating in this comment thread.</span></span>
 
 [identitySet]: identityset.md
 
-## <a name="remarks"></a><span data-ttu-id="5c49c-120">Comentários</span><span class="sxs-lookup"><span data-stu-id="5c49c-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="26ac8-121">Comentários</span><span class="sxs-lookup"><span data-stu-id="26ac8-121">Remarks</span></span>
 
-<span data-ttu-id="5c49c-121">Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="5c49c-121">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="26ac8-122">Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="26ac8-122">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 <!--
 {

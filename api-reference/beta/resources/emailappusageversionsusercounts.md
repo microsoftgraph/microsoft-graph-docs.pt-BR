@@ -4,30 +4,31 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 371352c42e870f45224999b7a618d1bb694ea512
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 18b86708071f1fab573571703dbb5bc253fcf2ce
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506675"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972135"
 ---
-# <a name="emailappusageversionsusercounts-resource-type"></a><span data-ttu-id="0a85b-103">tipo de recurso emailAppUsageVersionsUserCounts</span><span class="sxs-lookup"><span data-stu-id="0a85b-103">emailAppUsageVersionsUserCounts resource type</span></span>
+# <a name="emailappusageversionsusercounts-resource-type"></a><span data-ttu-id="ae40c-103">tipo de recurso emailAppUsageVersionsUserCounts</span><span class="sxs-lookup"><span data-stu-id="ae40c-103">emailAppUsageVersionsUserCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0a85b-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0a85b-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ae40c-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ae40c-104">Properties</span></span>
 
-| <span data-ttu-id="0a85b-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0a85b-105">Property</span></span>          | <span data-ttu-id="0a85b-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="0a85b-106">Type</span></span>   |
+| <span data-ttu-id="ae40c-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ae40c-105">Property</span></span>          | <span data-ttu-id="ae40c-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="ae40c-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="0a85b-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="0a85b-107">reportRefreshDate</span></span> | <span data-ttu-id="0a85b-108">Data</span><span class="sxs-lookup"><span data-stu-id="0a85b-108">Date</span></span>   |
-| <span data-ttu-id="0a85b-109">outlook2016</span><span class="sxs-lookup"><span data-stu-id="0a85b-109">outlook2016</span></span>       | <span data-ttu-id="0a85b-110">Int64</span><span class="sxs-lookup"><span data-stu-id="0a85b-110">Int64</span></span>  |
-| <span data-ttu-id="0a85b-111">outlook2013</span><span class="sxs-lookup"><span data-stu-id="0a85b-111">outlook2013</span></span>       | <span data-ttu-id="0a85b-112">Int64</span><span class="sxs-lookup"><span data-stu-id="0a85b-112">Int64</span></span>  |
-| <span data-ttu-id="0a85b-113">outlook2010</span><span class="sxs-lookup"><span data-stu-id="0a85b-113">outlook2010</span></span>       | <span data-ttu-id="0a85b-114">Int64</span><span class="sxs-lookup"><span data-stu-id="0a85b-114">Int64</span></span>  |
-| <span data-ttu-id="0a85b-115">Outlook2007</span><span class="sxs-lookup"><span data-stu-id="0a85b-115">outlook2007</span></span>       | <span data-ttu-id="0a85b-116">Int64</span><span class="sxs-lookup"><span data-stu-id="0a85b-116">Int64</span></span>  |
-| <span data-ttu-id="0a85b-117">indeterminada</span><span class="sxs-lookup"><span data-stu-id="0a85b-117">undetermined</span></span>      | <span data-ttu-id="0a85b-118">Int64</span><span class="sxs-lookup"><span data-stu-id="0a85b-118">Int64</span></span>  |
-| <span data-ttu-id="0a85b-119">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="0a85b-119">reportPeriod</span></span>      | <span data-ttu-id="0a85b-120">String</span><span class="sxs-lookup"><span data-stu-id="0a85b-120">String</span></span> |
+| <span data-ttu-id="ae40c-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="ae40c-107">reportRefreshDate</span></span> | <span data-ttu-id="ae40c-108">Data</span><span class="sxs-lookup"><span data-stu-id="ae40c-108">Date</span></span>   |
+| <span data-ttu-id="ae40c-109">outlook2016</span><span class="sxs-lookup"><span data-stu-id="ae40c-109">outlook2016</span></span>       | <span data-ttu-id="ae40c-110">Int64</span><span class="sxs-lookup"><span data-stu-id="ae40c-110">Int64</span></span>  |
+| <span data-ttu-id="ae40c-111">outlook2013</span><span class="sxs-lookup"><span data-stu-id="ae40c-111">outlook2013</span></span>       | <span data-ttu-id="ae40c-112">Int64</span><span class="sxs-lookup"><span data-stu-id="ae40c-112">Int64</span></span>  |
+| <span data-ttu-id="ae40c-113">outlook2010</span><span class="sxs-lookup"><span data-stu-id="ae40c-113">outlook2010</span></span>       | <span data-ttu-id="ae40c-114">Int64</span><span class="sxs-lookup"><span data-stu-id="ae40c-114">Int64</span></span>  |
+| <span data-ttu-id="ae40c-115">outlook2007</span><span class="sxs-lookup"><span data-stu-id="ae40c-115">outlook2007</span></span>       | <span data-ttu-id="ae40c-116">Int64</span><span class="sxs-lookup"><span data-stu-id="ae40c-116">Int64</span></span>  |
+| <span data-ttu-id="ae40c-117">indeterminada</span><span class="sxs-lookup"><span data-stu-id="ae40c-117">undetermined</span></span>      | <span data-ttu-id="ae40c-118">Int64</span><span class="sxs-lookup"><span data-stu-id="ae40c-118">Int64</span></span>  |
+| <span data-ttu-id="ae40c-119">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="ae40c-119">reportPeriod</span></span>      | <span data-ttu-id="ae40c-120">String</span><span class="sxs-lookup"><span data-stu-id="ae40c-120">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="0a85b-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0a85b-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ae40c-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ae40c-121">JSON representation</span></span>
 
-<span data-ttu-id="0a85b-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0a85b-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ae40c-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ae40c-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
