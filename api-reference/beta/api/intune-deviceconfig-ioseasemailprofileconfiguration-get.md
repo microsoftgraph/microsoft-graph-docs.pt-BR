@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto iosEasEmailProfileCo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a85c4671ed8a57fe58ff8335e6304ee91cfdb52
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b77373162d1acdf3be41cb653e4c0bee032e2b44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966982"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948492"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>Obter iosEasEmailProfileConfiguration
 

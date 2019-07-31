@@ -4,12 +4,13 @@ description: 'Representa um locatário do Azure Active Directory. '
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0acd2701a0dd8d08021057a545b84ae18a61adb2
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: 79fc7676752d4f1ba8363c527c46ac50e9f9afff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620944"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966325"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 

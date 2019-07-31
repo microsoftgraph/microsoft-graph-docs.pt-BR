@@ -4,12 +4,13 @@ description: Representa as opções de proteção da planilha.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c5f5a953490eebf456ce4cc37b515c758630b3ce
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 396a8ad931c78dc6a7aa48b3c241debbaf91a132
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348476"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963830"
 ---
 # <a name="workbookworksheetprotectionoptions-resource-type"></a>tipo de recurso workbookWorksheetProtectionOptions
 

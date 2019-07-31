@@ -2,12 +2,15 @@
 title: tipo de recurso settingTemplateValue
 description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
 localization_priority: Normal
-ms.openlocfilehash: 2277f4b7bb66839164a1b09011d20886baf2bd1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9a49dd291bd9cc7baa31d90ba8e247ac984b1906
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343180"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965184"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
 

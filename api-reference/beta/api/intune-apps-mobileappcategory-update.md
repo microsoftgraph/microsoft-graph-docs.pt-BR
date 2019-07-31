@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto mobileAppCategory.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2cccb7aa7f00c7c92c740d120c84d3120d4419a8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4500d70e3bf86dea2fd58dfe2e0dc387cf97c1b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974054"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960941"
 ---
 # <a name="update-mobileappcategory"></a>Atualizar mobileAppCategory
 

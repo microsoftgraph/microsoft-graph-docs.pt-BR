@@ -4,12 +4,13 @@ description: Você pode obter uma visão de alto nível do valor que você está
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 856680732b7dce1b6e0b83105c64d86b72897967
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: a584c53d912e81c4b9f42cc9d8f980323dc0f954
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343154"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965135"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Relatórios de uso do site do SharePoint
 

@@ -4,12 +4,13 @@ description: O recurso **plannerChecklistItemCollection** representa a coleção
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 502bda597ba0e021dc449812a104d0fd516f6ef1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: bebec56f57f546dcfc0b16eedb1fb9635d0fb16f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344509"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965997"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>tipo de recurso plannerChecklistItems
 

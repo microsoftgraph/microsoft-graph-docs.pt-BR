@@ -4,12 +4,13 @@ description: Contém propriedades adicionais sobre a identidade do participante
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9869cf1154735742630edf75ea3e4d5303d45bc9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ad73ce0bbeaa02b0207f11bbd3f0004857d90506
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344908"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966220"
 ---
 # <a name="participantinfo-resource-type"></a>tipo de recurso participantInfo
 

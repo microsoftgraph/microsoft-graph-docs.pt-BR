@@ -2,12 +2,15 @@
 title: tipo de recurso secureScoreControlProfile
 description: Representa a pontuação segura de um locatário por dados de controle. Por padrão, ele retorna todos os controles de um locatário e pode explicitamente extrair controles individuais.
 localization_priority: Normal
-ms.openlocfilehash: 41a74af0de47bbe77b8ea04cbea011a6f085d1bb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 5e244576cb014719d454fe37bd8395054efe2e2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343406"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965273"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>tipo de recurso secureScoreControlProfile
 
@@ -36,11 +39,11 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 |   service |   String  |   Serviço que possui o controle (Exchange, SharePoint, Azure AD). |
 |   maxScore |  String  |   A pontuação máxima obtida na data especificada.   |
 |   camada |  String  |   Camada de controle (Core, defesa profunda, avançada)    |
-|   userImpact |    String  | Impacto do usuário da implementação do controle (baixo, moderado, alto).    |
+|   userimpact |    String  | Impacto do usuário da implementação do controle (baixo, moderado, alto).    |
 |   implementationCost |    String  |   Custo do recurso do controle implemmentating (baixo, moderado, alto). |
 |   classificação |  Int32   |   Classificação de pilha da Microsoft de controle.   |
-|   las |   String Collection   |   Lista de ameaças o controle atenua (accountBreach, dataExclusão, dataExfiltration, dataDerramamento, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação). |
-|   preterido |    Boolean |   Sinalizador para indicar se um controle está depreciado.   |
+|   las |   String Collection   |   Lista de ameaças o controle atenua (accountBreach, dataexclusão, dataExfiltration, dataderramamento, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação). |
+|   preterido |    Booliano |   Sinalizador para indicar se um controle está depreciado.   |
 |   correção |   String  |   Descrição do que o controle ajudará a corrigir. |
 |   remediationImpact | String  |   Descrição do impacto sobre os usuários da correção. |
 |   actionUrl | String  |   URL para onde o controle pode ser acionado. |
