@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: O recurso DriveItem representa um arquivo, pasta ou outro item armazenado em uma unidade.
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a7a921bafda04497ff97c7c28bdb9f21d4b3d15f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 93c73fa61c871afce4ce4c7ed00e3c1ef554ca79
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340674"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972968"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -109,7 +110,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
 | cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
 | deleted              | [deleted][]        | Informações sobre o estado excluído do item. Somente leitura.
-| descrição          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
+| descrição          | Cadeia de caracteres             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
 | eTag                 | String             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
 | file                 | [file][]           | Metadados de arquivo, se o item for um arquivo. Somente leitura.
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
@@ -119,7 +120,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | lastModifiedBy       | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.
 | lastModifiedDateTime | DateTimeOffset     | Data e hora em que o item foi modificado pela última vez. Somente leitura.
 | location             | [geoCoordinates][] | Metadados de localização, se o item tiver dados de localização. Somente leitura.
-| nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
+| nome                 | Cadeia de caracteres             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
 | Foto                | [photo][]          | Metadados de foto, se o item for uma foto. Somente leitura.
@@ -142,8 +143,8 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | Relação       | Tipo                        | Descrição
 |:-------------------|:----------------------------|:--------------------------
 | activities         | Conjunto [itemActivity][] | A lista de atividades recentes que ocorreram neste item.
-| analytics          | [itemAnalytics][] resource  | Análise sobre as atividades de exibição que ocorreram neste item.
-| filhos           | coleção driveItem        | Coleção que contêm objetos Item para os filhos imediatos do Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
+| análise          | recurso [itemAnalytics][]  | Análise sobre as atividades de visualização que ocorreram neste item.
+| children           | coleção driveItem        | Coleção que contêm objetos Item para os filhos imediatos do Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
 | createdByUser      | [user][]                    | A identidade do usuário que criou o item. Somente leitura.
 | lastModifiedByUser | [user][]                    | A identidade do usuário que modificou o item pela última vez. Somente leitura.
 | listItem           | [listItem][]                | Para unidades no SharePoint, o item da lista da biblioteca de documentos associado. Somente leitura. Anulável.
@@ -181,7 +182,7 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 | [Atualizar item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
 | [Carregar conteúdo](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
 | [Baixar conteúdo](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [Baixar formato de arquivo específico][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
+| [Baixar o formato de arquivo específico][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [Excluir item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
 | [Mover item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
 | [Copiar item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`

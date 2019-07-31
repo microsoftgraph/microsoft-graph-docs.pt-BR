@@ -3,12 +3,14 @@ title: tipo de recurso chatMessageHostedImage
 description: Representa uma imagem hospedada dentro de um chat.
 localization_priority: Normal
 author: clearab
-ms.openlocfilehash: 1f7ce24dfae680937ecb1c43f9a34f6b9bb35646
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: e217234b8ea6c6510b85af1bf1002e589e4366e0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35085806"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974000"
 ---
 # <a name="chatmessagehostedimage-resource-type"></a>tipo de recurso chatMessageHostedImage
 

@@ -2,12 +2,15 @@
 title: tipo de recurso licenseDetails
 description: Contém informações sobre uma licença atribuída a um usuário.
 localization_priority: Normal
-ms.openlocfilehash: 6b977dcff67ac9dc03890a4f2182d8b1d974f314
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 12e0dcb86288eb27859b87a1029e89676a5d511b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345265"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966953"
 ---
 # <a name="licensedetails-resource-type"></a>tipo de recurso licenseDetails
 
@@ -27,7 +30,7 @@ Contém informações sobre uma licença atribuída a um usuário.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| O identificador exclusivo do objeto de detalhes da licença. Somente leitura, chave, não anulável |
-|onPlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviço atribuídos com a licença. Somente leitura, não nulo |
+|onplans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviço atribuídos com a licença. Somente leitura, não nulo |
 |skuId|Guid| Identificador exclusivo (GUID) do serviço SKU. Igual à propriedade skuId no objeto [SubscribedSku](subscribedsku.md) relacionado. Somente leitura |
 |skuPartNumber|Cadeia de caracteres| Nome de exibição SKU exclusivo. Igual ao skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado; por exemplo: "AAD_Premium". Somente leitura |
 

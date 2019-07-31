@@ -4,12 +4,13 @@ description: Você pode obter uma visão de alto nível do tráfego de email em 
 localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: d3adb15bd6bb6c60b3957cd81b5d2f915ecfaa8c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 2540934b93a1047df5b19c4fe1b477ba30fd798c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333916"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972268"
 ---
 # <a name="email-activity-reports"></a>Relatórios de atividades do email
 

@@ -4,12 +4,13 @@ description: Marca de escopo de função
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a1a426265caaf2f05beb5678d49b9ae960d31c3
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 805f130945f4e8b966c35409f6e27fcf55e3f02f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35739264"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967592"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso roleScopeTag
 

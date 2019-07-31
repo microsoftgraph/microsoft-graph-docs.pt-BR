@@ -4,12 +4,13 @@ description: Tipo de agente de gerenciamento.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3b9fd469a787e0afdacb26dc5a07ee114d72bbe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: ae96113e687d406f5c0342b3b71fd63ea6de9918
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986120"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999749"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de enumeração managementAgentType
 

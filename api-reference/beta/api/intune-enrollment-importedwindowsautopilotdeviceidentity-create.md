@@ -4,12 +4,13 @@ description: Criar um novo objeto importedWindowsAutopilotDeviceIdentity.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74dd1111ffdbfa56eefbe5a565fd7169c10e3dd9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 125a36a7dd400ffcb57928b5744cf14f44d21d01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729961"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986775"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Criar importedWindowsAutopilotDeviceIdentity
 

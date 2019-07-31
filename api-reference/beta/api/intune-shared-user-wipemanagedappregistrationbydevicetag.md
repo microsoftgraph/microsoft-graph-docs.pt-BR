@@ -4,12 +4,13 @@ description: Emite uma operação de apagamento em um registro de aplicativo com
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 05935def6d23c18726622037b52e5586a06925f9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: df921fe953271e7a35f318f63434671562ae7338
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897860"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993498"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>Ação wipeManagedAppRegistrationByDeviceTag
 

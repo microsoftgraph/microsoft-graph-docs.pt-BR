@@ -4,12 +4,13 @@ description: Use esta API para criar um novo gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: dd95cd6cbf33379664a0a67d6e8f4d9dd2b18504
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c26efee25cf23843f8c31bd8365bfcbb673ded11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866169"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987205"
 ---
 # <a name="create-chart"></a>Create Chart
 

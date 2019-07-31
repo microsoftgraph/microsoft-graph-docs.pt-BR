@@ -4,12 +4,13 @@ description: Configuração da tela status do registro
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d22f7497fb79921bbbf34c6f3334ccc2ae4d7d53
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 80d869c3d80e7c164808147f732bf58bf5c1a15a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994899"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998846"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>tipo de recurso windowsEnrollmentStatusScreenSettings
 

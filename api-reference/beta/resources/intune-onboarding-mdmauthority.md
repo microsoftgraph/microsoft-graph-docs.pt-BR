@@ -4,12 +4,13 @@ description: Define autoridade de gerenciamento de dispositivo móvel.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: baf3f9b95d6b0a33d3b62671ed822119ce9abb2b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 605ed0e7697dc4503dd5f41cb80d74dd0be29da9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998027"
 ---
 # <a name="mdmauthority-enum-type"></a>tipo de enumeração mdmAuthority
 

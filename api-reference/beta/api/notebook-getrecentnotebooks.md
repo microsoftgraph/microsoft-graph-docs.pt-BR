@@ -4,12 +4,13 @@ description: Obtenha uma lista de instâncias recentNotebook que tenham sido ace
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 0ed8765dd5162d95932be6c4556b986579f9af1b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: cbec6a78934849b6c7cb7e30bfc8c4d094f6b224
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338226"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989060"
 ---
 # <a name="notebook-getrecentnotebooks"></a>notebook: getRecentNotebooks
 

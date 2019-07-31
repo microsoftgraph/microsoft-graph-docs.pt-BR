@@ -4,12 +4,13 @@ description: Criar um novo objeto windowsDeliveryOptimizationConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3fca045031823e8e8ea383c1018fa72240c0cc0
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 64c0ca78ad24c730d26a30bc104a27c254c58f5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715442"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982323"
 ---
 # <a name="create-windowsdeliveryoptimizationconfiguration"></a>Criar windowsDeliveryOptimizationConfiguration
 

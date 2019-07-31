@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso contentTypeOrder especifica a ordem na qual o Content Type será exibido na seleção da interface do usuário.
 ms.date: 09/13/2017
 title: ContentTypeOrder
 localization_priority: Normal
-ms.openlocfilehash: 32cca632933cf2b0fad1f8e9149973d95b4322d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 464ac5978f505e74ca99226080c35574917fd550
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341224"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973191"
 ---
 # <a name="contenttypeorder-resource-type"></a>Tipo de recurso ContentTypeOrder
 

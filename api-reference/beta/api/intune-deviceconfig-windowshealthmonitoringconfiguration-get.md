@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windowsHealthMonitor
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef91810243061628b6fe0bdba3d2d16c1fdd1cb6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b776ce3383545f25458419c42a77e2b4fead0542
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961935"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984948"
 ---
 # <a name="get-windowshealthmonitoringconfiguration"></a>Obter windowsHealthMonitoringConfiguration
 

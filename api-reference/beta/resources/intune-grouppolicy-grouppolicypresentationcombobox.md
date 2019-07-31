@@ -4,12 +4,13 @@ description: Representa um elemento comboBox do ADMX e um elemento de texto do A
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dce61b2617917847d5158fd16dac63b879fb03b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: af25adb116d08aa40a40f1cbb380decc9d69a3ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998636"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>tipo de recurso groupPolicyPresentationComboBox
 

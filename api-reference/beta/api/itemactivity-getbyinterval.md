@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: Obter itemActivityStats para as atividades que foram realizadas sob esse recurso dentro do intervalo de tempo especificado.
 ms.date: 10/06/2017
 title: Obter estatísticas de atividade de item por intervalo
 localization_priority: Normal
-ms.openlocfilehash: 3a05488aefbb01ab147dfff1da0e8d432259b248
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 6d1f7a3b4e6a326f107a0d0ff33db59ed73f2794
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333544"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979103"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
 

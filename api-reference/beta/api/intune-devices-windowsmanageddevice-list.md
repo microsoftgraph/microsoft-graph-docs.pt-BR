@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos windowsManagedDevice.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02413bd41d362a9b3868c50a845998c4e7b64795
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 88c6f305b9293ebc52af243fe82790ae3ec6ceae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957833"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985732"
 ---
 # <a name="list-windowsmanageddevices"></a>Listar windowsManagedDevices
 

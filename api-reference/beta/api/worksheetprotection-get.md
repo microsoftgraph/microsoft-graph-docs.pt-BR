@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos do objeto workbookwor
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a46abe0016c5cc16b6348466ba83bec3ca382410
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ff9844167a027a8ecf70335612693cf398bcf844
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866036"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995780"
 ---
 # <a name="get-workbookworksheetprotection"></a>Obter workbookWorksheetProtection
 
