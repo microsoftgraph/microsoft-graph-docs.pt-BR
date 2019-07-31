@@ -4,28 +4,29 @@ description: Exclua um evento.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 63793895f886a376be58ec0ba554c1cb4f23bbb1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 117a99c7e6b4c2d6d576ebb279bbd7ed7fec9128
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859693"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954568"
 ---
-# <a name="delete-event"></a><span data-ttu-id="6f189-103">Excluir evento</span><span class="sxs-lookup"><span data-stu-id="6f189-103">Delete event</span></span>
+# <a name="delete-event"></a><span data-ttu-id="d45bd-103">Excluir evento</span><span class="sxs-lookup"><span data-stu-id="d45bd-103">Delete event</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6f189-104">Exclua um evento.</span><span class="sxs-lookup"><span data-stu-id="6f189-104">Delete event.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6f189-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="6f189-105">Permissions</span></span>
-<span data-ttu-id="6f189-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6f189-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d45bd-104">Exclua um evento.</span><span class="sxs-lookup"><span data-stu-id="d45bd-104">Delete event.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d45bd-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d45bd-105">Permissions</span></span>
+<span data-ttu-id="d45bd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d45bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6f189-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6f189-108">Permission type</span></span>      | <span data-ttu-id="6f189-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6f189-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d45bd-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d45bd-108">Permission type</span></span>      | <span data-ttu-id="d45bd-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d45bd-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6f189-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6f189-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6f189-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6f189-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="6f189-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6f189-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6f189-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6f189-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="6f189-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6f189-114">Application</span></span> | <span data-ttu-id="6f189-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6f189-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="d45bd-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d45bd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d45bd-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d45bd-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="d45bd-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d45bd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d45bd-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d45bd-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="d45bd-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d45bd-114">Application</span></span> | <span data-ttu-id="d45bd-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d45bd-115">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6f189-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6f189-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d45bd-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d45bd-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}
@@ -45,23 +46,23 @@ DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="6f189-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6f189-117">Request headers</span></span>
-| <span data-ttu-id="6f189-118">Nome</span><span class="sxs-lookup"><span data-stu-id="6f189-118">Name</span></span>       | <span data-ttu-id="6f189-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="6f189-119">Type</span></span> | <span data-ttu-id="6f189-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f189-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d45bd-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d45bd-117">Request headers</span></span>
+| <span data-ttu-id="d45bd-118">Nome</span><span class="sxs-lookup"><span data-stu-id="d45bd-118">Name</span></span>       | <span data-ttu-id="d45bd-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="d45bd-119">Type</span></span> | <span data-ttu-id="d45bd-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="d45bd-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="6f189-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="6f189-121">Authorization</span></span>  | <span data-ttu-id="6f189-122">string</span><span class="sxs-lookup"><span data-stu-id="6f189-122">string</span></span>  | <span data-ttu-id="6f189-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6f189-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d45bd-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="d45bd-121">Authorization</span></span>  | <span data-ttu-id="d45bd-122">string</span><span class="sxs-lookup"><span data-stu-id="d45bd-122">string</span></span>  | <span data-ttu-id="d45bd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d45bd-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6f189-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6f189-125">Request body</span></span>
-<span data-ttu-id="6f189-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6f189-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d45bd-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d45bd-125">Request body</span></span>
+<span data-ttu-id="d45bd-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d45bd-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6f189-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f189-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d45bd-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="d45bd-127">Response</span></span>
 
-<span data-ttu-id="6f189-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6f189-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d45bd-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d45bd-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6f189-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6f189-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6f189-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6f189-131">Request</span></span>
-<span data-ttu-id="6f189-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6f189-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d45bd-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d45bd-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d45bd-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d45bd-131">Request</span></span>
+<span data-ttu-id="d45bd-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d45bd-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6f189-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="6f189-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d45bd-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="d45bd-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_event"
@@ -69,26 +70,26 @@ DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```http
 DELETE https://graph.microsoft.com/beta/me/events/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6f189-134">C#</span><span class="sxs-lookup"><span data-stu-id="6f189-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d45bd-134">C#</span><span class="sxs-lookup"><span data-stu-id="d45bd-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6f189-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="6f189-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d45bd-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="d45bd-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6f189-136">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6f189-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d45bd-136">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="d45bd-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="6f189-137">Java</span><span class="sxs-lookup"><span data-stu-id="6f189-137">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="d45bd-137">Java</span><span class="sxs-lookup"><span data-stu-id="d45bd-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="6f189-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f189-138">Response</span></span>
-<span data-ttu-id="6f189-139">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6f189-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d45bd-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="d45bd-138">Response</span></span>
+<span data-ttu-id="d45bd-139">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d45bd-139">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

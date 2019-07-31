@@ -4,26 +4,27 @@ description: Tipo de base de ação de prompt.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f3d60faa28db499c7dbcd8d4391bebc8578e3a69
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 297a5017cbc7cb607ce3ef014d7da296b73ecb10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344032"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965569"
 ---
-# <a name="prompt-resource-type"></a><span data-ttu-id="22d10-103">tipo de recurso prompt</span><span class="sxs-lookup"><span data-stu-id="22d10-103">prompt resource type</span></span>
+# <a name="prompt-resource-type"></a><span data-ttu-id="bd5f7-103">tipo de recurso prompt</span><span class="sxs-lookup"><span data-stu-id="bd5f7-103">prompt resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="22d10-104">Tipo de base de ação de prompt.</span><span class="sxs-lookup"><span data-stu-id="22d10-104">Prompt action base type.</span></span>
+<span data-ttu-id="bd5f7-104">Tipo de base de ação de prompt.</span><span class="sxs-lookup"><span data-stu-id="bd5f7-104">Prompt action base type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="22d10-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="22d10-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bd5f7-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bd5f7-105">Properties</span></span>
 
-<span data-ttu-id="22d10-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="22d10-106">None</span></span>
+<span data-ttu-id="bd5f7-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="bd5f7-106">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="22d10-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="22d10-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bd5f7-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bd5f7-107">JSON representation</span></span>
 
-<span data-ttu-id="22d10-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="22d10-108">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bd5f7-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bd5f7-108">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
