@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: bef5008bbacb1729f48758b228e55a3f6adc2af0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7cfc723a4370c2b30440dcd4e33b50ed066ac89b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507298"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006589"
 ---
 # <a name="journal-resource-type"></a>tipo de recurso diário
 Representa um diário no Dynamics 365 Business central.
@@ -23,13 +24,13 @@ Representa um diário no Dynamics 365 Business central.
 |[Obter diário](../api/dynamics-journal-get.md)      |diário    |Obtém um diário.   |
 |[Diário de lançamentos](../api/dynamics-create-journal.md)  |diário    |Cria um diário.|
 |[Diário de patches](../api/dynamics-journal-update.md) |diário    |Atualiza um diário.|
-|[Excluir diário](../api/dynamics-journal-delete.md)|Nenhuma       |Exclui um diário.|
+|[Excluir diário](../api/dynamics-journal-delete.md)|none       |Exclui um diário.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo                  |Descrição                                           |
 |:-------------------|:----------------------|:-----------------------------------------------------|
 |id                  |GUID                   |A ID exclusiva do diário. Não editável.           |
-|code                |Cadeia de caracteres, tamanho máximo 10| O código do diário.                             |
+|código                |Cadeia de caracteres, tamanho máximo 10| O código do diário.                             |
 |displayName         |Cadeia de caracteres, tamanho máximo 50| O nome de exibição do diário.                     |
 |lastModifiedDateTime|DateTime               |O último DateTime que o diário foi modificado. Somente Leitura.|
 

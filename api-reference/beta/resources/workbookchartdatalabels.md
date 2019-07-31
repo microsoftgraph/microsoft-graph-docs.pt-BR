@@ -4,12 +4,13 @@ description: Representa uma coleção de todos os rótulos de dados em um ponto 
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9c3521274b93d33780539c04643c5c0225fdecef
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c5e469f5d95065fa3b5a161d510ca023e17f807a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348456"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007288"
 ---
 # <a name="workbookchartdatalabels-resource-type"></a>tipo de recurso workbookChartDataLabels
 
@@ -37,7 +38,7 @@ Representa uma coleção de todos os rótulos de dados em um ponto do gráfico.
 |showSeriesName|booliano|Valor booliano que determina se o nome da série do rótulo de dados fica visível ou não.|
 |showValue|booliano|Valor booliano que determina se o valor do rótulo de dados fica visível ou não.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[workbookChartDataLabelFormat](workbookchartdatalabelformat.md)|Representa o formato dos rótulos de dados do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|

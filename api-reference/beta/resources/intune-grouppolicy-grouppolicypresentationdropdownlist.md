@@ -4,12 +4,13 @@ description: Representa um elemento ADMX dropdownList e um elemento enum do ADMX
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af9746ecba0b92bd68d7f0bd4765f4fe022864ba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a12a210156727ed7dd00bd79e7c2f711aa518a8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982921"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010949"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>tipo de recurso groupPolicyPresentationDropdownList
 

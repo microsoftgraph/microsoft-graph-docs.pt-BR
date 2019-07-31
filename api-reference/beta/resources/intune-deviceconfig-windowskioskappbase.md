@@ -4,12 +4,13 @@ description: A classe base de um tipo de aplicativo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4dc6c54c9b788ae3456017fc0be63c636d980af8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 58e1339d25f615946add4ff4b9a4fe25d72dd5e4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993961"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011173"
 ---
 # <a name="windowskioskappbase-resource-type"></a>tipo de recurso windowsKioskAppBase
 

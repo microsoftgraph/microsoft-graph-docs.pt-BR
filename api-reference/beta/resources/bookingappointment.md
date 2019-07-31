@@ -4,12 +4,13 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 8b1d481d43374d8611f221fb5c3047cdc9cd9148
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1956ddac829a2921aba6ebf438ae4815ca56b8d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328216"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013126"
 ---
 # <a name="bookingappointment-resource-type"></a>tipo de recurso bookingAppointment
 
@@ -25,7 +26,7 @@ Representa um compromisso de cliente para um [bookingService](bookingservice.md)
 |[Listar compromissos](../api/bookingbusiness-list-appointments.md) |  coleção [bookingAppointment](bookingappointment.md) | Obtenha uma lista de objetos **bookingAppointment** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 |[Criar bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Crie um novo **bookingAppointment** para o [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 |[Obter bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Leia as propriedades e os relacionamentos do objeto **bookingAppointment** .|
-|[Atualizar](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |Atualizar um objeto **bookingAppointment** . |
+|[Atualização](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |Atualizar um objeto **bookingAppointment** . |
 |[Delete](../api/bookingappointment-delete.md) | Nenhum |Excluir um objeto **bookingAppointment** . |
 |[Cancel](../api/bookingappointment-cancel.md)|Nenhum| Cancelar um objeto **bookingAppointment** .|
 
@@ -46,7 +47,7 @@ Representa um compromisso de cliente para um [bookingService](bookingservice.md)
 |faturaid|String|A ID da fatura.|
 |invoiceStatus|string| O status da fatura. Os possíveis valores são: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|String|A URL da fatura em Microsoft bookings.|
-|optOutOfCustomerEmail|Boolean|True indica que o [bookingCustomer](bookingcustomer.md) para este compromisso não deseja receber uma confirmação desse compromisso.|
+|optOutOfCustomerEmail|Booliano|True indica que o [bookingCustomer](bookingcustomer.md) para este compromisso não deseja receber uma confirmação desse compromisso.|
 |Buffer|Duração|A quantidade de tempo para reservar depois que o compromisso termina, para limpeza, como um exemplo. O valor é expresso no formato [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
 |antes do buffer|Duração|A quantidade de tempo para reservar antes de o compromisso começar, para preparação, como um exemplo. O valor é expresso no formato [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 |descontos|Duplo|O preço regular de um compromisso para o [bookingService](bookingservice.md)especificado.|
@@ -57,7 +58,7 @@ Representa um compromisso de cliente para um [bookingService](bookingservice.md)
 |serviceLocation|[location](location.md)|O local onde o serviço é entregue.|
 |serviceName|String|O nome do **bookingService** associado a este compromisso.<br>Essa propriedade é opcional ao criar um novo compromisso. Se não for especificado, será calculado a partir do serviço associado ao compromisso pela propriedade **ServiceId** .|
 |Notas|String|Observações de um [bookingStaffMember](bookingstaffmember.md). O valor dessa propriedade está disponível somente ao se ler este **bookingAppointment** por sua ID.|
-|staffMemberIds|Coleção String|A ID de cada [bookingStaffMember](bookingstaffmember.md) que está agendado neste compromisso.|
+|staffMemberIds|Coleção de cadeias de caracteres|A ID de cada [bookingStaffMember](bookingstaffmember.md) que está agendado neste compromisso.|
 |iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário de início do compromisso.|
 
 ## <a name="relationships"></a>Relações

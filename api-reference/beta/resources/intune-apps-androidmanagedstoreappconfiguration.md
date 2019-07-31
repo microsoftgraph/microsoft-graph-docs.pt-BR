@@ -4,12 +4,13 @@ description: Contém propriedades, propriedades herdadas e ações para configur
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64494a11db958ba815a2d277a47355d0c551a502
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 356269f8b750fcf8e61cec00a93c6a006bff9f17
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991335"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006105"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>tipo de recurso androidManagedStoreAppConfiguration
 

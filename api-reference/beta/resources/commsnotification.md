@@ -4,12 +4,13 @@ description: Tipo de base de notificação de comunicação publicado por servid
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 20b99493821cfb29898ff0c9517cceecba1d389c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 98b261ab9a640ea23dfb942e8c2bae17b7d92989
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341372"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012937"
 ---
 # <a name="commsnotification-resource-type"></a>tipo de recurso commsNotification
 

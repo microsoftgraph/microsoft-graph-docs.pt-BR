@@ -4,12 +4,13 @@ description: O tipo de aplicativo Windows quiosque.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d33316d356d23f3d77a6daae395ee53df7c9d06
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f65134a08781e27ba75e4f3345caa017a9d30c8d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995417"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011159"
 ---
 # <a name="windowskioskapptype-enum-type"></a>tipo de enumeração windowsKioskAppType
 

@@ -4,12 +4,13 @@ description: Contém propriedades para o resumo de instalação de um aplicativo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1e1d1a815ba1d4c688819a8d94c8acdd5beffca
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: e836ba4458c72b9ab017fe499634caec79cce551
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991825"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012447"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>tipo de recurso mobileAppInstallSummary
 

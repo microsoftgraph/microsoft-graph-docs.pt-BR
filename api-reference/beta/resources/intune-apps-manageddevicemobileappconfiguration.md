@@ -4,12 +4,13 @@ description: Uma classe abstrata para a configuração do Aplicativo móvel para
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5079d81a6d8de24feaf701a9329b89d394e9207
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: de75ee42f0e87c6d150d86bccfccb278ebcd29b2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978777"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005342"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfiguration
 

@@ -2,12 +2,15 @@
 title: tipo de recurso workbookFilter
 description: Gerencia a filtragem da coluna de uma tabela.
 localization_priority: Normal
-ms.openlocfilehash: 79ded0bfca0ace3b2d7c1bcdb4cd8dd2696802a4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: f3622a2efd952907214add4343bb5958adebe606
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348522"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007120"
 ---
 # <a name="workbookfilter-resource-type"></a>tipo de recurso workbookFilter
 
@@ -26,7 +29,7 @@ Gerencia a filtragem da coluna de uma tabela.
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |criteria|[workbookFilterCriteria](workbookfiltercriteria.md)|O filtro aplicado no momento à coluna fornecida. Somente leitura.|

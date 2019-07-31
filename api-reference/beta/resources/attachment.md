@@ -1,15 +1,18 @@
 ---
-title: tipo de recurso de anexo
-description: Você pode adicionar conteúdo relacionado a um evento,
+title: tipo de recurso anexo
+description: Você pode adicionar conteúdo relacionado a um evento
 localization_priority: Normal
-ms.openlocfilehash: 5cd02b665e9491ab4cf4b6046571273d88fee7e9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6ee3ba645f71b100b78b01fa1821bf91ca21cb26
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339017"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013259"
 ---
-# <a name="attachment-resource-type"></a>tipo de recurso de anexo
+# <a name="attachment-resource-type"></a>tipo de recurso anexo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,16 +30,16 @@ Os métodos a seguir se aplicam a qualquer um dos tipos de anexo derivados (**fi
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter anexo](../api/attachment-get.md) | [anexo](attachment.md) |Leia as propriedades e as relações de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.|
-|[Adicionar anexo a um event](../api/event-post-attachments.md) | [anexo](attachment.md) |Adicione um arquivo, item ou anexo de link a um evento.|
-|[Adicionar um anexo a uma mensagem](../api/message-post-attachments.md) | [anexo](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem.|
-|[Adicionar anexo a uma tarefa do Outlook](../api/outlooktask-post-attachments.md) | [anexo](attachment.md) |Adicionar um anexo de arquivo, item ou link a uma tarefa do Outlook.|
+|[Obter anexo](../api/attachment-get.md) | [attachment](attachment.md) |Leia as propriedades e as relações de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.|
+|[Adicionar anexo a um event](../api/event-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a um evento.|
+|[Adicionar um anexo a uma mensagem](../api/message-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem.|
+|[Adicionar anexo a uma tarefa do Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Adicionar um anexo de arquivo, item ou link a uma tarefa do Outlook.|
 |[Adicionar anexo a uma postagem](../api/post-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma postagem.|
-|[Listar anexos de um evento](../api/event-list-attachments.md) | Coleção [anexo](attachment.md) | Obtenha uma lista de anexos de um evento. |
-|[Listar anexos de uma mensagem](../api/message-list-attachments.md) | Coleção [anexo](attachment.md) | Obtenha uma lista de anexos de uma mensagem. |
-|[Listar anexos de uma tarefa do Outlook](../api/outlooktask-list-attachments.md) | Coleção [anexo](attachment.md) | Obter uma lista de anexos para uma tarefa do Outlook. |
+|[Listar anexos de um evento](../api/event-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de um evento. |
+|[Listar anexos de uma mensagem](../api/message-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma mensagem. |
+|[Listar anexos de uma tarefa do Outlook](../api/outlooktask-list-attachments.md) | Coleção [attachment](attachment.md) | Obter uma lista de anexos para uma tarefa do Outlook. |
 |[Listar anexos de uma postagem](../api/post-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma postagem. |
-|[Delete](../api/attachment-delete.md) | Nenhuma |Excluir um anexo de um evento, de uma mensagem, de uma tarefa do Outlook ou de uma postagem. |
+|[Delete](../api/attachment-delete.md) | None |Excluir um anexo de um evento, de uma mensagem, de uma tarefa do Outlook ou de uma postagem. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -48,7 +51,7 @@ A seguir estão as propriedades de base de qualquer recurso de anexo. Consulte o
 |id|String| Somente leitura.|
 |isInline|Booliano|`true` se o anexo for embutido; caso contrário, `false`.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|name|Cadeia de caracteres|O nome de exibição do anexo. Não precisa ser o nome real do arquivo.|
+|nome|Cadeia de caracteres|O nome de exibição do anexo. Não precisa ser o nome real do arquivo.|
 |size|Int32|O comprimento do anexo em bytes.|
 
 ## <a name="relationships"></a>Relações

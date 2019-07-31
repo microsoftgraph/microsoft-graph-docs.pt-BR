@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 2f7ef9611fc85c13ac24c79b292e06a6bdc5d587
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: e8d25294b219815c8aa569c7a8c7fab7ec68830c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543032"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006609"
 ---
 # <a name="shipmentmethods-resource-type"></a>tipo de recurso shipmentMethods
 Representa um método de entrega no Dynamics 365 Business central, como no-break, FEDEX e DHL.
@@ -23,7 +24,7 @@ Representa um método de entrega no Dynamics 365 Business central, como no-break
 |[Obter shipmentMethods](../api/dynamics-shipmentmethods-get.md)|shipmentMethods|Obtém um método de remessa.|
 |[Postar shipmentMethods](../api/dynamics-create-shipmentmethods.md)|shipmentMethods|Cria um método de remessa.|
 |[Patch shipmentMethods](../api/dynamics-shipmentmethods-update.md)|shipmentMethods|Atualiza um método de remessa.|
-|[Excluir shipmentMethods](../api/dynamics-shipmentmethods-delete.md)|Nenhuma|Exclui um método de remessa.|
+|[Excluir shipmentMethods](../api/dynamics-shipmentmethods-delete.md)|none|Exclui um método de remessa.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

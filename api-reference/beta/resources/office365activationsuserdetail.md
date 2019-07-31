@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a3561768e36fc63c779e19a9aa05863dd9af9315
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2ced56fdc8f2ed877368163e36588e3d4983d95e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32505491"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009528"
 ---
 # <a name="office365activationsuserdetail-resource-type"></a>tipo de recurso office365ActivationsUserDetail
 

@@ -4,12 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8cdd2fe1a212bb1d36846b80fc1b558c576deb47
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5bd7443e775a8a9de0dbbc27cf8843331f8f8cb7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007622"
 ---
 # <a name="teamsdeviceusageuserdetail-resource-type"></a>tipo de recurso teamsDeviceUsageUserDetail
 

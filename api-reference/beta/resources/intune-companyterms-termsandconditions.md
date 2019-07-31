@@ -4,12 +4,13 @@ description: Uma entidade termsAndConditions representa os metadados e conteúdo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 756b66776599b07ca95d54f75ca549a5319ef581
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: e6c34f26486e16e695466a476151f917e1940e4e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989466"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004803"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 

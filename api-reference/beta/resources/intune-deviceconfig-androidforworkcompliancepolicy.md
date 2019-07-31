@@ -4,12 +4,13 @@ description: Essa classe contém configurações de conformidade para Android pa
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c7446e320662f3cdfc58c32b8eb22c90c00ca8b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 2ed8553d8d7291c767598b9de3e588cb2be318d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988227"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011824"
 ---
 # <a name="androidforworkcompliancepolicy-resource-type"></a>tipo de recurso androidForWorkCompliancePolicy
 

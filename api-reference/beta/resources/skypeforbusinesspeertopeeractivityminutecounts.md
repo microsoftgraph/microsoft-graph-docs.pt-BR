@@ -2,12 +2,15 @@
 title: tipo de recurso skypeForBusinessPeerToPeerActivityMinuteCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-ms.openlocfilehash: 695c2fc57ab9d105b2576a9228ccc58d74b0094d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2fcea49c157a04dd48eda0f1645eab08540a917e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568149"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008058"
 ---
 # <a name="skypeforbusinesspeertopeeractivityminutecounts-resource-type"></a>tipo de recurso skypeForBusinessPeerToPeerActivityMinuteCounts
 

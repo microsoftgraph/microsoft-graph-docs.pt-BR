@@ -2,12 +2,15 @@
 title: tipo de recurso impossibleTravelRiskEvent
 description: Um evento de risco detectado pela proteção de identidade do Azure Active Directory onde dois logons de conta ocorrem de locais atypical para o usuário e não seria possível viajar entre os locais na duração entre os logons. complete information about eventos de risco podem ser encontrados na documentação de proteção de identidade do Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: d086a6fc127649da10184ae0396a2c58ee82964e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2b66755924022b4fa30637cc8e97c4f944ad2d79
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005769"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>tipo de recurso impossibleTravelRiskEvent
 
@@ -28,7 +31,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
 |deviceInformation|string| Informações sobre o dispositivo|
-|id|string| Somente leitura|
+|id|cadeia de caracteres| Somente leitura|
 |ipAddress|string| O endereço IP da segunda entrada|
 |isAtypicalLocation|booliano| Se um dos locais for atypical para o usuário|
 |location|cadeia de caracteres| O local anexado ao endereço IP da segunda entrada|
@@ -47,7 +50,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| Somente leitura. Anulável.|
+|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -4,12 +4,13 @@ description: Range representa um conjunto de uma ou mais células contíguas, co
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: bf3a142452e6582808731c979e060540fb456760
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: baf4dc86e4a13436e1dc96edc4f1a84967a88e38
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007078"
 ---
 # <a name="workbookrange-resource-type"></a>tipo de recurso workbookRange
 
@@ -41,7 +42,7 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 |[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas abaixo de um determinado intervalo.|
 |[Usedrange](../api/range-usedrange.md)|[workbookRange](workbookrange.md)|Retorna o intervalo usado do objeto de intervalo determinado.|
 |[Clear](../api/range-clear.md)|Nenhum|Limpe valores de intervalo, formatação, preenchimento, bordas, etc.|
-|[Delete](../api/range-delete.md)|Nenhuma|Exclui as células associadas ao intervalo.|
+|[Delete](../api/range-delete.md)|None|Exclui as células associadas ao intervalo.|
 |[Insert](../api/range-insert.md)|[workbookRange](workbookrange.md)|Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.|
 |[Merge](../api/range-merge.md)|Nenhum|Mescla as células do intervalo em uma região da planilha.|
 |[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.|

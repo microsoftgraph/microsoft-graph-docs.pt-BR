@@ -4,12 +4,13 @@ description: Contém propriedades do resumo da instalação de um livro para um 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 574ce848e827093f6693a1a7f6a4ebe860833495
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 128ce50812912941ccad183fd09810ec21bba021
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964357"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012055"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Tipo de recurso eBookInstallSummary
 

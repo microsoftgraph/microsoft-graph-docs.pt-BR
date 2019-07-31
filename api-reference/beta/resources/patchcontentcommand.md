@@ -2,12 +2,15 @@
 title: tipo de recurso patchContentCommand
 description: As alterações a serem feitas em uma página do OneNote em uma solicitação de PATCH.
 localization_priority: Normal
-ms.openlocfilehash: 80fa4308fdcf5dc05287051f6ae586b228a02073
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2408d08434b97f865ae19cbc70fd1dc16ff6868b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344972"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009206"
 ---
 # <a name="patchcontentcommand-resource-type"></a>tipo de recurso patchContentCommand
 

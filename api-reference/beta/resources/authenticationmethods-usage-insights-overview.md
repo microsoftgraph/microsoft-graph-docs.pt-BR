@@ -4,12 +4,13 @@ description: O relatório de uso dos métodos de autenticação ajuda uma organi
 author: davidmu1
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a819276b19f2c7fdfe6ed22bd3dd07023ea08992
-ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
+doc_type: conceptualPageType
+ms.openlocfilehash: 4f8886333d5067abc42a583084726c58ec67a659
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645225"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013196"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Trabalhar com a API de relatório de uso dos métodos de autenticação
 

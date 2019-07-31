@@ -4,12 +4,13 @@ description: Perfil de certificado do SCEP do Android
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edde521cf7c458027ba1cadc0dfb5d3bb6616ce3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9a418be1bba194b4633f3b87a167f94fd5d20cc0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988955"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004621"
 ---
 # <a name="androidscepcertificateprofile-resource-type"></a>tipo de recurso androidScepCertificateProfile
 

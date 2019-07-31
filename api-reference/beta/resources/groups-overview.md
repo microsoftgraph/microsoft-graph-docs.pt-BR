@@ -4,12 +4,13 @@ description: Os grupos são conjuntos de usuários e de outras entidades de segu
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: fe906f193f7bcac28496c41dae60af049f75144d
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+doc_type: conceptualPageType
+ms.openlocfilehash: ce5eafe39f191132b60e46cb7a589c872bff884b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840737"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005895"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 

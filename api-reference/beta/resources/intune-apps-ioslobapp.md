@@ -4,12 +4,13 @@ description: Contém propriedades e propriedades herdadas para aplicativos de li
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 67302430097b1c5deb2c26e5e895efaac95bb4a0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: e9f525efacf08e62d30e2a7b9d64ad2cea808f14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991160"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005979"
 ---
 # <a name="ioslobapp-resource-type"></a>Tipo de recurso iosLobApp
 

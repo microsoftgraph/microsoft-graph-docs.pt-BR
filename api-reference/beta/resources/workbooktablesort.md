@@ -4,12 +4,13 @@ description: Gerencia operações de classificação em objetos Table.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6ba1e7cdcf48a3ac5cf8262be2174481016aad2e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ea0332f1ad00029cf511f2bc55aca80836e5ef2c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348480"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007029"
 ---
 # <a name="workbooktablesort-resource-type"></a>tipo de recurso workbookTableSort
 
@@ -33,7 +34,7 @@ Gerencia operações de classificação em objetos Table.
 |matchCase|booliano|Indica se o uso de maiúsculas ou minúsculas afetou a última classificação da tabela. Somente leitura.|
 |method|string|Indica o último método de ordenação de caracteres chineses usado para classificar a tabela. Os valores possíveis são: `PinYin` e `StrokeCount`. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |campos|[workbookSortField](workbooksortfield.md)|Representa as condições atuais usadas para a última classificação da tabela. Somente leitura.|

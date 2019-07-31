@@ -4,12 +4,13 @@ description: Este tópico fornece descrições dos métodos declarados, das prop
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ab71ef9b83bf7877c7d709ef3bed17d256ef9fc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 6993cd29b7b9f0d31f6a5c78bddc09c7f1760e3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989459"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004334"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>iosCustomConfiguration resource type
 

@@ -4,12 +4,13 @@ description: As APIs de educação no Microsoft Graph aprimoram os recursos e da
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: b5dd443b9ccda48c586bc44f6f4e35523a5e000f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 935a34a4b3bf8ed63fc33893ade19dbe16fdf60c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340662"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006490"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
@@ -114,8 +115,8 @@ As APIs de gerenciamento de sincronização de dados da escola oferecem suporte 
 - [Obter perfil de sincronização](../api/educationsynchronizationprofile-get.md)
 - [Criar perfil de sincronização](../api/educationsynchronizationprofile-post.md)
 - [Excluir perfil de sincronização](../api/educationsynchronizationprofile-delete.md)
-- [PaUsar uma sincronização contínua](../api/educationsynchronizationprofile-pause.md)
-- [ReTomar uma sincronização pausada](../api/educationsynchronizationprofile-resume.md)
+- [Pausar uma sincronização contínua](../api/educationsynchronizationprofile-pause.md)
+- [Retomar uma sincronização pausada](../api/educationsynchronizationprofile-resume.md)
 - [Redefinir uma sincronização](../api/educationsynchronizationprofile-reset.md)
 - [Iniciar a sincronização de arquivos carregados](../api/educationsynchronizationprofile-start.md) 
 - [Obter uma URL de upload](../api/educationsynchronizationprofile-uploadurl.md)

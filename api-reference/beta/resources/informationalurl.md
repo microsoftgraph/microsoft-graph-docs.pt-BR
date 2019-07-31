@@ -2,12 +2,15 @@
 title: tipo de recurso informationalUrl
 description: Informações de perfil básicas do aplicativo.
 localization_priority: Normal
-ms.openlocfilehash: c858bb55db083510661edfc36f32b9a511c5e6f3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9e2eaad003f4669623a4db4af1b364e05198515d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339986"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006252"
 ---
 # <a name="informationalurl-resource-type"></a>tipo de recurso informationalUrl
 

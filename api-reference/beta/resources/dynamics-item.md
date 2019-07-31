@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 42ec7720e2e858f319beab8576fbe57542dd470c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 438fa0035b2c84b6fe702e3b1765e3d8b5adaf9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507305"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006623"
 ---
 # <a name="items-resource-type"></a>tipo de recurso itens
 Representa um item no Dynamics 365 Business central.
@@ -23,7 +24,7 @@ Representa um item no Dynamics 365 Business central.
 |[Obter itens](../api/dynamics-item-get.md)      |items     |Obtém um objeto item.   |
 |[Itens post](../api/dynamics-create-item.md)  |items     |Cria um objeto item.|
 |[Item de patch](../api/dynamics-item-update.md)  |items     |Atualiza um objeto item.|
-|[Excluir itens](../api/dynamics-item-delete.md)|Nenhuma      |Exclui um objeto item.|
+|[Excluir itens](../api/dynamics-item-delete.md)|none      |Exclui um objeto item.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo |Descrição                                          |
@@ -36,7 +37,7 @@ Representa um item no Dynamics 365 Business central.
 |baseUnitOfMeasureId |GUID    |Especifica a ID da unidade de medida.             |
 |baseUnitOfMeasure   |[Extra. UnitOfMeasure](../resources/dynamics-complextypes.md)|Especifica a unidade na qual o item é mantido no estoque.|
 |GTIN                |numéricos |Este é o número do item comercial global.                |
-|objectCategoryid      |GUID |Especifica a categoria à qual o item pertence. As categorias de item também contêm qualquer atributo de item atribuído.|
+|objectcategoryid      |GUID |Especifica a categoria à qual o item pertence. As categorias de item também contêm qualquer atributo de item atribuído.|
 |inventory           |dígitos |Especifica quantas unidades, como peças, caixas ou latas do item estão no estoque. Somente Leitura.|
 |PreçoUnitário           |dígitos |Especifica o preço de uma unidade do item na moeda especificada.|
 |priceIncludesTax    |booliano |Especifica que o PreçoUnitário inclui o imposto. Defina como **true**, se PreçoUnitário incluir imposto.|

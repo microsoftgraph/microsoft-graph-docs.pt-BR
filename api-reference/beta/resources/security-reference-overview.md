@@ -4,12 +4,13 @@ description: A sofisticação de ameaças à segurança continua a ser escalonad
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 853f09ca30378c4fa7e8132f495d789ec142f13c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 71ff9c4eb4e22b20e9c4d9b9ebb7b78ccb6f18f0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343385"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008520"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Usar a API do Microsoft Graph para detecção e proteção contra ameaças de segurança (visualização)
 

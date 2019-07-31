@@ -4,12 +4,13 @@ description: Entidade que representa uma conexão a um ambiente do Exchange.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5119ab9ab7be6a8f76fe94b80738f52b160ab3b9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d7c45d1e39fd03d7971499e7bccd4ff6050563b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993057"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010781"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Tipo de recurso deviceManagementExchangeConnector
 

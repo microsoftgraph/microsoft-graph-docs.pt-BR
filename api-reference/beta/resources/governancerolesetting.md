@@ -2,12 +2,15 @@
 title: tipo de recurso governanceRoleSetting
 description: " regra e assim por diante."
 localization_priority: Normal
-ms.openlocfilehash: 09e8cb65f8318294d483a2ad66a7119d7b48822a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 1bd1821bbb3336386b54b62ebe7b4787c85d1ebf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006420"
 ---
 # <a name="governancerolesetting-resource-type"></a>tipo de recurso governanceRoleSetting
 
@@ -21,7 +24,7 @@ Representa um conjunto de configurações em cada definição de função que pr
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | coleção [governanceRoleSetting](../resources/governancerolesetting.md)|Lista uma coleção de configurações de função em um recurso.|
 |[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Leia as propriedades e as relações de uma configuração de função.|
-|[Atualizar](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Atualize um objeto de configuração de função. |
+|[Atualização](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Atualize um objeto de configuração de função. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade               |Tipo                                      |Descrição|

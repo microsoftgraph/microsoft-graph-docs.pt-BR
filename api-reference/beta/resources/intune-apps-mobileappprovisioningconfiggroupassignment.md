@@ -4,12 +4,13 @@ description: Contém as propriedades usadas para atribuir uma configuração de 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3883c8e088a57a0709f47deea1c3210049dab301
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3264cd2fc67174d5252529976835225559601d01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991832"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012433"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>tipo de recurso mobileAppProvisioningConfigGroupAssignment
 

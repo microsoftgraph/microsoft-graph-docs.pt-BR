@@ -4,12 +4,13 @@ description: Representa um convite usado para adicionar usuários externos a uma
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bb0979954421a9b0fe1d5b119e7f060843380a06
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+doc_type: resourcePageType
+ms.openlocfilehash: 2037c747df42177e4735b1aba1d37605d11339d8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914662"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010130"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 

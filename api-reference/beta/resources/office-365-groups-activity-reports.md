@@ -4,12 +4,13 @@ description: Você pode obter informações sobre a atividade dos grupos do Offi
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a46e1823acd63616f10ce2569a72a0099e390f93
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 49ebf19b1c8cc00f6edfc62b1056412c45bbe2e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342006"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009542"
 ---
 # <a name="office-365-groups-activity-reports"></a>Relatórios de atividades dos Grupos do Office 365
 

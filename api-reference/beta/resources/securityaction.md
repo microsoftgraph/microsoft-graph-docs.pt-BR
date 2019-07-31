@@ -4,29 +4,30 @@ description: Executar uma ação imediata proteger contra ameaças usando a enti
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 5aa99119f23baa4cd9450d48ee4955d7ce91f60d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d1f8603659d665291576ce804a0bd80c75a853df
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343364"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008513"
 ---
 # <a name="securityaction-resource-type"></a>tipo de recurso SecurityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Executar uma ação imediata proteger contra ameaças usando a entidade securityActionde Segurança do Microsoft Graph. Quando um analista de segurança descobre um indicador novo, como um arquivo mal-intencionado, URL, domínio ou endereço IP, a proteção pode ser habilitada instantaneamente em suas soluções de segurança da Microsoft. Usar uma ação específica do provedor, ver todas as ações executadas e cancelar uma ação, se necessário. Experimente ações de segurança com o [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para bloquear atividades mal-intencionadas em seus pontos de extremidade do Windows usando Propriedades vistas em alertas ou identificadas durante investigações.
+Executar uma ação imediata proteger contra ameaças usando a entidade securityActionde Segurança do Microsoft Graph. Quando um analista de segurança descobre um indicador novo, como um arquivo mal-intencionado, URL, domínio ou endereço IP, a proteção pode ser habilitada instantaneamente em suas soluções de segurança da Microsoft. Usar uma ação específica do provedor, ver todas as ações executadas e cancelar uma ação, se necessário. Experimente as ações de segurança com o [ATP do Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)para bloquear as atividades mal-intencionados em seus pontos de extremidade do Windows usando as propriedades vistas nos alertas ou identificadas durante as investigações.
 
-  > **Observação:** Atualmente, as ações de segurança só dão suporte a permissões de aplicativo.
+  > **Observação:** ações de segurança no momento apenas dá suporte a permissões do aplicativo compatível.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter ação de segurança](../api/securityaction-get.md) | [SecurityAction](securityaction.md) | Leia as propriedades e as relações do objeto SecurityAction. |
+| [Obter a ação de segurança](../api/securityaction-get.md) | [SecurityAction](securityaction.md) | Leia as propriedades e as relações do objeto SecurityAction. |
 | [Criar ação de segurança](../api/securityactions-post.md) | [SecurityAction](securityaction.md) | Crie um novo SecurityAction postando na coleção securityActions. |
 | [Listar ações de segurança](../api/securityactions-list.md) | [](securityaction.md) coleção SecurityAction | Obtenha uma coleção de objetos SecurityAction. |
-|[Cancelar a ação de segurança](../api/securityaction-cancelsecurityaction.md)|Nenhum|Cancela uma operação de segurança.|
+|[Cancelar ação de segurança](../api/securityaction-cancelsecurityaction.md)|Nenhum|Cancela uma operação de segurança.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -41,7 +42,7 @@ Executar uma ação imediata proteger contra ameaças usando a entidade security
 |id|String| Criado pelo sistema quando a ação é ingerida. GUID gerado/identificador exclusivo. Somente leitura.|
 |lastActionDateTime|DateTimeOffset| Carimbo de data/hora da última atualização da ação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |name|String| Nome da ação.|
-|parameters|Coleção [keyValuePair](keyvaluepair.md)| Coleção de parâmetros (pares chave-valor) necessário para invocar a ação, por exemplo, URL ou fileHash para bloquear, etc.). **Required**|
+|parameters|Coleção [keyValuePair](keyvaluepair.md)| Coleção de parâmetros (pares chave-valor) necessário para invocar a ação, por exemplo, URL ou FileHash para bloquear, etc.). **Required**|
 |determina|coleção [securityActionState](securityactionstate.md)|Coleção de securityActionState para manter o histórico de uma ação.|
 |status|cadeia de caracteres| Status da ação. Os valores possíveis são: `NotStarted`, `Running`, `Completed`, `Failed`.|
 |user|String| O nome principal de usuário do usuário conectado que enviou (POST) a ação. O usuário deve ser extraído do token de autenticação e não inserido manualmente pelo aplicativo de chamada.|

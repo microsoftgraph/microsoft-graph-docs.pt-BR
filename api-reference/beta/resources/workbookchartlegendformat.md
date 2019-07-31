@@ -4,12 +4,13 @@ description: Encapsula as propriedades de formato de uma legenda de gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6bd5fd708574950aea8752396b7fd6495ca6b782
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 987753588beeec62ded346d2f2ff8611c0436e48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007260"
 ---
 # <a name="workbookchartlegendformat-resource-type"></a>tipo de recurso workbookChartLegendFormat
 
@@ -23,7 +24,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |fill|[workbookChartFill](workbookchartfill.md)|Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|

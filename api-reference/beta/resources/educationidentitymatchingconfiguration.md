@@ -4,12 +4,13 @@ description: Define as configurações para as identidades correspondentes de pe
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 0384fa269fd4304272d719df5860296d5f788c19
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6805fabd857e4e906fa095c372632edbcc27fa28
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340473"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006385"
 ---
 ## <a name="educationidentitymatchingconfiguration-resource-type"></a>tipo de recurso educationIdentityMatchingConfiguration
 

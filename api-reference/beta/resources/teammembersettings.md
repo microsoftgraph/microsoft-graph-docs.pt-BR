@@ -4,12 +4,13 @@ description: Configurações para configurar se os membros podem executar determ
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 33f1930096ff63968db39e06ddec26c53ae8bcc9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c7c6690eb293581a60cba20d3f3ef63187339c35
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341719"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007694"
 ---
 # <a name="teammembersettings-resource-type"></a>tipo de recurso teamMemberSettings
 
@@ -20,11 +21,11 @@ Configurações para configurar se os membros podem executar determinadas açõe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Boolean|Se definido como true, os membros podem adicionar e atualizar canais.|
-|allowDeleteChannels|Boolean|Se definido como true, os membros podem excluir canais.|
-|allowAddRemoveApps|Boolean|Se definido como true, os membros podem adicionar e remover aplicativos.|
-|allowCreateUpdateRemoveTabs|Boolean|Se definido como true, os membros podem adicionar, atualizar e remover guias. |
-|allowCreateUpdateRemoveConnectors|Boolean|Se definido como true, os membros podem adicionar, atualizar e remover conectores.|
+|allowCreateUpdateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar canais.|
+|allowDeleteChannels|Booliano|Se definido como true, os membros podem excluir canais.|
+|allowAddRemoveApps|Booliano|Se definido como true, os membros podem adicionar e remover aplicativos.|
+|allowCreateUpdateRemoveTabs|Booliano|Se definido como true, os membros podem adicionar, atualizar e remover guias. |
+|allowCreateUpdateRemoveConnectors|Booliano|Se definido como true, os membros podem adicionar, atualizar e remover conectores.|
 
 ## <a name="json-representation"></a>Representação JSON
 

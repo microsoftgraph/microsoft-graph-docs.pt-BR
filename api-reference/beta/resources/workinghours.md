@@ -2,14 +2,19 @@
 title: Tipo de recurso workingHours
 description: Representa os dias da semana e as horas de um fuso horário específico que o usuário trabalha.
 localization_priority: Normal
-ms.openlocfilehash: df36e2f64972badcf618a52f3e2874a269913706
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b3b25c0359dc5ebb1fac7ab80d51b2711a31b583
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007008"
 ---
 # <a name="workinghours-resource-type"></a>Tipo de recurso workingHours
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa os dias da semana e as horas de um fuso horário específico que o usuário trabalha.
 
@@ -43,8 +48,8 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "daysOfWeek": ["string"],
-  "startTime": "String (timeofday)",
-  "endTime": "String (timeofday)",
+  "startTime": "string (TimeOfDay)",
+  "endTime": "string (TimeOfDay)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 
@@ -52,14 +57,13 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/workinghours.md/microsoft.graph.workingHours/daysOfWeek:
-      Inconsistent types between parameter (String) and table (Object)"
-  ],
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

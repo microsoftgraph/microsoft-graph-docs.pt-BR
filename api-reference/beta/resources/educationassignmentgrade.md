@@ -4,12 +4,13 @@ description: " no entanto, todos os tipos de gradação (pontos, passar/falhar e
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: e925059a5eb06e5cc9795f78368b884fa40dd3ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4de74fc9cbdf505bd57cfad3ab8dbf5a12e4e58a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334526"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006469"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>tipo de recurso educationAssignmentGrade
 

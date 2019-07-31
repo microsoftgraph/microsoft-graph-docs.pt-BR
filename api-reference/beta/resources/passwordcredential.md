@@ -2,12 +2,15 @@
 title: tipo de recurso passwordCredential
 description: Contém uma credencial de senha associada a um aplicativo ou a uma entidade de serviço. A propriedade **passwordCredentials** da entidade servicePrincipalName e da entidade Application é uma coleção de **passwordCredential**.
 localization_priority: Normal
-ms.openlocfilehash: f00deb42dcc24fc6d8218239d5d807ee21b2f7c3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 72b07c92456ba8c1b1681b8d00b1dc5d512bc355
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344988"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009199"
 ---
 # <a name="passwordcredential-resource-type"></a>tipo de recurso passwordCredential
 

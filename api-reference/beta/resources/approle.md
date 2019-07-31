@@ -2,12 +2,15 @@
 title: tipo de recurso appRole
 description: Representa uma função de aplicativo que pode ser solicitada por um aplicativo cliente que esteja chamando outro aplicativo ou que possa ser usada para atribuir um aplicativo a usuários ou grupos em uma função de aplicativo especificada. A propriedade **appRoles** da entidade servicePrincipalName e da entidade Application é uma coleção de **appRole**.
 localization_priority: Normal
-ms.openlocfilehash: 4043d600bd19c61156cccd72f0d4e4f2e8352640
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 35c26e52c5d7eb9529474d08a43b68fceddfc954
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778674"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013315"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso appRole
 

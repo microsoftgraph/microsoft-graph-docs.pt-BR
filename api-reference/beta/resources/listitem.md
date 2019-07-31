@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Este recurso representa um item em uma list do SharePoint.
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9f813511ffa8a033d2ee85f8c7e5d2d5a271dd1e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3c05125257eeec9d7b21a7d1eb03de79bc189ccd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345231"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009976"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -110,7 +111,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 | Nome da relação | Tipo                           | Descrição
 |:------------------|:-------------------------------|:-------------------------------
 | activities        | Conjunto [itemActivity][]    | A lista de atividades recentes que ocorreram neste item.
-| analytics         | [itemAnalytics][] resource     | Análise sobre as atividades de exibição que ocorreram neste item.
+| análise         | recurso [itemAnalytics][]     | Análise sobre as atividades de visualização que ocorreram neste item.
 | driveItem         | [driveItem][]                  | Para bibliotecas de documentos, a relação **driveItem** expõe listItem como um **[driveItem][]**
 | campos            | [fieldValueSet][]              | Os valores das colunas definidos neste item de lista.
 | versões          | coleção [listItemVersion][]  | A lista de versões anteriores do item de lista.

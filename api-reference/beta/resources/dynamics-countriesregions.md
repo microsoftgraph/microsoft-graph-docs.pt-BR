@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: b6f50ba3046a402f2b8729529675653286808459
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 73f60a48e1b7b3564851271209e195ecbbf171e2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507263"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012629"
 ---
 # <a name="countriesregions-resource-type"></a>tipo de recurso countriesRegions
 Representa um objeto countriesRegions no Dynamics 365 Business central, que é parte de um endereço.
@@ -23,7 +24,7 @@ Representa um objeto countriesRegions no Dynamics 365 Business central, que é p
 |[Obter countriesRegions](../api/dynamics-countriesregions-get.md)      |countriesRegions|Obter um país/região.   |
 |[Postar countriesRegions](../api/dynamics-create-countriesregions.md)  |countriesRegions|Criar um país/região.|
 |[Patch countriesRegions](../api/dynamics-countriesregions-update.md) |countriesRegions|Atualize um país/região.|
-|[Excluir countriesRegions](../api/dynamics-countriesregions-delete.md)|Nenhuma            |Exclua os países/regiões.|
+|[Excluir countriesRegions](../api/dynamics-countriesregions-delete.md)|none            |Exclua os países/regiões.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade       | Tipo       |Descrição                                                  |
@@ -36,7 +37,7 @@ Representa um objeto countriesRegions no Dynamics 365 Business central, que é p
 
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -2,12 +2,15 @@
 title: Tipo de recurso inferenceClassification
 description: 'Classificação das mensagens de um usuário para possibilitar a atenção nas mensagens que são mais relevantes ou importantes para o usuário. '
 localization_priority: Normal
-ms.openlocfilehash: 3bfd5371d3600f985f9e170f717b4775fa31b9b0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: bf1ea3b61df2166f58f161b804f55e87e474be97
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339966"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006266"
 ---
 # <a name="inferenceclassification-resource-type"></a>Tipo de recurso inferenceClassification
 
@@ -28,7 +31,7 @@ Para saber mais, consulte [Gerenciar a Caixa de Entrada Prioritária](manage-foc
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|string| Somente leitura.|
+|id|cadeia de caracteres| Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

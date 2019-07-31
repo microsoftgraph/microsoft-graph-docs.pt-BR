@@ -4,12 +4,13 @@ description: Abrange as propriedades de formatação do título do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3827b44ae24a63f8fe048575633cc3b5508ac300
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ce00af7877b4602e76c390635478713835da2f2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348518"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007134"
 ---
 # <a name="workbookcharttitleformat-resource-type"></a>tipo de recurso workbookChartTitleFormat
 
@@ -24,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |fill|[workbookChartFill](workbookchartfill.md)|Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|

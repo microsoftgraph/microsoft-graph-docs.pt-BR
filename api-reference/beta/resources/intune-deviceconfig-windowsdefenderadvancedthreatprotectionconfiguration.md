@@ -4,12 +4,13 @@ description: Configuração de AdvancedThreatProtection do Windows Defender
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2ed9c17e02990ed932967f1bbc9459988be2e51
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3a805e547dfa6f5513bfc3a8448668a8a1509fa7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994164"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011257"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>Tipo de recurso windowsDefenderAdvancedThreatProtectionConfiguration
 

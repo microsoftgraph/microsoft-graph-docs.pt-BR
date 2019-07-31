@@ -2,12 +2,15 @@
 title: Tipo de recurso assignedPlan
 description: A propriedade **assignedPlans** das entidades user e organization é uma coleção de **assignedPlan**.
 localization_priority: Normal
-ms.openlocfilehash: 0f44e96e5591d46d6a22b0cdd951b4dfb1e05e75
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f699b635fb71d668cdd2a8fd11618786f3194d08
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339042"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013266"
 ---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
 
@@ -22,7 +25,7 @@ A propriedade **assignedPlans** das entidades [user](user.md) e [organization](o
 |assignedDateTime|DateTimeOffset|A data e hora em que o plano foi atribuído; por exemplo: 2013-01-02T19:32:30Z. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |capabilityStatus|String|Por exemplo, “Enabled”.|
 |service|Cadeia de caracteres|O nome do serviço; por exemplo, "Exchange".|
-|onPlanid|Guid|Um GUID que identifica o plano de serviço.|
+|onplanid|Guid|Um GUID que identifica o plano de serviço.|
 
 ## <a name="json-representation"></a>Representação JSON
 

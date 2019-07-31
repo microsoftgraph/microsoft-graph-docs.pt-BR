@@ -4,12 +4,13 @@ description: Contém propriedades e propriedades herdadas para aplicativos do Pr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74d7a872cb4be3b5a485394c94ebf52ff141078c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ec1ce39175e7c4901c09ce06d7699f02ec3e9efd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990047"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005923"
 ---
 # <a name="iosvppapp-resource-type"></a>Tipo de recurso iosVppApp
 

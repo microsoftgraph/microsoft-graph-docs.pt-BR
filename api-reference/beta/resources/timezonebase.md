@@ -2,12 +2,15 @@
 title: Tipo de recurso timeZoneBase
 description: A representação básica de um fuso horário.
 localization_priority: Normal
-ms.openlocfilehash: 8d968b8177da942c1b8940618c8ba965c362c914
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a5ebe26cb7968e9a5cce3ab05821dfb81e1221ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341866"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007561"
 ---
 # <a name="timezonebase-resource-type"></a>Tipo de recurso timeZoneBase
 

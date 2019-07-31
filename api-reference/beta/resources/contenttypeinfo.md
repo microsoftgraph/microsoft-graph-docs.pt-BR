@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: O recurso contentTypeInfo indica o tipo de conteúdo do SharePoint de um item.
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
-ms.openlocfilehash: 107dfb3577489521d2e10e0c8fd2fe52c4f90b10
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 04316b01c905acb4fe38923f8d664ea892773e8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341219"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012846"
 ---
 # <a name="contenttypeinfo-resource-type"></a>Tipo de recurso ContentTypeInfo
 
