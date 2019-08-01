@@ -4,26 +4,27 @@ description: Criar um novo bloco de anotações do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9812839a4ae30ac3d39d856bfc0c8f08249f210c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 59828be64cb87e3fea212be4c6a50712fe32df71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889656"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976403"
 ---
-# <a name="create-notebook"></a><span data-ttu-id="45b1e-103">Criar blocos de anotações</span><span class="sxs-lookup"><span data-stu-id="45b1e-103">Create notebook</span></span>
+# <a name="create-notebook"></a><span data-ttu-id="491be-103">Criar blocos de anotações</span><span class="sxs-lookup"><span data-stu-id="491be-103">Create notebook</span></span>
 
-<span data-ttu-id="45b1e-104">Criar um novo [bloco de anotações](../resources/notebook.md)do OneNote.</span><span class="sxs-lookup"><span data-stu-id="45b1e-104">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="45b1e-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="45b1e-105">Permissions</span></span>
-<span data-ttu-id="45b1e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="45b1e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="491be-104">Criar um novo [bloco de anotações](../resources/notebook.md)do OneNote.</span><span class="sxs-lookup"><span data-stu-id="491be-104">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="491be-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="491be-105">Permissions</span></span>
+<span data-ttu-id="491be-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="491be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="45b1e-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="45b1e-108">Permission type</span></span>      | <span data-ttu-id="45b1e-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="45b1e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="491be-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="491be-108">Permission type</span></span>      | <span data-ttu-id="491be-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="491be-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="45b1e-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="45b1e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="45b1e-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45b1e-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="45b1e-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="45b1e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45b1e-113">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="45b1e-113">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="45b1e-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="45b1e-114">Application</span></span> | <span data-ttu-id="45b1e-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45b1e-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="491be-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="491be-110">Delegated (work or school account)</span></span> | <span data-ttu-id="491be-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="491be-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="491be-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="491be-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="491be-113">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="491be-113">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="491be-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="491be-114">Application</span></span> | <span data-ttu-id="491be-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="491be-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="45b1e-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="45b1e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="491be-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="491be-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks
@@ -31,26 +32,26 @@ POST /users/{id | userPrincipalName}/onenote/notebooks
 POST /groups/{id}/onenote/notebooks
 POST /sites/{id}/onenote/notebooks
 ```
-## <a name="request-headers"></a><span data-ttu-id="45b1e-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="45b1e-117">Request headers</span></span>
-| <span data-ttu-id="45b1e-118">Nome</span><span class="sxs-lookup"><span data-stu-id="45b1e-118">Name</span></span>       | <span data-ttu-id="45b1e-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="45b1e-119">Type</span></span> | <span data-ttu-id="45b1e-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="45b1e-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="491be-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="491be-117">Request headers</span></span>
+| <span data-ttu-id="491be-118">Nome</span><span class="sxs-lookup"><span data-stu-id="491be-118">Name</span></span>       | <span data-ttu-id="491be-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="491be-119">Type</span></span> | <span data-ttu-id="491be-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="491be-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="45b1e-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="45b1e-121">Authorization</span></span>  | <span data-ttu-id="45b1e-122">string</span><span class="sxs-lookup"><span data-stu-id="45b1e-122">string</span></span>  | <span data-ttu-id="45b1e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="45b1e-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="45b1e-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="45b1e-125">Content-Type</span></span> | <span data-ttu-id="45b1e-126">string</span><span class="sxs-lookup"><span data-stu-id="45b1e-126">string</span></span> | `application/json` |
+| <span data-ttu-id="491be-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="491be-121">Authorization</span></span>  | <span data-ttu-id="491be-122">string</span><span class="sxs-lookup"><span data-stu-id="491be-122">string</span></span>  | <span data-ttu-id="491be-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="491be-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="491be-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="491be-125">Content-Type</span></span> | <span data-ttu-id="491be-126">string</span><span class="sxs-lookup"><span data-stu-id="491be-126">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="45b1e-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="45b1e-127">Request body</span></span>
-<span data-ttu-id="45b1e-128">No corpo da solicitação, forneça um nome para o bloco de anotações.</span><span class="sxs-lookup"><span data-stu-id="45b1e-128">In the request body, supply a name for the notebook.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="491be-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="491be-127">Request body</span></span>
+<span data-ttu-id="491be-128">No corpo da solicitação, forneça um nome para o bloco de anotações.</span><span class="sxs-lookup"><span data-stu-id="491be-128">In the request body, supply a name for the notebook.</span></span> 
 
-<span data-ttu-id="45b1e-129">Os nomes dos blocos de anotações devem ser exclusivos.</span><span class="sxs-lookup"><span data-stu-id="45b1e-129">Notebook names must be unique.</span></span> <span data-ttu-id="45b1e-130">O nome não pode conter mais de 128 caracteres ou conter os seguintes caracteres:?\/\*: <>| ' "</span><span class="sxs-lookup"><span data-stu-id="45b1e-130">The name cannot contain more than 128 characters or contain the following characters:  ?\*\/:<>|'"</span></span>
+<span data-ttu-id="491be-129">Os nomes dos blocos de anotações devem ser exclusivos.</span><span class="sxs-lookup"><span data-stu-id="491be-129">Notebook names must be unique.</span></span> <span data-ttu-id="491be-130">O nome não pode conter mais de 128 caracteres ou conter os seguintes caracteres:?\/\*: <>| ' "</span><span class="sxs-lookup"><span data-stu-id="491be-130">The name cannot contain more than 128 characters or contain the following characters:  ?\*\/:<>|'"</span></span>
 
-## <a name="response"></a><span data-ttu-id="45b1e-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="45b1e-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="491be-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="491be-131">Response</span></span>
 
-<span data-ttu-id="45b1e-132">Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Notebook](../resources/notebook.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="45b1e-132">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
+<span data-ttu-id="491be-132">Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Notebook](../resources/notebook.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="491be-132">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45b1e-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="45b1e-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="45b1e-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="45b1e-134">Request</span></span>
-<span data-ttu-id="45b1e-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="45b1e-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="491be-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="491be-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="491be-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="491be-134">Request</span></span>
+<span data-ttu-id="491be-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="491be-135">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="45b1e-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="45b1e-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="491be-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="491be-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_notebook_from_onenote"
@@ -64,27 +65,27 @@ Content-length: 30
   "displayName": "Notebook name"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="45b1e-137">C#</span><span class="sxs-lookup"><span data-stu-id="45b1e-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="491be-137">C#</span><span class="sxs-lookup"><span data-stu-id="491be-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-notebook-from-onenote-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="45b1e-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="45b1e-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="491be-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="491be-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-notebook-from-onenote-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="45b1e-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="45b1e-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="491be-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="491be-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-notebook-from-onenote-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="45b1e-140">Java</span><span class="sxs-lookup"><span data-stu-id="45b1e-140">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="491be-140">Java</span><span class="sxs-lookup"><span data-stu-id="491be-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-notebook-from-onenote-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="45b1e-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="45b1e-141">Response</span></span>
-<span data-ttu-id="45b1e-p104">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="45b1e-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="491be-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="491be-141">Response</span></span>
+<span data-ttu-id="491be-p104">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="491be-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
