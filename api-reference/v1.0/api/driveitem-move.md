@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Mover um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: dd5c38420d33a70d056cf4e7189f0d368800b37a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Para mover um DriveItem para um novo item pai, o aplicativo solicita a atualização de parentReference do DriveItem a ser movido.
+doc_type: apiPageType
+ms.openlocfilehash: af4ab635bf7c1287dae267219d3f3542e63c03cf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881683"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015394"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover um DriveItem para uma nova pasta
 

@@ -4,12 +4,13 @@ description: Você pode usar os relatórios de atividades de grupos do Yammer pa
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: fd29d0ed2e1bc551595c8b8403325f64fc44998d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: c5627ea69b34fd186e09b3d381482721a28b09a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522248"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033219"
 ---
 # <a name="yammer-groups-activity-reports"></a>Relatórios de atividades de grupos do Yammer
 

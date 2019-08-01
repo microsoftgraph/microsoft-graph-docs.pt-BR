@@ -4,12 +4,13 @@ description: Descreve o método list do recurso directoryAudit (entidade) da API
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 52f67940086ea7e23331feb4addabeeffcd9d2c0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 00330a39aff96caea4203e0a79dc347a8dd2c71b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016983"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 

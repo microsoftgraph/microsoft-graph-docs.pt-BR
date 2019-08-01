@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: ceb66fdacd4a108318c84fd9297aca8b2332c3f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso remoteItem indica que um driveItem faz referência a um item que existe em outra unidade.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 0d19034475f72984f023cef368e1fec5f75fe456
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579335"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034724"
 ---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
@@ -57,7 +60,7 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
 | file                 | [File](file.md)                     | Indica que o item remoto é um arquivo. Somente leitura.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Informações sobre o item remoto do sistema de arquivos local. Somente leitura.                                                                                          |
 | folder               | [Folder](folder.md)                 | Indica que o item remoto é uma pasta. Somente leitura.                                                                                                            |
-| id                   | Cadeia de caracteres                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
+| id                   | String                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                              |
 | nome                 | String                              | Opcional. Nome de arquivo do item remoto. Somente leitura.                                                                                                                 |

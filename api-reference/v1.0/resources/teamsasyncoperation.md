@@ -4,16 +4,17 @@ description: 'Uma operação assíncrona do Microsoft Teams é uma operação qu
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: dea11ee20e09f1de7c058ef7704e6a824ba2f765
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9c604d8823de4f48e4338b9637861e8a09505b78
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462253"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033751"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>tipo de recurso teamsAsyncOperation
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Uma operação assíncrona do Microsoft Teams é uma operação que transcende o tempo de vida de uma única solicitação de API. Essas operações são de longa duração ou muito caras para concluir dentro do prazo de sua solicitação de origem.
 
@@ -60,15 +61,10 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "teams async operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

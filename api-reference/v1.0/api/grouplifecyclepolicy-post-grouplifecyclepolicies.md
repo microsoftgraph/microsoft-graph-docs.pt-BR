@@ -4,12 +4,13 @@ description: Cria um novo objeto groupLifecyclePolicy.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c6d2f07b3250c6244f32d188275779f3681a5f32
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: efb24101e86b1068d38fb9d2127e629b32a2fe9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886821"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014596"
 ---
 # <a name="create-grouplifecyclepolicy"></a>Criar groupLifecyclePolicy
 

@@ -4,12 +4,13 @@ description: Recupere uma lista de objetos chartseries.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5d706dda9e07849c5793738b4a6414614de310ce
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 132b1699391f951f054018178679ae7d85079f43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891364"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003417"
 ---
 # <a name="list-chartseriescollection"></a>Listar ChartSeriesCollection
 

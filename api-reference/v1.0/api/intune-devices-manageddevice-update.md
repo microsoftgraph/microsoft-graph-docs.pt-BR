@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto managedDevice.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12c8c2dc628b7fcecef81296ca56f17845b39478
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 48a4b1d8325f53b7a0a88f375257423526cbb170
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523956"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018593"
 ---
 # <a name="update-manageddevice"></a>Atualizar managedDevice
 
@@ -51,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do dispositivo|
-|userId|String|O identificador exclusivo do usuário associado ao dispositivo|
+|userId|Cadeia de caracteres|O identificador exclusivo do usuário associado ao dispositivo|
 |deviceName|String|Nome do dispositivo|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Propriedade do dispositivo. Pode ser "empresa" ou "pessoal". Os valores possíveis são: `unknown`, `company`, `personal`.|
 |deviceActionResults|Coleção [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Lista de objetos ComplexType deviceActionResult.|

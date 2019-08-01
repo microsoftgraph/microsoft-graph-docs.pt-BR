@@ -4,12 +4,13 @@ description: Política de Servidor Proxy de Rede.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1dfe20e52ad63cf1d0d6a958f2ef5f4f89a53ad6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b68f13ab80544d591b22fc77ab35110302dc48ea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578768"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031007"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>Tipo de recurso windows10NetworkProxyServer
 

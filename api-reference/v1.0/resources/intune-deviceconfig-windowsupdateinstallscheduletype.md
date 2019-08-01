@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be7388546c549085945c1ddf54b9ed75f22730fe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 01b265d3375fc12d2efb81c899264504adf37182
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030958"
 ---
 # <a name="windowsupdateinstallscheduletype-resource-type"></a>Tipo de recurso windowsUpdateInstallScheduleType
 

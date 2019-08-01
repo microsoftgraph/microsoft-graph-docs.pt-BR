@@ -4,12 +4,13 @@ description: Recupera as propriedades e os relacionamentos do objeto chartlegend
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: de4a26d40b78f780ad70366b5a125eb2240c9ea4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 56c049f0f0b4c90ca7fecb9f6d6262b1c6b81813
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881927"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003494"
 ---
 # <a name="get-chartlegend"></a>Obter ChartLegend
 

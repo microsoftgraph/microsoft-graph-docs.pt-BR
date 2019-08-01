@@ -5,12 +5,13 @@ title: tipo de recurso de multiatividade
 description: O objeto myactivity fornece informações sobre uma atividade que ocorreu em um item.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 98ae9e4881de18c94490469b10df43b2aaf58140
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+doc_type: resourcePageType
+ms.openlocfilehash: ddd478794cc3ad87ce29513c45455a9ba2911a52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536684"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036726"
 ---
 # <a name="itemactivity-resource-type"></a>tipo de recurso de multiatividade
 

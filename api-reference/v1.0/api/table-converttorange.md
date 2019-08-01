@@ -4,12 +4,13 @@ description: Converte a tabela em um intervalo de células normal. Todos os dado
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2314b06ea4fa6061440b7eb526698aad6d4be1b3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 29666544e46e9879313fa0593b15ef83f1fb7f25
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894259"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024572"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 

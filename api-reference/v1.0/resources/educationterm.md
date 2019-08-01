@@ -4,16 +4,15 @@ description: Termo A. Isso representa uma parte designada do ano acadêmico. É 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9c26565b552471fe2601d8e3cb629fd933d72937
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 36426a7e3f1fb79264a788d8af7e7768f5bae26a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463695"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032617"
 ---
 # <a name="educationterm-resource-type"></a>Tipo de recurso educationTerm
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Termo A. Isso representa uma parte designada do ano acadêmico. É usada dentro de [educationClass](educationclass.md).
 
@@ -48,15 +47,10 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 4e9d671f-3068-4e09-aba2-b39e81a0e452
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "educationTerm resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationterm.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

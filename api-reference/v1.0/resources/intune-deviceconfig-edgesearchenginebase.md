@@ -4,12 +4,13 @@ description: Permite aos administradores de TI definir um mecanismo de pesquisa 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2aeffb922ebf8b3a166b8f942d4159fa3fe7a3b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1ddecca2341586d2f617ca75d7d0a89bcd8c182c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565826"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031616"
 ---
 # <a name="edgesearchenginebase-resource-type"></a>Tipo de recurso edgeSearchEngineBase
 

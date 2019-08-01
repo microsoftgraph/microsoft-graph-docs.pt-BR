@@ -4,12 +4,13 @@ description: Exclua uma aula. Como uma aula também é um grupo universal, exclu
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: cb901c2cee42203292a417d35fdb038264c1c29c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a6d07025782810433c67b68a9b8429df6eb99194
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888396"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015303"
 ---
 # <a name="delete-educationclass"></a>Excluir educationClass
 

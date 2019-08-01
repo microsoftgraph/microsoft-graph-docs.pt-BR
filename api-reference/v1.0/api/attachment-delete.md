@@ -2,12 +2,15 @@
 title: Excluir anexo
 description: Exclua um anexo de um evento de calendário, email ou postagem de grupo.
 localization_priority: Normal
-ms.openlocfilehash: 18188ae66d6b50899519d10711f5f9b7e6c60be8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 1d4ed3f4cc76a62320fa4ecfac96dde8777ad535
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882578"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004062"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 

@@ -3,12 +3,14 @@ title: tipo de recurso visualInfo
 description: Um tipo complexo para representar a propriedade **visualElements** no objeto Activity.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 416109bb1bb6625330ddfbbb32b8fb688b223134
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9b26fba2e8ea29dab6f753de36e1c981f8e31c2f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579682"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035018"
 ---
 # <a name="visualinfo-resource-type"></a>tipo de recurso visualInfo
 
@@ -25,7 +27,7 @@ Se um cartão personalizado não for fornecido, um cartão simples será gerado 
 |Nome | Tipo | Descrição|
 |:----|:------|:-----------|
 |displayText | String | Obrigatório. Descrição de texto curto da atividade exclusiva do usuário (por exemplo, nome do documento em casos em que uma atividade refere-se à criação de documentos)|
-|description | String | Opcional. Descrição de texto mais longa da atividade exclusiva do usuário (exemplo: nome do documento, primeira frase e/ou metadados)|
+|descrição | String | Opcional. Descrição de texto mais longa da atividade exclusiva do usuário (exemplo: nome do documento, primeira frase e/ou metadados)|
 |CorDoFundo | String | Opcional. Cor de plano de fundo usada para renderizar a atividade na cor da marca de interface do usuário da origem do aplicativo da atividade. Deve ser uma cor hexadecimal válida|
 |conteúdo | Objeto JSON não digitado | Opcional. Parte personalizada de dados-objeto JSON usado para fornecer conteúdo personalizado para renderizar a atividade na interface do usuário do shell do Windows|
 |attribution | [imageInfo](../resources/projectrome-imageinfo.md) | Opcional. Objeto JSON usado para representar um ícone que representa o aplicativo usado para gerar a atividade|

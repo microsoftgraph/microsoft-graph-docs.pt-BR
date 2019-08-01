@@ -4,12 +4,13 @@ description: Representa uma categoria pela qual um usuário pode agrupar itens d
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 490ecaf2e6303cc943646dbed99b3202b8d57525
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 11e3e67a9a8c4a6a9b9bab807985711d246eb0cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462645"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035683"
 ---
 # <a name="outlookcategory-resource-type"></a>Tipo de recurso outlookCategory
 
@@ -85,7 +86,7 @@ Veja a seguir uma representação JSON do recurso.
 |[Obter categoria](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Obtenha as propriedades e as relações do objeto **outlookCategory** especificado.|
 |[Criar](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Cria um objeto **outlookCategory** na lista mestra de categorias do usuário.|
 |[Atualizar](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Atualize a propriedade gravável, **color**, do objeto **outlookCategory** especificado. |
-|[Excluir](../api/outlookcategory-delete.md) | Nenhum |Exclua o objeto **outlookCategory** especificado. |
+|[Delete](../api/outlookcategory-delete.md) | Nenhum |Exclua o objeto **outlookCategory** especificado. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

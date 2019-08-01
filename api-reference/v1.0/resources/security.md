@@ -4,12 +4,13 @@ description: O recurso de segurança é o ponto de entrada para o modelo de obje
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c7bf3f279e50efb451188426d030e356d55ad6be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 87bd321a3c5e66cdc5d4fdc7fcb1407d02fbca1c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579209"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034451"
 ---
 # <a name="security-resource-type"></a>tipo de recurso de segurança
 

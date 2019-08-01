@@ -4,12 +4,13 @@ description: Encapsula as propriedades de formato do eixo do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 92258887c9646890ee63d14aebcd32ada7a8aaa6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1d52063e63e179540bcbd5c3b4ec0cd09fb620d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569246"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029852"
 ---
 # <a name="chartaxisformat-resource-type"></a>Tipo de recurso ChartAxisFormat
 

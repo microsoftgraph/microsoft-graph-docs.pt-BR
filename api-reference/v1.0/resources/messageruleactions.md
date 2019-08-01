@@ -4,12 +4,13 @@ description: Representa o conjunto de ações que estão disponíveis para uma r
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 33f1167d7317f941ebfa79b372e9cf575c14989b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: bc74f435533a679263d144478334738f73c79f34
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548499"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036124"
 ---
 # <a name="messageruleactions-resource-type"></a>Tipo de recurso messageRuleActions
 

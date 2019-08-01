@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: f16f8240800be4b9c1780a4057583381b736f079
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso SharingLink agrupa itens de dados relacionados ao link em uma única estrutura.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 01d27971cd04ff91333d25240e4d1d517e05cec5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034248"
 ---
 # <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
 

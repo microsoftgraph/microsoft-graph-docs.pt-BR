@@ -2,12 +2,15 @@
 title: Tipo de recurso NamedItem
 description: Representa um nome definido para um intervalo de células ou um valor. Os nomes podem ser objetos nomeados primitivos (conforme exibido no tipo abaixo), objetos de intervalo ou uma referência a um intervalo. Use esse objeto para obter um objeto de intervalo associado aos nomes.
 localization_priority: Normal
-ms.openlocfilehash: e413361cc42a0f8f65e23e12d36b49d2c7bcebb3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: b53b223a3f9d894f8ab140014528c0cd02c224dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548522"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035998"
 ---
 # <a name="nameditem-resource-type"></a>Tipo de recurso NamedItem
 
@@ -23,7 +26,7 @@ Representa um nome definido para um intervalo de células ou um valor. Os nomes 
 |[Get NamedItem](../api/nameditem-get.md) | [WorkbookNamedItem](nameditem.md) |Leia as propriedades e os relacionamentos do objeto namedItem.|
 |[Update](../api/nameditem-update.md) | [WorkbookNamedItem](nameditem.md)   |Atualize o objeto NamedItem. |
 |[Range](../api/nameditem-range.md)|[Range](range.md)|Retorna o objeto Range associado ao nome. Gera uma exceção quando o tipo de item nomeado não é um intervalo.|
-|[List](../api/nameditem-list.md) | Coleção [WorkbookNamedItem](nameditem.md) |Obtenha uma coleção de objetos namedItem. |
+|[List](../api/nameditem-list.md) | Coleção [WorkbookNamedItem](nameditem.md)  |Obtenha uma coleção de objetos namedItem. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

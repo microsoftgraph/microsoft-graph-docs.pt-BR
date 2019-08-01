@@ -4,12 +4,13 @@ description: Configurações para a caixa de correio principal do usuário conec
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 53ded2d60161d833f70a3b747e0ec35953d5bd39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3fdef250b1614cc19e57af4341f7983fa0fe9fa0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573995"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036299"
 ---
 # <a name="mailboxsettings-resource-type"></a>Tipo de recurso mailboxSettings
 

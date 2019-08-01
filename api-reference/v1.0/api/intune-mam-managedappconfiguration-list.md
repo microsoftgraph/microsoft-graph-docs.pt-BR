@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos managedAppConfiguratio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6593fa7579d5f34abd66c65b46ca122184976c0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e47a07c28a1a8a135e04767e5e79046549694547
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571188"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018292"
 ---
 # <a name="list-managedappconfigurations"></a>Listar managedAppConfigurations
 

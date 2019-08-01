@@ -1,19 +1,20 @@
 ---
-title: Membros
+title: Members
 description: Descreve o status de instalação atual de um teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a58a0d046ef9c42f197e841ab542bf8dcb5f96f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 14354cc996d7a88ffea47bc5f3de50b403baedf4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462246"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033765"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>tipo de enumeração teamsAppInstalledState
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Descreve o status de instalação atual de um [teamsApp](teamsapp.md).
 
@@ -25,11 +26,3 @@ Descreve o status de instalação atual de um [teamsApp](teamsapp.md).
 |instalação|1|O aplicativo está instalado normalmente.|
 |installedAndHidden|duas|O aplicativo está instalado, mas oculto no modo de exibição.|
 |installedAndPermanent|3D|O aplicativo está instalado permanentemente e não pode ser removido.|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsappinstalledstate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

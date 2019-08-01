@@ -2,12 +2,15 @@
 title: Criar uma propriedade estendida de valor único
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 localization_priority: Normal
-ms.openlocfilehash: cf98c3e2b43192e5c8b636d2f67fc471af82da6b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: c90c8fca501e813635e3e3b208c1a5be6808b728
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520820"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975589"
 ---
 # <a name="create-single-value-extended-property"></a>Criar uma propriedade estendida de valor único
 
@@ -18,7 +21,7 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [evento](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 

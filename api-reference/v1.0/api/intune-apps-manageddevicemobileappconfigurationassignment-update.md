@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfig
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dccf48cfefb0e5a9f09fd51e998a1172280f72d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5dfbcdc131dd02f062252974a7ef4b3baff07b1f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578278"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014036"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>Atualizar managedDeviceMobileAppConfigurationAssignment
 

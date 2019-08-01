@@ -4,12 +4,13 @@ description: Representa os itens de auditoria de diretório e sua coleção.
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f49229ed1ce461a0e9dcc104087ec89726597267
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 54badc0fb411a79ac854c2a34f708cd7d29133a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629289"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029481"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 

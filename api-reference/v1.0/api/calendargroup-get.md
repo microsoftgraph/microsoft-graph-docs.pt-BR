@@ -4,12 +4,13 @@ description: Recupera as propriedades e os relacionamentos de um objeto de grupo
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c8350ed7c3f703cb7d41563785e18c438709c931
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e0b958a82b9e63c72be91a5bdc61af73b43f7477
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882410"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003949"
 ---
 # <a name="get-calendargroup"></a>Obter calendarGroup
 

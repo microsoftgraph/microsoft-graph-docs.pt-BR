@@ -4,12 +4,13 @@ description: Exclui managedDevice.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4b00019110fc7d2710ac2c865f7312862741861
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d0ac9e6326b71f2c691740c1f11d422d870f5700
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584800"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020966"
 ---
 # <a name="delete-manageddevice"></a>Excluir managedDevice
 

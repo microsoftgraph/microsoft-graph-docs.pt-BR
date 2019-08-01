@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal
-ms.openlocfilehash: d52ca0a9815e46ebc11a653be381ac65f3cd209e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso Deleted indica que o item foi excluído.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: d1f5c07c60c8de4890a2a4ac334df04a59b7339c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574621"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029516"
 ---
 # <a name="deleted-facet"></a>Faceta Deleted
 

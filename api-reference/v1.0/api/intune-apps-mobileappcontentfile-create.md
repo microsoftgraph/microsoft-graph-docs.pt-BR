@@ -4,12 +4,13 @@ description: Criar um novo objeto mobileAppContentFile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6c78f6575a1d5f66e9989e876a03839ab2a8849
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6135d8fb10b2295c8e654151bdb821a77ab03a95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554424"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002010"
 ---
 # <a name="create-mobileappcontentfile"></a>Criar mobileAppContentFile
 
@@ -50,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 |:---|:---|:---|
 |azureStorageUri|Cadeia de caracteres|O URI de Armazenamento do Azure.|
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
-|id|Cadeia de caracteres|A ID do arquivo.|
+|id|String|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
 |name|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|

@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto managedDeviceOverview.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3808c35b9aae428975ed976b31634c27e7a41286
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ce792426b97bbaec9d9f224b3a09d17a2a7e7a14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585038"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018551"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 

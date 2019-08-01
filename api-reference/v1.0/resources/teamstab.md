@@ -4,12 +4,13 @@ description: 'Um teamsTab é uma guia fixa (anexada) a um canal dentro de uma eq
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 181d2fd23ff922709b3e098f6069adf300ad3928
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: bf07770d920ee05c7856f89e2e099bcc958ad50c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456974"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033688"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
@@ -21,18 +22,18 @@ Um teamsTab é uma [guia](../resources/teamstab.md) fixa (anexada) a um [canal](
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar guias](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lista guias fixadas a um canal.|
-|[Obter guia](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Lê uma guia fixada a um canal.|
-|[Adicionar guia](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adiciona (fixa) uma guia a um canal.|
-|[Guia remover](../api/teamstab-delete.md) | Nenhum | Remove (desfixa) uma guia de um canal.|
-|[Atualizar guia](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualiza as propriedades da guia.|
+|[Listar guias](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
+|[Obter guia](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Ler uma guia fixada a um canal.|
+|[Adicionar guia](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia em um canal.|
+|[Remover guia](../api/teamstab-delete.md) | Nenhum | Remover (desafixar) uma guia de um canal.|
+|[Guia de atualização](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualizar as propriedades da guia.|
 
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|  id              |   string                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
+|  id              |   cadeia de caracteres                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
 |  displayName            |   string                  |  Nome da guia.     |
 |  webUrl          |   cadeia de caracteres                  |  URL de link profundo da instância de guia. Somente leitura.     |
 |  Configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner para configurações personalizadas aplicadas a uma guia. A guia é considerada configurada somente quando essa propriedade é definida.     |

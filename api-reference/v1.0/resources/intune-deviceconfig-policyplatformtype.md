@@ -4,12 +4,13 @@ description: Tipos de plataforma Suppoorted para políticas.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 757cc2aa3b5e5b27a0b36d2d077da1c7a66f35ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 8205f6530047518082732fe1fe7c24ee7df7ae99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568756"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031280"
 ---
 # <a name="policyplatformtype-enum-type"></a>tipo de enumeração policyPlatformType
 
@@ -21,12 +22,12 @@ Tipos de plataforma Suppoorted para políticas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Android|,0|Android.|
-|iOS|2 |emiti.|
-|macOS|3 |MacOS.|
-|windowsPhone81|4 |Windowsphonee 8,1.|
-|windows81AndLater|5 |Windows 8,1 e posterior|
-|windows10AndLater|6 |Windows 10 e posterior.|
-|androidWorkProfile|7 |AndroidWorkProfile.|
+|iOS|duas|emiti.|
+|macOS|3D|MacOS.|
+|windowsPhone81|quatro|Windowsphonee 8,1.|
+|windows81AndLater|0,5|Windows 8,1 e posterior|
+|windows10AndLater|6|Windows 10 e posterior.|
+|androidWorkProfile|178|AndroidWorkProfile.|
 |todos os|100|Todas as plataformas.|
 
 

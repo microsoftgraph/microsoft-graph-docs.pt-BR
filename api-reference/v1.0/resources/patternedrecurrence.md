@@ -2,16 +2,17 @@
 title: Tipo de recurso patternedRecurrence
 description: O padrão e o intervalo da recorrência.
 localization_priority: Normal
-ms.openlocfilehash: 8a9581150e3b7790f32268eb34f35b22abcb3642
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: a5ad30474b23c6ef96bbc1a66142098e7f696138
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462491"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035564"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O padrão e o intervalo da recorrência.
 
@@ -43,15 +44,10 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "patternedRecurrence resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/patternedrecurrence.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

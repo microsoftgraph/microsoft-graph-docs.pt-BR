@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos Entidadeandroidforwork
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5519b4522265e5eaf853833b896139956d90e853
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0501b30c3badbde2b9181aa1f698d3512db88e34
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519924"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019447"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Listar androidWorkProfileGeneralDeviceConfigurations
 

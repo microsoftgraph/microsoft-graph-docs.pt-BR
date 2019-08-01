@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff79e3794f028636b720303b70503ba06a5afcdb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bc856a02644a72e933be7defdf8bc4268b9dc8bf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585269"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025932"
 ---
 # <a name="beginonboarding-action"></a>Ação beginOnboarding
 

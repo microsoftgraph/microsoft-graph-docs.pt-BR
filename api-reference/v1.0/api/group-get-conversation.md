@@ -4,12 +4,13 @@ description: Obter um objeto conversation.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 4d2d4dd00bd840312a9dd8eda9eca8887b29d6b4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c8d759702c90127de4c93721466fc4920029ca67
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889378"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016422"
 ---
 # <a name="get-conversation"></a>Obter conversation
 Obter um objeto [conversation](../resources/conversation.md).

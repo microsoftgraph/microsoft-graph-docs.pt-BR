@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto deviceComplianceSettingState
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 735f9f3b564d7e810347d63a1c90233be7ff1de7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3d6e875526141cedd020b12b2032ac16edf1f754
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578068"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019258"
 ---
 # <a name="update-devicecompliancesettingstate"></a>Atualizar deviceComplianceSettingState
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceComplianc
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade|
+|id|String|Chave da entidade|
 |configuração|String|O nome da classe de configuração e o nome da propriedade.|
 |settingName|String|O nome da configuração sendo relatada|
 |deviceId|String|A ID do dispositivo sendo relatada|

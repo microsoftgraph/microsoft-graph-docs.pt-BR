@@ -4,12 +4,13 @@ description: Exclua um usuário de uma escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 930ae9ca24b379abd728bd01ebd6ce8f72291757
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 711be4f776b5d0edac211fd4c0fd9052dc8f7041
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550340"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015170"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>Remover educationUser de uma educationSchool
 

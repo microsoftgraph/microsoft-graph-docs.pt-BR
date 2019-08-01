@@ -3,12 +3,14 @@ title: Obter um recurso DriveItemVersion
 description: Recuperar os metadados de uma versão específica de um DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ed11ef061fad293885df8f5269898ddc5df80f10
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 5ded0ddaa9e724befbc0ba53933eea7479281ea7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886464"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015310"
 ---
 # <a name="get-a-driveitemversion-resource"></a>Obter um recurso DriveItemVersion
 

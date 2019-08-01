@@ -4,12 +4,13 @@ description: Invalida todos os tokens de atualização do usuário emitidos para
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 03469f0884b30011a87beae1506e3063373f467f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8ad8852d07bc4621d37dd97856c9c6d9c1d2941e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855151"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026611"
 ---
 # <a name="user-revokesigninsessions"></a>usuário: revokeSignInSessions
 

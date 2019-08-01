@@ -4,12 +4,13 @@ description: Representa um domínio associado ao locatário.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fc035824767b532da0a8d2b24fa4f3158ef2881a
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 4b45e2b071e62b671f87de861391d8ad10affe71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658005"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032722"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
 

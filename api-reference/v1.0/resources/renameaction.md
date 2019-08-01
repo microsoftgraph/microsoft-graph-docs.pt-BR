@@ -5,16 +5,17 @@ title: tipo de recurso renameaction
 description: O objeto renameaction fornece informações sobre uma atividade que renomeia um item.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bce040130d74b7977fc1f988a34edde674f9e0d4
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 2949a3875d657dba3c64b6753855476c1d66bfb3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970603"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034717"
 ---
 # <a name="renameaction-resource-type"></a>tipo de recurso renameaction
 
-A presença do recurso **** renameaction em uma myactivity [****] [ activity] indica que a atividade renomeou um item.
+A presença do recurso **** renameaction em uma myactivity indica que a atividade renomeou um item. [****][activity]
 
 >**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 

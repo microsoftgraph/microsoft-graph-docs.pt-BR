@@ -1,19 +1,20 @@
 ---
 title: tipo de recurso securityVendorInformation
-description: " subFornecedor = AppLocker)."
+description: " subfornecedor = AppLocker)."
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fb5dee36da08332fd5c36f7ee4e578cc9fb7deaa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3fb959da2d6af10632f9113a33eb942492b679ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549696"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034423"
 ---
 # <a name="securityvendorinformation-resource-type"></a>tipo de recurso securityVendorInformation
 
-Contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = Windows Defender ATP; subFornecedor = AppLocker).
+Contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = Windows Defender ATP; subfornecedor = AppLocker).
 
 ## <a name="properties"></a>Propriedades
 

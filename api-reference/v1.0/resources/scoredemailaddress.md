@@ -2,12 +2,15 @@
 title: tipo de recurso scoredEmailAddress
 description: Representa um endereço de email pontuado.
 localization_priority: Normal
-ms.openlocfilehash: 740173e7d5f93dc875c08508bf73100727fdf415
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: b8cdcd7a0192bdd97bc096ce06514e75a7184f63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579156"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034591"
 ---
 # <a name="scoredemailaddress-resource-type"></a>tipo de recurso scoredEmailAddress
 
@@ -17,7 +20,7 @@ Representa um endereço de email pontuado.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|address|string|O endereço de email.|
+|address|cadeia de caracteres|O endereço de email.|
 |relevanceScore|double|A pontuação de relevância do endereço de email. Uma pontuação de relevância é usada como uma chave de classificação em relação aos outros resultados retornados. Um valor mais alto de pontuação de relevância corresponde a um resultado mais relevante. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. |
 
 ## <a name="json-representation"></a>Representação JSON

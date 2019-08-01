@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto deviceConfigurationDeviceSta
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eea019b4e22c78accb81ba8d1381074608055d03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7f707ea2dba5435a73fc20f5a99bf5c515286893
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019104"
 ---
 # <a name="update-deviceconfigurationdevicestatus"></a>Atualizar deviceConfigurationDeviceStatus
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceDisplayName|String|Nome do dispositivo de DevicePolicyStatus.|
 |userName|String|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|

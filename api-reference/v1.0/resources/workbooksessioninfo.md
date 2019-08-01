@@ -4,12 +4,13 @@ description: Fornece informações sobre a sessão de pasta de trabalho.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 502781c4049c9451f5ed67ff97222abf4df462d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f2e6b925e7cc1790b1c6d4f08bab02fa92f19936
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456833"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033331"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>Tipo de recurso workbookSessionInfo
 

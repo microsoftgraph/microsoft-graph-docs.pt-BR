@@ -4,12 +4,13 @@ description: Use os relatórios de uso do aplicativo de email para ver quantos a
 localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: 00adbec446cda1ea6855c7f52e847f88f42c65bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 1418fbbb672a4470aa7873259707c7039533a86b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555896"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030447"
 ---
 # <a name="email-app-usage-reports"></a>Relatórios de uso do aplicativo de email
 

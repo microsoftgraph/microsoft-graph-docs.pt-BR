@@ -2,12 +2,15 @@
 title: Tipo de recurso FilterDatetime
 description: Indica como filtrar uma data ao filtrar valores.
 localization_priority: Normal
-ms.openlocfilehash: 26d42b45a2e9b9cdd279f33330a877a64ea1c8d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e2938c151e052372df1b959e6e24d4a2c0d94ea4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032456"
 ---
 # <a name="filterdatetime-resource-type"></a>Tipo de recurso FilterDatetime
 

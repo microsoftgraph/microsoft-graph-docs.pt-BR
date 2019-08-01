@@ -2,12 +2,15 @@
 title: tipo de recurso registryKeystate
 description: Contém informações sobre as alterações da chave do registro relacionadas ao alerta e o processo que alterou as chaves do registro.
 localization_priority: Normal
-ms.openlocfilehash: d07b0b6f502794154b400444eaf3854535e04547
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 2c68206dc61603324fe346a57da81129b4fe5425
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579391"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034794"
 ---
 # <a name="registrykeystate-resource-type"></a>tipo de recurso registryKeystate
 

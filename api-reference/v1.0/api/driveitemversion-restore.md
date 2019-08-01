@@ -3,12 +3,14 @@ title: Restaurar uma versão anterior de um DriveItem
 description: Restaura uma versão anterior de um DriveItem para ser a versão atual. Isso criará uma nova versão com o conteúdo da versão anterior, mas preservará todas as versões existentes do arquivo.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c9cddabccf3d3e9d09ae18cd1f1e4aa1743cf0a8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: f6a0208526fcd48f5dffa78a073da2aa8191d851
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881584"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006889"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>Restaurar uma versão anterior de um DriveItem
 

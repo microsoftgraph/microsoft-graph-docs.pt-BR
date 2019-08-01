@@ -4,12 +4,13 @@ description: Cria um novo gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6f0c23a95414c17bd022a0118523b8773296dc2a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fde11e816bf5ce12656e0dab3c33db01ad03ce53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881984"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003634"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 

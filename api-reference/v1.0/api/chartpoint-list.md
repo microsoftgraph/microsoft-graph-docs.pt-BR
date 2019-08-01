@@ -4,12 +4,13 @@ description: Recupera uma lista de objetos chartpoint.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a3ca95e0d07eee09b29600d320fa0ec2917ec07f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f8b6a359ca96bb89d9303fd71d0fce096265aafe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888021"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003452"
 ---
 # <a name="list-chartpointscollection"></a>Listar ChartPointsCollection
 

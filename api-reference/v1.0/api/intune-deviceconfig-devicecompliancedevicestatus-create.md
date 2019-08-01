@@ -4,12 +4,13 @@ description: Criar um novo objeto deviceComplianceDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c185490a97a798baba9110c9e28d1750bc8f8ea9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b33cb80c584df64eb7130d24c706b5bb0c16b413
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567841"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997754"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>Criar deviceComplianceDeviceStatus
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceDisplayName|String|Nome do dispositivo de DevicePolicyStatus.|
 |userName|String|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|

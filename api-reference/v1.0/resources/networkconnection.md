@@ -2,12 +2,15 @@
 title: tipo de recurso networkConnection
 description: Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 localization_priority: Normal
-ms.openlocfilehash: 78ddcfd19d68b8dcd64c74a5beed6d1430f0ca38
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 25750b5484558c53ab03d3001bc2b8bafa307524
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580272"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035991"
 ---
 # <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
 

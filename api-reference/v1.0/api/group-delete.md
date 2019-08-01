@@ -4,12 +4,13 @@ description: Descreve o método Delete do recurso de grupo (entidade) da API do 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 15bd2c55fd7f5a056510a5025bc816e029267af3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 95638630fd95220760cce6766edbef5dc84cb544
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890705"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014967"
 ---
 # <a name="delete-group"></a>Excluir grupo
 

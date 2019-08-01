@@ -4,12 +4,13 @@ description: Define a formatação de preenchimento de um elemento do gráfico c
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0a680cd1e6f77ce286df861ac3fcad8880d4b647
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4f230d15f66e7a56e43328c9f71d5b70230b9d58
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881123"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003564"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 

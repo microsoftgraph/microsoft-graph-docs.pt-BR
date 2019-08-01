@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso baseItem é um recurso abstrato que contém um conjunto comum de propriedades compartilhado entre vários outros tipos de recursos.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 2bde386a736805d52758f6d80e629c585f82d87e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569330"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029978"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
@@ -52,7 +55,7 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 
 | Propriedade             | Tipo              | Descrição                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | O identificador exclusivo da unidade. Somente leitura.                                         |
+| id                   | cadeia de caracteres            | O identificador exclusivo da unidade. Somente leitura.                                         |
 | createdBy            | [identitySet][]   | Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.        |
 | createdDateTime      | dateTimeOffset    | Data e hora de criação do item. Somente leitura.                                             |
 | description          | String            | Fornece uma descrição do item visível para o usuário. Opcional.                             |

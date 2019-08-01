@@ -4,12 +4,13 @@ description: Recupera uma lista de usuários que são usuários registrados do d
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: af08b5b248d83e5002f2dfc3380df2d3ee0347b5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: deafad8e18a0556304f0e499d38908aea6563916
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883412"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015681"
 ---
 # <a name="list-registeredusers"></a>Listar registeredUsers
 

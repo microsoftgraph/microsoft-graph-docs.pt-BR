@@ -4,12 +4,13 @@ description: 'Remova o aplicativo do catálogo de aplicativos da sua organizaç�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 49a45bbd8062aeea0de2d82cfae0032990af65e7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7fa273be1265c4e0a236688cc4af4a3f695a1477
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549010"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021131"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Remover um aplicativo do catálogo de aplicativos da sua organização
 

@@ -4,12 +4,13 @@ description: Contém propriedades da arquitetura do Windows.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e88fcfbb0b3c1ee71d66301e849439bda96ed5d5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 8eac48896035613790117653ca1d6a2cfbde79ff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557884"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032043"
 ---
 # <a name="windowsarchitecture-enum-type"></a>tipo de enumeração windowsArchitecture
 
@@ -20,10 +21,10 @@ Contém propriedades da arquitetura do Windows.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum sinalizador definido.|
-|x|1 |Se o tipo de arquitetura do Windows x86 é ou não suportado.|
-|Professional|2 |Se o tipo de arquitetura do Windows x64 é ou não suportado.|
-|equipe|4 |Se o tipo de arquitetura Windows de braço é ou não suportado.|
+|none|,0|Nenhum sinalizador definido.|
+|x|1|Se o tipo de arquitetura do Windows x86 é ou não suportado.|
+|Professional|duas|Se o tipo de arquitetura do Windows x64 é ou não suportado.|
+|equipe|quatro|Se o tipo de arquitetura Windows de braço é ou não suportado.|
 |neutraliza|8 |Se o tipo de arquitetura neutra do Windows é ou não suportado.|
 
 

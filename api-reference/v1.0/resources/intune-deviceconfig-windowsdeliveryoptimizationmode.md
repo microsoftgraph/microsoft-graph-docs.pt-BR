@@ -4,12 +4,13 @@ description: Modo de otimização de entrega para distribuição de mesmo nível
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9034c7c90257a7ca622cd203d4ab84387fd2014
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 9154a78af87dbef125e5d211aba284d7a0023e84
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463891"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027644"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeração windowsDeliveryOptimizationMode
 
@@ -20,7 +21,7 @@ Modo de otimização de entrega para distribuição de mesmo nível
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Permite que o usuário defina.|
+|UserDefined|,0|Permite que o usuário defina.|
 |httpOnly|1|Somente HTTP, sem emparelhamento|
 |httpWithPeeringNat|duas|Padrão de so – http combinado com emparelhamento atrás do mesmo conversor de endereço de rede|
 |httpWithPeeringPrivateGroup|3D|HTTP combinado com emparelhamento em um grupo privado|

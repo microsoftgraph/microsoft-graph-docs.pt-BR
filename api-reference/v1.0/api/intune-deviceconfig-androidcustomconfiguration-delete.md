@@ -4,12 +4,13 @@ description: Exclui androidCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93ea285334b8497b23658090e58c74d3fb7c3dba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f292094e6f51666f95c053cdb9ec3c5a1b6fc16c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553621"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019692"
 ---
 # <a name="delete-androidcustomconfiguration"></a>Excluir androidCustomConfiguration
 

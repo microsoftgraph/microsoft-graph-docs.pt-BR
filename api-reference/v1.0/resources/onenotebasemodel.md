@@ -4,12 +4,13 @@ description: Este é o tipo base para entidades do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 53ed86ae22f3ac9fccdef98e56382cd9440e71e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: be196cff07a33f1debabd71e3e344aee220bf0a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462610"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035837"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>recurso onenoteEntityBaseModel
 

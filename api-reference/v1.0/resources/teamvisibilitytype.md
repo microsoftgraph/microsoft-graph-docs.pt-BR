@@ -1,19 +1,20 @@
 ---
-title: Membros
+title: Members
 description: 'Descreve a visibilidade de uma equipe. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea8868924681d3e8f8cd0b4f55ff947c085260e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 46f84541e88924e9d5a0cb4ec0ac414e422f6d5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456963"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033667"
 ---
-# <a name="teamvisibilitytype-enum-type"></a>tipo de enumeração teamVisibilityType
+#<a name="teamvisibilitytype-enum-type"></a>tipo de enumeração teamVisibilityType
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Descreve a visibilidade de uma [equipe](../resources/team.md). 
 
@@ -23,11 +24,3 @@ Descreve a visibilidade de uma [equipe](../resources/team.md).
 |:---------------|:--------|:----------|
 |privada|,0|Qualquer pessoa pode ver a equipe, mas apenas o proprietário pode adicionar um usuário à equipe.|
 |public|1|Qualquer pessoa pode participar da equipe.|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamvisibilitytype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

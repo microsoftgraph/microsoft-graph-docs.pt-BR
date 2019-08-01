@@ -4,12 +4,13 @@ description: Motivo do estado de acesso ao Exchange do dispositivo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c014afbf22c58f89f8b8926058e28a5ca2d1a1d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 7c154e8529f9693ec891fe39e944e6247300fc9e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519931"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030769"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessStateReason
 
@@ -20,22 +21,22 @@ Motivo do estado de acesso ao Exchange do dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum motivo de estado de acesso descoberto do Exchange|
-|desconhecido|1 |Razão do estado de acesso desconhecido|
-|exchangeGlobalRule|2 |Estado de acesso determinado pela regra global do Exchange|
-|exchangeIndividualRule|3 |Estado de acesso determinado pela regra individual do Exchange|
-|exchangeDeviceRule|4 |Estado de acesso determinado pela regra de dispositivo do Exchange|
-|exchangeUpgrade|5 |Estado de acesso devido à atualização do Exchange|
-|exchangeMailboxPolicy|6 |Estado de acesso determinado pela política de caixa de correio do Exchange|
-|outro|7 |Estado de acesso determinado pelo Exchange|
+|none|,0|Nenhum motivo de estado de acesso descoberto do Exchange|
+|desconhecido|1|Razão do estado de acesso desconhecido|
+|exchangeGlobalRule|duas|Estado de acesso determinado pela regra global do Exchange|
+|exchangeIndividualRule|3D|Estado de acesso determinado pela regra individual do Exchange|
+|exchangeDeviceRule|quatro|Estado de acesso determinado pela regra de dispositivo do Exchange|
+|exchangeUpgrade|0,5|Estado de acesso devido à atualização do Exchange|
+|exchangeMailboxPolicy|6|Estado de acesso determinado pela política de caixa de correio do Exchange|
+|outro|178|Estado de acesso determinado pelo Exchange|
 |com|8 |Estado de acesso concedido por desafio de conformidade|
-|inCompatível|9 |Estado de acesso revogado pelo desafio de conformidade|
+|incompatível|9 |Estado de acesso revogado pelo desafio de conformidade|
 |Não registrado|10 |Estado de acesso revogado pelo desafio de gerenciamento|
-|unknownLocation|12 |Estado de acesso devido à localização desconhecida|
-|mfaRequired|13 |Estado de acesso devido ao desafio da MFA|
-|azureADBlockDueToAccessPolicy|14 |Estado de acesso revogado pela política de acesso AAD|
-|compromisedPassword|15 |Estado de acesso revogado por senha comprometida|
-|deviceNotKnownWithManagedApp|16 |Estado de acesso revogado por desafio de aplicativo gerenciado|
+|unknownLocation|3,6|Estado de acesso devido à localização desconhecida|
+|mfaRequired|Treze|Estado de acesso devido ao desafio da MFA|
+|azureADBlockDueToAccessPolicy|14|Estado de acesso revogado pela política de acesso AAD|
+|compromisedPassword|15|Estado de acesso revogado por senha comprometida|
+|deviceNotKnownWithManagedApp|dezesseis|Estado de acesso revogado por desafio de aplicativo gerenciado|
 
 
 

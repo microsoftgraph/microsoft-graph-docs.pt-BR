@@ -4,12 +4,13 @@ description: Valores possíveis para o tipo de verificação do sistema.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52d1002c7a242f0aca203d84c4d7d16763e5debd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 6d1d5f13e35b5a271393753abf852eee29d32337
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534301"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031854"
 ---
 # <a name="defenderscantype-enum-type"></a>tipo de enumeração defenderScanType
 
@@ -20,10 +21,10 @@ Valores possíveis para o tipo de verificação do sistema.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|deficiência|1 |Verificação de sistema desabilitada.|
-|agiliza|2 |Verificação rápida do sistema.|
-|cheia|3 |Verificação completa do sistema.|
+|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|deficiência|1|Verificação de sistema desabilitada.|
+|agiliza|duas|Verificação rápida do sistema.|
+|cheia|3D|Verificação completa do sistema.|
 
 
 

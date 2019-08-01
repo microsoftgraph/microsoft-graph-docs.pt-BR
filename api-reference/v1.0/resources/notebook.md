@@ -4,12 +4,13 @@ description: Um bloco de anotações do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 2d22cfea2e0e64472aa7a1e07e0b005536850ce3
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: resourcePageType
+ms.openlocfilehash: 720a2d0eeb2a2c105eb92e9e6f323f183b8fbb3d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236611"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035977"
 ---
 # <a name="notebook-resource-type"></a>tipo de recurso Notebook
 
