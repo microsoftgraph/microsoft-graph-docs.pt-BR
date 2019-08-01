@@ -4,12 +4,13 @@ description: 'Retorne todos os grupos dos quais este grupo é um membro. A verif
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 80c22aeeb1868759385e087125b8333278097ea4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1a391c8c30fc2dc38893a980ee73006e0960e715
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889270"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014876"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 Retorne todos os grupos dos quais este grupo é um membro. A verificação é transitiva. Observação: Grupos não podem ser membros de funções de diretório, então nenhuma função de diretório retornará.

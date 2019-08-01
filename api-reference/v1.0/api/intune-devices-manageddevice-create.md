@@ -4,12 +4,13 @@ description: Criar um novo objeto managedDevice.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 320b2fd8878d5ecd0af34152761bda1af6a5985c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 766274595966daeeb00b0802a92bb61c55a32e1f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584689"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018691"
 ---
 # <a name="create-manageddevice"></a>Criar managedDevice
 
@@ -51,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do dispositivo|
-|userId|String|O identificador exclusivo do usuário associado ao dispositivo|
+|userId|Cadeia de caracteres|O identificador exclusivo do usuário associado ao dispositivo|
 |deviceName|String|Nome do dispositivo|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Propriedade do dispositivo. Pode ser "empresa" ou "pessoal". Os valores possíveis são: `unknown`, `company`, `personal`.|
 |deviceActionResults|Coleção [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Lista de objetos ComplexType deviceActionResult.|

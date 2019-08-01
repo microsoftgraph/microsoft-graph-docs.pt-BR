@@ -4,12 +4,13 @@ description: Criar um novo objeto deviceComplianceSettingState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4731d7475e4e27870ade2bbb4b4b54814562e0d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b5e952ca051f7cc01ae5662e0a853b3c8f642f67
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579013"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019293"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Criar deviceComplianceSettingState
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade|
+|id|String|Chave da entidade|
 |configuração|String|O nome da classe de configuração e o nome da propriedade.|
 |settingName|String|O nome da configuração sendo relatada|
 |deviceId|String|A ID do dispositivo sendo relatada|

@@ -4,12 +4,13 @@ description: Tipos de aplicativo possíveis
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 179b9fbfc7ce1a7ebc880ceade39028ec9e42421
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 0bd699f50c23f0d348a23460f276f644d181674c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585129"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036699"
 ---
 # <a name="applicationtype-enum-type"></a>tipo de enumeração ApplicationType
 

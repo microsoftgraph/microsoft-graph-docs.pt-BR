@@ -4,12 +4,13 @@ description: Obter as ocorrências, exceções e instâncias únicas de eventos 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 6e23da1448d37caf6065f0dc380a10a5b2f6e120
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7c1e03aefa55f8d6083b5ed79ef0a13a5d75d153
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889238"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016346"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida, do calendário padrão de um grupo.

@@ -4,12 +4,13 @@ description: Recupera uma série com base na respectiva posição na coleção.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c82d95a1e373fb068636ded4433019b8de9dd57d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 2238e29befbb12140ae15a1bb4cdf713a74142d9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443151"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003305"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 

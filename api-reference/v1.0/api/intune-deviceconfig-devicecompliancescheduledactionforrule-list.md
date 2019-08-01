@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos deviceComplianceSchedu
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b255a4350ad4bd9009f8f377324ab41ea54167c6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 85f7b1d8d2eee3abd7e9068ccf8b582c0128f829
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521982"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017725"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>Listar deviceComplianceScheduledActionForRules
 

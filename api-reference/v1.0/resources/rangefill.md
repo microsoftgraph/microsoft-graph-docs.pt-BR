@@ -4,12 +4,13 @@ description: Representa a tela de fundo de um objeto Range.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 75aa4bd91ad6f1038fdc42460c6a3c9ab928a09d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b884312f8c3a9e8e02242023556713be62f8529f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579470"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034906"
 ---
 # <a name="rangefill-resource-type"></a>Tipo de recurso RangeFill
 

@@ -2,12 +2,15 @@
 title: Excluir inferenceClassificationOverride
 description: Exclua uma substituição especificada de acordo com sua ID.
 localization_priority: Normal
-ms.openlocfilehash: f65c95ec40672335d4a9eae330ae1ba080030405
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 81b2c7b733078753eb51141cb6e970da91ef0b06
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880814"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016143"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Excluir inferenceClassificationOverride
 

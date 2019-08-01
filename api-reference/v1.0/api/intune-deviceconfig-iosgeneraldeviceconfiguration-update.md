@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto iosGeneralDeviceConfiguratio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cd64af8e66e8e1059f975bf0d8e6f9347fab746
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: apiPageType
+ms.openlocfilehash: 3a3303ae1c88591891f2bf4d32ae2e0cd53ff239
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017263"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Atualizar iosGeneralDeviceConfiguration
 

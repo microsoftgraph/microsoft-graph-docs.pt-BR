@@ -4,12 +4,13 @@ description: Representa uma série de um gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b9a857f127848f1ed0da8de673902527e3858ffe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4ecdc4c6f249b6783b023d0a69832a9415fc8549
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569036"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032911"
 ---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
 
@@ -35,7 +36,7 @@ Representa uma série de um gráfico.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Representa a formatação de uma série do gráfico, que inclui a formatação de linha e de preenchimento. Somente leitura.|
+|formato|[WorkbookChartSeriesFormat](chartseriesformat.md)|Representa a formatação de uma série do gráfico, que inclui a formatação de linha e de preenchimento. Somente leitura.|
 |points|Coleção [WorkbookChartPoint](chartpoint.md)|Representa uma coleção de todos os pontos da série. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON

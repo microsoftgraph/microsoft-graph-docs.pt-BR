@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 679f0139f7ad0e94eab1970cc113268a56722663
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Aqui está uma representação JSON de um recurso ColumnDefinition.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 3a02721c5289b1d49077e1b2d9fa1017f0c53021
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584849"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032869"
 ---
 # <a name="columndefinition-resource"></a>Recurso ColumnDefinition
 

@@ -4,12 +4,13 @@ description: Atualize uma propriedade de **alerta** editável em qualquer soluç
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f7768dfb48c20aaf0d1398a776e498a644b3cdfd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b54682d6cf8c313444175a02b403a28de237ebb3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882663"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015807"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 

@@ -4,12 +4,13 @@ description: Obter todos os threads de um grupo.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 913da5fa742a628971a7f18df671082b0e6e470f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 503d9d520d25c100cb210d4191f502d5c9ac8205
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888145"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016253"
 ---
 # <a name="list-threads"></a>Listar threads
 Obter todos os threads de um grupo.
