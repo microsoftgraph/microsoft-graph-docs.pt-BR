@@ -4,12 +4,13 @@ description: Recupere o **usuário** do diretório simples que corresponde a ess
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 4788e0b6997b81ba24aedaf8062060bc2b4486cb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 973b12f5ba7029e4e8374bc1a4665f4b2f79f6b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887565"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002843"
 ---
 # <a name="get-user"></a>Obter usuário
 

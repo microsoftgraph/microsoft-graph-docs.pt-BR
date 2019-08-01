@@ -4,12 +4,13 @@ description: Estado da configuração da política de conformidade de dispositiv
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4d291f84a8c4404ff5b4425680260997b6b452f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 05f79a5967ae97eb825d85732f207682d9add645
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572413"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028459"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingState
 

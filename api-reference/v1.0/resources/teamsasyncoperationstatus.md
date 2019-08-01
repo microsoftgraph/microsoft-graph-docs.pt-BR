@@ -4,16 +4,17 @@ description: Descreve o status atual de um teamsAsyncOperation.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b3ceaca73fe013b76f44cdf9290f3c0935e93b0a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 4ffd6653752968c16d469ade39fc0e399fbee37c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462225"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033730"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>tipo de enumeração teamsAsyncOperationStatus
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).
 
@@ -26,11 +27,3 @@ Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).
 |inProgress|duas|A operação está sendo executada.|
 |adicionada|3D|A operação foi bem-sucedida.|
 |falhou|quatro|Falha na operação.|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

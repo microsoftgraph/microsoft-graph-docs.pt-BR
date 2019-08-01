@@ -4,12 +4,13 @@ description: 'Crie um novo grupo conforme especificado no corpo da solicitação
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 073fa6992345ee3d8275b38d3106bb095fe2308f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2bd288c9a0ee54b4985ca173859b22022be97337
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893165"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016290"
 ---
 # <a name="create-group"></a>Criar grupo
 Crie um novo grupo conforme especificado no corpo da solicitação. Você pode criar os seguintes tipos de grupos:

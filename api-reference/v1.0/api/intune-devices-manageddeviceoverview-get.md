@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto managedDeviceOverview.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b249899a5169ed181e017aef16c909998422f7e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 27ed01c6b4a09b04c2688742008210b00451b203
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018558"
 ---
 # <a name="get-manageddeviceoverview"></a>Get managedDeviceOverview
 

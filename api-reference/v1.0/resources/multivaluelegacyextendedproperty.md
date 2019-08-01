@@ -2,12 +2,15 @@
 title: Tipo de recurso multiValueLegacyExtendedProperty
 description: Uma propriedade estendida que contém uma coleção de valores.
 localization_priority: Normal
-ms.openlocfilehash: 87823559bad3e149ef3c4d4d6f21f43cf66c41fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e513925810d7357f131790445a015be6c193624f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580265"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036005"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Tipo de recurso multiValueLegacyExtendedProperty
 

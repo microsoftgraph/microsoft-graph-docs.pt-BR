@@ -4,12 +4,13 @@ description: Lista propriedades e relações dos objetos deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ed9a6facc72bc941b3e26a802d324e1354d339a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d25838240d55cf78bf2d36b4742c8d18a1cfb174
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577018"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025904"
 ---
 # <a name="list-devicecategories"></a>Listar deviceCategories
 

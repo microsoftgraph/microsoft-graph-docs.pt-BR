@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 979a5996b655ba13847e52dc09b083169ff0815a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1376cab9e33cec0bd22c88907d7af6bd05b32c73
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031413"
 ---
 # <a name="mediacontentratingfrance-resource-type"></a>Tipo de recurso mediaContentRatingFrance
 

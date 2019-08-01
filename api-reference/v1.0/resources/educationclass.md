@@ -4,12 +4,13 @@ description: 'Representa uma aula em uma escola. O recurso **educationClass** co
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: c5b145d12dd99293eef9c338ff840d5781c5ef3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1dc246c3a8f48980b65c896bba4b6fbe1ae66809
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562710"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029327"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -30,13 +31,13 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 |[Remover professor](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| Remova um **educationUser** da aula por meio da propriedade de navegação de professores.|
 |[Obter grupo](../api/educationclass-get-group.md) |[group](group.md)| Recupere o **group** do Office 365 que corresponde a essa **educationClass**.|
 |[Atualizar](../api/educationclass-update.md) | [educationClass](educationclass.md)    |Atualize o objeto **educationClass**. |
-|[Excluir](../api/educationclass-delete.md) | Nenhum |Exclua o objeto **educationClass**. |
+|[Delete](../api/educationclass-delete.md) | Nenhum |Exclua o objeto **educationClass**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id| Cadeia de caracteres| O identificador exclusivo da aula.|
-|description|String| Descrição da aula.|
+|descrição|String| Descrição da aula.|
 |displayName|String| Nome da aula.|
 |mailNickname|String| Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada. |
 |createdBy|[identitySet](identityset.md)| Entidade que criou a aula |
@@ -49,10 +50,10 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|members|Coleção [educationUser](../resources/educationuser.md)| Todos os usuários da aula. Anulável.|
+|membros|Coleção [educationUser](../resources/educationuser.md)| Todos os usuários da aula. Anulável.|
 |schools|Coleção [educationSchool](../resources/educationschool.md)| Todas as escolas às quais essa aula está associada. Anulável.|
 |teachers|Coleção [educationUser](../resources/educationuser.md)|  Todos os professores da aula. Anulável.|
-|grupo|[grupo](../resources/group.md)| O grupo de diretórios correspondente a esta classe.|
+|group|[group](../resources/group.md)| O grupo de diretórios correspondente a esta classe.|
 
 ## <a name="json-representation"></a>Representação JSON
 

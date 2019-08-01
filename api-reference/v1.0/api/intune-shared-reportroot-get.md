@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto reportRoot.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e24a86c1ff4443b0d2867dc9f7da7e273a3012e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6b767ae43a4b38a86665ad2f9d67c89acca33f81
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576801"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023409"
 ---
 # <a name="get-reportroot"></a>Get reportRoot
 

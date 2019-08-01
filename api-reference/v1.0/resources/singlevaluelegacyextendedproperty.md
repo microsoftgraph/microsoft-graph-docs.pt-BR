@@ -2,12 +2,15 @@
 title: Tipo de recurso singleValueLegacyExtendedProperty
 description: 'Uma propriedade estendida que contém um único valor. '
 localization_priority: Normal
-ms.openlocfilehash: f865da1a8a4211ac99a70881b2851b38b8e72727
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 11fb56ec66ffb74a284f0636d4577f911e9993d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549640"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034185"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Tipo de recurso singleValueLegacyExtendedProperty
 

@@ -3,12 +3,14 @@ title: 'driveItem: visualização'
 description: Esta ação permite que você obtenha URLs que podem ser inseridas de curta duração em um item para renderizar uma visualização temporária.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ae5140bf6164aedd051f04c2c43c361f16517e7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 1de53b8183f4277c0241a08822ef539613b83a45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572700"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015338"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
@@ -73,7 +75,7 @@ A resposta será um objeto JSON que contém as seguintes propriedades:
 
 GetUrl, postUrl ou ambos podem ser retornados, dependendo do estado atual do suporte de embed para as opções especificadas.
 
-postparameters é uma cadeia de caracteres `application/x-www-form-urlencoded`formatada como e, se estiver executando uma postaGem no postUrl, o tipo de conteúdo deve ser definido de acordo. Por exemplo:
+postparameters é uma cadeia de caracteres `application/x-www-form-urlencoded`formatada como e, se estiver executando uma postagem no postUrl, o tipo de conteúdo deve ser definido de acordo. Por exemplo:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

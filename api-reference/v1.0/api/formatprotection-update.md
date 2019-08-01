@@ -2,12 +2,15 @@
 title: Atualizar formatprotection
 description: Atualiza as propriedades do objeto formatprotection.
 localization_priority: Normal
-ms.openlocfilehash: 48ae45e50d784386e2a640382a60828393fbb1f8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: ea3b831639cada667f46aa3f5af1d276efd34e7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893016"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002738"
 ---
 # <a name="update-formatprotection"></a>Atualizar formatprotection
 

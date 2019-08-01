@@ -4,12 +4,13 @@ description: Obtenha a contagem de usuários únicos conectados ao Exchange Onli
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5f4ba897ce25ad6f4e71f1a0339addefe19b847f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ed9a884fcdc3bc05b029c6338bd4335eb32376d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886373"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025138"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 

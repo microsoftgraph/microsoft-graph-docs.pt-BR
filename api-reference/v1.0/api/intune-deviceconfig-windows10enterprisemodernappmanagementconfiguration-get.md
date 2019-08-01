@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto windows10EnterpriseM
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cbda36a445677cae79e5c6b3a83004274d36214
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b4c7827c9286b884892827d3df6105f7084497eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576056"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997278"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Acessar windows10EnterpriseModernAppManagementConfiguration
 

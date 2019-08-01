@@ -4,12 +4,13 @@ description: Representa um registro MX adicionado ao arquivo de zona DNS de um d
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bc2764b638f112345ef6328c0cca94ee0757ddfa
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 1d837ce660ebceda300d63d428b92836b3173fba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657956"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032659"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>tipo de recurso domainDnsMxRecord
 

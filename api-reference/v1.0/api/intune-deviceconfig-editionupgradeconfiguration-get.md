@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto editionUpgradeConfiguration
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26dc1d893333fc533a159fb37ecfbd70f187bc3e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1d266489d52984da696837a7f6831ae7df12e4f6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578782"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017431"
 ---
 # <a name="get-editionupgradeconfiguration"></a>Get editionUpgradeConfiguration
 

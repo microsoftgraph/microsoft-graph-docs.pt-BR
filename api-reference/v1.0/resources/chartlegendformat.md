@@ -4,12 +4,13 @@ description: Encapsula as propriedades de formato de uma legenda de gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f35f7a3cf152024bd89f03daf8be98ec1d8066b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2148b6b5baf8bb680f85954d000da097bcf8f0b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569092"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032952"
 ---
 # <a name="chartlegendformat-resource-type"></a>Tipo de recurso ChartLegendFormat
 

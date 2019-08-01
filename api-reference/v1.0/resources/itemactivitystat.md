@@ -5,12 +5,13 @@ title: tipo de recurso Entidadeitemactivitystat
 description: O objeto Entidadeitemactivitystat fornece informações sobre as atividades que ocorreram em um item.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3af10bba565585341d04cdc47702e18e71d8accd
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: bf4396e6da5c56b19d33d7a914d864cb6dd54592
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036670"
 ---
 # <a name="itemactivitystat-resource-type"></a>tipo de recurso Entidadeitemactivitystat
 

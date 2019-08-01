@@ -4,12 +4,14 @@ ms.date: 09/11/2017
 title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 5ff8d61a2796edd615a66416b4f8f4d6d565909a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso personOrGroupColumn em uma columnDefinition indica que os valores da coluna representam uma pessoa ou grupo escolhido no diretório.
+doc_type: resourcePageType
+ms.openlocfilehash: d8ce31e7eb044e588f73afefb2b370e161fa7cdf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462470"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035515"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 

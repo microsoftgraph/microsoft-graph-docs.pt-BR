@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto managedAppPolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3eafd1efaf4368d81445d103e1d2e16ce012ba1f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a39d7f6373cafdb136070983cc82c82cd719f4e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570978"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018257"
 ---
 # <a name="get-managedapppolicy"></a>Get managedAppPolicy
 

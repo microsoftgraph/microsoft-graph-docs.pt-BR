@@ -4,12 +4,13 @@ description: Obtém o objeto de intervalo associado à linha de totais da coluna
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c96009eadcdb1f06e2402786e30d7be93f98823c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 448ea8d6ed94a9909a652a3f31af424774b7d4d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892952"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024410"
 ---
 # <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
 

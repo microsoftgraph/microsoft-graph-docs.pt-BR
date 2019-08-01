@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto deviceConfigurationUserStatu
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2fe736b93cf8a7b08a6685058d953213bf01be7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 185f3df333c58290af0d1749b1b8feff4149245a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578922"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019062"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>Atualizar deviceConfigurationUserStatus
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |userDisplayName|Cadeia de caracteres|Nome de usuário de DevicePolicyStatus.|
 |devicesCount|Int32|Contagem de dispositivos para esse usuário.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|

@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Compartilhar um arquivo com um link
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 90b3ba1b95196ca9d355c605342351f5d321c866
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Você pode usar a ação createLink para compartilhar um DriveItem por meio de um link de compartilhamento.
+doc_type: apiPageType
+ms.openlocfilehash: ebb13629e4e329c6e473dcf700fba58a59d8e8dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881815"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015562"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Criar um link de compartilhamento para um DriveItem
 

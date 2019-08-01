@@ -4,12 +4,13 @@ description: Exclui targetedManagedAppPolicyAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 154888e64928d1fa267bb0fb65dce04c807dc34e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 06fbf5f30a9f8c5281e5bedfd1ffe4b3e203aade
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453769"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974847"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>Excluir targetedManagedAppPolicyAssignment
 

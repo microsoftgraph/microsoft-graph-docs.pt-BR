@@ -4,12 +4,13 @@ description: Obtém o objeto de intervalo que contém a célula única com base 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 96069c11d8e520b64854eb7a2a72dc9d5f6de25b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 39370dafce1d404f4412cbda6e907aaff115afb6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569911"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026240"
 ---
 # <a name="worksheet-cell"></a>Worksheet: Cell
 

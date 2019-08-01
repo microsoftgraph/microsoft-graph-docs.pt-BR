@@ -4,12 +4,13 @@ description: Entidade de Resumo de AppLearning da Proteção de Informações do
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4149d585c187e8ec9c1f8f1f58aa1d646ba4a298
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: aadf33ecc48f1f384ec38bdb4c531343f6bd08bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585122"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036698"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionAppLearningSummary
 
@@ -35,7 +36,7 @@ Entidade de Resumo de AppLearning da Proteção de Informações do Windows
 |deviceCount|Int32|Contagem de dispositivos|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

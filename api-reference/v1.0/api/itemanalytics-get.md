@@ -5,12 +5,13 @@ title: Obter o naanalytics
 description: Obtenha o naanalytics sobre os modos de exibição que foram colocados sob esse recurso.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fec410281cc8f3ae053264a54ab200558691335b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dd8ba2295a84c5ff4612b64c4a1b4485c5a95dbb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888388"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023241"
 ---
 # <a name="get-itemanalytics"></a>Obter o naanalytics
 

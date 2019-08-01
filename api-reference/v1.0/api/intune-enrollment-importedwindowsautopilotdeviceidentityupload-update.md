@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto importedWindowsAutopilotDevic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26cae41f03eb0e6d3febba419071680d45bb6188
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b5bd613884d06fb3b5d10172c71873d4276238a3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566070"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020798"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentityupload"></a>Atualizar importedWindowsAutopilotDeviceIdentityUpload
 

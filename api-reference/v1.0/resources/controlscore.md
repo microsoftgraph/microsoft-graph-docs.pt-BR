@@ -3,12 +3,14 @@ title: tipo de recurso controlScore
 description: Este recurso contém uma pontuação de locatário e uma descrição para um controle individual.
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 64b5377fce01273ab31d7ec293f5dc7a6e1342ff
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 68e4bf278b7d1b6ea6f00f75192847abab1ae3a4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629282"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032841"
 ---
 #  <a name="controlscore-resource-type"></a>tipo de recurso controlScore
 
@@ -18,10 +20,10 @@ Contém uma pontuação de locatário e uma descrição para um controle individ
 
 |Nome |Tipo |Descrição |
 |:--|:--|:--|
-|controlName|Cadeia de caracteres|Controlar o nome exclusivo.|
+|controlName|String|Controlar o nome exclusivo.|
 |score|Duplo|A pontuação alcançada do locatário para o controle (ele varia dia a dia, dependendo das operações do locatário no controle).|
-|controlCategory|Cadeia de caracteres|Categoria de ação de controle (identidade, dados, dispositivo, aplicativos, infraestrutura).|
-|description|String| Descrição do controle.|
+|controlCategory|String|Categoria de ação de controle (identidade, dados, dispositivo, aplicativos, infraestrutura).|
+|descrição|String| Descrição do controle.|
 
 ## <a name="json-representation"></a>Representação JSON
 

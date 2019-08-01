@@ -4,12 +4,13 @@ description: Indica os atributos relacionados à política ou políticas de aces
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bb5562b07e60b10a36dafac37d5839d9bacc060a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: d8b569436152e2a57e152f0fe2f2c632f0d2d93a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033246"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>tipo de recurso appliedConditionalAccessPolicy
 
@@ -22,8 +23,8 @@ Indica os atributos relacionados à política ou políticas de acesso condiciona
 |displayName|String|Refere-se ao nome da política de acesso condicional (exemplo: "exigir MFA de Salesforce").|
 |enforcedGrantControls|Coleção de cadeias de caracteres|Refere-se aos controles Grant impostos pela política de acesso condicional (exemplo: "requer autenticação multifator").|
 |enforcedSessionControls|Coleção de cadeias de caracteres|Refere-se aos controles de sessão aplicados pela política de acesso condicional (exemplo: "exigir controles de aplicação imposta)").|
-|id|Cadeia de caracteres|GUID exclusivo da vigilância de acesso condicional. y|
-|resultado|Cadeia de caracteres| Indica o resultado da política de autoridade de certificação que foi disparada. Os valores possíveis são:<br/>`success`<br/>`failure`<br/>`notApplied`-A política não é aplicada porque as condições da política não foram atendidas.<br/>`notEnabled`– Isso ocorre devido à política em estado desabilitado.|
+|id|String|GUID exclusivo da vigilância de acesso condicional. y|
+|resultado|String| Indica o resultado da política de autoridade de certificação que foi disparada. Os valores possíveis são:<br/>`success`<br/>`failure`<br/>`notApplied`-A política não é aplicada porque as condições da política não foram atendidas.<br/>`notEnabled`– Isso ocorre devido à política em estado desabilitado.|
 
 ## <a name="json-representation"></a>Representação JSON
 

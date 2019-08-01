@@ -4,12 +4,13 @@ description: Cria um novo objeto iosManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b753d1e2b41cefd5659c43c779187c8b54b50a1e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d0861481e25d0e87c9a96a28ae613dc9359a8e93
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521863"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018390"
 ---
 # <a name="create-iosmanagedappprotection"></a>Criar iosManagedAppProtection
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosManag
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|descrição|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|

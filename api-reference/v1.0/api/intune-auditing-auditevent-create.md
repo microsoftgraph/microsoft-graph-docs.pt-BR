@@ -4,12 +4,13 @@ description: Criar um novo objeto auditEvent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a08e7266070e3cbaaa0f639660d806d487ef6cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 4218d76a1bee2dcd25da7ffe1c5e06ddc4ae1029
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575412"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013651"
 ---
 # <a name="create-auditevent"></a>Criar auditEvent
 
@@ -59,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar auditEve
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|Ferramentas para desenvolvedores|String|Categoria de auditoria.|
+|category|String|Categoria de auditoria.|
 
 
 

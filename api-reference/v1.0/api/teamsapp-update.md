@@ -4,16 +4,17 @@ description: 'Atualize um aplicativo publicado anteriormente no catálogo de apl
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b89380a423bf01f6a2bd7e56086cc9290be094cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a963b2f91c149cef6fd5c291888aa2f6a8bb1ad2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521828"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027304"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Atualizar aplicativos publicados no catálogo de aplicativos da sua organização
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Atualize um [aplicativo](../resources/teamsapp.md) publicado anteriormente no catálogo de aplicativos do Microsoft Teams. Essa API atualiza especificamente um aplicativo publicado no catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário). Para publicar no catálogo de aplicativos da sua organização, `organization` especifique como **DistributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .
 
@@ -59,7 +60,7 @@ HTTP/1.1 204 No Content
 ### <a name="request"></a>Solicitação
 
 ```
-PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
 Content-length: 244
 
@@ -73,11 +74,3 @@ Para o aplicativo do teams arquivo zip [consulte CREATE app Package](https://doc
 ```
 HTTP/1.1 204 No Content
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

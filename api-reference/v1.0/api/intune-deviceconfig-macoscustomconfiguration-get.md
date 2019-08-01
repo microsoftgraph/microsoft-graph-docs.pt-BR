@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto macOSCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 518de1a8e9710109b672a1b231852cfb92dedafd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 768a93bcde5bfe4924236b076b3767295a83fed0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581286"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997495"
 ---
 # <a name="get-macoscustomconfiguration"></a>Get macOSCustomConfiguration
 

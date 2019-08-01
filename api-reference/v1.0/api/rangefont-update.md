@@ -4,12 +4,13 @@ description: Atualize as propriedades do objeto rangefont.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d297d08881ff25cb87604aaf0f2951757da70cf2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0522d0a799d6d9956a58d4fea36aecfe75da4bf3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883101"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022135"
 ---
 # <a name="update-rangefont"></a>Atualizar rangefont
 

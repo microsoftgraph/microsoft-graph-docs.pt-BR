@@ -4,12 +4,13 @@ description: Estado da definição de configuração de um determinado dispositi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d79d4c35572c98c82f80f8903d42cfa3b983c2e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c50ed17421b88f2cb6137458ff853bfa92796c2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573442"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031665"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>tipo de recurso deviceConfigurationSettingState
 

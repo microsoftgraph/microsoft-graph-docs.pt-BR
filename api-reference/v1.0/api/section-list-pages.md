@@ -4,16 +4,15 @@ description: Recupere uma lista de objetos Page da seção especificada.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 8d5aae356a703968ca05317e653cad5b9a931161
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8b1150c0470db5bc7d361b962432f8e78e87e7f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521093"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021477"
 ---
 # <a name="list-pages"></a>Listar páginas
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos [Page](../resources/page.md) da seção especificada.
 ## <a name="permissions"></a>Permissões
@@ -57,7 +56,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 Este é um exemplo da solicitação.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/onenote/sections/{id}/pages
+GET https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.<!-- { "blockType": "ignored" } -->
@@ -89,15 +88,10 @@ Content-length: 393
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List pages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/section-list-pages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -1,17 +1,18 @@
 ---
-title: tipo de recurso userSecuritystate
+title: tipo de recurso usersecuritystate
 description: Contém informações monitoradoras sobre a conta de usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9f451f2bc42500eee15bd59809c124a79186916f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9f5a856a9ec04eaf9a04b82e2ed7697a6735ad88
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463807"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033471"
 ---
-# <a name="usersecuritystate-resource-type"></a>tipo de recurso userSecuritystate
+# <a name="usersecuritystate-resource-type"></a>tipo de recurso usersecuritystate
 
 Contém informações monitoradoras sobre a conta de usuário.
 
@@ -28,10 +29,10 @@ Contém informações monitoradoras sobre a conta de usuário.
 |LogonId|String|ID de entrada do usuário.|
 |logonIp|String|Endereço IP para o qual a solicitação de entrada originou.|
 |logonLocation|String|Local (por mapeamento de endereço IP) associado a um evento de entrada do usuário por este usuário.|
-|logonType|logonType|Método de logon do usuário. Os valores possíveis são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|logonType|logonType|Método de logon do usuário. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 |onPremisesSecurityIdentifier|String|O identificador de segurança (SID) do usuário do Active Directory (local).|
 |riskScore|String|A pontuação de risco calculado/gerado pelo provedor da conta de usuário. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
-|userAccounttype|userAccountSecurityType|Tipo de conta de usuário (Associação de grupo), por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
+|useraccounttype|userAccountSecurityType|Tipo de conta de usuário (Associação de grupo), por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
 |userPrincipalName|String|Nome de entrada do usuário-formato da Internet: (nome da conta de usuário) @ (nome de domínio DNS da conta de usuário).|
 
 ## <a name="json-representation"></a>Representação JSON

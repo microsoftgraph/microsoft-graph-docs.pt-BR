@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto iosUpdateConfigurati
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdf7f7adb4a5b54fd3de2d85b5e40175f62afb5b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 56b616801c76e8c5f1e24ed6b5359cfd7e58af96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550089"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997628"
 ---
 # <a name="get-iosupdateconfiguration"></a>Acessar iosUpdateConfiguration
 

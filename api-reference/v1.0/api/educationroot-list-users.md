@@ -4,12 +4,13 @@ description: Recuperar uma lista de objetos user. Esses objetos de usuário incl
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 66dbdfaaa022a81b95c1ecdc02986e36bcab8ac9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 91a68cb6af7ba2ee312d9855273e588ce5059cf8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881415"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006777"
 ---
 # <a name="list-users"></a>Listar usuários
 

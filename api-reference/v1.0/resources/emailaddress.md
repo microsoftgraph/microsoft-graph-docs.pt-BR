@@ -4,12 +4,13 @@ description: O nome e o endereço de email de um destinatário da mensagem ou co
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7af23418132c4d1c20097899f870c7d25be119bc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3b6bddb5436408fa38c931cd7e1e1f5503979e5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555904"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032589"
 ---
 # <a name="emailaddress-resource-type"></a>Tipo de recurso emailAddress
 

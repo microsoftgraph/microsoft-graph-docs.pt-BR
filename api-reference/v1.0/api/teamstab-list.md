@@ -4,16 +4,16 @@ description: 'Recupere a lista de guias no canal especificado dentro de uma equi
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb4a90109c58fb30f268bead15a90178d7317a71
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: be29685f40b925e2e4156de4e653d03db6712818
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521744"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027185"
 ---
 # <a name="list-tabs-in-channel"></a>Listar guias no canal
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere a lista de [guias](../resources/teamstab.md) no [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). 
 
@@ -53,7 +53,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs?$expand=teamsApp
 ```
 
 #### <a name="response"></a>Resposta
@@ -105,9 +105,6 @@ Content-type: application/json
   "description": "List all tabs in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamstab-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->
