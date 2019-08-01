@@ -4,12 +4,13 @@ description: Retorne todos os grupos dos quais o usuário é membro. A verifica�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3886522f38bfd2af9ce5bc4d603fd507d20247d3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3dfac5dee8c350beaccde0fd5d3ecd89693910bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886184"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027045"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 

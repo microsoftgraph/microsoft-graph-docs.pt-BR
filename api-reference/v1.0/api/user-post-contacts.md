@@ -4,12 +4,13 @@ description: Adicione um contato na pasta de Contatos raiz ou no ponto de extrem
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d4ede07f6d3b9482147f6fffbf51d6442b1bdfe9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ee5e0333ecc7971a1c39b9ace8e234b43d8c5ae3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885673"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026737"
 ---
 # <a name="create-contact"></a>Criar contato
 

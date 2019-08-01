@@ -4,12 +4,13 @@ description: 'Obtenha calendários de todos do usuário (`/calendars` propriedad
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d4ea121577225f5176b59c4121fed90d829592ce
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 83a43f042107fae824c761244159ce51b425a87b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880745"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027010"
 ---
 # <a name="list-calendars"></a>Listar calendários
 

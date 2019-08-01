@@ -2,18 +2,17 @@
 title: Obter configurações
 description: Leia o usuário e o objeto de configurações da organização.
 author: dkershaw10
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 59685923c939dae2ae066a2e146398ea8f87a05c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 64ecf4c4f44cf59bf3c6344edda7510a6997d813
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567932"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027073"
 ---
 # <a name="get-settings"></a>Obter configurações
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Leia o usuário e o objeto de [configurações](../resources/user-settings.md) da organização.
 Para saber como atualizar as propriedades do objeto [configurações](../resources/user-settings.md), confira [atualizar as configurações de usuário](user-update-settings.md).
@@ -53,7 +52,7 @@ Se bem-sucedido, esse método retornará um `200 OK` código de resposta e um ob
 ##### <a name="request"></a>Solicitação
 
 ```http
-GET https://graph.microsoft.com/beta/me/settings
+GET https://graph.microsoft.com/v1.0/me/settings
 ```
 
 ##### <a name="response"></a>Resposta
@@ -70,3 +69,4 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": false
 }
 ```
+

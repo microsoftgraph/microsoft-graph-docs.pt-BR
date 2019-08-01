@@ -4,12 +4,13 @@ description: O Microsoft Graph permite que o seu aplicativo obtenha acesso autor
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8cc7a8621cb47cf5f0dde8210cbf0d53a7279332
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+doc_type: conceptualPageType
+ms.openlocfilehash: 8be03135f0d85f9a40360cc832b1fe3acb72042f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812583"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036306"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 

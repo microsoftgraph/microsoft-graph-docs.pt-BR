@@ -4,12 +4,13 @@ description: O ponto de entrada para os recursos do OneNote.
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 8240336bfcb9e45e33172c2c1551b71a65c315e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0311e514c7d15e8b5fafcc94beecaecdcc6d9d49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462799"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035851"
 ---
 # <a name="onenote-resource-type"></a>tipo de recurso do onenote
 

@@ -4,12 +4,13 @@ description: Atualize as propriedades de um objeto user.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5b83f8dc4a8232a6777d3499c92de90de4cbd1e9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5fb7e0643c8caad977ab99d3dbb4d669c73d8d69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885231"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026541"
 ---
 # <a name="update-user"></a>Atualizar usuário
 

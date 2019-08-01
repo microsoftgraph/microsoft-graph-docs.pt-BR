@@ -4,12 +4,13 @@ description: " criar e excluir não têm suporte. Herda de directoryObject."
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8b0255883f4e97a7b4aa101073cf0fac1654519e
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: 24144efea87096d16bd6039748fb0bd0dbba87eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621387"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035697"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 

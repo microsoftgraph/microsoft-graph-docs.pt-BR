@@ -4,12 +4,13 @@ description: Retorna todos os grupos e funções de diretório e unidades admini
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e53f6df930e3bad1005d200da984de7962caff30
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 12cd2cd0bf799eb4f140f747b14a075b7af9c510
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886155"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027024"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 Retorna todos os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva.

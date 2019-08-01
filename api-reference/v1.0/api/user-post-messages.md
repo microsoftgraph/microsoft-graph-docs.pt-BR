@@ -4,12 +4,13 @@ description: Use essa API para criar uma nova mensagem. Rascunhos podem ser cria
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fe5f0a3c8a6ac1a8933cf7586ccf0be9b7cf8feb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c7603085b83ae57f3fbd48a6a0f80b9868a51b5a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885639"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026632"
 ---
 # <a name="create-message"></a>Criar mensagem
 

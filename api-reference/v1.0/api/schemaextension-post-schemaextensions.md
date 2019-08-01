@@ -3,12 +3,14 @@ title: Criar schemaExtension
 description: Criar uma nova definição schemaExtension para estender um tipo de recurso de suporte.
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: d760683fcd04335d6ba77a4a168379b968c61cce
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: d1a3af980cc3dd7fabd7ee258bc66b1d93812b80
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884463"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024774"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 

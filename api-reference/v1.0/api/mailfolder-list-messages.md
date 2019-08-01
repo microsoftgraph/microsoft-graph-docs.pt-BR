@@ -4,12 +4,13 @@ description: Obtenha todas as mensagens na caixa de correio do usuário conectad
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d1e77130a6181d6b32b832312568c7005eb4b37f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 057d441e994f54417d6ed111e401e06ff9dcc26e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856449"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025488"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
