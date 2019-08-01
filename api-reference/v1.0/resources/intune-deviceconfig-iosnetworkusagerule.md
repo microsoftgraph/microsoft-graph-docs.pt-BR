@@ -4,31 +4,32 @@ description: Regras de Uso da Rede permitem que empresas especifiquem como aplic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 516e880e4b6230ca165426b849f57609dcc6e6ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9b173a819015901c531bc1fa9632ec906f73d09c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585066"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031497"
 ---
-# <a name="iosnetworkusagerule-resource-type"></a><span data-ttu-id="15bed-103">Tipo de recurso iosNetworkUsageRule</span><span class="sxs-lookup"><span data-stu-id="15bed-103">iosNetworkUsageRule resource type</span></span>
+# <a name="iosnetworkusagerule-resource-type"></a><span data-ttu-id="7ff6f-103">Tipo de recurso iosNetworkUsageRule</span><span class="sxs-lookup"><span data-stu-id="7ff6f-103">iosNetworkUsageRule resource type</span></span>
 
-> <span data-ttu-id="15bed-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="15bed-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7ff6f-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7ff6f-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="15bed-105">Regras de Uso da Rede permitem que empresas especifiquem como aplicativos gerenciados usam redes, como redes de dados celulares.</span><span class="sxs-lookup"><span data-stu-id="15bed-105">Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.</span></span>
+<span data-ttu-id="7ff6f-105">Regras de Uso da Rede permitem que empresas especifiquem como aplicativos gerenciados usam redes, como redes de dados celulares.</span><span class="sxs-lookup"><span data-stu-id="7ff6f-105">Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="15bed-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="15bed-106">Properties</span></span>
-|<span data-ttu-id="15bed-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="15bed-107">Property</span></span>|<span data-ttu-id="15bed-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="15bed-108">Type</span></span>|<span data-ttu-id="15bed-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="15bed-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7ff6f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7ff6f-106">Properties</span></span>
+|<span data-ttu-id="7ff6f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7ff6f-107">Property</span></span>|<span data-ttu-id="7ff6f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="7ff6f-108">Type</span></span>|<span data-ttu-id="7ff6f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ff6f-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="15bed-110">managedApps</span><span class="sxs-lookup"><span data-stu-id="15bed-110">managedApps</span></span>|<span data-ttu-id="15bed-111">Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)</span><span class="sxs-lookup"><span data-stu-id="15bed-111">[appListItem](../resources/intune-deviceconfig-applistitem.md) collection</span></span>|<span data-ttu-id="15bed-112">Informações sobre os aplicativos gerenciados aos quais essa regra se aplicará.</span><span class="sxs-lookup"><span data-stu-id="15bed-112">Information about the managed apps that this rule is going to apply to.</span></span> <span data-ttu-id="15bed-113">Essa coleção pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="15bed-113">This collection can contain a maximum of 500 elements.</span></span>|
-|<span data-ttu-id="15bed-114">cellularDataBlockWhenRoaming</span><span class="sxs-lookup"><span data-stu-id="15bed-114">cellularDataBlockWhenRoaming</span></span>|<span data-ttu-id="15bed-115">Booliano</span><span class="sxs-lookup"><span data-stu-id="15bed-115">Boolean</span></span>|<span data-ttu-id="15bed-116">Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em roaming.</span><span class="sxs-lookup"><span data-stu-id="15bed-116">If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.</span></span>|
-|<span data-ttu-id="15bed-117">cellularDataBlocked</span><span class="sxs-lookup"><span data-stu-id="15bed-117">cellularDataBlocked</span></span>|<span data-ttu-id="15bed-118">Booliano</span><span class="sxs-lookup"><span data-stu-id="15bed-118">Boolean</span></span>|<span data-ttu-id="15bed-119">Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em nenhum momento.</span><span class="sxs-lookup"><span data-stu-id="15bed-119">If set to true, corresponding managed apps will not be allowed to use cellular data at any time.</span></span>|
+|<span data-ttu-id="7ff6f-110">managedApps</span><span class="sxs-lookup"><span data-stu-id="7ff6f-110">managedApps</span></span>|<span data-ttu-id="7ff6f-111">Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)</span><span class="sxs-lookup"><span data-stu-id="7ff6f-111">[appListItem](../resources/intune-deviceconfig-applistitem.md) collection</span></span>|<span data-ttu-id="7ff6f-112">Informações sobre os aplicativos gerenciados aos quais essa regra se aplicará.</span><span class="sxs-lookup"><span data-stu-id="7ff6f-112">Information about the managed apps that this rule is going to apply to.</span></span> <span data-ttu-id="7ff6f-113">Essa coleção pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="7ff6f-113">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="7ff6f-114">cellularDataBlockWhenRoaming</span><span class="sxs-lookup"><span data-stu-id="7ff6f-114">cellularDataBlockWhenRoaming</span></span>|<span data-ttu-id="7ff6f-115">Booliano</span><span class="sxs-lookup"><span data-stu-id="7ff6f-115">Boolean</span></span>|<span data-ttu-id="7ff6f-116">Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em roaming.</span><span class="sxs-lookup"><span data-stu-id="7ff6f-116">If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.</span></span>|
+|<span data-ttu-id="7ff6f-117">cellularDataBlocked</span><span class="sxs-lookup"><span data-stu-id="7ff6f-117">cellularDataBlocked</span></span>|<span data-ttu-id="7ff6f-118">Booliano</span><span class="sxs-lookup"><span data-stu-id="7ff6f-118">Boolean</span></span>|<span data-ttu-id="7ff6f-119">Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em nenhum momento.</span><span class="sxs-lookup"><span data-stu-id="7ff6f-119">If set to true, corresponding managed apps will not be allowed to use cellular data at any time.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="15bed-120">Relações</span><span class="sxs-lookup"><span data-stu-id="15bed-120">Relationships</span></span>
-<span data-ttu-id="15bed-121">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="15bed-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7ff6f-120">Relações</span><span class="sxs-lookup"><span data-stu-id="7ff6f-120">Relationships</span></span>
+<span data-ttu-id="7ff6f-121">Nenhum</span><span class="sxs-lookup"><span data-stu-id="7ff6f-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="15bed-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="15bed-122">JSON Representation</span></span>
-<span data-ttu-id="15bed-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="15bed-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7ff6f-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7ff6f-122">JSON Representation</span></span>
+<span data-ttu-id="7ff6f-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7ff6f-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosNetworkUsageRule"
