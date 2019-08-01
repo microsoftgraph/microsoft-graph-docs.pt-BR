@@ -4,12 +4,13 @@ description: 'A API de Segurança do Microsoft Graph fornece uma interface unifi
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 0c18abd987aa1d6254930cdbfae6d9de6472ad5d
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+doc_type: conceptualPageType
+ms.openlocfilehash: d71976dabe415174179e2cba5818a7ca31c84af3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812996"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034493"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 

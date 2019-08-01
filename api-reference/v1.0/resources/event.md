@@ -4,12 +4,13 @@ description: Um evento em um calendário.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 887674cb70f5c3247d4a617f6ab6f591340bd0c4
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+doc_type: resourcePageType
+ms.openlocfilehash: f9a77d6d386632df9f617f46af485220680ea1ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030419"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 

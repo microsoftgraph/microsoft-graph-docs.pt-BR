@@ -4,12 +4,13 @@ description: A pasta de trabalho é o objeto de nível superior que inclui os ob
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b4f0a439db5cc430e558f2d43215cb1c5c0f7779
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 993063efa6eeddaae6bd70b8112f901342843452
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033373"
 ---
 # <a name="workbook-resource-type"></a>Tipo de recurso de pasta de trabalho
 

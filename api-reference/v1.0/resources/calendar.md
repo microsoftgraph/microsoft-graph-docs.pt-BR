@@ -4,12 +4,13 @@ description: Um calendário que é um contêiner para eventos. Pode ser um calen
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ab1d80073ea73b2e1b6321628218218f71d6ed24
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.openlocfilehash: 353ddebfca290c8334778b9195aa9d177694be5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029915"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 

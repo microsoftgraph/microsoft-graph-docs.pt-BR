@@ -2,12 +2,15 @@
 title: tipo de recurso fileAttachment
 description: 'Um arquivo (como um arquivo de texto ou um documento do Word) anexado a um evento, mensagem ou postagem. O  **contentBytes** '
 localization_priority: Priority
-ms.openlocfilehash: 07dcdac0497caa106eac38d1248661218a7fcc5e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 7e80a4599d79d17829f2bb07bb61d4adf60df607
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564761"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032505"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 

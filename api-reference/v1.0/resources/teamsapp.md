@@ -2,18 +2,19 @@
 title: tipo de recurso teamsApp
 description: Um aplicativo no catálogo de aplicativos do Microsoft Teams.
 author: nkramer
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2493b7f6adee51e5c5622585055cbd3cf2778656
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9cd1122a39fbe99e62c578486d863af8e13b96b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462267"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033807"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Um aplicativo no catálogo de aplicativos do [Microsoft Teams](teams-api-overview.md).
 
@@ -76,16 +77,11 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsapp.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
 

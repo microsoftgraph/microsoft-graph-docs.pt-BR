@@ -4,12 +4,13 @@ description: Range representa um conjunto de uma ou mais células contíguas, co
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a97747f1dc8cfce10f5f219f1970c07b1f982a52
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 346991b4cf4d545b3d7ccafb87cab9c9b698c940
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579512"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034941"
 ---
 # <a name="range-resource-type"></a>Tipo de recurso Range
 

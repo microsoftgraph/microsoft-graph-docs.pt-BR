@@ -4,12 +4,13 @@ description: Representa uma função do diretório do Azure AD. As funções de 
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 89387858ac9c22fba5897460b82a2b040c40eb75
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 863eab2d015c81a61fbfc71c3a39cf75ff6840cf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658012"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032750"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 

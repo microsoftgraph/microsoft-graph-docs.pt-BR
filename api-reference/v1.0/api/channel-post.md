@@ -4,12 +4,13 @@ description: Crie um novo canal no Microsoft Team, como especificado no corpo da
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2840ebbeebad01d7f3d44717d76c01b40e95f44e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2d32e51ffb45b377b3939423eb344e4bf123c3ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882271"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003844"
 ---
 # <a name="create-channel"></a>Criar canal
 

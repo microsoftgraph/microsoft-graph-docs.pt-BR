@@ -3,12 +3,14 @@ title: Usar a API do Microsoft Graph para acessar as notificações de alteraç�
 description: A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações. Para saber mais, incluindo como se inscrever e lidar com as notificações recebidas, confira Configurar notificações para alterações nos dados de usuário.
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 60def6f31ac13ad5417ad3d00e48e700550f6efe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 1722f888cc7e29e958a84720f8e714f2379db7da
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456889"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033401"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 

@@ -3,12 +3,14 @@ title: Tipo de recurso schemaExtension (extensões de esquema)
 description: 'As extensões de esquema permitem que você defina um esquema para estender e adicionar dados personalizados digitados a um tipo de recurso. Os dados personalizados aparecem como um tipo complexo no recurso estendido. '
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: 72260112e2b23bf185ea86d039fec9e0af778fb9
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 7c0bf49bc0de24cda47e309fdbfb1c4e75b42283
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778345"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034612"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>Tipo de recurso schemaExtension (extensões de esquema)
 

@@ -4,12 +4,13 @@ description: 'Representa um grupo do Azure Active Directory (Azure AD), que pode
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 170f89c0e7c4e701e8b98a5aac8c02404b174b4e
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+doc_type: resourcePageType
+ms.openlocfilehash: 0a8a4cb0a756b302cda792b0c8d32cef846a5d1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805239"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029312"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 

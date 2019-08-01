@@ -4,12 +4,13 @@ description: Representa um provedor de identidade do Azure Active Directory (Azu
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f251853704edd644f615ab986cc3188608fbbe05
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8eb9789f9ec15c51c4ce02b6958ad1ec3886be92
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567554"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029229"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
 

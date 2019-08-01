@@ -4,12 +4,13 @@ description: Um contato é um item no Outlook no qual você pode organizar e sal
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 7b60333bec9bfca9d67fedc379e4a51ce768fba2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ab0236f92075398f2131b40f14c45bfe215b6ea0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548100"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029656"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
 

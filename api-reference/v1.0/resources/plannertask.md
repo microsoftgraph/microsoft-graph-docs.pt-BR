@@ -4,12 +4,13 @@ description: O recurso **plannerTask** representa uma tarefa de Planejador no Of
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 52dd5917ef0ddb2ec0a05d6952962bfc430c6027
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 048b4af4bb227686651e680dd993f0e5ca22b8c5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579948"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035158"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 

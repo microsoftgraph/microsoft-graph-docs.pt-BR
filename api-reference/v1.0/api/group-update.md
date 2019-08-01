@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto group.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 76adffb439e8e2abbfedfa9ac23e840660977443
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 88fd5ff1d1416d7e6abb51901ffb89741628506e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885316"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014652"
 ---
 # <a name="update-group"></a>Atualizar grupo
 

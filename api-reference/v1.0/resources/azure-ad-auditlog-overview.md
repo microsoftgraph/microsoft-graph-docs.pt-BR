@@ -4,12 +4,13 @@ description: O Azure AD (Azure Active Directory) controla métricas de atividade
 localization_priority: Priority
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4df05291b4ce06312f4797b5f89ae49d74246ed5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: conceptualPageType
+ms.openlocfilehash: 7c91aea96c93065a469b64bb3088540928e2e1d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629317"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033072"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Visão geral da API de log de auditoria do Azure AD
 

@@ -2,12 +2,15 @@
 title: Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 description: 'Com o Microsoft Graph, você pode acessar recursos do Azure Active Directory (Azure AD) para habilitar cenários como gerenciar funções de administrador (diretório), convidando usuários externos para uma organização e, se você for um Provedor de Solução na Nuvem (CSP), gerenciar dados do cliente. O Microsoft Graph também fornece métodos que os aplicativos podem usar para, por exemplo, descobrir informações sobre grupo transitivo e associações de função de usuário. '
 localization_priority: Priority
-ms.openlocfilehash: 5269725a130a2aada958ec5998f21bc6489696b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 43da5931c6328fabc77a4e75beaf77c3605e506f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569344"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029957"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
