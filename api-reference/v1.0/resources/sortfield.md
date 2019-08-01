@@ -2,12 +2,15 @@
 title: Tipo de recurso SortField
 description: Representa uma condição em uma operação de classificação.
 localization_priority: Normal
-ms.openlocfilehash: 2c1b9a272fd024455d1297c5f59ca7684283e1a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 33c2d37f46d4fdfdaef4bc5b6d92557668bf9d70
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561296"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034052"
 ---
 # <a name="sortfield-resource-type"></a>Tipo de recurso SortField
 
