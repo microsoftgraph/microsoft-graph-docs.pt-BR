@@ -1,27 +1,30 @@
 ---
 title: Tipo de recurso entity
-description: Nenhum
+description: ''
 localization_priority: Normal
-ms.openlocfilehash: e0903ef3b90a0c176881bbee2aa5aafca4032ccc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 519b6abdc3bddf20c09008fa44036348c985213d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555875"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030426"
 ---
-# <a name="entity-resource-type"></a><span data-ttu-id="854f8-103">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="854f8-103">entity resource type</span></span>
+# <a name="entity-resource-type"></a><span data-ttu-id="ed104-102">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="ed104-102">entity resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="854f8-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="854f8-104">Properties</span></span>
-| <span data-ttu-id="854f8-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="854f8-105">Property</span></span>     | <span data-ttu-id="854f8-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="854f8-106">Type</span></span>   |<span data-ttu-id="854f8-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="854f8-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ed104-103">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ed104-103">Properties</span></span>
+| <span data-ttu-id="ed104-104">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ed104-104">Property</span></span>     | <span data-ttu-id="ed104-105">Tipo</span><span class="sxs-lookup"><span data-stu-id="ed104-105">Type</span></span>   |<span data-ttu-id="ed104-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="ed104-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="854f8-108">id</span><span class="sxs-lookup"><span data-stu-id="854f8-108">id</span></span>|<span data-ttu-id="854f8-109">String</span><span class="sxs-lookup"><span data-stu-id="854f8-109">String</span></span>| <span data-ttu-id="854f8-110">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="854f8-110">Read-only.</span></span>|
+|<span data-ttu-id="ed104-107">id</span><span class="sxs-lookup"><span data-stu-id="ed104-107">id</span></span>|<span data-ttu-id="ed104-108">String</span><span class="sxs-lookup"><span data-stu-id="ed104-108">String</span></span>| <span data-ttu-id="ed104-109">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="ed104-109">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="854f8-111">Relações</span><span class="sxs-lookup"><span data-stu-id="854f8-111">Relationships</span></span>
-<span data-ttu-id="854f8-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="854f8-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="ed104-110">Relações</span><span class="sxs-lookup"><span data-stu-id="ed104-110">Relationships</span></span>
+<span data-ttu-id="ed104-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ed104-111">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="854f8-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="854f8-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ed104-112">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ed104-112">JSON representation</span></span>
 
-<span data-ttu-id="854f8-114">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="854f8-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="ed104-113">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="ed104-113">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
