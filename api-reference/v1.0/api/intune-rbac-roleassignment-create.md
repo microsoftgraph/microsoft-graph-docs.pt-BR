@@ -4,12 +4,13 @@ description: Criar um novo objeto roleAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b8f757d8131b40912b6e02ca402bb2f5aa622fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8bd191f52886d06ff2d059507227efdc826a7961
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561240"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023710"
 ---
 # <a name="create-roleassignment"></a>Criar roleAssignment
 
@@ -50,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleAssi
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
-|description|String|Descrição da atribuição de função.|
+|descrição|String|Descrição da atribuição de função.|
 |resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
 
 
