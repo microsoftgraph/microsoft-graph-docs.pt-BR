@@ -4,20 +4,21 @@ description: A pasta de trabalho é o objeto de nível superior que inclui os ob
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b4f0a439db5cc430e558f2d43215cb1c5c0f7779
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 993063efa6eeddaae6bd70b8112f901342843452
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033373"
 ---
-# <a name="workbook-resource-type"></a><span data-ttu-id="bf8e1-103">Tipo de recurso de pasta de trabalho</span><span class="sxs-lookup"><span data-stu-id="bf8e1-103">Workbook resource type</span></span>
+# <a name="workbook-resource-type"></a><span data-ttu-id="78c92-103">Tipo de recurso de pasta de trabalho</span><span class="sxs-lookup"><span data-stu-id="78c92-103">Workbook resource type</span></span>
 
-<span data-ttu-id="bf8e1-104">A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-104">Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.</span></span>
+<span data-ttu-id="78c92-104">A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.</span><span class="sxs-lookup"><span data-stu-id="78c92-104">Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="bf8e1-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bf8e1-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="78c92-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="78c92-105">JSON representation</span></span>
 
-<span data-ttu-id="bf8e1-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="bf8e1-106">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="78c92-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="78c92-106">Here is a JSON representation of the resource</span></span>
 
 <!--{
   "blockType": "resource",
@@ -34,53 +35,53 @@ ms.locfileid: "32456868"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="bf8e1-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bf8e1-107">Properties</span></span>
-<span data-ttu-id="bf8e1-108">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="bf8e1-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="78c92-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="78c92-107">Properties</span></span>
+<span data-ttu-id="78c92-108">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="78c92-108">None</span></span>
 
-## <a name="methods"></a><span data-ttu-id="bf8e1-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="bf8e1-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="78c92-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="78c92-109">Methods</span></span>
 
-| <span data-ttu-id="bf8e1-110">Método</span><span class="sxs-lookup"><span data-stu-id="bf8e1-110">Method</span></span>       | <span data-ttu-id="bf8e1-111">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="bf8e1-111">Return Type</span></span>  |<span data-ttu-id="bf8e1-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="bf8e1-112">Description</span></span>|
+| <span data-ttu-id="78c92-110">Método</span><span class="sxs-lookup"><span data-stu-id="78c92-110">Method</span></span>       | <span data-ttu-id="78c92-111">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="78c92-111">Return Type</span></span>  |<span data-ttu-id="78c92-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="78c92-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="bf8e1-113">Criar Sessão</span><span class="sxs-lookup"><span data-stu-id="bf8e1-113">Create Session</span></span>](../api/workbook-createsession.md) | [<span data-ttu-id="bf8e1-114">workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="bf8e1-114">workbookSessionInfo</span></span>](workbooksessioninfo.md) |<span data-ttu-id="bf8e1-115">Crie uma sessão de pasta de trabalho para iniciar uma sessão persistente ou não persistente.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-115">Create a workbook session to start a persistent or non-persistent session.</span></span>|
-|[<span data-ttu-id="bf8e1-116">Fechar Sessão</span><span class="sxs-lookup"><span data-stu-id="bf8e1-116">Close Session</span></span>](../api/workbook-closesession.md) | <span data-ttu-id="bf8e1-117">None</span><span class="sxs-lookup"><span data-stu-id="bf8e1-117">None</span></span> |<span data-ttu-id="bf8e1-118">Fechar uma sessão existente.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-118">Close an existing session.</span></span>|
-|[<span data-ttu-id="bf8e1-119">Atualizar Sessão</span><span class="sxs-lookup"><span data-stu-id="bf8e1-119">Refresh Session</span></span>](../api/workbook-refreshsession.md) | <span data-ttu-id="bf8e1-120">None</span><span class="sxs-lookup"><span data-stu-id="bf8e1-120">None</span></span> |<span data-ttu-id="bf8e1-121">Atualizar uma sessão existente.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-121">Refresh an existing session.</span></span>|
+|[<span data-ttu-id="78c92-113">Criar Sessão</span><span class="sxs-lookup"><span data-stu-id="78c92-113">Create Session</span></span>](../api/workbook-createsession.md) | [<span data-ttu-id="78c92-114">workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="78c92-114">workbookSessionInfo</span></span>](workbooksessioninfo.md) |<span data-ttu-id="78c92-115">Crie uma sessão de pasta de trabalho para iniciar uma sessão persistente ou não persistente.</span><span class="sxs-lookup"><span data-stu-id="78c92-115">Create a workbook session to start a persistent or non-persistent session.</span></span>|
+|[<span data-ttu-id="78c92-116">Fechar Sessão</span><span class="sxs-lookup"><span data-stu-id="78c92-116">Close Session</span></span>](../api/workbook-closesession.md) | <span data-ttu-id="78c92-117">None</span><span class="sxs-lookup"><span data-stu-id="78c92-117">None</span></span> |<span data-ttu-id="78c92-118">Fechar uma sessão existente.</span><span class="sxs-lookup"><span data-stu-id="78c92-118">Close an existing session.</span></span>|
+|[<span data-ttu-id="78c92-119">Atualizar Sessão</span><span class="sxs-lookup"><span data-stu-id="78c92-119">Refresh Session</span></span>](../api/workbook-refreshsession.md) | <span data-ttu-id="78c92-120">None</span><span class="sxs-lookup"><span data-stu-id="78c92-120">None</span></span> |<span data-ttu-id="78c92-121">Atualizar uma sessão existente.</span><span class="sxs-lookup"><span data-stu-id="78c92-121">Refresh an existing session.</span></span>|
 
 
-## <a name="relationships"></a><span data-ttu-id="bf8e1-122">Relações</span><span class="sxs-lookup"><span data-stu-id="bf8e1-122">Relationships</span></span>
-| <span data-ttu-id="bf8e1-123">Relação</span><span class="sxs-lookup"><span data-stu-id="bf8e1-123">Relationship</span></span> | <span data-ttu-id="bf8e1-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="bf8e1-124">Type</span></span>   |<span data-ttu-id="bf8e1-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="bf8e1-125">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="78c92-122">Relações</span><span class="sxs-lookup"><span data-stu-id="78c92-122">Relationships</span></span>
+| <span data-ttu-id="78c92-123">Relação</span><span class="sxs-lookup"><span data-stu-id="78c92-123">Relationship</span></span> | <span data-ttu-id="78c92-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="78c92-124">Type</span></span>   |<span data-ttu-id="78c92-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="78c92-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bf8e1-126">names</span><span class="sxs-lookup"><span data-stu-id="bf8e1-126">names</span></span>|<span data-ttu-id="bf8e1-127">Coleção [WorkbookNamedItem](nameditem.md) </span><span class="sxs-lookup"><span data-stu-id="bf8e1-127">[WorkbookNamedItem](nameditem.md) collection</span></span>|<span data-ttu-id="bf8e1-p101">Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-p101">Represents a collection of workbook scoped named items (named ranges and constants). Read-only.</span></span>|
-|<span data-ttu-id="bf8e1-130">tables</span><span class="sxs-lookup"><span data-stu-id="bf8e1-130">tables</span></span>|<span data-ttu-id="bf8e1-131">Coleção [WorkbookTable](table.md)</span><span class="sxs-lookup"><span data-stu-id="bf8e1-131">[WorkbookTable](table.md) collection</span></span>|<span data-ttu-id="bf8e1-p102">Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-p102">Represents a collection of tables associated with the workbook. Read-only.</span></span>|
-|<span data-ttu-id="bf8e1-134">worksheets</span><span class="sxs-lookup"><span data-stu-id="bf8e1-134">worksheets</span></span>|<span data-ttu-id="bf8e1-135">Coleção [WorkbookWorksheet](worksheet.md) </span><span class="sxs-lookup"><span data-stu-id="bf8e1-135">[WorkbookWorksheet](worksheet.md) collection</span></span>|<span data-ttu-id="bf8e1-p103">Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-p103">Represents a collection of worksheets associated with the workbook. Read-only.</span></span>|
+|<span data-ttu-id="78c92-126">names</span><span class="sxs-lookup"><span data-stu-id="78c92-126">names</span></span>|<span data-ttu-id="78c92-127">Coleção [WorkbookNamedItem](nameditem.md) </span><span class="sxs-lookup"><span data-stu-id="78c92-127">[WorkbookNamedItem](nameditem.md) collection</span></span>|<span data-ttu-id="78c92-p101">Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="78c92-p101">Represents a collection of workbook scoped named items (named ranges and constants). Read-only.</span></span>|
+|<span data-ttu-id="78c92-130">tables</span><span class="sxs-lookup"><span data-stu-id="78c92-130">tables</span></span>|<span data-ttu-id="78c92-131">Coleção [WorkbookTable](table.md)</span><span class="sxs-lookup"><span data-stu-id="78c92-131">[WorkbookTable](table.md) collection</span></span>|<span data-ttu-id="78c92-p102">Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="78c92-p102">Represents a collection of tables associated with the workbook. Read-only.</span></span>|
+|<span data-ttu-id="78c92-134">worksheets</span><span class="sxs-lookup"><span data-stu-id="78c92-134">worksheets</span></span>|<span data-ttu-id="78c92-135">Coleção [WorkbookWorksheet](worksheet.md) </span><span class="sxs-lookup"><span data-stu-id="78c92-135">[WorkbookWorksheet](worksheet.md) collection</span></span>|<span data-ttu-id="78c92-p103">Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="78c92-p103">Represents a collection of worksheets associated with the workbook. Read-only.</span></span>|
 
-## <a name="functions"></a><span data-ttu-id="bf8e1-138">Funções</span><span class="sxs-lookup"><span data-stu-id="bf8e1-138">Functions</span></span>
+## <a name="functions"></a><span data-ttu-id="78c92-138">Funções</span><span class="sxs-lookup"><span data-stu-id="78c92-138">Functions</span></span>
 
-<span data-ttu-id="bf8e1-p104">[Funções do Excel](#functions): Invoque uma função de pasta de trabalho usando a sintaxe `POST /workbook/functions/{function-name}` e fornecendo os argumentos de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado de função. O valor `error` de `null` indica a execução bem-sucedida da função.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-p104">[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function.</span></span> 
+<span data-ttu-id="78c92-p104">[Funções do Excel](#functions): Invoque uma função de pasta de trabalho usando a sintaxe `POST /workbook/functions/{function-name}` e fornecendo os argumentos de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado de função. O valor `error` de `null` indica a execução bem-sucedida da função.</span><span class="sxs-lookup"><span data-stu-id="78c92-p104">[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function.</span></span> 
 
-<span data-ttu-id="bf8e1-p105">A lista completa de funções com suporte está listada [aqui](https://support.office.com/pt-BR/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-p105">The complete list of supported functions are listed [here](https://support.office.com/pt-BR/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.</span></span>
+<span data-ttu-id="78c92-p105">A lista completa de funções com suporte está listada [aqui](https://support.office.com/pt-BR/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.</span><span class="sxs-lookup"><span data-stu-id="78c92-p105">The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.</span></span>
 
-<span data-ttu-id="bf8e1-144">_Observações importantes:_</span><span class="sxs-lookup"><span data-stu-id="bf8e1-144">_Important notes:_</span></span> 
-* <span data-ttu-id="bf8e1-145">O parâmetro de entrada do intervalo é fornecido usando um objeto range, em vez da cadeia de caracteres de endereço do intervalo.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-145">The range input parameter is supplied using a range object instead of the range address string.</span></span>  
-* <span data-ttu-id="bf8e1-146">O parâmetro index é indexado como 1, diferentemente do índice 0 usado na maioria das APIs.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-146">The index parameter is 1-indexed unlike the 0-index used in most of the APIs.</span></span> 
+<span data-ttu-id="78c92-144">_Observações importantes:_</span><span class="sxs-lookup"><span data-stu-id="78c92-144">_Important notes:_</span></span> 
+* <span data-ttu-id="78c92-145">O parâmetro de entrada do intervalo é fornecido usando um objeto range, em vez da cadeia de caracteres de endereço do intervalo.</span><span class="sxs-lookup"><span data-stu-id="78c92-145">The range input parameter is supplied using a range object instead of the range address string.</span></span>  
+* <span data-ttu-id="78c92-146">O parâmetro index é indexado como 1, diferentemente do índice 0 usado na maioria das APIs.</span><span class="sxs-lookup"><span data-stu-id="78c92-146">The index parameter is 1-indexed unlike the 0-index used in most of the APIs.</span></span> 
 
-<span data-ttu-id="bf8e1-147">Exemplo: **vlookup**</span><span class="sxs-lookup"><span data-stu-id="bf8e1-147">Example: **vlookup**</span></span>
+<span data-ttu-id="78c92-147">Exemplo: **vlookup**</span><span class="sxs-lookup"><span data-stu-id="78c92-147">Example: **vlookup**</span></span>
 
-<span data-ttu-id="bf8e1-148">Em uma planilha do Excel, a função `vlookup` utiliza os seguintes argumentos:</span><span class="sxs-lookup"><span data-stu-id="bf8e1-148">In an Excel spreadsheet, the `vlookup` function takes the following arguments:</span></span>
+<span data-ttu-id="78c92-148">Em uma planilha do Excel, a função `vlookup` utiliza os seguintes argumentos:</span><span class="sxs-lookup"><span data-stu-id="78c92-148">In an Excel spreadsheet, the `vlookup` function takes the following arguments:</span></span>
 
-1. <span data-ttu-id="bf8e1-149">O valor que você deseja pesquisar, também chamado de valor de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-149">The value you want to look up, also called the lookup value.</span></span>
-2. <span data-ttu-id="bf8e1-150">O intervalo em que o valor de pesquisa está localizado.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-150">The range where the lookup value is located.</span></span> <span data-ttu-id="bf8e1-151">Lembre-se de que o valor de pesquisa sempre deve estar na primeira coluna no intervalo para que o PROCV funcione corretamente.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-151">Remember that the lookup value should always be in the first column in the range for VLOOKUP to work correctly.</span></span> <span data-ttu-id="bf8e1-152">Por exemplo, se o valor de pesquisa estiver na célula C2, o intervalo deve começar com C.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-152">For example, if your lookup value is in cell C2 then your range should start with C.</span></span>
-3. <span data-ttu-id="bf8e1-153">O número da coluna no intervalo que contém o valor de retorno.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-153">The column number in the range that contains the return value.</span></span> <span data-ttu-id="bf8e1-154">Por exemplo, se você especificar B2: D11 como o intervalo, deverá contar B como a primeira coluna, C como a segunda e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-154">For example, if you specify B2: D11 as the range, you should count B as the first column, C as the second, and so on.</span></span>
-4. <span data-ttu-id="bf8e1-155">Opcionalmente, você pode especificar TRUE se desejar uma correspondência aproximada ou FALSE se desejar uma correspondência exata do valor de retorno.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-155">Optionally, you can specify TRUE if you want an approximate match or FALSE if you want an exact match of the return value.</span></span> <span data-ttu-id="bf8e1-156">Se você não especificar nada, o valor padrão sempre será TRUE ou uma correspondência aproximada.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-156">If you don't specify anything, the default value will always be TRUE or approximate match.</span></span>
+1. <span data-ttu-id="78c92-149">O valor que você deseja pesquisar, também chamado de valor de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="78c92-149">The value you want to look up, also called the lookup value.</span></span>
+2. <span data-ttu-id="78c92-150">O intervalo em que o valor de pesquisa está localizado.</span><span class="sxs-lookup"><span data-stu-id="78c92-150">The range where the lookup value is located.</span></span> <span data-ttu-id="78c92-151">Lembre-se de que o valor de pesquisa sempre deve estar na primeira coluna no intervalo para que o PROCV funcione corretamente.</span><span class="sxs-lookup"><span data-stu-id="78c92-151">Remember that the lookup value should always be in the first column in the range for VLOOKUP to work correctly.</span></span> <span data-ttu-id="78c92-152">Por exemplo, se o valor de pesquisa estiver na célula C2, o intervalo deve começar com C.</span><span class="sxs-lookup"><span data-stu-id="78c92-152">For example, if your lookup value is in cell C2 then your range should start with C.</span></span>
+3. <span data-ttu-id="78c92-153">O número da coluna no intervalo que contém o valor de retorno.</span><span class="sxs-lookup"><span data-stu-id="78c92-153">The column number in the range that contains the return value.</span></span> <span data-ttu-id="78c92-154">Por exemplo, se você especificar B2: D11 como o intervalo, deverá contar B como a primeira coluna, C como a segunda e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="78c92-154">For example, if you specify B2: D11 as the range, you should count B as the first column, C as the second, and so on.</span></span>
+4. <span data-ttu-id="78c92-155">Opcionalmente, você pode especificar TRUE se desejar uma correspondência aproximada ou FALSE se desejar uma correspondência exata do valor de retorno.</span><span class="sxs-lookup"><span data-stu-id="78c92-155">Optionally, you can specify TRUE if you want an approximate match or FALSE if you want an exact match of the return value.</span></span> <span data-ttu-id="78c92-156">Se você não especificar nada, o valor padrão sempre será TRUE ou uma correspondência aproximada.</span><span class="sxs-lookup"><span data-stu-id="78c92-156">If you don't specify anything, the default value will always be TRUE or approximate match.</span></span>
 
-<span data-ttu-id="bf8e1-157">Dentro de uma célula, a função `vlookup` tem esta aparência:</span><span class="sxs-lookup"><span data-stu-id="bf8e1-157">Inside a cell, the `vlookup` function looks like this:</span></span> 
+<span data-ttu-id="78c92-157">Dentro de uma célula, a função `vlookup` tem esta aparência:</span><span class="sxs-lookup"><span data-stu-id="78c92-157">Inside a cell, the `vlookup` function looks like this:</span></span> 
 
-<span data-ttu-id="bf8e1-158">= PROCV(valor de pesquisa, intervalo que contém o valor de pesquisa, o número da coluna no intervalo que contém o valor de retorno, opcionalmente, TRUE para coincidência aproximada ou FALSE para uma correspondência exata)</span><span class="sxs-lookup"><span data-stu-id="bf8e1-158">=VLOOKUP(lookup value, range containing the lookup value, the column number in the range containing the return value, optionally specify TRUE for approximate match or FALSE for an exact match)</span></span>
+<span data-ttu-id="78c92-158">= PROCV(valor de pesquisa, intervalo que contém o valor de pesquisa, o número da coluna no intervalo que contém o valor de retorno, opcionalmente, TRUE para coincidência aproximada ou FALSE para uma correspondência exata)</span><span class="sxs-lookup"><span data-stu-id="78c92-158">=VLOOKUP(lookup value, range containing the lookup value, the column number in the range containing the return value, optionally specify TRUE for approximate match or FALSE for an exact match)</span></span>
 
-<span data-ttu-id="bf8e1-159">(Confira a documentação para a função do Excel [PROCV](https://support.office.com/pt-BR/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).</span><span class="sxs-lookup"><span data-stu-id="bf8e1-159">(See the documentation for the [VLOOKUP Excel function](https://support.office.com/pt-BR/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)</span></span>
+<span data-ttu-id="78c92-159">(Confira a documentação para a função do Excel [PROCV](https://support.office.com/pt-BR/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).</span><span class="sxs-lookup"><span data-stu-id="78c92-159">(See the documentation for the [VLOOKUP Excel function](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)</span></span>
 
-<span data-ttu-id="bf8e1-160">O exemplo abaixo mostra como chamar a função `vlookup` e passar esses parâmetros com a API REST do Excel.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-160">The example below shows how to call the `vlookup` function and pass these parameters with the Excel REST API.</span></span>
+<span data-ttu-id="78c92-160">O exemplo abaixo mostra como chamar a função `vlookup` e passar esses parâmetros com a API REST do Excel.</span><span class="sxs-lookup"><span data-stu-id="78c92-160">The example below shows how to call the `vlookup` function and pass these parameters with the Excel REST API.</span></span>
 
-<span data-ttu-id="bf8e1-161">Solicitação:</span><span class="sxs-lookup"><span data-stu-id="bf8e1-161">Request:</span></span> 
+<span data-ttu-id="78c92-161">Solicitação:</span><span class="sxs-lookup"><span data-stu-id="78c92-161">Request:</span></span> 
 
 ```http 
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
@@ -96,7 +97,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="bf8e1-162">Resposta:</span><span class="sxs-lookup"><span data-stu-id="bf8e1-162">Response:</span></span>
+<span data-ttu-id="78c92-162">Resposta:</span><span class="sxs-lookup"><span data-stu-id="78c92-162">Response:</span></span>
 
 ```http
 HTTP code: 200 OK
@@ -111,19 +112,19 @@ content-type: application/json;odata.metadata
 }
 ```
 
-<span data-ttu-id="bf8e1-163">Exemplo: `median`</span><span class="sxs-lookup"><span data-stu-id="bf8e1-163">Example: `median`</span></span>
+<span data-ttu-id="78c92-163">Exemplo: `median`</span><span class="sxs-lookup"><span data-stu-id="78c92-163">Example: `median`</span></span>
 
-<span data-ttu-id="bf8e1-164">Em uma planilha do Excel, a função `median` possui uma matriz de um ou mais intervalos de entrada.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-164">In an Excel spreadsheet, the `median` function takes an array of one or more input ranges.</span></span>
+<span data-ttu-id="78c92-164">Em uma planilha do Excel, a função `median` possui uma matriz de um ou mais intervalos de entrada.</span><span class="sxs-lookup"><span data-stu-id="78c92-164">In an Excel spreadsheet, the `median` function takes an array of one or more input ranges.</span></span>
 
-<span data-ttu-id="bf8e1-165">Dentro de uma célula, a função `median` se parece com este exemplo:</span><span class="sxs-lookup"><span data-stu-id="bf8e1-165">Inside a cell, the `median` function looks like this example:</span></span>
+<span data-ttu-id="78c92-165">Dentro de uma célula, a função `median` se parece com este exemplo:</span><span class="sxs-lookup"><span data-stu-id="78c92-165">Inside a cell, the `median` function looks like this example:</span></span>
 
-<span data-ttu-id="bf8e1-166">=MED(A2:A6)</span><span class="sxs-lookup"><span data-stu-id="bf8e1-166">=MEDIAN(A2:A6)</span></span>
+<span data-ttu-id="78c92-166">=MED(A2:A6)</span><span class="sxs-lookup"><span data-stu-id="78c92-166">=MEDIAN(A2:A6)</span></span>
 
-<span data-ttu-id="bf8e1-167">(Confira a documentação para a função [MED](https://support.office.com/pt-BR/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).</span><span class="sxs-lookup"><span data-stu-id="bf8e1-167">(See the documentation for the [MEDIAN Excel function](https://support.office.com/pt-BR/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)</span></span>
+<span data-ttu-id="78c92-167">(Confira a documentação para a função [MED](https://support.office.com/pt-BR/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).</span><span class="sxs-lookup"><span data-stu-id="78c92-167">(See the documentation for the [MEDIAN Excel function](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)</span></span>
 
-<span data-ttu-id="bf8e1-168">O exemplo abaixo mostra como chamar a função `median` e um ou mais intervalos de entrada com a API REST do Excel.</span><span class="sxs-lookup"><span data-stu-id="bf8e1-168">The example below shows how to call the `median` function and one or more input ranges with the Excel REST API.</span></span> 
+<span data-ttu-id="78c92-168">O exemplo abaixo mostra como chamar a função `median` e um ou mais intervalos de entrada com a API REST do Excel.</span><span class="sxs-lookup"><span data-stu-id="78c92-168">The example below shows how to call the `median` function and one or more input ranges with the Excel REST API.</span></span> 
 
-<span data-ttu-id="bf8e1-169">Solicitação:</span><span class="sxs-lookup"><span data-stu-id="bf8e1-169">Request:</span></span> 
+<span data-ttu-id="78c92-169">Solicitação:</span><span class="sxs-lookup"><span data-stu-id="78c92-169">Request:</span></span> 
 
 ```http 
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
@@ -139,7 +140,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="bf8e1-170">Resposta:</span><span class="sxs-lookup"><span data-stu-id="bf8e1-170">Response:</span></span>
+<span data-ttu-id="78c92-170">Resposta:</span><span class="sxs-lookup"><span data-stu-id="78c92-170">Response:</span></span>
 
 ```http
 HTTP code: 200 OK
