@@ -4,12 +4,13 @@ description: Atualize as propriedades de um objeto de configuração de grupo es
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c6f70a5c78066245b0b927c5e60fc05b9ac33037
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1dfefd18afdef89e4d4a2be5361b2081aeb6b7dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884091"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014505"
 ---
 # <a name="update-a-group-setting"></a>Atualizar uma configuração de grupo
 

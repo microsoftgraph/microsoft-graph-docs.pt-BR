@@ -4,12 +4,13 @@ description: Criar uma cópia de uma equipe. Essa operação também cria uma c�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c3b6b8e9615491275f981a759fabc4ed6a683373
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fe33df030e5f92ee9780c22e1f73b6aa88a021a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534721"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024277"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -56,11 +57,11 @@ POST /teams/{id}/clone
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |classificação|Cadeia de caracteres (opcional)|Descreve uma classificação para o grupo (como impacto comercial baixo, médio ou alto). Se a classificação não for especificada, a classificação será copiada da equipe/grupo original.|
-|description|Cadeia de caracteres (opcional)|Uma descrição opcional para o grupo. Se essa propriedade não for especificada, será deixada em branco.|
+|descrição|Cadeia de caracteres (opcional)|Uma descrição opcional para o grupo. Se essa propriedade não for especificada, será deixada em branco.|
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter. Se essa propriedade não for especificada, será calculada a partir do displayName. Problema conhecido: esta propriedade é ignorada no momento.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Uma lista separada por vírgulas das partes a serem clonadas. As partes legais são "aplicativos, guias, configurações, canais, membros".|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) opcion| Especifica a visibilidade do grupo. Os valores possíveis são: **Private**, **Public**. Se a visibilidade não for especificada, a visibilidade será copiada da equipe/grupo original. Se a equipe que está sendo clonada for uma equipe do **educationClass** , o parâmetro Visibility será ignorado e a visibilidade do novo grupo será definida como HiddenMembership.|
+|visibilidade|[teamVisibilityType](../resources/teamvisibilitytype.md) opcion| Especifica a visibilidade do grupo. Os valores possíveis são: **Private**, **Public**. Se a visibilidade não for especificada, a visibilidade será copiada da equipe/grupo original. Se a equipe que está sendo clonada for uma equipe do **educationClass** , o parâmetro Visibility será ignorado e a visibilidade do novo grupo será definida como HiddenMembership.|
 
 ## <a name="response"></a>Resposta
 

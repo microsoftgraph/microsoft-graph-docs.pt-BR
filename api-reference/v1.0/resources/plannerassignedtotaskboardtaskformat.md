@@ -4,12 +4,13 @@ description: O recurso **plannerAssignedToTaskBoardTaskFormat** representa as in
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d59c8c45c998012cacdf4616f1e31f490bec5791
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c85a68a3a9c17a35bc94ee32ebff156198029bed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462309"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035347"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>tipo de recurso plannerAssignedToTaskBoardTaskFormat
 
@@ -31,7 +32,7 @@ O recurso **plannerAssignedToTaskBoardTaskFormat** representa as informações u
 |unassignedOrderHint|String|O valor de dica usado para ordenar a tarefa na exibição AssignedTo do quadro de tarefas quando a tarefa não é atribuída a qualquer pessoa ou quando o dicionário do orderHintsByAssignee não fornece uma dica de pedido para o usuário ao qual a tarefa é atribuída. O formato é definido conforme descrito [aqui](planner-order-hint-format.md).|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 
 ## <a name="json-representation"></a>Representação JSON

@@ -4,12 +4,13 @@ description: Uma classe abstrata que contém as propriedades base de aplicativos
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91167967a543ea4556c1704a2bba4ec9a10a4c3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 08bc3cb0c6b1a7b815e30179aa79861b08ad3b15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557891"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028949"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -27,9 +28,9 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |displayName|String|O título do aplicativo importado ou definido pelo administrador.|
-|description|String|A descrição do aplicativo.|
+|descrição|String|A descrição do aplicativo.|
 |publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|

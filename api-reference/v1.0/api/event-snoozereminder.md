@@ -4,12 +4,13 @@ description: Adiar um lembrete para um evento em um calendário de usuário até
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 58a6bd6a142f09fe778f69127318418b6451f345
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6ddaf303c590b18f9d620dc663c82e76e068d53b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887254"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006721"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 

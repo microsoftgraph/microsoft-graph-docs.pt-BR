@@ -4,12 +4,13 @@ description: Recupere uma lista de objetos tablerow.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 35ec4e64cdb67b8856fa776c1338142204746b5f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5b1d73dc829756410eb8081cdc5294e4d57841f0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884813"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021421"
 ---
 # <a name="list-rows"></a>Listar linhas
 

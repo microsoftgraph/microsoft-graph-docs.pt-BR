@@ -4,12 +4,13 @@ description: Exclui uma contactFolder que não a padrão.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b742688b694f82eb60a5c6f8b9e4e8fe6cb8cdef
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: be5f222fc59135ad992b11b2eee6d777a387f9c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884014"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003221"
 ---
 # <a name="delete-contactfolder"></a>Excluir contactFolder
 

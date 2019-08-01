@@ -3,12 +3,14 @@ title: Excluir um historyItem
 description: Excluir um item de histórico existente para uma atividade existente do usuário.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 5fc0088b5e8d814e15cb6231956bd8deff266b41
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 39bb298d85d698de8548cbeeedf066c43122698c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458604"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025411"
 ---
 # <a name="delete-a-historyitem"></a>Excluir um historyItem
 

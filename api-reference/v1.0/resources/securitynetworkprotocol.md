@@ -4,12 +4,13 @@ description: Valores possíveis para o protocolo de rede.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f5ab5497676360b96d51220d00e106169eba1df3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 13f6b8f75200b7bdf1778662af6d9455235111c7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584772"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034430"
 ---
 # <a name="securitynetworkprotocol-enum-type"></a>tipo de enumeração securityNetworkProtocol
 
@@ -23,12 +24,12 @@ Valores possíveis para o protocolo de rede.
 |IP|,0|Protocolo de Internet.|
 |ICMP|1| Protocolo de mensagens de controle da Internet.|
 |IGMP|duas| Protocolo de gerenciamento de grupos da Internet.|
-|GGP|3D| Gateway para protocolo gateway.|
+|ggp|3D| Gateway para protocolo gateway.|
 |IPv4|quatro| Protocolo IP versão 4.|
 |tcp|6| Protocolo de controle de transmissão.|
 |confiável|3,6| Protocolo de pacote universal do PARC.|
-|via|17.07.06| Protocolo de dataGrama de usuário.|
-|IDP|22| Protocolo de dataGrama da Internet.|
+|via|17.07.06| Protocolo de datagrama de usuário.|
+|IDP|22| Protocolo de datagrama da Internet.|
 |IPv6|41| Protocolo IP versão 6 (IPv6).|
 |ipv6RoutingHeader|43| cabeçalho de roteamento IPv6.|
 |ipv6FragmentHeader|44| cabeçalho de fragmento IPv6.|

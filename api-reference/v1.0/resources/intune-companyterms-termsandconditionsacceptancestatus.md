@@ -4,12 +4,13 @@ description: Uma entidade termsAndConditionsAcceptanceStatus representa o status
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3df5a81870729fba79519be4010c852aa6810f50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9e222e760f4f0971ea21a904312629517a7104f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523872"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028746"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 

@@ -2,12 +2,15 @@
 title: tipo de recurso Operation
 description: O status de uma operação de execução longa.
 localization_priority: Normal
-ms.openlocfilehash: 4f2e2c9a6fb9eb6d26a3511c637e79822919e2f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 8088d704d5a075131d5ee1b2c3b9edf75785708b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462673"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035725"
 ---
 # <a name="operation-resource-type"></a>tipo de recurso Operation
 

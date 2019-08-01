@@ -4,12 +4,13 @@ description: Recupera uma lista de calendários que pertencem a um grupo de cale
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 3d77904106f2b88e19846d169cf5e78ce0f64b4f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 31c219632a1dc069baf030d9adf6878de913462c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882355"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003935"
 ---
 # <a name="list-calendars"></a>Listar calendários
 

@@ -4,12 +4,13 @@ description: Obtenha grupos e funções de diretório dos quais o usuário é me
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c11d46b16c3a7c20bc6d2eeef4c995608218a926
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7f40c75ddec0b9f1e42b7bfdc4cba77cd7edbb93
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882823"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026765"
 ---
 # <a name="list-user-transitive-memberof"></a>Listar usuário transitiva membro
 

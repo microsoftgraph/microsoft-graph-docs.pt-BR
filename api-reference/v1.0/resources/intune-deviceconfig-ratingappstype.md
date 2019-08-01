@@ -4,12 +4,13 @@ description: Classificação de aplicativos como conteúdo de mídia
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7117955c3c28c1cf58ac11d0eceeca090afd9fcb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 1d915fb1469306b5ef7f62a967091cd794a3aa00
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560862"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031273"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de enumeração ratingAppsType
 
@@ -21,11 +22,11 @@ Classificação de aplicativos como conteúdo de mídia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de aplicativos|
-|Bloqueado|1 |Não permitir conteúdo de aplicativos|
-|agesAbove4|2 |4 +, idade 4 e superior|
-|agesAbove9|3 |9 +, idade 9 e superior|
-|agesAbove12|4 |12 +, idade 12 e superior |
-|agesAbove17|5 |17 +, idade 17 e superior|
+|Bloqueado|1|Não permitir conteúdo de aplicativos|
+|agesAbove4|duas|4 +, idade 4 e superior|
+|agesAbove9|3D|9 +, idade 9 e superior|
+|agesAbove12|quatro|12 +, idade 12 e superior |
+|agesAbove17|0,5|17 +, idade 17 e superior|
 
 
 

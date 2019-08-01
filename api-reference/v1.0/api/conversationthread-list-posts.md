@@ -4,12 +4,13 @@ description: 'Obtenha as postagens do thread especificado. Você pode especifica
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 2a43bf6c9c1a0bcbbb4c90990b6e8b20806d0276
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d8b7211a27830ddd4a0827bd524297f7776b39f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883607"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015723"
 ---
 # <a name="list-posts"></a>Listar postagens
 

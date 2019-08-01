@@ -4,12 +4,13 @@ description: Recupere as propriedades de um objeto de configuração de grupo es
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ed3eadf8834256783b119670c02e193f22f79fdb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ae5b99d5f514fe5e89538977769756a76dc15ae9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886757"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014547"
 ---
 # <a name="get-a-group-setting"></a>Obter uma configuração de grupo
 

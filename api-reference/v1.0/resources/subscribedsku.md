@@ -4,12 +4,13 @@ description: Contém informações sobre um serviço SKU assinado por uma empres
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c3343661f6c72a057c73b70f91a284f3168a9c72
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+doc_type: resourcePageType
+ms.openlocfilehash: f0e99acd1cfead36cd4f0591591cfbe7cee9d1e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639063"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034017"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 

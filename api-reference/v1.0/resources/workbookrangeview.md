@@ -4,12 +4,13 @@ description: RangeView representa um conjunto de células visíveis do intervalo
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 745ed45b4e5b79c8d1764a86fac04cf7fcfdcc26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d0e30db53ec6e798bf62d5a64aa7d856ddc8f5e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456847"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033345"
 ---
 # <a name="rangeview-resource-type"></a>tipo de recurso rangeView
 RangeView representa um conjunto de células visíveis do intervalo pai.
@@ -27,13 +28,13 @@ RangeView representa um conjunto de células visíveis do intervalo pai.
 |:---------------|:--------|:----------|
 |cellAddresses|Json|Representa os endereços de célula
 |columnCount|Int32|Retorna o número de colunas visíveis. Somente leitura.|
-|formulas|Json|Representa a fórmula em notação A1. |
+|fórmulas|Json|Representa a fórmula em notação A1. |
 |formulasLocal|Json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário. Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.    |
 |formulasR1C1|Json|Representa a fórmula em notação no estilo L1C1.   |
 |índice|Int32|O índice do intervalo.|
 |numberFormat|Json|Representa o código de formato de número do Excel para determinada célula. Somente leitura. |
 |rowCount|Int32|Retorna o número de linhas visíveis. Somente leitura.  |
-|text|Json|Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição pelo sinal #, que ocorre na interface de usuário do Excel, não afeta o valor de texto retornado pela API. Somente leitura.    |
+|texto|Json|Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição pelo sinal #, que ocorre na interface de usuário do Excel, não afeta o valor de texto retornado pela API. Somente leitura.    |
 |valueTypes|Json|Representa o tipo de dados de cada célula. Somente leitura. Os valores possíveis são: Unknown, Empty, String, Integer, Double, Boolean, Error. |
 |values|Json|Representa os valores brutos da exibição do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.   |
 

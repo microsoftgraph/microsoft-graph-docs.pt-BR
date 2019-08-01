@@ -4,12 +4,13 @@ description: O recurso **plannerUserIds** representa a lista de IDs de usuários
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 33a1d6472f4c146d0875ec35fdee920652b7de39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 80f34e9c3b4d81fb32ae6c29a180f3f4ddf56d45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576007"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035123"
 ---
 # <a name="planneruserids-resource-type"></a>tipo de recurso plannerUserIds
 

@@ -4,12 +4,13 @@ description: Um grupo de seções em um bloco de anotações do OneNote. Os grup
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ec27343121ba20ef65703f3df1d53e6c62ccc8e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 65511c11810a95dfaf7497b0cc2cb1b1ad89c8a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034549"
 ---
 # <a name="sectiongroup-resource-type"></a>tipo de recurso de @ @ @ Section
 
@@ -61,10 +62,10 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|parentNotebook|[Bloco de anotações](notebook.md)|O bloco de anotações que contém o grupo de seções. Somente leitura.|
+|parentNotebook|[Notebook](notebook.md)|O bloco de anotações que contém o grupo de seções. Somente leitura.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|O grupo de seções que contém o grupo de seções. Somente leitura.|
-|sectionGroups|Coleção de [seções](sectiongroup.md)|Os grupos de seção na seção. Somente leitura. Anulável.|
-|sections|Coleção [OnenoteSection](section.md)|As seções no grupo de seções. Somente leitura. Anulável.|
+|sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Os grupos de seção na seção. Somente leitura. Anulável.|
+|seções|Coleção [OnenoteSection](section.md)|As seções no grupo de seções. Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 
@@ -72,7 +73,7 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------|:--------|:----------|
 |[Obter grupo de seções](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |Leia as propriedades e as relações do grupo de seções.|
 |[Criar grupo de seções](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Crie um grupo de seção postando na coleção sectionGroups no grupo de seção especificado.|
-|[Listar grupos de seções](../api/sectiongroup-list-sectiongroups.md) |Coleção de [seções](sectiongroup.md)| Obtém a coleção de grupos de seção no grupo de seção especificado.|
+|[List section groups](../api/sectiongroup-list-sectiongroups.md) |Coleção [SectionGroup](sectiongroup.md)| Obtém a coleção de grupos de seção no grupo de seção especificado.|
 |[Criar seção](../api/sectiongroup-post-sections.md) |[OnenoteSection](section.md)| Crie uma seção postando na coleção Sections no grupo de seção especificado.|
 |[Listar seções](../api/sectiongroup-list-sections.md) |Coleção [OnenoteSection](section.md)| Obter uma coleção de seções no grupo de seção especificado.|
 

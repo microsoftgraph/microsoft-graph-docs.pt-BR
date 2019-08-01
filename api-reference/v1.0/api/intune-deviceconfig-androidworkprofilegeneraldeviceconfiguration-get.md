@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto Entidadeandroidforwo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbebbbc28efb46d370aff602565077ce6973ea65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b03513d9b32caf25e721eb0ab1996863f1fedebb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550011"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017907"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>Obter Entidadeandroidforworkprofiledeviceconfiguration
 

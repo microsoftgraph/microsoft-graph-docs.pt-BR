@@ -2,12 +2,15 @@
 title: tipo de recurso Process
 description: Contém informações de estado sobre o processo relacionado ao alerta.
 localization_priority: Normal
-ms.openlocfilehash: 0b4207c1780dfd6327ceb67e837f793341e609ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: ccaf2e3048fc26573e9599a515aabf391dda6d58
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579871"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035081"
 ---
 # <a name="process-resource-type"></a>tipo de recurso Process
 
@@ -22,7 +25,7 @@ Contém informações de estado sobre o processo relacionado ao alerta.
 |createdDateTime|DateTimeOffset|Hora em que o processo foi iniciado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |fileHash|[fileHash](filehash.md)|Tipo complexo contendo hashes de arquivo (criptográfico e diferencia local).|
 |integrityLevel|processIntegrityLevel|O nível de integridade do processo. Os possíveis valores são: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|isElevados|Booliano|True se o processo é elevado.|
+|iselevados|Booliano|True se o processo é elevado.|
 |name|String|O nome do arquivo de imagem do processo.|
 |parentProcessCreatedDateTime|DateTimeOffset|DateTime no qual o processo pai foi iniciado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |parentProcessId|Int32|A ID de processo (PID) do processo pai.|

@@ -4,12 +4,13 @@ description: Atualiza as propriedades do objeto chartgridlines.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a63c7547fa7f510f9dfcdd14e8e98ca6938fa98c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7db2cd327a221ac08e8c49a96c634be3dcaed934
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881934"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003522"
 ---
 # <a name="update-chartgridlines"></a>Atualizar chartgridlines
 

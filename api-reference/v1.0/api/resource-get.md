@@ -4,12 +4,13 @@ description: Recupere os dados binários de um objeto de recurso de arquivo ou i
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: d707f2e93d26598474d119eef1c30f122ff29061
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 97926fe5545b84acf1851643a13ab4cd837d7de8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893848"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021606"
 ---
 # <a name="get-resource"></a>Obter recurso
 

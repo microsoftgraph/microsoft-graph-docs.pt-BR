@@ -4,12 +4,13 @@ description: Você pode usar os relatórios de atividades do SharePoint para obt
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5754149f573798bfbb10a6ac6c2b9ca60fce597a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 27d7a1ad734bf5d5dbeff59d577232628e531883
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549605"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034311"
 ---
 # <a name="sharepoint-activity-reports"></a>Relatório de atividades do SharePoint
 

@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto remoteAssistancePart
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9ebe24dd668eab75bfb45f8cdd34b25428f15b9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e0cd11f4b5c6fd2a1ecbe765997139d7d71b4b96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585227"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023570"
 ---
 # <a name="get-remoteassistancepartner"></a>Acessar remoteAssistancePartner
 

@@ -4,12 +4,13 @@ description: Criar um novo objeto deviceComplianceScheduledActionForRule.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71ffdf4671e3df351c82fa0ca18782063ea2b493
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ecaff4ee51e8f2c8b764b641d924f695bd194140
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574586"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997670"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Criar deviceComplianceScheduledActionForRule
 

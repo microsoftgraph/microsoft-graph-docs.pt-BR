@@ -4,12 +4,13 @@ description: 'Você pode usar o Microsoft Graph para permitir que aplicativos we
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 0010a7244d9ba6e629849f55dfc793bf6b875b38
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 44d24c2757d690542a5afdcc7496d92551502aea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575797"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030398"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 

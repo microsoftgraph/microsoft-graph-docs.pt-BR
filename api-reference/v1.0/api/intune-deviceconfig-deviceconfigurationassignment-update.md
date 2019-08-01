@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto deviceConfigurationAssignmen
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d31914b287707ef62a2d3771ffecac99817ebbee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0057545bef8312795f78a5e1859621853d879896
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557077"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017606"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Atualizar deviceConfigurationAssignment
 

@@ -4,12 +4,13 @@ description: Representa uma política de ciclo de vida de um grupo do Office 365
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 5ccc60b78607077c5f822cd56c70f4895fa9cefe
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: 11f42c07857f94e081d79c6555e4608283dd9381
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620805"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030265"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Tipo de recurso groupLifecyclePolicy
 

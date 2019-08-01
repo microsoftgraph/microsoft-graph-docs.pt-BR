@@ -4,12 +4,13 @@ description: Uma pasta com os aplicativos na tela inicial
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f00c67b7a0679d92ef6aac78bc0317e461dcd2f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 76a8237442e0e807e0a1383c8032cf4e6361516e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554636"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028207"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Tipo de recurso iosHomeScreenFolderPage
 

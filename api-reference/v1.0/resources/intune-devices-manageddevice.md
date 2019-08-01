@@ -4,12 +4,13 @@ description: Dispositivos gerenciados ou pré-registrados pelo Intune
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3672e9a03c3259c56744a9c786cf6b1b8eacc7f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9d46ca04225e3ceb8df79e72ce80be019af4fd8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522626"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027465"
 ---
 # <a name="manageddevice-resource-type"></a>Tipo de recurso managedDevice
 
@@ -48,7 +49,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do dispositivo|
-|userId|String|O identificador exclusivo do usuário associado ao dispositivo|
+|userId|Cadeia de caracteres|O identificador exclusivo do usuário associado ao dispositivo|
 |deviceName|String|Nome do dispositivo|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Propriedade do dispositivo. Pode ser "empresa" ou "pessoal". Os valores possíveis são: `unknown`, `company`, `personal`.|
 |deviceActionResults|Coleção [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Lista de objetos ComplexType deviceActionResult.|
@@ -84,7 +85,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |serialNumber|Cadeia de caracteres|SerialNumber|
 |phoneNumber|String|Número de telefone do dispositivo|
 |androidSecurityPatchLevel|String|Nível do patch de segurança Android|
-|userDisplayName|String|Nome de exibição do usuário|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Recursos habilitados pelo cliente do ConfigrMgr|
 |wiFiMacAddress|String|MAC Wi-Fi|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|O estado do atestado de integridade do dispositivo.|

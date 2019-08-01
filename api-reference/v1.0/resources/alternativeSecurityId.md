@@ -2,12 +2,15 @@
 title: Tipo de recurso alternativeSecurityId
 description: Apenas para uso interno.
 localization_priority: Normal
-ms.openlocfilehash: 60e45c6d914c64f92b9f15f78fda22372a23e91f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: d4cdfa609e5cc2daf484bf0f35b863285ee811dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345838"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033240"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Tipo de recurso alternativeSecurityId
 

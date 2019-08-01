@@ -2,12 +2,15 @@
 title: Tipo de recurso automaticRepliesSetting
 description: 'Definições de configuração para notificar automaticamente o remetente de um email de entrada com uma mensagem da '
 localization_priority: Normal
-ms.openlocfilehash: 81fb16a9124c60f43887150917f132579aa4f163
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: cad76eb9ebbd8646e96cea1b98cb8d87c20a3b23
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569421"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030034"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>Tipo de recurso automaticRepliesSetting
 

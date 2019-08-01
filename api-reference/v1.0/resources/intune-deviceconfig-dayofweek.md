@@ -4,12 +4,13 @@ description: Valores possíveis para um dia da semana
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f3f773909b2110a944cfcbc4f632ab7e80e5496
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 259d6fb135d8665d320b7de34ab8aa237b7a879a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575160"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031882"
 ---
 # <a name="dayofweek-enum-type"></a>tipo de enumeração de dayOfWeek
 
@@ -21,12 +22,12 @@ Valores possíveis para um dia da semana
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |domingo|,0|Domingo.|
-|período|1 |Segunda-feira.|
-|feira|2 |Terça-feira.|
-|feira|3 |Quarta-feira.|
-|quinta-feira|4 |Quinta-feira.|
-|sexta|5 |Sexta-feira.|
-|sábado|6 |Sábado.|
+|período|1|Segunda-feira.|
+|feira|duas|Terça-feira.|
+|feira|3D|Quarta-feira.|
+|quinta-feira|quatro|Quinta-feira.|
+|sexta|0,5|Sexta-feira.|
+|sábado|6|Sábado.|
 
 
 

@@ -2,12 +2,15 @@
 title: Tipo de recurso reminder
 description: Um lembrete para um evento em um calendário do usuário.
 localization_priority: Normal
-ms.openlocfilehash: e8aa591f078b90249b36d3dc2f666ddac4502461
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 1fd2198113187ec5e4a1c507cf31d35457662d8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579342"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034745"
 ---
 # <a name="reminder-resource-type"></a>Tipo de recurso reminder
 

@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto settingStateDeviceSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7adbba330453a0bcd308fe5aa5804c8a63dfc2ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 55ee189e1241e2ab295c511e521c8b3ff32c7c63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572532"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020315"
 ---
 # <a name="update-settingstatedevicesummary"></a>Atualizar settingStateDeviceSummary
 

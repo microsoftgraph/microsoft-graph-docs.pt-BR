@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos iosCustomConfiguration
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0bbdd104a7f614bb86e143ce3cec2a4fadfcb9a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0eb87fde994c29ffb77016067e8b550362a21da7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552760"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018957"
 ---
 # <a name="list-ioscustomconfigurations"></a>Listar iosCustomConfigurations
 

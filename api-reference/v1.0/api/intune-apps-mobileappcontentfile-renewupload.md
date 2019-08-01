@@ -4,12 +4,13 @@ description: Renova a URI SAS para um carregamento de arquivo de aplicativo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e68ae93113db49fe7bd8c12d335406db2f4a18b1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a29d400908b5c9d82b94613c55354edda4eba35f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554762"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013693"
 ---
 # <a name="renewupload-action"></a>Ação renewUpload
 

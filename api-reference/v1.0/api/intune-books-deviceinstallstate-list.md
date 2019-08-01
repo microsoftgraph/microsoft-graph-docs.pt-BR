@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 122af650573b3a8b29ddf91e4859e5ce6b487c53
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b0d9424edd4e0381b58cd54ad31681e80095665b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570551"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013602"
 ---
 # <a name="list-deviceinstallstates"></a>Listar deviceInstallStates
 

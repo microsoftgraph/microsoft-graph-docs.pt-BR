@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
-ms.openlocfilehash: 42824275bd79f4b631d53365997d2dd96984f7b5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso numberColumn em um recurso columnDefinition indica que os valores da coluna são números.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9196e2508ed3109ee56c24ad72943ca50aed11bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463072"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035964"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 

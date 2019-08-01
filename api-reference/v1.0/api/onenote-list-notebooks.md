@@ -4,12 +4,13 @@ description: Recuperar uma lista de objetos do bloco de anotações.
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 819120fbd4e91db4edbeff89315396ce3e41e36c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cabdf21f697dd4be36fba34ffbe26eab1e37d288
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892803"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976481"
 ---
 # <a name="list-notebooks"></a>Listar blocos de anotações
 

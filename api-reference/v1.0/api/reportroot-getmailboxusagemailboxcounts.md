@@ -4,12 +4,13 @@ description: Obtenha o número total de caixas de correio de usuários em sua or
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a0fa3f60d981057cf2dc14cbf459cccc8eeb4dfe
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 29363dde998fa641bddbaee6e436ed70458f4975
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894374"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022058"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 

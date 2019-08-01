@@ -5,16 +5,17 @@ title: Tipo de recurso ItemActionSet
 description: O objeto doactionset fornece informações sobre as ações que foram realizadas como parte de uma atividade em um item.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 065a6126e2e4a2f78cecfb2ae5497fac28e16899
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: a28a3380761e2d1914d7c088e5927fc5d3addd4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970599"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036719"
 ---
 # <a name="itemactionset-resource-type"></a>tipo de recurso doactionset
 
-O **** recurso doactionset fornece informações sobre as ações que compõem uma [atividade] [ itemActivity] em um item.
+O **** recurso doactionset fornece informações sobre as ações que compõem uma [atividade][itemActivity] em um item.
 
 >**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 

@@ -4,12 +4,13 @@ description: Recupera as propriedades e os relacionamentos do objeto chartpoint.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 523a0c42204179fbaaf0b2eaabffb53d4d77079b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ec6dbbebf95148cb099e0ba719877ee98f94d8df
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886064"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003445"
 ---
 # <a name="get-chartpoint"></a>Obter ChartPoint
 

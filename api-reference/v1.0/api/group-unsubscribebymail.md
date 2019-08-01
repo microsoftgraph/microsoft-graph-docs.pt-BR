@@ -4,12 +4,13 @@ description: 'Chamar esse método impedirá que o usuário atual receba notifica
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 960524c1bae01a058b734b3d3eca31897ea1798c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3c0eaeb672ae08a7c7a671c214c726cb0f3cba30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885329"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014708"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 Chamar esse método impedirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Suporte apenas para grupos do Office 365. 

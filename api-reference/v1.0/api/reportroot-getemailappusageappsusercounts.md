@@ -4,12 +4,13 @@ description: Obtenha a contagem de usuários únicos por aplicativo de email.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: d5bf8d1bd93f3723693da372356a89d470dd8bf8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1fb8e8878c5ee5ddbf7bc1f9ccc9208ef9cd78ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891874"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022080"
 ---
 # <a name="reportroot-getemailappusageappsusercounts"></a>reportRoot: getEmailAppUsageAppsUserCounts
 

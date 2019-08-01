@@ -4,12 +4,13 @@ description: Exclui iosGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3e69f0e5682112e82ebef43c803faa363c048d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e5c5009cc32ff3f53331d54492cbcf3d86ea57db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459721"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017270"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>Excluir iosGeneralDeviceConfiguration
 

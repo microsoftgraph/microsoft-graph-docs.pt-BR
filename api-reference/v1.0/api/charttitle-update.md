@@ -4,12 +4,13 @@ description: Atualiza as propriedades do objeto charttitle.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c68c0a87709bf7639fc4290fdabd91b84fa58725
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cd0b6587a23f79446f5c0e54fef627ecd9332efa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892609"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003284"
 ---
 # <a name="update-charttitle"></a>Atualizar charttitle
 

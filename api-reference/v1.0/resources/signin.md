@@ -4,12 +4,13 @@ description: Detalha a atividade de entrada do usuário e do aplicativo para um 
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb73b843643c5ffba1b5cdac3d7fd519819109ba
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 735f7cc453a15ebf36aabc0e4d6a7a845a6c416c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629240"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034227"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -46,8 +47,8 @@ Detalha a atividade de entrada do usuário e do aplicativo para um locatário (d
 |riskState|riskState|Relata o status do usuário arriscado, de entrada ou de um evento de risco. Os valores possíveis são `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |status|[signInStatus](signinstatus.md)|Status de logon. Os valores possíveis incluem `Success` e `Failure`.|
 |userDisplayName|String|Nome para exibição do usuário que iniciou a entrada.|
-|userId|Cadeia de caracteres|ID do usuário que iniciou a entrada.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário que iniciou a entrada.|
+|userId|String|ID do usuário que iniciou a entrada.|
+|userPrincipalName|String|Nome principal do usuário que iniciou a entrada.|
 
 ## <a name="relationships"></a>Relações
 

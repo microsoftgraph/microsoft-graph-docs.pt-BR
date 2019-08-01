@@ -4,12 +4,13 @@ description: Representa os tipos de recursos de destino associados à atividade 
 localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
-ms.openlocfilehash: 33a381d6088245be235f37549184183443fe3237
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: e21e2fad07dca15c5be42b8de29aa5c791c50d69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033898"
 ---
 # <a name="targetresource-resource-type"></a>tipo de recurso targetResource
 
@@ -20,10 +21,10 @@ Representa os tipos de recursos de destino associados à atividade de auditoria.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String|Indica a ID exclusiva do recurso.|
-|displayName|Cadeia de caracteres|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
+|displayName|String|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
 |type|String|Descreve o tipo de recurso.  Os valores de `Application`exemplo `Group`incluem `ServicePrincipal`,, `User`e.|
 |userPrincipalName|Cadeia de caracteres|Quando o **tipo** está definido `User`como, isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
-|groupType|Cadeia de caracteres|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
+|groupType|String|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
 |ModifiedProperties|[](modifiedproperty.md) coleção modifiedproperty|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do **tipo**de operação.|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -5,12 +5,13 @@ title: Obter estatísticas de atividade de item por intervalo
 description: Obter itemAnalyticyStats para as atividades que foram realizadas nesse recurso dentro do intervalo de tempo especificado.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2f8f2a449ddb730b31275ba2789fb14ea4f279b6
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: apiPageType
+ms.openlocfilehash: 30f06f9bcdfb96f61f39b81152f0c9cd23872e49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970587"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025530"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
 

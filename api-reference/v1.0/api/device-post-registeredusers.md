@@ -4,12 +4,13 @@ description: Adiciona um usuário registrado ao dispositivo.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2968e98b264177ba999d205dc508e1aa4d491c44
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: fddf0bffb3cd09caa7397fb29d111bc75e48e85c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449110"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002920"
 ---
 # <a name="create-registereduser"></a>Criar registeredUser
 

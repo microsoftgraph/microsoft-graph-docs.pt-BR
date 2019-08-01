@@ -4,12 +4,13 @@ description: O recurso **Planner** é o ponto de entrada para o modelo de objeto
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f6d25238436b79dec0397df1d005e67e6b17239a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b5cbf089e2d926440999c3ec73341bb3458668db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035354"
 ---
 # <a name="planner-resource-type"></a>tipo de recurso Planner
 
@@ -27,7 +28,7 @@ O recurso **Planner** é o ponto de entrada para o modelo de objeto do Planner. 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|buckets|coleção [plannerBucket](plannerbucket.md)| Somente leitura. Anulável. Retorna uma coleção dos buckets especificados|
+|buckets|Coleção [plannerBucket](plannerbucket.md)| Somente leitura. Anulável. Retorna uma coleção dos buckets especificados|
 |Planeje|Coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna uma coleção de planos especificados|
 |tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. Retorna uma coleção das tarefas especificadas|
 

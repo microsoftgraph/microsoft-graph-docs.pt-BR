@@ -2,12 +2,15 @@
 title: Definir /me como singleton
 description: Essas são as coisas que eu precisava adicionar nos documentos para garantir que o verificador de redução
 localization_priority: Normal
-ms.openlocfilehash: 58f5dd45a18753a599b404c6241a5213d216a75a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 82dac0d1b01b9e06c68c8d48fa54d9e728b3a293
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887142"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030146"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>Auxiliares (exemplos que não estão incluídos nos documentos)
 

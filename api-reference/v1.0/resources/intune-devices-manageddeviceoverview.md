@@ -4,12 +4,13 @@ description: Dados de resumo de dispositivos gerenciados
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: accc6d976db80421cd06fd8071417bf07684a71a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f10e34f8db0a671463740f0cbf42785c09170286
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550655"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030734"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Tipo de recurso managedDeviceOverview
 

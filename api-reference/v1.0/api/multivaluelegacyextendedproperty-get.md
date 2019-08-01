@@ -2,12 +2,15 @@
 title: Obter multiValueLegacyExtendedProperty
 description: Expanda '.
 localization_priority: Normal
-ms.openlocfilehash: c1d95e319637df17f04e706055245d5e19762a87
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: c8ca94f253b2949dc25c6cacf8ccdef516827a9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585311"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022800"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Obter multiValueLegacyExtendedProperty
 

@@ -4,16 +4,15 @@ description: 'O recurso **plannerAssignments** representa as atribuições de um
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: bf079cbf91e0c9b8b1a8c92403324b301bbde923
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1bcb28800da11255027394ea8de51e9438a5c488
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462365"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035333"
 ---
 # <a name="plannerassignments-resource-type"></a>tipo de recurso plannerAssignments
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **plannerAssignments** representa as atribuições de um recurso [plannerTask](plannertask.md) . Este tipo é um tipo aberto. Cada nome de propriedade desse tipo é a ID de um objeto de usuário ao qual uma tarefa é atribuída. Os usuários podem ser atribuídos a tarefas com a criação de novas propriedades nomeadas com a ID, com um objeto [plannerassignment](plannerassignment.md) com a propriedade orderHint preenchida como o valor. Os destinatários podem ser desatribuídos da tarefa definindo o propriedade nomeado com sua ID como nulo.
 
@@ -25,12 +24,10 @@ Exemplo:
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47", "4e98f8f1-bb03-4015-b8e0-19bb370949d8" ],
   "@odata.type": "microsoft.graph.plannerAssignments"
 }-->
-
 ```json
 {
   "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47": null,
@@ -44,15 +41,10 @@ Este exemplo remove o usuário com ID ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 da li
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "plannerAssignments resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerassignments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

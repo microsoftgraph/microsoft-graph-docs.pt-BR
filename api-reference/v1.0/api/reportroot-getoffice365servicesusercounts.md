@@ -4,12 +4,13 @@ description: Obtenha a contagem de usuários por tipo de atividade e serviço.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 7004b47c77b5290236004afa5bdefe0d04286d87
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 24dfbbd59a4b1505fea3ea9f78329c41e8f7fe1d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893787"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021946"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 

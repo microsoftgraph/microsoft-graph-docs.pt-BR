@@ -4,12 +4,13 @@ description: Erros na API de segurança do Microsoft Graph são retornados usand
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 52b7c375bd3e0c6a367f1150a21bb96ef84437ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 2d77a0f21623a98e4041b845e92a23c7574a415d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560750"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034465"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respostas de erro da API de segurança do Microsoft Graph
 
@@ -52,9 +53,9 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 ## <a name="constraints"></a>Restrições
 
-o `$top` parâmetro de consulta OData tem um limite de 1000 alertas e uma combinação de `$top`  +  `$skip` parâmetros de consulta odata não pode exceder 6000 alertas. Por exemplo, `/security/alerts?$top=10&$skip=5990` o retornará um `200 OK` código de resposta, `/security/alerts?$top=10&$skip=5991` mas retornará um `400 Bad Request` código de resposta.
+O `$top` parâmetro de consulta OData tem um limite de 1000 alertas e uma combinação de `$top`  +  `$skip` parâmetros de consulta OData não pode exceder 6000 alertas. Por exemplo, `/security/alerts?$top=10&$skip=5990` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=5991` retornará um código de resposta `400 Bad Request`.
 
-Uma solução alternativa para esse limite é usar o `$filter` parâmetro de consulta OData com o `eventDateTime` da entidade de alerta da API de segurança do Microsoft Graph, usando `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` e substituindo o valor DateTime pelo último alerta (6000th). Você também pode definir um intervalo para o `eventDateTime`; por exemplo, *alerts? $ Filter = eventDateTime **gt** 2018-11-**11**T00:00:00.000 z_amp_eventdatetime **lt** 2018-11-**12**T00:00:00.000 z*
+Uma solução alternativa para esse limite é usar o `$filter` parâmetro de consulta OData com o `eventDateTime` da entidade de alerta da API de segurança do Microsoft Graph, usando `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` e substituindo o valor DateTime pelo último alerta (6000th). Você também pode definir um intervalo para o `eventDateTime`; por exemplo, *alertas? $Filter = eventDateTime **gt** 2018-11-**11**T00:00:00.000 z&eventDateTime **lt** 2018-11-**12**T00:00:00.000 z*
 
 ## <a name="see-also"></a>Confira também
 

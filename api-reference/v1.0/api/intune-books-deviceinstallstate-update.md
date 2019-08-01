@@ -4,12 +4,13 @@ description: Atualizar as propriedades de um objeto deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1571508451dee371e5c000b8cc8d8234c1b661a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5da7df5df6966cabf5b2435057a09399c00f8152
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554517"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015863"
 ---
 # <a name="update-deviceinstallstate"></a>Atualizar deviceInstallState
 

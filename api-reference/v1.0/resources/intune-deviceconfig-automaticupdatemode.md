@@ -4,12 +4,13 @@ description: Valores possíveis para o modo de atualização automática.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7fd45ff85cbab934aa2549f13ee3e6671c65f9ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 3a0cc2d3918573fca6480c6eecd07889534cda4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575174"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028571"
 ---
 # <a name="automaticupdatemode-enum-type"></a>tipo de enumeração Propriedades automaticupdatemode
 
@@ -20,12 +21,12 @@ Valores possíveis para o modo de atualização automática.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|notifyDownload|1 |Notifique o download.|
-|autoInstallAtMaintenanceTime|2 |Instalação automática no momento da manutenção.|
-|autoInstallAndRebootAtMaintenanceTime|3 |Instalação automática e reinicialização no momento da manutenção.|
-|autoInstallAndRebootAtScheduledTime|4 |Instalação automática e reinicialização no horário agendado.|
-|autoInstallAndRebootWithoutEndUserControl|5 |Instalação e reinício automáticos sem controle de usuário final|
+|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|notifyDownload|1|Notifique o download.|
+|autoInstallAtMaintenanceTime|duas|Instalação automática no momento da manutenção.|
+|autoInstallAndRebootAtMaintenanceTime|3D|Instalação automática e reinicialização no momento da manutenção.|
+|autoInstallAndRebootAtScheduledTime|quatro|Instalação automática e reinicialização no horário agendado.|
+|autoInstallAndRebootWithoutEndUserControl|0,5|Instalação e reinício automáticos sem controle de usuário final|
 
 
 

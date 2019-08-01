@@ -4,12 +4,13 @@ description: Obtenha dados sobre quais atividades os usu√°rios realizaram nos v√
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e73eeb096bbb6cdf31ccff66a3cf546fa10f6b34
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f23ff3ddfdca6c0ec2c017cb87e33152bae1224c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886332"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022051"
 ---
 # <a name="reportroot-getemailappusageuserdetail"></a>reportRoot: getEmailAppUsageUserDetail
 

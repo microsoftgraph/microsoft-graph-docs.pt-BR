@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: 0cb09136f4093b290f37ee851cb7d2d0ca10c1bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso SharingInvitation agrupa itens de dados relacionados a convites em uma única estrutura.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 011402b40b601642a048b91e3b3f66de0792aaf2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549591"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034241"
 ---
 # <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
 
@@ -39,7 +42,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Nome da Propriedade  | Tipo            | Descrição
 |:---------------|:----------------|:------------------------------------------
-| email          | String          | O endereço de email fornecido para o destinatário do convite de compartilhamento. Somente leitura.
+| email          | Cadeia de caracteres          | O endereço de email fornecido para o destinatário do convite de compartilhamento. Somente leitura.
 | invitedBy      | [identitySet][] | Fornece informações sobre quem enviou o convite que criou essa permissão, se essas informações estiverem disponíveis. Somente leitura.
 | signInRequired | Booliano         | Se `true`, o destinatário do convite precisa entrar para acessar o item compartilhado. Somente leitura.
 

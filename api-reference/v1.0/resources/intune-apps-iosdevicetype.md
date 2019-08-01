@@ -4,12 +4,13 @@ description: Contém propriedades de possíveis tipos de dispositivos de iOS que
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f3bd1d0aff7e09d5828496de348805075d0b330
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 23d38faeafd9aac0d0e547596de51507b6932c20
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503524"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029159"
 ---
 # <a name="iosdevicetype-resource-type"></a>Tipo de recurso do iosDeviceType
 
@@ -24,7 +25,7 @@ Contém propriedades de possíveis tipos de dispositivos de iOS que o aplicativo
 |iPhoneAndIPod|Booliano|Se o aplicativo deve ser executado em iPhones e iPods.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -3,12 +3,14 @@ title: Criar ou substituir um historyItem
 description: Criar uma nova ou substituir um item de histórico existente para uma atividade existente do usuário.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 21c4420ff64d105a5512df1f9a57a5e8309413f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 851862a49a3a6852d70e597d70f5622833c7c087
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575328"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025355"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Criar ou substituir um historyItem
 

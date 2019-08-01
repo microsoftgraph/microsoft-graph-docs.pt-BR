@@ -4,12 +4,13 @@ description: Representa um objeto chart em uma pasta de trabalho.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 831cea99e2eefaf87db814b149798506950bf407
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0606528083a282338681f40373ecaccb146428f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569442"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029887"
 ---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
 
@@ -25,10 +26,10 @@ Representa um objeto chart em uma pasta de trabalho.
 |[List series](../api/chart-list-series.md) |Coleção [WorkbookChartSeries](chartseries.md)| Obtenha uma coleção de objetos ChartSeries.|
 |[Update](../api/chart-update.md) | [WorkbookChart](chart.md)   |Atualize um objeto Chart. |
 |[Image](../api/chart-image.md)|Cadeia de caracteres de imagem codificada em base64|Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.|
-|[Excluir](../api/chart-delete.md)|Nenhum|Exclui o objeto de gráfico.|
+|[Delete](../api/chart-delete.md)|Nenhum|Exclui o objeto de gráfico.|
 |[SetData](../api/chart-setdata.md)|Nenhum|Redefine os dados de origem do gráfico.|
 |[Setposition](../api/chart-setposition.md)|Nenhum|Posiciona o gráfico em relação às células na planilha.|
-|[List](../api/chart-list.md) | Coleção [WorkbookChart](chart.md) |Obtenha a coleção de objetos do gráfico. |
+|[List](../api/chart-list.md) | Conjunto [WorkbookChart](chart.md)  |Obtenha a coleção de objetos do gráfico. |
 |[Itemat](../api/chartcollection-itemat.md)|[WorkbookChart](chart.md)|Obtém um gráfico com base em sua posição na coleção.|
 |[Add](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|Cria um novo gráfico.|
 
@@ -36,7 +37,7 @@ Representa um objeto chart em uma pasta de trabalho.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |height|double|Representa a altura, em pontos, do objeto Chart.|
-|id|string|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
+|id|cadeia de caracteres|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
 |left|double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
 |name|string|Representa o nome de um objeto Chart.|
 |top|duplo|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
