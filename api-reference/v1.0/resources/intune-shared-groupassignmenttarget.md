@@ -4,12 +4,13 @@ description: Representa uma atribuição para um grupo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24ac3c4519cc074c3cce423ca5d0745c8a78d865
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 87e4e4707a1884e7d657bae9c6e41fee69dc831d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571916"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036915"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Tipo de recurso groupAssignmentTarget
 

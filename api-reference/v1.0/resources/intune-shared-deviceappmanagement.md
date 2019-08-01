@@ -4,12 +4,13 @@ description: Entidade singleton que atua como um contêiner para todas as funcio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4a16d5656c90113c31595824925c79e801002de8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2f73656cd55197ae868c591d02b304f0b389acc1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583659"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036978"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 

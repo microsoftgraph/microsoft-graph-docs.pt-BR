@@ -4,12 +4,13 @@ description: O status atual do Exchange Connector.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 472cc91b97547459694239c07bd211d1bd4ba1be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 958cb848424d7d843a56b9414b6f8d9123398804
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565962"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037468"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>tipo de enumeração deviceManagementExchangeConnectorStatus
 
@@ -20,10 +21,10 @@ O status atual do Exchange Connector.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum conector existe.|
-|connectionPending|1 |Conexão pendente com o ambiente do Exchange.|
-|ligado|2 |Conectado ao ambiente do Exchange|
-|estava|3 |DesConectado do ambiente do Exchange|
+|none|,0|Nenhum conector existe.|
+|connectionPending|1|Conexão pendente com o ambiente do Exchange.|
+|ligado|duas|Conectado ao ambiente do Exchange|
+|estava|3D|Desconectado do ambiente do Exchange|
 
 
 

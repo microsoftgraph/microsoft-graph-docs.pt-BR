@@ -2,12 +2,15 @@
 title: Atualizar nameditem
 description: Atualize as propriedades do objeto nameditem.
 localization_priority: Normal
-ms.openlocfilehash: ad7f899791d64d5d3ef431d8875cba6fbcd150c0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 17bb61d87777b3d62c8ca399aebbabd5eb7f888c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976576"
 ---
 # <a name="update-nameditem"></a>Atualizar nameditem
 

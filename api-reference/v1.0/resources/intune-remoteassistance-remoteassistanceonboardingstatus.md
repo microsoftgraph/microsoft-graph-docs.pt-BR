@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0b26daab72e7910f0796cee226f8c722cee6822
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 75150c1944043e3c3c9e1f08fb89a8b7ac4b2bc7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553922"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037083"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>tipo de enumeração remoteAssistanceOnboardingStatus
 
@@ -21,8 +22,8 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notOnboarded|,0|Ainda não documentado|
-|integração|1 |Ainda não documentado|
-|integrado|2 |Ainda não documentado|
+|integração|1|Ainda não documentado|
+|integrado|duas|Ainda não documentado|
 
 
 

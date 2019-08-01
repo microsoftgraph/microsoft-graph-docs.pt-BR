@@ -4,12 +4,13 @@ description: " O registro (BYOD) permite que os usuários registrem seus telefon
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 2e7f6e85e32137804556c64a1995bd2e78b04068
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: e78fda940a62490d88921f6286d6421f14de5a96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564236"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037566"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 

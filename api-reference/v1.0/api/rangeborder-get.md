@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos do objeto rangeborder
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b4b71edf14282e8a09cec3fc98e021645291f856
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7a0fd3d98309a0b528883f3d6769a18b0bb37e03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888550"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975843"
 ---
 # <a name="get-rangeborder"></a>Obter RangeBorder
 

@@ -4,12 +4,13 @@ description: Recursos de remoteAssistPartner representam metadados e status de u
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0557eb45fb770c257f1734bf967f78e9e00cac81
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7bd14d3978e629c75ee9c232a07f88446ca545d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554195"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037048"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Tipo de recurso remoteAssistancePartner
 

@@ -3,12 +3,14 @@ title: Listar secureScores
 description: Recupere uma lista de objetos secureScore.
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 7fcf0cf5350d179f69fabe278ed8a8f70f32784d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: bd5f8ee369f772e0d3ce584af3f8047234ff8c15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891596"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975652"
 ---
 # <a name="list-securescores"></a>Listar secureScores
 

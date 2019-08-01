@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos do objeto **plannerta
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f9a8402fceac42313dd1eff588c2884a4bdd2120
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 78054c89bfe7f96cb2ca9146c277ba6e2600fa63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888759"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976002"
 ---
 # <a name="get-plannertaskdetails"></a>Obter plannerTaskDetails
 

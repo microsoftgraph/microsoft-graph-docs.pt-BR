@@ -4,12 +4,13 @@ description: Representa o nível ao qual a área de transferência do dispositiv
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dcbee5e0b7aa6343e31d57d14557bc0f0586fb80
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 58a1e50a77a468228b6218d620b589a6d25ca748
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465199"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038049"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>tipo de enumeração managedAppClipboardSharingLevel
 

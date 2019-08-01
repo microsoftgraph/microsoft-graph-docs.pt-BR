@@ -4,12 +4,13 @@ description: Esses pontos de extremidade são usados em vários fluxos de trabal
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: cfb3acbb3b736fcb96d22773301ca6e2e3e4403f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 7f04077278a3765a27abd30f02bcc2361c7cd08e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32452180"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037013"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 

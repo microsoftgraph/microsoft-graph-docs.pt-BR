@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc515f291e2ab32b744756063869ca3ca0c86cb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c406f29b999f507a1214118f9c6c5f2998d37713
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541294"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037545"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -30,7 +31,7 @@ Ainda não documentado
 |:---|:---|:---|
 |id|Cadeia de caracteres|Ainda não documentado|
 |displayName|String|Ainda não documentado|
-|description|String|Ainda não documentado|
+|descrição|String|Ainda não documentado|
 |prioridade|Int32|Ainda não documentado|
 |createdDateTime|DateTimeOffset|Ainda não documentado|
 |lastModifiedDateTime|DateTimeOffset|Ainda não documentado|

@@ -4,12 +4,13 @@ description: Representa um objeto de usuário do Azure Active Directory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a7a6c87b5c073e00b660db807ff38c454c302d94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d8fc3604329a5062a8fe1afb90c2ac64f52f0bed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571844"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036831"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -21,8 +22,8 @@ Representa um objeto de usuário do Azure Active Directory.
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar](../api/intune-shared-user-list.md) objetos users.|Conjunto [user](../resources/intune-shared-user.md)|Listar propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
-|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|Coleção [user](../resources/intune-shared-user.md)|Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).|
-|[Criar objeto user](../api/intune-shared-user-create.md) .|Coleção [user](../resources/intune-shared-user.md)|Criar um novo objeto [user](../resources/intune-shared-user.md).|
+|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|Coleção [usuário](../resources/intune-shared-user.md)|Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).|
+|[Criar objeto user](../api/intune-shared-user-create.md) .|Coleção [usuário](../resources/intune-shared-user.md)|Criar um novo objeto [user](../resources/intune-shared-user.md).|
 |[Excluir usuário](../api/intune-shared-user-delete.md).|Nenhum|Excluir [user](../resources/intune-shared-user.md).|
 |[Atualize](../api/intune-shared-user-update.md) o objeto do usuário.|[user](../resources/intune-shared-user.md)|Atualizar as propriedades de um objeto de [user](../resources/intune-shared-user.md).|
 |**Gerenciamento de dispositivos**|

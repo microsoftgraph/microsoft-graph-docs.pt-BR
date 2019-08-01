@@ -4,12 +4,13 @@ description: Responder ao remetente de uma mensagem. A mensagem é então salva 
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7321b424046a327f5d0e87c477aad8ab14f082e1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 826ebacd1d98fc4927aa06829f437b4094915c7e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856272"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976664"
 ---
 # <a name="message-reply"></a>message: reply
 

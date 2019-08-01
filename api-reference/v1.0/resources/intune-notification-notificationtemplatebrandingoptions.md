@@ -4,12 +4,13 @@ description: Opções de identidade visual para o modelo de mensagem. A identida
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68393d569cf76b01ff7582c864bee4a35a68c739
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 3ac965e5798696c4bb3c34da2a78d84c9c93c09a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574506"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037559"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>tipo de enumeração notificationTemplateBrandingOptions
 
@@ -20,10 +21,10 @@ Opções de identidade visual para o modelo de mensagem. A identidade visual é 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Sem identidade visual.|
-|includeCompanyLogo|1 |Incluir logotipo da empresa.|
-|includeCompanyName|2 |Incluir o nome da empresa.|
-|includeContactInformation|4 |Incluir informações de contato.|
+|none|,0|Sem identidade visual.|
+|includeCompanyLogo|1|Incluir logotipo da empresa.|
+|includeCompanyName|duas|Incluir o nome da empresa.|
+|includeContactInformation|quatro|Incluir informações de contato.|
 
 
 

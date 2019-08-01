@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e0b31628a44422283ebd3f403a4e83bf2b4d1ccf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 466bf38854f50e2896388af02928641dd9180edf
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946016"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049607"
 ---
 # <a name="list-accessreview-decisions"></a>Listar decisões accessReview
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.Read.All |
+|Aplicativo                            | AccessReview. Read. All, AccessReview. ReadWrite. Membership |
 
  O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.
 

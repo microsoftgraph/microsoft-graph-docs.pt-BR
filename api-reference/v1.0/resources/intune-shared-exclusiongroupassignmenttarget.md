@@ -4,12 +4,13 @@ description: Representa um grupo que deve ser excluído de uma atribuição.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7fbfa4e6df9dae514a99fa96aace073bd702def9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 805f2f1dbcab8751d564fbde3f6747b6e77f6d09
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523760"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036922"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Tipo de recurso exclusionGroupAssignmentTarget
 

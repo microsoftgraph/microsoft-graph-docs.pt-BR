@@ -4,12 +4,13 @@ description: Você adquire várias licenças de aplicativos do iOS por meio do A
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d12071be045eb9c0e7b057af517941ee14d7aea2
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: ed44ae278ddbe20310ba1d5d57dc972b29e663e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621309"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037251"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
 

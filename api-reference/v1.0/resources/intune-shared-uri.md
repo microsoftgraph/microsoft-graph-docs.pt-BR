@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50aa90e30690dbe86ee5256e6ad17c79c905d220
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d6f38774c416af82a31314e19bdc6bddc1c63f90
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036824"
 ---
 # <a name="uri-resource-type"></a>Tipo de recurso uri
 

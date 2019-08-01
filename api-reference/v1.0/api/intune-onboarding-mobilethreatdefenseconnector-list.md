@@ -4,12 +4,13 @@ description: Lista propriedades e relações dos objetos mobileThreatDefenseConn
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 103c9bd84c1c7c798b008c394ec855aaf6e0c89d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9948b6797232c6d21446c9432f9284f8ed298be8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582560"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976702"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>Listar mobileThreatDefenseConnectors
 

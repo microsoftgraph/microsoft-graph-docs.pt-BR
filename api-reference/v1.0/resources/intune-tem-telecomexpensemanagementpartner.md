@@ -4,12 +4,13 @@ description: Recursos telecomExpenseManagementPartner representam os metadados e
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d300fb881576932350eb60a6b441fa3087e6e5e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c73674c0854c2367fb988dde6f21eb0db6a64d59
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571804"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036796"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>Tipo de recurso telecomExpenseManagementPartner
 

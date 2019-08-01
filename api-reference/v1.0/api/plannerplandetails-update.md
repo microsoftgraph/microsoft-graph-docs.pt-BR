@@ -4,12 +4,13 @@ description: Atualize as propriedades do objeto **plannerplandetails** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 3768d8c77939a7e86404c9f6fa19da0084f15481
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 56ce068964f897cb1d1c6cc10f7552dc7c700ccc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887087"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976072"
 ---
 # <a name="update-plannerplandetails"></a>Atualizar plannerplandetails
 

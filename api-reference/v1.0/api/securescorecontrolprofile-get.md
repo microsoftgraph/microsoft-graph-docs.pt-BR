@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos de um objeto secureSc
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 91df02cee2bec38d6e4e703066cc06105bee5217
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f7bf44ff70afbd54ea26a9fc579ac95e7232f1a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880542"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975627"
 ---
 # <a name="get-securescorecontrolprofile"></a>Obter secureScoreControlProfile
 

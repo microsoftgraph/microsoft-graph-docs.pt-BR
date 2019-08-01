@@ -3,12 +3,14 @@ title: Excluir extensão aberta
 description: 'Exclua uma extensão aberta (objeto openTypeExtension) da instância especificada de um recurso. '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 1d7a993b441fba614a8675fed1e189105735227c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: a12ec2f482497b9d7e92067b001a58d05d378ddb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894396"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976408"
 ---
 # <a name="delete-open-extension"></a>Excluir extensão aberta
 

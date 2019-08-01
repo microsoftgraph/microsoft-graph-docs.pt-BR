@@ -2,12 +2,15 @@
 title: Criar propriedade estendida de vários valores
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 localization_priority: Normal
-ms.openlocfilehash: ded36690cdbe684f78bed6af6aee9dba0b09854d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 87cb6d617d719575705bdfb9379f4b5a87ddfe57
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560988"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976597"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
 
@@ -20,7 +23,7 @@ Há suporte para as seguintes fontes de dados:
 - [contactFolder](../resources/contactfolder.md) 
 - [evento](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [mensagem](../resources/message.md)
+- [message](../resources/message.md)
 
 Também há suporte para os seguintes recursos de grupo:
 

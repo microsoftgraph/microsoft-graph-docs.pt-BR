@@ -4,12 +4,13 @@ description: Exclui importedWindowsAutopilotDeviceIdentityUpload.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a775f2b487f9e9520f0687ca594f7848a90173a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3ce6f21a7e40366ba7286fca9495f6d11e142a62
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566091"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996865"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentityupload"></a>Excluir importedWindowsAutopilotDeviceIdentityUpload
 

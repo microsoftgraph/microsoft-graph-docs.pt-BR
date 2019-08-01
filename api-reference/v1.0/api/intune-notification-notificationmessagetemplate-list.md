@@ -4,12 +4,13 @@ description: Listar propriedades e relações dos objetos notificationMessageTem
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1334ae2925fe0d8dddc1f50a6e26b79ea6a4927e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b8d2794ff1029c00204faf5e81d51bf83a33f927
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561716"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974798"
 ---
 # <a name="list-notificationmessagetemplates"></a>Listar notificationMessageTemplates
 

@@ -4,12 +4,13 @@ description: Baixa a solicitação de assinatura de certificado de notificação
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09bbadd2e0874bdc461f965ff12544716e4de9d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c532c55386a25b23ca3cdc218a936b9f8e84adf6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583491"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997005"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Função downloadApplePushNotificationCertificateSigningRequest
 

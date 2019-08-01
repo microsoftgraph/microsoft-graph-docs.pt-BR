@@ -4,12 +4,13 @@ description: Crie uma nova página do OneNote na seção padrão do bloco de ano
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 799650628ae2436c2162adf2f1cbf692ee35d4f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9db168bda1c79232bb18b76464732e10e75331e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562115"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976366"
 ---
 # <a name="create-page"></a>Criar página
 
