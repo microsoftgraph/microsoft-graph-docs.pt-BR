@@ -4,24 +4,25 @@ description: O recurso **plannerExternalReferences** representa a coleção de r
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 8048a8a412935cc69e805a1d7c77ff8b1fbf5f7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 35e26aaf13686a030d35d5d75ec3c99c8df93a6a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462302"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035221"
 ---
-# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="b4c54-106">tipo de recurso plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="b4c54-106">plannerExternalReferences resource type</span></span>
+# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="188f1-106">tipo de recurso plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="188f1-106">plannerExternalReferences resource type</span></span>
 
-<span data-ttu-id="b4c54-107">O recurso **plannerExternalReferences** representa a coleção de referências em uma tarefa.</span><span class="sxs-lookup"><span data-stu-id="b4c54-107">The **plannerExternalReferences** resource represents the collection of references on a task.</span></span> <span data-ttu-id="b4c54-108">Este é um tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="b4c54-108">This is an Open Type.</span></span> <span data-ttu-id="b4c54-109">Ele faz parte do objeto de [detalhes da tarefa](plannertaskdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="b4c54-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="b4c54-110">O valor no par propriedade-valor é o objeto [externalReference](plannerexternalreference.md) .</span><span class="sxs-lookup"><span data-stu-id="b4c54-110">The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
+<span data-ttu-id="188f1-107">O recurso **plannerExternalReferences** representa a coleção de referências em uma tarefa.</span><span class="sxs-lookup"><span data-stu-id="188f1-107">The **plannerExternalReferences** resource represents the collection of references on a task.</span></span> <span data-ttu-id="188f1-108">Este é um tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="188f1-108">This is an Open Type.</span></span> <span data-ttu-id="188f1-109">Ele faz parte do objeto de [detalhes da tarefa](plannertaskdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="188f1-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="188f1-110">O valor no par propriedade-valor é o objeto [externalReference](plannerexternalreference.md) .</span><span class="sxs-lookup"><span data-stu-id="188f1-110">The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="b4c54-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b4c54-111">Properties</span></span>
-<span data-ttu-id="b4c54-112">As propriedades de um tipo aberto podem ser definidas pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="b4c54-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="b4c54-113">Nesse caso, o cliente deve fornecer **URLs válidas** com base nos protocolos **http/https** como propriedades e seus valores devem ser os objetos [externalReference](plannerexternalreference.md) .</span><span class="sxs-lookup"><span data-stu-id="b4c54-113">In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects.</span></span> <span data-ttu-id="b4c54-114">Com base em OData, os nomes de propriedade em tipos abertos não podem conter `.`os `:`seguintes `%` caracteres:, e, portanto, precisam ser codificados.</span><span class="sxs-lookup"><span data-stu-id="b4c54-114">Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded.</span></span> <span data-ttu-id="b4c54-115">O exemplo é mostrado abaixo.</span><span class="sxs-lookup"><span data-stu-id="b4c54-115">Example is shown below.</span></span> <span data-ttu-id="b4c54-116">Para remover uma referência, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="b4c54-116">To remove a reference, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="188f1-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="188f1-111">Properties</span></span>
+<span data-ttu-id="188f1-112">As propriedades de um tipo aberto podem ser definidas pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="188f1-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="188f1-113">Nesse caso, o cliente deve fornecer **URLs válidas** com base nos protocolos **http/https** como propriedades e seus valores devem ser os objetos [externalReference](plannerexternalreference.md) .</span><span class="sxs-lookup"><span data-stu-id="188f1-113">In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects.</span></span> <span data-ttu-id="188f1-114">Com base em OData, os nomes de propriedade em tipos abertos não podem conter `.`os `:`seguintes `%` caracteres:, e, portanto, precisam ser codificados.</span><span class="sxs-lookup"><span data-stu-id="188f1-114">Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded.</span></span> <span data-ttu-id="188f1-115">O exemplo é mostrado abaixo.</span><span class="sxs-lookup"><span data-stu-id="188f1-115">Example is shown below.</span></span> <span data-ttu-id="188f1-116">Para remover uma referência, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="188f1-116">To remove a reference, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b4c54-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b4c54-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="188f1-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="188f1-117">JSON representation</span></span>
 
-<span data-ttu-id="b4c54-118">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="b4c54-118">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="188f1-118">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="188f1-118">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,7 +45,7 @@ ms.locfileid: "32462302"
 }
 ```
 
-<span data-ttu-id="b4c54-119">Como</span><span class="sxs-lookup"><span data-stu-id="b4c54-119">// Example</span></span>
+<span data-ttu-id="188f1-119">Como</span><span class="sxs-lookup"><span data-stu-id="188f1-119">// Example</span></span>
 
 ```json
 {
