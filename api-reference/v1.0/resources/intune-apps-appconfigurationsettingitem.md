@@ -4,12 +4,13 @@ description: Contém propriedades do item de configuração de Configuração do
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11ef3a964d166301c04c49730ac084b68e700b7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 91ccefc06ba6a635b9b18e07465ea0332c48f022
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503587"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030174"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Tipo de recurso appConfigurationSettingItem
 
@@ -25,7 +26,7 @@ Contém propriedades do item de configuração de Configuração do aplicativo.
 |appConfigKeyValue|Cadeia de caracteres|valor de chave de configuração de aplicativo.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

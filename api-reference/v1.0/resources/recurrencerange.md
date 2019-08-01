@@ -2,12 +2,15 @@
 title: Tipo de recurso recurrenceRange
 description: 'Descreve um intervalo de datas sobre o qual um event recorrente se repete. '
 localization_priority: Normal
-ms.openlocfilehash: 4129b698e48b01e0208b88fbdc57fb777835cd4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 0d5fee6ad877958b4861360e4e90fbdd688e0011
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579398"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034801"
 ---
 # <a name="recurrencerange-resource-type"></a>Tipo de recurso recurrenceRange
 

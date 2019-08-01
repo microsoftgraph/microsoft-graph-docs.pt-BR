@@ -4,12 +4,13 @@ description: Modelos de configuração de grupo representam configurações defi
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2b9b95303b72bc111f045010e71459f541e9a9b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3d0624be1511b542da08e76ed5f9c51e60fe58a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570789"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029278"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>tipo de recurso groupSettingTemplate
 

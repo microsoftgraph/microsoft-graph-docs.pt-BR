@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto managedAppStatusRaw.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 897d5398a87a2cb451f9c0cc5408aeb7c953478a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bfa7e038ab6896b9fea0dabb4ddc5e3a37902812
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554776"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974882"
 ---
 # <a name="get-managedappstatusraw"></a>Get managedAppStatusRaw
 

@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4792a943598911cc2f0b8329016469ca157bda58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso DriveRecipient representa uma pessoa, um grupo ou outro destinatário com quem compartilhar usando a ação invite.
+doc_type: resourcePageType
+ms.openlocfilehash: a198bdc8a50fdb754ba8f9c88ce8e925c548a600
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562717"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029383"
 ---
 # <a name="driverecipient-resource"></a>Recurso DriveRecipient
 
@@ -35,7 +37,7 @@ O recurso de destinatários possui essas propriedades.
 
 | Nome da propriedade | Tipo   | Descrição                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | String | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
+| email         | Cadeia de caracteres | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
 | alias         | String | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
 | objectId      | Cadeia de caracteres | O identificador exclusivo para o destinatário no diretório.                                               |
 

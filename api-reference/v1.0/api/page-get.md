@@ -4,12 +4,13 @@ description: Recupere as propriedades e os relacionamentos de um objeto Page.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 963aeeec95b9c57dbb0a024aeca2afdfba16a9d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a4605242ca911e9634e79fa5b9761ae2bb8e0ab6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556431"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022548"
 ---
 # <a name="get-page"></a>Obter página
 

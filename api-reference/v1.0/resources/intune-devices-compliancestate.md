@@ -4,12 +4,13 @@ description: Estado de conformidade.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d578417c616fc2dbf30b8fe95d2f58ede5fd3df2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 20890001aee15a56d5338964b931047033cf4a72
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568135"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030881"
 ---
 # <a name="compliancestate-enum-type"></a>tipo de enumeração compliancestate
 
@@ -21,10 +22,10 @@ Estado de conformidade.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|com|1 |Com.|
-|incompatível|2 |O dispositivo não está em conformidade e é bloqueado de recursos corporativos.|
-|apresentar|3 |Conflito com outras regras.|
-|erro|4 |Erro|
+|com|1|Com.|
+|incompatível|duas|O dispositivo não está em conformidade e é bloqueado de recursos corporativos.|
+|apresentar|3D|Conflito com outras regras.|
+|erro|quatro|Erro|
 |inGracePeriod|254|O dispositivo não está em conformidade, mas ainda tem acesso aos recursos corporativos|
 |configmanager|255|Gerenciado pelo Gerenciador de configuração|
 

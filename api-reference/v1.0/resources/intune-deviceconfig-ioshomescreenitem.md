@@ -4,12 +4,13 @@ description: Representa um item na tela inicial do iOS
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8aecb99c036d3e8a5d89271afd6042ccb18b4fda
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d5f7c92b1316b40efd9c87ac39c926669a251d58
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554650"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031511"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>Tipo de recurso iosHomeScreenItem
 

@@ -4,12 +4,13 @@ description: Criar um novo objeto roleDefinition
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4037ad311ed57b1c019f4cce7c423f5f81c4dd56
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 82f009a5dec96f6352780d8db92cf5e35277bf4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585353"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025967"
 ---
 # <a name="create-roledefinition"></a>Criar roleDefinition
 
@@ -48,9 +49,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar roleDefinition.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
-|description|String|Descrição da definição de Função.|
+|descrição|String|Descrição da definição de Função.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
 

@@ -1,19 +1,20 @@
 ---
 title: tipo de recurso dicas de texto
-description: 'Mensagens inFormativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de ausência temporária '
+description: 'Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de ausência temporária '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d1ee1af2ae5b62d085942615ae0bd3ec320b19b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 90f6f1a66631223a45a34797b6d18c13259d6241
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574009"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036320"
 ---
 # <a name="mailtips-resource-type"></a>tipo de recurso dicas de texto
 
-Mensagens inFormativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de ausência temporária como uma resposta automática para um destinatário de mensagem.
+Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de ausência temporária como uma resposta automática para um destinatário de mensagem.
 
 
 ## <a name="properties"></a>Propriedades
@@ -25,7 +26,7 @@ Mensagens inFormativas sobre um destinatário, que são exibidas aos usuários e
 | emailAddress | [emailAddress](../resources/emailaddress.md) | O endereço de email do destinatário para o qual obter dicas de email. |
 | erro | [mailTipsError](../resources/mailtipserror.md) | Erros que ocorrem durante a [](../api/user-getmailtips.md) ação comdicas de as. |
 | externalMemberCount | Int32 | O número de membros externos se o destinatário for uma lista de distribuição. |
-| isModeradod |Booliano  | Se o envio de mensagens para o destinatário requer aprovação. Por exemplo, se o destinatário for uma lista de distribuição grande e um moderador tiver sido configurado para aprovar as mensagens enviadas para essa lista de distribuição ou se o envio de mensagens a um destinatário exigir a aprovação do gerente do destinatário. |
+| ismoderadod |Booliano  | Se o envio de mensagens para o destinatário requer aprovação. Por exemplo, se o destinatário for uma lista de distribuição grande e um moderador tiver sido configurado para aprovar as mensagens enviadas para essa lista de distribuição ou se o envio de mensagens a um destinatário exigir a aprovação do gerente do destinatário. |
 | mailboxFull | Booliano | O status completo da caixa de correio do destinatário. |
 | maxMessageSize | Int32 | O tamanho máximo da mensagem que foi configurada para a organização ou caixa de correio do destinatário. |
 | recipientScope | recipientScopeType | O escopo do destinatário. Os valores possíveis são: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. Por exemplo, um administrador pode definir outra organização como "parceiro". O escopo será útil se um administrador quiser que determinadas dicas de usuários fiquem acessíveis para determinados escopos. Também é útil para os remetentes informar que a mensagem pode sair da organização, ajudando-os a tomar as decisões corretas sobre o texto, o Tom e o conteúdo.|
@@ -36,7 +37,7 @@ Mensagens inFormativas sobre um destinatário, que são exibidas aos usuários e
 
 | Valor
 |:-------------------------
-| Nenhuma
+| none
 | internamente
 | externo
 | externalPartner

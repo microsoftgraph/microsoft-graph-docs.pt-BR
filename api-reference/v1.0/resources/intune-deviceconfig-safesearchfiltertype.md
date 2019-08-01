@@ -4,12 +4,13 @@ description: Especifica o nível de pesquisa segura (filtragem de conteúdo adul
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c82f80f6081f57a88fcdf26f7639277d72b5e0d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: c88542d6d06f623d20a294cc49aff321692c75a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534896"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027850"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>tipo de enumeração safeSearchFilterType
 
@@ -20,9 +21,9 @@ Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necess
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|impede|1 |Filtragem mais rigorosa e estrita contra conteúdo adulto.|
-|moderado|2 |Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).|
+|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|impede|1|Filtragem mais rigorosa e estrita contra conteúdo adulto.|
+|moderado|duas|Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).|
 
 
 

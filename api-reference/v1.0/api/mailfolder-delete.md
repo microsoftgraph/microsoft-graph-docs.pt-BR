@@ -4,12 +4,13 @@ description: Exclua o mailFolder especificado.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ab447e3e74f5ef078328d487ff06a88a74f7a899
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d10190ee622eb3ec7798100bf4477e45fe4a2a38
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893104"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025516"
 ---
 # <a name="delete-mailfolder"></a>Excluir mailFolder
 

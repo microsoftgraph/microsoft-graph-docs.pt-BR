@@ -4,12 +4,13 @@ description: Lista os pontos de extremidade da API do Microsoft Graph para Intun
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 3de3cdf4ac55177bceb56e59743d0bef9bd4cb50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 31178d6acccdae972ead9941feb2a8f98b51a7ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523970"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028767"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Termos e condições da empresa no Microsoft Intune
 

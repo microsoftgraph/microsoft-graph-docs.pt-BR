@@ -4,12 +4,13 @@ description: Esse objeto representa os atributos de fonte do objeto Chart, como 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 85a11d59e58d6968154a4ede12fa978b1f061de1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9241691296b93eb21e19e10b81f36e692fea0692
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568987"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032991"
 ---
 # <a name="chartfont-resource-type"></a>Tipo de recurso ChartFont
 

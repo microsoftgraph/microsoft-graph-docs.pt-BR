@@ -4,12 +4,13 @@ description: Obtenha a contagem de usuários ativos diários no período de rela
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 8cf5358190175582febc4cbdebb50785f9d5c0e5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d84596fc283b09c0cbf30c8855424c7e76f4e45e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890762"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021996"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 

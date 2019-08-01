@@ -4,12 +4,13 @@ description: Obtém diagnóstico do status de validação para um determinado us
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8af90447f721d559c5620af58e30600b1ce29b11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c12d3f03fd608f23a94afcf4ac7a2a75a6d8f846
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576672"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025796"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>função getManagedAppDiagnosticStatuses
 

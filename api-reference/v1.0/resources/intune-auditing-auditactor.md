@@ -4,12 +4,13 @@ description: Uma classe que contém as propriedades para Ator de auditoria.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 632e3018f606b62171461b4b1235ccdafc6b1b5a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2b2aab468a6638b2e3bb525fd54c6554f5a5694a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584702"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032076"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
@@ -24,13 +25,13 @@ Uma classe que contém as propriedades para Ator de auditoria.
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
 |ApplicationId|String|ID do aplicativo AAD.|
 |applicationDisplayName|String|Nome do aplicativo.|
-|userPrincipalName|String|Nome principal do usuário (UPN).|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário (UPN).|
 |servicePrincipalName|String|Nome da entidade de serviço (SPN).|
 |ipAddress|String|IPAddress.|
 |userId|Cadeia de caracteres|ID do usuário.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

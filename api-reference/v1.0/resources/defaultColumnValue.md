@@ -4,12 +4,15 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
 localization_priority: Normal
-ms.openlocfilehash: 400fc25bf38f12db2be8cef21ddc351316d1265b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: defaultColumnValue em um recurso columnDefinition especifica o valor padrão dessa coluna.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 4a2ddff8de7efb2bb697ffae63d69376588e6ac9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029509"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Tipo de recurso DefaultColumnValue
 

@@ -4,12 +4,13 @@ description: Uma classe abstrata que contém as propriedades base do livro eletr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae6151c23bf05b076ade441f908a2810c80f45ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 42d14dbd1c2afa6eb316bcb46cf3fe76bd0669e0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534357"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028809"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -29,7 +30,7 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |displayName|String|Nome do livro eletrônico.|
-|description|String|Descrição.|
+|descrição|String|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro.|

@@ -4,12 +4,13 @@ description: 'Recurso usado para gerenciar aulas, professores e alunos da escola
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2549d8babd000a36f0ff3ccd38541ef3c1b2e466
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3446b637835facfbe9a03e31dbdb8e9421b2faed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463667"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030503"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -20,7 +21,7 @@ Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Leia as propriedades e relações de um objeto **educationSchool**.|
+|[Get](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Leia as propriedades e relações de um objeto **educationSchool**.|
 |[Adicionar classe](../api/educationschool-post-classes.md) |[educationClass](educationclass.md)| Adicione uma nova **educationClass** para a escola postando na propriedade de navegação de aulas.|
 |[Listar classes](../api/educationschool-list-classes.md) |Coleção [educationClass](educationclass.md)| Obtenha a coleção de objetos **educationClass**.|
 |[Remover classe](../api/educationschool-delete-classes.md) |[educationClass](educationclass.md)| Remova uma **educationClass** da escola por meio da propriedade de navegação de aulas.|
@@ -28,14 +29,14 @@ Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 |[Listar usuários](../api/educationschool-list-users.md) |Coleção [educationUser](educationuser.md)| Obtenha a coleção de objetos **educationUser**.|
 |[Remover usuário](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| Remova um **educationUser** da escola por meio da propriedade de navegação **users**.|
 |[Atualizar](../api/educationschool-update.md) | [educationSchool](educationschool.md) |Atualize um objeto **educationSchool**. |
-|[Excluir](../api/educationschool-delete.md) | Nenhum |Exclua um objeto **educationSchool**. |
+|[Delete](../api/educationschool-delete.md) | Nenhum |Exclua um objeto **educationSchool**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String|GUID desta escola.|
+|id|Cadeia de caracteres|GUID desta escola.|
 |displayName| String| Nome de exibição da escola.| 
-|description| String | Descrição da escola.| 
+|descrição| String | Descrição da escola.| 
 |status| cadeia de caracteres| Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`.|
 |externalSource| educationExternalSource| Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 |principalEmail| String| Endereço de email da entidade de segurança.|

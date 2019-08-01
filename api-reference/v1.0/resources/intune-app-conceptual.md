@@ -4,12 +4,13 @@ description: 'Os seguintes recursos do Graph estão disponíveis para gerenciar 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 988042a5e36cb87f6fedf3c8ba3764c56d955b98
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: cb5b49baa99173a28bbc00c61c008a12e15ef74b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566826"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032386"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Gerenciar aplicativos usando Microsoft Intune
 

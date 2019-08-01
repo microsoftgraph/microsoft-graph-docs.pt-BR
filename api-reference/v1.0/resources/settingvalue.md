@@ -2,12 +2,15 @@
 title: tipo de recurso SettingValue
 description: Uma configuração representada por um par de nome/valor.
 localization_priority: Normal
-ms.openlocfilehash: 3edf5bdc1fae77702206eae78d53fcf0fdc5b644
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: f37a429fd9bb8e8d3cf65aef55d6af5033f4a598
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549682"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034353"
 ---
 # <a name="settingvalue-resource-type"></a>tipo de recurso SettingValue
 

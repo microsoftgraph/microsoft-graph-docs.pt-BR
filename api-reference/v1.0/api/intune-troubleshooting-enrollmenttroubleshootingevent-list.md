@@ -4,12 +4,13 @@ description: Lista propriedades e relações dos objetos enrollmentTroubleshooti
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 106fd47aba30b4df04a08485432dbbea67cb6f03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8dd03acd651a4a54891a2f5245cff32e1ae308fd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576350"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023234"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>Listar enrollmentTroubleshootingEvents
 

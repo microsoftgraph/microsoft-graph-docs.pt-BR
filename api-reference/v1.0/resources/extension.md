@@ -2,12 +2,15 @@
 title: Tipo de recurso extension
 description: Um tipo abstrato para oferecer suporte ao tipo openTypeExtension livre do OData v4.
 localization_priority: Normal
-ms.openlocfilehash: 2633c8a28c1be1a670a80834ce869b5156fc1de9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e34076cb7bbeec338e71aab6dc7ca9dc4e6cca37
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575979"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030391"
 ---
 # <a name="extension-resource-type"></a>Tipo de recurso extension
 

@@ -3,12 +3,14 @@ title: Tipo de recurso DriveItemVersion
 description: O recurso **DriveItemVersion** representa uma versão específica de um DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fd6052464d40fcce86b83d93601282dda252c69b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e9521eb549bf84b900e6c49c4dedc5f2199de317
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562682"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029397"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 
@@ -21,7 +23,7 @@ As tarefas a seguir estão disponíveis para recursos driveItemVersion.
 
 |            Tarefa comum             |         Método HTTP         |
 | :--------------------------------- | :-------------------------- |
-| [Versões de lista][version-list]      | `GET /drive/items/{item-id}/versions`  |
+| [Listar versões][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [Obter versão][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [Obter conteúdo][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
 | [Restaurar versão][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |

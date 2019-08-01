@@ -3,29 +3,31 @@ title: tipo de recurso atividade
 description: Representa uma única atividade dentro de um aplicativo, por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário participa dessa atividade, o contrato é capturado como um item de histórico que indica a hora de início e término da atividade. À medida que o usuário se reencaixa com essa atividade ao longo do tempo, vários itens de histórico são registrados para uma única atividade do usuário.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: eade448e9585ac3678c81548c242bd467e71df40
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 1b0e0f7cd6ed3a7629653719078b1e69eeeffc19
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579689"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035025"
 ---
 # <a name="activity-resource-type"></a>tipo de recurso atividade
 
 Representa uma única atividade dentro de um aplicativo, por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário participa dessa atividade, o contrato é capturado como um item de [histórico](projectrome-historyitem.md) que indica a hora de início e término da atividade. À medida que o usuário se reencaixa com essa atividade ao longo do tempo, vários itens de histórico são registrados para uma única atividade do usuário.
 
-Você pode usar atividades no Microsoft Graph para permitir que os usuários voltem ao que estavam fazendo em seus aplicativos, em vários dispositivos. As atividades que seu aplicativo cria aparecem em todos os dispositivos do usuário e são expostas aos usuários como links mais detalhados para conteúdo específico no seu aplicativo. Você pode expressar conteúdo específico no seu aplicativo como um destino que é ativado no Windows e acessível em dispositivos iOS e Android por meio de notificações da corTana.
+Você pode usar atividades no Microsoft Graph para permitir que os usuários voltem ao que estavam fazendo em seus aplicativos, em vários dispositivos. As atividades que seu aplicativo cria aparecem em todos os dispositivos do usuário e são expostas aos usuários como links mais detalhados para conteúdo específico no seu aplicativo. Você pode expressar conteúdo específico no seu aplicativo como um destino que é ativado no Windows e acessível em dispositivos iOS e Android por meio de notificações da Cortana.
 
-Como cada aplicativo é diferente, você deve entender a melhor maneira de mapear ações no seu aplicativo para as atividades do usuário que aparecerão na corTana e na linha do tempo. Por exemplo, os jogos podem criar uma atividade para cada campanha, os aplicativos de criação de documentos podem criar uma atividade para cada documento exclusivo, e os aplicativos de linha de negócios podem criar uma atividade para cada fluxo de trabalho.
+Como cada aplicativo é diferente, você deve entender a melhor maneira de mapear ações no seu aplicativo para as atividades do usuário que aparecerão na Cortana e na linha do tempo. Por exemplo, os jogos podem criar uma atividade para cada campanha, os aplicativos de criação de documentos podem criar uma atividade para cada documento exclusivo, e os aplicativos de linha de negócios podem criar uma atividade para cada fluxo de trabalho.
 
-Suas atividades de usuário serão incluídas nas experiências do usuário da corTana e do Windows Timeline, que estão voltadas para aumentar a produtividade e a eficiência dos usuários, ajudando-os a voltar ao conteúdo em que eles trabalharam no passado.
+Suas atividades de usuário serão incluídas nas experiências do usuário da Cortana e do Windows Timeline, que estão voltadas para aumentar a produtividade e a eficiência dos usuários, ajudando-os a voltar ao conteúdo em que eles trabalharam no passado.
 
 ## <a name="methods"></a>Métodos
 
 |Método | Tipo de retorno | Descrição|
 |:------|:------------|:-----------|
 |[Criar ou substituir atividade](../api/projectrome-put-activity.md) | [atividade](projectrome-activity.md) |Cria ou substitui uma atividade existente (Upsert). O appActivityId precisa ser uma URL segura (todos os caracteres, exceto os caracteres não reservados da RFC 2396, devem ser convertidos em sua representação hexadecimal), mas o appActivityId original não precisa ser URL-seguro. |
-|[Excluir uma atividade](../api/projectrome-delete-activity.md) | Sem conteúdo | Exclui a atividade especificada para esse usuário do seu aplicativo.|
+|[Excluir uma atividade](../api/projectrome-delete-activity.md) | Sem Conteúdo | Exclui a atividade especificada para esse usuário do seu aplicativo.|
 |[Obter atividades](../api/projectrome-get-activities.md) | Conjunto de [atividades](projectrome-activity.md) | Obtém as atividades para seu aplicativo para um determinado usuário.|
 |[Obter atividades recentes](../api/projectrome-get-recent-activities.md) | Conjunto de [atividades](projectrome-activity.md) | Obtém as atividades mais recentes para o seu aplicativo para um determinado usuário, classificadas e com base no [historyItems](projectrome-historyitem.md)criado ou atualizado recentemente.|
 
@@ -33,7 +35,7 @@ Suas atividades de usuário serão incluídas nas experiências do usuário da c
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|userTimezone | String | Opcional. O fuso horário em que o dispositivo do usuário usado para gerar a atividade estava localizado no momento da criação da atividade; valores fornecidos como IDs de Olson para oferecer suporte à representação de plataforma cruzada.|
+|usertimezone | String | Opcional. O fuso horário em que o dispositivo do usuário usado para gerar a atividade estava localizado no momento da criação da atividade; valores fornecidos como IDs de Olson para oferecer suporte à representação de plataforma cruzada.|
 |createdDateTime | DateTimeOffset | Definido pelo servidor. DateTime em UTC quando o objeto foi criado no servidor. |
 |lastModifiedDateTime | DateTimeOffset | Definido pelo servidor. DateTime em UTC quando o objeto foi modificado no servidor. |
 |id | String | ID gerada pelo servidor usada para o endereçamento de URL.|
@@ -52,7 +54,7 @@ Suas atividades de usuário serão incluídas nas experiências do usuário da c
 
 |Relação | Tipo | Descrição|
 |:------------|:-----|:-----------|
-|historyItems| coleção [activityHistoryItem](../resources/projectrome-historyitem.md) | Opcional. NavigationProperty/conFinamento; Propriedade Navigation para o historyItems da atividade.|
+|historyItems| coleção [activityHistoryItem](../resources/projectrome-historyitem.md) | Opcional. NavigationProperty/confinamento; Propriedade Navigation para o historyItems da atividade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

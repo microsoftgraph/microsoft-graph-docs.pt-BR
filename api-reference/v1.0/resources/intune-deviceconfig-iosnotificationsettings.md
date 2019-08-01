@@ -4,12 +4,13 @@ description: Um item que descreve a configuração de notificação.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ce016579729353f69f2e7671ff67b5da0004536
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 38ebee60ad5e4de642103a4cd72ae4f6cea0d9c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464586"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031476"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Tipo de recurso iosNotificationSettings
 
@@ -31,7 +32,7 @@ Um item que descreve a configuração de notificação.
 |soundsEnabled|Booliano|Indica se são permitidos sons neste aplicativo.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

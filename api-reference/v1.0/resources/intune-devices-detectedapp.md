@@ -4,12 +4,13 @@ description: Um aplicativo gerenciado ou não gerenciado que está instalado em 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a9a31245676dfba465de61aca6527d112ce0b6d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: bd0d683ebcada0bbc7ef2b1baa9269e912faf03c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542043"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030867"
 ---
 # <a name="detectedapp-resource-type"></a>Tipo de recurso detectedApp
 

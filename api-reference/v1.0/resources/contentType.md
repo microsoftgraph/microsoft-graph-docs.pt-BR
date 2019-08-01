@@ -4,17 +4,20 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-ms.openlocfilehash: c7d4b3222ec64432d6a2c9921e53ce409de3f139
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso contentType representa um tipo de conteúdo no SharePoint.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: b26f9b7a3bafb7b6185aa781c1f842f7c20adab3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561352"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029635"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso ContentType
 
 O recurso **contentType** representa um _tipo de conteúdo_ no SharePoint.
-Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar presentes em cada [**listItem**][listItem] em uma [**lista**][list].
+Os tipos de conteúdo permitem que você defina um conjunto de colunas que deve estar presente em cada [**ListItem**][listItem] em uma [**lista**][list].
 
 [list]: list.md
 [listItem]: listitem.md

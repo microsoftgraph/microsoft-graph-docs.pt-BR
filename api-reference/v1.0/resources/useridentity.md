@@ -4,12 +4,13 @@ description: No contexto de um log de auditoria do Azure AD, isso representa as 
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 018bc8ca3713822295d0acef66e8ec075d276cfe
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 0e72f5338f7281188b7023aed342dd34ee57595e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629226"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033499"
 ---
 # <a name="useridentity-resource-type"></a>tipo de recurso UserIdentity
 
@@ -22,7 +23,7 @@ No contexto de um log de auditoria do Azure AD, isso representa as informações
 | displayName | String | Nome de exibição da identidade. Observe que isso pode não estar sempre disponível ou atualizado.    |
 | id          | String | Identificador exclusivo da identidade.  |
 | ipAddress   | Cadeia de caracteres| Indica o endereço IP do cliente usado pelo usuário que está executando a atividade (log de auditoria somente).|
-| userPrincipalName | Cadeia de caracteres  | O atributo userPrincipalName do usuário. |
+| userPrincipalName | String  | O atributo userPrincipalName do usuário. |
 
 >**Observação:** Em alguns casos, o identificador exclusivo pode não estar disponível. Nesse caso, a propriedade **displayName** para a identidade será retornada, mas a propriedade **id** estará ausente do recurso.
 

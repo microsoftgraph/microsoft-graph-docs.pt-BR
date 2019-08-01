@@ -4,12 +4,13 @@ description: Uma classe que contém as propriedades para a Propriedade de audito
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18e819234fd4ee7065378046f8ec977276a8c9f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2a3e4ed10a756c4d1cb62bf98c1b6cb13d6f22c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565797"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032050"
 ---
 # <a name="auditproperty-resource-type"></a>Tipo de recurso auditProperty
 

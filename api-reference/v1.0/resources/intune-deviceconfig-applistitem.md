@@ -4,12 +4,13 @@ description: Representa um aplicativo na lista de aplicativos gerenciados
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb81c8edfae3f9b33be4636e9fd7f15fa758e789
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5b9aa0a35767078b7c91f72b7a8b06a450cc9f33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575090"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028606"
 ---
 # <a name="applistitem-resource-type"></a>Tipo de recurso appListItem
 
@@ -22,8 +23,8 @@ Representa um aplicativo na lista de aplicativos gerenciados
 |:---|:---|:---|
 |name|String|O nome do aplicativo|
 |distribuidor|String|O distribuidor do aplicativo|
-|appStoreUrl|String|A URL da loja do aplicativo|
-|appId|Cadeia de caracteres|O aplicativo ou identificador do pacote do aplicativo|
+|appStoreUrl|Cadeia de caracteres|A URL da loja do aplicativo|
+|appId|String|O aplicativo ou identificador do pacote do aplicativo|
 
 ## <a name="relationships"></a>Relações
 Nenhum

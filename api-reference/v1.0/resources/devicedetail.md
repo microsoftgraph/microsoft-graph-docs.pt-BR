@@ -4,12 +4,13 @@ description: Indica os detalhes do dispositivo associados a um dispositivo usado
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a6ea50eeea3a906346b69466d2686a2de101792a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 7cf5de980f28768fdd92ed4b052e0c678be1cdac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629296"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029495"
 ---
 # <a name="devicedetail-resource-type"></a>tipo de recurso deviceDetail
 
@@ -19,8 +20,8 @@ Indica os detalhes do dispositivo associados a um dispositivo usado para entrar.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Navegador|Cadeia de caracteres|Indica as informações do navegador do usado para entrar.|
-|deviceId|Cadeia de caracteres|Refere-se ao UniqueID do dispositivo usado para entrar.|
+|Navegador|String|Indica as informações do navegador do usado para entrar.|
+|deviceId|String|Refere-se ao UniqueID do dispositivo usado para entrar.|
 |displayName|String|Refere-se ao nome do dispositivo usado para entrar.|
 |isCompliant|Booliano|Indica se o dispositivo está em conformidade.|
 |isManaged|Booliano|Indica se o dispositivo é gerenciado.|

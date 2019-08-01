@@ -4,12 +4,13 @@ description: Uma classe que contém as propriedades para o Recurso de auditoria.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e2a6b2309e831a872c4cde04a951819cac292ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 14ecd6e4772e6d694707bd047899bd6b75720252
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028858"
 ---
 # <a name="auditresource-resource-type"></a>Tipo de recurso auditResource
 
@@ -20,7 +21,7 @@ Uma classe que contém as propriedades para o Recurso de auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição.|
+|displayName|Cadeia de caracteres|Nome de exibição.|
 |ModifiedProperties|Conjunto [auditProperty](../resources/intune-auditing-auditproperty.md)|Lista de propriedades modificadas.|
 |type|String|Tipo de recurso de auditoria.|
 |resourceId|Cadeia de caracteres|ID do recurso de auditoria.|

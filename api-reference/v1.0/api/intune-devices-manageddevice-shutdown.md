@@ -4,12 +4,13 @@ description: Desligar o dispositivo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8eba26983c886b2d75e19ce89ac7153f54b14aee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0e63436648a21783889063a5c17eb1021f02d547
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556747"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020896"
 ---
 # <a name="shutdown-action"></a>Ação shutDown
 

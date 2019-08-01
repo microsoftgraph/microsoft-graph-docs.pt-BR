@@ -4,12 +4,13 @@ description: Adiciona uma nova coluna à tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e78bb246330a36959818b074d5e9929528d865c8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 89967468aec77f3c65fc8e0a2408e22005b70c6a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894191"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024418"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 

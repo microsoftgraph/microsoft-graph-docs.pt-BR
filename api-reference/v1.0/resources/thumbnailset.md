@@ -4,16 +4,17 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
-ms.openlocfilehash: a9d92d84c8495b8c138c34f752700ccd0aad64fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: O recurso ThumbnailSet é uma coleção com chave dos recursos thumbnail.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 1dbd9ec5698fd3a9aac21e2f1463ce4364946e69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457015"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033625"
 ---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **ThumbnailSet** é uma coleção com chave dos recursos [thumbnail](thumbnail.md). Ele é usado para representar um conjunto de miniaturas associado a um DriveItem.
 
@@ -21,13 +22,19 @@ O recurso **ThumbnailSet** é uma coleção com chave dos recursos [thumbnail](t
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": ["source", "small", "medium", "large"],
-  "openType": true,
+  "optionalProperties": [
+    "source",
+    "small",
+    "medium",
+    "large"
+  ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.thumbnailSet"
-} -->
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.thumbnailSet",
+  "openType": true
+}-->
 
 ```json
 {
@@ -51,14 +58,9 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "ThumbnailSet enables access to thumbnails of different sizes",
   "section": "documentation",
-  "tocPath": "Resources/ThumbnailSet",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/thumbnailset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Resources/ThumbnailSet"
+} -->

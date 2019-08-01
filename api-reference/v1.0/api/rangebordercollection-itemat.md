@@ -4,12 +4,13 @@ description: Obtém um objeto de borda usando seu índice.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 037c040feaf65e6a6367b4eca8142524bc046772
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 480ecdf8f9f22df0b5a29ac4736479900b35c53e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461173"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022128"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 

@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c234181bb70ca0df11cff01b67eb7d6fa60e27ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: da38aa1fb497bc5fb1225f2435ed2bd9c4e4b3c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576794"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025845"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>função managedDeviceEnrollmentFailureDetails
 
@@ -50,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 |:---|:---|:---|
 |skip|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
-|filtro|String|Ainda não documentado|
+|filter|String|Ainda não documentado|
 |skipToken|String|Ainda não documentado|
 
 

@@ -3,12 +3,14 @@ title: Excluir uma atividade
 description: Excluir uma atividade de usuário existente para seu aplicativo.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 6df91f6111381a9795fa9a046f30d6e45a55a4b4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 3daebc9cb4587966dbbec48f95f790e48c4a300e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894009"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022338"
 ---
 # <a name="delete-an-activity"></a>Excluir uma atividade
 

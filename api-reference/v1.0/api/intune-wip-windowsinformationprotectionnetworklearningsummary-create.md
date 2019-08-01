@@ -4,12 +4,13 @@ description: Criar um novo objeto windowsInformationProtectionNetworkLearningSum
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02a38617e2c47bd023ee4044126d0f4cf5308a8a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9b1dd1d75aea70c7fae3a6d337288213747afd25
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576385"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025607"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Criar windowsInformationProtectionNetworkLearningSummary
 
