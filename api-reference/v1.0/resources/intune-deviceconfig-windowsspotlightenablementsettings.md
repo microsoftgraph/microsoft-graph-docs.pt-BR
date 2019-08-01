@@ -4,25 +4,26 @@ description: Permite que ele seja definido como um mecanismo de pesquisa padrão
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 779db41264e2c0d499b6757fac0c1fee199c1a52
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 9b80136c998da1ecab121a050455ac031ba1aa77
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463436"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027612"
 ---
-# <a name="windowsspotlightenablementsettings-enum-type"></a><span data-ttu-id="674e0-103">tipo de enumeração windowsSpotlightEnablementSettings</span><span class="sxs-lookup"><span data-stu-id="674e0-103">windowsSpotlightEnablementSettings enum type</span></span>
+# <a name="windowsspotlightenablementsettings-enum-type"></a><span data-ttu-id="e185c-103">tipo de enumeração windowsSpotlightEnablementSettings</span><span class="sxs-lookup"><span data-stu-id="e185c-103">windowsSpotlightEnablementSettings enum type</span></span>
 
-> <span data-ttu-id="674e0-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="674e0-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e185c-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e185c-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="674e0-105">Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM</span><span class="sxs-lookup"><span data-stu-id="674e0-105">Allows IT admind to set a predefined default search engine for MDM-Controlled devices</span></span>
+<span data-ttu-id="e185c-105">Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM</span><span class="sxs-lookup"><span data-stu-id="e185c-105">Allows IT admind to set a predefined default search engine for MDM-Controlled devices</span></span>
 
-## <a name="members"></a><span data-ttu-id="674e0-106">Membros</span><span class="sxs-lookup"><span data-stu-id="674e0-106">Members</span></span>
-|<span data-ttu-id="674e0-107">Membro</span><span class="sxs-lookup"><span data-stu-id="674e0-107">Member</span></span>|<span data-ttu-id="674e0-108">Valor</span><span class="sxs-lookup"><span data-stu-id="674e0-108">Value</span></span>|<span data-ttu-id="674e0-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="674e0-109">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e185c-106">Membros</span><span class="sxs-lookup"><span data-stu-id="e185c-106">Members</span></span>
+|<span data-ttu-id="e185c-107">Membro</span><span class="sxs-lookup"><span data-stu-id="e185c-107">Member</span></span>|<span data-ttu-id="e185c-108">Valor</span><span class="sxs-lookup"><span data-stu-id="e185c-108">Value</span></span>|<span data-ttu-id="e185c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="e185c-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="674e0-110">notConfigured</span><span class="sxs-lookup"><span data-stu-id="674e0-110">notConfigured</span></span>|<span data-ttu-id="674e0-111">,0</span><span class="sxs-lookup"><span data-stu-id="674e0-111">0</span></span>|<span data-ttu-id="674e0-112">O Spotlight na tela de bloqueio não está configurado</span><span class="sxs-lookup"><span data-stu-id="674e0-112">Spotlight on lock screen is not configured</span></span>|
-|<span data-ttu-id="674e0-113">deficiência</span><span class="sxs-lookup"><span data-stu-id="674e0-113">disabled</span></span>|<span data-ttu-id="674e0-114">1</span><span class="sxs-lookup"><span data-stu-id="674e0-114">1</span></span>|<span data-ttu-id="674e0-115">Desabilitar o destaque do Windows na tela de bloqueio</span><span class="sxs-lookup"><span data-stu-id="674e0-115">Disable Windows Spotlight on lock screen</span></span>|
-|<span data-ttu-id="674e0-116">enabled</span><span class="sxs-lookup"><span data-stu-id="674e0-116">enabled</span></span>|<span data-ttu-id="674e0-117">duas</span><span class="sxs-lookup"><span data-stu-id="674e0-117">2</span></span>|<span data-ttu-id="674e0-118">Habilitar o destaque do Windows na tela de bloqueio</span><span class="sxs-lookup"><span data-stu-id="674e0-118">Enable Windows Spotlight on lock screen</span></span>|
+|<span data-ttu-id="e185c-110">notConfigured</span><span class="sxs-lookup"><span data-stu-id="e185c-110">notConfigured</span></span>|<span data-ttu-id="e185c-111">,0</span><span class="sxs-lookup"><span data-stu-id="e185c-111">0</span></span>|<span data-ttu-id="e185c-112">O Spotlight na tela de bloqueio não está configurado</span><span class="sxs-lookup"><span data-stu-id="e185c-112">Spotlight on lock screen is not configured</span></span>|
+|<span data-ttu-id="e185c-113">deficiência</span><span class="sxs-lookup"><span data-stu-id="e185c-113">disabled</span></span>|<span data-ttu-id="e185c-114">1</span><span class="sxs-lookup"><span data-stu-id="e185c-114">1</span></span>|<span data-ttu-id="e185c-115">Desabilitar o destaque do Windows na tela de bloqueio</span><span class="sxs-lookup"><span data-stu-id="e185c-115">Disable Windows Spotlight on lock screen</span></span>|
+|<span data-ttu-id="e185c-116">enabled</span><span class="sxs-lookup"><span data-stu-id="e185c-116">enabled</span></span>|<span data-ttu-id="e185c-117">duas</span><span class="sxs-lookup"><span data-stu-id="e185c-117">2</span></span>|<span data-ttu-id="e185c-118">Habilitar o destaque do Windows na tela de bloqueio</span><span class="sxs-lookup"><span data-stu-id="e185c-118">Enable Windows Spotlight on lock screen</span></span>|
 
 
 
