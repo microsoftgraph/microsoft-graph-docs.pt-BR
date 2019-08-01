@@ -5,16 +5,17 @@ title: tipo de recurso versionaction
 description: O objeto Versionaction fornece informações sobre uma atividade que resultou em uma nova versão do item.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0d05ad93c59ba736dd90276fc5e3db6e05740344
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 22f06691824d2ffa5b773a796b4c456cb2fcaecc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970593"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033443"
 ---
 # <a name="versionaction-resource-type"></a>tipo de recurso versionaction
 
-A presença do recurso **versionaction** em um myactivity [****] [ activity] indica que a atividade causou a criação de uma nova versão.
+A presença do recurso **versionaction** em um myactivity indica que a atividade causou a criação de uma nova versão. [****][activity]
 
 >**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 

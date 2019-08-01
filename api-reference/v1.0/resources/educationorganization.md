@@ -4,12 +4,13 @@ description: Entidade abstrata usada para modelar a semelhança entre diferentes
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 99f3294f76a246e4e78f0f61b0fc1f62532c3a03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c62e65ffb6c6a0e3a8af92bda6a8b1e1c241ada7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562801"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032631"
 ---
 # <a name="educationorganization-resource-type"></a>tipo de recurso educationOrganization
 

@@ -4,12 +4,13 @@ description: Status do registro do dispositivo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b3bee7ab56f07dd6f27c20c771329ba84edbb19
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 933ea7cf16421ecadd9bb23b4594d8ca0f5e767b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580971"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030727"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enumeração deviceRegistrationState
 
@@ -21,12 +22,12 @@ Status do registro do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não registrado|,0|O dispositivo não está registrado.|
-|inscreve|2 |O dispositivo está registrado.|
-|revogado|3 |O dispositivo foi bloqueado, apagado ou desativado.|
-|keyConflict|4 |O dispositivo tem um conflito de teclas.|
-|approvalPending|5 |O dispositivo está aguardando aprovação.|
-|certificateReset|6 |O certificado de dispositivo foi redefinido.|
-|notRegisteredPendingEnrollment|7 |O dispositivo não está registrado e registro pendente.|
+|inscreve|duas|O dispositivo está registrado.|
+|revogado|3D|O dispositivo foi bloqueado, apagado ou desativado.|
+|keyconflict|quatro|O dispositivo tem um conflito de teclas.|
+|approvalPending|0,5|O dispositivo está aguardando aprovação.|
+|certificateReset|6|O certificado de dispositivo foi redefinido.|
+|notRegisteredPendingEnrollment|178|O dispositivo não está registrado e registro pendente.|
 |desconhecido|8 |O status do registro do dispositivo é desconhecido.|
 
 

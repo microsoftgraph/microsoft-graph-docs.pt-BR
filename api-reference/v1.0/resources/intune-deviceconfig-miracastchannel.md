@@ -4,12 +4,13 @@ description: Valores possíveis para o canal Miracast.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 436036aa9b5945be94587622a2e6a5cfe4f5d027
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: f6ca37c3766efd236facf7cee528252eaf7cf71a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549297"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028074"
 ---
 # <a name="miracastchannel-enum-type"></a>tipo de enumeração miracastChannel
 
@@ -20,18 +21,18 @@ Valores possíveis para o canal Miracast.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|um|1 |Só.|
-|two|2 |Two.|
-|three|3 |Seguintes.|
-|four|4 |Quarta.|
-|five|5 |Máximo.|
-|MRU|6 |MRU.|
-|sétimo|7 |Sétimo.|
+|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|um|1|Só.|
+|two|duas|Two.|
+|three|3D|Seguintes.|
+|four|quatro|Quarta.|
+|five|0,5|Máximo.|
+|MRU|6|MRU.|
+|sétimo|178|Sétimo.|
 |altura|8 |Altura.|
 |nove|9 |Nove.|
 |primeiros|10 |Primeiros.|
-|11|11 |11.|
+|11|11|11.|
 |thirtySix|36|36.|
 |40|40|40.|
 |fortyFour|44|44.|

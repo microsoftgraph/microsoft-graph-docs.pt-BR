@@ -3,12 +3,14 @@ title: tipo de recurso secureScoreControlStateUpdate
 description: Este recurso contém o histórico dos Estados de controle atualizados pelo usuário (os Estados de controle incluem padrão, ignorado, terceiros, revisado).
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: ac66fb2085949e375c79b18bfdfd39e84392159d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9e051f2c4319a2b2ae1e3dbd9ba633785a345c4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629247"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034472"
 ---
 #  <a name="securescorecontrolstateupdate-resource-type"></a>tipo de recurso secureScoreControlStateUpdate
 
@@ -18,10 +20,10 @@ Contém o histórico dos Estados de controle atualizados pelo usuário (os Estad
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|assignedTo|Cadeia de caracteres|Atribui o controle ao usuário que executará a ação. |
+|assignedTo|String|Atribui o controle ao usuário que executará a ação. |
 |comment|String|Fornece comentários opcionais sobre o controle. |
 |state|Cadeia de caracteres|Estado do controle, que pode ser modificado por meio de um comando PATCH (por exemplo, ignorado, terceiros). |
-|updatedBy|Cadeia de caracteres|ID do usuário que atualizou o estado do locatário. |
+|updatedBy|String|ID do usuário que atualizou o estado do locatário. |
 |updatedDateTime|DateTimeOffset|Hora em que o estado do controle foi atualizado. |
 
 ## <a name="json-representation"></a>Representação JSON

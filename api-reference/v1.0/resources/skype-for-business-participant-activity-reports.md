@@ -4,12 +4,13 @@ description: Você pode usar os relatórios de atividade do participante do Skyp
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5cfb5412cb2be03dcd3463714346e5f23ca6a5cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 2b6596e7478632da773dc8839dafd722587e417d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565993"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034087"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Relatórios de atividades do participante do Skype for Business
 

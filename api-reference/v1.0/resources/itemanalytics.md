@@ -5,12 +5,13 @@ title: tipo de recurso do multianalytics
 description: O objeto PostItem fornece análises sobre as atividades que ocorreram em um item.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a18d12bd2b431d147f2d23ea2c958cd75078c9a8
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: 9c33a79d2728b578eeab1348a655e2b7a7574955
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620413"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036579"
 ---
 # <a name="itemanalytics-resource-type"></a>tipo de recurso do multianalytics
 

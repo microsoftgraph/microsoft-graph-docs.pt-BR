@@ -4,12 +4,13 @@ description: Exclui remoteAssistancePartner.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff781d47ed3329b6f670b0b578a3fa65c4a06bb8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f44b5a9d33fc628ab4c9a1e8158a80e0485051ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463583"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023605"
 ---
 # <a name="delete-remoteassistancepartner"></a>Excluir remoteAssistancePartner
 

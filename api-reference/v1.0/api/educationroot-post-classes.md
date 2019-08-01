@@ -4,12 +4,13 @@ description: Crie uma nova aula. Isso também criará um grupo universal. Quando
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 5850dabad89b11d241c9cdcbb5e4e97030bc34c7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0cfba23d1a659ed8c8b0d147decd206895024424
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887836"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002941"
 ---
 # <a name="create-educationclass"></a>Criar educationClass
 

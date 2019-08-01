@@ -3,12 +3,14 @@ title: Usar a API REST de feed de atividades
 description: 'Você pode usar a API do feed de atividades no Microsoft Graph para retomar a atividade de um usuário entre dispositivos e plataformas. As solicitações da API de feed de atividades são realizadas em nome de um usuário via permissões delegadas e a permissão de atividade do usuário, que pode ser usada com contas pessoais ou corporativas e de estudante. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 00b1ac90bd4a1a9fe7cef2a9ffaebcebc2d8d5f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 927e83a57a3b199bddbc05394c58facfff89b25c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569470"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030125"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Usar a API REST de feed de atividades
 
@@ -20,7 +22,7 @@ Each activity represents a unique...
 -->
 ## <a name="what-makes-a-great-user-activity"></a>O que faz uma boa atividade do usuário?
 
-As atividades do usuário não apenas iniciam aplicativos – elas são links profundos para conteúdo específico no seu aplicativo. As atividades do usuário que você cria não podem ser usadas somente em seu próprio aplicativo, mas também aparecerão na corTana e na linha do tempo do Windows, levando mais reenvolvimento de aplicativos e facilitando o uso do aplicativo em vários dispositivos.  
+As atividades do usuário não apenas iniciam aplicativos – elas são links profundos para conteúdo específico no seu aplicativo. As atividades do usuário que você cria não podem ser usadas somente em seu próprio aplicativo, mas também aparecerão na Cortana e na linha do tempo do Windows, levando mais reenvolvimento de aplicativos e facilitando o uso do aplicativo em vários dispositivos.  
 
 ### <a name="what-should-become-an-activity"></a>O que deve se tornar uma atividade? 
 

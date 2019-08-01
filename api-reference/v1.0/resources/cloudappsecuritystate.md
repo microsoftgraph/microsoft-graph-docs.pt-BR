@@ -2,12 +2,15 @@
 title: tipo de recurso cloudAppSecurityState
 description: Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
 localization_priority: Normal
-ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e000d5d788a293c9aed7b702da2653f42116c0c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584856"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029712"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>tipo de recurso cloudAppSecurityState
 

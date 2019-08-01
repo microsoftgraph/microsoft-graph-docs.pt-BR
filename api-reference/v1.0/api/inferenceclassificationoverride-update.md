@@ -2,12 +2,15 @@
 title: Atualizar inferenceclassificationoverride
 description: 'Altere o campo **classifyAs** de uma substituição conforme especificado. '
 localization_priority: Normal
-ms.openlocfilehash: 2bbea8668556ce1ea2bcf55af4f39fef9d1197fa
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 48852985a22255bc328465da4f74b93608eae5a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880794"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014379"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceclassificationoverride
 

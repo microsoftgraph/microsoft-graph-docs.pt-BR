@@ -2,12 +2,15 @@
 title: Tipo de recurso recipient
 description: 'Representa informações sobre um usuário no envio ou recebimento de um evento, mensagem ou postagem de grupo. '
 localization_priority: Normal
-ms.openlocfilehash: 89d1ae7703d5b8b0e2a94027e74fbd4c4ebf9ed8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9cce3b701965b819d82fc25a28da7e2627c1e2b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579426"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034822"
 ---
 # <a name="recipient-resource-type"></a>Tipo de recurso recipient
 

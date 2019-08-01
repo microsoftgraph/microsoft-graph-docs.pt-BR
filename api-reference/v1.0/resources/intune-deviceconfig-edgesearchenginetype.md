@@ -4,12 +4,13 @@ description: Permite que ele seja definido como um mecanismo de pesquisa padrão
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9ce84430eeb483b1a97cacf5b3fb6897c72e80e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: e6e9d21e4471a95c3f7acee2ea43cc1a7f6901f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565916"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031602"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>tipo de enumeração edgeSearchEngineType
 
@@ -21,7 +22,7 @@ Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Padrão.|,0|Usa as configurações de fábrica da borda para atribuir o mecanismo de pesquisa padrão de acordo com o mercado de usuários|
-|Bing|1 |Define Bing como o mecanismo de pesquisa padrão|
+|Bing|1|Define Bing como o mecanismo de pesquisa padrão|
 
 
 

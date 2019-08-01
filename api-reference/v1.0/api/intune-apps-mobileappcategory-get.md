@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto mobileAppCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aff0097db9a8a7f003ede175a8fe313425a75416
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f907840d680768a81e08ef1b10cf17c1d6041572
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013735"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 

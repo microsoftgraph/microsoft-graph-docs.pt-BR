@@ -4,12 +4,13 @@ description: Contém as propriedades do sistema operacional mínimo obrigatório
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7490ad7b27d55fa6f2b7c6de12083025e7b4ac93
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: da56780e66e88baaa074c3106997e3b4a3cc3b64
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032344"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 

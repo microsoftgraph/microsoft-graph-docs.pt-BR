@@ -4,12 +4,13 @@ description: Crie um rascunho para encaminhar a mensagem especificada. Você pod
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e901136df717872a000cfa33692f8d3261baf963
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4291827db19bed9f6811d9e8093167571bba8629
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880632"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025432"
 ---
 # <a name="message-createforward"></a>message: createForward
 

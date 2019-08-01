@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto softwareUpdateStatusSummary
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 408fcf809d6fc42e0585ed2134c2024d6e0e4675
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e9bac9fd4f19cf1812a8a21ffff78d91db750aca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585366"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020288"
 ---
 # <a name="get-softwareupdatestatussummary"></a>Obter softwareUpdateStatusSummary
 
