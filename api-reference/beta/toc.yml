@@ -7977,6 +7977,23 @@
                   href: api/domain-update.md
                 - name: Verificar domínio
                   href: api/domain-verify.md
+            - name: Política de distribuição de recursos
+              href: resources/featurerolloutpolicy.md
+              items:
+                - name: Lista
+                  href: api/directory-list-featurerolloutpolicies.md
+                - name: Obter
+                  href: api/featurerolloutpolicy-get.md
+                - name: Create
+                  href: api/directory-post-featurerolloutpolicies.md
+                - name: Atualizar
+                  href: api/featurerolloutpolicy-update.md
+                - name: Excluir
+                  href: api/featurerolloutpolicy-delete.md
+                - name: Criar aplica-se
+                  href: api/featurerolloutpolicy-post-appliesto.md
+                - name: Excluir aplica-se
+                  href: api/featurerolloutpolicy-delete-appliesto.md
             - name: Proteção de identidade
               href: resources/identityprotection-root.md
               items:

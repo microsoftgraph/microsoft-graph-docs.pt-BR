@@ -1,0 +1,118 @@
+---
+title: Listar featureRolloutPolicies
+description: Recupere uma lista de objetos featureRolloutPolicy.
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 782771ab560101996182099ace532dc08f41b10f
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062086"
+---
+# <a name="list-featurerolloutpolicies"></a><span data-ttu-id="b2a58-103">Listar featureRolloutPolicies</span><span class="sxs-lookup"><span data-stu-id="b2a58-103">List featureRolloutPolicies</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="b2a58-104">Recupere uma lista de objetos [featureRolloutPolicy](../resources/featurerolloutpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="b2a58-104">Retrieve a list of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) objects.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="b2a58-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="b2a58-105">Permissions</span></span>
+
+<span data-ttu-id="b2a58-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b2a58-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="b2a58-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b2a58-108">Permission type</span></span>                        | <span data-ttu-id="b2a58-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b2a58-109">Permissions (from least to most privileged)</span></span> |
+|:---------------------------------------|:--------------------------------------------|
+| <span data-ttu-id="b2a58-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b2a58-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="b2a58-111">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="b2a58-111">Policy.Read.All</span></span> |
+| <span data-ttu-id="b2a58-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b2a58-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b2a58-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b2a58-113">Not supported.</span></span> |
+| <span data-ttu-id="b2a58-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b2a58-114">Application</span></span>                            | <span data-ttu-id="b2a58-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b2a58-115">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="b2a58-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b2a58-116">HTTP request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /directory/featureRolloutPolicies
+```
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="b2a58-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b2a58-117">Optional query parameters</span></span>
+
+<span data-ttu-id="b2a58-118">Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a Personalizar `$count`a `$expand`resposta `$filter`: `$orderby`, `$select`, `$skip`, `$top`,,,.</span><span class="sxs-lookup"><span data-stu-id="b2a58-118">This method supports the following OData query parameters to help customize the response: `$count`, `$expand`, `$filter`, `$orderby`, `$select`, `$skip`, `$top`.</span></span> <span data-ttu-id="b2a58-119">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b2a58-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="b2a58-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b2a58-120">Request headers</span></span>
+
+| <span data-ttu-id="b2a58-121">Nome</span><span class="sxs-lookup"><span data-stu-id="b2a58-121">Name</span></span>      |<span data-ttu-id="b2a58-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="b2a58-122">Description</span></span>|
+|:----------|:----------|
+| <span data-ttu-id="b2a58-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b2a58-123">Authorization</span></span> | <span data-ttu-id="b2a58-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="b2a58-124">Bearer {code}</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="b2a58-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b2a58-125">Request body</span></span>
+
+<span data-ttu-id="b2a58-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b2a58-126">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="b2a58-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="b2a58-127">Response</span></span>
+
+<span data-ttu-id="b2a58-128">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [featureRolloutPolicy](../resources/featurerolloutpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b2a58-128">If successful, this method returns a `200 OK` response code and a collection of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) objects in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="b2a58-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b2a58-129">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="b2a58-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b2a58-130">Request</span></span>
+
+<span data-ttu-id="b2a58-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b2a58-131">The following is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_featurerolloutpolicies"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies
+```
+
+### <a name="response"></a><span data-ttu-id="b2a58-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="b2a58-132">Response</span></span>
+
+<span data-ttu-id="b2a58-133">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b2a58-133">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="b2a58-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b2a58-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.featureRolloutPolicy",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "e3c2f23a-edd2-43a8-849f-154e70794ac5",
+      "displayName": "PassthroughAuthentication rollout policy",
+      "description": "PassthroughAuthentication rollout policy",
+      "feature": "passthroughAuthentication",
+      "isEnabled": true,
+      "isAppliedToOrganization": false
+    },
+    {
+      "id": "df85e4d9-e8c4-4033-a41c-73419a95c29c",
+      "displayName": "SeamlessSso rollout policy",
+      "description": "SeamlessSso rollout policy",
+      "feature": "seamlessSso",
+      "isEnabled": true,
+      "isAppliedToOrganization": false
+    }
+  ]
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List featureRolloutPolicies",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
