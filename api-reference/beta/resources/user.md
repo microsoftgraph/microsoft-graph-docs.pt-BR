@@ -4,12 +4,13 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c71d9d5d64750c6df48a6e9fdf602d4bec4a0760
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: resourcePageType
+ms.openlocfilehash: a629124608a02639aa41a13c449bf307af257310
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908485"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964211"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 

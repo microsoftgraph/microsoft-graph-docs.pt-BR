@@ -3,13 +3,14 @@ title: Criar aplicativo
 description: Use esta API para criar um novo aplicativo.
 author: davidmu1
 localization_priority: Priority
+doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 775f7d59ba19ed015b7af5d66e9d52ae817ec65c
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+ms.openlocfilehash: 57c7977799eeca3830adc3b0250dd5c20dbddb23
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908317"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945470"
 ---
 # <a name="create-application"></a>Criar aplicativo
 

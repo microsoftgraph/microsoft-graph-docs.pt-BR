@@ -2,12 +2,15 @@
 title: tipo de recurso hostSecurityState
 description: Contém informações de estado sobre o host (incluindo dispositivos, computadores e assim por diante).
 localization_priority: Normal
-ms.openlocfilehash: 0646547b7f3e31dcf283c1ce423a52b4ae16f013
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: dabe7d0aa026cb1b514e95fbc953dcb1974f8925
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570782"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029271"
 ---
 # <a name="hostsecuritystate-resource-type"></a>tipo de recurso hostSecurityState
 
@@ -21,7 +24,7 @@ Contém informações de estado sobre o host (incluindo dispositivos, computador
 |isAzureAadJoined|Booliano|True se o host estiver associado ao domínio nos serviços de domínio do Azure Active Directory.|
 |isAzureAadRegistered|Booliano|True se o host registrado no registro de dispositivo do Azure Active Directory (dispositivos BYOD-ou seja, não é totalmente gerenciado pela empresa).|
 |isHybridAzureDomainJoined|Booliano|True se o host é membro de um domínio do Active Directory local.|
-|netBiosname|String|O nome do host local, sem o nome de domínio DNS.|
+|NetBiosName|String|O nome do host local, sem o nome de domínio DNS.|
 |Opera|String|Sistema operacional host. (Por exemplo, Windows10, MacOS, RHEL, etc.).|
 |privateIpAddress|String|Privado (não roteável) endereço IPv4 ou IPv6 (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|
 |publicIpAddress|String|Endereço IPv4 ou IPv6 roteável publicamente (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|

@@ -4,12 +4,13 @@ description: Os comportamentos de controle de configurações de grupo, como lis
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42e6c0dc0f0ffd48da84023c5e4ff0d97cb446f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c85b062e955fc15f83728813427f2de5579e297e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570824"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030237"
 ---
 # <a name="groupsetting-resource-type"></a>tipo de recurso groupSetting
 

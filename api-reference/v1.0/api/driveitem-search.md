@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Pesquisar arquivos
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 875f1a8e405f1ccabcfa66f1f361137aa331de22
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Pesquise a hierarquia de itens para itens que corresponda a uma consulta.
+doc_type: apiPageType
+ms.openlocfilehash: 57cc2c15d7bf49d724ec35290a929c5b52cfc475
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881621"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015366"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
 

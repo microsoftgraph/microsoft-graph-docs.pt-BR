@@ -4,12 +4,13 @@ description: Importar dispositivos do Windows AutoPilot usando upload.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b19b7c609ce66e747670ac1d0f1c35ad34d5e483
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: cc1042b353a40af676b80c673e8558a2f7a643a4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523699"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027360"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>tipo de recurso importedWindowsAutopilotDeviceIdentityUpload
 

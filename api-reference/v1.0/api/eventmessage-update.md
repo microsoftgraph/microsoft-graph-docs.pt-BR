@@ -4,12 +4,13 @@ description: Atualize as propriedades de um objeto eventMessage.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 812a7b514be601b6fc2aa7a5df4b216f37b2a562
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b539fbf5b459ec762b6bd5845b249c6f8a1bd927
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888149"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014974"
 ---
 # <a name="update-eventmessage"></a>Atualizar eventMessage
 

@@ -4,12 +4,13 @@ description: Obtém um objeto que representa um intervalo deslocado do intervalo
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 86db999cd39275ebb38c653e6dc4dda69fd87433
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fe1c368eff0c03df0fe454684139720ec8360ac5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525513"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025285"
 ---
 # <a name="range-offsetrange"></a>Range: OffsetRange
 

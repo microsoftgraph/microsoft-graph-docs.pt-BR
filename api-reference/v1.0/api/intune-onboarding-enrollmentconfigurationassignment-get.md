@@ -4,12 +4,13 @@ description: Ler propriedades e relações do objeto enrollmentConfigurationAssi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1a29f25a93bf40aec5571b1fd2576856f6f5695
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 18cb232f9a5bef40e56147efbb9035f98a0c55d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582714"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024123"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>Get enrollmentConfigurationAssignment
 

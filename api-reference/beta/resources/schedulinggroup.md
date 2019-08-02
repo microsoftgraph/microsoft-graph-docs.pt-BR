@@ -4,12 +4,13 @@ description: Um agrupamento lógico de membros do cronograma (geralmente pela fu
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: fb8ed65991d87780b6250841df8bdbdb089b7992
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: 9f4f494b21a1139ba9a9e0771dcbc41d363bab2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343448"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965296"
 ---
 # <a name="schedulinggroup-resource-type"></a>tipo de recurso schedulingGroup
 

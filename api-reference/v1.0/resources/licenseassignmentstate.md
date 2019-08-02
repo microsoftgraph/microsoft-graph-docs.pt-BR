@@ -4,12 +4,13 @@ description: A propriedade **licenseAssignmentStates** da entidade User é uma c
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 358c54ae2562479734cc496b1fe9ab8eb34812fa
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.openlocfilehash: 94cff7629b73d9d595c07cce9ebee74579676c32
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778688"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036495"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>tipo de recurso licenseAssignmentState
 

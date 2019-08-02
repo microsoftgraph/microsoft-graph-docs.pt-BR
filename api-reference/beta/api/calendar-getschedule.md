@@ -4,12 +4,13 @@ description: Obtenha as informações de disponibilidade para um conjunto de usu
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2f38cb2da3fab907206dd7c817ef8dbff95d06c1
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: d8e42d2c0ab59153b32ead33fb18453cbb624f98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35930900"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944713"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 

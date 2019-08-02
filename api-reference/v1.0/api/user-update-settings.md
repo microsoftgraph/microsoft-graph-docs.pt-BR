@@ -4,12 +4,13 @@ description: 'Atualize as propriedades do objeto Settings. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: eb739ebe4266dc61246fd39f1b4f053ab08a5a75
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ac4907867eebd0cf02bf4e978d1a48b1f1b47ce8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573568"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026513"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
@@ -31,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /me/settings
 ```
 
-A solicitação com uma "ID de usuário" ou "userPrincipalName" só pode ser acessada pelo usuário ou por um usuário com as permissões User. ReadWrite. All. Para saber mais, confira [permissões](/graph/permissions-reference). 
+Solicitação com uma "id de usuário" ou "userPrincipalName" ficará acessível somente para o usuário ou um usuário com permissões User.ReadWrite.All. Para saber mais, confira [permissões](/graph/permissions-reference). 
 
 ```http
 PATCH /users/{id | userPrincipalName}/settings/
@@ -86,7 +87,7 @@ Content-length: 72
 #### <a name="batch-request"></a>Solicitação em lote
 
 Também é possível recusar vários usuários do Delve e desabilitar sua contribuição na relevância do conteúdo para toda a organização por meio de uma solicitação em lote.
-Para saber mais, confira [batchIng JSON](https://developer.microsoft.com/graph/docs/concepts/json_batching).
+Para saber mais, confira [Batching JSON](https://developer.microsoft.com/graph/docs/concepts/json_batching).
 
 **Importante**: somente os membros do grupo de função [Gerenciamento da organização](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) podem atualizar vários usuários. 
 

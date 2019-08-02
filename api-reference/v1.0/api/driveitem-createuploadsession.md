@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Upload de arquivos retomável
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 6c430d0887736aed62053bf38541147229071a8b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
+doc_type: apiPageType
+ms.openlocfilehash: 1e61635d64974d98fa32c60c622ea576aa0ccfbe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548247"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015527"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -363,9 +365,9 @@ Content-Type: application/json
 * Um tamanho de intervalo de bytes de 10 MiB para conexões estáveis de alta velocidade é ideal. Para conexões mais lentas ou menos confiáveis, você pode obter melhores resultados com um tamanho de fragmento menor. O tamanho do fragmento recomendado é entre 5 e 10 MiB.
 * Use um tamanho de intervalo de bytes que seja múltiplo de 320 KiB (327.680 bytes). Uma falha ao usar um tamanho de fragmento que seja múltiplo de 320 KiB pode resultar na falha de transferências de arquivos grandes após o carregamento do último intervalo de bytes.
 
-## <a name="error-responses"></a>Respostas de erro
+## <a name="error-responses"></a>Respostas de erros
 
-Confira o tópico [Respostas de erro][error-response] para saber detalhes sobre como os erros são retornados.
+Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre como os erros são retornados.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

@@ -5,12 +5,13 @@ title: tipo de recurso driveItem
 description: Item é o principal modelo de dados na API do OneDrive. Tudo é um item.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 2d80c6cf2b121f606938e533a6428e2d85d54033
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: a098da44ea4d6861a7d4372c907452721bfc881b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968790"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029369"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -182,7 +183,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | [Atualizar item](../api/driveitem-update.md)                | driveItem | Atualiza um driveItem na unidade.
 | [Carregar conteúdo](../api/driveitem-put-content.md)        | driveItem | Carrega conteúdo para o driveItem.
 | [Baixar conteúdo](../api/driveitem-get-content.md)      | URL de download | Baixa o conteúdo de um driveItem.
-| [Baixar formato de arquivo específico][download-format]         | URL de download | Baixa o conteúdo de um driveItem com um formato específico.
+| [Baixar o formato de arquivo específico][download-format]         | URL de download | Baixa o conteúdo de um driveItem com um formato específico.
 | [Excluir item](../api/driveitem-delete.md)                | Sem Conteúdo | Exclui um driveItem.
 | [Mover item](../api/driveitem-move.md)                    | driveItem | Move um DriveItem para um novo item pai.
 | [Copiar item](../api/driveitem-copy.md)                    | detalhes sobre como [monitorar o progresso](/graph/long-running-actions-overview) da cópia | Cria uma cópia de um driveItem (incluindo qualquer filho).

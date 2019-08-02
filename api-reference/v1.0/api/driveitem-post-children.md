@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Criar uma nova pasta
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 97c4d06309040b8fbc4575e7a9821f5960626f31
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Criar uma nova pasta ou DriveItem em um Drive com um item pai ou caminho especificado.
+doc_type: apiPageType
+ms.openlocfilehash: a522ee90a09dabeba2cb5bf94a3393b8392e1c1d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881669"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015380"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Criar uma nova pasta em uma unidade
 

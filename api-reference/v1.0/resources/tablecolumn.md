@@ -4,12 +4,13 @@ description: Representa uma coluna em uma tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 15a91ce28509e63f6ca7def284aeafe515ed04d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 095317b36c5242cd5e78f58192a242bd4e1f2993
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561303"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033975"
 ---
 # <a name="tablecolumn-resource-type"></a>Tipo de recurso TableColumn
 
@@ -26,8 +27,8 @@ Representa uma coluna em uma tabela.
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de cabeçalho da coluna.|
 |[Range](../api/tablecolumn-range.md)|[Range](range.md)|Obtém o objeto de intervalo associado a toda a coluna.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de totais da coluna.|
-|[Excluir](../api/tablecolumn-delete.md)|Nenhum|Exclui a coluna da tabela.|
-|[List](../api/tablecolumn-list.md) | Coleção [WorkbookTableColumn](tablecolumn.md) |Obtenha uma coleção de objetos tableColumn. |
+|[Delete](../api/tablecolumn-delete.md)|Nenhum|Exclui a coluna da tabela.|
+|[List](../api/tablecolumn-list.md) | Conjunto [WorkbookTableColumn](tablecolumn.md) |Obtenha uma coleção de objetos tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](tablecolumn.md)|Obtém uma coluna com base em sua posição na coleção.|
 |[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](tablecolumn.md)|Adiciona uma nova coluna à tabela.|
 

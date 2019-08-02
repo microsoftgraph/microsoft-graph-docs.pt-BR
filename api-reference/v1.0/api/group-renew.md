@@ -4,12 +4,13 @@ description: Renova o período de validade de um grupo. Após renovar um grupo, 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 264763a7f5997a989ad54056caa898a450f0da38
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b334c863cd13cee7b046d7e7701302b0607b59f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885435"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014750"
 ---
 # <a name="group-renew"></a>group: renew
 

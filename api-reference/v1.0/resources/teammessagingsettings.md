@@ -4,12 +4,13 @@ description: Configurações para definir a mensagens e menções na equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f8b643b752ab130433153e7a238a64d2960d6705
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 27ef5062e84f20dc1dbf6be11020f421871fbc09
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573841"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033835"
 ---
 # <a name="teammessagingsettings-resource-type"></a>tipo de recurso teamMessagingSettings
 

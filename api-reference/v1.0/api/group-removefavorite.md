@@ -4,12 +4,13 @@ description: Remova o grupo da lista de grupos favoritos do usuário atual. Supo
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e01bd43238bee98658bea1acccee3a8876a3679c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f268abf7245247c33a4e317d15c5ce18673575eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885421"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014764"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.

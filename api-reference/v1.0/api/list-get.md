@@ -5,12 +5,14 @@ ms.date: 09/11/2017
 title: Obter uma lista do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 51a0b856b00069e52b46c493556475d525030f63
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Retorna os metadados de uma lista.
+doc_type: apiPageType
+ms.openlocfilehash: 93c007a761b431131236b9c3ba66f36f071ab250
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888332"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023171"
 ---
 # <a name="get-metadata-for-a-list"></a>Obter metadados de uma lista
 

@@ -3,12 +3,14 @@ title: Usar as API REST de notificações no Microsoft Graph
 description: Você pode usar as API de notificações do Microsoft Graph para enviar notificações por push para um usuário. Basta informar uma conta de usuário à qual enviar uma notificação e a plataforma entregará a notificação a todos os pontos de extremidade do dispositivo. As solicitações de API de notificações são executadas em nome de um usuário por meio de permissões delegadas e a [permissão de notificação]( /graph/permissions_reference), que pode ser usado com contas Microsoft ou contas corporativas ou de estudante.
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 28aa795b1df9b2f4817c69332dd8bc9bf3afb172
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: conceptualPageType
+author: ''
+ms.openlocfilehash: 2faaa7272ce1a093fc855d432c1992b9de150965
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422518"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009584"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Usar as API REST de notificações no Microsoft Graph
 

@@ -4,12 +4,13 @@ description: Recupere uma lista de objetos **plannerTask** associados a um objet
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 0760db5cf8601874cb90301bd1043522b2a102b0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5e5e1a9768a4e224344089fb6f3e17d35e104f14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892112"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022486"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 

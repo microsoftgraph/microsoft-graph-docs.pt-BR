@@ -4,12 +4,13 @@ description: Obtenha tendências de uso da duração em minutos e tipo de sessõ
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: eebfaf36a0f27236ca31906c9827d93160de410e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 379b41ff27b56a8087ed2eb520c4970090f2666a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855664"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021701"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityminutecounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
 

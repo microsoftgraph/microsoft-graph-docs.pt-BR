@@ -4,12 +4,13 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3541b8ff61b0f48f4461a87559819f06d0e3cebe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 45ba5a7cf0280e5f54fbbfa00166521ff50e9354
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579899"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015898"
 ---
 # <a name="getauditactivitytypes-function"></a>Função getAuditActivityTypes
 
@@ -47,7 +48,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Ferramentas para desenvolvedores|String|Ainda não documentado|
+|category|String|Ainda não documentado|
 
 
 

@@ -4,12 +4,13 @@ description: Uma conversa é uma coleção de threads e um thread contém postag
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 0066a636d2b36e74443380598c2ca6e8daf826c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4c34f6f0d55cb27e5ce7f5f2ba6459cfbb4d5291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563788"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029593"
 ---
 # <a name="conversation-resource-type"></a>tipo de recurso conversation
 
@@ -22,9 +23,9 @@ Esse recurso oferece suporte à assinatura de [alteração de notificações](/g
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Listar conversas](../api/group-list-conversations.md) | Coleção [conversation](conversation.md) |Obtenha a lista de conversas desse grupo.|
-|[Create](../api/group-post-conversations.md) |[conversa](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
+|[Create](../api/group-post-conversations.md) |[conversation](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
 |[Obter conversa](../api/conversation-get.md) | [conversation](conversation.md) |Leia as propriedades e os relacionamentos do objeto conversation.|
-|[Excluir](../api/conversation-delete.md) | Nenhum |Exclua um objeto conversation. |
+|[Delete](../api/conversation-delete.md) | Nenhum |Excluir objeto conversation. |
 |[Listar threads de conversas](../api/conversation-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obtenha todos os threads em uma conversa de grupo.|
 |[Criar thread de conversas](../api/conversation-post-threads.md) |Coleção [conversationThread](conversationthread.md)| Crie um thread na conversa especificada.|
 

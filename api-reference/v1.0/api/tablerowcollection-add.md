@@ -4,12 +4,13 @@ description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1cb0a5a05def3028ae8a9309cda5eef7b69ff35a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: d3502795d0b8ab756dd20f2ef608c937c5539aec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456054"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021310"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
