@@ -4,12 +4,13 @@ description: Atualizar as propriedades do objeto evento.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 91e91d9f749b0d3ea61e28eae1a1eb4ed7aa1696
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 564cea7760c7e91102ce47ab725b27871a3b6f86
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887199"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002801"
 ---
 # <a name="update-event"></a>Atualizar evento
 

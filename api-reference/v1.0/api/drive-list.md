@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Listar unidades
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 9d9df5b89e85d578fe5f8a811b0812ae9d780a4c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Recupera a lista de recursos Drive disponíveis para um User, Group ou Site de destino.
+doc_type: apiPageType
+ms.openlocfilehash: bd5663df534b2a56e833340c25227a7852533db9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894076"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016521"
 ---
 # <a name="list-available-drives"></a>Listar as unidades disponíveis
 
