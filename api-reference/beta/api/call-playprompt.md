@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ca1a83628ebbb5da2bfec41307b53e01c381883
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc5c80e633055eb6cc1d1914a756bfb80f4332f9
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944454"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062002"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
 
@@ -19,6 +19,9 @@ ms.locfileid: "35944454"
 Reproduza um prompt na chamada.
 
 Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsoperation.md)
+
+> [!Note]
+> A ação **playPrompt** é suportada apenas para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -34,7 +37,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
-POST /applications/{id}/calls/{id}/playPrompt
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,9 +49,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|prompts|coleção [prompt](../resources/prompt.md)| Atualmente, apenas uma única solicitação e do tipo [MediaPrompt](../resources/mediaprompt.md) é suportada.|
-|ciclo|bool| O valor do loop. true indica o loop infinitamente. O valor padrão é falso. |
-|clientContext|String|O contexto do cliente.|
+|prompts|Coleção MediaPrompt| Atualmente, apenas uma única solicitação e do tipo [MediaPrompt](../resources/mediaprompt.md) é suportada.|
+|ciclo|Booliano| O valor do loop. True indica o loop infinitamente. O valor padrão é falso. |
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.
@@ -94,6 +96,7 @@ Content-Length: 166
 
 
 ##### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 

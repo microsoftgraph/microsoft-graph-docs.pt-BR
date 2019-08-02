@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 21723975a73ca7288e65e321a3eaeb323dad77b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 714873a85951d2f03f602e0742c9f00b5faf0024
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972093"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062051"
 ---
 ### <a name="registrationauthmethod-values"></a>valores de registrationAuthMethod
 
@@ -839,6 +839,14 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |high|
 |urgente|
 
+### <a name="stagedfeaturename-values"></a>valores de stagedFeatureName
+
+|Member|Descrição|
+|:---|:---|
+|passthroughAuthentication|Autenticação de passagem|
+|seamlessSso|Logon único contínuo|
+|passwordHashSync|Sincronização de hash de senha|
+
 ### <a name="tokenissuertype-values"></a>valores de tokenIssuerType
 
 |Membro|
@@ -865,3 +873,4 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |SignIn|
 |user|
 |unknownFutureValue|
+

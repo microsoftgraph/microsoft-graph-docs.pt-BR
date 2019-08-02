@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ba2c40e5987ee8b6bd89e4385c4c6bf242084edd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b35c2c56c7033cd668b311c17169f5c719e5948
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012804"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062079"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
 
@@ -29,6 +29,11 @@ Atualmente, a funcionalidade de itens excluídos apenas tem suporte para [grupos
 |[Listar itens excluídos](../api/directory-deleteditems-list.md) |Coleção [directoryObject](directoryobject.md)| Obtém uma lista de itens recentemente excluídos. |
 |[Excluir permanentemente um item](../api/directory-deleteditems-delete.md) | Nenhum | Exclui permanentemente um item. |
 |[Listar itens excluídos pertencentes a um usuário](../api/directory-deleteditems-user-owned.md) | Coleção [directoryObject](directoryobject.md) | Lista itens de diretório pertencentes a um usuário. |
+|[Listar featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | coleção [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere uma lista de objetos featureRolloutPolicy. |
+|[Criar featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Criar um novo objeto featureRolloutPolicy. |
+| [Obter featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere as propriedades e os relacionamentos do objeto featurerolloutpolicy. |
+| [Atualizar featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Atualize as propriedades do objeto featurerolloutpolicy. |
+| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | Nenhum | Excluir um objeto featureRolloutPolicy. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo |Descrição|
@@ -39,6 +44,7 @@ Atualmente, a funcionalidade de itens excluídos apenas tem suporte para [grupos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |deleteditems|Coleção [directoryObject](directoryobject.md)| Itens recentemente excluídos. Somente leitura. Anulável.|
+|featureRolloutPolicies|coleção [featureRolloutPolicy](featurerolloutpolicy.md)| Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

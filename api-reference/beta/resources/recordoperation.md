@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 00b05cd86eeb9cf8be26cdc09fb8a9b254b510db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 23fb116a80dcd90206d7a0ae5eeec5d756272c3d
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008800"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36061995"
 ---
 # <a name="recordoperation-resource-type"></a>tipo de recurso recordOperation
 
@@ -27,8 +27,8 @@ O tipo recordOperation
 | createdDateTime                | DateTimeOffset              | A hora em que a gravação foi criada.                                                                                                          |
 | id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura. Servidor gerado.                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | A hora da última ação da operação.                                                                                                     |
-| recordResourceAccessToken      | String                      | O token de acesso necessário para recuperar a gravação.                                                                                              |
-| recordResourceLocation         | String                      | O local onde a gravação está localizada.                                                                                                      |
+| recordingAccessToken           | String                      | O token de acesso necessário para recuperar a gravação.                                                                                              |
+| recordingLocation              | String                      | O local onde a gravação está localizada.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura. Servidor gerado.                                                                                             |
 | status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. Servidor gerado.                                                 |
 
@@ -53,8 +53,8 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "recordResourceAccessToken": "String",
-  "recordResourceLocation": "String",
+  "recordingAccessToken": "String",
+  "recordingLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -71,8 +71,8 @@ Veja a seguir uma representação JSON do recurso.
 {
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordResourceAccessToken": "<access-token>",
-  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "recordingAccessToken": "<access-token>",
+  "recordingLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "status": "completed"
 }
 ```
