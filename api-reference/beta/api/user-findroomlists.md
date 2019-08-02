@@ -4,34 +4,35 @@ description: Obtenha as listas de salas definidas em um locatário.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1946b7080bf37d0852964f3fac677e04052f55d3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a2e404a9de2d97c29c3d5852f9f533c6cb7bb099
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867746"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987849"
 ---
-# <a name="user-findroomlists"></a><span data-ttu-id="5d819-103">user: findRoomLists</span><span class="sxs-lookup"><span data-stu-id="5d819-103">user: findRoomLists</span></span>
+# <a name="user-findroomlists"></a><span data-ttu-id="ade7a-103">user: findRoomLists</span><span class="sxs-lookup"><span data-stu-id="ade7a-103">user: findRoomLists</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5d819-104">Obtenha as listas de salas definidas em um locatário, conforme representado por seus objetos [emailAddress](../resources/emailaddress.md).</span><span class="sxs-lookup"><span data-stu-id="5d819-104">Get the room lists defined in a tenant, as represented by their [emailAddress](../resources/emailaddress.md) objects.</span></span>
+<span data-ttu-id="ade7a-104">Obtenha as listas de salas definidas em um locatário, conforme representado por seus objetos [emailAddress](../resources/emailaddress.md).</span><span class="sxs-lookup"><span data-stu-id="ade7a-104">Get the room lists defined in a tenant, as represented by their [emailAddress](../resources/emailaddress.md) objects.</span></span>
 
-<span data-ttu-id="5d819-105">Os locatários podem organizar salas de reunião em listas de salas.</span><span class="sxs-lookup"><span data-stu-id="5d819-105">Tenants can organize meeting rooms into room lists.</span></span> <span data-ttu-id="5d819-106">Nesta API, cada sala de reunião e lista de salas é representada por uma instância de [emailAddress](../resources/emailaddress.md).</span><span class="sxs-lookup"><span data-stu-id="5d819-106">Each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance.</span></span>
-<span data-ttu-id="5d819-107">Você pode ver todas as listas de salas no locatário, [obter todas as salas](user-findrooms.md) no locatário ou [todas as salas](user-findrooms.md) em uma lista de salas específica.</span><span class="sxs-lookup"><span data-stu-id="5d819-107">You can get all the room lists in the tenant, [get all the rooms](user-findrooms.md) in the tenant, or [get all the rooms](user-findrooms.md) in a specific room list.</span></span>
-
-
-## <a name="permissions"></a><span data-ttu-id="5d819-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="5d819-108">Permissions</span></span>
-<span data-ttu-id="5d819-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5d819-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ade7a-105">Os locatários podem organizar salas de reunião em listas de salas.</span><span class="sxs-lookup"><span data-stu-id="ade7a-105">Tenants can organize meeting rooms into room lists.</span></span> <span data-ttu-id="ade7a-106">Nesta API, cada sala de reunião e lista de salas é representada por uma instância de [emailAddress](../resources/emailaddress.md).</span><span class="sxs-lookup"><span data-stu-id="ade7a-106">Each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance.</span></span>
+<span data-ttu-id="ade7a-107">Você pode ver todas as listas de salas no locatário, [obter todas as salas](user-findrooms.md) no locatário ou [todas as salas](user-findrooms.md) em uma lista de salas específica.</span><span class="sxs-lookup"><span data-stu-id="ade7a-107">You can get all the room lists in the tenant, [get all the rooms](user-findrooms.md) in the tenant, or [get all the rooms](user-findrooms.md) in a specific room list.</span></span>
 
 
-|<span data-ttu-id="5d819-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5d819-111">Permission type</span></span>      | <span data-ttu-id="5d819-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5d819-112">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="ade7a-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="ade7a-108">Permissions</span></span>
+<span data-ttu-id="ade7a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ade7a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+
+|<span data-ttu-id="ade7a-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ade7a-111">Permission type</span></span>      | <span data-ttu-id="ade7a-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ade7a-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5d819-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5d819-113">Delegated (work or school account)</span></span> | <span data-ttu-id="5d819-114">User.ReadBasic.All, User.Read.All</span><span class="sxs-lookup"><span data-stu-id="5d819-114">User.ReadBasic.All, User.Read.All</span></span>    |
-|<span data-ttu-id="5d819-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5d819-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d819-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5d819-116">Not supported.</span></span>    |
-|<span data-ttu-id="5d819-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5d819-117">Application</span></span> | <span data-ttu-id="5d819-118">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="5d819-118">User.Read.All</span></span> |
+|<span data-ttu-id="ade7a-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ade7a-113">Delegated (work or school account)</span></span> | <span data-ttu-id="ade7a-114">User.ReadBasic.All, User.Read.All</span><span class="sxs-lookup"><span data-stu-id="ade7a-114">User.ReadBasic.All, User.Read.All</span></span>    |
+|<span data-ttu-id="ade7a-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ade7a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ade7a-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ade7a-116">Not supported.</span></span>    |
+|<span data-ttu-id="ade7a-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ade7a-117">Application</span></span> | <span data-ttu-id="ade7a-118">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="ade7a-118">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5d819-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5d819-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ade7a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ade7a-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRoomLists
@@ -39,29 +40,29 @@ GET /users/<id>/findRoomLists
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5d819-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5d819-120">Request headers</span></span>
-| <span data-ttu-id="5d819-121">Nome</span><span class="sxs-lookup"><span data-stu-id="5d819-121">Name</span></span>       | <span data-ttu-id="5d819-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="5d819-122">Type</span></span> | <span data-ttu-id="5d819-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="5d819-123">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ade7a-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ade7a-120">Request headers</span></span>
+| <span data-ttu-id="ade7a-121">Nome</span><span class="sxs-lookup"><span data-stu-id="ade7a-121">Name</span></span>       | <span data-ttu-id="ade7a-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="ade7a-122">Type</span></span> | <span data-ttu-id="ade7a-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="ade7a-123">Description</span></span> |
 |:---------------|:----------|:----------|
-| <span data-ttu-id="5d819-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="5d819-124">Authorization</span></span>  | <span data-ttu-id="5d819-125">string</span><span class="sxs-lookup"><span data-stu-id="5d819-125">string</span></span>  | <span data-ttu-id="5d819-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5d819-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5d819-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5d819-128">Content-Type</span></span>  | <span data-ttu-id="5d819-129">string</span><span class="sxs-lookup"><span data-stu-id="5d819-129">string</span></span>  | <span data-ttu-id="5d819-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5d819-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="ade7a-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="ade7a-124">Authorization</span></span>  | <span data-ttu-id="ade7a-125">string</span><span class="sxs-lookup"><span data-stu-id="ade7a-125">string</span></span>  | <span data-ttu-id="ade7a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ade7a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ade7a-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ade7a-128">Content-Type</span></span>  | <span data-ttu-id="ade7a-129">string</span><span class="sxs-lookup"><span data-stu-id="ade7a-129">string</span></span>  | <span data-ttu-id="ade7a-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ade7a-p104">application/json. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="5d819-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5d819-132">Request body</span></span>
-<span data-ttu-id="5d819-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5d819-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ade7a-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ade7a-132">Request body</span></span>
+<span data-ttu-id="ade7a-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ade7a-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5d819-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="5d819-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ade7a-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="ade7a-134">Response</span></span>
 
-<span data-ttu-id="5d819-135">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [emailAddress](../resources/emailaddress.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5d819-135">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/emailaddress.md) objects in the response body.</span></span>
+<span data-ttu-id="ade7a-135">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [emailAddress](../resources/emailaddress.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ade7a-135">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/emailaddress.md) objects in the response body.</span></span>
 
-<span data-ttu-id="5d819-136">Se nenhuma lista for definida no locatário, uma matriz vazia será retornada.</span><span class="sxs-lookup"><span data-stu-id="5d819-136">If no lists are defined in the tenant, then an empty array is returned.</span></span>
+<span data-ttu-id="ade7a-136">Se nenhuma lista for definida no locatário, uma matriz vazia será retornada.</span><span class="sxs-lookup"><span data-stu-id="ade7a-136">If no lists are defined in the tenant, then an empty array is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5d819-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5d819-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5d819-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5d819-138">Request</span></span>
+## <a name="example"></a><span data-ttu-id="ade7a-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ade7a-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ade7a-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ade7a-138">Request</span></span>
 
-<span data-ttu-id="5d819-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5d819-139">Here is an example of the request.</span></span>
+<span data-ttu-id="ade7a-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ade7a-139">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5d819-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="5d819-140">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ade7a-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="ade7a-140">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_get_room_lists"
@@ -69,29 +70,29 @@ GET /users/<id>/findRoomLists
 ```http
 GET https://graph.microsoft.com/beta/me/findRoomLists
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5d819-141">C#</span><span class="sxs-lookup"><span data-stu-id="5d819-141">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ade7a-141">C#</span><span class="sxs-lookup"><span data-stu-id="ade7a-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-room-lists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5d819-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="5d819-142">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ade7a-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="ade7a-142">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-room-lists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5d819-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5d819-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ade7a-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ade7a-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-room-lists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="5d819-144">Java</span><span class="sxs-lookup"><span data-stu-id="5d819-144">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ade7a-144">Java</span><span class="sxs-lookup"><span data-stu-id="ade7a-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-room-lists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="5d819-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="5d819-145">Response</span></span>
-<span data-ttu-id="5d819-146">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5d819-146">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="ade7a-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="ade7a-145">Response</span></span>
+<span data-ttu-id="ade7a-146">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ade7a-146">Here is an example of the response.</span></span> 
 
-<span data-ttu-id="5d819-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5d819-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ade7a-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ade7a-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "user_get_room_lists",

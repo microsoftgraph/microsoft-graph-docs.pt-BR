@@ -5,28 +5,30 @@ ms.date: 09/10/2017
 title: obter um arquivo ou uma pasta
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 39078bba85f6ab5262c182d39c3ed785d9a4c9c0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Recupere os metadados de um DriveItem em um Drive por ID ou por caminho do sistema de arquivos.
+doc_type: apiPageType
+ms.openlocfilehash: 6760af3b9cf28d325fcda325937f91ed417e2651
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880976"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015436"
 ---
-# <a name="get-a-driveitem-resource"></a><span data-ttu-id="e2f66-102">Obter um recurso DriveItem</span><span class="sxs-lookup"><span data-stu-id="e2f66-102">Get a DriveItem resource</span></span>
+# <a name="get-a-driveitem-resource"></a><span data-ttu-id="38457-103">Obter um recurso DriveItem</span><span class="sxs-lookup"><span data-stu-id="38457-103">Get a DriveItem resource</span></span>
 
-<span data-ttu-id="e2f66-103">Recupere os metadados de um [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) por ID ou caminho do sistema de arquivos.</span><span class="sxs-lookup"><span data-stu-id="e2f66-103">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
+<span data-ttu-id="38457-104">Recupere os metadados de um [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) por ID ou caminho do sistema de arquivos.</span><span class="sxs-lookup"><span data-stu-id="38457-104">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e2f66-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="e2f66-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="38457-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="38457-105">Permissions</span></span>
 
-<span data-ttu-id="e2f66-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e2f66-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="38457-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38457-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e2f66-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e2f66-107">Permission type</span></span>      | <span data-ttu-id="e2f66-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e2f66-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="38457-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="38457-108">Permission type</span></span>      | <span data-ttu-id="38457-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="38457-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e2f66-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e2f66-109">Delegated (work or school account)</span></span> | <span data-ttu-id="e2f66-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2f66-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e2f66-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e2f66-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e2f66-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2f66-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e2f66-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e2f66-113">Application</span></span> | <span data-ttu-id="e2f66-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2f66-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="38457-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="38457-110">Delegated (work or school account)</span></span> | <span data-ttu-id="38457-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38457-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="38457-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="38457-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38457-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38457-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="38457-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="38457-114">Application</span></span> | <span data-ttu-id="38457-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38457-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e2f66-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e2f66-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="38457-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="38457-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,57 +45,57 @@ GET /users/{userId}/drive/items/{itemId}
 GET /users/{userId}/drive/root:/{item-path}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e2f66-116">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e2f66-116">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="38457-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="38457-117">Optional query parameters</span></span>
 
-<span data-ttu-id="e2f66-117">Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) `$expand` e `$select` para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e2f66-117">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="38457-118">Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) `$expand` e `$select` para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="38457-118">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-<span data-ttu-id="e2f66-118">É possível usar o parâmetro de cadeia de caracteres de consulta [`$expand` ](/graph/query-parameters) para incluir os filhos de um item na mesma chamada de recuperação de metadados de um item se item tiver um relacionamento **children**.</span><span class="sxs-lookup"><span data-stu-id="e2f66-118">You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
+<span data-ttu-id="38457-119">É possível usar o parâmetro de cadeia de caracteres de consulta [`$expand` ](/graph/query-parameters) para incluir os filhos de um item na mesma chamada de recuperação de metadados de um item se item tiver um relacionamento **children**.</span><span class="sxs-lookup"><span data-stu-id="38457-119">You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="e2f66-119">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="e2f66-119">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="38457-120">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="38457-120">Optional request headers</span></span>
 
-| <span data-ttu-id="e2f66-120">Nome</span><span class="sxs-lookup"><span data-stu-id="e2f66-120">Name</span></span>          | <span data-ttu-id="e2f66-121">Valor</span><span class="sxs-lookup"><span data-stu-id="e2f66-121">Value</span></span>  | <span data-ttu-id="e2f66-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2f66-122">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="38457-121">Nome</span><span class="sxs-lookup"><span data-stu-id="38457-121">Name</span></span>          | <span data-ttu-id="38457-122">Valor</span><span class="sxs-lookup"><span data-stu-id="38457-122">Value</span></span>  | <span data-ttu-id="38457-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="38457-123">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="e2f66-123">if-none-match</span><span class="sxs-lookup"><span data-stu-id="e2f66-123">if-none-match</span></span> | <span data-ttu-id="e2f66-124">String</span><span class="sxs-lookup"><span data-stu-id="e2f66-124">String</span></span> | <span data-ttu-id="e2f66-125">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="e2f66-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="38457-124">if-none-match</span><span class="sxs-lookup"><span data-stu-id="38457-124">if-none-match</span></span> | <span data-ttu-id="38457-125">String</span><span class="sxs-lookup"><span data-stu-id="38457-125">String</span></span> | <span data-ttu-id="38457-126">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="38457-126">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="e2f66-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2f66-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="38457-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="38457-127">Response</span></span>
 
-<span data-ttu-id="e2f66-127">Se bem sucedido, este método retorna o código de resposta `200 OK` e o recurso [DriveItem](../resources/driveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e2f66-127">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="38457-128">Se bem sucedido, este método retorna o código de resposta `200 OK` e o recurso [DriveItem](../resources/driveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="38457-128">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e2f66-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e2f66-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="38457-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="38457-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e2f66-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e2f66-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="38457-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="38457-130">Request</span></span>
 
-<span data-ttu-id="e2f66-130">Eis um exemplo de solicitação para a pasta raiz do OneDrive do usuário.</span><span class="sxs-lookup"><span data-stu-id="e2f66-130">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
+<span data-ttu-id="38457-131">Eis um exemplo de solicitação para a pasta raiz do OneDrive do usuário.</span><span class="sxs-lookup"><span data-stu-id="38457-131">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e2f66-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="e2f66-131">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="38457-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="38457-132">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e2f66-132">C#</span><span class="sxs-lookup"><span data-stu-id="e2f66-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="38457-133">C#</span><span class="sxs-lookup"><span data-stu-id="38457-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e2f66-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="e2f66-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="38457-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="38457-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e2f66-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e2f66-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="38457-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="38457-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="e2f66-135">Java</span><span class="sxs-lookup"><span data-stu-id="e2f66-135">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="38457-136">Java</span><span class="sxs-lookup"><span data-stu-id="38457-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-root-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="e2f66-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2f66-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="38457-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="38457-137">Response</span></span>
 
-<span data-ttu-id="e2f66-137">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e2f66-137">Here is an example of the response.</span></span>
+<span data-ttu-id="38457-138">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="38457-138">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -127,9 +129,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="e2f66-138">Comentários</span><span class="sxs-lookup"><span data-stu-id="e2f66-138">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="38457-139">Comentários</span><span class="sxs-lookup"><span data-stu-id="38457-139">Remarks</span></span>
 
-<span data-ttu-id="e2f66-139">Confira mais informações sobre como os erros são retornados em [Respostas de Erros][error-response].</span><span class="sxs-lookup"><span data-stu-id="e2f66-139">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="38457-140">Confira mais informações sobre como os erros são retornados em [Respostas de Erros][error-response].</span><span class="sxs-lookup"><span data-stu-id="38457-140">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters

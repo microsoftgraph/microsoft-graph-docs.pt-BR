@@ -4,33 +4,32 @@ description: 'Listar aplicativos do catálogo de aplicativos do Microsoft Teams.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 884fd932acddb1352c48e82302a6c345fadf90b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e4d56376628ef95096b14e96334f9bcb9da425f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521786"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024228"
 ---
-# <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a><span data-ttu-id="681df-103">Listar os aplicativos publicados do catálogo de aplicativos do Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="681df-103">List the published apps from the Microsoft Teams app catalog</span></span>
+# <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a><span data-ttu-id="128b3-103">Listar os aplicativos publicados do catálogo de aplicativos do Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="128b3-103">List the published apps from the Microsoft Teams app catalog</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="128b3-104">Listar [aplicativos](../resources/teamsapp.md) do catálogo de aplicativos do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="128b3-104">List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog.</span></span>
+<span data-ttu-id="128b3-105">Isso inclui os aplicativos do Microsoft Teams Store, bem como os aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário).</span><span class="sxs-lookup"><span data-stu-id="128b3-105">This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog).</span></span> <span data-ttu-id="128b3-106">Para obter aplicativos apenas do catálogo de aplicativos da sua organização, `Organization` especifique como **DistributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="128b3-106">To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.</span></span>
 
-<span data-ttu-id="681df-104">Listar [aplicativos](../resources/teamsapp.md) do catálogo de aplicativos do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="681df-104">List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog.</span></span>
-<span data-ttu-id="681df-105">Isso inclui os aplicativos do Microsoft Teams Store, bem como os aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário).</span><span class="sxs-lookup"><span data-stu-id="681df-105">This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog).</span></span> <span data-ttu-id="681df-106">Para obter aplicativos apenas do catálogo de aplicativos da sua organização, `Organization` especifique como **DistributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="681df-106">To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.</span></span>
+## <a name="permissions"></a><span data-ttu-id="128b3-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="128b3-107">Permissions</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="681df-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="681df-107">Permissions</span></span>
+<span data-ttu-id="128b3-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="128b3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
 
-<span data-ttu-id="681df-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="681df-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
+> <span data-ttu-id="128b3-110">**Observação:** Somente os administradores globais podem chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="128b3-110">**Note:** Only global administrators can call this API.</span></span>
 
-> <span data-ttu-id="681df-110">**Observação:** Somente os administradores globais podem chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="681df-110">**Note:** Only global administrators can call this API.</span></span>
-
-| <span data-ttu-id="681df-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="681df-111">Permission Type</span></span>                        | <span data-ttu-id="681df-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="681df-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="128b3-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="128b3-111">Permission Type</span></span>                        | <span data-ttu-id="128b3-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="128b3-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:------------------------------------|
-| <span data-ttu-id="681df-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="681df-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="681df-114">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="681df-114">AppCatalog.ReadWrite.All</span></span>            |
-| <span data-ttu-id="681df-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="681df-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="681df-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="681df-116">Not supported</span></span>                       |
-| <span data-ttu-id="681df-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="681df-117">Application</span></span>                            | <span data-ttu-id="681df-118">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="681df-118">Not supported</span></span>                       |
+| <span data-ttu-id="128b3-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="128b3-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="128b3-114">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="128b3-114">AppCatalog.ReadWrite.All</span></span>            |
+| <span data-ttu-id="128b3-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="128b3-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="128b3-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="128b3-116">Not supported</span></span>                       |
+| <span data-ttu-id="128b3-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="128b3-117">Application</span></span>                            | <span data-ttu-id="128b3-118">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="128b3-118">Not supported</span></span>                       |
 
-## <a name="http-request"></a><span data-ttu-id="681df-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="681df-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="128b3-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="128b3-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,41 +37,41 @@ ms.locfileid: "32521786"
 GET /appCatalogs/teamsApps
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="681df-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="681df-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="128b3-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="128b3-120">Optional query parameters</span></span>
 
-<span data-ttu-id="681df-121">Este método dá suporte aos [Parâmetros de consulta OData](/graph/query-parameters) $filter, $select e $expand para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="681df-121">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="128b3-121">Este método dá suporte aos [Parâmetros de consulta OData](/graph/query-parameters) $filter, $select e $expand para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="128b3-121">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="681df-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="681df-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="128b3-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="128b3-122">Request headers</span></span>
 
-| <span data-ttu-id="681df-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="681df-123">Header</span></span>        | <span data-ttu-id="681df-124">Valor</span><span class="sxs-lookup"><span data-stu-id="681df-124">Value</span></span>                     |
+| <span data-ttu-id="128b3-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="128b3-123">Header</span></span>        | <span data-ttu-id="128b3-124">Valor</span><span class="sxs-lookup"><span data-stu-id="128b3-124">Value</span></span>                     |
 |:--------------|:--------------------------|
-| <span data-ttu-id="681df-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="681df-125">Authorization</span></span> | <span data-ttu-id="681df-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="681df-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="128b3-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="128b3-125">Authorization</span></span> | <span data-ttu-id="128b3-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="128b3-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="681df-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="681df-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="128b3-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="128b3-128">Request body</span></span>
 
-<span data-ttu-id="681df-129">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="681df-129">None.</span></span>
+<span data-ttu-id="128b3-129">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="128b3-129">None.</span></span>
 
-> <span data-ttu-id="681df-130">**Observação:** Você pode filtrar em qualquer um dos campos do objeto [teamsCatalogApp](../resources/teamsapp.md) para diminuir a lista de resultados.</span><span class="sxs-lookup"><span data-stu-id="681df-130">**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results.</span></span> <span data-ttu-id="681df-131">Você pode usar qualquer uma das seguintes operações de filtro: igual, não igual, e, ou, e não.</span><span class="sxs-lookup"><span data-stu-id="681df-131">You can use any of the following filter operations: Equal, not-equal, and, or, and not.</span></span>
+> <span data-ttu-id="128b3-130">**Observação:** Você pode filtrar em qualquer um dos campos do objeto [teamsCatalogApp](../resources/teamsapp.md) para diminuir a lista de resultados.</span><span class="sxs-lookup"><span data-stu-id="128b3-130">**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results.</span></span> <span data-ttu-id="128b3-131">Você pode usar qualquer uma das seguintes operações de filtro: igual, não igual, e, ou, e não.</span><span class="sxs-lookup"><span data-stu-id="128b3-131">You can use any of the following filter operations: Equal, not-equal, and, or, and not.</span></span>
 
-## <a name="response"></a><span data-ttu-id="681df-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="681df-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="128b3-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="128b3-132">Response</span></span>
 
-<span data-ttu-id="681df-133">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma lista de objetos [teamsCatalogApp](../resources/teamsapp.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="681df-133">If successful, this method returns a `200 OK` response code and a list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.</span></span>
+<span data-ttu-id="128b3-133">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma lista de objetos [teamsCatalogApp](../resources/teamsapp.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="128b3-133">If successful, this method returns a `200 OK` response code and a list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="681df-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="681df-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="128b3-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="128b3-134">Examples</span></span>
 
-### <a name="example-1-list-all-applications"></a><span data-ttu-id="681df-135">Exemplo 1: listar todos os aplicativos</span><span class="sxs-lookup"><span data-stu-id="681df-135">Example 1: List all applications</span></span>
+### <a name="example-1-list-all-applications"></a><span data-ttu-id="128b3-135">Exemplo 1: listar todos os aplicativos</span><span class="sxs-lookup"><span data-stu-id="128b3-135">Example 1: List all applications</span></span>
 
-<span data-ttu-id="681df-136">O exemplo a seguir lista todos os aplicativos específicos do seu locatário.</span><span class="sxs-lookup"><span data-stu-id="681df-136">The following example lists all applications that are specific to your tenant.</span></span>
+<span data-ttu-id="128b3-136">O exemplo a seguir lista todos os aplicativos específicos do seu locatário.</span><span class="sxs-lookup"><span data-stu-id="128b3-136">The following example lists all applications that are specific to your tenant.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="681df-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="681df-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="128b3-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="128b3-137">Request</span></span>
 
 ```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
 <!-- markdownlint-disable MD024 -->
 
-#### <a name="response"></a><span data-ttu-id="681df-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="681df-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="128b3-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="128b3-138">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -91,17 +90,17 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-applications-with-a-given-id"></a><span data-ttu-id="681df-139">Exemplo 2: listar aplicativos com uma determinada ID</span><span class="sxs-lookup"><span data-stu-id="681df-139">Example 2: List applications with a given ID</span></span>
+### <a name="example-2-list-applications-with-a-given-id"></a><span data-ttu-id="128b3-139">Exemplo 2: listar aplicativos com uma determinada ID</span><span class="sxs-lookup"><span data-stu-id="128b3-139">Example 2: List applications with a given ID</span></span>
 
-<span data-ttu-id="681df-140">O exemplo a seguir lista os aplicativos com uma determinada ID.</span><span class="sxs-lookup"><span data-stu-id="681df-140">The following example lists applications with a given ID.</span></span>
+<span data-ttu-id="128b3-140">O exemplo a seguir lista os aplicativos com uma determinada ID.</span><span class="sxs-lookup"><span data-stu-id="128b3-140">The following example lists applications with a given ID.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="681df-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="681df-141">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="128b3-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="128b3-141">Request</span></span>
 
 ```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
-#### <a name="response"></a><span data-ttu-id="681df-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="681df-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="128b3-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="128b3-142">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -119,12 +118,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
