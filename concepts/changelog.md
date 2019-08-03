@@ -1,14 +1,14 @@
 ---
 title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
-author: jthake-msft
+author: ''
 localization_priority: Priority
-ms.openlocfilehash: 60ad1361f5d188beacf4a34b040ee46196fb8304
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 1b20fde223a681cc6fb5a424eb2a914824c9ed81
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35930563"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049593"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,7 +18,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="july-2019"></a>Julho de 2019
 
-### <a name="calendar--places"></a>Calendário | Locais
+### <a name="calendar--place"></a>Calendário | Local
 
 A estreia da API de locais para fornecer detalhes apurados para locais em aplicativos.
 
@@ -76,7 +76,10 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição | Beta |As propriedades "version", "discoveryDateTime", "discoverabilities" foram adicionadas ao tipo de recurso [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta). |
 | Adição | Beta |Adicionado o método [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta).|
 | Adição | beta | Adicionado [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ e _AdministrativeUnit.ReadWrite.All_ para obter e atualizar o recurso da [API da unidade administrativa](/graph/api/resources/administrativeunit?view=graph-rest-beta). |
-| Adição | v1.0 | Adicionado [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ e _RoleManagement.ReadWrite.Directory_ para obter e atualizar o recurso da [API de função de diretório](/graph/api/resources/directoryRole?view=graph-rest-1.0) e para obter o recurso da [API do modelo de função de diretório](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0). |
+| Adição | v1.0 | [Novas permissões delegadas e permissões de aplicativos adicionadas](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ e _RoleManagement.ReadWrite.Directory_ para obter e atualizar o recurso da [API de função de diretório](/graph/api/resources/directoryRole?view=graph-rest-1.0) e para obter o recurso da [API do modelo de função de diretório](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0). |
+| Adição | beta | [Permissão do novo aplicativo](/graph/permissions-reference?#accessreviews-permissions) adicionado_AccessReview.ReadWrite.Membership_para obter, criar, atualizar e excluir na API[de revisões do Access](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+
+
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
@@ -174,7 +177,13 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionado o recurso [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) e os métodos associados. |
+| Adição | beta | O recurso [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) foi adicionado e os métodos associados. |
+
+### <a name="users"></a>Usuários
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta        | A propriedade**lastPasswordChangeDateTime** foi adicionada a entidade do[usuário](/graph/api/resources/user?view=graph-rest-beta). |
 
 ## <a name="may-2019"></a>Maio de 2019
 

@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: eb9c334049dced94111cd78e22481e532c5ecd7c
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+ms.openlocfilehash: 42febb704147ff8076a85df2233186a494f6fffd
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917996"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049586"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -60,6 +60,8 @@ Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   Ler todas as revisões de acesso | Permite que o aplicativo leia revisões de acesso sem um usuário conectado. | Sim |
+| _AccessReview.ReadWrite.Membership_ | Gerenciar revisões de acesso para participações em grupo e aplicativos | Permite que o aplicativo gerencie o acesso a revisões de aplicativos e grupos sem um usuário conectado. | Sim |
+
 
 ### <a name="remarks"></a>Comentários
 
@@ -275,6 +277,21 @@ Nenhum.
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
+## <a name="channelmessage-permissions"></a>ChannelMessage permissões
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+Nenhum.
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ChannelMessage.Read.All_ |Listar mensagens do canal  |Permite que um aplicativo leia todas as mensagens de canal do Microsoft Teams, sem um usuário conectado. |Sim | Não |
+|_ChannelMessage.UpdatePolicyViolation.All_ | Sinalizar mensagens de canal para a política de violação |Permite que o aplicativo atualize as mensagens do canal do Microsoft Teams, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
+
+> **Observação:** consulte também [Group. Read. All](#group-permissions).
+
 ## <a name="chats-permissions"></a>Permissões de bate-papo
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -289,8 +306,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |Ler todas as mensagens de bate-papo  |Permite que um aplicativo leia, sem um usuário conectado, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Sim | Não |
+|_Chat.UpdatePolicyViolation.All_ |Sinalizar mensagens de chat para a política de violação |Permite que o aplicativo atualize as mensagens de chat de grupo ou Microsoft Teams 1:1, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
 
-> **Observação:** Para mensagens em um canal, confira [Group.Read.All](#group-permissions).
+> **Observação:** para mensagens em um canal, consulte [permissões ChannelMessage](#channelmessage-permissions).
 
 ## <a name="contacts-permissions"></a>Permissões de contatos
 
@@ -512,15 +530,14 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Group.Read.All_ |    Ler todos os grupos | Permite ao aplicativo listar grupos, e ler suas propriedades e todas as associações do grupo em nome do usuário conectado.  Também permite ao aplicativo ler calendário, conversas, arquivos e outros tipos de conteúdo de todos os grupos que o usuário conectado pode acessar. | Sim | Não |
-| _Group.ReadWrite.All_ |    Ler e gravar todos os grupos| Permite ao aplicativo criar grupos e ler todas as propriedades e associações do grupo em nome do usuário conectado.  Além disso, permite aos proprietários do grupo gerenciar seus grupos, e permite aos membros do grupo atualizar o conteúdo do grupo. | Sim | Não |
+| _Group.ReadWrite.All_ |    Ler e gravar todos os grupos| Permite ao aplicativo criar grupos e ler todas as propriedades e associações do grupo em nome do usuário conectado.  Também permite ao aplicativo ler calendário, conversas, arquivos e outros tipos de conteúdo de todos os grupos que o usuário conectado pode acessar. Além disso, permite aos proprietários do grupo gerenciar seus grupos, e permite aos membros do grupo atualizar o conteúdo do grupo. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Ler todos os grupos | Permite ao aplicativo ler os associados de todos os grupos sem um usuário conectado. > **OBSERVE:** que nem todas as API de grupo suportam o acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md). | Sim |
-| _Group.ReadWrite.All_ | Ler e gravar todos os grupos | Permite que o aplicativo crie grupos, leia e atualize as associações do grupo e exclua grupos. Todas essas operações podem ser executadas pelo aplicativo sem um usuário conectado. > **OBSERVE:** que nem todas as API de grupo suportam o acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md).| Sim |
-
+| _Group.Read.All_ | Ler todos os grupos | Permite ao aplicativo ler os associados de todos os grupos sem um usuário conectado. Também permite ao aplicativo ler o calendário, as conversas, os arquivos e outros tipos de conteúdo de grupos para todos os grupos. > **OBSERVE:** que nem todas as API de grupo suportam o acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md). | Sim |
+| _Group.ReadWrite.All_ | Ler e gravar todos os grupos | Permite que o aplicativo crie grupos, leia e atualize as associações do grupo e exclua grupos. Também permite ao aplicativo ler e escrever o calendário, as conversas, os arquivos e outros tipos de conteúdo de grupos para todos os grupos. Todas essas operações podem ser executadas pelo aplicativo sem um usuário conectado. > **OBSERVE:** que nem todas as API de grupo suportam o acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md).| Sim |
 
 ### <a name="remarks"></a>Comentários
 
