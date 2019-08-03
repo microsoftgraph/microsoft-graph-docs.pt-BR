@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 708c8c33d4ae69007a7a1e1e15af71ab69b97e78
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2c3ef3317b513cdcecef4fb0fe402584afe6fa6d
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013504"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173052"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
 
@@ -69,8 +69,8 @@ As funções de diretório a seguir são necessárias para um usuário de chamad
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[accessReview](accessreview.md) de uma função do Azure AD | Ler | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de função privilegiada |
 |[accessReview](accessreview.md) de uma função do Azure AD | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador global ou administrador de função privilegiada |
-|[accessReview](accessreview.md) de um grupo ou aplicativo | Ler | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de usuário |
-|[accessReview](accessreview.md) de um grupo ou aplicativo | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador global ou administrador de usuário |
+|[accessReview](accessreview.md) de um grupo ou aplicativo | Ler | AccessReview. Read. All, AccessReview. ReadWrite. Membership ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de usuário |
+|[accessReview](accessreview.md) de um grupo ou aplicativo | Criar, atualizar ou excluir | AccessReview. ReadWrite. Membership ou AccessReview. ReadWrite. All | Administrador global ou administrador de usuário |
 | [programas](program.md) e [programControl](programcontrol.md)| Ler | ProgramControl. Read. All ou ProgramControl. ReadWrite. All |  Administrador global, administrador de segurança, leitor de segurança ou administrador de usuário |
 | [programas](program.md) e [programControl](programcontrol.md) | Criar, atualizar ou excluir | ProgramControl.ReadWrite.All | Administrador global ou administrador de usuário |
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 84345bd87cb1b4ba02746045d69ba783d1710804
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f343edec96af2e51d1bb643abb0652425c54624
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006476"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173045"
 ---
 # <a name="educationassignment-resource-type"></a>tipo de recurso educationAssignment
 
@@ -26,15 +26,17 @@ As APIs de atribuição são expostas no namespace da classe.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter tarefa](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Ler propriedades e relações de um objeto **educationAssignment** .|
-|[Criar recurso de tarefa](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Crie um novo **educationAssignmentResource** postando na coleção Resources.|
 |[Listar recursos](../api/educationassignment-list-resources.md) |coleção [educationAssignmentResource](educationassignmentresource.md)| Obtenha uma coleção de objetos **educationAssignmentResource** .|
 |[Envios de lista](../api/educationassignment-list-submissions.md) |coleção [educationSubmission](educationsubmission.md)| Obtenha uma coleção de objetos **educationSubmission** .|
 |[Listar categorias](../api/educationassignment-list-categories.md) |coleção [educationCategory](educationcategory.md)| Obtenha uma coleção de objetos **educationCategory** .|
-|[Adicionar categorias](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Atribua um **educationCategory** pertencente à classe a essa atribuição.|
-|[Remover categoria](../api/educationassignment-remove-category.md) |Nenhum| Remover um **educationCategory** pertencente à classe dessa atribuição.|
+|[Criar recurso de tarefa](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Crie um novo **educationAssignmentResource** postando na coleção Resources.|
+|[Obter tarefa](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Ler propriedades e relações de um objeto **educationAssignment** .|
 |[Atualização](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize um objeto **educationAssignment** . |
 |[Delete](../api/educationassignment-delete.md) | Nenhum |Excluir um objeto **educationAssignment** . |
+|[Adicionar categorias](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Atribua um **educationCategory** pertencente à classe a essa atribuição.|
+|[Remover categoria](../api/educationassignment-remove-category.md) |Nenhum| Remover um **educationCategory** pertencente à classe dessa atribuição.|
+|[Anexar amostra rubric](../api/educationassignment-put-rubric.md)|Nenhum|Anexar um **educationRubric** existente a esta atribuição.|
+|[Remover amostra rubric](../api/educationassignment-delete-rubric.md)|Nenhum|Desanexe o **educationRubric** da atribuição.|
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Alterar o estado de um objeto **educationAssignment** de rascunho para publicado.|
 |[Obter URL da pasta do recurso](../api/educationassignment-getresourcesfolderurl.md)| string| A pasta do OneDrive em que os recursos baseados em arquivo devem ser colocados para fazer parte de um recurso de atribuição. Os arquivos devem estar localizados nessa pasta para serem adicionados como um recurso.|
 
@@ -64,6 +66,7 @@ As APIs de atribuição são expostas no namespace da classe.
 |recursos|coleção [educationAssignmentResource](educationassignmentresource.md)| Objetos de aprendizado associados a essa atribuição.  Somente os professores podem modificar essa lista. Anulável.|
 |envios|coleção [educationSubmission](educationsubmission.md)| Depois de publicado, há um objeto de envio para cada aluno representando seu trabalho e classificação.  Somente leitura. Anulável.|
 |categories|coleção [educationCategory](educationcategory.md)| Quando definido, permite que os usuários encontrem facilmente as atribuições de um determinado tipo.  Somente leitura. Anulável.|
+|amostra rubric|[educationRubric](educationrubric.md)|Quando definido, o amostra rubric de gradação anexado a essa atribuição.|
 
 ## <a name="json-representation"></a>Representação JSON
 

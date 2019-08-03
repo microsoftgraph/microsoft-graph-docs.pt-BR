@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6e74c6bb74c830cb1ceb80e149903282c4da33ae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5476d84e156ae0294fc3502d6de6d808644574c7
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972814"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173073"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>tipo de recurso educationAssignmentPointsGrade
 
@@ -38,7 +38,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "points": "Single"
+  "points": "Double"
 }
 
 ```

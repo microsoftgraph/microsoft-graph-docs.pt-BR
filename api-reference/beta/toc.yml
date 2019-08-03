@@ -7273,12 +7273,16 @@
                   href: api/educationuser-list-schools.md
                 - name: Listar classes
                   href: api/educationuser-list-classes.md
+                - name: Listar rubrics
+                  href: api/educationuser-list-rubrics.md
                 - name: Obter usuário
                   href: api/educationuser-get.md
                 - name: Excluir usuário
                   href: api/educationuser-delete.md
                 - name: Obter intervalo
                   href: api/educationuser-delta.md
+                - name: Criar amostra rubric
+                  href: api/educationuser-post-rubrics.md
             - name: Tarefa
               href: resources/educationassignment.md
               items:
@@ -7306,12 +7310,18 @@
                   href: api/educationassignment-list-submissions.md
                 - name: Obter URL da pasta do recurso
                   href: api/educationassignment-getresourcesfolderurl.md
+                - name: Obter amostra rubric anexados à atribuição
+                  href: api/educationassignment-get-rubric.md
                 - name: Listar categorias
                   href: api/educationassignment-list-categories.md
                 - name: Adicionar Categoria
                   href: api/educationassignment-add-categories.md
                 - name: Remover categoria
                   href: api/educationassignment-remove-category.md
+                - name: Anexar amostra rubric à atribuição
+                  href: api/educationassignment-put-rubric.md
+                - name: Remover amostra rubric da atribuição
+                  href: api/educationassignment-delete-rubric.md
             - name: Categoria
               href: resources/educationcategory.md
               items:
@@ -7319,6 +7329,15 @@
                   href: api/educationcategory-get.md
                 - name: Excluir categoria
                   href: api/educationcategory-delete.md
+            - name: Amostra rubric
+              href: resources/educationrubric.md
+              items:
+                - name: Obter amostra rubric
+                  href: api/educationrubric-get.md
+                - name: Atualizar amostra rubric
+                  href: api/educationrubric-update.md
+                - name: Excluir amostra rubric
+                  href: api/educationrubric-delete.md
             - name: Envio
               href: resources/educationsubmission.md
               items:
@@ -7338,12 +7357,19 @@
                   href: api/educationsubmission-unsubmit.md
                 - name: Listar recursos enviados
                   href: api/educationsubmission-list-submittedresources.md
+                - name: Resultados de lista
+                  href: api/educationsubmission-list-outcomes.md
                 - name: Obter recurso enviado
                   href: api/educationsubmittedsubmissionresource-get.md
                 - name: Classificar envio
                   href: api/educationsubmission-update.md
                 - name: Retornar envio
                   href: api/educationsubmission-return.md
+            - name: Conseqüências
+              href: resources/educationoutcome.md
+              items:
+                - name: Resultado da atualização
+                  href: api/educationoutcome-update.md
             - name: Perfil de sincronização
               href: resources/educationsynchronizationprofile.md
               items:
@@ -9506,7 +9532,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-tasks.md
-                - name: Criar
+                - name: Create
                   href: api/outlookuser-post-tasks.md
                 - name: Obter
                   href: api/outlooktask-get.md
@@ -9525,7 +9551,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskfolders.md
-                - name: Criar
+                - name: Create
                   href: api/outlookuser-post-taskfolders.md
                 - name: Obter
                   href: api/outlooktaskfolder-get.md
@@ -9542,7 +9568,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskgroups.md
-                - name: Criar
+                - name: Create
                   href: api/outlookuser-post-taskgroups.md
                 - name: Obter
                   href: api/outlooktaskgroup-get.md
