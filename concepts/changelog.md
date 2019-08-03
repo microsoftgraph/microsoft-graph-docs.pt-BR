@@ -1,14 +1,14 @@
 ---
 title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
-author: ''
+author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 1b20fde223a681cc6fb5a424eb2a914824c9ed81
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: dad880cc84a1c8574d4f697ed283a0fc3af7c198
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049593"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062072"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -71,17 +71,17 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição | v1.0 | Adicionadas as [novas permissões delegadas e de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-1.0) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0). |
-| Adição | beta | Adicionadas as [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-beta) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
+| Adição | Beta | Adicionadas as [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ e _Organization.ReadWrite.All_ para obter e atualizar o recurso [organization API](/graph/api/resources/organization?view=graph-rest-beta) e obter o recurso [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
 | Adição | v1.0 | Adicionadas a [grupo: função validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) e a[função directoryobject: validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) em [grupos](/graph/api/group-delta?view=graph-rest-1.0), o qual validam que o nome de exibição de um grupo do Office 365 ou seu apelido de email está em conformidade com as políticas de nomenclatura. |
 | Adição | Beta |As propriedades "version", "discoveryDateTime", "discoverabilities" foram adicionadas ao tipo de recurso [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta). |
 | Adição | Beta |Adicionado o método [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta).|
-| Adição | beta | Adicionado [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ e _AdministrativeUnit.ReadWrite.All_ para obter e atualizar o recurso da [API da unidade administrativa](/graph/api/resources/administrativeunit?view=graph-rest-beta). |
+| Adição | Beta | Adicionadas as [novas permissões delegadas e permissões de aplicativo](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ e _AdministrativeUnit.ReadWrite.All_ para obter e atualizar o recurso da [API da unidade administrativa](/graph/api/resources/administrativeunit?view=graph-rest-beta). |
 | Adição | v1.0 | [Novas permissões delegadas e permissões de aplicativos adicionadas](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ e _RoleManagement.ReadWrite.Directory_ para obter e atualizar o recurso da [API de função de diretório](/graph/api/resources/directoryRole?view=graph-rest-1.0) e para obter o recurso da [API do modelo de função de diretório](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0). |
-| Adição | beta | [Permissão do novo aplicativo](/graph/permissions-reference?#accessreviews-permissions) adicionado_AccessReview.ReadWrite.Membership_para obter, criar, atualizar e excluir na API[de revisões do Access](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Adição | Beta | [Permissão do novo aplicativo](/graph/permissions-reference?#accessreviews-permissions) adicionado_AccessReview.ReadWrite.Membership_para obter, criar, atualizar e excluir na API[de revisões do Access](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Adição | Beta | Adicionado um novo tipo de recurso [**featureRolloutPolicy**](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) ao [recurso](/graph/api/resources/directory?view=graph-rest-beta) de diretório. A política de distribuição de recursos ajuda os administradores de locatários a ter recursos piloto para grupos específicos antes de habilitá-los para toda a organização.|
 
 
-
-### <a name="mail-outlook"></a>Email (Outlook)
+### <a name="mail-outlook"></a>E-mail (Outlook)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |

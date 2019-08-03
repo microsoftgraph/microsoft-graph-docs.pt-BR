@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 42febb704147ff8076a85df2233186a494f6fffd
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: b3d365b7fe49f7ac6c51318d69fbfd9109f50438
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049586"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062065"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1381,6 +1381,35 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 *   _UserActivity.ReadWrite.CreatedByApp_: excluir uma atividade de usuário em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}).
 *   _UserActivity.ReadWrite.CreatedByApp_: excluir um item de histórico em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}/historyItems/{id}).
 
+---
+
+## <a name="feature-rollout-policy-permissions"></a>Permissões de política de distribuição de recursos
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | Lê todos os recursos de políticas de distribuição | Permite que o aplicativo leia todas as políticas de distribuição de recursos em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.FeatureRollout_ | Lê e grava todas as políticas de distribuição de recursos | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos em nome do usuário conectado. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+Nenhum.
+
+### <a name="remarks"></a>Comentários
+A conta corporativa ou de estudante deve ser um administrador global do locatário.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+Os seguintes usos são válidos para permissões delegadas:
+
+* _Policy.Read.All_: Ler todas as políticas de distribuição de recursos (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: Ler e gravar todas as políticas de distribuição de recursos (`POST /beta/directory/featureRolloutPolicies`)
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
 ## <a name="permission-scenarios"></a>Cenários de permissão
 
 Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário](/graph/api/resources/user?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0) em uma organização. As tabelas mostram as permissões que um aplicativo precisa para conseguir executar operações específicas necessárias para o cenário. Observe que, em alguns casos, a capacidade do aplicativo de executar operações específicas dependerá se uma permissão é uma Permissão de aplicativo ou Permissão Delegada. No caso de Permissões Delegadas, as Permissões Efetivas do aplicativo também dependerão dos privilégios do usuário conectado na organização. Para obter mais informações, confira [Permissões delegadas, Permissões de aplicativo e permissões efetivas](auth/auth-concepts.md#microsoft-graph-permissions).
@@ -1409,3 +1438,4 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 | O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Office 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
 | O aplicativo deseja descobrir (localizar) um grupo do Office 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para ingressar no grupo.     | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 | O aplicativo deseja criar um grupo por meio do AAD Graph |   _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
+
