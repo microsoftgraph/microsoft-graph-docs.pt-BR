@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Listar os subsites de um site do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: a14a44700ee3167759af6f484615494a8675cca6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Obtém uma coleção de subsites definidos para um site.
+doc_type: apiPageType
+ms.openlocfilehash: 33bf99951655036f736e5eecf274845b577b8b9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885481"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975637"
 ---
 # <a name="enumerate-subsites"></a>Enumerar subsites
 
