@@ -1,14 +1,14 @@
 ---
 title: Use o Postman com a API do Microsoft Graph
 description: Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
-author: jthake-msft
+author: ''
 localization_priority: Priority
-ms.openlocfilehash: 0a26b444249a6ee85f875b3a88222f4404aaa238
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 2140dec07328b75f7b1729cd3e7cf7c86e65f738
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038182"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Use o Postman com a API do Microsoft Graph
 
