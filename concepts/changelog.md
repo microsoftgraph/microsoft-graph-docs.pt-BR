@@ -3,18 +3,30 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: dad880cc84a1c8574d4f697ed283a0fc3af7c198
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: b5cd7eae4aeee8c9426c47d0dc1efd0ea480037c
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062072"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173066"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
+
+## <a name="august-2019"></a>Agosto de 2019
+
+### <a name="education"></a>Educação
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Novo recurso[educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) adicionado.|
+| Adição | beta | APIs adicionadas para gerenciar recursos do [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) no [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta)e [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
+| Adição | beta | Novo recurso [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) adicionado.|
+| Adição | beta | APIs adicionadas para gerenciar recursos do [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta)no [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta).|
+| Adição | beta | Novo recurso [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) adicionado.|
 
 ## <a name="july-2019"></a>Julho de 2019
 

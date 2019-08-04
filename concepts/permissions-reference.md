@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: b3d365b7fe49f7ac6c51318d69fbfd9109f50438
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: f71f7a0f880e3897daf7a9ca51502a7d465b3aa2
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062065"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173059"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -53,6 +53,7 @@ Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou 
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _AccessReview.Read.All_ |   Ler todas as revisões de acesso  | Permite que o aplicativo leia as revisões de acesso em nome do usuário conectado. | Sim | Não |
 | _AccessReview.ReadWrite.All_ |   Gerenciar todas as revisões de acesso  | Permite que o aplicativo leia e grave revisões de acesso em nome do usuário conectado. | Sim | Não |
+| _AccessReview.ReadWrite.Membership_ |   Gerenciar revisões de acesso para participações em grupo e aplicativos | Permite que o aplicativo leia e grave revisões de acesso de grupos e aplicativos em nome do usuário conectado. | Sim | Não |
 
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -65,7 +66,7 @@ Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou 
 
 ### <a name="remarks"></a>Comentários
 
-_AccessReview.Read.All_ e _AccessReview.ReadWrite.All_ são válidos apenas para contas corporativas ou de estudante.
+_AccessReview.Read.All_, _AccessReview.ReadWrite. All_ e _AccessReview.ReadWrite.Membership _ são válidos apenas para contas corporativas ou de estudante.
 
 Para um aplicativo com permissões delegadas para ler as revisões de acesso de um grupo ou aplicativo, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Usuários. Para um aplicativo com permissões delegadas para gravar revisões de acesso de um grupo ou aplicativo, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global ou Administrador de Usuários.
 
