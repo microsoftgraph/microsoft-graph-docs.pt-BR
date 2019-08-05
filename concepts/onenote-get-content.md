@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Office 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 835cd7ba930c7e8ea2d26f750a85e097db2399f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcc25ca130b9a28bf171d8ce2989538e56dfca17
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555434"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639209"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
 
@@ -143,7 +143,7 @@ A resposta JSON contém conteúdo de visualização que você pode usar para aju
 
 A propriedade **previewText** contém um trecho de texto proveniente da página. O Microsoft Graph retorna frases completas, no máximo de 300 caracteres. 
 
-Se a página tem uma imagem que pode ser usada para criar uma IU de visualização, a propriedade **href** no objeto **previewImageUrl** contém um link para um [recurso de imagem](#image-or-other-file-resource) público e pré-autenticado. Você pode usar esse link em HTML. Caso contrário, **href** retorna nulo.
+Se a página tem uma imagem que pode ser usada para criar uma IU de visualização, a propriedade **href** no objeto **previewImageUrl** contém um link para um [recurso de imagem](#image-or-other-file-resource) público. Você pode usar esse link em HTML. Caso contrário, **href** retorna nulo.
 
 #### <a name="example"></a>Exemplo 
 
