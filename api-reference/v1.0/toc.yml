@@ -416,6 +416,10 @@
             - name: Calendário
               href: resources/calendar.md
               items:
+                - name: Obter calendário
+                  href: api/calendar-get.md
+                - name: Atualizar calendário
+                  href: api/calendar-update.md
                 - name: Listar eventos
                   href: api/group-list-events.md
                 - name: Criar evento
@@ -1697,7 +1701,7 @@
                 - name: Configuração geral do dispositivo iOS
                   href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
@@ -1726,7 +1730,7 @@
                 - name: Configuração de atualização do iOS
                   href: resources/intune-deviceconfig-iosupdateconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosupdateconfiguration-get.md
