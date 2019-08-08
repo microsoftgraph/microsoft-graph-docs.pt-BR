@@ -454,6 +454,10 @@
             - name: Calendário
               href: resources/calendar.md
               items:
+                - name: Obter calendário
+                  href: api/calendar-get.md
+                - name: Atualizar calendário
+                  href: api/calendar-update.md
                 - name: Listar eventos
                   href: api/group-list-events.md
                 - name: Criar evento
@@ -1499,7 +1503,7 @@
                 - name: Atribuição da configuração do aplicativo móvel do dispositivo gerenciado
                   href: resources/intune-apps-manageddevicemobileappconfigurationassignment.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-apps-manageddevicemobileappconfigurationassignment-list.md
                     - name: Obter
                       href: api/intune-apps-manageddevicemobileappconfigurationassignment-get.md
@@ -3652,7 +3656,7 @@
                 - name: Lista suspensa de apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-get.md
@@ -4327,7 +4331,7 @@
                 - name: Estado de certificado do dispositivo gerenciado
                   href: resources/intune-deviceconfig-manageddevicecertificatestate.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-manageddevicecertificatestate-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-manageddevicecertificatestate-get.md
@@ -4377,7 +4381,7 @@
                 - name: Conector NDES
                   href: resources/intune-deviceconfig-ndesconnector.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-ndesconnector-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-ndesconnector-get.md
@@ -4503,7 +4507,7 @@
                 - name: Violação de aplicativos restritos
                   href: resources/intune-deviceconfig-restrictedappsviolation.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-restrictedappsviolation-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-restrictedappsviolation-get.md
@@ -6155,7 +6159,7 @@
                 - name: Auditoria de ação remota
                   href: resources/intune-devices-remoteactionaudit.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-devices-remoteactionaudit-list.md
                     - name: Obter
                       href: api/intune-devices-remoteactionaudit-get.md
@@ -6419,7 +6423,7 @@
                 - name: Atribuição do perfil de identidade visual do Intune
                   href: resources/intune-wip-intunebrandingprofileassignment.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-wip-intunebrandingprofileassignment-list.md
                     - name: Obter
                       href: api/intune-wip-intunebrandingprofileassignment-get.md

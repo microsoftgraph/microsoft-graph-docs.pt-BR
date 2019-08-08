@@ -5,26 +5,27 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e898881563092019e82c58c476d2996fc185c6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5fa92f7657c69871af2f2661cde00b17d9499886
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944659"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245551"
 ---
 # <a name="create-event"></a>Criar evento
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar um novo evento no calendário especificado ou no padrão.
-## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Use esta API para criar um novo evento em um calendário. O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365. 
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Calendars.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Calendars.ReadWrite    |
-|Aplicativo | Calendars.ReadWrite |
+## <a name="permissions"></a>Permissões
+Dependendo do tipo de calendário em que o evento é criado e do tipo de permissão (delegado ou aplicativo) solicitado, uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Calendário | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----|:-----|:-----|:-----|
+| calendário do usuário | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| grupo calendar | Group.ReadWrite.All | Sem suporte. | Sem suporte. |
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +63,8 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+O exemplo a seguir cria um evento no calendário especificado do usuário conectado.
+
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)

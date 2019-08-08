@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 22f1eebc24c65ce4d8ddf464d7803567c39237d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 824ec1b38b440fc36edafad7aeea8c2d39f9f772
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996158"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245679"
 ---
 # <a name="user-revokesigninsessions"></a>usuário: revokeSignInSessions
 
@@ -52,6 +52,9 @@ Esta operação não tem conteúdo de solicitação.
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+
+>[!NOTE]
+>Essa API tem um [problema conhecido](/graph/concepts/known-issues.md#revoke-sign-in-sessions-returns-wrong-HTTP-code). Ele retorna um código de resposta HTTP diferente.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
