@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 13bea7e626232caabb0eb58dc3b9eb7b6d458e9e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a3d6c583227c1f8a8955fc4fc008e4bab9f55c9
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033254"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245655"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -36,6 +36,10 @@ A leitura e a atualização da foto do perfil do usuário só serão possíveis 
 ### <a name="using-delta-query"></a>Uso da consulta delta
 
 Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
+
+### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>A revogação de sessões de entrada retorna um código HTTP errado
+
+O [usuário: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) deve retornar uma resposta `204 No content` para ter revogações bem-sucedidas e um código de erro HTTP (4xx ou 5xx) se algo der errado com a solicitação.  No entanto, devido a um problema de serviço, essa API retorna um parâmetro `200 OK` e um parâmetro booleano que é sempre true.  Até que isso seja corrigido, é recomendado que desenvolvedores simplesmente tratem qualquer código de retorno 2xx como bem-sucedido para esta API.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
