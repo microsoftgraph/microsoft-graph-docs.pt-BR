@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 92bb09d7841bea9eeb573de7a258e4be0cf91ea1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bf8c1373fe8f8de92c7d8d1f8ce121e03c3f367b
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004061"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245579"
 ---
 # <a name="get-calendar"></a>Obter calendário
 
@@ -22,13 +22,13 @@ Existem dois cenários em que um aplicativo pode receber o calendário de outro 
 * Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do tipo de calendário em que o evento se encontra e do tipo de permissão (delegada ou aplicativo) solicitada, para chamar essa API é necessário ter umas das seguintes permissões. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Calendars.Read    |
-|Delegado (conta pessoal da Microsoft) | Calendars.Read    |
-|Aplicativo | Calendars.Read |
+| Calendário | Delegado (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----|:-----|:-----|:-----|
+| calendário do usuário | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
+| calendário de grupo | Group.Read.All, Group.ReadWrite.All | Sem suporte. | Sem suporte. |
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +66,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendar](../resources/calendar.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+O exemplo a seguir obtém o calendário padrão do usuário conectado.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {

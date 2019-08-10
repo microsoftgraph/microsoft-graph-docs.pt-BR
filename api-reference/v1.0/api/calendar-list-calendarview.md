@@ -5,32 +5,34 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc520c7c27aa3273b87ccffb67484e4f004df76f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 43a0884e8b229facaf98c06160430fb087a89e87
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004075"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245565"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
-Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida, do calendário padrão `(../me/calendarview)` de um usuário ou grupo ou algum outro calendário do usuário.
+Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida por um intervalo de tempo, do calendário padrão do usuário`(../me/calendarview)`ou de algum outro calendário do usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Eventos no calendário de um usuário: Calendars.Read ou Calendars.ReadWrite
-* Eventos no calendário de um grupo: Group.Read.All ou Group.ReadWrite.All
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite |
+|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    |
+|Aplicativo | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.
+Um [calendar](../resources/calendar.md) padrão do usuário.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /groups/{id}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) padrão.

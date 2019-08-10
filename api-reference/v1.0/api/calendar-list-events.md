@@ -5,27 +5,26 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 978d2a0855d3b810cf3700dd05ebc126eef0b99d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6fd8b30c94e103f253d82389c875972072a0b90c
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003998"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245580"
 ---
 # <a name="list-events"></a>Listar eventos
 
-Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.
+Recupere uma lista de eventos em um calendário.  O calendário pode ser para um [usuário](../resources/user.md) ou um calendário padrão de um [grupo](../resources/group.md) do Office 365. A lista de eventos contém reuniões de instância única e reuniões mestres em série.
 
 Para obter instâncias de evento expandidas, [obtenha a visualização de calendário](calendar-list-calendarview.md) ou [obtenha as instâncias de um evento](event-list-instances.md).
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do tipo de calendário em que o evento se encontra e do tipo de permissão (delegada ou aplicativo) solicitada, para chamar essa API é necessário ter umas das seguintes permissões. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Calendars.Read    |
-|Delegado (conta pessoal da Microsoft) | Calendars.Read    |
-|Aplicativo | Calendars.Read |
+| Calendário | Delegado (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----|:-----|:-----|:-----|
+| calendário do usuário | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
+| calendário de grupo | Group.Read.All, Group.ReadWrite.All | Sem suporte. | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

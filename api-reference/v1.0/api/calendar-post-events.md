@@ -5,24 +5,24 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f27d3ad30f9d37c38046c346db85fb2f25402e3b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 559c37348bd2b594e191ba04faf0668198c6e4dc
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003991"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245672"
 ---
 # <a name="create-event"></a>Criar evento
 
-Use essa API para criar um novo evento no calendário especificado ou no padrão.
-## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Use esta API para criar um novo evento em um calendário. O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365. 
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Calendars.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Calendars.ReadWrite    |
-|Aplicativo | Calendars.ReadWrite |
+## <a name="permissions"></a>Permissões
+Dependendo do tipo de calendário em que o evento se encontra e do tipo de permissão (delegada ou aplicativo) solicitada, para chamar essa API é necessário ter umas das seguintes permissões. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Calendário | Delegado (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----|:-----|:-----|:-----|
+| calendário do usuário | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| calendário de grupo | Group.ReadWrite.All | Sem suporte. | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
