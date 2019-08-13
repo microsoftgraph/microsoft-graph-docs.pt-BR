@@ -4,12 +4,13 @@ description: Indica o tipo de dependência associado a uma relação entre dois 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65a9c30b1aadbd7003e39e098d4e850675bea718
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: b6ed07fb97910d321711ff02d77a231fd796c3a3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957637"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322629"
 ---
 # <a name="mobileappdependencytype-enum-type"></a>tipo de enumeração mobileAppDependencyType
 
@@ -24,8 +25,6 @@ Indica o tipo de dependência associado a uma relação entre dois aplicativos m
 |:---|:---|:---|
 |as|,0|Indica que o aplicativo filho deve ser detectado antes da instalação do aplicativo pai.|
 |Instalação|1|Indica que o aplicativo filho deve ser instalado antes da instalação do aplicativo pai.|
-
-
 
 
 

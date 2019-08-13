@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração ao
-description: Define os tipos de ação para um aplicativo do Intune.
+description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f4984ad23c5e38def96f35897055ff934ef85a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d07ff7aad61e9d503c9b34e3d68cf37b1e106d26
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967207"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324655"
 ---
 # <a name="mobileappactiontype-enum-type"></a>tipo de enumeração ao
 
@@ -18,7 +18,7 @@ ms.locfileid: "35967207"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Define os tipos de ação para um aplicativo do Intune.
+Ainda não documentado
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
@@ -28,7 +28,6 @@ Define os tipos de ação para um aplicativo do Intune.
 |instalação|3D|Aplicativo instalado.|
 |desinstalado|quatro|Aplicativo desinstalado.|
 |userRequestedInstall|0,5|Instalação solicitada pelo usuário|
-
 
 
 

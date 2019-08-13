@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34b62ec6a00e47ed307951a881e247e0914b5c0b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bc842abf2ebc55755f5a581a886ceb720170b981
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998286"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319192"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -64,8 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 27ce7e1781d8e12e0063702fc23d3bb4857a4c89
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 183a5fe6a9250315bba668671561bc0b402267ca
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958106"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312560"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>Atualizar androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -77,12 +77,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |dateTimeConfigurationBlocked|Booliano|Indica se o usuário será ou não impedido de alterar manualmente a data ou a hora no dispositivo|
 |factoryResetDeviceAdministratorEmails|Coleção de cadeias de caracteres|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica em configurações está desabilitada.|
+|kioskModeScreenSaverConfigurationEnabled|Booliano|Se o modo de proteção de tela deve ou não ser habilitado ou não no modo quiosque.|
+|kioskModeScreenSaverImageUrl|String|URL de uma imagem que será a proteção de tela do dispositivo no modo quiosque.|
+|kioskModeScreenSaverDisplayTimeInSeconds|Int32|O número de segundos que o dispositivo exibirá a proteção de tela no modo quiosque. Valores válidos de 0 a 9999999|
+|kioskModeScreenSaverStartDelayInSeconds|Int32|O número de segundos que o dispositivo precisa estar inativo para que a proteção de tela seja mostrada no modo quiosque. Valores válidos de 1 a 9999999|
+|kioskModeScreenSaverDetectMediaDisabled|Booliano|Se a tela do dispositivo deve ou não mostrar a proteção de tela se áudio/vídeo estiver em execução no modo quiosque.|
 |kioskModeApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos gerenciados que serão mostrados quando o dispositivo estiver no modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
 |kioskModeWallpaperUrl|String|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
 |kioskModeExitCode|String|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
 |kioskModeVirtualHomeButtonEnabled|Booliano|Se um botão de Home virtual será exibido ou não quando o dispositivo estiver no modo quiosque.|
+|kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Indica se o botão de Home virtual é um botão deslizar para cima ou um botão de início flutuante. Os valores possíveis são: `notConfigured`, `swipeUp`, `floating`.|
 |kioskModeBluetoothConfigurationEnabled|Booliano|Se permitirá ou não que um usuário defina configurações de Bluetooth no modo quiosque.|
 |kioskModeWiFiConfigurationEnabled|Booliano|Se permitirá ou não que um usuário defina configurações de Wi-Fi no modo quiosque.|
+|kioskModeFlashlightConfigurationEnabled|Booliano|Se permitirá ou não que um usuário use a lanterna no modo quiosque.|
+|kioskModeMediaVolumeConfigurationEnabled|Booliano|Se permitirá ou não que um usuário altere o volume de mídia no modo quiosque.|
 |microphoneForceMute|Booliano|Indica se a desativação do microfone no dispositivo deve ou não ser bloqueada.|
 |networkEscapeHatchAllowed|Booliano|Indica se o dispositivo permitirá ou não conexão com uma conexão de rede temporária no momento da inicialização.|
 |nfcBlockOutgoingBeam|Booliano|Indica se o feixe de saída NFC deve ou não ser bloqueado.|
@@ -134,7 +142,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3678
+Content-length: 4123
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -181,6 +189,11 @@ Content-length: 3678
     "Factory Reset Device Administrator Emails value"
   ],
   "factoryResetBlocked": true,
+  "kioskModeScreenSaverConfigurationEnabled": true,
+  "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
+  "kioskModeScreenSaverDisplayTimeInSeconds": 8,
+  "kioskModeScreenSaverStartDelayInSeconds": 7,
+  "kioskModeScreenSaverDetectMediaDisabled": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -193,8 +206,11 @@ Content-length: 3678
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeVirtualHomeButtonType": "swipeUp",
   "kioskModeBluetoothConfigurationEnabled": true,
   "kioskModeWiFiConfigurationEnabled": true,
+  "kioskModeFlashlightConfigurationEnabled": true,
+  "kioskModeMediaVolumeConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -245,7 +261,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3850
+Content-Length: 4295
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -295,6 +311,11 @@ Content-Length: 3850
     "Factory Reset Device Administrator Emails value"
   ],
   "factoryResetBlocked": true,
+  "kioskModeScreenSaverConfigurationEnabled": true,
+  "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
+  "kioskModeScreenSaverDisplayTimeInSeconds": 8,
+  "kioskModeScreenSaverStartDelayInSeconds": 7,
+  "kioskModeScreenSaverDetectMediaDisabled": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -307,8 +328,11 @@ Content-Length: 3850
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeVirtualHomeButtonType": "swipeUp",
   "kioskModeBluetoothConfigurationEnabled": true,
   "kioskModeWiFiConfigurationEnabled": true,
+  "kioskModeFlashlightConfigurationEnabled": true,
+  "kioskModeMediaVolumeConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -353,6 +377,7 @@ Content-Length: 3850
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
+
 
 
 

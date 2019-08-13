@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Recupere as propriedades e as relações de um recurso do site.
 doc_type: apiPageType
-ms.openlocfilehash: a8ee917e3b5afa20ac0796624bdb411eeea8df36
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 051c49468adfdc60508b93932e0b56b2b363c988
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024683"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320019"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 
@@ -83,7 +83,7 @@ GET /sites/{site-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

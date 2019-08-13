@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 009a681d9a002d71305336a650fe1ef479335d4f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 4b7e20aa57f66f91a4020b1f841326bc6051a9f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891986"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324743"
 ---
 ```java
 
@@ -19,7 +19,7 @@ workbookRangeFormat.rowHeight = 49;
 workbookRangeFormat.wrapText = false;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
-    .range('$C$1').format()
+    .range("$C$1").format()
     .buildRequest()
     .patch(workbookRangeFormat);
 

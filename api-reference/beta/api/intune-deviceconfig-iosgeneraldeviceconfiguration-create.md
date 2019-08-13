@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ffd7c496bd385a783cb96b63ddcfa4beeb97258
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 507b190d719d20991419a573ae7f1025b8070f06
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948233"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315916"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Criar iosGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -75,13 +75,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |appsVisibilityList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos na lista de visibilidade (lista de aplicativos visíveis/inicializávelis ou lista de aplicativos ocultos/não inicializáveis, controlados por AppsVisibilityListType) (iOS 9.3 e posterior). Essa coleção pode conter um máximo de 10.000 elementos.|
 |appsVisibilityListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Tipo de lista que está em AppsVisibilityList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Booliano|Indica se será bloqueado ou não o download automático de aplicativos comprados em outros dispositivos quando o dispositivo estiver no modo supervisionado (iOS 9.0 ou posterior).|
-|appStoreBlocked|Booliano|Indica se o usuário será ou não impedido de usar a App Store.|
-|appStoreBlockInAppPurchases|Boolean|Indica se o usuário será ou não impedido de fazer compras no aplicativo.|
+|appStoreBlocked|Boolean|Indica se o usuário será ou não impedido de usar a App Store. Requer um dispositivo supervisionado para iOS 13 e posterior.|
+|appStoreBlockInAppPurchases|Booliano|Indica se o usuário será ou não impedido de fazer compras no aplicativo.|
 |appStoreBlockUIAppInstallation|Booliano|Indica se o aplicativo da App Store será bloqueado ou não, o que não restringe a instalação por meio de aplicativos do host. Aplica-se apenas ao modo supervisionado (iOS 9.0 ou posterior).|
 |appStoreRequirePassword|Booliano|Indica se uma senha deve ou não ser exigida ao usar a loja de aplicativos.|
 |autoFillForceAuthentication|Booliano|Indica se a autenticação do usuário deve ou não ser forçada antes de preencher automaticamente as informações de cartão de crédito e o Safari e outros aplicativos em dispositivos supervisionados.|
 |bluetoothBlockModification|Booliano|Indica se a modificação das configurações do Bluetooth será ou não permitida quando o dispositivo estiver no modo supervisionado (iOS 10.0 ou posterior).|
-|cameraBlocked|Booliano|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo.|
+|cameraBlocked|Booliano|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |cellularBlockDataRoaming|Booliano|Indica se o roaming de dados deve ou não ser bloqueado.|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Booliano|Indica se a busca global em segundo plano será ou não bloqueada durante roaming.|
 |cellularBlockPerAppDataModification|Booliano|Indica se as alterações em configurações de uso de dados do aplicativo de rede celular serão ou não permitidas quando o dispositivo estiver no modo supervisionado.|
@@ -106,25 +106,25 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |documentsBlockUnmanagedDocumentsInManagedApps|Booliano|Indica se o usuário será ou não impedido de visualizar documentos não gerenciados em aplicativos gerenciados.|
 |emailInDomainSuffixes|String collection|Um endereço de email sem um sufixo que corresponde a qualquer uma dessas strings será considerado fora do domínio.|
 |enterpriseAppBlockTrust|Booliano|Indica se o usuário será ou não impedido de confiar em um aplicativo corporativo.|
-|enterpriseAppBlockTrustModification|Booliano|Indica se o usuário será ou não impedido de modificar as configurações de confiança de um aplicativo corporativo.|
+|enterpriseAppBlockTrustModification|Boolean|Indica se o usuário será ou não impedido de modificar as configurações de confiança de um aplicativo corporativo.|
 |esimBlockModification|Booliano|Indica se a adição ou a remoção de planos da rede celular deve ou não ser permitida no eSIM de um dispositivo supervisionado.|
-|faceTimeBlocked|Boolean|Indica se o usuário será ou não impedido de usar o FaceTime.|
-|findMyFriendsBlocked|Booliano|Indica se Encontrar Meus Amigos será bloqueado ou não quando o dispositivo estiver no modo supervisionado.|
-|gamingBlockGameCenterFriends|Booliano|Indica se o usuário será ou não impedido de ter amigos no Game Center.|
-|gamingBlockMultiplayer|Booliano|Indica se o usuário será ou não impedido de usar jogos para vários participantes.|
+|faceTimeBlocked|Booliano|Indica se o usuário será ou não impedido de usar o FaceTime. Requer um dispositivo supervisionado para iOS 13 e posterior.|
+|findMyFriendsBlocked|Booliano|Indica se as alterações serão bloqueadas ou não para localizar meus amigos quando o dispositivo estiver no modo supervisionado.|
+|gamingBlockGameCenterFriends|Booliano|Indica se o usuário será ou não impedido de ter amigos no Game Center. Requer um dispositivo supervisionado para iOS 13 e posterior.|
+|gamingBlockMultiplayer|Booliano|Indica se o usuário será ou não impedido de usar jogos para vários participantes. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |gameCenterBlocked|Booliano|Indica se o usuário será ou não impedido de usar o Game Center quando o dispositivo estiver no modo supervisionado.|
 |hostPairingBlocked|Booliano|indica se será permitido ou não o emparelhamento de host para controlar os dispositivos com os quais um dispositivo iOS poderá ser pareado estiver no modo supervisionado.|
 |iBooksStoreBlocked|Booliano|Indica se o usuário será ou não impedido de usar a iBooks Store quando o dispositivo estiver no modo supervisionado.|
 |iBooksStoreBlockErotica|Booliano|Indica se o usuário será ou não impedido de baixar mídia marcada como erótica da iBookstore.|
 |iCloudBlockActivityContinuation|Booliano|Indica se o usuário será ou não impedido de continuar o trabalho que começou no dispositivo iOS em outro dispositivo iOS ou macOS.|
-|iCloudBlockBackup|Booliano|Indica se o backup do iCloud deve ou não ser bloqueado.|
-|iCloudBlockDocumentSync|Booliano|Indica se a sincronização de documentos do iCloud deve ou não ser bloqueada.|
+|iCloudBlockBackup|Booliano|Indica se o backup do iCloud deve ou não ser bloqueado. Requer um dispositivo supervisionado para iOS 13 e posterior.|
+|iCloudBlockDocumentSync|Booliano|Indica se a sincronização de documentos do iCloud deve ou não ser bloqueada. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |iCloudBlockManagedAppsSync|Booliano|Indica se a Sincronização de nuvem de aplicativos gerenciados deve ou não ser bloqueada.|
 |iCloudBlockPhotoLibrary|Booliano|Indica se Biblioteca de Fotos do iCloud deve ou não ser bloqueada.|
 |iCloudBlockPhotoStreamSync|Booliano|Indica se a sincronização do Fluxo de Fotos do iCloud deve ou não ser bloqueada.|
 |iCloudBlockSharedPhotoStream|Booliano|Indica se a sincronização do Fluxo de Fotos Compartilhadas deve ou não ser bloqueada.|
 |iCloudRequireEncryptedBackup|Booliano|Indica se a criptografia de backups no iCloud será exigida ou não.|
-|iTunesBlockExplicitContent|Booliano|Indica se o usuário será ou não impedido de acessar conteúdo explícito no iTunes e na App Store.|
+|iTunesBlockExplicitContent|Booliano|Indica se o usuário será ou não impedido de acessar conteúdo explícito no iTunes e na App Store. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |iTunesBlockMusicService|Booliano|Indica se o serviço de música será bloqueado e se o aplicativo Music será revertido ao modo clássico quando o dispositivo estiver no modo supervisionado (iOS 9.3 ou posterior e macOS 10.12 ou posterior).|
 |iTunesBlockRadio|Booliano|Indica se o usuário será ou não impedido de usar o iTunes Radio quando o dispositivo estiver no modo supervisionado (iOS 9.3 e posterior).|
 |keyboardBlockAutoCorrect|Booliano|Indica se a correção automática do teclado será ou não bloqueada quando o dispositivo estiver no modo supervisionado (iOS 8.1.3 ou posterior).|
@@ -137,9 +137,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |kioskModeAllowAutoLock|Booliano|Indica se o bloqueio automático do dispositivo será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockAutoLock em vez disso.|
 |kioskModeBlockAutoLock|Booliano|Indica se o bloqueio automático do dispositivo deve ou não ser bloqueado no modo quiosque.|
 |kioskModeAllowColorInversionSettings|Booliano|Indica se o acesso às configurações de Inversão de cores será permitido ou não no modo quiosque.|
-|kioskModeAllowRingerSwitch|Booliano|Indica se o uso do botão de toque será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockRingerSwitch em vez disso.|
+|kioskModeAllowRingerSwitch|Boolean|Indica se o uso do botão de toque será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockRingerSwitch em vez disso.|
 |kioskModeBlockRingerSwitch|Booliano|Indica se o uso do comutador de toque deve ou não ser bloqueado no modo quiosque.|
-|kioskModeAllowScreenRotation|Boolean|Indica se a rotação de tela será permitida ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockScreenRotation em vez disso.|
+|kioskModeAllowScreenRotation|Booliano|Indica se a rotação de tela será permitida ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockScreenRotation em vez disso.|
 |kioskModeBlockScreenRotation|Booliano|Indica se a rotação de tela deve ou não ser bloqueada enquanto estiver no modo quiosque.|
 |kioskModeAllowSleepButton|Booliano|Indica se o uso do botão de suspensão será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockSleepButton em vez disso.|
 |kioskModeBlockSleepButton|Booliano|Indica se o uso do botão de suspensão deve ou não ser bloqueado no modo quiosque.|
@@ -189,18 +189,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |passcodeRequired|Booliano|Indica se um código de acesso deve ou não ser exigido.|
 |podcastsBlocked|Booliano|Indica se o usuário será ou não impedido de usar podcasts no dispositivo supervisionado (iOS 8.0 e posterior).|
 |proximityBlockSetupToNewDevice|Booliano|Indica se o prompt deve ou não ser habilitado para configurar dispositivos próximos com um dispositivo supervisionado.|
-|safariBlockAutofill|Booliano|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari.|
+|safariBlockAutofill|Booliano|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |safariBlockJavaScript|Booliano|Indica se o JavaScript deve ou não ser bloqueado no Safari.|
 |safariBlockPopups|Booliano|Indica se os popups devem ou não ser bloqueados no Safari.|
-|safariBlocked|Booliano|Indica se o usuário será ou não impedido de usar o Safari.|
+|safariBlocked|Booliano|Indica se o usuário será ou não impedido de usar o Safari. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Configurações de cookie do Safari. Os valores possíveis são: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |safariManagedDomains|Coleção de cadeias de caracteres|As URLs correspondentes aos padrões indicados aqui serão consideradas gerenciadas.|
 |safariPasswordAutoFillDomains|String collection|Os usuários podem salvar senhas no Safari somente de URLs correspondentes aos padrões indicados aqui. Aplica-se a dispositivos no modo supervisionado (iOS 9.3 ou posterior).|
-|safariRequireFraudWarning|Booliano|Indica se um aviso de fraude deve ou não ser exigido no Safari.|
+|safariRequireFraudWarning|Boolean|Indica se um aviso de fraude deve ou não ser exigido no Safari.|
 |screenCaptureBlocked|Booliano|Indica se o usuário será ou não impedido de fazer capturas de tela.|
 |siriBlocked|Booliano|Indica se o usuário será ou não impedido de usar a Siri.|
 |siriBlockedWhenLocked|Booliano|Indica se o usuário será ou não impedido de usar a Siri com o dispositivo bloqueado.|
-|siriBlockUserGeneratedContent|Boolean|Indica se a Siri será ou não impedida de consultar conteúdos gerados pelo usuário quando usada em um dispositivo supervisionado.|
+|siriBlockUserGeneratedContent|Booliano|Indica se a Siri será ou não impedida de consultar conteúdos gerados pelo usuário quando usada em um dispositivo supervisionado.|
 |siriRequireProfanityFilter|Booliano|Indica se a Siri deve ou não ser impedida de utilizar linguagem imprópria no dispositivo supervisionado.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Define o número de dias que uma atualização de software será delyed para um dispositivo supervisionado. Valores válidos de 0 a 90|
 |softwareUpdatesForceDelayed|Booliano|Indica se o usuário deve ou não atrasar a visibilidade de atualizações de software quando o dispositivo estiver no modo supervisionado.|
@@ -209,7 +209,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |wallpaperBlockModification|Booliano|Indica se a modificação de papel de parede será permitida ou não no dispositivo supervisionado (iOS 9.0 e posterior).|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|Indica se o dispositivo será ou não forçado a usar apenas redes Wi-Fi de perfis de configuração quando o dispositivo estiver no modo supervisionado.|
 |classroomForceRequestPermissionToLeaveClasses|Booliano|Indica se um aluno inscrito em um curso não gerenciado via sala de aula solicitará permissão do professor ao tentar sair do curso (iOS 11,3 e posterior).|
-|Propriedadeskeychainblockcloudsync|Booliano|Indica se a sincronização de chaves do iCloud está bloqueada ou não.|
+|Propriedadeskeychainblockcloudsync|Booliano|Indica se a sincronização de chaves do iCloud está bloqueada ou não. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |pkiBlockOTAUpdates|Booliano|Indica se as atualizações de PKI de over-the-Air serão bloqueadas ou não. A definição dessa restrição como false não desabilita as verificações de CRL e OCSP (iOS 7,0 e posterior).|
 |privacyForceLimitAdTracking|Booliano|Indica se o controle do AD é limitado. (iOS 7,0 e posterior).|
 |enterpriseBookBlockBackup|Booliano|Indica se o backup do catálogo empresarial deve ou não ser bloqueado.|
@@ -230,6 +230,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |contactsAllowUnmanagedToManagedRead|Booliano|Indica se os aplicativos não gerenciados podem ler de contas de contatos gerenciados (iOS 12,0 ou posterior).|
 |cellularBlockPersonalHotspotModification|Booliano|Indica se o usuário será ou não impedido de modificar a configuração de hotspot pessoal (iOS 12,2 ou posterior).|
 |siriDisableServerLogging|Booliano|Indica se o registro em log do lado do servidor do Siri está desabilitado (iOS 12,2 ou posterior).|
+|continuousPathKeyboardBlocked|Booliano|Indica se o teclado de caminho contínuo será ou não bloqueado quando o dispositivo for supervisionado (iOS 13 ou posterior).|
+|findMyDeviceInFindMyAppBlocked|Booliano|Indica se a localização do dispositivo deve ou não ser bloqueada quando o dispositivo é supervisionado (iOS 13 ou posterior).|
+|findMyFriendsInFindMyAppBlocked|Booliano|Indica se a localização de meus amigos deve ou não ser bloqueada quando o dispositivo é supervisionado (iOS 13 ou posterior).|
+|wiFiBlockPowerModification|Booliano|Indica se a modificação de energia WiFi deve ou não ser bloqueada quando o dispositivo é supervisionado (iOS 13 ou posterior).|
+|iTunesBlocked|Booliano|Indica se o aplicativo iTunes deve ou não ser bloqueado. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 
 
 
@@ -243,7 +248,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10159
+Content-length: 10353
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -522,7 +527,12 @@ Content-length: 10159
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true
+  "siriDisableServerLogging": true,
+  "continuousPathKeyboardBlocked": true,
+  "findMyDeviceInFindMyAppBlocked": true,
+  "findMyFriendsInFindMyAppBlocked": true,
+  "wiFiBlockPowerModification": true,
+  "iTunesBlocked": true
 }
 ```
 
@@ -531,7 +541,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10331
+Content-Length: 10525
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -813,9 +823,15 @@ Content-Length: 10331
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true
+  "siriDisableServerLogging": true,
+  "continuousPathKeyboardBlocked": true,
+  "findMyDeviceInFindMyAppBlocked": true,
+  "findMyFriendsInFindMyAppBlocked": true,
+  "wiFiBlockPowerModification": true,
+  "iTunesBlocked": true
 }
 ```
+
 
 
 

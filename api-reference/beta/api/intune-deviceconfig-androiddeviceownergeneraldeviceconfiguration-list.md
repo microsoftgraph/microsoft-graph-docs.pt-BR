@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c190b2a3eb2342dd758d506222b9b2ff5f2b85de
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4596d337bdb783ab96930723d3f5a1afbe2d3c8d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958120"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312555"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Listar androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4295
+Content-Length: 4772
 
 {
   "value": [
@@ -116,6 +116,11 @@ Content-Length: 4295
         "Factory Reset Device Administrator Emails value"
       ],
       "factoryResetBlocked": true,
+      "kioskModeScreenSaverConfigurationEnabled": true,
+      "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
+      "kioskModeScreenSaverDisplayTimeInSeconds": 8,
+      "kioskModeScreenSaverStartDelayInSeconds": 7,
+      "kioskModeScreenSaverDetectMediaDisabled": true,
       "kioskModeApps": [
         {
           "@odata.type": "microsoft.graph.appListItem",
@@ -128,8 +133,11 @@ Content-Length: 4295
       "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
       "kioskModeExitCode": "Kiosk Mode Exit Code value",
       "kioskModeVirtualHomeButtonEnabled": true,
+      "kioskModeVirtualHomeButtonType": "swipeUp",
       "kioskModeBluetoothConfigurationEnabled": true,
       "kioskModeWiFiConfigurationEnabled": true,
+      "kioskModeFlashlightConfigurationEnabled": true,
+      "kioskModeMediaVolumeConfigurationEnabled": true,
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,
       "nfcBlockOutgoingBeam": true,
@@ -176,6 +184,7 @@ Content-Length: 4295
   ]
 }
 ```
+
 
 
 
