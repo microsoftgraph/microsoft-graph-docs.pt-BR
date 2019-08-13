@@ -5,53 +5,53 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aabc4337e4c48d4e4c2b86824f9d2448c9cf805f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bea9316bb10a91cf94524671e41aca14edf06541
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945337"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318503"
 ---
-# <a name="delete-audio-routing-group"></a><span data-ttu-id="5d1bb-103">Excluir grupo de roteamento de áudio</span><span class="sxs-lookup"><span data-stu-id="5d1bb-103">Delete audio routing group</span></span>
+# <a name="delete-audio-routing-group"></a><span data-ttu-id="d999f-103">Excluir grupo de roteamento de áudio</span><span class="sxs-lookup"><span data-stu-id="d999f-103">Delete audio routing group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5d1bb-104">Exclua o [audioRoutingGroup](../resources/audioroutinggroup.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-104">Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
+<span data-ttu-id="d999f-104">Exclua o [audioRoutingGroup](../resources/audioroutinggroup.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="d999f-104">Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5d1bb-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="5d1bb-105">Permissions</span></span>
-<span data-ttu-id="5d1bb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d999f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d999f-105">Permissions</span></span>
+<span data-ttu-id="d999f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d999f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5d1bb-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5d1bb-108">Permission type</span></span> | <span data-ttu-id="5d1bb-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5d1bb-109">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="d999f-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d999f-108">Permission type</span></span> | <span data-ttu-id="d999f-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d999f-109">Permissions (from least to most privileged)</span></span>  |
 | :-------------- | :------------------------------------------- |
-| <span data-ttu-id="5d1bb-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5d1bb-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="5d1bb-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="5d1bb-111">Not Supported</span></span>        |
-| <span data-ttu-id="5d1bb-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5d1bb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d1bb-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="5d1bb-113">Not Supported</span></span>        |
-| <span data-ttu-id="5d1bb-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5d1bb-114">Application</span></span>     | <span data-ttu-id="5d1bb-115">Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All</span><span class="sxs-lookup"><span data-stu-id="5d1bb-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="d999f-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d999f-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="d999f-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="d999f-111">Not Supported</span></span>        |
+| <span data-ttu-id="d999f-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d999f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d999f-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="d999f-113">Not Supported</span></span>        |
+| <span data-ttu-id="d999f-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d999f-114">Application</span></span>     | <span data-ttu-id="d999f-115">Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All</span><span class="sxs-lookup"><span data-stu-id="d999f-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5d1bb-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5d1bb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d999f-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d999f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}/audioRoutingGroups/{id}
 DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5d1bb-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5d1bb-117">Request headers</span></span>
-| <span data-ttu-id="5d1bb-118">Nome</span><span class="sxs-lookup"><span data-stu-id="5d1bb-118">Name</span></span>          | <span data-ttu-id="5d1bb-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="5d1bb-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="d999f-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d999f-117">Request headers</span></span>
+| <span data-ttu-id="d999f-118">Nome</span><span class="sxs-lookup"><span data-stu-id="d999f-118">Name</span></span>          | <span data-ttu-id="d999f-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="d999f-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="5d1bb-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="5d1bb-120">Authorization</span></span> | <span data-ttu-id="5d1bb-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d999f-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="d999f-120">Authorization</span></span> | <span data-ttu-id="d999f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d999f-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5d1bb-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5d1bb-123">Request body</span></span>
-<span data-ttu-id="5d1bb-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d999f-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d999f-123">Request body</span></span>
+<span data-ttu-id="d999f-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d999f-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5d1bb-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="5d1bb-125">Response</span></span>
-<span data-ttu-id="5d1bb-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d999f-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="d999f-125">Response</span></span>
+<span data-ttu-id="d999f-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d999f-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5d1bb-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5d1bb-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d999f-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d999f-128">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="5d1bb-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5d1bb-129">Request</span></span>
-<span data-ttu-id="5d1bb-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-130">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="d999f-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d999f-129">Request</span></span>
+<span data-ttu-id="d999f-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="d999f-130">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5d1bb-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="5d1bb-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d999f-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="d999f-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-audioRoutingGroup"
@@ -59,28 +59,28 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5d1bb-132">C#</span><span class="sxs-lookup"><span data-stu-id="5d1bb-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d999f-132">C#</span><span class="sxs-lookup"><span data-stu-id="d999f-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-audioroutinggroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5d1bb-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="5d1bb-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d999f-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d999f-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-audioroutinggroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5d1bb-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="5d1bb-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d999f-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="d999f-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-audioroutinggroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="5d1bb-135">Java</span><span class="sxs-lookup"><span data-stu-id="5d1bb-135">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="d999f-135">Java</span><span class="sxs-lookup"><span data-stu-id="d999f-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-audioroutinggroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="5d1bb-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="5d1bb-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="d999f-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="d999f-136">Response</span></span>
 
-> <span data-ttu-id="5d1bb-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d999f-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d999f-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

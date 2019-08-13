@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 766518191b6925a25afebd14c6bda04907e76c4d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 62eb555cda68f925ea752c23078e0712fc386f66
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874225"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308845"
 ---
 ```csharp
 
@@ -21,7 +21,7 @@ var workbookRangeFormat = new WorkbookRangeFormat
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["Sheet1"]
-    .Range('$B$1').Format
+    .Range("$B$1").Format
     .Request()
     .UpdateAsync(workbookRangeFormat);
 
