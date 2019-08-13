@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5a1ecd47f8f8f78411a7d6f53d845964f5a1c43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6b5154fc60a6c2161facd60999acedf326a821f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959485"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336093"
 ---
-# <a name="update-auditevent"></a><span data-ttu-id="485b2-103">Atualizar auditEvent</span><span class="sxs-lookup"><span data-stu-id="485b2-103">Update auditEvent</span></span>
+# <a name="update-auditevent"></a><span data-ttu-id="92654-103">Atualizar auditEvent</span><span class="sxs-lookup"><span data-stu-id="92654-103">Update auditEvent</span></span>
 
-> <span data-ttu-id="485b2-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="485b2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="92654-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="92654-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="485b2-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="485b2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="92654-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="92654-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="485b2-106">Atualizar as propriedades do objeto [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="485b2-106">Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
+<span data-ttu-id="92654-106">Atualizar as propriedades do objeto [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="92654-106">Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="485b2-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="485b2-107">Prerequisites</span></span>
-<span data-ttu-id="485b2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="485b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="92654-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="92654-107">Prerequisites</span></span>
+<span data-ttu-id="92654-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="92654-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="485b2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="485b2-110">Permission type</span></span>|<span data-ttu-id="485b2-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="485b2-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="92654-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="92654-110">Permission type</span></span>|<span data-ttu-id="92654-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="92654-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="485b2-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="485b2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="485b2-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="485b2-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="485b2-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="485b2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="485b2-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="485b2-115">Not supported.</span></span>|
-|<span data-ttu-id="485b2-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="485b2-116">Application</span></span>|<span data-ttu-id="485b2-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="485b2-117">Not supported.</span></span>|
+|<span data-ttu-id="92654-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="92654-112">Delegated (work or school account)</span></span>|<span data-ttu-id="92654-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92654-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="92654-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="92654-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="92654-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="92654-115">Not supported.</span></span>|
+|<span data-ttu-id="92654-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="92654-116">Application</span></span>|<span data-ttu-id="92654-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92654-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="485b2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="485b2-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="92654-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="92654-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,41 +38,41 @@ ms.locfileid: "35959485"
 PATCH /deviceManagement/auditEvents/{auditEventId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="485b2-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="485b2-119">Request headers</span></span>
-|<span data-ttu-id="485b2-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="485b2-120">Header</span></span>|<span data-ttu-id="485b2-121">Valor</span><span class="sxs-lookup"><span data-stu-id="485b2-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="92654-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="92654-119">Request headers</span></span>
+|<span data-ttu-id="92654-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="92654-120">Header</span></span>|<span data-ttu-id="92654-121">Valor</span><span class="sxs-lookup"><span data-stu-id="92654-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="485b2-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="485b2-122">Authorization</span></span>|<span data-ttu-id="485b2-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="485b2-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="485b2-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="485b2-124">Accept</span></span>|<span data-ttu-id="485b2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="485b2-125">application/json</span></span>|
+|<span data-ttu-id="92654-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="92654-122">Authorization</span></span>|<span data-ttu-id="92654-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="92654-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="92654-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="92654-124">Accept</span></span>|<span data-ttu-id="92654-125">application/json</span><span class="sxs-lookup"><span data-stu-id="92654-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="485b2-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="485b2-126">Request body</span></span>
-<span data-ttu-id="485b2-127">No corpo da solicitação, forneça uma representação JSON do objeto [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="485b2-127">In the request body, supply a JSON representation for the [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="92654-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="92654-126">Request body</span></span>
+<span data-ttu-id="92654-127">No corpo da solicitação, forneça uma representação JSON do objeto [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="92654-127">In the request body, supply a JSON representation for the [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
 
-<span data-ttu-id="485b2-128">A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="485b2-128">The following table shows the properties that are required when you create the [auditEvent](../resources/intune-auditing-auditevent.md).</span></span>
+<span data-ttu-id="92654-128">A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="92654-128">The following table shows the properties that are required when you create the [auditEvent](../resources/intune-auditing-auditevent.md).</span></span>
 
-|<span data-ttu-id="485b2-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="485b2-129">Property</span></span>|<span data-ttu-id="485b2-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="485b2-130">Type</span></span>|<span data-ttu-id="485b2-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="485b2-131">Description</span></span>|
+|<span data-ttu-id="92654-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="92654-129">Property</span></span>|<span data-ttu-id="92654-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="92654-130">Type</span></span>|<span data-ttu-id="92654-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="92654-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="485b2-132">id</span><span class="sxs-lookup"><span data-stu-id="485b2-132">id</span></span>|<span data-ttu-id="485b2-133">String</span><span class="sxs-lookup"><span data-stu-id="485b2-133">String</span></span>|<span data-ttu-id="485b2-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="485b2-134">Key of the entity.</span></span>|
-|<span data-ttu-id="485b2-135">displayName</span><span class="sxs-lookup"><span data-stu-id="485b2-135">displayName</span></span>|<span data-ttu-id="485b2-136">String</span><span class="sxs-lookup"><span data-stu-id="485b2-136">String</span></span>|<span data-ttu-id="485b2-137">Nome de exibição do evento.</span><span class="sxs-lookup"><span data-stu-id="485b2-137">Event display name.</span></span>|
-|<span data-ttu-id="485b2-138">componentName</span><span class="sxs-lookup"><span data-stu-id="485b2-138">componentName</span></span>|<span data-ttu-id="485b2-139">String</span><span class="sxs-lookup"><span data-stu-id="485b2-139">String</span></span>|<span data-ttu-id="485b2-140">Nome do componente.</span><span class="sxs-lookup"><span data-stu-id="485b2-140">Component name.</span></span>|
-|<span data-ttu-id="485b2-141">actor</span><span class="sxs-lookup"><span data-stu-id="485b2-141">actor</span></span>|[<span data-ttu-id="485b2-142">auditActor</span><span class="sxs-lookup"><span data-stu-id="485b2-142">auditActor</span></span>](../resources/intune-auditing-auditactor.md)|<span data-ttu-id="485b2-143">Usuários e aplicativos do AAD associados com o evento de auditoria.</span><span class="sxs-lookup"><span data-stu-id="485b2-143">AAD user and application that are associated with the audit event.</span></span>|
-|<span data-ttu-id="485b2-144">atividade</span><span class="sxs-lookup"><span data-stu-id="485b2-144">activity</span></span>|<span data-ttu-id="485b2-145">String</span><span class="sxs-lookup"><span data-stu-id="485b2-145">String</span></span>|<span data-ttu-id="485b2-146">Nome amigável da atividade.</span><span class="sxs-lookup"><span data-stu-id="485b2-146">Friendly name of the activity.</span></span>|
-|<span data-ttu-id="485b2-147">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="485b2-147">activityDateTime</span></span>|<span data-ttu-id="485b2-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="485b2-148">DateTimeOffset</span></span>|<span data-ttu-id="485b2-149">A hora e data em UTC em que a atividade foi executada.</span><span class="sxs-lookup"><span data-stu-id="485b2-149">The date time in UTC when the activity was performed.</span></span>|
-|<span data-ttu-id="485b2-150">activityType</span><span class="sxs-lookup"><span data-stu-id="485b2-150">activityType</span></span>|<span data-ttu-id="485b2-151">String</span><span class="sxs-lookup"><span data-stu-id="485b2-151">String</span></span>|<span data-ttu-id="485b2-152">O tipo de atividade que foi executada.</span><span class="sxs-lookup"><span data-stu-id="485b2-152">The type of activity that was being performed.</span></span>|
-|<span data-ttu-id="485b2-153">activityOperationType</span><span class="sxs-lookup"><span data-stu-id="485b2-153">activityOperationType</span></span>|<span data-ttu-id="485b2-154">String</span><span class="sxs-lookup"><span data-stu-id="485b2-154">String</span></span>|<span data-ttu-id="485b2-155">O tipo de operação HTTP da atividade.</span><span class="sxs-lookup"><span data-stu-id="485b2-155">The HTTP operation type of the activity.</span></span>|
-|<span data-ttu-id="485b2-156">activityResult</span><span class="sxs-lookup"><span data-stu-id="485b2-156">activityResult</span></span>|<span data-ttu-id="485b2-157">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="485b2-157">String</span></span>|<span data-ttu-id="485b2-158">O resultado da atividade.</span><span class="sxs-lookup"><span data-stu-id="485b2-158">The result of the activity.</span></span>|
-|<span data-ttu-id="485b2-159">correlationId</span><span class="sxs-lookup"><span data-stu-id="485b2-159">correlationId</span></span>|<span data-ttu-id="485b2-160">Guid</span><span class="sxs-lookup"><span data-stu-id="485b2-160">Guid</span></span>|<span data-ttu-id="485b2-161">A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.</span><span class="sxs-lookup"><span data-stu-id="485b2-161">The client request Id that is used to correlate activity within the system.</span></span>|
-|<span data-ttu-id="485b2-162">recursos</span><span class="sxs-lookup"><span data-stu-id="485b2-162">resources</span></span>|<span data-ttu-id="485b2-163">Coleção [auditResource](../resources/intune-auditing-auditresource.md)</span><span class="sxs-lookup"><span data-stu-id="485b2-163">[auditResource](../resources/intune-auditing-auditresource.md) collection</span></span>|<span data-ttu-id="485b2-164">Recursos em modificação.</span><span class="sxs-lookup"><span data-stu-id="485b2-164">Resources being modified.</span></span>|
-|<span data-ttu-id="485b2-165">category</span><span class="sxs-lookup"><span data-stu-id="485b2-165">category</span></span>|<span data-ttu-id="485b2-166">String</span><span class="sxs-lookup"><span data-stu-id="485b2-166">String</span></span>|<span data-ttu-id="485b2-167">Categoria de auditoria.</span><span class="sxs-lookup"><span data-stu-id="485b2-167">Audit category.</span></span>|
+|<span data-ttu-id="92654-132">id</span><span class="sxs-lookup"><span data-stu-id="92654-132">id</span></span>|<span data-ttu-id="92654-133">String</span><span class="sxs-lookup"><span data-stu-id="92654-133">String</span></span>|<span data-ttu-id="92654-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="92654-134">Key of the entity.</span></span>|
+|<span data-ttu-id="92654-135">displayName</span><span class="sxs-lookup"><span data-stu-id="92654-135">displayName</span></span>|<span data-ttu-id="92654-136">String</span><span class="sxs-lookup"><span data-stu-id="92654-136">String</span></span>|<span data-ttu-id="92654-137">Nome de exibição do evento.</span><span class="sxs-lookup"><span data-stu-id="92654-137">Event display name.</span></span>|
+|<span data-ttu-id="92654-138">componentName</span><span class="sxs-lookup"><span data-stu-id="92654-138">componentName</span></span>|<span data-ttu-id="92654-139">String</span><span class="sxs-lookup"><span data-stu-id="92654-139">String</span></span>|<span data-ttu-id="92654-140">Nome do componente.</span><span class="sxs-lookup"><span data-stu-id="92654-140">Component name.</span></span>|
+|<span data-ttu-id="92654-141">actor</span><span class="sxs-lookup"><span data-stu-id="92654-141">actor</span></span>|[<span data-ttu-id="92654-142">auditActor</span><span class="sxs-lookup"><span data-stu-id="92654-142">auditActor</span></span>](../resources/intune-auditing-auditactor.md)|<span data-ttu-id="92654-143">Usuários e aplicativos do AAD associados com o evento de auditoria.</span><span class="sxs-lookup"><span data-stu-id="92654-143">AAD user and application that are associated with the audit event.</span></span>|
+|<span data-ttu-id="92654-144">atividade</span><span class="sxs-lookup"><span data-stu-id="92654-144">activity</span></span>|<span data-ttu-id="92654-145">String</span><span class="sxs-lookup"><span data-stu-id="92654-145">String</span></span>|<span data-ttu-id="92654-146">Nome amigável da atividade.</span><span class="sxs-lookup"><span data-stu-id="92654-146">Friendly name of the activity.</span></span>|
+|<span data-ttu-id="92654-147">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="92654-147">activityDateTime</span></span>|<span data-ttu-id="92654-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="92654-148">DateTimeOffset</span></span>|<span data-ttu-id="92654-149">A hora e data em UTC em que a atividade foi executada.</span><span class="sxs-lookup"><span data-stu-id="92654-149">The date time in UTC when the activity was performed.</span></span>|
+|<span data-ttu-id="92654-150">activityType</span><span class="sxs-lookup"><span data-stu-id="92654-150">activityType</span></span>|<span data-ttu-id="92654-151">String</span><span class="sxs-lookup"><span data-stu-id="92654-151">String</span></span>|<span data-ttu-id="92654-152">O tipo de atividade que foi executada.</span><span class="sxs-lookup"><span data-stu-id="92654-152">The type of activity that was being performed.</span></span>|
+|<span data-ttu-id="92654-153">activityOperationType</span><span class="sxs-lookup"><span data-stu-id="92654-153">activityOperationType</span></span>|<span data-ttu-id="92654-154">String</span><span class="sxs-lookup"><span data-stu-id="92654-154">String</span></span>|<span data-ttu-id="92654-155">O tipo de operação HTTP da atividade.</span><span class="sxs-lookup"><span data-stu-id="92654-155">The HTTP operation type of the activity.</span></span>|
+|<span data-ttu-id="92654-156">activityResult</span><span class="sxs-lookup"><span data-stu-id="92654-156">activityResult</span></span>|<span data-ttu-id="92654-157">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="92654-157">String</span></span>|<span data-ttu-id="92654-158">O resultado da atividade.</span><span class="sxs-lookup"><span data-stu-id="92654-158">The result of the activity.</span></span>|
+|<span data-ttu-id="92654-159">correlationId</span><span class="sxs-lookup"><span data-stu-id="92654-159">correlationId</span></span>|<span data-ttu-id="92654-160">Guid</span><span class="sxs-lookup"><span data-stu-id="92654-160">Guid</span></span>|<span data-ttu-id="92654-161">A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.</span><span class="sxs-lookup"><span data-stu-id="92654-161">The client request Id that is used to correlate activity within the system.</span></span>|
+|<span data-ttu-id="92654-162">recursos</span><span class="sxs-lookup"><span data-stu-id="92654-162">resources</span></span>|<span data-ttu-id="92654-163">Coleção [auditResource](../resources/intune-auditing-auditresource.md)</span><span class="sxs-lookup"><span data-stu-id="92654-163">[auditResource](../resources/intune-auditing-auditresource.md) collection</span></span>|<span data-ttu-id="92654-164">Recursos em modificação.</span><span class="sxs-lookup"><span data-stu-id="92654-164">Resources being modified.</span></span>|
+|<span data-ttu-id="92654-165">category</span><span class="sxs-lookup"><span data-stu-id="92654-165">category</span></span>|<span data-ttu-id="92654-166">String</span><span class="sxs-lookup"><span data-stu-id="92654-166">String</span></span>|<span data-ttu-id="92654-167">Categoria de auditoria.</span><span class="sxs-lookup"><span data-stu-id="92654-167">Audit category.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="485b2-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="485b2-168">Response</span></span>
-<span data-ttu-id="485b2-169">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [auditEvent](../resources/intune-auditing-auditevent.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="485b2-169">If successful, this method returns a `200 OK` response code and an updated [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="92654-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="92654-168">Response</span></span>
+<span data-ttu-id="92654-169">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [auditEvent](../resources/intune-auditing-auditevent.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="92654-169">If successful, this method returns a `200 OK` response code and an updated [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="485b2-170">Exemplo</span><span class="sxs-lookup"><span data-stu-id="485b2-170">Example</span></span>
+## <a name="example"></a><span data-ttu-id="92654-170">Exemplo</span><span class="sxs-lookup"><span data-stu-id="92654-170">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="485b2-171">Solicitação</span><span class="sxs-lookup"><span data-stu-id="485b2-171">Request</span></span>
-<span data-ttu-id="485b2-172">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="485b2-172">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="92654-171">Solicitação</span><span class="sxs-lookup"><span data-stu-id="92654-171">Request</span></span>
+<span data-ttu-id="92654-172">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="92654-172">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
@@ -121,8 +121,8 @@ Content-length: 1390
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="485b2-173">Resposta</span><span class="sxs-lookup"><span data-stu-id="485b2-173">Response</span></span>
-<span data-ttu-id="485b2-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="485b2-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="92654-173">Resposta</span><span class="sxs-lookup"><span data-stu-id="92654-173">Response</span></span>
+<span data-ttu-id="92654-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="92654-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -171,6 +171,7 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
 
 
 
