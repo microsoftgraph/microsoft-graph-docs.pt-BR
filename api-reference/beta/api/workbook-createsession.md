@@ -5,62 +5,62 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8b061391cccb0c3d652b8bd840ac34ef3df85fa9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d967a8723d0e082cf1e570ae8d7416b1265f6335
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987373"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362014"
 ---
-# <a name="create-session"></a><span data-ttu-id="c2b9a-103">Criar Sessão</span><span class="sxs-lookup"><span data-stu-id="c2b9a-103">Create Session</span></span>
+# <a name="create-session"></a><span data-ttu-id="ecae5-103">Criar Sessão</span><span class="sxs-lookup"><span data-stu-id="ecae5-103">Create Session</span></span>
 
-<span data-ttu-id="c2b9a-104">Use essa API para criar uma nova sessão de pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-104">Use this API to create a new workbook session.</span></span> 
+<span data-ttu-id="ecae5-104">Use essa API para criar uma nova sessão de pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="ecae5-104">Use this API to create a new workbook session.</span></span> 
 
-<span data-ttu-id="c2b9a-105">As APIs do Excel podem ser chamadas em um destes dois modos:</span><span class="sxs-lookup"><span data-stu-id="c2b9a-105">Excel APIs can be called in one of two modes:</span></span> 
+<span data-ttu-id="ecae5-105">As APIs do Excel podem ser chamadas em um destes dois modos:</span><span class="sxs-lookup"><span data-stu-id="ecae5-105">Excel APIs can be called in one of two modes:</span></span> 
 
-1. <span data-ttu-id="c2b9a-p101">Sessão persistente – Todas as alterações feitas na pasta de trabalho são persistentes (salvas). Este é o modo normal de operação.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-p101">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
-2. <span data-ttu-id="c2b9a-p102">Sessão não persistente – As alterações feitas pela API não são salvas na localização de origem. Em vez disso, o servidor back-end do Excel mantém uma cópia temporária do arquivo que reflete as alterações feitas durante essa sessão de API específica. Quando a sessão do Excel expirar, as alterações serão perdidas. Esse modo é útil para aplicativos que precisam fazer uma análise ou obter os resultados de um cálculo ou de uma imagem de gráfico, mas não afeta o estado do documento.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-p102">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
+1. <span data-ttu-id="ecae5-p101">Sessão persistente – Todas as alterações feitas na pasta de trabalho são persistentes (salvas). Este é o modo normal de operação.</span><span class="sxs-lookup"><span data-stu-id="ecae5-p101">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
+2. <span data-ttu-id="ecae5-p102">Sessão não persistente – As alterações feitas pela API não são salvas na localização de origem. Em vez disso, o servidor back-end do Excel mantém uma cópia temporária do arquivo que reflete as alterações feitas durante essa sessão de API específica. Quando a sessão do Excel expirar, as alterações serão perdidas. Esse modo é útil para aplicativos que precisam fazer uma análise ou obter os resultados de um cálculo ou de uma imagem de gráfico, mas não afeta o estado do documento.</span><span class="sxs-lookup"><span data-stu-id="ecae5-p102">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
 
-<span data-ttu-id="c2b9a-112">Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-112">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
+<span data-ttu-id="ecae5-112">Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`.</span><span class="sxs-lookup"><span data-stu-id="ecae5-112">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
 
-><span data-ttu-id="c2b9a-p103">**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-p103">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
+><span data-ttu-id="ecae5-p103">**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.</span><span class="sxs-lookup"><span data-stu-id="ecae5-p103">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
 
-## <a name="error-handling"></a><span data-ttu-id="c2b9a-116">Tratamento de erros</span><span class="sxs-lookup"><span data-stu-id="c2b9a-116">Error Handling</span></span>
+## <a name="error-handling"></a><span data-ttu-id="ecae5-116">Tratamento de erros</span><span class="sxs-lookup"><span data-stu-id="ecae5-116">Error Handling</span></span>
 
-<span data-ttu-id="c2b9a-117">Essa solicitação poderá, ocasionalmente, receber uma mensagem de erro HTTP 504.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-117">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="c2b9a-118">A resposta apropriada para esta mensagem de erro é repetir a solicitação.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-118">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="ecae5-117">Essa solicitação poderá, ocasionalmente, receber uma mensagem de erro HTTP 504.</span><span class="sxs-lookup"><span data-stu-id="ecae5-117">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="ecae5-118">A resposta apropriada para esta mensagem de erro é repetir a solicitação.</span><span class="sxs-lookup"><span data-stu-id="ecae5-118">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c2b9a-119">Permissões</span><span class="sxs-lookup"><span data-stu-id="c2b9a-119">Permissions</span></span>
-<span data-ttu-id="c2b9a-p105">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c2b9a-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ecae5-119">Permissões</span><span class="sxs-lookup"><span data-stu-id="ecae5-119">Permissions</span></span>
+<span data-ttu-id="ecae5-p105">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ecae5-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c2b9a-122">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c2b9a-122">Permission type</span></span>      | <span data-ttu-id="c2b9a-123">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c2b9a-123">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ecae5-122">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ecae5-122">Permission type</span></span>      | <span data-ttu-id="ecae5-123">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ecae5-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c2b9a-124">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c2b9a-124">Delegated (work or school account)</span></span> | <span data-ttu-id="c2b9a-125">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c2b9a-125">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c2b9a-126">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c2b9a-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c2b9a-127">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-127">Not supported.</span></span>    |
-|<span data-ttu-id="c2b9a-128">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c2b9a-128">Application</span></span> | <span data-ttu-id="c2b9a-129">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-129">Not supported.</span></span> |
+|<span data-ttu-id="ecae5-124">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ecae5-124">Delegated (work or school account)</span></span> | <span data-ttu-id="ecae5-125">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ecae5-125">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ecae5-126">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ecae5-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ecae5-127">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ecae5-127">Not supported.</span></span>    |
+|<span data-ttu-id="ecae5-128">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ecae5-128">Application</span></span> | <span data-ttu-id="ecae5-129">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ecae5-129">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c2b9a-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c2b9a-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ecae5-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ecae5-130">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/createSession
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c2b9a-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c2b9a-131">Request headers</span></span>
-| <span data-ttu-id="c2b9a-132">Nome</span><span class="sxs-lookup"><span data-stu-id="c2b9a-132">Name</span></span>       | <span data-ttu-id="c2b9a-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="c2b9a-133">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ecae5-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ecae5-131">Request headers</span></span>
+| <span data-ttu-id="ecae5-132">Nome</span><span class="sxs-lookup"><span data-stu-id="ecae5-132">Name</span></span>       | <span data-ttu-id="ecae5-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="ecae5-133">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="c2b9a-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="c2b9a-134">Authorization</span></span>  | <span data-ttu-id="c2b9a-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ecae5-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="ecae5-134">Authorization</span></span>  | <span data-ttu-id="ecae5-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ecae5-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c2b9a-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c2b9a-137">Request body</span></span>
-<span data-ttu-id="c2b9a-138">No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) .</span><span class="sxs-lookup"><span data-stu-id="c2b9a-138">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ecae5-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ecae5-137">Request body</span></span>
+<span data-ttu-id="ecae5-138">No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) .</span><span class="sxs-lookup"><span data-stu-id="ecae5-138">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c2b9a-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="c2b9a-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ecae5-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="ecae5-139">Response</span></span>
 
-<span data-ttu-id="c2b9a-140">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-140">If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.</span></span>
+<span data-ttu-id="ecae5-140">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ecae5-140">If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c2b9a-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c2b9a-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c2b9a-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c2b9a-142">Request</span></span>
-<span data-ttu-id="c2b9a-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ecae5-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ecae5-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ecae5-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ecae5-142">Request</span></span>
+<span data-ttu-id="ecae5-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ecae5-143">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c2b9a-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="c2b9a-144">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ecae5-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="ecae5-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_excel_session"
@@ -74,28 +74,28 @@ Content-length: 52
   "persistChanges": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c2b9a-145">C#</span><span class="sxs-lookup"><span data-stu-id="c2b9a-145">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ecae5-145">C#</span><span class="sxs-lookup"><span data-stu-id="ecae5-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-excel-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c2b9a-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="c2b9a-146">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ecae5-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ecae5-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c2b9a-147">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="c2b9a-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ecae5-147">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ecae5-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-excel-session-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="c2b9a-148">Java</span><span class="sxs-lookup"><span data-stu-id="c2b9a-148">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ecae5-148">Java</span><span class="sxs-lookup"><span data-stu-id="ecae5-148">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-excel-session-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="c2b9a-149">No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) .</span><span class="sxs-lookup"><span data-stu-id="c2b9a-149">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
+<span data-ttu-id="ecae5-149">No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) .</span><span class="sxs-lookup"><span data-stu-id="ecae5-149">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="c2b9a-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="c2b9a-150">Response</span></span>
-<span data-ttu-id="c2b9a-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c2b9a-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ecae5-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="ecae5-150">Response</span></span>
+<span data-ttu-id="ecae5-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ecae5-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

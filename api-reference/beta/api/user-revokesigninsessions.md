@@ -5,63 +5,63 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 824ec1b38b440fc36edafad7aeea8c2d39f9f772
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: 69ae5409e859430f7a3cd3e4b2522d82e5867ed7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245679"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362063"
 ---
-# <a name="user-revokesigninsessions"></a><span data-ttu-id="9762e-103">usuário: revokeSignInSessions</span><span class="sxs-lookup"><span data-stu-id="9762e-103">user: revokeSignInSessions</span></span>
+# <a name="user-revokesigninsessions"></a><span data-ttu-id="9e0fd-103">usuário: revokeSignInSessions</span><span class="sxs-lookup"><span data-stu-id="9e0fd-103">user: revokeSignInSessions</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9762e-104">Invalida todos os tokens de atualização emitidos para aplicativos para um usuário (bem como cookies de sessão no navegador do usuário), redefinindo a propriedade de usuário **signInSessionsValidFromDateTime** para a data e hora atual.</span><span class="sxs-lookup"><span data-stu-id="9762e-104">Invalidates all the refresh tokens issued to applications for a user (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time.</span></span> <span data-ttu-id="9762e-105">Normalmente, essa operação é executada (pelo usuário ou por um administrador) se o usuário tiver um dispositivo perdido ou roubado.</span><span class="sxs-lookup"><span data-stu-id="9762e-105">Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.</span></span> <span data-ttu-id="9762e-106">Essa operação impede o acesso aos dados da organização por meio de aplicativos no dispositivo solicitando que o usuário entre novamente em todos os aplicativos para os quais tenham sido consentidos anteriormente, independentemente do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="9762e-106">This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.</span></span>
+<span data-ttu-id="9e0fd-104">Invalida todos os tokens de atualização emitidos para aplicativos para um usuário (bem como cookies de sessão no navegador do usuário), redefinindo a propriedade de usuário **signInSessionsValidFromDateTime** para a data e hora atual.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-104">Invalidates all the refresh tokens issued to applications for a user (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time.</span></span> <span data-ttu-id="9e0fd-105">Normalmente, essa operação é executada (pelo usuário ou por um administrador) se o usuário tiver um dispositivo perdido ou roubado.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-105">Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.</span></span> <span data-ttu-id="9e0fd-106">Essa operação impede o acesso aos dados da organização por meio de aplicativos no dispositivo solicitando que o usuário entre novamente em todos os aplicativos para os quais tenham sido consentidos anteriormente, independentemente do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-106">This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.</span></span>
 
-<span data-ttu-id="9762e-107">Se o aplicativo tentar resgatar um token de acesso delegado para esse usuário usando um token de atualização invalidado, o aplicativo receberá um erro.</span><span class="sxs-lookup"><span data-stu-id="9762e-107">If the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.</span></span> <span data-ttu-id="9762e-108">Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização fazendo uma solicitação para o ponto de extremidade de autorização, que forçará o usuário a entrar.</span><span class="sxs-lookup"><span data-stu-id="9762e-108">If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.</span></span>
+<span data-ttu-id="9e0fd-107">Se o aplicativo tentar resgatar um token de acesso delegado para esse usuário usando um token de atualização invalidado, o aplicativo receberá um erro.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-107">If the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.</span></span> <span data-ttu-id="9e0fd-108">Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização fazendo uma solicitação para o ponto de extremidade de autorização, que forçará o usuário a entrar.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-108">If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="9762e-109">Após chamar o **revokeSignInSessions**, pode haver um pequeno atraso de alguns minutos antes de os tokens serem revogados.</span><span class="sxs-lookup"><span data-stu-id="9762e-109">After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.</span></span>
+><span data-ttu-id="9e0fd-109">Após chamar o **revokeSignInSessions**, pode haver um pequeno atraso de alguns minutos antes de os tokens serem revogados.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-109">After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9762e-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="9762e-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9e0fd-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="9e0fd-110">Permissions</span></span>
 
-<span data-ttu-id="9762e-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9762e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9e0fd-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9e0fd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9762e-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9762e-113">Permission type</span></span>                        | <span data-ttu-id="9762e-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9762e-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9e0fd-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9e0fd-113">Permission type</span></span>                        | <span data-ttu-id="9e0fd-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9e0fd-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9762e-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9762e-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="9762e-116">User. ReadWrite, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="9762e-116">User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="9762e-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9762e-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9762e-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9762e-118">Not supported.</span></span> |
-|<span data-ttu-id="9762e-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9762e-119">Application</span></span>                            | <span data-ttu-id="9762e-120">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9762e-120">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="9e0fd-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9e0fd-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="9e0fd-116">User. ReadWrite, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="9e0fd-116">User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="9e0fd-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9e0fd-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e0fd-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-118">Not supported.</span></span> |
+|<span data-ttu-id="9e0fd-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9e0fd-119">Application</span></span>                            | <span data-ttu-id="9e0fd-120">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9e0fd-120">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9762e-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9762e-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9e0fd-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9e0fd-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/revokeSignInSessions
 POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9762e-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9762e-122">Request headers</span></span>
-| <span data-ttu-id="9762e-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9762e-123">Header</span></span>       | <span data-ttu-id="9762e-124">Valor</span><span class="sxs-lookup"><span data-stu-id="9762e-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="9e0fd-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9e0fd-122">Request headers</span></span>
+| <span data-ttu-id="9e0fd-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9e0fd-123">Header</span></span>       | <span data-ttu-id="9e0fd-124">Valor</span><span class="sxs-lookup"><span data-stu-id="9e0fd-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9762e-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="9762e-125">Authorization</span></span>  | <span data-ttu-id="9762e-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9762e-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="9762e-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9762e-128">Content-Type</span></span>  | <span data-ttu-id="9762e-129">application/json</span><span class="sxs-lookup"><span data-stu-id="9762e-129">application/json</span></span>  |
+| <span data-ttu-id="9e0fd-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="9e0fd-125">Authorization</span></span>  | <span data-ttu-id="9e0fd-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9e0fd-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9e0fd-128">Content-Type</span></span>  | <span data-ttu-id="9e0fd-129">application/json</span><span class="sxs-lookup"><span data-stu-id="9e0fd-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9762e-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9762e-130">Request body</span></span>
-<span data-ttu-id="9762e-131">Esta operação não tem conteúdo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9762e-131">This operation has no request content.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9e0fd-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9e0fd-130">Request body</span></span>
+<span data-ttu-id="9e0fd-131">Esta operação não tem conteúdo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-131">This operation has no request content.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9762e-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="9762e-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9e0fd-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="9e0fd-132">Response</span></span>
 
-<span data-ttu-id="9762e-133">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="9762e-133">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="9e0fd-133">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-133">If successful, this method returns a `204 No Content` response code.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="9762e-134">Essa API tem um [problema conhecido](/graph/concepts/known-issues.md#revoke-sign-in-sessions-returns-wrong-HTTP-code).</span><span class="sxs-lookup"><span data-stu-id="9762e-134">This API has a [known issue](/graph/concepts/known-issues.md#revoke-sign-in-sessions-returns-wrong-HTTP-code).</span></span> <span data-ttu-id="9762e-135">Ele retorna um código de resposta HTTP diferente.</span><span class="sxs-lookup"><span data-stu-id="9762e-135">It returns a different HTTP response code.</span></span>
+><span data-ttu-id="9e0fd-134">Essa API tem um [problema conhecido](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code).</span><span class="sxs-lookup"><span data-stu-id="9e0fd-134">This API has a [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code).</span></span> <span data-ttu-id="9e0fd-135">Ele retorna um código de resposta HTTP diferente.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-135">It returns a different HTTP response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9762e-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9762e-136">Example</span></span>
-<span data-ttu-id="9762e-137">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="9762e-137">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="9e0fd-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9e0fd-136">Example</span></span>
+<span data-ttu-id="9e0fd-137">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="9e0fd-137">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9762e-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9762e-138">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="9e0fd-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9e0fd-138">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9762e-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="9762e-139">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="9e0fd-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="9e0fd-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_revokesigninsessionss"
@@ -69,26 +69,26 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```http
 POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9762e-140">C#</span><span class="sxs-lookup"><span data-stu-id="9762e-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9e0fd-140">C#</span><span class="sxs-lookup"><span data-stu-id="9e0fd-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9762e-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="9762e-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9e0fd-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9e0fd-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9762e-142">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="9762e-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9e0fd-142">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="9e0fd-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-revokesigninsessionss-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="9762e-143">Java</span><span class="sxs-lookup"><span data-stu-id="9762e-143">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="9e0fd-143">Java</span><span class="sxs-lookup"><span data-stu-id="9e0fd-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-revokesigninsessionss-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="9762e-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="9762e-144">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="9e0fd-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="9e0fd-144">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

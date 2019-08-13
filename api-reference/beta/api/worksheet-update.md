@@ -5,55 +5,55 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 33edcaedfdf034fddbe2485071a0dedd809430cb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7cf386783fe1fbb3a1720c3a8f44a21e616da800
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995801"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36361825"
 ---
-# <a name="update-worksheet"></a><span data-ttu-id="1c94f-103">Atualizar planilha</span><span class="sxs-lookup"><span data-stu-id="1c94f-103">Update worksheet</span></span>
+# <a name="update-worksheet"></a><span data-ttu-id="a9527-103">Atualizar planilha</span><span class="sxs-lookup"><span data-stu-id="a9527-103">Update worksheet</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1c94f-104">Atualize as propriedades do objeto de planilha.</span><span class="sxs-lookup"><span data-stu-id="1c94f-104">Update the properties of worksheet object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1c94f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1c94f-105">Permissions</span></span>
-<span data-ttu-id="1c94f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1c94f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a9527-104">Atualize as propriedades do objeto de planilha.</span><span class="sxs-lookup"><span data-stu-id="a9527-104">Update the properties of worksheet object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a9527-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a9527-105">Permissions</span></span>
+<span data-ttu-id="a9527-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a9527-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1c94f-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1c94f-108">Permission type</span></span>      | <span data-ttu-id="1c94f-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1c94f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a9527-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a9527-108">Permission type</span></span>      | <span data-ttu-id="a9527-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a9527-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1c94f-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1c94f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1c94f-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c94f-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="1c94f-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1c94f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c94f-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c94f-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="1c94f-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1c94f-114">Application</span></span> | <span data-ttu-id="1c94f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1c94f-115">Not supported.</span></span> |
+|<span data-ttu-id="a9527-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a9527-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a9527-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a9527-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a9527-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a9527-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9527-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a9527-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a9527-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a9527-114">Application</span></span> | <span data-ttu-id="a9527-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a9527-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1c94f-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1c94f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a9527-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a9527-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="1c94f-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="1c94f-117">Optional request headers</span></span>
-| <span data-ttu-id="1c94f-118">Name</span><span class="sxs-lookup"><span data-stu-id="1c94f-118">Name</span></span>       | <span data-ttu-id="1c94f-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="1c94f-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="a9527-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="a9527-117">Optional request headers</span></span>
+| <span data-ttu-id="a9527-118">Name</span><span class="sxs-lookup"><span data-stu-id="a9527-118">Name</span></span>       | <span data-ttu-id="a9527-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="a9527-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="1c94f-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="1c94f-120">Authorization</span></span>  | <span data-ttu-id="1c94f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1c94f-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1c94f-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="1c94f-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="1c94f-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="1c94f-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="a9527-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="a9527-120">Authorization</span></span>  | <span data-ttu-id="a9527-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a9527-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a9527-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a9527-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a9527-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="a9527-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1c94f-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1c94f-126">Request body</span></span>
-<span data-ttu-id="1c94f-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="1c94f-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a9527-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a9527-126">Request body</span></span>
+<span data-ttu-id="a9527-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="a9527-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="1c94f-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1c94f-130">Property</span></span>     | <span data-ttu-id="1c94f-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="1c94f-131">Type</span></span>   |<span data-ttu-id="1c94f-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="1c94f-132">Description</span></span>|
+| <span data-ttu-id="a9527-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a9527-130">Property</span></span>     | <span data-ttu-id="a9527-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="a9527-131">Type</span></span>   |<span data-ttu-id="a9527-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="a9527-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1c94f-133">name</span><span class="sxs-lookup"><span data-stu-id="1c94f-133">name</span></span>|<span data-ttu-id="1c94f-134">string</span><span class="sxs-lookup"><span data-stu-id="1c94f-134">string</span></span>|<span data-ttu-id="1c94f-135">O nome de exibição da planilha.</span><span class="sxs-lookup"><span data-stu-id="1c94f-135">The display name of the worksheet.</span></span>|
-|<span data-ttu-id="1c94f-136">position</span><span class="sxs-lookup"><span data-stu-id="1c94f-136">position</span></span>|<span data-ttu-id="1c94f-137">int</span><span class="sxs-lookup"><span data-stu-id="1c94f-137">int</span></span>|<span data-ttu-id="1c94f-138">A posição baseada em zero da planilha na pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="1c94f-138">The zero-based position of the worksheet within the workbook.</span></span>|
-|<span data-ttu-id="1c94f-139">visibilidade</span><span class="sxs-lookup"><span data-stu-id="1c94f-139">visibility</span></span>|<span data-ttu-id="1c94f-140">string</span><span class="sxs-lookup"><span data-stu-id="1c94f-140">string</span></span>|<span data-ttu-id="1c94f-p105">A visibilidade da planilha. Os valores possíveis são: `Visible`, `Hidden` e `VeryHidden`.</span><span class="sxs-lookup"><span data-stu-id="1c94f-p105">The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.</span></span>|
+|<span data-ttu-id="a9527-133">name</span><span class="sxs-lookup"><span data-stu-id="a9527-133">name</span></span>|<span data-ttu-id="a9527-134">string</span><span class="sxs-lookup"><span data-stu-id="a9527-134">string</span></span>|<span data-ttu-id="a9527-135">O nome de exibição da planilha.</span><span class="sxs-lookup"><span data-stu-id="a9527-135">The display name of the worksheet.</span></span>|
+|<span data-ttu-id="a9527-136">position</span><span class="sxs-lookup"><span data-stu-id="a9527-136">position</span></span>|<span data-ttu-id="a9527-137">int</span><span class="sxs-lookup"><span data-stu-id="a9527-137">int</span></span>|<span data-ttu-id="a9527-138">A posição baseada em zero da planilha na pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="a9527-138">The zero-based position of the worksheet within the workbook.</span></span>|
+|<span data-ttu-id="a9527-139">visibilidade</span><span class="sxs-lookup"><span data-stu-id="a9527-139">visibility</span></span>|<span data-ttu-id="a9527-140">string</span><span class="sxs-lookup"><span data-stu-id="a9527-140">string</span></span>|<span data-ttu-id="a9527-p105">A visibilidade da planilha. Os valores possíveis são: `Visible`, `Hidden` e `VeryHidden`.</span><span class="sxs-lookup"><span data-stu-id="a9527-p105">The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1c94f-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="1c94f-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a9527-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9527-143">Response</span></span>
 
-<span data-ttu-id="1c94f-144">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookWorksheet](../resources/workbookworksheet.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1c94f-144">If successful, this method returns a `200 OK` response code and updated [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1c94f-145">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1c94f-145">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1c94f-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1c94f-146">Request</span></span>
-<span data-ttu-id="1c94f-147">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1c94f-147">Here is an example of the request.</span></span>
+<span data-ttu-id="a9527-144">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookWorksheet](../resources/workbookworksheet.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a9527-144">If successful, this method returns a `200 OK` response code and updated [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a9527-145">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a9527-145">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a9527-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a9527-146">Request</span></span>
+<span data-ttu-id="a9527-147">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a9527-147">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1c94f-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c94f-148">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a9527-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="a9527-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_worksheet"
@@ -69,26 +69,26 @@ Content-length: 100
   "visibility": "visibility-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1c94f-149">C#</span><span class="sxs-lookup"><span data-stu-id="1c94f-149">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a9527-149">C#</span><span class="sxs-lookup"><span data-stu-id="a9527-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-worksheet-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1c94f-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="1c94f-150">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a9527-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a9527-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-worksheet-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1c94f-151">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1c94f-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a9527-151">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a9527-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-worksheet-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="1c94f-152">Java</span><span class="sxs-lookup"><span data-stu-id="1c94f-152">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="a9527-152">Java</span><span class="sxs-lookup"><span data-stu-id="a9527-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-worksheet-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="1c94f-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="1c94f-153">Response</span></span>
-<span data-ttu-id="1c94f-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1c94f-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a9527-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9527-153">Response</span></span>
+<span data-ttu-id="a9527-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a9527-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

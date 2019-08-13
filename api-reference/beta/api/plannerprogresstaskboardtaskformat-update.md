@@ -5,56 +5,56 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d49cbf230c852c7e76f4cb8f7a9fefec182cc744
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70eb5ae1c7e9188c837c6afad05a6a751d02975b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979005"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36361454"
 ---
-# <a name="update-plannerprogresstaskboardtaskformat"></a><span data-ttu-id="644fd-103">Atualizar plannerProgressTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="644fd-103">Update plannerProgressTaskBoardTaskFormat</span></span>
+# <a name="update-plannerprogresstaskboardtaskformat"></a><span data-ttu-id="d3bca-103">Atualizar plannerProgressTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="d3bca-103">Update plannerProgressTaskBoardTaskFormat</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="644fd-104">Atualize as propriedades do objeto **plannerProgressTaskBoardTaskFormat** .</span><span class="sxs-lookup"><span data-stu-id="644fd-104">Update the properties of **plannerProgressTaskBoardTaskFormat** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="644fd-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="644fd-105">Permissions</span></span>
-<span data-ttu-id="644fd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="644fd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d3bca-104">Atualize as propriedades do objeto **plannerProgressTaskBoardTaskFormat** .</span><span class="sxs-lookup"><span data-stu-id="d3bca-104">Update the properties of **plannerProgressTaskBoardTaskFormat** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d3bca-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d3bca-105">Permissions</span></span>
+<span data-ttu-id="d3bca-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d3bca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="644fd-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="644fd-108">Permission type</span></span>      | <span data-ttu-id="644fd-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="644fd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d3bca-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d3bca-108">Permission type</span></span>      | <span data-ttu-id="d3bca-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d3bca-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="644fd-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="644fd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="644fd-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="644fd-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="644fd-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="644fd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="644fd-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="644fd-113">Not supported.</span></span>    |
-|<span data-ttu-id="644fd-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="644fd-114">Application</span></span> | <span data-ttu-id="644fd-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="644fd-115">Not supported.</span></span> |
+|<span data-ttu-id="d3bca-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d3bca-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d3bca-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d3bca-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d3bca-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d3bca-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d3bca-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d3bca-113">Not supported.</span></span>    |
+|<span data-ttu-id="d3bca-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d3bca-114">Application</span></span> | <span data-ttu-id="d3bca-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d3bca-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="644fd-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="644fd-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d3bca-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d3bca-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>/progressTaskBoardFormat
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="644fd-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="644fd-117">Optional request headers</span></span>
-| <span data-ttu-id="644fd-118">Nome</span><span class="sxs-lookup"><span data-stu-id="644fd-118">Name</span></span>       | <span data-ttu-id="644fd-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="644fd-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="d3bca-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="d3bca-117">Optional request headers</span></span>
+| <span data-ttu-id="d3bca-118">Nome</span><span class="sxs-lookup"><span data-stu-id="d3bca-118">Name</span></span>       | <span data-ttu-id="d3bca-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3bca-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="644fd-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="644fd-120">Authorization</span></span>  | <span data-ttu-id="644fd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="644fd-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="644fd-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="644fd-123">If-Match</span></span>  | <span data-ttu-id="644fd-124">Último valor de ETag conhecido para o **plannerProgressTaskBoardTaskFormat** a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="644fd-124">Last known ETag value for the **plannerProgressTaskBoardTaskFormat** to be updated.</span></span> <span data-ttu-id="644fd-125">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="644fd-125">Required.</span></span>|
+| <span data-ttu-id="d3bca-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="d3bca-120">Authorization</span></span>  | <span data-ttu-id="d3bca-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d3bca-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d3bca-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="d3bca-123">If-Match</span></span>  | <span data-ttu-id="d3bca-124">Último valor de ETag conhecido para o **plannerProgressTaskBoardTaskFormat** a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="d3bca-124">Last known ETag value for the **plannerProgressTaskBoardTaskFormat** to be updated.</span></span> <span data-ttu-id="d3bca-125">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d3bca-125">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="644fd-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="644fd-126">Request body</span></span>
-<span data-ttu-id="644fd-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="644fd-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d3bca-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d3bca-126">Request body</span></span>
+<span data-ttu-id="d3bca-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="d3bca-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="644fd-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="644fd-130">Property</span></span>     | <span data-ttu-id="644fd-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="644fd-131">Type</span></span>   |<span data-ttu-id="644fd-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="644fd-132">Description</span></span>|
+| <span data-ttu-id="d3bca-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d3bca-130">Property</span></span>     | <span data-ttu-id="d3bca-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3bca-131">Type</span></span>   |<span data-ttu-id="d3bca-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3bca-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="644fd-133">orderHint</span><span class="sxs-lookup"><span data-stu-id="644fd-133">orderHint</span></span>|<span data-ttu-id="644fd-134">String</span><span class="sxs-lookup"><span data-stu-id="644fd-134">String</span></span>|<span data-ttu-id="644fd-135">O valor de dica usado para ordenar a tarefa no modo de exibição de progresso do quadro de tarefas.</span><span class="sxs-lookup"><span data-stu-id="644fd-135">Hint value used to order the task on the Progress view of the Task Board.</span></span> <span data-ttu-id="644fd-136">O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="644fd-136">The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="d3bca-133">orderHint</span><span class="sxs-lookup"><span data-stu-id="d3bca-133">orderHint</span></span>|<span data-ttu-id="d3bca-134">String</span><span class="sxs-lookup"><span data-stu-id="d3bca-134">String</span></span>|<span data-ttu-id="d3bca-135">O valor de dica usado para ordenar a tarefa no modo de exibição de progresso do quadro de tarefas.</span><span class="sxs-lookup"><span data-stu-id="d3bca-135">Hint value used to order the task on the Progress view of the Task Board.</span></span> <span data-ttu-id="d3bca-136">O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="d3bca-136">The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="644fd-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="644fd-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d3bca-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="d3bca-137">Response</span></span>
 
-<span data-ttu-id="644fd-138">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="644fd-138">If successful, this method returns a `200 OK` response code and updated [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.</span></span>
+<span data-ttu-id="d3bca-138">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d3bca-138">If successful, this method returns a `200 OK` response code and updated [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.</span></span>
 
-<span data-ttu-id="644fd-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="644fd-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="d3bca-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="d3bca-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="644fd-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="644fd-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="644fd-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="644fd-143">Request</span></span>
-<span data-ttu-id="644fd-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="644fd-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d3bca-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d3bca-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d3bca-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d3bca-143">Request</span></span>
+<span data-ttu-id="d3bca-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d3bca-144">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="644fd-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="644fd-145">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d3bca-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="d3bca-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannerprogresstaskboardtaskformat"
@@ -69,26 +69,26 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   "orderHint": "A6673H Ejkl!"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="644fd-146">C#</span><span class="sxs-lookup"><span data-stu-id="644fd-146">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d3bca-146">C#</span><span class="sxs-lookup"><span data-stu-id="d3bca-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannerprogresstaskboardtaskformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="644fd-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="644fd-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d3bca-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d3bca-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannerprogresstaskboardtaskformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="644fd-148">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="644fd-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d3bca-148">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="d3bca-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerprogresstaskboardtaskformat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="644fd-149">Java</span><span class="sxs-lookup"><span data-stu-id="644fd-149">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="d3bca-149">Java</span><span class="sxs-lookup"><span data-stu-id="d3bca-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-plannerprogresstaskboardtaskformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="644fd-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="644fd-150">Response</span></span>
-<span data-ttu-id="644fd-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="644fd-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d3bca-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="d3bca-150">Response</span></span>
+<span data-ttu-id="d3bca-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d3bca-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

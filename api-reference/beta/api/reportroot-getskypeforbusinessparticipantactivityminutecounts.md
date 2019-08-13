@@ -5,32 +5,32 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: e2a42ebb906046dd0a59ebb08d810c749a9e0da6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6f98380586354056168530333468356791425b20
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987989"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36359125"
 ---
-# <a name="reportroot-getskypeforbusinessparticipantactivityminutecounts"></a><span data-ttu-id="6f528-104">reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts</span><span class="sxs-lookup"><span data-stu-id="6f528-104">reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts</span></span>
+# <a name="reportroot-getskypeforbusinessparticipantactivityminutecounts"></a><span data-ttu-id="44f07-104">reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts</span><span class="sxs-lookup"><span data-stu-id="44f07-104">reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6f528-105">Obtenha as tendências de uso da duração em minutos e o tipo de sessões de conferência das quais os usuários de sua organização participaram.</span><span class="sxs-lookup"><span data-stu-id="6f528-105">Get usage trends on the length in minutes and type of conference sessions that users from your organization participated in.</span></span> <span data-ttu-id="6f528-106">Tipos de sessões de conferência incluem áudio/vídeo.</span><span class="sxs-lookup"><span data-stu-id="6f528-106">Types of conference sessions include audio/video.</span></span>
+<span data-ttu-id="44f07-105">Obtenha as tendências de uso da duração em minutos e o tipo de sessões de conferência das quais os usuários de sua organização participaram.</span><span class="sxs-lookup"><span data-stu-id="44f07-105">Get usage trends on the length in minutes and type of conference sessions that users from your organization participated in.</span></span> <span data-ttu-id="44f07-106">Tipos de sessões de conferência incluem áudio/vídeo.</span><span class="sxs-lookup"><span data-stu-id="44f07-106">Types of conference sessions include audio/video.</span></span>
 
-> <span data-ttu-id="6f528-107">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Atividade do participante da conferência do Skype for Business](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).</span><span class="sxs-lookup"><span data-stu-id="6f528-107">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).</span></span>
+> <span data-ttu-id="44f07-107">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Atividade do participante da conferência do Skype for Business](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).</span><span class="sxs-lookup"><span data-stu-id="44f07-107">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6f528-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="6f528-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="44f07-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="44f07-108">Permissions</span></span>
 
-<span data-ttu-id="6f528-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6f528-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="44f07-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44f07-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="6f528-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6f528-111">Permission type</span></span>                        | <span data-ttu-id="6f528-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6f528-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="44f07-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="44f07-111">Permission type</span></span>                        | <span data-ttu-id="44f07-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="44f07-112">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="6f528-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6f528-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="6f528-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="6f528-114">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="6f528-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6f528-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6f528-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6f528-116">Not supported.</span></span>                           |
-| <span data-ttu-id="6f528-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6f528-117">Application</span></span>                            | <span data-ttu-id="6f528-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="6f528-118">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="44f07-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="44f07-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="44f07-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="44f07-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="44f07-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="44f07-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="44f07-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="44f07-116">Not supported.</span></span>                           |
+| <span data-ttu-id="44f07-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="44f07-117">Application</span></span>                            | <span data-ttu-id="44f07-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="44f07-118">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="6f528-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6f528-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="44f07-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="44f07-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -38,53 +38,53 @@ ms.locfileid: "35987989"
 GET /reports/getSkypeForBusinessParticipantActivityMinuteCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="6f528-120">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="6f528-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="44f07-120">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="44f07-120">Function parameters</span></span>
 
-<span data-ttu-id="6f528-121">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="6f528-121">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="44f07-121">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="44f07-121">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="6f528-122">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="6f528-122">Parameter</span></span> | <span data-ttu-id="6f528-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="6f528-123">Type</span></span>   | <span data-ttu-id="6f528-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f528-124">Description</span></span>                              |
+| <span data-ttu-id="44f07-122">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="44f07-122">Parameter</span></span> | <span data-ttu-id="44f07-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="44f07-123">Type</span></span>   | <span data-ttu-id="44f07-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="44f07-124">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="6f528-125">ponto</span><span class="sxs-lookup"><span data-stu-id="6f528-125">period</span></span>    | <span data-ttu-id="6f528-126">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6f528-126">string</span></span> | <span data-ttu-id="6f528-127">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="6f528-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="6f528-128">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="6f528-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="6f528-129">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="6f528-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="6f528-130">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6f528-130">Required.</span></span> |
+| <span data-ttu-id="44f07-125">ponto</span><span class="sxs-lookup"><span data-stu-id="44f07-125">period</span></span>    | <span data-ttu-id="44f07-126">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="44f07-126">string</span></span> | <span data-ttu-id="44f07-127">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="44f07-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="44f07-128">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="44f07-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="44f07-129">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="44f07-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="44f07-130">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="44f07-130">Required.</span></span> |
 
-<span data-ttu-id="6f528-131">Este método dá suporte `$format` ao [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6f528-131">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="6f528-132">O tipo de saída padrão é text/csv.</span><span class="sxs-lookup"><span data-stu-id="6f528-132">The default output type is text/csv.</span></span> <span data-ttu-id="6f528-133">No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="6f528-133">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="44f07-131">Este método dá suporte `$format` ao [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="44f07-131">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="44f07-132">O tipo de saída padrão é text/csv.</span><span class="sxs-lookup"><span data-stu-id="44f07-132">The default output type is text/csv.</span></span> <span data-ttu-id="44f07-133">No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="44f07-133">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6f528-134">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6f528-134">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="44f07-134">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="44f07-134">Request headers</span></span>
 
-| <span data-ttu-id="6f528-135">Nome</span><span class="sxs-lookup"><span data-stu-id="6f528-135">Name</span></span>          | <span data-ttu-id="6f528-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f528-136">Description</span></span>               |
+| <span data-ttu-id="44f07-135">Nome</span><span class="sxs-lookup"><span data-stu-id="44f07-135">Name</span></span>          | <span data-ttu-id="44f07-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="44f07-136">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="6f528-137">Autorização</span><span class="sxs-lookup"><span data-stu-id="6f528-137">Authorization</span></span> | <span data-ttu-id="6f528-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6f528-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="44f07-137">Autorização</span><span class="sxs-lookup"><span data-stu-id="44f07-137">Authorization</span></span> | <span data-ttu-id="44f07-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="44f07-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="6f528-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f528-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="44f07-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="44f07-140">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="6f528-141">CSV</span><span class="sxs-lookup"><span data-stu-id="6f528-141">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="44f07-141">CSV</span><span class="sxs-lookup"><span data-stu-id="44f07-141">CSV</span></span>
 
-<span data-ttu-id="6f528-142">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="6f528-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="6f528-143">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="6f528-143">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="44f07-142">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="44f07-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="44f07-143">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="44f07-143">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="6f528-144">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="6f528-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="44f07-144">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="44f07-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="6f528-145">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="6f528-145">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="44f07-145">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="44f07-145">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="6f528-146">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="6f528-146">Report Refresh Date</span></span>
-- <span data-ttu-id="6f528-147">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="6f528-147">Report Date</span></span>
-- <span data-ttu-id="6f528-148">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="6f528-148">Report Period</span></span>
-- <span data-ttu-id="6f528-149">Áudio/vídeo</span><span class="sxs-lookup"><span data-stu-id="6f528-149">Audio/Video</span></span>
+- <span data-ttu-id="44f07-146">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="44f07-146">Report Refresh Date</span></span>
+- <span data-ttu-id="44f07-147">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="44f07-147">Report Date</span></span>
+- <span data-ttu-id="44f07-148">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="44f07-148">Report Period</span></span>
+- <span data-ttu-id="44f07-149">Áudio/vídeo</span><span class="sxs-lookup"><span data-stu-id="44f07-149">Audio/Video</span></span>
 
-### <a name="json"></a><span data-ttu-id="6f528-150">JSON</span><span class="sxs-lookup"><span data-stu-id="6f528-150">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="44f07-150">JSON</span><span class="sxs-lookup"><span data-stu-id="44f07-150">JSON</span></span>
 
-<span data-ttu-id="6f528-151">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **[skypeForBusinessParticipantActivityMinuteCounts](../resources/skypeforbusinessparticipantactivityminutecounts.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6f528-151">If successful, this method returns a `200 OK` response code and a **[skypeForBusinessParticipantActivityMinuteCounts](../resources/skypeforbusinessparticipantactivityminutecounts.md)** object in the response body.</span></span>
+<span data-ttu-id="44f07-151">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **[skypeForBusinessParticipantActivityMinuteCounts](../resources/skypeforbusinessparticipantactivityminutecounts.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="44f07-151">If successful, this method returns a `200 OK` response code and a **[skypeForBusinessParticipantActivityMinuteCounts](../resources/skypeforbusinessparticipantactivityminutecounts.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6f528-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6f528-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="44f07-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="44f07-152">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="6f528-153">CSV</span><span class="sxs-lookup"><span data-stu-id="6f528-153">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="44f07-153">CSV</span><span class="sxs-lookup"><span data-stu-id="44f07-153">CSV</span></span>
 
-<span data-ttu-id="6f528-154">Veja a seguir um exemplo que gera CSV.</span><span class="sxs-lookup"><span data-stu-id="6f528-154">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="44f07-154">Veja a seguir um exemplo que gera CSV.</span><span class="sxs-lookup"><span data-stu-id="44f07-154">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6f528-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6f528-155">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="44f07-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="44f07-155">Request</span></span>
 
-<span data-ttu-id="6f528-156">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6f528-156">The following is an example of the request.</span></span>
+<span data-ttu-id="44f07-156">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="44f07-156">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6f528-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="6f528-157">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="44f07-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="44f07-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getskypeforbusinessparticipantactivityminutecounts_csv"
@@ -93,28 +93,28 @@ GET /reports/getSkypeForBusinessParticipantActivityMinuteCounts(period='{period_
 ```http
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessParticipantActivityMinuteCounts(period='D7')?$format=text/csv
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6f528-158">C#</span><span class="sxs-lookup"><span data-stu-id="6f528-158">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="44f07-158">C#</span><span class="sxs-lookup"><span data-stu-id="44f07-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getskypeforbusinessparticipantactivityminutecounts-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6f528-159">Javascript</span><span class="sxs-lookup"><span data-stu-id="6f528-159">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="44f07-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="44f07-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinessparticipantactivityminutecounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6f528-160">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6f528-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="44f07-160">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="44f07-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessparticipantactivityminutecounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="6f528-161">Java</span><span class="sxs-lookup"><span data-stu-id="6f528-161">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="44f07-161">Java</span><span class="sxs-lookup"><span data-stu-id="44f07-161">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getskypeforbusinessparticipantactivityminutecounts-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="6f528-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f528-162">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="44f07-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="44f07-162">Response</span></span>
 
-<span data-ttu-id="6f528-163">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6f528-163">The following is an example of the response.</span></span>
+<span data-ttu-id="44f07-163">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="44f07-163">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -124,7 +124,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="6f528-164">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="6f528-164">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="44f07-164">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="44f07-164">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -139,16 +139,16 @@ Content-Type: application/octet-stream
 Report Refresh Date,Report Date,Report Period,Audio/Video
 ```
 
-### <a name="json"></a><span data-ttu-id="6f528-165">JSON</span><span class="sxs-lookup"><span data-stu-id="6f528-165">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="44f07-165">JSON</span><span class="sxs-lookup"><span data-stu-id="44f07-165">JSON</span></span>
 
-<span data-ttu-id="6f528-166">Veja a seguir um exemplo que retorna JSON.</span><span class="sxs-lookup"><span data-stu-id="6f528-166">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="44f07-166">Veja a seguir um exemplo que retorna JSON.</span><span class="sxs-lookup"><span data-stu-id="44f07-166">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6f528-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6f528-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="44f07-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="44f07-167">Request</span></span>
 
-<span data-ttu-id="6f528-168">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6f528-168">The following is an example of the request.</span></span>
+<span data-ttu-id="44f07-168">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="44f07-168">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6f528-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="6f528-169">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="44f07-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="44f07-169">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getskypeforbusinessparticipantactivityminutecounts_json"
@@ -157,30 +157,30 @@ Report Refresh Date,Report Date,Report Period,Audio/Video
 ```http
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessParticipantActivityMinuteCounts(period='D7')?$format=application/json
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6f528-170">C#</span><span class="sxs-lookup"><span data-stu-id="6f528-170">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="44f07-170">C#</span><span class="sxs-lookup"><span data-stu-id="44f07-170">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getskypeforbusinessparticipantactivityminutecounts-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6f528-171">Javascript</span><span class="sxs-lookup"><span data-stu-id="6f528-171">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="44f07-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="44f07-171">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinessparticipantactivityminutecounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6f528-172">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6f528-172">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="44f07-172">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="44f07-172">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessparticipantactivityminutecounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="6f528-173">Java</span><span class="sxs-lookup"><span data-stu-id="6f528-173">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="44f07-173">Java</span><span class="sxs-lookup"><span data-stu-id="44f07-173">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getskypeforbusinessparticipantactivityminutecounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="6f528-174">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f528-174">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="44f07-174">Resposta</span><span class="sxs-lookup"><span data-stu-id="44f07-174">Response</span></span>
 
-<span data-ttu-id="6f528-175">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6f528-175">The following is an example of the response.</span></span>
+<span data-ttu-id="44f07-175">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="44f07-175">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="6f528-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6f528-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="44f07-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="44f07-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
