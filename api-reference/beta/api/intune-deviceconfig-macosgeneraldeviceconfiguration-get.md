@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d9bde18a37f153d823e04bd3bca2d7e416961fa5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba3e5ab1906b5a0f506269eab93391bec52b42aa
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947267"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315313"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>Get macOSGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3471
+Content-Length: 3517
 
 {
   "value": {
@@ -160,10 +160,12 @@ Content-Length: 3471
     "classroomAppForceUnpromptedScreenObservation": true,
     "classroomForceAutomaticallyJoinClasses": true,
     "classroomForceRequestPermissionToLeaveClasses": true,
-    "classroomForceUnpromptedAppAndDeviceLock": true
+    "classroomForceUnpromptedAppAndDeviceLock": true,
+    "iCloudBlockActivityContinuation": true
   }
 }
 ```
+
 
 
 

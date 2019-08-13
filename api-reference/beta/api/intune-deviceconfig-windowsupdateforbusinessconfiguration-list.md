@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 27245bdbcb422e7ec0f4da2be4cacae94c74bbf6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e9890dce3599f749800d098a9defd4807af22522
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986264"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313661"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Listar windowsUpdateForBusinessConfigurations
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3149
+Content-Length: 3329
 
 {
   "value": [
@@ -130,6 +130,10 @@ Content-Length: 3149
       "engagedRestartDeadlineInDays": 12,
       "engagedRestartSnoozeScheduleInDays": 2,
       "engagedRestartTransitionScheduleInDays": 6,
+      "deadlineForFeatureUpdatesInDays": 15,
+      "deadlineForQualityUpdatesInDays": 15,
+      "deadlineGracePeriodInDays": 9,
+      "postponeRebootUntilAfterDeadline": true,
       "autoRestartNotificationDismissal": "automatic",
       "scheduleRestartWarningInHours": 13,
       "scheduleImminentRestartWarningInMinutes": 7,
@@ -140,6 +144,7 @@ Content-Length: 3149
   ]
 }
 ```
+
 
 
 

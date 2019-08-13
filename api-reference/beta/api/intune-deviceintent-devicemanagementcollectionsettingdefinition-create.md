@@ -4,12 +4,13 @@ description: Criar um novo objeto deviceManagementCollectionSettingDefinition.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 161a0d432fcd1c8401fe81b36338e0debef12019
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9039289db3f3f8e33ec2e091791c0a8a40e20265
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960892"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313479"
 ---
 # <a name="create-devicemanagementcollectionsettingdefinition"></a>Criar deviceManagementCollectionSettingDefinition
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -145,6 +146,7 @@ Content-Length: 844
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
+
 
 
 

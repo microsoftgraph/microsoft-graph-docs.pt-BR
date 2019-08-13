@@ -4,12 +4,13 @@ description: A linha de base de segurança por categoria Resumo de estado de con
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00735cb51952ec9cc8104a1d2f142d74cb773e05
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 84e6768f08c579af091b25c5ed75196492bd61bd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983446"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319367"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>tipo de recurso securityBaselineCategoryStateSummary
 
@@ -67,8 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
-
 
 
 

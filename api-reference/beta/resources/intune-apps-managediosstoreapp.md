@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4c12e296be47ffb35857ce72adfed6d6cdba989
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: efd3f925042fcb9c4ddab10105bbaf1fccb5377e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005272"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308250"
 ---
 # <a name="managediosstoreapp-resource-type"></a>managedIOSStoreApp resource type
 
@@ -124,8 +124,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
-
 
 
 
