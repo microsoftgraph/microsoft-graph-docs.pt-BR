@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 29363dde998fa641bddbaee6e436ed70458f4975
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b03bd3a29afc401c63ce3fbe20f3a05a3bfe56d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022058"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327227"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 
@@ -31,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -73,6 +72,8 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 Este é um exemplo de solicitação.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -86,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/reports/getMailboxUsageMailboxCounts(period
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getmailboxusagemailboxcounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmailboxusagemailboxcounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

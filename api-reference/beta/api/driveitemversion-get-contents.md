@@ -6,12 +6,12 @@ title: Baixar uma versão anterior
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c7ed8f8100a7910a79569a7e017f37d3d636a26c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f95b9748d60fcb64d3b011aad85b4063c3d37d0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956949"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320921"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Baixar o conteúdo de um recurso de DriveItemVersion (prévia)
 
@@ -69,7 +69,7 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-version-contents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-version-contents-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

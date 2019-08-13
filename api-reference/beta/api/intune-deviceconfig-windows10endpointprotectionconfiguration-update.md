@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f28c883a33271878cda8790e5358b8b22b50c5e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 263531814d9dd71b3cc3b9e5436aec8e55897f16
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976884"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314585"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Atualizar windows10EndpointProtectionConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -95,7 +95,6 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Esse direito de usuário determina quais usuários têm permissão para desligar um computador de um local remoto na rede. O mau uso desse direito de usuário pode resultar em uma negação de serviço. Há suporte apenas para os Estados não configurados e permitidos.|
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Esse direito de usuário determina quais usuários podem ignorar permissões de arquivo, diretório, registro e outros objetos persistentes ao restaurar backups de arquivos e diretórios e determina quais usuários podem definir qualquer entidade de segurança válida como o proprietário de um objeto. Há suporte apenas para os Estados não configurados e permitidos.|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Esse direito de usuário determina quais usuários podem assumir a propriedade de qualquer objeto protegível no sistema, incluindo objetos do Active Directory, arquivos e pastas, impressoras, chaves do registro, processos e threads. Há suporte apenas para os Estados não configurados e permitidos.|
-|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Essa configuração de segurança determina quais contas de serviço são impedidas de registrar um processo como um serviço. Observação: esta configuração de segurança não se aplica às contas de sistema, serviço local ou serviço de rede. Só há suporte para o estado bloqueado.|
 |xboxServicesEnableXboxGameSaveTask|Booliano|Essa configuração determina se o salvamento de jogos do Xbox está habilitado (1) ou desabilitado (0).|
 |xboxServicesAccessoryManagementServiceStartupMode|[instarttype](../resources/intune-deviceconfig-servicestarttype.md)|Esta configuração determina se o tipo de início do serviço de gerenciamento de acessórios é automático (2), manual (3), desabilitado (4). Padrão: manual. Os valores possíveis são: `manual`, `automatic`, `disabled`.|
 |xboxServicesLiveAuthManagerServiceStartupMode|[instarttype](../resources/intune-deviceconfig-servicestarttype.md)|Essa configuração determina se o tipo de início do serviço do Live Authentication Manager é automático (2), manual (3), desabilitado (4). Padrão: manual. Os valores possíveis são: `manual`, `automatic`, `disabled`.|
@@ -255,7 +254,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 28958
+Content-length: 28536
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -665,18 +664,6 @@ Content-length: 28958
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "blocked",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "Name value",
-        "description": "Description value",
-        "securityIdentifier": "Security Identifier value"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
   "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -954,7 +941,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 29130
+Content-Length: 28708
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1367,18 +1354,6 @@ Content-Length: 29130
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "blocked",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "Name value",
-        "description": "Description value",
-        "securityIdentifier": "Security Identifier value"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
   "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -1650,6 +1625,7 @@ Content-Length: 29130
   }
 }
 ```
+
 
 
 

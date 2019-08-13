@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ddbe9527fa75be7621b275a52dcccfe00924cf7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 18c6ea554bb22ee31ff6ae2e0d596343ad42532c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000106"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337612"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>tipo de enumeração windowsVpnConnectionType
 
@@ -27,8 +27,6 @@ Tipo de conexão VPN do Windows.
 |f5EdgeClient|1|Cliente de borda F5.|
 |dellSonicWallMobileConnect|duas|Conexão móvel Dell SonicWALL.|
 |checkPointCapsuleVpn|3D|Verificar VPN de cápsula de ponto.|
-
-
 
 
 

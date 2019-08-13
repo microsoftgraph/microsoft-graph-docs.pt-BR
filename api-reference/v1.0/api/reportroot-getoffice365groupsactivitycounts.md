@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 43cbfe0d7a7a1e8ea76bb446704a4556a9f072c5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c602533ed489ea1a040dfdcbb3b242a7232aa41b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025029"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324698"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 
@@ -31,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -75,6 +74,8 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 Este é um exemplo de solicitação.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -88,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityCounts(pe
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365groupsactivitycounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365groupsactivitycounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

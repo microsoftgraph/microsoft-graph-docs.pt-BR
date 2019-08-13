@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 146b4fa425b5a6e2a920f3dac8d4f522205bfe26
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 280e1e6d834cd7a9692c75d01434f97f9cba740c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958855"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322202"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Atualizar officeClientConfigurationAssignment
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|* * TODO: determinar escopos * *|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|* * TODO: determinar escopos * *|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -90,6 +90,9 @@ Content-Length: 221
   }
 }
 ```
+
+
+
 
 
 

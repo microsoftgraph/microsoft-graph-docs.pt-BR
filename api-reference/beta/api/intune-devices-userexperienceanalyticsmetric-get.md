@@ -1,33 +1,33 @@
 ---
-title: Obter enrollmentProfile
-description: Leia as propriedades e as relações do objeto enrollmentProfile.
+title: Obter userExperienceAnalyticsMetric
+description: Leia as propriedades e as relações do objeto userExperienceAnalyticsMetric.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f457e60e0e46b528c89f9a820e24348b3c0f9149
+ms.openlocfilehash: e7f60c3e09d22131f2948420b0a85f41c386243c
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309545"
+ms.locfileid: "36311591"
 ---
-# <a name="get-enrollmentprofile"></a>Obter enrollmentProfile
+# <a name="get-userexperienceanalyticsmetric"></a>Obter userExperienceAnalyticsMetric
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .
+Leia as propriedades e as relações do objeto [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
+GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues/{userExperienceAnalyticsMetricId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -51,14 +51,14 @@ Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsof
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues/{userExperienceAnalyticsMetricId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -66,18 +66,15 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 454
+Content-Length: 265
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.enrollmentProfile",
-    "id": "012d8d5e-8d5e-012d-5e8d-2d015e8d2d01",
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
+    "id": "1371822e-822e-1371-2e82-71132e827113",
     "displayName": "Display Name value",
-    "description": "Description value",
-    "requiresUserAuthentication": true,
-    "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
-    "enableAuthenticationViaCompanyPortal": true,
-    "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
+    "value": "<Unknown Primitive Type Edm.Double>",
+    "unit": "Unit value"
   }
 }
 ```

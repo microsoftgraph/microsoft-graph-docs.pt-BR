@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: fc9cc937278889242acca1efab49ca58d642ad23
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0111cb3510187801fd2dea5905a91ee3225cf616
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975722"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320258"
 ---
 # <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
 
@@ -31,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -85,6 +84,8 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 Este é um exemplo de solicitação.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -98,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(peri
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getyammerdeviceusageuserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getyammerdeviceusageuserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

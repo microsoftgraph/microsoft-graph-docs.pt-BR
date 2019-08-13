@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bda197e1f0ce619fe0830da38a8b1b5b5df45c0f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82fab22abe760b22f7574e85c9a2bf77cc8bc45a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996116"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325862"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -89,9 +89,14 @@ Como o recurso de **usuário** oferece suporte a [extensões](/graph/extensibili
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+
+### <a name="example-1-update-properties-of-the-signed-in-user"></a>Exemplo 1: atualizar propriedades do usuário conectado
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -101,35 +106,19 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/me
 Content-type: application/json
-Content-length: 491
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value"
+  "officeLocation": "city-value"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -143,8 +132,43 @@ Content-length: 491
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+#### <a name="response"></a>Resposta
+
+O exemplo a seguir mostra a resposta.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-properties-of-the-specified-user"></a>Exemplo 2: atualizar propriedades do usuário especificado
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_other_user"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "officeLocation": "city-value"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+O exemplo a seguir mostra a resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
