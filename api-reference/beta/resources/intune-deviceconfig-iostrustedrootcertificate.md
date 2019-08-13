@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a18e5c5f4ffe9c6330d44a5fe784afa5275e72b5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c1af75a156d4fe909fc0708ac20205a4e593e6b6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970441"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356820"
 ---
 # <a name="iostrustedrootcertificate-resource-type"></a>tipo de recurso iosTrustedRootCertificate
 
@@ -106,8 +106,6 @@ Veja a seguir uma representação JSON do recurso.
   "certFileName": "String"
 }
 ```
-
-
 
 
 

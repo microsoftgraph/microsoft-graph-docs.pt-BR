@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 90f105caa1edfb30b23cb7a690f6a2c5c93dfc5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8d71800e39f254b7dfeddcc4d7f56b1a8c63a178
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993806"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351634"
 ---
 # <a name="get-userpfxcertificate"></a>Obter userPFXCertificate
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegado (conta corporativa ou de estudante)|* * TODO: determinar escopos * *|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|* * TODO: Determine escopos ao apponly * *|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -87,6 +87,7 @@ Content-Length: 742
   }
 }
 ```
+
 
 
 
