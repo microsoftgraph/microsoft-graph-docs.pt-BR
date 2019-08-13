@@ -5,60 +5,60 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e38f1a1347d5621c4e72854b421524d8948eb29b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6f3b37128365cffa3285714e1639f0aaf6cc98ce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016691"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375328"
 ---
-# <a name="delete-domain"></a><span data-ttu-id="26403-103">Excluir domínio</span><span class="sxs-lookup"><span data-stu-id="26403-103">Delete domain</span></span>
+# <a name="delete-domain"></a><span data-ttu-id="7b195-103">Excluir domínio</span><span class="sxs-lookup"><span data-stu-id="7b195-103">Delete domain</span></span>
 
-<span data-ttu-id="26403-104">Exclui um domínio de um locatário.</span><span class="sxs-lookup"><span data-stu-id="26403-104">Deletes a domain from a tenant.</span></span>
+<span data-ttu-id="7b195-104">Exclui um domínio de um locatário.</span><span class="sxs-lookup"><span data-stu-id="7b195-104">Deletes a domain from a tenant.</span></span>
 
-> <span data-ttu-id="26403-105">**Importante:**</span><span class="sxs-lookup"><span data-stu-id="26403-105">**Important:**</span></span>
-> - <span data-ttu-id="26403-106">Os domínios excluídos não podem ser recuperados.</span><span class="sxs-lookup"><span data-stu-id="26403-106">Deleted domains are not recoverable.</span></span><br />
-> - <span data-ttu-id="26403-p101">As tentativas de exclusão falharão se houver objetos ou recursos dependentes no domínio. Você pode encontrar todos os recursos dependentes usando a API [Listar domainNameReferences](domain-list-domainnamereferences.md).</span><span class="sxs-lookup"><span data-stu-id="26403-p101">Attempts to delete will fail if there are any resources or objects still dependent on the domain. You can find all dependent resources by using the [List domainNameReferences](domain-list-domainnamereferences.md) API.</span></span>
+> <span data-ttu-id="7b195-105">**Importante:**</span><span class="sxs-lookup"><span data-stu-id="7b195-105">**Important:**</span></span>
+> - <span data-ttu-id="7b195-106">Os domínios excluídos não podem ser recuperados.</span><span class="sxs-lookup"><span data-stu-id="7b195-106">Deleted domains are not recoverable.</span></span><br />
+> - <span data-ttu-id="7b195-p101">As tentativas de exclusão falharão se houver objetos ou recursos dependentes no domínio. Você pode encontrar todos os recursos dependentes usando a API [Listar domainNameReferences](domain-list-domainnamereferences.md).</span><span class="sxs-lookup"><span data-stu-id="7b195-p101">Attempts to delete will fail if there are any resources or objects still dependent on the domain. You can find all dependent resources by using the [List domainNameReferences](domain-list-domainnamereferences.md) API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="26403-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="26403-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7b195-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="7b195-109">Permissions</span></span>
 
-<span data-ttu-id="26403-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="26403-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7b195-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7b195-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="26403-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="26403-112">Permission type</span></span>      | <span data-ttu-id="26403-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="26403-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7b195-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7b195-112">Permission type</span></span>      | <span data-ttu-id="7b195-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7b195-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="26403-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="26403-114">Delegated (work or school account)</span></span> | <span data-ttu-id="26403-115">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="26403-115">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="26403-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="26403-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="26403-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="26403-117">Not supported.</span></span>    |
-|<span data-ttu-id="26403-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="26403-118">Application</span></span> | <span data-ttu-id="26403-119">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="26403-119">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="7b195-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7b195-114">Delegated (work or school account)</span></span> | <span data-ttu-id="7b195-115">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7b195-115">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="7b195-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7b195-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b195-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7b195-117">Not supported.</span></span>    |
+|<span data-ttu-id="7b195-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7b195-118">Application</span></span> | <span data-ttu-id="7b195-119">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7b195-119">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="26403-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="26403-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7b195-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7b195-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
 ```
 
-> <span data-ttu-id="26403-121">Para {id}, especifique o domínio com seu nome de domínio totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="26403-121">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="7b195-121">Para {id}, especifique o domínio com seu nome de domínio totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="7b195-121">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="26403-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="26403-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7b195-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7b195-122">Request headers</span></span>
 
-| <span data-ttu-id="26403-123">Nome</span><span class="sxs-lookup"><span data-stu-id="26403-123">Name</span></span>       | <span data-ttu-id="26403-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="26403-124">Description</span></span>|
+| <span data-ttu-id="7b195-123">Nome</span><span class="sxs-lookup"><span data-stu-id="7b195-123">Name</span></span>       | <span data-ttu-id="7b195-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b195-124">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="26403-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="26403-125">Authorization</span></span>  | <span data-ttu-id="26403-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="26403-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="26403-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="26403-128">Content-Type</span></span>  | <span data-ttu-id="26403-129">application/json</span><span class="sxs-lookup"><span data-stu-id="26403-129">application/json</span></span> |
+| <span data-ttu-id="7b195-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="7b195-125">Authorization</span></span>  | <span data-ttu-id="7b195-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7b195-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7b195-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7b195-128">Content-Type</span></span>  | <span data-ttu-id="7b195-129">application/json</span><span class="sxs-lookup"><span data-stu-id="7b195-129">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="26403-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="26403-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7b195-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7b195-130">Request body</span></span>
 
-<span data-ttu-id="26403-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="26403-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="7b195-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7b195-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="26403-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="26403-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7b195-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b195-132">Response</span></span>
 
-<span data-ttu-id="26403-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna um corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="26403-p104">If successful, this method returns `204 No Content` response code. It does not return a response body.</span></span>
+<span data-ttu-id="7b195-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna um corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7b195-p104">If successful, this method returns `204 No Content` response code. It does not return a response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="26403-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="26403-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="26403-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="26403-136">Request</span></span>
+## <a name="example"></a><span data-ttu-id="7b195-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7b195-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7b195-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7b195-136">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="26403-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="26403-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7b195-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="7b195-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["contoso.com"],
@@ -67,28 +67,28 @@ DELETE /domains/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="26403-138">C#</span><span class="sxs-lookup"><span data-stu-id="26403-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7b195-138">C#</span><span class="sxs-lookup"><span data-stu-id="7b195-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-domain-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="26403-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="26403-139">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7b195-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7b195-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-domain-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="26403-140">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="26403-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7b195-140">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="7b195-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-domain-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="26403-141">Java</span><span class="sxs-lookup"><span data-stu-id="26403-141">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="7b195-141">Java</span><span class="sxs-lookup"><span data-stu-id="7b195-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-domain-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="26403-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="26403-142">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="7b195-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b195-142">Response</span></span>
 
-<span data-ttu-id="26403-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="26403-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7b195-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7b195-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

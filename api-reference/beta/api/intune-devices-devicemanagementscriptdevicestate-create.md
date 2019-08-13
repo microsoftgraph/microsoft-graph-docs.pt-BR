@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bfdade7e7014da121453873349c3a3aee787fe43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f0b9c1c2ba51907bc486b5c31460b6b7f5c1dce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981595"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310399"
 ---
-# <a name="create-devicemanagementscriptdevicestate"></a><span data-ttu-id="50cc8-103">Criar deviceManagementScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="50cc8-103">Create deviceManagementScriptDeviceState</span></span>
+# <a name="create-devicemanagementscriptdevicestate"></a><span data-ttu-id="ad49a-103">Criar deviceManagementScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="ad49a-103">Create deviceManagementScriptDeviceState</span></span>
 
-> <span data-ttu-id="50cc8-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="50cc8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ad49a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ad49a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="50cc8-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="50cc8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ad49a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ad49a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="50cc8-106">Criar um novo objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .</span><span class="sxs-lookup"><span data-stu-id="50cc8-106">Create a new [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
+<span data-ttu-id="ad49a-106">Criar um novo objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .</span><span class="sxs-lookup"><span data-stu-id="ad49a-106">Create a new [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="50cc8-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="50cc8-107">Prerequisites</span></span>
-<span data-ttu-id="50cc8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50cc8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ad49a-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ad49a-107">Prerequisites</span></span>
+<span data-ttu-id="ad49a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ad49a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="50cc8-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="50cc8-110">Permission type</span></span>|<span data-ttu-id="50cc8-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="50cc8-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ad49a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ad49a-110">Permission type</span></span>|<span data-ttu-id="ad49a-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="ad49a-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="50cc8-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="50cc8-112">Delegated (work or school account)</span></span>|<span data-ttu-id="50cc8-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50cc8-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="50cc8-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="50cc8-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="50cc8-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="50cc8-115">Not supported.</span></span>|
-|<span data-ttu-id="50cc8-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="50cc8-116">Application</span></span>|<span data-ttu-id="50cc8-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="50cc8-117">Not supported.</span></span>|
+|<span data-ttu-id="ad49a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ad49a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ad49a-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad49a-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ad49a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ad49a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ad49a-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ad49a-115">Not supported.</span></span>|
+|<span data-ttu-id="ad49a-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ad49a-116">Application</span></span>|<span data-ttu-id="ad49a-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad49a-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="50cc8-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="50cc8-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad49a-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ad49a-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,39 +39,43 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="50cc8-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="50cc8-119">Request headers</span></span>
-|<span data-ttu-id="50cc8-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="50cc8-120">Header</span></span>|<span data-ttu-id="50cc8-121">Valor</span><span class="sxs-lookup"><span data-stu-id="50cc8-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ad49a-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ad49a-119">Request headers</span></span>
+|<span data-ttu-id="ad49a-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ad49a-120">Header</span></span>|<span data-ttu-id="ad49a-121">Valor</span><span class="sxs-lookup"><span data-stu-id="ad49a-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="50cc8-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="50cc8-122">Authorization</span></span>|<span data-ttu-id="50cc8-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="50cc8-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="50cc8-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="50cc8-124">Accept</span></span>|<span data-ttu-id="50cc8-125">application/json</span><span class="sxs-lookup"><span data-stu-id="50cc8-125">application/json</span></span>|
+|<span data-ttu-id="ad49a-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="ad49a-122">Authorization</span></span>|<span data-ttu-id="ad49a-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ad49a-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ad49a-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="ad49a-124">Accept</span></span>|<span data-ttu-id="ad49a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ad49a-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="50cc8-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="50cc8-126">Request body</span></span>
-<span data-ttu-id="50cc8-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementScriptDeviceState.</span><span class="sxs-lookup"><span data-stu-id="50cc8-127">In the request body, supply a JSON representation for the deviceManagementScriptDeviceState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ad49a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ad49a-126">Request body</span></span>
+<span data-ttu-id="ad49a-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementScriptDeviceState.</span><span class="sxs-lookup"><span data-stu-id="ad49a-127">In the request body, supply a JSON representation for the deviceManagementScriptDeviceState object.</span></span>
 
-<span data-ttu-id="50cc8-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementScriptDeviceState.</span><span class="sxs-lookup"><span data-stu-id="50cc8-128">The following table shows the properties that are required when you create the deviceManagementScriptDeviceState.</span></span>
+<span data-ttu-id="ad49a-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementScriptDeviceState.</span><span class="sxs-lookup"><span data-stu-id="ad49a-128">The following table shows the properties that are required when you create the deviceManagementScriptDeviceState.</span></span>
 
-|<span data-ttu-id="50cc8-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="50cc8-129">Property</span></span>|<span data-ttu-id="50cc8-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="50cc8-130">Type</span></span>|<span data-ttu-id="50cc8-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="50cc8-131">Description</span></span>|
+|<span data-ttu-id="ad49a-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ad49a-129">Property</span></span>|<span data-ttu-id="ad49a-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="ad49a-130">Type</span></span>|<span data-ttu-id="ad49a-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="ad49a-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="50cc8-132">id</span><span class="sxs-lookup"><span data-stu-id="50cc8-132">id</span></span>|<span data-ttu-id="50cc8-133">String</span><span class="sxs-lookup"><span data-stu-id="50cc8-133">String</span></span>|<span data-ttu-id="50cc8-134">Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="50cc8-134">Key of the device management script device state entity.</span></span>|
-|<span data-ttu-id="50cc8-135">runState</span><span class="sxs-lookup"><span data-stu-id="50cc8-135">runState</span></span>|[<span data-ttu-id="50cc8-136">runState</span><span class="sxs-lookup"><span data-stu-id="50cc8-136">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="50cc8-137">Estado da última execução do script de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="50cc8-137">State of latest run of the device management script.</span></span> <span data-ttu-id="50cc8-138">Os valores possíveis são: `unknown`, `success`, `fail`.</span><span class="sxs-lookup"><span data-stu-id="50cc8-138">Possible values are: `unknown`, `success`, `fail`.</span></span>|
-|<span data-ttu-id="50cc8-139">resultMessage</span><span class="sxs-lookup"><span data-stu-id="50cc8-139">resultMessage</span></span>|<span data-ttu-id="50cc8-140">String</span><span class="sxs-lookup"><span data-stu-id="50cc8-140">String</span></span>|<span data-ttu-id="50cc8-141">Detalhes da saída de execução.</span><span class="sxs-lookup"><span data-stu-id="50cc8-141">Details of execution output.</span></span>|
-|<span data-ttu-id="50cc8-142">lastStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="50cc8-142">lastStateUpdateDateTime</span></span>|<span data-ttu-id="50cc8-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="50cc8-143">DateTimeOffset</span></span>|<span data-ttu-id="50cc8-144">Última vez em que o script de gerenciamento de dispositivos é executado.</span><span class="sxs-lookup"><span data-stu-id="50cc8-144">Latest time the device management script executes.</span></span>|
-|<span data-ttu-id="50cc8-145">errorCode</span><span class="sxs-lookup"><span data-stu-id="50cc8-145">errorCode</span></span>|<span data-ttu-id="50cc8-146">Int32</span><span class="sxs-lookup"><span data-stu-id="50cc8-146">Int32</span></span>|<span data-ttu-id="50cc8-147">Código de erro correspondente à execução errada do script de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="50cc8-147">Error code corresponding to erroneous execution of the device management script.</span></span>|
-|<span data-ttu-id="50cc8-148">errorDescription</span><span class="sxs-lookup"><span data-stu-id="50cc8-148">errorDescription</span></span>|<span data-ttu-id="50cc8-149">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="50cc8-149">String</span></span>|<span data-ttu-id="50cc8-150">Descrição do erro correspondente à execução errada do script de gerenciamento de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="50cc8-150">Error description corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="ad49a-132">id</span><span class="sxs-lookup"><span data-stu-id="ad49a-132">id</span></span>|<span data-ttu-id="ad49a-133">String</span><span class="sxs-lookup"><span data-stu-id="ad49a-133">String</span></span>|<span data-ttu-id="ad49a-134">Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="ad49a-134">Key of the device management script device state entity.</span></span>|
+|<span data-ttu-id="ad49a-135">runState</span><span class="sxs-lookup"><span data-stu-id="ad49a-135">runState</span></span>|[<span data-ttu-id="ad49a-136">runState</span><span class="sxs-lookup"><span data-stu-id="ad49a-136">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="ad49a-137">Estado da última execução do script de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="ad49a-137">State of latest run of the device management script.</span></span> <span data-ttu-id="ad49a-138">Os valores possíveis são: `unknown`, `success`, `fail`, `error`, `pending`.</span><span class="sxs-lookup"><span data-stu-id="ad49a-138">Possible values are: `unknown`, `success`, `fail`, `error`, `pending`.</span></span>|
+|<span data-ttu-id="ad49a-139">resultMessage</span><span class="sxs-lookup"><span data-stu-id="ad49a-139">resultMessage</span></span>|<span data-ttu-id="ad49a-140">String</span><span class="sxs-lookup"><span data-stu-id="ad49a-140">String</span></span>|<span data-ttu-id="ad49a-141">Detalhes da saída de execução.</span><span class="sxs-lookup"><span data-stu-id="ad49a-141">Details of execution output.</span></span>|
+|<span data-ttu-id="ad49a-142">lastStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="ad49a-142">lastStateUpdateDateTime</span></span>|<span data-ttu-id="ad49a-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ad49a-143">DateTimeOffset</span></span>|<span data-ttu-id="ad49a-144">Última vez em que o script de gerenciamento de dispositivos é executado.</span><span class="sxs-lookup"><span data-stu-id="ad49a-144">Latest time the device management script executes.</span></span>|
+|<span data-ttu-id="ad49a-145">errorCode</span><span class="sxs-lookup"><span data-stu-id="ad49a-145">errorCode</span></span>|<span data-ttu-id="ad49a-146">Int32</span><span class="sxs-lookup"><span data-stu-id="ad49a-146">Int32</span></span>|<span data-ttu-id="ad49a-147">Código de erro correspondente à execução errada do script de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="ad49a-147">Error code corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="ad49a-148">errorDescription</span><span class="sxs-lookup"><span data-stu-id="ad49a-148">errorDescription</span></span>|<span data-ttu-id="ad49a-149">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ad49a-149">String</span></span>|<span data-ttu-id="ad49a-150">Descrição do erro correspondente à execução errada do script de gerenciamento de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="ad49a-150">Error description corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="ad49a-151">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="ad49a-151">lastSyncDateTime</span></span>|<span data-ttu-id="ad49a-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ad49a-152">DateTimeOffset</span></span>|<span data-ttu-id="ad49a-153">A última vez em que a extensão de gerenciamento do Intune é sincronizada com o Intune.</span><span class="sxs-lookup"><span data-stu-id="ad49a-153">The latest time that Intune Managment Extension syncs to Intune.</span></span>|
+|<span data-ttu-id="ad49a-154">preRemediationDetectionScriptOutput</span><span class="sxs-lookup"><span data-stu-id="ad49a-154">preRemediationDetectionScriptOutput</span></span>|<span data-ttu-id="ad49a-155">String</span><span class="sxs-lookup"><span data-stu-id="ad49a-155">String</span></span>|<span data-ttu-id="ad49a-156">Saída do script de detecção antes da correção.</span><span class="sxs-lookup"><span data-stu-id="ad49a-156">Output of the detection script before remediation.</span></span>|
+|<span data-ttu-id="ad49a-157">remediationScriptError</span><span class="sxs-lookup"><span data-stu-id="ad49a-157">remediationScriptError</span></span>|<span data-ttu-id="ad49a-158">String</span><span class="sxs-lookup"><span data-stu-id="ad49a-158">String</span></span>|<span data-ttu-id="ad49a-159">Erro de saída do script de correção.</span><span class="sxs-lookup"><span data-stu-id="ad49a-159">Error output of the remediation script.</span></span>|
+|<span data-ttu-id="ad49a-160">postRemediationDetectionScriptOutput</span><span class="sxs-lookup"><span data-stu-id="ad49a-160">postRemediationDetectionScriptOutput</span></span>|<span data-ttu-id="ad49a-161">String</span><span class="sxs-lookup"><span data-stu-id="ad49a-161">String</span></span>|<span data-ttu-id="ad49a-162">A saída do script de detecção após a correção.</span><span class="sxs-lookup"><span data-stu-id="ad49a-162">Detection script output after remediation.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="50cc8-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="50cc8-151">Response</span></span>
-<span data-ttu-id="50cc8-152">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="50cc8-152">If successful, this method returns a `201 Created` response code and a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ad49a-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="ad49a-163">Response</span></span>
+<span data-ttu-id="ad49a-164">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ad49a-164">If successful, this method returns a `201 Created` response code and a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="50cc8-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="50cc8-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ad49a-165">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ad49a-165">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="50cc8-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="50cc8-154">Request</span></span>
-<span data-ttu-id="50cc8-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="50cc8-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ad49a-166">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ad49a-166">Request</span></span>
+<span data-ttu-id="ad49a-167">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ad49a-167">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 281
+Content-length: 588
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -79,16 +83,20 @@ Content-length: 281
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="50cc8-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="50cc8-156">Response</span></span>
-<span data-ttu-id="50cc8-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="50cc8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ad49a-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="ad49a-168">Response</span></span>
+<span data-ttu-id="ad49a-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ad49a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 330
+Content-Length: 637
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -97,9 +105,14 @@ Content-Length: 330
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
+
 
 
 
