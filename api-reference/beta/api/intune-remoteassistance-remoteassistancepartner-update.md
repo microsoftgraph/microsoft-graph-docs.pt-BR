@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ecc531b2f3908681f347325dc2f6f3a0f60723ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d2931d0ca9688e1a00ec25531aaa0af6b1c6d7f5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993701"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347574"
 ---
-# <a name="update-remoteassistancepartner"></a><span data-ttu-id="da9b2-103">Atualizar remoteAssistancePartner</span><span class="sxs-lookup"><span data-stu-id="da9b2-103">Update remoteAssistancePartner</span></span>
+# <a name="update-remoteassistancepartner"></a><span data-ttu-id="cde36-103">Atualizar remoteAssistancePartner</span><span class="sxs-lookup"><span data-stu-id="cde36-103">Update remoteAssistancePartner</span></span>
 
-> <span data-ttu-id="da9b2-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="da9b2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="cde36-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="cde36-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="da9b2-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="da9b2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cde36-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="cde36-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="da9b2-106">Atualizar as propriedades de um objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span><span class="sxs-lookup"><span data-stu-id="da9b2-106">Update the properties of a [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
+<span data-ttu-id="cde36-106">Atualizar as propriedades de um objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span><span class="sxs-lookup"><span data-stu-id="cde36-106">Update the properties of a [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="da9b2-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="da9b2-107">Prerequisites</span></span>
-<span data-ttu-id="da9b2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da9b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cde36-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="cde36-107">Prerequisites</span></span>
+<span data-ttu-id="cde36-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cde36-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="da9b2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="da9b2-110">Permission type</span></span>|<span data-ttu-id="da9b2-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="da9b2-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cde36-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cde36-110">Permission type</span></span>|<span data-ttu-id="cde36-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="cde36-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="da9b2-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="da9b2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="da9b2-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da9b2-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="da9b2-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="da9b2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="da9b2-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="da9b2-115">Not supported.</span></span>|
-|<span data-ttu-id="da9b2-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="da9b2-116">Application</span></span>|<span data-ttu-id="da9b2-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="da9b2-117">Not supported.</span></span>|
+|<span data-ttu-id="cde36-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cde36-112">Delegated (work or school account)</span></span>|<span data-ttu-id="cde36-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cde36-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="cde36-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cde36-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cde36-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cde36-115">Not supported.</span></span>|
+|<span data-ttu-id="cde36-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cde36-116">Application</span></span>|<span data-ttu-id="cde36-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cde36-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="da9b2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="da9b2-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cde36-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cde36-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,34 +38,34 @@ ms.locfileid: "35993701"
 PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="da9b2-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="da9b2-119">Request headers</span></span>
-|<span data-ttu-id="da9b2-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="da9b2-120">Header</span></span>|<span data-ttu-id="da9b2-121">Valor</span><span class="sxs-lookup"><span data-stu-id="da9b2-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cde36-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cde36-119">Request headers</span></span>
+|<span data-ttu-id="cde36-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cde36-120">Header</span></span>|<span data-ttu-id="cde36-121">Valor</span><span class="sxs-lookup"><span data-stu-id="cde36-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="da9b2-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="da9b2-122">Authorization</span></span>|<span data-ttu-id="da9b2-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="da9b2-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="da9b2-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="da9b2-124">Accept</span></span>|<span data-ttu-id="da9b2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="da9b2-125">application/json</span></span>|
+|<span data-ttu-id="cde36-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="cde36-122">Authorization</span></span>|<span data-ttu-id="cde36-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cde36-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cde36-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="cde36-124">Accept</span></span>|<span data-ttu-id="cde36-125">application/json</span><span class="sxs-lookup"><span data-stu-id="cde36-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="da9b2-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="da9b2-126">Request body</span></span>
-<span data-ttu-id="da9b2-127">No corpo da solicitação, forneça uma representação JSON do objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span><span class="sxs-lookup"><span data-stu-id="da9b2-127">In the request body, supply a JSON representation for the [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cde36-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cde36-126">Request body</span></span>
+<span data-ttu-id="cde36-127">No corpo da solicitação, forneça uma representação JSON do objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span><span class="sxs-lookup"><span data-stu-id="cde36-127">In the request body, supply a JSON representation for the [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
 
-<span data-ttu-id="da9b2-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span><span class="sxs-lookup"><span data-stu-id="da9b2-128">The following table shows the properties that are required when you create the [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span></span>
+<span data-ttu-id="cde36-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span><span class="sxs-lookup"><span data-stu-id="cde36-128">The following table shows the properties that are required when you create the [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span></span>
 
-|<span data-ttu-id="da9b2-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="da9b2-129">Property</span></span>|<span data-ttu-id="da9b2-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="da9b2-130">Type</span></span>|<span data-ttu-id="da9b2-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="da9b2-131">Description</span></span>|
+|<span data-ttu-id="cde36-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="cde36-129">Property</span></span>|<span data-ttu-id="cde36-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="cde36-130">Type</span></span>|<span data-ttu-id="cde36-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="cde36-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="da9b2-132">id</span><span class="sxs-lookup"><span data-stu-id="da9b2-132">id</span></span>|<span data-ttu-id="da9b2-133">String</span><span class="sxs-lookup"><span data-stu-id="da9b2-133">String</span></span>|<span data-ttu-id="da9b2-134">O identificador exclusivo do parceiro.</span><span class="sxs-lookup"><span data-stu-id="da9b2-134">Unique identifier of the partner.</span></span>|
-|<span data-ttu-id="da9b2-135">displayName</span><span class="sxs-lookup"><span data-stu-id="da9b2-135">displayName</span></span>|<span data-ttu-id="da9b2-136">String</span><span class="sxs-lookup"><span data-stu-id="da9b2-136">String</span></span>|<span data-ttu-id="da9b2-137">Nome de exibição do parceiro.</span><span class="sxs-lookup"><span data-stu-id="da9b2-137">Display name of the partner.</span></span>|
-|<span data-ttu-id="da9b2-138">onboardingUrl</span><span class="sxs-lookup"><span data-stu-id="da9b2-138">onboardingUrl</span></span>|<span data-ttu-id="da9b2-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="da9b2-139">String</span></span>|<span data-ttu-id="da9b2-140">URL do portal de integração do parceiro, no qual um administrador pode configurar o serviço de assistência remota.</span><span class="sxs-lookup"><span data-stu-id="da9b2-140">URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.</span></span>|
-|<span data-ttu-id="da9b2-141">onboardingStatus</span><span class="sxs-lookup"><span data-stu-id="da9b2-141">onboardingStatus</span></span>|[<span data-ttu-id="da9b2-142">remoteAssistanceOnboardingStatus</span><span class="sxs-lookup"><span data-stu-id="da9b2-142">remoteAssistanceOnboardingStatus</span></span>](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|<span data-ttu-id="da9b2-143">Uma descrição amigável do status atual do conector do TeamViewer.</span><span class="sxs-lookup"><span data-stu-id="da9b2-143">A friendly description of the current TeamViewer connector status.</span></span> <span data-ttu-id="da9b2-144">Os valores possíveis são: `notOnboarded`, `onboarding`, `onboarded`.</span><span class="sxs-lookup"><span data-stu-id="da9b2-144">Possible values are: `notOnboarded`, `onboarding`, `onboarded`.</span></span>|
-|<span data-ttu-id="da9b2-145">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="da9b2-145">lastConnectionDateTime</span></span>|<span data-ttu-id="da9b2-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="da9b2-146">DateTimeOffset</span></span>|<span data-ttu-id="da9b2-147">Carimbo de data/hora da última solicitação enviada ao Intune pelo parceiro TEM.</span><span class="sxs-lookup"><span data-stu-id="da9b2-147">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
+|<span data-ttu-id="cde36-132">id</span><span class="sxs-lookup"><span data-stu-id="cde36-132">id</span></span>|<span data-ttu-id="cde36-133">String</span><span class="sxs-lookup"><span data-stu-id="cde36-133">String</span></span>|<span data-ttu-id="cde36-134">O identificador exclusivo do parceiro.</span><span class="sxs-lookup"><span data-stu-id="cde36-134">Unique identifier of the partner.</span></span>|
+|<span data-ttu-id="cde36-135">displayName</span><span class="sxs-lookup"><span data-stu-id="cde36-135">displayName</span></span>|<span data-ttu-id="cde36-136">String</span><span class="sxs-lookup"><span data-stu-id="cde36-136">String</span></span>|<span data-ttu-id="cde36-137">Nome de exibição do parceiro.</span><span class="sxs-lookup"><span data-stu-id="cde36-137">Display name of the partner.</span></span>|
+|<span data-ttu-id="cde36-138">onboardingUrl</span><span class="sxs-lookup"><span data-stu-id="cde36-138">onboardingUrl</span></span>|<span data-ttu-id="cde36-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="cde36-139">String</span></span>|<span data-ttu-id="cde36-140">URL do portal de integração do parceiro, no qual um administrador pode configurar o serviço de assistência remota.</span><span class="sxs-lookup"><span data-stu-id="cde36-140">URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.</span></span>|
+|<span data-ttu-id="cde36-141">onboardingStatus</span><span class="sxs-lookup"><span data-stu-id="cde36-141">onboardingStatus</span></span>|[<span data-ttu-id="cde36-142">remoteAssistanceOnboardingStatus</span><span class="sxs-lookup"><span data-stu-id="cde36-142">remoteAssistanceOnboardingStatus</span></span>](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|<span data-ttu-id="cde36-143">Uma descrição amigável do status atual do conector do TeamViewer.</span><span class="sxs-lookup"><span data-stu-id="cde36-143">A friendly description of the current TeamViewer connector status.</span></span> <span data-ttu-id="cde36-144">Os valores possíveis são: `notOnboarded`, `onboarding`, `onboarded`.</span><span class="sxs-lookup"><span data-stu-id="cde36-144">Possible values are: `notOnboarded`, `onboarding`, `onboarded`.</span></span>|
+|<span data-ttu-id="cde36-145">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="cde36-145">lastConnectionDateTime</span></span>|<span data-ttu-id="cde36-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cde36-146">DateTimeOffset</span></span>|<span data-ttu-id="cde36-147">Carimbo de data/hora da última solicitação enviada ao Intune pelo parceiro TEM.</span><span class="sxs-lookup"><span data-stu-id="cde36-147">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="da9b2-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="da9b2-148">Response</span></span>
-<span data-ttu-id="da9b2-149">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="da9b2-149">If successful, this method returns a `200 OK` response code and an updated [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cde36-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="cde36-148">Response</span></span>
+<span data-ttu-id="cde36-149">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cde36-149">If successful, this method returns a `200 OK` response code and an updated [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="da9b2-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="da9b2-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cde36-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cde36-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="da9b2-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="da9b2-151">Request</span></span>
-<span data-ttu-id="da9b2-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="da9b2-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="cde36-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cde36-151">Request</span></span>
+<span data-ttu-id="cde36-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cde36-152">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 266
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="da9b2-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="da9b2-153">Response</span></span>
-<span data-ttu-id="da9b2-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="da9b2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cde36-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="cde36-153">Response</span></span>
+<span data-ttu-id="cde36-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cde36-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -96,6 +96,7 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
 
 
 

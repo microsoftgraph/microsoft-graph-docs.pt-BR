@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a692fcde128cf2f327d6a934850a423b02c1b748
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 667ab45f08ed16abf471f626e0d9f09716f3c34d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875115"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342191"
 ---
-# <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a><span data-ttu-id="fe9a3-103">Remover o publishedResource de um onPremisesAgentGroup</span><span class="sxs-lookup"><span data-stu-id="fe9a3-103">Remove publishedResource from an onPremisesAgentGroup</span></span>
+# <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a><span data-ttu-id="39ed7-103">Remover o publishedResource de um onPremisesAgentGroup</span><span class="sxs-lookup"><span data-stu-id="39ed7-103">Remove publishedResource from an onPremisesAgentGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fe9a3-104">Remover um objeto [publishedResource](../resources/publishedresource.md) de um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .</span><span class="sxs-lookup"><span data-stu-id="fe9a3-104">Remove a [publishedResource](../resources/publishedresource.md) object from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
+<span data-ttu-id="39ed7-104">Remover um objeto [publishedResource](../resources/publishedresource.md) de um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .</span><span class="sxs-lookup"><span data-stu-id="39ed7-104">Remove a [publishedResource](../resources/publishedresource.md) object from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fe9a3-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="fe9a3-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="39ed7-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="39ed7-105">Permissions</span></span>
 
-<span data-ttu-id="fe9a3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fe9a3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="39ed7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="39ed7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fe9a3-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fe9a3-108">Permission type</span></span>                        | <span data-ttu-id="fe9a3-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fe9a3-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="39ed7-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="39ed7-108">Permission type</span></span>                        | <span data-ttu-id="39ed7-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="39ed7-109">Permissions (from least to most privileged)</span></span> |
 |:--------------------------------------|:---------------------------------------------------------|
-| <span data-ttu-id="fe9a3-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fe9a3-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="fe9a3-111">OnPremisesPublishingProfiles. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="fe9a3-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
-| <span data-ttu-id="fe9a3-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fe9a3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe9a3-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fe9a3-113">Not supported.</span></span> |
-| <span data-ttu-id="fe9a3-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fe9a3-114">Application</span></span>                            | <span data-ttu-id="fe9a3-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fe9a3-115">Not supported.</span></span> |
+| <span data-ttu-id="39ed7-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="39ed7-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="39ed7-111">OnPremisesPublishingProfiles. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="39ed7-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
+| <span data-ttu-id="39ed7-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="39ed7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="39ed7-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="39ed7-113">Not supported.</span></span> |
+| <span data-ttu-id="39ed7-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="39ed7-114">Application</span></span>                            | <span data-ttu-id="39ed7-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="39ed7-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fe9a3-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fe9a3-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="39ed7-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="39ed7-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,27 +36,27 @@ ms.locfileid: "35875115"
 DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups{id2}/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fe9a3-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fe9a3-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="39ed7-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="39ed7-117">Request headers</span></span>
 
-| <span data-ttu-id="fe9a3-118">Nome</span><span class="sxs-lookup"><span data-stu-id="fe9a3-118">Name</span></span>          | <span data-ttu-id="fe9a3-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="fe9a3-119">Description</span></span>   |
+| <span data-ttu-id="39ed7-118">Nome</span><span class="sxs-lookup"><span data-stu-id="39ed7-118">Name</span></span>          | <span data-ttu-id="39ed7-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="39ed7-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="fe9a3-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="fe9a3-120">Authorization</span></span> | <span data-ttu-id="fe9a3-121">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="fe9a3-121">Bearer {token}</span></span> |
+| <span data-ttu-id="39ed7-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="39ed7-120">Authorization</span></span> | <span data-ttu-id="39ed7-121">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="39ed7-121">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fe9a3-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fe9a3-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="39ed7-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="39ed7-122">Request body</span></span>
 
-<span data-ttu-id="fe9a3-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fe9a3-123">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="39ed7-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="39ed7-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fe9a3-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="fe9a3-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="39ed7-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="39ed7-124">Response</span></span>
 
-<span data-ttu-id="fe9a3-125">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="fe9a3-125">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="39ed7-125">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="39ed7-125">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="fe9a3-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="fe9a3-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="39ed7-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="39ed7-126">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="fe9a3-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fe9a3-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="39ed7-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="39ed7-127">Request</span></span>
 
-<span data-ttu-id="fe9a3-128">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="fe9a3-128">The following is an example of the request.</span></span>
+<span data-ttu-id="39ed7-128">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="39ed7-128">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fe9a3-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="fe9a3-129">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="39ed7-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="39ed7-129">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_onpremisesagentgroup_from_publishedresource"
@@ -65,28 +65,28 @@ DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/
 ```http
 DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/publishedResources/1234b780-965f-4149-85c5-a8c73e58b67d/agentGroups/8832388F-3814-4952-B288-FFB62081FE25/$ref
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fe9a3-130">C#</span><span class="sxs-lookup"><span data-stu-id="fe9a3-130">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="39ed7-130">C#</span><span class="sxs-lookup"><span data-stu-id="39ed7-130">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onpremisesagentgroup-from-publishedresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fe9a3-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="fe9a3-131">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="39ed7-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="39ed7-131">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onpremisesagentgroup-from-publishedresource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fe9a3-132">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="fe9a3-132">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="39ed7-132">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="39ed7-132">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onpremisesagentgroup-from-publishedresource-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="fe9a3-133">Java</span><span class="sxs-lookup"><span data-stu-id="fe9a3-133">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="39ed7-133">Java</span><span class="sxs-lookup"><span data-stu-id="39ed7-133">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-onpremisesagentgroup-from-publishedresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="fe9a3-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="fe9a3-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="39ed7-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="39ed7-134">Response</span></span>
 
-<span data-ttu-id="fe9a3-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="fe9a3-135">The following is an example of the response.</span></span>
+<span data-ttu-id="39ed7-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="39ed7-135">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
