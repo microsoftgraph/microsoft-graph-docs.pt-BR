@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd88267f35812002550d803cb61bb84998a05a6f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4e1b0c8f721f60a98c989b45352f48a41849eaf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985875"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310189"
 ---
 # <a name="get-manageddevice"></a>Acessar managedDevice
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -69,7 +69,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7686
+Content-Length: 7923
 
 {
   "value": {
@@ -108,7 +108,8 @@ Content-Length: 7686
       "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
       "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
       "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-      "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+      "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+      "osBuildNumber": "Os Build Number value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -238,10 +239,15 @@ Content-Length: 7686
       "state": "installed",
       "errorCode": 9,
       "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+    },
+    "configurationManagerClientInformation": {
+      "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+      "clientIdentifier": "Client Identifier value"
     }
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 61c9ef5aafeedae8ec71e8a10e757dffd2ca89d4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e8f35ce7593d22808c2c473d5ac1b9520e9e1f6d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962838"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36311561"
 ---
 # <a name="create-androidomacpconfiguration"></a>Criar androidOmaCpConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -156,6 +156,7 @@ Content-Length: 1251
   "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
+
 
 
 

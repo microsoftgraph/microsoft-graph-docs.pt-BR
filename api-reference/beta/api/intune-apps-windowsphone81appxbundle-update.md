@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 252e3bbd3cc9b564b5fa80184eae917e28c06fc6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 619518d397bae602a2a8aba640489d27e974042d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959926"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322370"
 ---
 # <a name="update-windowsphone81appxbundle"></a>Atualizar windowsPhone81AppXBundle
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -75,7 +75,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|As arquiteturas do Windows nas quais este aplicativo pode ser executado. Herdado de [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md). Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|identityName|String|O Nome da Identidade. Herdado de [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|identityName|Cadeia de caracteres|O Nome da Identidade. Herdado de [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityPublisherHash|String|O Hash do Publicador de Identidade. Herdado de [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityResourceIdentifier|String|O Identificador de Recurso da Identidade. Herdado de [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável. Herdado de [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
@@ -249,6 +249,7 @@ Content-Length: 2483
   ]
 }
 ```
+
 
 
 
