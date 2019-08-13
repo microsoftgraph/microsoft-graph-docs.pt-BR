@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d5df7cc791947e46b5da11c3162c0c5cf945bdd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e8d64f3af656a03bd02ecba5db2fbdab288f3693
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011467"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333881"
 ---
 # <a name="automaticupdatemode-enum-type"></a>tipo de enumeração Propriedades automaticupdatemode
 
@@ -30,8 +30,6 @@ Valores possíveis para o modo de atualização automática.
 |autoInstallAndRebootAtScheduledTime|quatro|Instalação automática e reinicialização no horário agendado.|
 |autoInstallAndRebootWithoutEndUserControl|0,5|Instalação e reinício automáticos sem controle de usuário final|
 |windowsDefault|6|Redefina como o valor padrão do Windows.|
-
-
 
 
 

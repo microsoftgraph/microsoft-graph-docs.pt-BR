@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7ff6c47ac4ad12a3091deb5c6f736768cc082387
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58dff3acb944ba09ac8c5f4bdbcc9d916ee6ab68
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998503"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332383"
 ---
 # <a name="grouppolicytype-enum-type"></a>tipo de enumeração groupPolicyType
 
@@ -25,8 +25,6 @@ Tipo de arquivo de política de grupo ou definição.
 |:---|:---|:---|
 |admxBacked|,0|Os modelos administrativos da política de grupo internos para o provedor de serviços de configuração de política (CSP).|
 |admxIngested|1|Modelos administrativos da política de grupo instalados usando o provedor de serviços de configuração de política (CSP).|
-
-
 
 
 

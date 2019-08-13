@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c79f0bd118eff4a96295a46c34ce87bfecf1036
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6814ce70f770e789ae2f0854db159e3868c94534
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000449"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337899"
 ---
 # <a name="windows10certificateprofilebase-resource-type"></a>tipo de recurso windows10CertificateProfileBase
 
@@ -111,8 +111,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificateValidityPeriodScale": "String"
 }
 ```
-
-
 
 
 

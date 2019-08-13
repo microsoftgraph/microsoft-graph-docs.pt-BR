@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 24c6afeb43ec7b5e4388f2f5e89056db43199b7e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8e6b09eab5a9bbc40eea3d581938394da379d0a3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005034"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335427"
 ---
 # <a name="windowsdevicetype-enum-type"></a>tipo de enumeração windowsDeviceType
 
@@ -28,8 +28,6 @@ Contém propriedades do tipo de dispositivo do Windows.
 |processadores|duas|Se o tipo de dispositivo móvel do Windows é ou não suportado.|
 |holographic|quatro|Se o tipo de dispositivo do Windows Holographic é ou não suportado.|
 |team|8 |Se o tipo de dispositivo do Windows de equipe é ou não suportado.|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 339dc8a824073f609ee580042895bd3a59f58e43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1e479f925e8b52ae746180851ce52ad116774367
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998433"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332208"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>tipo de enumeração managedAppClipboardSharingLevel
 
@@ -27,8 +27,6 @@ Representa o nível ao qual a área de transferência do dispositivo pode ser co
 |managedAppsWithPasteIn|1|O compartilhamento é permitido entre todos os aplicativos gerenciados com colar ativado|
 |managedApps|duas|O compartilhamento é permitido entre todos os aplicativos gerenciados|
 |bloqueou|3D|O compartilhamento entre aplicativos está desabilitado|
-
-
 
 
 

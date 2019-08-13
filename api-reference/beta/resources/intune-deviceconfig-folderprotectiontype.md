@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: af7c5a9837c0f31401a4a662efdc63e4f6febb8d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8309fc7550252ebb3cc12ec05ca38e8bc611bb0f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001327"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338108"
 ---
 # <a name="folderprotectiontype-enum-type"></a>tipo de enumeração folderProtectionType
 
@@ -28,8 +28,6 @@ Possíveis valores de proteção de pasta
 |auditmode|duas|Permitir a funcionalidade, mas gerar logs.|
 |blockDiskModification|3D|Bloquear a gravação de aplicativos não confiáveis em setores de disco.|
 |auditDiskModification|quatro|Gerar logs quando aplicativos não confiáveis gravam em setores de disco.|
-
-
 
 
 

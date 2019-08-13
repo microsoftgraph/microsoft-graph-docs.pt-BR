@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ea50d424e8f43619ef908523736bbabc75d2fb93
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d4b2ea0cc5ee077a88c5e9f5c811be34ef501ddc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971029"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333713"
 ---
 # <a name="certificateissuancestates-enum-type"></a>tipo de enumeração certificateIssuanceStates
 
@@ -46,8 +46,6 @@ Opções de estado de emissão de certificado.
 |deleted|508|Ainda não documentado|
 |renewalRequested|21|Ainda não documentado|
 |necessário|22|Ainda não documentado|
-
-
 
 
 

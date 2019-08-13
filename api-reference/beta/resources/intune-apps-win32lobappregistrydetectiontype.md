@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 45f961236363f25205763a3d9765453fc8760ad5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 262705012420f40c9aedffa5403f633dd6810445
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012230"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335526"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>tipo de enumeração win32LobAppRegistryDetectionType
 
@@ -29,8 +29,6 @@ Contém todo o tipo de detecção de dados de registro com suporte.
 |string|3D|Tipo de valor de cadeia de caracteres.|
 |inteiro|quatro|Tipo de valor inteiro.|
 |versão|0,5|Tipo de valor de versão.|
-
-
 
 
 

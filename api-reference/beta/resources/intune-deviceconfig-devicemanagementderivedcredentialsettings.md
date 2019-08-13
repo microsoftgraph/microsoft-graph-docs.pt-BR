@@ -4,12 +4,13 @@ description: Entidade que descreve as configurações de nível de locatário pa
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 06f87b7c2f94bcd95d27889bfb9ee0649c4aae92
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c2b9d81cf542681bc2ef610ebe86e836d7c84412
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990019"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332775"
 ---
 # <a name="devicemanagementderivedcredentialsettings-resource-type"></a>tipo de recurso deviceManagementDerivedCredentialSettings
 
@@ -55,8 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   "notificationType": "String"
 }
 ```
-
-
 
 
 

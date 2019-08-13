@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3dac1536f13fc068eb9bac0d2c922e0ce51fa08
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ae862f244756e675d121ec9eb20d6830e8dd716
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011733"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334455"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>tipo de enumeração androidKeyguardFeature
 
@@ -31,8 +31,6 @@ Recurso de protetor de recurso Android.
 |digitais|0,5|Uso do sensor de impressão digital quando estiver em telas do Secure keyguard.|
 |remoteInput|6|Entrada de texto de notificação quando em telas de keyguard seguras.|
 |Sub-recursos|178|Todos os recursos de keyguard quando estão no Secure keyguard.|
-
-
 
 
 

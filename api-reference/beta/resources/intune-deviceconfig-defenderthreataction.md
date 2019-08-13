@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 368d58c125511f235a82d50e54193f0dacc96757
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 57b5ecf73548bf67bcb1fbfb75ed0730cb308424
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970847"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333412"
 ---
 # <a name="defenderthreataction-enum-type"></a>tipo de enumeração defenderThreatAction
 
@@ -30,8 +30,6 @@ Ação padrão do defender a ser executada em ameaças de malware detectadas.
 |permitiu|quatro|Permitir a ameaça detectada.|
 |UserDefined|0,5|Permitir que o usuário determine a ação a ser tomada com a ameaça detectada.|
 |Larga|6|Bloquear a ameaça detectada.|
-
-
 
 
 

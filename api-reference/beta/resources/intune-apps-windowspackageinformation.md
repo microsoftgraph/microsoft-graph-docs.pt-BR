@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a35500a2895ad697ec7881e52d6db83f19871b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5cbec1c6072045b3c6dbc16cdf925fb517c444f2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012167"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335379"
 ---
 # <a name="windowspackageinformation-resource-type"></a>tipo de recurso windowsPackageInformation
 
@@ -64,8 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
-
 
 
 
