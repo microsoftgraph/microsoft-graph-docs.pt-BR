@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: feeecf706a262d38bf956a49bc27d5d32e1e8ddb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa6ea5a2bf187a753705b369f3f8a2558860c3eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001401"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357268"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>tipo de enumeração edgeTelemetryMode
 
@@ -27,8 +27,6 @@ Tipo de dados de navegação enviados para a análise do Microsoft 365
 |Internet|1|Permitir o envio de histórico de intranet somente: enviar apenas dados de histórico de navegação para sites de intranet|
 |provedor|duas|Permitir o envio somente do histórico da Internet: Enviar somente dados de histórico de navegação para sites da Internet|
 |intranetAndInternet|3D|Permitir o envio do histórico de intranet e Internet: enviar dados de histórico de navegação para sites de intranet e Internet|
-
-
 
 
 

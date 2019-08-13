@@ -4,12 +4,13 @@ description: Fontes de certificado com suporte para assinatura e criptografia de
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2ff58f55033660a839a5f28d0244217c62936e0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c6c4a6943fada88dc9a30c9e81d45705153dfde1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996383"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357184"
 ---
 # <a name="emailcertificatetype-enum-type"></a>tipo de enumeração emailCertificateType
 
@@ -25,8 +26,6 @@ Fontes de certificado com suporte para assinatura e criptografia de email.
 |none|,0|Não use um certificado como fonte.|
 |certificado|1|Usar um certificado para a fonte do certificado.|
 |derivedCredential|duas|Use uma credencial derivada para a fonte do certificado.|
-
-
 
 
 

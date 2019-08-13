@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 266f88b28dee27a1ba20808d0261bd20850f46f9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: fef5d47afa3c85d1e5eb981ddc2f1d8fe280eba8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872587"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36359679"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getSharePointSiteUsageSiteCounts = await graphClient.Reports
-    .GetSharePointSiteUsageSiteCounts('D7')
+    .GetSharePointSiteUsageSiteCounts("D7")
     .Request()
     .GetAsync();
 
