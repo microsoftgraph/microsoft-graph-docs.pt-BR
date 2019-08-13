@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 994b36dfc57f87d89e0fb7f66a28047b81948c2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2bec1aa210c4446d210d5a59816d09c9eaecab84
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999014"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327707"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>tipo de enumeração windowsAutopilotProfileAssignmentDetailedStatus
 
@@ -25,8 +25,6 @@ Ainda não documentado
 |:---|:---|:---|
 |none|,0|Nenhum status detalhado de atribuição|
 |hardwareRequirementsNotMet|1|Os requisitos de hardware não são atendidos. Isso pode acontecer se um perfil autoimplantar do autoautoria for atribuído a um dispositivo sem o TPM 2,0.|
-
-
 
 
 

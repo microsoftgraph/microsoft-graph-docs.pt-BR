@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 178ed3ea09358255482ce95fbab51b584cc53bcf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bbfbbdf6f5dae785a8b2c90a077b7484066b0286
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993813"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351109"
 ---
 # <a name="list-rolescopetags"></a>Listar roleScopeTags
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 231
+Content-Length: 257
 
 {
   "value": [
@@ -72,11 +72,13 @@ Content-Length: 231
       "@odata.type": "#microsoft.graph.roleScopeTag",
       "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
       "displayName": "Display Name value",
-      "description": "Description value"
+      "description": "Description value",
+      "isBuiltIn": true
     }
   ]
 }
 ```
+
 
 
 

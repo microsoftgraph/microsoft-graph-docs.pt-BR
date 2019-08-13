@@ -1,36 +1,36 @@
 ---
-title: tipo de recurso androidPkcsCertificateProfile
-description: Perfil de certificado de PKCS do Android
+title: tipo de recurso androidDeviceOwnerVpnConfiguration
+description: Ao fornecer as configurações neste perfil, você pode instruir o dispositivo totalmente gerenciado do Android para se conectar ao ponto de extremidade da VPN desejado. Especificando o método de autenticação e os tipos de segurança esperados pelo ponto de extremidade da VPN, você pode tornar a conexão VPN perfeita para o usuário final.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c1160e5054ece85b21d9f8cdc61e9a9afb2c66
+ms.openlocfilehash: 37bd216ee5e724b38fa7e3039ed61977493d13d2
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334385"
+ms.locfileid: "36336541"
 ---
-# <a name="androidpkcscertificateprofile-resource-type"></a>tipo de recurso androidPkcsCertificateProfile
+# <a name="androiddeviceownervpnconfiguration-resource-type"></a>tipo de recurso androidDeviceOwnerVpnConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Perfil de certificado de PKCS do Android
+Ao fornecer as configurações neste perfil, você pode instruir o dispositivo totalmente gerenciado do Android para se conectar ao ponto de extremidade da VPN desejado. Especificando o método de autenticação e os tipos de segurança esperados pelo ponto de extremidade da VPN, você pode tornar a conexão VPN perfeita para o usuário final.
 
 
-Herda de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)
+Herda de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar androidPkcsCertificateProfiles](../api/intune-deviceconfig-androidpkcscertificateprofile-list.md)|coleção [androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md)|Listar Propriedades e relações dos objetos [androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md) .|
-|[Obter androidPkcsCertificateProfile](../api/intune-deviceconfig-androidpkcscertificateprofile-get.md)|[androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md)|Leia as propriedades e as relações do objeto [androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md) .|
-|[Criar androidPkcsCertificateProfile](../api/intune-deviceconfig-androidpkcscertificateprofile-create.md)|[androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md)|Criar um novo objeto [androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md) .|
-|[Excluir androidPkcsCertificateProfile](../api/intune-deviceconfig-androidpkcscertificateprofile-delete.md)|Nenhum|Exclui [androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md).|
-|[Atualizar androidPkcsCertificateProfile](../api/intune-deviceconfig-androidpkcscertificateprofile-update.md)|[androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md)|Atualiza as propriedades de um objeto [androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md) .|
+|[Listar androidDeviceOwnerVpnConfigurations](../api/intune-deviceconfig-androiddeviceownervpnconfiguration-list.md)|coleção [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md)|Listar Propriedades e relações dos objetos [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md) .|
+|[Obter androidDeviceOwnerVpnConfiguration](../api/intune-deviceconfig-androiddeviceownervpnconfiguration-get.md)|[androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md)|Leia as propriedades e as relações do objeto [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md) .|
+|[Criar androidDeviceOwnerVpnConfiguration](../api/intune-deviceconfig-androiddeviceownervpnconfiguration-create.md)|[androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md)|Criar um novo objeto [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md) .|
+|[Excluir androidDeviceOwnerVpnConfiguration](../api/intune-deviceconfig-androiddeviceownervpnconfiguration-delete.md)|Nenhum|Exclui [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md).|
+|[Atualizar androidDeviceOwnerVpnConfiguration](../api/intune-deviceconfig-androiddeviceownervpnconfiguration-update.md)|[androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md)|Atualiza as propriedades de um objeto [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -46,16 +46,12 @@ Herda de [androidCertificateProfileBase](../resources/intune-deviceconfig-androi
 |descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|renewalThresholdPercentage|Int32|Porcentagem de limite de renovação de certificado. Valores válidos de 1 a 99 herdados de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
-|subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato do nome de entidade do certificado. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md). Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de nome alternativo da entidade do certificado. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md). Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
-|certificateValidityPeriodValue|Int32|Valor para o período de validade do certificado. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Dimensionar o período de validade do certificado. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md). Os valores possíveis são: `days`, `months`, `years`.|
-|extendedKeyUsages|coleção [extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Configurações de EKU (uso estendido de chave). Esta coleção pode conter um máximo de 500 elementos. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
-|certificationAuthority|String|Autoridade de certificação PKCS|
-|certificationAuthorityName|String|Nome da autoridade de certificação PKCS|
-|certificateTemplateName|String|Nome do modelo de certificado PKCS|
-|Subjectalternativenameformatstring foi|String|Cadeia de caracteres personalizada que define o atributo AAD.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Método de autenticação. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Os valores possíveis são: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`.|
+|ConnectionName|String|Nome da conexão exibido para o usuário. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|role|String|Função quando o tipo de conexão é definido como pulsar seguro. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|esfera|String|O realm quando o tipo de conexão é definido como pulsar seguro. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|servidores|coleção [vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Lista de servidores VPN na rede. Verifique se os usuários finais podem acessar esses locais de rede. Esta coleção pode conter um máximo de 500 elementos. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|Connection|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Tipo de conexão. Os possíveis valores são: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -67,20 +63,19 @@ Herda de [androidCertificateProfileBase](../resources/intune-deviceconfig-androi
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Visão geral de status de dispositivos para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status de usuários para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Visão geral de dispositivos de configuração para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|rootCertificate|[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)|Certificado raiz confiável. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
-|managedDeviceCertificateStates|coleção [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)|Estado do certificado para dispositivos|
+|identityCertificate|[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|Certificado de identidade para autenticação de cliente quando o método de autenticação é certificado.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.androidPkcsCertificateProfile"
+  "@odata.type": "microsoft.graph.androidDeviceOwnerVpnConfiguration"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.androidPkcsCertificateProfile",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
@@ -112,22 +107,19 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String",
   "displayName": "String",
   "version": 1024,
-  "renewalThresholdPercentage": 1024,
-  "subjectNameFormat": "String",
-  "subjectAlternativeNameType": "String",
-  "certificateValidityPeriodValue": 1024,
-  "certificateValidityPeriodScale": "String",
-  "extendedKeyUsages": [
+  "authenticationMethod": "String",
+  "connectionName": "String",
+  "role": "String",
+  "realm": "String",
+  "servers": [
     {
-      "@odata.type": "microsoft.graph.extendedKeyUsage",
-      "name": "String",
-      "objectIdentifier": "String"
+      "@odata.type": "microsoft.graph.vpnServer",
+      "description": "String",
+      "address": "String",
+      "isDefaultServer": true
     }
   ],
-  "certificationAuthority": "String",
-  "certificationAuthorityName": "String",
-  "certificateTemplateName": "String",
-  "subjectAlternativeNameFormatString": "String"
+  "connectionType": "String"
 }
 ```
 

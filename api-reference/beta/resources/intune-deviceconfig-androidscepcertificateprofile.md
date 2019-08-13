@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a418be1bba194b4633f3b87a167f94fd5d20cc0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f6ab654270f797bd1f530d9d54d64d0cd5d77c4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004621"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334357"
 ---
 # <a name="androidscepcertificateprofile-resource-type"></a>tipo de recurso androidScepCertificateProfile
 
@@ -136,8 +136,6 @@ Veja a seguir uma representação JSON do recurso.
   "subjectAlternativeNameFormatString": "String"
 }
 ```
-
-
 
 
 

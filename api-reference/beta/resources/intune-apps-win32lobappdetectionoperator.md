@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 769d3fa2636591d9322c0dffe6dc4d8eb93147ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 48100fc3e1eb67bb620bd0387356094cf8630b27
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012321"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335715"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>tipo de enumeração win32LobAppDetectionOperator
 
@@ -30,8 +30,6 @@ Contém propriedades para o operador de detecção.
 |greaterThanOrEqual|0,5|Operador maior ou igual a.|
 |lessThan|8 |Operador menor que.|
 |lessThanOrEqual|9 |Operador menor ou igual.|
-
-
 
 
 

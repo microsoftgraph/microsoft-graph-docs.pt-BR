@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 03dadcb340c261e3a000d8dc7a8f3add3d5b5411
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e3ccb936cbe58e7d7d508adb1378efa23c769f1d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004355"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338102"
 ---
 # <a name="intendedpurpose-enum-type"></a>tipo de enumeração da intendedpurpose
 
@@ -28,8 +28,6 @@ Opções de importação de PFX.
 |smimeSigning|3D|SmimeSigning|
 |VPN|quatro|VPN|
 |detector|0,5|Detector|
-
-
 
 
 

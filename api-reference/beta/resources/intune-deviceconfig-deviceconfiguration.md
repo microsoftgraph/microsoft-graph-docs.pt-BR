@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b9bc0bc5c2c589a1eaf1bceb989c981806d553f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 88f1dc66fbbb95b4b8f9a340949f41f573eb22fb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001681"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333041"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Tipo de recurso deviceConfiguration
 
@@ -100,8 +100,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
-
 
 
 

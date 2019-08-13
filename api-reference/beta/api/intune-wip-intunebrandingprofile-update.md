@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 27a42933a7ccb87323837bc3fab012d4ccb92b7b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b82968b2b0efc16238fe84da61253fcf594ca8a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993296"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350185"
 ---
 # <a name="update-intunebrandingprofile"></a>Atualizar intuneBrandingProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -72,6 +72,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [intuneB
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo claro atrás do logotipo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial dos aplicativos do portal da empresa|
 |customPrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
+|isRemoveDeviceDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
+|isFactoryResetDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
 
 
 
@@ -85,7 +87,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1264
+Content-length: 1334
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -123,7 +125,9 @@ Content-length: 1264
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "customPrivacyMessage": "Custom Privacy Message value"
+  "customPrivacyMessage": "Custom Privacy Message value",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
 
@@ -132,7 +136,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1436
+Content-Length: 1506
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -173,9 +177,12 @@ Content-Length: 1436
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "customPrivacyMessage": "Custom Privacy Message value"
+  "customPrivacyMessage": "Custom Privacy Message value",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
+
 
 
 

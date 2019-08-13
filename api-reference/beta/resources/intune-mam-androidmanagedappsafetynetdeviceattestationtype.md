@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 03c7496fe5e3d1fce5f73cc0f5954d8415668641
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb21ce8d54b006db4e98828eb7c8240dd2810b14
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968075"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332320"
 ---
 # <a name="androidmanagedappsafetynetdeviceattestationtype-enum-type"></a>tipo de enumeração androidManagedAppSafetyNetDeviceAttestationType
 
@@ -26,8 +26,6 @@ Um requisito de atestado de dispositivo do SafetyNet do Android aplicado por adm
 |none|,0|nenhum conjunto de requisitos|
 |basicIntegrity|1|exigir que o dispositivo Android passe na validação da integridade básica do SafetyNet|
 |basicIntegrityAndDeviceCertification|duas|exigir que o dispositivo Android passe a integridade básica do SafetyNet e as validações de certificação de dispositivos|
-
-
 
 
 

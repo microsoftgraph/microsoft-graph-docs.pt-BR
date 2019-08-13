@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto iosikEv2VpnConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd02a78889306ab7c79df0ad7b890a502c44ce51
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 5da6789a047500e2fbc419b87f5cb59f35b7f91c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715372"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339194"
 ---
 # <a name="update-iosikev2vpnconfiguration"></a>Atualizar iosikEv2VpnConfiguration
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -386,6 +387,7 @@ Content-Length: 4404
   "allowDefaultChildSecurityAssociationParameters": true
 }
 ```
+
 
 
 

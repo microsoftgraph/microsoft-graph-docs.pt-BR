@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: da9489ba5727e344e4a0b1c24ab435ecb0ed18ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a761b16aa860814c4c07079ee78c9eeeb783770d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011551"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334021"
 ---
 # <a name="androidworkprofilewificonfiguration-resource-type"></a>tipo de recurso androidWorkProfileWiFiConfiguration
 
@@ -112,8 +112,6 @@ Veja a seguir uma representação JSON do recurso.
   "wiFiSecurityType": "String"
 }
 ```
-
-
 
 
 

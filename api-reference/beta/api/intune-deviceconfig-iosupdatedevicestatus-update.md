@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e2408f5aea9752b9b05fbd233a9fd5b1821e0547
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 57e3e045f5bbd52a61dbb1d1d19d5075e46972f2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947729"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339005"
 ---
 # <a name="update-iosupdatedevicestatus"></a>Atualizar iosUpdateDeviceStatus
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -120,6 +120,7 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

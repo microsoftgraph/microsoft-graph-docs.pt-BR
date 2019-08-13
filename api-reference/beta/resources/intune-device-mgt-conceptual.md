@@ -4,13 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: fe419355d0e7acd89eab856ed362049629fead13
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 057181a80c90e5c3c20d62c6f14da35fcea02976
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011908"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335002"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -38,6 +37,7 @@ ms.locfileid: "36011908"
 - [Estado de conformidade](intune-devices-compliancestate.md)
 - [Recursos habilitados pelo cliente do Gerenciador de Configurações](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Estado de integridade do cliente de gerenciador de configurações](intune-devices-configurationmanagerclienthealthstate.md)
+- [Informações do cliente do Configuration Manager](intune-devices-configurationmanagerclientinformation.md)
 - [Estado do cliente de gerenciador de configurações](intune-devices-configurationmanagerclientstate.md)
 - [Cronograma diário](intune-devices-dailyschedule.md)
 - [Autorização de compartilhamento de dados](intune-devices-datasharingconsent.md)
@@ -51,6 +51,10 @@ ms.locfileid: "36011908"
 - [Estado de requisitos de hardware de segurança baseada em virtualização para a proteção de dispositivos](intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)
 - [Estado de segurança baseada em virtualização para a proteção de dispositivos](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [Estado do atestado de integridade do dispositivo](intune-devices-devicehealthattestationstate.md)
+- [Script de integridade do dispositivo](intune-devices-devicehealthscript.md)
+- [Regra de conformidade do script de integridade do dispositivo](intune-devices-devicehealthscriptcompliancerule.md)
+- [Operador de regra de conformidade de script de integridade do dispositivo](intune-devices-devicehealthscriptcomplianceruleoperator.md)
+- [Tipo de detecção de script de integridade do dispositivo](intune-devices-devicehealthscriptdetectiontype.md)
 - [Definição de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Instância de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Instância de configuração booleana de gerenciamento de dispositivos](intune-deviceintent-devicemanagementbooleansettinginstance.md)
@@ -111,6 +115,8 @@ ms.locfileid: "36011908"
 - [Informações de hardware](intune-devices-hardwareinformation.md)
 - [Estado de integridade](intune-devices-healthstate.md)
 - [Cronograma por hora](intune-devices-hourlyschedule.md)
+- [Valor de visão duplo](intune-devices-insightvaluedouble.md)
+- [Valor de percepção int](intune-devices-insightvalueint.md)
 - [Mensagem de notificação localizada](intune-notification-localizednotificationmessage.md)
 - [Resultado da ação de localizar dispositivo](intune-devices-locatedeviceactionresult.md)
 - [Condição de gerenciamento local](intune-fencing-locationmanagementcondition.md)
@@ -165,6 +171,12 @@ ms.locfileid: "36011908"
 - [Expressões de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpression.md)
 - [Tipo de operador de expressão de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [Linha de base de análise da experiência do usuário](intune-devices-userexperienceanalyticsbaseline.md)
+- [Categoria de análise da experiência do usuário](intune-devices-userexperienceanalyticscategory.md)
+- [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsight.md)
+- [Valor da visão da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsightvalue.md)
+- [Métrica de análise da experiência do usuário](intune-devices-userexperienceanalyticsmetric.md)
+- [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsoverview.md)
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
 - [Resultado da ação de verificação do Windows Defender](intune-devices-windowsdefenderscanactionresult.md)
 - [Conta do dispositivo Windows](intune-devices-windowsdeviceaccount.md)
@@ -186,5 +198,5 @@ ms.locfileid: "36011908"
 - [Dispositivo gerenciado do Windows](intune-devices-windowsmanageddevice.md)
 - [Aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapp.md)
 - [Estado de integridade do aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapphealthstate.md)
-- [Resumo da integridade do aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapphealthsummary.md)
 - [Estado de proteção do Windows](intune-devices-windowsprotectionstate.md)
+

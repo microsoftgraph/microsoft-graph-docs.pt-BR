@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 67759255d9bdb972639743b7c50efce33f1bd9b4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 39ca0631b849477ab4923294221c2c78e4ab0308
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001521"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332705"
 ---
 # <a name="devicetypes-enum-type"></a>tipo de enumeração deviceTypes
 
@@ -45,8 +45,6 @@ Tipo de dispositivo.
 |rim|100|Rim.|
 |Palm|101|Palm.|
 |desconhecido|255|Representa que o tipo de dispositivo é desconhecido.|
-
-
 
 
 

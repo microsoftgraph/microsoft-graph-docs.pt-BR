@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto mobileAppDependency.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d75a95ec514a9b5185b4d6773a8db874001c7fe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 94cacfff449e499b811932d39a2b63003dc668ac
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973877"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329142"
 ---
 # <a name="get-mobileappdependency"></a>Obter mobileAppDependency
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -78,6 +79,7 @@ Content-Length: 291
   }
 }
 ```
+
 
 
 

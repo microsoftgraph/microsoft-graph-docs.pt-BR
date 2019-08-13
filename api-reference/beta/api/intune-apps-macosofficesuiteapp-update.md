@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 34cf6e9bcd6eb83bdcaaee9a6d94029b0cc2353c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 50d680eef88ec6ecb95795d898822e5c5dc8f7bd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962047"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336975"
 ---
 # <a name="update-macosofficesuiteapp"></a>Atualizar macOSOfficeSuiteApp
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -147,6 +147,7 @@ Content-Length: 890
   "dependentAppCount": 1
 }
 ```
+
 
 
 

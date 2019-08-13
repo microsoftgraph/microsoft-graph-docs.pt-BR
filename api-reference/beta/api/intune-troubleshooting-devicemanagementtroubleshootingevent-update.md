@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a0706753aca89e9f570f0041e93e05c1557e4a75
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 942de87c14594cd4b8f08626fe69411543ad841d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979387"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350290"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>Atualizar deviceManagementTroubleshootingEvent
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|* * TODO: determinar escopos * *|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|* * TODO: Determine escopos ao apponly * *|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -137,6 +137,7 @@ Content-Length: 901
   ]
 }
 ```
+
 
 
 

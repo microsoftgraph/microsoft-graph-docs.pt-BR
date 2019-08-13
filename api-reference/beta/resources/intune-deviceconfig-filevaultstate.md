@@ -4,12 +4,13 @@ description: Estado FileVault
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f122d62f85f90825f5fe3129ec2a314d5886e6f2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: 54e8076dc4b4f6ab20f7790d2a650de6c07aa702
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725865"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325565"
 ---
 # <a name="filevaultstate-enum-type"></a>tipo de enumeração filevaultstate
 
@@ -26,10 +27,6 @@ Estado FileVault
 |driveEncryptedByUser|1|O FileVault foi habilitado pelo usuário e não está sendo gerenciado por política|
 |userDeferredEncryption|duas|A política do FileVault foi instalada com êxito, mas o usuário não iniciou a criptografia|
 |escrowNotEnabled|quatro|A caução da chave de recuperação FileVault não está habilitada|
-
-
-
-
 
 
 

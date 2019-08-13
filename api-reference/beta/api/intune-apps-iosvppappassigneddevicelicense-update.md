@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 55a0fe7cb865e01a2ded749ab5e8d116dbdf03e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 662699f8599d338bec1adbff6554cd3b52198ff0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962324"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330409"
 ---
 # <a name="update-iosvppappassigneddevicelicense"></a>Atualizar iosVppAppAssignedDeviceLicense
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -102,6 +102,7 @@ Content-Length: 376
   "deviceName": "Device Name value"
 }
 ```
+
 
 
 

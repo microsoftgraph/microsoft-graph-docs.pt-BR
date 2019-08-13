@@ -4,12 +4,13 @@ description: Configuração do controle de instalação do aplicativo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21f1a8e79212712378e2510932e8d5e24974be6a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 24afb57908ae4b83053474a6c0e069f2ca8f98e6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002081"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334028"
 ---
 # <a name="appinstallcontroltype-enum-type"></a>tipo de enumeração appInstallControlType
 
@@ -27,8 +28,6 @@ Configuração do controle de instalação do aplicativo
 |storeOnly|duas|Permitir somente aplicativos de armazenamento|
 |a0/&gt|3D|Mostrar recomendações de aplicativo|
 |preferStore|quatro|Avisar antes de instalar aplicativos de fora do repositório|
-
-
 
 
 

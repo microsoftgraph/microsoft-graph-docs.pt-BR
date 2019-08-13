@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9409ddebd69d8b046c522de1c3e58baabc15a2ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab26d2b6cda774f3d2cf3284f92d1901cc4bdf82
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970616"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333209"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>tipo de enumeração Enumeraçãodevicecomplianceactiontype
 
@@ -31,8 +31,6 @@ Enumeração de tipo de ação agendada
 |removeResourceAccessProfiles|0,5|Remover perfis de acesso a recursos do dispositivo|
 |Membropushnotification|9 |Enviar notificação por push ao dispositivo|
 |remoteLock|10 |Bloquear o dispositivo remotamente|
-
-
 
 
 

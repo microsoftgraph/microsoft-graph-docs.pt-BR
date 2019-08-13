@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e7da685d6402e6e23728f6ac57387c74dc92b765
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1d5386ebfdd9e7859b9e6c0d92f60e4687c9c42
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971428"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334700"
 ---
 # <a name="androideasemailprofileconfiguration-resource-type"></a>tipo de recurso androidEasEmailProfileConfiguration
 
@@ -134,8 +134,6 @@ Veja a seguir uma representação JSON do recurso.
   "customDomainName": "String"
 }
 ```
-
-
 
 
 

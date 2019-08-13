@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7a5a7284014300985818da39e13fa0beecd0c89
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 409b71acfcf3bb5d06a50cad175d82666ec58716
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947323"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338753"
 ---
 # <a name="create-macosenterprisewificonfiguration"></a>Criar macOSEnterpriseWiFiConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -205,6 +205,7 @@ Content-Length: 2030
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
+
 
 
 

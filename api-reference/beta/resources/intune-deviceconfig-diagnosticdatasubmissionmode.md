@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 788da8fd9a239bf26dfd2d9e8d8fbf308d059784
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fce6bbe40d985c15c5455c3b83de88ced4cce768
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004537"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332684"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>tipo de enumeração diagnosticDataSubmissionMode
 
@@ -28,8 +28,6 @@ Permitir que o dispositivo envie dados de telemetria e diagnósticos de uso, com
 |Basic|duas|Envia dados básicos de telemetria.|
 |metarquivo|3D|Envia dados de telemetria avançados, incluindo dados de uso e insights.|
 |cheia|quatro|Envia dados de telemetria completos, incluindo dados de diagnóstico, como o estado do sistema.|
-
-
 
 
 

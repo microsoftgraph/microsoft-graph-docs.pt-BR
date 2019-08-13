@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 64b6e8b01743ae02ea520d6500019c92c1006ce1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b0f2e4b909325bf3fe091c0339f6ef1d1e640f3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971001"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333671"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>tipo de enumeração certificateValidityPeriodScale
 
@@ -26,8 +26,6 @@ Opções de período de validade do certificado.
 |durante|,0|Dias.|
 |meses|1|Meses.|
 |daqui|duas|Anos.|
-
-
 
 
 

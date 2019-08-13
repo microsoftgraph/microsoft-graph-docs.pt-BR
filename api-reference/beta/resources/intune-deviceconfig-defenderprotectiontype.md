@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0df4d0772d9204a47d86f8e9e6ed62173ab76cb5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c1af9d31f449f0bd2bda960b65876c2770957436
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001674"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333524"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>tipo de enumeração defenderProtectionType
 
@@ -26,8 +26,6 @@ Possíveis valores de proteção do defender
 |UserDefined|,0|Valor padrão do dispositivo, sem intenção.|
 |possibilite|1|Funcionalidade de bloqueio.|
 |auditmode|duas|Permitir a funcionalidade, mas gerar logs.|
-
-
 
 
 
