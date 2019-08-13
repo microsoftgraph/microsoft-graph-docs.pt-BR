@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ced4dc2c59be903effaec1d0e0765b698fca5019
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: fece4c56bc83434a8ea31bfac145d45f5b7862b0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891883"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327365"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getEmailAppUsageAppsUserCounts('D7')
+    .getEmailAppUsageAppsUserCounts("D7")
     .buildRequest()
     .get();
 

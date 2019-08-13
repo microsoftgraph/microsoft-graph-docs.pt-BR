@@ -5,51 +5,51 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 8e349ce3930a50a6ddb7863cd7d66a4385e7d46a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2bf329b663617f932d660ce1bf024edf472bc9ba
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954138"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36323497"
 ---
-# <a name="get-governancerolesetting"></a><span data-ttu-id="6bb20-103">Obter governanceRoleSetting</span><span class="sxs-lookup"><span data-stu-id="6bb20-103">Get governanceRoleSetting</span></span>
+# <a name="get-governancerolesetting"></a><span data-ttu-id="eda80-103">Obter governanceRoleSetting</span><span class="sxs-lookup"><span data-stu-id="eda80-103">Get governanceRoleSetting</span></span>
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6bb20-104">Recupere as propriedades e os relacionamentos de um [governanceRoleSetting](../resources/governancerolesetting.md).</span><span class="sxs-lookup"><span data-stu-id="6bb20-104">Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
+<span data-ttu-id="eda80-104">Recupere as propriedades e os relacionamentos de um [governanceRoleSetting](../resources/governancerolesetting.md).</span><span class="sxs-lookup"><span data-stu-id="eda80-104">Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6bb20-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="6bb20-105">Permissions</span></span>
-<span data-ttu-id="6bb20-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6bb20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="eda80-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="eda80-105">Permissions</span></span>
+<span data-ttu-id="eda80-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eda80-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6bb20-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6bb20-108">Permission type</span></span>      | <span data-ttu-id="6bb20-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="6bb20-109">Permissions</span></span>              |
+|<span data-ttu-id="eda80-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="eda80-108">Permission type</span></span>      | <span data-ttu-id="eda80-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="eda80-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6bb20-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6bb20-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6bb20-111">PrivilegedAccess. ReadWrite. AzureResources</span><span class="sxs-lookup"><span data-stu-id="6bb20-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="6bb20-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6bb20-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6bb20-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6bb20-113">Not supported.</span></span>    |
-|<span data-ttu-id="6bb20-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6bb20-114">Application</span></span> | <span data-ttu-id="6bb20-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6bb20-115">Not supported.</span></span> |
+|<span data-ttu-id="eda80-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="eda80-110">Delegated (work or school account)</span></span> | <span data-ttu-id="eda80-111">PrivilegedAccess. ReadWrite. AzureResources</span><span class="sxs-lookup"><span data-stu-id="eda80-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="eda80-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="eda80-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eda80-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="eda80-113">Not supported.</span></span>    |
+|<span data-ttu-id="eda80-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="eda80-114">Application</span></span> | <span data-ttu-id="eda80-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="eda80-115">Not supported.</span></span> |
 
-<span data-ttu-id="6bb20-116">Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso ao qual o [governanceRoleSetting](../resources/governancerolesetting.md) pertence.</span><span class="sxs-lookup"><span data-stu-id="6bb20-116">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.</span></span>
-## <a name="http-request"></a><span data-ttu-id="6bb20-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6bb20-117">HTTP request</span></span>
+<span data-ttu-id="eda80-116">Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso ao qual o [governanceRoleSetting](../resources/governancerolesetting.md) pertence.</span><span class="sxs-lookup"><span data-stu-id="eda80-116">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.</span></span>
+## <a name="http-request"></a><span data-ttu-id="eda80-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="eda80-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6bb20-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6bb20-118">Optional query parameters</span></span>
-<span data-ttu-id="6bb20-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6bb20-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="eda80-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="eda80-118">Optional query parameters</span></span>
+<span data-ttu-id="eda80-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="eda80-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6bb20-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6bb20-120">Request headers</span></span>
-| <span data-ttu-id="6bb20-121">Nome</span><span class="sxs-lookup"><span data-stu-id="6bb20-121">Name</span></span>      |<span data-ttu-id="6bb20-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="6bb20-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="eda80-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="eda80-120">Request headers</span></span>
+| <span data-ttu-id="eda80-121">Nome</span><span class="sxs-lookup"><span data-stu-id="eda80-121">Name</span></span>      |<span data-ttu-id="eda80-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="eda80-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="6bb20-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="6bb20-123">Authorization</span></span>  | <span data-ttu-id="6bb20-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="6bb20-124">Bearer {code}</span></span>|
+| <span data-ttu-id="eda80-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="eda80-123">Authorization</span></span>  | <span data-ttu-id="eda80-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="eda80-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6bb20-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6bb20-125">Request body</span></span>
-<span data-ttu-id="6bb20-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6bb20-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="6bb20-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="6bb20-127">Response</span></span>
-<span data-ttu-id="6bb20-128">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6bb20-128">If successful, this method returns a `200 OK` response code and a [governanceRoleSetting](../resources/governancerolesetting.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6bb20-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6bb20-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6bb20-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6bb20-130">Request</span></span>
+## <a name="request-body"></a><span data-ttu-id="eda80-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="eda80-125">Request body</span></span>
+<span data-ttu-id="eda80-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="eda80-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="eda80-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="eda80-127">Response</span></span>
+<span data-ttu-id="eda80-128">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="eda80-128">If successful, this method returns a `200 OK` response code and a [governanceRoleSetting](../resources/governancerolesetting.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="eda80-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="eda80-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="eda80-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eda80-130">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6bb20-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="6bb20-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="eda80-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="eda80-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesetting"
@@ -57,25 +57,25 @@ GET /privilegedAccess/azureResources/roleSettings/{id}
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/80dc5d6f-8d89-47b3-953f-01dc909ed3f9
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6bb20-132">C#</span><span class="sxs-lookup"><span data-stu-id="6bb20-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="eda80-132">C#</span><span class="sxs-lookup"><span data-stu-id="eda80-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-governancerolesetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6bb20-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="6bb20-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="eda80-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eda80-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-governancerolesetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6bb20-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6bb20-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="eda80-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="eda80-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governancerolesetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="6bb20-135">Java</span><span class="sxs-lookup"><span data-stu-id="6bb20-135">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="eda80-135">Java</span><span class="sxs-lookup"><span data-stu-id="eda80-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="6bb20-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="6bb20-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="eda80-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="eda80-136">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

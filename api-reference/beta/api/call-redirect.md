@@ -5,63 +5,63 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 56ffe34e00057fd0c3afe64c519e8fffceb55683
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47b3497514b455e7e14d954098d2a13f7d55f9fa
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944404"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36317691"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="21620-103">Call: Redirect</span><span class="sxs-lookup"><span data-stu-id="21620-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="cdb89-103">Call: Redirect</span><span class="sxs-lookup"><span data-stu-id="cdb89-103">call: redirect</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="21620-104">Redirecione as chamadas recebidas.</span><span class="sxs-lookup"><span data-stu-id="21620-104">Redirect an incoming call.</span></span>
+<span data-ttu-id="cdb89-104">Redirecione as chamadas recebidas.</span><span class="sxs-lookup"><span data-stu-id="cdb89-104">Redirect an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="21620-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="21620-105">Permissions</span></span>
-<span data-ttu-id="21620-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="21620-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cdb89-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="cdb89-105">Permissions</span></span>
+<span data-ttu-id="cdb89-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cdb89-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="21620-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="21620-108">Permission type</span></span> | <span data-ttu-id="21620-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="21620-109">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="cdb89-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cdb89-108">Permission type</span></span> | <span data-ttu-id="cdb89-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cdb89-109">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="21620-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="21620-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="21620-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="21620-111">Not Supported</span></span>                |
-| <span data-ttu-id="21620-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="21620-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="21620-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="21620-113">Not Supported</span></span>                |
-| <span data-ttu-id="21620-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="21620-114">Application</span></span>     | <span data-ttu-id="21620-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="21620-115">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="cdb89-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cdb89-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="cdb89-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="cdb89-111">Not Supported</span></span>                |
+| <span data-ttu-id="cdb89-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cdb89-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cdb89-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="cdb89-113">Not Supported</span></span>                |
+| <span data-ttu-id="cdb89-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cdb89-114">Application</span></span>     | <span data-ttu-id="cdb89-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="cdb89-115">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="21620-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="21620-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cdb89-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cdb89-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/redirect
 POST /applications/{id}/calls/{id}/redirect
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="21620-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="21620-117">Request headers</span></span>
-| <span data-ttu-id="21620-118">Nome</span><span class="sxs-lookup"><span data-stu-id="21620-118">Name</span></span>          | <span data-ttu-id="21620-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="21620-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="cdb89-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cdb89-117">Request headers</span></span>
+| <span data-ttu-id="cdb89-118">Nome</span><span class="sxs-lookup"><span data-stu-id="cdb89-118">Name</span></span>          | <span data-ttu-id="cdb89-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="cdb89-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="21620-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="21620-120">Authorization</span></span> | <span data-ttu-id="21620-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="21620-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cdb89-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="cdb89-120">Authorization</span></span> | <span data-ttu-id="cdb89-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cdb89-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="21620-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="21620-123">Request body</span></span>
-<span data-ttu-id="21620-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="21620-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cdb89-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cdb89-123">Request body</span></span>
+<span data-ttu-id="cdb89-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cdb89-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="21620-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="21620-125">Parameter</span></span>      | <span data-ttu-id="21620-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="21620-126">Type</span></span>    |<span data-ttu-id="21620-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="21620-127">Description</span></span>|
+| <span data-ttu-id="cdb89-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="cdb89-125">Parameter</span></span>      | <span data-ttu-id="cdb89-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="cdb89-126">Type</span></span>    |<span data-ttu-id="cdb89-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="cdb89-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="21620-128">targets</span><span class="sxs-lookup"><span data-stu-id="21620-128">targets</span></span>|<span data-ttu-id="21620-129">coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="21620-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="21620-130">Os participantes de destino da operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="21620-130">The target participants of the redirect operation.</span></span>|
-|<span data-ttu-id="21620-131">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="21620-131">targetDisposition</span></span>|<span data-ttu-id="21620-132">String</span><span class="sxs-lookup"><span data-stu-id="21620-132">String</span></span>|<span data-ttu-id="21620-133">O valor possível é:`default`</span><span class="sxs-lookup"><span data-stu-id="21620-133">The possible value is: `default`</span></span>|
-|<span data-ttu-id="21620-134">timeout</span><span class="sxs-lookup"><span data-stu-id="21620-134">timeout</span></span>|<span data-ttu-id="21620-135">Int32</span><span class="sxs-lookup"><span data-stu-id="21620-135">Int32</span></span>|<span data-ttu-id="21620-136">O tempo limite em segundos para a operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="21620-136">The timeout in seconds for the redirect operation.</span></span>|
-|<span data-ttu-id="21620-137">maskCallee</span><span class="sxs-lookup"><span data-stu-id="21620-137">maskCallee</span></span>|<span data-ttu-id="21620-138">Booliano</span><span class="sxs-lookup"><span data-stu-id="21620-138">Boolean</span></span>|<span data-ttu-id="21620-139">Indica se o receptor deve ser mascarado.</span><span class="sxs-lookup"><span data-stu-id="21620-139">Indicates whether to mask the callee.</span></span>|
-|<span data-ttu-id="21620-140">maskCaller</span><span class="sxs-lookup"><span data-stu-id="21620-140">maskCaller</span></span>|<span data-ttu-id="21620-141">Booliano</span><span class="sxs-lookup"><span data-stu-id="21620-141">Boolean</span></span>|<span data-ttu-id="21620-142">Indica se o chamador deve ser mascarado.</span><span class="sxs-lookup"><span data-stu-id="21620-142">Indicates whether to mask the caller.</span></span>|
+|<span data-ttu-id="cdb89-128">targets</span><span class="sxs-lookup"><span data-stu-id="cdb89-128">targets</span></span>|<span data-ttu-id="cdb89-129">coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="cdb89-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="cdb89-130">Os participantes de destino da operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="cdb89-130">The target participants of the redirect operation.</span></span>|
+|<span data-ttu-id="cdb89-131">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="cdb89-131">targetDisposition</span></span>|<span data-ttu-id="cdb89-132">String</span><span class="sxs-lookup"><span data-stu-id="cdb89-132">String</span></span>|<span data-ttu-id="cdb89-133">O valor possível é:`default`</span><span class="sxs-lookup"><span data-stu-id="cdb89-133">The possible value is: `default`</span></span>|
+|<span data-ttu-id="cdb89-134">timeout</span><span class="sxs-lookup"><span data-stu-id="cdb89-134">timeout</span></span>|<span data-ttu-id="cdb89-135">Int32</span><span class="sxs-lookup"><span data-stu-id="cdb89-135">Int32</span></span>|<span data-ttu-id="cdb89-136">O tempo limite em segundos para a operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="cdb89-136">The timeout in seconds for the redirect operation.</span></span>|
+|<span data-ttu-id="cdb89-137">maskCallee</span><span class="sxs-lookup"><span data-stu-id="cdb89-137">maskCallee</span></span>|<span data-ttu-id="cdb89-138">Booliano</span><span class="sxs-lookup"><span data-stu-id="cdb89-138">Boolean</span></span>|<span data-ttu-id="cdb89-139">Indica se o receptor deve ser mascarado.</span><span class="sxs-lookup"><span data-stu-id="cdb89-139">Indicates whether to mask the callee.</span></span>|
+|<span data-ttu-id="cdb89-140">maskCaller</span><span class="sxs-lookup"><span data-stu-id="cdb89-140">maskCaller</span></span>|<span data-ttu-id="cdb89-141">Booliano</span><span class="sxs-lookup"><span data-stu-id="cdb89-141">Boolean</span></span>|<span data-ttu-id="cdb89-142">Indica se o chamador deve ser mascarado.</span><span class="sxs-lookup"><span data-stu-id="cdb89-142">Indicates whether to mask the caller.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="21620-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="21620-143">Response</span></span>
-<span data-ttu-id="21620-144">Retorna `202 Accepted` o código de resposta</span><span class="sxs-lookup"><span data-stu-id="21620-144">Returns `202 Accepted` response code</span></span>
+## <a name="response"></a><span data-ttu-id="cdb89-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="cdb89-143">Response</span></span>
+<span data-ttu-id="cdb89-144">Retorna `202 Accepted` o código de resposta</span><span class="sxs-lookup"><span data-stu-id="cdb89-144">Returns `202 Accepted` response code</span></span>
 
-## <a name="examples"></a><span data-ttu-id="21620-145">Exemplos</span><span class="sxs-lookup"><span data-stu-id="21620-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cdb89-145">Exemplos</span><span class="sxs-lookup"><span data-stu-id="cdb89-145">Examples</span></span>
 
-### <a name="redirect-a-call"></a><span data-ttu-id="21620-146">Redirecionar uma chamada</span><span class="sxs-lookup"><span data-stu-id="21620-146">Redirect a call</span></span>
+### <a name="redirect-a-call"></a><span data-ttu-id="cdb89-146">Redirecionar uma chamada</span><span class="sxs-lookup"><span data-stu-id="cdb89-146">Redirect a call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="21620-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="21620-147">Request</span></span>
-<span data-ttu-id="21620-148">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="21620-148">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="cdb89-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cdb89-147">Request</span></span>
+<span data-ttu-id="cdb89-148">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="cdb89-148">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="21620-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="21620-149">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cdb89-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="cdb89-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-redirect"
@@ -92,28 +92,28 @@ Content-Length: 515
   "maskCaller": false
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="21620-150">C#</span><span class="sxs-lookup"><span data-stu-id="21620-150">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cdb89-150">C#</span><span class="sxs-lookup"><span data-stu-id="cdb89-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="21620-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="21620-151">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cdb89-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cdb89-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="21620-152">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="21620-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cdb89-152">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="cdb89-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="21620-153">Java</span><span class="sxs-lookup"><span data-stu-id="21620-153">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="cdb89-153">Java</span><span class="sxs-lookup"><span data-stu-id="cdb89-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="21620-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="21620-154">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="cdb89-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="cdb89-154">Response</span></span>
 
-> <span data-ttu-id="21620-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="21620-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="cdb89-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cdb89-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -124,9 +124,9 @@ Content-Length: 515
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="forward-a-call"></a><span data-ttu-id="21620-157">Encaminhar uma chamada</span><span class="sxs-lookup"><span data-stu-id="21620-157">Forward a call</span></span>
+### <a name="forward-a-call"></a><span data-ttu-id="cdb89-157">Encaminhar uma chamada</span><span class="sxs-lookup"><span data-stu-id="cdb89-157">Forward a call</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="21620-158">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="21620-158">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="cdb89-158">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="cdb89-158">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -179,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="21620-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="21620-159">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="cdb89-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cdb89-159">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
@@ -206,13 +206,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="21620-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="21620-160">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="cdb89-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="cdb89-160">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---redirecting"></a><span data-ttu-id="21620-161">Notificação-redirecionamento</span><span class="sxs-lookup"><span data-stu-id="21620-161">Notification - redirecting</span></span>
+##### <a name="notification---redirecting"></a><span data-ttu-id="cdb89-161">Notificação-redirecionamento</span><span class="sxs-lookup"><span data-stu-id="cdb89-161">Notification - redirecting</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -241,7 +241,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="21620-162">Notificação-terminada</span><span class="sxs-lookup"><span data-stu-id="21620-162">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="cdb89-162">Notificação-terminada</span><span class="sxs-lookup"><span data-stu-id="cdb89-162">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
