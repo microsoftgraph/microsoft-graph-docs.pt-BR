@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 309b4c58750ae33bb92165d80bf4cad1e1f720b7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 4265558c603e542ee4bc3b23fe4935b08b7ffb89
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891433"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320340"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getYammerActivityUserCounts('D7')
+    .getYammerActivityUserCounts("D7")
     .buildRequest()
     .get();
 

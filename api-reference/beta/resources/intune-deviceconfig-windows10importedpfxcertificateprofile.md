@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80533921bd2c9e941d2e3e5b1ea6a666d0af568a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7826cdb5db651c5507b310118b0378d8b13bfdd5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969251"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370330"
 ---
 # <a name="windows10importedpfxcertificateprofile-resource-type"></a>tipo de recurso windows10ImportedPFXCertificateProfile
 
@@ -117,8 +117,6 @@ Veja a seguir uma representação JSON do recurso.
   "intendedPurpose": "String"
 }
 ```
-
-
 
 
 

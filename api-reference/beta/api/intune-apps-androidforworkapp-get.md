@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f339d05f387b80264f1ddfee51d5adc6999ecd8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1546d9d3c4cca771400acda2ea0e3fdc02c6ce3a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952426"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322701"
 ---
 # <a name="get-androidforworkapp"></a>Obter androidForWorkApp
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -105,6 +105,7 @@ Content-Length: 1154
   }
 }
 ```
+
 
 
 

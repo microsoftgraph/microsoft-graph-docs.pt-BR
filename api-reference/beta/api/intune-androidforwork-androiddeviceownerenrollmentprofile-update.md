@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bd54e607633344faa0331a6cf135063e894f454
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 54dff37accee2befa16ab5787dbd199b3f165813
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952944"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322874"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>Atualizar androidDeviceOwnerEnrollmentProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
-|scopeTags|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
@@ -77,7 +77,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 613
+Content-length: 627
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -94,8 +94,8 @@ Content-length: 613
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "scopeTags": [
-    "Scope Tags value"
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
@@ -105,7 +105,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 785
+Content-Length: 799
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -125,11 +125,12 @@ Content-Length: 785
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "scopeTags": [
-    "Scope Tags value"
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
+
 
 
 

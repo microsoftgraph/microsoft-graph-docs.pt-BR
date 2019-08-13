@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 641b31e570990ec57d319b6de58110a35d8c45c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b06b1db2b8e0cb2e09b3f8b05c64ca41683ed2c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004089"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321950"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso macOSGeneralDeviceConfiguration
 
@@ -93,6 +93,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |classroomForceAutomaticallyJoinClasses|Booliano|Indica se a permissão será ou não automaticamente para as solicitações do professor, sem avisar o aluno. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
 |classroomForceRequestPermissionToLeaveClasses|Booliano|Indica se um aluno inscrito em um curso não gerenciado via sala de aula será solicitado a solicitar permissão do professor ao tentar sair do curso. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
 |classroomForceUnpromptedAppAndDeviceLock|Booliano|Indica se o professor deve ou não bloquear aplicativos ou o dispositivo sem avisar o aluno. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|iCloudBlockActivityContinuation|Boolean|Indica se o usuário será ou não impedido de continuar o trabalho que iniciou em um dispositivo MacOS em outro dispositivo iOS ou MacOS (MacOS 10,15 ou posterior).|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -203,11 +204,10 @@ Veja a seguir uma representação JSON do recurso.
   "classroomAppForceUnpromptedScreenObservation": true,
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
-  "classroomForceUnpromptedAppAndDeviceLock": true
+  "classroomForceUnpromptedAppAndDeviceLock": true,
+  "iCloudBlockActivityContinuation": true
 }
 ```
-
-
 
 
 

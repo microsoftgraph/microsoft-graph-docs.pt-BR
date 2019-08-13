@@ -4,12 +4,13 @@ description: Tipo de modelo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd9855bb1d09d804ec8335dac9ebdc94800c3cfa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 01e4791d0904d40063b2542e0589fc4e7c8ef890
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001941"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319402"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>tipo de enumeração deviceManagementTemplateType
 
@@ -27,8 +28,6 @@ Tipo de modelo
 |advancedThreatProtectionSecurityBaseline|duas|Modelo de linha de base de segurança de proteção contra ameaças|
 |deviceConfiguration|3D|Modelo de configuração de dispositivo|
 |cliente|quatro|Modelo personalizado de administração personalizada|
-
-
 
 
 

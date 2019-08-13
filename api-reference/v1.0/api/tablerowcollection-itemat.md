@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 764b144129a75a2403108ce707da0dfaa1e0dadc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84b5d48fd4b58d2657f3bfcbdb22798bea924117
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024333"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36316292"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -26,7 +26,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/rows/itemAt
@@ -54,6 +53,8 @@ Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto 
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -70,7 +71,7 @@ Content-length: 20
   "index": 4
 }
 ```
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-itemat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

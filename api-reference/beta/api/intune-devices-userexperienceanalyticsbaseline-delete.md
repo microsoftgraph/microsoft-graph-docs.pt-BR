@@ -1,33 +1,33 @@
 ---
-title: Excluir windows81CompliancePolicy
-description: Exclui windows81CompliancePolicy.
+title: Excluir userExperienceAnalyticsBaseline
+description: Exclui userExperienceAnalyticsBaseline.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d65097d356a8ba41f1ee1959079d8cb633779e02
+ms.openlocfilehash: 4748d3b52950c5e77030357b5c480c83850eacd5
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314235"
+ms.locfileid: "36311603"
 ---
-# <a name="delete-windows81compliancepolicy"></a>Excluir windows81CompliancePolicy
+# <a name="delete-userexperienceanalyticsbaseline"></a>Excluir userExperienceAnalyticsBaseline
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md).
+Exclui [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+DELETE /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -55,7 +55,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}
 ```
 
 ### <a name="response"></a>Resposta

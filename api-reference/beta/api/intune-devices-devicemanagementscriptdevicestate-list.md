@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09a1f525ccad965116ba293c89e2996efd4b7840
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fe14c5b2a866c36e50f097dd4c290823f56bf8ad
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981581"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310364"
 ---
 # <a name="list-devicemanagementscriptdevicestates"></a>Listar deviceManagementScriptDeviceStates
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 391
+Content-Length: 714
 
 {
   "value": [
@@ -75,11 +75,16 @@ Content-Length: 391
       "resultMessage": "Result Message value",
       "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
       "errorCode": 9,
-      "errorDescription": "Error Description value"
+      "errorDescription": "Error Description value",
+      "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+      "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+      "remediationScriptError": "Remediation Script Error value",
+      "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
     }
   ]
 }
 ```
+
 
 
 

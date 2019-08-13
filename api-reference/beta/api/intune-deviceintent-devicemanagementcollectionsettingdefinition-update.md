@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto deviceManagementCollectionSet
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4a1eefdab1897a74dd562c91b1ea002b9b9bf21
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d40a1f4a32b5ec57e96e6c5920ce1c4c64259231
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960822"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313430"
 ---
 # <a name="update-devicemanagementcollectionsettingdefinition"></a>Atualizar deviceManagementCollectionSettingDefinition
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -145,6 +146,7 @@ Content-Length: 844
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
+
 
 
 

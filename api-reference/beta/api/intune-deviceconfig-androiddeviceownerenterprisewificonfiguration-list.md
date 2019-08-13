@@ -1,24 +1,24 @@
 ---
-title: Listar macOSScepCertificateProfiles
-description: Listar Propriedades e relações dos objetos macOSScepCertificateProfile.
+title: Listar androidDeviceOwnerEnterpriseWiFiConfigurations
+description: Listar Propriedades e relações dos objetos androidDeviceOwnerEnterpriseWiFiConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f8f84760a42e985a982273027e229a281bf69ea
+ms.openlocfilehash: da27785a29cd5f0264f8311ee14a364fcfb1c4df
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315173"
+ms.locfileid: "36316869"
 ---
-# <a name="list-macosscepcertificateprofiles"></a>Listar macOSScepCertificateProfiles
+# <a name="list-androiddeviceownerenterprisewificonfigurations"></a>Listar androidDeviceOwnerEnterpriseWiFiConfigurations
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [macOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md) .
+Listar Propriedades e relações dos objetos [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [macOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -64,13 +64,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2407
+Content-Length: 1993
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.macOSScepCertificateProfile",
-      "id": "78c3929d-929d-78c3-9d92-c3789d92c378",
+      "@odata.type": "#microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration",
+      "id": "7ef0d9c3-d9c3-7ef0-c3d9-f07ec3d9f07e",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
@@ -101,34 +101,18 @@ Content-Length: 2407
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "renewalThresholdPercentage": 10,
-      "subjectNameFormat": "commonNameAsEmail",
-      "subjectAlternativeNameType": "emailAddress",
-      "certificateValidityPeriodValue": 14,
-      "certificateValidityPeriodScale": "months",
-      "scepServerUrls": [
-        "Scep Server Urls value"
-      ],
-      "subjectNameFormatString": "Subject Name Format String value",
-      "keyUsage": "digitalSignature",
-      "keySize": "size2048",
-      "hashAlgorithm": "sha2",
-      "extendedKeyUsages": [
-        {
-          "@odata.type": "microsoft.graph.extendedKeyUsage",
-          "name": "Name value",
-          "objectIdentifier": "Object Identifier value"
-        }
-      ],
-      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-      "certificateStore": "machine",
-      "customSubjectAlternativeNames": [
-        {
-          "@odata.type": "microsoft.graph.customSubjectAlternativeName",
-          "sanType": "emailAddress",
-          "name": "Name value"
-        }
-      ]
+      "networkName": "Network Name value",
+      "ssid": "Ssid value",
+      "connectAutomatically": true,
+      "connectWhenNetworkNameIsHidden": true,
+      "wiFiSecurityType": "wep",
+      "preSharedKey": "Pre Shared Key value",
+      "preSharedKeyIsSet": true,
+      "eapType": "eapTtls",
+      "authenticationMethod": "usernameAndPassword",
+      "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+      "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
+      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
     }
   ]
 }

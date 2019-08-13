@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e60231d60494df23f60dbd007f1c2cb702adc59
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 98e8ba6a548a074c6a682f57a18df693ea9849ff
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946401"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314851"
 ---
 # <a name="create-sharedpcconfiguration"></a>Criar sharedPCConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -74,7 +74,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar sharedPC
 |setPowerPolicies|[habilitação](../resources/intune-shared-enablement.md)|Especifica se as políticas de energia padrão do computador compartilhado devem ser ativadas/desativadas. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |disablePowerPolicies|Booliano|Especifica se as políticas padrão de energia do PC compartilhado devem ser desabilitadas.|
 |signInOnResume|[habilitação](../resources/intune-shared-enablement.md)|Especifica o requisito para entrar sempre que o dispositivo é ativado do modo de suspensão. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|disableSignInOnResume|Booliano|Desabilita o requisito de entrar sempre que o dispositivo sai do modo de suspensão.|
+|disableSignInOnResume|Boolean|Desabilita o requisito de entrar sempre que o dispositivo sai do modo de suspensão.|
 |enabled|Boolean|Habilita o modo de PC compartilhado e aplica as políticas de PC compartilhadas.|
 |idleTimeBeforeSleepInSeconds|Int32|Especifica o tempo em segundos que um dispositivo deve ficar ocioso antes de o PC entrar em suspensão. Definir esse valor como 0 impede que o tempo limite de suspensão ocorra.|
 |kioskAppDisplayName|String|Especifica o texto de exibição para a conta mostrada na tela de entrada que inicializa o aplicativo especificado por SetKioskAppUserModelId. Aplicável somente quando KioskAppUserModelId está definido.|
@@ -219,6 +219,7 @@ Content-Length: 2092
   "fastFirstSignIn": "enabled"
 }
 ```
+
 
 
 

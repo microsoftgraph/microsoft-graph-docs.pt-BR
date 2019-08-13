@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 86948b3c82a5198977de7ef799002d1dab69ecbb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fee1c32365569932e4ab7740331099cdfa93069b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995619"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351193"
 ---
 # <a name="create-rolescopetag"></a>Criar roleScopeTag
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,6 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleScop
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
 |descrição|String|Descrição da marca de escopo da função.|
+|isBuiltIn|Booliano|Descrição da marca de escopo da função.|
 
 
 
@@ -68,12 +69,13 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/roleScopeTags
 Content-type: application/json
-Content-length: 133
+Content-length: 155
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "isBuiltIn": true
 }
 ```
 
@@ -82,15 +84,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 182
+Content-Length: 204
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "isBuiltIn": true
 }
 ```
+
 
 
 
