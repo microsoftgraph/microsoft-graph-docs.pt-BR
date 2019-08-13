@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f660c545891bd75d9c329db04b00d53cea17232
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b12fafa6e9bcb8eb183714107a61abc0f53ca099
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005027"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335763"
 ---
 # <a name="webapp-resource-type"></a>Tipo de recurso webApp
 
@@ -105,8 +105,6 @@ Veja a seguir uma representação JSON do recurso.
   "useManagedBrowser": true
 }
 ```
-
-
 
 
 

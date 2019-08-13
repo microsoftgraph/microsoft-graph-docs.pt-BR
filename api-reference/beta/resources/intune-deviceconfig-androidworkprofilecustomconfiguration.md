@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf5710c0b6d121a89cf563b9dfa56224694719f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0d43b7a372860cb3005b06539557f59dbf827f3a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971211"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334217"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>tipo de recurso androidWorkProfileCustomConfiguration
 
@@ -113,8 +113,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
 
 
 
