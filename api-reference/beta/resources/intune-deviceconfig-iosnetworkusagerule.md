@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52da789c1a01bc74868157b4a81e459b1059856e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84662ed78c4692bc64dd59f813dc1c056e8c0564
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004215"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356925"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Tipo de recurso iosNetworkUsageRule
 
@@ -53,8 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "cellularDataBlocked": true
 }
 ```
-
-
 
 
 

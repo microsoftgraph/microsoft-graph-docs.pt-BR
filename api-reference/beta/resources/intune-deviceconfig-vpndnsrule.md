@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76182d87ec04220ed126165676961e11722f17ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 983b30b1f724c3c8f76e967179c6fcdb1ff1fecb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969510"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367726"
 ---
 # <a name="vpndnsrule-resource-type"></a>tipo de recurso vpnDnsRule
 
@@ -51,8 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "persistent": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c6cb5bbf308aeda967ce54b6016a6ebb2083a66c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0e9c98a40992bd9404f101f07640014a3f4b6ab5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000526"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367992"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>tipo de enumeração sharedPCAccountDeletionPolicyType
 
@@ -26,8 +26,6 @@ Valores possíveis para quando as contas são excluídas em um computador compar
 |imediato|,0|Excluir imediatamente.|
 |diskSpaceThreshold|1|Excluir no limite de espaço em disco.|
 |diskSpaceThresholdOrInactiveThreshold|duas|Excluir no limite de espaço em disco ou limite inativo.|
-
-
 
 
 

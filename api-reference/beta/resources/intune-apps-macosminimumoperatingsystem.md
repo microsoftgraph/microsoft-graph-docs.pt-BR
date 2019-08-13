@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 455c9ce625bc36b1f3423cba2a7538d1d912f6ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1eeef6db49fa4320016559908ff34830f8e6b6e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005433"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366746"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>tipo de recurso macOSMinimumOperatingSystem
 
@@ -53,8 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "v10_13": true
 }
 ```
-
-
 
 
 

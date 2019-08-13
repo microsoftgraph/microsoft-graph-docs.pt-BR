@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f3d423431696c0e0de172d6e68884742eb3e2c9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 14efbe4e006d756c7f8d20d811fd7d5ed1e135fc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969307"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364898"
 ---
 # <a name="wifiproxysetting-enum-type"></a>tipo de enumeração wiFiProxySetting
 
@@ -26,8 +26,6 @@ Configurações de proxy Wi-Fi.
 |none|,0|Nenhum proxy.|
 |Manual|1|Configurações de proxy manuais por endereço e porta.|
 |Automático|duas|Configurações de proxy automáticas via URL.|
-
-
 
 
 

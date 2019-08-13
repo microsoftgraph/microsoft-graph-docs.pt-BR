@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68b7882da1c223d3b06dec7082fa2ae9d002f251
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b86d6d6ddad847b1a4b39fd96d61f619e19afaac
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999392"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365220"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>tipo de recurso windowsManagementApp
 
@@ -35,7 +35,6 @@ Entidade do aplicativo de gerenciamento do Windows.
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Resumo de integridade do aplicativo de gerenciamento do Windows.|
 |healthStates|coleção [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|A lista de Estados de integridade para o aplicativo de gerenciamento do Windows instalado.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -53,8 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "availableVersion": "String"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,13 @@ description: Tipos de chave de recuperação para macOS FileVault
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 193bfc5769da2919f93df9beef38524a57bfece0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 1a72cc8ddb4e9ce28a65e3af006ebec097eda247
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002543"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365052"
 ---
 # <a name="macosfilevaultrecoverykeytypes-enum-type"></a>tipo de enumeração macOSFileVaultRecoveryKeyTypes
 
@@ -25,8 +26,6 @@ Tipos de chave de recuperação para macOS FileVault
 |notConfigured|,0|Valor padrão do dispositivo, sem intenção.|
 |institutionalRecoveryKey|1|Uma chave de recuperação institucional é como uma chave de recuperação "mestra" que pode ser usada para desbloquear qualquer dispositivo cuja senha tenha sido perdida.|
 |personalRecoveryKey|duas|Uma chave de recuperação pessoal é um código exclusivo que pode ser usado para desbloquear o dispositivo do usuário, mesmo se a senha do dispositivo for perdida.|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 37425f8c31dfcf99b551db872405cbd86932dfc0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eaf17e7f247a7d49fa357cda2fb26297e7879456
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969349"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367530"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de enumeração weeklySchedule
 
@@ -32,8 +32,7 @@ Valores possíveis para um cronograma semanal.
 |quinta-feira|6|Quinta-feira.|
 |sexta|178|Sexta-feira.|
 |sábado|8 |Sábado.|
-
-
+|noScheduledScan|9 |Nenhuma verificação agendada|
 
 
 

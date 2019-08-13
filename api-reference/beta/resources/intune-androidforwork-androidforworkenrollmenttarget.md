@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1120d433f4aa265fb83040cffb3342ce40ffe0c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9bbaa10487c67223a9ff1e96528c570d902766df
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971743"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366242"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>tipo de enumeração androidForWorkEnrollmentTarget
 
@@ -27,8 +27,6 @@ Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para 
 |todos os|1|Ainda não documentado|
 |visa|duas|Ainda não documentado|
 |targetedAsEnrollmentRestrictions|3D|Ainda não documentado|
-
-
 
 
 

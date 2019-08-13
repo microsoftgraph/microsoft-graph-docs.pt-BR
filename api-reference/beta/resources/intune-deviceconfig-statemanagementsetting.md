@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 61b60be87795fed1c33e73a8f9277c27e404ab1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edcd8f3c8217c29f1b3488bde90ffc8021464b73
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969643"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367894"
 ---
 # <a name="statemanagementsetting-enum-type"></a>tipo de enumeração stateManagementSetting
 
@@ -26,8 +26,6 @@ Configuração de gerenciamento de estado.
 |notConfigured|,0|Não configurado.|
 |bloqueou|1|Bloqueou.|
 |autorizado|duas|Autorizado.|
-
-
 
 
 

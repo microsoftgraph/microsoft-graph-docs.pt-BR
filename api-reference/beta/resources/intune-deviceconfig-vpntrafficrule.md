@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14ca0460684a6063a75032c7c51cebc8baaf5b2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 399c0e57a4e7bf29fc1772d8178ebd9510a85e9c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969405"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367558"
 ---
 # <a name="vpntrafficrule-resource-type"></a>tipo de recurso vpnTrafficRule
 
@@ -83,8 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "claims": "String"
 }
 ```
-
-
 
 
 

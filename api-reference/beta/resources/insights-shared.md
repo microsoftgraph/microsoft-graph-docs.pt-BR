@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 47228e6597f24b9a6d662c7d87643322acaed40b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e95a7a54d2cdce7e23bcc4792368cfa250241963
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006231"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366347"
 ---
 # <a name="sharedinsight-resource-type"></a>tipo de recurso sharedInsight
 
@@ -19,7 +19,7 @@ ms.locfileid: "36006231"
 Uma percepção representando arquivos compartilhados com ou por um usuário específico. Há suporte para os seguintes arquivos compartilhados:
 
 - Arquivos anexados diretamente em um email ou convite de reunião.
-- OneDrive for bussiness e anexos modernos do SharePoint-arquivos armazenados no OneDrive for Business e SharePoint que os usuários compartilham como links em um email.
+- O OneDrive for Business e o SharePoint Modern Attachments-arquivos armazenados no OneDrive for Business e no SharePoint que os usuários compartilham como links em um email.
 
 **Observação**: no momento, estamos trabalhando para preencher os resultados da API compartilhada com dados. Pode haver alguns dados ausentes nas primeiras semanas após o lançamento.
 

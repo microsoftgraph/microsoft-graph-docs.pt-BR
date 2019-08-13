@@ -4,13 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: f784f3aa837f13f009bd7520e89e045f8d952292
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 506f85ae59330757f4c6f12cf80795c6678b125e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999308"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366368"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 
@@ -41,7 +40,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Identidade importada do dispositivo do Windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
 - [Status de importação da identidade de dispositivo importada do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
 - [Estado de identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
-- [Carregar identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
 - [Status de carregamento da identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
 - [Modo de emparelhamento do iTunes](intune-enrollment-itunespairingmode.md)
 - [Certificado de gerenciamento com impressão digital](intune-enrollment-managementcertificatewiththumbprint.md)
