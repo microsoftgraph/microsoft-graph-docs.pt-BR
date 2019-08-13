@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto securityBaselineStateSummary.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 176742c9e1151913f01a863aa11c2cfdac2e832f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f327529aef1307c06bac7d5eabdaabcac4df6fb7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959471"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349016"
 ---
 # <a name="update-securitybaselinestatesummary"></a>Atualizar securityBaselineStateSummary
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -101,6 +102,7 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
+
 
 
 

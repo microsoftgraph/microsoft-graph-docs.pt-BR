@@ -4,12 +4,13 @@ description: Descreve um tipo de dependência entre dois aplicativos móveis.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a29f658a67c3930b1b693589dc9115c0c1ff185
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 99d5458d52e22bf4fd88f16eaef1deed6c2b7873
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990257"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342128"
 ---
 # <a name="mobileappdependency-resource-type"></a>tipo de recurso mobileAppDependency
 
@@ -61,8 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "dependentAppCount": 1024
 }
 ```
-
-
 
 
 

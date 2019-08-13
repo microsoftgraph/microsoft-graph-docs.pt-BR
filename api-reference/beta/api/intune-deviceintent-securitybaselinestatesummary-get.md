@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto securityBaselineStat
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e86e86cb9aa58ade78d894fd288cfd16c5329cf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f888efb4819c64f92c46656013328bc4c8e7aa1d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959506"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349005"
 ---
 # <a name="get-securitybaselinestatesummary"></a>Obter securityBaselineStateSummary
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -80,6 +81,7 @@ Content-Length: 297
   }
 }
 ```
+
 
 
 

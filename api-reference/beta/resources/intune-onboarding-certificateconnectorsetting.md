@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd809fd2cb26a57d13ad7a4c250868b44967020a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60c7ac990a4eccd1f4faf0fd8f32c42a1e1addba
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967753"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341981"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>tipo de recurso certificateConnectorSetting
 
@@ -51,8 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastUploadVersion": 1024
 }
 ```
-
-
 
 
 

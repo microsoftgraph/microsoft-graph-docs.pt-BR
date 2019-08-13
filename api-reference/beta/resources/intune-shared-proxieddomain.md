@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3efbbf239e340b205aa84be62815ba00732a3a5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e44a6208aab688e566d89a9dce84b21e65c3c284
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967381"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347854"
 ---
 # <a name="proxieddomain-resource-type"></a>Tipo de recurso proxiedDomain
 
@@ -43,8 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "proxy": "String"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,13 @@ description: Tipo de modo de dispositivo do Windows 10.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34c690a37efd875b6bd8936783645f7ac8fa21fa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: b4f4e2014da5729968285f1a56bbd9ad960d0caf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002039"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348043"
 ---
 # <a name="windows10devicemodetype-enum-type"></a>tipo de enumeração windows10DeviceModeType
 
@@ -24,8 +25,6 @@ Tipo de modo de dispositivo do Windows 10.
 |:---|:---|:---|
 |standardConfiguration|,0|Configuração padrão|
 |sModeConfiguration|1|Configuração do modo S|
-
-
 
 
 

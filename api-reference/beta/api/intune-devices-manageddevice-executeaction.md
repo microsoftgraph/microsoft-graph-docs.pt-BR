@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5afcbdf1847f3e8b06b6f65dc1c3c6b292f6c99
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6fc154f7b0f8b6fafded763c8fbc1276284e53f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985858"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348778"
 ---
 # <a name="executeaction-action"></a>Ação executeAction
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,6 +57,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |keepEnrollmentData|Booliano|Ainda não documentado|
 |keepUserData|Booliano|Ainda não documentado|
 |deviceIds|String collection|Ainda não documentado|
+|notificationTitle|String|Ainda não documentado|
+|notificationBody|String|Ainda não documentado|
 
 
 
@@ -71,7 +73,7 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 134
+Content-length: 236
 
 {
   "actionName": "delete",
@@ -79,7 +81,9 @@ Content-length: 134
   "keepUserData": true,
   "deviceIds": [
     "Device Ids value"
-  ]
+  ],
+  "notificationTitle": "Notification Title value",
+  "notificationBody": "Notification Body value"
 }
 ```
 
@@ -108,6 +112,7 @@ Content-Length: 385
   }
 }
 ```
+
 
 
 

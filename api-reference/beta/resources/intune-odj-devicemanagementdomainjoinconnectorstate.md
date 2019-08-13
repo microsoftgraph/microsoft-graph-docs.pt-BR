@@ -4,12 +4,13 @@ description: A solicitação ODJ diz.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a584a77c0a921b9d5864270c5a42a9991123eb8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f664a6b57d92f5a8cd2d586f8bc2747ffa6db71c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001913"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342002"
 ---
 # <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a>tipo de enumeração deviceManagementDomainJoinConnectorState
 
@@ -25,8 +26,6 @@ A solicitação ODJ diz.
 |active|,0|O conector está ativamente fazendo ping no Intune.|
 |erro|1|Não há um coração do conector da última hora.|
 |inativa|duas|Não há um coração do conector dos últimos 5 dias.|
-
-
 
 
 

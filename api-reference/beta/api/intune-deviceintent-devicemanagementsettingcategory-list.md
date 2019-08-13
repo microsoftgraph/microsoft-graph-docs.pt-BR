@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos deviceManagementSettin
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85c9073c95a2e3e9e2de4635bd23f82f7333afeb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0b529d11a16ceb0f3e8546f0f44d471be44e414c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960017"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343332"
 ---
 # <a name="list-devicemanagementsettingcategories"></a>Listar deviceManagementSettingCategories
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -74,6 +75,7 @@ Content-Length: 207
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos deviceManagementIntent
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 755998619dde56dd696a178751480af9ac696f51
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 54a46b5c55f7674f6415c1c4a51b743562cce1e9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960052"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347624"
 ---
 # <a name="list-devicemanagementintentuserstates"></a>Listar deviceManagementIntentUserStates
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -78,6 +79,7 @@ Content-Length: 385
   ]
 }
 ```
+
 
 
 

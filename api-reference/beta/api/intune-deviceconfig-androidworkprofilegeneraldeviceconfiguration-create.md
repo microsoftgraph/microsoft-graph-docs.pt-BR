@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99737728ba6cf8881dfdce8ad96c3565e28b28aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3fdf7096b59fe908dbb310fd27608b59f6a09b22
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950823"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340741"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>Criar Entidadeandroidforworkprofiledeviceconfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -261,6 +261,7 @@ Content-Length: 2987
   "vpnEnableAlwaysOnLockdownMode": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0363a2fc0dfcbfe29cfd1198abe01bf12173e971
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3a80d8f0ca90cd550f80175bd87da753932484c3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967760"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348024"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>tipo de recurso deviceAndAppManagementData
 
@@ -41,8 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
-
 
 
 
