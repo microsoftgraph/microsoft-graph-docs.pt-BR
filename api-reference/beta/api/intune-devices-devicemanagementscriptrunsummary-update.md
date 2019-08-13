@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 944cb13bff433737ec90637d98045d0fa8e1c1fc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f07a228ce685ae2ec3fcb502131eac5a6d9271af
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985921"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310287"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Atualizar deviceManagementScriptRunSummary
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,6 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |id|String|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro.|
+|compliantDeviceCount|Int32|Contagem de dispositivos em conformidade.|
+|notCompliantDeviceCount|Int32|Contagem de dispositivos não compatíveis.|
+|pendingDeviceCount|Int32|Contagem de dispositivos pendentes.|
 |successUserCount|Int32|Contagem de usuários com sucesso.|
 |errorUserCount|Int32|Erro contagem de usuários.|
 
@@ -69,12 +72,15 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
 Content-type: application/json
-Content-length: 179
+Content-length: 270
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
+  "compliantDeviceCount": 4,
+  "notCompliantDeviceCount": 7,
+  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
@@ -85,17 +91,21 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 228
+Content-Length: 319
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
+  "compliantDeviceCount": 4,
+  "notCompliantDeviceCount": 7,
+  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 97fd1dddcfea444d330d3f620244f8f84ebc3da0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba7de7ee3612c4d1e8e419522e8d18587339343c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000022"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370281"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>tipo de enumeração configurationManagerClientState
 
@@ -29,8 +29,6 @@ Estado do cliente de gerenciador de configurações
 |installFailed|8 |Falha ao instalar o agente do Gerenciador de configurações.|
 |updateFailed|11|A atualização da versão x para a versão y do agente do Gerenciador de configuração falhou. |
 |communicationError|19|O agente do Gerenciador de configurações pôde acessar o serviço do Configuration Manager no passado, mas agora não é mais possível. |
-
-
 
 
 

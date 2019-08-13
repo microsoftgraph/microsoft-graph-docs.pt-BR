@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos macOSExtensionsConfigu
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48034c6cc55909b3889556796940fd48fac878e6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 71a798550a0e7d355d09d2e33ebf966736efc9d4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976684"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315397"
 ---
 # <a name="list-macosextensionsconfigurations"></a>Listar macOSExtensionsConfigurations
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -115,6 +116,7 @@ Content-Length: 1760
   ]
 }
 ```
+
 
 
 

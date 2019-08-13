@@ -4,12 +4,13 @@ description: Status da tarefa de gerenciamento de aplicativos do dispositivo.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3bcd6dcf957748a0e57776bd318cdb1ee734172
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 7e16d4904e8c81209190cca4ccd3d8304fcdfff2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002585"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308166"
 ---
 # <a name="deviceappmanagementtaskstatus-enum-type"></a>tipo de enumeração deviceAppManagementTaskStatus
 
@@ -27,8 +28,6 @@ Status da tarefa de gerenciamento de aplicativos do dispositivo.
 |active|duas|A tarefa foi aceita e está funcionando.|
 |Completed|3D|O trabalho está concluído.|
 |rejeitar|quatro|A tarefa foi rejeitada.|
-
-
 
 
 

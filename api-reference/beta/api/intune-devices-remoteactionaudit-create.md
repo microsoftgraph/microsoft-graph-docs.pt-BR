@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f4573429db6ccb359feb4b4280483b8d7bbe7c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77774bc58d336429c013dcb391fba95c74512dcc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987072"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310021"
 ---
 # <a name="create-remoteactionaudit"></a>Criar remoteActionAudit
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,11 +55,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar remoteAc
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo do Intune.|
 |userName|String|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
 |initiatedByUserPrincipalName|String|O formato de usuário que iniciou a ação do dispositivo é UPN.|
-|ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`.|
+|ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, , `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|Hora em que a ação foi emitida, dada em UTC.|
 |deviceOwnerUserPrincipalName|String|UPN do proprietário do dispositivo.|
 |deviceIMEI|String|IMEI do dispositivo.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|managedDeviceId|String|Destino de ação.|
 
 
 
@@ -73,7 +74,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits
 Content-type: application/json
-Content-length: 455
+Content-length: 504
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -84,7 +85,8 @@ Content-length: 455
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -93,7 +95,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 504
+Content-Length: 553
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -105,9 +107,11 @@ Content-Length: 504
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 

@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Liste um conjunto de itens que foram usados recentemente pelo usuário conectado.
 doc_type: apiPageType
-ms.openlocfilehash: 1fb86c8e7edbb6cf553a3f61ec712d45e78cd185
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 779125be73c19e3e93b5c39ade4b2738bca6a16f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016466"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375174"
 ---
 # <a name="list-recent-files"></a>Liste arquivos recentes
 
@@ -45,7 +45,7 @@ GET /me/drive/recent
 [!INCLUDE [sample-code](../includes/snippets/csharp/view-recent-files-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/view-recent-files-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

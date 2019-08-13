@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b0844b77af9cc11fad21a5a38b5587c48eb0a2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ec834c6762daf6ba2317d3a5fc12c87c8f3cb97
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981363"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310007"
 ---
 # <a name="get-remoteactionaudit"></a>Obter remoteActionAudit
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 594
 
 {
   "value": {
@@ -79,10 +79,12 @@ Content-Length: 543
     "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
     "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
     "deviceIMEI": "Device IMEI value",
-    "actionState": "pending"
+    "actionState": "pending",
+    "managedDeviceId": "Managed Device Id value"
   }
 }
 ```
+
 
 
 

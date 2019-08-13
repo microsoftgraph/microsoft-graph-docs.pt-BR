@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a3c4d4d07a3891167838af6de7ea854883a5b1e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f9a882cd1fdc788782a7c68df1ad38c6cc8d37e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967697"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308131"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>tipo de enumeração userPfxPaddingScheme
 
@@ -23,14 +23,12 @@ Valores com suporte para o esquema de preenchimento usado pelo provedor de cript
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Nenhum preenchimento é usado.|
-|pkcs1|1|Usar preenchimento PKCS # 1.|
-|oaepSha1|duas|Use o enchimento OAEP SHA-1.|
-|oaepSha256|3D|Use o preenchimento OAEP SHA-256.|
-|oaepSha384|quatro|Use o preenchimento OAEP SHA-384.|
-|oaepSha512|0,5|Use o preenchimento OAEP SHA-512.|
-
-
+|none|,0|Ainda não documentado|
+|pkcs1|1|Ainda não documentado|
+|oaepSha1|duas|Ainda não documentado|
+|oaepSha256|3D|Ainda não documentado|
+|oaepSha384|quatro|Ainda não documentado|
+|oaepSha512|0,5|Ainda não documentado|
 
 
 
