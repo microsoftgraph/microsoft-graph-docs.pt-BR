@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97e16ec259794fb3b1a735cb5994800105b4413a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70eb3de89ad8ce3621eb6457968f1cce8462c100
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001065"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356750"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>tipo de recurso iosWebContentFilterBase
 
@@ -39,8 +39,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.iosWebContentFilterBase"
 }
 ```
-
-
 
 
 

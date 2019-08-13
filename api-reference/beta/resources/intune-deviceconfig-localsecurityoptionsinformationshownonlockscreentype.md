@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df52f848d5167af38aabc621ad5ec4126cd33106
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6137ebd4bfb778b8d8f7e6e28cf38d72274b4761
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970239"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356680"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>tipo de enumeração localSecurityOptionsInformationShownOnLockScreenType
 
@@ -27,8 +27,6 @@ Valores possíveis para LocalSecurityOptionsInformationShownOnLockScreenType
 |userDisplayNameDomainUser|1|Nome de exibição do usuário, nomes de domínio e de usuário|
 |userDisplayNameOnly|duas|Somente nome de exibição do usuário|
 |doNotDisplayUser|3D|Não exibir informações do usuário|
-
-
 
 
 
