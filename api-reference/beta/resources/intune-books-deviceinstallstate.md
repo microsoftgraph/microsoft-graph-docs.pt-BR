@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d1e9b86d9e3be0607cbaedb44735eab4243a769
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2a62621fec39b50aac9ea422dad4dc35b85473b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012062"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335211"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Tipo de recurso deviceInstallState
 
@@ -67,8 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "userName": "String"
 }
 ```
-
-
 
 
 

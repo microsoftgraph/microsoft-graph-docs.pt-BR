@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a12a210156727ed7dd00bd79e7c2f711aa518a8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 897703f7b0ab9cec3bb0e7e38543f9bbc087ab81
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010949"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331375"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>tipo de recurso groupPolicyPresentationDropdownList
 
@@ -76,8 +76,6 @@ Veja a seguir uma representação JSON do recurso.
   "required": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dd1aaafd1ee38e3f173c02b378586bbc27f24776
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85973979066a8696df497a21ffb23e1fbc4dd228
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001891"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333685"
 ---
 # <a name="certificatestore-enum-type"></a>tipo de enumeração certificateStore
 
@@ -25,8 +25,6 @@ Tipos CertificateStore
 |:---|:---|:---|
 |user|1|Ainda não documentado|
 |máquina|duas|Ainda não documentado|
-
-
 
 
 

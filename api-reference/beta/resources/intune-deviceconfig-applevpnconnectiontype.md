@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ecf7a5c439ef66da173307455a445915226b74f8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 19cb7fed4ccdeeffa84aa78c165e95cc2e989afb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011509"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333965"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>tipo de enumeração Enumeraçãoapplevpnconnectiontype
 
@@ -38,8 +38,6 @@ Tipo de conexão VPN da Apple.
 |citrixSso|3,6|Citrix SSO.|
 |paloAltoGlobalProtectV2|Treze|O Palo Alto Networks GlobalProtect v2.|
 |Conexões|14|Conexões.|
-
-
 
 
 

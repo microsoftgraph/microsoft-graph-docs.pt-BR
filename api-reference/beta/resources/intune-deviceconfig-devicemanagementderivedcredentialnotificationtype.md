@@ -4,12 +4,13 @@ description: Valores com suporte para o tipo de notificação a ser usado.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 556f33b844c648c701376eeaad7d898a229934d1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 0d1e1f4922c022215d806cfa83d01d1735c704da
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992309"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332789"
 ---
 # <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a>tipo de enumeração deviceManagementDerivedCredentialNotificationType
 
@@ -25,8 +26,6 @@ Valores com suporte para o tipo de notificação a ser usado.
 |none|,0|Nenhuma|
 |companyPortal|1|Portal da empresa|
 |email|duas|Email|
-
-
 
 
 

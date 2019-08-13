@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c981c2ae9842e928d35ec05f146955dd766d6c35
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8cb0efbec4044bb63b9c8069e12bf934662ca587
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012293"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335666"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>tipo de recurso win32LobAppInstallExperience
 
@@ -41,8 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "runAsAccount": "String"
 }
 ```
-
-
 
 
 

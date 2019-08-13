@@ -4,13 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: 138fbf66974a63e258c1e7334db8f4c3f03a05ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a2402be0642da8d0f01c30e089fec5947d5260be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004754"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335015"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -32,12 +31,17 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração personalizada do Android](intune-deviceconfig-androidcustomconfiguration.md)
 - [Tipo de política de atualização automática de aplicativo do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Modo conectado da bateria do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [Base de perfil de certificado de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Política de conformidade do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
+- [Configuração de Wi-Fi corporativa do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Configuração geral do dispositivo do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Modo de repositório de execução do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Tipo de senha obrigatória do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Tipo de instalação de atualização do sistema do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
+- [Certificado raiz confiável do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
+- [Tipo de botão de residência virtual de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)
+- [Configuração de VPN do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownervpnconfiguration.md)
 - [Configuração Wi-Fi do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
 - [Tipo de segurança Wi-Fi do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerwifisecuritytype.md)
 - [Tipo de EAP do Android](intune-deviceconfig-androideaptype.md)
@@ -347,11 +351,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Inteiro de configuração de OMA](intune-deviceconfig-omasettinginteger.md)
 - [Cadeia de configuração de OMA ](intune-deviceconfig-omasettingstring.md)
 - [Cadeia xml de configuração de OMA](intune-deviceconfig-omasettingstringxml.md)
-- [Carga de criptografia local](intune-raimportcerts-onpremencryptedpayload.md)
 - [Intervalo de versão do sistema operacional](intune-deviceconfig-operatingsystemversionrange.md)
-- [Solicitação de recript de pfx](intune-raimportcerts-pfxrecryptionrequest.md)
-- [Certificado de usuário pfx](intune-raimportcerts-pfxusercertificate.md)
 - [Tipo de plataforma da política](intune-deviceconfig-policyplatformtype.md)
+- [Tipo de ação de energia](intune-deviceconfig-poweractiontype.md)
 - [Recursos pré-lançamento](intune-deviceconfig-prereleasefeatures.md)
 - [Classificação de tipo de aplicativos](intune-deviceconfig-ratingappstype.md)
 - [Classificação de tipo de filmes da Austrália](intune-deviceconfig-ratingaustraliamoviestype.md)
@@ -402,6 +404,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de visibilidade](intune-deviceconfig-visibilitysetting.md)
 - [Método de autenticação da VPN](intune-deviceconfig-vpnauthenticationmethod.md)
 - [Tipo de autenticação de cliente VPN](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [Configuração de VPN](intune-deviceconfig-vpnconfiguration.md)
 - [Taxa de detecção de ponto de saída de VPN](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [Regra de DNS da VPN](intune-deviceconfig-vpndnsrule.md)
 - [Tipo de algoritmo de criptografia VPN](intune-deviceconfig-vpnencryptionalgorithmtype.md)
@@ -522,3 +525,4 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de conexão de VPN do Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Configuração de Wi-Fi do Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Configuração de EAP corporativa de Wi-Fi do Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+

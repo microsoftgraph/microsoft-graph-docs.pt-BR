@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto roleScopeTagAutoAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69910087d50bfa2e9ae44b5632daeaf439ea62bd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a6a142f5fe9f9b643622f95568326b06ed2b5d9a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002473"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351025"
 ---
 # <a name="update-rolescopetagautoassignment"></a>Atualizar roleScopeTagAutoAssignment
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -90,6 +91,7 @@ Content-Length: 215
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: af25adb116d08aa40a40f1cbb380decc9d69a3ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c93dc42fe5ceb694a8b69602c64a52a5138df240
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998636"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331403"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>tipo de recurso groupPolicyPresentationComboBox
 
@@ -70,8 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "maxLength": 1024
 }
 ```
-
-
 
 
 

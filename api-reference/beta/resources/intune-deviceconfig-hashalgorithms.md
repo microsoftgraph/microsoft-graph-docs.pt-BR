@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fcc5d419e2a45b9b4212c3edcacc2376bc955482
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0efd1881510089228fc54b46d9d08166aacd7f40
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004313"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338095"
 ---
 # <a name="hashalgorithms-enum-type"></a>tipo de enumeração hashAlgorithm
 
@@ -25,8 +25,6 @@ Opções de algoritmo de hash.
 |:---|:---|:---|
 |SHA1|1|Algoritmo de hash SHA-1.|
 |SHA2|duas|Algoritmo de hash SHA-2.|
-
-
 
 
 

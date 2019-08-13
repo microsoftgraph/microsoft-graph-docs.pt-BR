@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1eb2659d02e9a5a1ad3a64f3af7a5eea2e6befc0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fb5ebf1106a87366a164562dbdae2dad846a9462
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001513"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332565"
 ---
 # <a name="edgehomebuttonhidden-resource-type"></a>tipo de recurso edgeHomeButtonHidden
 
@@ -42,8 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.edgeHomeButtonHidden"
 }
 ```
-
-
 
 
 

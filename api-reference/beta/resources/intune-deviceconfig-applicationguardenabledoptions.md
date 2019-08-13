@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f55dad9cd3589ccc39b86dfaae8495bb0837d1b8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ddf46f3a110a0aecfd7a5ee9b17bd4ff6f53ae40
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011481"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333923"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>tipo de enumeração applicationGuardEnabledOptions
 
@@ -27,8 +27,6 @@ Valores possíveis para ApplicationGuardEnabledOptions
 |enabledForEdge|1|Habilitado para borda|
 |enabledForOffice|duas|Habilitado para o Office|
 |enabledForEdgeAndOffice|3D|Habilitado para o Edge e o Office|
-
-
 
 
 

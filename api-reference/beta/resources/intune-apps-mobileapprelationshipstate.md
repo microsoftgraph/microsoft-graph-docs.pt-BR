@@ -4,12 +4,13 @@ description: Descreve os detalhes de status da instalação do aplicativo filho 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6013482fe69aa7a4ccf789c677ef448e0a277991
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 2a0fb017ceb5401058ce776d8f020e0337a361f5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993351"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331788"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>tipo de recurso mobileAppRelationshipState
 
@@ -56,8 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 
