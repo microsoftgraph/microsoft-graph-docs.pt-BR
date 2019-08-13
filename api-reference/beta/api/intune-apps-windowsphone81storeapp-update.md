@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ecfa9e14a0821bbe9bb0fd1c45bc989d2e3debc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c8a85388bce5c9a678b97059e24f7bd83039ae83
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959898"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328673"
 ---
 # <a name="update-windowsphone81storeapp"></a>Atualizar windowsPhone81StoreApp
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -150,6 +150,7 @@ Content-Length: 947
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

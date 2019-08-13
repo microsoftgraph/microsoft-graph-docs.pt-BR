@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60001517f635352ea2717033279ebebc8df7895b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 98881f482f0feda24d070cd52c83d5de7dc5def9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998622"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331459"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>tipo de recurso groupPolicyDefinitionFile
 
@@ -68,8 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

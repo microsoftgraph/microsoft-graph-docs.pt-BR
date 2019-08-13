@@ -4,12 +4,13 @@ description: Criar um novo objeto deviceManagementIntentDeviceState.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f70b2f77808fe4c2b4f15b54198d77d39a484486
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 648247506fe80db7eb6b8ee062ed54f1c94b00cc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960290"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343647"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>Criar deviceManagementIntentDeviceState
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -101,6 +102,7 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
+
 
 
 

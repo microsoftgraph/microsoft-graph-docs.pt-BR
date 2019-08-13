@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto deviceManagementInte
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d04e8e217913b0ab1dff95b093105e2fac0d963
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 282e6fbff756dbefba8222beb5c8a7bc1cb922cb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960136"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343486"
 ---
 # <a name="get-devicemanagementintentsettingcategory"></a>Obter deviceManagementIntentSettingCategory
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -75,6 +76,7 @@ Content-Length: 193
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto iosikEv2VpnConfigura
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 032e66f68595222ea1c3d2d6a8b9181d19acb164
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 42d6074ef47b8f494b602f4698289ab27a79dbce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715379"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339201"
 ---
 # <a name="get-iosikev2vpnconfiguration"></a>Obter iosikEv2VpnConfiguration
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -202,6 +203,7 @@ Content-Length: 4679
   }
 }
 ```
+
 
 
 

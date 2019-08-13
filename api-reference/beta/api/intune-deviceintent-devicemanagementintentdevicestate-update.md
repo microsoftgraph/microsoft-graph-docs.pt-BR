@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto deviceManagementIntentDeviceS
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a311f6778b47b0e8bf728c0deb721de6d8173394
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c4e23abab9d3bc7b3ca61ba4946b2ed2d4afc625
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960227"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343556"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>Atualizar deviceManagementIntentDeviceState
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -101,6 +102,7 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
+
 
 
 

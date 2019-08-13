@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e38e7041e67bcaea470352d71bf50d0524a7ba6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74d6909a275c831190033fd2b6437a9c5fe215da
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011859"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334819"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>tipo de recurso androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -58,13 +58,21 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |dataRoamingBlocked|Booliano|Indica se um usuário será ou não bloqueado de roaming de dados.|
 |dateTimeConfigurationBlocked|Booliano|Indica se o usuário será ou não impedido de alterar manualmente a data ou a hora no dispositivo|
 |factoryResetDeviceAdministratorEmails|Coleção de cadeias de caracteres|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
-|factoryResetBlocked|Booliano|Indica se a opção de redefinição de fábrica em configurações está desabilitada.|
+|factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica em configurações está desabilitada.|
+|kioskModeScreenSaverConfigurationEnabled|Booliano|Se o modo de proteção de tela deve ou não ser habilitado ou não no modo quiosque.|
+|kioskModeScreenSaverImageUrl|String|URL de uma imagem que será a proteção de tela do dispositivo no modo quiosque.|
+|kioskModeScreenSaverDisplayTimeInSeconds|Int32|O número de segundos que o dispositivo exibirá a proteção de tela no modo quiosque. Valores válidos de 0 a 9999999|
+|kioskModeScreenSaverStartDelayInSeconds|Int32|O número de segundos que o dispositivo precisa estar inativo para que a proteção de tela seja mostrada no modo quiosque. Valores válidos de 1 a 9999999|
+|kioskModeScreenSaverDetectMediaDisabled|Booliano|Se a tela do dispositivo deve ou não mostrar a proteção de tela se áudio/vídeo estiver em execução no modo quiosque.|
 |kioskModeApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos gerenciados que serão mostrados quando o dispositivo estiver no modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
 |kioskModeWallpaperUrl|String|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
 |kioskModeExitCode|String|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
 |kioskModeVirtualHomeButtonEnabled|Booliano|Se um botão de Home virtual será exibido ou não quando o dispositivo estiver no modo quiosque.|
+|kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Indica se o botão de Home virtual é um botão deslizar para cima ou um botão de início flutuante. Os valores possíveis são: `notConfigured`, `swipeUp`, `floating`.|
 |kioskModeBluetoothConfigurationEnabled|Booliano|Se permitirá ou não que um usuário defina configurações de Bluetooth no modo quiosque.|
 |kioskModeWiFiConfigurationEnabled|Booliano|Se permitirá ou não que um usuário defina configurações de Wi-Fi no modo quiosque.|
+|kioskModeFlashlightConfigurationEnabled|Booliano|Se permitirá ou não que um usuário use a lanterna no modo quiosque.|
+|kioskModeMediaVolumeConfigurationEnabled|Booliano|Se permitirá ou não que um usuário altere o volume de mídia no modo quiosque.|
 |microphoneForceMute|Booliano|Indica se a desativação do microfone no dispositivo deve ou não ser bloqueada.|
 |networkEscapeHatchAllowed|Booliano|Indica se o dispositivo permitirá ou não conexão com uma conexão de rede temporária no momento da inicialização.|
 |nfcBlockOutgoingBeam|Booliano|Indica se o feixe de saída NFC deve ou não ser bloqueado.|
@@ -172,6 +180,11 @@ Veja a seguir uma representação JSON do recurso.
     "String"
   ],
   "factoryResetBlocked": true,
+  "kioskModeScreenSaverConfigurationEnabled": true,
+  "kioskModeScreenSaverImageUrl": "String",
+  "kioskModeScreenSaverDisplayTimeInSeconds": 1024,
+  "kioskModeScreenSaverStartDelayInSeconds": 1024,
+  "kioskModeScreenSaverDetectMediaDisabled": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -184,8 +197,11 @@ Veja a seguir uma representação JSON do recurso.
   "kioskModeWallpaperUrl": "String",
   "kioskModeExitCode": "String",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeVirtualHomeButtonType": "String",
   "kioskModeBluetoothConfigurationEnabled": true,
   "kioskModeWiFiConfigurationEnabled": true,
+  "kioskModeFlashlightConfigurationEnabled": true,
+  "kioskModeMediaVolumeConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -230,8 +246,6 @@ Veja a seguir uma representação JSON do recurso.
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
-
 
 
 

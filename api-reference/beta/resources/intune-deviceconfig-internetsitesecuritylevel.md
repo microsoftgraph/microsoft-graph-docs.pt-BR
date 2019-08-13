@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a1305489ce05b7a78a570b8ef8036b7851f2cef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d92ec405681b2f7571fcb19e38de83000f16fe8e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004348"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338056"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>tipo de enumeração internetSiteSecurityLevel
 
@@ -27,8 +27,6 @@ Valores possíveis para o nível de segurança do site da Internet.
 |medium|1|Médio.|
 |mediumHigh|duas|Médio-alto.|
 |high|3D|Alto.|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bbd3d13ad39b6acda5fd67d69c8cb2de2f2e7c55
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff024dd8cd27872d0895068fba42e0018fdce011
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001464"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332509"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>tipo de enumeração edgeKioskModeRestrictionType
 
@@ -28,8 +28,6 @@ Especifique como as configurações do Microsoft Edge são restritas com base no
 |normalmode|duas|Modo normal (versão completa do Microsoft Edge).|
 |publicBrowsingSingleApp|3D|Navegação pública no modo de aplicativo único.|
 |publicBrowsingMultiApp|quatro|Navegação pública (InPrivate) no modo de vários aplicativos.|
-
-
 
 
 

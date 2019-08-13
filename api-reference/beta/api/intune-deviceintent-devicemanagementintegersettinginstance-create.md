@@ -4,12 +4,13 @@ description: Criar um novo objeto deviceManagementIntegerSettingInstance.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b87bd1004931263161e06129b18fd39fd56d916c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 645afa20e3e3e4bd5a0afe4be445c713868eef59
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960605"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343752"
 ---
 # <a name="create-devicemanagementintegersettinginstance"></a>Criar deviceManagementIntegerSettingInstance
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -95,6 +96,7 @@ Content-Length: 222
   "value": 5
 }
 ```
+
 
 
 

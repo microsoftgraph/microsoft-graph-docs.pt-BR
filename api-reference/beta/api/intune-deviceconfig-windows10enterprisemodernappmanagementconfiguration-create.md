@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ac0439fc996df50b1b043d940cb1c4569957665
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 79bb41543182ead179624215c8c1dbfbb68d9415
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976856"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345222"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>Criar windows10EnterpriseModernAppManagementConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -156,6 +156,7 @@ Content-Length: 1259
   "uninstallBuiltInApps": true
 }
 ```
+
 
 
 

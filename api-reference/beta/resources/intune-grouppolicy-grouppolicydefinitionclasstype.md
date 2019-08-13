@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ba3a78ff5a259f5473ea7843e71bcf8e6272aca1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae3bc2b8509c4007c238779196d0f14ac3ff7749
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010991"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331473"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>tipo de enumeração groupPolicyDefinitionClassType
 
@@ -25,8 +25,6 @@ Tipo de classe de definição de política de grupo.
 |:---|:---|:---|
 |user|,0|Identifica o posicionamento da configuração de política no nó Configuração do usuário.|
 |máquina|1|Identifica o posicionamento da configuração de política no nó Configuração do computador.|
-
-
 
 
 

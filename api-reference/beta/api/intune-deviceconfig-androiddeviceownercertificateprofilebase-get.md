@@ -1,24 +1,24 @@
 ---
-title: Obter easEmailProfileConfigurationBase
-description: Leia as propriedades e as relações do objeto easEmailProfileConfigurationBase.
+title: Obter androidDeviceOwnerCertificateProfileBase
+description: Leia as propriedades e as relações do objeto androidDeviceOwnerCertificateProfileBase.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f2cd84786bca0047a3a46b0db21cf7cc66aede16
+ms.openlocfilehash: b1dfc1be8334f72d737bf47b436acb2378562770
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345796"
+ms.locfileid: "36345677"
 ---
-# <a name="get-easemailprofileconfigurationbase"></a>Obter easEmailProfileConfigurationBase
+# <a name="get-androiddeviceownercertificateprofilebase"></a>Obter androidDeviceOwnerCertificateProfileBase
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md) .
+Leia as propriedades e as relações do objeto [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,9 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerVpnConfiguration/identityCertificate
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,14 +52,14 @@ Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsof
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerVpnConfiguration/identityCertificate
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,12 +67,12 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1486
+Content-Length: 1734
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.easEmailProfileConfigurationBase",
-    "id": "a3f96310-6310-a3f9-1063-f9a31063f9a3",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerCertificateProfileBase",
+    "id": "19dd17f0-17f0-19dd-f017-dd19f017dd19",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -104,10 +103,18 @@ Content-Length: 1486
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "usernameSource": "primarySmtpAddress",
-    "usernameAADSource": "primarySmtpAddress",
-    "userDomainNameSource": "netBiosDomainName",
-    "customDomainName": "Custom Domain Name value"
+    "renewalThresholdPercentage": 10,
+    "subjectNameFormat": "commonNameIncludingEmail",
+    "certificateValidityPeriodValue": 14,
+    "certificateValidityPeriodScale": "months",
+    "extendedKeyUsages": [
+      {
+        "@odata.type": "microsoft.graph.extendedKeyUsage",
+        "name": "Name value",
+        "objectIdentifier": "Object Identifier value"
+      }
+    ],
+    "subjectAlternativeNameType": "emailAddress"
   }
 }
 ```

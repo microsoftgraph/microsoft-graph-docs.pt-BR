@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4dcfa1d3997e458b88ac91f8ec195edc53270d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0dc83c32dbfc85058301a3cc6e2afa7857020694
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993358"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350234"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>Listar enrollmentTroubleshootingEvents
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegado (conta corporativa ou de estudante)|* * TODO: determinar escopos * *|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|* * TODO: Determine escopos ao apponly * *|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -106,6 +106,7 @@ Content-Length: 1400
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto managedAllDeviceCertificateSt
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aac2d6f42ee093c3af745d37da9917db20492006
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 520afd6fb7b2980b8c263dff2f44b52ac2c2f610
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725809"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345614"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>Atualizar managedAllDeviceCertificateState
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -116,6 +117,7 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
+
 
 
 

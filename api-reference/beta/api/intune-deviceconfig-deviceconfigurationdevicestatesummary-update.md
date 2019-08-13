@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 92bd69769cff63cbe4b32398da89159b69a42b26
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a386bf3ad82d66a2fe6f2babdadc667fb6abba35
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949157"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345950"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>Atualizar deviceConfigurationDeviceStateSummary
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -105,6 +105,7 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

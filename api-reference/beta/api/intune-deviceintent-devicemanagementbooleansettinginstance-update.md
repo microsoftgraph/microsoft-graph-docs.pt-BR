@@ -4,12 +4,13 @@ description: Atualiza as propriedades de um objeto deviceManagementBooleanSettin
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab568b8f882487156212805e76c9786948b95d0c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 227270075b4cfc2e6b36a9ad5107ddc15ce51006
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960885"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343927"
 ---
 # <a name="update-devicemanagementbooleansettinginstance"></a>Atualizar deviceManagementBooleanSettingInstance
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -95,6 +96,7 @@ Content-Length: 225
   "value": true
 }
 ```
+
 
 
 

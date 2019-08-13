@@ -4,12 +4,13 @@ description: Criar um novo objeto securityBaselineDeviceState.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7ef6764971b84a0364317e3aee0ba1074a74ad8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ad9df4c787477a2cb933a78d0f3f168ed71dde58
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959548"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349156"
 ---
 # <a name="create-securitybaselinedevicestate"></a>Criar securityBaselineDeviceState
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -98,6 +99,7 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eababf6c8cb05b9563d6b6500c42a290df0c833e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f9aa6bca5327364780045c2704acadb464f0227
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004684"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334560"
 ---
 # <a name="androidforworkpkcscertificateprofile-resource-type"></a>tipo de recurso androidForWorkPkcsCertificateProfile
 
@@ -130,8 +130,6 @@ Veja a seguir uma representação JSON do recurso.
   "subjectAlternativeNameFormatString": "String"
 }
 ```
-
-
 
 
 

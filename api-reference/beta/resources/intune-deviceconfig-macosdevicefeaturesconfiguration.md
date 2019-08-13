@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d69d0890af95eaf976000863e6f6119d9dd3cc8c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 177d01020606f640c3ca0d681a261039852869e6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004103"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325418"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>Tipo de recurso macOSDeviceFeaturesConfiguration
 
@@ -154,8 +154,6 @@ Veja a seguir uma representação JSON do recurso.
   "screenLockDisableImmediate": true
 }
 ```
-
-
 
 
 

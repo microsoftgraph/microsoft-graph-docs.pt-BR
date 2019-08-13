@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a358379c09868d11ed381688f8b151cc8baa73d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa22725d8952c69eb726eca0b06b06ac793d2608
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012111"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335323"
 ---
 # <a name="windowsstoreapp-resource-type"></a>tipo de recurso windowsStoreApp
 
@@ -103,8 +103,6 @@ Veja a seguir uma representação JSON do recurso.
   "appStoreUrl": "String"
 }
 ```
-
-
 
 
 

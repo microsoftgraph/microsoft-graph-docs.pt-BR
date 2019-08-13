@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8556e7f13162355a9cb503df88bb573a20b08d5e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: df5c52c6dc65a155cc6eed0f86f4fda82b1c2623
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005104"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331760"
 ---
 # <a name="mobilelobapp-resource-type"></a>Tipo de recurso mobileLobApp
 
@@ -105,8 +105,6 @@ Veja a seguir uma representação JSON do recurso.
   "size": 1024
 }
 ```
-
-
 
 
 

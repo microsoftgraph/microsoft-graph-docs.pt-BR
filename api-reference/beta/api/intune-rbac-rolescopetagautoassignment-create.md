@@ -4,12 +4,13 @@ description: Criar um novo objeto roleScopeTagAutoAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d221951cc60257a5df315d0c6e233f8c2082528
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4715de6887181d1857125864ae3fa7297541176f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002431"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351137"
 ---
 # <a name="create-rolescopetagautoassignment"></a>Criar roleScopeTagAutoAssignment
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -90,6 +91,7 @@ Content-Length: 215
   }
 }
 ```
+
 
 
 

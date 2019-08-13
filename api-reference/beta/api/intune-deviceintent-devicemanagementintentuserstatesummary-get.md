@@ -4,12 +4,13 @@ description: Leia as propriedades e as relações do objeto deviceManagementInte
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 568150e14baa0c727a32d5b06dde8ee9809d6f2f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8eea597d880acd36ad8eb6730c5be9849f9672a0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960045"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343409"
 ---
 # <a name="get-devicemanagementintentuserstatesummary"></a>Obter deviceManagementIntentUserStateSummary
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -79,6 +80,7 @@ Content-Length: 280
   }
 }
 ```
+
 
 
 

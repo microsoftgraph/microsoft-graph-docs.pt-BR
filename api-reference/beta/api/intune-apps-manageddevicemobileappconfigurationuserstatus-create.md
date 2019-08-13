@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ecaf14395b9890927b25d4efd9234409d0325c56
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dcc5052479b25edc41ec100833bcbc4175f40ed6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961508"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329751"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>Criar managedDeviceMobileAppConfigurationUserStatus
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -100,6 +100,7 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

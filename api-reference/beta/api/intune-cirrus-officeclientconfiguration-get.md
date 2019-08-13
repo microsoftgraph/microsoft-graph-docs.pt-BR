@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41e10aeac65be2c623ff0db983c9f8e889a06c89
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 44b1adc167d3fe1e049ea56d49931ccbb87c61c0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958960"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328267"
 ---
 # <a name="get-officeclientconfiguration"></a>Obter Conjuntoofficeclientconfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -100,6 +100,9 @@ Content-Length: 1137
   }
 }
 ```
+
+
+
 
 
 

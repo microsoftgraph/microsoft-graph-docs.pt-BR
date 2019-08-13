@@ -4,12 +4,13 @@ description: Listar Propriedades e relações dos objetos windows10DeviceFirmwar
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a3d2032cbeb625025ed08f33b0f2627832d67c6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9b996325e22dfd39b87f5d088c9bba60554ee0be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001682"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345299"
 ---
 # <a name="list-windows10devicefirmwareconfigurationinterfaces"></a>Listar windows10DeviceFirmwareConfigurationInterfaces
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -111,6 +112,7 @@ Content-Length: 1670
   ]
 }
 ```
+
 
 
 

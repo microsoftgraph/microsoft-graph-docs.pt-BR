@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e345e5c3b8490c15edd83fd4d7a4eb70e4be40d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21a2e72bc226fdd7a965fbfb3f6ddd7735a4f351
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001037"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325498"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>tipo de enumeração keyStorageProviderOption
 
@@ -27,8 +27,6 @@ Opções de importação do KSP (provedor de armazenamento de chave).
 |useTpmKspOtherwiseFail|1|Importar para KSP de Trusted Platform Module (TPM) se presente, caso contrário, falha.|
 |usePassportForWorkKspOtherwiseFail|duas|Importe para o Passport para trabalho do KSP, se disponível, caso contrário, falha.|
 |useSoftwareKsp|3D|Importar para KSP de software.|
-
-
 
 
 
