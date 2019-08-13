@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8488c5849466c92860c194c0d24540919dd5d810
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 56533377462f65428298d2878192faa9e1afb6df
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971099"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333860"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>tipo de enumeração autoRestartNotificationDismissalMethod
 
@@ -26,8 +26,6 @@ Reinício automático método de descarte de notificação necessário
 |notConfigured|,0|Não configurado|
 |Automático|1|Descarte automático|
 |user|duas|Desenvio do usuário|
-
-
 
 
 

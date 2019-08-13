@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5c908a70f8bd120f4675c14d23b343845c6e46fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1deab5310fad6a18a6770990f7f84ae100134451
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970889"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333489"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>tipo de enumeração defenderSecurityCenterITContactDisplayType
 
@@ -27,8 +27,6 @@ Valores possíveis para defenderSecurityCenterITContactDisplay
 |displayInAppAndInNotifications|1|Exibir no aplicativo e em notificações|
 |displayOnlyInApp|duas|Exibir somente no aplicativo|
 |displayOnlyInNotifications|3D|Exibir somente em notificações|
-
-
 
 
 

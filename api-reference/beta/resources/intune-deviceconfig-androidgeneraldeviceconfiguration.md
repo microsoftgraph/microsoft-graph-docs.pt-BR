@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 716ec467e76a0c57a061bd3a76f406ac5f5aca7a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5032697b9bbb635c3e7c3e949fad87bfab8255eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971323"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334427"
 ---
 # <a name="androidgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso androidGeneralDeviceConfiguration
 
@@ -240,8 +240,6 @@ Veja a seguir uma representação JSON do recurso.
   "securityRequireVerifyApps": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c738ac34f66679ade7ca3a6f0ca948aceb4d77f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 253b55ec228e276d9aa8d0e432df34d8cb015ef0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004376"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338165"
 ---
 # <a name="encryptionreadinessstate-enum-type"></a>tipo de enumeração encryptionReadinessState
 
@@ -25,8 +25,6 @@ Estado de preparação de criptografia
 |:---|:---|:---|
 |Não legível|,0|Não está pronto|
 |Pronto|1|Pronto|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3af1b7f5ef5f626fb53f3118cc2d1686353049a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd2cbebb24cddb94f4cd8d0ba3ba17fe010032cd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993295"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350171"
 ---
 # <a name="get-intunebrandingprofile"></a>Obter intuneBrandingProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1533
+Content-Length: 1607
 
 {
   "value": {
@@ -108,10 +108,13 @@ Content-Length: 1533
       "type": "Type value",
       "value": "dmFsdWU="
     },
-    "customPrivacyMessage": "Custom Privacy Message value"
+    "customPrivacyMessage": "Custom Privacy Message value",
+    "isRemoveDeviceDisabled": true,
+    "isFactoryResetDisabled": true
   }
 }
 ```
+
 
 
 
