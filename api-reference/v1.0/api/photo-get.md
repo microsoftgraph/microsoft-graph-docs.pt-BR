@@ -5,51 +5,51 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4e27ea00126e101ad21112fb9ed4cf235bf03e44
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b3ac755b7806ff6c23f9af6aaf7c5ff2020538c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022520"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309413"
 ---
-# <a name="get-photo"></a><span data-ttu-id="6d9cf-103">Obter foto</span><span class="sxs-lookup"><span data-stu-id="6d9cf-103">Get photo</span></span>
+# <a name="get-photo"></a><span data-ttu-id="8df7c-103">Obter foto</span><span class="sxs-lookup"><span data-stu-id="8df7c-103">Get photo</span></span>
 
-<span data-ttu-id="6d9cf-104">Recupere as propriedades e os relacionamentos do objeto de foto.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-104">Retrieve the properties and relationships of photo object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6d9cf-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="6d9cf-105">Permissions</span></span>
-<span data-ttu-id="6d9cf-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6d9cf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8df7c-104">Recupere as propriedades e os relacionamentos do objeto de foto.</span><span class="sxs-lookup"><span data-stu-id="8df7c-104">Retrieve the properties and relationships of photo object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8df7c-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="8df7c-105">Permissions</span></span>
+<span data-ttu-id="8df7c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8df7c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6d9cf-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6d9cf-108">Permission type</span></span>      | <span data-ttu-id="6d9cf-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6d9cf-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8df7c-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8df7c-108">Permission type</span></span>      | <span data-ttu-id="8df7c-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8df7c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6d9cf-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6d9cf-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6d9cf-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="6d9cf-111">Files.Read</span></span>    |
-|<span data-ttu-id="6d9cf-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6d9cf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d9cf-113">Files.Read</span><span class="sxs-lookup"><span data-stu-id="6d9cf-113">Files.Read</span></span>    |
-|<span data-ttu-id="6d9cf-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6d9cf-114">Application</span></span> | <span data-ttu-id="6d9cf-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-115">Not supported.</span></span> |
+|<span data-ttu-id="8df7c-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8df7c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8df7c-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="8df7c-111">Files.Read</span></span>    |
+|<span data-ttu-id="8df7c-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8df7c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8df7c-113">Files.Read</span><span class="sxs-lookup"><span data-stu-id="8df7c-113">Files.Read</span></span>    |
+|<span data-ttu-id="8df7c-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8df7c-114">Application</span></span> | <span data-ttu-id="8df7c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8df7c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6d9cf-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6d9cf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8df7c-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8df7c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6d9cf-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6d9cf-117">Optional query parameters</span></span>
-<span data-ttu-id="6d9cf-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="8df7c-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="8df7c-117">Optional query parameters</span></span>
+<span data-ttu-id="8df7c-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="8df7c-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6d9cf-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6d9cf-119">Request headers</span></span>
-| <span data-ttu-id="6d9cf-120">Nome</span><span class="sxs-lookup"><span data-stu-id="6d9cf-120">Name</span></span>       | <span data-ttu-id="6d9cf-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="6d9cf-121">Type</span></span> | <span data-ttu-id="6d9cf-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="6d9cf-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8df7c-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8df7c-119">Request headers</span></span>
+| <span data-ttu-id="8df7c-120">Nome</span><span class="sxs-lookup"><span data-stu-id="8df7c-120">Name</span></span>       | <span data-ttu-id="8df7c-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="8df7c-121">Type</span></span> | <span data-ttu-id="8df7c-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="8df7c-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="6d9cf-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="6d9cf-123">Authorization</span></span>  | <span data-ttu-id="6d9cf-124">string</span><span class="sxs-lookup"><span data-stu-id="6d9cf-124">string</span></span>  | <span data-ttu-id="6d9cf-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8df7c-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="8df7c-123">Authorization</span></span>  | <span data-ttu-id="8df7c-124">string</span><span class="sxs-lookup"><span data-stu-id="8df7c-124">string</span></span>  | <span data-ttu-id="8df7c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8df7c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6d9cf-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6d9cf-127">Request body</span></span>
-<span data-ttu-id="6d9cf-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8df7c-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8df7c-127">Request body</span></span>
+<span data-ttu-id="8df7c-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8df7c-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6d9cf-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="6d9cf-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8df7c-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="8df7c-129">Response</span></span>
 
-<span data-ttu-id="6d9cf-130">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [photo](../resources/photo.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-130">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6d9cf-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6d9cf-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6d9cf-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6d9cf-132">Request</span></span>
-<span data-ttu-id="6d9cf-133">Veja a seguir um exemplo de solicitação de metadados de fotos.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-133">Here is an example of the request for photo metadata.</span></span>
+<span data-ttu-id="8df7c-130">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [photo](../resources/photo.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8df7c-130">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8df7c-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8df7c-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8df7c-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8df7c-132">Request</span></span>
+<span data-ttu-id="8df7c-133">Veja a seguir um exemplo de solicitação de metadados de fotos.</span><span class="sxs-lookup"><span data-stu-id="8df7c-133">Here is an example of the request for photo metadata.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6d9cf-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="6d9cf-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8df7c-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="8df7c-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -57,26 +57,26 @@ GET /drive/root/createdByUser/photo
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6d9cf-135">C#</span><span class="sxs-lookup"><span data-stu-id="6d9cf-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8df7c-135">C#</span><span class="sxs-lookup"><span data-stu-id="8df7c-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6d9cf-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="6d9cf-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8df7c-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8df7c-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6d9cf-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6d9cf-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8df7c-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="8df7c-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-photo-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="6d9cf-138">Java</span><span class="sxs-lookup"><span data-stu-id="6d9cf-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="8df7c-138">Java</span><span class="sxs-lookup"><span data-stu-id="8df7c-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="6d9cf-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="6d9cf-139">Response</span></span>
-<span data-ttu-id="6d9cf-140">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-140">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="8df7c-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="8df7c-139">Response</span></span>
+<span data-ttu-id="8df7c-140">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8df7c-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -93,10 +93,10 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-##### <a name="request"></a><span data-ttu-id="6d9cf-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6d9cf-141">Request</span></span>
-<span data-ttu-id="6d9cf-142">Veja a seguir um exemplo de solicitação de bytes de fotos.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-142">Here is an example of the request for the photo bytes.</span></span>
+##### <a name="request"></a><span data-ttu-id="8df7c-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8df7c-141">Request</span></span>
+<span data-ttu-id="8df7c-142">Veja a seguir um exemplo de solicitação de bytes de fotos.</span><span class="sxs-lookup"><span data-stu-id="8df7c-142">Here is an example of the request for the photo bytes.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6d9cf-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="6d9cf-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8df7c-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="8df7c-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_photo_value"
@@ -104,26 +104,26 @@ Content-length: 53
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6d9cf-144">C#</span><span class="sxs-lookup"><span data-stu-id="6d9cf-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8df7c-144">C#</span><span class="sxs-lookup"><span data-stu-id="8df7c-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photo-value-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6d9cf-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="6d9cf-145">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8df7c-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8df7c-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photo-value-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6d9cf-146">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6d9cf-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8df7c-146">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="8df7c-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-photo-value-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="6d9cf-147">Java</span><span class="sxs-lookup"><span data-stu-id="6d9cf-147">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="8df7c-147">Java</span><span class="sxs-lookup"><span data-stu-id="8df7c-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-photo-value-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="6d9cf-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="6d9cf-148">Response</span></span>
-<span data-ttu-id="6d9cf-149">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6d9cf-149">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="8df7c-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="8df7c-148">Response</span></span>
+<span data-ttu-id="8df7c-149">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8df7c-149">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Edm.Stream" } -->
 

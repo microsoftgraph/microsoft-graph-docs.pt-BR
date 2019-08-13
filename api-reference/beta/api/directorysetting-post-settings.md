@@ -5,56 +5,56 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dfea72cfe03a70f22db19edcd1f22c6e6a32a6d0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa71692eb2ac16f6f62a78037f47b97c3c5db29f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957556"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319437"
 ---
-# <a name="create-a-directory-setting"></a><span data-ttu-id="0c814-107">Criar uma configuração de diretório</span><span class="sxs-lookup"><span data-stu-id="0c814-107">Create a directory setting</span></span>
+# <a name="create-a-directory-setting"></a><span data-ttu-id="b7175-107">Criar uma configuração de diretório</span><span class="sxs-lookup"><span data-stu-id="b7175-107">Create a directory setting</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0c814-108">Use essa API para criar uma nova configuração, com base nos modelos disponíveis no directorySettingTemplates.</span><span class="sxs-lookup"><span data-stu-id="0c814-108">Use this API to create a new setting, based on the templates available in directorySettingTemplates.</span></span> <span data-ttu-id="0c814-109">Essas configurações podem ser no nível do locatário ou em um nível de objeto (atualmente somente para grupos).</span><span class="sxs-lookup"><span data-stu-id="0c814-109">These settings can be at the tenant-level or at an object level (currently only for groups).</span></span> <span data-ttu-id="0c814-110">A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo.</span><span class="sxs-lookup"><span data-stu-id="0c814-110">The creation request must provide settingValues for all the settings defined in the template.</span></span> <span data-ttu-id="0c814-111">Para configurações específicas de grupo, somente a configuração que determina se os membros de um grupo podem convidar usuários convidados podem ser definidos.</span><span class="sxs-lookup"><span data-stu-id="0c814-111">For group-specific settings, only the setting governing whether members of a group can invite guest users can be set.</span></span> <span data-ttu-id="0c814-112">Isso irá controlar esse comportamento assim que a capacidade de adicionar usuários convidados a um grupo estiver disponível.</span><span class="sxs-lookup"><span data-stu-id="0c814-112">This will govern this behavior once the ability to add guest users to a group is generally available.</span></span>
+<span data-ttu-id="b7175-108">Use essa API para criar uma nova configuração, com base nos modelos disponíveis no directorySettingTemplates.</span><span class="sxs-lookup"><span data-stu-id="b7175-108">Use this API to create a new setting, based on the templates available in directorySettingTemplates.</span></span> <span data-ttu-id="b7175-109">Essas configurações podem ser no nível do locatário ou em um nível de objeto (atualmente somente para grupos).</span><span class="sxs-lookup"><span data-stu-id="b7175-109">These settings can be at the tenant-level or at an object level (currently only for groups).</span></span> <span data-ttu-id="b7175-110">A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo.</span><span class="sxs-lookup"><span data-stu-id="b7175-110">The creation request must provide settingValues for all the settings defined in the template.</span></span> <span data-ttu-id="b7175-111">Para configurações específicas de grupo, somente a configuração que determina se os membros de um grupo podem convidar usuários convidados podem ser definidos.</span><span class="sxs-lookup"><span data-stu-id="b7175-111">For group-specific settings, only the setting governing whether members of a group can invite guest users can be set.</span></span> <span data-ttu-id="b7175-112">Isso irá controlar esse comportamento assim que a capacidade de adicionar usuários convidados a um grupo estiver disponível.</span><span class="sxs-lookup"><span data-stu-id="b7175-112">This will govern this behavior once the ability to add guest users to a group is generally available.</span></span>
 
-> <span data-ttu-id="0c814-113">**Observação**: a versão do/beta dessa API só se aplica aos grupos.</span><span class="sxs-lookup"><span data-stu-id="0c814-113">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="0c814-114">A versão/v1.0 dessa API foi renomeada para *criar groupSettings*.</span><span class="sxs-lookup"><span data-stu-id="0c814-114">The /v1.0 version of this API has been renamed to *Create groupSettings*.</span></span>
+> <span data-ttu-id="b7175-113">**Observação**: a versão do/beta dessa API só se aplica aos grupos.</span><span class="sxs-lookup"><span data-stu-id="b7175-113">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="b7175-114">A versão/v1.0 dessa API foi renomeada para *criar groupSettings*.</span><span class="sxs-lookup"><span data-stu-id="b7175-114">The /v1.0 version of this API has been renamed to *Create groupSettings*.</span></span>
 
-<span data-ttu-id="0c814-115">Para obter uma lista de modelos e as propriedades que eles dão suporte na versão beta, use uma [consulta directorySettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).</span><span class="sxs-lookup"><span data-stu-id="0c814-115">For a list of templates and the properties they support in beta, use a [directorySettingTemplate query](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).</span></span> <span data-ttu-id="0c814-116">(Para pontos de extremidade de v 1.0, chame [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)</span><span class="sxs-lookup"><span data-stu-id="0c814-116">(For v1.0 endpoints, call [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)</span></span>
+<span data-ttu-id="b7175-115">Para obter uma lista de modelos e as propriedades que eles dão suporte na versão beta, use uma [consulta directorySettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).</span><span class="sxs-lookup"><span data-stu-id="b7175-115">For a list of templates and the properties they support in beta, use a [directorySettingTemplate query](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).</span></span> <span data-ttu-id="b7175-116">(Para pontos de extremidade de v 1.0, chame [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)</span><span class="sxs-lookup"><span data-stu-id="b7175-116">(For v1.0 endpoints, call [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="0c814-117">Permissões</span><span class="sxs-lookup"><span data-stu-id="0c814-117">Permissions</span></span>
-<span data-ttu-id="0c814-p105">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0c814-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7175-117">Permissões</span><span class="sxs-lookup"><span data-stu-id="b7175-117">Permissions</span></span>
+<span data-ttu-id="b7175-p105">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7175-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0c814-120">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0c814-120">Permission type</span></span>      | <span data-ttu-id="0c814-121">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0c814-121">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b7175-120">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b7175-120">Permission type</span></span>      | <span data-ttu-id="b7175-121">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b7175-121">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0c814-122">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0c814-122">Delegated (work or school account)</span></span> | <span data-ttu-id="0c814-123">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0c814-123">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="0c814-124">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0c814-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0c814-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0c814-125">Not supported.</span></span>    |
-|<span data-ttu-id="0c814-126">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0c814-126">Application</span></span> | <span data-ttu-id="0c814-127">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c814-127">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="b7175-122">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b7175-122">Delegated (work or school account)</span></span> | <span data-ttu-id="b7175-123">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b7175-123">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="b7175-124">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b7175-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7175-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b7175-125">Not supported.</span></span>    |
+|<span data-ttu-id="b7175-126">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b7175-126">Application</span></span> | <span data-ttu-id="b7175-127">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7175-127">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0c814-128">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0c814-128">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b7175-128">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b7175-128">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /settings
 POST /groups/{id}/settings
 ```
-## <a name="request-headers"></a><span data-ttu-id="0c814-129">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0c814-129">Request headers</span></span>
-| <span data-ttu-id="0c814-130">Nome</span><span class="sxs-lookup"><span data-stu-id="0c814-130">Name</span></span>       | <span data-ttu-id="0c814-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="0c814-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b7175-129">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b7175-129">Request headers</span></span>
+| <span data-ttu-id="b7175-130">Nome</span><span class="sxs-lookup"><span data-stu-id="b7175-130">Name</span></span>       | <span data-ttu-id="b7175-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7175-131">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="0c814-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="0c814-132">Authorization</span></span>  | <span data-ttu-id="0c814-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0c814-p106">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="b7175-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="b7175-132">Authorization</span></span>  | <span data-ttu-id="b7175-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b7175-p106">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0c814-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0c814-135">Request body</span></span>
-<span data-ttu-id="0c814-136">No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .</span><span class="sxs-lookup"><span data-stu-id="0c814-136">In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.</span></span>  <span data-ttu-id="0c814-137">No entanto, o nome de exibição da configuração será definido com base no nome do modelo de configurações referenciado.</span><span class="sxs-lookup"><span data-stu-id="0c814-137">However, the display name for the setting will be set based on the referenced settings template name.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7175-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b7175-135">Request body</span></span>
+<span data-ttu-id="b7175-136">No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .</span><span class="sxs-lookup"><span data-stu-id="b7175-136">In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.</span></span>  <span data-ttu-id="b7175-137">No entanto, o nome de exibição da configuração será definido com base no nome do modelo de configurações referenciado.</span><span class="sxs-lookup"><span data-stu-id="b7175-137">However, the display name for the setting will be set based on the referenced settings template name.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0c814-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c814-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b7175-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7175-138">Response</span></span>
 
-<span data-ttu-id="0c814-139">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [directorySetting](../resources/directorysetting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0c814-139">If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.</span></span>
+<span data-ttu-id="b7175-139">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [directorySetting](../resources/directorysetting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b7175-139">If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0c814-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0c814-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0c814-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0c814-141">Request</span></span>
-<span data-ttu-id="0c814-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0c814-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b7175-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b7175-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b7175-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b7175-141">Request</span></span>
+<span data-ttu-id="b7175-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b7175-142">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="0c814-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="0c814-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b7175-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="b7175-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directorysetting_from_settings"
@@ -74,27 +74,27 @@ Content-length: 222
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="0c814-144">C#</span><span class="sxs-lookup"><span data-stu-id="0c814-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b7175-144">C#</span><span class="sxs-lookup"><span data-stu-id="b7175-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysetting-from-settings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0c814-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="0c814-145">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b7175-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b7175-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-settings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0c814-146">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="0c814-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b7175-146">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="b7175-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directorysetting-from-settings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="0c814-147">Java</span><span class="sxs-lookup"><span data-stu-id="0c814-147">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="b7175-147">Java</span><span class="sxs-lookup"><span data-stu-id="b7175-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directorysetting-from-settings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="0c814-148">No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .</span><span class="sxs-lookup"><span data-stu-id="0c814-148">In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="0c814-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c814-149">Response</span></span>
-<span data-ttu-id="0c814-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0c814-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="b7175-148">No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .</span><span class="sxs-lookup"><span data-stu-id="b7175-148">In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="b7175-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7175-149">Response</span></span>
+<span data-ttu-id="b7175-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b7175-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
