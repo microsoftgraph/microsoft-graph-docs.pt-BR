@@ -4,31 +4,32 @@ description: Criar um novo objeto mobileAppDependency.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2b5114c8732567217b3636455550f0697edff6b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 69ff12bb7c0d00457d86d62c467778de2a9223fd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973961"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329177"
 ---
-# <a name="create-mobileappdependency"></a><span data-ttu-id="52f12-103">Criar mobileAppDependency</span><span class="sxs-lookup"><span data-stu-id="52f12-103">Create mobileAppDependency</span></span>
+# <a name="create-mobileappdependency"></a><span data-ttu-id="44853-103">Criar mobileAppDependency</span><span class="sxs-lookup"><span data-stu-id="44853-103">Create mobileAppDependency</span></span>
 
-> <span data-ttu-id="52f12-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="52f12-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="44853-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="44853-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="52f12-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="52f12-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="44853-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="44853-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="52f12-106">Criar um novo objeto [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) .</span><span class="sxs-lookup"><span data-stu-id="52f12-106">Create a new [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) object.</span></span>
+<span data-ttu-id="44853-106">Criar um novo objeto [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) .</span><span class="sxs-lookup"><span data-stu-id="44853-106">Create a new [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="52f12-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="52f12-107">Prerequisites</span></span>
-<span data-ttu-id="52f12-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="52f12-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="44853-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="44853-107">Prerequisites</span></span>
+<span data-ttu-id="44853-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44853-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="52f12-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="52f12-110">Permission type</span></span>|<span data-ttu-id="52f12-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="52f12-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="44853-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="44853-110">Permission type</span></span>|<span data-ttu-id="44853-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="44853-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="52f12-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="52f12-112">Delegated (work or school account)</span></span>|<span data-ttu-id="52f12-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52f12-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="52f12-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="52f12-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="52f12-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="52f12-115">Not supported.</span></span>|
-|<span data-ttu-id="52f12-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="52f12-116">Application</span></span>|<span data-ttu-id="52f12-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="52f12-117">Not supported.</span></span>|
+|<span data-ttu-id="44853-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="44853-112">Delegated (work or school account)</span></span>|<span data-ttu-id="44853-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44853-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="44853-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="44853-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="44853-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="44853-115">Not supported.</span></span>|
+|<span data-ttu-id="44853-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="44853-116">Application</span></span>|<span data-ttu-id="44853-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44853-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="52f12-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="52f12-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="44853-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="44853-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +38,34 @@ ms.locfileid: "34973961"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="52f12-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="52f12-119">Request headers</span></span>
-|<span data-ttu-id="52f12-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="52f12-120">Header</span></span>|<span data-ttu-id="52f12-121">Valor</span><span class="sxs-lookup"><span data-stu-id="52f12-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="44853-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="44853-119">Request headers</span></span>
+|<span data-ttu-id="44853-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="44853-120">Header</span></span>|<span data-ttu-id="44853-121">Valor</span><span class="sxs-lookup"><span data-stu-id="44853-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="52f12-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="52f12-122">Authorization</span></span>|<span data-ttu-id="52f12-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="52f12-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="52f12-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="52f12-124">Accept</span></span>|<span data-ttu-id="52f12-125">application/json</span><span class="sxs-lookup"><span data-stu-id="52f12-125">application/json</span></span>|
+|<span data-ttu-id="44853-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="44853-122">Authorization</span></span>|<span data-ttu-id="44853-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="44853-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="44853-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="44853-124">Accept</span></span>|<span data-ttu-id="44853-125">application/json</span><span class="sxs-lookup"><span data-stu-id="44853-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="52f12-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="52f12-126">Request body</span></span>
-<span data-ttu-id="52f12-127">No corpo da solicitação, forneça uma representação JSON do objeto mobileAppDependency.</span><span class="sxs-lookup"><span data-stu-id="52f12-127">In the request body, supply a JSON representation for the mobileAppDependency object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="44853-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="44853-126">Request body</span></span>
+<span data-ttu-id="44853-127">No corpo da solicitação, forneça uma representação JSON do objeto mobileAppDependency.</span><span class="sxs-lookup"><span data-stu-id="44853-127">In the request body, supply a JSON representation for the mobileAppDependency object.</span></span>
 
-<span data-ttu-id="52f12-128">A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAppDependency.</span><span class="sxs-lookup"><span data-stu-id="52f12-128">The following table shows the properties that are required when you create the mobileAppDependency.</span></span>
+<span data-ttu-id="44853-128">A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAppDependency.</span><span class="sxs-lookup"><span data-stu-id="44853-128">The following table shows the properties that are required when you create the mobileAppDependency.</span></span>
 
-|<span data-ttu-id="52f12-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="52f12-129">Property</span></span>|<span data-ttu-id="52f12-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="52f12-130">Type</span></span>|<span data-ttu-id="52f12-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="52f12-131">Description</span></span>|
+|<span data-ttu-id="44853-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="44853-129">Property</span></span>|<span data-ttu-id="44853-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="44853-130">Type</span></span>|<span data-ttu-id="44853-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="44853-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="52f12-132">id</span><span class="sxs-lookup"><span data-stu-id="52f12-132">id</span></span>|<span data-ttu-id="52f12-133">String</span><span class="sxs-lookup"><span data-stu-id="52f12-133">String</span></span>|<span data-ttu-id="52f12-134">A ID da entidade de relação. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span><span class="sxs-lookup"><span data-stu-id="52f12-134">The relationship entity id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span></span>|
-|<span data-ttu-id="52f12-135">targetId</span><span class="sxs-lookup"><span data-stu-id="52f12-135">targetId</span></span>|<span data-ttu-id="52f12-136">String</span><span class="sxs-lookup"><span data-stu-id="52f12-136">String</span></span>|<span data-ttu-id="52f12-137">A ID de aplicativo do aplicativo móvel do filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span><span class="sxs-lookup"><span data-stu-id="52f12-137">The target child mobile app's app id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span></span>|
-|<span data-ttu-id="52f12-138">targetDisplayName</span><span class="sxs-lookup"><span data-stu-id="52f12-138">targetDisplayName</span></span>|<span data-ttu-id="52f12-139">String</span><span class="sxs-lookup"><span data-stu-id="52f12-139">String</span></span>|<span data-ttu-id="52f12-140">O nome de exibição do aplicativo móvel filho de destino.</span><span class="sxs-lookup"><span data-stu-id="52f12-140">The target child mobile app's display name.</span></span> <span data-ttu-id="52f12-141">Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span><span class="sxs-lookup"><span data-stu-id="52f12-141">Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span></span>|
-|<span data-ttu-id="52f12-142">DependencyType</span><span class="sxs-lookup"><span data-stu-id="52f12-142">dependencyType</span></span>|[<span data-ttu-id="52f12-143">mobileAppDependencyType</span><span class="sxs-lookup"><span data-stu-id="52f12-143">mobileAppDependencyType</span></span>](../resources/intune-apps-mobileappdependencytype.md)|<span data-ttu-id="52f12-144">O tipo de relação de dependência entre os aplicativos pai e filho.</span><span class="sxs-lookup"><span data-stu-id="52f12-144">The type of dependency relationship between the parent and child apps.</span></span> <span data-ttu-id="52f12-145">Os valores possíveis são: `detect` e `autoInstall`.</span><span class="sxs-lookup"><span data-stu-id="52f12-145">Possible values are: `detect`, `autoInstall`.</span></span>|
-|<span data-ttu-id="52f12-146">dependentAppCount</span><span class="sxs-lookup"><span data-stu-id="52f12-146">dependentAppCount</span></span>|<span data-ttu-id="52f12-147">Int32</span><span class="sxs-lookup"><span data-stu-id="52f12-147">Int32</span></span>|<span data-ttu-id="52f12-148">O número total de dependências do aplicativo filho.</span><span class="sxs-lookup"><span data-stu-id="52f12-148">The total number of dependencies the child app has.</span></span>|
+|<span data-ttu-id="44853-132">id</span><span class="sxs-lookup"><span data-stu-id="44853-132">id</span></span>|<span data-ttu-id="44853-133">String</span><span class="sxs-lookup"><span data-stu-id="44853-133">String</span></span>|<span data-ttu-id="44853-134">A ID da entidade de relação. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span><span class="sxs-lookup"><span data-stu-id="44853-134">The relationship entity id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span></span>|
+|<span data-ttu-id="44853-135">targetId</span><span class="sxs-lookup"><span data-stu-id="44853-135">targetId</span></span>|<span data-ttu-id="44853-136">String</span><span class="sxs-lookup"><span data-stu-id="44853-136">String</span></span>|<span data-ttu-id="44853-137">A ID de aplicativo do aplicativo móvel do filho de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span><span class="sxs-lookup"><span data-stu-id="44853-137">The target child mobile app's app id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span></span>|
+|<span data-ttu-id="44853-138">targetDisplayName</span><span class="sxs-lookup"><span data-stu-id="44853-138">targetDisplayName</span></span>|<span data-ttu-id="44853-139">String</span><span class="sxs-lookup"><span data-stu-id="44853-139">String</span></span>|<span data-ttu-id="44853-140">O nome de exibição do aplicativo móvel filho de destino.</span><span class="sxs-lookup"><span data-stu-id="44853-140">The target child mobile app's display name.</span></span> <span data-ttu-id="44853-141">Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span><span class="sxs-lookup"><span data-stu-id="44853-141">Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)</span></span>|
+|<span data-ttu-id="44853-142">DependencyType</span><span class="sxs-lookup"><span data-stu-id="44853-142">dependencyType</span></span>|[<span data-ttu-id="44853-143">mobileAppDependencyType</span><span class="sxs-lookup"><span data-stu-id="44853-143">mobileAppDependencyType</span></span>](../resources/intune-apps-mobileappdependencytype.md)|<span data-ttu-id="44853-144">O tipo de relação de dependência entre os aplicativos pai e filho.</span><span class="sxs-lookup"><span data-stu-id="44853-144">The type of dependency relationship between the parent and child apps.</span></span> <span data-ttu-id="44853-145">Os valores possíveis são: `detect` e `autoInstall`.</span><span class="sxs-lookup"><span data-stu-id="44853-145">Possible values are: `detect`, `autoInstall`.</span></span>|
+|<span data-ttu-id="44853-146">dependentAppCount</span><span class="sxs-lookup"><span data-stu-id="44853-146">dependentAppCount</span></span>|<span data-ttu-id="44853-147">Int32</span><span class="sxs-lookup"><span data-stu-id="44853-147">Int32</span></span>|<span data-ttu-id="44853-148">O número total de dependências do aplicativo filho.</span><span class="sxs-lookup"><span data-stu-id="44853-148">The total number of dependencies the child app has.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="52f12-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="52f12-149">Response</span></span>
-<span data-ttu-id="52f12-150">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="52f12-150">If successful, this method returns a `201 Created` response code and a [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="44853-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="44853-149">Response</span></span>
+<span data-ttu-id="44853-150">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="44853-150">If successful, this method returns a `201 Created` response code and a [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="52f12-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="52f12-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="44853-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="44853-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="52f12-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="52f12-152">Request</span></span>
-<span data-ttu-id="52f12-153">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="52f12-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="44853-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="44853-152">Request</span></span>
+<span data-ttu-id="44853-153">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="44853-153">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships
 Content-type: application/json
@@ -79,8 +80,8 @@ Content-length: 211
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="52f12-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="52f12-154">Response</span></span>
-<span data-ttu-id="52f12-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="52f12-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="44853-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="44853-154">Response</span></span>
+<span data-ttu-id="44853-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="44853-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -95,6 +96,7 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
+
 
 
 

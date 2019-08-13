@@ -5,34 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d226f384bfc3a525b0a8cad0e72f8db90f70c88
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 712993db47c8f2512cdf81220f267d992e096417
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005006"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335449"
 ---
-# <a name="windowsappxappassignmentsettings-resource-type"></a><span data-ttu-id="89dc8-103">tipo de recurso windowsAppXAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="89dc8-103">windowsAppXAppAssignmentSettings resource type</span></span>
+# <a name="windowsappxappassignmentsettings-resource-type"></a><span data-ttu-id="bfc6a-103">tipo de recurso windowsAppXAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="bfc6a-103">windowsAppXAppAssignmentSettings resource type</span></span>
 
-> <span data-ttu-id="89dc8-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="89dc8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="bfc6a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="bfc6a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="89dc8-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="89dc8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bfc6a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="bfc6a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="89dc8-106">Contém propriedades usadas ao atribuir um aplicativo móvel do Windows AppX a um grupo.</span><span class="sxs-lookup"><span data-stu-id="89dc8-106">Contains properties used when assigning a Windows AppX mobile app to a group.</span></span>
+<span data-ttu-id="bfc6a-106">Contém propriedades usadas ao atribuir um aplicativo móvel do Windows AppX a um grupo.</span><span class="sxs-lookup"><span data-stu-id="bfc6a-106">Contains properties used when assigning a Windows AppX mobile app to a group.</span></span>
 
 
-<span data-ttu-id="89dc8-107">Herda de [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="89dc8-107">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
+<span data-ttu-id="bfc6a-107">Herda de [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="bfc6a-107">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="89dc8-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="89dc8-108">Properties</span></span>
-|<span data-ttu-id="89dc8-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="89dc8-109">Property</span></span>|<span data-ttu-id="89dc8-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="89dc8-110">Type</span></span>|<span data-ttu-id="89dc8-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="89dc8-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="bfc6a-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bfc6a-108">Properties</span></span>
+|<span data-ttu-id="bfc6a-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bfc6a-109">Property</span></span>|<span data-ttu-id="bfc6a-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="bfc6a-110">Type</span></span>|<span data-ttu-id="bfc6a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="bfc6a-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="89dc8-112">useDeviceContext</span><span class="sxs-lookup"><span data-stu-id="89dc8-112">useDeviceContext</span></span>|<span data-ttu-id="89dc8-113">Booliano</span><span class="sxs-lookup"><span data-stu-id="89dc8-113">Boolean</span></span>|<span data-ttu-id="89dc8-114">Se o contexto de execução de dispositivo deve ou não ser usado para o aplicativo móvel do Windows AppX.</span><span class="sxs-lookup"><span data-stu-id="89dc8-114">Whether or not to use device execution context for Windows AppX mobile app.</span></span>|
+|<span data-ttu-id="bfc6a-112">useDeviceContext</span><span class="sxs-lookup"><span data-stu-id="bfc6a-112">useDeviceContext</span></span>|<span data-ttu-id="bfc6a-113">Booliano</span><span class="sxs-lookup"><span data-stu-id="bfc6a-113">Boolean</span></span>|<span data-ttu-id="bfc6a-114">Se o contexto de execução de dispositivo deve ou não ser usado para o aplicativo móvel do Windows AppX.</span><span class="sxs-lookup"><span data-stu-id="bfc6a-114">Whether or not to use device execution context for Windows AppX mobile app.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="89dc8-115">Relações</span><span class="sxs-lookup"><span data-stu-id="89dc8-115">Relationships</span></span>
-<span data-ttu-id="89dc8-116">Nenhum</span><span class="sxs-lookup"><span data-stu-id="89dc8-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="bfc6a-115">Relações</span><span class="sxs-lookup"><span data-stu-id="bfc6a-115">Relationships</span></span>
+<span data-ttu-id="bfc6a-116">Nenhum</span><span class="sxs-lookup"><span data-stu-id="bfc6a-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="89dc8-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="89dc8-117">JSON Representation</span></span>
-<span data-ttu-id="89dc8-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="89dc8-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bfc6a-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bfc6a-117">JSON Representation</span></span>
+<span data-ttu-id="bfc6a-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bfc6a-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsAppXAppAssignmentSettings"
@@ -44,8 +44,6 @@ ms.locfileid: "36005006"
   "useDeviceContext": true
 }
 ```
-
-
 
 
 
