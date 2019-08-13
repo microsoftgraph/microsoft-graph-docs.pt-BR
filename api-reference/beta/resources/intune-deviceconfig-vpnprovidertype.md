@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 43e9c146fc30e9dfaadef45b42e45dcf0787f13f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ea4dee71a18a6ddca4519d8b421d2097fc7907b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969461"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367642"
 ---
 # <a name="vpnprovidertype-enum-type"></a>tipo de enumeração vpnProviderType
 
@@ -26,8 +26,6 @@ Tipo de provedor para VPN por aplicativo.
 |notConfigured|,0|O tráfego de encapsulamento não é configurado explicitamente.|
 |appProxy|1|Tráfego de túnel na camada do aplicativo.|
 |packetTunnel|duas|Tráfego de túnel na camada IP.|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8cc13022e3c5ed0a15f715957878bdabdc1794c5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa3fab0afe5ac0ac13312f9d6f4037e62fd9aaaf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000682"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368174"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enumeração ratingUnitedKingdomMoviesType
 
@@ -32,8 +32,6 @@ Rótulos de classificação de filmes no Reino Unido
 |agesAbove12Cinema|6|12A, cinema versão adequada para 12 anos ou mais|
 |agesAbove15|178|15, adequado somente por 15 anos e mais|
 |adultos|8 |Adequado somente para adultos|
-
-
 
 
 

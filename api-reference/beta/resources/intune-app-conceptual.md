@@ -4,13 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: 4bae37d3364836d8c706bfd97994c43396fa8143
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0af6b2070b7438aee2f4efcdb9661cf37a265cd9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006147"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366200"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -111,7 +110,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Conteúdo do aplicativo móvel](intune-apps-mobileappcontent.md)
 - [Arquivo de conteúdo do aplicativo móvel](intune-apps-mobileappcontentfile.md)
 - [Estado de carregamento do arquivo de conteúdo do aplicativo móvel](intune-apps-mobileappcontentfileuploadstate.md)
-- [Tipo de dependecy do aplicativo móvel](intune-apps-mobileappdependecytype.md)
 - [Dependência do aplicativo móvel](intune-apps-mobileappdependency.md)
 - [Tipo de dependência do aplicativo móvel](intune-apps-mobileappdependencytype.md)
 - [Status de instalação do aplicativo móvel](intune-apps-mobileappinstallstatus.md)
@@ -177,3 +175,4 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
 - [Configurações de atribuição do aplicativo Windows universal AppX](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Aplicativo contido do Windows universal AppX](intune-apps-windowsuniversalappxcontainedapp.md)
+
