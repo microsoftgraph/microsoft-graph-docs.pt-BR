@@ -1,24 +1,24 @@
 ---
-title: Listar androidForWorkVpnConfigurations
-description: Listar Propriedades e relações dos objetos androidForWorkVpnConfiguration.
+title: Listar androidDeviceOwnerTrustedRootCertificates
+description: Listar Propriedades e relações dos objetos androidDeviceOwnerTrustedRootCertificate.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 52234451a50b14c04de6bf46ca3e855d3046ac99
+ms.openlocfilehash: 7110905f146352bf863456491a2bf80be5d074c8
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311869"
+ms.locfileid: "36316857"
 ---
-# <a name="list-androidforworkvpnconfigurations"></a>Listar androidForWorkVpnConfigurations
+# <a name="list-androiddeviceownertrustedrootcertificates"></a>Listar androidDeviceOwnerTrustedRootCertificates
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) .
+Listar Propriedades e relações dos objetos [androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -64,13 +64,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2203
+Content-Length: 1492
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.androidForWorkVpnConfiguration",
-      "id": "2cf4c52c-c52c-2cf4-2cc5-f42c2cc5f42c",
+      "@odata.type": "#microsoft.graph.androidDeviceOwnerTrustedRootCertificate",
+      "id": "6efc1a55-1a55-6efc-551a-fc6e551afc6e",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
@@ -101,34 +101,8 @@ Content-Length: 2203
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "connectionName": "Connection Name value",
-      "connectionType": "pulseSecure",
-      "role": "Role value",
-      "realm": "Realm value",
-      "servers": [
-        {
-          "@odata.type": "microsoft.graph.vpnServer",
-          "description": "Description value",
-          "address": "Address value",
-          "isDefaultServer": true
-        }
-      ],
-      "fingerprint": "Fingerprint value",
-      "customData": [
-        {
-          "@odata.type": "microsoft.graph.keyValue",
-          "key": "Key value",
-          "value": "Value value"
-        }
-      ],
-      "customKeyValueData": [
-        {
-          "@odata.type": "microsoft.graph.keyValuePair",
-          "name": "Name value",
-          "value": "Value value"
-        }
-      ],
-      "authenticationMethod": "usernameAndPassword"
+      "trustedRootCertificate": "dHJ1c3RlZFJvb3RDZXJ0aWZpY2F0ZQ==",
+      "certFileName": "Cert File Name value"
     }
   ]
 }

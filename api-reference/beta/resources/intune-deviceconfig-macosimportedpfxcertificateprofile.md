@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0dc78219af4eaf889c7fc55310b1a714ad34330
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82c9b099ecc763a48f2f33624fba3a96aef3ef11
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000960"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321957"
 ---
 # <a name="macosimportedpfxcertificateprofile-resource-type"></a>tipo de recurso macOSImportedPFXCertificateProfile
 
@@ -115,8 +115,6 @@ Veja a seguir uma representação JSON do recurso.
   "intendedPurpose": "String"
 }
 ```
-
-
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: Obter androidForWorkNineWorkEasConfiguration
-description: Leia as propriedades e as relações do objeto androidForWorkNineWorkEasConfiguration.
+title: Obter androidDeviceOwnerEnterpriseWiFiConfiguration
+description: Leia as propriedades e as relações do objeto androidDeviceOwnerEnterpriseWiFiConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f4f70298632581ae3fa2ad9d7c4b5554ed3e8aed
+ms.openlocfilehash: a19ca9cb4c4a06da2358857fcd7b131a183d42a1
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312037"
+ms.locfileid: "36316871"
 ---
-# <a name="get-androidforworknineworkeasconfiguration"></a>Obter androidForWorkNineWorkEasConfiguration
+# <a name="get-androiddeviceownerenterprisewificonfiguration"></a>Obter androidDeviceOwnerEnterpriseWiFiConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [androidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md) .
+Leia as propriedades e as relações do objeto [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsof
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [androidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -68,12 +68,12 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1612
+Content-Length: 1891
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.androidForWorkNineWorkEasConfiguration",
-    "id": "f8ef19e0-19e0-f8ef-e019-eff8e019eff8",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration",
+    "id": "7ef0d9c3-d9c3-7ef0-c3d9-f07ec3d9f07e",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -104,15 +104,18 @@ Content-Length: 1612
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "authenticationMethod": "certificate",
-    "durationOfEmailToSync": "oneDay",
-    "emailAddressSource": "primarySmtpAddress",
-    "hostName": "Host Name value",
-    "requireSsl": true,
-    "usernameSource": "userPrincipalName",
-    "syncCalendar": true,
-    "syncContacts": true,
-    "syncTasks": true
+    "networkName": "Network Name value",
+    "ssid": "Ssid value",
+    "connectAutomatically": true,
+    "connectWhenNetworkNameIsHidden": true,
+    "wiFiSecurityType": "wep",
+    "preSharedKey": "Pre Shared Key value",
+    "preSharedKeyIsSet": true,
+    "eapType": "eapTtls",
+    "authenticationMethod": "usernameAndPassword",
+    "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+    "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
   }
 }
 ```

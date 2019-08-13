@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5061155a7a3e4d8eac37116b39ada81c74fbfc32
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b59c921efb5b5b66b5a2962c5e130342f293b0a5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957952"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312401"
 ---
 # <a name="create-androidenterprisewificonfiguration"></a>Criar Androidenterprisewificonfiguration.
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -192,6 +192,7 @@ Content-Length: 1871
   "preSharedKey": "Pre Shared Key value"
 }
 ```
+
 
 
 

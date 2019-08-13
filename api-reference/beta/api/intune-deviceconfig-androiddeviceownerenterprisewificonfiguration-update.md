@@ -1,24 +1,24 @@
 ---
-title: Atualizar windows81SCEPCertificateProfile
-description: Atualiza as propriedades de um objeto windows81SCEPCertificateProfile.
+title: Atualizar androidDeviceOwnerEnterpriseWiFiConfiguration
+description: Atualiza as propriedades de um objeto androidDeviceOwnerEnterpriseWiFiConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 308ba0fe2c9b51843d2406ed7b805ed64f4c2620
+ms.openlocfilehash: dc98f0a499fa929962fb9ddc8b45a601ef512cfc
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314151"
+ms.locfileid: "36316867"
 ---
-# <a name="update-windows81scepcertificateprofile"></a>Atualizar windows81SCEPCertificateProfile
+# <a name="update-androiddeviceownerenterprisewificonfiguration"></a>Atualizar androidDeviceOwnerEnterpriseWiFiConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) .
+Atualiza as propriedades de um objeto [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,9 +47,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -64,26 +64,23 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|renewalThresholdPercentage|Int32|Porcentagem de limite de renovação de certificado. Valores válidos de 1 a 99 herdados de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|
-|keyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|Provedor de armazenamento de chave (KSP) herdado de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Os valores possíveis são: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
-|subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato do nome de entidade do certificado herdado de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de nome alternativo de entidade do certificado herdado de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
-|certificateValidityPeriodValue|Int32|Valor para o período de validade do certificado herdado de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Dimensionar o período de validade do certificado herdado de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Os valores possíveis são: `days`, `months`, `years`.|
-|extendedKeyUsages|coleção [extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Configurações de EKU (uso estendido de chave). Esta coleção pode conter um máximo de 500 elementos. Herdado de [windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md)|
-|customSubjectAlternativeNames|coleção [customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)|Configurações de nome alternativo de entidade personalizada. Esta coleção pode conter um máximo de 500 elementos. Herdado de [windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md)|
-|scepServerUrls|Coleção de cadeias de caracteres|URL (s) do servidor de SCEP.|
-|subjectNameFormatString|String|Formato personalizado a ser usado com SubjectNameFormat = Custom. Exemplo: CN = {{EmailAddress}}, E = {{EmailAddress}}, OU = usuários corporativos, O = Contoso Corporation, L = Redmond, ST = WA, C = br|
-|uso de|[usos de](../resources/intune-deviceconfig-keyusages.md)|Uso da chave do SCEP. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
-|keySize|[keySize](../resources/intune-deviceconfig-keysize.md)|Tamanho da chave SCEP. Os valores possíveis são: `size1024` e `size2048`.|
-|hashAlgorithm|[hashAlgorithm](../resources/intune-deviceconfig-hashalgorithms.md)|Algoritmo de hash do SCEP. Os valores possíveis são: `sha1` e `sha2`.|
-|Subjectalternativenameformatstring foi|String|Cadeia de caracteres personalizada que define o atributo AAD.|
-|certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|Certificado de repositório de destino. Os valores possíveis são: `user` e `machine`.|
+|NetworkName|String|Nome da rede herdado de [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|SSID|String|Este é o nome da rede Wi-Fi que é transmitida para todos os dispositivos. Herdado de [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|connectAutomatically|Booliano|Conectar automaticamente quando esta rede estiver no intervalo. A definição dessa opção como true ignorará o prompt do usuário e conectará automaticamente o dispositivo à rede Wi-Fi. Herdado de [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|connectWhenNetworkNameIsHidden|Booliano|Quando definido como true, esse perfil força o dispositivo a se conectar a uma rede que não transmite seu SSID para todos os dispositivos. Herdado de [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|à|[androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype.md)|Indica se o ponto de extremidade Wi-Fi usa um tipo de segurança baseado em EAP. Herdado de [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md). Os valores possíveis são: `open`, `wep`, `wpaPersonal`, `wpaEnterprise`.|
+|preSharedKey|String|Esta é a chave pré-compartilhada para a rede Wi-Fi pessoal WPA. Herdado de [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|preSharedKeyIsSet|Booliano|Esta é a chave pré-compartilhada para a rede Wi-Fi pessoal WPA. Herdado de [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|eapType|[androidEapType](../resources/intune-deviceconfig-androideaptype.md)|Indica o tipo de protocolo EAP definido no ponto de extremidade Wi-Fi (roteador). Os valores possíveis são: `eapTls`, `eapTtls`, `peap`.|
+|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Indica o método de autenticação que o cliente (dispositivo) precisa usar quando o tipo EAP é configurado como PEAP ou EAP-TTLS. Os valores possíveis são: `certificate`, `usernameAndPassword`, `derivedCredential`.|
+|innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Método não EAP para autenticação (identidade interna) quando o tipo EAP é EAP-TTLS e AuthenticationMethod é username e password. Os valores possíveis são: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
+|innerAuthenticationProtocolForPeap|[nonEapAuthenticationMethodForPeap](../resources/intune-deviceconfig-noneapauthenticationmethodforpeap.md)|Método não EAP para autenticação (identidade interna) quando o tipo EAP é PEAP e AuthenticationMethod é username e password. Os valores possíveis são: `none` e `microsoftChapVersionTwo`.|
+|outerIdentityPrivacyTemporaryValue|String|Habilitar Privacidade de identidade (identidade externa) quando o tipo EAP é configurado como EAP-TTLS ou PEAP. A cadeia de caracteres fornecida aqui é usada para mascarar o nome de usuário de usuários individuais quando eles tentam se conectar à rede Wi-Fi.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -92,10 +89,10 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2024
+Content-length: 1612
 
 {
-  "@odata.type": "#microsoft.graph.windows81SCEPCertificateProfile",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -124,35 +121,18 @@ Content-length: 2024
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 10,
-  "keyStorageProvider": "useTpmKspOtherwiseFail",
-  "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
-  "certificateValidityPeriodValue": 14,
-  "certificateValidityPeriodScale": "months",
-  "extendedKeyUsages": [
-    {
-      "@odata.type": "microsoft.graph.extendedKeyUsage",
-      "name": "Name value",
-      "objectIdentifier": "Object Identifier value"
-    }
-  ],
-  "customSubjectAlternativeNames": [
-    {
-      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
-      "sanType": "emailAddress",
-      "name": "Name value"
-    }
-  ],
-  "scepServerUrls": [
-    "Scep Server Urls value"
-  ],
-  "subjectNameFormatString": "Subject Name Format String value",
-  "keyUsage": "digitalSignature",
-  "keySize": "size2048",
-  "hashAlgorithm": "sha2",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-  "certificateStore": "machine"
+  "networkName": "Network Name value",
+  "ssid": "Ssid value",
+  "connectAutomatically": true,
+  "connectWhenNetworkNameIsHidden": true,
+  "wiFiSecurityType": "wep",
+  "preSharedKey": "Pre Shared Key value",
+  "preSharedKeyIsSet": true,
+  "eapType": "eapTtls",
+  "authenticationMethod": "usernameAndPassword",
+  "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+  "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
+  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
 
@@ -161,11 +141,11 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2196
+Content-Length: 1784
 
 {
-  "@odata.type": "#microsoft.graph.windows81SCEPCertificateProfile",
-  "id": "2daf8af2-8af2-2daf-f28a-af2df28aaf2d",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration",
+  "id": "7ef0d9c3-d9c3-7ef0-c3d9-f07ec3d9f07e",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -196,35 +176,18 @@ Content-Length: 2196
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 10,
-  "keyStorageProvider": "useTpmKspOtherwiseFail",
-  "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
-  "certificateValidityPeriodValue": 14,
-  "certificateValidityPeriodScale": "months",
-  "extendedKeyUsages": [
-    {
-      "@odata.type": "microsoft.graph.extendedKeyUsage",
-      "name": "Name value",
-      "objectIdentifier": "Object Identifier value"
-    }
-  ],
-  "customSubjectAlternativeNames": [
-    {
-      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
-      "sanType": "emailAddress",
-      "name": "Name value"
-    }
-  ],
-  "scepServerUrls": [
-    "Scep Server Urls value"
-  ],
-  "subjectNameFormatString": "Subject Name Format String value",
-  "keyUsage": "digitalSignature",
-  "keySize": "size2048",
-  "hashAlgorithm": "sha2",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-  "certificateStore": "machine"
+  "networkName": "Network Name value",
+  "ssid": "Ssid value",
+  "connectAutomatically": true,
+  "connectWhenNetworkNameIsHidden": true,
+  "wiFiSecurityType": "wep",
+  "preSharedKey": "Pre Shared Key value",
+  "preSharedKeyIsSet": true,
+  "eapType": "eapTtls",
+  "authenticationMethod": "usernameAndPassword",
+  "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+  "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
+  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
 
