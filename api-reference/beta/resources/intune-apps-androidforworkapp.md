@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 021b3420829f03c2817431a7c99afcc1bab18db0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef629ce1ab976655cecd3a6a68217fb334dd011f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006133"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366935"
 ---
 # <a name="androidforworkapp-resource-type"></a>tipo de recurso androidForWorkApp
 
@@ -111,8 +111,6 @@ Veja a seguir uma representação JSON do recurso.
   "appStoreUrl": "String"
 }
 ```
-
-
 
 
 

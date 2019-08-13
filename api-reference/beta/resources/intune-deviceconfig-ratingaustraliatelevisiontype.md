@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fdbb7876221e1f0d213813a148cbc10cb04cfa85
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69fdd926d02a2ae150f10a0d911854538a5d2f69
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000778"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368356"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>tipo de enumeração ratingAustraliaTelevisionType
 
@@ -32,8 +32,6 @@ Rótulos de classificação de conteúdo de TV na Austrália
 |completa|6|A classificação M é recomendada para visualizadores mais de 15|
 |agesAbove15|178|A classificação MA15 + não é adequada para visualizadores abaixo de 15|
 |agesAbove15AdultViolence|8 |A classificação AV15 + não é adequada para visualizadores sob 15, específico violência adulto|
-
-
 
 
 

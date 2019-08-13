@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2eb02ddde8b570a6d68f077ead1123b00e82cfe0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 41a6d23e42d263dd8241e960af693450ac0a7c3d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000120"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369504"
 ---
 # <a name="windowsupdatetype-enum-type"></a>tipo de enumeração windowsUpdateType
 
@@ -29,8 +29,6 @@ Para quais dispositivos de filial receberão suas atualizações
 |windowsInsiderBuildFast|3D|Compilação do Windows Insider-Fast|
 |windowsInsiderBuildSlow|quatro|Compilação do Windows Insider-lenta|
 |windowsInsiderBuildRelease|0,5|Versão de lançamento do Windows Insider|
-
-
 
 
 

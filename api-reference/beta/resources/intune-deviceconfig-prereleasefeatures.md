@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f809bf6c7ed27825dbda848b3ebb35377ce2bf01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: daf29a7297451de6904ddb590f7b259bb390d0eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000827"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368405"
 ---
 # <a name="prereleasefeatures-enum-type"></a>tipo de enumeração prereleaseFeatures
 
@@ -27,8 +27,6 @@ Valores possíveis para recursos de pré-lançamento.
 |settingsOnly|1|Configurações apenas recursos de pré-lançamento.|
 |settingsAndExperimentations|duas|Configurações e experimentos recursos de pré-lançamento.|
 |notAllowed|3D|Recursos de pré-lançamento não permitidos.|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e5bfbd19f4899b7ef3cdb788b4d7a7fe1b55252
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c0a30fc1b4cc3f8fbd38dee17a09112b9b736546
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969937"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368510"
 ---
 # <a name="omasettingboolean-resource-type"></a>Tipo de recurso omaSettingBoolean
 
@@ -50,8 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": true
 }
 ```
-
-
 
 
 

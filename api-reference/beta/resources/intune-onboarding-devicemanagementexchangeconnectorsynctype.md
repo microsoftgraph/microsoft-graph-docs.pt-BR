@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 86cdc6277232985d4c3e247c5c14801a5d3aef54
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f68277b2eeb7aea123ee843a0b602d11123cbd04
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010760"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369448"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>tipo de enumeração deviceManagementExchangeConnectorSyncType
 
@@ -25,8 +25,6 @@ O tipo de sincronização do Exchange Connector solicitada.
 |:---|:---|:---|
 |fullSync|,0|Descubra todos os dispositivos no Exchange.|
 |deltaSync|1|Descubra apenas o dispositivo no Exchange que foi atualizado durante a janela de sincronização Delta.|
-
-
 
 
 

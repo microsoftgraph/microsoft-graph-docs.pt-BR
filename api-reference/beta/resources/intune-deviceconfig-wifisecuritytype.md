@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 33e0e615a62f62a565196ba3a6c9c814695040e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8bfe6184b2427584c54094636ef7c71f857ec1f6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000533"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369399"
 ---
 # <a name="wifisecuritytype-enum-type"></a>tipo de enumeração à
 
@@ -29,8 +29,6 @@ Tipos de segurança Wi-Fi.
 |Deixa|3D|Criptografia WEP.|
 |wpa2Personal|quatro|WPA2-Pessoal.|
 |wpa2Enterprise|0,5|WPA2-Enterprise. Deve usar o tipo WindowsWifiEnterpriseEAPConfiguration para configurar opções da empresa.|
-
-
 
 
 

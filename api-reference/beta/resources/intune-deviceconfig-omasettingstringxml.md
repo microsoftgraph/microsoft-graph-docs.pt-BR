@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: efc9a2ddd996088f88b85be55c9c7d6bfe62b86a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ddce8acb059ff28ad37bce284efc6f3fd29f0224
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000785"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368440"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Tipo de recurso omaSettingStringXml
 
@@ -52,8 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "binary"
 }
 ```
-
-
 
 
 

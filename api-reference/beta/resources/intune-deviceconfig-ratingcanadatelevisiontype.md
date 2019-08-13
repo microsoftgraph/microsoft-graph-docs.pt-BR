@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 06385e70c62e982b480d26f9cbbda3ad3c4c79e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5cf15a558e4556684c705bce184f9a7bba3b4f17
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969853"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368328"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>tipo de enumeração ratingCanadaTelevisionType
 
@@ -31,8 +31,6 @@ Rótulos de classificação de conteúdo de TV no Canadá
 |parentalGuidance|0,5|PG, orientação dos pais|
 |agesAbove14|6|A classificação de 14 anos destina-se a visualizadores com 14 anos ou mais|
 |agesAbove18|178|A classificação de 18 anos destina-se a visualizadores com 18 anos ou mais|
-
-
 
 
 

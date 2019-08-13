@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b257f38db698fcac472b70885403423232c8b660
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5b7a41a08916c3b5a589189597eac639b7893996
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004320"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357121"
 ---
 # <a name="ioseducationdeviceconfiguration-resource-type"></a>tipo de recurso da ioseducationdeviceconfiguration
 
@@ -102,8 +102,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
-
 
 
 

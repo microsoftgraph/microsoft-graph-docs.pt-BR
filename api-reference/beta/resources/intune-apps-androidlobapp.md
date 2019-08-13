@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e5010b3e115c714a7ad701738455746f7167eb8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5f04a6383d12746d33e4def8ab9914438ce6ce0f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005573"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366942"
 ---
 # <a name="androidlobapp-resource-type"></a>androidLobApp resource type
 
@@ -136,8 +136,6 @@ Veja a seguir uma representação JSON do recurso.
   "identityVersion": "String"
 }
 ```
-
-
 
 
 

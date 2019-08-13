@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4dbae2dc0930b9ec30d8608528a825d12842232c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 9077711d3ed7177e19042b0978218b7844f53196
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872870"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36359831"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ISiteActivitySummaryCollectionPage getSharePointActivityFileCounts = graphClient.reports()
-    .getSharePointActivityFileCounts('D7')
+    .getSharePointActivityFileCounts("D7")
     .buildRequest()
     .get();
 

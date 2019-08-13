@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: db0b0cb9e044602e7181215ce836d47d3466d530
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 93105aee20fb4717ee84568b543e5730a2f7edb1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000813"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368608"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>tipo de enumeração ndesConnectorState
 
@@ -26,8 +26,6 @@ O status atual do conector NDES.
 |none|,0|Estado ainda não disponível para esse conector.|
 |active|1|O conector NDES se conectou recentemente|
 |inativa|duas|Nenhuma atividade recente para o conector NDES|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef0803643cf8b5b93cf1d32dba1e78cdc50e09d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2575b3ab76ce3a901fead2668f13191131d649b3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000092"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369490"
 ---
 # <a name="windowsvpnconfiguration-resource-type"></a>tipo de recurso windowsVpnConfiguration
 
@@ -112,8 +112,6 @@ Veja a seguir uma representação JSON do recurso.
   "customXml": "binary"
 }
 ```
-
-
 
 
 

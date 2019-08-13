@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f1f7e2b6b9cbc32ee41840d96b706322660fd2b2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa4867324541f12113d776e895132b663e0a208b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000554"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368062"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>tipo de enumeração secureAssessmentAccountType
 
@@ -27,8 +27,6 @@ Tipo de contas permitidas para o Windows10SecureAssessment ConfigurationAccount.
 |domainAccount|1|Indica uma conta de domínio no formato domínio \ usuário ou user@domain.com.|
 |localAccount|duas|Indica uma conta local em formato de nome de usuário.|
 |localGuestAccount|3D|Indica uma conta de convidado local em formato de nome de teste.|
-
-
 
 
 

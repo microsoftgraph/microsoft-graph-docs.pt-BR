@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6e9c13ce0acece82e7a890fd021dac4ab5c7fbb0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc05be47c2adc0764a2cdb1e69f7ec11413320cc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004383"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357191"
 ---
 # <a name="emailsyncduration-enum-type"></a>tipo de enumeração emailSyncDuration
 
@@ -30,8 +30,6 @@ Valores possíveis para duração da sincronização de email.
 |twoWeeks|quatro|Sincronize duas semanas de email.|
 |oneMonth|0,5|Sincronizar um mês de email.|
 |ilimitado|6|Sincronizar uma duração ilimitada de email.|
-
-
 
 
 

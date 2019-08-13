@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a61c138cdea69471d10080ddf793553f91e35c77
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b2f6a8a083da1ef07d91b8203ecd26478ccb7fec
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969867"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368384"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de enumeração ratingAppsType
 
@@ -29,8 +29,6 @@ Classificação de aplicativos como conteúdo de mídia
 |agesAbove9|3D|9 +, idade 9 e superior|
 |agesAbove12|quatro|12 +, idade 12 e superior |
 |agesAbove17|0,5|17 +, idade 17 e superior|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6d5d2ea5fedce55451c8a87a784ff627c96e6f23
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 173d3d176d9e9cd927c22af3b0cf1667ed57d0fd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000673"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368261"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>tipo de enumeração ratingIrelandMoviesType
 
@@ -31,8 +31,6 @@ Rótulos de classificação de filmes na Irlanda
 |agesAbove15|0,5|A classificação do 15A é adequada para visualizadores de 15 ou mais|
 |agesAbove16|6|A classificação 16 é adequada para visualizadores de 16 ou mais antigos|
 |adultos|178|A classificação 18, adequada somente para adultos|
-
-
 
 
 

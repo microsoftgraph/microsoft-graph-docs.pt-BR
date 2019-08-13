@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f76a0b685a0759a4455d8de805424ddd09758a63
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ade139765c9a362cd0c9f9365af0026c51ecb4ce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970280"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356722"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>tipo de enumeração lanManagerAuthenticationLevel
 
@@ -29,8 +29,6 @@ Valores possíveis para LanManagerAuthenticationLevel
 |lmAndNtlmV2|3D|Enviar somente respostas LM & NTLMv2|
 |lmNtlmV2AndNotLm|quatro|Enviar LM & somente respostas NTLMv2. Recusar LM|
 |lmNtlmV2AndNotLmOrNtm|0,5|Enviar LM & somente respostas NTLMv2. Recusar LM & NTLM|
-
-
 
 
 
