@@ -5,28 +5,28 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eb55aaaccd9fe5db3e7c8929c28e672a4c3fa87a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: abac8fcb28fe5950a613d088c8a2461a0530fa02
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996459"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362313"
 ---
-# <a name="list-agreementacceptances"></a><span data-ttu-id="5001f-103">Listar agreementAcceptances</span><span class="sxs-lookup"><span data-stu-id="5001f-103">List agreementAcceptances</span></span>
+# <a name="list-agreementacceptances"></a><span data-ttu-id="0651c-103">Listar agreementAcceptances</span><span class="sxs-lookup"><span data-stu-id="0651c-103">List agreementAcceptances</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5001f-104">Recupere uma lista de objetos [agreementAcceptance](../resources/agreementacceptance.md) de um usuário.</span><span class="sxs-lookup"><span data-stu-id="5001f-104">Retrieve a list of a user's [agreementAcceptance](../resources/agreementacceptance.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5001f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="5001f-105">Permissions</span></span>
-<span data-ttu-id="5001f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5001f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0651c-104">Recupere uma lista de objetos [agreementAcceptance](../resources/agreementacceptance.md) de um usuário.</span><span class="sxs-lookup"><span data-stu-id="0651c-104">Retrieve a list of a user's [agreementAcceptance](../resources/agreementacceptance.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0651c-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="0651c-105">Permissions</span></span>
+<span data-ttu-id="0651c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0651c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5001f-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5001f-108">Permission type</span></span>                        | <span data-ttu-id="5001f-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5001f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0651c-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0651c-108">Permission type</span></span>                        | <span data-ttu-id="0651c-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0651c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5001f-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5001f-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="5001f-111">AgreementAcceptance.Read</span><span class="sxs-lookup"><span data-stu-id="5001f-111">AgreementAcceptance.Read</span></span> |
-|<span data-ttu-id="5001f-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5001f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5001f-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5001f-113">Not supported.</span></span> |
-|<span data-ttu-id="5001f-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5001f-114">Application</span></span>                            | <span data-ttu-id="5001f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5001f-115">Not supported.</span></span> |
+|<span data-ttu-id="0651c-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0651c-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="0651c-111">AgreementAcceptance.Read</span><span class="sxs-lookup"><span data-stu-id="0651c-111">AgreementAcceptance.Read</span></span> |
+|<span data-ttu-id="0651c-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0651c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0651c-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0651c-113">Not supported.</span></span> |
+|<span data-ttu-id="0651c-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0651c-114">Application</span></span>                            | <span data-ttu-id="0651c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0651c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5001f-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5001f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0651c-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0651c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/agreementAcceptances
@@ -36,19 +36,19 @@ GET /users/{id | userPrincipalName}/agreementAcceptances
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 -->
 
-## <a name="request-headers"></a><span data-ttu-id="5001f-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5001f-117">Request headers</span></span>
-| <span data-ttu-id="5001f-118">Nome</span><span class="sxs-lookup"><span data-stu-id="5001f-118">Name</span></span>      |<span data-ttu-id="5001f-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="5001f-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0651c-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0651c-117">Request headers</span></span>
+| <span data-ttu-id="0651c-118">Nome</span><span class="sxs-lookup"><span data-stu-id="0651c-118">Name</span></span>      |<span data-ttu-id="0651c-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="0651c-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="5001f-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="5001f-120">Authorization</span></span> | <span data-ttu-id="5001f-121">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="5001f-121">Bearer {token}</span></span> |
+| <span data-ttu-id="0651c-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="0651c-120">Authorization</span></span> | <span data-ttu-id="0651c-121">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="0651c-121">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5001f-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5001f-122">Request body</span></span>
-<span data-ttu-id="5001f-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5001f-123">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="5001f-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="5001f-124">Response</span></span>
-<span data-ttu-id="5001f-125">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [agreementAcceptance](../resources/agreementacceptance.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5001f-125">If successful, this method returns a `200 OK` response code and a collection of [agreementAcceptance](../resources/agreementacceptance.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5001f-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5001f-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5001f-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5001f-127">Request</span></span>
+## <a name="request-body"></a><span data-ttu-id="0651c-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0651c-122">Request body</span></span>
+<span data-ttu-id="0651c-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0651c-123">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="0651c-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="0651c-124">Response</span></span>
+<span data-ttu-id="0651c-125">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [agreementAcceptance](../resources/agreementacceptance.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0651c-125">If successful, this method returns a `200 OK` response code and a collection of [agreementAcceptance](../resources/agreementacceptance.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="0651c-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0651c-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0651c-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0651c-127">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5001f-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="5001f-128">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="0651c-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="0651c-128">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agreementacceptances"
@@ -56,26 +56,26 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ```http
 GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5001f-129">C#</span><span class="sxs-lookup"><span data-stu-id="5001f-129">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="0651c-129">C#</span><span class="sxs-lookup"><span data-stu-id="0651c-129">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreementacceptances-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5001f-130">Javascript</span><span class="sxs-lookup"><span data-stu-id="5001f-130">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0651c-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0651c-130">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-agreementacceptances-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5001f-131">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="5001f-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0651c-131">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="0651c-131">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-agreementacceptances-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="5001f-132">Java</span><span class="sxs-lookup"><span data-stu-id="5001f-132">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="0651c-132">Java</span><span class="sxs-lookup"><span data-stu-id="0651c-132">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreementacceptances-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="5001f-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="5001f-133">Response</span></span>
-><span data-ttu-id="5001f-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5001f-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0651c-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="0651c-133">Response</span></span>
+><span data-ttu-id="0651c-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0651c-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
