@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ae96113e687d406f5c0342b3b71fd63ea6de9918
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 630a3825367cc1850e6793598010a7fdbb027016
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999749"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372164"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de enumeração managementAgentType
 
@@ -35,8 +35,6 @@ Tipo de agente de gerenciamento.
 |jamf|32|Os atributos do dispositivo são buscados do JAMF.|
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado pelo CloudDPC do Google.|
 |microsoft365ManagedMdm|258|Este dispositivo é gerenciado pelo Microsoft 365 por meio do Intune.|
-
-
 
 
 

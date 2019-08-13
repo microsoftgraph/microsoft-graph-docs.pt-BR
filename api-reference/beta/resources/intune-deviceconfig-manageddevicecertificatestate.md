@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: abfb70d50e7c023ac672613d8e3f9be4ffc1fe53
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bb15279a407aa55c9a41e31746b57ed31b472124
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970112"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368853"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>tipo de recurso managedDeviceCertificateState
 
@@ -99,8 +99,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificateErrorCode": 1024
 }
 ```
-
-
 
 
 

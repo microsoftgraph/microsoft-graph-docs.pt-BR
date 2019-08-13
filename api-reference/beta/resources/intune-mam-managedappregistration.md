@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b259c7a17d769dcaeaa79126c10c028e5d97df7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d2a971b4e03da4dfdac6dfcdf621715db3e3d1e1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967956"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374033"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
@@ -90,8 +90,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
-
 
 
 

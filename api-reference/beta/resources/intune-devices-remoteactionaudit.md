@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a691997c985de17646a28d3a72262ae3c99c174
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb00a4d1d160fe4afdfa5c466b3b23e10c693c09
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968320"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372108"
 ---
 # <a name="remoteactionaudit-resource-type"></a>tipo de recurso remoteActionAudit
 
@@ -36,11 +36,12 @@ Relatório de ações remotas iniciadas nos dispositivos que pertencem a um dete
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo do Intune.|
 |userName|String|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
 |initiatedByUserPrincipalName|String|O formato de usuário que iniciou a ação do dispositivo é UPN.|
-|ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`.|
+|ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, , `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|Hora em que a ação foi emitida, dada em UTC.|
 |deviceOwnerUserPrincipalName|String|UPN do proprietário do dispositivo.|
 |deviceIMEI|String|IMEI do dispositivo.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|managedDeviceId|String|Destino de ação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -64,11 +65,10 @@ Veja a seguir uma representação JSON do recurso.
   "requestDateTime": "String (timestamp)",
   "deviceOwnerUserPrincipalName": "String",
   "deviceIMEI": "String",
-  "actionState": "String"
+  "actionState": "String",
+  "managedDeviceId": "String"
 }
 ```
-
-
 
 
 

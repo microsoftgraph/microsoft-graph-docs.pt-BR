@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a2486a52a5ce71805604f9e3d9b8d5bfdd6c85e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e9d2b0b92287a045607c02e271155e2e74a2fa90
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999833"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370022"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>tipo de recurso deviceManagementScriptRunSummary
 
@@ -32,6 +32,9 @@ Contém propriedades para o resumo de execução de um script de gerenciamento d
 |id|String|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro.|
+|compliantDeviceCount|Int32|Contagem de dispositivos em conformidade.|
+|notCompliantDeviceCount|Int32|Contagem de dispositivos não compatíveis.|
+|pendingDeviceCount|Int32|Contagem de dispositivos pendentes.|
 |successUserCount|Int32|Contagem de usuários com sucesso.|
 |errorUserCount|Int32|Erro contagem de usuários.|
 
@@ -52,12 +55,13 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "successDeviceCount": 1024,
   "errorDeviceCount": 1024,
+  "compliantDeviceCount": 1024,
+  "notCompliantDeviceCount": 1024,
+  "pendingDeviceCount": 1024,
   "successUserCount": 1024,
   "errorUserCount": 1024
 }
 ```
-
-
 
 
 

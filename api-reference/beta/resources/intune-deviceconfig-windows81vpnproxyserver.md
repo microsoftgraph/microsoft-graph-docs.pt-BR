@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 035bbe9511692a7244e4cdc2d0b707c5edfb4146
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff78a7db5707ab0d2b1bea6e0f144119ff9e5d34
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969097"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371247"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>tipo de recurso windows81VpnProxyServer
 
@@ -52,8 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
-
 
 
 

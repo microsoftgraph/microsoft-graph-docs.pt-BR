@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d6a85011b4d0289bb26d9b673cf7ba497d276a74
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 46b85508d2ee149414f5397194a00124a0d71f64
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998160"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374152"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>tipo de enumeração deviceManagementExchangeConnectorStatus
 
@@ -27,8 +27,6 @@ O status atual do Exchange Connector.
 |connectionPending|1|Conexão pendente com o ambiente do Exchange.|
 |ligado|duas|Conectado ao ambiente do Exchange|
 |estava|3D|Desconectado do ambiente do Exchange|
-
-
 
 
 

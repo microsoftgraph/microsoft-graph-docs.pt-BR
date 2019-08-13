@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3fadd331cfb0e8201dcc77abe066d1c2c0b1c2c7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c612e4c6201a3016b866eddc7e5e52d0b3238306
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010571"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369210"
 ---
 # <a name="rolepermission-resource-type"></a>Tipo de recurso rolePermission
 
@@ -55,8 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
 
 
 

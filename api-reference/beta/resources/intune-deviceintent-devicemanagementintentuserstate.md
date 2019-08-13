@@ -4,12 +4,13 @@ description: Entidade que representa o estado do usuário para uma intenção
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 381be56c44ba46c11d09a483bbace20b8b842e6b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 1ad8fe7e61f883bae43522a0aaafecacaf090be0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963979"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371359"
 ---
 # <a name="devicemanagementintentuserstate-resource-type"></a>tipo de recurso deviceManagementIntentUserState
 
@@ -60,8 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "state": "String"
 }
 ```
-
-
 
 
 

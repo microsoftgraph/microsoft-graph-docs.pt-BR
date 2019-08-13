@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27c1a7be4e378107cfa94a01379fe3f124e6f54a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a548d4b4b41ee548ef85f241d201be9ea03bc12
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968978"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371065"
 ---
 # <a name="windowshealthmonitoringconfiguration-resource-type"></a>tipo de recurso windowsHealthMonitoringConfiguration
 
@@ -108,8 +108,6 @@ Veja a seguir uma representação JSON do recurso.
   "configDeviceHealthMonitoringCustomScope": "String"
 }
 ```
-
-
 
 
 

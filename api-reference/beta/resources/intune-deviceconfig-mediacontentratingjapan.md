@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8be7c810498f4ae395492c5265fa5cdcc45a9a7b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 703e34fa55f33c3ce6fd72ec196f314ffd77f057
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000792"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368706"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>Tipo de recurso mediaContentRatingJapan
 
@@ -43,8 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
-
-
 
 
 

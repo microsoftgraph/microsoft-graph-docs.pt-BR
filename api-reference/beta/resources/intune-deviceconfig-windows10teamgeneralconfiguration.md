@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0644f9f1c2ec8400dec40fbcc71889e1da7e3548
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f29f6b53e7e17551b42e973e4c8a7a50ea6ef3e0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969230"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369749"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>Tipo de recurso windows10TeamGeneralConfiguration
 
@@ -142,8 +142,6 @@ Veja a seguir uma representação JSON do recurso.
   "welcomeScreenMeetingInformation": "String"
 }
 ```
-
-
 
 
 

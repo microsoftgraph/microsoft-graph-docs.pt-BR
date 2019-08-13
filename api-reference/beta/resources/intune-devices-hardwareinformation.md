@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 874cee0b2b09b3d106d771f2c176ceed3d4d04e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5a09b1e4d5e788d19ae0df6f6a02fe46009e5362
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999784"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369924"
 ---
 # <a name="hardwareinformation-resource-type"></a>tipo de recurso hardwareInformation
 
@@ -45,6 +45,7 @@ Informações de hardware de um determinado dispositivo.
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Status do requisito de hardware de segurança baseado em virtualização. Os valores possíveis são: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Status de segurança baseado em virtualização. . Os valores possíveis são: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Status do LSA (autoridade do sistema local) . Os valores possíveis são: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
+|osBuildNumber|String|Número de compilação do sistema operacional no dispositivo Android|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -88,11 +89,10 @@ Veja a seguir uma representação JSON do recurso.
   "deviceFullQualifiedDomainName": "String",
   "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
   "deviceGuardVirtualizationBasedSecurityState": "String",
-  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
+  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
+  "osBuildNumber": "String"
 }
 ```
-
-
 
 
 

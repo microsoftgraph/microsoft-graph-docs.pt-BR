@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a59754e92fc86cf635edaedb575ffa358875c64c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86f3dcfefb80765ff13bb8742d88fdd869072f66
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999840"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370043"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>tipo de recurso deviceManagementScriptDeviceState
 
@@ -33,11 +33,15 @@ Contém propriedades para o estado de execução do dispositivo do script de ger
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Estado da última execução do script de gerenciamento de dispositivos. Os valores possíveis são: `unknown`, `success`, `fail`.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Estado da última execução do script de gerenciamento de dispositivos. Os valores possíveis são: `unknown`, `success`, `fail`, `error`, `pending`.|
 |resultMessage|String|Detalhes da saída de execução.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivos é executado.|
 |errorCode|Int32|Código de erro correspondente à execução errada do script de gerenciamento de dispositivos.|
 |errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução errada do script de gerenciamento de dispositivo.|
+|lastSyncDateTime|DateTimeOffset|A última vez em que a extensão de gerenciamento do Intune é sincronizada com o Intune.|
+|preRemediationDetectionScriptOutput|String|Saída do script de detecção antes da correção.|
+|remediationScriptError|String|Erro de saída do script de correção.|
+|postRemediationDetectionScriptOutput|String|A saída do script de detecção após a correção.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -60,11 +64,13 @@ Veja a seguir uma representação JSON do recurso.
   "resultMessage": "String",
   "lastStateUpdateDateTime": "String (timestamp)",
   "errorCode": 1024,
-  "errorDescription": "String"
+  "errorDescription": "String",
+  "lastSyncDateTime": "String (timestamp)",
+  "preRemediationDetectionScriptOutput": "String",
+  "remediationScriptError": "String",
+  "postRemediationDetectionScriptOutput": "String"
 }
 ```
-
-
 
 
 

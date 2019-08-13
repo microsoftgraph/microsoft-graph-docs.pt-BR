@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d5f8bd1453b0af02b7bdc58828f24660b46a9ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8612279720fdb44e565207c5603f7df69477708a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010669"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369378"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
 
@@ -98,8 +98,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
 
 
 

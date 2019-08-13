@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5fb7e0643c8caad977ab99d3dbb4d669c73d8d69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dae00891c67579298aa745c9700b3e0f27e6e0dd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026541"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364962"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -82,9 +82,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+
+### <a name="example-1-update-properties-of-the-signed-in-user"></a>Exemplo 1: atualizar as propriedades do usuário conectado
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -94,21 +99,19 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me
 Content-type: application/json
-Content-length: 491
 
 {
-  "accountEnabled": true,
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value"
+  "officeLocation": "city-value"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -122,8 +125,42 @@ Content-length: 491
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+#### <a name="response"></a>Resposta
+O exemplo a seguir mostra a resposta.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-properties-of-the-specified-user"></a>Exemplo 2: atualizar as propriedades do usuário especificado
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_other_user"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/users/{id}
+Content-type: application/json
+
+{
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "officeLocation": "city-value"
+}
+```
+
+###<a name="w-response"></a>W Resposta
+
+O exemplo a seguir mostra a resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,

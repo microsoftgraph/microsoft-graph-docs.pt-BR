@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 805f130945f4e8b966c35409f6e27fcf55e3f02f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4eff14cb14bc9edd1a676eeeb543a599c2d032b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967592"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369196"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso roleScopeTag
 
@@ -38,6 +38,7 @@ Marca de escopo de função
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
 |descrição|String|Descrição da marca de escopo da função.|
+|isBuiltIn|Booliano|Descrição da marca de escopo da função.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -57,11 +58,10 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "id": "String (identifier)",
   "displayName": "String",
-  "description": "String"
+  "description": "String",
+  "isBuiltIn": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 998979c3a8e12657da5c13f97309a8c07a698117
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 61324c8d44dc301c7c5ab15c02f6e687a75eb492
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011285"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371240"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>tipo de recurso windows81WifiImportConfiguration
 
@@ -108,8 +108,6 @@ Veja a seguir uma representação JSON do recurso.
   "payload": "binary"
 }
 ```
-
-
 
 
 

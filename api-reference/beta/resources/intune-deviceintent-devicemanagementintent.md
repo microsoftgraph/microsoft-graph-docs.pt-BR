@@ -4,12 +4,13 @@ description: Entidade que representa uma intenção de aplicar configurações a
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b840a8865545080370c5bfc8c0471f0137c746e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d17b94b06e1bcc5e475be94e6ed2fe11f473ca45
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964070"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371590"
 ---
 # <a name="devicemanagementintent-resource-type"></a>tipo de recurso deviceManagementIntent
 
@@ -77,8 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
 
 
 

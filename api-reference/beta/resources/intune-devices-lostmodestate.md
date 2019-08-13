@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 06070ac93241895563d0f291d017493b743d6e95
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b8fd3f7399fb3a3dd120b4536481ad6f7fc29c80
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999735"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372304"
 ---
 # <a name="lostmodestate-enum-type"></a>tipo de enumeração lostModeState
 
@@ -25,8 +25,6 @@ Estado do modo perdido, indicando se o modo perdido está habilitado ou desabili
 |:---|:---|:---|
 |deficiência|,0|O modo perdido está desabilitado.|
 |enabled|1|O modo perdido está habilitado.|
-
-
 
 
 

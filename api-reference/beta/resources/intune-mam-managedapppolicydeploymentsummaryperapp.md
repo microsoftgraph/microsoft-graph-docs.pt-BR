@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f5d9b9b523c60b2702f36cb0105b8e65cd2ee73
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5802d8f1d29174a8e4e01ee10e4bf66081d12ca6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998349"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373074"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>Tipo de recurso managedAppPolicyDeploymentSummaryPerApp
 
@@ -45,8 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "configurationAppliedUserCount": 1024
 }
 ```
-
-
 
 
 

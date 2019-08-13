@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e922634ec08e1fab412c160d2d8fe7f45d0dde5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6063b07ed9361b00315a7c8a2b170cea72f7dff3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010151"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371905"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso intuneBrandingProfile
 
@@ -54,6 +54,8 @@ Esta entidade contém dados que são usados na personalização da aparência do
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo claro atrás do logotipo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial dos aplicativos do portal da empresa|
 |customPrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
+|isRemoveDeviceDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
+|isFactoryResetDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -108,11 +110,11 @@ Veja a seguir uma representação JSON do recurso.
     "type": "String",
     "value": "binary"
   },
-  "customPrivacyMessage": "String"
+  "customPrivacyMessage": "String",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
-
-
 
 
 

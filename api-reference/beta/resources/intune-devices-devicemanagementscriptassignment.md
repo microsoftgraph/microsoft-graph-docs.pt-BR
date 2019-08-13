@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60ea203aa6b0e4714aed5f47530de8ca3be8bf50
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 11e0efcb3dca1d51ed0a1253b9b7a0d0a077da3d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999861"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370071"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>tipo de recurso deviceManagementScriptAssignment
 
@@ -55,8 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
-
 
 
 

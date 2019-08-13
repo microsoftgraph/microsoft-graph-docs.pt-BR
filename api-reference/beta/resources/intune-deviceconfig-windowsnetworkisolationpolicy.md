@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f025726cfd9bcd90be102293cb2cb81db3b46778
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 515d1b89631b33907aef0ef19bbc3f28181dc5d8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968810"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370764"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>tipo de recurso windowsNetworkIsolationPolicy
 
@@ -75,8 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
 
 
 

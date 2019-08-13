@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0e752eb53b17369a0c0258e8c60ec28e843681d0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 450dc01bcd66ab64022ad242808ffed7ef80fda0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970091"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368636"
 ---
 # <a name="miracastchannel-enum-type"></a>tipo de enumeração miracastChannel
 
@@ -44,8 +44,6 @@ Valores possíveis para o canal Miracast.
 |oneHundredFiftySeven|157|OneHundredFifty-sete.|
 |oneHundredSixtyOne|161|OneHundredSixty-um.|
 |oneHundredSixtyFive|165|OneHundredSixty-cinco.|
-
-
 
 
 

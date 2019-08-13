@@ -4,12 +4,13 @@ description: Contém as propriedades da atribuição automática de uma marca de
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f76ef8fd2daa85615ee7dfe6def0e2855398debc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a308c91eb2a78c50012c348a19b613335915af47
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002697"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369182"
 ---
 # <a name="rolescopetagautoassignment-resource-type"></a>tipo de recurso roleScopeTagAutoAssignment
 
@@ -54,8 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
-
 
 
 

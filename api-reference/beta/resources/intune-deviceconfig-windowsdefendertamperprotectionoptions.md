@@ -4,12 +4,13 @@ description: Opções de configuração do defender TamperProtection
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4ef4b905aa41581b7b1b2ce02eca0d0a776614d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: 4530f73fd28a8f4a504fe03a8d3755acbc615e51
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741280"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371219"
 ---
 # <a name="windowsdefendertamperprotectionoptions-enum-type"></a>tipo de enumeração windowsDefenderTamperProtectionOptions
 
@@ -25,10 +26,6 @@ Opções de configuração do defender TamperProtection
 |notConfigured|,0|Não configurado|
 |possibilite|1|Habilitar a proteção contra violação do Windows Defender|
 |desabilitar|duas|Desabilitar a proteção de violação do Windows Defender|
-
-
-
-
 
 
 

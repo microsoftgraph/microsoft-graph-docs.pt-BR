@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c74a17564c4594bf547e5ea606dc5acf2ef83ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be12232d387309992b0e967580dfc8d593c53056
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010487"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36376056"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -127,7 +127,6 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |depOnboardingSettings|coleção [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Este conjunto de vários tokens DEP por locatário.|
 |importedDeviceIdentities|coleção [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|As identidades de dispositivo importadas.|
 |importedWindowsAutopilotDeviceIdentities|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Coleção de dispositivos do Windows AutoPilot importados.|
-|importedWindowsAutopilotDeviceIdentityUploads|coleção [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Conjunto de carregamento de dispositivos do Windows AutoPilot.|
 |windowsAutopilotDeploymentProfiles|coleção [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Perfis de implantação do piloto automático do Windows|
 |windowsAutopilotDeviceIdentities|coleção [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Coleção de identidades de dispositivo do Windows AutoPilot contidas.|
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|As configurações da conta do Windows AutoPilot.|

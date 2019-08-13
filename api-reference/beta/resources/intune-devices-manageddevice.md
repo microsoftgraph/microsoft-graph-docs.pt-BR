@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 37ee558c75c43790b51c8d849b102a5fb2661988
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca9e4b4e3af7a7f307dd91bce748a7175ac2cce6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999763"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372290"
 ---
 # <a name="manageddevice-resource-type"></a>Tipo de recurso managedDevice
 
@@ -50,6 +50,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |[Ação windowsDefenderUpdateSignatures](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|Nenhuma|Ainda não documentado|
 |[Ação updateWindowsDeviceAccount](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|Nenhuma|Ainda não documentado|
 |[Ação revokeAppleVppLicenses](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|Nenhum|Revogar todas as licenças VPP da Apple para um dispositivo|
+|[ação sendCustomNotificationToCompanyPortal](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -122,6 +123,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |windowsRemediatedMalwareCount|Int32|Contagem de malware corrigido para este dispositivo Windows|
 |notes|String|Observações sobre o dispositivo criado pelo administrador de ti|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Estado de integridade do cliente do Configuration Manager, válido somente para dispositivos gerenciados pelo agente MDM/ConfigMgr|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Informações do cliente do Configuration Manager, válidas apenas para dispositivos gerenciados, Duel ou tri gerenciados pelo agente do ConfigMgr|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -176,7 +178,8 @@ Veja a seguir uma representação JSON do recurso.
     "deviceFullQualifiedDomainName": "String",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
     "deviceGuardVirtualizationBasedSecurityState": "String",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
+    "osBuildNumber": "String"
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -306,11 +309,13 @@ Veja a seguir uma representação JSON do recurso.
     "state": "String",
     "errorCode": 1024,
     "lastSyncDateTime": "String (timestamp)"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "String"
   }
 }
 ```
-
-
 
 
 

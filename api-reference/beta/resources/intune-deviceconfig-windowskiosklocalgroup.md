@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 661b1a4a6dd06fe44754232f967ebf8ec9c1ab55
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9b43859b11b798a726584a0296b94f04b4664d5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968999"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370884"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>tipo de recurso windowsKioskLocalGroup
 
@@ -44,8 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "groupName": "String"
 }
 ```
-
-
 
 
 

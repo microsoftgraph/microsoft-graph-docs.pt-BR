@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 558c8f14f431bb10421ee77b6569f69560e8023f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 11cbe89cc197f603d4a19221b7aa87119eab543a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968362"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372276"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>tipo de recurso managedDeviceCleanupSettings
 
@@ -41,8 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceInactivityBeforeRetirementInDays": "String"
 }
 ```
-
-
 
 
 

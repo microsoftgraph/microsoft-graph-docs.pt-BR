@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01f8c24fc536418e88677dbc11d742e6d8b64588
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fce0ccf8cfa669b49fe37fe682f35a5463361ed
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967557"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369224"
 ---
 # <a name="roledefinition-resource-type"></a>Tipo de recurso roleDefinition
 
@@ -105,8 +105,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
 
 
 

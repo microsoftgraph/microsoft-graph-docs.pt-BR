@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27ad780bec9037492e967a3dca7b93a2e230d317
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 78afa43149f35645f2167a8f593124f01ea11c12
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999728"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369896"
 ---
 # <a name="hourlyschedule-resource-type"></a>tipo de recurso hourlySchedule
 
@@ -44,8 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "interval": 1024
 }
 ```
-
-
 
 
 

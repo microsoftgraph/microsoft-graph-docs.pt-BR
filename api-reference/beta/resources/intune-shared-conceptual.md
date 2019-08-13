@@ -4,13 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: c8540b7bd183d21a15ad2e38b5f1bef2caa4d983
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0d2252093f222f5908756f312c2e82d591c29920
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010529"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372801"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -34,6 +33,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Tipo de plataforma do dispositivo](intune-shared-deviceplatformtype.md)
 - [Tipo de dispositivo](intune-shared-devicetype.md)
 - [Habilitação](intune-shared-enablement.md)
+- [Habilitação](intune-shared-enablement.md)
 - [Destino de atribuição de grupos de exclusão](intune-shared-exclusiongroupassignmenttarget.md)
 - [Destino de atribuição de grupo](intune-shared-groupassignmenttarget.md)
 - [Intenção de instalação](intune-shared-installintent.md)
@@ -48,7 +48,6 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Raiz de relatório](intune-shared-reportroot.md)
 - [Estado do aplicativo resultante](intune-shared-resultantappstate.md)
 - [Cores RGB](intune-shared-rgbcolor.md)
-- [Executar como tipo de conta](intune-shared-runasaccounttype.md)
 - [Estado da execução](intune-shared-runstate.md)
 - [Opções de geração do estado da interface do usuário salvas](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)

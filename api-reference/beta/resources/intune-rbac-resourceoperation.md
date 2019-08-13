@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ae6d1ada9a0529b4c508210d31c37e4df4ec1b5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b83ad1c902e8455d42ae0e9805bf6881b49ef3b4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967606"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369280"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
@@ -62,8 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "enabledForScopeValidation": true
 }
 ```
-
-
 
 
 

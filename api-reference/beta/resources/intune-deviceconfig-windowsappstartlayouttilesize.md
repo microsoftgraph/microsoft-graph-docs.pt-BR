@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c6e828be821082f8bc41bad248179571f1edc4ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4be31b5c7dfdc100215a2dfc1aef511e446ac6cf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969090"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371249"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>tipo de enumeração windowsAppStartLayoutTileSize
 
@@ -28,8 +28,6 @@ O tamanho do bloco do aplicativo do Windows no layout de início.
 |medium|duas|2x2 médio.|
 |várias|3D|Wide 4x2.|
 |large|quatro|4x4 grande.|
-
-
 
 
 

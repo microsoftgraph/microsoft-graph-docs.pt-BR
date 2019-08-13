@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ed00b093bdf0390fc8115c28f1ab461b642598f8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 511d7f6258bfe440ec75ba9eb1636a5f19d0c622
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998034"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375461"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>tipo de enumeração mobileThreatPartnerTenantState
 
@@ -27,8 +27,6 @@ Estado do parceiro desse locatário.
 |disponível|1|O parceiro está disponível.|
 |enabled|duas|O parceiro está habilitado.|
 |Não responde|3D|O parceiro não responde.|
-
-
 
 
 

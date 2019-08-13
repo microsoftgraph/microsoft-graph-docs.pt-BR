@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 473f06515b1cb9a1eee966a471c8a8adb81aca7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 845a3b43acecf4e6ca76f4d00682ec982416b8df
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010606"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369308"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>tipo de enumeração userPfxIntendedPurpose
 
@@ -23,13 +23,11 @@ Valores com suporte para a finalidade pretendida de um certificado PFX de usuár
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não atribuídos|,0|Nenhuma função/uso atribuído.|
-|smimeEncryption|1|Válido para criptografia S/MIME.|
-|smimeSigning|duas|Válido para assinatura S/MIME.|
-|VPN|quatro|Válido para uso na VPN.|
-|detector|8 |Válido para uso em WiFi.|
-
-
+|não atribuídos|,0|Ainda não documentado|
+|smimeEncryption|1|Ainda não documentado|
+|smimeSigning|duas|Ainda não documentado|
+|VPN|quatro|Ainda não documentado|
+|detector|8 |Ainda não documentado|
 
 
 

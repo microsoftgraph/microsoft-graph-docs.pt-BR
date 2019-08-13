@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 564cea7760c7e91102ce47ab725b27871a3b6f86
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e8ff71ce11bb33e702f58aea066d1bc3efdad0c6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002801"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368965"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -61,7 +61,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |corpo|[ItemBody](../resources/itembody.md)|O corpo da mensagem associada ao evento.|
 |categories|String|As categorias associadas ao evento.|
 | end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina.|
-|importância|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |location|[Location](../resources/location.md)|O local do evento.|
@@ -117,7 +117,7 @@ Content-length: 285
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

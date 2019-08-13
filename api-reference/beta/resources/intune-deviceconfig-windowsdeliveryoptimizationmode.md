@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c146b42eab11dab4d90de9b3b134fdd29327323
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b2a66292ec6fb5db3fead93cbda7d24f5e505514
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969069"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371163"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeração windowsDeliveryOptimizationMode
 
@@ -30,8 +30,6 @@ Modo de otimização de entrega para distribuição de mesmo nível
 |httpWithInternetPeering|quatro|HTTP combinado com emparelhamento da Internet|
 |simpleDownload|99|Modo de download simples sem emparelhamento|
 |bypassmode|100|Modo bypass. Não usar otimização de entrega e usar BITS em vez disso|
-
-
 
 
 

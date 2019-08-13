@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e153ac5c1bfbd09540fd55b5df23eab095e2a002
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 92171fb3e9fc50e516ed4568cceea03c5e0ba1cf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968383"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369931"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enumeração deviceRegistrationState
 
@@ -31,8 +31,6 @@ Status do registro do dispositivo.
 |certificateReset|6|O certificado de dispositivo foi redefinido.|
 |notRegisteredPendingEnrollment|178|O dispositivo não está registrado e registro pendente.|
 |desconhecido|8 |O status do registro do dispositivo é desconhecido.|
-
-
 
 
 

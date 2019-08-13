@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7547f25bfde78362205b056992efa32124b59f53
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f7871cf7ffb4b2bfb905d4aa4d01664f8f9f5a47
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969279"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369770"
 ---
 # <a name="windows10secureassessmentconfiguration-resource-type"></a>Tipo de recurso windows10SecureAssessmentConfiguration
 
@@ -118,8 +118,6 @@ Veja a seguir uma representação JSON do recurso.
   "assessmentAppUserModelId": "String"
 }
 ```
-
-
 
 
 
