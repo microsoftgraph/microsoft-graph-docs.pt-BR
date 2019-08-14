@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: b5cd7eae4aeee8c9426c47d0dc1efd0ea480037c
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 8cc1e566b5ade5b40109b9c4ac6fe27ac4503d95
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173066"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375503"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,44 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="august-2019"></a>Agosto de 2019
+
+### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
+
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[androidDeviceOwnerCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androiddeviceownercertificateprofilebase?view=graph-rest-beta)<br/>[androidDeviceOwnerEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration?view=graph-rest-beta)<br/>[androidDeviceOwnerTrustedRootCertificate](/graph/api/resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate?view=graph-rest-beta)<br/>[androidDeviceOwnerVpnConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownervpnconfiguration?view=graph-rest-beta)<br/>[deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta)<br/>[userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline?view=graph-rest-beta)<br/>[userExperienceAnalyticsCategory](/graph/api/resources/intune-devices-userexperienceanalyticscategory?view=graph-rest-beta)<br/>[userExperienceAnalyticsMetric](/graph/api/resources/intune-devices-userexperienceanalyticsmetric?view=graph-rest-beta)<br/>[userExperienceAnalyticsOverview](/graph/api/resources/intune-devices-userexperienceanalyticsoverview?view=graph-rest-beta)<br/>[vpnConfiguration](/graph/api/resources/intune-deviceconfig-vpnconfiguration?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[configurationManagerClientInformation](/graph/api/resources/intune-devices-configurationmanagerclientinformation?view=graph-rest-beta)<br/>[deviceHealthScriptComplianceRule](/graph/api/resources/intune-devices-devicehealthscriptcompliancerule?view=graph-rest-beta)<br/>[insightValueDouble](/graph/api/resources/intune-devices-insightvaluedouble?view=graph-rest-beta)<br/>[insightValueInt](/graph/api/resources/intune-devices-insightvalueint?view=graph-rest-beta)<br/>[userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight?view=graph-rest-beta)<br/>[userExperienceAnalyticsInsightValue](/graph/api/resources/intune-devices-userexperienceanalyticsinsightvalue?view=graph-rest-beta)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[androidDeviceOwnerVirtualHomeButtonType](/graph/api/resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype?view=graph-rest-beta)<br/>[deviceHealthScriptComplianceRuleOperator](/graph/api/resources/intune-devices-devicehealthscriptcomplianceruleoperator?view=graph-rest-beta)<br/>[deviceHealthScriptDetectionType](/graph/api/resources/intune-devices-devicehealthscriptdetectiontype?view=graph-rest-beta)<br/>[powerActionType](/graph/api/resources/intune-deviceconfig-poweractiontype?view=graph-rest-beta)<br/>|
+|Adição|beta|Adicionada a ação [enableAndroidDeviceAdministratorEnrollment](/graph/api/intune-deviceconfig-devicemanagement-enableandroiddeviceadministratorenrollment?view=graph-rest-beta) ao [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) |
+|Adição|beta|A ação executeAction foi adicionada à coleção [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
+|Adição|beta|Adicionada a ação [sendCustomNotificationToCompanyPortal](/graph/api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal?view=graph-rest-beta) ao [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
+|Exclusão|beta|Removida a ação executeAction na coleção [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
+|Adição|beta|Adiciona a propriedade**roleScopeTagIds** à entidade [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta)|
+|Exclusão|beta|Removida a propriedade **scopeTags** da entidade [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **kioskModeScreenSaverConfigurationEnabled**, **kioskModeScreenSaverImageUrl**, **kioskModeScreenSaverDisplayTimeInSeconds**, **kioskModeScreenSaverStartDelayInSeconds**, **kioskModeScreenSaverDetectMediaDisabled**, **kioskModeVirtualHomeButtonType**, **kioskModeFlashlightConfigurationEnabled** e **kioskModeMediaVolumeConfigurationEnabled** à entidade [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **lastSyncDateTime**, **preRemediationDetectionScriptOutput**, **remediationScriptError** e **postRemediationDetectionScriptOutput** à entidade [deviceManagementScriptDeviceState](/graph/api/resources/intune-devices-devicemanagementscriptdevicestate?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **compliantDeviceCount**, **notCompliantDeviceCount** e **pendingDeviceCount** à entidade [deviceManagementScriptRunSummary](/graph/api/resources/intune-devices-devicemanagementscriptrunsummary?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades**isRemoveDeviceDisabled** e **isFactoryResetDisabled** à entidade [intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **continuousPathKeyboardBlocked**, **findMyDeviceInFindMyAppBlocked**, **findMyFriendsInFindMyAppBlocked**, **wiFiBlockPowerModification** e **iTunesBlocked** pà entidade [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **iCloudBlockActivityContinuation** à entidade [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **configurationManagerClientInformation** à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **managedDeviceId** à entidade [remoteActionAudit](/graph/api/resources/intune-devices-remoteactionaudit?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **isBuiltIn** à entidade[roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta)|
+|Exclusão|beta|Removida a propriedade **userRightsRegisterProcessAsService** da entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **energySaverOnBatteryThresholdPercentage**, **energySaverPluggedInThresholdPercentage**, **powerLidCloseActionOnBattery**, **powerLidCloseActionPluggedIn**, **powerButtonActionOnBattery**, **powerButtonActionPluggedIn**, **powerSleepButtonActionOnBattery**, **powerSleepButtonActionPluggedIn**, **powerHybridSleepOnBattery** e **powerHybridSleepPluggedIn** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **deadlineForFeatureUpdatesInDays**, **deadlineForQualityUpdatesInDays**, **deadlineGracePeriodInDays** e **postponeRebootUntilAfterDeadline**à entidade [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) |
+|Adição|beta|Adicionadas as propriedades de navegação**userExperienceAnalyticsOverview**, **userExperienceAnalyticsBaselines** e **userExperienceAnalyticsCategories** à entidade [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
+|Exclusão|beta|Removida a propriedade de navegação **healthSummary** da entidade [windowsManagementApp](/graph/api/resources/intune-devices-windowsmanagementapp?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **shareUserExperienceAnalyticsData** ao tipo complexo [adminConsent](/graph/api/resources/intune-devices-adminconsent?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **osBuildNumber** ao tipo complexo [hardwareInformation](/graph/api/resources/intune-devices-hardwareinformation?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **isRemoveDeviceDisabled** e **isFactoryResetDisabled** ao tipo complexo[intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **uninstallOnDeviceRemoval** ao tipo complexo[iosLobAppAssignmentSettings](/graph/api/resources/intune-apps-ioslobappassignmentsettings?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **uninstallOnDeviceRemoval** ao tipo complexo[iosStoreAppAssignmentSettings](/graph/api/resources/intune-apps-iosstoreappassignmentsettings?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **uninstallOnDeviceRemoval** ao tipo complexo [iosVppAppAssignmentSettings](/graph/api/resources/intune-apps-iosvppappassignmentsettings?view=graph-rest-beta)|
+|Adição|beta|Adicionamo o membro **customTextNotification** ao tipo enumerado [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta)|
+|Adição|beta|Adicionado o membro **setDeviceName** ao tipo enumerado [remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta)|
+|Adição|beta|Adicionado os membros **error** e **pending** ao tipo enumerado [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta)|
+|Adição|beta|Adicionado o membro **noScheduledScan** ao tipo enumerado [weeklySchedule](/graph/api/resources/intune-deviceconfig-weeklyschedule?view=graph-rest-beta)|
 
 ### <a name="education"></a>Educação
 
@@ -27,6 +65,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | Novo recurso [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) adicionado.|
 | Adição | beta | APIs adicionadas para gerenciar recursos do [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta)no [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta).|
 | Adição | beta | Novo recurso [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) adicionado.|
+
+### <a name="files-onedrive-for-business"></a>Arquivos (OneDrive for Business)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta        | Adicionada a ação [Deixar de Seguir](/graph/api/driveitem-unfollow?view=graph-rest-beta) no [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
 
 ## <a name="july-2019"></a>Julho de 2019
 
@@ -941,7 +985,6 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição        | Beta        | Adicionada a propriedade**storagePlanInformation** para a  [cota](/graph/api/resources/quota?view=graph-rest-beta) tipo complexo |
 | Adição        | Beta        | Adicionada a propriedade de navegação**seguintes** para a entidade [unidade](/graph/api/resources/drive?view=graph-rest-beta) |
 | Adição        | Beta        | Adicionada a ação [siga](/graph/api/driveitem-follow?view=graph-rest-beta) no [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
-| Adição        | Beta        | Adicionar a API [parar de seguir](/graph/api/driveitem-unfollow?view=graph-rest-beta) |
 | Adição        | Beta        | Adicionada a propriedade **hasPassword** para a entidade [permissão](/graph/api/resources/permission?view=graph-rest-beta)  |
 | Adição        | Beta        | Foi adicionada a propriedade **preventsDownload** para o tipo complexo[sharingLink](/graph/api/resources/sharinglink?view=graph-rest-beta)  |
 | Adição        | Beta        | Adicionada a propriedade de navegação **permissão** para a entidade[sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-beta) |
