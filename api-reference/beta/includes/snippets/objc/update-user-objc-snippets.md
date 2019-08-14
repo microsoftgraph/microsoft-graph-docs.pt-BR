@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5a23d3c38d6cd0b287c2ae1f746dc903bfaff113
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 63fc1cd9741e47567ef44db0cc92bac4535f92fc
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35716221"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396909"
 ---
 ```objc
 
@@ -17,27 +17,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUser *user = [[MSGraphUser alloc] init];
-[user setAccountEnabled: true];
-NSMutableArray *assignedLicensesList = [[NSMutableArray alloc] init];
-MSGraphAssignedLicense *assignedLicenses = [[MSGraphAssignedLicense alloc] init];
-NSMutableArray *disabledPlansList = [[NSMutableArray alloc] init];
-[disabledPlansList addObject: @"bea13e0c-3828-4daa-a392-28af7ff61a0f"];
-[assignedLicenses setDisabledPlans:disabledPlansList];
-[assignedLicenses setSkuId:@"skuId-value"];
-[assignedLicensesList addObject: assignedLicenses];
-[user setAssignedLicenses:assignedLicensesList];
-NSMutableArray *assignedPlansList = [[NSMutableArray alloc] init];
-MSGraphAssignedPlan *assignedPlans = [[MSGraphAssignedPlan alloc] init];
-[assignedPlans setAssignedDateTime: "2016-10-19T10:37:00Z"];
-[assignedPlans setCapabilityStatus:@"capabilityStatus-value"];
-[assignedPlans setService:@"service-value"];
-[assignedPlans setServicePlanId:@"bea13e0c-3828-4daa-a392-28af7ff61a0f"];
-[assignedPlansList addObject: assignedPlans];
-[user setAssignedPlans:assignedPlansList];
 NSMutableArray *businessPhonesList = [[NSMutableArray alloc] init];
 [businessPhonesList addObject: @"businessPhones-value"];
 [user setBusinessPhones:businessPhonesList];
-[user setCity:@"city-value"];
+[user setOfficeLocation:@"city-value"];
 
 NSError *error;
 NSData *userData = [user getSerializedDataWithError:&error];

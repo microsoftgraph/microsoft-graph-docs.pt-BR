@@ -5,12 +5,12 @@ description: Descreve o recurso signIn da API do Microsoft Graph (REST), que aju
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6197600854833f7887556c35a511fad61b4539d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a0f3977c14ce8e0e53cdbd296ea28c4b79f5762
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965058"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396741"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -31,7 +31,7 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |appDisplayName|Cadeia de caracteres|Refere-se ao nome do aplicativo exibido no Portal do Azure.|
 |appId|Cadeia de caracteres|Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.|
 |clientAppUsed|Cadeia de caracteres|Fornece o cliente herdado usado para entrar na atividade E.g. inclui o navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP, POP.|
-|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) conjunto|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
+|appliedConditionalAccessPolicies|[conditionalAccessPolicy](conditionalaccesspolicy.md) conjunto|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
 |conditionalAccessStatus|cadeia de caracteres| Fornece o status da política de acesso condicional disparado. Os valores possíveis são: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
 |originalRequestId|Cadeia de caracteres|A id de solicitação da primeira solicitação na sequência de autenticação.|
 |isInteractive|Booliano|Indica se uma entrada é interativa ou não.|
@@ -89,7 +89,7 @@ Veja a seguir uma representação JSON do recurso.
   "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
   "correlationId": "String",
   "conditionalAccessStatus": "string",
-  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
   "originalRequestId": "String",
   "isInteractive": "String",
   "tokenIssuerName": "String",

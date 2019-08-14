@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 892a6de6dd191b43fe139acf7f8340fd14c8da5a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ed4880d80bd94febc4d12deb04ca10a4cb7dad3
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990845"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396734"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -28,7 +28,7 @@ Você pode especificar quais partes da equipe serão clonadas:
 Quando as guias são clonadas, elas são colocadas em um estado não configurado – elas são exibidas na barra de guias do Microsoft Teams e na primeira vez que você as abre, você passará pela tela de configuração. (Se a pessoa que estiver abrindo a guia não tiver permissão para configurar aplicativos, verá uma mensagem explicando que a guia não foi configurada.)
 
 A clonagem é uma operação de execução demorada.
-Após o cancelamento do clone da POSTAgem, você precisará obter a [operação](../resources/teamsasyncoperation.md) para ver se ela está "em execução" ou "com êxito" ou "falha". Você deve continuar a obter até que o status não seja "em execução". O atraso recomendado entre GETs é de 5 segundos.
+Depois que o clone pós retornar, você precisará obter a [operação](../resources/teamsasyncoperation.md) retornada pelo cabeçalho Location: para ver se ele está "em execução" ou "bem-sucedido" ou "com falha". Você deve continuar a obter até que o status não seja "em execução". O atraso recomendado entre GETs é de 5 segundos.
 
 ## <a name="permissions"></a>Permissões
 
