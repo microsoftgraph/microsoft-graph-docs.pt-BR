@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d54d3d2cef8ab1acb7933f18975d137a14eaf312
+ms.openlocfilehash: a77b2874d4e70f79d99c00d0a9895bee1bcb4f80
 ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396825"
+ms.locfileid: "36396888"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var user = new User
     OfficeLocation = "city-value"
 };
 
-await graphClient.Me
+await graphClient.Users["{id}"]
     .Request()
     .UpdateAsync(user);
 

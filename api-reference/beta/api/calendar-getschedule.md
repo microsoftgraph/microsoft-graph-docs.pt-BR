@@ -5,67 +5,67 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9690412df1f4e1e27edec9d30555fb71f5d0c929
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d152f88e2b29037bf6dcb54dbffebe4b29d8c4cd
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317897"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396713"
 ---
-# <a name="calendar-getschedule"></a><span data-ttu-id="e222a-103">calendar: getSchedule</span><span class="sxs-lookup"><span data-stu-id="e222a-103">calendar: getSchedule</span></span>
+# <a name="calendar-getschedule"></a><span data-ttu-id="d3a57-103">calendar: getSchedule</span><span class="sxs-lookup"><span data-stu-id="d3a57-103">calendar: getSchedule</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e222a-104">Adquira as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos (salas e equipamentos) para um período de tempo especificado.</span><span class="sxs-lookup"><span data-stu-id="e222a-104">Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.</span></span>
+<span data-ttu-id="d3a57-104">Adquira as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos (salas e equipamentos) para um período de tempo especificado.</span><span class="sxs-lookup"><span data-stu-id="d3a57-104">Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e222a-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e222a-105">Permissions</span></span>
-<span data-ttu-id="e222a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e222a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d3a57-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d3a57-105">Permissions</span></span>
+<span data-ttu-id="d3a57-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d3a57-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e222a-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e222a-108">Permission type</span></span>      | <span data-ttu-id="e222a-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e222a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d3a57-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d3a57-108">Permission type</span></span>      | <span data-ttu-id="d3a57-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d3a57-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e222a-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e222a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e222a-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e222a-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="e222a-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e222a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e222a-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e222a-113">Not supported.</span></span> |
-|<span data-ttu-id="e222a-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e222a-114">Application</span></span> | <span data-ttu-id="e222a-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e222a-115">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="d3a57-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d3a57-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d3a57-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d3a57-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="d3a57-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d3a57-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d3a57-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d3a57-113">Not supported.</span></span> |
+|<span data-ttu-id="d3a57-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d3a57-114">Application</span></span> | <span data-ttu-id="d3a57-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d3a57-115">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e222a-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e222a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d3a57-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d3a57-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendar/getSchedule 
 POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e222a-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e222a-117">Request headers</span></span>
-| <span data-ttu-id="e222a-118">Nome</span><span class="sxs-lookup"><span data-stu-id="e222a-118">Name</span></span>       | <span data-ttu-id="e222a-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="e222a-119">Type</span></span> | <span data-ttu-id="e222a-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="e222a-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d3a57-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d3a57-117">Request headers</span></span>
+| <span data-ttu-id="d3a57-118">Nome</span><span class="sxs-lookup"><span data-stu-id="d3a57-118">Name</span></span>       | <span data-ttu-id="d3a57-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3a57-119">Type</span></span> | <span data-ttu-id="d3a57-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3a57-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="e222a-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="e222a-121">Authorization</span></span>  | <span data-ttu-id="e222a-122">string</span><span class="sxs-lookup"><span data-stu-id="e222a-122">string</span></span>  | <span data-ttu-id="e222a-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e222a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e222a-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e222a-125">Content-Type</span></span>  | <span data-ttu-id="e222a-126">string</span><span class="sxs-lookup"><span data-stu-id="e222a-126">string</span></span> | <span data-ttu-id="e222a-127">Natureza dos dados no corpo de uma entidade, que é application/json.</span><span class="sxs-lookup"><span data-stu-id="e222a-127">Nature of the data in the body of an entity, which is application/json.</span></span> <span data-ttu-id="e222a-128">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e222a-128">Required.</span></span>  |
-| <span data-ttu-id="e222a-129">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="e222a-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="e222a-130">string</span><span class="sxs-lookup"><span data-stu-id="e222a-130">string</span></span> | <span data-ttu-id="e222a-131">Use isto para especificar o fuso horário para horas de início e término na resposta.</span><span class="sxs-lookup"><span data-stu-id="e222a-131">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="e222a-132">Se não especificado, esses valores de tempo serão retornados em UTC.</span><span class="sxs-lookup"><span data-stu-id="e222a-132">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="e222a-133">Opcional.</span><span class="sxs-lookup"><span data-stu-id="e222a-133">Optional.</span></span> |
+| <span data-ttu-id="d3a57-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="d3a57-121">Authorization</span></span>  | <span data-ttu-id="d3a57-122">string</span><span class="sxs-lookup"><span data-stu-id="d3a57-122">string</span></span>  | <span data-ttu-id="d3a57-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d3a57-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d3a57-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d3a57-125">Content-Type</span></span>  | <span data-ttu-id="d3a57-126">string</span><span class="sxs-lookup"><span data-stu-id="d3a57-126">string</span></span> | <span data-ttu-id="d3a57-127">Natureza dos dados no corpo de uma entidade, que é application/json.</span><span class="sxs-lookup"><span data-stu-id="d3a57-127">Nature of the data in the body of an entity, which is application/json.</span></span> <span data-ttu-id="d3a57-128">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d3a57-128">Required.</span></span>  |
+| <span data-ttu-id="d3a57-129">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="d3a57-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="d3a57-130">string</span><span class="sxs-lookup"><span data-stu-id="d3a57-130">string</span></span> | <span data-ttu-id="d3a57-131">Use isto para especificar o fuso horário para horas de início e término na resposta.</span><span class="sxs-lookup"><span data-stu-id="d3a57-131">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="d3a57-132">Se não especificado, esses valores de tempo serão retornados em UTC.</span><span class="sxs-lookup"><span data-stu-id="d3a57-132">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="d3a57-133">Opcional.</span><span class="sxs-lookup"><span data-stu-id="d3a57-133">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e222a-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e222a-134">Request body</span></span>
-<span data-ttu-id="e222a-135">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e222a-135">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d3a57-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d3a57-134">Request body</span></span>
+<span data-ttu-id="d3a57-135">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d3a57-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e222a-136">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e222a-136">Property</span></span>     | <span data-ttu-id="e222a-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="e222a-137">Type</span></span>   |<span data-ttu-id="e222a-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="e222a-138">Description</span></span>|
+| <span data-ttu-id="d3a57-136">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d3a57-136">Property</span></span>     | <span data-ttu-id="d3a57-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3a57-137">Type</span></span>   |<span data-ttu-id="d3a57-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3a57-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e222a-139">availabilityViewInterval</span><span class="sxs-lookup"><span data-stu-id="e222a-139">availabilityViewInterval</span></span>|<span data-ttu-id="e222a-140">Int32</span><span class="sxs-lookup"><span data-stu-id="e222a-140">Int32</span></span>|<span data-ttu-id="e222a-141">Representa a duração de um intervalo de tempo em \*\* availabilityView \*\* na resposta.</span><span class="sxs-lookup"><span data-stu-id="e222a-141">Represents the duration of a time slot in an **availabilityView** in the response.</span></span> <span data-ttu-id="e222a-142">O padrão é 30 minutos, o mínimo é 6, o máximo é 1440.</span><span class="sxs-lookup"><span data-stu-id="e222a-142">The default is 30 minutes, minimum is 6, maximum is 1440.</span></span> <span data-ttu-id="e222a-143">Opcional.</span><span class="sxs-lookup"><span data-stu-id="e222a-143">Optional.</span></span>|
-|<span data-ttu-id="e222a-144">endTime</span><span class="sxs-lookup"><span data-stu-id="e222a-144">endTime</span></span>|[<span data-ttu-id="e222a-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="e222a-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="e222a-146">A data, a hora e o fuso horário em que o período termina.</span><span class="sxs-lookup"><span data-stu-id="e222a-146">The date, time, and time zone that the period ends.</span></span>|
-|<span data-ttu-id="e222a-147">agendas</span><span class="sxs-lookup"><span data-stu-id="e222a-147">schedules</span></span>|<span data-ttu-id="e222a-148">Coleção String</span><span class="sxs-lookup"><span data-stu-id="e222a-148">String collection</span></span>|<span data-ttu-id="e222a-149">Uma coleção de endereços SMTP de usuários, listas de distribuição ou recursos para obter informações sobre disponibilidade.</span><span class="sxs-lookup"><span data-stu-id="e222a-149">A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.</span></span>|
-|<span data-ttu-id="e222a-150">startTime</span><span class="sxs-lookup"><span data-stu-id="e222a-150">startTime</span></span>|[<span data-ttu-id="e222a-151">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="e222a-151">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="e222a-152">A data, a hora e o fuso horário em que o período começa.</span><span class="sxs-lookup"><span data-stu-id="e222a-152">The date, time, and time zone that the period starts.</span></span>|
+|<span data-ttu-id="d3a57-139">availabilityViewInterval</span><span class="sxs-lookup"><span data-stu-id="d3a57-139">availabilityViewInterval</span></span>|<span data-ttu-id="d3a57-140">Int32</span><span class="sxs-lookup"><span data-stu-id="d3a57-140">Int32</span></span>|<span data-ttu-id="d3a57-141">Representa a duração de um intervalo de tempo em \*\* availabilityView \*\* na resposta.</span><span class="sxs-lookup"><span data-stu-id="d3a57-141">Represents the duration of a time slot in an **availabilityView** in the response.</span></span> <span data-ttu-id="d3a57-142">O padrão é 30 minutos, o mínimo é 6, o máximo é 1440.</span><span class="sxs-lookup"><span data-stu-id="d3a57-142">The default is 30 minutes, minimum is 6, maximum is 1440.</span></span> <span data-ttu-id="d3a57-143">Opcional.</span><span class="sxs-lookup"><span data-stu-id="d3a57-143">Optional.</span></span>|
+|<span data-ttu-id="d3a57-144">endTime</span><span class="sxs-lookup"><span data-stu-id="d3a57-144">endTime</span></span>|[<span data-ttu-id="d3a57-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="d3a57-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="d3a57-146">A data, a hora e o fuso horário em que o período termina.</span><span class="sxs-lookup"><span data-stu-id="d3a57-146">The date, time, and time zone that the period ends.</span></span>|
+|<span data-ttu-id="d3a57-147">agendas</span><span class="sxs-lookup"><span data-stu-id="d3a57-147">schedules</span></span>|<span data-ttu-id="d3a57-148">Coleção String</span><span class="sxs-lookup"><span data-stu-id="d3a57-148">String collection</span></span>|<span data-ttu-id="d3a57-149">Uma coleção de endereços SMTP de usuários, listas de distribuição ou recursos para obter informações sobre disponibilidade.</span><span class="sxs-lookup"><span data-stu-id="d3a57-149">A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.</span></span>|
+|<span data-ttu-id="d3a57-150">startTime</span><span class="sxs-lookup"><span data-stu-id="d3a57-150">startTime</span></span>|[<span data-ttu-id="d3a57-151">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="d3a57-151">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="d3a57-152">A data, a hora e o fuso horário em que o período começa.</span><span class="sxs-lookup"><span data-stu-id="d3a57-152">The date, time, and time zone that the period starts.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e222a-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="e222a-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d3a57-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="d3a57-153">Response</span></span>
 
-<span data-ttu-id="e222a-154">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [scheduleInformation](../resources/scheduleinformation.md) para cada objeto no parâmetro `schedules`.</span><span class="sxs-lookup"><span data-stu-id="e222a-154">If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.</span></span>
-## <a name="example"></a><span data-ttu-id="e222a-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e222a-155">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e222a-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e222a-156">Request</span></span>
-<span data-ttu-id="e222a-157">O exemplo a seguir obtém as informações de disponibilidade de dois usuários em relação à data, a hora e o fuso horário especificados.</span><span class="sxs-lookup"><span data-stu-id="e222a-157">The following example gets the availability information for two users for the specified date, time, and time zone.</span></span>
+<span data-ttu-id="d3a57-154">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [scheduleInformation](../resources/scheduleinformation.md) para cada objeto no parâmetro `schedules`.</span><span class="sxs-lookup"><span data-stu-id="d3a57-154">If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.</span></span>
+## <a name="example"></a><span data-ttu-id="d3a57-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d3a57-155">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d3a57-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d3a57-156">Request</span></span>
+<span data-ttu-id="d3a57-157">O exemplo a seguir obtém as informações de disponibilidade de dois usuários em relação à data, a hora e o fuso horário especificados.</span><span class="sxs-lookup"><span data-stu-id="d3a57-157">The following example gets the availability information for two users for the specified date, time, and time zone.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e222a-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="e222a-158">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d3a57-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="d3a57-158">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/beta/me/calendar/getSchedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -79,30 +79,30 @@ Content-Type: application/json
         "dateTime": "2019-03-15T18:00:00",
         "timeZone": "Pacific Standard Time"
     },
-    "availabilityViewInterval": "60"
+    "availabilityViewInterval": 60
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e222a-159">C#</span><span class="sxs-lookup"><span data-stu-id="e222a-159">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d3a57-159">C#</span><span class="sxs-lookup"><span data-stu-id="d3a57-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-getschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e222a-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e222a-160">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d3a57-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d3a57-160">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/calendar-getschedule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e222a-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e222a-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d3a57-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d3a57-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/calendar-getschedule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="e222a-162">Java</span><span class="sxs-lookup"><span data-stu-id="e222a-162">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="d3a57-162">Java</span><span class="sxs-lookup"><span data-stu-id="d3a57-162">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/calendar-getschedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="e222a-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="e222a-163">Response</span></span>
-<span data-ttu-id="e222a-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e222a-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d3a57-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="d3a57-163">Response</span></span>
+<span data-ttu-id="d3a57-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d3a57-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
