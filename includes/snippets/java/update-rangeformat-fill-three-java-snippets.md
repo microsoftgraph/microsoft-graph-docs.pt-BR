@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: baa61d97d1d31827299575dff7e57937eec44c2a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: d5af592a670aefeeb9fa9ba0e7cebdd901155f0d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857346"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372685"
 ---
 ```java
 
@@ -15,7 +15,7 @@ WorkbookRangeFill workbookRangeFill = new WorkbookRangeFill();
 workbookRangeFill.color = "#0000FF";
 
 graphClient.me().drive().items("{id}").workbook().worksheets("Sheet1")
-    .range('$C$1').format().fill()
+    .range("$C$1").format().fill()
     .buildRequest()
     .patch(workbookRangeFill);
 
