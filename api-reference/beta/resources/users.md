@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: a0a1959607e72397e24065a81b7d2362e05002ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d405dcc5e7881c7a404e5ca16f87c889cd5ccc7
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007400"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426409"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 
@@ -20,10 +20,11 @@ Você pode usar o Microsoft Graph para criar experiências envolventes do aplica
 
 Você pode acessar usuários pelo Microsoft Graph de duas maneiras:
 
-- Por sua ID, `/users/{id}` 
+- Por sua ID, `/users/{id}`
 - Usando o alias `/me` para o usuário conectado, que é igual a `/users/{signed-in user's id}`
 
 ## <a name="authorization"></a>Autorização
+
 Uma das seguintes [permissões](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) é necessária para acessar operações de usuário. As três primeiras permissões podem ser concedidas a um aplicativo por um usuário. O restante só pode ser concedido a um aplicativo pelo administrador.
 
 - User.ReadBasic.All
@@ -48,6 +49,7 @@ Uma das seguintes [permissões](https://developer.microsoft.com/graph/docs/autho
 Para obter detalhes e uma lista de todas as propriedades, confira o objeto [user](user.md).
 
 ## <a name="common-operations"></a>Operações comuns
+
 >**Observação:** Algumas destas operações exigem permissões adicionais.
 
 | Caminho    | Descrição |

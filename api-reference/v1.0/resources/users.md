@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: b0744662008b0b82167ce8779f478f260eedee57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d171a247b980ef2f1b1d762df696699eae7a1890
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033485"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426402"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 
@@ -18,7 +18,7 @@ Você pode usar o Microsoft Graph para criar experiências envolventes do aplica
 
 Você pode acessar [usuários](user.md) pelo Microsoft Graph de duas maneiras:
 
-- Por sua ID, `/users/{id | userPrincipalName}` 
+- Por sua ID, `/users/{id | userPrincipalName}`
 - Usando o alias `/me` para o usuário conectado, que é igual a `/users/{signed-in user's id}`
 
 ## <a name="authorization"></a>Autorização
@@ -36,7 +36,7 @@ Uma das seguintes [permissões](https://developer.microsoft.com/graph/docs/autho
 
 ## <a name="common-properties"></a>Propriedades comuns
 
-O item a seguir representa o conjunto padrão de propriedades que serão retornadas ao se obter um usuário ou listar usuários. Este é um subconjunto de todas as propriedades disponíveis. Para obter mais propriedades do usuário, use o parâmetro de consulta `$select`. 
+O item a seguir representa o conjunto padrão de propriedades que serão retornadas ao se obter um usuário ou listar usuários. Este é um subconjunto de todas as propriedades disponíveis. Para obter mais propriedades do usuário, use o parâmetro de consulta `$select`.
 
 |Propriedade |Descrição |
 |:----------|:-------------|
@@ -51,8 +51,6 @@ O item a seguir representa o conjunto padrão de propriedades que serão retorna
 |preferredLanguage | O idioma preferencial do usuário.|
 |surname| O sobrenome do usuário. |
 |userPrincipalName| O nome UPN do usuário. |
-
-<br/>
 
 Para obter detalhes e uma lista de todas as propriedades, confira o objeto [user](user.md).
 

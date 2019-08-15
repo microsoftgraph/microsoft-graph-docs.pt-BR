@@ -403,11 +403,11 @@
             - name: Anexo
               href: resources/attachment.md
               items:
-                - name: Recurso de anexo de arquivo
+                - name: Tipo de anexo de arquivo
                   href: resources/fileattachment.md
-                - name: Recurso de anexo de item
+                - name: Tipo de anexo de item
                   href: resources/itemattachment.md
-                - name: Recurso de anexo de referência
+                - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
                 - name: Obter anexo
                   href: api/attachment-get.md
@@ -620,11 +620,11 @@
             - name: Anexo
               href: resources/attachment.md
               items:
-                - name: Recurso de anexo de arquivo
+                - name: Tipo de anexo de arquivo
                   href: resources/fileattachment.md
-                - name: Recurso de anexo de item
+                - name: Tipo de anexo de item
                   href: resources/itemattachment.md
-                - name: Recurso de anexo de referência
+                - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
                 - name: Obter anexo
                   href: api/attachment-get.md
@@ -3402,11 +3402,11 @@
             - name: Anexo
               href: resources/attachment.md
               items:
-                - name: Recurso de anexo de arquivo
+                - name: Tipo de anexo de arquivo
                   href: resources/fileattachment.md
-                - name: Recurso de anexo de item
+                - name: Tipo de anexo de item
                   href: resources/itemattachment.md
-                - name: Recurso de anexo de referência
+                - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
                 - name: Obter anexo
                   href: api/attachment-get.md
