@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 4d5d93290ae59cad11c6c6756c40e93e38df6483
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 89c689bfc161d9c99c0155a30410ec2a06b45368
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363666"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409888"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -91,10 +91,6 @@ DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-subscription-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
