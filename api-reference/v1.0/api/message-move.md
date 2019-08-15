@@ -5,16 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e51deede6ff3f05cc0f9c4549975a3c46bf56356
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cc2c48ebad59f70a77586a03ba924a6fd9ed7490
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374717"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426416"
 ---
 # <a name="message-move"></a>message: move
 
-Mover uma mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
+Mover uma mensagem para outra pasta na caixa de correio do usuário especificado. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
 
 ## <a name="permissions"></a>Permissões
 

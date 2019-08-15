@@ -5,16 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e27963f18d3925bca6ee200434f4044c2c0b9197
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f3a84e91cdfb20eacf764d5363ebc5fb3987dff
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036138"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426395"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
 Uma mensagem em uma mailFolder.
+
+O número total máximo de destinatários incluídos nas propriedades **toRecipients**, **ccRecipients** e **bccRecipients** para uma única mensagem de email enviada de uma caixa de correio do Exchange A é de 500. Para obter mais informações, veja [limites de envio](https://docs.microsoft.com/pt-BR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 
