@@ -5,53 +5,53 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c971d07ae9ce1066706bedaa6c3f983dda02df7d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f544df3009f3c94ad1741cdecdb464638f591c4e
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316280"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408829"
 ---
-# <a name="list-accessreview-decisions"></a><span data-ttu-id="88dcb-103">Listar decisões accessReview</span><span class="sxs-lookup"><span data-stu-id="88dcb-103">List accessReview decisions</span></span>
+# <a name="list-accessreview-decisions"></a><span data-ttu-id="328ea-103">Listar decisões accessReview</span><span class="sxs-lookup"><span data-stu-id="328ea-103">List accessReview decisions</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="88dcb-104">No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , recupere as decisões de um objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="88dcb-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object.</span></span>
+<span data-ttu-id="328ea-104">No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , recupere as decisões de um objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="328ea-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="88dcb-105">Observe que uma revisão de acesso recorrente não terá uma `decisions` relação.</span><span class="sxs-lookup"><span data-stu-id="88dcb-105">Note that a recurring access review will not have a `decisions` relationship.</span></span>  <span data-ttu-id="88dcb-106">Em vez disso, o chamador deve `instance` navegar na relação para `accessReview` localizar um objeto para uma instância atual ou passada da revisão do Access.</span><span class="sxs-lookup"><span data-stu-id="88dcb-106">Instead, the caller must navigate the `instance` relationship to find an `accessReview` object for a current or past instance of the access review.</span></span>
+<span data-ttu-id="328ea-105">Observe que uma revisão de acesso recorrente não terá uma `decisions` relação.</span><span class="sxs-lookup"><span data-stu-id="328ea-105">Note that a recurring access review will not have a `decisions` relationship.</span></span>  <span data-ttu-id="328ea-106">Em vez disso, o chamador deve `instance` navegar na relação para `accessReview` localizar um objeto para uma instância atual ou passada da revisão do Access.</span><span class="sxs-lookup"><span data-stu-id="328ea-106">Instead, the caller must navigate the `instance` relationship to find an `accessReview` object for a current or past instance of the access review.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="88dcb-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="88dcb-107">Permissions</span></span>
-<span data-ttu-id="88dcb-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88dcb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="328ea-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="328ea-107">Permissions</span></span>
+<span data-ttu-id="328ea-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="328ea-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="88dcb-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="88dcb-110">Permission type</span></span>                        | <span data-ttu-id="88dcb-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="88dcb-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="328ea-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="328ea-110">Permission type</span></span>                        | <span data-ttu-id="328ea-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="328ea-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="88dcb-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="88dcb-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="88dcb-113">AccessReview. Read. All, AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="88dcb-113">AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="88dcb-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="88dcb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88dcb-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="88dcb-115">Not supported.</span></span> |
-|<span data-ttu-id="88dcb-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="88dcb-116">Application</span></span>                            | <span data-ttu-id="88dcb-117">AccessReview. Read. All, AccessReview. ReadWrite. Membership</span><span class="sxs-lookup"><span data-stu-id="88dcb-117">AccessReview.Read.All, AccessReview.ReadWrite.Membership</span></span> |
+|<span data-ttu-id="328ea-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="328ea-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="328ea-113">AccessReview. Read. All, AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="328ea-113">AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="328ea-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="328ea-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="328ea-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="328ea-115">Not supported.</span></span> |
+|<span data-ttu-id="328ea-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="328ea-116">Application</span></span>                            | <span data-ttu-id="328ea-117">AccessReview. Read. All, AccessReview. ReadWrite. Membership</span><span class="sxs-lookup"><span data-stu-id="328ea-117">AccessReview.Read.All, AccessReview.ReadWrite.Membership</span></span> |
 
- <span data-ttu-id="88dcb-118">O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.</span><span class="sxs-lookup"><span data-stu-id="88dcb-118">The signed in user must also be in a directory role that permits them to read an access review.</span></span>
+ <span data-ttu-id="328ea-118">O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.</span><span class="sxs-lookup"><span data-stu-id="328ea-118">The signed in user must also be in a directory role that permits them to read an access review.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="88dcb-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="88dcb-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="328ea-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="328ea-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews('{reviewId}')/decisions
+GET /accessReviews/{reviewId}/decisions
 ```
-## <a name="request-headers"></a><span data-ttu-id="88dcb-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="88dcb-120">Request headers</span></span>
-| <span data-ttu-id="88dcb-121">Nome</span><span class="sxs-lookup"><span data-stu-id="88dcb-121">Name</span></span>         | <span data-ttu-id="88dcb-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="88dcb-122">Type</span></span>        | <span data-ttu-id="88dcb-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="88dcb-123">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="328ea-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="328ea-120">Request headers</span></span>
+| <span data-ttu-id="328ea-121">Nome</span><span class="sxs-lookup"><span data-stu-id="328ea-121">Name</span></span>         | <span data-ttu-id="328ea-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="328ea-122">Type</span></span>        | <span data-ttu-id="328ea-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="328ea-123">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="88dcb-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="88dcb-124">Authorization</span></span> | <span data-ttu-id="88dcb-125">string</span><span class="sxs-lookup"><span data-stu-id="88dcb-125">string</span></span> | <span data-ttu-id="88dcb-p103">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="88dcb-p103">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="328ea-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="328ea-124">Authorization</span></span> | <span data-ttu-id="328ea-125">string</span><span class="sxs-lookup"><span data-stu-id="328ea-125">string</span></span> | <span data-ttu-id="328ea-p103">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="328ea-p103">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="88dcb-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="88dcb-128">Request body</span></span>
-<span data-ttu-id="88dcb-129">Nenhum corpo de solicitação deve ser fornecido.</span><span class="sxs-lookup"><span data-stu-id="88dcb-129">No request body should be supplied.</span></span>
+## <a name="request-body"></a><span data-ttu-id="328ea-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="328ea-128">Request body</span></span>
+<span data-ttu-id="328ea-129">Nenhum corpo de solicitação deve ser fornecido.</span><span class="sxs-lookup"><span data-stu-id="328ea-129">No request body should be supplied.</span></span>
 
-## <a name="response"></a><span data-ttu-id="88dcb-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="88dcb-130">Response</span></span>
-<span data-ttu-id="88dcb-131">Se tiver êxito, este método retornará `200, OK` um código de resposta e uma matriz de objetos [accessReviewDecision](../resources/accessreviewdecision.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="88dcb-131">If successful, this method returns a `200, OK` response code and an array of [accessReviewDecision](../resources/accessreviewdecision.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="328ea-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="328ea-130">Response</span></span>
+<span data-ttu-id="328ea-131">Se tiver êxito, este método retornará `200, OK` um código de resposta e uma matriz de objetos [accessReviewDecision](../resources/accessreviewdecision.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="328ea-131">If successful, this method returns a `200, OK` response code and an array of [accessReviewDecision](../resources/accessreviewdecision.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="88dcb-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="88dcb-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="88dcb-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88dcb-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="328ea-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="328ea-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="328ea-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="328ea-133">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="88dcb-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="88dcb-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="328ea-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="328ea-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessReview_decisions"
@@ -59,27 +59,23 @@ GET /accessReviews('{reviewId}')/decisions
 ```http
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/decisions
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="88dcb-135">C#</span><span class="sxs-lookup"><span data-stu-id="88dcb-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="328ea-135">C#</span><span class="sxs-lookup"><span data-stu-id="328ea-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-decisions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="88dcb-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88dcb-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="328ea-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="328ea-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-decisions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="88dcb-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="88dcb-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="328ea-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="328ea-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-decisions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="88dcb-138">Java</span><span class="sxs-lookup"><span data-stu-id="88dcb-138">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-decisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="88dcb-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="88dcb-139">Response</span></span>
-><span data-ttu-id="88dcb-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="88dcb-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="328ea-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="328ea-138">Response</span></span>
+><span data-ttu-id="328ea-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="328ea-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,16 +99,16 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="88dcb-142">Confira também</span><span class="sxs-lookup"><span data-stu-id="88dcb-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="328ea-141">Confira também</span><span class="sxs-lookup"><span data-stu-id="328ea-141">See also</span></span>
 
-| <span data-ttu-id="88dcb-143">Método</span><span class="sxs-lookup"><span data-stu-id="88dcb-143">Method</span></span>           | <span data-ttu-id="88dcb-144">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="88dcb-144">Return Type</span></span>    |<span data-ttu-id="88dcb-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="88dcb-145">Description</span></span>|
+| <span data-ttu-id="328ea-142">Método</span><span class="sxs-lookup"><span data-stu-id="328ea-142">Method</span></span>           | <span data-ttu-id="328ea-143">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="328ea-143">Return Type</span></span>    |<span data-ttu-id="328ea-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="328ea-144">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="88dcb-146">Obter accessReview</span><span class="sxs-lookup"><span data-stu-id="88dcb-146">Get accessReview</span></span>](accessreview-get.md) |  [<span data-ttu-id="88dcb-147">accessReview</span><span class="sxs-lookup"><span data-stu-id="88dcb-147">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="88dcb-148">Recupere uma revisão do Access.</span><span class="sxs-lookup"><span data-stu-id="88dcb-148">Retrieve an access review.</span></span> |
-|[<span data-ttu-id="88dcb-149">Listar minhas decisões do accessReview</span><span class="sxs-lookup"><span data-stu-id="88dcb-149">List my accessReview decisions</span></span>](accessreview-listmydecisions.md) |        <span data-ttu-id="88dcb-150">coleção [accessReviewDecision](../resources/accessreviewdecision.md)</span><span class="sxs-lookup"><span data-stu-id="88dcb-150">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="88dcb-151">Como revisor, obtenha as minhas decisões de um accessReview.</span><span class="sxs-lookup"><span data-stu-id="88dcb-151">As a reviewer, get my decisions of an accessReview.</span></span>|
-|[<span data-ttu-id="88dcb-152">Enviar lembrete accessReview</span><span class="sxs-lookup"><span data-stu-id="88dcb-152">Send accessReview reminder</span></span>](accessreview-sendreminder.md) |       <span data-ttu-id="88dcb-153">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="88dcb-153">None.</span></span>   |   <span data-ttu-id="88dcb-154">Envie um lembrete para os revisores de um accessReview.</span><span class="sxs-lookup"><span data-stu-id="88dcb-154">Send a reminder to the reviewers of an accessReview.</span></span> |
-|[<span data-ttu-id="88dcb-155">Parar accessReview</span><span class="sxs-lookup"><span data-stu-id="88dcb-155">Stop accessReview</span></span>](accessreview-stop.md) |        <span data-ttu-id="88dcb-156">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="88dcb-156">None.</span></span>   |   <span data-ttu-id="88dcb-157">Parar um accessReview.</span><span class="sxs-lookup"><span data-stu-id="88dcb-157">Stop an accessReview.</span></span> |
-|[<span data-ttu-id="88dcb-158">Redefinir decisões do accessReview</span><span class="sxs-lookup"><span data-stu-id="88dcb-158">Reset accessReview decisions</span></span>](accessreview-reset.md) |        <span data-ttu-id="88dcb-159">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="88dcb-159">None.</span></span>   |   <span data-ttu-id="88dcb-160">Redefina as decisões em um accessReview em andamento.</span><span class="sxs-lookup"><span data-stu-id="88dcb-160">Reset the decisions in an in-progress accessReview.</span></span>|
-|[<span data-ttu-id="88dcb-161">Aplicar decisões accessReview</span><span class="sxs-lookup"><span data-stu-id="88dcb-161">Apply accessReview decisions</span></span>](accessreview-apply.md) |        <span data-ttu-id="88dcb-162">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="88dcb-162">None.</span></span>   |   <span data-ttu-id="88dcb-163">Aplique as decisões de um accessReview concluído.</span><span class="sxs-lookup"><span data-stu-id="88dcb-163">Apply the decisions from a completed accessReview.</span></span>|
+|[<span data-ttu-id="328ea-145">Obter accessReview</span><span class="sxs-lookup"><span data-stu-id="328ea-145">Get accessReview</span></span>](accessreview-get.md) |  [<span data-ttu-id="328ea-146">accessReview</span><span class="sxs-lookup"><span data-stu-id="328ea-146">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="328ea-147">Recupere uma revisão do Access.</span><span class="sxs-lookup"><span data-stu-id="328ea-147">Retrieve an access review.</span></span> |
+|[<span data-ttu-id="328ea-148">Listar minhas decisões do accessReview</span><span class="sxs-lookup"><span data-stu-id="328ea-148">List my accessReview decisions</span></span>](accessreview-listmydecisions.md) |        <span data-ttu-id="328ea-149">coleção [accessReviewDecision](../resources/accessreviewdecision.md)</span><span class="sxs-lookup"><span data-stu-id="328ea-149">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="328ea-150">Como revisor, obtenha as minhas decisões de um accessReview.</span><span class="sxs-lookup"><span data-stu-id="328ea-150">As a reviewer, get my decisions of an accessReview.</span></span>|
+|[<span data-ttu-id="328ea-151">Enviar lembrete accessReview</span><span class="sxs-lookup"><span data-stu-id="328ea-151">Send accessReview reminder</span></span>](accessreview-sendreminder.md) |       <span data-ttu-id="328ea-152">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="328ea-152">None.</span></span>   |   <span data-ttu-id="328ea-153">Envie um lembrete para os revisores de um accessReview.</span><span class="sxs-lookup"><span data-stu-id="328ea-153">Send a reminder to the reviewers of an accessReview.</span></span> |
+|[<span data-ttu-id="328ea-154">Parar accessReview</span><span class="sxs-lookup"><span data-stu-id="328ea-154">Stop accessReview</span></span>](accessreview-stop.md) |        <span data-ttu-id="328ea-155">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="328ea-155">None.</span></span>   |   <span data-ttu-id="328ea-156">Parar um accessReview.</span><span class="sxs-lookup"><span data-stu-id="328ea-156">Stop an accessReview.</span></span> |
+|[<span data-ttu-id="328ea-157">Redefinir decisões do accessReview</span><span class="sxs-lookup"><span data-stu-id="328ea-157">Reset accessReview decisions</span></span>](accessreview-reset.md) |        <span data-ttu-id="328ea-158">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="328ea-158">None.</span></span>   |   <span data-ttu-id="328ea-159">Redefina as decisões em um accessReview em andamento.</span><span class="sxs-lookup"><span data-stu-id="328ea-159">Reset the decisions in an in-progress accessReview.</span></span>|
+|[<span data-ttu-id="328ea-160">Aplicar decisões accessReview</span><span class="sxs-lookup"><span data-stu-id="328ea-160">Apply accessReview decisions</span></span>](accessreview-apply.md) |        <span data-ttu-id="328ea-161">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="328ea-161">None.</span></span>   |   <span data-ttu-id="328ea-162">Aplique as decisões de um accessReview concluído.</span><span class="sxs-lookup"><span data-stu-id="328ea-162">Apply the decisions from a completed accessReview.</span></span>|
 
 
 <!--

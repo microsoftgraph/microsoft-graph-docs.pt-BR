@@ -5,61 +5,61 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a8f929355dc5373d3d7a42152469d504570f2e43
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 72ad644e842ff4c1c02dcbdbc28d132333751bf3
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36362362"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409018"
 ---
-# <a name="user-getmailtips"></a><span data-ttu-id="9b41d-103">usuário: getdicas de dicas</span><span class="sxs-lookup"><span data-stu-id="9b41d-103">user: getMailTips</span></span>
+# <a name="user-getmailtips"></a><span data-ttu-id="076f3-103">usuário: getdicas de dicas</span><span class="sxs-lookup"><span data-stu-id="076f3-103">user: getMailTips</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9b41d-104">Obtenha as dicas de informações de um ou mais destinatários como disponíveis para o [usuário](../resources/user.md)conectado.</span><span class="sxs-lookup"><span data-stu-id="9b41d-104">Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).</span></span>
+<span data-ttu-id="076f3-104">Obtenha as dicas de informações de um ou mais destinatários como disponíveis para o [usuário](../resources/user.md)conectado.</span><span class="sxs-lookup"><span data-stu-id="076f3-104">Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).</span></span>
 
-<span data-ttu-id="9b41d-105">Observe que fazendo uma `POST` chamada para a `getMailTips` ação, você pode solicitar tipos específicos de dicas de anotações a serem retornados para mais de um destinatário ao mesmo tempo.</span><span class="sxs-lookup"><span data-stu-id="9b41d-105">Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to be returned for more than one recipient at one time.</span></span> <span data-ttu-id="9b41d-106">As dicas de entrada solicitadas são retornadas em uma coleção de [dicas de dicas](../resources/mailtips.md) .</span><span class="sxs-lookup"><span data-stu-id="9b41d-106">The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.</span></span>
+<span data-ttu-id="076f3-105">Observe que fazendo uma `POST` chamada para a `getMailTips` ação, você pode solicitar tipos específicos de dicas de anotações a serem retornados para mais de um destinatário ao mesmo tempo.</span><span class="sxs-lookup"><span data-stu-id="076f3-105">Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to be returned for more than one recipient at one time.</span></span> <span data-ttu-id="076f3-106">As dicas de entrada solicitadas são retornadas em uma coleção de [dicas de dicas](../resources/mailtips.md) .</span><span class="sxs-lookup"><span data-stu-id="076f3-106">The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9b41d-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="9b41d-107">Permissions</span></span>
-<span data-ttu-id="9b41d-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9b41d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="076f3-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="076f3-107">Permissions</span></span>
+<span data-ttu-id="076f3-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="076f3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9b41d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9b41d-110">Permission type</span></span>      | <span data-ttu-id="9b41d-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9b41d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="076f3-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="076f3-110">Permission type</span></span>      | <span data-ttu-id="076f3-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="076f3-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9b41d-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9b41d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9b41d-113">Mail. Read, mail. Read. Shared</span><span class="sxs-lookup"><span data-stu-id="9b41d-113">Mail.Read, Mail.Read.Shared</span></span>    |
-|<span data-ttu-id="9b41d-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9b41d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9b41d-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9b41d-115">Mail.Read</span></span>    |
-|<span data-ttu-id="9b41d-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9b41d-116">Application</span></span> | <span data-ttu-id="9b41d-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9b41d-117">Mail.Read</span></span> |
+|<span data-ttu-id="076f3-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="076f3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="076f3-113">Mail. Read, mail. Read. Shared</span><span class="sxs-lookup"><span data-stu-id="076f3-113">Mail.Read, Mail.Read.Shared</span></span>    |
+|<span data-ttu-id="076f3-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="076f3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="076f3-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="076f3-115">Mail.Read</span></span>    |
+|<span data-ttu-id="076f3-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="076f3-116">Application</span></span> | <span data-ttu-id="076f3-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="076f3-117">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9b41d-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9b41d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="076f3-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="076f3-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="9b41d-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9b41d-119">Optional query parameters</span></span>
-<span data-ttu-id="9b41d-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="9b41d-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="9b41d-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9b41d-121">Request headers</span></span>
-| <span data-ttu-id="9b41d-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9b41d-122">Header</span></span>       | <span data-ttu-id="9b41d-123">Valor</span><span class="sxs-lookup"><span data-stu-id="9b41d-123">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="076f3-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="076f3-119">Optional query parameters</span></span>
+<span data-ttu-id="076f3-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="076f3-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="076f3-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="076f3-121">Request headers</span></span>
+| <span data-ttu-id="076f3-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="076f3-122">Header</span></span>       | <span data-ttu-id="076f3-123">Valor</span><span class="sxs-lookup"><span data-stu-id="076f3-123">Value</span></span>|
 |:-----------  |:------|
-| <span data-ttu-id="9b41d-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="9b41d-124">Authorization</span></span> | <span data-ttu-id="9b41d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9b41d-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9b41d-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9b41d-127">Content-Type</span></span>  | <span data-ttu-id="9b41d-128">application/json</span><span class="sxs-lookup"><span data-stu-id="9b41d-128">application/json</span></span>  |
+| <span data-ttu-id="076f3-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="076f3-124">Authorization</span></span> | <span data-ttu-id="076f3-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="076f3-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="076f3-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="076f3-127">Content-Type</span></span>  | <span data-ttu-id="076f3-128">application/json</span><span class="sxs-lookup"><span data-stu-id="076f3-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9b41d-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9b41d-129">Request body</span></span>
-<span data-ttu-id="9b41d-130">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9b41d-130">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="076f3-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="076f3-129">Request body</span></span>
+<span data-ttu-id="076f3-130">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="076f3-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="9b41d-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9b41d-131">Property</span></span>     | <span data-ttu-id="9b41d-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="9b41d-132">Type</span></span>   |<span data-ttu-id="9b41d-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="9b41d-133">Description</span></span>|
+| <span data-ttu-id="076f3-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="076f3-131">Property</span></span>     | <span data-ttu-id="076f3-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="076f3-132">Type</span></span>   |<span data-ttu-id="076f3-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="076f3-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9b41d-134">EndereçosEmail</span><span class="sxs-lookup"><span data-stu-id="9b41d-134">EmailAddresses</span></span>|<span data-ttu-id="9b41d-135">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="9b41d-135">String collection</span></span>|<span data-ttu-id="9b41d-136">Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.</span><span class="sxs-lookup"><span data-stu-id="9b41d-136">A collection of SMTP addresses of recipients to get MailTips for.</span></span>|
-|<span data-ttu-id="9b41d-137">MailTipsOptions</span><span class="sxs-lookup"><span data-stu-id="9b41d-137">MailTipsOptions</span></span>|<span data-ttu-id="9b41d-138">String</span><span class="sxs-lookup"><span data-stu-id="9b41d-138">String</span></span>|<span data-ttu-id="9b41d-139">Uma enumeração de sinalizadores que representa as dicas de as as solicitadas.</span><span class="sxs-lookup"><span data-stu-id="9b41d-139">A enumeration of flags that represents the requested mailtips.</span></span> <span data-ttu-id="9b41d-140">Os valores possíveis são `automaticReplies`: `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, e `totalMemberCount`.</span><span class="sxs-lookup"><span data-stu-id="9b41d-140">Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.</span></span>|
+|<span data-ttu-id="076f3-134">EndereçosEmail</span><span class="sxs-lookup"><span data-stu-id="076f3-134">EmailAddresses</span></span>|<span data-ttu-id="076f3-135">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="076f3-135">String collection</span></span>|<span data-ttu-id="076f3-136">Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.</span><span class="sxs-lookup"><span data-stu-id="076f3-136">A collection of SMTP addresses of recipients to get MailTips for.</span></span>|
+|<span data-ttu-id="076f3-137">MailTipsOptions</span><span class="sxs-lookup"><span data-stu-id="076f3-137">MailTipsOptions</span></span>|<span data-ttu-id="076f3-138">String</span><span class="sxs-lookup"><span data-stu-id="076f3-138">String</span></span>|<span data-ttu-id="076f3-139">Uma enumeração de sinalizadores que representa as dicas de as as solicitadas.</span><span class="sxs-lookup"><span data-stu-id="076f3-139">A enumeration of flags that represents the requested mailtips.</span></span> <span data-ttu-id="076f3-140">Os valores possíveis são `automaticReplies`: `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, e `totalMemberCount`.</span><span class="sxs-lookup"><span data-stu-id="076f3-140">Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9b41d-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="9b41d-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="076f3-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="076f3-141">Response</span></span>
 
-<span data-ttu-id="9b41d-142">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos de [dicas](../resources/mailtips.md) de mensagem no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9b41d-142">If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9b41d-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9b41d-143">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9b41d-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9b41d-144">Request</span></span>
-<span data-ttu-id="9b41d-145">O exemplo a seguir obtém dicas de correio para os destinatários especificados, para qualquer configuração de resposta automática e o status completo da caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="9b41d-145">The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.</span></span>
+<span data-ttu-id="076f3-142">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos de [dicas](../resources/mailtips.md) de mensagem no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="076f3-142">If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="076f3-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="076f3-143">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="076f3-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="076f3-144">Request</span></span>
+<span data-ttu-id="076f3-145">O exemplo a seguir obtém dicas de correio para os destinatários especificados, para qualquer configuração de resposta automática e o status completo da caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="076f3-145">The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9b41d-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="9b41d-146">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="076f3-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="076f3-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_getmailtips"
@@ -76,27 +76,23 @@ Content-Type: application/json
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9b41d-147">C#</span><span class="sxs-lookup"><span data-stu-id="9b41d-147">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="076f3-147">C#</span><span class="sxs-lookup"><span data-stu-id="076f3-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9b41d-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9b41d-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="076f3-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="076f3-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9b41d-149">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="9b41d-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="076f3-149">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="076f3-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmailtips-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="9b41d-150">Java</span><span class="sxs-lookup"><span data-stu-id="9b41d-150">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-getmailtips-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="9b41d-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="9b41d-151">Response</span></span>
-<span data-ttu-id="9b41d-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9b41d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="076f3-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="076f3-150">Response</span></span>
+<span data-ttu-id="076f3-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="076f3-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
