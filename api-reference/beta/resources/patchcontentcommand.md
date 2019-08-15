@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2408d08434b97f865ae19cbc70fd1dc16ff6868b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4cfa6fe84c18d4895e5d709d3ab6254258c1b970
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009206"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422279"
 ---
 # <a name="patchcontentcommand-resource-type"></a>tipo de recurso patchContentCommand
 
@@ -46,7 +46,7 @@ Veja a seguir uma representação JSON do recurso, que é enviado no corpo da so
 |ação|String|A ação a ser executada no elemento de destino. Os valores possíveis são: `replace`, `append`, `delete`, `insert` ou `prepend`.|
 |content|Cadeia de caracteres|Uma cadeia de caracteres em HTML bem formado para adicionar à página e dados binários de imagem ou arquivo. Se o conteúdo contiver dados binários, a solicitação deverá ser enviada `multipart/form-data` usando o tipo de conteúdo com uma parte "Commands". |
 |position|String|O local para adicionar o conteúdo fornecido em relação ao elemento de destino. Os valores possíveis são `after` : (padrão) `before`ou.|
-|destino|String|O elemento a ser atualizado. Deve ser o `#<data-id>` ou o gerado `<id>` do elemento, ou a `body` palavra- `title` chave ou.|
+|destino|String|O elemento a ser atualizado. Deve ser o `#<data-id>` ou o gerado `{id}` do elemento, ou a `body` palavra- `title` chave ou.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

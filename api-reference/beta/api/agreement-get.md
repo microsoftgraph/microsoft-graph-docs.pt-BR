@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 5886b74804581b40dc1fc01ddf1d503b4f4f862e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d35785d557c1f9974c389532f4d31f17070ffaa5
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318898"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408496"
 ---
 # <a name="get-agreement"></a>Obter contrato
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /agreements/<id>
+GET /agreements/{id}
 ```
 <!--
 ## Optional query parameters
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
   "name": "get_agreement"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/agreements/<id>?$expand=files
+GET https://graph.microsoft.com/beta/agreements/{id}?$expand=files
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreement-csharp-snippets.md)]
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/beta/agreements/<id>?$expand=files
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-agreement-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-agreement-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

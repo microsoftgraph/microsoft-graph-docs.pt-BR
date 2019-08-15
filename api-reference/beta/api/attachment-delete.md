@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 774043c030594ea60c80eb952acbae00e00c47c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53a56b720ed1b1b2def64916f25831473cc79555
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318527"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408181"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
@@ -73,8 +73,8 @@ Anexos de uma [tarefa do Outlook](../resources/outlooktask.md).
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/outlook/tasks/<id>/attachments/{id}
-DELETE /users/<id>/outlook/tasks/<id>/attachments/{id}
+DELETE /me/outlook/tasks/{id}/attachments/{id}
+DELETE /users/{id}/outlook/tasks/{id}/attachments/{id}
 ```
 
 Anexos de uma [post](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversation](../resources/conversation.md) de um grupo.
@@ -124,10 +124,6 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-attachment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
