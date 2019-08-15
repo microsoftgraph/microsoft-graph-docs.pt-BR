@@ -5,34 +5,34 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3c1a35d8f9cb3ca31a8453983f1de0fa75ec79bb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a369955d42af111034e83f76e5eb7d0bd27f9079
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364471"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410680"
 ---
-# <a name="schedule-share"></a><span data-ttu-id="4b643-103">agendamento: share</span><span class="sxs-lookup"><span data-stu-id="4b643-103">schedule: share</span></span>
+# <a name="schedule-share"></a><span data-ttu-id="6476d-103">agendamento: share</span><span class="sxs-lookup"><span data-stu-id="6476d-103">schedule: share</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4b643-104">Compartilhar um intervalo de tempo de [agendamento](../resources/schedule.md) com membros de agendamento.</span><span class="sxs-lookup"><span data-stu-id="4b643-104">Share a [schedule](../resources/schedule.md) time range with schedule members.</span></span>
-<span data-ttu-id="4b643-105">Faça as coleções de itens [Shift](../resources/shift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado da [agenda](../resources/schedule.md) exibida pelos membros da equipe especificados, incluindo funcionários e gerentes.</span><span class="sxs-lookup"><span data-stu-id="4b643-105">Make the collections of [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) items in the specified time range of the [schedule](../resources/schedule.md) viewable by the specified team members, including employees and managers.</span></span>
-<span data-ttu-id="4b643-106">Cada [mudança](../resources/shift.md) e [timeOff](../resources/timeoff.md) instância em um [cronograma](../resources/schedule.md) oferece suporte a uma versão de rascunho e uma versão compartilhada do item.</span><span class="sxs-lookup"><span data-stu-id="4b643-106">Each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) supports a draft version and a shared version of the item.</span></span> <span data-ttu-id="4b643-107">A versão de rascunho é visível apenas por gerentes e a versão compartilhada é visível por funcionários e gerentes.</span><span class="sxs-lookup"><span data-stu-id="4b643-107">The draft version is viewable by only managers, and the shared version is viewable by employees and managers.</span></span> <span data-ttu-id="4b643-108">Para cada [mudança](../resources/shift.md) e [timeOff](../resources/timeoff.md) instância no intervalo de tempo especificado, a ação de compartilhamento atualiza a versão compartilhada da versão de rascunho, para que, além dos gerentes, os funcionários também possam exibir as informações mais atuais sobre o item.</span><span class="sxs-lookup"><span data-stu-id="4b643-108">For each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.</span></span> <span data-ttu-id="4b643-109">O parâmetro **notifyTeam** especifica ainda mais quais funcionários podem exibir o item.</span><span class="sxs-lookup"><span data-stu-id="4b643-109">The **notifyTeam** parameter further specifies which employees can view the item.</span></span>
+<span data-ttu-id="6476d-104">Compartilhar um intervalo de tempo de [agendamento](../resources/schedule.md) com membros de agendamento.</span><span class="sxs-lookup"><span data-stu-id="6476d-104">Share a [schedule](../resources/schedule.md) time range with schedule members.</span></span>
+<span data-ttu-id="6476d-105">Faça as coleções de itens [Shift](../resources/shift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado da [agenda](../resources/schedule.md) exibida pelos membros da equipe especificados, incluindo funcionários e gerentes.</span><span class="sxs-lookup"><span data-stu-id="6476d-105">Make the collections of [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) items in the specified time range of the [schedule](../resources/schedule.md) viewable by the specified team members, including employees and managers.</span></span>
+<span data-ttu-id="6476d-106">Cada [mudança](../resources/shift.md) e [timeOff](../resources/timeoff.md) instância em um [cronograma](../resources/schedule.md) oferece suporte a uma versão de rascunho e uma versão compartilhada do item.</span><span class="sxs-lookup"><span data-stu-id="6476d-106">Each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) supports a draft version and a shared version of the item.</span></span> <span data-ttu-id="6476d-107">A versão de rascunho é visível apenas por gerentes e a versão compartilhada é visível por funcionários e gerentes.</span><span class="sxs-lookup"><span data-stu-id="6476d-107">The draft version is viewable by only managers, and the shared version is viewable by employees and managers.</span></span> <span data-ttu-id="6476d-108">Para cada [mudança](../resources/shift.md) e [timeOff](../resources/timeoff.md) instância no intervalo de tempo especificado, a ação de compartilhamento atualiza a versão compartilhada da versão de rascunho, para que, além dos gerentes, os funcionários também possam exibir as informações mais atuais sobre o item.</span><span class="sxs-lookup"><span data-stu-id="6476d-108">For each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.</span></span> <span data-ttu-id="6476d-109">O parâmetro **notifyTeam** especifica ainda mais quais funcionários podem exibir o item.</span><span class="sxs-lookup"><span data-stu-id="6476d-109">The **notifyTeam** parameter further specifies which employees can view the item.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4b643-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="4b643-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6476d-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="6476d-110">Permissions</span></span>
 
-<span data-ttu-id="4b643-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4b643-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6476d-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6476d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4b643-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4b643-113">Permission type</span></span>      | <span data-ttu-id="4b643-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4b643-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6476d-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6476d-113">Permission type</span></span>      | <span data-ttu-id="6476d-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6476d-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4b643-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4b643-115">Delegated (work or school account)</span></span> | <span data-ttu-id="4b643-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4b643-116">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4b643-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4b643-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4b643-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4b643-118">Not supported.</span></span>    |
-|<span data-ttu-id="4b643-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4b643-119">Application</span></span> | <span data-ttu-id="4b643-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4b643-120">Not supported.</span></span> |
+|<span data-ttu-id="6476d-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6476d-115">Delegated (work or school account)</span></span> | <span data-ttu-id="6476d-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6476d-116">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6476d-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6476d-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6476d-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6476d-118">Not supported.</span></span>    |
+|<span data-ttu-id="6476d-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6476d-119">Application</span></span> | <span data-ttu-id="6476d-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6476d-120">Not supported.</span></span> |
 
-> <span data-ttu-id="4b643-121">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="4b643-121">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="4b643-122">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="4b643-122">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="6476d-121">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="6476d-121">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="6476d-122">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="6476d-122">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4b643-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4b643-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6476d-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6476d-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,34 +40,34 @@ ms.locfileid: "36364471"
 POST /teams/{teamId}/schedule/share
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4b643-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4b643-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6476d-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6476d-124">Request headers</span></span>
 
-| <span data-ttu-id="4b643-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4b643-125">Header</span></span>       | <span data-ttu-id="4b643-126">Valor</span><span class="sxs-lookup"><span data-stu-id="4b643-126">Value</span></span> |
+| <span data-ttu-id="6476d-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6476d-125">Header</span></span>       | <span data-ttu-id="6476d-126">Valor</span><span class="sxs-lookup"><span data-stu-id="6476d-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="4b643-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="4b643-127">Authorization</span></span>  | <span data-ttu-id="4b643-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4b643-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="4b643-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4b643-130">Content-Type</span></span>  | <span data-ttu-id="4b643-131">application/json</span><span class="sxs-lookup"><span data-stu-id="4b643-131">application/json</span></span>  |
+| <span data-ttu-id="6476d-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="6476d-127">Authorization</span></span>  | <span data-ttu-id="6476d-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6476d-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="6476d-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6476d-130">Content-Type</span></span>  | <span data-ttu-id="6476d-131">application/json</span><span class="sxs-lookup"><span data-stu-id="6476d-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4b643-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4b643-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6476d-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6476d-132">Request body</span></span>
 
-<span data-ttu-id="4b643-133">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4b643-133">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="6476d-133">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6476d-133">In the request body, provide a JSON object with the following parameters.</span></span>
 
-|<span data-ttu-id="4b643-134">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="4b643-134">Parameter</span></span>                   |<span data-ttu-id="4b643-135">Tipo</span><span class="sxs-lookup"><span data-stu-id="4b643-135">Type</span></span>           |<span data-ttu-id="4b643-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="4b643-136">Description</span></span>  |
+|<span data-ttu-id="6476d-134">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="6476d-134">Parameter</span></span>                   |<span data-ttu-id="6476d-135">Tipo</span><span class="sxs-lookup"><span data-stu-id="6476d-135">Type</span></span>           |<span data-ttu-id="6476d-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="6476d-136">Description</span></span>  |
 |-----------------------|-------------------|--------------|
-| <span data-ttu-id="4b643-137">notifyTeam</span><span class="sxs-lookup"><span data-stu-id="4b643-137">notifyTeam</span></span>            |`Boolean`             |<span data-ttu-id="4b643-138">Indica se a equipe inteira deve receber uma notificação visível desta ação ou apenas os funcionários que têm uma alteração atribuída a elas que foram compartilhadas.</span><span class="sxs-lookup"><span data-stu-id="4b643-138">Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared.</span></span> <span data-ttu-id="4b643-139">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4b643-139">Required.</span></span>       |
-| <span data-ttu-id="4b643-140">startDateTime</span><span class="sxs-lookup"><span data-stu-id="4b643-140">startDateTime</span></span>         |`DateTimeOffset`   |<span data-ttu-id="4b643-141">O horário de início para compartilhar as mudanças no cronograma.</span><span class="sxs-lookup"><span data-stu-id="4b643-141">The start time to share shifts on the schedule from.</span></span> <span data-ttu-id="4b643-142">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4b643-142">Required.</span></span>   |
-| <span data-ttu-id="4b643-143">endDateTime</span><span class="sxs-lookup"><span data-stu-id="4b643-143">endDateTime</span></span>           |`DateTimeOffset`   | <span data-ttu-id="4b643-144">O horário de término para compartilhar turnos no cronograma até.</span><span class="sxs-lookup"><span data-stu-id="4b643-144">The end time to share shifts on the schedule until.</span></span>   |
+| <span data-ttu-id="6476d-137">notifyTeam</span><span class="sxs-lookup"><span data-stu-id="6476d-137">notifyTeam</span></span>            |`Boolean`             |<span data-ttu-id="6476d-138">Indica se a equipe inteira deve receber uma notificação visível desta ação ou apenas os funcionários que têm uma alteração atribuída a elas que foram compartilhadas.</span><span class="sxs-lookup"><span data-stu-id="6476d-138">Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared.</span></span> <span data-ttu-id="6476d-139">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6476d-139">Required.</span></span>       |
+| <span data-ttu-id="6476d-140">startDateTime</span><span class="sxs-lookup"><span data-stu-id="6476d-140">startDateTime</span></span>         |`DateTimeOffset`   |<span data-ttu-id="6476d-141">O horário de início para compartilhar as mudanças no cronograma.</span><span class="sxs-lookup"><span data-stu-id="6476d-141">The start time to share shifts on the schedule from.</span></span> <span data-ttu-id="6476d-142">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6476d-142">Required.</span></span>   |
+| <span data-ttu-id="6476d-143">endDateTime</span><span class="sxs-lookup"><span data-stu-id="6476d-143">endDateTime</span></span>           |`DateTimeOffset`   | <span data-ttu-id="6476d-144">O horário de término para compartilhar turnos no cronograma até.</span><span class="sxs-lookup"><span data-stu-id="6476d-144">The end time to share shifts on the schedule until.</span></span>   |
 
-## <a name="response"></a><span data-ttu-id="4b643-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="4b643-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6476d-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="6476d-145">Response</span></span>
 
-<span data-ttu-id="4b643-p107">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4b643-p107">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="6476d-p107">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6476d-p107">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4b643-148">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4b643-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6476d-148">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6476d-148">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4b643-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4b643-149">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="6476d-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6476d-149">Request</span></span>
 
-<span data-ttu-id="4b643-150">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4b643-150">The following is an example of the request.</span></span>
+<span data-ttu-id="6476d-150">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6476d-150">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4b643-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="4b643-151">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="6476d-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="6476d-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-share"
@@ -82,28 +82,24 @@ Content-type: application/json
   "endDateTime": "2018-10-15T00:00:00.000Z"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4b643-152">C#</span><span class="sxs-lookup"><span data-stu-id="4b643-152">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6476d-152">C#</span><span class="sxs-lookup"><span data-stu-id="6476d-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-share-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4b643-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4b643-153">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6476d-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6476d-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-share-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4b643-154">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="4b643-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6476d-154">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6476d-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-share-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="4b643-155">Java</span><span class="sxs-lookup"><span data-stu-id="4b643-155">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/schedule-share-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="4b643-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="4b643-156">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="6476d-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="6476d-155">Response</span></span>
 
-<span data-ttu-id="4b643-157">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4b643-157">The following is an example of the response.</span></span> 
+<span data-ttu-id="6476d-156">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6476d-156">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

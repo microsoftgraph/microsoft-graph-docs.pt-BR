@@ -5,32 +5,32 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1adbffe6baf26d6555ada12e52a38b27fee4c58a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2eb1496d45f9b07e2fadad5d751c5159eb73796d
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323329"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420669"
 ---
-# <a name="list-group-transitive-members"></a><span data-ttu-id="f2ebe-105">Membros transitivos do grupo de lista</span><span class="sxs-lookup"><span data-stu-id="f2ebe-105">List group transitive members</span></span>
+# <a name="list-group-transitive-members"></a><span data-ttu-id="1144f-105">Membros transitivos do grupo de lista</span><span class="sxs-lookup"><span data-stu-id="1144f-105">List group transitive members</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f2ebe-106">Obtenha uma lista dos membros do grupo.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-106">Get a list of the group's members.</span></span> <span data-ttu-id="f2ebe-107">Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-107">A group can have users, contacts, devices, service principals and other groups as members.</span></span> <span data-ttu-id="f2ebe-108">Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-108">This operation is transitive and will also return a flat list of all nested members.</span></span>
+<span data-ttu-id="1144f-106">Obtenha uma lista dos membros do grupo.</span><span class="sxs-lookup"><span data-stu-id="1144f-106">Get a list of the group's members.</span></span> <span data-ttu-id="1144f-107">Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros.</span><span class="sxs-lookup"><span data-stu-id="1144f-107">A group can have users, contacts, devices, service principals and other groups as members.</span></span> <span data-ttu-id="1144f-108">Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.</span><span class="sxs-lookup"><span data-stu-id="1144f-108">This operation is transitive and will also return a flat list of all nested members.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f2ebe-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="f2ebe-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1144f-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="1144f-109">Permissions</span></span>
 
-<span data-ttu-id="f2ebe-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2ebe-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1144f-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1144f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f2ebe-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f2ebe-112">Permission type</span></span>      | <span data-ttu-id="f2ebe-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f2ebe-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1144f-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1144f-112">Permission type</span></span>      | <span data-ttu-id="1144f-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1144f-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f2ebe-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f2ebe-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f2ebe-115">Directory. Read. All, Directory. AccessAsUser. All, User. ReadBasic. All, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="f2ebe-115">Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All</span></span>    |
-|<span data-ttu-id="f2ebe-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f2ebe-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2ebe-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-117">Not supported.</span></span>    |
-|<span data-ttu-id="f2ebe-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f2ebe-118">Application</span></span> | <span data-ttu-id="f2ebe-119">Directory. Read. All, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="f2ebe-119">Directory.Read.All, User.Read.All</span></span> |
+|<span data-ttu-id="1144f-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1144f-114">Delegated (work or school account)</span></span> | <span data-ttu-id="1144f-115">Directory. Read. All, Directory. AccessAsUser. All, User. ReadBasic. All, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="1144f-115">Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All</span></span>    |
+|<span data-ttu-id="1144f-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1144f-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1144f-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1144f-117">Not supported.</span></span>    |
+|<span data-ttu-id="1144f-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1144f-118">Application</span></span> | <span data-ttu-id="1144f-119">Directory. Read. All, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="1144f-119">Directory.Read.All, User.Read.All</span></span> |
 
-> <span data-ttu-id="f2ebe-120">Observação: para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-120">Note: To list the members of a hidden membership group, the Member.Read.Hidden permission is required.</span></span>
+> <span data-ttu-id="1144f-120">Observação: para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.</span><span class="sxs-lookup"><span data-stu-id="1144f-120">Note: To list the members of a hidden membership group, the Member.Read.Hidden permission is required.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f2ebe-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f2ebe-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1144f-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1144f-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "36323329"
 GET /groups/{id}/transitiveMembers
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f2ebe-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="f2ebe-122">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1144f-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="1144f-122">Optional query parameters</span></span>
 
-<span data-ttu-id="f2ebe-123">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-123">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="1144f-123">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="1144f-123">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f2ebe-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f2ebe-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1144f-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1144f-124">Request headers</span></span>
 
-| <span data-ttu-id="f2ebe-125">Nome</span><span class="sxs-lookup"><span data-stu-id="f2ebe-125">Name</span></span>       | <span data-ttu-id="f2ebe-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="f2ebe-126">Type</span></span> | <span data-ttu-id="f2ebe-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="f2ebe-127">Description</span></span>|
+| <span data-ttu-id="1144f-125">Nome</span><span class="sxs-lookup"><span data-stu-id="1144f-125">Name</span></span>       | <span data-ttu-id="1144f-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="1144f-126">Type</span></span> | <span data-ttu-id="1144f-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="1144f-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="f2ebe-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="f2ebe-128">Authorization</span></span>  | <span data-ttu-id="f2ebe-129">string</span><span class="sxs-lookup"><span data-stu-id="f2ebe-129">string</span></span>  | <span data-ttu-id="f2ebe-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1144f-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="1144f-128">Authorization</span></span>  | <span data-ttu-id="1144f-129">string</span><span class="sxs-lookup"><span data-stu-id="1144f-129">string</span></span>  | <span data-ttu-id="1144f-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1144f-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f2ebe-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f2ebe-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1144f-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1144f-132">Request body</span></span>
 
-<span data-ttu-id="f2ebe-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-133">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="1144f-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1144f-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f2ebe-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2ebe-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1144f-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="1144f-134">Response</span></span>
 
-<span data-ttu-id="f2ebe-135">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-135">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+<span data-ttu-id="1144f-135">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1144f-135">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f2ebe-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f2ebe-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1144f-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1144f-136">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f2ebe-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f2ebe-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1144f-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1144f-137">Request</span></span>
 
-<span data-ttu-id="f2ebe-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-138">The following is an example of the request.</span></span>
+<span data-ttu-id="1144f-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1144f-138">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f2ebe-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="f2ebe-139">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1144f-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="1144f-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group_transitivemembers"
@@ -71,29 +71,25 @@ GET /groups/{id}/transitiveMembers
 ```http
 GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f2ebe-140">C#</span><span class="sxs-lookup"><span data-stu-id="f2ebe-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1144f-140">C#</span><span class="sxs-lookup"><span data-stu-id="1144f-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-transitivemembers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2ebe-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2ebe-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1144f-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1144f-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-transitivemembers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f2ebe-142">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="f2ebe-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1144f-142">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1144f-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-transitivemembers-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="f2ebe-143">Java</span><span class="sxs-lookup"><span data-stu-id="f2ebe-143">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivemembers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f2ebe-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2ebe-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1144f-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="1144f-143">Response</span></span>
 
-<span data-ttu-id="f2ebe-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-145">The following is an example of the response.</span></span>
-><span data-ttu-id="f2ebe-146">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-146">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f2ebe-147">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f2ebe-147">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1144f-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1144f-144">The following is an example of the response.</span></span>
+><span data-ttu-id="1144f-145">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="1144f-145">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1144f-146">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1144f-146">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

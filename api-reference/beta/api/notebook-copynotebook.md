@@ -5,31 +5,31 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c91731a522cf26edd96eec34f0c0a9c762721fcd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 85c056c254d6000a6936700cb1b4a0b1a1dcbb12
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342723"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36414792"
 ---
-# <a name="notebook-copynotebook"></a><span data-ttu-id="fad6c-104">bloco de anotações: copyNotebook</span><span class="sxs-lookup"><span data-stu-id="fad6c-104">notebook: copyNotebook</span></span>
+# <a name="notebook-copynotebook"></a><span data-ttu-id="a52ad-104">bloco de anotações: copyNotebook</span><span class="sxs-lookup"><span data-stu-id="a52ad-104">notebook: copyNotebook</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fad6c-105">Copia um bloco de anotações para a pasta blocos de anotações na biblioteca de documentos de destino.</span><span class="sxs-lookup"><span data-stu-id="fad6c-105">Copies a notebook to the Notebooks folder in the destination Documents library.</span></span> <span data-ttu-id="fad6c-106">A pasta é criada se não existir.</span><span class="sxs-lookup"><span data-stu-id="fad6c-106">The folder is created if it doesn't exist.</span></span>
+<span data-ttu-id="a52ad-105">Copia um bloco de anotações para a pasta blocos de anotações na biblioteca de documentos de destino.</span><span class="sxs-lookup"><span data-stu-id="a52ad-105">Copies a notebook to the Notebooks folder in the destination Documents library.</span></span> <span data-ttu-id="a52ad-106">A pasta é criada se não existir.</span><span class="sxs-lookup"><span data-stu-id="a52ad-106">The folder is created if it doesn't exist.</span></span>
 
-<span data-ttu-id="fad6c-107">Para operações de cópia, siga um padrão de chamada assíncrona: primeiro, chame a ação de cópia e, em seguida, pesquise o ponto de extremidade da operação para o resultado.</span><span class="sxs-lookup"><span data-stu-id="fad6c-107">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
+<span data-ttu-id="a52ad-107">Para operações de cópia, siga um padrão de chamada assíncrona: primeiro, chame a ação de cópia e, em seguida, pesquise o ponto de extremidade da operação para o resultado.</span><span class="sxs-lookup"><span data-stu-id="a52ad-107">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fad6c-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="fad6c-108">Permissions</span></span>
-<span data-ttu-id="fad6c-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fad6c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a52ad-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="a52ad-108">Permissions</span></span>
+<span data-ttu-id="a52ad-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a52ad-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fad6c-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fad6c-111">Permission type</span></span>      | <span data-ttu-id="fad6c-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fad6c-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a52ad-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a52ad-111">Permission type</span></span>      | <span data-ttu-id="a52ad-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a52ad-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fad6c-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fad6c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="fad6c-114">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fad6c-114">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fad6c-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fad6c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fad6c-116">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fad6c-116">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="fad6c-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fad6c-117">Application</span></span> | <span data-ttu-id="fad6c-118">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fad6c-118">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="a52ad-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a52ad-113">Delegated (work or school account)</span></span> | <span data-ttu-id="a52ad-114">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a52ad-114">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a52ad-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a52ad-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a52ad-116">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a52ad-116">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="a52ad-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a52ad-117">Application</span></span> | <span data-ttu-id="a52ad-118">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a52ad-118">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fad6c-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fad6c-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a52ad-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a52ad-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks/{id}/copyNotebook
@@ -37,32 +37,32 @@ POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/copyNotebook
 POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 ```
-## <a name="request-headers"></a><span data-ttu-id="fad6c-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fad6c-120">Request headers</span></span>
-| <span data-ttu-id="fad6c-121">Nome</span><span class="sxs-lookup"><span data-stu-id="fad6c-121">Name</span></span>       | <span data-ttu-id="fad6c-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="fad6c-122">Type</span></span> | <span data-ttu-id="fad6c-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="fad6c-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a52ad-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a52ad-120">Request headers</span></span>
+| <span data-ttu-id="a52ad-121">Nome</span><span class="sxs-lookup"><span data-stu-id="a52ad-121">Name</span></span>       | <span data-ttu-id="a52ad-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="a52ad-122">Type</span></span> | <span data-ttu-id="a52ad-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="a52ad-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="fad6c-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="fad6c-124">Authorization</span></span>  | <span data-ttu-id="fad6c-125">string</span><span class="sxs-lookup"><span data-stu-id="fad6c-125">string</span></span>  | <span data-ttu-id="fad6c-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fad6c-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="fad6c-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fad6c-128">Content-Type</span></span> | <span data-ttu-id="fad6c-129">string</span><span class="sxs-lookup"><span data-stu-id="fad6c-129">string</span></span> | `application/json` |
+| <span data-ttu-id="a52ad-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="a52ad-124">Authorization</span></span>  | <span data-ttu-id="a52ad-125">string</span><span class="sxs-lookup"><span data-stu-id="a52ad-125">string</span></span>  | <span data-ttu-id="a52ad-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a52ad-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a52ad-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a52ad-128">Content-Type</span></span> | <span data-ttu-id="a52ad-129">string</span><span class="sxs-lookup"><span data-stu-id="a52ad-129">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="fad6c-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fad6c-130">Request body</span></span>
-<span data-ttu-id="fad6c-131">No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de que sua operação precisa.</span><span class="sxs-lookup"><span data-stu-id="fad6c-131">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span> <span data-ttu-id="fad6c-132">É possível enviar um corpo vazio se nenhum for necessário.</span><span class="sxs-lookup"><span data-stu-id="fad6c-132">It's okay to send an empty body if none are needed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a52ad-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a52ad-130">Request body</span></span>
+<span data-ttu-id="a52ad-131">No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de que sua operação precisa.</span><span class="sxs-lookup"><span data-stu-id="a52ad-131">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span> <span data-ttu-id="a52ad-132">É possível enviar um corpo vazio se nenhum for necessário.</span><span class="sxs-lookup"><span data-stu-id="a52ad-132">It's okay to send an empty body if none are needed.</span></span>
 
-| <span data-ttu-id="fad6c-133">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="fad6c-133">Parameter</span></span>    | <span data-ttu-id="fad6c-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="fad6c-134">Type</span></span>   |<span data-ttu-id="fad6c-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="fad6c-135">Description</span></span>|
+| <span data-ttu-id="a52ad-133">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a52ad-133">Parameter</span></span>    | <span data-ttu-id="a52ad-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="a52ad-134">Type</span></span>   |<span data-ttu-id="a52ad-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="a52ad-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fad6c-136">siteCollectionId</span><span class="sxs-lookup"><span data-stu-id="fad6c-136">siteCollectionId</span></span>|<span data-ttu-id="fad6c-137">String</span><span class="sxs-lookup"><span data-stu-id="fad6c-137">String</span></span>|<span data-ttu-id="fad6c-138">A ID do site do SharePoint para o qual copiar.</span><span class="sxs-lookup"><span data-stu-id="fad6c-138">The id of the SharePoint site to copy to.</span></span> <span data-ttu-id="fad6c-139">Use somente ao copiar para um site de equipe do Office 365.</span><span class="sxs-lookup"><span data-stu-id="fad6c-139">Use only when copying to an Office 365 team site.</span></span>|
-|<span data-ttu-id="fad6c-140">siteId</span><span class="sxs-lookup"><span data-stu-id="fad6c-140">siteId</span></span>|<span data-ttu-id="fad6c-141">String</span><span class="sxs-lookup"><span data-stu-id="fad6c-141">String</span></span>|<span data-ttu-id="fad6c-142">A ID da Web do SharePoint a ser copiada.</span><span class="sxs-lookup"><span data-stu-id="fad6c-142">The id of the SharePoint web to copy to.</span></span> <span data-ttu-id="fad6c-143">Use somente ao copiar para um site de equipe do Office 365.</span><span class="sxs-lookup"><span data-stu-id="fad6c-143">Use only when copying to an Office 365 team site.</span></span>|
-|<span data-ttu-id="fad6c-144">groupId</span><span class="sxs-lookup"><span data-stu-id="fad6c-144">groupId</span></span>|<span data-ttu-id="fad6c-145">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fad6c-145">String</span></span>|<span data-ttu-id="fad6c-146">A ID do grupo para o qual copiar.</span><span class="sxs-lookup"><span data-stu-id="fad6c-146">The id of the group to copy to.</span></span> <span data-ttu-id="fad6c-147">Use somente ao copiar para um grupo do Office 365.</span><span class="sxs-lookup"><span data-stu-id="fad6c-147">Use only when copying to an Office 365 group.</span></span>|
-|<span data-ttu-id="fad6c-148">renomeas</span><span class="sxs-lookup"><span data-stu-id="fad6c-148">renameAs</span></span>|<span data-ttu-id="fad6c-149">String</span><span class="sxs-lookup"><span data-stu-id="fad6c-149">String</span></span>|<span data-ttu-id="fad6c-150">O nome da cópia.</span><span class="sxs-lookup"><span data-stu-id="fad6c-150">The name of the copy.</span></span> <span data-ttu-id="fad6c-151">O padrão é o nome do item existente.</span><span class="sxs-lookup"><span data-stu-id="fad6c-151">Defaults to the name of the existing item.</span></span> |
+|<span data-ttu-id="a52ad-136">siteCollectionId</span><span class="sxs-lookup"><span data-stu-id="a52ad-136">siteCollectionId</span></span>|<span data-ttu-id="a52ad-137">String</span><span class="sxs-lookup"><span data-stu-id="a52ad-137">String</span></span>|<span data-ttu-id="a52ad-138">A ID do site do SharePoint para o qual copiar.</span><span class="sxs-lookup"><span data-stu-id="a52ad-138">The id of the SharePoint site to copy to.</span></span> <span data-ttu-id="a52ad-139">Use somente ao copiar para um site de equipe do Office 365.</span><span class="sxs-lookup"><span data-stu-id="a52ad-139">Use only when copying to an Office 365 team site.</span></span>|
+|<span data-ttu-id="a52ad-140">siteId</span><span class="sxs-lookup"><span data-stu-id="a52ad-140">siteId</span></span>|<span data-ttu-id="a52ad-141">String</span><span class="sxs-lookup"><span data-stu-id="a52ad-141">String</span></span>|<span data-ttu-id="a52ad-142">A ID da Web do SharePoint a ser copiada.</span><span class="sxs-lookup"><span data-stu-id="a52ad-142">The id of the SharePoint web to copy to.</span></span> <span data-ttu-id="a52ad-143">Use somente ao copiar para um site de equipe do Office 365.</span><span class="sxs-lookup"><span data-stu-id="a52ad-143">Use only when copying to an Office 365 team site.</span></span>|
+|<span data-ttu-id="a52ad-144">groupId</span><span class="sxs-lookup"><span data-stu-id="a52ad-144">groupId</span></span>|<span data-ttu-id="a52ad-145">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a52ad-145">String</span></span>|<span data-ttu-id="a52ad-146">A ID do grupo para o qual copiar.</span><span class="sxs-lookup"><span data-stu-id="a52ad-146">The id of the group to copy to.</span></span> <span data-ttu-id="a52ad-147">Use somente ao copiar para um grupo do Office 365.</span><span class="sxs-lookup"><span data-stu-id="a52ad-147">Use only when copying to an Office 365 group.</span></span>|
+|<span data-ttu-id="a52ad-148">renomeas</span><span class="sxs-lookup"><span data-stu-id="a52ad-148">renameAs</span></span>|<span data-ttu-id="a52ad-149">String</span><span class="sxs-lookup"><span data-stu-id="a52ad-149">String</span></span>|<span data-ttu-id="a52ad-150">O nome da cópia.</span><span class="sxs-lookup"><span data-stu-id="a52ad-150">The name of the copy.</span></span> <span data-ttu-id="a52ad-151">O padrão é o nome do item existente.</span><span class="sxs-lookup"><span data-stu-id="a52ad-151">Defaults to the name of the existing item.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="fad6c-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="fad6c-152">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a52ad-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="a52ad-152">Response</span></span>
 
-<span data-ttu-id="fad6c-153">Se tiver êxito, este método retornará `202 Accepted` um código de resposta `Operation-Location` e um cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="fad6c-153">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header.</span></span> <span data-ttu-id="fad6c-154">Sondar o ponto de extremidade da operação-local para [obter o status da operação de cópia](onenoteoperation-get.md).</span><span class="sxs-lookup"><span data-stu-id="fad6c-154">Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
+<span data-ttu-id="a52ad-153">Se tiver êxito, este método retornará `202 Accepted` um código de resposta `Operation-Location` e um cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="a52ad-153">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header.</span></span> <span data-ttu-id="a52ad-154">Sondar o ponto de extremidade da operação-local para [obter o status da operação de cópia](onenoteoperation-get.md).</span><span class="sxs-lookup"><span data-stu-id="a52ad-154">Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="fad6c-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fad6c-155">Example</span></span>
-<span data-ttu-id="fad6c-156">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="fad6c-156">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="fad6c-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fad6c-157">Request</span></span>
-<span data-ttu-id="fad6c-158">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fad6c-158">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a52ad-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a52ad-155">Example</span></span>
+<span data-ttu-id="a52ad-156">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="a52ad-156">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a52ad-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a52ad-157">Request</span></span>
+<span data-ttu-id="a52ad-158">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a52ad-158">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fad6c-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="fad6c-159">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a52ad-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="a52ad-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "notebook_copynotebook"
@@ -77,27 +77,23 @@ Content-length: 108
   "renameAs": "renameAs-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fad6c-160">C#</span><span class="sxs-lookup"><span data-stu-id="fad6c-160">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a52ad-160">C#</span><span class="sxs-lookup"><span data-stu-id="a52ad-160">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/notebook-copynotebook-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fad6c-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fad6c-161">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a52ad-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a52ad-161">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/notebook-copynotebook-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fad6c-162">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="fad6c-162">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a52ad-162">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a52ad-162">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/notebook-copynotebook-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="fad6c-163">Java</span><span class="sxs-lookup"><span data-stu-id="fad6c-163">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/notebook-copynotebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="fad6c-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="fad6c-164">Response</span></span>
-<span data-ttu-id="fad6c-165">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fad6c-165">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="a52ad-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="a52ad-163">Response</span></span>
+<span data-ttu-id="a52ad-164">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a52ad-164">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

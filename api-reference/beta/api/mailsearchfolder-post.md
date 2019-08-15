@@ -5,30 +5,30 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d312e09794ef5fc1afe0d6b69620492784683c38
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e34d79450468c19bc5e4f008547430e56dc6de96
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342856"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36415180"
 ---
-# <a name="create-mailsearchfolder"></a><span data-ttu-id="57d23-103">Criar mailSearchFolder</span><span class="sxs-lookup"><span data-stu-id="57d23-103">Create mailSearchFolder</span></span>
+# <a name="create-mailsearchfolder"></a><span data-ttu-id="557d7-103">Criar mailSearchFolder</span><span class="sxs-lookup"><span data-stu-id="557d7-103">Create mailSearchFolder</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="57d23-104">Criar um novo [mailSearchFolder](../resources/mailsearchfolder.md) na caixa de correio do usuário especificado.</span><span class="sxs-lookup"><span data-stu-id="57d23-104">Create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.</span></span>
+<span data-ttu-id="557d7-104">Criar um novo [mailSearchFolder](../resources/mailsearchfolder.md) na caixa de correio do usuário especificado.</span><span class="sxs-lookup"><span data-stu-id="557d7-104">Create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="57d23-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="57d23-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="557d7-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="557d7-105">Permissions</span></span>
 
-<span data-ttu-id="57d23-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="57d23-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="557d7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="557d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="57d23-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="57d23-108">Permission type</span></span> | <span data-ttu-id="57d23-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="57d23-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="557d7-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="557d7-108">Permission type</span></span> | <span data-ttu-id="557d7-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="557d7-109">Permissions (from least to most privileged)</span></span> |
 |:----------------|:--------------------------------------------|
-|<span data-ttu-id="57d23-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="57d23-110">Delegated (work or school account)</span></span> | <span data-ttu-id="57d23-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="57d23-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="57d23-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="57d23-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57d23-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="57d23-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="57d23-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="57d23-114">Application</span></span> | <span data-ttu-id="57d23-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="57d23-115">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="557d7-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="557d7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="557d7-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="557d7-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="557d7-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="557d7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="557d7-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="557d7-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="557d7-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="557d7-114">Application</span></span> | <span data-ttu-id="557d7-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="557d7-115">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="57d23-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="57d23-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="557d7-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="557d7-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,38 +37,38 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-<span data-ttu-id="57d23-117">Especifique a pasta pai na URL de consulta como uma ID de pasta ou um nome de pasta conhecido.</span><span class="sxs-lookup"><span data-stu-id="57d23-117">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="57d23-118">Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="57d23-118">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
+<span data-ttu-id="557d7-117">Especifique a pasta pai na URL de consulta como uma ID de pasta ou um nome de pasta conhecido.</span><span class="sxs-lookup"><span data-stu-id="557d7-117">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="557d7-118">Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="557d7-118">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="57d23-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="57d23-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="557d7-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="557d7-119">Request headers</span></span>
 
-| <span data-ttu-id="57d23-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="57d23-120">Header</span></span> | <span data-ttu-id="57d23-121">Valor</span><span class="sxs-lookup"><span data-stu-id="57d23-121">Value</span></span> |
+| <span data-ttu-id="557d7-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="557d7-120">Header</span></span> | <span data-ttu-id="557d7-121">Valor</span><span class="sxs-lookup"><span data-stu-id="557d7-121">Value</span></span> |
 |:-------|:------|
-| <span data-ttu-id="57d23-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="57d23-122">Authorization</span></span> | <span data-ttu-id="57d23-123">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="57d23-123"></span></span> <span data-ttu-id="57d23-124">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="57d23-124">Required.</span></span> |
-| <span data-ttu-id="57d23-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="57d23-125">Content-Type</span></span> | <span data-ttu-id="57d23-126">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="57d23-126"></span></span> <span data-ttu-id="57d23-127">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="57d23-127">Required.</span></span> |
+| <span data-ttu-id="557d7-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="557d7-122">Authorization</span></span> | <span data-ttu-id="557d7-123">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="557d7-123"></span></span> <span data-ttu-id="557d7-124">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="557d7-124">Required.</span></span> |
+| <span data-ttu-id="557d7-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="557d7-125">Content-Type</span></span> | <span data-ttu-id="557d7-126">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="557d7-126"></span></span> <span data-ttu-id="557d7-127">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="557d7-127">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="57d23-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="57d23-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="557d7-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="557d7-128">Request body</span></span>
 
-<span data-ttu-id="57d23-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="57d23-129">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="557d7-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="557d7-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="57d23-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="57d23-130">Parameter</span></span> | <span data-ttu-id="57d23-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="57d23-131">Type</span></span> | <span data-ttu-id="57d23-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="57d23-132">Description</span></span> |
+| <span data-ttu-id="557d7-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="557d7-130">Parameter</span></span> | <span data-ttu-id="557d7-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="557d7-131">Type</span></span> | <span data-ttu-id="557d7-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="557d7-132">Description</span></span> |
 |:----------|:-----|:------------|
-| <span data-ttu-id="57d23-133">@odata.type</span><span class="sxs-lookup"><span data-stu-id="57d23-133">@odata.type</span></span> | <span data-ttu-id="57d23-134">String</span><span class="sxs-lookup"><span data-stu-id="57d23-134">String</span></span> | <span data-ttu-id="57d23-135">O tipo de pasta a ser criada.</span><span class="sxs-lookup"><span data-stu-id="57d23-135">The type of folder to be created.</span></span> <span data-ttu-id="57d23-136">Defina como "Microsoft. Graph. mailSearchFolder".</span><span class="sxs-lookup"><span data-stu-id="57d23-136">Set to "microsoft.graph.mailSearchFolder".</span></span> |
-| <span data-ttu-id="57d23-137">displayName</span><span class="sxs-lookup"><span data-stu-id="57d23-137">displayName</span></span> | <span data-ttu-id="57d23-138">String</span><span class="sxs-lookup"><span data-stu-id="57d23-138">String</span></span> | <span data-ttu-id="57d23-139">O nome de exibição da nova pasta.</span><span class="sxs-lookup"><span data-stu-id="57d23-139">The display name of the new folder.</span></span>|
-| <span data-ttu-id="57d23-140">includeNestedFolders</span><span class="sxs-lookup"><span data-stu-id="57d23-140">includeNestedFolders</span></span> | <span data-ttu-id="57d23-141">Booliano</span><span class="sxs-lookup"><span data-stu-id="57d23-141">Boolean</span></span> | <span data-ttu-id="57d23-142">Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa.</span><span class="sxs-lookup"><span data-stu-id="57d23-142">Indicates how the mailbox folder hierarchy should be traversed in the search.</span></span> <span data-ttu-id="57d23-143">`true`significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**.</span><span class="sxs-lookup"><span data-stu-id="57d23-143">`true` means that a deep search should be done to include child folders in the hierarchy of each folder explicitly specified in **sourceFolderIds**.</span></span> <span data-ttu-id="57d23-144">`false`significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**.</span><span class="sxs-lookup"><span data-stu-id="57d23-144">`false` means a shallow search of only each of the folders explicitly specified in **sourceFolderIds**.</span></span> |
-| <span data-ttu-id="57d23-145">sourceFolderIds</span><span class="sxs-lookup"><span data-stu-id="57d23-145">sourceFolderIds</span></span> | <span data-ttu-id="57d23-146">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="57d23-146">String collection</span></span> | <span data-ttu-id="57d23-147">As pastas de caixa de correio que devem ser minadas.</span><span class="sxs-lookup"><span data-stu-id="57d23-147">The mailbox folders that should be mined.</span></span> |
-| <span data-ttu-id="57d23-148">filterQuery</span><span class="sxs-lookup"><span data-stu-id="57d23-148">filterQuery</span></span> | <span data-ttu-id="57d23-149">String</span><span class="sxs-lookup"><span data-stu-id="57d23-149">String</span></span> | <span data-ttu-id="57d23-150">A consulta OData para filtrar as mensagens.</span><span class="sxs-lookup"><span data-stu-id="57d23-150">The OData query to filter the messages.</span></span> |
+| <span data-ttu-id="557d7-133">@odata.type</span><span class="sxs-lookup"><span data-stu-id="557d7-133">@odata.type</span></span> | <span data-ttu-id="557d7-134">String</span><span class="sxs-lookup"><span data-stu-id="557d7-134">String</span></span> | <span data-ttu-id="557d7-135">O tipo de pasta a ser criada.</span><span class="sxs-lookup"><span data-stu-id="557d7-135">The type of folder to be created.</span></span> <span data-ttu-id="557d7-136">Defina como "Microsoft. Graph. mailSearchFolder".</span><span class="sxs-lookup"><span data-stu-id="557d7-136">Set to "microsoft.graph.mailSearchFolder".</span></span> |
+| <span data-ttu-id="557d7-137">displayName</span><span class="sxs-lookup"><span data-stu-id="557d7-137">displayName</span></span> | <span data-ttu-id="557d7-138">String</span><span class="sxs-lookup"><span data-stu-id="557d7-138">String</span></span> | <span data-ttu-id="557d7-139">O nome de exibição da nova pasta.</span><span class="sxs-lookup"><span data-stu-id="557d7-139">The display name of the new folder.</span></span>|
+| <span data-ttu-id="557d7-140">includeNestedFolders</span><span class="sxs-lookup"><span data-stu-id="557d7-140">includeNestedFolders</span></span> | <span data-ttu-id="557d7-141">Booliano</span><span class="sxs-lookup"><span data-stu-id="557d7-141">Boolean</span></span> | <span data-ttu-id="557d7-142">Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa.</span><span class="sxs-lookup"><span data-stu-id="557d7-142">Indicates how the mailbox folder hierarchy should be traversed in the search.</span></span> <span data-ttu-id="557d7-143">`true`significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**.</span><span class="sxs-lookup"><span data-stu-id="557d7-143">`true` means that a deep search should be done to include child folders in the hierarchy of each folder explicitly specified in **sourceFolderIds**.</span></span> <span data-ttu-id="557d7-144">`false`significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**.</span><span class="sxs-lookup"><span data-stu-id="557d7-144">`false` means a shallow search of only each of the folders explicitly specified in **sourceFolderIds**.</span></span> |
+| <span data-ttu-id="557d7-145">sourceFolderIds</span><span class="sxs-lookup"><span data-stu-id="557d7-145">sourceFolderIds</span></span> | <span data-ttu-id="557d7-146">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="557d7-146">String collection</span></span> | <span data-ttu-id="557d7-147">As pastas de caixa de correio que devem ser minadas.</span><span class="sxs-lookup"><span data-stu-id="557d7-147">The mailbox folders that should be mined.</span></span> |
+| <span data-ttu-id="557d7-148">filterQuery</span><span class="sxs-lookup"><span data-stu-id="557d7-148">filterQuery</span></span> | <span data-ttu-id="557d7-149">String</span><span class="sxs-lookup"><span data-stu-id="557d7-149">String</span></span> | <span data-ttu-id="557d7-150">A consulta OData para filtrar as mensagens.</span><span class="sxs-lookup"><span data-stu-id="557d7-150">The OData query to filter the messages.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="57d23-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="57d23-151">Response</span></span>
+## <a name="response"></a><span data-ttu-id="557d7-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="557d7-151">Response</span></span>
 
-<span data-ttu-id="57d23-152">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [mailSearchFolder](../resources/mailsearchfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="57d23-152">If successful, this method returns a `201 Created` response code and a [mailSearchFolder](../resources/mailsearchfolder.md) object in the response body.</span></span>
+<span data-ttu-id="557d7-152">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [mailSearchFolder](../resources/mailsearchfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="557d7-152">If successful, this method returns a `201 Created` response code and a [mailSearchFolder](../resources/mailsearchfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="57d23-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="57d23-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="557d7-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="557d7-153">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="57d23-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="57d23-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="557d7-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="557d7-154">Request</span></span>
 
-<span data-ttu-id="57d23-155">Veja a seguir um exemplo de solicitação-ele cria uma pasta de pesquisa de mensagens que contêm a cadeia de caracteres "semanalmente Resumo" no assunto.</span><span class="sxs-lookup"><span data-stu-id="57d23-155">The following is an example of the request - it creates a search folder of messages that contain the string "weekly digest" in the subject.</span></span> <span data-ttu-id="57d23-156">A pasta de pesquisa está na mesma pasta em que a consulta de filtro especificado se aplica.</span><span class="sxs-lookup"><span data-stu-id="57d23-156">The search folder is under the same folder on which the specified filter query applies.</span></span>
+<span data-ttu-id="557d7-155">Veja a seguir um exemplo de solicitação-ele cria uma pasta de pesquisa de mensagens que contêm a cadeia de caracteres "semanalmente Resumo" no assunto.</span><span class="sxs-lookup"><span data-stu-id="557d7-155">The following is an example of the request - it creates a search folder of messages that contain the string "weekly digest" in the subject.</span></span> <span data-ttu-id="557d7-156">A pasta de pesquisa está na mesma pasta em que a consulta de filtro especificado se aplica.</span><span class="sxs-lookup"><span data-stu-id="557d7-156">The search folder is under the same folder on which the specified filter query applies.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="57d23-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="57d23-157">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="557d7-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="557d7-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADYAAAIBDAAAAA=="],
@@ -88,30 +88,26 @@ Content-length: 159
   "filterQuery": "contains(subject, 'weekly digest')"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="57d23-158">C#</span><span class="sxs-lookup"><span data-stu-id="57d23-158">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="557d7-158">C#</span><span class="sxs-lookup"><span data-stu-id="557d7-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="57d23-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="57d23-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="557d7-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="557d7-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="57d23-160">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="57d23-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="557d7-160">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="557d7-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailsearchfolder-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="57d23-161">Java</span><span class="sxs-lookup"><span data-stu-id="57d23-161">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-mailsearchfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="57d23-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="57d23-162">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="557d7-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="557d7-161">Response</span></span>
 
-<span data-ttu-id="57d23-163">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="57d23-163">The following is an example of the response.</span></span>
+<span data-ttu-id="557d7-162">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="557d7-162">The following is an example of the response.</span></span>
 
-><span data-ttu-id="57d23-164">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="57d23-164">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="57d23-165">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="57d23-165">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="557d7-163">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="557d7-163">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="557d7-164">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="557d7-164">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

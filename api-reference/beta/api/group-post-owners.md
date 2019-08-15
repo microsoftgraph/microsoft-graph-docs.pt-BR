@@ -5,51 +5,51 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef5cfd6f48fd29426a1b5912ce9c7d430a89c6b5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c1870b3e772c82e4e62abc83dee16530988e35cb
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323238"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420074"
 ---
-# <a name="add-group-owner"></a><span data-ttu-id="6fccf-104">Adicionar proprietário do grupo</span><span class="sxs-lookup"><span data-stu-id="6fccf-104">Add group owner</span></span>
+# <a name="add-group-owner"></a><span data-ttu-id="80212-104">Adicionar proprietário do grupo</span><span class="sxs-lookup"><span data-stu-id="80212-104">Add group owner</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6fccf-p102">Adiciona um usuário aos proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo.</span><span class="sxs-lookup"><span data-stu-id="6fccf-p102">Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.</span></span>
+<span data-ttu-id="80212-p102">Adiciona um usuário aos proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo.</span><span class="sxs-lookup"><span data-stu-id="80212-p102">Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.</span></span>
 
-><span data-ttu-id="6fccf-107">**Importante:** se você atualizar os proprietários do grupo, e você criou uma equipe para o grupo, poderá levar até duas horas para que os proprietários sejam sincronizados com o Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="6fccf-107">**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams.</span></span> <span data-ttu-id="6fccf-108">Além disso, se você quiser que o proprietário seja capaz de fazer alterações em uma equipe - por exemplo, criando um plano Planner - o proprietário também precisará ser adicionado como um membro do grupo/equipe.</span><span class="sxs-lookup"><span data-stu-id="6fccf-108">Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member.</span></span> 
+><span data-ttu-id="80212-107">**Importante:** se você atualizar os proprietários do grupo, e você criou uma equipe para o grupo, poderá levar até duas horas para que os proprietários sejam sincronizados com o Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="80212-107">**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams.</span></span> <span data-ttu-id="80212-108">Além disso, se você quiser que o proprietário seja capaz de fazer alterações em uma equipe - por exemplo, criando um plano Planner - o proprietário também precisará ser adicionado como um membro do grupo/equipe.</span><span class="sxs-lookup"><span data-stu-id="80212-108">Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="6fccf-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="6fccf-109">Permissions</span></span>
-<span data-ttu-id="6fccf-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6fccf-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="80212-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="80212-109">Permissions</span></span>
+<span data-ttu-id="80212-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80212-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6fccf-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6fccf-112">Permission type</span></span>      | <span data-ttu-id="6fccf-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6fccf-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="80212-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="80212-112">Permission type</span></span>      | <span data-ttu-id="80212-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="80212-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6fccf-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6fccf-114">Delegated (work or school account)</span></span> | <span data-ttu-id="6fccf-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6fccf-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="6fccf-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6fccf-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6fccf-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6fccf-117">Not supported.</span></span>    |
-|<span data-ttu-id="6fccf-118">Application</span><span class="sxs-lookup"><span data-stu-id="6fccf-118">Application</span></span> | <span data-ttu-id="6fccf-119">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6fccf-119">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="80212-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="80212-114">Delegated (work or school account)</span></span> | <span data-ttu-id="80212-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="80212-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="80212-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="80212-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80212-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="80212-117">Not supported.</span></span>    |
+|<span data-ttu-id="80212-118">Application</span><span class="sxs-lookup"><span data-stu-id="80212-118">Application</span></span> | <span data-ttu-id="80212-119">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80212-119">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6fccf-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6fccf-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="80212-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="80212-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/owners/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="6fccf-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6fccf-121">Request headers</span></span>
-| <span data-ttu-id="6fccf-122">Nome</span><span class="sxs-lookup"><span data-stu-id="6fccf-122">Name</span></span>       | <span data-ttu-id="6fccf-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="6fccf-123">Type</span></span> | <span data-ttu-id="6fccf-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="6fccf-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="80212-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="80212-121">Request headers</span></span>
+| <span data-ttu-id="80212-122">Nome</span><span class="sxs-lookup"><span data-stu-id="80212-122">Name</span></span>       | <span data-ttu-id="80212-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="80212-123">Type</span></span> | <span data-ttu-id="80212-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="80212-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="6fccf-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="6fccf-125">Authorization</span></span>  | <span data-ttu-id="6fccf-126">string</span><span class="sxs-lookup"><span data-stu-id="6fccf-126">string</span></span>  | <span data-ttu-id="6fccf-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6fccf-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="80212-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="80212-125">Authorization</span></span>  | <span data-ttu-id="80212-126">string</span><span class="sxs-lookup"><span data-stu-id="80212-126">string</span></span>  | <span data-ttu-id="80212-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="80212-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6fccf-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6fccf-129">Request body</span></span>
-<span data-ttu-id="6fccf-130">No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.</span><span class="sxs-lookup"><span data-stu-id="6fccf-130">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="80212-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="80212-129">Request body</span></span>
+<span data-ttu-id="80212-130">No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.</span><span class="sxs-lookup"><span data-stu-id="80212-130">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6fccf-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="6fccf-131">Response</span></span>
-<span data-ttu-id="6fccf-p106">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6fccf-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="80212-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="80212-131">Response</span></span>
+<span data-ttu-id="80212-p106">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80212-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6fccf-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6fccf-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="6fccf-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6fccf-135">Request</span></span>
-<span data-ttu-id="6fccf-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6fccf-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="80212-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="80212-134">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="80212-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="80212-135">Request</span></span>
+<span data-ttu-id="80212-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="80212-136">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6fccf-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="6fccf-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="80212-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="80212-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_owner_from_group"
@@ -63,29 +63,25 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6fccf-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6fccf-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="80212-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80212-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-owner-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6fccf-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="6fccf-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="80212-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="80212-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-owner-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6fccf-140">C#</span><span class="sxs-lookup"><span data-stu-id="6fccf-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="80212-140">C#</span><span class="sxs-lookup"><span data-stu-id="80212-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-owner-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="6fccf-141">Java</span><span class="sxs-lookup"><span data-stu-id="6fccf-141">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-owner-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="6fccf-142">No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.</span><span class="sxs-lookup"><span data-stu-id="6fccf-142">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
+<span data-ttu-id="80212-141">No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.</span><span class="sxs-lookup"><span data-stu-id="80212-141">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="6fccf-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="6fccf-143">Response</span></span>
-<span data-ttu-id="6fccf-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6fccf-144">The following is an example of the response.</span></span>
-><span data-ttu-id="6fccf-145">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="6fccf-145">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="6fccf-146">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6fccf-146">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="80212-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="80212-142">Response</span></span>
+<span data-ttu-id="80212-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="80212-143">The following is an example of the response.</span></span>
+><span data-ttu-id="80212-144">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="80212-144">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="80212-145">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="80212-145">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

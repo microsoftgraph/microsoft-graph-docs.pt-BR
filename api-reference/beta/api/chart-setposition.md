@@ -5,57 +5,57 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 01160c60c993b9c55a36ee6b8907b212f2914f27
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 54e35816906b969d7ce1d0aefb8abd11c5bc8caf
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317330"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418597"
 ---
-# <a name="chart-setposition"></a><span data-ttu-id="771cd-103">Chart: setPosition</span><span class="sxs-lookup"><span data-stu-id="771cd-103">Chart: setPosition</span></span>
+# <a name="chart-setposition"></a><span data-ttu-id="64246-103">Chart: setPosition</span><span class="sxs-lookup"><span data-stu-id="64246-103">Chart: setPosition</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="771cd-104">Posiciona o gráfico em relação às células na planilha.</span><span class="sxs-lookup"><span data-stu-id="771cd-104">Positions the chart relative to cells on the worksheet.</span></span>
-## <a name="permissions"></a><span data-ttu-id="771cd-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="771cd-105">Permissions</span></span>
-<span data-ttu-id="771cd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="771cd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="64246-104">Posiciona o gráfico em relação às células na planilha.</span><span class="sxs-lookup"><span data-stu-id="64246-104">Positions the chart relative to cells on the worksheet.</span></span>
+## <a name="permissions"></a><span data-ttu-id="64246-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="64246-105">Permissions</span></span>
+<span data-ttu-id="64246-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="64246-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="771cd-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="771cd-108">Permission type</span></span>      | <span data-ttu-id="771cd-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="771cd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="64246-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="64246-108">Permission type</span></span>      | <span data-ttu-id="64246-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="64246-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="771cd-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="771cd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="771cd-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="771cd-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="771cd-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="771cd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="771cd-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="771cd-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="771cd-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="771cd-114">Application</span></span> | <span data-ttu-id="771cd-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="771cd-115">Not supported.</span></span> |
+|<span data-ttu-id="64246-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="64246-110">Delegated (work or school account)</span></span> | <span data-ttu-id="64246-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64246-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="64246-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="64246-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64246-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64246-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="64246-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="64246-114">Application</span></span> | <span data-ttu-id="64246-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="64246-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="771cd-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="771cd-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="64246-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="64246-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/{name}/setPosition
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="771cd-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="771cd-117">Request headers</span></span>
-| <span data-ttu-id="771cd-118">Nome</span><span class="sxs-lookup"><span data-stu-id="771cd-118">Name</span></span>       | <span data-ttu-id="771cd-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="771cd-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="64246-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="64246-117">Request headers</span></span>
+| <span data-ttu-id="64246-118">Nome</span><span class="sxs-lookup"><span data-stu-id="64246-118">Name</span></span>       | <span data-ttu-id="64246-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="64246-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="771cd-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="771cd-120">Authorization</span></span>  | <span data-ttu-id="771cd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="771cd-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="771cd-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="771cd-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="771cd-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="771cd-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="64246-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="64246-120">Authorization</span></span>  | <span data-ttu-id="64246-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="64246-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="64246-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="64246-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="64246-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="64246-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="771cd-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="771cd-126">Request body</span></span>
-<span data-ttu-id="771cd-127">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="771cd-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="64246-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="64246-126">Request body</span></span>
+<span data-ttu-id="64246-127">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="64246-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="771cd-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="771cd-128">Parameter</span></span>    | <span data-ttu-id="771cd-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="771cd-129">Type</span></span>   |<span data-ttu-id="771cd-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="771cd-130">Description</span></span>|
+| <span data-ttu-id="64246-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="64246-128">Parameter</span></span>    | <span data-ttu-id="64246-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="64246-129">Type</span></span>   |<span data-ttu-id="64246-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="64246-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="771cd-131">startCell</span><span class="sxs-lookup"><span data-stu-id="771cd-131">startCell</span></span>|<span data-ttu-id="771cd-132">string</span><span class="sxs-lookup"><span data-stu-id="771cd-132">string</span></span>|<span data-ttu-id="771cd-p104">A célula inicial. Esse é o local para o qual o gráfico será movido. A célula inicial é a célula superior esquerda ou direita, dependendo das configurações de exibição do usuário, da esquerda para a direita.</span><span class="sxs-lookup"><span data-stu-id="771cd-p104">The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.</span></span>|
-|<span data-ttu-id="771cd-136">endCell</span><span class="sxs-lookup"><span data-stu-id="771cd-136">endCell</span></span>|<span data-ttu-id="771cd-137">string</span><span class="sxs-lookup"><span data-stu-id="771cd-137">string</span></span>|<span data-ttu-id="771cd-p105">Opcional. A célula final. Quando é especificada, a altura e a largura do gráfico são definidas para cobrirem totalmente essa célula ou intervalo.</span><span class="sxs-lookup"><span data-stu-id="771cd-p105">Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.</span></span>|
+|<span data-ttu-id="64246-131">startCell</span><span class="sxs-lookup"><span data-stu-id="64246-131">startCell</span></span>|<span data-ttu-id="64246-132">string</span><span class="sxs-lookup"><span data-stu-id="64246-132">string</span></span>|<span data-ttu-id="64246-p104">A célula inicial. Esse é o local para o qual o gráfico será movido. A célula inicial é a célula superior esquerda ou direita, dependendo das configurações de exibição do usuário, da esquerda para a direita.</span><span class="sxs-lookup"><span data-stu-id="64246-p104">The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.</span></span>|
+|<span data-ttu-id="64246-136">endCell</span><span class="sxs-lookup"><span data-stu-id="64246-136">endCell</span></span>|<span data-ttu-id="64246-137">string</span><span class="sxs-lookup"><span data-stu-id="64246-137">string</span></span>|<span data-ttu-id="64246-p105">Opcional. A célula final. Quando é especificada, a altura e a largura do gráfico são definidas para cobrirem totalmente essa célula ou intervalo.</span><span class="sxs-lookup"><span data-stu-id="64246-p105">Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="771cd-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="771cd-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="64246-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="64246-141">Response</span></span>
 
-<span data-ttu-id="771cd-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="771cd-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="64246-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="64246-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="771cd-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="771cd-144">Example</span></span>
-<span data-ttu-id="771cd-145">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="771cd-145">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="771cd-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="771cd-146">Request</span></span>
-<span data-ttu-id="771cd-147">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="771cd-147">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="64246-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="64246-144">Example</span></span>
+<span data-ttu-id="64246-145">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="64246-145">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="64246-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="64246-146">Request</span></span>
+<span data-ttu-id="64246-147">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="64246-147">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="771cd-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="771cd-148">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="64246-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="64246-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chart_setposition"
@@ -70,27 +70,23 @@ Content-length: 66
   "endCell": "endCell-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="771cd-149">C#</span><span class="sxs-lookup"><span data-stu-id="771cd-149">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="64246-149">C#</span><span class="sxs-lookup"><span data-stu-id="64246-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chart-setposition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="771cd-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="771cd-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="64246-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="64246-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chart-setposition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="771cd-151">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="771cd-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="64246-151">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="64246-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chart-setposition-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="771cd-152">Java</span><span class="sxs-lookup"><span data-stu-id="771cd-152">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/chart-setposition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="771cd-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="771cd-153">Response</span></span>
-<span data-ttu-id="771cd-154">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="771cd-154">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="64246-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="64246-152">Response</span></span>
+<span data-ttu-id="64246-153">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="64246-153">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
