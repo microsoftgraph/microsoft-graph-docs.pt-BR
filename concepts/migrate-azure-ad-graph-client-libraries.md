@@ -4,12 +4,12 @@ description: Descreve como migrar aplicativos de API do Azure Active Directory (
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fbc7c7550cda7654f603feeafb17ff3f0eb281e1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: bc48be3712b0d3b03e9799559aac4d6ae812b5d0
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630255"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422174"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Migrar o .NET Client library use para o Microsoft Graph
 
@@ -52,7 +52,7 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
 
     ``` csharp
     ActiveDirectoryClient client = new ActiveDirectoryClient(serviceRoot,
-    async () =\> await AcquireTokenAsyncForUser());
+    async () => await AcquireTokenAsyncForUser());
     ```
 
     Para:
@@ -87,7 +87,7 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
 
     ``` csharp
     var groups = await
-    client.Groups.Where(g =\> g.DisplayName.StartsWith("a")).ExecuteAsync();
+    client.Groups.Where(g => g.DisplayName.StartsWith("a")).ExecuteAsync();
     ```
 
     Para:

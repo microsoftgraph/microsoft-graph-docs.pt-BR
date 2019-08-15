@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 15fe4000cab7cc4925ddb9eac798e9fc768cf185
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2ba85e34a3ce89c072f6a2d955c10505e30eb318
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361263"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412800"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 
@@ -35,7 +35,7 @@ O solicitante precisa ter uma das seguintes funções: administrador de _funçã
 GET /privilegedRoles/{id}/assignments
 ```
 
-Observe que ``<id>`` é a ID da função de destino.
+Observe que ``{id}`` é a ID da função de destino.
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-assignments-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-assignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

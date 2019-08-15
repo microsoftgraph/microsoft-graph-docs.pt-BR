@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: af0a2b842da00c3a7e64067999dc1b188be8811c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c1adf51f5dec48a9eb198904c2e38ca07f08537c
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309426"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413307"
 ---
 # <a name="get-plannerplan"></a>Get plannerPlan
 
@@ -55,7 +55,7 @@ Este é um exemplo da solicitação.
   "name": "get_plannerplan"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/plans/<id>
+GET https://graph.microsoft.com/beta/planner/plans/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerplan-csharp-snippets.md)]
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/planner/plans/<id>
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-plannerplan-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-plannerplan-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

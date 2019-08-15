@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 49b954b59f9a4cb4f2b371b1511cc05f63cd0ff8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 72a91a1511f1d4be70de4cd95494bee74b319f54
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361311"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412982"
 ---
 # <a name="list-recentplans"></a>Listar recentPlans
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/recentPlans
-GET /users/<id>/planner/recentPlans
+GET /users/{id}/planner/recentPlans
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/beta/me/planner/recentPlans
 
 # <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-recentplans-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-recentplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
