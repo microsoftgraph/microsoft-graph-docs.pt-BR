@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: f71f7a0f880e3897daf7a9ca51502a7d465b3aa2
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 2fe8b2d9b7a89aec84cdc067fc9e69a647f64ccc
+ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173059"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36437675"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1250,8 +1250,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | Leia todas as Políticas trustFramework | Permite que o aplicativo leia todas as Políticas TrustFramework em nome de usuário conectado. | Sim | Não |
-| _Policy.ReadWrite.TrustFramework_ | Leitura e gravação de todas as Políticas trustFramework | Permite que o aplicativo leia e grave todas as Políticas TrustFramework em nome do usuário conectado. | Sim | Não |
+| _Policy.Read.All_ | Ler as políticas da sua organização | Permite ao aplicativo ler as políticas da sua organização em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas TrustFramework (Estrutura de Confiança) da sua organização | Permite que o aplicativo leia e grave todas as políticas de TrustFramework da sua organização em nome do usuário conectado. | Sim | Não |
 
 ### <a name="remarks"></a>Comentários
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
@@ -1261,7 +1261,7 @@ A conta corporativa ou de estudante deve ser um administrador global do locatár
 #### <a name="delegated"></a>Delegado
 Os seguintes usos são válidos para permissões delegadas:
 
-* _Policy.Read.All_: Ler todas as políticas trustFramework (`GET /beta/trustFramework/policies`)
+* _Policy.Read.All_: Ler as políticas da sua organização (`GET /beta/trustFramework/policies`)
 * _Policy.ReadWrite.TrustFramework_: Leitura e gravação de todas as políticas trustFramework (`POST /beta/trustFramework/policies`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
@@ -1390,8 +1390,8 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | Lê todos os recursos de políticas de distribuição | Permite que o aplicativo leia todas as políticas de distribuição de recursos em nome do usuário conectado. | Sim | Não |
-| _Policy.ReadWrite.FeatureRollout_ | Lê e grava todas as políticas de distribuição de recursos | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos em nome do usuário conectado. | Sim | Não |
+| _Policy.Read.All_ | Ler as políticas da sua organização | Permite ao aplicativo ler as políticas da sua organização em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.FeatureRollout_ | Ler e gravar as políticas de implantação de novos recursos da sua organização | Permite que o aplicativo leia e grave todas as políticas de implantação de novos recursos em nome do usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 Nenhum.
@@ -1404,8 +1404,8 @@ A conta corporativa ou de estudante deve ser um administrador global do locatár
 #### <a name="delegated"></a>Delegado
 Os seguintes usos são válidos para permissões delegadas:
 
-* _Policy.Read.All_: Ler todas as políticas de distribuição de recursos (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.FeatureRollout_: Ler e gravar todas as políticas de distribuição de recursos (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.Read.All_: Ler as políticas da sua organização (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: Ler e gravar todas as políticas de implantação de recursos (`POST /beta/directory/featureRolloutPolicies`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 

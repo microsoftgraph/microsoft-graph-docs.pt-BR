@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 494fd923a205000352fb1c95217ca81e79b8ef8b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f279dd6be424c34a80fc2b3e942d60ed9dec0d16
+ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422216"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36437668"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -72,6 +72,16 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | Beta        | Adicionada a ação [Deixar de Seguir](/graph/api/driveitem-unfollow?view=graph-rest-beta) no [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
 
+### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | Beta | Adicionado o recurso[ roleManagement](/graph/api/resources/roleManagement?view=graph-rest-beta) que fornece acesso a definições de função e atribuições de funções que surgem de provedores de RBAC. |
+| Adição | Beta | Adicionado o recurso[unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) que representa um conjunto de permissões que lista as operações que podem ser realizadas. |
+| Adição | Beta | Adicionado o recurso[unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) que concede acesso aos recursos. |
+| Adição | Beta | Adicionadas estas operações abaixo para dar suporte ao recurso unifiedRoleDefinition: <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - Obter uma lista de objetos do recurso unifiedRoleDefinition para o provedor.</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - Criar um novo objeto no unifiedRoleDefinition.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - Recupere as propriedades e relações de um objeto de definição de função unificado.</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) -Atualize as propriedades de um objeto no unifiedRoleDefinition.</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - Excluir um objeto no unifiedRoleDefinition.</li></ul> |
+| Adição | Beta | Estas operações abaixo foram adicionadas para dar suporte ao recurso unifiedRoleDefinition: <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - Obter uma lista de objetos do recurso unifiedRoleAssignment para o provedor.</li><li>[Create unifiedRoleAssignment]() - Criar um novo objeto no recurso unifiedRoleAssignment.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - Recupere as propriedades e relações de um objeto no unifiedRoleAssignment.</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - Excluir um objeto no recurso unifiedRoleAssignment. |
+
 ### <a name="reports"></a>Relatórios
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
@@ -81,6 +91,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | v1.0  | Propriedade **ownerPrincipalName** adicionada à entidade [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
 | Adição        | v1.0  | Propriedade **ownerPrincipalName** adicionada à entidade [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 | Adição        | v1.0  | Foram adicionadas as propriedades **office365Active** e **office365Inactive** à entidade [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
+
 
 ## <a name="july-2019"></a>Julho de 2019
 
