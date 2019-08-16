@@ -1,12 +1,12 @@
 ---
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
-ms.openlocfilehash: 73d392bae722d0f719f836766e344da19c77c6b2
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 406966a0bc6d1f5729ab96d4bd358ea21e3d9e6e
+ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133724"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36437640"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -38,8 +38,6 @@ Antes de chamar as APIs do Microsoft Graph, você deve primeiro registrar seu ap
 |Microsoft Azure AD (serviço global)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
 Para saber mais sobre os tokens de acesso do Azure AD e o Microsoft Graph, consulte [Basics Authentication](./auth/auth-concepts.md). Para cenários de autenticação do Azure AD, confira [noções básicas de autenticação do Azure ad](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
-
-> **Observação:** Os [pontos de extremidade de Azure autorização e token do AD v 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) estão disponíveis apenas no serviço global. Eles ainda não têm suporte para uso com implantações de nuvem nacional.
 
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Pontos de extremidade raiz do serviço do Microsoft Graph e do Graph Explorer

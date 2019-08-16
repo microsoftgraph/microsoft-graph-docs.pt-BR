@@ -8412,6 +8412,33 @@
                           href: api/governanceroleassignmentrequest-update.md
                         - name: Cancelar
                           href: api/governanceroleassignmentrequest-cancel.md
+            - name: Gerenciamento de função
+              href: resources/rolemanagement.md
+              items:
+                - name: Definição de função
+                  href: resources/unifiedroledefinition.md
+                  items:
+                    - name: Listar definições de função
+                      href: api/rbacapplication-list-roledefinitions.md
+                    - name: Criar definição de função
+                      href: api/rbacapplication-post-roledefinitions.md
+                    - name: Obter definição de função
+                      href: api/unifiedroledefinition-get.md
+                    - name: Atualizar definição de função
+                      href: api/unifiedroledefinition-update.md
+                    - name: Excluir definição de função
+                      href: api/unifiedroledefinition-delete.md
+                - name: Atribuição de função
+                  href: resources/unifiedroleassignment.md
+                  items:
+                    - name: Atribuição de função de lista
+                      href: api/rbacapplication-list-roleassignments.md
+                    - name: Criar atribuição de função
+                      href: api/rbacapplication-post-roleassignments.md
+                    - name: Obter atribuição de função
+                      href: api/unifiedroleassignment-get.md
+                    - name: Excluir atribuição de função
+                      href: api/unifiedroleassignment-delete.md
             - name: Entidade de serviço
               href: resources/serviceprincipal.md
               items:
