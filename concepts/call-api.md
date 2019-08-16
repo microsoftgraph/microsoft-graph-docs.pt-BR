@@ -4,12 +4,12 @@ description: 'Para acessar e manipular um recurso do Microsoft Graph, você cham
 localization_priority: Normal
 author: VinodRavichandran
 ms.prod: microsoft-teams
-ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2b1af0aa2d2e31bbaa4fd70ef87a2dddef5284f
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570247"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778625"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>Chamando a API do Microsoft Graph
 
@@ -34,7 +34,7 @@ Para esta URL:
 - `{resource}` é o caminho ou o segmento de recursos, como:
   - `users`, `groups`, `devices`, `organization`
   - O alias `me`, que é resolvido como o usuário conectado
-   - Os recursos que pertencem a um usuário, como `me/events`, `me/drive` ou `me/messages`
+  - Os recursos que pertencem a um usuário, como `me/events`, `me/drive` ou `me/messages`
   - O alias `myOrganization`, que é resolvido como o locatário do usuário conectado da organização
 - `[query_parameters]` representa os parâmetros de consulta adicionais, como `$filter` e `$select`.
 
