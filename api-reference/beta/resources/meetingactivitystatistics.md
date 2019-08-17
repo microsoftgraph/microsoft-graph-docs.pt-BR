@@ -1,0 +1,85 @@
+---
+title: tipo de recurso meetingActivityStatistics
+description: Representa informações sobre as atividades de reunião para os usuários.
+localization_priority: Normal
+author: madehmer
+ms.prod: insights
+doc_type: resourcePageType
+ms.openlocfilehash: aa0e4b12ed260c0f6660544e7f48cfe1ca9cd3dc
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450701"
+---
+# <a name="meetingactivitystatistics-resource-type"></a><span data-ttu-id="10b89-103">tipo de recurso meetingActivityStatistics</span><span class="sxs-lookup"><span data-stu-id="10b89-103">meetingActivityStatistics resource type</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="10b89-104">Representa dados sobre o tempo gasto pelo usuário em reuniões no Microsoft Outlook, Microsoft Teams ou Skype for Business.</span><span class="sxs-lookup"><span data-stu-id="10b89-104">Represents data about the user's time spent in meetings in Microsoft Outlook, Microsoft Teams, or Skype for Business.</span></span> <span data-ttu-id="10b89-105">Isso é baseado no [activityStatistics](../resources/activitystatistics.md).</span><span class="sxs-lookup"><span data-stu-id="10b89-105">This is based on [activityStatistics](../resources/activitystatistics.md).</span></span>
+<!--
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Get meetingActivityStatistics](../api/meetingactivitystatistics-get.md) | [meetingActivityStatistics](meetingactivitystatistics.md) | Read properties and relationships of meetingActivityStatistics object; name of the activity for which statistics are returned as “meeting.” |
+-->
+## <a name="properties"></a><span data-ttu-id="10b89-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="10b89-106">Properties</span></span>
+
+| <span data-ttu-id="10b89-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="10b89-107">Property</span></span>     | <span data-ttu-id="10b89-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="10b89-108">Type</span></span>        | <span data-ttu-id="10b89-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="10b89-109">Description</span></span> |
+|:-------------|:------------|:------------|
+|<span data-ttu-id="10b89-110">atividade</span><span class="sxs-lookup"><span data-stu-id="10b89-110">activity</span></span>|<span data-ttu-id="10b89-111">analyticsActivityType</span><span class="sxs-lookup"><span data-stu-id="10b89-111">analyticsActivityType</span></span>| <span data-ttu-id="10b89-112">Atividade de reunião para a qual as estatísticas são retornadas.</span><span class="sxs-lookup"><span data-stu-id="10b89-112">Meeting activity for which statistics are returned.</span></span>|
+|<span data-ttu-id="10b89-113">duration</span><span class="sxs-lookup"><span data-stu-id="10b89-113">duration</span></span>|<span data-ttu-id="10b89-114">Duração</span><span class="sxs-lookup"><span data-stu-id="10b89-114">Duration</span></span>|<span data-ttu-id="10b89-115">Total de horas gasto em reuniões.</span><span class="sxs-lookup"><span data-stu-id="10b89-115">Total hours spent on meetings.</span></span> <span data-ttu-id="10b89-116">O valor é representado no formato ISO 8601 para durações.</span><span class="sxs-lookup"><span data-stu-id="10b89-116">The value is represented in ISO 8601 format for durations.</span></span>|
+|<span data-ttu-id="10b89-117">endDate</span><span class="sxs-lookup"><span data-stu-id="10b89-117">endDate</span></span>|<span data-ttu-id="10b89-118">Data</span><span class="sxs-lookup"><span data-stu-id="10b89-118">Date</span></span>|<span data-ttu-id="10b89-119">Data de término da atividade da reunião.</span><span class="sxs-lookup"><span data-stu-id="10b89-119">Date when the meeting activity ended.</span></span> <span data-ttu-id="10b89-120">O valor é representado no formato ISO 8601 para datas do calendário.</span><span class="sxs-lookup"><span data-stu-id="10b89-120">The value is represented in ISO 8601 format for calendar dates.</span></span> <span data-ttu-id="10b89-121">Por exemplo, o valor da propriedade poderia ser "2019-07-04" que segue o formato AAAA-MM-DD.</span><span class="sxs-lookup"><span data-stu-id="10b89-121">For example, the property value could be "2019-07-04" that follows the YYYY-MM-DD format.</span></span>|
+|<span data-ttu-id="10b89-122">id</span><span class="sxs-lookup"><span data-stu-id="10b89-122">id</span></span>|<span data-ttu-id="10b89-123">String</span><span class="sxs-lookup"><span data-stu-id="10b89-123">String</span></span>| <span data-ttu-id="10b89-124">ID somente leitura da atividade da reunião.</span><span class="sxs-lookup"><span data-stu-id="10b89-124">Read-only ID for the meeting activity.</span></span>|
+|<span data-ttu-id="10b89-125">startDate</span><span class="sxs-lookup"><span data-stu-id="10b89-125">startDate</span></span>|<span data-ttu-id="10b89-126">Date</span><span class="sxs-lookup"><span data-stu-id="10b89-126">Date</span></span>|<span data-ttu-id="10b89-127">Data de início da atividade da reunião.</span><span class="sxs-lookup"><span data-stu-id="10b89-127">Date when the meeting activity started.</span></span> <span data-ttu-id="10b89-128">O valor é representado no formato ISO 8601 para datas do calendário.</span><span class="sxs-lookup"><span data-stu-id="10b89-128">The value is represented in ISO 8601 format for calendar dates.</span></span> <span data-ttu-id="10b89-129">Por exemplo, o valor da propriedade poderia ser "2019-07-03" que segue o formato AAAA-MM-DD.</span><span class="sxs-lookup"><span data-stu-id="10b89-129">For example, the property value could be "2019-07-03" that follows the YYYY-MM-DD format.</span></span>|
+|<span data-ttu-id="10b89-130">timeZoneUsed</span><span class="sxs-lookup"><span data-stu-id="10b89-130">timeZoneUsed</span></span>|<span data-ttu-id="10b89-131">String</span><span class="sxs-lookup"><span data-stu-id="10b89-131">String</span></span>|<span data-ttu-id="10b89-132">O fuso horário do Outlook definido pelo usuário no calendário do Outlook é usado para a computação.</span><span class="sxs-lookup"><span data-stu-id="10b89-132">The Outlook time zone that the user sets in Outlook calendar is used for the computation.</span></span> <span data-ttu-id="10b89-133">Por exemplo, o valor da propriedade poderia ser "hora padrão do Pacífico".</span><span class="sxs-lookup"><span data-stu-id="10b89-133">For example, the property value could be "Pacific Standard Time."</span></span>|
+|<span data-ttu-id="10b89-134">afterHours</span><span class="sxs-lookup"><span data-stu-id="10b89-134">afterHours</span></span>|<span data-ttu-id="10b89-135">Duração</span><span class="sxs-lookup"><span data-stu-id="10b89-135">Duration</span></span>|<span data-ttu-id="10b89-136">Tempo gasto em reuniões fora do horário de trabalho, que se baseia na configuração de calendário do Outlook do usuário para horário de trabalho.</span><span class="sxs-lookup"><span data-stu-id="10b89-136">Time spent on meetings outside of working hours, which is based on the user's Outlook calendar setting for work hours.</span></span> <span data-ttu-id="10b89-137">O valor é representado no formato ISO 8601 para durações.</span><span class="sxs-lookup"><span data-stu-id="10b89-137">The value is represented in ISO 8601 format for durations.</span></span>|
+|<span data-ttu-id="10b89-138">conflitantes</span><span class="sxs-lookup"><span data-stu-id="10b89-138">conflicting</span></span>|<span data-ttu-id="10b89-139">Duração</span><span class="sxs-lookup"><span data-stu-id="10b89-139">Duration</span></span>|<span data-ttu-id="10b89-140">Tempo gasto em reuniões conflitantes (reuniões que se sobrepõem a outras reuniões que a pessoa aceitou e onde o status da pessoa está definido como ocupado).</span><span class="sxs-lookup"><span data-stu-id="10b89-140">Time spent in conflicting meetings (meetings that overlap with other meetings that the person accepted and where the person’s status is set to Busy).</span></span> <span data-ttu-id="10b89-141">O valor é representado no formato ISO 8601 para durações.</span><span class="sxs-lookup"><span data-stu-id="10b89-141">The value is represented in ISO 8601 format for durations.</span></span>|
+|<span data-ttu-id="10b89-142">long</span><span class="sxs-lookup"><span data-stu-id="10b89-142">long</span></span>|<span data-ttu-id="10b89-143">Duração</span><span class="sxs-lookup"><span data-stu-id="10b89-143">Duration</span></span>|<span data-ttu-id="10b89-144">Tempo gasto em reuniões longas (mais de uma hora em duração).</span><span class="sxs-lookup"><span data-stu-id="10b89-144">Time spent in long meetings (more than an hour in duration).</span></span> <span data-ttu-id="10b89-145">O valor é representado no formato ISO 8601 para durações.</span><span class="sxs-lookup"><span data-stu-id="10b89-145">The value is represented in ISO 8601 format for durations.</span></span>|
+|<span data-ttu-id="10b89-146">multitarefas</span><span class="sxs-lookup"><span data-stu-id="10b89-146">multitasking</span></span>|<span data-ttu-id="10b89-147">Duração</span><span class="sxs-lookup"><span data-stu-id="10b89-147">Duration</span></span>|<span data-ttu-id="10b89-148">Tempo gasto em reuniões em que a pessoa estava multitarefa (leitura/envio de mais de um número mínimo de emails e/ou envio de mais de um número mínimo de mensagens no Microsoft Teams ou no Skype for Business).</span><span class="sxs-lookup"><span data-stu-id="10b89-148">Time spent in meetings where the person was multitasking (read/sent more than a minimum number of emails and/or sent more than a minimum number of messages in Teams or in Skype for Business).</span></span> <span data-ttu-id="10b89-149">O valor é representado no formato ISO 8601 para durações.</span><span class="sxs-lookup"><span data-stu-id="10b89-149">The value is represented in ISO 8601 format for durations.</span></span>|
+|<span data-ttu-id="10b89-150">organiza</span><span class="sxs-lookup"><span data-stu-id="10b89-150">organized</span></span>|<span data-ttu-id="10b89-151">Duração</span><span class="sxs-lookup"><span data-stu-id="10b89-151">Duration</span></span>|<span data-ttu-id="10b89-152">Tempo gasto em reuniões organizadas pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="10b89-152">Time spent in meetings organized by the user.</span></span> <span data-ttu-id="10b89-153">O valor é representado no formato ISO 8601 para durações.</span><span class="sxs-lookup"><span data-stu-id="10b89-153">The value is represented in ISO 8601 format for durations.</span></span>|
+|<span data-ttu-id="10b89-154">recorrente</span><span class="sxs-lookup"><span data-stu-id="10b89-154">recurring</span></span>|<span data-ttu-id="10b89-155">Duração</span><span class="sxs-lookup"><span data-stu-id="10b89-155">Duration</span></span>|<span data-ttu-id="10b89-156">Tempo gasto em reuniões recorrentes.</span><span class="sxs-lookup"><span data-stu-id="10b89-156">Time spent on recurring meetings.</span></span> <span data-ttu-id="10b89-157">O valor é representado no formato ISO 8601 para durações.</span><span class="sxs-lookup"><span data-stu-id="10b89-157">The value is represented in ISO 8601 format for durations.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="10b89-158">Relações</span><span class="sxs-lookup"><span data-stu-id="10b89-158">Relationships</span></span>
+
+<span data-ttu-id="10b89-159">Nenhum</span><span class="sxs-lookup"><span data-stu-id="10b89-159">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="10b89-160">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="10b89-160">JSON representation</span></span>
+
+<span data-ttu-id="10b89-161">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="10b89-161">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.meetingActivityStatistics"
+}--> 
+
+```json
+{
+  "activity": "string",
+  "duration": "String (ISO 8601 duration)",
+  "endDate": "String (ISO 8601)",
+  "id": "String (identifier)",
+  "startDate": "String (ISO 8601)",
+  "timeZoneUsed": "String",
+  "afterHours": "String (ISO 8601 duration)",
+  "conflicting": "String (ISO 8601 duration)",
+  "long": "String (ISO 8601 duration)",
+  "multitasking": "String (ISO 8601 duration)",
+  "organized": "String (ISO 8601 duration)",
+  "recurring": "String (ISO 8601 duration)"
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "meetingActivityStatistics resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
