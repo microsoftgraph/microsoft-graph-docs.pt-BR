@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f085a7b0f3f7e430eec7421fe5fb01b20e5f793c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: fb12cf557cfff2d0954962df8fee6fa44409d301
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419927"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453138"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -65,7 +65,7 @@ Este é um exemplo da solicitação.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_event"
+  "name": "create_file_attachment_from_event_beta"
 }-->
 
 ```http
@@ -101,8 +101,9 @@ No corpo da solicitação, forneça uma representação JSON do objeto [attachme
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_event_beta",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "@odata.type": "microsoft.graph.fileAttachment"
 } -->
 
 ```http
@@ -130,7 +131,10 @@ Content-Length: 735
 
 Eis um exemplo que anexa um evento com outro evento como um anexo de item.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_event"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
@@ -165,8 +169,9 @@ Content-length: 600
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_event",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "@odata.type": "microsoft.graph.itemAttachment"
 } -->
 
 ```http
@@ -197,8 +202,7 @@ O anexo aponta para uma pasta no OneDrive.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_event",
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_from_event"
 }-->
 
 ```http
@@ -235,6 +239,7 @@ Content-length: 319
 Veja um exemplo de resposta completa.
 <!-- {
   "blockType": "response",
+  "name": "create_reference_attachment_from_event",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
@@ -268,9 +273,6 @@ HTTP 201 Created
   "description": "Create Attachment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: create_file_attachment_from_event/contentBytes:\r\n      Expected type Binary but actual was String. Property: contentBytes, actual value: 'bWFjIGFuZCBjaGVlc2UgdG9kYXk='"
-  ]
+  "tocPath": ""
 }
 -->

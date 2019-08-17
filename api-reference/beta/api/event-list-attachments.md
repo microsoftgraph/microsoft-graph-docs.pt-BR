@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 877bf30d5b715b6155edc1cb1eec4ec9d8438531
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: edfe7b8eec63109df19ca8d1997fce4799db85a6
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420450"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453131"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -74,7 +74,7 @@ Este é um exemplo da solicitação.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "event_get_attachments"
+  "name": "event_get_attachments_beta"
 }-->
 
 ```http
@@ -100,8 +100,9 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
+  "name": "event_get_attachments_beta",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "isCollection": true
 } -->
 
@@ -113,7 +114,7 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "@odata.type":"#microsoft.graph.fileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
       "contentBytes": "contentBytes-value",

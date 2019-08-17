@@ -3,14 +3,14 @@ title: tipo de recurso fileAttachment
 description: Um arquivo (como um arquivo de texto ou documento do Word) anexado a um evento
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 966de812c8b0507c3d757d42fba5624c0b82ce4f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: 7161d8bf17aa573cad61123200785ff254c24feb
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972028"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453152"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
@@ -35,7 +35,7 @@ Derivado de [attachment](attachment.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contentBytes|Binária|O conteúdo do arquivo codificado pela base64.|
+|contentBytes|EDM. Binary|O conteúdo do arquivo codificado pela base64.|
 |contentId|String|A ID do anexo no repositório do Exchange.|
 |contentLocation|Cadeia de caracteres|Não use essa propriedade que não tem suporte.|
 |contentType|String|O tipo de conteúdo do anexo.|
@@ -63,7 +63,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "string (binary)",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",
