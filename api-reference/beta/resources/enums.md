@@ -5,13 +5,23 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 714873a85951d2f03f602e0742c9f00b5faf0024
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: b4df1b1283ae0240e26ba3f63ccfad0094e285d7
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062051"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450477"
 ---
+### <a name="analyticsactivitytype-values"></a>valores de analyticsActivityType
+
+| Valor
+|:--------------
+| call
+| chat
+| email
+| foco
+| Atenda
+
 ### <a name="registrationauthmethod-values"></a>valores de registrationAuthMethod
 
 |Membro|
@@ -36,7 +46,6 @@ ms.locfileid: "36062051"
 |pensão|0,5| O filho do usuário.|
 |outro|6| Uma relação não especificada com o usuário.|
 |unknownFutureValue|178| Valor de marcador para compatibilidade futura.|
-
 
 ### <a name="scheduleentitytheme-values"></a>valores de scheduleEntityTheme
 

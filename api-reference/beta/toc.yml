@@ -9268,6 +9268,33 @@
                   items:
                     - name: Listar compartilhados
                       href: api/insights-list-shared.md
+            - name: Análise
+              href: resources/useranalytics.md
+              items:
+                - name: Configurações
+                  items:
+                    - name: Configurações
+                      href: resources/settings.md
+                    - name: Obter configurações
+                      href: api/useranalytics-get-settings.md
+                - name: Estatísticas de atividade
+                  items:
+                    - name: Estatísticas de atividade
+                      href: resources/activitystatistics.md
+                    - name: Tipo de estatísticas de chamada
+                      href: resources/callactivitystatistics.md
+                    - name: Tipo de estatísticas de chat
+                      href: resources/chatactivitystatistics.md
+                    - name: Tipo de estatísticas de email
+                      href: resources/emailactivitystatistics.md
+                    - name: Tipo de estatísticas de foco
+                      href: resources/focusactivitystatistics.md
+                    - name: Tipo de estatísticas de reunião
+                      href: resources/meetingactivitystatistics.md
+                    - name: Listar estatísticas de atividade
+                      href: api/activitystatistics-list.md
+                    - name: Obter estatísticas de atividade
+                      href: api/activitystatistics-get.md
             - name: Menção
               href: resources/mention.md
         - name: Tarefas e planos
@@ -9676,7 +9703,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskgroups.md
-                - name: Create
+                - name: Criar
                   href: api/outlookuser-post-taskgroups.md
                 - name: Obter
                   href: api/outlooktaskgroup-get.md

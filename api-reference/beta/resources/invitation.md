@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2037c747df42177e4735b1aba1d37605d11339d8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6a009640b47ce02b1719d6e5535813d365dc9e6
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010130"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450638"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -27,6 +27,8 @@ O processo de convite usa o fluxo a seguir:
 
 A criação de um convite retornará uma URL de resgate na resposta (*inviteRedeemUrl*). A API de criação de convite pode enviar automaticamente um email que contém a URL de resgate ao usuário convidado, definindo-se *sendInvitationMessage* como true. Você também pode personalizar a mensagem será enviada ao usuário convidado. Em vez disso, se você desejar enviar a URL de resgate por outros meios, poderá definir *sendInvitationMessage* como false e usar a URL de resgate da resposta para criar sua própria comunicação. Atualmente, não há qualquer API para execução do processo de resgate. O usuário convidado tem que clicar no link *inviteRedeemUrl* enviado na comunicação na etapa anterior e passar pelo processo de resgate interativo em um navegador. Após a conclusão, o usuário convidado torna-se um usuário externo na organização.
 
+>[!NOTE]
+>O status do convite é rastreado usando as propriedades **externalUserState** e **externalUserStateChangeDateTime** no recurso de [usuário](user.md) externo criado como parte da solicitação de convite.
 
 ## <a name="methods"></a>Métodos
 | Método       | Tipo de retorno  |Descrição|
