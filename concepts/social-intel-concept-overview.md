@@ -4,12 +4,12 @@ description: As centenas de milhões de usuários que utilizam os serviços de n
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: a1ab4140272cb227898ba1db79d4ab575073e51f
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: bf50bcd6d55b9c31ebb6ecca4d176ef230bb2bc8
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417714"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450491"
 ---
 # <a name="overview-of-social-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência social e do local de trabalho no Microsoft Graph
 
@@ -89,7 +89,15 @@ A API do Insights fornece uma com uma funcionalidade semelhante às entidades [u
 
 ![Captura de tela de um cartão de pessoas para um usuário no Outlook na Web, mostrando os arquivos recentes](images/peoplecard-concept.png)
 
+## <a name="why-integrate-with-myanalytics-preview"></a>Por que integrar o MyAnalytics (visualização)?
+
+
+  [O myAnalytics](https://docs.microsoft.com/pt-BR/workplace-analytics/myanalytics/index) fornece uma visão geral de como e com quem as pessoas passam o tempo. Esses dados podem ajudar as pessoas a planejar o dia, obter informações sobre seus diferentes padrões de trabalho e ajudar a equilibrar o trabalho e a vida.
+
+A API de análises permite a sincronização ou a integração de dados de análise do usuário com um aplicativo de terceiros personalizado para oferecer suporte a uma ampla variedade de cenários que podem ajudar a melhorar a produtividade e a colaboração do usuário. Por exemplo, você poderia integrar dados do myAnalytics com atividades de dispositivos móveis para ajudar os usuários a acompanhar todas as atividades de trabalho e social e planejar o seu dia dentro de um aplicativo.
+
 ## <a name="api-reference"></a>Referência da API
+
 Procurando a referência de API para estes serviços?
 
 - [API de Pessoas no Microsoft Graph v1.0](/graph/api/resources/social-overview?view=graph-rest-1.0)
@@ -97,6 +105,7 @@ Procurando a referência de API para estes serviços?
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Use o [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) para experimentar as APIs de Pessoas e do Insights com seus próprios arquivos. Entre e escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para habilitar **Pessoas** e **Insights (beta)**.
+* Use o [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) para experimentar as APIs de pessoas, Insights e análises com seus próprios arquivos. Entre e escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para habilitar **Pessoas**, **Insights (beta)** e **Análises**.
 * Saiba mais sobre a [API de Pessoas](people-example.md) e a entidade [person](/graph/api/resources/person?view=graph-rest-1.0).
 * Para começar a usar a API do Insights, consulte [Usar a API do Insights](/graph/api/resources/insights?view=graph-rest-beta).
+* Saiba mais sobre a [API de análise](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).

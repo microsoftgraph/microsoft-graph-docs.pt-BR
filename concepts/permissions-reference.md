@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 2fe8b2d9b7a89aec84cdc067fc9e69a647f64ccc
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 25f5f7df625aabaf4ace2f54b77537cd456981ab
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437675"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450680"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -76,7 +76,32 @@ Para obter mais informações sobre funções de administrador, confira [Atribui
 
 ---
 
-## <a name="administrative-units-permissions"></a>Permissões de unidades administrativas
+## <a name="analytics-resource-permissions"></a>Permissões de recurso do Analytics
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   Ler todas as estatísticas de atividades do usuário. | Permite que o aplicativo leia as estatísticas das atividades do usuário sem um usuário conectado. | Sim |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+Nenhuma.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado	
+
+* _Analytics.Read_: [Listar as configurações relacionadas para um usuário](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+* _Analytics.Read_: [Obter as estatísticas da atividade de um usuário](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
+
+#### <a name="application"></a>Aplicativo
+
+Nenhum.
+
+---
+
+## <a name="administrative-units-permissions"></a>Permissões de Unidades Administrativas
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
@@ -742,7 +767,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Mail.ReadWrite_ |    Ler e gravar emails em todas as caixas de correio | Permite ao aplicativo criar, ler, atualizar e excluir emails em todas as caixas de correio sem um usuário conectado. Não inclui a permissão para enviar emails. | Sim |
 | _Mail.Send_ |    Enviar email como qualquer usuário | Permite ao aplicativo enviar emails como qualquer usuário sem um usuário conectado. | Sim |
 | _MailboxSettings.Read_ |  Ler as configurações de caixa de correio do usuário | Permite que o aplicativo leia configurações da caixa de correio do usuário sem um usuário conectado. Não inclui a permissão para enviar emails. | Não |
-| _MailboxSettings.ReadWrite_ | Leia e grave todas as configurações de caixa de correio do usuário  | Permite que o aplicativo crie, leia, atualize e exclua as configurações da caixa de correio sem um usuário conectado. Não inclui a permissão para enviar emails. | Sim |
+| _MailboxSettings.ReadWrite_ | Ler e gravar todas as configurações de caixa de correio do usuário  | Permite que o aplicativo crie, leia, atualize e exclua as configurações da caixa de correio sem um usuário conectado. Não inclui a permissão para enviar emails. | Sim |
 
 > Os Administradores **Importantes** podem configurar a [política de acesso ao aplicativo](auth-limit-mailbox-access.md) para limitar o acesso do aplicativo às caixas de correio _específicas_ e não a todas as caixas de correio na organização, mesmo que as permissões de aplicativo do Mail.Read, Mail.ReadWrite, Mail.Send, MailboxSettings.Read, ou MailboxSettings.ReadWrite sejam concedidas ao aplicativo. 
 

@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f279dd6be424c34a80fc2b3e942d60ed9dec0d16
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 379db2a2d5a1826928ed43a0818a1e2c55d3a000
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437668"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450603"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -92,6 +92,14 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | v1.0  | Propriedade **ownerPrincipalName** adicionada à entidade [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 | Adição        | v1.0  | Foram adicionadas as propriedades **office365Active** e **office365Inactive** à entidade [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
 
+### <a name="social-and-workplace-intelligence-analytics"></a>Inteligência social e no loca de trabalho: (Análises)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição | Beta | Introduziu a nova [API de análise](/graph/api/resources/useranalytics?view=graph-rest-beta) de inteligência no local de trabalho que permite obter análises sobre como os usuários gastam seu tempo em várias atividades durante e fora do horário de trabalho, incluindo chamadas, chats (mensagens instantâneas), emails, foco de trabalho e reuniões. |
+| Adição | Beta | Introduziu a nova [API de configurações](/graph/api/resources/settings?view=graph-rest-beta) de inteligência no local de trabalho que representa as configurações necessárias para um usuário usar [a API de análise](/graph/api/resources/useranalytics?view=graph-rest-beta). |
+| Adição | Beta | Introduziu o novo recurso [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) e novos tipos de recursos derivados dele: [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta) e [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta). |
+
 
 ## <a name="july-2019"></a>Julho de 2019
 
@@ -109,7 +117,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
 |Tipo de alteração|Versão|Descrição|
-|:---|:---|:---|
+|:----------------|:------------|:-----------------------------------------|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[managedAllDeviceCertificateState](/graph/api/resources/intune-deviceconfig-managedalldevicecertificatestate?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[windowsKioskForceUpdateSchedule](/graph/api/resources/intune-deviceconfig-windowskioskforceupdateschedule?view=graph-rest-beta)<br/>|
 |Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[fileVaultState](/graph/api/resources/intune-deviceconfig-filevaultstate?view=graph-rest-beta)<br/>[windowsDefenderTamperProtectionOptions](/graph/api/resources/intune-deviceconfig-windowsdefendertamperprotectionoptions?view=graph-rest-beta)<br/>|
@@ -264,6 +272,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ## <a name="may-2019"></a>Maio de 2019
 
+### <a name="calendar-mail-personal-contacts-outlook"></a>Calendário, email, contatos pessoais (Outlook)
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 e beta | Foi adicionada a capacidade de administradores limitaram o acesso do aplicativo apenas às caixas de correio específicas, mesmo quando um aplicativo recebe permissões de aplicativo para email, configurações de caixa de correio, calendários ou contatos. Para obter mais detalhes, confira [Escopo de permissões do aplicativo para caixas de correio específicas do Exchange Online](auth-limit-mailbox-access.md). |
@@ -354,6 +364,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição        | Beta  | Adicionada a propriedade **ownerPrincipalName** à entidade [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
 | Adição        | Beta  | A propriedade **ownerPrincipalName** foi adicionada à entidade [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 
+### <a name="security"></a>Segurança
 
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |

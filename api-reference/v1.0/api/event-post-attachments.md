@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9960719df755c8e99cb62cdcfbb74731284d4bf5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2dbd17e33676dfffbedd7e32b3a57b0da8d5755
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372409"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453033"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -81,7 +81,7 @@ Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
-  "name": "create_file_attachment_from_event"
+  "name": "create_file_attachment_from_event_v1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
@@ -119,6 +119,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [attachme
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_event_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
@@ -137,7 +138,7 @@ Content-type: application/json
     "isInline":false,
     "contentId":null,
     "contentLocation":null,
-    "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
@@ -147,7 +148,10 @@ Content-type: application/json
 
 Eis um exemplo que anexa um evento com outro evento como um anexo de item.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_event"
+}-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
@@ -181,6 +185,7 @@ Content-length: 600
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_event",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->

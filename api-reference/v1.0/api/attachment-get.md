@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 45a2a5ecd87c1f1c13771dc1c5b6bf27ad891845
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 015d0842fbea81e45d5a4d33be466851a41da3f6
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325390"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453082"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -116,7 +116,7 @@ Veja um exemplo da solicitação para obter um anexo de arquivo de um evento.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_file_attachment"
+  "name": "get_file_attachment_v1"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
@@ -144,6 +144,7 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
+  "name": "get_file_attachment_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -156,7 +157,7 @@ Content-length: 199
   "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
-  "contentBytes": "binary",
+  "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA",
   "contentId": "null",
   "lastModifiedDateTime": "2016-01-01T12:00:00Z",
   "id": "id-value",
