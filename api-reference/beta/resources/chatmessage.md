@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f807c45fcff2a5e2ea928105ed970d426cfdc1f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 17b6912312c66bca8b84ccce9d25ac3c83a2edf9
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974025"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460763"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -29,6 +29,7 @@ A mensagem pode ser uma mensagem raiz ou parte de um thread definido pela propri
 |[Get a reply to a message](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Obtenha uma resposta a uma mensagem única em um canal.|
 |[Criar chat em um canal](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Crie uma nova mensagem de nível superior em um canal.|
 |[Responder a uma mensagem em um canal](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Responder a uma mensagem existente em um canal.|
+|[Criar chat em um chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Envie uma mensagem em uma conversa existente de chat de grupo ou 1:1.|
 |[Listar mensagens em um bate-papo](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Listar mensagens em um bate-papo de grupo ou 1:1. |
 |[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
 |[Listar todas as imagens hospedadas](../api/chatmessagehostedimage-list-hostedimages.md) | coleção [hostedImage](../resources/chatmessagehostedimage.md)| Obter todas as imagens hospedadas em uma mensagem.|

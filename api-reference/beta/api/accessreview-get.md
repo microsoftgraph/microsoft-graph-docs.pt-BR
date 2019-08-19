@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f8e628c2ba8835d42f00116e46b4dfa0527765fe
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ff201c64156c334b756a9cfc8318fd9882154515
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408830"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460812"
 ---
 # <a name="get-accessreview"></a>Obter accessReview
 
@@ -120,13 +120,12 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Criar accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  Criar um novo accessReview. |
-|[Listar programControls](programcontrol-list.md) | coleção [programControl](../resources/programcontrol.md) | Listar programControls em um locatário. |
-|[Listar revisores do accessReview](accessreview-listreviewers.md) |     [](../resources/useridentity.md) coleção UserIdentity|    Obter os revisores de um accessReview. |
-|[Listar decisões accessReview](accessreview-listdecisions.md) |     coleção [accessReviewDecision](../resources/accessreviewdecision.md)|    Obtenha as decisões de um accessReview.|
-|[Listar minhas decisões do accessReview](accessreview-listmydecisions.md) |        coleção [accessReviewDecision](../resources/accessreviewdecision.md)|    Como revisor, obtenha as minhas decisões de um accessReview.|
+- [Criar accessReview](accessreview-create.md)
+- [Listar accessReviews](accessreview-list.md)
+- [Listar programControls](programcontrol-list.md)
+- [Listar revisores do accessReview](accessreview-listreviewers.md)
+- [Listar decisões accessReview](accessreview-listdecisions.md)
+- [Listar minhas decisões do accessReview](accessreview-listmydecisions.md)
 
 
 <!--

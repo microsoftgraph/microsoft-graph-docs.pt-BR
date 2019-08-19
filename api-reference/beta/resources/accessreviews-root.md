@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 2c3ef3317b513cdcecef4fb0fe402584afe6fa6d
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: ecd49dc603fa4ae7c4afdd0120267a47d8f06c43
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173052"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460750"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
 
@@ -41,6 +41,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 |[Criar accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Criar um novo accessReview. |
 |[Excluir accessReview](../api/accessreview-delete.md) | Nenhum.   | Excluir um accessReview. |
 |[Atualizar accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Atualizar um accessReview. |
+|[Listar accessReviews](../api/accessreview-list.md) |    coleção [accessReview](accessreview.md) |    Listar accessReviews para um businessFlowTemplate. |
 |[Listar revisores do accessReview](../api/accessreview-listreviewers.md) |      [](useridentity.md) coleção UserIdentity| Obter os revisores de um accessReview. |
 |[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum.   |   Adicionar um revisor a um accessReview. |
 |[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum.  |   Remover um revisor de um accessReview. |

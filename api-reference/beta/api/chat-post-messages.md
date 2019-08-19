@@ -2,21 +2,21 @@
 title: Criar chat
 description: Use esta API para criar um novo chat.
 localization_priority: Normal
-author: RamjotSingh
+author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 784c275f3006af144b56c7de17758492f13e8db1
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 96099cf2628b31a03013ae680439e97a55f952c5
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418163"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460819"
 ---
 # <a name="create-chatmessage"></a>Criar chat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma nova [mensagem](../resources/chatmessage.md) no [chat](../resources/chat.md)especificado.
+Criar uma nova [mensagem](../resources/chatmessage.md) no [chat](../resources/chat.md)especificado. Esta API não pode criar um novo chat, você deve usar o método [list chats](chat-list.md) para recuperar a ID de um chat existente antes de criar uma mensagem de chat.
 
 ## <a name="permissions"></a>Permissões
 

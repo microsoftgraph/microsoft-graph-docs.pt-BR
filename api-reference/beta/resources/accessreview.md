@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4205f0995b0e8c71c8e01991837b4d721ecfaaf7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f42124a5b69027d16b2c8adc54d001fd8cf81c0e
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974560"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460749"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
 
@@ -23,10 +23,11 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , `accessRev
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
+|[Listar accessReviews](../api/accessreview-list.md) | coleção [accessReview](accessreview.md) | Listar accessReviews para um businessFlowTemplate. |
 |[Obter accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Obtenha uma revisão do Access com uma ID específica. |
 |[Criar accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Criar um novo accessReview. |
-|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum.   | Excluir um accessReview. |
 |[Atualizar accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Atualizar um accessReview. |
+|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum.   | Excluir um accessReview. |
 |[Listar revisores do accessReview](../api/accessreview-listreviewers.md) |      [](useridentity.md) coleção UserIdentity| Obter os revisores de um accessReview. |
 |[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum.   |   Adicionar um revisor a um accessReview. |
 |[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum.  |   Remover um revisor de um accessReview. |
