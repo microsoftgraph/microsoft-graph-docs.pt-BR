@@ -1,22 +1,22 @@
 ---
 title: Usar a API do Microsoft Graph para integrar a inteligência social e do local de trabalho em um aplicativo
-description: O Microsoft Graph dá suporte a gestos sociais em um contexto social do usuário e fornece acesso a pessoas e dados sociais úteis.
+description: O Microsoft Graph permite o acesso a dados do local de trabalho e sociais úteis para pessoas e dá suporte a gestos sociais no contexto social de um usuário.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 84e0c82173dad6f08d5911f32ef5c384f041ea19
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74beb2a66f103342f6dbc5e5977200751a309c08
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008086"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450666"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência social e do local de trabalho em um aplicativo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O Microsoft Graph dá suporte a gestos sociais em um contexto social do usuário e fornece acesso a pessoas e dados sociais úteis.
+O Microsoft Graph permite o acesso a dados do local de trabalho e sociais para pessoas e dá suporte a gestos sociais no contexto social de um usuário.
 
 ## <a name="aggregate-and-extract-specific-information-about-people"></a>Agregar e extraia informações específicas sobre pessoas
 
@@ -26,11 +26,18 @@ Use o recurso [person](../resources/person.md) e a API de Pessoas para agregar i
 
 ## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Ajudar os usuários a obter os documentos mais relevantes para seu trabalho
 
-Usar a API insights para identificar os documentos mais relevantes para o usuário: 
+Usar a API insights para identificar os documentos mais relevantes para o usuário:
 
 - Listar documentos [mais populares](../api/insights-list-trending.md) de um usuário
 - Listar documentos [usados por](../api/insights-list-used.md) um usuário
 - Listar documentos [compartilhados com ou por](../api/insights-list-shared.md) um usuário
+
+## <a name="help-users-gain-insights-into-their-work-patterns"></a>Ajudar os usuários a obter informações sobre seus padrões de trabalho
+
+Usar a API de análise para obter estatísticas de atividade e configurações relacionadas para um usuários:
+
+- [configurações](../resources/settings.md): Para a API de análise retornar os resultados para um usuários, as configurações de análise de usuário atuais devem mostrar uma licença válida do MyAnalytics, ser aceitas no uso do MyAnalytics e ter uma caixa de correio hospedada na nuvem habilitada para o Microsoft Graph.
+- activityStatistics](../resources/activitystatistics.md): Obtém dados para a última semana concluída (ou o intervalo de tempo especificado) das atividades do Office 365 em que um usuário gastou tempo, incluindo o número de horas gastas em chamadas, conversas (mensagens instantâneas), email e reuniões durante e fora das horas de trabalho e o número de horas disponíveis para o trabalho prioritário.
 
 ## <a name="manage--mentions"></a>Gerenciar as @menções
 
@@ -55,4 +62,3 @@ Include the next sentence when supporting events.
   - [Obter os detalhes de cada menção em uma mensagem](../api/message-get.md#request-2)
 
 - [Excluir uma menção](../api/message-delete.md#request-2) em uma mensagem
-

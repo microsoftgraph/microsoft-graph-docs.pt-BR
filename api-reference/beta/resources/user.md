@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 02fcc9db35f59ebca3bc85f1ddc65d8d2f7c3d89
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: 05ea41eb7ec4a0c801587c0ce70040fd8489cb27
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049621"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450512"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -198,6 +198,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |agreementAcceptances|Coleção [agreementAcceptance](agreementacceptance.md)| Os termos de usuário do status de aceitação de uso. Somente leitura. Anulável.|
+|análise|Coleção [userAnalytics](useranalytics.md)| As estatísticas de atividade de usuário e as configurações relacionadas. Somente leitura. Anulável.|
 |calendar|[calendar](calendar.md)|O calendário principal do usuário. Somente leitura.|
 |calendarGroups|Coleção [CalendarGroup](calendargroup.md)|Os grupos de calendários do usuário. Somente leitura. Anulável.|
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura. Anulável.|
@@ -238,6 +239,7 @@ Veja a seguir uma representação JSON do recurso
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "analytics",
     "appRoleAssignments",
     "calendar",
     "calendarGroups",
@@ -337,6 +339,7 @@ Veja a seguir uma representação JSON do recurso
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
+  "analytics": [{"@odata.type": "microsoft.graph.userAnalytics"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
