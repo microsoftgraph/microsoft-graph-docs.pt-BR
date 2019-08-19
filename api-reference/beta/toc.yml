@@ -7816,14 +7816,16 @@
                 - name: Revisão de acesso
                   href: resources/accessreview.md
                   items:
-                    - name: Criar revisão de acesso
-                      href: api/accessreview-create.md
-                    - name: Excluir revisão de acesso
-                      href: api/accessreview-delete.md
+                    - name: Listar avaliações de acesso
+                      href: api/accessreview-list.md
                     - name: Obter revisão de acesso
                       href: api/accessreview-get.md
+                    - name: Criar revisão de acesso
+                      href: api/accessreview-create.md
                     - name: Atualizar revisão de acesso
                       href: api/accessreview-update.md
+                    - name: Excluir revisão de acesso
+                      href: api/accessreview-delete.md
                     - name: Adicionar revisor
                       href: api/accessreview-addreviewer.md
                     - name: Listar decisões
