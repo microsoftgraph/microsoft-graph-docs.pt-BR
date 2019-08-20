@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 379db2a2d5a1826928ed43a0818a1e2c55d3a000
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: cb8f3d0f1c5aeae8f14bb240de82802f93dc68d8
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450603"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36462002"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -80,7 +80,8 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | Beta | Adicionado o recurso[unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) que representa um conjunto de permissões que lista as operações que podem ser realizadas. |
 | Adição | Beta | Adicionado o recurso[unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) que concede acesso aos recursos. |
 | Adição | Beta | Adicionadas estas operações abaixo para dar suporte ao recurso unifiedRoleDefinition: <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - Obter uma lista de objetos do recurso unifiedRoleDefinition para o provedor.</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - Criar um novo objeto no unifiedRoleDefinition.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - Recupere as propriedades e relações de um objeto de definição de função unificado.</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) -Atualize as propriedades de um objeto no unifiedRoleDefinition.</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - Excluir um objeto no unifiedRoleDefinition.</li></ul> |
-| Adição | Beta | Estas operações abaixo foram adicionadas para dar suporte ao recurso unifiedRoleDefinition: <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - Obter uma lista de objetos do recurso unifiedRoleAssignment para o provedor.</li><li>[Create unifiedRoleAssignment]() - Criar um novo objeto no recurso unifiedRoleAssignment.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - Recupere as propriedades e relações de um objeto no unifiedRoleAssignment.</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - Excluir um objeto no recurso unifiedRoleAssignment. |
+| Adição | Beta | Estas operações abaixo foram adicionadas para dar suporte ao recurso unifiedRoleDefinition: <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - Obter uma lista de objetos do recurso unifiedRoleAssignment para o provedor.</li><li>[Create unifiedRoleAssignment]() - Criar um novo objeto no recurso unifiedRoleAssignment.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - Recupere as propriedades e relações de um objeto no unifiedRoleAssignment.</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - Excluir um objeto unifiedRoleAssignment. |
+| Adição | Beta | Adicionou a operação [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta). |
 
 ### <a name="reports"></a>Relatórios
 
