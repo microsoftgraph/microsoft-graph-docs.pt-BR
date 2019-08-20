@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 09deb6b70ff7fc17c45463ee42764a5963928b2f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 7fcee4b00c818bb1b0299eaa670cdfb2de90d2cb
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35712315"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464979"
 ---
 ```javascript
 
@@ -22,6 +22,7 @@ const attachment = {
 };
 
 let res = await client.api('/me/events/{id}/attachments')
+    .version('beta')
     .post({attachment : attachment});
 
 ```
