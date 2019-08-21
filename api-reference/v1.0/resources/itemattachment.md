@@ -2,15 +2,15 @@
 title: Tipo de recurso itemAttachment
 description: 'Um contato, evento ou mensagem que está anexado a outro evento, mensagem ou postagem.  '
 localization_priority: Priority
-author: ''
-ms.prod: ''
+ms.prod: outlook
+author: angelgolfer-ms
 doc_type: resourcePageType
-ms.openlocfilehash: 81d30cc5ebc979fd99d8357852eb83686ec58446
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7df14ea5d6611cb3771aeb23250c1e65fb6e60a4
+ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036544"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484356"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
@@ -50,6 +50,7 @@ Veja a seguir uma representação JSON do recurso
     "item"
   ],
   "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.itemAttachment",
   "@odata.annotations": [
     {
