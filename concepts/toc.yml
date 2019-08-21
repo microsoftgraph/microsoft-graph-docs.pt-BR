@@ -215,14 +215,8 @@ items:
             href: security-dataflow.md
           - name: Autorização
             href: security-authorization.md
-          - name: Integrar com um SIEM
-            items:
-              - name: Visão Geral
-                href: security-siemintegration.md
-              - name: Splunk
-                href: security-splunk-siemintegration.md
-              - name: QRadar
-                href: security-qradar-siemintegration.md
+          - name: Soluções integradas
+            href: security-integration.md
           - name: Oportunidades de parceria
             href: security-partner-overview.md
       - name: Sites e listas
