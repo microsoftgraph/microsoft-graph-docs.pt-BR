@@ -7447,8 +7447,15 @@
                 - name: Retornar envio
                   href: api/educationsubmission-return.md
             - name: Conseqüências
-              href: resources/educationoutcome.md
               items:
+                - name: Conseqüências
+                  href: resources/educationoutcome.md
+                - name: Tipo de resultado de comentários
+                  href: resources/educationfeedbackoutcome.md
+                - name: Tipo de resultado de pontos
+                  href: resources/educationpointsoutcome.md
+                - name: Tipo de resultado amostra rubric
+                  href: resources/educationrubricoutcome.md
                 - name: Resultado da atualização
                   href: api/educationoutcome-update.md
             - name: Perfil de sincronização
@@ -8379,7 +8386,7 @@
                     - name: Definições de função
                       href: resources/governanceroledefinition.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/governanceroledefinition-list.md
                         - name: Obter
                           href: api/governanceroledefinition-get.md
