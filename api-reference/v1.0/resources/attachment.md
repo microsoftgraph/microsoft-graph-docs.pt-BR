@@ -2,19 +2,19 @@
 title: tipo de recurso anexo
 description: Você pode adicionar conteúdo relacionado a um evento
 localization_priority: Priority
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d47fde49a76f00658e39d9a3ae6629cd9bcf56b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 509421f292e1c849ceee17a3db9f348e05ca747b
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030069"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622653"
 ---
 # <a name="attachment-resource-type"></a>tipo de recurso anexo
 
-Você pode adicionar conteúdo relacionado a um [event](../resources/event.md), [message](../resources/message.md) u [post](../resources/post.md) na forma de anexo
+Você pode adicionar conteúdo relacionado a um [evento](../resources/event.md) de usuário, [mensagem](../resources/message.md) ou [postagem](../resources/post.md) na forma de anexo.
 
 **attachment** é o recurso de base para os seguintes tipos de anexo derivados:
 
@@ -22,6 +22,7 @@ Você pode adicionar conteúdo relacionado a um [event](../resources/event.md), 
 * Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md))
 * Um link para um arquivo (recurso [referenceAttachment](../resources/referenceattachment.md))
 
+Os eventos em calendários de grupo não têm suporte para anexos.
 
 ## <a name="methods"></a>Métodos
 
@@ -29,11 +30,11 @@ Os métodos a seguir se aplicam a qualquer um dos tipos de anexo derivados (**fi
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter anexo](../api/attachment-get.md) | [attachment](attachment.md) |Leia as propriedades e as relações de um anexo, anexados a um evento, mensagem ou postagem.|
-|[Adicionar anexo a um event](../api/event-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a um evento.|
+|[Obter anexo](../api/attachment-get.md) | [attachment](attachment.md) |Leia as propriedades e as relações de um anexo, anexados a um evento de usuário, mensagem ou postagem.|
+|[Adicionar anexo a um evento de usuário](../api/event-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a um evento em um calendário de usuário.|
 |[Adicionar um anexo a uma mensagem](../api/message-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem.|
 |[Adicionar anexo a uma postagem](../api/post-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma postagem.|
-|[Listar anexos de um evento](../api/event-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de um evento. |
+|[Listar anexos de um evento de usuário](../api/event-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de um evento em um calendário de usuário. |
 |[Listar anexos de uma mensagem](../api/message-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma mensagem. |
 |[Listar anexos de uma postagem](../api/post-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma postagem. |
 |[Delete](../api/attachment-delete.md) | Nenhum |Exclua um anexo em um evento, mensagem ou postagem. |

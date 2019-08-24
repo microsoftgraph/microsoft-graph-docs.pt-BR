@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dbdf0f11ef99b7cb283d4f80c2cfa6768ea8040c
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 065871442108722963a4d55d5725038656ba160f
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461809"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622576"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
-Leia as propriedades e as relações de um anexo, anexado a um [event](../resources/event.md), [message](../resources/message.md) ou [post](../resources/post.md). 
+Leia as propriedades e as relações de um anexo, anexadas a um [evento](../resources/event.md) de usuário, [mensagem](../resources/message.md) ou [postagem](../resources/post.md). 
 
 Um anexo pode ser de um dos seguintes tipos:
 
