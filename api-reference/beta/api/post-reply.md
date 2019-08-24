@@ -5,18 +5,20 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7fd33fead33967859f22b9b7ae9c72ae2588616
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a90addda2b71060bcb2e72aff0f1faceb63519c5
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412877"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622593"
 ---
 # <a name="post-reply"></a>post: reply
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo. Você pode especificar a conversa pai e o thread na solicitação ou pode especificar apenas o thread pai, sem a conversa pai.
+Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo. 
+
+Você pode especificar a conversa pai e o thread na solicitação ou pode especificar apenas o thread pai, sem a conversa pai.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna um corpo de resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -136,7 +138,7 @@ Veja a seguir um exemplo da resposta.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

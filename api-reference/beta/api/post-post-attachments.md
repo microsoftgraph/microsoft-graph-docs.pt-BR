@@ -1,22 +1,24 @@
 ---
 title: Adicionar anexo
-description: Use esta API para adicionar um attachment a uma postagem. Desde lá
+description: Adicionar um anexo ao criar uma postagem de grupo.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 611489e63c36a922f3eabd3a595680565151ab6f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e82f7d7cc7a0ceaac437cb86020ad62bc470b3e1
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412905"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622569"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para adicionar um [attachment](../resources/attachment.md) a uma postagem. Como atualmente há um limite de 4 MB para o tamanho total de cada solicitação REST, isso limita o tamanho do anexo que você pode adicionar a 4 MB.
+Adicionar um [anexo](../resources/attachment.md) ao criar uma postagem de grupo. 
+
+Como atualmente há um limite de 4 MB para o tamanho total de cada solicitação REST, isso limita o tamanho do anexo que você pode adicionar a 4 MB.
 
 Um anexo pode ser de um dos seguintes tipos:
 
@@ -36,11 +38,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+Incluir um anexo ao criar uma [postagem](../resources/post.md) em um [conversationThread](../resources/conversationthread.md) de um grupo. A especificação da [conversa](../resources/conversation.md) pai é opcional.
+
 <!-- { "blockType": "ignored" } -->
-Anexos de uma [post](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversation](../resources/conversation.md) de um grupo.
 ```http
-POST /groups/{id}/threads/{id}/posts/{id}/attachments
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
+POST /groups/{id}/threads/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -48,31 +51,43 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Attachment](../resources/attachment.md).
+No corpo da solicitação, forneça um objeto JSON que inclui um parâmetro **post** .
+
+| Parâmetro    | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|post|[post](../resources/post.md)|A nova postagem que está sendo respondida, que inclui um ou mais anexos em uma coleção de [anexos](../resources/attachment.md) .|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [Attachment](../resources/attachment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna um corpo de resposta.
 
-## <a name="example-file-attachment"></a>Exemplo (anexo de arquivo)
-
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+## <a name="examples"></a>Exemplos
+### <a name="example-1-include-a-file-attachment"></a>Exemplo 1: incluir um anexo de arquivo
+#### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação que inclui um arquivo como um anexo ao criar uma postagem.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_post"
+  "name": "create_file_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 142
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
-  "name": "name-value",
-  "contentBytes": "contentBytes-value"
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "Which quarter does that file cover? See my attachment."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.fileAttachment",
+      "name": "Another file as attachment",
+      "contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+    } ]
+  }
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -89,99 +104,105 @@ Content-length: 142
 
 ---
 
-
-No corpo da solicitação, forneça uma representação JSON do objeto [attachment](../resources/attachment.md).
-
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "name": "create_file_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 162
-
-{
-  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
-}
+HTTP/1.1 202 Accpted
 ```
 
-## <a name="example-item-attachment"></a>Exemplo (anexo de item)
+### <a name="example-2-include-an-item-attachment"></a>Exemplo 2: incluir um anexo de item
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação que inclui um evento como um anexo ao criar uma postagem.
 
-<!-- { "blockType": "ignored" } -->
-
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
+}-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 100
 
 {
-  "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "name-value",
-  "item": { }
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "I attached an event."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.itemAttachment",
+      "name": "Holiday event", 
+      "item": {
+          "@odata.type": "microsoft.graph.event",
+          "subject": "Discuss gifts for children",
+          "body": {
+              "contentType": "HTML",
+              "content": "Let's look for funding!"
+          },
+          "start": {
+              "dateTime": "2019-12-02T18:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "end": {
+              "dateTime": "2019-12-02T19:00:00",
+              "timeZone": "Pacific Standard Time"
+          }
+      }
+    } ]
+  }
 }
 ```
 
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "name": "create_item_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 162
-
-{
-  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
-}
+HTTP/1.1 202 Accepted
 ```
 
-## <a name="example-reference-attachment"></a>Exemplo (anexo de referência)
+### <a name="example-3-include-a-reference-attachment"></a>Exemplo 3: incluir um anexo de referência
 
-##### <a name="request"></a>Solicitação
-Veja um exemplo de uma solicitação que adiciona um anexo de referência a uma postagem existente.
+#### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação que inclui um anexo de referência ao criar uma postagem.
 O anexo aponta para uma pasta no OneDrive.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_post",
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
-
-```
-POST https://graph.microsoft.com/beta/groups/c75831bdfad/threads/AAQkAGF97XEKhULw/posts/AAMkAGFcAAA/attachments
+```http
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 319
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "I attached a reference to a file on OneDrive."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.referenceAttachment", 
+      "name": "Personal pictures", 
+      "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
+      "providerType": "oneDriveConsumer", 
+      "permission": "Edit", 
+      "isFolder": "True"
+    } ]
+  }
+}
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -197,32 +218,14 @@ Content-length: 319
 ---
 
 
-##### <a name="response"></a>Resposta
-Veja um exemplo de resposta completa.
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_with_post"
 } -->
 ```http
-HTTP 201 Created
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/groups/c75831bdfad/threads/AAQkAGF97XEKhULw/posts/AAMkAGFcAAA/attachments/$entity",
-  "@odata.type": "#microsoft.graph.referenceAttachment",
-  "id": "AAMkAGE1Mg72tgf7hJp0PICVGCc0g=",
-  "lastModifiedDateTime": "2016-03-12T06:04:38Z",
-  "name": "Personal pictures",
-  "contentType": null,
-  "size": 382,
-  "isInline": false,
-  "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-  "providerType": "oneDriveConsumer",
-  "thumbnailUrl": null,
-  "previewUrl": null,
-  "permission": "edit",
-  "isFolder": true
-}
+HTTP/1.1 202 Accpted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: ff75545b7f591a920ed4a1ffd65bff40cff8439b
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: d4f9cd2e8608a29a34ccd0c8bdf54fafa77fee33
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450703"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622611"
 ---
 # <a name="emailactivitystatistics-resource-type"></a>tipo de recurso emailActivityStatistics
 
@@ -42,6 +42,8 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.activityStatistics",
+  "keyProperty": "id", 
   "optionalProperties": [
 
   ],

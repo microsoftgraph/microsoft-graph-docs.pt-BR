@@ -3,20 +3,20 @@ title: Excluir anexo
 description: Excluir um anexo de um evento de calendário, mensagem, tarefa do Outlook ou postagem.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 53a56b720ed1b1b2def64916f25831473cc79555
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: f3e4a06e86ef5da90851a84055e3162ae475129f
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408181"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622555"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um anexo de um [evento](../resources/event.md)de calendário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).
+Excluir um anexo de um [evento](../resources/event.md)de calendário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md)de um usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,20 +33,44 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Anexos de um [evento](../resources/event.md).
-
+Anexos de um [evento](../resources/event.md) no [calendário](../resources/calendar.md)padrão do usuário.
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
+
+DELETE /me/calendar/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-<!--
+Anexos de um [evento](../resources/event.md) no [calendário](../resources/calendar.md) especificado pertencente ao usuário.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+```
+
+<!-- Tried adding and getting group event with attachment, event exists but without attachment. Group event attachment not supported.
 DELETE /groups/{id}/events/{id}/attachments/{id}
+DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
+Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence ao [calendarGroup](../resources/calendargroup.md) padrão do usuário.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+
+DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+```
+Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+
+Attachments for a [message](../resources/message.md) in a user's mailbox.
 <!-- { "blockType": "ignored" } -->
 
 ```http

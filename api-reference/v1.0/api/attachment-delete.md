@@ -2,19 +2,19 @@
 title: Excluir anexo
 description: Exclua um anexo de um evento de calendário, email ou postagem de grupo.
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78b8fd39741fb58b4386a70bc463de2cf4a4d546
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8482bdc9a19ea1ba5febc805970e0faca83446e3
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347714"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622541"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
-Exclua um anexo de um evento de calendário, email ou postagem de grupo.
+Excluir um anexo de um evento de calendário de usuário, mensagem de email ou postagem de grupo.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -27,17 +27,24 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 
 ## <a name="http-request"></a>Solicitação HTTP
-Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário ou grupo.
+Anexos de um [evento](../resources/event.md) no [calendário](../resources/calendar.md)padrão do usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
 
-DELETE /me/calendar/{id}/events/{id}/attachments/{id}
+DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-<!--
+Anexos de um [evento](../resources/event.md) no [calendário](../resources/calendar.md) especificado pertencente ao usuário.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+```
+
+<!-- Tried adding and getting group event with attachment, event exists but without attachment. Assume group event attachment not supported.
 DELETE /groups/{id}/events/{id}/attachments/{id}
 DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->

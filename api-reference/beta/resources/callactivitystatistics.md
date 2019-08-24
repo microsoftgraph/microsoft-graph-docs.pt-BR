@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 014cec3f8adab9f8d41b9f3062b38898b9956bb6
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: dfd75ac3cec0b4580bff58555754585274977c2d
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450705"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622618"
 ---
 # <a name="callactivitystatistics-resource-type"></a>tipo de recurso callActivityStatistics
 
@@ -40,8 +40,9 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.activityStatistics",
+  "keyProperty": "id", 
   "optionalProperties": [
-
   ],
   "@odata.type": "microsoft.graph.callActivityStatistics"
 }--> 
