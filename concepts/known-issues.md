@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 6a3d6c583227c1f8a8955fc4fc008e4bab9f55c9
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: e32474745bb605bd0f9d1451cf8a8818cb06e7e5
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245655"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622646"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -81,10 +81,6 @@ Exemplos de recursos de grupo que oferecem suporte somente a permissões delegad
 ### <a name="policy"></a>Política
 
 O uso do Microsoft Graph para criar e nomear um grupo do Office 365 ultrapassa qualquer política de grupo do Office 365 que seja configurada pelo Outlook Web App.
-
-### <a name="adding-and-getting-attachments-of-group-posts"></a>Adicionando e obtendo anexos de postagens de grupo
-
-A [adição](/graph/api/post-post-attachments?view=graph-rest-1.0) de anexos a postagens de grupo a [listagem](/graph/api/post-list-attachments?view=graph-rest-1.0) e a obtenção de anexos de postagens do grupo atualmente retornam a mensagem de erro "A solicitação de OData não tem suporte." Uma correção foi implementada nas versões `/v1.0` e `/beta`, e deve estar amplamente disponível até o final de janeiro de 2016.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Definir a propriedade allowExternalSenders
 
