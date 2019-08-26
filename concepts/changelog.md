@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: cb8f3d0f1c5aeae8f14bb240de82802f93dc68d8
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 2a8728e2bd3cadaafc0710953427c81980def5b3
+ms.sourcegitcommit: 0d57eda47899baacc95385e331979880e069fba9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36462002"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36564731"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -93,7 +93,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | v1.0  | Propriedade **ownerPrincipalName** adicionada à entidade [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 | Adição        | v1.0  | Foram adicionadas as propriedades **office365Active** e **office365Inactive** à entidade [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
 
-### <a name="social-and-workplace-intelligence-analytics"></a>Inteligência social e no loca de trabalho: (Análises)
+### <a name="social-and-workplace-intelligence"></a>Inteligência social e do local de trabalho
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1598,7 +1598,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta       | A [API de segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta) foi adicionada, incluindo os seguintes recursos e operações:<br/>[alerta](/graph/api/resources/alert?view=graph-rest-beta) (e entidades relacionadas)<br/>[Obter alerta](/graph/api/alert-get?view=graph-rest-beta)<br/>[Listar alertas](/graph/api/alert-list?view=graph-rest-beta)<br/>[Atualizar alertas](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>A seguinte documentação de suporte foi adicionada:<br/>[Erros](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Integrar com um SIEM](security-siemintegration.md)
+| Adição        | Beta       | A [API de segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta) foi adicionada, incluindo os seguintes recursos e operações:<br/>[alerta](/graph/api/resources/alert?view=graph-rest-beta) (e entidades relacionadas)<br/>[Obter alerta](/graph/api/alert-get?view=graph-rest-beta)<br/>[Listar alertas](/graph/api/alert-list?view=graph-rest-beta)<br/>[Atualizar alertas](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>A seguinte documentação de suporte foi adicionada:<br/>[Erros](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Integração das soluções de segurança usando a API de Segurança do Microsoft Graph](security-integration.md)
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
