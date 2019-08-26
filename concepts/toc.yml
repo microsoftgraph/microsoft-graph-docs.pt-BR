@@ -115,7 +115,11 @@ items:
         href: intune-concept-overview.md
         displayName: Intune
       - name: Educação
-        href: education-concept-overview.md
+        items:
+          - name: Visão geral
+            href: education-concept-overview.md
+          - name: 'Listas de critérios de avalição '
+            href: education-rubric-overview.md
       - name: Arquivos
         href: onedrive-concept-overview.md
         displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
