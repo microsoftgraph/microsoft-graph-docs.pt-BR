@@ -1,22 +1,22 @@
 ---
 title: Obter conversationMember
-description: Recuperar um membro de um bate-papo.
-author: nkramer
+description: Recuperar um membro de um chat ou canal.
+author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ff0ec4dfd39c4f5d2c54be567869d23f362eb87
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a1c4b522a828fcf08fe3b6385f6074aec4497b2a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417820"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633318"
 ---
 # <a name="get-conversationmember"></a>Obter conversationMember
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar um [conversationMember](../resources/conversationmember.md) de um [bate-papo](../resources/chat.md).
+Recuperar um [conversationMember](../resources/conversationmember.md) de um [chat](../resources/chat.md) ou [canal](../resources/channel.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,15 +24,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|Chat.Read, Chat.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Para o recurso de **usuário** ou **chat** :<br/>Chat.Read, Chat.ReadWrite<br/><br/>Para o recurso de **canal**:<br/>Group.Read.All, Group.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo |Chat.Read.All, Chat.ReadWrite.All |
+|Aplicativo| Para o recurso de **usuário** ou **chat** :<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>Para o recurso de **canal**:<br/>Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{id}/members/{id}
 GET /users/{id}/chats/{id}/members/{id}
+GET /teams/{id}/channels/{id}/members/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -55,7 +56,7 @@ Se bem-sucedido, este método retornará um código de resposta `200 OK` e um ob
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 
@@ -81,10 +82,9 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 ---
 
+### <a name="response"></a>Resposta
 
-##### <a name="response"></a>Resposta
-
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

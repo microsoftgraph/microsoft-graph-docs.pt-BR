@@ -1,23 +1,22 @@
 ---
 title: Tipo de recurso de usuário
 description: 'Um canal é uma coleção de chatMessages dentro de uma equipe. '
-author: nkramer
+author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f78d6e8730e5f8168cbff94fa03dfbf5287dc5ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a8c6239cc91eb10ecec5d2e037ffa9364e55646e
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012986"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633675"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Teams](../resources/team.md) é formado por canais que são as conversas que você tem com seus colegas. Cada canal é dedicado a um tópico específico, departamento ou projeto.
-Os canais estão onde o trabalho é feito - onde conversas via texto, áudio e vídeo abertas para toda a equipe ocontecem, onde os arquivos são compartilhados e as guias são adicionadas.
+[Teams](../resources/team.md) é formado por canais que são as conversas que você tem com seus colegas. Cada canal é dedicado a um tópico específico, departamento ou projeto. Os canais estão onde o trabalho é feito - onde conversas via texto, áudio e vídeo abertas para toda a equipe ocontecem, onde os arquivos são compartilhados e as guias são adicionadas.
 
 ## <a name="methods"></a>Métodos
 
@@ -29,7 +28,12 @@ Os canais estão onde o trabalho é feito - onde conversas via texto, áudio e v
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Atualize as propriedades do canal.|
 |[Delete channel](../api/channel-delete.md) | Nenhum | Exclua um canal.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens em um canal. |
-|[Criar uma chatMessage em um canal](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
+|[Listar membros do canal](../api/conversationmember-list.md)| coleção [conversationMember](conversationmember.md)| Liste os membros de um canal. |
+|[Obter membros do canal](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Obter um membro de um canal. |
+|[Adicionar membro do canal](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Adicionar um membro a um canal. Compatível apenas com o `channelType` de `private`.|
+|[Atualizar membro do canal](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Atualizar um membro de um canal. Compatível apenas com o `channelType` de `private`.|
+|[Excluir membro do canal](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Excluir um membro de um canal. Compatível apenas com o `channelType` de `private`.|
+|[Criar chatMessage em um canal](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
 |[Criar uma resposta chatMessage em um canal](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal.|
 |[Listar guias](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
 |[Obter guia](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Ler uma guia fixada a um canal.|
@@ -37,28 +41,29 @@ Os canais estão onde o trabalho é feito - onde conversas via texto, áudio e v
 |[Remover guia](../api/teamstab-delete.md) | Nenhum | Remover (desafixar) uma guia de um canal.|
 |[Guia de atualização](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualizar as propriedades da guia.|
 
-
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
+
+| Propriedade    | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|String|Descrição textual opcional do canal.|
 |displayName|String|Nome do canal como ele aparecerá ao usuário no Microsoft Teams.|
 |id|String|O identificador exclusivo do canal. Somente leitura.|
-|isFavoriteByDefault|Boolean|Se o canal deve automaticamente ser marcado como “favorito” para todos os membros da equipe. Padrão: `false`.|
+|isFavoriteByDefault|Booliano|Indica se o canal deve automaticamente ser marcado como “favorito” para todos os membros da equipe. Padrão: `false`.|
 |email|Cadeia de caracteres| O endereço de email para enviar mensagens ao canal. Somente leitura.|
 |webUrl|String|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Padrão: standard.|
 
+## <a name="relationships"></a>Relações
 
-## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável. No momento, esse API tem suporte apenas à leitura, mas eventualmente terá suporte a mensagens escritas também.|
 |guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
-
+|membros|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
@@ -76,10 +81,10 @@ Veja a seguir uma representação JSON do recurso
   "id": "string (identifier)",
   "isFavoriteByDefault": true,
   "email": "string",
-  "webUrl": "string"
+  "webUrl": "string",
+  "membershipType": "channelMembershipType"
 }
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1501dfe7860e11b18eebf2c712caef7dbc25da90
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: ee825afa353e0edbc274e0d6024694656503afd7
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36172949"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636117"
 ---
 ```javascript
 
@@ -25,6 +25,6 @@ const featureRolloutPolicy = {
 
 let res = await client.api('/directory/featureRolloutPolicies')
     .version('beta')
-    .post({featureRolloutPolicy : featureRolloutPolicy});
+    .post(featureRolloutPolicy);
 
 ```

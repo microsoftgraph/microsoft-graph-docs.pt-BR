@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 302589e969e46ba0912f1e305ee4cdf5ce9490e1
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 81297af4879ae96719d7e83922bf84231f4b0e46
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710481"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636173"
 ---
 ```javascript
 
@@ -32,6 +32,6 @@ const agreement = {
 
 let res = await client.api('/agreements')
     .version('beta')
-    .post({agreement : agreement});
+    .post(agreement);
 
 ```
