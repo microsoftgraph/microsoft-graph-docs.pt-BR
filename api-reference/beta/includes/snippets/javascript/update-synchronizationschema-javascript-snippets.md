@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 34f3cc862a7c348c9297171258c85a174905cf20
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 83d53fbfb7c386a3d6911b74107df3c0f6dfab7a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35724929"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636209"
 ---
 ```javascript
 
@@ -58,6 +58,6 @@ const synchronizationSchema = {
 
 let res = await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema')
     .version('beta')
-    .put({synchronizationSchema : synchronizationSchema});
+    .put(synchronizationSchema);
 
 ```

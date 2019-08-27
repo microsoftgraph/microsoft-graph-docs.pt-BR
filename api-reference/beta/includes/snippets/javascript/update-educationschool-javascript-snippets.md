@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9aee84a3a1bbd8bc8e4ae2597b3f40983d4ed3cd
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: d02e4d7fe379f9b07dab3a4e7175f1cfbe2d9200
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35714483"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636091"
 ---
 ```javascript
 
@@ -22,6 +22,6 @@ const educationSchool = {
 
 let res = await client.api('/education/schools/10002')
     .version('beta')
-    .update({educationSchool : educationSchool});
+    .update(educationSchool);
 
 ```

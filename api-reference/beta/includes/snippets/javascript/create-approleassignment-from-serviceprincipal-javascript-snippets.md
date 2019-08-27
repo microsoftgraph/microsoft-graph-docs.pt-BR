@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3e88431ec71fdd5ae78e14117747b3655967e4c1
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 8cc8ae4af9fad69a5d5350091690a861a721bc43
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725280"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636261"
 ---
 ```javascript
 
@@ -25,6 +25,6 @@ const appRoleAssignment = {
 
 let res = await client.api('/servicePrincipals/{id}/appRoleAssignments')
     .version('beta')
-    .post({appRoleAssignment : appRoleAssignment});
+    .post(appRoleAssignment);
 
 ```

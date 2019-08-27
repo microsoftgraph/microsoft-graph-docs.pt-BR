@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d29b5fc04349817d17a4051118c621e256acd28a
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: f127c40a2a47385d03cd1d031b4c6961ed65ce72
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931440"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636192"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const teamsAppInstallation = {
 
 let res = await client.api('/users/{id}/teamwork/installedApps')
     .version('beta')
-    .post({teamsAppInstallation : teamsAppInstallation});
+    .post(teamsAppInstallation);
 
 ```

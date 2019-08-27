@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b690c25dd01da7d1ca72a7b7ec44f87fd9c684c3
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: e6bfdae9dfe0d224ce669d561fcdf25899f3bcaa
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720658"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636236"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const plannerBucket = {
 
 let res = await client.api('/planner/buckets')
     .version('beta')
-    .post({plannerBucket : plannerBucket});
+    .post(plannerBucket);
 
 ```

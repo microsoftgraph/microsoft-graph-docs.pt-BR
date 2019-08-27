@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 22c427b03471710aa7285942df1742d55f8015b5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: c9887b517342079486b7b753cb4439a7b60f7d74
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35705565"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636060"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const inferenceClassificationOverride = {
 
 let res = await client.api('/me/inferenceClassification/overrides/{id}')
     .version('beta')
-    .update({inferenceClassificationOverride : inferenceClassificationOverride});
+    .update(inferenceClassificationOverride);
 
 ```
