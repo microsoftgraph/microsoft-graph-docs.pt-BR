@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2a8728e2bd3cadaafc0710953427c81980def5b3
-ms.sourcegitcommit: 0d57eda47899baacc95385e331979880e069fba9
+ms.openlocfilehash: 078bf52f6b80ade9ae46a1a285f979986e269818
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36564731"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633710"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="august-2019"></a>Agosto de 2019
+
+### <a name="education"></a>Educação
+
+| Tipo de alteração | Versão | Descrição                                                                                               |
+| :---------- | :------ | :-------------------------------------------------------------------------------------------------------- |
+| Adição    | beta    | Adicionada nova propriedade **nota** a [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -101,6 +107,14 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | Beta | Introduziu a nova [API de configurações](/graph/api/resources/settings?view=graph-rest-beta) de inteligência no local de trabalho que representa as configurações necessárias para um usuário usar [a API de análise](/graph/api/resources/useranalytics?view=graph-rest-beta). |
 | Adição | Beta | Introduziu o novo recurso [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) e novos tipos de recursos derivados dele: [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta) e [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta). |
 
+### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Adicionada a capacidade de [adicionar membros a um canal privado](/graph/api/conversationmember-add?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a capacidade de [remover membros de um canal privado](/graph/api/conversationmember-delete?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a capacidade de [atualizar a função de um membro em um canal privado](/graph/api/conversationmember-update?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a propriedade `membershipType` ao recurso [channel]](/graph/api/resources/channel?view=graph-rest-beta) para mostrar se um determinado canal é privado ou padrão. |
 
 ## <a name="july-2019"></a>Julho de 2019
 
