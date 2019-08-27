@@ -3,12 +3,12 @@ title: Usar a API do Microsoft Graph
 description: O Microsoft Graph é uma API Web RESTful que permite que você acesse os recursos de serviço do Microsoft Cloud. Depois que você registrar seu aplicativo e obter tokens de autenticação para um usuário ou serviço, é possível fazer solicitações para a API do Microsoft Graph.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 18de281cc0becfacfdabe5fb81a68358f04c3747
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 9f95868069c2ffd404076e5b3baf572e21b61eeb
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840639"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633241"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
@@ -30,7 +30,7 @@ Os componentes de uma solicitação incluem:
 * [{Método HTTP}](#http-methods) – O método HTTP usado na solicitação para o Microsoft Graph.
 * [{versão}](#version) – A versão da API do Microsoft Graph que seu aplicativo está usando.
 * [{recurso}](#resource) – O recurso no Microsoft Graph ao qual você está fazendo referência. 
-* [{Parâmetros-da-consultas}](#query-parameters-optional) –Opções de consulta OData opcionais ou parâmetros do método REST que personalizam a resposta.
+* [{Parâmetros-da-consultas}](#query-parameters) –Opções de consulta OData opcionais ou parâmetros do método REST que personalizam a resposta.
 
 Depois de fazer uma solicitação, uma resposta é retornada, que inclui: 
 
