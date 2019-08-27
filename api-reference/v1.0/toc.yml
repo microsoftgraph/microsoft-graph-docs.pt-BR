@@ -4115,10 +4115,14 @@
               items:
                 - name: Listar canais
                   href: api/channel-list.md
-                - name: Criar canal
-                  href: api/channel-post.md
                 - name: Obter canal
                   href: api/channel-get.md
+                - name: Criar canal
+                  href: api/channel-post.md
+                - name: 'Canal de Atualização '
+                  href: api/channel-patch.md
+                - name: Delete channel
+                  href: api/channel-delete.md
             - name: Catálogo de Aplicativos
               href: resources/teamsapp.md
               items:

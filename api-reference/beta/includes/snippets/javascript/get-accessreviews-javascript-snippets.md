@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fcaa5d2715159fb4b6448b5146cabe50305edabc
+ms.openlocfilehash: 6cf8a7be504ea554cefc7f424f7d908856de8014
 ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633367"
+ms.locfileid: "36633248"
 ---
 ```javascript
 
@@ -15,13 +15,9 @@ const options = {
 
 const client = Client.init(options);
 
-const channel = {
-  displayName: "Architecture Discussion",
-  description: "This channel is where we debate all future architecture plans"
-};
-
-let res = await client.api('/teams/{id}/channels')
+let res = await client.api('/accessReviews')
     .version('beta')
-    .post(channel);
+    .filter('businessFlowTemplateId+eq+'6E4F3D20-C5C3-407F-9695-8460952BCC68'')
+    .get();
 
 ```
