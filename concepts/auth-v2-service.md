@@ -4,18 +4,18 @@ description: Alguns aplicativos chamam o Microsoft Graph com sua própria identi
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a47720844196fef3c870d49bce328e750d65a11b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 106d1f79917427e68df4dcc738fb5720c3dd5ad8
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599868"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633731"
 ---
 # <a name="get-access-without-a-user"></a>Obter acesso sem um usuário
 
 Alguns aplicativos chamam o Microsoft Graph com sua própria identidade e não em nome de um usuário. Em muitos casos, esses são os serviços em plano de fundo ou daemons que podem ser executados em um servidor sem a presença de um usuário conectado. Um exemplo de como um aplicativo pode ser um serviço de arquivamento de email que é ativado e executado durante a noite. Em alguns casos, aplicativos que tenham um usuário conectado no momento talvez precisem chamar o Microsoft Graph com sua própria identidade também. Por exemplo, um aplicativo talvez precise usar a funcionalidade que exige privilégios mais elevados em uma organização do que aqueles realizados pelo usuário conectado.  
 
-Os aplicativos que chamam o Microsoft Graph com sua própria identidade usam o fluxo de concessão de credenciais do cliente OAuth 2.0 para obter tokens de acesso do Azure AD. Neste tópico, vamos orientá-lo pelas etapas básicas para configurar um serviço e usar o fluxo de concessão de credenciais do cliente OAuth para obter um token de acesso.
+Os aplicativos que chamam o Microsoft Graph com sua própria identidade usam o [fluxo de concessão de credenciais do cliente](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) OAuth 2.0 para obter tokens de acesso do Azure AD. Este tópico descreve as etapas básicas para configurar um serviço e usa o fluxo de concessão de credenciais do cliente OAuth para obter um token de acesso.
 
 ## <a name="authentication-and-authorization-steps"></a>Etapas de autenticação e autorização
 
@@ -44,15 +44,15 @@ Com o fluxo de concessão de credenciais do cliente OAuth 2.0, seu aplicativo é
 
 ## <a name="2-configure-permissions-for-microsoft-graph"></a>2. Configure permissões para o Microsoft Graph
 
-Para aplicativos que chamam o Microsoft Graph com sua própria identidade, o Microsoft Graph expõe permissões do aplicativo. (O Microsoft Graph também expõe as permissões delegadas para aplicativos que chamam o Microsoft Graph em nome de um usuário.) Configure previamente as Permissões de aplicativo necessárias quando registrar o aplicativo. As Permissões de aplicativo sempre exigem o consentimento do administrador. Um administrador pode autorizar essas permissões usando o [Portal do Azure](https://portal.azure.com) quando o aplicativo for instalado em sua organização ou pode fornecer uma experiência de inscrição em seu aplicativo por meio da qual os administradores podem concordar com as permissões configuradas. Depois que o consentimento do administrador for registrado pelo Azure AD, seu aplicativo poderá solicitar tokens sem ter que solicitar consentimento novamente. Para obter mais informações sobre as permissões disponibilizadas pelo Microsoft Graph, confira a [Referência de permissões](./permissions-reference.md)
+Para aplicativos que chamam o Microsoft com sua própria identidade, o Microsoft Graph expõe permissões do aplicativo. (O Microsoft Graph também pode expor as permissões delegadas para aplicativos que chamam o Microsoft Graph em nome de um usuário.) Configure previamente as permissões do aplicativo necessárias quando registrar o aplicativo. As permissões do aplicativo sempre exigem o consentimento do administrador. Um administrador pode autorizar essas permissões usando o [Portal do Azure](https://portal.azure.com) quando o aplicativo for instalado em sua organização ou pode fornecer uma experiência de inscrição em seu aplicativo por meio da qual os administradores podem concordar com as permissões configuradas. Depois que o consentimento do administrador for registrado pelo Azure AD, seu aplicativo poderá solicitar tokens sem ter que solicitar consentimento novamente. Para obter mais informações sobre as permissões disponibilizadas pelo Microsoft Graph, confira a [Referência de permissões](./permissions-reference.md)
 
-Para configurar as permissões de aplicativo para seu aplicativo no [Portal de Registro de Aplicativos do Azure](https://go.microsoft.com/fwlink/?linkid=2083908): na página **permissões de API** do aplicativo, escolha **Adicionar uma permissão**, selecione **Microsoft Graph**, e em seguida, escolha as permissões exigidas pelo aplicativo em **Permissões do aplicativo**.
+Para configurar as permissões de aplicativo para seu aplicativo no [Portal de Registros de Aplicativos do Azure](https://go.microsoft.com/fwlink/?linkid=2083908): na página **permissões de API** do aplicativo, escolha **Adicionar uma permissão**, selecione **Microsoft Graph**, e, em seguida, escolha as permissões exigidas pelo aplicativo em **Permissões do aplicativo**.
 
-A captura de tela a seguir mostra a caixa de diálogo **Selecionar Permissões** para Permissões de aplicativo do Microsoft Graph.
+A captura de tela a seguir mostra a caixa de diálogo **Selecionar Permissões** para permissões de aplicativo do Microsoft Graph.
 
 ![Marque a caixa de diálogo Permissões para as Permissões de aplicativo do Microsoft Graph.](./images/auth-v2/v2-application-permissions.png)
 
-> **Observação**: Recomendamos configurar o conjunto com menos privilégios de permissões necessárias para seu aplicativo. Isso proporciona uma experiência muito mais confortável para os administradores do que ter que consentir com uma longa lista de permissões.
+> **Observação**: Recomendamos que você configure o conjunto com menos privilégios de permissões necessárias para seu aplicativo. Isso proporciona uma experiência muito mais confortável para os administradores do que ter que consentir com uma longa lista de permissões.
 
 ## <a name="3-get-administrator-consent"></a>3. Obtenha o consentimento do administrador
 
@@ -203,24 +203,24 @@ Content-Length: 407
 
 Os aplicativos que chamam o Microsoft Graph com sua própria identidade se enquadram em uma dessas categorias:
 
-- Serviços em segundo plano (daemons) que podem ser executados em um servidor sem um usuário conectado.
+- [Serviços em segundo plano (daemons)](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview) que podem ser executados em um servidor sem um usuário conectado.
 - Aplicativos que têm um usuário conectado, mas que também chamam o Microsoft Graph com sua própria identidade. Por exemplo, para usar a funcionalidade que exige privilégios mais elevados do usuário.
 
 Os aplicativos que chamam o Microsoft Graph com sua própria identidade usam a concessão de credenciais do cliente OAuth 2.0 para autenticar com o Azure AD e obter um token. Para o ponto de extremidade da plataforma de identidade da Microsoft, você pode explorar esse cenário ainda mais com os seguintes recursos:
 
-- Para ver um tratamento mais completo do Fluxo de Concessão de Credenciais do Cliente que também inclui respostas de erro, confira o artigo [Azure Active Directory v2.0 e o fluxo de Credenciais do Cliente OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+- Para ver um tratamento mais completo do Fluxo de Concessão de Credenciais do Cliente que também inclui respostas de erro, confira o artigo [Azure Active Directory v2.0 e o fluxo de Credenciais do Cliente OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 - Para obter um exemplo que chama o Microsoft Graph a partir de um serviço, confira o [exemplo do daemon v2.0](https://github.com/Azure-Samples/active-directory-dotnet-daemon-v2) no GitHub.
-- Para obter mais informações sobre bibliotecas de autenticação recomendadas da Microsoft e de terceiros, confira as [bibliotecas de autenticação do Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
+- Para obter mais informações sobre bibliotecas de autenticação recomendadas da Microsoft e de terceiros, confira as [bibliotecas de autenticação da plataforma de identidade da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries).
 
 ## <a name="endpoint-considerations"></a>Considerações sobre o ponto de extremidade
 
-A Microsoft continua oferecendo suporte ao ponto de extremidade do Azure AD. Existem várias diferenças entre a utilização do ponto de extremidade da plataforma de identidade da Microsoft e o ponto de extremidade do Azure AD. Durante o uso do ponto de extremidade do Azure AD:
+A Microsoft continua oferecendo suporte ao ponto de extremidade do Azure AD. Existem [várias diferenças](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison) entre a utilização do ponto de extremidade da plataforma de identidade da Microsoft e o ponto de extremidade do Azure AD. Durante o uso do ponto de extremidade do Azure AD:
 
 - Se o aplicativo for multilocatário, você deve configurá-lo explicitamente para funcionar como multilocatário no [portal do Azure](https://portal.azure.com).
 - Não há administrador no ponto de extremidade (`/adminconsent`). Em vez disso, seu aplicativo pode solicitar consentimento do administrador durante o tempo de execução adicionando o parâmetro `prompt=admin_consent` a uma solicitação de autorização. Para obter mais informações, confira **Como acionar a estrutura do consentimento do Azure AD no tempo de execução** no artigo [Integração de aplicativos com o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 - Os parâmetros nas solicitações de token e de autorização são diferentes. Por exemplo, não existe um parâmetro `scope` nas solicitações do ponto de extremidade do Azure AD. Em vez disso, o parâmetro `resource` é usado para especificar o URI do recurso (`resource=https://graph.microsoft.com`) que a autorização (para consentimento do administrador) ou um token está solicitando.
 
-Para o ponto de extremidade do Azure AD, você pode explorar esse cenário ainda mais com os seguintes recursos:
+Você pode explorar esse cenário ainda mais com os seguintes recursos:
 
-- Para obter links rápidos para uma visão geral, exemplos e um tratamento detalhado do fluxo de Concessão de Credenciais do Cliente, confira **Serviço a serviço**, na **seção de Introdução** da página [Azure Active Directory para desenvolvedores](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide).
-- Para o ponto de extremidade do AD do Azure, você pode usar a Biblioteca de Autenticação do Azure Active Directory (ADAL) para obter tokens do Azure AD. A ADAL está disponível para várias plataformas, incluindo .NET, iOS, Android, JavaScript, Java e Node.js. Para obter mais informações sobre a ADAL e outras bibliotecas de autenticação da Microsoft para o ponto de extremidade do Azure AD, confira as [Bibliotecas de Autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
+- Para saber mais sobre a plataforma de identidade da Microsoft com diferentes tipos de aplicativos, confira os links de **Introdução** na [documentação da plataforma de identidade da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). Este guia contém links para tópicos de visão geral, guias de início rápido, tutoriais, exemplos de código e documentação de protocolo para diferentes tipos de aplicativos compatíveis com a plataforma de identidade da Microsoft.
+- Para saber mais sobre a MSAL (Biblioteca de Autenticação da Microsoft) e o middleware de servidor disponíveis para uso com o ponto de extremidade da plataforma de identidade da Microsoft, confira [Bibliotecas de Autenticação da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).

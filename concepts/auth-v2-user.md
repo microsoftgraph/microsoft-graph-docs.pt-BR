@@ -4,16 +4,16 @@ description: Para usar o Microsoft Graph para ler e gravar recursos em nome de u
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e72fcd846f433c0ceac48ffc6a01f3f61736415a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dc4fa7792cf6913b1a7829c6865dd4a47802f7c7
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599804"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633724"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 
-Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso do Azure AD e anexar o token às solicitações que ele envia para o Microsoft Graph. O fluxo de autenticação exato que você usará para obter tokens de acesso, dependerá do tipo de aplicativo que você está desenvolvendo e se você deseja usar o OpenID Connect para conectar o usuário ao aplicativo. O fluxo de concessão de código de autorização do OAuth 2.0 é um fluxo comum usado por aplicativos nativos e móveis e também por alguns aplicativos Web. Neste tópico, podemos analisar um exemplo de uso esse fluxo.
+Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso da plataforma de identidade da Microsoft e anexá-lo às solicitações que ele envia para o Microsoft Graph. O fluxo de autenticação exato que você usará para obter tokens de acesso dependerá do tipo de aplicativo que você está desenvolvendo e se você deseja usar o OpenID Connect para conectar o usuário ao aplicativo. O fluxo de concessão de código de autorização do OAuth 2.0 é um fluxo comum usado por aplicativos nativos e móveis e também por alguns aplicativos Web. Este tópico analisa um exemplo de uso desse fluxo.
 
 ## <a name="authentication-and-authorization-steps"></a>Etapas de Autenticação e Autorização
 
@@ -31,9 +31,9 @@ Para usar o ponto de extremidade da plataforma de identidade da Microsoft, você
 
 Para configurar um aplicativo para usar o fluxo de concessão do código de autorização do OAuth 2.0, salve os seguintes valores quando registrar o aplicativo:
 
-- A ID do Aplicativo atribuída pelo portal de registro do aplicativo.
+- A ID do Aplicativo (cliente) atribuída pelo portal de registro do aplicativo.
 - Um Segredo do Cliente (aplicativo), que pode ser uma senha ou um par de chaves públicas/particulares (certificado). Isso não é necessário para aplicativos nativos.
-- Uma URL de redirecionamento para seu aplicativo receber respostas do Azure AD.
+- Uma URL de redirecionamento (ou URL de resposta) para seu aplicativo receber respostas do Azure AD.
 
 Para saber como configurar um aplicativo no portal do Azure, confira [Registrar seu aplicativo](./auth-register-app-v2.md).
 
@@ -73,19 +73,19 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ### <a name="consent-experience"></a>Experiência de consentimento
 
-Neste ponto, o usuário será solicitado a digitar suas credenciais para autenticar usando a Microsoft. O ponto de extremidade v2.0 também assegurará que o usuário concordou com as permissões indicadas no parâmetro de consulta `scope`.  Se o usuário não tiver concordado com nenhuma dessas permissões e se um administrador não tiver concordado previamente em nome de todos os usuários na organização, será solicitado aos usuários que autorizem as permissões necessárias.  
+Neste ponto, o usuário será solicitado a digitar suas credenciais para autenticar usando a Microsoft. O ponto de extremidade v2.0 da plataforma de identidade da Microsoft também assegurará que o usuário concordou com as permissões indicadas no parâmetro de consulta `scope`.  Se o usuário não tiver concordado com nenhuma dessas permissões e se um administrador não tiver concordado previamente em nome de todos os usuários na organização, será solicitado aos usuários que autorizem as permissões necessárias.  
 
-Veja um exemplo do diálogo de consentimento apresentado para uma conta da Microsoft:
+O exemplo a seguir mostra a caixa de diálogo de consentimento apresentada para uma conta de usuário da Microsoft.
 
 ![Caixa de diálogo de consentimento da conta da Microsoft](./images/v2-consumer-consent.png)
 
-> **Experimente** Se você tiver uma conta da Microsoft ou uma conta corporativa ou de estudante do Azure, experimente clicando no link abaixo. Depois de entrar, seu navegador deverá ser redirecionado para `https://localhost/myapp/` com um `code` na barra de endereços.
+> **Experimente** Se você tiver uma conta da Microsoft ou uma conta corporativa ou de estudante do Azure, experimente clicando no link a seguir. Depois de entrar, seu navegador deverá ser redirecionado para `https://localhost/myapp/` com um `code` na barra de endereços.
 >
 > <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20user.read%20mail.read&state=12345" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize...</a>
 
 ### <a name="authorization-response"></a>Resposta da autorização
 
-Se o usuário concordar com as permissões que seu aplicativo solicitou, a resposta conterá o código de autorização no parâmetro `code`. Veja um exemplo de uma resposta à solicitação acima. Como o parâmetro `response_mode` na solicitação foi definido como `query`, a resposta é retornada na cadeia de caracteres da consulta da URL de redirecionamento.
+Se o usuário concordar com as permissões que seu aplicativo solicitou, a resposta conterá o código de autorização no parâmetro `code`. Veja um exemplo de uma resposta à solicitação anterior. Como o parâmetro `response_mode` na solicitação foi definido como `query`, a resposta é retornada na cadeia de caracteres da consulta da URL de redirecionamento.
 
 ```
 GET https://localhost/myapp/?
@@ -145,8 +145,8 @@ Embora o token de acesso seja opaco para o aplicativo, a resposta contém uma li
 
 | Parâmetro | Descrição |
 | --- | --- |
-| token_type |Indica o valor de tipo de token. O único tipo a que o Azure AD dá suporte é o token de portador |
-| escopo |Uma lista separada por espaços das permissões do Microsoft Graph para as quais o access_token é válido. |
+| token_type |Indica o valor de tipo de token. O único tipo a que o Azure AD dá suporte é o token de portador. |
+| scope |Uma lista separada por espaços das permissões do Microsoft Graph para as quais o access_token é válido. |
 | expires_in |Por quanto tempo o token de acesso é válido (em segundos). |
 | access_token |O token de acesso solicitado. Seu aplicativo pode usar esse token para chamar o Microsoft Graph. |
 | refresh_token |Um token de atualização OAuth 2.0. Seu aplicativo poderá usar este token para adquirir tokens de acesso adicionais depois que o token de acesso atual expirar.  Os tokens de atualização são de longa duração e podem ser usados para manter o acesso aos recursos por longos períodos de tempo.  Confira mais detalhes na [referência de token v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
@@ -162,7 +162,7 @@ Host: graph.microsoft.com
 
 ```
 
-Uma resposta bem-sucedida terá a seguinte aparência (alguns cabeçalhos de resposta foram removidos):
+Uma resposta bem-sucedida terá a seguinte aparência (alguns cabeçalhos de resposta foram removidos).
 
 ```
 HTTP/1.1 200 OK
@@ -247,24 +247,24 @@ Uma resposta de token bem-sucedida será semelhante ao seguinte.
 
 Você pode chamar o Microsoft Graph em nome de um usuário a partir dos seguintes tipos de aplicativos:
 
-- Aplicativos Nativos/Móveis
-- Aplicativos Web
-- Aplicativos de página única (SPA)
-- Back-end de APIs da Web: por exemplo, em cenários onde um aplicativo de cliente, como um aplicativo nativo, implementa a funcionalidade em um back-end da API da Web. Com o ponto de extremidade da plataforma de identidade da Microsoft, tanto o aplicativo de cliente quanto o back-end da API da Web devem ter a mesma ID do Aplicativo.
+- [Aplicativos Nativos/Móveis](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+- [Aplicativos Web](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [Aplicativos de página única (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [Back-end de APIs da Web](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview): por exemplo, em cenários onde um aplicativo de cliente, como um aplicativo nativo, implementa a funcionalidade em um back-end da API da Web. Com o ponto de extremidade da plataforma de identidade da Microsoft, tanto o aplicativo de cliente quanto o back-end da API da Web devem ter a mesma ID do Aplicativo.
 
-Para mais informações sobre os tipos de aplicativos compatíveis com o ponto de extremidade da plataforma de identidade da Microsoft, consulte [Tipos de aplicativos](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
+Para saber mais sobre os cenários de aplicativo compatíveis com o ponto de extremidade da plataforma de identidade da Microsoft, consulte [Cenários de aplicativo e fluxos de autenticação](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios).
 
 > **Observação**: chamar o Microsoft Graph a partir de uma API da Web autônoma atualmente não tem suporte do ponto de extremidade da plataforma de identidade da Microsoft. Nesse caso, você precisa usar o ponto de extremidade do Azure AD.
 
 Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome de um usuário a partir do ponto de extremidade da plataforma de identidade da Microsoft:
 
 - Para obter links para documentação de protocolos e artigos de introdução a diferentes tipos de aplicativos, confira a [Documentação do ponto de extremidade da plataforma de identidade da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
-- Para obter explicações detalhadas dos fluxos de autenticação, confira os [protocolos do v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols).
+- Para obter explicações detalhadas sobre os tipos de aplicativo e os fluxos de autenticação compatíveis, confira [tipos de aplicativo v2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types).
 - Para obter mais informações sobre o middleware de servidor e bibliotecas de autenticação recomendadas da Microsoft e de terceiros da plataforma de identidade da Microsoft, confira as [bibliotecas de autenticação do Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
 ## <a name="endpoint-considerations"></a>Considerações sobre o ponto de extremidade
 
-A Microsoft continua oferecendo suporte o ponto de extremidade do Azure AD. Existem várias diferenças entre a utilização do ponto de extremidade da plataforma de identidade da Microsoft e o ponto de extremidade do Azure AD. Para o ponto de extremidade do Azure AD:
+A Microsoft continua oferecendo suporte ao ponto de extremidade do Azure AD. Existem [várias diferenças](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison) entre a utilização do ponto de extremidade da plataforma de identidade da Microsoft e o ponto de extremidade do Azure AD. Durante o uso do ponto de extremidade do Azure AD:
 
 - O aplicativo exigirá uma ID de aplicativo diferente (ID do cliente) para cada plataforma.
 - Se o aplicativo for um aplicativo multilocatário, você deve configurá-lo explicitamente para funcionar como multilocatário no [portal do Azure](https://portal.azure.com).
@@ -274,5 +274,5 @@ A Microsoft continua oferecendo suporte o ponto de extremidade do Azure AD. Exis
 
 Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome de um usuário a partir do ponto de extremidade do Azure AD:
 
-- Para obter informações sobre como usar o ponto de extremidade do Azure AD com diferentes tipos de aplicativos, confira os links **Introdução** no [guia do desenvolvedor do Azure Active Directory ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). O guia contém links para tópicos de visão geral, orientações para códigos e documentação de protocolos para diferentes tipos de aplicativos com suporte do ponto de extremidade do Azure AD.
-- Para saber mais sobre a ADAL (Active Directory Authentication Library) e o middleware de servidor disponíveis para uso com o ponto de extremidade do Azure AD, confira as [Bibliotecas de Autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
+- Para saber mais sobre o ponto de extremidade da plataforma de identidade da Microsoft com diferentes tipos de aplicativos, confira os links de **Introdução** na [documentação de desenvolvedor da plataforma de identidade da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). A documentação contém links para tópicos de visão geral, guias de início rápido, tutoriais, exemplos de código e documentação de protocolo para diferentes tipos de aplicativos compatíveis com o ponto de extremidade da plataforma de identidade da Microsoft.
+- Para saber mais sobre a MSAL (Biblioteca de Autenticação da Microsoft) e o middleware de servidor disponíveis para uso com o ponto de extremidade da plataforma de identidade da Microsoft, confira [Bibliotecas de Autenticação da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
