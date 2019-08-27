@@ -1,16 +1,16 @@
 ---
 title: Obter canal
 description: Recuperar as propriedades e os relacionamentos de um canal.
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: apiPageType
-ms.openlocfilehash: 8e3bf6e3ece7a39e2eceef661b29af2e64e6bd06
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8690a832484b607e3dcb788232b599952e49fdd0
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418765"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633409"
 ---
 # <a name="get-channel"></a>Obter canal
 
@@ -19,6 +19,7 @@ ms.locfileid: "36418765"
 Recuperar as propriedades e os relacionamentos de um [canal](../resources/channel.md).
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -41,21 +42,27 @@ GET /teams/{id}/channels/{id}
 Este método dá suporte aos [Parâmetros de consulta OData](/graph/query-parameters) $filter, $select e $expand para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [canal](../resources/channel.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_channel"
@@ -63,6 +70,7 @@ Este é um exemplo da solicitação.
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -77,10 +85,12 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+### <a name="response"></a>Resposta
+
+Veja a seguir um exemplo da resposta.
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +104,8 @@ Content-length: 201
 {
     "description": "description-value",
     "displayName": "display-name-value",
-    "id": "id-value"
+    "id": "id-value",
+    "membershipType": "membership-type-value"
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0bc9fa375e3f22087fbf268933370d8a6222654e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3a7f4e49f50ca4cb26e52d767064cc57b255ce4
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006364"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633703"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -52,6 +52,7 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 | externalId     | String                                | ID da aula no sistema de sincronização.                                                |
 | externalName   | Cadeia de caracteres                                | Nome da aula no sistema de sincronização.                                                |
 | externalSource | cadeia de caracteres                                | Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`. |
+| grade          | string                                | Nível de graduação da turma.                                                               |
 | mailNickname   | String                                | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.                         |
 | term           | [educationTerm]                       | Termo para a classe.                                                                     |
 
@@ -87,6 +88,7 @@ Veja a seguir uma representação JSON do recurso.
   "externalId": "String",
   "externalName": "String",
   "externalSource": "string",
+  "grade": "string",
   "id": "String (identifier)",
   "mailNickname": "String",
   "term": { "@odata.type": "microsoft.graph.educationTerm" }

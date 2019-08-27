@@ -1,16 +1,16 @@
 ---
 title: Canal de patch
 description: Atualiza as propriedades do canal especificado.
-author: nkramer
+author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b6e8cd0369178917d0a1542e36c8a8ea83b6b7f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b951835941c44d4be5f67bf9c9bb0e23cbf288d
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944237"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633381"
 ---
 # <a name="patch-channel"></a>Canal de patch
 
@@ -18,9 +18,8 @@ ms.locfileid: "35944237"
 
 Atualiza as propriedades do [canal](../resources/channel.md)especificado.
 
-> **Observação**: Há um problema conhecido com as permissões do aplicativo e este API. Para saber mais, confira a [lista de problemas conhecidos](/graph/known-issues#application-permissions).
-
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -43,6 +42,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).
 
 ## <a name="response"></a>Resposta
@@ -50,7 +50,9 @@ No corpo da solicitação, fornça uma representação JSON do objeto [canal](..
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -67,7 +69,8 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

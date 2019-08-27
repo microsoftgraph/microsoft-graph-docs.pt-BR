@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: e5dace8eac1e60153661a36b021c049f53b0face
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 687c2ea46e5e5768a14fa84ae74109fee830d5a3
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032561"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633843"
 ---
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
@@ -27,7 +27,7 @@ ms.locfileid: "36032561"
 
 ### <a name="timezonestandard-values"></a>valores de timeZoneStandard
 
-| Valor
+| Membro
 |:-----------------
 | Windows
 | IANA
@@ -47,7 +47,7 @@ ms.locfileid: "36032561"
 
 ### <a name="attendeetype-values"></a>valores de attendetype
 
-| Valor
+| Membro
 |:-------------------------
 | obrigatório
 | opcional
@@ -56,7 +56,7 @@ ms.locfileid: "36032561"
 
 ### <a name="externalaudiencescope-values"></a>valores de externalAudienceScope
 
-| Valor
+| Membro
 |:-------------------------
 | none
 | contactsOnly
@@ -65,7 +65,7 @@ ms.locfileid: "36032561"
 
 ### <a name="automaticrepliesstatus-values"></a>valores de automaticRepliesStatus
 
-| Valor
+| Membro
 |:-------------------------
 | deficiência
 | alwaysEnabled
@@ -91,7 +91,7 @@ ms.locfileid: "36032561"
 
 ### <a name="educationexternalsource-values"></a>valores de educationExternalSource
 
-| Valor
+| Membro
 |:-------------------------
 | activa
 | Manual
@@ -100,7 +100,7 @@ ms.locfileid: "36032561"
 
 ### <a name="educationgender-values"></a>valores de educationGender
 
-| Valor
+| Membro
 |:-------------------------
 | feminino
 | canto
@@ -110,7 +110,7 @@ ms.locfileid: "36032561"
 
 ### <a name="eventtype-values"></a>valores de eventType
 
-| Valor
+| Membro
 |:-------------------------
 | singleInstance
 | ocorrência
@@ -120,7 +120,7 @@ ms.locfileid: "36032561"
 
 ### <a name="sensitivity-values"></a>valores de sensibilidade
 
-| Valor
+| Membro
 |:-------------------------
 | SS
 | pessoal
@@ -130,7 +130,7 @@ ms.locfileid: "36032561"
 
 ### <a name="importance-values"></a>valores de importância
 
-| Valor
+| Membro
 |:-------------------------
 | low
 | SS
@@ -138,14 +138,14 @@ ms.locfileid: "36032561"
 
 
 ### <a name="educationuserrole-values"></a>valores de educationUserRole
-| Valor
+| Membro
 |:---------------------
 | student
 | teacher
 
 ### <a name="meetingmessagetype-values"></a>valores de meetingMessageType
 
-| Valor
+| Membro
 |:-----------------
 | none
 | meetingRequest
@@ -157,7 +157,7 @@ ms.locfileid: "36032561"
 
 ### <a name="followupflagstatus-values"></a>valores de followupFlagStatus
 
-| Valor
+| Membro
 |:-------------------------
 | não sinalizado
 | complete
@@ -166,7 +166,7 @@ ms.locfileid: "36032561"
 
 ### <a name="inferenceclassificationtype-values"></a>valores de inferenceClassificationType
 
-| Valor
+| Membro
 |:-----------------
 | Destaques
 | outro
@@ -174,7 +174,7 @@ ms.locfileid: "36032561"
 
 ### <a name="iosnotificationalerttype-values"></a>valores de iosNotificationAlertType
 
-| Valor
+| Membro
 |:-------------------------
 | deviceDefault
 | Bandeira
@@ -183,7 +183,7 @@ ms.locfileid: "36032561"
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
-| Valor
+| Membro
 |:-------------
 | desconhecido
 | autentica
@@ -199,7 +199,7 @@ ms.locfileid: "36032561"
 
 
 ### <a name="bodytype-values"></a>valores de BodyType
-| Valor
+| Membro
 |:---------
 | texto
 | HTML
@@ -207,7 +207,7 @@ ms.locfileid: "36032561"
 
 ### <a name="locationtype-values"></a>valores LocationType
 
-| Valor
+| Membro
 |:-------------------------
 | Padrão.
 | conferenceRoom
@@ -222,7 +222,7 @@ ms.locfileid: "36032561"
 
 ### <a name="locationuniqueidtype-values"></a>valores de locationUniqueIdType
 
-| Valor
+| Membro
 |:-------------------------
 | desconhecido
 | locationStore
@@ -233,7 +233,7 @@ ms.locfileid: "36032561"
 
 ### <a name="messageactionflag-values"></a>valores de messageActionFlag
 
-| Valor
+| Membro
 |:-------------------------
 | qualquer
 | call
@@ -260,7 +260,7 @@ ms.locfileid: "36032561"
 
 ### <a name="operationstatus-values"></a>valores de operationStatus
 
-| Valor
+| Membro
 |:-----------------
 | NotStarted
 | Executando
@@ -270,7 +270,7 @@ ms.locfileid: "36032561"
 
 ### <a name="onenotepatchactiontype-values"></a>valores de onenotePatchActionType
 
-| Valor
+| Membro
 |:-------------------------
 | Substituir
 | Append
@@ -280,7 +280,7 @@ ms.locfileid: "36032561"
 
 ### <a name="onenotepatchinsertposition-values"></a>valores de onenotePatchInsertPosition
 
-| Valor
+| Membro
 |:-------------------------
 | After
 | Before
@@ -288,7 +288,7 @@ ms.locfileid: "36032561"
 
 ### <a name="phonetype-values"></a>valores de PhoneType
 
-| Valor
+| Membro
 |:-------------------------
 | Casa
 | Business
@@ -304,7 +304,7 @@ ms.locfileid: "36032561"
 
 ### <a name="plannerpreviewtype-values"></a>valores de plannerPreviewType
 
-| Valor
+| Membro
 |:-------------------------
 | Automático
 | nopreview
@@ -315,7 +315,7 @@ ms.locfileid: "36032561"
 
 ### <a name="status-values"></a>valores de status
 
-| Valor
+| Membro
 |:-----------------
 | active
 | atualizado
@@ -326,7 +326,7 @@ ms.locfileid: "36032561"
 
 ### <a name="weekindex-values"></a>valores de weekIndex
 
-| Valor
+| Membro
 |:-------------------------
 | primeiro
 | secundária
@@ -337,7 +337,7 @@ ms.locfileid: "36032561"
 
 ### <a name="dayofweek-values"></a>valores de dayOfWeek
 
-| Valor
+| Membro
 |:-------------------------
 | domingo
 | período
@@ -349,7 +349,7 @@ ms.locfileid: "36032561"
 
 ### <a name="recurrencepatterntype-values"></a>valores recurrencePattern
 
-| Valor
+| Membro
 |:-------------------------
 | diariamente
 | mensal
@@ -361,7 +361,7 @@ ms.locfileid: "36032561"
 
 ### <a name="recurrencerangetype-values"></a>valores de recurrenceRangeType
 
-| Valor
+| Membro
 |:-------------------------
 | endDate
 | noEnd
@@ -369,7 +369,7 @@ ms.locfileid: "36032561"
 
 
 ### <a name="onenotesourceservice-values"></a>valores de onenoteSourceService
-| Valor
+| Membro
 |:---------------------
 | Desconhecido
 | OneDrive
@@ -379,7 +379,7 @@ ms.locfileid: "36032561"
 
 ### <a name="responsetype-values"></a>valores ResponseType
 
-| Valor
+| Membro
 |:-------------------------
 | none
 | organizer
@@ -391,7 +391,7 @@ ms.locfileid: "36032561"
 
 ### <a name="activitydomain-values"></a>valores de activityDomain
 
-| Valor
+| Membro
 |:-------------------------
 | desconhecido
 | trabalho
@@ -401,7 +401,7 @@ ms.locfileid: "36032561"
 
 ### <a name="websitetype-values"></a>valores de WebSiteType
 
-| Valor
+| Membro
 |:-------------------------
 | outro
 | Casa
@@ -596,7 +596,7 @@ Valores possíveis para o método de User Sign.
 
 Valores possíveis para tipos de contas de usuário (Associação de grupo), por definição do Windows.
 
-|Membro|Valor|Descrição|
+|Membro|Member|Descrição|
 |:---|:---|:---|
 |desconhecido|-1|Unknown.|
 |caracteres|,0|Membro do grupo de usuários padrão.|
@@ -605,7 +605,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 ### <a name="riskdetail-values"></a>valores de riskDetail
 
-| Valor
+| Membro
 |:-------------------------
 | adminGeneratedTemporaryPassword
 | userPerformedSecuredPasswordChange
@@ -619,7 +619,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 ### <a name="riskeventtypes-values"></a>valores de riskEventTypes
 
-| Valor
+| Membro
 |:-------------------------
 | unlikelyTravel
 | anonymizedIPAddress
@@ -634,7 +634,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 ### <a name="risklevel-values"></a>valores de riskLevel
 
-| Valor
+| Membro
 |:-------------------------
 | none
 | low
@@ -645,7 +645,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 ### <a name="riskstate-values"></a>valores de risco
 
-| Valor
+| Membro
 |:-------------------------
 | none
 | confirmedSafe

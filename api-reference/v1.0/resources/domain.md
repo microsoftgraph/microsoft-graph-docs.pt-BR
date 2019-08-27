@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4b45e2b071e62b671f87de861391d8ad10affe71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ae25fdc04ff6e9de72539096dde4fe334185434
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032722"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633850"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
 
@@ -48,7 +48,7 @@ Para associar um domínio a um locatário:
 
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|authenticationType|String| Indica o tipo de autenticação configurada para o domínio. O valor é *gerenciado* ou *federado*.<br> *Gerenciado* indica um domínio gerenciado em nuvem onde o Azure ad realiza autenticação do usuário.<br>*Federado* indica que a autenticação é federada com um provedor de identidade, como o Active Directory local do locatário por meio dos serviços de Federação do Active Directory. Não anulável |
+|authenticationType|String| Indica o tipo de autenticação configurada para o domínio. O valor é *gerenciado* ou *federado*.<br> *Gerenciado* indica um domínio gerenciado em nuvem onde o Azure ad realiza autenticação do usuário.<br>*Federado* indica que a autenticação é federada com um provedor de identidade, como o Active Directory local do locatário por meio dos serviços de Federação do Active Directory. Essa propriedade é somente leitura e não é anulável. |
 |availabilityStatus|String| Essa propriedade é sempre NULL, exceto quando a ação [Verify](../api/domain-verify.md) é usada. Quando a ação [Verify](../api/domain-verify.md) é usada, uma entidade de **domínio** é retornada na resposta. A propriedade **availabilityStatus** da entidade de **domínio** na resposta é *AvailableImmediately* ou *EmailVerifiedDomainTakeoverScheduled*.|
 |id|String| O nome totalmente qualificado do domínio. Key, imutável, não anulável, exclusivo |
 |isAdminManaged|Booliano| O valor da propriedade será false se o gerenciamento de registro DNS do domínio tiver sido delegado para o Office 365. Caso contrário, o valor será true. Não anulável |

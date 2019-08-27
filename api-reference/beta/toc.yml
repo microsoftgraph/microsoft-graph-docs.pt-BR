@@ -9484,6 +9484,8 @@
                   href: api/channel-post.md
                 - name: Obter canal
                   href: api/channel-get.md
+                - name: 'Canal de Atualização '
+                  href: api/channel-patch.md
                 - name: Listar mensagens do canal
                   href: api/channel-list-messages.md
                 - name: Obter mensagens do canal
@@ -9511,6 +9513,12 @@
                   href: api/conversationmember-list.md
                 - name: Obter um membro no chat
                   href: api/conversationmember-get.md
+                - name: Adicionar um membro a um chat
+                  href: api/conversationmember-add.md
+                - name: Remover um membro de um chat
+                  href: api/conversationmember-delete.md
+                - name: Atualizar a função de um membro no chat
+                  href: api/conversationmember-update.md
             - name: Mensagem de chat
               href: resources/chatmessage.md
               items:
@@ -9531,7 +9539,7 @@
                   href: api/teamsapp-update.md
                 - name: Remover aplicativo do catálogo
                   href: api/teamsapp-delete.md
-            - name: App
+            - name: Aplicativos
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -9695,7 +9703,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskfolders.md
-                - name: Create
+                - name: Criar
                   href: api/outlookuser-post-taskfolders.md
                 - name: Obter
                   href: api/outlooktaskfolder-get.md
@@ -9770,7 +9778,7 @@
         - name: Workbooks e gráficos
           displayName: Excel
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/excel.md
             - name: Workbook
               href: resources/workbook.md
