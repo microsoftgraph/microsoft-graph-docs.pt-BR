@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 55e61b786fb144f23673d78cd756281daa15990a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 98087bf47fb36bc448147aa809f11f574b055e86
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412408"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667516"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /auditLogs/directoryProvisioning
+GET /auditLogs/provisioning
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -42,7 +42,7 @@ Este método dá suporte ao seguinte parâmetro de consulta OData para ajudar a 
 
 |Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query-parameters#filter-parameter)|Filtra os resultados (linhas). |/`auditLogs/directoryProvisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
+|[$filter](/graph/query-parameters#filter-parameter)|Filtra os resultados (linhas). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 
 Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query_parameters).
 
@@ -97,7 +97,7 @@ Este é um exemplo de solicitação.
 } -->
 
 ```http
-GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
+GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-csharp-snippets.md)]
@@ -133,7 +133,7 @@ Content-type: application/json
 
 {
     
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryProvisioning",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/provisioning",
     "value": [
          {
             "id": "75b5b0ae-9fc5-8d0e-e0a9-7y6a4728de56",
@@ -241,7 +241,7 @@ Este é um exemplo de solicitação.
 } -->
 
 ```http
-GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
+GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-error-csharp-snippets.md)]
@@ -276,7 +276,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryProvisioning",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/provisioning",
     "value": [
         {
             "id": "gc532ff9-r265-ec76-861e-42e2970a8218",

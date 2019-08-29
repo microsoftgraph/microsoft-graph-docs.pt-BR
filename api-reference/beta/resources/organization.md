@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 79fc7676752d4f1ba8363c527c46ac50e9f9afff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c3415edebdb792a931abf2b79a591ef3729d2cf6
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966325"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667502"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -25,7 +25,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Obter organização](../api/organization-get.md) | [organization](organization.md) |Leia as propriedades e as relações do objeto de organização.|
-|[Update](../api/organization-update.md) | [organization](organization.md)  |Atualize o objeto organization. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** e **privacyProfile**. |
+|[Atualizar a organização](../api/organization-update.md) | [organization](organization.md)  |Atualize o objeto organization. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** e **privacyProfile**. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
@@ -62,8 +62,9 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 ## <a name="relationships"></a>Relações
 
-| Relação     | Tipo   |Descrição|
+| Relação  | Tipo  |Descrição|
 |:---------------|:--------|:----------|
+|certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Apenas uma única instância do certificateBasedAuthConfiguration pode ser criada na coleção.  |
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso de organização. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
