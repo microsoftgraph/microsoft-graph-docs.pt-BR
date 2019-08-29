@@ -7965,8 +7965,19 @@
                 - name: Provisionando logs
                   href: resources/provisioningobjectsummary.md
                   items:
-                    - name: Provisionamento de diretório de lista
+                    - name: Provisionamento de lista
                       href: api/provisioningobjectsummary-list.md
+            - name: Configuração de autenticação baseada em certificado
+              href: resources/certificatebasedauthconfiguration.md
+              items:
+                - name: Lista
+                  href: api/certificatebasedauthconfiguration-list.md
+                - name: Obter
+                  href: api/certificatebasedauthconfiguration-get.md
+                - name: Criar
+                  href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                - name: Excluir
+                  href: api/certificatebasedauthconfiguration-delete.md
             - name: Contratos
               href: resources/contract.md
               items:
@@ -8377,7 +8388,7 @@
                     - name: Recursos gerenciados
                       href: resources/governanceresource.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/governanceresource-list.md
                         - name: Obter
                           href: api/governanceresource-get.md
