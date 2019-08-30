@@ -5,16 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f9a77d6d386632df9f617f46af485220680ea1ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd4edf3af292f8266b41f8deab8c06cae564f709
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030419"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667579"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
 Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Office 365.
+
+O número máximo de participantes incluídos em um**evento**e o número máximo de destinatários em uma[eventMessage](eventmessage.md) enviada de uma caixa de correio no Exchange Online é 500. Para obter mais informações, veja [limites de envio](https://docs.microsoft.com/pt-BR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 
@@ -92,7 +94,17 @@ Esse recurso permite:
 |iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa. Por padrão, a hora de início é em UTC.|
 |assunto|String|O texto da linha de assunto do evento.|
 |type|eventType|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura.|
-|webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
+|webLink|String|A URL para abrir o evento no Outlook na Web.<br/><br/>O Outlook na Web abre o evento no navegador se você estiver conectado à sua caixa de correio. Caso contrário, o Outlook na Web solicitará que você entre.<br/><br/>Essa URL pode ser acessada de um iFrame.|
+
+> [!NOTE]
+> A propriedade** weblink** especifica uma URL que abre o evento apenas em versões anteriores do Outlook na Web. Este é o formato da URL, com _{event-id}_ sendo o valor codificado na URL da propriedade**id** :
+>
+> `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
+>
+> Para abrir a URL em uma versão atual do Outlook na Web, converta a URL para o seguinte formato:
+>
+> `https://outlook.office365.com/calendar/item/{event-id}`
+
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
