@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5979a520c51babe7bf516114efa11ed5ecfcb703
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 982457fde0bdd4cb4d5b1305642de5cf3faf6185
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413080"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677180"
 ---
 # <a name="update-plannertask"></a>Atualizar plannertask
 
@@ -38,7 +38,7 @@ PATCH /planner/tasks/{id}
 | If-Match  | Último valor de ETag conhecido para o **plannerTask** a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
@@ -50,12 +50,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
+|prioridade|Int32|Prioridade da tarefa. O intervalo de valores válido é `0` entre `10` e (inclusive), com o valor crescente sendo prioridade`0` mais baixa (tem a `10` maior prioridade e tem a menor prioridade).  Atualmente, o Planner interpreta valores `0` e `1` como "urgente `2` " e `3` `4` como "importante", `5` `6` `7` e como "médio" e `8`, `9`e `10` como "baixo".  Atualmente, o Planner define o `1` valor para "urgente" `3` , para "importante" `5` , para "médio" e `9` para "baixo".|
 |startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |title|String|Título da tarefa.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerTask](../resources/plannertask.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [plannerTask](../resources/plannertask.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -94,7 +95,9 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

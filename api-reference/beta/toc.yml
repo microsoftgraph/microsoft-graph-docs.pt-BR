@@ -9499,6 +9499,8 @@
                   href: api/channel-patch.md
                 - name: Listar mensagens do canal
                   href: api/channel-list-messages.md
+                - name: Delta de obtenção de mensagens de canal
+                  href: api/chatmessage-delta.md
                 - name: Obter mensagens do canal
                   href: api/channel-get-message.md
                 - name: Listar respostas da mensagem

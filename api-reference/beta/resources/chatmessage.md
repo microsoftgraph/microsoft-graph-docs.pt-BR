@@ -1,61 +1,61 @@
 ---
 title: Tipo de recurso chatMessage
-description: Representa uma mensagem de chat individual dentro de uma entidade de canal ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
+description: Representa uma mensagem de chat individual dentro de uma entidade de canal ou chat. A mensagem de chat pode ser uma mensagem de chat raiz ou parte de um thread que é definido pela propriedade **replyToId** na mensagem de chat.
 doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 17b6912312c66bca8b84ccce9d25ac3c83a2edf9
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: a29afea30f0ea1d75f5c7ce1a0713976f10cc298
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460763"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677117"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [bate-papo](chat.md).
-A mensagem pode ser uma mensagem raiz ou parte de um thread definido pela propriedade **replyToId** na mensagem.
+Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [bate-papo](chat.md). A mensagem de chat pode ser uma mensagem de chat raiz ou parte de um thread de resposta definido pela propriedade **replyToId** na mensagem de chat.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[List Channel messages](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | Lista de todas as mensagens raiz em um canal.|
-|[Get Channel message](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Obtenha uma mensagem raiz única de um canal.|
-|[List replies to a message](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| Lista de todas as respostas a uma mensagem no canal.|
-|[Get a reply to a message](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Obtenha uma resposta a uma mensagem única em um canal.|
-|[Criar chat em um canal](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Crie uma nova mensagem de nível superior em um canal.|
-|[Responder a uma mensagem em um canal](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Responder a uma mensagem existente em um canal.|
-|[Criar chat em um chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Envie uma mensagem em uma conversa existente de chat de grupo ou 1:1.|
-|[Listar mensagens em um bate-papo](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Listar mensagens em um bate-papo de grupo ou 1:1. |
-|[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
-|[Listar todas as imagens hospedadas](../api/chatmessagehostedimage-list-hostedimages.md) | coleção [hostedImage](../resources/chatmessagehostedimage.md)| Obter todas as imagens hospedadas em uma mensagem.|
-|[Obter imagem hospedada](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | Obter uma imagem hospedada de uma mensagem.|
-|[Obter bytes de imagem hospedado](../api/chatmessagehostedimage-getbytes.md) | dados de imagem binária | Obtém dados de imagem binária de uma imagem hospedada de uma mensagem.|
+|[Listar canal chat](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | Lista de todas as mensagens de chat raiz em um canal.|
+|[Obter chatMessages em um Delta de canal](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Obter mensagens de chat incrementais em um canal. |
+|[Obter canal chat](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Obtenha uma única mensagem de chat raiz de um canal.|
+|[Listar respostas a um chat](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| Lista de todas as respostas para uma mensagem de chat no canal.|
+|[Obter uma resposta para um chat](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Obter uma única resposta para uma mensagem de chat em um canal.|
+|[Criar chat em um canal](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Criar uma nova mensagem de chat de nível superior em um canal.|
+|[Responder a um chat em um canal](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Responder a uma mensagem de chat existente em um canal.|
+|[Criar chat em um chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Envie uma mensagem de chat em uma conversa existente de chat de grupo ou 1:1.|
+|[Listar chatMessages em um chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Listar mensagens de chat em um bate-papo de grupo ou 1:1. |
+|[Obter chat no chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Obter uma única mensagem de chat em um chat. |
+|[Listar todas as imagens hospedadas](../api/chatmessagehostedimage-list-hostedimages.md) | coleção [hostedImage](../resources/chatmessagehostedimage.md)| Obter todas as imagens hospedadas em uma mensagem de chat.|
+|[Obter imagem hospedada](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | Obter uma imagem hospedada de uma mensagem de chat.|
+|[Obter bytes de imagem hospedado](../api/chatmessagehostedimage-getbytes.md) | dados de imagem binária | Obter dados de imagem binária de uma imagem hospedada de uma mensagem de chat.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID exclusiva da mensagem.|
-|replyToId| cadeia de caracteres | Somente leitura. ID da mensagem pai/raiz do thread. (Aplica-se apenas a mensagens em canais e não em bate-papos) |
-|from|[identitySet](identityset.md)| Somente leitura. Detalhes do remetente da mensagem.|
-|etag| cadeia de caracteres | Somente leitura. O número de versão da mensagem. |
-|messageType|chatMessageType|O tipo de mensagem. Os valores possíveis são: `message`.|
-|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi criada.|
-|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem é criada ou editada, incluindo quando uma resposta é feita (se é uma mensagem raiz em um canal) ou uma reação é adicionada ou removida. |
-|deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de hora em que a mensagem foi excluída ou nulo se não foi excluído. |
-|assunto|string| O assunto da mensagem, em texto simples.|
-|corpo|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. A representação é especificada pelo contentType dentro do corpo. O conteúdo está sempre em HTML se a mensagem contiver um [chatMessageMention](chatmessagemention.md). |
-|summary|string| Texto de resumo da mensagem que pode ser usado para notificações por push e visualizações resumidas ou de fallback. Aplica-se apenas às mensagens de canal, não às mensagens de bate-papo. |
+|replyToId| cadeia de caracteres | Somente leitura. ID da mensagem de chat pai ou mensagem de chat raiz do thread. (Aplicável somente a mensagens de chat em canais que não sejam chats) |
+|from|[identitySet](identityset.md)| Somente leitura. Detalhes do remetente da mensagem de chat.|
+|etag| cadeia de caracteres | Somente leitura. Número de versão da mensagem de chat. |
+|messageType|chatMessageType|O tipo de mensagem de chat. Os valores possíveis são: `message`.|
+|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem de chat foi criada.|
+|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem de chat é criada ou editada, incluindo quando uma resposta é feita (se é uma mensagem de chat raiz em um canal) ou uma reação é adicionada ou removida. |
+|deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora em que a mensagem de chat foi excluída ou nula se não for excluída. |
+|subject|string| O assunto da mensagem de chat, em texto não criptografado.|
+|corpo|[itemBody](itembody.md)|Representação de texto não criptografado/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver um [chatMessageMention](chatmessagemention.md). |
+|summary|string| Texto de resumo da mensagem de chat que pode ser usado para notificações por push e visualizações de resumo ou exibições de retorno. Aplica-se somente a mensagens de chat de canal, e não a mensagens de chat em um chat. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |
-|mentions|[chatMessageMention](chatmessagemention.md) collection| Lista de entidades mencionada na mensagem. Atualmente, dá suporte a usuário, bot, equipe, canal.|
-|importância| chatMessageImportance | A importância da mensagem. Os valores possíveis são: `normal`, `high`, `urgent`.|
-|reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reações para esta mensagem (por exemplo, Curtir).|
-|localidade|cadeia de caracteres|Local da mensagem definido pelo cliente.|
+|mentions|[chatMessageMention](chatmessagemention.md) collection| Lista de entidades mencionadas na mensagem de chat. Atualmente, dá suporte a usuário, bot, equipe, canal.|
+|importância| chatMessageImportance | A importância da mensagem de chat. Os valores possíveis são: `normal`, `high`, `urgent`.|
+|reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reações para esta mensagem de chat (por exemplo, como).|
+|localidade|string|Local da mensagem de chat definida pelo cliente.|
 
 ## <a name="json-representation"></a>Representação JSON
 
