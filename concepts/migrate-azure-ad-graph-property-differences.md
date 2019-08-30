@@ -4,12 +4,12 @@ description: Descreve as diferenças de propriedade entre os recursos de gráfic
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb1e08410cd8345e1a8e531b62f0bdd391861164
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 75a164925171d49d930492ba44029deb0d73e49d
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450617"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667597"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
@@ -193,14 +193,27 @@ O recurso TenantDetails do Azure AD Graph é renomeado para a organização no M
 
 |Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br> propriedade|Comments|
 |---|---|---|
-| **companyLastDirSyncTime** | versão&nbsp;-&nbsp;beta**onPremisesLastSyncDateTime** <br>v 1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
+| **companyLastDirSyncTime** | versão&nbsp;-&nbsp;beta**onPremisesLastSyncDateTime** <br> v 1.0&nbsp;-&nbsp;**onPremisesLastSyncDateTime** |  |
 | **dirSyncEnabled** | versão&nbsp;-&nbsp;beta**onPremisesSyncEnabled** <br> v 1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
-| **provisioningErrors** | versão &nbsp; - &nbsp; beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | Essa propriedade e suas informações são preteridas.|
-| **telephoneNumber** | versão&nbsp;-&nbsp;beta**businessPhones** <br> v 1.0 &nbsp; - &nbsp; **businessPhones** |  |
+| **provisioningErrors** | versão&nbsp;-&nbsp;beta_não disponível_ <br> v 1.0&nbsp;-&nbsp;_não disponível_ | Essa propriedade e suas informações são preteridas.|
+| **telephoneNumber** | versão&nbsp;-&nbsp;beta**businessPhones** <br> v 1.0&nbsp;-&nbsp;**businessPhones** |  |
 
 ## <a name="trustedcasforpasswordlessauth-property-differences"></a>Diferenças da propriedade TrustedCasForPasswordlessAuth
 
-O recurso TrustedCasForPasswordlessAuth do Azure AD Graph foi renomeado para certificateBasedAuthConfiguration no Microsoft Graph.  Não há diferenças de propriedade.
+O recurso TrustedCasForPasswordlessAuth do Azure AD Graph foi renomeado como [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta)e só está disponível na versão beta do Microsoft Graph endpoing. Não há diferenças de propriedade; no entanto, há diferenças no tipo de recurso **certificateAuthority** usado pela propriedade **certificateAuthorities** .
+
+### <a name="certificateauthorityinformation"></a>CertificateAuthorityInformation
+
+O gráfico do Azure AD CertificateAuthorityInformation é renomeado como **certificateAuthority** no Microsoft Graph. A seguir estão as diferenças de propriedade.
+
+|Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br> propriedade|Comments|
+|---|---|---|
+| **authoritytype** | versão&nbsp;-&nbsp;beta**isRootAuthority**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | O tipo dessa propriedade também foi alterado em um Boolean. Anteriormente, essa propriedade deve ser definida como "RootAuthority" ou "IntermediateAuthority". A definição da nova propriedade como **true** equivale a "RootAuthority". |
+| **crlDistributionPoint** | versão&nbsp;-&nbsp;beta**certificateRevocationListUrl** <br> v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
+| **deltaCrlDistributionPoint** | versão&nbsp;-&nbsp;beta**deltaCertificateRevocationListUrl** <br> v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
+| **trustedCertificate** | &nbsp;-&nbsp;**certificado** beta <br> v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
+| **trustedIssuer** | &nbsp;-&nbsp;**emissor** beta<br> v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
+| **trustedIssuerSki** | versão&nbsp;-&nbsp;beta**issuerSki**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 
 ## <a name="next-steps"></a>Próximos passos
 
