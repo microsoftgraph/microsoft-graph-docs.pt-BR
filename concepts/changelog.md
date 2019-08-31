@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 078bf52f6b80ade9ae46a1a285f979986e269818
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: c06335cf1f5892a31b68fe4e3f4810f5757724fb
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633710"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667586"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,12 +17,6 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="august-2019"></a>Agosto de 2019
-
-### <a name="education"></a>Educação
-
-| Tipo de alteração | Versão | Descrição                                                                                               |
-| :---------- | :------ | :-------------------------------------------------------------------------------------------------------- |
-| Adição    | beta    | Adicionada nova propriedade **nota** a [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -71,6 +65,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | Novo recurso [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) adicionado.|
 | Adição | beta | APIs adicionadas para gerenciar recursos do [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta)no [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta).|
 | Adição | beta | Novo recurso [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) adicionado.|
+| Adição    | beta    | Adicionada nova propriedade **nota** a [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
 
 ### <a name="files-onedrive-for-business"></a>Arquivos (OneDrive for Business)
 
@@ -82,12 +77,17 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
+| Alteração | Beta | Alteração do namespace [List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta).|
 | Adição | Beta | Adicionado o recurso[ roleManagement](/graph/api/resources/roleManagement?view=graph-rest-beta) que fornece acesso a definições de função e atribuições de funções que surgem de provedores de RBAC. |
 | Adição | Beta | Adicionado o recurso[unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) que representa um conjunto de permissões que lista as operações que podem ser realizadas. |
 | Adição | Beta | Adicionado o recurso[unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) que concede acesso aos recursos. |
 | Adição | Beta | Adicionadas estas operações abaixo para dar suporte ao recurso unifiedRoleDefinition: <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - Obter uma lista de objetos do recurso unifiedRoleDefinition para o provedor.</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - Criar um novo objeto no unifiedRoleDefinition.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - Recupere as propriedades e relações de um objeto de definição de função unificado.</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) -Atualize as propriedades de um objeto no unifiedRoleDefinition.</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - Excluir um objeto no unifiedRoleDefinition.</li></ul> |
 | Adição | Beta | Estas operações abaixo foram adicionadas para dar suporte ao recurso unifiedRoleDefinition: <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - Obter uma lista de objetos do recurso unifiedRoleAssignment para o provedor.</li><li>[Create unifiedRoleAssignment]() - Criar um novo objeto no recurso unifiedRoleAssignment.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - Recupere as propriedades e relações de um objeto no unifiedRoleAssignment.</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - Excluir um objeto unifiedRoleAssignment. |
-| Adição | Beta | Adicionou a operação [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta). |
+| Adição | Beta | Adicionado a operação [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta). |
+|Adição  | Beta | Adicionado as [permissões delegadas e de aplicativo para a leitura de contatos organizacionais](permissions-reference.md#organizational-contact-permissions): OrgContact.Read.All |
+| Adição | beta | Adicionada nova entidade [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta). |
+| Adição | beta | Adicionado novo tipo de complexo [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta). |
+| Adição | beta | Adicionada uma nova relação para o **certificateBasedAuthConfiguration** do recurso da [organização](/graph/api/resources/organization?view=graph-rest-beta). Isso permite [uma autenticação baseada em certificado do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
 
 ### <a name="reports"></a>Relatórios
 

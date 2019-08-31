@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 25f5f7df625aabaf4ace2f54b77537cd456981ab
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: bd3f87afdf7aa9b110dd02e9798705a8acbe1c3f
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450680"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667544"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -985,6 +985,7 @@ Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _off
 | _Organization.Read.All_ |Ler informações da organização | Permite que o aplicativo leia a organização e os recursos relacionados sem um usuário conectado. Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário. | Sim |
 | _Organization.ReadWrite.All_ |Ler e gravar informações da organização | Permite que o aplicativo leia e grave a organização e os recursos relacionados sem um usuário conectado. Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário. |Sim |
 
+
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado	
@@ -995,6 +996,30 @@ Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _off
 #### <a name="application"></a>Aplicação
 
 * _Organization.ReadWrite.All_: Atualizar as informações da organização (como **technicalNotificationMails**) (`PATCH /organization/{id}`).
+
+---
+
+## <a name="organizational-contact-permissions"></a>Permissões de contato organizacional
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _OrgContact.Read.All_ | Contatos organizacionais|Permite ao aplicativo ler todos os contatos organizacionais em nome do usuário conectado. Esses contatos são gerenciados pela organização e são diferentes dos contatos pessoais de um usuário.|Sim | Não |
+
+<br/>
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _OrgContact.Read.All_ |Contatos organizacionais | Permite ao aplicativo ler todos os contatos organizacionais sem um usuário conectado.  Esses contatos são gerenciados pela organização e são diferentes dos contatos pessoais de um usuário. | Sim |
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado	
+
+* _OrgContact.Read.All_: Obter todos os contatos organizacionais (`GET /contacts`).
 
 ---
 
