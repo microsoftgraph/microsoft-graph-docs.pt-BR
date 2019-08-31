@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a8c6239cc91eb10ecec5d2e037ffa9364e55646e
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: cdcb7f10d068372c167f65a7868672a7cb669107
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633675"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677122"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -27,7 +27,8 @@ ms.locfileid: "36633675"
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Leia as propriedades e as relações do canal.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Atualize as propriedades do canal.|
 |[Delete channel](../api/channel-delete.md) | Nenhum | Exclua um canal.|
-|[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens em um canal. |
+|[Obter o delta de mensagem](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens incrementais em um canal. |
+|[Listar mensagens do canal](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens em um canal. |
 |[Listar membros do canal](../api/conversationmember-list.md)| coleção [conversationMember](conversationmember.md)| Liste os membros de um canal. |
 |[Obter membros do canal](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Obter um membro de um canal. |
 |[Adicionar membro do canal](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Adicionar um membro a um canal. Compatível apenas com o `channelType` de `private`.|
@@ -43,7 +44,7 @@ ms.locfileid: "36633675"
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade    | Tipo |Descrição|
+| Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|String|Descrição textual opcional do canal.|
 |displayName|String|Nome do canal como ele aparecerá ao usuário no Microsoft Teams.|
@@ -55,7 +56,7 @@ ms.locfileid: "36633675"
 
 ## <a name="relationships"></a>Relações
 
-| Relação | Tipo   |Descrição|
+| Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável. No momento, esse API tem suporte apenas à leitura, mas eventualmente terá suporte a mensagens escritas também.|
 |guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
