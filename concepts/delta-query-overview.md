@@ -3,12 +3,12 @@ title: Usar a consulta delta para controlar alterações nos dados do Microsoft 
 description: A consulta delta permite que aplicativos localizem entidades recém-criadas, atualizadas ou excluídas sem executar uma leitura completa do recurso de destino com cada solicitação. Os aplicativos do Microsoft Graph podem usar consulta delta para sincronizar, com eficiência, alterações com armazenamento de dados local.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e053811ae0c070f767ea8aefc20d768d188d355a
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: 6a7dee807c35bb790d122941f381b8541054e87f
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820798"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677110"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -98,8 +98,9 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 | Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta?view=graph-rest-1.0) do recurso [contato](/graph/api/resources/contact?view=graph-rest-1.0)                                             |
 | Escolas (pré-visualização)                                              | Função [delta](/graph/api/educationschool-delta?view=graph-rest-beta) do recurso [Escola](/graph/api/resources/educationschool?view=graph-rest-beta) (pré-visualização)                  |
 | Entidades de serviço (visualização)                                   | Função [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) do recurso [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) (visualização)      |
-| Usuários                                                          | função [delta](/graph/api/user-delta?view=graph-rest-1.0) do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0)                                                      |
-| Itens do Planner\*\* (pré-visualização)                                    | Função [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (visualização) |
+| Usuários                                                          | função [delta](/graph/api/user-delta?view=graph-rest-1.0) do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0) |
+| Itens do Planner\*\* (pré-visualização)                                    | função [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (visualização)|
+| chatMessages em um canal (visualização)                            | função [delta](/graph/api/chatmessage-delta?view=graph-rest-beta) do recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) |
 
 > \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas pequenas diferenças de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](/graph/api/driveitem-delta?view=graph-rest-1.0).
 
