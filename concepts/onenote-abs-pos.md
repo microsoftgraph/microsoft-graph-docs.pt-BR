@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 9630741091be52de8791f560a13b225ccce2e218
 ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/24/2019
 ms.locfileid: "32560926"
@@ -129,7 +129,7 @@ Outros atributos de posição, como `z-index`, são ignorados. As imagens posici
 
 A API do OneNote retorna as seguintes informações na resposta.
 
-| Dados de resposta | Descrição |  
+| Dado de resposta | Descrição |  
 |:------|:------|  
 | Código de êxito | Um código de status HTTP 201 para uma solicitação POST bem-sucedida e um código de status HTTP 204 para uma solicitação PATCH bem-sucedida. |  
 | Erros | Leia [Códigos de erro para APIs do OneNote no Microsoft Graph](onenote-error-codes.md) para saber mais sobre erros do OneNote que poderão ser retornados pelo Microsoft Graph. |  
