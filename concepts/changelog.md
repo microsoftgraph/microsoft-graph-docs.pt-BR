@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c06335cf1f5892a31b68fe4e3f4810f5757724fb
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: 7a3e2c172910d1edeb32015f9ee515dbee122b51
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667586"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677138"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -60,6 +60,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada nova propriedade **nota** a [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta).|
 | Adição | beta | Novo recurso[educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) adicionado.|
 | Adição | beta | APIs adicionadas para gerenciar recursos do [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) no [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta)e [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
 | Adição | beta | Novo recurso [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) adicionado.|
@@ -105,16 +106,23 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | Beta | Introduziu a nova [API de análise](/graph/api/resources/useranalytics?view=graph-rest-beta) de inteligência no local de trabalho que permite obter análises sobre como os usuários gastam seu tempo em várias atividades durante e fora do horário de trabalho, incluindo chamadas, chats (mensagens instantâneas), emails, foco de trabalho e reuniões. |
 | Adição | Beta | Introduziu a nova [API de configurações](/graph/api/resources/settings?view=graph-rest-beta) de inteligência no local de trabalho que representa as configurações necessárias para um usuário usar [a API de análise](/graph/api/resources/useranalytics?view=graph-rest-beta). |
-| Adição | Beta | Introduziu o novo recurso [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) e novos tipos de recursos derivados dele: [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta) e [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta). |
+| Adição | Beta | Introdução do novo recurso [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) e novos tipos de recursos derivados dele: [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta) e [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta). |
+
+### <a name="tasks-and-plans-planner"></a>Tarefas e planos (Planner)
+
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|Beta|Adicionada a propriedade de **prioridade** à entidade [plannerTask](/graph/api/resources/plannertask?view=graph-rest-beta).|
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Foi adicionada a capacidade de extrair mensagens incrementais dos canais pela [API de consulta delta de mensagens do canalI](/graph/api/channel-messages-delta?view=graph-rest-beta).|
 | Adição | Beta | Adicionada a capacidade de [adicionar membros a um canal privado](/graph/api/conversationmember-add?view=graph-rest-beta). |
 | Adição | Beta | Adicionada a capacidade de [remover membros de um canal privado](/graph/api/conversationmember-delete?view=graph-rest-beta). |
 | Adição | Beta | Adicionada a capacidade de [atualizar a função de um membro em um canal privado](/graph/api/conversationmember-update?view=graph-rest-beta). |
-| Adição | Beta | Adicionada a propriedade `membershipType` ao recurso [channel]](/graph/api/resources/channel?view=graph-rest-beta) para mostrar se um determinado canal é privado ou padrão. |
+| Adição | Beta | Foi adicionada a propriedade `membershipType` ao recurso de [canal](/graph/api/resources/channel?view=graph-rest-beta) para mostrar se um determinado canal é privado ou padrão. |
 
 ## <a name="july-2019"></a>Julho de 2019
 
