@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 44d24c2757d690542a5afdcc7496d92551502aea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 38fb2a38d6c589c8bd0543a5e0c210518eb1ba0d
+ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030398"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699125"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
@@ -93,7 +93,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->Observação: se a id da sessão tiver expirado, um código de erro HTTP `404` será retornado na sessão. Nesse cenário, você pode optar por criar uma nova sessão e continuar. Outra abordagem seria atualizar a sessão periodicamente para manter a sessão ativa. Normalmente, a sessão persistente expira após cerca de sete minutos de inatividade. A sessão não persistente expira após cerca de cinco minutos de inatividade. 
+>Observação: se a id da sessão tiver expirado, um código de erro HTTP `404` será retornado na sessão. Nesse cenário, você pode optar por criar uma nova sessão e continuar. Outra abordagem seria atualizar a sessão periodicamente para manter a sessão ativa. Geralmente, a sessão persistente expira após cerca de 5 minutos de inatividade. A sessão não persistente expira após cerca de 7 minutos de inatividade. 
 
 ## <a name="common-excel-scenarios"></a>Cenários comuns do Excel
 
