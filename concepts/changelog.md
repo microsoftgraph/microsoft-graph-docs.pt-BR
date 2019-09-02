@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7a3e2c172910d1edeb32015f9ee515dbee122b51
-ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
+ms.openlocfilehash: c63f5675b65130a0e63d3ab78f28cea17c68d278
+ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36677138"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699229"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -55,6 +55,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionado o membro **setDeviceName** ao tipo enumerado [remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta)|
 |Adição|beta|Adicionado os membros **error** e **pending** ao tipo enumerado [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro **noScheduledScan** ao tipo enumerado [weeklySchedule](/graph/api/resources/intune-deviceconfig-weeklyschedule?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade de navegação **derivedCredentials** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement)|
 
 ### <a name="education"></a>Educação
 
