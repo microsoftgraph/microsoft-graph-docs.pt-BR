@@ -95,8 +95,7 @@ Se você tiver optado por configurar o aplicativo entre dispositivos no Centro d
 
 Para encontrar as IDs:
 
-* 
-  **Serviço de Notificação do Windows** – veja [Registrar seu aplicativo e receber as credenciais para o serviço de nuvem](https://docs.microsoft.com/pt-BR/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) e o [Portal de registro do aplicativo](https://apps.dev.microsoft.com).
+* **Serviço de Notificação do Windows** – veja [Registrar seu aplicativo e receber as credenciais para o serviço de nuvem](https://docs.microsoft.com/pt-BR/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) e o [Portal de registro do aplicativo](https://apps.dev.microsoft.com).
 * **Apple Push Notification Service** – confira [Visão geral de APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** – veja [Mensagens em nuvem Firebase](https://firebase.google.com/docs/cloud-messaging/).
 

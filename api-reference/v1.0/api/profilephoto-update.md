@@ -29,8 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 > **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão do aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service).
 
-> 
-  **Observação:** Há um [problema conhecido](https://docs.microsoft.com/pt-BR/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
+> **Observação:** Há um [problema conhecido](https://docs.microsoft.com/pt-BR/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

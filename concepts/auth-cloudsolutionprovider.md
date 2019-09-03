@@ -13,7 +13,7 @@ ms.locfileid: "35620175"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Chamar o Microsoft Graph por um Provedor de Soluções na Nuvem
 
-> **Observação:** Este tópico se aplica **somente** a desenvolvedores de aplicativos do Provedor de Soluções na Nuvem (CSP) da Microsoft. O programa [Provedor de Soluções na Nuvem (CSP) da Microsoft](https://partner.microsoft.com/en-US/cloud-solution-provider) permite que os parceiros da Microsoft revendam e gerenciem os serviços online da Microsoft para os clientes.
+> **Observação:** Este tópico se aplica **somente** a desenvolvedores de aplicativos do Provedor de Soluções na Nuvem (CSP) da Microsoft. O programa [Provedor de Soluções na Nuvem (CSP) da Microsoft](https://partner.microsoft.com/pt-BR/cloud-solution-provider) permite que os parceiros da Microsoft revendam e gerenciem os serviços online da Microsoft para os clientes.
 
 Este tópico descreve como habilitar o acesso do aplicativo aos dados do cliente gerenciados por parceiros através do Microsoft Graph usando o [fluxo de concessão do código de autorização](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-protocols-oauth-code) ou o [fluxo de credenciais do cliente de serviços](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
@@ -35,8 +35,7 @@ Um aplicativo é exibido como *gerenciado por parceiros* quando recebe permissõ
 
 As etapas iniciais exigidas aqui seguem quase as mesmas etapas usadas para registrar e configurar um aplicativo multilocatário:
 
-1. 
-  [Registre seu aplicativo](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-app-registration) no Locatário do parceiro usando o [Portal do Azure](https://portal.azure.com). Para funcionar como um aplicativo gerenciado por parceiros, o aplicativo deve ser configurado como um [aplicativo multilocatário](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant). Além disso, se o aplicativo for implantado e vendido em diversas regiões geográficas, você precisará registrar seu aplicativo em cada uma dessas regiões conforme descrito <a href="#region">aqui</a>.
+1. [Registre seu aplicativo](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-app-registration) no Locatário do parceiro usando o [Portal do Azure](https://portal.azure.com). Para funcionar como um aplicativo gerenciado por parceiros, o aplicativo deve ser configurado como um [aplicativo multilocatário](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant). Além disso, se o aplicativo for implantado e vendido em diversas regiões geográficas, você precisará registrar seu aplicativo em cada uma dessas regiões conforme descrito <a href="#region">aqui</a>.
 2. Configure seu aplicativo multilocatário, novamente através do Portal do Azure, com as *permissões exigidas* necessárias usando uma abordagem menos privilegiada.
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>Consentimento prévio de seu aplicativo para todos os seus clientes
@@ -79,15 +78,13 @@ Além do acesso previamente consentido a todos os locatários do cliente, os apl
 
 Este é um [fluxo de concessão de código de autorização](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-protocols-oauth-code) padrão, exceto que seus agentes precisam se conectar usando suas contas do parceiro. Para ver como isso ficaria, imagine que o locatário de seu parceiro fosse *parceiro.com* (que é o locatário principal de seus agentes) e um de seus clientes fosse *cliente.com*:
 
-1. 
-  [Adquira um código de autorização:](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Seu aplicativo faz uma solicitação para o ponto de extremidade ```/authorize``` e precisa usar um **locatário de cliente** em nosso exemplo ```customer.com```, para o locatário de destino. Seus agentes ainda se conectariam com a conta ```username@partner.com```.
+1. [Adquira um código de autorização:](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Seu aplicativo faz uma solicitação para o ponto de extremidade ```/authorize``` e precisa usar um **locatário de cliente** em nosso exemplo ```customer.com```, para o locatário de destino. Seus agentes ainda se conectariam com a conta ```username@partner.com```.
 
     ```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. 
-  [Adquira um token de acesso usando o código de autorização:](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Seu aplicativo deve usar um **locatário do cliente** como o locatário de destino, no nosso exemplo ```customer.com```, ao fazer a solicitação para o ponto de extremidade ```token```:
+2. [Adquira um token de acesso usando o código de autorização:](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Seu aplicativo deve usar um **locatário do cliente** como o locatário de destino, no nosso exemplo ```customer.com```, ao fazer a solicitação para o ponto de extremidade ```token```:
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token
@@ -107,7 +104,7 @@ Atualmente, o contrato de cliente do CSP encontra-se limitado a uma única regi�
 
 ## <a name="calling-microsoft-graph-immediately-after-customer-creation"></a>Chamar o Microsoft Graph imediatamente após a criação do cliente
 
-Quando você cria um novo cliente usando a [API do Partner Center](https://partnercenter.microsoft.com/en-us/partner/developer), é criado um novo locatário do cliente. Além disso, uma relação de parceiro também é criada, que torna você o parceiro de registro deste novo locatário do cliente. Essa relação de parceiro pode levar até 3 minutos para ser propagada para o novo locatário do cliente. Se seu aplicativo chamar o Microsoft Graph logo após a criação, é provável que seu aplicativo receba um erro de acesso negado. Um atraso semelhante poderá ocorrer quando um cliente existente aceitar o convite. Isso ocorre porque o consentimento prévio depende da relação de parceiro estar presente no locatário do cliente.
+Quando você cria um novo cliente usando a [API do Partner Center](https://partnercenter.microsoft.com/pt-BR/partner/developer), é criado um novo locatário do cliente. Além disso, uma relação de parceiro também é criada, que torna você o parceiro de registro deste novo locatário do cliente. Essa relação de parceiro pode levar até 3 minutos para ser propagada para o novo locatário do cliente. Se seu aplicativo chamar o Microsoft Graph logo após a criação, é provável que seu aplicativo receba um erro de acesso negado. Um atraso semelhante poderá ocorrer quando um cliente existente aceitar o convite. Isso ocorre porque o consentimento prévio depende da relação de parceiro estar presente no locatário do cliente.
 
 Para evitar esse problema, recomendamos que seu aplicativo de parceiro aguarde **três minutos** após a criação do cliente antes de chamar o Azure AD para obter um token (para chamar o Microsoft Graph). Isso deve abranger a maioria dos casos. No entanto, se após esperar três minutos ainda receber um erro de autorização, aguarde mais 60 segundos e tente novamente.
 

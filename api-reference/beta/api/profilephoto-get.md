@@ -38,8 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)  <br /> **Observação**: não há suporte para a operação de metadados. | Para recurso de **usuário**:<br/>User.Read, User.ReadWrite<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
 |Aplicativo                        | Para recurso de **usuário**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
 
-> 
-  **Observação:** Há um [problema conhecido](https://docs.microsoft.com/pt-BR/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
+> **Observação:** Há um [problema conhecido](https://docs.microsoft.com/pt-BR/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP 
 

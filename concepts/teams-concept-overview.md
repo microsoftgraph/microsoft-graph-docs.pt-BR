@@ -38,8 +38,7 @@ Crie equipes automaticamente para aulas no início do ano letivo e arquive essas
 ### <a name="create-teams-linked-to-your-app"></a>Criar equipes vinculadas ao seu aplicativo
 
 Permita que os clientes criem novas [equipes](/graph/api/resources/team?view=graph-rest-1.0) e [canais](/graph/api/resources/channel?view=graph-rest-1.0). 
-
-  [Instale](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) seu [Aplicativo de Equipes](https://docs.microsoft.com/pt-BR/microsoftteams/platform/#pivot=home&panel=home-all) nas novas equipes. 
+[Instale](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) seu [Aplicativo de Equipes](https://docs.microsoft.com/pt-BR/microsoftteams/platform/#pivot=home&panel=home-all) nas novas equipes. 
 [Fixe o aplicativo em uma guia](/graph/api/teamstab-add?view=graph-rest-1.0) no novo canal. 
 [Envie mensagens](/graph/api/channel-post-chatmessage?view=graph-rest-beta) para o canal vinculando-o ao seu site.
 
@@ -69,20 +68,14 @@ As APIs do Microsoft Teams podem melhorar os aplicativos dentro e fora do Teams:
 
 |Tipo de aplicativo|Descrição do cenário|
 |:-------|:-------------------|
-| 
-  [Guias](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/tabs/tabs-overview) |Exibem o conteúdo no Microsoft Teams.|
-| 
-  [Bots](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/bots/bots-overview) |Ajudam os usuários a concluir tarefas em conversas.|
-| 
-  [Conectores](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/connectors/connectors) |Postam atualizações de serviços externos para canais.|
-| 
-  [Mensagens Acionáveis](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/cards/cards) |Adicionam interação aprimorada aos cartões do conector.|
-| 
-  [Extensões de Mensagens](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/messaging-extensions) |Permitem que os usuários consultem e compartilhem informações em conversas.|
+| [Guias](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/tabs/tabs-overview) |Exibem o conteúdo no Microsoft Teams.|
+| [Bots](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/bots/bots-overview) |Ajudam os usuários a concluir tarefas em conversas.|
+| [Conectores](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/connectors/connectors) |Postam atualizações de serviços externos para canais.|
+| [Mensagens Acionáveis](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/cards/cards) |Adicionam interação aprimorada aos cartões do conector.|
+| [Extensões de Mensagens](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/messaging-extensions) |Permitem que os usuários consultem e compartilhem informações em conversas.|
 |Sites| Exibem conteúdo aprimorado em suas páginas da Web.|
 |Serviços|Aprimoram seus aplicativos de cliente com dados do Microsoft Graph por meio do seu serviço Web.|
-| 
-  [Feed de atividades](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/activity-feed)|Envolve os usuários por meio de notificações do feed.|
+| [Feed de atividades](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/activity-feed)|Envolve os usuários por meio de notificações do feed.|
 | [Chamadas e reuniões online (visualização)](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |Crie aplicativos do Microsoft Teams usando bots podem iniciar e participar de chamadas de áudio/vídeo, rotear/transferir chamadas com base em fluxos de resposta de voz interativa (IVR) e participe de reuniões online.|
 
 ## <a name="api-reference"></a>Referência da API

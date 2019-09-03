@@ -384,8 +384,7 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>Confira também
 
-- 
-  [Modelos disponíveis](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates)
+- [Modelos disponíveis](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates)
 - [Introdução aos modelos de Equipes de varejo](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Introdução aos modelos de Equipes médicas](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)

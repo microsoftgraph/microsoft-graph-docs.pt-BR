@@ -146,18 +146,12 @@ A tabela a seguir lista os recursos que você pode usar para criar um código de
 
 |**Tipo de aplicativo**|**Biblioteca de autenticação**|
 |------------------------|----------------------------|
-|
-  [Aplicativos da área de trabalho, iOS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Visualização da Biblioteca de Autenticação da Microsoft para iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|
-  [Aplicativos da área de trabalho - Android](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-android)|[Biblioteca de Autenticação Microsoft (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|
-  [Aplicativos da área de trabalho - .Net](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Biblioteca de Autenticação Microsoft (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|
-  [Aplicativos Web - JavaScript SPA](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Biblioteca de autenticação da Microsoft para visualização de JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|
-  [Aplicativos Web - Servidor Web .NET](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|
-  [Aplicativos Web - Aplicativo da Web NodeJS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[Aplicativos da área de trabalho, iOS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Visualização da Biblioteca de Autenticação da Microsoft para iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[Aplicativos da área de trabalho - Android](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-android)|[Biblioteca de Autenticação Microsoft (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Aplicativos da área de trabalho - .Net](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Biblioteca de Autenticação Microsoft (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Aplicativos Web - JavaScript SPA](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Biblioteca de autenticação da Microsoft para visualização de JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Aplicativos Web - Servidor Web .NET](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
+|[Aplicativos Web - Aplicativo da Web NodeJS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 Para aplicativos que não usam nenhuma das bibliotecas existentes, consulte [Obter acesso em nome de um usuário](auth-v2-user.md).
 
