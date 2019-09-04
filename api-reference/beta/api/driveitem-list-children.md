@@ -6,33 +6,33 @@ title: Listar o conteúdo de uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 91945814dab0ab8793620d413fc0610560253741
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 7aa6f9bf8e624b7b973bf5ed8553f5e2b1944f48
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633283"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719344"
 ---
-# <a name="list-children-of-a-driveitem"></a><span data-ttu-id="a44fd-103">Listar os filhos de um driveItem</span><span class="sxs-lookup"><span data-stu-id="a44fd-103">List children of a driveItem</span></span>
+# <a name="list-children-of-a-driveitem"></a><span data-ttu-id="835a5-103">Listar os filhos de um driveItem</span><span class="sxs-lookup"><span data-stu-id="835a5-103">List children of a driveItem</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a44fd-104">Retorne uma coleção de [DriveItems](../resources/driveitem.md) na relação **children** de um DriveItem.</span><span class="sxs-lookup"><span data-stu-id="a44fd-104">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
+<span data-ttu-id="835a5-104">Retorne uma coleção de [DriveItems](../resources/driveitem.md) na relação **children** de um DriveItem.</span><span class="sxs-lookup"><span data-stu-id="835a5-104">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
 
-<span data-ttu-id="a44fd-105">DriveItems com uma faceta **folder** ou **package** não nula podem ter um ou mais DriveItems filhos.</span><span class="sxs-lookup"><span data-stu-id="a44fd-105">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
+<span data-ttu-id="835a5-105">DriveItems com uma faceta **folder** ou **package** não nula podem ter um ou mais DriveItems filhos.</span><span class="sxs-lookup"><span data-stu-id="835a5-105">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="a44fd-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a44fd-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="835a5-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="835a5-106">Permissions</span></span>
 
-<span data-ttu-id="a44fd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a44fd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="835a5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="835a5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a44fd-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a44fd-109">Permission type</span></span>      | <span data-ttu-id="a44fd-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a44fd-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="835a5-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="835a5-109">Permission type</span></span>      | <span data-ttu-id="835a5-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="835a5-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a44fd-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a44fd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a44fd-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a44fd-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a44fd-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a44fd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a44fd-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a44fd-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a44fd-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a44fd-115">Application</span></span> | <span data-ttu-id="a44fd-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a44fd-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="835a5-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="835a5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="835a5-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="835a5-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="835a5-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="835a5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="835a5-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="835a5-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="835a5-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="835a5-115">Application</span></span> | <span data-ttu-id="835a5-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="835a5-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a44fd-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a44fd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="835a5-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="835a5-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,38 +44,38 @@ GET /sites/{site-id}/drive/items/{item-id}/children
 GET /users/{user-id}/drive/items/{item-id}/children
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a44fd-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a44fd-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="835a5-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="835a5-118">Optional query parameters</span></span>
 
-<span data-ttu-id="a44fd-119">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` e `$orderby` para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a44fd-119">This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="835a5-119">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` e `$orderby` para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="835a5-119">This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-### <a name="optional-request-headers"></a><span data-ttu-id="a44fd-120">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="a44fd-120">Optional request headers</span></span>
+### <a name="optional-request-headers"></a><span data-ttu-id="835a5-120">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="835a5-120">Optional request headers</span></span>
 
-| <span data-ttu-id="a44fd-121">Nome de cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a44fd-121">Header name</span></span>     | <span data-ttu-id="a44fd-122">Valor</span><span class="sxs-lookup"><span data-stu-id="a44fd-122">Value</span></span> | <span data-ttu-id="a44fd-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="a44fd-123">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="835a5-121">Nome de cabeçalho</span><span class="sxs-lookup"><span data-stu-id="835a5-121">Header name</span></span>     | <span data-ttu-id="835a5-122">Valor</span><span class="sxs-lookup"><span data-stu-id="835a5-122">Value</span></span> | <span data-ttu-id="835a5-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="835a5-123">Description</span></span>                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="a44fd-124">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="a44fd-124">_if-none-match_</span></span> | <span data-ttu-id="a44fd-125">etag</span><span class="sxs-lookup"><span data-stu-id="a44fd-125">etag</span></span>  | <span data-ttu-id="a44fd-126">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="a44fd-126">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="835a5-124">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="835a5-124">_if-none-match_</span></span> | <span data-ttu-id="835a5-125">etag</span><span class="sxs-lookup"><span data-stu-id="835a5-125">etag</span></span>  | <span data-ttu-id="835a5-126">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="835a5-126">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="examples"></a><span data-ttu-id="a44fd-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a44fd-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="835a5-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="835a5-127">Examples</span></span>
 
-### <a name="list-children-in-the-root-of-the-current-users-drive"></a><span data-ttu-id="a44fd-128">Filhos de lista na raiz da unidade do usuário atual</span><span class="sxs-lookup"><span data-stu-id="a44fd-128">List children in the root of the current user's drive</span></span>
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a><span data-ttu-id="835a5-128">Filhos de lista na raiz da unidade do usuário atual</span><span class="sxs-lookup"><span data-stu-id="835a5-128">List children in the root of the current user's drive</span></span>
 
-<span data-ttu-id="a44fd-129">Para recuperar arquivos na raiz da unidade, use a relação `root` na unidade e acesse a relação de filhos.</span><span class="sxs-lookup"><span data-stu-id="a44fd-129">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
+<span data-ttu-id="835a5-129">Para recuperar arquivos na raiz da unidade, use a relação `root` na unidade e acesse a relação de filhos.</span><span class="sxs-lookup"><span data-stu-id="835a5-129">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a44fd-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="a44fd-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="835a5-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="835a5-130">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/children
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a44fd-131">C#</span><span class="sxs-lookup"><span data-stu-id="a44fd-131">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="835a5-131">C#</span><span class="sxs-lookup"><span data-stu-id="835a5-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a44fd-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a44fd-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="835a5-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="835a5-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-children-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a44fd-133">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a44fd-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="835a5-133">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="835a5-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-children-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -83,33 +83,33 @@ GET /me/drive/root/children
 
 
 
-### <a name="list-children-of-a-driveitem-with-a-known-id"></a><span data-ttu-id="a44fd-134">Filhos da lista de um DriveItem com uma ID conhecida</span><span class="sxs-lookup"><span data-stu-id="a44fd-134">List children of a DriveItem with a known ID</span></span>
+### <a name="list-children-of-a-driveitem-with-a-known-id"></a><span data-ttu-id="835a5-134">Filhos da lista de um DriveItem com uma ID conhecida</span><span class="sxs-lookup"><span data-stu-id="835a5-134">List children of a DriveItem with a known ID</span></span>
 
-<span data-ttu-id="a44fd-135">Para recuperar arquivos na raiz da unidade, use a relação `root` na unidade e acesse a relação de filhos.</span><span class="sxs-lookup"><span data-stu-id="a44fd-135">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
+<span data-ttu-id="835a5-135">Para recuperar arquivos na raiz da unidade, use a relação `root` na unidade e acesse a relação de filhos.</span><span class="sxs-lookup"><span data-stu-id="835a5-135">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a44fd-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="a44fd-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="835a5-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="835a5-136">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/children
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a44fd-137">C#</span><span class="sxs-lookup"><span data-stu-id="a44fd-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="835a5-137">C#</span><span class="sxs-lookup"><span data-stu-id="835a5-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a44fd-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a44fd-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="835a5-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="835a5-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a44fd-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a44fd-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="835a5-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="835a5-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="list-children-of-a-driveitem-with-a-known-path"></a><span data-ttu-id="a44fd-140">Filhos da lista de um DriveItem com um caminho conhecido</span><span class="sxs-lookup"><span data-stu-id="a44fd-140">List children of a DriveItem with a known path</span></span>
+### <a name="list-children-of-a-driveitem-with-a-known-path"></a><span data-ttu-id="835a5-140">Filhos da lista de um DriveItem com um caminho conhecido</span><span class="sxs-lookup"><span data-stu-id="835a5-140">List children of a DriveItem with a known path</span></span>
 
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
 
@@ -117,10 +117,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
-## <a name="response"></a><span data-ttu-id="a44fd-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="a44fd-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="835a5-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="835a5-141">Response</span></span>
 
-<span data-ttu-id="a44fd-142">Se tiver êxito, esse método retornará a lista de itens no conjunto de filhos do item de destino.</span><span class="sxs-lookup"><span data-stu-id="a44fd-142">If successful, this method returns the list of items in the children collection of the target item.</span></span>
-<span data-ttu-id="a44fd-143">A coleção de filhos será composta de recursos [driveItem][item-resource].</span><span class="sxs-lookup"><span data-stu-id="a44fd-143">The children collection will be composed of [driveItem][item-resource] resources.</span></span>
+<span data-ttu-id="835a5-142">Se tiver êxito, esse método retornará a lista de itens no conjunto de filhos do item de destino.</span><span class="sxs-lookup"><span data-stu-id="835a5-142">If successful, this method returns the list of items in the children collection of the target item.</span></span>
+<span data-ttu-id="835a5-143">A coleção de filhos será composta de recursos [driveItem][item-resource].</span><span class="sxs-lookup"><span data-stu-id="835a5-143">The children collection will be composed of [driveItem][item-resource] resources.</span></span>
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
@@ -142,13 +142,13 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="a44fd-144">**Observação:** Se uma coleção exceder o tamanho de página padrão (200 itens), a \*\* \@Propriedade OData. nextLink\*\* será retornada na resposta para indicar que mais itens estão disponíveis e fornecerão a URL de solicitação para a próxima página de itens.</span><span class="sxs-lookup"><span data-stu-id="a44fd-144">**Note:** If a collection exceeds the default page size (200 items), the **\@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
+<span data-ttu-id="835a5-144">**Observação:** Se uma coleção exceder o tamanho de página padrão (200 itens), a \*\* \@Propriedade OData. nextLink\*\* será retornada na resposta para indicar que mais itens estão disponíveis e fornecerão a URL de solicitação para a próxima página de itens.</span><span class="sxs-lookup"><span data-stu-id="835a5-144">**Note:** If a collection exceeds the default page size (200 items), the **\@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
 
-<span data-ttu-id="a44fd-145">Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de caracteres de consulta opcional](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span><span class="sxs-lookup"><span data-stu-id="a44fd-145">You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span></span>
+<span data-ttu-id="835a5-145">Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de caracteres de consulta opcional](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span><span class="sxs-lookup"><span data-stu-id="835a5-145">You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span></span>
 
-### <a name="error-responses"></a><span data-ttu-id="a44fd-146">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="a44fd-146">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="835a5-146">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="835a5-146">Error responses</span></span>
 
-<span data-ttu-id="a44fd-147">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="a44fd-147">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="835a5-147">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="835a5-147">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

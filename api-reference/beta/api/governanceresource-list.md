@@ -5,76 +5,76 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 10b1ef090de119069917582e1e60448eb07d2a09
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4e35e3ff91a643ac052a2275b653997ce222136c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420382"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721681"
 ---
-# <a name="list-governanceresources"></a><span data-ttu-id="c9f07-103">Listar governanceResources</span><span class="sxs-lookup"><span data-stu-id="c9f07-103">List governanceResources</span></span>
+# <a name="list-governanceresources"></a><span data-ttu-id="83052-103">Listar governanceResources</span><span class="sxs-lookup"><span data-stu-id="83052-103">List governanceResources</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c9f07-104">Recupere uma coleção de [entidadegovernanceresource](../resources/governanceresource.md) à qual o solicitante tem acesso.</span><span class="sxs-lookup"><span data-stu-id="c9f07-104">Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.</span></span>
+<span data-ttu-id="83052-104">Recupere uma coleção de [entidadegovernanceresource](../resources/governanceresource.md) à qual o solicitante tem acesso.</span><span class="sxs-lookup"><span data-stu-id="83052-104">Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c9f07-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="c9f07-105">Permissions</span></span>
-<span data-ttu-id="c9f07-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c9f07-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="83052-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="83052-105">Permissions</span></span>
+<span data-ttu-id="83052-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="83052-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c9f07-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c9f07-108">Permission type</span></span>      | <span data-ttu-id="c9f07-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="c9f07-109">Permissions</span></span>              |
+|<span data-ttu-id="83052-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="83052-108">Permission type</span></span>      | <span data-ttu-id="83052-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="83052-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c9f07-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c9f07-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c9f07-111">PrivilegedAccess. ReadWrite. AzureResources</span><span class="sxs-lookup"><span data-stu-id="c9f07-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="c9f07-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c9f07-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9f07-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c9f07-113">Not supported.</span></span>    |
-|<span data-ttu-id="c9f07-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c9f07-114">Application</span></span> | <span data-ttu-id="c9f07-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c9f07-115">Not supported.</span></span> |
+|<span data-ttu-id="83052-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="83052-110">Delegated (work or school account)</span></span> | <span data-ttu-id="83052-111">PrivilegedAccess. ReadWrite. AzureResources</span><span class="sxs-lookup"><span data-stu-id="83052-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="83052-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="83052-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="83052-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="83052-113">Not supported.</span></span>    |
+|<span data-ttu-id="83052-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="83052-114">Application</span></span> | <span data-ttu-id="83052-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="83052-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c9f07-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c9f07-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="83052-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="83052-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c9f07-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c9f07-117">Optional query parameters</span></span>
-<span data-ttu-id="c9f07-118">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="c9f07-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="83052-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="83052-117">Optional query parameters</span></span>
+<span data-ttu-id="83052-118">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="83052-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c9f07-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c9f07-119">Request headers</span></span>
-| <span data-ttu-id="c9f07-120">Nome</span><span class="sxs-lookup"><span data-stu-id="c9f07-120">Name</span></span>      |<span data-ttu-id="c9f07-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="c9f07-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="83052-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="83052-119">Request headers</span></span>
+| <span data-ttu-id="83052-120">Nome</span><span class="sxs-lookup"><span data-stu-id="83052-120">Name</span></span>      |<span data-ttu-id="83052-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="83052-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c9f07-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c9f07-122">Authorization</span></span>  | <span data-ttu-id="c9f07-123">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="c9f07-123">Bearer {code}</span></span>|
+| <span data-ttu-id="83052-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="83052-122">Authorization</span></span>  | <span data-ttu-id="83052-123">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="83052-123">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c9f07-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c9f07-124">Request body</span></span>
-<span data-ttu-id="c9f07-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c9f07-125">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="c9f07-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9f07-126">Response</span></span>
-<span data-ttu-id="c9f07-127">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [entidadegovernanceresource](../resources/governanceresource.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c9f07-127">If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.</span></span>
-## <a name="examples"></a><span data-ttu-id="c9f07-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c9f07-128">Examples</span></span>
+## <a name="request-body"></a><span data-ttu-id="83052-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="83052-124">Request body</span></span>
+<span data-ttu-id="83052-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="83052-125">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="83052-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="83052-126">Response</span></span>
+<span data-ttu-id="83052-127">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [entidadegovernanceresource](../resources/governanceresource.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="83052-127">If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="83052-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="83052-128">Examples</span></span>
 
-<span data-ttu-id="c9f07-129">Este exemplo lista todos os recursos que eu posso acessar no momento.</span><span class="sxs-lookup"><span data-stu-id="c9f07-129">This example lists all resources I can currently access.</span></span>
-##### <a name="request"></a><span data-ttu-id="c9f07-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c9f07-130">Request</span></span>
+<span data-ttu-id="83052-129">Este exemplo lista todos os recursos que eu posso acessar no momento.</span><span class="sxs-lookup"><span data-stu-id="83052-129">This example lists all resources I can currently access.</span></span>
+##### <a name="request"></a><span data-ttu-id="83052-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="83052-130">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c9f07-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="c9f07-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="83052-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="83052-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_governanceresources"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c9f07-132">C#</span><span class="sxs-lookup"><span data-stu-id="c9f07-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="83052-132">C#</span><span class="sxs-lookup"><span data-stu-id="83052-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-governanceresources-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c9f07-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c9f07-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="83052-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="83052-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-governanceresources-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c9f07-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="c9f07-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="83052-134">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="83052-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governanceresources-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="c9f07-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9f07-135">Response</span></span>
-<span data-ttu-id="c9f07-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c9f07-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="83052-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="83052-135">Response</span></span>
+<span data-ttu-id="83052-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="83052-136">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="c9f07-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c9f07-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="83052-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="83052-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

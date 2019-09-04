@@ -5,30 +5,30 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2783b5eb961fd945286b53f4f87ba29085f81530
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f1daccef71f05ea73056ad00cb11c0ddac91b6a4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408423"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719098"
 ---
-# <a name="get-alert"></a><span data-ttu-id="3b3fe-103">Obter alerta</span><span class="sxs-lookup"><span data-stu-id="3b3fe-103">Get alert</span></span>
+# <a name="get-alert"></a><span data-ttu-id="182a7-103">Obter alerta</span><span class="sxs-lookup"><span data-stu-id="182a7-103">Get alert</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3b3fe-104">Recupere as propriedades e os relacionamentos de um objeto [Alert](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="3b3fe-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
+<span data-ttu-id="182a7-104">Recupere as propriedades e os relacionamentos de um objeto [Alert](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="182a7-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3b3fe-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="3b3fe-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="182a7-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="182a7-105">Permissions</span></span>
 
-<span data-ttu-id="3b3fe-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b3fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="182a7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="182a7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3b3fe-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3b3fe-108">Permission type</span></span>      | <span data-ttu-id="3b3fe-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3b3fe-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="182a7-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="182a7-108">Permission type</span></span>      | <span data-ttu-id="182a7-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="182a7-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3b3fe-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3b3fe-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="3b3fe-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b3fe-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="3b3fe-112">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3b3fe-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3b3fe-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3b3fe-113">Not supported.</span></span>  |
-|<span data-ttu-id="3b3fe-114">Application</span><span class="sxs-lookup"><span data-stu-id="3b3fe-114">Application</span></span> | <span data-ttu-id="3b3fe-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b3fe-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="182a7-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="182a7-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="182a7-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="182a7-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="182a7-112">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="182a7-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="182a7-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="182a7-113">Not supported.</span></span>  |
+|<span data-ttu-id="182a7-114">Application</span><span class="sxs-lookup"><span data-stu-id="182a7-114">Application</span></span> | <span data-ttu-id="182a7-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="182a7-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3b3fe-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3b3fe-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="182a7-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="182a7-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,53 +36,53 @@ ms.locfileid: "36408423"
 GET /security/alerts/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3b3fe-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3b3fe-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="182a7-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="182a7-117">Request headers</span></span>
 
-| <span data-ttu-id="3b3fe-118">Nome</span><span class="sxs-lookup"><span data-stu-id="3b3fe-118">Name</span></span>      |<span data-ttu-id="3b3fe-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="3b3fe-119">Description</span></span>|
+| <span data-ttu-id="182a7-118">Nome</span><span class="sxs-lookup"><span data-stu-id="182a7-118">Name</span></span>      |<span data-ttu-id="182a7-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="182a7-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3b3fe-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="3b3fe-120">Authorization</span></span>  | <span data-ttu-id="3b3fe-121">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="3b3fe-121">Bearer {code}.</span></span> <span data-ttu-id="3b3fe-122">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3b3fe-122">Required.</span></span>|
+| <span data-ttu-id="182a7-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="182a7-120">Authorization</span></span>  | <span data-ttu-id="182a7-121">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="182a7-121">Bearer {code}.</span></span> <span data-ttu-id="182a7-122">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="182a7-122">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3b3fe-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3b3fe-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="182a7-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="182a7-123">Request body</span></span>
 
-<span data-ttu-id="3b3fe-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3b3fe-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="182a7-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="182a7-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3b3fe-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b3fe-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="182a7-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="182a7-125">Response</span></span>
 
-<span data-ttu-id="3b3fe-126">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **Alert** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3b3fe-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="3b3fe-127">Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso.</span><span class="sxs-lookup"><span data-stu-id="3b3fe-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="3b3fe-128">Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="3b3fe-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="182a7-126">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **Alert** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="182a7-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="182a7-127">Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso.</span><span class="sxs-lookup"><span data-stu-id="182a7-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="182a7-128">Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="182a7-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="3b3fe-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3b3fe-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="182a7-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="182a7-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3b3fe-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3b3fe-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="182a7-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="182a7-130">Request</span></span>
 
-<span data-ttu-id="3b3fe-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="3b3fe-131">The following is an example of the request.</span></span>
+<span data-ttu-id="182a7-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="182a7-131">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3b3fe-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="3b3fe-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="182a7-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="182a7-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_alert"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3b3fe-133">C#</span><span class="sxs-lookup"><span data-stu-id="3b3fe-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="182a7-133">C#</span><span class="sxs-lookup"><span data-stu-id="182a7-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3b3fe-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3b3fe-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="182a7-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="182a7-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3b3fe-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="3b3fe-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="182a7-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="182a7-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alert-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="3b3fe-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b3fe-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="182a7-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="182a7-136">Response</span></span>
 
-<span data-ttu-id="3b3fe-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3b3fe-137">The following is an example of the response.</span></span>
+<span data-ttu-id="182a7-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="182a7-137">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

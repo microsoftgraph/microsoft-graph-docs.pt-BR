@@ -5,58 +5,58 @@ title: Listar itens seguidos
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 80dd68c1c1da0d57150d0a3b14497734830b99a2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2e9e67b32700dcb07017e5f4509d43915cc55742
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416958"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719427"
 ---
-# <a name="list-followed-items"></a><span data-ttu-id="674f9-103">Listar itens seguidos</span><span class="sxs-lookup"><span data-stu-id="674f9-103">List followed items</span></span>
+# <a name="list-followed-items"></a><span data-ttu-id="7f3b0-103">Listar itens seguidos</span><span class="sxs-lookup"><span data-stu-id="7f3b0-103">List followed items</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="674f9-104">Listar os [itens](../resources/driveitem.md) que foram seguidos pelo usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="674f9-104">List the [items](../resources/driveitem.md) that have been followed by the signed in user.</span></span>
-<span data-ttu-id="674f9-105">Esta coleção inclui itens que estão na unidade do usuário, assim como itens aos quais ele tem acesso por meio de outras unidades.</span><span class="sxs-lookup"><span data-stu-id="674f9-105">This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="7f3b0-104">Listar os [itens](../resources/driveitem.md) que foram seguidos pelo usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="7f3b0-104">List the [items](../resources/driveitem.md) that have been followed by the signed in user.</span></span>
+<span data-ttu-id="7f3b0-105">Esta coleção inclui itens que estão na unidade do usuário, assim como itens aos quais ele tem acesso por meio de outras unidades.</span><span class="sxs-lookup"><span data-stu-id="7f3b0-105">This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="674f9-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="674f9-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7f3b0-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7f3b0-106">Permissions</span></span>
 
-<span data-ttu-id="674f9-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="674f9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7f3b0-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7f3b0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="674f9-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="674f9-109">Permission type</span></span>      | <span data-ttu-id="674f9-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="674f9-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7f3b0-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7f3b0-109">Permission type</span></span>      | <span data-ttu-id="7f3b0-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7f3b0-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="674f9-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="674f9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="674f9-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="674f9-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="674f9-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="674f9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="674f9-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="674f9-114">Not supported.</span></span>    |
-|<span data-ttu-id="674f9-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="674f9-115">Application</span></span> | <span data-ttu-id="674f9-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="674f9-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7f3b0-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7f3b0-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7f3b0-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f3b0-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7f3b0-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7f3b0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7f3b0-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7f3b0-114">Not supported.</span></span>    |
+|<span data-ttu-id="7f3b0-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7f3b0-115">Application</span></span> | <span data-ttu-id="7f3b0-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f3b0-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="674f9-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="674f9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7f3b0-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7f3b0-117">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="674f9-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="674f9-118">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7f3b0-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f3b0-118">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-followed-items", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/following
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="674f9-119">C#</span><span class="sxs-lookup"><span data-stu-id="674f9-119">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7f3b0-119">C#</span><span class="sxs-lookup"><span data-stu-id="7f3b0-119">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-followed-items-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="674f9-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="674f9-120">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7f3b0-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7f3b0-120">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-followed-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="674f9-121">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="674f9-121">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7f3b0-121">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="7f3b0-121">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-followed-items-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="674f9-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="674f9-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7f3b0-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="7f3b0-122">Response</span></span>
 
-<span data-ttu-id="674f9-123">Este método retorna uma coleção de recursos [driveItem](../resources/driveitem.md) para itens que o proprietário da unidade está seguindo.</span><span class="sxs-lookup"><span data-stu-id="674f9-123">This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.</span></span>
-<span data-ttu-id="674f9-124">Se não forem encontrados itens, uma coleção vazia será retornada.</span><span class="sxs-lookup"><span data-stu-id="674f9-124">If no items were found, an empty collection is returned.</span></span>
+<span data-ttu-id="7f3b0-123">Este método retorna uma coleção de recursos [driveItem](../resources/driveitem.md) para itens que o proprietário da unidade está seguindo.</span><span class="sxs-lookup"><span data-stu-id="7f3b0-123">This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.</span></span>
+<span data-ttu-id="7f3b0-124">Se não forem encontrados itens, uma coleção vazia será retornada.</span><span class="sxs-lookup"><span data-stu-id="7f3b0-124">If no items were found, an empty collection is returned.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
