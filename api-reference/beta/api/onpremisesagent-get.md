@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0354e53fb884ab2588fdf49a9d4c4b7844d3b6cb
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ba647ac06afdc91b812cf87b962013f5572320e1
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414550"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726008"
 ---
 # <a name="get-onpremisesagent"></a>Obter onPremisesAgent
 
@@ -66,7 +66,7 @@ Este é um exemplo de solicitação.
   "name": "get_onpremisesagent"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agents/1234b780-965f-4149-85c5-a8c73e58b67d/?$expand=agentGroups
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

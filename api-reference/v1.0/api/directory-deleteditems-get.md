@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bd511a85349012dbd8ea7c5230a7e74cd22be7b9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2f148a16db752c6e996364af7d9e0e3fb8c94945
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373851"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721318"
 ---
 # <a name="get-deleted-item"></a>Obter item excluído
 
@@ -67,7 +67,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
   "blockType": "request",
   "name": "get_directory"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

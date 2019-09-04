@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8783cbc38593b7821be257b1a8b913609898b78d
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 08f23c997619c0d116bee75fed936145fea8ff71
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461396"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725364"
 ---
 # <a name="list-unifiedroleassignments"></a>Listar unifiedRoleAssignments
 
@@ -69,7 +69,7 @@ Este é um exemplo de solicitação.
   "name": "get_roleAssignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -158,7 +158,7 @@ Este é um exemplo de solicitação.
   "name": "get_roleAssignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq 'a98eb769-7bd4-4489-86f6-ad96e1d58b62'
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

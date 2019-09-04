@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 98a40b1084cd7c6ac92af22295736d1a73755ff0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b9f105b211b641f9caff3a1049cbdb057b887a08
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417824"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718359"
 ---
 # <a name="list-threads"></a>Listar threads
 
@@ -55,7 +55,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_threads"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

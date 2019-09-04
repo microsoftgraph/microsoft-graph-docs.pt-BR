@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2dbd2023a1eadd7adb344b3a80590388f8123ea0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7516399af6467a89d6a4e74b88fd0ce127d95141
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337318"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720855"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida, do calendário padrão de um grupo.
@@ -66,7 +66,7 @@ O exemplo a seguir solicita que corpos de evento sejam retornados no formato de 
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "group_get_calendarview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-10-01T19:00:00.00
 Prefer: outlook.body-content-type="text"
 ```

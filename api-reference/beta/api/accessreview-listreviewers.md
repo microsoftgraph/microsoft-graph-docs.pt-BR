@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 11ed47f87141cbe32a7d83c8ef37d3a234508e05
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8df23e0b2202b3affdf4a2eef79b9258ba12bf4c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408803"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719238"
 ---
 # <a name="list-accessreview-reviewers"></a>Listar revisores do accessReview
 
@@ -54,7 +54,7 @@ Se tiver êxito, este método retornará `200, OK` um código de resposta e uma 
   "blockType": "request",
   "name": "get_accessReview_reviewers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/reviewers
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

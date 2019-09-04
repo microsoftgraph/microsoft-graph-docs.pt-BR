@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Permite que você receba notificações de alteração quase em tempo real para uma unidade usando o socket.io.
 doc_type: apiPageType
-ms.openlocfilehash: 5d174346edc500a9ec203e9dbb27ab77d4627b3d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a53c172ca6c6347ec6051d62f2b8830dd1553392
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375158"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726337"
 ---
 # <a name="get-websocket-endpoint"></a>Obter ponto de extremidade do WebSocket
 
@@ -49,7 +49,7 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
-```http
+```msgraph-interactive
 GET /me/drive/root/subscriptions/socketIo
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -6,12 +6,12 @@ title: Lista as listas do SharePoint em um site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 89b56b45d2522923d6cdfcd977a327c6abf359ee
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8175f3c30f481c937529879932a8cb60799184ca
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415432"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724005"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
@@ -46,7 +46,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

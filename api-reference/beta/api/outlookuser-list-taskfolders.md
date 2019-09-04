@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4f530b6aaf365f45dfcb191d1d217fc7c6ebf5c6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: fee8f496321ab4f0fd4ca08134e5dcfbf7a76fcf
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413971"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723676"
 ---
 # <a name="list-taskfolders"></a>Listar taskFolders
 
@@ -55,7 +55,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_taskfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

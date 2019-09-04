@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9142b84a7b85636ce2145a861a2d3dc964e29e8b
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 64b08f390e29f9ae58884284a609c961dfeaf292
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460857"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720624"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -55,7 +55,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "eventmessage_get_attachments_beta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

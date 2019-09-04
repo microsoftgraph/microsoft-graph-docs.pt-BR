@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: b47d294e91347e1cef6e684d54ea48f68e5dd7d1
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: de8243597044e2077c4b2a1b8b91f35d2b6eecca
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622588"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718958"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -165,7 +165,7 @@ Aqui está um exemplo da solicitação para obter as propriedades de um anexo de
   "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -225,7 +225,7 @@ O primeiro exemplo mostra como obter um anexo de item em uma mensagem. As propri
   "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -280,7 +280,7 @@ O exemplo a seguir mostra como usar `$expand` o para obter as propriedades do it
   "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -391,7 +391,7 @@ Aqui está um exemplo da solicitação para obter um anexo de referência em um 
   "sampleKeys": ["AAMkAGE1M88AADUv0uAAAG=","AAMkAGE1Mg72tgf7hJp0PICVGCc0g="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

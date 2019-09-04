@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6bdeb70032612c50b744aaf30920214addd26c22
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 874937929d21f0b1533a5344d1e3cc16b2594bf3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414585"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726022"
 ---
 # <a name="get-online-meeting"></a>Obter reunião online
 
@@ -63,7 +63,7 @@ O exemplo a seguir mostra a solicitação.
   "blockType": "request",
   "name": "get-onlineMeeting"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

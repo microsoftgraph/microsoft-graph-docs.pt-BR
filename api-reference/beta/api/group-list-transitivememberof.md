@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 58ed9365778ea6c29653d741a7e56cd0f0098bd4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 066bbccf7b7cca6cc0c38d34131f1400b386ab24
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420123"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720498"
 ---
 # <a name="list-group-transitive-memberof"></a>Lista de grupos transitivos transitivos
 
@@ -59,7 +59,7 @@ Este é um exemplo de solicitação.
   "name": "get_group_transitivememberof"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/transitiveMemberOf
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 214ece7772265202725772bfe1ce624ca7636f90
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: c1ef84b62d5ff8e5b52e38cfd514d6ee0feb686d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414159"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725889"
 ---
 # <a name="get-outlooktask"></a>Obter outlookTask
 
@@ -72,7 +72,7 @@ Este é um exemplo da solicitação.
   "name": "get_outlooktask"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -154,7 +154,7 @@ Este exemplo usa o `Prefer: outlook.timezone` cabeçalho para especificar que a 
   "name": "get_outlooktask"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```

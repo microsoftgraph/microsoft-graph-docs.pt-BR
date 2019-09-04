@@ -6,12 +6,12 @@ description: Listar os pacotes na unidade de um usuário
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8a58417be4b582c81c772d045a1bf6867a7d3f9f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 99e4ab374f26e6dcd9a5bf40d2fcbba04de9c178
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419261"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720176"
 ---
 # <a name="list-bundles"></a>Listar pacotes
 
@@ -71,7 +71,7 @@ Para solicitar uma enumeração de todos os pacotes definidos na unidade, você 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -132,7 +132,7 @@ Para filtrar a lista de pacotes retornados de uma solicitação para a coleção
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20null
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

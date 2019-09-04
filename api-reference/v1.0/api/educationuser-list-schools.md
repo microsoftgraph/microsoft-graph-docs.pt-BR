@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cefad10698019fcf1705f241f3c184a4e37c9931
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d9c768d76c7b8ab765dfd490458bf10a03bd1040
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371801"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726834"
 ---
 # <a name="list-schools"></a>Listar escolas
 
@@ -54,7 +54,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "get_schools"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/schools
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 90e8fef9a32d0c14530d20dce027693acdc1728a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ddad22a8cb54a9a389b5901298caf267c898a0a4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418415"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718517"
 ---
 # <a name="get-chartgridlines"></a>Obter ChartGridlines
 
@@ -57,7 +57,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_chartgridlines"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/minorgridlines
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 26cc0d9927cd207e942a6bfd8c386557d61e4b66
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f7ca844d59afe133781c0b3bce7d1577c79efb1e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415810"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720701"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 
@@ -57,7 +57,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
   "blockType": "request",
   "name": "get_endpoint"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

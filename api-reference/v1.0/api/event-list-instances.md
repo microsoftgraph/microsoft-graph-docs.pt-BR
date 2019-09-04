@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d408d09a96f12edf7aa0b68f26f9c23e748ab416
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 272aafdc53f117d710349a231b8e3bbca3415e1a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372018"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720932"
 ---
 # <a name="list-instances"></a>Listar instâncias
 
@@ -79,7 +79,7 @@ O exemplo a seguir obtém dentro do intervalo de tempo especificado as ocorrênc
   "sampleKeys": ["AAMkAGUzYRgWAAA="],
   "name": "get_instances"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

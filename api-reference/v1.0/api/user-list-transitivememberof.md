@@ -5,12 +5,12 @@ author: anchanda
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3c2a8f06b02870d2a1f0d021d77883ab7acf1d70
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f1ab751ac1e187b54cf0837abedc3497eb1fe34e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316245"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728962"
 ---
 # <a name="list-user-transitive-memberof"></a>Listar usuário transitiva membro
 
@@ -65,7 +65,7 @@ Este é um exemplo da solicitação.
   "name": "get_transitivememberof"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/transitiveMemberOf
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

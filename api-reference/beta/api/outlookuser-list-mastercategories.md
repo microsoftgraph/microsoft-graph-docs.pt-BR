@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6456cb29f22989d3dce42d64a5666e70aeb3f975
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ce98ce6c0b686855d3fc7950f95a8defce9c8534
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413986"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725875"
 ---
 # <a name="list-outlook-categories"></a>Listar categorias do Outlook
 
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_mastercategories"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/masterCategories
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

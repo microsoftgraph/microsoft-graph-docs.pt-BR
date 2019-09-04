@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: d2a789c33a8da78e2a5e2aec35a45533acfef26e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fb598efa6f45f312dad81b9e75179f99de9c8258
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349345"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721093"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Listando versões de um DriveItem
 
@@ -57,7 +57,7 @@ Este exemplo recupera as versões de um arquivo na unidade do usuário atual.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

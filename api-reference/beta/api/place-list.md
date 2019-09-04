@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1dddab1015265b5eb26ccdd0824c25684ee3421a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4dd105d4dfa1ada2ebdb5845967f757110693eaa
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413605"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723606"
 ---
 # <a name="list-places"></a>Locais de lista
 
@@ -93,7 +93,7 @@ O exemplo a seguir mostra como obter todos os objetos de [sala](../resources/roo
   "name": "get_all_rooms"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -211,7 +211,7 @@ O exemplo a seguir mostra como obter todos os [](../resources/roomlist.md) objet
   "name": "get_all_roomlists"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -294,7 +294,7 @@ O exemplo a seguir mostra como obter uma lista de objetos [Room](../resources/ro
   "name": "get_rooms_in_roomlist"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

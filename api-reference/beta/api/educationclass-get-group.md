@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 863e62d77182a5b91397e5f01e7579eb6f44b107
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cc50cc67ba8414003118c2a132f4bb063dfb628e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416421"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718013"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -52,7 +52,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "educationclass_get_group"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8E36E966C7D9/group
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

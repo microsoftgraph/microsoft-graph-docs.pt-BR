@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d35785d557c1f9974c389532f4d31f17070ffaa5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 47896c2f3999affd6722a228fd0640f41b90c690
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408496"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719126"
 ---
 # <a name="get-agreement"></a>Obter contrato
 
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
   "blockType": "request",
   "name": "get_agreement"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/agreements/{id}?$expand=files
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -6,12 +6,12 @@ title: Listar unidades
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fda4ffc0209b6eb56cc5a7965ccca0a1a3a0a0cc
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b6588cfe45fc48988ee7a2226d1414f0357c7900
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416951"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718147"
 ---
 # <a name="list-available-drives"></a>Listar as unidades disponíveis
 
@@ -39,7 +39,7 @@ Para listar as bibliotecas de documentos de um grupo, seu aplicativo solicita a 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /groups/{groupId}/drives
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -65,7 +65,7 @@ Para listar as bibliotecas de documentos de um site, seu aplicativo solicita a r
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{siteId}/drives
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -89,7 +89,7 @@ GET /sites/{siteId}/drives
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /users/{userId}/drives
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -113,7 +113,7 @@ GET /users/{userId}/drives
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drives
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

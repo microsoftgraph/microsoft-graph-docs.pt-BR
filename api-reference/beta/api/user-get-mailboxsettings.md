@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4d4cb61bb69b918fe9706adbbe2c2780df1ddcf3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ab1d79ee469ff4d814012ba8d8f606559912f0fc
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421117"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722052"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -85,7 +85,7 @@ O primeiro exemplo obtém todas as configurações da caixa de correio do usuár
   "blockType": "request",
   "name": "get_mailboxsettings_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailboxSettings
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -160,7 +160,7 @@ O segundo exemplo obtém especificamente as configurações de respostas automá
   "blockType": "request",
   "name": "get_mailboxsettings_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

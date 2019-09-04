@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7e1abfa9ccd2b4eecf23cf55a6e270c4c5880bb2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f56f27e561b5d94748a6f269abe5ad377d9c295c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365767"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721401"
 ---
 # <a name="get-conversation"></a>Obter conversa
 
@@ -52,7 +52,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_conversation"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

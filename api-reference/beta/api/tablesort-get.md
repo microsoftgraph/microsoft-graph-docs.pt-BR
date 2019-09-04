@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3517c980550fbd757149e5d29e7f2d146c546136
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e7dcb36f8d41298ce07f96300d39f5fd5b5770a4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409429"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722185"
 ---
 # <a name="get-tablesort"></a>Obter TableSort
 
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_tablesort"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

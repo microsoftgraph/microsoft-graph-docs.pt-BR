@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fb1b1d3bf357c0a29c7502c64eeb170e6951530c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 919996c9e9f6d989f943a6aaba95793f51b694b0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417042"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718119"
 ---
 # <a name="list-verificationdnsrecords"></a>Listar verificationDnsRecords
 
@@ -69,7 +69,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
   "blockType": "request",
   "name": "get_verificationdnsrecords"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

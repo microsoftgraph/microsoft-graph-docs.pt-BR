@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d9a2f5d961f53e030cac0a0b3a82705d2228938e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1a30bcfb152e9c3616a5eb2c01138b439b223c82
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412618"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723424"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: My
 
@@ -55,7 +55,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "privilegedroleassignmentrequest_my)"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

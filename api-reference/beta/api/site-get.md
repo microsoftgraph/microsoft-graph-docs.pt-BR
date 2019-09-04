@@ -6,12 +6,12 @@ title: Obter um Site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 86bcd7073838b7af2b0decc7ed796650b9c5ad0f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 808e82542c3715cf8bea80b120494be8ecdbf1d9
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410008"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724537"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 
@@ -66,7 +66,7 @@ GET /groups/{group-id}/sites/root
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-site" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

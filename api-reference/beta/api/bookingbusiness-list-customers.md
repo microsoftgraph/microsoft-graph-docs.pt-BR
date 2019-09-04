@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 50b3f02db711de9efd01bb300939072ee88f0e09
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: fd801599824ea4c4655603a0e5fcda40e211c90b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415572"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718874"
 ---
 # <a name="list-customers"></a>Listar clientes
 
@@ -52,7 +52,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "get_customers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

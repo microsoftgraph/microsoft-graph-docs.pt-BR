@@ -6,12 +6,12 @@ title: Recuperar miniaturas de um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5c283a7b2e9ec1166c48af62b665a41ea1f05c1d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: de6263415cceeb71e7ac2323ccfda67c8c02e017
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416692"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719343"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 
@@ -70,7 +70,7 @@ Veja um exemplo da solicitação que recupera as miniaturas disponíveis de um i
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -123,7 +123,7 @@ Recupere os metadados de uma única miniatura e um único tamanho endereçando-o
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -172,7 +172,7 @@ Você pode recuperar diretamente o conteúdo da miniatura solicitando a propried
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -215,7 +215,7 @@ Isso permite que seu aplicativo recupere miniaturas e itens em uma única solici
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -295,7 +295,7 @@ Por exemplo, se o seu aplicativo precisar de miniaturas de 300 x 400, é possív
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request","name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

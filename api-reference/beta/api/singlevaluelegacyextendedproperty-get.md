@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d931f3050c0ff6a8f6507feb91cda371aa4b2e0d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2047d764877cff5001380235a6b53e5bb4f335d8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410028"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722346"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Obter singleValueLegacyExtendedProperty
 
@@ -304,7 +304,7 @@ O primeiro exemplo obtém e expande a mensagem especificada, incluindo uma propr
   "blockType": "request",
   "name": "get_singlevaluelegacyextendedproperty_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=/?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

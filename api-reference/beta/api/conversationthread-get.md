@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0dc5fb7835dacc005554da0759bb1c5fc337d6d0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 44288ea63a1a5ba6c0339ba9ded0939fcbab262e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417757"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718304"
 ---
 # <a name="get-conversationthread"></a>Obter conversationThread
 
@@ -55,7 +55,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_conversationthread"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

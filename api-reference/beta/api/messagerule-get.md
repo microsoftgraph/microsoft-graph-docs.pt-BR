@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 93caf56e1a706de3c91b3b660e2d242c6f5ea5f9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7aaf0be15e711fdc91cf4fabeaab77d238c1e38c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414935"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726078"
 ---
 # <a name="get-rule"></a>Obter regra
 
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_messagerule"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

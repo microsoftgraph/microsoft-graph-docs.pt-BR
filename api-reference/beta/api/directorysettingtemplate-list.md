@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4cdb3795e0cab3f3ee66fd47f9f8876e56d9d705
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a8fbb63327a191ed733c6c2903fb28bde9683e1c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417133"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718158"
 ---
 # <a name="list-directorysettingtemplates"></a>Listar directorySettingTemplates
 
@@ -57,7 +57,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_directorysettingtemplates"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directorySettingTemplates
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

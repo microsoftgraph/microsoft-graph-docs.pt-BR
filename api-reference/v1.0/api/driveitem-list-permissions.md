@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Liste as permissões efetivas de compartilhamento de um DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 19fa8efb45570622b969fba060cd8d3da360166c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9700dbd4429ee20b4e2d5921e60d0f506bbfdc8d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376049"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721094"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um DriveItem
 
@@ -80,7 +80,7 @@ Este exemplo recupera a coleção de permissões em um item na unidade do usuár
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 476fe93f2cef5828c7d747fc50b3613a6612dd0f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: db959d41948fb967193972c700c8d7ddd7cbd642
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409909"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724460"
 ---
 # <a name="list-subscribedskus"></a>Listar subscribedSkus
 
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_subscribedskus"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscribedSkus
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
