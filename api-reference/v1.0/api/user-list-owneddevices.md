@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fed1d5c92c5b66bd68ac3039a3f88c456eb7291a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 92a2d80800d6672402b65917419f51f12a7e95ed
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367180"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728969"
 ---
 # <a name="list-owneddevices"></a>Listar ownedDevices
 
@@ -52,7 +52,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_owneddevices"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/ownedDevices
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

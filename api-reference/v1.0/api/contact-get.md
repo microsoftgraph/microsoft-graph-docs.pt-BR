@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: daf7de12343318b6c428ed800ed73479ebbb10aa
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dc643aa4343ed3c53c8f90ec97bf254684e80655
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361756"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727184"
 ---
 # <a name="get-contact"></a>Obter contato
 
@@ -74,7 +74,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_contact"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

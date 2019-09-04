@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a33af09a20228473bed2d21869746f6d85245ea7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 23e34125fa654f8e088f9be60253f8345abdf69c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372563"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727394"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 Retornar uma lista de lembretes de eventos em um calendário de usuário dentro dos horários de início e término especificados. 
@@ -62,7 +62,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "user_reminderview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ description: Descreve o método de lista o recurso de logon (entidade) do Micros
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5c8ca894571d843305b11402c27ea5f9f688052c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d37efe902b4ca5dcc1bf7d357a5615642b622241
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410042"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724544"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -93,7 +93,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_signins"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

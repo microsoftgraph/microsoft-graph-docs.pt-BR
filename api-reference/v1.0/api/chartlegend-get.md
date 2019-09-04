@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2d677c8d589fd594edc5c7077d7892c690085df3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ef99ea6b71d501a557a6b5ca948623fbce03f159
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316553"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727240"
 ---
 # <a name="get-chartlegend"></a>Obter ChartLegend
 
@@ -53,7 +53,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_chartlegend"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

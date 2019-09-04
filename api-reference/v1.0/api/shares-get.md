@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Acesse um DriveItem compartilhado ou uma coleção de itens compartilhados usando um shareId ou uma URL de compartilhamento.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b76d62c2f3beabfb825caea79ca79c55df2d29dc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9345130e053b5970e6f38df552c77059cbce9c8a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307837"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729256"
 ---
 # <a name="accessing-shared-driveitems"></a>Acessar DriveItems compartilhados
 
@@ -89,7 +89,7 @@ Veja a seguir um exemplo da solicitação para recuperar um item compartilhado:
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -147,7 +147,7 @@ Ao solicitar a relação **driveItem**, o **DriveItem** compartilhado será reto
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -196,7 +196,7 @@ Solicitando a relação **driveItem** e expandindo a coleção **children**, o *
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

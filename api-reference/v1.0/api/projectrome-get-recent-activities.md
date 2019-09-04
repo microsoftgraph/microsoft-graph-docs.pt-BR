@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 75e97f9e3f9917b56e0f990e2d1b74278a25e3ff
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5c11a69b73bda7e424b3bffb7403484364409f6a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375664"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728451"
 ---
 # <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
 
@@ -79,7 +79,7 @@ Este é um exemplo de solicitação.
   "name": "get_recent_activities"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/activities/recent
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

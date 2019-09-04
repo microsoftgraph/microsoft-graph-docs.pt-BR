@@ -5,12 +5,12 @@ description: Recupere um evento específico de entrada do Azure AD para seu loca
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 86aa2762d451faf2598d49b53545ca412ae220a3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ae597257544645ddf705be0156a10febcf272e29
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410056"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722360"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -71,7 +71,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_signin"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba415cabbea68603cf43fb0026358813c3df1b86
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 78cd0c5ac1095edada8fbb9fb480cddc1313adf2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309444"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730096"
 ---
 # <a name="get-outlook-category"></a>Obter categoria do Outlook
 
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "sampleKeys": ["de912e4d-c790-4da9-949c-ccd933aaa0f7"],
   "name": "get_outlookcategory"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

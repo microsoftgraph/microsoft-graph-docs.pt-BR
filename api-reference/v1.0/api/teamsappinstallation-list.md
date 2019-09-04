@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f8cf20c1a3b6a8e81e1db8e9d0f74b62c5965106
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 40ba4f8727b88c48aadeac78bdfa835f9599c972
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374026"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727562"
 ---
 # <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
@@ -66,7 +66,7 @@ Este é um exemplo de solicitação.
   "name": "get_installed_teams_apps"
 }-->
 
-```http
+```msgraph-interactive
 GET /teams/{id}/installedApps
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -124,7 +124,7 @@ Este é um exemplo de solicitação.
   "name": "get_installed_teams_apps_expand"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
