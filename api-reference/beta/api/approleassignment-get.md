@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bbfe80a006f92480458dfdc3a0852181f9f67353
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6f711bf8c3b2d977e4702435e862c764014e5cac
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408179"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718951"
 ---
 # <a name="get-approleassignment"></a>Obter appRoleAssignment
 
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_approleassignment"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

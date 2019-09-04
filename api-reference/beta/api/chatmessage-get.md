@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 63d98dafc73242e321da2fea58df08fc2f76ee7f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 29b272769928d873c419122b092471a688a43084
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418149"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718412"
 ---
 # <a name="get-chatmessage"></a>Obter chatMessage
 
@@ -65,7 +65,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_chat_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
