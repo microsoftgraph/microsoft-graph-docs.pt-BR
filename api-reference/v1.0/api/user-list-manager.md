@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 03e8639bdd8bcd95566ae7817fb5a1004377fc0c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 81a7936f713e769b8025dfde0b2f3d42f7234d44
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327148"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727471"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -53,7 +53,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_manager"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

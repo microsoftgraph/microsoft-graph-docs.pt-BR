@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Obter a coleção de listas de um site.
 doc_type: apiPageType
-ms.openlocfilehash: 0535f1dcd38e67df71908291336eacbf8ced10b4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d13ae20343ab434d9f26d7d63fc445fa55306af2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370666"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730285"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

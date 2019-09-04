@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: cda17e816270c65de4cb496215ace2fdc4b9f1b7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c787b7c3eb9be5e1baa88342e97176260acc7c05
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320018"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729067"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -86,7 +86,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "user_get_calendarview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000 
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

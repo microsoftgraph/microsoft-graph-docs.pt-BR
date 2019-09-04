@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1599a3b321d7419fe2808728fad112d19d746ee
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fa95725a6edc1fb3d8cee0502e453de355f38615
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369035"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726477"
 ---
 # <a name="get-channel"></a>Obter canal
 
@@ -60,7 +60,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_channel"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

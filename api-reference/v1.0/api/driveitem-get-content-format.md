@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Use esta API para recuperar os conteúdos de um item em um formato específico.
 doc_type: apiPageType
-ms.openlocfilehash: c2757a64e15865e8278fd38dfed49916dd71d133
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 811c0ae25666d23fd597b5d584e5b00e50a00e93
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375076"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726330"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
@@ -61,7 +61,7 @@ Os seguintes valores são válidos para o parâmetro **format**:
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/content?format={format}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

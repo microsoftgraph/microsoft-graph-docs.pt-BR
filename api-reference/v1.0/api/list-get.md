@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Retorna os metadados de uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: 55f1fc02a3f07839e487a5af9721ac18eb0f5e46
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 46dbf2ccfd7cefd11ddcc42d7d788b5f3140532e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370694"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730271"
 ---
 # <a name="get-metadata-for-a-list"></a>Obter metadados de uma lista
 
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação com esse método.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -99,7 +99,7 @@ Com instruções `select` e `expand`, você pode recuperar metadados de lista, d
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

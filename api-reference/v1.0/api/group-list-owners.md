@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e19a6fa684b22d58e0ab00d4ec7a58a953bc7ffe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 65afd6b7ff25d4d3659d193435884c949a916776
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337248"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720813"
 ---
 # <a name="list-owners"></a>Listar proprietários
 Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo. 
@@ -53,7 +53,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "group_get_owners"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Recupere as propriedades e as relações de um recurso do site.
 doc_type: apiPageType
-ms.openlocfilehash: 051c49468adfdc60508b93932e0b56b2b363c988
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 102295c12ca5278b40c9540049282db360f7701b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320019"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727716"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 
@@ -76,7 +76,7 @@ GET /groups/{group-id}/sites/root
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

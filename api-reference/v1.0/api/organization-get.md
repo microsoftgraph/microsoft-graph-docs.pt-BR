@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 429d5d954b02b68e0ec8304e93928ba3ad66fd32
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 52f3f9e0e93e8fcfb49e88827ca4ea98e20663d9
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309445"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730124"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -68,7 +68,7 @@ Este é um exemplo da solicitação.
   "name": "get_organization"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

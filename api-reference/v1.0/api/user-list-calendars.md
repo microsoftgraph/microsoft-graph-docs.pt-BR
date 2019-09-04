@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c7c88a798306fb2ccb78d91ec5b64ddc7f92478d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 27db8330639c20a41d8cd74849b84537189a4640
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372647"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727534"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -68,7 +68,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "user_get_calendars"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendars
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

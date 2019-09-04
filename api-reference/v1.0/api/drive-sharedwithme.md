@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Recupere uma coleção de recursos DriveItem que foram compartilhados com o proprietário de Drive.
 doc_type: apiPageType
-ms.openlocfilehash: ca78c3b618a0c323687dd1e38690a600aa9516fe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 96de7dabf8dac372655261be4928193e8987fd9d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375153"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721149"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Listar itens compartilhados com o usuário conectado
 
@@ -37,7 +37,7 @@ Além disso, sem uma das permissões **All**, os itens compartilhados retornados
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
