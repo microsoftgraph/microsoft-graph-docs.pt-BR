@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7968718a489e52505209166e629dfb46d787894f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 26aec1bbf7185c02309c9069008bda606d74c993
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415880"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720260"
 ---
 # <a name="get-educationuser"></a>Obter educationUser
 
@@ -53,7 +53,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "get_educationuser"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/users/13012
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

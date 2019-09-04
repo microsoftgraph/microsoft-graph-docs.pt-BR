@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2a57d8a47e1fc2df2593f66aa5d2499d21ff19b4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a027e19ef0a81590a2c20443cdfa4d301c9c266a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320053"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729305"
 ---
 # <a name="list-sections"></a>Listar seções
 
@@ -61,7 +61,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "sectionsgroup_get_sections"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

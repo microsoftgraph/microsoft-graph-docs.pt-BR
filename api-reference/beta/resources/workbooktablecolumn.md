@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 07dbcd2e900ced3fe235300cfab2b4922ddccc9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f4359b712f183ffc634e079aea0d61094a2b013
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007071"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726708"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>tipo de recurso workbookTableColumn
 
@@ -39,7 +39,7 @@ Representa uma coluna em uma tabela.
 |:---------------|:--------|:----------|
 |id|int|Retorna uma chave exclusiva que identifica a coluna na tabela. Somente leitura.|
 |índice|int|Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.|
-|name|string|Retorna o nome da coluna da tabela. Somente leitura.|
+|name|string|Retorna o nome da coluna da tabela.|
 |values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações

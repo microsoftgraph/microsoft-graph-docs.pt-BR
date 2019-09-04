@@ -3,12 +3,12 @@ title: Como trabalhar com ações de execução longa (beta)
 description: Este artigo descreve o trabalho com ações de execução longa.
 localization_priority: Normal
 author: daspek
-ms.openlocfilehash: 3d1dae399147cb1aed40a045e4365faf15d753f5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 08584750feba670b0041f50696b75b3f7e6910b5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422307"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730313"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Como trabalhar com ações de execução longa (beta)
 
@@ -139,7 +139,7 @@ Você pode resolver esse novo item usando resourceId; por exemplo:
   "scopes": "files.readwrite"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bd8b99367c66e5879a40aade9a893b1108ae350d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 806e31094770676aeaa64d850a43718f8343eb89
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420200"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720550"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -59,7 +59,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "get_group_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/events
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

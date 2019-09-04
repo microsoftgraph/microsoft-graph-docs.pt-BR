@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 64e86b1f9b3cdcae1512ff549acc972cb0fb0c01
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a31d3707aba72338a219c4481f2e861d79e8168d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420781"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729284"
 ---
 # <a name="get-securescorecontrolprofile"></a>Obter secureScoreControlProfile
 
@@ -60,7 +60,7 @@ Este é um exemplo de solicitação.
   "name": "get_securescorecontrolprofile"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

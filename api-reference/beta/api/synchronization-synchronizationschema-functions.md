@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e048f75cb965fdcfe12add97259be79472b33601
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 592c92eccc22f426bf6051391fdeed9ea738e9d3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409715"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724453"
 ---
 # <a name="synchronizationschema-functions"></a>synchronizationSchema: funções
 
@@ -59,7 +59,7 @@ Veja a seguir um exemplo de uma solicitação.
   "blockType": "request",
   "name": "synchronizationschema_functions"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

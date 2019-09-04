@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 30a2b2c0f85019ac5e11b5b22850be2722b94de4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 123cee1b62c7669f0a458c848fb077bc2049052a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413598"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725798"
 ---
 # <a name="get-place"></a>Obter local
 
@@ -78,7 +78,7 @@ O exemplo a seguir especifica a **ID** de uma **sala** para obter suas proprieda
   "name": "get_room"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -159,7 +159,7 @@ O exemplo a seguir especifica o **EmailAddress** de uma **RoomList** para obter 
   "name": "get_roomlist"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

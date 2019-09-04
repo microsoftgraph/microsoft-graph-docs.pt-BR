@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: b98adc2ac7345fadc9c0fd132efa316499979e12
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8102c80044059a383bef842ca9106a1ab24e4ba6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409874"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724468"
 ---
 # <a name="get-subscription"></a>Obter assinatura
 
@@ -82,7 +82,7 @@ Este é um exemplo da solicitação.
   "name": "get_subscription"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

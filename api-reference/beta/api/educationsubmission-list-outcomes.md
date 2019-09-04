@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c8837d1edffc09e842f4885c9b48f262749a85ee
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 15b0d28cd076dc99e0863bae57ca0e6b3b84165f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460962"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720316"
 ---
 # <a name="list-outcomes"></a>Resultados de lista
 
@@ -72,7 +72,7 @@ Este é um exemplo de solicitação.
   "name": "get_outcomes"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

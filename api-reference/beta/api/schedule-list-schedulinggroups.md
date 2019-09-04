@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 67cd120aa03b5d0bce249b2fa942c5fef91e32a5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2dbec27de65df14c56a659c1b1d0f3e9037a8975
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410805"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722549"
 ---
 # <a name="list-schedulegroups"></a>Listar scheduleGroups
 
@@ -63,7 +63,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "schedule-list-schedulinggroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

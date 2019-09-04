@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2777bb81bb47469cd1cf12ecc4c1153f2bb82265
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 902af5bbe18a87baf36c11dafb4cedaf3c04f72b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374978"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728724"
 ---
 # <a name="list-rules"></a>Listar regras
 
@@ -52,7 +52,7 @@ Este é um exemplo da solicitação.
   "sampleKeys": ["inbox"],
   "name": "get_messagerules"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

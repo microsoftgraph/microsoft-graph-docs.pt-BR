@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1f745466c50651d1ce041fe97f6f69020feaeb6f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 722dc16b73cdbef53ea090413dee3df80eec025b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369000"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726442"
 ---
 # <a name="get-chart"></a>Obter gráfico
 
@@ -53,7 +53,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_chart"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

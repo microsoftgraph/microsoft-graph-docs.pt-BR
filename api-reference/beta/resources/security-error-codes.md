@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 2d77a0f21623a98e4041b845e92a23c7574a415d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2291f0009c7d54a62ac30d448a9f97ff8935a569
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008555"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726309"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respostas de erro da API de segurança do Microsoft Graph
 
@@ -50,6 +50,10 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 ```
 
 > **Observação:** Cada cabeçalho HTTP é uma coleção de subitens, de forma que os usuários possam enumerar o cabeçalho de aviso e verificar todos os itens.
+
+## <a name="threat-indicator-bulk-action-errors"></a>Erros de ação em massa do indicador de ameaça
+
+Ações em massa (ou seja, criar, atualizar e excluir) podem gerar dois códigos de erro potenciais diferentes.  Um código de erro 400 indica que o corpo fornecido teve um erro durante a serialização, enquanto um código de erro 206 indica que uma ou mais das ações em massa falharam ao serem federadas no provedor. A resposta conterá dados de sucesso/erro dos provedores individuais para cada indicador de inteligência de ameaças. Diferentemente de alertas, todas as informações de erro em potencial serão contidas no corpo da resposta para ações em massa de indicador de ameaça.
 
 ## <a name="constraints"></a>Restrições
 

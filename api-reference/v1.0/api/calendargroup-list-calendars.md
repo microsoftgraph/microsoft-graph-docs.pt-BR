@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1773abadd1cc0843e2c495bf6b335c00d746f008
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4b228fbeefeb345514874b9493c6768bab8621a3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369091"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726498"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -75,7 +75,7 @@ Este é um exemplo da solicitação.
   "name": "calendargroup_get_calendars"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

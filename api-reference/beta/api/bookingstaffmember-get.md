@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ff4e82fa69063e25154ce6487248c3ac4150c6d4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 218017ced4927f651e1ad370ab6b34360951c25c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419279"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718811"
 ---
 # <a name="get-bookingstaffmember"></a>Obter bookingStaffMember
 
@@ -52,7 +52,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "get_bookingstaffmember"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

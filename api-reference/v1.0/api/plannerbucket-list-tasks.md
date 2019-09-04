@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f699ec602e73c9c8d23881b2e986e95864c99404
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cd286f58748bd0a331373bca91f0a7a67fd373e1
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376015"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730014"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -53,7 +53,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_tasks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/buckets/{task-id}/tasks
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

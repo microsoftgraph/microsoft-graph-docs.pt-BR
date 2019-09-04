@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6e1e4cc64388934f403603764ad1f60593791480
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3bea67531c2566c5da67065ee38518da18d6d109
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341708"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727688"
 ---
 # <a name="create-tablecolumn"></a>Criar TableColumn
 
@@ -38,11 +38,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookTableColumn](../resources/tablecolumn.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookTableColumn](../resources/workbooktablecolumn.md) .
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [WorkbookTableColumn](../resources/tablecolumn.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [WorkbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -83,7 +83,7 @@ Content-length: 81
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookTableColumn](../resources/tablecolumn.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookTableColumn](../resources/workbooktablecolumn.md) .
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
