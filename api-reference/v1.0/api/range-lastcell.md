@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4dba5e3fd70c14eddcb470893541ed3267204ce2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 39ba586aed0272be86f00328c4271936d0874fce
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375524"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729865"
 ---
 # <a name="range-lastcell"></a>Range: LastCell
 
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "isComposable": true,
   "name": "range_lastcell"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastCell
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

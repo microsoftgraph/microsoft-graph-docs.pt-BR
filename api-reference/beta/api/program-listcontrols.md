@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 8493cbb7c6115d8fd0c14c5b91c052a8199e7db6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 03696e4d2250a207783901ded0b59844019622d9
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412506"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723340"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Listar programControls de um programa
 
@@ -53,7 +53,7 @@ Se tiver êxito, este método retornará `200, OK` um código de resposta e uma 
   "blockType": "request",
   "name": "get_programControl_from_program"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b807/controls
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 295ac6ac4fb866a6ab6167a990c4309b08cac049
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ae18ca306c15426a7fc738521b77c4add34ea420
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420879"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721807"
 ---
 # <a name="get-workbookworksheetprotection"></a>Obter workbookWorksheetProtection
 
@@ -55,7 +55,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_workbookworksheetprotection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

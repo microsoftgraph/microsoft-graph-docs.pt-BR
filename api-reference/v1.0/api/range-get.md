@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c7af2d520c5bc80ebb1c9b2a653cc3a69e10f0f6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9284fd3b7f78ba111ab70e75ce4d4832fe26efaf
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375581"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728395"
 ---
 # <a name="get-range"></a>Obter intervalo
 
@@ -54,7 +54,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

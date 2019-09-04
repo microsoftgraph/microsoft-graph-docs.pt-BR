@@ -7,12 +7,12 @@ description: Pesquisar em um locatário do SharePoint para sites que corresponda
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 561c3056c1760ff9e585523b5aa4cb9a7fc71c2a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5612ea4014b1697a367a71e92c9ce4578618386f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371268"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729242"
 ---
 # <a name="search-for-sites"></a>Procurar sites
 
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "sites.readwrite.all", "tags": "service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET /sites?search={query}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

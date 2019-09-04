@@ -4,12 +4,12 @@ description: 'O Microsoft Teams é o melhor hub para trabalhos em equipe e comun
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: da9999a0719d190950adf20bc119044366126f24
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 79d269408bc01036830e85be04fbaec3a07b2a6f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621218"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730327"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -40,7 +40,7 @@ Crie equipes automaticamente para aulas no início do ano letivo e arquive essas
 Permita que os clientes criem novas [equipes](/graph/api/resources/team?view=graph-rest-1.0) e [canais](/graph/api/resources/channel?view=graph-rest-1.0). 
 [Instale](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) seu [Aplicativo de Equipes](https://docs.microsoft.com/pt-BR/microsoftteams/platform/#pivot=home&panel=home-all) nas novas equipes. 
 [Fixe o aplicativo em uma guia](/graph/api/teamstab-add?view=graph-rest-1.0) no novo canal. 
-[Envie mensagens](/graph/api/channel-post-chatmessage?view=graph-rest-beta) para o canal vinculando-o ao seu site.
+[Envie mensagens](/graph/api/channel-post-messages?view=graph-rest-beta) para o canal vinculando-o ao seu site.
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>Criar e gerenciar várias equipes e canais
 

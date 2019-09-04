@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4c0cf828046d5e47131d09c17f63cb10c48176c1
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2b6a6c5f3112861505a1b9df3b2b51a605d73ecd
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413955"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723669"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -60,7 +60,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_tasks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 53f344d92de141ff5df27c95db92133dde199112
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 80869a6f2608986546e617ba67a9465d71ee9854
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412884"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725560"
 ---
 # <a name="list-privilegedapproval"></a>List privilegedApproval
 
@@ -60,7 +60,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "get_privilegedapproval"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedApproval
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
