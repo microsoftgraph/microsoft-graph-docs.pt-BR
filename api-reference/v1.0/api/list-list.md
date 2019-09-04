@@ -7,68 +7,68 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Obter a coleção de listas de um site.
 doc_type: apiPageType
-ms.openlocfilehash: 0535f1dcd38e67df71908291336eacbf8ced10b4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d13ae20343ab434d9f26d7d63fc445fa55306af2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370666"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730285"
 ---
-# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="dba1d-103">Enumerar listas em um site</span><span class="sxs-lookup"><span data-stu-id="dba1d-103">Enumerate lists in a site</span></span>
+# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="25b06-103">Enumerar listas em um site</span><span class="sxs-lookup"><span data-stu-id="25b06-103">Enumerate lists in a site</span></span>
 
-<span data-ttu-id="dba1d-104">Obter a coleção de [listas][] de um [site][].</span><span class="sxs-lookup"><span data-stu-id="dba1d-104">Get the collection of [lists][] for a [site][].</span></span>
+<span data-ttu-id="25b06-104">Obter a coleção de [listas][] de um [site][].</span><span class="sxs-lookup"><span data-stu-id="25b06-104">Get the collection of [lists][] for a [site][].</span></span>
 
 [listas]: ../resources/list.md
 [lists]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="dba1d-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="dba1d-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="25b06-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="25b06-107">Permissions</span></span>
 
-<span data-ttu-id="dba1d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dba1d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="25b06-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="25b06-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dba1d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dba1d-110">Permission type</span></span>      | <span data-ttu-id="dba1d-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dba1d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="25b06-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="25b06-110">Permission type</span></span>      | <span data-ttu-id="25b06-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="25b06-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dba1d-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dba1d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="dba1d-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dba1d-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="dba1d-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dba1d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dba1d-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dba1d-115">Not supported.</span></span>    |
-|<span data-ttu-id="dba1d-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dba1d-116">Application</span></span> | <span data-ttu-id="dba1d-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dba1d-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="25b06-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="25b06-112">Delegated (work or school account)</span></span> | <span data-ttu-id="25b06-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25b06-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="25b06-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="25b06-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="25b06-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="25b06-115">Not supported.</span></span>    |
+|<span data-ttu-id="25b06-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="25b06-116">Application</span></span> | <span data-ttu-id="25b06-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25b06-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dba1d-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dba1d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="25b06-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="25b06-118">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
-## <a name="example"></a><span data-ttu-id="dba1d-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="dba1d-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="25b06-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="25b06-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="dba1d-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dba1d-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="25b06-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="25b06-120">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="dba1d-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="dba1d-121">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="25b06-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="25b06-121">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="dba1d-122">C#</span><span class="sxs-lookup"><span data-stu-id="dba1d-122">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="25b06-122">C#</span><span class="sxs-lookup"><span data-stu-id="25b06-122">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-lists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dba1d-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dba1d-123">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="25b06-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="25b06-123">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-lists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dba1d-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dba1d-124">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="25b06-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="25b06-124">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-lists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="dba1d-125">Java</span><span class="sxs-lookup"><span data-stu-id="dba1d-125">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="25b06-125">Java</span><span class="sxs-lookup"><span data-stu-id="25b06-125">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/enum-lists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="dba1d-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="dba1d-126">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="25b06-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="25b06-126">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -102,10 +102,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="dba1d-127">Comentários</span><span class="sxs-lookup"><span data-stu-id="dba1d-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="25b06-127">Comentários</span><span class="sxs-lookup"><span data-stu-id="25b06-127">Remarks</span></span>
 
-<span data-ttu-id="dba1d-128">Listas com a faceta [system][] estão ocultas por padrão.</span><span class="sxs-lookup"><span data-stu-id="dba1d-128">Lists with the [system][] facet are hidden by default.</span></span>
-<span data-ttu-id="dba1d-129">Para listá-los, inclua `system` na instrução `$select`.</span><span class="sxs-lookup"><span data-stu-id="dba1d-129">To list them, include `system` in your `$select` statement.</span></span>
+<span data-ttu-id="25b06-128">Listas com a faceta [system][] estão ocultas por padrão.</span><span class="sxs-lookup"><span data-stu-id="25b06-128">Lists with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="25b06-129">Para listá-los, inclua `system` na instrução `$select`.</span><span class="sxs-lookup"><span data-stu-id="25b06-129">To list them, include `system` in your `$select` statement.</span></span>
 
 [system]: ../resources/systemfacet.md
 
