@@ -4,12 +4,12 @@ description: Os dados de segurança acessíveis por meio da API de Segurança do
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 52f781eecef1da2d801025d4ba2409f9297b5cd8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e8d7389689477f480d45cacd595f2c96e00d66bd
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621225"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730334"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorização e API de Segurança do Microsoft Graph
 
@@ -76,7 +76,7 @@ Para registrar seu aplicativo:
     >**Observação**: não é necessário ser um administrador de locatários. Você será redirecionado para a lista **Meus aplicativos**.
 2. Selecione **Novo registro**.
 3. Na página de registro do novo aplicativo, digite um valor para **Nome** e selecione os tipos de conta aos quais deseja dar suporte. No campo **URI de redirecionamento**, insira o URL de redirecionamento.
-4. Selecione **Registrar** para criar o aplicativo e exibir a respectiva página de visão geral.
+4. Selecione **Registrar** para criar o aplicativo e exibir a respectiva página de visão geral. *
 5. Acesse a página**permissões de API** do aplicativo.
 6. Selecione **Adicionar uma permissão** e selecione **Microsoft Graph** no submenu. Selecione **Permissões delegadas**. Use a caixa de pesquisa para localizar e selecionar as permissões necessárias. Para obter uma lista de permissões, consulte [Permissões de segurança](permissions-reference.md#security-permissions).
 
@@ -97,6 +97,8 @@ Salve as informações a seguir:
 - ID do aplicativo (cliente)
 - URL de redirecionamento
 - Lista de permissões necessárias
+
+\*A Proteção Avançada contra Ameaças do Windows Defender (WDATP) exige mais [funções de usuário](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) do que as necessárias para a API de Segurança do Microsoft Graph; portanto, somente os usuários nas funções do WDATP e da API de Segurança do Microsoft Graph podem ter acesso aos dados do WDATP.  A autenticação somente para aplicativos não é limitada por isso. Portanto, recomendamos que você use um token de autenticação somente para aplicativos.
 
 Para obter mais informações, consulte [Registrar um aplicativo na Plataforma de Identidade da Microsoft](auth-register-app-v2.md).
 
