@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 5c875b35c9c11ffcfdd878991da2ef229e79fc7b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 144710d858ced9fd83fb1ed815377f94279736b6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372059"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726372"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 
@@ -63,7 +63,7 @@ Para recuperar arquivos na raiz da unidade, use a relação `root` na unidade e 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -94,7 +94,7 @@ Para recuperar arquivos na raiz da unidade, use a relação `root` na unidade e 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-files", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -127,7 +127,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, esse método retornará a lista de itens no conjunto de filhos do item de destino.
-A coleção de filhos será composta de recursos [driveItem][item-resource].
+A coleção secundária será composta de recursos [driveItem][item-resource].
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
@@ -149,7 +149,7 @@ Content-type: application/json
 }
 ```
 
-**Observação:** Se uma coleção exceder o tamanho de página padrão (200 itens), a propriedade **@odata.nextLink** será retornada na resposta para indicar que mais itens estão disponíveis e fornecer a URL da solicitação para a próxima página de itens.
+**Observação:** Se uma coleção exceder o tamanho de página padrão (200 itens), a propriedade **\@odata.nextLink** será retornada na resposta para indicar que mais itens estão disponíveis e fornecer a URL da solicitação para a próxima página de itens.
 
 Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de caracteres de consulta opcional](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 
