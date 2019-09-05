@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bc25b54bf9e0efaabd8d2771e63251522d482a71
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: a315709cff9b8e3a64a5f4cde5f98d5c06093ea2
+ms.sourcegitcommit: 25884c00cbfa2aa5c001cf777fd0ffa3c9a5ed68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720075"
+ms.locfileid: "36758304"
 ---
-# <a name="get-certificatebasedauthconfiguration"></a><span data-ttu-id="e7087-103">Obter certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="e7087-103">Get certificateBasedAuthConfiguration</span></span>
+# <a name="get-certificatebasedauthconfiguration"></a><span data-ttu-id="868a7-103">Obter certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="868a7-103">Get certificateBasedAuthConfiguration</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e7087-104">Obter as propriedades de um objeto [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="e7087-104">Get the properties of a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.</span></span>
+<span data-ttu-id="868a7-104">Obter as propriedades de um objeto [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="868a7-104">Get the properties of a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e7087-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e7087-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="868a7-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="868a7-105">Permissions</span></span>
 
-<span data-ttu-id="e7087-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e7087-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="868a7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="868a7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e7087-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e7087-108">Permission type</span></span>                        | <span data-ttu-id="e7087-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e7087-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="868a7-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="868a7-108">Permission type</span></span>                        | <span data-ttu-id="868a7-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="868a7-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="e7087-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e7087-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e7087-111">Organization. Read. All, Organization. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="e7087-111">Organization.Read.All, Organization.ReadWrite.All</span></span> |
-| <span data-ttu-id="e7087-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e7087-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e7087-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e7087-113">Not supported.</span></span> |
-| <span data-ttu-id="e7087-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e7087-114">Application</span></span>    | <span data-ttu-id="e7087-115">Organization. Read. All, Organization. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="e7087-115">Organization.Read.All, Organization.ReadWrite.All</span></span> |
+| <span data-ttu-id="868a7-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="868a7-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="868a7-111">Organization. Read. All, Organization. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="868a7-111">Organization.Read.All, Organization.ReadWrite.All</span></span> |
+| <span data-ttu-id="868a7-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="868a7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="868a7-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="868a7-113">Not supported.</span></span> |
+| <span data-ttu-id="868a7-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="868a7-114">Application</span></span>    | <span data-ttu-id="868a7-115">Organization. Read. All, Organization. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="868a7-115">Organization.Read.All, Organization.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e7087-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e7087-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="868a7-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="868a7-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,55 +36,55 @@ ms.locfileid: "36720075"
 GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e7087-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e7087-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="868a7-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="868a7-117">Request headers</span></span>
 
-| <span data-ttu-id="e7087-118">Nome</span><span class="sxs-lookup"><span data-stu-id="e7087-118">Name</span></span>      |<span data-ttu-id="e7087-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="e7087-119">Description</span></span>|
+| <span data-ttu-id="868a7-118">Nome</span><span class="sxs-lookup"><span data-stu-id="868a7-118">Name</span></span>      |<span data-ttu-id="868a7-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="868a7-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e7087-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="e7087-120">Authorization</span></span> | <span data-ttu-id="e7087-121">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="e7087-121">Bearer {token}</span></span> |
+| <span data-ttu-id="868a7-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="868a7-120">Authorization</span></span> | <span data-ttu-id="868a7-121">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="868a7-121">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e7087-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e7087-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="868a7-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="868a7-122">Request body</span></span>
 
-<span data-ttu-id="e7087-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e7087-123">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="868a7-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="868a7-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e7087-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="e7087-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="868a7-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="868a7-124">Response</span></span>
 
-<span data-ttu-id="e7087-125">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e7087-125">If successful, this method returns a `200 OK` response code and the requested [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object in the response body.</span></span>
+<span data-ttu-id="868a7-125">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="868a7-125">If successful, this method returns a `200 OK` response code and the requested [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e7087-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e7087-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="868a7-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="868a7-126">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e7087-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e7087-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="868a7-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="868a7-127">Request</span></span>
 
-<span data-ttu-id="e7087-128">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="e7087-128">The following is an example of the request.</span></span>
+<span data-ttu-id="868a7-128">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="868a7-128">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e7087-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="e7087-129">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="868a7-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="868a7-129">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_certificatebasedauthconfiguration"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfiguration/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e7087-130">C#</span><span class="sxs-lookup"><span data-stu-id="e7087-130">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="868a7-130">C#</span><span class="sxs-lookup"><span data-stu-id="868a7-130">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-certificatebasedauthconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e7087-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e7087-131">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="868a7-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="868a7-131">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-certificatebasedauthconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e7087-132">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="e7087-132">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="868a7-132">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="868a7-132">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-certificatebasedauthconfiguration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e7087-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="e7087-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="868a7-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="868a7-133">Response</span></span>
 
-<span data-ttu-id="e7087-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="e7087-134">The following is an example of the response.</span></span>
+<span data-ttu-id="868a7-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="868a7-134">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="e7087-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e7087-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="868a7-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="868a7-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
