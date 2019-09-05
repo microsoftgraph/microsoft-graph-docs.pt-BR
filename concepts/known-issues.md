@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: e32474745bb605bd0f9d1451cf8a8818cb06e7e5
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 1344312ded838f2c2828599092cc3392543d2d4d
+ms.sourcegitcommit: 25884c00cbfa2aa5c001cf777fd0ffa3c9a5ed68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622646"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36758283"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -40,6 +40,10 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 ### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>A revogação de sessões de entrada retorna um código HTTP errado
 
 O [usuário: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) deve retornar uma resposta `204 No content` para ter revogações bem-sucedidas e um código de erro HTTP (4xx ou 5xx) se algo der errado com a solicitação.  No entanto, devido a um problema de serviço, essa API retorna um parâmetro `200 OK` e um parâmetro booleano que é sempre true.  Até que isso seja corrigido, é recomendado que desenvolvedores simplesmente tratem qualquer código de retorno 2xx como bem-sucedido para esta API.
+
+### <a name="incomplete-objects-when-using-getbyids-request"></a>Objetos incompletos ao usar a solicitação getByIds
+
+A solicitação de objetos usando a opção de [Obter objetos de diretório de uma lista de IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) deve retornar objetos completos. No entanto, atualmente, os objetos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) no ponto de extremidade v1.0 são retornados com um conjunto limitado de propriedades. Como solução temporária, ao usar a operação em combinação com a opção de consulta `$select`, objetos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) mais completos serão retornados. Esse comportamento não está de acordo com as especificações do OData. Como esse comportamento pode ser atualizado no futuro, use esta solução alternativa apenas quando fornecer `$select=` com todas as propriedades de seu interesse e somente se futuras alterações nessa solução alternativa forem aceitáveis.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
