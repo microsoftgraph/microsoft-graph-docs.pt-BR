@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 07dc8f6ee95dbdd7dbdf2d5424c6736484d34284
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: cea3f51c5da8a0702ecdb1abf4e6472aef5886c8
+ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727632"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775557"
 ---
 # <a name="update-tablecolumn"></a>Atualizar tablecolumn
 
@@ -83,6 +83,8 @@ Content-length: 81
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+> [!NOTE]
+> Se você quiser atualizar vários campos de uma coluna, torne **os valores** uma matriz de cadeia de caracteres na solicitação. Por exemplo: `"values": [["a"], [1], [2], [3]]`.
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

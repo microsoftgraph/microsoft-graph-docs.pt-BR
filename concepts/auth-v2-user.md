@@ -4,12 +4,12 @@ description: Para usar o Microsoft Graph para ler e gravar recursos em nome de u
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dc4fa7792cf6913b1a7829c6865dd4a47802f7c7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: d87b419276a33c4cdc79cf7569590c6377730e1e
+ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633724"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775550"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 
@@ -107,7 +107,7 @@ Seu aplicativo usa a autorização `code` recebida na etapa anterior para solici
 ```
 // Line breaks for legibility only
 
-POST /common/oauth2/v2.0/token HTTP/1.1
+POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
@@ -276,3 +276,4 @@ Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome
 
 - Para saber mais sobre o ponto de extremidade da plataforma de identidade da Microsoft com diferentes tipos de aplicativos, confira os links de **Introdução** na [documentação de desenvolvedor da plataforma de identidade da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). A documentação contém links para tópicos de visão geral, guias de início rápido, tutoriais, exemplos de código e documentação de protocolo para diferentes tipos de aplicativos compatíveis com o ponto de extremidade da plataforma de identidade da Microsoft.
 - Para saber mais sobre a MSAL (Biblioteca de Autenticação da Microsoft) e o middleware de servidor disponíveis para uso com o ponto de extremidade da plataforma de identidade da Microsoft, confira [Bibliotecas de Autenticação da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
+
