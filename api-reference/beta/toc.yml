@@ -9808,6 +9808,19 @@
                   href: api/workbook-list-worksheets.md
                 - name: Listar nomes
                   href: api/workbook-list-names.md
+            - name: Comentários da pasta de trabalho
+              href: resources/workbookcomment.md
+              items:
+                - name: Lista
+                  href: api/workbook-list-comments.md
+                - name: Obter
+                  href: api/workbookcomment-get.md
+                - name: Listar respostas
+                  href: api/workbookcomment-list-replies.md
+                - name: Criar resposta
+                  href: api/workbookcomment-post-replies.md
+                - name: Obter resposta
+                  href: workbookcommentreply-get.md
             - name: Planilha
               href: resources/workbookworksheet.md
               items:
