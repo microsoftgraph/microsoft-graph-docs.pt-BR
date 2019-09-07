@@ -4,12 +4,13 @@ description: As centenas de milhões de usuários que utilizam os serviços de n
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: bf50bcd6d55b9c31ebb6ecca4d176ef230bb2bc8
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+scenarios: getting-started
+ms.openlocfilehash: e6bad0a172b10ba7699d3ecd4ff29fcc555bf615
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450491"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792881"
 ---
 # <a name="overview-of-social-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência social e do local de trabalho no Microsoft Graph
 

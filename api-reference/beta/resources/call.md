@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cd5c4cda918ecc9a9cd317bc610688e0297c0787
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4c36dc781a0e8887c218cf11f3e78d7098d9c99
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973480"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792832"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -36,20 +36,20 @@ Embora a mesma identidade não possa ser convidada várias vezes, é possível q
 | **Vários participantes**                                                   |                                                   |                                              |
 | [List participants](../api/call-list-participants.md)             | [participant](participant.md) collection          | Obtenha uma coleção do objeto participant.         |
 | [Invite Participants](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | Convide participantes para a chamada ativa.      |
-| [Mute All Participants](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | Ative o mudo para todos os participantes na chamada.           |
+| [Mute All Participants](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | Ative o mudo para todos os participantes em uma chamada.           |
+| [Ativar mudo para participante](../api/participant-mute.md)                    | [commsOperation](commsoperation.md)               | Ative o mudo para participante na chamada de grupo.        |
 | [Configure Audio Mixer](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | Configure áudio na conversa com vários participantes.  |
 | [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Crie um novo audioRoutingGroup postando-o na coleção audioRoutingGroups. |
 | [List audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) collection|Obtenha uma coleção do objeto audioRoutingGroup.  |
 | **Interactive-Voice-Response**                                    |                                                   |                                              |
 | [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Reproduza uma solicitação na chamada.                     |
-| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Registre a chamada.                             |
+| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Grave um clipe de áudio curto da chamada.     |
 | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancele o processamento de mídia.                     |
 | [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Inscreva-se nos tons DTMF.                     |
 | **Operações do próprio participante**                                   |                                                   |                                              |
 | [Mute](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | Ative o mudo para si mesmo na chamada.                       |
-| [Unmute](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | Desative o mudo para si mesmo na chamada.                     |
-| [UpdateMetadata](../api/call-updatemetadata.md)                   | [commsOperation](commsoperation.md)               | Atualize seus metadados na lista de participantes.          |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | Inicie e interrompa o compartilhamento de tela na chamada.                                             |
+| [Unmute](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | Desative o mudo automaticamente na chamada.                     |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | Inicie e interrompa a tela de compartilhamento na chamada.   |
 
 ## <a name="properties"></a>Propriedades
 
@@ -58,23 +58,24 @@ Embora a mesma identidade não possa ser convidada várias vezes, é possível q
 | activeModalities    | String Collection                                                                                      | A lista de modalidades ativas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Somente leitura. Servidor gerado.                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | O participante que atendeu a chamada. Somente leitura. Servidor gerado.                                                                                                                                |
 | callRoutes          | [callRoute](callroute.md) collection                                                                   | As informações de roteamento sobre como a chamada foi redirecionada. Somente leitura. Servidor gerado.                                                                                                                |
-| callbackUri         | String                                                                                                 | A ID de retorno de chamada ou de assinatura à qual os retornos serão entregues.                                                                                                                               |
-| chatInfo            | [chatInfo](chatinfo.md)                                                                                | As informações de chat.                                                                                                                                                                               |
+| callbackUri         | String                                                                                                 | A URL de retorno de chamada à qual os retornos serão entregues. Deve ser `https`.                                                                                                                               |
+| chatInfo            | [chatInfo](chatinfo.md)                                                                                | As informações de chat. Informações necessárias para cenários de reunião.                                                                                                                                |
 | direction           | String                                                                                                 | A direção da chamada. Os valores possíveis são `incoming` ou `outgoing`. Somente leitura. Servidor gerado.                                                                                            |
-| id                  | String                                                                                                 | Somente leitura. Servidor gerado.                                                                                                                                                                        |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração de mídia.                                                                                                                                                                        |
-| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contém os recursos de uma reunião.                                                                                                                                                             |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) ou [tokenMeetingInfo](tokenmeetinginfo.md)             | As informações da reunião.                                                                                                                                                                            |
+| id                  | String                                                                                                 | A ID de chamada. Somente leitura. Servidor gerado.                                                                                                                                                                        |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração de mídia. As informações necessárias para a criação de chamadas ponto a ponto ou para entrar em reuniões.                                                                        |
+| mediaState          | [callMediaState](callmediastate.md)                                                                    | Somente leitura. Servidor gerado. O estado da mídia de chamadas. |
+| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contém os recursos de uma reunião. Somente leitura. Servidor gerado.                                                                                                        |
+| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) ou [tokenMeetingInfo](tokenmeetinginfo.md)             | As informações da reunião. Informações necessárias para cenários de reunião.                                                                                                              |
 | myParticipantId     | String                                                                                                 | Somente leitura. Servidor gerado.                                                                                                                                                                        |
 | requestedModalities | String collection                                                                                      | A lista de modalidades solicitadas. | Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | As informações de resultado. Por exemplo pode incluir o motivo de término. Somente leitura. Servidor gerado.                                                                                                       |
-| ringingTimeoutInSeconds | Int32                                                                                              | Tempo limite do toque para chamadas realizadas de ponto a ponto                                                                                                                                                     |
-| routingPolicies     | String collection                                                                                      | Os valores possíveis são: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`.                                                                                                   |
+| ringingTimeoutInSeconds | Int32                                                                                              | Tempo limite do toque em segundos para chamadas realizadas de ponto a ponto. O valor máximo para esse atributo é de 115 segundos.                                                                                        |
+| routingPolicies     | Coleção de cadeias de caracteres                                                                                      | Essa propriedade é aplicável somente às chamadas ponto a ponto. Os valores possíveis são: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`, `preferSkypeForBusiness`.                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | O remetente da chamada.                                                                                                                                                                         |
 | state               | String                                                                                                 | O estado da chamada. Os valores possíveis são: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Somente leitura. Servidor gerado.                         |
 | subject             | String                                                                                                 | O assunto da conversa.                                                                                                                                                                    |
-| targets             | [participantInfo](participantinfo.md) collection                                                       | O destinatário da chamada.                                                                                                                                                                            |
-| tenantId            | String                                                                                                 | O tenantid no Azure Active Directory.                                                                                                                                                                 |
+| targets             | [participantInfo](participantinfo.md) collection                                                       | O destinatário da chamada. Informações necessárias para criar chamadas ponto a ponto.                                                                                                            |
+| tenantId            | String                                                                                                 | Somente leitura. Servidor gerado. `tenantId` em Azure Active Directory.                                                                                                                        |
 | terminationReason   | String                                                                                                 | Somente leitura. Servidor gerado.                                                                                                                                                                        |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Somente leitura. Servidor gerado.                                                                                                                                                                        |
 
@@ -101,13 +102,17 @@ Veja a seguir uma representação JSON do recurso.
     "chatInfo",
     "direction",
     "id",
+    "mediaState",
     "meetingCapability",
     "meetingInfo",
     "myParticipantId",
+    "replacesContext",
     "resultInfo",
     "ringingTimeoutInSeconds",
     "routingPolicies",
     "state",
+    "source",
+    "subject",
     "targets",
     "tenantId",
     "terminationReason",
@@ -119,27 +124,29 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "activeModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "answeredBy": {"@odata.type": "microsoft.graph.participantInfo"},
-  "callRoutes": [{"@odata.type": "microsoft.graph.callRoute"}],
+  "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
-  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
-  "mediaConfig": {"@odata.type": "microsoft.graph.mediaConfig"},
-  "meetingCapability": {"@odata.type": "microsoft.graph.meetingCapability"},
-  "meetingInfo": {"@odata.type": "microsoft.graph.meetingInfo"},
+  "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
+  "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
+  "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
+  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
   "myParticipantId": "String",
+  "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
-  "ringingTimeoutInSeconds": 1024,
-  "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding"],
-  "source": {"@odata.type": "microsoft.graph.participantInfo"},
+  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "ringingTimeoutInSeconds": 99,
+  "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding | preferSkypeForBusiness"],
+  "source": {"@odata.type": "#microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
-  "targets": [{"@odata.type": "microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
-  "toneInfo": {"@odata.type": "microsoft.graph.toneInfo"}
+  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
 }
 ```
 

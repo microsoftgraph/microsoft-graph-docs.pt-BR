@@ -3,12 +3,13 @@ title: Visão geral da API de conteúdo e sites do SharePoint
 description: O SharePoint é sua Intranet móvel e inteligente. Com o SharePoint, os usuários podem compartilhar e gerenciar conteúdo, conhecimentos e aplicativos para capacitar o trabalho em equipe, encontrar informações e colaborar em uma organização. Você pode usar a API REST do SharePoint no Microsoft Graph para integrar suas soluções a conteúdo e sites do SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 5e794d52bd0f876e1572b1bca5bca23fbd40154a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+scenarios: getting-started
+ms.openlocfilehash: 38d9b0973c1d3f1ee9c7fb0e58129d675d674955
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345817"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792874"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>Visão geral da API de conteúdo e sites do SharePoint
 

@@ -3,12 +3,13 @@ title: 'Ativando experiências de notificação centradas no ser humano usando n
 description: 'As notificações são uma das maneiras mais eficazes de se envolver novamente com os usuários do seu aplicativo. Uma ótima experiência de notificação pode ajudar a abrir um canal de comunicação quase em tempo real entre você e os usuários do aplicativo, o que pode aumentar o engajamento com o aplicativo no momento certo, ajudar os usuários a serem mais produtivos e alertá-los sobre eventos importantes ou ações oportunas que possam ser necessárias. '
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: b83e91be74de44dbd72315331964379992b811de
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+scenarios: getting-started
+ms.openlocfilehash: 06d07b7ae8d8f228ab6fa8c373b7eaa9aad8f61c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133562"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791026"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>Ativando experiências de notificação centradas no ser humano usando notificações do Microsoft Graph
 

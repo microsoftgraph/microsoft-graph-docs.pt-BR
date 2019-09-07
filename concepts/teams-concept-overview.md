@@ -4,12 +4,13 @@ description: 'O Microsoft Teams é o melhor hub para trabalhos em equipe e comun
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 79d269408bc01036830e85be04fbaec3a07b2a6f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+scenarios: getting-started
+ms.openlocfilehash: 816a2c2bc5c98d02e971e49e1cd2a99f33536638
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730327"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792867"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 

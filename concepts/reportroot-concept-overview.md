@@ -4,12 +4,13 @@ description: Os relatórios de uso do centro de administração do Microsoft 365
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: f76b39eb4a3860f9eb28117ba212bfc222ea7604
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+scenarios: getting-started
+ms.openlocfilehash: 1793154262f2c366879d961e768080c35b79759d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133569"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792895"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Visão geral da API de relatórios do Microsoft Graph
 
