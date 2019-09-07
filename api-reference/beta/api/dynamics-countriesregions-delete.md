@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 68b0ceaa1beef3528cf3afc228b961fe737f3bac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69374662dd0a33405b17500b9d357db2f5f32b9d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956776"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792076"
 ---
 # <a name="delete-countriesregions"></a>Excluir countriesRegions
 Excluir um objeto de países/regiões do Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-DELETE /financials/companies('{id}')/countriesRegions('{id}')
+DELETE /financials/companies/{id}/countriesRegions/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -52,7 +52,7 @@ Se bem-sucedido, este método retorna um código de resposta ```204 No Content``
 Este é um exemplo da solicitação.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/countriesRegions('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 ```
 
 **Resposta** 

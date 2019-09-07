@@ -8,12 +8,12 @@ localization_priority: Normal
 ms.author: solsen
 doc_type: apiPageType
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 3e23ea971ad16d32d3a651259818524870abedc2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 15e29f2cfce50cb2e24e503fc893354fbb94f48a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956846"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792216"
 ---
 # <a name="get-agedaccountsreceivable"></a>Obter agedAccountsReceivable
 Recupere as propriedades e os relacionamentos de um objeto de relatório de contas a receber antigo para o Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-GET /financials/companies('{id}')/agedAccountsReceivable
+GET /financials/companies/{id}/agedAccountsReceivable
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -52,7 +52,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 Este é um exemplo da solicitação.
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/agedAccountsReceivable?$filter=periodLengthFilter eq '3M'
+GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsReceivable?$filter=periodLengthFilter eq '3M'
 ```
 
 **Resposta**

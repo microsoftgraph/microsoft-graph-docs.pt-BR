@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 682b59383c9e6c791f57162871ed4ecbb8ab8c93
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 106c282c757362b7201afc3fd64d3b5a44920070
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956608"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791922"
 ---
 # <a name="create-paymentmethods"></a>Criar paymentMethods
 Criar um objeto de método de pagamento no DDynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-POST /financials/companies('{id}')/paymentMethods
+POST /financials/companies/{id}/paymentMethods
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/paymentMethods
+POST https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods
 Content-type: application/json
 
 {

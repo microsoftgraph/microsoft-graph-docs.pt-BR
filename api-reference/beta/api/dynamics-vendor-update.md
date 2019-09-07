@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 7dae71167f7de6481ac7127f320cf12022866ee1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: da77b41cdaa2223bfb74cf78f2f14fd986205601
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955796"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791075"
 ---
 # <a name="update-vendors"></a>Atualizar fornecedores
 Atualizar as propriedades de um objeto fornecedor para o Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-PATCH /financials/companies('{id}')/vendors('{id}')
+PATCH /financials/companies/{id}/vendors/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 
 Este é um exemplo da solicitação.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/vendors('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 Content-type: application/json
 
 {

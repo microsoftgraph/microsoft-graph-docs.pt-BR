@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c6c3cedd16e8cca7a801d597718482ef1b6c12a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0eae4d3640f1cbac3e20617af33c5e6f1962967b
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955922"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791257"
 ---
 # <a name="update-taxareas"></a>Atualizar taxAreas
 Atualizar as propriedades de um objeto de área de impostos para o Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-PATCH /financials/companies('{id}')/taxAreas('{id}')
+PATCH /financials/companies/{id}/taxAreas/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo da solicitação.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas/{id}
 Content-type: application/json
 
 {

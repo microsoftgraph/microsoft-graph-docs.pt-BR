@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bdfe0b3f337b7f5a084e1f557d6fc66ae8b8f0f2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1cf7a3220e391b14cedabbb1c0536b959ad03117
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413738"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792545"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -31,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/muteAll
-POST /applications/{id}/calls/{id}/participants/muteAll
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

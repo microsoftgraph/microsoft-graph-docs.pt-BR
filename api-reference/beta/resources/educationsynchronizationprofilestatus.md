@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 827d54fbedbf9c6f386063d82fd00e8eddfe7296
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e3cc519f30b571d6c69dce48b74cd70da7f58e6f
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972320"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792804"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>tipo de recurso educationSynchronizationProfileStatus
 
@@ -44,7 +44,7 @@ Representa o status de sincronização de um [perfil de sincronização](educati
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/profileStatus/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
     "status": {"@odata.type":"microsoft.graph.educationSynchronizationStatus"},
     "lastSynchronizationDateTime": "DateTimeOffset"
 }

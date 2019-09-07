@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7ad5b82a930ebc183e860816d58a8fff17c8e5f5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ef5c5a3ff1a8b152f776f5d0adf5bf6a498d8593
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415698"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792433"
 ---
 # <a name="update-audio-routing-group"></a>Atualizar grupo de roteamento de áudio
 
@@ -31,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
-PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

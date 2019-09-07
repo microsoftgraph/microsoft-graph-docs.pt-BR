@@ -3,12 +3,13 @@ title: Visão geral dos SDKs do Microsoft Graph
 description: Descreve os SDKs que estão disponíveis, as plataformas que eles dão suporte e o valor que eles fornecem aos desenvolvedores.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: deab2aac6f087f82c8f383f1aa0bed65e09a08fd
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+scenarios: getting-started
+ms.openlocfilehash: 86641c78a4f1c7b6f14a1e1fd07f52e4ca9d87ef
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630171"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792888"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Visão geral dos SDKs do Microsoft Graph
 
@@ -29,7 +30,7 @@ Os SDKs estão disponíveis atualmente para os seguintes idiomas e plataformas:
 - [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
 - [ASP.NET](https://developer.microsoft.com/en-us/graph/get-started/asp.net)
 - [iOS](https://developer.microsoft.com/en-us/graph/get-started/ios)
-- [JavaScript](https://developer.microsoft.com/en-us/graph/get-started/javascript)
+- [Javascript](https://developer.microsoft.com/en-us/graph/get-started/javascript)
 - [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)
 - [Java](https://developer.microsoft.com/en-us/graph/get-started/java)
 - [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)

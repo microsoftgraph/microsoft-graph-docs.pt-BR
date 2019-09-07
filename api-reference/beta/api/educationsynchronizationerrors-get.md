@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8f2f3076ca757ef941087e0334583246d0543856
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d8623cb83e0ed0912202ea1be9088917b4ad34d6
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720302"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791131"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
@@ -86,7 +86,7 @@ Content-type: application/json
 Content-length: 1568
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/errors",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/errors",
     "@odata.count": 14,
     "value": [
         {

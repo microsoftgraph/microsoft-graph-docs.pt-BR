@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 120bf407ac38ffb5b2a4802905f4ae02ee134483
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7ebe887ad3fb54af107ac89fa9d113e0cb9bbb6f
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956398"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791719"
 ---
 # <a name="update-customerpayments"></a>Atualizar customerPayments
 Atualizar as propriedades de um objeto de pagamento de cliente para o Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-PATCH /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+PATCH /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo da solicitação.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 Content-type: application/json
 
 {

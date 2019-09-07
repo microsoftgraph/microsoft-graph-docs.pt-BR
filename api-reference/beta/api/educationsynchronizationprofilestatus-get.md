@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 68a40e061eada2f6d02e06bba3b47460589baf74
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0ce9012d45f195ccbbf4f28ade8a5ad92d97f8c2
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720267"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791152"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Obter o status de um educationSynchronizationProfile
 
@@ -85,7 +85,7 @@ Content-type: application/json
 Content-length: 232
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/profileStatus/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
     "status": "inProgress",
     "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
 }

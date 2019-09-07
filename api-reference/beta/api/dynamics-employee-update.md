@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 34def074257dde043de6408f6b25db42f4f2630b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ac17678b5cc75d8416918b6f39583d27f9d5dea7
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956286"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791656"
 ---
 # <a name="update-employees"></a>Atualizar funcionários
 Atualizar as propriedades de um objeto Employee para o Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-PATCH /financials/companies('{id}')/employees('{id}')
+PATCH /financials/companies/{id}/employees/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -55,7 +55,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 Este é um exemplo da solicitação.
 
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/employees('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 Content-type: application/json
 
 {
@@ -97,7 +97,7 @@ Content-type: application/json
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/employees('{id}')/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies/{id}/employees/{id}/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z" 
 }
 ```

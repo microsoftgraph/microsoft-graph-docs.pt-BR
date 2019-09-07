@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3f1bcae115bd1d5e9c117b6bc90981402397ab0e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f24726931cd6aec7d4f246879bb3da32d23bdd3c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956692"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792062"
 ---
 # <a name="create-customerpaymentjournals"></a>Criar customerPaymentJournals
 Cria um objeto de diário de pagamento do cliente no Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-POST /financials/companies('{id}')/customerPaymentJournals('{id}')
+POST /financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals
+POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals
 Content-type: application/json
 
 ```json

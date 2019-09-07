@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 178b5c2f7a728970ec12931f6e5bd6c06e1ead81
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c9ce592c2cc24aa9cac0731b678c473a9c18447
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956580"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791936"
 ---
 # <a name="create-shipmentmethods"></a>Criar shipmentMethods
 Criar um objeto de método de remessa no Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-POST /financials/companies('{id}')/shipmentMethods
+POST /financials/companies/{id}/shipmentMethods
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/shipmentMethods
+POST https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods
 Content-type: application/json
 
 {

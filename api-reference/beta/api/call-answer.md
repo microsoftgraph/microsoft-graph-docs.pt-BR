@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4d59f48ff3a43e2e72273c6d13a8b16e3a7e96fe
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8cbdd87e037bb22972394423203f0f9218edf7b2
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419017"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792426"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -31,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
-POST /applications/{id}/calls/{id}/answer
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

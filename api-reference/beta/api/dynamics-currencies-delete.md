@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ce3980118a26276ab712e2c422b9260b8624b31c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c2b5235cdc8f841ad7fb11c5319d236f727d4da
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956510"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791838"
 ---
 # <a name="delete-currencies"></a>Excluir moedas
 Excluir um objeto Currency do Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-DELETE /financials/companies('{id}')/currencies('{id}')
+DELETE /financials/companies/{id}/currencies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -55,7 +55,7 @@ Se bem-sucedido, este método retorna um código de resposta ```204 No Content``
 Este é um exemplo da solicitação.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/currencies('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 ```
 
 **Resposta** 

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 9c9f70c9e0fe91bf4073d7b6470b03a28f2a7f22
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1fe1be67164c4c615a66fee5a009be36fac169c0
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956314"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791642"
 ---
 # <a name="delete-employees"></a>Excluir funcionários
 Excluir um funcionário do Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-DELETE /financials/companies('{id}')/employees('{id}')
+DELETE /financials/companies/{id}/employees/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna um código de resposta ```204 No Content``
 Este é um exemplo da solicitação.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/employees('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```
 
 **Resposta** 

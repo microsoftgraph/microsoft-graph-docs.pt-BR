@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d92746a5a2b4db3566278ecc0df14fd4104c10ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b79ef611ba16c249dda4de4868b6ada01f6f2148
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956230"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791551"
 ---
 # <a name="update-items"></a>Atualizar itens
 Atualizar as propriedades de um objeto de item para o Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-PATCH /financials/companies('{id}')/items('{id}')
+PATCH /financials/companies/{id}/items/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -52,7 +52,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo da solicitação.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/items('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 Content-type: application/json
 
 {

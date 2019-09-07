@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e2e8138a89f25abafe0a5333136d5aef45014f10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9dc553ac9fbd0bbbbe45e7775ffd91f2f4cdb881
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956566"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791894"
 ---
 # <a name="create-taxareas"></a>Criar taxAreas
 Cria um objeto de área de impostos no Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-POST /financials/companies('{id}')/taxAreas('{id}')
+POST /financials/companies/{id}/taxAreas/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas
+POST https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas
 Content-type: application/json
 
 ```json

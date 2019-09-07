@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 10b8fff983f9c4f90bb40127ee5094a0fd0bdf74
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7ca5f24ff66961995759cd7ccb84857fd1406bc9
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956818"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792132"
 ---
 # <a name="get-companyinformation"></a>Obter companyInformation
 Recupere as propriedades e os relacionamentos de um objeto de informações da empresa para o Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-GET /financials/companies('{id}')/companyInformation('{id}')
+GET /financials/companies/{id}/companyInformation/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -50,7 +50,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo da solicitação.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/companyInformation('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/companyInformation/{id}
 ```
 
 **Resposta**
@@ -78,7 +78,7 @@ Veja a seguir um exemplo da resposta.
   "currencyCode": "USD",
   "currentFiscalYearStartDate": "2018-01-01",
   "industry": "",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/companyInformation('{id}')/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies/{id}/companyInformation/{id}/picture",
   "businessProfileId": "",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
 }

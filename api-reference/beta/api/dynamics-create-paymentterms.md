@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 84a756dc92819a2ab40b6bc24600af9c66f2004c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 40f39f94f0249e2fa9947d8b3f828fc344a1ed39
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956594"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791915"
 ---
 # <a name="create-paymentterms"></a>Criar paymentTerms
 Criar um objeto de condições de pagamento no Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-POST /financials/companies('{id}')/paymentTerms
+POST /financials/companies/{id}/paymentTerms
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/paymentTerms
+POST https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms
 Content-type: application/json
 
 {

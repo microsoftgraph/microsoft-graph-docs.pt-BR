@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc5d6822ef42bbbb37d423ba8d7824a85d164bf6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 969dd84b7262dc2495c7990b39af5a593a245808
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418989"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792435"
 ---
 # <a name="call-changescreensharingrole"></a>Call: changeScreenSharingRole
 
@@ -31,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/changeScreenSharingRole
-POST /applications/{id}/calls/{id}/changeScreenSharingRole
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

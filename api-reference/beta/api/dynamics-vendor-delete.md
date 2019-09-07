@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 06982a3f48ccd81ed606c62dd8d02965561530a4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d5e9e4e06576641ad4c3108f58ee836b58f3d99
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955824"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791105"
 ---
 # <a name="delete-vendors"></a>Excluir fornecedores
 Excluir um objeto fornecedor do Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-DELETE /financials/companies('{id}')/vendors('{id}')
+DELETE /financials/companies/{id}/vendors/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna um código de resposta ```204 No Content``
 Este é um exemplo da solicitação.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/vendors('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 ```
 
 **Resposta** 

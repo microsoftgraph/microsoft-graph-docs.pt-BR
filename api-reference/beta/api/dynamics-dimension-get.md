@@ -7,15 +7,15 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 8d48f6bd2df2307be7d22cdd6ea9395cc79723a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2e253131da757e0a1565d8ef8b3e9b48d6f26b9
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956354"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791670"
 ---
 # <a name="get-dimensions"></a>Obter dimensões
-Recupere as propriedades e os relacionamentos de **** um objeto Dimensions para o Dynamics 365 Business central.
+Recupere as propriedades e os relacionamentos de um objeto **Dimensions** para o Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-GET /financials/companies('{id}')/dimensions('{id}')
+GET /financials/companies/{id}/dimensions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -52,7 +52,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo da solicitação.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/dimensions('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}
 ```
 
 **Resposta**

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d8031b46d8ded0170dae1bcceeac68038fde0e5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf44a683f79192d02ffe87f57b0a9d5d92bc0f27
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956650"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791992"
 ---
 # <a name="create-itemcategories"></a>Criar categorias de categoria
 Criar um objeto de categoria de item Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-POST /financials/companies('{id}')/itemCategories
+POST /financials/companies/{id}/itemCategories
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -41,10 +41,10 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Content-Type |application/json         |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um **** objeto myCategories.
+No corpo da solicitação, forneça uma representação JSON de um objeto **myCategories** .
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e um objeto myCategories no corpo da resposta. ****
+Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e um objeto **myCategories** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/itemCategories
+POST https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories
 Content-type: application/json
 
 {

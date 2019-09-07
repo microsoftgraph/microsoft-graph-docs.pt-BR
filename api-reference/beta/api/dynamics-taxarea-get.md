@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 55c51b0016876a0b80f35d8d12168bb700881075
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 50c119a08e547d87afa2eeb40e790b5e98e7b68d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955929"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791250"
 ---
 # <a name="get-taxareas"></a>Obter taxAreas
 Recupere as propriedades e os relacionamentos de um objeto de área de impostos para o Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-GET /financials/companies('{id}')/taxAreas('{id}')
+GET /financials/companies/{id}/taxAreas/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -52,7 +52,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo da solicitação.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas/{id}
 ```
 
 **Resposta**

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 1c447be1946d2a5144b15476f70a211c754aa170
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a15fd1e1e07db00342391817ee204501bb7b196c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956090"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791411"
 ---
 # <a name="delete-paymentmethods"></a>Excluir paymentMethods
 Excluir um objeto de método de pagamento do Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-DELETE /financials/companies('{id}')/paymentMethods('{id}')
+DELETE /financials/companies/{id}/paymentMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna um código de resposta ```204 No Content``
 Este é um exemplo da solicitação.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/paymentMethods('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 ```
 
 **Resposta** 

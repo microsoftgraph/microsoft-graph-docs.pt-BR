@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 36be8d31d7ee43c125d77b5cf233c0c63848cf45
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6374936502929a3a7be3c6822d9145eb0034957c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955908"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791243"
 ---
 # <a name="delete-taxgroups"></a>Excluir taxGroups
 Excluir um objeto de grupo de impostos do Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-DELETE /financials/companies('{id}')/taxGroups('{id}')
+DELETE /financials/companies/{id}/taxGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna um código de resposta ```204,No Content``
 Este é um exemplo da solicitação.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/taxGroups('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups/{id}
 ```
 
 **Resposta** 

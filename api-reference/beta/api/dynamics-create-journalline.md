@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 74c5f1210b4d8be40ca74eff5f0cf29769b5b691
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c0d047840143c87618eb33fc1ee9d0bc074f3f7e
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956615"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791950"
 ---
 # <a name="create-journallines"></a>Criar journalLines
 Cria um objeto de linha de diário no Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-POST /financials/companies('{id}')/journals('{id}')/journalLines('{id}')
+POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna ```201 Created``` o código de resposta e 
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/journals('{id}')/journalLines
+POST https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines
 Content-type: application/json
 
 {

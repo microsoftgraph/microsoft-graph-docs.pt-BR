@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f4facea69555bd892784b26c17c2d3b79e754258
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4595fca85d85bab0eaec1629a4422c1db5fa9964
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956524"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791852"
 ---
 # <a name="create-vendors"></a>Criar fornecedores
 Criar um objeto fornecedor no Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-POST /financials/companies('{id}')/vendors
+POST /financials/companies/{id}/vendors
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/vendors
+POST https://graph.microsoft.com/beta/financials/companies/{id}/vendors
 Content-type: application/json
 
 {

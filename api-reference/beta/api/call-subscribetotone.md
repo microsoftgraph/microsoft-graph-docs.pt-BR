@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 83e6c1b9795ea1caf27a166fd523c70b51909df0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a81c6440d320f74411f1ffefb94a6fea14945b14
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418863"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792522"
 ---
 # <a name="call-subscribetotone"></a>Call: subscribeToTone
 
@@ -34,7 +34,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/subscribeToTone
-POST /applications/{id}/calls/{id}/subscribeToTone
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

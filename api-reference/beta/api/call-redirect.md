@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a43f9c6164e69315d60f39c2ae0b9c1ba3df2c9f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7ea4e128f6cbbdd8184afdcb7113271fa32510df
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418891"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792261"
 ---
 # <a name="call-redirect"></a>Call: Redirect
 
@@ -49,6 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |timeout|Int32|O tempo limite em segundos para a operação de redirecionamento.|
 |maskCallee|Booliano|Indica se o receptor deve ser mascarado.|
 |maskCaller|Booliano|Indica se o chamador deve ser mascarado.|
+|callbackUri|String|Permite que os bots forneçam um URI de retorno de chamada específico, onde o resultado da ação de redirecionamento será lançado. Isso permite enviar o resultado para a mesma instância de bot específica que disparou a ação de redirecionamento. Se nenhum for fornecido, o URI de retorno de chamada global do bot será usado.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` o código de resposta

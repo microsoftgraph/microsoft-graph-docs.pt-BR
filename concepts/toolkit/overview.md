@@ -3,19 +3,19 @@ title: Kit de ferramentas do Microsoft Graph (versão prévia)
 description: O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares da estrutura para acessar e trabalhar com o Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: ca55500217ab23f9e6a2744da61f332e745af398
-ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
+ms.openlocfilehash: 4509e382b89dcd9c403695df2ff7d99115a7f8b4
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576400"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792860"
 ---
 # <a name="microsoft-graph-toolkit-preview"></a>Kit de ferramentas do Microsoft Graph (versão prévia)
 
 O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares da estrutura para acessar e trabalhar com o Microsoft Graph. Todos os componentes podem acessar o Microsoft Graph sem a necessidade de personalização.
 
-> [!NOTE]
-> Esta biblioteca está em versão prévia e está no desenvolvimento inicial. Esperamos fazer alterações e melhorias em todos os componentes e APIs com base nos comentários da Comunidade.
+>[!NOTE]
+>Esta biblioteca está em versão prévia e está no desenvolvimento inicial. Esperamos fazer alterações e melhorias em todos os componentes e APIs com base nos comentários da Comunidade.
 
 ## <a name="get-started"></a>Introdução
 
@@ -92,7 +92,7 @@ O kit de ferramentas contém provedores para os suplementos do [MSAL](./provider
 
 ## <a name="polyfills"></a>Polyfills
 
-Se você estiver usando os módulos es6 do pacote do NPM, certifique-se de incluir os metapreenchimentos no projeto, pois eles não serão incluídos automaticamente. Para saber mais, confira polipreenchimentos. [](https://www.webcomponents.org/polyfills)
+Se você estiver usando os módulos es6 do pacote do NPM, certifique-se de incluir os metapreenchimentos no projeto, pois eles não serão incluídos automaticamente. Para saber mais, confira [polipreenchimentos](https://www.webcomponents.org/polyfills).
 
 Se você estiver usando o script MGT-Loader. js do pacote no unpkg, os metapreenchimentos já estão incluídos.
 

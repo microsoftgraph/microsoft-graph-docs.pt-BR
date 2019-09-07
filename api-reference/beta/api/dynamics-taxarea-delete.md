@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 5ddbc2cb4053456e76ee57ca06375f6a64ffa106
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4eaa4a67a644b1670c0848b304cd65c3c4344642
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955950"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791313"
 ---
 # <a name="delete-taxareas"></a>Excluir taxAreas
 Excluir um objeto de área de impostos do Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-DELETE /financials/companies('{id}')/taxAreas('{id}')
+DELETE /financials/companies/{id}/taxAreas/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -55,7 +55,7 @@ Se bem-sucedido, este método retorna um código de resposta ```204 No Content``
 Este é um exemplo da solicitação.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas/{id}
 ```
 
 **Resposta** 

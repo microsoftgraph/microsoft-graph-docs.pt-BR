@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: bea9934594c1f8218ca9f04fc3cdf60f4c3d7fe0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82b40df0b61033def47d26c004d7a234fbb3556e
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956748"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792104"
 ---
 # <a name="create-countriesregions"></a>Criar countriesRegions
 Criar um objeto countriesRegions no Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-POST /financials/companies('{id}')/countriesRegions
+POST /financials/companies/{id}/countriesRegions
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/countriesRegions
+POST https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions
 Content-type: application/json
 
 {

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4f20b096964b92db4ce393922efc635142698483
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cd42f1099e922e79292cfddb667f38a9e8c9fb3d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317655"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792258"
 ---
 # <a name="call-record"></a>Call: Record
 
@@ -35,7 +35,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/record
-POST /applications/{id}/calls/{id}/record
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

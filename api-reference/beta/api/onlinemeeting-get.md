@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 874937929d21f0b1533a5344d1e3cc16b2594bf3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0a4a73f048459c3d3d455e5ef0082384366cba1a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726022"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792622"
 ---
 # <a name="get-online-meeting"></a>Obter reunião online
 
@@ -35,7 +35,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/{id}
-GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

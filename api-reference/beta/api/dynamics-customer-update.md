@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 088db4752d62ffc521cf397db2692002537d3015
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6fe65f031f8f20296fbbf09a5f64c37ae924beb
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956440"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791768"
 ---
 # <a name="update-customers"></a>Atualizar clientes
 Atualizar as propriedades de um objeto Customer para o Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-PATCH /financials/companies('{id}')/customers('{id}')
+PATCH /financials/companies/{id}/customers/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -45,7 +45,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um **** objeto Customers atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto **Customers** atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um **** 
 Este é um exemplo da solicitação.
 
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/customers('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 Content-type: application/json
 
 {

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 5aab0dab11d1b56a9eb230836fe157f87a99a07e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5f52fad6db98d209fc81f43753249f79af07c9dc
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956720"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792097"
 ---
 # <a name="create-customers"></a>Criar clientes
 Criar um objeto Customer no Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-POST /financials/companies('{id}')/customers
+POST /financials/companies/{id}/customers
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -41,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Content-Type   |application/json         |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do **** objeto Customers.
+No corpo da solicitação, forneça uma representação JSON do objeto **Customers** .
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna ```201 Created``` o código de resposta e um objeto **Customers** no corpo da resposta.
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna ```201 Created``` o código de resposta e 
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/customers
+POST https://graph.microsoft.com/beta/financials/companies/{id}/customers
 Content-type: application/json
 
 {

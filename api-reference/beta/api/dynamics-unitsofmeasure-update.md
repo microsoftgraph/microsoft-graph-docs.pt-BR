@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 1d18b2093c5b00a6e08ad4a8c8e91161c2d5216e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47ec43ae34a4841cbae04ef9c2fc3530becf96df
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955838"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791104"
 ---
 # <a name="update-unitsofmeasure"></a>Atualizar unitsOfMeasure
 Atualizar as propriedades de um objeto de unidades de medida para o Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-PATCH /financials/companies('{id}')/unitsOfMeasure('{id}')
+PATCH /financials/companies/{id}/unitsOfMeasure/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo da solicitação.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/unitsOfMeasure('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure/{id}
 Content-type: application/json
 
 {

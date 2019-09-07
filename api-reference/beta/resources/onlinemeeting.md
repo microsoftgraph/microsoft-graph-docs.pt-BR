@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cd3615f82a4e88d6dc0b07c12ba72e39726e755f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 611731673d932d6c5135c0115d735e4d642b1bfe
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009353"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792783"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
@@ -43,6 +43,8 @@ Captura informações sobre a reunião, incluindo a URL de ingresso, a lista de 
 | participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime             | DateTime                                               | Hora de início da reunião. |
 | subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
+| capabilities              | Coleção de cadeias de caracteres                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
+| videoTeleconferenceId     | String                                                 | A ID de teleconferência de vídeo. |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -74,6 +76,8 @@ Veja a seguir uma representação JSON do recurso.
   "meetingType": "meetNow | scheduled | recurring | broadcast",
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
-  "subject": "String"
+  "subject": "String",
+  "capabilities": [ "questionAndAnswer" ],
+  "videoTeleconferenceId": "String"
 }
 ```

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b315cde52fbb5be38680272a868c964b9e00c8a9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e777dccdb1eb1925c1c8961c00efe79396f293fd
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418821"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792270"
 ---
 # <a name="call-updatemetadata"></a>Call: updateMetadata
 
@@ -31,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateMetadata
-POST /applications/{id}/calls/{id}/updateMetadata
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

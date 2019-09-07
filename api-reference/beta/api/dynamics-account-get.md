@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f0441a3c2f9385378e767d721c09cb28e87a5682
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b020d6204a5c99f9b3a49721a3fc327f3314f4f7
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956874"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792230"
 ---
 # <a name="get-accounts"></a>Obter contas
 Recupere as propriedades e os relacionamentos de um objeto de conta para o Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-GET /financials/companies('{id}')/accounts('{id}')
+GET /financials/companies/{id}/accounts/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -44,14 +44,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto Accounts no corpo da resposta. ****
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **accounts** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 **Solicitação** Aqui está um exemplo da solicitação.
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/accounts('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/accounts/{id}
 ```
 
 **Resposta**

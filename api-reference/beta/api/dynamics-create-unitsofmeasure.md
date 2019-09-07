@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 41c312a7b118dbe161c56d4eb226ef390d0d3d1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c1cf9e8c2d60c2af6ed20a2203b58c9edadd662f
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956538"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791866"
 ---
 # <a name="create-unitsofmeasure"></a>Criar unitsOfMeasure
 Criar um objeto de unidades de medida no Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-POST /financials/companies('{id}')/unitsOfMeasure
+POST /financials/companies/{id}/unitsOfMeasure
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e
 Veja a seguir um exemplo de uma solicitação.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/unitsOfMeasure
+POST https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure
 Content-type: application/json
 
 {

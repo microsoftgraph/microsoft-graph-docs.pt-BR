@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: a44da57af784d0506392090e06a0851887499f34
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b471de6dac08111453d42b32f2c95e8d2a94f06
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956188"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791516"
 ---
 # <a name="update-itemcategories"></a>Atualizar as categorias
 Atualizar as propriedades de um objeto de categoria de item para o Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-PATCH /financials/companies('{id}')/itemCategories('{id}')
+PATCH /financials/companies/{id}/itemCategories/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -46,7 +46,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto myCategories atualizado no corpo da resposta. ****
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **myCategories** atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -54,7 +54,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo da solicitação.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/itemCategories('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories/{id}
 Content-type: application/json
 
 {

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d02cd6eae1ddc9006beeb58020196cbf1766d4e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c73b5776908545354fb3f66483048309b8e01365
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956069"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791425"
 ---
 # <a name="get-paymentmethods"></a>Obter paymentMethods
 Recupere as propriedades e os relacionamentos de um objeto de método de pagamento para o Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```
-GET /financials/companies('{id}')/paymentMethods('{id}')
+GET /financials/companies/{id}/paymentMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -52,7 +52,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo da solicitação.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/paymentMethods('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 ```
 
 **Resposta**

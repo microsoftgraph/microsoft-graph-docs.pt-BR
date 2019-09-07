@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: bd78a3125aaf10199be0e14c5f90148a5bc5d000
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f5e203e1a45d7afbe541278819aa4dcacb1a9a0a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956034"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791369"
 ---
 # <a name="delete-paymentterms"></a>Excluir paymentTerms
 Excluir um objeto de condições de pagamento do Dynamics 365 Business central.
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```
-DELETE /financials/companies('{id}')/paymentTerms('{id}')
+DELETE /financials/companies/{id}/paymentTerms/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna um código de resposta ```204 No Content``
 Este é um exemplo da solicitação.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/paymentTerms('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 ```
 
 **Resposta** 

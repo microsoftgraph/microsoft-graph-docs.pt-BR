@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bf91890b5e339bebc73242172d64f6e710e41b02
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d2451ba6ef8ae993b2ee6be5784bed98fd5f0ea9
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412534"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792797"
 ---
 # <a name="delete-program"></a>Excluir programa
 
@@ -35,7 +35,7 @@ O usuário conectado também deve estar em uma função de diretório que permit
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programs('{id}')
+DELETE /programs/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
