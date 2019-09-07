@@ -5,60 +5,59 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4d59f48ff3a43e2e72273c6d13a8b16e3a7e96fe
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8cbdd87e037bb22972394423203f0f9218edf7b2
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419017"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792426"
 ---
-# <a name="call-answer"></a><span data-ttu-id="11682-103">Call: resposta</span><span class="sxs-lookup"><span data-stu-id="11682-103">call: answer</span></span>
+# <a name="call-answer"></a><span data-ttu-id="81394-103">Call: resposta</span><span class="sxs-lookup"><span data-stu-id="81394-103">call: answer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="11682-104">Atenda às chamadas recebidas.</span><span class="sxs-lookup"><span data-stu-id="11682-104">Answer an incoming call.</span></span>
+<span data-ttu-id="81394-104">Atenda às chamadas recebidas.</span><span class="sxs-lookup"><span data-stu-id="81394-104">Answer an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="11682-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="11682-105">Permissions</span></span>
-<span data-ttu-id="11682-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="11682-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="81394-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="81394-105">Permissions</span></span>
+<span data-ttu-id="81394-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="81394-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="11682-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="11682-108">Permission type</span></span> | <span data-ttu-id="11682-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="11682-109">Permissions (from least to most privileged)</span></span>                 |
+| <span data-ttu-id="81394-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="81394-108">Permission type</span></span> | <span data-ttu-id="81394-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="81394-109">Permissions (from least to most privileged)</span></span>                 |
 | :-------------- | :-----------------------------------------------------------|
-| <span data-ttu-id="11682-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="11682-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="11682-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="11682-111">Not Supported</span></span>                        |
-| <span data-ttu-id="11682-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="11682-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="11682-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="11682-113">Not Supported</span></span>                        |
-| <span data-ttu-id="11682-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="11682-114">Application</span></span>     | <span data-ttu-id="11682-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="11682-115">None</span></span>                                                        |
+| <span data-ttu-id="81394-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="81394-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="81394-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="81394-111">Not Supported</span></span>                        |
+| <span data-ttu-id="81394-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="81394-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="81394-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="81394-113">Not Supported</span></span>                        |
+| <span data-ttu-id="81394-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="81394-114">Application</span></span>     | <span data-ttu-id="81394-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="81394-115">None</span></span>                                                        |
 
-## <a name="http-request"></a><span data-ttu-id="11682-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="11682-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="81394-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="81394-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
-POST /applications/{id}/calls/{id}/answer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="11682-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="11682-117">Request headers</span></span>
-| <span data-ttu-id="11682-118">Nome</span><span class="sxs-lookup"><span data-stu-id="11682-118">Name</span></span>          | <span data-ttu-id="11682-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="11682-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="81394-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="81394-117">Request headers</span></span>
+| <span data-ttu-id="81394-118">Nome</span><span class="sxs-lookup"><span data-stu-id="81394-118">Name</span></span>          | <span data-ttu-id="81394-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="81394-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="11682-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="11682-120">Authorization</span></span> | <span data-ttu-id="11682-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="11682-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="81394-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="81394-120">Authorization</span></span> | <span data-ttu-id="81394-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="81394-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="11682-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="11682-123">Request body</span></span>
-<span data-ttu-id="11682-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="11682-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="81394-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="81394-123">Request body</span></span>
+<span data-ttu-id="81394-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="81394-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="11682-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="11682-125">Parameter</span></span>        | <span data-ttu-id="11682-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="11682-126">Type</span></span>                                     |<span data-ttu-id="11682-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="11682-127">Description</span></span>                                                                                                                                    |
+| <span data-ttu-id="81394-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="81394-125">Parameter</span></span>        | <span data-ttu-id="81394-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="81394-126">Type</span></span>                                     |<span data-ttu-id="81394-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="81394-127">Description</span></span>                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="11682-128">callbackUri</span><span class="sxs-lookup"><span data-stu-id="11682-128">callbackUri</span></span>       |<span data-ttu-id="11682-129">String</span><span class="sxs-lookup"><span data-stu-id="11682-129">String</span></span>                                    |<span data-ttu-id="11682-130">A ID de retorno de chamada ou de assinatura à qual os retornos serão entregues.</span><span class="sxs-lookup"><span data-stu-id="11682-130">The callback or subscription ID on which callbacks will be delivered.</span></span> <span data-ttu-id="11682-131">Precisam</span><span class="sxs-lookup"><span data-stu-id="11682-131">(Required)</span></span>                                                               |
-|<span data-ttu-id="11682-132">acceptedModalities</span><span class="sxs-lookup"><span data-stu-id="11682-132">acceptedModalities</span></span>|<span data-ttu-id="11682-133">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="11682-133">String collection</span></span>                         |<span data-ttu-id="11682-134">A lista de aceitar modalidades.</span><span class="sxs-lookup"><span data-stu-id="11682-134">The list of accept modalities.</span></span> <span data-ttu-id="11682-135">O valor possível são `unknown`: `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`,.</span><span class="sxs-lookup"><span data-stu-id="11682-135">Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`.</span></span> <span data-ttu-id="11682-136">Precisam</span><span class="sxs-lookup"><span data-stu-id="11682-136">(Required)</span></span> |
-|<span data-ttu-id="11682-137">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="11682-137">mediaConfig</span></span>       |[<span data-ttu-id="11682-138">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="11682-138">mediaConfig</span></span>](../resources/mediaconfig.md)|<span data-ttu-id="11682-139">A configuração de mídia.</span><span class="sxs-lookup"><span data-stu-id="11682-139">The media configuration.</span></span> <span data-ttu-id="11682-140">Precisam</span><span class="sxs-lookup"><span data-stu-id="11682-140">(Required)</span></span>                                                                                                            |
+|<span data-ttu-id="81394-128">callbackUri</span><span class="sxs-lookup"><span data-stu-id="81394-128">callbackUri</span></span>       |<span data-ttu-id="81394-129">String</span><span class="sxs-lookup"><span data-stu-id="81394-129">String</span></span>                                    |<span data-ttu-id="81394-130">A ID de retorno de chamada ou de assinatura à qual os retornos serão entregues.</span><span class="sxs-lookup"><span data-stu-id="81394-130">The callback or subscription ID on which callbacks will be delivered.</span></span> <span data-ttu-id="81394-131">Precisam</span><span class="sxs-lookup"><span data-stu-id="81394-131">(Required)</span></span>                                                               |
+|<span data-ttu-id="81394-132">acceptedModalities</span><span class="sxs-lookup"><span data-stu-id="81394-132">acceptedModalities</span></span>|<span data-ttu-id="81394-133">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="81394-133">String collection</span></span>                         |<span data-ttu-id="81394-134">A lista de aceitar modalidades.</span><span class="sxs-lookup"><span data-stu-id="81394-134">The list of accept modalities.</span></span> <span data-ttu-id="81394-135">O valor possível são `unknown`: `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`,.</span><span class="sxs-lookup"><span data-stu-id="81394-135">Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`.</span></span> <span data-ttu-id="81394-136">Precisam</span><span class="sxs-lookup"><span data-stu-id="81394-136">(Required)</span></span> |
+|<span data-ttu-id="81394-137">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="81394-137">mediaConfig</span></span>       |[<span data-ttu-id="81394-138">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="81394-138">mediaConfig</span></span>](../resources/mediaconfig.md)|<span data-ttu-id="81394-139">A configuração de mídia.</span><span class="sxs-lookup"><span data-stu-id="81394-139">The media configuration.</span></span> <span data-ttu-id="81394-140">Precisam</span><span class="sxs-lookup"><span data-stu-id="81394-140">(Required)</span></span>                                                                                                            |
 
-## <a name="response"></a><span data-ttu-id="11682-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="11682-141">Response</span></span>
-<span data-ttu-id="11682-142">Este método retorna `202 Accepted` um código de resposta.</span><span class="sxs-lookup"><span data-stu-id="11682-142">This method returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="81394-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="81394-141">Response</span></span>
+<span data-ttu-id="81394-142">Este método retorna `202 Accepted` um código de resposta.</span><span class="sxs-lookup"><span data-stu-id="81394-142">This method returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="11682-143">Exemplos</span><span class="sxs-lookup"><span data-stu-id="11682-143">Examples</span></span>
-<span data-ttu-id="11682-144">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="11682-144">The following example shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="81394-143">Exemplos</span><span class="sxs-lookup"><span data-stu-id="81394-143">Examples</span></span>
+<span data-ttu-id="81394-144">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="81394-144">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="11682-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="11682-145">Request</span></span>
-<span data-ttu-id="11682-146">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="11682-146">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="81394-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="81394-145">Request</span></span>
+<span data-ttu-id="81394-146">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="81394-146">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="11682-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="11682-147">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="81394-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="81394-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer"
@@ -79,23 +78,23 @@ Content-Length: 211
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="11682-148">C#</span><span class="sxs-lookup"><span data-stu-id="11682-148">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="81394-148">C#</span><span class="sxs-lookup"><span data-stu-id="81394-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="11682-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11682-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="81394-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="81394-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="11682-150">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="11682-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="81394-150">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="81394-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="11682-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="11682-151">Response</span></span>
-<span data-ttu-id="11682-152">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="11682-152">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="81394-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="81394-151">Response</span></span>
+<span data-ttu-id="81394-152">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="81394-152">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -106,9 +105,9 @@ Content-Length: 211
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a><span data-ttu-id="11682-153">Responder chamada VOIP com mídia hospedada pelo serviço</span><span class="sxs-lookup"><span data-stu-id="11682-153">Answer VOIP call with service hosted media</span></span>
+### <a name="answer-voip-call-with-service-hosted-media"></a><span data-ttu-id="81394-153">Responder chamada VOIP com mídia hospedada pelo serviço</span><span class="sxs-lookup"><span data-stu-id="81394-153">Answer VOIP call with service hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="11682-154">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="11682-154">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="81394-154">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="81394-154">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -176,7 +175,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="11682-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="11682-155">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="81394-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="81394-155">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -208,13 +207,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="11682-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="11682-156">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="81394-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="81394-156">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="11682-157">Notificação-estabelecimento</span><span class="sxs-lookup"><span data-stu-id="11682-157">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="81394-157">Notificação-estabelecimento</span><span class="sxs-lookup"><span data-stu-id="81394-157">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -243,7 +242,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="11682-158">Estabelecido em notificação</span><span class="sxs-lookup"><span data-stu-id="11682-158">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="81394-158">Estabelecido em notificação</span><span class="sxs-lookup"><span data-stu-id="81394-158">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -272,9 +271,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="11682-159">Responder chamada VOIP com mídia hospedada por aplicativo</span><span class="sxs-lookup"><span data-stu-id="11682-159">Answer VOIP call with application hosted media</span></span>
+### <a name="answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="81394-159">Responder chamada VOIP com mídia hospedada por aplicativo</span><span class="sxs-lookup"><span data-stu-id="81394-159">Answer VOIP call with application hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="11682-160">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="11682-160">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="81394-160">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="81394-160">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -329,7 +328,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="11682-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="11682-161">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="81394-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="81394-161">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -352,13 +351,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="11682-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="11682-162">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="81394-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="81394-162">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="11682-163">Notificação-estabelecimento</span><span class="sxs-lookup"><span data-stu-id="11682-163">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="81394-163">Notificação-estabelecimento</span><span class="sxs-lookup"><span data-stu-id="81394-163">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -387,7 +386,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="11682-164">Estabelecido em notificação</span><span class="sxs-lookup"><span data-stu-id="11682-164">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="81394-164">Estabelecido em notificação</span><span class="sxs-lookup"><span data-stu-id="81394-164">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

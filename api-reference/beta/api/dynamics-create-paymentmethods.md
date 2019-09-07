@@ -7,53 +7,53 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 682b59383c9e6c791f57162871ed4ecbb8ab8c93
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 106c282c757362b7201afc3fd64d3b5a44920070
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956608"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791922"
 ---
-# <a name="create-paymentmethods"></a><span data-ttu-id="67479-103">Criar paymentMethods</span><span class="sxs-lookup"><span data-stu-id="67479-103">Create paymentMethods</span></span>
-<span data-ttu-id="67479-104">Criar um objeto de método de pagamento no DDynamics 365 Business central.</span><span class="sxs-lookup"><span data-stu-id="67479-104">Create a payment method object in DDynamics 365 Business Central.</span></span>
+# <a name="create-paymentmethods"></a><span data-ttu-id="d22ab-103">Criar paymentMethods</span><span class="sxs-lookup"><span data-stu-id="d22ab-103">Create paymentMethods</span></span>
+<span data-ttu-id="d22ab-104">Criar um objeto de método de pagamento no DDynamics 365 Business central.</span><span class="sxs-lookup"><span data-stu-id="d22ab-104">Create a payment method object in DDynamics 365 Business Central.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="67479-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="67479-105">Permissions</span></span>
-<span data-ttu-id="67479-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67479-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d22ab-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d22ab-105">Permissions</span></span>
+<span data-ttu-id="d22ab-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d22ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="67479-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="67479-108">Permission type</span></span> |<span data-ttu-id="67479-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="67479-109">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="d22ab-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d22ab-108">Permission type</span></span> |<span data-ttu-id="d22ab-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d22ab-109">Permissions (from least to most privileged)</span></span>|
 |:---------------|:------------------------------------------|
-|<span data-ttu-id="67479-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="67479-110">Delegated (work or school account)</span></span>|<span data-ttu-id="67479-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67479-111">Financials.ReadWrite.All</span></span> |
-|<span data-ttu-id="67479-112">Delegado (conta pessoal da Microsoft</span><span class="sxs-lookup"><span data-stu-id="67479-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="67479-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="67479-113">Not supported.</span></span>|
-|<span data-ttu-id="67479-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="67479-114">Application</span></span>|<span data-ttu-id="67479-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67479-115">Financials.ReadWrite.All</span></span>|
+|<span data-ttu-id="d22ab-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d22ab-110">Delegated (work or school account)</span></span>|<span data-ttu-id="d22ab-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d22ab-111">Financials.ReadWrite.All</span></span> |
+|<span data-ttu-id="d22ab-112">Delegado (conta pessoal da Microsoft</span><span class="sxs-lookup"><span data-stu-id="d22ab-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="d22ab-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d22ab-113">Not supported.</span></span>|
+|<span data-ttu-id="d22ab-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d22ab-114">Application</span></span>|<span data-ttu-id="d22ab-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d22ab-115">Financials.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="67479-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="67479-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d22ab-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d22ab-116">HTTP request</span></span>
 ```
-POST /financials/companies('{id}')/paymentMethods
+POST /financials/companies/{id}/paymentMethods
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="67479-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="67479-117">Optional query parameters</span></span>
-<span data-ttu-id="67479-118">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="67479-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d22ab-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d22ab-117">Optional query parameters</span></span>
+<span data-ttu-id="d22ab-118">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d22ab-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="67479-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="67479-119">Request headers</span></span>
-|<span data-ttu-id="67479-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="67479-120">Header</span></span>         |<span data-ttu-id="67479-121">Valor</span><span class="sxs-lookup"><span data-stu-id="67479-121">Value</span></span>                        |
+## <a name="request-headers"></a><span data-ttu-id="d22ab-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d22ab-119">Request headers</span></span>
+|<span data-ttu-id="d22ab-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d22ab-120">Header</span></span>         |<span data-ttu-id="d22ab-121">Valor</span><span class="sxs-lookup"><span data-stu-id="d22ab-121">Value</span></span>                        |
 |---------------|-----------------------------|
-|<span data-ttu-id="67479-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="67479-122">Authorization</span></span>  |<span data-ttu-id="67479-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="67479-p102">Bearer {token}. Required.</span></span>    |
-|<span data-ttu-id="67479-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="67479-125">Content-Type</span></span>   |<span data-ttu-id="67479-126">application/json</span><span class="sxs-lookup"><span data-stu-id="67479-126">application/json</span></span>             |
+|<span data-ttu-id="d22ab-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="d22ab-122">Authorization</span></span>  |<span data-ttu-id="d22ab-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d22ab-p102">Bearer {token}. Required.</span></span>    |
+|<span data-ttu-id="d22ab-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d22ab-125">Content-Type</span></span>   |<span data-ttu-id="d22ab-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d22ab-126">application/json</span></span>             |
 
-## <a name="request-body"></a><span data-ttu-id="67479-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="67479-127">Request body</span></span>
-<span data-ttu-id="67479-128">No corpo da solicitação, forneça uma representação JSON de um objeto **paymentMethods** .</span><span class="sxs-lookup"><span data-stu-id="67479-128">In the request body, supply a JSON representation of a **paymentMethods** object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d22ab-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d22ab-127">Request body</span></span>
+<span data-ttu-id="d22ab-128">No corpo da solicitação, forneça uma representação JSON de um objeto **paymentMethods** .</span><span class="sxs-lookup"><span data-stu-id="d22ab-128">In the request body, supply a JSON representation of a **paymentMethods** object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="67479-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="67479-129">Response</span></span>
-<span data-ttu-id="67479-130">Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e um objeto **paymentMethods** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="67479-130">If successful, this method returns ```201 Created``` response code and a **paymentMethods** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d22ab-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="d22ab-129">Response</span></span>
+<span data-ttu-id="d22ab-130">Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e um objeto **paymentMethods** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d22ab-130">If successful, this method returns ```201 Created``` response code and a **paymentMethods** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="67479-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="67479-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d22ab-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d22ab-131">Example</span></span>
 
-<span data-ttu-id="67479-132">**Solicitação**</span><span class="sxs-lookup"><span data-stu-id="67479-132">**Request**</span></span>
+<span data-ttu-id="d22ab-132">**Solicitação**</span><span class="sxs-lookup"><span data-stu-id="d22ab-132">**Request**</span></span>
 
-<span data-ttu-id="67479-133">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="67479-133">Here is an example of a request.</span></span>
+<span data-ttu-id="d22ab-133">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="d22ab-133">Here is an example of a request.</span></span>
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/paymentMethods
+POST https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods
 Content-type: application/json
 
 {
@@ -62,11 +62,11 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="67479-134">**Resposta**</span><span class="sxs-lookup"><span data-stu-id="67479-134">**Response**</span></span>
+<span data-ttu-id="d22ab-134">**Resposta**</span><span class="sxs-lookup"><span data-stu-id="d22ab-134">**Response**</span></span>
 
-<span data-ttu-id="67479-135">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="67479-135">Here is an example of the response.</span></span> 
+<span data-ttu-id="d22ab-135">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d22ab-135">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="67479-136">**Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="67479-136">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="67479-137">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="67479-137">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d22ab-136">**Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="d22ab-136">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d22ab-137">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d22ab-137">All the properties will be returned from an actual call.</span></span>
 
 ```json
 HTTP/1.1 201 Created
