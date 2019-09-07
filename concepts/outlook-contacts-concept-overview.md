@@ -4,12 +4,13 @@ description: Os contatos do Outlook permitem que você armazene dados de contato
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 48aa735b3dd2f29f7aef9bdb6f8d433ee4dc25c3
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+scenarios: getting-started
+ms.openlocfilehash: 10b35252e48cd115e1c043037f68d7b0a91d4df7
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422483"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792986"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Visão geral da API de contatos pessoais do Outlook
 

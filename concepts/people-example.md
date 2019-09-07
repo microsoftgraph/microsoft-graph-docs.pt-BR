@@ -5,12 +5,12 @@ ms.date: 4/9/2019
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 55d91f72b561b5e476322b4aee051979005c577a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557913"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36793007"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 
@@ -21,7 +21,7 @@ Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as 
 Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das permissões adequadas:
 
 * People.Read – use para fazer chamadas gerais da API de Pessoas; por exemplo, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requer o consentimento do usuário final.
-* People.Read.All - necessária para recuperar as pessoas mais relevantes para um usuário especificado nas chamadas (`https://graph.microsoft.com/v1.0/users('{id}')/people`) da organização do usuário conectado. People.Read.All requer o consentimento do administrador.
+* People.Read.All - necessária para recuperar as pessoas mais relevantes para um usuário especificado nas chamadas (`https://graph.microsoft.com/v1.0/users/{id}/people`) da organização do usuário conectado. People.Read.All requer o consentimento do administrador.
 
 ## <a name="browse-people"></a>Procurar pessoas
 
