@@ -4,22 +4,21 @@ description: Você pode usar a API de Segurança do Microsoft Graph para se cone
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 595c1f80bb7c110197bf755fe74c0c842fa06014
-ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
+scenarios: getting-started
+ms.openlocfilehash: 7b12653382f88a3b16c370044fc3cb770aa2ac36
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35607389"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792965"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
 Você pode usar a API de Segurança do Microsoft Graph para se conectar aos produtos, serviços e parceiros de segurança da Microsoft para simplificar operações de segurança e melhorar a proteção contra ameaças, a detecção de ameaças e a capacidade de resposta. A API de Segurança do Microsoft Graph é um serviço (ou agente) intermediário que proporciona uma interface de programação única para conectar diversos [provedores de Segurança do Microsoft Graph](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0) (também chamados provedores de segurança ou provedores). As solicitações para a API de Segurança do Microsoft Graph são federadas para todos os provedores de segurança aplicáveis. Os resultados são agregados e retornam ao aplicativo solicitantes em um esquema comum, como mostrado no diagrama a seguir. Para saber detalhes, confira o[ fluxo de dados da API de Segurança do Microsoft Graph](security-dataflow.md).
 
-
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
 Para informações sobre autorização, confira [Autorização e a API de Segurança do Microsoft Graph](security-authorization.md). Para saber mais sobre permissões, incluindo permissões delegadas e de aplicativos, confira [Permissões](permissions-reference.md#security-permissions).
-
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
@@ -35,7 +34,7 @@ A [API de Segurança do Microsoft Graph](/graph/api/resources/security-api-overv
 
 ### <a name="unify-and-standardize-alert-tracking"></a>Unificar e padronizar o monitoramento de alertas
 
-Conecte o código uma vez para integrar os alertas de qualquer solução de segurança integrada do Microsoft Graph e mantenha os status de alerta e as atribuições sincronizados em todas as soluções. Também é possível transmitir alertas para soluções de informações de segurança e gerenciamento de eventos (SIEM), como Splunk e IBM QRadar, através do [Azure Monitor](https://docs.microsoft.com/pt-BR/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). Para saber mais sobre a integração de SIEM com entidades da API de segurança, consulte [Integração com SIEM](security-siemintegration.md).
+Conecte o código uma vez para integrar os alertas de qualquer solução de segurança integrada do Microsoft Graph e mantenha os status de alerta e as atribuições sincronizados em todas as soluções. Você também pode transmitir alertas para soluções de gerenciamento de eventos e informações de segurança (SIEM), como o Splunk, usando os conectores da API de Segurança do Microsoft Graph. Para obter mais informações sobre as integrações de solução com as entidades da API de segurança, confira [Integrações de solução de segurança usando a API de Segurança do Microsoft Graph](security-integration.md).
 
 ### <a name="correlate-security-alerts-to-improve-threat-protection-and-response"></a>Correlacionar alertas de segurança para melhorar a resposta e a proteção contra ameaças
 

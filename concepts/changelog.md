@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c63f5675b65130a0e63d3ab78f28cea17c68d278
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: 0d0f7956849e6479db14307f4992ad86edab0666
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699229"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792951"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -216,6 +216,17 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição | beta | Recurso [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta) foi adicionado. |
 | Adição | beta | Novos métodos adicionados ao recurso de[usuário](/graph/api/resources/user?view=graph-rest-beta) habilitando os seguintes métodos com aplicativos pessoais para os usuários: <br>[Lista de aplicativos instalados para o usuário](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[Instalar o aplicativo para o usuário](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[Desinstalar o aplicativo para o usuário](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[Atualizar o aplicativo instalado para o usuário](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
+### <a name="calls-and-online-meetings"></a>Chamadas e reuniões online 
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta        | Propriedade **mediaState** adicionada ao recurso de [chamada](/api-reference/beta/resources/call.md)|
+| Alteração          | Beta        | Propriedade recordResourceLocation renomeada no recurso [recordOperation para recordingLocation|
+| Alteração          | Beta        | Propriedade **recordResourceAccessToken** renomeada no recurso [recordOperation](/api-reference/beta/resources/recordOperation.md) para **recordingAccessToken**|
+| Adição        | Beta        | Propriedade **funcionalidades** adicionada ao recurso [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) |
+| Adição        | Beta        | Propriedade **videoTeleconferenceId** adicionada ao recurso [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) |
+| Adição        | Beta        | Propriedade **produtores** adicionada ao recurso [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) |
+| Adição        | Beta        | Propriedade **colaboradores** adicionada ao recurso [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) |
 
 ## <a name="june-2019"></a>Junho de 2019
 
