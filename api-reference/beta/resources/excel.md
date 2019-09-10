@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com o Excel no Microsoft Graph
-description: 'Você pode usar o Microsoft Graph para permitir que aplicativos Web e móveis leiam e modifiquem pastas de trabalho do Excel armazenadas no OneDrive, no SharePoint ou em outras plataformas de armazenamento com suporte. O recurso `Workbook` (ou arquivo do Excel) contém todos os outros recursos do Excel por meio de relações. Você pode acessar uma pasta de trabalho por meio da API Drive identificando a localização do arquivo na URL. Por exemplo:'
+description: Você pode usar o Microsoft Graph para permitir que aplicativos Web e móveis leiam e modifiquem pastas de trabalho do Excel armazenadas no OneDrive, no SharePoint ou em outras plataformas de armazenamento com suporte.
 localization_priority: Normal
-author: lumine2008
+author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: d19fea84715a685efd87400b92da6aa42b1ee744
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 183cc096719ffee6441c93018fd0858d2aaf39a5
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972072"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822743"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
@@ -92,7 +92,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->Observação: se a id da sessão tiver expirado, um código de erro HTTP `404` será retornado na sessão. Nesse cenário, você pode optar por criar uma nova sessão e continuar. Outra abordagem seria atualizar a sessão periodicamente para manter a sessão ativa. Normalmente, a sessão persistente expira após cerca de sete minutos de inatividade. A sessão não persistente expira após cerca de cinco minutos de inatividade. 
+>Observação: se a id da sessão tiver expirado, um código de erro HTTP `404` será retornado na sessão. Nesse cenário, você pode optar por criar uma nova sessão e continuar. Outra abordagem seria atualizar a sessão periodicamente para manter a sessão ativa. Normalmente, a sessão persistente expira após cerca de cinco minutos de inatividade. A sessão não persistente expira após cerca de 7 minutos de inatividade. 
 
 ## <a name="common-excel-scenarios"></a>Cenários comuns do Excel
 
@@ -1179,6 +1179,9 @@ Por exemplo, um intervalo pode consistir em uma ou mais células. Nos casos em q
 }
 ```
 
+Um valor nulo também é retornado na resposta nos seguintes casos:
+- Se ocorrer um erro ao tentar obter uma determinada propriedade de um objeto e essa propriedade puder ser definida como NULL, a propriedade poderá retornar um valor nulo na resposta.
+- Para um objeto Range, ao obter um intervalo para linha inteira ou coluna inteira, algumas propriedades podem retornar NULL como a resposta. Se o tamanho do intervalo exceder a limitação superior (células 5M), algumas propriedades retornarão nulo como o valor.
 
 ### <a name="blank-input-and-output"></a>Entrada e saída em branco
 

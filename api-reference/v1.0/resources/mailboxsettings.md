@@ -5,16 +5,18 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3fdef250b1614cc19e57af4341f7983fa0fe9fa0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a9fb455d2a67835ff1a3a10f89ee188a21e9956b
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036299"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822778"
 ---
 # <a name="mailboxsettings-resource-type"></a>Tipo de recurso mailboxSettings
 
-Configurações para a caixa de correio principal do usuário conectado.
+Configurações da caixa de correio principal de um [usuário](user.md).
+
+Você pode [obter](../api/user-get-mailboxsettings.md) ou [Atualizar](../api/user-update-mailboxsettings.md) as configurações de caixa de correio de um usuário consultando a propriedade **mailboxSettings** do usuário.
 
 
 ## <a name="properties"></a>Propriedades
