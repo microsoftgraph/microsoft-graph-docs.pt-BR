@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com o Excel no Microsoft Graph
-description: 'Você pode usar o Microsoft Graph para permitir que aplicativos web e dispositivos móveis leiam e modifiquem as pastas de trabalho do Excel armazenadas no OneDrive for Business, o site do SharePoint ou drive do grupo. O recurso `Workbook` (ou arquivo do Excel) contém todos os outros recursos do Excel por meio de relações. Você pode acessar uma pasta de trabalho por meio da API Drive identificando a localização do arquivo na URL. Por exemplo:'
+description: O Microsoft Graph pode ser usado para permitir que aplicativos Web e dispositivos móveis leiam e modifiquem as pastas de trabalho do Excel armazenadas no OneDrive for Business, site do SharePoint ou Group drive.
 localization_priority: Priority
-author: lumine2008
+author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 38fb2a38d6c589c8bd0543a5e0c210518eb1ba0d
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: abbb74553e5993f6760adaf4929678f48b7b2b86
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699125"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822764"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
@@ -1182,6 +1182,9 @@ Por exemplo, um intervalo pode consistir em uma ou mais células. Nos casos em q
 }
 ```
 
+Um valor nulo também é retornado na resposta nos seguintes casos:
+- Se ocorrer um erro ao tentar obter uma determinada propriedade de um objeto e essa propriedade puder ser definida como nula, a propriedade pode retornar um valor nulo na resposta.
+- Para um objeto Range, ao obter um intervalo para linha inteira ou coluna inteira, algumas propriedades podem retornar nulo como a resposta. Se o tamanho do intervalo exceder a limitação superior (células 5M), algumas propriedades retornarão nulas como o valor.
 
 ### <a name="blank-input-and-output"></a>Entrada e saída em branco
 
