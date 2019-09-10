@@ -393,6 +393,8 @@ items:
                 href: toolkit/components/agenda.md
               - name: Tarefas
                 href: toolkit/components/tasks.md
+              - name: Seletor de Pessoas
+                href: toolkit/components/people-picker.md
           - name: Provedores
             items:
               - name: Usando os provedores
