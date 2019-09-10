@@ -3,18 +3,27 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 0d0f7956849e6479db14307f4992ad86edab0666
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: e46f95150bc0a50a43fc619955ce36adf48d95e3
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792951"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822750"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
+
+## <a name="september-2019"></a>Setembro de 2019
+
+### <a name="users--outlook-settings"></a>Usuários | Configurações do Outlook
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta        | As propriedades **dateFormat** e **timeFormat** no recurso [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta). As propriedades representam os formatos de data e hora escolhidos pelo usuário.|
+
 
 ## <a name="august-2019"></a>Agosto de 2019
 
@@ -221,7 +230,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição        | Beta        | Propriedade **mediaState** adicionada ao recurso de [chamada](/api-reference/beta/resources/call.md)|
-| Alteração          | Beta        | Propriedade recordResourceLocation renomeada no recurso [recordOperation para recordingLocation|
+| Alteração          | Beta        | Propriedade **recordResourceLocation** renomeada no recurso [recordOperation](/api-reference/beta/resources/recordOperation.md) para **recordingLocation**|
 | Alteração          | Beta        | Propriedade **recordResourceAccessToken** renomeada no recurso [recordOperation](/api-reference/beta/resources/recordOperation.md) para **recordingAccessToken**|
 | Adição        | Beta        | Propriedade **funcionalidades** adicionada ao recurso [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) |
 | Adição        | Beta        | Propriedade **videoTeleconferenceId** adicionada ao recurso [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) |
@@ -3266,12 +3275,16 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | Adição        | Beta        | A ação [forward](/graph/api/event-forward?view=graph-rest-beta) foi adicionada ao recurso event. |
 | Adição        | Beta        | Foram adicionadas as propriedades ao recurso [calendar](/graph/api/resources/calendar?view=graph-rest-beta) para dar suporte ao compartilhamento de calendários: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, **isShareWithMe** e **owner**. |
 
-### <a name="mail-outlook"></a>Email (Outlook)
+### <a name="change-notifications-webhooks"></a>Alterar notificações (Webhooks)
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Foi adicionado o tipo complexo [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0), que inclui as propriedades **automaticRepliesSetting**, **timeZone** e **language**. |
-| Adição        | v1.0        | A propriedade **mailboxSettings** foi adicionada ao recurso [user](/graph/api/resources/user?view=graph-rest-1.0). |
+| Adição        | Beta        | Os itens de raiz de unidade adicionados aos Webhooks como um recurso que está disponível para se inscrever. |
+
+### <a name="mail-outlook"></a>E-mail (Outlook)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 | Adição        | Beta        | Foi adicionado o suporte para criar, listar, obter e excluir uma ou mais instâncias de [mencionar](/graph/api/resources/mention?view=graph-rest-beta) em uma mensagem. As menções dão suporte a chamadas para chamar a atenção dos outros usuários em uma mensagem. |
 | Adição        | Beta        | Foi adicionado suporte para a ação [getMailTips](/graph/api/user-getmailtips?view=graph-rest-beta) para obter Dicas de Email para destinatários específicos. Foram adicionados os seguintes recursos: [automaticRepliesMailTips](/graph/api/resources/automaticrepliesmailtips?view=graph-rest-beta), [mailTips](/graph/api/resources/mailtips?view=graph-rest-beta), [mailTipsError](/graph/api/resources/mailtipserror?view=graph-rest-beta). |
 
@@ -3296,12 +3309,13 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | Adição        | Beta        | A propriedade **showInAddressList** foi adicionada para você controlar se a lista de endereços global do Outlook deve conter este usuário. |
 | Adição        | Beta        | Foi adicionada a ação de serviço **invalidateAllRefreshTokens** que invalida todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **refreshTokensValidFromDateTime** para a data e a hora atuais. |
 
-
-### <a name="change-notifications-webhooks"></a>Alterar notificações (Webhooks)
+### <a name="users--outlook-settings"></a>Usuários | Configurações do Outlook
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Os itens de raiz de unidade adicionados aos Webhooks como um recurso que está disponível para se inscrever. |
+| Adição        | v1.0        | Foi adicionado o tipo complexo [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0), que inclui as propriedades **automaticRepliesSetting**, **timeZone** e **language**. |
+| Adição        | v1.0        | A propriedade **mailboxSettings** foi adicionada ao recurso [user](/graph/api/resources/user?view=graph-rest-1.0). |
+
 
 ## <a name="august-2016"></a>Agosto de 2016
 
