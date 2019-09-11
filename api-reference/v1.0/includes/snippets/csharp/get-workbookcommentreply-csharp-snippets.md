@@ -1,21 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d591d12f30b4e37bc061090269c819abcb2d0e82
+ms.openlocfilehash: 2432c7f0fba4d7b1741161e3402fac86b1d00b11
 ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838826"
+ms.locfileid: "36838988"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var reason = RejectReason.Busy;
-
-await graphClient.App.Calls["57dab8b1-894c-409a-b240-bd8beae78896"]
-    .Reject(reason,callbackUri)
+var workbookCommentReply = await graphClient.Drive.Root.Workbook.Comments["{id}"].Replies["{id}"]
     .Request()
-    .PostAsync();
+    .GetAsync();
 
 ```

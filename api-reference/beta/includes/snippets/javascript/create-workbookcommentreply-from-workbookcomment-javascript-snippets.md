@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 827fe611d6f01209036896fcdf223a00996950a2
+ms.openlocfilehash: 80a2111fff11bbde5d83a6294808c23fb74d9066
 ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838857"
+ms.locfileid: "36838911"
 ---
 ```javascript
 
@@ -15,8 +15,13 @@ const options = {
 
 const client = Client.init(options);
 
+const workbookCommentReply = {
+  content: "This is my reply to the comment.",
+  contentType: "plain"
+};
+
 let res = await client.api('/drive/root/workbook/comments/{id}/replies')
     .version('beta')
-    .get();
+    .post(workbookCommentReply);
 
 ```
