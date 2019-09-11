@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4de6585f9984fb82ff12158bd477b98a2eaa85c0
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: c12412ee40c2860455fac3c455fbb5982f7000e9
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720134"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845886"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequest
     TicketSystem = "system",
     Schedule = new GovernanceSchedule
     {
-        StartDateTime = "2018-02-08T02:35:17.903Z"
+        StartDateTime = DateTimeOffset.Parse("2018-02-08T02:35:17.903Z")
     },
     EvaluateOnly = false,
     Type = "UserAdd",
