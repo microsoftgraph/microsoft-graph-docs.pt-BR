@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1c86de2052a5878f2d14e9f2d23a7f1aea76cdd9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ef87162521e3af879c680dd92faf278ca74a00ef
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865196"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845867"
 ---
 ```csharp
 
@@ -24,7 +24,7 @@ var bookingStaffMember = new BookingStaffMember
                 {"@odata.type","#microsoft.graph.bookingWorkHours"}
             },
             Day = DayOfWeek.Monday,
-            TimeSlots = new List<String>()
+            TimeSlots = new List<BookingWorkTimeSlot>()
             {
             }
         },
