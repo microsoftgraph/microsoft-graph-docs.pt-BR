@@ -152,7 +152,6 @@ Nas limitações conhecidas usando extensões, veja a [seção extensões](known
 
 ## <a name="see-also"></a>Confira também
 
-- 
-  [Domínios do Office 365](https://technet.microsoft.com/pt-BR/library/office-365-domains.aspx)
+- [Domínios do Office 365](https://technet.microsoft.com/pt-BR/library/office-365-domains.aspx)
 
 - [Adição e verificação de um domínio para um locatário do Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
