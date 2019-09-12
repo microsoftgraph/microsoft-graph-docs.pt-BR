@@ -8028,6 +8028,8 @@
                   href: api/device-list-memberof.md
                 - name: Listar grupos transitivos de dispositivo
                   href: api/device-list-transitivememberof.md
+                - name: Verificar objetos member
+                  href: api/device-checkmemberobjects.md
             - name: Objeto de diretório
               href: resources/directoryobject.md
               items:
@@ -8470,6 +8472,8 @@
                   href: api/serviceprincipal-update.md
                 - name: Excluir entidade de serviço
                   href: api/serviceprincipal-delete.md
+                - name: Verificar objetos member
+                  href: api/serviceprincipal-checkmemberobjects.md
             - name: Sku inscrita
               href: resources/subscribedsku.md
               items:
@@ -9697,7 +9701,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-tasks.md
-                - name: Create
+                - name: Criar
                   href: api/outlookuser-post-tasks.md
                 - name: Obter
                   href: api/outlooktask-get.md
