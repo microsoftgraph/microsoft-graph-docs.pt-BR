@@ -3,14 +3,14 @@ title: Tipo de recurso servicePrincipal
 description: Representa uma instância de um aplicativo em um diretório. Herda do directoryObject.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 02cd5ee8d20ce963205d959cb91229a5621fe92f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: b50a23d2120222d2fd24ede4d4981bba3aa366dc
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008485"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853830"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -120,9 +120,10 @@ Veja a seguir uma representação JSON do recurso
 |[Listar proprietários](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Obtenha uma coleção de objeto owner.|
 |[Update](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Atualize o objeto servicePrincipal. |
 |[Delete](../api/serviceprincipal-delete.md) | Nenhum |Exclua o objeto servicePrincipal. |
-|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String collection||
-|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String collection||
-|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String collection||
+|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de grupos específica.|
+|[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de grupo específica, função de diretório ou objetos de unidade administrativa.|
+|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Coleção de cadeias de caracteres|Obtenha a lista de grupos dos quais essa entidade de serviço é membro.|
+|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Coleção de cadeias de caracteres|Obtenha a lista de grupos e funções de diretório dos quais essa entidade de serviço é membro.|
 |[delta](../api/serviceprincipal-delta.md)|servicePrincipal collection| Obtenha alterações incrementais para entidades de serviço. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

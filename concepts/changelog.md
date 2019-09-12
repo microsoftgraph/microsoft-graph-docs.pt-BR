@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: e46f95150bc0a50a43fc619955ce36adf48d95e3
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: fefe022cb3c2aafb14819f909efa58bc29fa8a95
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822750"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853802"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -95,10 +95,17 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | Beta | Adicionadas estas operações abaixo para dar suporte ao recurso unifiedRoleDefinition: <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - Obter uma lista de objetos do recurso unifiedRoleDefinition para o provedor.</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - Criar um novo objeto no unifiedRoleDefinition.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - Recupere as propriedades e relações de um objeto de definição de função unificado.</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) -Atualize as propriedades de um objeto no unifiedRoleDefinition.</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - Excluir um objeto no unifiedRoleDefinition.</li></ul> |
 | Adição | Beta | Estas operações abaixo foram adicionadas para dar suporte ao recurso unifiedRoleDefinition: <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - Obter uma lista de objetos do recurso unifiedRoleAssignment para o provedor.</li><li>[Create unifiedRoleAssignment]() - Criar um novo objeto no recurso unifiedRoleAssignment.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - Recupere as propriedades e relações de um objeto no unifiedRoleAssignment.</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - Excluir um objeto unifiedRoleAssignment. |
 | Adição | Beta | Adicionado a operação [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a operação [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-beta) para o recurso[dispositivo](/graph/api/resources/device?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a operação [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta) para o recurso[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a operação [checkMemberObjects](/graph/api/directoryrole-checkmemberobjects?view=graph-rest-beta) para o recurso[directoryRole](/graph/api/resources/directoryrole?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a operação [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-beta) para o recurso[grupo](/graph/api/resources/group?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a operação [checkMemberObjects](/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) para o recurso[servicePrincipal](/graph/api/resources/serviceprinciple?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a operação [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-beta) para o recurso[usuário](/graph/api/resources/user?view=graph-rest-beta). |
 |Adição  | Beta | Adicionado as [permissões delegadas e de aplicativo para a leitura de contatos organizacionais](permissions-reference.md#organizational-contact-permissions): OrgContact.Read.All |
 | Adição | beta | Adicionada nova entidade [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta). |
 | Adição | beta | Adicionado novo tipo de complexo [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta). |
 | Adição | beta | Adicionada uma nova relação para o **certificateBasedAuthConfiguration** do recurso da [organização](/graph/api/resources/organization?view=graph-rest-beta). Isso permite [uma autenticação baseada em certificado do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
+
 
 ### <a name="reports"></a>Relatórios
 

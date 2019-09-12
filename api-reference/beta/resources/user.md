@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 05ea41eb7ec4a0c801587c0ce70040fd8489cb27
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: e7ee182238ea0b1f5216ac9aa79e776a0d225486
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450512"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853809"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -64,6 +64,7 @@ Esse recurso permite:
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.|
 |[Listar licenseDetails](../api/user-list-licensedetails.md) |Coleção [licenseDetails](licensedetails.md)| Obtenha uma coleção de objetos licenseDetails.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
+|[checkMemberObjects](../api/user-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique a associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. A verificação é transitiva.|
 |[delta](../api/user-delta.md)|coleção de usuários| Obter as alterações incrementais para usuários. |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Encontrar o tempo e locais para reunião com base na disponibilidade dos participantes, localização ou restrições de tempo.|
 |[findRoomLists](../api/user-findroomlists.md)|Coleção [emailaddress.md](emailaddress.md) | Obter as listas de salas definidas em um locatário.|
@@ -198,7 +199,6 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |agreementAcceptances|Coleção [agreementAcceptance](agreementacceptance.md)| Os termos de usuário do status de aceitação de uso. Somente leitura. Anulável.|
-|análise|Coleção [userAnalytics](useranalytics.md)| As estatísticas de atividade de usuário e as configurações relacionadas. Somente leitura. Anulável.|
 |calendar|[calendar](calendar.md)|O calendário principal do usuário. Somente leitura.|
 |calendarGroups|Coleção [CalendarGroup](calendargroup.md)|Os grupos de calendários do usuário. Somente leitura. Anulável.|
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura. Anulável.|
@@ -239,7 +239,6 @@ Veja a seguir uma representação JSON do recurso
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "analytics",
     "appRoleAssignments",
     "calendar",
     "calendarGroups",
@@ -339,7 +338,6 @@ Veja a seguir uma representação JSON do recurso
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-  "analytics": [{"@odata.type": "microsoft.graph.userAnalytics"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],

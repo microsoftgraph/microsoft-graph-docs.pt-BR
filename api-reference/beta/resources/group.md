@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a8facfb63a4e88f7fcf31a27342ccdec026147ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6f7c28f517def80f2290aa04c838f9910209a752
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971853"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853816"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -49,6 +49,7 @@ Esse recurso permite:
 |[Listar memberOf](../api/group-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as unidades administrativas dos quais esse grupo é membro direto, da propriedade de navegação memberOf.|
 |[Listar membros transitivos](../api/group-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Lista os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|Coleção de cadeias de caracteres|Verificar associação em uma lista de grupos. Essa função é transitiva.|
+|[checkMemberObjects](../api/group-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva.|
 |[getMemberGroups](../api/group-getmembergroups.md)|Coleção de cadeias de caracteres|Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.|
 |[getMemberObjects](../api/group-getmemberobjects.md)|Coleção de cadeias de caracteres|Retornar todas as unidades administrativas e grupos dos quais o grupo é membro. Essa função é transitiva. |
 |[Criar configuração](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Criar um objeto de configuração com base em um directorySettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação.|
@@ -120,7 +121,7 @@ Esse recurso permite:
 |email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. <br><br>Retornado por padrão.|
 |mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. <br><br>Retornado por padrão. Oferece suporte a $filter.|
-|membershipRule|String|A regra que determina membros para esse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para saber mais sobre a sintaxe da regra de associação, confira [sintaxe regras de associação](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Retornado por padrão. |
+|membershipRule|String|A regra que determina membros para esse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para saber mais sobre a sintaxe da regra de associação, confira [sintaxe regras de associação](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Retornado por padrão. |
 |membershipRuleProcessingState|String|Indica se o processamento de associação dinâmica está ativado ou em pausa. Valores possíveis são "On" ou "Paused". <br><br>Retornado por padrão. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o grupo foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
 |onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br><br>Retornado por padrão.|
@@ -135,7 +136,7 @@ Esse recurso permite:
 |unseenConversationsCount|Int32|Contagem de conversas que receberam uma ou mais novas postagens desde a última visita do usuário conectado ao grupo. Essa propriedade é igual a **unseenCount**. <br><br>Retornado apenas em $select.|
 |unseenCount|Int32|Contagem das conversas que receberam novas postagens desde que o usuário conectado visitou o grupo pela última vez. Essa propriedade é igual a **unseenConversationsCount**.<br><br>Retornado apenas em $select. |
 |unseenMessagesCount|Int32|Contagem de novas postagens que foram entregues às conversas do grupo desde a última visita do usuário conectado ao grupo. <br><br>Retornado apenas em $select.|
-|visibility|String| Especifica a visibilidade de um grupo do Office 365. Valores possíveis são: `private`, `public`, ou `hiddenmembership`; valores em branco são tratados como públicos.  Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options).<br>A visibilidade só pode ser configurada quando um grupo é criado, ela não é editável.<br>A visibilidade tem suporte apenas para grupos unificados; Não há suporte para grupos de segurança. <br><br>Retornado por padrão.|
+|visibility|String| Especifica a visibilidade de um grupo do Office 365. Valores possíveis são: `Private`, `Public`, ou `Hiddenmembership`; valores em branco são tratados como públicos.  Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options).<br>A visibilidade só pode ser configurada quando um grupo é criado, ela não é editável.<br>A visibilidade tem suporte apenas para grupos unificados; Não há suporte para grupos de segurança. <br><br>Retornado por padrão.|
 
 ### <a name="group-visibility-options"></a>Opções de visibilidade do grupo
 
@@ -143,9 +144,9 @@ Veja o que cada valor da propriedade de **visibilidade** significa:
  
 |Valor|Descrição|
 |:----|-----------|
-| `public` | Qualquer pessoa pode ingressar no grupo sem precisar de permissão de proprietário.<br>Qualquer pessoa pode exibir o conteúdo do grupo.|
-| `private` | A permissão de proprietário é necessária para ingressar no grupo.<br>Não membros não podem exibir o conteúdo do grupo.|
-| `hiddenmembership` | A permissão de proprietário é necessária para ingressar no grupo.<br>Não membros não podem exibir o conteúdo do grupo.<br>Não membros não podem ver os membros do grupo.<br>Administradores (global, empresa, usuário e helpdesk) podem visualizar a associação do grupo.<br>O grupo aparece no catálogo de endereços global (GAL).|
+| Público | Qualquer pessoa pode ingressar no grupo sem precisar de permissão de proprietário.<br>Qualquer pessoa pode exibir o conteúdo do grupo.|
+| Privado | A permissão de proprietário é necessária para ingressar no grupo.<br>Não membros não podem exibir o conteúdo do grupo.|
+| Hiddenmembership | A permissão de proprietário é necessária para ingressar no grupo.<br>Não membros não podem exibir o conteúdo do grupo.<br>Não membros não podem ver os membros do grupo.<br>Administradores (global, empresa, usuário e helpdesk) podem visualizar a associação do grupo.<br>O grupo aparece no catálogo de endereços global (GAL).|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
