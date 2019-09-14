@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e4fe25723d146a30ad94bd99491bafe293da523a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 314cb71f5f3ebf135cab0ef3bf9cc9afff9eb730
+ms.sourcegitcommit: c739cbfab42181adfcda409ca12514ab7f4832b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954806"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982877"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Criar um educationSynchronizationProfile
 
@@ -59,7 +59,7 @@ Content-type: application/json
 {
     "displayName": "Test Profile",
     "dataProvider": {
-        "@odata.type": "microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "#Microsoft.Education.DataSync.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -70,7 +70,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration",
+        "@odata.type": "#Microsoft.Education.DataSync.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -118,7 +118,7 @@ Content-type: application/json
     "state": "provisioning",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -158,7 +158,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
+        "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -172,14 +172,12 @@ Content-type: application/json
     },
     "licensesToAssign": [
         {
-            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "teacher",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"
             ]
         },
         {
-            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "student",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"
