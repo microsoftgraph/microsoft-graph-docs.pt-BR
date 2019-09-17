@@ -3,12 +3,12 @@ title: Acessar dados e métodos ao navegar no Microsoft Graph
 description: Além de usar a API do Microsoft Graph para ler e gravar dados, você pode usar diversos padrões de solicitação para desviar pelos recursos no Microsoft Graph. O documento de metadados também ajuda a entender o modelo de dados dos recursos e das relações no Microsoft Graph.
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: 581efe1b14bb156b3ac53a6a06bf731f11150cb0
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: b2f9f5002b4743a61bbaf18af2408e10de12d463
+ms.sourcegitcommit: c739cbfab42181adfcda409ca12514ab7f4832b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791040"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982870"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Acessar dados e métodos ao navegar no Microsoft Graph
 
@@ -35,10 +35,10 @@ Você pode usar os metadados para compreender as relações entre entidades no M
 
 > [!NOTE]
 > - Use as IDs de recurso no mesmo caso de serem retornadas das APIs do Microsoft Graph.
-> - Presuma as IDs de recurso, os valores atribuídos e outros valores Codificados em Base 64 _diferenciam maiúsculas de minúsculas_.
-> - Os nomes de recursos, parâmetros de consulta, parâmetros de ação e valores da URL do caminho _não diferenciam maiúsculas de minúsculas_.
+> - Presuma que as IDs de recurso, valores atribuídos e outros valores codificados em base 64 _diferenciam maiúsculas de minúsculas_.
+> - Presuma que os nomes de recursos do caminho da URL, parâmetros de consulta, nomes de ações e funções, solicitação de parâmetros de corpo, inclusive os nomes e valores da propriedade da API _não diferenciam maiúsculas e minúsculas_.
 
-## <a name="view-a-collection-of-resources"></a>Exibir uma coleção de recursos
+## <a name="view-a-collection-of-resources"></a>Exibir um conjunto de recursos
 
 O Microsoft Graph permite exibir recursos em um locatário usando consultas HTTP `GET`. A resposta de consulta inclui as propriedades de cada recurso. Os recursos de entidade são todos identificados pela sua ID. O formato da ID do recurso pode ser um GUID e normalmente varia de acordo com o tipo de recurso.
 
