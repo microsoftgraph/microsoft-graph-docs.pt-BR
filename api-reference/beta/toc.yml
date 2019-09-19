@@ -303,13 +303,6 @@
                   href: api/user-list-manager.md
                 - name: Atribuir gerente
                   href: api/user-post-manager.md
-            - name: Tarefas do Outlook
-              href: resources/outlooktask.md
-              items:
-                - name: Listar tarefas
-                  href: api/outlookuser-list-tasks.md
-                - name: Criar tarefas
-                  href: api/outlookuser-post-tasks.md
             - name: Configurações do Outlook
               href: resources/outlookuser.md
               items:
@@ -325,6 +318,13 @@
                   href: api/outlookuser-list-mastercategories.md
                 - name: Criar categoria
                   href: api/outlookuser-post-mastercategories.md
+            - name: Tarefas do Outlook
+              href: resources/outlooktask.md
+              items:
+                - name: Listar tarefas
+                  href: api/outlookuser-list-tasks.md
+                - name: Criar tarefas
+                  href: api/outlookuser-post-tasks.md
             - name: Pessoas
               href: resources/person.md
               items:
@@ -9824,7 +9824,7 @@
                 - name: Criar resposta
                   href: api/workbookcomment-post-replies.md
                 - name: Obter resposta
-                  href: workbookcommentreply-get.md
+                  href: api/workbookcommentreply-get.md
             - name: Planilha
               href: resources/workbookworksheet.md
               items:

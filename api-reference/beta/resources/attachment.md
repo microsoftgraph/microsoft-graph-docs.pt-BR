@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: da7e66d1edbda224fe547b7e7afc8fd88dc5e5aa
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: a71d7940e6825659143e69b2af6290f0671f59ae
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622632"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036092"
 ---
 # <a name="attachment-resource-type"></a>tipo de recurso anexo
 
@@ -32,7 +32,7 @@ Os métodos a seguir se aplicam a qualquer um dos tipos de anexo derivados (**fi
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter anexo](../api/attachment-get.md) | [attachment](attachment.md) |Leia as propriedades e as relações de um anexo, anexados a um evento de usuário, mensagem, tarefa do Outlook ou postagem.|
+|[Obter anexo](../api/attachment-get.md) | [attachment](attachment.md) |Leia as propriedades, relações ou conteúdo bruto de um anexo, anexados a um evento de usuário, mensagem, tarefa do Outlook ou postagem.|
 |[Adicionar anexo a um evento de usuário](../api/event-post-attachments.md) | [attachment](attachment.md) |Adicionar um anexo de arquivo, item ou link a um evento em um calendário do usuário.|
 |[Adicionar um anexo a uma mensagem](../api/message-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem.|
 |[Adicionar anexo a uma tarefa do Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Adicionar um anexo de arquivo, item ou link a uma tarefa do Outlook.|

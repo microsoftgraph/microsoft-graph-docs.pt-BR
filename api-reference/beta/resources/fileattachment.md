@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: ab81c67bbf0c4d7ab6699d17977c4d1a3907f94e
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 2b73c69b7fdb7099994e9925815d80e2bf99d5f6
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484314"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036218"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um arquivo (como um arquivo de texto ou documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md). A propriedade **contentBytes** contém os conteúdos com codificação base64 do arquivo.  
+Um arquivo (como um arquivo de texto ou documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md)do usuário. A propriedade **contentBytes** contém os conteúdos com codificação base64 do arquivo.  
 
 Ao criar um anexo de arquivo, inclua o seguinte no corpo da solicitação:
 
@@ -29,7 +29,7 @@ Derivado de [attachment](attachment.md).
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Leia as propriedades e os relacionamentos do objeto fileAttachment.|
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Leia as propriedades, relações ou conteúdo bruto de um objeto fileattachment.|
 |[Delete](../api/attachment-delete.md) | Nenhuma |Exclua um objeto fileAttachment. |
 
 ## <a name="properties"></a>Propriedades

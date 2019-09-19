@@ -1,16 +1,16 @@
 ---
 title: 'usuário: translateExchangeIds'
 description: Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.
-author: dkershaw10
+author: svpsiva
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6eb044c42ce01c13e45e7088fa3eb6f96fb4820a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f03db0d590546e6967524745d39ae021ea7596d7
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421803"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036148"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -128,7 +128,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
       "sourceId": "{rest-formatted-id-1}",
@@ -141,7 +140,7 @@ Content-type: application/json
   ]
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

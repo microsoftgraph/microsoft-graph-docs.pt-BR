@@ -3,14 +3,14 @@ title: tipo de recurso convertIdResult
 description: O resultado de uma conversão de formato de ID executada pela função translateExchangeIds.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 040b13ab83eacffb33e8903f7d11823adb6e1bf1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: svpsiva
+ms.openlocfilehash: 71557772c834aa5d85501ab5600ded0a7dbb2ed0
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973190"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036348"
 ---
 # <a name="convertidresult-resource-type"></a>tipo de recurso convertIdResult
 

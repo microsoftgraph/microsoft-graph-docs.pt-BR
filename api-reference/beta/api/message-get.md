@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ce6b071690a65714cc8414c2c93af215d92f7c1e
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0746cddf987c6fed21fb27c2e0fffb09b596c520
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726127"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036169"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -89,8 +89,10 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [message](../resources/message.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
+
+## <a name="examples"></a>Exemplos
+### <a name="example-1"></a>Exemplo 1
+#### <a name="request"></a>Solicitação
 O primeiro exemplo obtém a mensagem especificada. Ele não especifica nenhum cabeçalho para indicar o formato desejado do corpo a ser retornado.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -116,7 +118,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 
 ---
 
-##### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. As propriedades **Body** e **uniqueBody** são retornadas no formato HTML padrão.
 Observação: o objeto Response mostrado aqui é truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -146,7 +148,9 @@ Content-length: 523
 }
 ```
 
-##### <a name="request-2"></a>Solicitação 2
+
+### <a name="example-2"></a>Exemplo 2
+#### <a name="request"></a>Solicitação
 No próximo exemplo, o usuário conectado é Dana Swope. O exemplo mostra a obtenção de detalhes de todas as menções na mensagem especificada na caixa de correio da Dana.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -172,7 +176,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 
 ---
 
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -270,8 +274,8 @@ Content-length: 2248
 }
 ```
 
-
-##### <a name="request-3"></a>Solicitação 3
+### <a name="example-3"></a>Exemplo 3
+#### <a name="request"></a>Solicitação
 
 O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e **uniqueBody** da mensagem especificada no formato de texto.
 
@@ -302,7 +306,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 
-##### <a name="response-3"></a>Resposta 3
+#### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para confirmar o `Prefer: outlook.body-content-type` cabeçalho da solicitação.
 <!-- {
@@ -314,7 +318,6 @@ Veja a seguir um exemplo da resposta. Observação: a resposta inclui um `Prefer
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.body-content-type="text"
-Content-length: 1550
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)/$entity",
@@ -332,8 +335,8 @@ Content-length: 1550
     }
 }
 ```
-
-##### <a name="request-4"></a>Solicitação 4
+### <a name="example-4"></a>Exemplo 4
+#### <a name="request"></a>Solicitação
 
 O quarto exemplo mostra como obter os cabeçalhos de mensagem da Internet de uma mensagem específica.  
 
@@ -363,7 +366,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 ---
 
 
-##### <a name="response-4"></a>Resposta 4
+#### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. Observação: o número de cabeçalhos de mensagens da Internet no objeto Response foi reduzido por brevidade.
 
@@ -409,8 +412,8 @@ Content-type: application/json
 ## <a name="see-also"></a>Confira também
 
 - [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
-- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](/graph/extensibility-open-users)
-- [Adicionar dados personalizados a grupos usando extensões do esquema (visualização)](/graph/extensibility-schema-groups)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](/graph/extensibility-open-users)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

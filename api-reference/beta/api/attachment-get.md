@@ -5,23 +5,23 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: de8243597044e2077c4b2a1b8b91f35d2b6eecca
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: a43cda1f55516d61383f6a31c1742d87eb5c42d2
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718958"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036127"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um anexo, anexados a um [evento](../resources/event.md)de usuário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).
+Leia as propriedades, relações ou conteúdo bruto de um anexo, anexados a um [evento](../resources/event.md)de usuário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).
 
 Um anexo pode ser de um dos seguintes tipos:
 
 * Um arquivo (recurso [fileAttachment](../resources/fileattachment.md)).
-* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)). Você pode usar `$expand` o para obter as propriedades desse item. Veja um [exemplo](#request-2) abaixo.
+* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)). Você pode usar `$expand` o para obter as propriedades desse item. Veja um [exemplo](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).
 * Um link para um arquivo (recurso [referenceAttachment](../resources/referenceattachment.md)).
 
 Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md).
@@ -56,9 +56,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Esta seção mostra a sintaxe de solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md)) que dão suporte a anexos:
+Esta seção mostra a sintaxe de solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)e [postagem](../resources/post.md)) que dão suporte a anexos:
 
-- Para obter as propriedades e as relações de um anexo, especifique a ID do anexo a ser **** indexada na coleção Attachments, anexada ao [evento](../resources/event.md)especificado, à [mensagem](../resources/message.md), à [tarefa do Outlook](../resources/outlooktask.md)ou à instância de [post](../resources/post.md) .
+- Para obter as propriedades e as relações de um anexo, especifique a ID do anexo a ser indexada na coleção **Attachments** , anexada ao [evento](../resources/event.md)especificado, à [mensagem](../resources/message.md), à [tarefa do Outlook](../resources/outlooktask.md)ou à instância de [post](../resources/post.md) .
 - Se o anexo for um arquivo ou item do Outlook (contato, evento ou mensagem), você poderá obter o conteúdo bruto do anexo acrescentando o segmento `/$value` de caminho à URL de solicitação.
 
 Um anexo de um [evento](../resources/event.md):
@@ -147,6 +147,7 @@ Não forneça um corpo de solicitação para esse método.
 Se tiver êxito, o método GET retornará `200 OK` um código de resposta. 
 
 Se você estiver obtendo as propriedades e as relações de um anexo, o corpo da resposta incluirá um objeto [Attachment](../resources/attachment.md) .
+As propriedades desse tipo de anexo são retornadas: [Fileattachment](../resources/fileattachment.md), [Item Attachment ou](../resources/itemattachment.md) [referenceAttachment](../resources/referenceattachment.md).
 
 Se você estiver obtendo o conteúdo bruto de um arquivo ou anexo de item, o corpo da resposta incluirá o valor bruto do anexo.
 
@@ -216,7 +217,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-O primeiro exemplo mostra como obter um anexo de item em uma mensagem. As propriedades do item de **anexo** são retornadas.
+O exemplo a seguir mostra como obter um anexo de item em uma mensagem. As propriedades do item de **anexo** são retornadas.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -271,7 +272,7 @@ Content-type: application/json
 ### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>Exemplo 3: expandir e obter as propriedades do item anexado a uma mensagem
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como usar `$expand` o para obter as propriedades do item (evento, mensagem, tarefa do Outlook ou postagem) anexado à mensagem. Neste exemplo, esse item é uma mensagem; as propriedades dessa mensagem anexada também são retornadas.
+O exemplo a seguir mostra como usar `$expand` o para obter as propriedades do item (contato, evento ou mensagem) que está anexado à mensagem. Neste exemplo, esse item é uma mensagem; as propriedades dessa mensagem anexada também são retornadas.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {

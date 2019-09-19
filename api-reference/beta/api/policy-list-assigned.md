@@ -1,31 +1,31 @@
 ---
 title: Listar políticas atribuídas à entidade de serviço ou aplicativo
-description: Recupere os objetos de política atribuídos a uma entidade de serviço ou aplicativo.
+description: Obter os objetos de política atribuídos a uma entidade de serviço ou aplicativo.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 06eb805b6983c72c14c86780f081554611906181
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 0f237992cc24dd854aefcc516a876da168174307
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992049"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036155"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>Listar políticas atribuídas à entidade de serviço ou aplicativo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os objetos de [política](../resources/policy.md) atribuídos a uma entidade de serviço ou aplicativo.
+Obter os objetos de [política](../resources/policy.md) atribuídos a uma entidade de serviço ou aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

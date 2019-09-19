@@ -1,31 +1,31 @@
 ---
 title: Listar políticas
-description: Recupere todos os objetos de política no diretório.
+description: Obtenha todos os objetos de política no diretório.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: d7ab2de4944019eff936554cc4da2e0dc15166c2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: ed138813da5cfa539811063df41b283ed610df14
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983450"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036094"
 ---
 # <a name="list-policies"></a>Listar políticas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere todos os objetos de [política](../resources/policy.md) no diretório.
+Obtenha todos os objetos de [política](../resources/policy.md) no diretório.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Policy. Read. All, Directory. Read. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Policy. Read. All, Directory. Read. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
