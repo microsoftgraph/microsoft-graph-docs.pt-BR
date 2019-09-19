@@ -3,14 +3,14 @@ title: Atualizar governanceRoleSetting
 description: Atualize as propriedades de governanceRoleSetting.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 6cbcdfbd3406226e23000c472467a42604c16c90
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 20e41f118f0da2248f0744c64ab25d69da8061f2
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419668"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041776"
 ---
 # <a name="update-governancerolesetting"></a>Atualizar governanceRoleSetting
 
@@ -37,7 +37,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Authorization  | Portador {código}|
+| Autorização  | Portador {token}|
 | Content-type  | application/json|
 
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para [governanceRuleSettings](../
 |:---------------|:--------|:----------|
 |adminEligibleSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função qualificada.|
 |adminMemberSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.|
-|userEligibleSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um usuário tenta adicionar uma atribuição de função qualificada. Isso não é suportado para `pimforazurerbac` o cenário por enquanto, e pode estar disponível nos cenários futuros.|
+|userEligibleSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um usuário tenta adicionar uma atribuição de função qualificada. |
 |userMemberSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um usuário tenta ativar sua atribuição de função.|
 
 ## <a name="response"></a>Resposta
@@ -72,7 +72,7 @@ Este exemplo atualiza a configuração de função para a função 3 personaliza
   "name": "update_governancerolesetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
+PATCH https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
 Content-type: application/json
 Content-length: 350
 
