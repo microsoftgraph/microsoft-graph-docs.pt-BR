@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: 687c2ea46e5e5768a14fa84ae74109fee830d5a3
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 108c17618d8042057263912d015f8a0fa6d2e7ce
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633843"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036204"
 ---
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
@@ -412,34 +412,34 @@ ms.locfileid: "36633843"
 
 ### <a name="categorycolor-values"></a>valores de categoryColor
 
-| Membro   |Valor    
+| Membro   |Valor
 |:---------|:--------
-| none     | -1      
-| preset0  | ,0       
-| preset1  | 1       
-| preset2  | duas       
-| preset3  | 3D       
-| preset4  | quatro       
-| preset5  | 0,5       
-| preset6  | 6       
-| preset7  | 178       
-| preset8  | 8        
-| preset9  | 9        
-| preset10 | 10       
-| preset11 | 11      
-| preset12 | 3,6      
-| preset13 | Treze      
-| preset14 | 14      
-| preset15 | 15      
-| preset16 | dezesseis      
-| preset17 | 17.07.06      
-| preset18 | anos      
-| preset19 | 19      
-| preset20 | 508      
-| preset21 | 21      
-| preset22 | 22      
-| preset23 | 23      
-| preset24 | dia      
+| none     | -1
+| preset0  | ,0
+| preset1  | 1
+| preset2  | duas
+| preset3  | 3D
+| preset4  | quatro
+| preset5  | 0,5
+| preset6  | 6
+| preset7  | 178
+| preset8  | 8 
+| preset9  | 9 
+| preset10 | 10 
+| preset11 | 11
+| preset12 | 3,6
+| preset13 | Treze
+| preset14 | 14
+| preset15 | 15
+| preset16 | dezesseis
+| preset17 | 17.07.06
+| preset18 | anos
+| preset19 | 19
+| preset20 | 508
+| preset21 | 21
+| preset22 | 22
+| preset23 | 23
+| preset24 | dia
 
 ### <a name="alertfeedback-values"></a>valores de alertFeedback
 
@@ -655,3 +655,12 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | confirmedCompromised
 | unknownFutureValue
 
+### <a name="exchangeidformat-values"></a>valores de exchangeIdFormat
+
+|Membro|
+|:---|
+|entryId|
+|ewsId|
+|immutableEntryId|
+|restid|
+|restImmutableEntryId|
