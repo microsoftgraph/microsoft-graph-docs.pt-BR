@@ -3,12 +3,13 @@ title: Obter as alterações incrementais para usuários
 description: A consulta delta permite que você consulte adições, exclusões ou atualizações de usuários, por meio de uma série de chamadas de função delta. A consulta Delta permite que você descubra alterações em usuários sem ter que buscar todo o conjunto de usuários do Microsoft Graph e comparar as alterações.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: b4f79951f79393e22c40ef9a4f55e29e0145ccea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.custom: graphiamtop20
+ms.openlocfilehash: af2dd5baa8785eb74de6c453b3a55978015add17
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526332"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054086"
 ---
 # <a name="get-incremental-changes-for-users"></a>Obter as alterações incrementais para usuários
 

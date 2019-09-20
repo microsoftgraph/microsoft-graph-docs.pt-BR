@@ -3,12 +3,13 @@ title: Obter as alterações incrementais para as mensagens em uma pasta
 description: A consulta delta permite consultar adições, exclusões ou atualizações de mensagens em uma pasta, por meio de uma série de
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 0200c49c1a673a338af793649bb67f9628c2e8f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.custom: graphiamtop20
+ms.openlocfilehash: 319810d899ded33d2d91e7f02f4b905a374c7e59
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526130"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053926"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Obter as alterações incrementais para as mensagens em uma pasta
 

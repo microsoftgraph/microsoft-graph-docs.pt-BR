@@ -3,12 +3,13 @@ title: Diretrizes de limitação do Microsoft Graph
 description: Os limites de controle limitam número de chamadas simultâneas para um serviço para evitar a utilização exagerada dos recursos. O Microsoft Graph foi projetado para lidar com um alto volume de solicitações. Se ocorrer um número impressionante de solicitações, a limitação ajuda a manter um desempenho ideal e a confiabilidade do serviço Microsoft Graph.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 780beda25a05675a77a933496dcce6fe5cd1a453
-ms.sourcegitcommit: c739cbfab42181adfcda409ca12514ab7f4832b1
+ms.custom: graphiamtop20
+ms.openlocfilehash: 7ad21327a4589e3f3bac6fd912a2bd37c563b1cf
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982863"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054065"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 

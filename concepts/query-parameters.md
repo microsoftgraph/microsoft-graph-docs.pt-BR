@@ -4,12 +4,13 @@ description: O Microsoft Graph fornece parâmetros de consulta opcional que voc�
 author: piotrci
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: 8be66640c69177d537d81b77fd43e3c2dd139cda
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: graphiamtop20
+ms.openlocfilehash: 1afae7cf577e098c7905cbb2623c0440f8d480ae
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792902"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054072"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -255,7 +256,7 @@ Para saber mais sobre as propriedades de email pesquisáveis, KQL como a sintaxe
 
 - [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Propriedades da mensagem e operadores de pesquisa para a Descoberta eletrônica In-loco no Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- [Propriedades da mensagem e operadores de pesquisa para a Descoberta eletrônica In-loco no Exchange 2016](https://technet.microsoft.com/pt-BR//library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>Usando $search em conjuntos de pessoas
 
