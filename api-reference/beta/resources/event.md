@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2604a56097635f8211824527dc031483d5c2e42a
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: 79c10718ab03cd23d03f9b6b9e9f3e2e2acfa31d
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667507"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036386"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -135,13 +135,17 @@ Veja a seguir uma representação JSON do recurso
 |webLink|String|A URL para abrir o evento no Outlook na Web.<br/><br/>O Outlook na Web abre o evento no navegador se você estiver conectado à sua caixa de correio. Caso contrário, o Outlook na Web solicitará que você entre.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 
 > [!NOTE]
-> A propriedade** weblink** especifica uma URL que abre o evento apenas em versões anteriores do Outlook na Web. Este é o formato da URL, com _{event-id}_ sendo o valor codificado na URL da propriedade**id** :
+> A propriedade**webLink** especifica uma URL que abre o evento apenas em versões anteriores do Outlook na Web. Este é o formato da URL, com _{event-id}_ sendo o valor _**codificado na URL**_ da propriedade**id**:
 >
-> `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
+> * Para contas corporativas ou de estudante: `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> Para abrir a URL em uma versão atual do Outlook na Web, converta a URL para o seguinte formato:
+> * Para contas da Microsoft: `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> `https://outlook.office365.com/calendar/item/{event-id}`
+> Para abrir o evento em uma versão atual do Outlook na Web, converta a URL em um dos seguintes formatos e use essa URL para abrir o evento: 
+>
+> * Para contas corporativas ou de estudante: `https://outlook.office365.com/calendar/item/{event-id}`
+>
+> * Para contas da Microsoft: `https://outlook.live.com/calendar/item/{event-id}`
 
 
 ## <a name="relationships"></a>Relações
