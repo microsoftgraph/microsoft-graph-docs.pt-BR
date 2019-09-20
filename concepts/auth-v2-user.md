@@ -4,12 +4,13 @@ description: Para usar o Microsoft Graph para ler e gravar recursos em nome de u
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d87b419276a33c4cdc79cf7569590c6377730e1e
-ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
+ms.custom: graphiamtop20
+ms.openlocfilehash: 5166f17a5fd17c52951fd615d545c64a64eb172f
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775550"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053799"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 

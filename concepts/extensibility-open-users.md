@@ -3,12 +3,13 @@ title: Adicionar dados personalizados aos usuários usando extensões abertas
 description: 'Por meio de um exemplo, vamos demonstrar como usar o recurso *abrir extensões*. '
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 69b0918dba3159a552e2b00d4f54b21e67d017e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.custom: graphiamtop20
+ms.openlocfilehash: c4039c1bb0e4972aa42ac9ee61c73095817b0368
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526137"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053785"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>Adicionar dados personalizados aos usuários usando extensões abertas
 Por meio de um exemplo, vamos demonstrar como usar o recurso *abrir extensões*. 

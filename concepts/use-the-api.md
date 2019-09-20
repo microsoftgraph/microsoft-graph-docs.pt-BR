@@ -4,12 +4,13 @@ description: O Microsoft Graph é uma API Web RESTful que permite que você aces
 author: jackson-woods
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: f022795a9777c463ac9394a1781ea3585fe08371
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: graphiamtop20
+ms.openlocfilehash: 394252d491bf065554cedead4f39035744d0ade1
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792559"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053911"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
