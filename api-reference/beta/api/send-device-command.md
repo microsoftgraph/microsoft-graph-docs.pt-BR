@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: fd45047d673dc6def51d3f417861cf15a38a2f98
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f112c7d3253a0a0801b7542f492c6f3f1f675c81
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35991510"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053939"
 ---
 # <a name="send-device-command"></a>Enviar comando do dispositivo
 
@@ -79,7 +79,7 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## <a name="command-properties"></a>Propriedades de comando 
+### <a name="command-properties"></a>Propriedades de comando 
 
 |**Nome**|**Tipo**|**Descrição**|
 |:----|:------|:------|
@@ -93,13 +93,13 @@ HTTP/1.1 201 OK
 |actionStatus | String | O [status](get-device-command-status.md) de um comando. |
 |erro| String| Quaisquer erros associados à solicitação do aplicativo de destino. |
 
-## <a name="launch-uri-example"></a>Exemplo de URI de inicialização
+## <a name="examples"></a>Exemplos
 
-Aqui está um exemplo de uma solicitação LaunchURI; ele iniciará um URI ou um aplicativo no dispositivo de destino. Para iniciar um URI ou um aplicativo, emita uma POSTAgem usando a ID do dispositivo (obtido de uma chamada GET ativada `me/devices`). Defina os parâmetros de *tipo* como *LaunchURI* e forneça um valor de URI https://bing.comcomo.
+### <a name="example-1-launch-uri"></a>Exemplo 1: URI de lançamento 
+
+Este é um exemplo de uma solicitação LaunchURI; ele iniciará um URI ou um aplicativo no dispositivo de destino. Para iniciar um URI ou um aplicativo, emita uma POSTAgem usando a ID do dispositivo (obtido de uma chamada GET ativada `me/devices`). Defina os parâmetros de *tipo* como *LaunchURI* e forneça um valor de URI https://bing.comcomo.
 
 #### <a name="request"></a>Solicitação
-
-Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "ignored",
@@ -115,10 +115,7 @@ Content-Type: application/json; charset=utf-8
 { "type" : "LaunchUri", "payload" : {"uri":"https://bing.com"}}
 
 ```
-
 #### <a name="response"></a>Resposta 
-
-Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "ignored",
@@ -147,9 +144,9 @@ HTTP/1.1 201 OK
 ```
 
 
-## <a name="app-service-example"></a>Exemplo de serviço de aplicativo
+### <a name="example-2-app-service"></a>Exemplo 2: serviço de aplicativo
 
-Veja um exemplo de consulta de um serviço de aplicativo em um dispositivo. Para usar um serviço de aplicativo, você deve fazer uma chamada POST usando a ID do dispositivo (obtido de uma chamada GET ativada `me/devices`). Para usar o exemplo a seguir, você deve instalar o [aplicativo Roma](https://aka.ms/romanapp) no seu dispositivo de destino.
+O exemplo a seguir mostra como consultar um serviço de aplicativo em um dispositivo. Para usar um serviço de aplicativo, você deve fazer uma chamada POST usando a ID do dispositivo (obtido de uma chamada GET ativada `me/devices`). Para usar o exemplo a seguir, você deve instalar o [aplicativo Roma](https://aka.ms/romanapp) no seu dispositivo de destino.
 
 Várias propriedades adicionais devem ser definidas na chamada. O *tipo* deve ser definido *como serviço*, *AppServiceName* deve ser definido como o nome do serviço de aplicativo definido no aplicativo, *PackageFamilyName* deve ser definido como o nome da família do pacote definido no manifesto do aplicativo e *carga* contém as chaves e os valores para o serviço que você está chamando no aplicativo de destino.
 
@@ -176,8 +173,6 @@ Content-Type: application/json; charset=utf-8
 ```
 
 #### <a name="response"></a>Resposta
-
-Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "ignored",

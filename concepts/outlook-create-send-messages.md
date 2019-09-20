@@ -4,12 +4,12 @@ description: Emails são representados pelo recurso de mensagem no Microsoft Gra
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 06074950ae1ea81be9546066ebff05825d44b700
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 050807fb13f91c506268aadde6757c2de1c4d30c
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440084"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036078"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Automatizar a criação, o envio e o processamento de mensagens
 
@@ -25,7 +25,7 @@ Da mesma forma, quando responder a um email, você pode criar e enviar a respost
 
 Para distinguir entre um rascunho e uma mensagem enviada por programação, verifique a propriedade **isDraft**.
 
-Por padrão, as mensagens de rascunho são salvas na pasta `Drafts` As mensagens enviadas são salvas na pasta `Sent Items`. Para sua conveniência, é possível identificar a pasta Rascunhos e a pasta Itens enviados por seus [nomes de pasta correspondentes já bem conhecidos](/graph/api/resources/mailfolder?view=graph-rest-1.0). 
+Por padrão, as mensagens de rascunho são salvas na pasta `Drafts` As mensagens enviadas são salvas na pasta `Sent Items`. Para sua conveniência, é possível identificar a pasta Rascunhos e a pasta Itens enviados por seus [nomes de pasta correspondentes já bem conhecidos](/graph/api/resources/mailfolder?view=graph-rest-1.0).
 
 ### <a name="setting-the-from-and-sender-properties"></a>Definindo as propriedades from e sender
 
@@ -112,5 +112,5 @@ Saiba mais sobre:
 - [Obter conteúdo MIME (visualização)](outlook-get-mime-message.md)
 - [Receber mensagens compartilhadas](outlook-share-messages-folders.md)
 - [Enviar mensagens do Outlook de outro usuário](outlook-send-mail-from-other-user.md)
-- [Obter identificadores imutáveis para recursos do Outlook (visualização)](outlook-immutable-id.md)
+- [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
 - [Como usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e seus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) do Microsoft Graph versão 1.0.
