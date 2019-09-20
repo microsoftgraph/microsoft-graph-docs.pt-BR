@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 315c33c141f2df4181c549ab837badc2817b1410
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 810f589c0814a9b843d7b71e17e55036c0266f9e
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726295"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041881"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -46,7 +46,7 @@ Alertas dos seguintes provedores estão disponíveis por meio da API de seguran�
 |[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **Observação:** Novos provedores estão se integrando continuamente ao ecossistema de Segurança do Microsoft Graph. Para requerer suporte aos novos provedores ou suporte estendido para os provedores existentes, [registre o problema no repositório GitHub de segurança do Microsoft Graph](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-\*A Proteção Avançada contra Ameaças do Windows Defender (WDATP) exige mais [funções de usuário](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) do que as necessárias para a API de Segurança do Microsoft Graph; portanto, somente os usuários nas funções do WDATP e da API de Segurança do Microsoft Graph podem ter acesso aos dados do WDATP.  A autenticação somente para aplicativos não é limitada por isso. Portanto, recomendamos que você use um token de autenticação somente para aplicativos.
+\* A proteção Avançada contra Ameaças do Microsoft Defender exige [funções de usuário](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) adicionais para aquelas requeridas pela API de segurança do Microsoft Graph. Somente os usuários da Proteção Avançada contra Ameaças do Microsoft Defender e das funções da API de segurança do Microsoft Graph podem ter acesso aos dados da Proteção Avançada contra Ameaças do Microsoft Defender. A autenticação somente para aplicativos não é limitada por isso. Portanto, recomendamos que você use um token de autenticação somente para aplicativos.
 
 \*\* Os alertas da Proteção Avançada Contra Ameaças do Azure estão disponíveis por meio da integração com o Microsoft Cloud App Security. Isso significa que você receberá alertas da Proteção Avançada contra Ameaças do Azure somente se tiver ingressado no [programa de visualização do Unified SecOps](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850) e conectado à Proteção Avançada contra Ameaças do Azure no Microsoft Cloud App Security.
 
@@ -65,9 +65,9 @@ Indicadores de ameaças enviados por meio da API de segurança do Microsoft Grap
 
 ## <a name="security-actions-preview"></a>Ações de Segurança (visualização)
 
-Executar uma ação imediata proteger contra ameaças usando a entidade [securityAction](securityaction.md)de Segurança do Microsoft Graph. Quando um analista de segurança descobre um indicador novo, como um arquivo mal-intencionado, URL, domínio ou endereço IP, a proteção pode ser habilitada instantaneamente em suas soluções de segurança da Microsoft. Usar uma ação específica do provedor, ver todas as ações executadas e cancelar uma ação, se necessário. Experimente as ações de segurança com o [ATP do Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)para bloquear as atividades mal-intencionados em seus pontos de extremidade do Windows usando as propriedades vistas nos alertas ou identificadas durante as investigações.
+Executar uma ação imediata proteger contra ameaças usando a entidade [securityAction](securityaction.md)de Segurança do Microsoft Graph. Quando um analista de segurança descobre um indicador novo, como um arquivo mal-intencionado, URL, domínio ou endereço IP, a proteção pode ser habilitada instantaneamente em suas soluções de segurança da Microsoft. Usar uma ação específica do provedor, ver todas as ações executadas e cancelar uma ação, se necessário. Experimente as ações de segurança com a [Proteção Avançada contra Ameaças do Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para bloquear as atividades mal-intencionados nos pontos de extremidade do Windows usando as propriedades vistas nos alertas ou identificadas durante as investigações.
 
-  > **Observação:** ações de segurança no momento apenas dá suporte a permissões do aplicativo compatível.
+  > **Observação:** Ações de segurança no momento apenas oferecem suporte às permissões do aplicativo.
 
 ## <a name="secure-score"></a>Classificação de Segurança
 
