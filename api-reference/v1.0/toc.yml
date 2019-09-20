@@ -33,7 +33,7 @@
         - name: Limitação
           href: /graph/throttling?context=graph/api/1.0
         - name: Notificações de alteração
-          displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+          displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
           items:
             - name: Visão Geral
               href: /graph/webhooks?context=graph/api/1.0
@@ -266,10 +266,6 @@
                   href: api/user-post-mailfolders.md
                 - name: Enviar email
                   href: api/user-sendmail.md
-                - name: Obter configurações de Caixa de Correio
-                  href: api/user-get-mailboxsettings.md
-                - name: Atualizar configurações de Caixa de Correio
-                  href: api/user-update-mailboxsettings.md
                 - name: Listar regras
                   href: api/mailfolder-list-messagerules.md
                 - name: Criar regras
@@ -283,17 +279,6 @@
                   href: api/onenote-list-notebooks.md
                 - name: Criar blocos de anotações
                   href: api/onenote-post-notebooks.md
-            - name: Configurações do Outlook
-              href: resources/outlookuser.md
-              items:
-                - name: Obter opções de idioma
-                  href: api/outlookuser-supportedlanguages.md
-                - name: Obter opções de fuso horário
-                  href: api/outlookuser-supportedtimezones.md
-                - name: Listar categorias
-                  href: api/outlookuser-list-mastercategories.md
-                - name: Criar categoria
-                  href: api/outlookuser-post-mastercategories.md
             - name: Hierarquia da organização
               href: resources/organization.md
               items:
@@ -303,6 +288,21 @@
                   href: api/user-list-manager.md
                 - name: Atribuir gerente
                   href: api/user-post-manager.md
+            - name: Configurações do Outlook
+              href: resources/outlookuser.md
+              items:
+                - name: Obter opções de idioma
+                  href: api/outlookuser-supportedlanguages.md
+                - name: Obter opções de fuso horário
+                  href: api/outlookuser-supportedtimezones.md
+                - name: Obter configurações de Caixa de Correio
+                  href: api/user-get-mailboxsettings.md
+                - name: Atualizar configurações de Caixa de Correio
+                  href: api/user-update-mailboxsettings.md
+                - name: Listar categorias
+                  href: api/outlookuser-list-mastercategories.md
+                - name: Criar categoria
+                  href: api/outlookuser-post-mastercategories.md
             - name: Foto
               href: resources/profilephoto.md
               items:
@@ -3100,7 +3100,7 @@
                 - name: Excluir usuário
                   href: api/educationuser-delete.md
         - name: Arquivos
-          displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
+          displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
             - name: Visão geral
               href: resources/onedrive.md
@@ -3914,7 +3914,7 @@
             - name: Erros
               href: resources/security-error-codes.md
         - name: Sites e listas
-          displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
+          displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
             - name: Visão geral
               href: resources/sharepoint.md
@@ -4233,7 +4233,7 @@
                 - name: Criar resposta
                   href: api/workbookcomment-post-replies.md
                 - name: Obter resposta
-                  href: workbookcommentreply-get.md
+                  href: api/workbookcommentreply-get.md
             - name: Planilha
               href: resources/worksheet.md
               items:
@@ -4361,7 +4361,7 @@
                 - name: Excluir extensão de esquema
                   href: api/schemaextension-delete.md
             - name: Notificações de alteração
-              displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+              displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
               items:
                 - name: Visão Geral
                   href: resources/webhooks.md

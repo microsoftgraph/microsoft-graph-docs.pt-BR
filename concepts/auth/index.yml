@@ -10,6 +10,7 @@ metadata:
   ms.topic: landing-page
   ms.date: 04/26/2019
   ms.reviewer: jawoods
+  ms.custom: graphiamtop20
 abstract:
   description: 'Saiba como autenticar e trabalhar com permissões para acessar dados com segurança através do Microsoft Graph. Explore a documentação abaixo para saber mais sobre o registro de aplicativos, bibliotecas de autenticação, autorização e outras partes da plataforma de identidade da Microsoft que dão suporte ao desenvolvimento do Microsoft Graph.'
   aside:
