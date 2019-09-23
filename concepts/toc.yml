@@ -78,7 +78,7 @@ items:
             href: outlook-schedule-recurring-events.md
           - name: Obter eventos compartilhados
             href: outlook-get-shared-events-calendars.md
-          - name: ID imutável (visualização)
+          - name: ID Imutável
             href: outlook-immutable-id.md
       - name: Experiências entre dispositivos
         displayName: Project Rome
@@ -136,7 +136,7 @@ items:
             href: outlook-mail-concept-overview.md
           - name: Automatizar mensagens
             href: outlook-create-send-messages.md
-          - name: Obter conteúdo de MIME (versão prévia)
+          - name: Obter conteúdo MIME
             href: outlook-get-mime-message.md
           - name: Receber mensagens compartilhadas
             href: outlook-share-messages-folders.md
@@ -144,7 +144,7 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: Organizar mensagens
             href: outlook-organize-messages.md
-          - name: ID imutável (visualização)
+          - name: ID Imutável
             href: outlook-immutable-id.md
       - name: Observações
         displayName: OneNote
@@ -188,9 +188,9 @@ items:
             items:
               - name: Visão Geral
                 href: notifications-integration-e2e-overview.md
-              - name: Registro de aplicativo
+              - name: Registro do aplicativo
                 href: notifications-integration-app-registration.md
-              - name: Integração em dispositivos cruzados
+              - name: Integração entre Dispositivos
                 href: notifications-integration-cross-device-experiences-onboarding.md
               - name: Integração do servidor de aplicativos
                 href: notifications-integrating-app-server.md
@@ -207,7 +207,7 @@ items:
             href: outlook-contacts-concept-overview.md
           - name: Obter contatos compartilhados
             href: outlook-get-shared-contacts-folders.md
-          - name: ID imutável (visualização)
+          - name: ID Imutável
             href: outlook-immutable-id.md
       - name: Relatórios
         href: reportroot-concept-overview.md
