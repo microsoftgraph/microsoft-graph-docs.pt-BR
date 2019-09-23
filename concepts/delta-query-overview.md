@@ -3,12 +3,13 @@ title: Usar a consulta delta para controlar alterações nos dados do Microsoft 
 description: A consulta delta permite que aplicativos localizem entidades recém-criadas, atualizadas ou excluídas sem executar uma leitura completa do recurso de destino com cada solicitação. Os aplicativos do Microsoft Graph podem usar consulta delta para sincronizar, com eficiência, alterações com armazenamento de dados local.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 6a7dee807c35bb790d122941f381b8541054e87f
-ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
+ms.custom: graphiamtop20
+ms.openlocfilehash: a74645d8f5b579a28059124eabdf8ccfdb967c4e
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36677110"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054073"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -48,8 +49,9 @@ Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solici
 
 Observe o seguinte em relação aos parâmetros de consulta opcionais:
 
-- `$orderby` não é um parâmetro de consulta com suporte para consultas delta.
- - Não assuma que uma sequência específica das respostas tenha retornado de uma consulta delta. Suponha que o mesmo item possa aparecer em qualquer lugar na sequência do `nextLink` e leve isso em conta em sua lógica de mesclagem.
+- `$orderby` não tem suporte para consultas delta.
+     - Não assuma que uma sequência específica das respostas tenha retornado de uma consulta delta. Suponha que o mesmo item possa aparecer em qualquer lugar na sequência do `nextLink` e leve isso em conta em sua lógica de mesclagem.
+- `$top` o não tem suporte para consultas delta, e o número de objetos em cada página pode variar dependendo do tipo de recurso e do tipo de alterações feitas no recurso.
 
 Para usuários e grupos, as restrições a seguir aplicam-se sobre como usar alguns parâmetros de consulta:
 
@@ -58,7 +60,15 @@ Para usuários e grupos, existem restrições sobre como usar alguns parâmetros
 - Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
 - `$expand` tem suporte apenas para as propriedades de navegação `manager` e `members` para usuários e grupos, respectivamente.
 
-- Os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações dos grupos que correspondem às IDs especificadas no filtro de consulta.
+- Os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por ID de objeto. Por exemplo, a solicitação a seguir retorna alterações para os grupos que correspondem às IDs especificadas no filtro de consulta. 
+
+<!-- {
+  "blockType": "request",
+  "name": "group_delta"
+}-->
+```http
+https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' 
+```
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Representação de recurso na resposta da consulta delta
 
