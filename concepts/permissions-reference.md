@@ -4,12 +4,13 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: 45edb046cbf6ceffe9451a09ce7098bfb505dc27
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.custom: graphiamtop20
+ms.openlocfilehash: fdcab22f936862531a30de718a1574d95bd619a4
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036364"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053898"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 159798c8bbb7ace51ee8a4d0d00ab78cf54570c6
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1d34841cdc499e2bd0324cba8244f0551362b640
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724166"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113867"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -71,6 +71,18 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 Você pode usar o `$filter` parâmetro de consulta na propriedade **mentionsPreview** para obter as mensagens que mencionam o usuário conectado.
+
+### <a name="using-filter-and-orderby-in-the-same-query"></a>Usando Filter e OrderBy na mesma consulta
+Ao usar `$filter` o `$orderby` e na mesma consulta para obter mensagens, certifique-se de especificar as propriedades das seguintes maneiras:
+
+1. As propriedades que aparecem `$orderby` em também devem aparecer `$filter`no. 
+2. As propriedades que aparecem `$orderby` no estão na mesma ordem que em `$filter`.
+3. As propriedades que estão presentes `$orderby` em aparecem `$filter` antes de qualquer propriedade que não esteja.
+
+Não fazer isso resulta no seguinte erro:
+
+- Código de erro:`InefficientFilter`
+- Mensagem de erro:`The restriction or sort order is too complex for this operation.`
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 5f38bcbb79600a009a11fcb300e21742069c9f65
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9b67e60f25f6b180235d256da094d9ee35174be6
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722332"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113923"
 ---
 # <a name="enumerate-sites"></a>Enumerar sites
 
@@ -24,9 +24,9 @@ Há suporte apenas para as seguintes opções de consulta:
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Lista todos os conjuntos de sites de nível de raiz na organização. Útil para descobrir o site de casa de cada geografia.
 
-Além disso, você pode usar uma consulta de **[pesquisa][]** em relação à coleção de '/sites ' para localizar sites que correspondem a palavras-chave dadas.
+Além disso, você pode usar uma consulta **[$Search][]** em relação à coleção '/sites ' para localizar sites que correspondem a palavras-chave dadas.
 
-[consulte]: site-search.md
+[$search]: site-search.md
 [sites]: ../resources/site.md
 
 ## <a name="permissions"></a>Permissões
@@ -44,7 +44,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
+GET https://graph.microsoft.com/beta/sites?$filter=siteCollection/root ne null
 ```
 
 ## <a name="example"></a>Exemplo
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
+GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]

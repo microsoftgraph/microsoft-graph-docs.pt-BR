@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a6622bc7859ae8118a129c555349f391891f9c1a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: b5a781b6f6c4e3aeea7941ed956b99f182dc3110
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718394"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113860"
 ---
 # <a name="list-replies"></a>Listar respostas
 
@@ -37,7 +37,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 GET /chats/{id}/messages/{id}/replies
-GET /users/{id}/chats/{id}/messages/{id}/replies
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

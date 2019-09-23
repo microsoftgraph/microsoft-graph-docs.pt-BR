@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a311c8ae7618778c2dbd8cdbc9a5b30af254eae4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d8d9cad16e33b022fa7c9d4e97a4d28e89436041
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007792"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113898"
 ---
 # <a name="synchronizationjob-resource-type"></a>tipo de recurso synchronizationJob
 
@@ -40,6 +40,7 @@ Realiza a sincronização periodicamente em segundo plano, pesquisando alteraç�
 |id             |String                     |Identificador exclusivo do trabalho de sincronização. Somente leitura.|
 |Cronograma       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Agendamento usado para executar o trabalho. Somente leitura.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Status do trabalho, que inclui quando o trabalho foi executado pela última vez, o estado atual do trabalho e os erros.|
+|synchronizationJobSettings   |[keyValuePair](keyvaluepair.md)    |Configurações associadas ao trabalho. Algumas configurações são herdadas do modelo.|
 |templateId     |String    |Identificador do [modelo de sincronização](synchronization-synchronizationtemplate.md) em que este trabalho se baseia.|
 
 ## <a name="relationships"></a>Relações
@@ -65,6 +66,7 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "schedule": {"@odata.type": "microsoft.graph.synchronizationSchedule"},
   "status": {"@odata.type": "microsoft.graph.synchronizationStatus"},
+  "synchronizationJobSettings": {"@odata.type": "microsoft.graph.keyValuePair"},
   "templateId": "String"
 }
 

@@ -6,12 +6,12 @@ title: Localizar sites do SharePoint por palavra-chave
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: dbc66bc734d4ef0a47e30ce1e967918e964489a0
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 8e1ab05789438d793cd10ec2598c62bdec0414c3
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724530"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113895"
 ---
 # <a name="search-for-sites"></a>Procurar sites
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?search={query}
+GET https://graph.microsoft.com/beta/sites?$search={query}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
