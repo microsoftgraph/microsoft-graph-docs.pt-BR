@@ -3,12 +3,12 @@ title: Tutoriais do Microsoft Graph
 description: Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que orientam você pelos conceitos básicos do Microsoft Graph, incluindo a criação de um aplicativo básico que usa a autenticação do Azure Active Directory e acessa dados por meio do Microsoft Graph.
 author: jasonjoh
 localization_priority: Priority
-ms.openlocfilehash: 8ec3a049dd50c12a4d5a3a8885496998ce09293f
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: cbc3dc6d03f7cb7c883619eea333d56e7b8472e8
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348667"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053897"
 ---
 # <a name="microsoft-graph-tutorials"></a>Tutoriais do Microsoft Graph
 
@@ -16,17 +16,21 @@ Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo qu
 
 ## <a name="build-your-first-app"></a>Desenvolver seu primeiro aplicativo
 
-Os seguintes tutoriais criam um aplicativo que autentica um usuário e acessa a data através do Microsoft Graph.
+Os seguintes tutoriais criam um aplicativo que autentica um usuário e acessa a data pelo Microsoft Graph.
 
+- [.NET Core](/graph/tutorials/dotnet-core)
 - [Android](/graph/tutorials/android)
 - [Angular](/graph/tutorials/angular)
 - [ASP.NET](/graph/tutorials/aspnet)
 - [Microsoft Flow](/graph/tutorials/flow)
+- [iOS Objective-C](/graph/tutorials/ios-objectivec)
+- [iOS Swift](/graph/tutorials/ios-swift)
 - [Java](/graph/tutorials/java)
 - [Node.js](/graph/tutorials/node)
 - [PHP](/graph/tutorials/php)
 - [Python](/graph/tutorials/python)
 - [React](/graph/tutorials/react)
+- [React Native](/graph/tutorials/react-native)
 - [Ruby](/graph/tutorials/ruby)
 - [UWP](/graph/tutorials/uwp)
 - [Xamarin](/graph/tutorials/xamarin)

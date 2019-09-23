@@ -3,12 +3,13 @@ title: Configurar notificações para alterações nos dados de usuário
 description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 43e4e4893cae46bb5d3bcecc1f0d7e96da4ccfed
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.custom: graphiamtop20
+ms.openlocfilehash: 85d654e6e42a271500ff8d0c2f3181e7d591f3a6
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133779"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053890"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -224,15 +225,15 @@ Observe que o campo `value` é uma matriz de objetos. Quando houver muitas notif
 
 Cada notificação recebida por seu aplicativo deve ser processada. Estas são as tarefas mínimas que o seu aplicativo deve realizar para processar uma notificação:
 
+1. Envie um código de status `202 - Accepted` na sua resposta para o Microsoft Graph. Se o Microsoft Graph não receber um código de classe 2xx, ele tentará publicar a notificação algumas vezes, por um período de aproximadamente 4 horas; depois disso, a notificação será descartada e não será entregue.
+
+    > **Observação:** Envie um código de status `202 - Accepted` assim que receber a notificação, mesmo antes de validar a sua autenticidade. Você está simplesmente confirmando o recebimento da notificação e impedindo tentativas desnecessárias. O tempo limite atual é de 30 segundos, mas pode ser reduzido no futuro para otimizar o desempenho do serviço.
+
 1. Validar a propriedade `clientState`. Ela deve corresponder ao valor enviado originalmente com a solicitação de criação da assinatura.
 
     > **Observação:** se isso não for verdadeiro, você não deverá considerar esta notificação como válida. É possível que a notificação não tenha se originado do Microsoft Graph e possa ter sido enviada por um ator invasor. Você também deve investigar de onde vem a notificação e tomar as medidas apropriadas.
 
 1. Atualize seu aplicativo com base na sua lógica comercial.
-
-1. Envie um código de status `202 - Accepted` na sua resposta para o Microsoft Graph. Se o Microsoft Graph não receber um código de classe 2xx, ele tentará reenviar a notificação várias vezes.
-
-    > **Observação:** você deve enviar um código de status `202 - Accepted` mesmo que a propriedade `clientState` não corresponda àquela enviada com a solicitação de assinatura. Essa é uma boa prática, uma vez que impede que um possível ator invasor descubra que você não confia nas notificações dele e use as informações para tentar adivinhar o valor da propriedade `clientState`.
 
 Repita o procedimento para outras notificações na solicitação.
 
