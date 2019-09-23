@@ -4,14 +4,14 @@ description: Multipurpose Internet Mail Extensions (MIME) é um padrão de email
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a0b71e3e87a845c995ec2792bab12fc0fc446b59
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2eadf89007e1127ffbbf9e40506c37b47778da7c
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32655797"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036379"
 ---
-# <a name="get-mime-content-of-a-message-preview"></a>Obter conteúdo MIME de uma mensagem (visualização)
+# <a name="get-mime-content-of-a-message"></a>Obter conteúdo MIME de uma mensagem
 
 MIME é um padrão de email do setor. Muitos aplicativos de email criam mensagens em formato MIME e as salvam em arquivos com a extensão .EML. 
 
@@ -24,7 +24,6 @@ Em ambos os casos, o aplicativo deve ter as [permissões apropriado para acessar
 
 Você pode salvar o conteúdo no corpo da mensagem em um arquivo .EML e anexar o arquivo para registros em sistemas de negócios, como CRM, ERP e controle de bugs. 
 
-> **Importante:** O recurso para acessar o corpo da mensagem MIME está atualmente disponível somente na versão /beta. Assim como outros APIs no status de visualização, ele está sujeitas a alterações. Não use esse recurso em aplicativos de produção. Para saber mais, confira [controle de versão e suporte](versioning-and-support.md).
 
 ## <a name="what-is-mime"></a>O que é MIME?
 
@@ -45,7 +44,7 @@ Estes são cabeçalhos MIME típicos em uma mensagem. Para obter mais informaç�
 
 ## <a name="get-mime-content-of-an-outlook-message"></a>Obter conteúdo MIME de uma mensagem Outlook
 
-Você pode obter a representação MIME de uma mensagem, acrescentando o `$value` segmento ao [receber a mensagem](/graph/api/message-get?view=graph-rest-beta): 
+Você pode obter a representação MIME de uma mensagem, acrescentando o `$value` segmento ao [receber a mensagem](/graph/api/message-get?view=graph-rest-1.0): 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -155,10 +154,10 @@ YW5vdGhlciBtYWlsLg0K
 
 ## <a name="get-mime-content-of-an-outlook-message-attached-to-an-outlook-item-or-group-post"></a>Obter o conteúdo MIME de uma mensagem do Outlook anexada a um item do Outlook ou postagem do grupo
 
-Você também pode obter a representação MIME de uma mensagem do Outlook, se a mensagem foi anexada a de um [evento](/graph/api/resources/event?view=graph-rest-beta) do Outlook, [mensagem](/graph/api/resources/message?view=graph-rest-beta), [tarefa](/graph/api/resources/outlooktask?view=graph-rest-beta), ou postagem do grupo [ ](/graph/api/resources/post?view=graph-rest-beta) que o seu aplicativo pode acessar.
+Você também pode obter a representação MIME de uma mensagem do Outlook, se a mensagem foi anexada a de um [evento](/graph/api/resources/event?view=graph-rest-1.0) do Outlook, [mensagem](/graph/api/resources/message?view=graph-rest-1.0), [tarefa](/graph/api/resources/outlooktask?view=graph-rest-beta), ou postagem do grupo [ ](/graph/api/resources/post?view=graph-rest-1.0) que o seu aplicativo pode acessar.
 
-Para fazer isso, identifique o anexo e acrescente o `$value` segmento ao [receber esse anexo](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment
-). A seguir algumas maneiras comuns de acessar um anexo. Confira [Obter um anexo](/graph/api/attachment-get?view=graph-rest-beta#http-request) para mais informações.
+Para fazer isso, identifique o anexo e acrescente o `$value` segmento ao [receber esse anexo](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
+). A seguir algumas maneiras comuns de acessar um anexo. Confira [Obter um anexo](/graph/api/attachment-get?view=graph-rest-1.0#http-request) para mais informações.
 
 Se a mensagem estiver anexada a um evento do calendário padrão do usuário:
 <!-- { "blockType": "ignored" } -->
@@ -190,7 +189,7 @@ A seguir está um exemplo que recebe uma mensagem que foi anexada a outra mensag
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/AAMkAGUAAA7XW-lAAA=/attachments/AAMkAGUAAA7XW-lAAABEgAQAFBZJBq4EN5FlCSvNV-M-FI=/$value
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUAAA7XW-lAAA=/attachments/AAMkAGUAAA7XW-lAAABEgAQAFBZJBq4EN5FlCSvNV-M-FI=/$value
 ```
 
 Esta é a resposta. O conteúdo MIME começa com o `MIME-Version` cabeçalho. 
@@ -279,6 +278,6 @@ e.</p>
 
 Saiba mais sobre:
 
-- [Obter o conteúdo MIME de um anexo do item](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem, tarefa do Outlook ou postagem do grupo
+- [Obter o conteúdo MIME de um anexo do item](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem, tarefa do Outlook ou postagem do grupo
 - [Por que integrar com o email do Outlook](outlook-mail-concept-overview.md)
-- [Como usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e seus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-beta#common-use-cases) do Microsoft Graph beta
+- [Usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e seus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) no Microsoft Graph versão 1.0.
