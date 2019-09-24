@@ -4,18 +4,18 @@ description: Descreve como atualizar o uso da biblioteca de autenticação para 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 77604945064565f1387553b22a26a0fa871c998d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: d0f3570ac7d16c02737c4653d66070ec1a03d0c9
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630262"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113881"
 ---
 # <a name="review-app-authentication-library-changes"></a>Analisar alterações da biblioteca de autenticação do aplicativo
 
 Este artigo faz parte da *etapa 3: revise os detalhes do aplicativo* do [processo para migrar aplicativos](migrate-azure-ad-graph-planning-checklist.md).
 
-A maioria dos aplicativos usa uma biblioteca de autenticação para aquire e gerenciar tokens de acesso para chamar o Microsoft Graph.  A Microsoft oferece duas bibliotecas de autenticação:
+A maioria dos aplicativos usa uma biblioteca de autenticação para adquirir e gerenciar tokens de acesso para chamar o Microsoft Graph.  A Microsoft oferece duas bibliotecas de autenticação:
 
 - [Biblioteca de autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) Adal
 - [Biblioteca de autenticação da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) MSAL
@@ -42,7 +42,7 @@ Se seu aplicativo usa atualmente a ADAL, use uma abordagem de migração de dois
 
 O MSAL fornece vários benefícios sobre a ADAL, incluindo o consentimento incremental, experiências de logon único mais ricas, suporte para contas pessoais da Microsoft, uso de protocolos baseados em padrões e assim por diante.  
 
-Ao mudar seu aplicativo para o MSAL, você precisará fazer algumas alterações, incluindo a configuração do parâmetro de **** escopos na solicitação de token Acquistion:
+Ao mudar seu aplicativo para o MSAL, você precisará fazer algumas alterações, incluindo a configuração do parâmetro de **escopos** na solicitação de token Acquistion:
 
 ``` csharp
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
@@ -50,7 +50,7 @@ var scopes = new string[] { "https://graph.microsoft.com/.default" };
 
 A expressão acima limita a solicitação de escopos de permissão para aquelas configuradas durante o registro do aplicativo no portal do Azure e salva seus usuários existentes para que eles tenham de ser consentidos em seu aplicativo novamente.
 
-Consulte [migraNDO Adal para MSAL](https://aka.ms/adal-net-to-msal-net) para obter ajuda direta e abrangente com o processo, incluindo solução de problemas e ajuda com erros comuns.
+Consulte [migrando Adal para MSAL](https://aka.ms/adal-net-to-msal-net) para obter ajuda direta e abrangente com o processo, incluindo solução de problemas e ajuda com erros comuns.
 
 Após a migração para o MSAL, você poderá solicitar escopos adicionais dinamicamente e os usuários serão solicitados a fornecer o consentimento incremental na próxima vez que usarem seu aplicativo.
 
