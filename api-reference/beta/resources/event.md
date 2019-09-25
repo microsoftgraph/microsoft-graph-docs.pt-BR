@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 79c10718ab03cd23d03f9b6b9e9f3e2e2acfa31d
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 7c2ae578a92993fd8fb253a19b8cdc13a35cb5b5
+ms.sourcegitcommit: 6c007d70d5e7284c4b9e2b5d909e9087bbdaad93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036386"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37149591"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -29,6 +29,7 @@ Esse recurso permite:
 > **Observação:** existem algumas pequenas diferenças na maneira como você pode interagir com calendários de usuários, calendários de grupos e seus eventos:
 
 - Você pode organizar apenas os calendários de usuários em [calendarGroup](calendargroup.md).
+- Você pode adicionar objetos [anexos](attachment.md) a apenas eventos de calendários de usuário, mas não a eventos em calendários de grupo.
 - O Outlook aceita automaticamente todas as solicitações de reunião em nome de grupos. Você pode [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) solicitações de reuniões apenas para calendários do _usuário_.
 - O Outlook não oferece suporte a lembretes de eventos do grupo. Você pode [adiar](../api/event-snoozereminder.md) ou [descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) apenas para calendários de _usuário_.
 
