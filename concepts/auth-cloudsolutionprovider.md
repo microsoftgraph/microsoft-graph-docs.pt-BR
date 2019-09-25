@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: 60a937c6ee38e65581c6b3a853819dd10db84517
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: ca9a7dc13a41de91605e11f7aa368c43c5d976b8
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054135"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113888"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Chamar o Microsoft Graph por um Provedor de Soluções na Nuvem
 
@@ -85,7 +85,7 @@ Este é um [fluxo de concessão de código de autorização](https://docs.micros
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. [Adquira um token de acesso usando o código de autorização:](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Seu aplicativo deve usar um **locatário do cliente** como o locatário de destino, no nosso exemplo ```customer.com```, ao fazer a solicitação para o ponto de extremidade ```token```:
+2. [Adquira um token de acesso usando o código de autorização:](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) seu aplicativo deve usar um **locatário do cliente** como o locatário de destino — no nosso exemplo, ```customer.com``` — ao fazer a solicitação para o ponto de extremidade ```token```:
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token

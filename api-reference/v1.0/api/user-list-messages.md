@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e4e1930e3df3a7f72cb4d9b9701a08530f07043a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 6f0b1edb4de49294780f8d4e00fe9f3f3f6470f3
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727457"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113937"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -56,6 +56,19 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+
+### <a name="using-filter-and-orderby-in-the-same-query"></a>Uso de filtro e orderby na mesma consulta
+Ao usar `$filter` e `$orderby` na mesma consulta para obter mensagens, lembre-se de especificar as propriedades das seguintes maneiras:
+
+1. As propriedades que aparecem em `$orderby` também devem aparecer em `$filter`. 
+2. As propriedades que aparecem em `$orderby` estão na mesma ordem que em `$filter`.
+3. As propriedades presentes em `$orderby` aparecem em `$filter` antes de qualquer propriedade que não esteja presente.
+
+Ao não fazer isso, o seguinte erro surge:
+
+- Código de erro: `InefficientFilter`
+- Mensagem de erro: `The restriction or sort order is too complex for this operation.`
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
