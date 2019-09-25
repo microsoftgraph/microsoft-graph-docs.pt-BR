@@ -4,12 +4,12 @@ description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer 
 author: piotrci
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 85d654e6e42a271500ff8d0c2f3181e7d591f3a6
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 26afa7c71708f617038f8d66c64a7f2a65a1c8d9
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053890"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113874"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -67,6 +67,16 @@ Quando os limites são excedidos, a tentativa de criar uma assinatura resultará
 - Não há suporte a locatários do Microsoft Azure AD B2C.
 
 - Não há suporte a notificações para entidades de usuário para contas Microsoft pessoais.
+
+### <a name="outlook-resource-limitations"></a>Limitações de recursos do Outlook
+
+Ao se inscrever em recursos do Outlook, tais como **mensagens**, **eventos** ou **contatos**, se você decidir usar o *nome UPN* em um caminho de recurso, a solicitação de assinatura pode falhar caso o UPN contenha um apóstrofo. Considere usar IDs de usuário de GUID em vez de UPNs para evitar esse problema. Por exemplo, em vez de usar o caminho de recursos:
+
+`/users/sh.o'neal@contoso.com/messages`
+
+Use: 
+
+`/users/{guid-user-id}/messages`
 
 ## <a name="subscription-lifetime"></a>Tempo de vida da assinatura
 

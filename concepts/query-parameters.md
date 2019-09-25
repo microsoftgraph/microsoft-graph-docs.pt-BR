@@ -5,12 +5,12 @@ author: piotrci
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1afae7cf577e098c7905cbb2623c0440f8d480ae
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 89809e080696163a4794fe554f73509e7f33b9d3
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054072"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113811"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -137,7 +137,11 @@ O suporte para operadores `$filter` varia entre as APIs do Microsoft Graph. Os s
 - ou (`or`)
 - não (`not`)
  
-O operador de cadeia de caracteres `startswith` geralmente é suportado. O operador lambda `any` tem suporte em algumas APIs. Para ver alguns exemplos de uso, confira a tabela a seguir. Para obter mais detalhes sobre a sintaxe `$filter`, confira o [protocolo OData][odata-filter].  
+O operador de cadeia de caracteres `startswith` geralmente é suportado. O operador lambda `any` tem suporte em algumas APIs. 
+
+> **Observação:** é necessário [especificar propriedades em determinadas maneiras](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query) ao usar `$filter` e `$orderby` na mesma consulta para obter mensagens.
+
+Para ver alguns exemplos de uso, confira a tabela a seguir. Para obter mais detalhes sobre a sintaxe `$filter`, confira o [protocolo OData][odata-filter].  
 
 A tabela a seguir mostra alguns exemplos que usam o parâmetro de consulta `$filter`.
 
@@ -196,7 +200,8 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-Quando você especifica $filter, servidor deduz uma ordem de classificação para os resultados. Se você usar `$orderby` e `$filter`, como o servidor sempre deduz a ordem de classificação dos resultados de um `$filter`, as propriedades do `$filter` devem estar listadas primeiro no `$orderby` antes de outras propriedades e devem estar listadas na ordem que aparecem no parâmetro `$filter`. 
+> **Observação:** quando você especifica $filter, o servidor deduz uma ordem de classificação para os resultados. Se você usar `$orderby` e `$filter` juntos para receber mensagens, como o servidor sempre infere uma ordem de classificação para os resultados de `$filter`, você deve [especificar propriedades de determinadas maneiras](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query).
+
 
 O exemplo a seguir mostra uma consulta filtrada pelas propriedades **subject** e **priority** e classificadas pelas propriedades **subject**, **priority** e **receivedDateTime** em ordem decrescente.
 
