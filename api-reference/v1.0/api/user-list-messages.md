@@ -5,40 +5,40 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e4e1930e3df3a7f72cb4d9b9701a08530f07043a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 6f0b1edb4de49294780f8d4e00fe9f3f3f6470f3
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727457"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113937"
 ---
-# <a name="list-messages"></a><span data-ttu-id="37534-103">Listar mensagens</span><span class="sxs-lookup"><span data-stu-id="37534-103">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="22e00-103">Listar mensagens</span><span class="sxs-lookup"><span data-stu-id="22e00-103">List messages</span></span>
 
-<span data-ttu-id="37534-104">Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário).</span><span class="sxs-lookup"><span data-stu-id="37534-104">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
+<span data-ttu-id="22e00-104">Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário).</span><span class="sxs-lookup"><span data-stu-id="22e00-104">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
 
-<span data-ttu-id="37534-105">Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção de mensagens de uma caixa de correio pode incorrer em várias solicitações.</span><span class="sxs-lookup"><span data-stu-id="37534-105">Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests.</span></span> <span data-ttu-id="37534-106">O tamanho de página padrão é 10 mensagens.</span><span class="sxs-lookup"><span data-stu-id="37534-106">The default page size is 10 messages.</span></span> <span data-ttu-id="37534-107">Para obter a próxima página de mensagens, basta aplicar a URL inteira retornada em `@odata.nextLink` à próxima solicitação de obtenção de mensagens.</span><span class="sxs-lookup"><span data-stu-id="37534-107">To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request.</span></span> <span data-ttu-id="37534-108">Esta URL inclui todos os parâmetros de consulta que você especificou na solicitação inicial.</span><span class="sxs-lookup"><span data-stu-id="37534-108">This URL includes any query parameters you may have specified in the initial request.</span></span> 
+<span data-ttu-id="22e00-105">Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção de mensagens de uma caixa de correio pode incorrer em várias solicitações.</span><span class="sxs-lookup"><span data-stu-id="22e00-105">Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests.</span></span> <span data-ttu-id="22e00-106">O tamanho de página padrão é 10 mensagens.</span><span class="sxs-lookup"><span data-stu-id="22e00-106">The default page size is 10 messages.</span></span> <span data-ttu-id="22e00-107">Para obter a próxima página de mensagens, basta aplicar a URL inteira retornada em `@odata.nextLink` à próxima solicitação de obtenção de mensagens.</span><span class="sxs-lookup"><span data-stu-id="22e00-107">To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request.</span></span> <span data-ttu-id="22e00-108">Esta URL inclui todos os parâmetros de consulta que você especificou na solicitação inicial.</span><span class="sxs-lookup"><span data-stu-id="22e00-108">This URL includes any query parameters you may have specified in the initial request.</span></span> 
 
-<span data-ttu-id="37534-109">Não tente extrair o valor `$skip` da URL `@odata.nextLink` para manipular respostas.</span><span class="sxs-lookup"><span data-stu-id="37534-109">Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses.</span></span> <span data-ttu-id="37534-110">Essa API usa o valor `$skip` para manter a contagem de todos os itens pelos quais passou na caixa de correio do usuário para retornar uma página de itens do tipo mensagem.</span><span class="sxs-lookup"><span data-stu-id="37534-110">This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items.</span></span> <span data-ttu-id="37534-111">Portanto, é possível que, mesmo na resposta inicial, o valor `$skip` seja maior que o tamanho da página.</span><span class="sxs-lookup"><span data-stu-id="37534-111">It's therefore possible that even in the initial response, the `$skip` value is larger than the page size.</span></span> <span data-ttu-id="37534-112">Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).</span><span class="sxs-lookup"><span data-stu-id="37534-112">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
+<span data-ttu-id="22e00-109">Não tente extrair o valor `$skip` da URL `@odata.nextLink` para manipular respostas.</span><span class="sxs-lookup"><span data-stu-id="22e00-109">Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses.</span></span> <span data-ttu-id="22e00-110">Essa API usa o valor `$skip` para manter a contagem de todos os itens pelos quais passou na caixa de correio do usuário para retornar uma página de itens do tipo mensagem.</span><span class="sxs-lookup"><span data-stu-id="22e00-110">This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items.</span></span> <span data-ttu-id="22e00-111">Portanto, é possível que, mesmo na resposta inicial, o valor `$skip` seja maior que o tamanho da página.</span><span class="sxs-lookup"><span data-stu-id="22e00-111">It's therefore possible that even in the initial response, the `$skip` value is larger than the page size.</span></span> <span data-ttu-id="22e00-112">Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).</span><span class="sxs-lookup"><span data-stu-id="22e00-112">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-<span data-ttu-id="37534-113">No momento, essa operação retorna corpos de mensagens somente no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="37534-113">Currently, this operation returns message bodies in only HTML format.</span></span>
+<span data-ttu-id="22e00-113">No momento, essa operação retorna corpos de mensagens somente no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="22e00-113">Currently, this operation returns message bodies in only HTML format.</span></span>
 
-<span data-ttu-id="37534-114">Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:</span><span class="sxs-lookup"><span data-stu-id="37534-114">There are two scenarios where an app can get messages in another user's mail folder:</span></span>
+<span data-ttu-id="22e00-114">Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:</span><span class="sxs-lookup"><span data-stu-id="22e00-114">There are two scenarios where an app can get messages in another user's mail folder:</span></span>
 
-* <span data-ttu-id="37534-115">Se o aplicativo tiver permissões de aplicativo ou</span><span class="sxs-lookup"><span data-stu-id="37534-115">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="37534-116">Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário.</span><span class="sxs-lookup"><span data-stu-id="37534-116">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="37534-117">Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).</span><span class="sxs-lookup"><span data-stu-id="37534-117">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+* <span data-ttu-id="22e00-115">Se o aplicativo tiver permissões de aplicativo ou</span><span class="sxs-lookup"><span data-stu-id="22e00-115">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="22e00-116">Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário.</span><span class="sxs-lookup"><span data-stu-id="22e00-116">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="22e00-117">Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).</span><span class="sxs-lookup"><span data-stu-id="22e00-117">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="37534-118">Permissões</span><span class="sxs-lookup"><span data-stu-id="37534-118">Permissions</span></span>
-<span data-ttu-id="37534-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="37534-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="22e00-118">Permissões</span><span class="sxs-lookup"><span data-stu-id="22e00-118">Permissions</span></span>
+<span data-ttu-id="22e00-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="22e00-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="37534-121">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="37534-121">Permission type</span></span>      | <span data-ttu-id="37534-122">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="37534-122">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="22e00-121">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="22e00-121">Permission type</span></span>      | <span data-ttu-id="22e00-122">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="22e00-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="37534-123">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="37534-123">Delegated (work or school account)</span></span> | <span data-ttu-id="37534-124">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="37534-124">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="37534-125">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="37534-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37534-126">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="37534-126">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="37534-127">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="37534-127">Application</span></span> | <span data-ttu-id="37534-128">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="37534-128">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="22e00-123">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="22e00-123">Delegated (work or school account)</span></span> | <span data-ttu-id="22e00-124">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="22e00-124">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="22e00-125">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="22e00-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="22e00-126">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="22e00-126">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="22e00-127">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="22e00-127">Application</span></span> | <span data-ttu-id="22e00-128">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="22e00-128">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="37534-129">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="37534-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="22e00-129">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="22e00-129">HTTP request</span></span>
 
-<span data-ttu-id="37534-130">Para obter todas as mensagens na caixa de correio do usuário:</span><span class="sxs-lookup"><span data-stu-id="37534-130">To get all the messages in a user's mailbox:</span></span>
+<span data-ttu-id="22e00-130">Para obter todas as mensagens na caixa de correio do usuário:</span><span class="sxs-lookup"><span data-stu-id="22e00-130">To get all the messages in a user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -46,7 +46,7 @@ GET /me/messages
 GET /users/{id | userPrincipalName}/messages
 ```
 
-<span data-ttu-id="37534-131">Para obter mensagens em uma pasta específica na caixa de correio do usuário:</span><span class="sxs-lookup"><span data-stu-id="37534-131">To get messages in a specific folder in the user's mailbox:</span></span>
+<span data-ttu-id="22e00-131">Para obter mensagens em uma pasta específica na caixa de correio do usuário:</span><span class="sxs-lookup"><span data-stu-id="22e00-131">To get messages in a specific folder in the user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -54,27 +54,40 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="37534-132">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="37534-132">Optional query parameters</span></span>
-<span data-ttu-id="37534-133">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="37534-133">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="37534-134">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="37534-134">Request headers</span></span>
-| <span data-ttu-id="37534-135">Nome</span><span class="sxs-lookup"><span data-stu-id="37534-135">Name</span></span>       | <span data-ttu-id="37534-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="37534-136">Type</span></span> | <span data-ttu-id="37534-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="37534-137">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="22e00-132">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="22e00-132">Optional query parameters</span></span>
+<span data-ttu-id="22e00-133">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="22e00-133">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+
+### <a name="using-filter-and-orderby-in-the-same-query"></a><span data-ttu-id="22e00-134">Uso de filtro e orderby na mesma consulta</span><span class="sxs-lookup"><span data-stu-id="22e00-134">Using filter and orderby in the same query</span></span>
+<span data-ttu-id="22e00-135">Ao usar `$filter` e `$orderby` na mesma consulta para obter mensagens, lembre-se de especificar as propriedades das seguintes maneiras:</span><span class="sxs-lookup"><span data-stu-id="22e00-135">When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:</span></span>
+
+1. <span data-ttu-id="22e00-136">As propriedades que aparecem em `$orderby` também devem aparecer em `$filter`.</span><span class="sxs-lookup"><span data-stu-id="22e00-136">Properties that appear in `$orderby` must also appear in `$filter`.</span></span> 
+2. <span data-ttu-id="22e00-137">As propriedades que aparecem em `$orderby` estão na mesma ordem que em `$filter`.</span><span class="sxs-lookup"><span data-stu-id="22e00-137">Properties that appear in `$orderby` are in the same order as in `$filter`.</span></span>
+3. <span data-ttu-id="22e00-138">As propriedades presentes em `$orderby` aparecem em `$filter` antes de qualquer propriedade que não esteja presente.</span><span class="sxs-lookup"><span data-stu-id="22e00-138">Properties that are present in `$orderby` appear in `$filter` before any properties that aren't.</span></span>
+
+<span data-ttu-id="22e00-139">Ao não fazer isso, o seguinte erro surge:</span><span class="sxs-lookup"><span data-stu-id="22e00-139">Failing to do this results in the following error:</span></span>
+
+- <span data-ttu-id="22e00-140">Código de erro: `InefficientFilter`</span><span class="sxs-lookup"><span data-stu-id="22e00-140">`InefficientFilter`</span></span>
+- <span data-ttu-id="22e00-141">Mensagem de erro: `The restriction or sort order is too complex for this operation.`</span><span class="sxs-lookup"><span data-stu-id="22e00-141">`The restriction or sort order is too complex for this operation.`</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="22e00-142">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="22e00-142">Request headers</span></span>
+| <span data-ttu-id="22e00-143">Nome</span><span class="sxs-lookup"><span data-stu-id="22e00-143">Name</span></span>       | <span data-ttu-id="22e00-144">Tipo</span><span class="sxs-lookup"><span data-stu-id="22e00-144">Type</span></span> | <span data-ttu-id="22e00-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="22e00-145">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="37534-138">Autorização</span><span class="sxs-lookup"><span data-stu-id="37534-138">Authorization</span></span>  | <span data-ttu-id="37534-139">string</span><span class="sxs-lookup"><span data-stu-id="37534-139">string</span></span>  | <span data-ttu-id="37534-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="37534-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="37534-142">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="37534-142">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="37534-143">string</span><span class="sxs-lookup"><span data-stu-id="37534-143">string</span></span> | <span data-ttu-id="37534-144">O formato das propriedades **body** e **uniqueBody** a serem retornadas.</span><span class="sxs-lookup"><span data-stu-id="37534-144">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="37534-145">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="37534-145">Values can be "text" or "html".</span></span> <span data-ttu-id="37534-146">Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="37534-146">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="37534-147">Opcional.</span><span class="sxs-lookup"><span data-stu-id="37534-147">Optional.</span></span> |
+| <span data-ttu-id="22e00-146">Autorização</span><span class="sxs-lookup"><span data-stu-id="22e00-146">Authorization</span></span>  | <span data-ttu-id="22e00-147">string</span><span class="sxs-lookup"><span data-stu-id="22e00-147">string</span></span>  | <span data-ttu-id="22e00-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="22e00-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="22e00-150">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="22e00-150">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="22e00-151">string</span><span class="sxs-lookup"><span data-stu-id="22e00-151">string</span></span> | <span data-ttu-id="22e00-152">O formato das propriedades **body** e **uniqueBody** a serem retornadas.</span><span class="sxs-lookup"><span data-stu-id="22e00-152">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="22e00-153">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="22e00-153">Values can be "text" or "html".</span></span> <span data-ttu-id="22e00-154">Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="22e00-154">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="22e00-155">Opcional.</span><span class="sxs-lookup"><span data-stu-id="22e00-155">Optional.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="37534-148">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="37534-148">Request body</span></span>
-<span data-ttu-id="37534-149">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="37534-149">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="22e00-156">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="22e00-156">Request body</span></span>
+<span data-ttu-id="22e00-157">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="22e00-157">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="37534-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="37534-150">Response</span></span>
+## <a name="response"></a><span data-ttu-id="22e00-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="22e00-158">Response</span></span>
 
-<span data-ttu-id="37534-151">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="37534-151">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
+<span data-ttu-id="22e00-159">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="22e00-159">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="37534-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="37534-152">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="37534-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="37534-153">Request</span></span>
-<span data-ttu-id="37534-154">Este exemplo obtém as 10 mensagens principais padrão na caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="37534-154">This example gets the default, top 10 messages in the signed-in user's mailbox.</span></span> <span data-ttu-id="37534-155">Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta.</span><span class="sxs-lookup"><span data-stu-id="37534-155">It uses `$select` to return a subset of the properties of each message in the response.</span></span>
+## <a name="example"></a><span data-ttu-id="22e00-160">Exemplo</span><span class="sxs-lookup"><span data-stu-id="22e00-160">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="22e00-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="22e00-161">Request</span></span>
+<span data-ttu-id="22e00-162">Este exemplo obtém as 10 mensagens principais padrão na caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="22e00-162">This example gets the default, top 10 messages in the signed-in user's mailbox.</span></span> <span data-ttu-id="22e00-163">Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta.</span><span class="sxs-lookup"><span data-stu-id="22e00-163">It uses `$select` to return a subset of the properties of each message in the response.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="37534-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="37534-156">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="22e00-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="22e00-164">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -82,26 +95,26 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="37534-157">C#</span><span class="sxs-lookup"><span data-stu-id="37534-157">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="22e00-165">C#</span><span class="sxs-lookup"><span data-stu-id="22e00-165">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="37534-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="37534-158">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="22e00-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="22e00-166">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="37534-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="37534-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="22e00-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="22e00-167">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="37534-160">Java</span><span class="sxs-lookup"><span data-stu-id="37534-160">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="22e00-168">Java</span><span class="sxs-lookup"><span data-stu-id="22e00-168">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="37534-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="37534-161">Response</span></span>
-<span data-ttu-id="37534-162">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="37534-162">Here is an example of the response.</span></span> <span data-ttu-id="37534-163">Para obter a próxima página de mensagens, aplique a URL retornada em `@odata.nextLink` a uma solicitação GET subsequente.</span><span class="sxs-lookup"><span data-stu-id="37534-163">To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.</span></span>
+##### <a name="response"></a><span data-ttu-id="22e00-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="22e00-169">Response</span></span>
+<span data-ttu-id="22e00-170">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="22e00-170">Here is an example of the response.</span></span> <span data-ttu-id="22e00-171">Para obter a próxima página de mensagens, aplique a URL retornada em `@odata.nextLink` a uma solicitação GET subsequente.</span><span class="sxs-lookup"><span data-stu-id="22e00-171">To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.</span></span>
 
 <!-- {
   "blockType": "response",
