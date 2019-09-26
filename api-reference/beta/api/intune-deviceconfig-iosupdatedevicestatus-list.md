@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 749b480fe65ff47b7092944872b140ceb2419fb6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d0668b33dd20a4b9eefe136b49650c349729ed1d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315663"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179107"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Listar iosUpdateDeviceStatuses
 
@@ -86,8 +86,6 @@ Content-Length: 708
   ]
 }
 ```
-
-
 
 
 

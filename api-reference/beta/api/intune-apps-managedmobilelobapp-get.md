@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f7441cfb8f682a88b10de3e78b42852d8d7fc9d9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 22b6b5cccbfb1d8f1be980f343fede0d30f78fd1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329499"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172881"
 ---
 # <a name="get-managedmobilelobapp"></a>Acessar managedMobileLobApp
 
@@ -105,8 +105,6 @@ Content-Length: 1153
   }
 }
 ```
-
-
 
 
 

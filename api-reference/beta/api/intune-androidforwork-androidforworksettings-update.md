@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ca117b860a29b18103380c28289e67f20ddfbf93
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 14f0b3a8d4b53e721d3ab623d14e5e756bd05b06
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325047"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174071"
 ---
 # <a name="update-androidforworksettings"></a>Atualizar androidForWorkSettings
 
@@ -114,8 +114,6 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
-
-
 
 
 

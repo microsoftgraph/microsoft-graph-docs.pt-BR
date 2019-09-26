@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 713950f2168aa31feb51d7912d95a70839917bbe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cbcc2f823e959b6a539b13cc7acf118119284eb2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330941"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173735"
 ---
 # <a name="list-enterprisecodesigningcertificates"></a>Listar enterpriseCodeSigningCertificates
 
@@ -82,8 +82,6 @@ Content-Length: 512
   ]
 }
 ```
-
-
 
 
 

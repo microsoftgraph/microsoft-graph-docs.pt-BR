@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a28f58cf611e45534e65e58e63556921ba87e926
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 052e9093bc1e29a7b988aef39546ad6d8ef39b23
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345537"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183468"
 ---
 # <a name="update-ndesconnector"></a>Atualizar ndesConnector
 
@@ -93,8 +93,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

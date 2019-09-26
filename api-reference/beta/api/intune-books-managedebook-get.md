@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7875fee093d4f7e50ab7c06b58bd66f94b2790b1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2bcbb31fb4b01a38ae95da41fd3f75d66f139e67
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335974"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171131"
 ---
 # <a name="get-managedebook"></a>Acessar managedEBook
 
@@ -88,8 +88,6 @@ Content-Length: 712
   }
 }
 ```
-
-
 
 
 

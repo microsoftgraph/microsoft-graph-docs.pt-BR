@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 33326cf9f7f5ef2bc04798e112c297e421d10741
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5f1776e85bffbe80626c6e2a06d63f1ed8d600aa
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328988"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172328"
 ---
 # <a name="get-officesuiteapp"></a>Obter officeSuiteApp
 
@@ -132,8 +132,6 @@ Content-Length: 1904
   }
 }
 ```
-
-
 
 
 

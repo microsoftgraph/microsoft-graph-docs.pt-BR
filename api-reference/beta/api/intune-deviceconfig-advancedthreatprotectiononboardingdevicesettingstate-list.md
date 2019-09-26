@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dbc2cbbb3eea354b7bf1207dad779e6292b931b0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2a778391a6cc71d380fe60ab2745268ed4c7b54e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312933"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170291"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>Listar advancedThreatProtectionOnboardingDeviceSettingStates
 
@@ -86,8 +86,6 @@ Content-Length: 711
   ]
 }
 ```
-
-
 
 
 

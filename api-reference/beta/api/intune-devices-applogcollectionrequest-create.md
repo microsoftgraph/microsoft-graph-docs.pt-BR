@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b59303a81f1db0437fa6e9824c5d73d4b6afe1a7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e0f744728c871ba8a15942951e895364dcb2e5df
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348918"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179408"
 ---
 # <a name="create-applogcollectionrequest"></a>Criar appLogCollectionRequest
 
@@ -100,8 +100,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
-
 
 
 

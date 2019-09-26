@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: caca487dcb87af6f0b33309d06007551104e99d0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f633e4bf5f1abbc990e49d70f18f211425ca4f54
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328269"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170935"
 ---
 # <a name="update-userinstallstatesummary"></a>Atualizar userInstallStateSummary
 
@@ -96,8 +96,6 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
-
-
 
 
 
