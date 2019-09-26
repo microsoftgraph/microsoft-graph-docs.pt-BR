@@ -1,0 +1,77 @@
+---
+title: tipo de recurso deviceConfigurationPolicySetItem
+description: Uma classe que contém as propriedades usadas para a configuração do dispositivo PolicySetItem.
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: 6e9cf097667451d5e1440a54ddfba26b0d6e563a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199655"
+---
+# <a name="deviceconfigurationpolicysetitem-resource-type"></a><span data-ttu-id="1deb7-103">tipo de recurso deviceConfigurationPolicySetItem</span><span class="sxs-lookup"><span data-stu-id="1deb7-103">deviceConfigurationPolicySetItem resource type</span></span>
+
+> <span data-ttu-id="1deb7-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1deb7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="1deb7-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1deb7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="1deb7-106">Uma classe que contém as propriedades usadas para a configuração do dispositivo PolicySetItem.</span><span class="sxs-lookup"><span data-stu-id="1deb7-106">A class containing the properties used for device configuration PolicySetItem.</span></span>
+
+
+<span data-ttu-id="1deb7-107">Herda de [policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="1deb7-107">Inherits from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>
+
+## <a name="methods"></a><span data-ttu-id="1deb7-108">Métodos</span><span class="sxs-lookup"><span data-stu-id="1deb7-108">Methods</span></span>
+|<span data-ttu-id="1deb7-109">Método</span><span class="sxs-lookup"><span data-stu-id="1deb7-109">Method</span></span>|<span data-ttu-id="1deb7-110">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="1deb7-110">Return Type</span></span>|<span data-ttu-id="1deb7-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="1deb7-111">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="1deb7-112">Listar deviceConfigurationPolicySetItems</span><span class="sxs-lookup"><span data-stu-id="1deb7-112">List deviceConfigurationPolicySetItems</span></span>](../api/intune-policyset-deviceconfigurationpolicysetitem-list.md)|<span data-ttu-id="1deb7-113">coleção [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="1deb7-113">[deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) collection</span></span>|<span data-ttu-id="1deb7-114">Listar Propriedades e relações dos objetos [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) .</span><span class="sxs-lookup"><span data-stu-id="1deb7-114">List properties and relationships of the [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) objects.</span></span>|
+|[<span data-ttu-id="1deb7-115">Obter deviceConfigurationPolicySetItem</span><span class="sxs-lookup"><span data-stu-id="1deb7-115">Get deviceConfigurationPolicySetItem</span></span>](../api/intune-policyset-deviceconfigurationpolicysetitem-get.md)|[<span data-ttu-id="1deb7-116">deviceConfigurationPolicySetItem</span><span class="sxs-lookup"><span data-stu-id="1deb7-116">deviceConfigurationPolicySetItem</span></span>](../resources/intune-policyset-deviceconfigurationpolicysetitem.md)|<span data-ttu-id="1deb7-117">Leia as propriedades e as relações do objeto [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) .</span><span class="sxs-lookup"><span data-stu-id="1deb7-117">Read properties and relationships of the [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) object.</span></span>|
+|[<span data-ttu-id="1deb7-118">Criar deviceConfigurationPolicySetItem</span><span class="sxs-lookup"><span data-stu-id="1deb7-118">Create deviceConfigurationPolicySetItem</span></span>](../api/intune-policyset-deviceconfigurationpolicysetitem-create.md)|[<span data-ttu-id="1deb7-119">deviceConfigurationPolicySetItem</span><span class="sxs-lookup"><span data-stu-id="1deb7-119">deviceConfigurationPolicySetItem</span></span>](../resources/intune-policyset-deviceconfigurationpolicysetitem.md)|<span data-ttu-id="1deb7-120">Criar um novo objeto [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) .</span><span class="sxs-lookup"><span data-stu-id="1deb7-120">Create a new [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) object.</span></span>|
+|[<span data-ttu-id="1deb7-121">Excluir deviceConfigurationPolicySetItem</span><span class="sxs-lookup"><span data-stu-id="1deb7-121">Delete deviceConfigurationPolicySetItem</span></span>](../api/intune-policyset-deviceconfigurationpolicysetitem-delete.md)|<span data-ttu-id="1deb7-122">Nenhum</span><span class="sxs-lookup"><span data-stu-id="1deb7-122">None</span></span>|<span data-ttu-id="1deb7-123">Exclui [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md).</span><span class="sxs-lookup"><span data-stu-id="1deb7-123">Deletes a [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md).</span></span>|
+|[<span data-ttu-id="1deb7-124">Atualizar deviceConfigurationPolicySetItem</span><span class="sxs-lookup"><span data-stu-id="1deb7-124">Update deviceConfigurationPolicySetItem</span></span>](../api/intune-policyset-deviceconfigurationpolicysetitem-update.md)|[<span data-ttu-id="1deb7-125">deviceConfigurationPolicySetItem</span><span class="sxs-lookup"><span data-stu-id="1deb7-125">deviceConfigurationPolicySetItem</span></span>](../resources/intune-policyset-deviceconfigurationpolicysetitem.md)|<span data-ttu-id="1deb7-126">Atualiza as propriedades de um objeto [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) .</span><span class="sxs-lookup"><span data-stu-id="1deb7-126">Update the properties of a [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="1deb7-127">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1deb7-127">Properties</span></span>
+|<span data-ttu-id="1deb7-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1deb7-128">Property</span></span>|<span data-ttu-id="1deb7-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="1deb7-129">Type</span></span>|<span data-ttu-id="1deb7-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="1deb7-130">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="1deb7-131">id</span><span class="sxs-lookup"><span data-stu-id="1deb7-131">id</span></span>|<span data-ttu-id="1deb7-132">String</span><span class="sxs-lookup"><span data-stu-id="1deb7-132">String</span></span>|<span data-ttu-id="1deb7-133">Chave do MobileAppPolicySetItem.</span><span class="sxs-lookup"><span data-stu-id="1deb7-133">Key of the MobileAppPolicySetItem.</span></span> <span data-ttu-id="1deb7-134">Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="1deb7-134">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="1deb7-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="1deb7-135">createdDateTime</span></span>|<span data-ttu-id="1deb7-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1deb7-136">DateTimeOffset</span></span>|<span data-ttu-id="1deb7-137">Hora de criação do PolicySetItem.</span><span class="sxs-lookup"><span data-stu-id="1deb7-137">Creation time of the PolicySetItem.</span></span> <span data-ttu-id="1deb7-138">Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="1deb7-138">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="1deb7-139">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="1deb7-139">lastModifiedDateTime</span></span>|<span data-ttu-id="1deb7-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1deb7-140">DateTimeOffset</span></span>|<span data-ttu-id="1deb7-141">Hora da última modificação do PolicySetItem.</span><span class="sxs-lookup"><span data-stu-id="1deb7-141">Last modified time of the PolicySetItem.</span></span> <span data-ttu-id="1deb7-142">Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="1deb7-142">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="1deb7-143">payloadId</span><span class="sxs-lookup"><span data-stu-id="1deb7-143">payloadId</span></span>|<span data-ttu-id="1deb7-144">String</span><span class="sxs-lookup"><span data-stu-id="1deb7-144">String</span></span>|<span data-ttu-id="1deb7-145">PayloadId do PolicySetItem.</span><span class="sxs-lookup"><span data-stu-id="1deb7-145">PayloadId of the PolicySetItem.</span></span> <span data-ttu-id="1deb7-146">Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="1deb7-146">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="1deb7-147">itemType</span><span class="sxs-lookup"><span data-stu-id="1deb7-147">itemType</span></span>|<span data-ttu-id="1deb7-148">String</span><span class="sxs-lookup"><span data-stu-id="1deb7-148">String</span></span>|<span data-ttu-id="1deb7-149">policySetType do PolicySetItem.</span><span class="sxs-lookup"><span data-stu-id="1deb7-149">policySetType of the PolicySetItem.</span></span> <span data-ttu-id="1deb7-150">Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="1deb7-150">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="1deb7-151">displayName</span><span class="sxs-lookup"><span data-stu-id="1deb7-151">displayName</span></span>|<span data-ttu-id="1deb7-152">String</span><span class="sxs-lookup"><span data-stu-id="1deb7-152">String</span></span>|<span data-ttu-id="1deb7-153">DisplayName do PolicySetItem.</span><span class="sxs-lookup"><span data-stu-id="1deb7-153">DisplayName of the PolicySetItem.</span></span> <span data-ttu-id="1deb7-154">Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="1deb7-154">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="1deb7-155">status</span><span class="sxs-lookup"><span data-stu-id="1deb7-155">status</span></span>|[<span data-ttu-id="1deb7-156">policySetStatus</span><span class="sxs-lookup"><span data-stu-id="1deb7-156">policySetStatus</span></span>](../resources/intune-policyset-policysetstatus.md)|<span data-ttu-id="1deb7-157">Status do PolicySetItem.</span><span class="sxs-lookup"><span data-stu-id="1deb7-157">Status of the PolicySetItem.</span></span> <span data-ttu-id="1deb7-158">Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md).</span><span class="sxs-lookup"><span data-stu-id="1deb7-158">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md).</span></span> <span data-ttu-id="1deb7-159">Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="1deb7-159">Possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.</span></span>|
+|<span data-ttu-id="1deb7-160">errorCode</span><span class="sxs-lookup"><span data-stu-id="1deb7-160">errorCode</span></span>|[<span data-ttu-id="1deb7-161">errorCode</span><span class="sxs-lookup"><span data-stu-id="1deb7-161">errorCode</span></span>](../resources/intune-policyset-errorcode.md)|<span data-ttu-id="1deb7-162">Código de erro, caso algum tenha ocorrido.</span><span class="sxs-lookup"><span data-stu-id="1deb7-162">Error code if any occured.</span></span> <span data-ttu-id="1deb7-163">Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md).</span><span class="sxs-lookup"><span data-stu-id="1deb7-163">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md).</span></span> <span data-ttu-id="1deb7-164">Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.</span><span class="sxs-lookup"><span data-stu-id="1deb7-164">Possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.</span></span>|
+|<span data-ttu-id="1deb7-165">guidedDeploymentTags</span><span class="sxs-lookup"><span data-stu-id="1deb7-165">guidedDeploymentTags</span></span>|<span data-ttu-id="1deb7-166">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="1deb7-166">String collection</span></span>|<span data-ttu-id="1deb7-167">Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="1deb7-167">Tags of the guided deployment Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="1deb7-168">Relações</span><span class="sxs-lookup"><span data-stu-id="1deb7-168">Relationships</span></span>
+<span data-ttu-id="1deb7-169">Nenhum</span><span class="sxs-lookup"><span data-stu-id="1deb7-169">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="1deb7-170">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1deb7-170">JSON Representation</span></span>
+<span data-ttu-id="1deb7-171">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1deb7-171">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceConfigurationPolicySetItem"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceConfigurationPolicySetItem",
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "payloadId": "String",
+  "itemType": "String",
+  "displayName": "String",
+  "status": "String",
+  "errorCode": "String",
+  "guidedDeploymentTags": [
+    "String"
+  ]
+}
+```
+
+
+
