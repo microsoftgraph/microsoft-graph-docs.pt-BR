@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0da3be674c537859dccb4f3745dca2c863a39955
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 981b7878ba5263df99013c05d5f508db7b8d51f6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348281"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185494"
 ---
 # <a name="get-depenrollmentprofile"></a>Obter depEnrollmentProfile
 
@@ -111,8 +111,6 @@ Content-Length: 1498
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ac112c970fd05f7c697402d3cb3a14782890c7fe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1de6311ca96a4c46e31f5a3fd0711bab20d10116
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372122"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196760"
 ---
 # <a name="remoteaction-enum-type"></a>tipo de enumeração remoteaction
 
@@ -42,6 +42,7 @@ As ações remotas do Intune dão suporte.
 |updateDeviceAccount|dezesseis|O usuário inicia uma ação para atualizar a conta no dispositivo.|
 |automaticRedeployment|17.07.06|O usuário inicia uma ação para automático reimplantar o dispositivo|
 |Parada|anos|O usuário inicia uma ação para desligar o dispositivo.|
+|rotateBitLockerKeys|19|O usuário inicia uma ação para girar o BitLockerKeys no dispositivo.|
 |rotateFileVaultKey|508|O usuário inicia uma ação para girar o FileVaultKey no Mac.|
 |getFileVaultKey|21|O usuário inicia uma ação para obter o FileVaultKey no Mac.|
 |DeviceName|22|O usuário inicia uma ação para definir o nome do dispositivo no dispositivo.|

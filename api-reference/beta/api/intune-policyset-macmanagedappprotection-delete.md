@@ -1,34 +1,33 @@
 ---
-title: função managedDeviceEnrollmentFailureTrends
-description: Metadados para o relatório de tendências de falha de inscrição
+title: Excluir macManagedAppProtection
+description: Exclui macManagedAppProtection.
 author: rolyon
 localization_priority: Normal
-ms.prod: intune
+ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0bc399ef4e4c79fc1088300035bfd81796f9843b
+ms.openlocfilehash: 02222fc8ed977ec880939e10e43d01661190394e
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194457"
+ms.locfileid: "37191793"
 ---
-# <a name="manageddeviceenrollmentfailuretrends-function"></a>função managedDeviceEnrollmentFailureTrends
+# <a name="delete-macmanagedappprotection"></a>Excluir macManagedAppProtection
 
-> **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Metadados para o relatório de tendências de falha de inscrição
+Exclui [macManagedAppProtection](../resources/intune-policyset-macmanagedappprotection.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
-| &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
-| &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -36,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /reports/managedDeviceEnrollmentFailureTrends
+DELETE /deviceAppManagement/macManagedAppProtections/{macManagedAppProtectionId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,32 +48,21 @@ GET /reports/managedDeviceEnrollmentFailureTrends
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e um [relatório](../resources/intune-shared-report.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/macManagedAppProtections/{macManagedAppProtectionId}
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 123
-
-{
-  "value": {
-    "@odata.type": "microsoft.graph.report",
-    "content": "<Unknown Primitive Type Edm.Stream>"
-  }
-}
+HTTP/1.1 204 No Content
 ```
-
-
-
 
 
 

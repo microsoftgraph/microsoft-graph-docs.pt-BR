@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba37c1e9a518e94ae880e4ff269dd44c9aa57018
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c858acfbe2680efae49867920c434ba69d462a5e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343710"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185991"
 ---
 # <a name="compare-function"></a>função compare
 
@@ -86,8 +86,6 @@ Content-Length: 364
   ]
 }
 ```
-
-
 
 
 

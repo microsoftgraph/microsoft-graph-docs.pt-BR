@@ -1,24 +1,24 @@
 ---
-title: Listar deviceManagementStringSettingInstances
-description: Listar Propriedades e relações dos objetos deviceManagementStringSettingInstance.
+title: Listar managedDeviceMobileAppConfigurationPolicySetItems
+description: Listar Propriedades e relações dos objetos managedDeviceMobileAppConfigurationPolicySetItem.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cca4c35d5d7d93367fa87a0ad05a08e0493baad1
+ms.openlocfilehash: a22df26e588e3ac4d7180050469d6833d4515eb7
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37189078"
+ms.locfileid: "37191771"
 ---
-# <a name="list-devicemanagementstringsettinginstances"></a>Listar deviceManagementStringSettingInstances
+# <a name="list-manageddevicemobileappconfigurationpolicysetitems"></a>Listar managedDeviceMobileAppConfigurationPolicySetItems
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [deviceManagementStringSettingInstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) .
+Listar Propriedades e relações dos objetos [managedDeviceMobileAppConfigurationPolicySetItem](../resources/intune-policyset-manageddevicemobileappconfigurationpolicysetitem.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,10 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/intents/{deviceManagementIntentId}/settings
-GET /deviceManagement/templates/{deviceManagementTemplateId}/settings
-GET /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceManagementIntentSettingCategoryId}/settings
-GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceManagementTemplateSettingCategoryId}/recommendedSettings
+GET /deviceAppManagement/policySets/{policySetId}/items
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -51,14 +48,14 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceManagementStringSettingInstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [managedDeviceMobileAppConfigurationPolicySetItem](../resources/intune-policyset-manageddevicemobileappconfigurationpolicysetitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/settings
+GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items
 ```
 
 ### <a name="response"></a>Resposta
@@ -66,16 +63,23 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 286
+Content-Length: 583
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.deviceManagementStringSettingInstance",
-      "id": "fef30638-0638-fef3-3806-f3fe3806f3fe",
-      "definitionId": "Definition Id value",
-      "valueJson": "Value Json value",
-      "value": "Value value"
+      "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationPolicySetItem",
+      "id": "bb065442-5442-bb06-4254-06bb425406bb",
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "payloadId": "Payload Id value",
+      "itemType": "Item Type value",
+      "displayName": "Display Name value",
+      "status": "validating",
+      "errorCode": "unauthorized",
+      "guidedDeploymentTags": [
+        "Guided Deployment Tags value"
+      ]
     }
   ]
 }

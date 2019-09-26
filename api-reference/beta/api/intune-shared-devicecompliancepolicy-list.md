@@ -1,33 +1,37 @@
 ---
-title: Listar groupPolicyPresentationLongDecimalTextBoxes
-description: Listar Propriedades e relações dos objetos groupPolicyPresentationLongDecimalTextBox.
+title: Listar deviceCompliancePolicies
+description: Listar propriedades e relações dos objetos deviceCompliancePolicy.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a729fdfb552e2f88e29c37ae78e6eed5afbea68
+ms.openlocfilehash: f74e59746e30dd4da6153acb268b3cf47bc64d87
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194156"
+ms.locfileid: "37199463"
 ---
-# <a name="list-grouppolicypresentationlongdecimaltextboxes"></a>Listar groupPolicyPresentationLongDecimalTextBoxes
+# <a name="list-devicecompliancepolicies"></a>Listar deviceCompliancePolicies
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .
+Listar propriedades e relações dos objetos [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegado (conta corporativa ou de estudante)||
+| &nbsp; &nbsp; **Configuração do dispositivo**  | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Aplicativo||
+| &nbsp; &nbsp; **Configuração do dispositivo**  | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +39,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
+GET /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -48,14 +52,14 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
+GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 ```
 
 ### <a name="response"></a>Resposta
@@ -63,21 +67,21 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 411
+Content-Length: 467
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.groupPolicyPresentationLongDecimalTextBox",
-      "label": "Label value",
-      "id": "754d8495-8495-754d-9584-4d7595844d75",
+      "@odata.type": "#microsoft.graph.deviceCompliancePolicy",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "id": "4214b716-b716-4214-16b7-144216b71442",
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "description": "Description value",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "defaultValue": 12,
-      "spin": true,
-      "spinStep": 8,
-      "required": true,
-      "minValue": 8,
-      "maxValue": 8
+      "displayName": "Display Name value",
+      "version": 7
     }
   ]
 }

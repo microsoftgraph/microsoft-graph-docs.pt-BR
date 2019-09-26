@@ -1,18 +1,18 @@
 ---
-title: função getLicensesForApp
+title: atribuir ação
 description: Ainda não documentado
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d54b1e6ab9c4bec1e290d820f44d61935d8941b9
+ms.openlocfilehash: 48c6522b5f3af6948f672fa4a044a9e2670edef4
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190191"
+ms.locfileid: "37199469"
 ---
-# <a name="getlicensesforapp-function"></a>função getLicensesForApp
+# <a name="assign-action"></a>atribuir ação
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,9 +25,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegado (conta corporativa ou de estudante)||
+| &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Aplicativo||
+| &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceAppManagement/vppTokens/getLicensesForApp
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,24 +47,40 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
-A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
+No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+
+A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|bundleId|String|Ainda não documentado|
+|assignments|Coleção [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção [vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/getLicensesForApp(bundleId='parameterValue')
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
+
+Content-type: application/json
+Content-length: 280
+
+{
+  "assignments": [
+    {
+      "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
+      "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
+    }
+  ]
+}
 ```
 
 ### <a name="response"></a>Resposta
@@ -70,17 +88,16 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 298
+Content-Length: 274
 
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.vppTokenLicenseSummary",
-      "vppTokenId": "Vpp Token Id value",
-      "appleId": "Apple Id value",
-      "organizationName": "Organization Name value",
-      "availableLicenseCount": 5,
-      "usedLicenseCount": 0
+      "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
+      "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
     }
   ]
 }
