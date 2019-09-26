@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b948df68c5bf1e9467c66e7a4c326e14dd036f8
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: a605c0f868eab3deabbc854b27d62cc9e97769b1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699520"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194576"
 ---
 # <a name="create-devicemanagementderivedcredentialsettings"></a>Criar deviceManagementDerivedCredentialSettings
 
@@ -98,6 +98,7 @@ Content-Length: 290
   "notificationType": "companyPortal"
 }
 ```
+
 
 
 

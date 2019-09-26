@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 57c26411158bc9b7ae147f31fedaa3fadded175c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9334fe0fd1464a89d07d9615175d08c75db3e231
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347623"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194915"
 ---
 # <a name="list-rolescopetagautoassignments"></a>Listar roleScopeTagAutoAssignments
 
@@ -77,8 +77,6 @@ Content-Length: 268
   ]
 }
 ```
-
-
 
 
 

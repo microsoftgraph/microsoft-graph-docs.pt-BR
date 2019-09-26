@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ee011d8013124b4880afa2a4d809cdba74c51826
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9b216cfd64c807b4d2ca520d201a716ec1c7f400
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351494"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189589"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>Excluir deviceAndAppManagementRoleDefinition
 
@@ -64,8 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

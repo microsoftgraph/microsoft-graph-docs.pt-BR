@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bd642e45ee58563a3effe852c87fd893745502c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 76cba42e9b6c4645f872d55bf1f298f39cd8e59d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351123"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195017"
 ---
 # <a name="hascustomrolescopetag-function"></a>função hasCustomRoleScopeTag
 
@@ -70,8 +70,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
-
 
 
 

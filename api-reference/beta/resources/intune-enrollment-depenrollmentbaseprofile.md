@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 611df6a0aff2c2d3c0d6728aa9bbaa443d772a35
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0698380f3fb69323275a8c2db3725ddb741f2151
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328064"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196613"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>tipo de recurso depEnrollmentBaseProfile
 
@@ -57,6 +57,7 @@ Herda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md
 |diagnosticsDisabled|Booliano|Indica se o painel de configuração de diagnóstico está desabilitado|
 |displayToneSetupDisabled|Booliano|Indica se a tela de configuração do displaytone está desabilitada|
 |privacyPaneDisabled|Booliano|Indica se a tela de privacidade está desabilitada|
+|screenTimeScreenDisabled|Booliano|Indica se a configuração de tempo limite da tela está desabilitada|
 |deviceNameTemplate|String|Define um padrão literal ou de nome.|
 
 ## <a name="relationships"></a>Relações
@@ -98,6 +99,7 @@ Veja a seguir uma representação JSON do recurso.
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "String"
 }
 ```

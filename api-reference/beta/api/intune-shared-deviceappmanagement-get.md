@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f6a6e8e58167cd9471802be39f9e7d6c1744040e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 05f00a82ab42c5fb681b5c23bc7fbbee39031ebe
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350990"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194772"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -27,10 +27,12 @@ Uma das seguintes permissões é necessária para chamar esta API. Para saber ma
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 | Delegado (conta corporativa ou de estudante) | |
-| &nbsp;&nbsp; **Aplicativos**, **livros**, **** **integração ou integração com parceiros** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
+| &nbsp;&nbsp; **Aplicativos**, **livros**, **** integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
 | &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo| |
+| &nbsp;&nbsp; **Aplicativos**, **livros**, **** integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -86,6 +88,7 @@ Content-Length: 133
   }
 }
 ```
+
 
 
 

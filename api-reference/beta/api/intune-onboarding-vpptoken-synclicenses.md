@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fb03c5de29892de1854e1c5678e9bb54cf69d628
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c71071a90066d349cba8a204ee3d2401692e5462
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352256"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190142"
 ---
 # <a name="synclicenses-action"></a>ação syncLicenses
 
@@ -99,8 +99,6 @@ Content-Length: 1192
   }
 }
 ```
-
-
 
 
 

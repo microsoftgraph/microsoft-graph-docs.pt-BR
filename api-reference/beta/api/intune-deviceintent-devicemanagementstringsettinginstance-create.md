@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0b9c28944be5c816940fa4f9154bb8411bd0644
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 16ec9bf392f9ac5a821dc88a2d5cf5f4e9ec1dc4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343192"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189211"
 ---
 # <a name="create-devicemanagementstringsettinginstance"></a>Criar deviceManagementStringSettingInstance
 
@@ -96,8 +96,6 @@ Content-Length: 233
   "value": "Value value"
 }
 ```
-
-
 
 
 

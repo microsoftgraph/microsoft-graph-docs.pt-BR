@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0af460223c8d099305949800a2448cc48e3da06c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: faf43531e1ae0b44fc62bbc684ef8080910cf2f1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353404"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191390"
 ---
 # <a name="list-windowsinformationprotectionpolicies"></a>Listar windowsInformationProtectionPolicies
 
@@ -212,8 +212,6 @@ Content-Length: 5232
   ]
 }
 ```
-
-
 
 
 

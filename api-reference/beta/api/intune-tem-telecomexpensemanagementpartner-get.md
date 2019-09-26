@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 44a94f7d68b02a846b59e3e3e9bc36bdd02eeb18
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f84a342938214e27fcc90330b743263b765ae7f4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350346"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195619"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>Obter telecomExpenseManagementPartner
 
@@ -80,8 +80,6 @@ Content-Length: 330
   }
 }
 ```
-
-
 
 
 

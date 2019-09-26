@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2640ea1cbc683c2751c6e5713afe51bedbf411c9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c69f967961fd7149e5a72ff98ba12afe0038285a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344088"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186320"
 ---
 # <a name="list-windowswificonfigurations"></a>Listar windowsWifiConfigurations
 
@@ -118,8 +118,6 @@ Content-Length: 1944
   ]
 }
 ```
-
-
 
 
 

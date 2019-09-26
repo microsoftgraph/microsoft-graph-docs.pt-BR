@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c26804efa6c1deb7ff34a718994e5c17a08bb21
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 17cb12856a0f033773b24522a029c52cd3c2bb5a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338263"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186549"
 ---
 # <a name="delete-windowsprivacydataaccesscontrolitem"></a>Excluir windowsPrivacyDataAccessControlItem
 
@@ -63,8 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

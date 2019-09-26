@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f853a38d4d95a047bd899a05d7b4333b15affbf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 03d1d653dc66d58db26ef3ad897eb5af570b402d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348960"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188848"
 ---
 # <a name="get-securitybaselinetemplate"></a>Obter securityBaselineTemplate
 
@@ -83,8 +83,6 @@ Content-Length: 420
   }
 }
 ```
-
-
 
 
 

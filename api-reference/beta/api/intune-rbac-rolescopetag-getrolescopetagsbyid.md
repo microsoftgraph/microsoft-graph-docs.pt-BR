@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3eed617bf91294a426e9b255c8bbad5bbdc6f62a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bb79dedc9bf6d00869c49bbcd6c5eaa3282b6249
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351130"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194996"
 ---
 # <a name="getrolescopetagsbyid-action"></a>ação getRoleScopeTagsById
 
@@ -95,8 +95,6 @@ Content-Length: 257
   ]
 }
 ```
-
-
 
 
 

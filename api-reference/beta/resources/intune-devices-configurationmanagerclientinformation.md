@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae7d36b353b989d4256294872fba4c4f225d2668
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b329d017aaf9f7d26d76f74198b2c5508e97ae2c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371454"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196977"
 ---
 # <a name="configurationmanagerclientinformation-resource-type"></a>tipo de recurso configurationManagerClientInformation
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b18962c5ac51a1e6d287ea009c1dc2f4be65bdef
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1f018fa400f9fac21222a546a58eb2ca41738353
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354048"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193105"
 ---
 # <a name="list-managedappstatusraws"></a>Listar managedAppStatusRaws
 
@@ -79,8 +79,6 @@ Content-Length: 307
   ]
 }
 ```
-
-
 
 
 

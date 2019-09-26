@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dde0c02589fbf2d98d53eefa8b82c41c1f71f5c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 666d993a845f581a89eb5ac0168f3ad44029fa70
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353964"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37192993"
 ---
 # <a name="update-managedmobileapp"></a>Atualizar managedMobileApp
 
@@ -97,8 +97,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
-
 
 
 

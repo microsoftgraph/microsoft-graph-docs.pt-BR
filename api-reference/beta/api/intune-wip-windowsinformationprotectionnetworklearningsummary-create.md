@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7515ba1890a006d85897d9d614471ee8bd5ca524
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3384a6f048d49ddf65898a23acd0e513230b2f6a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350101"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195101"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Criar windowsInformationProtectionNetworkLearningSummary
 
@@ -90,8 +90,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
-
 
 
 

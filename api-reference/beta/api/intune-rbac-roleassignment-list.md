@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd6beda72df1ed248a029b74cfa4d44797a092bf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c6edec0c48d86c37085e022f61a111f8bc9315cd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351319"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189428"
 ---
 # <a name="list-roleassignments"></a>Listar roleAssignments
 
@@ -83,8 +83,6 @@ Content-Length: 403
   ]
 }
 ```
-
-
 
 
 

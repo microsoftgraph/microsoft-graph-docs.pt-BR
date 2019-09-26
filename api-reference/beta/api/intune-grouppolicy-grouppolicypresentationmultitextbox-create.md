@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d925fc10c76eef331951616a3cd15b281ec13622
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b74e17f47200184a75e35b95f07ed5d8d89c84af
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357723"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194163"
 ---
 # <a name="create-grouppolicypresentationmultitextbox"></a>Criar groupPolicyPresentationMultiTextBox
 
@@ -98,8 +98,6 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
-
-
 
 
 

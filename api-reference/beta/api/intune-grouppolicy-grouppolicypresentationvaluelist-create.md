@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c6806b7d79de9359e6eb9553ef3835af7659378a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b078e5e5734d2174348f0f7846d0dd4fc31716e4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357562"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193799"
 ---
 # <a name="create-grouppolicypresentationvaluelist"></a>Criar groupPolicyPresentationValueList
 
@@ -103,8 +103,6 @@ Content-Length: 394
   ]
 }
 ```
-
-
 
 
 

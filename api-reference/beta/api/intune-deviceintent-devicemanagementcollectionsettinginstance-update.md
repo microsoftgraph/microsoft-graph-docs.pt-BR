@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 03f7dab52b81d7c541352df09507ad2ca62a8af3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e11ed8812574e78c301329c7b2c4a9cc6b6d4b5b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343850"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186124"
 ---
 # <a name="update-devicemanagementcollectionsettinginstance"></a>Atualizar deviceManagementCollectionSettingInstance
 
@@ -93,8 +93,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
-
 
 
 

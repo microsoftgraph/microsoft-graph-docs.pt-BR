@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e75c913fc0972f16a08807af71d24a3fd02a1e65
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 192bfe4db38eb683108e1bdbe41c49bd3c97acc5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310357"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188581"
 ---
 # <a name="get-devicemanagementscriptdevicestate"></a>Obter deviceManagementScriptDeviceState
 
@@ -85,8 +85,6 @@ Content-Length: 678
   }
 }
 ```
-
-
 
 
 

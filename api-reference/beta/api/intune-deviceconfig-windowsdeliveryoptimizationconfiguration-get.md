@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f5bab40fd630220e18544979d0523b66eba90ad5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 00c6ec20d7b81cd2ad3e1c89d2ccd8bdcb13f38c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344578"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186852"
 ---
 # <a name="get-windowsdeliveryoptimizationconfiguration"></a>Obter windowsDeliveryOptimizationConfiguration
 
@@ -132,8 +132,6 @@ Content-Length: 2344
   }
 }
 ```
-
-
 
 
 
