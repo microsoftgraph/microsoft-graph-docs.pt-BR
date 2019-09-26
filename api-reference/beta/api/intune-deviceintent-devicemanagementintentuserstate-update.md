@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 497fa806452b3fac726ea377411e7e05e9c4edff
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a9828be229e824426b19bb2a91b9fb586df5aad8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343423"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180766"
 ---
 # <a name="update-devicemanagementintentuserstate"></a>Atualizar deviceManagementIntentUserState
 
@@ -99,8 +99,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
-
 
 
 

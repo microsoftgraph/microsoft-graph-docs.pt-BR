@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a503d48bdf5e8b72b33d2e2ff09c5db385d241f7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b9ac1cfcad14ab52681310fd69499e92ba43cf29
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336478"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172517"
 ---
 # <a name="update-mobileappinstallsummary"></a>Atualizar mobileAppInstallSummary
 
@@ -114,8 +114,6 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
-
-
 
 
 

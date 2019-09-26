@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e57bdc4c7e21300b67d452d9feeee7a021813255
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b3be4aa4859848a7effaa56a83cc06351f96b7f0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339229"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174386"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Listar iosGeneralDeviceConfigurations
 
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11698
+Content-Length: 11797
 
 {
   "value": [
@@ -209,6 +209,8 @@ Content-Length: 11698
       "kioskModeBlockSleepButton": true,
       "kioskModeAllowTouchscreen": true,
       "kioskModeBlockTouchscreen": true,
+      "kioskModeEnableVoiceControl": true,
+      "kioskModeAllowVoiceControlModification": true,
       "kioskModeAllowVoiceOverSettings": true,
       "kioskModeAllowVolumeButtons": true,
       "kioskModeBlockVolumeButtons": true,
@@ -358,8 +360,6 @@ Content-Length: 11698
   ]
 }
 ```
-
-
 
 
 

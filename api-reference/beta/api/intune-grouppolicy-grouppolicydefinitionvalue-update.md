@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64b2c6d3ccf8d3fc462c8d3f0df33116c9de5462
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4213f3825d9f78baf8966dc905fb9a28ec6bdda8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355021"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179730"
 ---
 # <a name="update-grouppolicydefinitionvalue"></a>Atualizar groupPolicyDefinitionValue
 
@@ -95,8 +95,6 @@ Content-Length: 298
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 
