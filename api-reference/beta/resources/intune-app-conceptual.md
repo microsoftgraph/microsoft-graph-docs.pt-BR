@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0af6b2070b7438aee2f4efcdb9661cf37a265cd9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 48ba27d74160c3c9402efb7590c6ff0a7e809ce8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366200"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199364"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -45,6 +45,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Esquema de configuração do aplicativo do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Item de esquema de configuração do aplicativo do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Tipo de dados do item de esquema de configuração do aplicativo do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Aplicativo Web do repositório gerenciado do Android](intune-apps-androidmanagedstorewebapp.md)
 - [Sistema operacional mínimo do Android](intune-apps-androidminimumoperatingsystem.md)
 - [Ação de permissão do Android](intune-apps-androidpermissionaction.md)
 - [Tipo de ação de permissão do Android](intune-apps-androidpermissionactiontype.md)
@@ -59,18 +60,14 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Estado de instalação](intune-books-installstate.md)
 - [Tipo de dispositivo iOS](intune-apps-iosdevicetype.md)
 - [Aplicativo LOB do iOS](intune-apps-ioslobapp.md)
-- [Configurações de atribuição do aplicativo LOB do iOS](intune-apps-ioslobappassignmentsettings.md)
-- [Configuração de provisionamento do aplicativo LOB do iOS](intune-apps-ioslobappprovisioningconfiguration.md)
 - [Atribuição da configuração de provisionamento do aplicativo LOB do iOS](intune-apps-ioslobappprovisioningconfigurationassignment.md)
 - [Sistema operacional mínimo do iOS](intune-apps-iosminimumoperatingsystem.md)
 - [configuração do aplicativo móvel do iOS](intune-apps-iosmobileappconfiguration.md)
 - [Aplicativo da loja iOS](intune-apps-iosstoreapp.md)
-- [Configurações de atribuição de aplicativo da loja iOS](intune-apps-iosstoreappassignmentsettings.md)
 - [Aplicativo VPP do iOS](intune-apps-iosvppapp.md)
 - [Licença do dispositivo atribuída ao aplicativo do VPP do iOS](intune-apps-iosvppappassigneddevicelicense.md)
 - [Licença atribuída ao aplicativo do VPP do iOS](intune-apps-iosvppappassignedlicense.md)
 - [Licença do usuário atribuída ao aplicativo do VPP do iOS](intune-apps-iosvppappassigneduserlicense.md)
-- [Configurações de atribuição do aplicativo VPP do iOS](intune-apps-iosvppappassignmentsettings.md)
 - [Resultado da ação de revogar licenças de aplicativo do VPP do iOS](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Livro eletrônico do VPP do iOS](intune-books-iosvppebook.md)
 - [Atribuição de livros eletrônicos do VPP do iOS](intune-books-iosvppebookassignment.md)
@@ -80,7 +77,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Aplicativo do macOS Office Suite](intune-apps-macosofficesuiteapp.md)
 - [Aplicativo VPP do macOS](intune-apps-macosvppapp.md)
 - [Licença atribuída ao aplicativo do VPP do macOS](intune-apps-macosvppappassignedlicense.md)
-- [Configurações de atribuição do aplicativo VPP do macOS](intune-apps-macosvppappassignmentsettings.md)
 - [Resultado da ação de revogar licenças de aplicativo do VPP do macOS](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [Aplicativo LOB do android gerenciado](intune-apps-managedandroidlobapp.md)
 - [Aplicativo da loja do android gerenciado](intune-apps-managedandroidstoreapp.md)
@@ -100,12 +96,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Aplicativo LOB móvel gerenciado](intune-apps-managedmobilelobapp.md)
 - [Tipo de chave de configuração do aplicativo MDM](intune-apps-mdmappconfigkeytype.md)
 - [Aplicativo da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinessapp.md)
-- [Configurações de atribuição do aplicativo da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
 - [Aplicativo contido da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [Tipo de licença da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinesslicensetype.md)
-- [Aplicativo móvel](intune-apps-mobileapp.md)
 - [Atribuição de aplicativos móveis](intune-apps-mobileappassignment.md)
-- [Configurações de atribuição de aplicativo móvel](intune-apps-mobileappassignmentsettings.md)
 - [Categoria de aplicativo móvel](intune-apps-mobileappcategory.md)
 - [Conteúdo do aplicativo móvel](intune-apps-mobileappcontent.md)
 - [Arquivo de conteúdo do aplicativo móvel](intune-apps-mobileappcontentfile.md)
@@ -138,7 +131,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de licenciamento do VPP](intune-apps-vpplicensingtype.md)
 - [Aplicativo Web](intune-apps-webapp.md)
 - [Aplicativo LOB do Win32](intune-apps-win32lobapp.md)
-- [Configurações de atribuição do aplicativo LOB do Win32](intune-apps-win32lobappassignmentsettings.md)
 - [Detecção de aplicativo LOB do Win32](intune-apps-win32lobappdetection.md)
 - [Operador de detecção de aplicativo LOB do Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Detecção de sistema do arquivo do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemdetection.md)
@@ -147,7 +139,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Experiência de instalação do aplicativo LOB do Win32](intune-apps-win32lobappinstallexperience.md)
 - [Informações de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsiinformation.md)
 - [Tipo de pacote de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsipackagetype.md)
-- [Notificação de aplicativo LOB do Win32](intune-apps-win32lobappnotification.md)
 - [Detecção de script powershell do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Tipo de detecção de script do aplicativo LOB Win32 do Shell de energia](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Requisito de script do Shell de energia do aplicativo LOB Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
@@ -159,7 +150,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncode.md)
 - [Tipo de código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
-- [Configurações de atribuição do aplicativo Windows AppX](intune-apps-windowsappxappassignmentsettings.md)
 - [Arquitetura do Windows](intune-apps-windowsarchitecture.md)
 - [Tipo de dispositivo Windows](intune-apps-windowsdevicetype.md)
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)
@@ -173,6 +163,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Windows Phone XAP](intune-apps-windowsphonexap.md)
 - [Aplicativo da Windows Store](intune-apps-windowsstoreapp.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
-- [Configurações de atribuição do aplicativo Windows universal AppX](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Aplicativo contido do Windows universal AppX](intune-apps-windowsuniversalappxcontainedapp.md)
+
 

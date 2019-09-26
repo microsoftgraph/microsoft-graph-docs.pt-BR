@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 208caa1f421a8e9c9da9e9a8bcce048775e13678
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f6211e962cb5f2b1ab664001badea9f5e265e47a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332285"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196480"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -23,7 +23,6 @@ Use as políticas de proteção de aplicativos do Intune para ajudar a proteger 
 
 Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de proteção de aplicativos no Intune:
 
-- [Proteção de aplicativo gerenciado Android](intune-mam-androidmanagedappprotection.md)
 - [Registro de aplicativo gerenciado Android](intune-mam-androidmanagedappregistration.md)
 - [Tipo de verificação de aplicativos de rede de segurança em aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Tipo de atestado de dispositivo de rede de segurança do aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
@@ -33,7 +32,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Proteção de aplicativo gerenciado padrão](intune-mam-defaultmanagedappprotection.md)
 - [Perfil de identidade visual do Intune](intune-wip-intunebrandingprofile.md)
 - [Atribuição do perfil de identidade visual do Intune](intune-wip-intunebrandingprofileassignment.md)
-- [Proteção de aplicativo gerenciado iOS](intune-mam-iosmanagedappprotection.md)
 - [Registro de aplicativo gerenciado iOS](intune-mam-iosmanagedappregistration.md)
 - [Identificador de aplicativo móvel iOS](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
@@ -56,9 +54,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Status de aplicativo gerenciado](intune-mam-managedappstatus.md)
 - [Status bruto de aplicativo gerenciado](intune-mam-managedappstatusraw.md)
 - [Aplicativo móvel gerenciado](intune-mam-managedmobileapp.md)
-- [Política de proteção de informações do Windows MDM](intune-mam-mdmwindowsinformationprotectionpolicy.md)
 - [Identificador de aplicativo móvel](intune-mam-mobileappidentifier.md)
-- [Configuração direcionada de aplicativo gerenciado](intune-mam-targetedmanagedappconfiguration.md)
 - [Atribuição de política de proteção de aplicativo gerenciado direcionado](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Proteção de aplicativo gerenciado direcionado](intune-mam-targetedmanagedappprotection.md)
 - [Proteção de informações do Windows](intune-mam-windowsinformationprotection.md)
@@ -77,4 +73,5 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Coleção de recursos da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Aplicativo de loja de proteção de informações do Windows](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Ação wipe de proteção de informações do Windows](intune-mam-windowsinformationprotectionwipeaction.md)
+
 

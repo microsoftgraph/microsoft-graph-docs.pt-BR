@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 932fd37d2460e6e6d0c967e2afb401a1a424fa08
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7cf77e36981c2349c9cfa7899d1a59d434a18175
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343444"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185760"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>Criar deviceManagementIntentUserState
 
@@ -99,8 +99,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
-
 
 
 

@@ -1170,6 +1170,19 @@
                   href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md
                 - name: Tipo de dados do item de esquema de configuração do aplicativo do repositório gerenciado Android
                   href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md
+                - name: Aplicativo Web do repositório gerenciado do Android
+                  href: resources/intune-apps-androidmanagedstorewebapp.md
+                  items:
+                    - name: Lista
+                      href: api/intune-apps-androidmanagedstorewebapp-list.md
+                    - name: Obter
+                      href: api/intune-apps-androidmanagedstorewebapp-get.md
+                    - name: Criar
+                      href: api/intune-apps-androidmanagedstorewebapp-create.md
+                    - name: Excluir
+                      href: api/intune-apps-androidmanagedstorewebapp-delete.md
+                    - name: Atualizar
+                      href: api/intune-apps-androidmanagedstorewebapp-update.md
                 - name: Sistema operacional mínimo do Android
                   href: resources/intune-apps-androidminimumoperatingsystem.md
                 - name: Ação de permissão do Android
@@ -1247,23 +1260,6 @@
                       href: api/intune-apps-ioslobapp-delete.md
                     - name: Atualizar
                       href: api/intune-apps-ioslobapp-update.md
-                - name: Configurações de atribuição do aplicativo LOB do iOS
-                  href: resources/intune-apps-ioslobappassignmentsettings.md
-                - name: Configuração de provisionamento do aplicativo LOB do iOS
-                  href: resources/intune-apps-ioslobappprovisioningconfiguration.md
-                  items:
-                    - name: Lista
-                      href: api/intune-apps-ioslobappprovisioningconfiguration-list.md
-                    - name: Obter
-                      href: api/intune-apps-ioslobappprovisioningconfiguration-get.md
-                    - name: Criar
-                      href: api/intune-apps-ioslobappprovisioningconfiguration-create.md
-                    - name: Excluir
-                      href: api/intune-apps-ioslobappprovisioningconfiguration-delete.md
-                    - name: Atualizar
-                      href: api/intune-apps-ioslobappprovisioningconfiguration-update.md
-                    - name: atribuir ação
-                      href: api/intune-apps-ioslobappprovisioningconfiguration-assign.md
                 - name: Atribuição da configuração de provisionamento do aplicativo LOB do iOS
                   href: resources/intune-apps-ioslobappprovisioningconfigurationassignment.md
                   items:
@@ -1305,8 +1301,6 @@
                       href: api/intune-apps-iosstoreapp-delete.md
                     - name: Atualizar
                       href: api/intune-apps-iosstoreapp-update.md
-                - name: Configurações de atribuição de aplicativo da loja iOS
-                  href: resources/intune-apps-iosstoreappassignmentsettings.md
                 - name: Aplicativo VPP do iOS
                   href: resources/intune-apps-iosvppapp.md
                   items:
@@ -1365,8 +1359,6 @@
                       href: api/intune-apps-iosvppappassigneduserlicense-delete.md
                     - name: Atualizar
                       href: api/intune-apps-iosvppappassigneduserlicense-update.md
-                - name: Configurações de atribuição do aplicativo VPP do iOS
-                  href: resources/intune-apps-iosvppappassignmentsettings.md
                 - name: Resultado da ação de revogar licenças de aplicativo do VPP do iOS
                   href: resources/intune-apps-iosvppapprevokelicensesactionresult.md
                 - name: Livro eletrônico do VPP do iOS
@@ -1451,8 +1443,6 @@
                       href: api/intune-apps-macosvppappassignedlicense-delete.md
                     - name: Atualizar
                       href: api/intune-apps-macosvppappassignedlicense-update.md
-                - name: Configurações de atribuição do aplicativo VPP do macOS
-                  href: resources/intune-apps-macosvppappassignmentsettings.md
                 - name: Resultado da ação de revogar licenças de aplicativo do VPP do macOS
                   href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
                 - name: Aplicativo LOB para Android gerenciado
@@ -1635,8 +1625,6 @@
                       href: api/intune-apps-microsoftstoreforbusinessapp-delete.md
                     - name: Atualizar
                       href: api/intune-apps-microsoftstoreforbusinessapp-update.md
-                - name: Configurações de atribuição do aplicativo da Microsoft Store para Empresas
-                  href: resources/intune-apps-microsoftstoreforbusinessappassignmentsettings.md
                 - name: Aplicativo contido da Microsoft Store para Empresas
                   href: resources/intune-apps-microsoftstoreforbusinesscontainedapp.md
                   items:
@@ -1652,19 +1640,6 @@
                       href: api/intune-apps-microsoftstoreforbusinesscontainedapp-update.md
                 - name: Tipo de licença da Microsoft Store para Empresas
                   href: resources/intune-apps-microsoftstoreforbusinesslicensetype.md
-                - name: Aplicativo móvel
-                  href: resources/intune-apps-mobileapp.md
-                  items:
-                    - name: Lista
-                      href: api/intune-apps-mobileapp-list.md
-                    - name: Obter
-                      href: api/intune-apps-mobileapp-get.md
-                    - name: atribuir ação
-                      href: api/intune-apps-mobileapp-assign.md
-                    - name: getTopMobileApps
-                      href: api/intune-apps-mobileapp-gettopmobileapps.md
-                    - name: ação updateRelationships
-                      href: api/intune-apps-mobileapp-updaterelationships.md
                 - name: Atribuição de aplicativos móveis
                   href: resources/intune-apps-mobileappassignment.md
                   items:
@@ -1678,8 +1653,6 @@
                       href: api/intune-apps-mobileappassignment-delete.md
                     - name: Atualizar
                       href: api/intune-apps-mobileappassignment-update.md
-                - name: Configurações de atribuição de aplicativo móvel
-                  href: resources/intune-apps-mobileappassignmentsettings.md
                 - name: Categoria de aplicativo móvel
                   href: resources/intune-apps-mobileappcategory.md
                   items:
@@ -1743,7 +1716,7 @@
                 - name: Status de instalação do aplicativo móvel
                   href: resources/intune-apps-mobileappinstallstatus.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-apps-mobileappinstallstatus-list.md
                     - name: Obter
                       href: api/intune-apps-mobileappinstallstatus-get.md
@@ -1892,7 +1865,7 @@
                 - name: Aplicativo Web
                   href: resources/intune-apps-webapp.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-apps-webapp-list.md
                     - name: Obter
                       href: api/intune-apps-webapp-get.md
@@ -1905,7 +1878,7 @@
                 - name: Aplicativo LOB do Win32
                   href: resources/intune-apps-win32lobapp.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-apps-win32lobapp-list.md
                     - name: Obter
                       href: api/intune-apps-win32lobapp-get.md
@@ -1915,8 +1888,6 @@
                       href: api/intune-apps-win32lobapp-delete.md
                     - name: Atualizar
                       href: api/intune-apps-win32lobapp-update.md
-                - name: Configurações de atribuição do aplicativo LOB do Win32
-                  href: resources/intune-apps-win32lobappassignmentsettings.md
                 - name: Detecção de aplicativo LOB do Win32
                   href: resources/intune-apps-win32lobappdetection.md
                 - name: Operador de detecção de aplicativo LOB do Win32
@@ -1933,8 +1904,6 @@
                   href: resources/intune-apps-win32lobappmsiinformation.md
                 - name: Tipo de pacote de msi do aplicativo LOB do Win32
                   href: resources/intune-apps-win32lobappmsipackagetype.md
-                - name: Notificação de aplicativo LOB do Win32
-                  href: resources/intune-apps-win32lobappnotification.md
                 - name: Detecção de script powershell do aplicativo LOB do Win32
                   href: resources/intune-apps-win32lobapppowershellscriptdetection.md
                 - name: Tipo de detecção de script do aplicativo LOB Win32 do Shell de energia
@@ -1958,7 +1927,7 @@
                 - name: Windows AppX
                   href: resources/intune-apps-windowsappx.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-apps-windowsappx-list.md
                     - name: Obter
                       href: api/intune-apps-windowsappx-get.md
@@ -1968,8 +1937,6 @@
                       href: api/intune-apps-windowsappx-delete.md
                     - name: Atualizar
                       href: api/intune-apps-windowsappx-update.md
-                - name: Configurações de atribuição do aplicativo Windows AppX
-                  href: resources/intune-apps-windowsappxappassignmentsettings.md
                 - name: Arquitetura do Windows
                   href: resources/intune-apps-windowsarchitecture.md
                 - name: Tipo de dispositivo Windows
@@ -2095,8 +2062,6 @@
                       href: api/intune-apps-windowsuniversalappx-delete.md
                     - name: Atualizar
                       href: api/intune-apps-windowsuniversalappx-update.md
-                - name: Configurações de atribuição do aplicativo Windows universal AppX
-                  href: resources/intune-apps-windowsuniversalappxappassignmentsettings.md
                 - name: Aplicativo contido do Windows universal AppX
                   href: resources/intune-apps-windowsuniversalappxcontainedapp.md
                   items:
@@ -2142,7 +2107,7 @@
                 - name: Atribuição de termos e condições
                   href: resources/intune-companyterms-termsandconditionsassignment.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-companyterms-termsandconditionsassignment-list.md
                     - name: Obter
                       href: api/intune-companyterms-termsandconditionsassignment-get.md
@@ -2171,7 +2136,7 @@
                 - name: Perfil de implantação do Windows Autopilot do Active Directory
                   href: resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-list.md
                     - name: Obter
                       href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-get.md
@@ -2181,6 +2146,38 @@
                       href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-delete.md
                     - name: Atualizar
                       href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-update.md
+                - name: Atribuição de perfil de registro da Apple
+                  href: resources/intune-enrollment-appleenrollmentprofileassignment.md
+                  items:
+                    - name: Lista
+                      href: api/intune-enrollment-appleenrollmentprofileassignment-list.md
+                    - name: Obter
+                      href: api/intune-enrollment-appleenrollmentprofileassignment-get.md
+                    - name: Criar
+                      href: api/intune-enrollment-appleenrollmentprofileassignment-create.md
+                    - name: Excluir
+                      href: api/intune-enrollment-appleenrollmentprofileassignment-delete.md
+                    - name: Atualizar
+                      href: api/intune-enrollment-appleenrollmentprofileassignment-update.md
+                - name: Tipo de registro de tipo de proprietário da Apple
+                  href: resources/intune-enrollment-appleownertypeenrollmenttype.md
+                - name: Perfil de registro iniciado pelo usuário da Apple
+                  href: resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md
+                  items:
+                    - name: Lista
+                      href: api/intune-enrollment-appleuserinitiatedenrollmentprofile-list.md
+                    - name: Obter
+                      href: api/intune-enrollment-appleuserinitiatedenrollmentprofile-get.md
+                    - name: Criar
+                      href: api/intune-enrollment-appleuserinitiatedenrollmentprofile-create.md
+                    - name: Excluir
+                      href: api/intune-enrollment-appleuserinitiatedenrollmentprofile-delete.md
+                    - name: Atualizar
+                      href: api/intune-enrollment-appleuserinitiatedenrollmentprofile-update.md
+                    - name: ação setPriority
+                      href: api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md
+                - name: Tipo de registro iniciado pelo usuário da Apple
+                  href: resources/intune-enrollment-appleuserinitiatedenrollmenttype.md
                 - name: Perfil de implantação do Windows Autopilot do Azure AD
                   href: resources/intune-enrollment-azureadwindowsautopilotdeploymentprofile.md
                   items:
@@ -2282,8 +2279,6 @@
                       href: api/intune-enrollment-enrollmentprofile-setdefaultprofile.md
                     - name: Ação updateDeviceProfileAssignment
                       href: api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md
-                - name: Estado de registro
-                  href: resources/intune-enrollment-enrollmentstate.md
                 - name: Identidade do dispositivo Apple importada
                   href: resources/intune-enrollment-importedappledeviceidentity.md
                   items:
@@ -2377,13 +2372,6 @@
                   href: resources/intune-enrollment-outofboxexperiencesettings.md
                 - name: Plataforma
                   href: resources/intune-enrollment-platform.md
-                - name: Perfil de implantação do Windows Autopilot
-                  href: resources/intune-enrollment-windowsautopilotdeploymentprofile.md
-                  items:
-                    - name: Obter
-                      href: api/intune-enrollment-windowsautopilotdeploymentprofile-get.md
-                    - name: atribuir ação
-                      href: api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md
                 - name: Atribuição do perfil de implantação do Windows Autopilot
                   href: resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md
                   items:
@@ -2559,6 +2547,19 @@
                   href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
                 - name: Tipo de senha obrigatória do proprietário do dispositivo Android
                   href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md
+                - name: Perfil de certificado SCEP do proprietário do dispositivo Android
+                  href: resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md
+                  items:
+                    - name: Lista
+                      href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-list.md
+                    - name: Obter
+                      href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-get.md
+                    - name: Criar
+                      href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-create.md
+                    - name: Excluir
+                      href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-delete.md
+                    - name: Atualizar
+                      href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-update.md
                 - name: Tipo de instalação de atualização do sistema do proprietário do dispositivo Android
                   href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
                 - name: Certificado raiz confiável do proprietário do dispositivo Android
@@ -3133,6 +3134,8 @@
                   href: resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md
                 - name: Opções de recuperação do BitLocker
                   href: resources/intune-deviceconfig-bitlockerrecoveryoptions.md
+                - name: Tipo de rotação da senha de recuperação do BitLocker
+                  href: resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md
                 - name: Política da unidade removível do BitLocker
                   href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
                 - name: Política da unidade de sistema do BitLocker
@@ -3166,6 +3169,8 @@
                   href: resources/intune-deviceconfig-changeuefisettingspermission.md
                 - name: Uso de configurações
                   href: resources/intune-deviceconfig-configurationusage.md
+                - name: Extensão de logon único da credencial
+                  href: resources/intune-deviceconfig-credentialsinglesignonextension.md
                 - name: Nome alternativo da entidade personalizada
                   href: resources/intune-deviceconfig-customsubjectalternativename.md
                 - name: Dia da semana
@@ -3270,19 +3275,6 @@
                       href: api/intune-deviceconfig-devicecompliancedevicestatus-delete.md
                     - name: Atualizar
                       href: api/intune-deviceconfig-devicecompliancedevicestatus-update.md
-                - name: Política de conformidade do dispositivo
-                  href: resources/intune-deviceconfig-devicecompliancepolicy.md
-                  items:
-                    - name: Lista
-                      href: api/intune-deviceconfig-devicecompliancepolicy-list.md
-                    - name: Obter
-                      href: api/intune-deviceconfig-devicecompliancepolicy-get.md
-                    - name: atribuir ação
-                      href: api/intune-deviceconfig-devicecompliancepolicy-assign.md
-                    - name: ação scheduleActionsForRules
-                      href: api/intune-deviceconfig-devicecompliancepolicy-scheduleactionsforrules.md
-                    - name: ação refreshDeviceComplianceReportSummarization
-                      href: api/intune-deviceconfig-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
                 - name: Atribuição de política de conformidade do dispositivo
                   href: resources/intune-deviceconfig-devicecompliancepolicyassignment.md
                   items:
@@ -3364,21 +3356,6 @@
                       href: api/intune-deviceconfig-devicecomplianceuserstatus-delete.md
                     - name: Atualizar
                       href: api/intune-deviceconfig-devicecomplianceuserstatus-update.md
-                - name: Configuração do dispositivo
-                  href: resources/intune-deviceconfig-deviceconfiguration.md
-                  items:
-                    - name: Lista
-                      href: api/intune-deviceconfig-deviceconfiguration-list.md
-                    - name: Obter
-                      href: api/intune-deviceconfig-deviceconfiguration-get.md
-                    - name: atribuir ação
-                      href: api/intune-deviceconfig-deviceconfiguration-assign.md
-                    - name: Ação windowsPrivacyAccessControls
-                      href: api/intune-deviceconfig-deviceconfiguration-windowsprivacyaccesscontrols.md
-                    - name: ação assignedAccessMultiModeProfiles
-                      href: api/intune-deviceconfig-deviceconfiguration-assignedaccessmultimodeprofiles.md
-                    - name: ação getTargetedUsersAndDevices
-                      href: api/intune-deviceconfig-deviceconfiguration-gettargetedusersanddevices.md
                 - name: Atribuição de configuração do dispositivo
                   href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                   items:
@@ -3435,7 +3412,7 @@
                 - name: Atribuição de grupo de configuração do dispositivo
                   href: resources/intune-deviceconfig-deviceconfigurationgroupassignment.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-deviceconfigurationgroupassignment-get.md
@@ -3466,7 +3443,7 @@
                 - name: Status do usuário da configuração do dispositivo
                   href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
@@ -3486,17 +3463,6 @@
                   href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
                 - name: Tipo de regra de aplicabilidade de gerenciamento de dispositivo
                   href: resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md
-                - name: Emissor de credenciais derivadas de gerenciamento de dispositivos
-                  href: resources/intune-deviceconfig-devicemanagementderivedcredentialissuer.md
-                - name: Tipo de notificação de credencial derivada de gerenciamento de dispositivo
-                  href: resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md
-                - name: Configurações de credenciais derivadas de gerenciamento de dispositivos
-                  href: resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md
-                  items:
-                    - name: Obter
-                      href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-get.md
-                    - name: Atualizar
-                      href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-update.md
                 - name: Configurações de gerenciamento de dispositivo
                   href: resources/intune-deviceconfig-devicemanagementsettings.md
                 - name: Usuário ou grupo local de direitos de usuário de gerenciamento de dispositivos
@@ -3609,7 +3575,7 @@
                 - name: Atribuição da configuração de política de grupo
                   href: resources/intune-grouppolicy-grouppolicyconfigurationassignment.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-grouppolicy-grouppolicyconfigurationassignment-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicyconfigurationassignment-get.md
@@ -3640,7 +3606,7 @@
                 - name: Valor de definição de política de grupo
                   href: resources/intune-grouppolicy-grouppolicydefinitionvalue.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-grouppolicy-grouppolicydefinitionvalue-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicydefinitionvalue-get.md
@@ -3686,7 +3652,7 @@
                 - name: Caixa de texto decimal de apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
@@ -3844,7 +3810,7 @@
                 - name: Multitexto do valor da apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-get.md
@@ -3857,7 +3823,7 @@
                 - name: Texto do valor da apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationvaluetext.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-grouppolicy-grouppolicypresentationvaluetext-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationvaluetext-get.md
@@ -3898,7 +3864,7 @@
                 - name: Política de conformidade do iOS
                   href: resources/intune-deviceconfig-ioscompliancepolicy.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-ioscompliancepolicy-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-ioscompliancepolicy-get.md
@@ -4037,6 +4003,8 @@
                       href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-delete.md
                     - name: Atualizar
                       href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-update.md
+                - name: extensão de logon único Kerberos iOS
+                  href: resources/intune-deviceconfig-ioskerberossinglesignonextension.md
                 - name: Regras de uso de rede do iOS
                   href: resources/intune-deviceconfig-iosnetworkusagerule.md
                 - name: Tipo de alerta de notificação do iOS
@@ -4059,7 +4027,7 @@
                 - name: Perfil de certificado do SCEP do iOS
                   href: resources/intune-deviceconfig-iosscepcertificateprofile.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-iosscepcertificateprofile-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosscepcertificateprofile-get.md
@@ -4074,7 +4042,7 @@
                 - name: Certificado raiz confiável do iOS
                   href: resources/intune-deviceconfig-iostrustedrootcertificate.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-iostrustedrootcertificate-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iostrustedrootcertificate-get.md
@@ -4115,7 +4083,7 @@
                 - name: Configuração de VPN do iOS
                   href: resources/intune-deviceconfig-iosvpnconfiguration.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-iosvpnconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosvpnconfiguration-get.md
@@ -4161,10 +4129,22 @@
                       href: api/intune-deviceconfig-iosikev2vpnconfiguration-delete.md
                     - name: Atualizar
                       href: api/intune-deviceconfig-iosikev2vpnconfiguration-update.md
+                - name: Extensão de logon único Kerberos
+                  href: resources/intune-deviceconfig-kerberossinglesignonextension.md
+                - name: Par de valores booleanos principais
+                  href: resources/intune-deviceconfig-keybooleanvaluepair.md
+                - name: Par principal de valor inteiro
+                  href: resources/intune-deviceconfig-keyintegervaluepair.md
+                - name: Par chave real de valor
+                  href: resources/intune-deviceconfig-keyrealvaluepair.md
                 - name: Tamanho da chave
                   href: resources/intune-deviceconfig-keysize.md
                 - name: Opção de provedor de armazenamento de chaves
                   href: resources/intune-deviceconfig-keystorageprovideroption.md
+                - name: Par de valores de cadeia de caracteres de chave
+                  href: resources/intune-deviceconfig-keystringvaluepair.md
+                - name: Par de valores digitados por chave
+                  href: resources/intune-deviceconfig-keytypedvaluepair.md
                 - name: Usos de chave
                   href: resources/intune-deviceconfig-keyusages.md
                 - name: Valor da chave
@@ -4234,7 +4214,7 @@
                 - name: Configuração de proteção de ponto de extremidade do macOS
                   href: resources/intune-deviceconfig-macosendpointprotectionconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-macosendpointprotectionconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-macosendpointprotectionconfiguration-get.md
@@ -4292,7 +4272,7 @@
                 - name: Perfil certificado PFX importado do macOS
                   href: resources/intune-deviceconfig-macosimportedpfxcertificateprofile.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-get.md
@@ -4302,6 +4282,8 @@
                       href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-delete.md
                     - name: Atualizar
                       href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-update.md
+                - name: extensão de logon único Kerberos do macOS
+                  href: resources/intune-deviceconfig-macoskerberossinglesignonextension.md
                 - name: extensão de kernel macOS
                   href: resources/intune-deviceconfig-macoskernelextension.md
                 - name: item de lançamento do macOS
@@ -4309,7 +4291,7 @@
                 - name: Perfil de certificado do SCEP do macOS
                   href: resources/intune-deviceconfig-macosscepcertificateprofile.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-macosscepcertificateprofile-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-macosscepcertificateprofile-get.md
@@ -4374,7 +4356,7 @@
                 - name: Estado de certificado do dispositivo gerenciado
                   href: resources/intune-deviceconfig-manageddevicecertificatestate.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-manageddevicecertificatestate-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-manageddevicecertificatestate-get.md
@@ -4424,7 +4406,7 @@
                 - name: Conector NDES
                   href: resources/intune-deviceconfig-ndesconnector.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-ndesconnector-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-ndesconnector-get.md
@@ -4513,7 +4495,7 @@
                 - name: Violação de aplicativos restritos
                   href: resources/intune-deviceconfig-restrictedappsviolation.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-restrictedappsviolation-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-restrictedappsviolation-get.md
@@ -4567,6 +4549,8 @@
                       href: api/intune-deviceconfig-sharedpcconfiguration-update.md
                 - name: Opções de entrada do assistente
                   href: resources/intune-deviceconfig-signinassistantoptions.md
+                - name: Extensão de logon único
+                  href: resources/intune-deviceconfig-singlesignonextension.md
                 - name: Nível de segurança do site
                   href: resources/intune-deviceconfig-sitesecuritylevel.md
                 - name: Resumo do status de atualização do software
@@ -4924,7 +4908,7 @@
                 - name: Configuração geral do Windows 8.1
                   href: resources/intune-deviceconfig-windows81generalconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-windows81generalconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-windows81generalconfiguration-get.md
@@ -4937,7 +4921,7 @@
                 - name: Perfil de certificado do SCEP do Windows 8.1
                   href: resources/intune-deviceconfig-windows81scepcertificateprofile.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-windows81scepcertificateprofile-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-windows81scepcertificateprofile-get.md
@@ -5082,7 +5066,7 @@
                 - name: Configuração de quiosque do Windows
                   href: resources/intune-deviceconfig-windowskioskconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-windowskioskconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-windowskioskconfiguration-get.md
@@ -5150,7 +5134,7 @@
                 - name: Configuração geral do Windows Phone 8.1
                   href: resources/intune-deviceconfig-windowsphone81generalconfiguration.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
@@ -5277,21 +5261,6 @@
                   href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
                 - name: Instalação agendada do Windows Update
                   href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
-                - name: Estado do Windows Update
-                  href: resources/intune-deviceconfig-windowsupdatestate.md
-                  items:
-                    - name: Lista
-                      href: api/intune-deviceconfig-windowsupdatestate-list.md
-                    - name: Obter
-                      href: api/intune-deviceconfig-windowsupdatestate-get.md
-                    - name: Criar
-                      href: api/intune-deviceconfig-windowsupdatestate-create.md
-                    - name: Excluir
-                      href: api/intune-deviceconfig-windowsupdatestate-delete.md
-                    - name: Atualizar
-                      href: api/intune-deviceconfig-windowsupdatestate-update.md
-                - name: Status do Windows Update
-                  href: resources/intune-deviceconfig-windowsupdatestatus.md
                 - name: Tipo de atualização do Windows
                   href: resources/intune-deviceconfig-windowsupdatetype.md
                 - name: Configurações de controle da conta do usuário do Windows
@@ -5321,7 +5290,7 @@
                 - name: Configuração de EAP corporativa de Wi-Fi do Windows
                   href: resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md
@@ -5343,7 +5312,7 @@
                 - name: Solicitação de conjunto de log do aplicativo
                   href: resources/intune-devices-applogcollectionrequest.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-devices-applogcollectionrequest-list.md
                     - name: Obter
                       href: api/intune-devices-applogcollectionrequest-get.md
@@ -5369,7 +5338,7 @@
                 - name: Evento de solução de problemas de token do Apple VPP
                   href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-troubleshooting-applevpptokentroubleshootingevent-list.md
                     - name: Obter
                       href: api/intune-troubleshooting-applevpptokentroubleshootingevent-get.md
@@ -5384,7 +5353,7 @@
                 - name: Evento de auditoria
                   href: resources/intune-auditing-auditevent.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-auditing-auditevent-list.md
                     - name: Obter
                       href: api/intune-auditing-auditevent-get.md
@@ -5421,6 +5390,10 @@
                       href: api/intune-fencing-circulargeofencemanagementcondition-update.md
                 - name: Estado de conformidade
                   href: resources/intune-devices-compliancestate.md
+                - name: Ação do Gerenciador de configurações
+                  href: resources/intune-devices-configurationmanageraction.md
+                - name: Tipo de ação do Gerenciador de configurações
+                  href: resources/intune-devices-configurationmanageractiontype.md
                 - name: Recursos habilitados do cliente de gerenciador de configurações
                   href: resources/intune-devices-configurationmanagerclientenabledfeatures.md
                 - name: Estado de integridade do cliente de gerenciador de configurações
@@ -5524,6 +5497,19 @@
                       href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-delete.md
                     - name: Atualizar
                       href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-update.md
+                - name: Evento de piloto automático de gerenciamento de dispositivos
+                  href: resources/intune-troubleshooting-devicemanagementautopilotevent.md
+                  items:
+                    - name: Lista
+                      href: api/intune-troubleshooting-devicemanagementautopilotevent-list.md
+                    - name: Obter
+                      href: api/intune-troubleshooting-devicemanagementautopilotevent-get.md
+                    - name: Criar
+                      href: api/intune-troubleshooting-devicemanagementautopilotevent-create.md
+                    - name: Excluir
+                      href: api/intune-troubleshooting-devicemanagementautopilotevent-delete.md
+                    - name: Atualizar
+                      href: api/intune-troubleshooting-devicemanagementautopilotevent-update.md
                 - name: Instância de configuração booleana de gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementbooleansettinginstance.md
                   items:
@@ -5553,7 +5539,7 @@
                 - name: Instância de configuração da coleção de gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-list.md
                     - name: Obter
                       href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-get.md
@@ -5581,7 +5567,7 @@
                 - name: Instância de configuração complexa de gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
                     - name: Obter
                       href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
@@ -5682,7 +5668,7 @@
                 - name: Categoria de configuração de tentativa do gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementintentsettingcategory.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceintent-devicemanagementintentsettingcategory-list.md
                     - name: Obter
                       href: api/intune-deviceintent-devicemanagementintentsettingcategory-get.md
@@ -5695,7 +5681,7 @@
                 - name: Estado do usuário de tentativa do gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementintentuserstate.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceintent-devicemanagementintentuserstate-list.md
                     - name: Obter
                       href: api/intune-deviceintent-devicemanagementintentuserstate-get.md
@@ -5712,21 +5698,6 @@
                       href: api/intune-deviceintent-devicemanagementintentuserstatesummary-get.md
                     - name: Atualizar
                       href: api/intune-deviceintent-devicemanagementintentuserstatesummary-update.md
-                - name: Script de gerenciamento de dispositivo
-                  href: resources/intune-devices-devicemanagementscript.md
-                  items:
-                    - name: Lista
-                      href: api/intune-devices-devicemanagementscript-list.md
-                    - name: Obter
-                      href: api/intune-devices-devicemanagementscript-get.md
-                    - name: Criar
-                      href: api/intune-devices-devicemanagementscript-create.md
-                    - name: Excluir
-                      href: api/intune-devices-devicemanagementscript-delete.md
-                    - name: Atualizar
-                      href: api/intune-devices-devicemanagementscript-update.md
-                    - name: atribuir ação
-                      href: api/intune-devices-devicemanagementscript-assign.md
                 - name: Atribuição de script de gerenciamento de dispositivos
                   href: resources/intune-devices-devicemanagementscriptassignment.md
                   items:
@@ -5791,7 +5762,7 @@
                 - name: Categoria de configuração do gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementsettingcategory.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceintent-devicemanagementsettingcategory-list.md
                     - name: Obter
                       href: api/intune-deviceintent-devicemanagementsettingcategory-get.md
@@ -5806,7 +5777,7 @@
                 - name: Definição de configuração do gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
                     - name: Obter
                       href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
@@ -5995,6 +5966,8 @@
                       href: api/intune-fencing-locationmanagementcondition-list.md
                     - name: Obter
                       href: api/intune-fencing-locationmanagementcondition-get.md
+                - name: Nível de log
+                  href: resources/intune-troubleshooting-loglevel.md
                 - name: Usuário conectado
                   href: resources/intune-devices-loggedonuser.md
                 - name: Estado de modo perdido
@@ -6054,8 +6027,12 @@
                       href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
                     - name: Ação revokeAppleVppLicenses
                       href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
+                    - name: ação rotateBitLockerKeys
+                      href: api/intune-devices-manageddevice-rotatebitlockerkeys.md
                     - name: ação sendCustomNotificationToCompanyPortal
                       href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
+                    - name: ação triggerConfigurationManagerAction
+                      href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
                 - name: Configurações de limpeza do dispositivo gerenciado
                   href: resources/intune-devices-manageddevicecleanupsettings.md
                 - name: Modelos e fabricantes de dispositivos gerenciados
@@ -6067,8 +6044,6 @@
                       href: api/intune-devices-manageddeviceoverview-get.md
                     - name: Atualizar
                       href: api/intune-devices-manageddeviceoverview-update.md
-                - name: Tipo de proprietário do dispositivo gerenciado
-                  href: resources/intune-devices-manageddeviceownertype.md
                 - name: Estado de integridade reportado pelo parceiro do dispositivo gerenciado
                   href: resources/intune-devices-manageddevicepartnerreportedhealthstate.md
                 - name: Ação remota de dispositivo gerenciados
@@ -6214,7 +6189,7 @@
                 - name: Parceiro de assistência remota
                   href: resources/intune-remoteassistance-remoteassistancepartner.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-remoteassistance-remoteassistancepartner-list.md
                     - name: Obter
                       href: api/intune-remoteassistance-remoteassistancepartner-get.md
@@ -6312,8 +6287,12 @@
                       href: api/intune-devices-userexperienceanalyticscategory-get.md
                     - name: Atualizar
                       href: api/intune-devices-userexperienceanalyticscategory-update.md
+                - name: Estado de integridade da análise da experiência do usuário
+                  href: resources/intune-devices-userexperienceanalyticshealthstate.md
                 - name: Visão geral da análise da experiência do usuário
                   href: resources/intune-devices-userexperienceanalyticsinsight.md
+                - name: Gravidade da visão da análise da experiência do usuário
+                  href: resources/intune-devices-userexperienceanalyticsinsightseverity.md
                 - name: Valor da visão da análise da experiência do usuário
                   href: resources/intune-devices-userexperienceanalyticsinsightvalue.md
                 - name: Métrica de análise da experiência do usuário
@@ -6338,6 +6317,10 @@
                       href: api/intune-devices-userexperienceanalyticsoverview-update.md
                 - name: Expressões de condição de gerenciamento variável
                   href: resources/intune-fencing-variablemanagementconditionexpression.md
+                - name: Estado de implantação do piloto automático do Windows
+                  href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
+                - name: Tipo de registro do Windows AutoPilot
+                  href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
                 - name: Resultado de ação de verificação do Windows Defender
                   href: resources/intune-devices-windowsdefenderscanactionresult.md
                 - name: Conta do dispositivo Windows
@@ -6437,19 +6420,6 @@
             - name: Gerenciamento de aplicativo móvel (GAM)
               href: resources/intune-mam-conceptual.md
               items:
-                - name: Proteção de aplicativo gerenciado pelo Android
-                  href: resources/intune-mam-androidmanagedappprotection.md
-                  items:
-                    - name: Lista
-                      href: api/intune-mam-androidmanagedappprotection-list.md
-                    - name: Obter
-                      href: api/intune-mam-androidmanagedappprotection-get.md
-                    - name: Criar
-                      href: api/intune-mam-androidmanagedappprotection-create.md
-                    - name: Excluir
-                      href: api/intune-mam-androidmanagedappprotection-delete.md
-                    - name: Atualizar
-                      href: api/intune-mam-androidmanagedappprotection-update.md
                 - name: Registro de aplicativo gerenciado Android
                   href: resources/intune-mam-androidmanagedappregistration.md
                   items:
@@ -6510,19 +6480,6 @@
                       href: api/intune-wip-intunebrandingprofileassignment-delete.md
                     - name: Atualizar
                       href: api/intune-wip-intunebrandingprofileassignment-update.md
-                - name: Proteção de aplicativo gerenciado do iOS
-                  href: resources/intune-mam-iosmanagedappprotection.md
-                  items:
-                    - name: Lista
-                      href: api/intune-mam-iosmanagedappprotection-list.md
-                    - name: Obter
-                      href: api/intune-mam-iosmanagedappprotection-get.md
-                    - name: Criar
-                      href: api/intune-mam-iosmanagedappprotection-create.md
-                    - name: Excluir
-                      href: api/intune-mam-iosmanagedappprotection-delete.md
-                    - name: Atualizar
-                      href: api/intune-mam-iosmanagedappprotection-update.md
                 - name: Registro de aplicativo gerenciado do iOS
                   href: resources/intune-mam-iosmanagedappregistration.md
                   items:
@@ -6633,38 +6590,8 @@
                       href: api/intune-mam-managedmobileapp-delete.md
                     - name: Atualizar
                       href: api/intune-mam-managedmobileapp-update.md
-                - name: Política de proteção de informações do Windows MDM
-                  href: resources/intune-mam-mdmwindowsinformationprotectionpolicy.md
-                  items:
-                    - name: Listar
-                      href: api/intune-mam-mdmwindowsinformationprotectionpolicy-list.md
-                    - name: Obter
-                      href: api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
-                    - name: Criar
-                      href: api/intune-mam-mdmwindowsinformationprotectionpolicy-create.md
-                    - name: Excluir
-                      href: api/intune-mam-mdmwindowsinformationprotectionpolicy-delete.md
-                    - name: Atualizar
-                      href: api/intune-mam-mdmwindowsinformationprotectionpolicy-update.md
                 - name: Identificador de aplicativo móvel
                   href: resources/intune-mam-mobileappidentifier.md
-                - name: Configuração direcionada de aplicativo gerenciado
-                  href: resources/intune-mam-targetedmanagedappconfiguration.md
-                  items:
-                    - name: Lista
-                      href: api/intune-mam-targetedmanagedappconfiguration-list.md
-                    - name: Obter
-                      href: api/intune-mam-targetedmanagedappconfiguration-get.md
-                    - name: Criar
-                      href: api/intune-mam-targetedmanagedappconfiguration-create.md
-                    - name: Excluir
-                      href: api/intune-mam-targetedmanagedappconfiguration-delete.md
-                    - name: Atualizar
-                      href: api/intune-mam-targetedmanagedappconfiguration-update.md
-                    - name: atribuir ação
-                      href: api/intune-mam-targetedmanagedappconfiguration-assign.md
-                    - name: ação targetApps
-                      href: api/intune-mam-targetedmanagedappconfiguration-targetapps.md
                 - name: Atribuição de política de proteção de aplicativo gerenciado direcionado
                   href: resources/intune-mam-targetedmanagedapppolicyassignment.md
                   items:
@@ -6712,7 +6639,7 @@
                 - name: Arquivo do bloqueador de aplicativos da proteção de informações do Windows
                   href: resources/intune-mam-windowsinformationprotectionapplockerfile.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
                     - name: Obter
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
@@ -6763,7 +6690,7 @@
                 - name: Política de proteção de informações do Windows
                   href: resources/intune-mam-windowsinformationprotectionpolicy.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-mam-windowsinformationprotectionpolicy-list.md
                     - name: Obter
                       href: api/intune-mam-windowsinformationprotectionpolicy-get.md
@@ -6799,17 +6726,6 @@
                   href: resources/intune-onboarding-certificateconnectorsetting.md
                 - name: Dados de gerenciamento de aplicativo e dispositivo
                   href: resources/intune-onboarding-deviceandappmanagementdata.md
-                - name: Configuração de registro do dispositivo
-                  href: resources/intune-onboarding-deviceenrollmentconfiguration.md
-                  items:
-                    - name: Listar
-                      href: api/intune-onboarding-deviceenrollmentconfiguration-list.md
-                    - name: Obter
-                      href: api/intune-onboarding-deviceenrollmentconfiguration-get.md
-                    - name: ação setPriority
-                      href: api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md
-                    - name: atribuir ação
-                      href: api/intune-onboarding-deviceenrollmentconfiguration-assign.md
                 - name: Configuração de limite do registro do dispositivo
                   href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
                   items:
@@ -6860,7 +6776,7 @@
                 - name: Conector do Exchange de gerenciamento de dispositivo
                   href: resources/intune-onboarding-devicemanagementexchangeconnector.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-onboarding-devicemanagementexchangeconnector-list.md
                     - name: Obter
                       href: api/intune-onboarding-devicemanagementexchangeconnector-get.md
@@ -6926,7 +6842,7 @@
                 - name: Conector de defesa contra ameaças móveis
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                     - name: Obter
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -7021,7 +6937,7 @@
                 - name: Atribuição de função de gerenciamento de aplicativo e dispositivo
                   href: resources/intune-rbac-deviceandappmanagementroleassignment.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-rbac-deviceandappmanagementroleassignment-list.md
                     - name: Obter
                       href: api/intune-rbac-deviceandappmanagementroleassignment-get.md
@@ -7062,7 +6978,7 @@
                 - name: Atribuição de função
                   href: resources/intune-rbac-roleassignment.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-rbac-roleassignment-list.md
                     - name: Obter
                       href: api/intune-rbac-roleassignment-get.md
@@ -7077,7 +6993,7 @@
                 - name: Definição de função
                   href: resources/intune-rbac-roledefinition.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-rbac-roledefinition-list.md
                     - name: Obter
                       href: api/intune-rbac-roledefinition-get.md
@@ -7092,7 +7008,7 @@
                 - name: Marca de escopo de função
                   href: resources/intune-rbac-rolescopetag.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-rbac-rolescopetag-list.md
                     - name: Obter
                       href: api/intune-rbac-rolescopetag-get.md
@@ -7130,8 +7046,25 @@
                   href: resources/intune-shared-alldevicesassignmenttarget.md
                 - name: Destino de atribuição de todos os usuários licenciados
                   href: resources/intune-shared-alllicensedusersassignmenttarget.md
+                - name: Proteção de aplicativo gerenciado pelo Android
+                  href: resources/intune-shared-androidmanagedappprotection.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-androidmanagedappprotection-list.md
+                    - name: Obter
+                      href: api/intune-shared-androidmanagedappprotection-get.md
+                    - name: Criar
+                      href: api/intune-shared-androidmanagedappprotection-create.md
+                    - name: Excluir
+                      href: api/intune-shared-androidmanagedappprotection-delete.md
+                    - name: Atualizar
+                      href: api/intune-shared-androidmanagedappprotection-update.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
                 - name: Status de conformidade
                   href: resources/intune-shared-compliancestatus.md
+                - name: Origem da atribuição de gerenciamento de dispositivos e aplicativos
+                  href: resources/intune-shared-deviceandappmanagementassignmentsource.md
                 - name: Destino de atribuição de gerenciamento de aplicativo e dispositivo
                   href: resources/intune-shared-deviceandappmanagementassignmenttarget.md
                 - name: Gerenciamento de aplicativos de dispositivo
@@ -7156,6 +7089,51 @@
                       href: api/intune-shared-devicecategory-delete.md
                     - name: Atualizar
                       href: api/intune-shared-devicecategory-update.md
+                - name: Política de conformidade do dispositivo
+                  href: resources/intune-shared-devicecompliancepolicy.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-devicecompliancepolicy-list.md
+                    - name: Obter
+                      href: api/intune-shared-devicecompliancepolicy-get.md
+                    - name: atribuir ação
+                      href: api/intune-shared-devicecompliancepolicy-assign.md
+                    - name: ação scheduleActionsForRules
+                      href: api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md
+                    - name: ação refreshDeviceComplianceReportSummarization
+                      href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
+                - name: Configuração do dispositivo
+                  href: resources/intune-shared-deviceconfiguration.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-deviceconfiguration-list.md
+                    - name: Obter
+                      href: api/intune-shared-deviceconfiguration-get.md
+                    - name: atribuir ação
+                      href: api/intune-shared-deviceconfiguration-assign.md
+                    - name: Ação windowsPrivacyAccessControls
+                      href: api/intune-shared-deviceconfiguration-windowsprivacyaccesscontrols.md
+                    - name: ação assignedAccessMultiModeProfiles
+                      href: api/intune-shared-deviceconfiguration-assignedaccessmultimodeprofiles.md
+                    - name: ação getTargetedUsersAndDevices
+                      href: api/intune-shared-deviceconfiguration-gettargetedusersanddevices.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-deviceconfiguration-haspayloadlinks.md
+                - name: Configuração de registro do dispositivo
+                  href: resources/intune-shared-deviceenrollmentconfiguration.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-deviceenrollmentconfiguration-list.md
+                    - name: Obter
+                      href: api/intune-shared-deviceenrollmentconfiguration-get.md
+                    - name: ação setPriority
+                      href: api/intune-shared-deviceenrollmentconfiguration-setpriority.md
+                    - name: atribuir ação
+                      href: api/intune-shared-deviceenrollmentconfiguration-assign.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md
                 - name: Tipo de registro de dispositivo
                   href: resources/intune-shared-deviceenrollmenttype.md
                 - name: Gerenciamento de dispositivo
@@ -7169,18 +7147,92 @@
                       href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
                     - name: ação sendCustomNotificationToCompanyPortal
                       href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
+                - name: Emissor de credenciais derivadas de gerenciamento de dispositivos
+                  href: resources/intune-shared-devicemanagementderivedcredentialissuer.md
+                - name: Tipo de notificação de credencial derivada de gerenciamento de dispositivo
+                  href: resources/intune-shared-devicemanagementderivedcredentialnotificationtype.md
+                - name: Configurações de credenciais derivadas de gerenciamento de dispositivos
+                  href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+                  items:
+                    - name: Obter
+                      href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
+                    - name: Atualizar
+                      href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
+                    - name: Listar
+                      href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
+                    - name: Criar
+                      href: api/intune-shared-devicemanagementderivedcredentialsettings-create.md
+                    - name: Excluir
+                      href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
+                - name: Script de gerenciamento de dispositivo
+                  href: resources/intune-shared-devicemanagementscript.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-devicemanagementscript-list.md
+                    - name: Obter
+                      href: api/intune-shared-devicemanagementscript-get.md
+                    - name: Criar
+                      href: api/intune-shared-devicemanagementscript-create.md
+                    - name: Excluir
+                      href: api/intune-shared-devicemanagementscript-delete.md
+                    - name: Atualizar
+                      href: api/intune-shared-devicemanagementscript-update.md
+                    - name: atribuir ação
+                      href: api/intune-shared-devicemanagementscript-assign.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
                 - name: Tipo de plataforma do dispositivo
                   href: resources/intune-shared-deviceplatformtype.md
                 - name: Tipo de dispositivo
                   href: resources/intune-shared-devicetype.md
                 - name: Habilitação
                   href: resources/intune-shared-enablement.md
+                - name: Estado de registro
+                  href: resources/intune-shared-enrollmentstate.md
                 - name: Destino de atribuição de grupos de exclusão
                   href: resources/intune-shared-exclusiongroupassignmenttarget.md
                 - name: Destino de atribuição de grupo
                   href: resources/intune-shared-groupassignmenttarget.md
                 - name: Intenção de instalação
                   href: resources/intune-shared-installintent.md
+                - name: Configurações de atribuição do aplicativo LOB do iOS
+                  href: resources/intune-shared-ioslobappassignmentsettings.md
+                - name: Configuração de provisionamento do aplicativo LOB do iOS
+                  href: resources/intune-shared-ioslobappprovisioningconfiguration.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-ioslobappprovisioningconfiguration-list.md
+                    - name: Obter
+                      href: api/intune-shared-ioslobappprovisioningconfiguration-get.md
+                    - name: Criar
+                      href: api/intune-shared-ioslobappprovisioningconfiguration-create.md
+                    - name: Excluir
+                      href: api/intune-shared-ioslobappprovisioningconfiguration-delete.md
+                    - name: Atualizar
+                      href: api/intune-shared-ioslobappprovisioningconfiguration-update.md
+                    - name: atribuir ação
+                      href: api/intune-shared-ioslobappprovisioningconfiguration-assign.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md
+                - name: Proteção de aplicativo gerenciado do iOS
+                  href: resources/intune-shared-iosmanagedappprotection.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-iosmanagedappprotection-list.md
+                    - name: Obter
+                      href: api/intune-shared-iosmanagedappprotection-get.md
+                    - name: Criar
+                      href: api/intune-shared-iosmanagedappprotection-create.md
+                    - name: Excluir
+                      href: api/intune-shared-iosmanagedappprotection-delete.md
+                    - name: Atualizar
+                      href: api/intune-shared-iosmanagedappprotection-update.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-iosmanagedappprotection-haspayloadlinks.md
+                - name: Configurações de atribuição de aplicativo da loja iOS
+                  href: resources/intune-shared-iosstoreappassignmentsettings.md
+                - name: Configurações de atribuição do aplicativo VPP do iOS
+                  href: resources/intune-shared-iosvppappassignmentsettings.md
                 - name: Intervalo de IP
                   href: resources/intune-shared-iprange.md
                 - name: Intervalo de IPv4
@@ -7189,12 +7241,50 @@
                   href: resources/intune-shared-ipv6range.md
                 - name: Par chave/valor
                   href: resources/intune-shared-keyvaluepair.md
+                - name: Configurações de atribuição do aplicativo VPP do macOS
+                  href: resources/intune-shared-macosvppappassignmentsettings.md
+                - name: Tipo de proprietário do dispositivo gerenciado
+                  href: resources/intune-shared-manageddeviceownertype.md
+                - name: Política de proteção de informações do Windows MDM
+                  href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-mdmwindowsinformationprotectionpolicy-list.md
+                    - name: Obter
+                      href: api/intune-shared-mdmwindowsinformationprotectionpolicy-get.md
+                    - name: Criar
+                      href: api/intune-shared-mdmwindowsinformationprotectionpolicy-create.md
+                    - name: Excluir
+                      href: api/intune-shared-mdmwindowsinformationprotectionpolicy-delete.md
+                    - name: Atualizar
+                      href: api/intune-shared-mdmwindowsinformationprotectionpolicy-update.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md
+                - name: Configurações de atribuição do aplicativo da Microsoft Store para Empresas
+                  href: resources/intune-shared-microsoftstoreforbusinessappassignmentsettings.md
                 - name: Conteúdo MIME
                   href: resources/intune-shared-mimecontent.md
+                - name: Aplicativo móvel
+                  href: resources/intune-shared-mobileapp.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-mobileapp-list.md
+                    - name: Obter
+                      href: api/intune-shared-mobileapp-get.md
+                    - name: atribuir ação
+                      href: api/intune-shared-mobileapp-assign.md
+                    - name: getTopMobileApps
+                      href: api/intune-shared-mobileapp-gettopmobileapps.md
+                    - name: ação updateRelationships
+                      href: api/intune-shared-mobileapp-updaterelationships.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-mobileapp-haspayloadlinks.md
+                - name: Configurações de atribuição de aplicativo móvel
+                  href: resources/intune-shared-mobileappassignmentsettings.md
                 - name: Evento de solução de problemas de aplicativo móvel
                   href: resources/intune-shared-mobileapptroubleshootingevent.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-shared-mobileapptroubleshootingevent-list.md
                     - name: Obter
                       href: api/intune-shared-mobileapptroubleshootingevent-get.md
@@ -7225,6 +7315,25 @@
                   href: resources/intune-shared-runstate.md
                 - name: Opções de geração do estado da interface do usuário salvas
                   href: resources/intune-shared-saveduistategenerationoptions.md
+                - name: Configuração direcionada de aplicativo gerenciado
+                  href: resources/intune-shared-targetedmanagedappconfiguration.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-targetedmanagedappconfiguration-list.md
+                    - name: Obter
+                      href: api/intune-shared-targetedmanagedappconfiguration-get.md
+                    - name: Criar
+                      href: api/intune-shared-targetedmanagedappconfiguration-create.md
+                    - name: Excluir
+                      href: api/intune-shared-targetedmanagedappconfiguration-delete.md
+                    - name: Atualizar
+                      href: api/intune-shared-targetedmanagedappconfiguration-update.md
+                    - name: atribuir ação
+                      href: api/intune-shared-targetedmanagedappconfiguration-assign.md
+                    - name: ação targetApps
+                      href: api/intune-shared-targetedmanagedappconfiguration-targetapps.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md
                 - name: URI
                   href: resources/intune-shared-uri.md
                 - name: Usuário
@@ -7250,6 +7359,21 @@
                   href: resources/intune-shared-vpptokenaccounttype.md
                 - name: Causa da falha da ação do token VPP
                   href: resources/intune-shared-vpptokenactionfailurereason.md
+                - name: Configurações de atribuição do aplicativo LOB do Win32
+                  href: resources/intune-shared-win32lobappassignmentsettings.md
+                - name: Notificação de aplicativo LOB do Win32
+                  href: resources/intune-shared-win32lobappnotification.md
+                - name: Configurações de atribuição do aplicativo Windows AppX
+                  href: resources/intune-shared-windowsappxappassignmentsettings.md
+                - name: Perfil de implantação do Windows Autopilot
+                  href: resources/intune-shared-windowsautopilotdeploymentprofile.md
+                  items:
+                    - name: Obter
+                      href: api/intune-shared-windowsautopilotdeploymentprofile-get.md
+                    - name: atribuir ação
+                      href: api/intune-shared-windowsautopilotdeploymentprofile-assign.md
+                    - name: ação hasPayloadLinks
+                      href: api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md
                 - name: Configuração de ingresso no domínio do Windows
                   href: resources/intune-shared-windowsdomainjoinconfiguration.md
                   items:
@@ -7263,6 +7387,23 @@
                       href: api/intune-shared-windowsdomainjoinconfiguration-delete.md
                     - name: Atualizar
                       href: api/intune-shared-windowsdomainjoinconfiguration-update.md
+                - name: Configurações de atribuição do aplicativo Windows universal AppX
+                  href: resources/intune-shared-windowsuniversalappxappassignmentsettings.md
+                - name: Estado do Windows Update
+                  href: resources/intune-shared-windowsupdatestate.md
+                  items:
+                    - name: Lista
+                      href: api/intune-shared-windowsupdatestate-list.md
+                    - name: Obter
+                      href: api/intune-shared-windowsupdatestate-get.md
+                    - name: Criar
+                      href: api/intune-shared-windowsupdatestate-create.md
+                    - name: Excluir
+                      href: api/intune-shared-windowsupdatestate-delete.md
+                    - name: Atualizar
+                      href: api/intune-shared-windowsupdatestate-update.md
+                - name: Status do Windows Update
+                  href: resources/intune-shared-windowsupdatestatus.md
             - name: Despesas de telecomunicações
               href: resources/intune-tem-conceptual.md
               items:
@@ -7974,7 +8115,7 @@
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: Obter
                   href: api/certificatebasedauthconfiguration-get.md
-                - name: Criar
+                - name: Create
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: Excluir
                   href: api/certificatebasedauthconfiguration-delete.md
@@ -9701,7 +9842,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-tasks.md
-                - name: Criar
+                - name: Create
                   href: api/outlookuser-post-tasks.md
                 - name: Obter
                   href: api/outlooktask-get.md
@@ -9720,7 +9861,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskfolders.md
-                - name: Criar
+                - name: Create
                   href: api/outlookuser-post-taskfolders.md
                 - name: Obter
                   href: api/outlooktaskfolder-get.md
@@ -9737,7 +9878,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskgroups.md
-                - name: Criar
+                - name: Create
                   href: api/outlookuser-post-taskgroups.md
                 - name: Obter
                   href: api/outlooktaskgroup-get.md
@@ -9795,7 +9936,7 @@
         - name: Workbooks e gráficos
           displayName: Excel
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/excel.md
             - name: Workbook
               href: resources/workbook.md

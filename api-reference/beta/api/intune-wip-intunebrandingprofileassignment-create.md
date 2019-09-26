@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a19f0c9f247c550b437cf396b9b0f42d42586475
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dd4799d5066b57a60b3a59a2398fb79bbb8c3881
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347245"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195241"
 ---
 # <a name="create-intunebrandingprofileassignment"></a>Criar intuneBrandingProfileAssignment
 
@@ -91,8 +91,6 @@ Content-Length: 220
   }
 }
 ```
-
-
 
 
 

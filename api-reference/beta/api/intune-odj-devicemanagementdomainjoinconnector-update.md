@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3adf6799242ec698b4cb62f4f702bb027e27c0b0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 077f1dc64d3edfcd47769c2ca1d99c92e68bf55c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353124"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190984"
 ---
 # <a name="update-devicemanagementdomainjoinconnector"></a>Atualizar deviceManagementDomainJoinConnector
 
@@ -96,8 +96,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
-
 
 
 

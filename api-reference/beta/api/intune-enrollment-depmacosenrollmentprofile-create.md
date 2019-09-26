@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f02a4564c0d4ebb1471ea3b967c8afb371080c2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0a8298f014b0c72e3827e5442c2add4edf48d878
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348232"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185410"
 ---
 # <a name="create-depmacosenrollmentprofile"></a>Criar depMacOSEnrollmentProfile
 
@@ -76,6 +76,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depMacOS
 |diagnosticsDisabled|Booliano|Indica se o painel de configuração de diagnóstico está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |displayToneSetupDisabled|Booliano|Indica se a tela de configuração do displaytone está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |privacyPaneDisabled|Booliano|Indica se a tela de privacidade está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|screenTimeScreenDisabled|Booliano|Indica se a configuração de tempo limite da tela está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |deviceNameTemplate|String|Define um padrão literal ou de nome. Herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |registrationDisabled|Booliano|Indica se o registro está desabilitado|
 |fileVaultDisabled|Booliano|Indica se o compartimento de arquivos está desabilitado|
@@ -95,7 +96,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 1191
+Content-length: 1228
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -123,6 +124,7 @@ Content-length: 1191
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
   "registrationDisabled": true,
   "fileVaultDisabled": true,
@@ -137,7 +139,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1240
+Content-Length: 1277
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -166,6 +168,7 @@ Content-Length: 1240
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
   "registrationDisabled": true,
   "fileVaultDisabled": true,
@@ -174,8 +177,6 @@ Content-Length: 1240
   "chooseYourLockScreenDisabled": true
 }
 ```
-
-
 
 
 

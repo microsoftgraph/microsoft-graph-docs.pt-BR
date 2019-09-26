@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a0bf635b6204956dc12360ae0072643b49206fad
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9c66bbeff0de29e30e52eb505e8de36a34aff11b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351368"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189491"
 ---
 # <a name="list-resourceoperations"></a>Listar resourceOperations
 
@@ -79,8 +79,6 @@ Content-Length: 359
   ]
 }
 ```
-
-
 
 
 

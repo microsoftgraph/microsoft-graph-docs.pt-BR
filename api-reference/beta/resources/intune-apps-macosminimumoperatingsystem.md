@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e1eeef6db49fa4320016559908ff34830f8e6b6e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 980e780df48b857705dad43c44d5e4e6c4325461
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366746"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199297"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>tipo de recurso macOSMinimumOperatingSystem
 
@@ -30,6 +30,8 @@ O sistema operacional mínimo necessário para um aplicativo do MacOS.
 |v10_11|Booliano|Mac OS 10,11 ou posterior.|
 |v10_12|Booliano|Mac OS 10,12 ou posterior.|
 |v10_13|Booliano|Mac OS 10,13 ou posterior.|
+|v10_14|Booliano|Mac OS 10,14 ou posterior.|
+|v10_15|Booliano|Mac OS 10,15 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -50,7 +52,9 @@ Veja a seguir uma representação JSON do recurso.
   "v10_10": true,
   "v10_11": true,
   "v10_12": true,
-  "v10_13": true
+  "v10_13": true,
+  "v10_14": true,
+  "v10_15": true
 }
 ```
 

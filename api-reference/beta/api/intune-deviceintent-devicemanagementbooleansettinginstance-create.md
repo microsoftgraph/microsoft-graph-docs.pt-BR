@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9253cb2a65edde8b85b9177410b436271dbae16a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 21482fdd75f83a2b459edfca2be63e1c8a40ce2b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343941"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186194"
 ---
 # <a name="create-devicemanagementbooleansettinginstance"></a>Criar deviceManagementBooleanSettingInstance
 
@@ -96,8 +96,6 @@ Content-Length: 225
   "value": true
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 057181a80c90e5c3c20d62c6f14da35fcea02976
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9191d6552f2e93850fce126a5ea90d1f7bba88c7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335002"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37198961"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -35,6 +35,8 @@ ms.locfileid: "36335002"
 - [Tipo de gabinete](intune-devices-chassistype.md)
 - [Condição de gerenciamento de cerca geográfica circular](intune-fencing-circulargeofencemanagementcondition.md)
 - [Estado de conformidade](intune-devices-compliancestate.md)
+- [Ação do Gerenciador de configurações](intune-devices-configurationmanageraction.md)
+- [Tipo de ação do Gerenciador de configurações](intune-devices-configurationmanageractiontype.md)
 - [Recursos habilitados pelo cliente do Gerenciador de Configurações](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Estado de integridade do cliente de gerenciador de configurações](intune-devices-configurationmanagerclienthealthstate.md)
 - [Informações do cliente do Configuration Manager](intune-devices-configurationmanagerclientinformation.md)
@@ -57,6 +59,7 @@ ms.locfileid: "36335002"
 - [Tipo de detecção de script de integridade do dispositivo](intune-devices-devicehealthscriptdetectiontype.md)
 - [Definição de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Instância de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
+- [Evento de piloto automático de gerenciamento de dispositivos](intune-troubleshooting-devicemanagementautopilotevent.md)
 - [Instância de configuração booleana de gerenciamento de dispositivos](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [Definição de configuração da coleção de gerenciamento de dispositivos](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [Instância de configuração da coleção de gerenciamento de dispositivos](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
@@ -77,7 +80,6 @@ ms.locfileid: "36335002"
 - [Categoria de configuração de tentativa do gerenciamento de dispositivos](intune-deviceintent-devicemanagementintentsettingcategory.md)
 - [Estado do usuário de tentativa do gerenciamento de dispositivos](intune-deviceintent-devicemanagementintentuserstate.md)
 - [Resumo do estado do usuário de tentativa do gerenciamento de dispositivos](intune-deviceintent-devicemanagementintentuserstatesummary.md)
-- [Script de gerenciamento de dispositivo](intune-devices-devicemanagementscript.md)
 - [Atribuição de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptassignment.md)
 - [Estado do dispositivo de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptdevicestate.md)
 - [Atribuição de grupo de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptgroupassignment.md)
@@ -120,13 +122,13 @@ ms.locfileid: "36335002"
 - [Mensagem de notificação localizada](intune-notification-localizednotificationmessage.md)
 - [Resultado da ação de localizar dispositivo](intune-devices-locatedeviceactionresult.md)
 - [Condição de gerenciamento local](intune-fencing-locationmanagementcondition.md)
+- [Nível de log](intune-troubleshooting-loglevel.md)
 - [Usuário conectado](intune-devices-loggedonuser.md)
 - [Estado de modo perdido](intune-devices-lostmodestate.md)
 - [Dispositivo gerenciado](intune-devices-manageddevice.md)
 - [Configurações de limpeza do dispositivo gerenciado](intune-devices-manageddevicecleanupsettings.md)
 - [Modelos e fabricantes de dispositivos gerenciados](intune-devices-manageddevicemodelsandmanufacturers.md)
 - [Visão geral do dispositivo gerenciado](intune-devices-manageddeviceoverview.md)
-- [Tipo de proprietário do dispositivo gerenciado](intune-devices-manageddeviceownertype.md)
 - [Estado de integridade reportado pelo parceiro do dispositivo gerenciado](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Ação remota de dispositivo gerenciados](intune-devices-manageddeviceremoteaction.md)
 - [Tipo de agente de gerenciamento](intune-devices-managementagenttype.md)
@@ -173,11 +175,15 @@ ms.locfileid: "36335002"
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Linha de base de análise da experiência do usuário](intune-devices-userexperienceanalyticsbaseline.md)
 - [Categoria de análise da experiência do usuário](intune-devices-userexperienceanalyticscategory.md)
+- [Estado de integridade da análise da experiência do usuário](intune-devices-userexperienceanalyticshealthstate.md)
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsight.md)
+- [Gravidade da visão da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsightseverity.md)
 - [Valor da visão da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsightvalue.md)
 - [Métrica de análise da experiência do usuário](intune-devices-userexperienceanalyticsmetric.md)
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsoverview.md)
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
+- [Estado de implantação do piloto automático do Windows](intune-troubleshooting-windowsautopilotdeploymentstate.md)
+- [Tipo de registro do Windows AutoPilot](intune-troubleshooting-windowsautopilotenrollmenttype.md)
 - [Resultado da ação de verificação do Windows Defender](intune-devices-windowsdefenderscanactionresult.md)
 - [Conta do dispositivo Windows](intune-devices-windowsdeviceaccount.md)
 - [Conta do AD de dispositivo Windows](intune-devices-windowsdeviceadaccount.md)
@@ -199,4 +205,5 @@ ms.locfileid: "36335002"
 - [Aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapp.md)
 - [Estado de integridade do aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapphealthstate.md)
 - [Estado de proteção do Windows](intune-devices-windowsprotectionstate.md)
+
 

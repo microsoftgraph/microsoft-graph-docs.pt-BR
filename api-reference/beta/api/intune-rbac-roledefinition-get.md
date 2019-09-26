@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c0a8bb93580f58216a6a0f9a2dd85900cf490b64
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: af6900bd995e8db8720f216b59dd077a872158b4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351249"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189323"
 ---
 # <a name="get-roledefinition"></a>Acessar roleDefinition
 
@@ -121,8 +121,6 @@ Content-Length: 1369
   }
 }
 ```
-
-
 
 
 

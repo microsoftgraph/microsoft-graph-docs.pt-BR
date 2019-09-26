@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f7fa99c25285513516b5ed444d97ea55444e1aab
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 805a96c94e0cf1e1ff0289a77b7924c0fd3ba3c4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352732"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190625"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>Obter deviceManagementExchangeOnPremisesPolicy
 
@@ -96,8 +96,6 @@ Content-Length: 777
   }
 }
 ```
-
-
 
 
 

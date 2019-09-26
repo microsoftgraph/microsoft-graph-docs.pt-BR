@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d2169c30306eace3c9a9d87653763286200b83d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 354291fc9261d015ac3b3512b83bd3c3e2d3ecf6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353509"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191488"
 ---
 # <a name="delete-windowsinformationprotectiondeviceregistration"></a>Excluir windowsInformationProtectionDeviceRegistration
 
@@ -63,8 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

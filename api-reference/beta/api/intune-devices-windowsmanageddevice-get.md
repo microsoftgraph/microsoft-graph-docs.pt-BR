@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7f79b7ab9798f8d052660f303727b0456f9a023
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 05a06e078887fb36272a5e5e22beadef19f74bef
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309895"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185606"
 ---
 # <a name="get-windowsmanageddevice"></a>Obter windowsManagedDevice
 
@@ -247,8 +247,6 @@ Content-Length: 7930
   }
 }
 ```
-
-
 
 
 

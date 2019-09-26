@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 714bc504213482fea209b01b17522e443b874eda
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9460cba5969f601ec656aeee0899892311e38e59
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354384"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193414"
 ---
 # <a name="create-androidmanagedappregistration"></a>Criar androidManagedAppRegistration
 
@@ -144,8 +144,6 @@ Content-Length: 987
   "patchVersion": "Patch Version value"
 }
 ```
-
-
 
 
 

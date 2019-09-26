@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ca646cddb06ad1c30cee62e423cbdbf3acbf49a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 96e9fbc756567a3c0c1c1a4a263760bc14eaf882
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357324"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193419"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Criar defaultManagedAppProtection
 
@@ -327,8 +327,6 @@ Content-Length: 3918
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
-
-
 
 
 

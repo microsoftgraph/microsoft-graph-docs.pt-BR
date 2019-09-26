@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26cc3d7da788de51c3514156a5de8004ca170df7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 225921eac6fefc68e8f697d45fa8ae751fc74221
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351445"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189568"
 ---
 # <a name="getassignedroledetails-function"></a>função getAssignedRoleDetails
 
@@ -77,8 +77,6 @@ Content-Length: 245
   }
 }
 ```
-
-
 
 
 

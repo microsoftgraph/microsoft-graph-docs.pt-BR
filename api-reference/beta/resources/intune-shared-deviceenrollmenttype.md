@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b53d279863ad3e17691b9e4d0397ba5f7d1b408
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f96ba12380e67ee97909b2c6ef1787ba9fcc7a3a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372080"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196326"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeração deviceEnrollmentType
 
@@ -33,6 +33,9 @@ Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 |windowsAutoEnrollment|178|Registro automático do Windows 10. (Adicionar conta de trabalho)|
 |windowsBulkAzureDomainJoin|8 |Ingresso no Azure AD em massa do Windows 10.|
 |windowsCoManagement|9 |Co-gerenciamento de intergestão do Windows 10 disparado por AutoPilot ou política de grupo.|
+|appleUserEnrollment|11|Dispositivo gerenciado pelo registro de usuário da Apple|
+|appleUserEnrollmentWithServiceAccount|3,6|Dispositivo gerenciado pelo registro de usuário da Apple com conta de serviço|
+|appleUserEnrollmentWithAzureAD|Treze|Dispositivo gerenciado pelo registro de usuário da Apple com o Azure Active Directory|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b05281ba4acbf3b13d391ac1adbfc94d25a5b787
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1e3fd6884a750ab98f6ca6bc4d856a969c72a3c3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354146"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193239"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>Obter managedAppPolicyDeploymentSummary
 
@@ -92,8 +92,6 @@ Content-Length: 688
   }
 }
 ```
-
-
 
 
 

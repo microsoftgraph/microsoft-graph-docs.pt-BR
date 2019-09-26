@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 57a3e8be70af9e5de48209d751130f921cbd7a8f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 321192b011ae6069140054cd40fd8fab5b533ef9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343337"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185732"
 ---
 # <a name="get-devicemanagementsettingcategory"></a>Obter deviceManagementSettingCategory
 
@@ -76,8 +76,6 @@ Content-Length: 187
   }
 }
 ```
-
-
 
 
 

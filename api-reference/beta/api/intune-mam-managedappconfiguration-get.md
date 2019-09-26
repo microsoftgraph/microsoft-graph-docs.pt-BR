@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be3d7744366543c254ea3c1d15b743ada87eb841
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1264d6b21f5a366ee6b7ca66dc10550d11185648
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354293"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193316"
 ---
 # <a name="get-managedappconfiguration"></a>Get managedAppConfiguration
 
@@ -92,8 +92,6 @@ Content-Length: 618
   }
 }
 ```
-
-
 
 
 

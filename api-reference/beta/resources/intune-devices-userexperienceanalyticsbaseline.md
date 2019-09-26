@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce77b448d381547bfc77b6a27e1e9935f252be5e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0d3d53a19408b6a87f0aca2cc4187895d67d4e38
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371440"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196725"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>tipo de recurso userExperienceAnalyticsBaseline
 
@@ -35,7 +35,8 @@ A entidade de linha de base da experiência do usuário contém valores de linha
 |id|String|O identificador exclusivo da linha de base da análise da experiência do usuário.|
 |displayName|String|O nome da linha de base da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da linha de base da análise da experiência do usuário.|
-|overallRegressionThreshold|Int32|O limite de regressão geral da linha de base da análise da experiência do usuário.|
+|isBuiltIn|Booliano|Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.|
+|createdDateTime|DateTimeOffset|A data em que a linha de base personalizada foi criada.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -57,7 +58,8 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "displayName": "String",
   "overallScore": 1024,
-  "overallRegressionThreshold": 1024
+  "isBuiltIn": true,
+  "createdDateTime": "String (timestamp)"
 }
 ```
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cde441e551ef1bf6625e88e745d3392fbd7d3271
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8b929a2a01126b1ec1803f005be1bf4e14f63938
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357254"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193323"
 ---
 # <a name="list-iosmanagedappregistrations"></a>Listar iosManagedAppRegistrations
 
@@ -95,8 +95,6 @@ Content-Length: 1060
   ]
 }
 ```
-
-
 
 
 

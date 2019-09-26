@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1e48584e62bd2b005d3f2b0d46020ebcb8b7c0f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0ccba30fc10e192bf8be05ad8d2e766ec445ade8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309657"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185347"
 ---
 # <a name="get-deponboardingsetting"></a>Obter depOnboardingSetting
 
@@ -89,8 +89,6 @@ Content-Length: 740
   }
 }
 ```
-
-
 
 
 

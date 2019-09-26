@@ -4,13 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-doc_type: resourcePageType
-ms.openlocfilehash: cc082578bea7e6b1d477547538e01dbaa1ef2bdb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d03cd932386b4b36af2f43beefee5cf59d21395c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998230"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196494"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 
@@ -24,7 +23,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 
 - [Configuração de conector de certificado](intune-onboarding-certificateconnectorsetting.md)
 - [Dados de gerenciamento de aplicativo e dispositivo](intune-onboarding-deviceandappmanagementdata.md)
-- [Configuração de registro do dispositivo](intune-onboarding-deviceenrollmentconfiguration.md)
 - [Configuração de limite do registro do dispositivo](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Restrição da plataforma de registro do dispositivo](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Configuração das restrições da plataforma de registro do dispositivo](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)

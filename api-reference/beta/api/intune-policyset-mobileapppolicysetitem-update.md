@@ -1,0 +1,126 @@
+---
+title: Atualizar mobileAppPolicySetItem
+description: Atualiza as propriedades de um objeto mobileAppPolicySetItem.
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: apiPageType
+ms.openlocfilehash: 9914898518f3878d010923ab966ec6e1d0d94feb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191749"
+---
+# <a name="update-mobileapppolicysetitem"></a>Atualizar mobileAppPolicySetItem
+
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+
+Atualiza as propriedades de um objeto [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) .
+
+## <a name="prerequisites"></a>Pré-requisitos
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Cabeçalho|Valor|
+|:---|:---|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Aceitar|application/json|
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça uma representação JSON do objeto [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) .
+
+A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md).
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|String|Chave do MobileAppPolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|createdDateTime|DateTimeOffset|Hora de criação do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|lastModifiedDateTime|DateTimeOffset|Hora da última modificação do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|payloadId|String|PayloadId do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|itemType|String|policySetType do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|displayName|String|DisplayName do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
+|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|finalidade|[installIntent](../resources/intune-shared-installintent.md)|Intenção de instalação do MobileAppPolicySetItem. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|configurações|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Configurações do MobileAppPolicySetItem.|
+
+
+
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) atualizado no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+``` http
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
+Content-type: application/json
+Content-length: 418
+
+{
+  "@odata.type": "#microsoft.graph.mobileAppPolicySetItem",
+  "payloadId": "Payload Id value",
+  "itemType": "Item Type value",
+  "displayName": "Display Name value",
+  "status": "validating",
+  "errorCode": "unauthorized",
+  "guidedDeploymentTags": [
+    "Guided Deployment Tags value"
+  ],
+  "intent": "required",
+  "settings": {
+    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+  }
+}
+```
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 590
+
+{
+  "@odata.type": "#microsoft.graph.mobileAppPolicySetItem",
+  "id": "b6ffe6cf-e6cf-b6ff-cfe6-ffb6cfe6ffb6",
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "payloadId": "Payload Id value",
+  "itemType": "Item Type value",
+  "displayName": "Display Name value",
+  "status": "validating",
+  "errorCode": "unauthorized",
+  "guidedDeploymentTags": [
+    "Guided Deployment Tags value"
+  ],
+  "intent": "required",
+  "settings": {
+    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+  }
+}
+```
+
+
+
+

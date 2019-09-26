@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 42c21f7584e0f747d2f18203cb10ac6577ee984d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7612952f7e91d9dc0eec10893440ecf47dcc1fe7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343059"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188910"
 ---
 # <a name="create-securitybaselinecategorystatesummary"></a>Criar securityBaselineCategoryStateSummary
 
@@ -105,8 +105,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

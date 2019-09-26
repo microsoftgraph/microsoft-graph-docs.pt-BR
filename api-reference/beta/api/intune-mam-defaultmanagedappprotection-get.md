@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e69a6b6e6586ef3a761802497ae2a11b0f8c7075
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4558fd45dfcf2c9c8ef485e224332065a505c439
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357310"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193442"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
@@ -164,8 +164,6 @@ Content-Length: 4119
   }
 }
 ```
-
-
 
 
 

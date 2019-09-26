@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f85ff4bb18d9ed6bc9e7f2ed6d432cfeeab80a46
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bff6aab2a7a7d29d1d6c96b5750334b4ab7611f1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357464"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193652"
 ---
 # <a name="list-grouppolicypresentationvaluelongdecimals"></a>Listar groupPolicyPresentationValueLongDecimals
 
@@ -77,8 +77,6 @@ Content-Length: 321
   ]
 }
 ```
-
-
 
 
 

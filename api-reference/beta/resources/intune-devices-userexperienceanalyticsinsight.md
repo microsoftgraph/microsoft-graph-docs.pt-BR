@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36277b147e7eabc6f28aef3877538ebbc429f381
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 70cb1e7405fdffcff0f1fd6a8a8361df6d941788
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341210"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196697"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>tipo de recurso userExperienceAnalyticsInsight
 
@@ -25,7 +25,8 @@ A visão geral da análise da experiência do usuário é a recomendação de me
 |:---|:---|:---|
 |userExperienceAnalyticsMetricId|String|O identificador exclusivo da visão geral da análise da experiência do usuário.|
 |insightid|String|O identificador exclusivo da visão geral da análise da experiência do usuário.|
-|valor|coleção [userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)|O valor da visão da análise da experiência do usuário.|
+|values|coleção [userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)|O valor da visão da análise da experiência do usuário.|
+|severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|O valor da visão da análise da experiência do usuário. Os valores possíveis são: `none`, `informational`, `warning`, `error`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -42,11 +43,13 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsight",
   "userExperienceAnalyticsMetricId": "String",
   "insightId": "String",
-  "value": [
+  "values": [
     {
-      "@odata.type": "microsoft.graph.insightValueDouble"
+      "@odata.type": "microsoft.graph.insightValueDouble",
+      "value": "<Unknown Primitive Type Edm.Double>"
     }
-  ]
+  ],
+  "severity": "String"
 }
 ```
 

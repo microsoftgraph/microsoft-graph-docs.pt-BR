@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 95ec77cd1431cfbd9190b844a0ac620af21958b7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2f46b385320d2cc51cfcd3b85f896dc78f8d641d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352480"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190373"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>Atualizar onPremisesConditionalAccessSettings
 
@@ -105,8 +105,6 @@ Content-Length: 324
   "overrideDefaultRule": true
 }
 ```
-
-
 
 
 

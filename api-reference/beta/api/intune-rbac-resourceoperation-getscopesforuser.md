@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 51f07c7d1401b453e7cf3131fb319aa0290aed63
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: eef2bac6d8b4144cbce5c48f40b91c64c35fec93
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351360"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189477"
 ---
 # <a name="getscopesforuser-function"></a>função Getscopesforuser à
 
@@ -78,8 +78,6 @@ Content-Length: 56
   ]
 }
 ```
-
-
 
 
 

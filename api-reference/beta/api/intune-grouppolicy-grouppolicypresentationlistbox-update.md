@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e7792f1359b76804c57ff1d814b8141113b4c5d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f349ae40481c5d4b846a925d347b348ef4136e12
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357772"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194268"
 ---
 # <a name="update-grouppolicypresentationlistbox"></a>Atualizar groupPolicyPresentationListBox
 
@@ -96,8 +96,6 @@ Content-Length: 278
   "valuePrefix": "Value Prefix value"
 }
 ```
-
-
 
 
 

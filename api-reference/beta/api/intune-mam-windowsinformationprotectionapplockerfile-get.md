@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b99f5c103c3647a754fa63ef79e38d71c626fb7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3bf448264c7f038854b7f0307d1034f2cc0d493f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353565"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191479"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>Obter windowsInformationProtectionAppLockerFile
 
@@ -82,8 +82,6 @@ Content-Length: 291
   }
 }
 ```
-
-
 
 
 

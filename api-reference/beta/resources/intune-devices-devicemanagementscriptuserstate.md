@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce2d0971e953199cb8f79ca0963d3f2e53843f91
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a7ec0bba4bbbc6550ea7e2200a994a987f2bf499
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369994"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37197005"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>tipo de recurso deviceManagementScriptUserState
 
@@ -32,7 +32,7 @@ Contém propriedades para o estado de execução do usuário do script de gerenc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
+|id|String|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito para um usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
 |userPrincipalName|String|Nome principal do usuário do usuário específico.|

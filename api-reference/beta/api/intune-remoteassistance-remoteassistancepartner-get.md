@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b4ccecbc4e1b9f9218100e02bd42f39c41f796ef
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 58ca417017dacb6ac5cc20fac1c5f0cc7e0b5cba
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347644"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194800"
 ---
 # <a name="get-remoteassistancepartner"></a>Acessar remoteAssistancePartner
 
@@ -79,8 +79,6 @@ Content-Length: 346
   }
 }
 ```
-
-
 
 
 
