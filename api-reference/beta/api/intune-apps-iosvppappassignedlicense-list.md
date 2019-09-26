@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2ed321cea930edd195d3ee31dbc3f1354ea6877
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 056a1bf8fd76b1ba38614258c814911ba6571ec0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330367"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177721"
 ---
 # <a name="list-iosvppappassignedlicenses"></a>Listar iosVppAppAssignedLicenses
 
@@ -78,8 +78,6 @@ Content-Length: 340
   ]
 }
 ```
-
-
 
 
 

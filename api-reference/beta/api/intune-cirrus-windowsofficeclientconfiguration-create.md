@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dffd413ca369378f3e3eccdbd1d3452b4854a72d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0ec83539be47e8c488917cbd4ba8570cd6d22fad
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328233"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170767"
 ---
 # <a name="create-windowsofficeclientconfiguration"></a>Criar windowsOfficeClientConfiguration
 
@@ -145,8 +145,6 @@ Content-Length: 1069
   ]
 }
 ```
-
-
 
 
 

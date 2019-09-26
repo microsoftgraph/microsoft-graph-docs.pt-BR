@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d2c385113e3b2f113fa86d9c8bf071a88d7eb36
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 737630be7d4a97622eb173e3a1bea09033c551a3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330731"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177882"
 ---
 # <a name="get-ioslobappprovisioningconfigurationassignment"></a>Obter iosLobAppProvisioningConfigurationAssignment
 
@@ -78,8 +78,6 @@ Content-Length: 262
   }
 }
 ```
-
-
 
 
 

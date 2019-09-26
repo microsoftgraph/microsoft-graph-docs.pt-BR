@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11e555e428426602b8157e077da589188c001fcf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4d841c2e959398f6704c5733dafd40576d598e06
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346188"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168493"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Criar deviceComplianceScheduledActionForRule
 
@@ -87,8 +87,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
-
 
 
 

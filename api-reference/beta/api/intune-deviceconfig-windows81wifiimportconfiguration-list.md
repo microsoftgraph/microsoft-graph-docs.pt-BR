@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bc3dd518c0c5ee2c98dc07461840b2c1ebca633
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 20de976a74332ed54770aced080e2017e989ceeb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344599"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181956"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>Listar windows81WifiImportConfigurations
 
@@ -108,8 +108,6 @@ Content-Length: 1499
   ]
 }
 ```
-
-
 
 
 

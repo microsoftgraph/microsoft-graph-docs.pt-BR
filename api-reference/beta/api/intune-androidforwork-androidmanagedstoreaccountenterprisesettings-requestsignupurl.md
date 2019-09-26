@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a290b2deb1241a15760dfc09919a639608e8371
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cf912db17ed1451a32886906c15a03bb64fb3264
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324998"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178253"
 ---
 # <a name="requestsignupurl-action"></a>Ação requestSignupUrl
 
@@ -84,8 +84,6 @@ Content-Length: 56
   "value": "https://example.com/requestSignupUrl/"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d6c85f4bfed21987a96c0ce77c06329b78e260b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b90bf40d3be69b920b59808e75322701e77794f0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329597"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172937"
 ---
 # <a name="list-managedioslobapps"></a>Listar managedIOSLobApps
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1866
+Content-Length: 1890
 
 {
   "value": [
@@ -110,7 +110,8 @@ Content-Length: 1866
         "v9_0": true,
         "v10_0": true,
         "v11_0": true,
-        "v12_0": true
+        "v12_0": true,
+        "v13_0": true
       },
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "versionNumber": "Version Number value",
@@ -120,8 +121,6 @@ Content-Length: 1866
   ]
 }
 ```
-
-
 
 
 

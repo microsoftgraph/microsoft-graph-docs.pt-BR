@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d6269647056c6e8e07367697f9e65434a4a2956c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c596ed38b7b914ce41f1dbf1a05800585047ed18
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345054"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182425"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>Obter windows10NetworkBoundaryConfiguration
 
@@ -138,8 +138,6 @@ Content-Length: 2334
   }
 }
 ```
-
-
 
 
 

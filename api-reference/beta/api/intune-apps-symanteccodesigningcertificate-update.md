@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9503a4d788df9dacb0a2d4ea98a0f343516a08e9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 14bf754dbb98d631ac24c6a548c57650268c9d11
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328953"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172265"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Atualizar symantecCodeSigningCertificate
 
@@ -111,8 +111,6 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
-
 
 
 

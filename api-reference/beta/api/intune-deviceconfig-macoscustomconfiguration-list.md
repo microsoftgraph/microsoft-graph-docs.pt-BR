@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fec6892973d0c417e5d3a95f2c63c06a00601823
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a9605792fa41e02b5ab708c3d7ec8b8a958f710d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315495"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178792"
 ---
 # <a name="list-macoscustomconfigurations"></a>Listar macOSCustomConfigurations
 
@@ -108,8 +108,6 @@ Content-Length: 1491
   ]
 }
 ```
-
-
 
 
 

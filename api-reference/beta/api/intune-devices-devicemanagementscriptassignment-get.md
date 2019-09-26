@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5354dafb3720dee4eb7e869d8a5afaf779858af
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bcf9397893b5d34f7fda2d641886eb9e213657cb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310441"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180556"
 ---
 # <a name="get-devicemanagementscriptassignment"></a>Obter deviceManagementScriptAssignment
 
@@ -78,8 +78,6 @@ Content-Length: 250
   }
 }
 ```
-
-
 
 
 

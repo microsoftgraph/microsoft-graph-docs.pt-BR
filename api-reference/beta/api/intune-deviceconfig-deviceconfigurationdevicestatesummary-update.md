@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a386bf3ad82d66a2fe6f2babdadc667fb6abba35
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 207ad0b9da5130c2ac07f1d533e8ec39a411fd76
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345950"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168247"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>Atualizar deviceConfigurationDeviceStateSummary
 
@@ -105,8 +105,6 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
-
-
 
 
 

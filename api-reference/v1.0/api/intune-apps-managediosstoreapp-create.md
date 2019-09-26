@@ -5,12 +5,12 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9246eb4227e8c7b47992589a5aae9c0e85a462a4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 96dcc2cdd5c257d44ce62ea6e95abf1210960e1c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002248"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196116"
 ---
 # <a name="create-managediosstoreapp"></a>Criar managedIOSStoreApp
 
@@ -19,13 +19,13 @@ ms.locfileid: "36002248"
 Cria um novo objeto [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -82,7 +82,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1084
+Content-length: 1104
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -116,7 +116,8 @@ Content-length: 1084
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true
   }
 }
 ```
@@ -126,7 +127,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1256
+Content-Length: 1276
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -163,7 +164,8 @@ Content-Length: 1256
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true
   }
 }
 ```

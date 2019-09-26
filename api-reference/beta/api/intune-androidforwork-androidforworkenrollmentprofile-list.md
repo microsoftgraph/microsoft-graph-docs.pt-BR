@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 408d43703285d42edebbc8c4269d3bbc0324ecb2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7552ae12d45d6b509e8cff76e1deec077be8fd77
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325075"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178330"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Listar androidForWorkEnrollmentProfiles
 
@@ -88,8 +88,6 @@ Content-Length: 765
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 298d90ec3a3f3e60a574f5d6ece401521f9c3ea9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4041e2461f65b9bf71ad269201303da5a1cf6708
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328897"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172209"
 ---
 # <a name="list-userappinstallstatuses"></a>Listar userAppInstallStatuses
 
@@ -79,8 +79,6 @@ Content-Length: 349
   ]
 }
 ```
-
-
 
 
 

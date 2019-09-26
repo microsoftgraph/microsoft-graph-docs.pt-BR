@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ac88383e48f3a605f24e0ef23cf32642485cc28b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 179e220d66c37e21c7d79b51e0c3d7cc9bbd7a66
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346062"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174897"
 ---
 # <a name="update-devicecomplianceuserstatus"></a>Atualizar deviceComplianceUserStatus
 
@@ -99,8 +99,6 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 

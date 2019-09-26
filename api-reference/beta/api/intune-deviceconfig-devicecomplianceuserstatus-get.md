@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c75ef6faf0cf2e6e8ab7a313e67055cecfbb780
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2d4bc6c851d61281c2c103276ff8edf83e2e8089
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346076"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174925"
 ---
 # <a name="get-devicecomplianceuserstatus"></a>Acessar deviceComplianceUserStatus
 
@@ -80,8 +80,6 @@ Content-Length: 369
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 05abdf4e8f31e31c15db485786a952ac68b4890c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 370ab8e6186080c57b736823019f553080a579ac
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331074"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177973"
 ---
 # <a name="update-androidmanagedstoreappconfiguration"></a>Atualizar androidManagedStoreAppConfiguration
 
@@ -135,8 +135,6 @@ Content-Length: 764
   "appSupportsOemConfig": true
 }
 ```
-
-
 
 
 

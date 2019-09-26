@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dec6d1f5a248b1ba6aaf06643a679884c8837639
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d1eb2d7e72f1ac5aeedfc99c8bc0cb7ac4f2f9c0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314305"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182150"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Listar windows10TeamGeneralConfigurations
 
@@ -125,8 +125,6 @@ Content-Length: 2428
   ]
 }
 ```
-
-
 
 
 

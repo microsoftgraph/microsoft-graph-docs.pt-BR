@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0efb04425869138fcd7e2c83c3f391f12972320a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d02fbfbecf8d981d07d4f862d20de411b090f367
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312660"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170018"
 ---
 # <a name="get-androiddeviceownercompliancepolicy"></a>Obter androidDeviceOwnerCompliancePolicy
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1175
+Content-Length: 1411
 
 {
   "value": {
@@ -80,6 +80,10 @@ Content-Length: 1175
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
     "version": 7,
+    "deviceThreatProtectionEnabled": true,
+    "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "securityRequireSafetyNetAttestationBasicIntegrity": true,
+    "securityRequireSafetyNetAttestationCertifiedDevice": true,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",
     "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -99,8 +103,6 @@ Content-Length: 1175
   }
 }
 ```
-
-
 
 
 

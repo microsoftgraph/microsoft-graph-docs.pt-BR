@@ -5,12 +5,12 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f986789d385fee43cea6cb285edadc59dcad6472
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58e66fe86523b8e5751e8847343814d203f933e0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014253"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196186"
 ---
 # <a name="get-iosstoreapp"></a>Acessar iosStoreApp
 
@@ -19,13 +19,13 @@ ms.locfileid: "36014253"
 Leia as propriedades e as relações do objeto [iosStoreApp](../resources/intune-apps-iosstoreapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1265
+Content-Length: 1287
 
 {
   "value": {
@@ -100,7 +100,8 @@ Content-Length: 1265
       "v9_0": true,
       "v10_0": true,
       "v11_0": true,
-      "v12_0": true
+      "v12_0": true,
+      "v13_0": true
     }
   }
 }

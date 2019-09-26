@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8178fa5f24a0642a5eb89e8b7ec05777a88a09db
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7f3620348095402ef8ea564f17d5ad53eb59ccc0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328505"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171331"
 ---
 # <a name="get-ebookinstallsummary"></a>Get eBookInstallSummary
 
@@ -81,8 +81,6 @@ Content-Length: 320
   }
 }
 ```
-
-
 
 
 

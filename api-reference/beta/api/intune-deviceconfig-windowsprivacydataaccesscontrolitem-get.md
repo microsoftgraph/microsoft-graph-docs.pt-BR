@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e001950c34bd96b6aaa73eb659e876afa585c310
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ed49a2f1b2b9025877d0157054fdae5f5adca4a1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313745"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181438"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>Obter windowsPrivacyDataAccessControlItem
 
@@ -79,8 +79,6 @@ Content-Length: 330
   }
 }
 ```
-
-
 
 
 

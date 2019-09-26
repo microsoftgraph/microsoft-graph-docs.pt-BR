@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: faa201f63172f20be260b2dafc6f42f14223526a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 03c74ccbc1fa9734d9b3eef1cd50d1704117d744
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328358"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171033"
 ---
 # <a name="create-managedebookcategory"></a>Criar managedEBookCategory
 
@@ -90,8 +90,6 @@ Content-Length: 215
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

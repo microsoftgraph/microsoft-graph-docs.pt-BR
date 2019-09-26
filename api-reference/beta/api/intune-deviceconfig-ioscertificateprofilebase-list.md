@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2d9d02e028df47bab5b6c0dedd3fe35d37503f6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d53cf7dc4af7ba69a4b335828b8de94f553a105f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345726"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168051"
 ---
 # <a name="list-ioscertificateprofilebases"></a>Listar iosCertificateProfileBases
 
@@ -110,8 +110,6 @@ Content-Length: 1600
   ]
 }
 ```
-
-
 
 
 

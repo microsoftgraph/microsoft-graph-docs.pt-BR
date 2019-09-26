@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d67a40c62519ccff03bfbb6047ad441e84b6275
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fc10c99329c7efd38f95d9cd41d94cae4e47ab30
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312625"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37169997"
 ---
 # <a name="update-androiddeviceownercompliancepolicy"></a>Atualizar androidDeviceOwnerCompliancePolicy
 
@@ -51,13 +51,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|deviceThreatProtectionEnabled|Booliano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Booliano|Exige que o dispositivo passe na verificação de integridade básica SafetyNet.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Exige que o dispositivo passe na verificação de dispositivo certificado SafetyNet.|
 |osMinimumVersion|String|Versão mínima do Android.|
 |osMaximumVersion|String|Versão máxima do Android.|
 |minAndroidSecurityPatchLevel|String|Nível mínimo de patch de segurança Android.|
@@ -87,7 +91,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 932
+Content-length: 1160
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -97,6 +101,10 @@ Content-length: 932
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "securityRequireSafetyNetAttestationBasicIntegrity": true,
+  "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -121,7 +129,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1104
+Content-Length: 1332
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -134,6 +142,10 @@ Content-Length: 1104
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "securityRequireSafetyNetAttestationBasicIntegrity": true,
+  "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -152,8 +164,6 @@ Content-Length: 1104
   "storageRequireEncryption": true
 }
 ```
-
-
 
 
 

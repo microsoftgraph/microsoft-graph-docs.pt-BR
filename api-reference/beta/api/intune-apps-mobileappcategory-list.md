@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e6d2ce72c3c1ddfc9e6b9f99bdcd14ad00cb072
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8cce7afc08467352837c2f781a480e074c2d3b69
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329283"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177168"
 ---
 # <a name="list-mobileappcategories"></a>Listar mobileAppCategories
 
@@ -77,8 +77,6 @@ Content-Length: 261
   ]
 }
 ```
-
-
 
 
 

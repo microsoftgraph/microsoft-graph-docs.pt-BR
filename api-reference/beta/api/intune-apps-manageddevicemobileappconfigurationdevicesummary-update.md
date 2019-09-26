@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bd35add678c40a7f79e42994b0cf1c512d3d979
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b23e1878cd578f1f065815fa299ae182e21e5ee6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329765"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177365"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>Atualizar managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -111,8 +111,6 @@ Content-Length: 409
   "configurationVersion": 4
 }
 ```
-
-
 
 
 

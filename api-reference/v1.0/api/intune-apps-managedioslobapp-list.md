@@ -5,12 +5,12 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8293e36339975857f35c8fdcd0242f43ebad06e0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ebf0c7ec0c55e46900357c0c26fe372d214dee5c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002227"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196130"
 ---
 # <a name="list-managedioslobapps"></a>Listar managedIOSLobApps
 
@@ -19,13 +19,13 @@ ms.locfileid: "36002227"
 Listar propriedades e relações dos objetos [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -61,7 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1656
+Content-Length: 1680
 
 {
   "value": [
@@ -102,7 +102,8 @@ Content-Length: 1656
         "v9_0": true,
         "v10_0": true,
         "v11_0": true,
-        "v12_0": true
+        "v12_0": true,
+        "v13_0": true
       },
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "versionNumber": "Version Number value",

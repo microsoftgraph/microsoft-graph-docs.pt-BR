@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8581a9ebc7f0a3b305b584bd35cfacba5636e6b6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9068922aba405ce2ed666ed6abadb1b44ace9045
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339439"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174547"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>Listar iosDeviceFeaturesConfigurations
 
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5210
+Content-Length: 6400
 
 {
   "value": [
@@ -212,13 +212,40 @@ Content-Length: 5210
         "@odata.type": "microsoft.graph.mimeContent",
         "type": "Type value",
         "value": "dmFsdWU="
+      },
+      "singleSignOnExtension": {
+        "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+        "realm": "Realm value",
+        "domains": [
+          "Domains value"
+        ],
+        "blockAutomaticLogin": true,
+        "cacheName": "Cache Name value",
+        "credentialBundleIdAccessControlList": [
+          "Credential Bundle Id Access Control List value"
+        ],
+        "domainRealms": [
+          "Domain Realms value"
+        ],
+        "isDefaultRealm": true,
+        "passwordBlockModification": true,
+        "passwordExpirationDays": 6,
+        "passwordExpirationNotificationDays": 2,
+        "userPrincipalName": "User Principal Name value",
+        "passwordRequireActiveDirectoryComplexity": true,
+        "passwordPreviousPasswordBlockCount": 2,
+        "passwordMinimumLength": 5,
+        "passwordMinimumAgeDays": 6,
+        "passwordRequirementsDescription": "Password Requirements Description value",
+        "requireUserPresence": true,
+        "activeDirectorySiteCode": "Active Directory Site Code value",
+        "passwordEnableLocalSync": true,
+        "blockActiveDirectorySiteAutoDiscovery": true
       }
     }
   ]
 }
 ```
-
-
 
 
 

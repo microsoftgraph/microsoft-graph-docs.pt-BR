@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 37e67efff5aef17b82a033e2b76dbeed707e072a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e9c9291fd27d0290c89817ce49d31127b10ac17a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313269"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180962"
 ---
 # <a name="migratetotemplate-action"></a>ação migrateToTemplate
 
@@ -80,8 +80,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

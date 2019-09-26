@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 54d237fa1f16c3ff6d4c5ad15906a2a2b4e59c8c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d1396020cfeaebbc824b986f1dc9333df8f97ab7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335995"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171145"
 ---
 # <a name="update-iosvppebookassignment"></a>Atualizar iosVppEBookAssignment
 
@@ -94,8 +94,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
-
 
 
 

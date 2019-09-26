@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a2eb4153a8faf30c7cc660b73a18848cfaafba3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 56fe9a9ebc8f68b517461d6f6ae7466e953ca366
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340440"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37175373"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
 
@@ -111,8 +111,6 @@ Content-Length: 443
   ]
 }
 ```
-
-
 
 
 

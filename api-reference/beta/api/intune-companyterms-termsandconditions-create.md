@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4101d6b7a5ef01b98cd39531790e422fd60fc6d7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 972f0bbc19a7e9571ec85b643ef8d917a92a49ec
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322104"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170627"
 ---
 # <a name="create-termsandconditions"></a>Criar termsAndConditions
 
@@ -61,6 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar termsAnd
 |bodyText|String|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |acceptanceStatement|String|Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |version|Int32|Inteiro que indica a versão atual dos termos. Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
@@ -74,7 +75,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions
 Content-type: application/json
-Content-length: 273
+Content-length: 335
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -83,7 +84,10 @@ Content-length: 273
   "title": "Title value",
   "bodyText": "Body Text value",
   "acceptanceStatement": "Acceptance Statement value",
-  "version": 7
+  "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -92,7 +96,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 505
+Content-Length: 567
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -105,11 +109,12 @@ Content-Length: 505
   "title": "Title value",
   "bodyText": "Body Text value",
   "acceptanceStatement": "Acceptance Statement value",
-  "version": 7
+  "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
-
 
 
 

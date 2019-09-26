@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b68b98d48d91dc37e8ba9b6b68ccd8e521b1694
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e6c3405a79c4eb6d09d759be14011122fad39ea2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341077"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37169101"
 ---
 # <a name="list-androidomacpconfigurations"></a>Listar androidOmaCpConfigurations
 
@@ -106,8 +106,6 @@ Content-Length: 1416
   ]
 }
 ```
-
-
 
 
 

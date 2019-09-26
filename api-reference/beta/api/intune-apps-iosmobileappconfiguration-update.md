@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 875cb3eae1388139dbf1d3a46d462369dd3e1e9b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cf817e1eab51af0dc69c2a54e860901cec6094b8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330633"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177819"
 ---
 # <a name="update-iosmobileappconfiguration"></a>Atualizar iosMobileAppConfiguration
 
@@ -131,8 +131,6 @@ Content-Length: 768
   ]
 }
 ```
-
-
 
 
 

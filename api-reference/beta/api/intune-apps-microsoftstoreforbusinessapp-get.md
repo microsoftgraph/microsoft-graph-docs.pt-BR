@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f4e43484f1276f33f65f52f10149cd3d98dff175
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a3a6e9f6433836a5d32e924d852176ea5702e3e1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329457"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177280"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>Get microsoftStoreForBusinessApp
 
@@ -112,8 +112,6 @@ Content-Length: 1397
   }
 }
 ```
-
-
 
 
 

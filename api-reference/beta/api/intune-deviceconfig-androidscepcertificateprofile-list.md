@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d6ad0d87099e15240daf314e198a8d43b1da3862
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ee9db33871be1381e772b4cec76c572eda910c33
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341021"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37169024"
 ---
 # <a name="list-androidscepcertificateprofiles"></a>Listar androidScepCertificateProfiles
 
@@ -125,8 +125,6 @@ Content-Length: 2160
   ]
 }
 ```
-
-
 
 
 

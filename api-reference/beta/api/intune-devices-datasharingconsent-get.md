@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 24cc4785c53d6bce73fb41487e43003cc65f25e7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3bc6d69e167744dbaa18562f13c7a2fce03ca466
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310658"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180668"
 ---
 # <a name="get-datasharingconsent"></a>Obter dataSharingConsent
 
@@ -81,8 +81,6 @@ Content-Length: 417
   }
 }
 ```
-
-
 
 
 

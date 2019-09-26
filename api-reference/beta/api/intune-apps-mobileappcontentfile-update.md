@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: acc9d9afc0324a9e40604c882245e8c0581f9c52
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d0dd47f64caeec513a504f9160ea162631faeb98
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336527"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172615"
 ---
 # <a name="update-mobileappcontentfile"></a>Atualizar mobileAppContentFile
 
@@ -116,8 +116,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
-
 
 
 

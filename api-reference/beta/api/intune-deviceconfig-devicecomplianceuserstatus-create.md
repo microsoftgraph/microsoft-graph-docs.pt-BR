@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 505884c137fca0249d3be444d09ad1a37039619c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a65af634db853ee7381045578c4339f6cf67ad03
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346090"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168359"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>Criar deviceComplianceUserStatus
 
@@ -99,8 +99,6 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b164626fe908e1a1c31872dc4c3cf367f81bc179
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dde66013b195b41c9c9b688706c5cdaa3741ae1e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331004"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178001"
 ---
 # <a name="list-androidstoreapps"></a>Listar androidStoreApps
 
@@ -117,8 +117,6 @@ Content-Length: 1615
   ]
 }
 ```
-
-
 
 
 

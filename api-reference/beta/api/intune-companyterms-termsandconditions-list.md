@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 423611a5c6e9dfecc936d59e9ae8a03d70950519
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 23b6bf74ea487bf61df42f7dae73bfbc26d9c12a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322083"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170578"
 ---
 # <a name="list-termsandconditionses"></a>Listar termsAndConditionses
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 582
+Content-Length: 656
 
 {
   "value": [
@@ -78,13 +78,14 @@ Content-Length: 582
       "title": "Title value",
       "bodyText": "Body Text value",
       "acceptanceStatement": "Acceptance Statement value",
-      "version": 7
+      "version": 7,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }
 ```
-
-
 
 
 

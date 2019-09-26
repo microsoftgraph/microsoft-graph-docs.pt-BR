@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cc824ae9ff7d9d0e39b38078ce8b772d5f37411
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3e998922eb78a7c5290455f0c9519dc262c9ceac
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336324"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171789"
 ---
 # <a name="get-windowsphonexap"></a>Obter windowsPhoneXAP
 
@@ -117,8 +117,6 @@ Content-Length: 1512
   }
 }
 ```
-
-
 
 
 

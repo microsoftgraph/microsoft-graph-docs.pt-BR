@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b922e510cf3f37d9b39ec3ed73eb04cec78469d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f1a8b6b998ccdc47cdd898fa271035faad90c968
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338767"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178652"
 ---
 # <a name="list-macosendpointprotectionconfigurations"></a>Listar macOSEndpointProtectionConfigurations
 
@@ -126,8 +126,6 @@ Content-Length: 2469
   ]
 }
 ```
-
-
 
 
 

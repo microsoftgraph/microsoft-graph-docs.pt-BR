@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 165d5a30718403a4b9afa3cc5f94511362c1e98a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 785afe77ca47805752b19b746b46f9a6b38b5c9f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329702"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177343"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Atualizar managedDeviceMobileAppConfigurationUserStatus
 
@@ -100,8 +100,6 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 

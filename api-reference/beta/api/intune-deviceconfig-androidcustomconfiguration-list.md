@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ef6050fe40b73ec92d8cd766a41106f1e23c65e0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ee75f44e9bdd8c293639f8c0917a0a76ee1a7d37
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312709"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170123"
 ---
 # <a name="list-androidcustomconfigurations"></a>Listar androidCustomConfigurations
 
@@ -115,8 +115,6 @@ Content-Length: 1667
   ]
 }
 ```
-
-
 
 
 

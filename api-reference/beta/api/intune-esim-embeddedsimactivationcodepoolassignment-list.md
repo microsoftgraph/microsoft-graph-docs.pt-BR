@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 46c82881b3a3571b13677d66fab1207b44ce0f5d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a2644687af08b307c50ff9f1fe3a84cc71157868
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355826"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184538"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>Listar embeddedSIMActivationCodePoolAssignments
 
@@ -77,8 +77,6 @@ Content-Length: 281
   ]
 }
 ```
-
-
 
 
 

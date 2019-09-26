@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b69e5b3a4b9c726a73ee2dc152054c86d7520e0d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 39c59e52885af98fbd737709315a57d5134ef024
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325174"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174204"
 ---
 # <a name="get-androiddeviceownerenrollmentprofile"></a>Obter androidDeviceOwnerEnrollmentProfile
 
@@ -93,8 +93,6 @@ Content-Length: 858
   }
 }
 ```
-
-
 
 
 

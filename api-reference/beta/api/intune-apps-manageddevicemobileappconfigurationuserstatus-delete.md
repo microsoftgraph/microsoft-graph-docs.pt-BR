@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dc60e048f953e7253263d8951c275b5a4656387
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a10734a97ab75f095c41bdfb118965aab781e2f3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329737"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173021"
 ---
 # <a name="delete-manageddevicemobileappconfigurationuserstatus"></a>Excluir managedDeviceMobileAppConfigurationUserStatus
 
@@ -64,8 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

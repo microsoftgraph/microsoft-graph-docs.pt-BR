@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c82e8645800190558889d3dbb7a38d5a9e0d912
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c447954990464b504ae08f09f285b9ccc9e682ef
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336051"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171285"
 ---
 # <a name="list-iosvppebooks"></a>Listar iosVppEBooks
 
@@ -100,8 +100,6 @@ Content-Length: 1171
   ]
 }
 ```
-
-
 
 
 

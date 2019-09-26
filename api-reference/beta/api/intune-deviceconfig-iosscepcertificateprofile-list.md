@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 399eaf0f0d4c0deec4497607b01c21a9251b8147
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 09e88b496f2438377cbb4b71e76ec87e2e4ee13d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339089"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179310"
 ---
 # <a name="list-iosscepcertificateprofiles"></a>Listar iosScepCertificateProfiles
 
@@ -132,8 +132,6 @@ Content-Length: 2373
   ]
 }
 ```
-
-
 
 
 

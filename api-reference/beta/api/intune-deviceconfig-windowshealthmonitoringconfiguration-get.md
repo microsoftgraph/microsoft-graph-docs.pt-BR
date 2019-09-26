@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 513e386fffd920989756bc9dfc2e605772c1c91a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ad5b6bb2dc05185c253314c268914ecf9d7c962b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344452"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181844"
 ---
 # <a name="get-windowshealthmonitoringconfiguration"></a>Obter windowsHealthMonitoringConfiguration
 
@@ -110,8 +110,6 @@ Content-Length: 1505
   }
 }
 ```
-
-
 
 
 

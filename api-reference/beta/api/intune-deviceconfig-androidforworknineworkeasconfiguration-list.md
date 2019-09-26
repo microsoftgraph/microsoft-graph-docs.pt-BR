@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad335e8d93cb44a6201efff6179509d1fc621567
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fc286692828ae8b59b104c1227c84d6aefaeab48
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341371"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37169353"
 ---
 # <a name="list-androidforworknineworkeasconfigurations"></a>Listar androidForWorkNineWorkEasConfigurations
 
@@ -114,8 +114,6 @@ Content-Length: 1708
   ]
 }
 ```
-
-
 
 
 

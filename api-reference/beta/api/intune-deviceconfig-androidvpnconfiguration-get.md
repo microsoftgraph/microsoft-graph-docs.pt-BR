@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3decb8479cff4e1ec2f423874b1bf295e0cf40e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e4191f1b6c50805b77e698a56846634cd90a66dc
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311421"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168947"
 ---
 # <a name="get-androidvpnconfiguration"></a>Obter androidVpnConfiguration
 
@@ -135,8 +135,6 @@ Content-Length: 2062
   }
 }
 ```
-
-
 
 
 

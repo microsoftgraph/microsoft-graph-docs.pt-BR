@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bd3566acf1c1cecb46184be28f839e4f41760a85
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e513aa78fe5361965d22706bc92a930b70e7161f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311827"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176279"
 ---
 # <a name="get-androidforworkwificonfiguration"></a>Obter androidForWorkWiFiConfiguration
 
@@ -112,8 +112,6 @@ Content-Length: 1480
   }
 }
 ```
-
-
 
 
 

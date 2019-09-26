@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b26697d32430ad9c0168048f5c8190311a619566
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a4faba35fb754e78a386b3681ac462c3f7e6e7f2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315776"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179268"
 ---
 # <a name="delete-iostrustedrootcertificate"></a>Excluir iosTrustedRootCertificate
 
@@ -64,8 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

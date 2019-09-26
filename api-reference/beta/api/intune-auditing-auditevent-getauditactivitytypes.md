@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7378b2e77ba15dc2117ae18b70c1adbf5652c24
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f33cf1af89b4b0c8ab65ba7ae2286a6bca4f909f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328583"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171439"
 ---
 # <a name="getauditactivitytypes-function"></a>Função getAuditActivityTypes
 
@@ -78,8 +78,6 @@ Content-Length: 61
   ]
 }
 ```
-
-
 
 
 

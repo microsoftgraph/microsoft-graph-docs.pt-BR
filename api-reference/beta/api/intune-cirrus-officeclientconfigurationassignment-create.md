@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b028449b33ce062db0899303b3d98b21af8fb8c3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3833115c1b652794e8d6b0557824389ebb974dd2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322239"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170852"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Criar officeClientConfigurationAssignment
 
@@ -91,8 +91,6 @@ Content-Length: 221
   }
 }
 ```
-
-
 
 
 

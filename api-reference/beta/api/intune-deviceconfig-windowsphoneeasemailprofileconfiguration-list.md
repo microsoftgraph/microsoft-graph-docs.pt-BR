@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17a4c26c8f6a20f5a94ab691e9be63122dc168f3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 68e596136b4ed339a97c010109dc6060378ce332
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313780"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181466"
 ---
 # <a name="list-windowsphoneeasemailprofileconfigurations"></a>Listar windowsPhoneEASEmailProfileConfigurations
 
@@ -119,8 +119,6 @@ Content-Length: 1956
   ]
 }
 ```
-
-
 
 
 

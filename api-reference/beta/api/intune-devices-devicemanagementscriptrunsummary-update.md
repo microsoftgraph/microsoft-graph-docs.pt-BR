@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f07a228ce685ae2ec3fcb502131eac5a6d9271af
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 79938a72b84627cfa27c32e163034562d6737079
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310287"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180451"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Atualizar deviceManagementScriptRunSummary
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo.|
+|id|String|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo. Essa propriedade é somente leitura.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro.|
 |compliantDeviceCount|Int32|Contagem de dispositivos em conformidade.|
@@ -105,8 +105,6 @@ Content-Length: 319
   "errorUserCount": 14
 }
 ```
-
-
 
 
 

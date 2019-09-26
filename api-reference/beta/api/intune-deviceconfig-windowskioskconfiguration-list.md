@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad24bd94e62d662ac77bb768acc0e81c68dba56f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7439f99e72b6bf703813190722920365ad3ec578
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344291"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181774"
 ---
 # <a name="list-windowskioskconfigurations"></a>Listar windowsKioskConfigurations
 
@@ -156,8 +156,6 @@ Content-Length: 3366
   ]
 }
 ```
-
-
 
 
 

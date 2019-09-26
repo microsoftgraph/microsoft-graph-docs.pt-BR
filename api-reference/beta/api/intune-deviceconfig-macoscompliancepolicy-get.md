@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7dce784dafcf3c9e61d60bd206c3f60a2c170fd5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5371744520a3b007c4709535fa121be683ef42b6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315538"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178876"
 ---
 # <a name="get-macoscompliancepolicy"></a>Get macOSCompliancePolicy
 
@@ -103,8 +103,6 @@ Content-Length: 1334
   }
 }
 ```
-
-
 
 
 

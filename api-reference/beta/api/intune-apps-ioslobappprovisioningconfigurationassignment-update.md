@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ad4bef86e4900d9830dcdac161659cd1f46870c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1a8c9facf01ff1ad2cc3dd4642c7e5601b86985b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330703"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177854"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>Atualizar iosLobAppProvisioningConfigurationAssignment
 
@@ -91,8 +91,6 @@ Content-Length: 233
   }
 }
 ```
-
-
 
 
 

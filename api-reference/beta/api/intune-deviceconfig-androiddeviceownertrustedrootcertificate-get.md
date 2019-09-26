@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c6e8579abeb43c5bf84047adc4e70adb73c9ac07
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 88cfdf1887ef43d5aaa1757a9853849697160504
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316861"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37169794"
 ---
 # <a name="get-androiddeviceownertrustedrootcertificate"></a>Obter androidDeviceOwnerTrustedRootCertificate
 
@@ -35,6 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerCertificateProfileBase/rootCertificate
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/rootCertificateForServerValidation
 ```
@@ -59,7 +60,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerCertificateProfileBase/rootCertificate
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
 ```
 
 ### <a name="response"></a>Resposta
@@ -108,8 +109,6 @@ Content-Length: 1410
   }
 }
 ```
-
-
 
 
 

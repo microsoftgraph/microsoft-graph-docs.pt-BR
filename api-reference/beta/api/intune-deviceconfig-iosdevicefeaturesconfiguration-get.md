@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a88f664cf04f78183bdf08a0eb4f0ad844541dc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 37fbadb1033748cdc4683139b2f0d09ab60f13cd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339453"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37167820"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>Get iosDeviceFeaturesConfiguration
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4908
+Content-Length: 6040
 
 {
   "value": {
@@ -215,12 +215,39 @@ Content-Length: 4908
       "@odata.type": "microsoft.graph.mimeContent",
       "type": "Type value",
       "value": "dmFsdWU="
+    },
+    "singleSignOnExtension": {
+      "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+      "realm": "Realm value",
+      "domains": [
+        "Domains value"
+      ],
+      "blockAutomaticLogin": true,
+      "cacheName": "Cache Name value",
+      "credentialBundleIdAccessControlList": [
+        "Credential Bundle Id Access Control List value"
+      ],
+      "domainRealms": [
+        "Domain Realms value"
+      ],
+      "isDefaultRealm": true,
+      "passwordBlockModification": true,
+      "passwordExpirationDays": 6,
+      "passwordExpirationNotificationDays": 2,
+      "userPrincipalName": "User Principal Name value",
+      "passwordRequireActiveDirectoryComplexity": true,
+      "passwordPreviousPasswordBlockCount": 2,
+      "passwordMinimumLength": 5,
+      "passwordMinimumAgeDays": 6,
+      "passwordRequirementsDescription": "Password Requirements Description value",
+      "requireUserPresence": true,
+      "activeDirectorySiteCode": "Active Directory Site Code value",
+      "passwordEnableLocalSync": true,
+      "blockActiveDirectorySiteAutoDiscovery": true
     }
   }
 }
 ```
-
-
 
 
 

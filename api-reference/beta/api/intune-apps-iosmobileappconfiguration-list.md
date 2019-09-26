@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b44ce84d05cbd1f283f11d38ba580e98ab91ea88
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fb42dfa5378c627e3ed204250b460e1081a51433
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330647"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173651"
 ---
 # <a name="list-iosmobileappconfigurations"></a>Listar iosMobileAppConfigurations
 
@@ -94,8 +94,6 @@ Content-Length: 889
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 68a923c278c887a221f2448bd20efee954c607ef
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d5ce3904dfc9a1a2dfa0a4d4d7a1bfb7a8388be2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328183"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170697"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>Atualizar windowsOfficeClientSecurityConfiguration
 
@@ -144,8 +144,6 @@ Content-Length: 1077
   ]
 }
 ```
-
-
 
 
 
