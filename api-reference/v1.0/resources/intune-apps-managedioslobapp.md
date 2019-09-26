@@ -5,12 +5,12 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cce7d2de9abef7b569f51e7e3a11f5a4e8d40bf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6ecb55b7e3d9882066c311a2331a6ea78b92e3b0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032271"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195003"
 ---
 # <a name="managedioslobapp-resource-type"></a>managedIOSLobApp resource type
 
@@ -112,7 +112,8 @@ Veja a seguir uma representação JSON do recurso.
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",

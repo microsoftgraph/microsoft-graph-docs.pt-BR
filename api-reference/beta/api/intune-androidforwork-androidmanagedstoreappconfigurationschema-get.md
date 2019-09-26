@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e41b74bcb478dc1e95e5b0465593a34a49dabf56
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0ea67ca9c94fa4fe9ad703d218b37ff27b74853e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324935"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173973"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>Obter androidManagedStoreAppConfigurationSchema
 
@@ -124,8 +124,6 @@ Content-Length: 1755
   }
 }
 ```
-
-
 
 
 

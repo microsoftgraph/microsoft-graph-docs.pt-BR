@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 05c264608ee18eeb6dc5df4cdeb2625f9a298977
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 673b25cacd4b8047aa8cd8b1f5a0477098435b03
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312499"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176832"
 ---
 # <a name="list-androiddeviceownerwificonfigurations"></a>Listar androidDeviceOwnerWiFiConfigurations
 
@@ -112,8 +112,6 @@ Content-Length: 1643
   ]
 }
 ```
-
-
 
 
 

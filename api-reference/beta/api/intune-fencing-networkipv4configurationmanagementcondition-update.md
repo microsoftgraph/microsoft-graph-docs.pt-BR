@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3d2bc14fa2af4851d5f6281e63586ca3d905731
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c86464634696bd18e6f7274b42059fb5086f5f34
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355455"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184350"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>Atualizar networkIPv4ConfigurationManagementCondition
 
@@ -131,8 +131,6 @@ Content-Length: 697
   ]
 }
 ```
-
-
 
 
 

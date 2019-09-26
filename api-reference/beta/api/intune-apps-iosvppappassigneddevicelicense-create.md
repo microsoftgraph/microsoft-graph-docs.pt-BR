@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89d286290644a0e8286696a60de9c30c2fe9bede
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 64ce6c345f7e21fe4f52ddaa7498a45dd7cb6dd6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337038"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173539"
 ---
 # <a name="create-iosvppappassigneddevicelicense"></a>Criar iosVppAppAssignedDeviceLicense
 
@@ -102,8 +102,6 @@ Content-Length: 376
   "deviceName": "Device Name value"
 }
 ```
-
-
 
 
 

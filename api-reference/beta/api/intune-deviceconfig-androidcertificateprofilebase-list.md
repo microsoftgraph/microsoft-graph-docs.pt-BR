@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fefa54d5115f55aa369f17dab82b9ef6904abf0d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dbf76b0f9ee380c86f9612fbdae4e20e5881604a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312835"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170228"
 ---
 # <a name="list-androidcertificateprofilebases"></a>Listar androidCertificateProfileBases
 
@@ -117,8 +117,6 @@ Content-Length: 1825
   ]
 }
 ```
-
-
 
 
 

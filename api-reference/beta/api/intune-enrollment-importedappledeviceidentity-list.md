@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f9050f21b80c8694138e193123156be4dddef36f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0a2db40f1a6417558671070e0166a6a4c836797a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356575"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185081"
 ---
 # <a name="list-importedappledeviceidentities"></a>Listar importedAppleDeviceIdentities
 
@@ -84,8 +84,6 @@ Content-Length: 686
   ]
 }
 ```
-
-
 
 
 

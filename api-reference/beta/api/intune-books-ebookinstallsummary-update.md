@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b61b0b0ca33ca6314cb9f9e4b9672a5493c1747
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c35c9dbdfeb7a519600ed1996015dad5fe1f1915
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336065"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171320"
 ---
 # <a name="update-ebookinstallsummary"></a>Atualizar eBookInstallSummary
 
@@ -102,8 +102,6 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
-
-
 
 
 

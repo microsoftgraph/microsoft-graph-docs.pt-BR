@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a6d9600591037b2fcfa8621662c53e6bfaec9be7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dc9e4cc6164f27c4a8f690f00666d93fa17fafff
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325019"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174043"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>ação createGooglePlayWebToken
 
@@ -84,8 +84,6 @@ Content-Length: 53
   "value": "Create Google Play Web Token value"
 }
 ```
-
-
 
 
 

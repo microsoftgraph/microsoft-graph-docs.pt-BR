@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f87a9c1830340d63a013beea2f4ab4806dec21b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a40eb993a147de1db2c78880d9d7e54d08b340d3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343787"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181060"
 ---
 # <a name="get-devicemanagementcomplexsettinginstance"></a>Obter deviceManagementComplexSettingInstance
 
@@ -80,8 +80,6 @@ Content-Length: 234
   }
 }
 ```
-
-
 
 
 

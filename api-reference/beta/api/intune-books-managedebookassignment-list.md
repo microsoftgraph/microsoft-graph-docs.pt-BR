@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eb4092c1e59e6d0ae527a264130050dec53de473
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a517f3cf1ca0e1c56b2c0cba4c63e5a04f7a8b7e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328372"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171061"
 ---
 # <a name="list-managedebookassignments"></a>Listar managedEBookAssignments
 
@@ -78,8 +78,6 @@ Content-Length: 300
   ]
 }
 ```
-
-
 
 
 

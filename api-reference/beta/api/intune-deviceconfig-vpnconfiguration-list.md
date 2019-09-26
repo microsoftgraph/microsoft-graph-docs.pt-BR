@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 654cc64443d9a41eb2a18963d33de5fa55a92c73
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3c2a1fa219a26705fa027968c9d03d4cd7ea3550
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341212"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183132"
 ---
 # <a name="list-vpnconfigurations"></a>Listar vpnConfigurations
 
@@ -117,8 +117,6 @@ Content-Length: 1744
   ]
 }
 ```
-
-
 
 
 

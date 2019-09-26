@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a236a20c6563f8ddb0b464168d7fb7d5e5d7ac43
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 15a86ff2da9b019eb63196ca7fae3d9a0e272b5c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328271"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170872"
 ---
 # <a name="updatepriorities-action"></a>ação updatePriorities
 
@@ -84,8 +84,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 ```
-
-
 
 
 

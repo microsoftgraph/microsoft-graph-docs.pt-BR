@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cf9a460bb6188fe7875d962db27f2788189ede6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 345650c5499959a57ede61605b00013d1d079866
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328939"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172251"
 ---
 # <a name="create-userappinstallstatus"></a>Criar userAppInstallStatus
 
@@ -99,8 +99,6 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
-
 
 
 

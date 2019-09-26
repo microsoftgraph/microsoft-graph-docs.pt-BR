@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 223b9249f39da34b75fcabb73c458e17260d89ca
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a9831913e308ac04553bb6ecd9cc342aecbcd92a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328547"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171383"
 ---
 # <a name="create-deviceinstallstate"></a>Criar deviceInstallState
 
@@ -109,8 +109,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
 
 
 

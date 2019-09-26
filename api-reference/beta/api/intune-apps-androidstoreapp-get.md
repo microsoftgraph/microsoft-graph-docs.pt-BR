@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 197b40d5d65ea4d1ee110368075a35ef356e705b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 349fc14f54af47b743ce11e6b7fd45e0352f327e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331025"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173777"
 ---
 # <a name="get-androidstoreapp"></a>Get androidStoreApp
 
@@ -120,8 +120,6 @@ Content-Length: 1511
   }
 }
 ```
-
-
 
 
 

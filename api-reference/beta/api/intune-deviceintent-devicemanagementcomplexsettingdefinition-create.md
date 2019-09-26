@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fdee09a0fd921aae24a3cca15c0ecd47842609fb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0e2a758cc7f5892ecf8f02f3e85cf26260b9870d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313451"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181102"
 ---
 # <a name="create-devicemanagementcomplexsettingdefinition"></a>Criar deviceManagementComplexSettingDefinition
 
@@ -150,8 +150,6 @@ Content-Length: 857
   ]
 }
 ```
-
-
 
 
 

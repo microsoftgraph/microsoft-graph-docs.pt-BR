@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b08fdc36e5ebc9920a5f8fe9c975a5d8b306c99
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ba0ce5aa5d6471efe4d3278f8337cf6451d1fc38
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322363"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176923"
 ---
 # <a name="get-windowsphone81appxbundle"></a>Obter windowsPhone81AppXBundle
 
@@ -145,8 +145,6 @@ Content-Length: 2642
   }
 }
 ```
-
-
 
 
 

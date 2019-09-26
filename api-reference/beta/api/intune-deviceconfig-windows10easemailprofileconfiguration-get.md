@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 78ff32cc634df47caab09fd6d153673f4da01dce
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 094988760e81879c6abd0d7f122a98b2690f297c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345292"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182859"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>Obter windows10EasEmailProfileConfiguration
 
@@ -120,8 +120,6 @@ Content-Length: 1807
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 782d5dc34ce540fa6ad530afc9a2d369f6fb2f58
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 185f18bc983fc8f68a1cf61cb2ad8e8452bf120f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328428"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171152"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -87,8 +87,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

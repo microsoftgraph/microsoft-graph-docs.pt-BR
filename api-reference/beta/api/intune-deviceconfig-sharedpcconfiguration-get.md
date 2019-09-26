@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a30e7c62c93947e55466aed318a232af5e697867
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8a87b653af1321da229fc0098e0efe4e390e99f5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314837"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183272"
 ---
 # <a name="get-sharedpcconfiguration"></a>Acessar sharedPCConfiguration
 
@@ -131,8 +131,6 @@ Content-Length: 2223
   }
 }
 ```
-
-
 
 
 

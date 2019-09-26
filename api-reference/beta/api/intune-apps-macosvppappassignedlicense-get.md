@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d00c11ec9faf422fc4e10da19a9878be1ea1ff0b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6406a752ea6b13acc184eb7e0caff64206f924b8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336919"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173259"
 ---
 # <a name="get-macosvppappassignedlicense"></a>Obter macOsVppAppAssignedLicense
 
@@ -79,8 +79,6 @@ Content-Length: 316
   }
 }
 ```
-
-
 
 
 

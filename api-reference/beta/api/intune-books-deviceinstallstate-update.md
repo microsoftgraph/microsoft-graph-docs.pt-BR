@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 680cf388fdf2a09cbb9e553efad4dafc2b767e82
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5d04cfeeb552f6e41990d97d17aa691ef8dbddac
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336079"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171327"
 ---
 # <a name="update-deviceinstallstate"></a>Atualizar deviceInstallState
 
@@ -109,8 +109,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
 
 
 

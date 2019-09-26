@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e08ee129d24bfaee047f70783be0368da306f3f1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e221bd5ac5e85b7b0282c5a748834c8cb1b96eba
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336037"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171222"
 ---
 # <a name="create-iosvppebookassignment"></a>Criar iosVppEBookAssignment
 
@@ -94,8 +94,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
-
 
 
 

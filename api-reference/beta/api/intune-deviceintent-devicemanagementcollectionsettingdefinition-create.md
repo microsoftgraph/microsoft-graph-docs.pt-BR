@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9039289db3f3f8e33ec2e091791c0a8a40e20265
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 32b0cdb889bc737b5ec45e5f2672e5960f24ac01
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313479"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181193"
 ---
 # <a name="create-devicemanagementcollectionsettingdefinition"></a>Criar deviceManagementCollectionSettingDefinition
 
@@ -146,8 +146,6 @@ Content-Length: 844
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
-
-
 
 
 

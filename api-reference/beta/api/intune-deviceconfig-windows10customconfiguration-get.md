@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60cce14cc78c507e726433bd01701ee06bc7ffb3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 970d159a91f343f59a7f5163b6f16d63489d388c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345362"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182999"
 ---
 # <a name="get-windows10customconfiguration"></a>Acessar windows10CustomConfiguration
 
@@ -117,8 +117,6 @@ Content-Length: 1571
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b625339a273b866cdc243dbb0a9af4ef6dc14ad
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5652744f536291b1e47f08baa436331d83873a88
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314396"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182271"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>Listar windows10PkcsCertificateProfiles
 
@@ -122,8 +122,6 @@ Content-Length: 2185
   ]
 }
 ```
-
-
 
 
 

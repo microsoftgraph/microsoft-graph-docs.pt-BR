@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f56e8906d161ccdc46bb3bd0f266a90cf9b94c8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 54b1c16b0e9041138dab4b038b866626b6323f21
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315131"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183923"
 ---
 # <a name="get-macostrustedrootcertificate"></a>Obter macOSTrustedRootCertificate
 
@@ -108,8 +108,6 @@ Content-Length: 1397
   }
 }
 ```
-
-
 
 
 

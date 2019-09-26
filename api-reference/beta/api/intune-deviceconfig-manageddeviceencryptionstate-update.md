@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bfe9b0c0f6d92bd1dfba454811c8bf021a3aa774
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 036e765d219f038c3a764951bd5ed9cc4d36aa16
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314956"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183545"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>Atualizar managedDeviceEncryptionState
 
@@ -129,8 +129,6 @@ Content-Length: 753
   ]
 }
 ```
-
-
 
 
 

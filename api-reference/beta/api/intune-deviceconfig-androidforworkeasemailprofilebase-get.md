@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3facae3c41d91c280dd07cee823aa08da449bf2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d17e9997fb594fc770c58d17e58b57c7fdb7dc28
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312205"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176657"
 ---
 # <a name="get-androidforworkeasemailprofilebase"></a>Obter androidForWorkEasEmailProfileBase
 
@@ -113,8 +113,6 @@ Content-Length: 1529
   }
 }
 ```
-
-
 
 
 

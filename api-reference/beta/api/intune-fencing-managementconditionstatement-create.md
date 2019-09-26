@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48f636aa83b73aa7d5c4eee38bb0d9e9c02656f0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 72ec1b9085e69cda6480c07751efa1a8e0fa1a11
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355605"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179954"
 ---
 # <a name="create-managementconditionstatement"></a>Criar managementConditionStatement
 
@@ -113,8 +113,6 @@ Content-Length: 491
   ]
 }
 ```
-
-
 
 
 

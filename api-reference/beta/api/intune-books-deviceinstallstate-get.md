@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cd1eed00b84d599a49d9b4984f1ee9a0cfef0452
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a1bdc4ef23aa15dc0bc039c10d59b1d35b2a5218
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328519"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171376"
 ---
 # <a name="get-deviceinstallstate"></a>Get deviceInstallState
 
@@ -84,8 +84,6 @@ Content-Length: 462
   }
 }
 ```
-
-
 
 
 

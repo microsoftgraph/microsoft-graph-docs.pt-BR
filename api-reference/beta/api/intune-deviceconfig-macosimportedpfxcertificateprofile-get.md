@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 01a4ae83f37b423d1c4f971c7f42f224e2712576
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3e74988bfd8250b157a7b33ce4c95462d1eaaa23
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315369"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184056"
 ---
 # <a name="get-macosimportedpfxcertificateprofile"></a>Obter macOSImportedPFXCertificateProfile
 
@@ -113,8 +113,6 @@ Content-Length: 1564
   }
 }
 ```
-
-
 
 
 

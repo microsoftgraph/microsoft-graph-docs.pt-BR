@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba898c089fd4fbcf45418da1d909714df4f755e8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53958beab7d2fd6e4dd038d8ae09996031158e95
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355189"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179828"
 ---
 # <a name="get-grouppolicyconfigurationassignment"></a>Obter groupPolicyConfigurationAssignment
 
@@ -79,8 +79,6 @@ Content-Length: 318
   }
 }
 ```
-
-
 
 
 

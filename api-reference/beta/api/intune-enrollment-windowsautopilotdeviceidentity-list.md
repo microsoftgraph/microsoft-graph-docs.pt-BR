@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 436bb9d1ca2cd7b5310825dc65218784dec337f4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3ddc09dbebe7a96a1cfaf0e4bfec8f8cdef944f1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356057"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184753"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>Listar windowsAutopilotDeviceIdentities
 
@@ -94,8 +94,6 @@ Content-Length: 1201
   ]
 }
 ```
-
-
 
 
 

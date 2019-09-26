@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e2dba88afee5c566b5757221a28d4d19fd670f9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d372ee08d89c95b61b9ce2530d7e1c0440a19cc5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335981"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171138"
 ---
 # <a name="create-managedebookassignment"></a>Criar managedEBookAssignment
 
@@ -94,8 +94,6 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
-
-
 
 
 

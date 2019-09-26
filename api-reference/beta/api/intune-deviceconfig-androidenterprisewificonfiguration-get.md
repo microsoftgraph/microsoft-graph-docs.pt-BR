@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5acb6eaffed0d21cc4b876a9c5cbdd7aa1b4c746
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7d233aa853afb10574205f104269fe7e20d34a87
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341659"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176769"
 ---
 # <a name="get-androidenterprisewificonfiguration"></a>Obter Androidenterprisewificonfiguration.
 
@@ -120,8 +120,6 @@ Content-Length: 1980
   }
 }
 ```
-
-
 
 
 

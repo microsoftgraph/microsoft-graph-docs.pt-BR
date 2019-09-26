@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f51e239992395f903f84378f9444bf37b4177dc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 945ffb6e596f3437f3f34b591c73f97649baa082
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345271"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182768"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Listar windows10EndpointProtectionConfigurations
 
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31457
+Content-Length: 31591
 
 {
   "value": [
@@ -640,6 +640,7 @@ Content-Length: 31457
         "policyRulesFromGroupPolicyMerged": true,
         "policyRulesFromGroupPolicyNotMerged": true
       },
+      "attackSurfaceReductionRules": "Attack Surface Reduction Rules value",
       "defenderAdobeReaderLaunchChildProcess": "enable",
       "defenderAttackSurfaceReductionExcludedPaths": [
         "Defender Attack Surface Reduction Excluded Paths value"
@@ -747,13 +748,12 @@ Content-Length: 31457
         "encryptionMethod": "aesCbc256",
         "requireEncryptionForWriteAccess": true,
         "blockCrossOrganizationWriteAccess": true
-      }
+      },
+      "bitLockerRecoveryPasswordRotation": "disabled"
     }
   ]
 }
 ```
-
-
 
 
 

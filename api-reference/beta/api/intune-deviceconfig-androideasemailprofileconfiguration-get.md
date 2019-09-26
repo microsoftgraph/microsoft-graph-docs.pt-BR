@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 371170726b4f2b5a626b67242ccca85a0388e098
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2b0b3049a5ebd0704c0ce672b31ea6eda28fbc04
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312429"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176804"
 ---
 # <a name="get-androideasemailprofileconfiguration"></a>Obter androidEasEmailProfileConfiguration
 
@@ -122,8 +122,6 @@ Content-Length: 1851
   }
 }
 ```
-
-
 
 
 

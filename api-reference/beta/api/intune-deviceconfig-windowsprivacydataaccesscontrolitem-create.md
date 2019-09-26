@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b6c32a23ab74c20a79c7b039a0d91ca4c2b41719
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5642147fd8299fc7f798b7d771bdd72779da39b6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313759"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181452"
 ---
 # <a name="create-windowsprivacydataaccesscontrolitem"></a>Criar windowsPrivacyDataAccessControlItem
 
@@ -96,8 +96,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
-
 
 
 

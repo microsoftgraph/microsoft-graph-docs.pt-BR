@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e0e95c5ea34b1f023eb323025bff6d27d92c289
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ba52254a56e8490decaa8c6b969f0ff786748754
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328127"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170487"
 ---
 # <a name="create-termsandconditionsassignment"></a>Criar termsAndConditionsAssignment
 
@@ -91,8 +91,6 @@ Content-Length: 217
   }
 }
 ```
-
-
 
 
 

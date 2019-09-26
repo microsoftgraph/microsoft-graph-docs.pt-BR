@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f8d6e0b35aca84f759005b3adbe39aeacec8525
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e0997e0da11b963a87b636a27cb155a9ed3901ac
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328617"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171621"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>Criar windowsUniversalAppXContainedApp
 
@@ -89,8 +89,6 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
-
-
 
 
 

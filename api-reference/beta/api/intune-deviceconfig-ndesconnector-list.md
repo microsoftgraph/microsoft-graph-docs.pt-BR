@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 508f4008b2bded53e9cae56f5ae1c5abcf7f22a6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cccc5552334470f0394691f7d80ee9bb3698ff96
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314943"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183482"
 ---
 # <a name="list-ndesconnectors"></a>Listar ndesConnectors
 
@@ -77,8 +77,6 @@ Content-Length: 285
   ]
 }
 ```
-
-
 
 
 

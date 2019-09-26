@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99d4d5e36338e94d488925eab6612bf53a1739d7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 781b43daa9779f6081b18e32ef0f75b14f9599d2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313185"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180934"
 ---
 # <a name="update-devicemanagementintentassignment"></a>Atualizar deviceManagementIntentAssignment
 
@@ -91,8 +91,6 @@ Content-Length: 221
   }
 }
 ```
-
-
 
 
 

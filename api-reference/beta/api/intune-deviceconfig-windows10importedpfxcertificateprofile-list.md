@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed358652cc46bb9a5262f675e29fce9d30d00b23
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 90ee477e0f26da4aa6aaf5c7fe7d330be2af1753
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338487"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182558"
 ---
 # <a name="list-windows10importedpfxcertificateprofiles"></a>Listar windows10ImportedPFXCertificateProfiles
 
@@ -112,8 +112,6 @@ Content-Length: 1720
   ]
 }
 ```
-
-
 
 
 

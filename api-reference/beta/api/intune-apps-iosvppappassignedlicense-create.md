@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4aef79d88af43074a4257f6a77f3cbbe919cf27
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 73a25e6f217f287811be7ce7b3a459c36727f1dc
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330388"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173483"
 ---
 # <a name="create-iosvppappassignedlicense"></a>Criar iosVppAppAssignedLicense
 
@@ -96,8 +96,6 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 

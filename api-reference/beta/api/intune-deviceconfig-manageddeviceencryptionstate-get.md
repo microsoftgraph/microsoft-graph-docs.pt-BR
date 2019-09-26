@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 759756e1a700aa194173a897be77e195953f7d73
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4f3daecdd3b0b2455cb1bee4e557395e08013791
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314977"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183566"
 ---
 # <a name="get-manageddeviceencryptionstate"></a>Obter managedDeviceEncryptionState
 
@@ -92,8 +92,6 @@ Content-Length: 810
   }
 }
 ```
-
-
 
 
 

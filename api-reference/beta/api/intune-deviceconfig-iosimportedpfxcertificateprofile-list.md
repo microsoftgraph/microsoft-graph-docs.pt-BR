@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04ec78a7a318d22162a9466e58dbcf08f9087bcb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 42a261ee9c612e38e02178ec64ca92a861ab687e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339159"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174337"
 ---
 # <a name="list-iosimportedpfxcertificateprofiles"></a>Listar iosImportedPFXCertificateProfiles
 
@@ -106,8 +106,6 @@ Content-Length: 1413
   ]
 }
 ```
-
-
 
 
 

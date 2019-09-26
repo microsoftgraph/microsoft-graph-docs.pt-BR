@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb930180b22c734f0abb2b7be7450678ae48e350
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e2b4d660a459456954eba91bed84cdcf282c81a4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328323"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170991"
 ---
 # <a name="update-managedebookcategory"></a>Atualizar managedEBookCategory
 
@@ -90,8 +90,6 @@ Content-Length: 215
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2514f7f402fe93e80cbd9270c1681c34d43e2ea2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: eedb782f0f267836e5de50a5d53e0b83749d868d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313577"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181298"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>Listar windowsWifiEnterpriseEAPConfigurations
 
@@ -133,8 +133,6 @@ Content-Length: 2722
   ]
 }
 ```
-
-
 
 
 

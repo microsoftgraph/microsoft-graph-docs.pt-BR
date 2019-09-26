@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ebb8feb645ec1d67456e07d8cd04bd9b25d7f784
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c492958be26c5144413c54468ee1c1c3dc605c97
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313388"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181032"
 ---
 # <a name="delete-devicemanagementintegersettinginstance"></a>Excluir deviceManagementIntegerSettingInstance
 
@@ -66,8 +66,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

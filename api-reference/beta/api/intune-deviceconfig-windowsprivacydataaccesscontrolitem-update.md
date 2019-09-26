@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a0565625571c40bb10c800cd428f0986562cbee
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3bd35a4777e31245655640dfdc9a97d4f90b3c49
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313731"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181416"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>Atualizar windowsPrivacyDataAccessControlItem
 
@@ -96,8 +96,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
-
 
 
 

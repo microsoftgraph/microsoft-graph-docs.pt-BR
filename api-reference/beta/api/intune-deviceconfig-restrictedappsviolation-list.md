@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04e03193713ca894422df8e6eb7e5ebbe480d020
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 44c879d7a8d08751d373f7ce2dd0c7ae536bc4b1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345460"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183413"
 ---
 # <a name="list-restrictedappsviolations"></a>Listar restrictedAppsViolations
 
@@ -88,8 +88,6 @@ Content-Length: 710
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d9d548e4ac1ec6f72b600c4e91ecd50e5e455159
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0ed07b3d624eb2754f5ce98ce0c9084c2fbcb004
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322258"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170963"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -100,8 +100,6 @@ Content-Length: 274
   ]
 }
 ```
-
-
 
 
 

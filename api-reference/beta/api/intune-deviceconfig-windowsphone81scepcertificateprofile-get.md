@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7f9d87e49fa1996baecb83df4e232dbd565428a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 368b3c69019822fa4db82bfeb30565593c877d27
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313899"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181578"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>Obter windowsPhone81SCEPCertificateProfile
 
@@ -128,8 +128,6 @@ Content-Length: 2102
   }
 }
 ```
-
-
 
 
 

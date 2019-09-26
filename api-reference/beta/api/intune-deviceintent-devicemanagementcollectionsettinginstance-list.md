@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e190d9bbed02da9cdb821a038c7cdb2ded8ac008
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 248c86851590d18d560475551ac0ff621f7b35fb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313444"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181116"
 ---
 # <a name="list-devicemanagementcollectionsettinginstances"></a>Listar deviceManagementCollectionSettingInstances
 
@@ -79,8 +79,6 @@ Content-Length: 259
   ]
 }
 ```
-
-
 
 
 

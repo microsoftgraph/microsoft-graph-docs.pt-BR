@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 918deda98d0795fb4796c7aa25348e1580a7b4b4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1b7fee95a8bf7f15370f3b5a290e5cb4fcf0334f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328764"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172069"
 ---
 # <a name="list-win32lobapps"></a>Listar win32LobApps
 
@@ -163,8 +163,6 @@ Content-Length: 3347
   ]
 }
 ```
-
-
 
 
 

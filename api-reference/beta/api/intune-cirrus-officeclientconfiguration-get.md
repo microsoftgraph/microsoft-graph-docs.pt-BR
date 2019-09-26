@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 44b1adc167d3fe1e049ea56d49931ccbb87c61c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 931b34697bc008797639634a8c6de948dfa78bdb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328267"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170921"
 ---
 # <a name="get-officeclientconfiguration"></a>Obter Conjuntoofficeclientconfiguration
 
@@ -100,8 +100,6 @@ Content-Length: 1137
   }
 }
 ```
-
-
 
 
 

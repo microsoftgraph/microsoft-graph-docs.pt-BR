@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a5669a0b3cf5571ff3bad1ff7c9354348d5ad7b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 71c78f6a2a64e13044466f5059abe4b74b69f090
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312807"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170193"
 ---
 # <a name="get-androidcompliancepolicy"></a>Get androidCompliancePolicy
 
@@ -115,8 +115,6 @@ Content-Length: 1863
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d649a609b8da74e9adbf9e0f522e8a49c49e1eec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b5a02d72a277cb973d92ba2d96bdecf1978f5e34
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348169"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185144"
 ---
 # <a name="update-enrollmentprofile"></a>Atualizar enrollmentProfile
 
@@ -102,8 +102,6 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
-
 
 
 

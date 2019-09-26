@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 365fbee15aa00e0bfb44d7eba0ef56cf2dd59c5a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fcbae71e0a06e6dda24f816bbd0d66acb403ae0d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338501"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183062"
 ---
 # <a name="list-windows10compliancepolicies"></a>Listar windows10CompliancePolicies
 
@@ -120,8 +120,6 @@ Content-Length: 2087
   ]
 }
 ```
-
-
 
 
 

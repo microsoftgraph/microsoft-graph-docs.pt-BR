@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d526c2a9c1b3b9dff3cd69af676b1a2fc7f1be8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2cfa94e02f0e9763d01ed10976d1da9f2d6dc170
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356365"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184892"
 ---
 # <a name="searchexistingidentities-action"></a>Ação searchExistingIdentities
 
@@ -110,8 +110,6 @@ Content-Length: 577
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7f60c3e09d22131f2948420b0a85f41c386243c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d8d8d0d4c6dd644ebe8e8c23087e4797e8a90325
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311591"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180115"
 ---
 # <a name="get-userexperienceanalyticsmetric"></a>Obter userExperienceAnalyticsMetric
 
@@ -66,20 +66,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 265
+Content-Length: 223
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
     "id": "1371822e-822e-1371-2e82-71132e827113",
-    "displayName": "Display Name value",
     "value": "<Unknown Primitive Type Edm.Double>",
     "unit": "Unit value"
   }
 }
 ```
-
-
 
 
 

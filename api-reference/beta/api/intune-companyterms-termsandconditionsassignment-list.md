@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed53b15293935f6d7ea9dd7469c888a4698e01d7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 99b789a3949212b4c0a192571b7255775cb1d913
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321985"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170445"
 ---
 # <a name="list-termsandconditionsassignments"></a>Listar termsAndConditionsAssignments
 
@@ -77,8 +77,6 @@ Content-Length: 270
   ]
 }
 ```
-
-
 
 
 

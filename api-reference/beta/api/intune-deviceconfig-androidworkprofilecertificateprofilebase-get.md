@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ae67a28b9058d86f6a654fc09458d77022c586b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: febde0d6575bd356d809ea61ada3055b04a2042f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311351"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168891"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>Obter Entidadeandroidworkprofilecertificateprofilebase
 
@@ -120,8 +120,6 @@ Content-Length: 1734
   }
 }
 ```
-
-
 
 
 

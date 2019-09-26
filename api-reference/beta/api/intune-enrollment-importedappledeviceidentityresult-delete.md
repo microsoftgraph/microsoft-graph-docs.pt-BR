@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 862bf1f70b3cc2e64f02e28fb8752aa8f0e83c06
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6be0f68ef851fcd7e31c7c9a7f8fcd48cdebb93d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356470"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185032"
 ---
 # <a name="delete-importedappledeviceidentityresult"></a>Excluir importedAppleDeviceIdentityResult
 
@@ -63,8 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

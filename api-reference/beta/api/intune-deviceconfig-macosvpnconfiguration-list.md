@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1cae4889777013e15ce0913cf4558553fb2ce02
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53219c955ea0c266ccf7ba55af6fa1398ae0d1f4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315089"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183832"
 ---
 # <a name="list-macosvpnconfigurations"></a>Listar macOSVpnConfigurations
 
@@ -162,8 +162,6 @@ Content-Length: 3191
   ]
 }
 ```
-
-
 
 
 

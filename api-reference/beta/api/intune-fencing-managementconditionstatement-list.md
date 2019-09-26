@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7b053cfe3faa44da38b6a77ab012763a949342b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3dfaf07151ee44951847d249400c9b0b005b5398
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355469"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179961"
 ---
 # <a name="list-managementconditionstatements"></a>Listar managementConditionStatements
 
@@ -86,8 +86,6 @@ Content-Length: 576
   ]
 }
 ```
-
-
 
 
 

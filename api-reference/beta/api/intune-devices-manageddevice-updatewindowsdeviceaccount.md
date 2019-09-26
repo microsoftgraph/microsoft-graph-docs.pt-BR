@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fdbf86dfaed2bf2ee1255ce9a161470d5d6c585d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 760c8d0f292a0a93269bcebe93547a363f5bf431
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310063"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180306"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>Ação updateWindowsDeviceAccount
 
@@ -92,8 +92,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

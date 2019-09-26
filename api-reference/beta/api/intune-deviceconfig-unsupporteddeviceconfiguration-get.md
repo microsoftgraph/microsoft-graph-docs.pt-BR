@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 56569b2254e8fee0c269781cabf06da4e129bd0c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: eaa3029d25cc58525493ba8cd35e295a4b07611f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338552"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183188"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>Obter unsupportedDeviceConfiguration
 
@@ -115,8 +115,6 @@ Content-Length: 1562
   }
 }
 ```
-
-
 
 
 

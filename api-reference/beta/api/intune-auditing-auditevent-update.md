@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a6b5154fc60a6c2161facd60999acedf326a821f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6667b22a6cff5fadf749b0145e8310e80be5d173
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336093"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171397"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
@@ -171,8 +171,6 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
-
 
 
 

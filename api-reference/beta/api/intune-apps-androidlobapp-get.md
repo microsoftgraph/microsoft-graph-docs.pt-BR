@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4136e8cded6efd3ed7351e080a81a7d91658c54c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53f87361189a3f4017b6fc60cb52a382a29f560e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331172"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173889"
 ---
 # <a name="get-androidlobapp"></a>Acessar androidLobApp
 
@@ -125,8 +125,6 @@ Content-Length: 1704
   }
 }
 ```
-
-
 
 
 

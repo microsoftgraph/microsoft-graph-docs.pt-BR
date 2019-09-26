@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b690e06b49d0b1be10095c4d467ebbe581e20bb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0d47563b384cc4ab17cf3156457a8943d5d71420
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355504"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184364"
 ---
 # <a name="getmanagementconditionstatementexpressionstring-function"></a>função getManagementConditionStatementExpressionString
 
@@ -73,8 +73,6 @@ Content-Length: 126
   }
 }
 ```
-
-
 
 
 

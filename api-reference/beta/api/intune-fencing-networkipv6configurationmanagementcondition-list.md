@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a0aa5745baa7771e8370b62446d8949184857666
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4f9747708073eb7a9cced1de6a86db7b3c75879b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355427"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184280"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>Listar networkIPv6ConfigurationManagementConditions
 
@@ -92,8 +92,6 @@ Content-Length: 760
   ]
 }
 ```
-
-
 
 
 

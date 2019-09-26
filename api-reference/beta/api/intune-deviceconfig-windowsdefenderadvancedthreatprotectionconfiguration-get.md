@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6cac98df6c205dacf5ee753233cc6c8d40ec1b9f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e7b21cad2a6df98b72074301a7f04d446fa969ca
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344621"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181914"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>Obter windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -114,8 +114,6 @@ Content-Length: 1872
   }
 }
 ```
-
-
 
 
 

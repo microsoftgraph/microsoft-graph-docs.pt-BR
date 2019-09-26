@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a37737cf7d9a20686f63964f20e6c8221fdee284
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 74d7e7bb5a9756a28425daebe7f79952b4ad5c6c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314767"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183118"
 ---
 # <a name="get-windows10certificateprofilebase"></a>Obter windows10CertificateProfileBase
 
@@ -113,8 +113,6 @@ Content-Length: 1578
   }
 }
 ```
-
-
 
 
 

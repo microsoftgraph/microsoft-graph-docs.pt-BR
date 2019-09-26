@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f331cd91baeac504b3636311d3e22a552b232426
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2d3b190662b4e5af4f0575a16f562c44b2d3a507
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324872"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173931"
 ---
 # <a name="list-androidforworkapps"></a>Listar androidForWorkApps
 
@@ -102,8 +102,6 @@ Content-Length: 1228
   ]
 }
 ```
-
-
 
 
 

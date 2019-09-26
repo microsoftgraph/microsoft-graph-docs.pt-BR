@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c35b723b0381e8b92a9cb640b50436399d34f264
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4404dbfd5e037b84f305b2ca787c2ce306df2f23
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345341"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182894"
 ---
 # <a name="delete-windows10devicefirmwareconfigurationinterface"></a>Excluir windows10DeviceFirmwareConfigurationInterface
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09c663609e80ac3db7e85fe3f2e35cac33745bd7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 726f747056ced1c9780b9777f456bf054356ef6a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322160"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170718"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>Atualizar windowsOfficeClientConfiguration
 
@@ -142,8 +142,6 @@ Content-Length: 1069
   ]
 }
 ```
-
-
 
 
 

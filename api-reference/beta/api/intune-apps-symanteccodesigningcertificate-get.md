@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94a8d1a0deeb07a2a68aafc80cacc5b7b197a0c1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 72e35355a24b0bb4d3dd9099edcfcba40297c5ad
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328967"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172279"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>Obter symantecCodeSigningCertificate
 
@@ -84,8 +84,6 @@ Content-Length: 511
   }
 }
 ```
-
-
 
 
 

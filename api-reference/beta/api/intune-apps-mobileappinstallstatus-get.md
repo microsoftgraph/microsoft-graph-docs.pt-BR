@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36d2b4e33873a59066024f3908c96b3e05ddd805
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 77cce5c7f1d2e008408a741862862809a9b12184
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336471"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172559"
 ---
 # <a name="get-mobileappinstallstatus"></a>Obter mobileAppInstallStatus
 
@@ -88,8 +88,6 @@ Content-Length: 651
   }
 }
 ```
-
-
 
 
 

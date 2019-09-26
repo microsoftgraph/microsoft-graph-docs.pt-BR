@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb9239ef5c9e1086d7e4ec8199681b521bcfbd7f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3be2e7f674f2a5767ae55d13107cffa4d4ee90a3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339271"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174435"
 ---
 # <a name="get-iosenterprisewificonfiguration"></a>Obter iosEnterpriseWiFiConfiguration
 
@@ -127,8 +127,6 @@ Content-Length: 2269
   }
 }
 ```
-
-
 
 
 

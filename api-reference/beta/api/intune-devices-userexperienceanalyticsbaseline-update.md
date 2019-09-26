@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: acf31ba513ba45dad93158955a743eafd5848329
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1d998d6e744b62edfe69486212bd538c4d62d2a5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350422"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180171"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>Atualizar userExperienceAnalyticsBaseline
 
@@ -54,7 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 |id|String|O identificador exclusivo da linha de base da análise da experiência do usuário.|
 |displayName|String|O nome da linha de base da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da linha de base da análise da experiência do usuário.|
-|overallRegressionThreshold|Int32|O limite de regressão geral da linha de base da análise da experiência do usuário.|
+|isBuiltIn|Booliano|Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.|
+|createdDateTime|DateTimeOffset|A data em que a linha de base personalizada foi criada.|
 
 
 
@@ -68,13 +69,13 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}
 Content-type: application/json
-Content-length: 173
+Content-length: 158
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBaseline",
   "displayName": "Display Name value",
   "overallScore": 12,
-  "overallRegressionThreshold": 10
+  "isBuiltIn": true
 }
 ```
 
@@ -83,18 +84,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 222
+Content-Length: 266
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBaseline",
   "id": "1cce2cab-2cab-1cce-ab2c-ce1cab2cce1c",
   "displayName": "Display Name value",
   "overallScore": 12,
-  "overallRegressionThreshold": 10
+  "isBuiltIn": true,
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
-
 
 
 

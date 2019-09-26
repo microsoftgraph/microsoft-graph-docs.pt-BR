@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 73dcc48afaa1762089fb780371078c4987bf1992
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 31e83162909800c49f37c8605813da722667ebec
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355952"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184773"
 ---
 # <a name="get-windowsautopilotsettings"></a>Obter windowsAutopilotSettings
 
@@ -78,8 +78,6 @@ Content-Length: 308
   }
 }
 ```
-
-
 
 
 

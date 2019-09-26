@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e199a336fd3becbc248b1de6287b81d7bc5bbc14
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5fcb9b7cb2a291c1fcc47f43753eb54280802c5b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336177"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171663"
 ---
 # <a name="get-windowsuniversalappx"></a>Get windowsUniversalAppX
 
@@ -122,8 +122,6 @@ Content-Length: 1746
   }
 }
 ```
-
-
 
 
 

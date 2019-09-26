@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ef1d3c48e086e16051e7db1d40dd11409a6053ca
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8cef5f58fa88c1f134b19e8a518820fa6e6d5b87
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355462"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184377"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>Listar networkIPv4ConfigurationManagementConditions
 
@@ -93,8 +93,6 @@ Content-Length: 810
   ]
 }
 ```
-
-
 
 
 

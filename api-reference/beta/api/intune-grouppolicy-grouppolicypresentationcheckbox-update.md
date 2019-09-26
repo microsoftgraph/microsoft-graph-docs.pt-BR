@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ad76e25204bfeefb5ba80087f2c85f2cb40b17f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d07be26fa6e7c5be303c5c6dd688eb0957cd2bea
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357926"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184105"
 ---
 # <a name="update-grouppolicypresentationcheckbox"></a>Atualizar groupPolicyPresentationCheckBox
 
@@ -93,8 +93,6 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
-
-
 
 
 
