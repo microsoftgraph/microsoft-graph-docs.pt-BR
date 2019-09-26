@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76285db02be34bb0615dc96deeae634cbfe98320
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f19495b6e78e1582bbfdb6f2c3b6d5c00188f0cf
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352753"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190631"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Atualizar deviceManagementExchangeConnector
 
@@ -111,8 +111,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
 
 
 

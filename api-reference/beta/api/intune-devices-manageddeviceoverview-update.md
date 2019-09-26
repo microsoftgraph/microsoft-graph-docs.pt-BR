@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 142354f99b87bd4ff8c228edeee188ef4fa57f4c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2a5048e5c01e22d9c0922f9620916c3bc4251b07
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348610"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188280"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
@@ -150,8 +150,6 @@ Content-Length: 1056
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

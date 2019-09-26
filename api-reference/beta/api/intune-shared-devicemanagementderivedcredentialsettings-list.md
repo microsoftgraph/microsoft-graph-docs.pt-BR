@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cb58fe7e70972cb0c69a4aae0d74a5b17d29d10
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: 1fb71ec1f79297a1ddd89ead1c4192f93713ddc5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699457"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194506"
 ---
 # <a name="list-devicemanagementderivedcredentialsettingses"></a>Listar deviceManagementDerivedCredentialSettingses
 
@@ -80,6 +80,7 @@ Content-Length: 347
   ]
 }
 ```
+
 
 
 

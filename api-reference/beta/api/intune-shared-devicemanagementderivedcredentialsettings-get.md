@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce291c710792d15006543b9dc2c7f3db5051917b
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: 7d8be2d6b08729316b755e382874c86cd5448285
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699471"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194555"
 ---
 # <a name="get-devicemanagementderivedcredentialsettings"></a>Obter deviceManagementDerivedCredentialSettings
 
@@ -83,4 +83,5 @@ Content-Length: 155
     "id": "bc650741-0741-bc65-4107-65bc410765bc"
   }
 }
+
 

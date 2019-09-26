@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c05c2dea6765a513e1551ecb86b20d435bd13848
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0c5043a683bae0a8a5f21cfcfa501eaf91d5e3d7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347555"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194632"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>função getAssignedRoleIdsForLoggedInUser
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
-
+|Aplicativo||
+| &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
   "blockType": "ignored"
@@ -76,6 +76,7 @@ Content-Length: 263
   }
 }
 ```
+
 
 
 
