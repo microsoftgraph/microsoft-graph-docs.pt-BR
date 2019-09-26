@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b8e48edbca3a8f0ffa6edc385048d62b4d7c20c9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f182f298fba004fec9d9637de86d410c2005c85d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351277"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189372"
 ---
 # <a name="update-roleassignment"></a>Atualizar roleAssignment
 
@@ -107,8 +107,6 @@ Content-Length: 326
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25c390b638a99029000bf626f898a06d845c6f11
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2c29d95bb8f24819eabb4021d6da93b21bf49aa0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351557"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189631"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Listar deviceAndAppManagementRoleAssignments
 
@@ -86,8 +86,6 @@ Content-Length: 480
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a207e809e5ba3bccc6752630fd9a2c4e4cce6a9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e453125a82d7615303cd2b85e9fdd7961c51d620
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354041"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193063"
 ---
 # <a name="getuseridswithflaggedappregistration-function"></a>função getUserIdsWithFlaggedAppRegistration
 
@@ -71,8 +71,6 @@ Content-Length: 79
   ]
 }
 ```
-
-
 
 
 

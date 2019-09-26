@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 531e466cbe55f69d69ea61440b290803163f5ad9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0733fc05230f5ea77f1de60920e5441ae7cf8b73
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344235"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186684"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>Listar windowsPhone81CompliancePolicies
 
@@ -93,8 +93,6 @@ Content-Length: 958
   ]
 }
 ```
-
-
 
 
 

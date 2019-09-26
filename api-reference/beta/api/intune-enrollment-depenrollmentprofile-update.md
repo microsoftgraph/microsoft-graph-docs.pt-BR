@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba65cea5019cf48648cb3d04700c3ab6558a6940
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9fdcf87ad8608f62eacfc6889c24c515f1a2d617
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348274"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185473"
 ---
 # <a name="update-depenrollmentprofile"></a>Atualizar depEnrollmentProfile
 
@@ -186,8 +186,6 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
-
-
 
 
 

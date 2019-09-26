@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 994036c6778eff2d9bf360423c20967c2260cf3e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 49c45e5cc2b852ec21d578c59da91ddff8d3ca60
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343528"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185802"
 ---
 # <a name="update-devicemanagementintentdevicestatesummary"></a>Atualizar deviceManagementIntentDeviceStateSummary
 
@@ -102,8 +102,6 @@ Content-Length: 286
   "successCount": 12
 }
 ```
-
-
 
 
 

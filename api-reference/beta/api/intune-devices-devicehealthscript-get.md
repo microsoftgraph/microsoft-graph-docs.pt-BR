@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efa373bea2430dc85533904487d0525c069d053a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b06692a9eb152a458dfdc5795a351ffe820f5e59
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311609"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188644"
 ---
 # <a name="get-devicehealthscript"></a>Obter deviceHealthScript
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 986
+Content-Length: 951
 
 {
   "value": {
@@ -93,13 +93,10 @@ Content-Length: 986
       "operator": "equal",
       "detectionValue": "Detection Value value"
     },
-    "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-    "runRemediationScript": true
+    "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
   }
 }
 ```
-
-
 
 
 

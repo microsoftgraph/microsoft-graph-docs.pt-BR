@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b55c672869b95ea85f591a67a710d64c90de61b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 166b02eb7ee621aed828aba935220c9b07a2e85b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352406"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190325"
 ---
 # <a name="create-sideloadingkey"></a>Criar sideLoadingKey
 
@@ -99,8 +99,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
-
 
 
 

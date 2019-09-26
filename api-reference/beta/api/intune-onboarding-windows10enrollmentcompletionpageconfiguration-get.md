@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a272732d8e55e55ecad445d7aed71e94f827b243
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 33b2f4f7e0d07059438041b96a540c0ad2f64c96
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352228"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190100"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Obter windows10EnrollmentCompletionPageConfiguration
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 810
+Content-Length: 915
 
 {
   "value": {
@@ -87,12 +87,12 @@ Content-Length: 810
     "allowDeviceUseOnInstallFailure": true,
     "selectedMobileAppIds": [
       "Selected Mobile App Ids value"
-    ]
+    ],
+    "trackInstallProgressForAutopilotOnly": true,
+    "disableUserStatusTrackingAfterFirstUser": true
   }
 }
 ```
-
-
 
 
 

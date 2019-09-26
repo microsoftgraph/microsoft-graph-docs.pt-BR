@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a517d2ed1ad0e54dba18a188b1cccdd2dc9a3a74
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 92a5f2827c5b2de105fd647f72b91692ed2d08b9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353390"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191271"
 ---
 # <a name="list-windowsinformationprotectionwipeactions"></a>Listar windowsInformationProtectionWipeActions
 
@@ -80,8 +80,6 @@ Content-Length: 526
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2150b1f8333d2168e0f55f361414fd5ca3cafc6d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6bd75a02f8f8afa59e38946dc2591e70fb21438d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353628"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191537"
 ---
 # <a name="get-windowsinformationprotection"></a>Acessar windowsInformationProtection
 
@@ -203,8 +203,6 @@ Content-Length: 4405
   }
 }
 ```
-
-
 
 
 

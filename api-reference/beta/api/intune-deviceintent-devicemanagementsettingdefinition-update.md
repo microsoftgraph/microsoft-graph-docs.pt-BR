@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe92ba56aefc87d8e439ec70191b0c96f9b8d273
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f6ccb72047b7f9939ad4d52b6fad82f754ada8b1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343234"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189218"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>Atualizar deviceManagementSettingDefinition
 
@@ -143,8 +143,6 @@ Content-Length: 777
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e8315527c5f3737b7c57c57d242436daca42c27
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2a73ed7fc6dedc611235263fee07ec585d19790
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351676"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189771"
 ---
 # <a name="update-deviceappmanagementtask"></a>Atualizar deviceAppManagementTask
 
@@ -113,8 +113,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
-
 
 
 

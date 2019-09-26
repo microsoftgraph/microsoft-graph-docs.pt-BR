@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 83918a0be9c09be36c307d8a41c1568e08853831
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3fc7f984f5b1d62839472d06a9f4d2da6a99ce77
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354020"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193056"
 ---
 # <a name="get-managedappstatus"></a>Get managedAppStatus
 
@@ -77,8 +77,6 @@ Content-Length: 205
   }
 }
 ```
-
-
 
 
 

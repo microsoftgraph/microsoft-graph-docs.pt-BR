@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec64b5dfca31fb6f6558ff4008f5eab3ae1b9da5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 047d2af89aa0cd0cf0b982992214a3320fb7dc27
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351690"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189792"
 ---
 # <a name="list-deviceappmanagementtasks"></a>Listar deviceAppManagementTasks
 
@@ -84,8 +84,6 @@ Content-Length: 589
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 95a01fa15f8107b8cd6ea1a0e97f94324fad0493
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 636e1186157386841b6c98ea9ff18c8d50c18517
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352620"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190562"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>Get enrollmentConfigurationAssignment
 
@@ -78,8 +78,6 @@ Content-Length: 251
   }
 }
 ```
-
-
 
 
 

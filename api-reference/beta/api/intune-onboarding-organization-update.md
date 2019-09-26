@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0c6771f1fb879f3b233b6315bbd2fe379d8f74b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 02800c3f2e7e5abc6922a0b4f17324034409e7b9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352424"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190422"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -106,8 +106,6 @@ Content-Length: 541
   }
 }
 ```
-
-
 
 
 

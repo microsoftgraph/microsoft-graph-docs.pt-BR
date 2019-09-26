@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dcac92d6f740b3cfb57e5ef11a33216b56a2045
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 50d3a0f1a865b1028bb1e7daf26dd4af3ae7e65f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343066"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188931"
 ---
 # <a name="list-devicemanagementtemplatesettingcategories"></a>Listar deviceManagementTemplateSettingCategories
 
@@ -75,8 +75,6 @@ Content-Length: 215
   ]
 }
 ```
-
-
 
 
 

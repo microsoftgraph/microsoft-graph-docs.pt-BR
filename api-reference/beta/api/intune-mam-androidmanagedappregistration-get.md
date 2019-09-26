@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6918d5feea730006bb115688566f9e4dd76dfde2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 20cb111613591e4e0650d9f09ebf4fa0ec07c9cd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357338"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193424"
 ---
 # <a name="get-androidmanagedappregistration"></a>Get androidManagedAppRegistration
 
@@ -97,8 +97,6 @@ Content-Length: 1054
   }
 }
 ```
-
-
 
 
 

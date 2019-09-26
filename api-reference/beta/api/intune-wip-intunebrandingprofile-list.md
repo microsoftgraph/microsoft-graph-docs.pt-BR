@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dab09c4f126b09bce7ab1e882f87bd9a1ecbcd83
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f983713542274e177bcaf99142f2ccf70f4e1ace
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347251"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195283"
 ---
 # <a name="list-intunebrandingprofiles"></a>Listar Navegaçãointunebrandingprofiles
 
@@ -113,8 +113,6 @@ Content-Length: 1703
   ]
 }
 ```
-
-
 
 
 

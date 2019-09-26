@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb00a4d1d160fe4afdfa5c466b3b23e10c693c09
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 369cf366cb05aca8b826f9f4a6df8c47fa95f471
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372108"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196739"
 ---
 # <a name="remoteactionaudit-resource-type"></a>tipo de recurso remoteActionAudit
 
@@ -36,7 +36,7 @@ Relatório de ações remotas iniciadas nos dispositivos que pertencem a um dete
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo do Intune.|
 |userName|String|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
 |initiatedByUserPrincipalName|String|O formato de usuário que iniciou a ação do dispositivo é UPN.|
-|ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, , `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
+|ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, , `rotateBitLockerKeys`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|Hora em que a ação foi emitida, dada em UTC.|
 |deviceOwnerUserPrincipalName|String|UPN do proprietário do dispositivo.|
 |deviceIMEI|String|IMEI do dispositivo.|

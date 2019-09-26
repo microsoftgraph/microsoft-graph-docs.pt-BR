@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48651a1deda692e07005ca70ea00436d1a30cf1e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 245d03395d60ee1af39853f4afc36bc3119e7c5c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343724"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186012"
 ---
 # <a name="update-devicemanagementintegersettinginstance"></a>Atualizar deviceManagementIntegerSettingInstance
 
@@ -96,8 +96,6 @@ Content-Length: 222
   "value": 5
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 486f86607d8caeca5080add166bfffcbad084efe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bd407f67e94bbae6d8a71284554198e96bd45c45
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348351"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185515"
 ---
 # <a name="list-azureadwindowsautopilotdeploymentprofiles"></a>Listar azureADWindowsAutopilotDeploymentProfiles
 
@@ -105,8 +105,6 @@ Content-Length: 1496
   ]
 }
 ```
-
-
 
 
 

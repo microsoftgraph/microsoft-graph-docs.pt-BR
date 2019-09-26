@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b6a69b389800ed325bb41f4f4c31af71f947489
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 91bb7b4d6c93b8a35f5cd38f2a4a263f3a9990f2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353230"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191166"
 ---
 # <a name="get-localizednotificationmessage"></a>Obter localizedNotificationMessage
 
@@ -80,8 +80,6 @@ Content-Length: 346
   }
 }
 ```
-
-
 
 
 

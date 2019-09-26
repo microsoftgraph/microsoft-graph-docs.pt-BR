@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d0a4ea741f912f0101632abe48bac3f7fa3d213
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5e207d3d10ed7891f73a1aa7e008004bcd84b0a7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354202"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193292"
 ---
 # <a name="update-managedappoperation"></a>Atualizar managedAppOperation
 
@@ -95,8 +95,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
-
 
 
 
