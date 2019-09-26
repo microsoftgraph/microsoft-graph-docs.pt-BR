@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dcc5052479b25edc41ec100833bcbc4175f40ed6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8754bed1f7a708d6a8cb34eba8618082d3971e41
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329751"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177364"
 ---
-# <a name="create-manageddevicemobileappconfigurationuserstatus"></a><span data-ttu-id="7b3c2-103">Criar managedDeviceMobileAppConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="7b3c2-103">Create managedDeviceMobileAppConfigurationUserStatus</span></span>
+# <a name="create-manageddevicemobileappconfigurationuserstatus"></a><span data-ttu-id="1d17c-103">Criar managedDeviceMobileAppConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="1d17c-103">Create managedDeviceMobileAppConfigurationUserStatus</span></span>
 
-> <span data-ttu-id="7b3c2-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1d17c-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1d17c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7b3c2-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1d17c-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1d17c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7b3c2-106">Criar um novo objeto [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="7b3c2-106">Create a new [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) object.</span></span>
+<span data-ttu-id="1d17c-106">Criar um novo objeto [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="1d17c-106">Create a new [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7b3c2-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7b3c2-107">Prerequisites</span></span>
-<span data-ttu-id="7b3c2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7b3c2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1d17c-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1d17c-107">Prerequisites</span></span>
+<span data-ttu-id="1d17c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1d17c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7b3c2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7b3c2-110">Permission type</span></span>|<span data-ttu-id="7b3c2-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="7b3c2-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1d17c-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1d17c-110">Permission type</span></span>|<span data-ttu-id="1d17c-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1d17c-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7b3c2-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7b3c2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7b3c2-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7b3c2-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="7b3c2-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7b3c2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7b3c2-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-115">Not supported.</span></span>|
-|<span data-ttu-id="7b3c2-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7b3c2-116">Application</span></span>|<span data-ttu-id="7b3c2-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7b3c2-117">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="1d17c-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1d17c-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1d17c-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1d17c-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="1d17c-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1d17c-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1d17c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1d17c-115">Not supported.</span></span>|
+|<span data-ttu-id="1d17c-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1d17c-116">Application</span></span>|<span data-ttu-id="1d17c-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1d17c-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7b3c2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7b3c2-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1d17c-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1d17c-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,35 +39,35 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/userStatuses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7b3c2-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7b3c2-119">Request headers</span></span>
-|<span data-ttu-id="7b3c2-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7b3c2-120">Header</span></span>|<span data-ttu-id="7b3c2-121">Valor</span><span class="sxs-lookup"><span data-stu-id="7b3c2-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1d17c-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1d17c-119">Request headers</span></span>
+|<span data-ttu-id="1d17c-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1d17c-120">Header</span></span>|<span data-ttu-id="1d17c-121">Valor</span><span class="sxs-lookup"><span data-stu-id="1d17c-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7b3c2-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="7b3c2-122">Authorization</span></span>|<span data-ttu-id="7b3c2-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7b3c2-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="7b3c2-124">Accept</span></span>|<span data-ttu-id="7b3c2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7b3c2-125">application/json</span></span>|
+|<span data-ttu-id="1d17c-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="1d17c-122">Authorization</span></span>|<span data-ttu-id="1d17c-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1d17c-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1d17c-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1d17c-124">Accept</span></span>|<span data-ttu-id="1d17c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1d17c-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7b3c2-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7b3c2-126">Request body</span></span>
-<span data-ttu-id="7b3c2-127">No corpo da solicitação, forneça uma representação JSON do objeto managedDeviceMobileAppConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-127">In the request body, supply a JSON representation for the managedDeviceMobileAppConfigurationUserStatus object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1d17c-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1d17c-126">Request body</span></span>
+<span data-ttu-id="1d17c-127">No corpo da solicitação, forneça uma representação JSON do objeto managedDeviceMobileAppConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="1d17c-127">In the request body, supply a JSON representation for the managedDeviceMobileAppConfigurationUserStatus object.</span></span>
 
-<span data-ttu-id="7b3c2-128">A tabela a seguir mostra as propriedades que são necessárias ao criar managedDeviceMobileAppConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-128">The following table shows the properties that are required when you create the managedDeviceMobileAppConfigurationUserStatus.</span></span>
+<span data-ttu-id="1d17c-128">A tabela a seguir mostra as propriedades que são necessárias ao criar managedDeviceMobileAppConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="1d17c-128">The following table shows the properties that are required when you create the managedDeviceMobileAppConfigurationUserStatus.</span></span>
 
-|<span data-ttu-id="7b3c2-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7b3c2-129">Property</span></span>|<span data-ttu-id="7b3c2-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="7b3c2-130">Type</span></span>|<span data-ttu-id="7b3c2-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b3c2-131">Description</span></span>|
+|<span data-ttu-id="1d17c-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1d17c-129">Property</span></span>|<span data-ttu-id="1d17c-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="1d17c-130">Type</span></span>|<span data-ttu-id="1d17c-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="1d17c-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7b3c2-132">id</span><span class="sxs-lookup"><span data-stu-id="7b3c2-132">id</span></span>|<span data-ttu-id="7b3c2-133">String</span><span class="sxs-lookup"><span data-stu-id="7b3c2-133">String</span></span>|<span data-ttu-id="7b3c2-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-134">Key of the entity.</span></span>|
-|<span data-ttu-id="7b3c2-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="7b3c2-135">userDisplayName</span></span>|<span data-ttu-id="7b3c2-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7b3c2-136">String</span></span>|<span data-ttu-id="7b3c2-137">Nome de usuário de DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-137">User name of the DevicePolicyStatus.</span></span>|
-|<span data-ttu-id="7b3c2-138">devicesCount</span><span class="sxs-lookup"><span data-stu-id="7b3c2-138">devicesCount</span></span>|<span data-ttu-id="7b3c2-139">Int32</span><span class="sxs-lookup"><span data-stu-id="7b3c2-139">Int32</span></span>|<span data-ttu-id="7b3c2-140">Contagem de dispositivos para esse usuário.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-140">Devices count for that user.</span></span>|
-|<span data-ttu-id="7b3c2-141">status</span><span class="sxs-lookup"><span data-stu-id="7b3c2-141">status</span></span>|[<span data-ttu-id="7b3c2-142">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="7b3c2-142">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="7b3c2-143">Status de conformidade do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-143">Compliance status of the policy report.</span></span> <span data-ttu-id="7b3c2-144">Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-144">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
-|<span data-ttu-id="7b3c2-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="7b3c2-145">lastReportedDateTime</span></span>|<span data-ttu-id="7b3c2-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7b3c2-146">DateTimeOffset</span></span>|<span data-ttu-id="7b3c2-147">Data e hora da última modificação do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-147">Last modified date time of the policy report.</span></span>|
-|<span data-ttu-id="7b3c2-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="7b3c2-148">userPrincipalName</span></span>|<span data-ttu-id="7b3c2-149">String</span><span class="sxs-lookup"><span data-stu-id="7b3c2-149">String</span></span>|<span data-ttu-id="7b3c2-150">UserPrincipalName.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-150">UserPrincipalName.</span></span>|
+|<span data-ttu-id="1d17c-132">id</span><span class="sxs-lookup"><span data-stu-id="1d17c-132">id</span></span>|<span data-ttu-id="1d17c-133">String</span><span class="sxs-lookup"><span data-stu-id="1d17c-133">String</span></span>|<span data-ttu-id="1d17c-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="1d17c-134">Key of the entity.</span></span>|
+|<span data-ttu-id="1d17c-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="1d17c-135">userDisplayName</span></span>|<span data-ttu-id="1d17c-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1d17c-136">String</span></span>|<span data-ttu-id="1d17c-137">Nome de usuário de DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="1d17c-137">User name of the DevicePolicyStatus.</span></span>|
+|<span data-ttu-id="1d17c-138">devicesCount</span><span class="sxs-lookup"><span data-stu-id="1d17c-138">devicesCount</span></span>|<span data-ttu-id="1d17c-139">Int32</span><span class="sxs-lookup"><span data-stu-id="1d17c-139">Int32</span></span>|<span data-ttu-id="1d17c-140">Contagem de dispositivos para esse usuário.</span><span class="sxs-lookup"><span data-stu-id="1d17c-140">Devices count for that user.</span></span>|
+|<span data-ttu-id="1d17c-141">status</span><span class="sxs-lookup"><span data-stu-id="1d17c-141">status</span></span>|[<span data-ttu-id="1d17c-142">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="1d17c-142">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="1d17c-143">Status de conformidade do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="1d17c-143">Compliance status of the policy report.</span></span> <span data-ttu-id="1d17c-144">Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="1d17c-144">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="1d17c-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="1d17c-145">lastReportedDateTime</span></span>|<span data-ttu-id="1d17c-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1d17c-146">DateTimeOffset</span></span>|<span data-ttu-id="1d17c-147">Data e hora da última modificação do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="1d17c-147">Last modified date time of the policy report.</span></span>|
+|<span data-ttu-id="1d17c-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="1d17c-148">userPrincipalName</span></span>|<span data-ttu-id="1d17c-149">String</span><span class="sxs-lookup"><span data-stu-id="1d17c-149">String</span></span>|<span data-ttu-id="1d17c-150">UserPrincipalName.</span><span class="sxs-lookup"><span data-stu-id="1d17c-150">UserPrincipalName.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7b3c2-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b3c2-151">Response</span></span>
-<span data-ttu-id="7b3c2-152">Se tiver êxito, este método retornará um código de resposta `201 Created` e o objeto [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-152">If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1d17c-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="1d17c-151">Response</span></span>
+<span data-ttu-id="1d17c-152">Se tiver êxito, este método retornará um código de resposta `201 Created` e o objeto [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1d17c-152">If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7b3c2-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7b3c2-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1d17c-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1d17c-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7b3c2-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7b3c2-154">Request</span></span>
-<span data-ttu-id="7b3c2-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1d17c-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1d17c-154">Request</span></span>
+<span data-ttu-id="1d17c-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1d17c-155">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 306
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7b3c2-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b3c2-156">Response</span></span>
-<span data-ttu-id="7b3c2-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7b3c2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1d17c-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="1d17c-156">Response</span></span>
+<span data-ttu-id="1d17c-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1d17c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -100,8 +100,6 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 
