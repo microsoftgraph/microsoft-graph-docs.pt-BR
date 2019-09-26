@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 4d405dcc5e7881c7a404e5ca16f87c889cd5ccc7
-ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
+ms.openlocfilehash: ac705194cc69eebe8dbfda9aab37cb7c34a10187
+ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36426409"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37203995"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 
@@ -32,6 +32,7 @@ Uma das seguintes [permissões](https://developer.microsoft.com/graph/docs/autho
 - User.ReadWrite
 - User.Read.All
 - User.ReadWrite.All
+- User.ManageIdentities.All
 - Directory.Read.All
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
