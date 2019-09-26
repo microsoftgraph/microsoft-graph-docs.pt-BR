@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d68726f3d57f15cb9b3ce392ea849b4510d0dc85
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9f73e6b416ba5a4ea8b812091e071e1f24ae50df
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351515"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189617"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>Atualizar deviceAndAppManagementRoleAssignment
 
@@ -114,8 +114,6 @@ Content-Length: 391
   ]
 }
 ```
-
-
 
 
 

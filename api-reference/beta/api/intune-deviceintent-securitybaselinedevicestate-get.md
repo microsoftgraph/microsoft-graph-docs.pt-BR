@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 942fe5963ec1da1f30e992518bac807437977aa4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9d7910c415f9f4906013459c7acf35939eb5516b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349065"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185704"
 ---
 # <a name="get-securitybaselinedevicestate"></a>Obter securityBaselineDeviceState
 
@@ -80,8 +80,6 @@ Content-Length: 392
   }
 }
 ```
-
-
 
 
 

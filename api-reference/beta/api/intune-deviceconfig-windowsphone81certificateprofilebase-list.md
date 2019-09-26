@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cebdc867668f8ccefda5d92004fcee2694cf694b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 039c785a4985915ddc6da7367b1dfa11dffc341c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344278"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186719"
 ---
 # <a name="list-windowsphone81certificateprofilebases"></a>Listar windowsPhone81CertificateProfileBases
 
@@ -118,8 +118,6 @@ Content-Length: 1887
   ]
 }
 ```
-
-
 
 
 

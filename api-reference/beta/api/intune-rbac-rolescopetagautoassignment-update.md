@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a6a142f5fe9f9b643622f95568326b06ed2b5d9a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1dcb22df0a686e29131aa2e184e59b692e11bb2b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351025"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194898"
 ---
 # <a name="update-rolescopetagautoassignment"></a>Atualizar roleScopeTagAutoAssignment
 
@@ -91,8 +91,6 @@ Content-Length: 215
   }
 }
 ```
-
-
 
 
 

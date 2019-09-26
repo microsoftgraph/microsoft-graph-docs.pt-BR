@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df4ed11dacc3dfd026f73e29851d52563657ca96
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a72ea49cad2fa4de9949e3bb992ead90cba93468
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352543"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190443"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>Listar mobileThreatDefenseConnectors
 
@@ -87,8 +87,6 @@ Content-Length: 764
   ]
 }
 ```
-
-
 
 
 

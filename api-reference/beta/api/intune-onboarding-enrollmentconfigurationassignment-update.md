@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 96831fcb811b79aa62e19f7d12694c3385494098
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 51283929885acec13c6ef8f28eb0fe1c7b4871e4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352599"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190513"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>Atualizar enrollmentConfigurationAssignment
 
@@ -91,8 +91,6 @@ Content-Length: 222
   }
 }
 ```
-
-
 
 
 

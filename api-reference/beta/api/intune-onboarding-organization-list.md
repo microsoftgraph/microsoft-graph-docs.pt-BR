@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f2b9444daa42acb8b266c3a3829189021f7e02c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5163d9109b4f01a264483a4ceb322b80b1b4bbf7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352452"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190380"
 ---
 # <a name="list-organizations"></a>Listar organizations
 
@@ -84,8 +84,6 @@ Content-Length: 622
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6790ce3486c25c85ec45750197f2394b7a8a544f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 87b8d8abdb22428a09106aec206007fe645f2512
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351410"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189511"
 ---
 # <a name="create-resourceoperation"></a>Criar resourceOperation
 
@@ -99,8 +99,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
-
 
 
 

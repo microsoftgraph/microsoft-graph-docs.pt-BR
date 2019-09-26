@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e399a83ce387489f32ee31bc4166665b6a4b4820
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a7d68f007932ba21da55e01e2ea75cd27d3b62ad
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351480"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189561"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Acessar deviceAndAppManagementRoleDefinition
 
@@ -121,8 +121,6 @@ Content-Length: 1391
   }
 }
 ```
-
-
 
 
 

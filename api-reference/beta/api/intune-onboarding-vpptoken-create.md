@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 98f6265254431ff062e55e91c7f50b3d467f898b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: db1f7ca4cb3ec685bb6a01b633be0937e25b76c3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352340"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190226"
 ---
 # <a name="create-vpptoken"></a>Criar vppToken
 
@@ -154,8 +154,6 @@ Content-Length: 1115
   ]
 }
 ```
-
-
 
 
 

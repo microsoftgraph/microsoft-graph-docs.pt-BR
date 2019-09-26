@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed53831d0f8cb04a440f46a721d62ff8883cfba6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9e877127342df992ec412cb8efcc936d8746cc02
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343661"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185886"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>Criar deviceManagementIntentDeviceSettingStateSummary
 
@@ -105,8 +105,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 92a9bb76ba2e957125455c7af09d885736b58edf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 721362f205f25fc114c91d7ad48ccc6a43ba6d61
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309664"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185396"
 ---
 # <a name="list-depmacosenrollmentprofiles"></a>Listar depMacOSEnrollmentProfiles
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1401
+Content-Length: 1442
 
 {
   "value": [
@@ -94,6 +94,7 @@ Content-Length: 1401
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
       "privacyPaneDisabled": true,
+      "screenTimeScreenDisabled": true,
       "deviceNameTemplate": "Device Name Template value",
       "registrationDisabled": true,
       "fileVaultDisabled": true,
@@ -104,8 +105,6 @@ Content-Length: 1401
   ]
 }
 ```
-
-
 
 
 

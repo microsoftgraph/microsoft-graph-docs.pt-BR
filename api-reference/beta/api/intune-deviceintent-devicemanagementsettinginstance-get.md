@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec4d0b5feac49ce532c447c9a6a62d1f245857cb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5376dda18bf02c1d94f6c5f20975aa4f69a27d15
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343227"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189197"
 ---
 # <a name="get-devicemanagementsettinginstance"></a>Obter deviceManagementSettingInstance
 
@@ -80,8 +80,6 @@ Content-Length: 227
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 739d8bc495cebbc00837b325f68002a5ee8e9903
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b5aea279ed44c5849c5d37076c9d9f2597563e06
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328036"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196578"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>tipo de recurso depIOSEnrollmentProfile
 
@@ -60,6 +60,7 @@ Herda de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollment
 |diagnosticsDisabled|Booliano|Indica se o painel de configuração de diagnóstico está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |displayToneSetupDisabled|Booliano|Indica se a tela de configuração do displaytone está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |privacyPaneDisabled|Booliano|Indica se a tela de privacidade está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|screenTimeScreenDisabled|Booliano|Indica se a configuração de tempo limite da tela está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |deviceNameTemplate|String|Define um padrão literal ou de nome. Herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indica o modo de emparelhamento do iTunes. Os valores possíveis são: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|coleção [managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Certificados de gerenciamento para o Apple Configurator|
@@ -72,10 +73,14 @@ Herda de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollment
 |homeButtonScreenDisabled|Booliano|Indica se a tela de sensibilidade do botão da página inicial está desabilitada|
 |iMessageAndFaceTimeScreenDisabled|Booliano|Indica se a tela iMessage e FaceTime está desabilitada|
 |onBoardingScreenDisabled|Booliano|Indica se a tela de configuração de integração está desabilitada|
-|screenTimeScreenDisabled|Booliano|Indica se a configuração de tempo limite da tela está desabilitada|
 |simSetupScreenDisabled|Booliano|Indica se a tela SIMSetup está desabilitada|
 |softwareUpdateScreenDisabled|Booliano|Indica se a tela obrigatória atualização de sofware está desabilitada|
 |watchMigrationScreenDisabled|Booliano|Indica se a tela Watch Migration está desabilitada|
+|appearanceScreenDisabled|Booliano|Indica se a tela do apperance está desabilitada|
+|expressLanguageScreenDisabled|Booliano|Indica se a tela de idioma expresso está desabilitada|
+|preferredLanguageScreenDisabled|Booliano|Indica se a tela de idioma preferencial está desabilitada|
+|deviceToDeviceMigrationDisabled|Booliano|Indica se a migração de dispositivo para dispositivo está desabilitada|
+|welcomeScreenDisabled|Booliano|Indica se a tela do weclome está desabilitada|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -116,6 +121,7 @@ Veja a seguir uma representação JSON do recurso.
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "String",
   "iTunesPairingMode": "String",
   "managementCertificates": [
@@ -134,10 +140,14 @@ Veja a seguir uma representação JSON do recurso.
   "homeButtonScreenDisabled": true,
   "iMessageAndFaceTimeScreenDisabled": true,
   "onBoardingScreenDisabled": true,
-  "screenTimeScreenDisabled": true,
   "simSetupScreenDisabled": true,
   "softwareUpdateScreenDisabled": true,
-  "watchMigrationScreenDisabled": true
+  "watchMigrationScreenDisabled": true,
+  "appearanceScreenDisabled": true,
+  "expressLanguageScreenDisabled": true,
+  "preferredLanguageScreenDisabled": true,
+  "deviceToDeviceMigrationDisabled": true,
+  "welcomeScreenDisabled": true
 }
 ```
 

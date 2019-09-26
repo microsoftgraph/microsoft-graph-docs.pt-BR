@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e2e51de75c04c6ebdad1c69b8fa43a9e5ee23c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8a6712cb5f728d18e84dccd46702c776dc75ead1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352676"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190547"
 ---
 # <a name="get-devicemanagementpartner"></a>Acessar deviceManagementPartner
 
@@ -85,8 +85,6 @@ Content-Length: 756
   }
 }
 ```
-
-
 
 
 

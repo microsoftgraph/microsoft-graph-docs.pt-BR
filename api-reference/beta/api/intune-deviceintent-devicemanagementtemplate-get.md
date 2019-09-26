@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c4a60a530dd98f3b752d311aceef1d5de4279225
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 99f0fe282fb876832cd435254f90da3a0c4d51b1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313115"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189001"
 ---
 # <a name="get-devicemanagementtemplate"></a>Obter deviceManagementTemplate
 
@@ -83,8 +83,6 @@ Content-Length: 420
   }
 }
 ```
-
-
 
 
 

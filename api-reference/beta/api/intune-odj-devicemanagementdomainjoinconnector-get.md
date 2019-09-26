@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e2f1f35917abf4e5dc371ccdf80b6fd8aae1aa0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 05c81c6d48bf04dba586bc32da8ceedb0276adda
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353138"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191103"
 ---
 # <a name="get-devicemanagementdomainjoinconnector"></a>Obter deviceManagementDomainJoinConnector
 
@@ -79,8 +79,6 @@ Content-Length: 315
   }
 }
 ```
-
-
 
 
 
