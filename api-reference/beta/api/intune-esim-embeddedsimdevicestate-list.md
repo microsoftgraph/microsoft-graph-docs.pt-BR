@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aade3b2218c2e07bee91b3ed6b4972986e4d98fb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9013b37c893d52bb31c2dada3af77eeb81b25186
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355714"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187524"
 ---
 # <a name="list-embeddedsimdevicestates"></a>Listar embeddedSIMDeviceStates
 
@@ -82,8 +82,6 @@ Content-Length: 602
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 357a0835ace191316699618934c1d4c97331bc30
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 74b16a466be21487bb34127b2bbe97d64a860536
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345852"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174701"
 ---
 # <a name="get-deviceconfigurationuserstatesummary"></a>Obter deviceConfigurationUserStateSummary
 
@@ -82,8 +82,6 @@ Content-Length: 361
   }
 }
 ```
-
-
 
 
 

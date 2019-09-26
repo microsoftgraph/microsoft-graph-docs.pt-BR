@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b2d3ff1d05682f6244bd0ebc7ea6ac4cfaa1311
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e8dd804320b8c58b4f6b85ab21102f921d4e05b8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344788"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187223"
 ---
 # <a name="get-windows81generalconfiguration"></a>Obter windows81GeneralConfiguration
 
@@ -142,8 +142,6 @@ Content-Length: 3022
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3141b0edf7e1dfd8bdaf88207c5b7b9b7bf44775
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9f85ca7aa1a35a47828467ec7e659d721e1bca9b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339033"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179058"
 ---
 # <a name="delete-iosvpnconfiguration"></a>Excluir iosVpnConfiguration
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

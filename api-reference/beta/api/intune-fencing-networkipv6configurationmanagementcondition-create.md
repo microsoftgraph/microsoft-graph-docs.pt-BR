@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5c180e0c202f4d7c4bb1aef14a29fcd2eb3cc16
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 62743a88e178d065b825834f40ed6fd558284d6f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355434"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184385"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>Criar networkIPv6ConfigurationManagementCondition
 
@@ -128,8 +128,6 @@ Content-Length: 651
   ]
 }
 ```
-
-
 
 
 

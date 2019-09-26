@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e439b6ddbb960ec627635731e12bd58f512c16a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 888b576399cdd741b713c1efc68c0574cbea1d99
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339103"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37167484"
 ---
 # <a name="delete-iosscepcertificateprofile"></a>Excluir iosScepCertificateProfile
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ecef806e90c96874515344eebf39749d624ff0a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6a2f98a9f3529813aabfc77d82e4be56124c9a26
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311995"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176447"
 ---
 # <a name="list-androidforworkpkcscertificateprofiles"></a>Listar androidForWorkPkcsCertificateProfiles
 
@@ -121,8 +121,6 @@ Content-Length: 2135
   ]
 }
 ```
-
-
 
 
 

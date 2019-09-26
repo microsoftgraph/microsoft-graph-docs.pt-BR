@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aa19331a8f525b16c2e8a1d8b045d21f177e4088
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 637bbaa2aea5f7a95c6d5b41f915d6cf9f7dc7b0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338830"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178722"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Listar macOSDeviceFeaturesConfigurations
 
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2572
+Content-Length: 2867
 
 {
   "value": [
@@ -133,13 +133,21 @@ Content-Length: 2572
       "restartDisabledWhileLoggedIn": true,
       "powerOffDisabledWhileLoggedIn": true,
       "logOutDisabledWhileLoggedIn": true,
-      "screenLockDisableImmediate": true
+      "screenLockDisableImmediate": true,
+      "associatedDomains": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "singleSignOnExtension": {
+        "@odata.type": "microsoft.graph.singleSignOnExtension"
+      }
     }
   ]
 }
 ```
-
-
 
 
 

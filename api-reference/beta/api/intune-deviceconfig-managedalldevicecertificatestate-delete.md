@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d05ae3601ba84afbab974a4d5294afe6c24ec81
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d5a5bb91cdae51930734760e32a57ae48f1fc385
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315040"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183720"
 ---
 # <a name="delete-managedalldevicecertificatestate"></a>Excluir managedAllDeviceCertificateState
 
@@ -63,8 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

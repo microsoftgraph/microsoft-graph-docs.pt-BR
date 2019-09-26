@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7abcadba3d03c924e0fedecaa3f11dbd0f5978bf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1f3cb20edd465ea9af0efe9a3e0a8ce457b7ad44
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348911"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180500"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Criar deviceManagementScriptGroupAssignment
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de atribuição do grupo de scripts de gerenciamento de dispositivos.|
+|id|String|Chave da entidade de atribuição do grupo de scripts de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
 |targetGroupId|String|A ID do grupo do Azure Active Directory para o qual estamos direcionando o script.|
 
 
@@ -87,8 +87,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
-
 
 
 

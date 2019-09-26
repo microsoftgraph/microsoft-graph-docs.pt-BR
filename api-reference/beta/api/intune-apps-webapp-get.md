@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 67fb2430c053ed70c1cef7a1ef1e9b3a568f8d63
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1ecfd7b7e8f906aeb44763b2f1a41873d760ca0e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328841"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172153"
 ---
 # <a name="get-webapp"></a>Acessar webApp
 
@@ -102,8 +102,6 @@ Content-Length: 1024
   }
 }
 ```
-
-
 
 
 

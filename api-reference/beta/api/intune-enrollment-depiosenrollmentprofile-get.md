@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 948c6cd870185d4a897c424df52f861cd7c889a4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3e602786b7b7c49fb2f9a5027583b44754991245
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309713"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187880"
 ---
 # <a name="get-depiosenrollmentprofile"></a>Obter depIOSEnrollmentProfile
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1955
+Content-Length: 2166
 
 {
   "value": {
@@ -96,6 +96,7 @@ Content-Length: 1955
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
     "privacyPaneDisabled": true,
+    "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
     "iTunesPairingMode": "allow",
     "managementCertificates": [
@@ -114,15 +115,17 @@ Content-Length: 1955
     "homeButtonScreenDisabled": true,
     "iMessageAndFaceTimeScreenDisabled": true,
     "onBoardingScreenDisabled": true,
-    "screenTimeScreenDisabled": true,
     "simSetupScreenDisabled": true,
     "softwareUpdateScreenDisabled": true,
-    "watchMigrationScreenDisabled": true
+    "watchMigrationScreenDisabled": true,
+    "appearanceScreenDisabled": true,
+    "expressLanguageScreenDisabled": true,
+    "preferredLanguageScreenDisabled": true,
+    "deviceToDeviceMigrationDisabled": true,
+    "welcomeScreenDisabled": true
   }
 }
 ```
-
-
 
 
 

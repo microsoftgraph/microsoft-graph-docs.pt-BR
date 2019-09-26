@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5edb196c3f7e6cb156aefe7063e4314099f47a4a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 29b21c116db938d400b2a9c0fa57371fd04c0cd5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329247"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177140"
 ---
 # <a name="get-mobileappcontent"></a>Acessar mobileAppContent
 
@@ -77,8 +77,6 @@ Content-Length: 130
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 50088e567f1053fab7f803e6c225f74041dfd901
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1373beee901b80b3598c66f502457fcd71f588f2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339614"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37167925"
 ---
 # <a name="delete-ioscustomconfiguration"></a>Excluir iosCustomConfiguration
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

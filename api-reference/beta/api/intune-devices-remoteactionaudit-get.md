@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ec834c6762daf6ba2317d3a5fc12c87c8f3cb97
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 623d90302a2d66a7f97638d3c6c325b6ed2cd2a2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310007"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188231"
 ---
 # <a name="get-remoteactionaudit"></a>Obter remoteActionAudit
 
@@ -84,8 +84,6 @@ Content-Length: 594
   }
 }
 ```
-
-
 
 
 

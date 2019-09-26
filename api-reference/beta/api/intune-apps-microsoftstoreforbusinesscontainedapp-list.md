@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1cdc3a60fdd5fa94cea6ceb28e8830cab58b634
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c804e8b826e5c8beba839e65d498feaaef44de8f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336807"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177224"
 ---
 # <a name="list-microsoftstoreforbusinesscontainedapps"></a>Listar microsoftStoreForBusinessContainedApps
 
@@ -77,8 +77,6 @@ Content-Length: 221
   ]
 }
 ```
-
-
 
 
 

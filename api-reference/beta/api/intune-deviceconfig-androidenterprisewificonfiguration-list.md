@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11d298af6fcc197d17d8e4e0a9124e8ac2ff0afc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8229d9d25b63284c73f82ce241429a34c21c134e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312373"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37169647"
 ---
 # <a name="list-androidenterprisewificonfigurations"></a>Listar androidEnterpriseWiFiConfigurations
 
@@ -118,8 +118,6 @@ Content-Length: 2084
   ]
 }
 ```
-
-
 
 
 

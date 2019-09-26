@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea9f0e1350b6045603611a3b14df54574e8e7cd0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d9f43c5b814865c0830da1faa4b245b92c5b92ac
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310238"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180402"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Ação deleteUserFromSharedAppleDevice
 
@@ -81,8 +81,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

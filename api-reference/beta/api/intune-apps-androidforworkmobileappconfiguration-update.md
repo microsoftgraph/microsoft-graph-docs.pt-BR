@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f32ebd754b457d1977d05cb49b1a7cdf29062f2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3eb998eb3ba528a484bb20d950a5ee2496d3e854
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324656"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178126"
 ---
 # <a name="update-androidforworkmobileappconfiguration"></a>Atualizar androidForWorkMobileAppConfiguration
 
@@ -132,8 +132,6 @@ Content-Length: 732
   ]
 }
 ```
-
-
 
 
 

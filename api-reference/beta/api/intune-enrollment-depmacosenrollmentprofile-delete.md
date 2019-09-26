@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d65aaaaa93272af79884851570f03a3a7952cb2f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 30ea6fde88ffdfcb4a00ce6ce66e53c82b8c998a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309706"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187895"
 ---
 # <a name="delete-depmacosenrollmentprofile"></a>Excluir depMacOSEnrollmentProfile
 
@@ -63,8 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

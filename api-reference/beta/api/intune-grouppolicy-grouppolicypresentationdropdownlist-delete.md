@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dca523f4ba5ba6de31ca9a6d555fc8721372107f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 394daacf582f3c64669aa521e7234fd1d33705a2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357828"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187317"
 ---
 # <a name="delete-grouppolicypresentationdropdownlist"></a>Excluir groupPolicyPresentationDropdownList
 
@@ -64,8 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

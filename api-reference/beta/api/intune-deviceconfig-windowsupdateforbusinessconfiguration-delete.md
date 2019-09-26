@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aaaf9cbf2346ef02927ac93dc05f242ea038fffc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dd713d8b399ea40bbb9bab9d1e96e8e555fe1191
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313717"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181410"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>Excluir windowsUpdateForBusinessConfiguration
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

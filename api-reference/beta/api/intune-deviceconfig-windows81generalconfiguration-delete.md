@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c1ee3a020d12130e6435d787a7393306141693e9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1d04ad7914f2d47fbd90533df5a03b15bca418ab
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314207"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187209"
 ---
 # <a name="delete-windows81generalconfiguration"></a>Excluir windows81GeneralConfiguration
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

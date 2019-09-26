@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5fc83f999168d416474a54c8f46d0b36228d5d7a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7bf4865c5da890597fd0b623bc29687614b5af0f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348183"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185158"
 ---
 # <a name="list-enrollmentprofiles"></a>Listar enrollmentProfiles
 
@@ -80,8 +80,6 @@ Content-Length: 484
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c960235233d159a6f3480dc47fd9bf55f4acae75
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 85405346d9d22f314e6a3d59cb534aa334c2a084
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316862"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37169843"
 ---
 # <a name="delete-androiddeviceownertrustedrootcertificate"></a>Excluir androidDeviceOwnerTrustedRootCertificate
 
@@ -35,6 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerCertificateProfileBase/rootCertificate
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/rootCertificateForServerValidation
 ```
@@ -56,7 +57,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerCertificateProfileBase/rootCertificate
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
 ```
 
 ### <a name="response"></a>Resposta
@@ -64,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

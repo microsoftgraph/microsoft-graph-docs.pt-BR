@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f596c6a70b62a4d16edb4ee2b938a4644888b17b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6788fcbbb2410b8d4853f106a77958d3ba8e4eac
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348155"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185179"
 ---
 # <a name="exportmobileconfig-function"></a>função função exportmobileconfig
 
@@ -69,8 +69,6 @@ Content-Length: 45
   "value": "Export Mobile Config value"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1777ff564af3a9ed32dfa38669e7c3de0ad75004
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ffb2cd98c31911799f34f932b09a7ada43cc1445
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345775"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168030"
 ---
 # <a name="list-easemailprofileconfigurationbases"></a>Listar easEmailProfileConfigurationBases
 
@@ -109,8 +109,6 @@ Content-Length: 1572
   ]
 }
 ```
-
-
 
 
 

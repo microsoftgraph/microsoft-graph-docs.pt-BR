@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d70d2e1cbdc3cb7e8d06ec83c145fc925cbabd62
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c10260ffe14c9d9ee6e5322ad5e03c657e25a898
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345642"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37167554"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>Listar iosikEv2VpnConfigurations
 
@@ -201,8 +201,6 @@ Content-Length: 4949
   ]
 }
 ```
-
-
 
 
 

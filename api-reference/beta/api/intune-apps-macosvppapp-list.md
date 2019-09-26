@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 747642c47ee897b49a4da9bb819bf6a3e6090c5e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 33e8434d46fbfc7977538e24a883d9e0d8819465
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336940"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173287"
 ---
 # <a name="list-macosvppapps"></a>Listar macOsVppApps
 
@@ -127,8 +127,6 @@ Content-Length: 2294
   ]
 }
 ```
-
-
 
 
 

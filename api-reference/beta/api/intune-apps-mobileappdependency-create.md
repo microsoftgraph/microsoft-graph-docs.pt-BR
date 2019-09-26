@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 69ff12bb7c0d00457d86d62c467778de2a9223fd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 321fb11e5e1ee977facd0649c87ef0e46c717b59
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329177"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177077"
 ---
 # <a name="create-mobileappdependency"></a>Criar mobileAppDependency
 
@@ -96,8 +96,6 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
-
-
 
 
 

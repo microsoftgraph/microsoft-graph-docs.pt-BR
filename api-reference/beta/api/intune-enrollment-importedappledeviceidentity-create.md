@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 63e9a6796675502acb7a4d6cd13a81995d429b40
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a105522aebefd85b551a29ff237d91c3ce6517ba
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348078"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185123"
 ---
 # <a name="create-importedappledeviceidentity"></a>Criar importedAppleDeviceIdentity
 
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar imported
 |createdDateTime|DateTimeOffset|Data e hora de criação do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do dispositivo|
 |descrição|String|A descrição do dispositivo|
-|enrollmentid|[enrollmentid](../resources/intune-enrollment-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
@@ -113,8 +113,6 @@ Content-Length: 605
   "platform": "ios"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5456005027f817080eea44f707c47f10184c0d6f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b509d1ca3feda2f5a62fb9c5e38f191eaef5aebe
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329037"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172391"
 ---
 # <a name="list-mobilecontainedapps"></a>Listar mobileContainedApps
 
@@ -76,8 +76,6 @@ Content-Length: 150
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48f0b80fdf2218bc34e17c34bf0014cf69c821b7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8601e46538e5e3e86ec307de6e8e0ea85d1a79fd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330241"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173385"
 ---
 # <a name="get-macoslobapp"></a>Obter macOSLobApp
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1875
+Content-Length: 1921
 
 {
   "value": {
@@ -109,7 +109,9 @@ Content-Length: 1875
       "v10_10": true,
       "v10_11": true,
       "v10_12": true,
-      "v10_13": true
+      "v10_13": true,
+      "v10_14": true,
+      "v10_15": true
     },
     "buildNumber": "Build Number value",
     "versionNumber": "Version Number value",
@@ -130,8 +132,6 @@ Content-Length: 1875
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: def6d30a29d6937cd2209db05d957d2a557b9647
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a41f95873cd0b0bbfdcc5439053ce00c71fa27a1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002584"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196214"
 ---
 # <a name="update-ioslobapp"></a>Atualizar iosLobApp
 
@@ -19,13 +19,13 @@ ms.locfileid: "36002584"
 Atualiza as propriedades de um objeto [iosLobApp](../resources/intune-apps-ioslobapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -85,7 +85,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1209
+Content-length: 1229
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -119,7 +119,8 @@ Content-length: 1209
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
@@ -132,7 +133,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1381
+Content-Length: 1401
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -169,7 +170,8 @@ Content-Length: 1381
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",

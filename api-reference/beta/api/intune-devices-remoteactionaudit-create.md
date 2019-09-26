@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 77774bc58d336429c013dcb391fba95c74512dcc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f320a3e8e2539e138aaafca98a6957d599784c7d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310021"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188245"
 ---
 # <a name="create-remoteactionaudit"></a>Criar remoteActionAudit
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar remoteAc
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo do Intune.|
 |userName|String|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
 |initiatedByUserPrincipalName|String|O formato de usuário que iniciou a ação do dispositivo é UPN.|
-|ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, , `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
+|ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, , `rotateBitLockerKeys`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|Hora em que a ação foi emitida, dada em UTC.|
 |deviceOwnerUserPrincipalName|String|UPN do proprietário do dispositivo.|
 |deviceIMEI|String|IMEI do dispositivo.|
@@ -111,8 +111,6 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 37ce5cd27f00a01a8796789c36e0701d6cf4e89a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b0dfb7e7c4ac94ecc80b87823cfda4f535b9f3c8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348470"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188042"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Criar windowsManagementAppHealthState
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o estado de integridade do aplicativo de gerenciamento do Windows|
+|id|String|Identificador exclusivo do estado de integridade do aplicativo de gerenciamento do Windows. Essa propriedade é somente leitura.|
 |HealthState|[HealthState](../resources/intune-devices-healthstate.md)|Estado de integridade do aplicativo de gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
 |installedVersion|String|Versão instalada do aplicativo de gerenciamento do Windows.|
 |lastCheckInDateTime|DateTimeOffset|Tempo de check-in do aplicativo de gerenciamento do Windows por último.|
@@ -99,8 +99,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
-
 
 
 

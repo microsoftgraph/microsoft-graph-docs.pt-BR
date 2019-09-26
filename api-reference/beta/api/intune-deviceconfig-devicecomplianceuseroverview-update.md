@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dbc623b65f4e789f2182640fbd6da45bc1b51e24
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8611f5dabed592c9d024b434ce42a7624e4518cc
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340055"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174939"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>Atualizar deviceComplianceUserOverview
 
@@ -108,8 +108,6 @@ Content-Length: 352
   "configurationVersion": 4
 }
 ```
-
-
 
 
 

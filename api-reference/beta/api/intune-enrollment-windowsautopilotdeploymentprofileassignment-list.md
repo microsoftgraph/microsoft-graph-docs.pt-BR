@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b6767337e772efc0a254ed02de0cb7413622e41b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1ab6d15b3c1b302c3a45e853a9ddb739309f7d7a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356092"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184794"
 ---
 # <a name="list-windowsautopilotdeploymentprofileassignments"></a>Listar windowsAutopilotDeploymentProfileAssignments
 
@@ -77,8 +77,6 @@ Content-Length: 285
   ]
 }
 ```
-
-
 
 
 

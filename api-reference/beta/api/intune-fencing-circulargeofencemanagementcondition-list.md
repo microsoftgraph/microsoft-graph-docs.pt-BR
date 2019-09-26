@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 506e7f1077f6cd758380c59725e9d8fc8885640a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 46ff659324b73947268a8899ca20e0349e7c1278
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355614"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187489"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>Listar circularGeofenceManagementConditions
 
@@ -87,8 +87,6 @@ Content-Length: 701
   ]
 }
 ```
-
-
 
 
 

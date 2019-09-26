@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 007c67cd0c51d75b425b703b9fc2e575c2013663
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2ea0051e2b0fea2a442bd8e9392571af875783af
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343605"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180878"
 ---
 # <a name="list-devicemanagementintentdevicestates"></a>Listar deviceManagementIntentDeviceStates
 
@@ -80,8 +80,6 @@ Content-Length: 456
   ]
 }
 ```
-
-
 
 
 

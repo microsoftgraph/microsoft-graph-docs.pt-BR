@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d90c66728342ab95fb4f37c7690857d296966e31
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a2e08a9ba7e91fc26bd7013420500d8772e88f2e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348414"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187980"
 ---
 # <a name="delete-activedirectorywindowsautopilotdeploymentprofile"></a>Excluir activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

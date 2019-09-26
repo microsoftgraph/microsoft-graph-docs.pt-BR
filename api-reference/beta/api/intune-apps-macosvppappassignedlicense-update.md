@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: baeb50a0e9d9d21e27bca49e9e1f286e9d0a8b9e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d9391715f8a6cec71fcd12289be51cf3ea489a0f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336891"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173245"
 ---
 # <a name="update-macosvppappassignedlicense"></a>Atualizar macOsVppAppAssignedLicense
 
@@ -96,8 +96,6 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 

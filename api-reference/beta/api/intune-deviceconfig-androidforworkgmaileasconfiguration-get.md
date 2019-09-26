@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ebb585e2feab50178e065c3649e5b8ed38f6b899
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6380eb0a5ef7c4549884be24446f58146c9af1d5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312107"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176552"
 ---
 # <a name="get-androidforworkgmaileasconfiguration"></a>Obter androidForWorkGmailEasConfiguration
 
@@ -113,8 +113,6 @@ Content-Length: 1531
   }
 }
 ```
-
-
 
 
 

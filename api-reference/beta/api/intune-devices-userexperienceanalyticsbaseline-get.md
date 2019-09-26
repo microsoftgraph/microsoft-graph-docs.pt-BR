@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b712fc30400212d1330b024040faab1163523b24
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 30f4fa54c494f75633df530124841ab04e146eb2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350424"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188259"
 ---
 # <a name="get-userexperienceanalyticsbaseline"></a>Obter userExperienceAnalyticsBaseline
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 251
+Content-Length: 297
 
 {
   "value": {
@@ -74,12 +74,11 @@ Content-Length: 251
     "id": "1cce2cab-2cab-1cce-ab2c-ce1cab2cce1c",
     "displayName": "Display Name value",
     "overallScore": 12,
-    "overallRegressionThreshold": 10
+    "isBuiltIn": true,
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
   }
 }
 ```
-
-
 
 
 

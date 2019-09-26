@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 34a25391edc8d606e5c5a1bab525570f37a32ce0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7c8a940c8bb2ab6fe067cbaec1b7bc828122be8c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340728"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168709"
 ---
 # <a name="delete-androidworkprofilegmaileasconfiguration"></a>Excluir androidWorkProfileGmailEasConfiguration
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

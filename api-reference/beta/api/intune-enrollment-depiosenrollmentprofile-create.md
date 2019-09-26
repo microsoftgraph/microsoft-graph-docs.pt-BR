@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aa03e61f1b2ad66aa55ea9dce7aa2ed6c58b5c41
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 74b7b3db64ad1e7b492d4f1ca7af09c0c0a0fc68
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309720"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187867"
 ---
 # <a name="create-depiosenrollmentprofile"></a>Criar depIOSEnrollmentProfile
 
@@ -76,6 +76,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depIOSEn
 |diagnosticsDisabled|Booliano|Indica se o painel de configuração de diagnóstico está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |displayToneSetupDisabled|Booliano|Indica se a tela de configuração do displaytone está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |privacyPaneDisabled|Booliano|Indica se a tela de privacidade está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|screenTimeScreenDisabled|Booliano|Indica se a configuração de tempo limite da tela está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |deviceNameTemplate|String|Define um padrão literal ou de nome. Herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indica o modo de emparelhamento do iTunes. Os valores possíveis são: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|coleção [managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Certificados de gerenciamento para o Apple Configurator|
@@ -88,10 +89,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depIOSEn
 |homeButtonScreenDisabled|Booliano|Indica se a tela de sensibilidade do botão da página inicial está desabilitada|
 |iMessageAndFaceTimeScreenDisabled|Booliano|Indica se a tela iMessage e FaceTime está desabilitada|
 |onBoardingScreenDisabled|Booliano|Indica se a tela de configuração de integração está desabilitada|
-|screenTimeScreenDisabled|Booliano|Indica se a configuração de tempo limite da tela está desabilitada|
 |simSetupScreenDisabled|Booliano|Indica se a tela SIMSetup está desabilitada|
 |softwareUpdateScreenDisabled|Booliano|Indica se a tela obrigatória atualização de sofware está desabilitada|
 |watchMigrationScreenDisabled|Booliano|Indica se a tela Watch Migration está desabilitada|
+|appearanceScreenDisabled|Booliano|Indica se a tela do apperance está desabilitada|
+|expressLanguageScreenDisabled|Booliano|Indica se a tela de idioma expresso está desabilitada|
+|preferredLanguageScreenDisabled|Booliano|Indica se a tela de idioma preferencial está desabilitada|
+|deviceToDeviceMigrationDisabled|Booliano|Indica se a migração de dispositivo para dispositivo está desabilitada|
+|welcomeScreenDisabled|Booliano|Indica se a tela do weclome está desabilitada|
 
 
 
@@ -105,7 +110,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 1791
+Content-length: 1992
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -133,6 +138,7 @@ Content-length: 1791
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
   "iTunesPairingMode": "allow",
   "managementCertificates": [
@@ -151,10 +157,14 @@ Content-length: 1791
   "homeButtonScreenDisabled": true,
   "iMessageAndFaceTimeScreenDisabled": true,
   "onBoardingScreenDisabled": true,
-  "screenTimeScreenDisabled": true,
   "simSetupScreenDisabled": true,
   "softwareUpdateScreenDisabled": true,
-  "watchMigrationScreenDisabled": true
+  "watchMigrationScreenDisabled": true,
+  "appearanceScreenDisabled": true,
+  "expressLanguageScreenDisabled": true,
+  "preferredLanguageScreenDisabled": true,
+  "deviceToDeviceMigrationDisabled": true,
+  "welcomeScreenDisabled": true
 }
 ```
 
@@ -163,7 +173,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1840
+Content-Length: 2041
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -192,6 +202,7 @@ Content-Length: 1840
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
   "iTunesPairingMode": "allow",
   "managementCertificates": [
@@ -210,14 +221,16 @@ Content-Length: 1840
   "homeButtonScreenDisabled": true,
   "iMessageAndFaceTimeScreenDisabled": true,
   "onBoardingScreenDisabled": true,
-  "screenTimeScreenDisabled": true,
   "simSetupScreenDisabled": true,
   "softwareUpdateScreenDisabled": true,
-  "watchMigrationScreenDisabled": true
+  "watchMigrationScreenDisabled": true,
+  "appearanceScreenDisabled": true,
+  "expressLanguageScreenDisabled": true,
+  "preferredLanguageScreenDisabled": true,
+  "deviceToDeviceMigrationDisabled": true,
+  "welcomeScreenDisabled": true
 }
 ```
-
-
 
 
 

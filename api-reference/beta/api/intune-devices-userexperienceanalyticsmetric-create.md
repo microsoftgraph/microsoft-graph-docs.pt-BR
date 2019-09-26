@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cb5e1af4c527f671a23c6e08dfd437ef9385d87c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: be303d476524af2711937dd73d8f93d244e05d24
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311596"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188196"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Criar userExperienceAnalyticsMetric
 
@@ -52,7 +52,6 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo da métrica de análise da experiência do usuário.|
-|displayName|String|O nome da métrica de análise da experiência do usuário.|
 |valor|Duplo|O valor da métrica de análise da experiência do usuário.|
 |unidade|String|A unidade da métrica de análise da experiência do usuário.|
 
@@ -68,11 +67,10 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
 Content-type: application/json
-Content-length: 187
+Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
-  "displayName": "Display Name value",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "Unit value"
 }
@@ -83,18 +81,15 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 236
+Content-Length: 196
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "1371822e-822e-1371-2e82-71132e827113",
-  "displayName": "Display Name value",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "Unit value"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14b2244af750fcaa8967c873e3185c574fbc70b6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e7ff7863be9838672e0bb2c726fd0da7c452f745
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311953"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176426"
 ---
 # <a name="get-androidforworkscepcertificateprofile"></a>Obter androidForWorkScepCertificateProfile
 
@@ -135,8 +135,6 @@ Content-Length: 2289
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f8b65b8c2996ce84f894164b0bad259abbebcd8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e76837c935e6f3c88f4946684305844ab3c01589
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336142"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171551"
 ---
 # <a name="create-auditevent"></a>Criar auditEvent
 
@@ -171,8 +171,6 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e98114efcc0237e12b1ceda35da83b98c7b06b41
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9468dcaddcfce8fe0bb9f0ed35dd85becc9f83a7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309615"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185270"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>Ação syncWithAppleDeviceEnrollmentProgram
 
@@ -63,8 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

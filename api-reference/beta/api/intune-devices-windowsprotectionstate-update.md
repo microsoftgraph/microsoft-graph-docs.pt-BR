@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5372dd53f8b362c43ad0f79de4b69a8131e16ba7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 74824bbc5c066d0e3df398786e5163642b64707a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348421"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187979"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar Windowsprotectionstate foi
 
@@ -136,8 +136,6 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
-
 
 
 

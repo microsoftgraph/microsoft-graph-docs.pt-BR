@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c0e5ec97b0c35e652be3e2a8c3b458157c17a93
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a6c119ec5708605200921a64ae4eff496a0becfe
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345103"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182502"
 ---
 # <a name="get-windows10mobilecompliancepolicy"></a>Get windows10MobileCompliancePolicy
 
@@ -108,8 +108,6 @@ Content-Length: 1419
   }
 }
 ```
-
-
 
 
 

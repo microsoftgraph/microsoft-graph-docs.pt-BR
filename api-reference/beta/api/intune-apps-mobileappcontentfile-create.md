@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ef8cec3f9d66c60fccfc54cff73adb9d3321d14d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a752ed20089617413f4a380032b0e7c7335a3542
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329219"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177112"
 ---
 # <a name="create-mobileappcontentfile"></a>Criar mobileAppContentFile
 
@@ -116,8 +116,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
-
 
 
 

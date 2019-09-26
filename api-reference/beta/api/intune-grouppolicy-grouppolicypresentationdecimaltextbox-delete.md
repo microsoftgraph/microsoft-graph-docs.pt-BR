@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 764d82a34b35d85699d9a693146e7d0a1a0aedea
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6676e0460ea78540508d61c3c586cbef92ebb192
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354916"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179604"
 ---
 # <a name="delete-grouppolicypresentationdecimaltextbox"></a>Excluir groupPolicyPresentationDecimalTextBox
 
@@ -64,8 +64,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

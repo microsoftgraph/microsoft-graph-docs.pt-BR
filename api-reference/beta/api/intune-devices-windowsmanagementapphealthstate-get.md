@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d51dd115f0d5726583ac88679cf6a3a22566a53b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: faa6909676e95bd304bd38a9b2490fbd78393481
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348456"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188028"
 ---
 # <a name="get-windowsmanagementapphealthstate"></a>Obter windowsManagementAppHealthState
 
@@ -80,8 +80,6 @@ Content-Length: 382
   }
 }
 ```
-
-
 
 
 

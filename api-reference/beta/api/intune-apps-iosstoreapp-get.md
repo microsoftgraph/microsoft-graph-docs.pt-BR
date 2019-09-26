@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a41729d57dcea80c695d0a2f89b5ccb705aa8210
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: de7dae2f2415b53bd5d86edc64e8c7029fbe6f67
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330591"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173623"
 ---
 # <a name="get-iosstoreapp"></a>Acessar iosStoreApp
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1411
+Content-Length: 1433
 
 {
   "value": {
@@ -110,13 +110,12 @@ Content-Length: 1411
       "v9_0": true,
       "v10_0": true,
       "v11_0": true,
-      "v12_0": true
+      "v12_0": true,
+      "v13_0": true
     }
   }
 }
 ```
-
-
 
 
 

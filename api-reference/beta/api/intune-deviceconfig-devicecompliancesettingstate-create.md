@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 98201c0ce68bfbf7a315006c8cfe2b7aeb114e94
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c2c737bf21c5d8a0b1ea2dadaaba3a296c8af684
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340069"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174981"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Criar deviceComplianceSettingState
 
@@ -120,8 +120,6 @@ Content-Length: 598
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
-
 
 
 

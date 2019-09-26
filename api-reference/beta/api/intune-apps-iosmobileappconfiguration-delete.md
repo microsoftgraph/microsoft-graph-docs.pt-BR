@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fcbf9bc68046cd689dd7b519168affb9aa9b8a4c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9ec0c5d193d889253d5bcb30644f7d85708ecc82
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330675"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173665"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>Excluir iosMobileAppConfiguration
 
@@ -63,8 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

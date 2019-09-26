@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b5e68241a8e6dc3f1827974c2493648681bd7f69
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1cc53676541634c00850930b964bf8627f42147c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310805"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188833"
 ---
 # <a name="list-securitybaselinedevicestates"></a>Listar securityBaselineDeviceStates
 
@@ -79,8 +79,6 @@ Content-Length: 420
   ]
 }
 ```
-
-
 
 
 

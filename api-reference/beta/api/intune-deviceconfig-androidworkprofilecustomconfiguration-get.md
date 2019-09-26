@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4235e3ec82f04d00dd21aacd1b6764ec371dd4b6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1dc9d7d8cf7b4c2c125638bb4ab48e6b8e9d52ac
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340803"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168786"
 ---
 # <a name="get-androidworkprofilecustomconfiguration"></a>Obter androidWorkProfileCustomConfiguration
 
@@ -117,8 +117,6 @@ Content-Length: 1580
   }
 }
 ```
-
-
 
 
 

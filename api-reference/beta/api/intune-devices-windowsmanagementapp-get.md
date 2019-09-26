@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cd4df756e10fa1a5d213b56d6adabfa06c8883e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 14c54ca549f10c1bbef42e788e2a4151e4f1f6bd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348477"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188056"
 ---
 # <a name="get-windowsmanagementapp"></a>Obter windowsManagementApp
 
@@ -76,8 +76,6 @@ Content-Length: 186
   }
 }
 ```
-
-
 
 
 

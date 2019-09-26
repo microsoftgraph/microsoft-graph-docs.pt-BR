@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c08b486836794ed1f9d9bd987be9c52e06ae807d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 48a47907375203e5cc2fca6e271fb2e13c5da4f1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340937"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176076"
 ---
 # <a name="list-androidvpnconfigurations"></a>Listar androidVpnConfigurations
 
@@ -133,8 +133,6 @@ Content-Length: 2196
   ]
 }
 ```
-
-
 
 
 

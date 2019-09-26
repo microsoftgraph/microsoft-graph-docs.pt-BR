@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 38e8a8d40f6e2fc34ad7705d5ef6439fe5561639
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 28dd46d36b0a8c18aa6fe0d6e3e4cc32d8890874
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322122"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170711"
 ---
 # <a name="list-windowsofficeclientsecurityconfigurations"></a>Listar windowsOfficeClientSecurityConfigurations
 
@@ -100,8 +100,6 @@ Content-Length: 1222
   ]
 }
 ```
-
-
 
 
 

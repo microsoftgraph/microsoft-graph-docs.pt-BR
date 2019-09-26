@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 82461b2a939f79e5a13f675ac85bcc98cdbc05b2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e086799f47f1593582ca896c82171bcf5e6159a5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313983"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181620"
 ---
 # <a name="delete-windowsphone81importedpfxcertificateprofile"></a>Excluir windowsPhone81ImportedPFXCertificateProfile
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

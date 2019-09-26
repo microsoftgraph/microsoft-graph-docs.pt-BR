@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9806c7c054d6d00119c8926bd89f3ed7c171996c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9b9fc4570dec563705b8fa16af95e81bb4ea36fc
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328155"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170543"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>Excluir termsAndConditionsAcceptanceStatus
 
@@ -63,8 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

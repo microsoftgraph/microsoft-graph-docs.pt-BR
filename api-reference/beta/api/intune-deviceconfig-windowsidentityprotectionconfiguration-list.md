@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c02c520457914b8609e5a435de70f435fb9e38ee
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0785692210ac4af0ddd79a2ae681ba5b63219174
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344347"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181802"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>Listar windowsIdentityProtectionConfigurations
 
@@ -119,8 +119,6 @@ Content-Length: 1972
   ]
 }
 ```
-
-
 
 
 

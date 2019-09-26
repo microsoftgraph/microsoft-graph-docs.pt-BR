@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5bb05caad68470816bfcd4925db0302e538fb88
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4d0854ac42266d3fe569b6832da61a68e7ba8159
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311911"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176384"
 ---
 # <a name="get-androidforworktrustedrootcertificate"></a>Obter androidForWorkTrustedRootCertificate
 
@@ -108,8 +108,6 @@ Content-Length: 1406
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75df9f719a33fb356dfd632fc20f9e7ddf5cbb0e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f57f198971a2ff5d27ddacb7d83b45e40f294743
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355602"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187447"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>função getManagementConditionsForPlatform
 
@@ -91,8 +91,6 @@ Content-Length: 504
   ]
 }
 ```
-
-
 
 
 

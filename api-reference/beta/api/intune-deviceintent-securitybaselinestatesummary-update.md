@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f327529aef1307c06bac7d5eabdaabcac4df6fb7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5141ce21ce2d0cee08e23a8f12e50c98551bc841
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349016"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179450"
 ---
 # <a name="update-securitybaselinestatesummary"></a>Atualizar securityBaselineStateSummary
 
@@ -102,8 +102,6 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
-
-
 
 
 

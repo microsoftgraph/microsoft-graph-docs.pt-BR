@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dfbfa25c365f150e019ac4564946d4e52257371b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4a202fc1eaaf31bd84f907f1bec392e90f79bbf6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343346"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180738"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>Atualizar deviceManagementSettingCategory
 
@@ -87,8 +87,6 @@ Content-Length: 162
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

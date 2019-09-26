@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31d64bb773666dee7a30058bcfa8d0e7a9d1e412
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c3baa5529a3d313cb4561b89011e88988ddb0fc8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311589"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188252"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>Obter userExperienceAnalyticsOverview
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 624
+Content-Length: 758
 
 {
   "value": {
@@ -80,18 +80,19 @@ Content-Length: 624
         "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
         "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
         "insightId": "Insight Id value",
-        "value": [
+        "values": [
           {
-            "@odata.type": "microsoft.graph.insightValueDouble"
+            "@odata.type": "microsoft.graph.insightValueDouble",
+            "value": "<Unknown Primitive Type Edm.Double>"
           }
-        ]
+        ],
+        "severity": "informational"
       }
-    ]
+    ],
+    "state": "insufficientData"
   }
 }
 ```
-
-
 
 
 

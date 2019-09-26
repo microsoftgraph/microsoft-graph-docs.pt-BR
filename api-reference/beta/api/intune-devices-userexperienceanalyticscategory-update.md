@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f99c4bd2090f751b0a54df6ad408cda463266605
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 475f6b28ee6f4838feccf496af3d94c76f974f23
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350420"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180141"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>Atualizar userExperienceAnalyticsCategory
 
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo da categoria de análise da experiência do usuário.|
-|displayName|String|O nome da categoria de análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da categoria de análise da experiência do usuário.|
 |insights|coleção [userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)|O insights para a categoria de análise da experiência do usuário.|
+|estado|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de integridade atual da categoria de análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -70,24 +70,26 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 Content-type: application/json
-Content-length: 484
+Content-length: 572
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
-  "displayName": "Display Name value",
   "overallScore": 12,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
       "insightId": "Insight Id value",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "informational"
     }
-  ]
+  ],
+  "state": "insufficientData"
 }
 ```
 
@@ -96,29 +98,29 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 533
+Content-Length: 621
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
   "id": "cfd28056-8056-cfd2-5680-d2cf5680d2cf",
-  "displayName": "Display Name value",
   "overallScore": 12,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
       "insightId": "Insight Id value",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "informational"
     }
-  ]
+  ],
+  "state": "insufficientData"
 }
 ```
-
-
 
 
 

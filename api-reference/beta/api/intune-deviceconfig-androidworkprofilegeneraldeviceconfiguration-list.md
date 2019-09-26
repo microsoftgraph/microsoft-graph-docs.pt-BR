@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17f01631a7f2c8874fd89906209e1b48832da19e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 216572103945cf89bb4f6e31ccd5be65181c656d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311225"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37175868"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Listar androidWorkProfileGeneralDeviceConfigurations
 
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3292
+Content-Length: 3332
 
 {
   "value": [
@@ -136,13 +136,12 @@ Content-Length: 3292
       "workProfileRequirePassword": true,
       "securityRequireVerifyApps": true,
       "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
-      "vpnEnableAlwaysOnLockdownMode": true
+      "vpnEnableAlwaysOnLockdownMode": true,
+      "workProfileAllowWidgets": true
     }
   ]
 }
 ```
-
-
 
 
 

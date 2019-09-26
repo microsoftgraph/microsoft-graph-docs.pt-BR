@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21d1751273b1f1f0411d39dc5cb5f65d8462f2ba
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ddcb446e20b2b69cce20fc1959d64274bad1ceb9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354902"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179625"
 ---
 # <a name="update-grouppolicypresentationcombobox"></a>Atualizar groupPolicyPresentationComboBox
 
@@ -106,8 +106,6 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
-
-
 
 
 

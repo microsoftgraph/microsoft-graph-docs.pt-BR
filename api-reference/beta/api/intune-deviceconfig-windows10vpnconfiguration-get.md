@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f465339619ac91cd0f72c598ebf0c5be66c1ce6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2ec3041e57a6a16877f583e6f7bc480e4846c7d7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314277"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182082"
 ---
 # <a name="get-windows10vpnconfiguration"></a>Obter windows10VpnConfiguration
 
@@ -214,8 +214,6 @@ Content-Length: 4629
   }
 }
 ```
-
-
 
 
 

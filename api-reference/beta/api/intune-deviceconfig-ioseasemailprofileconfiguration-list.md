@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fed316925243fb4f7e702deaf4a0ac3c23396e59
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f22f39e724e7484f16f90003e63cf97cf5863988
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339369"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37167806"
 ---
 # <a name="list-ioseasemailprofileconfigurations"></a>Listar iosEasEmailProfileConfigurations
 
@@ -129,8 +129,6 @@ Content-Length: 2486
   ]
 }
 ```
-
-
 
 
 

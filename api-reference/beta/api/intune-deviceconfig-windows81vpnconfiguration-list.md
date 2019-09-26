@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 978e68cd376455d51990aa6e5e168009cf70d9dd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 89f8733cc6d4d0310570882713cd9dac473e4212
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314116"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186971"
 ---
 # <a name="list-windows81vpnconfigurations"></a>Listar windows81VpnConfigurations
 
@@ -127,8 +127,6 @@ Content-Length: 2209
   ]
 }
 ```
-
-
 
 
 

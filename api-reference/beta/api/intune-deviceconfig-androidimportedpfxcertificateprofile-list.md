@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a0832df7a24bb8fef85982c9d30b4f96bd74d0a4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e01e3efa346c560b0a2c69f5422e3d7013e6bd20
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311575"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176216"
 ---
 # <a name="list-androidimportedpfxcertificateprofiles"></a>Listar androidImportedPFXCertificateProfiles
 
@@ -118,8 +118,6 @@ Content-Length: 1877
   ]
 }
 ```
-
-
 
 
 

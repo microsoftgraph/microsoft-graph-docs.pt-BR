@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 928cd1f028f3b408a902745d16270785503eb0a8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: da7698a114cbb3051fbcdcd78a5251cbe10225ee
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339593"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37167911"
 ---
 # <a name="get-ioscustomconfiguration"></a>Acessar iosCustomConfiguration
 
@@ -110,8 +110,6 @@ Content-Length: 1405
   }
 }
 ```
-
-
 
 
 
