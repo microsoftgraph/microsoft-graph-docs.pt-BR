@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 81c0aa916cf4992907a55af36f5703886ca4c1de
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 06300ac6bc1fb87d75ae48aeb6df0e000624ca14
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357850"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179590"
 ---
 # <a name="get-grouppolicypresentationdecimaltextbox"></a>Obter groupPolicyPresentationDecimalTextBox
 
@@ -84,8 +84,6 @@ Content-Length: 373
   }
 }
 ```
-
-
 
 
 

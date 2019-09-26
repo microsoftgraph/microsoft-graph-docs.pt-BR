@@ -1,24 +1,24 @@
 ---
-title: Criar iosVppApp
-description: Cria um novo objeto iosVppApp.
+title: Atualizar androidManagedStoreWebApp
+description: Atualiza as propriedades de um objeto androidManagedStoreWebApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f976229a4a7d13210ec1dd3391f2f919add19da
+ms.openlocfilehash: c74c8562c68ec6e2aa4ead8ec2a05af59a34264f
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37177757"
+ms.locfileid: "37178456"
 ---
-# <a name="create-iosvppapp"></a>Criar iosVppApp
+# <a name="update-androidmanagedstorewebapp"></a>Atualizar androidManagedStoreWebApp
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Cria um novo objeto [iosVppApp](../resources/intune-apps-iosvppapp.md).
+Atualiza as propriedades de um objeto [androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,7 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/mobileApps
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,9 +47,9 @@ POST /deviceAppManagement/mobileApps
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto iosVppApp.
+No corpo da solicitação, forneça uma representação JSON do objeto [androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md) .
 
-A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppApp.
+A tabela a seguir mostra as propriedades que são necessárias ao criar [androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -69,35 +71,31 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppApp.
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|usedLicenseCount|Int32|O número de aplicativos VPP em uso.|
-|totalLicenseCount|Int32|O número total de licenças VPP.|
-|releaseDateTime|DateTimeOffset|A data e a hora de lançamento do aplicativo VPP.|
-|appStoreUrl|String|A URL da loja.|
-|licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|O tipo de licença com suporte.|
-|applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|O tipo de dispositivo iOS aplicável.|
-|vppTokenOrganizationName|String|A organização associada ao Token do Programa de Compra por Volume da Apple|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|O tipo de programa de compra por volume ao qual o Token do Programa de Compra por Volume da Apple especificado está associado. Os valores possíveis são: `business` e `education`. Os valores possíveis são: `business`, `education`.|
-|vppTokenAppleId|String|O Apple Id associado ao Token do Programa de Compra de Volume da Apple.|
-|bundleId|String|O Nome da Identidade.|
-|vppTokenId|String|Identificador do token VPP associado a este aplicativo.|
-|revokeLicenseActionResults|coleção [iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md)|Resultados da revogação de ações de licença neste aplicativo.|
+|packageId|String|O identificador do pacote. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appIdentifier|Cadeia de caracteres|O Nome da Identidade. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|usedLicenseCount|Int32|O número de aplicativos VPP em uso. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|totalLicenseCount|Int32|O número total de licenças VPP. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appStoreUrl|Cadeia de caracteres|A URL do aplicativo de reproduzir para o repositório de trabalho. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|IsPrivate|Booliano|Indica se o aplicativo está disponível somente para os usuários de uma empresa. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isSystemApp|Booliano|Indica se o aplicativo é um aplicativo de sistema pré-instalado. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|supportsOemConfig|Booliano|Se este aplicativo dá suporte à política OEMConfig. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta `201 Created` e o objeto [iosVppApp](../resources/intune-apps-iosvppapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1999
+Content-length: 987
 
 {
-  "@odata.type": "#microsoft.graph.iosVppApp",
+  "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -119,54 +117,27 @@ Content-length: 1999
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "packageId": "Package Id value",
+  "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
-  "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
   "appStoreUrl": "https://example.com/appStoreUrl/",
-  "licensingType": {
-    "@odata.type": "microsoft.graph.vppLicensingType",
-    "supportUserLicensing": true,
-    "supportDeviceLicensing": true,
-    "supportsUserLicensing": true,
-    "supportsDeviceLicensing": true
-  },
-  "applicableDeviceType": {
-    "@odata.type": "microsoft.graph.iosDeviceType",
-    "iPad": true,
-    "iPhoneAndIPod": true
-  },
-  "vppTokenOrganizationName": "Vpp Token Organization Name value",
-  "vppTokenAccountType": "education",
-  "vppTokenAppleId": "Vpp Token Apple Id value",
-  "bundleId": "Bundle Id value",
-  "vppTokenId": "Vpp Token Id value",
-  "revokeLicenseActionResults": [
-    {
-      "@odata.type": "microsoft.graph.iosVppAppRevokeLicensesActionResult",
-      "userId": "User Id value",
-      "managedDeviceId": "Managed Device Id value",
-      "totalLicensesCount": 2,
-      "failedLicensesCount": 3,
-      "actionFailureReason": "appleFailure",
-      "actionName": "Action Name value",
-      "actionState": "pending",
-      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
-    }
-  ]
+  "isPrivate": true,
+  "isSystemApp": true,
+  "supportsOemConfig": true
 }
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2171
+Content-Length: 1159
 
 {
-  "@odata.type": "#microsoft.graph.iosVppApp",
-  "id": "a0ac9b6f-9b6f-a0ac-6f9b-aca06f9baca0",
+  "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
+  "id": "e54aecbd-ecbd-e54a-bdec-4ae5bdec4ae5",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -190,41 +161,14 @@ Content-Length: 2171
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "packageId": "Package Id value",
+  "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
-  "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
   "appStoreUrl": "https://example.com/appStoreUrl/",
-  "licensingType": {
-    "@odata.type": "microsoft.graph.vppLicensingType",
-    "supportUserLicensing": true,
-    "supportDeviceLicensing": true,
-    "supportsUserLicensing": true,
-    "supportsDeviceLicensing": true
-  },
-  "applicableDeviceType": {
-    "@odata.type": "microsoft.graph.iosDeviceType",
-    "iPad": true,
-    "iPhoneAndIPod": true
-  },
-  "vppTokenOrganizationName": "Vpp Token Organization Name value",
-  "vppTokenAccountType": "education",
-  "vppTokenAppleId": "Vpp Token Apple Id value",
-  "bundleId": "Bundle Id value",
-  "vppTokenId": "Vpp Token Id value",
-  "revokeLicenseActionResults": [
-    {
-      "@odata.type": "microsoft.graph.iosVppAppRevokeLicensesActionResult",
-      "userId": "User Id value",
-      "managedDeviceId": "Managed Device Id value",
-      "totalLicensesCount": 2,
-      "failedLicensesCount": 3,
-      "actionFailureReason": "appleFailure",
-      "actionName": "Action Name value",
-      "actionState": "pending",
-      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
-    }
-  ]
+  "isPrivate": true,
+  "isSystemApp": true,
+  "supportsOemConfig": true
 }
 ```
 

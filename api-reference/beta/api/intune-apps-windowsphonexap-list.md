@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 32bb542b9662b7b4a75cb1f0e14183ba8963c0e4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f17a4048770880342c6ff0c761193e1354f775bb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336317"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176874"
 ---
 # <a name="list-windowsphonexaps"></a>Listar windowsPhoneXAPs
 
@@ -114,8 +114,6 @@ Content-Length: 1610
   ]
 }
 ```
-
-
 
 
 

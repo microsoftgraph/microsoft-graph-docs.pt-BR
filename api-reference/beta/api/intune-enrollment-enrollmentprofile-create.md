@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f50e715b1901bda703ebb6437c7d9d7f6bea9d7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4f480baa00913c42884d35d908f2fdbe5a76c37d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348176"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185207"
 ---
 # <a name="create-enrollmentprofile"></a>Criar enrollmentProfile
 
@@ -102,8 +102,6 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
-
 
 
 

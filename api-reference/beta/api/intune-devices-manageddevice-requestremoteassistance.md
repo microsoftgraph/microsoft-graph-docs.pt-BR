@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aff3ecbb616b8fcab477a8c7779ac9f668b829ce
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 01c1f3fe9f6df846a08dc1d5fe9959dfb9e1acc1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310133"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180297"
 ---
 # <a name="requestremoteassistance-action"></a>Ação requestRemoteAssistance
 
@@ -66,8 +66,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

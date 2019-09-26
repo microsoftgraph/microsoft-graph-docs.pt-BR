@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 71e91958cb5dd4538985671a615f42b72c468c3e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4a4da49b24e4641b9ccb06315c0450ed9679d52d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355805"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184512"
 ---
 # <a name="create-embeddedsimdevicestate"></a>Criar embeddedSIMDeviceState
 
@@ -106,8 +106,6 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
-
 
 
 

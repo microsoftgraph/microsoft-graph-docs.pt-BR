@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c0ae9c8e43d195020a0e5bdb7b8ed191138c082
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 437ba567bbb0d3e4338f05ccbd90a76bb5588cf2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356190"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184850"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Atualizar importedWindowsAutopilotDeviceIdentity
 
@@ -120,8 +120,6 @@ Content-Length: 728
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
-
 
 
 

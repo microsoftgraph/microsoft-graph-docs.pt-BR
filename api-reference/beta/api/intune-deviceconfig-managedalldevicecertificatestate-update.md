@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 520afd6fb7b2980b8c263dff2f44b52ac2c2f610
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bc5b58cca354b3952a0b6b44baa7e863c0c8577d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345614"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183678"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>Atualizar managedAllDeviceCertificateState
 
@@ -117,8 +117,6 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 28815dcd07b77017b5357ae94c1aab7b730f1836
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cf725e693965436e9430313915d801fc154f76bc
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322293"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176888"
 ---
 # <a name="list-windowsphone81storeapps"></a>Listar windowsPhone81StoreApps
 
@@ -98,8 +98,6 @@ Content-Length: 1084
   ]
 }
 ```
-
-
 
 
 

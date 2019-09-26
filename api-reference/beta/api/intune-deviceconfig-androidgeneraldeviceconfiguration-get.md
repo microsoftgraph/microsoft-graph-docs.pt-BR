@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c0215efe89992da292da2b9da9ae446928636e64
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6e18305ef79628219f5ee3650c3b191a79013014
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311834"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176217"
 ---
 # <a name="get-androidgeneraldeviceconfiguration"></a>Acessar androidGeneralDeviceConfiguration
 
@@ -196,8 +196,6 @@ Content-Length: 4367
   }
 }
 ```
-
-
 
 
 

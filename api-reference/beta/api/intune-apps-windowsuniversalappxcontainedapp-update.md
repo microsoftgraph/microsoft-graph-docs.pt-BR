@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c977ab8c2dbf1881616a24096dcc591bb3a7a03d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e00bfe5685ae45308e27d7394f9357215c85ad21
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328603"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171558"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>Atualizar windowsUniversalAppXContainedApp
 
@@ -89,8 +89,6 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
-
-
 
 
 

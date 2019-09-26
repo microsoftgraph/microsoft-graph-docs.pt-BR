@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e6ce18edd73b8c0c082700bf5a0b4f55fa52181
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2ad47b82a6fc8c31b64bf75484e78700865982e4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312380"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176762"
 ---
 # <a name="delete-androidenterprisewificonfiguration"></a>Excluir Androidenterprisewificonfiguration.
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

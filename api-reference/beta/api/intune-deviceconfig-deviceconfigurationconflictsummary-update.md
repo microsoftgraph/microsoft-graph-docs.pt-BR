@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f700c540ec9a3e37660500ec70f634ef74a8b1f5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f8eca399d505a9cf8d421fe250c256f2c5e930c2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345964"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168275"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Atualizar Propriedadesdeviceconfigurationconflictsummary
 
@@ -109,8 +109,6 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
-
-
 
 
 

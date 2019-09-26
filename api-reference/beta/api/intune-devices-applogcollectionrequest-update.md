@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bdbfe888fde88a46280f9c9b7eccddf0e82dd579
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ca9f74942b1a4f3361e798400bfd91f80ac912ad
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310707"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179380"
 ---
 # <a name="update-applogcollectionrequest"></a>Atualizar appLogCollectionRequest
 
@@ -100,8 +100,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
-
 
 
 

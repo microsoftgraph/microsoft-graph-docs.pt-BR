@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f0d05c9e800f3c01ad6fb7b1a217ad9c5c7de61
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f43e2a83ec8dde73db0f192c59ecb7b4f26b777a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331109"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173847"
 ---
 # <a name="list-androidmanagedstoreapps"></a>Listar androidManagedStoreApps
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1267
+Content-Length: 1321
 
 {
   "value": [
@@ -98,13 +98,13 @@ Content-Length: 1267
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "appStoreUrl": "https://example.com/appStoreUrl/",
+      "isPrivate": true,
+      "isSystemApp": true,
       "supportsOemConfig": true
     }
   ]
 }
 ```
-
-
 
 
 

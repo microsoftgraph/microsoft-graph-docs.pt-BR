@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 68358bc4a3b582ea86ae190b82f523519981ab91
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ee5247f6986035df4d42b1aaee2dea0305402bce
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340552"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37175684"
 ---
 # <a name="list-androidworkprofiletrustedrootcertificates"></a>Listar androidWorkProfileTrustedRootCertificates
 
@@ -107,8 +107,6 @@ Content-Length: 1492
   ]
 }
 ```
-
-
 
 
 

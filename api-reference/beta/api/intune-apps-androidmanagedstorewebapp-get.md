@@ -1,24 +1,24 @@
 ---
-title: Acessar managedIOSLobApp
-description: Leia as propriedades e as relações do objeto managedIOSLobApp.
+title: Obter androidManagedStoreWebApp
+description: Leia as propriedades e as relações do objeto androidManagedStoreWebApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1db6b48d440719e8e380b7f2ca6a7623c167dd0a
+ms.openlocfilehash: 0ee6b0b70518ccb6a031efb1b72ad98d7f212412
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37172951"
+ms.locfileid: "37178458"
 ---
-# <a name="get-managedioslobapp"></a>Acessar managedIOSLobApp
+# <a name="get-androidmanagedstorewebapp"></a>Obter androidManagedStoreWebApp
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).
+Leia as propriedades e as relações do objeto [androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsof
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -68,12 +68,12 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1778
+Content-Length: 1244
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.managedIOSLobApp",
-    "id": "8f59792d-792d-8f59-2d79-598f2d79598f",
+    "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
+    "id": "e54aecbd-ecbd-e54a-bdec-4ae5bdec4ae5",
     "displayName": "Display Name value",
     "description": "Description value",
     "publisher": "Publisher value",
@@ -97,30 +97,14 @@ Content-Length: 1778
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
-    "appAvailability": "lineOfBusiness",
-    "version": "Version value",
-    "committedContentVersion": "Committed Content Version value",
-    "fileName": "File Name value",
-    "size": 4,
-    "bundleId": "Bundle Id value",
-    "applicableDeviceType": {
-      "@odata.type": "microsoft.graph.iosDeviceType",
-      "iPad": true,
-      "iPhoneAndIPod": true
-    },
-    "minimumSupportedOperatingSystem": {
-      "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
-      "v8_0": true,
-      "v9_0": true,
-      "v10_0": true,
-      "v11_0": true,
-      "v12_0": true,
-      "v13_0": true
-    },
-    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-    "versionNumber": "Version Number value",
-    "buildNumber": "Build Number value",
-    "identityVersion": "Identity Version value"
+    "packageId": "Package Id value",
+    "appIdentifier": "App Identifier value",
+    "usedLicenseCount": 0,
+    "totalLicenseCount": 1,
+    "appStoreUrl": "https://example.com/appStoreUrl/",
+    "isPrivate": true,
+    "isSystemApp": true,
+    "supportsOemConfig": true
   }
 }
 ```

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 66b63566dcd7ca2b498e60e0a5e403492e37eeb9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ad7bf9d9066edb4e6494c39d72b8fa9f88788d81
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356078"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179968"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsA
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante OEM do dispositivo do Windows AutoPilot.|
 |modelo|String|Nome do modelo do dispositivo do Windows AutoPilot.|
-|enrollmentid|[enrollmentid](../resources/intune-enrollment-enrollmentstate.md)|Estado de registro do Intune do dispositivo do Windows AutoPilot. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|Estado de registro do Intune do dispositivo do Windows AutoPilot. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do Intune para o dispositivo do Windows AutoPilot.|
 |addressableUserName|String|Nome de usuário endereçável.|
 |userPrincipalName|String|Nome principal do usuário.|
@@ -142,8 +142,6 @@ Content-Length: 1084
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
-
 
 
 

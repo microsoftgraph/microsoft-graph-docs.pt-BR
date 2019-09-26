@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4210be22db2bc4c5d3809e93504c95b3d830baca
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 118bcd34490f1c4ffbfc6aecfea6f4581fce2c8e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310959"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37175429"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>Acessar appleDeviceFeaturesConfigurationBase
 
@@ -116,8 +116,6 @@ Content-Length: 1550
   }
 }
 ```
-
-
 
 
 

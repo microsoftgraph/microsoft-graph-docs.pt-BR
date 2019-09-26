@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a44dc502f1732f15c36de1bef83601fc4268f453
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 65d07aa7de3882ec428fb959785faba3bf93d6c6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355910"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184696"
 ---
 # <a name="update-windowsautopilotsettings"></a>Atualizar windowsAutopilotSettings
 
@@ -93,8 +93,6 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
-
-
 
 
 

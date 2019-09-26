@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f794d474ca4320d04af2e59d1b936baf8ca268a0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4cd6ee5c224756aaaf4e98657c7fda4061f8c101
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329093"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172496"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Criar mobileAppProvisioningConfigGroupAssignment
 
@@ -87,8 +87,6 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
-
-
 
 
 
