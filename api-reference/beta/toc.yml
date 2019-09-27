@@ -304,8 +304,9 @@
                 - name: Atribuir gerente
                   href: api/user-post-manager.md
             - name: Configurações do Outlook
-              href: resources/outlookuser.md
               items:
+                - name: Usuário do Outlook
+                  href: resources/outlookuser.md
                 - name: Obter opções de idioma
                   href: api/outlookuser-supportedlanguages.md
                 - name: Obter opções de fuso horário
@@ -318,6 +319,8 @@
                   href: api/outlookuser-list-mastercategories.md
                 - name: Criar categoria
                   href: api/outlookuser-post-mastercategories.md
+                - name: Converter IDs
+                  href: api/user-translateexchangeids.md
             - name: Tarefas do Outlook
               href: resources/outlooktask.md
               items:
@@ -3412,7 +3415,7 @@
                 - name: Atribuição de grupo de configuração do dispositivo
                   href: resources/intune-deviceconfig-deviceconfigurationgroupassignment.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-deviceconfigurationgroupassignment-get.md
@@ -3443,7 +3446,7 @@
                 - name: Status do usuário da configuração do dispositivo
                   href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
@@ -3626,7 +3629,7 @@
                 - name: Caixa de seleção de apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationcheckbox.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-grouppolicy-grouppolicypresentationcheckbox-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationcheckbox-get.md
@@ -3639,7 +3642,7 @@
                 - name: Caixa de combinação de apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationcombobox.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-get.md
@@ -3652,7 +3655,7 @@
                 - name: Caixa de texto decimal de apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
@@ -4055,7 +4058,7 @@
                 - name: Configuração de atualização do iOS
                   href: resources/intune-deviceconfig-iosupdateconfiguration.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -4068,7 +4071,7 @@
                 - name: Status do dispositivo de atualização do iOS
                   href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -4083,7 +4086,7 @@
                 - name: Configuração de VPN do iOS
                   href: resources/intune-deviceconfig-iosvpnconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-iosvpnconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosvpnconfiguration-get.md
@@ -7079,7 +7082,7 @@
                 - name: Categoria do dispositivo
                   href: resources/intune-shared-devicecategory.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-shared-devicecategory-list.md
                     - name: Obter
                       href: api/intune-shared-devicecategory-get.md
@@ -7284,7 +7287,7 @@
                 - name: Evento de solução de problemas de aplicativo móvel
                   href: resources/intune-shared-mobileapptroubleshootingevent.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-shared-mobileapptroubleshootingevent-list.md
                     - name: Obter
                       href: api/intune-shared-mobileapptroubleshootingevent-get.md
