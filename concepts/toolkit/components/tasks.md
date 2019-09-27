@@ -3,12 +3,12 @@ title: Componente tarefas no Microsoft Graph Toolkit
 description: O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou edite tarefas. Ele funciona com qualquer tarefa no Microsoft Planner ou no Microsoft to-do.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 3c2017acd7fe054c71a609c8d908e119e12a590b
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: f8366842be9319e8c89d05fa23bc488cde49359a
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242940"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275819"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente tarefas no Microsoft Graph Toolkit
 
@@ -26,12 +26,13 @@ O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou 
 
 | Propriedade | Atributo | Descrição |
 | -- | -- | -- |
-| `dataSource` | `data-source="todo/planner"` | Define a fonte de dados para tarefas-Microsoft a-do ou Microsoft Planner. O padrão é `planner`. |
-| `readOnly` | `read-only` | Define a interface de tarefa como somente leitura (sem adicionar ou remover tarefas). O padrão é `false`. |
-| `initialId` | `initial-id="planner_id/folder_id"` | Define o planejador ou pasta inicialmente exibido para a ID fornecida. |
-| `initialBucketId` | `initial-bucket-id="bucket_id"` | Define o Bucket exibido inicialmente (somente a fonte de dados do Planner) para a ID fornecida. |
-| `targetId` | `target-id="planner_id/folder_id"` | Bloqueia a interface de tarefas para o planejador ou ID de pasta fornecido. |
-| `targetBucketId` | `target-bucket-id="bucket_id"` | Bloqueia a interface de tarefas para a ID de Bucket fornecida (somente a fonte de dados do Planner). |
+| dataSource | Data-Source = "todo/planejador" | Uma enumeração para configurar a fonte de dados para tarefas-Microsoft to-do ou Microsoft Planner. O padrão é `planner`. |
+| readOnly | somente leitura | Um booliano para definir a interface de tarefa como somente leitura (sem adicionar ou remover tarefas). O padrão é `false`. |
+| hideHeader | Ocultar-cabeçalho | Um booliano para mostrar ou ocultar o cabeçalho do componente. O padrão é `false`. |
+| initialid | Initial-ID = "planner_id/folder_id" | Uma ID de cadeia de caracteres para definir o planejador ou pasta inicialmente exibido para a ID fornecida. |
+| initialBucketId | Initial-Bucket-ID = "BUCKET_ID" | Uma ID de cadeia de caracteres para definir o Bucket exibido inicialmente (somente a fonte de dados do Planner) para a ID fornecida. |
+| targetId | Target-ID = "planner_id/folder_id" | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para o planejador ou ID de pasta fornecido. |
+| targetBucketId | Target-Bucket-ID = "BUCKET_ID" | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para a ID de Bucket fornecida (somente a fonte de dados do Planner). |
 
 Apresentamos um exemplo a seguir.
 
@@ -96,14 +97,14 @@ mgt-tasks {
 
 Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 
-| Resource | Permissão/escopo |
+| Resource | Permissão |
 | - | - |
-| /me/planner/plans | `Group.Read.All` |
-| /Planner/Plans/$ {ID} | `Group.Read.All`, `Group.ReadWrite.All` |
-| /planner/tasks | `Group.ReadWrite.All` |
-| /me/outlook/taskGroups | `Tasks.Read` |
-| /me/outlook/taskFolders | `Tasks.Read`, `Tasks.ReadWrite` |
-| /me/outlook/tasks | `Tasks.ReadWrite` |
+| /me/planner/plans | Group.Read.All |
+| /Planner/Plans/$ {ID} | Group.Read.All, Group.ReadWrite.All |
+| /planner/tasks | Group.ReadWrite.All |
+| /me/outlook/taskGroups | Tasks.Read |
+| /me/outlook/taskFolders | Tarefas. Read, Tasks. ReadWrite |
+| /me/outlook/tasks | Tasks.ReadWrite |
 
 Para a fonte de dados do Microsoft Planner, as tarefas de busca e leitura exigem a permissão groups. Read. All. Adicionar, atualizar ou remover tarefas requer a permissão groups. ReadWrite. All.
 

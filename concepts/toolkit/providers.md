@@ -3,12 +3,12 @@ title: Provedores de kit de ferramentas do Microsoft Graph
 description: Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3e5d587e8c2690d2b71a2e70e41266519566f91e
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 52b0510fdc79253cb2a448b7a454b1dcfaf01bb9
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778709"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275721"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Provedores de kit de ferramentas do Microsoft Graph
 
@@ -53,6 +53,32 @@ O kit de ferramentas fornece duas maneiras de criar novos provedores:
 - Estender a `IProvider` classe abstrata
 
 Leia mais sobre cada um na documentação dos [provedores personalizados](./providers/custom.md) .
+
+## <a name="using-multiple-providers"></a>Usando vários provedores
+
+Em alguns cenários, seu aplicativo será executado em um ambiente diferente e exigirá um provedor diferente. Por exemplo, o aplicativo pode ser executado como um aplicativo Web e uma guia do Microsoft Teams, e você pode precisar usar o MsalProvider e o Teamprovider. Para este cenário, todos os componentes do provedor `depends-on` têm o atributo para criar uma cadeia de fallback, conforme mostrado no exemplo a seguir.
+
+```html
+<mgt-teams-provider
+  client-id="[CLIENT-ID]"
+  auth-popup-url="auth.html" ></mgt-teams-provider>
+
+<mgt-msal-provider
+  client-id="[CLIENT-ID]"
+  depends-on="mgt-teams-provider" ></mgt-msal-provider>
+```
+
+Neste cenário, o MsalProvider será usado somente se o Teams não estiver disponível no ambiente atual.
+
+Para fazer o mesmo no código, você pode usar a `isAvailable` Propriedade no provedor, conforme mostrado.
+
+```ts
+if (TeamsProvider.isAvailable) {
+    Providers.globalProvider = new TeamsProvider(teamsConfig);
+} else {
+    Providers.globalProvider = new MsalProvider(msalConfig)
+}
+```
 
 ## <a name="making-your-own-calls-to-microsoft-graph"></a>Fazendo suas próprias chamadas para o Microsoft Graph
 

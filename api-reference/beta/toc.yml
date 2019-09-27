@@ -9656,6 +9656,12 @@
                   href: api/channel-post-messages.md
                 - name: Responder à mensagem
                   href: api/channel-post-messagereply.md
+                - name: Adicionar um membro a um canal
+                  href: api/conversationmember-add.md
+                - name: Remover um membro de um canal
+                  href: api/conversationmember-delete.md
+                - name: Atualizar a função de um membro no canal
+                  href: api/conversationmember-update.md
             - name: Chat
               href: resources/chat.md
               items:
@@ -9671,12 +9677,6 @@
                   href: api/conversationmember-list.md
                 - name: Obter um membro no chat
                   href: api/conversationmember-get.md
-                - name: Adicionar um membro a um chat
-                  href: api/conversationmember-add.md
-                - name: Remover um membro de um chat
-                  href: api/conversationmember-delete.md
-                - name: Atualizar a função de um membro no chat
-                  href: api/conversationmember-update.md
             - name: Mensagem de chat
               href: resources/chatmessage.md
               items:

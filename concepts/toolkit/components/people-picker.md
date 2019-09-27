@@ -3,12 +3,12 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 2a0680a70ddfd5410e82911e5280c0b1a7e7dcaf
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: d77c6578d79edb60fbba08200dc033f032b39282
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822792"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275841"
 ---
 # <a name="people-picker-component"></a>Componente de seletor de pessoas
 
@@ -32,7 +32,7 @@ Por padrão, o `mgt-people-picker` componente busca eventos do `/me/people` pont
 
 | Propriedade | Atributo | Descrição                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| showMax  | show-Max  | Um valor inteiro para indicar o número máximo de pessoas a serem mostradas. o valor padrão é 6.                                                                                             |
+| showMax  | show-Max  | Um valor numérico para indicar o número máximo de pessoas a serem mostradas. o valor padrão é 6.                                                                                             |
 | people   | people    | Uma matriz de pessoas para obter ou definir a lista de pessoas renderizadas pelo componente. Use essa propriedade para acessar as pessoas carregadas pelo componente. Defina esse valor para carregar suas próprias pessoas. |
 | group    | group     | Um valor String que pertence a um grupo definido pelo Microsoft Graph para mais filtragem dos resultados da pesquisa.                                                                            |
 

@@ -3,16 +3,18 @@ title: Componente Person no Microsoft Graph Toolkit
 description: O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b9102259258bb691dee2c56449257740db7b1913
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: b4664cf545c858dbb2d49ad5191ab7cf5118092e
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242926"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275700"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente Person no Microsoft Graph Toolkit
 
 O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email. 
+
+O componente pessoa também usa a [pessoa de gerenciamento de pessoas](./person-card.md) para exibir um cartão de submenu com informações adicionais sobre o usuário. Para obter detalhes, consulte a seção [cartão de pessoa](#person-card) .
 
 ## <a name="example"></a>Exemplo
 
@@ -47,12 +49,12 @@ Você pode usar três propriedades para definir os detalhes da pessoa. Use apena
 
 ## <a name="changing-how-the-component-looks"></a>Alterar a aparência do componente
 
-Você pode usar várias Propriedadespara personalizar o componente.
+Você pode usar várias propriedades para personalizar o componente.
 
-| Propriedade | Atributo | Descrição |
-| --- | --- | --- |
-| `showName` | `show-name` | Definir sinalizador para exibir o nome de exibição da pessoa `false`-o padrão é. |
-| `showEmail` | `show-email` | Definir sinalizador para exibir o email da pessoa- `false`o padrão é. |
+| Propriedade    | Atributo    | Descrição                                                   |
+| ----------- | ------------ | ------------------------------------------------------------- |
+| Nome do mesmo  | show-Name  | Definir sinalizador para exibir o nome de exibição da pessoa `false`-o padrão é. |
+| Enviar email | Mostrar-email | Definir sinalizador para exibir o email da pessoa- `false`o padrão é.        |
 
 ## <a name="css-custom-properties"></a>Propriedades personalizadas de CSS
 
@@ -81,11 +83,12 @@ Para saber mais, confira [estilos de componentes](../style.md).
 
 O `mgt-person` componente oferece suporte a vários [modelos](../templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina `data-type` o valor como um dos seguintes:
 
-| Tipo de dados | Contexto de dados | Descrição |
-| --- | --- | --- |
-| `default` | `person`: um objeto Person | O modelo padrão substitui todo o componente pelo seu. |
+| Tipo de dados     | Contexto de dados              | Descrição                                                       |
+| ---------     | ------------------------- | ----------------------------------------------------------------- |
+| Padrão.     | Person: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo padrão substitui todo o componente pelo seu. |
+| cartão de pessoa | Person: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo para atualizar o item de gerenciamento de pessoa que é exibido ao focalizar ou clique. |
 
-O exemplo a seguir define um modelo para o componente Person:
+O exemplo a seguir define um modelo para o componente Person.
 
 ```html
 <mgt-person>
@@ -100,17 +103,33 @@ O exemplo a seguir define um modelo para o componente Person:
 </mgt-person>
 ```
 
+## <a name="person-card"></a>Cartão de pessoa
+
+O `mgt-person` componente pode mostrar um `mgt-person-card` em foco ou clique.
+
+### <a name="add-the-control-to-the-html-page"></a>Adicionar o controle à página HTML
+```html
+<mgt-person person-query="me" person-card="hover"></mgt-person>
+```
+
+| Propriedade     | Atributo     | Descrição                                                                     |
+| ------------ | ------------- | ------------------------------------------------------------------------------- |
+| personCard | cartão de pessoa | Uma enumeração para determinar a ação do usuário necessária para ativar o `hover` painel `click`ou o menu suspenso. O valor padrão é`none` |
+
+
+Para obter mais informações sobre modelos, estilos e atributos, consulte [componente de cartão de pessoa](./person-card.md).
+
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
 Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 
-| Resource | Permissão/escopo |
-| - | - |
-| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0) | `User.Read` |
-| [$value/me/Photo/](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta) | `User.Read` |
-| [/me/People/? $search =](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
-| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | `Contacts.Read` |
-| [$value/Users/{ID}/Photo/](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | `User.ReadBasic.All` |
+| Resource                                                                                                    | Permissão     |
+| ----------------------------------------------------------------------------------------------------------- | -------------------- |
+| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [$value/me/Photo/](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/People/? $search =](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [$value/Users/{ID}/Photo/](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **Observação:** para acessar os `*/photo/$value` recursos para contas pessoais da Microsoft, use o ponto de extremidade beta do Microsoft Graph.
 

@@ -1,25 +1,26 @@
 ---
-title: Kit de ferramentas do Microsoft Graph (versão prévia)
-description: O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares da estrutura para acessar e trabalhar com o Microsoft Graph.
+title: Kit de ferramentas do Microsoft Graph
+description: O kit de ferramentas do Microsoft Graph é uma coleção de resuable, componentes da Web e auxiliares de estrutura independente para acessar e trabalhar com o Microsoft Graph.
 localization_priority: Normal
-author: nmetulev
-ms.openlocfilehash: 4509e382b89dcd9c403695df2ff7d99115a7f8b4
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+author: elisenyang
+ms.openlocfilehash: 2b8a7b3b93407410f31b17253f070065b6800b98
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792860"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275826"
 ---
-# <a name="microsoft-graph-toolkit-preview"></a>Kit de ferramentas do Microsoft Graph (versão prévia)
+# <a name="microsoft-graph-toolkit"></a>Kit de ferramentas do Microsoft Graph
 
-O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares da estrutura para acessar e trabalhar com o Microsoft Graph. Todos os componentes podem acessar o Microsoft Graph sem a necessidade de personalização.
+O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares reutilizáveis da estrutura, que podem acessar e trabalhar com o Microsoft Graph. Todos os componentes podem acessar o Microsoft Graph sem a necessidade de personalização.
 
->[!NOTE]
->Esta biblioteca está em versão prévia e está no desenvolvimento inicial. Esperamos fazer alterações e melhorias em todos os componentes e APIs com base nos comentários da Comunidade.
+O Microsoft Graph Toolkit é um ótimo recurso para qualquer desenvolvedor que deseja criar um aplicativo Web, guia do Microsoft Teams ou Web Part do SharePoint que faça chamadas para o Microsoft Graph. Ao fornecer componentes da interface do usuário que são projetados para se parecer com as experiências da Microsoft 365, o kit de ferramentas reduz o tempo e o custo para integração com a plataforma. Todos os componentes da interface do usuário autenticam e acessam dados do Microsoft Graph. Os componentes são totalmente personalizáveis usando CSS e Templating para que você possa corresponder à sua identidade visual exclusiva e controlar o conteúdo exibido nos componentes.
 
 ## <a name="get-started"></a>Introdução
 
 Você pode usar os componentes referenciando o carregador diretamente (via unpkg) ou instalando o pacote do NPM.
+
+![Introdução](/images/get-started.gif)
 
 Para obter detalhes sobre como começar a usar o kit de ferramentas do Microsoft Graph, consulte o [vídeo](https://www.youtube.com/watch?v=oZCGb2MMxa0)introdução.
 

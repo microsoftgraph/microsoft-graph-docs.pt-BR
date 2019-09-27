@@ -3,12 +3,12 @@ title: Provedor do Microsoft Teams
 description: Use o provedor de equipes dentro da guia do Microsoft Teams para facilitar a autenticação e o acesso ao Microsoft Graph a todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 348980225f04adfac4ded6f79a72654fbeec81e7
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 57d53d19507e3ad6d53810538eff62a0e20740bd
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242933"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275693"
 ---
 # <a name="microsoft-teams-provider"></a>Provedor do Microsoft Teams
 
@@ -20,6 +20,7 @@ Para saber mais, veja [Providers](../providers.md).
 
 Antes de usar o provedor do Teams, você precisará certificar-se de que você referenciou o [SDK do Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) na sua página.
 
+### <a name="via-script-tag"></a>via marca de script
 O exemplo a seguir usa o provedor em HTML (via CDN).
 
 ```html
@@ -33,6 +34,14 @@ O exemplo a seguir usa o provedor em HTML (via CDN).
 ></mgt-teams-provider>
 ```
 
+| Atributo | Descrição |
+| --- | --- | --- |
+| Client-ID   | String Client ID (consulte Configure Your Teams app). Obrigatório. |
+| auth-Popup-URL  | Caminho absoluto ou relativo para a página que manipulará a autenticação no pop-up (consulte criar a página pop-up). Obrigatório. |
+| escopos  | Cadeias de caracteres separadas por vírgula para escopos para os quais o usuário deve se concordar. Opcional. |
+| depende de | Cadeia de caracteres de seletor de elemento de outro componente de provedor de prioridade mais alta. Opcional. |
+
+### <a name="via-npm"></a>via NPM 
 O exemplo a seguir usa o provedor em módulos JS (via NPM).
 
 Certifique-se de instalar o kit de ferramentas e o SDK do Microsoft Teams.
@@ -58,6 +67,16 @@ export interface TeamsConfig {
   scopes?: string[];
   msalOptions?: Configuration;
 }
+```
+
+Como alternativa, você pode precisar definir a referência à biblioteca do Microsoft Teams. Veja um exemplo:
+
+```ts
+import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+
+TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+Providers.globalProvider = new TeamsProvider(config);
 ```
 
 Para ver um exemplo completo, confira o [exemplo de guia do Microsoft Teams](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
@@ -91,6 +110,16 @@ Para entrar com suas credenciais do Microsoft Teams, você precisa fornecer uma 
 <script>        
   mgt.TeamsProvider.handleAuth();
 </script>
+```
+
+ou por um módulo mencionado na página pop-up de autenticação:
+
+```ts
+import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+
+TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsProvider.handleAuth();
 ```
 
 ### <a name="configure-redirect-uris"></a>Configurar URIs de redirecionamento

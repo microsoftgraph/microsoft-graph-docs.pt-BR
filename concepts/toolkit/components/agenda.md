@@ -3,12 +3,12 @@ title: Componente de agenda no kit de ferramentas do Microsoft Graph
 description: O componente de gerenciamento de agenda da Web é usado para representar eventos em um calendário de usuário ou grupo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 8a91b20a48c1646fafd8cd7a287f037615024a73
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 0afe3546541e38349404b80abac48073b90f7eb4
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242946"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275729"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente de agenda no kit de ferramentas do Microsoft Graph
 
@@ -30,13 +30,15 @@ Por padrão, o `mgt-agenda` componente busca eventos do `/me/calendarview` ponto
 
 | Propriedade | Atributo | Descrição |
 | --- | --- | --- |
-| `groupByDay` | `group-by-day` | Um valor Boolean para agrupar eventos por dia-por eventos padrão não são agrupados. |
-| `date` | `date` | Uma cadeia de caracteres que representa a data de início dos eventos a serem buscados do Microsoft Graph. O valor deve estar em um formato que pode ser analisado pelo [Construtor de data](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) -o valor não tem `event-query` efeito se o atributo for definido. |
-| `days` | `days` | Um número de dias para buscar do Microsoft Graph-padrão é de 3 valores não tem efeito se `event-query` o atributo for definido. |
-| `eventQuery` | `event-query` | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos do Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres, delimitadondo-o com `|` (`"/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all"`). |
-| `events` | `events` | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente-Use essa propriedade para acessar os eventos carregados pelo componente. Defina esse valor para carregar seus próprios eventos, se o valor for definido por desenvolvedor, `date`os `days`atributos, `event-query` ou não terão efeito. |
+| data | data | Uma cadeia de caracteres que representa a data de início dos eventos a serem buscados do Microsoft Graph. O valor deve estar em um formato que pode ser analisado pelo [Construtor de data](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) -o valor não tem `event-query` efeito se o atributo for definido. |
+| durante | durante | Um número de dias para buscar do Microsoft Graph-padrão é de 3 valores não tem efeito se `event-query` o atributo for definido. |
+| showMax | show-Max | Um número para indicar o número máximo de eventos a serem exibidos. O valor padrão não é definido (sem máximo). |
+| groupId | ID de grupo | Uma ID de cadeia de caracteres para um calendário de grupo a ser usado em vez do calendário do usuário conectado no momento. |
+| eventQuery | evento-consulta | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos do Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres, delimitadondo-o com `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
+| eventos | eventos | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente-Use essa propriedade para acessar os eventos carregados pelo componente. Defina esse valor para carregar seus próprios eventos, se o valor for definido por desenvolvedor, `date`os `days`atributos, `event-query` ou não terão efeito. |
+| groupByDay | grupo por dia | Um valor Boolean para agrupar eventos por dia-por eventos padrão não são agrupados. |
 
-O exemplo a seguir altera o comportamento do componente para buscar dados para uma data específica e até 3 dias.
+O exemplo a seguir altera o comportamento do componente para buscar dados de uma data específica e até três dias.
 
 ```html
 <mgt-agenda
