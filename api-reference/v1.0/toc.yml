@@ -289,8 +289,9 @@
                 - name: Atribuir gerente
                   href: api/user-post-manager.md
             - name: Configurações do Outlook
-              href: resources/outlookuser.md
               items:
+                - name: Usuário do Outlook
+                  href: resources/outlookuser.md
                 - name: Obter opções de idioma
                   href: api/outlookuser-supportedlanguages.md
                 - name: Obter opções de fuso horário
@@ -303,6 +304,8 @@
                   href: api/outlookuser-list-mastercategories.md
                 - name: Criar categoria
                   href: api/outlookuser-post-mastercategories.md
+                - name: Converter IDs
+                  href: api/user-translateexchangeids.md
             - name: Foto
               href: resources/profilephoto.md
               items:
@@ -1057,7 +1060,7 @@
                 - name: Aplicativo da Microsoft Store para Empresas
                   href: resources/intune-apps-microsoftstoreforbusinessapp.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-apps-microsoftstoreforbusinessapp-list.md
                     - name: Obter
                       href: api/intune-apps-microsoftstoreforbusinessapp-get.md
@@ -1074,7 +1077,7 @@
                 - name: Aplicativo móvel
                   href: resources/intune-apps-mobileapp.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-apps-mobileapp-list.md
                     - name: Obter
                       href: api/intune-apps-mobileapp-get.md
@@ -1295,7 +1298,7 @@
                 - name: Política de conformidade do Android
                   href: resources/intune-deviceconfig-androidcompliancepolicy.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-androidcompliancepolicy-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-androidcompliancepolicy-get.md
@@ -1499,7 +1502,7 @@
                 - name: Ação de conformidade agendada do dispositivo para a regra
                   href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
@@ -1512,7 +1515,7 @@
                 - name: Estado de configuração de conformidade do dispositivo
                   href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
@@ -2361,7 +2364,7 @@
                       href: api/intune-remoteassistance-remoteassistancepartner-list.md
                     - name: Obter
                       href: api/intune-remoteassistance-remoteassistancepartner-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-remoteassistance-remoteassistancepartner-create.md
                     - name: Excluir
                       href: api/intune-remoteassistance-remoteassistancepartner-delete.md
@@ -2579,7 +2582,7 @@
                       href: api/intune-mam-targetedmanagedappconfiguration-list.md
                     - name: Obter
                       href: api/intune-mam-targetedmanagedappconfiguration-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/intune-mam-targetedmanagedappconfiguration-create.md
                     - name: Excluir
                       href: api/intune-mam-targetedmanagedappconfiguration-delete.md

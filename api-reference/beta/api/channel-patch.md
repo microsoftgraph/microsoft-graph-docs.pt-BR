@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0b951835941c44d4be5f67bf9c9bb0e23cbf288d
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: b9b8abd495a9ce66458973360a93e47f0bddfdf9
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633381"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275672"
 ---
 # <a name="patch-channel"></a>Canal de patch
 
@@ -45,6 +45,8 @@ PATCH /teams/{id}/channels/{id}
 
 No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).
 
+> Observação: não é possível atualizar `membershipType` o valor de um canal existente.
+
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
@@ -63,7 +65,7 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

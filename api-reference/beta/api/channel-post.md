@@ -5,20 +5,18 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66b456188037dff0dc802e96f94452baebcd87af
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: d8a93e130e839fcd8bb6c332331d0b8dd390c147
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633374"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275679"
 ---
 # <a name="create-channel"></a>Criar canal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar um novo [canal](../resources/channel.md) no Microsoft Team, como especificado no corpo da solicitação.
-
-> **Observação**: Há um problema conhecido com as permissões do aplicativo e este API. Para saber mais, confira a [lista de problemas conhecidos](/graph/known-issues#application-permissions).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All    |
 
-> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -53,11 +51,13 @@ No corpo da solicitação, fornça uma representação JSON do objeto [canal](..
 
 Se bem-sucedido, esse método retornará `201 Created` código de resposta e um objeto [canal](../resources/channel.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-create-a-standard-channel"></a>Exemplo 1: criar um canal padrão
 
-Este é um exemplo da solicitação.
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação para criar um canal padrão.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -70,7 +70,8 @@ Content-type: application/json
 
 {
   "displayName": "Architecture Discussion",
-  "description": "This channel is where we debate all future architecture plans"
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -81,17 +82,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta.
+O exemplo a seguir mostra a resposta.
 
-> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -107,6 +108,64 @@ Content-length: 201
   "id": "id-value",
   "displayName": "Architecture Discussion",
   "description": "This channel is where we debate all future architecture plans"
+}
+```
+
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Exemplo 2: criar um canal privado em nome do usuário
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação para criar um canal privado e adicionar um usuário como proprietário da equipe.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_from_user"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/{group_id}/channels
+Content-type: application/json
+
+{
+  "@odata.type": "#Microsoft.Teams.Core.channel",
+  "membershipType": "private",
+  "displayName": "My First Private Channel",
+  "description": "This is my first private channels",
+  "members":
+     [
+        {
+           "@odata.type":"#microsoft.graph.aadUserConversationMember",
+           "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
+           "roles":["owner"]
+        }
+     ]
+}
+```
+
+#### <a name="response"></a>Resposta
+
+O exemplo a seguir mostra a resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 201
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('{group_id}')/channels/$entity",
+    "id": "{channel_id}",
+    "displayName": "My First Private Channel",
+    "description": "This is my first private channels",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "membershipType": "private"
 }
 ```
 
