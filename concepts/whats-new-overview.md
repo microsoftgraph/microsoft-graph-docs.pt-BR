@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 7a6ab3c50fe14986744ccfd64fdddadd9aa67a6e
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: a3adfca811e6b4c770ebe97d3279f4568db8d3ed
+ms.sourcegitcommit: cfcd58f09bc44de0a32ecf4c627267035902a07e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822771"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37278611"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -22,13 +22,45 @@ A equipe do Microsoft Graph avalia regularmente as necessidades dos clientes e l
 
 Abaixo, veja o que há de novo no Microsoft Graph e como você pode [compartilhar suas ideias](#want-to-stay-in-the-loop). Para detalhes sobre as atualizações da API, consulte as seções de [setembro](changelog.md#september-2019) e [agosto](changelog.md#august-2019) do log de alterações da API. 
 
+## <a name="september-2019-new-and-generally-available"></a>Setembro de 2019: novo e disponível para o público geral
+
+### <a name="calendar-mail-and-group"></a>Calendário, email e grupo
+[Obter o conteúdo bruto de um arquivo, ou o conteúdo MIME de um item](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) que foi adicionado como um [anexo](/graph/api/resources/attachment?view=graph-rest-1.0) a um[evento](/graph/api/resources/event?view=graph-rest-1.0), [ mensagem](/graph/api/resources/message?view=graph-rest-1.0)ou[ postagem](/graph/api/resources/post?view=graph-rest-1.0) de grupo.
+
+### <a name="calendar-mail-outlook-task-personal-contact"></a>Calendário, email, tarefa do Outlook, contato pessoal
+Use a função [translateExchange](/graph/api/user-translateexchangeids?view=graph-rest-1.0) para converter uma ID de item do Outlook [entre](/graph/api/user-translateexchangeids?view=graph-rest-1.0#exchangeidformat-values)formatos suportados, incluindo o formato de ID padrão do Microsoft Graph e o formato de ID imutável. 
+
+Os recursos a seguir são compatíveis com a conversão de formato de ID:
+
+- [attachment](/graph/api/resources/attachment?view=graph-rest-1.0)
+- [contato](/graph/api/resources/contact?view=graph-rest-1.0)
+- [event](/graph/api/resources/event?view=graph-rest-1.0)
+- [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0)
+- [message](/graph/api/resources/message?view=graph-rest-1.0)
+- [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0)
+
+### <a name="mail"></a>Email
+[Obter conteúdo MIME de uma mensagem](outlook-get-mime-message.md).
 
 ## <a name="september-2019-new-in-preview"></a>Setembro de 2019: novidades na versão prévia
 
 > [!IMPORTANT]
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
 
+### <a name="devices-and-apps"></a>Dispositivos e aplicativos
+Atualizações de [Setembro](changelog.md#september-2019) do Intune
+
+### <a name="identity-and-access"></a>Identidade e acesso
+Aperfeiçoamentos incrementais para [sincronizar identidades](/graph/api/resources/synchronization-overview?view=graph-rest-beta) em um aplicativo de nuvem para um locatário:
+
+- Para armazenar as configurações de um [trabalho de sincronização](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)
+- Para especificar um motivo para impor a [quarentena](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) em um trabalho de sincronização
+
+### <a name="teamwork"></a>Trabalho em equipe
+Suporte por programação para o canal **Geral** de uma  [equipe](/graph/api/resources/team?view=graph-rest-beta) e para personalizar [as configurações de membro](/graph/api/resources/teammembersettings?view=graph-rest-beta) para permitir que os membros da equipe criem canais privados na **equipe**.
+
 ### <a name="users"></a>Usuários
+- Obtenha ou atualize as identidades com as quais um [usuário](/graph/api/resources/user?view=graph-rest-beta) pode entrar em uma conta. Essas identidades podem ser fornecidas por organizações de negócios ou por provedores de identidade social, como o Facebook, o Google e a Microsoft.
 - Obtenha ou atualize as [configurações da caixa de correio](/graph/api/resources/mailboxsettings?view=graph-rest-beta) do formato de data e hora escolhidas pelo usuário.
 
 ## <a name="august-2019-new-and-generally-available"></a>Agosto de 2019: novo e disponível para o público geral 
@@ -74,7 +106,7 @@ Os usuários finais vêm podendo usar o aplicativo [MyAnalytics](social-intel-co
 
 
 ## <a name="see-also"></a>Confira também
-- Confira o [blog de desenvolvedores do Microsoft Graph](https://developer.microsoft.com/en-us/graph/blogs/) periodicamente para comunicados de lançamentos e recursos úteis.
+- Confira o [blog de desenvolvedores do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/blogs/) periodicamente para comunicados de lançamentos e recursos úteis.
 - Navegue pelas informações das inclusões da API do Microsoft Graph e pelas atualizações de comportamento de API no [changelog](changelog.md).
 - Encontre [destaques de versões anteriores](whats-new-earlier.md).
 - Saiba mais sobre o [controle de versão, suporte e mudanças significativas de políticas do Microsoft Graph](versioning-and-support.md).

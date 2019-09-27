@@ -3,12 +3,12 @@ title: Tutoriais do Microsoft Graph
 description: Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que orientam você pelos conceitos básicos do Microsoft Graph, incluindo a criação de um aplicativo básico que usa a autenticação do Azure Active Directory e acessa dados por meio do Microsoft Graph.
 author: jasonjoh
 localization_priority: Priority
-ms.openlocfilehash: cbc3dc6d03f7cb7c883619eea333d56e7b8472e8
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: ee4fcaf224852d588bdb3f2d00d326a92d3f770d
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053897"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275812"
 ---
 # <a name="microsoft-graph-tutorials"></a>Tutoriais do Microsoft Graph
 
@@ -41,6 +41,9 @@ Não está vendo seu idioma ou plataforma preferidos? Solicite um tutorial para 
 
 Os seguintes tutoriais concentram-se em cenários específicos para usar o Microsoft Graph.
 
+
+- [Otimizar o uso dos dados ao usar o Microsoft Graph com parâmetros de consulta](https://docs.microsoft.com/pt-BR/learn/modules/optimize-data-usage/)
+- [Otimizar o tráfego de rede com o Microsoft Graph](https://docs.microsoft.com/pt-BR/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
 - [Alterar notificações e a consulta delta](/graph/tutorials/change-notifications)
 
 ## <a name="see-also"></a>Confira também
