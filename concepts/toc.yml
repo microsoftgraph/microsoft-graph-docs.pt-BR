@@ -405,6 +405,8 @@ items:
                 href: toolkit/components/tasks.md
               - name: Seletor de Pessoas
                 href: toolkit/components/people-picker.md
+              - name: Cartão de pessoa
+                href: toolkit/components/person-card.md
           - name: Provedores
             items:
               - name: Usando os provedores
