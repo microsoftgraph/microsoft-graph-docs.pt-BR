@@ -1,37 +1,38 @@
 ---
-title: Kit de ferramentas do Microsoft Graph (versão prévia)
-description: O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares da estrutura para acessar e trabalhar com o Microsoft Graph.
+title: Kit de ferramentas do Microsoft Graph
+description: O kit de ferramentas do Microsoft Graph é uma coleção de resuable, componentes da Web e auxiliares de estrutura independente para acessar e trabalhar com o Microsoft Graph.
 localization_priority: Normal
-author: nmetulev
-ms.openlocfilehash: 4509e382b89dcd9c403695df2ff7d99115a7f8b4
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+author: elisenyang
+ms.openlocfilehash: 2b8a7b3b93407410f31b17253f070065b6800b98
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792860"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275826"
 ---
-# <a name="microsoft-graph-toolkit-preview"></a><span data-ttu-id="a1421-103">Kit de ferramentas do Microsoft Graph (versão prévia)</span><span class="sxs-lookup"><span data-stu-id="a1421-103">Microsoft Graph Toolkit (preview)</span></span>
+# <a name="microsoft-graph-toolkit"></a><span data-ttu-id="c3f42-103">Kit de ferramentas do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="c3f42-103">Microsoft Graph Toolkit</span></span>
 
-<span data-ttu-id="a1421-104">O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares da estrutura para acessar e trabalhar com o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="a1421-104">The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph.</span></span> <span data-ttu-id="a1421-105">Todos os componentes podem acessar o Microsoft Graph sem a necessidade de personalização.</span><span class="sxs-lookup"><span data-stu-id="a1421-105">All components can access Microsoft Graph without any customization required.</span></span>
+<span data-ttu-id="c3f42-104">O kit de ferramentas do Microsoft Graph é uma coleção de componentes da Web e auxiliares reutilizáveis da estrutura, que podem acessar e trabalhar com o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="c3f42-104">The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph.</span></span> <span data-ttu-id="c3f42-105">Todos os componentes podem acessar o Microsoft Graph sem a necessidade de personalização.</span><span class="sxs-lookup"><span data-stu-id="c3f42-105">All components can access Microsoft Graph without any customization required.</span></span>
 
->[!NOTE]
-><span data-ttu-id="a1421-106">Esta biblioteca está em versão prévia e está no desenvolvimento inicial.</span><span class="sxs-lookup"><span data-stu-id="a1421-106">This library is in preview and is in early development.</span></span> <span data-ttu-id="a1421-107">Esperamos fazer alterações e melhorias em todos os componentes e APIs com base nos comentários da Comunidade.</span><span class="sxs-lookup"><span data-stu-id="a1421-107">We expect to make changes and improvements to all components and APIs based on feedback from the community.</span></span>
+<span data-ttu-id="c3f42-106">O Microsoft Graph Toolkit é um ótimo recurso para qualquer desenvolvedor que deseja criar um aplicativo Web, guia do Microsoft Teams ou Web Part do SharePoint que faça chamadas para o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="c3f42-106">The Microsoft Graph Toolkit is a great resource for any developer looking to create a web app, Microsoft Teams tab, or SharePoint web part that makes calls to Microsoft Graph.</span></span> <span data-ttu-id="c3f42-107">Ao fornecer componentes da interface do usuário que são projetados para se parecer com as experiências da Microsoft 365, o kit de ferramentas reduz o tempo e o custo para integração com a plataforma.</span><span class="sxs-lookup"><span data-stu-id="c3f42-107">By providing UI components that are designed to look and feel like Microsoft 365 experiences, the Toolkit reduces your time and cost to integrate with the platform.</span></span> <span data-ttu-id="c3f42-108">Todos os componentes da interface do usuário autenticam e acessam dados do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="c3f42-108">All the UI components authenticate with and access data from Microsoft Graph.</span></span> <span data-ttu-id="c3f42-109">Os componentes são totalmente personalizáveis usando CSS e Templating para que você possa corresponder à sua identidade visual exclusiva e controlar o conteúdo exibido nos componentes.</span><span class="sxs-lookup"><span data-stu-id="c3f42-109">The components are fully customizable using CSS and templating so you can match your unique branding and control the content displayed in the components.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="a1421-108">Introdução</span><span class="sxs-lookup"><span data-stu-id="a1421-108">Get started</span></span>
+## <a name="get-started"></a><span data-ttu-id="c3f42-110">Introdução</span><span class="sxs-lookup"><span data-stu-id="c3f42-110">Get started</span></span>
 
-<span data-ttu-id="a1421-109">Você pode usar os componentes referenciando o carregador diretamente (via unpkg) ou instalando o pacote do NPM.</span><span class="sxs-lookup"><span data-stu-id="a1421-109">You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.</span></span>
+<span data-ttu-id="c3f42-111">Você pode usar os componentes referenciando o carregador diretamente (via unpkg) ou instalando o pacote do NPM.</span><span class="sxs-lookup"><span data-stu-id="c3f42-111">You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.</span></span>
 
-<span data-ttu-id="a1421-110">Para obter detalhes sobre como começar a usar o kit de ferramentas do Microsoft Graph, consulte o [vídeo](https://www.youtube.com/watch?v=oZCGb2MMxa0)introdução.</span><span class="sxs-lookup"><span data-stu-id="a1421-110">For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).</span></span>
+![Introdução](/images/get-started.gif)
 
-### <a name="use-via-mgt-loader"></a><span data-ttu-id="a1421-111">Usar via gerenciamento-carregador</span><span class="sxs-lookup"><span data-stu-id="a1421-111">Use via mgt-loader</span></span>
+<span data-ttu-id="c3f42-113">Para obter detalhes sobre como começar a usar o kit de ferramentas do Microsoft Graph, consulte o [vídeo](https://www.youtube.com/watch?v=oZCGb2MMxa0)introdução.</span><span class="sxs-lookup"><span data-stu-id="c3f42-113">For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).</span></span>
 
-<span data-ttu-id="a1421-112">Consulte o exemplo do seguintes [jsfiddle](https://jsfiddle.net/metulev/9phqxLd5/).</span><span class="sxs-lookup"><span data-stu-id="a1421-112">See the folowing [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).</span></span>
+### <a name="use-via-mgt-loader"></a><span data-ttu-id="c3f42-114">Usar via gerenciamento-carregador</span><span class="sxs-lookup"><span data-stu-id="c3f42-114">Use via mgt-loader</span></span>
+
+<span data-ttu-id="c3f42-115">Consulte o exemplo do seguintes [jsfiddle](https://jsfiddle.net/metulev/9phqxLd5/).</span><span class="sxs-lookup"><span data-stu-id="c3f42-115">See the folowing [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).</span></span>
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 ```
 
-<span data-ttu-id="a1421-113">Você pode começar a usar os componentes na sua página HTML.</span><span class="sxs-lookup"><span data-stu-id="a1421-113">You can then start using the components in your HTML page.</span></span> <span data-ttu-id="a1421-114">A seguir está um exemplo de trabalho completo com o provedor MSAL.</span><span class="sxs-lookup"><span data-stu-id="a1421-114">The following is a full working example with the MSAL provider.</span></span>
+<span data-ttu-id="c3f42-116">Você pode começar a usar os componentes na sua página HTML.</span><span class="sxs-lookup"><span data-stu-id="c3f42-116">You can then start using the components in your HTML page.</span></span> <span data-ttu-id="c3f42-117">A seguir está um exemplo de trabalho completo com o provedor MSAL.</span><span class="sxs-lookup"><span data-stu-id="c3f42-117">The following is a full working example with the MSAL provider.</span></span>
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -44,29 +45,29 @@ ms.locfileid: "36792860"
 </script> -->
 ```
 
-> <span data-ttu-id="a1421-115">**Observação:** O MSAL exige que a página seja hospedada em um servidor Web para os redirecionamentos de autenticação.</span><span class="sxs-lookup"><span data-stu-id="a1421-115">**Note:** MSAL requires the page to be hosted in a web server for the authentication redirects.</span></span> <span data-ttu-id="a1421-116">Se você está apenas começando e deseja jogar, é possível usar o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) no Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="a1421-116">If you're just getting started and want to play around, you can use [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code.</span></span>
+> <span data-ttu-id="c3f42-118">**Observação:** O MSAL exige que a página seja hospedada em um servidor Web para os redirecionamentos de autenticação.</span><span class="sxs-lookup"><span data-stu-id="c3f42-118">**Note:** MSAL requires the page to be hosted in a web server for the authentication redirects.</span></span> <span data-ttu-id="c3f42-119">Se você está apenas começando e deseja jogar, é possível usar o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) no Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="c3f42-119">If you're just getting started and want to play around, you can use [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code.</span></span>
 
-### <a name="use-via-npm-es6-modules"></a><span data-ttu-id="a1421-117">Usar via NPM (módulos es6)</span><span class="sxs-lookup"><span data-stu-id="a1421-117">Use via NPM (es6 modules)</span></span>
+### <a name="use-via-npm-es6-modules"></a><span data-ttu-id="c3f42-120">Usar via NPM (módulos es6)</span><span class="sxs-lookup"><span data-stu-id="c3f42-120">Use via NPM (es6 modules)</span></span>
 
-<span data-ttu-id="a1421-118">Usando os módulos do es6, você tem controle total sobre o processo de agrupamento e pode agrupar apenas o código necessário para o seu site.</span><span class="sxs-lookup"><span data-stu-id="a1421-118">By using the es6 modules, you have full control of the bundling process and you can bundle only the code you need for your site.</span></span> <span data-ttu-id="a1421-119">Primeiro, adicione o pacote NPM:</span><span class="sxs-lookup"><span data-stu-id="a1421-119">First, add the npm package:</span></span>
+<span data-ttu-id="c3f42-121">Usando os módulos do es6, você tem controle total sobre o processo de agrupamento e pode agrupar apenas o código necessário para o seu site.</span><span class="sxs-lookup"><span data-stu-id="c3f42-121">By using the es6 modules, you have full control of the bundling process and you can bundle only the code you need for your site.</span></span> <span data-ttu-id="c3f42-122">Primeiro, adicione o pacote NPM:</span><span class="sxs-lookup"><span data-stu-id="c3f42-122">First, add the npm package:</span></span>
 
 ```bash
 npm install @microsoft/mgt
 ```
 
-<span data-ttu-id="a1421-120">Agora, você pode fazer referência a todos os componentes na página que está usando:</span><span class="sxs-lookup"><span data-stu-id="a1421-120">Now you can reference all components at the page you are using:</span></span>
+<span data-ttu-id="c3f42-123">Agora, você pode fazer referência a todos os componentes na página que está usando:</span><span class="sxs-lookup"><span data-stu-id="c3f42-123">Now you can reference all components at the page you are using:</span></span>
 
 ```html
 <script src="node_modules/@microsoft/mgt/dist/es6/components.js"></script>
 ```
 
-<span data-ttu-id="a1421-121">Ou, apenas faça referência ao componente de que você precisa e Evite carregar tudo o mais:</span><span class="sxs-lookup"><span data-stu-id="a1421-121">Or, just reference the component you need and avoid loading everything else:</span></span>
+<span data-ttu-id="c3f42-124">Ou, apenas faça referência ao componente de que você precisa e Evite carregar tudo o mais:</span><span class="sxs-lookup"><span data-stu-id="c3f42-124">Or, just reference the component you need and avoid loading everything else:</span></span>
 
 ```html
 <script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
 ```
 
-<span data-ttu-id="a1421-122">Da mesma forma, para adicionar um provedor, você pode adicioná-lo como um componente:</span><span class="sxs-lookup"><span data-stu-id="a1421-122">Similarly, to add a provider, you can add it as a component:</span></span>
+<span data-ttu-id="c3f42-125">Da mesma forma, para adicionar um provedor, você pode adicioná-lo como um componente:</span><span class="sxs-lookup"><span data-stu-id="c3f42-125">Similarly, to add a provider, you can add it as a component:</span></span>
 
 ```html
 <script src="node_modules/@microsoft/mgt/dist/es6/components/providers/mgt-msal-provider.js"></script>
@@ -74,7 +75,7 @@ npm install @microsoft/mgt
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 ```
 
-<span data-ttu-id="a1421-123">ou, adicione-o em seu código:</span><span class="sxs-lookup"><span data-stu-id="a1421-123">or, add it in your code:</span></span>
+<span data-ttu-id="c3f42-126">ou, adicione-o em seu código:</span><span class="sxs-lookup"><span data-stu-id="c3f42-126">or, add it in your code:</span></span>
 
 ```html
 <script type="module">
@@ -84,30 +85,30 @@ npm install @microsoft/mgt
 </script>
 ```
 
-## <a name="providers"></a><span data-ttu-id="a1421-124">Provedores</span><span class="sxs-lookup"><span data-stu-id="a1421-124">Providers</span></span>
+## <a name="providers"></a><span data-ttu-id="c3f42-127">Provedores</span><span class="sxs-lookup"><span data-stu-id="c3f42-127">Providers</span></span>
 
-<span data-ttu-id="a1421-125">Os componentes funcionam melhor quando usados com um [provedor](./providers.md).</span><span class="sxs-lookup"><span data-stu-id="a1421-125">The components work best when used with a [provider](./providers.md).</span></span> <span data-ttu-id="a1421-126">O provedor expõe a autenticação e as APIs que os componentes usam para chamar o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="a1421-126">The provider exposes authentication and APIs that the components use to call Microsoft Graph.</span></span>
+<span data-ttu-id="c3f42-128">Os componentes funcionam melhor quando usados com um [provedor](./providers.md).</span><span class="sxs-lookup"><span data-stu-id="c3f42-128">The components work best when used with a [provider](./providers.md).</span></span> <span data-ttu-id="c3f42-129">O provedor expõe a autenticação e as APIs que os componentes usam para chamar o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="c3f42-129">The provider exposes authentication and APIs that the components use to call Microsoft Graph.</span></span>
 
-<span data-ttu-id="a1421-127">O kit de ferramentas contém provedores para os suplementos do [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md)e Office (em breve).</span><span class="sxs-lookup"><span data-stu-id="a1421-127">The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md), and Office Add-ins (coming soon).</span></span> <span data-ttu-id="a1421-128">Você também pode criar seus próprios provedores, estendendo a classe abstrata [IProvider].</span><span class="sxs-lookup"><span data-stu-id="a1421-128">You can also create your own providers by extending the [IProvider] abstract class.</span></span>
+<span data-ttu-id="c3f42-130">O kit de ferramentas contém provedores para os suplementos do [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md)e Office (em breve).</span><span class="sxs-lookup"><span data-stu-id="c3f42-130">The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md), and Office Add-ins (coming soon).</span></span> <span data-ttu-id="c3f42-131">Você também pode criar seus próprios provedores, estendendo a classe abstrata [IProvider].</span><span class="sxs-lookup"><span data-stu-id="c3f42-131">You can also create your own providers by extending the [IProvider] abstract class.</span></span>
 
-## <a name="polyfills"></a><span data-ttu-id="a1421-129">Polyfills</span><span class="sxs-lookup"><span data-stu-id="a1421-129">Polyfills</span></span>
+## <a name="polyfills"></a><span data-ttu-id="c3f42-132">Polyfills</span><span class="sxs-lookup"><span data-stu-id="c3f42-132">Polyfills</span></span>
 
-<span data-ttu-id="a1421-130">Se você estiver usando os módulos es6 do pacote do NPM, certifique-se de incluir os metapreenchimentos no projeto, pois eles não serão incluídos automaticamente.</span><span class="sxs-lookup"><span data-stu-id="a1421-130">If you're using the es6 modules from the npm package, make sure to include polyfills in your project as they are not included automatically.</span></span> <span data-ttu-id="a1421-131">Para saber mais, confira [polipreenchimentos](https://www.webcomponents.org/polyfills).</span><span class="sxs-lookup"><span data-stu-id="a1421-131">To learn more, see [polyfills](https://www.webcomponents.org/polyfills).</span></span>
+<span data-ttu-id="c3f42-133">Se você estiver usando os módulos es6 do pacote do NPM, certifique-se de incluir os metapreenchimentos no projeto, pois eles não serão incluídos automaticamente.</span><span class="sxs-lookup"><span data-stu-id="c3f42-133">If you're using the es6 modules from the npm package, make sure to include polyfills in your project as they are not included automatically.</span></span> <span data-ttu-id="c3f42-134">Para saber mais, confira [polipreenchimentos](https://www.webcomponents.org/polyfills).</span><span class="sxs-lookup"><span data-stu-id="c3f42-134">To learn more, see [polyfills](https://www.webcomponents.org/polyfills).</span></span>
 
-<span data-ttu-id="a1421-132">Se você estiver usando o script MGT-Loader. js do pacote no unpkg, os metapreenchimentos já estão incluídos.</span><span class="sxs-lookup"><span data-stu-id="a1421-132">If you're using the mgt-loader.js script from the bundle on unpkg, the polyfills are already included.</span></span>
+<span data-ttu-id="c3f42-135">Se você estiver usando o script MGT-Loader. js do pacote no unpkg, os metapreenchimentos já estão incluídos.</span><span class="sxs-lookup"><span data-stu-id="c3f42-135">If you're using the mgt-loader.js script from the bundle on unpkg, the polyfills are already included.</span></span>
 
 
-## <a name="using-the-components-with-react-angular-and-other-frameworks"></a><span data-ttu-id="a1421-133">Usando os componentes com reagir, angular e outras estruturas</span><span class="sxs-lookup"><span data-stu-id="a1421-133">Using the components with React, Angular, and other frameworks</span></span>
+## <a name="using-the-components-with-react-angular-and-other-frameworks"></a><span data-ttu-id="c3f42-136">Usando os componentes com reagir, angular e outras estruturas</span><span class="sxs-lookup"><span data-stu-id="c3f42-136">Using the components with React, Angular, and other frameworks</span></span>
 
-<span data-ttu-id="a1421-134">Os componentes Web são baseados em vários padrões da Web e podem ser usados com qualquer estrutura que você já esteja usando.</span><span class="sxs-lookup"><span data-stu-id="a1421-134">Web components are based on several web standards and can be used with any framework you're already using.</span></span> <span data-ttu-id="a1421-135">No entanto, nem todas as estruturas lidam com os componentes da Web da mesma maneira.</span><span class="sxs-lookup"><span data-stu-id="a1421-135">However, not all frameworks handle web components the same way.</span></span> <span data-ttu-id="a1421-136">Para saber mais sobre as considerações que podem ser aplicadas dependendo da sua estrutura, confira o projeto [elementos personalizados em qualquer lugar](https://custom-elements-everywhere.com/) .</span><span class="sxs-lookup"><span data-stu-id="a1421-136">To learn more about the considerations that might apply depending on your framework, see the [Custom Elements Everywhere](https://custom-elements-everywhere.com/) project.</span></span>
+<span data-ttu-id="c3f42-137">Os componentes Web são baseados em vários padrões da Web e podem ser usados com qualquer estrutura que você já esteja usando.</span><span class="sxs-lookup"><span data-stu-id="c3f42-137">Web components are based on several web standards and can be used with any framework you're already using.</span></span> <span data-ttu-id="c3f42-138">No entanto, nem todas as estruturas lidam com os componentes da Web da mesma maneira.</span><span class="sxs-lookup"><span data-stu-id="c3f42-138">However, not all frameworks handle web components the same way.</span></span> <span data-ttu-id="c3f42-139">Para saber mais sobre as considerações que podem ser aplicadas dependendo da sua estrutura, confira o projeto [elementos personalizados em qualquer lugar](https://custom-elements-everywhere.com/) .</span><span class="sxs-lookup"><span data-stu-id="c3f42-139">To learn more about the considerations that might apply depending on your framework, see the [Custom Elements Everywhere](https://custom-elements-everywhere.com/) project.</span></span>
 
-<span data-ttu-id="a1421-137">As seções a seguir fornecem uma visão geral rápida do uso dos componentes do Microsoft Graph Toolkit com reagir e angulares.</span><span class="sxs-lookup"><span data-stu-id="a1421-137">The following sections provide a quick overview of using the Microsoft Graph Toolkit components with React and Angular.</span></span>
+<span data-ttu-id="c3f42-140">As seções a seguir fornecem uma visão geral rápida do uso dos componentes do Microsoft Graph Toolkit com reagir e angulares.</span><span class="sxs-lookup"><span data-stu-id="c3f42-140">The following sections provide a quick overview of using the Microsoft Graph Toolkit components with React and Angular.</span></span>
 
-### <a name="react"></a><span data-ttu-id="a1421-138">React</span><span class="sxs-lookup"><span data-stu-id="a1421-138">React</span></span>
+### <a name="react"></a><span data-ttu-id="c3f42-141">React</span><span class="sxs-lookup"><span data-stu-id="c3f42-141">React</span></span>
 
-<span data-ttu-id="a1421-139">Reagir transfere todos os dados para elementos personalizados na forma de atributos HTML.</span><span class="sxs-lookup"><span data-stu-id="a1421-139">React passes all data to Custom Elements in the form of HTML attributes.</span></span> <span data-ttu-id="a1421-140">Para dados primitivos, isso é bom, mas não funciona ao transmitir dados ricos, como objetos ou matrizes.</span><span class="sxs-lookup"><span data-stu-id="a1421-140">For primitive data this is fine, but it does not work when passing rich data, like objects or arrays.</span></span> <span data-ttu-id="a1421-141">Nesses casos, você precisará usar um `ref` para passar no objeto.</span><span class="sxs-lookup"><span data-stu-id="a1421-141">In those cases you will need to use a `ref` to pass in the object.</span></span>
+<span data-ttu-id="c3f42-142">Reagir transfere todos os dados para elementos personalizados na forma de atributos HTML.</span><span class="sxs-lookup"><span data-stu-id="c3f42-142">React passes all data to Custom Elements in the form of HTML attributes.</span></span> <span data-ttu-id="c3f42-143">Para dados primitivos, isso é bom, mas não funciona ao transmitir dados ricos, como objetos ou matrizes.</span><span class="sxs-lookup"><span data-stu-id="c3f42-143">For primitive data this is fine, but it does not work when passing rich data, like objects or arrays.</span></span> <span data-ttu-id="c3f42-144">Nesses casos, você precisará usar um `ref` para passar no objeto.</span><span class="sxs-lookup"><span data-stu-id="c3f42-144">In those cases you will need to use a `ref` to pass in the object.</span></span>
 
-<span data-ttu-id="a1421-142">Ex</span><span class="sxs-lookup"><span data-stu-id="a1421-142">Ex:</span></span>
+<span data-ttu-id="c3f42-145">Ex</span><span class="sxs-lookup"><span data-stu-id="c3f42-145">Ex:</span></span>
 
 ```jsx
 // import all the components
@@ -120,7 +121,7 @@ class App extends Component {
 }
 ```
 
-<span data-ttu-id="a1421-143">Como reagir implementa seu próprio sistema de eventos sintético, ele não pode escutar eventos DOM provenientes de elementos personalizados sem o uso de uma solução alternativa.</span><span class="sxs-lookup"><span data-stu-id="a1421-143">Because React implements its own synthetic event system, it cannot listen for DOM events coming from custom elements without the use of a workaround.</span></span> <span data-ttu-id="a1421-144">Você precisará usar um `ref` para fazer referência aos componentes do kit de ferramentas e anexar manualmente ouvintes de eventos com addEventListener, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="a1421-144">You will need to use a `ref` to reference the toolkit components and manually attach event listeners with addEventListener, as shown in the following example.</span></span>
+<span data-ttu-id="c3f42-146">Como reagir implementa seu próprio sistema de eventos sintético, ele não pode escutar eventos DOM provenientes de elementos personalizados sem o uso de uma solução alternativa.</span><span class="sxs-lookup"><span data-stu-id="c3f42-146">Because React implements its own synthetic event system, it cannot listen for DOM events coming from custom elements without the use of a workaround.</span></span> <span data-ttu-id="c3f42-147">Você precisará usar um `ref` para fazer referência aos componentes do kit de ferramentas e anexar manualmente ouvintes de eventos com addEventListener, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="c3f42-147">You will need to use a `ref` to reference the toolkit components and manually attach event listeners with addEventListener, as shown in the following example.</span></span>
 
 ```jsx
 // you can just import a single component
@@ -139,9 +140,9 @@ class App extends Component {
 }
 ```
 
-#### <a name="react-typescript-and-tsx"></a><span data-ttu-id="a1421-145">Reagir, typescript e TSX</span><span class="sxs-lookup"><span data-stu-id="a1421-145">React, Typescript, and TSX</span></span>
+#### <a name="react-typescript-and-tsx"></a><span data-ttu-id="c3f42-148">Reagir, typescript e TSX</span><span class="sxs-lookup"><span data-stu-id="c3f42-148">React, Typescript, and TSX</span></span>
 
-<span data-ttu-id="a1421-146">Um problema conhecido pode ocorrer quando você usa elementos personalizados com reagir e typescript.</span><span class="sxs-lookup"><span data-stu-id="a1421-146">A known issue can occur when you use custom elements with React and Typescript.</span></span> <span data-ttu-id="a1421-147">O typescript gerará um erro ao tentar usar um componente no TSX.</span><span class="sxs-lookup"><span data-stu-id="a1421-147">Typescript will throw an error when trying to use a component in tsx.</span></span> <span data-ttu-id="a1421-148">A solução alternativa é definir o elemento personalizado em seu código, conforme mostrado.</span><span class="sxs-lookup"><span data-stu-id="a1421-148">The workaround is to define the custom element in your code, as shown.</span></span>
+<span data-ttu-id="c3f42-149">Um problema conhecido pode ocorrer quando você usa elementos personalizados com reagir e typescript.</span><span class="sxs-lookup"><span data-stu-id="c3f42-149">A known issue can occur when you use custom elements with React and Typescript.</span></span> <span data-ttu-id="c3f42-150">O typescript gerará um erro ao tentar usar um componente no TSX.</span><span class="sxs-lookup"><span data-stu-id="c3f42-150">Typescript will throw an error when trying to use a component in tsx.</span></span> <span data-ttu-id="c3f42-151">A solução alternativa é definir o elemento personalizado em seu código, conforme mostrado.</span><span class="sxs-lookup"><span data-stu-id="c3f42-151">The workaround is to define the custom element in your code, as shown.</span></span>
 
 ```ts
 declare global {
@@ -153,13 +154,13 @@ declare global {
 }
 ```
 
-<span data-ttu-id="a1421-149">Você pode usá-lo no seu TSX como `<mgt-login></mgt-login>`.</span><span class="sxs-lookup"><span data-stu-id="a1421-149">You can then use it in your tsx as `<mgt-login></mgt-login>`.</span></span>
+<span data-ttu-id="c3f42-152">Você pode usá-lo no seu TSX como `<mgt-login></mgt-login>`.</span><span class="sxs-lookup"><span data-stu-id="c3f42-152">You can then use it in your tsx as `<mgt-login></mgt-login>`.</span></span>
 
-### <a name="angular"></a><span data-ttu-id="a1421-150">Angular</span><span class="sxs-lookup"><span data-stu-id="a1421-150">Angular</span></span>
+### <a name="angular"></a><span data-ttu-id="c3f42-153">Angular</span><span class="sxs-lookup"><span data-stu-id="c3f42-153">Angular</span></span>
 
-<span data-ttu-id="a1421-151">A sintaxe de associação padrão do angular sempre definirá Propriedades em um elemento.</span><span class="sxs-lookup"><span data-stu-id="a1421-151">Angular's default binding syntax will always set properties on an element.</span></span> <span data-ttu-id="a1421-152">Isso funciona bem para dados ricos, como objetos e matrizes, e também funciona bem para valores primitivos.</span><span class="sxs-lookup"><span data-stu-id="a1421-152">This works well for rich data, like objects and arrays, and also works well for primitive values.</span></span>
+<span data-ttu-id="c3f42-154">A sintaxe de associação padrão do angular sempre definirá Propriedades em um elemento.</span><span class="sxs-lookup"><span data-stu-id="c3f42-154">Angular's default binding syntax will always set properties on an element.</span></span> <span data-ttu-id="c3f42-155">Isso funciona bem para dados ricos, como objetos e matrizes, e também funciona bem para valores primitivos.</span><span class="sxs-lookup"><span data-stu-id="c3f42-155">This works well for rich data, like objects and arrays, and also works well for primitive values.</span></span>
 
-<span data-ttu-id="a1421-153">Para usar elementos personalizados, primeiro, habilite os elementos personalizados `app.module.ts` em seu adicionando `CUSTOM_ELEMENT_SCHEMA` o ao `@NgModule() decorator`, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="a1421-153">To use custom elements, first, enable custom elements in your `app.module.ts` by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator`, as shown in the following example.</span></span>
+<span data-ttu-id="c3f42-156">Para usar elementos personalizados, primeiro, habilite os elementos personalizados `app.module.ts` em seu adicionando `CUSTOM_ELEMENT_SCHEMA` o ao `@NgModule() decorator`, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="c3f42-156">To use custom elements, first, enable custom elements in your `app.module.ts` by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator`, as shown in the following example.</span></span>
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -177,7 +178,7 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 
-<span data-ttu-id="a1421-154">Você pode importar o componente que gostaria de usar em seu arquivo Component \*. TS.</span><span class="sxs-lookup"><span data-stu-id="a1421-154">You can then import the component you'd like to use in your component \*.ts file.</span></span>
+<span data-ttu-id="c3f42-157">Você pode importar o componente que gostaria de usar em seu arquivo Component \*. TS.</span><span class="sxs-lookup"><span data-stu-id="c3f42-157">You can then import the component you'd like to use in your component \*.ts file.</span></span>
 
 ```ts
 import { Component } from '@angular/core';
@@ -195,7 +196,7 @@ export class AppComponent {
 }
 ```
 
-<span data-ttu-id="a1421-155">Por fim, use o componente como faria normalmente no seu modelo.</span><span class="sxs-lookup"><span data-stu-id="a1421-155">Finally, use the component as you normally would in your template.</span></span>
+<span data-ttu-id="c3f42-158">Por fim, use o componente como faria normalmente no seu modelo.</span><span class="sxs-lookup"><span data-stu-id="c3f42-158">Finally, use the component as you normally would in your template.</span></span>
 
 ```html
 <mgt-person [personDetails]="person" show-name></mgt-person>

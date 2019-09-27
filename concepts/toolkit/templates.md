@@ -3,18 +3,18 @@ title: Modelos no Microsoft Graph Toolkit
 description: Use modelos personalizados para modificar o conteúdo de um componente.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: f0648d0ac1348fbadad6cebe8a022f9445fcf1e3
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: b9ef4b9422d84886fa4df76618b6cdf14def2378
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242929"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275706"
 ---
-# <a name="templates-in-the-microsoft-graph-toolkit"></a><span data-ttu-id="bd09e-103">Modelos no Microsoft Graph Toolkit</span><span class="sxs-lookup"><span data-stu-id="bd09e-103">Templates in the Microsoft Graph Toolkit</span></span>
+# <a name="templates-in-the-microsoft-graph-toolkit"></a><span data-ttu-id="5e10a-103">Modelos no Microsoft Graph Toolkit</span><span class="sxs-lookup"><span data-stu-id="5e10a-103">Templates in the Microsoft Graph Toolkit</span></span>
 
-<span data-ttu-id="bd09e-104">Use modelos personalizados para modificar o conteúdo de um componente.</span><span class="sxs-lookup"><span data-stu-id="bd09e-104">Use custom templates to modify the content of a component.</span></span>
+<span data-ttu-id="5e10a-104">Use modelos personalizados para modificar o conteúdo de um componente.</span><span class="sxs-lookup"><span data-stu-id="5e10a-104">Use custom templates to modify the content of a component.</span></span>
 
-<span data-ttu-id="bd09e-105">Todos os componentes Web oferecem suporte a `<template>` modelos baseados no elemento.</span><span class="sxs-lookup"><span data-stu-id="bd09e-105">All web components support templates based on the `<template>` element.</span></span> <span data-ttu-id="bd09e-106">Por exemplo, para substituir o modelo de um componente, adicione um `<template>` elemento dentro de um componente.</span><span class="sxs-lookup"><span data-stu-id="bd09e-106">For example, to override the template of a component, add a `<template>` element inside a component.</span></span>
+<span data-ttu-id="5e10a-105">Todos os componentes Web oferecem suporte a `<template>` modelos baseados no elemento.</span><span class="sxs-lookup"><span data-stu-id="5e10a-105">All web components support templates based on the `<template>` element.</span></span> <span data-ttu-id="5e10a-106">Por exemplo, para substituir o modelo de um componente, adicione um `<template>` elemento dentro de um componente.</span><span class="sxs-lookup"><span data-stu-id="5e10a-106">For example, to override the template of a component, add a `<template>` element inside a component.</span></span>
 
 ```html
 <mgt-agenda>
@@ -36,13 +36,130 @@ ms.locfileid: "35242929"
 </mgt-agenda>
 ```
 
-<span data-ttu-id="bd09e-107">Há suporte para os seguintes recursos de modelo:</span><span class="sxs-lookup"><span data-stu-id="bd09e-107">The following template features are supported:</span></span>
+## <a name="data-type"></a><span data-ttu-id="5e10a-107">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="5e10a-107">Data-type</span></span>
 
-- <span data-ttu-id="bd09e-108">Use as chaves duplas (`{{expression}}`) para expandir uma expressão.</span><span class="sxs-lookup"><span data-stu-id="bd09e-108">Use the double curly brackets (`{{expression}}`) to expand an expression.</span></span> <span data-ttu-id="bd09e-109">No exemplo anterior, o `<mgt-person>` passa um `person` objeto que você pode usar no modelo.</span><span class="sxs-lookup"><span data-stu-id="bd09e-109">In the previous example, the `<mgt-person>` passes a `person` object that you can use in the template.</span></span>
-- <span data-ttu-id="bd09e-110">Use os `data-if` atributos `data-else` e para a renderização condicional.</span><span class="sxs-lookup"><span data-stu-id="bd09e-110">Use the `data-if` and `data-else` attributes for conditional rendering.</span></span> <span data-ttu-id="bd09e-111">Expressões condicionais como `event.attendees.length > 2` são suportadas.</span><span class="sxs-lookup"><span data-stu-id="bd09e-111">Conditional expressions such as `event.attendees.length > 2` are supported.</span></span>
-- <span data-ttu-id="bd09e-112">Use o `data-for` para repetir um elemento.</span><span class="sxs-lookup"><span data-stu-id="bd09e-112">Use the `data-for` to repeat an element.</span></span>
-- <span data-ttu-id="bd09e-113">Use o `data-type` para especificar de que parte do componente será o modelo.</span><span class="sxs-lookup"><span data-stu-id="bd09e-113">Use the `data-type` to specify what part of the component to template.</span></span> <span data-ttu-id="bd09e-114">Não especificar o tipo aplicará o modelo a todo o componente.</span><span class="sxs-lookup"><span data-stu-id="bd09e-114">Not specifying the type will apply the template to the entire component.</span></span>
+<span data-ttu-id="5e10a-108">Cada componente pode ter várias partes que podem ser modeladas.</span><span class="sxs-lookup"><span data-stu-id="5e10a-108">Each component can have multiple parts that can be templated.</span></span> <span data-ttu-id="5e10a-109">Por exemplo, no `mgt-agenda` componente, você pode modelar eventos individuais, cabeçalhos de seção individuais, modo de exibição de carregamento, sem exibição de dados e muito mais.</span><span class="sxs-lookup"><span data-stu-id="5e10a-109">For example, in the `mgt-agenda` component, you can template individual events, individual section headers, loading view, no data view, and more.</span></span> <span data-ttu-id="5e10a-110">Para indicar o modelo, use o `data-type` atributo em um modelo.</span><span class="sxs-lookup"><span data-stu-id="5e10a-110">To indicate the template, use the `data-type` attribute on a template.</span></span> <span data-ttu-id="5e10a-111">Por exemplo, para modelar cada evento `mgt-agenda`no, use `event` o tipo de dados, conforme mostrado.</span><span class="sxs-lookup"><span data-stu-id="5e10a-111">For example, to template each event in the `mgt-agenda`, use the `event` data-type, as shown.</span></span>
 
-<span data-ttu-id="bd09e-115">Cada componente documenta os valores `data-type` com suporte e qual contexto de dados é passado para cada modelo.</span><span class="sxs-lookup"><span data-stu-id="bd09e-115">Each component documents the supported `data-type` values and what data context is passed down to each template.</span></span>
+```html
+<mgt-agenda>
+  <template data-type="event"> </template>
+</mgt-agenda>
+```
 
-<span data-ttu-id="bd09e-116">Os modelos podem ser estilizados normalmente, já que são renderizados fora do dom de sombra.</span><span class="sxs-lookup"><span data-stu-id="bd09e-116">The templates can be styled normally as they are rendered outside of the shadow dom.</span></span>
+<span data-ttu-id="5e10a-112">Se não `data-type` for especificado, o componente inteiro será substituído pelo modelo.</span><span class="sxs-lookup"><span data-stu-id="5e10a-112">If no `data-type` is specified, the entire component will be replaced with the template.</span></span> <span data-ttu-id="5e10a-113">Você também pode usar `data-type="default"` para o mesmo objetivo.</span><span class="sxs-lookup"><span data-stu-id="5e10a-113">You can also use `data-type="default"` for the same purpose.</span></span>
+
+## <a name="binding-data"></a><span data-ttu-id="5e10a-114">Dados de vinculação</span><span class="sxs-lookup"><span data-stu-id="5e10a-114">Binding data</span></span>
+
+<span data-ttu-id="5e10a-115">Muitos modelos permitem a associação de dados que são passados para o modelo como contexto de dados.</span><span class="sxs-lookup"><span data-stu-id="5e10a-115">Many templates allow binding of data that is passed to the template as data context.</span></span> <span data-ttu-id="5e10a-116">Por exemplo, o `event` modelo no `mgt-agenda` componente passa um `{event}` objeto que pode ser usado diretamente no modelo.</span><span class="sxs-lookup"><span data-stu-id="5e10a-116">For example, the `event` template in the `mgt-agenda` component passes an `{event}` object that can be used directly in the template.</span></span> <span data-ttu-id="5e10a-117">Para expandir uma expressão, como `event.subject`, use as chaves duplas.</span><span class="sxs-lookup"><span data-stu-id="5e10a-117">To expand an expression, such as `event.subject`, use the double curly brackets.</span></span>
+
+```html
+<template data-type="event">
+  <div>{{event.subject}}</div>
+</template>
+```
+
+<span data-ttu-id="5e10a-118">Este formato também pode ser usado dentro de atributos:</span><span class="sxs-lookup"><span data-stu-id="5e10a-118">This format can also be used inside of attributes:</span></span>
+
+```html
+<template data-type="event">
+  <a href="{{ event.onlineMeetingUrl }}" />
+</template>
+```
+
+> <span data-ttu-id="5e10a-119">**Observação:** Você também pode expandir objetos como `{{event}}` e eles serão renderizados como cadeias de caracteres JSON.</span><span class="sxs-lookup"><span data-stu-id="5e10a-119">**Note:** You can also expand objects such as `{{event}}` and they will render as JSON strings.</span></span> <span data-ttu-id="5e10a-120">Isso pode ser útil quando você está desenvolvendo os modelos.</span><span class="sxs-lookup"><span data-stu-id="5e10a-120">This can be useful when you're developing the templates.</span></span>
+
+## <a name="conditional-rendering"></a><span data-ttu-id="5e10a-121">Renderização condicional</span><span class="sxs-lookup"><span data-stu-id="5e10a-121">Conditional rendering</span></span>
+
+<span data-ttu-id="5e10a-122">Você só pode querer renderizar elementos quando uma condição for true ou false com base no contexto de dados.</span><span class="sxs-lookup"><span data-stu-id="5e10a-122">You might only want to render elements when a condition is true or false based on the data context.</span></span> <span data-ttu-id="5e10a-123">Os `data-if` atributos `data-else` e podem avaliar uma expressão e renderizar somente se true ou false.</span><span class="sxs-lookup"><span data-stu-id="5e10a-123">The `data-if` and `data-else` attributes can evaluate an expression and render only if true or false.</span></span>
+
+```html
+<mgt-person person-query="john doe">
+  <template>
+    <div data-if="person.image">
+      <img src="{{ person.image }}" />
+    </div>
+    <div data-else>
+      {{ person.displayName }}
+    </div>
+  </template>
+</mgt-person>
+```
+
+## <a name="looping"></a><span data-ttu-id="5e10a-124">Loop</span><span class="sxs-lookup"><span data-stu-id="5e10a-124">Looping</span></span>
+
+<span data-ttu-id="5e10a-125">Haverá casos em que o objeto de contexto de dados contém loop e você precisará fazer um loop sobre os dados.</span><span class="sxs-lookup"><span data-stu-id="5e10a-125">There will be cases where the data context object contains loop and you will need to loop over the data.</span></span> <span data-ttu-id="5e10a-126">Neste cenário, use o `data-for` atributo.</span><span class="sxs-lookup"><span data-stu-id="5e10a-126">For this scenario, use the `data-for` attribute.</span></span>
+
+```html
+<template data-type="event">
+  <ul>
+    <li data-for='attendee in event.attendees'>
+      {{ attendee.displayName }}
+    </li>
+  </ul>
+</template>
+```
+
+## <a name="converters"></a><span data-ttu-id="5e10a-127">Conversores</span><span class="sxs-lookup"><span data-stu-id="5e10a-127">Converters</span></span>
+
+<span data-ttu-id="5e10a-128">Em muitos casos, talvez você queira transformar os dados antes de apresentá-los no modelo.</span><span class="sxs-lookup"><span data-stu-id="5e10a-128">In many cases, you might want to transform the data before presenting it in the template.</span></span> <span data-ttu-id="5e10a-129">Por exemplo, você pode querer formatar corretamente uma data antes de ela ser renderizada.</span><span class="sxs-lookup"><span data-stu-id="5e10a-129">For example, you might want to properly format a date before it is rendered.</span></span> <span data-ttu-id="5e10a-130">Nesses casos, talvez você queira usar um conversor de modelos.</span><span class="sxs-lookup"><span data-stu-id="5e10a-130">In these cases, you might want to use a template converter.</span></span>
+
+<span data-ttu-id="5e10a-131">Para usar um conversor de modelos, primeiro é necessário definir uma função que fará a conversão.</span><span class="sxs-lookup"><span data-stu-id="5e10a-131">To use a template converter, you first need to define a function that will do the conversion.</span></span> <span data-ttu-id="5e10a-132">Por exemplo, você pode definir uma função para formatar uma data.</span><span class="sxs-lookup"><span data-stu-id="5e10a-132">For example, you might define a function to format a date.</span></span>
+
+```ts
+getTimeRange(event) {
+  // TODO: format a string from the event object as you wish
+  // timeRange = ...
+
+  return timeRange;
+}
+```
+
+<span data-ttu-id="5e10a-133">Em seguida, defina um novo conversor no elemento e nomeie-o conforme você vir ajustar.</span><span class="sxs-lookup"><span data-stu-id="5e10a-133">Then define a new converter on the element and name it as you see fit.</span></span>
+
+```ts
+let agenda = document.querySelector('mgt-agenda');
+agenda.templateConverters["myConverter"] = getTimeRange;
+```
+
+<span data-ttu-id="5e10a-134">Para usar o conversor no seu modelo, use as chaves triplas.</span><span class="sxs-lookup"><span data-stu-id="5e10a-134">To use the converter in your template, use the triple curly brackets.</span></span>
+
+```html
+<template data-type="event">
+  <div>{{{ myConverter(event) }}}</div>
+</template>
+```
+
+<span data-ttu-id="5e10a-135">Você também pode usar funções internas sem definir o conversor de modelos.</span><span class="sxs-lookup"><span data-stu-id="5e10a-135">You can also use built-in functions without defining template converter.</span></span>
+
+```html
+<template data-type="event">
+  <div>{{{ event.subject.toUpperCase() }}}</div>
+</template>
+```
+
+## <a name="template-rendered-event"></a><span data-ttu-id="5e10a-136">Evento de modelo renderizado</span><span class="sxs-lookup"><span data-stu-id="5e10a-136">Template Rendered Event</span></span>
+
+<span data-ttu-id="5e10a-137">Em certos casos, talvez você queira obter uma referência para o elemento renderizado.</span><span class="sxs-lookup"><span data-stu-id="5e10a-137">In certain cases, you might want to get a reference to the rendered element.</span></span> <span data-ttu-id="5e10a-138">Isso pode ser útil para adicionar ouvintes de eventos a elementos no modelo.</span><span class="sxs-lookup"><span data-stu-id="5e10a-138">This can be useful for adding event listeners to elements in the template.</span></span> <span data-ttu-id="5e10a-139">Neste cenário, você pode usar o `templateRendered` evento.</span><span class="sxs-lookup"><span data-stu-id="5e10a-139">In this scenario, you might use the `templateRendered` event.</span></span>
+
+```ts
+let agenda = document.querySelector('mgt-agenda');
+agenda.addEventListener('templateRendered', (e) => { });
+```
+
+<span data-ttu-id="5e10a-140">Os detalhes do evento conterão a referência ao elemento que está sendo renderizado, o objeto de contexto de dados e o tipo de modelo.</span><span class="sxs-lookup"><span data-stu-id="5e10a-140">The event details will contain reference to the element that is being rendered, the data context object, and the type of the template.</span></span>
+
+```ts
+agenda.addEventListener('templateRendered', (e) => { 
+  let templateType = e.detail.templateType;
+  let dataContext = e.detail.context;
+  let element = e.detail.element;
+
+  if (type === 'event') {
+    element.querySelector('.some-button').addEventListener('click', () => {});
+  }
+});
+```
+
+## <a name="styling"></a><span data-ttu-id="5e10a-141">Estilo</span><span class="sxs-lookup"><span data-stu-id="5e10a-141">Styling</span></span>
+
+<span data-ttu-id="5e10a-142">Os modelos podem ser estilizados normalmente por meio de CSS, pois eles são renderizados fora do dom de sombra.</span><span class="sxs-lookup"><span data-stu-id="5e10a-142">The templates can be styled normally via CSS as they are rendered outside of the shadow dom.</span></span>
