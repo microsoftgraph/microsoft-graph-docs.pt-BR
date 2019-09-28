@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ac7f9a8c1bd6155b4824da81e1d6c64cccda7035
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 67079a369f666ab3b689a7a80f51ee58f437bedc
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718608"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275682"
 ---
 # <a name="list-channels"></a>Listar canais
 
@@ -53,11 +53,13 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Channel](../resources/channel.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-list-all-channels"></a>Exemplo 1: Listar todos os canais
 
-Este é um exemplo da solicitação.
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação para listar todos os canais.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,11 +83,11 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels
 
 ---
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta.
+Esta é a resposta.
 
-> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -104,7 +106,56 @@ Content-length: 262
       "description": "description-value",
       "displayName": "display-name-value",
       "id": "id-value",
-      "membershipType": "membership-type-value"
+      "membershipType": "membership-type-value",
+      "isFavoriteByDefault": false,
+      "webUrl": "webUrl-value",
+      "email": "email-value"
+    }
+  ]
+}
+```
+
+### <a name="example-2-list-all-private-channels"></a>Exemplo 2: Listar todos os canais privados
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação para listar todos os canais privados.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_private_channels"
+}-->
+```http
+GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 262
+
+{
+  "value": [
+    {
+      "description": "description-value",
+      "displayName": "display-name-value",
+      "id": "id-value",
+      "membershipType": "membership-type-value",
+      "isFavoriteByDefault": false,
+      "webUrl": "webUrl-value",
+      "email": "email-value"
     }
   ]
 }
