@@ -387,7 +387,7 @@ items:
             href: sdks/create-client.md
           - name: Escolher um provedor de autenticação.
             href: sdks/choose-authentication-providers.md
-      - name: Usar o kit de ferramentas (visualização)
+      - name: Usar o kit de ferramentas
         items:
           - name: Visão geral do kit de ferramentas
             href: toolkit/overview.md
