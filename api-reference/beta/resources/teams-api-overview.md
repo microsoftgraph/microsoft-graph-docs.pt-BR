@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: bc2e5dc6575ebc5a2de2497f70d3e1d50bcdfa52
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 34308ef188987e4c6c32ad5c97d0676e75567c30
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964512"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333368"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -88,6 +88,9 @@ Da mesma forma, se o `userId` na URL ou no conteúdo for expresso como um UPN, e
 
 Quando o caminho mais lento é executado, se um membro ou membro da equipe atual estiver conectado ao aplicativo/site do Microsoft Teams, a alteração será refletida em uma hora.
 Se nenhum desses usuários estiver conectado ao aplicativo/site do Microsoft Teams, a alteração não será refletida até uma hora depois que um deles se conectar.
+
+> [!Note] 
+> Os convidados do locatário sempre são processados pelo caminho lento.
 
 ## <a name="see-also"></a>Confira também
 

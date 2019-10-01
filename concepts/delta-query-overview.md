@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: piotrci
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a74645d8f5b579a28059124eabdf8ccfdb967c4e
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 4ea9156f89ac1e979c0f6c83e3b6ae828333fbbd
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054073"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333343"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -115,6 +115,49 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 > \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas pequenas diferenças de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](/graph/api/driveitem-delta?view=graph-rest-1.0).
 
 > \*\* O padrão de uso dos recursos do Planner é semelhante a outros recursos compatíveis, mas com algumas diferenças.  Para saber mais, consulte [Controlar alterações para o Planner](/graph/api/planneruser-list-delta?view=graph-rest-beta).
+
+### <a name="limitations"></a>Limitações
+
+#### <a name="properties-stored-outside-of-the-main-data-store"></a>Propriedades armazenadas fora do repositório de dados principal
+
+Alguns recursos contêm propriedades armazenadas fora do repositório de dados principal do recurso (por exemplo, o recurso de usuário é armazenado no sistema Azure AD, enquanto algumas propriedades, como **skills**, são armazenadas no SharePoint Online). Atualmente, não há suporte para essas propriedades como parte do controle de alterações; uma alteração em uma dessas propriedades não resultará em um objeto aparecendo na resposta de consulta Delta. Atualmente, apenas as propriedades armazenadas no repositório de dados principal disparam alterações na consulta Delta.
+
+Para verificar se uma propriedade pode ser usada na consulta Delta, experimente executar uma operação de `GET` regular na coleção de recursos e selecione a propriedade que você está interessado. Por exemplo, você pode usar a propriedade **skills** na coleção de usuários.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/?$select=skills
+```
+
+Como a propriedade **skills** é armazenada fora do Azure AD, a seguinte é a resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 501 Not Implemented
+Content-type: application/json
+
+{
+    "error": {
+        "code": "NotImplemented",
+        "message": "This operation target is not yet supported.",
+        "innerError": {
+            "request-id": "...",
+            "date": "2019-09-20T21:47:50"
+        }
+    }
+}
+```
+
+Isso informa que não há suporte para a propriedade **skills** para a consulta Delta no recurso **user**.
+
+#### <a name="navigation-properties"></a>Propriedades de navegação
+
+Não há suporte para propriedades de navegação. Por exemplo, você não pode controlar alterações na coleção de usuários que incluiriam alterações na propriedade **photo**; **photo** é uma propriedade de navegação armazenada fora da entidade do usuário, e as alterações feitas nela não fazem com que o objeto de usuário seja incluído na resposta Delta.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
