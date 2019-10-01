@@ -1,25 +1,37 @@
 ---
 author: JeremyKelley
-description: O recurso hash agrupa hashes disponíveis em uma estrutura simples para um item.
+description: O recurso hash agrupa hashes disponíveis em uma estrutura única para um item.
 ms.date: 09/10/2017
 title: Hashes
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e2e61e6fbc5e6ff92c91eb2ffd408e6d4c7c41c0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b620170cf05e8e04cb4368874ea20d29c5440298
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006392"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333245"
 ---
-# <a name="hashes-resource-type"></a>Tipo de recurso de hashes
+# <a name="hashes-resource-type"></a>tipo de recurso hashes
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **hash** agrupa hashes disponíveis em uma estrutura simples para um item.
+Agrupa hashes disponíveis em uma estrutura única para um item.
 
-**Observação:** Nem todos os serviços fornecem um valor para todas as propriedades de hash listadas.
+> [!NOTE]
+> Nem todos os serviços fornecem um valor para todas as propriedades de hash listadas. No OneDrive for Business e no SharePoint Server 2016, **sha1Hash**, **crc32Hash**e **sha256Hash** não estão disponíveis. No OneDrive Personal, o **quickXorHash** não está disponível.
+
+## <a name="properties"></a>Propriedades
+
+| Propriedade         | Tipo   | Descrição                                                       |
+|:-----------------|:-------|:------------------------------------------------------------------|
+| **sha1Hash**     | String | Hash SHA1 para o conteúdo do arquivo (se disponível). Somente leitura. |
+| **sha256Hash**   | String | O hash SHA256 para o conteúdo do arquivo (se disponível). Somente leitura. |
+| **crc32Hash**    | String | O valor de CRC32 do arquivo (se disponível). Somente leitura.            |
+| **quickXorHash** | String | Um hash de proprietário do arquivo que pode ser usado para determinar se o conteúdo do arquivo foi alterado (se disponível). Somente leitura. |
+
+> **Observação:** Nos casos em que os valores de hash não estiverem disponíveis, os valores de hash em um item serão atualizados após o download do item.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -35,29 +47,15 @@ Veja a seguir uma representação JSON do recurso.
 {
   "crc32Hash": "string (hex)",
   "sha1Hash": "string (hex)",
+  "sha256Hash": "string (hex)",
   "quickXorHash": "string (base64)"
 }
 ```
 
-## <a name="properties"></a>Propriedades
+## <a name="see-also"></a>Confira também
 
-| Propriedade         | Tipo   | Descrição                                                       |
-|:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | Hash SHA1 para o conteúdo do arquivo (se disponível). Somente leitura. |
-| **crc32Hash**    | String | O valor de CRC32 do arquivo (se disponível). Somente leitura.            |
-| **quickXorHash** | String | Um hash de proprietário do arquivo que pode ser usado para determinar se o conteúdo do arquivo foi alterado (se disponível). Somente leitura. |
-
-**Observação:** Em alguns casos, os valores de hash podem não estar disponíveis. Nesse caso, os valores de hash em um item serão atualizados depois que o item for baixado.
-
-## <a name="remarks"></a>Comentários
-
-No OneDrive for Business e no SharePoint Server 2016, **sha1Hash** e **crc32Hash** não estão disponíveis.
-
-No OneDrive Personal, o **quickXorHash** não está disponível.
-
-Para calcular o **quickXorHash** de um arquivo, consulte o [trecho de código QuickXorHash](https://dev.onedrive.com/snippets/quickxorhash.htm).
-
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+- Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+- Para calcular o **quickXorHash** de um arquivo, confira o [trecho de código QuickXorHash](https://dev.onedrive.com/snippets/quickxorhash.htm).
 
 
 <!--

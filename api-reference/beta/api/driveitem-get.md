@@ -6,12 +6,12 @@ title: obter um arquivo ou uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7c85c3400bc4356258bd1f947525e54a042a35d1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0f7aee77c2a3a97bef8c67789d2a88d14ad0a62f
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719371"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333210"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 
@@ -52,6 +52,10 @@ Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-pa
 
 É possível usar o parâmetro de cadeia de caracteres de consulta [`$expand` ](/graph/query-parameters) para incluir os filhos de um item na mesma chamada de recuperação de metadados de um item se item tiver um relacionamento **children**.
 
+Você também pode usar o `includeDeletedItems=true` parâmetro de consulta para retornar itens excluídos.
+Esse parâmetro de consulta só é válido ao direcionar um [driveItem](../resources/driveitem.md) por ID e, caso contrário, será ignorado.
+No momento, isso só tem suporte no OneDrive Personal.
+
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
 | Nome          | Valor  | Descrição                                                                                                                                              |
@@ -83,7 +87,7 @@ GET /me/drive/root
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

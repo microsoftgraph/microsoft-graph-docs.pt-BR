@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: a29afea30f0ea1d75f5c7ce1a0713976f10cc298
-ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
+ms.openlocfilehash: 0d11230402d95009e414c16962a2eb9b5dce1f58
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36677117"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333362"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -32,9 +32,8 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |[Criar chat em um chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Envie uma mensagem de chat em uma conversa existente de chat de grupo ou 1:1.|
 |[Listar chatMessages em um chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Listar mensagens de chat em um bate-papo de grupo ou 1:1. |
 |[Obter chat no chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Obter uma única mensagem de chat em um chat. |
-|[Listar todas as imagens hospedadas](../api/chatmessagehostedimage-list-hostedimages.md) | coleção [hostedImage](../resources/chatmessagehostedimage.md)| Obter todas as imagens hospedadas em uma mensagem de chat.|
-|[Obter imagem hospedada](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | Obter uma imagem hospedada de uma mensagem de chat.|
-|[Obter bytes de imagem hospedado](../api/chatmessagehostedimage-getbytes.md) | dados de imagem binária | Obter dados de imagem binária de uma imagem hospedada de uma mensagem de chat.|
+|[Listar todo o conteúdo hospedado](../api/chatmessage-list-chatmessagehostedcontents.md) | coleção [chatMessageHostedContent](../resources/chatmessagehostedcontent.md)| Obter todo o conteúdo hospedado em uma mensagem de chat.|
+|[Obter conteúdo hospedado](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Obter conteúdo hospedado de uma mensagem de chat.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -48,7 +47,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem de chat foi criada.|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem de chat é criada ou editada, incluindo quando uma resposta é feita (se é uma mensagem de chat raiz em um canal) ou uma reação é adicionada ou removida. |
 |deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora em que a mensagem de chat foi excluída ou nula se não for excluída. |
-|subject|string| O assunto da mensagem de chat, em texto não criptografado.|
+|assunto|string| O assunto da mensagem de chat, em texto não criptografado.|
 |corpo|[itemBody](itembody.md)|Representação de texto não criptografado/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver um [chatMessageMention](chatmessagemention.md). |
 |summary|string| Texto de resumo da mensagem de chat que pode ser usado para notificações por push e visualizações de resumo ou exibições de retorno. Aplica-se somente a mensagens de chat de canal, e não a mensagens de chat em um chat. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |

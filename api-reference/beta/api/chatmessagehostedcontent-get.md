@@ -2,15 +2,15 @@
 title: Obter chatMessageHostedContent
 description: Recupere as propriedades e os relacionamentos do objeto chatMessageHostedContent.
 localization_priority: Normal
-author: RamjotSingh
+author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 899a2c7e2f829f296cd55f420dddbb9079d53890
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e15f8aa932e2534b80fbee0c7d00d759191bc42d
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719798"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333217"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Obter chatMessageHostedContent
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Chat. Read, chat. ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+|Delegado (conta corporativa ou de estudante)|Para o **usuário** ou recurso de **chat** :<br/>Chat. Read, chat. ReadWrite<br/><br/>Para o recurso de **canal** :<br/>Group.Read.All, Group.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte|
+|Aplicativo| Para o **usuário** ou recurso de **chat** :<br/>Chat. Read. All, chat. ReadWrite. All<br/><br/>Para o recurso de **canal** :<br/>Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -35,6 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /chats/{id}/messages/{id}/hostedContents/{id}
 GET /users/{id}/chats/{id}/messages/{id}/hostedContents/{id}
+GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -57,7 +58,9 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e o obj
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-get-hosted-content"></a>Exemplo 1: obter conteúdo hospedado
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -78,14 +81,13 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -105,6 +107,32 @@ Content-type: application/json
 {
   "id": "id-value"
 }
+```
+
+### <a name="example-2-get-hosted-content-bytes-for-an-image"></a>Exemplo 2: obter bytes de conteúdo hospedados para uma imagem
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagehostedcontent"
+}-->
+```http
+GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessageHostedContent"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: image/jpeg
+Content-length: 201
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -6,12 +6,12 @@ title: Upload de arquivos retomável
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 182a03c3ad95f4d2223c437ef667b2c27aaa7d71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3d8cee638105339f5e84ac229c2c9c81a2eb65a3
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957189"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333203"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -64,6 +64,7 @@ Por exemplo, a `item` propriedade permite definir os seguintes parâmetros:
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
   "description": "description",
+  "fileSize": 1234,
   "name": "filename.txt"
 }
 ```
@@ -90,15 +91,8 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já tiver sido 
 
 | Parâmetro            | Tipo                          | Descrição
 |:---------------------|:------------------------------|:---------------------------------
-| item                 | driveItemUploadableProperties | Dados sobre o arquivo que está sendo carregado
+| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Dados sobre o arquivo que está sendo carregado
 | deferCommit          | Booliano                       | Se for definido como true, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
-
-## <a name="item-properties"></a>Propriedades do item
-
-| Propriedade             | Tipo               | Descrição
-|:---------------------|:-------------------|:---------------------------------
-| description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal.
-| name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 
 ### <a name="request"></a>Solicitação
 
@@ -124,6 +118,8 @@ Content-Type: application/json
 A resposta a essa solicitação, se tiver êxito, fornecerá os detalhes sobre o local para onde o restante das solicitações deve ser enviado como um recurso [UploadSession](../resources/uploadsession.md).
 
 Esse recurso fornece detalhes sobre onde o intervalo de bytes do arquivo deve ser carregado e quando a sessão de carregamento expira.
+
+Se o `fileSize` parâmetro for especificado e exceder a cota disponível, `507 Insufficent Storage` uma resposta será retornada e a sessão de upload não será criada.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -216,7 +212,11 @@ Content-Type: application/json
 ## <a name="completing-a-file"></a>Concluindo um arquivo
 
 Se `deferCommit` for false ou indefinida, o carregamento será concluído automaticamente quando o intervalo de bytes final do arquivo for colocado na URL de upload.
-Se `deferCommit` for true, depois que o intervalo de bytes final do arquivo for colocado na URL de upload, o carregamento deverá ser explicitamente concluído por uma solicitação post final para a URL de carregamento com conteúdo de comprimento zero.
+
+Se `deferCommit` for true, você poderá concluir o carregamento explicitamente de duas maneiras:
+- Depois que o intervalo de bytes final do arquivo é colocado na URL de upload, envie uma solicitação POST final para a URL de upload com conteúdo de comprimento zero (atualmente, só é compatível com o OneDrive for Business e o SharePoint).
+- Depois que o intervalo de bytes final do arquivo é colocado na URL de upload, envie uma solicitação PUT final da mesma maneira que você [lida com os erros de carregamento](#handle-upload-errors) (atualmente, só há suporte no onedrive Personal).
+
 
 Quando o upload estiver concluído, o servidor responderá à solicitação final com um `HTTP 201 Created` ou. `HTTP 200 OK`
 O corpo da resposta também incluirá o conjunto de propriedades padrão para o **driveItem** que representa o arquivo concluído.
@@ -356,7 +356,7 @@ Para indicar que o aplicativo está confirmando uma sessão de carregamento exis
 <!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
-PUT /me/drive/root:/{path_to_parent}
+PUT /me/drive/root:/{path_to_file}
 Content-Type: application/json
 If-Match: {etag or ctag}
 

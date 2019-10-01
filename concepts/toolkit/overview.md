@@ -3,12 +3,12 @@ title: Kit de ferramentas do Microsoft Graph
 description: O kit de ferramentas do Microsoft Graph é uma coleção de resuable, componentes da Web e auxiliares de estrutura independente para acessar e trabalhar com o Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 2b8a7b3b93407410f31b17253f070065b6800b98
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: f777a6ecd0b7b936c5dad6859ac13b2f9f211ac6
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275826"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333288"
 ---
 # <a name="microsoft-graph-toolkit"></a>Kit de ferramentas do Microsoft Graph
 
@@ -20,13 +20,13 @@ O Microsoft Graph Toolkit é um ótimo recurso para qualquer desenvolvedor que d
 
 Você pode usar os componentes referenciando o carregador diretamente (via unpkg) ou instalando o pacote do NPM.
 
-![Introdução](/images/get-started.gif)
+![GIF animado que mostra a referência do carregador para usar os componentes do kit de ferramentas](images/get-started.gif)
 
 Para obter detalhes sobre como começar a usar o kit de ferramentas do Microsoft Graph, consulte o [vídeo](https://www.youtube.com/watch?v=oZCGb2MMxa0)introdução.
 
 ### <a name="use-via-mgt-loader"></a>Usar via gerenciamento-carregador
 
-Consulte o exemplo do seguintes [jsfiddle](https://jsfiddle.net/metulev/9phqxLd5/).
+Confira o [exemplo](https://jsfiddle.net/metulev/9phqxLd5/)a seguir jsfiddle.
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -75,7 +75,7 @@ Da mesma forma, para adicionar um provedor, você pode adicioná-lo como um comp
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 ```
 
-ou, adicione-o em seu código:
+Ou, adicione-o em seu código:
 
 ```html
 <script type="module">

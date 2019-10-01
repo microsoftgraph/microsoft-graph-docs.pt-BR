@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 93c73fa61c871afce4ce4c7ed00e3c1ef554ca79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd3b7cd4271f631526a9ba098cd1f6a09f79fe6f
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972968"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333301"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -60,6 +60,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
+  "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
   "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
@@ -123,6 +124,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | nome                 | Cadeia de caracteres             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
+| pendingOperations    | [pendingOperations][] | Se presente, indica que uma ou mais operações que podem afetar o estado de driveItem estão aguardando conclusão. Somente leitura.
 | Foto                | [photo][]          | Metadados de foto, se o item for uma foto. Somente leitura.
 | publication          | [publicationFacet][] | Fornece informações sobre o estado de publicação ou de check-out de um item, nos locais que oferecem suporte a essas ações. Esta propriedade não retorna por padrão. Somente leitura. |
 | remoteItem           | [remoteItem][]     | Dados do item remoto, se o item for compartilhado de uma unidade diferente daquela que está sendo acessada. Somente leitura.
@@ -184,6 +186,7 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 | [Baixar conteúdo](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
 | [Baixar o formato de arquivo específico][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [Excluir item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
+| [Restaurar item](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
 | [Mover item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
 | [Copiar item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Pesquisar itens](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
@@ -225,6 +228,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [listItem]: listitem.md
 [package]: package.md
 [permission]: permission.md
+[pendingOperations]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
 [root]: root.md
