@@ -1,16 +1,16 @@
 ---
 title: Criar mdmWindowsInformationProtectionPolicy
 description: Cria um novo objeto mdmWindowsInformationProtectionPolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d98dec719cb36f6ac78200ff80dccb9ec74a1604
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d72ffb728bef669c3b30cd494c56d670478e49f4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974875"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363357"
 ---
 # <a name="create-mdmwindowsinformationprotectionpolicy"></a>Criar mdmWindowsInformationProtectionPolicy
 
@@ -353,6 +353,7 @@ Content-Length: 4077
   "isAssigned": true
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Ação desativar
 description: Desativa um dispositivo
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 965f77bcfd8b9eb4416338bfb4bdbfece337c9a7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7231ccd8a67f08ec26e01c25e551500f0643cb86
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018705"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364309"
 ---
 # <a name="retire-action"></a>Ação retire
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Ação deleteUserFromSharedAppleDevice
 description: Excluir o usuário do dispositivo compartilhado da Apple
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4abbae5e1ca234c51331cf77368a53a15a64aede
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7ea0c947f178de3e3af85c97b7c5662a9e666f13
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996921"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364428"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Ação deleteUserFromSharedAppleDevice
 
@@ -78,6 +78,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

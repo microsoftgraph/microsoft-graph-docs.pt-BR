@@ -1,16 +1,16 @@
 ---
 title: Atualizar targetedManagedAppPolicyAssignment
 description: Atualizar as propriedades de um objeto targetedManagedAppPolicyAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2beaa0f25b5000eb02fdc4942a63b66e58f8549d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bbe5aa2cbc69870950844245aedc2adda7f4dd64
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018110"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363161"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Atualizar targetedManagedAppPolicyAssignment
 
@@ -93,6 +93,7 @@ Content-Length: 223
   }
 }
 ```
+
 
 
 

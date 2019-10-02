@@ -1,16 +1,16 @@
 ---
 title: Excluir resourceOperation
 description: Exclui resourceOperation
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b6d5df37c8729e5da4662038cca7fc6faeae9d6b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc7265ecb4c1b1105e3c3fb7945ccc73844b2424
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023794"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361872"
 ---
 # <a name="delete-resourceoperation"></a>Excluir resourceOperation
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Obter vppToken
 description: Ler propriedades e relações de objetos vppToken.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ab5fce07679dbfdacb22d62e59b08f8b9febe54
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 368a858879510c855eeec6b64049eb44d50824a9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023955"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362110"
 ---
 # <a name="get-vpptoken"></a>Obter vppToken
 
@@ -84,6 +84,7 @@ Content-Length: 619
   }
 }
 ```
+
 
 
 

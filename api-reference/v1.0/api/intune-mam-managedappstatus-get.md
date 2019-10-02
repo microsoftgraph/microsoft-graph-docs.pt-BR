@@ -1,16 +1,16 @@
 ---
 title: Get managedAppStatus
 description: Ler propriedades e relações do objeto managedAppStatus.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ddded76243416d11f5d39d17e4ec4e27cdcc227
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 90a4bde06d67a28891ce68dc2b38cd9c0eece873
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996669"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363518"
 ---
 # <a name="get-managedappstatus"></a>Get managedAppStatus
 
@@ -75,6 +75,7 @@ Content-Length: 205
   }
 }
 ```
+
 
 
 

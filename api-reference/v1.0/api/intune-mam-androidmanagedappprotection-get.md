@@ -1,16 +1,16 @@
 ---
 title: Get androidManagedAppProtection
 description: Ler propriedades e relações do objeto androidManagedAppProtection.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36f5b08fbccddbef03e6227600b025857965702f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b1a63ea33922e2e4d624e1917adc077f8b201b57
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018509"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363987"
 ---
 # <a name="get-androidmanagedappprotection"></a>Get androidManagedAppProtection
 
@@ -113,6 +113,7 @@ Content-Length: 1967
   }
 }
 ```
+
 
 
 

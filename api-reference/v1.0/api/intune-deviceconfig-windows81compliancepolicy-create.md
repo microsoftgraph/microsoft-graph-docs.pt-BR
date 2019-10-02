@@ -1,16 +1,16 @@
 ---
 title: Criar windows81CompliancePolicy
 description: Cria um novo objeto windows81CompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a141025a592a322dec6cd5ba5aeb802c04878f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d40b3060a1a81e57271fe73b6480ac586da30380
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020063"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365114"
 ---
 # <a name="create-windows81compliancepolicy"></a>Criar windows81CompliancePolicy
 
@@ -128,6 +128,7 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar onPremisesConditionalAccessSettings
 description: Atualizar as propriedades de um objeto onPremisesConditionalAccessSettings.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e77767900b40fc3f921d9d3ffd34fd6930bf19c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4230554551d67b51a0d79d53a578508340784933
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024081"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362180"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>Atualizar onPremisesConditionalAccessSettings
 
@@ -102,6 +102,7 @@ Content-Length: 324
   "overrideDefaultRule": true
 }
 ```
+
 
 
 

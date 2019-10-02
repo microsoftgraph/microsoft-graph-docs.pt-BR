@@ -1,16 +1,16 @@
 ---
 title: Listar deviceEnrollmentLimitConfigurations
 description: Listar propriedades e relações de objetos de deviceEnrollmentLimitConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 01f1dff263a5b612b92d403c730f1dbf4e29e317
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6392e09483ecb21d72e0df1079530cf84ab06b4c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974749"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362657"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>Listar deviceEnrollmentLimitConfigurations
 
@@ -79,6 +79,7 @@ Content-Length: 446
   ]
 }
 ```
+
 
 
 

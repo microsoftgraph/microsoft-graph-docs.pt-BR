@@ -1,16 +1,16 @@
 ---
 title: Get windows10TeamGeneralConfiguration
 description: Ler propriedades e relações do objeto windows10TeamGeneralConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 13de8d61d2cf1baa60173ee4e59f16666c40cebd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c10ffa4fad90400094781eaaa88f97d4b5c79e1a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997159"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365209"
 ---
 # <a name="get-windows10teamgeneralconfiguration"></a>Get windows10TeamGeneralConfiguration
 
@@ -98,6 +98,7 @@ Content-Length: 1395
   }
 }
 ```
+
 
 
 

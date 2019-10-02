@@ -1,16 +1,16 @@
 ---
 title: Get managedAppRegistration
 description: Ler propriedades e relações do objeto managedAppRegistration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c96b05f678cb49792b535954fc17dc88331bed8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 780e312ac5acb91ff9af2b8590e8dd1d8d539acd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996690"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363523"
 ---
 # <a name="get-managedappregistration"></a>Get managedAppRegistration
 
@@ -89,6 +89,7 @@ Content-Length: 756
   }
 }
 ```
+
 
 
 

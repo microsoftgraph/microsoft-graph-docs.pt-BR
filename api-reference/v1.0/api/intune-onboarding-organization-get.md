@@ -1,16 +1,16 @@
 ---
 title: Obter organização
 description: Leia as propriedades e as relações do objeto organização.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aff072faf46d27a1668dd6b38aab8ea6d2077934
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d69d6cbd032cab968dda06c6f70f43e508e51e5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024060"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362166"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -74,6 +74,7 @@ Content-Length: 176
   }
 }
 ```
+
 
 
 

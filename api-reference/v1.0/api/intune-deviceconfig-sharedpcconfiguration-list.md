@@ -1,16 +1,16 @@
 ---
 title: Listar sharedPCConfigurations
 description: Listar propriedades e relações dos objetos sharedPCConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c8f120e1f539ee94ef3c42f9b8c8e9191f651a3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bdfe8763708b3232c335371f120c08d2b5038ae9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017039"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365737"
 ---
 # <a name="list-sharedpcconfigurations"></a>Listar sharedPCConfigurations
 
@@ -95,6 +95,7 @@ Content-Length: 1165
   ]
 }
 ```
+
 
 
 

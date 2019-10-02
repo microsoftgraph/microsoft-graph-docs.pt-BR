@@ -1,16 +1,16 @@
 ---
 title: Excluir windowsPhone81GeneralConfiguration
 description: Exclui windowsPhone81GeneralConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 06a9782aafd6f115f05cf2a1c68690674fb5b1f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0db51aa1d6b18cc16ca7790e81127c43dc2aa400
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018733"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364778"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>Excluir windowsPhone81GeneralConfiguration
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

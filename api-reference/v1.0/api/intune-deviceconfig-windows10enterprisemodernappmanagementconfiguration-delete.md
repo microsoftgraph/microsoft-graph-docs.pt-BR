@@ -1,16 +1,16 @@
 ---
 title: Excluir windows10EnterpriseModernAppManagementConfiguration
 description: Exclui windows10EnterpriseModernAppManagementConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f9f632d6be721e3361df9ede75a84ed603e43f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3bcb5a9d9a960395e46bab0ebb8f23d4f346cccf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020217"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365464"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>Excluir windows10EnterpriseModernAppManagementConfiguration
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

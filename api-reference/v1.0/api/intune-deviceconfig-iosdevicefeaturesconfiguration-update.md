@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosDeviceFeaturesConfiguration
 description: Atualizar as propriedades de um objeto iosDeviceFeaturesConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed9a46b84cb7f7e48c1bef3e93099a609cd064a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 562a7c1f3d509780b5750a2061963b2304fd6094
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017284"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366346"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>Atualizar iosDeviceFeaturesConfiguration
 
@@ -220,6 +220,7 @@ Content-Length: 2160
   ]
 }
 ```
+
 
 
 

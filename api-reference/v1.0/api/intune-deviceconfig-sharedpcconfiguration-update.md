@@ -1,16 +1,16 @@
 ---
 title: Atualizar sharedPCConfiguration
 description: Atualiza as propriedades de um objeto sharedPCConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 319030b7fffd0f56e1df16d5b201c9b52c776d26
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 10befe0400c9cbfe287041226328ca9081ec16d5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997369"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365723"
 ---
 # <a name="update-sharedpcconfiguration"></a>Atualizar sharedPCConfiguration
 
@@ -143,6 +143,7 @@ Content-Length: 1032
   "maintenanceStartTime": "11:59:24.7240000"
 }
 ```
+
 
 
 

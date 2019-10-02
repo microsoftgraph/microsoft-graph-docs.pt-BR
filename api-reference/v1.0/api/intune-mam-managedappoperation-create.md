@@ -1,16 +1,16 @@
 ---
 title: Criar managedAppOperation
 description: Criar um novo objeto managedAppOperation.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f44e085da304958fa67eef4f8ce566be1245e12
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 840f9c08990107b25da6d6be1cce024f2f0f7f7e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996781"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363707"
 ---
 # <a name="create-managedappoperation"></a>Criar managedAppOperation
 
@@ -93,6 +93,7 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
 
 
 

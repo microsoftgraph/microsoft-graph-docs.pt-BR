@@ -1,16 +1,16 @@
 ---
 title: Ação desconectar
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 84fae520e9e60f5227981aefbdb04820b38d71b4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd933189981b4a4c443cba1930aa4b4feb8ff222
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023591"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361634"
 ---
 # <a name="disconnect-action"></a>Ação disconnect
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

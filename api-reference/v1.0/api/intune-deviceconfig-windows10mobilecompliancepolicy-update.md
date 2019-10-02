@@ -1,16 +1,16 @@
 ---
 title: Atualizar windows10MobileCompliancePolicy
 description: Atualiza as propriedades de um objeto windows10MobileCompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 239015668c79bbc94f9ca4f3632f41ce18553eb3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b1ad8acb09b76f81addf5f499d0a3233572f234
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020133"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365268"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>Atualizar windows10MobileCompliancePolicy
 
@@ -143,6 +143,7 @@ Content-Length: 964
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

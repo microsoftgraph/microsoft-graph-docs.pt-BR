@@ -1,16 +1,16 @@
 ---
 title: Acessar windowsPhone81CustomConfiguration
 description: Leia as propriedades e as relações do objeto windowsPhone81CustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d236a1ee41b15c4b44c775f8a041c66aada394e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e520d7492c07fb194381dd4a651819ec7e73440
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997040"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364820"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>Acessar windowsPhone81CustomConfiguration
 
@@ -87,6 +87,7 @@ Content-Length: 632
   }
 }
 ```
+
 
 
 

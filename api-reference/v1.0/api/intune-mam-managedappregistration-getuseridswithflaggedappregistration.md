@@ -1,16 +1,16 @@
 ---
 title: função getUserIdsWithFlaggedAppRegistration
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b5d2f59e78b4e4ed5a3fd91769d35d9bf6dab6da
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 78e763abeedb14a4083ec1602a91408d383f22da
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996676"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363511"
 ---
 # <a name="getuseridswithflaggedappregistration-function"></a>função getUserIdsWithFlaggedAppRegistration
 
@@ -69,6 +69,7 @@ Content-Length: 79
   ]
 }
 ```
+
 
 
 

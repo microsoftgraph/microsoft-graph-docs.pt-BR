@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosUpdateConfiguration
 description: Atualizar as propriedades de um objeto iosUpdateConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c59b6e7a5ce2b9b0e16d1a54066f61bbec62386
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 16d9a09d4e68bfe820017622975d11fb1360b2f4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997558"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366213"
 ---
 # <a name="update-iosupdateconfiguration"></a>Atualizar iosUpdateConfiguration
 
@@ -111,6 +111,7 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
 
 
 

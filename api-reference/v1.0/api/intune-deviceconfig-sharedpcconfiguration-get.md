@@ -1,16 +1,16 @@
 ---
 title: Acessar sharedPCConfiguration
 description: Leia as propriedades e relações do objeto sharedPCConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14742b16d7133cccc00497eb58e8b4f1f3e84995
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a76709e16d4859b202c7fe0ca8e167aa962672e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997362"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365751"
 ---
 # <a name="get-sharedpcconfiguration"></a>Acessar sharedPCConfiguration
 
@@ -96,6 +96,7 @@ Content-Length: 1101
   }
 }
 ```
+
 
 
 

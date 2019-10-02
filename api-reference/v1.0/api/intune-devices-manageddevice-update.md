@@ -1,16 +1,16 @@
 ---
 title: Atualizar managedDevice
 description: Atualizar as propriedades de um objeto managedDevice.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48a4b1d8325f53b7a0a88f375257423526cbb170
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 577871f0d2dbe0e4e90b3fff4175321c5d958f54
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018593"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364267"
 ---
 # <a name="update-manageddevice"></a>Atualizar managedDevice
 
@@ -322,6 +322,7 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
+
 
 
 

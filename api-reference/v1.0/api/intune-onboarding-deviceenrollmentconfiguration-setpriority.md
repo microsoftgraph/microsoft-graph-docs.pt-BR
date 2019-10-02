@@ -1,16 +1,16 @@
 ---
 title: Ação setPriority
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a643bea715df527de54be90126b47ffc76632ca5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d331eda2f4a3e8e38522541ab9cbb15f35909cd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974756"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362720"
 ---
 # <a name="setpriority-action"></a>ação setPriority
 
@@ -76,6 +76,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

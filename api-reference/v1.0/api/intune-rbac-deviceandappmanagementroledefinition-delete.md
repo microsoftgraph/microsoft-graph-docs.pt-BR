@@ -1,16 +1,16 @@
 ---
 title: Excluir deviceAndAppManagementRoleDefinition
 description: Exclui deviceAndAppManagementRoleDefinition.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b43bb6101a66c290505100f2e71de9c4bd39445
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1097d5dbb63217401f07c3b6d1d25bda808d9124
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023864"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361928"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>Excluir deviceAndAppManagementRoleDefinition
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

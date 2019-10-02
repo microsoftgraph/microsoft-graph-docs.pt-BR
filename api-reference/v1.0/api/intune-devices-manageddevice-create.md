@@ -1,16 +1,16 @@
 ---
 title: Criar managedDevice
 description: Criar um novo objeto managedDevice.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 766274595966daeeb00b0802a92bb61c55a32e1f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6cb6f58d7a06222ad557945adda8e20eefb64065
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018691"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364491"
 ---
 # <a name="create-manageddevice"></a>Criar managedDevice
 
@@ -322,6 +322,7 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
+
 
 
 

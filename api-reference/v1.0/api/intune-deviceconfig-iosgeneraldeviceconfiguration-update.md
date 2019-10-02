@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosGeneralDeviceConfiguration
 description: Atualizar as propriedades de um objeto iosGeneralDeviceConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a3303ae1c88591891f2bf4d32ae2e0cd53ff239
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be35c1e05cece1cb318a4d540081e116ff9d5fcb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017263"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366283"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Atualizar iosGeneralDeviceConfiguration
 
@@ -650,6 +650,7 @@ Content-Length: 8013
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Acessar windows10CompliancePolicy
 description: Leia as propriedades e as relações do objeto windows10CompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3cb099aebf0263c196f798c770d865bba87a43d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86cbb51ea82e554215f82978d6d922237f26539a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017004"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365639"
 ---
 # <a name="get-windows10compliancepolicy"></a>Acessar windows10CompliancePolicy
 
@@ -97,6 +97,7 @@ Content-Length: 1197
   }
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Ação wipe
 description: Apagar um dispositivo
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d9bf6cfae1182bf9e63317db09843b86ee1a42c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 56d29523f42f1948548bc9a3c16fd988a32ae6c4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020875"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364225"
 ---
 # <a name="wipe-action"></a>ação wipe
 
@@ -82,6 +82,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

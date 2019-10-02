@@ -1,16 +1,16 @@
 ---
 title: Criar detectedApp
 description: Criar um novo objeto detectedApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f7f0c88f63c3ff6e2dd3cad8586df6b96625e7b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81eafad351604335d125bc01d7f314aa7a19b02c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021057"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364596"
 ---
 # <a name="create-detectedapp"></a>Criar detectedApp
 
@@ -94,6 +94,7 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
 
 
 

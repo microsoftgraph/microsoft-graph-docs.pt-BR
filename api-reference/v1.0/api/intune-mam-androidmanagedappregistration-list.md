@@ -1,16 +1,16 @@
 ---
 title: Listar androidManagedAppRegistrations
 description: Listar propriedades e relações dos objetos androidManagedAppRegistration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e2bc14415b22bbb5bbd7e9db8fb5bf6e4dd2962e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a86a118dbf84c14786a2a5e390cf6417fc8fedf0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020749"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363917"
 ---
 # <a name="list-androidmanagedappregistrations"></a>Listar androidManagedAppRegistrations
 
@@ -89,6 +89,7 @@ Content-Length: 862
   ]
 }
 ```
+
 
 
 

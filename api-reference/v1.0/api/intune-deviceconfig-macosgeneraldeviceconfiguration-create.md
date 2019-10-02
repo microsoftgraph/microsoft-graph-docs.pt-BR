@@ -1,16 +1,16 @@
 ---
 title: Criar macOSGeneralDeviceConfiguration
 description: Cria um novo objeto macOSGeneralDeviceConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e69f60508ae7e82c071024f0a703141c78200a1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 842a6ecb621ea3d68c8adc307ddde28c182cd487
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017123"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365926"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Criar macOSGeneralDeviceConfiguration
 
@@ -151,6 +151,7 @@ Content-Length: 1078
   "passwordRequired": true
 }
 ```
+
 
 
 

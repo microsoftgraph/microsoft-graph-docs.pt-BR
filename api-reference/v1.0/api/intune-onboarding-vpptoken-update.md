@@ -1,16 +1,16 @@
 ---
 title: Atualizar vppToken
 description: Atualizar as propriedades de um objeto vppToken.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a427a7ff1acdecef20ba7d1930cfe84f8538fd7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca7bd9b6a6ec7bf95c403834a9cb4e392ce3ad7c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023969"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362047"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
 
@@ -114,6 +114,7 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Listar vppTokens
 description: Lista propriedades e relações de objetos vppToken.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1441d870806e40b5cacd5c31e24c51aee903353e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2bd0571ba6c89ae3ad6396ed11142842fff8aff6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023948"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362068"
 ---
 # <a name="list-vpptokens"></a>Listar vppTokens
 
@@ -83,6 +83,7 @@ Content-Length: 659
   ]
 }
 ```
+
 
 
 

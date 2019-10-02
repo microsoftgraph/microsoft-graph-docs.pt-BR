@@ -1,16 +1,16 @@
 ---
 title: função autopilotDeviceStream
 description: Crie uma solicitação de upload com o fluxo de dispositivo do AutoPilot nele.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ab33dab66b8d9b57a57d8521ea8b27728c8037e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b90efa561dcfef5b635b3f7c81e22be17282ea7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018516"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364099"
 ---
 # <a name="autopilotdevicestream-function"></a>função autopilotDeviceStream
 
@@ -67,6 +67,7 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
+
 
 
 

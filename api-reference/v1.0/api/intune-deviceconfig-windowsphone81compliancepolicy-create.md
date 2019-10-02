@@ -1,16 +1,16 @@
 ---
 title: Criar windowsPhone81CompliancePolicy
 description: Cria um novo objeto windowsPhone81CompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a41ff2bb58ad3e13b21a6034045ebb0c7a62d48e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a860df4e769cbec81ce9e521d943f207ad8d963b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018845"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364897"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>Criar windowsPhone81CompliancePolicy
 
@@ -128,6 +128,7 @@ Content-Length: 779
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

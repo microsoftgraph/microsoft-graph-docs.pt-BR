@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceAndAppManagementRoleDefinition
 description: Atualizar as propriedades de um objeto deviceAndAppManagementRoleDefinition.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e340a773a923dd65cf9f7e24661000a1dde5d82
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 773daf660c3b8f76d71c89f10a285b973f537647
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023815"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361942"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>Atualizar deviceAndAppManagementRoleDefinition
 
@@ -125,6 +125,7 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Get enrollmentConfigurationAssignment
 description: Ler propriedades e relações do objeto enrollmentConfigurationAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 18cb232f9a5bef40e56147efbb9035f98a0c55d4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 879bbb7c2780f1b12ca521693675782880f1ab87
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024123"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362285"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>Get enrollmentConfigurationAssignment
 
@@ -76,6 +76,7 @@ Content-Length: 251
   }
 }
 ```
+
 
 
 

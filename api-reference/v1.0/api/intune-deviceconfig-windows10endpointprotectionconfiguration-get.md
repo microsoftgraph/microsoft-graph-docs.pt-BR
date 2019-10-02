@@ -1,16 +1,16 @@
 ---
 title: Get windows10EndpointProtectionConfiguration
 description: Ler propriedades e relações do objeto windows10EndpointProtectionConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d7cafc02170ae94b8d9d4174a2b1ea8ea289fd7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20ebfbbb8319820b7761b5798f0efc149b7a4cb1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016909"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365520"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Get windows10EndpointProtectionConfiguration
 
@@ -167,6 +167,7 @@ Content-Length: 4628
   }
 }
 ```
+
 
 
 

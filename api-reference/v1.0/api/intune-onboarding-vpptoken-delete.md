@@ -1,16 +1,16 @@
 ---
 title: Excluir vppToken
 description: Exclui um vppToken.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d08bb46b3ab4ffa3012ad45405cb3e34ccc0b953
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70826066ed489f2e294ef2b173266edacfe7941c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023983"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362131"
 ---
 # <a name="delete-vpptoken"></a>Excluir vppToken
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

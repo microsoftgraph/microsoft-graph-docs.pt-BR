@@ -1,16 +1,16 @@
 ---
 title: Excluir windows10TeamGeneralConfiguration
 description: Exclui windows10TeamGeneralConfiguration
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 948ed7d6a09b16e53b443b70f398c6bf932dce7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a78c3805c24425651c65dba151d8d70d66a6b5aa
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020077"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365219"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>Excluir windows10TeamGeneralConfiguration
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

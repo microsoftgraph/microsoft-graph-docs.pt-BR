@@ -1,16 +1,16 @@
 ---
 title: Listar managedAppPolicies
 description: Listar propriedades e relações dos objetos managedAppPolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26aa16ac07115220215bc6b87588df9ce0ac930c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 025178990b71a175429bbae6bee4266d8f065877
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996739"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363623"
 ---
 # <a name="list-managedapppolicies"></a>Listar managedAppPolicies
 
@@ -79,6 +79,7 @@ Content-Length: 401
   ]
 }
 ```
+
 
 
 

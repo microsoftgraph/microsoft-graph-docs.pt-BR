@@ -1,16 +1,16 @@
 ---
 title: Atualizar windows10CustomConfiguration
 description: Atualizar as propriedades de um objeto windows10CustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4eef86737b84e8f282316b020b7b6ff51ce0ecb5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4067e25b8a97fbc57a5168c16ded515e9a6092e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016941"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365562"
 ---
 # <a name="update-windows10customconfiguration"></a>Atualizar windows10CustomConfiguration
 
@@ -114,6 +114,7 @@ Content-Length: 576
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Acessar roleDefinition
 description: Leia as propriedades e as relações do objeto roleDefinition.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64b9f0cb9c00ac631c45935e547387cc9e9bcd2d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 984b69a268e618acb12ff565d4e72a726b6d3c62
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025946"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361704"
 ---
 # <a name="get-roledefinition"></a>Acessar roleDefinition
 
@@ -93,6 +93,7 @@ Content-Length: 690
   }
 }
 ```
+
 
 
 

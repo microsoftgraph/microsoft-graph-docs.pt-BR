@@ -1,16 +1,16 @@
 ---
 title: Criar targetedManagedAppConfiguration
 description: Cria um novo objeto targetedManagedAppConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff469f57819db74f62ad0f300ecd13443be346ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28f226fe49161b78cbb092b4a35e4f96b221d6e4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996557"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363294"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>Criar targetedManagedAppConfiguration
 
@@ -116,6 +116,7 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
+
 
 
 

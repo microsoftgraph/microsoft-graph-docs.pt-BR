@@ -1,16 +1,16 @@
 ---
 title: Ação locateDevice
 description: Localizar um dispositivo
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5ad1606494373d5183df4e3b53efc670dfd7514
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 605995cac691e13e716c5b36576bed893befd917
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020973"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364393"
 ---
 # <a name="locatedevice-action"></a>Ação locateDevice
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

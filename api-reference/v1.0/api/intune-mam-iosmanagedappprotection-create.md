@@ -1,16 +1,16 @@
 ---
 title: Criar iosManagedAppProtection
 description: Cria um novo objeto iosManagedAppProtection.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0861481e25d0e87c9a96a28ae613dc9359a8e93
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dcbf582bb7150adb3f412a8055f17fc6e77e5898
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018390"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363833"
 ---
 # <a name="create-iosmanagedappprotection"></a>Criar iosManagedAppProtection
 
@@ -192,6 +192,7 @@ Content-Length: 1740
   "faceIdBlocked": true
 }
 ```
+
 
 
 

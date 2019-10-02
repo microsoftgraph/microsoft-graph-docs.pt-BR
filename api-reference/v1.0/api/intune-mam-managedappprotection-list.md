@@ -1,16 +1,16 @@
 ---
 title: Listar managedAppProtections
 description: Listar propriedades e relações dos objetos managedAppProtection.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5dbcbc7f8a653cd03287556f9bc9765ec8c3b88
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a284c6360151f25b013e9824122e321d47c34f59
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018201"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363553"
 ---
 # <a name="list-managedappprotections"></a>Listar managedAppProtections
 
@@ -107,6 +107,7 @@ Content-Length: 1715
   ]
 }
 ```
+
 
 
 

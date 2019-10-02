@@ -1,16 +1,16 @@
 ---
 title: Acessar remoteAssistancePartner
 description: Leia as propriedades e as relações do objeto remoteAssistancePartner.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e0cd11f4b5c6fd2a1ecbe765997139d7d71b4b96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6070c52c5b0df54f1f01c91c22d690e0111565bd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023570"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361613"
 ---
 # <a name="get-remoteassistancepartner"></a>Acessar remoteAssistancePartner
 
@@ -77,6 +77,7 @@ Content-Length: 346
   }
 }
 ```
+
 
 
 
