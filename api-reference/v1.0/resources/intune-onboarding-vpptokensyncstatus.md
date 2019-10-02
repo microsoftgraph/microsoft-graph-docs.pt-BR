@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração vppTokenSyncStatus
 description: Possíveis status de sincronização associados a um token do Apple Volume Purchase Program.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7af4ed87234dc588a9d0969d2ed347adaa4d29da
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5475a49341005b3c5d8037cc1697b84ce9be57f6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037223"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360682"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>tipo de enumeração vppTokenSyncStatus
 
@@ -25,6 +25,7 @@ Possíveis status de sincronização associados a um token do Apple Volume Purch
 |inProgress|1|Última sincronização em andamento.|
 |Completed|duas|Última sincronização concluída com êxito.|
 |falhou|3D|Falha na última sincronização.|
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Configuração de dispositivo no Microsoft Intune
 description: Use a carga de trabalho de configuração de dispositivo do Microsoft Intune para gerenciar configurações e recursos em todos os dispositivos que você gerencia.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 367e2eaa44187684ff241b9b2bc40a81c7729d6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3136a82dd8d93c44adf96261092873380d47e9e6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028739"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360339"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -182,3 +182,4 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Instalação agendada do Windows Update](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Tipo de atualização do Windows](intune-deviceconfig-windowsupdatetype.md)
 - [Configurações de controle da conta do usuário do Windows](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
+

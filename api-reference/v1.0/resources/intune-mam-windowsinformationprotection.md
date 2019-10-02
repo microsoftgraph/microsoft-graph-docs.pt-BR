@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsInformationProtection
 description: Política para proteção de informações do Windows para definir configurações de gerenciamento detalhadas
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ced8d1d3f74dda4a9e6df86253c66dedc17d7fee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bc169aaa519684b09a8f8a1976c4cb7b1d44a641
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037769"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360675"
 ---
 # <a name="windowsinformationprotection-resource-type"></a>Tipo de recurso windowsInformationProtection
 
@@ -204,6 +204,7 @@ Veja a seguir uma representação JSON do recurso.
   "isAssigned": true
 }
 ```
+
 
 
 

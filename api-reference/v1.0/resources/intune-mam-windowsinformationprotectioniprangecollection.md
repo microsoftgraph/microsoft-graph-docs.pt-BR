@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsInformationProtectionIPRangeCollection
 description: Coleção de intervalos de IP da Proteção de Informações do Windows
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9354704c5326e9f92814e06aee9ef12635c0faa5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1774a52b6dd5535443bb24dea5e786fc2c8cff34
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037685"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360640"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionIPRangeCollection
 
@@ -47,6 +47,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

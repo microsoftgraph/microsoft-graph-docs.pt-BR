@@ -1,16 +1,16 @@
 ---
 title: androidCompliancePolicy resource type
 description: Essa classe contém configurações de conformidade para o Android.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a37809f7e07a5fe26ad8bd8a727db82c8c3c3f0c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1cc9cae723242f24f87168b73f12a5c60c9b8b57
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028711"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360346"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy resource type
 
@@ -112,6 +112,7 @@ Veja a seguir uma representação JSON do recurso.
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
 
 
 

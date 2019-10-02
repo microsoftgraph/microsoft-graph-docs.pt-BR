@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosVppApp
 description: Contém propriedades e propriedades herdadas para aplicativos do Programa de compras por volume (VPP) do iOS.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5dcdc4be33764747e6af1ce322a14b9e341aaa71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca66ba3b406c1c22e4d9af2e5a672e62101b597a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032309"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360241"
 ---
 # <a name="iosvppapp-resource-type"></a>Tipo de recurso iosVppApp
 
@@ -113,6 +113,7 @@ Veja a seguir uma representação JSON do recurso.
   "bundleId": "String"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosVppAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel do iOS VPP a um grupo.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d35cd60b1e616f38b8c4c792f7bd766f550b62aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 883f81ab29dd2258d57753b792f0a4f1f434ed43
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029117"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360206"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Tipo de recurso iosVppAppAssignmentSettings
 
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "vpnConfigurationId": "String"
 }
 ```
+
 
 
 
