@@ -1,16 +1,16 @@
 ---
 title: Criar windowsInformationProtectionNetworkLearningSummary
 description: Criar um novo objeto windowsInformationProtectionNetworkLearningSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b1dd1d75aea70c7fae3a6d337288213747afd25
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1591e782fa816e9e3d43485e13e4f123a0fa641
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025607"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360934"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Criar windowsInformationProtectionNetworkLearningSummary
 
@@ -88,6 +88,7 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
 
 
 

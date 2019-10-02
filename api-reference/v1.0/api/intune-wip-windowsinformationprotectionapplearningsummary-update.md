@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsInformationProtectionAppLearningSummary
 description: Atualizar as propriedades de um objeto windowsInformationProtectionAppLearningSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88d3c49f25c511325b2a598db850b532fc982921
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20c86caed48499fc5df3a1c84254aec1ef5a4216
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023206"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360920"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Atualizar windowsInformationProtectionAppLearningSummary
 
@@ -91,6 +91,7 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
 
 
 
