@@ -1,16 +1,16 @@
 ---
 title: Obter telecomExpenseManagementPartner
 description: Ler propriedades de leitura e relações do objeto telecomExpenseManagementPartner.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bd24d1098722ba4411178f78b6fb11d57d49f71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af43f0615d15e067f8b6216a401a07b66f083217
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023381"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361168"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>Obter telecomExpenseManagementPartner
 
@@ -78,6 +78,7 @@ Content-Length: 330
   }
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Função getEffectivePermissions
 description: Recupera permissões efetivas de usuário autenticado no momento
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3609bb419b9fc7bf39074827915717428224443b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 407d1aba20bb5b8391999233442d46a23171151d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025883"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361452"
 ---
 # <a name="geteffectivepermissions-function"></a>Função getEffectivePermissions
 
@@ -91,6 +91,7 @@ Content-Length: 471
   ]
 }
 ```
+
 
 
 

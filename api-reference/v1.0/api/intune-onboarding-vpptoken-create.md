@@ -1,16 +1,16 @@
 ---
 title: Criar vppToken
 description: Criar um novo objeto vppToken.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2151cee9f3aaa8eb23f11d5d4d707de1e234e47
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 147deb777f492c6412919a611e49292fa5dda3c2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024011"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362117"
 ---
 # <a name="create-vpptoken"></a>Criar vppToken
 
@@ -114,6 +114,7 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
 
 
 

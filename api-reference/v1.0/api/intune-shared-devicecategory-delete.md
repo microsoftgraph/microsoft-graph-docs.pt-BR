@@ -1,16 +1,16 @@
 ---
 title: Excluir deviceCategory
 description: Exclui deviceCategory.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e242cc2e3e1992d37053b71d864207a94b2bf4a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 623a05d3e6ae7049b185e4a7a6503396e215219a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025925"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361515"
 ---
 # <a name="delete-devicecategory"></a>Excluir deviceCategory
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Listar managedIOSStoreApps
 description: Listar propriedades e relações dos objetos managedIOSStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b8567ce49409868a6032340161569b0556c502a1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: af3af601ef3329c4f42d81e0c0b577e50b57dfc8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196088"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358415"
 ---
 # <a name="list-managediosstoreapps"></a>Listar managedIOSStoreApps
 
@@ -107,6 +107,7 @@ Content-Length: 1457
   ]
 }
 ```
+
 
 
 

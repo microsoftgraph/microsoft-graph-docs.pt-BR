@@ -1,16 +1,16 @@
 ---
 title: Atualize a organização
 description: Atualizar as propriedades de um objeto organização.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 195aac351138cc133fbb48877b2e68d27a77954f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 48b37b37ae691cb3c40c7ae32723ce1ed8796d61
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024025"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362124"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -85,6 +85,7 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
+
 
 
 

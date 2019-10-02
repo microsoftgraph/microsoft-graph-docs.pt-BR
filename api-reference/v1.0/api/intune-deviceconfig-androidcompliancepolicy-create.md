@@ -1,16 +1,16 @@
 ---
 title: Criar androidCompliancePolicy
 description: Cria um novo objeto androidCompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 57dd3fe8fd6c7e8f93102c8beee958b1f581c528
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f6003cf1ff46cc37964cdc94a82a7f4655e4aa0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019755"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357679"
 ---
 # <a name="create-androidcompliancepolicy"></a>Criar androidCompliancePolicy
 
@@ -158,6 +158,7 @@ Content-Length: 1331
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
 
 
 

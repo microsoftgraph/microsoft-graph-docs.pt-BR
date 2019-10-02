@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso webApp
 description: Contém propriedades e propriedades herdadas para aplicativos Web.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc8751ca34225da39ad8430619c9b189b5c448b3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 55b8f8466a01b1477aedf027a1a078840355c015
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028881"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369048"
 ---
 # <a name="webapp-resource-type"></a>Tipo de recurso webApp
 
@@ -89,6 +89,7 @@ Veja a seguir uma representação JSON do recurso.
   "useManagedBrowser": true
 }
 ```
+
 
 
 

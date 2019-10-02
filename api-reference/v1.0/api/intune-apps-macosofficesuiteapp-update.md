@@ -1,16 +1,16 @@
 ---
 title: Atualizar macOSOfficeSuiteApp
 description: Atualizar as propriedades de um objeto  macOSOfficeSuiteApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 29da7eb0d4f3a54bef8b5141aeb43d383853de57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b96943de648716770ee53e7d158aaabbca2b102d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014169"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358750"
 ---
 # <a name="update-macosofficesuiteapp"></a>Atualizar macOSOfficeSuiteApp
 
@@ -127,6 +127,7 @@ Content-Length: 756
   "publishingState": "processing"
 }
 ```
+
 
 
 

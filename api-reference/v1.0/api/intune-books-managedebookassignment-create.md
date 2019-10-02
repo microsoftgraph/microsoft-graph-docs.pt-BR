@@ -1,16 +1,16 @@
 ---
 title: Criar managedEBookAssignment
 description: Criar um novo objeto managedEBookAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ae5b68a513b61d7576a7d75ddcec3021da0ee9ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c30894d22f1e901046d30f3605317c2bde890fc
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018418"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357882"
 ---
 # <a name="create-managedebookassignment"></a>Criar managedEBookAssignment
 
@@ -92,6 +92,7 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
 
 
 

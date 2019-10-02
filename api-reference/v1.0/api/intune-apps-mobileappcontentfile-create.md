@@ -1,16 +1,16 @@
 ---
 title: Criar mobileAppContentFile
 description: Criar um novo objeto mobileAppContentFile.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6135d8fb10b2295c8e654151bdb821a77ab03a95
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1423491fcd22901099cf9064a423b1c33a73f428
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002010"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358225"
 ---
 # <a name="create-mobileappcontentfile"></a>Criar mobileAppContentFile
 
@@ -108,6 +108,7 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
 
 
 

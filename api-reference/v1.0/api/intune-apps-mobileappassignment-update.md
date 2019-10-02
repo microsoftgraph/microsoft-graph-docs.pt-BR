@@ -1,16 +1,16 @@
 ---
 title: Atualizar mobileAppAssignment
 description: Atualizar as propriedades de um objeto mobileAppAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 324b40d10de0002a5234bc376f95040e4aa53906
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2a34d66322ee489f617174fc7f8db91ce5b2a483
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016115"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358316"
 ---
 # <a name="update-mobileappassignment"></a>Atualizar mobileAppAssignment
 
@@ -99,6 +99,7 @@ Content-Length: 322
   }
 }
 ```
+
 
 
 

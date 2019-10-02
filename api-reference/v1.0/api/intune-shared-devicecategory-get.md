@@ -1,16 +1,16 @@
 ---
 title: Obter deviceCategory
 description: Ler propriedades de leitura e relações do objeto deviceCategory.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1341a64d5f6301ce930531c8881291246a460c6f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ad4c146eb4a5344b87becdf3e82ae76b0808153
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023479"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361508"
 ---
 # <a name="get-devicecategory"></a>Obter deviceCategory
 
@@ -81,6 +81,7 @@ Content-Length: 211
   }
 }
 ```
+
 
 
 

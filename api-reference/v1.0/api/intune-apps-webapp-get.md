@@ -1,16 +1,16 @@
 ---
 title: Acessar webApp
 description: Leia as propriedades e as relações do objeto webApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a3018f0db2d37b856216b2b4f75c150767bf33a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 293074ef03e695b311a0cf5062176301a15d7c62
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015982"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358141"
 ---
 # <a name="get-webapp"></a>Acessar webApp
 
@@ -92,6 +92,7 @@ Content-Length: 878
   }
 }
 ```
+
 
 
 

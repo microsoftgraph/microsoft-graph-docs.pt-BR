@@ -1,16 +1,16 @@
 ---
 title: Excluir deviceComplianceActionItem
 description: Exclui deviceComplianceActionItem.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 118c80e4be804218a50900d756b49ec22679a54b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 506a92dd5388b19566ff1b500c558d581a5079e6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017921"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357477"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>Excluir deviceComplianceActionItem
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Ação removeAllDevicesFromManagement
 description: Desativa todos os dispositivos de gerenciamento deste usuário
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d35b852ef9694a2e9d8f427ba3bbb98cb2b4c26a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9c2d962fad26624d4ef82c8f68959a27cfccd6b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025761"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361242"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>Ação removeAllDevicesFromManagement
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

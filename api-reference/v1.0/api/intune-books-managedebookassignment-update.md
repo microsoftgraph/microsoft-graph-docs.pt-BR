@@ -1,16 +1,16 @@
 ---
 title: Atualizar managedEBookAssignment
 description: Atualizar as propriedades de um objeto managedEBookAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e4f7d8fe21e05517d6fdd4738f2e1a2f24b5d36
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 96650f66068ac0a60d10a106af24b4bc9169eae0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019965"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357854"
 ---
 # <a name="update-managedebookassignment"></a>Atualizar managedEBookAssignment
 
@@ -92,6 +92,7 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
 
 
 

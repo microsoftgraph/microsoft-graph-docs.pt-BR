@@ -1,16 +1,16 @@
 ---
 title: Excluir mobileAppCategory
 description: Exclui mobileAppCategory.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 905d66c307be7bcd31eb1411b5d635e1c9ec3a18
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28ba224ce9329c505ed8f12be83e56e586ad60ae
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013749"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358302"
 ---
 # <a name="delete-mobileappcategory"></a>Excluir mobileAppCategory
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

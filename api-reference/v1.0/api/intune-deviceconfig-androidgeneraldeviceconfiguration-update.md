@@ -1,16 +1,16 @@
 ---
 title: Atualizar androidGeneralDeviceConfiguration
 description: Atualizar as propriedades de um objeto androidGeneralDeviceConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c8daea851f088b4405b7b081bef1c33bfd3a29d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fceb037db80d520293d05b1693e4c12ccbe0023a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019601"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357581"
 ---
 # <a name="update-androidgeneraldeviceconfiguration"></a>Atualizar androidGeneralDeviceConfiguration
 
@@ -319,6 +319,7 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
 
 
 

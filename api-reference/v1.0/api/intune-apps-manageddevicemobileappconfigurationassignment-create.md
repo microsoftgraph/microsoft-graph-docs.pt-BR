@@ -1,16 +1,16 @@
 ---
 title: Criar managedDeviceMobileAppConfigurationAssignment
 description: Criar um novo objeto managedDeviceMobileAppConfigurationAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f8fb7741aeabbf941142143f03c16217dfb58b8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5f32bca50ea2f440747cbd19b3dbc4c961c4141
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014069"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358631"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>Criar managedDeviceMobileAppConfigurationAssignment
 
@@ -89,6 +89,7 @@ Content-Length: 234
   }
 }
 ```
+
 
 
 

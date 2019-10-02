@@ -1,16 +1,16 @@
 ---
 title: Listar appleDeviceFeaturesConfigurationBases
 description: Listar propriedades e relações dos objetos appleDeviceFeaturesConfigurationBase.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f479fa6bbe26b789ec9f3ecce3616e38930de6a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 879c6ee3ad8694dbfd7ddcfffc39d255923723d1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997803"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357476"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>Listar appleDeviceFeaturesConfigurationBases
 
@@ -77,6 +77,7 @@ Content-Length: 407
   ]
 }
 ```
+
 
 
 

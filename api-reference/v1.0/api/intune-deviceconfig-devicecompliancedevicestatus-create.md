@@ -1,16 +1,16 @@
 ---
 title: Criar deviceComplianceDeviceStatus
 description: Criar um novo objeto deviceComplianceDeviceStatus.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b33cb80c584df64eb7130d24c706b5bb0c16b413
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c5db479fc36d6a3d82c77c96b710d55ba52455c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997754"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357497"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>Criar deviceComplianceDeviceStatus
 
@@ -103,6 +103,7 @@ Content-Length: 475
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

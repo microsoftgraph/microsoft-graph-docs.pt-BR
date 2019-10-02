@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceManagement
 description: Atualizar as propriedades de um objeto deviceManagement.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b845a07d8199fcd4a997304f9095d7b364e0988a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b8a99d9950894d438c47f8e67475fe7aec3b3412
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023430"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361424"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -142,6 +142,7 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
 
 
 

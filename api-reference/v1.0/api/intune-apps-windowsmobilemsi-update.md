@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsMobileMSI
 description: Atualiza as propriedades de um objeto windowsMobileMSI.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f12f9862b6a2e31a36ee14e774193b9b71c1683b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e1d169986ad198c82ea6657e8a5d66a22abc88d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015954"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358092"
 ---
 # <a name="update-windowsmobilemsi"></a>Atualizar windowsMobileMSI
 
@@ -148,6 +148,7 @@ Content-Length: 1027
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

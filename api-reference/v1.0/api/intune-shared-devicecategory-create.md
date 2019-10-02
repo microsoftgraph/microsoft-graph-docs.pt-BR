@@ -1,16 +1,16 @@
 ---
 title: Criar deviceCategory
 description: Cria um novo objeto deviceCategory.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd5c0a8285ad2b48f208cd3250dde95ceae82160
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cfff1b5841ff00c7236d81f5908a2f9329b5baed
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023514"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361557"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
@@ -89,6 +89,7 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Acessar managedAndroidStoreApp
 description: Leia as propriedades e as relações do objeto managedAndroidStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f2b1ff148def2f13f35a7b31d94e3fdbd938c5a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 535b9073a0c67a5c203087fc0205014183add203
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014113"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358694"
 ---
 # <a name="get-managedandroidstoreapp"></a>Acessar managedAndroidStoreApp
 
@@ -105,6 +105,7 @@ Content-Length: 1275
   }
 }
 ```
+
 
 
 

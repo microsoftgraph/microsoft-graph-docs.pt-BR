@@ -1,16 +1,16 @@
 ---
 title: Ação syncMicrosoftStoreForBusinessApps
 description: Sincroniza a conta do Intune com o Microsoft Store For Business
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b106faf324aa081001aec811ec200e3ac145a6b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f485349a2bcf9b69eee428e98be39bce7bb5f50f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023500"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361564"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>Ação syncMicrosoftStoreForBusinessApps
 
@@ -62,6 +62,7 @@ O objeto de resposta mostrado aqui pode estar truncado por brevidade. Todas as p
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

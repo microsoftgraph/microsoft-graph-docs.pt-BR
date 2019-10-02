@@ -1,16 +1,16 @@
 ---
 title: Acessar mobileAppContent
 description: Leia as propriedades e as relações do objeto mobileAppContent.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cffea3c52703fe453adb73419ed53fc01b20970a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4f6720d171b0219a54d135e7fff99ef3b16c6623
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002038"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358260"
 ---
 # <a name="get-mobileappcontent"></a>Acessar mobileAppContent
 
@@ -75,6 +75,7 @@ Content-Length: 130
   }
 }
 ```
+
 
 
 

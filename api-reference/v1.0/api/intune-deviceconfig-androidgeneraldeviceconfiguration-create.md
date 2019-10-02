@@ -1,16 +1,16 @@
 ---
 title: Criar androidGeneralDeviceConfiguration
 description: Criar um novo objeto androidGeneralDeviceConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 46e33bf2e8c9aba9c06ffc660c0a6693555d0823
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62b2e1300f839c9d10e459be8eb7bb41d12e1bef
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019643"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357602"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>Criar androidGeneralDeviceConfiguration
 
@@ -319,6 +319,7 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
 
 
 

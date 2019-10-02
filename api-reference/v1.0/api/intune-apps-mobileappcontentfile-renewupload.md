@@ -1,16 +1,16 @@
 ---
 title: Ação renewUpload
 description: Renova a URI SAS para um carregamento de arquivo de aplicativo.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a29d400908b5c9d82b94613c55354edda4eba35f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d384a6b5a0c2efa5ca83ab0b04e30d82bd08d7c3
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013693"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358197"
 ---
 # <a name="renewupload-action"></a>Ação renewUpload
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

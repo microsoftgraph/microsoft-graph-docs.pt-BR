@@ -1,16 +1,16 @@
 ---
 title: Excluir managedIOSStoreApp
 description: Exclui managedIOSStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e0ad727056722bb0cfb5f0d33abe0eccdb0a5f2
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bdf92994dbf92ca82be68fd1ff4f53b0a91bcb57
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196109"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358435"
 ---
 # <a name="delete-managediosstoreapp"></a>Excluir managedIOSStoreApp
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

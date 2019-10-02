@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração windowsArchitecture
 description: Contém propriedades da arquitetura do Windows.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8eac48896035613790117653ca1d6a2cfbde79ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 90649a7ecdbc108e15a1d34d0ebfbf9b6f91fc9a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032043"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369041"
 ---
 # <a name="windowsarchitecture-enum-type"></a>tipo de enumeração windowsArchitecture
 
@@ -26,6 +26,7 @@ Contém propriedades da arquitetura do Windows.
 |Professional|duas|Se o tipo de arquitetura do Windows x64 é ou não suportado.|
 |equipe|quatro|Se o tipo de arquitetura Windows de braço é ou não suportado.|
 |neutraliza|8 |Se o tipo de arquitetura neutra do Windows é ou não suportado.|
+
 
 
 

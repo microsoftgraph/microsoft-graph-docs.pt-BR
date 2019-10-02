@@ -1,16 +1,16 @@
 ---
 title: Criar microsoftStoreForBusinessApp
 description: Cria um novo objeto microsoftStoreForBusinessApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 355277676ea61b65eae2c7f156c13b0dfb944c2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5f4f22679b68a42f1920223e2b4ea4875eb31336
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013819"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358428"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>Criar microsoftStoreForBusinessApp
 
@@ -142,6 +142,7 @@ Content-Length: 941
   "packageIdentityName": "Package Identity Name value"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Criar managedIOSStoreApp
 description: Cria um novo objeto managedIOSStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 96dcc2cdd5c257d44ce62ea6e95abf1210960e1c
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 642ab2793ab384154faeebba8dab6337e878732a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196116"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358456"
 ---
 # <a name="create-managediosstoreapp"></a>Criar managedIOSStoreApp
 
@@ -169,6 +169,7 @@ Content-Length: 1276
   }
 }
 ```
+
 
 
 

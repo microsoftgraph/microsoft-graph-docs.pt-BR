@@ -1,16 +1,16 @@
 ---
 title: Excluir Entidadeandroidforworkprofiledeviceconfiguration
 description: Exclui Entidadeandroidforworkprofiledeviceconfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 774e199ec87d943effe9737a98a85b2d86472a2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b8f53da7d0a7ada6266575196d7a049f1992378
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019461"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357546"
 ---
 # <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>Excluir Entidadeandroidforworkprofiledeviceconfiguration
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceCategory
 description: Atualizar as propriedades de um objeto deviceCategory.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a32034bd88c0295eaff9fc5c29e7dc45961bb4ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9c12bdfbf36b4935ff417c08209aff32de105a9b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023465"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361480"
 ---
 # <a name="update-devicecategory"></a>Atualizar deviceCategory
 
@@ -91,6 +91,7 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Excluir na entidadeandroidworkprofilecompliancepolicy
 description: Exclui na entidadeandroidworkprofilecompliancepolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ebfc23a0ceba9e3083adf70d88ba6b52f63e4983
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85f8ad2164752aa6304609ea55490e66f39bfa15
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019580"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357567"
 ---
 # <a name="delete-androidworkprofilecompliancepolicy"></a>Excluir na entidadeandroidworkprofilecompliancepolicy
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

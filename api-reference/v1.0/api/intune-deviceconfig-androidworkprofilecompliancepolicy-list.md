@@ -1,16 +1,16 @@
 ---
 title: Listar androidWorkProfileCompliancePolicies
 description: Listar Propriedades e relações dos objetos na entidadeandroidworkprofilecompliancepolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba6a4e291aca863a34838bc20a4dec2f13ab56f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 24171078732ca0e9dc83224718d7ef9157a13e92
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019545"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357595"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>Listar androidWorkProfileCompliancePolicies
 
@@ -98,6 +98,7 @@ Content-Length: 1487
   ]
 }
 ```
+
 
 
 
