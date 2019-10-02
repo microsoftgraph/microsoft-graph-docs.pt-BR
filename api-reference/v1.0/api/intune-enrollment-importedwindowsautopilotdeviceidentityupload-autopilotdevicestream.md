@@ -1,33 +1,33 @@
 ---
 title: função autopilotDeviceStream
 description: Crie uma solicitação de upload com o fluxo de dispositivo do AutoPilot nele.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ab33dab66b8d9b57a57d8521ea8b27728c8037e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b90efa561dcfef5b635b3f7c81e22be17282ea7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018516"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364099"
 ---
-# <a name="autopilotdevicestream-function"></a><span data-ttu-id="edf40-103">função autopilotDeviceStream</span><span class="sxs-lookup"><span data-stu-id="edf40-103">autopilotDeviceStream function</span></span>
+# <a name="autopilotdevicestream-function"></a><span data-ttu-id="a69d8-103">função autopilotDeviceStream</span><span class="sxs-lookup"><span data-stu-id="a69d8-103">autopilotDeviceStream function</span></span>
 
-> <span data-ttu-id="edf40-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="edf40-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a69d8-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="a69d8-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="edf40-105">Crie uma solicitação de upload com o fluxo de dispositivo do AutoPilot nele.</span><span class="sxs-lookup"><span data-stu-id="edf40-105">Create a upload request with autopilot device stream in it.</span></span>
+<span data-ttu-id="a69d8-105">Crie uma solicitação de upload com o fluxo de dispositivo do AutoPilot nele.</span><span class="sxs-lookup"><span data-stu-id="a69d8-105">Create a upload request with autopilot device stream in it.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="edf40-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="edf40-106">Prerequisites</span></span>
-<span data-ttu-id="edf40-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="edf40-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a69d8-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="a69d8-106">Prerequisites</span></span>
+<span data-ttu-id="a69d8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a69d8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="edf40-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="edf40-109">Permission type</span></span>|<span data-ttu-id="edf40-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="edf40-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a69d8-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a69d8-109">Permission type</span></span>|<span data-ttu-id="a69d8-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="a69d8-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="edf40-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="edf40-111">Delegated (work or school account)</span></span>|<span data-ttu-id="edf40-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="edf40-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="edf40-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="edf40-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="edf40-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="edf40-114">Not supported.</span></span>|
-|<span data-ttu-id="edf40-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="edf40-115">Application</span></span>|<span data-ttu-id="edf40-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="edf40-116">Not supported.</span></span>|
+|<span data-ttu-id="a69d8-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a69d8-111">Delegated (work or school account)</span></span>|<span data-ttu-id="a69d8-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a69d8-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="a69d8-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a69d8-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a69d8-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a69d8-114">Not supported.</span></span>|
+|<span data-ttu-id="a69d8-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a69d8-115">Application</span></span>|<span data-ttu-id="a69d8-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a69d8-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="edf40-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="edf40-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a69d8-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a69d8-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,28 +36,28 @@ ms.locfileid: "36018516"
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/autopilotDeviceStream
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="edf40-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="edf40-118">Request headers</span></span>
-|<span data-ttu-id="edf40-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="edf40-119">Header</span></span>|<span data-ttu-id="edf40-120">Valor</span><span class="sxs-lookup"><span data-stu-id="edf40-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a69d8-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a69d8-118">Request headers</span></span>
+|<span data-ttu-id="a69d8-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a69d8-119">Header</span></span>|<span data-ttu-id="a69d8-120">Valor</span><span class="sxs-lookup"><span data-stu-id="a69d8-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="edf40-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="edf40-121">Authorization</span></span>|<span data-ttu-id="edf40-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="edf40-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="edf40-123">Aceitar</span><span class="sxs-lookup"><span data-stu-id="edf40-123">Accept</span></span>|<span data-ttu-id="edf40-124">application/json</span><span class="sxs-lookup"><span data-stu-id="edf40-124">application/json</span></span>|
+|<span data-ttu-id="a69d8-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="a69d8-121">Authorization</span></span>|<span data-ttu-id="a69d8-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a69d8-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a69d8-123">Aceitar</span><span class="sxs-lookup"><span data-stu-id="a69d8-123">Accept</span></span>|<span data-ttu-id="a69d8-124">application/json</span><span class="sxs-lookup"><span data-stu-id="a69d8-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="edf40-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="edf40-125">Request body</span></span>
-<span data-ttu-id="edf40-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="edf40-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a69d8-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a69d8-125">Request body</span></span>
+<span data-ttu-id="a69d8-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a69d8-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="edf40-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="edf40-127">Response</span></span>
-<span data-ttu-id="edf40-128">Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma cadeia de caracteres no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="edf40-128">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a69d8-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="a69d8-127">Response</span></span>
+<span data-ttu-id="a69d8-128">Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma cadeia de caracteres no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a69d8-128">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="edf40-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="edf40-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a69d8-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a69d8-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="edf40-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="edf40-130">Request</span></span>
-<span data-ttu-id="edf40-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="edf40-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a69d8-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a69d8-130">Request</span></span>
+<span data-ttu-id="a69d8-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a69d8-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/autopilotDeviceStream
 ```
 
-### <a name="response"></a><span data-ttu-id="edf40-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="edf40-132">Response</span></span>
-<span data-ttu-id="edf40-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="edf40-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a69d8-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="a69d8-132">Response</span></span>
+<span data-ttu-id="a69d8-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a69d8-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -67,6 +67,7 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
+
 
 
 
