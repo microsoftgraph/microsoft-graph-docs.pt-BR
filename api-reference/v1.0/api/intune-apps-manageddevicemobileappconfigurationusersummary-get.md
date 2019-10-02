@@ -1,16 +1,16 @@
 ---
 title: Acessar managedDeviceMobileAppConfigurationUserSummary
 description: Leia as propriedades e as relações do objeto managedDeviceMobileAppConfigurationUserSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3252796ef7a6d45a60e45876a511efd7801f0b5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3ea088830a3d7eb1424b5061e217555e82241098
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013928"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355278"
 ---
 # <a name="get-manageddevicemobileappconfigurationusersummary"></a>Acessar managedDeviceMobileAppConfigurationUserSummary
 
@@ -80,6 +80,7 @@ Content-Length: 383
   }
 }
 ```
+
 
 
 

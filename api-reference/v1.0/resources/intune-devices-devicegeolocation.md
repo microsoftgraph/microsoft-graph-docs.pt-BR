@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceGeoLocation
 description: Localização do dispositivo
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88802f3d4909f07ab96395efdf61ad7e817f4be8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb11f4c8d4d2ce87d28d92f13e359ce213c3ca9c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030811"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356977"
 ---
 # <a name="devicegeolocation-resource-type"></a>Tipo de recurso deviceGeoLocation
 
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
+
 
 
 

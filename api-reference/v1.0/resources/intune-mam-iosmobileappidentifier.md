@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosMobileAppIdentifier
 description: O identificador de um aplicativo iOS.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7388e6872eb48d3aba188448c263f492d913f79b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c85d0f1a2bedffe8525c2012487646c4364ec2ff
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038147"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356496"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>Tipo de recurso iosMobileAppIdentifier
 
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "bundleId": "String"
 }
 ```
+
 
 
 

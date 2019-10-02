@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração managedAppFlaggedReason
 description: O motivo pelo qual um usuário foi sinalizado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e8b2e4069981c9223746823f1780ff945b54a6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 904109eaaea5f1182ade54a35ced59c1bbf64c36
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038057"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356349"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>tipo de enumeração managedAppFlaggedReason
 
@@ -23,6 +23,7 @@ O motivo pelo qual um usuário foi sinalizado
 |:---|:---|:---|
 |none|,0|Nenhum problema.|
 |rootedDevice|1|O registro do aplicativo está em execução em um dispositivo raiz/desbloqueado.|
+
 
 
 

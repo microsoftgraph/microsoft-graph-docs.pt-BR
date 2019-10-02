@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração deviceManagementExchangeAccessStateReason
 description: Motivo do estado de acesso ao Exchange do dispositivo.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7c154e8529f9693ec891fe39e944e6247300fc9e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c598b06d51ef6852086cadd011fe9145f61dc1f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030769"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356930"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessStateReason
 
@@ -37,6 +37,7 @@ Motivo do estado de acesso ao Exchange do dispositivo.
 |azureADBlockDueToAccessPolicy|14|Estado de acesso revogado pela política de acesso AAD|
 |compromisedPassword|15|Estado de acesso revogado por senha comprometida|
 |deviceNotKnownWithManagedApp|dezesseis|Estado de acesso revogado por desafio de aplicativo gerenciado|
+
 
 
 

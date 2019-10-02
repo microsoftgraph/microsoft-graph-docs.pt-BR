@@ -1,16 +1,16 @@
 ---
 title: Listar deviceComplianceSettingStates
 description: Listar propriedades e relações dos objetos deviceComplianceSettingState.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e21ed304ddb66592d72945980365ec8220372571
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 928cadc0fe14c60799dd017120c20f5f6355b815
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017669"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354081"
 ---
 # <a name="list-devicecompliancesettingstates"></a>Listar deviceComplianceSettingStates
 
@@ -83,6 +83,7 @@ Content-Length: 651
   ]
 }
 ```
+
 
 
 

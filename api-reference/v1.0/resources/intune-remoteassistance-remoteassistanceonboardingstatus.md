@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração remoteAssistanceOnboardingStatus
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 75150c1944043e3c3c9e1f08fb89a8b7ac4b2bc7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 592ad28d076fc28ebba36d5c1196e81cba1286dd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037083"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355887"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>tipo de enumeração remoteAssistanceOnboardingStatus
 
@@ -24,6 +24,7 @@ Ainda não documentado
 |notOnboarded|,0|Ainda não documentado|
 |integração|1|Ainda não documentado|
 |integrado|duas|Ainda não documentado|
+
 
 
 

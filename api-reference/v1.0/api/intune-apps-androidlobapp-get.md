@@ -1,16 +1,16 @@
 ---
 title: Acessar androidLobApp
 description: Leia as propriedades e as relações do objeto androidLobApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e501b186cd1b5ea33fa67eb674c41f27fe1f8ff3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b32b1335cdd6c7ece8b0f28f503c3a3e44953e5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002675"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355712"
 ---
 # <a name="get-androidlobapp"></a>Acessar androidLobApp
 
@@ -107,6 +107,7 @@ Content-Length: 1338
   }
 }
 ```
+
 
 
 

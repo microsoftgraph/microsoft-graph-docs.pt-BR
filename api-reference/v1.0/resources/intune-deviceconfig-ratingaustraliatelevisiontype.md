@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração ratingAustraliaTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Austrália
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 04e58fd72f4b09ebd914f0dc69049e21c7f676a5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc71a7dc5b5eaba65612090224928073bde8ba2b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027962"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355761"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>tipo de enumeração ratingAustraliaTelevisionType
 
@@ -30,6 +30,7 @@ Rótulos de classificação de conteúdo de TV na Austrália
 |completa|6|A classificação M é recomendada para visualizadores mais de 15|
 |agesAbove15|178|A classificação MA15 + não é adequada para visualizadores abaixo de 15|
 |agesAbove15AdultViolence|8 |A classificação AV15 + não é adequada para visualizadores sob 15, específico violência adulto|
+
 
 
 

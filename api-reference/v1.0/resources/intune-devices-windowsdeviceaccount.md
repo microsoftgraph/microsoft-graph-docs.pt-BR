@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsDeviceAccount
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22f29bac84d72c6d511b8b59e34f2a3568aa138c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 159a436cf02f00dae850e8ca9996325ff29e6d47
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030664"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356874"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>Tipo de recurso windowsDeviceAccount
 
@@ -39,6 +39,7 @@ Veja a seguir uma representação JSON do recurso.
   "password": "String"
 }
 ```
+
 
 
 

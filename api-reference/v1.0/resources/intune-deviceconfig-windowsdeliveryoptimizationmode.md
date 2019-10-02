@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração windowsDeliveryOptimizationMode
 description: Modo de otimização de entrega para distribuição de mesmo nível
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9154a78af87dbef125e5d211aba284d7a0023e84
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 674dd699831afd0e733adb4d436cf8d42d35a0b6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027644"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357252"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeração windowsDeliveryOptimizationMode
 
@@ -28,6 +28,7 @@ Modo de otimização de entrega para distribuição de mesmo nível
 |httpWithInternetPeering|quatro|HTTP combinado com emparelhamento da Internet|
 |simpleDownload|99|Modo de download simples sem emparelhamento|
 |bypassmode|100|Modo bypass. Não usar otimização de entrega e usar BITS em vez disso|
+
 
 
 

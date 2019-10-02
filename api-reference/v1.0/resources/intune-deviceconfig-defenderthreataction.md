@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração defenderThreatAction
 description: Ação padrão do defender a ser executada em ameaças de malware detectadas.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0195176f322230b3164856575880b9dadc24bce0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 71533fa6d01c9c51980881429b4dc3e443f9c766
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031777"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359674"
 ---
 # <a name="defenderthreataction-enum-type"></a>tipo de enumeração defenderThreatAction
 
@@ -28,6 +28,7 @@ Ação padrão do defender a ser executada em ameaças de malware detectadas.
 |permitiu|quatro|Permitir a ameaça detectada.|
 |UserDefined|0,5|Permitir que o usuário determine a ação a ser tomada com a ameaça detectada.|
 |Larga|6|Bloquear a ameaça detectada.|
+
 
 
 

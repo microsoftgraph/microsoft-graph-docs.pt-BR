@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração internetSiteSecurityLevel
 description: Valores possíveis para o nível de segurança do site da Internet.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 61078da63bb69e058b59423673a7bf1150241f3a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e764c7bbdb634d6814e5fd512533775f85bb2be7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028291"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359177"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>tipo de enumeração internetSiteSecurityLevel
 
@@ -25,6 +25,7 @@ Valores possíveis para o nível de segurança do site da Internet.
 |medium|1|Médio.|
 |mediumHigh|duas|Médio-alto.|
 |high|3D|Alto.|
+
 
 
 

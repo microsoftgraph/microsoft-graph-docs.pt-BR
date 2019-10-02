@@ -1,16 +1,16 @@
 ---
 title: Get androidCustomConfiguration
 description: Ler propriedades e relações do objeto androidCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3aba9b60864924681451c466a5ae5671d19c27f6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ab80a6f2f3e19c1943fec95492cf7b1a9093083
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019685"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354515"
 ---
 # <a name="get-androidcustomconfiguration"></a>Get androidCustomConfiguration
 
@@ -87,6 +87,7 @@ Content-Length: 625
   }
 }
 ```
+
 
 
 

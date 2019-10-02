@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windows81CompliancePolicy
 description: Essa classe contém configurações de conformidade para o Windows 8.1.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2d3cb3522bf8ffdf06d565d7d69e915efb06b06
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c7de713f32e94b196e5cd1175f34f77c0f77153
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027675"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357301"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>Tipo de recurso windows81CompliancePolicy
 
@@ -92,6 +92,7 @@ Veja a seguir uma representação JSON do recurso.
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

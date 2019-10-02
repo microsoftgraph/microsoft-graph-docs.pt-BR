@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso androidManagedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas direcionadas a grupos de segurança específicos e para um conjunto especificado de aplicativos em um dispositivo Android
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20a22c30cc3f5d6182fc601fa84639c96f23107b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bcd2e6cbbd47f052255d68a103f817882c822d7f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030601"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356601"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Tipo de recurso androidManagedAppProtection
 
@@ -143,5 +143,6 @@ Veja a seguir uma representação JSON do recurso.
   ],
 }
 -->
+
 
 

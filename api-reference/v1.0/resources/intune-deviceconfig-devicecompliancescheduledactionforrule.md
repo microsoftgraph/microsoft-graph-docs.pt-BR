@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceComplianceScheduledActionForRule
 description: Ação agendada para a regra
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3279207c88d0bd9bc319a4d3565ecff67020edda
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c462591e060d4fa37ffda61d561f19c9157514a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028466"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359520"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Tipo de recurso deviceComplianceScheduledActionForRule
 
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "ruleName": "String"
 }
 ```
+
 
 
 

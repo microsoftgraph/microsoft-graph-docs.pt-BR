@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso edgeSearchEngineCustom
 description: Permite que os administradores de TI configurem um mecanismo de pesquisa padrão personalizado para dispositivos controlados por MDM.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 367c81764bbf54cef8e5645c08fcb93ec430518d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2858b1b4ce96655965b4e990682352819d50d9a1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028326"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359324"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>Tipo de recurso edgeSearchEngineCustom
 
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
 
 
 

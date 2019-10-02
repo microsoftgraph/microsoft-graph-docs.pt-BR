@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceComplianceDeviceOverview
 description: Atualizar as propriedades de um objeto deviceComplianceDeviceOverview.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1799f4825346643e54065b199adb728023df2a2d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 405b515b3a36c39afa759c525dff0b4eaa43cafe
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019426"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354347"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>Atualizar deviceComplianceDeviceOverview
 
@@ -103,6 +103,7 @@ Content-Length: 330
   "configurationVersion": 4
 }
 ```
+
 
 
 

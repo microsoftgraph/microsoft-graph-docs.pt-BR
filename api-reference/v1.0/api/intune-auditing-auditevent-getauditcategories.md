@@ -1,16 +1,16 @@
 ---
 title: Função getAuditCategories
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a1363f2aef76d5ce2e6c4f9e3e1e20c3bd7d0bf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4936bbd47b22440e96e27df85002c98c016aeb0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001905"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354844"
 ---
 # <a name="getauditcategories-function"></a>Função getAuditCategories
 
@@ -69,6 +69,7 @@ Content-Length: 57
   ]
 }
 ```
+
 
 
 

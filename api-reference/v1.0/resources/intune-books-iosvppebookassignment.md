@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosVppEBookAssignment
 description: Contém propriedades usadas para atribuir um livro eletrônico iOS VPP a um grupo.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec8b16f40dd56f00b3a48968b582ccca8228eb6f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7914b0897e2e57ad4ec3568f8833866d4e5d6a4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031994"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355936"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Tipo de recurso iosVppEBookAssignment
 
@@ -58,6 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "installIntent": "String"
 }
 ```
+
 
 
 

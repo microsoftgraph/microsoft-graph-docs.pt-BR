@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso appConfigurationSettingItem
 description: Contém propriedades do item de configuração de Configuração do aplicativo.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91ccefc06ba6a635b9b18e07465ea0332c48f022
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7b7145b7adf9aed622af8ebb3a6a55c6456d7e8a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030174"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356300"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Tipo de recurso appConfigurationSettingItem
 
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "appConfigKeyValue": "String"
 }
 ```
+
 
 
 

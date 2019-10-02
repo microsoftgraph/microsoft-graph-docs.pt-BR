@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso updateWindowsDeviceAccountActionParameter
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27007548c0d17351502e9ede3b8070afa52d6d80
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33b4b9e62b1038eb3b9e97b01a3d7b38906b605c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030657"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356888"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>Tipo de recurso updateWindowsDeviceAccountActionParameter
 
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
 
 
 

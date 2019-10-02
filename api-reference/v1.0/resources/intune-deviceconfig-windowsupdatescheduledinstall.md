@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsUpdateScheduledInstall
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b3c6d5fa7e517713d1904d33c94bcd8dccec5d6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fd5958e5b8e853f07c715cd1ecf8c03a9a49a15
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030895"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357133"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>Tipo de recurso windowsUpdateScheduledInstall
 
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "scheduledInstallTime": "String (time of day)"
 }
 ```
+
 
 
 

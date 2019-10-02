@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosVppEBook
 description: Atualizar as propriedades de um objeto iosVppEBook.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d68b8ba149b4b5f8b63029df98769d37a5fdd8c7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9d37c1de249903f24430cacb66144121324a74aa
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001877"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354739"
 ---
 # <a name="update-iosvppebook"></a>Atualizar iosVppEBook
 
@@ -143,6 +143,7 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
 
 
 

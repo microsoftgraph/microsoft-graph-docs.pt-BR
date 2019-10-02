@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windows81GeneralConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windows81GeneralConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35238c98ca0f945fb99bae4aa680025dc8a33038
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 688390fda9e93cc088a4e0f3f7f3301381888760
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030979"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357294"
 ---
 # <a name="windows81generalconfiguration-resource-type"></a>Tipo de recurso windows81GeneralConfiguration
 
@@ -135,6 +135,7 @@ Veja a seguir uma representação JSON do recurso.
   "workFoldersUrl": "String"
 }
 ```
+
 
 
 

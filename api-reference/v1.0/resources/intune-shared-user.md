@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso de usuário
 description: Representa um objeto de usuário do Azure Active Directory.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8fc3604329a5062a8fe1afb90c2ac64f52f0bed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 15fca0cedc6fe1da81da25688bbc447c1f8f475f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036831"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360101"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -21,9 +21,9 @@ Representa um objeto de usuário do Azure Active Directory.
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar](../api/intune-shared-user-list.md) objetos users.|Conjunto [user](../resources/intune-shared-user.md)|Listar propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
-|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|Coleção [usuário](../resources/intune-shared-user.md)|Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).|
-|[Criar objeto user](../api/intune-shared-user-create.md) .|Coleção [usuário](../resources/intune-shared-user.md)|Criar um novo objeto [user](../resources/intune-shared-user.md).|
+|[Listar objetos Users](../api/intune-shared-user-list.md) .|Conjunto [user](../resources/intune-shared-user.md)|Listar propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
+|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|Coleção [user](../resources/intune-shared-user.md)|Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).|
+|[Criar objeto user](../api/intune-shared-user-create.md) .|Coleção [user](../resources/intune-shared-user.md)|Criar um novo objeto [user](../resources/intune-shared-user.md).|
 |[Excluir usuário](../api/intune-shared-user-delete.md).|Nenhum|Excluir [user](../resources/intune-shared-user.md).|
 |[Atualize](../api/intune-shared-user-update.md) o objeto do usuário.|[user](../resources/intune-shared-user.md)|Atualizar as propriedades de um objeto de [user](../resources/intune-shared-user.md).|
 |**Gerenciamento de dispositivos**|
@@ -74,3 +74,4 @@ Veja a seguir uma representação JSON do recurso.
     "Warning: Resource microsoft.graph.user is defined in multiple files: /api-reference/v1.0/resources/intune_shared_user.md, /api-reference/v1.0/resources/user.md",
   ]
 }-->
+

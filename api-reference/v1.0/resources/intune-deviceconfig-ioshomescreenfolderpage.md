@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosHomeScreenFolderPage
 description: Uma pasta com os aplicativos na tela inicial
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76a8237442e0e807e0a1383c8032cf4e6361516e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b80a4f41583617d32e514e29c791e000315593c5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028207"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359100"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Tipo de recurso iosHomeScreenFolderPage
 
@@ -47,6 +47,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Excluir mobileAppAssignment
 description: Exclui mobileAppAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9255d71bcc8980ff7aba60b26ab4c62996b87d7a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f62f2fd63c503aa9de90292985bc034079a5422b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013770"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355138"
 ---
 # <a name="delete-mobileappassignment"></a>Excluir mobileAppAssignment
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

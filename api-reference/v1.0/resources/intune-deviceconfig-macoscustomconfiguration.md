@@ -1,16 +1,16 @@
 ---
 title: macOSCustomConfiguration resource type
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso macOSCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c955d4dffdff3c38aa55a54b57f234c282039bfb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f5b85ff0e1be7f12f890fb6bb8a8806080277858
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028123"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360059"
 ---
 # <a name="macoscustomconfiguration-resource-type"></a>macOSCustomConfiguration resource type
 
@@ -75,6 +75,7 @@ Veja a seguir uma representação JSON do recurso.
   "payload": "binary"
 }
 ```
+
 
 
 

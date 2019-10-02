@@ -1,16 +1,16 @@
 ---
 title: Criar windowsUniversalAppX
 description: Cria um novo objeto windowsUniversalAppX.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 91dc692534653baf9b0c146e06691e8f25e38140
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 05bf490b9352a8da29348896bf0fe06c13950875
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001947"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354928"
 ---
 # <a name="create-windowsuniversalappx"></a>Criar windowsUniversalAppX
 
@@ -170,6 +170,7 @@ Content-Length: 1361
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

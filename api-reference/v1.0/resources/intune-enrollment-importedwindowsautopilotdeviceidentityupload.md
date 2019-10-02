@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso importedWindowsAutopilotDeviceIdentityUpload
 description: Importar dispositivos do Windows AutoPilot usando upload.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc1042b353a40af676b80c673e8558a2f7a643a4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b409e4a3d91e28c4c6e751147824448ca9cdcb58
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027360"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356594"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>tipo de recurso importedWindowsAutopilotDeviceIdentityUpload
 
@@ -56,6 +56,7 @@ Veja a seguir uma representação JSON do recurso.
   "status": "String"
 }
 ```
+
 
 
 

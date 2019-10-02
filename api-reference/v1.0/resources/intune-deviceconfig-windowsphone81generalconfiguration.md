@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsPhone81GeneralConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windowsPhone81GeneralConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67346efd5e2e7a4c7c109c8135cfd8edfef4fc0b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5ecef956b37faa941ede7e6d77cbb150d15d841
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030930"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357220"
 ---
 # <a name="windowsphone81generalconfiguration-resource-type"></a>Tipo de recurso windowsPhone81GeneralConfiguration
 
@@ -135,6 +135,7 @@ Veja a seguir uma representação JSON do recurso.
   "windowsStoreBlocked": true
 }
 ```
+
 
 
 

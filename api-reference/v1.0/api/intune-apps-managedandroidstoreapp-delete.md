@@ -1,16 +1,16 @@
 ---
 title: Excluir managedAndroidStoreApp
 description: Exclui managedAndroidStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 942eb8dd0d1f643101ef80b32e5b5338ac9196c0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dcb80ed430b43eba0be97b0c83a9071e74f25988
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002396"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355446"
 ---
 # <a name="delete-managedandroidstoreapp"></a>Excluir managedAndroidStoreApp
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

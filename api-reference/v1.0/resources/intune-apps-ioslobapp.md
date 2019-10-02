@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosLobApp
 description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios iOS.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe23727034221fbcbf8b3feab30bb6440987e76d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a4fea5003a505f9d20175d6f42d68514f56c405a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032351"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356241"
 ---
 # <a name="ioslobapp-resource-type"></a>Tipo de recurso iosLobApp
 
@@ -108,13 +108,15 @@ Veja a seguir uma representação JSON do recurso.
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",
   "buildNumber": "String"
 }
 ```
+
 
 
 

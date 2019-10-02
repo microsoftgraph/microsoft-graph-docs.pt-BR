@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração policyPlatformType
 description: Tipos de plataforma Suppoorted para políticas.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8205f6530047518082732fe1fe7c24ee7df7ae99
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47c15a09c2a89670e9826a492914d6da951bd311
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031280"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359870"
 ---
 # <a name="policyplatformtype-enum-type"></a>tipo de enumeração policyPlatformType
 
@@ -29,6 +29,7 @@ Tipos de plataforma Suppoorted para políticas.
 |windows10AndLater|6|Windows 10 e posterior.|
 |androidWorkProfile|178|AndroidWorkProfile.|
 |todos os|100|Todas as plataformas.|
+
 
 
 

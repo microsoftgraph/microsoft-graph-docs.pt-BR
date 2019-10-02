@@ -1,16 +1,16 @@
 ---
 title: Excluir termsAndConditionsAcceptanceStatus
 description: Exclui termsAndConditionsAcceptanceStatus.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce1708927c01cd3e7abb4d8b238364f39cc42764
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: daea3e67f42bd14c446d217c998d1e17764f7a96
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019853"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354585"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>Excluir termsAndConditionsAcceptanceStatus
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

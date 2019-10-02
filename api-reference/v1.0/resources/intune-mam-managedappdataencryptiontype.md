@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração managedAppDataEncryptionType
 description: Representa o nível ao qual os dados do aplicativo são criptografados para aplicativos gerenciados
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 67c74dea08eac63fe22aa003af1c282be85669b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b3e2cc44e1d548a1abe2a4d34c02fef9db7750a1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038056"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356384"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>tipo de enumeração managedAppDataEncryptionType
 
@@ -25,6 +25,7 @@ Representa o nível ao qual os dados do aplicativo são criptografados para apli
 |afterDeviceRestart|1|Os dados do aplicativo são criptografados quando o dispositivo é reiniciado.|
 |whenDeviceLockedExceptOpenFiles|duas|Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado, exceto dados em arquivos que estão abertos|
 |whenDeviceLocked|3D|Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado|
+
 
 
 

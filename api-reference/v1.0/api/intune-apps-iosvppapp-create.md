@@ -1,16 +1,16 @@
 ---
 title: Criar iosVppApp
 description: Cria um novo objeto iosVppApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c58775bc588817b9e1c810b81bd9e3dbadd4d383
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b2e582c99094399fa14c1316a8a3145b374a69c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997887"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358837"
 ---
 # <a name="create-iosvppapp"></a>Criar iosVppApp
 
@@ -173,6 +173,7 @@ Content-Length: 1394
   "bundleId": "Bundle Id value"
 }
 ```
+
 
 
 

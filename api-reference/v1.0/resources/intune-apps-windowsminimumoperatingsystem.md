@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsMinimumOperatingSystem
 description: O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a92d02f6994a7cd18ba44c7da5b43768e87fc61a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ffc5d67597f1790ffe5725f8a48b358d7679817a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032071"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356034"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Tipo de recurso windowsMinimumOperatingSystem
 
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "v10_0": true
 }
 ```
+
 
 
 

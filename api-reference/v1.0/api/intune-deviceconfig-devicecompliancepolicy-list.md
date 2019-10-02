@@ -1,16 +1,16 @@
 ---
 title: Listar deviceCompliancePolicies
 description: Listar propriedades e relações dos objetos deviceCompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b872e9d1e5d4b8a055d0d83c0ac373aaa87cd4d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 173ca32ede49fc146fb3464927aabdd34788e4d8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019398"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354235"
 ---
 # <a name="list-devicecompliancepolicies"></a>Listar deviceCompliancePolicies
 
@@ -77,6 +77,7 @@ Content-Length: 393
   ]
 }
 ```
+
 
 
 

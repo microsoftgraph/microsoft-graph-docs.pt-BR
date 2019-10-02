@@ -1,16 +1,16 @@
 ---
 title: Acessar managedIOSLobApp
 description: Leia as propriedades e as relações do objeto managedIOSLobApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a1b13dcaed04dce2e87e4388bfff22a6ced9a72
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 27175745d42af0a113017e087425999ba50fe5b3
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196137"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355229"
 ---
 # <a name="get-managedioslobapp"></a>Acessar managedIOSLobApp
 
@@ -113,6 +113,7 @@ Content-Length: 1582
   }
 }
 ```
+
 
 
 

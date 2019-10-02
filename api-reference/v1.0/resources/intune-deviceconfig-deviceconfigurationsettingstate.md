@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso deviceConfigurationSettingState
 description: Estado da definição de configuração de um determinado dispositivo.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c50ed17421b88f2cb6137458ff853bfa92796c2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47bbca9073765b5f7a09827b5b1eecb44ba81b6e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031665"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359485"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>tipo de recurso deviceConfigurationSettingState
 
@@ -67,6 +67,7 @@ Veja a seguir uma representação JSON do recurso.
   "currentValue": "String"
 }
 ```
+
 
 
 

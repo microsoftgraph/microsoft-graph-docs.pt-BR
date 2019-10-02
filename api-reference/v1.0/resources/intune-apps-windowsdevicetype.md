@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração windowsDeviceType
 description: Contém propriedades do tipo de dispositivo do Windows.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 43e1821f880975ad2eb3d9c485501399dd4a96c7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c9869ea0d691cef17f885f7a067b7a4cec91d1df
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032057"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356062"
 ---
 # <a name="windowsdevicetype-enum-type"></a>tipo de enumeração windowsDeviceType
 
@@ -26,6 +26,7 @@ Contém propriedades do tipo de dispositivo do Windows.
 |processadores|duas|Se o tipo de dispositivo móvel do Windows é ou não suportado.|
 |holographic|quatro|Se o tipo de dispositivo do Windows Holographic é ou não suportado.|
 |team|8 |Se o tipo de dispositivo do Windows de equipe é ou não suportado.|
+
 
 
 

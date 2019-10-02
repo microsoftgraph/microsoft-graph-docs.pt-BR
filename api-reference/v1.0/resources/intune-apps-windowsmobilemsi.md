@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsMobileMSI
 description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios Windows Mobile MSI.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61f35eb4df5e7da98011d849e525a661559f440d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7812714024341858b21044c1660a4a3de4b2a054
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032064"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356027"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>Tipo de recurso windowsMobileMSI
 
@@ -100,6 +100,7 @@ Veja a seguir uma representação JSON do recurso.
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

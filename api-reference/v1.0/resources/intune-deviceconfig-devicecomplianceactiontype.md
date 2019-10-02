@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração Enumeraçãodevicecomplianceactiontype
 description: Enumeração de tipo de ação agendada
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cea72fa6e48699e540a43ea3938986e19ed351d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b729386eeb76197ed426163d1882afc6aec836a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028515"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359653"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>tipo de enumeração Enumeraçãodevicecomplianceactiontype
 
@@ -28,6 +28,7 @@ Enumeração de tipo de ação agendada
 |revelar|quatro|Apagar o dispositivo|
 |removeResourceAccessProfiles|0,5|Remover perfis de acesso a recursos do dispositivo|
 |Membropushnotification|9 |Enviar notificação por push ao dispositivo|
+
 
 
 

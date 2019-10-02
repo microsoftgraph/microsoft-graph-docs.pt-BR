@@ -1,16 +1,16 @@
 ---
 title: iosCustomConfiguration resource type
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso iosCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b73e9cdf7f037a57c0151fa932e24977468f5b67
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 40b102d35f8560fadb815f37047ae816831ca854
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028249"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359170"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>iosCustomConfiguration resource type
 
@@ -75,6 +75,7 @@ Veja a seguir uma representação JSON do recurso.
   "payload": "binary"
 }
 ```
+
 
 
 

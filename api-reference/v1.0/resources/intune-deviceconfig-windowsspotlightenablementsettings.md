@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração windowsSpotlightEnablementSettings
 description: Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b80136c998da1ecab121a050455ac031ba1aa77
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f2ca05079eaa59e7d602f5590ff2a6fed1129f76
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027612"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357210"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>tipo de enumeração windowsSpotlightEnablementSettings
 
@@ -24,6 +24,7 @@ Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido 
 |notConfigured|,0|O Spotlight na tela de bloqueio não está configurado|
 |deficiência|1|Desabilitar o destaque do Windows na tela de bloqueio|
 |enabled|duas|Habilitar o destaque do Windows na tela de bloqueio|
+
 
 
 

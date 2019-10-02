@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração windowsUpdateType
 description: Para quais dispositivos de filial receberão suas atualizações
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d7630e3cac3702380da07c2a92857d9f2786810a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e0868516f84d15ff18a3b54c2ebfb936fb1641ed
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027570"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357126"
 ---
 # <a name="windowsupdatetype-enum-type"></a>tipo de enumeração windowsUpdateType
 
@@ -27,6 +27,7 @@ Para quais dispositivos de filial receberão suas atualizações
 |windowsInsiderBuildFast|3D|Compilação do Windows Insider-Fast|
 |windowsInsiderBuildSlow|quatro|Compilação do Windows Insider-lenta|
 |windowsInsiderBuildRelease|0,5|Versão de lançamento do Windows Insider|
+
 
 
 

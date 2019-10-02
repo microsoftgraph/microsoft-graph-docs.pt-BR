@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosMobileAppConfiguration
 description: Atualiza as propriedades de um objeto iosMobileAppConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 731f3dedffee4a8ac445999ae4f26ac4abd0bd97
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f8a243745c821b15bf4108d15b47f055a160400
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997915"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358876"
 ---
 # <a name="update-iosmobileappconfiguration"></a>Atualizar iosMobileAppConfiguration
 
@@ -122,6 +122,7 @@ Content-Length: 706
   ]
 }
 ```
+
 
 
 

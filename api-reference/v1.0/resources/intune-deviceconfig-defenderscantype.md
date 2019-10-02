@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração defenderScanType
 description: Valores possíveis para o tipo de verificação do sistema.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6d1d5f13e35b5a271393753abf852eee29d32337
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e967973c70fe19aff2c22403cec926e6e94886c8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031854"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359716"
 ---
 # <a name="defenderscantype-enum-type"></a>tipo de enumeração defenderScanType
 
@@ -25,6 +25,7 @@ Valores possíveis para o tipo de verificação do sistema.
 |deficiência|1|Verificação de sistema desabilitada.|
 |agiliza|duas|Verificação rápida do sistema.|
 |cheia|3D|Verificação completa do sistema.|
+
 
 
 

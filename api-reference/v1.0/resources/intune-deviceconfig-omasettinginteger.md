@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso omaSettingInteger
 description: Definição de números inteiros das configurações de OMA.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f80f8583907a25646643fdd5770d6bce5adcb4b3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85eeeff4cc9ac897416e587aa5d26be79b59bb59
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028018"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359898"
 ---
 # <a name="omasettinginteger-resource-type"></a>Tipo de recurso omaSettingInteger
 
@@ -48,6 +48,7 @@ Veja a seguir uma representação JSON do recurso.
   "value": 1024
 }
 ```
+
 
 
 

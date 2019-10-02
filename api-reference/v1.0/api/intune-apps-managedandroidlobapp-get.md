@@ -1,16 +1,16 @@
 ---
 title: Acessar managedAndroidLobApp
 description: Leia as propriedades e as relações do objeto managedAndroidLobApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d00c0cc08a0d9e3f255b24d744ac89c83bfa9e92
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 360fac59917cc5d72aadca90d93d26cebf92ef29
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002395"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355488"
 ---
 # <a name="get-managedandroidlobapp"></a>Acessar managedAndroidLobApp
 
@@ -109,6 +109,7 @@ Content-Length: 1420
   }
 }
 ```
+
 
 
 

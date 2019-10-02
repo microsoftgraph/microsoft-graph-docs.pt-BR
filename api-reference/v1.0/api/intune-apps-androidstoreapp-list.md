@@ -1,16 +1,16 @@
 ---
 title: Listar androidStoreApps
 description: Listar propriedades e relações dos objetos androidStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ff04b37f752dcef1ce49c92228827d012017d1f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cef851ff3b90c7b3f7e93eb109022bf72b4547fb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002654"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355635"
 ---
 # <a name="list-androidstoreapps"></a>Listar androidStoreApps
 
@@ -102,6 +102,7 @@ Content-Length: 1271
   ]
 }
 ```
+
 
 
 

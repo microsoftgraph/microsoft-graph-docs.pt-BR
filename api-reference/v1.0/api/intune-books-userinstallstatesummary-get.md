@@ -1,16 +1,16 @@
 ---
 title: Get userInstallStateSummary
 description: Ler propriedades e relações do objeto userInstallStateSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 87ac0b8d8e04a17d227adb20cf65f7e91baaabc1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0c2644334f92708cbb7025fd5fce21f38e6c5e86
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019923"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354613"
 ---
 # <a name="get-userinstallstatesummary"></a>Get userInstallStateSummary
 
@@ -77,6 +77,7 @@ Content-Length: 269
   }
 }
 ```
+
 
 
 

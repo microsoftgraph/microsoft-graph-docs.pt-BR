@@ -1,16 +1,16 @@
 ---
 title: Criar androidStoreApp
 description: Criar um novo objeto androidStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d8d5c4f171300cab0b0581d000ba57c4b13a1393
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f912fa8963472d123486be65cc012ad6056fadea
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014316"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358974"
 ---
 # <a name="create-androidstoreapp"></a>Criar androidStoreApp
 
@@ -156,6 +156,7 @@ Content-Length: 1110
   }
 }
 ```
+
 
 
 

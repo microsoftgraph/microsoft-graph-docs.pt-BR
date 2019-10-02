@@ -1,16 +1,16 @@
 ---
 title: Get auditEvent
 description: Ler propriedades e relações do objeto auditEvent.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 865bbab96d7a7602ea0e324603370a4cb1cb5a0f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b711362bd9aecf38c863157c97136776a868d33a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001870"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354858"
 ---
 # <a name="get-auditevent"></a>Get auditEvent
 
@@ -111,6 +111,7 @@ Content-Length: 1538
   }
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsDefenderAdvancedThreatProtectionConfiguration
 description: Configuração de AdvancedThreatProtection do Windows Defender
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb8d528df34b804eefa1011aea2bf3e1f9d2c3b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3be3813dc31b92a99e2d794d63bf19215f64e301
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027640"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357287"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>Tipo de recurso windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -73,6 +73,7 @@ Veja a seguir uma representação JSON do recurso.
   "enableExpeditedTelemetryReporting": true
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceInstallState
 description: Contém propriedades do estado de instalação de um dispositivo.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0405bdb5e4a4c53a508f7b81171dd9ede41bdbb1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d95db2f79100cc0ddbab5b85a9073ff6e80716cf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032085"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355964"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Tipo de recurso deviceInstallState
 
@@ -65,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "userName": "String"
 }
 ```
+
 
 
 

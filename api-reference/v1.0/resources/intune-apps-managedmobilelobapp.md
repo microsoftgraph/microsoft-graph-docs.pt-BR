@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedMobileLobApp
 description: Uma classe base abstrata que contém propriedades para a toda a linha móvel gerenciada de aplicativos de negócios.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bab87a96fda05995ca4150243592e695eeb36f53
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba45787990b7c9dbdf3ea1b560e32ba2682b4fba
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032295"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360108"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>Tipo de recurso managedMobileLobApp
 
@@ -93,6 +93,7 @@ Veja a seguir uma representação JSON do recurso.
   "size": 1024
 }
 ```
+
 
 
 

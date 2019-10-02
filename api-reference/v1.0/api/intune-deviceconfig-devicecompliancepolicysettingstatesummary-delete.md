@@ -1,16 +1,16 @@
 ---
 title: Excluir deviceCompliancePolicySettingStateSummary
 description: Exclui deviceCompliancePolicySettingStateSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c098f13523484a5e0f68204fed7cd6feac27b37c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eff21365f6c05606b0f3cf822eef554bcbc36ea7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997733"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354158"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>Excluir deviceCompliancePolicySettingStateSummary
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

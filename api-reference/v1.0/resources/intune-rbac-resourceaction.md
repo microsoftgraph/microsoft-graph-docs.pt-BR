@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso resourceAction
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88ea0c947a87135f874755f49d0847a3c2a08fae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c30c9a272029fc681a383772b2467dc6fb67af88
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037153"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359023"
 ---
 # <a name="resourceaction-resource-type"></a>Tipo de recurso resourceAction
 
@@ -45,6 +45,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

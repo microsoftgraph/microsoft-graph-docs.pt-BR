@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração mobileAppContentFileUploadState
 description: Contém propriedades para carregar Estados de solicitação.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 911253ac7833cdea8ada0e796743c6245af88208
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82a08c86c228e0cd8645c6ff481d89067e679db3
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028921"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359016"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>tipo de enumeração mobileAppContentFileUploadState
 
@@ -37,6 +37,7 @@ Contém propriedades para carregar Estados de solicitação.
 |commitFilePending|301|Ainda não documentado|
 |commitFileFailed|302|Ainda não documentado|
 |commitFileTimedOut|303|Ainda não documentado|
+
 
 
 

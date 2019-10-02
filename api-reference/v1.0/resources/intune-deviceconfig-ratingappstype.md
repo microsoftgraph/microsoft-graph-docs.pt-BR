@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração ratingAppsType
 description: Classificação de aplicativos como conteúdo de mídia
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d915fb1469306b5ef7f62a967091cd794a3aa00
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1af0c100140530e6676d2cbe12702b7534c740c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031273"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359835"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de enumeração ratingAppsType
 
@@ -27,6 +27,7 @@ Classificação de aplicativos como conteúdo de mídia
 |agesAbove9|3D|9 +, idade 9 e superior|
 |agesAbove12|quatro|12 +, idade 12 e superior |
 |agesAbove17|0,5|17 +, idade 17 e superior|
+
 
 
 

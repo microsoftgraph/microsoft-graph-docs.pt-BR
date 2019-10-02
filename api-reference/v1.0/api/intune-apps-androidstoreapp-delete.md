@@ -1,16 +1,16 @@
 ---
 title: Excluir androidStoreApp
 description: Exclui androidStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d26b611fd881b7c9d41baf3e2262e2ea5886f3c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f09821191c63eeab5f41506f35a6cc60acf50edd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002647"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355642"
 ---
 # <a name="delete-androidstoreapp"></a>Excluir androidStoreApp
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

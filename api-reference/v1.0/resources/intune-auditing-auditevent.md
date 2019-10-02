@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso auditEvent
 description: Uma classe que contém as propriedades de Evento de Auditoria.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18d56205f0602016f4d2ecdd2587b06ae5c676fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5dfadf90d2498fa13f2367ca7467bbce5f810e3f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028851"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355985"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
 
@@ -100,6 +100,7 @@ Veja a seguir uma representação JSON do recurso.
   "category": "String"
 }
 ```
+
 
 
 

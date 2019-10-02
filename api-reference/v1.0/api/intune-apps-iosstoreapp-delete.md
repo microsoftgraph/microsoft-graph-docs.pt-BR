@@ -1,16 +1,16 @@
 ---
 title: Excluir iosStoreApp
 description: Exclui iosStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5634e160d10a53bfa9200588cc5b2fa440aa9295
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d5ed370263cf16e27e5032c5e03092fcb92b40e2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196193"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358855"
 ---
 # <a name="delete-iosstoreapp"></a>Excluir iosStoreApp
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

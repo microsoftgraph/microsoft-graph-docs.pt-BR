@@ -1,16 +1,16 @@
 ---
 title: Listar iosVppApps
 description: Listar propriedades e relações dos objetos iosVppApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 605f41f7c498c639417865e721450f949eb79edb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 591bb5baa09392916b2b1b7d3a463a5446862dce
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014217"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355523"
 ---
 # <a name="list-iosvppapps"></a>Listar iosVppApps
 
@@ -107,6 +107,7 @@ Content-Length: 1575
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsUpdateForBusinessConfiguration
 description: Configuração do Windows Update para Empresas.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e396aea1a32b121f891a45edf79ff48b01bcdfb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 480cde32e92b7c0ff3076229bab37a4d21a9eb41
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027563"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357147"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Tipo de recurso windowsUpdateForBusinessConfiguration
 
@@ -99,6 +99,7 @@ Veja a seguir uma representação JSON do recurso.
   "businessReadyUpdatesOnly": "String"
 }
 ```
+
 
 
 

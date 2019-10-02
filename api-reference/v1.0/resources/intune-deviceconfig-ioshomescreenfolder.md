@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosHomeScreenFolder
 description: Uma pasta que contém as páginas de aplicativos na tela inicial
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a22b20049c886b7cb1de2f7737b269fbd411749
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad796d334a3830b6bc5efac3ab1f29fe26cd2b04
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031513"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359115"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Tipo de recurso iosHomeScreenFolder
 
@@ -56,6 +56,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

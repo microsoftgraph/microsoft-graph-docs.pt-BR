@@ -1,16 +1,16 @@
 ---
 title: Listar termsAndConditionsAssignments
 description: Listar propriedades e relações dos objetos termsAndConditionsAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 85cdd361fd8dbf454e6d01c91ca00e7d39e032d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8de1668dc3935319de2132d026579d1a2ab138f5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020399"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354550"
 ---
 # <a name="list-termsandconditionsassignments"></a>Listar termsAndConditionsAssignments
 
@@ -75,6 +75,7 @@ Content-Length: 270
   ]
 }
 ```
+
 
 
 

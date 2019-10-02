@@ -1,16 +1,16 @@
 ---
 title: Criar managedIOSLobApp
 description: Cria um novo objeto managedIOSLobApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02dcca019f23d4ad5ece85ff66d9bd4026c2472e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 46809e86ec22939cff7eab945a5b3b42d288fdda
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196165"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355264"
 ---
 # <a name="create-managedioslobapp"></a>Criar managedIOSLobApp
 
@@ -184,6 +184,7 @@ Content-Length: 1479
   "buildNumber": "Build Number value"
 }
 ```
+
 
 
 

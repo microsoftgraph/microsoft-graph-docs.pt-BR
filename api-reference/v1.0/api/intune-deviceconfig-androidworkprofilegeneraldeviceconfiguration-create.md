@@ -1,16 +1,16 @@
 ---
 title: Criar Entidadeandroidforworkprofiledeviceconfiguration
 description: Criar um novo objeto Entidadeandroidforworkprofiledeviceconfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 62ed82dcfd3892970491296597d414ac7677f9b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8697461551a0792022377bed61cbd347201f79da
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997838"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354396"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>Criar Entidadeandroidforworkprofiledeviceconfiguration
 
@@ -197,6 +197,7 @@ Content-Length: 2003
   "securityRequireVerifyApps": true
 }
 ```
+
 
 
 

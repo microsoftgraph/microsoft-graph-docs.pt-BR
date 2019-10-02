@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração ratingGermanyMoviesType
 description: Rótulos de classificação de filmes na Alemanha
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b4115eaf728c3407416b2d0209757fb1feafd75
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 15cfd5b47ae217b168dc99cfbf305622060eb5b2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031259"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356118"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>tipo de enumeração ratingGermanyMoviesType
 
@@ -28,6 +28,7 @@ Rótulos de classificação de filmes na Alemanha
 |agesAbove12|quatro|AB 12 Jahren, 12 anos ou mais|
 |agesAbove16|0,5|AB 16 Jahren, 16 anos ou mais|
 |adultos|6|AB 18 Jahren, somente adultos|
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Acessar iosVppApp
 description: Leia as propriedades e as relações do objeto iosVppApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76eb33fe71824d91a13a60d3b2039284d6a9c66b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7bb5335861aa292aa5927106d49b611c6f77e128
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002500"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358820"
 ---
 # <a name="get-iosvppapp"></a>Acessar iosVppApp
 
@@ -108,6 +108,7 @@ Content-Length: 1487
   }
 }
 ```
+
 
 
 

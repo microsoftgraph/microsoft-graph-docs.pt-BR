@@ -1,16 +1,16 @@
 ---
 title: Atualizar androidWorkProfileCustomConfiguration
 description: Atualiza as propriedades de um objeto androidWorkProfileCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 668304adc0b3dcdfab076603767c1d46e4198d21
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5a7e7183f2616278569cb595fa443227711da70
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019475"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357553"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>Atualizar androidWorkProfileCustomConfiguration
 
@@ -114,6 +114,7 @@ Content-Length: 585
   ]
 }
 ```
+
 
 
 

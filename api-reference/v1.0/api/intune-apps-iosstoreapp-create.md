@@ -1,16 +1,16 @@
 ---
 title: Criar iosStoreApp
 description: Cria um novo objeto iosStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cc760c71480e796be1e36ca37a74f0531e878f1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 976c54c4fb745169a905d14c8d6c8f8ab34d411a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196200"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355579"
 ---
 # <a name="create-iosstoreapp"></a>Criar iosStoreApp
 
@@ -163,6 +163,7 @@ Content-Length: 1198
   }
 }
 ```
+
 
 
 

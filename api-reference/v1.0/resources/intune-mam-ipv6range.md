@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iPv6Range
 description: Definição de intervalo IPv6.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04183f443d767236a1a7c0afb1d1ed9b92c37889
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8c747f86592394d6e9efc93bba2775872010b254
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038136"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356426"
 ---
 # <a name="ipv6range-resource-type"></a>Tipo de recurso iPv6Range
 
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "upperAddress": "String"
 }
 ```
+
 
 
 

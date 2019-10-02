@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosLobApp
 description: Atualiza as propriedades de um objeto iosLobApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a41f95873cd0b0bbfdcc5439053ce00c71fa27a1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 34304d08156522adca861af92d64be7f87aefca9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196214"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355614"
 ---
 # <a name="update-ioslobapp"></a>Atualizar iosLobApp
 
@@ -178,6 +178,7 @@ Content-Length: 1401
   "buildNumber": "Build Number value"
 }
 ```
+
 
 
 

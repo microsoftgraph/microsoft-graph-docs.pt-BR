@@ -1,16 +1,16 @@
 ---
 title: Criar macOSOfficeSuiteApp
 description: Criar um novo objeto macOSOfficeSuiteApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 07a2d810d55fe0734bb9c227405cd546e5e36ff4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 65a8053c2844a53d8e29dfa3474838b71fd618cc
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014211"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355516"
 ---
 # <a name="create-macosofficesuiteapp"></a>Criar macOSOfficeSuiteApp
 
@@ -127,6 +127,7 @@ Content-Length: 756
   "publishingState": "processing"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Obter na entidadeandroidworkprofilecompliancepolicy
 description: Leia as propriedades e as relações do objeto na entidadeandroidworkprofilecompliancepolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5291c9844eebc19b4030c129fdc9887f84015cee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff8a98468bebc2ea5437d0347faa682de3099d02
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019573"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354445"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>Obter na entidadeandroidworkprofilecompliancepolicy
 
@@ -99,6 +99,7 @@ Content-Length: 1417
   }
 }
 ```
+
 
 
 
