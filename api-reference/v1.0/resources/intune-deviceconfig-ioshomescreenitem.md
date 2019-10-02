@@ -1,33 +1,33 @@
 ---
 title: Tipo de recurso iosHomeScreenItem
 description: Representa um item na tela inicial do iOS
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5f7c92b1316b40efd9c87ac39c926669a251d58
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dcd542bee3ad68723752dabf421a961c65683c51
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031511"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359086"
 ---
-# <a name="ioshomescreenitem-resource-type"></a><span data-ttu-id="aa8c8-103">Tipo de recurso iosHomeScreenItem</span><span class="sxs-lookup"><span data-stu-id="aa8c8-103">iosHomeScreenItem resource type</span></span>
+# <a name="ioshomescreenitem-resource-type"></a><span data-ttu-id="6cc1a-103">Tipo de recurso iosHomeScreenItem</span><span class="sxs-lookup"><span data-stu-id="6cc1a-103">iosHomeScreenItem resource type</span></span>
 
-> <span data-ttu-id="aa8c8-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="aa8c8-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6cc1a-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6cc1a-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="aa8c8-105">Representa um item na tela inicial do iOS</span><span class="sxs-lookup"><span data-stu-id="aa8c8-105">Represents an item on the iOS Home Screen</span></span>
+<span data-ttu-id="6cc1a-105">Representa um item na tela inicial do iOS</span><span class="sxs-lookup"><span data-stu-id="6cc1a-105">Represents an item on the iOS Home Screen</span></span>
 
-## <a name="properties"></a><span data-ttu-id="aa8c8-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="aa8c8-106">Properties</span></span>
-|<span data-ttu-id="aa8c8-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="aa8c8-107">Property</span></span>|<span data-ttu-id="aa8c8-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="aa8c8-108">Type</span></span>|<span data-ttu-id="aa8c8-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="aa8c8-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6cc1a-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6cc1a-106">Properties</span></span>
+|<span data-ttu-id="6cc1a-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6cc1a-107">Property</span></span>|<span data-ttu-id="6cc1a-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="6cc1a-108">Type</span></span>|<span data-ttu-id="6cc1a-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="6cc1a-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="aa8c8-110">displayName</span><span class="sxs-lookup"><span data-stu-id="aa8c8-110">displayName</span></span>|<span data-ttu-id="aa8c8-111">String</span><span class="sxs-lookup"><span data-stu-id="aa8c8-111">String</span></span>|<span data-ttu-id="aa8c8-112">Nome do aplicativo</span><span class="sxs-lookup"><span data-stu-id="aa8c8-112">Name of the app</span></span>|
+|<span data-ttu-id="6cc1a-110">displayName</span><span class="sxs-lookup"><span data-stu-id="6cc1a-110">displayName</span></span>|<span data-ttu-id="6cc1a-111">String</span><span class="sxs-lookup"><span data-stu-id="6cc1a-111">String</span></span>|<span data-ttu-id="6cc1a-112">Nome do aplicativo</span><span class="sxs-lookup"><span data-stu-id="6cc1a-112">Name of the app</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="aa8c8-113">Relações</span><span class="sxs-lookup"><span data-stu-id="aa8c8-113">Relationships</span></span>
-<span data-ttu-id="aa8c8-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="aa8c8-114">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="6cc1a-113">Relações</span><span class="sxs-lookup"><span data-stu-id="6cc1a-113">Relationships</span></span>
+<span data-ttu-id="6cc1a-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6cc1a-114">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="aa8c8-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="aa8c8-115">JSON Representation</span></span>
-<span data-ttu-id="aa8c8-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="aa8c8-116">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6cc1a-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6cc1a-115">JSON Representation</span></span>
+<span data-ttu-id="6cc1a-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6cc1a-116">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenItem"
@@ -39,6 +39,7 @@ ms.locfileid: "36031511"
   "displayName": "String"
 }
 ```
+
 
 
 

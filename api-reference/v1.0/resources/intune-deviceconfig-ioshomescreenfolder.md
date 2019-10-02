@@ -1,37 +1,37 @@
 ---
 title: Tipo de recurso iosHomeScreenFolder
 description: Uma pasta que contém as páginas de aplicativos na tela inicial
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a22b20049c886b7cb1de2f7737b269fbd411749
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad796d334a3830b6bc5efac3ab1f29fe26cd2b04
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031513"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359115"
 ---
-# <a name="ioshomescreenfolder-resource-type"></a><span data-ttu-id="11589-103">Tipo de recurso iosHomeScreenFolder</span><span class="sxs-lookup"><span data-stu-id="11589-103">iosHomeScreenFolder resource type</span></span>
+# <a name="ioshomescreenfolder-resource-type"></a><span data-ttu-id="aae4c-103">Tipo de recurso iosHomeScreenFolder</span><span class="sxs-lookup"><span data-stu-id="aae4c-103">iosHomeScreenFolder resource type</span></span>
 
-> <span data-ttu-id="11589-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="11589-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="aae4c-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="aae4c-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="11589-105">Uma pasta que contém as páginas de aplicativos na tela inicial</span><span class="sxs-lookup"><span data-stu-id="11589-105">A folder containing pages of apps on the Home Screen</span></span>
+<span data-ttu-id="aae4c-105">Uma pasta que contém as páginas de aplicativos na tela inicial</span><span class="sxs-lookup"><span data-stu-id="aae4c-105">A folder containing pages of apps on the Home Screen</span></span>
 
 
-<span data-ttu-id="11589-106">Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span><span class="sxs-lookup"><span data-stu-id="11589-106">Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span></span>
+<span data-ttu-id="aae4c-106">Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span><span class="sxs-lookup"><span data-stu-id="aae4c-106">Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="11589-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="11589-107">Properties</span></span>
-|<span data-ttu-id="11589-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="11589-108">Property</span></span>|<span data-ttu-id="11589-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="11589-109">Type</span></span>|<span data-ttu-id="11589-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="11589-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="aae4c-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="aae4c-107">Properties</span></span>
+|<span data-ttu-id="aae4c-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="aae4c-108">Property</span></span>|<span data-ttu-id="aae4c-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="aae4c-109">Type</span></span>|<span data-ttu-id="aae4c-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="aae4c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="11589-111">displayName</span><span class="sxs-lookup"><span data-stu-id="11589-111">displayName</span></span>|<span data-ttu-id="11589-112">String</span><span class="sxs-lookup"><span data-stu-id="11589-112">String</span></span>|<span data-ttu-id="11589-113">Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span><span class="sxs-lookup"><span data-stu-id="11589-113">Name of the app Inherited from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span></span>|
-|<span data-ttu-id="11589-114">páginas</span><span class="sxs-lookup"><span data-stu-id="11589-114">pages</span></span>|<span data-ttu-id="11589-115">Conjunto [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)</span><span class="sxs-lookup"><span data-stu-id="11589-115">[iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md) collection</span></span>|<span data-ttu-id="11589-116">Páginas de ícones de layout da tela inicial que devem ser do tipo do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="11589-116">Pages of Home Screen Layout Icons which must be Application Type.</span></span> <span data-ttu-id="11589-117">Este conjunto pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="11589-117">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="aae4c-111">displayName</span><span class="sxs-lookup"><span data-stu-id="aae4c-111">displayName</span></span>|<span data-ttu-id="aae4c-112">String</span><span class="sxs-lookup"><span data-stu-id="aae4c-112">String</span></span>|<span data-ttu-id="aae4c-113">Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span><span class="sxs-lookup"><span data-stu-id="aae4c-113">Name of the app Inherited from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span></span>|
+|<span data-ttu-id="aae4c-114">páginas</span><span class="sxs-lookup"><span data-stu-id="aae4c-114">pages</span></span>|<span data-ttu-id="aae4c-115">Conjunto [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)</span><span class="sxs-lookup"><span data-stu-id="aae4c-115">[iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md) collection</span></span>|<span data-ttu-id="aae4c-116">Páginas de ícones de layout da tela inicial que devem ser do tipo do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="aae4c-116">Pages of Home Screen Layout Icons which must be Application Type.</span></span> <span data-ttu-id="aae4c-117">Este conjunto pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="aae4c-117">This collection can contain a maximum of 500 elements.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="11589-118">Relações</span><span class="sxs-lookup"><span data-stu-id="11589-118">Relationships</span></span>
-<span data-ttu-id="11589-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="11589-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="aae4c-118">Relações</span><span class="sxs-lookup"><span data-stu-id="aae4c-118">Relationships</span></span>
+<span data-ttu-id="aae4c-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="aae4c-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="11589-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="11589-120">JSON Representation</span></span>
-<span data-ttu-id="11589-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="11589-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="aae4c-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="aae4c-120">JSON Representation</span></span>
+<span data-ttu-id="aae4c-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="aae4c-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenFolder"
@@ -56,6 +56,7 @@ ms.locfileid: "36031513"
   ]
 }
 ```
+
 
 
 
