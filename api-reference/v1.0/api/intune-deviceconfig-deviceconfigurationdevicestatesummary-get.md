@@ -1,16 +1,16 @@
 ---
 title: Obter deviceConfigurationDeviceStateSummary
 description: Ler propriedades e relações do objeto deviceConfigurationDeviceStateSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8e9ef99e26d9017144d65e57ed8576fc87a2e66
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 573cb94d005bfbb7ee688e0e3374ee3c120898b8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019153"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368670"
 ---
 # <a name="get-deviceconfigurationdevicestatesummary"></a>Obter deviceConfigurationDeviceStateSummary
 
@@ -80,6 +80,7 @@ Content-Length: 376
   }
 }
 ```
+
 
 
 

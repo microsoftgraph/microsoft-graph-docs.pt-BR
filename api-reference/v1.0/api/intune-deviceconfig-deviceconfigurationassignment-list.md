@@ -1,16 +1,16 @@
 ---
 title: Listar deviceConfigurationAssignments
 description: Listar propriedades e relações dos objetos deviceConfigurationAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3ca436e9b30781ce03e3dac8b97632b2836eace
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4a985f0f5c4839e8cf7f94d418145655dc6bd55
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019174"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368761"
 ---
 # <a name="list-deviceconfigurationassignments"></a>Listar deviceConfigurationAssignments
 
@@ -75,6 +75,7 @@ Content-Length: 271
   ]
 }
 ```
+
 
 
 

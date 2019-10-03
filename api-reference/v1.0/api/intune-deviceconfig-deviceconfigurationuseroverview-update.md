@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceConfigurationUserOverview
 description: Atualizar as propriedades de um objeto deviceConfigurationUserOverview.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e48fa86955d42ad81dedb2c5c0cc5beab2e09646
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 31dacd98f47062be5e3f20061a6a8f57df985eac
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017564"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368579"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>Atualizar deviceConfigurationUserOverview
 
@@ -103,6 +103,7 @@ Content-Length: 331
   "configurationVersion": 4
 }
 ```
+
 
 
 

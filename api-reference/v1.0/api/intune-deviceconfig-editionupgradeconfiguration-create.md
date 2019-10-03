@@ -1,16 +1,16 @@
 ---
 title: Criar editionUpgradeConfiguration
 description: Cria um novo objeto editionUpgradeConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eab7fd76739832dc02bfb861298d1166af57ca48
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ff46afb29b9ece823e9115bd580fc6ca258135a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017445"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368509"
 ---
 # <a name="create-editionupgradeconfiguration"></a>Criar editionUpgradeConfiguration
 
@@ -107,6 +107,7 @@ Content-Length: 483
   "productKey": "Product Key value"
 }
 ```
+
 
 
 

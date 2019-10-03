@@ -1,16 +1,16 @@
 ---
 title: Acessar deviceConfigurationAssignment
 description: Leia as propriedades e as relações do objeto deviceConfigurationAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 978c4abe5f1e088ae16cd91f5b6ea7ec76f3be2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a2e3e7162f3d726be9b7ebb373ce147a090c8502
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017608"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368775"
 ---
 # <a name="get-deviceconfigurationassignment"></a>Acessar deviceConfigurationAssignment
 
@@ -76,6 +76,7 @@ Content-Length: 247
   }
 }
 ```
+
 
 
 

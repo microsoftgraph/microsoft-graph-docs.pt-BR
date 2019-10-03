@@ -1,16 +1,16 @@
 ---
 title: Atualizar editionUpgradeConfiguration
 description: Atualizar as propriedades de um objeto editionUpgradeConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 77e12cf924470db6a580c6a29d3cb80d65f37e8d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a1e438153d6ecf75e49b33e638149dc4d7196d4d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017424"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368453"
 ---
 # <a name="update-editionupgradeconfiguration"></a>Atualizar editionUpgradeConfiguration
 
@@ -107,6 +107,7 @@ Content-Length: 483
   "productKey": "Product Key value"
 }
 ```
+
 
 
 

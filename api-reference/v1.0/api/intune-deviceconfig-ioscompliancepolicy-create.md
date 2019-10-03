@@ -1,16 +1,16 @@
 ---
 title: Criar iosCompliancePolicy
 description: Cria um novo objeto iosCompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 56189509f61932c9ecb1c68cc3f48eb4e0933db9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 375c6b6666fdb62e58e0cb47c6cedf0d481053fb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018999"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368411"
 ---
 # <a name="create-ioscompliancepolicy"></a>Criar iosCompliancePolicy
 
@@ -137,6 +137,7 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
+
 
 
 
