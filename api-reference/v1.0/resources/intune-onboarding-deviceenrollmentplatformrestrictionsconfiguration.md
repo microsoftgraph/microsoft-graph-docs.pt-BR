@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceEnrollmentPlatformRestrictionsConfiguration
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c119a41b87f949f9d060976f0a96568415f6eea8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2643267703975cdaad7c284ed4e8e7bf68a54ba9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037496"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367221"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -106,6 +106,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

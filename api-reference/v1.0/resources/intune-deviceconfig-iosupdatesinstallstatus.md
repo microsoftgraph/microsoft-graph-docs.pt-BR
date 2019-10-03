@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração iosUpdatesInstallStatus
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d73f5bff06dd13e96206aa5d2d9e08d49b34004f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d47cc095cb751d4392a82ab388f2fcccab414573
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028151"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366843"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>tipo de enumeração iosUpdatesInstallStatus
 
@@ -38,6 +38,7 @@ Ainda não documentado
 |installFailed|-2016330702|Ainda não documentado|
 |notSupportedOperation|-2016330701|Ainda não documentado|
 |sharedDeviceUserLoggedInError|-2016330699|Ainda não documentado|
+
 
 
 

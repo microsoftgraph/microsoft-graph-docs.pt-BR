@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windows10CustomConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windows10CustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59512f4b4718a56c31bf5ee4b17bfc0b66c1978e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fff404b65d9366165c05c7916e191396147563b1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031035"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367585"
 ---
 # <a name="windows10customconfiguration-resource-type"></a>Tipo de recurso windows10CustomConfiguration
 
@@ -79,6 +79,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

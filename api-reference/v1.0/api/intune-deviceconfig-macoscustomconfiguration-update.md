@@ -1,16 +1,16 @@
 ---
 title: Atualizar macOSCustomConfiguration
 description: Atualizar as propriedades de um objeto macOSCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9faae3c3562c6ea3dddd0e1b0de6290becd63967
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a009d87943343c0ca918f49bdd4efb489bfc575b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997502"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366003"
 ---
 # <a name="update-macoscustomconfiguration"></a>Atualizar macOSCustomConfiguration
 
@@ -104,6 +104,7 @@ Content-Length: 453
   "payload": "cGF5bG9hZA=="
 }
 ```
+
 
 
 

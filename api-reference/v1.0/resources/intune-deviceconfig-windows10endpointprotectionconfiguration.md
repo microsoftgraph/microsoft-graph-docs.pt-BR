@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windows10EndpointProtectionConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso Windows10EndpointProtectionConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e64a218dc9ee507567df1271edb2d27051190cbe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c8336aee84102eefcd43d6cc256c71e0fcaf4a4c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027730"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367613"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>Tipo de recurso windows10EndpointProtectionConfiguration
 
@@ -194,6 +194,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Criar iosCustomConfiguration
 description: Cria um novo objeto iosCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 100003ccb875e0eaf4cd9744292e841d572d3ae2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a14c3a44cfb0ba79a4f76b0744838fd736894491
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017361"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368327"
 ---
 # <a name="create-ioscustomconfiguration"></a>Criar iosCustomConfiguration
 
@@ -104,6 +104,7 @@ Content-Length: 451
   "payload": "cGF5bG9hZA=="
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração ratingUnitedKingdomMoviesType
 description: Rótulos de classificação de filmes no Reino Unido
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e63502d186f2cae061c69f43f88780fe9ea8bef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7979651a43478aaa07746b6934f614c95b607491
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031175"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367473"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enumeração ratingUnitedKingdomMoviesType
 
@@ -30,6 +30,7 @@ Rótulos de classificação de filmes no Reino Unido
 |agesAbove12Cinema|6|12A, cinema versão adequada para 12 anos ou mais|
 |agesAbove15|178|15, adequado somente por 15 anos e mais|
 |adultos|8 |Adequado somente para adultos|
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração windows10EditionType
 description: Tipo Windows 10 Edition.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 35838492ad146b190af66ae2f07ba377b90cf86a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8be24402bf1a07e302bdd2bd2b9b776598e1d3a7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031021"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367081"
 ---
 # <a name="windows10editiontype-enum-type"></a>tipo de enumeração windows10EditionType
 
@@ -33,6 +33,7 @@ Tipo Windows 10 Edition.
 |windows10ProfessionalEducationN|9 |Windows 10 Professional Educan|
 |windows10ProfessionalWorkstation|10 |Windows 10 Professional para estações de trabalho|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional para estações de trabalho N|
+
 
 
 

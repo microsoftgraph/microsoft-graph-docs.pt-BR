@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração androidWorkProfileRequiredPasswordType
 description: Perfil de trabalho do Android tipo de senha exigido.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e9c65138a6dee7082b85261fd62c0fe9a9fd5e0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5cb75fca742f1be0d4e5e00b8ba7e46da3aed954
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028671"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366780"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>tipo de enumeração androidWorkProfileRequiredPasswordType
 
@@ -29,6 +29,7 @@ Perfil de trabalho do Android tipo de senha exigido.
 |atLeastAlphabetic|0,5|É necessária pelo menos a senha alfabética.|
 |atLeastAlphanumeric|6|É necessária pelo menos a senha alfanumérica.|
 |alphanumericWithSymbols|178|É necessário pelo menos alfanumérico com senha de símbolo.|
+
 
 
 

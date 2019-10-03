@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas para um conjunto específico de aplicativos
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 017687178f87107060600e5888eef9e13bbdadcf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 765f23c4ef805d2e2b5567c265be79c97227ded4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037916"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367788"
 ---
 # <a name="managedappprotection-resource-type"></a>Tipo de recurso managedAppProtection
 
@@ -124,4 +124,5 @@ Veja a seguir uma representação JSON do recurso.
   ],
 }
 -->
+
 

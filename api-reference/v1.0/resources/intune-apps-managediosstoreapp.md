@@ -1,16 +1,16 @@
 ---
 title: managedIOSStoreApp resource type
 description: Contém propriedades e propriedades herdadas para aplicativo da loja iOS que você pode gerenciar com uma política de proteção de aplicativos do Intune.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a8f686d790b9a0410d9345ad15ed5a02bea47d0
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 5c33d2c11dffad1c34730fee2c74fe890492c757
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195024"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368159"
 ---
 # <a name="managediosstoreapp-resource-type"></a>managedIOSStoreApp resource type
 
@@ -109,6 +109,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

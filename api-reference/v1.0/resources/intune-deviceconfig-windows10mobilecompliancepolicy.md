@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windows10MobileCompliancePolicy
 description: Essa classe contém as configurações de conformidade do Windows 10 Mobile.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb1bb44a54eeac557a8a39d3bfdeb916e3a06d5a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e4f0997858db503a19ccecbb1cf770e9d53a309
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027668"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367067"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>Tipo de recurso windows10MobileCompliancePolicy
 
@@ -102,6 +102,7 @@ Veja a seguir uma representação JSON do recurso.
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

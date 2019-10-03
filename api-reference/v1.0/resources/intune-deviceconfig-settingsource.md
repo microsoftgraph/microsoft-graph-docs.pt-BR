@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso settingSource
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e8560b52c30c66cb55b0506704b307283969587
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4607e403e33d2921706725cdf879fb9af6a675fb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031133"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367739"
 ---
 # <a name="settingsource-resource-type"></a>Tipo de recurso settingSource
 
@@ -41,6 +41,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
+
 
 
 

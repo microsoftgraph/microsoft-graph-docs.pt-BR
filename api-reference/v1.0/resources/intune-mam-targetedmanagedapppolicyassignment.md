@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso targetedManagedAppPolicyAssignment
 description: O tipo de implantação de grupos ou aplicativos.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: df0dfad513a3da06e6088e322a5bb8740bd011d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5f697b42ec73091c83affd41d984bed83bcbabfc
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037797"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367361"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>tipo de recurso targetedManagedAppPolicyAssignment
 
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

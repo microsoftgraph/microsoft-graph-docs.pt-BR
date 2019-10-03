@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração ratingJapanTelevisionType
 description: Rótulos de classificação de conteúdo de TV no Japão
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b5272f21ff74c82a5bcfc3355d0e4816538a6cf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4235abcb6c293846ab89940c7a47fdb2b749022
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027892"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367508"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>tipo de enumeração ratingJapanTelevisionType
 
@@ -24,6 +24,7 @@ Rótulos de classificação de conteúdo de TV no Japão
 |Permitido|,0|Valor padrão, permitir todos os programas de TV|
 |Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
 |explicitAllowed|duas|Todo o conteúdo da TV é explicitamente permitido|
+
 
 
 

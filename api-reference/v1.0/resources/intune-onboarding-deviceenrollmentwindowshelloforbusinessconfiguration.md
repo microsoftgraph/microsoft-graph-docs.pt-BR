@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 466a2feb979b9427e48765329cbc7e89fd74d635
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 31bf98e6bd23415e25ef2dbd3654aa993dd3224a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037489"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367207"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -45,7 +45,7 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceen
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Ainda não documentado. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Ainda não documentado. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Ainda não documentado. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
-|estado|[habilitação](../resources/intune-onboarding-enablement.md)|Ainda não documentado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|state|[habilitação](../resources/intune-onboarding-enablement.md)|Ainda não documentado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |securityDeviceRequired|Booliano|Ainda não documentado|
 |unlockWithBiometricsEnabled|Booliano|Ainda não documentado|
 |remotePassportEnabled|Booliano|Ainda não documentado|
@@ -90,6 +90,7 @@ Veja a seguir uma representação JSON do recurso.
   "enhancedBiometricsState": "String"
 }
 ```
+
 
 
 

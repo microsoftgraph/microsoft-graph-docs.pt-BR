@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso omaSettingBase64
 description: Definição de Base64 das configurações de OMA.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a8ab8552205084f41599a37c4a8edf39f329d85d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a3986bcb6294e2a6da8240e1f1930778fabbeff4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028039"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366577"
 ---
 # <a name="omasettingbase64-resource-type"></a>Tipo de recurso omaSettingBase64
 
@@ -50,6 +50,7 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
+
 
 
 

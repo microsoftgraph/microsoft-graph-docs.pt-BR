@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração requiredPasswordType
 description: Possíveis valores de senhas obrigatórias.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 653a95b4fc96b0e40ffb0ae37b8c877171920d3e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47bb124e60ea893f6f495859841c45090a16d44e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031147"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367417"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>tipo de enumeração requiredPasswordType
 
@@ -24,6 +24,7 @@ Possíveis valores de senhas obrigatórias.
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
 |tecla|1|Senha alfanumérica obrigatória.|
 |numéricos|duas|Senha numérica obrigatória.|
+
 
 
 

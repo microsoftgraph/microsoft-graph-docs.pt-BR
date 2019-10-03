@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosCompliancePolicy
 description: Atualiza as propriedades de um objeto iosCompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c74babfb9f1a7e5cb58e4c6b9b79b4999b8bebd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: acb29cd24faa95e0874c9ff0aa92f915489f8041
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017354"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368334"
 ---
 # <a name="update-ioscompliancepolicy"></a>Atualizar iosCompliancePolicy
 
@@ -137,6 +137,7 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
+
 
 
 

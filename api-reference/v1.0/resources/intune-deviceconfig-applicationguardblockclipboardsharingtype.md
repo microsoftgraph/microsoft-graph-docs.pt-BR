@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração applicationGuardBlockClipboardSharingType
 description: Valores possíveis para applicationGuardBlockClipboardSharingType
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a0c6263fe48876ed52e7da81b41975a781cc9636
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 25b429fdd4fdbbb4e5be6a450c814c8fccbbdc54
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028641"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366759"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>tipo de enumeração applicationGuardBlockClipboardSharingType
 
@@ -26,6 +26,7 @@ Valores possíveis para applicationGuardBlockClipboardSharingType
 |blockHostToContainer|duas|Bloquear a área de transferência para compartilhar dados do host para o contêiner|
 |blockContainerToHost|3D|Bloquear área de transferência para compartilhar dados de contêiner para host|
 |blockNone|quatro|Bloquear área de transferência para compartilhar dados que não sejam do host para o contêiner nem do contêiner para o host|
+
 
 
 

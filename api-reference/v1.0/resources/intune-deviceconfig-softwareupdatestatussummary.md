@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso softwareUpdateStatusSummary
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ad05a8cfc29c558b0fe8de77f81f1e351c750d2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 18ac68eeab809195126f021bcb08e86a7a30ff5d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027759"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367137"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>Tipo de recurso softwareUpdateStatusSummary
 
@@ -76,6 +76,7 @@ Veja a seguir uma representação JSON do recurso.
   "notApplicableUserCount": 1024
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceEnrollmentConfiguration
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c406f29b999f507a1214118f9c6c5f2998d37713
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6f97e54a02457bf8e7d50826cb6c9337dbf5685a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037545"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367263"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -62,6 +62,7 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
+
 
 
 

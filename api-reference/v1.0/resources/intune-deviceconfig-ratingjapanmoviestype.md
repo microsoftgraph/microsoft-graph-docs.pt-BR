@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração ratingJapanMoviesType
 description: Rótulos de classificação de filmes no Japão
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6833c6c390ea15faa6110b85d789b492eefc0083
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2a3df1dfd42adc15c77dfe176fac65a591575737
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031196"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367515"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>tipo de enumeração ratingJapanMoviesType
 
@@ -27,6 +27,7 @@ Rótulos de classificação de filmes no Japão
 |parentalGuidance|3D|A orientação responsável pelas solicitações de classificação do PG-12 para jovens, às pequenas pessoas, menos de 12|
 |agesAbove15|quatro|A classificação R15 + é adequada para visualizadores de 15 ou mais|
 |agesAbove18|0,5|A classificação R18 + é adequada para visualizadores de 18 ou mais|
+
 
 
 

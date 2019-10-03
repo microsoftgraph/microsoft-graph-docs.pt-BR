@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso appleDeviceFeaturesConfigurationBase
 description: Perfil de configuração de recursos do dispositivo Apple.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7c5f5857ae372e62c2fa1210c180c19d04811b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33f59e6004e4227ab79ce41f4ae6ca03a43477b5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028655"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366773"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>Tipo de recurso appleDeviceFeaturesConfigurationBase
 
@@ -66,6 +66,7 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
+
 
 
 

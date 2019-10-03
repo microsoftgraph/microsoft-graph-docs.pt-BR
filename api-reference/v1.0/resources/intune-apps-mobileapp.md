@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso mobileApp
 description: Uma classe abstrata que contém as propriedades base de aplicativos móveis do Intune.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08bc3cb0c6b1a7b815e30179aa79861b08ad3b15
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69e1e604fe3cc2cfc0702f54fcdc48e8941cf7ed
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028949"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368103"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -80,6 +80,7 @@ Veja a seguir uma representação JSON do recurso.
   "publishingState": "String"
 }
 ```
+
 
 
 

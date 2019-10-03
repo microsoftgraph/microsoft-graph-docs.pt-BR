@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração installIntent
 description: Valores possíveis para o propósito de instalação escolhido pelo administrador.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ab42bde2c31537371ae1fd7e3b248bbdfce964ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b0c46dcb61cf9e7f5f4524a0f86959f60738242c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036894"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367165"
 ---
 # <a name="installintent-enum-type"></a>tipo de enumeração installIntent
 
@@ -25,6 +25,7 @@ Valores possíveis para o propósito de instalação escolhido pelo administrado
 |obrigatório|1|Tentativa de instalação necessária.|
 |INTAL|duas|Tentativa de instalação de desinstalação.|
 |availableWithoutEnrollment|3D|Disponível sem a intenção de instalação do registro.|
+
 
 
 

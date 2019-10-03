@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceEnrollmentLimitConfiguration
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae7b3884faf5b97def8b7d736d80ea542fc24f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f193aa1c5437da89c90c9844d3a8c7bf4cc05e63
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037531"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367242"
 ---
 # <a name="deviceenrollmentlimitconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentLimitConfiguration
 
@@ -68,6 +68,7 @@ Veja a seguir uma representação JSON do recurso.
   "limit": 1024
 }
 ```
+
 
 
 

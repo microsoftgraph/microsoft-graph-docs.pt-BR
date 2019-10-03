@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração bitLockerEncryptionMethod
 description: Tipos BitLockerEncryptionMethod
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c35c96c0ef38fb57d0b0c69a6d2977954d678fec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 594b1bab8fe1b98c9101a89bd2cbc40ac1c81403
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028557"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366675"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>tipo de enumeração bitLockerEncryptionMethod
 
@@ -25,6 +25,7 @@ Tipos BitLockerEncryptionMethod
 |aesCbc256|quatro|AES-CBC 256-bit.|
 |xtsAes128|6|XTS-AES 128-bit.|
 |xtsAes256|178|XTS-AES 256-bit.|
+
 
 
 

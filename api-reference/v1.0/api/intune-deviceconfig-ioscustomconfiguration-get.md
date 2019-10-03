@@ -1,16 +1,16 @@
 ---
 title: Acessar iosCustomConfiguration
 description: Leia as propriedades e as relações do objeto iosCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36b90667accbae7c6f867c6445269e330133ad0f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c38db3b26a35aacc53a20e6040f5037ad72378d1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017333"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366451"
 ---
 # <a name="get-ioscustomconfiguration"></a>Acessar iosCustomConfiguration
 
@@ -81,6 +81,7 @@ Content-Length: 490
   }
 }
 ```
+
 
 
 

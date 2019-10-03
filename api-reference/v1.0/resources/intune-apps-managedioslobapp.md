@@ -1,16 +1,16 @@
 ---
 title: managedIOSLobApp resource type
 description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios iOS gerenciados.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ecb55b7e3d9882066c311a2331a6ea78b92e3b0
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 042a19f781b33d65f2c87141388c959d8ba58f5f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195003"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368187"
 ---
 # <a name="managedioslobapp-resource-type"></a>managedIOSLobApp resource type
 
@@ -120,6 +120,7 @@ Veja a seguir uma representação JSON do recurso.
   "buildNumber": "String"
 }
 ```
+
 
 
 

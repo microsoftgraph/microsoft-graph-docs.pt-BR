@@ -1,16 +1,16 @@
 ---
 title: Excluir iosCompliancePolicy
 description: Exclui iosCompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c29595693850cb1a5c3626399bdedf1b95522a86
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 80970c5900e28b367c4350cfbd957ca7d8e8380d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017368"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368397"
 ---
 # <a name="delete-ioscompliancepolicy"></a>Excluir iosCompliancePolicy
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

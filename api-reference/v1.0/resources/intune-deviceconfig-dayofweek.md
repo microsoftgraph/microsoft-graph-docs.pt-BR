@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração de dayOfWeek
 description: Valores possíveis para um dia da semana
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 259d6fb135d8665d320b7de34ab8aa237b7a879a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 880767dbce86bf35ea329abd2f110cf232008dd4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031882"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366647"
 ---
 # <a name="dayofweek-enum-type"></a>tipo de enumeração de dayOfWeek
 
@@ -28,6 +28,7 @@ Valores possíveis para um dia da semana
 |quinta-feira|quatro|Quinta-feira.|
 |sexta|0,5|Sexta-feira.|
 |sábado|6|Sábado.|
+
 
 
 

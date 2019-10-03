@@ -1,16 +1,16 @@
 ---
 title: Excluir iosCustomConfiguration
 description: Exclui iosCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3faea675124325b6f7da0ae0c5eeb8fa37a34661
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6af43ce424c72ef28987d3f6ce5f107dfa31d4f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018950"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366465"
 ---
 # <a name="delete-ioscustomconfiguration"></a>Excluir iosCustomConfiguration
 
@@ -61,6 +61,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

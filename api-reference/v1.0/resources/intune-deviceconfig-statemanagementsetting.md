@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração stateManagementSetting
 description: Configuração de gerenciamento de estado.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0870f6644fa8008617e67a5795a8ea8387627803
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd5f1e447b361909ff66bb2573255d1ff858e021
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031098"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367662"
 ---
 # <a name="statemanagementsetting-enum-type"></a>tipo de enumeração stateManagementSetting
 
@@ -24,6 +24,7 @@ Configuração de gerenciamento de estado.
 |notConfigured|,0|Não configurado.|
 |bloqueou|1|Bloqueou.|
 |autorizado|duas|Autorizado.|
+
 
 
 

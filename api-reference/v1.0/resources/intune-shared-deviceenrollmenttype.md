@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração deviceEnrollmentType
 description: Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: afb007893ac0b41d4439635ed78b528058d41364
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae60fd6657cf902eb5bdd0f919d446527b00d9a9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036957"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368271"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeração deviceEnrollmentType
 
@@ -31,6 +31,7 @@ Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 |windowsAutoEnrollment|178|Registro automático do Windows 10. (Adicionar conta de trabalho)|
 |windowsBulkAzureDomainJoin|8 |Ingresso no Azure AD em massa do Windows 10.|
 |windowsCoManagement|9 |Co-gerenciamento de intergestão do Windows 10 disparado por AutoPilot ou política de grupo.|
+
 
 
 

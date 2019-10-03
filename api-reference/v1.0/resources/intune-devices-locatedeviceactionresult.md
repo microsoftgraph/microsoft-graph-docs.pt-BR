@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso locateDeviceActionResult
 description: Resultado de ação de localizar dispositivo
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69d4eea303711cc5c2174ee05ae97225521ed89f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ee99ade1a76a3126e08de5ca3986df574178cee
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030741"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368005"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>Tipo de recurso locateDeviceActionResult
 
@@ -60,6 +60,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

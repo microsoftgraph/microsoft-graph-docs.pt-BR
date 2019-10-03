@@ -1,16 +1,16 @@
 ---
 title: Listar iosCompliancePolicies
 description: Listar propriedades e relações dos objetos iosCompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 959947928959efc8f9c8b8f0641d92a6d7a28719
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d2e93b42bfa0707f751285760e50255e6b9ab569
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017340"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368362"
 ---
 # <a name="list-ioscompliancepolicies"></a>Listar iosCompliancePolicies
 
@@ -91,6 +91,7 @@ Content-Length: 1034
   ]
 }
 ```
+
 
 
 

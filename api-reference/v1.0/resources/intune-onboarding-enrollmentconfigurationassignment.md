@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso enrollmentConfigurationAssignment
 description: Ainda não documentado
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0cb0cf596fa1535cf7088987869a478aa8d5a571
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adbe0d4dfaff01b549ced052975bc81ea71e95c5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037344"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367907"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Tipo de recurso enrollmentConfigurationAssignment
 
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

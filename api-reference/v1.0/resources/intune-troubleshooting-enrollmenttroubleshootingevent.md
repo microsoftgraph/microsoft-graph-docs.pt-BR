@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso enrollmentTroubleshootingEvent
 description: Evento que representa uma falha de registro.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b17cb948e67fa178c9839b95eebebe50d4a5b486
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f7582c18eeb58ff839f1e5dc9f83975e182aa66c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036700"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368019"
 ---
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>Tipo de recurso enrollmentTroubleshootingEvent
 
@@ -72,6 +72,7 @@ Veja a seguir uma representação JSON do recurso.
   "failureReason": "String"
 }
 ```
+
 
 
 

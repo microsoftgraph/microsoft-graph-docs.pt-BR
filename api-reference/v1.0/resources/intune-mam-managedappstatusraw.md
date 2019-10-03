@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso managedAppStatusRaw
 description: Representa um relatório de status não digitado sobre configuração e proteção de aplicativos para organizações.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b21c15784409d9d7c373c954faecbc23426041b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d6b597f23cc10ba27b57cf5acbe5baf8bc9c328
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037874"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367011"
 ---
 # <a name="managedappstatusraw-resource-type"></a>tipo de recurso managedAppStatusRaw
 
@@ -57,6 +57,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

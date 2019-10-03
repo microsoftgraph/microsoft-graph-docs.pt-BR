@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso onPremisesConditionalAccessSettings
 description: Entidade singleton que representa as Configurações de acesso condicional do Exchange OnPremises para um locatário.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4152cd37907b8623b616845b2d82272a9ad83bd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa2c7030f7e9e1328c3b6dbc3f43e93bb10192e8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037356"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367851"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>Tipo de recurso onPremisesConditionalAccessSettings
 
@@ -58,6 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "overrideDefaultRule": true
 }
 ```
+
 
 
 

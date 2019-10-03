@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso mobileThreatDefenseConnector
 description: Entidade que representa uma conexão com o parceiro de defesa contra ameaças móveis.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e21789aeaf34066e34215df2d8cc6dcde2d331d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 45cd18a7afea2a8a8c56a7cb04354c2af7511822
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037342"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367865"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>Tipo de recurso mobileThreatDefenseConnector
 
@@ -65,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
+
 
 
 

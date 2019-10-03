@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedAppPolicyDeploymentSummary
 description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d60ba93a5c1a090e511a6cc4aa96444b2581d78
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a04ea41ff3472c58255b1682914e6acad98ed57
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037951"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367809"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>Tipo de recurso managedAppPolicyDeploymentSummary
 
@@ -65,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
 
 
 

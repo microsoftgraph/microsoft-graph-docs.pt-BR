@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedDeviceMobileAppConfiguration
 description: Uma classe abstrata para a configuração do Aplicativo móvel para dispositivos registrados.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a833936d24594159708d7dfe3fc8a451d0893e98
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2973c07eb4e694f3d231adc5513e0a9cb5aa8dd0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029047"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368257"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfiguration
 
@@ -67,6 +67,7 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
+
 
 
 

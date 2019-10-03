@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceManagementTroubleshootingEvent
 description: Evento que representa uma falha geral.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6278ed7b7fe66655b1450bbae9e10cf7b8d78ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6ba271d224f56d92912a816184feb5db88df31eb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036740"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368012"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingEvent
 
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "correlationId": "String"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração defenderMonitorFileActivity
 description: Valores possíveis para monitorar a atividade do arquivo.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3a731f6e23c18c202c3baca3bd14e855152c558
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 04e18e6935ef4ec6c1f3c2415a638d08f9e4576b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031847"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366605"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>tipo de enumeração defenderMonitorFileActivity
 
@@ -26,6 +26,7 @@ Valores possíveis para monitorar a atividade do arquivo.
 |monitorAllFiles|duas|Monitorar todos os arquivos.|
 |monitorIncomingFilesOnly|3D| Monitorar somente os arquivos de entrada.|
 |monitorOutgoingFilesOnly|quatro|Monitorar somente os arquivos de saída.|
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração deviceManagementPartnerTenantState
 description: Estado do parceiro desse locatário.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 103fd9149e7bc17a7f72a5af5ab002f136e616d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e1903b192891befa4d9b1806d764a1faecbdbc0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037384"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368313"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enumeração deviceManagementPartnerTenantState
 
@@ -27,6 +27,7 @@ Estado do parceiro desse locatário.
 |Cerro|3D|Conexão de parceiro terminada.|
 |rejeitar|quatro|As mensagens de parceiros são rejeitadas.|
 |Não responde|0,5|O parceiro não responde.|
+
 
 
 

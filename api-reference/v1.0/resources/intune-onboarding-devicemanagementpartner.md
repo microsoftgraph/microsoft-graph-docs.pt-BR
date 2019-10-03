@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceManagementPartner
 description: Entidade que representa uma conexão ao parceiro de gerenciamento de dispositivos.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 170d63445bb74570fcf3c4684aacb120285c9dec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 95e51a8386c59e29cd0b73b6cd5fb4f5f9895c4a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037426"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367942"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Tipo de recurso deviceManagementPartner
 
@@ -65,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
+
 
 
 
