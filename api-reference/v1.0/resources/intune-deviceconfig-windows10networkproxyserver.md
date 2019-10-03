@@ -1,35 +1,35 @@
 ---
 title: Tipo de recurso windows10NetworkProxyServer
 description: Política de Servidor Proxy de Rede.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b68f13ab80544d591b22fc77ab35110302dc48ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b126358a8ab8574d4dcbf7c1f22e412eda41d61f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031007"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367053"
 ---
-# <a name="windows10networkproxyserver-resource-type"></a><span data-ttu-id="82a39-103">Tipo de recurso windows10NetworkProxyServer</span><span class="sxs-lookup"><span data-stu-id="82a39-103">windows10NetworkProxyServer resource type</span></span>
+# <a name="windows10networkproxyserver-resource-type"></a><span data-ttu-id="b488f-103">Tipo de recurso windows10NetworkProxyServer</span><span class="sxs-lookup"><span data-stu-id="b488f-103">windows10NetworkProxyServer resource type</span></span>
 
-> <span data-ttu-id="82a39-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="82a39-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b488f-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b488f-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="82a39-105">Política de Servidor Proxy de Rede.</span><span class="sxs-lookup"><span data-stu-id="82a39-105">Network Proxy Server Policy.</span></span>
+<span data-ttu-id="b488f-105">Política de Servidor Proxy de Rede.</span><span class="sxs-lookup"><span data-stu-id="b488f-105">Network Proxy Server Policy.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="82a39-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="82a39-106">Properties</span></span>
-|<span data-ttu-id="82a39-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="82a39-107">Property</span></span>|<span data-ttu-id="82a39-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="82a39-108">Type</span></span>|<span data-ttu-id="82a39-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="82a39-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b488f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b488f-106">Properties</span></span>
+|<span data-ttu-id="b488f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b488f-107">Property</span></span>|<span data-ttu-id="b488f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="b488f-108">Type</span></span>|<span data-ttu-id="b488f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="b488f-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="82a39-110">address</span><span class="sxs-lookup"><span data-stu-id="82a39-110">address</span></span>|<span data-ttu-id="82a39-111">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="82a39-111">String</span></span>|<span data-ttu-id="82a39-112">Endereço para o servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="82a39-112">Address to the proxy server.</span></span> <span data-ttu-id="82a39-113">Especifique um endereço no formato <server>\[“:”<port>\]</span><span class="sxs-lookup"><span data-stu-id="82a39-113">Specify an address in the format <server>\[“:”<port>\]</span></span>|
-|<span data-ttu-id="82a39-114">exceptions</span><span class="sxs-lookup"><span data-stu-id="82a39-114">exceptions</span></span>|<span data-ttu-id="82a39-115">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="82a39-115">String collection</span></span>|<span data-ttu-id="82a39-116">Endereços que não devem usar o servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="82a39-116">Addresses that should not use the proxy server.</span></span> <span data-ttu-id="82a39-117">O sistema não usará o servidor proxy para endereços que começam com o conteúdo especificado nesse nó.</span><span class="sxs-lookup"><span data-stu-id="82a39-117">The system will not use the proxy server for addresses beginning with what is specified in this node.</span></span>|
-|<span data-ttu-id="82a39-118">useForLocalAddresses</span><span class="sxs-lookup"><span data-stu-id="82a39-118">useForLocalAddresses</span></span>|<span data-ttu-id="82a39-119">Booliano</span><span class="sxs-lookup"><span data-stu-id="82a39-119">Boolean</span></span>|<span data-ttu-id="82a39-120">Especifica se o servidor proxy deve ser usado para endereços locais (intranet).</span><span class="sxs-lookup"><span data-stu-id="82a39-120">Specifies whether the proxy server should be used for local (intranet) addresses.</span></span>|
+|<span data-ttu-id="b488f-110">address</span><span class="sxs-lookup"><span data-stu-id="b488f-110">address</span></span>|<span data-ttu-id="b488f-111">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="b488f-111">String</span></span>|<span data-ttu-id="b488f-112">Endereço para o servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="b488f-112">Address to the proxy server.</span></span> <span data-ttu-id="b488f-113">Especifique um endereço no formato <server>\[“:”<port>\]</span><span class="sxs-lookup"><span data-stu-id="b488f-113">Specify an address in the format <server>\[“:”<port>\]</span></span>|
+|<span data-ttu-id="b488f-114">exceptions</span><span class="sxs-lookup"><span data-stu-id="b488f-114">exceptions</span></span>|<span data-ttu-id="b488f-115">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="b488f-115">String collection</span></span>|<span data-ttu-id="b488f-116">Endereços que não devem usar o servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="b488f-116">Addresses that should not use the proxy server.</span></span> <span data-ttu-id="b488f-117">O sistema não usará o servidor proxy para endereços que começam com o conteúdo especificado nesse nó.</span><span class="sxs-lookup"><span data-stu-id="b488f-117">The system will not use the proxy server for addresses beginning with what is specified in this node.</span></span>|
+|<span data-ttu-id="b488f-118">useForLocalAddresses</span><span class="sxs-lookup"><span data-stu-id="b488f-118">useForLocalAddresses</span></span>|<span data-ttu-id="b488f-119">Booliano</span><span class="sxs-lookup"><span data-stu-id="b488f-119">Boolean</span></span>|<span data-ttu-id="b488f-120">Especifica se o servidor proxy deve ser usado para endereços locais (intranet).</span><span class="sxs-lookup"><span data-stu-id="b488f-120">Specifies whether the proxy server should be used for local (intranet) addresses.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="82a39-121">Relações</span><span class="sxs-lookup"><span data-stu-id="82a39-121">Relationships</span></span>
-<span data-ttu-id="82a39-122">Nenhum</span><span class="sxs-lookup"><span data-stu-id="82a39-122">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b488f-121">Relações</span><span class="sxs-lookup"><span data-stu-id="b488f-121">Relationships</span></span>
+<span data-ttu-id="b488f-122">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b488f-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="82a39-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="82a39-123">JSON Representation</span></span>
-<span data-ttu-id="82a39-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="82a39-124">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b488f-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b488f-123">JSON Representation</span></span>
+<span data-ttu-id="b488f-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b488f-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows10NetworkProxyServer"
@@ -45,6 +45,7 @@ ms.locfileid: "36031007"
   "useForLocalAddresses": true
 }
 ```
+
 
 
 
