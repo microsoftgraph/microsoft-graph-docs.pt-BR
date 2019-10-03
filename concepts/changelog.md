@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: fefe022cb3c2aafb14819f909efa58bc29fa8a95
-ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
+ms.openlocfilehash: bfaa2aec347b0dd710d0bb52abfaa96d50424eab
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "36853802"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333280"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,12 +18,115 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="september-2019"></a>Setembro de 2019
 
+### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
+
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[androidDeviceOwnerScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile)<br/>[androidManagedStoreWebApp](/graph/api/resources/intune-apps-androidmanagedstorewebapp)<br/>[appleEnrollmentProfileAssignment](/graph/api/resources/intune-enrollment-appleenrollmentprofileassignment)<br/>[appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile)<br/>[deviceCompliancePolicyPolicySetItem](/graph/api/resources/intune-policyset-devicecompliancepolicypolicysetitem)<br/>[deviceConfigurationPolicySetItem](/graph/api/resources/intune-policyset-deviceconfigurationpolicysetitem)<br/>[deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent)<br/>[deviceManagementScriptPolicySetItem](/graph/api/resources/intune-policyset-devicemanagementscriptpolicysetitem)<br/>[enrollmentRestrictionsConfigurationPolicySetItem](/graph/api/resources/intune-policyset-enrollmentrestrictionsconfigurationpolicysetitem)<br/>[iosLobAppProvisioningConfigurationPolicySetItem](/graph/api/resources/intune-policyset-ioslobappprovisioningconfigurationpolicysetitem)<br/>[macManagedAppProtection](/graph/api/resources/intune-policyset-macmanagedappprotection)<br/>[managedAppProtectionPolicySetItem](/graph/api/resources/intune-policyset-managedappprotectionpolicysetitem)<br/>[managedDeviceMobileAppConfigurationPolicySetItem](/graph/api/resources/intune-policyset-manageddevicemobileappconfigurationpolicysetitem)<br/>[mdmWindowsInformationProtectionPolicyPolicySetItem](/graph/api/resources/intune-policyset-mdmwindowsinformationprotectionpolicypolicysetitem)<br/>[mobileAppPolicySetItem](/graph/api/resources/intune-policyset-mobileapppolicysetitem)<br/>[policySet](/graph/api/resources/intune-policyset-policyset)<br/>[policySetAssignment](/graph/api/resources/intune-policyset-policysetassignment)<br/>[policySetItem](/graph/api/resources/intune-policyset-policysetitem)<br/>[targetedManagedAppConfigurationPolicySetItem](/graph/api/resources/intune-policyset-targetedmanagedappconfigurationpolicysetitem)<br/>[windows10EnrollmentCompletionPageConfigurationPolicySetItem](/graph/api/resources/intune-policyset-windows10enrollmentcompletionpageconfigurationpolicysetitem)<br/>[windowsAutopilotDeploymentProfilePolicySetItem](/graph/api/resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem)<br/>[windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile)<br/>[windowsFeatureUpdateProfileAssignment](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofileassignment)<br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[appleOwnerTypeEnrollmentType](/graph/api/resources/intune-enrollment-appleownertypeenrollmenttype)<br/>[configurationManagerAction](/graph/api/resources/intune-devices-configurationmanageraction)<br/>[credentialSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-credentialsinglesignonextension)<br/>[hasPayloadLinkResultItem](/graph/api/resources/intune-policyset-haspayloadlinkresultitem)<br/>[iosKerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-ioskerberossinglesignonextension)<br/>[kerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-kerberossinglesignonextension)<br/>[keyBooleanValuePair](/graph/api/resources/intune-deviceconfig-keybooleanvaluepair)<br/>[keyIntegerValuePair](/graph/api/resources/intune-deviceconfig-keyintegervaluepair)<br/>[keyRealValuePair](/graph/api/resources/intune-deviceconfig-keyrealvaluepair)<br/>[keyStringValuePair](/graph/api/resources/intune-deviceconfig-keystringvaluepair)<br/>[keyTypedValuePair](/graph/api/resources/intune-deviceconfig-keytypedvaluepair)<br/>[macOSKerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-macoskerberossinglesignonextension)<br/>[singleSignOnExtension](/graph/api/resources/intune-deviceconfig-singlesignonextension)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[appleUserInitiatedEnrollmentType](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmenttype)<br/>[bitLockerRecoveryPasswordRotationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype)<br/>[configurationManagerActionType](/graph/api/resources/intune-devices-configurationmanageractiontype)<br/>[deviceAndAppManagementAssignmentSource](/graph/api/resources/intune-shared-deviceandappmanagementassignmentsource)<br/>[errorCode](/graph/api/resources/intune-policyset-errorcode)<br/>[logLevel](/graph/api/resources/intune-troubleshooting-loglevel)<br/>[policySetStatus](/graph/api/resources/intune-policyset-policysetstatus)<br/>[userExperienceAnalyticsHealthState](/graph/api/resources/intune-devices-userexperienceanalyticshealthstate)<br/>[userExperienceAnalyticsInsightSeverity](/graph/api/resources/intune-devices-userexperienceanalyticsinsightseverity)<br/>[windowsAutopilotDeploymentState](/graph/api/resources/intune-troubleshooting-windowsautopilotdeploymentstate)<br/>[windowsAutopilotEnrollmentType](/graph/api/resources/intune-troubleshooting-windowsautopilotenrollmenttype)<br/>|
+|Adição|beta|Adicionada a ação [atualizar](/graph/api/intune-policyset-policyset-update.md) ao [policySet](/graph/api/resources/intune-policyset-policyset) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-mobileapp-haspayloadlinks.md) à coleção [mobileApp](/graph/api/resources/intune-apps-mobileapp) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md) à coleção [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) à coleção [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-androidmanagedappprotection-haspayloadlinks.md) à coleção [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-macmanagedappprotection-haspayloadlinks.md) à coleção [macManagedAppProtection](/graph/api/resources/intune-policyset-macmanagedappprotection) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md) à coleção [mdmWindowsInformationProtectionPolicy](/graph/api/resources/intune-mam-mdmwindowsinformationprotectionpolicy) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) à coleção [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration) |
+|Adição|beta|Adicionada a ação [getPolicySets](/graph/api/intune-policyset-policyset-getpolicysets.md) à coleção [policySet](/graph/api/resources/intune-policyset-policyset) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-devicemanagementscript-haspayloadlinks.md) à coleção [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-deviceconfiguration-haspayloadlinks.md) à coleção [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-devicecompliancepolicy-haspayloadlinks.md) à coleção [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md) à coleção [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile) |
+|Adição|beta|Adicionada a ação [hasPayloadLinks](/graph/api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md) à coleção [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration) |
+|Adição|beta|Adicionada a ação [triggerConfigurationManagerAction](/graph/api/intune-devices-manageddevice-triggerconfigurationmanageraction.md) ao [managedDevice](/graph/api/resources/intune-devices-manageddevice) |
+|Adição|beta|Adicionada a ação [setPriority](/graph/api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md) ao [appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile) |
+|Adição|beta|Adicionada a ação [atribuir](/graph/api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md) ao [windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile) |
+|Adição|beta|Adicionada a função [getExpiringVppTokenCount](o:getExpiringVppTokenCount:Collection(microsoft.graph.depOnboardingSetting)) à coleção [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting) collection |
+|Adição|beta|Adicionas as propriedades **deviceThreatProtectionEnabled**, **deviceThreatProtectionRequiredSecurityLevel**, **securityRequireSafetyNetAttestationBasicIntegrity** e **securityRequireSafetyNetAttestationCertifiedDevice** à entidade [androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy)|
+|Adição|beta|Adicionada a propriedade **workProfileAllowWidgets** à entidade [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration)|
+|Adição|beta|Adicionadas as propriedades **isPrivate** e **isSystemApp** properties à entidade [androidManagedStoreApp](/graph/api/resources/intune-apps-androidmanagedstoreapp).|
+|Adição|beta|Adicionada a propriedade **workProfileAllowWidgets** à entidade [androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration)|
+|Adição|beta|Adicionada a propriedade **screenTimeScreenDisabled** à entidade [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile)|
+|Adição|beta|Adicionadas as propriedades **appearanceScreenDisabled**, **expressLanguageScreenDisabled**, **preferredLanguageScreenDisabled**, **deviceToDeviceMigrationDisabled** e **welcomeScreenDisabled** à entidade [depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile)|
+|Exclusão|beta|Removida a propriedade **screenTimeScreenDisabled** da entidade [depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile)|
+|Adição|beta|Adicionadas as propriedades **source** e **sourceId** à entidade [deviceConfigurationAssignment](/graph/api/resources/intune-deviceconfig-deviceconfigurationassignment)|
+|Exclusão|beta|Removida a propriedade **runRemediationScript** da entidade [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript)|
+|Adição|beta|Adicionadas as propriedades**singleSignOnExtension** à entidade [iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration)|
+|Adição|beta|Adicionadas as propriedades **kioskModeEnableVoiceControl** e**kioskModeAllowVoiceControlModification** à entidade [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration)|
+|Adição|beta|Adicionadas as propriedades **associatedDomains** e **singleSignOnExtension** à entidade [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration)|
+|Adição|beta|Adicionadas as propriedades **source** e **sourceId** à entidade [targetedManagedAppPolicyAssignment](/graph/api/resources/intune-mam-targetedmanagedapppolicyassignment)|
+|Adição|beta|Adicionada a propriedade **roleScopeTagIds** à entidade [termsAndConditions](/graph/api/resources/intune-companyterms-termsandconditions)|
+|Adição|beta|Adicionadas as propriedades **isBuiltIn** e **createdDateTime** à entidade [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline)|
+|Exclusão|beta|Removidas as propriedades **overallScore** e **overallRegressionThreshold** da entidade [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline)|
+|Exclusão|beta|Removidas as propriedades **displayName** e **overallScore** da entidade [userExperienceAnalyticsCategory](/graph/api/resources/intune-devices-userexperienceanalyticscategory)|
+|Exclusão|beta|Removida a propriedade **displayName** da entidade [userExperienceAnalyticsMetric](/graph/api/resources/intune-devices-userexperienceanalyticsmetric)|
+|Exclusão|beta|Removidas as propriedades **overallScore**, **deviceBootPerformanceOverallScore** e **bestPracticesOverallScore** da entidade [userExperienceAnalyticsOverview](/graph/api/resources/intune-devices-userexperienceanalyticsoverview)|
+|Adição|beta|Adicionadas as propriedades **attackSurfaceReductionRules** e **bitLockerRecoveryPasswordRotation** à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration)|
+|Adição|beta|Adicionadas as propriedades **trackInstallProgressForAutopilotOnly** e **disableUserStatusTrackingAfterFirstUser** à entidade [windows10EnrollmentCompletionPageConfiguration](/graph/api/resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration)|
+|Adição|beta|Adicionada a propriedade de navegação **policySets** à entidade [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement)|
+|Adição|beta|Adicionadas as propriedades de navegação **appleUserInitiatedEnrollmentProfiles**, **autopilotEvents** e **windowsFeatureUpdateProfiles** à entidade [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement)|
+|Adição|beta|Adicionada a propriedade **value** ao tipo complexo [insightValueDouble](/graph/api/resources/intune-devices-insightvaluedouble)|
+|Adição|beta|Adicionada a propriedade **value** ao tipo complexo [insightValueInt](/graph/api/resources/intune-devices-insightvalueint)|
+|Adição|beta|Adicionada a propriedade **v13_0** ao tipo complexo [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem)|
+|Adição|beta|Adicionadas as propriedades **v10_14** e **v10_15** ao tipo complexo [macOSMinimumOperatingSystem](/graph/api/resources/intune-apps-macosminimumoperatingsystem)|
+|Adição|beta|Adicionadas as propriedades **values** e **severity** ao tipo complexo [userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight)|
+|Exclusão|beta|Removida a propriedade **value** do tipo complexo [userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight)|
+|Adição|beta|Adicionados os membros **appleUserEnrollment**, **appleUserEnrollmentWithServiceAccount** e **appleUserEnrollmentWithAzureAD** ao tipo enum [deviceEnrollmentType](/graph/api/resources/intune-shared-deviceenrollmenttype)|
+|Adição|beta|Adicionado o membro **securityTemplate** ao tipo enum [deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype)|
+|Adição|beta|Adicionado o membro **rebootNow** ao tipo enum [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction)|
+|Adição|beta|Adicionado o membro **rotateBitLockerKeys** ao tipo enum [remoteAction](/graph/api/resources/intune-devices-remoteaction)|
+| Adição | Beta | Permissões de aplicativo adicionadas com suporte para operações de gravação: DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All |
+| Adição | v1.0 | Adicionada a propriedade **v13_0** ao tipo complexo [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem). |
+
+### <a name="calendar-mail-groups"></a>Calendário, email, grupos
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | v1.0          | Funcionalidade adicionada para [obter conteúdo não processado de um arquivo ou anexo do item](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem ou postagem no grupo. |
+
+### <a name="files-onedrive-for-business-and-onedrive-personal"></a>Arquivos (OneDrive for Business e OneDrive Pessoal)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Recursos [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-beta) e [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) adicionados. O recurso **pendingOperations** se aplica ao recurso [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta). |
+| Adição | Beta | A ação [restore](/graph/api/driveitem-restore?view=graph-rest-beta) foi adicionada ao recurso [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta). |
+| Adição | Beta | A propriedade **orientation** foi adicionada ao recurso [photo](/graph/api/resources/photo?view=graph-rest-beta). |
+| Adição | Beta | A propriedade **sha256Hash** foi adicionada ao recurso [hashes](/graph/api/resources/hashes?view=graph-rest-beta). |
+
+### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | Beta | Foi adicionado o recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-beta), que representa uma identidade usada para entrar em uma conta de usuário. |
+| Adição | Beta | Adicionada a propriedade **synchronizationJobSettings** ao recurso [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta).|
+| Adição | Beta | Novos valores possíveis para a propriedade **rasão** no recurso [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta).|
+
+### <a name="mail-outlook"></a>Email (Outlook)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | v1.0          | Funcionalidade adicionada para [obter o conteúdo MIME de uma mensagem](outlook-get-mime-message.md). |
+
+### <a name="users"></a>Usuários
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | A propriedade **identities** foi adicionada ao recurso [user](/graph/api/resources/user?view=graph-rest-beta). Essa propriedade representa o conjunto de identidades que esse usuário pode usar para entrar.|
+| Adição        | v1.0          | Adicionado o método [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0).|
+
 ### <a name="users--outlook-settings"></a>Usuários | Configurações do Outlook
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição        | Beta        | As propriedades **dateFormat** e **timeFormat** no recurso [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta). As propriedades representam os formatos de data e hora escolhidos pelo usuário.|
 
+### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição |beta| Adicionada a propriedade **primaryChanne** ao recurso [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Adição |beta| Adicionada a propriedade **allowCreatePrivateChannels** ao recurso [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta).|
 
 ## <a name="august-2019"></a>Agosto de 2019
 
@@ -232,7 +335,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição | beta | Recurso [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta) foi adicionado. |
 | Adição | beta | Novos métodos adicionados ao recurso de[usuário](/graph/api/resources/user?view=graph-rest-beta) habilitando os seguintes métodos com aplicativos pessoais para os usuários: <br>[Lista de aplicativos instalados para o usuário](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[Instalar o aplicativo para o usuário](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[Desinstalar o aplicativo para o usuário](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[Atualizar o aplicativo instalado para o usuário](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
-### <a name="calls-and-online-meetings"></a>Chamadas e reuniões online 
+### <a name="calls-and-online-meetings"></a>Chamadas e reuniões online
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -393,7 +496,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 ### <a name="groups"></a>Grupos
 | **Tipo de alteração** | **Versão** | **Descrição** |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionada a propriedade **assignedlabels** à entidade do [grupo](https://docs.microsoft.com/pt-BR/graph/api/resources/group?view=graph-rest-beta). Essa propriedade representa a lista de pares de rótulos de confidencialidade (ID do rótulo, nome do rótulo) associados a um grupo.
+| Adição | beta | Adicionada a propriedade **assignedlabels** à entidade do [grupo](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta). Essa propriedade representa a lista de pares de rótulos de confidencialidade (ID do rótulo, nome do rótulo) associados a um grupo.
 
 ### <a name="identity-and-access-azure-ad--identity-protection"></a>Identidade e acesso (Azure AD) | Proteção de identidade
 
@@ -750,7 +853,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição | v1.0 | Adicionadas novas propriedades para [usuários](/graph/api/resources/user?view=graph-rest-1.0): **employeeId**, **faxNumber**, **onPremisesDistinguishedName**, **showInAddressList** e **otherMails**.|
 | Adição | v1.0 | Adicionada a propriedade **forceChangePasswordNextSignInWithMfa** para o tipo complexo [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0).|
 | Adição | v1.0 | Adicionada a propriedade **licenseAssignmentStates** para a entidade de[usuário](/graph/api/resources/user?view=graph-rest-1.0) para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
-| Adição | v1.0 | Adicionado o recurso **licenseAssignmentState** para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Adição | v1.0 | Adicionado o recurso **licenseAssignmentState** para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Adição | v1.0 | Adicionadas as propriedades **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** e **membersWithLicenseErrors** para o relacionamento da entidade[Grupo ](/graph/api/resources/group?view=graph-rest-1.0) para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Adição | beta | Adicionar a propriedade **createdDateTime** para o recurso [usuário](/graph/api/resources/user?view=graph-rest-beta).|
 
@@ -781,7 +884,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionar a nova propriedade `expirationDateTime` para [grupos](https://docs.microsoft.com/pt-BR/graph/api/resources/group?view=graph-rest-beta) para [grupo vencimento](https://docs.microsoft.com/pt-BR/azure/active-directory/users-groups-roles/groups-lifecycle).|
+| Adição | beta | Adicionar a nova propriedade `expirationDateTime` para [grupos](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) para [grupo vencimento](https://docs.microsoft.com/pt-BR/azure/active-directory/users-groups-roles/groups-lifecycle).|
 | Adição | beta | Adicionado novo tipo de recurso [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
 | Adição | beta | Adicionada a propriedade `createdDateTime` para o recurso [organization](/graph/api/resources/organization?view=graph-rest-beta).|
 | Adição | v1.0 | Adicionado método `memberOf` para obter uma direta [associação](/graph/api/resources/device?view=graph-rest-1.0) de [dispositivos](/graph/api/device-list-memberOf?view=graph-rest-1.0). Esse método foi adicionado para obter a lista de associações, incluindo associações aninhadas.|
