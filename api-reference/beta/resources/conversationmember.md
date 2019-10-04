@@ -2,40 +2,41 @@
 title: tipo de recurso conversationMember
 description: Representa um usuário em uma conversa.
 localization_priority: Normal
-author: nkramer
+author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ca5115922dfb40239b8ca290a39f3c5953d4e4ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e20a1aa0ef42f41a3fc300f804bb5477b5fe1cb
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973972"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633696"
 ---
 # <a name="conversationmember-resource-type"></a>tipo de recurso conversationMember
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um usuário em um [bate-papo](chat.md).
+Representa um usuário em um [bate-papo](chat.md) ou [canal](channel.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar membros do bate-papo](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.|
-|[Obter membro do bate-papo](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obter um único usuário no bate-papo.|
+|[Listar membros do bate-papo](../api/conversationmember-list.md) | coleção [conversationMember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.|
+|[Obter membro do bate-papo](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Obter um único usuário no bate-papo.|
+|[Listar membros](../api/conversationmember-list.md) | coleção [conversationMember](conversationmember.md) | Ver a lista de todos os usuários no chat ou canal.|
+|[Obter membro](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Obter um único usuário no chat ou canal.|
+|[Adicionar membro](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Adicionar um membro a um canal.|
+|[Atualizar membro](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Atualizar um membro no canal.|
+|[Excluir membro](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Excluir um membro do canal.|
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade     | Tipo   |Descrição|
+| Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID exclusivo do usuário.|
 |displayName| cadeia de caracteres | O nome de exibição do usuário. |
 |funções| coleção de cadeias de caracteres | As funções desse usuário. |
-
-## <a name="relationships"></a>Relacionamentos
-
-Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 

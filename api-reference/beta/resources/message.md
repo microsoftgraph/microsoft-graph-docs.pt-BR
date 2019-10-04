@@ -5,18 +5,20 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f6b79b397ac84154c6c89d46d792dbd00f2fb2a4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f23d8ffcda224931950dc9c2d2cd2ade01322c36
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966738"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426311"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma mensagem em uma pasta da caixa de correio.
+
+O número total máximo de destinatários incluídos nas propriedades **toRecipients**, **ccRecipients** e **bccRecipients** para uma única mensagem de email enviada de uma caixa de correio do Exchange Online é de 500. Para obter mais informações, veja [limites de envio](https://docs.microsoft.com/pt-BR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 
