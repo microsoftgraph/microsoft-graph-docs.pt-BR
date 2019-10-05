@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 1262813dd9ad54e8845ed000625d602ef0ff0c94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa5b9f8d28cc77878fe1da261621b63163595828
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030153"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402645"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referência da API REST do Microsoft Graph v1.0
 
@@ -31,7 +31,7 @@ Vários desses serviços são projetados para permitir cenários ricos em torno 
 3. [Acessar os arquivos de Lisa no OneDrive for Business](./api/driveitem-list-children.md), localizar a [identidade](./resources/identityset.md) da última pessoa que modificou um [arquivo](./resources/driveitem.md) e navegar até o perfil dessa pessoa.
 4. [Acessar o calendário de Lisa](./api/calendar-get.md) no Exchange Online e [determinar o melhor horário para Lisa se reunir com sua equipe](./api/user-findmeetingtimes.md) nas próximas duas semanas.
 5. [Inscrever-se](./api/subscription-post-subscriptions.md) e [acompanhar as mudanças](./api/event-delta.md) no calendário de Lisa, dizer a Lisa quando ela estiver gastando mais de 80% de seu tempo em reuniões.
-6. [Definir respostas automáticas](./api/user-update-mailboxsettings.md#example) quando Lisa estiver fora do escritório.
+6. [Definir respostas automáticas](./api/user-update-mailboxsettings.md#example-1) quando Lisa estiver fora do escritório.
 7. [Receber as pessoas mais relevantes para a Lisa](./api/user-list-people.md), com base nas relações de comunicação, colaboração e negócios.
 8. Obter a última projeção de vendas de um [gráfico](./resources/chart.md) em um arquivo do Excel no OneDrive for Business de Lisa.
 9. [Encontrar as tarefas atribuídas a Lisa no Planner](./api/planneruser-list-tasks.md).
