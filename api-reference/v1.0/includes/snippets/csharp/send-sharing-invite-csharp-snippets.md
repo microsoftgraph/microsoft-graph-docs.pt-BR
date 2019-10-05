@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4ea96b5fa293aef934a5062eeb57466868c123da
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 5aa8014d84af658b73974de3f2e2ca8f640b4ce4
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35734428"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402800"
 ---
 ```csharp
 
@@ -31,7 +31,7 @@ var roles = new List<String>()
 };
 
 await graphClient.Me.Drive.Items["{item-id}"]
-    .Invite(requireSignIn,roles,sendInvitation,message,recipients)
+    .Invite(recipients,requireSignIn,roles,sendInvitation,message)
     .Request()
     .PostAsync();
 
