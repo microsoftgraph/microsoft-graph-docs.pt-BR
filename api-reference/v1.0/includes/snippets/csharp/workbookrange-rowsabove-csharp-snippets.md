@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 49d73037ec5ae6a0bc2f58d14fcfc633488ddf54
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 7b43b0336cb4411f6477fc9f46e7bee11d2b5547
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35740510"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402975"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 await graphClient.Me.Drive.Root.Workbook.Worksheets["{id}"]
     .Range()
-    .RowsAbove(count)
+    .RowsAbove(null)
     .Request()
     .PostAsync();
 

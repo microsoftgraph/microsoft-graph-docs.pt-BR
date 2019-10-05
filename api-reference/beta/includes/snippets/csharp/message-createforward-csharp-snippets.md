@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4251c567a8395a213ef815176a72ddac7af07107
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+ms.openlocfilehash: 84ce2b6bc2ebed9c37fb7751bc97e3164faca13c
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37045311"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402589"
 ---
 ```csharp
 
@@ -30,7 +30,7 @@ var message = new Message
 var comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved.";
 
 await graphClient.Me.Messages["AAMkADA1MTAAAH5JaLAAA="]
-    .CreateForward(toRecipients,message,comment)
+    .CreateForward(null,message,comment)
     .Request()
     .PostAsync();
 

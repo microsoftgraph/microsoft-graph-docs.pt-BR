@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6f81d1ce49df0222c7c2dea35f05ed306a414a9f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3cfffc9082edeaaa2c9ace776bb03b8805b4004a
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884973"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402974"
 ---
 ```java
 
@@ -13,7 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 graphClient.me().drive().root().workbook().worksheets("{id}")
     .range()
-    .rowsAbove(count)
+    .rowsAbove(null)
     .buildRequest()
     .post();
 

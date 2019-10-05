@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d93e234ecfb6e5abba65312e640643dfc677feb9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 07c1ce0b70d87a7a2c563952e529729f5616e9c1
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35713874"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402365"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 await graphClient.PrivilegedAccess["azureResources"].RoleAssignmentRequests["7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee"]
-    .UpdateRequest(decision,assignmentState,schedule,reason)
+    .UpdateRequest(null,null,null,null)
     .Request()
     .PostAsync();
 

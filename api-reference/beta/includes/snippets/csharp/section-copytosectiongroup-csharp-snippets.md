@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9d4e9afed0702b922d5a35cd341603cc53f284b5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: dac991ad6b4085a7bfac01ccace9ee51d9514fdf
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35718012"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402597"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var groupId = "groupId-value";
 var renameAs = "renameAs-value";
 
 await graphClient.Me.Onenote.Sections["{id}"]
-    .CopyToSectionGroup(id,groupId,renameAs,siteCollectionId,siteId)
+    .CopyToSectionGroup(id,groupId,renameAs,null,null)
     .Request()
     .PostAsync();
 
