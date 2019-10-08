@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0da35dc423380958d10fdb750a561c13bc711f00
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 591f9cbdc4d1d83af74dddca34102ad23e6d31a5
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416510"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418241"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -47,10 +47,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. |
 |atribuir|educationAssignmentRecipient| Estudantes que obtêm a atribuição.|
+|closeDateTime|DateTimeOffset| Data em que a atribuição será fechada para envios. Este é um campo opcional que pode ser nulo se a atribuição não allowLateSubmissions ou o closeDateTime for igual ao dueDateTime, mas se especificado, ele deve ser maior ou igual ao dueDateTime.|
 |displayName|String| Nome da atribuição. |
 |dueDateTime|DateTimeOffset| A atribuição de data deve ser concluída. |
 |notas|educationAssignmentGradeType| Como a atribuição será classificada.|
-|contida|dobody| Instruções a serem dadas aos alunos junto com a atribuição. |
+|contida|itemBody| Instruções a serem dadas aos alunos junto com a atribuição. |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
@@ -85,7 +86,7 @@ Content-length: 279
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -113,6 +114,7 @@ Content-length: 279
     "contentType": "Text",
     "content": "Read chapters 1 through 3"
   },
+  "closeDateTime": "2014-02-11T00:00:00Z",
   "dueDateTime": "2014-02-01T00:00:00Z",
   "assignDateTime": "2014-01-01T00:00:00Z",
   "assignedDateTime": "2014-01-01T00:00:00Z"

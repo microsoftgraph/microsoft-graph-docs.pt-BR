@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e983f217af71b6e27f750599ee2f8db295da5fec
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 5ffab7e11675996e79aed746cfe4624b28e37aab
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173367"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418283"
 ---
 # <a name="educationmakecoderesource-resource-type"></a>tipo de recurso educationMakeCodeResource
 
@@ -22,8 +22,8 @@ Um recurso representando um projeto [MakeCode](https://www.microsoft.com/en-us/m
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|mkcd|String|ID do projeto MakeCode|
-|url|Cadeia de caracteres|Host para o tipo de recurso MakeCode (por exemplo,, MICROBIT)|
+|projectId|String|ID do projeto MakeCode|
+|hostWebUrl|String|Host para o tipo de recurso MakeCode (por exemplo,, MICROBIT)|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -40,8 +40,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "mkcd": "String",
-  "url": "String"
+  "projectId": "String",
+  "hostWebUrl": "String"
 }
 ```
 

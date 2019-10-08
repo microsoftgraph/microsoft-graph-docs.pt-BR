@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 740ce6999830d7c55218caf8207e2fa6c6ad2aef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20e6cd176f335eed2f27ccbaaca1f939d677e328
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954683"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418220"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 
@@ -81,6 +81,7 @@ Content-length: 344
       "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
       "assignedDateTime": "2014-01-01T00:00:00Z",
       "classId": "11010",
+      "closeDateTime": "2014-01-11T00:00:00Z",
       "createdBy": {
         "user": {
             "displayName": "Susana Rocha",

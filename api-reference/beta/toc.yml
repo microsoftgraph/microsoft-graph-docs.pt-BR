@@ -3629,7 +3629,7 @@
                 - name: Caixa de seleção de apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationcheckbox.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-grouppolicy-grouppolicypresentationcheckbox-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationcheckbox-get.md
@@ -3642,7 +3642,7 @@
                 - name: Caixa de combinação de apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationcombobox.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-get.md
@@ -3655,7 +3655,7 @@
                 - name: Caixa de texto decimal de apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
@@ -4058,7 +4058,7 @@
                 - name: Configuração de atualização do iOS
                   href: resources/intune-deviceconfig-iosupdateconfiguration.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -4071,7 +4071,7 @@
                 - name: Status do dispositivo de atualização do iOS
                   href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -4086,7 +4086,7 @@
                 - name: Configuração de VPN do iOS
                   href: resources/intune-deviceconfig-iosvpnconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-iosvpnconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-iosvpnconfiguration-get.md
@@ -9593,6 +9593,10 @@
                   href: api/user-list-joinedteams.md
                 - name: Listar todas as equipes
                   href: /graph/teams-list-all-teams?context=graph/api/beta
+                - name: Obter foto da equipe
+                  href: api/team-get-photo.md
+                - name: Atualizar foto da equipe
+                  href: api/team-update-photo.md
             - name: Grupo (equipe)
               href: resources/group.md
               items:

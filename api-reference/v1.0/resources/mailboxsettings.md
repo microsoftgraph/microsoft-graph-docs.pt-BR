@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a9fb455d2a67835ff1a3a10f89ee188a21e9956b
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: 12dc1a5992146c23ac6f2858fd7ee0b3508e455a
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822778"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418297"
 ---
 # <a name="mailboxsettings-resource-type"></a>Tipo de recurso mailboxSettings
 
@@ -24,7 +24,9 @@ Você pode [obter](../api/user-get-mailboxsettings.md) ou [Atualizar](../api/use
 |:---------------|:--------|:----------|
 |archiveFolder|string|ID de uma pasta de arquivo morto do usuário.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado.|
+|dateFormat|string|O formato de data da caixa de correio do usuário.|
 |idioma|[localeInfo](localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
+|Formato de TimeFormat|string|O formato de hora da caixa de correio do usuário.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
 |workingHours|[workingHours](workinghours.md)|Os dias da semana e as horas de um fuso horário específico que o usuário trabalha.|
 
@@ -44,7 +46,9 @@ Veja a seguir uma representação JSON do recurso.
 {
   "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
+  "dateFormat": "string",
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
+  "timeFormat": "string",
   "timeZone": "string",
   "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }

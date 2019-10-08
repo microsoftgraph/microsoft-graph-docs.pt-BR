@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f8f4b7fe917b9366f852b6fe0b620754890705a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fe916bf7b37e7c7ee2e0487185b585075fd32cc
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955359"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418227"
 ---
 # <a name="create-educationassignment"></a>Criar educationAssignment
 
@@ -100,6 +100,7 @@ Content-length: 279
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "2014-02-01T00:00:00Z",
   "classId": "11018",
+  "closeDateTime": "2014-02-11T00:00:00Z",
   "createdBy": {
       "application": null,
       "device": null,
