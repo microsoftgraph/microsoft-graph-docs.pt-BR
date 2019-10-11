@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f3b20410ded987ba0c73de4767e36075d2593434
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: e911091bb4e1b5cd3179f781dd0d2f326f121a3d
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355852"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439860"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Obter chatMessageHostedContent
 
@@ -27,6 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)|Para o **usuário** ou recurso de **chat** :<br/>Chat. Read, chat. ReadWrite<br/><br/>Para o recurso de **canal** :<br/>Group.Read.All, Group.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo| Para o **usuário** ou recurso de **chat** :<br/>Chat. Read. All, chat. ReadWrite. All<br/><br/>Para o recurso de **canal** :<br/>Group.Read.All, Group.ReadWrite.All |
+
+> [!NOTE]
+> Antes de chamar esta API com permissões de aplicativo, você deve solicitar acesso. Para obter detalhes, consulte [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

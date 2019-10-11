@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: bfaa2aec347b0dd710d0bb52abfaa96d50424eab
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: dcd7203c948329577580b2045ecbdb2f2c27c13d
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333280"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418304"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -16,7 +16,40 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
+## <a name="october-2019"></a>Outubro de 2019
+
+### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Adicionados os métodos [Obter foto da equipe](/graph/api/team-get-photo?view=graph-rest-beta) e [Atualizar foto da equipe](/graph/api/team-update-photo?view=graph-rest-beta). |
+
+### <a name="groups"></a>Grupos
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | Beta          |Adicionadas as propriedades **hideFromAddressLists** e **hideFromOutlookClients** à entidade do [grupo](/graph/api/resources/group?view=graph-rest-beta), para controlar a visibilidade de um grupo na interface de usuário do Outlook.|
+
+### <a name="mail-outlook"></a>Email (Outlook)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | v1.0          | Adicionado o parâmetro **mensagem** ao método para [responder uma mensagem rapidamente](/graph/api/message-reply?view=graph-rest-1.0). |
+
+### <a name="users--outlook-settings"></a>Usuários | Configurações do Outlook
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | V1.0        | As propriedades **dateFormat** e **timeFormat** no recurso [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). As propriedades representam os formatos de data e hora escolhidos pelo usuário.|
+
 ## <a name="september-2019"></a>Setembro de 2019
+
+### <a name="education"></a>Educação
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a nova propriedade **closeDateTime** a [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
+| Alteração | beta | Alterados os nomes de propriedades **mkcd** para **projectId** e **url** para **hostWebUrl** no recurso [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta).|
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: f72eb07fd37e1441f7a2da3be7fd7660ab3bc167
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: f3a4e162563c7e5465641a69b741c40a4bfb3ab5
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35714868"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428698"
 ---
 ```javascript
 
@@ -15,11 +15,11 @@ const options = {
 
 const client = Client.init(options);
 
-const String = {
+const string = {
   securityEnabledOnly: true
 };
 
 let res = await client.api('/me/getMemberObjects')
-    .post(String);
+    .post(string);
 
 ```

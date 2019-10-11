@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7885e45be21084a4b1fd635d6e95a2289fec2a3e
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 5e31839a9eb1c0e80e23e909a1d87f6c2b84428d
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461165"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439761"
 ---
 # <a name="create-educationrubric"></a>Criar educationRubric
 
@@ -22,11 +22,11 @@ Criar um novo objeto [educationRubric](../resources/educationrubric.md) .
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)             |
+| :------------------------------------- | :------------------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                          |
+| Aplicativo                            | Sem suporte.                                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -38,8 +38,8 @@ POST /education/me/rubrics
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome          | Descrição   |
-|:--------------|:--------------|
+| Nome          | Descrição    |
+| :------------ | :------------- |
 | Autorização | Portador {token} |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -142,7 +142,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

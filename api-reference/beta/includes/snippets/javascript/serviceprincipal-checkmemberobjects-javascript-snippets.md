@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: cc330b3b89488c4c2ce4d3545c1afd22e479f902
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+ms.openlocfilehash: 4398f1871fcb5fddef105a8f94c2c247390fce96
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37041847"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428744"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const String = {
+const string = {
   ids: [
     "80a963dd-84af-4eb8-b2a6-781e444d4fb0",
     "62e90394-69f5-4237-9190-012177145e10",
@@ -26,6 +26,6 @@ const String = {
 
 let res = await client.api('/servicePrincipals/{id}/checkMemberObjects')
     .version('beta')
-    .post(String);
+    .post(string);
 
 ```

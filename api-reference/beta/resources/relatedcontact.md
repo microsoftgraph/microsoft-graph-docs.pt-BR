@@ -5,28 +5,29 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 36e46261c3f31d9d41a63097753799b634dadeb2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ce1ff84abb6704255267b521c67e5fc7b231b7df
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008716"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439931"
 ---
 # <a name="relatedcontact-resource-type"></a>tipo de recurso relatedContact
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Registro de contato relacionado a um [educationUser](../resources/educationuser.md) que fornece inforation para guardiões, auxílios, médicos e assim por diante.
+Registro de contato relacionado a um [educationUser](../resources/educationuser.md) que fornece informações para guardiões, auxílios, médicos e assim por diante.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|id|Cadeia de caracteres|Identidade do contato no Azure Active Directory.|
-|displayName|Cadeia de caracteres|Nome do contato. Obrigatório.|
-|emailAddress|String|Endereço de email principal do contato.|
-|mobilePhone|String|Número do telefone celular do contato.|
-|relação|`contactRelationship`|Relação com o usuário. Os valores possíveis `parent`são `relative`: `aide` `doctor` `guardian` `child`,,,, `other`, `unknownFutureValue`,.|
-|accessConsent|Booliano|Indica se o usuário foi remetido para acessar os dados dos alunos.|
+
+| Propriedade      | Tipo                  | Descrição                                                                                                         |
+| :------------ | :-------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| id            | Cadeia de caracteres                | Identidade do contato no Azure Active Directory.                                                              |
+| displayName   | Cadeia de caracteres                | Nome do contato. Obrigatório.                                                                                      |
+| emailAddress  | String                | Endereço de email principal do contato.                                                                               |
+| mobilePhone   | String                | Número do telefone celular do contato.                                                                                 |
+| relação  | `contactRelationship` | Relação com o usuário. Os valores possíveis `parent`são `relative`: `aide` `doctor` `guardian`,,, `child`, `other`,. |
+| accessConsent | Booliano               | Indica se o usuário foi remetido para acessar os dados dos alunos.                                               |
 
 ## <a name="json-representation"></a>Representação JSON
 

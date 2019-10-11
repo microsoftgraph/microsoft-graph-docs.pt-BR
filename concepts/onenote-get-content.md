@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Office 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: bcc25ca130b9a28bf171d8ce2989538e56dfca17
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 2db43dd8ec2d0cf58f2938b78054986823f433c4
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639209"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418207"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
 
@@ -543,7 +543,7 @@ Obtenha páginas de 51 a 100. A API retorna 20 entradas por padrão com um máxi
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **Observação:** solicitações GET para páginas que recuperam o número de entradas padrão (ou seja, não especificar uma expressão **top**) retornam um link **@odata.nextLink** na resposta que você pode usar para obter as próximas 20 entradas.
+> **Observação:** As solicitações GET para páginas que recuperam o número padrão de entradas (ou seja, elas não especificam uma expressão **top**) retornam um link **\@odata.nextLink** na resposta que você pode usar para obter as próximas 20 entradas.
  
 
 <a name="supported-odata-query-string-options"></a>

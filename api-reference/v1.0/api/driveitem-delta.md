@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Esse método permite que o seu aplicativo controle alterações em uma unidade e seus filhos com o passar do tempo.
 doc_type: apiPageType
-ms.openlocfilehash: 7e20a704e8a8e3ed70c895bc71727132d2ed989c
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 8ec4129558d96844ef0150c8ef8dcdfd01decba8
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721170"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418318"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 
@@ -66,8 +66,8 @@ Além da coleção de DriveItems, a resposta também incluirá uma das seguintes
 
 | Nome                 | Valor  | Descrição                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **@odata.nextLink**  | url    | Uma URL para recuperar a próxima página disponível de alterações, se houver alterações adicionais no conjunto atual.                                        |
-| **@odata.deltaLink** | url    | Uma URL retornada no lugar de **@odata.nextLink** após o retorno de todas as alterações atuais. Usada para ler o próximo conjunto de alterações no futuro.  |
+| **\@odata.nextLink**  | url    | Uma URL para recuperar a próxima página disponível de alterações, se houver alterações adicionais no conjunto atual.                                        |
+| **\@odata.deltaLink** | url    | Uma URL retornada em vez de **\@odata.nextLink** após o retorno de todas as alterações atuais. Usada para ler o próximo conjunto de alterações no futuro.  |
 
 ## <a name="example-initial-request"></a>Exemplo (solicitação inicial)
 
@@ -135,7 +135,8 @@ Content-type: application/json
 }
 ```
 
-Essa resposta inclui a primeira página de alterações, e a propriedade **@odata.nextLink** indica que há mais itens disponíveis no conjunto atual de itens. Seu aplicativo deve continuar a solicitar o valor de URL de **@odata.nextLink** até que todas as páginas de itens tenham sido recuperadas.
+Essa resposta inclui a primeira página de alterações e a propriedade **\@odata.nextLink** indica que há mais itens disponíveis no conjunto atual de itens.
+Seu aplicativo deve continuar solicitando o valor da URL **\@odata.nextLink** até que todas as páginas de itens tenham sido recuperadas.
 
 ## <a name="example-last-page-in-a-set"></a>Exemplo (última página de um conjunto)
 
@@ -201,7 +202,7 @@ Content-type: application/json
 
 Essa resposta indica que o item denominado `folder2` foi excluído e que o item `file.txt` foi adicionado ou modificado entre a solicitação inicial e essa solicitação para atualizar o estado local.
 
-A página final de itens incluirá a propriedade **@odata.deltaLink**, que fornece a URL que poderá ser usada posteriormente para recuperar alterações desde o conjunto atual de itens.
+A página final dos itens incluirá a propriedade **\@odata.deltaLink**, que fornece a URL que pode ser usada posteriormente para recuperar alterações desde o conjunto atual de itens.
 
 Pode haver casos em que o serviço não pode fornecer uma lista de alterações para um determinado token (por exemplo, se um cliente tentar reutilizar um token antigo depois de ter permanecido desconectado por um longo período, ou se o estado do servidor tiver mudado e um novo token for obrigatório). Nesses casos, o serviço retornará um erro `HTTP 410 Gone` com uma resposta de erro contendo um dos códigos de erro abaixo e um cabeçalho `Location` contendo um novo nextLink que inicia uma enumeração delta do zero. Depois de concluir a enumeração completa, compare os itens retornados com seu estado local e siga estas instruções.
 

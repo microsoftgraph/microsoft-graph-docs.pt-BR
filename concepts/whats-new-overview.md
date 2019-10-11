@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: a3adfca811e6b4c770ebe97d3279f4568db8d3ed
-ms.sourcegitcommit: cfcd58f09bc44de0a32ecf4c627267035902a07e
+ms.openlocfilehash: ea123de2fea1efdc4647238f6a953e21d49901db
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37278611"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418206"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -21,6 +21,23 @@ A equipe do Microsoft Graph avalia regularmente as necessidades dos clientes e l
 2. Promovido para o status de**_disponibilidade geral_ (GA)**, se um feedback suficiente indicar a viabilidade. Todas as atualizações da API REST relacionadas serão adicionadas ao ponto de extremidade do v 1.0 (`https://graph.microsoft.com/v1.0`). 
 
 Abaixo, veja o que há de novo no Microsoft Graph e como você pode [compartilhar suas ideias](#want-to-stay-in-the-loop). Para detalhes sobre as atualizações da API, consulte as seções de [setembro](changelog.md#september-2019) e [agosto](changelog.md#august-2019) do log de alterações da API. 
+
+
+## <a name="october-2019-new-and-generally-available"></a>Outubro de 2019: Novo e geralmente disponível
+
+### <a name="mail"></a>Email
+Use o novo parâmetro de **mensagem** para atualizar quaisquer propriedades de [mensagem](/graph/api/resources/message?view=graph-rest-1.0) graváveis ao [responder](/graph/api/message-reply?view=graph-rest-1.0) a uma mensagem, por exemplo, [adicionando um destinatário à resposta](/graph/api/message-reply#example ?view=graph-rest-1.0).
+
+### <a name="users"></a>Usuários
+[Obtenha](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0) ou [defina](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) as configurações preferenciais de formato de data e hora do usuário [para a caixa de correio do usuário](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). 
+
+## <a name="october-2019-new-in-preview"></a>Outubro de 2019: Novo em visualização
+
+> [!IMPORTANT]
+> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
+
+### <a name="groups"></a>Grupos
+Use as propriedades **hideFromAddressLists** e **hideFromOutlookClients** para controlar a visibilidade de um [grupo](/graph/api/resources/group?view=graph-rest-beta) em determinadas partes da interface do usuário do Outlook ou em um cliente do Outlook.
 
 ## <a name="september-2019-new-and-generally-available"></a>Setembro de 2019: novo e disponível para o público geral
 
@@ -42,6 +59,9 @@ Os recursos a seguir são compatíveis com a conversão de formato de ID:
 ### <a name="mail"></a>Email
 [Obter conteúdo MIME de uma mensagem](outlook-get-mime-message.md).
 
+### <a name="microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
+Use o [Microsoft Graph Toolkit](toolkit/overview.md) para desenvolver aplicativos de produção que ofereçam uma aparência consistente do Microsoft 365 e economize tempo na autenticação e acesso a dados do Microsoft Graph.
+
 ## <a name="september-2019-new-in-preview"></a>Setembro de 2019: novidades na versão prévia
 
 > [!IMPORTANT]
@@ -50,53 +70,27 @@ Os recursos a seguir são compatíveis com a conversão de formato de ID:
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
 Atualizações de [Setembro](changelog.md#september-2019) do Intune
 
-### <a name="identity-and-access"></a>Identidade e acesso
-Aperfeiçoamentos incrementais para [sincronizar identidades](/graph/api/resources/synchronization-overview?view=graph-rest-beta) em um aplicativo de nuvem para um locatário:
+### <a name="files"></a>Arquivos
+- Suporte aprimorado à sincronização:
 
-- Para armazenar as configurações de um [trabalho de sincronização](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)
-- Para especificar um motivo para impor a [quarentena](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) em um trabalho de sincronização
+  - Use a nova propriedade **pendingOperations** para identificar operações que podem afetar o conteúdo binário de um [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta).
+  - [Restaure](/graph/api/driveitem-restore?view=graph-rest-beta) um **driveItem** excluído. 
+- Use o Algoritmo de Hash Seguro (SHA-256) para aprimorar a segurança e a integridade dos [dados](/graph/api/resources/file?view=graph-rest-beta) do arquivo.
+- Obtenha ou defina a orientação de uma [foto](/graph/api/resources/photo?view=graph-rest-beta). A configuração é compatível com o OneDrive Personal.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- Use a propriedade new **identities** e obtenha as identidades que um [usuário](/graph/api/resources/user?view=graph-rest-beta) pode usar para entrar em uma conta. As identidades podem ser fornecidas por organizações ou provedores de identidade social, como Facebook, Google e Microsoft.
+- Aperfeiçoamentos incrementais para [sincronizar identidades](/graph/api/resources/synchronization-overview?view=graph-rest-beta) em um aplicativo de nuvem para um locatário:
+
+  - Armazenar configurações para um [trabalho de sincronização](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)
+  - Especifique um motivo para impor a [quarentena](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) a um trabalho de sincronização
 
 ### <a name="teamwork"></a>Trabalho em equipe
-Suporte por programação para o canal **Geral** de uma  [equipe](/graph/api/resources/team?view=graph-rest-beta) e para personalizar [as configurações de membro](/graph/api/resources/teammembersettings?view=graph-rest-beta) para permitir que os membros da equipe criem canais privados na **equipe**.
+Use o canal **Geral** de uma [equipe](/graph/api/resources/team?view=graph-rest-beta) ou personalize as [configurações de membros](/graph/api/resources/teammembersettings?view=graph-rest-beta) para permitir que eles criem canais privados na **equipe**.
 
 ### <a name="users"></a>Usuários
 - Obtenha ou atualize as identidades com as quais um [usuário](/graph/api/resources/user?view=graph-rest-beta) pode entrar em uma conta. Essas identidades podem ser fornecidas por organizações de negócios ou por provedores de identidade social, como o Facebook, o Google e a Microsoft.
 - Obtenha ou atualize as [configurações da caixa de correio](/graph/api/resources/mailboxsettings?view=graph-rest-beta) do formato de data e hora escolhidas pelo usuário.
-
-## <a name="august-2019-new-and-generally-available"></a>Agosto de 2019: novo e disponível para o público geral 
-
-### <a name="reports"></a>Relatórios
-- Obtenha dados [adicionais de uso da caixa de correio](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0) sobre o tamanho e a contagem de itens excluídos.
-- Acompanhar as IDs do grupo do Office 365 ao [obter detalhes da atividade do grupo](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0).
-- Rastreie o nome principal do proprietário ao obter [detalhes da conta de uso do OneDrive](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0) e [ detalhes de uso do site do SharePoint](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0).
-- Obtenha o número de usuários ativos e inativos no Office 365, ao [receber um relatório sobre contagens de usuários por serviço do Office 365](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0).
-
-### <a name="security"></a>Segurança
-- Use o novo [complemento Microsoft Graph Security API para Splunk](https://aka.ms/graphsecuritysplunkaddon) para transmitir alertas de segurança e insights de muitos produtos de parceiros para o Splunk, permitindo uma correlação mais simples de seus dados de segurança. Para saber mais, confira o [comunicado](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972). 
-- [Confira uma lista de outras soluções e conectores](security-integration.md) criados pela Microsoft ou por parceiros da Microsoft que se conectam à API de segurança e permitem que você trabalhe com dados em um formato unificado.
-
-
-## <a name="august-2019-new-in-preview"></a>Agosto de 2019: novidades na versão prévia
-
-> [!IMPORTANT]
-> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
-
-### <a name="devices-and-apps"></a>Dispositivos e aplicativos
-Atualizações de [agosto](changelog.md#august-2019) do Intune
-
-### <a name="education"></a>Educação
-- Associe um [professor](/graph/api/resources/educationuser?view=graph-rest-beta) ou uma [atribuição](/graph/api/resources/educationassignment?view=graph-rest-beta) com uma [lista de critérios de avaliação classificada](/graph/api/resources/educationrubric?view=graph-rest-beta) para considerar qualidades e níveis específicos em atribuições. Um exemplo de qualidade é a ortografia e a gramática, e exemplos de níveis são "bons" e "ruins". Você pode ainda associar pontos e pesos a lista de critérios de avaliação. Para saber mais, confira [visão geral da lista de critérios de avaliação educacional](education-rubric-overview.md).
-- Avaliar uma atribuição e apresentar os resultados em termos de [feedback](/graph/api/resources/educationfeedbackoutcome?view=graph-rest-beta), de um [grau numérico](/graph/api/resources/educationpointsoutcome?view=graph-rest-beta), ou de [lista de critérios de avaliação](/graph/api/resources/educationrubricoutcome?view=graph-rest-beta).
-
-### <a name="files"></a>Arquivos
-Até esse ponto, você pode [seguir](/graph/api/driveitem-follow?view=graph-rest-beta) um [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) para obter um acesso conveniente ou para facilitar ações como, mover, copiar e salvar como. Agora você pode usar a ação [deixar de seguir](/graph/api/driveitem-unfollow?view=graph-rest-beta) para parar de seguir esses itens da unidade.
-
-### <a name="identity-and-access"></a>Identidade e acesso
-- Os provedores de controle de acesso baseado em função (RBAC) podem [gerenciar funções](/graph/api/resources/rolemanagement?view=graph-rest-beta) do Azure Active Directory, [definindo ações de funções](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta)que podem ser realizadas em recursos específicos e [atribuindo funções](/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) aos usuários com base em tais definições de função, fornecendo o acesso correspondente a esses recursos.
-- Os administradores podem [listar as revisões de acesso](/graph/api/accessreview-list?view=graph-rest-beta) para facilitar de maneira eficiente a análise de associações de grupos, o acesso a aplicativos corporativos e as atribuições de funções. As revisões de acesso regular garantem que apenas as pessoas adequadas tenham acesso contínuo aos recursos de maneiras específicas.
-
-### <a name="social-and-workplace-intelligence"></a>Inteligência social e do local de trabalho
-Os usuários finais vêm podendo usar o aplicativo [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) do Office 365para obter insights sobre gerenciamento de tempo, colaboração no trabalho e equilíbrio profissional. Agora você pode usar a [API de análise](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) para integrar dados sobre tempo gasto em atividades de trabalho, como chamadas, chats e email, para ajudar a melhorar a produtividade e o bem-estar do usuário. 
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?

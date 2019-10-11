@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2908594ae5b2d6fb57e55b2bf69560f4b8e92b5e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 21e72024775aa7723c95eeb4cfcb5d86508d0711
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35714905"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428703"
 ---
 ```javascript
 
@@ -15,11 +15,11 @@ const options = {
 
 const client = Client.init(options);
 
-const String = {
+const string = {
   securityEnabledOnly: true
 };
 
 let res = await client.api('/me/getMemberGroups')
-    .post(String);
+    .post(string);
 
 ```

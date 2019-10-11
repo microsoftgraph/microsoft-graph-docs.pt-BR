@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: aecf1b83c6f8c59c65c6b696aaea4b89352b91cf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 230b0f9d417fb910a379cd3c4d713c9b08ab0008
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972317"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439924"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 
@@ -63,6 +63,7 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 | usageLocation     | Cadeia de caracteres                                                | Um código de país de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços em países ou regiões. Os exemplos incluem: "US", "JP" e "GB". Não anulável. Oferece \$suporte a filtro.                                                                                                                                                                                                                                                               |
 | userPrincipalName | Cadeia de caracteres                                                | O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). Oferece suporte a $filter e $orderby. |
 | userType          | String                                                | Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece \$suporte a filtro.                                                                                                                                                                                                                                                                                                                                                                                                       |
+| relatedContacts   | coleção [relatedContact]                           | Registros relacionados relacionados ao usuário. As relações possíveis `parent`são `relative`, `aide`, `doctor` `guardian` `child` `other`,,,,`unknownFutureValue`                                                                                                                                                                                                                                                                                                                                                                       |
 
 >[!IMPORTANT]
 >Ao usar escopos de permissão delegada, o Graph retornará somente um conjunto limitado de `id`propriedades `primaryRole`: `accountEnabled`, `displayName` `givenName` `surname`,,, `userPrincipalName`, `userType`, `onPremisesInfo`,,. Se seu aplicativo exigir propriedades adicionais, você deve usar escopos de permissão de aplicativo.
@@ -152,5 +153,5 @@ Veja a seguir uma representação JSON do recurso.
 [identityset]: identityset.md
 [assignedplan]: assignedplan.md
 [assignedlicense]: assignedlicense.md
-[Usuário]: user.md
+[user]: user.md
 [directoryobject]: directoryobject.md
