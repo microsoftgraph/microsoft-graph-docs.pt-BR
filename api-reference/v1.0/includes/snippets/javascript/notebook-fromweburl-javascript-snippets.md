@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c93c8acf64270cf6688191b77400f4091da6da54
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: c6a69097c40d8db23d889beacc31c16dd384257d
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730178"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428763"
 ---
 ```javascript
 
@@ -15,9 +15,9 @@ const options = {
 
 const client = Client.init(options);
 
-const CopyNotebookModel = {webUrl:"webUrl value"};
+const copyNotebookModel = {webUrl:"webUrl value"};
 
 let res = await client.api('/me/onenote/notebooks/GetNotebookFromWebUrl')
-    .post(CopyNotebookModel);
+    .post(copyNotebookModel);
 
 ```

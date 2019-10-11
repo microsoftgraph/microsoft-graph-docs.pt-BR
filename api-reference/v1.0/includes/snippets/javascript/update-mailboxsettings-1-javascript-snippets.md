@@ -1,11 +1,16 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: ede46641a7fdb9bf4e74945944b940ab9032e50c
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37427953"
 ---
-
 ```javascript
 
 const options = {
-	authProvider,
+    authProvider,
 };
 
 const client = Client.init(options);
@@ -26,6 +31,6 @@ const mailboxSettings = {
 };
 
 let res = await client.api('/me/mailboxSettings')
-	.update(mailboxSettings);
+    .update(mailboxSettings);
 
 ```

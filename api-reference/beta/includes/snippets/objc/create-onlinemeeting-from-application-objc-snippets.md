@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 911b25f1dcf6bded14923256a6a98198c5422762
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: bd30cb366fbb1b0b4418d3960cf1a9a64f331fc3
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933738"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428696"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphOnlineMeeting *onlineMeeting = [[MSGraphOnlineMeeting alloc] init];
-[onlineMeeting setMeetingType: [MSGraphMeetingType meetNow]];
+[onlineMeeting setMeetingType:@"meetNow"];
 MSGraphMeetingParticipants *participants = [[MSGraphMeetingParticipants alloc] init];
 MSGraphMeetingParticipantInfo *organizer = [[MSGraphMeetingParticipantInfo alloc] init];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
