@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: /graph/auth/index?context=graph/api/beta
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -44,7 +44,7 @@
         - name: Controlar alterações
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/delta-query-overview?context=graph/api/beta
             - name: Obter alterações em eventos (exemplo)
               href: /graph/delta-query-events?context=graph/api/beta
@@ -57,7 +57,7 @@
         - name: Adicionar dados personalizados
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/extensibility-overview?context=graph/api/beta
             - name: Usar extensões abertas (exemplo)
               href: /graph/extensibility-open-users?context=graph/api/beta
@@ -71,7 +71,7 @@
         - name: Azure AD Graph.
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
             - name: Lista de verificação para migração de aplicativos
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -156,11 +156,11 @@
     - name: Referência beta
       expanded: true
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -353,7 +353,7 @@
                   href: api/planneruser-list-recentplans.md
                 - name: Listar as tarefas atribuídas ao usuário
                   href: api/planneruser-list-tasks.md
-            - name: Teamwork
+            - name: Trabalho em equipe
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -374,7 +374,7 @@
                   href: api/user-update-settings.md
         - name: Grupos
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/groups-overview.md
             - name: Grupo
               href: resources/group.md
@@ -792,11 +792,11 @@
                   href: api/place-list.md
                 - name: Obter local
                   href: api/place-get.md
-        - name: Chamadas e reuniões online
-          displayName: Microsoft Teams
+        - name: Comunicações em nuvem
+          displayName: Cloud communications
           items:
-            - name: Visão geral
-              href: resources/calls-api-overview.md
+            - name: Visão Geral
+              href: resources/communications-api-overview.md
             - name: Chamada
               href: resources/call.md
               items:
@@ -903,7 +903,7 @@
         - name: Reserva de clientes
           displayName: 'Bookings, Microsoft Bookings'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/booking-api-overview.md
             - name: Negócio de reservas
               href: resources/bookingbusiness.md
@@ -7636,7 +7636,7 @@
         - name: Arquivos
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/onedrive.md
             - name: Unidades
               href: resources/drive.md
@@ -7726,7 +7726,7 @@
         - name: Finanças (visualização)
           displayname: 'Dynamics, Dynamics 365 Business Central'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/dynamics-graph-reference.md
             - name: Conta
               href: resources/dynamics-account.md
@@ -7961,7 +7961,7 @@
         - name: Identidade e acesso
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/azure-ad-overview.md
             - name: Avaliações do acesso
               href: resources/accessreviews-root.md
@@ -7998,7 +7998,7 @@
                 - name: Modelo de fluxo de negócios
                   href: resources/businessflowtemplate.md
                   items:
-                    - name: List
+                    - name: Lista
                       href: api/businessflowtemplate-list.md
                 - name: Programa
                   href: resources/program.md
@@ -8007,7 +8007,7 @@
                       href: api/program-create.md
                     - name: Excluir
                       href: api/program-delete.md
-                    - name: List
+                    - name: Lista
                       href: api/program-list.md
                     - name: Atualizar
                       href: api/program-update.md
@@ -8020,7 +8020,7 @@
                       href: api/programcontrol-create.md
                     - name: Excluir
                       href: api/programcontrol-delete.md
-                    - name: List
+                    - name: Lista
                       href: api/programcontrol-list.md
                 - name: Tipo de controle de programa
                   href: resources/programcontroltype.md
@@ -9066,7 +9066,7 @@
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Registro e uso
                   items:
-                    - name: Visão geral
+                    - name: Visão Geral
                       href: resources/authenticationmethods-usage-insights-overview.md
                     - name: Contagem de registro de usuário de credenciais
                       href: resources/credentialuserregistrationcount.md
@@ -9090,7 +9090,7 @@
                           href: api/reportroot-getcredentialusagesummary.md
             - name: Relatórios de uso do Office 365
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/report.md
                 - name: Uso do dispositivo do Microsoft Teams
                   href: resources/microsoft-teams-device-usage-reports.md
@@ -9291,7 +9291,7 @@
         - name: Segurança
           displayname: 'Security API, Microsoft Graph Security API'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/security-api-overview.md
             - name: Ações
               href: resources/securityaction.md
@@ -9353,7 +9353,7 @@
         - name: Sites e listas
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/sharepoint.md
             - name: Sites
               href: resources/site.md
@@ -9470,7 +9470,7 @@
         - name: Tarefas e planos
           displayName: Planner
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/planner-overview.md
             - name: Plano
               href: resources/plannerplan.md
@@ -9567,7 +9567,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Teamwork
+        - name: Trabalho em equipe
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
@@ -9943,7 +9943,7 @@
         - name: Workbooks e gráficos
           displayName: Excel
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/excel.md
             - name: Workbook
               href: resources/workbook.md
