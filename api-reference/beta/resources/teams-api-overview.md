@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 34308ef188987e4c6c32ad5c97d0676e75567c30
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 9ac012d6de0e6ef191b008c8e2569b0fa0654574
+ms.sourcegitcommit: 99cbeac2ca652632d2946c4740133c9b82c8e992
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333368"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "37477049"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -29,7 +29,7 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Office 365 que fo
 |[teamsApp](../resources/teamsapp.md)|[Listar](../api/teamsapp-list.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/teamsappinstallation-list.md), [instalar](../api/teamsappinstallation-add.md), [atualizar](../api/teamsappinstallation-delete.md), [remover](../api/teamsappinstallation-delete.md) |
 |[chatMessage](../resources/chatmessage.md) (visualização)| [Lista](../api/channel-list-messages.md), [enviar](../api/channel-post-messages.md), [ler](/graph/api/channel-get-message?view=graph-rest-beta) |
-|[Chamada](/graph/api/resources/call?view=graph-rest-beta) (visualização) | [Responder](/graph/api/call-answer?view=graph-rest-beta), [rejeitar](/graph/api/call-reject?view=graph-rest-beta), [redirecionar](/graph/api/call-redirect?view=graph-rest-beta), [ativar mudo](/graph/api/call-mute?view=graph-rest-beta), [desfazer ativar mudo](/graph/api/call-unmute?view=graph-rest-beta), [atualizar metadados](/graph/api/call-updatemetadata?view=graph-rest-beta), [alterar a função de compartilhamento de tela](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [listar participantes](/graph/api/call-list-participants?view=graph-rest-beta), [convidar participantes](/graph/api/participant-invite?view=graph-rest-beta), [ativar mudo para todos os participantes](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[Chamada](/graph/api/resources/communications-api-overview.md) (visualização) | [Responder](/graph/api/call-answer?view=graph-rest-beta), [rejeitar](/graph/api/call-reject?view=graph-rest-beta), [redirecionar](/graph/api/call-redirect?view=graph-rest-beta), [ativar mudo](/graph/api/call-mute?view=graph-rest-beta), [desfazer ativar mudo](/graph/api/call-unmute?view=graph-rest-beta), [atualizar metadados](/graph/api/call-updatemetadata?view=graph-rest-beta), [alterar a função de compartilhamento de tela](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [listar participantes](/graph/api/call-list-participants?view=graph-rest-beta), [convidar participantes](/graph/api/participant-invite?view=graph-rest-beta), [ativar mudo para todos os participantes](/graph/api/participant-muteall?view=graph-rest-beta) |
 |[cronograma](/graph/api/resources/schedule?view=graph-rest-beta) (visualização)| [Criar ou substituir](/graph/api/team-put-schedule?view=graph-rest-beta), [obter](/graph/api/schedule-get?view=graph-rest-beta), [compartilhar](/graph/api/schedule-share?view=graph-rest-beta) |
 |[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) visualização| [Criar](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [Listar](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [Obter](/graph/api/schedulinggroup-get?view=graph-rest-beta), [Substituir](/graph/api/schedulinggroup-put?view=graph-rest-beta), [Excluir](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
 |[turno](/graph/api/resources/shift?view=graph-rest-beta) (visualização)| [Criar](/graph/api/schedule-post-shifts?view=graph-rest-beta), [Listar](/graph/api/schedule-list-shifts?view=graph-rest-beta), [Obter](/graph/api/shift-get?view=graph-rest-beta), [Substituir](/graph/api/shift-put?view=graph-rest-beta), [Excluir](/graph/api/shift-delete?view=graph-rest-beta) |
@@ -51,7 +51,7 @@ Veja a seguir as diferenças no nível da API entre equipes e grupos:
 - O chat persistente está disponível apenas para o Microsoft Teams. Esse recurso é representado hierarquicamente pelos recursos [channel](../resources/channel.md) e [chatMessage](../resources/chatmessage.md).
 - As conversas em grupo estão disponíveis apenas para grupos do Office 365. Esse recurso é representado hierarquicamente pelos recursos [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) e [post](../resources/post.md).  
 - O método [Listar equipes unidas](../api/user-list-joinedteams.md) se aplica apenas ao Microsoft Teams.
-- As [APIs de chamadas e reuniões online](./calls-api-overview.md) aplicam-se apenas ao Microsoft Teams.
+- As [APIs de chamadas e reuniões online](./communications-api-overview.md) aplicam-se apenas ao Microsoft Teams.
 - Confira também os [problemas conhecidos](/graph/known-issues) dessas APIs.
 
 >Observação: Se você usar as APIs de grupo em um aplicativo Microsoft Teams, em vez de um aplicativo autônomo, por exemplo, como parte de uma guia ou um bot em execução no Microsoft Teams. Siga as orientações no artigo Uso do Microsoft Graph em suas páginas do Microsoft Teams.
