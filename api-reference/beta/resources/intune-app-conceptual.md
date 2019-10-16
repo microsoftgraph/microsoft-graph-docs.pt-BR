@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 48ba27d74160c3c9402efb7590c6ff0a7e809ce8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 026ea6ad1db21579f3532f23fd2eca5759265e87
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199364"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538585"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -73,6 +73,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Atribuição de livros eletrônicos do VPP do iOS](intune-books-iosvppebookassignment.md)
 - [Aplicativo LOB para macOS](intune-apps-macoslobapp.md)
 - [Aplicativo filho macOS LOB](intune-apps-macoslobchildapp.md)
+- [aplicativo macOS Microsoft Edge](intune-apps-macosmicrosoftedgeapp.md)
 - [Sistema operacional mínimo do macOS](intune-apps-macosminimumoperatingsystem.md)
 - [Aplicativo do macOS Office Suite](intune-apps-macosofficesuiteapp.md)
 - [Aplicativo VPP do macOS](intune-apps-macosvppapp.md)
@@ -95,6 +96,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Aplicativo da loja iOS gerenciado](intune-apps-managediosstoreapp.md)
 - [Aplicativo LOB móvel gerenciado](intune-apps-managedmobilelobapp.md)
 - [Tipo de chave de configuração do aplicativo MDM](intune-apps-mdmappconfigkeytype.md)
+- [Canal do Microsoft Edge](intune-apps-microsoftedgechannel.md)
 - [Aplicativo da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinessapp.md)
 - [Aplicativo contido da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [Tipo de licença da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinesslicensetype.md)
@@ -147,11 +149,13 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de detecção de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistrydetectiontype.md)
 - [Requisito do registro do aplicativo LOB Win32](intune-apps-win32lobappregistryrequirement.md)
 - [Requisito do aplicativo LOB do Win32](intune-apps-win32lobapprequirement.md)
+- [Comportamento de reinicialização do aplicativo LOB Win32](intune-apps-win32lobapprestartbehavior.md)
 - [Código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncode.md)
 - [Tipo de código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Arquitetura do Windows](intune-apps-windowsarchitecture.md)
 - [Tipo de dispositivo Windows](intune-apps-windowsdevicetype.md)
+- [Aplicativo Windows da Microsoft Edge](intune-apps-windowsmicrosoftedgeapp.md)
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Configuração de cliente do Windows Office](intune-cirrus-windowsofficeclientconfiguration.md)
@@ -164,5 +168,3 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Aplicativo da Windows Store](intune-apps-windowsstoreapp.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
 - [Aplicativo contido do Windows universal AppX](intune-apps-windowsuniversalappxcontainedapp.md)
-
-

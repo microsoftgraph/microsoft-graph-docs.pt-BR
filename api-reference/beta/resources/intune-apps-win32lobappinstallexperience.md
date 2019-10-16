@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8cb0efbec4044bb63b9c8069e12bf934662ca587
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: aaf3c6dd99b36e33a8af3a8eb4687e1942779937
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335666"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538550"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>tipo de recurso win32LobAppInstallExperience
 
@@ -23,7 +23,8 @@ Contém propriedades de experiência de instalação para um aplicativo Win32
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que o aplicativo é executado. Os valores possíveis são: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que o aplicativo é executado. Os valores possíveis são: `system` e `user`.|
+|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Comportamento de reinicialização de dispositivo. Os valores possíveis são: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -38,7 +39,8 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "@odata.type": "#microsoft.graph.win32LobAppInstallExperience",
-  "runAsAccount": "String"
+  "runAsAccount": "String",
+  "deviceRestartBehavior": "String"
 }
 ```
 

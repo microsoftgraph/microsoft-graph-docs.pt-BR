@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89d7f357f615e653e8e7b1d1fcc9bde9c4f758a8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e1f650919e3e7cd9fa55d7e05d3fc706b18f95db
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199584"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538690"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>tipo de recurso win32LobAppAssignmentSettings
 
@@ -27,6 +27,8 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |por|[win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)|O status da notificação para esta atribuição de aplicativo. Os valores possíveis são: `showAll`, `showReboot`, `hideAll`.|
+|restartSettings|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|As configurações de reinicialização a serem aplicadas para esta atribuição de aplicativo.|
+|installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)|As configurações de tempo de instalação a serem aplicadas a esta atribuição de aplicativo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -41,7 +43,19 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
-  "notifications": "String"
+  "notifications": "String",
+  "restartSettings": {
+    "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+    "gracePeriodInMinutes": 1024,
+    "countdownDisplayBeforeRestartInMinutes": 1024,
+    "restartNotificationSnoozeDurationInMinutes": 1024
+  },
+  "installTimeSettings": {
+    "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+    "useLocalTime": true,
+    "startDateTime": "String (timestamp)",
+    "deadlineDateTime": "String (timestamp)"
+  }
 }
 ```
 

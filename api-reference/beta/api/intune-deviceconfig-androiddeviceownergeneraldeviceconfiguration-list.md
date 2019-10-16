@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64484363ae850afdd3e614a57f0ec8ac1676af86
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c0c9c86a5e3232dce7b789652d1e504d719f629c
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37169864"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534810"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Listar androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4772
+Content-Length: 4950
 
 {
   "value": [
@@ -116,6 +116,10 @@ Content-Length: 4772
         "Factory Reset Device Administrator Emails value"
       ],
       "factoryResetBlocked": true,
+      "globalProxy": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
+        "proxyAutoConfigURL": "Proxy Auto Config URL value"
+      },
       "kioskModeScreenSaverConfigurationEnabled": true,
       "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
       "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -184,6 +188,8 @@ Content-Length: 4772
   ]
 }
 ```
+
+
 
 
 

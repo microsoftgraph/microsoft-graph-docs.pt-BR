@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5893d14fdd1f1e274a355526d51bda5519a16b93
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5827a46718b710a177e72fdb684c0c2033f1cf89
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335253"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538508"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
 
@@ -35,17 +35,17 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|String|Nome de exibição do evento.|
-|componentName|String|Nome do componente.|
+|displayName|Cadeia de caracteres|Nome de exibição do evento.|
+|componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|String|Nome amigável da atividade.|
+|atividade|Cadeia de caracteres|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|String|O tipo de atividade que foi executada.|
-|activityOperationType|String|O tipo de operação HTTP da atividade.|
+|activityType|Cadeia de caracteres|O tipo de atividade que foi executada.|
+|activityOperationType|Cadeia de caracteres|O tipo de operação HTTP da atividade.|
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|category|String|Categoria de auditoria.|
+|category|Cadeia de caracteres|Categoria de auditoria.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -75,7 +75,14 @@ Veja a seguir uma representação JSON do recurso.
     "userPrincipalName": "String",
     "servicePrincipalName": "String",
     "ipAddress": "String",
-    "userId": "String"
+    "userId": "String",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "String",
+        "scopeTagId": "String"
+      }
+    ]
   },
   "activity": "String",
   "activityDateTime": "String (timestamp)",

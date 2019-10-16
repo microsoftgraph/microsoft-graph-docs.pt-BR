@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 85843a95b82caa0de07840c005a322652fdefc5b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: adbd49f77950f06e6e09969bd7cae5841493865f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199010"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538620"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -36,6 +36,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Configuração de Wi-Fi corporativa do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Configuração geral do dispositivo do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
+- [Proxy global do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxy.md)
+- [Configuração automática de proxy global de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
+- [Proxy global do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Modo de repositório de execução do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Tipo de senha obrigatória do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Perfil de certificado SCEP do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
@@ -324,6 +327,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [extensão de logon único Kerberos do macOS](intune-deviceconfig-macoskerberossinglesignonextension.md)
 - [extensão de kernel macOS](intune-deviceconfig-macoskernelextension.md)
 - [item de lançamento do macOS](intune-deviceconfig-macoslaunchitem.md)
+- [Perfil de certificado PKCS do macOS](intune-deviceconfig-macospkcscertificateprofile.md)
 - [Perfil de certificado do SCEP do macOS](intune-deviceconfig-macosscepcertificateprofile.md)
 - [Certificado raiz confiável do macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Configuração de VPN do macOS](intune-deviceconfig-macosvpnconfiguration.md)
@@ -358,7 +362,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Cadeia de configuração de OMA ](intune-deviceconfig-omasettingstring.md)
 - [Cadeia xml de configuração de OMA](intune-deviceconfig-omasettingstringxml.md)
 - [Intervalo de versão do sistema operacional](intune-deviceconfig-operatingsystemversionrange.md)
-- [Tipo de plataforma da política](intune-deviceconfig-policyplatformtype.md)
 - [Tipo de ação de energia](intune-deviceconfig-poweractiontype.md)
 - [Recursos pré-lançamento](intune-deviceconfig-prereleasefeatures.md)
 - [Classificação de tipo de aplicativos](intune-deviceconfig-ratingappstype.md)

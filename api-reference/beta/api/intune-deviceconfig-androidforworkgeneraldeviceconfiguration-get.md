@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a4fc39cba34e9c92c01e3c800c95ee5b13609a8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 7a4d6aa00fcdf678444f05f0049781c000d8ba13
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37169465"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534628"
 ---
 # <a name="get-androidforworkgeneraldeviceconfiguration"></a>Obter androidForWorkGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3176
+Content-Length: 3244
 
 {
   "value": {
@@ -140,10 +140,13 @@ Content-Length: 3176
     "securityRequireVerifyApps": true,
     "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "vpnEnableAlwaysOnLockdownMode": true,
-    "workProfileAllowWidgets": true
+    "workProfileAllowWidgets": true,
+    "workProfileBlockPersonalAppInstallsFromUnknownSources": true
   }
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 79938a72b84627cfa27c32e163034562d6737079
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e6cc0ca082152168bf44a5f0da5b4c5a307ed0ac
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180451"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530346"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Atualizar deviceManagementScriptRunSummary
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,12 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo. Essa propriedade é somente leitura.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro.|
-|compliantDeviceCount|Int32|Contagem de dispositivos em conformidade.|
-|notCompliantDeviceCount|Int32|Contagem de dispositivos não compatíveis.|
-|pendingDeviceCount|Int32|Contagem de dispositivos pendentes.|
 |successUserCount|Int32|Contagem de usuários com sucesso.|
 |errorUserCount|Int32|Erro contagem de usuários.|
 
@@ -72,15 +69,12 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
 Content-type: application/json
-Content-length: 270
+Content-length: 179
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
-  "compliantDeviceCount": 4,
-  "notCompliantDeviceCount": 7,
-  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
@@ -91,20 +85,19 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 319
+Content-Length: 228
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
-  "compliantDeviceCount": 4,
-  "notCompliantDeviceCount": 7,
-  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
 ```
+
+
 
 
 

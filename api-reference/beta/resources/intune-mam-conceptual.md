@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f6211e962cb5f2b1ab664001badea9f5e265e47a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: edef17e5b77ac407b97bb51e2988d0993840f11e
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196480"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539005"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -40,6 +40,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de criptografia de dados do aplicativo gerenciado](intune-mam-managedappdataencryptiontype.md)
 - [Local de armazenamento de dados do aplicativo gerenciado](intune-mam-managedappdatastoragelocation.md)
 - [Nível de transferência de dados do aplicativo gerenciado](intune-mam-managedappdatatransferlevel.md)
+- [Nível de ameaça do dispositivo de aplicativo gerenciado](intune-mam-managedappdevicethreatlevel.md)
 - [Status de diagnóstico de aplicativo gerenciado](intune-mam-managedappdiagnosticstatus.md)
 - [Motivo de sinalização do aplicativo gerenciado](intune-mam-managedappflaggedreason.md)
 - [Restrição de notificação de aplicativo gerenciado](intune-mam-managedappnotificationrestriction.md)

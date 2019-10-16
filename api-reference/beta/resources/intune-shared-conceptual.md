@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 56950c21527c4bf72dd57e71d27f0b1be2e47046
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1420f751866224905f1636205de173e3bd117451
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196340"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539166"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -62,7 +62,9 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Conteúdo MIME](intune-shared-mimecontent.md)
 - [Aplicativo móvel](intune-shared-mobileapp.md)
 - [Configurações de atribuição de aplicativo móvel](intune-shared-mobileappassignmentsettings.md)
+- [Configurações de tempo de instalação do aplicativo móvel](intune-shared-mobileappinstalltimesettings.md)
 - [Evento de solução de problemas de aplicativo móvel](intune-shared-mobileapptroubleshootingevent.md)
+- [Tipo de plataforma da política](intune-shared-policyplatformtype.md)
 - [Domínio com proxy](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)
@@ -78,6 +80,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Causa da falha da ação do token VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Configurações de atribuição do aplicativo LOB do Win32](intune-shared-win32lobappassignmentsettings.md)
 - [Notificação de aplicativo LOB do Win32](intune-shared-win32lobappnotification.md)
+- [Configurações de reinicialização de aplicativos LOB do Win32](intune-shared-win32lobapprestartsettings.md)
 - [Configurações de atribuição do aplicativo Windows AppX](intune-shared-windowsappxappassignmentsettings.md)
 - [Perfil de implantação do Windows Autopilot](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Configuração de ingresso no domínio do Windows](intune-shared-windowsdomainjoinconfiguration.md)

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 71f43ce3b9d1245c3a55156bae394d8f56acf148
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 5cfad05be88be74a0c346413c119413c6cc1d5fe
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37189036"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37532719"
 ---
 # <a name="create-devicemanagementtemplate"></a>Criar deviceManagementTemplate
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,11 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID do modelo|
 |displayName|String|O nome de exibição do modelo|
-|descrição|String|A descrição do modelo|
-|versionInfo|String|As informações de versão do modelo|
+|description|String|A descrição do modelo|
+|versionInfo|Cadeia de caracteres|As informações de versão do modelo|
 |preterido|Booliano|O modelo é preterido ou não. Os propósitos não podem ser criados a partir de um modelo preterido.|
 |intentCount|Int32|Número de tentativas criadas a partir deste modelo.|
-|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os possíveis valores são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`.|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os valores possíveis são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`.|
+|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|A plataforma do modelo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |publishedDateTime|DateTimeOffset|Quando o modelo foi publicado|
 
 
@@ -73,7 +74,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates
 Content-type: application/json
-Content-length: 334
+Content-length: 371
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -83,6 +84,7 @@ Content-length: 334
   "isDeprecated": true,
   "intentCount": 11,
   "templateType": "specializedDevices",
+  "platformType": "androidForWork",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
@@ -92,7 +94,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 383
+Content-Length: 420
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -103,9 +105,12 @@ Content-Length: 383
   "isDeprecated": true,
   "intentCount": 11,
   "templateType": "specializedDevices",
+  "platformType": "androidForWork",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
+
 
 
 

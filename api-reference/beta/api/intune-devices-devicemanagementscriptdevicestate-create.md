@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f613c6bb7d8a9fa25a9ef6007701433a1c2f799
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: dfd0b21906cd7692e32b93475efdb8b861ed44b3
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188560"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530612"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Criar deviceManagementScriptDeviceState
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,16 +52,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Estado da última execução do script de gerenciamento de dispositivos. Os valores possíveis são: `unknown`, `success`, `fail`, `error`, `pending`.|
-|resultMessage|String|Detalhes da saída de execução.|
+|id|Cadeia de caracteres|Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Estado da última execução do script de gerenciamento de dispositivos. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|resultMessage|Cadeia de caracteres|Detalhes da saída de execução.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivos é executado.|
 |errorCode|Int32|Código de erro correspondente à execução errada do script de gerenciamento de dispositivos.|
 |errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução errada do script de gerenciamento de dispositivo.|
-|lastSyncDateTime|DateTimeOffset|A última vez em que a extensão de gerenciamento do Intune é sincronizada com o Intune.|
-|preRemediationDetectionScriptOutput|String|Saída do script de detecção antes da correção.|
-|remediationScriptError|String|Erro de saída do script de correção.|
-|postRemediationDetectionScriptOutput|String|A saída do script de detecção após a correção.|
 
 
 
@@ -75,7 +71,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 588
+Content-length: 281
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -83,11 +79,7 @@ Content-length: 588
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-  "remediationScriptError": "Remediation Script Error value",
-  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+  "errorDescription": "Error Description value"
 }
 ```
 
@@ -96,7 +88,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 637
+Content-Length: 330
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -105,13 +97,11 @@ Content-Length: 637
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-  "remediationScriptError": "Remediation Script Error value",
-  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+  "errorDescription": "Error Description value"
 }
 ```
+
+
 
 
 
