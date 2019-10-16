@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ac07264c3f0bfd8b99537882025e18be1a38f25a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 40fbd8b99d35491041473b26e03175345b193022
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199510"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537801"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Criar windowsFeatureUpdateProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsF
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador da entidade.|
 |displayName|String|O nome de exibição do perfil.|
-|descrição|String|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|String|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
+|description|String|A descrição do perfil especificado pelo usuário.|
+|featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data e hora em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora em que o perfil foi modificado pela última vez.|
 
@@ -97,6 +97,8 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 

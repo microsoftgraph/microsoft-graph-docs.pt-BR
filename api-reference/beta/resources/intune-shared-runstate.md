@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d77f3ef9a2d7fd37edeaf2b4cc25d5e6d5bfcf4f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ecf868f77bc5460af95375ef88d73e7384ef4ccf
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347847"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538697"
 ---
 # <a name="runstate-enum-type"></a>tipo de enumeração runState
 
@@ -26,8 +26,9 @@ Indica o tipo de status de execução do script de gerenciamento de dispositivo.
 |desconhecido|,0|Resultado desconhecido.|
 |sucesso|1|O script é executado com êxito.|
 |fail|duas|O script não pôde ser executado.|
-|erro|3D|Erro de ocorrências de script de descoberta.|
-|função|quatro|O script está pendente para execução.|
+|scriptError|3D|Erro de ocorrências de script de descoberta.|
+|função|4 |O script está pendente para execução.|
+|Não aplicável|5 |O script não se aplica a este dispositivo.|
 
 
 

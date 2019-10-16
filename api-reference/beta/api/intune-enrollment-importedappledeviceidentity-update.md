@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ff6e33f7f62fe196e7f6ef532282ba4e73d5e3f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4e30b98ffa30a306e816c73418b927f4369f729a
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185018"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535916"
 ---
 # <a name="update-importedappledeviceidentity"></a>Atualizar importedAppleDeviceIdentity
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,13 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [importe
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |serialNumber|String|Número de série do dispositivo|
-|requestedEnrollmentProfileId|String|ID do perfil de registro o administrador pretende aplicar ao dispositivo durante o próximo registro|
+|requestedEnrollmentProfileId|Cadeia de caracteres|ID do perfil de registro o administrador pretende aplicar ao dispositivo durante o próximo registro|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|O perfil de registro de tempo foi atribuído ao dispositivo|
 |isSupervised|Boolean|Indica se o dispositivo Apple é supervisionado. Mais informações em:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Fonte de descoberta de dispositivos Apple. Os valores possíveis são: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
+|isDeleted|Booliano|Indica se o dispositivo é excluído do Apple Business Manager|
 |createdDateTime|DateTimeOffset|Data e hora de criação do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do dispositivo|
-|descrição|String|A descrição do dispositivo|
+|description|String|A descrição do dispositivo|
 |enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
@@ -75,7 +76,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities/{importedAppleDeviceIdentityId}
 Content-type: application/json
-Content-length: 497
+Content-length: 519
 
 {
   "@odata.type": "#microsoft.graph.importedAppleDeviceIdentity",
@@ -84,6 +85,7 @@ Content-length: 497
   "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
   "isSupervised": true,
   "discoverySource": "adminImport",
+  "isDeleted": true,
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "description": "Description value",
   "enrollmentState": "enrolled",
@@ -96,7 +98,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 605
+Content-Length: 627
 
 {
   "@odata.type": "#microsoft.graph.importedAppleDeviceIdentity",
@@ -106,6 +108,7 @@ Content-Length: 605
   "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
   "isSupervised": true,
   "discoverySource": "adminImport",
+  "isDeleted": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "description": "Description value",
@@ -113,6 +116,8 @@ Content-Length: 605
   "platform": "ios"
 }
 ```
+
+
 
 
 

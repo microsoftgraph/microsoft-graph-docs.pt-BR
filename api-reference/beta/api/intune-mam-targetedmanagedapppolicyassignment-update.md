@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 23aed94a58adf01cdb1e044a69ebd46fed072e5e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 55a469182611e4aa3e34007cae15e0c25973a22a
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37192958"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535678"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Atualizar targetedManagedAppPolicyAssignment
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [targete
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Id|
+|id|Cadeia de caracteres|Id|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identificador para implantação em um grupo ou aplicativo|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação em um grupo, direto ou de remessa/política. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|String|Identificador para o recurso usado para implantação em um grupo|
+|sourceId|Cadeia de caracteres|Identificador para o recurso usado para implantação em um grupo|
 
 
 
@@ -101,6 +101,8 @@ Content-Length: 284
   "sourceId": "Source Id value"
 }
 ```
+
+
 
 
 

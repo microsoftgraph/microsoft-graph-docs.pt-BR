@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be303d476524af2711937dd73d8f93d244e05d24
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 9c5cad99ad28ad97f568d6a724e92725eeaa6264
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188196"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527230"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Criar userExperienceAnalyticsMetric
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,6 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+POST /deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression
+POST /deviceManagement/userExperienceAnalyticsRegressionSummary/manufacturerRegression
+POST /deviceManagement/userExperienceAnalyticsRegressionSummary/operatingSystemRegression
 POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
 ```
 
@@ -51,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da métrica de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da métrica de análise da experiência do usuário.|
 |valor|Duplo|O valor da métrica de análise da experiência do usuário.|
-|unidade|String|A unidade da métrica de análise da experiência do usuário.|
+|unidade|Cadeia de caracteres|A unidade da métrica de análise da experiência do usuário.|
 
 
 
@@ -65,7 +68,7 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
+POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression
 Content-type: application/json
 Content-length: 147
 
@@ -90,6 +93,8 @@ Content-Length: 196
   "unit": "Unit value"
 }
 ```
+
+
 
 
 

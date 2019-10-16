@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e9827b9222ba4b02457cc40486f8fad3357baca6
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d95a41b843844edf43f430c19685a689d2d73917
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191735"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536312"
 ---
 # <a name="create-policysetassignment"></a>Criar policySetAssignment
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar policySe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave do PolicySetAssignment.|
+|id|Cadeia de caracteres|Chave do PolicySetAssignment.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do PolicySetAssignment.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo de destino de PolicySetAssignment|
 
@@ -93,6 +93,8 @@ Content-Length: 272
   }
 }
 ```
+
+
 
 
 

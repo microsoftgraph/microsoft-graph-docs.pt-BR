@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e911091bb4e1b5cd3179f781dd0d2f326f121a3d
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: bdeeb14eff0adf31fefe757cee646d61727f12dd
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439860"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535622"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Obter chatMessageHostedContent
 
@@ -24,12 +24,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Para o **usuário** ou recurso de **chat** :<br/>Chat. Read, chat. ReadWrite<br/><br/>Para o recurso de **canal** :<br/>Group.Read.All, Group.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|Para o recurso de **usuário** ou **chat** :<br/>Chat.Read, Chat.ReadWrite<br/><br/>Para o recurso de **canal**:<br/>Group.Read.All, Group.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| Para o **usuário** ou recurso de **chat** :<br/>Chat. Read. All, chat. ReadWrite. All<br/><br/>Para o recurso de **canal** :<br/>Group.Read.All, Group.ReadWrite.All |
+|Aplicativo| Para o recurso de **usuário** ou **chat** :<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>Para o recurso de **canal**:<br/>Group.Read.All, Group.ReadWrite.All |
 
 > [!NOTE]
-> Antes de chamar esta API com permissões de aplicativo, você deve solicitar acesso. Para obter detalhes, consulte [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,7 +43,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esta operação não oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.
+Esta operação não é compatível com os [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -122,7 +122,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_chatmessagehostedcontent"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

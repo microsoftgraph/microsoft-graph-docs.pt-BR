@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 636e1186157386841b6c98ea9ff18c8d50c18517
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4bec72253747d52307e6ca1bec24533f44387c76
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190562"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536578"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>Get enrollmentConfigurationAssignment
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 251
+Content-Length: 316
 
 {
   "value": {
@@ -74,10 +74,14 @@ Content-Length: 251
     "id": "705b021c-021c-705b-1c02-5b701c025b70",
     "target": {
       "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-    }
+    },
+    "source": "policySets",
+    "sourceId": "Source Id value"
   }
 }
 ```
+
+
 
 
 

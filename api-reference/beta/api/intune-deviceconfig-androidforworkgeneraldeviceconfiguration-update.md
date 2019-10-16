@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d79baeffacf51e9bdbe8d19067d12ded9fff5070
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b24c1f0d30ef9c157c6963dd37d691a149771ccb
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37169444"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534614"
 ---
 # <a name="update-androidforworkgeneraldeviceconfiguration"></a>Atualizar androidForWorkGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,13 +55,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |passwordBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
@@ -98,9 +98,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Tipo de senha de perfil de trabalho necessário. Os valores possíveis são: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |Workprofilerequirepassword foram adicionadas|Booliano|A senha é obrigatória ou não para o perfil de trabalho|
 |securityRequireVerifyApps|Boolean|Exige que o recurso de verificação de aplicativos Android esteja ativado.|
-|vpnAlwaysOnPackageIdentifier|String|Habilitar o modo de bloqueio para VPN Always-on.|
+|vpnAlwaysOnPackageIdentifier|Cadeia de caracteres|Habilitar o modo de bloqueio para VPN Always-on.|
 |vpnEnableAlwaysOnLockdownMode|Booliano|Habilitar o modo de bloqueio para VPN Always-on.|
 |workProfileAllowWidgets|Booliano|Permitir widgets de aplicativos de perfil de trabalho.|
+|workProfileBlockPersonalAppInstallsFromUnknownSources|Booliano|Impedir instalações de aplicativos de fontes desconhecidas no perfil pessoal.|
 
 
 
@@ -114,7 +115,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2847
+Content-length: 2913
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -182,7 +183,8 @@ Content-length: 2847
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
-  "workProfileAllowWidgets": true
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
 
@@ -191,7 +193,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3019
+Content-Length: 3085
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -262,9 +264,12 @@ Content-Length: 3019
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
-  "workProfileAllowWidgets": true
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
+
+
 
 
 

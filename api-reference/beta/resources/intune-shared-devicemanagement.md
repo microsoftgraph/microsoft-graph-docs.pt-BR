@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb66cec59189cb0fb6622f9349d8b340fadfc979
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: f800c9a2eed631c5cfef07d042c2393366468007
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196330"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538753"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -29,6 +29,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Gerenciamento de dispositivo
 - SIM (ESIM) eletrônico
 - Isolamento
+- Análise de política de grupo
 - Notificações
 - Políticas de integração, configurações e detalhes
 - Conjunto de políticas
@@ -36,6 +37,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Acesso remoto
 - Parceiros de assistência remota
 - Políticas de controle de acesso baseado em função (RBAC)
+- Reporting
 - Parceiros de gerenciamento do expanse de telecomunicações
 - Solucionando problemas de eventos
 - Resumos da proteção de informações do Windows
@@ -60,7 +62,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo associado ao dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
 |legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
@@ -74,6 +76,8 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Estado de assinatura de gerenciamento de dispositivo móvel do locatário. Os valores possíveis são: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |assinaturas|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|Assinatura do locatário. Os possíveis valores são: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Visão geral de malware para dispositivos Windows.|
+|**Análise de política de grupo**|
+|groupPolicyObjectFiles|coleção [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|Uma lista de arquivos de objeto de diretiva de grupo carregados.|
 |**Integração**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.|
 |**Odj**|
@@ -121,10 +125,18 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |dataSharingConsents|coleção [dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|O compartilhamento de dados é enviado.|
 |detectedApps|Conjunto [detectedApp](../resources/intune-devices-detectedapp.md)|A lista de aplicativos detectados associados a um dispositivo.|
 |deviceManagementScripts|coleção [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|A lista de scripts de gerenciamento de dispositivo associados ao locatário.|
+|deviceHealthScripts|coleção [deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|A lista de scripts de integridade do dispositivo associados ao locatário.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Visão geral do dispositivo|
 |managedDevices|Conjunto [managedDevice](../resources/intune-devices-manageddevice.md)|A lista de dispositivos gerenciados.|
 |remoteActionAudits|coleção [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|A lista de auditorias de ação remota do dispositivo com o locatário.|
 |windowsMalwareInformation|coleção [windowsmalwareinformation foram adicionadas](../resources/intune-devices-windowsmalwareinformation.md)|A lista de malwares afetados no locatário.|
+|mobileAppTroubleshootingEvents|coleção [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|A Propriedade Collection de MobileAppTroubleshootingEvent.|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|Visão geral da análise da experiência do usuário|
+|userExperienceAnalyticsBaselines|coleção [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)|Linhas de base de análise da experiência do usuário|
+|userExperienceAnalyticsCategories|coleção [userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|Categorias de análise da experiência do usuário|
+|userExperienceAnalyticsDevicePerformance|coleção [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Desempenho do dispositivo de análise da experiência do usuário|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|Resumo de regressão da análise da experiência do usuário|
+|userExperienceAnalyticsDeviceStartupHistory|coleção [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Histórico de inicialização do dispositivo de análise da experiência do usuário|
 |**Enrollmentid**|
 |depOnboardingSettings|coleção [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Este conjunto de vários tokens DEP por locatário.|
 |importedDeviceIdentities|coleção [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|As identidades de dispositivo importadas.|
@@ -137,6 +149,8 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |**Isolamento**|
 |managementConditions|coleção [managementCondition](../resources/intune-fencing-managementcondition.md)|As condições de gerenciamento associadas ao gerenciamento de dispositivos da empresa.|
 |managementConditionStatements|coleção [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|As instruções de condição de gerenciamento associadas ao gerenciamento de dispositivos da empresa.|
+|**Análise de política de grupo**|
+|groupPolicyMigrationReports|coleção [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|Uma lista de relatórios de migração de política de grupo.|
 |**Notificações**|
 |notificationMessageTemplates|Conjunto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Os modelos de mensagens de notificação.|
 |**Integração**|
@@ -165,6 +179,8 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |roleAssignments|Conjunto [deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md)|As atribuições da função|
 |roleDefinitions|Conjunto [roleDefinition](../resources/intune-rbac-roledefinition.md)|As definições da função.|
 |roleScopeTags|coleção [roleScopeTag](../resources/intune-rbac-rolescopetag.md)|As marcas de escopo da função.|
+|**Relatórios**|
+|relatórios|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Singleton de relatórios|
 |**Atualização de software**|
 |windowsFeatureUpdateProfiles|coleção [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Uma coleção de perfis de atualização de recursos do Windows|
 |**Gerenciamento de despesas de telecomunicações (tem)**|

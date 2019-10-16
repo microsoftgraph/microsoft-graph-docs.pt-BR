@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df2546c8c011ac68043f969cfd7ddd78323ca2db
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: f7d9b1c58bcbaadd78bba3b1d01713123fca0b4b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190429"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536536"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>Atualizar mobileThreatDefenseConnector
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,9 +51,11 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [mobileThreatDef
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |lastHeartbeatDateTime|DateTimeOffset|Data e hora da última Pulsação recebida de um Parceiro de Sincronização de Dados|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Estado do parceiro de sincronização de dados para esta conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|androidMobileApplicationManagementEnabled|Booliano|Para Android, defina se os dados do parceiro de sincronização de dados devem ser usados durante as avaliações de MAM (gerenciamento de aplicativo móvel). Somente um parceiro por plataforma pode ser habilitado para a avaliação de gerenciamento de aplicativo móvel (MAM).|
+|iosMobileApplicationManagementEnabled|Booliano|Para IOS, Obtém ou define se os dados do parceiro de sincronização de dados devem ser usados durante as avaliações de MAM (gerenciamento de aplicativo móvel). Somente um parceiro por plataforma pode ser habilitado para a avaliação de gerenciamento de aplicativo móvel (MAM).|
 |androidEnabled|Booliano|No Android, definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
 |iosEnabled|Booliano|No iOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
 |windowsEnabled|Booliano|Para o Windows, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
@@ -78,12 +80,14 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnectorId}
 Content-type: application/json
-Content-length: 622
+Content-length: 726
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
+  "androidMobileApplicationManagementEnabled": true,
+  "iosMobileApplicationManagementEnabled": true,
   "androidEnabled": true,
   "iosEnabled": true,
   "windowsEnabled": true,
@@ -103,13 +107,15 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 671
+Content-Length: 775
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
   "id": "e4bede14-de14-e4be-14de-bee414debee4",
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
+  "androidMobileApplicationManagementEnabled": true,
+  "iosMobileApplicationManagementEnabled": true,
   "androidEnabled": true,
   "iosEnabled": true,
   "windowsEnabled": true,
@@ -123,6 +129,8 @@ Content-Length: 671
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
+
+
 
 
 

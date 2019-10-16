@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b7fee95a8bf7f15370f3b5a290e5cb4fcf0334f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 76e89dcfc2c97d340de5bb1588addea7303c7682
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37172069"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535111"
 ---
 # <a name="list-win32lobapps"></a>Listar win32LobApps
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3347
+Content-Length: 3390
 
 {
   "value": [
@@ -139,7 +139,8 @@ Content-Length: 3347
       ],
       "installExperience": {
         "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-        "runAsAccount": "user"
+        "runAsAccount": "user",
+        "deviceRestartBehavior": "allow"
       },
       "returnCodes": [
         {
@@ -163,6 +164,8 @@ Content-Length: 3347
   ]
 }
 ```
+
+
 
 
 

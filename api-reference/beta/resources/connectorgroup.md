@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d985f1f49ade4057b1a9ed9d3e1dbdafebfec7f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 02ef418f0f2124b4bd0c7489db8c732398005761
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973189"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538382"
 ---
 # <a name="connectorgroup-resource-type"></a>tipo de recurso do The Connector
 
@@ -25,8 +25,8 @@ ms.locfileid: "35973189"
 |[Listar aplicativos](../api/connectorgroup-list-applications.md) |coleção [Application](application.md)| Obtenha a coleção de objetos de aplicativo associada.|
 |[Criar conector](../api/connectorgroup-post-members.md) |[conector](connector.md)| Adicionar um conector ao grupo de conectores postando na coleção Members.|
 |[Listar membros](../api/connectorgroup-list-members.md) |coleção [Connector](connector.md)| Obtenha uma coleção de objetos Connector.|
-|[Atualização](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Atualize o objeto de conexão. |
-|[Delete](../api/connectorgroup-delete.md) | Nenhum |Exclua objeto de conexão. Todos os conectores devem ser removidos para que um grupo do conector possa ser excluído. |
+|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Atualize o objeto de conexão. |
+|[Delete](../api/connectorgroup-delete.md) | Nenhum |Exclua objeto de conexão. Todos os conectores devem ser removidos para que um grupo de conectores possa ser excluído. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -34,7 +34,7 @@ ms.locfileid: "35973189"
 |connectorGroupType|string| O tipo de conectores que serão usados com o grupo. Os valores possíveis são `applicationProxy`:.|
 |id|String| A ID do objeto do conector|
 |isDefault|Booliano| Indica se o grupo de conectores é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é definido pelo sistema.|
-|name|String| O nome associado ao conector.|
+|name|Cadeia de caracteres| O nome associado ao conector.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

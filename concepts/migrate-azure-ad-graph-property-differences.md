@@ -4,16 +4,16 @@ description: Descreve as diferenças de propriedade entre os recursos de gráfic
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 75a164925171d49d930492ba44029deb0d73e49d
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: 626e64411b0ca56a407c5b6b23ccd4d82d68d858
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667597"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538977"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
-Este artigo faz parte da *etapa 1:* revisar as diferenças de API do [processo de migração de aplicativos](migrate-azure-ad-graph-planning-checklist.md).
+Este artigo faz parte da *etapa 1: revisar as diferenças de API* do [processo de migração de aplicativos](migrate-azure-ad-graph-planning-checklist.md).
 
 Em geral, a melhor maneira de comparar a API do Azure AD Graph com o Microsoft Graph é comparar os metadados subjacentes para cada serviço, especialmente as descrições de recursos:
 
@@ -35,16 +35,16 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 | **dirSyncEnabled** | versão &nbsp; - &nbsp;beta **onPremisesSyncEnabled** <br> v 1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
 | **facsimileTelephoneNumber** | versão &nbsp; - &nbsp; beta **fax** <br> v 1.0 &nbsp; - &nbsp; **fax** | |
 | **imutávelid** | versão &nbsp; - &nbsp;beta **onPremisesImmutableId** <br> v 1.0 &nbsp; - &nbsp; **onPremisesImmutableId**  | |
-| **iscomprometed** | versão &nbsp; - &nbsp; beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | A API de [proteção](/graph/api/resources/identityprotection-root?view=graph-rest-beta) de identidades do Microsoft Graph fornece funcionalidade mais sofisticada. |
+| **iscomprometed** | versão &nbsp; - &nbsp; beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | A API de [proteção de identidades](/graph/api/resources/identityprotection-root?view=graph-rest-beta) do Microsoft Graph fornece funcionalidade mais sofisticada. |
 | **lastDirSyncDateTime** | versão &nbsp; - &nbsp;beta **onPremisesLastSyncDateTime** <br> v 1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
 | **processadores** | versão &nbsp; - &nbsp; beta **mobilePhone** <br> v 1.0 &nbsp; - &nbsp; **mobilePhone** | |
 | **oAuth2PermissionGrants** | versão &nbsp; - &nbsp; beta **oAuth2PermissionGrants** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ ||
 | **provisioningErrors** | versão &nbsp; - &nbsp; beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | Essa propriedade e suas informações são preteridas.  No entanto, uma nova propriedade que descreve qualquer erro de provisionamento relacionado ao AD Connect pode ser encontrada no **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | versão&nbsp;-&nbsp;beta**signinSessionsValidFromDateTime**<br>v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
-| **signinNames** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **signinNames** | &nbsp; - &nbsp; **identidades beta/signInType** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Essa propriedade agora é parte do recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-beta) .|
 | **telephoneNumber** | versão &nbsp; - &nbsp; beta **businessPhones** <br> v 1.0 &nbsp; - &nbsp; **businessPhones** | |
 | **thumbnailPhoto** | &nbsp; - &nbsp; **foto**beta, fotos <br> &nbsp; - &nbsp; **foto**v 1.0, fotos | A foto de miniatura do Azure AD não está disponível por meio do Microsoft Graph.  Em vez disso, use a [API de foto](/graph/api/resources/profilephoto?view=graph-rest-1.0) . |
-| **useridentities** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **useridentities** | &nbsp; - &nbsp; **identidades** beta <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 | **userState** | versão &nbsp; - &nbsp; beta **externalUserState** <br> v 1.0 &nbsp; - &nbsp; **externalUserState** | |
 | **userStateChangedOn** | versão&nbsp;-&nbsp;beta**externalUserStateChangeDateTime**<br>v 1.0&nbsp;-&nbsp;**externalUserStateChangeDateTime** | |
 
@@ -107,7 +107,7 @@ O recurso de contato do Azure AD Graph foi renomeado como orgContact no Microsof
 | **physicalDeliveryOfficeName** | versão &nbsp; - &nbsp;beta **officeLocation** <br> v 1.0 &nbsp; - &nbsp; **officeLocation** | |
 | **postalCode** | &nbsp;-&nbsp;**** endereços&nbsp;beta **(PostalCode)**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_  | A propriedade postalCode é parte da coleção de recursos addresses. |
 | **provisioningErrors** | versão &nbsp; - &nbsp; Beta não disponível <br> v 1.0 &nbsp; - &nbsp; não disponível | Essa propriedade e suas informações são preteridas.  No entanto, uma nova propriedade que descreve qualquer erro de provisionamento relacionado ao AD Connect pode ser encontrada no **onPremisesProvisioningErrors**. Atualmente, isso só está disponível na versão beta. |
-| **sipProxyAddress** |  &nbsp; - &nbsp; **** imendereços beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_  | |
+| **sipProxyAddress** |  &nbsp; - &nbsp; **imendereços** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_  | |
 | **state** | &nbsp; - &nbsp; **** endereços&nbsp;beta **(estado)**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_  | A propriedade State é parte da coleção de recursos addresses. |
 | **streetAddress** | &nbsp; - &nbsp; **** endereços&nbsp;beta **(rua)**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_  | A propriedade Street é parte da coleção de recursos addresses. |
 | **telephoneNumber** | &nbsp;-&nbsp;**** telefones&nbsp;beta **(negócios)** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Agora, parte da coleção Phones, que oferece suporte a Mobile, Business e businessFax. |
@@ -200,7 +200,7 @@ O recurso TenantDetails do Azure AD Graph é renomeado para a organização no M
 
 ## <a name="trustedcasforpasswordlessauth-property-differences"></a>Diferenças da propriedade TrustedCasForPasswordlessAuth
 
-O recurso TrustedCasForPasswordlessAuth do Azure AD Graph foi renomeado como [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta)e só está disponível na versão beta do Microsoft Graph endpoing. Não há diferenças de propriedade; no entanto, há diferenças no tipo de recurso **certificateAuthority** usado pela propriedade **certificateAuthorities** .
+O recurso TrustedCasForPasswordlessAuth do Azure AD Graph foi renomeado como [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta)e só está disponível no ponto de extremidade beta do Microsoft Graph. Não há diferenças de propriedade; no entanto, há diferenças no tipo de recurso **certificateAuthority** usado pela propriedade **certificateAuthorities** .
 
 ### <a name="certificateauthorityinformation"></a>CertificateAuthorityInformation
 
@@ -208,12 +208,12 @@ O gráfico do Azure AD CertificateAuthorityInformation é renomeado como **certi
 
 |Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br> propriedade|Comments|
 |---|---|---|
-| **authoritytype** | versão&nbsp;-&nbsp;beta**isRootAuthority**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | O tipo dessa propriedade também foi alterado em um Boolean. Anteriormente, essa propriedade deve ser definida como "RootAuthority" ou "IntermediateAuthority". A definição da nova propriedade como **true** equivale a "RootAuthority". |
-| **crlDistributionPoint** | versão&nbsp;-&nbsp;beta**certificateRevocationListUrl** <br> v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
-| **deltaCrlDistributionPoint** | versão&nbsp;-&nbsp;beta**deltaCertificateRevocationListUrl** <br> v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
-| **trustedCertificate** | &nbsp;-&nbsp;**certificado** beta <br> v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
-| **trustedIssuer** | &nbsp;-&nbsp;**emissor** beta<br> v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
-| **trustedIssuerSki** | versão&nbsp;-&nbsp;beta**issuerSki**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **authoritytype** | versão&nbsp;-&nbsp;beta**isRootAuthority**<br> v 1.0 &nbsp; - &nbsp; **isRootAuthority** | O tipo dessa propriedade também foi alterado em um Boolean. Anteriormente, essa propriedade deve ser definida como "RootAuthority" ou "IntermediateAuthority". A definição da nova propriedade como **true** equivale a "RootAuthority". |
+| **crlDistributionPoint** | versão&nbsp;-&nbsp;beta**certificateRevocationListUrl** <br> v 1.0&nbsp;-&nbsp;**certificateRevocationListUrl** | |
+| **deltaCrlDistributionPoint** | versão&nbsp;-&nbsp;beta**deltaCertificateRevocationListUrl** <br> v 1.0&nbsp;-&nbsp;**deltaCertificateRevocationListUrl** | |
+| **trustedCertificate** | &nbsp;-&nbsp;**certificado** beta <br> v 1.0&nbsp;-&nbsp;**deltaCertificateRevocationListUrl** | |
+| **trustedIssuer** | &nbsp;-&nbsp;**emissor** beta<br> &nbsp;-&nbsp;**emissor** de v 1.0 | |
+| **trustedIssuerSki** | versão&nbsp;-&nbsp;beta**issuerSki**<br> v 1.0 &nbsp; - &nbsp; **issuerSki** | |
 
 ## <a name="next-steps"></a>Próximos passos
 

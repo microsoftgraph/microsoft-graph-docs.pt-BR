@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 749dd91fb22fe9465599e6ec32070f3adfb0f5e8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e80069c3c2b8a7068c16f2c919c9e1e367e5a161
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37174246"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535566"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Criar androidDeviceOwnerEnrollmentProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,19 +51,19 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
+|accountId|Cadeia de caracteres|GUID de locatário ao qual o perfil de registro pertence.|
 |id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
-|displayName|String|Nome de exibição do perfil de registro.|
-|descrição|String|Descrição do perfil de registro.|
+|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
+|description|String|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
-|tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|
+|tokenValue|Cadeia de caracteres|Valor do token mais recentemente criado para este perfil de registro.|
 |Propriedadetokencreationdatetime|DateTimeOffset|Data e hora em que o token criado mais recentemente foi criado.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
@@ -130,7 +130,6 @@ Content-Length: 799
   ]
 }
 ```
-
 
 
 

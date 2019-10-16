@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1fb71ec1f79297a1ddd89ead1c4192f93713ddc5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 02de18bf0dc4070c33f3f21cad6749699ab11193
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194506"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538172"
 ---
 # <a name="list-devicemanagementderivedcredentialsettingses"></a>Listar deviceManagementDerivedCredentialSettingses
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 |&nbsp;&nbsp; **Política de acesso de recursos**|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Application||
 |&nbsp;&nbsp; **Política de acesso de recursos**|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -80,6 +80,8 @@ Content-Length: 347
   ]
 }
 ```
+
+
 
 
 

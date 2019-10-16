@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a29ab1e01171ab47f6fc537f62b2c0a8e0488d4
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c185818865de6f1961933416a76f327498e52e9f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171411"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534936"
 ---
 # <a name="list-auditevents"></a>Listar auditEvents
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1632
+Content-Length: 1855
 
 {
   "value": [
@@ -83,7 +83,14 @@ Content-Length: 1632
         "userPrincipalName": "User Principal Name value",
         "servicePrincipalName": "Service Principal Name value",
         "ipAddress": "Ip Address value",
-        "userId": "User Id value"
+        "userId": "User Id value",
+        "scopeTags": [
+          {
+            "@odata.type": "microsoft.graph.scopeTagInfo",
+            "scopeTagName": "Scope Tag Name value",
+            "scopeTagId": "Scope Tag Id value"
+          }
+        ]
       },
       "activity": "Activity value",
       "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -112,6 +119,8 @@ Content-Length: 1632
   ]
 }
 ```
+
+
 
 
 

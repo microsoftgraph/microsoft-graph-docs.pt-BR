@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0698380f3fb69323275a8c2db3725ddb741f2151
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bdd3eaa7453a885436ba464c44d05ee5a3b5d65d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196613"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37524465"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>tipo de recurso depEnrollmentBaseProfile
 
@@ -34,18 +34,18 @@ Herda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|String|Nome do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|descrição|String|Descrição do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|String|Descrição do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação de usuário herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|Cadeia de caracteres|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Booliano|Indica se este é o perfil padrão|
 |supervisedModeEnabled|Booliano|Modo supervisionado, true para habilitar, caso contrário, false. Consulte https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune para obter mais informações.|
-|supportDepartment|String|Informações do departamento de suporte|
+|supportDepartment|Cadeia de caracteres|Informações do departamento de suporte|
 |passCodeDisabled|Booliano|Indica se o painel de configuração de senha está desabilitado|
 |IsMandatory|Booliano|Indica se o perfil é obrigatório|
 |locationDisabled|Booliano|Indica se o painel de instalação do serviço de localização está desabilitado|
-|supportPhoneNumber|String|Número de telefone de suporte|
+|supportPhoneNumber|Cadeia de caracteres|Número de telefone de suporte|
 |profileRemovalDisabled|Booliano|Indica se a opção de remoção de perfil está desabilitada|
 |restoreBlocked|Booliano|Indica se o painel de configuração de restauração está bloqueado|
 |appleIdDisabled|Booliano|Indica se o painel de configuração de ID da Apple está desabilitado|
@@ -58,7 +58,8 @@ Herda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md
 |displayToneSetupDisabled|Booliano|Indica se a tela de configuração do displaytone está desabilitada|
 |privacyPaneDisabled|Booliano|Indica se a tela de privacidade está desabilitada|
 |screenTimeScreenDisabled|Booliano|Indica se a configuração de tempo limite da tela está desabilitada|
-|deviceNameTemplate|String|Define um padrão literal ou de nome.|
+|deviceNameTemplate|Cadeia de caracteres|Define um padrão literal ou de nome.|
+|configurationWebUrl|Booliano|URL para o logon do assistente de configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -100,7 +101,8 @@ Veja a seguir uma representação JSON do recurso.
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
   "screenTimeScreenDisabled": true,
-  "deviceNameTemplate": "String"
+  "deviceNameTemplate": "String",
+  "configurationWebUrl": true
 }
 ```
 

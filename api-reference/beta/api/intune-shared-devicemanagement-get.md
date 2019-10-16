@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 248ed14156ae8c24f70b4ecd0ce1f643d55503db
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 9cfbe3ed4a491d6e8dc474a39d2b3549b5117856
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194653"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538291"
 ---
 # <a name="get-devicemanagement"></a>Acessar deviceManagement
 
@@ -48,7 +48,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
-| Aplicativo | |
+| Application | |
 | &nbsp;&nbsp; **Android para trabalho** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
@@ -159,6 +159,8 @@ Content-Length: 918
   }
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43193d8bac87dff093435c5961b29fa28e723bb6
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 96014ec1d36d87752aa2a26f5542be633a85638d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190072"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537633"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Atualizar windows10EnrollmentCompletionPageConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da conta herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |displayName|String|O nome de exibição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|descrição|String|A descrição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|String|A descrição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos somente à configuração com o menor valor de prioridade. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Data e hora de criação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
@@ -62,10 +62,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |blockDeviceSetupRetryByUser|Booliano|Permitir que o usuário repita a configuração após a instalação falhar|
 |allowDeviceResetOnInstallFailure|Booliano|Permitir ou bloquear falha de redefinição de dispositivo na instalação|
 |allowLogCollectionOnInstallFailure|Booliano|Permitir ou bloquear coleta de log na falha de instalação|
-|customErrorMessage|String|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
+|customErrorMessage|Cadeia de caracteres|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
 |installProgressTimeoutInMinutes|Int32|Definir o tempo limite de progresso da instalação em minutos|
 |allowDeviceUseOnInstallFailure|Booliano|Permitir que o usuário continue usando o dispositivo em caso de falha de instalação|
-|selectedMobileAppIds|Coleção de cadeias de caracteres|Aplicativos selecionados para acompanhar o status de instalação|
+|selectedMobileAppIds|String collection|Aplicativos selecionados para acompanhar o status de instalação|
 |trackInstallProgressForAutopilotOnly|Booliano|Mostrar apenas o progresso da instalação dos cenários de registro do piloto automático|
 |disableUserStatusTrackingAfterFirstUser|Booliano|Mostrar apenas o progresso da instalação para o primeiro registro post de usuário|
 
@@ -134,6 +134,8 @@ Content-Length: 856
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
+
+
 
 
 

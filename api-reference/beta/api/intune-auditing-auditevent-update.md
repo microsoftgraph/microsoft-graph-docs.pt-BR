@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6667b22a6cff5fadf749b0145e8310e80be5d173
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 3baccd69901378ad1161b8798222579ca9745e40
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171397"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534929"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,17 +52,17 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|String|Nome de exibição do evento.|
-|componentName|String|Nome do componente.|
+|displayName|Cadeia de caracteres|Nome de exibição do evento.|
+|componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|String|Nome amigável da atividade.|
+|atividade|Cadeia de caracteres|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|String|O tipo de atividade que foi executada.|
-|activityOperationType|String|O tipo de operação HTTP da atividade.|
+|activityType|Cadeia de caracteres|O tipo de atividade que foi executada.|
+|activityOperationType|Cadeia de caracteres|O tipo de operação HTTP da atividade.|
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|category|String|Categoria de auditoria.|
+|category|Cadeia de caracteres|Categoria de auditoria.|
 
 
 
@@ -76,7 +76,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1390
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -93,7 +93,14 @@ Content-length: 1390
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "Scope Tag Name value",
+        "scopeTagId": "Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -126,7 +133,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1439
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -144,7 +151,14 @@ Content-Length: 1439
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "Scope Tag Name value",
+        "scopeTagId": "Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -171,6 +185,8 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
+
 
 
 

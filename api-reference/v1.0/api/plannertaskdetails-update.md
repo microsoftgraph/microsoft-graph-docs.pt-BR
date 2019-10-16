@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d25451007ec42c6c6f76d308038d0e4249e87cd8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 470d8e56004241a5b4dbc2f509f68f8d7e4e0d3e
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375790"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539299"
 ---
 # <a name="update-plannertaskdetails"></a>Atualizar plannertaskdetails
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 PATCH /planner/tasks/{id}/details
 ```
-## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
@@ -41,7 +41,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |verificação|[plannerChecklistItems](../resources/plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
-|descrição|Cadeia de caracteres|Descrição da tarefa|
+|description|Cadeia de caracteres|Descrição da tarefa|
 |previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida é escolhido pelo aplicativo que está exibindo a tarefa.|
 |Referencie|[plannerExternalReferences](../resources/plannerexternalreferences.md)|A coleção de referências na tarefa.|
 

@@ -5,19 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4604fdf6bed68d378c7a3ab12f9fa126c1a37bcb
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 17a1f89c11386f48ac695bcc4b2b13ff5c68fb86
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356804"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538420"
 ---
 # <a name="create-user"></a>Criar usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [usuário](../resources/user.md).
-O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
+Criar um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar qualquer outra propriedade gravável.
 
 >[!NOTE]
 >Para criar usuários externos, use a [API de convite](invitation-post.md).
@@ -164,7 +163,7 @@ Content-type: application/json
   "displayName": "John Smith",
   "identities": [
     {
-      "signInType": "signInName",
+      "signInType": "userName",
       "issuer": "contoso.onmicrosoft.com",
       "issuerAssignedId": "johnsmith"
     },

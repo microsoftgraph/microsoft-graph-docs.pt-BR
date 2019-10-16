@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: /graph/auth/index?context=graph/api/1.0
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -18,7 +18,7 @@
           href: /graph/permissions-reference?context=graph/api/1.0
         - name: Gerenciar o acesso ao aplicativo (Provedores de Soluções na Nuvem da Microsoft)
           href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
-        - name: Limitar o acesso à caixa de correio
+        - name: Acesso à caixa de correio limitado
           href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
     - name: Usar a API
       items:
@@ -44,7 +44,7 @@
         - name: Controlar alterações
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/delta-query-overview?context=graph/api/1.0
             - name: Obter alterações em eventos (exemplo)
               href: /graph/delta-query-events?context=graph/api/1.0
@@ -63,7 +63,7 @@
               href: /graph/extensibility-open-users?context=graph/api/1.0
             - name: Usar extensões de esquema (exemplo)
               href: /graph/extensibility-schema-groups?context=graph/api/1.0
-        - name: Usar postmaster
+        - name: Usar o Postman
           href: /graph/use-postman?context=graph/api/1.0
     - name: Migrar
       expanded: false
@@ -71,7 +71,7 @@
         - name: Azure AD Graph.
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
             - name: Lista de verificação para migração de aplicativos
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -111,13 +111,13 @@
           href: /graph/sdks/create-client?context=graph/api/1.0
         - name: Escolher um provedor de autenticação.
           href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
-    - name: Usar o kit de ferramentas (versão prévia)
+    - name: Usar o kit de ferramentas (visualização)
       items:
         - name: Visão geral do kit de ferramentas
           href: /graph/toolkit/overview?context=graph/api/1.0
         - name: Componentes
           items:
-            - name: Faça
+            - name: Logon
               href: /graph/toolkit/components/login?context=graph/api/1.0
             - name: Pessoa
               href: /graph/toolkit/components/person?context=graph/api/1.0
@@ -139,9 +139,9 @@
               href: /graph/toolkit/providers/teams?context=graph/api/1.0
             - name: Provedor personalizado
               href: /graph/toolkit/providers/custom?context=graph/api/1.0
-        - name: Estilos de componentes
+        - name: Componentes de estilização
           href: /graph/toolkit/style?context=graph/api/1.0
-        - name: Componentes de Templating
+        - name: Componentes de modelagem
           href: /graph/toolkit/templates?context=graph/api/1.0
     - name: Recursos
       items:
@@ -156,11 +156,11 @@
     - name: Referência v1.0
       expanded: true
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -327,7 +327,7 @@
                   href: api/user-update-settings.md
         - name: Grupos
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/groups-overview.md
             - name: Grupo
               href: resources/group.md
@@ -743,7 +743,7 @@
         - name: Dispositivos e aplicativos
           displayName: Intune
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/intune-graph-overview.md
             - name: Gerenciamento de aplicativos
               href: resources/intune-app-conceptual.md
@@ -3105,7 +3105,7 @@
         - name: Arquivos
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/onedrive.md
             - name: Unidades
               href: resources/drive.md
@@ -3179,7 +3179,7 @@
         - name: Identidade e acesso
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/azure-ad-overview.md
             - name: Logs de auditoria
               href: resources/azure-ad-auditlog-overview.md
@@ -3198,6 +3198,17 @@
                       href: api/signin-list.md
                     - name: Obter entrada
                       href: api/signin-get.md
+            - name: Configuração de autenticação baseada em certificado
+              href: resources/certificatebasedauthconfiguration.md
+              items:
+                - name: Listar
+                  href: api/certificatebasedauthconfiguration-list.md
+                - name: Create
+                  href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                - name: Obter
+                  href: api/certificatebasedauthconfiguration-get.md
+                - name: Excluir
+                  href: api/certificatebasedauthconfiguration-delete.md
             - name: Contratos
               href: resources/contract.md
               items:
@@ -3686,7 +3697,7 @@
                       href: api/multivaluelegacyextendedproperty-get.md
         - name: Relatórios
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/report.md
             - name: Uso do dispositivo do Microsoft Teams
               href: resources/microsoft-teams-device-usage-reports.md
@@ -3919,7 +3930,7 @@
         - name: Sites e listas
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/sharepoint.md
             - name: Sites
               href: resources/site.md
@@ -3958,7 +3969,7 @@
                   href: api/itemanalytics-get.md
         - name: 'Inteligência social: pessoas'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/social-overview.md
             - name: Pessoa
               href: resources/person.md
@@ -3968,7 +3979,7 @@
         - name: Tarefas e planos
           displayName: Planner
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/planner-overview.md
             - name: Plano
               href: resources/plannerplan.md
@@ -4046,7 +4057,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Teamwork
+        - name: Trabalho em equipe
           displayName: Microsoft Teams
           items:
             - name: Visão Geral

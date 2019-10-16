@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fcccf015e9f2da784c124485ea48c9fbc23f7df5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7a94dabb436ec11dd340c15afcbd7ed2f04ddbca
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334791"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538634"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>tipo de enumeração androidDeviceOwnerRequiredPasswordType
 
@@ -27,10 +27,11 @@ Política de proprietário do dispositivo Android tipo de senha exigido.
 |obrigatório|1|Deve haver uma senha definida, mas não há restrições no tipo.|
 |numéricos|duas|Pelo menos numérico.|
 |numericComplex|3D|Pelo menos numérico sem sequências de repetição ou ordenadas.|
-|caracteres|quatro|Pelo menos a senha alfabética.|
-|tecla|0,5|Pelo menos a senha alfanumérica|
-|alphanumericWithSymbols|6|Pelo menos alfanumérico com símbolos.|
-|lowSecurityBiometric|178|Senha com base em Biometria de segurança baixa necessária.|
+|caracteres|4 |Pelo menos a senha alfabética.|
+|tecla|5 |Pelo menos a senha alfanumérica|
+|alphanumericWithSymbols|6 |Pelo menos alfanumérico com símbolos.|
+|lowSecurityBiometric|7 |Senha com base em Biometria de segurança baixa necessária.|
+|customPassword|8 |Senha personalizada definida pelo administrador.|
 
 
 

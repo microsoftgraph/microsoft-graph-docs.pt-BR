@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f37a894983449dfedbef552553eeceabfc91fa79
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 443b4a515cb5f04675c9fcaa159b87ad7dec128f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198086"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538928"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso iosGeneralDeviceConfiguration
 
@@ -37,13 +37,13 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountBlockModification|Booliano|Indica se a modificação da conta será permitida ou não quando o dispositivo estiver no modo supervisionado.|
@@ -134,8 +134,8 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |kioskModeAllowVolumeButtons|Booliano|Indica se o uso dos botões de volume será permitido ou não no modo quiosque. A funcionalidade dessa propriedade é redundante com o padrão do sistema operacional e é preterida. Use KioskModeBlockVolumeButtons em vez disso.|
 |kioskModeBlockVolumeButtons|Booliano|Indica se os botões de volume devem ou não ser bloqueados no modo quiosque.|
 |kioskModeAllowZoomSettings|Booliano|Indica se o acesso às configurações de zoom será permitido ou não no modo quiosque.|
-|kioskModeAppStoreUrl|String|URL na loja de aplicativos do aplicativo para uso no modo de quiosque. Use se KioskModeManagedAppId não for conhecido.|
-|Propriedadekioskmodebuiltinappid|String|ID para aplicativos internos a serem usados no modo quiosque. Usado quando KioskModeManagedAppId e KioskModeAppStoreUrl não são definidos.|
+|kioskModeAppStoreUrl|Cadeia de caracteres|URL na loja de aplicativos do aplicativo para uso no modo de quiosque. Use se KioskModeManagedAppId não for conhecido.|
+|Propriedadekioskmodebuiltinappid|Cadeia de caracteres|ID para aplicativos internos a serem usados no modo quiosque. Usado quando KioskModeManagedAppId e KioskModeAppStoreUrl não são definidos.|
 |kioskModeRequireAssistiveTouch|Booliano|Indica se o toque assistencial deve ou não ser exigido no modo quiosque.|
 |kioskModeRequireColorInversion|Booliano|Indica se a inversão de cores deve ou não ser exigida no modo quiosque.|
 |kioskModeRequireMonoAudio|Booliano|Indica se o áudio mono deve ou não ser exigido no modo quiosque.|
@@ -179,7 +179,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |safariBlockPopups|Booliano|Indica se os popups devem ou não ser bloqueados no Safari.|
 |safariBlocked|Boolean|Indica se o usuário será ou não impedido de usar o Safari. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Configurações de cookie do Safari. Os valores possíveis são: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
-|safariManagedDomains|Coleção de cadeias de caracteres|As URLs correspondentes aos padrões indicados aqui serão consideradas gerenciadas.|
+|safariManagedDomains|String collection|As URLs correspondentes aos padrões indicados aqui serão consideradas gerenciadas.|
 |safariPasswordAutoFillDomains|String collection|Os usuários podem salvar senhas no Safari somente de URLs correspondentes aos padrões indicados aqui. Aplica-se a dispositivos no modo supervisionado (iOS 9.3 ou posterior).|
 |safariRequireFraudWarning|Booliano|Indica se um aviso de fraude deve ou não ser exigido no Safari.|
 |screenCaptureBlocked|Booliano|Indica se o usuário será ou não impedido de fazer capturas de tela.|
@@ -203,6 +203,9 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |airPrintBlockCredentialsStorage|Booliano|Indica se o armazenamento de chaves de nome de usuário e a senha para impressão de uma ou não é bloqueado (iOS 11,0 e posterior).|
 |airPrintForceTrustedTLS|Booliano|Indica se os certificados confiáveis são necessários para a comunicação de impressão TLS (iOS 11,0 e posterior).|
 |airPrintBlockiBeaconDiscovery|Booliano|Indica se a descoberta de impressoras de impressão do iBeacon está ou não bloqueada. Isso impede os beacons Bluetooth de impressão de mensagens de phishing para tráfego de rede (iOS 11,0 e posterior).|
+|filesNetworkDriveAccessBlocked|Booliano|Indica se os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede usando o protocolo SMB (bloco de mensagens de servidor). Disponível para dispositivos que executam o iOS e o iPadOS, versões 13,0 e posteriores.|
+|filesUsbDriveAccessBlocked|Booliano|Indica se o sevices com o Access pode se conectar a arquivos e abri-los em uma unidade USB. Disponível para dispositivos que executam o iOS e o iPadOS, versões 13,0 e posteriores.|
+|wifiPowerOnForced|Booliano|Indica se o Wi-Fi permanecerá ou não, mesmo quando o dispositivo estiver no modo avião. Disponível para dispositivos que executam o iOS e o iPadOS, versões 13,0 e posteriores.|
 |blockSystemAppRemoval|Booliano|Indica se a remoção de aplicativos do sistema do dispositivo é bloqueada em um dispositivo supervisionado (iOS 11,0 e posterior).|
 |vpnBlockCreation|Booliano|Indica se a criação de configurações de VPN está bloqueada (iOS 11,0 e posterior).|
 |appRemovalBlocked|Booliano|Indica se a remoção de aplicativos é permitida.|
@@ -218,7 +221,6 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |continuousPathKeyboardBlocked|Booliano|Indica se o teclado de caminho contínuo será ou não bloqueado quando o dispositivo for supervisionado (iOS 13 ou posterior).|
 |findMyDeviceInFindMyAppBlocked|Booliano|Indica se a localização do dispositivo deve ou não ser bloqueada quando o dispositivo é supervisionado (iOS 13 ou posterior).|
 |findMyFriendsInFindMyAppBlocked|Booliano|Indica se a localização de meus amigos deve ou não ser bloqueada quando o dispositivo é supervisionado (iOS 13 ou posterior).|
-|wiFiBlockPowerModification|Booliano|Indica se a modificação de energia WiFi deve ou não ser bloqueada quando o dispositivo é supervisionado (iOS 13 ou posterior).|
 |iTunesBlocked|Booliano|Indica se o aplicativo iTunes deve ou não ser bloqueado. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 
 ## <a name="relationships"></a>Relações
@@ -512,6 +514,9 @@ Veja a seguir uma representação JSON do recurso.
   "airPrintBlockCredentialsStorage": true,
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
+  "filesNetworkDriveAccessBlocked": true,
+  "filesUsbDriveAccessBlocked": true,
+  "wifiPowerOnForced": true,
   "blockSystemAppRemoval": true,
   "vpnBlockCreation": true,
   "appRemovalBlocked": true,
@@ -527,7 +532,6 @@ Veja a seguir uma representação JSON do recurso.
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
-  "wiFiBlockPowerModification": true,
   "iTunesBlocked": true
 }
 ```

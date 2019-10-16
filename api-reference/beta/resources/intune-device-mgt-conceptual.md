@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9191d6552f2e93850fce126a5ea90d1f7bba88c7
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 5d684352b1b910b7b340e7eb319178fc1666a5ef
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198961"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538613"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -54,9 +54,9 @@ ms.locfileid: "37198961"
 - [Estado de segurança baseada em virtualização para a proteção de dispositivos](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [Estado do atestado de integridade do dispositivo](intune-devices-devicehealthattestationstate.md)
 - [Script de integridade do dispositivo](intune-devices-devicehealthscript.md)
-- [Regra de conformidade do script de integridade do dispositivo](intune-devices-devicehealthscriptcompliancerule.md)
-- [Operador de regra de conformidade de script de integridade do dispositivo](intune-devices-devicehealthscriptcomplianceruleoperator.md)
-- [Tipo de detecção de script de integridade do dispositivo](intune-devices-devicehealthscriptdetectiontype.md)
+- [Atribuição de script de integridade do dispositivo](intune-devices-devicehealthscriptassignment.md)
+- [Estado do dispositivo de script de integridade do dispositivo](intune-devices-devicehealthscriptdevicestate.md)
+- [Resumo de execução de script de integridade do dispositivo](intune-devices-devicehealthscriptrunsummary.md)
 - [Definição de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Instância de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Evento de piloto automático de gerenciamento de dispositivos](intune-troubleshooting-devicemanagementautopilotevent.md)
@@ -108,6 +108,7 @@ ms.locfileid: "37198961"
 - [Resumo do sistema operacional do dispositivo](intune-devices-deviceoperatingsystemsummary.md)
 - [Visão geral de proteção de dispositivo](intune-devices-deviceprotectionoverview.md)
 - [Estado do registro do dispositivo](intune-devices-deviceregistrationstate.md)
+- [Tipo de disco](intune-devices-disktype.md)
 - [Código de ativação do SIM inserido](intune-esim-embeddedsimactivationcode.md)
 - [Pool de códigos de ativação do SIM inserido](intune-esim-embeddedsimactivationcodepool.md)
 - [Atribuição de pool de códigos de ativação do SIM inserido](intune-esim-embeddedsimactivationcodepoolassignment.md)
@@ -156,6 +157,7 @@ ms.locfileid: "37198961"
 - [Opções de identidade visual do modelo de notificação](intune-notification-notificationtemplatebrandingoptions.md)
 - [Contagem de versões do SO](intune-devices-osversioncount.md)
 - [Tipo de proprietário](intune-devices-ownertype.md)
+- [Estado de correção](intune-devices-remediationstate.md)
 - [Ação remota](intune-devices-remoteaction.md)
 - [Auditoria de ação remota](intune-devices-remoteactionaudit.md)
 - [Status da inclusão de assistência remota](intune-remoteassistance-remoteassistanceonboardingstatus.md)
@@ -164,6 +166,7 @@ ms.locfileid: "37198961"
 - [Resultado da ação de redefinir a senha](intune-devices-resetpasscodeactionresult.md)
 - [Resultado de ação de revogar licenças VPP da Apple](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Executar cronograma](intune-devices-runschedule.md)
+- [Informações de marca de escopo](intune-auditing-scopetaginfo.md)
 - [Resumo do estado de categoria da linha de base de segurança](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Estado de conformidade da linha de base de segurança](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Estado do dispositivo de linha de base de segurança](intune-deviceintent-securitybaselinedevicestate.md)
@@ -175,12 +178,16 @@ ms.locfileid: "37198961"
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Linha de base de análise da experiência do usuário](intune-devices-userexperienceanalyticsbaseline.md)
 - [Categoria de análise da experiência do usuário](intune-devices-userexperienceanalyticscategory.md)
+- [Desempenho do dispositivo de análise da experiência do usuário](intune-devices-userexperienceanalyticsdeviceperformance.md)
+- [Histórico de inicialização do dispositivo de análise da experiência do usuário](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 - [Estado de integridade da análise da experiência do usuário](intune-devices-userexperienceanalyticshealthstate.md)
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsight.md)
 - [Gravidade da visão da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsightseverity.md)
 - [Valor da visão da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsightvalue.md)
 - [Métrica de análise da experiência do usuário](intune-devices-userexperienceanalyticsmetric.md)
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsoverview.md)
+- [Resumo de regressão da análise da experiência do usuário](intune-devices-userexperienceanalyticsregressionsummary.md)
+- [Análise da experiência do usuário resumida por](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
 - [Estado de implantação do piloto automático do Windows](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Tipo de registro do Windows AutoPilot](intune-troubleshooting-windowsautopilotenrollmenttype.md)

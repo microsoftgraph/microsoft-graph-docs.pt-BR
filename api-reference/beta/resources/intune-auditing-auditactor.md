@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87cb4219df0d1b6026bee774576324eac7255377
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5fdb804dc293214fbcd7d937adb9ebdf959ea5fa
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335246"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538515"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
@@ -25,12 +25,13 @@ Uma classe que contém as propriedades para Ator de auditoria.
 |:---|:---|:---|
 |type|String|Tipo de ator.|
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
-|ApplicationId|String|ID do aplicativo AAD.|
-|applicationDisplayName|String|Nome do aplicativo.|
+|ApplicationId|Cadeia de caracteres|ID do aplicativo AAD.|
+|applicationDisplayName|Cadeia de caracteres|Nome do aplicativo.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário (UPN).|
-|servicePrincipalName|String|Nome da entidade de serviço (SPN).|
-|ipAddress|String|IPAddress.|
+|servicePrincipalName|Cadeia de caracteres|Nome da entidade de serviço (SPN).|
+|ipAddress|Cadeia de caracteres|IPAddress.|
 |userId|Cadeia de caracteres|ID do usuário.|
+|scopeTags|coleção [scopeTagInfo](../resources/intune-auditing-scopetaginfo.md)|Lista de marcas de escopo de usuário quando a auditoria foi realizada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,7 +55,14 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String",
   "servicePrincipalName": "String",
   "ipAddress": "String",
-  "userId": "String"
+  "userId": "String",
+  "scopeTags": [
+    {
+      "@odata.type": "microsoft.graph.scopeTagInfo",
+      "scopeTagName": "String",
+      "scopeTagId": "String"
+    }
+  ]
 }
 ```
 

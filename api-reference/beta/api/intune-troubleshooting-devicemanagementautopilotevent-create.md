@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d71b7d55ae550ea28f32ec5be2cc736c61697a3a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 7e848613bab1975ad30ee595a7f796d3a04ef7bf
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199491"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536767"
 ---
 # <a name="create-devicemanagementautopilotevent"></a>Criar deviceManagementAutopilotEvent
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,12 +56,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |deviceRegisteredDateTime|DateTimeOffset|Data de registro do dispositivo.|
 |enrollmentStartDateTime|DateTimeOffset|Data de início do registro do dispositivo.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Tipo de registro. Os valores possíveis são: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|deviceSerialNumber|String|Número de série do dispositivo.|
+|deviceSerialNumber|Cadeia de caracteres|Número de série do dispositivo.|
 |managedDeviceName|String|Nome do dispositivo gerenciado.|
-|userPrincipalName|String|Nome principal do usuário usado para registrar o dispositivo.|
-|windowsAutopilotDeploymentProfileDisplayName|String|Nome do perfil do AutoPilot.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário usado para registrar o dispositivo.|
+|windowsAutopilotDeploymentProfileDisplayName|Cadeia de caracteres|Nome do perfil do AutoPilot.|
 |enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|Estado de registro como cadastrado, falhou. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Nome do perfil da página de status do registro|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|Cadeia de caracteres|Nome do perfil da página de status do registro|
 |DeploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como êxito, falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
 |osVersion|Cadeia de caracteres|Versão do sistema operacional do dispositivo.|
 |deploymentDuration|Duração|Duração da implantação do piloto automático, incluindo registro.|
@@ -73,7 +73,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |deploymentEndDateTime|DateTimeOffset|Hora de término da implantação.|
 |targetedAppCount|Int32|Contagem de aplicativos direcionados.|
 |targetedPolicyCount|Int32|Contagem de políticas direcionadas.|
-|enrollmentFailureDetails|String|Detalhes da falha de inscrição.|
+|enrollmentFailureDetails|Cadeia de caracteres|Detalhes da falha de inscrição.|
 
 
 
@@ -150,6 +150,8 @@ Content-Length: 1372
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
+
+
 
 
 

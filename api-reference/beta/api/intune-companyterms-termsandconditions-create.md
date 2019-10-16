@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 972f0bbc19a7e9571ec85b643ef8d917a92a49ec
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4652d429478af1513e6ff12ed01ccc4babde5dbb
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37170627"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534922"
 ---
 # <a name="create-termsandconditions"></a>Criar termsAndConditions
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,13 +55,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar termsAnd
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |modifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|String|Nome fornecido pelo administrador para a política de T&C. |
-|descrição|String|Descrição fornecida pelo administrador para a política de T&C.|
+|displayName|Cadeia de caracteres|Nome fornecido pelo administrador para a política de T&C. |
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador para a política de T&C.|
 |title|String|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
-|bodyText|String|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
+|bodyText|Cadeia de caracteres|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |acceptanceStatement|String|Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |version|Int32|Inteiro que indica a versão atual dos termos. Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
@@ -115,6 +115,8 @@ Content-Length: 567
   ]
 }
 ```
+
+
 
 
 

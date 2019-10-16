@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e382f37f9043acd37699a29324c3aaa5c24181a0
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1ead56534a44eaf63eb2b15df099454a24d17636
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185067"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535930"
 ---
 # <a name="importappledeviceidentitylist-action"></a>Ação importAppleDeviceIdentityList
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -67,7 +67,7 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities/importAppleDeviceIdentityList
 
 Content-type: application/json
-Content-length: 756
+Content-length: 782
 
 {
   "importedAppleDeviceIdentities": [
@@ -79,6 +79,7 @@ Content-length: 756
       "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
       "isSupervised": true,
       "discoverySource": "adminImport",
+      "isDeleted": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
       "description": "Description value",
@@ -95,7 +96,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 715
+Content-Length: 741
 
 {
   "value": [
@@ -107,6 +108,7 @@ Content-Length: 715
       "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
       "isSupervised": true,
       "discoverySource": "adminImport",
+      "isDeleted": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
       "description": "Description value",
@@ -117,6 +119,8 @@ Content-Length: 715
   ]
 }
 ```
+
+
 
 
 

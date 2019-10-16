@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a13c39b5d38abb3f44b0fb51ef7a5702ece74b25
-ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
+ms.openlocfilehash: e81bd5505867577050c623a399c7057f42044f18
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "36853823"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538375"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -29,10 +29,10 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Atualizar dispositivo](../api/device-update.md) | [device](device.md)  |Atualize as propriedades do objeto Device. |
 |[Excluir dispositivo](../api/device-delete.md) | Nenhuma |Exclua o objeto Device. |
 |[Listar memberOf](../api/device-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Lista os grupos dos quais o dispositivo é membro direto. |
-|[Listar memberOf transitivos](../api/device-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais o dispositivo é membro. Essa operação é transitiva. |
+|[Listar membros transitivos](../api/device-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais o dispositivo é membro. Essa operação é transitiva. |
 |[Listar registeredOwners](../api/device-list-registeredowners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são proprietários registrados do dispositivo da propriedade de navegação registeredOwners.|
 |[Listar registeredUsers](../api/device-list-registeredusers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários registrados do dispositivo da propriedade de navegação registeredUsers.|
-|[checkMemberObjects](../api/device-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique a associação em uma lista de objetos de grupo, função de diretório ou unidade administrativa. |
+|[checkMemberObjects](../api/device-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
@@ -49,24 +49,25 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |deviceId|Guid| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
 |deviceMetadata|String| Apenas para uso interno. Definido como nulo. |
 |deviceVersion|Int32| Apenas para uso interno. |
-|displayName|String| O nome de exibição do dispositivo. Obrigatório. |
-|id|String|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura.|
+|displayName|Cadeia de caracteres| O nome de exibição do dispositivo. Obrigatório. |
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura.|
 |isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows.|
 |isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
+|mdmAppId|Cadeia de caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. <br><br>Somente leitura. Oferece suporte a $filter.|
 |onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` Somente leitura. |
 |onPremisesSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura.|
 |operatingSystem|Cadeia de caracteres| O tipo de sistema operacional do dispositivo. Obrigatório. |
-|operatingSystemVersion|String| A versão do sistema operacional do dispositivo. Obrigatório. |
+|operatingSystemVersion|Cadeia de caracteres| A versão do sistema operacional do dispositivo. Obrigatório. |
 |physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. |
-|profiletype|String|O tipo de perfil do dispositivo. Valores possíveis:<br />**RegisteredDevice** será<br />**SecureVM**<br />**Printer**<br />**Compartilhado**<br />**IoT**|
-|systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
+|profiletype|Cadeia de caracteres|O tipo de perfil do dispositivo. Valores possíveis:<br />**RegisteredDevice** (padrão)<br />**SecureVM**<br />**Printer**<br />**Compartilhado**<br />**IoT**|
+|systemLabels|String collection| Lista de rótulos aplicados ao dispositivo pelo sistema. |
 |trustType|String| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
-|Nome| String | Nome amigável de um dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
-|Status | String| O dispositivo está online ou offline. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
-|Plataforma |String|Plataforma de dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma.|
-|Tipo| String| Fator de forma do dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
-|Modelo| String| Modelo de dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
-|Fabricantes| String| Fabricante do dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
+|Nome| Cadeia de caracteres | Nome amigável de um dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
+|Status | Cadeia de caracteres| O dispositivo está online ou offline. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
+|Plataforma |Cadeia de caracteres|Plataforma de dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma.|
+|Tipo| Cadeia de caracteres| Fator de forma do dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
+|Modelo| Cadeia de caracteres| Modelo de dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
+|Fabricantes| Cadeia de caracteres| Fabricante do dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -106,6 +107,7 @@ Veja a seguir uma representação JSON do recurso.
   "id": "string (identifier)",
   "isCompliant": true,
   "isManaged": true,
+  "mdmAppId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "operatingSystem": "string",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: befd5692cf2d1600d1e54049eda131514b5dbf88
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: db808f972c712b13a157c8b55a32985a57143b9d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36725994"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536627"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User. Read, Organization. Read. All, Directory. Read. All, Organization. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Organization. Read. All, Directory. Read. All, Organization. ReadWrite. All, Directory. ReadWrite. All |
+|Application | Organization. Read. All, Directory. Read. All, Organization. ReadWrite. All, Directory. ReadWrite. All |
 
 > **Observação**: os aplicativos que receberam a permissão User. Read podem ler apenas as propriedades **ID**, **DisplayName**e **verifiedDomains** da organização.  Todas as outras propriedades retornarão valores `null`. Para ler todas as propriedades, use Organization. Read. All.
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [organization](../resources/organization.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de um objeto de [organização](../resources/organization.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/organization
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

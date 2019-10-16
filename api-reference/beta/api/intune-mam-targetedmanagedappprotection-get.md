@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 30a6a7106f02377407698e71b55649256b21d3ee
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 8738bbf875d28a144862430247802d0c9d834c95
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191600"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535664"
 ---
 # <a name="get-targetedmanagedappprotection"></a>Obter targetedManagedAppProtection
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2194
+Content-Length: 2331
 
 {
   "value": {
@@ -117,11 +117,16 @@ Content-Length: 2194
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
     "notificationRestriction": "blockOrganizationalData",
+    "previousPinBlockCount": 5,
+    "maximumAllowedDeviceThreatLevel": "secured",
+    "mobileThreatDefenseRemediationAction": "wipe",
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged"
   }
 }
 ```
+
+
 
 
 

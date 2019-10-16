@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11c7bbe64b1495a9e6cb0b8ac144d1afb539789f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 90a33468dfe0d68303625f7a682fdc23d34b7504
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196669"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536108"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>tipo de recurso userExperienceAnalyticsOverview
 
@@ -29,12 +29,14 @@ A entidade visão geral da análise da experiência do usuário contém a pontua
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da visão geral da análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da visão geral da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da análise da experiência do usuário.|
 |deviceBootPerformanceOverallScore|Int32|A pontuação geral do desempenho de inicialização do dispositivo analítico da experiência do usuário.|
 |bestPracticesOverallScore|Int32|A pontuação geral das práticas recomendadas de análise da experiência do usuário.|
 |insights|coleção [userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)|A experiência do usuário do Analytics insights.|
-|estado|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de integridade atual da categoria de análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de integridade atual da visão geral da análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de integridade atual da categoria "BootPerformance" da análise de experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de integridade atual da categoria "BestPractices" da análise de experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -68,7 +70,9 @@ Veja a seguir uma representação JSON do recurso.
       "severity": "String"
     }
   ],
-  "state": "String"
+  "state": "String",
+  "deviceBootPerformanceHealthState": "String",
+  "bestPracticesHealthState": "String"
 }
 ```
 
