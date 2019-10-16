@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f09db42930d1f3d99039a6584db051a91edaeea1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 66b894b272f9b57e41869cb95f4acebb5dd6a399
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718426"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535636"
 ---
 # <a name="get-chat"></a>Obter bate-papo
 
@@ -27,7 +27,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | Chat.Read   |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte.   |
+|Aplicativo | Chat.Read.All, Chat.ReadWrite.All   |
+
+> [!NOTE]
+> Com as permissões do aplicativo, há suporte para um único chat, mas [obter uma lista de chats](chat-list.md) não é.
+
+> [!NOTE]
+> É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
