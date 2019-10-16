@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d998d6e744b62edfe69486212bd538c4d62d2a5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bdd07e16c0f0388ce8dac22f0296695d59cc92dc
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180171"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527517"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>Atualizar userExperienceAnalyticsBaseline
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da linha de base da análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da linha de base da análise da experiência do usuário.|
 |displayName|String|O nome da linha de base da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da linha de base da análise da experiência do usuário.|
 |isBuiltIn|Booliano|Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.|
@@ -95,6 +95,8 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
+
+
 
 
 

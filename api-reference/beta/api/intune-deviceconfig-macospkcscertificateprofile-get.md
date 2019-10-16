@@ -1,24 +1,24 @@
 ---
-title: Obter macOSCertificateProfileBase
-description: Leia as propriedades e as relações do objeto macOSCertificateProfileBase.
+title: Obter macOSPkcsCertificateProfile
+description: Leia as propriedades e as relações do objeto macOSPkcsCertificateProfile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c68b6e133485dc40d778fd3220c9562e5ff148b
+ms.openlocfilehash: 617e1da601349430c5e29267999eeb694cf09145
 ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/16/2019
-ms.locfileid: "37533690"
+ms.locfileid: "37533471"
 ---
-# <a name="get-macoscertificateprofilebase"></a>Obter macOSCertificateProfileBase
+# <a name="get-macospkcscertificateprofile"></a>Obter macOSPkcsCertificateProfile
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) .
+Leia as propriedades e as relações do objeto [macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,9 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSVpnConfiguration/identityCertificate
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSDeviceFeaturesConfiguration/singleSignOnExtensionPkinitCertificate
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,14 +53,14 @@ Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsof
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSVpnConfiguration/identityCertificate
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,12 +68,12 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1514
+Content-Length: 2150
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.macOSCertificateProfileBase",
-    "id": "759ed2ad-d2ad-759e-add2-9e75add29e75",
+    "@odata.type": "#microsoft.graph.macOSPkcsCertificateProfile",
+    "id": "4b489237-9237-4b48-3792-484b3792484b",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -108,7 +108,21 @@ Content-Length: 1514
     "subjectNameFormat": "commonNameAsEmail",
     "subjectAlternativeNameType": "emailAddress",
     "certificateValidityPeriodValue": 14,
-    "certificateValidityPeriodScale": "months"
+    "certificateValidityPeriodScale": "months",
+    "certificationAuthority": "Certification Authority value",
+    "certificationAuthorityName": "Certification Authority Name value",
+    "certificateTemplateName": "Certificate Template Name value",
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+    "subjectNameFormatString": "Subject Name Format String value",
+    "certificateStore": "machine",
+    "customSubjectAlternativeNames": [
+      {
+        "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+        "sanType": "emailAddress",
+        "name": "Name value"
+      }
+    ],
+    "allowAllAppsAccess": true
   }
 }
 ```
