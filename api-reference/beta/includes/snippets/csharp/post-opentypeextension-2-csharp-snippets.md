@@ -1,22 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9c4c716f177875ce7a5a390c35e05a239a83cedd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: a19d4da41226d775189e54a1795d27d745512372
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878343"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544122"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var extension = new Extension
+var extension = new OpenTypeExtension
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.type","microsoft.graph.openTypeExtension"}
-    },
     ExtensionName = "Com.Contoso.Referral",
     CompanyName = "Wingtip Toys",
     DealValue = 500050,
